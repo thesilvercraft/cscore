@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Configuration;
+/*
+using Microsoft.Extensions.Configuration;
 
 namespace CSCore.Ffmpeg
 {
@@ -55,4 +57,4 @@ namespace CSCore.Ffmpeg
             set { this["loglevel"] = value; }
         }
     }
-}
+}*/

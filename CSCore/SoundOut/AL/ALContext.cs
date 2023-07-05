@@ -20,7 +20,7 @@ namespace CSCore.SoundOut.AL
         /// </summary>
         public static IntPtr CurrentContextHandle
         {
-            get { return ALInterops.alcGetCurrentContext(); }
+            get { return ALInteropsNativeMethods.alcGetCurrentContext(); }
         }
 
         /// <summary>
@@ -40,7 +40,7 @@ namespace CSCore.SoundOut.AL
             {
                 using (LockContext())
                 {
-                    return ALInterops.IsExtensionPresent("AL_EXT_float32");
+                    return ALInteropsNativeMethods.IsExtensionPresent("AL_EXT_float32");
                 }
             }
         }
@@ -66,9 +66,9 @@ namespace CSCore.SoundOut.AL
                 }
                 else
                 {
-                    Handle = ALInterops.alcCreateContext(device.DeviceHandle, IntPtr.Zero);
+                    Handle = ALInteropsNativeMethods.alcCreateContext(device.DeviceHandle, IntPtr.Zero);
                     if (Handle == IntPtr.Zero)
-                        throw new ALException("Could not create ALContext.", ALInterops.alcGetError(device.DeviceHandle));
+                        throw new ALException("Could not create ALContext.", ALInteropsNativeMethods.alcGetError(device.DeviceHandle));
 
                     ContextDictionary.Add(device, new ContextRef()
                     {
@@ -97,10 +97,10 @@ namespace CSCore.SoundOut.AL
         /// </summary>
         public void MakeCurrent()
         {
-            ALInterops.alcGetError(_device.DeviceHandle);
-            if (!ALInterops.alcMakeContextCurrent(Handle))
+            ALInteropsNativeMethods.alcGetError(_device.DeviceHandle);
+            if (!ALInteropsNativeMethods.alcMakeContextCurrent(Handle))
             {
-                var error = ALInterops.alcGetError(_device.DeviceHandle);
+                var error = ALInteropsNativeMethods.alcGetError(_device.DeviceHandle);
                 throw new ALException("Could not set context. alcMakeContextCurrent returned " + error, error);
             }
         }
@@ -151,7 +151,7 @@ namespace CSCore.SoundOut.AL
                     {
                         ALException.Try(
                             () =>
-                                ALInterops.alcDestroyContext(Handle),
+                                ALInteropsNativeMethods.alcDestroyContext(Handle),
                             "alcDestroyContext", _device.DeviceHandle);
                         ContextDictionary.Remove(_device);
                     }
@@ -201,7 +201,7 @@ namespace CSCore.SoundOut.AL
             {
                 _lockLevel--;
                 if (_lockLevel == 0 && ResetContext)
-                    ALInterops.alcMakeContextCurrent(IntPtr.Zero);
+                    ALInteropsNativeMethods.alcMakeContextCurrent(IntPtr.Zero);
                 Monitor.Exit(ContextLockObj);
             }
         }

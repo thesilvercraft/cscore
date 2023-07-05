@@ -60,7 +60,7 @@ namespace CSCore.Ffmpeg
                 InteropHelper.RegisterLibrariesSearchPath(path);
             }
 
-            FfmpegConfigurationSection ffmpegSettings =
+         /*   FfmpegConfigurationSection ffmpegSettings =
                 (FfmpegConfigurationSection)ConfigurationManager.GetSection("ffmpeg");
             if (ffmpegSettings != null)
             {
@@ -73,7 +73,7 @@ namespace CSCore.Ffmpeg
                 {
                     FfmpegUtils.LogLevel = ffmpegSettings.LogLevel.Value;
                 }
-            }
+            }*/
 
             ffmpeg.av_register_all();
             ffmpeg.avcodec_register_all();

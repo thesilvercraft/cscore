@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
+using System.Reflection;
+using System.Runtime.InteropServices;
 using System.Threading;
 using CSCore.SoundOut.AL;
 using CSCore.Streams;
@@ -92,13 +94,21 @@ namespace CSCore.SoundOut
 			_latency = latency;
 			_playbackPriority = playbackThreadPriority;
 			_syncContext = eventSyncContext;
+			if(!ResolverIsSet)
+			{
+				ResolverIsSet = true;
+                NativeLibrary.SetDllImportResolver(Assembly.GetExecutingAssembly(), ALInteropsNativeMethods.DllImportResolver);
+            }
 
-            if (!ALInterops.IsSupported())
+            if (!ALInteropsNativeMethods.IsSupported())
             {
                 throw new PlatformNotSupportedException("openAL is not supported by the current platform. Consider installing openAL on the current platform.");
             }
 		}
-
+        /// <summary>
+        /// Has ALSoundOut been called previously, if so skip setting the DLL import resolver
+        /// </summary>
+        private static bool ResolverIsSet = false;
 		/// <summary>
 		///     Gets or sets the <see cref="Device" /> which should be used for playback.
 		///     The <see cref="Device" /> property has to be set before initializing.
@@ -470,7 +480,7 @@ namespace CSCore.SoundOut
 				_buffers = new uint[NumberOfBuffers];
 				ALException.Try(
 					() =>
-					ALInterops.alGenBuffers(_buffers.Length, _buffers),
+					ALInteropsNativeMethods.alGenBuffers(_buffers.Length, _buffers),
 					"alGenBuffers");
 			}
 			_bufferSize = (int)_source.WaveFormat.MillisecondsToBytes(_latency);
@@ -492,7 +502,7 @@ namespace CSCore.SoundOut
 						var finishedBuffers = _alSource.UnqueueBuffers(numberOfProcessedBuffers).Distinct().ToArray();
 						ALException.Try(
 							() =>
-							ALInterops.alDeleteBuffers(finishedBuffers.Length, finishedBuffers),
+							ALInteropsNativeMethods.alDeleteBuffers(finishedBuffers.Length, finishedBuffers),
 							"alDeleteBuffers");
 					}
 
@@ -546,7 +556,7 @@ namespace CSCore.SoundOut
 			{
 				ALException.Try(
 					() =>
-					ALInterops.alBufferData(bufferHandle, _playbackFormat, buffer, count,
+					ALInteropsNativeMethods.alBufferData(bufferHandle, _playbackFormat, buffer, count,
 						(uint) _source.WaveFormat.SampleRate),
 					"alBufferData");
 				_alSource.QueueBuffer(bufferHandle);

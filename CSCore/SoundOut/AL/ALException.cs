@@ -32,9 +32,9 @@ namespace CSCore.SoundOut.AL
         {
             ALErrorCode errorCode;
             if (functionName.StartsWith("alc"))
-                errorCode = ALInterops.alcGetError(contextHandle);
+                errorCode = ALInteropsNativeMethods.alcGetError(contextHandle);
             else
-                errorCode = ALInterops.alGetError();
+                errorCode = ALInteropsNativeMethods.alGetError();
 
             if (errorCode != ALErrorCode.NoError)
                 throw new ALException(String.Format("{0} returned {1}.", functionName, errorCode));
@@ -65,16 +65,16 @@ namespace CSCore.SoundOut.AL
         {
             ALErrorCode errorCode;
             if (functionName.StartsWith("alc"))
-                ALInterops.alcGetError(contextHandle);
+                ALInteropsNativeMethods.alcGetError(contextHandle);
             else
-                ALInterops.alGetError();
+                ALInteropsNativeMethods.alGetError();
 
             alAction();
 
             if (functionName.StartsWith("alc"))
-                errorCode = ALInterops.alcGetError(contextHandle);
+                errorCode = ALInteropsNativeMethods.alcGetError(contextHandle);
             else
-                errorCode = ALInterops.alGetError();
+                errorCode = ALInteropsNativeMethods.alGetError();
 
             if (errorCode != ALErrorCode.NoError)
                 throw new ALException(String.Format("{0} returned {1}.", functionName, errorCode));
@@ -87,7 +87,7 @@ namespace CSCore.SoundOut.AL
         public ALException(string message)
             : base(message)
         {
-            LastError = ALInterops.alGetError();
+            LastError = ALInteropsNativeMethods.alGetError();
         }
 
         /// <summary>

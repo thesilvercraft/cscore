@@ -26,7 +26,7 @@ namespace CSCore.SoundOut.AL
             {
                 if (_deviceHandle == IntPtr.Zero)
                 {
-                    _deviceHandle = ALInterops.alcOpenDevice(Name);
+                    _deviceHandle = ALInteropsNativeMethods.alcOpenDevice(Name);
                     if (_deviceHandle == IntPtr.Zero)
                         throw new ALException(String.Format("Could not open device \"{0}\".", Name));
                 }
@@ -50,7 +50,7 @@ namespace CSCore.SoundOut.AL
         /// <returns>An array containing all found OpenAL devices.</returns>
         public static ALDevice[] EnumerateALDevices()
         {
-            var deviceNames = ALInterops.GetALDeviceNames();
+            var deviceNames = ALInteropsNativeMethods.GetALDeviceNames();
             var devices = deviceNames.Select(deviceName => new ALDevice(deviceName));
 
             if (_devices == null)
@@ -95,7 +95,7 @@ namespace CSCore.SoundOut.AL
         {
             if (_deviceHandle != IntPtr.Zero)
             {
-                if (!ALInterops.alcCloseDevice(_deviceHandle))
+                if (!ALInteropsNativeMethods.alcCloseDevice(_deviceHandle))
                 {
                     Debug.WriteLine("Failed to close ALDevice. Check whether there are still some active Contexts or Buffers.");
                 }

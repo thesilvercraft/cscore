@@ -2,7 +2,7 @@
 
   <PropertyGroup>
     <AssemblyName>CSCore.Ffmpeg</AssemblyName>
-    <TargetFrameworks>net461;netcoreapp2.0</TargetFrameworks>
+    <TargetFramework>net6.0</TargetFramework>
     <VersionPrefix>1.0.0</VersionPrefix>
     <Copyright>Florian R.</Copyright>
     <Description>.NET Sound Library - FFmpeg Wrapper</Description>
@@ -83,6 +83,14 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="Interops\unused\Readme.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Extensions.Configuration">
+      <HintPath>..\..\..\..\..\..\..\home\silver\.nuget\packages\microsoft.aspnetcore.app.ref\6.0.18\ref\net6.0\Microsoft.Extensions.Configuration.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Configuration.ConfigurationManager">
+      <HintPath>..\..\..\..\..\..\..\home\silver\.nuget\packages\microsoft.windowsdesktop.app.ref\6.0.18\ref\net6.0\System.Configuration.ConfigurationManager.dll</HintPath>
+    </Reference>
   </ItemGroup>
 
 </Project>

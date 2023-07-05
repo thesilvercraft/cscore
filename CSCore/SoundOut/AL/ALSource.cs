@@ -32,7 +32,7 @@ namespace CSCore.SoundOut.AL
             {
                 ALException.Try(
                     () =>
-                        ALInterops.alGenSources(1, sources),
+                        ALInteropsNativeMethods.alGenSources(1, sources),
                     "alGenSources");
             }
 
@@ -48,7 +48,7 @@ namespace CSCore.SoundOut.AL
             {
                 ALException.Try(
                     () =>
-                        ALInterops.alSourcePlay(Id),
+                        ALInteropsNativeMethods.alSourcePlay(Id),
                     "alSourcePlay");
             }
         }
@@ -62,7 +62,7 @@ namespace CSCore.SoundOut.AL
             {
                 ALException.Try(
                     () =>
-                        ALInterops.alSourcePause(Id),
+                        ALInteropsNativeMethods.alSourcePause(Id),
                     "alSourcePause");
             }
         }
@@ -77,7 +77,7 @@ namespace CSCore.SoundOut.AL
             {
                 ALException.Try(
                     () =>
-                        ALInterops.alSourceStop(Id),
+                        ALInteropsNativeMethods.alSourceStop(Id),
                     "alSourceStop");
             }
         }
@@ -92,7 +92,7 @@ namespace CSCore.SoundOut.AL
             {
                 ALException.Try(
                     () =>
-                        ALInterops.alSourceQueueBuffers(Id, 1, new[] {bufferHandle}),
+                        ALInteropsNativeMethods.alSourceQueueBuffers(Id, 1, new[] {bufferHandle}),
                     "alSourceQueueBuffers");
             }
         }
@@ -109,7 +109,7 @@ namespace CSCore.SoundOut.AL
             {
                 ALException.Try(
                     () => 
-                        ALInterops.alSourceUnqueueBuffers(Id, count, result),
+                        ALInteropsNativeMethods.alSourceUnqueueBuffers(Id, count, result),
                     "alSourceUnqueueBuffers");
             }
             return result;
@@ -127,7 +127,7 @@ namespace CSCore.SoundOut.AL
                     int numberOfProcessedBuffers = 0;
                     ALException.Try(
                         () =>
-                            ALInterops.alGetSourcei(Id, ALSourceParameters.BuffersProcessed,
+                            ALInteropsNativeMethods.alGetSourcei(Id, ALSourceParameters.BuffersProcessed,
                                 out numberOfProcessedBuffers),
                         "alGetSourcei");
                     return numberOfProcessedBuffers;
@@ -147,7 +147,7 @@ namespace CSCore.SoundOut.AL
                     int numberOfQueuedBuffers = 0;
                     ALException.Try(
                         () =>
-                            ALInterops.alGetSourcei(Id, ALSourceParameters.BuffersQueued,
+                            ALInteropsNativeMethods.alGetSourcei(Id, ALSourceParameters.BuffersQueued,
                                 out numberOfQueuedBuffers),
                         "alGetSourcei");
                     return numberOfQueuedBuffers;
@@ -167,7 +167,7 @@ namespace CSCore.SoundOut.AL
                     int alSourceState = 0;
                     ALException.Try(
                         () =>
-                            ALInterops.alGetSourcei(Id, ALSourceParameters.SourceState,
+                            ALInteropsNativeMethods.alGetSourcei(Id, ALSourceParameters.SourceState,
                                 out alSourceState),
                         "alGetSourcei");
                     return (ALSourceState) alSourceState;
@@ -204,7 +204,7 @@ namespace CSCore.SoundOut.AL
                 sources[0] = Id;
                 ALException.Try(
                     () => 
-                        ALInterops.alDeleteSources(1, sources),
+                        ALInteropsNativeMethods.alDeleteSources(1, sources),
                     "alDeleteSources");
             }
         }
