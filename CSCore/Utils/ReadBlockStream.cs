@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Diagnostics;
 using System.IO;
 
 namespace CSCore.Utils
@@ -8,6 +9,7 @@ namespace CSCore.Utils
         private long _position;
 
         private readonly Stream _stream;
+        private const int ZeroReadTimeoutInMs = 2000;
 
         public ReadBlockStream(Stream stream)
         {
@@ -21,33 +23,68 @@ namespace CSCore.Utils
 
         public override int Read(byte[] buffer, int offset, int count)
         {
-            var read = 0;
+            var watch = new Stopwatch();
+
+            int read = 0;
             while (read < count)
             {
-                read += _stream.Read(buffer, offset + read, count - read);
+                var r = _stream.Read(buffer, offset + read, count - read);
+                read += r;
+
+                //if stream continusly returns zero, wait for ZeroReadTimeoutInMs
+                //if within ZeroReadTimeoutInMs no bytes were read, exit the read loop
+                if (r == 0)
+                {
+                    if (!watch.IsRunning)
+                        watch = Stopwatch.StartNew();
+                    else if (watch.ElapsedMilliseconds >= ZeroReadTimeoutInMs)
+                        break;
+                }
+                else if(watch.IsRunning)
+                {
+                    watch.Stop();
+                }
             }
 
             _position += read;
-            return count;
+            return read;
         }
 
-        public override bool CanRead => true;
+        public override bool CanRead
+        {
+            get { return true; }
+        }
 
-        public override bool CanSeek => false;
+        public override bool CanSeek
+        {
+            get { return false; }
+        }
 
-        public override bool CanWrite => false;
+        public override bool CanWrite
+        {
+            get { return false; }
+        }
 
         public override void Flush()
         {
             throw new InvalidOperationException();
         }
 
-        public override long Length => _stream.Length;
+        public override long Length
+        {
+            get { return _stream.Length; }
+        }
 
         public override long Position
         {
-            get => _position;
-            set => throw new InvalidOperationException();
+            get
+            {
+                return _position;
+            }
+            set
+            {
+                throw new InvalidOperationException();
+            }
         }
 
         public override long Seek(long offset, SeekOrigin origin)
