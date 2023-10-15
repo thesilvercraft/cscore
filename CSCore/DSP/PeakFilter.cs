@@ -16,7 +16,7 @@ namespace CSCore.DSP
         /// </summary>
         public double BandWidth
         {
-            get { return Q; }
+            get => Q;
             set
             {
                 if (value <= 0)
@@ -44,9 +44,9 @@ namespace CSCore.DSP
         protected override void CalculateBiQuadCoefficients()
         {
             double norm;
-            double v = Math.Pow(10, Math.Abs(GainDB) / 20.0);
-            double k = Math.Tan(Math.PI * Frequency / SampleRate);
-            double q = Q;
+            var v = Math.Pow(10, Math.Abs(GainDB) / 20.0);
+            var k = Math.Tan(Math.PI * Frequency / SampleRate);
+            var q = Q;
 
             if (GainDB >= 0) //boost
             {

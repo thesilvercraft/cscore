@@ -25,15 +25,13 @@ namespace CSCore.Streams
         /// </summary>
         public IFadeStrategy FadeStrategy
         {
-            get { return _fadeStrategy; }
+            get => _fadeStrategy;
             set
             {
-                if (_fadeStrategy != value && value != null)
-                {
-                    _fadeStrategy = value;
-                    _fadeStrategy.SampleRate = WaveFormat.SampleRate;
-                    _fadeStrategy.Channels = WaveFormat.Channels;
-                }
+                if (_fadeStrategy == value || value == null) return;
+                _fadeStrategy = value;
+                _fadeStrategy.SampleRate = WaveFormat.SampleRate;
+                _fadeStrategy.Channels = WaveFormat.Channels;
             }
         }
 
@@ -54,10 +52,10 @@ namespace CSCore.Streams
         /// <returns>The total number of samples read into the buffer.</returns>
         public override int Read(float[] buffer, int offset, int count)
         {
-            int read = 0;
+            var read = 0;
             while (read < count)
             {
-                int r = base.Read(buffer, offset, count);
+                var r = base.Read(buffer, offset, count);
                 if (r == 0)
                     break;
 

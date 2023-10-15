@@ -52,7 +52,7 @@ namespace CSCore
             if (position.TotalMilliseconds < 0)
                 throw new ArgumentOutOfRangeException("position");
 
-            long bytes = GetRawElements(source, position);
+            var bytes = GetRawElements(source, position);
             source.Position = bytes;
         }
 
@@ -200,7 +200,7 @@ namespace CSCore
         {
             if (source == null)
                 throw new ArgumentNullException("source");
-            using (FileStream stream = File.OpenWrite(filename))
+            using (var stream = File.OpenWrite(filename))
             {
                 WriteToWaveStream(source, stream);
             }
@@ -290,8 +290,8 @@ namespace CSCore
             if(count <= 0)
                 throw new ArgumentOutOfRangeException("count");
 
-            byte[] buffer = new byte[count];
-            int read = waveSource.Read(buffer, 0, buffer.Length);
+            var buffer = new byte[count];
+            var read = waveSource.Read(buffer, 0, buffer.Length);
             if(read < count)
                 Array.Resize(ref buffer, read);
             return buffer;
@@ -421,7 +421,7 @@ namespace CSCore
             {
                 EventHandler<PlaybackStoppedEventArgs> handler = (s, e) => waitHandle.Set();
                 soundOut.Stopped += handler;
-                bool result = waitHandle.WaitOne(millisecondsTimeout);
+                var result = waitHandle.WaitOne(millisecondsTimeout);
                 // need to unsubscrive because waitHandle will be disposed
                 soundOut.Stopped -= handler;
                 return result;

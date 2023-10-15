@@ -33,19 +33,19 @@ namespace CSCore.Utils.Buffer
         /// <returns>Number of added elements.</returns>
         public int Write(T[] buffer, int offset, int count)
         {
-            int written = 0;
+            var written = 0;
 
             lock (_lockObj)
             {
                 //number of elements writeOffset is ahead of readOffset
-                int readWriteDelta = ((_buffer.Length - _readOffset) + _writeOffset) % _buffer.Length;
+                var readWriteDelta = ((_buffer.Length - _readOffset) + _writeOffset) % _buffer.Length;
 
                 do
                 {
                     //compute number of elements left in the buffer (length - writeOffset)
-                    int spaceLeft = _buffer.Length - _writeOffset;
+                    var spaceLeft = _buffer.Length - _writeOffset;
                     //determine number of elements to copy in this iteration
-                    int length = Math.Min(count, spaceLeft);
+                    var length = Math.Min(count, spaceLeft);
 
                     //if no data has to be copied, exit
                     if (length <= 0)
@@ -72,7 +72,7 @@ namespace CSCore.Utils.Buffer
                 if (written > _buffer.Length - readWriteDelta)
                 {
                     //if readOffset was overridden, determine number of elements to increment the readOffset
-                    int incrementReadOffsetBy = written - (_buffer.Length - readWriteDelta);
+                    var incrementReadOffsetBy = written - (_buffer.Length - readWriteDelta);
                     incrementReadOffsetBy %= _buffer.Length;
                     //increment readOffset
                     _readOffset += incrementReadOffsetBy;
@@ -98,12 +98,12 @@ namespace CSCore.Utils.Buffer
         /// <returns>The total number of elements read into the <paramref name="buffer"/>.</returns>
         public int Read(T[] buffer, int offset, int count)
         {
-            int read = 0;
+            var read = 0;
 
             lock (_lockObj)
             {
                 count = Math.Min(count, _bufferedElements);
-                int length = Math.Min(count, _buffer.Length - _readOffset);
+                var length = Math.Min(count, _buffer.Length - _readOffset);
                 Array.Copy(_buffer, _readOffset, buffer, offset, length); //copy to buffer
                 read += length;
                 _readOffset += read;
@@ -125,12 +125,12 @@ namespace CSCore.Utils.Buffer
         /// <summary>
         /// Gets the size of the internal buffer.
         /// </summary>
-        public int Length { get { return _buffer.Length; } }
+        public int Length => _buffer.Length;
 
         /// <summary>
         /// Gets the number of buffered elements.
         /// </summary>
-        public int Buffered { get { return _bufferedElements; } }
+        public int Buffered => _bufferedElements;
 
         /// <summary>
         /// Clears the internal buffer.
@@ -223,30 +223,18 @@ namespace CSCore.Utils.Buffer
                 _buffer.Write(buffer, offset, count);
             }
 
-            public override bool CanRead
-            {
-                get { return true; }
-            }
+            public override bool CanRead => true;
 
-            public override bool CanSeek
-            {
-                get { return false; }
-            }
+            public override bool CanSeek => false;
 
-            public override bool CanWrite
-            {
-                get { return true; }
-            }
+            public override bool CanWrite => true;
 
-            public override long Length
-            {
-                get { return _buffer.Buffered; }
-            }
+            public override long Length => _buffer.Buffered;
 
             public override long Position
             {
-                get { return 0; }
-                set { throw new NotSupportedException(); }
+                get => 0;
+                set => throw new NotSupportedException();
             }
         }
     }

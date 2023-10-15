@@ -53,11 +53,11 @@ namespace CSCore.Streams.Effects
         /// </returns>
         public override int Read(float[] buffer, int offset, int count)
         {
-            int read = base.Read(buffer, offset, count);
+            var read = base.Read(buffer, offset, count);
 
             if (read > 0 && Math.Abs(PitchShiftFactor - 1.0) > 0.001)
             {
-                float[] pitchBuffer = buffer;
+                var pitchBuffer = buffer;
                 if (offset != 0)
                 {
                     pitchBuffer = new float[read];
@@ -71,7 +71,7 @@ namespace CSCore.Streams.Effects
                     Buffer.BlockCopy(pitchBuffer, 0, buffer, offset, read);
                 }
 
-                for (int i = offset; i < offset + read; i++)
+                for (var i = offset; i < offset + read; i++)
                 {
                     if (buffer[i] < -1.0 || buffer[i] > 1.0)
                         buffer[i] = Math.Max(-1.0f, Math.Min(1.0f, buffer[i]));

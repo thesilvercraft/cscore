@@ -24,24 +24,12 @@ namespace CSCore.Codecs.WAV
         /// <summary>
         /// Signals if the object has already been disposed
         /// </summary>
-        public bool IsDisposed
-        {
-            get
-            {
-                return _isDisposed;
-            }
-        }
+        public bool IsDisposed => _isDisposed;
 
         /// <summary>
         /// Signals if the object is in a disposing state
         /// </summary>
-        public bool IsDisposing
-        {
-            get
-            {
-                return _isDisposing;
-            }
-        }
+        public bool IsDisposing => _isDisposing;
 
         /// <summary>
         ///     Initializes a new instance of the <see cref="WaveWriter" /> class.
@@ -79,7 +67,7 @@ namespace CSCore.Codecs.WAV
             _stream = stream;
             _waveStartPosition = stream.Position;
             _writer = new BinaryWriter(stream);
-            for (int i = 0; i < 44; i++)
+            for (var i = 0; i < 44; i++)
             {
                 _writer.Write((byte) 0);
             }
@@ -116,7 +104,7 @@ namespace CSCore.Codecs.WAV
             if (deleteFileIfAlreadyExists && File.Exists(filename))
                 File.Delete(filename);
 
-            int r = 0;
+            var r = 0;
             var buffer = new byte[source.WaveFormat.BytesPerSecond];
             using (var w = new WaveWriter(filename, source.WaveFormat))
             {
@@ -153,7 +141,7 @@ namespace CSCore.Codecs.WAV
                         Write((short) (short.MaxValue * sample));
                         break;
                     case 24:
-                        byte[] buffer = BitConverter.GetBytes((int)(0x7fffff * sample));
+                        var buffer = BitConverter.GetBytes((int)(0x7fffff * sample));
                         Write(new[] {buffer[0], buffer[1], buffer[2]}, 0, 3);
                         break;
                     case 32:
@@ -186,7 +174,7 @@ namespace CSCore.Codecs.WAV
         {
             CheckObjectDisposed();
 
-            for (int i = offset; i < offset + count; i++)
+            for (var i = offset; i < offset + count; i++)
             {
                 WriteSample(samples[i]);
             }
@@ -258,7 +246,7 @@ namespace CSCore.Codecs.WAV
         {
             _writer.Flush();
 
-            long currentPosition = _stream.Position;
+            var currentPosition = _stream.Position;
             _stream.Position = _waveStartPosition;
 
             WriteRiffHeader();
@@ -279,9 +267,9 @@ namespace CSCore.Codecs.WAV
 
         private void WriteFmtChunk()
         {
-            AudioEncoding tag = _waveFormat.WaveFormatTag;
-            if (tag == AudioEncoding.Extensible && _waveFormat is WaveFormatExtensible)
-                tag = AudioSubTypes.EncodingFromSubType((_waveFormat as WaveFormatExtensible).SubFormat);
+            var tag = _waveFormat.WaveFormatTag;
+            if (tag == AudioEncoding.Extensible && _waveFormat is WaveFormatExtensible extensible)
+                tag = AudioSubTypes.EncodingFromSubType(extensible.SubFormat);
 
             _writer.Write(Encoding.UTF8.GetBytes("fmt "));
             _writer.Write((int)16);

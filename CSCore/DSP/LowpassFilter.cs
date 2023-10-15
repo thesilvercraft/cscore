@@ -26,7 +26,7 @@ namespace CSCore.DSP
         /// </summary>
         protected override void CalculateBiQuadCoefficients()
         {
-            double k = Math.Tan(Math.PI * Frequency / SampleRate);
+            var k = Math.Tan(Math.PI * Frequency / SampleRate);
             var norm = 1 / (1 + k / Q + k * k);
             A0 = k * k * norm;
             A1 = 2 * A0;

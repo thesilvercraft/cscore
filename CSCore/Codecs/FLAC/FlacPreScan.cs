@@ -30,7 +30,7 @@ namespace CSCore.Codecs.FLAC
 
         public void ScanStream(FlacMetadataStreamInfo streamInfo, FlacPreScanMode mode)
         {
-            long saveOffset = _stream.Position;
+            var saveOffset = _stream.Position;
             StartScan(streamInfo, mode);
             _stream.Position = saveOffset;
 
@@ -71,7 +71,7 @@ namespace CSCore.Codecs.FLAC
         private List<FlacFrameInformation> RunScan(FlacMetadataStreamInfo streamInfo)
         {
 #if FLAC_DEBUG
-            Stopwatch watch = new Stopwatch();
+            var watch = new Stopwatch();
             watch.Start();
 #endif
             var result = ScanThisShit(streamInfo);
@@ -92,43 +92,43 @@ namespace CSCore.Codecs.FLAC
 
         private unsafe List<FlacFrameInformation> ScanThisShit(FlacMetadataStreamInfo streamInfo)
         {
-            Stream stream = _stream;
+            var stream = _stream;
 
             //if (!(stream is BufferedStream))
             //    stream = new BufferedStream(stream);
 
-            byte[] buffer = new byte[BufferSize];
+            var buffer = new byte[BufferSize];
             stream.Position = 4; //fLaC
 
             //skip the metadata
             FlacMetadata.SkipMetadata(stream);
 
-            List<FlacFrameInformation> frames = new List<FlacFrameInformation>();
-            FlacFrameInformation frameInfo = new FlacFrameInformation();
+            var frames = new List<FlacFrameInformation>();
+            var frameInfo = new FlacFrameInformation();
             frameInfo.IsFirstFrame = true;
 
             FlacFrameHeader baseHeader = null;
 
             while (true)
             {
-                int read = stream.Read(buffer, 0, buffer.Length);
+                var read = stream.Read(buffer, 0, buffer.Length);
                 if (read <= FlacConstant.FrameHeaderSize)
                     break;
 
                 fixed (byte* bufferPtr = buffer)
                 {
-                    byte* ptr = bufferPtr;
+                    var ptr = bufferPtr;
                     //for (int i = 0; i < read - FlacConstant.FrameHeaderSize; i++)
                     while ((bufferPtr + read - FlacConstant.FrameHeaderSize) > ptr)
                     {
                         if (*ptr++ == 0xFF && (*ptr & 0xF8) == 0xF8) //check sync
                         {
-                            byte* ptrSafe = ptr;
+                            var ptrSafe = ptr;
                             ptr--;
                             FlacFrameHeader tmp;
                             if (IsFrame(ref ptr, streamInfo, out tmp))
                             {
-                                FlacFrameHeader header = tmp;
+                                var header = tmp;
                                 if (frameInfo.IsFirstFrame)
                                 {
                                     baseHeader = header;
@@ -164,7 +164,7 @@ namespace CSCore.Codecs.FLAC
 
         private unsafe bool IsFrame(ref byte* buffer, FlacMetadataStreamInfo streamInfo, out FlacFrameHeader header)
         {
-            header = new FlacFrameHeader(ref buffer, streamInfo, true, false);
+            header = new FlacFrameHeader(ref buffer, streamInfo, true);
             return !header.HasError;
         }
     }

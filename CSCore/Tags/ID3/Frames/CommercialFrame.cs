@@ -1,4 +1,5 @@
 ﻿using System;
+using System.IO;
 
 namespace CSCore.Tags.ID3.Frames
 {
@@ -18,7 +19,7 @@ namespace CSCore.Tags.ID3.Frames
 
         public string LogoMimeType { get; private set; }
 
-        public System.Drawing.Image Image { get; private set; }
+        public Stream Image { get; private set; }
 
         public CommercialFrame(FrameHeader header)
             : base(header)
@@ -27,7 +28,7 @@ namespace CSCore.Tags.ID3.Frames
 
         protected override void Decode(byte[] content)
         {
-            int offset = 1;
+            var offset = 1;
             int read;
             Price = ID3Utils.ReadString(content, offset, -1, ID3Utils.Iso88591, out read);
             offset += read;

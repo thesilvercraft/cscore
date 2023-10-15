@@ -32,12 +32,9 @@ namespace CSCore.Codecs.AIFF
         /// <summary>
         ///     Gets the zero based position in the stream, at which the encoded audio data starts.
         /// </summary>
-        public long AudioDataStartPosition
-        {
-            get { return ChunkStartPosition + 16 + Offset; }
-            //16 bytes = 2*4 bytes AiffChunk header + 2*4 bytes SoundDataChunk header
-        }
+        public long AudioDataStartPosition => ChunkStartPosition + 16 + Offset;
 
+        //16 bytes = 2*4 bytes AiffChunk header + 2*4 bytes SoundDataChunk header
         /// <summary>
         ///     Seeks to the end of the chunk.
         /// </summary>

@@ -29,7 +29,7 @@ namespace CSCore.Streams.Effects
             : this()
         {
             Filters.Add(0, filter);
-            for (int c = 1; c < channels; c++)
+            for (var c = 1; c < channels; c++)
             {
                 Filters.Add(c, (EqualizerChannelFilter) filter.Clone());
             }
@@ -59,7 +59,7 @@ namespace CSCore.Streams.Effects
         public double AverageGainDB
         {
             get { return Filters.Average(x => x.Value.GainDB); }
-            set { SetGain(value); }
+            set => SetGain(value);
         }
 
         int IComparable<EqualizerFilter>.CompareTo(EqualizerFilter other)
@@ -105,7 +105,7 @@ namespace CSCore.Streams.Effects
             float gain)
         {
             var result = new EqualizerFilter();
-            for (int c = 0; c < channels; c++)
+            for (var c = 0; c < channels; c++)
             {
                 result.Filters.Add(c, new EqualizerChannelFilter(sampleRate, frequency, bandWidth, gain));
             }

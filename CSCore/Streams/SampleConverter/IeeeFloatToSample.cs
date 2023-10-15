@@ -40,9 +40,9 @@ namespace CSCore.Streams.SampleConverter
         /// <returns>The total number of samples read into the buffer.</returns>
         public override int Read(float[] buffer, int offset, int count)
         {
-            int bytesToRead = count * 4;
+            var bytesToRead = count * 4;
             Buffer = Buffer.CheckBuffer(bytesToRead);
-            int read = Source.Read(Buffer, 0, bytesToRead);
+            var read = Source.Read(Buffer, 0, bytesToRead);
             System.Buffer.BlockCopy(Buffer, 0, buffer, offset * 4, read);
 
             return read / 4;

@@ -56,7 +56,7 @@ namespace CSCore.DSP
         /// <exception cref="System.ArgumentOutOfRangeException">value;The samplerate has to be bigger than 2 * frequency.</exception>
         public double Frequency
         {
-            get { return _frequency; }
+            get => _frequency;
             set
             {
                 if (SampleRate < value * 2)
@@ -78,7 +78,7 @@ namespace CSCore.DSP
         /// </summary>
         public double Q
         {
-            get { return _q; }
+            get => _q;
             set
             {
                 if (value <= 0)
@@ -95,7 +95,7 @@ namespace CSCore.DSP
         /// </summary>
         public double GainDB
         {
-            get { return _gainDB; }
+            get => _gainDB;
             set
             {
                 _gainDB = value;
@@ -154,7 +154,7 @@ namespace CSCore.DSP
         /// <returns>The result of the processed <paramref name="input"/> sample.</returns>
         public float Process(float input)
         {
-            double o = input * A0 + Z1;
+            var o = input * A0 + Z1;
             Z1 = input * A1 + Z2 - B1 * o;
             Z2 = input * A2 - B2 * o;
             return (float)o;
@@ -167,7 +167,7 @@ namespace CSCore.DSP
         /// <remarks>The result of the calculation gets stored within the <paramref name="input"/> array.</remarks>
         public void Process(float[] input)
         {
-            for (int i = 0; i < input.Length; i++)
+            for (var i = 0; i < input.Length; i++)
             {
                 input[i] = Process(input[i]);
             }

@@ -39,12 +39,12 @@ namespace CSCore.Streams.SampleConverter
         /// <returns>The total number of samples read into the buffer.</returns>
         public override int Read(float[] buffer, int offset, int count)
         {
-            int bytesToRead = count * 4;
+            var bytesToRead = count * 4;
             Buffer = Buffer.CheckBuffer(bytesToRead);
-            int read = Source.Read(Buffer, 0, bytesToRead);
+            var read = Source.Read(Buffer, 0, bytesToRead);
 
-            int startIndex = offset;
-            for (int i = 0; i < read; i += 4)
+            var startIndex = offset;
+            for (var i = 0; i < read; i += 4)
             {
                 buffer[startIndex] = BitConverter.ToInt32(Buffer, i) / 2147483649f;
                 startIndex++;

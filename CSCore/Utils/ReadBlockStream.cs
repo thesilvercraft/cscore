@@ -50,41 +50,23 @@ namespace CSCore.Utils
             return read;
         }
 
-        public override bool CanRead
-        {
-            get { return true; }
-        }
+        public override bool CanRead => true;
 
-        public override bool CanSeek
-        {
-            get { return false; }
-        }
+        public override bool CanSeek => false;
 
-        public override bool CanWrite
-        {
-            get { return false; }
-        }
+        public override bool CanWrite => false;
 
         public override void Flush()
         {
             throw new InvalidOperationException();
         }
 
-        public override long Length
-        {
-            get { return _stream.Length; }
-        }
+        public override long Length => _stream.Length;
 
         public override long Position
         {
-            get
-            {
-                return _position;
-            }
-            set
-            {
-                throw new InvalidOperationException();
-            }
+            get => _position;
+            set => throw new InvalidOperationException();
         }
 
         public override long Seek(long offset, SeekOrigin origin)

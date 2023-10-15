@@ -61,17 +61,14 @@ namespace CSCore.Streams.SampleConverter
         /// <summary>
         ///     Gets the <see cref="CSCore.WaveFormat"/> of the output waveform-audio data.
         /// </summary>
-        public WaveFormat WaveFormat
-        {
-            get { return _waveFormat; }
-        }
+        public WaveFormat WaveFormat => _waveFormat;
 
         /// <summary>
         ///     Gets or sets the current position.
         /// </summary>
         public long Position
         {
-            get { return CanSeek ? Source.Position * WaveFormat.BytesPerSample : 0; }
+            get => CanSeek ? Source.Position * WaveFormat.BytesPerSample : 0;
             set
             {
                 if (CanSeek)
@@ -89,23 +86,17 @@ namespace CSCore.Streams.SampleConverter
         /// <summary>
         ///     Gets the length of the waveform-audio data.
         /// </summary>
-        public long Length
-        {
-            get { return CanSeek ? Source.Length * WaveFormat.BytesPerSample : 0; }
-        }
+        public long Length => CanSeek ? Source.Length * WaveFormat.BytesPerSample : 0;
 
         /// <summary>
         /// Gets a value indicating whether the <see cref="IAudioSource"/> supports seeking.
         /// </summary>
-        public bool CanSeek
-        {
-            get { return Source.CanSeek; }
-        }
+        public bool CanSeek => Source.CanSeek;
 
         internal long InputToOutput(long position)
         {
             //long result = (long)(position * _ratio);
-            long result = (long)(position * _ratio);
+            var result = (long)(position * _ratio);
             result -= (result % _waveFormat.BlockAlign);
             return result;
         }
@@ -113,7 +104,7 @@ namespace CSCore.Streams.SampleConverter
         internal long OutputToInput(long position)
         {
             //long result = (long)(position * _ratio);
-            long result = (long)(position / _ratio);
+            var result = (long)(position / _ratio);
             result -= (result % Source.WaveFormat.BlockAlign);
             return result;
         }

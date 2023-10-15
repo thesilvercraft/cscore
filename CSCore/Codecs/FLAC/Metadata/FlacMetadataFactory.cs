@@ -1,9 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.DirectoryServices;
 using System.IO;
-using System.Linq;
-using System.Text;
 
 namespace CSCore.Codecs.FLAC.Metadata
 {
@@ -19,10 +16,7 @@ namespace CSCore.Codecs.FLAC.Metadata
         /// <summary>
         /// Gets the default factory instance.
         /// </summary>
-        public static FlacMetadataFactory Instance
-        {
-            get { return _instance; }
-        }
+        public static FlacMetadataFactory Instance => _instance;
 
         private FlacMetadataFactory()
         {
@@ -67,20 +61,20 @@ namespace CSCore.Codecs.FLAC.Metadata
             FlacMetaDataType type;
             int length;
 
-            byte[] b = new byte[4];
+            var b = new byte[4];
             if (stream.Read(b, 0, 4) <= 0)
                 throw new FlacException(new EndOfStreamException("Could not read metadata."), FlacLayer.Metadata);
 
             fixed (byte* headerBytes = b)
             {
-                FlacBitReader bitReader = new FlacBitReader(headerBytes, 0);
+                var bitReader = new FlacBitReader(headerBytes, 0);
 
                 isLastBlock = bitReader.ReadBits(1) == 1;
                 type = (FlacMetaDataType)bitReader.ReadBits(7);
                 length = (int)bitReader.ReadBits(24);
             }
 
-            long streamStartPosition = stream.Position;
+            var streamStartPosition = stream.Position;
             if (type < 0 || (int)type > 6)
                 return null;
 
@@ -93,7 +87,7 @@ namespace CSCore.Codecs.FLAC.Metadata
 
         private FlacMetadata CreateFlacMetadataInstance(FlacMetaDataType flacMetadataType)
         {
-            int flacMetadataTypeAsInt = (int) flacMetadataType;
+            var flacMetadataTypeAsInt = (int) flacMetadataType;
             Type type;
 
             if (!_registeredmetadataTypes.TryGetValue(flacMetadataTypeAsInt, out type))

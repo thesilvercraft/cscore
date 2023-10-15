@@ -1,5 +1,4 @@
 using System;
-using System.Diagnostics;
 
 namespace CSCore.Streams
 {
@@ -16,18 +15,12 @@ namespace CSCore.Streams
         /// <summary>
         ///     Gets the current volume.
         /// </summary>
-        public float CurrentVolume
-        {
-            get { return _currentVolume; }
-        }
+        public float CurrentVolume => _currentVolume;
 
         /// <summary>
         ///     Gets the target volume.
         /// </summary>
-        public float TargetVolume
-        {
-            get { return _targetVolume; }
-        }
+        public float TargetVolume => _targetVolume;
 
         /// <summary>
         ///     Occurs when the fading process has reached its target volume.
@@ -100,7 +93,7 @@ namespace CSCore.Streams
 
             //calculate the step
             var durationInBlocks = (int) (duration / 1000 * SampleRate);
-            float delta = _targetVolume - _startVolume;
+            var delta = _targetVolume - _startVolume;
             _step = delta / durationInBlocks;
 
             IsFading = true;
@@ -125,7 +118,7 @@ namespace CSCore.Streams
         {
             if (!IsFading)
             {
-                for (int i = offset; i < count; i++)
+                for (var i = offset; i < count; i++)
                 {
                     buffer[i] *= _currentVolume;
                 }
@@ -140,10 +133,10 @@ namespace CSCore.Streams
                 return;
             }
 
-            int channels = Channels;
+            var channels = Channels;
             count -= (count % channels);
 
-            int sampleIndex = offset;
+            var sampleIndex = offset;
 
             while ((sampleIndex - offset) < count)
             {
@@ -192,7 +185,7 @@ namespace CSCore.Streams
                 }
                 else
                 {
-                    for (int i = 0; i < channels; i++)
+                    for (var i = 0; i < channels; i++)
                     {
                         buffer[sampleIndex++] *= _currentVolume;
                     }
@@ -205,7 +198,7 @@ namespace CSCore.Streams
                     if (IsFadingFinished())
                     {
                         FinalizeFading();
-                        int c = count - (sampleIndex - offset);
+                        var c = count - (sampleIndex - offset);
                         if (c > 0)
                             ApplyFading(buffer, sampleIndex, c); //apply the rest
 

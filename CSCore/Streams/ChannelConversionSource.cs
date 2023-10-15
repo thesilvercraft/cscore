@@ -6,7 +6,7 @@ namespace CSCore.Streams
     /// <summary>
     /// NOT RELEASED YET! Provides conversion between a set of input and output channels using a <see cref="ChannelMatrix"/>.
     /// </summary>
-    public class ChannelConversionSource : SampleAggregatorBase
+    internal class ChannelConversionSource : SampleAggregatorBase
     {
         private readonly ChannelMatrix _channelMatrix;
         private WaveFormat _waveFormat;
@@ -59,23 +59,23 @@ namespace CSCore.Streams
 
             count -= count % WaveFormat.Channels;
 
-            int bytesToRead = (int)OutputToInput(count);
+            var bytesToRead = (int)OutputToInput(count);
             _buffer = _buffer.CheckBuffer(bytesToRead);
 
-            int read = base.Read(_buffer, 0, bytesToRead);
-            int counter = 0;
+            var read = base.Read(_buffer, 0, bytesToRead);
+            var counter = 0;
             Array.Clear(buffer, offset, (int) InputToOutput(read));
 
             fixed (float* buf = &buffer[offset])
             {
-                float* pbuf = buf;
+                var pbuf = buf;
 
-                for (int i = 0; i < read; i++)
+                for (var i = 0; i < read; i++)
                 {
-                    float value = _buffer[i];
+                    var value = _buffer[i];
 
-                    int channelIndex = i % BaseSource.WaveFormat.Channels;
-                    for (int o = 0; o < _channelMatrix.OutputChannelCount; o++)
+                    var channelIndex = i % BaseSource.WaveFormat.Channels;
+                    for (var o = 0; o < _channelMatrix.OutputChannelCount; o++)
                     {
                         pbuf[o] += value * _channelMatrix[channelIndex, o].Value;
                     }
@@ -95,40 +95,22 @@ namespace CSCore.Streams
         /// <summary>
         /// Gets the output format.
         /// </summary>
-        public override WaveFormat WaveFormat
-        {
-            get
-            {
-                return _waveFormat;
-            }
-        }
+        public override WaveFormat WaveFormat => _waveFormat;
 
         /// <summary>
         /// Gets or sets the position in samples.
         /// </summary>
         public override long Position
         {
-            get
-            {
-                return InputToOutput(base.Position);
-            }
+            get => InputToOutput(base.Position);
 
-            set
-            {
-                base.Position = OutputToInput(value);
-            }
+            set => base.Position = OutputToInput(value);
         }
 
         /// <summary>
         /// Gets the length in samples.
         /// </summary>
-        public override long Length
-        {
-            get
-            {
-                return InputToOutput(base.Length);
-            }
-        }
+        public override long Length => InputToOutput(base.Length);
 
         internal long InputToOutput(long position)
         {

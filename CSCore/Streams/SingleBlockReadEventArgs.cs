@@ -1,7 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 
 namespace CSCore.Streams
 {
@@ -50,7 +47,7 @@ namespace CSCore.Streams
                 Left = samples[index];
                 Right = samples[index + 1];
                 Samples = new float[channels];
-                for (int c = 0; c < channels; c++)
+                for (var c = 0; c < channels; c++)
                 {
                     Samples[c] = samples[index + c];
                 }

@@ -1,8 +1,6 @@
 ﻿using CSCore.Tags.ID3.Frames;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
+using System.IO;
 
 namespace CSCore.Tags.ID3
 {
@@ -65,7 +63,7 @@ namespace CSCore.Tags.ID3
             }
         }
 
-        public System.Drawing.Image Image
+        public Stream Image
         {
             get
             {
@@ -118,7 +116,7 @@ namespace CSCore.Tags.ID3
         {
             get
             {
-                MultiStringTextFrame f = _id3[FrameID.ContentType] as MultiStringTextFrame;
+                var f = _id3[FrameID.ContentType] as MultiStringTextFrame;
                 if (f == null)
                     return null;
 
@@ -136,8 +134,8 @@ namespace CSCore.Tags.ID3
                 }
 
                 char c;
-                int i = 1;
-                string sr = String.Empty;
+                var i = 1;
+                var sr = String.Empty;
                 do
                 {
                     c = str[i++];
@@ -145,7 +143,7 @@ namespace CSCore.Tags.ID3
                         sr += c;
                 } while (i < str.Length && Char.IsNumber(c));
 
-                int res = 0;
+                var res = 0;
                 if (Int32.TryParse(sr, out res))
                 {
                     return (ID3Genre)res;

@@ -18,7 +18,7 @@ namespace CSCore.Utils
 
         public BitReader(byte[] buffer, int offset)
         {
-            if (buffer == null || buffer.Length <= 0)
+            if (buffer is not { Length: > 0 })
                 throw new ArgumentException("buffer is null or has no elements", "buffer");
             if (offset < 0)
                 throw new ArgumentOutOfRangeException("offset");
@@ -36,7 +36,7 @@ namespace CSCore.Utils
             if (offset < 0)
                 throw new ArgumentOutOfRangeException("offset");
 
-            int byteoffset = offset / 8;
+            var byteoffset = offset / 8;
 
             _buffer = _storedBuffer = buffer + byteoffset;
             _bitoffset = offset % 8;
@@ -44,30 +44,15 @@ namespace CSCore.Utils
             _cache = PeekCache();
         }
 
-        protected internal uint Cache
-        {
-            get { return _cache; }
-        }
+        protected internal uint Cache => _cache;
 
-        protected internal int CacheSigned
-        {
-            get { return (int) Cache; }
-        }
+        protected internal int CacheSigned => (int) Cache;
 
-        public byte* Buffer
-        {
-            get { return _storedBuffer; }
-        }
+        public byte* Buffer => _storedBuffer;
 
-        public IntPtr BufferPtr
-        {
-            get { return new IntPtr(Buffer);}
-        }
+        public IntPtr BufferPtr => new(Buffer);
 
-        public int Position
-        {
-            get { return _position; }
-        }
+        public int Position => _position;
 
         public void Dispose()
         {
@@ -79,7 +64,7 @@ namespace CSCore.Utils
         {
             unchecked
             {
-                byte* ptr = _buffer;
+                var ptr = _buffer;
                 uint result = *(ptr++);
                 result = (result << 8) + *(ptr++);
                 result = (result << 8) + *(ptr++);
@@ -102,7 +87,7 @@ namespace CSCore.Utils
             if (bits <= 0)
                 throw new ArgumentOutOfRangeException("bits");
 
-            int tmp = _bitoffset + bits;
+            var tmp = _bitoffset + bits;
             _buffer += tmp >> 3; //skip bytes
             _bitoffset = tmp & 7; //bitoverflow -> max 7 bit
 
@@ -116,7 +101,7 @@ namespace CSCore.Utils
             if (bits <= 0 || bits > 32)
                 throw new ArgumentOutOfRangeException("bits", "bits has to be a value between 1 and 32");
 
-            uint result = _cache >> 32 - bits;
+            var result = _cache >> 32 - bits;
             if (bits <= 24)
             {
                 SeekBits(bits);
@@ -208,7 +193,7 @@ namespace CSCore.Utils
 
         public int ReadBitI()
         {
-            uint result = _cache >> 31;
+            var result = _cache >> 31;
             SeekBits(1);
             return (int) result;
         }

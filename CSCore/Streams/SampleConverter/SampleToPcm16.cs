@@ -38,11 +38,11 @@ namespace CSCore.Streams.SampleConverter
         {
             Buffer = Buffer.CheckBuffer(count / 2);
 
-            int read = Source.Read(Buffer, 0, count / 2);
-            int bufferOffset = offset;
-            for (int i = 0; i < read; i++)
+            var read = Source.Read(Buffer, 0, count / 2);
+            var bufferOffset = offset;
+            for (var i = 0; i < read; i++)
             {
-                short value = (short)(Buffer[i] * short.MaxValue);
+                var value = (short)(Buffer[i] * short.MaxValue);
                 var bytes = BitConverter.GetBytes(value);
 
                 buffer[bufferOffset++] = bytes[0];

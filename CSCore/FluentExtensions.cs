@@ -59,7 +59,8 @@ namespace CSCore
             if (input.WaveFormat.SampleRate == destinationSampleRate)
                 return input;
 
-            return new DmoResampler(input, destinationSampleRate);
+            var resamplerFactory = Locator.Instance.Get<IResamplerFactory>();
+            return resamplerFactory.CreateResampler(input, destinationSampleRate);
         }
 
         /// <summary>
@@ -80,7 +81,8 @@ namespace CSCore
             if (input.WaveFormat.SampleRate == destinationSampleRate)
                 return input;
 
-            return new DmoResampler(input.ToWaveSource(), destinationSampleRate).ToSampleSource();
+            var resamplerFactory = Locator.Instance.Get<IResamplerFactory>();
+            return resamplerFactory.CreateResampler(input, destinationSampleRate);
         }
 
 
@@ -102,19 +104,19 @@ namespace CSCore
             if (input.WaveFormat.Channels == 1)
                 return new MonoToStereoSource(input.ToSampleSource()).ToWaveSource(input.WaveFormat.BitsPerSample);
 
+            var channelMapperFactory = Locator.Instance.Get<IChannelMapperFactory>();
+
             var format = input.WaveFormat as WaveFormatExtensible;
             if (format != null)
             {
-                ChannelMask channelMask = format.ChannelMask;
-                ChannelMatrix channelMatrix = ChannelMatrix.GetMatrix(channelMask, ChannelMasks.StereoMask);
-                return new DmoChannelResampler(input, channelMatrix);
+                var channelMask = format.ChannelMask;
+                var channelMatrix = ChannelMatrix.GetMatrix(channelMask, ChannelMasks.StereoMask);
+                return channelMapperFactory.MapChannels(input, channelMatrix);
             }
 
             Debug.WriteLine("MultiChannel stream with no ChannelMask.");
 
-            WaveFormat waveFormat = (WaveFormat)input.WaveFormat.Clone();
-            waveFormat.Channels = 2;
-            return new DmoResampler(input, waveFormat);
+            return channelMapperFactory.MapChannels(input, 2);
         }
 
         /// <summary>
@@ -156,19 +158,19 @@ namespace CSCore
             if (input.WaveFormat.Channels == 2)
                 return new StereoToMonoSource(input.ToSampleSource()).ToWaveSource(input.WaveFormat.BitsPerSample);
 
-            WaveFormatExtensible format = input.WaveFormat as WaveFormatExtensible;
+            var channelMapperFactory = Locator.Instance.Get<IChannelMapperFactory>();
+
+            var format = input.WaveFormat as WaveFormatExtensible;
             if (format != null)
             {
-                ChannelMask channelMask = format.ChannelMask;
-                ChannelMatrix channelMatrix = ChannelMatrix.GetMatrix(channelMask, ChannelMasks.MonoMask);
-                return new DmoChannelResampler(input, channelMatrix);
+                var channelMask = format.ChannelMask;
+                var channelMatrix = ChannelMatrix.GetMatrix(channelMask, ChannelMasks.MonoMask);
+                return channelMapperFactory.MapChannels(input, channelMatrix);
             }
 
             Debug.WriteLine("MultiChannel stream with no ChannelMask.");
 
-            WaveFormat waveFormat = (WaveFormat) input.WaveFormat.Clone();
-            waveFormat.Channels = 1;
-            return new DmoResampler(input, waveFormat);
+            return channelMapperFactory.MapChannels(input, 1);
         }
 
         /// <summary>
@@ -306,7 +308,7 @@ namespace CSCore
 
             public override int Read(byte[] buffer, int offset, int count)
             {
-                int read = base.Read(buffer, offset, count);
+                var read = base.Read(buffer, offset, count);
                 if (read <= 0 && count - offset > WaveFormat.BlockAlign)
                 {
                     if (!_eofReached)
@@ -336,7 +338,7 @@ namespace CSCore
 
             public override int Read(float[] buffer, int offset, int count)
             {
-                int read = base.Read(buffer, offset, count);
+                var read = base.Read(buffer, offset, count);
                 if (read <= 0 && offset - count > WaveFormat.Channels)
                 {
                     if (!_eofReached)

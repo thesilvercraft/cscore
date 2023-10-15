@@ -1,7 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 
 namespace CSCore.Streams
 {
@@ -50,10 +47,10 @@ namespace CSCore.Streams
         /// </returns>
         public override int Read(float[] buffer, int offset, int count)
         {
-            int read = base.Read(buffer, offset, count);
+            var read = base.Read(buffer, offset, count);
             if (ClipOverflows)
             {
-                for (int i = offset; i < read + offset; i++)
+                for (var i = offset; i < read + offset; i++)
                 {
                     buffer[i] = Math.Max(-1, Math.Min(buffer[i], 1));
                 }

@@ -65,25 +65,19 @@ namespace CSCore.Codecs.RAW
         /// <summary>
         /// Gets a value indicating whether the <see cref="IAudioSource"/> supports seeking.
         /// </summary>
-        public bool CanSeek
-        {
-            get { return true; }
-        }
+        public bool CanSeek => true;
 
         /// <summary>
         ///     Gets the format of the raw data.
         /// </summary>
-        public WaveFormat WaveFormat
-        {
-            get { return _waveFormat; }
-        }
+        public WaveFormat WaveFormat => _waveFormat;
 
         /// <summary>
         ///     Gets or sets the position of the <see cref="RawDataReader" /> in bytes.
         /// </summary>
         public long Position
         {
-            get { return _stream != null ? _stream.Position - _startPosition : 0; }
+            get => _stream != null ? _stream.Position - _startPosition : 0;
             set
             {
                 CheckForDisposed();
@@ -101,23 +95,18 @@ namespace CSCore.Codecs.RAW
         /// <summary>
         ///     Gets the length of the <see cref="RawDataReader" /> in bytes.
         /// </summary>
-        public long Length
-        {
-            get { return _stream != null ? _stream.Length - _startPosition : 0; }
-        }
+        public long Length => _stream != null ? _stream.Length - _startPosition : 0;
 
         /// <summary>
         ///     Disposes the <see cref="RawDataReader" /> and the underlying <see cref="Stream" />.
         /// </summary>
         public void Dispose()
         {
-            if (!_disposed)
-            {
-                _disposed = true;
+            if (_disposed) return;
+            _disposed = true;
 
-                Dispose(true);
-                GC.SuppressFinalize(this);
-            }
+            Dispose(true);
+            GC.SuppressFinalize(this);
         }
 
         /// <summary>
@@ -129,11 +118,9 @@ namespace CSCore.Codecs.RAW
         /// </param>
         protected virtual void Dispose(bool disposing)
         {
-            if (_stream != null)
-            {
-                _stream.Dispose();
-                _stream = null;
-            }
+            if (_stream == null) return;
+            _stream.Dispose();
+            _stream = null;
         }
 
         /// <summary>

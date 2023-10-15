@@ -40,11 +40,11 @@ namespace CSCore.Streams.SampleConverter
         public override unsafe int Read(float[] buffer, int offset, int count)
         {
             Buffer = Buffer.CheckBuffer(count);
-            int read = Source.Read(Buffer, 0, count);
+            var read = Source.Read(Buffer, 0, count);
             fixed (float* ptrBuffer = buffer)
             {
-                float* ppbuffer = ptrBuffer + offset;
-                for (int i = 0; i < read; i++)
+                var ppbuffer = ptrBuffer + offset;
+                for (var i = 0; i < read; i++)
                 {
                     *(ppbuffer++) = Buffer[i] / 128f - 1.0f;
                 }

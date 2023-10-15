@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using CSCore.DMO;
 
 namespace CSCore.DSP
 {
@@ -357,9 +356,9 @@ namespace CSCore.DSP
             _matrix =
                 new ChannelMatrixElement[GetValuesOfChannelMask(inputMask).Length,
                     GetValuesOfChannelMask(outputMask).Length];
-            for (int x = 0; x < Width; x++)
+            for (var x = 0; x < Width; x++)
             {
-                for (int y = 0; y < Height; y++)
+                for (var y = 0; y < Height; y++)
                 {
                     _matrix[y, x] = new ChannelMatrixElement(GetValuesOfChannelMask(inputMask)[y],
                         GetValuesOfChannelMask(outputMask)[x]);
@@ -370,34 +369,22 @@ namespace CSCore.DSP
         /// <summary>
         ///     Gets the <see cref="ChannelMask" /> of the input signal.
         /// </summary>
-        public ChannelMask InputMask
-        {
-            get { return _inputMask; }
-        }
+        public ChannelMask InputMask => _inputMask;
 
         /// <summary>
         ///     Gets the <see cref="ChannelMask" /> of the output signal.
         /// </summary>
-        public ChannelMask OutputMask
-        {
-            get { return _outputMask; }
-        }
+        public ChannelMask OutputMask => _outputMask;
 
         /// <summary>
         ///     Gets the number of rows of the channel conversion matrix.
         /// </summary>
-        public int Height
-        {
-            get { return _matrix.GetLength(0); }
-        }
+        public int Height => _matrix.GetLength(0);
 
         /// <summary>
         ///     Gets the number of columns of the channel conversion matrix.
         /// </summary>
-        public int Width
-        {
-            get { return _matrix.GetLength(1); }
-        }
+        public int Width => _matrix.GetLength(1);
 
         /// <summary>
         ///     Gets the input signals number of channels.
@@ -406,10 +393,7 @@ namespace CSCore.DSP
         ///     The <see cref="InputChannelCount" /> property always returns the same value as the <see cref="Height" />
         ///     property.
         /// </remarks>
-        public int InputChannelCount
-        {
-            get { return Height; }
-        }
+        public int InputChannelCount => Height;
 
         /// <summary>
         ///     Gets the output signals number of channels.
@@ -418,10 +402,7 @@ namespace CSCore.DSP
         ///     The <see cref="OutputChannelCount" /> property always returns the same value as the <see cref="Width" />
         ///     property.
         /// </remarks>
-        public int OutputChannelCount
-        {
-            get { return Width; }
-        }
+        public int OutputChannelCount => Width;
 
         /// <summary>
         ///     Gets or sets a <see cref="ChannelMatrixElement" /> of the <see cref="ChannelMatrix" />.
@@ -431,8 +412,8 @@ namespace CSCore.DSP
         /// <returns>The <see cref="ChannelMatrixElement" /> of the <see cref="ChannelMatrix" /> at the specified position.</returns>
         public ChannelMatrixElement this[int input, int output]
         {
-            get { return _matrix[input, output]; }
-            set { _matrix[input, output] = value; }
+            get => _matrix[input, output];
+            set => _matrix[input, output] = value;
         }
 
         /// <summary>
@@ -450,9 +431,9 @@ namespace CSCore.DSP
             if (matrix.GetLength(0) != Height)
                 throw new ArgumentException("Matrix has to have a height of " + Height);
 
-            for (int x = 0; x < Width; x++)
+            for (var x = 0; x < Width; x++)
             {
-                for (int y = 0; y < Height; y++)
+                for (var y = 0; y < Height; y++)
                 {
                     this[y, x].Value = matrix[y, x];
                 }
@@ -470,9 +451,9 @@ namespace CSCore.DSP
         public float[] GetOneDimensionalMatrix()
         {
             var result = new List<float>();
-            for (int x = 0; x < Width; x++)
+            for (var x = 0; x < Width; x++)
             {
-                for (int y = 0; y < Height; y++)
+                for (var y = 0; y < Height; y++)
                 {
                     result.Add(this[y, x].Value);
                 }
@@ -493,11 +474,11 @@ namespace CSCore.DSP
         public ChannelMatrix Flip()
         {
             var result = new ChannelMatrix(OutputMask, InputMask);
-            for (int x = 0; x < OutputChannelCount; x++)
+            for (var x = 0; x < OutputChannelCount; x++)
             {
-                for (int y = 0; y < InputChannelCount; y++)
+                for (var y = 0; y < InputChannelCount; y++)
                 {
-                    ChannelMatrixElement input = this[y, x];
+                    var input = this[y, x];
                     result[x, y] = new ChannelMatrixElement(input.OutputChannel, input.InputChannel)
                     {
                         Value = input.Value
@@ -509,9 +490,9 @@ namespace CSCore.DSP
 
         private static ChannelMask[] GetValuesOfChannelMask(ChannelMask channelMask)
         {
-            Array totalChannelMaskValues = Enum.GetValues(typeof(ChannelMask));
+            var totalChannelMaskValues = Enum.GetValues(typeof(ChannelMask));
             var values = new List<ChannelMask>();
-            for (int i = 0; i < totalChannelMaskValues.Length; i++)
+            for (var i = 0; i < totalChannelMaskValues.Length; i++)
             {
                 if ((channelMask & ((ChannelMask)totalChannelMaskValues.GetValue(i))) ==
                     (ChannelMask)totalChannelMaskValues.GetValue(i))

@@ -29,10 +29,7 @@ namespace CSCore.Streams.Effects
         /// <remarks>
         ///     None of the <see cref="EqualizerFilter" />
         /// </remarks>
-        public IList<EqualizerFilter> SampleFilters
-        {
-            get { return _equalizerFilters; }
-        }
+        public IList<EqualizerFilter> SampleFilters => _equalizerFilters;
 
         /// <summary>
         ///     Returns a new instance of the <see cref="Equalizer" /> class with 10 preset <see cref="EqualizerFilter" />.
@@ -56,8 +53,8 @@ namespace CSCore.Streams.Effects
         /// <returns>A new instance of the <see cref="Equalizer" /> class with 10 preset <see cref="EqualizerFilter" />.</returns>
         public static Equalizer Create10BandEqualizer(ISampleSource source, int bandWidth, int defaultGain)
         {
-            int sampleRate = source.WaveFormat.SampleRate;
-            int channels = source.WaveFormat.Channels;
+            var sampleRate = source.WaveFormat.SampleRate;
+            var channels = source.WaveFormat.Channels;
 
             if (sampleRate < 32000)
             {
@@ -81,7 +78,7 @@ namespace CSCore.Streams.Effects
             };
 
             var equalizer = new Equalizer(source);
-            foreach (EqualizerChannelFilter equalizerChannelFilter in sampleFilters)
+            foreach (var equalizerChannelFilter in sampleFilters)
             {
                 equalizer.SampleFilters.Add(new EqualizerFilter(channels, equalizerChannelFilter));
             }
@@ -106,17 +103,17 @@ namespace CSCore.Streams.Effects
         /// <returns>The total number of samples read into the buffer.</returns>
         public override int Read(float[] buffer, int offset, int count)
         {
-            int read = base.Read(buffer, offset, count);
+            var read = base.Read(buffer, offset, count);
 
-            for (int c = 0; c < WaveFormat.Channels; c++)
+            for (var c = 0; c < WaveFormat.Channels; c++)
             {
-                for (int i = _equalizerFilters.Count; i-- > 0;)
+                for (var i = _equalizerFilters.Count; i-- > 0;)
                 {
                     _equalizerFilters[i].Filters[c].Process(buffer, offset, read, c, WaveFormat.Channels);
                 }
             }
 
-            for (int n = offset; n < count; n++)
+            for (var n = offset; n < count; n++)
             {
                 buffer[n] = Math.Max(-1, Math.Min(buffer[n], 1));
             }
@@ -164,15 +161,9 @@ namespace CSCore.Streams.Effects
                 return _list.Remove(item);
             }
 
-            public int Count
-            {
-                get { return _list.Count; }
-            }
+            public int Count => _list.Count;
 
-            public bool IsReadOnly
-            {
-                get { return false; }
-            }
+            public bool IsReadOnly => false;
 
             public int IndexOf(EqualizerFilter item)
             {
@@ -192,7 +183,7 @@ namespace CSCore.Streams.Effects
 
             public EqualizerFilter this[int index]
             {
-                get { return _list[index]; }
+                get => _list[index];
                 set
                 {
                     _list[index] = value;

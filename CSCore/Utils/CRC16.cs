@@ -21,10 +21,10 @@
 
         public unsafe ushort CalcCheckSum(byte* buffer, int count)
         {
-            int res = 0;
+            var res = 0;
             fixed (ushort* pTable = crc_table)
             {
-                for (int i = count; i > 0; i--)
+                for (var i = count; i > 0; i--)
                 {
                     res = ((res << 8) ^
                            pTable[(res >> 8) ^ *(buffer++)]);

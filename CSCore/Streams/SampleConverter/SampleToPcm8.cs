@@ -34,13 +34,13 @@ namespace CSCore.Streams.SampleConverter
         /// <returns>The total number of bytes read into the buffer.</returns>
         public override int Read(byte[] buffer, int offset, int count)
         {
-            int sourceCount = count;
+            var sourceCount = count;
             Buffer = Buffer.CheckBuffer(sourceCount);
 
-            int read = Source.Read(Buffer, 0, sourceCount);
-            for (int i = offset; i < read; i++)
+            var read = Source.Read(Buffer, 0, sourceCount);
+            for (var i = offset; i < read; i++)
             {
-                byte value = (byte)((Buffer[i] + 1) * 128f);
+                var value = (byte)((Buffer[i] + 1) * 128f);
                 buffer[i] = unchecked(value);
             }
 

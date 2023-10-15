@@ -1,6 +1,6 @@
 ﻿using System;
 using System.ComponentModel;
-using System.Drawing;
+using System.IO;
 
 namespace CSCore.Tags.ID3.Frames
 {
@@ -14,19 +14,16 @@ namespace CSCore.Tags.ID3.Frames
 
         internal byte[] RawData { get; private set; }
 
-        private Image _image;
+        private Stream _image;
 
         /// <summary>
         /// WARNING: If MimeType equals "-->" the picture will be downloaded from the web.
         /// Use GetURL() the get the url to the picture. If not, data, contained by the frame will
         /// be used.
         /// </summary>
-        public Image Image
-        {
-            get { return _image ?? (_image = DecodeImage()); }
-        }
+        public Stream Image => _image ?? (_image = DecodeImage());
 
-        private Image DecodeImage()
+        private Stream DecodeImage()
         {
             return ID3Utils.DecodeImage(RawData, MimeType);
         }
@@ -43,7 +40,7 @@ namespace CSCore.Tags.ID3.Frames
 
         protected override void Decode(byte[] content)
         {
-            int offset = 1;
+            var offset = 1;
             if (content.Length < 3)
                 throw new ID3Exception("Invalid contentlength id=0.");//id -> for debugging
 
