@@ -36,8 +36,8 @@ namespace CSCore.Streams.Effects
         /// </summary>
         public double GainDB
         {
-            get { return _biQuadFilter.GainDB; }
-            set { _biQuadFilter.GainDB = value; }
+            get => _biQuadFilter.GainDB;
+            set => _biQuadFilter.GainDB = value;
         }
 
         /// <summary>
@@ -45,25 +45,19 @@ namespace CSCore.Streams.Effects
         /// </summary>
         public double BandWidth
         {
-            get { return _biQuadFilter.BandWidth; }
-            set { _biQuadFilter.BandWidth = value; }
+            get => _biQuadFilter.BandWidth;
+            set => _biQuadFilter.BandWidth = value;
         }
 
         /// <summary>
         ///     Gets the frequency.
         /// </summary>
-        public double Frequency
-        {
-            get { return _biQuadFilter.Frequency; }
-        }
+        public double Frequency => _biQuadFilter.Frequency;
 
         /// <summary>
         ///     Gets the samplerate.
         /// </summary>
-        public int SampleRate
-        {
-            get { return _biQuadFilter.SampleRate; }
-        }
+        public int SampleRate => _biQuadFilter.SampleRate;
 
 
         /// <summary>
@@ -85,7 +79,7 @@ namespace CSCore.Streams.Effects
         /// <param name="channelCount">The total number of channels.</param>
         public void Process(float[] input, int offset, int count, int channelIndex, int channelCount)
         {
-            for (int i = channelIndex + offset; i < count + offset; i += channelCount)
+            for (var i = channelIndex + offset; i < count + offset; i += channelCount)
             {
                 input[i] = _biQuadFilter.Process(input[i]);
             }

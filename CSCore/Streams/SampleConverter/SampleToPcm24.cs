@@ -36,15 +36,15 @@ namespace CSCore.Streams.SampleConverter
         /// <returns>The total number of bytes read into the buffer.</returns>
         public override unsafe int Read(byte[] buffer, int offset, int count)
         {
-            int sourceCount = count / 3;
+            var sourceCount = count / 3;
             Buffer = Buffer.CheckBuffer(sourceCount);
-            int read = Source.Read(Buffer, 0, sourceCount);
+            var read = Source.Read(Buffer, 0, sourceCount);
 
-            int bufferOffset = offset;
-            for (int i = 0; i < read; i++)
+            var bufferOffset = offset;
+            for (var i = 0; i < read; i++)
             {
-                uint sample32 = (uint)(Buffer[i] * 8388608f);
-                byte* psample32 = (byte*)&sample32;
+                var sample32 = (uint)(Buffer[i] * 8388608f);
+                var psample32 = (byte*)&sample32;
                 buffer[bufferOffset++] = psample32[0];
                 buffer[bufferOffset++] = psample32[1];
                 buffer[bufferOffset++] = psample32[2];

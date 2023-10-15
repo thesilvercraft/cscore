@@ -15,10 +15,7 @@ namespace CSCore
         /// <summary>
         /// Gets the default instance of the factory.
         /// </summary>
-        public static TimeConverterFactory Instance
-        {
-            get { return _instance; }
-        }
+        public static TimeConverterFactory Instance => _instance;
 
         private readonly Dictionary<Type, TimeConverter> _timeConverters;
         private readonly Dictionary<Type, CacheItem> _cache;

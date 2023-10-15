@@ -13,14 +13,8 @@ namespace CSCore.SoundOut.AL
         private const string libLocation = "libopenal";
         public static IntPtr DllImportResolver(string libraryName, Assembly assembly, DllImportSearchPath? searchPath)
         {
-            if (libraryName == "libopenal")
-            {
-                if (OperatingSystem.IsWindows())
-                {
-                    return NativeLibrary.Load("openal32.dll", assembly, searchPath);
-                }
-            }
-            return IntPtr.Zero;
+            if (libraryName != "libopenal") return IntPtr.Zero;
+            return OperatingSystem.IsWindows() ? NativeLibrary.Load("openal32.dll", assembly, searchPath) : IntPtr.Zero;
         }
 
         [DllImport(libLocation, CallingConvention = CallingConvention.Cdecl)]
@@ -177,8 +171,8 @@ namespace CSCore.SoundOut.AL
         {
             var strings = new List<string>();
 
-            bool lastNull = false;
-            int i = -1;
+            var lastNull = false;
+            var i = -1;
             byte c;
             while (!((c = Marshal.ReadByte(location, ++i)) == '\0' && lastNull))
             {
@@ -199,7 +193,7 @@ namespace CSCore.SoundOut.AL
 
         internal static bool IsExtensionPresent(string extension)
         {
-            sbyte result = extension.StartsWith("ALC")
+            var result = extension.StartsWith("ALC")
                 ? alcIsExtensionPresent(IntPtr.Zero, extension)
                 : alIsExtensionPresent(extension);
 

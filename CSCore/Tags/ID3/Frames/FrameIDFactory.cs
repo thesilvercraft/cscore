@@ -10,10 +10,7 @@ namespace CSCore.Tags.ID3.Frames
     {
         private static List<ID3v2FrameEntry> _entries = new List<ID3v2FrameEntry>();
 
-        public static List<ID3v2FrameEntry> Frames
-        {
-            get { return _entries; }
-        }
+        public static List<ID3v2FrameEntry> Frames => _entries;
 
         public static ID3v2FrameEntry GetFrameEntry(string id, ID3Version version)
         {

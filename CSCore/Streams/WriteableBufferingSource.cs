@@ -87,7 +87,7 @@ namespace CSCore.Streams
         {
             lock (_bufferlock)
             {
-                int read = _buffer.Read(buffer, offset, count);
+                var read = _buffer.Read(buffer, offset, count);
                 if (FillWithZeros)
                 {
                     if (read < count)
@@ -101,41 +101,26 @@ namespace CSCore.Streams
         /// <summary>
         ///     Gets the <see cref="IAudioSource.WaveFormat" /> of the waveform-audio data.
         /// </summary>
-        public WaveFormat WaveFormat
-        {
-            get { return _waveFormat; }
-        }
+        public WaveFormat WaveFormat => _waveFormat;
 
         /// <summary>
         ///     Not supported.
         /// </summary>
         public long Position
         {
-            get
-            {
-                return 0;
-            }
-            set
-            {
-                throw new InvalidOperationException();
-            }
+            get => 0;
+            set => throw new InvalidOperationException();
         }
 
         /// <summary>
         ///     Gets the number of stored bytes inside of the internal buffer.
         /// </summary>
-        public long Length
-        {
-            get { return _buffer.Buffered; }
-        }
+        public long Length => _buffer.Buffered;
 
         /// <summary>
         /// Gets a value indicating whether the <see cref="IAudioSource"/> supports seeking.
         /// </summary>
-        public bool CanSeek
-        {
-            get { return false; }
-        }
+        public bool CanSeek => false;
 
         private bool _disposed;
 

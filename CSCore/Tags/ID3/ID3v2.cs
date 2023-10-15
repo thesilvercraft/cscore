@@ -24,7 +24,7 @@ namespace CSCore.Tags.ID3
         {
             try
             {
-                ID3v2 id3v2 = new ID3v2(stream);
+                var id3v2 = new ID3v2(stream);
                 if (id3v2.ReadData(stream, true))
                     return id3v2;
             }
@@ -37,7 +37,7 @@ namespace CSCore.Tags.ID3
 
         private static ID3v2 FromStream(Stream stream, bool readData)
         {
-            ID3v2 id3v2 = new ID3v2(stream);
+            var id3v2 = new ID3v2(stream);
             if (id3v2.ReadData(stream, readData))
                 return id3v2;
             return null;
@@ -73,21 +73,15 @@ namespace CSCore.Tags.ID3
 
         private byte[] _content;
 
-        public ID3v2Header Header { get { return _header; } }
+        public ID3v2Header Header => _header;
 
-        public ID3v2ExtendedHeader ExtendedHeader { get { return _extendedHeader; } }
+        public ID3v2ExtendedHeader ExtendedHeader => _extendedHeader;
 
-        public ID3v2Footer Footer { get { return _footer; } }
+        public ID3v2Footer Footer => _footer;
 
-        public ID3v2QuickInfo QuickInfo { get { return _quickInfo ?? (_quickInfo = new ID3v2QuickInfo(this)); } }
+        public ID3v2QuickInfo QuickInfo => _quickInfo ?? (_quickInfo = new ID3v2QuickInfo(this));
 
-        public Frame this[FrameID id]
-        {
-            get
-            {
-                return this[FrameIDFactory.GetID(id, Header.Version)];
-            }
-        }
+        public Frame this[FrameID id] => this[FrameIDFactory.GetID(id, Header.Version)];
 
         public Frame this[string id]
         {
@@ -107,7 +101,7 @@ namespace CSCore.Tags.ID3
         {
             if ((_header = ID3v2Header.FromStream(stream)) != null)
             {
-                byte[] buffer = new byte[_header.DataLength];
+                var buffer = new byte[_header.DataLength];
                 if (stream.Read(buffer, 0, buffer.Length) < buffer.Length)
                     return false;
 
@@ -116,7 +110,7 @@ namespace CSCore.Tags.ID3
                     buffer = UnSyncBuffer(buffer);
                 }
                 _content = buffer;
-                MemoryStream contentStream = new MemoryStream(buffer);
+                var contentStream = new MemoryStream(buffer);
 
                 switch (_header.Version)
                 {
@@ -204,15 +198,15 @@ namespace CSCore.Tags.ID3
 
         private byte[] UnSyncBuffer(byte[] buffer)
         {
-            MemoryStream memoryStream = new MemoryStream(buffer);
-            UnsyncStream ustream = new UnsyncStream(memoryStream);
-            byte[] result = new byte[buffer.Length];
+            var memoryStream = new MemoryStream(buffer);
+            var ustream = new UnsyncStream(memoryStream);
+            var result = new byte[buffer.Length];
 
-            int read = ustream.Read(result, 0, result.Length);
+            var read = ustream.Read(result, 0, result.Length);
 
             if (read < result.Length)
             {
-                byte[] newresult = new byte[read];
+                var newresult = new byte[read];
                 Buffer.BlockCopy(result, 0, newresult, 0, read);
                 return newresult;
             }

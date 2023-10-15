@@ -60,7 +60,7 @@ namespace CSCore.DSP
         public static void Fft(Complex[] data, int exponent, FftMode mode = FftMode.Forward)
         {
             //count; if exponent = 12 -> c = 2^12 = 4096
-            int c = (int)Math.Pow(2, exponent);
+            var c = (int)Math.Pow(2, exponent);
 
             //binary inversion
             Inverse(data, c);
@@ -72,7 +72,7 @@ namespace CSCore.DSP
             //move to outer scope to optimize performance
             int j, i;
 
-            for (int l = 0; l < exponent; l++)
+            for (var l = 0; l < exponent; l++)
             {
                 n0 = 1;
                 n1 = 0;
@@ -132,8 +132,8 @@ namespace CSCore.DSP
 
         private static void Forward(Complex[] data, int count)
         {
-            int length = count;
-            for (int i = 0; i < length; i++)
+            var length = count;
+            for (var i = 0; i < length; i++)
             {
                 data[i].Real /= length;
                 data[i].Imaginary /= length;
@@ -142,16 +142,16 @@ namespace CSCore.DSP
 
         private static void Inverse(Complex[] data, int c)
         {
-            int z = 0;
-            int n1 = c >> 1; //c / 2
+            var z = 0;
+            var n1 = c >> 1; //c / 2
 
-            for (int n0 = 0; n0 < c - 1; n0++)
+            for (var n0 = 0; n0 < c - 1; n0++)
             {
                 if (n0 < z)
                 {
                     Swap(data, n0, z);
                 }
-                int l = n1;
+                var l = n1;
 
                 while (l <= z)
                 {
@@ -164,7 +164,7 @@ namespace CSCore.DSP
 
         private static void Swap(Complex[] data, int index, int index2)
         {
-            Complex tmp = data[index];
+            var tmp = data[index];
             data[index] = data[index2];
             data[index2] = tmp;
         }

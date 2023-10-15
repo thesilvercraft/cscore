@@ -27,7 +27,7 @@ namespace CSCore
         /// </summary>
         public virtual int Channels
         {
-            get { return _channels; }
+            get => _channels;
             protected internal set
             {
                 _channels = (short) value;
@@ -40,7 +40,7 @@ namespace CSCore
         /// </summary>
         public virtual int SampleRate
         {
-            get { return _sampleRate; }
+            get => _sampleRate;
             protected internal set
             {
                 _sampleRate = value;
@@ -55,8 +55,8 @@ namespace CSCore
         /// </summary>
         public virtual int BytesPerSecond
         {
-            get { return _bytesPerSecond; }
-            protected internal set { _bytesPerSecond = value; }
+            get => _bytesPerSecond;
+            protected internal set => _bytesPerSecond = value;
         }
 
         /// <summary>
@@ -66,8 +66,8 @@ namespace CSCore
         /// </summary>
         public virtual int BlockAlign
         {
-            get { return _blockAlign; }
-            protected internal set { _blockAlign = (short) value; }
+            get => _blockAlign;
+            protected internal set => _blockAlign = (short) value;
         }
 
         /// <summary>
@@ -75,7 +75,7 @@ namespace CSCore
         /// </summary>
         public virtual int BitsPerSample
         {
-            get { return _bitsPerSample; }
+            get => _bitsPerSample;
             protected internal set
             {
                 _bitsPerSample = (short) value;
@@ -88,34 +88,28 @@ namespace CSCore
         /// </summary>
         public virtual int ExtraSize
         {
-            get { return _extraSize; }
-            protected internal set { _extraSize = (short) value; }
+            get => _extraSize;
+            protected internal set => _extraSize = (short) value;
         }
 
         /// <summary>
         ///     Gets the number of bytes, used to store one sample.
         /// </summary>
-        public virtual int BytesPerSample
-        {
-            get { return BitsPerSample / 8; }
-        }
+        public virtual int BytesPerSample => BitsPerSample / 8;
 
         /// <summary>
         ///     Gets the number of bytes, used to store one block. This value equals <see cref="BytesPerSample" /> multiplied with
         ///     <see cref="Channels" />.
         /// </summary>
-        public virtual int BytesPerBlock
-        {
-            get { return BytesPerSample * Channels; }
-        }
+        public virtual int BytesPerBlock => BytesPerSample * Channels;
 
         /// <summary>
         ///     Gets the waveform-audio format type.
         /// </summary>
         public virtual AudioEncoding WaveFormatTag
         {
-            get { return _encoding; }
-            protected internal set { _encoding = value; }
+            get => _encoding;
+            protected internal set => _encoding = value;
         }
 
         /// <summary>

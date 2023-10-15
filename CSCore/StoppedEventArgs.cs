@@ -31,18 +31,12 @@ namespace CSCore
         ///     Gets a value which indicates whether the operation stopped due to an error. True means that that the operation
         ///     stopped due to an error. False means that the operation did not stop due to an error.
         /// </summary>
-        public virtual bool HasError
-        {
-            get { return _exception != null; }
-        }
+        public virtual bool HasError => _exception != null;
 
         /// <summary>
         ///     Gets the associated <see cref="Exception" /> which caused the operation to stop.
         /// </summary>
         /// <value>Can be null.</value>
-        public virtual Exception Exception
-        {
-            get { return _exception; }
-        }
+        public virtual Exception Exception => _exception;
     }
 }

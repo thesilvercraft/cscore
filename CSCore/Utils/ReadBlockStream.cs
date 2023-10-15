@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Diagnostics;
 using System.IO;
 
 namespace CSCore.Utils
@@ -22,7 +21,7 @@ namespace CSCore.Utils
 
         public override int Read(byte[] buffer, int offset, int count)
         {
-            int read = 0;
+            var read = 0;
             while (read < count)
             {
                 read += _stream.Read(buffer, offset + read, count - read);
@@ -32,41 +31,23 @@ namespace CSCore.Utils
             return count;
         }
 
-        public override bool CanRead
-        {
-            get { return true; }
-        }
+        public override bool CanRead => true;
 
-        public override bool CanSeek
-        {
-            get { return false; }
-        }
+        public override bool CanSeek => false;
 
-        public override bool CanWrite
-        {
-            get { return false; }
-        }
+        public override bool CanWrite => false;
 
         public override void Flush()
         {
             throw new InvalidOperationException();
         }
 
-        public override long Length
-        {
-            get { return _stream.Length; }
-        }
+        public override long Length => _stream.Length;
 
         public override long Position
         {
-            get
-            {
-                return _position;
-            }
-            set
-            {
-                throw new InvalidOperationException();
-            }
+            get => _position;
+            set => throw new InvalidOperationException();
         }
 
         public override long Seek(long offset, SeekOrigin origin)

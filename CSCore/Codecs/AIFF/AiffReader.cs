@@ -93,10 +93,7 @@ namespace CSCore.Codecs.AIFF
         /// <summary>
         ///     Gets the found <see cref="AiffChunk" />s of the aiff stream/file.
         /// </summary>
-        public ReadOnlyCollection<AiffChunk> Chunks
-        {
-            get { return _chunkContainer.Chunks; }
-        }
+        public ReadOnlyCollection<AiffChunk> Chunks => _chunkContainer.Chunks;
 
         /// <summary>
         ///     Reads a sequence of elements from the <see cref="AiffReader" /> and advances the position within the     stream by
@@ -185,10 +182,7 @@ namespace CSCore.Codecs.AIFF
         /// <summary>
         ///     Gets a value indicating whether the <see cref="AiffReader" /> supports seeking.
         /// </summary>
-        public bool CanSeek
-        {
-            get { return true; }
-        }
+        public bool CanSeek => true;
 
         /// <summary>
         ///     Gets the <see cref="WaveFormat" /> of the waveform-audio data.

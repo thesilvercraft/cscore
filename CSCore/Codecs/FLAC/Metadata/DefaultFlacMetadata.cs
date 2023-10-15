@@ -31,9 +31,6 @@ namespace CSCore.Codecs.FLAC
         /// <summary>
         /// Gets the type of the <see cref="FlacMetadata"/>.
         /// </summary>
-        public override FlacMetaDataType MetaDataType
-        {
-            get { return _metadataType; }
-        }
+        public override FlacMetaDataType MetaDataType => _metadataType;
     }
 }

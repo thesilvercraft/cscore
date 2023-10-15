@@ -40,8 +40,8 @@ namespace CSCore.Streams
         {
             _cache = CreateStream();
             int read;
-            int count = (int)Math.Min(source.WaveFormat.BytesPerSecond * 5, source.Length);
-            byte[] buffer = new byte[count];
+            var count = (int)Math.Min(source.WaveFormat.BytesPerSecond * 5, source.Length);
+            var buffer = new byte[count];
 
             long position = 0;
             if(source.CanSeek)
@@ -88,20 +88,14 @@ namespace CSCore.Streams
         /// <summary>
         /// Gets the Waveformat of the data stored in the cache.
         /// </summary>
-        public WaveFormat WaveFormat
-        {
-            get { return _waveFormat; }
-        }
+        public WaveFormat WaveFormat => _waveFormat;
 
         /// <summary>
         /// Gets or sets the position.
         /// </summary>
         public long Position
         {
-            get
-            {
-                return _cache.Position;
-            }
+            get => _cache.Position;
             set
             {
                 CheckForDisposed();
@@ -113,18 +107,12 @@ namespace CSCore.Streams
         /// <summary>
         /// Gets a value indicating whether the <see cref="IAudioSource"/> supports seeking.
         /// </summary>
-        public bool CanSeek
-        {
-            get { return true; }
-        }
+        public bool CanSeek => true;
 
         /// <summary>
         /// Gets the amount of bytes stored in the cache.
         /// </summary>
-        public long Length
-        {
-            get { return _cache.Length; }
-        }
+        public long Length => _cache.Length;
 
         private bool _disposed;
 

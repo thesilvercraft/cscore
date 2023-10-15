@@ -53,17 +53,14 @@ namespace CSCore.Streams.SampleConverter
         /// <summary>
         ///     Gets the <see cref="CSCore.WaveFormat" /> of the waveform-audio data.
         /// </summary>
-        public WaveFormat WaveFormat
-        {
-            get { return _waveFormat; }
-        }
+        public WaveFormat WaveFormat => _waveFormat;
 
         /// <summary>
         ///     Gets or sets the current position in samples.
         /// </summary>
         public long Position
         {
-            get { return CanSeek ? Source.Position / Source.WaveFormat.BytesPerSample :0; }
+            get => CanSeek ? Source.Position / Source.WaveFormat.BytesPerSample :0;
             set
             {
                 if (CanSeek)
@@ -81,18 +78,12 @@ namespace CSCore.Streams.SampleConverter
         /// <summary>
         ///     Gets the length of the waveform-audio data in samples.
         /// </summary>
-        public long Length
-        {
-            get { return CanSeek && Source.Length != 0 ? Source.Length / Source.WaveFormat.BytesPerSample : 0; }
-        }
+        public long Length => CanSeek && Source.Length != 0 ? Source.Length / Source.WaveFormat.BytesPerSample : 0;
 
         /// <summary>
         /// Gets a value indicating whether the <see cref="IAudioSource"/> supports seeking.
         /// </summary>
-        public bool CanSeek
-        {
-            get { return Source.CanSeek; }
-        }
+        public bool CanSeek => Source.CanSeek;
 
         /// <summary>
         /// Disposes the <see cref="WaveToSampleBase"/>.
@@ -135,7 +126,7 @@ namespace CSCore.Streams.SampleConverter
             if (source == null)
                 throw new ArgumentNullException("source");
 
-            int bitsPerSample = source.WaveFormat.BitsPerSample;
+            var bitsPerSample = source.WaveFormat.BitsPerSample;
             if (source.WaveFormat.IsPCM())
             {
                 switch (bitsPerSample)

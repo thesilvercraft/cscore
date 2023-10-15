@@ -42,7 +42,7 @@ namespace CSCore
         /// </summary>
         public virtual IWaveSource BaseSource
         {
-            get { return _baseSource; }
+            get => _baseSource;
             set
             {
                 if (value == null)
@@ -54,10 +54,7 @@ namespace CSCore
         /// <summary>
         ///     Gets the output WaveFormat.
         /// </summary>
-        public virtual WaveFormat WaveFormat
-        {
-            get { return BaseSource.WaveFormat; }
-        }
+        public virtual WaveFormat WaveFormat => BaseSource.WaveFormat;
 
 
         /// <summary>
@@ -90,7 +87,7 @@ namespace CSCore
         /// </summary>
         public virtual long Position
         {
-            get { return CanSeek ? BaseSource.Position : 0; }
+            get => CanSeek ? BaseSource.Position : 0;
             set
             {
                 if (CanSeek)
@@ -108,18 +105,12 @@ namespace CSCore
         /// <summary>
         ///     Gets the length of the source.
         /// </summary>
-        public virtual long Length
-        {
-            get { return CanSeek ? BaseSource.Length : 0; }
-        }
+        public virtual long Length => CanSeek ? BaseSource.Length : 0;
 
         /// <summary>
         /// Gets a value indicating whether the <see cref="IAudioSource"/> supports seeking.
         /// </summary>
-        public virtual bool CanSeek
-        {
-            get { return BaseSource.CanSeek; }
-        }
+        public virtual bool CanSeek => BaseSource.CanSeek;
 
         /// <summary>
         ///     Disposes the source and releases all allocated resources.

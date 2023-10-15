@@ -50,8 +50,8 @@ namespace CSCore
         /// </summary>
         public int ValidBitsPerSample
         {
-            get { return _samplesUnion; }
-            internal protected set { _samplesUnion = (short) value; }
+            get => _samplesUnion;
+            internal protected set => _samplesUnion = (short) value;
         }
 
         /// <summary>
@@ -62,8 +62,8 @@ namespace CSCore
         /// </summary>
         public int SamplesPerBlock
         {
-            get { return _samplesUnion; }
-            internal protected set { _samplesUnion = (short) value; }
+            get => _samplesUnion;
+            internal protected set => _samplesUnion = (short) value;
         }
 
         /// <summary>
@@ -71,8 +71,8 @@ namespace CSCore
         /// </summary>
         public ChannelMask ChannelMask
         {
-            get { return _channelMask; }
-            internal protected set { _channelMask = value; }
+            get => _channelMask;
+            internal protected set => _channelMask = value;
         }
 
         /// <summary>
@@ -81,8 +81,8 @@ namespace CSCore
         /// </summary>
         public Guid SubFormat
         {
-            get { return _subFormat; }
-            internal protected set { _subFormat = value; }
+            get => _subFormat;
+            internal protected set => _subFormat = value;
         }
 
         internal WaveFormatExtensible()
@@ -110,8 +110,8 @@ namespace CSCore
         {
             _samplesUnion = (short) bits;
             _subFormat = SubTypeFromWaveFormat(this);
-            int cm = 0;
-            for (int i = 0; i < channels; i++)
+            var cm = 0;
+            for (var i = 0; i < channels; i++)
             {
                 cm |= (1 << i);
             }
@@ -143,9 +143,9 @@ namespace CSCore
         public WaveFormatExtensible(int sampleRate, int bits, int channels, Guid subFormat, ChannelMask channelMask)
             : this(sampleRate, bits, channels, subFormat)
         {
-            Array totalChannelMaskValues = Enum.GetValues(typeof (ChannelMask));
-            int valuesSet = 0;
-            for (int i = 0; i < totalChannelMaskValues.Length; i++)
+            var totalChannelMaskValues = Enum.GetValues(typeof (ChannelMask));
+            var valuesSet = 0;
+            for (var i = 0; i < totalChannelMaskValues.Length; i++)
             {
                 if ((channelMask & (ChannelMask) totalChannelMaskValues.GetValue(i)) ==
                     (ChannelMask) totalChannelMaskValues.GetValue(i))

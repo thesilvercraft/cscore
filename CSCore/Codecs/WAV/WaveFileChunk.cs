@@ -57,14 +57,15 @@ namespace CSCore.Codecs.WAV
                 throw new ArgumentException("stream is not readable");
 
             var reader = new BinaryReader(stream);
-            int id = reader.ReadInt32();
+            var id = reader.ReadInt32();
             stream.Position -= 4;
 
-            if (id == FmtChunk.FmtChunkID)
-                return new FmtChunk(reader);
-            if (id == DataChunk.DataChunkID)
-                return new DataChunk(reader);
-            return new WaveFileChunk(reader);
+            return id switch
+            {
+                FmtChunk.FmtChunkID => new FmtChunk(reader),
+                DataChunk.DataChunkID => new DataChunk(reader),
+                _ => new WaveFileChunk(reader)
+            };
         }
     }
 }

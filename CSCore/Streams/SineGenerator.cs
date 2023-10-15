@@ -12,7 +12,7 @@ namespace CSCore.Streams
         /// </summary>
         public double Frequency
         {
-            get { return _frequency; }
+            get => _frequency;
             set
             {
                 if(value <= 0)
@@ -26,7 +26,7 @@ namespace CSCore.Streams
         /// </summary>
         public double Amplitude
         {
-            get { return _amplitude; }
+            get => _amplitude;
             set
             {
                 if(value < 0 || value > 1)
@@ -92,9 +92,9 @@ namespace CSCore.Streams
             if (Phase > 1)
                 Phase = 0;
 
-            for (int i = offset; i < count; i++)
+            for (var i = offset; i < count; i++)
             {
-                float sine = (float)(Amplitude * Math.Sin(Frequency * Phase * Math.PI * 2));
+                var sine = (float)(Amplitude * Math.Sin(Frequency * Phase * Math.PI * 2));
                 buffer[i] = sine;
 
                 Phase += (1.0 / WaveFormat.SampleRate);
@@ -106,35 +106,26 @@ namespace CSCore.Streams
         /// <summary>
         ///     Gets the <see cref="IAudioSource.WaveFormat" /> of the waveform-audio data.
         /// </summary>
-        public WaveFormat WaveFormat
-        {
-            get { return _waveFormat; }
-        }
+        public WaveFormat WaveFormat => _waveFormat;
 
         /// <summary>
         /// Not supported.
         /// </summary>
         public long Position
         {
-            get { return 0; }
-            set { throw new InvalidOperationException(); }
+            get => 0;
+            set => throw new InvalidOperationException();
         }
 
         /// <summary>
         /// Not supported.
         /// </summary>
-        public long Length
-        {
-            get { return 0; }
-        }
+        public long Length => 0;
 
         /// <summary>
         /// Gets a value indicating whether the <see cref="IAudioSource"/> supports seeking.
         /// </summary>
-        public bool CanSeek
-        {
-            get { return false; }
-        }
+        public bool CanSeek => false;
 
         /// <summary>
         /// Not used.

@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace CSCore
+﻿namespace CSCore
 {
     public interface IResamplerFactory
     {

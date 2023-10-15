@@ -1,5 +1,4 @@
-﻿using System.Diagnostics;
-using CSCore.Utils.Buffer;
+﻿using CSCore.Utils.Buffer;
 using System;
 using System.Threading;
 
@@ -91,7 +90,7 @@ namespace CSCore.Streams
 
         private void BufferProc(object o)
         {
-            byte[] byteBuffer = new byte[WaveFormat.BytesPerSecond / 2];
+            var byteBuffer = new byte[WaveFormat.BytesPerSecond / 2];
             do
             {
                 if (_buffer.Buffered >= _buffer.Length * 0.85 && !_disposing)
@@ -101,8 +100,8 @@ namespace CSCore.Streams
                 }
                 lock (_lockObject)
                 {
-                    int bytesToRead = Math.Min(byteBuffer.Length, _buffer.Length - _buffer.Buffered);
-                    int read = base.Read(byteBuffer, 0, bytesToRead);
+                    var bytesToRead = Math.Min(byteBuffer.Length, _buffer.Length - _buffer.Buffered);
+                    var read = base.Read(byteBuffer, 0, bytesToRead);
                     if (read > 0)
                     {
                         _buffer.Write(byteBuffer, 0, read);

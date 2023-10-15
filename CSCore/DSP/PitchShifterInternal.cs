@@ -72,7 +72,7 @@ namespace CSCore.DSP
             long i;
 
 
-            float[] outdata = indata;
+            var outdata = indata;
             /* set up some handy variables */
             var fftFrameSize2 = fftFrameSize / 2;
             var stepSize = fftFrameSize / osamp;
@@ -153,7 +153,7 @@ namespace CSCore.DSP
 
                     /* ***************** PROCESSING ******************* */
                     /* this does the actual pitch shifting */
-                    for (int zero = 0; zero < fftFrameSize; zero++)
+                    for (var zero = 0; zero < fftFrameSize; zero++)
                     {
                         SynMagn[zero] = 0;
                         SynFreq[zero] = 0;
@@ -250,7 +250,7 @@ namespace CSCore.DSP
                     fftBuffer[j + 1] = temp;
                 }
             }
-            long max = (long)(Math.Log(fftFrameSize) / Math.Log(2.0) + .5);
+            var max = (long)(Math.Log(fftFrameSize) / Math.Log(2.0) + .5);
             for (k = 0, le = 2; k < max; k++)
             {
                 le <<= 1;

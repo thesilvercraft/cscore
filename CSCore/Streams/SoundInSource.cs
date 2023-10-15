@@ -19,10 +19,7 @@ namespace CSCore.Streams
         /// <summary>
         /// Gets the underlying <see cref="ISoundIn"/> instance.
         /// </summary>
-        public ISoundIn SoundIn
-        {
-            get { return _soundIn; }
-        }
+        public ISoundIn SoundIn => _soundIn;
 
         /// <summary>
         /// Initializes a new instance of the <see cref="SoundInSource"/> class with a default bufferSize of 5 seconds.
@@ -62,7 +59,7 @@ namespace CSCore.Streams
         private void OnDataAvailable(object sender, DataAvailableEventArgs e)
         {
             _buffer.Write(e.Data, 0, e.ByteCount);
-            EventHandler<DataAvailableEventArgs> dataAvailable = DataAvailable;
+            var dataAvailable = DataAvailable;
             if (e.ByteCount > 0 && dataAvailable != null)
                 dataAvailable(this, e);
         }
@@ -84,7 +81,7 @@ namespace CSCore.Streams
         /// <returns>The total number of bytes read into the buffer.</returns>
         public int Read(byte[] buffer, int offset, int count)
         {
-            int read = _buffer.Read(buffer, offset, count);
+            var read = _buffer.Read(buffer, offset, count);
 
             if(FillWithZeros && read < count)
                 Array.Clear(buffer, offset + read, count - read);
@@ -95,41 +92,26 @@ namespace CSCore.Streams
         /// <summary>
         ///     Gets the <see cref="IAudioSource.WaveFormat" /> of the recorded data.
         /// </summary>
-        public WaveFormat WaveFormat
-        {
-            get { return SoundIn.WaveFormat; }
-        }
+        public WaveFormat WaveFormat => SoundIn.WaveFormat;
 
         /// <summary>
         ///     Gets or sets the current position in bytes. This property is currently not supported. 
         /// </summary>
         public long Position
         {
-            get
-            {
-                return 0;
-            }
-            set
-            {
-                throw new InvalidOperationException();
-            }
+            get => 0;
+            set => throw new InvalidOperationException();
         }
 
         /// <summary>
         /// Gets the length in bytes. This property is currently not supported.
         /// </summary>
-        public long Length
-        {
-            get { return 0; }
-        }
+        public long Length => 0;
 
         /// <summary>
         /// Gets a value indicating whether the <see cref="IAudioSource"/> supports seeking.
         /// </summary>
-        public bool CanSeek
-        {
-            get { return false; }
-        }
+        public bool CanSeek => false;
 
         /// <summary>
         /// Gets or sets a value which indicates whether the <see cref="Read"/> method should always provide the requested amount of data.

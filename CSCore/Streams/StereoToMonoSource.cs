@@ -1,6 +1,4 @@
-﻿using CSCore.Utils.Buffer;
-using System;
-using System.Diagnostics;
+﻿using System;
 
 namespace CSCore.Streams
 {
@@ -46,11 +44,11 @@ namespace CSCore.Streams
         public unsafe override int Read(float[] buffer, int offset, int count)
         {
             _buffer = _buffer.CheckBuffer(count * 2);
-            int read = BaseSource.Read(_buffer, 0, count * 2);
+            var read = BaseSource.Read(_buffer, 0, count * 2);
             fixed (float* pbuffer = buffer)
             {
-                float* ppbuffer = pbuffer + offset;
-                for (int i = 0; i < read - 1; i += 2)
+                var ppbuffer = pbuffer + offset;
+                for (var i = 0; i < read - 1; i += 2)
                 {
                     *(ppbuffer++) = (_buffer[i] + _buffer[i + 1]) / 2;
                 }
@@ -64,10 +62,7 @@ namespace CSCore.Streams
         /// </summary>
         public override long Position
         {
-            get
-            {
-                return BaseSource.Position / 2;
-            }
+            get => BaseSource.Position / 2;
             set
             {
                 value -= (value % WaveFormat.BlockAlign);
@@ -78,18 +73,12 @@ namespace CSCore.Streams
         /// <summary>
         ///     Gets the length in samples.
         /// </summary>
-        public override long Length
-        {
-            get { return BaseSource.Length / 2; }
-        }
+        public override long Length => BaseSource.Length / 2;
 
         /// <summary>
         ///     Gets the <see cref="IAudioSource.WaveFormat" /> of the waveform-audio data.
         /// </summary>
-        public override WaveFormat WaveFormat
-        {
-            get { return _waveFormat; }
-        }
+        public override WaveFormat WaveFormat => _waveFormat;
 
         /// <summary>
         ///     Disposes the <see cref="StereoToMonoSource" /> and the underlying <see cref="SampleAggregatorBase.BaseSource" />.

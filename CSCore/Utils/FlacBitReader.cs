@@ -1,5 +1,4 @@
-﻿using System;
-using CSCore.Utils;
+﻿using CSCore.Utils;
 
 namespace CSCore.Codecs.FLAC
 {
@@ -34,7 +33,7 @@ namespace CSCore.Codecs.FLAC
         public uint ReadUnary()
         {
             uint result = 0;
-            uint unaryindicator = Cache >> 24;
+            var unaryindicator = Cache >> 24;
 
             while (unaryindicator == 0)
             {
@@ -66,7 +65,7 @@ namespace CSCore.Codecs.FLAC
 
         public bool ReadUTF8_64(out ulong result)
         {
-            uint x = ReadBits(8);
+            var x = ReadBits(8);
             ulong v;
             int i;
 

@@ -19,10 +19,7 @@ namespace CSCore.Streams
         /// </summary>
         public virtual float Volume
         {
-            get
-            {
-                return _volume;
-            }
+            get => _volume;
             set
             {
                 if (_volume < 0 || _volume > 1)
@@ -59,16 +56,16 @@ namespace CSCore.Streams
         /// <returns>The total number of samples read into the buffer.</returns>
         public override int Read(float[] buffer, int offset, int count)
         {
-            int read = base.Read(buffer, offset, count);
+            var read = base.Read(buffer, offset, count);
             
-            float volume = Volume;
+            var volume = Volume;
             if (volume == 0f || (volume > -Epsilon && volume < Epsilon)) 
             {
                 Array.Clear(buffer, offset, read);
             } 
             else if (volume != 1f && !(volume > (1f - Epsilon) && volume < (1f + Epsilon))) 
             {
-                for (int i = offset; i < read + offset; i++) 
+                for (var i = offset; i < read + offset; i++) 
                 {
                     buffer[i] *= volume;
                 }

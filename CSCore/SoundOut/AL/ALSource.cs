@@ -104,7 +104,7 @@ namespace CSCore.SoundOut.AL
         /// <returns>The handles of the unqueued buffers.</returns>
         public uint[] UnqueueBuffers(int count)
         {
-            uint[] result = new uint[count];
+            var result = new uint[count];
             using (_context.LockContext())
             {
                 ALException.Try(
@@ -124,7 +124,7 @@ namespace CSCore.SoundOut.AL
             {
                 using (_context.LockContext())
                 {
-                    int numberOfProcessedBuffers = 0;
+                    var numberOfProcessedBuffers = 0;
                     ALException.Try(
                         () =>
                             ALInteropsNativeMethods.alGetSourcei(Id, ALSourceParameters.BuffersProcessed,
@@ -144,7 +144,7 @@ namespace CSCore.SoundOut.AL
             {
                 using (_context.LockContext())
                 {
-                    int numberOfQueuedBuffers = 0;
+                    var numberOfQueuedBuffers = 0;
                     ALException.Try(
                         () =>
                             ALInteropsNativeMethods.alGetSourcei(Id, ALSourceParameters.BuffersQueued,
@@ -164,7 +164,7 @@ namespace CSCore.SoundOut.AL
             {
                 using (_context.LockContext())
                 {
-                    int alSourceState = 0;
+                    var alSourceState = 0;
                     ALException.Try(
                         () =>
                             ALInteropsNativeMethods.alGetSourcei(Id, ALSourceParameters.SourceState,

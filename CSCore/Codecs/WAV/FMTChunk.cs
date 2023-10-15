@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Diagnostics;
 using System.IO;
 
 namespace CSCore.Codecs.WAV
@@ -35,41 +34,36 @@ namespace CSCore.Codecs.WAV
             if (reader == null)
                 throw new ArgumentNullException("reader");
 
-            if (ChunkID == FmtChunkID) //"fmt "
+            if (ChunkID != FmtChunkID) return; //"fmt "
+            var encoding = (AudioEncoding) reader.ReadInt16();
+            int channels = reader.ReadInt16();
+            var sampleRate = reader.ReadInt32();
+            var avgBps = reader.ReadInt32();
+            int blockAlign = reader.ReadInt16();
+            int bitsPerSample = reader.ReadInt16();
+
+            var extraSize = 0;
+            if (ChunkDataSize > 16)
             {
-                var encoding = (AudioEncoding) reader.ReadInt16();
-                int channels = reader.ReadInt16();
-                int sampleRate = reader.ReadInt32();
-                int avgBps = reader.ReadInt32();
-                int blockAlign = reader.ReadInt16();
-                int bitsPerSample = reader.ReadInt16();
+                extraSize = reader.ReadInt16();
+                if (extraSize != ChunkDataSize - 18)
+                    //TODO: Check whether this is the correct way of reading a fmt chunk
+                    extraSize = (int) (ChunkDataSize - 18);
 
-                int extraSize = 0;
-                if (ChunkDataSize > 16)
+                for (var i = (int) (ChunkDataSize - 16); i > 0; i--)
                 {
-                    extraSize = reader.ReadInt16();
-                    if (extraSize != ChunkDataSize - 18)
-                        //TODO: Check whether this is the correct way of reading a fmt chunk
-                        extraSize = (int) (ChunkDataSize - 18);
-
-                    for (int i = (int) (ChunkDataSize - 16); i > 0; i--)
-                    {
-                        reader.ReadByte();
-                    }
-
-                    reader.BaseStream.Position -= 2;
+                    reader.ReadByte();
                 }
 
-                _waveFormat = new WaveFormat(sampleRate, (short) bitsPerSample, (short) channels, encoding, extraSize);
+                reader.BaseStream.Position -= 2;
             }
+
+            _waveFormat = new WaveFormat(sampleRate, (short) bitsPerSample, (short) channels, encoding, extraSize);
         }
 
         /// <summary>
         ///     Gets the <see cref="WaveFormat" /> specified by the <see cref="FmtChunk" />.
         /// </summary>
-        public WaveFormat WaveFormat
-        {
-            get { return _waveFormat; }
-        }
+        public WaveFormat WaveFormat => _waveFormat;
     }
 }

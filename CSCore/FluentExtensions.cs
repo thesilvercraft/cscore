@@ -109,8 +109,8 @@ namespace CSCore
             var format = input.WaveFormat as WaveFormatExtensible;
             if (format != null)
             {
-                ChannelMask channelMask = format.ChannelMask;
-                ChannelMatrix channelMatrix = ChannelMatrix.GetMatrix(channelMask, ChannelMasks.StereoMask);
+                var channelMask = format.ChannelMask;
+                var channelMatrix = ChannelMatrix.GetMatrix(channelMask, ChannelMasks.StereoMask);
                 return channelMapperFactory.MapChannels(input, channelMatrix);
             }
 
@@ -160,11 +160,11 @@ namespace CSCore
 
             var channelMapperFactory = Locator.Instance.Get<IChannelMapperFactory>();
 
-            WaveFormatExtensible format = input.WaveFormat as WaveFormatExtensible;
+            var format = input.WaveFormat as WaveFormatExtensible;
             if (format != null)
             {
-                ChannelMask channelMask = format.ChannelMask;
-                ChannelMatrix channelMatrix = ChannelMatrix.GetMatrix(channelMask, ChannelMasks.MonoMask);
+                var channelMask = format.ChannelMask;
+                var channelMatrix = ChannelMatrix.GetMatrix(channelMask, ChannelMasks.MonoMask);
                 return channelMapperFactory.MapChannels(input, channelMatrix);
             }
 
@@ -308,7 +308,7 @@ namespace CSCore
 
             public override int Read(byte[] buffer, int offset, int count)
             {
-                int read = base.Read(buffer, offset, count);
+                var read = base.Read(buffer, offset, count);
                 if (read <= 0 && count - offset > WaveFormat.BlockAlign)
                 {
                     if (!_eofReached)
@@ -338,7 +338,7 @@ namespace CSCore
 
             public override int Read(float[] buffer, int offset, int count)
             {
-                int read = base.Read(buffer, offset, count);
+                var read = base.Read(buffer, offset, count);
                 if (read <= 0 && offset - count > WaveFormat.Channels)
                 {
                     if (!_eofReached)

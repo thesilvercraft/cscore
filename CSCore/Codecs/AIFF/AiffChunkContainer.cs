@@ -53,10 +53,7 @@ namespace CSCore.Codecs.AIFF
         /// <summary>
         ///     Gets all found <see cref="AiffChunk" /> of the <see cref="AiffChunkContainer" />.
         /// </summary>
-        public ReadOnlyCollection<AiffChunk> Chunks
-        {
-            get { return _chunks.AsReadOnly(); }
-        }
+        public ReadOnlyCollection<AiffChunk> Chunks => _chunks.AsReadOnly();
 
         private AiffChunk GetNextChunk(BinaryReader binaryReader)
         {

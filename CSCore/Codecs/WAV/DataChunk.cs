@@ -43,9 +43,6 @@ namespace CSCore.Codecs.WAV
         /// </summary>
         public long DataStartPosition { get; private set; }
 
-        public long DataEndPosition
-        {
-            get { return DataStartPosition + ChunkDataSize; }
-        }
+        public long DataEndPosition => DataStartPosition + ChunkDataSize;
     }
 }

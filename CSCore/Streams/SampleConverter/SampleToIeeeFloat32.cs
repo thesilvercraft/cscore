@@ -37,7 +37,7 @@ namespace CSCore.Streams.SampleConverter
         public override int Read(byte[] buffer, int offset, int count)
         {
             Buffer = Buffer.CheckBuffer(count / 4);
-            int read = Source.Read(Buffer, offset / 4, count / 4);
+            var read = Source.Read(Buffer, offset / 4, count / 4);
             System.Buffer.BlockCopy(Buffer, 0, buffer, offset, read * 4);
             return read * 4;
         }

@@ -11,13 +11,7 @@ namespace CSCore.Streams
         /// <summary>
         /// Gets the average value of all <see cref="ChannelPeakValues"/>.
         /// </summary>
-        public float PeakValue
-        {
-            get
-            {
-                return ChannelPeakValues.Average();
-            }
-        }
+        public float PeakValue => ChannelPeakValues.Average();
 
         /// <summary>
         /// Gets the peak values for all channels. 
@@ -30,8 +24,8 @@ namespace CSCore.Streams
         [Obsolete("Use the PeakMeter.Interval property instead.")]
         public int BlocksToProcess
         {
-            get { return _blocksToProcess; }
-            set { _blocksToProcess = value; }
+            get => _blocksToProcess;
+            set => _blocksToProcess = value;
         }
 
         /// <summary>
@@ -40,8 +34,8 @@ namespace CSCore.Streams
         /// </summary>
         public int Interval
         {
-            get { return (int)((1000.0 * _blocksToProcess) / WaveFormat.SampleRate); }
-            set { _blocksToProcess = (int)((value / 1000.0) * WaveFormat.SampleRate); }
+            get => (int)((1000.0 * _blocksToProcess) / WaveFormat.SampleRate);
+            set => _blocksToProcess = (int)((value / 1000.0) * WaveFormat.SampleRate);
         }
 
         /// <summary>
@@ -88,12 +82,12 @@ namespace CSCore.Streams
             if (offset % WaveFormat.Channels != 0)
                 throw new ArgumentOutOfRangeException("offset");
 
-            int read = base.Read(buffer, offset, count);
+            var read = base.Read(buffer, offset, count);
 
-            int channels = WaveFormat.Channels;
-            for (int i = offset; i < read; i++)
+            var channels = WaveFormat.Channels;
+            for (var i = offset; i < read; i++)
             {
-                int channel = i % channels;
+                var channel = i % channels;
                 ChannelPeakValues[channel] = Math.Max(ChannelPeakValues[channel], Math.Abs(buffer[i]));
 
                 if (channel == channels - 1)

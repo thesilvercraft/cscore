@@ -29,7 +29,7 @@ namespace CSCore.Streams
         /// </summary>
         public int BlockCount
         {
-            get { return _blockCount; }
+            get => _blockCount;
             set
             {
                 if (value < 1)
@@ -43,7 +43,7 @@ namespace CSCore.Streams
         /// </summary>
         public int Interval
         {
-            get { return (int) (1000.0 * ((double) BlockCount / WaveFormat.SampleRate)); }
+            get => (int) (1000.0 * ((double) BlockCount / WaveFormat.SampleRate));
             set
             {
                 var v = (int) ((((double) value * WaveFormat.SampleRate)) / 1000.0);
@@ -88,13 +88,13 @@ namespace CSCore.Streams
         /// </returns>
         public override int Read(float[] buffer, int offset, int count)
         {
-            int read = base.Read(buffer, offset, count);
-            int channels = WaveFormat.Channels;
+            var read = base.Read(buffer, offset, count);
+            var channels = WaveFormat.Channels;
 
-            EventHandler blockRead = BlockRead;
+            var blockRead = BlockRead;
             if (blockRead != null)
             {
-                for (int i = 0; i < read / channels; i++)
+                for (var i = 0; i < read / channels; i++)
                 {
                     _blocksRead++;
                     if (_blocksRead >= BlockCount)

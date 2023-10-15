@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
-using System.Reflection;
 using System.Runtime.InteropServices;
 using System.Threading;
 using CSCore.SoundOut.AL;
@@ -97,7 +96,7 @@ namespace CSCore.SoundOut
 			if(!ResolverIsSet)
 			{
 				ResolverIsSet = true;
-                NativeLibrary.SetDllImportResolver(Assembly.GetExecutingAssembly(), ALInteropsNativeMethods.DllImportResolver);
+                NativeLibrary.SetDllImportResolver(typeof(ALSoundOut).Assembly, ALInteropsNativeMethods.DllImportResolver);
             }
 
             if (!ALInteropsNativeMethods.IsSupported())
@@ -118,7 +117,7 @@ namespace CSCore.SoundOut
 		/// <exception cref="System.ArgumentNullException">value is less than one</exception>
 		public ALDevice Device
 		{
-			get { return _device ?? (_device = ALDevice.DefaultDevice); }
+			get => _device ?? (_device = ALDevice.DefaultDevice);
 			set
 			{
 				if (value == null)
@@ -136,7 +135,7 @@ namespace CSCore.SoundOut
 		/// </summary>
 		public int Latency
 		{
-			get { return _latency; }
+			get => _latency;
 			set
 			{
 				if (value <= 0)
@@ -154,7 +153,7 @@ namespace CSCore.SoundOut
 		/// </summary>
 		public float Volume
 		{
-			get { return _volumeSource != null ? _volumeSource.Volume : 1; }
+			get => _volumeSource != null ? _volumeSource.Volume : 1;
 			set
 			{
 				CheckForDisposed();
@@ -168,27 +167,18 @@ namespace CSCore.SoundOut
 		///     the waveform-audio data and was used to <see cref="Initialize" />
 		///     the <see cref="ALSoundOut" /> instance.
 		/// </summary>
-		public IWaveSource WaveSource
-		{
-			get { return _source; }
-		}
+		public IWaveSource WaveSource => _source;
 
 		/// <summary>
 		///     Gets the <see cref="SoundOut.PlaybackState" />.
 		///     The playback state indicates whether the playback is currently playing, paused or stopped.
 		/// </summary>
-		public PlaybackState PlaybackState
-		{
-			get { return _playbackState; }
-		}
+		public PlaybackState PlaybackState => _playbackState;
 
 		/// <summary>
 		///     Gets the Context used for the playback.
 		/// </summary>
-		protected ALContext Context
-		{
-			get { return _context; }
-		}
+		protected ALContext Context => _context;
 
 		/// <summary>
 		///     Occurs when the playback stops.
@@ -243,12 +233,9 @@ namespace CSCore.SoundOut
 				CheckForDisposed();
 				CheckForIsInitialized();
 
-				if (PlaybackState == PlaybackState.Playing)
-				{
-					_alSource.Pause();
-
-					_playbackState = PlaybackState.Paused;
-				}
+				if (PlaybackState != PlaybackState.Playing) return;
+				_alSource.Pause();
+				_playbackState = PlaybackState.Paused;
 			}
 		}
 
@@ -264,12 +251,9 @@ namespace CSCore.SoundOut
 				CheckForDisposed();
 				CheckForIsInitialized();
 
-				if (PlaybackState == PlaybackState.Paused)
-				{
-					_alSource.Play();
-
-					_playbackState = PlaybackState.Playing;
-				}
+				if (PlaybackState != PlaybackState.Paused) return;
+				_alSource.Play();
+				_playbackState = PlaybackState.Playing;
 			}
 		}
 
@@ -293,16 +277,14 @@ namespace CSCore.SoundOut
 					_playbackState = PlaybackState.Stopped;
 				}
 
-				if (_playbackThread != null)
-				{
-					/*
-                    * On EOF playbackstate is Stopped, but thread is not stopped. => 
-                    * New Session can be started while cleaning up old one => unknown behavior. =>
-                    * Always call Stop() to make sure, you wait until the thread is finished cleaning up.
-                    */
-					_playbackThread.WaitForExit();
-					_playbackThread = null;
-				}
+				if (_playbackThread == null) return;
+				/*
+				 * On EOF playbackstate is Stopped, but thread is not stopped. =>
+				 * New Session can be started while cleaning up old one => unknown behavior. =>
+				 * Always call Stop() to make sure, you wait until the thread is finished cleaning up.
+				 */
+				_playbackThread.WaitForExit();
+				_playbackThread = null;
 			}
 		}
 
@@ -344,7 +326,7 @@ namespace CSCore.SoundOut
 				source = new InterruptDisposingChainSource(source);
 				_volumeSource = new VolumeSource(source.ToSampleSource());
 
-				int numberOfBitsPerSample = FindBestBitDepth(source.WaveFormat);
+				var numberOfBitsPerSample = FindBestBitDepth(source.WaveFormat);
 				_source = _volumeSource.ToWaveSource(numberOfBitsPerSample);
 
 				InitializeInternal();
@@ -365,7 +347,7 @@ namespace CSCore.SoundOut
 		private void PlaybackProc(object args)
 		{
 			Exception exception = null;
-			EventWaitHandle waitHandle = args as EventWaitHandle;
+			var waitHandle = args as EventWaitHandle;
 			IList<BufferedAudioData> byteBuffers;
 			uint[] unqueuedBuffers;
 
@@ -418,7 +400,7 @@ namespace CSCore.SoundOut
 					}
 
 					//locks and unlocks context!
-					int numberOfProcessedBuffers = _alSource.BuffersProcessed;
+					var numberOfProcessedBuffers = _alSource.BuffersProcessed;
 					if (numberOfProcessedBuffers == 0)
 					{
 						Thread.Sleep(Latency / 5);
@@ -460,7 +442,7 @@ namespace CSCore.SoundOut
 
 		private void RaiseStopped(Exception exception)
 		{
-			EventHandler<PlaybackStoppedEventArgs> handler = Stopped;
+			var handler = Stopped;
 			if (handler != null)
 			{
 				if (_syncContext != null)
@@ -495,7 +477,7 @@ namespace CSCore.SoundOut
 			{
 				using (Context.LockContext())
 				{
-					int numberOfProcessedBuffers = _alSource.BuffersProcessed;
+					var numberOfProcessedBuffers = _alSource.BuffersProcessed;
 					if (numberOfProcessedBuffers > 0)
 					{
 						//sometimes there are duplicates on window??
@@ -522,11 +504,11 @@ namespace CSCore.SoundOut
 
 		private IList<BufferedAudioData> GetBufferedData(int numberOfBuffers)
 		{
-			List<BufferedAudioData> byteBuffers = new List<BufferedAudioData>(numberOfBuffers);
-			for (int i = 0; i < numberOfBuffers; i++)
+			var byteBuffers = new List<BufferedAudioData>(numberOfBuffers);
+			for (var i = 0; i < numberOfBuffers; i++)
 			{
-				byte[] buffer = new byte[_bufferSize];
-				int read = _source.Read(buffer, 0, buffer.Length);
+				var buffer = new byte[_bufferSize];
+				var read = _source.Read(buffer, 0, buffer.Length);
 				if (read <= 0)
 				{
 					continue;
@@ -544,7 +526,7 @@ namespace CSCore.SoundOut
 
 		private void FillBuffers(uint[] buffers, IList<BufferedAudioData> audioData)
 		{
-			for (int i = 0; i < buffers.Length; i++)
+			for (var i = 0; i < buffers.Length; i++)
 			{
 				FillBuffer(buffers[i], audioData[i].Data, audioData[i].Length);
 			}
@@ -593,7 +575,7 @@ namespace CSCore.SoundOut
 
 		private int FindBestBitDepth(WaveFormat waveFormat)
 		{
-			int bitsPerSample = waveFormat.BitsPerSample;
+			var bitsPerSample = waveFormat.BitsPerSample;
 			var supportedBitsPerSample = new[]
 			{
 				8, 
@@ -601,7 +583,7 @@ namespace CSCore.SoundOut
 				Context.Supports32Float ? 32 : 16
 			}.OrderBy(x => x);
 
-			foreach (int bits in supportedBitsPerSample)
+			foreach (var bits in supportedBitsPerSample)
 			{
 				if (bits >= bitsPerSample)
 					return bits;

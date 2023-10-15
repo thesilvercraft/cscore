@@ -29,8 +29,8 @@ namespace CSCore.DSP
         protected override void CalculateBiQuadCoefficients()
         {
             const double sqrt2 = 1.4142135623730951;
-            double k = Math.Tan(Math.PI * Frequency / SampleRate);
-            double v = Math.Pow(10, Math.Abs(GainDB) / 20.0);
+            var k = Math.Tan(Math.PI * Frequency / SampleRate);
+            var v = Math.Pow(10, Math.Abs(GainDB) / 20.0);
             double norm;
             if (GainDB >= 0)
             {    // boost

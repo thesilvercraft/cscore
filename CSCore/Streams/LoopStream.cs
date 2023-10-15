@@ -24,8 +24,8 @@ namespace CSCore.Streams
         /// </summary>
         public bool EnableLoop
         {
-            get { return _enableLoop; }
-            set { _enableLoop = value; }
+            get => _enableLoop;
+            set => _enableLoop = value;
         }
 
         /// <summary>
@@ -45,13 +45,13 @@ namespace CSCore.Streams
         /// <returns>Actual number of read bytes.</returns>
         public override int Read(byte[] buffer, int offset, int count)
         {
-            int read = base.Read(buffer, offset, count);
+            var read = base.Read(buffer, offset, count);
             while (read < count)
             {
-                int r = base.Read(buffer, offset + read, count - read);
+                var r = base.Read(buffer, offset + read, count - read);
                 if (r == 0)
                 {
-                    EventHandler handler = StreamFinished;
+                    var handler = StreamFinished;
                     if (handler != null && !_raisedStreamFinishedEvent)
                     {
                         handler(this, EventArgs.Empty);

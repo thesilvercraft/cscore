@@ -32,7 +32,7 @@ namespace CSCore.Streams
         /// </summary>
         public int BlockCount
         {
-            get { return _blockSize; }
+            get => _blockSize;
             set
             {
                 if (value < 1)
@@ -46,7 +46,7 @@ namespace CSCore.Streams
         /// </summary>
         public int Interval
         {
-            get { return (int) (1000.0 * ((double) BlockCount / WaveFormat.SampleRate)); }
+            get => (int) (1000.0 * ((double) BlockCount / WaveFormat.SampleRate));
             set
             {
                 var v = (int) ((((double) value * WaveFormat.SampleRate)) / 1000.0);
@@ -85,21 +85,21 @@ namespace CSCore.Streams
         /// </returns>
         public override int Read(float[] buffer, int offset, int count)
         {
-            int read = base.Read(buffer, offset, count);
-            int channels = WaveFormat.Channels;
+            var read = base.Read(buffer, offset, count);
+            var channels = WaveFormat.Channels;
 
-            for (int i = offset; i < offset + read;)
+            for (var i = offset; i < offset + read;)
             {
-                for (int n = 0; n < channels; n++)
+                for (var n = 0; n < channels; n++)
                 {
                     _buffer.Add(buffer[i++]);
                 }
                 if (_buffer.Count >= BlockCount * WaveFormat.Channels)
                 {
-                    EventHandler<BlockReadEventArgs<float>> blockRead = BlockRead;
+                    var blockRead = BlockRead;
                     if (blockRead != null)
                     {
-                        float[] b = _buffer.ToArray();
+                        var b = _buffer.ToArray();
                         blockRead(this, new BlockReadEventArgs<float>(b, b.Length));
                         _buffer.Clear();
                     }

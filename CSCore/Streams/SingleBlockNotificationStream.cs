@@ -1,7 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 
 namespace CSCore.Streams
 {
@@ -43,12 +40,12 @@ namespace CSCore.Streams
         /// </returns>
         public override int Read(float[] buffer, int offset, int count)
         {
-            int read = base.Read(buffer, offset, count);
-            EventHandler<SingleBlockReadEventArgs> singleBlockRead = SingleBlockRead;
+            var read = base.Read(buffer, offset, count);
+            var singleBlockRead = SingleBlockRead;
             if (read != 0 && singleBlockRead != null)
             {
-                int channels = WaveFormat.Channels;
-                for (int n = 0; n < read; n += channels)
+                var channels = WaveFormat.Channels;
+                for (var n = 0; n < read; n += channels)
                 {
                     singleBlockRead(this, new SingleBlockReadEventArgs(buffer, offset + n, channels));
                 }

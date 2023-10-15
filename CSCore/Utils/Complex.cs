@@ -48,10 +48,7 @@ namespace CSCore.Utils
         /// <summary>
         ///     Gets the absolute value of the complex number.
         /// </summary>
-        public double Value
-        {
-            get { return Math.Sqrt(Real * Real + Imaginary * Imaginary); }
-        }
+        public double Value => Math.Sqrt(Real * Real + Imaginary * Imaginary);
 
         /// <summary>
         ///     Defines an implicit conversion of a complex number to a single-precision floating-point number.
@@ -122,7 +119,7 @@ namespace CSCore.Utils
         {
             if (ReferenceEquals(null, obj))
                 return false;
-            return obj is Complex && Equals((Complex)obj);
+            return obj is Complex complex && Equals(complex);
         }
 
         /// <summary>

@@ -2,13 +2,12 @@
 
   <PropertyGroup>
     <AssemblyName>CSCore</AssemblyName>
-    <TargetFrameworks>net6.0</TargetFrameworks>
+    <TargetFramework>net6.0</TargetFramework>
     <VersionPrefix>1.2.1.1</VersionPrefix>
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
-
-    <!-- Packet Details -->
-    <Copyright>Florian R.</Copyright>
-    <Description>.NET Sound Library</Description>
+    <Copyright>Florian R., SilverDiamond</Copyright>
+    <Description>.NET Sound Library modified to suit SilverAudioPlayer</Description>
+    <LangVersion>latest</LangVersion>
   </PropertyGroup>
 
   <PropertyGroup>
@@ -28,12 +27,6 @@
     <DocumentationFile>bin\Debug\CSCore.XML</DocumentationFile>
     <PlatformTarget>AnyCPU</PlatformTarget>
     <NoWarn>1573</NoWarn>
-    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
-
-    <!-- Sign the assembly to expose to tests-->
-    <AssemblyOriginatorKeyFile>cscore.snk</AssemblyOriginatorKeyFile>
-    <SignAssembly>false</SignAssembly>
-    <DelaySign>false</DelaySign>
   </PropertyGroup>
 
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
@@ -104,16 +97,18 @@
     </None>
 
     <!-- Other -->
-    <None Include="Base.cd" />
-
-    <None Include="cscore.snk">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
   </ItemGroup>
 
   <ItemGroup>
     <Service Include="{508349b6-6b84-4df5-91f0-309beebad82d}" />
   </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Serilog" Version="3.0.1" />
+  </ItemGroup>
+
+
+
 
   <PropertyGroup>
     <Version>2.0.0.0</Version>

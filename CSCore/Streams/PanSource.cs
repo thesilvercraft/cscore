@@ -1,7 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 
 namespace CSCore.Streams
 {
@@ -19,10 +16,7 @@ namespace CSCore.Streams
         /// <exception cref="ArgumentOutOfRangeException">The value is not within the specified range.</exception>
         public float Pan
         {
-            get
-            {
-                return _pan;
-            }
+            get => _pan;
             set
             {
                 if (value < -1 || value > 1)
@@ -59,14 +53,14 @@ namespace CSCore.Streams
         /// <exception cref="System.InvalidOperationException">Read samples has to be a multiple of two.</exception>
         public override int Read(float[] buffer, int offset, int count)
         {
-            int read = base.Read(buffer, offset, count);
+            var read = base.Read(buffer, offset, count);
             if (read % 2 != 0)
                 throw new InvalidOperationException("Read samples has to be a multiple of two.");
 
-            float left = Math.Min(1, Pan + 1);
-            float right = Math.Abs(Math.Max(-1, Pan - 1));
+            var left = Math.Min(1, Pan + 1);
+            var right = Math.Abs(Math.Max(-1, Pan - 1));
 
-            for (int i = offset; i < offset + read; )
+            for (var i = offset; i < offset + read; )
             {
                 buffer[i++] *= left;
                 buffer[i++] *= right;

@@ -18,10 +18,7 @@ namespace CSCore.SoundOut.AL
         /// <summary>
         /// Gets the current context handle.
         /// </summary>
-        public static IntPtr CurrentContextHandle
-        {
-            get { return ALInteropsNativeMethods.alcGetCurrentContext(); }
-        }
+        public static IntPtr CurrentContextHandle => ALInteropsNativeMethods.alcGetCurrentContext();
 
         /// <summary>
         /// Gets the handle of the context.

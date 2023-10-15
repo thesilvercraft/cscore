@@ -73,10 +73,7 @@ namespace CSCore.SoundOut.AL
         /// <summary>
         /// Gets the default playback device.
         /// </summary>
-        public static ALDevice DefaultDevice
-        {
-            get { return EnumerateALDevices().FirstOrDefault(); }
-        }
+        public static ALDevice DefaultDevice => EnumerateALDevices().FirstOrDefault();
 
         /// <summary>
         /// Disposes the openal device

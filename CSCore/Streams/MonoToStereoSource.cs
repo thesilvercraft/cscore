@@ -43,12 +43,12 @@ namespace CSCore.Streams
         /// <returns>The total number of samples read into the buffer.</returns>
         public override int Read(float[] buffer, int offset, int count)
         {
-            int bytesToRead = count / 2;
+            var bytesToRead = count / 2;
             _buffer = _buffer.CheckBuffer(bytesToRead);
 
-            int index = offset;
-            int read = base.Read(_buffer, 0, bytesToRead);
-            for (int i = 0; i < read; i++)
+            var index = offset;
+            var read = base.Read(_buffer, 0, bytesToRead);
+            for (var i = 0; i < read; i++)
             {
                 buffer[index++] = _buffer[i];
                 buffer[index++] = _buffer[i];
@@ -62,10 +62,7 @@ namespace CSCore.Streams
         /// </summary>
         public override long Position
         {
-            get
-            {
-                return base.Position * 2;
-            }
+            get => base.Position * 2;
             set
             {
                 value -= (value % WaveFormat.BlockAlign);
@@ -76,21 +73,12 @@ namespace CSCore.Streams
         /// <summary>
         ///     Gets the length in samples.
         /// </summary>
-        public override long Length
-        {
-            get
-            {
-                return base.Length * 2;
-            }
-        }
+        public override long Length => base.Length * 2;
 
         /// <summary>
         ///     Gets the <see cref="IAudioSource.WaveFormat" /> of the waveform-audio data.
         /// </summary>
-        public override WaveFormat WaveFormat
-        {
-            get { return _waveFormat; }
-        }
+        public override WaveFormat WaveFormat => _waveFormat;
 
         /// <summary>
         ///     Disposes the <see cref="MonoToStereoSource" /> and the underlying <see cref="SampleAggregatorBase.BaseSource" />.

@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-
-namespace CSCore.SoundIn
+﻿namespace CSCore.SoundIn
 {
     /// <summary>
     /// Defines the states of a <see cref="ISoundIn"/>.

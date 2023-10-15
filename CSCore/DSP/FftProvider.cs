@@ -24,18 +24,12 @@ namespace CSCore.DSP
         /// <summary>
         /// Gets the specified fft size.
         /// </summary>
-        public FftSize FftSize
-        {
-            get { return _fftSize; }
-        }
+        public FftSize FftSize => _fftSize;
 
         /// <summary>
         /// Gets a value which indicates whether new data is available.
         /// </summary>
-        public virtual bool IsNewDataAvailable
-        {
-            get { return _newDataAvailable; }
-        }
+        public virtual bool IsNewDataAvailable => _newDataAvailable;
 
         /// <summary>
         /// Gets or sets the used window function.
@@ -104,8 +98,8 @@ namespace CSCore.DSP
 
             lock (_lockObject)
             {
-                int blocksToProcess = count / _channels;
-                for (int i = 0; i < blocksToProcess; i += _channels)
+                var blocksToProcess = count / _channels;
+                for (var i = 0; i < blocksToProcess; i += _channels)
                 {
                     _storedSamples[_currentSampleOffset].Imaginary = 0f;
                     _storedSamples[_currentSampleOffset].Real = MergeSamples(samples, i, _channels);
@@ -143,7 +137,7 @@ namespace CSCore.DSP
                 Array.Copy(_storedSamples, 0, input, _storedSamples.Length - _currentSampleOffset,
                     _currentSampleOffset);
 
-                for (int i = 0; i < input.Length; i++)
+                for (var i = 0; i < input.Length; i++)
                 {
                     input[i].Real *= WindowFunction(i, input.Length);
                 }
@@ -172,7 +166,7 @@ namespace CSCore.DSP
 
             var result = GetFftData(input);
 
-            for (int i = 0; i < input.Length; i++)
+            for (var i = 0; i < input.Length; i++)
             {
                 fftResultBuffer[i] = input[i];
             }
@@ -197,7 +191,7 @@ namespace CSCore.DSP
                 return (samples[i] + samples[i + 1] + samples[i + 2] + samples[i + 3] + samples[i + 4] + samples[i+5]) / 6f;
 
             float sample = 0;
-            for (int j = i; j < channels; j++)
+            for (var j = i; j < channels; j++)
             {
                 sample += samples[j++];
             }

@@ -63,10 +63,7 @@ namespace CSCore.Codecs.WAV
         /// <summary>
         ///     Gets a list of all found chunks.
         /// </summary>
-        public ReadOnlyCollection<WaveFileChunk> Chunks
-        {
-            get { return _chunks.AsReadOnly(); }
-        }
+        public ReadOnlyCollection<WaveFileChunk> Chunks => _chunks.AsReadOnly();
 
         /// <summary>
         ///     Reads a sequence of bytes from the <see cref="WaveFileReader" /> and advances the position within the stream by the
@@ -101,17 +98,14 @@ namespace CSCore.Codecs.WAV
         /// <summary>
         ///     Gets the wave format of the wave file. This property gets specified by the <see cref="FmtChunk" />.
         /// </summary>
-        public WaveFormat WaveFormat
-        {
-            get { return _waveFormat; }
-        }
+        public WaveFormat WaveFormat => _waveFormat;
 
         /// <summary>
         ///     Gets or sets the position of the <see cref="WaveFileReader" /> in bytes.
         /// </summary>
         public long Position
         {
-            get { return _stream != null ? _stream.Position - _dataChunk.DataStartPosition : 0; }
+            get => _stream != null ? _stream.Position - _dataChunk.DataStartPosition : 0;
             set
             {
                 lock (_lockObj)
@@ -129,18 +123,12 @@ namespace CSCore.Codecs.WAV
         /// <summary>
         ///     Gets the length of the <see cref="WaveFileReader" /> in bytes.
         /// </summary>
-        public long Length
-        {
-            get { return _dataChunk != null ? _dataChunk.ChunkDataSize : 0; }
-        }
+        public long Length => _dataChunk != null ? _dataChunk.ChunkDataSize : 0;
 
         /// <summary>
         /// Gets a value indicating whether the <see cref="WaveFileReader"/> supports seeking.
         /// </summary>
-        public bool CanSeek
-        {
-            get { return true; }
-        }
+        public bool CanSeek => true;
 
         /// <summary>
         ///     Disposes the <see cref="WaveFileReader" /> and the underlying stream.
