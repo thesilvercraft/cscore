@@ -17,7 +17,7 @@ namespace CSCore
         public SampleAggregatorBase(ISampleSource source)
         {
             if (source == null)
-                throw new ArgumentNullException("source");
+                throw new ArgumentNullException(nameof(source));
 
             _baseSource = source;
             DisposeBaseSource = true;
@@ -92,7 +92,7 @@ namespace CSCore
             set
             {
                 if (value == null)
-                    throw new ArgumentNullException("value");
+                    throw new ArgumentNullException(nameof(value));
                 _baseSource = value;
             }
         }

@@ -23,7 +23,7 @@ namespace CSCore.SoundOut.AL
         public ALSource(ALContext context)
         {
             if (context == null)
-                throw new ArgumentNullException("context");
+                throw new ArgumentNullException(nameof(context));
 
             _context = context;
 

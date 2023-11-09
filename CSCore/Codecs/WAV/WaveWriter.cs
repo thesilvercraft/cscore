@@ -56,11 +56,11 @@ namespace CSCore.Codecs.WAV
         public WaveWriter(Stream stream, WaveFormat waveFormat)
         {
             if (stream == null)
-                throw new ArgumentNullException("stream");
+                throw new ArgumentNullException(nameof(stream));
             if (!stream.CanWrite)
-                throw new ArgumentException("Stream not writeable.", "stream");
+                throw new ArgumentException("Stream not writeable.", nameof(stream));
             if (!stream.CanSeek)
-                throw new ArgumentException("Stream not seekable.", "stream");
+                throw new ArgumentException("Stream not seekable.", nameof(stream));
 
             _isDisposing = false;
             _isDisposed = false;
@@ -156,7 +156,7 @@ namespace CSCore.Codecs.WAV
             else if (_waveFormat.IsIeeeFloat())
                 Write(sample);
             else if (_waveFormat.WaveFormatTag == AudioEncoding.Extensible && _waveFormat.BitsPerSample == 32)
-                Write(UInt16.MaxValue * (int)sample);
+                Write(ushort.MaxValue * (int)sample);
             else
             {
                 throw new InvalidOperationException(

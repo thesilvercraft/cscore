@@ -48,12 +48,12 @@ namespace CSCore.DSP
         public FftProvider(int channels, FftSize fftSize)
         {
             if(channels < 1)
-                throw new ArgumentOutOfRangeException("channels");
+                throw new ArgumentOutOfRangeException(nameof(channels));
             var exponent = Math.Log((int)fftSize, 2);
 // ReSharper disable CompareOfFloatsByEqualityOperator
             if (exponent % 1 != 0 || exponent == 0)
 // ReSharper restore CompareOfFloatsByEqualityOperator
-                throw new ArgumentOutOfRangeException("fftSize");
+                throw new ArgumentOutOfRangeException(nameof(fftSize));
 
             _channels = channels;
             _fftSize = fftSize; //todo: add validation for the fftSize parameter.
@@ -91,10 +91,10 @@ namespace CSCore.DSP
         public virtual void Add(float[] samples, int count)
         {
             if (samples == null)
-                throw new ArgumentNullException("samples");
+                throw new ArgumentNullException(nameof(samples));
             count -= count % _channels; //not sure whether to throw an exception...
             if(count > samples.Length)
-                throw new ArgumentOutOfRangeException("count");
+                throw new ArgumentOutOfRangeException(nameof(count));
 
             lock (_lockObject)
             {
@@ -121,10 +121,10 @@ namespace CSCore.DSP
         public virtual bool GetFftData(Complex[] fftResultBuffer)
         {
             if (fftResultBuffer == null)
-                throw new ArgumentNullException("fftResultBuffer");
+                throw new ArgumentNullException(nameof(fftResultBuffer));
 
             if (fftResultBuffer.Length < (int)_fftSize)
-                throw new ArgumentException("Length of array must be at least as long as the specified fft size.", "fftResultBuffer");
+                throw new ArgumentException("Length of array must be at least as long as the specified fft size.", nameof(fftResultBuffer));
 
             var input = fftResultBuffer;
             bool result;
@@ -158,10 +158,10 @@ namespace CSCore.DSP
         public virtual bool GetFftData(float[] fftResultBuffer)
         {
             if (fftResultBuffer == null)
-                throw new ArgumentNullException("fftResultBuffer");
+                throw new ArgumentNullException(nameof(fftResultBuffer));
 
             if(fftResultBuffer.Length < (int)_fftSize)
-                throw new ArgumentException("Length of array must be at least as long as the specified fft size.", "fftResultBuffer");
+                throw new ArgumentException("Length of array must be at least as long as the specified fft size.", nameof(fftResultBuffer));
             var input = new Complex[(int) _fftSize];
 
             var result = GetFftData(input);

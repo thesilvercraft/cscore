@@ -19,9 +19,9 @@ namespace CSCore.Streams
             : base(source)
         {
             if (source == null)
-                throw new ArgumentNullException("source");
+                throw new ArgumentNullException(nameof(source));
             if (source.WaveFormat.Channels != 2)
-                throw new ArgumentException("The WaveFormat of the source has be a stereo format (two channels).", "source");
+                throw new ArgumentException("The WaveFormat of the source has be a stereo format (two channels).", nameof(source));
 
             _waveFormat = new WaveFormat(source.WaveFormat.SampleRate, 32, 1, AudioEncoding.IeeeFloat);
         }

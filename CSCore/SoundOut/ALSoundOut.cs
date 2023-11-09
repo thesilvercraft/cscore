@@ -51,23 +51,13 @@ namespace CSCore.SoundOut
 		}
 
 		/// <summary>
-		///     Initializes a new instance of the <see cref="ALSoundOut" /> class with a initial latency.
-		/// </summary>
-		/// <param name="latency">The playback latency in milliseconds.</param>
-		/// <exception cref="System.ArgumentOutOfRangeException">latency</exception>
-		public ALSoundOut(int latency)
-			: this(latency, ThreadPriority.AboveNormal)
-		{
-		}
-
-		/// <summary>
 		///     Initializes a new instance of the <see cref="ALSoundOut" /> class with a initial latency
 		///     and <see cref="ThreadPriority" /> of the playback thread.
 		/// </summary>
 		/// <param name="latency">The playback latency in milliseconds.</param>
 		/// <param name="playbackThreadPriority">The <see cref="ThreadPriority" /> of the playback thread.</param>
 		/// <exception cref="System.ArgumentOutOfRangeException">latency</exception>
-		public ALSoundOut(int latency, ThreadPriority playbackThreadPriority)
+		public ALSoundOut(int latency, ThreadPriority playbackThreadPriority = ThreadPriority.AboveNormal)
 			: this(latency, playbackThreadPriority, SynchronizationContext.Current)
 		{
 		}
@@ -88,7 +78,7 @@ namespace CSCore.SoundOut
 		public ALSoundOut(int latency, ThreadPriority playbackThreadPriority, SynchronizationContext eventSyncContext)
 		{
 			if (latency <= 0)
-				throw new ArgumentOutOfRangeException("latency");
+				throw new ArgumentOutOfRangeException(nameof(latency));
 
 			_latency = latency;
 			_playbackPriority = playbackThreadPriority;
@@ -117,11 +107,11 @@ namespace CSCore.SoundOut
 		/// <exception cref="System.ArgumentNullException">value is less than one</exception>
 		public ALDevice Device
 		{
-			get => _device ?? (_device = ALDevice.DefaultDevice);
+			get => _device ?? (ALDevice.DefaultDevice);
 			set
 			{
 				if (value == null)
-					throw new ArgumentNullException("value");
+					throw new ArgumentNullException(nameof(value));
 				lock (_lockObj)
 				{
 					_device = value;
@@ -139,7 +129,7 @@ namespace CSCore.SoundOut
 			set
 			{
 				if (value <= 0)
-					throw new ArgumentOutOfRangeException("value");
+					throw new ArgumentOutOfRangeException(nameof(value));
 				lock (_lockObj)
 				{
 					_latency = value;
@@ -201,23 +191,29 @@ namespace CSCore.SoundOut
 				CheckForDisposed();
 				CheckForIsInitialized();
 
-				if (PlaybackState == PlaybackState.Stopped)
+				switch (PlaybackState)
 				{
-					using (var waitHandle = new ManualResetEvent(false))
+					case PlaybackState.Stopped:
 					{
+						using var waitHandle = new ManualResetEvent(false);
 						_playbackThread.WaitForExit();
 						_playbackThread = new Thread(PlaybackProc)
 						{
-							Name = "OpenAL Playback-Thread",
+							Name = "CSCORE OpenAL Playback",
 							Priority = _playbackPriority
 						};
 
 						_playbackThread.Start(waitHandle);
 						waitHandle.WaitOne();
+						break;
 					}
+					case PlaybackState.Paused:
+						Resume();
+						break;
+					case PlaybackState.Playing:
+					default:
+						break;
 				}
-				else if (PlaybackState == PlaybackState.Paused)
-					Resume();
 			}
 		}
 
@@ -271,8 +267,7 @@ namespace CSCore.SoundOut
 
 				if (PlaybackState != PlaybackState.Stopped)
 				{
-					if (_alSource != null)
-						_alSource.Stop();
+					_alSource?.Stop();
 
 					_playbackState = PlaybackState.Stopped;
 				}
@@ -306,7 +301,7 @@ namespace CSCore.SoundOut
 				CheckForDisposed();
 
 				if (source == null)
-					throw new ArgumentNullException("source");
+					throw new ArgumentNullException(nameof(source));
 
 				source = new InterruptDisposingChainSource(source);
 				if (PlaybackState != PlaybackState.Stopped)
@@ -433,8 +428,7 @@ namespace CSCore.SoundOut
 			{
 				_playbackState = PlaybackState.Stopped;
 
-				if (waitHandle != null)
-					waitHandle.Set();
+				waitHandle?.Set();
 
 				RaiseStopped(exception);
 			}
@@ -443,13 +437,11 @@ namespace CSCore.SoundOut
 		private void RaiseStopped(Exception exception)
 		{
 			var handler = Stopped;
-			if (handler != null)
-			{
-				if (_syncContext != null)
-					_syncContext.Post(x => handler(this, new PlaybackStoppedEventArgs(exception)), null);
-				else
-					handler(this, new PlaybackStoppedEventArgs(exception));
-			}
+			if (handler == null) return;
+			if (_syncContext != null)
+				_syncContext.Post(x => handler(this, new PlaybackStoppedEventArgs(exception)), null);
+			else
+				handler(this, new PlaybackStoppedEventArgs(exception));
 		}
 
 		private void InitializeInternal()
@@ -596,34 +588,25 @@ namespace CSCore.SoundOut
 		{
 			if (waveFormat.Channels == 1)
 			{
-				switch (waveFormat.BitsPerSample)
+				return waveFormat.BitsPerSample switch
 				{
-				case 8:
-					return ALFormat.Mono8Bit;
-				case 16:
-					return ALFormat.Mono16Bit;
-				case 32:
-					return ALFormat.MonoFloat32Bit;
-				default:
-					throw new ALException("Invalid BitsPerSample.");
-				}
+					8 => ALFormat.Mono8Bit,
+					16 => ALFormat.Mono16Bit,
+					32 => ALFormat.MonoFloat32Bit,
+					64 => ALFormat.MonoDouble,
+					_ => throw new ALException("Invalid BitsPerSample.")
+				};
 			}
-			if (waveFormat.Channels == 2)
+			//apparently https://learn.microsoft.com/en-us/dotnet/api/opentk.audio.openal.alformat?view=xamarin-ios-sdk-12 claims there are more ALFormats
+			if (waveFormat.Channels != 2) throw new NotImplementedException("Only mono and stereo are implemented by ALSoundOut.");
+			return waveFormat.BitsPerSample switch
 			{
-				switch (waveFormat.BitsPerSample)
-				{
-				case 8:
-					return ALFormat.Stereo8Bit;
-				case 16:
-					return ALFormat.Stereo16Bit;
-				case 32:
-					return ALFormat.StereoFloat32Bit;
-				default:
-					throw new ALException("Invalid BitsPerSample.");
-				}
-			}
-
-			throw new ALException("Invalid number of channels.");
+				8 => ALFormat.Stereo8Bit,
+				16 => ALFormat.Stereo16Bit,
+				32 => ALFormat.StereoFloat32Bit,
+				64 => ALFormat.StereoDouble,
+				_ => throw new ALException("Invalid BitsPerSample.")
+			};
 		}
 
 		private void CheckForInvalidThreadCall()
@@ -650,7 +633,7 @@ namespace CSCore.SoundOut
 				: base(source)
 			{
 				if (source == null)
-					throw new ArgumentNullException("source");
+					throw new ArgumentNullException(nameof(source));
 				DisposeBaseSource = false;
 			}
 		}

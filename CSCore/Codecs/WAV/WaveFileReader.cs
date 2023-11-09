@@ -39,14 +39,14 @@ namespace CSCore.Codecs.WAV
         public WaveFileReader(Stream stream)
         {
             if (stream == null)
-                throw new ArgumentNullException("stream");
+                throw new ArgumentNullException(nameof(stream));
             if (!stream.CanRead)
                 throw new ArgumentException("stream is not readable");
 
             _stream = stream;
 
             var reader = new BinaryReader(stream);
-            if (new String(reader.ReadChars(4)) == "RIFF")
+            if (new string(reader.ReadChars(4)) == "RIFF")
             {
                 reader.ReadInt32(); //FileLength
                 reader.ReadChars(4);
@@ -55,7 +55,7 @@ namespace CSCore.Codecs.WAV
             _chunks = ReadChunks(stream);
             _dataChunk = (DataChunk)_chunks.FirstOrDefault(x => x is DataChunk);
             if (_dataChunk == null)
-                throw new ArgumentException("The specified stream does not contain any data chunks.", "stream");
+                throw new ArgumentException("The specified stream does not contain any data chunks.", nameof(stream));
 
             Position = 0;
         }
@@ -113,7 +113,7 @@ namespace CSCore.Codecs.WAV
                     CheckForDisposed();
 
                     if (value > Length || value < 0)
-                        throw new ArgumentOutOfRangeException("value", "The position must not be bigger than the length or less than zero.");
+                        throw new ArgumentOutOfRangeException(nameof(value), "The position must not be bigger than the length or less than zero.");
                     value -= (value % WaveFormat.BlockAlign);
                     _stream.Position = value + _dataChunk.DataStartPosition;
                 }

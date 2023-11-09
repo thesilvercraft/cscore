@@ -16,7 +16,7 @@ namespace CSCore.Streams.SampleConverter
             : base(source, 16, AudioEncoding.Pcm)
         {
             if (source == null)
-                throw new ArgumentNullException("source");
+                throw new ArgumentNullException(nameof(source));
         }
 
         /// <summary>

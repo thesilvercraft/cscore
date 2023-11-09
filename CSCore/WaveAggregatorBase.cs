@@ -26,7 +26,7 @@ namespace CSCore
             : this()
         {
             if (baseSource == null)
-                throw new ArgumentNullException("baseSource");
+                throw new ArgumentNullException(nameof(baseSource));
 
             _baseSource = baseSource;
         }
@@ -46,7 +46,7 @@ namespace CSCore
             set
             {
                 if (value == null)
-                    throw new ArgumentNullException("value", "BaseSource must not be null.");
+                    throw new ArgumentNullException(nameof(value), "BaseSource must not be null.");
                 _baseSource = value;
             }
         }
@@ -117,12 +117,10 @@ namespace CSCore
         /// </summary>
         public void Dispose()
         {
-            if (!_disposed)
-            {
-                _disposed = true;
-                Dispose(true);
-                GC.SuppressFinalize(this);
-            }
+            if (_disposed) return;
+            _disposed = true;
+            Dispose(true);
+            GC.SuppressFinalize(this);
         }
 
         /// <summary>
@@ -131,12 +129,10 @@ namespace CSCore
         /// <param name="disposing">True to release both managed and unmanaged resources; false to release only unmanaged resources.</param>
         protected virtual void Dispose(bool disposing)
         {
-            if (DisposeBaseSource)
-            {
-                if (BaseSource != null)
-                    BaseSource.Dispose();
-                _baseSource = null;
-            }
+            if (!DisposeBaseSource) return;
+            if (BaseSource != null)
+                BaseSource.Dispose();
+            _baseSource = null;
         }
 
         /// <summary>

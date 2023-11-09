@@ -16,7 +16,7 @@ namespace CSCore.Streams
             set
             {
                 if(value <= 0)
-                    throw new ArgumentOutOfRangeException("value");
+                    throw new ArgumentOutOfRangeException(nameof(value));
                 _frequency = value;
             }
         }
@@ -30,7 +30,7 @@ namespace CSCore.Streams
             set
             {
                 if(value < 0 || value > 1)
-                    throw new ArgumentOutOfRangeException("value");
+                    throw new ArgumentOutOfRangeException(nameof(value));
                 _amplitude = value;
             }
         }
@@ -62,9 +62,9 @@ namespace CSCore.Streams
         public SineGenerator(double frequency, double amplitude, double phase)
         {
             if(frequency <= 0)
-                throw new ArgumentOutOfRangeException("frequency");
+                throw new ArgumentOutOfRangeException(nameof(frequency));
             if(amplitude < 0 || amplitude > 1)
-                throw new ArgumentOutOfRangeException("amplitude");
+                throw new ArgumentOutOfRangeException(nameof(amplitude));
 
             Frequency = frequency;
             Amplitude = amplitude;

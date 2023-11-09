@@ -61,7 +61,7 @@ namespace CSCore.DSP
             {
                 if (SampleRate < value * 2)
                 {
-                    throw new ArgumentOutOfRangeException("value", "The samplerate has to be bigger than 2 * frequency.");
+                    throw new ArgumentOutOfRangeException(nameof(value), "The samplerate has to be bigger than 2 * frequency.");
                 }
                 _frequency = value;
                 CalculateBiQuadCoefficients();
@@ -83,7 +83,7 @@ namespace CSCore.DSP
             {
                 if (value <= 0)
                 {
-                    throw new ArgumentOutOfRangeException("value");
+                    throw new ArgumentOutOfRangeException(nameof(value));
                 }
                 _q = value;
                 CalculateBiQuadCoefficients();
@@ -136,11 +136,11 @@ namespace CSCore.DSP
         protected BiQuad(int sampleRate, double frequency, double q)
         {
             if (sampleRate <= 0)
-                throw new ArgumentOutOfRangeException("sampleRate");
+                throw new ArgumentOutOfRangeException(nameof(sampleRate));
             if (frequency <= 0)
-                throw new ArgumentOutOfRangeException("frequency");
+                throw new ArgumentOutOfRangeException(nameof(frequency));
             if (q <= 0)
-                throw new ArgumentOutOfRangeException("q");
+                throw new ArgumentOutOfRangeException(nameof(q));
             SampleRate = sampleRate;
             Frequency = frequency;
             Q = q;

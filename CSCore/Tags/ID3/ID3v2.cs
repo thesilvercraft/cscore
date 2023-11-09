@@ -38,30 +38,25 @@ namespace CSCore.Tags.ID3
         private static ID3v2 FromStream(Stream stream, bool readData)
         {
             var id3v2 = new ID3v2(stream);
-            if (id3v2.ReadData(stream, readData))
-                return id3v2;
-            return null;
+            return id3v2.ReadData(stream, readData) ? id3v2 : null;
         }
 
         public static bool SkipTag(Stream stream)
         {
             if (stream == null)
-                throw new ArgumentNullException("stream");
+                throw new ArgumentNullException(nameof(stream));
             long streamOffset = 0;
             if (stream.CanSeek)
             {
                 streamOffset = stream.Position;
             }
 
-            if (FromStream(stream, false) == null)
+            if (FromStream(stream, false) != null) return true;
+            if (stream.CanSeek)
             {
-                if (stream.CanSeek)
-                {
-                    stream.Position = streamOffset;
-                }
-                return false;
+                stream.Position = streamOffset;
             }
-            return true;
+            return false;
         }
 
         private readonly Stream _stream;
@@ -172,7 +167,7 @@ namespace CSCore.Tags.ID3
             }
             if ((_header.Flags & ID3v2HeaderFlags.FooterPresent) == ID3v2HeaderFlags.FooterPresent)
             {
-                //footer vom orginal stream lesen - da im neuen stream kein footer vorhanden ist
+                //footer vom original stream lesen - da im neuen stream kein footer vorhanden ist
                 _footer = ID3v2Footer.FromStream(_stream);
                 if (_footer == null) throw new ID3Exception("Invalid Id3Footer.");
             }
@@ -204,14 +199,11 @@ namespace CSCore.Tags.ID3
 
             var read = ustream.Read(result, 0, result.Length);
 
-            if (read < result.Length)
-            {
-                var newresult = new byte[read];
-                Buffer.BlockCopy(result, 0, newresult, 0, read);
-                return newresult;
-            }
+            if (read >= result.Length) return result;
+            var newresult = new byte[read];
+            Buffer.BlockCopy(result, 0, newresult, 0, read);
+            return newresult;
 
-            return result;
         }
 
         public IEnumerator<Frame> GetEnumerator()

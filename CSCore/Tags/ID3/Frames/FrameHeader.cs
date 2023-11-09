@@ -24,7 +24,7 @@ namespace CSCore.Tags.ID3.Frames
 
         public FrameHeader(Stream stream, ID3Version version)
         {
-            if (stream == null) throw new ArgumentNullException("stream");
+            if (stream == null) throw new ArgumentNullException(nameof(stream));
             if (!stream.CanRead) throw new ArgumentException("stream is not readable");
 
             switch (version)

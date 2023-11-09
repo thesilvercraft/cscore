@@ -30,7 +30,7 @@ namespace CSCore.Codecs.WAV
             : base(reader)
         {
             if (reader == null)
-                throw new ArgumentNullException("reader");
+                throw new ArgumentNullException(nameof(reader));
 
             if (ChunkID != DataChunkID)
                 throw new FormatException("Chunk is no datachunk: " + DataChunkID.ToString("x") + " != \"0x61746164\"");

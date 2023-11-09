@@ -8,7 +8,6 @@ namespace CSCore.Streams
     /// </summary>
     public class WriteableBufferingSource : IWaveSource
     {
-        private readonly WaveFormat _waveFormat;
         private FixedSizeBuffer<byte> _buffer;
         private volatile object _bufferlock = new object();
 
@@ -42,13 +41,13 @@ namespace CSCore.Streams
         public WriteableBufferingSource(WaveFormat waveFormat, int bufferSize)
         {
             if (waveFormat == null)
-                throw new ArgumentNullException("waveFormat");
+                throw new ArgumentNullException(nameof(waveFormat));
             if (bufferSize <= 0 || (bufferSize % waveFormat.BlockAlign) != 0)
                 throw new ArgumentException("Invalid bufferSize.");
 
             MaxBufferSize = bufferSize;
 
-            _waveFormat = waveFormat;
+            WaveFormat = waveFormat;
             _buffer = new FixedSizeBuffer<byte>(bufferSize);
             FillWithZeros = true;   
         }
@@ -88,20 +87,17 @@ namespace CSCore.Streams
             lock (_bufferlock)
             {
                 var read = _buffer.Read(buffer, offset, count);
-                if (FillWithZeros)
-                {
-                    if (read < count)
-                        Array.Clear(buffer, offset + read, count - read);
-                    return count;
-                }
-                return read;
+                if (!FillWithZeros) return read;
+                if (read < count)
+                    Array.Clear(buffer, offset + read, count - read);
+                return count;
             }
         }
 
         /// <summary>
         ///     Gets the <see cref="IAudioSource.WaveFormat" /> of the waveform-audio data.
         /// </summary>
-        public WaveFormat WaveFormat => _waveFormat;
+        public WaveFormat WaveFormat { get; }
 
         /// <summary>
         ///     Not supported.
@@ -129,13 +125,11 @@ namespace CSCore.Streams
         /// </summary>
         public void Dispose()
         {
-            if (!_disposed)
-            {
-                _disposed = true;
+            if (_disposed) return;
+            _disposed = true;
 
-                Dispose(true);
-                GC.SuppressFinalize(this);
-            }
+            Dispose(true);
+            GC.SuppressFinalize(this);
         }
 
         /// <summary>
@@ -144,12 +138,10 @@ namespace CSCore.Streams
         /// <param name="disposing">True to release both managed and unmanaged resources; false to release only unmanaged resources.</param>
         protected virtual void Dispose(bool disposing)
         {
-            if (disposing)
-            {
-                //dispose managed
-                _buffer.Dispose();
-                _buffer = null;
-            }
+            if (!disposing) return;
+            //dispose managed
+            _buffer.Dispose();
+            _buffer = null;
         }
 
         /// <summary>

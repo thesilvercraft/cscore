@@ -19,8 +19,8 @@ namespace CSCore.Streams
             get => _pan;
             set
             {
-                if (value < -1 || value > 1)
-                    throw new ArgumentOutOfRangeException("value");
+                if (value is < -1 or > 1)
+                    throw new ArgumentOutOfRangeException(nameof(value));
                 _pan = value;
             }
         }
@@ -34,7 +34,7 @@ namespace CSCore.Streams
             : base(source)
         {
             if (source.WaveFormat.Channels != 2)
-                throw new ArgumentException("Source has to be stereo.", "source");
+                throw new ArgumentException("Source has to be stereo.", nameof(source));
         }
 
         /// <summary>

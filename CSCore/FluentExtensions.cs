@@ -51,10 +51,10 @@ namespace CSCore
         public static IWaveSource ChangeSampleRate(this IWaveSource input, int destinationSampleRate)
         {
             if (input == null)
-                throw new ArgumentNullException("input");
+                throw new ArgumentNullException(nameof(input));
 
             if (destinationSampleRate <= 0)
-                throw new ArgumentOutOfRangeException("destinationSampleRate");
+                throw new ArgumentOutOfRangeException(nameof(destinationSampleRate));
 
             if (input.WaveFormat.SampleRate == destinationSampleRate)
                 return input;
@@ -73,10 +73,10 @@ namespace CSCore
         public static ISampleSource ChangeSampleRate(this ISampleSource input, int destinationSampleRate)
         {
             if (input == null)
-                throw new ArgumentNullException("input");
+                throw new ArgumentNullException(nameof(input));
 
             if (destinationSampleRate <= 0)
-                throw new ArgumentOutOfRangeException("destinationSampleRate");
+                throw new ArgumentOutOfRangeException(nameof(destinationSampleRate));
 
             if (input.WaveFormat.SampleRate == destinationSampleRate)
                 return input;
@@ -97,17 +97,19 @@ namespace CSCore
         public static IWaveSource ToStereo(this IWaveSource input)
         {
             if (input == null)
-                throw new ArgumentNullException("input");
+                throw new ArgumentNullException(nameof(input));
 
-            if (input.WaveFormat.Channels == 2)
-                return input;
-            if (input.WaveFormat.Channels == 1)
-                return new MonoToStereoSource(input.ToSampleSource()).ToWaveSource(input.WaveFormat.BitsPerSample);
+            switch (input.WaveFormat.Channels)
+            {
+                case 2:
+                    return input;
+                case 1:
+                    return new MonoToStereoSource(input.ToSampleSource()).ToWaveSource(input.WaveFormat.BitsPerSample);
+            }
 
             var channelMapperFactory = Locator.Instance.Get<IChannelMapperFactory>();
 
-            var format = input.WaveFormat as WaveFormatExtensible;
-            if (format != null)
+            if (input.WaveFormat is WaveFormatExtensible format)
             {
                 var channelMask = format.ChannelMask;
                 var channelMatrix = ChannelMatrix.GetMatrix(channelMask, ChannelMasks.StereoMask);
@@ -130,14 +132,14 @@ namespace CSCore
         public static ISampleSource ToStereo(this ISampleSource input)
         {
             if (input == null)
-                throw new ArgumentNullException("input");
+                throw new ArgumentNullException(nameof(input));
 
-            if (input.WaveFormat.Channels == 2)
-                return input;
-            if (input.WaveFormat.Channels == 1)
-                return new MonoToStereoSource(input);
-
-            return ToStereo(input.ToWaveSource()).ToSampleSource();
+            return input.WaveFormat.Channels switch
+            {
+                2 => input,
+                1 => new MonoToStereoSource(input),
+                _ => ToStereo(input.ToWaveSource()).ToSampleSource()
+            };
         }
 
         /// <summary>
@@ -151,17 +153,19 @@ namespace CSCore
         public static IWaveSource ToMono(this IWaveSource input)
         {
             if (input == null)
-                throw new ArgumentNullException("input");
+                throw new ArgumentNullException(nameof(input));
 
-            if (input.WaveFormat.Channels == 1)
-                return input;
-            if (input.WaveFormat.Channels == 2)
-                return new StereoToMonoSource(input.ToSampleSource()).ToWaveSource(input.WaveFormat.BitsPerSample);
+            switch (input.WaveFormat.Channels)
+            {
+                case 1:
+                    return input;
+                case 2:
+                    return new StereoToMonoSource(input.ToSampleSource()).ToWaveSource(input.WaveFormat.BitsPerSample);
+            }
 
             var channelMapperFactory = Locator.Instance.Get<IChannelMapperFactory>();
 
-            var format = input.WaveFormat as WaveFormatExtensible;
-            if (format != null)
+            if (input.WaveFormat is WaveFormatExtensible format)
             {
                 var channelMask = format.ChannelMask;
                 var channelMatrix = ChannelMatrix.GetMatrix(channelMask, ChannelMasks.MonoMask);
@@ -184,14 +188,14 @@ namespace CSCore
         public static ISampleSource ToMono(this ISampleSource input)
         {
             if (input == null)
-                throw new ArgumentNullException("input");
+                throw new ArgumentNullException(nameof(input));
 
-            if (input.WaveFormat.Channels == 1)
-                return input;
-            if (input.WaveFormat.Channels == 2)
-                return new StereoToMonoSource(input);
-
-            return ToMono(input.ToWaveSource()).ToSampleSource();
+            return input.WaveFormat.Channels switch
+            {
+                1 => input,
+                2 => new StereoToMonoSource(input),
+                _ => ToMono(input.ToWaveSource()).ToSampleSource()
+            };
         }
 
         /// <summary>
@@ -213,21 +217,16 @@ namespace CSCore
         public static IWaveSource ToWaveSource(this ISampleSource sampleSource, int bits)
         {
             if (sampleSource == null)
-                throw new ArgumentNullException("sampleSource");
+                throw new ArgumentNullException(nameof(sampleSource));
 
-            switch (bits)
+            return bits switch
             {
-                case 8:
-                    return new SampleToPcm8(sampleSource);
-                case 16:
-                    return new SampleToPcm16(sampleSource);
-                case 24:
-                    return new SampleToPcm24(sampleSource);
-                case 32:
-                    return new SampleToIeeeFloat32(sampleSource);
-                default:
-                    throw new ArgumentOutOfRangeException("bits", "Must be 8, 16, 24 or 32 bits.");
-            }
+                8 => new SampleToPcm8(sampleSource),
+                16 => new SampleToPcm16(sampleSource),
+                24 => new SampleToPcm24(sampleSource),
+                32 => new SampleToIeeeFloat32(sampleSource),
+                _ => throw new ArgumentOutOfRangeException(nameof(bits), "Must be 8, 16, 24 or 32 bits.")
+            };
         }
 
         /// <summary>
@@ -238,7 +237,7 @@ namespace CSCore
         public static IWaveSource ToWaveSource(this ISampleSource sampleSource)
         {
             if (sampleSource == null)
-                throw new ArgumentNullException("sampleSource");
+                throw new ArgumentNullException(nameof(sampleSource));
 
             return new SampleToIeeeFloat32(sampleSource);
         }
@@ -251,7 +250,7 @@ namespace CSCore
         public static ISampleSource ToSampleSource(this IWaveSource waveSource)
         {
             if (waveSource == null)
-                throw new ArgumentNullException("waveSource");
+                throw new ArgumentNullException(nameof(waveSource));
 
             return WaveToSampleBase.CreateConverter(waveSource);
         }
@@ -268,7 +267,7 @@ namespace CSCore
             where TAudioSource : class, IReadableAudioSource<T>
         {
             if (audioSource == null)
-                throw new ArgumentNullException("audioSource");
+                throw new ArgumentNullException(nameof(audioSource));
 
             return new SynchronizedWaveSource<TAudioSource, T>(audioSource);
         }
@@ -311,11 +310,9 @@ namespace CSCore
                 var read = base.Read(buffer, offset, count);
                 if (read <= 0 && count - offset > WaveFormat.BlockAlign)
                 {
-                    if (!_eofReached)
-                    {
-                        _eofReached = true;
-                        _action(BaseSource);
-                    }
+                    if (_eofReached) return read;
+                    _eofReached = true;
+                    _action(BaseSource);
                 }
                 else
                 {
@@ -341,11 +338,9 @@ namespace CSCore
                 var read = base.Read(buffer, offset, count);
                 if (read <= 0 && offset - count > WaveFormat.Channels)
                 {
-                    if (!_eofReached)
-                    {
-                        _eofReached = true;
-                        _action(BaseSource);
-                    }
+                    if (_eofReached) return read;
+                    _eofReached = true;
+                    _action(BaseSource);
                 }
                 else
                 {

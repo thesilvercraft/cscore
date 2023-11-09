@@ -19,9 +19,9 @@ namespace CSCore.Utils
         public BitReader(byte[] buffer, int offset)
         {
             if (buffer is not { Length: > 0 })
-                throw new ArgumentException("buffer is null or has no elements", "buffer");
+                throw new ArgumentException("buffer is null or has no elements", nameof(buffer));
             if (offset < 0)
-                throw new ArgumentOutOfRangeException("offset");
+                throw new ArgumentOutOfRangeException(nameof(offset));
 
             _hBuffer = GCHandle.Alloc(buffer, GCHandleType.Pinned);
             _buffer = _storedBuffer = (byte*) _hBuffer.AddrOfPinnedObject().ToPointer() + offset;
@@ -32,9 +32,9 @@ namespace CSCore.Utils
         public BitReader(byte* buffer, int offset)
         {
             if (new IntPtr(buffer) == IntPtr.Zero)
-                throw new ArgumentNullException("buffer");
+                throw new ArgumentNullException(nameof(buffer));
             if (offset < 0)
-                throw new ArgumentOutOfRangeException("offset");
+                throw new ArgumentOutOfRangeException(nameof(offset));
 
             var byteoffset = offset / 8;
 
@@ -77,7 +77,7 @@ namespace CSCore.Utils
         public void SeekBytes(int bytes)
         {
             if (bytes <= 0)
-                throw new ArgumentOutOfRangeException("bytes");
+                throw new ArgumentOutOfRangeException(nameof(bytes));
 
             SeekBits(bytes * 8);
         }
@@ -85,7 +85,7 @@ namespace CSCore.Utils
         public void SeekBits(int bits)
         {
             if (bits <= 0)
-                throw new ArgumentOutOfRangeException("bits");
+                throw new ArgumentOutOfRangeException(nameof(bits));
 
             var tmp = _bitoffset + bits;
             _buffer += tmp >> 3; //skip bytes
@@ -99,7 +99,7 @@ namespace CSCore.Utils
         public uint ReadBits(int bits)
         {
             if (bits <= 0 || bits > 32)
-                throw new ArgumentOutOfRangeException("bits", "bits has to be a value between 1 and 32");
+                throw new ArgumentOutOfRangeException(nameof(bits), "bits has to be a value between 1 and 32");
 
             var result = _cache >> 32 - bits;
             if (bits <= 24)
@@ -118,7 +118,7 @@ namespace CSCore.Utils
         public int ReadBitsSigned(int bits)
         {
             if (bits <= 0 || bits > 32)
-                throw new ArgumentOutOfRangeException("bits", "bits has to be a value between 1 and 32");
+                throw new ArgumentOutOfRangeException(nameof(bits), "bits has to be a value between 1 and 32");
 
             var result = (int) ReadBits(bits);
             result <<= (32 - bits);
@@ -129,7 +129,7 @@ namespace CSCore.Utils
         public ulong ReadBits64(int bits)
         {
             if (bits <= 0 || bits > 64)
-                throw new ArgumentOutOfRangeException("bits", "bits has to be a value between 1 and 64");
+                throw new ArgumentOutOfRangeException(nameof(bits), "bits has to be a value between 1 and 64");
 
             ulong result = ReadBits(Math.Min(24, bits));
             if (bits <= 24)
@@ -147,7 +147,7 @@ namespace CSCore.Utils
         public long ReadBits64Signed(int bits)
         {
             if (bits <= 0 || bits > 64)
-                throw new ArgumentOutOfRangeException("bits", "bits has to be a value between 1 and 64");
+                throw new ArgumentOutOfRangeException(nameof(bits), "bits has to be a value between 1 and 64");
 
             var result = (long) ReadBits64(bits);
             result <<= (64 - bits);
@@ -155,33 +155,33 @@ namespace CSCore.Utils
             return result;
         }
 
-        public Int16 ReadInt16()
+        public short ReadInt16()
         {
-            return (Int16) ReadBitsSigned(16);
+            return (short) ReadBitsSigned(16);
         }
 
-        public UInt16 ReadUInt16()
+        public ushort ReadUInt16()
         {
-            return (UInt16) ReadBits(16);
+            return (ushort) ReadBits(16);
         }
 
-        public Int32 ReadInt32()
+        public int ReadInt32()
         {
             return ReadBitsSigned(32);
         }
 
 
-        public UInt32 ReadUInt32()
+        public uint ReadUInt32()
         {
             return ReadBits(32);
         }
 
-        public UInt64 ReadUInt64()
+        public ulong ReadUInt64()
         {
             return ReadBits64(64);
         }
 
-        public Int64 ReadInt64()
+        public long ReadInt64()
         {
             return ReadBits64Signed(64);
         }

@@ -22,7 +22,7 @@ namespace CSCore.Streams
             : base(source)
         {
             if (source == null)
-                throw new ArgumentNullException("source");
+                throw new ArgumentNullException(nameof(source));
         }
 
         /// <summary>

@@ -20,7 +20,7 @@ namespace CSCore.Streams
             : base(source)
         {
             if (source == null)
-                throw new ArgumentNullException("source");
+                throw new ArgumentNullException(nameof(source));
         }
 
         /// <summary>
@@ -33,7 +33,7 @@ namespace CSCore.Streams
             set
             {
                 if (value < 1)
-                    throw new ArgumentOutOfRangeException("value");
+                    throw new ArgumentOutOfRangeException(nameof(value));
                 _blockCount = value;
             }
         }
@@ -97,11 +97,9 @@ namespace CSCore.Streams
                 for (var i = 0; i < read / channels; i++)
                 {
                     _blocksRead++;
-                    if (_blocksRead >= BlockCount)
-                    {
-                        blockRead(this, EventArgs.Empty);
-                        _blocksRead = 0;
-                    }
+                    if (_blocksRead < BlockCount) continue;
+                    blockRead(this, EventArgs.Empty);
+                    _blocksRead = 0;
                 }
             }
 

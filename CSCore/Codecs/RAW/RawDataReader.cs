@@ -22,11 +22,11 @@ namespace CSCore.Codecs.RAW
         public RawDataReader(Stream stream, WaveFormat waveFormat)
         {
             if (stream == null)
-                throw new ArgumentNullException("stream");
+                throw new ArgumentNullException(nameof(stream));
             if (waveFormat == null)
-                throw new ArgumentNullException("waveFormat");
+                throw new ArgumentNullException(nameof(waveFormat));
             if (!stream.CanRead)
-                throw new ArgumentException("stream is not readable", "stream");
+                throw new ArgumentException("stream is not readable", nameof(stream));
 
             if (stream.CanSeek)
                 _startPosition = stream.Position;

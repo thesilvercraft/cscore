@@ -96,7 +96,7 @@ namespace CSCore.Codecs.FLAC
             if (stream == null)
                 throw new ArgumentNullException();
             if (!stream.CanRead)
-                throw new ArgumentException("Stream is not readable.", "stream");
+                throw new ArgumentException("Stream is not readable.", nameof(stream));
 
             _stream = stream;
             _closeStream = true;

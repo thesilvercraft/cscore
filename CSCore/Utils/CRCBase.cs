@@ -14,7 +14,7 @@ namespace CSCore.Utils
         protected void CalcTable(int bits)
         {
             if (bits != 8 && bits != 16)
-                throw new ArgumentOutOfRangeException("bits");
+                throw new ArgumentOutOfRangeException(nameof(bits));
             var polySumm = bits == 8 ? 0x07 : 0x8005;
             var bitmask = bits == 8 ? 0x00FF : 0xFFFF;
             crc_table = new ushort[tableSize];
@@ -33,7 +33,7 @@ namespace CSCore.Utils
                     else
                         crc = crc << 1;
                 }
-                crc_table[i] = (UInt16) (crc & bitmask);
+                crc_table[i] = (ushort) (crc & bitmask);
             }
         }
 

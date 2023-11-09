@@ -155,11 +155,11 @@ namespace CSCore
         public WaveFormat(int sampleRate, int bits, int channels, AudioEncoding encoding, int extraSize)
         {
             if (sampleRate < 1)
-                throw new ArgumentOutOfRangeException("sampleRate");
+                throw new ArgumentOutOfRangeException(nameof(sampleRate));
             if (bits < 0)
-                throw new ArgumentOutOfRangeException("bits");
+                throw new ArgumentOutOfRangeException(nameof(bits));
             if (channels < 1)
-                throw new ArgumentOutOfRangeException("channels", "Number of channels has to be bigger than 0.");
+                throw new ArgumentOutOfRangeException(nameof(channels), "Number of channels has to be bigger than 0.");
 
             _sampleRate = sampleRate;
             _bitsPerSample = (short) bits;
@@ -202,7 +202,7 @@ namespace CSCore
         /// <returns>true if the current object is equal to the other parameter; otherwise, false.</returns>
         public virtual bool Equals(WaveFormat other)
         {
-            return Channels == other.Channels &&
+            return other!=null && Channels == other.Channels &&
                    SampleRate == other.SampleRate &&
                    BytesPerSecond == other.BytesPerSecond &&
                    BlockAlign == other.BlockAlign &&

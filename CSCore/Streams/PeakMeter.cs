@@ -55,7 +55,7 @@ namespace CSCore.Streams
             : base(source)
         {
             if (source == null)
-                throw new ArgumentNullException("source");
+                throw new ArgumentNullException(nameof(source));
             ChannelPeakValues = new float[source.WaveFormat.Channels];
             Interval = 250;
         }
@@ -78,9 +78,9 @@ namespace CSCore.Streams
         public override int Read(float[] buffer, int offset, int count)
         {
             if (count % WaveFormat.Channels != 0)
-                throw new ArgumentOutOfRangeException("count");
+                throw new ArgumentOutOfRangeException(nameof(count));
             if (offset % WaveFormat.Channels != 0)
-                throw new ArgumentOutOfRangeException("offset");
+                throw new ArgumentOutOfRangeException(nameof(offset));
 
             var read = base.Read(buffer, offset, count);
 
@@ -92,11 +92,9 @@ namespace CSCore.Streams
 
                 if (channel == channels - 1)
                     _blocksProcessed++;
-                if(_blocksProcessed == _blocksToProcess)
-                {
-                    RaisePeakCalculated();
-                    Reset();
-                }
+                if (_blocksProcessed != _blocksToProcess) continue;
+                RaisePeakCalculated();
+                Reset();
             }
 
             return read;

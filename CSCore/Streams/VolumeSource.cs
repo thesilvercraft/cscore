@@ -22,8 +22,8 @@ namespace CSCore.Streams
             get => _volume;
             set
             {
-                if (_volume < 0 || _volume > 1)
-                    throw new ArgumentOutOfRangeException("value");
+                if (_volume is < 0 or > 1)
+                    throw new ArgumentOutOfRangeException(nameof(value));
                 _volume = value;
             }
         }
@@ -36,7 +36,7 @@ namespace CSCore.Streams
             : base(source)
         {
             if (source == null)
-                throw new ArgumentNullException("source");
+                throw new ArgumentNullException(nameof(source));
         }
 
         /// <summary>
@@ -57,13 +57,13 @@ namespace CSCore.Streams
         public override int Read(float[] buffer, int offset, int count)
         {
             var read = base.Read(buffer, offset, count);
-            
+
             var volume = Volume;
-            if (volume == 0f || (volume > -Epsilon && volume < Epsilon)) 
+            if (volume is 0f or > -Epsilon and < Epsilon)
             {
                 Array.Clear(buffer, offset, read);
-            } 
-            else if (volume != 1f && !(volume > (1f - Epsilon) && volume < (1f + Epsilon))) 
+            }
+            else if (Math.Abs(volume - 1f) > Epsilon && volume is <= 1f - Epsilon or >= 1f + Epsilon) 
             {
                 for (var i = offset; i < read + offset; i++) 
                 {

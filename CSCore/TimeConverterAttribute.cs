@@ -33,9 +33,9 @@ namespace CSCore
         public TimeConverterAttribute(Type timeConverterType)
         {
             if (timeConverterType == null)
-                throw new ArgumentNullException("timeConverterType");
+                throw new ArgumentNullException(nameof(timeConverterType));
             if(!typeof(TimeConverter).IsAssignableFrom(timeConverterType))
-                throw new ArgumentException("Specified type is no time converter.", "timeConverterType");
+                throw new ArgumentException("Specified type is no time converter.", nameof(timeConverterType));
 
             TimeConverterType = timeConverterType;
         }

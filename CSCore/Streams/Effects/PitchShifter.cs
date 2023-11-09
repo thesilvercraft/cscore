@@ -55,27 +55,25 @@ namespace CSCore.Streams.Effects
         {
             var read = base.Read(buffer, offset, count);
 
-            if (read > 0 && Math.Abs(PitchShiftFactor - 1.0) > 0.001)
+            if (read <= 0 || !(Math.Abs(PitchShiftFactor - 1.0) > 0.001)) return read;
+            var pitchBuffer = buffer;
+            if (offset != 0)
             {
-                var pitchBuffer = buffer;
-                if (offset != 0)
-                {
-                    pitchBuffer = new float[read];
-                    Buffer.BlockCopy(buffer, offset, pitchBuffer, 0, read);
-                }
+                pitchBuffer = new float[read];
+                Buffer.BlockCopy(buffer, offset, pitchBuffer, 0, read);
+            }
 
-                _pitchShifterInternal.PitchShift(PitchShiftFactor, read, WaveFormat.SampleRate, buffer);
+            _pitchShifterInternal.PitchShift(PitchShiftFactor, read, WaveFormat.SampleRate, buffer);
 
-                if (offset != 0)
-                {
-                    Buffer.BlockCopy(pitchBuffer, 0, buffer, offset, read);
-                }
+            if (offset != 0)
+            {
+                Buffer.BlockCopy(pitchBuffer, 0, buffer, offset, read);
+            }
 
-                for (var i = offset; i < offset + read; i++)
-                {
-                    if (buffer[i] < -1.0 || buffer[i] > 1.0)
-                        buffer[i] = Math.Max(-1.0f, Math.Min(1.0f, buffer[i]));
-                }
+            for (var i = offset; i < offset + read; i++)
+            {
+                if (buffer[i] < -1.0 || buffer[i] > 1.0)
+                    buffer[i] = Math.Max(-1.0f, Math.Min(1.0f, buffer[i]));
             }
 
             return read;

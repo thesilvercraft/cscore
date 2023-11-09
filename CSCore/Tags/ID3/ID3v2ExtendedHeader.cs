@@ -29,7 +29,7 @@ namespace CSCore.Tags.ID3
 
         public ID3v2ExtendedHeader(Stream stream, ID3Version version)
         {
-            if (stream == null) throw new ArgumentNullException("stream");
+            if (stream == null) throw new ArgumentNullException(nameof(stream));
             if (!stream.CanRead) throw new ArgumentException("stream not readable");
 
             Version = version;

@@ -20,7 +20,7 @@ namespace CSCore.Streams.Effects
             : base(source)
         {
             if (source == null)
-                throw new ArgumentNullException("source");
+                throw new ArgumentNullException(nameof(source));
         }
 
         /// <summary>
@@ -60,7 +60,7 @@ namespace CSCore.Streams.Effects
             {
                 throw new ArgumentException(
                     "The sample rate of the source must not be less than 32kHz since the 10 band eq includes a 16kHz filter.",
-                    "source");
+                    nameof(source));
             }
 
             var sampleFilters = new[]

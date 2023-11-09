@@ -48,12 +48,10 @@ namespace CSCore.Streams
         public override int Read(float[] buffer, int offset, int count)
         {
             var read = base.Read(buffer, offset, count);
-            if (ClipOverflows)
+            if (!ClipOverflows) return read;
+            for (var i = offset; i < read + offset; i++)
             {
-                for (var i = offset; i < read + offset; i++)
-                {
-                    buffer[i] = Math.Max(-1, Math.Min(buffer[i], 1));
-                }
+                buffer[i] = Math.Max(-1, Math.Min(buffer[i], 1));
             }
             return read;
         }

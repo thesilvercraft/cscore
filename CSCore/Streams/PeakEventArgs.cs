@@ -25,7 +25,7 @@ namespace CSCore.Streams
         public PeakEventArgs(float[] channelPeakValues, float peakValue)
         {
             if (channelPeakValues == null || channelPeakValues.Length == 0)
-                throw new ArgumentException("channelPeakValues");
+                throw new ArgumentException(null, nameof(channelPeakValues));
 
             ChannelPeakValues = channelPeakValues;
             PeakValue = peakValue;

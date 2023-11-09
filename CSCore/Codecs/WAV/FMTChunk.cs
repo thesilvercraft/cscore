@@ -32,7 +32,7 @@ namespace CSCore.Codecs.WAV
             : base(reader)
         {
             if (reader == null)
-                throw new ArgumentNullException("reader");
+                throw new ArgumentNullException(nameof(reader));
 
             if (ChunkID != FmtChunkID) return; //"fmt "
             var encoding = (AudioEncoding) reader.ReadInt16();

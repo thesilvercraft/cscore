@@ -22,7 +22,7 @@ namespace CSCore.Streams
             : base(source)
         {
             if (source == null)
-                throw new ArgumentNullException("source");
+                throw new ArgumentNullException(nameof(source));
             BlockCount = (int) (source.WaveFormat.SampleRate * (40.0 / 1000.0));
             _buffer = new List<float>(BlockCount * source.WaveFormat.Channels);
         }
@@ -36,7 +36,7 @@ namespace CSCore.Streams
             set
             {
                 if (value < 1)
-                    throw new ArgumentOutOfRangeException("value");
+                    throw new ArgumentOutOfRangeException(nameof(value));
                 _blockSize = value;
             }
         }

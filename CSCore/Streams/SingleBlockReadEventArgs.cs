@@ -35,21 +35,26 @@ namespace CSCore.Streams
         /// <param name="channels">The number of channels.</param>
         public SingleBlockReadEventArgs(float[] samples, int index, int channels)
         {
-            if (channels == 1)
-                Left = samples[index];
-            if (channels == 2)
+            switch (channels)
             {
-                Left = samples[index];
-                Right = samples[index + 1];
-            }
-            if (channels > 3)
-            {
-                Left = samples[index];
-                Right = samples[index + 1];
-                Samples = new float[channels];
-                for (var c = 0; c < channels; c++)
+                case 1:
+                    Left = samples[index];
+                    break;
+                case 2:
+                    Left = samples[index];
+                    Right = samples[index + 1];
+                    break;
+                case > 3:
                 {
-                    Samples[c] = samples[index + c];
+                    Left = samples[index];
+                    Right = samples[index + 1];
+                    Samples = new float[channels];
+                    for (var c = 0; c < channels; c++)
+                    {
+                        Samples[c] = samples[index + c];
+                    }
+
+                    break;
                 }
             }
         }

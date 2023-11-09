@@ -22,7 +22,7 @@ namespace CSCore.Codecs.FLAC
 
         public FlacPreScan(Stream stream)
         {
-            if (stream == null) throw new ArgumentNullException("stream");
+            if (stream == null) throw new ArgumentNullException(nameof(stream));
             if (!stream.CanRead) throw new ArgumentException("stream is not readable");
 
             _stream = stream;

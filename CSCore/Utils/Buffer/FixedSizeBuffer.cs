@@ -194,7 +194,7 @@ namespace CSCore.Utils.Buffer
             public FixedSizeByteStream(FixedSizeBuffer<byte> buffer)
             {
                 if (buffer == null)
-                    throw new ArgumentNullException("buffer");
+                    throw new ArgumentNullException(nameof(buffer));
                 _buffer = buffer;
             }
 

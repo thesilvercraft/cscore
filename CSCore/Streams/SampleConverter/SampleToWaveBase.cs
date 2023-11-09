@@ -29,9 +29,9 @@ namespace CSCore.Streams.SampleConverter
         protected SampleToWaveBase(ISampleSource source, int bits, AudioEncoding encoding)
         {
             if (source == null) 
-                throw new ArgumentNullException("source");
+                throw new ArgumentNullException(nameof(source));
             if (bits < 1)
-                throw new ArgumentOutOfRangeException("bits");
+                throw new ArgumentOutOfRangeException(nameof(bits));
 
             _waveFormat = (WaveFormat) source.WaveFormat.Clone();
             _waveFormat.BitsPerSample = bits;

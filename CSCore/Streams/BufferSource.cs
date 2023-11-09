@@ -10,7 +10,7 @@ namespace CSCore.Streams
     public class BufferSource : WaveAggregatorBase
     {
         private readonly Thread _bufferThread;
-        private readonly Object _lockObject;
+        private readonly object _lockObject;
 
         private readonly FixedSizeBuffer<byte> _buffer;
         private bool _disposing;
@@ -26,10 +26,10 @@ namespace CSCore.Streams
             : base(source)
         {
             if (bufferSize <= 0 || bufferSize % source.WaveFormat.BlockAlign != 0)
-                throw new ArgumentOutOfRangeException("bufferSize");
+                throw new ArgumentOutOfRangeException(nameof(bufferSize));
 
             _buffer = new FixedSizeBuffer<byte>(bufferSize);
-            _lockObject = new Object();
+            _lockObject = new object();
 
             _bufferThread = new Thread(BufferProc)
             {
@@ -130,9 +130,7 @@ namespace CSCore.Streams
 
                 lock (_lockObject)
                 {
-                    if (CanSeek)
-                        return Math.Max(0, Math.Min(base.Position - _buffer.Buffered, Length));
-                    return 0;
+                    return CanSeek ? Math.Max(0, Math.Min(base.Position - _buffer.Buffered, Length)) : 0;
                 }
             }
             set
@@ -161,9 +159,7 @@ namespace CSCore.Streams
 
                 lock (_lockObject)
                 {
-                    if(CanSeek)
-                        return base.Length;
-                    return 0;
+                    return CanSeek ? base.Length : 0;
                 }
             }
         }

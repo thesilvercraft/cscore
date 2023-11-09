@@ -12,7 +12,7 @@ namespace CSCore.Tags.ID3
         public readonly static Encoding Utf16Big = new UnicodeEncoding(true, true);
         public static readonly Encoding Utf8 = new UTF8Encoding();
 
-        public unsafe static Int32 ReadInt32(byte[] array, int offset, bool sync, int length = 4)
+        public unsafe static int ReadInt32(byte[] array, int offset, bool sync, int length = 4)
         {
             /*fixed (byte* ptr = array)
             {
@@ -38,7 +38,7 @@ namespace CSCore.Tags.ID3
             return Math.Max(value, 0);
         }
 
-        public static Int32 ReadInt32(Stream stream, bool sync, int length = 4)
+        public static int ReadInt32(Stream stream, bool sync, int length = 4)
         {
             var buffer = new byte[4];
             if (stream.Read(buffer, 0, buffer.Length) < buffer.Length)
@@ -85,24 +85,17 @@ namespace CSCore.Tags.ID3
         {
             var encodingByte = buffer[offset];
 
-            if (encodingByte == 0)
-                return Encoding.Default;
-            if (encodingByte == 1)
+            return encodingByte switch
             {
-                if (buffer.Length < stringOffset + 2)
-                    throw new ArgumentException("buffer to small");
-
-                if (buffer[stringOffset] == 0xFE && buffer[stringOffset + 1] == 0xFF)
-                    return Utf16Big;
-                else if (buffer[stringOffset] == 0xFF && buffer[stringOffset + 1] == 0xFE)
-                    return Utf16;
-                else throw new ID3Exception("Can't detected UTF encoding");
-            }
-            else if (encodingByte == 2)
-                return Utf16Big;
-            else if (encodingByte == 3)
-                return Utf8;
-            else throw new ID3Exception("Invalid Encodingbyte");
+                0 => Encoding.Default,
+                1 when buffer.Length < stringOffset + 2 => throw new ArgumentException("buffer to small"),
+                1 when buffer[stringOffset] == 0xFE && buffer[stringOffset + 1] == 0xFF => Utf16Big,
+                1 when buffer[stringOffset] == 0xFF && buffer[stringOffset + 1] == 0xFE => Utf16,
+                1 => throw new ID3Exception("Can't detected UTF encoding"),
+                2 => Utf16Big,
+                3 => Utf8,
+                _ => throw new ID3Exception("Invalid Encodingbyte")
+            };
         }
 
         private static int CalculateStringLength(byte[] buffer, int offset, int count, int sizeofsymbol)

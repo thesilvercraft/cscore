@@ -22,11 +22,11 @@ namespace CSCore.Streams.Effects
         public EqualizerChannelFilter(int sampleRate, double centerFrequency, double bandWidth, double gain)
         {
             if (sampleRate <= 0)
-                throw new ArgumentOutOfRangeException("sampleRate");
+                throw new ArgumentOutOfRangeException(nameof(sampleRate));
             if (centerFrequency <= 0)
-                throw new ArgumentOutOfRangeException("centerFrequency");
+                throw new ArgumentOutOfRangeException(nameof(centerFrequency));
             if (bandWidth <= 0)
-                throw new ArgumentOutOfRangeException("bandWidth");
+                throw new ArgumentOutOfRangeException(nameof(bandWidth));
 
             _biQuadFilter = new PeakFilter(sampleRate, centerFrequency, bandWidth, gain);
         }

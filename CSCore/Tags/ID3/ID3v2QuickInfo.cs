@@ -15,7 +15,7 @@ namespace CSCore.Tags.ID3
                 Frame f;
                 if ((f = _id3[FrameID.Title]) != null)
                     return (f as TextFrame).Text;
-                return String.Empty;
+                return string.Empty;
             }
         }
 
@@ -26,7 +26,7 @@ namespace CSCore.Tags.ID3
                 Frame f;
                 if ((f = _id3[FrameID.Album]) != null)
                     return (f as TextFrame).Text;
-                return String.Empty;
+                return string.Empty;
             }
         }
 
@@ -37,7 +37,7 @@ namespace CSCore.Tags.ID3
                 Frame f;
                 if ((f = _id3[FrameID.OriginalArtist]) != null)
                     return (f as TextFrame).Text;
-                return String.Empty;
+                return string.Empty;
             }
         }
 
@@ -48,7 +48,7 @@ namespace CSCore.Tags.ID3
                 Frame f;
                 if ((f = _id3[FrameID.LeadPerformers]) != null)
                     return (f as TextFrame).Text;
-                return String.Empty;
+                return string.Empty;
             }
         }
 
@@ -59,7 +59,7 @@ namespace CSCore.Tags.ID3
                 Frame f;
                 if ((f = _id3[FrameID.Comments]) != null)
                     return (f as CommentAndLyricsFrame).Text;
-                return String.Empty;
+                return string.Empty;
             }
         }
 
@@ -81,7 +81,7 @@ namespace CSCore.Tags.ID3
                 Frame f;
                 int result;
                 if ((f = _id3[FrameID.Year]) != null &&
-                     Int32.TryParse((f as NumericTextFrame).Text, out result))
+                     int.TryParse((f as NumericTextFrame).Text, out result))
                     return result;
                 return null;
             }
@@ -95,7 +95,7 @@ namespace CSCore.Tags.ID3
                 Frame f;
                 int result;
                 if ((f = _id3[FrameID.TrackNumber]) != null &&
-                     Int32.TryParse((f as MultiStringTextFrame).Text, out result))
+                     int.TryParse((f as MultiStringTextFrame).Text, out result))
                     return result;
                 return null;
             }
@@ -107,7 +107,7 @@ namespace CSCore.Tags.ID3
             {
                 Frame f;
                 if ((f = _id3[FrameID.OriginalReleaseYear]) != null)
-                    return Int32.Parse((f as NumericTextFrame).Text);
+                    return int.Parse((f as NumericTextFrame).Text);
                 return null;
             }
         }
@@ -121,7 +121,7 @@ namespace CSCore.Tags.ID3
                     return null;
 
                 var str = f.Text;
-                if (String.IsNullOrEmpty(str) || !str.StartsWith("(") || str.Length < 3)
+                if (string.IsNullOrEmpty(str) || !str.StartsWith("(") || str.Length < 3)
                 {
                     try
                     {
@@ -135,16 +135,16 @@ namespace CSCore.Tags.ID3
 
                 char c;
                 var i = 1;
-                var sr = String.Empty;
+                var sr = string.Empty;
                 do
                 {
                     c = str[i++];
-                    if (Char.IsNumber(c))
+                    if (char.IsNumber(c))
                         sr += c;
-                } while (i < str.Length && Char.IsNumber(c));
+                } while (i < str.Length && char.IsNumber(c));
 
                 var res = 0;
-                if (Int32.TryParse(sr, out res))
+                if (int.TryParse(sr, out res))
                 {
                     return (ID3Genre)res;
                 }
@@ -155,7 +155,7 @@ namespace CSCore.Tags.ID3
         public ID3v2QuickInfo(ID3v2 id3)
         {
             if (id3 == null)
-                throw new ArgumentNullException("id3");
+                throw new ArgumentNullException(nameof(id3));
             _id3 = id3;
         }
     }

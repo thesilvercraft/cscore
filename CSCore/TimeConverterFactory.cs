@@ -41,7 +41,7 @@ namespace CSCore
             where TSource : IAudioSource
         {
             if (timeConverter == null)
-                throw new ArgumentNullException("timeConverter");
+                throw new ArgumentNullException(nameof(timeConverter));
 
             var type = typeof (TSource);
             if (_timeConverters.ContainsKey(type))
@@ -87,7 +87,7 @@ namespace CSCore
         public TimeConverter GetTimeConverterForSource<TSource>(TSource source) where TSource : class, IAudioSource
         {
             if (source == null)
-                throw new ArgumentNullException("source");
+                throw new ArgumentNullException(nameof(source));
 
             return GetTimeConverterForSourceType(source.GetType());
         }
@@ -135,10 +135,10 @@ namespace CSCore
         public TimeConverter GetTimeConverterForSourceType(Type sourceType)
         {
             if (sourceType == null)
-                throw new ArgumentNullException("sourceType");
+                throw new ArgumentNullException(nameof(sourceType));
 
             if(!typeof(IAudioSource).IsAssignableFrom(sourceType))
-                throw new ArgumentException("Specified type is no AudioSource.", "sourceType");
+                throw new ArgumentException("Specified type is no AudioSource.", nameof(sourceType));
 
             //we may got it already in the cache
             if (_cache.ContainsKey(sourceType))

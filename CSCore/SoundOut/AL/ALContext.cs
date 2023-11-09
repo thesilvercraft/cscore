@@ -41,7 +41,22 @@ namespace CSCore.SoundOut.AL
                 }
             }
         }
-
+        /// <summary>
+        /// Gets a value indicating whether 64 bit double audio is supported.
+        /// </summary>
+        /// <value>
+        ///   <c>true</c> if 64 bit double audio is supported; otherwise, <c>false</c>.
+        /// </value>
+        public bool Supports64Double
+        {
+            get
+            {
+                using (LockContext())
+                {
+                    return ALInteropsNativeMethods.IsExtensionPresent("AL_EXT_double");
+                }
+            }
+        }
         /// <summary>
         /// Initializes a new instance of the <see cref="ALContext"/> class.
         /// </summary>
@@ -50,9 +65,7 @@ namespace CSCore.SoundOut.AL
         /// <exception cref="ALException">Could not create ALContext.</exception>
         public ALContext(ALDevice device)
         {
-            if (device == null)
-                throw new ArgumentNullException("device");
-            _device = device;
+            _device = device ?? throw new ArgumentNullException(nameof(device));
 
             lock (ContextDictionaryLockObj)
             {
@@ -84,7 +97,7 @@ namespace CSCore.SoundOut.AL
         public ALContext(IntPtr contextHandle)
         {
             if (contextHandle == IntPtr.Zero)
-                throw new ArgumentNullException("contextHandle");
+                throw new ArgumentNullException(nameof(contextHandle));
 
             Handle = contextHandle;
         }
@@ -95,11 +108,9 @@ namespace CSCore.SoundOut.AL
         public void MakeCurrent()
         {
             ALInteropsNativeMethods.alcGetError(_device.DeviceHandle);
-            if (!ALInteropsNativeMethods.alcMakeContextCurrent(Handle))
-            {
-                var error = ALInteropsNativeMethods.alcGetError(_device.DeviceHandle);
-                throw new ALException("Could not set context. alcMakeContextCurrent returned " + error, error);
-            }
+            if (ALInteropsNativeMethods.alcMakeContextCurrent(Handle)) return;
+            var error = ALInteropsNativeMethods.alcGetError(_device.DeviceHandle);
+            throw new ALException("Could not set context. alcMakeContextCurrent returned " + error, error);
         }
 
         /// <summary>

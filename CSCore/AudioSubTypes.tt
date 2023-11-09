@@ -26,7 +26,7 @@ namespace CSCore
 	foreach (var line in lines)
 	{
 		var trimedLine = line.Trim();
-		if (trimedLine.StartsWith("//") || String.IsNullOrWhiteSpace(trimedLine))
+		if (trimedLine.StartsWith("//") || string.IsNullOrWhiteSpace(trimedLine))
 		{
 			WriteLine(tab + trimedLine);
 		}

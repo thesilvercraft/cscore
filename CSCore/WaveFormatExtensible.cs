@@ -34,11 +34,12 @@ namespace CSCore
         /// <returns>SubType-Guid of the specified <paramref name="waveFormat" />.</returns>
         public static Guid SubTypeFromWaveFormat(WaveFormat waveFormat)
         {
-            if (waveFormat == null)
-                throw new ArgumentNullException("waveFormat");
-            if (waveFormat is WaveFormatExtensible)
-                return ((WaveFormatExtensible) waveFormat).SubFormat;
-            return AudioSubTypes.SubTypeFromEncoding(waveFormat.WaveFormatTag);
+            return waveFormat switch
+            {
+                null => throw new ArgumentNullException(nameof(waveFormat)),
+                WaveFormatExtensible extensible => extensible.SubFormat,
+                _ => AudioSubTypes.SubTypeFromEncoding(waveFormat.WaveFormatTag)
+            };
         }
 
         /// <summary>

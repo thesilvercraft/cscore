@@ -6,7 +6,7 @@ namespace CSCore.Utils
     [StructLayout(LayoutKind.Explicit)]
     internal struct HightLowConverterInt32
     {
-        public HightLowConverterInt32(Int32 value)
+        public HightLowConverterInt32(int value)
         {
             Low = 0;
             High = 0;
@@ -26,7 +26,7 @@ namespace CSCore.Utils
     [StructLayout(LayoutKind.Explicit)]
     internal struct HightLowConverterUInt32
     {
-        public HightLowConverterUInt32(UInt32 value)
+        public HightLowConverterUInt32(uint value)
         {
             Low = 0;
             High = 0;

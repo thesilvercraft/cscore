@@ -20,7 +20,7 @@ namespace CSCore
             if (Enum.IsDefined(typeof(AudioEncoding), (short)value))
                 return (AudioEncoding)value;
 
-            throw new ArgumentException("Invalid audioSubType.", "audioSubType");
+            throw new ArgumentException("Invalid audioSubType.", nameof(audioSubType));
         }
 
         /// <summary>
@@ -33,7 +33,7 @@ namespace CSCore
             if (Enum.IsDefined(typeof(AudioEncoding), (short)audioEncoding))
                 return new Guid((int)audioEncoding, 0x0000, 0x0010, 0x80, 0x00, 0x00, 0xaa, 0x00, 0x38, 0x9b, 0x71);
 
-            throw new ArgumentException("Invalid encoding.", "audioEncoding");
+            throw new ArgumentException("Invalid encoding.", nameof(audioEncoding));
         }
 
         /// <summary>

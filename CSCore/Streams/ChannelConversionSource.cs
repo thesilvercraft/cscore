@@ -21,9 +21,9 @@ namespace CSCore.Streams
             : base(source)
         {
             if (source == null)
-                throw new ArgumentNullException("source");
+                throw new ArgumentNullException(nameof(source));
             if (channelMatrix == null)
-                throw new ArgumentNullException("channelMatrix");
+                throw new ArgumentNullException(nameof(channelMatrix));
 
             _channelMatrix = channelMatrix;
             _waveFormat = channelMatrix.BuildOutputWaveFormat(source);
@@ -53,9 +53,9 @@ namespace CSCore.Streams
             if (buffer.Length < offset + count)
                 throw new ArgumentException("buffer");
             if (offset < 0)
-                throw new ArgumentOutOfRangeException("offset");
+                throw new ArgumentOutOfRangeException(nameof(offset));
             if (count <= 0)
-                throw new ArgumentOutOfRangeException("count");
+                throw new ArgumentOutOfRangeException(nameof(count));
 
             count -= count % WaveFormat.Channels;
 

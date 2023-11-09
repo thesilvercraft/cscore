@@ -53,11 +53,11 @@ namespace CSCore.Codecs.AIFF
         public AiffReader(Stream stream)
         {
             if (stream == null)
-                throw new ArgumentNullException("stream");
+                throw new ArgumentNullException(nameof(stream));
             if (!stream.CanRead)
-                throw new ArgumentException("Stream is not readable.", "stream");
+                throw new ArgumentException("Stream is not readable.", nameof(stream));
             if (!stream.CanSeek)
-                throw new ArgumentException("Stream is not seekable.", "stream");
+                throw new ArgumentException("Stream is not seekable.", nameof(stream));
 
             _stream = stream;
             _closeStream = true;
@@ -123,11 +123,11 @@ namespace CSCore.Codecs.AIFF
         public int Read(byte[] buffer, int offset, int count)
         {
             if (buffer == null)
-                throw new ArgumentNullException("buffer");
+                throw new ArgumentNullException(nameof(buffer));
             if (offset < 0)
-                throw new ArgumentOutOfRangeException("offset");
+                throw new ArgumentOutOfRangeException(nameof(offset));
             if (count < 0)
-                throw new ArgumentOutOfRangeException("count");
+                throw new ArgumentOutOfRangeException(nameof(count));
 
             CheckDisposed();
 
@@ -205,7 +205,7 @@ namespace CSCore.Codecs.AIFF
             {
                 CheckDisposed();
                 if (value > Length || value < 0)
-                    throw new ArgumentOutOfRangeException("value");
+                    throw new ArgumentOutOfRangeException(nameof(value));
                 value -= (value % WaveFormat.BlockAlign);
                 _stream.Position = value + _soundDataChunk.AudioDataStartPosition;
             }

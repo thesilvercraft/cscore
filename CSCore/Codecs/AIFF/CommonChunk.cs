@@ -20,14 +20,12 @@ namespace CSCore.Codecs.AIFF
             BitsPerSample = Reader.ReadInt16();
             SampleRate = Reader.ReadIeeeExtended();
 
-            if (DataSize > 18)
+            if (DataSize <= 18) return;
+            CompressionType = new string(binaryReader.ReadChars(4));
+            if (!string.Equals(CompressionType, "none", StringComparison.OrdinalIgnoreCase))
             {
-                CompressionType = new string(binaryReader.ReadChars(4));
-                if (!string.Equals(CompressionType, "none", StringComparison.OrdinalIgnoreCase))
-                {
-                    throw new AiffException("Compression type not supported.",
-                        new NotSupportedException("The compression type of the Aiff stream is not supported."));
-                }
+                throw new AiffException("Compression type not supported.",
+                    new NotSupportedException("The compression type of the Aiff stream is not supported."));
             }
         }
 

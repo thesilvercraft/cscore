@@ -139,9 +139,9 @@ namespace CSCore.DSP
         public static ChannelMatrix GetMatrix(WaveFormat from, WaveFormat to)
         {
             if (from == null)
-                throw new ArgumentNullException("from");
+                throw new ArgumentNullException(nameof(from));
             if (to == null)
-                throw new ArgumentNullException("to");
+                throw new ArgumentNullException(nameof(to));
             ChannelMask f, t;
             if (TryExtractChannelMask(from, out f) && TryExtractChannelMask(to, out t))
             {

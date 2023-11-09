@@ -74,7 +74,7 @@ namespace CSCore.Streams
             if (Channels <= 0)
                 throw new InvalidOperationException("Channels property it not set to a valid value.");
             if (to < 0 || to > 1)
-                throw new ArgumentOutOfRangeException("to");
+                throw new ArgumentOutOfRangeException(nameof(to));
 
             if (IsFading)
                 StopFadingInternal();
@@ -84,7 +84,7 @@ namespace CSCore.Streams
             else
             {
                 if (from.Value < 0 || from.Value > 1)
-                    throw new ArgumentOutOfRangeException("from");
+                    throw new ArgumentOutOfRangeException(nameof(from));
                 _startVolume = from.Value;
             }
 

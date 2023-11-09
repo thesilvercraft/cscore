@@ -17,7 +17,7 @@ namespace CSCore.Streams
             : base(source)
         {
             if (source == null)
-                throw new ArgumentNullException("source");
+                throw new ArgumentNullException(nameof(source));
         }
 
         /// <summary>
@@ -59,8 +59,7 @@ namespace CSCore.Streams
                 if (r == 0)
                     break;
 
-                if (_fadeStrategy != null)
-                    _fadeStrategy.ApplyFading(buffer, offset, r);
+                _fadeStrategy?.ApplyFading(buffer, offset, r);
 
                 read += r;
                 offset += r;

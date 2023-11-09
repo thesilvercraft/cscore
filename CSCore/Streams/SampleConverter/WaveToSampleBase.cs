@@ -25,7 +25,7 @@ namespace CSCore.Streams.SampleConverter
         protected WaveToSampleBase(IWaveSource source)
         {
             if (source == null) 
-                throw new ArgumentNullException("source");
+                throw new ArgumentNullException(nameof(source));
 
             Source = source;
             _waveFormat = (WaveFormat) source.WaveFormat.Clone();
@@ -124,7 +124,7 @@ namespace CSCore.Streams.SampleConverter
         public static ISampleSource CreateConverter(IWaveSource source)
         {
             if (source == null)
-                throw new ArgumentNullException("source");
+                throw new ArgumentNullException(nameof(source));
 
             var bitsPerSample = source.WaveFormat.BitsPerSample;
             if (source.WaveFormat.IsPCM())

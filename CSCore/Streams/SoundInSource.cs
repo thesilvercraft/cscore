@@ -48,7 +48,7 @@ namespace CSCore.Streams
         public SoundInSource(ISoundIn soundIn, int bufferSize)
         {
             if (soundIn == null)
-                throw new ArgumentNullException("soundIn");
+                throw new ArgumentNullException(nameof(soundIn));
             ThrowIfSoundInNotInitialized(soundIn);
 
             _buffer = new WriteableBufferingSource(soundIn.WaveFormat, bufferSize) {FillWithZeros = false};
@@ -164,7 +164,7 @@ namespace CSCore.Streams
         private static ISoundIn ThrowIfSoundInNotInitialized(ISoundIn soundIn)
         {
             if(soundIn == null || soundIn.WaveFormat == null)
-                throw new ArgumentException("The SoundIn has to be initialized. Make sure that the passed SoundIn is not null and provides the format of the recorded data.", "soundIn");
+                throw new ArgumentException("The SoundIn has to be initialized. Make sure that the passed SoundIn is not null and provides the format of the recorded data.", nameof(soundIn));
 
             return soundIn;
         }

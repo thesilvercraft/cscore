@@ -17,7 +17,7 @@ namespace CSCore.Streams.SampleConverter
             : base(source)
         {
             if (source == null)
-                throw new ArgumentNullException("source");
+                throw new ArgumentNullException(nameof(source));
             if (!source.WaveFormat.IsPCM() || source.WaveFormat.BitsPerSample != 32)
                 throw new InvalidOperationException("Invalid format. Format has to 32 bit Pcm.");
         }

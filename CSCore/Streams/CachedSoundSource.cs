@@ -9,7 +9,6 @@ namespace CSCore.Streams
     public class CachedSoundSource : IWaveSource
     {
         private Stream _cache;
-        private readonly WaveFormat _waveFormat;
 
         /// <summary>
         /// Initializes a new instance of the <see cref="CachedSoundSource"/> class.
@@ -18,11 +17,11 @@ namespace CSCore.Streams
         public CachedSoundSource(IWaveSource source)
         {
             if (source == null)
-                throw new ArgumentNullException("source");
-            if (source.Length > Int32.MaxValue)
+                throw new ArgumentNullException(nameof(source));
+            if (source.Length > int.MaxValue)
                 throw new ArgumentException("Length is of source is too large.");
 
-            _waveFormat = source.WaveFormat;
+            WaveFormat = source.WaveFormat;
 
             CacheSource(source);
         }
@@ -88,7 +87,7 @@ namespace CSCore.Streams
         /// <summary>
         /// Gets the Waveformat of the data stored in the cache.
         /// </summary>
-        public WaveFormat WaveFormat => _waveFormat;
+        public WaveFormat WaveFormat { get; }
 
         /// <summary>
         /// Gets or sets the position.

@@ -104,7 +104,7 @@ namespace CSCore.Streams
                 lock (_lockObj)
                 {
                     if (value == null)
-                        throw new ArgumentNullException("value");
+                        throw new ArgumentNullException(nameof(value));
                     _baseSource = value;
                 }
             }
@@ -142,7 +142,7 @@ namespace CSCore.Streams
         public static explicit operator TBaseSource(SynchronizedWaveSource<TBaseSource, T> synchronizedWaveSource)
         {
             if (synchronizedWaveSource == null)
-                throw new ArgumentNullException("synchronizedWaveSource");
+                throw new ArgumentNullException(nameof(synchronizedWaveSource));
             return synchronizedWaveSource.BaseSource;
         }
 

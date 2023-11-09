@@ -48,9 +48,9 @@ namespace CSCore
         public static void SetPosition(this IAudioSource source, TimeSpan position)
         {
             if (source == null)
-                throw new ArgumentNullException("source");
+                throw new ArgumentNullException(nameof(source));
             if (position.TotalMilliseconds < 0)
-                throw new ArgumentOutOfRangeException("position");
+                throw new ArgumentOutOfRangeException(nameof(position));
 
             var bytes = GetRawElements(source, position);
             source.Position = bytes;
@@ -84,9 +84,9 @@ namespace CSCore
         public static TimeSpan GetTime(this IAudioSource source, long elementCount)
         {
             if (source == null)
-                throw new ArgumentNullException("source");
+                throw new ArgumentNullException(nameof(source));
             if (elementCount < 0)
-                throw new ArgumentNullException("elementCount");
+                throw new ArgumentNullException(nameof(elementCount));
 
             return TimeConverterFactory.Instance.GetTimeConverterForSource(source)
                 .ToTimeSpan(source.WaveFormat, elementCount);
@@ -119,9 +119,9 @@ namespace CSCore
         public static long GetMilliseconds(this IAudioSource source, long elementCount)
         {
             if (source == null)
-                throw new ArgumentNullException("source");
+                throw new ArgumentNullException(nameof(source));
             if (elementCount < 0)
-                throw new ArgumentOutOfRangeException("elementCount");
+                throw new ArgumentOutOfRangeException(nameof(elementCount));
 
             return (long) GetTime(source, elementCount).TotalMilliseconds;
         }
@@ -151,7 +151,7 @@ namespace CSCore
         public static long GetRawElements(this IAudioSource source, TimeSpan timespan)
         {
             if (source == null)
-                throw new ArgumentNullException("source");
+                throw new ArgumentNullException(nameof(source));
 
             return TimeConverterFactory.Instance.GetTimeConverterForSource(source)
                 .ToRawElements(source.WaveFormat, timespan);
@@ -183,9 +183,9 @@ namespace CSCore
         public static long GetRawElements(this IAudioSource source, long milliseconds)
         {
             if (source == null)
-                throw new ArgumentNullException("source");
+                throw new ArgumentNullException(nameof(source));
             if (milliseconds < 0)
-                throw new ArgumentOutOfRangeException("milliseconds");
+                throw new ArgumentOutOfRangeException(nameof(milliseconds));
 
             return GetRawElements(source, TimeSpan.FromMilliseconds(milliseconds));
         }
@@ -199,7 +199,7 @@ namespace CSCore
         public static void WriteToFile(this IWaveSource source, string filename)
         {
             if (source == null)
-                throw new ArgumentNullException("source");
+                throw new ArgumentNullException(nameof(source));
             using (var stream = File.OpenWrite(filename))
             {
                 WriteToWaveStream(source, stream);
@@ -220,11 +220,11 @@ namespace CSCore
         public static void WriteToWaveStream(this IWaveSource source, Stream stream)
         {
             if (source == null)
-                throw new ArgumentNullException("source");
+                throw new ArgumentNullException(nameof(source));
             if (stream == null)
-                throw new ArgumentNullException("stream");
+                throw new ArgumentNullException(nameof(stream));
             if (!stream.CanWrite)
-                throw new ArgumentException("Stream is not writeable.", "stream");
+                throw new ArgumentException("Stream is not writeable.", nameof(stream));
 
             using (var writer = new WaveWriter(stream, source.WaveFormat))
             {
@@ -252,11 +252,11 @@ namespace CSCore
         public static void WriteToStream(this IWaveSource waveSource, Stream stream)
         {
             if (waveSource == null)
-                throw new ArgumentNullException("waveSource");
+                throw new ArgumentNullException(nameof(waveSource));
             if (stream == null)
-                throw new ArgumentNullException("stream");
+                throw new ArgumentNullException(nameof(stream));
             if (!stream.CanWrite)
-                throw new ArgumentException("Stream is not writeable.", "stream");
+                throw new ArgumentException("Stream is not writeable.", nameof(stream));
 
 
             var buffer = new byte[waveSource.WaveFormat.BytesPerSecond];
@@ -285,10 +285,10 @@ namespace CSCore
         internal static byte[] ReadBytes(this IWaveSource waveSource, int count)
         {
             if (waveSource == null)
-                throw new ArgumentNullException("waveSource");
+                throw new ArgumentNullException(nameof(waveSource));
             count -= (count % waveSource.WaveFormat.BlockAlign);
             if(count <= 0)
-                throw new ArgumentOutOfRangeException("count");
+                throw new ArgumentOutOfRangeException(nameof(count));
 
             var buffer = new byte[count];
             var read = waveSource.Read(buffer, 0, buffer.Length);
@@ -349,7 +349,7 @@ namespace CSCore
         }
         //--
 
-        internal static Guid GetGuid(this Object obj)
+        internal static Guid GetGuid(this object obj)
         {
             return obj.GetType().GUID;
         }
@@ -377,20 +377,22 @@ namespace CSCore
 // ReSharper disable once InconsistentNaming
         internal static bool IsPCM(this WaveFormat waveFormat)
         {
-            if (waveFormat == null)
-                throw new ArgumentNullException("waveFormat");
-            if (waveFormat is WaveFormatExtensible)
-                return ((WaveFormatExtensible) waveFormat).SubFormat == AudioSubTypes.Pcm;
-            return waveFormat.WaveFormatTag == AudioEncoding.Pcm;
+            return waveFormat switch
+            {
+                null => throw new ArgumentNullException(nameof(waveFormat)),
+                WaveFormatExtensible extensible => extensible.SubFormat == AudioSubTypes.Pcm,
+                _ => waveFormat.WaveFormatTag == AudioEncoding.Pcm
+            };
         }
 
         internal static bool IsIeeeFloat(this WaveFormat waveFormat)
         {
-            if (waveFormat == null)
-                throw new ArgumentNullException("waveFormat");
-            if (waveFormat is WaveFormatExtensible)
-                return ((WaveFormatExtensible) waveFormat).SubFormat == AudioSubTypes.IeeeFloat;
-            return waveFormat.WaveFormatTag == AudioEncoding.IeeeFloat;
+            return waveFormat switch
+            {
+                null => throw new ArgumentNullException(nameof(waveFormat)),
+                WaveFormatExtensible extensible => extensible.SubFormat == AudioSubTypes.IeeeFloat,
+                _ => waveFormat.WaveFormatTag == AudioEncoding.IeeeFloat
+            };
         }
 
         internal static AudioEncoding GetWaveFormatTag(this WaveFormat waveFormat)
@@ -410,22 +412,20 @@ namespace CSCore
         public static bool WaitForStopped(this ISoundOut soundOut, int millisecondsTimeout)
         {
             if (soundOut == null)
-                throw new ArgumentNullException("soundOut");
+                throw new ArgumentNullException(nameof(soundOut));
             if (millisecondsTimeout < -1)
-                throw new ArgumentOutOfRangeException("millisecondsTimeout");
+                throw new ArgumentOutOfRangeException(nameof(millisecondsTimeout));
 
             if (soundOut.PlaybackState == PlaybackState.Stopped)
                 return true;
 
-            using (var waitHandle = new AutoResetEvent(false))
-            {
-                EventHandler<PlaybackStoppedEventArgs> handler = (s, e) => waitHandle.Set();
-                soundOut.Stopped += handler;
-                var result = waitHandle.WaitOne(millisecondsTimeout);
-                // need to unsubscrive because waitHandle will be disposed
-                soundOut.Stopped -= handler;
-                return result;
-            }
+            using var waitHandle = new AutoResetEvent(false);
+            EventHandler<PlaybackStoppedEventArgs> handler = (s, e) => waitHandle.Set();
+            soundOut.Stopped += handler;
+            var result = waitHandle.WaitOne(millisecondsTimeout);
+            // need to unsubscrive because waitHandle will be disposed
+            soundOut.Stopped -= handler;
+            return result;
         }
 
         /// <summary>
