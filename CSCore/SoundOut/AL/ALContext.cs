@@ -140,8 +140,8 @@ namespace CSCore.SoundOut.AL
         /// </summary>
         public void Dispose()
         {
-            Dispose(true);
             GC.SuppressFinalize(this);
+            Dispose(true);
         }
 
         /// <summary>

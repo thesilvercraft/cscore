@@ -39,7 +39,6 @@ namespace CSCore.SoundOut
 		private Thread _playbackThread;
 		private ALDevice _playingDevice;
 		private IWaveSource _source;
-		private VolumeSource _volumeSource;
 		private ALContext _context;
 
 		/// <summary>
@@ -137,21 +136,21 @@ namespace CSCore.SoundOut
 			}
 		}
 
+	
 		/// <summary>
 		///     Gets or sets the volume of the playback.
 		///     Valid values are in the range from 0.0 (0%) to 1.0 (100%).
 		/// </summary>
-		public float Volume
-		{
-			get => _volumeSource != null ? _volumeSource.Volume : 1;
-			set
-			{
+		public float Volume {
+			get {
+				return _alSource != null ? _alSource.Gain : 1;
+			}
+			set {
 				CheckForDisposed();
 				CheckForIsInitialized();
-				_volumeSource.Volume = value;
+				_alSource.Gain = value;
 			}
 		}
-
 		/// <summary>
 		///     Gets the <see cref="IWaveSource" /> which provides
 		///     the waveform-audio data and was used to <see cref="Initialize" />
@@ -319,10 +318,9 @@ namespace CSCore.SoundOut
 				_context = new ALContext(_playingDevice);
 
 				source = new InterruptDisposingChainSource(source);
-				_volumeSource = new VolumeSource(source.ToSampleSource());
 
 				var numberOfBitsPerSample = FindBestBitDepth(source.WaveFormat);
-				_source = _volumeSource.ToWaveSource(numberOfBitsPerSample);
+				_source = source.ToSampleSource().ToWaveSource(numberOfBitsPerSample);
 
 				InitializeInternal();
 

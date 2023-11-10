@@ -58,7 +58,7 @@ namespace CSCore.Streams
         {
             var read = base.Read(buffer, offset, count);
 
-            var volume = Volume;
+           var volume = Volume;
             if (volume is 0f or > -Epsilon and < Epsilon)
             {
                 Array.Clear(buffer, offset, read);

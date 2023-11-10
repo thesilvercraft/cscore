@@ -14,6 +14,31 @@ namespace CSCore.SoundOut.AL
         public uint Id { private set; get; }
 
         private readonly ALContext _context;
+        /// <summary>
+        /// Sets gain of <see cref="ALSource"/>.
+        /// </summary>
+        public float Gain {
+            get {
+                using(_context.LockContext()) {
+                    float gain = 1f;
+                    ALException.Try(
+                        () =>
+                            ALInteropsNativeMethods.alGetSourcef(Id, ALSourceParameters.Gain, out gain),
+                        "alGetSourcef(gain)");
+                    return gain;
+                }
+            }
+
+            set {
+                using(_context.LockContext()) {
+                    ALException.Try(
+                        () =>
+                            ALInteropsNativeMethods.alSourcef(Id, ALSourceParameters.Gain, value),
+                        "alSourcef(gain)");
+                }
+            }
+
+        }
 
         /// <summary>
         /// Initializes a new instance of the <see cref="ALSource"/> class.
@@ -188,8 +213,8 @@ namespace CSCore.SoundOut.AL
         /// </summary>
         public void Dispose()
         {
-            Dispose(true);
             GC.SuppressFinalize(this);
+            Dispose(true);
         }
 
         /// <summary>

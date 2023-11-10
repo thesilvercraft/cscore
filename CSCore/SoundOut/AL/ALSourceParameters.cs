@@ -1,5 +1,4 @@
-﻿
-namespace CSCore.SoundOut.AL
+﻿namespace CSCore.SoundOut.AL
 {
     /// <summary>
     /// Defines ALSource parameters.
