@@ -91,7 +91,7 @@ namespace CSCore.Tags.ID3
                 1 when buffer.Length < stringOffset + 2 => throw new ArgumentException("buffer to small"),
                 1 when buffer[stringOffset] == 0xFE && buffer[stringOffset + 1] == 0xFF => Utf16Big,
                 1 when buffer[stringOffset] == 0xFF && buffer[stringOffset + 1] == 0xFE => Utf16,
-                1 => throw new ID3Exception("Can't detected UTF encoding"),
+                1 => throw new ID3Exception("Can't detect UTF encoding"),
                 2 => Utf16Big,
                 3 => Utf8,
                 _ => throw new ID3Exception("Invalid Encodingbyte")
@@ -124,7 +124,7 @@ namespace CSCore.Tags.ID3
 
             if (newoffset == prem.Length)
                 return offset + newoffset;
-            else return offset;
+            return offset;
         }
 
         public const string MimeURL = "-->";

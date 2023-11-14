@@ -14,22 +14,20 @@ namespace CSCore.Tags.ID3.Frames
 
         public static ID3v2FrameEntry GetFrameEntry(string id, ID3Version version)
         {
-            switch (version)
+            return version switch
             {
-                case ID3Version.ID3v1:
-                    throw new ArgumentException("version");
-                case ID3Version.ID3v2_2:
-                    return Frames.Where((x) => !string.IsNullOrEmpty(x.ID3v2ID) && x.ID3v2ID.Equals(id, StringComparison.InvariantCultureIgnoreCase)).First();
-
-                case ID3Version.ID3v2_3:
-                    return Frames.Where((x) => !string.IsNullOrEmpty(x.ID3v3ID) && x.ID3v3ID.Equals(id, StringComparison.InvariantCultureIgnoreCase)).First();
-
-                case ID3Version.ID3v2_4:
-                    return Frames.Where((x) => !string.IsNullOrEmpty(x.ID3v4ID) && x.ID3v4ID.Equals(id, StringComparison.InvariantCultureIgnoreCase)).First();
-
-                default:
-                    throw new ArgumentException("Unknown version");
-            }
+                ID3Version.ID3v1 => throw new ArgumentException("version"),
+                ID3Version.ID3v2_2 => Frames
+                    .First(x => !string.IsNullOrEmpty(x.ID3v2ID) &&
+                                x.ID3v2ID.Equals(id, StringComparison.InvariantCultureIgnoreCase)),
+                ID3Version.ID3v2_3 => Frames
+                    .First(x => !string.IsNullOrEmpty(x.ID3v3ID) &&
+                                x.ID3v3ID.Equals(id, StringComparison.InvariantCultureIgnoreCase)),
+                ID3Version.ID3v2_4 => Frames
+                    .First(x => !string.IsNullOrEmpty(x.ID3v4ID) &&
+                                x.ID3v4ID.Equals(id, StringComparison.InvariantCultureIgnoreCase)),
+                _ => throw new ArgumentException("Unknown version")
+            };
         }
 
         static FrameIDFactory()

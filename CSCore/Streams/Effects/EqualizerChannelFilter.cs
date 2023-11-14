@@ -21,12 +21,9 @@ namespace CSCore.Streams.Effects
         /// <param name="gain">The gain value in dB.</param>
         public EqualizerChannelFilter(int sampleRate, double centerFrequency, double bandWidth, double gain)
         {
-            if (sampleRate <= 0)
-                throw new ArgumentOutOfRangeException(nameof(sampleRate));
-            if (centerFrequency <= 0)
-                throw new ArgumentOutOfRangeException(nameof(centerFrequency));
-            if (bandWidth <= 0)
-                throw new ArgumentOutOfRangeException(nameof(bandWidth));
+            ArgumentOutOfRangeException.ThrowIfNegativeOrZero(sampleRate);
+            ArgumentOutOfRangeException.ThrowIfNegativeOrZero(centerFrequency);
+            ArgumentOutOfRangeException.ThrowIfNegativeOrZero(bandWidth);
 
             _biQuadFilter = new PeakFilter(sampleRate, centerFrequency, bandWidth, gain);
         }

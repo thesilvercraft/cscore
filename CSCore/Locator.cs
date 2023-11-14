@@ -15,8 +15,7 @@ namespace CSCore
 
         public void Register<TRegisterAs, TImplementation>(Func<TImplementation> factory) where TImplementation : TRegisterAs
         {
-            if (factory == null)
-                throw new ArgumentNullException(nameof(factory));
+            ArgumentNullException.ThrowIfNull(factory);
 
             if (_factories.TryGetValue(typeof(TRegisterAs), out var tmp))
                 throw new Exception($"Service {nameof(TRegisterAs)} already registered.");

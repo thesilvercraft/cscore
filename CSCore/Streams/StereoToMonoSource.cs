@@ -18,8 +18,7 @@ namespace CSCore.Streams
         public StereoToMonoSource(ISampleSource source)
             : base(source)
         {
-            if (source == null)
-                throw new ArgumentNullException(nameof(source));
+            ArgumentNullException.ThrowIfNull(source);
             if (source.WaveFormat.Channels != 2)
                 throw new ArgumentException("The WaveFormat of the source has be a stereo format (two channels).", nameof(source));
 

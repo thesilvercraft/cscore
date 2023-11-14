@@ -141,8 +141,7 @@ namespace CSCore.Streams
         /// <returns>The <see cref="BaseSource" /> of the <paramref name="synchronizedWaveSource" />.</returns>
         public static explicit operator TBaseSource(SynchronizedWaveSource<TBaseSource, T> synchronizedWaveSource)
         {
-            if (synchronizedWaveSource == null)
-                throw new ArgumentNullException(nameof(synchronizedWaveSource));
+            ArgumentNullException.ThrowIfNull(synchronizedWaveSource);
             return synchronizedWaveSource.BaseSource;
         }
 
@@ -157,8 +156,7 @@ namespace CSCore.Streams
         {
             lock (_lockObj)
             {
-                if(BaseSource != null)
-                    BaseSource.Dispose();
+                BaseSource?.Dispose();
                 _baseSource = null;
             }
         }
@@ -170,12 +168,10 @@ namespace CSCore.Streams
         {
             lock (_lockObj)
             {
-                if (!_disposed)
-                {
-                    _disposed = true;
-                    Dispose(true);
-                    GC.SuppressFinalize(this);
-                }
+                if (_disposed) return;
+                _disposed = true;
+                Dispose(true);
+                GC.SuppressFinalize(this);
             }
         }
 

@@ -15,8 +15,7 @@ namespace CSCore.Streams.SampleConverter
         public SampleToIeeeFloat32(ISampleSource source)
             : base(source, 32, AudioEncoding.IeeeFloat)
         {
-            if(source == null)
-                throw new ArgumentNullException(nameof(source));
+            ArgumentNullException.ThrowIfNull(source);
         }
 
         /// <summary>

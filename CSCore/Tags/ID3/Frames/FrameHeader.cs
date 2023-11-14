@@ -19,12 +19,12 @@ namespace CSCore.Tags.ID3.Frames
 
         public FrameIDFactory.ID3v2FrameEntry GetFrameInformation()
         {
-            return FrameIDFactory.Frames.Where((x) => x.ID3v4ID == FrameID || x.ID3v3ID == FrameID || x.ID3v2ID == FrameID).First();
+            return FrameIDFactory.Frames.First(x => x.ID3v4ID == FrameID || x.ID3v3ID == FrameID || x.ID3v2ID == FrameID);
         }
 
         public FrameHeader(Stream stream, ID3Version version)
         {
-            if (stream == null) throw new ArgumentNullException(nameof(stream));
+            ArgumentNullException.ThrowIfNull(stream);
             if (!stream.CanRead) throw new ArgumentException("stream is not readable");
 
             switch (version)

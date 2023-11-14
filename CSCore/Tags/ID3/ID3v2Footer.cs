@@ -9,7 +9,7 @@ namespace CSCore.Tags.ID3
 
         public static ID3v2Footer FromStream(Stream stream)
         {
-            if (stream == null) throw new ArgumentNullException(nameof(stream));
+            ArgumentNullException.ThrowIfNull(stream);
             if (!stream.CanRead) throw new ArgumentException("stream not readable");
             if (!stream.CanSeek) throw new ArgumentException("stream not seekable");
 

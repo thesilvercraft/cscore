@@ -57,9 +57,7 @@ namespace CSCore.Streams
         /// <exception cref="ObjectDisposedException">BufferSource</exception>
         public override int Read(byte[] buffer, int offset, int count)
         {
-            if (_disposing)
-                throw new ObjectDisposedException("BufferSource");
-
+            ObjectDisposedException.ThrowIf(_disposing,this);
             int read0 = 0, read1;
             Array.Clear(buffer, offset, count - offset);
 
@@ -68,9 +66,12 @@ namespace CSCore.Streams
                 read1 = _buffer.Read(buffer, offset + read0, count - read0);
                 read0 += read1;
             } while (read0 < count
-                     && !(read1 <= 0 && _eofCounter >= 5)); //if the buffering thread could not read any data for 5 times, we abort here
+                     && !(read1 <= 0 &&
+                          _eofCounter >=
+                          5)); //if the buffering thread could not read any data for 5 times, we abort here
 
             return read0;
+
         }
 
         /// <summary>
@@ -79,9 +80,7 @@ namespace CSCore.Streams
         /// <exception cref="System.ObjectDisposedException">BufferSource</exception>
         public void ResetBuffer()
         {
-            if (_disposing)
-                throw new ObjectDisposedException("BufferSource");
-
+            ObjectDisposedException.ThrowIf(_disposing,this);
             lock (_lockObject)
             {
                 _buffer.Clear();
@@ -125,9 +124,7 @@ namespace CSCore.Streams
         {
             get
             {
-                if (_disposing)
-                    throw new ObjectDisposedException("BufferSource");
-
+                ObjectDisposedException.ThrowIf(_disposing,this);
                 lock (_lockObject)
                 {
                     return CanSeek ? Math.Max(0, Math.Min(base.Position - _buffer.Buffered, Length)) : 0;
@@ -135,9 +132,7 @@ namespace CSCore.Streams
             }
             set
             {
-                if (_disposing)
-                    throw new ObjectDisposedException("BufferSource");
-
+                ObjectDisposedException.ThrowIf(_disposing,this);
                 lock (_lockObject)
                 {
                     value -= (value % WaveFormat.BlockAlign);
@@ -154,9 +149,7 @@ namespace CSCore.Streams
         {
             get
             {
-                if (_disposing)
-                    throw new ObjectDisposedException("BufferSource");
-
+                ObjectDisposedException.ThrowIf(_disposing,this);
                 lock (_lockObject)
                 {
                     return CanSeek ? base.Length : 0;

@@ -16,8 +16,7 @@ namespace CSCore.Streams.SampleConverter
         public Pcm8BitToSample(IWaveSource source)
             : base(source)
         {
-            if (source == null)
-                throw new ArgumentNullException(nameof(source));
+            ArgumentNullException.ThrowIfNull(source);
             if (!source.WaveFormat.IsPCM() || source.WaveFormat.BitsPerSample != 8)
                 throw new InvalidOperationException("Invalid format. Format has to 8 bit Pcm.");
         }

@@ -16,8 +16,7 @@ namespace CSCore.Streams.SampleConverter
         public IeeeFloatToSample(IWaveSource source)
             : base(source)
         {
-            if (source == null)
-                throw new ArgumentNullException(nameof(source));
+            ArgumentNullException.ThrowIfNull(source);
             if (!source.WaveFormat.IsIeeeFloat() ||
                 source.WaveFormat.BitsPerSample != 32)
                 throw new ArgumentException("Invalid format. Format has to be 32 bit IeeeFloat");

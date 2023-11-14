@@ -28,10 +28,8 @@ namespace CSCore.Streams.SampleConverter
         /// <exception cref="ArgumentOutOfRangeException">Invalid number of bits per sample specified by the <paramref name="bits"/> argument.</exception>
         protected SampleToWaveBase(ISampleSource source, int bits, AudioEncoding encoding)
         {
-            if (source == null) 
-                throw new ArgumentNullException(nameof(source));
-            if (bits < 1)
-                throw new ArgumentOutOfRangeException(nameof(bits));
+            ArgumentNullException.ThrowIfNull(source);
+            ArgumentOutOfRangeException.ThrowIfLessThan(bits, 1);
 
             _waveFormat = (WaveFormat) source.WaveFormat.Clone();
             _waveFormat.BitsPerSample = bits;

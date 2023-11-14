@@ -19,8 +19,7 @@ namespace CSCore.Streams
         public MonoToStereoSource(ISampleSource source)
             : base(source)
         {
-            if (source == null)
-                throw new ArgumentNullException(nameof(source));
+            ArgumentNullException.ThrowIfNull(source);
             if (source.WaveFormat.Channels != 1)
                 throw new ArgumentException("The WaveFormat of the source has be a mono format (one channel).", nameof(source));
             _waveFormat = new WaveFormat(source.WaveFormat.SampleRate, 32, 2, AudioEncoding.IeeeFloat);

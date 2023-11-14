@@ -64,10 +64,7 @@ namespace CSCore.Streams.Effects
 
         int IComparable<EqualizerFilter>.CompareTo(EqualizerFilter other)
         {
-            if (other == null)
-                return 1;
-
-            return AverageFrequency.CompareTo(other.AverageFrequency);
+            return other == null ? 1 : AverageFrequency.CompareTo(other.AverageFrequency);
         }
 
         /// <summary>

@@ -25,8 +25,7 @@ namespace CSCore
         protected WaveAggregatorBase(IWaveSource baseSource)
             : this()
         {
-            if (baseSource == null)
-                throw new ArgumentNullException(nameof(baseSource));
+            ArgumentNullException.ThrowIfNull(baseSource);
 
             _baseSource = baseSource;
         }
@@ -45,8 +44,7 @@ namespace CSCore
             get => _baseSource;
             set
             {
-                if (value == null)
-                    throw new ArgumentNullException(nameof(value), "BaseSource must not be null.");
+                ArgumentNullException.ThrowIfNull(value);
                 _baseSource = value;
             }
         }
@@ -130,8 +128,7 @@ namespace CSCore
         protected virtual void Dispose(bool disposing)
         {
             if (!DisposeBaseSource) return;
-            if (BaseSource != null)
-                BaseSource.Dispose();
+            BaseSource?.Dispose();
             _baseSource = null;
         }
 

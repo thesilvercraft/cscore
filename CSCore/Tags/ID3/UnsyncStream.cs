@@ -9,7 +9,7 @@ namespace CSCore.Tags.ID3
 
         public UnsyncStream(Stream stream)
         {
-            if (stream == null) throw new ArgumentNullException(nameof(stream));
+            ArgumentNullException.ThrowIfNull(stream);
             if (!stream.CanRead) throw new ArgumentException("stream not readable");
 
             _stream = stream;

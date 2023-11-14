@@ -24,8 +24,7 @@ namespace CSCore.Streams.SampleConverter
         /// <exception cref="ArgumentNullException">The <paramref name="source"/> argument is null.</exception>
         protected WaveToSampleBase(IWaveSource source)
         {
-            if (source == null) 
-                throw new ArgumentNullException(nameof(source));
+            ArgumentNullException.ThrowIfNull(source);
 
             Source = source;
             _waveFormat = (WaveFormat) source.WaveFormat.Clone();
@@ -99,11 +98,9 @@ namespace CSCore.Streams.SampleConverter
         /// <param name="disposing">Not used.</param>
         protected virtual void Dispose(bool disposing)
         {
-            if (Source != null)
-            {
-                Source.Dispose();
-                Source = null;
-            }
+            if (Source == null) return;
+            Source.Dispose();
+            Source = null;
         }
 
         /// <summary>
@@ -123,29 +120,19 @@ namespace CSCore.Streams.SampleConverter
         /// <exception cref="NotSupportedException">The <see cref="IAudioSource.WaveFormat"/> of the <paramref name="source"/> is not supported.</exception>
         public static ISampleSource CreateConverter(IWaveSource source)
         {
-            if (source == null)
-                throw new ArgumentNullException(nameof(source));
+            ArgumentNullException.ThrowIfNull(source);
 
             var bitsPerSample = source.WaveFormat.BitsPerSample;
             if (source.WaveFormat.IsPCM())
             {
-                switch (bitsPerSample)
+                return bitsPerSample switch
                 {
-                    case 8:
-                        return new Pcm8BitToSample(source);
-
-                    case 16:
-                        return new Pcm16BitToSample(source);
-
-                    case 24:
-                        return new Pcm24BitToSample(source);
-
-                    case 32:
-                        return new Pcm32BitToSample(source);
-
-                    default:
-                        throw new NotSupportedException("Waveformat is not supported. Invalid BitsPerSample value.");
-                }
+                    8 => new Pcm8BitToSample(source),
+                    16 => new Pcm16BitToSample(source),
+                    24 => new Pcm24BitToSample(source),
+                    32 => new Pcm32BitToSample(source),
+                    _ => throw new NotSupportedException("Waveformat is not supported. Invalid BitsPerSample value.")
+                };
             }
             if (source.WaveFormat.IsIeeeFloat() && bitsPerSample == 32)
                 return new IeeeFloatToSample(source);
