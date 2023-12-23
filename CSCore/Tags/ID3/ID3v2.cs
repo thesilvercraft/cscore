@@ -43,8 +43,7 @@ namespace CSCore.Tags.ID3
 
         public static bool SkipTag(Stream stream)
         {
-            if (stream == null)
-                throw new ArgumentNullException(nameof(stream));
+            ArgumentNullException.ThrowIfNull(stream);
             long streamOffset = 0;
             if (stream.CanSeek)
             {
@@ -89,7 +88,7 @@ namespace CSCore.Tags.ID3
         protected ID3v2(Stream stream)
         {
             _stream = stream;
-            _frames = new List<Frame>();
+            _frames = [];
         }
 
         private bool ReadData(Stream stream, bool readData)

@@ -7,7 +7,7 @@ namespace CSCore
     {
         public static Locator Instance { get; } = new Locator();
 
-        private readonly Dictionary<Type, Func<object>> _factories = new Dictionary<Type, Func<object>>();
+        private readonly Dictionary<Type, Func<object>> _factories = [];
 
         private Locator()
         {

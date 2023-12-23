@@ -25,17 +25,18 @@ namespace CSCore.Tags.ID3
                buffer[1] == 0x44 && //D
                buffer[2] == 0x33)
             {
-                footer = new ID3v2Footer();
+                footer = new ID3v2Footer
+                {
+                    Version = (ID3Version)buffer[3],
+                    RawVersion = [buffer[3], buffer[4]],
+                    Flags = (ID3v2HeaderFlags)buffer[5],
 
-                footer.Version = (ID3Version)buffer[3];
-                footer.RawVersion = new byte[] { buffer[3], buffer[4] };
-                footer.Flags = (ID3v2HeaderFlags)buffer[5];
-
-                /*footer.DataLength = buffer[6] * (1 << 21);
-                footer.DataLength += buffer[7] * (1 << 14);
-                footer.DataLength += buffer[8] * (1 << 7);
-                footer.DataLength += buffer[9];*/
-                footer.DataLength = ID3Utils.ReadInt32(buffer, 6, true);
+                    /*footer.DataLength = buffer[6] * (1 << 21);
+                    footer.DataLength += buffer[7] * (1 << 14);
+                    footer.DataLength += buffer[8] * (1 << 7);
+                    footer.DataLength += buffer[9];*/
+                    DataLength = ID3Utils.ReadInt32(buffer, 6, true)
+                };
 
                 return footer;
             }

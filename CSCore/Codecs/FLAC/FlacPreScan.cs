@@ -22,7 +22,7 @@ namespace CSCore.Codecs.FLAC
 
         public FlacPreScan(Stream stream)
         {
-            if (stream == null) throw new ArgumentNullException(nameof(stream));
+            ArgumentNullException.ThrowIfNull(stream);
             if (!stream.CanRead) throw new ArgumentException("stream is not readable");
 
             _stream = stream;
@@ -78,7 +78,7 @@ namespace CSCore.Codecs.FLAC
 
 #if FLAC_DEBUG
             watch.Stop();
-            Debug.WriteLine(String.Format("FlacPreScan finished: {0} Bytes processed in {1} ms.",
+            Debug.WriteLine(string.Format("FlacPreScan finished: {0} Bytes processed in {1} ms.",
                 _stream.Length, watch.ElapsedMilliseconds));
 #endif
             RaiseScanFinished(result);
@@ -104,8 +104,10 @@ namespace CSCore.Codecs.FLAC
             FlacMetadata.SkipMetadata(stream);
 
             var frames = new List<FlacFrameInformation>();
-            var frameInfo = new FlacFrameInformation();
-            frameInfo.IsFirstFrame = true;
+            var frameInfo = new FlacFrameInformation
+            {
+                IsFirstFrame = true
+            };
 
             FlacFrameHeader baseHeader = null;
 
@@ -125,8 +127,7 @@ namespace CSCore.Codecs.FLAC
                         {
                             var ptrSafe = ptr;
                             ptr--;
-                            FlacFrameHeader tmp;
-                            if (IsFrame(ref ptr, streamInfo, out tmp))
+                            if (IsFrame(ref ptr, streamInfo, out FlacFrameHeader tmp))
                             {
                                 var header = tmp;
                                 if (frameInfo.IsFirstFrame)
@@ -140,7 +141,6 @@ namespace CSCore.Codecs.FLAC
                                     frameInfo.StreamOffset = stream.Position - read + ((ptrSafe - 1) - bufferPtr);
                                     frameInfo.Header = header;
                                     frames.Add(frameInfo);
-
                                     frameInfo.SampleOffset += header.BlockSize;
                                 }
                                 else

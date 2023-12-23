@@ -45,14 +45,11 @@ namespace CSCore.SoundIn
         /// </exception>
         public DataAvailableEventArgs(byte[] data, int offset, int bytecount, WaveFormat format)
         {
-            if (data == null)
-                throw new ArgumentNullException(nameof(data));
-            if (offset < 0)
-                throw new ArgumentOutOfRangeException(nameof(offset));
+            ArgumentNullException.ThrowIfNull(data);
+            ArgumentOutOfRangeException.ThrowIfNegative(offset);
             if (bytecount <= 0 || bytecount > data.Length)
                 throw new ArgumentOutOfRangeException(nameof(bytecount));
-            if (format == null)
-                throw new ArgumentNullException(nameof(format));
+            ArgumentNullException.ThrowIfNull(format);
 
             Offset = offset;
             Data = data;

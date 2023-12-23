@@ -24,8 +24,7 @@ namespace CSCore.Codecs.WAV
         /// <param name="reader"><see cref="BinaryReader" /> which should be used to read the wave file chunk.</param>
         public WaveFileChunk(BinaryReader reader)
         {
-            if (reader == null)
-                throw new ArgumentNullException(nameof(reader));
+            ArgumentNullException.ThrowIfNull(reader);
             ChunkID = reader.ReadInt32();
             ChunkDataSize = reader.ReadUInt32();
         }
@@ -51,8 +50,7 @@ namespace CSCore.Codecs.WAV
         /// </returns>
         public static WaveFileChunk FromStream(Stream stream)
         {
-            if (stream == null)
-                throw new ArgumentNullException(nameof(stream));
+            ArgumentNullException.ThrowIfNull(stream);
             if (stream.CanRead == false)
                 throw new ArgumentException("stream is not readable");
 

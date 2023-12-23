@@ -154,10 +154,8 @@ namespace CSCore
         /// <param name="extraSize">Size (in bytes) of extra information. This value is mainly used for marshalling.</param>
         public WaveFormat(int sampleRate, int bits, int channels, AudioEncoding encoding, int extraSize)
         {
-            if (sampleRate < 1)
-                throw new ArgumentOutOfRangeException(nameof(sampleRate));
-            if (bits < 0)
-                throw new ArgumentOutOfRangeException(nameof(bits));
+            ArgumentOutOfRangeException.ThrowIfLessThan(sampleRate, 1);
+            ArgumentOutOfRangeException.ThrowIfNegative(bits);
             if (channels < 1)
                 throw new ArgumentOutOfRangeException(nameof(channels), "Number of channels has to be bigger than 0.");
 

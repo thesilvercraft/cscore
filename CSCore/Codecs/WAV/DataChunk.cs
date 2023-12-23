@@ -29,8 +29,7 @@ namespace CSCore.Codecs.WAV
         public DataChunk(BinaryReader reader)
             : base(reader)
         {
-            if (reader == null)
-                throw new ArgumentNullException(nameof(reader));
+            ArgumentNullException.ThrowIfNull(reader);
 
             if (ChunkID != DataChunkID)
                 throw new FormatException("Chunk is no datachunk: " + DataChunkID.ToString("x") + " != \"0x61746164\"");

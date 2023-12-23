@@ -19,8 +19,7 @@ namespace CSCore.Streams
         public SimpleNotificationSource(ISampleSource source)
             : base(source)
         {
-            if (source == null)
-                throw new ArgumentNullException(nameof(source));
+            ArgumentNullException.ThrowIfNull(source);
         }
 
         /// <summary>
@@ -32,8 +31,7 @@ namespace CSCore.Streams
             get => _blockCount;
             set
             {
-                if (value < 1)
-                    throw new ArgumentOutOfRangeException(nameof(value));
+                ArgumentOutOfRangeException.ThrowIfLessThan(value, 1);
                 _blockCount = value;
             }
         }

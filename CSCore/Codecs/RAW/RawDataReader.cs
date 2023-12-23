@@ -21,10 +21,8 @@ namespace CSCore.Codecs.RAW
         /// <param name="waveFormat">The format of the waveform-audio data within the <paramref name="stream" />.</param>
         public RawDataReader(Stream stream, WaveFormat waveFormat)
         {
-            if (stream == null)
-                throw new ArgumentNullException(nameof(stream));
-            if (waveFormat == null)
-                throw new ArgumentNullException(nameof(waveFormat));
+            ArgumentNullException.ThrowIfNull(stream);
+            ArgumentNullException.ThrowIfNull(waveFormat);
             if (!stream.CanRead)
                 throw new ArgumentException("stream is not readable", nameof(stream));
 
@@ -58,7 +56,7 @@ namespace CSCore.Codecs.RAW
         public int Read(byte[] buffer, int offset, int count)
         {
             CheckForDisposed();
-            count -= (count % WaveFormat.BlockAlign);
+            count -= count % WaveFormat.BlockAlign;
             return _stream.Read(buffer, offset, count);
         }
 
@@ -81,7 +79,7 @@ namespace CSCore.Codecs.RAW
             set
             {
                 CheckForDisposed();
-                value -= (value % WaveFormat.BlockAlign);
+                value -= value % WaveFormat.BlockAlign;
                 _stream.Position = _startPosition + value;
             }
         }

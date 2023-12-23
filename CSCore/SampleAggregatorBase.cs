@@ -90,8 +90,7 @@ namespace CSCore
             get => _baseSource;
             set
             {
-                if (value == null)
-                    throw new ArgumentNullException(nameof(value));
+                ArgumentNullException.ThrowIfNull(value);
                 _baseSource = value;
             }
         }

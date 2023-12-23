@@ -11,7 +11,7 @@ namespace CSCore.Codecs.FLAC.Metadata
     {
         private static readonly FlacMetadataFactory _instance = new FlacMetadataFactory();
 
-        private readonly Dictionary<int, Type> _registeredmetadataTypes = new Dictionary<int, Type>();
+        private readonly Dictionary<int, Type> _registeredmetadataTypes = [];
 
         /// <summary>
         /// Gets the default factory instance.

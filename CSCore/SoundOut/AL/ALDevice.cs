@@ -28,7 +28,7 @@ namespace CSCore.SoundOut.AL
                 {
                     _deviceHandle = ALInteropsNativeMethods.alcOpenDevice(Name);
                     if (_deviceHandle == IntPtr.Zero)
-                        throw new ALException(String.Format("Could not open device \"{0}\".", Name));
+                        throw new ALException(string.Format("Could not open device \"{0}\".", Name));
                 }
                 return _deviceHandle;
             }

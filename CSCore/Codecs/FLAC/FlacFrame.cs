@@ -68,8 +68,7 @@ namespace CSCore.Codecs.FLAC
 
         private FlacFrame(Stream stream, FlacMetadataStreamInfo streamInfo = null)
         {
-            if (stream == null) 
-                throw new ArgumentNullException(nameof(stream));
+            ArgumentNullException.ThrowIfNull(stream);
             if (stream.CanRead == false) 
                 throw new ArgumentException("Stream is not readable");
 

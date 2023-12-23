@@ -47,8 +47,7 @@ namespace CSCore.SoundOut.AL
         /// <exception cref="System.ArgumentNullException">context</exception>
         public ALSource(ALContext context)
         {
-            if (context == null)
-                throw new ArgumentNullException(nameof(context));
+            ArgumentNullException.ThrowIfNull(context);
 
             _context = context;
 
@@ -117,7 +116,7 @@ namespace CSCore.SoundOut.AL
             {
                 ALException.Try(
                     () =>
-                        ALInteropsNativeMethods.alSourceQueueBuffers(Id, 1, new[] {bufferHandle}),
+                        ALInteropsNativeMethods.alSourceQueueBuffers(Id, 1, [bufferHandle]),
                     "alSourceQueueBuffers");
             }
         }

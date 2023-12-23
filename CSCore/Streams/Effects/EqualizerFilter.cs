@@ -17,7 +17,7 @@ namespace CSCore.Streams.Effects
         /// </summary>
         public EqualizerFilter()
         {
-            Filters = new Dictionary<int, EqualizerChannelFilter>();
+            Filters = [];
         }
 
         /// <summary>

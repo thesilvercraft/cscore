@@ -53,7 +53,7 @@ namespace CSCore.DSP
         /// <summary>
         /// Gets or sets the frequency.
         /// </summary>
-        /// <exception cref="System.ArgumentOutOfRangeException">value;The samplerate has to be bigger than 2 * frequency.</exception>
+        /// <exception cref="ArgumentOutOfRangeException">value;The samplerate has to be bigger than 2 * frequency.</exception>
         public double Frequency
         {
             get => _frequency;
@@ -81,10 +81,7 @@ namespace CSCore.DSP
             get => _q;
             set
             {
-                if (value <= 0)
-                {
-                    throw new ArgumentOutOfRangeException(nameof(value));
-                }
+                ArgumentOutOfRangeException.ThrowIfNegativeOrZero(value);
                 _q = value;
                 CalculateBiQuadCoefficients();
             }
@@ -108,7 +105,7 @@ namespace CSCore.DSP
         /// </summary>
         /// <param name="sampleRate">The sample rate.</param>
         /// <param name="frequency">The frequency.</param>
-        /// <exception cref="System.ArgumentOutOfRangeException">
+        /// <exception cref="ArgumentOutOfRangeException">
         /// sampleRate
         /// or
         /// frequency
@@ -126,7 +123,7 @@ namespace CSCore.DSP
         /// <param name="sampleRate">The sample rate.</param>
         /// <param name="frequency">The frequency.</param>
         /// <param name="q">The q.</param>
-        /// <exception cref="System.ArgumentOutOfRangeException">
+        /// <exception cref="ArgumentOutOfRangeException">
         /// sampleRate
         /// or
         /// frequency
@@ -135,12 +132,9 @@ namespace CSCore.DSP
         /// </exception>
         protected BiQuad(int sampleRate, double frequency, double q)
         {
-            if (sampleRate <= 0)
-                throw new ArgumentOutOfRangeException(nameof(sampleRate));
-            if (frequency <= 0)
-                throw new ArgumentOutOfRangeException(nameof(frequency));
-            if (q <= 0)
-                throw new ArgumentOutOfRangeException(nameof(q));
+            ArgumentOutOfRangeException.ThrowIfNegativeOrZero(sampleRate);
+            ArgumentOutOfRangeException.ThrowIfNegativeOrZero(frequency);
+            ArgumentOutOfRangeException.ThrowIfNegativeOrZero(q);
             SampleRate = sampleRate;
             Frequency = frequency;
             Q = q;

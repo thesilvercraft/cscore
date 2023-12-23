@@ -47,8 +47,7 @@ namespace CSCore.DSP
         /// <exception cref="ArgumentOutOfRangeException"><paramref name="channels"/> is less than zero.</exception>
         public FftProvider(int channels, FftSize fftSize)
         {
-            if(channels < 1)
-                throw new ArgumentOutOfRangeException(nameof(channels));
+            ArgumentOutOfRangeException.ThrowIfLessThan(channels, 1);
             var exponent = Math.Log((int)fftSize, 2);
 // ReSharper disable CompareOfFloatsByEqualityOperator
             if (exponent % 1 != 0 || exponent == 0)
@@ -90,11 +89,9 @@ namespace CSCore.DSP
         /// <param name="count">Number of samples to add to the <see cref="FftProvider"/>.</param>
         public virtual void Add(float[] samples, int count)
         {
-            if (samples == null)
-                throw new ArgumentNullException(nameof(samples));
+            ArgumentNullException.ThrowIfNull(samples);
             count -= count % _channels; //not sure whether to throw an exception...
-            if(count > samples.Length)
-                throw new ArgumentOutOfRangeException(nameof(count));
+            ArgumentOutOfRangeException.ThrowIfGreaterThan(count, samples.Length);
 
             lock (_lockObject)
             {
@@ -120,8 +117,7 @@ namespace CSCore.DSP
         /// <returns>Returns a value which indicates whether the Fast Fourier Transform got calculated. If there have not been added any new samples since the last transform, the FFT won't be calculated. True means that the Fast Fourier Transform got calculated.</returns>
         public virtual bool GetFftData(Complex[] fftResultBuffer)
         {
-            if (fftResultBuffer == null)
-                throw new ArgumentNullException(nameof(fftResultBuffer));
+            ArgumentNullException.ThrowIfNull(fftResultBuffer);
 
             if (fftResultBuffer.Length < (int)_fftSize)
                 throw new ArgumentException("Length of array must be at least as long as the specified fft size.", nameof(fftResultBuffer));
@@ -157,10 +153,9 @@ namespace CSCore.DSP
         /// <returns>Returns a value which indicates whether the Fast Fourier Transform got calculated. If there have not been added any new samples since the last transform, the FFT won't be calculated. True means that the Fast Fourier Transform got calculated.</returns>
         public virtual bool GetFftData(float[] fftResultBuffer)
         {
-            if (fftResultBuffer == null)
-                throw new ArgumentNullException(nameof(fftResultBuffer));
+            ArgumentNullException.ThrowIfNull(fftResultBuffer);
 
-            if(fftResultBuffer.Length < (int)_fftSize)
+            if (fftResultBuffer.Length < (int)_fftSize)
                 throw new ArgumentException("Length of array must be at least as long as the specified fft size.", nameof(fftResultBuffer));
             var input = new Complex[(int) _fftSize];
 

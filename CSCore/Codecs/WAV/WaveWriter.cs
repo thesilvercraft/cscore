@@ -55,8 +55,7 @@ namespace CSCore.Codecs.WAV
         /// </param>
         public WaveWriter(Stream stream, WaveFormat waveFormat)
         {
-            if (stream == null)
-                throw new ArgumentNullException(nameof(stream));
+            ArgumentNullException.ThrowIfNull(stream);
             if (!stream.CanWrite)
                 throw new ArgumentException("Stream not writeable.", nameof(stream));
             if (!stream.CanSeek)
@@ -142,7 +141,7 @@ namespace CSCore.Codecs.WAV
                         break;
                     case 24:
                         var buffer = BitConverter.GetBytes((int)(0x7fffff * sample));
-                        Write(new[] {buffer[0], buffer[1], buffer[2]}, 0, 3);
+                        Write([buffer[0], buffer[1], buffer[2]], 0, 3);
                         break;
                     case 32:
                         Write((int) (int.MaxValue * sample));

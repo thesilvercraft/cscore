@@ -10,7 +10,7 @@ namespace CSCore.SoundOut.AL
     /// </summary>
     public class ALContext : IDisposable
     {
-        private static readonly Dictionary<ALDevice, ContextRef> ContextDictionary = new Dictionary<ALDevice, ContextRef>();
+        private static readonly Dictionary<ALDevice, ContextRef> ContextDictionary = [];
         private static readonly object ContextDictionaryLockObj = new object();
 
         private readonly ALDevice _device;

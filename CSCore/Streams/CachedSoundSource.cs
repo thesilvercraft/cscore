@@ -16,8 +16,7 @@ namespace CSCore.Streams
         /// <param name="source">Source which will be copied to a cache.</param>
         public CachedSoundSource(IWaveSource source)
         {
-            if (source == null)
-                throw new ArgumentNullException(nameof(source));
+            ArgumentNullException.ThrowIfNull(source);
             if (source.Length > int.MaxValue)
                 throw new ArgumentException("Length is of source is too large.");
 

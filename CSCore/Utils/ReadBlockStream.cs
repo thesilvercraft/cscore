@@ -13,8 +13,7 @@ namespace CSCore.Utils
 
         public ReadBlockStream(Stream stream)
         {
-            if (stream == null)
-                throw new ArgumentNullException(nameof(stream));
+            ArgumentNullException.ThrowIfNull(stream);
             if (stream.CanRead == false)
                 throw new ArgumentException("Can't read stream");
 

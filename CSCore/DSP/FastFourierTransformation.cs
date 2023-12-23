@@ -118,18 +118,6 @@ namespace CSCore.DSP
             }
         }
 
-        /// <summary>
-        /// Computes an Fast Fourier Transform.
-        /// </summary>
-        /// <param name="data">Array of complex numbers. This array provides the input data and is used to store the result of the FFT.</param>
-        /// <param name="exponent">The exponent n.</param>
-        /// <param name="mode">The <see cref="FftMode"/> to use. Use <see cref="FftMode.Forward"/> as the default value.</param>
-        [Obsolete("Use FastFourierTransform.Fft instead.")]
-        public static void FFT1(Complex[] data, int exponent, FftMode mode)
-        {
-            Fft(data, exponent, mode);
-        }
-
         private static void Forward(Complex[] data, int count)
         {
             var length = count;

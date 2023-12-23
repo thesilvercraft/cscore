@@ -135,7 +135,7 @@ namespace CSCore.Codecs.FLAC
         /// <param name="doCrc">A value which indicates whether the crc8 checksum of the <see cref="FlacFrameHeader"/> should be calculated.</param>
         public FlacFrameHeader(Stream stream, FlacMetadataStreamInfo streamInfo, bool doCrc)
         {
-            if (stream == null) throw new ArgumentNullException(nameof(stream));
+            ArgumentNullException.ThrowIfNull(stream);
             if (stream.CanRead == false) throw new ArgumentException("stream is not readable");
             //streamInfo can be null
 

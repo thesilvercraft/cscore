@@ -21,8 +21,7 @@ namespace CSCore.Streams
         public NotificationSource(ISampleSource source)
             : base(source)
         {
-            if (source == null)
-                throw new ArgumentNullException(nameof(source));
+            ArgumentNullException.ThrowIfNull(source);
             BlockCount = (int) (source.WaveFormat.SampleRate * (40.0 / 1000.0));
             _buffer = new List<float>(BlockCount * source.WaveFormat.Channels);
         }
@@ -35,8 +34,7 @@ namespace CSCore.Streams
             get => _blockSize;
             set
             {
-                if (value < 1)
-                    throw new ArgumentOutOfRangeException(nameof(value));
+                ArgumentOutOfRangeException.ThrowIfLessThan(value, 1);
                 _blockSize = value;
             }
         }

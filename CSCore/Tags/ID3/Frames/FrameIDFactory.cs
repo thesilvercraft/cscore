@@ -8,7 +8,7 @@ namespace CSCore.Tags.ID3.Frames
 {
     public static class FrameIDFactory
     {
-        private static List<ID3v2FrameEntry> _entries = new List<ID3v2FrameEntry>();
+        private static List<ID3v2FrameEntry> _entries = [];
 
         public static List<ID3v2FrameEntry> Frames => _entries;
 

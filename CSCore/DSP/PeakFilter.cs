@@ -19,8 +19,7 @@ namespace CSCore.DSP
             get => Q;
             set
             {
-                if (value <= 0)
-                    throw new ArgumentOutOfRangeException(nameof(value));
+                ArgumentOutOfRangeException.ThrowIfNegativeOrZero(value);
                 Q = value;
             }
         }

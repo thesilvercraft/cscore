@@ -40,8 +40,7 @@ namespace CSCore.Streams
         /// <param name="bufferSize">Buffersize in bytes.</param>
         public WriteableBufferingSource(WaveFormat waveFormat, int bufferSize)
         {
-            if (waveFormat == null)
-                throw new ArgumentNullException(nameof(waveFormat));
+            ArgumentNullException.ThrowIfNull(waveFormat);
             if (bufferSize <= 0 || (bufferSize % waveFormat.BlockAlign) != 0)
                 throw new ArgumentException("Invalid bufferSize.");
 

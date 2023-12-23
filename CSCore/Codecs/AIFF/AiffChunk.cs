@@ -22,8 +22,7 @@ namespace CSCore.Codecs.AIFF
         /// </exception>
         public AiffChunk(BinaryReader binaryReader, string chunkId)
         {
-            if (binaryReader == null)
-                throw new ArgumentNullException(nameof(binaryReader));
+            ArgumentNullException.ThrowIfNull(binaryReader);
             if (string.IsNullOrEmpty(chunkId))
                 throw new ArgumentNullException(nameof(chunkId));
 

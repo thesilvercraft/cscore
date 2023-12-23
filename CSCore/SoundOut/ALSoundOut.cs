@@ -76,10 +76,9 @@ namespace CSCore.SoundOut
 		/// <exception cref="System.ArgumentOutOfRangeException">latency</exception>
 		public ALSoundOut(int latency, ThreadPriority playbackThreadPriority, SynchronizationContext eventSyncContext)
 		{
-			if (latency <= 0)
-				throw new ArgumentOutOfRangeException(nameof(latency));
+            ArgumentOutOfRangeException.ThrowIfNegativeOrZero(latency);
 
-			_latency = latency;
+            _latency = latency;
 			_playbackPriority = playbackThreadPriority;
 			_syncContext = eventSyncContext;
 			if(!ResolverIsSet)
@@ -109,9 +108,8 @@ namespace CSCore.SoundOut
 			get => _device ?? (ALDevice.DefaultDevice);
 			set
 			{
-				if (value == null)
-					throw new ArgumentNullException(nameof(value));
-				lock (_lockObj)
+                ArgumentNullException.ThrowIfNull(value);
+                lock (_lockObj)
 				{
 					_device = value;
 				}
@@ -127,9 +125,8 @@ namespace CSCore.SoundOut
 			get => _latency;
 			set
 			{
-				if (value <= 0)
-					throw new ArgumentOutOfRangeException(nameof(value));
-				lock (_lockObj)
+                ArgumentOutOfRangeException.ThrowIfNegativeOrZero(value);
+                lock (_lockObj)
 				{
 					_latency = value;
 				}
@@ -299,10 +296,9 @@ namespace CSCore.SoundOut
 			{
 				CheckForDisposed();
 
-				if (source == null)
-					throw new ArgumentNullException(nameof(source));
+                ArgumentNullException.ThrowIfNull(source);
 
-				source = new InterruptDisposingChainSource(source);
+                source = new InterruptDisposingChainSource(source);
 				if (PlaybackState != PlaybackState.Stopped)
 				{
 					throw new InvalidOperationException(
@@ -630,9 +626,8 @@ namespace CSCore.SoundOut
 			public InterruptDisposingChainSource(IWaveSource source)
 				: base(source)
 			{
-				if (source == null)
-					throw new ArgumentNullException(nameof(source));
-				DisposeBaseSource = false;
+                ArgumentNullException.ThrowIfNull(source);
+                DisposeBaseSource = false;
 			}
 		}
 

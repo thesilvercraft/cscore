@@ -3,7 +3,6 @@
     /// <summary>
     /// Defines OpenAL Error Codes.
     /// </summary>
-    // ReSharper disable once InconsistentNaming
     public enum ALErrorCode
     {
         /// <summary>

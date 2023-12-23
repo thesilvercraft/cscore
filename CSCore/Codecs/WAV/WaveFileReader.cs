@@ -38,8 +38,7 @@ namespace CSCore.Codecs.WAV
         /// <param name="stream">Stream which contains wave file data.</param>
         public WaveFileReader(Stream stream)
         {
-            if (stream == null)
-                throw new ArgumentNullException(nameof(stream));
+            ArgumentNullException.ThrowIfNull(stream);
             if (!stream.CanRead)
                 throw new ArgumentException("stream is not readable");
 

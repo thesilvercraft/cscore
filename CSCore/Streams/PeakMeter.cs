@@ -54,8 +54,7 @@ namespace CSCore.Streams
         public PeakMeter(ISampleSource source)
             : base(source)
         {
-            if (source == null)
-                throw new ArgumentNullException(nameof(source));
+            ArgumentNullException.ThrowIfNull(source);
             ChannelPeakValues = new float[source.WaveFormat.Channels];
             Interval = 250;
         }

@@ -8,7 +8,7 @@ namespace CSCore.Tags.ID3.Frames
     {
         private List<string> _strings;
 
-        public List<string> Strings => _strings ?? (_strings = new List<string>());
+        public List<string> Strings => _strings ?? (_strings = []);
 
         public MultiStringTextFrame(FrameHeader header)
             : base(header)

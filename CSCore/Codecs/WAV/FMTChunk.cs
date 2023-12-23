@@ -31,8 +31,7 @@ namespace CSCore.Codecs.WAV
         public FmtChunk(BinaryReader reader)
             : base(reader)
         {
-            if (reader == null)
-                throw new ArgumentNullException(nameof(reader));
+            ArgumentNullException.ThrowIfNull(reader);
 
             if (ChunkID != FmtChunkID) return; //"fmt "
             var encoding = (AudioEncoding) reader.ReadInt16();
@@ -47,7 +46,6 @@ namespace CSCore.Codecs.WAV
             {
                 extraSize = reader.ReadInt16();
                 if (extraSize != ChunkDataSize - 18)
-                    //TODO: Check whether this is the correct way of reading a fmt chunk
                     extraSize = (int) (ChunkDataSize - 18);
 
                 for (var i = (int) (ChunkDataSize - 16); i > 0; i--)

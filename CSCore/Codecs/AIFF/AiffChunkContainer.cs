@@ -10,7 +10,7 @@ namespace CSCore.Codecs.AIFF
     /// </summary>
     public class AiffChunkContainer : AiffChunk
     {
-        private readonly List<AiffChunk> _chunks = new List<AiffChunk>();
+        private readonly List<AiffChunk> _chunks = [];
 
         /// <summary>
         ///     Initializes a new instance of the <see cref="AiffChunkContainer" /> class.
@@ -64,19 +64,14 @@ namespace CSCore.Codecs.AIFF
                     throw new EndOfStreamException();
 
                 var chunkId = new string(chars);
-                switch (chunkId)
+                return chunkId switch
                 {
-                    case "COMM":
-                        return new CommonChunk(binaryReader);
-                    case "SSND":
-                        return new SoundDataChunk(binaryReader);
-                    case "FVER":
-                        return new FormatVersionChunk(binaryReader);
-                    case "\0\0\0\0":
-                        return null;
-                    default:
-                        return new AiffChunk(binaryReader, chunkId);
-                }
+                    "COMM" => new CommonChunk(binaryReader),
+                    "SSND" => new SoundDataChunk(binaryReader),
+                    "FVER" => new FormatVersionChunk(binaryReader),
+                    "\0\0\0\0" => null,
+                    _ => new AiffChunk(binaryReader, chunkId),
+                };
             }
             catch (EndOfStreamException)
             {

@@ -50,11 +50,9 @@ namespace CSCore
         /// <returns>Wave source with the specified <paramref name="destinationSampleRate" />.</returns>
         public static IWaveSource ChangeSampleRate(this IWaveSource input, int destinationSampleRate)
         {
-            if (input == null)
-                throw new ArgumentNullException(nameof(input));
+            ArgumentNullException.ThrowIfNull(input);
 
-            if (destinationSampleRate <= 0)
-                throw new ArgumentOutOfRangeException(nameof(destinationSampleRate));
+            ArgumentOutOfRangeException.ThrowIfNegativeOrZero(destinationSampleRate);
 
             if (input.WaveFormat.SampleRate == destinationSampleRate)
                 return input;
@@ -72,11 +70,9 @@ namespace CSCore
         /// <returns>Sample source with the specified <paramref name="destinationSampleRate" />.</returns>
         public static ISampleSource ChangeSampleRate(this ISampleSource input, int destinationSampleRate)
         {
-            if (input == null)
-                throw new ArgumentNullException(nameof(input));
+            ArgumentNullException.ThrowIfNull(input);
 
-            if (destinationSampleRate <= 0)
-                throw new ArgumentOutOfRangeException(nameof(destinationSampleRate));
+            ArgumentOutOfRangeException.ThrowIfNegativeOrZero(destinationSampleRate);
 
             if (input.WaveFormat.SampleRate == destinationSampleRate)
                 return input;
@@ -96,8 +92,7 @@ namespace CSCore
         /// <returns><see cref="IWaveSource" /> instance with two channels.</returns>
         public static IWaveSource ToStereo(this IWaveSource input)
         {
-            if (input == null)
-                throw new ArgumentNullException(nameof(input));
+            ArgumentNullException.ThrowIfNull(input);
 
             switch (input.WaveFormat.Channels)
             {
@@ -131,8 +126,7 @@ namespace CSCore
         /// <returns><see cref="ISampleSource" /> instance with two channels.</returns>
         public static ISampleSource ToStereo(this ISampleSource input)
         {
-            if (input == null)
-                throw new ArgumentNullException(nameof(input));
+            ArgumentNullException.ThrowIfNull(input);
 
             return input.WaveFormat.Channels switch
             {
@@ -152,8 +146,7 @@ namespace CSCore
         /// <returns><see cref="IWaveSource" /> instance with one channel.</returns>
         public static IWaveSource ToMono(this IWaveSource input)
         {
-            if (input == null)
-                throw new ArgumentNullException(nameof(input));
+            ArgumentNullException.ThrowIfNull(input);
 
             switch (input.WaveFormat.Channels)
             {
@@ -187,8 +180,7 @@ namespace CSCore
         /// <returns><see cref="ISampleSource" /> instance with one channels</returns>
         public static ISampleSource ToMono(this ISampleSource input)
         {
-            if (input == null)
-                throw new ArgumentNullException(nameof(input));
+            ArgumentNullException.ThrowIfNull(input);
 
             return input.WaveFormat.Channels switch
             {
@@ -216,8 +208,7 @@ namespace CSCore
         /// <returns>Wave source</returns>
         public static IWaveSource ToWaveSource(this ISampleSource sampleSource, int bits)
         {
-            if (sampleSource == null)
-                throw new ArgumentNullException(nameof(sampleSource));
+            ArgumentNullException.ThrowIfNull(sampleSource);
 
             return bits switch
             {
@@ -236,8 +227,7 @@ namespace CSCore
         /// <returns>The <see cref="IWaveSource"/> wrapped around the specified <paramref name="sampleSource"/>.</returns>
         public static IWaveSource ToWaveSource(this ISampleSource sampleSource)
         {
-            if (sampleSource == null)
-                throw new ArgumentNullException(nameof(sampleSource));
+            ArgumentNullException.ThrowIfNull(sampleSource);
 
             return new SampleToIeeeFloat32(sampleSource);
         }
@@ -249,8 +239,7 @@ namespace CSCore
         /// <returns>The <see cref="ISampleSource"/> wrapped around the specified <paramref name="waveSource"/>.</returns>        
         public static ISampleSource ToSampleSource(this IWaveSource waveSource)
         {
-            if (waveSource == null)
-                throw new ArgumentNullException(nameof(waveSource));
+            ArgumentNullException.ThrowIfNull(waveSource);
 
             return WaveToSampleBase.CreateConverter(waveSource);
         }
@@ -266,8 +255,7 @@ namespace CSCore
         public static SynchronizedWaveSource<TAudioSource, T> Synchronized<TAudioSource, T>(this TAudioSource audioSource)
             where TAudioSource : class, IReadableAudioSource<T>
         {
-            if (audioSource == null)
-                throw new ArgumentNullException(nameof(audioSource));
+            ArgumentNullException.ThrowIfNull(audioSource);
 
             return new SynchronizedWaveSource<TAudioSource, T>(audioSource);
         }

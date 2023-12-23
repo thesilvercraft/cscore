@@ -16,8 +16,7 @@ namespace CSCore.Streams
         public FadeInOut(ISampleSource source)
             : base(source)
         {
-            if (source == null)
-                throw new ArgumentNullException(nameof(source));
+            ArgumentNullException.ThrowIfNull(source);
         }
 
         /// <summary>

@@ -16,8 +16,7 @@ namespace CSCore.Tags.ID3
 
         public static ID3v1 FromStream(Stream stream)
         {
-            if (stream == null)
-                throw new ArgumentNullException(nameof(stream));
+            ArgumentNullException.ThrowIfNull(stream);
             if (!stream.CanRead)
                 throw new ArgumentException("stream is not readable");
 

@@ -20,8 +20,7 @@ namespace CSCore.Utils
         {
             if (buffer is not { Length: > 0 })
                 throw new ArgumentException("buffer is null or has no elements", nameof(buffer));
-            if (offset < 0)
-                throw new ArgumentOutOfRangeException(nameof(offset));
+            ArgumentOutOfRangeException.ThrowIfNegative(offset);
 
             _hBuffer = GCHandle.Alloc(buffer, GCHandleType.Pinned);
             _buffer = _storedBuffer = (byte*) _hBuffer.AddrOfPinnedObject().ToPointer() + offset;
@@ -33,8 +32,7 @@ namespace CSCore.Utils
         {
             if (new IntPtr(buffer) == IntPtr.Zero)
                 throw new ArgumentNullException(nameof(buffer));
-            if (offset < 0)
-                throw new ArgumentOutOfRangeException(nameof(offset));
+            ArgumentOutOfRangeException.ThrowIfNegative(offset);
 
             var byteoffset = offset / 8;
 
@@ -76,16 +74,14 @@ namespace CSCore.Utils
 
         public void SeekBytes(int bytes)
         {
-            if (bytes <= 0)
-                throw new ArgumentOutOfRangeException(nameof(bytes));
+            ArgumentOutOfRangeException.ThrowIfNegativeOrZero(bytes);
 
             SeekBits(bytes * 8);
         }
 
         public void SeekBits(int bits)
         {
-            if (bits <= 0)
-                throw new ArgumentOutOfRangeException(nameof(bits));
+            ArgumentOutOfRangeException.ThrowIfNegativeOrZero(bits);
 
             var tmp = _bitoffset + bits;
             _buffer += tmp >> 3; //skip bytes

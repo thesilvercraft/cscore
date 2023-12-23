@@ -19,8 +19,7 @@ namespace CSCore.Streams.Effects
         public Equalizer(ISampleSource source)
             : base(source)
         {
-            if (source == null)
-                throw new ArgumentNullException(nameof(source));
+            ArgumentNullException.ThrowIfNull(source);
         }
 
         /// <summary>
@@ -123,7 +122,7 @@ namespace CSCore.Streams.Effects
 
         private class EqualizerFilterCollection : IList<EqualizerFilter>
         {
-            private readonly List<EqualizerFilter> _list = new List<EqualizerFilter>();
+            private readonly List<EqualizerFilter> _list = [];
 
             public IEnumerator<EqualizerFilter> GetEnumerator()
             {

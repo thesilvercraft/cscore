@@ -22,8 +22,8 @@ namespace CSCore
 
         private TimeConverterFactory()
         {
-            _timeConverters = new Dictionary<Type, TimeConverter>();
-            _cache = new Dictionary<Type, CacheItem>();
+            _timeConverters = [];
+            _cache = [];
 
             RegisterTimeConverterForSourceType<IWaveSource>(TimeConverter.WaveSourceTimeConverter);
             RegisterTimeConverterForSourceType<ISampleSource>(TimeConverter.SampleSourceTimeConverter);

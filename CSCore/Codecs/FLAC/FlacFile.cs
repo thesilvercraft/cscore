@@ -93,8 +93,7 @@ namespace CSCore.Codecs.FLAC
         public FlacFile(Stream stream, FlacPreScanMode scanFlag,
             Action<FlacPreScanFinishedEventArgs> onscanFinished)
         {
-            if (stream == null)
-                throw new ArgumentNullException();
+            ArgumentNullException.ThrowIfNull(stream);
             if (!stream.CanRead)
                 throw new ArgumentException("Stream is not readable.", nameof(stream));
 

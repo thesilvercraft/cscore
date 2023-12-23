@@ -47,8 +47,7 @@ namespace CSCore
         /// </remarks>
         public static void SetPosition(this IAudioSource source, TimeSpan position)
         {
-            if (source == null)
-                throw new ArgumentNullException(nameof(source));
+            ArgumentNullException.ThrowIfNull(source);
             if (position.TotalMilliseconds < 0)
                 throw new ArgumentOutOfRangeException(nameof(position));
 
@@ -83,8 +82,7 @@ namespace CSCore
         /// </remarks>
         public static TimeSpan GetTime(this IAudioSource source, long elementCount)
         {
-            if (source == null)
-                throw new ArgumentNullException(nameof(source));
+            ArgumentNullException.ThrowIfNull(source);
             if (elementCount < 0)
                 throw new ArgumentNullException(nameof(elementCount));
 
@@ -118,10 +116,8 @@ namespace CSCore
         /// </remarks>
         public static long GetMilliseconds(this IAudioSource source, long elementCount)
         {
-            if (source == null)
-                throw new ArgumentNullException(nameof(source));
-            if (elementCount < 0)
-                throw new ArgumentOutOfRangeException(nameof(elementCount));
+            ArgumentNullException.ThrowIfNull(source);
+            ArgumentOutOfRangeException.ThrowIfNegative(elementCount);
 
             return (long) GetTime(source, elementCount).TotalMilliseconds;
         }
@@ -150,8 +146,7 @@ namespace CSCore
         /// </remarks>
         public static long GetRawElements(this IAudioSource source, TimeSpan timespan)
         {
-            if (source == null)
-                throw new ArgumentNullException(nameof(source));
+            ArgumentNullException.ThrowIfNull(source);
 
             return TimeConverterFactory.Instance.GetTimeConverterForSource(source)
                 .ToRawElements(source.WaveFormat, timespan);
@@ -182,10 +177,8 @@ namespace CSCore
         /// <exception cref="System.ArgumentOutOfRangeException">milliseconds is less than zero.</exception>
         public static long GetRawElements(this IAudioSource source, long milliseconds)
         {
-            if (source == null)
-                throw new ArgumentNullException(nameof(source));
-            if (milliseconds < 0)
-                throw new ArgumentOutOfRangeException(nameof(milliseconds));
+            ArgumentNullException.ThrowIfNull(source);
+            ArgumentOutOfRangeException.ThrowIfNegative(milliseconds);
 
             return GetRawElements(source, TimeSpan.FromMilliseconds(milliseconds));
         }
@@ -198,8 +191,7 @@ namespace CSCore
         /// <exception cref="System.ArgumentNullException">source</exception>
         public static void WriteToFile(this IWaveSource source, string filename)
         {
-            if (source == null)
-                throw new ArgumentNullException(nameof(source));
+            ArgumentNullException.ThrowIfNull(source);
             using (var stream = File.OpenWrite(filename))
             {
                 WriteToWaveStream(source, stream);
@@ -219,10 +211,8 @@ namespace CSCore
         /// <exception cref="System.ArgumentException">Stream is not writeable.;stream</exception>
         public static void WriteToWaveStream(this IWaveSource source, Stream stream)
         {
-            if (source == null)
-                throw new ArgumentNullException(nameof(source));
-            if (stream == null)
-                throw new ArgumentNullException(nameof(stream));
+            ArgumentNullException.ThrowIfNull(source);
+            ArgumentNullException.ThrowIfNull(stream);
             if (!stream.CanWrite)
                 throw new ArgumentException("Stream is not writeable.", nameof(stream));
 
@@ -251,10 +241,8 @@ namespace CSCore
         /// <exception cref="System.ArgumentException">Stream is not writeable.;stream</exception>
         public static void WriteToStream(this IWaveSource waveSource, Stream stream)
         {
-            if (waveSource == null)
-                throw new ArgumentNullException(nameof(waveSource));
-            if (stream == null)
-                throw new ArgumentNullException(nameof(stream));
+            ArgumentNullException.ThrowIfNull(waveSource);
+            ArgumentNullException.ThrowIfNull(stream);
             if (!stream.CanWrite)
                 throw new ArgumentException("Stream is not writeable.", nameof(stream));
 
@@ -284,11 +272,9 @@ namespace CSCore
 
         internal static byte[] ReadBytes(this IWaveSource waveSource, int count)
         {
-            if (waveSource == null)
-                throw new ArgumentNullException(nameof(waveSource));
+            ArgumentNullException.ThrowIfNull(waveSource);
             count -= (count % waveSource.WaveFormat.BlockAlign);
-            if(count <= 0)
-                throw new ArgumentOutOfRangeException(nameof(count));
+            ArgumentOutOfRangeException.ThrowIfNegativeOrZero(count);
 
             var buffer = new byte[count];
             var read = waveSource.Read(buffer, 0, buffer.Length);
@@ -411,10 +397,8 @@ namespace CSCore
         /// <returns><c>true</c> if the <paramref name="soundOut"/> got stopped; <c>false</c> if the specified <paramref name="millisecondsTimeout"/> expired.</returns>
         public static bool WaitForStopped(this ISoundOut soundOut, int millisecondsTimeout)
         {
-            if (soundOut == null)
-                throw new ArgumentNullException(nameof(soundOut));
-            if (millisecondsTimeout < -1)
-                throw new ArgumentOutOfRangeException(nameof(millisecondsTimeout));
+            ArgumentNullException.ThrowIfNull(soundOut);
+            ArgumentOutOfRangeException.ThrowIfLessThan(millisecondsTimeout, -1);
 
             if (soundOut.PlaybackState == PlaybackState.Stopped)
                 return true;

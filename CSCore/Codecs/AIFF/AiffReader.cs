@@ -52,8 +52,7 @@ namespace CSCore.Codecs.AIFF
         /// </exception>
         public AiffReader(Stream stream)
         {
-            if (stream == null)
-                throw new ArgumentNullException(nameof(stream));
+            ArgumentNullException.ThrowIfNull(stream);
             if (!stream.CanRead)
                 throw new ArgumentException("Stream is not readable.", nameof(stream));
             if (!stream.CanSeek)
@@ -122,12 +121,9 @@ namespace CSCore.Codecs.AIFF
         /// <exception cref="CSCore.Codecs.AIFF.AiffException">Unexpected error. Not supported bps.</exception>
         public int Read(byte[] buffer, int offset, int count)
         {
-            if (buffer == null)
-                throw new ArgumentNullException(nameof(buffer));
-            if (offset < 0)
-                throw new ArgumentOutOfRangeException(nameof(offset));
-            if (count < 0)
-                throw new ArgumentOutOfRangeException(nameof(count));
+            ArgumentNullException.ThrowIfNull(buffer);
+            ArgumentOutOfRangeException.ThrowIfNegative(offset);
+            ArgumentOutOfRangeException.ThrowIfNegative(count);
 
             CheckDisposed();
 
