@@ -29,7 +29,7 @@ namespace CSCore.Streams
         /// Initializes a new instance of the <see cref="PanSource"/> class.
         /// </summary>
         /// <param name="source">Underlying base source which provides audio data.</param>
-        /// <exception cref="System.ArgumentException">Source has to be stereo.</exception>
+        /// <exception cref="ArgumentException">Source has to be stereo.</exception>
         public PanSource(ISampleSource source)
             : base(source)
         {
@@ -50,7 +50,7 @@ namespace CSCore.Streams
         /// <returns>
         /// The total number of samples read into the buffer.
         /// </returns>
-        /// <exception cref="System.InvalidOperationException">Read samples has to be a multiple of two.</exception>
+        /// <exception cref="InvalidOperationException">Read samples has to be a multiple of two.</exception>
         public override int Read(float[] buffer, int offset, int count)
         {
             var read = base.Read(buffer, offset, count);

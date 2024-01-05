@@ -63,7 +63,7 @@ namespace CSCore
         /// to convert the duration in "raw elements" to a <see cref="TimeSpan"/> value.</param>
         /// <param name="elementCount">The duration in "raw elements" to convert to a <see cref="TimeSpan"/> value.</param>
         /// <returns>The duration as a <see cref="TimeSpan"/> value.</returns>
-        /// <exception cref="System.ArgumentNullException">
+        /// <exception cref="ArgumentNullException">
         /// source
         /// or
         /// elementCount
@@ -89,7 +89,7 @@ namespace CSCore
             return TimeConverterFactory.Instance.GetTimeConverterForSource(source)
                 .ToTimeSpan(source.WaveFormat, elementCount);
         }
-      
+
         /// <summary>
         /// Converts a duration in raw elements to a duration in milliseconds. For more information about "raw elements" see remarks.
         /// </summary>
@@ -97,7 +97,7 @@ namespace CSCore
         /// to convert the duration in "raw elements" to a duration in milliseconds.</param>
         /// <param name="elementCount">The duration in "raw elements" to convert to duration in milliseconds.</param>
         /// <returns>The duration in milliseconds.</returns>
-        /// <exception cref="System.ArgumentNullException">
+        /// <exception cref="ArgumentNullException">
         /// source
         /// or
         /// elementCount
@@ -173,8 +173,8 @@ namespace CSCore
         /// <para></para><para></para>
         /// Internally this method uses the <see cref="TimeConverterFactory"/> class.
         /// </remarks>
-        /// <exception cref="System.ArgumentNullException">source</exception>
-        /// <exception cref="System.ArgumentOutOfRangeException">milliseconds is less than zero.</exception>
+        /// <exception cref="ArgumentNullException">source</exception>
+        /// <exception cref="ArgumentOutOfRangeException">milliseconds is less than zero.</exception>
         public static long GetRawElements(this IAudioSource source, long milliseconds)
         {
             ArgumentNullException.ThrowIfNull(source);
@@ -188,7 +188,7 @@ namespace CSCore
         /// </summary>
         /// <param name="source">Source which provides the audio data to write to the file.</param>
         /// <param name="filename">The file to write to.</param>
-        /// <exception cref="System.ArgumentNullException">source</exception>
+        /// <exception cref="ArgumentNullException">source</exception>
         public static void WriteToFile(this IWaveSource source, string filename)
         {
             ArgumentNullException.ThrowIfNull(source);
@@ -203,12 +203,12 @@ namespace CSCore
         /// </summary>
         /// <param name="source">Source which provides the audio data to write to the <paramref name="stream" />.</param>
         /// <param name="stream"><see cref="Stream" /> to store the audio data in.</param>
-        /// <exception cref="System.ArgumentNullException">
+        /// <exception cref="ArgumentNullException">
         /// source
         /// or
         /// stream
         /// </exception>
-        /// <exception cref="System.ArgumentException">Stream is not writeable.;stream</exception>
+        /// <exception cref="ArgumentException">Stream is not writeable.;stream</exception>
         public static void WriteToWaveStream(this IWaveSource source, Stream stream)
         {
             ArgumentNullException.ThrowIfNull(source);
@@ -233,12 +233,12 @@ namespace CSCore
         /// </summary>
         /// <param name="waveSource">The waveSource which provides the audio data to write to the <paramref name="stream"/>.</param>
         /// <param name="stream">The <see cref="Stream"/> to store the audio data in.</param>
-        /// <exception cref="System.ArgumentNullException">
+        /// <exception cref="ArgumentNullException">
         /// waveSource
         /// or
         /// stream
         /// </exception>
-        /// <exception cref="System.ArgumentException">Stream is not writeable.;stream</exception>
+        /// <exception cref="ArgumentException">Stream is not writeable.;stream</exception>
         public static void WriteToStream(this IWaveSource waveSource, Stream stream)
         {
             ArgumentNullException.ThrowIfNull(waveSource);

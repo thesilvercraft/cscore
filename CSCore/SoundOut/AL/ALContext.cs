@@ -61,7 +61,7 @@ namespace CSCore.SoundOut.AL
         /// Initializes a new instance of the <see cref="ALContext"/> class.
         /// </summary>
         /// <param name="device">The device to create a context for.</param>
-        /// <exception cref="System.ArgumentNullException">device</exception>
+        /// <exception cref="ArgumentNullException">device</exception>
         /// <exception cref="ALException">Could not create ALContext.</exception>
         public ALContext(ALDevice device)
         {
@@ -93,7 +93,7 @@ namespace CSCore.SoundOut.AL
         /// Initializes a new instance of the <see cref="ALContext" /> class.
         /// </summary>
         /// <param name="contextHandle">The handle of the context.</param>
-        /// <exception cref="System.ArgumentNullException">contextHandle</exception>
+        /// <exception cref="ArgumentNullException">contextHandle</exception>
         public ALContext(IntPtr contextHandle)
         {
             if (contextHandle == IntPtr.Zero)

@@ -22,7 +22,7 @@ namespace CSCore.Codecs.AIFF
         ///     Initializes a new instance of the <see cref="FormatVersionChunk" /> class.
         /// </summary>
         /// <param name="binaryReader">The binary reader which provides can be used to decode the chunk.</param>
-        /// <exception cref="CSCore.Codecs.AIFF.AiffException">Invalid AIFF-C Version.</exception>
+        /// <exception cref="AiffException">Invalid AIFF-C Version.</exception>
         public FormatVersionChunk(BinaryReader binaryReader) : base(binaryReader, "FVER")
         {
             var version = Reader.ReadInt32();
@@ -46,7 +46,7 @@ namespace CSCore.Codecs.AIFF
         ///     Seeks to the end of the chunk.
         /// </summary>
         /// <remarks>
-        ///     Can be used to make sure that the underlying <see cref="Stream" />/<see cref="System.IO.BinaryReader" /> points to
+        ///     Can be used to make sure that the underlying <see cref="Stream" />/<see cref="BinaryReader" /> points to
         ///     the next <see cref="AiffChunk" />.
         /// </remarks>
         public override void SkipChunk()

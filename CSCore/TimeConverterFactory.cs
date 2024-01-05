@@ -71,7 +71,7 @@ namespace CSCore
         /// <typeparam name="TSource">The type of the <paramref name="source"/>.</typeparam>
         /// <returns>The best <see cref="TimeConverter"/> for the specified <paramref name="source"/>.</returns>
         /// <exception cref="ArgumentNullException">The specified <paramref name="source"/> is null.</exception>
-        /// <exception cref="System.ArgumentException">
+        /// <exception cref="ArgumentException">
         /// Specified type is no AudioSource.;type
         /// or
         /// No registered time converter for the specified source type was found.
@@ -95,7 +95,7 @@ namespace CSCore
         /// </summary>
         /// <typeparam name="TSource">The type of the source.</typeparam>
         /// <returns>The best <see cref="TimeConverter"/> for the specified source type.</returns>
-        /// <exception cref="System.ArgumentException">
+        /// <exception cref="ArgumentException">
         /// Specified type is no AudioSource.;type
         /// or
         /// No registered time converter for the specified source type was found.
@@ -118,7 +118,7 @@ namespace CSCore
         /// </summary>
         /// <param name="sourceType">The <see cref="Type"/> to get the associated <see cref="TimeConverter"/> for.</param>
         /// <returns>The best <see cref="TimeConverter"/> for the specified <paramref name="sourceType"/>.</returns>
-        /// <exception cref="System.ArgumentException">
+        /// <exception cref="ArgumentException">
         /// Specified type is no AudioSource.;type
         /// or
         /// No registered time converter for the specified source type was found.

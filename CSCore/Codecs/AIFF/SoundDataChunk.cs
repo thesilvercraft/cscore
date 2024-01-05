@@ -39,7 +39,7 @@ namespace CSCore.Codecs.AIFF
         ///     Seeks to the end of the chunk.
         /// </summary>
         /// <remarks>
-        ///     Can be used to make sure that the underlying <see cref="Stream" />/<see cref="System.IO.BinaryReader" /> points to
+        ///     Can be used to make sure that the underlying <see cref="Stream" />/<see cref="BinaryReader" /> points to
         ///     the next <see cref="AiffChunk" />.
         /// </remarks>
         public override void SkipChunk()

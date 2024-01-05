@@ -20,7 +20,7 @@ namespace CSCore.Codecs.AIFF
         ///     Initializes a new instance of the <see cref="AiffReader" /> class for the specified <paramref name="filename" />.
         /// </summary>
         /// <param name="filename">The complete file path to be decoded.</param>
-        /// <exception cref="CSCore.Codecs.AIFF.AiffException">
+        /// <exception cref="AiffException">
         ///     No COMM Chunk found.
         ///     or
         ///     No SSND Chunk found.
@@ -37,13 +37,13 @@ namespace CSCore.Codecs.AIFF
         ///     Initializes a new instance of the <see cref="AiffReader" /> class for the specified <paramref name="stream" />.
         /// </summary>
         /// <param name="stream">The stream to be decoded.</param>
-        /// <exception cref="System.ArgumentNullException">stream</exception>
-        /// <exception cref="System.ArgumentException">
+        /// <exception cref="ArgumentNullException">stream</exception>
+        /// <exception cref="ArgumentException">
         ///     Stream is not readable.;stream
         ///     or
         ///     Stream is not seekable.;stream
         /// </exception>
-        /// <exception cref="CSCore.Codecs.AIFF.AiffException">
+        /// <exception cref="AiffException">
         ///     No COMM Chunk found.
         ///     or
         ///     No SSND Chunk found.
@@ -111,14 +111,14 @@ namespace CSCore.Codecs.AIFF
         /// <returns>
         ///     The total number of elements read into the buffer.
         /// </returns>
-        /// <exception cref="System.ArgumentNullException">buffer</exception>
-        /// <exception cref="System.ArgumentOutOfRangeException">
+        /// <exception cref="ArgumentNullException">buffer</exception>
+        /// <exception cref="ArgumentOutOfRangeException">
         ///     offset
         ///     or
         ///     count
         /// </exception>
-        /// <exception cref="System.ArgumentException">The sum of offset and count is larger than the buffer length.</exception>
-        /// <exception cref="CSCore.Codecs.AIFF.AiffException">Unexpected error. Not supported bps.</exception>
+        /// <exception cref="ArgumentException">The sum of offset and count is larger than the buffer length.</exception>
+        /// <exception cref="AiffException">Unexpected error. Not supported bps.</exception>
         public int Read(byte[] buffer, int offset, int count)
         {
             ArgumentNullException.ThrowIfNull(buffer);
@@ -188,7 +188,7 @@ namespace CSCore.Codecs.AIFF
         /// <summary>
         ///     Gets or sets the current position in bytes.
         /// </summary>
-        /// <exception cref="System.ArgumentOutOfRangeException">The value is less than zero or greater than <see cref="Length" />.</exception>
+        /// <exception cref="ArgumentOutOfRangeException">The value is less than zero or greater than <see cref="Length" />.</exception>
         public long Position
         {
             get

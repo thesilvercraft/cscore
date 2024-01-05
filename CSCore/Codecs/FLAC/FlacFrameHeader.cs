@@ -68,7 +68,7 @@ namespace CSCore.Codecs.FLAC
         /// <value>
         /// The frame's starting sample number.
         /// </value>
-        /// <remarks>Only available if the <see cref="BlockingStrategy"/> is set to <see cref="FLAC.BlockingStrategy.VariableBlockSize"/>.</remarks>
+        /// <remarks>Only available if the <see cref="BlockingStrategy"/> is set to <see cref="BlockingStrategy.VariableBlockSize"/>.</remarks>
         public long SampleNumber { get; private set; }
 
         /// <summary>
@@ -77,7 +77,7 @@ namespace CSCore.Codecs.FLAC
         /// <value>
         /// The frame's number.
         /// </value>
-        /// <remarks>Only available if the <see cref="BlockingStrategy"/> is set to <see cref="FLAC.BlockingStrategy.FixedBlockSize"/>.</remarks>
+        /// <remarks>Only available if the <see cref="BlockingStrategy"/> is set to <see cref="BlockingStrategy.FixedBlockSize"/>.</remarks>
         public int FrameNumber { get; private set; }
 
         /// <summary>

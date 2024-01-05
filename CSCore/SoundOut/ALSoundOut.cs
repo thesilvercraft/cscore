@@ -49,32 +49,32 @@ namespace CSCore.SoundOut
 		{
 		}
 
-		/// <summary>
-		///     Initializes a new instance of the <see cref="ALSoundOut" /> class with a initial latency
-		///     and <see cref="ThreadPriority" /> of the playback thread.
-		/// </summary>
-		/// <param name="latency">The playback latency in milliseconds.</param>
-		/// <param name="playbackThreadPriority">The <see cref="ThreadPriority" /> of the playback thread.</param>
-		/// <exception cref="System.ArgumentOutOfRangeException">latency</exception>
-		public ALSoundOut(int latency, ThreadPriority playbackThreadPriority = ThreadPriority.AboveNormal)
+        /// <summary>
+        ///     Initializes a new instance of the <see cref="ALSoundOut" /> class with a initial latency
+        ///     and <see cref="ThreadPriority" /> of the playback thread.
+        /// </summary>
+        /// <param name="latency">The playback latency in milliseconds.</param>
+        /// <param name="playbackThreadPriority">The <see cref="ThreadPriority" /> of the playback thread.</param>
+        /// <exception cref="ArgumentOutOfRangeException">latency</exception>
+        public ALSoundOut(int latency, ThreadPriority playbackThreadPriority = ThreadPriority.AboveNormal)
 			: this(latency, playbackThreadPriority, SynchronizationContext.Current)
 		{
 		}
 
-		/// <summary>
-		///     Initializes a new instance of the <see cref="ALSoundOut" /> class based on a initial latency,
-		///     the <see cref="ThreadPriority" /> of the playback thread and the <see cref="SynchronizationContext" /> used to
-		///     raise events.
-		/// </summary>
-		/// <param name="latency">The playback latency in milliseconds.</param>
-		/// <param name="playbackThreadPriority">The <see cref="ThreadPriority" /> of the playback thread.</param>
-		/// <param name="eventSyncContext">
-		///     The <see cref="SynchronizationContext" /> which is used to raise any events like the <see cref="Stopped" />-event.
-		///     If the passed value is not null, the events will be called async through the
-		///     <see cref="SynchronizationContext.Post" /> method.
-		/// </param>
-		/// <exception cref="System.ArgumentOutOfRangeException">latency</exception>
-		public ALSoundOut(int latency, ThreadPriority playbackThreadPriority, SynchronizationContext eventSyncContext)
+        /// <summary>
+        ///     Initializes a new instance of the <see cref="ALSoundOut" /> class based on a initial latency,
+        ///     the <see cref="ThreadPriority" /> of the playback thread and the <see cref="SynchronizationContext" /> used to
+        ///     raise events.
+        /// </summary>
+        /// <param name="latency">The playback latency in milliseconds.</param>
+        /// <param name="playbackThreadPriority">The <see cref="ThreadPriority" /> of the playback thread.</param>
+        /// <param name="eventSyncContext">
+        ///     The <see cref="SynchronizationContext" /> which is used to raise any events like the <see cref="Stopped" />-event.
+        ///     If the passed value is not null, the events will be called async through the
+        ///     <see cref="SynchronizationContext.Post" /> method.
+        /// </param>
+        /// <exception cref="ArgumentOutOfRangeException">latency</exception>
+        public ALSoundOut(int latency, ThreadPriority playbackThreadPriority, SynchronizationContext eventSyncContext)
 		{
             ArgumentOutOfRangeException.ThrowIfNegativeOrZero(latency);
 
@@ -96,14 +96,14 @@ namespace CSCore.SoundOut
         /// Has ALSoundOut been called previously, if so skip setting the DLL import resolver
         /// </summary>
         private static bool ResolverIsSet = false;
-		/// <summary>
-		///     Gets or sets the <see cref="Device" /> which should be used for playback.
-		///     The <see cref="Device" /> property has to be set before initializing.
-		///     The systems default playback device is used as default
-		///     value of the <see cref="Device" /> property.
-		/// </summary>
-		/// <exception cref="System.ArgumentNullException">value is less than one</exception>
-		public ALDevice Device
+        /// <summary>
+        ///     Gets or sets the <see cref="Device" /> which should be used for playback.
+        ///     The <see cref="Device" /> property has to be set before initializing.
+        ///     The systems default playback device is used as default
+        ///     value of the <see cref="Device" /> property.
+        /// </summary>
+        /// <exception cref="ArgumentNullException">value is less than one</exception>
+        public ALDevice Device
 		{
 			get => _device ?? (ALDevice.DefaultDevice);
 			set
@@ -171,14 +171,14 @@ namespace CSCore.SoundOut
 		/// </summary>
 		public event EventHandler<PlaybackStoppedEventArgs> Stopped;
 
-		/// <summary>
-		///     Starts the playback.
-		///     Note: The <see cref="Initialize" /> method has to get called before calling <see cref="Play" />.
-		///     If the <see cref="PlaybackState" /> is <see cref="CSCore.SoundOut.PlaybackState.Paused" />, the
-		///     <see cref="Resume" />
-		///     will be called automatically.
-		/// </summary>
-		public void Play()
+        /// <summary>
+        ///     Starts the playback.
+        ///     Note: The <see cref="Initialize" /> method has to get called before calling <see cref="Play" />.
+        ///     If the <see cref="PlaybackState" /> is <see cref="PlaybackState.Paused" />, the
+        ///     <see cref="Resume" />
+        ///     will be called automatically.
+        /// </summary>
+        public void Play()
 		{
 			CheckForInvalidThreadCall();
 
@@ -279,16 +279,16 @@ namespace CSCore.SoundOut
 			}
 		}
 
-		/// <summary>
-		///     Initializes the <see cref="ALSoundOut" /> instance for playing a <paramref name="source" />.
-		/// </summary>
-		/// <param name="source"><see cref="IWaveSource" /> which provides waveform-audio data to play.</param>
-		/// <exception cref="System.ArgumentNullException">source</exception>
-		/// <exception cref="System.InvalidOperationException">
-		///     <see cref="PlaybackState" /> is not
-		///     <see cref="SoundOut.PlaybackState.Stopped" />.
-		/// </exception>
-		public void Initialize(IWaveSource source)
+        /// <summary>
+        ///     Initializes the <see cref="ALSoundOut" /> instance for playing a <paramref name="source" />.
+        /// </summary>
+        /// <param name="source"><see cref="IWaveSource" /> which provides waveform-audio data to play.</param>
+        /// <exception cref="ArgumentNullException">source</exception>
+        /// <exception cref="InvalidOperationException">
+        ///     <see cref="PlaybackState" /> is not
+        ///     <see cref="PlaybackState.Stopped" />.
+        /// </exception>
+        public void Initialize(IWaveSource source)
 		{
 			CheckForInvalidThreadCall();
 

@@ -14,7 +14,7 @@ namespace CSCore
         public Type TimeConverterType { get; private set; }
 
         /// <summary>
-        /// Gets or sets the arguments to pass to the constructor of the <see cref="TimeConverter"/>. For more information, see <see cref="Activator.CreateInstance(System.Type,object[])"/>.
+        /// Gets or sets the arguments to pass to the constructor of the <see cref="TimeConverter"/>. For more information, see <see cref="Activator.CreateInstance(Type,object[])"/>.
         /// </summary>
         public object[] Args { get; set; }
 
@@ -28,8 +28,8 @@ namespace CSCore
         /// Initializes a new instance of the <see cref="TimeConverterAttribute"/> class based on the type of the <see cref="TimeConverter"/> to use.
         /// </summary>
         /// <param name="timeConverterType">Type of the <see cref="TimeConverter"/> to use.</param>
-        /// <exception cref="System.ArgumentNullException">timeConverterType</exception>
-        /// <exception cref="System.ArgumentException">Specified type is no time converter.;timeConverterType</exception>
+        /// <exception cref="ArgumentNullException">timeConverterType</exception>
+        /// <exception cref="ArgumentException">Specified type is no time converter.;timeConverterType</exception>
         public TimeConverterAttribute(Type timeConverterType)
         {
             ArgumentNullException.ThrowIfNull(timeConverterType);

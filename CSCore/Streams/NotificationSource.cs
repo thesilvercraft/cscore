@@ -17,7 +17,7 @@ namespace CSCore.Streams
         ///     Initializes a new instance of the <see cref="NotificationSource" /> class.
         /// </summary>
         /// <param name="source">Underlying base source which provides audio data.</param>
-        /// <exception cref="System.ArgumentNullException">source is null.</exception>
+        /// <exception cref="ArgumentNullException">source is null.</exception>
         public NotificationSource(ISampleSource source)
             : base(source)
         {

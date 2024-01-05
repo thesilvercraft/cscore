@@ -47,7 +47,7 @@ namespace CSCore.Codecs.FLAC
         /// <param name="stream">The stream which contains the <see cref="FlacMetadata"/>.</param>
         public static void SkipMetadata(Stream stream)
         {
-            ReadAllMetadataFromStream(stream).ToArray();
+            _ = ReadAllMetadataFromStream(stream).ToArray();
         }
 
         /// <summary>

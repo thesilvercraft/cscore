@@ -22,8 +22,8 @@ namespace CSCore.Streams.SampleConverter
         /// Initializes a new instance of the <see cref="SampleToWaveBase"/> class.
         /// </summary>
         /// <param name="source">The underlying <see cref="ISampleSource"/> which has to get converted to a <see cref="IWaveSource"/>.</param>
-        /// <param name="bits">The <see cref="CSCore.WaveFormat.BitsPerSample"/> of the Output-<see cref="WaveFormat"/>.</param>
-        /// <param name="encoding">The <see cref="CSCore.WaveFormat.WaveFormatTag"/> of the Output-<see cref="WaveFormat"/>.</param>
+        /// <param name="bits">The <see cref="WaveFormat.BitsPerSample"/> of the Output-<see cref="WaveFormat"/>.</param>
+        /// <param name="encoding">The <see cref="WaveFormat.WaveFormatTag"/> of the Output-<see cref="WaveFormat"/>.</param>
         /// <exception cref="ArgumentNullException">The <paramref name="source"/> is null.</exception>
         /// <exception cref="ArgumentOutOfRangeException">Invalid number of bits per sample specified by the <paramref name="bits"/> argument.</exception>
         protected SampleToWaveBase(ISampleSource source, int bits, AudioEncoding encoding)

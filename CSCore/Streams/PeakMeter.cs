@@ -50,7 +50,7 @@ namespace CSCore.Streams
         /// Initializes a new instance of the <see cref="PeakMeter"/> class.
         /// </summary>
         /// <param name="source">Underlying base source which provides audio data.</param>
-        /// <exception cref="System.ArgumentNullException">source</exception>
+        /// <exception cref="ArgumentNullException">source</exception>
         public PeakMeter(ISampleSource source)
             : base(source)
         {

@@ -21,7 +21,7 @@ namespace CSCore.Streams
         /// </summary>
         /// <param name="channelPeakValues">The channel peak values.</param>
         /// <param name="peakValue">The master peak value.</param>
-        /// <exception cref="System.ArgumentException"><paramref name="channelPeakValues"/> is null or empty.</exception>
+        /// <exception cref="ArgumentException"><paramref name="channelPeakValues"/> is null or empty.</exception>
         public PeakEventArgs(float[] channelPeakValues, float peakValue)
         {
             if (channelPeakValues == null || channelPeakValues.Length == 0)

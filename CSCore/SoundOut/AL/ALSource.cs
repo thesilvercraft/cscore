@@ -44,7 +44,7 @@ namespace CSCore.SoundOut.AL
         /// Initializes a new instance of the <see cref="ALSource"/> class.
         /// </summary>
         /// <param name="context">The context used to create the <see cref="ALSource"/>.</param>
-        /// <exception cref="System.ArgumentNullException">context</exception>
+        /// <exception cref="ArgumentNullException">context</exception>
         public ALSource(ALContext context)
         {
             ArgumentNullException.ThrowIfNull(context);

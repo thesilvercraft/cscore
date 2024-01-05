@@ -15,7 +15,7 @@ namespace CSCore.Codecs.AIFF
         /// </summary>
         /// <param name="binaryReader">The binary reader which provides can be used to decode the chunk.</param>
         /// <param name="chunkId">The chunk identifier.</param>
-        /// <exception cref="System.ArgumentNullException">
+        /// <exception cref="ArgumentNullException">
         ///     binaryReader
         ///     or
         ///     chunkId

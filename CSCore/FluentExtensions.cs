@@ -84,7 +84,7 @@ namespace CSCore
 
         /// <summary>
         ///     Converts the specified wave source with n channels to a wave source with two channels.
-        ///     Note: If the <paramref name="input" /> has only one channel, the <see cref="ToStereo(CSCore.IWaveSource)" />
+        ///     Note: If the <paramref name="input" /> has only one channel, the <see cref="ToStereo(IWaveSource)" />
         ///     extension has to convert the <paramref name="input" /> to a <see cref="ISampleSource" /> and back to a
         ///     <see cref="IWaveSource" />.
         /// </summary>
@@ -119,7 +119,7 @@ namespace CSCore
         /// <summary>
         ///     Converts the specified sample source with n channels to a wave source with two channels.
         ///     Note: If the <paramref name="input" /> has more than two channels, the
-        ///     <see cref="ToStereo(CSCore.ISampleSource)" /> extension has to convert the <paramref name="input" /> to a
+        ///     <see cref="ToStereo(ISampleSource)" /> extension has to convert the <paramref name="input" /> to a
         ///     <see cref="IWaveSource" /> and back to a <see cref="ISampleSource" />.
         /// </summary>
         /// <param name="input">Already existing sample source.</param>
@@ -138,7 +138,7 @@ namespace CSCore
 
         /// <summary>
         ///     Converts the specified wave source with n channels to a wave source with one channel.
-        ///     Note: If the <paramref name="input" /> has two channels, the <see cref="ToMono(CSCore.IWaveSource)" /> extension
+        ///     Note: If the <paramref name="input" /> has two channels, the <see cref="ToMono(IWaveSource)" /> extension
         ///     has to convert the <paramref name="input" /> to a <see cref="ISampleSource" /> and back to a
         ///     <see cref="IWaveSource" />.
         /// </summary>
@@ -172,7 +172,7 @@ namespace CSCore
 
         /// <summary>
         ///     Converts the specified sample source with n channels to a wave source with one channel.
-        ///     Note: If the <paramref name="input" /> has only one channel, the <see cref="ToMono(CSCore.ISampleSource)" />
+        ///     Note: If the <paramref name="input" /> has only one channel, the <see cref="ToMono(ISampleSource)" />
         ///     extension has to convert the <paramref name="input" /> to a <see cref="IWaveSource" /> and back to a
         ///     <see cref="ISampleSource" />.
         /// </summary>

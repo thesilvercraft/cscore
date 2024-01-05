@@ -440,10 +440,6 @@ namespace CSCore.DSP
         ///     Returns a one dimensional array which contains the channel conversion matrix coefficients.
         /// </summary>
         /// <returns>A one dimensional array which contains the channel conversion matrix coefficients</returns>
-        /// <remarks>
-        ///     This method is primarily used in combination with the <see cref="WMResamplerProps.SetUserChannelMtx" />
-        ///     method.
-        /// </remarks>
         public float[] GetOneDimensionalMatrix()
         {
             var result = new List<float>();

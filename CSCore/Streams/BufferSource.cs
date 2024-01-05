@@ -21,7 +21,7 @@ namespace CSCore.Streams
         /// </summary>
         /// <param name="source">The <see cref="IWaveSource"/> to buffer.</param>
         /// <param name="bufferSize">Size of the buffer.</param>
-        /// <exception cref="System.ArgumentOutOfRangeException"><paramref name="bufferSize"/> is out of range.</exception>
+        /// <exception cref="ArgumentOutOfRangeException"><paramref name="bufferSize"/> is out of range.</exception>
         public BufferSource(IWaveSource source, int bufferSize)
             : base(source)
         {
@@ -77,7 +77,7 @@ namespace CSCore.Streams
         /// <summary>
         /// Resets/Clears the buffer.
         /// </summary>
-        /// <exception cref="System.ObjectDisposedException">BufferSource</exception>
+        /// <exception cref="ObjectDisposedException">BufferSource</exception>
         public void ResetBuffer()
         {
             ObjectDisposedException.ThrowIf(_disposing,this);
@@ -117,7 +117,7 @@ namespace CSCore.Streams
         /// <summary>
         /// Gets or sets the position of the source.
         /// </summary>
-        /// <exception cref="System.ObjectDisposedException">
+        /// <exception cref="ObjectDisposedException">
         /// BufferSource
         /// </exception>
         public override long Position
