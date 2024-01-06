@@ -11,7 +11,7 @@ namespace CSCore.Streams.SampleConverter
         /// <summary>
         /// The underlying source which provides samples.
         /// </summary>
-        protected internal ISampleSource Source;
+        public ISampleSource Source;
         /// <summary>
         /// The buffer to use for reading from the <see cref="Source"/>.
         /// </summary>
