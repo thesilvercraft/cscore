@@ -5,7 +5,6 @@ using System.Linq;
 using System.Runtime.InteropServices;
 using System.Threading;
 using CSCore.SoundOut.AL;
-using CSCore.Streams;
 
 namespace CSCore.SoundOut
 {
@@ -21,7 +20,11 @@ namespace CSCore.SoundOut
 	// ReSharper disable once InconsistentNaming
 	public class ALSoundOut : ISoundOut
 	{
-		private const int NumberOfBuffers = 4;
+		/// <summary>
+		/// Checks whether the OpenAL library can be found and loaded
+		/// </summary>
+        public static bool IsSupported => ALInteropsNativeMethods.IsSupported();
+        private const int NumberOfBuffers = 4;
 		private readonly object _lockObj = new object();
 		private readonly ThreadPriority _playbackPriority;
 		private readonly SynchronizationContext _syncContext;
