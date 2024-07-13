@@ -1,6 +1,6 @@
 ## NOTE: ##
 This license does not apply to the [CSCore.Ffmpeg](https://github.com/filoe/cscore/tree/master/CSCore.Ffmpeg) project!
-
+This license also does not apply to SilverCraft.CSCore.PortAudio and SilverCraft.CSCore.OpenMPT and SilverCraft.CSCore.SndFile
 ## Microsoft Public License (Ms-PL) ##
 
 Microsoft Public License (Ms-PL)

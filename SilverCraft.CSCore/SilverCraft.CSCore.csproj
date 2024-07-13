@@ -1,0 +1,74 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <Import Project="../SilverCraft.CSCore.targets" />
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Copyright>Florian R., SilverDiamond</Copyright>
+    <Description>.NET Sound Library modified to suit SilverAudioPlayer</Description>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.SourceLink.GitHub" Version="1.1.1" PrivateAssets="All" />
+  </ItemGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DefineConstants>TRACE;DEBUG;FLAC_DEBUG</DefineConstants>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Remove=".gitattributes" />
+    <None Remove=".gitignore" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="AudioSubTypes.cs">
+      <DependentUpon>AudioSubTypes.tt</DependentUpon>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <None Update="README.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+    <Compile Update="AudioSubTypes.Utils.cs">
+      <DependentUpon>AudioSubTypes.tt</DependentUpon>
+    </Compile>
+
+    <Compile Update="Codecs\FLAC\FlacFrame_GetBuffer.cs">
+      <DependentUpon>FlacFrame_GetBuffer.tt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+
+    <Compile Update="Codecs\FLAC\SubFrames\FlacSubFrameLPC_Calculation.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>FlacSubFrameLPC_Calculation.tt</DependentUpon>
+    </Compile>
+
+    <!-- TT Templates -->
+    <None Update="AudioSubTypes.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>AudioSubTypes.cs</LastGenOutput>
+    </None>
+
+    <None Update="Codecs\FLAC\FlacFrame_GetBuffer.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>FlacFrame_GetBuffer.cs</LastGenOutput>
+    </None>
+
+    <None Update="Codecs\FLAC\SubFrames\FlacSubFrameLPC_Calculation.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>FlacSubFrameLPC_Calculation.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Service Include="{508349b6-6b84-4df5-91f0-309beebad82d}" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Serilog" Version="3.1.1" />
+  </ItemGroup>
+</Project>
