@@ -1,5 +1,3 @@
-using System;
-
 namespace SilverCraft.CSCore
 {
     /// <summary>

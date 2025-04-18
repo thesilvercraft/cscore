@@ -7,11 +7,10 @@ namespace SilverCraft.CSCore.Streams.SampleConverter
     /// </summary>
     public abstract class WaveToSampleBase : ISampleSource
     {
-        private readonly WaveFormat _waveFormat;
         /// <summary>
         /// The underlying source which provides the raw data.
         /// </summary>
-        protected internal IWaveSource Source;
+        protected internal IWaveSource? Source;
         /// <summary>
         /// The buffer to use for reading from the <see cref="Source"/>.
         /// </summary>
@@ -27,9 +26,9 @@ namespace SilverCraft.CSCore.Streams.SampleConverter
             ArgumentNullException.ThrowIfNull(source);
 
             Source = source;
-            _waveFormat = (WaveFormat) source.WaveFormat.Clone();
-            _waveFormat.BitsPerSample = 32;
-            _waveFormat.SetWaveFormatTagInternal(AudioEncoding.IeeeFloat);
+            WaveFormat = (WaveFormat) source.WaveFormat.Clone();
+            WaveFormat.BitsPerSample = 32;
+            WaveFormat.SetWaveFormatTagInternal(AudioEncoding.IeeeFloat);
         }
 
         /// <summary>
@@ -52,7 +51,7 @@ namespace SilverCraft.CSCore.Streams.SampleConverter
         /// <summary>
         ///     Gets the <see cref="CSCore.WaveFormat" /> of the waveform-audio data.
         /// </summary>
-        public WaveFormat WaveFormat => _waveFormat;
+        public WaveFormat WaveFormat { get; }
 
         /// <summary>
         ///     Gets or sets the current position in samples.
@@ -90,6 +89,7 @@ namespace SilverCraft.CSCore.Streams.SampleConverter
         public void Dispose()
         {
             Dispose(true);
+            GC.SuppressFinalize(this);
         }
 
         /// <summary>
@@ -98,7 +98,11 @@ namespace SilverCraft.CSCore.Streams.SampleConverter
         /// <param name="disposing">Not used.</param>
         protected virtual void Dispose(bool disposing)
         {
-            if (Source == null) return;
+            if (Source == null)
+            {
+                return;
+            }
+
             Source.Dispose();
             Source = null;
         }

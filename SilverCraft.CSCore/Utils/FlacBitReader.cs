@@ -3,7 +3,7 @@
 namespace SilverCraft.CSCore.Codecs.FLAC
 {
     /// <summary>
-    /// This method is based on the CUETools.NET BitReader (see http://sourceforge.net/p/cuetoolsnet/code/ci/default/tree/CUETools.Codecs/BitReader.cs)
+    /// This method is based on the CUETools.NET BitReader (see http://sourceforge.net/p/cuetoolsnet/ , now located at https://github.com/gchudov/cuetools.net)
     /// The author "Grigory Chudov" explicitly gave the permission to use the source as part of the cscore source code which got licensed under the ms-pl.
     /// </summary>
     internal class FlacBitReader : BitReader
@@ -57,8 +57,7 @@ namespace SilverCraft.CSCore.Codecs.FLAC
 
         public bool ReadUTF8_64Signed(out long result)
         {
-            ulong r;
-            var returnValue = ReadUTF8_64(out r);
+            var returnValue = ReadUTF8_64(out var r);
             result = (long) r;
             return returnValue;
         }
@@ -129,8 +128,7 @@ namespace SilverCraft.CSCore.Codecs.FLAC
 
         public bool ReadUTF8_32Signed(out int result)
         {
-            uint r;
-            var returnValue = ReadUTF8_32(out r);
+            var returnValue = ReadUTF8_32(out var r);
             result = (int) r;
             return returnValue;
         }

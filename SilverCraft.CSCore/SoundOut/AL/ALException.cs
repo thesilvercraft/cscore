@@ -31,10 +31,7 @@ namespace SilverCraft.CSCore.SoundOut.AL
         public static void Try(string functionName, IntPtr contextHandle)
         {
             ALErrorCode errorCode;
-            if (functionName.StartsWith("alc"))
-                errorCode = ALInteropsNativeMethods.alcGetError(contextHandle);
-            else
-                errorCode = ALInteropsNativeMethods.alGetError();
+            errorCode = functionName.StartsWith("alc",System.StringComparison.InvariantCulture) ? ALInteropsNativeMethods.alcGetError(contextHandle) : ALInteropsNativeMethods.alGetError();
 
             if (errorCode != ALErrorCode.NoError)
                 throw new ALException(String.Format("{0} returned {1}.", functionName, errorCode));

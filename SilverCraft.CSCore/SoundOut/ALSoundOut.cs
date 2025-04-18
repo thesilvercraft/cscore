@@ -316,8 +316,6 @@ namespace SilverCraft.CSCore.SoundOut
 				_playingDevice = Device;
 				_context = new ALContext(_playingDevice);
 
-				source = new InterruptDisposingChainSource(source);
-
 				var numberOfBitsPerSample = FindBestBitDepth(source.WaveFormat);
 				_source = source.ToSampleSource().ToWaveSource(numberOfBitsPerSample);
 

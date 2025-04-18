@@ -47,7 +47,7 @@ namespace SilverCraft.CSCore.Streams
             get => (int) (1000.0 * ((double) BlockCount / WaveFormat.SampleRate));
             set
             {
-                var v = (int) ((((double) value * WaveFormat.SampleRate)) / 1000.0);
+                var v = (int) (((double) value * WaveFormat.SampleRate) / 1000.0);
                 v = Math.Max(1, v);
                 BlockCount = v;
             }

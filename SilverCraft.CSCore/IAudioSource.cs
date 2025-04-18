@@ -1,6 +1,4 @@
-﻿using System;
-using SilverCraft.CSCore;
-
+﻿
 namespace SilverCraft.CSCore
 {
     /// <summary>

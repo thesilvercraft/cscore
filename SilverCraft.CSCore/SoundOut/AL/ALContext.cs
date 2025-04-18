@@ -1,17 +1,12 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Threading;
-
-namespace SilverCraft.CSCore.SoundOut.AL
+﻿namespace SilverCraft.CSCore.SoundOut.AL
 {
-    // ReSharper disable once InconsistentNaming    
     /// <summary>
     /// Represents an OpenAL Context.
     /// </summary>
     public class ALContext : IDisposable
     {
         private static readonly Dictionary<ALDevice, ContextRef> ContextDictionary = [];
-        private static readonly object ContextDictionaryLockObj = new object();
+        private static readonly object ContextDictionaryLockObj = new();
 
         private readonly ALDevice _device;
 
@@ -78,7 +73,9 @@ namespace SilverCraft.CSCore.SoundOut.AL
                 {
                     Handle = ALInteropsNativeMethods.alcCreateContext(device.DeviceHandle, IntPtr.Zero);
                     if (Handle == IntPtr.Zero)
+                    {
                         throw new ALException("Could not create ALContext.", ALInteropsNativeMethods.alcGetError(device.DeviceHandle));
+                    }
 
                     ContextDictionary.Add(device, new ContextRef()
                     {
@@ -97,7 +94,9 @@ namespace SilverCraft.CSCore.SoundOut.AL
         public ALContext(IntPtr contextHandle)
         {
             if (contextHandle == IntPtr.Zero)
+            {
                 throw new ArgumentNullException(nameof(contextHandle));
+            }
 
             Handle = contextHandle;
         }
@@ -108,7 +107,11 @@ namespace SilverCraft.CSCore.SoundOut.AL
         public void MakeCurrent()
         {
             ALInteropsNativeMethods.alcGetError(_device.DeviceHandle);
-            if (ALInteropsNativeMethods.alcMakeContextCurrent(Handle)) return;
+            if (ALInteropsNativeMethods.alcMakeContextCurrent(Handle))
+            {
+                return;
+            }
+
             var error = ALInteropsNativeMethods.alcGetError(_device.DeviceHandle);
             throw new ALException("Could not set context. alcMakeContextCurrent returned " + error, error);
         }
@@ -150,22 +153,24 @@ namespace SilverCraft.CSCore.SoundOut.AL
         /// <param name="disposing"><c>true</c> to release both managed and unmanaged resources; <c>false</c> to release only unmanaged resources.</param>
         protected void Dispose(bool disposing)
         {
-            if (Handle != IntPtr.Zero)
+            if (Handle == IntPtr.Zero)
             {
-                lock (ContextDictionaryLockObj)
-                {
-                    ContextDictionary[_device].RefCount--;
-                    if (ContextDictionary[_device].RefCount <= 0)
-                    {
-                        ALException.Try(
-                            () =>
-                                ALInteropsNativeMethods.alcDestroyContext(Handle),
-                            "alcDestroyContext", _device.DeviceHandle);
-                        ContextDictionary.Remove(_device);
-                    }
+                return;
+            }
 
-                    Handle = IntPtr.Zero;
+            lock (ContextDictionaryLockObj)
+            {
+                ContextDictionary[_device].RefCount--;
+                if (ContextDictionary[_device].RefCount <= 0)
+                {
+                    ALException.Try(
+                        () =>
+                            ALInteropsNativeMethods.alcDestroyContext(Handle),
+                        "alcDestroyContext", _device.DeviceHandle);
+                    _ = ContextDictionary.Remove(_device);
                 }
+
+                Handle = IntPtr.Zero;
             }
         }
 
@@ -181,10 +186,10 @@ namespace SilverCraft.CSCore.SoundOut.AL
             static ContextLock()
             {
                 ResetContext =
-                    Environment.OSVersion.Platform != PlatformID.Win32NT &&
-                    Environment.OSVersion.Platform != PlatformID.Win32S &&
-                    Environment.OSVersion.Platform != PlatformID.Win32Windows &&
-                    Environment.OSVersion.Platform != PlatformID.WinCE;
+                    Environment.OSVersion.Platform is not PlatformID.Win32NT and
+                    not PlatformID.Win32S and
+                    not PlatformID.Win32Windows and
+                    not PlatformID.WinCE;
             }
 
             /// <summary>
@@ -198,7 +203,10 @@ namespace SilverCraft.CSCore.SoundOut.AL
                 _lockLevel++;
 
                 if(CurrentContextHandle != context.Handle)
+                {
                     context.MakeCurrent();
+                }
+
                 Context = context;
             }
 
@@ -209,7 +217,10 @@ namespace SilverCraft.CSCore.SoundOut.AL
             {
                 _lockLevel--;
                 if (_lockLevel == 0 && ResetContext)
+                {
                     ALInteropsNativeMethods.alcMakeContextCurrent(IntPtr.Zero);
+                }
+
                 Monitor.Exit(ContextLockObj);
             }
         }

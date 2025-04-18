@@ -130,6 +130,13 @@ namespace SilverCraft.CSCore.Streams
         /// </summary>
         public void Dispose()
         {
+            Dispose(true);
+            GC.SuppressFinalize(this);
+        }
+
+        public void Dispose(bool disposing)
+        {
+            
         }
     }
 }

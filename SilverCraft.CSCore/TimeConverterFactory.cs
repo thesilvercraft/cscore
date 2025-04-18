@@ -1,21 +1,14 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-
-namespace SilverCraft.CSCore
+﻿namespace SilverCraft.CSCore
 {
     /// <summary>
     /// Provides <see cref="TimeConverter"/>s for converting raw time values (e.g. bytes, samples,...) to a <see cref="TimeSpan"/> and back.
     /// </summary>
     public sealed class TimeConverterFactory
     {
-// ReSharper disable once InconsistentNaming
-        private readonly static TimeConverterFactory _instance = new TimeConverterFactory();
-
         /// <summary>
         /// Gets the default instance of the factory.
         /// </summary>
-        public static TimeConverterFactory Instance => _instance;
+        public static TimeConverterFactory Instance { get; } = new();
 
         private readonly Dictionary<Type, TimeConverter> _timeConverters;
         private readonly Dictionary<Type, CacheItem> _cache;

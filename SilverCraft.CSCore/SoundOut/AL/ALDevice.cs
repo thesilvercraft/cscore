@@ -1,7 +1,4 @@
-﻿using System;
-using System.Diagnostics;
-using System.Linq;
-// ReSharper disable InconsistentNaming
+﻿using System.Diagnostics;
 
 namespace SilverCraft.CSCore.SoundOut.AL
 {
@@ -64,7 +61,7 @@ namespace SilverCraft.CSCore.SoundOut.AL
 
                 //add new devices which were not present in _devices
                 result.AddRange(devices.Where(x => result.All(d => x.Name != d.Name)));
-                _devices = result.ToArray();
+                _devices = [.. result];
             }
 
             return _devices;
@@ -90,14 +87,12 @@ namespace SilverCraft.CSCore.SoundOut.AL
         /// <param name="disposing">The disposing state</param>
         protected void Dispose(bool disposing)
         {
-            if (_deviceHandle != IntPtr.Zero)
+            if (_deviceHandle == IntPtr.Zero) return;
+            if (!ALInteropsNativeMethods.alcCloseDevice(_deviceHandle))
             {
-                if (!ALInteropsNativeMethods.alcCloseDevice(_deviceHandle))
-                {
-                    Debug.WriteLine("Failed to close ALDevice. Check whether there are still some active Contexts or Buffers.");
-                }
-                _deviceHandle = IntPtr.Zero;
+                Debug.WriteLine("Failed to close ALDevice. Check whether there are still some active Contexts or Buffers.");
             }
+            _deviceHandle = IntPtr.Zero;
         }
     }
 }

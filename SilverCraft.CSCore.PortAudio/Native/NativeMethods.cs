@@ -1,3 +1,4 @@
+using System.Reflection;
 using System.Runtime.InteropServices;
 
 namespace SilverCraft.CSCore.PortAudio.Native;
@@ -20,142 +21,147 @@ public struct PaStreamCallbackFlags
 }
 public static unsafe partial class NativeMethods
 {
-    public const string DllName="libportaudio.so.2";
-    [DllImport(DllName, CallingConvention = CallingConvention.Cdecl, ExactSpelling = true)]
+    public const string dllName="libportaudio.so.2";
+    public static IntPtr DllImportResolver(string libraryName, Assembly assembly, DllImportSearchPath? searchPath)
+    {
+        if (libraryName != dllName) return IntPtr.Zero;
+        return OperatingSystem.IsWindows() ? NativeLibrary.Load("portaudio.dll", assembly, searchPath) : IntPtr.Zero;
+    }
+    [DllImport(dllName, CallingConvention = CallingConvention.Cdecl, ExactSpelling = true)]
     public static extern int Pa_GetVersion();
 
-    [DllImport(DllName, CallingConvention = CallingConvention.Cdecl, ExactSpelling = true)]
+    [DllImport(dllName, CallingConvention = CallingConvention.Cdecl, ExactSpelling = true)]
     [return: NativeTypeName("const char *")]
     public static extern sbyte* Pa_GetVersionText();
 
-    [DllImport(DllName, CallingConvention = CallingConvention.Cdecl, ExactSpelling = true)]
+    [DllImport(dllName, CallingConvention = CallingConvention.Cdecl, ExactSpelling = true)]
     [return: NativeTypeName("const PaVersionInfo *")]
     public static extern PaVersionInfo* Pa_GetVersionInfo();
 
-    [DllImport(DllName, CallingConvention = CallingConvention.Cdecl, ExactSpelling = true)]
+    [DllImport(dllName, CallingConvention = CallingConvention.Cdecl, ExactSpelling = true)]
     [return: NativeTypeName("const char *")]
     public static extern char* Pa_GetErrorText([NativeTypeName("PaError")] int errorCode);
 
-    [DllImport(DllName, CallingConvention = CallingConvention.Cdecl, ExactSpelling = true)]
+    [DllImport(dllName, CallingConvention = CallingConvention.Cdecl, ExactSpelling = true)]
     [return: NativeTypeName("PaError")]
     public static extern int Pa_Initialize();
 
-    [DllImport(DllName, CallingConvention = CallingConvention.Cdecl, ExactSpelling = true)]
+    [DllImport(dllName, CallingConvention = CallingConvention.Cdecl, ExactSpelling = true)]
     [return: NativeTypeName("PaError")]
     public static extern int Pa_Terminate();
 
-    [DllImport(DllName, CallingConvention = CallingConvention.Cdecl, ExactSpelling = true)]
+    [DllImport(dllName, CallingConvention = CallingConvention.Cdecl, ExactSpelling = true)]
     [return: NativeTypeName("PaHostApiIndex")]
     public static extern int Pa_GetHostApiCount();
 
-    [DllImport(DllName, CallingConvention = CallingConvention.Cdecl, ExactSpelling = true)]
+    [DllImport(dllName, CallingConvention = CallingConvention.Cdecl, ExactSpelling = true)]
     [return: NativeTypeName("PaHostApiIndex")]
     public static extern int Pa_GetDefaultHostApi();
 
-    [DllImport(DllName, CallingConvention = CallingConvention.Cdecl, ExactSpelling = true)]
+    [DllImport(dllName, CallingConvention = CallingConvention.Cdecl, ExactSpelling = true)]
     [return: NativeTypeName("const PaHostApiInfo *")]
     public static extern PaHostApiInfo* Pa_GetHostApiInfo([NativeTypeName("PaHostApiIndex")] int hostApi);
 
-    [DllImport(DllName, CallingConvention = CallingConvention.Cdecl, ExactSpelling = true)]
+    [DllImport(dllName, CallingConvention = CallingConvention.Cdecl, ExactSpelling = true)]
     [return: NativeTypeName("PaHostApiIndex")]
     public static extern int Pa_HostApiTypeIdToHostApiIndex(PaHostApiTypeId type);
 
-    [DllImport(DllName, CallingConvention = CallingConvention.Cdecl, ExactSpelling = true)]
+    [DllImport(dllName, CallingConvention = CallingConvention.Cdecl, ExactSpelling = true)]
     [return: NativeTypeName("PaDeviceIndex")]
     public static extern int Pa_HostApiDeviceIndexToDeviceIndex([NativeTypeName("PaHostApiIndex")] int hostApi, int hostApiDeviceIndex);
 
-    [DllImport(DllName, CallingConvention = CallingConvention.Cdecl, ExactSpelling = true)]
+    [DllImport(dllName, CallingConvention = CallingConvention.Cdecl, ExactSpelling = true)]
     [return: NativeTypeName("const PaHostErrorInfo *")]
     public static extern PaHostErrorInfo* Pa_GetLastHostErrorInfo();
 
-    [DllImport(DllName, CallingConvention = CallingConvention.Cdecl, ExactSpelling = true)]
+    [DllImport(dllName, CallingConvention = CallingConvention.Cdecl, ExactSpelling = true)]
     [return: NativeTypeName("PaDeviceIndex")]
     public static extern int Pa_GetDeviceCount();
 
-    [DllImport(DllName, CallingConvention = CallingConvention.Cdecl, ExactSpelling = true)]
+    [DllImport(dllName, CallingConvention = CallingConvention.Cdecl, ExactSpelling = true)]
     [return: NativeTypeName("PaDeviceIndex")]
     public static extern int Pa_GetDefaultInputDevice();
 
-    [DllImport(DllName, CallingConvention = CallingConvention.Cdecl, ExactSpelling = true)]
+    [DllImport(dllName, CallingConvention = CallingConvention.Cdecl, ExactSpelling = true)]
     [return: NativeTypeName("PaDeviceIndex")]
     public static extern int Pa_GetDefaultOutputDevice();
 
-    [DllImport(DllName, CallingConvention = CallingConvention.Cdecl, ExactSpelling = true)]
+    [DllImport(dllName, CallingConvention = CallingConvention.Cdecl, ExactSpelling = true)]
     [return: NativeTypeName("const PaDeviceInfo *")]
     public static extern PaDeviceInfo* Pa_GetDeviceInfo([NativeTypeName("PaDeviceIndex")] int device);
 
-    [DllImport(DllName, CallingConvention = CallingConvention.Cdecl, ExactSpelling = true)]
+    [DllImport(dllName, CallingConvention = CallingConvention.Cdecl, ExactSpelling = true)]
     [return: NativeTypeName("PaError")]
     public static extern int Pa_IsFormatSupported([NativeTypeName("const PaStreamParameters *")] PaStreamParameters* inputParameters, [NativeTypeName("const PaStreamParameters *")] PaStreamParameters* outputParameters, double sampleRate);
 
-    [DllImport(DllName, CallingConvention = CallingConvention.Cdecl, ExactSpelling = true)]
+    [DllImport(dllName, CallingConvention = CallingConvention.Cdecl, ExactSpelling = true)]
     [return: NativeTypeName("PaError")]
     public static extern int Pa_OpenStream([NativeTypeName("PaStream **")] PaStream** stream, [NativeTypeName("const PaStreamParameters *")] PaStreamParameters* inputParameters, [NativeTypeName("const PaStreamParameters *")] PaStreamParameters* outputParameters, double sampleRate, [NativeTypeName("unsigned long")] nuint framesPerBuffer, [NativeTypeName("PaStreamFlags")] nuint streamFlags, [NativeTypeName("PaStreamCallback *")] delegate* unmanaged[Cdecl]<void*, void*, ulong, PaStreamCallbackTimeInfo*, nuint, void*, int> streamCallback, void* userData);
 
-    [DllImport(DllName, CallingConvention = CallingConvention.Cdecl, ExactSpelling = true)]
+    [DllImport(dllName, CallingConvention = CallingConvention.Cdecl, ExactSpelling = true)]
     [return: NativeTypeName("PaError")]
     public static extern int Pa_OpenDefaultStream([NativeTypeName("PaStream **")] PaStream** stream, int numInputChannels, int numOutputChannels, [NativeTypeName("PaSampleFormat")] nuint sampleFormat, double sampleRate, [NativeTypeName("unsigned long")] nuint framesPerBuffer, [NativeTypeName("PaStreamCallback *")] StreamCallBack streamCallback, IntPtr userData);
 
-    [DllImport(DllName, CallingConvention = CallingConvention.Cdecl, ExactSpelling = true)]
+    [DllImport(dllName, CallingConvention = CallingConvention.Cdecl, ExactSpelling = true)]
     [return: NativeTypeName("PaError")]
     public static extern int Pa_CloseStream([NativeTypeName("PaStream *")] PaStream* stream);
 
-    [DllImport(DllName, CallingConvention = CallingConvention.Cdecl, ExactSpelling = true)]
+    [DllImport(dllName, CallingConvention = CallingConvention.Cdecl, ExactSpelling = true)]
     [return: NativeTypeName("PaError")]
     public static extern int Pa_SetStreamFinishedCallback([NativeTypeName("PaStream *")] void* stream, [NativeTypeName("PaStreamFinishedCallback *")] delegate* unmanaged[Cdecl]<void*, void> streamFinishedCallback);
 
-    [DllImport(DllName, CallingConvention = CallingConvention.Cdecl, ExactSpelling = true)]
+    [DllImport(dllName, CallingConvention = CallingConvention.Cdecl, ExactSpelling = true)]
     [return: NativeTypeName("PaError")]
     public static extern int Pa_StartStream([NativeTypeName("PaStream *")] void* stream);
 
-    [DllImport(DllName, CallingConvention = CallingConvention.Cdecl, ExactSpelling = true)]
+    [DllImport(dllName, CallingConvention = CallingConvention.Cdecl, ExactSpelling = true)]
     [return: NativeTypeName("PaError")]
     public static extern int Pa_StopStream([NativeTypeName("PaStream *")] void* stream);
 
-    [DllImport(DllName, CallingConvention = CallingConvention.Cdecl, ExactSpelling = true)]
+    [DllImport(dllName, CallingConvention = CallingConvention.Cdecl, ExactSpelling = true)]
     [return: NativeTypeName("PaError")]
     public static extern int Pa_AbortStream([NativeTypeName("PaStream *")] void* stream);
 
-    [DllImport(DllName, CallingConvention = CallingConvention.Cdecl, ExactSpelling = true)]
+    [DllImport(dllName, CallingConvention = CallingConvention.Cdecl, ExactSpelling = true)]
     [return: NativeTypeName("PaError")]
     public static extern int Pa_IsStreamStopped([NativeTypeName("PaStream *")] void* stream);
 
-    [DllImport(DllName, CallingConvention = CallingConvention.Cdecl, ExactSpelling = true)]
+    [DllImport(dllName, CallingConvention = CallingConvention.Cdecl, ExactSpelling = true)]
     [return: NativeTypeName("PaError")]
     public static extern int Pa_IsStreamActive([NativeTypeName("PaStream *")] void* stream);
 
-    [DllImport(DllName, CallingConvention = CallingConvention.Cdecl, ExactSpelling = true)]
+    [DllImport(dllName, CallingConvention = CallingConvention.Cdecl, ExactSpelling = true)]
     [return: NativeTypeName("const PaStreamInfo *")]
     public static extern PaStreamInfo* Pa_GetStreamInfo([NativeTypeName("PaStream *")] void* stream);
 
-    [DllImport(DllName, CallingConvention = CallingConvention.Cdecl, ExactSpelling = true)]
+    [DllImport(dllName, CallingConvention = CallingConvention.Cdecl, ExactSpelling = true)]
     [return: NativeTypeName("PaTime")]
     public static extern double Pa_GetStreamTime([NativeTypeName("PaStream *")] void* stream);
 
-    [DllImport(DllName, CallingConvention = CallingConvention.Cdecl, ExactSpelling = true)]
+    [DllImport(dllName, CallingConvention = CallingConvention.Cdecl, ExactSpelling = true)]
     public static extern double Pa_GetStreamCpuLoad([NativeTypeName("PaStream *")] void* stream);
 
-    [DllImport(DllName, CallingConvention = CallingConvention.Cdecl, ExactSpelling = true)]
+    [DllImport(dllName, CallingConvention = CallingConvention.Cdecl, ExactSpelling = true)]
     [return: NativeTypeName("PaError")]
     public static extern int Pa_ReadStream([NativeTypeName("PaStream *")] void* stream, void* buffer, [NativeTypeName("unsigned long")] nuint frames);
 
-    [DllImport(DllName, CallingConvention = CallingConvention.Cdecl, ExactSpelling = true)]
+    [DllImport(dllName, CallingConvention = CallingConvention.Cdecl, ExactSpelling = true)]
     [return: NativeTypeName("PaError")]
     public static extern int Pa_WriteStream([NativeTypeName("PaStream *")] void* stream, [NativeTypeName("const void *")] void* buffer, [NativeTypeName("unsigned long")] nuint frames);
 
-    [DllImport(DllName, CallingConvention = CallingConvention.Cdecl, ExactSpelling = true)]
+    [DllImport(dllName, CallingConvention = CallingConvention.Cdecl, ExactSpelling = true)]
     [return: NativeTypeName("long")]
     public static extern nint Pa_GetStreamReadAvailable([NativeTypeName("PaStream *")] void* stream);
 
-    [DllImport(DllName, CallingConvention = CallingConvention.Cdecl, ExactSpelling = true)]
+    [DllImport(dllName, CallingConvention = CallingConvention.Cdecl, ExactSpelling = true)]
     [return: NativeTypeName("long")]
     public static extern nint Pa_GetStreamWriteAvailable([NativeTypeName("PaStream *")] void* stream);
 
-    [DllImport(DllName, CallingConvention = CallingConvention.Cdecl, ExactSpelling = true)]
+    [DllImport(dllName, CallingConvention = CallingConvention.Cdecl, ExactSpelling = true)]
     [return: NativeTypeName("PaError")]
     public static extern int Pa_GetSampleSize([NativeTypeName("PaSampleFormat")] nuint format);
 
-    [DllImport(DllName, CallingConvention = CallingConvention.Cdecl, ExactSpelling = true)]
+    [DllImport(dllName, CallingConvention = CallingConvention.Cdecl, ExactSpelling = true)]
     public static extern void Pa_Sleep([NativeTypeName("long")] nint msec);
 
     [NativeTypeName("#define paNoDevice ((PaDeviceIndex)-1)")]

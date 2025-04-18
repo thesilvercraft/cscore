@@ -2,6 +2,7 @@
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
+using System.Globalization;
 using System.IO;
 using System.Linq;
 
@@ -35,7 +36,7 @@ namespace SilverCraft.CSCore.Tags.ID3
             return null;
         }
 
-        private static ID3v2 FromStream(Stream stream, bool readData)
+        private static ID3v2? FromStream(Stream stream, bool readData)
         {
             var id3v2 = new ID3v2(stream);
             return id3v2.ReadData(stream, readData) ? id3v2 : null;
@@ -141,7 +142,7 @@ namespace SilverCraft.CSCore.Tags.ID3
         private bool Parse2()
         {
             if (((int)_header.Flags & 0x3F) != 0)
-                throw new ID3Exception("Invalid headerflags: 0x{0}.", ((int)_header.Flags).ToString("x"));
+                throw new ID3Exception("Invalid headerflags: 0x{0}.", ((int)_header.Flags).ToString("x", CultureInfo.InvariantCulture));
 
             return true;
         }
@@ -153,7 +154,7 @@ namespace SilverCraft.CSCore.Tags.ID3
                 _extendedHeader = new ID3v2ExtendedHeader(stream, ID3Version.ID3v2_3);
             }
             if (((int)_header.Flags & 0x1F) != 0)
-                throw new ID3Exception("Invalid headerflags: 0x{0}.", ((int)_header.Flags).ToString("x"));
+                throw new ID3Exception("Invalid headerflags: 0x{0}.", ((int)_header.Flags).ToString("x", CultureInfo.InvariantCulture));
 
             return true;
         }
@@ -171,7 +172,7 @@ namespace SilverCraft.CSCore.Tags.ID3
                 if (_footer == null) throw new ID3Exception("Invalid Id3Footer.");
             }
             if (((int)_header.Flags & 0x0F) != 0)
-                throw new ID3Exception("Invalid headerflags: 0x{0}.", ((int)_header.Flags).ToString("x"));
+                throw new ID3Exception("Invalid headerflags: 0x{0}.", ((int)_header.Flags).ToString("x", CultureInfo.InvariantCulture));
 
             return true;
         }
@@ -192,8 +193,8 @@ namespace SilverCraft.CSCore.Tags.ID3
 
         private byte[] UnSyncBuffer(byte[] buffer)
         {
-            var memoryStream = new MemoryStream(buffer);
-            var ustream = new UnsyncStream(memoryStream);
+            using var memoryStream = new MemoryStream(buffer);
+            using var ustream = new UnsyncStream(memoryStream);
             var result = new byte[buffer.Length];
 
             var read = ustream.Read(result, 0, result.Length);

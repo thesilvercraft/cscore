@@ -35,6 +35,7 @@ namespace SilverCraft.CSCore.Streams.SampleConverter
         /// <returns>The total number of bytes read into the buffer.</returns>
         public override int Read(byte[] buffer, int offset, int count)
         {
+            ArgumentNullException.ThrowIfNull(buffer);
             Buffer = Buffer.CheckBuffer(count / 2);
 
             var read = Source.Read(Buffer, 0, count / 2);

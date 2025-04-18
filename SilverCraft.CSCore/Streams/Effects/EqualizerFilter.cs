@@ -28,6 +28,7 @@ namespace SilverCraft.CSCore.Streams.Effects
         public EqualizerFilter(int channels, EqualizerChannelFilter filter)
             : this()
         {
+            ArgumentNullException.ThrowIfNull(filter);
             Filters.Add(0, filter);
             for (var c = 1; c < channels; c++)
             {
@@ -62,7 +63,7 @@ namespace SilverCraft.CSCore.Streams.Effects
             set => SetGain(value);
         }
 
-        int IComparable<EqualizerFilter>.CompareTo(EqualizerFilter other)
+        int IComparable<EqualizerFilter>.CompareTo(EqualizerFilter? other)
         {
             return other == null ? 1 : AverageFrequency.CompareTo(other.AverageFrequency);
         }

@@ -48,9 +48,9 @@ namespace SilverCraft.CSCore.Codecs.FLAC
         /// </summary>
         public bool CanSeek => _scan != null;
 
-        private FlacFrame _frame;
+        private FlacFrame? _frame;
 
-        private FlacFrame Frame => _frame ?? (_frame = FlacFrame.FromStream(_stream, _streamInfo));
+        private FlacFrame? Frame => _frame ??= FlacFrame.FromStream(_stream, _streamInfo);
 
         /// <summary>
         ///     Initializes a new instance of the <see cref="FlacFile" /> class.

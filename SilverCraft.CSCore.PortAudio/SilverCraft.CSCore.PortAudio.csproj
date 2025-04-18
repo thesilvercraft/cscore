@@ -5,7 +5,14 @@
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
-    
+    <Description>portaudio support for SilverCraft.CSCore</Description>
+    <RepositoryType>git</RepositoryType>
+    <RepositoryUrl>https://github.com/thesilvercraft/cscore</RepositoryUrl>
+    <PackageProjectUrl>https://github.com/thesilvercraft/cscore/tree/master/SilverCraft.CSCore.PortAudio</PackageProjectUrl>
+    <PackageLicenseExpression>GPL-3.0-only</PackageLicenseExpression>
+    <PackageRequireLicenseAcceptance>True</PackageRequireLicenseAcceptance>
+    <IncludeSymbols>True</IncludeSymbols>
+    <SymbolPackageFormat>snupkg</SymbolPackageFormat>
   </PropertyGroup>
   <ItemGroup>
     <ProjectReference Include="..\SilverCraft.CSCore\SilverCraft.CSCore.csproj" />

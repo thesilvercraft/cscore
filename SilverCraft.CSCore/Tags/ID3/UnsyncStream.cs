@@ -1,6 +1,4 @@
-﻿using System;
-using System.IO;
-
+﻿
 namespace SilverCraft.CSCore.Tags.ID3
 {
     public class UnsyncStream : Stream

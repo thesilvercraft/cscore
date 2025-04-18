@@ -1,24 +1,17 @@
-﻿using System;
-using System.IO;
-using System.Net;
+﻿using System.Net;
 using System.Text;
 
 namespace SilverCraft.CSCore.Tags.ID3
 {
     internal static class ID3Utils
     {
-        public readonly static Encoding Iso88591 = Encoding.GetEncoding("ISO-8859-1");
+        public static readonly Encoding Iso88591 = Encoding.GetEncoding("ISO-8859-1");
         public readonly static Encoding Utf16 = new UnicodeEncoding(false, true);
         public readonly static Encoding Utf16Big = new UnicodeEncoding(true, true);
         public static readonly Encoding Utf8 = new UTF8Encoding();
 
-        public unsafe static int ReadInt32(byte[] array, int offset, bool sync, int length = 4)
+        public  static int ReadInt32(byte[] array, int offset, bool sync, int length = 4)
         {
-            /*fixed (byte* ptr = array)
-            {
-                byte* p = ptr + offset;
-                return p[0] * (1 << 21) + p[1] * (1 << 14) + p[2] * (1 << 7) + p[3];
-            }*/
             var value = 0;
 
             for (var i = offset; i < offset + length; i++)
@@ -57,26 +50,24 @@ namespace SilverCraft.CSCore.Tags.ID3
 
         public static string ReadString(byte[] buffer, int offset, int count, Encoding encoding)
         {
-            int read;
-            return ReadString(buffer, offset, count, encoding, out read);
+            return ReadString(buffer, offset, count, encoding, out _);
         }
 
         public static string ReadString(byte[] buffer, int offset, int count, Encoding encoding, out int read)
         {
-            var sizeofsymbol = (encoding == Utf16 || encoding == Utf16Big) ? 2 : 1;
-
+            var sizeOfSymbol = Utf16.Equals(encoding) || Utf16Big.Equals(encoding) ? 2 : 1;
             if (count == -1)
                 count = buffer.Length;
 
             var index = SeekPreamble(buffer, offset, count, encoding);
 
-            var length = CalculateStringLength(buffer, offset, count, sizeofsymbol);
+            var length = CalculateStringLength(buffer, offset, count, sizeOfSymbol);
             var result = encoding.GetString(buffer, offset, length);
 
             read = 0;
             read += (index - offset); //preamble
             read += length; //length of string itself
-            read += sizeofsymbol; //escape
+            read += sizeOfSymbol; //escape
 
             return result;
         }
@@ -127,15 +118,17 @@ namespace SilverCraft.CSCore.Tags.ID3
             return offset;
         }
 
-        public const string MimeURL = "-->";
+        public const string MimeUrl = "-->";
 
-        public static Stream DecodeImage(byte[] rawdata, string mimetype)
+        public static Stream? DecodeImage(byte[] rawdata, string mimetype)
         {
+            if (!Settings.DecodeImages) return null;
             Stream stream;
-            if (mimetype.Trim() == MimeURL)
+            if (mimetype.Trim() == MimeUrl && Settings.AllowExternalImages)
             {
-                var client = new WebClient();
-                var data = client.DownloadData(GetURL(rawdata, mimetype));
+                if(Settings.HttpClient is null) return null;
+               
+                var data = Task.Run(async () => (await Settings.HttpClient.GetByteArrayAsync(GetURL(rawdata, mimetype)).ConfigureAwait(false))).GetAwaiter().GetResult();
                 stream = new MemoryStream(data);
             }
             else
@@ -146,14 +139,14 @@ namespace SilverCraft.CSCore.Tags.ID3
             return stream;
         }
 
-        public static string GetURL(byte[] RawData, string MimeType)
+        public static string GetURL(byte[] rawData, string mimeType)
         {
-            if (RawData == null)
+            if (rawData == null)
                 throw new InvalidOperationException("Decode the frame first");
-            if (MimeType != MimeURL)
-                throw new InvalidOperationException("MimeType != " + MimeURL);
+            if (mimeType != MimeUrl)
+                throw new InvalidOperationException($"{nameof(mimeType)} != {MimeUrl}");
 
-            return ReadString(RawData, 0, -1, Iso88591);
+            return ReadString(rawData, 0, -1, Iso88591);
         }
     }
 }

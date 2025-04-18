@@ -482,7 +482,7 @@ namespace SilverCraft.CSCore.DSP
 
         private static ChannelMask[] GetValuesOfChannelMask(ChannelMask channelMask)
         {
-            var totalChannelMaskValues = Enum.GetValues(typeof(ChannelMask));
+            var totalChannelMaskValues = Enum.GetValues<ChannelMask>();
             var values = new List<ChannelMask>();
             for (var i = 0; i < totalChannelMaskValues.Length; i++)
             {
@@ -491,7 +491,7 @@ namespace SilverCraft.CSCore.DSP
                     values.Add((ChannelMask)totalChannelMaskValues.GetValue(i));
             }
 
-            return values.ToArray();
+            return [.. values];
         }
 
         private static class Factory

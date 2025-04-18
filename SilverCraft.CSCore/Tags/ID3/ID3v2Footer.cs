@@ -1,6 +1,4 @@
-﻿using System;
-using System.IO;
-
+﻿
 namespace SilverCraft.CSCore.Tags.ID3
 {
     public class ID3v2Footer
@@ -13,7 +11,6 @@ namespace SilverCraft.CSCore.Tags.ID3
             if (!stream.CanRead) throw new ArgumentException("stream not readable");
             if (!stream.CanSeek) throw new ArgumentException("stream not seekable");
 
-            var reader = new BinaryReader(stream);
             ID3v2Footer footer;
 
             var buffer = new byte[FooterLength];

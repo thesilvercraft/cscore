@@ -8,124 +8,48 @@ namespace SilverCraft.CSCore.Tags.ID3
     {
         private ID3v2 _id3;
 
-        public string Title
-        {
-            get
-            {
-                Frame f;
-                if ((f = _id3[FrameID.Title]) != null)
-                    return (f as TextFrame).Text;
-                return string.Empty;
-            }
-        }
+        private string TextFrameHelper(FrameID frameId) => _id3[frameId] is TextFrame x ? x.Text : string.Empty;
+        public string Title => TextFrameHelper(FrameID.Title);
 
-        public string Album
-        {
-            get
-            {
-                Frame f;
-                if ((f = _id3[FrameID.Album]) != null)
-                    return (f as TextFrame).Text;
-                return string.Empty;
-            }
-        }
+        public string Album => TextFrameHelper(FrameID.Album);
+     
 
-        public string Artist
-        {
-            get
-            {
-                Frame f;
-                if ((f = _id3[FrameID.OriginalArtist]) != null)
-                    return (f as TextFrame).Text;
-                return string.Empty;
-            }
-        }
+        public string Artist => TextFrameHelper(FrameID.OriginalArtist);
+       
 
-        public string LeadPerformers
-        {
-            get
-            {
-                Frame f;
-                if ((f = _id3[FrameID.LeadPerformers]) != null)
-                    return (f as TextFrame).Text;
-                return string.Empty;
-            }
-        }
+        public string LeadPerformers => TextFrameHelper(FrameID.LeadPerformers);
+       
 
-        public string Comments
-        {
-            get
-            {
-                Frame f;
-                if ((f = _id3[FrameID.Comments]) != null)
-                    return (f as CommentAndLyricsFrame).Text;
-                return string.Empty;
-            }
-        }
+        public string Comments => TextFrameHelper(FrameID.Comments);
+     
 
-        public Stream Image
-        {
-            get
-            {
-                Frame f;
-                if ((f = _id3[FrameID.AttachedPicutre]) != null)
-                    return (f as PictureFrame).Image;
-                return null;
-            }
-        }
+        public Stream? Image => _id3[FrameID.AttachedPicutre] is PictureFrame x ? x.Image : null;
 
-        public int? Year
-        {
-            get
-            {
-                Frame f;
-                int result;
-                if ((f = _id3[FrameID.Year]) != null &&
-                     int.TryParse((f as NumericTextFrame).Text, out result))
-                    return result;
-                return null;
-            }
-        }
+        private static int? TryParseIntOrNull(string text) => int.TryParse(text, out var result) ? result : null;
+        private int? NumericTextFrameHelper(FrameID frameId) => _id3[frameId] is NumericTextFrame n ? TryParseIntOrNull(n.Text) : null;
+        
+        public int? Year => NumericTextFrameHelper(FrameID.Year);
 
         //Thanks to AliveDevil
-        public int? TrackNumber
-        {
-            get
-            {
-                Frame f;
-                int result;
-                if ((f = _id3[FrameID.TrackNumber]) != null &&
-                     int.TryParse((f as MultiStringTextFrame).Text, out result))
-                    return result;
-                return null;
-            }
-        }
+        public int? TrackNumber=> _id3[FrameID.TrackNumber] is MultiStringTextFrame n ? TryParseIntOrNull(n.Text) : null;
+     
 
-        public int? OriginalReleaseYear
-        {
-            get
-            {
-                Frame f;
-                if ((f = _id3[FrameID.OriginalReleaseYear]) != null)
-                    return int.Parse((f as NumericTextFrame).Text);
-                return null;
-            }
-        }
+        public int? OriginalReleaseYear=>NumericTextFrameHelper(FrameID.OriginalReleaseYear);
+       
 
         public ID3Genre? Genre
         {
             get
             {
-                var f = _id3[FrameID.ContentType] as MultiStringTextFrame;
-                if (f == null)
+                if (_id3[FrameID.ContentType] is not MultiStringTextFrame f)
                     return null;
 
                 var str = f.Text;
-                if (string.IsNullOrEmpty(str) || !str.StartsWith("(") || str.Length < 3)
+                if (string.IsNullOrEmpty(str) || !str.StartsWith('(') || str.Length < 3)
                 {
                     try
                     {
-                        return (ID3Genre)Enum.Parse(typeof(ID3Genre), str);
+                        return Enum.Parse<ID3Genre>(str);
                     }
                     catch (Exception)
                     {
@@ -143,8 +67,7 @@ namespace SilverCraft.CSCore.Tags.ID3
                         sr += c;
                 } while (i < str.Length && char.IsNumber(c));
 
-                var res = 0;
-                if (int.TryParse(sr, out res))
+                if (int.TryParse(sr, out var res))
                 {
                     return (ID3Genre)res;
                 }

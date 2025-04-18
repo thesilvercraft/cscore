@@ -1,6 +1,4 @@
-﻿using System;
-using System.IO;
-
+﻿
 namespace SilverCraft.CSCore.Utils.Buffer
 {
     /// <summary>

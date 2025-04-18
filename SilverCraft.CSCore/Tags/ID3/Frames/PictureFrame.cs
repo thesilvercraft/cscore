@@ -14,19 +14,16 @@ namespace SilverCraft.CSCore.Tags.ID3.Frames
 
         internal byte[] RawData { get; private set; }
 
-        private Stream _image;
+        private Stream? _image;
 
         /// <summary>
         /// WARNING: If MimeType equals "-->" the picture will be downloaded from the web.
         /// Use GetURL() the get the url to the picture. If not, data, contained by the frame will
         /// be used.
         /// </summary>
-        public Stream Image => _image ?? (_image = DecodeImage());
+        public Stream? Image => _image ??= DecodeImage();
 
-        private Stream DecodeImage()
-        {
-            return ID3Utils.DecodeImage(RawData, MimeType);
-        }
+        private Stream? DecodeImage() => Settings.DecodeImages ? ID3Utils.DecodeImage(RawData, MimeType) : null;
 
         private ID3Version _version;
 

@@ -15,7 +15,7 @@ internal sealed class NativeTypeNameAttribute : Attribute
 }
 public static unsafe partial class Methods
 {
-    public const string dllName = "libsndfile";
+    public const string dllName = "libsndfile.so.1";
 
     public static IntPtr DllImportResolver(string libraryName, Assembly assembly, DllImportSearchPath? searchPath)
     {

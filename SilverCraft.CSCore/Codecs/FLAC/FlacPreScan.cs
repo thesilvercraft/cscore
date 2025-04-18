@@ -105,7 +105,7 @@ namespace SilverCraft.CSCore.Codecs.FLAC
                 IsFirstFrame = true
             };
 
-            FlacFrameHeader baseHeader = null;
+            FlacFrameHeader? baseHeader = null;
 
             while (true)
             {

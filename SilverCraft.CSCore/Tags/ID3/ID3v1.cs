@@ -1,6 +1,4 @@
-﻿using System;
-using System.IO;
-
+﻿
 namespace SilverCraft.CSCore.Tags.ID3
 {
     //http://id3.org/ID3v1

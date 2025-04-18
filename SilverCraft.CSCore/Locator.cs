@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-
-namespace SilverCraft.CSCore
+﻿namespace SilverCraft.CSCore
 {
     public sealed class Locator
     {

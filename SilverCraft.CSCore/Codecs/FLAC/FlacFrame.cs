@@ -66,7 +66,7 @@ namespace SilverCraft.CSCore.Codecs.FLAC
             //return frame.HasError ? null : frame;
         }
 
-        private FlacFrame(Stream stream, FlacMetadataStreamInfo streamInfo = null)
+        private FlacFrame(Stream stream, FlacMetadataStreamInfo? streamInfo = null)
         {
             ArgumentNullException.ThrowIfNull(stream);
             if (stream.CanRead == false) 
@@ -115,11 +115,11 @@ namespace SilverCraft.CSCore.Codecs.FLAC
 
             fixed (byte* ptrBuffer = buffer)
             {
-                var reader = new FlacBitReader(ptrBuffer, 0);
+                using var reader = new FlacBitReader(ptrBuffer, 0);
                 for (var c = 0; c < Header.Channels; c++)
                 {
                     var bitsPerSample = Header.BitsPerSample;
-                    if (Header.ChannelAssignment == ChannelAssignment.MidSide || Header.ChannelAssignment == ChannelAssignment.LeftSide)
+                    if (Header.ChannelAssignment is ChannelAssignment.MidSide or ChannelAssignment.LeftSide)
                         bitsPerSample += c;
                     else if (Header.ChannelAssignment == ChannelAssignment.RightSide)
                         bitsPerSample += 1 - c;
@@ -144,31 +144,40 @@ namespace SilverCraft.CSCore.Codecs.FLAC
 
         private unsafe void MapToChannels(List<FlacSubFrameData> subFrames)
         {
-            if (Header.ChannelAssignment == ChannelAssignment.LeftSide)
+            switch (Header.ChannelAssignment)
             {
-                for (var i = 0; i < Header.BlockSize; i++)
+                case ChannelAssignment.LeftSide:
                 {
-                    subFrames[1].DestinationBuffer[i] = subFrames[0].DestinationBuffer[i] - subFrames[1].DestinationBuffer[i];
-                }
-            }
-            else if (Header.ChannelAssignment == ChannelAssignment.RightSide)
-            {
-                for (var i = 0; i < Header.BlockSize; i++)
-                {
-                    subFrames[0].DestinationBuffer[i] += subFrames[1].DestinationBuffer[i];
-                }
-            }
-            else if (Header.ChannelAssignment == ChannelAssignment.MidSide)
-            {
-                for (var i = 0; i < Header.BlockSize; i++)
-                {
-                    var mid = subFrames[0].DestinationBuffer[i] << 1;
-                    var side = subFrames[1].DestinationBuffer[i];
+                    for (var i = 0; i < Header.BlockSize; i++)
+                    {
+                        subFrames[1].DestinationBuffer[i] = subFrames[0].DestinationBuffer[i] - subFrames[1].DestinationBuffer[i];
+                    }
 
-                    mid |= (side & 1);
+                    break;
+                }
+                case ChannelAssignment.RightSide:
+                {
+                    for (var i = 0; i < Header.BlockSize; i++)
+                    {
+                        subFrames[0].DestinationBuffer[i] += subFrames[1].DestinationBuffer[i];
+                    }
 
-                    subFrames[0].DestinationBuffer[i] = (mid + side) >> 1;
-                    subFrames[1].DestinationBuffer[i] = (mid - side) >> 1;
+                    break;
+                }
+                case ChannelAssignment.MidSide:
+                {
+                    for (var i = 0; i < Header.BlockSize; i++)
+                    {
+                        var mid = subFrames[0].DestinationBuffer[i] << 1;
+                        var side = subFrames[1].DestinationBuffer[i];
+
+                        mid |= (side & 1);
+
+                        subFrames[0].DestinationBuffer[i] = (mid + side) >> 1;
+                        subFrames[1].DestinationBuffer[i] = (mid - side) >> 1;
+                    }
+
+                    break;
                 }
             }
         }

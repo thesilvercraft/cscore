@@ -7,7 +7,7 @@ namespace SilverCraft.CSCore
     /// </summary>
     public class StoppedEventArgs : EventArgs
     {
-        private readonly Exception _exception;
+        private readonly Exception? _exception;
 
 
         /// <summary>
@@ -37,6 +37,6 @@ namespace SilverCraft.CSCore
         ///     Gets the associated <see cref="Exception" /> which caused the operation to stop.
         /// </summary>
         /// <value>Can be null.</value>
-        public virtual Exception Exception => _exception;
+        public virtual Exception? Exception => _exception;
     }
 }

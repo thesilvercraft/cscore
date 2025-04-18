@@ -13,7 +13,6 @@ namespace SilverCraft.CSCore.Tags.ID3
             if (!stream.CanRead) throw new ArgumentException("stream not readable");
             if (!stream.CanSeek) throw new ArgumentException("stream not seekable");
 
-            var reader = new BinaryReader(stream);
             ID3v2Header header;
 
             var buffer = new byte[HeaderLength];

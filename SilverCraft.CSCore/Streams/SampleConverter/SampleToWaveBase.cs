@@ -7,7 +7,6 @@ namespace SilverCraft.CSCore.Streams.SampleConverter
     /// </summary>
     public abstract class SampleToWaveBase : IWaveSource
     {
-        private readonly WaveFormat _waveFormat;
         /// <summary>
         /// The underlying source which provides samples.
         /// </summary>
@@ -31,9 +30,9 @@ namespace SilverCraft.CSCore.Streams.SampleConverter
             ArgumentNullException.ThrowIfNull(source);
             ArgumentOutOfRangeException.ThrowIfLessThan(bits, 1);
 
-            _waveFormat = (WaveFormat) source.WaveFormat.Clone();
-            _waveFormat.BitsPerSample = bits;
-            _waveFormat.SetWaveFormatTagInternal(encoding);
+            WaveFormat = (WaveFormat) source.WaveFormat.Clone();
+            WaveFormat.BitsPerSample = bits;
+            WaveFormat.SetWaveFormatTagInternal(encoding);
 
             Source = source;
             _ratio = 32.0 / bits;
@@ -59,7 +58,7 @@ namespace SilverCraft.CSCore.Streams.SampleConverter
         /// <summary>
         ///     Gets the <see cref="CSCore.WaveFormat"/> of the output waveform-audio data.
         /// </summary>
-        public WaveFormat WaveFormat => _waveFormat;
+        public WaveFormat WaveFormat { get; }
 
         /// <summary>
         ///     Gets or sets the current position.
@@ -95,7 +94,7 @@ namespace SilverCraft.CSCore.Streams.SampleConverter
         {
             //long result = (long)(position * _ratio);
             var result = (long)(position * _ratio);
-            result -= (result % _waveFormat.BlockAlign);
+            result -= (result % WaveFormat.BlockAlign);
             return result;
         }
 
@@ -114,13 +113,8 @@ namespace SilverCraft.CSCore.Streams.SampleConverter
         /// </summary>
         public void Dispose()
         {
-            if (!_disposed)
-            {
-                _disposed = true;
-
-                Dispose(true);
-                GC.SuppressFinalize(this);
-            }
+            Dispose(true);
+            GC.SuppressFinalize(this);
         }
 
         /// <summary>
@@ -129,6 +123,8 @@ namespace SilverCraft.CSCore.Streams.SampleConverter
         /// <param name="disposing">Not used.</param>
         protected virtual void Dispose(bool disposing)
         {
+            if (_disposed) return;
+            _disposed = true;
             Source.Dispose();
             Buffer = null;
         }

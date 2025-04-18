@@ -1,7 +1,4 @@
-﻿using System;
-using SilverCraft.CSCore;
-
-namespace SilverCraft.CSCore
+﻿namespace SilverCraft.CSCore
 {
     /// <summary>
     ///     Base class for all wave aggregators.

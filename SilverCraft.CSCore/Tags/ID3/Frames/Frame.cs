@@ -5,14 +5,12 @@ namespace SilverCraft.CSCore.Tags.ID3.Frames
 {
     public abstract class Frame
     {
-        public static Frame FromStream(Stream stream, ID3v2 tag)
+        public static Frame? FromStream(Stream stream, ID3v2 tag)
         {
-            var result = false;
             var header = new FrameHeader(stream, tag.Header.Version);
             var streamPosition = stream.Position + header.FrameSize;
-            var frame = FrameFactory.Instance.TryGetFrame(header, tag.Header.Version, stream, out result);
+            var frame = FrameFactory.Instance.TryGetFrame(header, tag.Header.Version, stream, out _);
             stream.Position = streamPosition;
-
             return frame;
         }
 

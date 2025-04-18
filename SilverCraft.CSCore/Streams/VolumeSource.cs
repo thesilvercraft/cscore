@@ -56,9 +56,8 @@ namespace SilverCraft.CSCore.Streams
         public override int Read(float[] buffer, int offset, int count)
         {
             var read = base.Read(buffer, offset, count);
-
-           var volume = Volume;
-            if (volume is 0f or > -Epsilon and < Epsilon)
+            var volume = Volume;
+            if (volume is 0f or (> -Epsilon and < Epsilon))
             {
                 Array.Clear(buffer, offset, read);
             }

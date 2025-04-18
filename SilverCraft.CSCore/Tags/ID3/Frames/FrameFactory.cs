@@ -35,7 +35,7 @@ namespace SilverCraft.CSCore.Tags.ID3.Frames
             }
         }
 
-        private Frame GetFrame(string id, ID3Version version, FrameHeader header)
+        private static Frame GetFrame(string id, ID3Version version, FrameHeader header)
         {
             var frameID = FrameIDFactory.GetFrameEntry(id, version).ID;
             switch (frameID)

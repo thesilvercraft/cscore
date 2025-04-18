@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace SilverCraft.CSCore
+﻿namespace SilverCraft.CSCore
 {
     /// <summary>
     ///     Base class for most of the sample sources.

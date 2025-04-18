@@ -106,26 +106,7 @@ namespace SilverCraft.CSCore.Codecs.FLAC
         /// </value>
         public long StreamPosition { get; private set; }
 
-        private ILogger? _logger;
-
-        /// <summary>
-        /// Initializes a new instance of the <see cref="FlacFrameHeader"/> class.
-        /// </summary>
-        /// <param name="stream">The underlying stream which contains the <see cref="FlacFrameHeader"/>.</param>
-        public FlacFrameHeader(Stream stream)
-            : this(stream, null, true)
-        {
-        }
-
-        /// <summary>
-        /// Initializes a new instance of the <see cref="FlacFrameHeader"/> class.
-        /// </summary>
-        /// <param name="stream">The underlying stream which contains the <see cref="FlacFrameHeader"/>.</param>
-        /// <param name="streamInfo">The stream-info-metadata-block of the flac stream which provides some basic information about the flac framestream. Can be set to null.</param>
-        public FlacFrameHeader(Stream stream, FlacMetadataStreamInfo streamInfo)
-            : this(stream, streamInfo, true)
-        {
-        }
+        private readonly ILogger? _logger;
 
         /// <summary>
         /// Initializes a new instance of the <see cref="FlacFrameHeader"/> class.
@@ -133,7 +114,7 @@ namespace SilverCraft.CSCore.Codecs.FLAC
         /// <param name="stream">The underlying stream which contains the <see cref="FlacFrameHeader"/>.</param>
         /// <param name="streamInfo">The stream-info-metadata-block of the flac stream which provides some basic information about the flac framestream. Can be set to null.</param>
         /// <param name="doCrc">A value which indicates whether the crc8 checksum of the <see cref="FlacFrameHeader"/> should be calculated.</param>
-        public FlacFrameHeader(Stream stream, FlacMetadataStreamInfo streamInfo, bool doCrc)
+        public FlacFrameHeader(Stream stream, FlacMetadataStreamInfo? streamInfo = null, bool doCrc = true)
         {
             ArgumentNullException.ThrowIfNull(stream);
             if (stream.CanRead == false) throw new ArgumentException("stream is not readable");

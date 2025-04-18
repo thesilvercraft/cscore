@@ -1,5 +1,4 @@
-﻿using System;
-using System.Diagnostics;
+﻿using System.Diagnostics;
 using System.Runtime.InteropServices;
 using System.Text;
 
@@ -198,7 +197,7 @@ namespace SilverCraft.CSCore
         /// </summary>
         /// <param name="other">The <see cref="WaveFormat"/> to compare with this <see cref="WaveFormat"/>.</param>
         /// <returns>true if the current object is equal to the other parameter; otherwise, false.</returns>
-        public virtual bool Equals(WaveFormat other)
+        public virtual bool Equals(WaveFormat? other)
         {
             return other != null && Channels == other.Channels &&
                    SampleRate == other.SampleRate &&

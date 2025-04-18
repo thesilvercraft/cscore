@@ -23,7 +23,7 @@ public static unsafe partial class NativeMethods
         if (libraryName != LibraryName) return IntPtr.Zero;
         return OperatingSystem.IsWindows() ? NativeLibrary.Load("libopenmpt.dll", assembly, searchPath) : IntPtr.Zero;
     }
-    public const string LibraryName = "libopenmpt.so";
+    public const string LibraryName = "libopenmpt.so.0";
     [DllImport(LibraryName, CallingConvention = CallingConvention.Cdecl, ExactSpelling = true)]
     [return: NativeTypeName("uint32_t")]
     public static extern uint openmpt_get_library_version();

@@ -10,10 +10,10 @@ namespace SilverCraft.CSCore.SoundOut.AL
     internal static class ALInteropsNativeMethods 
     {
       
-        private const string libLocation = "libopenal";
+        private const string libLocation = "libopenal.so.1";
         public static IntPtr DllImportResolver(string libraryName, Assembly assembly, DllImportSearchPath? searchPath)
         {
-            if (libraryName != "libopenal") return IntPtr.Zero;
+            if (libraryName != libLocation) return IntPtr.Zero;
             return OperatingSystem.IsWindows() ? NativeLibrary.Load("openal32.dll", assembly, searchPath) : IntPtr.Zero;
         }
 

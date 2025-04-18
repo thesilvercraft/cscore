@@ -12,7 +12,7 @@ namespace SilverCraft.CSCore.Utils
         /// <summary>
         ///     A complex number with a total length of zero.
         /// </summary>
-        public static readonly Complex Zero = new Complex(0, 0);
+        public static readonly Complex Zero = new(0, 0);
 
         /// <summary>
         ///     Imaginary component of the complex number.
@@ -115,9 +115,9 @@ namespace SilverCraft.CSCore.Utils
         /// <returns>
         ///   <c>true</c> if the specified <see cref="System.Object" /> is equal to this instance; otherwise, <c>false</c>.
         /// </returns>
-        public override bool Equals(object obj)
+        public override bool Equals(object? obj)
         {
-            if (ReferenceEquals(null, obj))
+            if (obj is null)
                 return false;
             return obj is Complex complex && Equals(complex);
         }

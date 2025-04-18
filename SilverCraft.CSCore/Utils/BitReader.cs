@@ -4,7 +4,7 @@ using System.Runtime.InteropServices;
 namespace SilverCraft.CSCore.Utils
 {
     /// <summary>
-    /// This class is based on the CUETools.NET BitReader (see http://sourceforge.net/p/cuetoolsnet/code/ci/default/tree/CUETools.Codecs/BitReader.cs)
+    /// This class is based on the CUETools.NET BitReader (see http://sourceforge.net/p/cuetoolsnet/code/ci/default/tree/CUETools.Codecs/BitReader.cs, now located at https://github.com/gchudov/cuetools.net/blob/master/CUETools.Codecs/BitReader.cs)
     /// The author "Grigory Chudov" explicitly gave the permission to use the source as part of the cscore source code which got licensed under the ms-pl.
     /// </summary>
     internal unsafe class BitReader : IDisposable

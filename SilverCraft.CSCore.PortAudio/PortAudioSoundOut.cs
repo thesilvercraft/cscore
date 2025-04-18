@@ -21,8 +21,11 @@ public sealed class CallbackHelper
 //https://www.portaudio.com/docs/v19-doxydocs/writing_a_callback.html
 public class PortAudioSoundOut : ISoundOut
 {
+    static PortAudioSoundOut()
+    {
+        NativeLibrary.SetDllImportResolver(typeof(NativeMethods).Assembly, NativeMethods.DllImportResolver);
+    }
     public float Volume { get; set; } = 1;
-
     public IWaveSource? WaveSource { get; set; }
     ISampleSource? SampleSource { get; set; }
     public PlaybackState PlaybackState { get; set; } = PlaybackState.Stopped;

@@ -19,13 +19,13 @@ namespace SilverCraft.CSCore.Tags.ID3.Frames
                 ID3Version.ID3v1 => throw new ArgumentException("version"),
                 ID3Version.ID3v2_2 => Frames
                     .First(x => !string.IsNullOrEmpty(x.ID3v2ID) &&
-                                x.ID3v2ID.Equals(id, StringComparison.InvariantCultureIgnoreCase)),
+                                x.ID3v2ID.Equals(id, StringComparison.OrdinalIgnoreCase)),
                 ID3Version.ID3v2_3 => Frames
                     .First(x => !string.IsNullOrEmpty(x.ID3v3ID) &&
-                                x.ID3v3ID.Equals(id, StringComparison.InvariantCultureIgnoreCase)),
+                                x.ID3v3ID.Equals(id, StringComparison.OrdinalIgnoreCase)),
                 ID3Version.ID3v2_4 => Frames
                     .First(x => !string.IsNullOrEmpty(x.ID3v4ID) &&
-                                x.ID3v4ID.Equals(id, StringComparison.InvariantCultureIgnoreCase)),
+                                x.ID3v4ID.Equals(id, StringComparison.OrdinalIgnoreCase)),
                 _ => throw new ArgumentException("Unknown version")
             };
         }
@@ -1022,25 +1022,18 @@ namespace SilverCraft.CSCore.Tags.ID3.Frames
         internal static string GetID(FrameID id, ID3Version version)
         {
             var entry = Frames.Where((x) => x.ID == id);
-            if (entry != null && entry.Count() > 0)
+            var id3V2FrameEntries = entry.ToList();
+            if (id3V2FrameEntries.Count == 0) throw new ArgumentException("Invalid FrameID: " + id.ToString());
+            var e = id3V2FrameEntries.First();
+            var sid = version switch
             {
-                var e = entry.First();
-                string sid = null;
-                if (version == ID3Version.ID3v2_2)
-                    sid = e.ID3v2ID;
-                else if (version == ID3Version.ID3v2_3)
-                    sid = e.ID3v3ID;
-                else if (version == ID3Version.ID3v2_4)
-                    sid = e.ID3v4ID;
-                else
-                    throw new InvalidOperationException(string.Format("FrameID {0} is not supported on version {1}", id, version));
-
-                if (sid == null)
-                    throw new InvalidOperationException(string.Format("FrameID {0} is not supported on version {1}", id, version));
-                return sid;
-            }
-
-            throw new ArgumentException("Invalid FrameID: " + id.ToString());
+                ID3Version.ID3v2_2 => e.ID3v2ID,
+                ID3Version.ID3v2_3 => e.ID3v3ID,
+                ID3Version.ID3v2_4 => e.ID3v4ID,
+                _ => throw new InvalidOperationException(string.Format("FrameID {0} is not supported on version {1}",
+                    id, version))
+            };
+            return sid;
         }
     }
 }
