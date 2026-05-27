@@ -7,5 +7,5 @@ A short list of differences between this project and the original cscore:
 - Linux support (OpenAL, PortAudio as addon)  
 - Removed windows support (no directx decoding for MP3s, no mediafoundation apis,...)  
 - Removed FFMpeg support  
-- (Will be) Packaged on nuget   
+- Packaged on nuget   
 - Optional sndfile and openmpt wrappers
