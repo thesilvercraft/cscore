@@ -183,24 +183,23 @@ namespace SilverCraft.CSCore.Codecs.FLAC
                 val = headerBuffer[2] >> 4;
                 var blocksize = -1;
 
-                if (val == 0)
+                switch (val)
                 {
-                     _logger?.Debug("Invalid Blocksize value: 0");
-                    return false;
-                }
-
-                if (val == 1)
-                    blocksize = 192;
-                else if (val is >= 2 and <= 5)
-                    blocksize = 576 << (val - 2);
-                else if (val is 6 or 7)
-                    _blocksizeHint = val;
-                else if (val is >= 8 and <= 15)
-                    blocksize = 256 << (val - 8);
-                else
-                {
-                     _logger?.Debug("Invalid Blocksize value: " + val);
-                    return false;
+                    case 0:
+                        _logger?.Debug("Invalid Blocksize value: 0");
+                        return false;
+                    case 1:
+                        blocksize = 192;
+                        break;
+                    case >= 2 and <= 5:
+                        blocksize = 576 << (val - 2);
+                        break;
+                    case 6 or 7:
+                        _blocksizeHint = val;
+                        break;
+                    default: //8-15 
+                        blocksize = 256 << (val - 8);
+                        break;
                 }
 
                 BlockSize = blocksize;
@@ -228,7 +227,7 @@ namespace SilverCraft.CSCore.Codecs.FLAC
                         _sampleRateHint = val;
                         break;
                     default:
-                        _logger?.Debug("Invalid SampleRate value: " + val);
+                        _logger?.Debug("Invalid SampleRate value: {Value}", val);
                         return false;
                 }
 

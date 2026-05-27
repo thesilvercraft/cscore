@@ -86,8 +86,7 @@ namespace SilverCraft.CSCore.Codecs.RAW
 
         private void CheckForDisposed()
         {
-            if (_disposed)
-                throw new ObjectDisposedException(GetType().FullName);
+            ObjectDisposedException.ThrowIf(_disposed, this);
         }
 
         /// <summary>

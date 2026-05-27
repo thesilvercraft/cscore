@@ -74,8 +74,7 @@ namespace SilverCraft.CSCore.Codecs.FLAC
 
 #if FLAC_DEBUG
             watch.Stop();
-            Debug.WriteLine(string.Format("FlacPreScan finished: {0} Bytes processed in {1} ms.",
-                _stream.Length, watch.ElapsedMilliseconds));
+            Debug.WriteLine("FlacPreScan finished: {0} Bytes processed in {1} ms.", _stream.Length, watch.ElapsedMilliseconds);
 #endif
             RaiseScanFinished(result);
             return result;

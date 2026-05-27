@@ -13,7 +13,7 @@ namespace SilverCraft.CSCore.Utils
         private int _bitoffset;
         private byte* _buffer;
         private uint _cache;
-        private GCHandle _hBuffer;
+        private GCHandle? _hBuffer;
         private int _position;
 
         public BitReader(byte[] buffer, int offset)
@@ -23,7 +23,10 @@ namespace SilverCraft.CSCore.Utils
             ArgumentOutOfRangeException.ThrowIfNegative(offset);
 
             _hBuffer = GCHandle.Alloc(buffer, GCHandleType.Pinned);
-            _buffer = _storedBuffer = (byte*) _hBuffer.AddrOfPinnedObject().ToPointer() + offset;
+            if (_hBuffer is {} hb)
+            {
+                _buffer = _storedBuffer = (byte*) hb.AddrOfPinnedObject().ToPointer() + offset;
+            }
 
             _cache = PeekCache();
         }
@@ -113,7 +116,7 @@ namespace SilverCraft.CSCore.Utils
 
         public int ReadBitsSigned(int bits)
         {
-            if (bits <= 0 || bits > 32)
+            if (bits is <= 0 or > 32)
                 throw new ArgumentOutOfRangeException(nameof(bits), "bits has to be a value between 1 and 32");
 
             var result = (int) ReadBits(bits);
@@ -124,7 +127,7 @@ namespace SilverCraft.CSCore.Utils
 
         public ulong ReadBits64(int bits)
         {
-            if (bits <= 0 || bits > 64)
+            if (bits is <= 0 or > 64)
                 throw new ArgumentOutOfRangeException(nameof(bits), "bits has to be a value between 1 and 64");
 
             ulong result = ReadBits(Math.Min(24, bits));
@@ -142,7 +145,7 @@ namespace SilverCraft.CSCore.Utils
 
         public long ReadBits64Signed(int bits)
         {
-            if (bits <= 0 || bits > 64)
+            if (bits is <= 0 or > 64)
                 throw new ArgumentOutOfRangeException(nameof(bits), "bits has to be a value between 1 and 64");
 
             var result = (long) ReadBits64(bits);
@@ -202,8 +205,7 @@ namespace SilverCraft.CSCore.Utils
 
         protected virtual void Dispose(bool disposing)
         {
-            if (_hBuffer.IsAllocated)
-                _hBuffer.Free();
+            if (_hBuffer is { IsAllocated: true } hb) hb.Free();
         }
 
         ~BitReader()

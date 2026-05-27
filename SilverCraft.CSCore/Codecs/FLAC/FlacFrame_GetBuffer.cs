@@ -1,17 +1,29 @@
 ﻿using System;
+using System.Buffers;
 
 namespace SilverCraft.CSCore.Codecs.FLAC
 {
     public partial class FlacFrame
     {
-		private unsafe int GetBufferInternal(ref byte[] buffer)
+	    /// <summary>
+	    /// Gets the raw pcm data of the flac frame.
+	    /// </summary>
+	    /// <param name="buffer">The buffer which should be used to store the data in. This value can be null.</param>
+	    /// <returns>The number of read bytes.</returns>
+		public unsafe int GetBuffer(ref byte[]? buffer)
 		{
 			short vals;
 			int   vali;
 
 			var desiredsize = Header.BlockSize * Header.Channels * ((Header.BitsPerSample + 7) / 2);
-            if (buffer == null || buffer.Length < desiredsize)
-                buffer = new byte[desiredsize];
+			if (buffer == null || buffer.Length < desiredsize)
+			{
+				if (buffer != null)
+				{
+					ArrayPool<byte>.Shared.Return(buffer);
+				}
+                buffer = ArrayPool<byte>.Shared.Rent(desiredsize);
+			}
 
             fixed (byte* ptrBuffer = buffer)
             {

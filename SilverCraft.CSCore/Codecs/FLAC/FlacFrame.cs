@@ -1,6 +1,7 @@
 ﻿#define GET_BUFFER_INTERNAL
 
 using System;
+using System.Buffers;
 using System.Collections.Generic;
 using System.IO;
 using System.Runtime.InteropServices;
@@ -20,8 +21,8 @@ namespace SilverCraft.CSCore.Codecs.FLAC
         private FlacMetadataStreamInfo _streamInfo;
 
         private GCHandle _handle1, _handle2;
-        private int[] _destBuffer;
-        private int[] _residualBuffer;
+        private int[]? _destBuffer;
+        private int[]? _residualBuffer;
 
         /// <summary>
         /// Gets the header of the flac frame.
@@ -102,41 +103,44 @@ namespace SilverCraft.CSCore.Codecs.FLAC
             var subFrames = new List<FlacSubFrameBase>();
 
             //alocateOutput
-            var data = AllocOuputMemory();
+            var data = AllocOutputMemory();
             _subFrameData = data;
 
-            var buffer = new byte[0x20000];
-            if ((_streamInfo.MaxFrameSize * Header.Channels * Header.BitsPerSample * 2 >> 3) > buffer.Length)
-            {
-                buffer = new byte[(_streamInfo.MaxFrameSize * Header.Channels * Header.BitsPerSample * 2 >> 3) - FlacConstant.FrameHeaderSize];
-            }
+          var buffer = new byte[0x20000];
+          if ((_streamInfo.MaxFrameSize * Header.Channels * Header.BitsPerSample * 2 >> 3) > buffer.Length)
+          {
+              buffer = new byte[(_streamInfo.MaxFrameSize * Header.Channels * Header.BitsPerSample * 2 >> 3) - FlacConstant.FrameHeaderSize];
+          }
+          var read = _stream.Read(buffer, 0, (int)Math.Min(buffer.Length, _stream.Length - _stream.Position));
 
-            var read = _stream.Read(buffer, 0, (int)Math.Min(buffer.Length, _stream.Length - _stream.Position));
+          fixed (byte* ptrBuffer = buffer)
+          {
+              using var reader = new FlacBitReader(ptrBuffer, 0);
+              for (var c = 0; c < Header.Channels; c++)
+              {
+                  var bitsPerSample = Header.BitsPerSample;
+                  switch (Header.ChannelAssignment)
+                  {
+                      case ChannelAssignment.MidSide or ChannelAssignment.LeftSide:
+                          bitsPerSample += c;
+                          break;
+                      case ChannelAssignment.RightSide:
+                          bitsPerSample += 1 - c;
+                          break;
+                  }
 
-            fixed (byte* ptrBuffer = buffer)
-            {
-                using var reader = new FlacBitReader(ptrBuffer, 0);
-                for (var c = 0; c < Header.Channels; c++)
-                {
-                    var bitsPerSample = Header.BitsPerSample;
-                    if (Header.ChannelAssignment is ChannelAssignment.MidSide or ChannelAssignment.LeftSide)
-                        bitsPerSample += c;
-                    else if (Header.ChannelAssignment == ChannelAssignment.RightSide)
-                        bitsPerSample += 1 - c;
+                  var subframe = FlacSubFrameBase.GetSubFrame(reader, data[c], Header, bitsPerSample);
+                  subFrames.Add(subframe);
+              }
 
-                    var subframe = FlacSubFrameBase.GetSubFrame(reader, data[c], Header, bitsPerSample);
-                    subFrames.Add(subframe);
-                }
+              reader.Flush(); //Zero-padding to byte alignment.
 
-                reader.Flush(); //Zero-padding to byte alignment.
+              //footer
+              Crc16 = (short) reader.ReadBits(16);
 
-                //footer
-                Crc16 = (short) reader.ReadBits(16);
-
-                _stream.Position -= read - reader.Position;
-                MapToChannels(_subFrameData);
-            }
-
+              _stream.Position -= read - reader.Position;
+              MapToChannels(_subFrameData);
+          }
 #if FLAC_DEBUG
             _subFrames = subFrames.AsReadOnly();
 #endif
@@ -182,73 +186,10 @@ namespace SilverCraft.CSCore.Codecs.FLAC
             }
         }
 
-        /// <summary>
-        /// Gets the raw pcm data of the flac frame.
-        /// </summary>
-        /// <param name="buffer">The buffer which should be used to store the data in. This value can be null.</param>
-        /// <returns>The number of read bytes.</returns>
-        public
-#if FLAC_DEBUG && !GET_BUFFER_INTERNAL
-            unsafe 
-#endif
- int GetBuffer(ref byte[] buffer)
-        {
-#if !FLAC_DEBUG || GET_BUFFER_INTERNAL
-            return GetBufferInternal(ref buffer);
-#else 
-            int desiredsize = Header.BlockSize * Header.Channels * ((Header.BitsPerSample + 7) / 2);
-            if (buffer == null || buffer.Length < desiredsize)
-                buffer = new byte[desiredsize];
 
-            fixed (byte* ptrBuffer = buffer)
-            {
-                byte* ptr = ptrBuffer;
-                if (Header.BitsPerSample == 8)
-                {
-                    for (int i = 0; i < Header.BlockSize; i++)
-                    {
-                        for (int c = 0; c < Header.Channels; c++)
-                        {
-                            *(ptr++) = (byte)(_subFrames[c].DestinationBuffer[i] + 0x80);
-                        }
-                    }
-                }
-                else if (Header.BitsPerSample == 16)
-                {
-                    for (int i = 0; i < Header.BlockSize; i++)
-                    {
-                        for (int c = 0; c < Header.Channels; c++)
-                        {
-                            short val = (short)(_subFrames[c].DestinationBuffer[i]);
-                            *(ptr++) = (byte)(val & 0xFF);
-                            *(ptr++) = (byte)((val >> 8) & 0xFF);
-                        }
-                    }
-                }
-                else if (Header.BitsPerSample == 24)
-                {
-                    for (int i = 0; i < Header.BlockSize; i++)
-                    {
-                        for (int c = 0; c < Header.Channels; c++)
-                        {
-                            int val = (_subFrames[c].DestinationBuffer[i]);
-                            *(ptr++) = (byte)(val & 0xFF);
-                            *(ptr++) = (byte)((val >> 8) & 0xFF);
-                            *(ptr++) = (byte)((val >> 16) & 0xFF);
-                        }
-                    }
-                }
-                else
-                {
-                    throw new FlacException(String.Format("FlacFrame::GetBuffer: Invalid BitsPerSample value: {0}", Header.BitsPerSample), FlacLayer.Frame);
-                }
 
-                return (int)(ptr - ptrBuffer);
-            }
-#endif
-        }
 
-        private unsafe List<FlacSubFrameData> AllocOuputMemory()
+        private unsafe List<FlacSubFrameData> AllocOutputMemory()
         {
             if (_destBuffer == null || _destBuffer.Length < (Header.Channels * Header.BlockSize))
                 _destBuffer = new int[Header.Channels * Header.BlockSize];
@@ -294,6 +235,9 @@ namespace SilverCraft.CSCore.Codecs.FLAC
             if (_disposed) return;
             GC.SuppressFinalize(this);
             FreeBuffers();
+            _destBuffer = null;
+            _residualBuffer = null;
+            
             _disposed = true;
         }
 

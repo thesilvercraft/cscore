@@ -1,6 +1,7 @@
 ﻿#define DIAGNOSTICS
 
 using System;
+using System.Buffers;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Diagnostics;
@@ -25,7 +26,7 @@ namespace SilverCraft.CSCore.Codecs.FLAC
         private readonly bool _closeStream;
 
         //overflow:
-        private byte[] _overflowBuffer;
+        private byte[]? _overflowBuffer;
 
         private int _overflowCount;
         private int _overflowOffset;
@@ -131,7 +132,7 @@ namespace SilverCraft.CSCore.Codecs.FLAC
             //prescan stream
             if (scanFlag == FlacPreScanMode.None) return;
             var scan = new FlacPreScan(stream);
-            scan.ScanFinished += (s, e) =>
+            scan.ScanFinished += (_, e) =>
             {
                 onscanFinished?.Invoke(e);
             };
@@ -194,7 +195,7 @@ namespace SilverCraft.CSCore.Codecs.FLAC
         /// <returns>The total number of bytes read into the buffer.</returns>
         public int Read(byte[] buffer, int offset, int count)
         {
-            CheckForDisposed();
+            ObjectDisposedException.ThrowIf(_disposed, this);
 
             var read = 0;
             count -= (count % WaveFormat.BlockAlign);
@@ -275,7 +276,7 @@ namespace SilverCraft.CSCore.Codecs.FLAC
             }
             set
             {
-                CheckForDisposed();
+                ObjectDisposedException.ThrowIf(_disposed, this);
 
                 if (!CanSeek)
                     return;
@@ -357,16 +358,16 @@ namespace SilverCraft.CSCore.Codecs.FLAC
 
                 if (_stream != null && !_stream.IsClosed() && _closeStream)
                     _stream.Dispose();
+                if (_overflowBuffer != null)
+                {
+                    ArrayPool<byte>.Shared.Return(_overflowBuffer);
+                }
 
-                _disposed = true;
+            _disposed = true;
             }
         }
 
-        private void CheckForDisposed()
-        {
-            if (_disposed)
-                throw new ObjectDisposedException(GetType().FullName);
-        }
+     
 
         /// <summary>
         ///     Destructor which calls the <see cref="Dispose(bool)" /> method.
