@@ -64,9 +64,10 @@ namespace SilverCraft.CSCore.Codecs.FLAC
             if (hasWastedBits)
             {
                 var destination = data.DestinationBuffer;
-                for (var i = 0; i < header.BlockSize; i++)
+                var blockSize = header.BlockSize; 
+                for (var i = 0; i < blockSize; i++)
                 {
-                    *(destination++) <<= wastedBits;
+                    destination[i] <<= wastedBits;
                 }
             }
 

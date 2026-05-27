@@ -20,7 +20,6 @@ namespace SilverCraft.CSCore.Codecs.FLAC
         private Stream _stream;
         private FlacMetadataStreamInfo _streamInfo;
 
-        private GCHandle _handle1, _handle2;
         private int[]? _destBuffer;
         private int[]? _residualBuffer;
 
@@ -95,52 +94,68 @@ namespace SilverCraft.CSCore.Codecs.FLAC
             HasError = Header.HasError;
             if (HasError) return;
             ReadSubFrames();
-            FreeBuffers();
         }
 
         private unsafe void ReadSubFrames()
         {
             var subFrames = new List<FlacSubFrameBase>();
 
-            //alocateOutput
-            var data = AllocOutputMemory();
-            _subFrameData = data;
+            var requiredSize = Header.Channels * Header.BlockSize;
+            if (_destBuffer == null || _destBuffer.Length < requiredSize)
+                _destBuffer = new int[requiredSize];
+            if (_residualBuffer == null || _residualBuffer.Length < requiredSize)
+                _residualBuffer = new int[requiredSize];
 
-          var buffer = new byte[0x20000];
-          if ((_streamInfo.MaxFrameSize * Header.Channels * Header.BitsPerSample * 2 >> 3) > buffer.Length)
-          {
-              buffer = new byte[(_streamInfo.MaxFrameSize * Header.Channels * Header.BitsPerSample * 2 >> 3) - FlacConstant.FrameHeaderSize];
-          }
-          var read = _stream.Read(buffer, 0, (int)Math.Min(buffer.Length, _stream.Length - _stream.Position));
+            _subFrameData = new List<FlacSubFrameData>();
+            for (var c = 0; c < Header.Channels; c++)
+            {
+                _subFrameData.Add(new FlacSubFrameData());
+            }
 
-          fixed (byte* ptrBuffer = buffer)
-          {
-              using var reader = new FlacBitReader(ptrBuffer, 0);
-              for (var c = 0; c < Header.Channels; c++)
-              {
-                  var bitsPerSample = Header.BitsPerSample;
-                  switch (Header.ChannelAssignment)
-                  {
-                      case ChannelAssignment.MidSide or ChannelAssignment.LeftSide:
-                          bitsPerSample += c;
-                          break;
-                      case ChannelAssignment.RightSide:
-                          bitsPerSample += 1 - c;
-                          break;
-                  }
+            var buffer = new byte[0x20000];
+            if ((_streamInfo.MaxFrameSize * Header.Channels * Header.BitsPerSample * 2 >> 3) > buffer.Length)
+            {
+                buffer = new byte[(_streamInfo.MaxFrameSize * Header.Channels * Header.BitsPerSample * 2 >> 3) - FlacConstant.FrameHeaderSize];
+            }
+            var read = _stream.Read(buffer, 0, (int)Math.Min(buffer.Length, _stream.Length - _stream.Position));
 
-                  var subframe = FlacSubFrameBase.GetSubFrame(reader, data[c], Header, bitsPerSample);
-                  subFrames.Add(subframe);
-              }
+            fixed (byte* ptrBuffer = buffer)
+            fixed (int* pDest = _destBuffer)      
+            fixed (int* pResidual = _residualBuffer)  
+            {
+                for (var c = 0; c < Header.Channels; c++)
+                {
+                    _subFrameData[c].DestinationBuffer = pDest + (c * Header.BlockSize);
+                    _subFrameData[c].ResidualBuffer = pResidual + (c * Header.BlockSize);
+                }
 
-              reader.Flush(); //Zero-padding to byte alignment.
+                using var reader = new FlacBitReader(ptrBuffer, 0);
+                for (var c = 0; c < Header.Channels; c++)
+                {
+                    var bitsPerSample = Header.BitsPerSample;
+                    switch (Header.ChannelAssignment)
+                    {
+                        case ChannelAssignment.MidSide or ChannelAssignment.LeftSide:
+                            bitsPerSample += c;
+                            break;
+                        case ChannelAssignment.RightSide:
+                            bitsPerSample += 1 - c;
+                            break;
+                    }
 
-              //footer
-              Crc16 = (short) reader.ReadBits(16);
+                    var subframe = FlacSubFrameBase.GetSubFrame(reader, _subFrameData[c], Header, bitsPerSample);
+                    subFrames.Add(subframe);
+                }
 
-              _stream.Position -= read - reader.Position;
-              MapToChannels(_subFrameData);
-          }
+                reader.Flush(); // Zero-padding to byte alignment.
+
+                Crc16 = (short)reader.ReadBits(16);
+
+                _stream.Position -= read - reader.Position;
+                
+                MapToChannels(_subFrameData);
+            } 
+
 #if FLAC_DEBUG
             _subFrames = subFrames.AsReadOnly();
 #endif
@@ -186,45 +201,6 @@ namespace SilverCraft.CSCore.Codecs.FLAC
             }
         }
 
-
-
-
-        private unsafe List<FlacSubFrameData> AllocOutputMemory()
-        {
-            if (_destBuffer == null || _destBuffer.Length < (Header.Channels * Header.BlockSize))
-                _destBuffer = new int[Header.Channels * Header.BlockSize];
-            if (_residualBuffer == null || _residualBuffer.Length < (Header.Channels * Header.BlockSize))
-                _residualBuffer = new int[Header.Channels * Header.BlockSize];
-
-            var output = new List<FlacSubFrameData>();
-
-            for (var c = 0; c < Header.Channels; c++)
-            {
-                fixed (int* ptrDestBuffer = _destBuffer, ptrResidualBuffer = _residualBuffer)
-                {
-                    _handle1 = GCHandle.Alloc(_destBuffer, GCHandleType.Pinned);
-                    _handle2 = GCHandle.Alloc(_residualBuffer, GCHandleType.Pinned);
-
-                    var data = new FlacSubFrameData
-                    {
-                        DestinationBuffer = (ptrDestBuffer + c * Header.BlockSize),
-                        ResidualBuffer = (ptrResidualBuffer + c * Header.BlockSize)
-                    };
-                    output.Add(data);
-                }
-            }
-
-            return output;
-        }
-
-        private void FreeBuffers()
-        {
-            if (_handle1.IsAllocated)
-                _handle1.Free();
-            if (_handle2.IsAllocated)
-                _handle2.Free();
-        }
-
         private bool _disposed;
 
         /// <summary>
@@ -234,7 +210,6 @@ namespace SilverCraft.CSCore.Codecs.FLAC
         {
             if (_disposed) return;
             GC.SuppressFinalize(this);
-            FreeBuffers();
             _destBuffer = null;
             _residualBuffer = null;
             
