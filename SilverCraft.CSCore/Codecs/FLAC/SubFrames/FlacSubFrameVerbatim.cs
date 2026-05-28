@@ -1,4 +1,6 @@
 ﻿// ReSharper disable once CheckNamespace
+using SilverCraft.CSCore.Codecs.FLAC.SubFrames;
+
 namespace SilverCraft.CSCore.Codecs.FLAC
 {
     internal sealed class FlacSubFrameVerbatim : FlacSubFrameBase
@@ -6,16 +8,13 @@ namespace SilverCraft.CSCore.Codecs.FLAC
         public FlacSubFrameVerbatim(FlacBitReader reader, FlacFrameHeader header, FlacSubFrameData data, int bitsPerSample)
             : base(header)
         {
-            unsafe
+            var destSpan = data.DestinationSpan;
+            var residualSpan = data.ResidualSpan;
+            for (var i = 0; i < header.BlockSize; i++)
             {
-                int* ptrDest = data.DestinationBuffer, ptrResidual = data.ResidualBuffer;
-
-                for (var i = 0; i < header.BlockSize; i++)
-                {
-                    var x = (int)reader.ReadBits(bitsPerSample);
-                    *ptrDest++ = x;
-                    *ptrResidual++ = x;
-                }
+                var sample = (int)reader.ReadBits(bitsPerSample);
+                destSpan[i] = sample;
+                residualSpan[i] = sample;
             }
         }
     }

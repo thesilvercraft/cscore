@@ -1,33 +1,32 @@
 ﻿// ReSharper disable once CheckNamespace
-namespace SilverCraft.CSCore.Codecs.FLAC
+namespace SilverCraft.CSCore.Codecs.FLAC;
+
+internal class FlacResidual
 {
-    internal class FlacResidual
+#if FLAC_DEBUG
+    public FlacResidualCodingMethod CodingMethodMethod { get; private set; }
+
+    public int PartitionOrder { get; private set; }
+#endif
+    public FlacResidual(FlacBitReader reader, FlacFrameHeader header, FlacSubFrameData data, int order)
     {
-#if FLAC_DEBUG
-        public FlacResidualCodingMethod CodingMethodMethod { get; private set; }
+        var codingMethod = (FlacResidualCodingMethod)reader.ReadBits(2); // 2 Bit
 
-        public int PartitionOrder { get; private set; }
-#endif
-        public FlacResidual(FlacBitReader reader, FlacFrameHeader header, FlacSubFrameData data, int order)
+        if (codingMethod is FlacResidualCodingMethod.PartitionedRice or FlacResidualCodingMethod.PartitionedRice2)
         {
-            var codingMethod = (FlacResidualCodingMethod)reader.ReadBits(2); // 2 Bit
+            var partitionOrder = (int)reader.ReadBits(4); //"Partition order." see https://xiph.org/flac/format.html#partitioned_rice and https://xiph.org/flac/format.html#partitioned_rice2
 
-            if (codingMethod == FlacResidualCodingMethod.PartitionedRice || codingMethod == FlacResidualCodingMethod.PartitionedRice2)
-            {
-                var partitionOrder = (int)reader.ReadBits(4); //"Partition order." see https://xiph.org/flac/format.html#partitioned_rice and https://xiph.org/flac/format.html#partitioned_rice2
-
-                FlacPartitionedRice.ProcessResidual(reader, header, data, order, partitionOrder, codingMethod);
+            FlacPartitionedRice.ProcessResidual(reader, header, data, order, partitionOrder, codingMethod);
 
 #if FLAC_DEBUG
-                CodingMethodMethod = codingMethod;
-                PartitionOrder = partitionOrder;
+            CodingMethodMethod = codingMethod;
+            PartitionOrder = partitionOrder;
 #endif
 
-            }
-            else
-            {
-                throw new FlacException("Not supported RICE-Coding-Method. Stream unparseable!", FlacLayer.SubFrame);
-            }
+        }
+        else
+        {
+            throw new FlacException("Not supported RICE-Coding-Method. Stream unparseable!", FlacLayer.SubFrame);
         }
     }
 }

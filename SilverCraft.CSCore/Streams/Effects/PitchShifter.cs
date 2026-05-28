@@ -58,7 +58,7 @@ namespace SilverCraft.CSCore.Streams.Effects
             if (read <= 0 || !(Math.Abs(PitchShiftFactor - 1.0) > 0.001)) 
                 return read;
 
-            Span<float> targetSpan = buffer.AsSpan(offset, read);
+            var targetSpan = buffer.AsSpan(offset, read);
 
             _pitchShifterInternal.PitchShift(PitchShiftFactor, read, WaveFormat.SampleRate, targetSpan);
 

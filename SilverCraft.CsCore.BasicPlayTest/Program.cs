@@ -2,7 +2,7 @@
 using SilverCraft.CSCore.PortAudio;
 using SilverCraft.CSCore.SoundOut;
 
-args = ["/home/silver/source/cscore/SilverCraft.CsCore.BasicPlayTest/music.flac"];
+args = ["/home/silver/Downloads/universal.flac"];
 while (true)
 {
     using FlacFile f = new(args.Length>0 ? args[0] : "../../../music.flac");

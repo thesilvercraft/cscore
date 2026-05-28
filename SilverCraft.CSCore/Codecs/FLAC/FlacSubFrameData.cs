@@ -1,9 +1,11 @@
 ﻿namespace SilverCraft.CSCore.Codecs.FLAC
 {
-    internal unsafe class FlacSubFrameData
+    internal  class FlacSubFrameData
     {
-        public int* DestinationBuffer;
-        public int* ResidualBuffer;
-        public FlacPartitionedRiceContent Content = new FlacPartitionedRiceContent();
+        public Memory<int> DestinationBuffer { get; set; }
+        public Memory<int> ResidualBuffer { get; set; }
+        public Span<int> DestinationSpan => DestinationBuffer.Span;
+        public Span<int> ResidualSpan => ResidualBuffer.Span;
+        public FlacPartitionedRiceContent Content = new();
     }
 }

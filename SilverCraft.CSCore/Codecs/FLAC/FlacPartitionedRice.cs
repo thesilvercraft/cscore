@@ -2,22 +2,21 @@
 {
     internal static class FlacPartitionedRice
     {
-        public static unsafe void ProcessResidual(FlacBitReader reader, FlacFrameHeader header, FlacSubFrameData data,
+        public static void ProcessResidual(FlacBitReader reader, FlacFrameHeader header, FlacSubFrameData data,
             int order, int partitionOrder, FlacResidualCodingMethod codingMethod)
         {
             data.Content.UpdateSize(partitionOrder);
             var isRice2 = codingMethod == FlacResidualCodingMethod.PartitionedRice2;
             var riceParameterLength = isRice2 ? 5 : 4;
-            var escapeCode = isRice2 ? 31 : 15; //11111 : 1111
+            var escapeCode = isRice2 ? 31 : 15;
 
-            int samplesPerPartition;
+            var partitionCount = 1 << partitionOrder;
 
-            var partitionCount = 1 << partitionOrder;  //2^partitionOrder -> There will be 2^order partitions. -> "order" = partitionOrder in this case
-
-            var residualBuffer = data.ResidualBuffer + order;
+            var residualSpan = data.ResidualSpan[order..];
 
             for (var p = 0; p < partitionCount; p++)
             {
+                int samplesPerPartition;
                 if (partitionOrder == 0)
                     samplesPerPartition = header.BlockSize - order;
                 else if (p > 0)
@@ -30,20 +29,20 @@
 
                 if (riceParameter >= escapeCode)
                 {
-                    var raw = reader.ReadBits(5); //raw is always 5 bits (see ...(+5))
+                    var raw = reader.ReadBits(5);
                     data.Content.RawBits[p] = (int)raw;
+                
                     for (var i = 0; i < samplesPerPartition; i++)
                     {
-                        var sample = reader.ReadBitsSigned((int)raw);
-                        *(residualBuffer) = sample;
-                        residualBuffer++;
+                        residualSpan[i] = reader.ReadBitsSigned((int)raw);
                     }
                 }
                 else
                 {
-                    ReadFlacRiceBlock(reader, samplesPerPartition, (int)riceParameter, residualBuffer);
-                    residualBuffer += samplesPerPartition;
+                    ReadFlacRiceBlock(reader, samplesPerPartition, (int)riceParameter, residualSpan[..samplesPerPartition]);
                 }
+
+                residualSpan = residualSpan[samplesPerPartition..];
             }
         }
 
@@ -51,47 +50,47 @@
         /// This method is based on the CUETools.NET BitReader (see http://sourceforge.net/p/cuetoolsnet/code/ci/default/tree/CUETools.Codecs/BitReader.cs , now located at https://github.com/gchudov/cuetools.net/blob/master/CUETools.Codecs/BitReader.cs)
         /// The author "Grigory Chudov" explicitly gave the permission to use the source as part of the cscore source code which got licensed under the ms-pl.
         /// </summary>
-        private static unsafe void ReadFlacRiceBlock(FlacBitReader reader, int nvals, int riceParameter, int* ptrDest)
+        private static void ReadFlacRiceBlock(FlacBitReader reader, int nvals, int riceParameter, Span<int> ptrDest)
         {
-            fixed (byte* putable = FlacBitReader.UnaryTable)
+            ReadOnlySpan<byte> putable = FlacBitReader.UnaryTable;
+            var mask = (1u << riceParameter) - 1;
+    
+            if (riceParameter == 0)
             {
-                var mask = (1u << riceParameter) - 1;
-                if (riceParameter == 0)
+                for (var i = 0; i < nvals; i++)
                 {
-                    for (var i = 0; i < nvals; i++)
-                    {
-                        *(ptrDest++) = reader.ReadUnarySigned();
-                    }
+                    ptrDest[i] = reader.ReadUnarySigned();
                 }
-                else
+            }
+            else
+            {
+                for (var i = 0; i < nvals; i++)
                 {
-                    for (var i = 0; i < nvals; i++)
+                    uint bits = putable[(int)(reader.Cache >> 24)];
+                    var msbs = bits;
+
+                    while (bits == 8)
                     {
-                        uint bits = putable[reader.Cache >> 24];
-                        var msbs = bits;
-
-                        while (bits == 8)
-                        {
-                            reader.SeekBits(8);
-                            bits = putable[reader.Cache >> 24];
-                            msbs += bits;
-                        }
-
-                        uint uval;
-                        if (riceParameter <= 16)
-                        {
-                            var btsk = riceParameter + (int)bits + 1;
-                            uval = (msbs << riceParameter) | ((reader.Cache >> (32 - btsk)) & mask);
-                            reader.SeekBits(btsk);
-                        }
-                        else
-                        {
-                            reader.SeekBits((int)(msbs & 7) + 1);
-                            uval = (msbs << riceParameter) | ((reader.Cache >> (32 - riceParameter)));
-                            reader.SeekBits(riceParameter);
-                        }
-                        *(ptrDest++) = (int)(uval >> 1 ^ -(int)(uval & 1));
+                        reader.SeekBits(8);
+                        bits = putable[(int)(reader.Cache >> 24)];
+                        msbs += bits;
                     }
+
+                    uint uval;
+                    if (riceParameter <= 16)
+                    {
+                        var btsk = riceParameter + (int)bits + 1;
+                        uval = (msbs << riceParameter) | ((reader.Cache >> (32 - btsk)) & mask);
+                        reader.SeekBits(btsk);
+                    }
+                    else
+                    {
+                        reader.SeekBits((int)(msbs & 7) + 1);
+                        uval = (msbs << riceParameter) | (reader.Cache >> (32 - riceParameter));
+                        reader.SeekBits(riceParameter);
+                    }
+
+                    ptrDest[i] = (int)(uval >> 1 ^ -(int)(uval & 1));
                 }
             }
         }
