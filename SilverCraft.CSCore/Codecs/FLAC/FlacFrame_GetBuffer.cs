@@ -1,574 +1,74 @@
-﻿using System;
-using System.Buffers;
+﻿using System.Buffers;
 
-namespace SilverCraft.CSCore.Codecs.FLAC
+namespace SilverCraft.CSCore.Codecs.FLAC;
+
+public partial class FlacFrame
 {
-    public partial class FlacFrame
+    /// <summary>
+    ///     Gets the raw pcm data of the flac frame.
+    /// </summary>
+    /// <param name="buffer">The buffer which should be used to store the data in. This value can be null.</param>
+    /// <returns>The number of read bytes.</returns>
+    public unsafe int GetBuffer(ref byte[]? buffer)
     {
-	    /// <summary>
-	    /// Gets the raw pcm data of the flac frame.
-	    /// </summary>
-	    /// <param name="buffer">The buffer which should be used to store the data in. This value can be null.</param>
-	    /// <returns>The number of read bytes.</returns>
-		public unsafe int GetBuffer(ref byte[]? buffer)
-		{
-			short vals;
-			int   vali;
-
-			var desiredsize = Header.BlockSize * Header.Channels * ((Header.BitsPerSample + 7) / 2);
-			if (buffer == null || buffer.Length < desiredsize)
-			{
-				if (buffer != null)
-				{
-					ArrayPool<byte>.Shared.Return(buffer);
-				}
-                buffer = ArrayPool<byte>.Shared.Rent(desiredsize);
-			}
-
-            fixed (byte* ptrBuffer = buffer)
-            {
-                var ptr = ptrBuffer;
-				switch (Header.BitsPerSample)
-				{
-#region 8
-					case 8:
-						switch (Header.Channels)
-						{
-							case 1:
-								for (var i = 0; i < Header.BlockSize; i++)
-								{
-									*(ptr++) = (byte)(_subFrameData[0].DestinationBuffer[i] + 0x80);
-								}
-								break;
-							case 2:
-								for (var i = 0; i < Header.BlockSize; i++)
-								{
-									*(ptr++) = (byte)(_subFrameData[0].DestinationBuffer[i] + 0x80);
-									*(ptr++) = (byte)(_subFrameData[1].DestinationBuffer[i] + 0x80);
-								}
-								break;
-							case 3:
-								for (var i = 0; i < Header.BlockSize; i++)
-								{
-									*(ptr++) = (byte)(_subFrameData[0].DestinationBuffer[i] + 0x80);
-									*(ptr++) = (byte)(_subFrameData[1].DestinationBuffer[i] + 0x80);
-									*(ptr++) = (byte)(_subFrameData[2].DestinationBuffer[i] + 0x80);
-								}
-								break;
-							case 4:
-								for (var i = 0; i < Header.BlockSize; i++)
-								{
-									*(ptr++) = (byte)(_subFrameData[0].DestinationBuffer[i] + 0x80);
-									*(ptr++) = (byte)(_subFrameData[1].DestinationBuffer[i] + 0x80);
-									*(ptr++) = (byte)(_subFrameData[2].DestinationBuffer[i] + 0x80);
-									*(ptr++) = (byte)(_subFrameData[3].DestinationBuffer[i] + 0x80);
-								}
-								break;
-							case 5:
-								for (var i = 0; i < Header.BlockSize; i++)
-								{
-									*(ptr++) = (byte)(_subFrameData[0].DestinationBuffer[i] + 0x80);
-									*(ptr++) = (byte)(_subFrameData[1].DestinationBuffer[i] + 0x80);
-									*(ptr++) = (byte)(_subFrameData[2].DestinationBuffer[i] + 0x80);
-									*(ptr++) = (byte)(_subFrameData[3].DestinationBuffer[i] + 0x80);
-									*(ptr++) = (byte)(_subFrameData[4].DestinationBuffer[i] + 0x80);
-								}
-								break;
-							case 6:
-								for (var i = 0; i < Header.BlockSize; i++)
-								{
-									*(ptr++) = (byte)(_subFrameData[0].DestinationBuffer[i] + 0x80);
-									*(ptr++) = (byte)(_subFrameData[1].DestinationBuffer[i] + 0x80);
-									*(ptr++) = (byte)(_subFrameData[2].DestinationBuffer[i] + 0x80);
-									*(ptr++) = (byte)(_subFrameData[3].DestinationBuffer[i] + 0x80);
-									*(ptr++) = (byte)(_subFrameData[4].DestinationBuffer[i] + 0x80);
-									*(ptr++) = (byte)(_subFrameData[5].DestinationBuffer[i] + 0x80);
-								}
-								break;
-							case 7:
-								for (var i = 0; i < Header.BlockSize; i++)
-								{
-									*(ptr++) = (byte)(_subFrameData[0].DestinationBuffer[i] + 0x80);
-									*(ptr++) = (byte)(_subFrameData[1].DestinationBuffer[i] + 0x80);
-									*(ptr++) = (byte)(_subFrameData[2].DestinationBuffer[i] + 0x80);
-									*(ptr++) = (byte)(_subFrameData[3].DestinationBuffer[i] + 0x80);
-									*(ptr++) = (byte)(_subFrameData[4].DestinationBuffer[i] + 0x80);
-									*(ptr++) = (byte)(_subFrameData[5].DestinationBuffer[i] + 0x80);
-									*(ptr++) = (byte)(_subFrameData[6].DestinationBuffer[i] + 0x80);
-								}
-								break;
-							case 8:
-								for (var i = 0; i < Header.BlockSize; i++)
-								{
-									*(ptr++) = (byte)(_subFrameData[0].DestinationBuffer[i] + 0x80);
-									*(ptr++) = (byte)(_subFrameData[1].DestinationBuffer[i] + 0x80);
-									*(ptr++) = (byte)(_subFrameData[2].DestinationBuffer[i] + 0x80);
-									*(ptr++) = (byte)(_subFrameData[3].DestinationBuffer[i] + 0x80);
-									*(ptr++) = (byte)(_subFrameData[4].DestinationBuffer[i] + 0x80);
-									*(ptr++) = (byte)(_subFrameData[5].DestinationBuffer[i] + 0x80);
-									*(ptr++) = (byte)(_subFrameData[6].DestinationBuffer[i] + 0x80);
-									*(ptr++) = (byte)(_subFrameData[7].DestinationBuffer[i] + 0x80);
-								}
-								break;
-							default:
-								for (var i = 0; i < Header.BlockSize; i++)
-								{
-									for (var c = 0; c < Header.Channels; c++)
-									{
-										*(ptr++) = (byte)(_subFrameData[c].DestinationBuffer[i] + 0x80);
-									}
-								}
-								break;
-						}
-						break;
-#endregion
-#region 16
-					case 16:
-						switch (Header.Channels)
-						{
-							case 1:
-								for (var i = 0; i < Header.BlockSize; i++)
-								{
-									vals = (short)(_subFrameData[0].DestinationBuffer[i]);
-									*(ptr++) = (byte)(vals & 0xFF);
-									*(ptr++) = (byte)((vals >> 8) & 0xFF);
-
-								}
-								break;
-							case 2:
-								for (var i = 0; i < Header.BlockSize; i++)
-								{
-									vals = (short)(_subFrameData[0].DestinationBuffer[i]);
-									*(ptr++) = (byte)(vals & 0xFF);
-									*(ptr++) = (byte)((vals >> 8) & 0xFF);
-
-									vals = (short)(_subFrameData[1].DestinationBuffer[i]);
-									*(ptr++) = (byte)(vals & 0xFF);
-									*(ptr++) = (byte)((vals >> 8) & 0xFF);
-
-								}
-								break;
-							case 3:
-								for (var i = 0; i < Header.BlockSize; i++)
-								{
-									vals = (short)(_subFrameData[0].DestinationBuffer[i]);
-									*(ptr++) = (byte)(vals & 0xFF);
-									*(ptr++) = (byte)((vals >> 8) & 0xFF);
-
-									vals = (short)(_subFrameData[1].DestinationBuffer[i]);
-									*(ptr++) = (byte)(vals & 0xFF);
-									*(ptr++) = (byte)((vals >> 8) & 0xFF);
-
-									vals = (short)(_subFrameData[2].DestinationBuffer[i]);
-									*(ptr++) = (byte)(vals & 0xFF);
-									*(ptr++) = (byte)((vals >> 8) & 0xFF);
-
-								}
-								break;
-							case 4:
-								for (var i = 0; i < Header.BlockSize; i++)
-								{
-									vals = (short)(_subFrameData[0].DestinationBuffer[i]);
-									*(ptr++) = (byte)(vals & 0xFF);
-									*(ptr++) = (byte)((vals >> 8) & 0xFF);
-
-									vals = (short)(_subFrameData[1].DestinationBuffer[i]);
-									*(ptr++) = (byte)(vals & 0xFF);
-									*(ptr++) = (byte)((vals >> 8) & 0xFF);
-
-									vals = (short)(_subFrameData[2].DestinationBuffer[i]);
-									*(ptr++) = (byte)(vals & 0xFF);
-									*(ptr++) = (byte)((vals >> 8) & 0xFF);
-
-									vals = (short)(_subFrameData[3].DestinationBuffer[i]);
-									*(ptr++) = (byte)(vals & 0xFF);
-									*(ptr++) = (byte)((vals >> 8) & 0xFF);
-
-								}
-								break;
-							case 5:
-								for (var i = 0; i < Header.BlockSize; i++)
-								{
-									vals = (short)(_subFrameData[0].DestinationBuffer[i]);
-									*(ptr++) = (byte)(vals & 0xFF);
-									*(ptr++) = (byte)((vals >> 8) & 0xFF);
-
-									vals = (short)(_subFrameData[1].DestinationBuffer[i]);
-									*(ptr++) = (byte)(vals & 0xFF);
-									*(ptr++) = (byte)((vals >> 8) & 0xFF);
-
-									vals = (short)(_subFrameData[2].DestinationBuffer[i]);
-									*(ptr++) = (byte)(vals & 0xFF);
-									*(ptr++) = (byte)((vals >> 8) & 0xFF);
-
-									vals = (short)(_subFrameData[3].DestinationBuffer[i]);
-									*(ptr++) = (byte)(vals & 0xFF);
-									*(ptr++) = (byte)((vals >> 8) & 0xFF);
-
-									vals = (short)(_subFrameData[4].DestinationBuffer[i]);
-									*(ptr++) = (byte)(vals & 0xFF);
-									*(ptr++) = (byte)((vals >> 8) & 0xFF);
-
-								}
-								break;
-							case 6:
-								for (var i = 0; i < Header.BlockSize; i++)
-								{
-									vals = (short)(_subFrameData[0].DestinationBuffer[i]);
-									*(ptr++) = (byte)(vals & 0xFF);
-									*(ptr++) = (byte)((vals >> 8) & 0xFF);
-
-									vals = (short)(_subFrameData[1].DestinationBuffer[i]);
-									*(ptr++) = (byte)(vals & 0xFF);
-									*(ptr++) = (byte)((vals >> 8) & 0xFF);
-
-									vals = (short)(_subFrameData[2].DestinationBuffer[i]);
-									*(ptr++) = (byte)(vals & 0xFF);
-									*(ptr++) = (byte)((vals >> 8) & 0xFF);
-
-									vals = (short)(_subFrameData[3].DestinationBuffer[i]);
-									*(ptr++) = (byte)(vals & 0xFF);
-									*(ptr++) = (byte)((vals >> 8) & 0xFF);
-
-									vals = (short)(_subFrameData[4].DestinationBuffer[i]);
-									*(ptr++) = (byte)(vals & 0xFF);
-									*(ptr++) = (byte)((vals >> 8) & 0xFF);
-
-									vals = (short)(_subFrameData[5].DestinationBuffer[i]);
-									*(ptr++) = (byte)(vals & 0xFF);
-									*(ptr++) = (byte)((vals >> 8) & 0xFF);
-
-								}
-								break;
-							case 7:
-								for (var i = 0; i < Header.BlockSize; i++)
-								{
-									vals = (short)(_subFrameData[0].DestinationBuffer[i]);
-									*(ptr++) = (byte)(vals & 0xFF);
-									*(ptr++) = (byte)((vals >> 8) & 0xFF);
-
-									vals = (short)(_subFrameData[1].DestinationBuffer[i]);
-									*(ptr++) = (byte)(vals & 0xFF);
-									*(ptr++) = (byte)((vals >> 8) & 0xFF);
-
-									vals = (short)(_subFrameData[2].DestinationBuffer[i]);
-									*(ptr++) = (byte)(vals & 0xFF);
-									*(ptr++) = (byte)((vals >> 8) & 0xFF);
-
-									vals = (short)(_subFrameData[3].DestinationBuffer[i]);
-									*(ptr++) = (byte)(vals & 0xFF);
-									*(ptr++) = (byte)((vals >> 8) & 0xFF);
-
-									vals = (short)(_subFrameData[4].DestinationBuffer[i]);
-									*(ptr++) = (byte)(vals & 0xFF);
-									*(ptr++) = (byte)((vals >> 8) & 0xFF);
-
-									vals = (short)(_subFrameData[5].DestinationBuffer[i]);
-									*(ptr++) = (byte)(vals & 0xFF);
-									*(ptr++) = (byte)((vals >> 8) & 0xFF);
-
-									vals = (short)(_subFrameData[6].DestinationBuffer[i]);
-									*(ptr++) = (byte)(vals & 0xFF);
-									*(ptr++) = (byte)((vals >> 8) & 0xFF);
-
-								}
-								break;
-							case 8:
-								for (var i = 0; i < Header.BlockSize; i++)
-								{
-									vals = (short)(_subFrameData[0].DestinationBuffer[i]);
-									*(ptr++) = (byte)(vals & 0xFF);
-									*(ptr++) = (byte)((vals >> 8) & 0xFF);
-
-									vals = (short)(_subFrameData[1].DestinationBuffer[i]);
-									*(ptr++) = (byte)(vals & 0xFF);
-									*(ptr++) = (byte)((vals >> 8) & 0xFF);
-
-									vals = (short)(_subFrameData[2].DestinationBuffer[i]);
-									*(ptr++) = (byte)(vals & 0xFF);
-									*(ptr++) = (byte)((vals >> 8) & 0xFF);
-
-									vals = (short)(_subFrameData[3].DestinationBuffer[i]);
-									*(ptr++) = (byte)(vals & 0xFF);
-									*(ptr++) = (byte)((vals >> 8) & 0xFF);
-
-									vals = (short)(_subFrameData[4].DestinationBuffer[i]);
-									*(ptr++) = (byte)(vals & 0xFF);
-									*(ptr++) = (byte)((vals >> 8) & 0xFF);
-
-									vals = (short)(_subFrameData[5].DestinationBuffer[i]);
-									*(ptr++) = (byte)(vals & 0xFF);
-									*(ptr++) = (byte)((vals >> 8) & 0xFF);
-
-									vals = (short)(_subFrameData[6].DestinationBuffer[i]);
-									*(ptr++) = (byte)(vals & 0xFF);
-									*(ptr++) = (byte)((vals >> 8) & 0xFF);
-
-									vals = (short)(_subFrameData[7].DestinationBuffer[i]);
-									*(ptr++) = (byte)(vals & 0xFF);
-									*(ptr++) = (byte)((vals >> 8) & 0xFF);
-
-								}
-								break;
-							default:
-								for (var i = 0; i < Header.BlockSize; i++)
-								{
-									for (var c = 0; c < Header.Channels; c++)
-									{
-										var val = (short)(_subFrameData[c].DestinationBuffer[i]);
-										*(ptr++) = (byte)(val & 0xFF);
-										*(ptr++) = (byte)((val >> 8) & 0xFF);
-									}
-								}
-								break;
-						}
-						break;
-#endregion
-#region 24
-					case 24:
-						switch (Header.Channels)
-						{
-							case 1:
-								for (var i = 0; i < Header.BlockSize; i++)
-								{
-									vali = (_subFrameData[0].DestinationBuffer[i]);
-									*(ptr++) = (byte)(vali & 0xFF);
-									*(ptr++) = (byte)((vali >> 8) & 0xFF);
-									*(ptr++) = (byte)((vali >> 16) & 0xFF);
-
-								}
-								break;
-							case 2:
-								for (var i = 0; i < Header.BlockSize; i++)
-								{
-									vali = (_subFrameData[0].DestinationBuffer[i]);
-									*(ptr++) = (byte)(vali & 0xFF);
-									*(ptr++) = (byte)((vali >> 8) & 0xFF);
-									*(ptr++) = (byte)((vali >> 16) & 0xFF);
-
-									vali = (_subFrameData[1].DestinationBuffer[i]);
-									*(ptr++) = (byte)(vali & 0xFF);
-									*(ptr++) = (byte)((vali >> 8) & 0xFF);
-									*(ptr++) = (byte)((vali >> 16) & 0xFF);
-
-								}
-								break;
-							case 3:
-								for (var i = 0; i < Header.BlockSize; i++)
-								{
-									vali = (_subFrameData[0].DestinationBuffer[i]);
-									*(ptr++) = (byte)(vali & 0xFF);
-									*(ptr++) = (byte)((vali >> 8) & 0xFF);
-									*(ptr++) = (byte)((vali >> 16) & 0xFF);
-
-									vali = (_subFrameData[1].DestinationBuffer[i]);
-									*(ptr++) = (byte)(vali & 0xFF);
-									*(ptr++) = (byte)((vali >> 8) & 0xFF);
-									*(ptr++) = (byte)((vali >> 16) & 0xFF);
-
-									vali = (_subFrameData[2].DestinationBuffer[i]);
-									*(ptr++) = (byte)(vali & 0xFF);
-									*(ptr++) = (byte)((vali >> 8) & 0xFF);
-									*(ptr++) = (byte)((vali >> 16) & 0xFF);
-
-								}
-								break;
-							case 4:
-								for (var i = 0; i < Header.BlockSize; i++)
-								{
-									vali = (_subFrameData[0].DestinationBuffer[i]);
-									*(ptr++) = (byte)(vali & 0xFF);
-									*(ptr++) = (byte)((vali >> 8) & 0xFF);
-									*(ptr++) = (byte)((vali >> 16) & 0xFF);
-
-									vali = (_subFrameData[1].DestinationBuffer[i]);
-									*(ptr++) = (byte)(vali & 0xFF);
-									*(ptr++) = (byte)((vali >> 8) & 0xFF);
-									*(ptr++) = (byte)((vali >> 16) & 0xFF);
-
-									vali = (_subFrameData[2].DestinationBuffer[i]);
-									*(ptr++) = (byte)(vali & 0xFF);
-									*(ptr++) = (byte)((vali >> 8) & 0xFF);
-									*(ptr++) = (byte)((vali >> 16) & 0xFF);
-
-									vali = (_subFrameData[3].DestinationBuffer[i]);
-									*(ptr++) = (byte)(vali & 0xFF);
-									*(ptr++) = (byte)((vali >> 8) & 0xFF);
-									*(ptr++) = (byte)((vali >> 16) & 0xFF);
-
-								}
-								break;
-							case 5:
-								for (var i = 0; i < Header.BlockSize; i++)
-								{
-									vali = (_subFrameData[0].DestinationBuffer[i]);
-									*(ptr++) = (byte)(vali & 0xFF);
-									*(ptr++) = (byte)((vali >> 8) & 0xFF);
-									*(ptr++) = (byte)((vali >> 16) & 0xFF);
-
-									vali = (_subFrameData[1].DestinationBuffer[i]);
-									*(ptr++) = (byte)(vali & 0xFF);
-									*(ptr++) = (byte)((vali >> 8) & 0xFF);
-									*(ptr++) = (byte)((vali >> 16) & 0xFF);
-
-									vali = (_subFrameData[2].DestinationBuffer[i]);
-									*(ptr++) = (byte)(vali & 0xFF);
-									*(ptr++) = (byte)((vali >> 8) & 0xFF);
-									*(ptr++) = (byte)((vali >> 16) & 0xFF);
-
-									vali = (_subFrameData[3].DestinationBuffer[i]);
-									*(ptr++) = (byte)(vali & 0xFF);
-									*(ptr++) = (byte)((vali >> 8) & 0xFF);
-									*(ptr++) = (byte)((vali >> 16) & 0xFF);
-
-									vali = (_subFrameData[4].DestinationBuffer[i]);
-									*(ptr++) = (byte)(vali & 0xFF);
-									*(ptr++) = (byte)((vali >> 8) & 0xFF);
-									*(ptr++) = (byte)((vali >> 16) & 0xFF);
-
-								}
-								break;
-							case 6:
-								for (var i = 0; i < Header.BlockSize; i++)
-								{
-									vali = (_subFrameData[0].DestinationBuffer[i]);
-									*(ptr++) = (byte)(vali & 0xFF);
-									*(ptr++) = (byte)((vali >> 8) & 0xFF);
-									*(ptr++) = (byte)((vali >> 16) & 0xFF);
-
-									vali = (_subFrameData[1].DestinationBuffer[i]);
-									*(ptr++) = (byte)(vali & 0xFF);
-									*(ptr++) = (byte)((vali >> 8) & 0xFF);
-									*(ptr++) = (byte)((vali >> 16) & 0xFF);
-
-									vali = (_subFrameData[2].DestinationBuffer[i]);
-									*(ptr++) = (byte)(vali & 0xFF);
-									*(ptr++) = (byte)((vali >> 8) & 0xFF);
-									*(ptr++) = (byte)((vali >> 16) & 0xFF);
-
-									vali = (_subFrameData[3].DestinationBuffer[i]);
-									*(ptr++) = (byte)(vali & 0xFF);
-									*(ptr++) = (byte)((vali >> 8) & 0xFF);
-									*(ptr++) = (byte)((vali >> 16) & 0xFF);
-
-									vali = (_subFrameData[4].DestinationBuffer[i]);
-									*(ptr++) = (byte)(vali & 0xFF);
-									*(ptr++) = (byte)((vali >> 8) & 0xFF);
-									*(ptr++) = (byte)((vali >> 16) & 0xFF);
-
-									vali = (_subFrameData[5].DestinationBuffer[i]);
-									*(ptr++) = (byte)(vali & 0xFF);
-									*(ptr++) = (byte)((vali >> 8) & 0xFF);
-									*(ptr++) = (byte)((vali >> 16) & 0xFF);
-
-								}
-								break;
-							case 7:
-								for (var i = 0; i < Header.BlockSize; i++)
-								{
-									vali = (_subFrameData[0].DestinationBuffer[i]);
-									*(ptr++) = (byte)(vali & 0xFF);
-									*(ptr++) = (byte)((vali >> 8) & 0xFF);
-									*(ptr++) = (byte)((vali >> 16) & 0xFF);
-
-									vali = (_subFrameData[1].DestinationBuffer[i]);
-									*(ptr++) = (byte)(vali & 0xFF);
-									*(ptr++) = (byte)((vali >> 8) & 0xFF);
-									*(ptr++) = (byte)((vali >> 16) & 0xFF);
-
-									vali = (_subFrameData[2].DestinationBuffer[i]);
-									*(ptr++) = (byte)(vali & 0xFF);
-									*(ptr++) = (byte)((vali >> 8) & 0xFF);
-									*(ptr++) = (byte)((vali >> 16) & 0xFF);
-
-									vali = (_subFrameData[3].DestinationBuffer[i]);
-									*(ptr++) = (byte)(vali & 0xFF);
-									*(ptr++) = (byte)((vali >> 8) & 0xFF);
-									*(ptr++) = (byte)((vali >> 16) & 0xFF);
-
-									vali = (_subFrameData[4].DestinationBuffer[i]);
-									*(ptr++) = (byte)(vali & 0xFF);
-									*(ptr++) = (byte)((vali >> 8) & 0xFF);
-									*(ptr++) = (byte)((vali >> 16) & 0xFF);
-
-									vali = (_subFrameData[5].DestinationBuffer[i]);
-									*(ptr++) = (byte)(vali & 0xFF);
-									*(ptr++) = (byte)((vali >> 8) & 0xFF);
-									*(ptr++) = (byte)((vali >> 16) & 0xFF);
-
-									vali = (_subFrameData[6].DestinationBuffer[i]);
-									*(ptr++) = (byte)(vali & 0xFF);
-									*(ptr++) = (byte)((vali >> 8) & 0xFF);
-									*(ptr++) = (byte)((vali >> 16) & 0xFF);
-
-								}
-								break;
-							case 8:
-								for (var i = 0; i < Header.BlockSize; i++)
-								{
-									vali = (_subFrameData[0].DestinationBuffer[i]);
-									*(ptr++) = (byte)(vali & 0xFF);
-									*(ptr++) = (byte)((vali >> 8) & 0xFF);
-									*(ptr++) = (byte)((vali >> 16) & 0xFF);
-
-									vali = (_subFrameData[1].DestinationBuffer[i]);
-									*(ptr++) = (byte)(vali & 0xFF);
-									*(ptr++) = (byte)((vali >> 8) & 0xFF);
-									*(ptr++) = (byte)((vali >> 16) & 0xFF);
-
-									vali = (_subFrameData[2].DestinationBuffer[i]);
-									*(ptr++) = (byte)(vali & 0xFF);
-									*(ptr++) = (byte)((vali >> 8) & 0xFF);
-									*(ptr++) = (byte)((vali >> 16) & 0xFF);
-
-									vali = (_subFrameData[3].DestinationBuffer[i]);
-									*(ptr++) = (byte)(vali & 0xFF);
-									*(ptr++) = (byte)((vali >> 8) & 0xFF);
-									*(ptr++) = (byte)((vali >> 16) & 0xFF);
-
-									vali = (_subFrameData[4].DestinationBuffer[i]);
-									*(ptr++) = (byte)(vali & 0xFF);
-									*(ptr++) = (byte)((vali >> 8) & 0xFF);
-									*(ptr++) = (byte)((vali >> 16) & 0xFF);
-
-									vali = (_subFrameData[5].DestinationBuffer[i]);
-									*(ptr++) = (byte)(vali & 0xFF);
-									*(ptr++) = (byte)((vali >> 8) & 0xFF);
-									*(ptr++) = (byte)((vali >> 16) & 0xFF);
-
-									vali = (_subFrameData[6].DestinationBuffer[i]);
-									*(ptr++) = (byte)(vali & 0xFF);
-									*(ptr++) = (byte)((vali >> 8) & 0xFF);
-									*(ptr++) = (byte)((vali >> 16) & 0xFF);
-
-									vali = (_subFrameData[7].DestinationBuffer[i]);
-									*(ptr++) = (byte)(vali & 0xFF);
-									*(ptr++) = (byte)((vali >> 8) & 0xFF);
-									*(ptr++) = (byte)((vali >> 16) & 0xFF);
-
-								}
-								break;
-							default:
-								for (var i = 0; i < Header.BlockSize; i++)
-								{
-									for (var c = 0; c < Header.Channels; c++)
-									{
-										var val = (_subFrameData[c].DestinationBuffer[i]);
-										*(ptr++) = (byte)(val & 0xFF);
-										*(ptr++) = (byte)((val >> 8) & 0xFF);
-										*(ptr++) = (byte)((val >> 16) & 0xFF);
-									}
-								}
-								break;
-						}
-						break;
-#endregion
-					default: //default bits per sample
-						throw new FlacException(
-							$"FlacFrame::GetBuffer: Invalid BitsPerSample value: {Header.BitsPerSample}", FlacLayer.Frame);
-				}
-				return (int)(ptr - ptrBuffer);
-			}
-		}
+        // Keep your exact original sizing formula so the array allocation match is identical
+        var desiredSize = Header.BlockSize * Header.Channels * ((Header.BitsPerSample + 7) / 2);
+        if (buffer == null || buffer.Length < desiredSize)
+        {
+            if (buffer != null) ArrayPool<byte>.Shared.Return(buffer);
+            buffer = ArrayPool<byte>.Shared.Rent(desiredSize);
+        }
+
+        // Wrap the array in a span for fast, safe indexing
+        Span<byte> outSpan = buffer;
+        var channels = Header.Channels;
+        var blockSize = Header.BlockSize;
+
+        // This tracks the exact byte offset, identical to how *(ptr++) worked
+        var byteIndex = 0;
+
+        switch (Header.BitsPerSample)
+        {
+            case 8:
+                for (var i = 0; i < blockSize; i++)
+                for (var c = 0; c < channels; c++)
+                    outSpan[byteIndex++] = (byte)(_subFrameData[c].DestinationBuffer[i] + 0x80);
+
+                break;
+
+            case 16:
+                for (var i = 0; i < blockSize; i++)
+                for (var c = 0; c < channels; c++)
+                {
+                    var vals = (short)_subFrameData[c].DestinationBuffer[i];
+
+                    // Explicitly pack the bytes sequentially to guarantee perfect alignment
+                    outSpan[byteIndex++] = (byte)(vals & 0xFF);
+                    outSpan[byteIndex++] = (byte)((vals >> 8) & 0xFF);
+                }
+
+                break;
+
+            case 24:
+                for (var i = 0; i < blockSize; i++)
+                for (var c = 0; c < channels; c++)
+                {
+                    var vali = _subFrameData[c].DestinationBuffer[i];
+
+                    outSpan[byteIndex++] = (byte)(vali & 0xFF);
+                    outSpan[byteIndex++] = (byte)((vali >> 8) & 0xFF);
+                    outSpan[byteIndex++] = (byte)((vali >> 16) & 0xFF);
+                }
+
+                break;
+
+            default:
+                throw new FlacException(
+                    $"FlacFrame::GetBuffer: Invalid BitsPerSample value: {Header.BitsPerSample}", FlacLayer.Frame);
+        }
+
+        // CRITICAL: Return byteIndex (the actual bytes written), NOT desiredSize!
+        // This ensures your calling code reads only the clean audio data.
+        return byteIndex;
     }
 }

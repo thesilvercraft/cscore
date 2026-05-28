@@ -62,15 +62,14 @@ namespace SilverCraft.CSCore.DSP
         private long _gRover;
 
         public void PitchShift(float pitchShift, long numSampsToProcess,
-           float sampleRate, float[] indata)
+           float sampleRate, Span<float> indata)
         {
             PitchShift(pitchShift, numSampsToProcess, 2048, 10, sampleRate, indata);
         }
         public void PitchShift(float pitchShift, long numSampsToProcess, long fftFrameSize,
-            long osamp, float sampleRate, float[] indata)
+            long osamp, float sampleRate, Span<float> indata)
         {
-            long i;
-
+            int i;
 
             var outdata = indata;
             /* set up some handy variables */
@@ -80,7 +79,6 @@ namespace SilverCraft.CSCore.DSP
             var expct = 2.0 * Math.PI * stepSize / fftFrameSize;
             var inFifoLatency = fftFrameSize - stepSize;
             if (_gRover == 0) _gRover = inFifoLatency;
-
 
             /* main processing loop */
             for (i = 0; i < numSampsToProcess; i++)

@@ -55,25 +55,17 @@ namespace SilverCraft.CSCore.Streams.Effects
         {
             var read = base.Read(buffer, offset, count);
 
-            if (read <= 0 || !(Math.Abs(PitchShiftFactor - 1.0) > 0.001)) return read;
-            var pitchBuffer = buffer;
-            if (offset != 0)
-            {
-                pitchBuffer = new float[read];
-                Buffer.BlockCopy(buffer, offset, pitchBuffer, 0, read);
-            }
+            if (read <= 0 || !(Math.Abs(PitchShiftFactor - 1.0) > 0.001)) 
+                return read;
 
-            _pitchShifterInternal.PitchShift(PitchShiftFactor, read, WaveFormat.SampleRate, buffer);
+            Span<float> targetSpan = buffer.AsSpan(offset, read);
 
-            if (offset != 0)
-            {
-                Buffer.BlockCopy(pitchBuffer, 0, buffer, offset, read);
-            }
+            _pitchShifterInternal.PitchShift(PitchShiftFactor, read, WaveFormat.SampleRate, targetSpan);
 
-            for (var i = offset; i < offset + read; i++)
+            for (var i = 0; i < targetSpan.Length; i++)
             {
-                if (buffer[i] < -1.0 || buffer[i] > 1.0)
-                    buffer[i] = Math.Max(-1.0f, Math.Min(1.0f, buffer[i]));
+                if (targetSpan[i] < -1.0f || targetSpan[i] > 1.0f)
+                    targetSpan[i] = Math.Clamp(targetSpan[i], -1.0f, 1.0f);
             }
 
             return read;

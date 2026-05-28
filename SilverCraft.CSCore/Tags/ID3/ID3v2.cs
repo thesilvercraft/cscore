@@ -196,14 +196,9 @@ namespace SilverCraft.CSCore.Tags.ID3
             using var memoryStream = new MemoryStream(buffer);
             using var ustream = new UnsyncStream(memoryStream);
             var result = new byte[buffer.Length];
-
             var read = ustream.Read(result, 0, result.Length);
 
-            if (read >= result.Length) return result;
-            var newresult = new byte[read];
-            Buffer.BlockCopy(result, 0, newresult, 0, read);
-            return newresult;
-
+            return read >= result.Length ? result : result.AsSpan(0, read).ToArray();
         }
 
         public IEnumerator<Frame> GetEnumerator()

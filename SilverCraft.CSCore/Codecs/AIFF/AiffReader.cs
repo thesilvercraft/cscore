@@ -142,36 +142,34 @@ namespace SilverCraft.CSCore.Codecs.AIFF
             var bps = WaveFormat.BitsPerSample;
             if (bps != 8)
             {
+                ReadOnlySpan<byte> sourceSpan = b.AsSpan(0, read);
+                Span<byte> destSpan = buffer.AsSpan(offset, read);
                 for (var i = 0; i < read; i += WaveFormat.BytesPerSample)
                 {
-                    if (bps == 16)
+                    switch (bps)
                     {
-                        buffer[offset + i + 0] = b[i + 1];
-                        buffer[offset + i + 1] = b[i + 0];
-                    }
-                    else if (bps == 24)
-                    {
-                        buffer[offset + i + 0] = b[i + 2];
-                        buffer[offset + i + 1] = b[i + 1];
-                        buffer[offset + i + 2] = b[i + 0];
-                    }
-                    else if (bps == 32)
-                    {
-                        buffer[offset + i + 0] = b[i + 3];
-                        buffer[offset + i + 1] = b[i + 2];
-                        buffer[offset + i + 2] = b[i + 1];
-                        buffer[offset + i + 3] = b[i + 0];
-                    }
-                    else
-                    {
-                        //should get handled in ctor
-                        throw new AiffException("Unexpected error. Not supported bps.");
+                        case 16:
+                            destSpan[i + 0] = sourceSpan[i + 1];
+                            destSpan[i + 1] = sourceSpan[i + 0];
+                            break;
+                        case 24:
+                            destSpan[i + 0] = sourceSpan[i + 2];
+                            destSpan[i + 1] = sourceSpan[i + 1];
+                            destSpan[i + 2] = sourceSpan[i + 0];
+                            break;
+                        case 32:
+                            destSpan[i + 0] = sourceSpan[i + 3];
+                            destSpan[i + 1] = sourceSpan[i + 2];
+                            destSpan[i + 2] = sourceSpan[i + 1];
+                            destSpan[i + 3] = sourceSpan[i + 0];
+                            break;
+                        default:
+                            throw new AiffException("Unexpected error. Not supported bps.");
                     }
                 }
             }
             else
-                Buffer.BlockCopy(b, 0, buffer, offset, read);
-
+                b.AsSpan(0, read).CopyTo(buffer.AsSpan(offset));
             return read;
         }
 

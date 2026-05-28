@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Runtime.InteropServices;
 
 namespace SilverCraft.CSCore.Streams.SampleConverter
 {
@@ -42,8 +43,9 @@ namespace SilverCraft.CSCore.Streams.SampleConverter
             var bytesToRead = count * 4;
             Buffer = Buffer.CheckBuffer(bytesToRead);
             var read = Source.Read(Buffer, 0, bytesToRead);
-            System.Buffer.BlockCopy(Buffer, 0, buffer, offset * 4, read);
-
+            ReadOnlySpan<byte> sourceSpan = Buffer.AsSpan(0, read);
+            var destSpan = MemoryMarshal.Cast<float, byte>(buffer.AsSpan(offset));
+            sourceSpan.CopyTo(destSpan);
             return read / 4;
         }
     }
