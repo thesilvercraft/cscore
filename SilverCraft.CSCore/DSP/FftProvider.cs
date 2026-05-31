@@ -172,18 +172,21 @@ namespace SilverCraft.CSCore.DSP
 
         private float MergeSamples(float[] samples, int i, int channels)
         {
-            if (channels == 1)
-                return samples[i];
-            if (channels == 2)
-                return (samples[i] + samples[i + 1]) / 2f;
-            if (channels == 3)
-                return (samples[i] + samples[i + 1] + samples[i + 2]) / 3f;
-            if(channels == 4)
-                return (samples[i] + samples[i + 1] + samples[i + 2] + samples[i + 3]) / 4f;
-            if(channels == 5)
-                return (samples[i] + samples[i + 1] + samples[i + 2] + samples[i + 3] + samples[i + 4]) / 5f;
-            if(channels == 6)
-                return (samples[i] + samples[i + 1] + samples[i + 2] + samples[i + 3] + samples[i + 4] + samples[i+5]) / 6f;
+            switch (channels)
+            {
+                case 1:
+                    return samples[i];
+                case 2:
+                    return (samples[i] + samples[i + 1]) / 2f;
+                case 3:
+                    return (samples[i] + samples[i + 1] + samples[i + 2]) / 3f;
+                case 4:
+                    return (samples[i] + samples[i + 1] + samples[i + 2] + samples[i + 3]) / 4f;
+                case 5:
+                    return (samples[i] + samples[i + 1] + samples[i + 2] + samples[i + 3] + samples[i + 4]) / 5f;
+                case 6:
+                    return (samples[i] + samples[i + 1] + samples[i + 2] + samples[i + 3] + samples[i + 4] + samples[i+5]) / 6f;
+            }
 
             float sample = 0;
             for (var j = i; j < channels; j++)

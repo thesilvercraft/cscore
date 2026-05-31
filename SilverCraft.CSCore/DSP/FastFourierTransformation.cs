@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Runtime.CompilerServices;
 using SilverCraft.CSCore.Utils;
 
 namespace SilverCraft.CSCore.DSP
@@ -149,12 +150,10 @@ namespace SilverCraft.CSCore.DSP
                 z += l;
             }
         }
-
+        [MethodImpl(MethodImplOptions.AggressiveInlining)]
         private static void Swap(Complex[] data, int index, int index2)
         {
-            var tmp = data[index];
-            data[index] = data[index2];
-            data[index2] = tmp;
+            (data[index], data[index2]) = (data[index2], data[index]);
         }
     }
 }

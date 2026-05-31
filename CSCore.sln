@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SilverCraft.CSCore.SndFile"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SilverCraft.CsCore.BasicPlayTest", "SilverCraft.CsCore.BasicPlayTest\SilverCraft.CsCore.BasicPlayTest.csproj", "{53213689-9720-4F0B-8833-3425FB6F8AA4}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SilverCraft.CSCore.Benchmark", "SilverCraft.CSCore.Benchmark\SilverCraft.CSCore.Benchmark.csproj", "{51475C91-3AAE-43F3-90E3-E403396536B3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -81,6 +83,18 @@ Global
 		{53213689-9720-4F0B-8833-3425FB6F8AA4}.Release|Mixed Platforms.Build.0 = Release|Any CPU
 		{53213689-9720-4F0B-8833-3425FB6F8AA4}.Release|Win32.ActiveCfg = Release|Any CPU
 		{53213689-9720-4F0B-8833-3425FB6F8AA4}.Release|Win32.Build.0 = Release|Any CPU
+		{51475C91-3AAE-43F3-90E3-E403396536B3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{51475C91-3AAE-43F3-90E3-E403396536B3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{51475C91-3AAE-43F3-90E3-E403396536B3}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{51475C91-3AAE-43F3-90E3-E403396536B3}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{51475C91-3AAE-43F3-90E3-E403396536B3}.Debug|Win32.ActiveCfg = Debug|Any CPU
+		{51475C91-3AAE-43F3-90E3-E403396536B3}.Debug|Win32.Build.0 = Debug|Any CPU
+		{51475C91-3AAE-43F3-90E3-E403396536B3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{51475C91-3AAE-43F3-90E3-E403396536B3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{51475C91-3AAE-43F3-90E3-E403396536B3}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{51475C91-3AAE-43F3-90E3-E403396536B3}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{51475C91-3AAE-43F3-90E3-E403396536B3}.Release|Win32.ActiveCfg = Release|Any CPU
+		{51475C91-3AAE-43F3-90E3-E403396536B3}.Release|Win32.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

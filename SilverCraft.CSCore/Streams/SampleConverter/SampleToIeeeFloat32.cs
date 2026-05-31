@@ -36,12 +36,16 @@ namespace SilverCraft.CSCore.Streams.SampleConverter
         /// <returns>The total number of bytes read into the buffer.</returns>
         public override int Read(byte[] buffer, int offset, int count)
         {
-            Buffer = Buffer.CheckBuffer(count / 4);
-            var read = Source.Read(Buffer, offset / 4, count / 4);
-            var bytesRead = read * 4;
-            ReadOnlySpan<byte> sourceSpan = MemoryMarshal.Cast<float, byte>(Buffer.AsSpan(0, read));
-            var destSpan = buffer.AsSpan(offset, bytesRead);
-            sourceSpan.CopyTo(destSpan);
+            var sampleCount = count >> 2; 
+            if (sampleCount <= 0) return 0;
+            Buffer = Buffer.CheckBuffer(sampleCount);
+            var samplesRead = Source.Read(Buffer, 0, sampleCount);
+            if (samplesRead <= 0) return 0;
+            var bytesRead = samplesRead << 2;
+            var floatSpan = new ReadOnlySpan<float>(Buffer, 0, samplesRead);
+            var sourceBytes = MemoryMarshal.AsBytes(floatSpan);
+            var destBytes = new Span<byte>(buffer, offset, bytesRead);
+            sourceBytes.CopyTo(destBytes);
             return bytesRead;
         }
     }

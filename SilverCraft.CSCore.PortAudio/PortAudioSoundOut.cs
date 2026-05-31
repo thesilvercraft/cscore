@@ -33,7 +33,13 @@ public class PortAudioSoundOut : ISoundOut
     private ILogger? _log;
     static PortAudioSoundOut()
     {
-        NativeLibrary.SetDllImportResolver(typeof(NativeMethods).Assembly, NativeMethods.DllImportResolver);
+        try
+        {
+            NativeLibrary.SetDllImportResolver(typeof(NativeMethods).Assembly, NativeMethods.DllImportResolver);
+        }
+        catch (InvalidOperationException)
+        {
+        }
     }
 
     public PortAudioSoundOut()
@@ -249,20 +255,28 @@ public class PortAudioSoundOut : ISoundOut
             if (buffer == null || buffer.Length < bufferLength)
             {
                 Debugger.Break();
-                // THIS IS BAD, like really bad
-                for (int i = 0; i < bufferLength; i++) outputBuffer[i] = 0;
+                new Span<float>(outputBuffer, bufferLength).Clear();
                 return (int)PaStreamCallbackResult.paContinue;
             }
-            var read = SampleSource?.Read(buffer, 0, bufferLength);
-            read ??= 0;
-            fixed (float* bufferStart = buffer) //multiplying is not that more expensive then just copying from one buffer to another and branch overhead is a thing ig
+            var read = SampleSource.Read(buffer, 0, bufferLength);
+            
+            fixed (float* bufferStart = buffer)
             {
+                
                 var bufferI = bufferStart;
-                var bufferEnd = bufferStart + read.Value;
-                var bufferExpectedEnd = outputBuffer + bufferLength;
-
+                var bufferEnd = bufferStart + read;
                 var outputI = outputBuffer;
                 var currentVolume = Volume;
+                if (currentVolume == 1.0f)
+                {
+                    Unsafe.CopyBlockUnaligned(outputI, bufferI, (uint)(read * sizeof(float)));
+                    outputI += read; // Advance pointer so common zero-fill block handles any underruns
+                }
+                else if (currentVolume == 0.0f)
+                {
+                    Unsafe.InitBlockUnaligned(outputI, 0, (uint)(read * sizeof(float)));
+                    outputI += read; 
+                }
                 if (Avx.IsSupported)
                 {
                     var vol = Vector256.Create(currentVolume);
@@ -293,11 +307,16 @@ public class PortAudioSoundOut : ISoundOut
                     *outputI++ = *bufferI++ * currentVolume;
                 }
                 // do not produce noise if uninitialized
-                while (outputI < bufferExpectedEnd) *outputI++ = 0;
+                var remainingSamples = bufferLength - (int)(outputI - outputBuffer);
+                if (remainingSamples > 0)
+                {
+                    Unsafe.InitBlockUnaligned(outputI, 0, (uint)(remainingSamples * sizeof(float)));
+                }
             }
 
-            if (read >= bufferLength) return (int)PaStreamCallbackResult.paContinue;
-            return (int)PaStreamCallbackResult.paComplete;
+            return read >= bufferLength 
+                ? (int)PaStreamCallbackResult.paContinue 
+                : (int)PaStreamCallbackResult.paComplete;
         }
         catch (Exception e)
         {
