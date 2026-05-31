@@ -13,6 +13,10 @@ namespace SilverCraft.CSCore.PortAudio;
 public unsafe delegate int StreamCallBack(void* input, void* output, ulong frameCount,
     PaStreamCallbackTimeInfo* timeInfo, PaStreamCallbackFlags statusFlags, nint userData);
 
+[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
+public unsafe delegate void PaStreamFinishedCallback(void* userData);
+
+
 
 //https://www.portaudio.com/docs/v19-doxydocs/writing_a_callback.html
 
@@ -21,6 +25,7 @@ public class PortAudioSoundOut : ISoundOut
     private readonly object streamLock = new();
     private float[]? buffer = new float[2];
     private StreamCallBack? _callback;
+    private PaStreamFinishedCallback? _finishedCallback;
     private int channels;
     private bool isDisposed;
     private bool isPAInit;
@@ -58,7 +63,7 @@ public class PortAudioSoundOut : ISoundOut
             isPAInit = true;
         }
         _callback = CallBackMethod;
-
+        _finishedCallback = OnStreamFinished;
         if (source != WaveSource) WaveSource?.Dispose();
         SampleSource?.Dispose();
         WaveSource = source;
@@ -86,10 +91,14 @@ public class PortAudioSoundOut : ISoundOut
                 0,
                 _callback,
                 0));
+            ThrowIfError(NativeMethods.Pa_SetStreamFinishedCallback(paStream, _finishedCallback));
             stream = paStream;
         }
     }
-
+    public unsafe void OnStreamFinished(void* userData)
+    {
+        Task.Run(OnStop);
+    }
 
     public unsafe void Play()
     {
@@ -115,25 +124,23 @@ public class PortAudioSoundOut : ISoundOut
         DebugTrace();
         if (PlaybackState != PlaybackState.Playing) return;
         ObjectDisposedException.ThrowIf(stream==null, nameof(stream));
-
-        ThrowIfError(NativeMethods.Pa_StopStream(stream));
         PlaybackState = PlaybackState.Paused;
+        ThrowIfError(NativeMethods.Pa_StopStream(stream));
     }
 
     public unsafe void Stop()
     {
         if (PlaybackState == PlaybackState.Stopped) return;
         DebugTrace();
+        ObjectDisposedException.ThrowIf(stream==null, nameof(stream));
         if (PlaybackState == PlaybackState.Paused)
         {
             PlaybackState = PlaybackState.Stopped;
             OnStop();
             return;
         }
-        ObjectDisposedException.ThrowIf(stream==null, nameof(stream));
-
+        PlaybackState = PlaybackState.Stopped;
         ThrowIfError(NativeMethods.Pa_StopStream(stream));
-        OnStop();
     }
 
     public static bool IsSupported()
@@ -158,6 +165,20 @@ public class PortAudioSoundOut : ISoundOut
     protected virtual void Dispose(bool disposing)
     {
         DebugTrace();
+        unsafe
+        {
+            if (stream != null)
+            {
+                NativeMethods.Pa_CloseStream(stream);
+                stream = null;
+            }    
+        }
+
+        if (disposing)
+        {
+            buffer = null;
+        }
+
         if (isDisposed) return;
         _callback= null;
 
@@ -178,6 +199,10 @@ public class PortAudioSoundOut : ISoundOut
 
     private void OnStop()
     {
+        if (PlaybackState == PlaybackState.Paused)
+        {
+            return;
+        }
         DebugTrace();
         PlaybackState = PlaybackState.Stopped;
 
@@ -195,7 +220,6 @@ public class PortAudioSoundOut : ISoundOut
                             new PlaybackStoppedEventArgs(
                                 new PortAudioException($"PortAudio stream closure failed: {closeResult}")));
                         stream = null;
-                        buffer = null;
                         return;
                     }
 
@@ -273,7 +297,6 @@ public class PortAudioSoundOut : ISoundOut
             }
 
             if (read >= bufferLength) return (int)PaStreamCallbackResult.paContinue;
-            Task.Run(OnStop); // TODO: replace with PaStreamFinishedCallback
             return (int)PaStreamCallbackResult.paComplete;
         }
         catch (Exception e)

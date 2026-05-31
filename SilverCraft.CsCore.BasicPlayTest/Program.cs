@@ -1,16 +1,17 @@
-﻿using SilverCraft.CSCore.Codecs.FLAC;
+﻿using SilverCraft.CSCore;
+using SilverCraft.CSCore.Codecs.FLAC;
 using SilverCraft.CSCore.PortAudio;
-using SilverCraft.CSCore.SoundOut;
 
-args = ["/home/silver/Downloads/universal.flac"];
+args = ["/home/silver/source/cscore/SilverCraft.CsCore.BasicPlayTest/music.flac"];
 while (true)
 {
-    using FlacFile f = new(args.Length>0 ? args[0] : "../../../music.flac");
-    using PortAudioSoundOut soundOut = new();
+     FlacFile f = new(args.Length>0 ? args[0] : "../../../music.flac");
+    
+    PortAudioSoundOut soundOut = new();
     soundOut.Initialize(f);
     soundOut.Play();
-    while (soundOut.PlaybackState == PlaybackState.Playing)
-    {
-        Thread.Sleep(800);
-    }
+    soundOut.Stopped+= (sender, eventArgs) => Console.WriteLine("Sound Out Stopped"); 
+    soundOut.WaitForStopped();
+    soundOut.Dispose();
+    f.Dispose();
 }

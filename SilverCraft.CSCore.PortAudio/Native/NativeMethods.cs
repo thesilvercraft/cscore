@@ -108,7 +108,7 @@ public static unsafe partial class NativeMethods
 
     [DllImport(dllName, CallingConvention = CallingConvention.Cdecl, ExactSpelling = true)]
     [return: NativeTypeName("PaError")]
-    public static extern int Pa_SetStreamFinishedCallback([NativeTypeName("PaStream *")] void* stream, [NativeTypeName("PaStreamFinishedCallback *")] delegate* unmanaged[Cdecl]<void*, void> streamFinishedCallback);
+    public static extern int Pa_SetStreamFinishedCallback([NativeTypeName("PaStream *")] PaStream* stream, [NativeTypeName("PaStreamFinishedCallback *")] PaStreamFinishedCallback streamFinishedCallback);
 
     [DllImport(dllName, CallingConvention = CallingConvention.Cdecl, ExactSpelling = true)]
     [return: NativeTypeName("PaError")]
