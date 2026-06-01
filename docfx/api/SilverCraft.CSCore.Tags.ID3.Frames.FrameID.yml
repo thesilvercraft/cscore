@@ -1,0 +1,2539 @@
+### YamlMime:ManagedReference
+items:
+- uid: SilverCraft.CSCore.Tags.ID3.Frames.FrameID
+  commentId: T:SilverCraft.CSCore.Tags.ID3.Frames.FrameID
+  id: FrameID
+  parent: SilverCraft.CSCore.Tags.ID3.Frames
+  children:
+  - SilverCraft.CSCore.Tags.ID3.Frames.FrameID.Album
+  - SilverCraft.CSCore.Tags.ID3.Frames.FrameID.AlbumSortOrder
+  - SilverCraft.CSCore.Tags.ID3.Frames.FrameID.AttachedPicutre
+  - SilverCraft.CSCore.Tags.ID3.Frames.FrameID.AudioEnctryption
+  - SilverCraft.CSCore.Tags.ID3.Frames.FrameID.AudioSeekPointIndex
+  - SilverCraft.CSCore.Tags.ID3.Frames.FrameID.Band
+  - SilverCraft.CSCore.Tags.ID3.Frames.FrameID.BeatsPerMinute
+  - SilverCraft.CSCore.Tags.ID3.Frames.FrameID.Comments
+  - SilverCraft.CSCore.Tags.ID3.Frames.FrameID.CommercialFrame
+  - SilverCraft.CSCore.Tags.ID3.Frames.FrameID.CommercialInformationURL
+  - SilverCraft.CSCore.Tags.ID3.Frames.FrameID.Composer
+  - SilverCraft.CSCore.Tags.ID3.Frames.FrameID.Conductor
+  - SilverCraft.CSCore.Tags.ID3.Frames.FrameID.ContentGroupDescription
+  - SilverCraft.CSCore.Tags.ID3.Frames.FrameID.ContentType
+  - SilverCraft.CSCore.Tags.ID3.Frames.FrameID.CopyrightMessage
+  - SilverCraft.CSCore.Tags.ID3.Frames.FrameID.CopyrightURL
+  - SilverCraft.CSCore.Tags.ID3.Frames.FrameID.Date
+  - SilverCraft.CSCore.Tags.ID3.Frames.FrameID.EncodedBy
+  - SilverCraft.CSCore.Tags.ID3.Frames.FrameID.EncodingSettings
+  - SilverCraft.CSCore.Tags.ID3.Frames.FrameID.EncodingTime
+  - SilverCraft.CSCore.Tags.ID3.Frames.FrameID.EncryptedMetaData
+  - SilverCraft.CSCore.Tags.ID3.Frames.FrameID.EncryptionMethodRegistration
+  - SilverCraft.CSCore.Tags.ID3.Frames.FrameID.Equalization
+  - SilverCraft.CSCore.Tags.ID3.Frames.FrameID.EqualizationOld
+  - SilverCraft.CSCore.Tags.ID3.Frames.FrameID.EventTimeingCodes
+  - SilverCraft.CSCore.Tags.ID3.Frames.FrameID.FileOwner
+  - SilverCraft.CSCore.Tags.ID3.Frames.FrameID.FileType
+  - SilverCraft.CSCore.Tags.ID3.Frames.FrameID.GeneralEncapsulatedObject
+  - SilverCraft.CSCore.Tags.ID3.Frames.FrameID.GroupIdentificationRegistration
+  - SilverCraft.CSCore.Tags.ID3.Frames.FrameID.ISRC
+  - SilverCraft.CSCore.Tags.ID3.Frames.FrameID.InitialKey
+  - SilverCraft.CSCore.Tags.ID3.Frames.FrameID.InternetRadioStationName
+  - SilverCraft.CSCore.Tags.ID3.Frames.FrameID.InternetRadioStationOwner
+  - SilverCraft.CSCore.Tags.ID3.Frames.FrameID.InternetRadioStationWebpage
+  - SilverCraft.CSCore.Tags.ID3.Frames.FrameID.Interpreted
+  - SilverCraft.CSCore.Tags.ID3.Frames.FrameID.InvolvedPeopleList
+  - SilverCraft.CSCore.Tags.ID3.Frames.FrameID.InvolvedPeopleListOld
+  - SilverCraft.CSCore.Tags.ID3.Frames.FrameID.Languages
+  - SilverCraft.CSCore.Tags.ID3.Frames.FrameID.LeadPerformers
+  - SilverCraft.CSCore.Tags.ID3.Frames.FrameID.Length
+  - SilverCraft.CSCore.Tags.ID3.Frames.FrameID.LinkedInformation
+  - SilverCraft.CSCore.Tags.ID3.Frames.FrameID.MPEGLocationLookupTable
+  - SilverCraft.CSCore.Tags.ID3.Frames.FrameID.MediaType
+  - SilverCraft.CSCore.Tags.ID3.Frames.FrameID.Mood
+  - SilverCraft.CSCore.Tags.ID3.Frames.FrameID.MusicCDIdentifier
+  - SilverCraft.CSCore.Tags.ID3.Frames.FrameID.MusicicanCreditsList
+  - SilverCraft.CSCore.Tags.ID3.Frames.FrameID.OfficialArtistWebpage
+  - SilverCraft.CSCore.Tags.ID3.Frames.FrameID.OfficialAudioFileWebpage
+  - SilverCraft.CSCore.Tags.ID3.Frames.FrameID.OfficialAudioSourceWebpage
+  - SilverCraft.CSCore.Tags.ID3.Frames.FrameID.OriginalAlbum
+  - SilverCraft.CSCore.Tags.ID3.Frames.FrameID.OriginalArtist
+  - SilverCraft.CSCore.Tags.ID3.Frames.FrameID.OriginalFileName
+  - SilverCraft.CSCore.Tags.ID3.Frames.FrameID.OriginalReleaseTime
+  - SilverCraft.CSCore.Tags.ID3.Frames.FrameID.OriginalReleaseYear
+  - SilverCraft.CSCore.Tags.ID3.Frames.FrameID.OriginalTextWriter
+  - SilverCraft.CSCore.Tags.ID3.Frames.FrameID.OwnershipFrame
+  - SilverCraft.CSCore.Tags.ID3.Frames.FrameID.PartOfASet
+  - SilverCraft.CSCore.Tags.ID3.Frames.FrameID.PaymentURL
+  - SilverCraft.CSCore.Tags.ID3.Frames.FrameID.PerformerSortOrder
+  - SilverCraft.CSCore.Tags.ID3.Frames.FrameID.PlayCounter
+  - SilverCraft.CSCore.Tags.ID3.Frames.FrameID.PlaylistDelay
+  - SilverCraft.CSCore.Tags.ID3.Frames.FrameID.Popularimeter
+  - SilverCraft.CSCore.Tags.ID3.Frames.FrameID.PositionSynchronisationFrame
+  - SilverCraft.CSCore.Tags.ID3.Frames.FrameID.PrivateFrame
+  - SilverCraft.CSCore.Tags.ID3.Frames.FrameID.ProducedNotice
+  - SilverCraft.CSCore.Tags.ID3.Frames.FrameID.Publisher
+  - SilverCraft.CSCore.Tags.ID3.Frames.FrameID.PublishersOfficialWebpage
+  - SilverCraft.CSCore.Tags.ID3.Frames.FrameID.RecommendedBufferSize
+  - SilverCraft.CSCore.Tags.ID3.Frames.FrameID.RecordingDates
+  - SilverCraft.CSCore.Tags.ID3.Frames.FrameID.RecordingTime
+  - SilverCraft.CSCore.Tags.ID3.Frames.FrameID.RelativeVolumeAdjustment
+  - SilverCraft.CSCore.Tags.ID3.Frames.FrameID.RelativeVolumeAdjustmentOld
+  - SilverCraft.CSCore.Tags.ID3.Frames.FrameID.ReleaseTime
+  - SilverCraft.CSCore.Tags.ID3.Frames.FrameID.Reverb
+  - SilverCraft.CSCore.Tags.ID3.Frames.FrameID.SetSubtitle
+  - SilverCraft.CSCore.Tags.ID3.Frames.FrameID.Size
+  - SilverCraft.CSCore.Tags.ID3.Frames.FrameID.Subtitle
+  - SilverCraft.CSCore.Tags.ID3.Frames.FrameID.SynchronizedLyrics
+  - SilverCraft.CSCore.Tags.ID3.Frames.FrameID.SynchronizedTempoCodes
+  - SilverCraft.CSCore.Tags.ID3.Frames.FrameID.TaggingTime
+  - SilverCraft.CSCore.Tags.ID3.Frames.FrameID.TermsOfUse
+  - SilverCraft.CSCore.Tags.ID3.Frames.FrameID.TextWriter
+  - SilverCraft.CSCore.Tags.ID3.Frames.FrameID.Time
+  - SilverCraft.CSCore.Tags.ID3.Frames.FrameID.Title
+  - SilverCraft.CSCore.Tags.ID3.Frames.FrameID.TitleSortOrder
+  - SilverCraft.CSCore.Tags.ID3.Frames.FrameID.TrackNumber
+  - SilverCraft.CSCore.Tags.ID3.Frames.FrameID.UniqueFileIdentifier
+  - SilverCraft.CSCore.Tags.ID3.Frames.FrameID.UnsynchronizedLyris
+  - SilverCraft.CSCore.Tags.ID3.Frames.FrameID.UserTextInformation
+  - SilverCraft.CSCore.Tags.ID3.Frames.FrameID.UserURLLinkFrame
+  - SilverCraft.CSCore.Tags.ID3.Frames.FrameID.Year
+  langs:
+  - csharp
+  - vb
+  name: FrameID
+  nameWithType: FrameID
+  fullName: SilverCraft.CSCore.Tags.ID3.Frames.FrameID
+  type: Enum
+  source:
+    remote:
+      path: SilverCraft.CSCore/Tags/ID3/Frames/FrameID.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: FrameID
+    path: ../SilverCraft.CSCore/Tags/ID3/Frames/FrameID.cs
+    startLine: 2
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Tags.ID3.Frames
+  syntax:
+    content: public enum FrameID
+    content.vb: Public Enum FrameID
+- uid: SilverCraft.CSCore.Tags.ID3.Frames.FrameID.AudioEnctryption
+  commentId: F:SilverCraft.CSCore.Tags.ID3.Frames.FrameID.AudioEnctryption
+  id: AudioEnctryption
+  parent: SilverCraft.CSCore.Tags.ID3.Frames.FrameID
+  langs:
+  - csharp
+  - vb
+  name: AudioEnctryption
+  nameWithType: FrameID.AudioEnctryption
+  fullName: SilverCraft.CSCore.Tags.ID3.Frames.FrameID.AudioEnctryption
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/Tags/ID3/Frames/FrameID.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: AudioEnctryption
+    path: ../SilverCraft.CSCore/Tags/ID3/Frames/FrameID.cs
+    startLine: 4
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Tags.ID3.Frames
+  syntax:
+    content: AudioEnctryption = 0
+    return:
+      type: SilverCraft.CSCore.Tags.ID3.Frames.FrameID
+- uid: SilverCraft.CSCore.Tags.ID3.Frames.FrameID.AttachedPicutre
+  commentId: F:SilverCraft.CSCore.Tags.ID3.Frames.FrameID.AttachedPicutre
+  id: AttachedPicutre
+  parent: SilverCraft.CSCore.Tags.ID3.Frames.FrameID
+  langs:
+  - csharp
+  - vb
+  name: AttachedPicutre
+  nameWithType: FrameID.AttachedPicutre
+  fullName: SilverCraft.CSCore.Tags.ID3.Frames.FrameID.AttachedPicutre
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/Tags/ID3/Frames/FrameID.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: AttachedPicutre
+    path: ../SilverCraft.CSCore/Tags/ID3/Frames/FrameID.cs
+    startLine: 5
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Tags.ID3.Frames
+  syntax:
+    content: AttachedPicutre = 1
+    return:
+      type: SilverCraft.CSCore.Tags.ID3.Frames.FrameID
+- uid: SilverCraft.CSCore.Tags.ID3.Frames.FrameID.Comments
+  commentId: F:SilverCraft.CSCore.Tags.ID3.Frames.FrameID.Comments
+  id: Comments
+  parent: SilverCraft.CSCore.Tags.ID3.Frames.FrameID
+  langs:
+  - csharp
+  - vb
+  name: Comments
+  nameWithType: FrameID.Comments
+  fullName: SilverCraft.CSCore.Tags.ID3.Frames.FrameID.Comments
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/Tags/ID3/Frames/FrameID.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: Comments
+    path: ../SilverCraft.CSCore/Tags/ID3/Frames/FrameID.cs
+    startLine: 6
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Tags.ID3.Frames
+  syntax:
+    content: Comments = 2
+    return:
+      type: SilverCraft.CSCore.Tags.ID3.Frames.FrameID
+- uid: SilverCraft.CSCore.Tags.ID3.Frames.FrameID.CommercialFrame
+  commentId: F:SilverCraft.CSCore.Tags.ID3.Frames.FrameID.CommercialFrame
+  id: CommercialFrame
+  parent: SilverCraft.CSCore.Tags.ID3.Frames.FrameID
+  langs:
+  - csharp
+  - vb
+  name: CommercialFrame
+  nameWithType: FrameID.CommercialFrame
+  fullName: SilverCraft.CSCore.Tags.ID3.Frames.FrameID.CommercialFrame
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/Tags/ID3/Frames/FrameID.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: CommercialFrame
+    path: ../SilverCraft.CSCore/Tags/ID3/Frames/FrameID.cs
+    startLine: 7
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Tags.ID3.Frames
+  syntax:
+    content: CommercialFrame = 3
+    return:
+      type: SilverCraft.CSCore.Tags.ID3.Frames.FrameID
+- uid: SilverCraft.CSCore.Tags.ID3.Frames.FrameID.EncryptionMethodRegistration
+  commentId: F:SilverCraft.CSCore.Tags.ID3.Frames.FrameID.EncryptionMethodRegistration
+  id: EncryptionMethodRegistration
+  parent: SilverCraft.CSCore.Tags.ID3.Frames.FrameID
+  langs:
+  - csharp
+  - vb
+  name: EncryptionMethodRegistration
+  nameWithType: FrameID.EncryptionMethodRegistration
+  fullName: SilverCraft.CSCore.Tags.ID3.Frames.FrameID.EncryptionMethodRegistration
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/Tags/ID3/Frames/FrameID.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: EncryptionMethodRegistration
+    path: ../SilverCraft.CSCore/Tags/ID3/Frames/FrameID.cs
+    startLine: 8
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Tags.ID3.Frames
+  syntax:
+    content: EncryptionMethodRegistration = 4
+    return:
+      type: SilverCraft.CSCore.Tags.ID3.Frames.FrameID
+- uid: SilverCraft.CSCore.Tags.ID3.Frames.FrameID.EncryptedMetaData
+  commentId: F:SilverCraft.CSCore.Tags.ID3.Frames.FrameID.EncryptedMetaData
+  id: EncryptedMetaData
+  parent: SilverCraft.CSCore.Tags.ID3.Frames.FrameID
+  langs:
+  - csharp
+  - vb
+  name: EncryptedMetaData
+  nameWithType: FrameID.EncryptedMetaData
+  fullName: SilverCraft.CSCore.Tags.ID3.Frames.FrameID.EncryptedMetaData
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/Tags/ID3/Frames/FrameID.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: EncryptedMetaData
+    path: ../SilverCraft.CSCore/Tags/ID3/Frames/FrameID.cs
+    startLine: 9
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Tags.ID3.Frames
+  syntax:
+    content: EncryptedMetaData = 5
+    return:
+      type: SilverCraft.CSCore.Tags.ID3.Frames.FrameID
+- uid: SilverCraft.CSCore.Tags.ID3.Frames.FrameID.Equalization
+  commentId: F:SilverCraft.CSCore.Tags.ID3.Frames.FrameID.Equalization
+  id: Equalization
+  parent: SilverCraft.CSCore.Tags.ID3.Frames.FrameID
+  langs:
+  - csharp
+  - vb
+  name: Equalization
+  nameWithType: FrameID.Equalization
+  fullName: SilverCraft.CSCore.Tags.ID3.Frames.FrameID.Equalization
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/Tags/ID3/Frames/FrameID.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: Equalization
+    path: ../SilverCraft.CSCore/Tags/ID3/Frames/FrameID.cs
+    startLine: 10
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Tags.ID3.Frames
+  syntax:
+    content: Equalization = 6
+    return:
+      type: SilverCraft.CSCore.Tags.ID3.Frames.FrameID
+- uid: SilverCraft.CSCore.Tags.ID3.Frames.FrameID.EqualizationOld
+  commentId: F:SilverCraft.CSCore.Tags.ID3.Frames.FrameID.EqualizationOld
+  id: EqualizationOld
+  parent: SilverCraft.CSCore.Tags.ID3.Frames.FrameID
+  langs:
+  - csharp
+  - vb
+  name: EqualizationOld
+  nameWithType: FrameID.EqualizationOld
+  fullName: SilverCraft.CSCore.Tags.ID3.Frames.FrameID.EqualizationOld
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/Tags/ID3/Frames/FrameID.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: EqualizationOld
+    path: ../SilverCraft.CSCore/Tags/ID3/Frames/FrameID.cs
+    startLine: 11
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Tags.ID3.Frames
+  syntax:
+    content: EqualizationOld = 7
+    return:
+      type: SilverCraft.CSCore.Tags.ID3.Frames.FrameID
+- uid: SilverCraft.CSCore.Tags.ID3.Frames.FrameID.EventTimeingCodes
+  commentId: F:SilverCraft.CSCore.Tags.ID3.Frames.FrameID.EventTimeingCodes
+  id: EventTimeingCodes
+  parent: SilverCraft.CSCore.Tags.ID3.Frames.FrameID
+  langs:
+  - csharp
+  - vb
+  name: EventTimeingCodes
+  nameWithType: FrameID.EventTimeingCodes
+  fullName: SilverCraft.CSCore.Tags.ID3.Frames.FrameID.EventTimeingCodes
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/Tags/ID3/Frames/FrameID.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: EventTimeingCodes
+    path: ../SilverCraft.CSCore/Tags/ID3/Frames/FrameID.cs
+    startLine: 12
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Tags.ID3.Frames
+  syntax:
+    content: EventTimeingCodes = 8
+    return:
+      type: SilverCraft.CSCore.Tags.ID3.Frames.FrameID
+- uid: SilverCraft.CSCore.Tags.ID3.Frames.FrameID.GeneralEncapsulatedObject
+  commentId: F:SilverCraft.CSCore.Tags.ID3.Frames.FrameID.GeneralEncapsulatedObject
+  id: GeneralEncapsulatedObject
+  parent: SilverCraft.CSCore.Tags.ID3.Frames.FrameID
+  langs:
+  - csharp
+  - vb
+  name: GeneralEncapsulatedObject
+  nameWithType: FrameID.GeneralEncapsulatedObject
+  fullName: SilverCraft.CSCore.Tags.ID3.Frames.FrameID.GeneralEncapsulatedObject
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/Tags/ID3/Frames/FrameID.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: GeneralEncapsulatedObject
+    path: ../SilverCraft.CSCore/Tags/ID3/Frames/FrameID.cs
+    startLine: 13
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Tags.ID3.Frames
+  syntax:
+    content: GeneralEncapsulatedObject = 9
+    return:
+      type: SilverCraft.CSCore.Tags.ID3.Frames.FrameID
+- uid: SilverCraft.CSCore.Tags.ID3.Frames.FrameID.GroupIdentificationRegistration
+  commentId: F:SilverCraft.CSCore.Tags.ID3.Frames.FrameID.GroupIdentificationRegistration
+  id: GroupIdentificationRegistration
+  parent: SilverCraft.CSCore.Tags.ID3.Frames.FrameID
+  langs:
+  - csharp
+  - vb
+  name: GroupIdentificationRegistration
+  nameWithType: FrameID.GroupIdentificationRegistration
+  fullName: SilverCraft.CSCore.Tags.ID3.Frames.FrameID.GroupIdentificationRegistration
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/Tags/ID3/Frames/FrameID.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: GroupIdentificationRegistration
+    path: ../SilverCraft.CSCore/Tags/ID3/Frames/FrameID.cs
+    startLine: 14
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Tags.ID3.Frames
+  syntax:
+    content: GroupIdentificationRegistration = 10
+    return:
+      type: SilverCraft.CSCore.Tags.ID3.Frames.FrameID
+- uid: SilverCraft.CSCore.Tags.ID3.Frames.FrameID.InvolvedPeopleList
+  commentId: F:SilverCraft.CSCore.Tags.ID3.Frames.FrameID.InvolvedPeopleList
+  id: InvolvedPeopleList
+  parent: SilverCraft.CSCore.Tags.ID3.Frames.FrameID
+  langs:
+  - csharp
+  - vb
+  name: InvolvedPeopleList
+  nameWithType: FrameID.InvolvedPeopleList
+  fullName: SilverCraft.CSCore.Tags.ID3.Frames.FrameID.InvolvedPeopleList
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/Tags/ID3/Frames/FrameID.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: InvolvedPeopleList
+    path: ../SilverCraft.CSCore/Tags/ID3/Frames/FrameID.cs
+    startLine: 15
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Tags.ID3.Frames
+  syntax:
+    content: InvolvedPeopleList = 11
+    return:
+      type: SilverCraft.CSCore.Tags.ID3.Frames.FrameID
+- uid: SilverCraft.CSCore.Tags.ID3.Frames.FrameID.InvolvedPeopleListOld
+  commentId: F:SilverCraft.CSCore.Tags.ID3.Frames.FrameID.InvolvedPeopleListOld
+  id: InvolvedPeopleListOld
+  parent: SilverCraft.CSCore.Tags.ID3.Frames.FrameID
+  langs:
+  - csharp
+  - vb
+  name: InvolvedPeopleListOld
+  nameWithType: FrameID.InvolvedPeopleListOld
+  fullName: SilverCraft.CSCore.Tags.ID3.Frames.FrameID.InvolvedPeopleListOld
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/Tags/ID3/Frames/FrameID.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: InvolvedPeopleListOld
+    path: ../SilverCraft.CSCore/Tags/ID3/Frames/FrameID.cs
+    startLine: 16
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Tags.ID3.Frames
+  syntax:
+    content: InvolvedPeopleListOld = 12
+    return:
+      type: SilverCraft.CSCore.Tags.ID3.Frames.FrameID
+- uid: SilverCraft.CSCore.Tags.ID3.Frames.FrameID.LinkedInformation
+  commentId: F:SilverCraft.CSCore.Tags.ID3.Frames.FrameID.LinkedInformation
+  id: LinkedInformation
+  parent: SilverCraft.CSCore.Tags.ID3.Frames.FrameID
+  langs:
+  - csharp
+  - vb
+  name: LinkedInformation
+  nameWithType: FrameID.LinkedInformation
+  fullName: SilverCraft.CSCore.Tags.ID3.Frames.FrameID.LinkedInformation
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/Tags/ID3/Frames/FrameID.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: LinkedInformation
+    path: ../SilverCraft.CSCore/Tags/ID3/Frames/FrameID.cs
+    startLine: 17
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Tags.ID3.Frames
+  syntax:
+    content: LinkedInformation = 13
+    return:
+      type: SilverCraft.CSCore.Tags.ID3.Frames.FrameID
+- uid: SilverCraft.CSCore.Tags.ID3.Frames.FrameID.MusicCDIdentifier
+  commentId: F:SilverCraft.CSCore.Tags.ID3.Frames.FrameID.MusicCDIdentifier
+  id: MusicCDIdentifier
+  parent: SilverCraft.CSCore.Tags.ID3.Frames.FrameID
+  langs:
+  - csharp
+  - vb
+  name: MusicCDIdentifier
+  nameWithType: FrameID.MusicCDIdentifier
+  fullName: SilverCraft.CSCore.Tags.ID3.Frames.FrameID.MusicCDIdentifier
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/Tags/ID3/Frames/FrameID.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: MusicCDIdentifier
+    path: ../SilverCraft.CSCore/Tags/ID3/Frames/FrameID.cs
+    startLine: 18
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Tags.ID3.Frames
+  syntax:
+    content: MusicCDIdentifier = 14
+    return:
+      type: SilverCraft.CSCore.Tags.ID3.Frames.FrameID
+- uid: SilverCraft.CSCore.Tags.ID3.Frames.FrameID.MPEGLocationLookupTable
+  commentId: F:SilverCraft.CSCore.Tags.ID3.Frames.FrameID.MPEGLocationLookupTable
+  id: MPEGLocationLookupTable
+  parent: SilverCraft.CSCore.Tags.ID3.Frames.FrameID
+  langs:
+  - csharp
+  - vb
+  name: MPEGLocationLookupTable
+  nameWithType: FrameID.MPEGLocationLookupTable
+  fullName: SilverCraft.CSCore.Tags.ID3.Frames.FrameID.MPEGLocationLookupTable
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/Tags/ID3/Frames/FrameID.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: MPEGLocationLookupTable
+    path: ../SilverCraft.CSCore/Tags/ID3/Frames/FrameID.cs
+    startLine: 19
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Tags.ID3.Frames
+  syntax:
+    content: MPEGLocationLookupTable = 15
+    return:
+      type: SilverCraft.CSCore.Tags.ID3.Frames.FrameID
+- uid: SilverCraft.CSCore.Tags.ID3.Frames.FrameID.OwnershipFrame
+  commentId: F:SilverCraft.CSCore.Tags.ID3.Frames.FrameID.OwnershipFrame
+  id: OwnershipFrame
+  parent: SilverCraft.CSCore.Tags.ID3.Frames.FrameID
+  langs:
+  - csharp
+  - vb
+  name: OwnershipFrame
+  nameWithType: FrameID.OwnershipFrame
+  fullName: SilverCraft.CSCore.Tags.ID3.Frames.FrameID.OwnershipFrame
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/Tags/ID3/Frames/FrameID.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: OwnershipFrame
+    path: ../SilverCraft.CSCore/Tags/ID3/Frames/FrameID.cs
+    startLine: 20
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Tags.ID3.Frames
+  syntax:
+    content: OwnershipFrame = 16
+    return:
+      type: SilverCraft.CSCore.Tags.ID3.Frames.FrameID
+- uid: SilverCraft.CSCore.Tags.ID3.Frames.FrameID.PrivateFrame
+  commentId: F:SilverCraft.CSCore.Tags.ID3.Frames.FrameID.PrivateFrame
+  id: PrivateFrame
+  parent: SilverCraft.CSCore.Tags.ID3.Frames.FrameID
+  langs:
+  - csharp
+  - vb
+  name: PrivateFrame
+  nameWithType: FrameID.PrivateFrame
+  fullName: SilverCraft.CSCore.Tags.ID3.Frames.FrameID.PrivateFrame
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/Tags/ID3/Frames/FrameID.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: PrivateFrame
+    path: ../SilverCraft.CSCore/Tags/ID3/Frames/FrameID.cs
+    startLine: 21
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Tags.ID3.Frames
+  syntax:
+    content: PrivateFrame = 17
+    return:
+      type: SilverCraft.CSCore.Tags.ID3.Frames.FrameID
+- uid: SilverCraft.CSCore.Tags.ID3.Frames.FrameID.PlayCounter
+  commentId: F:SilverCraft.CSCore.Tags.ID3.Frames.FrameID.PlayCounter
+  id: PlayCounter
+  parent: SilverCraft.CSCore.Tags.ID3.Frames.FrameID
+  langs:
+  - csharp
+  - vb
+  name: PlayCounter
+  nameWithType: FrameID.PlayCounter
+  fullName: SilverCraft.CSCore.Tags.ID3.Frames.FrameID.PlayCounter
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/Tags/ID3/Frames/FrameID.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: PlayCounter
+    path: ../SilverCraft.CSCore/Tags/ID3/Frames/FrameID.cs
+    startLine: 22
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Tags.ID3.Frames
+  syntax:
+    content: PlayCounter = 18
+    return:
+      type: SilverCraft.CSCore.Tags.ID3.Frames.FrameID
+- uid: SilverCraft.CSCore.Tags.ID3.Frames.FrameID.Popularimeter
+  commentId: F:SilverCraft.CSCore.Tags.ID3.Frames.FrameID.Popularimeter
+  id: Popularimeter
+  parent: SilverCraft.CSCore.Tags.ID3.Frames.FrameID
+  langs:
+  - csharp
+  - vb
+  name: Popularimeter
+  nameWithType: FrameID.Popularimeter
+  fullName: SilverCraft.CSCore.Tags.ID3.Frames.FrameID.Popularimeter
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/Tags/ID3/Frames/FrameID.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: Popularimeter
+    path: ../SilverCraft.CSCore/Tags/ID3/Frames/FrameID.cs
+    startLine: 23
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Tags.ID3.Frames
+  syntax:
+    content: Popularimeter = 19
+    return:
+      type: SilverCraft.CSCore.Tags.ID3.Frames.FrameID
+- uid: SilverCraft.CSCore.Tags.ID3.Frames.FrameID.PositionSynchronisationFrame
+  commentId: F:SilverCraft.CSCore.Tags.ID3.Frames.FrameID.PositionSynchronisationFrame
+  id: PositionSynchronisationFrame
+  parent: SilverCraft.CSCore.Tags.ID3.Frames.FrameID
+  langs:
+  - csharp
+  - vb
+  name: PositionSynchronisationFrame
+  nameWithType: FrameID.PositionSynchronisationFrame
+  fullName: SilverCraft.CSCore.Tags.ID3.Frames.FrameID.PositionSynchronisationFrame
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/Tags/ID3/Frames/FrameID.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: PositionSynchronisationFrame
+    path: ../SilverCraft.CSCore/Tags/ID3/Frames/FrameID.cs
+    startLine: 24
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Tags.ID3.Frames
+  syntax:
+    content: PositionSynchronisationFrame = 20
+    return:
+      type: SilverCraft.CSCore.Tags.ID3.Frames.FrameID
+- uid: SilverCraft.CSCore.Tags.ID3.Frames.FrameID.RecommendedBufferSize
+  commentId: F:SilverCraft.CSCore.Tags.ID3.Frames.FrameID.RecommendedBufferSize
+  id: RecommendedBufferSize
+  parent: SilverCraft.CSCore.Tags.ID3.Frames.FrameID
+  langs:
+  - csharp
+  - vb
+  name: RecommendedBufferSize
+  nameWithType: FrameID.RecommendedBufferSize
+  fullName: SilverCraft.CSCore.Tags.ID3.Frames.FrameID.RecommendedBufferSize
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/Tags/ID3/Frames/FrameID.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: RecommendedBufferSize
+    path: ../SilverCraft.CSCore/Tags/ID3/Frames/FrameID.cs
+    startLine: 25
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Tags.ID3.Frames
+  syntax:
+    content: RecommendedBufferSize = 21
+    return:
+      type: SilverCraft.CSCore.Tags.ID3.Frames.FrameID
+- uid: SilverCraft.CSCore.Tags.ID3.Frames.FrameID.RelativeVolumeAdjustment
+  commentId: F:SilverCraft.CSCore.Tags.ID3.Frames.FrameID.RelativeVolumeAdjustment
+  id: RelativeVolumeAdjustment
+  parent: SilverCraft.CSCore.Tags.ID3.Frames.FrameID
+  langs:
+  - csharp
+  - vb
+  name: RelativeVolumeAdjustment
+  nameWithType: FrameID.RelativeVolumeAdjustment
+  fullName: SilverCraft.CSCore.Tags.ID3.Frames.FrameID.RelativeVolumeAdjustment
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/Tags/ID3/Frames/FrameID.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: RelativeVolumeAdjustment
+    path: ../SilverCraft.CSCore/Tags/ID3/Frames/FrameID.cs
+    startLine: 26
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Tags.ID3.Frames
+  syntax:
+    content: RelativeVolumeAdjustment = 22
+    return:
+      type: SilverCraft.CSCore.Tags.ID3.Frames.FrameID
+- uid: SilverCraft.CSCore.Tags.ID3.Frames.FrameID.RelativeVolumeAdjustmentOld
+  commentId: F:SilverCraft.CSCore.Tags.ID3.Frames.FrameID.RelativeVolumeAdjustmentOld
+  id: RelativeVolumeAdjustmentOld
+  parent: SilverCraft.CSCore.Tags.ID3.Frames.FrameID
+  langs:
+  - csharp
+  - vb
+  name: RelativeVolumeAdjustmentOld
+  nameWithType: FrameID.RelativeVolumeAdjustmentOld
+  fullName: SilverCraft.CSCore.Tags.ID3.Frames.FrameID.RelativeVolumeAdjustmentOld
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/Tags/ID3/Frames/FrameID.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: RelativeVolumeAdjustmentOld
+    path: ../SilverCraft.CSCore/Tags/ID3/Frames/FrameID.cs
+    startLine: 27
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Tags.ID3.Frames
+  syntax:
+    content: RelativeVolumeAdjustmentOld = 23
+    return:
+      type: SilverCraft.CSCore.Tags.ID3.Frames.FrameID
+- uid: SilverCraft.CSCore.Tags.ID3.Frames.FrameID.Reverb
+  commentId: F:SilverCraft.CSCore.Tags.ID3.Frames.FrameID.Reverb
+  id: Reverb
+  parent: SilverCraft.CSCore.Tags.ID3.Frames.FrameID
+  langs:
+  - csharp
+  - vb
+  name: Reverb
+  nameWithType: FrameID.Reverb
+  fullName: SilverCraft.CSCore.Tags.ID3.Frames.FrameID.Reverb
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/Tags/ID3/Frames/FrameID.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: Reverb
+    path: ../SilverCraft.CSCore/Tags/ID3/Frames/FrameID.cs
+    startLine: 28
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Tags.ID3.Frames
+  syntax:
+    content: Reverb = 24
+    return:
+      type: SilverCraft.CSCore.Tags.ID3.Frames.FrameID
+- uid: SilverCraft.CSCore.Tags.ID3.Frames.FrameID.SynchronizedLyrics
+  commentId: F:SilverCraft.CSCore.Tags.ID3.Frames.FrameID.SynchronizedLyrics
+  id: SynchronizedLyrics
+  parent: SilverCraft.CSCore.Tags.ID3.Frames.FrameID
+  langs:
+  - csharp
+  - vb
+  name: SynchronizedLyrics
+  nameWithType: FrameID.SynchronizedLyrics
+  fullName: SilverCraft.CSCore.Tags.ID3.Frames.FrameID.SynchronizedLyrics
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/Tags/ID3/Frames/FrameID.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: SynchronizedLyrics
+    path: ../SilverCraft.CSCore/Tags/ID3/Frames/FrameID.cs
+    startLine: 29
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Tags.ID3.Frames
+  syntax:
+    content: SynchronizedLyrics = 25
+    return:
+      type: SilverCraft.CSCore.Tags.ID3.Frames.FrameID
+- uid: SilverCraft.CSCore.Tags.ID3.Frames.FrameID.SynchronizedTempoCodes
+  commentId: F:SilverCraft.CSCore.Tags.ID3.Frames.FrameID.SynchronizedTempoCodes
+  id: SynchronizedTempoCodes
+  parent: SilverCraft.CSCore.Tags.ID3.Frames.FrameID
+  langs:
+  - csharp
+  - vb
+  name: SynchronizedTempoCodes
+  nameWithType: FrameID.SynchronizedTempoCodes
+  fullName: SilverCraft.CSCore.Tags.ID3.Frames.FrameID.SynchronizedTempoCodes
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/Tags/ID3/Frames/FrameID.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: SynchronizedTempoCodes
+    path: ../SilverCraft.CSCore/Tags/ID3/Frames/FrameID.cs
+    startLine: 30
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Tags.ID3.Frames
+  syntax:
+    content: SynchronizedTempoCodes = 26
+    return:
+      type: SilverCraft.CSCore.Tags.ID3.Frames.FrameID
+- uid: SilverCraft.CSCore.Tags.ID3.Frames.FrameID.Album
+  commentId: F:SilverCraft.CSCore.Tags.ID3.Frames.FrameID.Album
+  id: Album
+  parent: SilverCraft.CSCore.Tags.ID3.Frames.FrameID
+  langs:
+  - csharp
+  - vb
+  name: Album
+  nameWithType: FrameID.Album
+  fullName: SilverCraft.CSCore.Tags.ID3.Frames.FrameID.Album
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/Tags/ID3/Frames/FrameID.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: Album
+    path: ../SilverCraft.CSCore/Tags/ID3/Frames/FrameID.cs
+    startLine: 31
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Tags.ID3.Frames
+  syntax:
+    content: Album = 27
+    return:
+      type: SilverCraft.CSCore.Tags.ID3.Frames.FrameID
+- uid: SilverCraft.CSCore.Tags.ID3.Frames.FrameID.BeatsPerMinute
+  commentId: F:SilverCraft.CSCore.Tags.ID3.Frames.FrameID.BeatsPerMinute
+  id: BeatsPerMinute
+  parent: SilverCraft.CSCore.Tags.ID3.Frames.FrameID
+  langs:
+  - csharp
+  - vb
+  name: BeatsPerMinute
+  nameWithType: FrameID.BeatsPerMinute
+  fullName: SilverCraft.CSCore.Tags.ID3.Frames.FrameID.BeatsPerMinute
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/Tags/ID3/Frames/FrameID.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: BeatsPerMinute
+    path: ../SilverCraft.CSCore/Tags/ID3/Frames/FrameID.cs
+    startLine: 32
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Tags.ID3.Frames
+  syntax:
+    content: BeatsPerMinute = 28
+    return:
+      type: SilverCraft.CSCore.Tags.ID3.Frames.FrameID
+- uid: SilverCraft.CSCore.Tags.ID3.Frames.FrameID.Composer
+  commentId: F:SilverCraft.CSCore.Tags.ID3.Frames.FrameID.Composer
+  id: Composer
+  parent: SilverCraft.CSCore.Tags.ID3.Frames.FrameID
+  langs:
+  - csharp
+  - vb
+  name: Composer
+  nameWithType: FrameID.Composer
+  fullName: SilverCraft.CSCore.Tags.ID3.Frames.FrameID.Composer
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/Tags/ID3/Frames/FrameID.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: Composer
+    path: ../SilverCraft.CSCore/Tags/ID3/Frames/FrameID.cs
+    startLine: 33
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Tags.ID3.Frames
+  syntax:
+    content: Composer = 29
+    return:
+      type: SilverCraft.CSCore.Tags.ID3.Frames.FrameID
+- uid: SilverCraft.CSCore.Tags.ID3.Frames.FrameID.ContentType
+  commentId: F:SilverCraft.CSCore.Tags.ID3.Frames.FrameID.ContentType
+  id: ContentType
+  parent: SilverCraft.CSCore.Tags.ID3.Frames.FrameID
+  langs:
+  - csharp
+  - vb
+  name: ContentType
+  nameWithType: FrameID.ContentType
+  fullName: SilverCraft.CSCore.Tags.ID3.Frames.FrameID.ContentType
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/Tags/ID3/Frames/FrameID.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: ContentType
+    path: ../SilverCraft.CSCore/Tags/ID3/Frames/FrameID.cs
+    startLine: 34
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Tags.ID3.Frames
+  syntax:
+    content: ContentType = 30
+    return:
+      type: SilverCraft.CSCore.Tags.ID3.Frames.FrameID
+- uid: SilverCraft.CSCore.Tags.ID3.Frames.FrameID.CopyrightMessage
+  commentId: F:SilverCraft.CSCore.Tags.ID3.Frames.FrameID.CopyrightMessage
+  id: CopyrightMessage
+  parent: SilverCraft.CSCore.Tags.ID3.Frames.FrameID
+  langs:
+  - csharp
+  - vb
+  name: CopyrightMessage
+  nameWithType: FrameID.CopyrightMessage
+  fullName: SilverCraft.CSCore.Tags.ID3.Frames.FrameID.CopyrightMessage
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/Tags/ID3/Frames/FrameID.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: CopyrightMessage
+    path: ../SilverCraft.CSCore/Tags/ID3/Frames/FrameID.cs
+    startLine: 35
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Tags.ID3.Frames
+  syntax:
+    content: CopyrightMessage = 31
+    return:
+      type: SilverCraft.CSCore.Tags.ID3.Frames.FrameID
+- uid: SilverCraft.CSCore.Tags.ID3.Frames.FrameID.Date
+  commentId: F:SilverCraft.CSCore.Tags.ID3.Frames.FrameID.Date
+  id: Date
+  parent: SilverCraft.CSCore.Tags.ID3.Frames.FrameID
+  langs:
+  - csharp
+  - vb
+  name: Date
+  nameWithType: FrameID.Date
+  fullName: SilverCraft.CSCore.Tags.ID3.Frames.FrameID.Date
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/Tags/ID3/Frames/FrameID.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: Date
+    path: ../SilverCraft.CSCore/Tags/ID3/Frames/FrameID.cs
+    startLine: 36
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Tags.ID3.Frames
+  syntax:
+    content: Date = 32
+    return:
+      type: SilverCraft.CSCore.Tags.ID3.Frames.FrameID
+- uid: SilverCraft.CSCore.Tags.ID3.Frames.FrameID.PlaylistDelay
+  commentId: F:SilverCraft.CSCore.Tags.ID3.Frames.FrameID.PlaylistDelay
+  id: PlaylistDelay
+  parent: SilverCraft.CSCore.Tags.ID3.Frames.FrameID
+  langs:
+  - csharp
+  - vb
+  name: PlaylistDelay
+  nameWithType: FrameID.PlaylistDelay
+  fullName: SilverCraft.CSCore.Tags.ID3.Frames.FrameID.PlaylistDelay
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/Tags/ID3/Frames/FrameID.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: PlaylistDelay
+    path: ../SilverCraft.CSCore/Tags/ID3/Frames/FrameID.cs
+    startLine: 37
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Tags.ID3.Frames
+  syntax:
+    content: PlaylistDelay = 33
+    return:
+      type: SilverCraft.CSCore.Tags.ID3.Frames.FrameID
+- uid: SilverCraft.CSCore.Tags.ID3.Frames.FrameID.EncodedBy
+  commentId: F:SilverCraft.CSCore.Tags.ID3.Frames.FrameID.EncodedBy
+  id: EncodedBy
+  parent: SilverCraft.CSCore.Tags.ID3.Frames.FrameID
+  langs:
+  - csharp
+  - vb
+  name: EncodedBy
+  nameWithType: FrameID.EncodedBy
+  fullName: SilverCraft.CSCore.Tags.ID3.Frames.FrameID.EncodedBy
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/Tags/ID3/Frames/FrameID.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: EncodedBy
+    path: ../SilverCraft.CSCore/Tags/ID3/Frames/FrameID.cs
+    startLine: 38
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Tags.ID3.Frames
+  syntax:
+    content: EncodedBy = 34
+    return:
+      type: SilverCraft.CSCore.Tags.ID3.Frames.FrameID
+- uid: SilverCraft.CSCore.Tags.ID3.Frames.FrameID.TextWriter
+  commentId: F:SilverCraft.CSCore.Tags.ID3.Frames.FrameID.TextWriter
+  id: TextWriter
+  parent: SilverCraft.CSCore.Tags.ID3.Frames.FrameID
+  langs:
+  - csharp
+  - vb
+  name: TextWriter
+  nameWithType: FrameID.TextWriter
+  fullName: SilverCraft.CSCore.Tags.ID3.Frames.FrameID.TextWriter
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/Tags/ID3/Frames/FrameID.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: TextWriter
+    path: ../SilverCraft.CSCore/Tags/ID3/Frames/FrameID.cs
+    startLine: 39
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Tags.ID3.Frames
+  syntax:
+    content: TextWriter = 35
+    return:
+      type: SilverCraft.CSCore.Tags.ID3.Frames.FrameID
+- uid: SilverCraft.CSCore.Tags.ID3.Frames.FrameID.FileType
+  commentId: F:SilverCraft.CSCore.Tags.ID3.Frames.FrameID.FileType
+  id: FileType
+  parent: SilverCraft.CSCore.Tags.ID3.Frames.FrameID
+  langs:
+  - csharp
+  - vb
+  name: FileType
+  nameWithType: FrameID.FileType
+  fullName: SilverCraft.CSCore.Tags.ID3.Frames.FrameID.FileType
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/Tags/ID3/Frames/FrameID.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: FileType
+    path: ../SilverCraft.CSCore/Tags/ID3/Frames/FrameID.cs
+    startLine: 40
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Tags.ID3.Frames
+  syntax:
+    content: FileType = 36
+    return:
+      type: SilverCraft.CSCore.Tags.ID3.Frames.FrameID
+- uid: SilverCraft.CSCore.Tags.ID3.Frames.FrameID.Time
+  commentId: F:SilverCraft.CSCore.Tags.ID3.Frames.FrameID.Time
+  id: Time
+  parent: SilverCraft.CSCore.Tags.ID3.Frames.FrameID
+  langs:
+  - csharp
+  - vb
+  name: Time
+  nameWithType: FrameID.Time
+  fullName: SilverCraft.CSCore.Tags.ID3.Frames.FrameID.Time
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/Tags/ID3/Frames/FrameID.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: Time
+    path: ../SilverCraft.CSCore/Tags/ID3/Frames/FrameID.cs
+    startLine: 41
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Tags.ID3.Frames
+  syntax:
+    content: Time = 37
+    return:
+      type: SilverCraft.CSCore.Tags.ID3.Frames.FrameID
+- uid: SilverCraft.CSCore.Tags.ID3.Frames.FrameID.ContentGroupDescription
+  commentId: F:SilverCraft.CSCore.Tags.ID3.Frames.FrameID.ContentGroupDescription
+  id: ContentGroupDescription
+  parent: SilverCraft.CSCore.Tags.ID3.Frames.FrameID
+  langs:
+  - csharp
+  - vb
+  name: ContentGroupDescription
+  nameWithType: FrameID.ContentGroupDescription
+  fullName: SilverCraft.CSCore.Tags.ID3.Frames.FrameID.ContentGroupDescription
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/Tags/ID3/Frames/FrameID.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: ContentGroupDescription
+    path: ../SilverCraft.CSCore/Tags/ID3/Frames/FrameID.cs
+    startLine: 42
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Tags.ID3.Frames
+  syntax:
+    content: ContentGroupDescription = 38
+    return:
+      type: SilverCraft.CSCore.Tags.ID3.Frames.FrameID
+- uid: SilverCraft.CSCore.Tags.ID3.Frames.FrameID.Title
+  commentId: F:SilverCraft.CSCore.Tags.ID3.Frames.FrameID.Title
+  id: Title
+  parent: SilverCraft.CSCore.Tags.ID3.Frames.FrameID
+  langs:
+  - csharp
+  - vb
+  name: Title
+  nameWithType: FrameID.Title
+  fullName: SilverCraft.CSCore.Tags.ID3.Frames.FrameID.Title
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/Tags/ID3/Frames/FrameID.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: Title
+    path: ../SilverCraft.CSCore/Tags/ID3/Frames/FrameID.cs
+    startLine: 43
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Tags.ID3.Frames
+  syntax:
+    content: Title = 39
+    return:
+      type: SilverCraft.CSCore.Tags.ID3.Frames.FrameID
+- uid: SilverCraft.CSCore.Tags.ID3.Frames.FrameID.Subtitle
+  commentId: F:SilverCraft.CSCore.Tags.ID3.Frames.FrameID.Subtitle
+  id: Subtitle
+  parent: SilverCraft.CSCore.Tags.ID3.Frames.FrameID
+  langs:
+  - csharp
+  - vb
+  name: Subtitle
+  nameWithType: FrameID.Subtitle
+  fullName: SilverCraft.CSCore.Tags.ID3.Frames.FrameID.Subtitle
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/Tags/ID3/Frames/FrameID.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: Subtitle
+    path: ../SilverCraft.CSCore/Tags/ID3/Frames/FrameID.cs
+    startLine: 44
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Tags.ID3.Frames
+  syntax:
+    content: Subtitle = 40
+    return:
+      type: SilverCraft.CSCore.Tags.ID3.Frames.FrameID
+- uid: SilverCraft.CSCore.Tags.ID3.Frames.FrameID.InitialKey
+  commentId: F:SilverCraft.CSCore.Tags.ID3.Frames.FrameID.InitialKey
+  id: InitialKey
+  parent: SilverCraft.CSCore.Tags.ID3.Frames.FrameID
+  langs:
+  - csharp
+  - vb
+  name: InitialKey
+  nameWithType: FrameID.InitialKey
+  fullName: SilverCraft.CSCore.Tags.ID3.Frames.FrameID.InitialKey
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/Tags/ID3/Frames/FrameID.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: InitialKey
+    path: ../SilverCraft.CSCore/Tags/ID3/Frames/FrameID.cs
+    startLine: 45
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Tags.ID3.Frames
+  syntax:
+    content: InitialKey = 41
+    return:
+      type: SilverCraft.CSCore.Tags.ID3.Frames.FrameID
+- uid: SilverCraft.CSCore.Tags.ID3.Frames.FrameID.Languages
+  commentId: F:SilverCraft.CSCore.Tags.ID3.Frames.FrameID.Languages
+  id: Languages
+  parent: SilverCraft.CSCore.Tags.ID3.Frames.FrameID
+  langs:
+  - csharp
+  - vb
+  name: Languages
+  nameWithType: FrameID.Languages
+  fullName: SilverCraft.CSCore.Tags.ID3.Frames.FrameID.Languages
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/Tags/ID3/Frames/FrameID.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: Languages
+    path: ../SilverCraft.CSCore/Tags/ID3/Frames/FrameID.cs
+    startLine: 46
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Tags.ID3.Frames
+  syntax:
+    content: Languages = 42
+    return:
+      type: SilverCraft.CSCore.Tags.ID3.Frames.FrameID
+- uid: SilverCraft.CSCore.Tags.ID3.Frames.FrameID.Length
+  commentId: F:SilverCraft.CSCore.Tags.ID3.Frames.FrameID.Length
+  id: Length
+  parent: SilverCraft.CSCore.Tags.ID3.Frames.FrameID
+  langs:
+  - csharp
+  - vb
+  name: Length
+  nameWithType: FrameID.Length
+  fullName: SilverCraft.CSCore.Tags.ID3.Frames.FrameID.Length
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/Tags/ID3/Frames/FrameID.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: Length
+    path: ../SilverCraft.CSCore/Tags/ID3/Frames/FrameID.cs
+    startLine: 47
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Tags.ID3.Frames
+  syntax:
+    content: Length = 43
+    return:
+      type: SilverCraft.CSCore.Tags.ID3.Frames.FrameID
+- uid: SilverCraft.CSCore.Tags.ID3.Frames.FrameID.MediaType
+  commentId: F:SilverCraft.CSCore.Tags.ID3.Frames.FrameID.MediaType
+  id: MediaType
+  parent: SilverCraft.CSCore.Tags.ID3.Frames.FrameID
+  langs:
+  - csharp
+  - vb
+  name: MediaType
+  nameWithType: FrameID.MediaType
+  fullName: SilverCraft.CSCore.Tags.ID3.Frames.FrameID.MediaType
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/Tags/ID3/Frames/FrameID.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: MediaType
+    path: ../SilverCraft.CSCore/Tags/ID3/Frames/FrameID.cs
+    startLine: 48
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Tags.ID3.Frames
+  syntax:
+    content: MediaType = 44
+    return:
+      type: SilverCraft.CSCore.Tags.ID3.Frames.FrameID
+- uid: SilverCraft.CSCore.Tags.ID3.Frames.FrameID.OriginalAlbum
+  commentId: F:SilverCraft.CSCore.Tags.ID3.Frames.FrameID.OriginalAlbum
+  id: OriginalAlbum
+  parent: SilverCraft.CSCore.Tags.ID3.Frames.FrameID
+  langs:
+  - csharp
+  - vb
+  name: OriginalAlbum
+  nameWithType: FrameID.OriginalAlbum
+  fullName: SilverCraft.CSCore.Tags.ID3.Frames.FrameID.OriginalAlbum
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/Tags/ID3/Frames/FrameID.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: OriginalAlbum
+    path: ../SilverCraft.CSCore/Tags/ID3/Frames/FrameID.cs
+    startLine: 49
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Tags.ID3.Frames
+  syntax:
+    content: OriginalAlbum = 45
+    return:
+      type: SilverCraft.CSCore.Tags.ID3.Frames.FrameID
+- uid: SilverCraft.CSCore.Tags.ID3.Frames.FrameID.OriginalFileName
+  commentId: F:SilverCraft.CSCore.Tags.ID3.Frames.FrameID.OriginalFileName
+  id: OriginalFileName
+  parent: SilverCraft.CSCore.Tags.ID3.Frames.FrameID
+  langs:
+  - csharp
+  - vb
+  name: OriginalFileName
+  nameWithType: FrameID.OriginalFileName
+  fullName: SilverCraft.CSCore.Tags.ID3.Frames.FrameID.OriginalFileName
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/Tags/ID3/Frames/FrameID.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: OriginalFileName
+    path: ../SilverCraft.CSCore/Tags/ID3/Frames/FrameID.cs
+    startLine: 50
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Tags.ID3.Frames
+  syntax:
+    content: OriginalFileName = 46
+    return:
+      type: SilverCraft.CSCore.Tags.ID3.Frames.FrameID
+- uid: SilverCraft.CSCore.Tags.ID3.Frames.FrameID.OriginalTextWriter
+  commentId: F:SilverCraft.CSCore.Tags.ID3.Frames.FrameID.OriginalTextWriter
+  id: OriginalTextWriter
+  parent: SilverCraft.CSCore.Tags.ID3.Frames.FrameID
+  langs:
+  - csharp
+  - vb
+  name: OriginalTextWriter
+  nameWithType: FrameID.OriginalTextWriter
+  fullName: SilverCraft.CSCore.Tags.ID3.Frames.FrameID.OriginalTextWriter
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/Tags/ID3/Frames/FrameID.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: OriginalTextWriter
+    path: ../SilverCraft.CSCore/Tags/ID3/Frames/FrameID.cs
+    startLine: 51
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Tags.ID3.Frames
+  syntax:
+    content: OriginalTextWriter = 47
+    return:
+      type: SilverCraft.CSCore.Tags.ID3.Frames.FrameID
+- uid: SilverCraft.CSCore.Tags.ID3.Frames.FrameID.OriginalArtist
+  commentId: F:SilverCraft.CSCore.Tags.ID3.Frames.FrameID.OriginalArtist
+  id: OriginalArtist
+  parent: SilverCraft.CSCore.Tags.ID3.Frames.FrameID
+  langs:
+  - csharp
+  - vb
+  name: OriginalArtist
+  nameWithType: FrameID.OriginalArtist
+  fullName: SilverCraft.CSCore.Tags.ID3.Frames.FrameID.OriginalArtist
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/Tags/ID3/Frames/FrameID.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: OriginalArtist
+    path: ../SilverCraft.CSCore/Tags/ID3/Frames/FrameID.cs
+    startLine: 52
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Tags.ID3.Frames
+  syntax:
+    content: OriginalArtist = 48
+    return:
+      type: SilverCraft.CSCore.Tags.ID3.Frames.FrameID
+- uid: SilverCraft.CSCore.Tags.ID3.Frames.FrameID.OriginalReleaseYear
+  commentId: F:SilverCraft.CSCore.Tags.ID3.Frames.FrameID.OriginalReleaseYear
+  id: OriginalReleaseYear
+  parent: SilverCraft.CSCore.Tags.ID3.Frames.FrameID
+  langs:
+  - csharp
+  - vb
+  name: OriginalReleaseYear
+  nameWithType: FrameID.OriginalReleaseYear
+  fullName: SilverCraft.CSCore.Tags.ID3.Frames.FrameID.OriginalReleaseYear
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/Tags/ID3/Frames/FrameID.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: OriginalReleaseYear
+    path: ../SilverCraft.CSCore/Tags/ID3/Frames/FrameID.cs
+    startLine: 53
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Tags.ID3.Frames
+  syntax:
+    content: OriginalReleaseYear = 49
+    return:
+      type: SilverCraft.CSCore.Tags.ID3.Frames.FrameID
+- uid: SilverCraft.CSCore.Tags.ID3.Frames.FrameID.OriginalReleaseTime
+  commentId: F:SilverCraft.CSCore.Tags.ID3.Frames.FrameID.OriginalReleaseTime
+  id: OriginalReleaseTime
+  parent: SilverCraft.CSCore.Tags.ID3.Frames.FrameID
+  langs:
+  - csharp
+  - vb
+  name: OriginalReleaseTime
+  nameWithType: FrameID.OriginalReleaseTime
+  fullName: SilverCraft.CSCore.Tags.ID3.Frames.FrameID.OriginalReleaseTime
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/Tags/ID3/Frames/FrameID.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: OriginalReleaseTime
+    path: ../SilverCraft.CSCore/Tags/ID3/Frames/FrameID.cs
+    startLine: 54
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Tags.ID3.Frames
+  syntax:
+    content: OriginalReleaseTime = 50
+    return:
+      type: SilverCraft.CSCore.Tags.ID3.Frames.FrameID
+- uid: SilverCraft.CSCore.Tags.ID3.Frames.FrameID.ReleaseTime
+  commentId: F:SilverCraft.CSCore.Tags.ID3.Frames.FrameID.ReleaseTime
+  id: ReleaseTime
+  parent: SilverCraft.CSCore.Tags.ID3.Frames.FrameID
+  langs:
+  - csharp
+  - vb
+  name: ReleaseTime
+  nameWithType: FrameID.ReleaseTime
+  fullName: SilverCraft.CSCore.Tags.ID3.Frames.FrameID.ReleaseTime
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/Tags/ID3/Frames/FrameID.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: ReleaseTime
+    path: ../SilverCraft.CSCore/Tags/ID3/Frames/FrameID.cs
+    startLine: 55
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Tags.ID3.Frames
+  syntax:
+    content: ReleaseTime = 51
+    return:
+      type: SilverCraft.CSCore.Tags.ID3.Frames.FrameID
+- uid: SilverCraft.CSCore.Tags.ID3.Frames.FrameID.FileOwner
+  commentId: F:SilverCraft.CSCore.Tags.ID3.Frames.FrameID.FileOwner
+  id: FileOwner
+  parent: SilverCraft.CSCore.Tags.ID3.Frames.FrameID
+  langs:
+  - csharp
+  - vb
+  name: FileOwner
+  nameWithType: FrameID.FileOwner
+  fullName: SilverCraft.CSCore.Tags.ID3.Frames.FrameID.FileOwner
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/Tags/ID3/Frames/FrameID.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: FileOwner
+    path: ../SilverCraft.CSCore/Tags/ID3/Frames/FrameID.cs
+    startLine: 56
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Tags.ID3.Frames
+  syntax:
+    content: FileOwner = 52
+    return:
+      type: SilverCraft.CSCore.Tags.ID3.Frames.FrameID
+- uid: SilverCraft.CSCore.Tags.ID3.Frames.FrameID.LeadPerformers
+  commentId: F:SilverCraft.CSCore.Tags.ID3.Frames.FrameID.LeadPerformers
+  id: LeadPerformers
+  parent: SilverCraft.CSCore.Tags.ID3.Frames.FrameID
+  langs:
+  - csharp
+  - vb
+  name: LeadPerformers
+  nameWithType: FrameID.LeadPerformers
+  fullName: SilverCraft.CSCore.Tags.ID3.Frames.FrameID.LeadPerformers
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/Tags/ID3/Frames/FrameID.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: LeadPerformers
+    path: ../SilverCraft.CSCore/Tags/ID3/Frames/FrameID.cs
+    startLine: 57
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Tags.ID3.Frames
+  syntax:
+    content: LeadPerformers = 53
+    return:
+      type: SilverCraft.CSCore.Tags.ID3.Frames.FrameID
+- uid: SilverCraft.CSCore.Tags.ID3.Frames.FrameID.Band
+  commentId: F:SilverCraft.CSCore.Tags.ID3.Frames.FrameID.Band
+  id: Band
+  parent: SilverCraft.CSCore.Tags.ID3.Frames.FrameID
+  langs:
+  - csharp
+  - vb
+  name: Band
+  nameWithType: FrameID.Band
+  fullName: SilverCraft.CSCore.Tags.ID3.Frames.FrameID.Band
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/Tags/ID3/Frames/FrameID.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: Band
+    path: ../SilverCraft.CSCore/Tags/ID3/Frames/FrameID.cs
+    startLine: 58
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Tags.ID3.Frames
+  syntax:
+    content: Band = 54
+    return:
+      type: SilverCraft.CSCore.Tags.ID3.Frames.FrameID
+- uid: SilverCraft.CSCore.Tags.ID3.Frames.FrameID.Conductor
+  commentId: F:SilverCraft.CSCore.Tags.ID3.Frames.FrameID.Conductor
+  id: Conductor
+  parent: SilverCraft.CSCore.Tags.ID3.Frames.FrameID
+  langs:
+  - csharp
+  - vb
+  name: Conductor
+  nameWithType: FrameID.Conductor
+  fullName: SilverCraft.CSCore.Tags.ID3.Frames.FrameID.Conductor
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/Tags/ID3/Frames/FrameID.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: Conductor
+    path: ../SilverCraft.CSCore/Tags/ID3/Frames/FrameID.cs
+    startLine: 59
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Tags.ID3.Frames
+  syntax:
+    content: Conductor = 55
+    return:
+      type: SilverCraft.CSCore.Tags.ID3.Frames.FrameID
+- uid: SilverCraft.CSCore.Tags.ID3.Frames.FrameID.Interpreted
+  commentId: F:SilverCraft.CSCore.Tags.ID3.Frames.FrameID.Interpreted
+  id: Interpreted
+  parent: SilverCraft.CSCore.Tags.ID3.Frames.FrameID
+  langs:
+  - csharp
+  - vb
+  name: Interpreted
+  nameWithType: FrameID.Interpreted
+  fullName: SilverCraft.CSCore.Tags.ID3.Frames.FrameID.Interpreted
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/Tags/ID3/Frames/FrameID.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: Interpreted
+    path: ../SilverCraft.CSCore/Tags/ID3/Frames/FrameID.cs
+    startLine: 60
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Tags.ID3.Frames
+  syntax:
+    content: Interpreted = 56
+    return:
+      type: SilverCraft.CSCore.Tags.ID3.Frames.FrameID
+- uid: SilverCraft.CSCore.Tags.ID3.Frames.FrameID.PartOfASet
+  commentId: F:SilverCraft.CSCore.Tags.ID3.Frames.FrameID.PartOfASet
+  id: PartOfASet
+  parent: SilverCraft.CSCore.Tags.ID3.Frames.FrameID
+  langs:
+  - csharp
+  - vb
+  name: PartOfASet
+  nameWithType: FrameID.PartOfASet
+  fullName: SilverCraft.CSCore.Tags.ID3.Frames.FrameID.PartOfASet
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/Tags/ID3/Frames/FrameID.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: PartOfASet
+    path: ../SilverCraft.CSCore/Tags/ID3/Frames/FrameID.cs
+    startLine: 61
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Tags.ID3.Frames
+  syntax:
+    content: PartOfASet = 57
+    return:
+      type: SilverCraft.CSCore.Tags.ID3.Frames.FrameID
+- uid: SilverCraft.CSCore.Tags.ID3.Frames.FrameID.Publisher
+  commentId: F:SilverCraft.CSCore.Tags.ID3.Frames.FrameID.Publisher
+  id: Publisher
+  parent: SilverCraft.CSCore.Tags.ID3.Frames.FrameID
+  langs:
+  - csharp
+  - vb
+  name: Publisher
+  nameWithType: FrameID.Publisher
+  fullName: SilverCraft.CSCore.Tags.ID3.Frames.FrameID.Publisher
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/Tags/ID3/Frames/FrameID.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: Publisher
+    path: ../SilverCraft.CSCore/Tags/ID3/Frames/FrameID.cs
+    startLine: 62
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Tags.ID3.Frames
+  syntax:
+    content: Publisher = 58
+    return:
+      type: SilverCraft.CSCore.Tags.ID3.Frames.FrameID
+- uid: SilverCraft.CSCore.Tags.ID3.Frames.FrameID.TrackNumber
+  commentId: F:SilverCraft.CSCore.Tags.ID3.Frames.FrameID.TrackNumber
+  id: TrackNumber
+  parent: SilverCraft.CSCore.Tags.ID3.Frames.FrameID
+  langs:
+  - csharp
+  - vb
+  name: TrackNumber
+  nameWithType: FrameID.TrackNumber
+  fullName: SilverCraft.CSCore.Tags.ID3.Frames.FrameID.TrackNumber
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/Tags/ID3/Frames/FrameID.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: TrackNumber
+    path: ../SilverCraft.CSCore/Tags/ID3/Frames/FrameID.cs
+    startLine: 63
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Tags.ID3.Frames
+  syntax:
+    content: TrackNumber = 59
+    return:
+      type: SilverCraft.CSCore.Tags.ID3.Frames.FrameID
+- uid: SilverCraft.CSCore.Tags.ID3.Frames.FrameID.RecordingDates
+  commentId: F:SilverCraft.CSCore.Tags.ID3.Frames.FrameID.RecordingDates
+  id: RecordingDates
+  parent: SilverCraft.CSCore.Tags.ID3.Frames.FrameID
+  langs:
+  - csharp
+  - vb
+  name: RecordingDates
+  nameWithType: FrameID.RecordingDates
+  fullName: SilverCraft.CSCore.Tags.ID3.Frames.FrameID.RecordingDates
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/Tags/ID3/Frames/FrameID.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: RecordingDates
+    path: ../SilverCraft.CSCore/Tags/ID3/Frames/FrameID.cs
+    startLine: 64
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Tags.ID3.Frames
+  syntax:
+    content: RecordingDates = 60
+    return:
+      type: SilverCraft.CSCore.Tags.ID3.Frames.FrameID
+- uid: SilverCraft.CSCore.Tags.ID3.Frames.FrameID.RecordingTime
+  commentId: F:SilverCraft.CSCore.Tags.ID3.Frames.FrameID.RecordingTime
+  id: RecordingTime
+  parent: SilverCraft.CSCore.Tags.ID3.Frames.FrameID
+  langs:
+  - csharp
+  - vb
+  name: RecordingTime
+  nameWithType: FrameID.RecordingTime
+  fullName: SilverCraft.CSCore.Tags.ID3.Frames.FrameID.RecordingTime
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/Tags/ID3/Frames/FrameID.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: RecordingTime
+    path: ../SilverCraft.CSCore/Tags/ID3/Frames/FrameID.cs
+    startLine: 65
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Tags.ID3.Frames
+  syntax:
+    content: RecordingTime = 61
+    return:
+      type: SilverCraft.CSCore.Tags.ID3.Frames.FrameID
+- uid: SilverCraft.CSCore.Tags.ID3.Frames.FrameID.InternetRadioStationName
+  commentId: F:SilverCraft.CSCore.Tags.ID3.Frames.FrameID.InternetRadioStationName
+  id: InternetRadioStationName
+  parent: SilverCraft.CSCore.Tags.ID3.Frames.FrameID
+  langs:
+  - csharp
+  - vb
+  name: InternetRadioStationName
+  nameWithType: FrameID.InternetRadioStationName
+  fullName: SilverCraft.CSCore.Tags.ID3.Frames.FrameID.InternetRadioStationName
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/Tags/ID3/Frames/FrameID.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: InternetRadioStationName
+    path: ../SilverCraft.CSCore/Tags/ID3/Frames/FrameID.cs
+    startLine: 66
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Tags.ID3.Frames
+  syntax:
+    content: InternetRadioStationName = 62
+    return:
+      type: SilverCraft.CSCore.Tags.ID3.Frames.FrameID
+- uid: SilverCraft.CSCore.Tags.ID3.Frames.FrameID.InternetRadioStationOwner
+  commentId: F:SilverCraft.CSCore.Tags.ID3.Frames.FrameID.InternetRadioStationOwner
+  id: InternetRadioStationOwner
+  parent: SilverCraft.CSCore.Tags.ID3.Frames.FrameID
+  langs:
+  - csharp
+  - vb
+  name: InternetRadioStationOwner
+  nameWithType: FrameID.InternetRadioStationOwner
+  fullName: SilverCraft.CSCore.Tags.ID3.Frames.FrameID.InternetRadioStationOwner
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/Tags/ID3/Frames/FrameID.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: InternetRadioStationOwner
+    path: ../SilverCraft.CSCore/Tags/ID3/Frames/FrameID.cs
+    startLine: 67
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Tags.ID3.Frames
+  syntax:
+    content: InternetRadioStationOwner = 63
+    return:
+      type: SilverCraft.CSCore.Tags.ID3.Frames.FrameID
+- uid: SilverCraft.CSCore.Tags.ID3.Frames.FrameID.Size
+  commentId: F:SilverCraft.CSCore.Tags.ID3.Frames.FrameID.Size
+  id: Size
+  parent: SilverCraft.CSCore.Tags.ID3.Frames.FrameID
+  langs:
+  - csharp
+  - vb
+  name: Size
+  nameWithType: FrameID.Size
+  fullName: SilverCraft.CSCore.Tags.ID3.Frames.FrameID.Size
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/Tags/ID3/Frames/FrameID.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: Size
+    path: ../SilverCraft.CSCore/Tags/ID3/Frames/FrameID.cs
+    startLine: 68
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Tags.ID3.Frames
+  syntax:
+    content: Size = 64
+    return:
+      type: SilverCraft.CSCore.Tags.ID3.Frames.FrameID
+- uid: SilverCraft.CSCore.Tags.ID3.Frames.FrameID.ISRC
+  commentId: F:SilverCraft.CSCore.Tags.ID3.Frames.FrameID.ISRC
+  id: ISRC
+  parent: SilverCraft.CSCore.Tags.ID3.Frames.FrameID
+  langs:
+  - csharp
+  - vb
+  name: ISRC
+  nameWithType: FrameID.ISRC
+  fullName: SilverCraft.CSCore.Tags.ID3.Frames.FrameID.ISRC
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/Tags/ID3/Frames/FrameID.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: ISRC
+    path: ../SilverCraft.CSCore/Tags/ID3/Frames/FrameID.cs
+    startLine: 69
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Tags.ID3.Frames
+  syntax:
+    content: ISRC = 65
+    return:
+      type: SilverCraft.CSCore.Tags.ID3.Frames.FrameID
+- uid: SilverCraft.CSCore.Tags.ID3.Frames.FrameID.EncodingSettings
+  commentId: F:SilverCraft.CSCore.Tags.ID3.Frames.FrameID.EncodingSettings
+  id: EncodingSettings
+  parent: SilverCraft.CSCore.Tags.ID3.Frames.FrameID
+  langs:
+  - csharp
+  - vb
+  name: EncodingSettings
+  nameWithType: FrameID.EncodingSettings
+  fullName: SilverCraft.CSCore.Tags.ID3.Frames.FrameID.EncodingSettings
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/Tags/ID3/Frames/FrameID.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: EncodingSettings
+    path: ../SilverCraft.CSCore/Tags/ID3/Frames/FrameID.cs
+    startLine: 70
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Tags.ID3.Frames
+  syntax:
+    content: EncodingSettings = 66
+    return:
+      type: SilverCraft.CSCore.Tags.ID3.Frames.FrameID
+- uid: SilverCraft.CSCore.Tags.ID3.Frames.FrameID.EncodingTime
+  commentId: F:SilverCraft.CSCore.Tags.ID3.Frames.FrameID.EncodingTime
+  id: EncodingTime
+  parent: SilverCraft.CSCore.Tags.ID3.Frames.FrameID
+  langs:
+  - csharp
+  - vb
+  name: EncodingTime
+  nameWithType: FrameID.EncodingTime
+  fullName: SilverCraft.CSCore.Tags.ID3.Frames.FrameID.EncodingTime
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/Tags/ID3/Frames/FrameID.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: EncodingTime
+    path: ../SilverCraft.CSCore/Tags/ID3/Frames/FrameID.cs
+    startLine: 71
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Tags.ID3.Frames
+  syntax:
+    content: EncodingTime = 67
+    return:
+      type: SilverCraft.CSCore.Tags.ID3.Frames.FrameID
+- uid: SilverCraft.CSCore.Tags.ID3.Frames.FrameID.Year
+  commentId: F:SilverCraft.CSCore.Tags.ID3.Frames.FrameID.Year
+  id: Year
+  parent: SilverCraft.CSCore.Tags.ID3.Frames.FrameID
+  langs:
+  - csharp
+  - vb
+  name: Year
+  nameWithType: FrameID.Year
+  fullName: SilverCraft.CSCore.Tags.ID3.Frames.FrameID.Year
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/Tags/ID3/Frames/FrameID.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: Year
+    path: ../SilverCraft.CSCore/Tags/ID3/Frames/FrameID.cs
+    startLine: 72
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Tags.ID3.Frames
+  syntax:
+    content: Year = 68
+    return:
+      type: SilverCraft.CSCore.Tags.ID3.Frames.FrameID
+- uid: SilverCraft.CSCore.Tags.ID3.Frames.FrameID.UserTextInformation
+  commentId: F:SilverCraft.CSCore.Tags.ID3.Frames.FrameID.UserTextInformation
+  id: UserTextInformation
+  parent: SilverCraft.CSCore.Tags.ID3.Frames.FrameID
+  langs:
+  - csharp
+  - vb
+  name: UserTextInformation
+  nameWithType: FrameID.UserTextInformation
+  fullName: SilverCraft.CSCore.Tags.ID3.Frames.FrameID.UserTextInformation
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/Tags/ID3/Frames/FrameID.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: UserTextInformation
+    path: ../SilverCraft.CSCore/Tags/ID3/Frames/FrameID.cs
+    startLine: 73
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Tags.ID3.Frames
+  syntax:
+    content: UserTextInformation = 69
+    return:
+      type: SilverCraft.CSCore.Tags.ID3.Frames.FrameID
+- uid: SilverCraft.CSCore.Tags.ID3.Frames.FrameID.UniqueFileIdentifier
+  commentId: F:SilverCraft.CSCore.Tags.ID3.Frames.FrameID.UniqueFileIdentifier
+  id: UniqueFileIdentifier
+  parent: SilverCraft.CSCore.Tags.ID3.Frames.FrameID
+  langs:
+  - csharp
+  - vb
+  name: UniqueFileIdentifier
+  nameWithType: FrameID.UniqueFileIdentifier
+  fullName: SilverCraft.CSCore.Tags.ID3.Frames.FrameID.UniqueFileIdentifier
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/Tags/ID3/Frames/FrameID.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: UniqueFileIdentifier
+    path: ../SilverCraft.CSCore/Tags/ID3/Frames/FrameID.cs
+    startLine: 74
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Tags.ID3.Frames
+  syntax:
+    content: UniqueFileIdentifier = 70
+    return:
+      type: SilverCraft.CSCore.Tags.ID3.Frames.FrameID
+- uid: SilverCraft.CSCore.Tags.ID3.Frames.FrameID.TermsOfUse
+  commentId: F:SilverCraft.CSCore.Tags.ID3.Frames.FrameID.TermsOfUse
+  id: TermsOfUse
+  parent: SilverCraft.CSCore.Tags.ID3.Frames.FrameID
+  langs:
+  - csharp
+  - vb
+  name: TermsOfUse
+  nameWithType: FrameID.TermsOfUse
+  fullName: SilverCraft.CSCore.Tags.ID3.Frames.FrameID.TermsOfUse
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/Tags/ID3/Frames/FrameID.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: TermsOfUse
+    path: ../SilverCraft.CSCore/Tags/ID3/Frames/FrameID.cs
+    startLine: 75
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Tags.ID3.Frames
+  syntax:
+    content: TermsOfUse = 71
+    return:
+      type: SilverCraft.CSCore.Tags.ID3.Frames.FrameID
+- uid: SilverCraft.CSCore.Tags.ID3.Frames.FrameID.UnsynchronizedLyris
+  commentId: F:SilverCraft.CSCore.Tags.ID3.Frames.FrameID.UnsynchronizedLyris
+  id: UnsynchronizedLyris
+  parent: SilverCraft.CSCore.Tags.ID3.Frames.FrameID
+  langs:
+  - csharp
+  - vb
+  name: UnsynchronizedLyris
+  nameWithType: FrameID.UnsynchronizedLyris
+  fullName: SilverCraft.CSCore.Tags.ID3.Frames.FrameID.UnsynchronizedLyris
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/Tags/ID3/Frames/FrameID.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: UnsynchronizedLyris
+    path: ../SilverCraft.CSCore/Tags/ID3/Frames/FrameID.cs
+    startLine: 76
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Tags.ID3.Frames
+  syntax:
+    content: UnsynchronizedLyris = 72
+    return:
+      type: SilverCraft.CSCore.Tags.ID3.Frames.FrameID
+- uid: SilverCraft.CSCore.Tags.ID3.Frames.FrameID.CommercialInformationURL
+  commentId: F:SilverCraft.CSCore.Tags.ID3.Frames.FrameID.CommercialInformationURL
+  id: CommercialInformationURL
+  parent: SilverCraft.CSCore.Tags.ID3.Frames.FrameID
+  langs:
+  - csharp
+  - vb
+  name: CommercialInformationURL
+  nameWithType: FrameID.CommercialInformationURL
+  fullName: SilverCraft.CSCore.Tags.ID3.Frames.FrameID.CommercialInformationURL
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/Tags/ID3/Frames/FrameID.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: CommercialInformationURL
+    path: ../SilverCraft.CSCore/Tags/ID3/Frames/FrameID.cs
+    startLine: 77
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Tags.ID3.Frames
+  syntax:
+    content: CommercialInformationURL = 73
+    return:
+      type: SilverCraft.CSCore.Tags.ID3.Frames.FrameID
+- uid: SilverCraft.CSCore.Tags.ID3.Frames.FrameID.CopyrightURL
+  commentId: F:SilverCraft.CSCore.Tags.ID3.Frames.FrameID.CopyrightURL
+  id: CopyrightURL
+  parent: SilverCraft.CSCore.Tags.ID3.Frames.FrameID
+  langs:
+  - csharp
+  - vb
+  name: CopyrightURL
+  nameWithType: FrameID.CopyrightURL
+  fullName: SilverCraft.CSCore.Tags.ID3.Frames.FrameID.CopyrightURL
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/Tags/ID3/Frames/FrameID.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: CopyrightURL
+    path: ../SilverCraft.CSCore/Tags/ID3/Frames/FrameID.cs
+    startLine: 78
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Tags.ID3.Frames
+  syntax:
+    content: CopyrightURL = 74
+    return:
+      type: SilverCraft.CSCore.Tags.ID3.Frames.FrameID
+- uid: SilverCraft.CSCore.Tags.ID3.Frames.FrameID.OfficialAudioFileWebpage
+  commentId: F:SilverCraft.CSCore.Tags.ID3.Frames.FrameID.OfficialAudioFileWebpage
+  id: OfficialAudioFileWebpage
+  parent: SilverCraft.CSCore.Tags.ID3.Frames.FrameID
+  langs:
+  - csharp
+  - vb
+  name: OfficialAudioFileWebpage
+  nameWithType: FrameID.OfficialAudioFileWebpage
+  fullName: SilverCraft.CSCore.Tags.ID3.Frames.FrameID.OfficialAudioFileWebpage
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/Tags/ID3/Frames/FrameID.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: OfficialAudioFileWebpage
+    path: ../SilverCraft.CSCore/Tags/ID3/Frames/FrameID.cs
+    startLine: 79
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Tags.ID3.Frames
+  syntax:
+    content: OfficialAudioFileWebpage = 75
+    return:
+      type: SilverCraft.CSCore.Tags.ID3.Frames.FrameID
+- uid: SilverCraft.CSCore.Tags.ID3.Frames.FrameID.OfficialArtistWebpage
+  commentId: F:SilverCraft.CSCore.Tags.ID3.Frames.FrameID.OfficialArtistWebpage
+  id: OfficialArtistWebpage
+  parent: SilverCraft.CSCore.Tags.ID3.Frames.FrameID
+  langs:
+  - csharp
+  - vb
+  name: OfficialArtistWebpage
+  nameWithType: FrameID.OfficialArtistWebpage
+  fullName: SilverCraft.CSCore.Tags.ID3.Frames.FrameID.OfficialArtistWebpage
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/Tags/ID3/Frames/FrameID.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: OfficialArtistWebpage
+    path: ../SilverCraft.CSCore/Tags/ID3/Frames/FrameID.cs
+    startLine: 80
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Tags.ID3.Frames
+  syntax:
+    content: OfficialArtistWebpage = 76
+    return:
+      type: SilverCraft.CSCore.Tags.ID3.Frames.FrameID
+- uid: SilverCraft.CSCore.Tags.ID3.Frames.FrameID.OfficialAudioSourceWebpage
+  commentId: F:SilverCraft.CSCore.Tags.ID3.Frames.FrameID.OfficialAudioSourceWebpage
+  id: OfficialAudioSourceWebpage
+  parent: SilverCraft.CSCore.Tags.ID3.Frames.FrameID
+  langs:
+  - csharp
+  - vb
+  name: OfficialAudioSourceWebpage
+  nameWithType: FrameID.OfficialAudioSourceWebpage
+  fullName: SilverCraft.CSCore.Tags.ID3.Frames.FrameID.OfficialAudioSourceWebpage
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/Tags/ID3/Frames/FrameID.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: OfficialAudioSourceWebpage
+    path: ../SilverCraft.CSCore/Tags/ID3/Frames/FrameID.cs
+    startLine: 81
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Tags.ID3.Frames
+  syntax:
+    content: OfficialAudioSourceWebpage = 77
+    return:
+      type: SilverCraft.CSCore.Tags.ID3.Frames.FrameID
+- uid: SilverCraft.CSCore.Tags.ID3.Frames.FrameID.InternetRadioStationWebpage
+  commentId: F:SilverCraft.CSCore.Tags.ID3.Frames.FrameID.InternetRadioStationWebpage
+  id: InternetRadioStationWebpage
+  parent: SilverCraft.CSCore.Tags.ID3.Frames.FrameID
+  langs:
+  - csharp
+  - vb
+  name: InternetRadioStationWebpage
+  nameWithType: FrameID.InternetRadioStationWebpage
+  fullName: SilverCraft.CSCore.Tags.ID3.Frames.FrameID.InternetRadioStationWebpage
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/Tags/ID3/Frames/FrameID.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: InternetRadioStationWebpage
+    path: ../SilverCraft.CSCore/Tags/ID3/Frames/FrameID.cs
+    startLine: 82
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Tags.ID3.Frames
+  syntax:
+    content: InternetRadioStationWebpage = 78
+    return:
+      type: SilverCraft.CSCore.Tags.ID3.Frames.FrameID
+- uid: SilverCraft.CSCore.Tags.ID3.Frames.FrameID.PaymentURL
+  commentId: F:SilverCraft.CSCore.Tags.ID3.Frames.FrameID.PaymentURL
+  id: PaymentURL
+  parent: SilverCraft.CSCore.Tags.ID3.Frames.FrameID
+  langs:
+  - csharp
+  - vb
+  name: PaymentURL
+  nameWithType: FrameID.PaymentURL
+  fullName: SilverCraft.CSCore.Tags.ID3.Frames.FrameID.PaymentURL
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/Tags/ID3/Frames/FrameID.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: PaymentURL
+    path: ../SilverCraft.CSCore/Tags/ID3/Frames/FrameID.cs
+    startLine: 83
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Tags.ID3.Frames
+  syntax:
+    content: PaymentURL = 79
+    return:
+      type: SilverCraft.CSCore.Tags.ID3.Frames.FrameID
+- uid: SilverCraft.CSCore.Tags.ID3.Frames.FrameID.PublishersOfficialWebpage
+  commentId: F:SilverCraft.CSCore.Tags.ID3.Frames.FrameID.PublishersOfficialWebpage
+  id: PublishersOfficialWebpage
+  parent: SilverCraft.CSCore.Tags.ID3.Frames.FrameID
+  langs:
+  - csharp
+  - vb
+  name: PublishersOfficialWebpage
+  nameWithType: FrameID.PublishersOfficialWebpage
+  fullName: SilverCraft.CSCore.Tags.ID3.Frames.FrameID.PublishersOfficialWebpage
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/Tags/ID3/Frames/FrameID.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: PublishersOfficialWebpage
+    path: ../SilverCraft.CSCore/Tags/ID3/Frames/FrameID.cs
+    startLine: 84
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Tags.ID3.Frames
+  syntax:
+    content: PublishersOfficialWebpage = 80
+    return:
+      type: SilverCraft.CSCore.Tags.ID3.Frames.FrameID
+- uid: SilverCraft.CSCore.Tags.ID3.Frames.FrameID.UserURLLinkFrame
+  commentId: F:SilverCraft.CSCore.Tags.ID3.Frames.FrameID.UserURLLinkFrame
+  id: UserURLLinkFrame
+  parent: SilverCraft.CSCore.Tags.ID3.Frames.FrameID
+  langs:
+  - csharp
+  - vb
+  name: UserURLLinkFrame
+  nameWithType: FrameID.UserURLLinkFrame
+  fullName: SilverCraft.CSCore.Tags.ID3.Frames.FrameID.UserURLLinkFrame
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/Tags/ID3/Frames/FrameID.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: UserURLLinkFrame
+    path: ../SilverCraft.CSCore/Tags/ID3/Frames/FrameID.cs
+    startLine: 85
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Tags.ID3.Frames
+  syntax:
+    content: UserURLLinkFrame = 81
+    return:
+      type: SilverCraft.CSCore.Tags.ID3.Frames.FrameID
+- uid: SilverCraft.CSCore.Tags.ID3.Frames.FrameID.MusicicanCreditsList
+  commentId: F:SilverCraft.CSCore.Tags.ID3.Frames.FrameID.MusicicanCreditsList
+  id: MusicicanCreditsList
+  parent: SilverCraft.CSCore.Tags.ID3.Frames.FrameID
+  langs:
+  - csharp
+  - vb
+  name: MusicicanCreditsList
+  nameWithType: FrameID.MusicicanCreditsList
+  fullName: SilverCraft.CSCore.Tags.ID3.Frames.FrameID.MusicicanCreditsList
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/Tags/ID3/Frames/FrameID.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: MusicicanCreditsList
+    path: ../SilverCraft.CSCore/Tags/ID3/Frames/FrameID.cs
+    startLine: 86
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Tags.ID3.Frames
+  syntax:
+    content: MusicicanCreditsList = 82
+    return:
+      type: SilverCraft.CSCore.Tags.ID3.Frames.FrameID
+- uid: SilverCraft.CSCore.Tags.ID3.Frames.FrameID.Mood
+  commentId: F:SilverCraft.CSCore.Tags.ID3.Frames.FrameID.Mood
+  id: Mood
+  parent: SilverCraft.CSCore.Tags.ID3.Frames.FrameID
+  langs:
+  - csharp
+  - vb
+  name: Mood
+  nameWithType: FrameID.Mood
+  fullName: SilverCraft.CSCore.Tags.ID3.Frames.FrameID.Mood
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/Tags/ID3/Frames/FrameID.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: Mood
+    path: ../SilverCraft.CSCore/Tags/ID3/Frames/FrameID.cs
+    startLine: 87
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Tags.ID3.Frames
+  syntax:
+    content: Mood = 83
+    return:
+      type: SilverCraft.CSCore.Tags.ID3.Frames.FrameID
+- uid: SilverCraft.CSCore.Tags.ID3.Frames.FrameID.ProducedNotice
+  commentId: F:SilverCraft.CSCore.Tags.ID3.Frames.FrameID.ProducedNotice
+  id: ProducedNotice
+  parent: SilverCraft.CSCore.Tags.ID3.Frames.FrameID
+  langs:
+  - csharp
+  - vb
+  name: ProducedNotice
+  nameWithType: FrameID.ProducedNotice
+  fullName: SilverCraft.CSCore.Tags.ID3.Frames.FrameID.ProducedNotice
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/Tags/ID3/Frames/FrameID.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: ProducedNotice
+    path: ../SilverCraft.CSCore/Tags/ID3/Frames/FrameID.cs
+    startLine: 88
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Tags.ID3.Frames
+  syntax:
+    content: ProducedNotice = 84
+    return:
+      type: SilverCraft.CSCore.Tags.ID3.Frames.FrameID
+- uid: SilverCraft.CSCore.Tags.ID3.Frames.FrameID.AlbumSortOrder
+  commentId: F:SilverCraft.CSCore.Tags.ID3.Frames.FrameID.AlbumSortOrder
+  id: AlbumSortOrder
+  parent: SilverCraft.CSCore.Tags.ID3.Frames.FrameID
+  langs:
+  - csharp
+  - vb
+  name: AlbumSortOrder
+  nameWithType: FrameID.AlbumSortOrder
+  fullName: SilverCraft.CSCore.Tags.ID3.Frames.FrameID.AlbumSortOrder
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/Tags/ID3/Frames/FrameID.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: AlbumSortOrder
+    path: ../SilverCraft.CSCore/Tags/ID3/Frames/FrameID.cs
+    startLine: 89
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Tags.ID3.Frames
+  syntax:
+    content: AlbumSortOrder = 85
+    return:
+      type: SilverCraft.CSCore.Tags.ID3.Frames.FrameID
+- uid: SilverCraft.CSCore.Tags.ID3.Frames.FrameID.PerformerSortOrder
+  commentId: F:SilverCraft.CSCore.Tags.ID3.Frames.FrameID.PerformerSortOrder
+  id: PerformerSortOrder
+  parent: SilverCraft.CSCore.Tags.ID3.Frames.FrameID
+  langs:
+  - csharp
+  - vb
+  name: PerformerSortOrder
+  nameWithType: FrameID.PerformerSortOrder
+  fullName: SilverCraft.CSCore.Tags.ID3.Frames.FrameID.PerformerSortOrder
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/Tags/ID3/Frames/FrameID.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: PerformerSortOrder
+    path: ../SilverCraft.CSCore/Tags/ID3/Frames/FrameID.cs
+    startLine: 90
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Tags.ID3.Frames
+  syntax:
+    content: PerformerSortOrder = 86
+    return:
+      type: SilverCraft.CSCore.Tags.ID3.Frames.FrameID
+- uid: SilverCraft.CSCore.Tags.ID3.Frames.FrameID.TitleSortOrder
+  commentId: F:SilverCraft.CSCore.Tags.ID3.Frames.FrameID.TitleSortOrder
+  id: TitleSortOrder
+  parent: SilverCraft.CSCore.Tags.ID3.Frames.FrameID
+  langs:
+  - csharp
+  - vb
+  name: TitleSortOrder
+  nameWithType: FrameID.TitleSortOrder
+  fullName: SilverCraft.CSCore.Tags.ID3.Frames.FrameID.TitleSortOrder
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/Tags/ID3/Frames/FrameID.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: TitleSortOrder
+    path: ../SilverCraft.CSCore/Tags/ID3/Frames/FrameID.cs
+    startLine: 91
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Tags.ID3.Frames
+  syntax:
+    content: TitleSortOrder = 87
+    return:
+      type: SilverCraft.CSCore.Tags.ID3.Frames.FrameID
+- uid: SilverCraft.CSCore.Tags.ID3.Frames.FrameID.TaggingTime
+  commentId: F:SilverCraft.CSCore.Tags.ID3.Frames.FrameID.TaggingTime
+  id: TaggingTime
+  parent: SilverCraft.CSCore.Tags.ID3.Frames.FrameID
+  langs:
+  - csharp
+  - vb
+  name: TaggingTime
+  nameWithType: FrameID.TaggingTime
+  fullName: SilverCraft.CSCore.Tags.ID3.Frames.FrameID.TaggingTime
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/Tags/ID3/Frames/FrameID.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: TaggingTime
+    path: ../SilverCraft.CSCore/Tags/ID3/Frames/FrameID.cs
+    startLine: 92
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Tags.ID3.Frames
+  syntax:
+    content: TaggingTime = 88
+    return:
+      type: SilverCraft.CSCore.Tags.ID3.Frames.FrameID
+- uid: SilverCraft.CSCore.Tags.ID3.Frames.FrameID.SetSubtitle
+  commentId: F:SilverCraft.CSCore.Tags.ID3.Frames.FrameID.SetSubtitle
+  id: SetSubtitle
+  parent: SilverCraft.CSCore.Tags.ID3.Frames.FrameID
+  langs:
+  - csharp
+  - vb
+  name: SetSubtitle
+  nameWithType: FrameID.SetSubtitle
+  fullName: SilverCraft.CSCore.Tags.ID3.Frames.FrameID.SetSubtitle
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/Tags/ID3/Frames/FrameID.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: SetSubtitle
+    path: ../SilverCraft.CSCore/Tags/ID3/Frames/FrameID.cs
+    startLine: 93
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Tags.ID3.Frames
+  syntax:
+    content: SetSubtitle = 89
+    return:
+      type: SilverCraft.CSCore.Tags.ID3.Frames.FrameID
+- uid: SilverCraft.CSCore.Tags.ID3.Frames.FrameID.AudioSeekPointIndex
+  commentId: F:SilverCraft.CSCore.Tags.ID3.Frames.FrameID.AudioSeekPointIndex
+  id: AudioSeekPointIndex
+  parent: SilverCraft.CSCore.Tags.ID3.Frames.FrameID
+  langs:
+  - csharp
+  - vb
+  name: AudioSeekPointIndex
+  nameWithType: FrameID.AudioSeekPointIndex
+  fullName: SilverCraft.CSCore.Tags.ID3.Frames.FrameID.AudioSeekPointIndex
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/Tags/ID3/Frames/FrameID.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: AudioSeekPointIndex
+    path: ../SilverCraft.CSCore/Tags/ID3/Frames/FrameID.cs
+    startLine: 94
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Tags.ID3.Frames
+  syntax:
+    content: AudioSeekPointIndex = 90
+    return:
+      type: SilverCraft.CSCore.Tags.ID3.Frames.FrameID
+references:
+- uid: SilverCraft.CSCore.Tags.ID3.Frames
+  commentId: N:SilverCraft.CSCore.Tags.ID3.Frames
+  href: SilverCraft.html
+  name: SilverCraft.CSCore.Tags.ID3.Frames
+  nameWithType: SilverCraft.CSCore.Tags.ID3.Frames
+  fullName: SilverCraft.CSCore.Tags.ID3.Frames
+  spec.csharp:
+  - uid: SilverCraft
+    name: SilverCraft
+    href: SilverCraft.html
+  - name: .
+  - uid: SilverCraft.CSCore
+    name: CSCore
+    href: SilverCraft.CSCore.html
+  - name: .
+  - uid: SilverCraft.CSCore.Tags
+    name: Tags
+    href: SilverCraft.CSCore.Tags.html
+  - name: .
+  - uid: SilverCraft.CSCore.Tags.ID3
+    name: ID3
+    href: SilverCraft.CSCore.Tags.ID3.html
+  - name: .
+  - uid: SilverCraft.CSCore.Tags.ID3.Frames
+    name: Frames
+    href: SilverCraft.CSCore.Tags.ID3.Frames.html
+  spec.vb:
+  - uid: SilverCraft
+    name: SilverCraft
+    href: SilverCraft.html
+  - name: .
+  - uid: SilverCraft.CSCore
+    name: CSCore
+    href: SilverCraft.CSCore.html
+  - name: .
+  - uid: SilverCraft.CSCore.Tags
+    name: Tags
+    href: SilverCraft.CSCore.Tags.html
+  - name: .
+  - uid: SilverCraft.CSCore.Tags.ID3
+    name: ID3
+    href: SilverCraft.CSCore.Tags.ID3.html
+  - name: .
+  - uid: SilverCraft.CSCore.Tags.ID3.Frames
+    name: Frames
+    href: SilverCraft.CSCore.Tags.ID3.Frames.html
+- uid: SilverCraft.CSCore.Tags.ID3.Frames.FrameID
+  commentId: T:SilverCraft.CSCore.Tags.ID3.Frames.FrameID
+  parent: SilverCraft.CSCore.Tags.ID3.Frames
+  href: SilverCraft.CSCore.Tags.ID3.Frames.FrameID.html
+  name: FrameID
+  nameWithType: FrameID
+  fullName: SilverCraft.CSCore.Tags.ID3.Frames.FrameID

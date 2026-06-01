@@ -1,0 +1,126 @@
+### YamlMime:ManagedReference
+items:
+- uid: SilverCraft.CSCore.DSP.FftMode
+  commentId: T:SilverCraft.CSCore.DSP.FftMode
+  id: FftMode
+  parent: SilverCraft.CSCore.DSP
+  children:
+  - SilverCraft.CSCore.DSP.FftMode.Backward
+  - SilverCraft.CSCore.DSP.FftMode.Forward
+  langs:
+  - csharp
+  - vb
+  name: FftMode
+  nameWithType: FftMode
+  fullName: SilverCraft.CSCore.DSP.FftMode
+  type: Enum
+  source:
+    remote:
+      path: SilverCraft.CSCore/DSP/FftMode.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: FftMode
+    path: ../SilverCraft.CSCore/DSP/FftMode.cs
+    startLine: 5
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.DSP
+  summary: Fft mode.
+  example: []
+  syntax:
+    content: public enum FftMode
+    content.vb: Public Enum FftMode
+- uid: SilverCraft.CSCore.DSP.FftMode.Forward
+  commentId: F:SilverCraft.CSCore.DSP.FftMode.Forward
+  id: Forward
+  parent: SilverCraft.CSCore.DSP.FftMode
+  langs:
+  - csharp
+  - vb
+  name: Forward
+  nameWithType: FftMode.Forward
+  fullName: SilverCraft.CSCore.DSP.FftMode.Forward
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/DSP/FftMode.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: Forward
+    path: ../SilverCraft.CSCore/DSP/FftMode.cs
+    startLine: 10
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.DSP
+  summary: Forward
+  example: []
+  syntax:
+    content: Forward = 0
+    return:
+      type: SilverCraft.CSCore.DSP.FftMode
+- uid: SilverCraft.CSCore.DSP.FftMode.Backward
+  commentId: F:SilverCraft.CSCore.DSP.FftMode.Backward
+  id: Backward
+  parent: SilverCraft.CSCore.DSP.FftMode
+  langs:
+  - csharp
+  - vb
+  name: Backward
+  nameWithType: FftMode.Backward
+  fullName: SilverCraft.CSCore.DSP.FftMode.Backward
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/DSP/FftMode.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: Backward
+    path: ../SilverCraft.CSCore/DSP/FftMode.cs
+    startLine: 14
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.DSP
+  summary: Backward
+  example: []
+  syntax:
+    content: Backward = 1
+    return:
+      type: SilverCraft.CSCore.DSP.FftMode
+references:
+- uid: SilverCraft.CSCore.DSP
+  commentId: N:SilverCraft.CSCore.DSP
+  href: SilverCraft.html
+  name: SilverCraft.CSCore.DSP
+  nameWithType: SilverCraft.CSCore.DSP
+  fullName: SilverCraft.CSCore.DSP
+  spec.csharp:
+  - uid: SilverCraft
+    name: SilverCraft
+    href: SilverCraft.html
+  - name: .
+  - uid: SilverCraft.CSCore
+    name: CSCore
+    href: SilverCraft.CSCore.html
+  - name: .
+  - uid: SilverCraft.CSCore.DSP
+    name: DSP
+    href: SilverCraft.CSCore.DSP.html
+  spec.vb:
+  - uid: SilverCraft
+    name: SilverCraft
+    href: SilverCraft.html
+  - name: .
+  - uid: SilverCraft.CSCore
+    name: CSCore
+    href: SilverCraft.CSCore.html
+  - name: .
+  - uid: SilverCraft.CSCore.DSP
+    name: DSP
+    href: SilverCraft.CSCore.DSP.html
+- uid: SilverCraft.CSCore.DSP.FftMode
+  commentId: T:SilverCraft.CSCore.DSP.FftMode
+  parent: SilverCraft.CSCore.DSP
+  href: SilverCraft.CSCore.DSP.FftMode.html
+  name: FftMode
+  nameWithType: FftMode
+  fullName: SilverCraft.CSCore.DSP.FftMode

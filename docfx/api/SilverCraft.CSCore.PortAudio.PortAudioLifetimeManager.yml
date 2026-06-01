@@ -1,0 +1,488 @@
+### YamlMime:ManagedReference
+items:
+- uid: SilverCraft.CSCore.PortAudio.PortAudioLifetimeManager
+  commentId: T:SilverCraft.CSCore.PortAudio.PortAudioLifetimeManager
+  id: PortAudioLifetimeManager
+  parent: SilverCraft.CSCore.PortAudio
+  children:
+  - SilverCraft.CSCore.PortAudio.PortAudioLifetimeManager.IPinkyPromiseToTerminatePortAudioMyself
+  - SilverCraft.CSCore.PortAudio.PortAudioLifetimeManager.Initialize
+  - SilverCraft.CSCore.PortAudio.PortAudioLifetimeManager.Terminate(Serilog.ILogger)
+  langs:
+  - csharp
+  - vb
+  name: PortAudioLifetimeManager
+  nameWithType: PortAudioLifetimeManager
+  fullName: SilverCraft.CSCore.PortAudio.PortAudioLifetimeManager
+  type: Class
+  source:
+    remote:
+      path: SilverCraft.CSCore.PortAudio/PortAudioLifetimeManager.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: PortAudioLifetimeManager
+    path: ../SilverCraft.CSCore.PortAudio/PortAudioLifetimeManager.cs
+    startLine: 4
+  assemblies:
+  - SilverCraft.CSCore.PortAudio
+  namespace: SilverCraft.CSCore.PortAudio
+  syntax:
+    content: public static class PortAudioLifetimeManager
+    content.vb: Public Module PortAudioLifetimeManager
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: SilverCraft.CSCore.PortAudio.PortAudioLifetimeManager.IPinkyPromiseToTerminatePortAudioMyself
+  commentId: M:SilverCraft.CSCore.PortAudio.PortAudioLifetimeManager.IPinkyPromiseToTerminatePortAudioMyself
+  id: IPinkyPromiseToTerminatePortAudioMyself
+  parent: SilverCraft.CSCore.PortAudio.PortAudioLifetimeManager
+  langs:
+  - csharp
+  - vb
+  name: IPinkyPromiseToTerminatePortAudioMyself()
+  nameWithType: PortAudioLifetimeManager.IPinkyPromiseToTerminatePortAudioMyself()
+  fullName: SilverCraft.CSCore.PortAudio.PortAudioLifetimeManager.IPinkyPromiseToTerminatePortAudioMyself()
+  type: Method
+  source:
+    remote:
+      path: SilverCraft.CSCore.PortAudio/PortAudioLifetimeManager.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: IPinkyPromiseToTerminatePortAudioMyself
+    path: ../SilverCraft.CSCore.PortAudio/PortAudioLifetimeManager.cs
+    startLine: 17
+  assemblies:
+  - SilverCraft.CSCore.PortAudio
+  namespace: SilverCraft.CSCore.PortAudio
+  summary: Prevents the <xref href="SilverCraft.CSCore.PortAudio.PortAudioLifetimeManager" data-throw-if-not-resolved="false"></xref> from automatically terminating PortAudio when instances are disposed.
+  remarks: >-
+    This method sets an internal flag, effectively suspending the automatic termination logic of PortAudio.
+
+    Call this if you intend to handle the global PortAudio cleanup manually.
+  example: []
+  syntax:
+    content: public static void IPinkyPromiseToTerminatePortAudioMyself()
+    content.vb: Public Shared Sub IPinkyPromiseToTerminatePortAudioMyself()
+  overload: SilverCraft.CSCore.PortAudio.PortAudioLifetimeManager.IPinkyPromiseToTerminatePortAudioMyself*
+- uid: SilverCraft.CSCore.PortAudio.PortAudioLifetimeManager.Initialize
+  commentId: M:SilverCraft.CSCore.PortAudio.PortAudioLifetimeManager.Initialize
+  id: Initialize
+  parent: SilverCraft.CSCore.PortAudio.PortAudioLifetimeManager
+  langs:
+  - csharp
+  - vb
+  name: Initialize()
+  nameWithType: PortAudioLifetimeManager.Initialize()
+  fullName: SilverCraft.CSCore.PortAudio.PortAudioLifetimeManager.Initialize()
+  type: Method
+  source:
+    remote:
+      path: SilverCraft.CSCore.PortAudio/PortAudioLifetimeManager.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: Initialize
+    path: ../SilverCraft.CSCore.PortAudio/PortAudioLifetimeManager.cs
+    startLine: 29
+  assemblies:
+  - SilverCraft.CSCore.PortAudio
+  namespace: SilverCraft.CSCore.PortAudio
+  summary: Initializes PortAudio if it has not been initialized already, and increments the internal reference count.
+  remarks: >-
+    This method ensures that the underlying PortAudio system resources are set up for use.
+
+    It is safe to call multiple times, but subsequent calls only increment the reference count.
+  example: []
+  syntax:
+    content: public static void Initialize()
+    content.vb: Public Shared Sub Initialize()
+  overload: SilverCraft.CSCore.PortAudio.PortAudioLifetimeManager.Initialize*
+- uid: SilverCraft.CSCore.PortAudio.PortAudioLifetimeManager.Terminate(Serilog.ILogger)
+  commentId: M:SilverCraft.CSCore.PortAudio.PortAudioLifetimeManager.Terminate(Serilog.ILogger)
+  id: Terminate(Serilog.ILogger)
+  parent: SilverCraft.CSCore.PortAudio.PortAudioLifetimeManager
+  langs:
+  - csharp
+  - vb
+  name: Terminate(ILogger?)
+  nameWithType: PortAudioLifetimeManager.Terminate(ILogger?)
+  fullName: SilverCraft.CSCore.PortAudio.PortAudioLifetimeManager.Terminate(Serilog.ILogger?)
+  type: Method
+  source:
+    remote:
+      path: SilverCraft.CSCore.PortAudio/PortAudioLifetimeManager.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: Terminate
+    path: ../SilverCraft.CSCore.PortAudio/PortAudioLifetimeManager.cs
+    startLine: 53
+  assemblies:
+  - SilverCraft.CSCore.PortAudio
+  namespace: SilverCraft.CSCore.PortAudio
+  summary: Terminates the global PortAudio resources and cleans up associated native structures.
+  remarks: >-
+    This method safely decrements an internal reference count. Termination only proceeds if the reference count reaches zero and the termination is not manually disabled via <xref href="SilverCraft.CSCore.PortAudio.PortAudioLifetimeManager.IPinkyPromiseToTerminatePortAudioMyself" data-throw-if-not-resolved="false"></xref>.
+
+    If termination occurs, it calls the native PortAudio termination function (<xref href="SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_Terminate" data-throw-if-not-resolved="false"></xref>).
+  example: []
+  syntax:
+    content: public static void Terminate(ILogger? log)
+    parameters:
+    - id: log
+      type: Serilog.ILogger
+      description: An optional logger used to record any errors encountered during the native PortAudio shutdown process.
+    content.vb: Public Shared Sub Terminate(log As ILogger)
+  overload: SilverCraft.CSCore.PortAudio.PortAudioLifetimeManager.Terminate*
+  nameWithType.vb: PortAudioLifetimeManager.Terminate(ILogger)
+  fullName.vb: SilverCraft.CSCore.PortAudio.PortAudioLifetimeManager.Terminate(Serilog.ILogger)
+  name.vb: Terminate(ILogger)
+references:
+- uid: SilverCraft.CSCore.PortAudio
+  commentId: N:SilverCraft.CSCore.PortAudio
+  href: SilverCraft.html
+  name: SilverCraft.CSCore.PortAudio
+  nameWithType: SilverCraft.CSCore.PortAudio
+  fullName: SilverCraft.CSCore.PortAudio
+  spec.csharp:
+  - uid: SilverCraft
+    name: SilverCraft
+    href: SilverCraft.html
+  - name: .
+  - uid: SilverCraft.CSCore
+    name: CSCore
+    href: SilverCraft.CSCore.html
+  - name: .
+  - uid: SilverCraft.CSCore.PortAudio
+    name: PortAudio
+    href: SilverCraft.CSCore.PortAudio.html
+  spec.vb:
+  - uid: SilverCraft
+    name: SilverCraft
+    href: SilverCraft.html
+  - name: .
+  - uid: SilverCraft.CSCore
+    name: CSCore
+    href: SilverCraft.CSCore.html
+  - name: .
+  - uid: SilverCraft.CSCore.PortAudio
+    name: PortAudio
+    href: SilverCraft.CSCore.PortAudio.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: SilverCraft.CSCore.PortAudio.PortAudioLifetimeManager
+  commentId: T:SilverCraft.CSCore.PortAudio.PortAudioLifetimeManager
+  href: SilverCraft.CSCore.PortAudio.PortAudioLifetimeManager.html
+  name: PortAudioLifetimeManager
+  nameWithType: PortAudioLifetimeManager
+  fullName: SilverCraft.CSCore.PortAudio.PortAudioLifetimeManager
+- uid: SilverCraft.CSCore.PortAudio.PortAudioLifetimeManager.IPinkyPromiseToTerminatePortAudioMyself*
+  commentId: Overload:SilverCraft.CSCore.PortAudio.PortAudioLifetimeManager.IPinkyPromiseToTerminatePortAudioMyself
+  href: SilverCraft.CSCore.PortAudio.PortAudioLifetimeManager.html#SilverCraft_CSCore_PortAudio_PortAudioLifetimeManager_IPinkyPromiseToTerminatePortAudioMyself
+  name: IPinkyPromiseToTerminatePortAudioMyself
+  nameWithType: PortAudioLifetimeManager.IPinkyPromiseToTerminatePortAudioMyself
+  fullName: SilverCraft.CSCore.PortAudio.PortAudioLifetimeManager.IPinkyPromiseToTerminatePortAudioMyself
+- uid: SilverCraft.CSCore.PortAudio.PortAudioLifetimeManager.Initialize*
+  commentId: Overload:SilverCraft.CSCore.PortAudio.PortAudioLifetimeManager.Initialize
+  href: SilverCraft.CSCore.PortAudio.PortAudioLifetimeManager.html#SilverCraft_CSCore_PortAudio_PortAudioLifetimeManager_Initialize
+  name: Initialize
+  nameWithType: PortAudioLifetimeManager.Initialize
+  fullName: SilverCraft.CSCore.PortAudio.PortAudioLifetimeManager.Initialize
+- uid: SilverCraft.CSCore.PortAudio.PortAudioLifetimeManager.IPinkyPromiseToTerminatePortAudioMyself
+  commentId: M:SilverCraft.CSCore.PortAudio.PortAudioLifetimeManager.IPinkyPromiseToTerminatePortAudioMyself
+  href: SilverCraft.CSCore.PortAudio.PortAudioLifetimeManager.html#SilverCraft_CSCore_PortAudio_PortAudioLifetimeManager_IPinkyPromiseToTerminatePortAudioMyself
+  name: IPinkyPromiseToTerminatePortAudioMyself()
+  nameWithType: PortAudioLifetimeManager.IPinkyPromiseToTerminatePortAudioMyself()
+  fullName: SilverCraft.CSCore.PortAudio.PortAudioLifetimeManager.IPinkyPromiseToTerminatePortAudioMyself()
+  spec.csharp:
+  - uid: SilverCraft.CSCore.PortAudio.PortAudioLifetimeManager.IPinkyPromiseToTerminatePortAudioMyself
+    name: IPinkyPromiseToTerminatePortAudioMyself
+    href: SilverCraft.CSCore.PortAudio.PortAudioLifetimeManager.html#SilverCraft_CSCore_PortAudio_PortAudioLifetimeManager_IPinkyPromiseToTerminatePortAudioMyself
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: SilverCraft.CSCore.PortAudio.PortAudioLifetimeManager.IPinkyPromiseToTerminatePortAudioMyself
+    name: IPinkyPromiseToTerminatePortAudioMyself
+    href: SilverCraft.CSCore.PortAudio.PortAudioLifetimeManager.html#SilverCraft_CSCore_PortAudio_PortAudioLifetimeManager_IPinkyPromiseToTerminatePortAudioMyself
+  - name: (
+  - name: )
+- uid: SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_Terminate
+  commentId: M:SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_Terminate
+  isExternal: true
+  href: SilverCraft.CSCore.PortAudio.Native.NativeMethods.html#SilverCraft_CSCore_PortAudio_Native_NativeMethods_Pa_Terminate
+  name: Pa_Terminate()
+  nameWithType: NativeMethods.Pa_Terminate()
+  fullName: SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_Terminate()
+  spec.csharp:
+  - uid: SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_Terminate
+    name: Pa_Terminate
+    isExternal: true
+    href: SilverCraft.CSCore.PortAudio.Native.NativeMethods.html#SilverCraft_CSCore_PortAudio_Native_NativeMethods_Pa_Terminate
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_Terminate
+    name: Pa_Terminate
+    isExternal: true
+    href: SilverCraft.CSCore.PortAudio.Native.NativeMethods.html#SilverCraft_CSCore_PortAudio_Native_NativeMethods_Pa_Terminate
+  - name: (
+  - name: )
+- uid: SilverCraft.CSCore.PortAudio.PortAudioLifetimeManager.Terminate*
+  commentId: Overload:SilverCraft.CSCore.PortAudio.PortAudioLifetimeManager.Terminate
+  href: SilverCraft.CSCore.PortAudio.PortAudioLifetimeManager.html#SilverCraft_CSCore_PortAudio_PortAudioLifetimeManager_Terminate_Serilog_ILogger_
+  name: Terminate
+  nameWithType: PortAudioLifetimeManager.Terminate
+  fullName: SilverCraft.CSCore.PortAudio.PortAudioLifetimeManager.Terminate
+- uid: Serilog.ILogger
+  commentId: T:Serilog.ILogger
+  parent: Serilog
+  isExternal: true
+  name: ILogger
+  nameWithType: ILogger
+  fullName: Serilog.ILogger
+- uid: Serilog
+  commentId: N:Serilog
+  isExternal: true
+  name: Serilog
+  nameWithType: Serilog
+  fullName: Serilog

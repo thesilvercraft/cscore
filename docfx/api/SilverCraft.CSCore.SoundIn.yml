@@ -1,0 +1,76 @@
+### YamlMime:ManagedReference
+items:
+- uid: SilverCraft.CSCore.SoundIn
+  commentId: N:SilverCraft.CSCore.SoundIn
+  id: SilverCraft.CSCore.SoundIn
+  children:
+  - SilverCraft.CSCore.SoundIn.DataAvailableEventArgs
+  - SilverCraft.CSCore.SoundIn.ISoundIn
+  - SilverCraft.CSCore.SoundIn.RecordingState
+  - SilverCraft.CSCore.SoundIn.RecordingStoppedEventArgs
+  langs:
+  - csharp
+  - vb
+  name: SilverCraft.CSCore.SoundIn
+  nameWithType: SilverCraft.CSCore.SoundIn
+  fullName: SilverCraft.CSCore.SoundIn
+  type: Namespace
+  assemblies:
+  - SilverCraft.CSCore
+references:
+- uid: SilverCraft.CSCore.SoundIn.DataAvailableEventArgs
+  commentId: T:SilverCraft.CSCore.SoundIn.DataAvailableEventArgs
+  href: SilverCraft.CSCore.SoundIn.DataAvailableEventArgs.html
+  name: DataAvailableEventArgs
+  nameWithType: DataAvailableEventArgs
+  fullName: SilverCraft.CSCore.SoundIn.DataAvailableEventArgs
+- uid: SilverCraft.CSCore.SoundIn.ISoundIn
+  commentId: T:SilverCraft.CSCore.SoundIn.ISoundIn
+  parent: SilverCraft.CSCore.SoundIn
+  href: SilverCraft.CSCore.SoundIn.ISoundIn.html
+  name: ISoundIn
+  nameWithType: ISoundIn
+  fullName: SilverCraft.CSCore.SoundIn.ISoundIn
+- uid: SilverCraft.CSCore.SoundIn.RecordingState
+  commentId: T:SilverCraft.CSCore.SoundIn.RecordingState
+  parent: SilverCraft.CSCore.SoundIn
+  href: SilverCraft.CSCore.SoundIn.RecordingState.html
+  name: RecordingState
+  nameWithType: RecordingState
+  fullName: SilverCraft.CSCore.SoundIn.RecordingState
+- uid: SilverCraft.CSCore.SoundIn.RecordingStoppedEventArgs
+  commentId: T:SilverCraft.CSCore.SoundIn.RecordingStoppedEventArgs
+  href: SilverCraft.CSCore.SoundIn.RecordingStoppedEventArgs.html
+  name: RecordingStoppedEventArgs
+  nameWithType: RecordingStoppedEventArgs
+  fullName: SilverCraft.CSCore.SoundIn.RecordingStoppedEventArgs
+- uid: SilverCraft.CSCore.SoundIn
+  commentId: N:SilverCraft.CSCore.SoundIn
+  href: SilverCraft.html
+  name: SilverCraft.CSCore.SoundIn
+  nameWithType: SilverCraft.CSCore.SoundIn
+  fullName: SilverCraft.CSCore.SoundIn
+  spec.csharp:
+  - uid: SilverCraft
+    name: SilverCraft
+    href: SilverCraft.html
+  - name: .
+  - uid: SilverCraft.CSCore
+    name: CSCore
+    href: SilverCraft.CSCore.html
+  - name: .
+  - uid: SilverCraft.CSCore.SoundIn
+    name: SoundIn
+    href: SilverCraft.CSCore.SoundIn.html
+  spec.vb:
+  - uid: SilverCraft
+    name: SilverCraft
+    href: SilverCraft.html
+  - name: .
+  - uid: SilverCraft.CSCore
+    name: CSCore
+    href: SilverCraft.CSCore.html
+  - name: .
+  - uid: SilverCraft.CSCore.SoundIn
+    name: SoundIn
+    href: SilverCraft.CSCore.SoundIn.html

@@ -1,0 +1,1740 @@
+### YamlMime:ManagedReference
+items:
+- uid: SilverCraft.CSCore.ISampleAggregator
+  commentId: T:SilverCraft.CSCore.ISampleAggregator
+  id: ISampleAggregator
+  parent: SilverCraft.CSCore
+  children: []
+  langs:
+  - csharp
+  - vb
+  name: ISampleAggregator
+  nameWithType: ISampleAggregator
+  fullName: SilverCraft.CSCore.ISampleAggregator
+  type: Interface
+  source:
+    remote:
+      path: SilverCraft.CSCore/ISampleSource.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: ISampleAggregator
+    path: ../SilverCraft.CSCore/ISampleSource.cs
+    startLine: 19
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore
+  summary: Defines the base for all <xref href="SilverCraft.CSCore.ISampleSource" data-throw-if-not-resolved="false"></xref> aggregators.
+  example: []
+  syntax:
+    content: 'public interface ISampleAggregator : ISampleSource, IAggregator<float, ISampleSource>, IReadableAudioSource<float>, IAudioSource, IDisposable'
+    content.vb: Public Interface ISampleAggregator Inherits ISampleSource, IAggregator(Of Single, ISampleSource), IReadableAudioSource(Of Single), IAudioSource, IDisposable
+  derivedClasses:
+  - SilverCraft.CSCore.DSP.Resampler.ResamplerBase
+  - SilverCraft.CSCore.DSP.Resampler.SimpleResampler
+  - SilverCraft.CSCore.SampleAggregatorBase
+  - SilverCraft.CSCore.Streams.Effects.Equalizer
+  - SilverCraft.CSCore.Streams.Effects.PitchShifter
+  - SilverCraft.CSCore.Streams.FadeInOut
+  - SilverCraft.CSCore.Streams.GainSource
+  - SilverCraft.CSCore.Streams.MonoToStereoSource
+  - SilverCraft.CSCore.Streams.NotificationSource
+  - SilverCraft.CSCore.Streams.PanSource
+  - SilverCraft.CSCore.Streams.PeakMeter
+  - SilverCraft.CSCore.Streams.SimpleNotificationSource
+  - SilverCraft.CSCore.Streams.SingleBlockNotificationStream
+  - SilverCraft.CSCore.Streams.StereoToMonoSource
+  - SilverCraft.CSCore.Streams.VolumeSource
+  inheritedMembers:
+  - SilverCraft.CSCore.IAggregator{System.Single,SilverCraft.CSCore.ISampleSource}.BaseSource
+  - SilverCraft.CSCore.IReadableAudioSource{System.Single}.Read(System.Single[],System.Int32,System.Int32)
+  - SilverCraft.CSCore.IAudioSource.CanSeek
+  - SilverCraft.CSCore.IAudioSource.WaveFormat
+  - SilverCraft.CSCore.IAudioSource.Position
+  - SilverCraft.CSCore.IAudioSource.Length
+  - System.IDisposable.Dispose
+  extensionMethods:
+  - SilverCraft.CSCore.IAudioSource.SilverCraft.CSCore.Extensions.GetLength
+  - SilverCraft.CSCore.IAudioSource.SilverCraft.CSCore.Extensions.GetMilliseconds(System.Int64)
+  - SilverCraft.CSCore.IAudioSource.SilverCraft.CSCore.Extensions.GetPosition
+  - SilverCraft.CSCore.IAudioSource.SilverCraft.CSCore.Extensions.GetRawElements(System.Int64)
+  - SilverCraft.CSCore.IAudioSource.SilverCraft.CSCore.Extensions.GetRawElements(System.TimeSpan)
+  - SilverCraft.CSCore.IAudioSource.SilverCraft.CSCore.Extensions.GetTime(System.Int64)
+  - SilverCraft.CSCore.IAudioSource.SilverCraft.CSCore.Extensions.SetPosition(System.TimeSpan)
+  - SilverCraft.CSCore.ISampleAggregator.SilverCraft.CSCore.FluentExtensions.AppendSource``2(System.Func{SilverCraft.CSCore.ISampleAggregator,{TResult}})
+  - SilverCraft.CSCore.ISampleAggregator.SilverCraft.CSCore.FluentExtensions.AppendSource``2(System.Func{SilverCraft.CSCore.ISampleAggregator,{TResult}},{TResult}@)
+  - SilverCraft.CSCore.ISampleAggregator.SilverCraft.CSCore.FluentExtensions.Synchronized``2
+  - SilverCraft.CSCore.ISampleSource.SilverCraft.CSCore.FluentExtensions.ChangeSampleRate(System.Int32)
+  - SilverCraft.CSCore.ISampleSource.SilverCraft.CSCore.FluentExtensions.OnEndOfStream(System.Action{SilverCraft.CSCore.ISampleSource})
+  - SilverCraft.CSCore.ISampleSource.SilverCraft.CSCore.FluentExtensions.ToMono
+  - SilverCraft.CSCore.ISampleSource.SilverCraft.CSCore.FluentExtensions.ToStereo
+  - SilverCraft.CSCore.ISampleSource.SilverCraft.CSCore.FluentExtensions.ToWaveSource
+  - SilverCraft.CSCore.ISampleSource.SilverCraft.CSCore.FluentExtensions.ToWaveSource(System.Int32)
+references:
+- uid: SilverCraft.CSCore.ISampleSource
+  commentId: T:SilverCraft.CSCore.ISampleSource
+  parent: SilverCraft.CSCore
+  href: SilverCraft.CSCore.ISampleSource.html
+  name: ISampleSource
+  nameWithType: ISampleSource
+  fullName: SilverCraft.CSCore.ISampleSource
+- uid: SilverCraft.CSCore
+  commentId: N:SilverCraft.CSCore
+  href: SilverCraft.html
+  name: SilverCraft.CSCore
+  nameWithType: SilverCraft.CSCore
+  fullName: SilverCraft.CSCore
+  spec.csharp:
+  - uid: SilverCraft
+    name: SilverCraft
+    href: SilverCraft.html
+  - name: .
+  - uid: SilverCraft.CSCore
+    name: CSCore
+    href: SilverCraft.CSCore.html
+  spec.vb:
+  - uid: SilverCraft
+    name: SilverCraft
+    href: SilverCraft.html
+  - name: .
+  - uid: SilverCraft.CSCore
+    name: CSCore
+    href: SilverCraft.CSCore.html
+- uid: SilverCraft.CSCore.IAggregator{System.Single,SilverCraft.CSCore.ISampleSource}.BaseSource
+  commentId: P:SilverCraft.CSCore.IAggregator{System.Single,SilverCraft.CSCore.ISampleSource}.BaseSource
+  parent: SilverCraft.CSCore.IAggregator{System.Single,SilverCraft.CSCore.ISampleSource}
+  definition: SilverCraft.CSCore.IAggregator`2.BaseSource
+  href: SilverCraft.CSCore.IAggregator-2.html#SilverCraft_CSCore_IAggregator_2_BaseSource
+  name: BaseSource
+  nameWithType: IAggregator<float, ISampleSource>.BaseSource
+  fullName: SilverCraft.CSCore.IAggregator<float, SilverCraft.CSCore.ISampleSource>.BaseSource
+  nameWithType.vb: IAggregator(Of Single, ISampleSource).BaseSource
+  fullName.vb: SilverCraft.CSCore.IAggregator(Of Single, SilverCraft.CSCore.ISampleSource).BaseSource
+- uid: SilverCraft.CSCore.IReadableAudioSource{System.Single}.Read(System.Single[],System.Int32,System.Int32)
+  commentId: M:SilverCraft.CSCore.IReadableAudioSource{System.Single}.Read(System.Single[],System.Int32,System.Int32)
+  parent: SilverCraft.CSCore.IReadableAudioSource{System.Single}
+  definition: SilverCraft.CSCore.IReadableAudioSource`1.Read(`0[],System.Int32,System.Int32)
+  href: SilverCraft.CSCore.IReadableAudioSource-1.html#SilverCraft_CSCore_IReadableAudioSource_1_Read__0___System_Int32_System_Int32_
+  name: Read(float[], int, int)
+  nameWithType: IReadableAudioSource<float>.Read(float[], int, int)
+  fullName: SilverCraft.CSCore.IReadableAudioSource<float>.Read(float[], int, int)
+  nameWithType.vb: IReadableAudioSource(Of Single).Read(Single(), Integer, Integer)
+  fullName.vb: SilverCraft.CSCore.IReadableAudioSource(Of Single).Read(Single(), Integer, Integer)
+  name.vb: Read(Single(), Integer, Integer)
+  spec.csharp:
+  - uid: SilverCraft.CSCore.IReadableAudioSource{System.Single}.Read(System.Single[],System.Int32,System.Int32)
+    name: Read
+    href: SilverCraft.CSCore.IReadableAudioSource-1.html#SilverCraft_CSCore_IReadableAudioSource_1_Read__0___System_Int32_System_Int32_
+  - name: (
+  - uid: System.Single
+    name: float
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: '['
+  - name: ']'
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+  spec.vb:
+  - uid: SilverCraft.CSCore.IReadableAudioSource{System.Single}.Read(System.Single[],System.Int32,System.Int32)
+    name: Read
+    href: SilverCraft.CSCore.IReadableAudioSource-1.html#SilverCraft_CSCore_IReadableAudioSource_1_Read__0___System_Int32_System_Int32_
+  - name: (
+  - uid: System.Single
+    name: Single
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: (
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: SilverCraft.CSCore.IAudioSource.CanSeek
+  commentId: P:SilverCraft.CSCore.IAudioSource.CanSeek
+  parent: SilverCraft.CSCore.IAudioSource
+  href: SilverCraft.CSCore.IAudioSource.html#SilverCraft_CSCore_IAudioSource_CanSeek
+  name: CanSeek
+  nameWithType: IAudioSource.CanSeek
+  fullName: SilverCraft.CSCore.IAudioSource.CanSeek
+- uid: SilverCraft.CSCore.IAudioSource.WaveFormat
+  commentId: P:SilverCraft.CSCore.IAudioSource.WaveFormat
+  parent: SilverCraft.CSCore.IAudioSource
+  href: SilverCraft.CSCore.IAudioSource.html#SilverCraft_CSCore_IAudioSource_WaveFormat
+  name: WaveFormat
+  nameWithType: IAudioSource.WaveFormat
+  fullName: SilverCraft.CSCore.IAudioSource.WaveFormat
+- uid: SilverCraft.CSCore.IAudioSource.Position
+  commentId: P:SilverCraft.CSCore.IAudioSource.Position
+  parent: SilverCraft.CSCore.IAudioSource
+  href: SilverCraft.CSCore.IAudioSource.html#SilverCraft_CSCore_IAudioSource_Position
+  name: Position
+  nameWithType: IAudioSource.Position
+  fullName: SilverCraft.CSCore.IAudioSource.Position
+- uid: SilverCraft.CSCore.IAudioSource.Length
+  commentId: P:SilverCraft.CSCore.IAudioSource.Length
+  parent: SilverCraft.CSCore.IAudioSource
+  href: SilverCraft.CSCore.IAudioSource.html#SilverCraft_CSCore_IAudioSource_Length
+  name: Length
+  nameWithType: IAudioSource.Length
+  fullName: SilverCraft.CSCore.IAudioSource.Length
+- uid: System.IDisposable.Dispose
+  commentId: M:System.IDisposable.Dispose
+  parent: System.IDisposable
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.idisposable.dispose
+  name: Dispose()
+  nameWithType: IDisposable.Dispose()
+  fullName: System.IDisposable.Dispose()
+  spec.csharp:
+  - uid: System.IDisposable.Dispose
+    name: Dispose
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.idisposable.dispose
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.IDisposable.Dispose
+    name: Dispose
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.idisposable.dispose
+  - name: (
+  - name: )
+- uid: SilverCraft.CSCore.IAudioSource.SilverCraft.CSCore.Extensions.GetLength
+  commentId: M:SilverCraft.CSCore.Extensions.GetLength(SilverCraft.CSCore.IAudioSource)
+  parent: SilverCraft.CSCore.Extensions
+  definition: SilverCraft.CSCore.Extensions.GetLength(SilverCraft.CSCore.IAudioSource)
+  href: SilverCraft.CSCore.Extensions.html#SilverCraft_CSCore_Extensions_GetLength_SilverCraft_CSCore_IAudioSource_
+  name: GetLength(IAudioSource)
+  nameWithType: Extensions.GetLength(IAudioSource)
+  fullName: SilverCraft.CSCore.Extensions.GetLength(SilverCraft.CSCore.IAudioSource)
+  spec.csharp:
+  - uid: SilverCraft.CSCore.Extensions.GetLength(SilverCraft.CSCore.IAudioSource)
+    name: GetLength
+    href: SilverCraft.CSCore.Extensions.html#SilverCraft_CSCore_Extensions_GetLength_SilverCraft_CSCore_IAudioSource_
+  - name: (
+  - uid: SilverCraft.CSCore.IAudioSource
+    name: IAudioSource
+    href: SilverCraft.CSCore.IAudioSource.html
+  - name: )
+  spec.vb:
+  - uid: SilverCraft.CSCore.Extensions.GetLength(SilverCraft.CSCore.IAudioSource)
+    name: GetLength
+    href: SilverCraft.CSCore.Extensions.html#SilverCraft_CSCore_Extensions_GetLength_SilverCraft_CSCore_IAudioSource_
+  - name: (
+  - uid: SilverCraft.CSCore.IAudioSource
+    name: IAudioSource
+    href: SilverCraft.CSCore.IAudioSource.html
+  - name: )
+- uid: SilverCraft.CSCore.IAudioSource.SilverCraft.CSCore.Extensions.GetMilliseconds(System.Int64)
+  commentId: M:SilverCraft.CSCore.Extensions.GetMilliseconds(SilverCraft.CSCore.IAudioSource,System.Int64)
+  parent: SilverCraft.CSCore.Extensions
+  definition: SilverCraft.CSCore.Extensions.GetMilliseconds(SilverCraft.CSCore.IAudioSource,System.Int64)
+  href: SilverCraft.CSCore.Extensions.html#SilverCraft_CSCore_Extensions_GetMilliseconds_SilverCraft_CSCore_IAudioSource_System_Int64_
+  name: GetMilliseconds(IAudioSource, long)
+  nameWithType: Extensions.GetMilliseconds(IAudioSource, long)
+  fullName: SilverCraft.CSCore.Extensions.GetMilliseconds(SilverCraft.CSCore.IAudioSource, long)
+  nameWithType.vb: Extensions.GetMilliseconds(IAudioSource, Long)
+  fullName.vb: SilverCraft.CSCore.Extensions.GetMilliseconds(SilverCraft.CSCore.IAudioSource, Long)
+  name.vb: GetMilliseconds(IAudioSource, Long)
+  spec.csharp:
+  - uid: SilverCraft.CSCore.Extensions.GetMilliseconds(SilverCraft.CSCore.IAudioSource,System.Int64)
+    name: GetMilliseconds
+    href: SilverCraft.CSCore.Extensions.html#SilverCraft_CSCore_Extensions_GetMilliseconds_SilverCraft_CSCore_IAudioSource_System_Int64_
+  - name: (
+  - uid: SilverCraft.CSCore.IAudioSource
+    name: IAudioSource
+    href: SilverCraft.CSCore.IAudioSource.html
+  - name: ','
+  - name: " "
+  - uid: System.Int64
+    name: long
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int64
+  - name: )
+  spec.vb:
+  - uid: SilverCraft.CSCore.Extensions.GetMilliseconds(SilverCraft.CSCore.IAudioSource,System.Int64)
+    name: GetMilliseconds
+    href: SilverCraft.CSCore.Extensions.html#SilverCraft_CSCore_Extensions_GetMilliseconds_SilverCraft_CSCore_IAudioSource_System_Int64_
+  - name: (
+  - uid: SilverCraft.CSCore.IAudioSource
+    name: IAudioSource
+    href: SilverCraft.CSCore.IAudioSource.html
+  - name: ','
+  - name: " "
+  - uid: System.Int64
+    name: Long
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int64
+  - name: )
+- uid: SilverCraft.CSCore.IAudioSource.SilverCraft.CSCore.Extensions.GetPosition
+  commentId: M:SilverCraft.CSCore.Extensions.GetPosition(SilverCraft.CSCore.IAudioSource)
+  parent: SilverCraft.CSCore.Extensions
+  definition: SilverCraft.CSCore.Extensions.GetPosition(SilverCraft.CSCore.IAudioSource)
+  href: SilverCraft.CSCore.Extensions.html#SilverCraft_CSCore_Extensions_GetPosition_SilverCraft_CSCore_IAudioSource_
+  name: GetPosition(IAudioSource)
+  nameWithType: Extensions.GetPosition(IAudioSource)
+  fullName: SilverCraft.CSCore.Extensions.GetPosition(SilverCraft.CSCore.IAudioSource)
+  spec.csharp:
+  - uid: SilverCraft.CSCore.Extensions.GetPosition(SilverCraft.CSCore.IAudioSource)
+    name: GetPosition
+    href: SilverCraft.CSCore.Extensions.html#SilverCraft_CSCore_Extensions_GetPosition_SilverCraft_CSCore_IAudioSource_
+  - name: (
+  - uid: SilverCraft.CSCore.IAudioSource
+    name: IAudioSource
+    href: SilverCraft.CSCore.IAudioSource.html
+  - name: )
+  spec.vb:
+  - uid: SilverCraft.CSCore.Extensions.GetPosition(SilverCraft.CSCore.IAudioSource)
+    name: GetPosition
+    href: SilverCraft.CSCore.Extensions.html#SilverCraft_CSCore_Extensions_GetPosition_SilverCraft_CSCore_IAudioSource_
+  - name: (
+  - uid: SilverCraft.CSCore.IAudioSource
+    name: IAudioSource
+    href: SilverCraft.CSCore.IAudioSource.html
+  - name: )
+- uid: SilverCraft.CSCore.IAudioSource.SilverCraft.CSCore.Extensions.GetRawElements(System.Int64)
+  commentId: M:SilverCraft.CSCore.Extensions.GetRawElements(SilverCraft.CSCore.IAudioSource,System.Int64)
+  parent: SilverCraft.CSCore.Extensions
+  definition: SilverCraft.CSCore.Extensions.GetRawElements(SilverCraft.CSCore.IAudioSource,System.Int64)
+  href: SilverCraft.CSCore.Extensions.html#SilverCraft_CSCore_Extensions_GetRawElements_SilverCraft_CSCore_IAudioSource_System_Int64_
+  name: GetRawElements(IAudioSource, long)
+  nameWithType: Extensions.GetRawElements(IAudioSource, long)
+  fullName: SilverCraft.CSCore.Extensions.GetRawElements(SilverCraft.CSCore.IAudioSource, long)
+  nameWithType.vb: Extensions.GetRawElements(IAudioSource, Long)
+  fullName.vb: SilverCraft.CSCore.Extensions.GetRawElements(SilverCraft.CSCore.IAudioSource, Long)
+  name.vb: GetRawElements(IAudioSource, Long)
+  spec.csharp:
+  - uid: SilverCraft.CSCore.Extensions.GetRawElements(SilverCraft.CSCore.IAudioSource,System.Int64)
+    name: GetRawElements
+    href: SilverCraft.CSCore.Extensions.html#SilverCraft_CSCore_Extensions_GetRawElements_SilverCraft_CSCore_IAudioSource_System_Int64_
+  - name: (
+  - uid: SilverCraft.CSCore.IAudioSource
+    name: IAudioSource
+    href: SilverCraft.CSCore.IAudioSource.html
+  - name: ','
+  - name: " "
+  - uid: System.Int64
+    name: long
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int64
+  - name: )
+  spec.vb:
+  - uid: SilverCraft.CSCore.Extensions.GetRawElements(SilverCraft.CSCore.IAudioSource,System.Int64)
+    name: GetRawElements
+    href: SilverCraft.CSCore.Extensions.html#SilverCraft_CSCore_Extensions_GetRawElements_SilverCraft_CSCore_IAudioSource_System_Int64_
+  - name: (
+  - uid: SilverCraft.CSCore.IAudioSource
+    name: IAudioSource
+    href: SilverCraft.CSCore.IAudioSource.html
+  - name: ','
+  - name: " "
+  - uid: System.Int64
+    name: Long
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int64
+  - name: )
+- uid: SilverCraft.CSCore.IAudioSource.SilverCraft.CSCore.Extensions.GetRawElements(System.TimeSpan)
+  commentId: M:SilverCraft.CSCore.Extensions.GetRawElements(SilverCraft.CSCore.IAudioSource,System.TimeSpan)
+  parent: SilverCraft.CSCore.Extensions
+  definition: SilverCraft.CSCore.Extensions.GetRawElements(SilverCraft.CSCore.IAudioSource,System.TimeSpan)
+  href: SilverCraft.CSCore.Extensions.html#SilverCraft_CSCore_Extensions_GetRawElements_SilverCraft_CSCore_IAudioSource_System_TimeSpan_
+  name: GetRawElements(IAudioSource, TimeSpan)
+  nameWithType: Extensions.GetRawElements(IAudioSource, TimeSpan)
+  fullName: SilverCraft.CSCore.Extensions.GetRawElements(SilverCraft.CSCore.IAudioSource, System.TimeSpan)
+  spec.csharp:
+  - uid: SilverCraft.CSCore.Extensions.GetRawElements(SilverCraft.CSCore.IAudioSource,System.TimeSpan)
+    name: GetRawElements
+    href: SilverCraft.CSCore.Extensions.html#SilverCraft_CSCore_Extensions_GetRawElements_SilverCraft_CSCore_IAudioSource_System_TimeSpan_
+  - name: (
+  - uid: SilverCraft.CSCore.IAudioSource
+    name: IAudioSource
+    href: SilverCraft.CSCore.IAudioSource.html
+  - name: ','
+  - name: " "
+  - uid: System.TimeSpan
+    name: TimeSpan
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.timespan
+  - name: )
+  spec.vb:
+  - uid: SilverCraft.CSCore.Extensions.GetRawElements(SilverCraft.CSCore.IAudioSource,System.TimeSpan)
+    name: GetRawElements
+    href: SilverCraft.CSCore.Extensions.html#SilverCraft_CSCore_Extensions_GetRawElements_SilverCraft_CSCore_IAudioSource_System_TimeSpan_
+  - name: (
+  - uid: SilverCraft.CSCore.IAudioSource
+    name: IAudioSource
+    href: SilverCraft.CSCore.IAudioSource.html
+  - name: ','
+  - name: " "
+  - uid: System.TimeSpan
+    name: TimeSpan
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.timespan
+  - name: )
+- uid: SilverCraft.CSCore.IAudioSource.SilverCraft.CSCore.Extensions.GetTime(System.Int64)
+  commentId: M:SilverCraft.CSCore.Extensions.GetTime(SilverCraft.CSCore.IAudioSource,System.Int64)
+  parent: SilverCraft.CSCore.Extensions
+  definition: SilverCraft.CSCore.Extensions.GetTime(SilverCraft.CSCore.IAudioSource,System.Int64)
+  href: SilverCraft.CSCore.Extensions.html#SilverCraft_CSCore_Extensions_GetTime_SilverCraft_CSCore_IAudioSource_System_Int64_
+  name: GetTime(IAudioSource, long)
+  nameWithType: Extensions.GetTime(IAudioSource, long)
+  fullName: SilverCraft.CSCore.Extensions.GetTime(SilverCraft.CSCore.IAudioSource, long)
+  nameWithType.vb: Extensions.GetTime(IAudioSource, Long)
+  fullName.vb: SilverCraft.CSCore.Extensions.GetTime(SilverCraft.CSCore.IAudioSource, Long)
+  name.vb: GetTime(IAudioSource, Long)
+  spec.csharp:
+  - uid: SilverCraft.CSCore.Extensions.GetTime(SilverCraft.CSCore.IAudioSource,System.Int64)
+    name: GetTime
+    href: SilverCraft.CSCore.Extensions.html#SilverCraft_CSCore_Extensions_GetTime_SilverCraft_CSCore_IAudioSource_System_Int64_
+  - name: (
+  - uid: SilverCraft.CSCore.IAudioSource
+    name: IAudioSource
+    href: SilverCraft.CSCore.IAudioSource.html
+  - name: ','
+  - name: " "
+  - uid: System.Int64
+    name: long
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int64
+  - name: )
+  spec.vb:
+  - uid: SilverCraft.CSCore.Extensions.GetTime(SilverCraft.CSCore.IAudioSource,System.Int64)
+    name: GetTime
+    href: SilverCraft.CSCore.Extensions.html#SilverCraft_CSCore_Extensions_GetTime_SilverCraft_CSCore_IAudioSource_System_Int64_
+  - name: (
+  - uid: SilverCraft.CSCore.IAudioSource
+    name: IAudioSource
+    href: SilverCraft.CSCore.IAudioSource.html
+  - name: ','
+  - name: " "
+  - uid: System.Int64
+    name: Long
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int64
+  - name: )
+- uid: SilverCraft.CSCore.IAudioSource.SilverCraft.CSCore.Extensions.SetPosition(System.TimeSpan)
+  commentId: M:SilverCraft.CSCore.Extensions.SetPosition(SilverCraft.CSCore.IAudioSource,System.TimeSpan)
+  parent: SilverCraft.CSCore.Extensions
+  definition: SilverCraft.CSCore.Extensions.SetPosition(SilverCraft.CSCore.IAudioSource,System.TimeSpan)
+  href: SilverCraft.CSCore.Extensions.html#SilverCraft_CSCore_Extensions_SetPosition_SilverCraft_CSCore_IAudioSource_System_TimeSpan_
+  name: SetPosition(IAudioSource, TimeSpan)
+  nameWithType: Extensions.SetPosition(IAudioSource, TimeSpan)
+  fullName: SilverCraft.CSCore.Extensions.SetPosition(SilverCraft.CSCore.IAudioSource, System.TimeSpan)
+  spec.csharp:
+  - uid: SilverCraft.CSCore.Extensions.SetPosition(SilverCraft.CSCore.IAudioSource,System.TimeSpan)
+    name: SetPosition
+    href: SilverCraft.CSCore.Extensions.html#SilverCraft_CSCore_Extensions_SetPosition_SilverCraft_CSCore_IAudioSource_System_TimeSpan_
+  - name: (
+  - uid: SilverCraft.CSCore.IAudioSource
+    name: IAudioSource
+    href: SilverCraft.CSCore.IAudioSource.html
+  - name: ','
+  - name: " "
+  - uid: System.TimeSpan
+    name: TimeSpan
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.timespan
+  - name: )
+  spec.vb:
+  - uid: SilverCraft.CSCore.Extensions.SetPosition(SilverCraft.CSCore.IAudioSource,System.TimeSpan)
+    name: SetPosition
+    href: SilverCraft.CSCore.Extensions.html#SilverCraft_CSCore_Extensions_SetPosition_SilverCraft_CSCore_IAudioSource_System_TimeSpan_
+  - name: (
+  - uid: SilverCraft.CSCore.IAudioSource
+    name: IAudioSource
+    href: SilverCraft.CSCore.IAudioSource.html
+  - name: ','
+  - name: " "
+  - uid: System.TimeSpan
+    name: TimeSpan
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.timespan
+  - name: )
+- uid: SilverCraft.CSCore.ISampleAggregator.SilverCraft.CSCore.FluentExtensions.AppendSource``2(System.Func{SilverCraft.CSCore.ISampleAggregator,{TResult}})
+  commentId: M:SilverCraft.CSCore.FluentExtensions.AppendSource``2(``0,System.Func{``0,``1})
+  parent: SilverCraft.CSCore.FluentExtensions
+  definition: SilverCraft.CSCore.FluentExtensions.AppendSource``2(``0,System.Func{``0,``1})
+  href: SilverCraft.CSCore.FluentExtensions.html#SilverCraft_CSCore_FluentExtensions_AppendSource__2___0_System_Func___0___1__
+  name: AppendSource<ISampleAggregator, TResult>(ISampleAggregator, Func<ISampleAggregator, TResult>)
+  nameWithType: FluentExtensions.AppendSource<ISampleAggregator, TResult>(ISampleAggregator, Func<ISampleAggregator, TResult>)
+  fullName: SilverCraft.CSCore.FluentExtensions.AppendSource<SilverCraft.CSCore.ISampleAggregator, TResult>(SilverCraft.CSCore.ISampleAggregator, System.Func<SilverCraft.CSCore.ISampleAggregator, TResult>)
+  nameWithType.vb: FluentExtensions.AppendSource(Of ISampleAggregator, TResult)(ISampleAggregator, Func(Of ISampleAggregator, TResult))
+  fullName.vb: SilverCraft.CSCore.FluentExtensions.AppendSource(Of SilverCraft.CSCore.ISampleAggregator, TResult)(SilverCraft.CSCore.ISampleAggregator, System.Func(Of SilverCraft.CSCore.ISampleAggregator, TResult))
+  name.vb: AppendSource(Of ISampleAggregator, TResult)(ISampleAggregator, Func(Of ISampleAggregator, TResult))
+  spec.csharp:
+  - uid: SilverCraft.CSCore.FluentExtensions.AppendSource``2(SilverCraft.CSCore.ISampleAggregator,System.Func{SilverCraft.CSCore.ISampleAggregator,``1})
+    name: AppendSource
+    href: SilverCraft.CSCore.FluentExtensions.html#SilverCraft_CSCore_FluentExtensions_AppendSource__2___0_System_Func___0___1__
+  - name: <
+  - uid: SilverCraft.CSCore.ISampleAggregator
+    name: ISampleAggregator
+    href: SilverCraft.CSCore.ISampleAggregator.html
+  - name: ','
+  - name: " "
+  - name: TResult
+  - name: '>'
+  - name: (
+  - uid: SilverCraft.CSCore.ISampleAggregator
+    name: ISampleAggregator
+    href: SilverCraft.CSCore.ISampleAggregator.html
+  - name: ','
+  - name: " "
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: <
+  - uid: SilverCraft.CSCore.ISampleAggregator
+    name: ISampleAggregator
+    href: SilverCraft.CSCore.ISampleAggregator.html
+  - name: ','
+  - name: " "
+  - name: TResult
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: SilverCraft.CSCore.FluentExtensions.AppendSource``2(SilverCraft.CSCore.ISampleAggregator,System.Func{SilverCraft.CSCore.ISampleAggregator,``1})
+    name: AppendSource
+    href: SilverCraft.CSCore.FluentExtensions.html#SilverCraft_CSCore_FluentExtensions_AppendSource__2___0_System_Func___0___1__
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: SilverCraft.CSCore.ISampleAggregator
+    name: ISampleAggregator
+    href: SilverCraft.CSCore.ISampleAggregator.html
+  - name: ','
+  - name: " "
+  - name: TResult
+  - name: )
+  - name: (
+  - uid: SilverCraft.CSCore.ISampleAggregator
+    name: ISampleAggregator
+    href: SilverCraft.CSCore.ISampleAggregator.html
+  - name: ','
+  - name: " "
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: SilverCraft.CSCore.ISampleAggregator
+    name: ISampleAggregator
+    href: SilverCraft.CSCore.ISampleAggregator.html
+  - name: ','
+  - name: " "
+  - name: TResult
+  - name: )
+  - name: )
+- uid: SilverCraft.CSCore.ISampleAggregator.SilverCraft.CSCore.FluentExtensions.AppendSource``2(System.Func{SilverCraft.CSCore.ISampleAggregator,{TResult}},{TResult}@)
+  commentId: M:SilverCraft.CSCore.FluentExtensions.AppendSource``2(``0,System.Func{``0,``1},``1@)
+  parent: SilverCraft.CSCore.FluentExtensions
+  definition: SilverCraft.CSCore.FluentExtensions.AppendSource``2(``0,System.Func{``0,``1},``1@)
+  href: SilverCraft.CSCore.FluentExtensions.html#SilverCraft_CSCore_FluentExtensions_AppendSource__2___0_System_Func___0___1____1__
+  name: AppendSource<ISampleAggregator, TResult>(ISampleAggregator, Func<ISampleAggregator, TResult>, out TResult)
+  nameWithType: FluentExtensions.AppendSource<ISampleAggregator, TResult>(ISampleAggregator, Func<ISampleAggregator, TResult>, out TResult)
+  fullName: SilverCraft.CSCore.FluentExtensions.AppendSource<SilverCraft.CSCore.ISampleAggregator, TResult>(SilverCraft.CSCore.ISampleAggregator, System.Func<SilverCraft.CSCore.ISampleAggregator, TResult>, out TResult)
+  nameWithType.vb: FluentExtensions.AppendSource(Of ISampleAggregator, TResult)(ISampleAggregator, Func(Of ISampleAggregator, TResult), TResult)
+  fullName.vb: SilverCraft.CSCore.FluentExtensions.AppendSource(Of SilverCraft.CSCore.ISampleAggregator, TResult)(SilverCraft.CSCore.ISampleAggregator, System.Func(Of SilverCraft.CSCore.ISampleAggregator, TResult), TResult)
+  name.vb: AppendSource(Of ISampleAggregator, TResult)(ISampleAggregator, Func(Of ISampleAggregator, TResult), TResult)
+  spec.csharp:
+  - uid: SilverCraft.CSCore.FluentExtensions.AppendSource``2(SilverCraft.CSCore.ISampleAggregator,System.Func{SilverCraft.CSCore.ISampleAggregator,``1},``1@)
+    name: AppendSource
+    href: SilverCraft.CSCore.FluentExtensions.html#SilverCraft_CSCore_FluentExtensions_AppendSource__2___0_System_Func___0___1____1__
+  - name: <
+  - uid: SilverCraft.CSCore.ISampleAggregator
+    name: ISampleAggregator
+    href: SilverCraft.CSCore.ISampleAggregator.html
+  - name: ','
+  - name: " "
+  - name: TResult
+  - name: '>'
+  - name: (
+  - uid: SilverCraft.CSCore.ISampleAggregator
+    name: ISampleAggregator
+    href: SilverCraft.CSCore.ISampleAggregator.html
+  - name: ','
+  - name: " "
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: <
+  - uid: SilverCraft.CSCore.ISampleAggregator
+    name: ISampleAggregator
+    href: SilverCraft.CSCore.ISampleAggregator.html
+  - name: ','
+  - name: " "
+  - name: TResult
+  - name: '>'
+  - name: ','
+  - name: " "
+  - name: out
+  - name: " "
+  - name: TResult
+  - name: )
+  spec.vb:
+  - uid: SilverCraft.CSCore.FluentExtensions.AppendSource``2(SilverCraft.CSCore.ISampleAggregator,System.Func{SilverCraft.CSCore.ISampleAggregator,``1},``1@)
+    name: AppendSource
+    href: SilverCraft.CSCore.FluentExtensions.html#SilverCraft_CSCore_FluentExtensions_AppendSource__2___0_System_Func___0___1____1__
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: SilverCraft.CSCore.ISampleAggregator
+    name: ISampleAggregator
+    href: SilverCraft.CSCore.ISampleAggregator.html
+  - name: ','
+  - name: " "
+  - name: TResult
+  - name: )
+  - name: (
+  - uid: SilverCraft.CSCore.ISampleAggregator
+    name: ISampleAggregator
+    href: SilverCraft.CSCore.ISampleAggregator.html
+  - name: ','
+  - name: " "
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: SilverCraft.CSCore.ISampleAggregator
+    name: ISampleAggregator
+    href: SilverCraft.CSCore.ISampleAggregator.html
+  - name: ','
+  - name: " "
+  - name: TResult
+  - name: )
+  - name: ','
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: SilverCraft.CSCore.ISampleAggregator.SilverCraft.CSCore.FluentExtensions.Synchronized``2
+  commentId: M:SilverCraft.CSCore.FluentExtensions.Synchronized``2(``0)
+  parent: SilverCraft.CSCore.FluentExtensions
+  definition: SilverCraft.CSCore.FluentExtensions.Synchronized``2(``0)
+  href: SilverCraft.CSCore.FluentExtensions.html#SilverCraft_CSCore_FluentExtensions_Synchronized__2___0_
+  name: Synchronized<ISampleAggregator, T>(ISampleAggregator)
+  nameWithType: FluentExtensions.Synchronized<ISampleAggregator, T>(ISampleAggregator)
+  fullName: SilverCraft.CSCore.FluentExtensions.Synchronized<SilverCraft.CSCore.ISampleAggregator, T>(SilverCraft.CSCore.ISampleAggregator)
+  nameWithType.vb: FluentExtensions.Synchronized(Of ISampleAggregator, T)(ISampleAggregator)
+  fullName.vb: SilverCraft.CSCore.FluentExtensions.Synchronized(Of SilverCraft.CSCore.ISampleAggregator, T)(SilverCraft.CSCore.ISampleAggregator)
+  name.vb: Synchronized(Of ISampleAggregator, T)(ISampleAggregator)
+  spec.csharp:
+  - uid: SilverCraft.CSCore.FluentExtensions.Synchronized``2(SilverCraft.CSCore.ISampleAggregator)
+    name: Synchronized
+    href: SilverCraft.CSCore.FluentExtensions.html#SilverCraft_CSCore_FluentExtensions_Synchronized__2___0_
+  - name: <
+  - uid: SilverCraft.CSCore.ISampleAggregator
+    name: ISampleAggregator
+    href: SilverCraft.CSCore.ISampleAggregator.html
+  - name: ','
+  - name: " "
+  - name: T
+  - name: '>'
+  - name: (
+  - uid: SilverCraft.CSCore.ISampleAggregator
+    name: ISampleAggregator
+    href: SilverCraft.CSCore.ISampleAggregator.html
+  - name: )
+  spec.vb:
+  - uid: SilverCraft.CSCore.FluentExtensions.Synchronized``2(SilverCraft.CSCore.ISampleAggregator)
+    name: Synchronized
+    href: SilverCraft.CSCore.FluentExtensions.html#SilverCraft_CSCore_FluentExtensions_Synchronized__2___0_
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: SilverCraft.CSCore.ISampleAggregator
+    name: ISampleAggregator
+    href: SilverCraft.CSCore.ISampleAggregator.html
+  - name: ','
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: SilverCraft.CSCore.ISampleAggregator
+    name: ISampleAggregator
+    href: SilverCraft.CSCore.ISampleAggregator.html
+  - name: )
+- uid: SilverCraft.CSCore.ISampleSource.SilverCraft.CSCore.FluentExtensions.ChangeSampleRate(System.Int32)
+  commentId: M:SilverCraft.CSCore.FluentExtensions.ChangeSampleRate(SilverCraft.CSCore.ISampleSource,System.Int32)
+  parent: SilverCraft.CSCore.FluentExtensions
+  definition: SilverCraft.CSCore.FluentExtensions.ChangeSampleRate(SilverCraft.CSCore.ISampleSource,System.Int32)
+  href: SilverCraft.CSCore.FluentExtensions.html#SilverCraft_CSCore_FluentExtensions_ChangeSampleRate_SilverCraft_CSCore_ISampleSource_System_Int32_
+  name: ChangeSampleRate(ISampleSource, int)
+  nameWithType: FluentExtensions.ChangeSampleRate(ISampleSource, int)
+  fullName: SilverCraft.CSCore.FluentExtensions.ChangeSampleRate(SilverCraft.CSCore.ISampleSource, int)
+  nameWithType.vb: FluentExtensions.ChangeSampleRate(ISampleSource, Integer)
+  fullName.vb: SilverCraft.CSCore.FluentExtensions.ChangeSampleRate(SilverCraft.CSCore.ISampleSource, Integer)
+  name.vb: ChangeSampleRate(ISampleSource, Integer)
+  spec.csharp:
+  - uid: SilverCraft.CSCore.FluentExtensions.ChangeSampleRate(SilverCraft.CSCore.ISampleSource,System.Int32)
+    name: ChangeSampleRate
+    href: SilverCraft.CSCore.FluentExtensions.html#SilverCraft_CSCore_FluentExtensions_ChangeSampleRate_SilverCraft_CSCore_ISampleSource_System_Int32_
+  - name: (
+  - uid: SilverCraft.CSCore.ISampleSource
+    name: ISampleSource
+    href: SilverCraft.CSCore.ISampleSource.html
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+  spec.vb:
+  - uid: SilverCraft.CSCore.FluentExtensions.ChangeSampleRate(SilverCraft.CSCore.ISampleSource,System.Int32)
+    name: ChangeSampleRate
+    href: SilverCraft.CSCore.FluentExtensions.html#SilverCraft_CSCore_FluentExtensions_ChangeSampleRate_SilverCraft_CSCore_ISampleSource_System_Int32_
+  - name: (
+  - uid: SilverCraft.CSCore.ISampleSource
+    name: ISampleSource
+    href: SilverCraft.CSCore.ISampleSource.html
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: SilverCraft.CSCore.ISampleSource.SilverCraft.CSCore.FluentExtensions.OnEndOfStream(System.Action{SilverCraft.CSCore.ISampleSource})
+  commentId: M:SilverCraft.CSCore.FluentExtensions.OnEndOfStream(SilverCraft.CSCore.ISampleSource,System.Action{SilverCraft.CSCore.ISampleSource})
+  parent: SilverCraft.CSCore.FluentExtensions
+  definition: SilverCraft.CSCore.FluentExtensions.OnEndOfStream(SilverCraft.CSCore.ISampleSource,System.Action{SilverCraft.CSCore.ISampleSource})
+  href: SilverCraft.CSCore.FluentExtensions.html#SilverCraft_CSCore_FluentExtensions_OnEndOfStream_SilverCraft_CSCore_ISampleSource_System_Action_SilverCraft_CSCore_ISampleSource__
+  name: OnEndOfStream(ISampleSource, Action<ISampleSource>)
+  nameWithType: FluentExtensions.OnEndOfStream(ISampleSource, Action<ISampleSource>)
+  fullName: SilverCraft.CSCore.FluentExtensions.OnEndOfStream(SilverCraft.CSCore.ISampleSource, System.Action<SilverCraft.CSCore.ISampleSource>)
+  nameWithType.vb: FluentExtensions.OnEndOfStream(ISampleSource, Action(Of ISampleSource))
+  fullName.vb: SilverCraft.CSCore.FluentExtensions.OnEndOfStream(SilverCraft.CSCore.ISampleSource, System.Action(Of SilverCraft.CSCore.ISampleSource))
+  name.vb: OnEndOfStream(ISampleSource, Action(Of ISampleSource))
+  spec.csharp:
+  - uid: SilverCraft.CSCore.FluentExtensions.OnEndOfStream(SilverCraft.CSCore.ISampleSource,System.Action{SilverCraft.CSCore.ISampleSource})
+    name: OnEndOfStream
+    href: SilverCraft.CSCore.FluentExtensions.html#SilverCraft_CSCore_FluentExtensions_OnEndOfStream_SilverCraft_CSCore_ISampleSource_System_Action_SilverCraft_CSCore_ISampleSource__
+  - name: (
+  - uid: SilverCraft.CSCore.ISampleSource
+    name: ISampleSource
+    href: SilverCraft.CSCore.ISampleSource.html
+  - name: ','
+  - name: " "
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: <
+  - uid: SilverCraft.CSCore.ISampleSource
+    name: ISampleSource
+    href: SilverCraft.CSCore.ISampleSource.html
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: SilverCraft.CSCore.FluentExtensions.OnEndOfStream(SilverCraft.CSCore.ISampleSource,System.Action{SilverCraft.CSCore.ISampleSource})
+    name: OnEndOfStream
+    href: SilverCraft.CSCore.FluentExtensions.html#SilverCraft_CSCore_FluentExtensions_OnEndOfStream_SilverCraft_CSCore_ISampleSource_System_Action_SilverCraft_CSCore_ISampleSource__
+  - name: (
+  - uid: SilverCraft.CSCore.ISampleSource
+    name: ISampleSource
+    href: SilverCraft.CSCore.ISampleSource.html
+  - name: ','
+  - name: " "
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: SilverCraft.CSCore.ISampleSource
+    name: ISampleSource
+    href: SilverCraft.CSCore.ISampleSource.html
+  - name: )
+  - name: )
+- uid: SilverCraft.CSCore.ISampleSource.SilverCraft.CSCore.FluentExtensions.ToMono
+  commentId: M:SilverCraft.CSCore.FluentExtensions.ToMono(SilverCraft.CSCore.ISampleSource)
+  parent: SilverCraft.CSCore.FluentExtensions
+  definition: SilverCraft.CSCore.FluentExtensions.ToMono(SilverCraft.CSCore.ISampleSource)
+  href: SilverCraft.CSCore.FluentExtensions.html#SilverCraft_CSCore_FluentExtensions_ToMono_SilverCraft_CSCore_ISampleSource_
+  name: ToMono(ISampleSource)
+  nameWithType: FluentExtensions.ToMono(ISampleSource)
+  fullName: SilverCraft.CSCore.FluentExtensions.ToMono(SilverCraft.CSCore.ISampleSource)
+  spec.csharp:
+  - uid: SilverCraft.CSCore.FluentExtensions.ToMono(SilverCraft.CSCore.ISampleSource)
+    name: ToMono
+    href: SilverCraft.CSCore.FluentExtensions.html#SilverCraft_CSCore_FluentExtensions_ToMono_SilverCraft_CSCore_ISampleSource_
+  - name: (
+  - uid: SilverCraft.CSCore.ISampleSource
+    name: ISampleSource
+    href: SilverCraft.CSCore.ISampleSource.html
+  - name: )
+  spec.vb:
+  - uid: SilverCraft.CSCore.FluentExtensions.ToMono(SilverCraft.CSCore.ISampleSource)
+    name: ToMono
+    href: SilverCraft.CSCore.FluentExtensions.html#SilverCraft_CSCore_FluentExtensions_ToMono_SilverCraft_CSCore_ISampleSource_
+  - name: (
+  - uid: SilverCraft.CSCore.ISampleSource
+    name: ISampleSource
+    href: SilverCraft.CSCore.ISampleSource.html
+  - name: )
+- uid: SilverCraft.CSCore.ISampleSource.SilverCraft.CSCore.FluentExtensions.ToStereo
+  commentId: M:SilverCraft.CSCore.FluentExtensions.ToStereo(SilverCraft.CSCore.ISampleSource)
+  parent: SilverCraft.CSCore.FluentExtensions
+  definition: SilverCraft.CSCore.FluentExtensions.ToStereo(SilverCraft.CSCore.ISampleSource)
+  href: SilverCraft.CSCore.FluentExtensions.html#SilverCraft_CSCore_FluentExtensions_ToStereo_SilverCraft_CSCore_ISampleSource_
+  name: ToStereo(ISampleSource)
+  nameWithType: FluentExtensions.ToStereo(ISampleSource)
+  fullName: SilverCraft.CSCore.FluentExtensions.ToStereo(SilverCraft.CSCore.ISampleSource)
+  spec.csharp:
+  - uid: SilverCraft.CSCore.FluentExtensions.ToStereo(SilverCraft.CSCore.ISampleSource)
+    name: ToStereo
+    href: SilverCraft.CSCore.FluentExtensions.html#SilverCraft_CSCore_FluentExtensions_ToStereo_SilverCraft_CSCore_ISampleSource_
+  - name: (
+  - uid: SilverCraft.CSCore.ISampleSource
+    name: ISampleSource
+    href: SilverCraft.CSCore.ISampleSource.html
+  - name: )
+  spec.vb:
+  - uid: SilverCraft.CSCore.FluentExtensions.ToStereo(SilverCraft.CSCore.ISampleSource)
+    name: ToStereo
+    href: SilverCraft.CSCore.FluentExtensions.html#SilverCraft_CSCore_FluentExtensions_ToStereo_SilverCraft_CSCore_ISampleSource_
+  - name: (
+  - uid: SilverCraft.CSCore.ISampleSource
+    name: ISampleSource
+    href: SilverCraft.CSCore.ISampleSource.html
+  - name: )
+- uid: SilverCraft.CSCore.ISampleSource.SilverCraft.CSCore.FluentExtensions.ToWaveSource
+  commentId: M:SilverCraft.CSCore.FluentExtensions.ToWaveSource(SilverCraft.CSCore.ISampleSource)
+  parent: SilverCraft.CSCore.FluentExtensions
+  definition: SilverCraft.CSCore.FluentExtensions.ToWaveSource(SilverCraft.CSCore.ISampleSource)
+  href: SilverCraft.CSCore.FluentExtensions.html#SilverCraft_CSCore_FluentExtensions_ToWaveSource_SilverCraft_CSCore_ISampleSource_
+  name: ToWaveSource(ISampleSource)
+  nameWithType: FluentExtensions.ToWaveSource(ISampleSource)
+  fullName: SilverCraft.CSCore.FluentExtensions.ToWaveSource(SilverCraft.CSCore.ISampleSource)
+  spec.csharp:
+  - uid: SilverCraft.CSCore.FluentExtensions.ToWaveSource(SilverCraft.CSCore.ISampleSource)
+    name: ToWaveSource
+    href: SilverCraft.CSCore.FluentExtensions.html#SilverCraft_CSCore_FluentExtensions_ToWaveSource_SilverCraft_CSCore_ISampleSource_
+  - name: (
+  - uid: SilverCraft.CSCore.ISampleSource
+    name: ISampleSource
+    href: SilverCraft.CSCore.ISampleSource.html
+  - name: )
+  spec.vb:
+  - uid: SilverCraft.CSCore.FluentExtensions.ToWaveSource(SilverCraft.CSCore.ISampleSource)
+    name: ToWaveSource
+    href: SilverCraft.CSCore.FluentExtensions.html#SilverCraft_CSCore_FluentExtensions_ToWaveSource_SilverCraft_CSCore_ISampleSource_
+  - name: (
+  - uid: SilverCraft.CSCore.ISampleSource
+    name: ISampleSource
+    href: SilverCraft.CSCore.ISampleSource.html
+  - name: )
+- uid: SilverCraft.CSCore.ISampleSource.SilverCraft.CSCore.FluentExtensions.ToWaveSource(System.Int32)
+  commentId: M:SilverCraft.CSCore.FluentExtensions.ToWaveSource(SilverCraft.CSCore.ISampleSource,System.Int32)
+  parent: SilverCraft.CSCore.FluentExtensions
+  definition: SilverCraft.CSCore.FluentExtensions.ToWaveSource(SilverCraft.CSCore.ISampleSource,System.Int32)
+  href: SilverCraft.CSCore.FluentExtensions.html#SilverCraft_CSCore_FluentExtensions_ToWaveSource_SilverCraft_CSCore_ISampleSource_System_Int32_
+  name: ToWaveSource(ISampleSource, int)
+  nameWithType: FluentExtensions.ToWaveSource(ISampleSource, int)
+  fullName: SilverCraft.CSCore.FluentExtensions.ToWaveSource(SilverCraft.CSCore.ISampleSource, int)
+  nameWithType.vb: FluentExtensions.ToWaveSource(ISampleSource, Integer)
+  fullName.vb: SilverCraft.CSCore.FluentExtensions.ToWaveSource(SilverCraft.CSCore.ISampleSource, Integer)
+  name.vb: ToWaveSource(ISampleSource, Integer)
+  spec.csharp:
+  - uid: SilverCraft.CSCore.FluentExtensions.ToWaveSource(SilverCraft.CSCore.ISampleSource,System.Int32)
+    name: ToWaveSource
+    href: SilverCraft.CSCore.FluentExtensions.html#SilverCraft_CSCore_FluentExtensions_ToWaveSource_SilverCraft_CSCore_ISampleSource_System_Int32_
+  - name: (
+  - uid: SilverCraft.CSCore.ISampleSource
+    name: ISampleSource
+    href: SilverCraft.CSCore.ISampleSource.html
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+  spec.vb:
+  - uid: SilverCraft.CSCore.FluentExtensions.ToWaveSource(SilverCraft.CSCore.ISampleSource,System.Int32)
+    name: ToWaveSource
+    href: SilverCraft.CSCore.FluentExtensions.html#SilverCraft_CSCore_FluentExtensions_ToWaveSource_SilverCraft_CSCore_ISampleSource_System_Int32_
+  - name: (
+  - uid: SilverCraft.CSCore.ISampleSource
+    name: ISampleSource
+    href: SilverCraft.CSCore.ISampleSource.html
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: SilverCraft.CSCore.IAggregator`2.BaseSource
+  commentId: P:SilverCraft.CSCore.IAggregator`2.BaseSource
+  href: SilverCraft.CSCore.IAggregator-2.html#SilverCraft_CSCore_IAggregator_2_BaseSource
+  name: BaseSource
+  nameWithType: IAggregator<T, TAggregator>.BaseSource
+  fullName: SilverCraft.CSCore.IAggregator<T, TAggregator>.BaseSource
+  nameWithType.vb: IAggregator(Of T, TAggregator).BaseSource
+  fullName.vb: SilverCraft.CSCore.IAggregator(Of T, TAggregator).BaseSource
+- uid: SilverCraft.CSCore.IAggregator{System.Single,SilverCraft.CSCore.ISampleSource}
+  commentId: T:SilverCraft.CSCore.IAggregator{System.Single,SilverCraft.CSCore.ISampleSource}
+  parent: SilverCraft.CSCore
+  definition: SilverCraft.CSCore.IAggregator`2
+  href: SilverCraft.CSCore.IAggregator-2.html
+  name: IAggregator<float, ISampleSource>
+  nameWithType: IAggregator<float, ISampleSource>
+  fullName: SilverCraft.CSCore.IAggregator<float, SilverCraft.CSCore.ISampleSource>
+  nameWithType.vb: IAggregator(Of Single, ISampleSource)
+  fullName.vb: SilverCraft.CSCore.IAggregator(Of Single, SilverCraft.CSCore.ISampleSource)
+  name.vb: IAggregator(Of Single, ISampleSource)
+  spec.csharp:
+  - uid: SilverCraft.CSCore.IAggregator`2
+    name: IAggregator
+    href: SilverCraft.CSCore.IAggregator-2.html
+  - name: <
+  - uid: System.Single
+    name: float
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: ','
+  - name: " "
+  - uid: SilverCraft.CSCore.ISampleSource
+    name: ISampleSource
+    href: SilverCraft.CSCore.ISampleSource.html
+  - name: '>'
+  spec.vb:
+  - uid: SilverCraft.CSCore.IAggregator`2
+    name: IAggregator
+    href: SilverCraft.CSCore.IAggregator-2.html
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Single
+    name: Single
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: ','
+  - name: " "
+  - uid: SilverCraft.CSCore.ISampleSource
+    name: ISampleSource
+    href: SilverCraft.CSCore.ISampleSource.html
+  - name: )
+- uid: SilverCraft.CSCore.IReadableAudioSource`1.Read(`0[],System.Int32,System.Int32)
+  commentId: M:SilverCraft.CSCore.IReadableAudioSource`1.Read(`0[],System.Int32,System.Int32)
+  isExternal: true
+  href: SilverCraft.CSCore.IReadableAudioSource-1.html#SilverCraft_CSCore_IReadableAudioSource_1_Read__0___System_Int32_System_Int32_
+  name: Read(T[], int, int)
+  nameWithType: IReadableAudioSource<T>.Read(T[], int, int)
+  fullName: SilverCraft.CSCore.IReadableAudioSource<T>.Read(T[], int, int)
+  nameWithType.vb: IReadableAudioSource(Of T).Read(T(), Integer, Integer)
+  fullName.vb: SilverCraft.CSCore.IReadableAudioSource(Of T).Read(T(), Integer, Integer)
+  name.vb: Read(T(), Integer, Integer)
+  spec.csharp:
+  - uid: SilverCraft.CSCore.IReadableAudioSource`1.Read(`0[],System.Int32,System.Int32)
+    name: Read
+    href: SilverCraft.CSCore.IReadableAudioSource-1.html#SilverCraft_CSCore_IReadableAudioSource_1_Read__0___System_Int32_System_Int32_
+  - name: (
+  - name: T
+  - name: '['
+  - name: ']'
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+  spec.vb:
+  - uid: SilverCraft.CSCore.IReadableAudioSource`1.Read(`0[],System.Int32,System.Int32)
+    name: Read
+    href: SilverCraft.CSCore.IReadableAudioSource-1.html#SilverCraft_CSCore_IReadableAudioSource_1_Read__0___System_Int32_System_Int32_
+  - name: (
+  - name: T
+  - name: (
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: SilverCraft.CSCore.IReadableAudioSource{System.Single}
+  commentId: T:SilverCraft.CSCore.IReadableAudioSource{System.Single}
+  parent: SilverCraft.CSCore
+  definition: SilverCraft.CSCore.IReadableAudioSource`1
+  href: SilverCraft.CSCore.IReadableAudioSource-1.html
+  name: IReadableAudioSource<float>
+  nameWithType: IReadableAudioSource<float>
+  fullName: SilverCraft.CSCore.IReadableAudioSource<float>
+  nameWithType.vb: IReadableAudioSource(Of Single)
+  fullName.vb: SilverCraft.CSCore.IReadableAudioSource(Of Single)
+  name.vb: IReadableAudioSource(Of Single)
+  spec.csharp:
+  - uid: SilverCraft.CSCore.IReadableAudioSource`1
+    name: IReadableAudioSource
+    href: SilverCraft.CSCore.IReadableAudioSource-1.html
+  - name: <
+  - uid: System.Single
+    name: float
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: '>'
+  spec.vb:
+  - uid: SilverCraft.CSCore.IReadableAudioSource`1
+    name: IReadableAudioSource
+    href: SilverCraft.CSCore.IReadableAudioSource-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Single
+    name: Single
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: )
+- uid: SilverCraft.CSCore.IAudioSource
+  commentId: T:SilverCraft.CSCore.IAudioSource
+  parent: SilverCraft.CSCore
+  href: SilverCraft.CSCore.IAudioSource.html
+  name: IAudioSource
+  nameWithType: IAudioSource
+  fullName: SilverCraft.CSCore.IAudioSource
+- uid: System.IDisposable
+  commentId: T:System.IDisposable
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.idisposable
+  name: IDisposable
+  nameWithType: IDisposable
+  fullName: System.IDisposable
+- uid: SilverCraft.CSCore.Extensions.GetLength(SilverCraft.CSCore.IAudioSource)
+  commentId: M:SilverCraft.CSCore.Extensions.GetLength(SilverCraft.CSCore.IAudioSource)
+  href: SilverCraft.CSCore.Extensions.html#SilverCraft_CSCore_Extensions_GetLength_SilverCraft_CSCore_IAudioSource_
+  name: GetLength(IAudioSource)
+  nameWithType: Extensions.GetLength(IAudioSource)
+  fullName: SilverCraft.CSCore.Extensions.GetLength(SilverCraft.CSCore.IAudioSource)
+  spec.csharp:
+  - uid: SilverCraft.CSCore.Extensions.GetLength(SilverCraft.CSCore.IAudioSource)
+    name: GetLength
+    href: SilverCraft.CSCore.Extensions.html#SilverCraft_CSCore_Extensions_GetLength_SilverCraft_CSCore_IAudioSource_
+  - name: (
+  - uid: SilverCraft.CSCore.IAudioSource
+    name: IAudioSource
+    href: SilverCraft.CSCore.IAudioSource.html
+  - name: )
+  spec.vb:
+  - uid: SilverCraft.CSCore.Extensions.GetLength(SilverCraft.CSCore.IAudioSource)
+    name: GetLength
+    href: SilverCraft.CSCore.Extensions.html#SilverCraft_CSCore_Extensions_GetLength_SilverCraft_CSCore_IAudioSource_
+  - name: (
+  - uid: SilverCraft.CSCore.IAudioSource
+    name: IAudioSource
+    href: SilverCraft.CSCore.IAudioSource.html
+  - name: )
+- uid: SilverCraft.CSCore.Extensions
+  commentId: T:SilverCraft.CSCore.Extensions
+  parent: SilverCraft.CSCore
+  href: SilverCraft.CSCore.Extensions.html
+  name: Extensions
+  nameWithType: Extensions
+  fullName: SilverCraft.CSCore.Extensions
+- uid: SilverCraft.CSCore.Extensions.GetMilliseconds(SilverCraft.CSCore.IAudioSource,System.Int64)
+  commentId: M:SilverCraft.CSCore.Extensions.GetMilliseconds(SilverCraft.CSCore.IAudioSource,System.Int64)
+  isExternal: true
+  href: SilverCraft.CSCore.Extensions.html#SilverCraft_CSCore_Extensions_GetMilliseconds_SilverCraft_CSCore_IAudioSource_System_Int64_
+  name: GetMilliseconds(IAudioSource, long)
+  nameWithType: Extensions.GetMilliseconds(IAudioSource, long)
+  fullName: SilverCraft.CSCore.Extensions.GetMilliseconds(SilverCraft.CSCore.IAudioSource, long)
+  nameWithType.vb: Extensions.GetMilliseconds(IAudioSource, Long)
+  fullName.vb: SilverCraft.CSCore.Extensions.GetMilliseconds(SilverCraft.CSCore.IAudioSource, Long)
+  name.vb: GetMilliseconds(IAudioSource, Long)
+  spec.csharp:
+  - uid: SilverCraft.CSCore.Extensions.GetMilliseconds(SilverCraft.CSCore.IAudioSource,System.Int64)
+    name: GetMilliseconds
+    href: SilverCraft.CSCore.Extensions.html#SilverCraft_CSCore_Extensions_GetMilliseconds_SilverCraft_CSCore_IAudioSource_System_Int64_
+  - name: (
+  - uid: SilverCraft.CSCore.IAudioSource
+    name: IAudioSource
+    href: SilverCraft.CSCore.IAudioSource.html
+  - name: ','
+  - name: " "
+  - uid: System.Int64
+    name: long
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int64
+  - name: )
+  spec.vb:
+  - uid: SilverCraft.CSCore.Extensions.GetMilliseconds(SilverCraft.CSCore.IAudioSource,System.Int64)
+    name: GetMilliseconds
+    href: SilverCraft.CSCore.Extensions.html#SilverCraft_CSCore_Extensions_GetMilliseconds_SilverCraft_CSCore_IAudioSource_System_Int64_
+  - name: (
+  - uid: SilverCraft.CSCore.IAudioSource
+    name: IAudioSource
+    href: SilverCraft.CSCore.IAudioSource.html
+  - name: ','
+  - name: " "
+  - uid: System.Int64
+    name: Long
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int64
+  - name: )
+- uid: SilverCraft.CSCore.Extensions.GetPosition(SilverCraft.CSCore.IAudioSource)
+  commentId: M:SilverCraft.CSCore.Extensions.GetPosition(SilverCraft.CSCore.IAudioSource)
+  href: SilverCraft.CSCore.Extensions.html#SilverCraft_CSCore_Extensions_GetPosition_SilverCraft_CSCore_IAudioSource_
+  name: GetPosition(IAudioSource)
+  nameWithType: Extensions.GetPosition(IAudioSource)
+  fullName: SilverCraft.CSCore.Extensions.GetPosition(SilverCraft.CSCore.IAudioSource)
+  spec.csharp:
+  - uid: SilverCraft.CSCore.Extensions.GetPosition(SilverCraft.CSCore.IAudioSource)
+    name: GetPosition
+    href: SilverCraft.CSCore.Extensions.html#SilverCraft_CSCore_Extensions_GetPosition_SilverCraft_CSCore_IAudioSource_
+  - name: (
+  - uid: SilverCraft.CSCore.IAudioSource
+    name: IAudioSource
+    href: SilverCraft.CSCore.IAudioSource.html
+  - name: )
+  spec.vb:
+  - uid: SilverCraft.CSCore.Extensions.GetPosition(SilverCraft.CSCore.IAudioSource)
+    name: GetPosition
+    href: SilverCraft.CSCore.Extensions.html#SilverCraft_CSCore_Extensions_GetPosition_SilverCraft_CSCore_IAudioSource_
+  - name: (
+  - uid: SilverCraft.CSCore.IAudioSource
+    name: IAudioSource
+    href: SilverCraft.CSCore.IAudioSource.html
+  - name: )
+- uid: SilverCraft.CSCore.Extensions.GetRawElements(SilverCraft.CSCore.IAudioSource,System.Int64)
+  commentId: M:SilverCraft.CSCore.Extensions.GetRawElements(SilverCraft.CSCore.IAudioSource,System.Int64)
+  isExternal: true
+  href: SilverCraft.CSCore.Extensions.html#SilverCraft_CSCore_Extensions_GetRawElements_SilverCraft_CSCore_IAudioSource_System_Int64_
+  name: GetRawElements(IAudioSource, long)
+  nameWithType: Extensions.GetRawElements(IAudioSource, long)
+  fullName: SilverCraft.CSCore.Extensions.GetRawElements(SilverCraft.CSCore.IAudioSource, long)
+  nameWithType.vb: Extensions.GetRawElements(IAudioSource, Long)
+  fullName.vb: SilverCraft.CSCore.Extensions.GetRawElements(SilverCraft.CSCore.IAudioSource, Long)
+  name.vb: GetRawElements(IAudioSource, Long)
+  spec.csharp:
+  - uid: SilverCraft.CSCore.Extensions.GetRawElements(SilverCraft.CSCore.IAudioSource,System.Int64)
+    name: GetRawElements
+    href: SilverCraft.CSCore.Extensions.html#SilverCraft_CSCore_Extensions_GetRawElements_SilverCraft_CSCore_IAudioSource_System_Int64_
+  - name: (
+  - uid: SilverCraft.CSCore.IAudioSource
+    name: IAudioSource
+    href: SilverCraft.CSCore.IAudioSource.html
+  - name: ','
+  - name: " "
+  - uid: System.Int64
+    name: long
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int64
+  - name: )
+  spec.vb:
+  - uid: SilverCraft.CSCore.Extensions.GetRawElements(SilverCraft.CSCore.IAudioSource,System.Int64)
+    name: GetRawElements
+    href: SilverCraft.CSCore.Extensions.html#SilverCraft_CSCore_Extensions_GetRawElements_SilverCraft_CSCore_IAudioSource_System_Int64_
+  - name: (
+  - uid: SilverCraft.CSCore.IAudioSource
+    name: IAudioSource
+    href: SilverCraft.CSCore.IAudioSource.html
+  - name: ','
+  - name: " "
+  - uid: System.Int64
+    name: Long
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int64
+  - name: )
+- uid: SilverCraft.CSCore.Extensions.GetRawElements(SilverCraft.CSCore.IAudioSource,System.TimeSpan)
+  commentId: M:SilverCraft.CSCore.Extensions.GetRawElements(SilverCraft.CSCore.IAudioSource,System.TimeSpan)
+  isExternal: true
+  href: SilverCraft.CSCore.Extensions.html#SilverCraft_CSCore_Extensions_GetRawElements_SilverCraft_CSCore_IAudioSource_System_TimeSpan_
+  name: GetRawElements(IAudioSource, TimeSpan)
+  nameWithType: Extensions.GetRawElements(IAudioSource, TimeSpan)
+  fullName: SilverCraft.CSCore.Extensions.GetRawElements(SilverCraft.CSCore.IAudioSource, System.TimeSpan)
+  spec.csharp:
+  - uid: SilverCraft.CSCore.Extensions.GetRawElements(SilverCraft.CSCore.IAudioSource,System.TimeSpan)
+    name: GetRawElements
+    href: SilverCraft.CSCore.Extensions.html#SilverCraft_CSCore_Extensions_GetRawElements_SilverCraft_CSCore_IAudioSource_System_TimeSpan_
+  - name: (
+  - uid: SilverCraft.CSCore.IAudioSource
+    name: IAudioSource
+    href: SilverCraft.CSCore.IAudioSource.html
+  - name: ','
+  - name: " "
+  - uid: System.TimeSpan
+    name: TimeSpan
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.timespan
+  - name: )
+  spec.vb:
+  - uid: SilverCraft.CSCore.Extensions.GetRawElements(SilverCraft.CSCore.IAudioSource,System.TimeSpan)
+    name: GetRawElements
+    href: SilverCraft.CSCore.Extensions.html#SilverCraft_CSCore_Extensions_GetRawElements_SilverCraft_CSCore_IAudioSource_System_TimeSpan_
+  - name: (
+  - uid: SilverCraft.CSCore.IAudioSource
+    name: IAudioSource
+    href: SilverCraft.CSCore.IAudioSource.html
+  - name: ','
+  - name: " "
+  - uid: System.TimeSpan
+    name: TimeSpan
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.timespan
+  - name: )
+- uid: SilverCraft.CSCore.Extensions.GetTime(SilverCraft.CSCore.IAudioSource,System.Int64)
+  commentId: M:SilverCraft.CSCore.Extensions.GetTime(SilverCraft.CSCore.IAudioSource,System.Int64)
+  isExternal: true
+  href: SilverCraft.CSCore.Extensions.html#SilverCraft_CSCore_Extensions_GetTime_SilverCraft_CSCore_IAudioSource_System_Int64_
+  name: GetTime(IAudioSource, long)
+  nameWithType: Extensions.GetTime(IAudioSource, long)
+  fullName: SilverCraft.CSCore.Extensions.GetTime(SilverCraft.CSCore.IAudioSource, long)
+  nameWithType.vb: Extensions.GetTime(IAudioSource, Long)
+  fullName.vb: SilverCraft.CSCore.Extensions.GetTime(SilverCraft.CSCore.IAudioSource, Long)
+  name.vb: GetTime(IAudioSource, Long)
+  spec.csharp:
+  - uid: SilverCraft.CSCore.Extensions.GetTime(SilverCraft.CSCore.IAudioSource,System.Int64)
+    name: GetTime
+    href: SilverCraft.CSCore.Extensions.html#SilverCraft_CSCore_Extensions_GetTime_SilverCraft_CSCore_IAudioSource_System_Int64_
+  - name: (
+  - uid: SilverCraft.CSCore.IAudioSource
+    name: IAudioSource
+    href: SilverCraft.CSCore.IAudioSource.html
+  - name: ','
+  - name: " "
+  - uid: System.Int64
+    name: long
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int64
+  - name: )
+  spec.vb:
+  - uid: SilverCraft.CSCore.Extensions.GetTime(SilverCraft.CSCore.IAudioSource,System.Int64)
+    name: GetTime
+    href: SilverCraft.CSCore.Extensions.html#SilverCraft_CSCore_Extensions_GetTime_SilverCraft_CSCore_IAudioSource_System_Int64_
+  - name: (
+  - uid: SilverCraft.CSCore.IAudioSource
+    name: IAudioSource
+    href: SilverCraft.CSCore.IAudioSource.html
+  - name: ','
+  - name: " "
+  - uid: System.Int64
+    name: Long
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int64
+  - name: )
+- uid: SilverCraft.CSCore.Extensions.SetPosition(SilverCraft.CSCore.IAudioSource,System.TimeSpan)
+  commentId: M:SilverCraft.CSCore.Extensions.SetPosition(SilverCraft.CSCore.IAudioSource,System.TimeSpan)
+  isExternal: true
+  href: SilverCraft.CSCore.Extensions.html#SilverCraft_CSCore_Extensions_SetPosition_SilverCraft_CSCore_IAudioSource_System_TimeSpan_
+  name: SetPosition(IAudioSource, TimeSpan)
+  nameWithType: Extensions.SetPosition(IAudioSource, TimeSpan)
+  fullName: SilverCraft.CSCore.Extensions.SetPosition(SilverCraft.CSCore.IAudioSource, System.TimeSpan)
+  spec.csharp:
+  - uid: SilverCraft.CSCore.Extensions.SetPosition(SilverCraft.CSCore.IAudioSource,System.TimeSpan)
+    name: SetPosition
+    href: SilverCraft.CSCore.Extensions.html#SilverCraft_CSCore_Extensions_SetPosition_SilverCraft_CSCore_IAudioSource_System_TimeSpan_
+  - name: (
+  - uid: SilverCraft.CSCore.IAudioSource
+    name: IAudioSource
+    href: SilverCraft.CSCore.IAudioSource.html
+  - name: ','
+  - name: " "
+  - uid: System.TimeSpan
+    name: TimeSpan
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.timespan
+  - name: )
+  spec.vb:
+  - uid: SilverCraft.CSCore.Extensions.SetPosition(SilverCraft.CSCore.IAudioSource,System.TimeSpan)
+    name: SetPosition
+    href: SilverCraft.CSCore.Extensions.html#SilverCraft_CSCore_Extensions_SetPosition_SilverCraft_CSCore_IAudioSource_System_TimeSpan_
+  - name: (
+  - uid: SilverCraft.CSCore.IAudioSource
+    name: IAudioSource
+    href: SilverCraft.CSCore.IAudioSource.html
+  - name: ','
+  - name: " "
+  - uid: System.TimeSpan
+    name: TimeSpan
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.timespan
+  - name: )
+- uid: SilverCraft.CSCore.FluentExtensions.AppendSource``2(``0,System.Func{``0,``1})
+  commentId: M:SilverCraft.CSCore.FluentExtensions.AppendSource``2(``0,System.Func{``0,``1})
+  isExternal: true
+  href: SilverCraft.CSCore.FluentExtensions.html#SilverCraft_CSCore_FluentExtensions_AppendSource__2___0_System_Func___0___1__
+  name: AppendSource<TInput, TResult>(TInput, Func<TInput, TResult>)
+  nameWithType: FluentExtensions.AppendSource<TInput, TResult>(TInput, Func<TInput, TResult>)
+  fullName: SilverCraft.CSCore.FluentExtensions.AppendSource<TInput, TResult>(TInput, System.Func<TInput, TResult>)
+  nameWithType.vb: FluentExtensions.AppendSource(Of TInput, TResult)(TInput, Func(Of TInput, TResult))
+  fullName.vb: SilverCraft.CSCore.FluentExtensions.AppendSource(Of TInput, TResult)(TInput, System.Func(Of TInput, TResult))
+  name.vb: AppendSource(Of TInput, TResult)(TInput, Func(Of TInput, TResult))
+  spec.csharp:
+  - uid: SilverCraft.CSCore.FluentExtensions.AppendSource``2(``0,System.Func{``0,``1})
+    name: AppendSource
+    href: SilverCraft.CSCore.FluentExtensions.html#SilverCraft_CSCore_FluentExtensions_AppendSource__2___0_System_Func___0___1__
+  - name: <
+  - name: TInput
+  - name: ','
+  - name: " "
+  - name: TResult
+  - name: '>'
+  - name: (
+  - name: TInput
+  - name: ','
+  - name: " "
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: <
+  - name: TInput
+  - name: ','
+  - name: " "
+  - name: TResult
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: SilverCraft.CSCore.FluentExtensions.AppendSource``2(``0,System.Func{``0,``1})
+    name: AppendSource
+    href: SilverCraft.CSCore.FluentExtensions.html#SilverCraft_CSCore_FluentExtensions_AppendSource__2___0_System_Func___0___1__
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TInput
+  - name: ','
+  - name: " "
+  - name: TResult
+  - name: )
+  - name: (
+  - name: TInput
+  - name: ','
+  - name: " "
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TInput
+  - name: ','
+  - name: " "
+  - name: TResult
+  - name: )
+  - name: )
+- uid: SilverCraft.CSCore.FluentExtensions
+  commentId: T:SilverCraft.CSCore.FluentExtensions
+  parent: SilverCraft.CSCore
+  href: SilverCraft.CSCore.FluentExtensions.html
+  name: FluentExtensions
+  nameWithType: FluentExtensions
+  fullName: SilverCraft.CSCore.FluentExtensions
+- uid: SilverCraft.CSCore.FluentExtensions.AppendSource``2(``0,System.Func{``0,``1},``1@)
+  commentId: M:SilverCraft.CSCore.FluentExtensions.AppendSource``2(``0,System.Func{``0,``1},``1@)
+  isExternal: true
+  href: SilverCraft.CSCore.FluentExtensions.html#SilverCraft_CSCore_FluentExtensions_AppendSource__2___0_System_Func___0___1____1__
+  name: AppendSource<TInput, TResult>(TInput, Func<TInput, TResult>, out TResult)
+  nameWithType: FluentExtensions.AppendSource<TInput, TResult>(TInput, Func<TInput, TResult>, out TResult)
+  fullName: SilverCraft.CSCore.FluentExtensions.AppendSource<TInput, TResult>(TInput, System.Func<TInput, TResult>, out TResult)
+  nameWithType.vb: FluentExtensions.AppendSource(Of TInput, TResult)(TInput, Func(Of TInput, TResult), TResult)
+  fullName.vb: SilverCraft.CSCore.FluentExtensions.AppendSource(Of TInput, TResult)(TInput, System.Func(Of TInput, TResult), TResult)
+  name.vb: AppendSource(Of TInput, TResult)(TInput, Func(Of TInput, TResult), TResult)
+  spec.csharp:
+  - uid: SilverCraft.CSCore.FluentExtensions.AppendSource``2(``0,System.Func{``0,``1},``1@)
+    name: AppendSource
+    href: SilverCraft.CSCore.FluentExtensions.html#SilverCraft_CSCore_FluentExtensions_AppendSource__2___0_System_Func___0___1____1__
+  - name: <
+  - name: TInput
+  - name: ','
+  - name: " "
+  - name: TResult
+  - name: '>'
+  - name: (
+  - name: TInput
+  - name: ','
+  - name: " "
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: <
+  - name: TInput
+  - name: ','
+  - name: " "
+  - name: TResult
+  - name: '>'
+  - name: ','
+  - name: " "
+  - name: out
+  - name: " "
+  - name: TResult
+  - name: )
+  spec.vb:
+  - uid: SilverCraft.CSCore.FluentExtensions.AppendSource``2(``0,System.Func{``0,``1},``1@)
+    name: AppendSource
+    href: SilverCraft.CSCore.FluentExtensions.html#SilverCraft_CSCore_FluentExtensions_AppendSource__2___0_System_Func___0___1____1__
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TInput
+  - name: ','
+  - name: " "
+  - name: TResult
+  - name: )
+  - name: (
+  - name: TInput
+  - name: ','
+  - name: " "
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TInput
+  - name: ','
+  - name: " "
+  - name: TResult
+  - name: )
+  - name: ','
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: SilverCraft.CSCore.FluentExtensions.Synchronized``2(``0)
+  commentId: M:SilverCraft.CSCore.FluentExtensions.Synchronized``2(``0)
+  href: SilverCraft.CSCore.FluentExtensions.html#SilverCraft_CSCore_FluentExtensions_Synchronized__2___0_
+  name: Synchronized<TAudioSource, T>(TAudioSource)
+  nameWithType: FluentExtensions.Synchronized<TAudioSource, T>(TAudioSource)
+  fullName: SilverCraft.CSCore.FluentExtensions.Synchronized<TAudioSource, T>(TAudioSource)
+  nameWithType.vb: FluentExtensions.Synchronized(Of TAudioSource, T)(TAudioSource)
+  fullName.vb: SilverCraft.CSCore.FluentExtensions.Synchronized(Of TAudioSource, T)(TAudioSource)
+  name.vb: Synchronized(Of TAudioSource, T)(TAudioSource)
+  spec.csharp:
+  - uid: SilverCraft.CSCore.FluentExtensions.Synchronized``2(``0)
+    name: Synchronized
+    href: SilverCraft.CSCore.FluentExtensions.html#SilverCraft_CSCore_FluentExtensions_Synchronized__2___0_
+  - name: <
+  - name: TAudioSource
+  - name: ','
+  - name: " "
+  - name: T
+  - name: '>'
+  - name: (
+  - name: TAudioSource
+  - name: )
+  spec.vb:
+  - uid: SilverCraft.CSCore.FluentExtensions.Synchronized``2(``0)
+    name: Synchronized
+    href: SilverCraft.CSCore.FluentExtensions.html#SilverCraft_CSCore_FluentExtensions_Synchronized__2___0_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TAudioSource
+  - name: ','
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - name: TAudioSource
+  - name: )
+- uid: SilverCraft.CSCore.FluentExtensions.ChangeSampleRate(SilverCraft.CSCore.ISampleSource,System.Int32)
+  commentId: M:SilverCraft.CSCore.FluentExtensions.ChangeSampleRate(SilverCraft.CSCore.ISampleSource,System.Int32)
+  isExternal: true
+  href: SilverCraft.CSCore.FluentExtensions.html#SilverCraft_CSCore_FluentExtensions_ChangeSampleRate_SilverCraft_CSCore_ISampleSource_System_Int32_
+  name: ChangeSampleRate(ISampleSource, int)
+  nameWithType: FluentExtensions.ChangeSampleRate(ISampleSource, int)
+  fullName: SilverCraft.CSCore.FluentExtensions.ChangeSampleRate(SilverCraft.CSCore.ISampleSource, int)
+  nameWithType.vb: FluentExtensions.ChangeSampleRate(ISampleSource, Integer)
+  fullName.vb: SilverCraft.CSCore.FluentExtensions.ChangeSampleRate(SilverCraft.CSCore.ISampleSource, Integer)
+  name.vb: ChangeSampleRate(ISampleSource, Integer)
+  spec.csharp:
+  - uid: SilverCraft.CSCore.FluentExtensions.ChangeSampleRate(SilverCraft.CSCore.ISampleSource,System.Int32)
+    name: ChangeSampleRate
+    href: SilverCraft.CSCore.FluentExtensions.html#SilverCraft_CSCore_FluentExtensions_ChangeSampleRate_SilverCraft_CSCore_ISampleSource_System_Int32_
+  - name: (
+  - uid: SilverCraft.CSCore.ISampleSource
+    name: ISampleSource
+    href: SilverCraft.CSCore.ISampleSource.html
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+  spec.vb:
+  - uid: SilverCraft.CSCore.FluentExtensions.ChangeSampleRate(SilverCraft.CSCore.ISampleSource,System.Int32)
+    name: ChangeSampleRate
+    href: SilverCraft.CSCore.FluentExtensions.html#SilverCraft_CSCore_FluentExtensions_ChangeSampleRate_SilverCraft_CSCore_ISampleSource_System_Int32_
+  - name: (
+  - uid: SilverCraft.CSCore.ISampleSource
+    name: ISampleSource
+    href: SilverCraft.CSCore.ISampleSource.html
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: SilverCraft.CSCore.FluentExtensions.OnEndOfStream(SilverCraft.CSCore.ISampleSource,System.Action{SilverCraft.CSCore.ISampleSource})
+  commentId: M:SilverCraft.CSCore.FluentExtensions.OnEndOfStream(SilverCraft.CSCore.ISampleSource,System.Action{SilverCraft.CSCore.ISampleSource})
+  isExternal: true
+  href: SilverCraft.CSCore.FluentExtensions.html#SilverCraft_CSCore_FluentExtensions_OnEndOfStream_SilverCraft_CSCore_ISampleSource_System_Action_SilverCraft_CSCore_ISampleSource__
+  name: OnEndOfStream(ISampleSource, Action<ISampleSource>)
+  nameWithType: FluentExtensions.OnEndOfStream(ISampleSource, Action<ISampleSource>)
+  fullName: SilverCraft.CSCore.FluentExtensions.OnEndOfStream(SilverCraft.CSCore.ISampleSource, System.Action<SilverCraft.CSCore.ISampleSource>)
+  nameWithType.vb: FluentExtensions.OnEndOfStream(ISampleSource, Action(Of ISampleSource))
+  fullName.vb: SilverCraft.CSCore.FluentExtensions.OnEndOfStream(SilverCraft.CSCore.ISampleSource, System.Action(Of SilverCraft.CSCore.ISampleSource))
+  name.vb: OnEndOfStream(ISampleSource, Action(Of ISampleSource))
+  spec.csharp:
+  - uid: SilverCraft.CSCore.FluentExtensions.OnEndOfStream(SilverCraft.CSCore.ISampleSource,System.Action{SilverCraft.CSCore.ISampleSource})
+    name: OnEndOfStream
+    href: SilverCraft.CSCore.FluentExtensions.html#SilverCraft_CSCore_FluentExtensions_OnEndOfStream_SilverCraft_CSCore_ISampleSource_System_Action_SilverCraft_CSCore_ISampleSource__
+  - name: (
+  - uid: SilverCraft.CSCore.ISampleSource
+    name: ISampleSource
+    href: SilverCraft.CSCore.ISampleSource.html
+  - name: ','
+  - name: " "
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: <
+  - uid: SilverCraft.CSCore.ISampleSource
+    name: ISampleSource
+    href: SilverCraft.CSCore.ISampleSource.html
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: SilverCraft.CSCore.FluentExtensions.OnEndOfStream(SilverCraft.CSCore.ISampleSource,System.Action{SilverCraft.CSCore.ISampleSource})
+    name: OnEndOfStream
+    href: SilverCraft.CSCore.FluentExtensions.html#SilverCraft_CSCore_FluentExtensions_OnEndOfStream_SilverCraft_CSCore_ISampleSource_System_Action_SilverCraft_CSCore_ISampleSource__
+  - name: (
+  - uid: SilverCraft.CSCore.ISampleSource
+    name: ISampleSource
+    href: SilverCraft.CSCore.ISampleSource.html
+  - name: ','
+  - name: " "
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: SilverCraft.CSCore.ISampleSource
+    name: ISampleSource
+    href: SilverCraft.CSCore.ISampleSource.html
+  - name: )
+  - name: )
+- uid: SilverCraft.CSCore.FluentExtensions.ToMono(SilverCraft.CSCore.ISampleSource)
+  commentId: M:SilverCraft.CSCore.FluentExtensions.ToMono(SilverCraft.CSCore.ISampleSource)
+  href: SilverCraft.CSCore.FluentExtensions.html#SilverCraft_CSCore_FluentExtensions_ToMono_SilverCraft_CSCore_ISampleSource_
+  name: ToMono(ISampleSource)
+  nameWithType: FluentExtensions.ToMono(ISampleSource)
+  fullName: SilverCraft.CSCore.FluentExtensions.ToMono(SilverCraft.CSCore.ISampleSource)
+  spec.csharp:
+  - uid: SilverCraft.CSCore.FluentExtensions.ToMono(SilverCraft.CSCore.ISampleSource)
+    name: ToMono
+    href: SilverCraft.CSCore.FluentExtensions.html#SilverCraft_CSCore_FluentExtensions_ToMono_SilverCraft_CSCore_ISampleSource_
+  - name: (
+  - uid: SilverCraft.CSCore.ISampleSource
+    name: ISampleSource
+    href: SilverCraft.CSCore.ISampleSource.html
+  - name: )
+  spec.vb:
+  - uid: SilverCraft.CSCore.FluentExtensions.ToMono(SilverCraft.CSCore.ISampleSource)
+    name: ToMono
+    href: SilverCraft.CSCore.FluentExtensions.html#SilverCraft_CSCore_FluentExtensions_ToMono_SilverCraft_CSCore_ISampleSource_
+  - name: (
+  - uid: SilverCraft.CSCore.ISampleSource
+    name: ISampleSource
+    href: SilverCraft.CSCore.ISampleSource.html
+  - name: )
+- uid: SilverCraft.CSCore.FluentExtensions.ToStereo(SilverCraft.CSCore.ISampleSource)
+  commentId: M:SilverCraft.CSCore.FluentExtensions.ToStereo(SilverCraft.CSCore.ISampleSource)
+  href: SilverCraft.CSCore.FluentExtensions.html#SilverCraft_CSCore_FluentExtensions_ToStereo_SilverCraft_CSCore_ISampleSource_
+  name: ToStereo(ISampleSource)
+  nameWithType: FluentExtensions.ToStereo(ISampleSource)
+  fullName: SilverCraft.CSCore.FluentExtensions.ToStereo(SilverCraft.CSCore.ISampleSource)
+  spec.csharp:
+  - uid: SilverCraft.CSCore.FluentExtensions.ToStereo(SilverCraft.CSCore.ISampleSource)
+    name: ToStereo
+    href: SilverCraft.CSCore.FluentExtensions.html#SilverCraft_CSCore_FluentExtensions_ToStereo_SilverCraft_CSCore_ISampleSource_
+  - name: (
+  - uid: SilverCraft.CSCore.ISampleSource
+    name: ISampleSource
+    href: SilverCraft.CSCore.ISampleSource.html
+  - name: )
+  spec.vb:
+  - uid: SilverCraft.CSCore.FluentExtensions.ToStereo(SilverCraft.CSCore.ISampleSource)
+    name: ToStereo
+    href: SilverCraft.CSCore.FluentExtensions.html#SilverCraft_CSCore_FluentExtensions_ToStereo_SilverCraft_CSCore_ISampleSource_
+  - name: (
+  - uid: SilverCraft.CSCore.ISampleSource
+    name: ISampleSource
+    href: SilverCraft.CSCore.ISampleSource.html
+  - name: )
+- uid: SilverCraft.CSCore.FluentExtensions.ToWaveSource(SilverCraft.CSCore.ISampleSource)
+  commentId: M:SilverCraft.CSCore.FluentExtensions.ToWaveSource(SilverCraft.CSCore.ISampleSource)
+  href: SilverCraft.CSCore.FluentExtensions.html#SilverCraft_CSCore_FluentExtensions_ToWaveSource_SilverCraft_CSCore_ISampleSource_
+  name: ToWaveSource(ISampleSource)
+  nameWithType: FluentExtensions.ToWaveSource(ISampleSource)
+  fullName: SilverCraft.CSCore.FluentExtensions.ToWaveSource(SilverCraft.CSCore.ISampleSource)
+  spec.csharp:
+  - uid: SilverCraft.CSCore.FluentExtensions.ToWaveSource(SilverCraft.CSCore.ISampleSource)
+    name: ToWaveSource
+    href: SilverCraft.CSCore.FluentExtensions.html#SilverCraft_CSCore_FluentExtensions_ToWaveSource_SilverCraft_CSCore_ISampleSource_
+  - name: (
+  - uid: SilverCraft.CSCore.ISampleSource
+    name: ISampleSource
+    href: SilverCraft.CSCore.ISampleSource.html
+  - name: )
+  spec.vb:
+  - uid: SilverCraft.CSCore.FluentExtensions.ToWaveSource(SilverCraft.CSCore.ISampleSource)
+    name: ToWaveSource
+    href: SilverCraft.CSCore.FluentExtensions.html#SilverCraft_CSCore_FluentExtensions_ToWaveSource_SilverCraft_CSCore_ISampleSource_
+  - name: (
+  - uid: SilverCraft.CSCore.ISampleSource
+    name: ISampleSource
+    href: SilverCraft.CSCore.ISampleSource.html
+  - name: )
+- uid: SilverCraft.CSCore.FluentExtensions.ToWaveSource(SilverCraft.CSCore.ISampleSource,System.Int32)
+  commentId: M:SilverCraft.CSCore.FluentExtensions.ToWaveSource(SilverCraft.CSCore.ISampleSource,System.Int32)
+  isExternal: true
+  href: SilverCraft.CSCore.FluentExtensions.html#SilverCraft_CSCore_FluentExtensions_ToWaveSource_SilverCraft_CSCore_ISampleSource_System_Int32_
+  name: ToWaveSource(ISampleSource, int)
+  nameWithType: FluentExtensions.ToWaveSource(ISampleSource, int)
+  fullName: SilverCraft.CSCore.FluentExtensions.ToWaveSource(SilverCraft.CSCore.ISampleSource, int)
+  nameWithType.vb: FluentExtensions.ToWaveSource(ISampleSource, Integer)
+  fullName.vb: SilverCraft.CSCore.FluentExtensions.ToWaveSource(SilverCraft.CSCore.ISampleSource, Integer)
+  name.vb: ToWaveSource(ISampleSource, Integer)
+  spec.csharp:
+  - uid: SilverCraft.CSCore.FluentExtensions.ToWaveSource(SilverCraft.CSCore.ISampleSource,System.Int32)
+    name: ToWaveSource
+    href: SilverCraft.CSCore.FluentExtensions.html#SilverCraft_CSCore_FluentExtensions_ToWaveSource_SilverCraft_CSCore_ISampleSource_System_Int32_
+  - name: (
+  - uid: SilverCraft.CSCore.ISampleSource
+    name: ISampleSource
+    href: SilverCraft.CSCore.ISampleSource.html
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+  spec.vb:
+  - uid: SilverCraft.CSCore.FluentExtensions.ToWaveSource(SilverCraft.CSCore.ISampleSource,System.Int32)
+    name: ToWaveSource
+    href: SilverCraft.CSCore.FluentExtensions.html#SilverCraft_CSCore_FluentExtensions_ToWaveSource_SilverCraft_CSCore_ISampleSource_System_Int32_
+  - name: (
+  - uid: SilverCraft.CSCore.ISampleSource
+    name: ISampleSource
+    href: SilverCraft.CSCore.ISampleSource.html
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: SilverCraft.CSCore.IAggregator`2
+  commentId: T:SilverCraft.CSCore.IAggregator`2
+  href: SilverCraft.CSCore.IAggregator-2.html
+  name: IAggregator<T, TAggregator>
+  nameWithType: IAggregator<T, TAggregator>
+  fullName: SilverCraft.CSCore.IAggregator<T, TAggregator>
+  nameWithType.vb: IAggregator(Of T, TAggregator)
+  fullName.vb: SilverCraft.CSCore.IAggregator(Of T, TAggregator)
+  name.vb: IAggregator(Of T, TAggregator)
+  spec.csharp:
+  - uid: SilverCraft.CSCore.IAggregator`2
+    name: IAggregator
+    href: SilverCraft.CSCore.IAggregator-2.html
+  - name: <
+  - name: T
+  - name: ','
+  - name: " "
+  - name: TAggregator
+  - name: '>'
+  spec.vb:
+  - uid: SilverCraft.CSCore.IAggregator`2
+    name: IAggregator
+    href: SilverCraft.CSCore.IAggregator-2.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - name: TAggregator
+  - name: )
+- uid: SilverCraft.CSCore.IReadableAudioSource`1
+  commentId: T:SilverCraft.CSCore.IReadableAudioSource`1
+  href: SilverCraft.CSCore.IReadableAudioSource-1.html
+  name: IReadableAudioSource<T>
+  nameWithType: IReadableAudioSource<T>
+  fullName: SilverCraft.CSCore.IReadableAudioSource<T>
+  nameWithType.vb: IReadableAudioSource(Of T)
+  fullName.vb: SilverCraft.CSCore.IReadableAudioSource(Of T)
+  name.vb: IReadableAudioSource(Of T)
+  spec.csharp:
+  - uid: SilverCraft.CSCore.IReadableAudioSource`1
+    name: IReadableAudioSource
+    href: SilverCraft.CSCore.IReadableAudioSource-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: SilverCraft.CSCore.IReadableAudioSource`1
+    name: IReadableAudioSource
+    href: SilverCraft.CSCore.IReadableAudioSource-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System

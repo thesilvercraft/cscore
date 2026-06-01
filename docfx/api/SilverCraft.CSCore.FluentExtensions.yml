@@ -1,0 +1,1430 @@
+### YamlMime:ManagedReference
+items:
+- uid: SilverCraft.CSCore.FluentExtensions
+  commentId: T:SilverCraft.CSCore.FluentExtensions
+  id: FluentExtensions
+  parent: SilverCraft.CSCore
+  children:
+  - SilverCraft.CSCore.FluentExtensions.AppendSource``2(``0,System.Func{``0,``1})
+  - SilverCraft.CSCore.FluentExtensions.AppendSource``2(``0,System.Func{``0,``1},``1@)
+  - SilverCraft.CSCore.FluentExtensions.ChangeSampleRate(SilverCraft.CSCore.ISampleSource,System.Int32)
+  - SilverCraft.CSCore.FluentExtensions.ChangeSampleRate(SilverCraft.CSCore.IWaveSource,System.Int32)
+  - SilverCraft.CSCore.FluentExtensions.Loop(SilverCraft.CSCore.IWaveSource)
+  - SilverCraft.CSCore.FluentExtensions.OnEndOfStream(SilverCraft.CSCore.ISampleSource,System.Action{SilverCraft.CSCore.ISampleSource})
+  - SilverCraft.CSCore.FluentExtensions.OnEndOfStream(SilverCraft.CSCore.IWaveSource,System.Action{SilverCraft.CSCore.IWaveSource})
+  - SilverCraft.CSCore.FluentExtensions.Synchronized``2(``0)
+  - SilverCraft.CSCore.FluentExtensions.ToMono(SilverCraft.CSCore.ISampleSource)
+  - SilverCraft.CSCore.FluentExtensions.ToMono(SilverCraft.CSCore.IWaveSource)
+  - SilverCraft.CSCore.FluentExtensions.ToSampleSource(SilverCraft.CSCore.IWaveSource)
+  - SilverCraft.CSCore.FluentExtensions.ToStereo(SilverCraft.CSCore.ISampleSource)
+  - SilverCraft.CSCore.FluentExtensions.ToStereo(SilverCraft.CSCore.IWaveSource)
+  - SilverCraft.CSCore.FluentExtensions.ToWaveSource(SilverCraft.CSCore.ISampleSource)
+  - SilverCraft.CSCore.FluentExtensions.ToWaveSource(SilverCraft.CSCore.ISampleSource,System.Int32)
+  langs:
+  - csharp
+  - vb
+  name: FluentExtensions
+  nameWithType: FluentExtensions
+  fullName: SilverCraft.CSCore.FluentExtensions
+  type: Class
+  source:
+    remote:
+      path: SilverCraft.CSCore/FluentExtensions.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: FluentExtensions
+    path: ../SilverCraft.CSCore/FluentExtensions.cs
+    startLine: 11
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore
+  summary: Provides a basic fluent API for creating a source chain.
+  example: []
+  syntax:
+    content: public static class FluentExtensions
+    content.vb: Public Module FluentExtensions
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: SilverCraft.CSCore.FluentExtensions.AppendSource``2(``0,System.Func{``0,``1})
+  commentId: M:SilverCraft.CSCore.FluentExtensions.AppendSource``2(``0,System.Func{``0,``1})
+  id: AppendSource``2(``0,System.Func{``0,``1})
+  isExtensionMethod: true
+  parent: SilverCraft.CSCore.FluentExtensions
+  langs:
+  - csharp
+  - vb
+  name: AppendSource<TInput, TResult>(TInput, Func<TInput, TResult>)
+  nameWithType: FluentExtensions.AppendSource<TInput, TResult>(TInput, Func<TInput, TResult>)
+  fullName: SilverCraft.CSCore.FluentExtensions.AppendSource<TInput, TResult>(TInput, System.Func<TInput, TResult>)
+  type: Method
+  source:
+    remote:
+      path: SilverCraft.CSCore/FluentExtensions.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: AppendSource
+    path: ../SilverCraft.CSCore/FluentExtensions.cs
+    startLine: 21
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore
+  summary: Appends a source to an already existing source.
+  example: []
+  syntax:
+    content: 'public static TResult AppendSource<TInput, TResult>(this TInput input, Func<TInput, TResult> func) where TInput : IAudioSource'
+    parameters:
+    - id: input
+      type: '{TInput}'
+      description: Already existing source.
+    - id: func
+      type: System.Func{{TInput},{TResult}}
+      description: Function which appends the new source to the already existing source.
+    typeParameters:
+    - id: TInput
+      description: Input
+    - id: TResult
+      description: Output
+    return:
+      type: '{TResult}'
+      description: The return value of the <code class="paramref">func</code> delegate.
+    content.vb: Public Shared Function AppendSource(Of TInput As IAudioSource, TResult)(input As TInput, func As Func(Of TInput, TResult)) As TResult
+  overload: SilverCraft.CSCore.FluentExtensions.AppendSource*
+  nameWithType.vb: FluentExtensions.AppendSource(Of TInput, TResult)(TInput, Func(Of TInput, TResult))
+  fullName.vb: SilverCraft.CSCore.FluentExtensions.AppendSource(Of TInput, TResult)(TInput, System.Func(Of TInput, TResult))
+  name.vb: AppendSource(Of TInput, TResult)(TInput, Func(Of TInput, TResult))
+- uid: SilverCraft.CSCore.FluentExtensions.AppendSource``2(``0,System.Func{``0,``1},``1@)
+  commentId: M:SilverCraft.CSCore.FluentExtensions.AppendSource``2(``0,System.Func{``0,``1},``1@)
+  id: AppendSource``2(``0,System.Func{``0,``1},``1@)
+  isExtensionMethod: true
+  parent: SilverCraft.CSCore.FluentExtensions
+  langs:
+  - csharp
+  - vb
+  name: AppendSource<TInput, TResult>(TInput, Func<TInput, TResult>, out TResult)
+  nameWithType: FluentExtensions.AppendSource<TInput, TResult>(TInput, Func<TInput, TResult>, out TResult)
+  fullName: SilverCraft.CSCore.FluentExtensions.AppendSource<TInput, TResult>(TInput, System.Func<TInput, TResult>, out TResult)
+  type: Method
+  source:
+    remote:
+      path: SilverCraft.CSCore/FluentExtensions.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: AppendSource
+    path: ../SilverCraft.CSCore/FluentExtensions.cs
+    startLine: 36
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore
+  summary: Appends a source to an already existing source.
+  example: []
+  syntax:
+    content: 'public static TResult AppendSource<TInput, TResult>(this TInput input, Func<TInput, TResult> func, out TResult outputSource) where TInput : IAudioSource'
+    parameters:
+    - id: input
+      type: '{TInput}'
+      description: Already existing source.
+    - id: func
+      type: System.Func{{TInput},{TResult}}
+      description: Function which appends the new source to the already existing source.
+    - id: outputSource
+      type: '{TResult}'
+      description: Receives the return value.
+    typeParameters:
+    - id: TInput
+      description: Input
+    - id: TResult
+      description: Output
+    return:
+      type: '{TResult}'
+      description: The return value of the <code class="paramref">func</code> delegate.
+    content.vb: Public Shared Function AppendSource(Of TInput As IAudioSource, TResult)(input As TInput, func As Func(Of TInput, TResult), outputSource As TResult) As TResult
+  overload: SilverCraft.CSCore.FluentExtensions.AppendSource*
+  nameWithType.vb: FluentExtensions.AppendSource(Of TInput, TResult)(TInput, Func(Of TInput, TResult), TResult)
+  fullName.vb: SilverCraft.CSCore.FluentExtensions.AppendSource(Of TInput, TResult)(TInput, System.Func(Of TInput, TResult), TResult)
+  name.vb: AppendSource(Of TInput, TResult)(TInput, Func(Of TInput, TResult), TResult)
+- uid: SilverCraft.CSCore.FluentExtensions.ChangeSampleRate(SilverCraft.CSCore.IWaveSource,System.Int32)
+  commentId: M:SilverCraft.CSCore.FluentExtensions.ChangeSampleRate(SilverCraft.CSCore.IWaveSource,System.Int32)
+  id: ChangeSampleRate(SilverCraft.CSCore.IWaveSource,System.Int32)
+  isExtensionMethod: true
+  parent: SilverCraft.CSCore.FluentExtensions
+  langs:
+  - csharp
+  - vb
+  name: ChangeSampleRate(IWaveSource, int)
+  nameWithType: FluentExtensions.ChangeSampleRate(IWaveSource, int)
+  fullName: SilverCraft.CSCore.FluentExtensions.ChangeSampleRate(SilverCraft.CSCore.IWaveSource, int)
+  type: Method
+  source:
+    remote:
+      path: SilverCraft.CSCore/FluentExtensions.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: ChangeSampleRate
+    path: ../SilverCraft.CSCore/FluentExtensions.cs
+    startLine: 50
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore
+  summary: Changes the SampleRate of an already existing wave source.
+  example: []
+  syntax:
+    content: public static IWaveSource ChangeSampleRate(this IWaveSource input, int destinationSampleRate)
+    parameters:
+    - id: input
+      type: SilverCraft.CSCore.IWaveSource
+      description: Already existing wave source whose sample rate has to be changed.
+    - id: destinationSampleRate
+      type: System.Int32
+      description: Destination sample rate.
+    return:
+      type: SilverCraft.CSCore.IWaveSource
+      description: Wave source with the specified <code class="paramref">destinationSampleRate</code>.
+    content.vb: Public Shared Function ChangeSampleRate(input As IWaveSource, destinationSampleRate As Integer) As IWaveSource
+  overload: SilverCraft.CSCore.FluentExtensions.ChangeSampleRate*
+  nameWithType.vb: FluentExtensions.ChangeSampleRate(IWaveSource, Integer)
+  fullName.vb: SilverCraft.CSCore.FluentExtensions.ChangeSampleRate(SilverCraft.CSCore.IWaveSource, Integer)
+  name.vb: ChangeSampleRate(IWaveSource, Integer)
+- uid: SilverCraft.CSCore.FluentExtensions.ChangeSampleRate(SilverCraft.CSCore.ISampleSource,System.Int32)
+  commentId: M:SilverCraft.CSCore.FluentExtensions.ChangeSampleRate(SilverCraft.CSCore.ISampleSource,System.Int32)
+  id: ChangeSampleRate(SilverCraft.CSCore.ISampleSource,System.Int32)
+  isExtensionMethod: true
+  parent: SilverCraft.CSCore.FluentExtensions
+  langs:
+  - csharp
+  - vb
+  name: ChangeSampleRate(ISampleSource, int)
+  nameWithType: FluentExtensions.ChangeSampleRate(ISampleSource, int)
+  fullName: SilverCraft.CSCore.FluentExtensions.ChangeSampleRate(SilverCraft.CSCore.ISampleSource, int)
+  type: Method
+  source:
+    remote:
+      path: SilverCraft.CSCore/FluentExtensions.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: ChangeSampleRate
+    path: ../SilverCraft.CSCore/FluentExtensions.cs
+    startLine: 70
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore
+  summary: >-
+    Changes the SampleRate of an already existing sample source. Note: This extension has to convert the
+
+    <code class="paramref">input</code> to a <xref href="SilverCraft.CSCore.IWaveSource" data-throw-if-not-resolved="false"></xref> and back to a <xref href="SilverCraft.CSCore.ISampleSource" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public static ISampleSource ChangeSampleRate(this ISampleSource input, int destinationSampleRate)
+    parameters:
+    - id: input
+      type: SilverCraft.CSCore.ISampleSource
+      description: Already existing sample source whose sample rate has to be changed.
+    - id: destinationSampleRate
+      type: System.Int32
+      description: Destination sample rate.
+    return:
+      type: SilverCraft.CSCore.ISampleSource
+      description: Sample source with the specified <code class="paramref">destinationSampleRate</code>.
+    content.vb: Public Shared Function ChangeSampleRate(input As ISampleSource, destinationSampleRate As Integer) As ISampleSource
+  overload: SilverCraft.CSCore.FluentExtensions.ChangeSampleRate*
+  nameWithType.vb: FluentExtensions.ChangeSampleRate(ISampleSource, Integer)
+  fullName.vb: SilverCraft.CSCore.FluentExtensions.ChangeSampleRate(SilverCraft.CSCore.ISampleSource, Integer)
+  name.vb: ChangeSampleRate(ISampleSource, Integer)
+- uid: SilverCraft.CSCore.FluentExtensions.ToStereo(SilverCraft.CSCore.IWaveSource)
+  commentId: M:SilverCraft.CSCore.FluentExtensions.ToStereo(SilverCraft.CSCore.IWaveSource)
+  id: ToStereo(SilverCraft.CSCore.IWaveSource)
+  isExtensionMethod: true
+  parent: SilverCraft.CSCore.FluentExtensions
+  langs:
+  - csharp
+  - vb
+  name: ToStereo(IWaveSource)
+  nameWithType: FluentExtensions.ToStereo(IWaveSource)
+  fullName: SilverCraft.CSCore.FluentExtensions.ToStereo(SilverCraft.CSCore.IWaveSource)
+  type: Method
+  source:
+    remote:
+      path: SilverCraft.CSCore/FluentExtensions.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: ToStereo
+    path: ../SilverCraft.CSCore/FluentExtensions.cs
+    startLine: 92
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore
+  summary: >-
+    Converts the specified wave source with n channels to a wave source with two channels.
+
+    Note: If the <code class="paramref">input</code> has only one channel, the <xref href="SilverCraft.CSCore.FluentExtensions.ToStereo(SilverCraft.CSCore.IWaveSource)" data-throw-if-not-resolved="false"></xref>
+
+    extension has to convert the <code class="paramref">input</code> to a <xref href="SilverCraft.CSCore.ISampleSource" data-throw-if-not-resolved="false"></xref> and back to a
+
+    <xref href="SilverCraft.CSCore.IWaveSource" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public static IWaveSource ToStereo(this IWaveSource input)
+    parameters:
+    - id: input
+      type: SilverCraft.CSCore.IWaveSource
+      description: Already existing wave source.
+    return:
+      type: SilverCraft.CSCore.IWaveSource
+      description: <xref href="SilverCraft.CSCore.IWaveSource" data-throw-if-not-resolved="false"></xref> instance with two channels.
+    content.vb: Public Shared Function ToStereo(input As IWaveSource) As IWaveSource
+  overload: SilverCraft.CSCore.FluentExtensions.ToStereo*
+- uid: SilverCraft.CSCore.FluentExtensions.ToStereo(SilverCraft.CSCore.ISampleSource)
+  commentId: M:SilverCraft.CSCore.FluentExtensions.ToStereo(SilverCraft.CSCore.ISampleSource)
+  id: ToStereo(SilverCraft.CSCore.ISampleSource)
+  isExtensionMethod: true
+  parent: SilverCraft.CSCore.FluentExtensions
+  langs:
+  - csharp
+  - vb
+  name: ToStereo(ISampleSource)
+  nameWithType: FluentExtensions.ToStereo(ISampleSource)
+  fullName: SilverCraft.CSCore.FluentExtensions.ToStereo(SilverCraft.CSCore.ISampleSource)
+  type: Method
+  source:
+    remote:
+      path: SilverCraft.CSCore/FluentExtensions.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: ToStereo
+    path: ../SilverCraft.CSCore/FluentExtensions.cs
+    startLine: 126
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore
+  summary: >-
+    Converts the specified sample source with n channels to a wave source with two channels.
+
+    Note: If the <code class="paramref">input</code> has more than two channels, the
+
+    <xref href="SilverCraft.CSCore.FluentExtensions.ToStereo(SilverCraft.CSCore.ISampleSource)" data-throw-if-not-resolved="false"></xref> extension has to convert the <code class="paramref">input</code> to a
+
+    <xref href="SilverCraft.CSCore.IWaveSource" data-throw-if-not-resolved="false"></xref> and back to a <xref href="SilverCraft.CSCore.ISampleSource" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public static ISampleSource ToStereo(this ISampleSource input)
+    parameters:
+    - id: input
+      type: SilverCraft.CSCore.ISampleSource
+      description: Already existing sample source.
+    return:
+      type: SilverCraft.CSCore.ISampleSource
+      description: <xref href="SilverCraft.CSCore.ISampleSource" data-throw-if-not-resolved="false"></xref> instance with two channels.
+    content.vb: Public Shared Function ToStereo(input As ISampleSource) As ISampleSource
+  overload: SilverCraft.CSCore.FluentExtensions.ToStereo*
+- uid: SilverCraft.CSCore.FluentExtensions.ToMono(SilverCraft.CSCore.IWaveSource)
+  commentId: M:SilverCraft.CSCore.FluentExtensions.ToMono(SilverCraft.CSCore.IWaveSource)
+  id: ToMono(SilverCraft.CSCore.IWaveSource)
+  isExtensionMethod: true
+  parent: SilverCraft.CSCore.FluentExtensions
+  langs:
+  - csharp
+  - vb
+  name: ToMono(IWaveSource)
+  nameWithType: FluentExtensions.ToMono(IWaveSource)
+  fullName: SilverCraft.CSCore.FluentExtensions.ToMono(SilverCraft.CSCore.IWaveSource)
+  type: Method
+  source:
+    remote:
+      path: SilverCraft.CSCore/FluentExtensions.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: ToMono
+    path: ../SilverCraft.CSCore/FluentExtensions.cs
+    startLine: 146
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore
+  summary: >-
+    Converts the specified wave source with n channels to a wave source with one channel.
+
+    Note: If the <code class="paramref">input</code> has two channels, the <xref href="SilverCraft.CSCore.FluentExtensions.ToMono(SilverCraft.CSCore.IWaveSource)" data-throw-if-not-resolved="false"></xref> extension
+
+    has to convert the <code class="paramref">input</code> to a <xref href="SilverCraft.CSCore.ISampleSource" data-throw-if-not-resolved="false"></xref> and back to a
+
+    <xref href="SilverCraft.CSCore.IWaveSource" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public static IWaveSource ToMono(this IWaveSource input)
+    parameters:
+    - id: input
+      type: SilverCraft.CSCore.IWaveSource
+      description: Already existing wave source.
+    return:
+      type: SilverCraft.CSCore.IWaveSource
+      description: <xref href="SilverCraft.CSCore.IWaveSource" data-throw-if-not-resolved="false"></xref> instance with one channel.
+    content.vb: Public Shared Function ToMono(input As IWaveSource) As IWaveSource
+  overload: SilverCraft.CSCore.FluentExtensions.ToMono*
+- uid: SilverCraft.CSCore.FluentExtensions.ToMono(SilverCraft.CSCore.ISampleSource)
+  commentId: M:SilverCraft.CSCore.FluentExtensions.ToMono(SilverCraft.CSCore.ISampleSource)
+  id: ToMono(SilverCraft.CSCore.ISampleSource)
+  isExtensionMethod: true
+  parent: SilverCraft.CSCore.FluentExtensions
+  langs:
+  - csharp
+  - vb
+  name: ToMono(ISampleSource)
+  nameWithType: FluentExtensions.ToMono(ISampleSource)
+  fullName: SilverCraft.CSCore.FluentExtensions.ToMono(SilverCraft.CSCore.ISampleSource)
+  type: Method
+  source:
+    remote:
+      path: SilverCraft.CSCore/FluentExtensions.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: ToMono
+    path: ../SilverCraft.CSCore/FluentExtensions.cs
+    startLine: 180
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore
+  summary: >-
+    Converts the specified sample source with n channels to a wave source with one channel.
+
+    Note: If the <code class="paramref">input</code> has only one channel, the <xref href="SilverCraft.CSCore.FluentExtensions.ToMono(SilverCraft.CSCore.ISampleSource)" data-throw-if-not-resolved="false"></xref>
+
+    extension has to convert the <code class="paramref">input</code> to a <xref href="SilverCraft.CSCore.IWaveSource" data-throw-if-not-resolved="false"></xref> and back to a
+
+    <xref href="SilverCraft.CSCore.ISampleSource" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public static ISampleSource ToMono(this ISampleSource input)
+    parameters:
+    - id: input
+      type: SilverCraft.CSCore.ISampleSource
+      description: Already existing sample source.
+    return:
+      type: SilverCraft.CSCore.ISampleSource
+      description: <xref href="SilverCraft.CSCore.ISampleSource" data-throw-if-not-resolved="false"></xref> instance with one channels
+    content.vb: Public Shared Function ToMono(input As ISampleSource) As ISampleSource
+  overload: SilverCraft.CSCore.FluentExtensions.ToMono*
+- uid: SilverCraft.CSCore.FluentExtensions.Loop(SilverCraft.CSCore.IWaveSource)
+  commentId: M:SilverCraft.CSCore.FluentExtensions.Loop(SilverCraft.CSCore.IWaveSource)
+  id: Loop(SilverCraft.CSCore.IWaveSource)
+  isExtensionMethod: true
+  parent: SilverCraft.CSCore.FluentExtensions
+  langs:
+  - csharp
+  - vb
+  name: Loop(IWaveSource)
+  nameWithType: FluentExtensions.Loop(IWaveSource)
+  fullName: SilverCraft.CSCore.FluentExtensions.Loop(SilverCraft.CSCore.IWaveSource)
+  type: Method
+  source:
+    remote:
+      path: SilverCraft.CSCore/FluentExtensions.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: Loop
+    path: ../SilverCraft.CSCore/FluentExtensions.cs
+    startLine: 197
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore
+  summary: Appends a new instance of the <xref href="SilverCraft.CSCore.Streams.LoopStream" data-throw-if-not-resolved="false"></xref> class to the audio chain.
+  example: []
+  syntax:
+    content: public static IWaveSource Loop(this IWaveSource input)
+    parameters:
+    - id: input
+      type: SilverCraft.CSCore.IWaveSource
+      description: The underlying <xref href="SilverCraft.CSCore.IWaveSource" data-throw-if-not-resolved="false"></xref> which should be looped.
+    return:
+      type: SilverCraft.CSCore.IWaveSource
+      description: The new instance <xref href="SilverCraft.CSCore.Streams.LoopStream" data-throw-if-not-resolved="false"></xref> instance.
+    content.vb: Public Shared Function [Loop](input As IWaveSource) As IWaveSource
+  overload: SilverCraft.CSCore.FluentExtensions.Loop*
+- uid: SilverCraft.CSCore.FluentExtensions.ToWaveSource(SilverCraft.CSCore.ISampleSource,System.Int32)
+  commentId: M:SilverCraft.CSCore.FluentExtensions.ToWaveSource(SilverCraft.CSCore.ISampleSource,System.Int32)
+  id: ToWaveSource(SilverCraft.CSCore.ISampleSource,System.Int32)
+  isExtensionMethod: true
+  parent: SilverCraft.CSCore.FluentExtensions
+  langs:
+  - csharp
+  - vb
+  name: ToWaveSource(ISampleSource, int)
+  nameWithType: FluentExtensions.ToWaveSource(ISampleSource, int)
+  fullName: SilverCraft.CSCore.FluentExtensions.ToWaveSource(SilverCraft.CSCore.ISampleSource, int)
+  type: Method
+  source:
+    remote:
+      path: SilverCraft.CSCore/FluentExtensions.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: ToWaveSource
+    path: ../SilverCraft.CSCore/FluentExtensions.cs
+    startLine: 208
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore
+  summary: Converts a SampleSource to either a Pcm (8, 16, or 24 bit) or IeeeFloat (32 bit) WaveSource.
+  example: []
+  syntax:
+    content: public static IWaveSource ToWaveSource(this ISampleSource sampleSource, int bits)
+    parameters:
+    - id: sampleSource
+      type: SilverCraft.CSCore.ISampleSource
+      description: Sample source to convert to a wave source.
+    - id: bits
+      type: System.Int32
+      description: Bits per sample.
+    return:
+      type: SilverCraft.CSCore.IWaveSource
+      description: Wave source
+    content.vb: Public Shared Function ToWaveSource(sampleSource As ISampleSource, bits As Integer) As IWaveSource
+  overload: SilverCraft.CSCore.FluentExtensions.ToWaveSource*
+  nameWithType.vb: FluentExtensions.ToWaveSource(ISampleSource, Integer)
+  fullName.vb: SilverCraft.CSCore.FluentExtensions.ToWaveSource(SilverCraft.CSCore.ISampleSource, Integer)
+  name.vb: ToWaveSource(ISampleSource, Integer)
+- uid: SilverCraft.CSCore.FluentExtensions.ToWaveSource(SilverCraft.CSCore.ISampleSource)
+  commentId: M:SilverCraft.CSCore.FluentExtensions.ToWaveSource(SilverCraft.CSCore.ISampleSource)
+  id: ToWaveSource(SilverCraft.CSCore.ISampleSource)
+  isExtensionMethod: true
+  parent: SilverCraft.CSCore.FluentExtensions
+  langs:
+  - csharp
+  - vb
+  name: ToWaveSource(ISampleSource)
+  nameWithType: FluentExtensions.ToWaveSource(ISampleSource)
+  fullName: SilverCraft.CSCore.FluentExtensions.ToWaveSource(SilverCraft.CSCore.ISampleSource)
+  type: Method
+  source:
+    remote:
+      path: SilverCraft.CSCore/FluentExtensions.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: ToWaveSource
+    path: ../SilverCraft.CSCore/FluentExtensions.cs
+    startLine: 227
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore
+  summary: Converts a <xref href="SilverCraft.CSCore.IWaveSource" data-throw-if-not-resolved="false"></xref> to IeeeFloat (32bit) <xref href="SilverCraft.CSCore.IWaveSource" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public static IWaveSource ToWaveSource(this ISampleSource sampleSource)
+    parameters:
+    - id: sampleSource
+      type: SilverCraft.CSCore.ISampleSource
+      description: The <xref href="SilverCraft.CSCore.ISampleSource" data-throw-if-not-resolved="false"></xref> to convert to a <xref href="SilverCraft.CSCore.IWaveSource" data-throw-if-not-resolved="false"></xref>.
+    return:
+      type: SilverCraft.CSCore.IWaveSource
+      description: The <xref href="SilverCraft.CSCore.IWaveSource" data-throw-if-not-resolved="false"></xref> wrapped around the specified <code class="paramref">sampleSource</code>.
+    content.vb: Public Shared Function ToWaveSource(sampleSource As ISampleSource) As IWaveSource
+  overload: SilverCraft.CSCore.FluentExtensions.ToWaveSource*
+- uid: SilverCraft.CSCore.FluentExtensions.ToSampleSource(SilverCraft.CSCore.IWaveSource)
+  commentId: M:SilverCraft.CSCore.FluentExtensions.ToSampleSource(SilverCraft.CSCore.IWaveSource)
+  id: ToSampleSource(SilverCraft.CSCore.IWaveSource)
+  isExtensionMethod: true
+  parent: SilverCraft.CSCore.FluentExtensions
+  langs:
+  - csharp
+  - vb
+  name: ToSampleSource(IWaveSource)
+  nameWithType: FluentExtensions.ToSampleSource(IWaveSource)
+  fullName: SilverCraft.CSCore.FluentExtensions.ToSampleSource(SilverCraft.CSCore.IWaveSource)
+  type: Method
+  source:
+    remote:
+      path: SilverCraft.CSCore/FluentExtensions.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: ToSampleSource
+    path: ../SilverCraft.CSCore/FluentExtensions.cs
+    startLine: 239
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore
+  summary: Converts a <xref href="SilverCraft.CSCore.IWaveSource" data-throw-if-not-resolved="false"></xref> to a <xref href="SilverCraft.CSCore.ISampleSource" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public static ISampleSource ToSampleSource(this IWaveSource waveSource)
+    parameters:
+    - id: waveSource
+      type: SilverCraft.CSCore.IWaveSource
+      description: The <xref href="SilverCraft.CSCore.IWaveSource" data-throw-if-not-resolved="false"></xref> to convert to a <xref href="SilverCraft.CSCore.ISampleSource" data-throw-if-not-resolved="false"></xref>.
+    return:
+      type: SilverCraft.CSCore.ISampleSource
+      description: The <xref href="SilverCraft.CSCore.ISampleSource" data-throw-if-not-resolved="false"></xref> wrapped around the specified <code class="paramref">waveSource</code>.
+    content.vb: Public Shared Function ToSampleSource(waveSource As IWaveSource) As ISampleSource
+  overload: SilverCraft.CSCore.FluentExtensions.ToSampleSource*
+- uid: SilverCraft.CSCore.FluentExtensions.Synchronized``2(``0)
+  commentId: M:SilverCraft.CSCore.FluentExtensions.Synchronized``2(``0)
+  id: Synchronized``2(``0)
+  isExtensionMethod: true
+  parent: SilverCraft.CSCore.FluentExtensions
+  langs:
+  - csharp
+  - vb
+  name: Synchronized<TAudioSource, T>(TAudioSource)
+  nameWithType: FluentExtensions.Synchronized<TAudioSource, T>(TAudioSource)
+  fullName: SilverCraft.CSCore.FluentExtensions.Synchronized<TAudioSource, T>(TAudioSource)
+  type: Method
+  source:
+    remote:
+      path: SilverCraft.CSCore/FluentExtensions.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: Synchronized
+    path: ../SilverCraft.CSCore/FluentExtensions.cs
+    startLine: 254
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore
+  summary: Returns a thread-safe (synchronized) wrapper around the specified <code class="typeparamref">TAudioSource</code> object.
+  example: []
+  syntax:
+    content: 'public static SynchronizedWaveSource<TAudioSource, T> Synchronized<TAudioSource, T>(this TAudioSource audioSource) where TAudioSource : class, IReadableAudioSource<T>'
+    parameters:
+    - id: audioSource
+      type: '{TAudioSource}'
+      description: The <code class="typeparamref">TAudioSource</code> object to synchronize.
+    typeParameters:
+    - id: TAudioSource
+      description: Type of the <code class="paramref">audioSource</code> argument.
+    - id: T
+      description: The type of the data read by the Read method of the <code class="paramref">audioSource</code> method.
+    return:
+      type: SilverCraft.CSCore.Streams.SynchronizedWaveSource{{TAudioSource},{T}}
+      description: A thread-safe wrapper around the specified <code class="typeparamref">TAudioSource</code> object.
+    content.vb: Public Shared Function Synchronized(Of TAudioSource As {Class, IReadableAudioSource(Of T)}, T)(audioSource As TAudioSource) As SynchronizedWaveSource(Of TAudioSource, T)
+  overload: SilverCraft.CSCore.FluentExtensions.Synchronized*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: The <code class="paramref">audioSource</code> is null.
+  nameWithType.vb: FluentExtensions.Synchronized(Of TAudioSource, T)(TAudioSource)
+  fullName.vb: SilverCraft.CSCore.FluentExtensions.Synchronized(Of TAudioSource, T)(TAudioSource)
+  name.vb: Synchronized(Of TAudioSource, T)(TAudioSource)
+- uid: SilverCraft.CSCore.FluentExtensions.OnEndOfStream(SilverCraft.CSCore.IWaveSource,System.Action{SilverCraft.CSCore.IWaveSource})
+  commentId: M:SilverCraft.CSCore.FluentExtensions.OnEndOfStream(SilverCraft.CSCore.IWaveSource,System.Action{SilverCraft.CSCore.IWaveSource})
+  id: OnEndOfStream(SilverCraft.CSCore.IWaveSource,System.Action{SilverCraft.CSCore.IWaveSource})
+  isExtensionMethod: true
+  parent: SilverCraft.CSCore.FluentExtensions
+  langs:
+  - csharp
+  - vb
+  name: OnEndOfStream(IWaveSource, Action<IWaveSource>)
+  nameWithType: FluentExtensions.OnEndOfStream(IWaveSource, Action<IWaveSource>)
+  fullName: SilverCraft.CSCore.FluentExtensions.OnEndOfStream(SilverCraft.CSCore.IWaveSource, System.Action<SilverCraft.CSCore.IWaveSource>)
+  type: Method
+  source:
+    remote:
+      path: SilverCraft.CSCore/FluentExtensions.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: OnEndOfStream
+    path: ../SilverCraft.CSCore/FluentExtensions.cs
+    startLine: 268
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore
+  summary: Registers an <code class="paramref">action</code> to be executed on end of stream of the <code class="paramref">waveSource</code>.
+  example: []
+  syntax:
+    content: public static IWaveSource OnEndOfStream(this IWaveSource waveSource, Action<IWaveSource> action)
+    parameters:
+    - id: waveSource
+      type: SilverCraft.CSCore.IWaveSource
+      description: The <xref href="SilverCraft.CSCore.IWaveSource" data-throw-if-not-resolved="false"></xref> to be tracked.
+    - id: action
+      type: System.Action{SilverCraft.CSCore.IWaveSource}
+      description: The callback action with the <code class="paramref">waveSource</code> as parameter.
+    return:
+      type: SilverCraft.CSCore.IWaveSource
+      description: A wrapper around the <code class="paramref">waveSource</code>.
+    content.vb: Public Shared Function OnEndOfStream(waveSource As IWaveSource, action As Action(Of IWaveSource)) As IWaveSource
+  overload: SilverCraft.CSCore.FluentExtensions.OnEndOfStream*
+  nameWithType.vb: FluentExtensions.OnEndOfStream(IWaveSource, Action(Of IWaveSource))
+  fullName.vb: SilverCraft.CSCore.FluentExtensions.OnEndOfStream(SilverCraft.CSCore.IWaveSource, System.Action(Of SilverCraft.CSCore.IWaveSource))
+  name.vb: OnEndOfStream(IWaveSource, Action(Of IWaveSource))
+- uid: SilverCraft.CSCore.FluentExtensions.OnEndOfStream(SilverCraft.CSCore.ISampleSource,System.Action{SilverCraft.CSCore.ISampleSource})
+  commentId: M:SilverCraft.CSCore.FluentExtensions.OnEndOfStream(SilverCraft.CSCore.ISampleSource,System.Action{SilverCraft.CSCore.ISampleSource})
+  id: OnEndOfStream(SilverCraft.CSCore.ISampleSource,System.Action{SilverCraft.CSCore.ISampleSource})
+  isExtensionMethod: true
+  parent: SilverCraft.CSCore.FluentExtensions
+  langs:
+  - csharp
+  - vb
+  name: OnEndOfStream(ISampleSource, Action<ISampleSource>)
+  nameWithType: FluentExtensions.OnEndOfStream(ISampleSource, Action<ISampleSource>)
+  fullName: SilverCraft.CSCore.FluentExtensions.OnEndOfStream(SilverCraft.CSCore.ISampleSource, System.Action<SilverCraft.CSCore.ISampleSource>)
+  type: Method
+  source:
+    remote:
+      path: SilverCraft.CSCore/FluentExtensions.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: OnEndOfStream
+    path: ../SilverCraft.CSCore/FluentExtensions.cs
+    startLine: 279
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore
+  summary: Registers an <code class="paramref">action</code> to be executed on end of stream of the <code class="paramref">sampleSource</code>.
+  example: []
+  syntax:
+    content: public static ISampleSource OnEndOfStream(this ISampleSource sampleSource, Action<ISampleSource> action)
+    parameters:
+    - id: sampleSource
+      type: SilverCraft.CSCore.ISampleSource
+      description: The <xref href="SilverCraft.CSCore.ISampleSource" data-throw-if-not-resolved="false"></xref> to be tracked.
+    - id: action
+      type: System.Action{SilverCraft.CSCore.ISampleSource}
+      description: The callback action with the <code class="paramref">sampleSource</code> as parameter.
+    return:
+      type: SilverCraft.CSCore.ISampleSource
+      description: A wrapper around the <code class="paramref">sampleSource</code>.
+    content.vb: Public Shared Function OnEndOfStream(sampleSource As ISampleSource, action As Action(Of ISampleSource)) As ISampleSource
+  overload: SilverCraft.CSCore.FluentExtensions.OnEndOfStream*
+  nameWithType.vb: FluentExtensions.OnEndOfStream(ISampleSource, Action(Of ISampleSource))
+  fullName.vb: SilverCraft.CSCore.FluentExtensions.OnEndOfStream(SilverCraft.CSCore.ISampleSource, System.Action(Of SilverCraft.CSCore.ISampleSource))
+  name.vb: OnEndOfStream(ISampleSource, Action(Of ISampleSource))
+references:
+- uid: SilverCraft.CSCore
+  commentId: N:SilverCraft.CSCore
+  href: SilverCraft.html
+  name: SilverCraft.CSCore
+  nameWithType: SilverCraft.CSCore
+  fullName: SilverCraft.CSCore
+  spec.csharp:
+  - uid: SilverCraft
+    name: SilverCraft
+    href: SilverCraft.html
+  - name: .
+  - uid: SilverCraft.CSCore
+    name: CSCore
+    href: SilverCraft.CSCore.html
+  spec.vb:
+  - uid: SilverCraft
+    name: SilverCraft
+    href: SilverCraft.html
+  - name: .
+  - uid: SilverCraft.CSCore
+    name: CSCore
+    href: SilverCraft.CSCore.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: SilverCraft.CSCore.FluentExtensions.AppendSource*
+  commentId: Overload:SilverCraft.CSCore.FluentExtensions.AppendSource
+  href: SilverCraft.CSCore.FluentExtensions.html#SilverCraft_CSCore_FluentExtensions_AppendSource__2___0_System_Func___0___1__
+  name: AppendSource
+  nameWithType: FluentExtensions.AppendSource
+  fullName: SilverCraft.CSCore.FluentExtensions.AppendSource
+- uid: '{TInput}'
+  commentId: '!:TInput'
+  definition: TInput
+  name: TInput
+  nameWithType: TInput
+  fullName: TInput
+- uid: System.Func{{TInput},{TResult}}
+  commentId: T:System.Func{``0,``1}
+  parent: System
+  definition: System.Func`2
+  href: https://learn.microsoft.com/dotnet/api/system.func-2
+  name: Func<TInput, TResult>
+  nameWithType: Func<TInput, TResult>
+  fullName: System.Func<TInput, TResult>
+  nameWithType.vb: Func(Of TInput, TResult)
+  fullName.vb: System.Func(Of TInput, TResult)
+  name.vb: Func(Of TInput, TResult)
+  spec.csharp:
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: <
+  - name: TInput
+  - name: ','
+  - name: " "
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TInput
+  - name: ','
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: '{TResult}'
+  commentId: '!:TResult'
+  definition: TResult
+  name: TResult
+  nameWithType: TResult
+  fullName: TResult
+- uid: TInput
+  name: TInput
+  nameWithType: TInput
+  fullName: TInput
+- uid: System.Func`2
+  commentId: T:System.Func`2
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.func-2
+  name: Func<T, TResult>
+  nameWithType: Func<T, TResult>
+  fullName: System.Func<T, TResult>
+  nameWithType.vb: Func(Of T, TResult)
+  fullName.vb: System.Func(Of T, TResult)
+  name.vb: Func(Of T, TResult)
+  spec.csharp:
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: <
+  - name: T
+  - name: ','
+  - name: " "
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: TResult
+  name: TResult
+  nameWithType: TResult
+  fullName: TResult
+- uid: SilverCraft.CSCore.FluentExtensions.ChangeSampleRate*
+  commentId: Overload:SilverCraft.CSCore.FluentExtensions.ChangeSampleRate
+  href: SilverCraft.CSCore.FluentExtensions.html#SilverCraft_CSCore_FluentExtensions_ChangeSampleRate_SilverCraft_CSCore_IWaveSource_System_Int32_
+  name: ChangeSampleRate
+  nameWithType: FluentExtensions.ChangeSampleRate
+  fullName: SilverCraft.CSCore.FluentExtensions.ChangeSampleRate
+- uid: SilverCraft.CSCore.IWaveSource
+  commentId: T:SilverCraft.CSCore.IWaveSource
+  parent: SilverCraft.CSCore
+  href: SilverCraft.CSCore.IWaveSource.html
+  name: IWaveSource
+  nameWithType: IWaveSource
+  fullName: SilverCraft.CSCore.IWaveSource
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: SilverCraft.CSCore.ISampleSource
+  commentId: T:SilverCraft.CSCore.ISampleSource
+  parent: SilverCraft.CSCore
+  href: SilverCraft.CSCore.ISampleSource.html
+  name: ISampleSource
+  nameWithType: ISampleSource
+  fullName: SilverCraft.CSCore.ISampleSource
+- uid: SilverCraft.CSCore.FluentExtensions.ToStereo(SilverCraft.CSCore.IWaveSource)
+  commentId: M:SilverCraft.CSCore.FluentExtensions.ToStereo(SilverCraft.CSCore.IWaveSource)
+  href: SilverCraft.CSCore.FluentExtensions.html#SilverCraft_CSCore_FluentExtensions_ToStereo_SilverCraft_CSCore_IWaveSource_
+  name: ToStereo(IWaveSource)
+  nameWithType: FluentExtensions.ToStereo(IWaveSource)
+  fullName: SilverCraft.CSCore.FluentExtensions.ToStereo(SilverCraft.CSCore.IWaveSource)
+  spec.csharp:
+  - uid: SilverCraft.CSCore.FluentExtensions.ToStereo(SilverCraft.CSCore.IWaveSource)
+    name: ToStereo
+    href: SilverCraft.CSCore.FluentExtensions.html#SilverCraft_CSCore_FluentExtensions_ToStereo_SilverCraft_CSCore_IWaveSource_
+  - name: (
+  - uid: SilverCraft.CSCore.IWaveSource
+    name: IWaveSource
+    href: SilverCraft.CSCore.IWaveSource.html
+  - name: )
+  spec.vb:
+  - uid: SilverCraft.CSCore.FluentExtensions.ToStereo(SilverCraft.CSCore.IWaveSource)
+    name: ToStereo
+    href: SilverCraft.CSCore.FluentExtensions.html#SilverCraft_CSCore_FluentExtensions_ToStereo_SilverCraft_CSCore_IWaveSource_
+  - name: (
+  - uid: SilverCraft.CSCore.IWaveSource
+    name: IWaveSource
+    href: SilverCraft.CSCore.IWaveSource.html
+  - name: )
+- uid: SilverCraft.CSCore.FluentExtensions.ToStereo*
+  commentId: Overload:SilverCraft.CSCore.FluentExtensions.ToStereo
+  href: SilverCraft.CSCore.FluentExtensions.html#SilverCraft_CSCore_FluentExtensions_ToStereo_SilverCraft_CSCore_IWaveSource_
+  name: ToStereo
+  nameWithType: FluentExtensions.ToStereo
+  fullName: SilverCraft.CSCore.FluentExtensions.ToStereo
+- uid: SilverCraft.CSCore.FluentExtensions.ToStereo(SilverCraft.CSCore.ISampleSource)
+  commentId: M:SilverCraft.CSCore.FluentExtensions.ToStereo(SilverCraft.CSCore.ISampleSource)
+  href: SilverCraft.CSCore.FluentExtensions.html#SilverCraft_CSCore_FluentExtensions_ToStereo_SilverCraft_CSCore_ISampleSource_
+  name: ToStereo(ISampleSource)
+  nameWithType: FluentExtensions.ToStereo(ISampleSource)
+  fullName: SilverCraft.CSCore.FluentExtensions.ToStereo(SilverCraft.CSCore.ISampleSource)
+  spec.csharp:
+  - uid: SilverCraft.CSCore.FluentExtensions.ToStereo(SilverCraft.CSCore.ISampleSource)
+    name: ToStereo
+    href: SilverCraft.CSCore.FluentExtensions.html#SilverCraft_CSCore_FluentExtensions_ToStereo_SilverCraft_CSCore_ISampleSource_
+  - name: (
+  - uid: SilverCraft.CSCore.ISampleSource
+    name: ISampleSource
+    href: SilverCraft.CSCore.ISampleSource.html
+  - name: )
+  spec.vb:
+  - uid: SilverCraft.CSCore.FluentExtensions.ToStereo(SilverCraft.CSCore.ISampleSource)
+    name: ToStereo
+    href: SilverCraft.CSCore.FluentExtensions.html#SilverCraft_CSCore_FluentExtensions_ToStereo_SilverCraft_CSCore_ISampleSource_
+  - name: (
+  - uid: SilverCraft.CSCore.ISampleSource
+    name: ISampleSource
+    href: SilverCraft.CSCore.ISampleSource.html
+  - name: )
+- uid: SilverCraft.CSCore.FluentExtensions.ToMono(SilverCraft.CSCore.IWaveSource)
+  commentId: M:SilverCraft.CSCore.FluentExtensions.ToMono(SilverCraft.CSCore.IWaveSource)
+  href: SilverCraft.CSCore.FluentExtensions.html#SilverCraft_CSCore_FluentExtensions_ToMono_SilverCraft_CSCore_IWaveSource_
+  name: ToMono(IWaveSource)
+  nameWithType: FluentExtensions.ToMono(IWaveSource)
+  fullName: SilverCraft.CSCore.FluentExtensions.ToMono(SilverCraft.CSCore.IWaveSource)
+  spec.csharp:
+  - uid: SilverCraft.CSCore.FluentExtensions.ToMono(SilverCraft.CSCore.IWaveSource)
+    name: ToMono
+    href: SilverCraft.CSCore.FluentExtensions.html#SilverCraft_CSCore_FluentExtensions_ToMono_SilverCraft_CSCore_IWaveSource_
+  - name: (
+  - uid: SilverCraft.CSCore.IWaveSource
+    name: IWaveSource
+    href: SilverCraft.CSCore.IWaveSource.html
+  - name: )
+  spec.vb:
+  - uid: SilverCraft.CSCore.FluentExtensions.ToMono(SilverCraft.CSCore.IWaveSource)
+    name: ToMono
+    href: SilverCraft.CSCore.FluentExtensions.html#SilverCraft_CSCore_FluentExtensions_ToMono_SilverCraft_CSCore_IWaveSource_
+  - name: (
+  - uid: SilverCraft.CSCore.IWaveSource
+    name: IWaveSource
+    href: SilverCraft.CSCore.IWaveSource.html
+  - name: )
+- uid: SilverCraft.CSCore.FluentExtensions.ToMono*
+  commentId: Overload:SilverCraft.CSCore.FluentExtensions.ToMono
+  href: SilverCraft.CSCore.FluentExtensions.html#SilverCraft_CSCore_FluentExtensions_ToMono_SilverCraft_CSCore_IWaveSource_
+  name: ToMono
+  nameWithType: FluentExtensions.ToMono
+  fullName: SilverCraft.CSCore.FluentExtensions.ToMono
+- uid: SilverCraft.CSCore.FluentExtensions.ToMono(SilverCraft.CSCore.ISampleSource)
+  commentId: M:SilverCraft.CSCore.FluentExtensions.ToMono(SilverCraft.CSCore.ISampleSource)
+  href: SilverCraft.CSCore.FluentExtensions.html#SilverCraft_CSCore_FluentExtensions_ToMono_SilverCraft_CSCore_ISampleSource_
+  name: ToMono(ISampleSource)
+  nameWithType: FluentExtensions.ToMono(ISampleSource)
+  fullName: SilverCraft.CSCore.FluentExtensions.ToMono(SilverCraft.CSCore.ISampleSource)
+  spec.csharp:
+  - uid: SilverCraft.CSCore.FluentExtensions.ToMono(SilverCraft.CSCore.ISampleSource)
+    name: ToMono
+    href: SilverCraft.CSCore.FluentExtensions.html#SilverCraft_CSCore_FluentExtensions_ToMono_SilverCraft_CSCore_ISampleSource_
+  - name: (
+  - uid: SilverCraft.CSCore.ISampleSource
+    name: ISampleSource
+    href: SilverCraft.CSCore.ISampleSource.html
+  - name: )
+  spec.vb:
+  - uid: SilverCraft.CSCore.FluentExtensions.ToMono(SilverCraft.CSCore.ISampleSource)
+    name: ToMono
+    href: SilverCraft.CSCore.FluentExtensions.html#SilverCraft_CSCore_FluentExtensions_ToMono_SilverCraft_CSCore_ISampleSource_
+  - name: (
+  - uid: SilverCraft.CSCore.ISampleSource
+    name: ISampleSource
+    href: SilverCraft.CSCore.ISampleSource.html
+  - name: )
+- uid: SilverCraft.CSCore.Streams.LoopStream
+  commentId: T:SilverCraft.CSCore.Streams.LoopStream
+  href: SilverCraft.CSCore.Streams.LoopStream.html
+  name: LoopStream
+  nameWithType: LoopStream
+  fullName: SilverCraft.CSCore.Streams.LoopStream
+- uid: SilverCraft.CSCore.FluentExtensions.Loop*
+  commentId: Overload:SilverCraft.CSCore.FluentExtensions.Loop
+  href: SilverCraft.CSCore.FluentExtensions.html#SilverCraft_CSCore_FluentExtensions_Loop_SilverCraft_CSCore_IWaveSource_
+  name: Loop
+  nameWithType: FluentExtensions.Loop
+  fullName: SilverCraft.CSCore.FluentExtensions.Loop
+- uid: SilverCraft.CSCore.FluentExtensions.ToWaveSource*
+  commentId: Overload:SilverCraft.CSCore.FluentExtensions.ToWaveSource
+  href: SilverCraft.CSCore.FluentExtensions.html#SilverCraft_CSCore_FluentExtensions_ToWaveSource_SilverCraft_CSCore_ISampleSource_System_Int32_
+  name: ToWaveSource
+  nameWithType: FluentExtensions.ToWaveSource
+  fullName: SilverCraft.CSCore.FluentExtensions.ToWaveSource
+- uid: SilverCraft.CSCore.FluentExtensions.ToSampleSource*
+  commentId: Overload:SilverCraft.CSCore.FluentExtensions.ToSampleSource
+  href: SilverCraft.CSCore.FluentExtensions.html#SilverCraft_CSCore_FluentExtensions_ToSampleSource_SilverCraft_CSCore_IWaveSource_
+  name: ToSampleSource
+  nameWithType: FluentExtensions.ToSampleSource
+  fullName: SilverCraft.CSCore.FluentExtensions.ToSampleSource
+- uid: System.ArgumentNullException
+  commentId: T:System.ArgumentNullException
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.argumentnullexception
+  name: ArgumentNullException
+  nameWithType: ArgumentNullException
+  fullName: System.ArgumentNullException
+- uid: SilverCraft.CSCore.FluentExtensions.Synchronized*
+  commentId: Overload:SilverCraft.CSCore.FluentExtensions.Synchronized
+  href: SilverCraft.CSCore.FluentExtensions.html#SilverCraft_CSCore_FluentExtensions_Synchronized__2___0_
+  name: Synchronized
+  nameWithType: FluentExtensions.Synchronized
+  fullName: SilverCraft.CSCore.FluentExtensions.Synchronized
+- uid: '{TAudioSource}'
+  commentId: '!:TAudioSource'
+  definition: TAudioSource
+  name: TAudioSource
+  nameWithType: TAudioSource
+  fullName: TAudioSource
+- uid: SilverCraft.CSCore.Streams.SynchronizedWaveSource{{TAudioSource},{T}}
+  commentId: T:SilverCraft.CSCore.Streams.SynchronizedWaveSource{``0,``1}
+  parent: SilverCraft.CSCore.Streams
+  definition: SilverCraft.CSCore.Streams.SynchronizedWaveSource`2
+  href: SilverCraft.CSCore.Streams.SynchronizedWaveSource-2.html
+  name: SynchronizedWaveSource<TAudioSource, T>
+  nameWithType: SynchronizedWaveSource<TAudioSource, T>
+  fullName: SilverCraft.CSCore.Streams.SynchronizedWaveSource<TAudioSource, T>
+  nameWithType.vb: SynchronizedWaveSource(Of TAudioSource, T)
+  fullName.vb: SilverCraft.CSCore.Streams.SynchronizedWaveSource(Of TAudioSource, T)
+  name.vb: SynchronizedWaveSource(Of TAudioSource, T)
+  spec.csharp:
+  - uid: SilverCraft.CSCore.Streams.SynchronizedWaveSource`2
+    name: SynchronizedWaveSource
+    href: SilverCraft.CSCore.Streams.SynchronizedWaveSource-2.html
+  - name: <
+  - name: TAudioSource
+  - name: ','
+  - name: " "
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: SilverCraft.CSCore.Streams.SynchronizedWaveSource`2
+    name: SynchronizedWaveSource
+    href: SilverCraft.CSCore.Streams.SynchronizedWaveSource-2.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TAudioSource
+  - name: ','
+  - name: " "
+  - name: T
+  - name: )
+- uid: TAudioSource
+  commentId: '!:TAudioSource'
+  name: TAudioSource
+  nameWithType: TAudioSource
+  fullName: TAudioSource
+- uid: SilverCraft.CSCore.Streams.SynchronizedWaveSource`2
+  commentId: T:SilverCraft.CSCore.Streams.SynchronizedWaveSource`2
+  parent: SilverCraft.CSCore.Streams
+  href: SilverCraft.CSCore.Streams.SynchronizedWaveSource-2.html
+  name: SynchronizedWaveSource<TBaseSource, T>
+  nameWithType: SynchronizedWaveSource<TBaseSource, T>
+  fullName: SilverCraft.CSCore.Streams.SynchronizedWaveSource<TBaseSource, T>
+  nameWithType.vb: SynchronizedWaveSource(Of TBaseSource, T)
+  fullName.vb: SilverCraft.CSCore.Streams.SynchronizedWaveSource(Of TBaseSource, T)
+  name.vb: SynchronizedWaveSource(Of TBaseSource, T)
+  spec.csharp:
+  - uid: SilverCraft.CSCore.Streams.SynchronizedWaveSource`2
+    name: SynchronizedWaveSource
+    href: SilverCraft.CSCore.Streams.SynchronizedWaveSource-2.html
+  - name: <
+  - name: TBaseSource
+  - name: ','
+  - name: " "
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: SilverCraft.CSCore.Streams.SynchronizedWaveSource`2
+    name: SynchronizedWaveSource
+    href: SilverCraft.CSCore.Streams.SynchronizedWaveSource-2.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TBaseSource
+  - name: ','
+  - name: " "
+  - name: T
+  - name: )
+- uid: SilverCraft.CSCore.Streams
+  commentId: N:SilverCraft.CSCore.Streams
+  href: SilverCraft.html
+  name: SilverCraft.CSCore.Streams
+  nameWithType: SilverCraft.CSCore.Streams
+  fullName: SilverCraft.CSCore.Streams
+  spec.csharp:
+  - uid: SilverCraft
+    name: SilverCraft
+    href: SilverCraft.html
+  - name: .
+  - uid: SilverCraft.CSCore
+    name: CSCore
+    href: SilverCraft.CSCore.html
+  - name: .
+  - uid: SilverCraft.CSCore.Streams
+    name: Streams
+    href: SilverCraft.CSCore.Streams.html
+  spec.vb:
+  - uid: SilverCraft
+    name: SilverCraft
+    href: SilverCraft.html
+  - name: .
+  - uid: SilverCraft.CSCore
+    name: CSCore
+    href: SilverCraft.CSCore.html
+  - name: .
+  - uid: SilverCraft.CSCore.Streams
+    name: Streams
+    href: SilverCraft.CSCore.Streams.html
+- uid: SilverCraft.CSCore.FluentExtensions.OnEndOfStream*
+  commentId: Overload:SilverCraft.CSCore.FluentExtensions.OnEndOfStream
+  href: SilverCraft.CSCore.FluentExtensions.html#SilverCraft_CSCore_FluentExtensions_OnEndOfStream_SilverCraft_CSCore_IWaveSource_System_Action_SilverCraft_CSCore_IWaveSource__
+  name: OnEndOfStream
+  nameWithType: FluentExtensions.OnEndOfStream
+  fullName: SilverCraft.CSCore.FluentExtensions.OnEndOfStream
+- uid: System.Action{SilverCraft.CSCore.IWaveSource}
+  commentId: T:System.Action{SilverCraft.CSCore.IWaveSource}
+  parent: System
+  definition: System.Action`1
+  href: https://learn.microsoft.com/dotnet/api/system.action-1
+  name: Action<IWaveSource>
+  nameWithType: Action<IWaveSource>
+  fullName: System.Action<SilverCraft.CSCore.IWaveSource>
+  nameWithType.vb: Action(Of IWaveSource)
+  fullName.vb: System.Action(Of SilverCraft.CSCore.IWaveSource)
+  name.vb: Action(Of IWaveSource)
+  spec.csharp:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: <
+  - uid: SilverCraft.CSCore.IWaveSource
+    name: IWaveSource
+    href: SilverCraft.CSCore.IWaveSource.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: SilverCraft.CSCore.IWaveSource
+    name: IWaveSource
+    href: SilverCraft.CSCore.IWaveSource.html
+  - name: )
+- uid: System.Action`1
+  commentId: T:System.Action`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.action-1
+  name: Action<T>
+  nameWithType: Action<T>
+  fullName: System.Action<T>
+  nameWithType.vb: Action(Of T)
+  fullName.vb: System.Action(Of T)
+  name.vb: Action(Of T)
+  spec.csharp:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Action{SilverCraft.CSCore.ISampleSource}
+  commentId: T:System.Action{SilverCraft.CSCore.ISampleSource}
+  parent: System
+  definition: System.Action`1
+  href: https://learn.microsoft.com/dotnet/api/system.action-1
+  name: Action<ISampleSource>
+  nameWithType: Action<ISampleSource>
+  fullName: System.Action<SilverCraft.CSCore.ISampleSource>
+  nameWithType.vb: Action(Of ISampleSource)
+  fullName.vb: System.Action(Of SilverCraft.CSCore.ISampleSource)
+  name.vb: Action(Of ISampleSource)
+  spec.csharp:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: <
+  - uid: SilverCraft.CSCore.ISampleSource
+    name: ISampleSource
+    href: SilverCraft.CSCore.ISampleSource.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: SilverCraft.CSCore.ISampleSource
+    name: ISampleSource
+    href: SilverCraft.CSCore.ISampleSource.html
+  - name: )

@@ -1,0 +1,361 @@
+### YamlMime:ManagedReference
+items:
+- uid: SilverCraft.CSCore.IChannelMapperFactory
+  commentId: T:SilverCraft.CSCore.IChannelMapperFactory
+  id: IChannelMapperFactory
+  parent: SilverCraft.CSCore
+  children:
+  - SilverCraft.CSCore.IChannelMapperFactory.MapChannels(SilverCraft.CSCore.ISampleSource,SilverCraft.CSCore.DSP.ChannelMatrix)
+  - SilverCraft.CSCore.IChannelMapperFactory.MapChannels(SilverCraft.CSCore.ISampleSource,System.Int32)
+  - SilverCraft.CSCore.IChannelMapperFactory.MapChannels(SilverCraft.CSCore.IWaveSource,SilverCraft.CSCore.DSP.ChannelMatrix)
+  - SilverCraft.CSCore.IChannelMapperFactory.MapChannels(SilverCraft.CSCore.IWaveSource,System.Int32)
+  langs:
+  - csharp
+  - vb
+  name: IChannelMapperFactory
+  nameWithType: IChannelMapperFactory
+  fullName: SilverCraft.CSCore.IChannelMapperFactory
+  type: Interface
+  source:
+    remote:
+      path: SilverCraft.CSCore/IChannelMapperFactory.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: IChannelMapperFactory
+    path: ../SilverCraft.CSCore/IChannelMapperFactory.cs
+    startLine: 2
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore
+  syntax:
+    content: public interface IChannelMapperFactory
+    content.vb: Public Interface IChannelMapperFactory
+  extensionMethods:
+  - SilverCraft.CSCore.IChannelMapperFactory.SilverCraft.CSCore.FluentExtensions.Synchronized``2
+- uid: SilverCraft.CSCore.IChannelMapperFactory.MapChannels(SilverCraft.CSCore.IWaveSource,SilverCraft.CSCore.DSP.ChannelMatrix)
+  commentId: M:SilverCraft.CSCore.IChannelMapperFactory.MapChannels(SilverCraft.CSCore.IWaveSource,SilverCraft.CSCore.DSP.ChannelMatrix)
+  id: MapChannels(SilverCraft.CSCore.IWaveSource,SilverCraft.CSCore.DSP.ChannelMatrix)
+  parent: SilverCraft.CSCore.IChannelMapperFactory
+  langs:
+  - csharp
+  - vb
+  name: MapChannels(IWaveSource, ChannelMatrix)
+  nameWithType: IChannelMapperFactory.MapChannels(IWaveSource, ChannelMatrix)
+  fullName: SilverCraft.CSCore.IChannelMapperFactory.MapChannels(SilverCraft.CSCore.IWaveSource, SilverCraft.CSCore.DSP.ChannelMatrix)
+  type: Method
+  source:
+    remote:
+      path: SilverCraft.CSCore/IChannelMapperFactory.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: MapChannels
+    path: ../SilverCraft.CSCore/IChannelMapperFactory.cs
+    startLine: 4
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore
+  syntax:
+    content: IWaveSource MapChannels(IWaveSource input, ChannelMatrix channelMatrix)
+    parameters:
+    - id: input
+      type: SilverCraft.CSCore.IWaveSource
+    - id: channelMatrix
+      type: SilverCraft.CSCore.DSP.ChannelMatrix
+    return:
+      type: SilverCraft.CSCore.IWaveSource
+    content.vb: Function MapChannels(input As IWaveSource, channelMatrix As ChannelMatrix) As IWaveSource
+  overload: SilverCraft.CSCore.IChannelMapperFactory.MapChannels*
+- uid: SilverCraft.CSCore.IChannelMapperFactory.MapChannels(SilverCraft.CSCore.IWaveSource,System.Int32)
+  commentId: M:SilverCraft.CSCore.IChannelMapperFactory.MapChannels(SilverCraft.CSCore.IWaveSource,System.Int32)
+  id: MapChannels(SilverCraft.CSCore.IWaveSource,System.Int32)
+  parent: SilverCraft.CSCore.IChannelMapperFactory
+  langs:
+  - csharp
+  - vb
+  name: MapChannels(IWaveSource, int)
+  nameWithType: IChannelMapperFactory.MapChannels(IWaveSource, int)
+  fullName: SilverCraft.CSCore.IChannelMapperFactory.MapChannels(SilverCraft.CSCore.IWaveSource, int)
+  type: Method
+  source:
+    remote:
+      path: SilverCraft.CSCore/IChannelMapperFactory.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: MapChannels
+    path: ../SilverCraft.CSCore/IChannelMapperFactory.cs
+    startLine: 5
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore
+  syntax:
+    content: IWaveSource MapChannels(IWaveSource input, int targetNumberOfChannels)
+    parameters:
+    - id: input
+      type: SilverCraft.CSCore.IWaveSource
+    - id: targetNumberOfChannels
+      type: System.Int32
+    return:
+      type: SilverCraft.CSCore.IWaveSource
+    content.vb: Function MapChannels(input As IWaveSource, targetNumberOfChannels As Integer) As IWaveSource
+  overload: SilverCraft.CSCore.IChannelMapperFactory.MapChannels*
+  nameWithType.vb: IChannelMapperFactory.MapChannels(IWaveSource, Integer)
+  fullName.vb: SilverCraft.CSCore.IChannelMapperFactory.MapChannels(SilverCraft.CSCore.IWaveSource, Integer)
+  name.vb: MapChannels(IWaveSource, Integer)
+- uid: SilverCraft.CSCore.IChannelMapperFactory.MapChannels(SilverCraft.CSCore.ISampleSource,SilverCraft.CSCore.DSP.ChannelMatrix)
+  commentId: M:SilverCraft.CSCore.IChannelMapperFactory.MapChannels(SilverCraft.CSCore.ISampleSource,SilverCraft.CSCore.DSP.ChannelMatrix)
+  id: MapChannels(SilverCraft.CSCore.ISampleSource,SilverCraft.CSCore.DSP.ChannelMatrix)
+  parent: SilverCraft.CSCore.IChannelMapperFactory
+  langs:
+  - csharp
+  - vb
+  name: MapChannels(ISampleSource, ChannelMatrix)
+  nameWithType: IChannelMapperFactory.MapChannels(ISampleSource, ChannelMatrix)
+  fullName: SilverCraft.CSCore.IChannelMapperFactory.MapChannels(SilverCraft.CSCore.ISampleSource, SilverCraft.CSCore.DSP.ChannelMatrix)
+  type: Method
+  source:
+    remote:
+      path: SilverCraft.CSCore/IChannelMapperFactory.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: MapChannels
+    path: ../SilverCraft.CSCore/IChannelMapperFactory.cs
+    startLine: 6
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore
+  syntax:
+    content: ISampleSource MapChannels(ISampleSource input, ChannelMatrix channelMatrix)
+    parameters:
+    - id: input
+      type: SilverCraft.CSCore.ISampleSource
+    - id: channelMatrix
+      type: SilverCraft.CSCore.DSP.ChannelMatrix
+    return:
+      type: SilverCraft.CSCore.ISampleSource
+    content.vb: Function MapChannels(input As ISampleSource, channelMatrix As ChannelMatrix) As ISampleSource
+  overload: SilverCraft.CSCore.IChannelMapperFactory.MapChannels*
+- uid: SilverCraft.CSCore.IChannelMapperFactory.MapChannels(SilverCraft.CSCore.ISampleSource,System.Int32)
+  commentId: M:SilverCraft.CSCore.IChannelMapperFactory.MapChannels(SilverCraft.CSCore.ISampleSource,System.Int32)
+  id: MapChannels(SilverCraft.CSCore.ISampleSource,System.Int32)
+  parent: SilverCraft.CSCore.IChannelMapperFactory
+  langs:
+  - csharp
+  - vb
+  name: MapChannels(ISampleSource, int)
+  nameWithType: IChannelMapperFactory.MapChannels(ISampleSource, int)
+  fullName: SilverCraft.CSCore.IChannelMapperFactory.MapChannels(SilverCraft.CSCore.ISampleSource, int)
+  type: Method
+  source:
+    remote:
+      path: SilverCraft.CSCore/IChannelMapperFactory.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: MapChannels
+    path: ../SilverCraft.CSCore/IChannelMapperFactory.cs
+    startLine: 7
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore
+  syntax:
+    content: ISampleSource MapChannels(ISampleSource input, int targetNumberOfChannels)
+    parameters:
+    - id: input
+      type: SilverCraft.CSCore.ISampleSource
+    - id: targetNumberOfChannels
+      type: System.Int32
+    return:
+      type: SilverCraft.CSCore.ISampleSource
+    content.vb: Function MapChannels(input As ISampleSource, targetNumberOfChannels As Integer) As ISampleSource
+  overload: SilverCraft.CSCore.IChannelMapperFactory.MapChannels*
+  nameWithType.vb: IChannelMapperFactory.MapChannels(ISampleSource, Integer)
+  fullName.vb: SilverCraft.CSCore.IChannelMapperFactory.MapChannels(SilverCraft.CSCore.ISampleSource, Integer)
+  name.vb: MapChannels(ISampleSource, Integer)
+references:
+- uid: SilverCraft.CSCore
+  commentId: N:SilverCraft.CSCore
+  href: SilverCraft.html
+  name: SilverCraft.CSCore
+  nameWithType: SilverCraft.CSCore
+  fullName: SilverCraft.CSCore
+  spec.csharp:
+  - uid: SilverCraft
+    name: SilverCraft
+    href: SilverCraft.html
+  - name: .
+  - uid: SilverCraft.CSCore
+    name: CSCore
+    href: SilverCraft.CSCore.html
+  spec.vb:
+  - uid: SilverCraft
+    name: SilverCraft
+    href: SilverCraft.html
+  - name: .
+  - uid: SilverCraft.CSCore
+    name: CSCore
+    href: SilverCraft.CSCore.html
+- uid: SilverCraft.CSCore.IChannelMapperFactory.SilverCraft.CSCore.FluentExtensions.Synchronized``2
+  commentId: M:SilverCraft.CSCore.FluentExtensions.Synchronized``2(``0)
+  parent: SilverCraft.CSCore.FluentExtensions
+  definition: SilverCraft.CSCore.FluentExtensions.Synchronized``2(``0)
+  href: SilverCraft.CSCore.FluentExtensions.html#SilverCraft_CSCore_FluentExtensions_Synchronized__2___0_
+  name: Synchronized<IChannelMapperFactory, T>(IChannelMapperFactory)
+  nameWithType: FluentExtensions.Synchronized<IChannelMapperFactory, T>(IChannelMapperFactory)
+  fullName: SilverCraft.CSCore.FluentExtensions.Synchronized<SilverCraft.CSCore.IChannelMapperFactory, T>(SilverCraft.CSCore.IChannelMapperFactory)
+  nameWithType.vb: FluentExtensions.Synchronized(Of IChannelMapperFactory, T)(IChannelMapperFactory)
+  fullName.vb: SilverCraft.CSCore.FluentExtensions.Synchronized(Of SilverCraft.CSCore.IChannelMapperFactory, T)(SilverCraft.CSCore.IChannelMapperFactory)
+  name.vb: Synchronized(Of IChannelMapperFactory, T)(IChannelMapperFactory)
+  spec.csharp:
+  - uid: SilverCraft.CSCore.FluentExtensions.Synchronized``2(SilverCraft.CSCore.IChannelMapperFactory)
+    name: Synchronized
+    href: SilverCraft.CSCore.FluentExtensions.html#SilverCraft_CSCore_FluentExtensions_Synchronized__2___0_
+  - name: <
+  - uid: SilverCraft.CSCore.IChannelMapperFactory
+    name: IChannelMapperFactory
+    href: SilverCraft.CSCore.IChannelMapperFactory.html
+  - name: ','
+  - name: " "
+  - name: T
+  - name: '>'
+  - name: (
+  - uid: SilverCraft.CSCore.IChannelMapperFactory
+    name: IChannelMapperFactory
+    href: SilverCraft.CSCore.IChannelMapperFactory.html
+  - name: )
+  spec.vb:
+  - uid: SilverCraft.CSCore.FluentExtensions.Synchronized``2(SilverCraft.CSCore.IChannelMapperFactory)
+    name: Synchronized
+    href: SilverCraft.CSCore.FluentExtensions.html#SilverCraft_CSCore_FluentExtensions_Synchronized__2___0_
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: SilverCraft.CSCore.IChannelMapperFactory
+    name: IChannelMapperFactory
+    href: SilverCraft.CSCore.IChannelMapperFactory.html
+  - name: ','
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: SilverCraft.CSCore.IChannelMapperFactory
+    name: IChannelMapperFactory
+    href: SilverCraft.CSCore.IChannelMapperFactory.html
+  - name: )
+- uid: SilverCraft.CSCore.FluentExtensions.Synchronized``2(``0)
+  commentId: M:SilverCraft.CSCore.FluentExtensions.Synchronized``2(``0)
+  href: SilverCraft.CSCore.FluentExtensions.html#SilverCraft_CSCore_FluentExtensions_Synchronized__2___0_
+  name: Synchronized<TAudioSource, T>(TAudioSource)
+  nameWithType: FluentExtensions.Synchronized<TAudioSource, T>(TAudioSource)
+  fullName: SilverCraft.CSCore.FluentExtensions.Synchronized<TAudioSource, T>(TAudioSource)
+  nameWithType.vb: FluentExtensions.Synchronized(Of TAudioSource, T)(TAudioSource)
+  fullName.vb: SilverCraft.CSCore.FluentExtensions.Synchronized(Of TAudioSource, T)(TAudioSource)
+  name.vb: Synchronized(Of TAudioSource, T)(TAudioSource)
+  spec.csharp:
+  - uid: SilverCraft.CSCore.FluentExtensions.Synchronized``2(``0)
+    name: Synchronized
+    href: SilverCraft.CSCore.FluentExtensions.html#SilverCraft_CSCore_FluentExtensions_Synchronized__2___0_
+  - name: <
+  - name: TAudioSource
+  - name: ','
+  - name: " "
+  - name: T
+  - name: '>'
+  - name: (
+  - name: TAudioSource
+  - name: )
+  spec.vb:
+  - uid: SilverCraft.CSCore.FluentExtensions.Synchronized``2(``0)
+    name: Synchronized
+    href: SilverCraft.CSCore.FluentExtensions.html#SilverCraft_CSCore_FluentExtensions_Synchronized__2___0_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TAudioSource
+  - name: ','
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - name: TAudioSource
+  - name: )
+- uid: SilverCraft.CSCore.FluentExtensions
+  commentId: T:SilverCraft.CSCore.FluentExtensions
+  parent: SilverCraft.CSCore
+  href: SilverCraft.CSCore.FluentExtensions.html
+  name: FluentExtensions
+  nameWithType: FluentExtensions
+  fullName: SilverCraft.CSCore.FluentExtensions
+- uid: SilverCraft.CSCore.IChannelMapperFactory.MapChannels*
+  commentId: Overload:SilverCraft.CSCore.IChannelMapperFactory.MapChannels
+  href: SilverCraft.CSCore.IChannelMapperFactory.html#SilverCraft_CSCore_IChannelMapperFactory_MapChannels_SilverCraft_CSCore_IWaveSource_SilverCraft_CSCore_DSP_ChannelMatrix_
+  name: MapChannels
+  nameWithType: IChannelMapperFactory.MapChannels
+  fullName: SilverCraft.CSCore.IChannelMapperFactory.MapChannels
+- uid: SilverCraft.CSCore.IWaveSource
+  commentId: T:SilverCraft.CSCore.IWaveSource
+  parent: SilverCraft.CSCore
+  href: SilverCraft.CSCore.IWaveSource.html
+  name: IWaveSource
+  nameWithType: IWaveSource
+  fullName: SilverCraft.CSCore.IWaveSource
+- uid: SilverCraft.CSCore.DSP.ChannelMatrix
+  commentId: T:SilverCraft.CSCore.DSP.ChannelMatrix
+  parent: SilverCraft.CSCore.DSP
+  href: SilverCraft.CSCore.DSP.ChannelMatrix.html
+  name: ChannelMatrix
+  nameWithType: ChannelMatrix
+  fullName: SilverCraft.CSCore.DSP.ChannelMatrix
+- uid: SilverCraft.CSCore.DSP
+  commentId: N:SilverCraft.CSCore.DSP
+  href: SilverCraft.html
+  name: SilverCraft.CSCore.DSP
+  nameWithType: SilverCraft.CSCore.DSP
+  fullName: SilverCraft.CSCore.DSP
+  spec.csharp:
+  - uid: SilverCraft
+    name: SilverCraft
+    href: SilverCraft.html
+  - name: .
+  - uid: SilverCraft.CSCore
+    name: CSCore
+    href: SilverCraft.CSCore.html
+  - name: .
+  - uid: SilverCraft.CSCore.DSP
+    name: DSP
+    href: SilverCraft.CSCore.DSP.html
+  spec.vb:
+  - uid: SilverCraft
+    name: SilverCraft
+    href: SilverCraft.html
+  - name: .
+  - uid: SilverCraft.CSCore
+    name: CSCore
+    href: SilverCraft.CSCore.html
+  - name: .
+  - uid: SilverCraft.CSCore.DSP
+    name: DSP
+    href: SilverCraft.CSCore.DSP.html
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: SilverCraft.CSCore.ISampleSource
+  commentId: T:SilverCraft.CSCore.ISampleSource
+  parent: SilverCraft.CSCore
+  href: SilverCraft.CSCore.ISampleSource.html
+  name: ISampleSource
+  nameWithType: ISampleSource
+  fullName: SilverCraft.CSCore.ISampleSource

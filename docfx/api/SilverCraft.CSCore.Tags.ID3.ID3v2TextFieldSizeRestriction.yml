@@ -1,0 +1,182 @@
+### YamlMime:ManagedReference
+items:
+- uid: SilverCraft.CSCore.Tags.ID3.ID3v2TextFieldSizeRestriction
+  commentId: T:SilverCraft.CSCore.Tags.ID3.ID3v2TextFieldSizeRestriction
+  id: ID3v2TextFieldSizeRestriction
+  parent: SilverCraft.CSCore.Tags.ID3
+  children:
+  - SilverCraft.CSCore.Tags.ID3.ID3v2TextFieldSizeRestriction.Max1024Characters
+  - SilverCraft.CSCore.Tags.ID3.ID3v2TextFieldSizeRestriction.Max128Characters
+  - SilverCraft.CSCore.Tags.ID3.ID3v2TextFieldSizeRestriction.Max30Characters
+  - SilverCraft.CSCore.Tags.ID3.ID3v2TextFieldSizeRestriction.None
+  langs:
+  - csharp
+  - vb
+  name: ID3v2TextFieldSizeRestriction
+  nameWithType: ID3v2TextFieldSizeRestriction
+  fullName: SilverCraft.CSCore.Tags.ID3.ID3v2TextFieldSizeRestriction
+  type: Enum
+  source:
+    remote:
+      path: SilverCraft.CSCore/Tags/ID3/ID3v2TextFieldSizeRestriction.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: ID3v2TextFieldSizeRestriction
+    path: ../SilverCraft.CSCore/Tags/ID3/ID3v2TextFieldSizeRestriction.cs
+    startLine: 2
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Tags.ID3
+  syntax:
+    content: public enum ID3v2TextFieldSizeRestriction
+    content.vb: Public Enum ID3v2TextFieldSizeRestriction
+- uid: SilverCraft.CSCore.Tags.ID3.ID3v2TextFieldSizeRestriction.None
+  commentId: F:SilverCraft.CSCore.Tags.ID3.ID3v2TextFieldSizeRestriction.None
+  id: None
+  parent: SilverCraft.CSCore.Tags.ID3.ID3v2TextFieldSizeRestriction
+  langs:
+  - csharp
+  - vb
+  name: None
+  nameWithType: ID3v2TextFieldSizeRestriction.None
+  fullName: SilverCraft.CSCore.Tags.ID3.ID3v2TextFieldSizeRestriction.None
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/Tags/ID3/ID3v2TextFieldSizeRestriction.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: None
+    path: ../SilverCraft.CSCore/Tags/ID3/ID3v2TextFieldSizeRestriction.cs
+    startLine: 4
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Tags.ID3
+  syntax:
+    content: None = 0
+    return:
+      type: SilverCraft.CSCore.Tags.ID3.ID3v2TextFieldSizeRestriction
+- uid: SilverCraft.CSCore.Tags.ID3.ID3v2TextFieldSizeRestriction.Max1024Characters
+  commentId: F:SilverCraft.CSCore.Tags.ID3.ID3v2TextFieldSizeRestriction.Max1024Characters
+  id: Max1024Characters
+  parent: SilverCraft.CSCore.Tags.ID3.ID3v2TextFieldSizeRestriction
+  langs:
+  - csharp
+  - vb
+  name: Max1024Characters
+  nameWithType: ID3v2TextFieldSizeRestriction.Max1024Characters
+  fullName: SilverCraft.CSCore.Tags.ID3.ID3v2TextFieldSizeRestriction.Max1024Characters
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/Tags/ID3/ID3v2TextFieldSizeRestriction.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: Max1024Characters
+    path: ../SilverCraft.CSCore/Tags/ID3/ID3v2TextFieldSizeRestriction.cs
+    startLine: 5
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Tags.ID3
+  syntax:
+    content: Max1024Characters = 8
+    return:
+      type: SilverCraft.CSCore.Tags.ID3.ID3v2TextFieldSizeRestriction
+- uid: SilverCraft.CSCore.Tags.ID3.ID3v2TextFieldSizeRestriction.Max128Characters
+  commentId: F:SilverCraft.CSCore.Tags.ID3.ID3v2TextFieldSizeRestriction.Max128Characters
+  id: Max128Characters
+  parent: SilverCraft.CSCore.Tags.ID3.ID3v2TextFieldSizeRestriction
+  langs:
+  - csharp
+  - vb
+  name: Max128Characters
+  nameWithType: ID3v2TextFieldSizeRestriction.Max128Characters
+  fullName: SilverCraft.CSCore.Tags.ID3.ID3v2TextFieldSizeRestriction.Max128Characters
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/Tags/ID3/ID3v2TextFieldSizeRestriction.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: Max128Characters
+    path: ../SilverCraft.CSCore/Tags/ID3/ID3v2TextFieldSizeRestriction.cs
+    startLine: 6
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Tags.ID3
+  syntax:
+    content: Max128Characters = 16
+    return:
+      type: SilverCraft.CSCore.Tags.ID3.ID3v2TextFieldSizeRestriction
+- uid: SilverCraft.CSCore.Tags.ID3.ID3v2TextFieldSizeRestriction.Max30Characters
+  commentId: F:SilverCraft.CSCore.Tags.ID3.ID3v2TextFieldSizeRestriction.Max30Characters
+  id: Max30Characters
+  parent: SilverCraft.CSCore.Tags.ID3.ID3v2TextFieldSizeRestriction
+  langs:
+  - csharp
+  - vb
+  name: Max30Characters
+  nameWithType: ID3v2TextFieldSizeRestriction.Max30Characters
+  fullName: SilverCraft.CSCore.Tags.ID3.ID3v2TextFieldSizeRestriction.Max30Characters
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/Tags/ID3/ID3v2TextFieldSizeRestriction.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: Max30Characters
+    path: ../SilverCraft.CSCore/Tags/ID3/ID3v2TextFieldSizeRestriction.cs
+    startLine: 7
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Tags.ID3
+  syntax:
+    content: Max30Characters = 24
+    return:
+      type: SilverCraft.CSCore.Tags.ID3.ID3v2TextFieldSizeRestriction
+references:
+- uid: SilverCraft.CSCore.Tags.ID3
+  commentId: N:SilverCraft.CSCore.Tags.ID3
+  href: SilverCraft.html
+  name: SilverCraft.CSCore.Tags.ID3
+  nameWithType: SilverCraft.CSCore.Tags.ID3
+  fullName: SilverCraft.CSCore.Tags.ID3
+  spec.csharp:
+  - uid: SilverCraft
+    name: SilverCraft
+    href: SilverCraft.html
+  - name: .
+  - uid: SilverCraft.CSCore
+    name: CSCore
+    href: SilverCraft.CSCore.html
+  - name: .
+  - uid: SilverCraft.CSCore.Tags
+    name: Tags
+    href: SilverCraft.CSCore.Tags.html
+  - name: .
+  - uid: SilverCraft.CSCore.Tags.ID3
+    name: ID3
+    href: SilverCraft.CSCore.Tags.ID3.html
+  spec.vb:
+  - uid: SilverCraft
+    name: SilverCraft
+    href: SilverCraft.html
+  - name: .
+  - uid: SilverCraft.CSCore
+    name: CSCore
+    href: SilverCraft.CSCore.html
+  - name: .
+  - uid: SilverCraft.CSCore.Tags
+    name: Tags
+    href: SilverCraft.CSCore.Tags.html
+  - name: .
+  - uid: SilverCraft.CSCore.Tags.ID3
+    name: ID3
+    href: SilverCraft.CSCore.Tags.ID3.html
+- uid: SilverCraft.CSCore.Tags.ID3.ID3v2TextFieldSizeRestriction
+  commentId: T:SilverCraft.CSCore.Tags.ID3.ID3v2TextFieldSizeRestriction
+  parent: SilverCraft.CSCore.Tags.ID3
+  href: SilverCraft.CSCore.Tags.ID3.ID3v2TextFieldSizeRestriction.html
+  name: ID3v2TextFieldSizeRestriction
+  nameWithType: ID3v2TextFieldSizeRestriction
+  fullName: SilverCraft.CSCore.Tags.ID3.ID3v2TextFieldSizeRestriction

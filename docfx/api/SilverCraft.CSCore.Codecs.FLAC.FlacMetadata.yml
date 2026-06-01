@@ -1,0 +1,941 @@
+### YamlMime:ManagedReference
+items:
+- uid: SilverCraft.CSCore.Codecs.FLAC.FlacMetadata
+  commentId: T:SilverCraft.CSCore.Codecs.FLAC.FlacMetadata
+  id: FlacMetadata
+  parent: SilverCraft.CSCore.Codecs.FLAC
+  children:
+  - SilverCraft.CSCore.Codecs.FLAC.FlacMetadata.FromStream(System.IO.Stream)
+  - SilverCraft.CSCore.Codecs.FLAC.FlacMetadata.Initialize(System.IO.Stream,System.Int32,System.Boolean)
+  - SilverCraft.CSCore.Codecs.FLAC.FlacMetadata.InitializeByStream(System.IO.Stream)
+  - SilverCraft.CSCore.Codecs.FLAC.FlacMetadata.IsLastMetaBlock
+  - SilverCraft.CSCore.Codecs.FLAC.FlacMetadata.Length
+  - SilverCraft.CSCore.Codecs.FLAC.FlacMetadata.MetaDataType
+  - SilverCraft.CSCore.Codecs.FLAC.FlacMetadata.ReadAllMetadataFromStream(System.IO.Stream)
+  - SilverCraft.CSCore.Codecs.FLAC.FlacMetadata.SkipMetadata(System.IO.Stream)
+  langs:
+  - csharp
+  - vb
+  name: FlacMetadata
+  nameWithType: FlacMetadata
+  fullName: SilverCraft.CSCore.Codecs.FLAC.FlacMetadata
+  type: Class
+  source:
+    remote:
+      path: SilverCraft.CSCore/Codecs/FLAC/Metadata/FlacMetadata.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: FlacMetadata
+    path: ../SilverCraft.CSCore/Codecs/FLAC/Metadata/FlacMetadata.cs
+    startLine: 12
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Codecs.FLAC
+  summary: Represents a flac metadata block.
+  example: []
+  syntax:
+    content: public abstract class FlacMetadata
+    content.vb: Public MustInherit Class FlacMetadata
+  inheritance:
+  - System.Object
+  derivedClasses:
+  - SilverCraft.CSCore.Codecs.FLAC.DefaultFlacMetadata
+  - SilverCraft.CSCore.Codecs.FLAC.FlacMetadataSeekTable
+  - SilverCraft.CSCore.Codecs.FLAC.FlacMetadataStreamInfo
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  extensionMethods:
+  - SilverCraft.CSCore.Codecs.FLAC.FlacMetadata.SilverCraft.CSCore.FluentExtensions.Synchronized``2
+- uid: SilverCraft.CSCore.Codecs.FLAC.FlacMetadata.FromStream(System.IO.Stream)
+  commentId: M:SilverCraft.CSCore.Codecs.FLAC.FlacMetadata.FromStream(System.IO.Stream)
+  id: FromStream(System.IO.Stream)
+  parent: SilverCraft.CSCore.Codecs.FLAC.FlacMetadata
+  langs:
+  - csharp
+  - vb
+  name: FromStream(Stream)
+  nameWithType: FlacMetadata.FromStream(Stream)
+  fullName: SilverCraft.CSCore.Codecs.FLAC.FlacMetadata.FromStream(System.IO.Stream)
+  type: Method
+  source:
+    remote:
+      path: SilverCraft.CSCore/Codecs/FLAC/Metadata/FlacMetadata.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: FromStream
+    path: ../SilverCraft.CSCore/Codecs/FLAC/Metadata/FlacMetadata.cs
+    startLine: 20
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Codecs.FLAC
+  summary: Reads and returns a single <xref href="SilverCraft.CSCore.Codecs.FLAC.FlacMetadata" data-throw-if-not-resolved="false"></xref> from the specified <code class="paramref">stream</code>.
+  example: []
+  syntax:
+    content: >-
+      [Obsolete("Use FlacMetaDataFactory.ParseMetaData")]
+
+      public static FlacMetadata FromStream(Stream stream)
+    parameters:
+    - id: stream
+      type: System.IO.Stream
+      description: The stream which contains the <xref href="SilverCraft.CSCore.Codecs.FLAC.FlacMetadata" data-throw-if-not-resolved="false"></xref>.
+    return:
+      type: SilverCraft.CSCore.Codecs.FLAC.FlacMetadata
+      description: Returns the read <xref href="SilverCraft.CSCore.Codecs.FLAC.FlacMetadata" data-throw-if-not-resolved="false"></xref>.
+    content.vb: >-
+      <Obsolete("Use FlacMetaDataFactory.ParseMetaData")>
+
+      Public Shared Function FromStream(stream As Stream) As FlacMetadata
+  overload: SilverCraft.CSCore.Codecs.FLAC.FlacMetadata.FromStream*
+  attributes:
+  - type: System.ObsoleteAttribute
+    ctor: System.ObsoleteAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Use FlacMetaDataFactory.ParseMetaData
+- uid: SilverCraft.CSCore.Codecs.FLAC.FlacMetadata.ReadAllMetadataFromStream(System.IO.Stream)
+  commentId: M:SilverCraft.CSCore.Codecs.FLAC.FlacMetadata.ReadAllMetadataFromStream(System.IO.Stream)
+  id: ReadAllMetadataFromStream(System.IO.Stream)
+  parent: SilverCraft.CSCore.Codecs.FLAC.FlacMetadata
+  langs:
+  - csharp
+  - vb
+  name: ReadAllMetadataFromStream(Stream)
+  nameWithType: FlacMetadata.ReadAllMetadataFromStream(Stream)
+  fullName: SilverCraft.CSCore.Codecs.FLAC.FlacMetadata.ReadAllMetadataFromStream(System.IO.Stream)
+  type: Method
+  source:
+    remote:
+      path: SilverCraft.CSCore/Codecs/FLAC/Metadata/FlacMetadata.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: ReadAllMetadataFromStream
+    path: ../SilverCraft.CSCore/Codecs/FLAC/Metadata/FlacMetadata.cs
+    startLine: 31
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Codecs.FLAC
+  summary: Reads all <xref href="SilverCraft.CSCore.Codecs.FLAC.FlacMetadata" data-throw-if-not-resolved="false"></xref> from the specified <code class="paramref">stream</code>.
+  example: []
+  syntax:
+    content: public static IEnumerable<FlacMetadata> ReadAllMetadataFromStream(Stream stream)
+    parameters:
+    - id: stream
+      type: System.IO.Stream
+      description: The stream which contains the <xref href="SilverCraft.CSCore.Codecs.FLAC.FlacMetadata" data-throw-if-not-resolved="false"></xref>.
+    return:
+      type: System.Collections.Generic.IEnumerable{SilverCraft.CSCore.Codecs.FLAC.FlacMetadata}
+      description: All <xref href="SilverCraft.CSCore.Codecs.FLAC.FlacMetadata" data-throw-if-not-resolved="false"></xref>.
+    content.vb: Public Shared Function ReadAllMetadataFromStream(stream As Stream) As IEnumerable(Of FlacMetadata)
+  overload: SilverCraft.CSCore.Codecs.FLAC.FlacMetadata.ReadAllMetadataFromStream*
+- uid: SilverCraft.CSCore.Codecs.FLAC.FlacMetadata.SkipMetadata(System.IO.Stream)
+  commentId: M:SilverCraft.CSCore.Codecs.FLAC.FlacMetadata.SkipMetadata(System.IO.Stream)
+  id: SkipMetadata(System.IO.Stream)
+  parent: SilverCraft.CSCore.Codecs.FLAC.FlacMetadata
+  langs:
+  - csharp
+  - vb
+  name: SkipMetadata(Stream)
+  nameWithType: FlacMetadata.SkipMetadata(Stream)
+  fullName: SilverCraft.CSCore.Codecs.FLAC.FlacMetadata.SkipMetadata(System.IO.Stream)
+  type: Method
+  source:
+    remote:
+      path: SilverCraft.CSCore/Codecs/FLAC/Metadata/FlacMetadata.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: SkipMetadata
+    path: ../SilverCraft.CSCore/Codecs/FLAC/Metadata/FlacMetadata.cs
+    startLine: 47
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Codecs.FLAC
+  summary: Skips all <xref href="SilverCraft.CSCore.Codecs.FLAC.FlacMetadata" data-throw-if-not-resolved="false"></xref> of the specified <code class="paramref">stream</code>.
+  example: []
+  syntax:
+    content: public static void SkipMetadata(Stream stream)
+    parameters:
+    - id: stream
+      type: System.IO.Stream
+      description: The stream which contains the <xref href="SilverCraft.CSCore.Codecs.FLAC.FlacMetadata" data-throw-if-not-resolved="false"></xref>.
+    content.vb: Public Shared Sub SkipMetadata(stream As Stream)
+  overload: SilverCraft.CSCore.Codecs.FLAC.FlacMetadata.SkipMetadata*
+- uid: SilverCraft.CSCore.Codecs.FLAC.FlacMetadata.Initialize(System.IO.Stream,System.Int32,System.Boolean)
+  commentId: M:SilverCraft.CSCore.Codecs.FLAC.FlacMetadata.Initialize(System.IO.Stream,System.Int32,System.Boolean)
+  id: Initialize(System.IO.Stream,System.Int32,System.Boolean)
+  parent: SilverCraft.CSCore.Codecs.FLAC.FlacMetadata
+  langs:
+  - csharp
+  - vb
+  name: Initialize(Stream, int, bool)
+  nameWithType: FlacMetadata.Initialize(Stream, int, bool)
+  fullName: SilverCraft.CSCore.Codecs.FLAC.FlacMetadata.Initialize(System.IO.Stream, int, bool)
+  type: Method
+  source:
+    remote:
+      path: SilverCraft.CSCore/Codecs/FLAC/Metadata/FlacMetadata.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: Initialize
+    path: ../SilverCraft.CSCore/Codecs/FLAC/Metadata/FlacMetadata.cs
+    startLine: 58
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Codecs.FLAC
+  summary: Initializes the properties of the <xref href="SilverCraft.CSCore.Codecs.FLAC.FlacMetadata" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public virtual void Initialize(Stream stream, int length, bool isLastBlock)
+    parameters:
+    - id: stream
+      type: System.IO.Stream
+      description: The stream which contains the metadata.
+    - id: length
+      type: System.Int32
+      description: The length of <xref href="SilverCraft.CSCore.Codecs.FLAC.FlacMetadata" data-throw-if-not-resolved="false"></xref> block inside of the stream in bytes. Does not include the metadata header.
+    - id: isLastBlock
+      type: System.Boolean
+      description: A value which indicates whether this is the last <xref href="SilverCraft.CSCore.Codecs.FLAC.FlacMetadata" data-throw-if-not-resolved="false"></xref> block inside of the stream. <code>true</code> means that this is the last <xref href="SilverCraft.CSCore.Codecs.FLAC.FlacMetadata" data-throw-if-not-resolved="false"></xref> block inside of the stream.
+    content.vb: Public Overridable Sub Initialize(stream As Stream, length As Integer, isLastBlock As Boolean)
+  overload: SilverCraft.CSCore.Codecs.FLAC.FlacMetadata.Initialize*
+  nameWithType.vb: FlacMetadata.Initialize(Stream, Integer, Boolean)
+  fullName.vb: SilverCraft.CSCore.Codecs.FLAC.FlacMetadata.Initialize(System.IO.Stream, Integer, Boolean)
+  name.vb: Initialize(Stream, Integer, Boolean)
+- uid: SilverCraft.CSCore.Codecs.FLAC.FlacMetadata.InitializeByStream(System.IO.Stream)
+  commentId: M:SilverCraft.CSCore.Codecs.FLAC.FlacMetadata.InitializeByStream(System.IO.Stream)
+  id: InitializeByStream(System.IO.Stream)
+  parent: SilverCraft.CSCore.Codecs.FLAC.FlacMetadata
+  langs:
+  - csharp
+  - vb
+  name: InitializeByStream(Stream)
+  nameWithType: FlacMetadata.InitializeByStream(Stream)
+  fullName: SilverCraft.CSCore.Codecs.FLAC.FlacMetadata.InitializeByStream(System.IO.Stream)
+  type: Method
+  source:
+    remote:
+      path: SilverCraft.CSCore/Codecs/FLAC/Metadata/FlacMetadata.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: InitializeByStream
+    path: ../SilverCraft.CSCore/Codecs/FLAC/Metadata/FlacMetadata.cs
+    startLine: 70
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Codecs.FLAC
+  summary: Initializes the properties of the <xref href="SilverCraft.CSCore.Codecs.FLAC.FlacMetadata" data-throw-if-not-resolved="false"></xref> by reading them from the <code class="paramref">stream</code>.
+  example: []
+  syntax:
+    content: protected abstract void InitializeByStream(Stream stream)
+    parameters:
+    - id: stream
+      type: System.IO.Stream
+      description: The stream which contains the metadata.
+    content.vb: Protected MustOverride Sub InitializeByStream(stream As Stream)
+  overload: SilverCraft.CSCore.Codecs.FLAC.FlacMetadata.InitializeByStream*
+- uid: SilverCraft.CSCore.Codecs.FLAC.FlacMetadata.MetaDataType
+  commentId: P:SilverCraft.CSCore.Codecs.FLAC.FlacMetadata.MetaDataType
+  id: MetaDataType
+  parent: SilverCraft.CSCore.Codecs.FLAC.FlacMetadata
+  langs:
+  - csharp
+  - vb
+  name: MetaDataType
+  nameWithType: FlacMetadata.MetaDataType
+  fullName: SilverCraft.CSCore.Codecs.FLAC.FlacMetadata.MetaDataType
+  type: Property
+  source:
+    remote:
+      path: SilverCraft.CSCore/Codecs/FLAC/Metadata/FlacMetadata.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: MetaDataType
+    path: ../SilverCraft.CSCore/Codecs/FLAC/Metadata/FlacMetadata.cs
+    startLine: 75
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Codecs.FLAC
+  summary: Gets the type of the <xref href="SilverCraft.CSCore.Codecs.FLAC.FlacMetadata" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public abstract FlacMetaDataType MetaDataType { get; }
+    parameters: []
+    return:
+      type: SilverCraft.CSCore.Codecs.FLAC.FlacMetaDataType
+    content.vb: Public MustOverride ReadOnly Property MetaDataType As FlacMetaDataType
+  overload: SilverCraft.CSCore.Codecs.FLAC.FlacMetadata.MetaDataType*
+- uid: SilverCraft.CSCore.Codecs.FLAC.FlacMetadata.IsLastMetaBlock
+  commentId: P:SilverCraft.CSCore.Codecs.FLAC.FlacMetadata.IsLastMetaBlock
+  id: IsLastMetaBlock
+  parent: SilverCraft.CSCore.Codecs.FLAC.FlacMetadata
+  langs:
+  - csharp
+  - vb
+  name: IsLastMetaBlock
+  nameWithType: FlacMetadata.IsLastMetaBlock
+  fullName: SilverCraft.CSCore.Codecs.FLAC.FlacMetadata.IsLastMetaBlock
+  type: Property
+  source:
+    remote:
+      path: SilverCraft.CSCore/Codecs/FLAC/Metadata/FlacMetadata.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: IsLastMetaBlock
+    path: ../SilverCraft.CSCore/Codecs/FLAC/Metadata/FlacMetadata.cs
+    startLine: 80
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Codecs.FLAC
+  summary: Gets a value indicating whether this instance is the last <xref href="SilverCraft.CSCore.Codecs.FLAC.FlacMetadata" data-throw-if-not-resolved="false"></xref> block.
+  example: []
+  syntax:
+    content: public bool IsLastMetaBlock { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property IsLastMetaBlock As Boolean
+  overload: SilverCraft.CSCore.Codecs.FLAC.FlacMetadata.IsLastMetaBlock*
+- uid: SilverCraft.CSCore.Codecs.FLAC.FlacMetadata.Length
+  commentId: P:SilverCraft.CSCore.Codecs.FLAC.FlacMetadata.Length
+  id: Length
+  parent: SilverCraft.CSCore.Codecs.FLAC.FlacMetadata
+  langs:
+  - csharp
+  - vb
+  name: Length
+  nameWithType: FlacMetadata.Length
+  fullName: SilverCraft.CSCore.Codecs.FLAC.FlacMetadata.Length
+  type: Property
+  source:
+    remote:
+      path: SilverCraft.CSCore/Codecs/FLAC/Metadata/FlacMetadata.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: Length
+    path: ../SilverCraft.CSCore/Codecs/FLAC/Metadata/FlacMetadata.cs
+    startLine: 86
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Codecs.FLAC
+  summary: Gets the length of the <xref href="SilverCraft.CSCore.Codecs.FLAC.FlacMetadata" data-throw-if-not-resolved="false"></xref> block inside of the stream in bytes.
+  remarks: The length does not include the metadata header.
+  example: []
+  syntax:
+    content: public int Length { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property Length As Integer
+  overload: SilverCraft.CSCore.Codecs.FLAC.FlacMetadata.Length*
+references:
+- uid: SilverCraft.CSCore.Codecs.FLAC
+  commentId: N:SilverCraft.CSCore.Codecs.FLAC
+  href: SilverCraft.html
+  name: SilverCraft.CSCore.Codecs.FLAC
+  nameWithType: SilverCraft.CSCore.Codecs.FLAC
+  fullName: SilverCraft.CSCore.Codecs.FLAC
+  spec.csharp:
+  - uid: SilverCraft
+    name: SilverCraft
+    href: SilverCraft.html
+  - name: .
+  - uid: SilverCraft.CSCore
+    name: CSCore
+    href: SilverCraft.CSCore.html
+  - name: .
+  - uid: SilverCraft.CSCore.Codecs
+    name: Codecs
+    href: SilverCraft.CSCore.Codecs.html
+  - name: .
+  - uid: SilverCraft.CSCore.Codecs.FLAC
+    name: FLAC
+    href: SilverCraft.CSCore.Codecs.FLAC.html
+  spec.vb:
+  - uid: SilverCraft
+    name: SilverCraft
+    href: SilverCraft.html
+  - name: .
+  - uid: SilverCraft.CSCore
+    name: CSCore
+    href: SilverCraft.CSCore.html
+  - name: .
+  - uid: SilverCraft.CSCore.Codecs
+    name: Codecs
+    href: SilverCraft.CSCore.Codecs.html
+  - name: .
+  - uid: SilverCraft.CSCore.Codecs.FLAC
+    name: FLAC
+    href: SilverCraft.CSCore.Codecs.FLAC.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: SilverCraft.CSCore.Codecs.FLAC.FlacMetadata.SilverCraft.CSCore.FluentExtensions.Synchronized``2
+  commentId: M:SilverCraft.CSCore.FluentExtensions.Synchronized``2(``0)
+  parent: SilverCraft.CSCore.FluentExtensions
+  definition: SilverCraft.CSCore.FluentExtensions.Synchronized``2(``0)
+  href: SilverCraft.CSCore.FluentExtensions.html#SilverCraft_CSCore_FluentExtensions_Synchronized__2___0_
+  name: Synchronized<FlacMetadata, T>(FlacMetadata)
+  nameWithType: FluentExtensions.Synchronized<FlacMetadata, T>(FlacMetadata)
+  fullName: SilverCraft.CSCore.FluentExtensions.Synchronized<SilverCraft.CSCore.Codecs.FLAC.FlacMetadata, T>(SilverCraft.CSCore.Codecs.FLAC.FlacMetadata)
+  nameWithType.vb: FluentExtensions.Synchronized(Of FlacMetadata, T)(FlacMetadata)
+  fullName.vb: SilverCraft.CSCore.FluentExtensions.Synchronized(Of SilverCraft.CSCore.Codecs.FLAC.FlacMetadata, T)(SilverCraft.CSCore.Codecs.FLAC.FlacMetadata)
+  name.vb: Synchronized(Of FlacMetadata, T)(FlacMetadata)
+  spec.csharp:
+  - uid: SilverCraft.CSCore.FluentExtensions.Synchronized``2(SilverCraft.CSCore.Codecs.FLAC.FlacMetadata)
+    name: Synchronized
+    href: SilverCraft.CSCore.FluentExtensions.html#SilverCraft_CSCore_FluentExtensions_Synchronized__2___0_
+  - name: <
+  - uid: SilverCraft.CSCore.Codecs.FLAC.FlacMetadata
+    name: FlacMetadata
+    href: SilverCraft.CSCore.Codecs.FLAC.FlacMetadata.html
+  - name: ','
+  - name: " "
+  - name: T
+  - name: '>'
+  - name: (
+  - uid: SilverCraft.CSCore.Codecs.FLAC.FlacMetadata
+    name: FlacMetadata
+    href: SilverCraft.CSCore.Codecs.FLAC.FlacMetadata.html
+  - name: )
+  spec.vb:
+  - uid: SilverCraft.CSCore.FluentExtensions.Synchronized``2(SilverCraft.CSCore.Codecs.FLAC.FlacMetadata)
+    name: Synchronized
+    href: SilverCraft.CSCore.FluentExtensions.html#SilverCraft_CSCore_FluentExtensions_Synchronized__2___0_
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: SilverCraft.CSCore.Codecs.FLAC.FlacMetadata
+    name: FlacMetadata
+    href: SilverCraft.CSCore.Codecs.FLAC.FlacMetadata.html
+  - name: ','
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: SilverCraft.CSCore.Codecs.FLAC.FlacMetadata
+    name: FlacMetadata
+    href: SilverCraft.CSCore.Codecs.FLAC.FlacMetadata.html
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: SilverCraft.CSCore.FluentExtensions.Synchronized``2(``0)
+  commentId: M:SilverCraft.CSCore.FluentExtensions.Synchronized``2(``0)
+  href: SilverCraft.CSCore.FluentExtensions.html#SilverCraft_CSCore_FluentExtensions_Synchronized__2___0_
+  name: Synchronized<TAudioSource, T>(TAudioSource)
+  nameWithType: FluentExtensions.Synchronized<TAudioSource, T>(TAudioSource)
+  fullName: SilverCraft.CSCore.FluentExtensions.Synchronized<TAudioSource, T>(TAudioSource)
+  nameWithType.vb: FluentExtensions.Synchronized(Of TAudioSource, T)(TAudioSource)
+  fullName.vb: SilverCraft.CSCore.FluentExtensions.Synchronized(Of TAudioSource, T)(TAudioSource)
+  name.vb: Synchronized(Of TAudioSource, T)(TAudioSource)
+  spec.csharp:
+  - uid: SilverCraft.CSCore.FluentExtensions.Synchronized``2(``0)
+    name: Synchronized
+    href: SilverCraft.CSCore.FluentExtensions.html#SilverCraft_CSCore_FluentExtensions_Synchronized__2___0_
+  - name: <
+  - name: TAudioSource
+  - name: ','
+  - name: " "
+  - name: T
+  - name: '>'
+  - name: (
+  - name: TAudioSource
+  - name: )
+  spec.vb:
+  - uid: SilverCraft.CSCore.FluentExtensions.Synchronized``2(``0)
+    name: Synchronized
+    href: SilverCraft.CSCore.FluentExtensions.html#SilverCraft_CSCore_FluentExtensions_Synchronized__2___0_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TAudioSource
+  - name: ','
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - name: TAudioSource
+  - name: )
+- uid: SilverCraft.CSCore.FluentExtensions
+  commentId: T:SilverCraft.CSCore.FluentExtensions
+  parent: SilverCraft.CSCore
+  href: SilverCraft.CSCore.FluentExtensions.html
+  name: FluentExtensions
+  nameWithType: FluentExtensions
+  fullName: SilverCraft.CSCore.FluentExtensions
+- uid: SilverCraft.CSCore
+  commentId: N:SilverCraft.CSCore
+  href: SilverCraft.html
+  name: SilverCraft.CSCore
+  nameWithType: SilverCraft.CSCore
+  fullName: SilverCraft.CSCore
+  spec.csharp:
+  - uid: SilverCraft
+    name: SilverCraft
+    href: SilverCraft.html
+  - name: .
+  - uid: SilverCraft.CSCore
+    name: CSCore
+    href: SilverCraft.CSCore.html
+  spec.vb:
+  - uid: SilverCraft
+    name: SilverCraft
+    href: SilverCraft.html
+  - name: .
+  - uid: SilverCraft.CSCore
+    name: CSCore
+    href: SilverCraft.CSCore.html
+- uid: SilverCraft.CSCore.Codecs.FLAC.FlacMetadata
+  commentId: T:SilverCraft.CSCore.Codecs.FLAC.FlacMetadata
+  parent: SilverCraft.CSCore.Codecs.FLAC
+  href: SilverCraft.CSCore.Codecs.FLAC.FlacMetadata.html
+  name: FlacMetadata
+  nameWithType: FlacMetadata
+  fullName: SilverCraft.CSCore.Codecs.FLAC.FlacMetadata
+- uid: SilverCraft.CSCore.Codecs.FLAC.FlacMetadata.FromStream*
+  commentId: Overload:SilverCraft.CSCore.Codecs.FLAC.FlacMetadata.FromStream
+  href: SilverCraft.CSCore.Codecs.FLAC.FlacMetadata.html#SilverCraft_CSCore_Codecs_FLAC_FlacMetadata_FromStream_System_IO_Stream_
+  name: FromStream
+  nameWithType: FlacMetadata.FromStream
+  fullName: SilverCraft.CSCore.Codecs.FLAC.FlacMetadata.FromStream
+- uid: System.IO.Stream
+  commentId: T:System.IO.Stream
+  parent: System.IO
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.io.stream
+  name: Stream
+  nameWithType: Stream
+  fullName: System.IO.Stream
+- uid: System.IO
+  commentId: N:System.IO
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.IO
+  nameWithType: System.IO
+  fullName: System.IO
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.IO
+    name: IO
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.io
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.IO
+    name: IO
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.io
+- uid: SilverCraft.CSCore.Codecs.FLAC.FlacMetadata.ReadAllMetadataFromStream*
+  commentId: Overload:SilverCraft.CSCore.Codecs.FLAC.FlacMetadata.ReadAllMetadataFromStream
+  href: SilverCraft.CSCore.Codecs.FLAC.FlacMetadata.html#SilverCraft_CSCore_Codecs_FLAC_FlacMetadata_ReadAllMetadataFromStream_System_IO_Stream_
+  name: ReadAllMetadataFromStream
+  nameWithType: FlacMetadata.ReadAllMetadataFromStream
+  fullName: SilverCraft.CSCore.Codecs.FLAC.FlacMetadata.ReadAllMetadataFromStream
+- uid: System.Collections.Generic.IEnumerable{SilverCraft.CSCore.Codecs.FLAC.FlacMetadata}
+  commentId: T:System.Collections.Generic.IEnumerable{SilverCraft.CSCore.Codecs.FLAC.FlacMetadata}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<FlacMetadata>
+  nameWithType: IEnumerable<FlacMetadata>
+  fullName: System.Collections.Generic.IEnumerable<SilverCraft.CSCore.Codecs.FLAC.FlacMetadata>
+  nameWithType.vb: IEnumerable(Of FlacMetadata)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of SilverCraft.CSCore.Codecs.FLAC.FlacMetadata)
+  name.vb: IEnumerable(Of FlacMetadata)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - uid: SilverCraft.CSCore.Codecs.FLAC.FlacMetadata
+    name: FlacMetadata
+    href: SilverCraft.CSCore.Codecs.FLAC.FlacMetadata.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: SilverCraft.CSCore.Codecs.FLAC.FlacMetadata
+    name: FlacMetadata
+    href: SilverCraft.CSCore.Codecs.FLAC.FlacMetadata.html
+  - name: )
+- uid: System.Collections.Generic.IEnumerable`1
+  commentId: T:System.Collections.Generic.IEnumerable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<T>
+  nameWithType: IEnumerable<T>
+  fullName: System.Collections.Generic.IEnumerable<T>
+  nameWithType.vb: IEnumerable(Of T)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T)
+  name.vb: IEnumerable(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: SilverCraft.CSCore.Codecs.FLAC.FlacMetadata.SkipMetadata*
+  commentId: Overload:SilverCraft.CSCore.Codecs.FLAC.FlacMetadata.SkipMetadata
+  href: SilverCraft.CSCore.Codecs.FLAC.FlacMetadata.html#SilverCraft_CSCore_Codecs_FLAC_FlacMetadata_SkipMetadata_System_IO_Stream_
+  name: SkipMetadata
+  nameWithType: FlacMetadata.SkipMetadata
+  fullName: SilverCraft.CSCore.Codecs.FLAC.FlacMetadata.SkipMetadata
+- uid: SilverCraft.CSCore.Codecs.FLAC.FlacMetadata.Initialize*
+  commentId: Overload:SilverCraft.CSCore.Codecs.FLAC.FlacMetadata.Initialize
+  href: SilverCraft.CSCore.Codecs.FLAC.FlacMetadata.html#SilverCraft_CSCore_Codecs_FLAC_FlacMetadata_Initialize_System_IO_Stream_System_Int32_System_Boolean_
+  name: Initialize
+  nameWithType: FlacMetadata.Initialize
+  fullName: SilverCraft.CSCore.Codecs.FLAC.FlacMetadata.Initialize
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: SilverCraft.CSCore.Codecs.FLAC.FlacMetadata.InitializeByStream*
+  commentId: Overload:SilverCraft.CSCore.Codecs.FLAC.FlacMetadata.InitializeByStream
+  href: SilverCraft.CSCore.Codecs.FLAC.FlacMetadata.html#SilverCraft_CSCore_Codecs_FLAC_FlacMetadata_InitializeByStream_System_IO_Stream_
+  name: InitializeByStream
+  nameWithType: FlacMetadata.InitializeByStream
+  fullName: SilverCraft.CSCore.Codecs.FLAC.FlacMetadata.InitializeByStream
+- uid: SilverCraft.CSCore.Codecs.FLAC.FlacMetadata.MetaDataType*
+  commentId: Overload:SilverCraft.CSCore.Codecs.FLAC.FlacMetadata.MetaDataType
+  href: SilverCraft.CSCore.Codecs.FLAC.FlacMetadata.html#SilverCraft_CSCore_Codecs_FLAC_FlacMetadata_MetaDataType
+  name: MetaDataType
+  nameWithType: FlacMetadata.MetaDataType
+  fullName: SilverCraft.CSCore.Codecs.FLAC.FlacMetadata.MetaDataType
+- uid: SilverCraft.CSCore.Codecs.FLAC.FlacMetaDataType
+  commentId: T:SilverCraft.CSCore.Codecs.FLAC.FlacMetaDataType
+  parent: SilverCraft.CSCore.Codecs.FLAC
+  href: SilverCraft.CSCore.Codecs.FLAC.FlacMetaDataType.html
+  name: FlacMetaDataType
+  nameWithType: FlacMetaDataType
+  fullName: SilverCraft.CSCore.Codecs.FLAC.FlacMetaDataType
+- uid: SilverCraft.CSCore.Codecs.FLAC.FlacMetadata.IsLastMetaBlock*
+  commentId: Overload:SilverCraft.CSCore.Codecs.FLAC.FlacMetadata.IsLastMetaBlock
+  href: SilverCraft.CSCore.Codecs.FLAC.FlacMetadata.html#SilverCraft_CSCore_Codecs_FLAC_FlacMetadata_IsLastMetaBlock
+  name: IsLastMetaBlock
+  nameWithType: FlacMetadata.IsLastMetaBlock
+  fullName: SilverCraft.CSCore.Codecs.FLAC.FlacMetadata.IsLastMetaBlock
+- uid: SilverCraft.CSCore.Codecs.FLAC.FlacMetadata.Length*
+  commentId: Overload:SilverCraft.CSCore.Codecs.FLAC.FlacMetadata.Length
+  href: SilverCraft.CSCore.Codecs.FLAC.FlacMetadata.html#SilverCraft_CSCore_Codecs_FLAC_FlacMetadata_Length
+  name: Length
+  nameWithType: FlacMetadata.Length
+  fullName: SilverCraft.CSCore.Codecs.FLAC.FlacMetadata.Length

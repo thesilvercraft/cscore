@@ -1,0 +1,2188 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class NativeMethods | SilverCraft.CSCore </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class NativeMethods | SilverCraft.CSCore ">
+      
+      
+      <link rel="icon" href="../images/cscore-square-notext.svg">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/thesilvercraft/cscore/new/master/apiSpec/new?filename=SilverCraft_CSCore_PortAudio_Native_NativeMethods.md&amp;value=---%0Auid%3A%20SilverCraft.CSCore.PortAudio.Native.NativeMethods%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../images/cscore-square-notext.svg" alt="SilverCraft.CSCore">
+            SilverCraft.CSCore
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="SilverCraft.CSCore.PortAudio.Native.NativeMethods">
+
+
+
+  <h1 id="SilverCraft_CSCore_PortAudio_Native_NativeMethods" data-uid="SilverCraft.CSCore.PortAudio.Native.NativeMethods" class="text-break">
+Class NativeMethods  <a class="header-action link-secondary" title="View source" href="https://github.com/thesilvercraft/cscore/blob/master/SilverCraft.CSCore.PortAudio/Native/NativeMethods.cs/#L22"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="SilverCraft.html">SilverCraft</a>.<a class="xref" href="SilverCraft.CSCore.html">CSCore</a>.<a class="xref" href="SilverCraft.CSCore.PortAudio.html">PortAudio</a>.<a class="xref" href="SilverCraft.CSCore.PortAudio.Native.html">Native</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>SilverCraft.CSCore.PortAudio.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static class NativeMethods</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">NativeMethods</span></div>
+    </dd>
+  </dl>
+
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="fields">Fields
+</h2>
+
+
+
+  <h3 id="SilverCraft_CSCore_PortAudio_Native_NativeMethods_dllName" data-uid="SilverCraft.CSCore.PortAudio.Native.NativeMethods.dllName">
+  dllName
+  <a class="header-action link-secondary" title="View source" href="https://github.com/thesilvercraft/cscore/blob/master/SilverCraft.CSCore.PortAudio/Native/NativeMethods.cs/#L24"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string dllName = &quot;libportaudio.so.2&quot;</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="SilverCraft_CSCore_PortAudio_Native_NativeMethods_paClipOff" data-uid="SilverCraft.CSCore.PortAudio.Native.NativeMethods.paClipOff">
+  paClipOff
+  <a class="header-action link-secondary" title="View source" href="https://github.com/thesilvercraft/cscore/blob/master/SilverCraft.CSCore.PortAudio/Native/NativeMethods.cs/#L207"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const nuint paClipOff = 1</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uintptr">nuint</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="SilverCraft_CSCore_PortAudio_Native_NativeMethods_paCustomFormat" data-uid="SilverCraft.CSCore.PortAudio.Native.NativeMethods.paCustomFormat">
+  paCustomFormat
+  <a class="header-action link-secondary" title="View source" href="https://github.com/thesilvercraft/cscore/blob/master/SilverCraft.CSCore.PortAudio/Native/NativeMethods.cs/#L192"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const nuint paCustomFormat = 65536</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uintptr">nuint</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="SilverCraft_CSCore_PortAudio_Native_NativeMethods_paDitherOff" data-uid="SilverCraft.CSCore.PortAudio.Native.NativeMethods.paDitherOff">
+  paDitherOff
+  <a class="header-action link-secondary" title="View source" href="https://github.com/thesilvercraft/cscore/blob/master/SilverCraft.CSCore.PortAudio/Native/NativeMethods.cs/#L210"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const nuint paDitherOff = 2</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uintptr">nuint</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="SilverCraft_CSCore_PortAudio_Native_NativeMethods_paFloat32" data-uid="SilverCraft.CSCore.PortAudio.Native.NativeMethods.paFloat32">
+  paFloat32
+  <a class="header-action link-secondary" title="View source" href="https://github.com/thesilvercraft/cscore/blob/master/SilverCraft.CSCore.PortAudio/Native/NativeMethods.cs/#L174"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const nuint paFloat32 = 1</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uintptr">nuint</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="SilverCraft_CSCore_PortAudio_Native_NativeMethods_paFormatIsSupported" data-uid="SilverCraft.CSCore.PortAudio.Native.NativeMethods.paFormatIsSupported">
+  paFormatIsSupported
+  <a class="header-action link-secondary" title="View source" href="https://github.com/thesilvercraft/cscore/blob/master/SilverCraft.CSCore.PortAudio/Native/NativeMethods.cs/#L198"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int paFormatIsSupported = 0</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="SilverCraft_CSCore_PortAudio_Native_NativeMethods_paFramesPerBufferUnspecified" data-uid="SilverCraft.CSCore.PortAudio.Native.NativeMethods.paFramesPerBufferUnspecified">
+  paFramesPerBufferUnspecified
+  <a class="header-action link-secondary" title="View source" href="https://github.com/thesilvercraft/cscore/blob/master/SilverCraft.CSCore.PortAudio/Native/NativeMethods.cs/#L201"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int paFramesPerBufferUnspecified = 0</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="SilverCraft_CSCore_PortAudio_Native_NativeMethods_paInputOverflow" data-uid="SilverCraft.CSCore.PortAudio.Native.NativeMethods.paInputOverflow">
+  paInputOverflow
+  <a class="header-action link-secondary" title="View source" href="https://github.com/thesilvercraft/cscore/blob/master/SilverCraft.CSCore.PortAudio/Native/NativeMethods.cs/#L225"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const nuint paInputOverflow = 2</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uintptr">nuint</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="SilverCraft_CSCore_PortAudio_Native_NativeMethods_paInputUnderflow" data-uid="SilverCraft.CSCore.PortAudio.Native.NativeMethods.paInputUnderflow">
+  paInputUnderflow
+  <a class="header-action link-secondary" title="View source" href="https://github.com/thesilvercraft/cscore/blob/master/SilverCraft.CSCore.PortAudio/Native/NativeMethods.cs/#L222"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const nuint paInputUnderflow = 1</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uintptr">nuint</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="SilverCraft_CSCore_PortAudio_Native_NativeMethods_paInt16" data-uid="SilverCraft.CSCore.PortAudio.Native.NativeMethods.paInt16">
+  paInt16
+  <a class="header-action link-secondary" title="View source" href="https://github.com/thesilvercraft/cscore/blob/master/SilverCraft.CSCore.PortAudio/Native/NativeMethods.cs/#L183"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const nuint paInt16 = 8</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uintptr">nuint</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="SilverCraft_CSCore_PortAudio_Native_NativeMethods_paInt24" data-uid="SilverCraft.CSCore.PortAudio.Native.NativeMethods.paInt24">
+  paInt24
+  <a class="header-action link-secondary" title="View source" href="https://github.com/thesilvercraft/cscore/blob/master/SilverCraft.CSCore.PortAudio/Native/NativeMethods.cs/#L180"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const nuint paInt24 = 4</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uintptr">nuint</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="SilverCraft_CSCore_PortAudio_Native_NativeMethods_paInt32" data-uid="SilverCraft.CSCore.PortAudio.Native.NativeMethods.paInt32">
+  paInt32
+  <a class="header-action link-secondary" title="View source" href="https://github.com/thesilvercraft/cscore/blob/master/SilverCraft.CSCore.PortAudio/Native/NativeMethods.cs/#L177"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const nuint paInt32 = 2</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uintptr">nuint</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="SilverCraft_CSCore_PortAudio_Native_NativeMethods_paInt8" data-uid="SilverCraft.CSCore.PortAudio.Native.NativeMethods.paInt8">
+  paInt8
+  <a class="header-action link-secondary" title="View source" href="https://github.com/thesilvercraft/cscore/blob/master/SilverCraft.CSCore.PortAudio/Native/NativeMethods.cs/#L186"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const nuint paInt8 = 16</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uintptr">nuint</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="SilverCraft_CSCore_PortAudio_Native_NativeMethods_paNeverDropInput" data-uid="SilverCraft.CSCore.PortAudio.Native.NativeMethods.paNeverDropInput">
+  paNeverDropInput
+  <a class="header-action link-secondary" title="View source" href="https://github.com/thesilvercraft/cscore/blob/master/SilverCraft.CSCore.PortAudio/Native/NativeMethods.cs/#L213"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const nuint paNeverDropInput = 4</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uintptr">nuint</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="SilverCraft_CSCore_PortAudio_Native_NativeMethods_paNoDevice" data-uid="SilverCraft.CSCore.PortAudio.Native.NativeMethods.paNoDevice">
+  paNoDevice
+  <a class="header-action link-secondary" title="View source" href="https://github.com/thesilvercraft/cscore/blob/master/SilverCraft.CSCore.PortAudio/Native/NativeMethods.cs/#L168"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int paNoDevice = -1</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="SilverCraft_CSCore_PortAudio_Native_NativeMethods_paNoFlag" data-uid="SilverCraft.CSCore.PortAudio.Native.NativeMethods.paNoFlag">
+  paNoFlag
+  <a class="header-action link-secondary" title="View source" href="https://github.com/thesilvercraft/cscore/blob/master/SilverCraft.CSCore.PortAudio/Native/NativeMethods.cs/#L204"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const nuint paNoFlag = 0</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uintptr">nuint</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="SilverCraft_CSCore_PortAudio_Native_NativeMethods_paNonInterleaved" data-uid="SilverCraft.CSCore.PortAudio.Native.NativeMethods.paNonInterleaved">
+  paNonInterleaved
+  <a class="header-action link-secondary" title="View source" href="https://github.com/thesilvercraft/cscore/blob/master/SilverCraft.CSCore.PortAudio/Native/NativeMethods.cs/#L195"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const nuint paNonInterleaved = 2147483648</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uintptr">nuint</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="SilverCraft_CSCore_PortAudio_Native_NativeMethods_paOutputOverflow" data-uid="SilverCraft.CSCore.PortAudio.Native.NativeMethods.paOutputOverflow">
+  paOutputOverflow
+  <a class="header-action link-secondary" title="View source" href="https://github.com/thesilvercraft/cscore/blob/master/SilverCraft.CSCore.PortAudio/Native/NativeMethods.cs/#L231"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const nuint paOutputOverflow = 8</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uintptr">nuint</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="SilverCraft_CSCore_PortAudio_Native_NativeMethods_paOutputUnderflow" data-uid="SilverCraft.CSCore.PortAudio.Native.NativeMethods.paOutputUnderflow">
+  paOutputUnderflow
+  <a class="header-action link-secondary" title="View source" href="https://github.com/thesilvercraft/cscore/blob/master/SilverCraft.CSCore.PortAudio/Native/NativeMethods.cs/#L228"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const nuint paOutputUnderflow = 4</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uintptr">nuint</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="SilverCraft_CSCore_PortAudio_Native_NativeMethods_paPlatformSpecificFlags" data-uid="SilverCraft.CSCore.PortAudio.Native.NativeMethods.paPlatformSpecificFlags">
+  paPlatformSpecificFlags
+  <a class="header-action link-secondary" title="View source" href="https://github.com/thesilvercraft/cscore/blob/master/SilverCraft.CSCore.PortAudio/Native/NativeMethods.cs/#L219"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const nuint paPlatformSpecificFlags = 4294901760</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uintptr">nuint</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="SilverCraft_CSCore_PortAudio_Native_NativeMethods_paPrimeOutputBuffersUsingStreamCallback" data-uid="SilverCraft.CSCore.PortAudio.Native.NativeMethods.paPrimeOutputBuffersUsingStreamCallback">
+  paPrimeOutputBuffersUsingStreamCallback
+  <a class="header-action link-secondary" title="View source" href="https://github.com/thesilvercraft/cscore/blob/master/SilverCraft.CSCore.PortAudio/Native/NativeMethods.cs/#L216"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const nuint paPrimeOutputBuffersUsingStreamCallback = 8</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uintptr">nuint</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="SilverCraft_CSCore_PortAudio_Native_NativeMethods_paPrimingOutput" data-uid="SilverCraft.CSCore.PortAudio.Native.NativeMethods.paPrimingOutput">
+  paPrimingOutput
+  <a class="header-action link-secondary" title="View source" href="https://github.com/thesilvercraft/cscore/blob/master/SilverCraft.CSCore.PortAudio/Native/NativeMethods.cs/#L234"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const nuint paPrimingOutput = 16</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uintptr">nuint</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="SilverCraft_CSCore_PortAudio_Native_NativeMethods_paUInt8" data-uid="SilverCraft.CSCore.PortAudio.Native.NativeMethods.paUInt8">
+  paUInt8
+  <a class="header-action link-secondary" title="View source" href="https://github.com/thesilvercraft/cscore/blob/master/SilverCraft.CSCore.PortAudio/Native/NativeMethods.cs/#L189"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const nuint paUInt8 = 32</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uintptr">nuint</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="SilverCraft_CSCore_PortAudio_Native_NativeMethods_paUseHostApiSpecificDeviceSpecification" data-uid="SilverCraft.CSCore.PortAudio.Native.NativeMethods.paUseHostApiSpecificDeviceSpecification">
+  paUseHostApiSpecificDeviceSpecification
+  <a class="header-action link-secondary" title="View source" href="https://github.com/thesilvercraft/cscore/blob/master/SilverCraft.CSCore.PortAudio/Native/NativeMethods.cs/#L171"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int paUseHostApiSpecificDeviceSpecification = -2</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="SilverCraft_CSCore_PortAudio_Native_NativeMethods_DllImportResolver_" data-uid="SilverCraft.CSCore.PortAudio.Native.NativeMethods.DllImportResolver*"></a>
+
+  <h3 id="SilverCraft_CSCore_PortAudio_Native_NativeMethods_DllImportResolver_System_String_System_Reflection_Assembly_System_Nullable_System_Runtime_InteropServices_DllImportSearchPath__" data-uid="SilverCraft.CSCore.PortAudio.Native.NativeMethods.DllImportResolver(System.String,System.Reflection.Assembly,System.Nullable{System.Runtime.InteropServices.DllImportSearchPath})">
+  DllImportResolver(string, Assembly, DllImportSearchPath?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/thesilvercraft/cscore/blob/master/SilverCraft.CSCore.PortAudio/Native/NativeMethods.cs/#L25"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static nint DllImportResolver(string libraryName, Assembly assembly, DllImportSearchPath? searchPath)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>libraryName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>assembly</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.reflection.assembly">Assembly</a></dt>
+    <dd></dd>
+    <dt><code>searchPath</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.runtime.interopservices.dllimportsearchpath">DllImportSearchPath</a>?</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SilverCraft_CSCore_PortAudio_Native_NativeMethods_Pa_AbortStream_" data-uid="SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_AbortStream*"></a>
+
+  <h3 id="SilverCraft_CSCore_PortAudio_Native_NativeMethods_Pa_AbortStream_System_Void__" data-uid="SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_AbortStream(System.Void*)">
+  Pa_AbortStream(void*)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static extern int Pa_AbortStream(void* stream)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>stream</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.void">void</a>*</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SilverCraft_CSCore_PortAudio_Native_NativeMethods_Pa_CloseStream_" data-uid="SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_CloseStream*"></a>
+
+  <h3 id="SilverCraft_CSCore_PortAudio_Native_NativeMethods_Pa_CloseStream_SilverCraft_CSCore_PortAudio_Native_PaStream__" data-uid="SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_CloseStream(SilverCraft.CSCore.PortAudio.Native.PaStream*)">
+  Pa_CloseStream(PaStream*)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static extern int Pa_CloseStream(PaStream* stream)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>stream</code> <a class="xref" href="SilverCraft.CSCore.PortAudio.Native.PaStream.html">PaStream</a>*</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SilverCraft_CSCore_PortAudio_Native_NativeMethods_Pa_GetDefaultHostApi_" data-uid="SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_GetDefaultHostApi*"></a>
+
+  <h3 id="SilverCraft_CSCore_PortAudio_Native_NativeMethods_Pa_GetDefaultHostApi" data-uid="SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_GetDefaultHostApi">
+  Pa_GetDefaultHostApi()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static extern int Pa_GetDefaultHostApi()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SilverCraft_CSCore_PortAudio_Native_NativeMethods_Pa_GetDefaultInputDevice_" data-uid="SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_GetDefaultInputDevice*"></a>
+
+  <h3 id="SilverCraft_CSCore_PortAudio_Native_NativeMethods_Pa_GetDefaultInputDevice" data-uid="SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_GetDefaultInputDevice">
+  Pa_GetDefaultInputDevice()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static extern int Pa_GetDefaultInputDevice()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SilverCraft_CSCore_PortAudio_Native_NativeMethods_Pa_GetDefaultOutputDevice_" data-uid="SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_GetDefaultOutputDevice*"></a>
+
+  <h3 id="SilverCraft_CSCore_PortAudio_Native_NativeMethods_Pa_GetDefaultOutputDevice" data-uid="SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_GetDefaultOutputDevice">
+  Pa_GetDefaultOutputDevice()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static extern int Pa_GetDefaultOutputDevice()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SilverCraft_CSCore_PortAudio_Native_NativeMethods_Pa_GetDeviceCount_" data-uid="SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_GetDeviceCount*"></a>
+
+  <h3 id="SilverCraft_CSCore_PortAudio_Native_NativeMethods_Pa_GetDeviceCount" data-uid="SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_GetDeviceCount">
+  Pa_GetDeviceCount()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static extern int Pa_GetDeviceCount()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SilverCraft_CSCore_PortAudio_Native_NativeMethods_Pa_GetDeviceInfo_" data-uid="SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_GetDeviceInfo*"></a>
+
+  <h3 id="SilverCraft_CSCore_PortAudio_Native_NativeMethods_Pa_GetDeviceInfo_System_Int32_" data-uid="SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_GetDeviceInfo(System.Int32)">
+  Pa_GetDeviceInfo(int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static extern PaDeviceInfo* Pa_GetDeviceInfo(int device)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>device</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="SilverCraft.CSCore.PortAudio.Native.PaDeviceInfo.html">PaDeviceInfo</a>*</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SilverCraft_CSCore_PortAudio_Native_NativeMethods_Pa_GetErrorText_" data-uid="SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_GetErrorText*"></a>
+
+  <h3 id="SilverCraft_CSCore_PortAudio_Native_NativeMethods_Pa_GetErrorText_System_Int32_" data-uid="SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_GetErrorText(System.Int32)">
+  Pa_GetErrorText(int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static extern char* Pa_GetErrorText(int errorCode)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>errorCode</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.char">char</a>*</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SilverCraft_CSCore_PortAudio_Native_NativeMethods_Pa_GetHostApiCount_" data-uid="SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_GetHostApiCount*"></a>
+
+  <h3 id="SilverCraft_CSCore_PortAudio_Native_NativeMethods_Pa_GetHostApiCount" data-uid="SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_GetHostApiCount">
+  Pa_GetHostApiCount()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static extern int Pa_GetHostApiCount()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SilverCraft_CSCore_PortAudio_Native_NativeMethods_Pa_GetHostApiInfo_" data-uid="SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_GetHostApiInfo*"></a>
+
+  <h3 id="SilverCraft_CSCore_PortAudio_Native_NativeMethods_Pa_GetHostApiInfo_System_Int32_" data-uid="SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_GetHostApiInfo(System.Int32)">
+  Pa_GetHostApiInfo(int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static extern PaHostApiInfo* Pa_GetHostApiInfo(int hostApi)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>hostApi</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="SilverCraft.CSCore.PortAudio.Native.PaHostApiInfo.html">PaHostApiInfo</a>*</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SilverCraft_CSCore_PortAudio_Native_NativeMethods_Pa_GetLastHostErrorInfo_" data-uid="SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_GetLastHostErrorInfo*"></a>
+
+  <h3 id="SilverCraft_CSCore_PortAudio_Native_NativeMethods_Pa_GetLastHostErrorInfo" data-uid="SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_GetLastHostErrorInfo">
+  Pa_GetLastHostErrorInfo()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static extern PaHostErrorInfo* Pa_GetLastHostErrorInfo()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="SilverCraft.CSCore.PortAudio.Native.PaHostErrorInfo.html">PaHostErrorInfo</a>*</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SilverCraft_CSCore_PortAudio_Native_NativeMethods_Pa_GetSampleSize_" data-uid="SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_GetSampleSize*"></a>
+
+  <h3 id="SilverCraft_CSCore_PortAudio_Native_NativeMethods_Pa_GetSampleSize_System_UIntPtr_" data-uid="SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_GetSampleSize(System.UIntPtr)">
+  Pa_GetSampleSize(nuint)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static extern int Pa_GetSampleSize(nuint format)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>format</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uintptr">nuint</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SilverCraft_CSCore_PortAudio_Native_NativeMethods_Pa_GetStreamCpuLoad_" data-uid="SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_GetStreamCpuLoad*"></a>
+
+  <h3 id="SilverCraft_CSCore_PortAudio_Native_NativeMethods_Pa_GetStreamCpuLoad_System_Void__" data-uid="SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_GetStreamCpuLoad(System.Void*)">
+  Pa_GetStreamCpuLoad(void*)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static extern double Pa_GetStreamCpuLoad(void* stream)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>stream</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.void">void</a>*</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SilverCraft_CSCore_PortAudio_Native_NativeMethods_Pa_GetStreamInfo_" data-uid="SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_GetStreamInfo*"></a>
+
+  <h3 id="SilverCraft_CSCore_PortAudio_Native_NativeMethods_Pa_GetStreamInfo_System_Void__" data-uid="SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_GetStreamInfo(System.Void*)">
+  Pa_GetStreamInfo(void*)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static extern PaStreamInfo* Pa_GetStreamInfo(void* stream)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>stream</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.void">void</a>*</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="SilverCraft.CSCore.PortAudio.Native.PaStreamInfo.html">PaStreamInfo</a>*</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SilverCraft_CSCore_PortAudio_Native_NativeMethods_Pa_GetStreamReadAvailable_" data-uid="SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_GetStreamReadAvailable*"></a>
+
+  <h3 id="SilverCraft_CSCore_PortAudio_Native_NativeMethods_Pa_GetStreamReadAvailable_System_Void__" data-uid="SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_GetStreamReadAvailable(System.Void*)">
+  Pa_GetStreamReadAvailable(void*)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static extern nint Pa_GetStreamReadAvailable(void* stream)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>stream</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.void">void</a>*</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SilverCraft_CSCore_PortAudio_Native_NativeMethods_Pa_GetStreamTime_" data-uid="SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_GetStreamTime*"></a>
+
+  <h3 id="SilverCraft_CSCore_PortAudio_Native_NativeMethods_Pa_GetStreamTime_System_Void__" data-uid="SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_GetStreamTime(System.Void*)">
+  Pa_GetStreamTime(void*)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static extern double Pa_GetStreamTime(void* stream)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>stream</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.void">void</a>*</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SilverCraft_CSCore_PortAudio_Native_NativeMethods_Pa_GetStreamWriteAvailable_" data-uid="SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_GetStreamWriteAvailable*"></a>
+
+  <h3 id="SilverCraft_CSCore_PortAudio_Native_NativeMethods_Pa_GetStreamWriteAvailable_System_Void__" data-uid="SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_GetStreamWriteAvailable(System.Void*)">
+  Pa_GetStreamWriteAvailable(void*)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static extern nint Pa_GetStreamWriteAvailable(void* stream)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>stream</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.void">void</a>*</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SilverCraft_CSCore_PortAudio_Native_NativeMethods_Pa_GetVersion_" data-uid="SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_GetVersion*"></a>
+
+  <h3 id="SilverCraft_CSCore_PortAudio_Native_NativeMethods_Pa_GetVersion" data-uid="SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_GetVersion">
+  Pa_GetVersion()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static extern int Pa_GetVersion()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SilverCraft_CSCore_PortAudio_Native_NativeMethods_Pa_GetVersionInfo_" data-uid="SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_GetVersionInfo*"></a>
+
+  <h3 id="SilverCraft_CSCore_PortAudio_Native_NativeMethods_Pa_GetVersionInfo" data-uid="SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_GetVersionInfo">
+  Pa_GetVersionInfo()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static extern PaVersionInfo* Pa_GetVersionInfo()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="SilverCraft.CSCore.PortAudio.Native.PaVersionInfo.html">PaVersionInfo</a>*</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SilverCraft_CSCore_PortAudio_Native_NativeMethods_Pa_GetVersionText_" data-uid="SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_GetVersionText*"></a>
+
+  <h3 id="SilverCraft_CSCore_PortAudio_Native_NativeMethods_Pa_GetVersionText" data-uid="SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_GetVersionText">
+  Pa_GetVersionText()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static extern sbyte* Pa_GetVersionText()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.sbyte">sbyte</a>*</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SilverCraft_CSCore_PortAudio_Native_NativeMethods_Pa_HostApiDeviceIndexToDeviceIndex_" data-uid="SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_HostApiDeviceIndexToDeviceIndex*"></a>
+
+  <h3 id="SilverCraft_CSCore_PortAudio_Native_NativeMethods_Pa_HostApiDeviceIndexToDeviceIndex_System_Int32_System_Int32_" data-uid="SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_HostApiDeviceIndexToDeviceIndex(System.Int32,System.Int32)">
+  Pa_HostApiDeviceIndexToDeviceIndex(int, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static extern int Pa_HostApiDeviceIndexToDeviceIndex(int hostApi, int hostApiDeviceIndex)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>hostApi</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>hostApiDeviceIndex</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SilverCraft_CSCore_PortAudio_Native_NativeMethods_Pa_HostApiTypeIdToHostApiIndex_" data-uid="SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_HostApiTypeIdToHostApiIndex*"></a>
+
+  <h3 id="SilverCraft_CSCore_PortAudio_Native_NativeMethods_Pa_HostApiTypeIdToHostApiIndex_SilverCraft_CSCore_PortAudio_Native_PaHostApiTypeId_" data-uid="SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_HostApiTypeIdToHostApiIndex(SilverCraft.CSCore.PortAudio.Native.PaHostApiTypeId)">
+  Pa_HostApiTypeIdToHostApiIndex(PaHostApiTypeId)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static extern int Pa_HostApiTypeIdToHostApiIndex(PaHostApiTypeId type)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>type</code> <a class="xref" href="SilverCraft.CSCore.PortAudio.Native.PaHostApiTypeId.html">PaHostApiTypeId</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SilverCraft_CSCore_PortAudio_Native_NativeMethods_Pa_Initialize_" data-uid="SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_Initialize*"></a>
+
+  <h3 id="SilverCraft_CSCore_PortAudio_Native_NativeMethods_Pa_Initialize" data-uid="SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_Initialize">
+  Pa_Initialize()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static extern int Pa_Initialize()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SilverCraft_CSCore_PortAudio_Native_NativeMethods_Pa_IsFormatSupported_" data-uid="SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_IsFormatSupported*"></a>
+
+  <h3 id="SilverCraft_CSCore_PortAudio_Native_NativeMethods_Pa_IsFormatSupported_SilverCraft_CSCore_PortAudio_Native_PaStreamParameters__SilverCraft_CSCore_PortAudio_Native_PaStreamParameters__System_Double_" data-uid="SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_IsFormatSupported(SilverCraft.CSCore.PortAudio.Native.PaStreamParameters*,SilverCraft.CSCore.PortAudio.Native.PaStreamParameters*,System.Double)">
+  Pa_IsFormatSupported(PaStreamParameters*, PaStreamParameters*, double)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static extern int Pa_IsFormatSupported(PaStreamParameters* inputParameters, PaStreamParameters* outputParameters, double sampleRate)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>inputParameters</code> <a class="xref" href="SilverCraft.CSCore.PortAudio.Native.PaStreamParameters.html">PaStreamParameters</a>*</dt>
+    <dd></dd>
+    <dt><code>outputParameters</code> <a class="xref" href="SilverCraft.CSCore.PortAudio.Native.PaStreamParameters.html">PaStreamParameters</a>*</dt>
+    <dd></dd>
+    <dt><code>sampleRate</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SilverCraft_CSCore_PortAudio_Native_NativeMethods_Pa_IsStreamActive_" data-uid="SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_IsStreamActive*"></a>
+
+  <h3 id="SilverCraft_CSCore_PortAudio_Native_NativeMethods_Pa_IsStreamActive_System_Void__" data-uid="SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_IsStreamActive(System.Void*)">
+  Pa_IsStreamActive(void*)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static extern int Pa_IsStreamActive(void* stream)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>stream</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.void">void</a>*</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SilverCraft_CSCore_PortAudio_Native_NativeMethods_Pa_IsStreamStopped_" data-uid="SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_IsStreamStopped*"></a>
+
+  <h3 id="SilverCraft_CSCore_PortAudio_Native_NativeMethods_Pa_IsStreamStopped_System_Void__" data-uid="SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_IsStreamStopped(System.Void*)">
+  Pa_IsStreamStopped(void*)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static extern int Pa_IsStreamStopped(void* stream)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>stream</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.void">void</a>*</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SilverCraft_CSCore_PortAudio_Native_NativeMethods_Pa_OpenDefaultStream_" data-uid="SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_OpenDefaultStream*"></a>
+
+  <h3 id="SilverCraft_CSCore_PortAudio_Native_NativeMethods_Pa_OpenDefaultStream_SilverCraft_CSCore_PortAudio_Native_PaStream___System_Int32_System_Int32_System_UIntPtr_System_Double_System_UIntPtr_SilverCraft_CSCore_PortAudio_StreamCallBack_System_IntPtr_" data-uid="SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_OpenDefaultStream(SilverCraft.CSCore.PortAudio.Native.PaStream**,System.Int32,System.Int32,System.UIntPtr,System.Double,System.UIntPtr,SilverCraft.CSCore.PortAudio.StreamCallBack,System.IntPtr)">
+  Pa_OpenDefaultStream(PaStream**, int, int, nuint, double, nuint, StreamCallBack, nint)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static extern int Pa_OpenDefaultStream(PaStream** stream, int numInputChannels, int numOutputChannels, nuint sampleFormat, double sampleRate, nuint framesPerBuffer, StreamCallBack streamCallback, nint userData)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>stream</code> <a class="xref" href="SilverCraft.CSCore.PortAudio.Native.PaStream.html">PaStream</a>**</dt>
+    <dd></dd>
+    <dt><code>numInputChannels</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>numOutputChannels</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>sampleFormat</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uintptr">nuint</a></dt>
+    <dd></dd>
+    <dt><code>sampleRate</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+    <dt><code>framesPerBuffer</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uintptr">nuint</a></dt>
+    <dd></dd>
+    <dt><code>streamCallback</code> <a class="xref" href="SilverCraft.CSCore.PortAudio.StreamCallBack.html">StreamCallBack</a></dt>
+    <dd></dd>
+    <dt><code>userData</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SilverCraft_CSCore_PortAudio_Native_NativeMethods_Pa_OpenStream_" data-uid="SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_OpenStream*"></a>
+
+  <h3 id="SilverCraft_CSCore_PortAudio_Native_NativeMethods_Pa_OpenStream_SilverCraft_CSCore_PortAudio_Native_PaStream___SilverCraft_CSCore_PortAudio_Native_PaStreamParameters__SilverCraft_CSCore_PortAudio_Native_PaStreamParameters__System_Double_System_UIntPtr_System_UIntPtr__System_Void__" data-uid="SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_OpenStream(SilverCraft.CSCore.PortAudio.Native.PaStream**,SilverCraft.CSCore.PortAudio.Native.PaStreamParameters*,SilverCraft.CSCore.PortAudio.Native.PaStreamParameters*,System.Double,System.UIntPtr,System.UIntPtr,,System.Void*)">
+  Pa_OpenStream(PaStream**, PaStreamParameters*, PaStreamParameters*, double, nuint, nuint, delegate* unmanaged[Cdecl]&lt;void*, void*, ulong, PaStreamCallbackTimeInfo*, nuint, void*, int&gt;, void*)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static extern int Pa_OpenStream(PaStream** stream, PaStreamParameters* inputParameters, PaStreamParameters* outputParameters, double sampleRate, nuint framesPerBuffer, nuint streamFlags, delegate* unmanaged[Cdecl]&lt;void*, void*, ulong, PaStreamCallbackTimeInfo*, nuint, void*, int&gt; streamCallback, void* userData)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>stream</code> <a class="xref" href="SilverCraft.CSCore.PortAudio.Native.PaStream.html">PaStream</a>**</dt>
+    <dd></dd>
+    <dt><code>inputParameters</code> <a class="xref" href="SilverCraft.CSCore.PortAudio.Native.PaStreamParameters.html">PaStreamParameters</a>*</dt>
+    <dd></dd>
+    <dt><code>outputParameters</code> <a class="xref" href="SilverCraft.CSCore.PortAudio.Native.PaStreamParameters.html">PaStreamParameters</a>*</dt>
+    <dd></dd>
+    <dt><code>sampleRate</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+    <dt><code>framesPerBuffer</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uintptr">nuint</a></dt>
+    <dd></dd>
+    <dt><code>streamFlags</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uintptr">nuint</a></dt>
+    <dd></dd>
+    <dt><code>streamCallback</code> delegate* unmanaged[<span class="xref">Cdecl</span>]&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.void">void</a>*, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.void">void</a>*, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint64">ulong</a>, <a class="xref" href="SilverCraft.CSCore.PortAudio.Native.PaStreamCallbackTimeInfo.html">PaStreamCallbackTimeInfo</a>*, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uintptr">nuint</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.void">void</a>*, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>&gt;</dt>
+    <dd></dd>
+    <dt><code>userData</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.void">void</a>*</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SilverCraft_CSCore_PortAudio_Native_NativeMethods_Pa_ReadStream_" data-uid="SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_ReadStream*"></a>
+
+  <h3 id="SilverCraft_CSCore_PortAudio_Native_NativeMethods_Pa_ReadStream_System_Void__System_Void__System_UIntPtr_" data-uid="SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_ReadStream(System.Void*,System.Void*,System.UIntPtr)">
+  Pa_ReadStream(void*, void*, nuint)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static extern int Pa_ReadStream(void* stream, void* buffer, nuint frames)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>stream</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.void">void</a>*</dt>
+    <dd></dd>
+    <dt><code>buffer</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.void">void</a>*</dt>
+    <dd></dd>
+    <dt><code>frames</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uintptr">nuint</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SilverCraft_CSCore_PortAudio_Native_NativeMethods_Pa_SetStreamFinishedCallback_" data-uid="SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_SetStreamFinishedCallback*"></a>
+
+  <h3 id="SilverCraft_CSCore_PortAudio_Native_NativeMethods_Pa_SetStreamFinishedCallback_SilverCraft_CSCore_PortAudio_Native_PaStream__SilverCraft_CSCore_PortAudio_PaStreamFinishedCallback_" data-uid="SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_SetStreamFinishedCallback(SilverCraft.CSCore.PortAudio.Native.PaStream*,SilverCraft.CSCore.PortAudio.PaStreamFinishedCallback)">
+  Pa_SetStreamFinishedCallback(PaStream*, PaStreamFinishedCallback)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static extern int Pa_SetStreamFinishedCallback(PaStream* stream, PaStreamFinishedCallback streamFinishedCallback)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>stream</code> <a class="xref" href="SilverCraft.CSCore.PortAudio.Native.PaStream.html">PaStream</a>*</dt>
+    <dd></dd>
+    <dt><code>streamFinishedCallback</code> <a class="xref" href="SilverCraft.CSCore.PortAudio.PaStreamFinishedCallback.html">PaStreamFinishedCallback</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SilverCraft_CSCore_PortAudio_Native_NativeMethods_Pa_Sleep_" data-uid="SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_Sleep*"></a>
+
+  <h3 id="SilverCraft_CSCore_PortAudio_Native_NativeMethods_Pa_Sleep_System_IntPtr_" data-uid="SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_Sleep(System.IntPtr)">
+  Pa_Sleep(nint)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static extern void Pa_Sleep(nint msec)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>msec</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SilverCraft_CSCore_PortAudio_Native_NativeMethods_Pa_StartStream_" data-uid="SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_StartStream*"></a>
+
+  <h3 id="SilverCraft_CSCore_PortAudio_Native_NativeMethods_Pa_StartStream_System_Void__" data-uid="SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_StartStream(System.Void*)">
+  Pa_StartStream(void*)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static extern int Pa_StartStream(void* stream)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>stream</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.void">void</a>*</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SilverCraft_CSCore_PortAudio_Native_NativeMethods_Pa_StopStream_" data-uid="SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_StopStream*"></a>
+
+  <h3 id="SilverCraft_CSCore_PortAudio_Native_NativeMethods_Pa_StopStream_System_Void__" data-uid="SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_StopStream(System.Void*)">
+  Pa_StopStream(void*)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static extern int Pa_StopStream(void* stream)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>stream</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.void">void</a>*</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SilverCraft_CSCore_PortAudio_Native_NativeMethods_Pa_Terminate_" data-uid="SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_Terminate*"></a>
+
+  <h3 id="SilverCraft_CSCore_PortAudio_Native_NativeMethods_Pa_Terminate" data-uid="SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_Terminate">
+  Pa_Terminate()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static extern int Pa_Terminate()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SilverCraft_CSCore_PortAudio_Native_NativeMethods_Pa_WriteStream_" data-uid="SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_WriteStream*"></a>
+
+  <h3 id="SilverCraft_CSCore_PortAudio_Native_NativeMethods_Pa_WriteStream_System_Void__System_Void__System_UIntPtr_" data-uid="SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_WriteStream(System.Void*,System.Void*,System.UIntPtr)">
+  Pa_WriteStream(void*, void*, nuint)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static extern int Pa_WriteStream(void* stream, void* buffer, nuint frames)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>stream</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.void">void</a>*</dt>
+    <dd></dd>
+    <dt><code>buffer</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.void">void</a>*</dt>
+    <dd></dd>
+    <dt><code>frames</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uintptr">nuint</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/thesilvercraft/cscore/blob/master/SilverCraft.CSCore.PortAudio/Native/NativeMethods.cs/#L22" class="edit-link">Edit this page</a>
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

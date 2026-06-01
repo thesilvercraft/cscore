@@ -1,0 +1,188 @@
+### YamlMime:ManagedReference
+items:
+- uid: SilverCraft.CSCore.Tags.ID3
+  commentId: N:SilverCraft.CSCore.Tags.ID3
+  id: SilverCraft.CSCore.Tags.ID3
+  children:
+  - SilverCraft.CSCore.Tags.ID3.ID3Exception
+  - SilverCraft.CSCore.Tags.ID3.ID3Genre
+  - SilverCraft.CSCore.Tags.ID3.ID3Version
+  - SilverCraft.CSCore.Tags.ID3.ID3v1
+  - SilverCraft.CSCore.Tags.ID3.ID3v2
+  - SilverCraft.CSCore.Tags.ID3.ID3v2ExtendedHeader
+  - SilverCraft.CSCore.Tags.ID3.ID3v2ExtendedHeaderFlags
+  - SilverCraft.CSCore.Tags.ID3.ID3v2Footer
+  - SilverCraft.CSCore.Tags.ID3.ID3v2Header
+  - SilverCraft.CSCore.Tags.ID3.ID3v2HeaderFlags
+  - SilverCraft.CSCore.Tags.ID3.ID3v2ImageEncodingRestriction
+  - SilverCraft.CSCore.Tags.ID3.ID3v2ImageSizeRestriction
+  - SilverCraft.CSCore.Tags.ID3.ID3v2QuickInfo
+  - SilverCraft.CSCore.Tags.ID3.ID3v2TagSizeRestriction
+  - SilverCraft.CSCore.Tags.ID3.ID3v2TextEncodingRestriction
+  - SilverCraft.CSCore.Tags.ID3.ID3v2TextFieldSizeRestriction
+  - SilverCraft.CSCore.Tags.ID3.UnsyncStream
+  langs:
+  - csharp
+  - vb
+  name: SilverCraft.CSCore.Tags.ID3
+  nameWithType: SilverCraft.CSCore.Tags.ID3
+  fullName: SilverCraft.CSCore.Tags.ID3
+  type: Namespace
+  assemblies:
+  - SilverCraft.CSCore
+references:
+- uid: SilverCraft.CSCore.Tags.ID3.ID3Exception
+  commentId: T:SilverCraft.CSCore.Tags.ID3.ID3Exception
+  href: SilverCraft.CSCore.Tags.ID3.ID3Exception.html
+  name: ID3Exception
+  nameWithType: ID3Exception
+  fullName: SilverCraft.CSCore.Tags.ID3.ID3Exception
+- uid: SilverCraft.CSCore.Tags.ID3.ID3Genre
+  commentId: T:SilverCraft.CSCore.Tags.ID3.ID3Genre
+  parent: SilverCraft.CSCore.Tags.ID3
+  href: SilverCraft.CSCore.Tags.ID3.ID3Genre.html
+  name: ID3Genre
+  nameWithType: ID3Genre
+  fullName: SilverCraft.CSCore.Tags.ID3.ID3Genre
+- uid: SilverCraft.CSCore.Tags.ID3.ID3v1
+  commentId: T:SilverCraft.CSCore.Tags.ID3.ID3v1
+  parent: SilverCraft.CSCore.Tags.ID3
+  href: SilverCraft.CSCore.Tags.ID3.ID3v1.html
+  name: ID3v1
+  nameWithType: ID3v1
+  fullName: SilverCraft.CSCore.Tags.ID3.ID3v1
+- uid: SilverCraft.CSCore.Tags.ID3.ID3v2
+  commentId: T:SilverCraft.CSCore.Tags.ID3.ID3v2
+  parent: SilverCraft.CSCore.Tags.ID3
+  href: SilverCraft.CSCore.Tags.ID3.ID3v2.html
+  name: ID3v2
+  nameWithType: ID3v2
+  fullName: SilverCraft.CSCore.Tags.ID3.ID3v2
+- uid: SilverCraft.CSCore.Tags.ID3.ID3v2ExtendedHeader
+  commentId: T:SilverCraft.CSCore.Tags.ID3.ID3v2ExtendedHeader
+  parent: SilverCraft.CSCore.Tags.ID3
+  href: SilverCraft.CSCore.Tags.ID3.ID3v2ExtendedHeader.html
+  name: ID3v2ExtendedHeader
+  nameWithType: ID3v2ExtendedHeader
+  fullName: SilverCraft.CSCore.Tags.ID3.ID3v2ExtendedHeader
+- uid: SilverCraft.CSCore.Tags.ID3.ID3v2ExtendedHeaderFlags
+  commentId: T:SilverCraft.CSCore.Tags.ID3.ID3v2ExtendedHeaderFlags
+  parent: SilverCraft.CSCore.Tags.ID3
+  href: SilverCraft.CSCore.Tags.ID3.ID3v2ExtendedHeaderFlags.html
+  name: ID3v2ExtendedHeaderFlags
+  nameWithType: ID3v2ExtendedHeaderFlags
+  fullName: SilverCraft.CSCore.Tags.ID3.ID3v2ExtendedHeaderFlags
+- uid: SilverCraft.CSCore.Tags.ID3.ID3v2Footer
+  commentId: T:SilverCraft.CSCore.Tags.ID3.ID3v2Footer
+  parent: SilverCraft.CSCore.Tags.ID3
+  href: SilverCraft.CSCore.Tags.ID3.ID3v2Footer.html
+  name: ID3v2Footer
+  nameWithType: ID3v2Footer
+  fullName: SilverCraft.CSCore.Tags.ID3.ID3v2Footer
+- uid: SilverCraft.CSCore.Tags.ID3.ID3v2Header
+  commentId: T:SilverCraft.CSCore.Tags.ID3.ID3v2Header
+  parent: SilverCraft.CSCore.Tags.ID3
+  href: SilverCraft.CSCore.Tags.ID3.ID3v2Header.html
+  name: ID3v2Header
+  nameWithType: ID3v2Header
+  fullName: SilverCraft.CSCore.Tags.ID3.ID3v2Header
+- uid: SilverCraft.CSCore.Tags.ID3.ID3v2HeaderFlags
+  commentId: T:SilverCraft.CSCore.Tags.ID3.ID3v2HeaderFlags
+  parent: SilverCraft.CSCore.Tags.ID3
+  href: SilverCraft.CSCore.Tags.ID3.ID3v2HeaderFlags.html
+  name: ID3v2HeaderFlags
+  nameWithType: ID3v2HeaderFlags
+  fullName: SilverCraft.CSCore.Tags.ID3.ID3v2HeaderFlags
+- uid: SilverCraft.CSCore.Tags.ID3.ID3v2ImageEncodingRestriction
+  commentId: T:SilverCraft.CSCore.Tags.ID3.ID3v2ImageEncodingRestriction
+  parent: SilverCraft.CSCore.Tags.ID3
+  href: SilverCraft.CSCore.Tags.ID3.ID3v2ImageEncodingRestriction.html
+  name: ID3v2ImageEncodingRestriction
+  nameWithType: ID3v2ImageEncodingRestriction
+  fullName: SilverCraft.CSCore.Tags.ID3.ID3v2ImageEncodingRestriction
+- uid: SilverCraft.CSCore.Tags.ID3.ID3v2ImageSizeRestriction
+  commentId: T:SilverCraft.CSCore.Tags.ID3.ID3v2ImageSizeRestriction
+  parent: SilverCraft.CSCore.Tags.ID3
+  href: SilverCraft.CSCore.Tags.ID3.ID3v2ImageSizeRestriction.html
+  name: ID3v2ImageSizeRestriction
+  nameWithType: ID3v2ImageSizeRestriction
+  fullName: SilverCraft.CSCore.Tags.ID3.ID3v2ImageSizeRestriction
+- uid: SilverCraft.CSCore.Tags.ID3.ID3v2QuickInfo
+  commentId: T:SilverCraft.CSCore.Tags.ID3.ID3v2QuickInfo
+  parent: SilverCraft.CSCore.Tags.ID3
+  href: SilverCraft.CSCore.Tags.ID3.ID3v2QuickInfo.html
+  name: ID3v2QuickInfo
+  nameWithType: ID3v2QuickInfo
+  fullName: SilverCraft.CSCore.Tags.ID3.ID3v2QuickInfo
+- uid: SilverCraft.CSCore.Tags.ID3.ID3v2TagSizeRestriction
+  commentId: T:SilverCraft.CSCore.Tags.ID3.ID3v2TagSizeRestriction
+  parent: SilverCraft.CSCore.Tags.ID3
+  href: SilverCraft.CSCore.Tags.ID3.ID3v2TagSizeRestriction.html
+  name: ID3v2TagSizeRestriction
+  nameWithType: ID3v2TagSizeRestriction
+  fullName: SilverCraft.CSCore.Tags.ID3.ID3v2TagSizeRestriction
+- uid: SilverCraft.CSCore.Tags.ID3.ID3v2TextEncodingRestriction
+  commentId: T:SilverCraft.CSCore.Tags.ID3.ID3v2TextEncodingRestriction
+  parent: SilverCraft.CSCore.Tags.ID3
+  href: SilverCraft.CSCore.Tags.ID3.ID3v2TextEncodingRestriction.html
+  name: ID3v2TextEncodingRestriction
+  nameWithType: ID3v2TextEncodingRestriction
+  fullName: SilverCraft.CSCore.Tags.ID3.ID3v2TextEncodingRestriction
+- uid: SilverCraft.CSCore.Tags.ID3.ID3v2TextFieldSizeRestriction
+  commentId: T:SilverCraft.CSCore.Tags.ID3.ID3v2TextFieldSizeRestriction
+  parent: SilverCraft.CSCore.Tags.ID3
+  href: SilverCraft.CSCore.Tags.ID3.ID3v2TextFieldSizeRestriction.html
+  name: ID3v2TextFieldSizeRestriction
+  nameWithType: ID3v2TextFieldSizeRestriction
+  fullName: SilverCraft.CSCore.Tags.ID3.ID3v2TextFieldSizeRestriction
+- uid: SilverCraft.CSCore.Tags.ID3.ID3Version
+  commentId: T:SilverCraft.CSCore.Tags.ID3.ID3Version
+  parent: SilverCraft.CSCore.Tags.ID3
+  href: SilverCraft.CSCore.Tags.ID3.ID3Version.html
+  name: ID3Version
+  nameWithType: ID3Version
+  fullName: SilverCraft.CSCore.Tags.ID3.ID3Version
+- uid: SilverCraft.CSCore.Tags.ID3.UnsyncStream
+  commentId: T:SilverCraft.CSCore.Tags.ID3.UnsyncStream
+  href: SilverCraft.CSCore.Tags.ID3.UnsyncStream.html
+  name: UnsyncStream
+  nameWithType: UnsyncStream
+  fullName: SilverCraft.CSCore.Tags.ID3.UnsyncStream
+- uid: SilverCraft.CSCore.Tags.ID3
+  commentId: N:SilverCraft.CSCore.Tags.ID3
+  href: SilverCraft.html
+  name: SilverCraft.CSCore.Tags.ID3
+  nameWithType: SilverCraft.CSCore.Tags.ID3
+  fullName: SilverCraft.CSCore.Tags.ID3
+  spec.csharp:
+  - uid: SilverCraft
+    name: SilverCraft
+    href: SilverCraft.html
+  - name: .
+  - uid: SilverCraft.CSCore
+    name: CSCore
+    href: SilverCraft.CSCore.html
+  - name: .
+  - uid: SilverCraft.CSCore.Tags
+    name: Tags
+    href: SilverCraft.CSCore.Tags.html
+  - name: .
+  - uid: SilverCraft.CSCore.Tags.ID3
+    name: ID3
+    href: SilverCraft.CSCore.Tags.ID3.html
+  spec.vb:
+  - uid: SilverCraft
+    name: SilverCraft
+    href: SilverCraft.html
+  - name: .
+  - uid: SilverCraft.CSCore
+    name: CSCore
+    href: SilverCraft.CSCore.html
+  - name: .
+  - uid: SilverCraft.CSCore.Tags
+    name: Tags
+    href: SilverCraft.CSCore.Tags.html
+  - name: .
+  - uid: SilverCraft.CSCore.Tags.ID3
+    name: ID3
+    href: SilverCraft.CSCore.Tags.ID3.html

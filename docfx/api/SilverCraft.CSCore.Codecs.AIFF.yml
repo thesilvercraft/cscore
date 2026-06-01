@@ -1,0 +1,128 @@
+### YamlMime:ManagedReference
+items:
+- uid: SilverCraft.CSCore.Codecs.AIFF
+  commentId: N:SilverCraft.CSCore.Codecs.AIFF
+  id: SilverCraft.CSCore.Codecs.AIFF
+  children:
+  - SilverCraft.CSCore.Codecs.AIFF.AiffChunk
+  - SilverCraft.CSCore.Codecs.AIFF.AiffChunkContainer
+  - SilverCraft.CSCore.Codecs.AIFF.AiffException
+  - SilverCraft.CSCore.Codecs.AIFF.AiffReader
+  - SilverCraft.CSCore.Codecs.AIFF.CommonChunk
+  - SilverCraft.CSCore.Codecs.AIFF.FormatVersionChunk
+  - SilverCraft.CSCore.Codecs.AIFF.FormatVersionChunk.AifcVersion
+  - SilverCraft.CSCore.Codecs.AIFF.SoundDataChunk
+  langs:
+  - csharp
+  - vb
+  name: SilverCraft.CSCore.Codecs.AIFF
+  nameWithType: SilverCraft.CSCore.Codecs.AIFF
+  fullName: SilverCraft.CSCore.Codecs.AIFF
+  type: Namespace
+  assemblies:
+  - SilverCraft.CSCore
+references:
+- uid: SilverCraft.CSCore.Codecs.AIFF.AiffChunk
+  commentId: T:SilverCraft.CSCore.Codecs.AIFF.AiffChunk
+  parent: SilverCraft.CSCore.Codecs.AIFF
+  href: SilverCraft.CSCore.Codecs.AIFF.AiffChunk.html
+  name: AiffChunk
+  nameWithType: AiffChunk
+  fullName: SilverCraft.CSCore.Codecs.AIFF.AiffChunk
+- uid: SilverCraft.CSCore.Codecs.AIFF.AiffChunkContainer
+  commentId: T:SilverCraft.CSCore.Codecs.AIFF.AiffChunkContainer
+  href: SilverCraft.CSCore.Codecs.AIFF.AiffChunkContainer.html
+  name: AiffChunkContainer
+  nameWithType: AiffChunkContainer
+  fullName: SilverCraft.CSCore.Codecs.AIFF.AiffChunkContainer
+- uid: SilverCraft.CSCore.Codecs.AIFF.AiffException
+  commentId: T:SilverCraft.CSCore.Codecs.AIFF.AiffException
+  href: SilverCraft.CSCore.Codecs.AIFF.AiffException.html
+  name: AiffException
+  nameWithType: AiffException
+  fullName: SilverCraft.CSCore.Codecs.AIFF.AiffException
+- uid: SilverCraft.CSCore.Codecs.AIFF.AiffReader
+  commentId: T:SilverCraft.CSCore.Codecs.AIFF.AiffReader
+  href: SilverCraft.CSCore.Codecs.AIFF.AiffReader.html
+  name: AiffReader
+  nameWithType: AiffReader
+  fullName: SilverCraft.CSCore.Codecs.AIFF.AiffReader
+- uid: SilverCraft.CSCore.Codecs.AIFF.CommonChunk
+  commentId: T:SilverCraft.CSCore.Codecs.AIFF.CommonChunk
+  href: SilverCraft.CSCore.Codecs.AIFF.CommonChunk.html
+  name: CommonChunk
+  nameWithType: CommonChunk
+  fullName: SilverCraft.CSCore.Codecs.AIFF.CommonChunk
+- uid: SilverCraft.CSCore.Codecs.AIFF.FormatVersionChunk
+  commentId: T:SilverCraft.CSCore.Codecs.AIFF.FormatVersionChunk
+  href: SilverCraft.CSCore.Codecs.AIFF.FormatVersionChunk.html
+  name: FormatVersionChunk
+  nameWithType: FormatVersionChunk
+  fullName: SilverCraft.CSCore.Codecs.AIFF.FormatVersionChunk
+- uid: SilverCraft.CSCore.Codecs.AIFF.FormatVersionChunk.AifcVersion
+  commentId: T:SilverCraft.CSCore.Codecs.AIFF.FormatVersionChunk.AifcVersion
+  parent: SilverCraft.CSCore.Codecs.AIFF
+  href: SilverCraft.CSCore.Codecs.AIFF.FormatVersionChunk.html
+  name: FormatVersionChunk.AifcVersion
+  nameWithType: FormatVersionChunk.AifcVersion
+  fullName: SilverCraft.CSCore.Codecs.AIFF.FormatVersionChunk.AifcVersion
+  spec.csharp:
+  - uid: SilverCraft.CSCore.Codecs.AIFF.FormatVersionChunk
+    name: FormatVersionChunk
+    href: SilverCraft.CSCore.Codecs.AIFF.FormatVersionChunk.html
+  - name: .
+  - uid: SilverCraft.CSCore.Codecs.AIFF.FormatVersionChunk.AifcVersion
+    name: AifcVersion
+    href: SilverCraft.CSCore.Codecs.AIFF.FormatVersionChunk.AifcVersion.html
+  spec.vb:
+  - uid: SilverCraft.CSCore.Codecs.AIFF.FormatVersionChunk
+    name: FormatVersionChunk
+    href: SilverCraft.CSCore.Codecs.AIFF.FormatVersionChunk.html
+  - name: .
+  - uid: SilverCraft.CSCore.Codecs.AIFF.FormatVersionChunk.AifcVersion
+    name: AifcVersion
+    href: SilverCraft.CSCore.Codecs.AIFF.FormatVersionChunk.AifcVersion.html
+- uid: SilverCraft.CSCore.Codecs.AIFF.SoundDataChunk
+  commentId: T:SilverCraft.CSCore.Codecs.AIFF.SoundDataChunk
+  href: SilverCraft.CSCore.Codecs.AIFF.SoundDataChunk.html
+  name: SoundDataChunk
+  nameWithType: SoundDataChunk
+  fullName: SilverCraft.CSCore.Codecs.AIFF.SoundDataChunk
+- uid: SilverCraft.CSCore.Codecs.AIFF
+  commentId: N:SilverCraft.CSCore.Codecs.AIFF
+  href: SilverCraft.html
+  name: SilverCraft.CSCore.Codecs.AIFF
+  nameWithType: SilverCraft.CSCore.Codecs.AIFF
+  fullName: SilverCraft.CSCore.Codecs.AIFF
+  spec.csharp:
+  - uid: SilverCraft
+    name: SilverCraft
+    href: SilverCraft.html
+  - name: .
+  - uid: SilverCraft.CSCore
+    name: CSCore
+    href: SilverCraft.CSCore.html
+  - name: .
+  - uid: SilverCraft.CSCore.Codecs
+    name: Codecs
+    href: SilverCraft.CSCore.Codecs.html
+  - name: .
+  - uid: SilverCraft.CSCore.Codecs.AIFF
+    name: AIFF
+    href: SilverCraft.CSCore.Codecs.AIFF.html
+  spec.vb:
+  - uid: SilverCraft
+    name: SilverCraft
+    href: SilverCraft.html
+  - name: .
+  - uid: SilverCraft.CSCore
+    name: CSCore
+    href: SilverCraft.CSCore.html
+  - name: .
+  - uid: SilverCraft.CSCore.Codecs
+    name: Codecs
+    href: SilverCraft.CSCore.Codecs.html
+  - name: .
+  - uid: SilverCraft.CSCore.Codecs.AIFF
+    name: AIFF
+    href: SilverCraft.CSCore.Codecs.AIFF.html

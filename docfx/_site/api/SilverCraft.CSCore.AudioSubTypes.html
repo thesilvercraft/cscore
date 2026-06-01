@@ -1,0 +1,5379 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class AudioSubTypes | SilverCraft.CSCore </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class AudioSubTypes | SilverCraft.CSCore ">
+      
+      <meta name="description" content="Defines  and provides methods to convert between -values and -values.">
+      <link rel="icon" href="../images/cscore-square-notext.svg">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/thesilvercraft/cscore/new/master/apiSpec/new?filename=SilverCraft_CSCore_AudioSubTypes.md&amp;value=---%0Auid%3A%20SilverCraft.CSCore.AudioSubTypes%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../images/cscore-square-notext.svg" alt="SilverCraft.CSCore">
+            SilverCraft.CSCore
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="SilverCraft.CSCore.AudioSubTypes">
+
+
+
+  <h1 id="SilverCraft_CSCore_AudioSubTypes" data-uid="SilverCraft.CSCore.AudioSubTypes" class="text-break">
+Class AudioSubTypes  <a class="header-action link-secondary" title="View source" href="https://github.com/thesilvercraft/cscore/blob/master/SilverCraft.CSCore/AudioSubTypes.Utils.cs/#L9"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="SilverCraft.html">SilverCraft</a>.<a class="xref" href="SilverCraft.CSCore.html">CSCore</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>SilverCraft.CSCore.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>Defines <a class="xref" href="SilverCraft.CSCore.AudioSubTypes.html">AudioSubTypes</a> and provides methods to convert between <a class="xref" href="SilverCraft.CSCore.AudioEncoding.html">AudioEncoding</a>-values and <a class="xref" href="SilverCraft.CSCore.AudioSubTypes.html">AudioSubTypes</a>-values.</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static class AudioSubTypes</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">AudioSubTypes</span></div>
+    </dd>
+  </dl>
+
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+  <h2 id="SilverCraft_CSCore_AudioSubTypes_remarks">Remarks</h2>
+  <div class="markdown level0 remarks"><p><a class="xref" href="SilverCraft.CSCore.AudioSubTypes.html">AudioSubTypes</a> are used by the <a class="xref" href="SilverCraft.CSCore.WaveFormatExtensible.html">WaveFormatExtensible</a>.</p>
+</div>
+
+
+  <h2 class="section" id="fields">Fields
+</h2>
+
+
+
+  <h3 id="SilverCraft_CSCore_AudioSubTypes_ALaw" data-uid="SilverCraft.CSCore.AudioSubTypes.ALaw">
+  ALaw
+  <a class="header-action link-secondary" title="View source" href="https://github.com/thesilvercraft/cscore/blob/master/SilverCraft.CSCore/AudioSubTypes.cs/#L28"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>WAVE_FORMAT_ALAW		Microsoft Corporation</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly Guid ALaw</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="SilverCraft_CSCore_AudioSubTypes_Acelp" data-uid="SilverCraft.CSCore.AudioSubTypes.Acelp">
+  Acelp
+  <a class="header-action link-secondary" title="View source" href="https://github.com/thesilvercraft/cscore/blob/master/SilverCraft.CSCore/AudioSubTypes.cs/#L283"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>WAVE_FORMAT_ACELP</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly Guid Acelp</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="SilverCraft_CSCore_AudioSubTypes_Adpcm" data-uid="SilverCraft.CSCore.AudioSubTypes.Adpcm">
+  Adpcm
+  <a class="header-action link-secondary" title="View source" href="https://github.com/thesilvercraft/cscore/blob/master/SilverCraft.CSCore/AudioSubTypes.cs/#L16"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>WAVE_FORMAT_ADPCM		Microsoft Corporation</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly Guid Adpcm</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="SilverCraft_CSCore_AudioSubTypes_AntexAdpcme" data-uid="SilverCraft.CSCore.AudioSubTypes.AntexAdpcme">
+  AntexAdpcme
+  <a class="header-action link-secondary" title="View source" href="https://github.com/thesilvercraft/cscore/blob/master/SilverCraft.CSCore/AudioSubTypes.cs/#L112"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>WAVE_FORMAT_ANTEX_ADPCME, Antex Electronics Corporation</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly Guid AntexAdpcme</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="SilverCraft_CSCore_AudioSubTypes_Aptx" data-uid="SilverCraft.CSCore.AudioSubTypes.Aptx">
+  Aptx
+  <a class="header-action link-secondary" title="View source" href="https://github.com/thesilvercraft/cscore/blob/master/SilverCraft.CSCore/AudioSubTypes.cs/#L91"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>WAVE_FORMAT_APTX Audio Processing Technology</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly Guid Aptx</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="SilverCraft_CSCore_AudioSubTypes_AudioFileAf10" data-uid="SilverCraft.CSCore.AudioSubTypes.AudioFileAf10">
+  AudioFileAf10
+  <a class="header-action link-secondary" title="View source" href="https://github.com/thesilvercraft/cscore/blob/master/SilverCraft.CSCore/AudioSubTypes.cs/#L94"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>WAVE_FORMAT_AUDIOFILE_AF10, Virtual Music, Inc.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly Guid AudioFileAf10</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="SilverCraft_CSCore_AudioSubTypes_AudioFileAf36" data-uid="SilverCraft.CSCore.AudioSubTypes.AudioFileAf36">
+  AudioFileAf36
+  <a class="header-action link-secondary" title="View source" href="https://github.com/thesilvercraft/cscore/blob/master/SilverCraft.CSCore/AudioSubTypes.cs/#L88"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>WAVE_FORMAT_AUDIOFILE_AF36, Virtual Music, Inc.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly Guid AudioFileAf36</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="SilverCraft_CSCore_AudioSubTypes_CUCodec" data-uid="SilverCraft.CSCore.AudioSubTypes.CUCodec">
+  CUCodec
+  <a class="header-action link-secondary" title="View source" href="https://github.com/thesilvercraft/cscore/blob/master/SilverCraft.CSCore/AudioSubTypes.cs/#L73"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>WAVE_FORMAT_CU_CODEC Hewlett-Packard Company</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly Guid CUCodec</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="SilverCraft_CSCore_AudioSubTypes_ControlResCr10" data-uid="SilverCraft.CSCore.AudioSubTypes.ControlResCr10">
+  ControlResCr10
+  <a class="header-action link-secondary" title="View source" href="https://github.com/thesilvercraft/cscore/blob/master/SilverCraft.CSCore/AudioSubTypes.cs/#L124"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>WAVE_FORMAT_CONTROL_RES_CR10, Control Resources Limited</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly Guid ControlResCr10</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="SilverCraft_CSCore_AudioSubTypes_ControlResVqlpc" data-uid="SilverCraft.CSCore.AudioSubTypes.ControlResVqlpc">
+  ControlResVqlpc
+  <a class="header-action link-secondary" title="View source" href="https://github.com/thesilvercraft/cscore/blob/master/SilverCraft.CSCore/AudioSubTypes.cs/#L115"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>WAVE_FORMAT_CONTROL_RES_VQLPC, Control Resources Limited</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly Guid ControlResVqlpc</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="SilverCraft_CSCore_AudioSubTypes_DialogicOkiAdpcm" data-uid="SilverCraft.CSCore.AudioSubTypes.DialogicOkiAdpcm">
+  DialogicOkiAdpcm
+  <a class="header-action link-secondary" title="View source" href="https://github.com/thesilvercraft/cscore/blob/master/SilverCraft.CSCore/AudioSubTypes.cs/#L67"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>WAVE_FORMAT_DIALOGIC_OKI_ADPCM Dialogic Corporation</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly Guid DialogicOkiAdpcm</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="SilverCraft_CSCore_AudioSubTypes_DigiAdpcm" data-uid="SilverCraft.CSCore.AudioSubTypes.DigiAdpcm">
+  DigiAdpcm
+  <a class="header-action link-secondary" title="View source" href="https://github.com/thesilvercraft/cscore/blob/master/SilverCraft.CSCore/AudioSubTypes.cs/#L121"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>WAVE_FORMAT_DIGIADPCM, DSP Solutions, Inc.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly Guid DigiAdpcm</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="SilverCraft_CSCore_AudioSubTypes_DigiFix" data-uid="SilverCraft.CSCore.AudioSubTypes.DigiFix">
+  DigiFix
+  <a class="header-action link-secondary" title="View source" href="https://github.com/thesilvercraft/cscore/blob/master/SilverCraft.CSCore/AudioSubTypes.cs/#L64"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>WAVE_FORMAT_DIGIFIX DSP Solutions, Inc.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly Guid DigiFix</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="SilverCraft_CSCore_AudioSubTypes_DigiReal" data-uid="SilverCraft.CSCore.AudioSubTypes.DigiReal">
+  DigiReal
+  <a class="header-action link-secondary" title="View source" href="https://github.com/thesilvercraft/cscore/blob/master/SilverCraft.CSCore/AudioSubTypes.cs/#L118"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>WAVE_FORMAT_DIGIREAL, DSP Solutions, Inc.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly Guid DigiReal</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="SilverCraft_CSCore_AudioSubTypes_DigiStd" data-uid="SilverCraft.CSCore.AudioSubTypes.DigiStd">
+  DigiStd
+  <a class="header-action link-secondary" title="View source" href="https://github.com/thesilvercraft/cscore/blob/master/SilverCraft.CSCore/AudioSubTypes.cs/#L61"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>WAVE_FORMAT_DIGISTD DSP Solutions, Inc.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly Guid DigiStd</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="SilverCraft_CSCore_AudioSubTypes_DolbyAc2" data-uid="SilverCraft.CSCore.AudioSubTypes.DolbyAc2">
+  DolbyAc2
+  <a class="header-action link-secondary" title="View source" href="https://github.com/thesilvercraft/cscore/blob/master/SilverCraft.CSCore/AudioSubTypes.cs/#L103"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>WAVE_FORMAT_DOLBY_AC2, Dolby Laboratories</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly Guid DolbyAc2</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="SilverCraft_CSCore_AudioSubTypes_Drm" data-uid="SilverCraft.CSCore.AudioSubTypes.Drm">
+  Drm
+  <a class="header-action link-secondary" title="View source" href="https://github.com/thesilvercraft/cscore/blob/master/SilverCraft.CSCore/AudioSubTypes.cs/#L37"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>WAVE_FORMAT_DRM		Microsoft Corporation</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly Guid Drm</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="SilverCraft_CSCore_AudioSubTypes_DspGroupTrueSpeech" data-uid="SilverCraft.CSCore.AudioSubTypes.DspGroupTrueSpeech">
+  DspGroupTrueSpeech
+  <a class="header-action link-secondary" title="View source" href="https://github.com/thesilvercraft/cscore/blob/master/SilverCraft.CSCore/AudioSubTypes.cs/#L82"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>WAVE_FORMAT_DSPGROUP_TRUESPEECH DSP Group, Inc</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly Guid DspGroupTrueSpeech</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="SilverCraft_CSCore_AudioSubTypes_Dts" data-uid="SilverCraft.CSCore.AudioSubTypes.Dts">
+  Dts
+  <a class="header-action link-secondary" title="View source" href="https://github.com/thesilvercraft/cscore/blob/master/SilverCraft.CSCore/AudioSubTypes.cs/#L34"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>WAVE_FORMAT_DTS		Microsoft Corporation</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly Guid Dts</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="SilverCraft_CSCore_AudioSubTypes_DviAdpcm" data-uid="SilverCraft.CSCore.AudioSubTypes.DviAdpcm">
+  DviAdpcm
+  <a class="header-action link-secondary" title="View source" href="https://github.com/thesilvercraft/cscore/blob/master/SilverCraft.CSCore/AudioSubTypes.cs/#L46"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>WAVE_FORMAT_DVI_ADPCM	Intel Corporation</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly Guid DviAdpcm</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="SilverCraft_CSCore_AudioSubTypes_EchoSpeechCorporation1" data-uid="SilverCraft.CSCore.AudioSubTypes.EchoSpeechCorporation1">
+  EchoSpeechCorporation1
+  <a class="header-action link-secondary" title="View source" href="https://github.com/thesilvercraft/cscore/blob/master/SilverCraft.CSCore/AudioSubTypes.cs/#L85"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>WAVE_FORMAT_ECHOSC1 Echo Speech Corporation</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly Guid EchoSpeechCorporation1</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="SilverCraft_CSCore_AudioSubTypes_Extensible" data-uid="SilverCraft.CSCore.AudioSubTypes.Extensible">
+  Extensible
+  <a class="header-action link-secondary" title="View source" href="https://github.com/thesilvercraft/cscore/blob/master/SilverCraft.CSCore/AudioSubTypes.cs/#L531"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Extensible</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly Guid Extensible</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="SilverCraft_CSCore_AudioSubTypes_G723" data-uid="SilverCraft.CSCore.AudioSubTypes.G723">
+  G723
+  <a class="header-action link-secondary" title="View source" href="https://github.com/thesilvercraft/cscore/blob/master/SilverCraft.CSCore/AudioSubTypes.cs/#L280"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>WAVE_FORMAT_G723</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly Guid G723</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="SilverCraft_CSCore_AudioSubTypes_G723Adpcm" data-uid="SilverCraft.CSCore.AudioSubTypes.G723Adpcm">
+  G723Adpcm
+  <a class="header-action link-secondary" title="View source" href="https://github.com/thesilvercraft/cscore/blob/master/SilverCraft.CSCore/AudioSubTypes.cs/#L58"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>WAVE_FORMAT_G723_ADPCM Antex Electronics Corporation</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly Guid G723Adpcm</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="SilverCraft_CSCore_AudioSubTypes_G729" data-uid="SilverCraft.CSCore.AudioSubTypes.G729">
+  G729
+  <a class="header-action link-secondary" title="View source" href="https://github.com/thesilvercraft/cscore/blob/master/SilverCraft.CSCore/AudioSubTypes.cs/#L277"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>WAVE_FORMAT_G729</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly Guid G729</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="SilverCraft_CSCore_AudioSubTypes_Gsm" data-uid="SilverCraft.CSCore.AudioSubTypes.Gsm">
+  Gsm
+  <a class="header-action link-secondary" title="View source" href="https://github.com/thesilvercraft/cscore/blob/master/SilverCraft.CSCore/AudioSubTypes.cs/#L274"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>WAVE_FORMAT_GSM</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly Guid Gsm</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="SilverCraft_CSCore_AudioSubTypes_Gsm610" data-uid="SilverCraft.CSCore.AudioSubTypes.Gsm610">
+  Gsm610
+  <a class="header-action link-secondary" title="View source" href="https://github.com/thesilvercraft/cscore/blob/master/SilverCraft.CSCore/AudioSubTypes.cs/#L106"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>WAVE_FORMAT_GSM610, Microsoft Corporation</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly Guid Gsm610</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="SilverCraft_CSCore_AudioSubTypes_IbmCvsd" data-uid="SilverCraft.CSCore.AudioSubTypes.IbmCvsd">
+  IbmCvsd
+  <a class="header-action link-secondary" title="View source" href="https://github.com/thesilvercraft/cscore/blob/master/SilverCraft.CSCore/AudioSubTypes.cs/#L25"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>WAVE_FORMAT_IBM_CVSD	IBM Corporation</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly Guid IbmCvsd</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="SilverCraft_CSCore_AudioSubTypes_IeeeFloat" data-uid="SilverCraft.CSCore.AudioSubTypes.IeeeFloat">
+  IeeeFloat
+  <a class="header-action link-secondary" title="View source" href="https://github.com/thesilvercraft/cscore/blob/master/SilverCraft.CSCore/AudioSubTypes.cs/#L19"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>WAVE_FORMAT_IEEE_FLOAT Microsoft Corporation</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly Guid IeeeFloat</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="SilverCraft_CSCore_AudioSubTypes_ImaAdpcm" data-uid="SilverCraft.CSCore.AudioSubTypes.ImaAdpcm">
+  ImaAdpcm
+  <a class="header-action link-secondary" title="View source" href="https://github.com/thesilvercraft/cscore/blob/master/SilverCraft.CSCore/AudioSubTypes.cs/#L49"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>WAVE_FORMAT_IMA_ADPCM  Intel Corporation</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly Guid ImaAdpcm</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="SilverCraft_CSCore_AudioSubTypes_Lrc" data-uid="SilverCraft.CSCore.AudioSubTypes.Lrc">
+  Lrc
+  <a class="header-action link-secondary" title="View source" href="https://github.com/thesilvercraft/cscore/blob/master/SilverCraft.CSCore/AudioSubTypes.cs/#L100"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>WAVE_FORMAT_LRC, Merging Technologies S.A.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly Guid Lrc</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="SilverCraft_CSCore_AudioSubTypes_MPEG_ADTS_AAC" data-uid="SilverCraft.CSCore.AudioSubTypes.MPEG_ADTS_AAC">
+  MPEG_ADTS_AAC
+  <a class="header-action link-secondary" title="View source" href="https://github.com/thesilvercraft/cscore/blob/master/SilverCraft.CSCore/AudioSubTypes.cs/#L458"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Advanced Audio Coding (AAC) audio in Audio Data Transport Stream (ADTS) format.
+The format block is a WAVEFORMATEX structure with wFormatTag equal to WAVE_FORMAT_MPEG_ADTS_AAC.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly Guid MPEG_ADTS_AAC</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+  <h4 class="section" id="SilverCraft_CSCore_AudioSubTypes_MPEG_ADTS_AAC_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>The WAVEFORMATEX structure specifies the core AAC-LC sample rate and number of channels,
+prior to applying spectral band replication (SBR) or parametric stereo (PS) tools, if present.
+No additional data is required after the WAVEFORMATEX structure.</p>
+</div>
+
+
+
+
+
+  <h3 id="SilverCraft_CSCore_AudioSubTypes_MPEG_HEAAC" data-uid="SilverCraft.CSCore.AudioSubTypes.MPEG_HEAAC">
+  MPEG_HEAAC
+  <a class="header-action link-secondary" title="View source" href="https://github.com/thesilvercraft/cscore/blob/master/SilverCraft.CSCore/AudioSubTypes.cs/#L496"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>High-Efficiency Advanced Audio Coding (HE-AAC) stream.
+The format block is an HEAACWAVEFORMAT structure. See <a href="http://msdn.microsoft.com/en-us/library/dd317599%28VS.85%29.aspx">http://msdn.microsoft.com/en-us/library/dd317599%28VS.85%29.aspx</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly Guid MPEG_HEAAC</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="SilverCraft_CSCore_AudioSubTypes_MPEG_LOAS" data-uid="SilverCraft.CSCore.AudioSubTypes.MPEG_LOAS">
+  MPEG_LOAS
+  <a class="header-action link-secondary" title="View source" href="https://github.com/thesilvercraft/cscore/blob/master/SilverCraft.CSCore/AudioSubTypes.cs/#L474"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>MPEG-4 audio transport stream with a synchronization layer (LOAS) and a multiplex layer (LATM).
+The format block is a WAVEFORMATEX structure with wFormatTag equal to WAVE_FORMAT_MPEG_LOAS.
+See <a href="http://msdn.microsoft.com/en-us/library/dd317599%28VS.85%29.aspx">http://msdn.microsoft.com/en-us/library/dd317599%28VS.85%29.aspx</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly Guid MPEG_LOAS</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+  <h4 class="section" id="SilverCraft_CSCore_AudioSubTypes_MPEG_LOAS_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>The WAVEFORMATEX structure specifies the core AAC-LC sample rate and number of channels,
+prior to applying spectral SBR or PS tools, if present.
+No additional data is required after the WAVEFORMATEX structure.</p>
+</div>
+
+
+
+
+
+  <h3 id="SilverCraft_CSCore_AudioSubTypes_MPEG_RAW_AAC" data-uid="SilverCraft.CSCore.AudioSubTypes.MPEG_RAW_AAC">
+  MPEG_RAW_AAC
+  <a class="header-action link-secondary" title="View source" href="https://github.com/thesilvercraft/cscore/blob/master/SilverCraft.CSCore/AudioSubTypes.cs/#L462"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>MPEG_RAW_AAC</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly Guid MPEG_RAW_AAC</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+  <h4 class="section" id="SilverCraft_CSCore_AudioSubTypes_MPEG_RAW_AAC_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>Source wmCodec.h</p>
+</div>
+
+
+
+
+
+  <h3 id="SilverCraft_CSCore_AudioSubTypes_MediaTypeAudio" data-uid="SilverCraft.CSCore.AudioSubTypes.MediaTypeAudio">
+  MediaTypeAudio
+  <a class="header-action link-secondary" title="View source" href="https://github.com/thesilvercraft/cscore/blob/master/SilverCraft.CSCore/AudioSubTypes.Utils.cs/#L42"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>The Major Type for <code>Audio</code> media types.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly Guid MediaTypeAudio</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="SilverCraft_CSCore_AudioSubTypes_MediaVisionAdpcm" data-uid="SilverCraft.CSCore.AudioSubTypes.MediaVisionAdpcm">
+  MediaVisionAdpcm
+  <a class="header-action link-secondary" title="View source" href="https://github.com/thesilvercraft/cscore/blob/master/SilverCraft.CSCore/AudioSubTypes.cs/#L70"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>WAVE_FORMAT_MEDIAVISION_ADPCM Media Vision, Inc.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly Guid MediaVisionAdpcm</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="SilverCraft_CSCore_AudioSubTypes_MediaspaceAdpcm" data-uid="SilverCraft.CSCore.AudioSubTypes.MediaspaceAdpcm">
+  MediaspaceAdpcm
+  <a class="header-action link-secondary" title="View source" href="https://github.com/thesilvercraft/cscore/blob/master/SilverCraft.CSCore/AudioSubTypes.cs/#L52"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>WAVE_FORMAT_MEDIASPACE_ADPCM Videologic</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly Guid MediaspaceAdpcm</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="SilverCraft_CSCore_AudioSubTypes_Mpeg" data-uid="SilverCraft.CSCore.AudioSubTypes.Mpeg">
+  Mpeg
+  <a class="header-action link-secondary" title="View source" href="https://github.com/thesilvercraft/cscore/blob/master/SilverCraft.CSCore/AudioSubTypes.cs/#L154"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>WAVE_FORMAT_MPEG, Microsoft Corporation</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly Guid Mpeg</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="SilverCraft_CSCore_AudioSubTypes_MpegLayer3" data-uid="SilverCraft.CSCore.AudioSubTypes.MpegLayer3">
+  MpegLayer3
+  <a class="header-action link-secondary" title="View source" href="https://github.com/thesilvercraft/cscore/blob/master/SilverCraft.CSCore/AudioSubTypes.cs/#L163"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>WAVE_FORMAT_MPEGLAYER3, ISO/MPEG Layer3 Format Tag</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly Guid MpegLayer3</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="SilverCraft_CSCore_AudioSubTypes_MsnAudio" data-uid="SilverCraft.CSCore.AudioSubTypes.MsnAudio">
+  MsnAudio
+  <a class="header-action link-secondary" title="View source" href="https://github.com/thesilvercraft/cscore/blob/master/SilverCraft.CSCore/AudioSubTypes.cs/#L109"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>WAVE_FORMAT_MSNAUDIO, Microsoft Corporation</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly Guid MsnAudio</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="SilverCraft_CSCore_AudioSubTypes_MuLaw" data-uid="SilverCraft.CSCore.AudioSubTypes.MuLaw">
+  MuLaw
+  <a class="header-action link-secondary" title="View source" href="https://github.com/thesilvercraft/cscore/blob/master/SilverCraft.CSCore/AudioSubTypes.cs/#L31"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>WAVE_FORMAT_MULAW		Microsoft Corporation</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly Guid MuLaw</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="SilverCraft_CSCore_AudioSubTypes_NOKIA_MPEG_ADTS_AAC" data-uid="SilverCraft.CSCore.AudioSubTypes.NOKIA_MPEG_ADTS_AAC">
+  NOKIA_MPEG_ADTS_AAC
+  <a class="header-action link-secondary" title="View source" href="https://github.com/thesilvercraft/cscore/blob/master/SilverCraft.CSCore/AudioSubTypes.cs/#L478"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>NOKIA_MPEG_ADTS_AAC</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly Guid NOKIA_MPEG_ADTS_AAC</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+  <h4 class="section" id="SilverCraft_CSCore_AudioSubTypes_NOKIA_MPEG_ADTS_AAC_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>Source wmCodec.h</p>
+</div>
+
+
+
+
+
+  <h3 id="SilverCraft_CSCore_AudioSubTypes_NOKIA_MPEG_RAW_AAC" data-uid="SilverCraft.CSCore.AudioSubTypes.NOKIA_MPEG_RAW_AAC">
+  NOKIA_MPEG_RAW_AAC
+  <a class="header-action link-secondary" title="View source" href="https://github.com/thesilvercraft/cscore/blob/master/SilverCraft.CSCore/AudioSubTypes.cs/#L482"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>NOKIA_MPEG_RAW_AAC</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly Guid NOKIA_MPEG_RAW_AAC</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+  <h4 class="section" id="SilverCraft_CSCore_AudioSubTypes_NOKIA_MPEG_RAW_AAC_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>Source wmCodec.h</p>
+</div>
+
+
+
+
+
+  <h3 id="SilverCraft_CSCore_AudioSubTypes_OkiAdpcm" data-uid="SilverCraft.CSCore.AudioSubTypes.OkiAdpcm">
+  OkiAdpcm
+  <a class="header-action link-secondary" title="View source" href="https://github.com/thesilvercraft/cscore/blob/master/SilverCraft.CSCore/AudioSubTypes.cs/#L43"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>WAVE_FORMAT_OKI_ADPCM	OKI</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly Guid OkiAdpcm</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="SilverCraft_CSCore_AudioSubTypes_Pcm" data-uid="SilverCraft.CSCore.AudioSubTypes.Pcm">
+  Pcm
+  <a class="header-action link-secondary" title="View source" href="https://github.com/thesilvercraft/cscore/blob/master/SilverCraft.CSCore/AudioSubTypes.cs/#L13"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>WAVE_FORMAT_PCM		Microsoft Corporation</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly Guid Pcm</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="SilverCraft_CSCore_AudioSubTypes_Prosody1612" data-uid="SilverCraft.CSCore.AudioSubTypes.Prosody1612">
+  Prosody1612
+  <a class="header-action link-secondary" title="View source" href="https://github.com/thesilvercraft/cscore/blob/master/SilverCraft.CSCore/AudioSubTypes.cs/#L97"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>WAVE_FORMAT_PROSODY_1612, Aculab plc</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly Guid Prosody1612</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="SilverCraft_CSCore_AudioSubTypes_RawAac" data-uid="SilverCraft.CSCore.AudioSubTypes.RawAac">
+  RawAac
+  <a class="header-action link-secondary" title="View source" href="https://github.com/thesilvercraft/cscore/blob/master/SilverCraft.CSCore/AudioSubTypes.cs/#L288"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>WAVE_FORMAT_RAW_AAC1</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly Guid RawAac</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="SilverCraft_CSCore_AudioSubTypes_SierraAdpcm" data-uid="SilverCraft.CSCore.AudioSubTypes.SierraAdpcm">
+  SierraAdpcm
+  <a class="header-action link-secondary" title="View source" href="https://github.com/thesilvercraft/cscore/blob/master/SilverCraft.CSCore/AudioSubTypes.cs/#L55"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>WAVE_FORMAT_SIERRA_ADPCM Sierra Semiconductor Corp</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly Guid SierraAdpcm</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="SilverCraft_CSCore_AudioSubTypes_SonarC" data-uid="SilverCraft.CSCore.AudioSubTypes.SonarC">
+  SonarC
+  <a class="header-action link-secondary" title="View source" href="https://github.com/thesilvercraft/cscore/blob/master/SilverCraft.CSCore/AudioSubTypes.cs/#L79"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>WAVE_FORMAT_SONARC Speech Compression</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly Guid SonarC</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="SilverCraft_CSCore_AudioSubTypes_Unknown" data-uid="SilverCraft.CSCore.AudioSubTypes.Unknown">
+  Unknown
+  <a class="header-action link-secondary" title="View source" href="https://github.com/thesilvercraft/cscore/blob/master/SilverCraft.CSCore/AudioSubTypes.cs/#L10"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>WAVE_FORMAT_UNKNOWN,	Microsoft Corporation</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly Guid Unknown</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="SilverCraft_CSCore_AudioSubTypes_VODAFONE_MPEG_ADTS_AAC" data-uid="SilverCraft.CSCore.AudioSubTypes.VODAFONE_MPEG_ADTS_AAC">
+  VODAFONE_MPEG_ADTS_AAC
+  <a class="header-action link-secondary" title="View source" href="https://github.com/thesilvercraft/cscore/blob/master/SilverCraft.CSCore/AudioSubTypes.cs/#L486"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>VODAFONE_MPEG_ADTS_AAC</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly Guid VODAFONE_MPEG_ADTS_AAC</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+  <h4 class="section" id="SilverCraft_CSCore_AudioSubTypes_VODAFONE_MPEG_ADTS_AAC_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>Source wmCodec.h</p>
+</div>
+
+
+
+
+
+  <h3 id="SilverCraft_CSCore_AudioSubTypes_VODAFONE_MPEG_RAW_AAC" data-uid="SilverCraft.CSCore.AudioSubTypes.VODAFONE_MPEG_RAW_AAC">
+  VODAFONE_MPEG_RAW_AAC
+  <a class="header-action link-secondary" title="View source" href="https://github.com/thesilvercraft/cscore/blob/master/SilverCraft.CSCore/AudioSubTypes.cs/#L490"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>VODAFONE_MPEG_RAW_AAC</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly Guid VODAFONE_MPEG_RAW_AAC</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+  <h4 class="section" id="SilverCraft_CSCore_AudioSubTypes_VODAFONE_MPEG_RAW_AAC_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>Source wmCodec.h</p>
+</div>
+
+
+
+
+
+  <h3 id="SilverCraft_CSCore_AudioSubTypes_Vorbis1" data-uid="SilverCraft.CSCore.AudioSubTypes.Vorbis1">
+  Vorbis1
+  <a class="header-action link-secondary" title="View source" href="https://github.com/thesilvercraft/cscore/blob/master/SilverCraft.CSCore/AudioSubTypes.cs/#L503"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>WAVE_FORMAT_VORBIS1 &quot;Og&quot; Original stream compatible</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly Guid Vorbis1</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="SilverCraft_CSCore_AudioSubTypes_Vorbis1P" data-uid="SilverCraft.CSCore.AudioSubTypes.Vorbis1P">
+  Vorbis1P
+  <a class="header-action link-secondary" title="View source" href="https://github.com/thesilvercraft/cscore/blob/master/SilverCraft.CSCore/AudioSubTypes.cs/#L512"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>WAVE_FORMAT_VORBIS1P &quot;og&quot; Original stream compatible</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly Guid Vorbis1P</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="SilverCraft_CSCore_AudioSubTypes_Vorbis2" data-uid="SilverCraft.CSCore.AudioSubTypes.Vorbis2">
+  Vorbis2
+  <a class="header-action link-secondary" title="View source" href="https://github.com/thesilvercraft/cscore/blob/master/SilverCraft.CSCore/AudioSubTypes.cs/#L506"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>WAVE_FORMAT_VORBIS2 &quot;Pg&quot; Have independent header</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly Guid Vorbis2</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="SilverCraft_CSCore_AudioSubTypes_Vorbis2P" data-uid="SilverCraft.CSCore.AudioSubTypes.Vorbis2P">
+  Vorbis2P
+  <a class="header-action link-secondary" title="View source" href="https://github.com/thesilvercraft/cscore/blob/master/SilverCraft.CSCore/AudioSubTypes.cs/#L515"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>WAVE_FORMAT_VORBIS2P &quot;pg&quot; Have independent headere</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly Guid Vorbis2P</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="SilverCraft_CSCore_AudioSubTypes_Vorbis3" data-uid="SilverCraft.CSCore.AudioSubTypes.Vorbis3">
+  Vorbis3
+  <a class="header-action link-secondary" title="View source" href="https://github.com/thesilvercraft/cscore/blob/master/SilverCraft.CSCore/AudioSubTypes.cs/#L509"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>WAVE_FORMAT_VORBIS3 &quot;Qg&quot; Have no codebook header</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly Guid Vorbis3</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="SilverCraft_CSCore_AudioSubTypes_Vorbis3P" data-uid="SilverCraft.CSCore.AudioSubTypes.Vorbis3P">
+  Vorbis3P
+  <a class="header-action link-secondary" title="View source" href="https://github.com/thesilvercraft/cscore/blob/master/SilverCraft.CSCore/AudioSubTypes.cs/#L518"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>WAVE_FORMAT_VORBIS3P &quot;qg&quot; Have no codebook header</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly Guid Vorbis3P</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="SilverCraft_CSCore_AudioSubTypes_Vselp" data-uid="SilverCraft.CSCore.AudioSubTypes.Vselp">
+  Vselp
+  <a class="header-action link-secondary" title="View source" href="https://github.com/thesilvercraft/cscore/blob/master/SilverCraft.CSCore/AudioSubTypes.cs/#L22"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>WAVE_FORMAT_VSELP		Compaq Computer Corp.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly Guid Vselp</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="SilverCraft_CSCore_AudioSubTypes_WAVE_FORMAT_BTV_DIGITAL" data-uid="SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_BTV_DIGITAL">
+  WAVE_FORMAT_BTV_DIGITAL
+  <a class="header-action link-secondary" title="View source" href="https://github.com/thesilvercraft/cscore/blob/master/SilverCraft.CSCore/AudioSubTypes.cs/#L413"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>WAVE_FORMAT_BTV_DIGITAL</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly Guid WAVE_FORMAT_BTV_DIGITAL</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="SilverCraft_CSCore_AudioSubTypes_WAVE_FORMAT_CANOPUS_ATRAC" data-uid="SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_CANOPUS_ATRAC">
+  WAVE_FORMAT_CANOPUS_ATRAC
+  <a class="header-action link-secondary" title="View source" href="https://github.com/thesilvercraft/cscore/blob/master/SilverCraft.CSCore/AudioSubTypes.cs/#L178"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>WAVE_FORMAT_CANOPUS_ATRAC</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly Guid WAVE_FORMAT_CANOPUS_ATRAC</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="SilverCraft_CSCore_AudioSubTypes_WAVE_FORMAT_CIRRUS" data-uid="SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_CIRRUS">
+  WAVE_FORMAT_CIRRUS
+  <a class="header-action link-secondary" title="View source" href="https://github.com/thesilvercraft/cscore/blob/master/SilverCraft.CSCore/AudioSubTypes.cs/#L169"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>WAVE_FORMAT_CIRRUS</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly Guid WAVE_FORMAT_CIRRUS</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="SilverCraft_CSCore_AudioSubTypes_WAVE_FORMAT_CREATIVE_ADPCM" data-uid="SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_CREATIVE_ADPCM">
+  WAVE_FORMAT_CREATIVE_ADPCM
+  <a class="header-action link-secondary" title="View source" href="https://github.com/thesilvercraft/cscore/blob/master/SilverCraft.CSCore/AudioSubTypes.cs/#L374"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>WAVE_FORMAT_CREATIVE_ADPCM</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly Guid WAVE_FORMAT_CREATIVE_ADPCM</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="SilverCraft_CSCore_AudioSubTypes_WAVE_FORMAT_CREATIVE_FASTSPEECH10" data-uid="SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_CREATIVE_FASTSPEECH10">
+  WAVE_FORMAT_CREATIVE_FASTSPEECH10
+  <a class="header-action link-secondary" title="View source" href="https://github.com/thesilvercraft/cscore/blob/master/SilverCraft.CSCore/AudioSubTypes.cs/#L380"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>WAVE_FORMAT_CREATIVE_FASTSPEECH10</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly Guid WAVE_FORMAT_CREATIVE_FASTSPEECH10</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="SilverCraft_CSCore_AudioSubTypes_WAVE_FORMAT_CREATIVE_FASTSPEECH8" data-uid="SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_CREATIVE_FASTSPEECH8">
+  WAVE_FORMAT_CREATIVE_FASTSPEECH8
+  <a class="header-action link-secondary" title="View source" href="https://github.com/thesilvercraft/cscore/blob/master/SilverCraft.CSCore/AudioSubTypes.cs/#L377"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>WAVE_FORMAT_CREATIVE_FASTSPEECH8</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly Guid WAVE_FORMAT_CREATIVE_FASTSPEECH8</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="SilverCraft_CSCore_AudioSubTypes_WAVE_FORMAT_CS2" data-uid="SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_CS2">
+  WAVE_FORMAT_CS2
+  <a class="header-action link-secondary" title="View source" href="https://github.com/thesilvercraft/cscore/blob/master/SilverCraft.CSCore/AudioSubTypes.cs/#L404"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>WAVE_FORMAT_CS2</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly Guid WAVE_FORMAT_CS2</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="SilverCraft_CSCore_AudioSubTypes_WAVE_FORMAT_CS_IMAADPCM" data-uid="SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_CS_IMAADPCM">
+  WAVE_FORMAT_CS_IMAADPCM
+  <a class="header-action link-secondary" title="View source" href="https://github.com/thesilvercraft/cscore/blob/master/SilverCraft.CSCore/AudioSubTypes.cs/#L130"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>WAVE_FORMAT_CS_IMAADPCM</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly Guid WAVE_FORMAT_CS_IMAADPCM</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="SilverCraft_CSCore_AudioSubTypes_WAVE_FORMAT_DEVELOPMENT" data-uid="SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_DEVELOPMENT">
+  WAVE_FORMAT_DEVELOPMENT
+  <a class="header-action link-secondary" title="View source" href="https://github.com/thesilvercraft/cscore/blob/master/SilverCraft.CSCore/AudioSubTypes.cs/#L534"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>WAVE_FORMAT_DEVELOPMENT</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly Guid WAVE_FORMAT_DEVELOPMENT</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="SilverCraft_CSCore_AudioSubTypes_WAVE_FORMAT_DF_G726" data-uid="SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_DF_G726">
+  WAVE_FORMAT_DF_G726
+  <a class="header-action link-secondary" title="View source" href="https://github.com/thesilvercraft/cscore/blob/master/SilverCraft.CSCore/AudioSubTypes.cs/#L238"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>WAVE_FORMAT_DF_G726</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly Guid WAVE_FORMAT_DF_G726</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="SilverCraft_CSCore_AudioSubTypes_WAVE_FORMAT_DF_GSM610" data-uid="SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_DF_GSM610">
+  WAVE_FORMAT_DF_GSM610
+  <a class="header-action link-secondary" title="View source" href="https://github.com/thesilvercraft/cscore/blob/master/SilverCraft.CSCore/AudioSubTypes.cs/#L241"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>WAVE_FORMAT_DF_GSM610</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly Guid WAVE_FORMAT_DF_GSM610</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="SilverCraft_CSCore_AudioSubTypes_WAVE_FORMAT_DIGITAL_G723" data-uid="SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_DIGITAL_G723">
+  WAVE_FORMAT_DIGITAL_G723
+  <a class="header-action link-secondary" title="View source" href="https://github.com/thesilvercraft/cscore/blob/master/SilverCraft.CSCore/AudioSubTypes.cs/#L303"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>WAVE_FORMAT_DIGITAL_G723</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly Guid WAVE_FORMAT_DIGITAL_G723</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="SilverCraft_CSCore_AudioSubTypes_WAVE_FORMAT_DOLBY_AC3_SPDIF" data-uid="SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_DOLBY_AC3_SPDIF">
+  WAVE_FORMAT_DOLBY_AC3_SPDIF
+  <a class="header-action link-secondary" title="View source" href="https://github.com/thesilvercraft/cscore/blob/master/SilverCraft.CSCore/AudioSubTypes.cs/#L253"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>WAVE_FORMAT_DOLBY_AC3_SPDIF</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly Guid WAVE_FORMAT_DOLBY_AC3_SPDIF</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="SilverCraft_CSCore_AudioSubTypes_WAVE_FORMAT_DSAT_DISPLAY" data-uid="SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_DSAT_DISPLAY">
+  WAVE_FORMAT_DSAT_DISPLAY
+  <a class="header-action link-secondary" title="View source" href="https://github.com/thesilvercraft/cscore/blob/master/SilverCraft.CSCore/AudioSubTypes.cs/#L187"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>WAVE_FORMAT_DSAT_DISPLAY</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly Guid WAVE_FORMAT_DSAT_DISPLAY</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="SilverCraft_CSCore_AudioSubTypes_WAVE_FORMAT_DVM" data-uid="SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_DVM">
+  WAVE_FORMAT_DVM
+  <a class="header-action link-secondary" title="View source" href="https://github.com/thesilvercraft/cscore/blob/master/SilverCraft.CSCore/AudioSubTypes.cs/#L499"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>WAVE_FORMAT_DVM</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly Guid WAVE_FORMAT_DVM</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="SilverCraft_CSCore_AudioSubTypes_WAVE_FORMAT_ECHOSC3" data-uid="SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_ECHOSC3">
+  WAVE_FORMAT_ECHOSC3
+  <a class="header-action link-secondary" title="View source" href="https://github.com/thesilvercraft/cscore/blob/master/SilverCraft.CSCore/AudioSubTypes.cs/#L133"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>WAVE_FORMAT_ECHOSC3</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly Guid WAVE_FORMAT_ECHOSC3</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="SilverCraft_CSCore_AudioSubTypes_WAVE_FORMAT_ESPCM" data-uid="SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_ESPCM">
+  WAVE_FORMAT_ESPCM
+  <a class="header-action link-secondary" title="View source" href="https://github.com/thesilvercraft/cscore/blob/master/SilverCraft.CSCore/AudioSubTypes.cs/#L172"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>WAVE_FORMAT_ESPCM</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly Guid WAVE_FORMAT_ESPCM</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="SilverCraft_CSCore_AudioSubTypes_WAVE_FORMAT_ESST_AC3" data-uid="SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_ESST_AC3">
+  WAVE_FORMAT_ESST_AC3
+  <a class="header-action link-secondary" title="View source" href="https://github.com/thesilvercraft/cscore/blob/master/SilverCraft.CSCore/AudioSubTypes.cs/#L395"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>WAVE_FORMAT_ESST_AC3</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly Guid WAVE_FORMAT_ESST_AC3</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="SilverCraft_CSCore_AudioSubTypes_WAVE_FORMAT_FLAC" data-uid="SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_FLAC">
+  WAVE_FORMAT_FLAC
+  <a class="header-action link-secondary" title="View source" href="https://github.com/thesilvercraft/cscore/blob/master/SilverCraft.CSCore/AudioSubTypes.cs/#L539"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>FLAC</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly Guid WAVE_FORMAT_FLAC</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="SilverCraft_CSCore_AudioSubTypes_WAVE_FORMAT_FM_TOWNS_SND" data-uid="SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_FM_TOWNS_SND">
+  WAVE_FORMAT_FM_TOWNS_SND
+  <a class="header-action link-secondary" title="View source" href="https://github.com/thesilvercraft/cscore/blob/master/SilverCraft.CSCore/AudioSubTypes.cs/#L410"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>WAVE_FORMAT_FM_TOWNS_SND</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly Guid WAVE_FORMAT_FM_TOWNS_SND</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="SilverCraft_CSCore_AudioSubTypes_WAVE_FORMAT_G721_ADPCM" data-uid="SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_G721_ADPCM">
+  WAVE_FORMAT_G721_ADPCM
+  <a class="header-action link-secondary" title="View source" href="https://github.com/thesilvercraft/cscore/blob/master/SilverCraft.CSCore/AudioSubTypes.cs/#L145"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>WAVE_FORMAT_G721_ADPCM</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly Guid WAVE_FORMAT_G721_ADPCM</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="SilverCraft_CSCore_AudioSubTypes_WAVE_FORMAT_G722_ADPCM" data-uid="SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_G722_ADPCM">
+  WAVE_FORMAT_G722_ADPCM
+  <a class="header-action link-secondary" title="View source" href="https://github.com/thesilvercraft/cscore/blob/master/SilverCraft.CSCore/AudioSubTypes.cs/#L184"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>WAVE_FORMAT_G722_ADPCM</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly Guid WAVE_FORMAT_G722_ADPCM</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="SilverCraft_CSCore_AudioSubTypes_WAVE_FORMAT_G726ADPCM" data-uid="SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_G726ADPCM">
+  WAVE_FORMAT_G726ADPCM
+  <a class="header-action link-secondary" title="View source" href="https://github.com/thesilvercraft/cscore/blob/master/SilverCraft.CSCore/AudioSubTypes.cs/#L327"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>WAVE_FORMAT_G726ADPCM</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly Guid WAVE_FORMAT_G726ADPCM</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="SilverCraft_CSCore_AudioSubTypes_WAVE_FORMAT_G726_ADPCM" data-uid="SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_G726_ADPCM">
+  WAVE_FORMAT_G726_ADPCM
+  <a class="header-action link-secondary" title="View source" href="https://github.com/thesilvercraft/cscore/blob/master/SilverCraft.CSCore/AudioSubTypes.cs/#L181"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>WAVE_FORMAT_G726_ADPCM</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly Guid WAVE_FORMAT_G726_ADPCM</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="SilverCraft_CSCore_AudioSubTypes_WAVE_FORMAT_G728_CELP" data-uid="SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_G728_CELP">
+  WAVE_FORMAT_G728_CELP
+  <a class="header-action link-secondary" title="View source" href="https://github.com/thesilvercraft/cscore/blob/master/SilverCraft.CSCore/AudioSubTypes.cs/#L148"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>WAVE_FORMAT_G728_CELP</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly Guid WAVE_FORMAT_G728_CELP</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="SilverCraft_CSCore_AudioSubTypes_WAVE_FORMAT_G729A" data-uid="SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_G729A">
+  WAVE_FORMAT_G729A
+  <a class="header-action link-secondary" title="View source" href="https://github.com/thesilvercraft/cscore/blob/master/SilverCraft.CSCore/AudioSubTypes.cs/#L232"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>WAVE_FORMAT_G729A</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly Guid WAVE_FORMAT_G729A</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="SilverCraft_CSCore_AudioSubTypes_WAVE_FORMAT_ILINK_VC" data-uid="SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_ILINK_VC">
+  WAVE_FORMAT_ILINK_VC
+  <a class="header-action link-secondary" title="View source" href="https://github.com/thesilvercraft/cscore/blob/master/SilverCraft.CSCore/AudioSubTypes.cs/#L389"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>WAVE_FORMAT_ILINK_VC</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly Guid WAVE_FORMAT_ILINK_VC</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="SilverCraft_CSCore_AudioSubTypes_WAVE_FORMAT_IPI_HSX" data-uid="SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_IPI_HSX">
+  WAVE_FORMAT_IPI_HSX
+  <a class="header-action link-secondary" title="View source" href="https://github.com/thesilvercraft/cscore/blob/master/SilverCraft.CSCore/AudioSubTypes.cs/#L398"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>WAVE_FORMAT_IPI_HSX</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly Guid WAVE_FORMAT_IPI_HSX</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="SilverCraft_CSCore_AudioSubTypes_WAVE_FORMAT_IPI_RPELP" data-uid="SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_IPI_RPELP">
+  WAVE_FORMAT_IPI_RPELP
+  <a class="header-action link-secondary" title="View source" href="https://github.com/thesilvercraft/cscore/blob/master/SilverCraft.CSCore/AudioSubTypes.cs/#L401"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>WAVE_FORMAT_IPI_RPELP</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly Guid WAVE_FORMAT_IPI_RPELP</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="SilverCraft_CSCore_AudioSubTypes_WAVE_FORMAT_IRAT" data-uid="SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_IRAT">
+  WAVE_FORMAT_IRAT
+  <a class="header-action link-secondary" title="View source" href="https://github.com/thesilvercraft/cscore/blob/master/SilverCraft.CSCore/AudioSubTypes.cs/#L294"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>WAVE_FORMAT_IRAT</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly Guid WAVE_FORMAT_IRAT</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="SilverCraft_CSCore_AudioSubTypes_WAVE_FORMAT_ISIAUDIO" data-uid="SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_ISIAUDIO">
+  WAVE_FORMAT_ISIAUDIO
+  <a class="header-action link-secondary" title="View source" href="https://github.com/thesilvercraft/cscore/blob/master/SilverCraft.CSCore/AudioSubTypes.cs/#L244"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>WAVE_FORMAT_ISIAUDIO</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly Guid WAVE_FORMAT_ISIAUDIO</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="SilverCraft_CSCore_AudioSubTypes_WAVE_FORMAT_LH_CODEC" data-uid="SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_LH_CODEC">
+  WAVE_FORMAT_LH_CODEC
+  <a class="header-action link-secondary" title="View source" href="https://github.com/thesilvercraft/cscore/blob/master/SilverCraft.CSCore/AudioSubTypes.cs/#L440"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>WAVE_FORMAT_LH_CODEC</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly Guid WAVE_FORMAT_LH_CODEC</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="SilverCraft_CSCore_AudioSubTypes_WAVE_FORMAT_LUCENT_G723" data-uid="SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_LUCENT_G723">
+  WAVE_FORMAT_LUCENT_G723
+  <a class="header-action link-secondary" title="View source" href="https://github.com/thesilvercraft/cscore/blob/master/SilverCraft.CSCore/AudioSubTypes.cs/#L166"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>WAVE_FORMAT_LUCENT_G723</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly Guid WAVE_FORMAT_LUCENT_G723</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="SilverCraft_CSCore_AudioSubTypes_WAVE_FORMAT_MALDEN_PHONYTALK" data-uid="SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_MALDEN_PHONYTALK">
+  WAVE_FORMAT_MALDEN_PHONYTALK
+  <a class="header-action link-secondary" title="View source" href="https://github.com/thesilvercraft/cscore/blob/master/SilverCraft.CSCore/AudioSubTypes.cs/#L271"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>WAVE_FORMAT_MALDEN_PHONYTALK</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly Guid WAVE_FORMAT_MALDEN_PHONYTALK</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="SilverCraft_CSCore_AudioSubTypes_WAVE_FORMAT_MEDIASONIC_G723" data-uid="SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_MEDIASONIC_G723">
+  WAVE_FORMAT_MEDIASONIC_G723
+  <a class="header-action link-secondary" title="View source" href="https://github.com/thesilvercraft/cscore/blob/master/SilverCraft.CSCore/AudioSubTypes.cs/#L256"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>WAVE_FORMAT_MEDIASONIC_G723</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly Guid WAVE_FORMAT_MEDIASONIC_G723</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="SilverCraft_CSCore_AudioSubTypes_WAVE_FORMAT_MSAUDIO1" data-uid="SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_MSAUDIO1">
+  WAVE_FORMAT_MSAUDIO1
+  <a class="header-action link-secondary" title="View source" href="https://github.com/thesilvercraft/cscore/blob/master/SilverCraft.CSCore/AudioSubTypes.cs/#L339"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>WAVE_FORMAT_MSAUDIO1</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly Guid WAVE_FORMAT_MSAUDIO1</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="SilverCraft_CSCore_AudioSubTypes_WAVE_FORMAT_MSG723" data-uid="SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_MSG723">
+  WAVE_FORMAT_MSG723
+  <a class="header-action link-secondary" title="View source" href="https://github.com/thesilvercraft/cscore/blob/master/SilverCraft.CSCore/AudioSubTypes.cs/#L151"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>WAVE_FORMAT_MSG723</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly Guid WAVE_FORMAT_MSG723</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="SilverCraft_CSCore_AudioSubTypes_WAVE_FORMAT_MSRT24" data-uid="SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_MSRT24">
+  WAVE_FORMAT_MSRT24
+  <a class="header-action link-secondary" title="View source" href="https://github.com/thesilvercraft/cscore/blob/master/SilverCraft.CSCore/AudioSubTypes.cs/#L229"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>WAVE_FORMAT_MSRT24</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly Guid WAVE_FORMAT_MSRT24</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="SilverCraft_CSCore_AudioSubTypes_WAVE_FORMAT_MVI_MVI2" data-uid="SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_MVI_MVI2">
+  WAVE_FORMAT_MVI_MVI2
+  <a class="header-action link-secondary" title="View source" href="https://github.com/thesilvercraft/cscore/blob/master/SilverCraft.CSCore/AudioSubTypes.cs/#L235"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>WAVE_FORMAT_MVI_MVI2</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly Guid WAVE_FORMAT_MVI_MVI2</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="SilverCraft_CSCore_AudioSubTypes_WAVE_FORMAT_NMS_VBXADPCM" data-uid="SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_NMS_VBXADPCM">
+  WAVE_FORMAT_NMS_VBXADPCM
+  <a class="header-action link-secondary" title="View source" href="https://github.com/thesilvercraft/cscore/blob/master/SilverCraft.CSCore/AudioSubTypes.cs/#L127"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>WAVE_FORMAT_NMS_VBXADPCM</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly Guid WAVE_FORMAT_NMS_VBXADPCM</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="SilverCraft_CSCore_AudioSubTypes_WAVE_FORMAT_NORRIS" data-uid="SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_NORRIS">
+  WAVE_FORMAT_NORRIS
+  <a class="header-action link-secondary" title="View source" href="https://github.com/thesilvercraft/cscore/blob/master/SilverCraft.CSCore/AudioSubTypes.cs/#L443"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>WAVE_FORMAT_NORRIS</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly Guid WAVE_FORMAT_NORRIS</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="SilverCraft_CSCore_AudioSubTypes_WAVE_FORMAT_OLIADPCM" data-uid="SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_OLIADPCM">
+  WAVE_FORMAT_OLIADPCM
+  <a class="header-action link-secondary" title="View source" href="https://github.com/thesilvercraft/cscore/blob/master/SilverCraft.CSCore/AudioSubTypes.cs/#L428"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>WAVE_FORMAT_OLIADPCM</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly Guid WAVE_FORMAT_OLIADPCM</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="SilverCraft_CSCore_AudioSubTypes_WAVE_FORMAT_OLICELP" data-uid="SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_OLICELP">
+  WAVE_FORMAT_OLICELP
+  <a class="header-action link-secondary" title="View source" href="https://github.com/thesilvercraft/cscore/blob/master/SilverCraft.CSCore/AudioSubTypes.cs/#L431"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>WAVE_FORMAT_OLICELP</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly Guid WAVE_FORMAT_OLICELP</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="SilverCraft_CSCore_AudioSubTypes_WAVE_FORMAT_OLIGSM" data-uid="SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_OLIGSM">
+  WAVE_FORMAT_OLIGSM
+  <a class="header-action link-secondary" title="View source" href="https://github.com/thesilvercraft/cscore/blob/master/SilverCraft.CSCore/AudioSubTypes.cs/#L425"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>WAVE_FORMAT_OLIGSM</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly Guid WAVE_FORMAT_OLIGSM</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="SilverCraft_CSCore_AudioSubTypes_WAVE_FORMAT_OLIOPR" data-uid="SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_OLIOPR">
+  WAVE_FORMAT_OLIOPR
+  <a class="header-action link-secondary" title="View source" href="https://github.com/thesilvercraft/cscore/blob/master/SilverCraft.CSCore/AudioSubTypes.cs/#L437"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>WAVE_FORMAT_OLIOPR</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly Guid WAVE_FORMAT_OLIOPR</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="SilverCraft_CSCore_AudioSubTypes_WAVE_FORMAT_OLISBC" data-uid="SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_OLISBC">
+  WAVE_FORMAT_OLISBC
+  <a class="header-action link-secondary" title="View source" href="https://github.com/thesilvercraft/cscore/blob/master/SilverCraft.CSCore/AudioSubTypes.cs/#L434"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>WAVE_FORMAT_OLISBC</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly Guid WAVE_FORMAT_OLISBC</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="SilverCraft_CSCore_AudioSubTypes_WAVE_FORMAT_ONLIVE" data-uid="SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_ONLIVE">
+  WAVE_FORMAT_ONLIVE
+  <a class="header-action link-secondary" title="View source" href="https://github.com/thesilvercraft/cscore/blob/master/SilverCraft.CSCore/AudioSubTypes.cs/#L247"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>WAVE_FORMAT_ONLIVE</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly Guid WAVE_FORMAT_ONLIVE</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="SilverCraft_CSCore_AudioSubTypes_WAVE_FORMAT_PAC" data-uid="SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_PAC">
+  WAVE_FORMAT_PAC
+  <a class="header-action link-secondary" title="View source" href="https://github.com/thesilvercraft/cscore/blob/master/SilverCraft.CSCore/AudioSubTypes.cs/#L160"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>WAVE_FORMAT_PAC</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly Guid WAVE_FORMAT_PAC</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="SilverCraft_CSCore_AudioSubTypes_WAVE_FORMAT_PACKED" data-uid="SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_PACKED">
+  WAVE_FORMAT_PACKED
+  <a class="header-action link-secondary" title="View source" href="https://github.com/thesilvercraft/cscore/blob/master/SilverCraft.CSCore/AudioSubTypes.cs/#L268"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>WAVE_FORMAT_PACKED</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly Guid WAVE_FORMAT_PACKED</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="SilverCraft_CSCore_AudioSubTypes_WAVE_FORMAT_PHILIPS_LPCBB" data-uid="SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_PHILIPS_LPCBB">
+  WAVE_FORMAT_PHILIPS_LPCBB
+  <a class="header-action link-secondary" title="View source" href="https://github.com/thesilvercraft/cscore/blob/master/SilverCraft.CSCore/AudioSubTypes.cs/#L265"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>WAVE_FORMAT_PHILIPS_LPCBB</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly Guid WAVE_FORMAT_PHILIPS_LPCBB</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="SilverCraft_CSCore_AudioSubTypes_WAVE_FORMAT_PROSODY_8KBPS" data-uid="SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_PROSODY_8KBPS">
+  WAVE_FORMAT_PROSODY_8KBPS
+  <a class="header-action link-secondary" title="View source" href="https://github.com/thesilvercraft/cscore/blob/master/SilverCraft.CSCore/AudioSubTypes.cs/#L259"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>WAVE_FORMAT_PROSODY_8KBPS</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly Guid WAVE_FORMAT_PROSODY_8KBPS</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="SilverCraft_CSCore_AudioSubTypes_WAVE_FORMAT_QDESIGN_MUSIC" data-uid="SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_QDESIGN_MUSIC">
+  WAVE_FORMAT_QDESIGN_MUSIC
+  <a class="header-action link-secondary" title="View source" href="https://github.com/thesilvercraft/cscore/blob/master/SilverCraft.CSCore/AudioSubTypes.cs/#L416"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>WAVE_FORMAT_QDESIGN_MUSIC</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly Guid WAVE_FORMAT_QDESIGN_MUSIC</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="SilverCraft_CSCore_AudioSubTypes_WAVE_FORMAT_QUALCOMM_HALFRATE" data-uid="SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_QUALCOMM_HALFRATE">
+  WAVE_FORMAT_QUALCOMM_HALFRATE
+  <a class="header-action link-secondary" title="View source" href="https://github.com/thesilvercraft/cscore/blob/master/SilverCraft.CSCore/AudioSubTypes.cs/#L333"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>WAVE_FORMAT_QUALCOMM_HALFRATE</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly Guid WAVE_FORMAT_QUALCOMM_HALFRATE</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="SilverCraft_CSCore_AudioSubTypes_WAVE_FORMAT_QUALCOMM_PUREVOICE" data-uid="SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_QUALCOMM_PUREVOICE">
+  WAVE_FORMAT_QUALCOMM_PUREVOICE
+  <a class="header-action link-secondary" title="View source" href="https://github.com/thesilvercraft/cscore/blob/master/SilverCraft.CSCore/AudioSubTypes.cs/#L330"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>WAVE_FORMAT_QUALCOMM_PUREVOICE</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly Guid WAVE_FORMAT_QUALCOMM_PUREVOICE</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="SilverCraft_CSCore_AudioSubTypes_WAVE_FORMAT_QUARTERDECK" data-uid="SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_QUARTERDECK">
+  WAVE_FORMAT_QUARTERDECK
+  <a class="header-action link-secondary" title="View source" href="https://github.com/thesilvercraft/cscore/blob/master/SilverCraft.CSCore/AudioSubTypes.cs/#L386"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>WAVE_FORMAT_QUARTERDECK</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly Guid WAVE_FORMAT_QUARTERDECK</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="SilverCraft_CSCore_AudioSubTypes_WAVE_FORMAT_RAW_AAC1" data-uid="SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_RAW_AAC1">
+  WAVE_FORMAT_RAW_AAC1
+  <a class="header-action link-secondary" title="View source" href="https://github.com/thesilvercraft/cscore/blob/master/SilverCraft.CSCore/AudioSubTypes.cs/#L523"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Raw AAC1</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly Guid WAVE_FORMAT_RAW_AAC1</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="SilverCraft_CSCore_AudioSubTypes_WAVE_FORMAT_RAW_SPORT" data-uid="SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_RAW_SPORT">
+  WAVE_FORMAT_RAW_SPORT
+  <a class="header-action link-secondary" title="View source" href="https://github.com/thesilvercraft/cscore/blob/master/SilverCraft.CSCore/AudioSubTypes.cs/#L392"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>WAVE_FORMAT_RAW_SPORT</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly Guid WAVE_FORMAT_RAW_SPORT</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="SilverCraft_CSCore_AudioSubTypes_WAVE_FORMAT_RHETOREX_ADPCM" data-uid="SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_RHETOREX_ADPCM">
+  WAVE_FORMAT_RHETOREX_ADPCM
+  <a class="header-action link-secondary" title="View source" href="https://github.com/thesilvercraft/cscore/blob/master/SilverCraft.CSCore/AudioSubTypes.cs/#L291"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>WAVE_FORMAT_RHETOREX_ADPCM</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly Guid WAVE_FORMAT_RHETOREX_ADPCM</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="SilverCraft_CSCore_AudioSubTypes_WAVE_FORMAT_ROCKWELL_ADPCM" data-uid="SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_ROCKWELL_ADPCM">
+  WAVE_FORMAT_ROCKWELL_ADPCM
+  <a class="header-action link-secondary" title="View source" href="https://github.com/thesilvercraft/cscore/blob/master/SilverCraft.CSCore/AudioSubTypes.cs/#L136"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>WAVE_FORMAT_ROCKWELL_ADPCM</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly Guid WAVE_FORMAT_ROCKWELL_ADPCM</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="SilverCraft_CSCore_AudioSubTypes_WAVE_FORMAT_ROCKWELL_DIGITALK" data-uid="SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_ROCKWELL_DIGITALK">
+  WAVE_FORMAT_ROCKWELL_DIGITALK
+  <a class="header-action link-secondary" title="View source" href="https://github.com/thesilvercraft/cscore/blob/master/SilverCraft.CSCore/AudioSubTypes.cs/#L139"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>WAVE_FORMAT_ROCKWELL_DIGITALK</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly Guid WAVE_FORMAT_ROCKWELL_DIGITALK</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="SilverCraft_CSCore_AudioSubTypes_WAVE_FORMAT_RT24" data-uid="SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_RT24">
+  WAVE_FORMAT_RT24
+  <a class="header-action link-secondary" title="View source" href="https://github.com/thesilvercraft/cscore/blob/master/SilverCraft.CSCore/AudioSubTypes.cs/#L157"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>WAVE_FORMAT_RT24</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly Guid WAVE_FORMAT_RT24</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="SilverCraft_CSCore_AudioSubTypes_WAVE_FORMAT_SANYO_LD_ADPCM" data-uid="SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_SANYO_LD_ADPCM">
+  WAVE_FORMAT_SANYO_LD_ADPCM
+  <a class="header-action link-secondary" title="View source" href="https://github.com/thesilvercraft/cscore/blob/master/SilverCraft.CSCore/AudioSubTypes.cs/#L306"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>WAVE_FORMAT_SANYO_LD_ADPCM</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly Guid WAVE_FORMAT_SANYO_LD_ADPCM</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="SilverCraft_CSCore_AudioSubTypes_WAVE_FORMAT_SBC24" data-uid="SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_SBC24">
+  WAVE_FORMAT_SBC24
+  <a class="header-action link-secondary" title="View source" href="https://github.com/thesilvercraft/cscore/blob/master/SilverCraft.CSCore/AudioSubTypes.cs/#L250"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>WAVE_FORMAT_SBC24</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly Guid WAVE_FORMAT_SBC24</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="SilverCraft_CSCore_AudioSubTypes_WAVE_FORMAT_SIPROLAB_ACELP4800" data-uid="SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_SIPROLAB_ACELP4800">
+  WAVE_FORMAT_SIPROLAB_ACELP4800
+  <a class="header-action link-secondary" title="View source" href="https://github.com/thesilvercraft/cscore/blob/master/SilverCraft.CSCore/AudioSubTypes.cs/#L312"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>WAVE_FORMAT_SIPROLAB_ACELP4800</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly Guid WAVE_FORMAT_SIPROLAB_ACELP4800</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="SilverCraft_CSCore_AudioSubTypes_WAVE_FORMAT_SIPROLAB_ACELP8V3" data-uid="SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_SIPROLAB_ACELP8V3">
+  WAVE_FORMAT_SIPROLAB_ACELP8V3
+  <a class="header-action link-secondary" title="View source" href="https://github.com/thesilvercraft/cscore/blob/master/SilverCraft.CSCore/AudioSubTypes.cs/#L315"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>WAVE_FORMAT_SIPROLAB_ACELP8V3</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly Guid WAVE_FORMAT_SIPROLAB_ACELP8V3</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="SilverCraft_CSCore_AudioSubTypes_WAVE_FORMAT_SIPROLAB_ACEPLNET" data-uid="SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_SIPROLAB_ACEPLNET">
+  WAVE_FORMAT_SIPROLAB_ACEPLNET
+  <a class="header-action link-secondary" title="View source" href="https://github.com/thesilvercraft/cscore/blob/master/SilverCraft.CSCore/AudioSubTypes.cs/#L309"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>WAVE_FORMAT_SIPROLAB_ACEPLNET</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly Guid WAVE_FORMAT_SIPROLAB_ACEPLNET</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="SilverCraft_CSCore_AudioSubTypes_WAVE_FORMAT_SIPROLAB_G729" data-uid="SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_SIPROLAB_G729">
+  WAVE_FORMAT_SIPROLAB_G729
+  <a class="header-action link-secondary" title="View source" href="https://github.com/thesilvercraft/cscore/blob/master/SilverCraft.CSCore/AudioSubTypes.cs/#L318"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>WAVE_FORMAT_SIPROLAB_G729</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly Guid WAVE_FORMAT_SIPROLAB_G729</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="SilverCraft_CSCore_AudioSubTypes_WAVE_FORMAT_SIPROLAB_G729A" data-uid="SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_SIPROLAB_G729A">
+  WAVE_FORMAT_SIPROLAB_G729A
+  <a class="header-action link-secondary" title="View source" href="https://github.com/thesilvercraft/cscore/blob/master/SilverCraft.CSCore/AudioSubTypes.cs/#L321"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>WAVE_FORMAT_SIPROLAB_G729A</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly Guid WAVE_FORMAT_SIPROLAB_G729A</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="SilverCraft_CSCore_AudioSubTypes_WAVE_FORMAT_SIPROLAB_KELVIN" data-uid="SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_SIPROLAB_KELVIN">
+  WAVE_FORMAT_SIPROLAB_KELVIN
+  <a class="header-action link-secondary" title="View source" href="https://github.com/thesilvercraft/cscore/blob/master/SilverCraft.CSCore/AudioSubTypes.cs/#L324"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>WAVE_FORMAT_SIPROLAB_KELVIN</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly Guid WAVE_FORMAT_SIPROLAB_KELVIN</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="SilverCraft_CSCore_AudioSubTypes_WAVE_FORMAT_SOFTSOUND" data-uid="SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_SOFTSOUND">
+  WAVE_FORMAT_SOFTSOUND
+  <a class="header-action link-secondary" title="View source" href="https://github.com/thesilvercraft/cscore/blob/master/SilverCraft.CSCore/AudioSubTypes.cs/#L223"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>WAVE_FORMAT_SOFTSOUND</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly Guid WAVE_FORMAT_SOFTSOUND</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="SilverCraft_CSCore_AudioSubTypes_WAVE_FORMAT_SONY_SCX" data-uid="SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_SONY_SCX">
+  WAVE_FORMAT_SONY_SCX
+  <a class="header-action link-secondary" title="View source" href="https://github.com/thesilvercraft/cscore/blob/master/SilverCraft.CSCore/AudioSubTypes.cs/#L407"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>WAVE_FORMAT_SONY_SCX</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly Guid WAVE_FORMAT_SONY_SCX</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="SilverCraft_CSCore_AudioSubTypes_WAVE_FORMAT_SOUNDSPACE_MUSICOMPRESS" data-uid="SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_SOUNDSPACE_MUSICOMPRESS">
+  WAVE_FORMAT_SOUNDSPACE_MUSICOMPRESS
+  <a class="header-action link-secondary" title="View source" href="https://github.com/thesilvercraft/cscore/blob/master/SilverCraft.CSCore/AudioSubTypes.cs/#L446"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>WAVE_FORMAT_SOUNDSPACE_MUSICOMPRESS</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly Guid WAVE_FORMAT_SOUNDSPACE_MUSICOMPRESS</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="SilverCraft_CSCore_AudioSubTypes_WAVE_FORMAT_TPC" data-uid="SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_TPC">
+  WAVE_FORMAT_TPC
+  <a class="header-action link-secondary" title="View source" href="https://github.com/thesilvercraft/cscore/blob/master/SilverCraft.CSCore/AudioSubTypes.cs/#L422"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>WAVE_FORMAT_TPC</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly Guid WAVE_FORMAT_TPC</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="SilverCraft_CSCore_AudioSubTypes_WAVE_FORMAT_TUBGSM" data-uid="SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_TUBGSM">
+  WAVE_FORMAT_TUBGSM
+  <a class="header-action link-secondary" title="View source" href="https://github.com/thesilvercraft/cscore/blob/master/SilverCraft.CSCore/AudioSubTypes.cs/#L336"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>WAVE_FORMAT_TUBGSM</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly Guid WAVE_FORMAT_TUBGSM</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="SilverCraft_CSCore_AudioSubTypes_WAVE_FORMAT_UHER_ADPCM" data-uid="SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_UHER_ADPCM">
+  WAVE_FORMAT_UHER_ADPCM
+  <a class="header-action link-secondary" title="View source" href="https://github.com/thesilvercraft/cscore/blob/master/SilverCraft.CSCore/AudioSubTypes.cs/#L383"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>WAVE_FORMAT_UHER_ADPCM</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly Guid WAVE_FORMAT_UHER_ADPCM</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="SilverCraft_CSCore_AudioSubTypes_WAVE_FORMAT_UNISYS_NAP_16K" data-uid="SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_UNISYS_NAP_16K">
+  WAVE_FORMAT_UNISYS_NAP_16K
+  <a class="header-action link-secondary" title="View source" href="https://github.com/thesilvercraft/cscore/blob/master/SilverCraft.CSCore/AudioSubTypes.cs/#L371"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>WAVE_FORMAT_UNISYS_NAP_16K</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly Guid WAVE_FORMAT_UNISYS_NAP_16K</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="SilverCraft_CSCore_AudioSubTypes_WAVE_FORMAT_UNISYS_NAP_ADPCM" data-uid="SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_UNISYS_NAP_ADPCM">
+  WAVE_FORMAT_UNISYS_NAP_ADPCM
+  <a class="header-action link-secondary" title="View source" href="https://github.com/thesilvercraft/cscore/blob/master/SilverCraft.CSCore/AudioSubTypes.cs/#L362"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>WAVE_FORMAT_UNISYS_NAP_ADPCM</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly Guid WAVE_FORMAT_UNISYS_NAP_ADPCM</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="SilverCraft_CSCore_AudioSubTypes_WAVE_FORMAT_UNISYS_NAP_ALAW" data-uid="SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_UNISYS_NAP_ALAW">
+  WAVE_FORMAT_UNISYS_NAP_ALAW
+  <a class="header-action link-secondary" title="View source" href="https://github.com/thesilvercraft/cscore/blob/master/SilverCraft.CSCore/AudioSubTypes.cs/#L368"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>WAVE_FORMAT_UNISYS_NAP_ALAW</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly Guid WAVE_FORMAT_UNISYS_NAP_ALAW</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="SilverCraft_CSCore_AudioSubTypes_WAVE_FORMAT_UNISYS_NAP_ULAW" data-uid="SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_UNISYS_NAP_ULAW">
+  WAVE_FORMAT_UNISYS_NAP_ULAW
+  <a class="header-action link-secondary" title="View source" href="https://github.com/thesilvercraft/cscore/blob/master/SilverCraft.CSCore/AudioSubTypes.cs/#L365"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>WAVE_FORMAT_UNISYS_NAP_ULAW</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly Guid WAVE_FORMAT_UNISYS_NAP_ULAW</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="SilverCraft_CSCore_AudioSubTypes_WAVE_FORMAT_VIVO_G723" data-uid="SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_VIVO_G723">
+  WAVE_FORMAT_VIVO_G723
+  <a class="header-action link-secondary" title="View source" href="https://github.com/thesilvercraft/cscore/blob/master/SilverCraft.CSCore/AudioSubTypes.cs/#L297"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>WAVE_FORMAT_VIVO_G723</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly Guid WAVE_FORMAT_VIVO_G723</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="SilverCraft_CSCore_AudioSubTypes_WAVE_FORMAT_VIVO_SIREN" data-uid="SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_VIVO_SIREN">
+  WAVE_FORMAT_VIVO_SIREN
+  <a class="header-action link-secondary" title="View source" href="https://github.com/thesilvercraft/cscore/blob/master/SilverCraft.CSCore/AudioSubTypes.cs/#L300"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>WAVE_FORMAT_VIVO_SIREN</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly Guid WAVE_FORMAT_VIVO_SIREN</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="SilverCraft_CSCore_AudioSubTypes_WAVE_FORMAT_VME_VMPCM" data-uid="SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_VME_VMPCM">
+  WAVE_FORMAT_VME_VMPCM
+  <a class="header-action link-secondary" title="View source" href="https://github.com/thesilvercraft/cscore/blob/master/SilverCraft.CSCore/AudioSubTypes.cs/#L419"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>WAVE_FORMAT_VME_VMPCM</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly Guid WAVE_FORMAT_VME_VMPCM</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="SilverCraft_CSCore_AudioSubTypes_WAVE_FORMAT_VOXWARE" data-uid="SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_VOXWARE">
+  WAVE_FORMAT_VOXWARE
+  <a class="header-action link-secondary" title="View source" href="https://github.com/thesilvercraft/cscore/blob/master/SilverCraft.CSCore/AudioSubTypes.cs/#L175"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>WAVE_FORMAT_VOXWARE</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly Guid WAVE_FORMAT_VOXWARE</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="SilverCraft_CSCore_AudioSubTypes_WAVE_FORMAT_VOXWARE_AC10" data-uid="SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_VOXWARE_AC10">
+  WAVE_FORMAT_VOXWARE_AC10
+  <a class="header-action link-secondary" title="View source" href="https://github.com/thesilvercraft/cscore/blob/master/SilverCraft.CSCore/AudioSubTypes.cs/#L196"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>WAVE_FORMAT_VOXWARE_AC10</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly Guid WAVE_FORMAT_VOXWARE_AC10</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="SilverCraft_CSCore_AudioSubTypes_WAVE_FORMAT_VOXWARE_AC16" data-uid="SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_VOXWARE_AC16">
+  WAVE_FORMAT_VOXWARE_AC16
+  <a class="header-action link-secondary" title="View source" href="https://github.com/thesilvercraft/cscore/blob/master/SilverCraft.CSCore/AudioSubTypes.cs/#L199"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>WAVE_FORMAT_VOXWARE_AC16</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly Guid WAVE_FORMAT_VOXWARE_AC16</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="SilverCraft_CSCore_AudioSubTypes_WAVE_FORMAT_VOXWARE_AC20" data-uid="SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_VOXWARE_AC20">
+  WAVE_FORMAT_VOXWARE_AC20
+  <a class="header-action link-secondary" title="View source" href="https://github.com/thesilvercraft/cscore/blob/master/SilverCraft.CSCore/AudioSubTypes.cs/#L202"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>WAVE_FORMAT_VOXWARE_AC20</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly Guid WAVE_FORMAT_VOXWARE_AC20</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="SilverCraft_CSCore_AudioSubTypes_WAVE_FORMAT_VOXWARE_AC8" data-uid="SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_VOXWARE_AC8">
+  WAVE_FORMAT_VOXWARE_AC8
+  <a class="header-action link-secondary" title="View source" href="https://github.com/thesilvercraft/cscore/blob/master/SilverCraft.CSCore/AudioSubTypes.cs/#L193"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>WAVE_FORMAT_VOXWARE_AC8</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly Guid WAVE_FORMAT_VOXWARE_AC8</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="SilverCraft_CSCore_AudioSubTypes_WAVE_FORMAT_VOXWARE_BYTE_ALIGNED" data-uid="SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_VOXWARE_BYTE_ALIGNED">
+  WAVE_FORMAT_VOXWARE_BYTE_ALIGNED
+  <a class="header-action link-secondary" title="View source" href="https://github.com/thesilvercraft/cscore/blob/master/SilverCraft.CSCore/AudioSubTypes.cs/#L190"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>WAVE_FORMAT_VOXWARE_BYTE_ALIGNED</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly Guid WAVE_FORMAT_VOXWARE_BYTE_ALIGNED</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="SilverCraft_CSCore_AudioSubTypes_WAVE_FORMAT_VOXWARE_RT24" data-uid="SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_VOXWARE_RT24">
+  WAVE_FORMAT_VOXWARE_RT24
+  <a class="header-action link-secondary" title="View source" href="https://github.com/thesilvercraft/cscore/blob/master/SilverCraft.CSCore/AudioSubTypes.cs/#L205"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>WAVE_FORMAT_VOXWARE_RT24</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly Guid WAVE_FORMAT_VOXWARE_RT24</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="SilverCraft_CSCore_AudioSubTypes_WAVE_FORMAT_VOXWARE_RT29" data-uid="SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_VOXWARE_RT29">
+  WAVE_FORMAT_VOXWARE_RT29
+  <a class="header-action link-secondary" title="View source" href="https://github.com/thesilvercraft/cscore/blob/master/SilverCraft.CSCore/AudioSubTypes.cs/#L208"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>WAVE_FORMAT_VOXWARE_RT29</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly Guid WAVE_FORMAT_VOXWARE_RT29</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="SilverCraft_CSCore_AudioSubTypes_WAVE_FORMAT_VOXWARE_RT29HW" data-uid="SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_VOXWARE_RT29HW">
+  WAVE_FORMAT_VOXWARE_RT29HW
+  <a class="header-action link-secondary" title="View source" href="https://github.com/thesilvercraft/cscore/blob/master/SilverCraft.CSCore/AudioSubTypes.cs/#L211"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>WAVE_FORMAT_VOXWARE_RT29HW</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly Guid WAVE_FORMAT_VOXWARE_RT29HW</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="SilverCraft_CSCore_AudioSubTypes_WAVE_FORMAT_VOXWARE_TQ40" data-uid="SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_VOXWARE_TQ40">
+  WAVE_FORMAT_VOXWARE_TQ40
+  <a class="header-action link-secondary" title="View source" href="https://github.com/thesilvercraft/cscore/blob/master/SilverCraft.CSCore/AudioSubTypes.cs/#L220"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>WAVE_FORMAT_VOXWARE_TQ40</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly Guid WAVE_FORMAT_VOXWARE_TQ40</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="SilverCraft_CSCore_AudioSubTypes_WAVE_FORMAT_VOXWARE_TQ60" data-uid="SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_VOXWARE_TQ60">
+  WAVE_FORMAT_VOXWARE_TQ60
+  <a class="header-action link-secondary" title="View source" href="https://github.com/thesilvercraft/cscore/blob/master/SilverCraft.CSCore/AudioSubTypes.cs/#L226"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>WAVE_FORMAT_VOXWARE_TQ60</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly Guid WAVE_FORMAT_VOXWARE_TQ60</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="SilverCraft_CSCore_AudioSubTypes_WAVE_FORMAT_VOXWARE_VR12" data-uid="SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_VOXWARE_VR12">
+  WAVE_FORMAT_VOXWARE_VR12
+  <a class="header-action link-secondary" title="View source" href="https://github.com/thesilvercraft/cscore/blob/master/SilverCraft.CSCore/AudioSubTypes.cs/#L214"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>WAVE_FORMAT_VOXWARE_VR12</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly Guid WAVE_FORMAT_VOXWARE_VR12</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="SilverCraft_CSCore_AudioSubTypes_WAVE_FORMAT_VOXWARE_VR18" data-uid="SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_VOXWARE_VR18">
+  WAVE_FORMAT_VOXWARE_VR18
+  <a class="header-action link-secondary" title="View source" href="https://github.com/thesilvercraft/cscore/blob/master/SilverCraft.CSCore/AudioSubTypes.cs/#L217"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>WAVE_FORMAT_VOXWARE_VR18</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly Guid WAVE_FORMAT_VOXWARE_VR18</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="SilverCraft_CSCore_AudioSubTypes_WAVE_FORMAT_WMAVOICE9" data-uid="SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_WMAVOICE9">
+  WAVE_FORMAT_WMAVOICE9
+  <a class="header-action link-secondary" title="View source" href="https://github.com/thesilvercraft/cscore/blob/master/SilverCraft.CSCore/AudioSubTypes.cs/#L528"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Windows Media Audio Voice (WMA Voice)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly Guid WAVE_FORMAT_WMAVOICE9</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="SilverCraft_CSCore_AudioSubTypes_WAVE_FORMAT_XEBEC" data-uid="SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_XEBEC">
+  WAVE_FORMAT_XEBEC
+  <a class="header-action link-secondary" title="View source" href="https://github.com/thesilvercraft/cscore/blob/master/SilverCraft.CSCore/AudioSubTypes.cs/#L142"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>WAVE_FORMAT_XEBEC</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly Guid WAVE_FORMAT_XEBEC</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="SilverCraft_CSCore_AudioSubTypes_WAVE_FORMAT_ZYXEL_ADPCM" data-uid="SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_ZYXEL_ADPCM">
+  WAVE_FORMAT_ZYXEL_ADPCM
+  <a class="header-action link-secondary" title="View source" href="https://github.com/thesilvercraft/cscore/blob/master/SilverCraft.CSCore/AudioSubTypes.cs/#L262"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>WAVE_FORMAT_ZYXEL_ADPCM</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly Guid WAVE_FORMAT_ZYXEL_ADPCM</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="SilverCraft_CSCore_AudioSubTypes_WindowsMediaAudio" data-uid="SilverCraft.CSCore.AudioSubTypes.WindowsMediaAudio">
+  WindowsMediaAudio
+  <a class="header-action link-secondary" title="View source" href="https://github.com/thesilvercraft/cscore/blob/master/SilverCraft.CSCore/AudioSubTypes.cs/#L344"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Windows Media Audio, WAVE_FORMAT_WMAUDIO2, Microsoft Corporation</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly Guid WindowsMediaAudio</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="SilverCraft_CSCore_AudioSubTypes_WindowsMediaAudioLosseless" data-uid="SilverCraft.CSCore.AudioSubTypes.WindowsMediaAudioLosseless">
+  WindowsMediaAudioLosseless
+  <a class="header-action link-secondary" title="View source" href="https://github.com/thesilvercraft/cscore/blob/master/SilverCraft.CSCore/AudioSubTypes.cs/#L354"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Windows Media Audio Lossless, WAVE_FORMAT_WMAUDIO_LOSSLESS</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly Guid WindowsMediaAudioLosseless</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="SilverCraft_CSCore_AudioSubTypes_WindowsMediaAudioProfessional" data-uid="SilverCraft.CSCore.AudioSubTypes.WindowsMediaAudioProfessional">
+  WindowsMediaAudioProfessional
+  <a class="header-action link-secondary" title="View source" href="https://github.com/thesilvercraft/cscore/blob/master/SilverCraft.CSCore/AudioSubTypes.cs/#L349"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Windows Media Audio Professional WAVE_FORMAT_WMAUDIO3, Microsoft Corporation</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly Guid WindowsMediaAudioProfessional</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="SilverCraft_CSCore_AudioSubTypes_WindowsMediaAudioSpdif" data-uid="SilverCraft.CSCore.AudioSubTypes.WindowsMediaAudioSpdif">
+  WindowsMediaAudioSpdif
+  <a class="header-action link-secondary" title="View source" href="https://github.com/thesilvercraft/cscore/blob/master/SilverCraft.CSCore/AudioSubTypes.cs/#L359"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Windows Media Audio Professional over SPDIF WAVE_FORMAT_WMASPDIF (0x0164)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly Guid WindowsMediaAudioSpdif</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="SilverCraft_CSCore_AudioSubTypes_WmaVoice9" data-uid="SilverCraft.CSCore.AudioSubTypes.WmaVoice9">
+  WmaVoice9
+  <a class="header-action link-secondary" title="View source" href="https://github.com/thesilvercraft/cscore/blob/master/SilverCraft.CSCore/AudioSubTypes.cs/#L40"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>WAVE_FORMAT_WMAVOICE9</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly Guid WmaVoice9</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="SilverCraft_CSCore_AudioSubTypes_YamahaAdpcm" data-uid="SilverCraft.CSCore.AudioSubTypes.YamahaAdpcm">
+  YamahaAdpcm
+  <a class="header-action link-secondary" title="View source" href="https://github.com/thesilvercraft/cscore/blob/master/SilverCraft.CSCore/AudioSubTypes.cs/#L76"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>WAVE_FORMAT_YAMAHA_ADPCM Yamaha Corporation of America</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly Guid YamahaAdpcm</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="SilverCraft_CSCore_AudioSubTypes_EncodingFromSubType_" data-uid="SilverCraft.CSCore.AudioSubTypes.EncodingFromSubType*"></a>
+
+  <h3 id="SilverCraft_CSCore_AudioSubTypes_EncodingFromSubType_System_Guid_" data-uid="SilverCraft.CSCore.AudioSubTypes.EncodingFromSubType(System.Guid)">
+  EncodingFromSubType(Guid)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/thesilvercraft/cscore/blob/master/SilverCraft.CSCore/AudioSubTypes.Utils.cs/#L16"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Converts a <a class="xref" href="SilverCraft.CSCore.AudioSubTypes.html">AudioSubTypes</a>-value to a <a class="xref" href="SilverCraft.CSCore.AudioEncoding.html">AudioEncoding</a>-value.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static AudioEncoding EncodingFromSubType(Guid audioSubType)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>audioSubType</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></dt>
+    <dd><p>The <a class="xref" href="SilverCraft.CSCore.AudioSubTypes.html">AudioSubTypes</a>-value to convert to the equivalent <a class="xref" href="SilverCraft.CSCore.AudioEncoding.html">AudioEncoding</a>-value.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="SilverCraft.CSCore.AudioEncoding.html">AudioEncoding</a></dt>
+    <dd><p>The <a class="xref" href="SilverCraft.CSCore.AudioEncoding.html">AudioEncoding</a> which belongs to the specified <code class="paramref">audioSubType</code>.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SilverCraft_CSCore_AudioSubTypes_SubTypeFromEncoding_" data-uid="SilverCraft.CSCore.AudioSubTypes.SubTypeFromEncoding*"></a>
+
+  <h3 id="SilverCraft_CSCore_AudioSubTypes_SubTypeFromEncoding_SilverCraft_CSCore_AudioEncoding_" data-uid="SilverCraft.CSCore.AudioSubTypes.SubTypeFromEncoding(SilverCraft.CSCore.AudioEncoding)">
+  SubTypeFromEncoding(AudioEncoding)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/thesilvercraft/cscore/blob/master/SilverCraft.CSCore/AudioSubTypes.Utils.cs/#L31"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Converts a <a class="xref" href="SilverCraft.CSCore.AudioEncoding.html">AudioEncoding</a> value to a <a class="xref" href="SilverCraft.CSCore.AudioSubTypes.html">AudioSubTypes</a>-value.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Guid SubTypeFromEncoding(AudioEncoding audioEncoding)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>audioEncoding</code> <a class="xref" href="SilverCraft.CSCore.AudioEncoding.html">AudioEncoding</a></dt>
+    <dd><p>The <a class="xref" href="SilverCraft.CSCore.AudioEncoding.html">AudioEncoding</a> to convert to the equivalent <a class="xref" href="SilverCraft.CSCore.AudioSubTypes.html">AudioSubTypes</a>-value.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></dt>
+    <dd><p>The <a class="xref" href="SilverCraft.CSCore.AudioSubTypes.html">AudioSubTypes</a>-value which belongs to the specified <code class="paramref">audioEncoding</code>.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/thesilvercraft/cscore/blob/master/SilverCraft.CSCore/AudioSubTypes.Utils.cs/#L9" class="edit-link">Edit this page</a>
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,192 @@
+### YamlMime:ManagedReference
+items:
+- uid: SilverCraft.CSCore.SoundOut.AL.ALSourceState
+  commentId: T:SilverCraft.CSCore.SoundOut.AL.ALSourceState
+  id: ALSourceState
+  parent: SilverCraft.CSCore.SoundOut.AL
+  children:
+  - SilverCraft.CSCore.SoundOut.AL.ALSourceState.Initializing
+  - SilverCraft.CSCore.SoundOut.AL.ALSourceState.Paused
+  - SilverCraft.CSCore.SoundOut.AL.ALSourceState.Playing
+  - SilverCraft.CSCore.SoundOut.AL.ALSourceState.Stopped
+  langs:
+  - csharp
+  - vb
+  name: ALSourceState
+  nameWithType: ALSourceState
+  fullName: SilverCraft.CSCore.SoundOut.AL.ALSourceState
+  type: Enum
+  source:
+    remote:
+      path: SilverCraft.CSCore/SoundOut/AL/ALSourceState.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: ALSourceState
+    path: ../SilverCraft.CSCore/SoundOut/AL/ALSourceState.cs
+    startLine: 7
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.SoundOut.AL
+  summary: Defines source states.
+  example: []
+  syntax:
+    content: public enum ALSourceState
+    content.vb: Public Enum ALSourceState
+- uid: SilverCraft.CSCore.SoundOut.AL.ALSourceState.Initializing
+  commentId: F:SilverCraft.CSCore.SoundOut.AL.ALSourceState.Initializing
+  id: Initializing
+  parent: SilverCraft.CSCore.SoundOut.AL.ALSourceState
+  langs:
+  - csharp
+  - vb
+  name: Initializing
+  nameWithType: ALSourceState.Initializing
+  fullName: SilverCraft.CSCore.SoundOut.AL.ALSourceState.Initializing
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/SoundOut/AL/ALSourceState.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: Initializing
+    path: ../SilverCraft.CSCore/SoundOut/AL/ALSourceState.cs
+    startLine: 12
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.SoundOut.AL
+  summary: Initializing
+  example: []
+  syntax:
+    content: Initializing = 4113
+    return:
+      type: SilverCraft.CSCore.SoundOut.AL.ALSourceState
+- uid: SilverCraft.CSCore.SoundOut.AL.ALSourceState.Playing
+  commentId: F:SilverCraft.CSCore.SoundOut.AL.ALSourceState.Playing
+  id: Playing
+  parent: SilverCraft.CSCore.SoundOut.AL.ALSourceState
+  langs:
+  - csharp
+  - vb
+  name: Playing
+  nameWithType: ALSourceState.Playing
+  fullName: SilverCraft.CSCore.SoundOut.AL.ALSourceState.Playing
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/SoundOut/AL/ALSourceState.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: Playing
+    path: ../SilverCraft.CSCore/SoundOut/AL/ALSourceState.cs
+    startLine: 17
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.SoundOut.AL
+  summary: Playing
+  example: []
+  syntax:
+    content: Playing = 4114
+    return:
+      type: SilverCraft.CSCore.SoundOut.AL.ALSourceState
+- uid: SilverCraft.CSCore.SoundOut.AL.ALSourceState.Paused
+  commentId: F:SilverCraft.CSCore.SoundOut.AL.ALSourceState.Paused
+  id: Paused
+  parent: SilverCraft.CSCore.SoundOut.AL.ALSourceState
+  langs:
+  - csharp
+  - vb
+  name: Paused
+  nameWithType: ALSourceState.Paused
+  fullName: SilverCraft.CSCore.SoundOut.AL.ALSourceState.Paused
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/SoundOut/AL/ALSourceState.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: Paused
+    path: ../SilverCraft.CSCore/SoundOut/AL/ALSourceState.cs
+    startLine: 22
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.SoundOut.AL
+  summary: Paused
+  example: []
+  syntax:
+    content: Paused = 4115
+    return:
+      type: SilverCraft.CSCore.SoundOut.AL.ALSourceState
+- uid: SilverCraft.CSCore.SoundOut.AL.ALSourceState.Stopped
+  commentId: F:SilverCraft.CSCore.SoundOut.AL.ALSourceState.Stopped
+  id: Stopped
+  parent: SilverCraft.CSCore.SoundOut.AL.ALSourceState
+  langs:
+  - csharp
+  - vb
+  name: Stopped
+  nameWithType: ALSourceState.Stopped
+  fullName: SilverCraft.CSCore.SoundOut.AL.ALSourceState.Stopped
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/SoundOut/AL/ALSourceState.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: Stopped
+    path: ../SilverCraft.CSCore/SoundOut/AL/ALSourceState.cs
+    startLine: 27
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.SoundOut.AL
+  summary: Stopped
+  example: []
+  syntax:
+    content: Stopped = 4116
+    return:
+      type: SilverCraft.CSCore.SoundOut.AL.ALSourceState
+references:
+- uid: SilverCraft.CSCore.SoundOut.AL
+  commentId: N:SilverCraft.CSCore.SoundOut.AL
+  href: SilverCraft.html
+  name: SilverCraft.CSCore.SoundOut.AL
+  nameWithType: SilverCraft.CSCore.SoundOut.AL
+  fullName: SilverCraft.CSCore.SoundOut.AL
+  spec.csharp:
+  - uid: SilverCraft
+    name: SilverCraft
+    href: SilverCraft.html
+  - name: .
+  - uid: SilverCraft.CSCore
+    name: CSCore
+    href: SilverCraft.CSCore.html
+  - name: .
+  - uid: SilverCraft.CSCore.SoundOut
+    name: SoundOut
+    href: SilverCraft.CSCore.SoundOut.html
+  - name: .
+  - uid: SilverCraft.CSCore.SoundOut.AL
+    name: AL
+    href: SilverCraft.CSCore.SoundOut.AL.html
+  spec.vb:
+  - uid: SilverCraft
+    name: SilverCraft
+    href: SilverCraft.html
+  - name: .
+  - uid: SilverCraft.CSCore
+    name: CSCore
+    href: SilverCraft.CSCore.html
+  - name: .
+  - uid: SilverCraft.CSCore.SoundOut
+    name: SoundOut
+    href: SilverCraft.CSCore.SoundOut.html
+  - name: .
+  - uid: SilverCraft.CSCore.SoundOut.AL
+    name: AL
+    href: SilverCraft.CSCore.SoundOut.AL.html
+- uid: SilverCraft.CSCore.SoundOut.AL.ALSourceState
+  commentId: T:SilverCraft.CSCore.SoundOut.AL.ALSourceState
+  parent: SilverCraft.CSCore.SoundOut.AL
+  href: SilverCraft.CSCore.SoundOut.AL.ALSourceState.html
+  name: ALSourceState
+  nameWithType: ALSourceState
+  fullName: SilverCraft.CSCore.SoundOut.AL.ALSourceState

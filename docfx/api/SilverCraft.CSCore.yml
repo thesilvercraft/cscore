@@ -1,0 +1,288 @@
+### YamlMime:ManagedReference
+items:
+- uid: SilverCraft.CSCore
+  commentId: N:SilverCraft.CSCore
+  id: SilverCraft.CSCore
+  children:
+  - SilverCraft.CSCore.AudioEncoding
+  - SilverCraft.CSCore.AudioSubTypes
+  - SilverCraft.CSCore.ChannelMask
+  - SilverCraft.CSCore.ChannelMasks
+  - SilverCraft.CSCore.Extensions
+  - SilverCraft.CSCore.FluentExtensions
+  - SilverCraft.CSCore.IAggregator`2
+  - SilverCraft.CSCore.IAudioSource
+  - SilverCraft.CSCore.IChannelMapperFactory
+  - SilverCraft.CSCore.IReadableAudioSource`1
+  - SilverCraft.CSCore.IResamplerFactory
+  - SilverCraft.CSCore.ISampleAggregator
+  - SilverCraft.CSCore.ISampleSource
+  - SilverCraft.CSCore.IWaveAggregator
+  - SilverCraft.CSCore.IWaveSource
+  - SilverCraft.CSCore.IWriteable
+  - SilverCraft.CSCore.Locator
+  - SilverCraft.CSCore.LogLocation
+  - SilverCraft.CSCore.SampleAggregatorBase
+  - SilverCraft.CSCore.Settings
+  - SilverCraft.CSCore.StoppedEventArgs
+  - SilverCraft.CSCore.TimeConverter
+  - SilverCraft.CSCore.TimeConverterAttribute
+  - SilverCraft.CSCore.TimeConverterFactory
+  - SilverCraft.CSCore.WaveAggregatorBase
+  - SilverCraft.CSCore.WaveFormat
+  - SilverCraft.CSCore.WaveFormatExtensible
+  langs:
+  - csharp
+  - vb
+  name: SilverCraft.CSCore
+  nameWithType: SilverCraft.CSCore
+  fullName: SilverCraft.CSCore
+  type: Namespace
+  assemblies:
+  - SilverCraft.CSCore
+references:
+- uid: SilverCraft.CSCore.AudioEncoding
+  commentId: T:SilverCraft.CSCore.AudioEncoding
+  parent: SilverCraft.CSCore
+  href: SilverCraft.CSCore.AudioEncoding.html
+  name: AudioEncoding
+  nameWithType: AudioEncoding
+  fullName: SilverCraft.CSCore.AudioEncoding
+- uid: SilverCraft.CSCore.AudioSubTypes
+  commentId: T:SilverCraft.CSCore.AudioSubTypes
+  href: SilverCraft.CSCore.AudioSubTypes.html
+  name: AudioSubTypes
+  nameWithType: AudioSubTypes
+  fullName: SilverCraft.CSCore.AudioSubTypes
+- uid: SilverCraft.CSCore.ChannelMask
+  commentId: T:SilverCraft.CSCore.ChannelMask
+  parent: SilverCraft.CSCore
+  href: SilverCraft.CSCore.ChannelMask.html
+  name: ChannelMask
+  nameWithType: ChannelMask
+  fullName: SilverCraft.CSCore.ChannelMask
+- uid: SilverCraft.CSCore.ChannelMasks
+  commentId: T:SilverCraft.CSCore.ChannelMasks
+  href: SilverCraft.CSCore.ChannelMasks.html
+  name: ChannelMasks
+  nameWithType: ChannelMasks
+  fullName: SilverCraft.CSCore.ChannelMasks
+- uid: SilverCraft.CSCore.Extensions
+  commentId: T:SilverCraft.CSCore.Extensions
+  parent: SilverCraft.CSCore
+  href: SilverCraft.CSCore.Extensions.html
+  name: Extensions
+  nameWithType: Extensions
+  fullName: SilverCraft.CSCore.Extensions
+- uid: SilverCraft.CSCore.FluentExtensions
+  commentId: T:SilverCraft.CSCore.FluentExtensions
+  parent: SilverCraft.CSCore
+  href: SilverCraft.CSCore.FluentExtensions.html
+  name: FluentExtensions
+  nameWithType: FluentExtensions
+  fullName: SilverCraft.CSCore.FluentExtensions
+- uid: SilverCraft.CSCore.IAudioSource
+  commentId: T:SilverCraft.CSCore.IAudioSource
+  parent: SilverCraft.CSCore
+  href: SilverCraft.CSCore.IAudioSource.html
+  name: IAudioSource
+  nameWithType: IAudioSource
+  fullName: SilverCraft.CSCore.IAudioSource
+- uid: SilverCraft.CSCore.IChannelMapperFactory
+  commentId: T:SilverCraft.CSCore.IChannelMapperFactory
+  href: SilverCraft.CSCore.IChannelMapperFactory.html
+  name: IChannelMapperFactory
+  nameWithType: IChannelMapperFactory
+  fullName: SilverCraft.CSCore.IChannelMapperFactory
+- uid: SilverCraft.CSCore.IReadableAudioSource`1
+  commentId: T:SilverCraft.CSCore.IReadableAudioSource`1
+  href: SilverCraft.CSCore.IReadableAudioSource-1.html
+  name: IReadableAudioSource<T>
+  nameWithType: IReadableAudioSource<T>
+  fullName: SilverCraft.CSCore.IReadableAudioSource<T>
+  nameWithType.vb: IReadableAudioSource(Of T)
+  fullName.vb: SilverCraft.CSCore.IReadableAudioSource(Of T)
+  name.vb: IReadableAudioSource(Of T)
+  spec.csharp:
+  - uid: SilverCraft.CSCore.IReadableAudioSource`1
+    name: IReadableAudioSource
+    href: SilverCraft.CSCore.IReadableAudioSource-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: SilverCraft.CSCore.IReadableAudioSource`1
+    name: IReadableAudioSource
+    href: SilverCraft.CSCore.IReadableAudioSource-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: SilverCraft.CSCore.IResamplerFactory
+  commentId: T:SilverCraft.CSCore.IResamplerFactory
+  href: SilverCraft.CSCore.IResamplerFactory.html
+  name: IResamplerFactory
+  nameWithType: IResamplerFactory
+  fullName: SilverCraft.CSCore.IResamplerFactory
+- uid: SilverCraft.CSCore.ISampleSource
+  commentId: T:SilverCraft.CSCore.ISampleSource
+  parent: SilverCraft.CSCore
+  href: SilverCraft.CSCore.ISampleSource.html
+  name: ISampleSource
+  nameWithType: ISampleSource
+  fullName: SilverCraft.CSCore.ISampleSource
+- uid: SilverCraft.CSCore.ISampleAggregator
+  commentId: T:SilverCraft.CSCore.ISampleAggregator
+  parent: SilverCraft.CSCore
+  href: SilverCraft.CSCore.ISampleAggregator.html
+  name: ISampleAggregator
+  nameWithType: ISampleAggregator
+  fullName: SilverCraft.CSCore.ISampleAggregator
+- uid: SilverCraft.CSCore.IWaveAggregator
+  commentId: T:SilverCraft.CSCore.IWaveAggregator
+  parent: SilverCraft.CSCore
+  href: SilverCraft.CSCore.IWaveAggregator.html
+  name: IWaveAggregator
+  nameWithType: IWaveAggregator
+  fullName: SilverCraft.CSCore.IWaveAggregator
+- uid: SilverCraft.CSCore.IAggregator`2
+  commentId: T:SilverCraft.CSCore.IAggregator`2
+  href: SilverCraft.CSCore.IAggregator-2.html
+  name: IAggregator<T, TAggregator>
+  nameWithType: IAggregator<T, TAggregator>
+  fullName: SilverCraft.CSCore.IAggregator<T, TAggregator>
+  nameWithType.vb: IAggregator(Of T, TAggregator)
+  fullName.vb: SilverCraft.CSCore.IAggregator(Of T, TAggregator)
+  name.vb: IAggregator(Of T, TAggregator)
+  spec.csharp:
+  - uid: SilverCraft.CSCore.IAggregator`2
+    name: IAggregator
+    href: SilverCraft.CSCore.IAggregator-2.html
+  - name: <
+  - name: T
+  - name: ','
+  - name: " "
+  - name: TAggregator
+  - name: '>'
+  spec.vb:
+  - uid: SilverCraft.CSCore.IAggregator`2
+    name: IAggregator
+    href: SilverCraft.CSCore.IAggregator-2.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - name: TAggregator
+  - name: )
+- uid: SilverCraft.CSCore.IWaveSource
+  commentId: T:SilverCraft.CSCore.IWaveSource
+  parent: SilverCraft.CSCore
+  href: SilverCraft.CSCore.IWaveSource.html
+  name: IWaveSource
+  nameWithType: IWaveSource
+  fullName: SilverCraft.CSCore.IWaveSource
+- uid: SilverCraft.CSCore.IWriteable
+  commentId: T:SilverCraft.CSCore.IWriteable
+  parent: SilverCraft.CSCore
+  href: SilverCraft.CSCore.IWriteable.html
+  name: IWriteable
+  nameWithType: IWriteable
+  fullName: SilverCraft.CSCore.IWriteable
+- uid: SilverCraft.CSCore.Locator
+  commentId: T:SilverCraft.CSCore.Locator
+  parent: SilverCraft.CSCore
+  href: SilverCraft.CSCore.Locator.html
+  name: Locator
+  nameWithType: Locator
+  fullName: SilverCraft.CSCore.Locator
+- uid: SilverCraft.CSCore.LogLocation
+  commentId: T:SilverCraft.CSCore.LogLocation
+  href: SilverCraft.CSCore.LogLocation.html
+  name: LogLocation
+  nameWithType: LogLocation
+  fullName: SilverCraft.CSCore.LogLocation
+- uid: SilverCraft.CSCore.SampleAggregatorBase
+  commentId: T:SilverCraft.CSCore.SampleAggregatorBase
+  parent: SilverCraft.CSCore
+  href: SilverCraft.CSCore.SampleAggregatorBase.html
+  name: SampleAggregatorBase
+  nameWithType: SampleAggregatorBase
+  fullName: SilverCraft.CSCore.SampleAggregatorBase
+- uid: SilverCraft.CSCore.Settings
+  commentId: T:SilverCraft.CSCore.Settings
+  href: SilverCraft.CSCore.Settings.html
+  name: Settings
+  nameWithType: Settings
+  fullName: SilverCraft.CSCore.Settings
+- uid: SilverCraft.CSCore.StoppedEventArgs
+  commentId: T:SilverCraft.CSCore.StoppedEventArgs
+  parent: SilverCraft.CSCore
+  href: SilverCraft.CSCore.StoppedEventArgs.html
+  name: StoppedEventArgs
+  nameWithType: StoppedEventArgs
+  fullName: SilverCraft.CSCore.StoppedEventArgs
+- uid: SilverCraft.CSCore.TimeConverter
+  commentId: T:SilverCraft.CSCore.TimeConverter
+  parent: SilverCraft.CSCore
+  href: SilverCraft.CSCore.TimeConverter.html
+  name: TimeConverter
+  nameWithType: TimeConverter
+  fullName: SilverCraft.CSCore.TimeConverter
+- uid: SilverCraft.CSCore.TimeConverterAttribute
+  commentId: T:SilverCraft.CSCore.TimeConverterAttribute
+  href: SilverCraft.CSCore.TimeConverterAttribute.html
+  name: TimeConverterAttribute
+  nameWithType: TimeConverterAttribute
+  fullName: SilverCraft.CSCore.TimeConverterAttribute
+- uid: SilverCraft.CSCore.TimeConverterFactory
+  commentId: T:SilverCraft.CSCore.TimeConverterFactory
+  parent: SilverCraft.CSCore
+  href: SilverCraft.CSCore.TimeConverterFactory.html
+  name: TimeConverterFactory
+  nameWithType: TimeConverterFactory
+  fullName: SilverCraft.CSCore.TimeConverterFactory
+- uid: SilverCraft.CSCore.WaveAggregatorBase
+  commentId: T:SilverCraft.CSCore.WaveAggregatorBase
+  parent: SilverCraft.CSCore
+  href: SilverCraft.CSCore.WaveAggregatorBase.html
+  name: WaveAggregatorBase
+  nameWithType: WaveAggregatorBase
+  fullName: SilverCraft.CSCore.WaveAggregatorBase
+- uid: SilverCraft.CSCore.WaveFormat
+  commentId: T:SilverCraft.CSCore.WaveFormat
+  parent: SilverCraft.CSCore
+  href: SilverCraft.CSCore.WaveFormat.html
+  name: WaveFormat
+  nameWithType: WaveFormat
+  fullName: SilverCraft.CSCore.WaveFormat
+- uid: SilverCraft.CSCore.WaveFormatExtensible
+  commentId: T:SilverCraft.CSCore.WaveFormatExtensible
+  href: SilverCraft.CSCore.WaveFormatExtensible.html
+  name: WaveFormatExtensible
+  nameWithType: WaveFormatExtensible
+  fullName: SilverCraft.CSCore.WaveFormatExtensible
+- uid: SilverCraft.CSCore
+  commentId: N:SilverCraft.CSCore
+  href: SilverCraft.html
+  name: SilverCraft.CSCore
+  nameWithType: SilverCraft.CSCore
+  fullName: SilverCraft.CSCore
+  spec.csharp:
+  - uid: SilverCraft
+    name: SilverCraft
+    href: SilverCraft.html
+  - name: .
+  - uid: SilverCraft.CSCore
+    name: CSCore
+    href: SilverCraft.CSCore.html
+  spec.vb:
+  - uid: SilverCraft
+    name: SilverCraft
+    href: SilverCraft.html
+  - name: .
+  - uid: SilverCraft.CSCore
+    name: CSCore
+    href: SilverCraft.CSCore.html

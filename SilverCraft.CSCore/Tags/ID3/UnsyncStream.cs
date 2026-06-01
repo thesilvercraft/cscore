@@ -1,6 +1,12 @@
 ﻿
 namespace SilverCraft.CSCore.Tags.ID3
 {
+    /// <summary>
+    /// Provides a stream wrapper that reads bytes from an underlying stream while handling specific "unsync" byte sequences.
+    /// </summary>
+    /// <remarks>
+    /// This stream is designed to read raw data, specifically accounting for potential marker bytes (0xFF followed by 0x00) which might indicate the end of valid ID3 frame content or require special decoding logic during reading.
+    /// </remarks>
     public class UnsyncStream : Stream
     {
         private readonly Stream _stream;

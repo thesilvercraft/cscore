@@ -1,0 +1,601 @@
+### YamlMime:ManagedReference
+items:
+- uid: SilverCraft.CSCore.ChannelMask
+  commentId: T:SilverCraft.CSCore.ChannelMask
+  id: ChannelMask
+  parent: SilverCraft.CSCore
+  children:
+  - SilverCraft.CSCore.ChannelMask.SpeakerBackCenter
+  - SilverCraft.CSCore.ChannelMask.SpeakerBackLeft
+  - SilverCraft.CSCore.ChannelMask.SpeakerBackRight
+  - SilverCraft.CSCore.ChannelMask.SpeakerFrontCenter
+  - SilverCraft.CSCore.ChannelMask.SpeakerFrontLeft
+  - SilverCraft.CSCore.ChannelMask.SpeakerFrontLeftOfCenter
+  - SilverCraft.CSCore.ChannelMask.SpeakerFrontRight
+  - SilverCraft.CSCore.ChannelMask.SpeakerFrontRightOfCenter
+  - SilverCraft.CSCore.ChannelMask.SpeakerLowFrequency
+  - SilverCraft.CSCore.ChannelMask.SpeakerSideLeft
+  - SilverCraft.CSCore.ChannelMask.SpeakerSideRight
+  - SilverCraft.CSCore.ChannelMask.SpeakerTopBackCenter
+  - SilverCraft.CSCore.ChannelMask.SpeakerTopBackLeft
+  - SilverCraft.CSCore.ChannelMask.SpeakerTopBackRight
+  - SilverCraft.CSCore.ChannelMask.SpeakerTopCenter
+  - SilverCraft.CSCore.ChannelMask.SpeakerTopFrontCenter
+  - SilverCraft.CSCore.ChannelMask.SpeakerTopFrontLeft
+  - SilverCraft.CSCore.ChannelMask.SpeakerTopFrontRight
+  langs:
+  - csharp
+  - vb
+  name: ChannelMask
+  nameWithType: ChannelMask
+  fullName: SilverCraft.CSCore.ChannelMask
+  type: Enum
+  source:
+    remote:
+      path: SilverCraft.CSCore/ChannelMask.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: ChannelMask
+    path: ../SilverCraft.CSCore/ChannelMask.cs
+    startLine: 8
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore
+  summary: >-
+    Channelmask used by <xref href="SilverCraft.CSCore.WaveFormatExtensible" data-throw-if-not-resolved="false"></xref>. For more information see
+
+    http://msdn.microsoft.com/en-us/library/windows/desktop/dd757714(v=vs.85).aspx
+  example: []
+  syntax:
+    content: >-
+      [Flags]
+
+      public enum ChannelMask
+    content.vb: >-
+      <Flags>
+
+      Public Enum ChannelMask
+  attributes:
+  - type: System.FlagsAttribute
+    ctor: System.FlagsAttribute.#ctor
+    arguments: []
+- uid: SilverCraft.CSCore.ChannelMask.SpeakerFrontLeft
+  commentId: F:SilverCraft.CSCore.ChannelMask.SpeakerFrontLeft
+  id: SpeakerFrontLeft
+  parent: SilverCraft.CSCore.ChannelMask
+  langs:
+  - csharp
+  - vb
+  name: SpeakerFrontLeft
+  nameWithType: ChannelMask.SpeakerFrontLeft
+  fullName: SilverCraft.CSCore.ChannelMask.SpeakerFrontLeft
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/ChannelMask.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: SpeakerFrontLeft
+    path: ../SilverCraft.CSCore/ChannelMask.cs
+    startLine: 14
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore
+  summary: Front left speaker.
+  example: []
+  syntax:
+    content: SpeakerFrontLeft = 1
+    return:
+      type: SilverCraft.CSCore.ChannelMask
+- uid: SilverCraft.CSCore.ChannelMask.SpeakerFrontRight
+  commentId: F:SilverCraft.CSCore.ChannelMask.SpeakerFrontRight
+  id: SpeakerFrontRight
+  parent: SilverCraft.CSCore.ChannelMask
+  langs:
+  - csharp
+  - vb
+  name: SpeakerFrontRight
+  nameWithType: ChannelMask.SpeakerFrontRight
+  fullName: SilverCraft.CSCore.ChannelMask.SpeakerFrontRight
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/ChannelMask.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: SpeakerFrontRight
+    path: ../SilverCraft.CSCore/ChannelMask.cs
+    startLine: 19
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore
+  summary: Front right speaker.
+  example: []
+  syntax:
+    content: SpeakerFrontRight = 2
+    return:
+      type: SilverCraft.CSCore.ChannelMask
+- uid: SilverCraft.CSCore.ChannelMask.SpeakerFrontCenter
+  commentId: F:SilverCraft.CSCore.ChannelMask.SpeakerFrontCenter
+  id: SpeakerFrontCenter
+  parent: SilverCraft.CSCore.ChannelMask
+  langs:
+  - csharp
+  - vb
+  name: SpeakerFrontCenter
+  nameWithType: ChannelMask.SpeakerFrontCenter
+  fullName: SilverCraft.CSCore.ChannelMask.SpeakerFrontCenter
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/ChannelMask.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: SpeakerFrontCenter
+    path: ../SilverCraft.CSCore/ChannelMask.cs
+    startLine: 24
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore
+  summary: Front center speaker.
+  example: []
+  syntax:
+    content: SpeakerFrontCenter = 4
+    return:
+      type: SilverCraft.CSCore.ChannelMask
+- uid: SilverCraft.CSCore.ChannelMask.SpeakerLowFrequency
+  commentId: F:SilverCraft.CSCore.ChannelMask.SpeakerLowFrequency
+  id: SpeakerLowFrequency
+  parent: SilverCraft.CSCore.ChannelMask
+  langs:
+  - csharp
+  - vb
+  name: SpeakerLowFrequency
+  nameWithType: ChannelMask.SpeakerLowFrequency
+  fullName: SilverCraft.CSCore.ChannelMask.SpeakerLowFrequency
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/ChannelMask.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: SpeakerLowFrequency
+    path: ../SilverCraft.CSCore/ChannelMask.cs
+    startLine: 29
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore
+  summary: Low frequency speaker.
+  example: []
+  syntax:
+    content: SpeakerLowFrequency = 8
+    return:
+      type: SilverCraft.CSCore.ChannelMask
+- uid: SilverCraft.CSCore.ChannelMask.SpeakerBackLeft
+  commentId: F:SilverCraft.CSCore.ChannelMask.SpeakerBackLeft
+  id: SpeakerBackLeft
+  parent: SilverCraft.CSCore.ChannelMask
+  langs:
+  - csharp
+  - vb
+  name: SpeakerBackLeft
+  nameWithType: ChannelMask.SpeakerBackLeft
+  fullName: SilverCraft.CSCore.ChannelMask.SpeakerBackLeft
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/ChannelMask.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: SpeakerBackLeft
+    path: ../SilverCraft.CSCore/ChannelMask.cs
+    startLine: 34
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore
+  summary: Back left speaker.
+  example: []
+  syntax:
+    content: SpeakerBackLeft = 16
+    return:
+      type: SilverCraft.CSCore.ChannelMask
+- uid: SilverCraft.CSCore.ChannelMask.SpeakerBackRight
+  commentId: F:SilverCraft.CSCore.ChannelMask.SpeakerBackRight
+  id: SpeakerBackRight
+  parent: SilverCraft.CSCore.ChannelMask
+  langs:
+  - csharp
+  - vb
+  name: SpeakerBackRight
+  nameWithType: ChannelMask.SpeakerBackRight
+  fullName: SilverCraft.CSCore.ChannelMask.SpeakerBackRight
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/ChannelMask.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: SpeakerBackRight
+    path: ../SilverCraft.CSCore/ChannelMask.cs
+    startLine: 39
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore
+  summary: Back right speaker.
+  example: []
+  syntax:
+    content: SpeakerBackRight = 32
+    return:
+      type: SilverCraft.CSCore.ChannelMask
+- uid: SilverCraft.CSCore.ChannelMask.SpeakerFrontLeftOfCenter
+  commentId: F:SilverCraft.CSCore.ChannelMask.SpeakerFrontLeftOfCenter
+  id: SpeakerFrontLeftOfCenter
+  parent: SilverCraft.CSCore.ChannelMask
+  langs:
+  - csharp
+  - vb
+  name: SpeakerFrontLeftOfCenter
+  nameWithType: ChannelMask.SpeakerFrontLeftOfCenter
+  fullName: SilverCraft.CSCore.ChannelMask.SpeakerFrontLeftOfCenter
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/ChannelMask.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: SpeakerFrontLeftOfCenter
+    path: ../SilverCraft.CSCore/ChannelMask.cs
+    startLine: 44
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore
+  summary: Front left of center speaker.
+  example: []
+  syntax:
+    content: SpeakerFrontLeftOfCenter = 64
+    return:
+      type: SilverCraft.CSCore.ChannelMask
+- uid: SilverCraft.CSCore.ChannelMask.SpeakerFrontRightOfCenter
+  commentId: F:SilverCraft.CSCore.ChannelMask.SpeakerFrontRightOfCenter
+  id: SpeakerFrontRightOfCenter
+  parent: SilverCraft.CSCore.ChannelMask
+  langs:
+  - csharp
+  - vb
+  name: SpeakerFrontRightOfCenter
+  nameWithType: ChannelMask.SpeakerFrontRightOfCenter
+  fullName: SilverCraft.CSCore.ChannelMask.SpeakerFrontRightOfCenter
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/ChannelMask.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: SpeakerFrontRightOfCenter
+    path: ../SilverCraft.CSCore/ChannelMask.cs
+    startLine: 49
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore
+  summary: Front right of center speaker.
+  example: []
+  syntax:
+    content: SpeakerFrontRightOfCenter = 128
+    return:
+      type: SilverCraft.CSCore.ChannelMask
+- uid: SilverCraft.CSCore.ChannelMask.SpeakerBackCenter
+  commentId: F:SilverCraft.CSCore.ChannelMask.SpeakerBackCenter
+  id: SpeakerBackCenter
+  parent: SilverCraft.CSCore.ChannelMask
+  langs:
+  - csharp
+  - vb
+  name: SpeakerBackCenter
+  nameWithType: ChannelMask.SpeakerBackCenter
+  fullName: SilverCraft.CSCore.ChannelMask.SpeakerBackCenter
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/ChannelMask.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: SpeakerBackCenter
+    path: ../SilverCraft.CSCore/ChannelMask.cs
+    startLine: 54
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore
+  summary: Back center speaker.
+  example: []
+  syntax:
+    content: SpeakerBackCenter = 256
+    return:
+      type: SilverCraft.CSCore.ChannelMask
+- uid: SilverCraft.CSCore.ChannelMask.SpeakerSideLeft
+  commentId: F:SilverCraft.CSCore.ChannelMask.SpeakerSideLeft
+  id: SpeakerSideLeft
+  parent: SilverCraft.CSCore.ChannelMask
+  langs:
+  - csharp
+  - vb
+  name: SpeakerSideLeft
+  nameWithType: ChannelMask.SpeakerSideLeft
+  fullName: SilverCraft.CSCore.ChannelMask.SpeakerSideLeft
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/ChannelMask.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: SpeakerSideLeft
+    path: ../SilverCraft.CSCore/ChannelMask.cs
+    startLine: 59
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore
+  summary: Side left speaker.
+  example: []
+  syntax:
+    content: SpeakerSideLeft = 512
+    return:
+      type: SilverCraft.CSCore.ChannelMask
+- uid: SilverCraft.CSCore.ChannelMask.SpeakerSideRight
+  commentId: F:SilverCraft.CSCore.ChannelMask.SpeakerSideRight
+  id: SpeakerSideRight
+  parent: SilverCraft.CSCore.ChannelMask
+  langs:
+  - csharp
+  - vb
+  name: SpeakerSideRight
+  nameWithType: ChannelMask.SpeakerSideRight
+  fullName: SilverCraft.CSCore.ChannelMask.SpeakerSideRight
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/ChannelMask.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: SpeakerSideRight
+    path: ../SilverCraft.CSCore/ChannelMask.cs
+    startLine: 64
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore
+  summary: Side right speaker.
+  example: []
+  syntax:
+    content: SpeakerSideRight = 1024
+    return:
+      type: SilverCraft.CSCore.ChannelMask
+- uid: SilverCraft.CSCore.ChannelMask.SpeakerTopCenter
+  commentId: F:SilverCraft.CSCore.ChannelMask.SpeakerTopCenter
+  id: SpeakerTopCenter
+  parent: SilverCraft.CSCore.ChannelMask
+  langs:
+  - csharp
+  - vb
+  name: SpeakerTopCenter
+  nameWithType: ChannelMask.SpeakerTopCenter
+  fullName: SilverCraft.CSCore.ChannelMask.SpeakerTopCenter
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/ChannelMask.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: SpeakerTopCenter
+    path: ../SilverCraft.CSCore/ChannelMask.cs
+    startLine: 69
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore
+  summary: Top center speaker.
+  example: []
+  syntax:
+    content: SpeakerTopCenter = 2048
+    return:
+      type: SilverCraft.CSCore.ChannelMask
+- uid: SilverCraft.CSCore.ChannelMask.SpeakerTopFrontLeft
+  commentId: F:SilverCraft.CSCore.ChannelMask.SpeakerTopFrontLeft
+  id: SpeakerTopFrontLeft
+  parent: SilverCraft.CSCore.ChannelMask
+  langs:
+  - csharp
+  - vb
+  name: SpeakerTopFrontLeft
+  nameWithType: ChannelMask.SpeakerTopFrontLeft
+  fullName: SilverCraft.CSCore.ChannelMask.SpeakerTopFrontLeft
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/ChannelMask.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: SpeakerTopFrontLeft
+    path: ../SilverCraft.CSCore/ChannelMask.cs
+    startLine: 74
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore
+  summary: Top front left speaker.
+  example: []
+  syntax:
+    content: SpeakerTopFrontLeft = 4096
+    return:
+      type: SilverCraft.CSCore.ChannelMask
+- uid: SilverCraft.CSCore.ChannelMask.SpeakerTopFrontCenter
+  commentId: F:SilverCraft.CSCore.ChannelMask.SpeakerTopFrontCenter
+  id: SpeakerTopFrontCenter
+  parent: SilverCraft.CSCore.ChannelMask
+  langs:
+  - csharp
+  - vb
+  name: SpeakerTopFrontCenter
+  nameWithType: ChannelMask.SpeakerTopFrontCenter
+  fullName: SilverCraft.CSCore.ChannelMask.SpeakerTopFrontCenter
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/ChannelMask.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: SpeakerTopFrontCenter
+    path: ../SilverCraft.CSCore/ChannelMask.cs
+    startLine: 79
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore
+  summary: Top front center speaker.
+  example: []
+  syntax:
+    content: SpeakerTopFrontCenter = 8192
+    return:
+      type: SilverCraft.CSCore.ChannelMask
+- uid: SilverCraft.CSCore.ChannelMask.SpeakerTopFrontRight
+  commentId: F:SilverCraft.CSCore.ChannelMask.SpeakerTopFrontRight
+  id: SpeakerTopFrontRight
+  parent: SilverCraft.CSCore.ChannelMask
+  langs:
+  - csharp
+  - vb
+  name: SpeakerTopFrontRight
+  nameWithType: ChannelMask.SpeakerTopFrontRight
+  fullName: SilverCraft.CSCore.ChannelMask.SpeakerTopFrontRight
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/ChannelMask.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: SpeakerTopFrontRight
+    path: ../SilverCraft.CSCore/ChannelMask.cs
+    startLine: 84
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore
+  summary: Top front right speaker.
+  example: []
+  syntax:
+    content: SpeakerTopFrontRight = 16384
+    return:
+      type: SilverCraft.CSCore.ChannelMask
+- uid: SilverCraft.CSCore.ChannelMask.SpeakerTopBackLeft
+  commentId: F:SilverCraft.CSCore.ChannelMask.SpeakerTopBackLeft
+  id: SpeakerTopBackLeft
+  parent: SilverCraft.CSCore.ChannelMask
+  langs:
+  - csharp
+  - vb
+  name: SpeakerTopBackLeft
+  nameWithType: ChannelMask.SpeakerTopBackLeft
+  fullName: SilverCraft.CSCore.ChannelMask.SpeakerTopBackLeft
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/ChannelMask.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: SpeakerTopBackLeft
+    path: ../SilverCraft.CSCore/ChannelMask.cs
+    startLine: 89
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore
+  summary: Top back left speaker.
+  example: []
+  syntax:
+    content: SpeakerTopBackLeft = 32768
+    return:
+      type: SilverCraft.CSCore.ChannelMask
+- uid: SilverCraft.CSCore.ChannelMask.SpeakerTopBackCenter
+  commentId: F:SilverCraft.CSCore.ChannelMask.SpeakerTopBackCenter
+  id: SpeakerTopBackCenter
+  parent: SilverCraft.CSCore.ChannelMask
+  langs:
+  - csharp
+  - vb
+  name: SpeakerTopBackCenter
+  nameWithType: ChannelMask.SpeakerTopBackCenter
+  fullName: SilverCraft.CSCore.ChannelMask.SpeakerTopBackCenter
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/ChannelMask.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: SpeakerTopBackCenter
+    path: ../SilverCraft.CSCore/ChannelMask.cs
+    startLine: 94
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore
+  summary: Top back center speaker.
+  example: []
+  syntax:
+    content: SpeakerTopBackCenter = 65536
+    return:
+      type: SilverCraft.CSCore.ChannelMask
+- uid: SilverCraft.CSCore.ChannelMask.SpeakerTopBackRight
+  commentId: F:SilverCraft.CSCore.ChannelMask.SpeakerTopBackRight
+  id: SpeakerTopBackRight
+  parent: SilverCraft.CSCore.ChannelMask
+  langs:
+  - csharp
+  - vb
+  name: SpeakerTopBackRight
+  nameWithType: ChannelMask.SpeakerTopBackRight
+  fullName: SilverCraft.CSCore.ChannelMask.SpeakerTopBackRight
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/ChannelMask.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: SpeakerTopBackRight
+    path: ../SilverCraft.CSCore/ChannelMask.cs
+    startLine: 99
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore
+  summary: Top back right speaker.
+  example: []
+  syntax:
+    content: SpeakerTopBackRight = 131072
+    return:
+      type: SilverCraft.CSCore.ChannelMask
+references:
+- uid: SilverCraft.CSCore.WaveFormatExtensible
+  commentId: T:SilverCraft.CSCore.WaveFormatExtensible
+  href: SilverCraft.CSCore.WaveFormatExtensible.html
+  name: WaveFormatExtensible
+  nameWithType: WaveFormatExtensible
+  fullName: SilverCraft.CSCore.WaveFormatExtensible
+- uid: SilverCraft.CSCore
+  commentId: N:SilverCraft.CSCore
+  href: SilverCraft.html
+  name: SilverCraft.CSCore
+  nameWithType: SilverCraft.CSCore
+  fullName: SilverCraft.CSCore
+  spec.csharp:
+  - uid: SilverCraft
+    name: SilverCraft
+    href: SilverCraft.html
+  - name: .
+  - uid: SilverCraft.CSCore
+    name: CSCore
+    href: SilverCraft.CSCore.html
+  spec.vb:
+  - uid: SilverCraft
+    name: SilverCraft
+    href: SilverCraft.html
+  - name: .
+  - uid: SilverCraft.CSCore
+    name: CSCore
+    href: SilverCraft.CSCore.html
+- uid: SilverCraft.CSCore.ChannelMask
+  commentId: T:SilverCraft.CSCore.ChannelMask
+  parent: SilverCraft.CSCore
+  href: SilverCraft.CSCore.ChannelMask.html
+  name: ChannelMask
+  nameWithType: ChannelMask
+  fullName: SilverCraft.CSCore.ChannelMask

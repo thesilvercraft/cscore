@@ -1,0 +1,336 @@
+### YamlMime:ManagedReference
+items:
+- uid: OpenMPT.openmpt_module_initial_ctl
+  commentId: T:OpenMPT.openmpt_module_initial_ctl
+  id: openmpt_module_initial_ctl
+  parent: OpenMPT
+  children:
+  - OpenMPT.openmpt_module_initial_ctl.ctl
+  - OpenMPT.openmpt_module_initial_ctl.value
+  langs:
+  - csharp
+  - vb
+  name: openmpt_module_initial_ctl
+  nameWithType: openmpt_module_initial_ctl
+  fullName: OpenMPT.openmpt_module_initial_ctl
+  type: Struct
+  source:
+    remote:
+      path: SilverCraft.CSCore.OpenMPT/Interop/openmpt_module_initial_ctl.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: openmpt_module_initial_ctl
+    path: ../SilverCraft.CSCore.OpenMPT/Interop/openmpt_module_initial_ctl.cs
+    startLine: 2
+  assemblies:
+  - SilverCraft.OpenMPT
+  namespace: OpenMPT
+  syntax:
+    content: public struct openmpt_module_initial_ctl
+    content.vb: Public Structure openmpt_module_initial_ctl
+  inheritedMembers:
+  - System.ValueType.Equals(System.Object)
+  - System.ValueType.GetHashCode
+  - System.ValueType.ToString
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetType
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+- uid: OpenMPT.openmpt_module_initial_ctl.ctl
+  commentId: F:OpenMPT.openmpt_module_initial_ctl.ctl
+  id: ctl
+  parent: OpenMPT.openmpt_module_initial_ctl
+  langs:
+  - csharp
+  - vb
+  name: ctl
+  nameWithType: openmpt_module_initial_ctl.ctl
+  fullName: OpenMPT.openmpt_module_initial_ctl.ctl
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore.OpenMPT/Interop/openmpt_module_initial_ctl.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: ctl
+    path: ../SilverCraft.CSCore.OpenMPT/Interop/openmpt_module_initial_ctl.cs
+    startLine: 5
+  assemblies:
+  - SilverCraft.OpenMPT
+  namespace: OpenMPT
+  syntax:
+    content: public sbyte* ctl
+    return:
+      type: System.SByte*
+    content.vb: Public ctl As SByte*
+- uid: OpenMPT.openmpt_module_initial_ctl.value
+  commentId: F:OpenMPT.openmpt_module_initial_ctl.value
+  id: value
+  parent: OpenMPT.openmpt_module_initial_ctl
+  langs:
+  - csharp
+  - vb
+  name: value
+  nameWithType: openmpt_module_initial_ctl.value
+  fullName: OpenMPT.openmpt_module_initial_ctl.value
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore.OpenMPT/Interop/openmpt_module_initial_ctl.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: value
+    path: ../SilverCraft.CSCore.OpenMPT/Interop/openmpt_module_initial_ctl.cs
+    startLine: 8
+  assemblies:
+  - SilverCraft.OpenMPT
+  namespace: OpenMPT
+  syntax:
+    content: public sbyte* value
+    return:
+      type: System.SByte*
+    content.vb: Public value As SByte*
+references:
+- uid: OpenMPT
+  commentId: N:OpenMPT
+  href: OpenMPT.html
+  name: OpenMPT
+  nameWithType: OpenMPT
+  fullName: OpenMPT
+- uid: System.ValueType.Equals(System.Object)
+  commentId: M:System.ValueType.Equals(System.Object)
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  name: Equals(object)
+  nameWithType: ValueType.Equals(object)
+  fullName: System.ValueType.Equals(object)
+  nameWithType.vb: ValueType.Equals(Object)
+  fullName.vb: System.ValueType.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.ValueType.GetHashCode
+  commentId: M:System.ValueType.GetHashCode
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  name: GetHashCode()
+  nameWithType: ValueType.GetHashCode()
+  fullName: System.ValueType.GetHashCode()
+  spec.csharp:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  - name: (
+  - name: )
+- uid: System.ValueType.ToString
+  commentId: M:System.ValueType.ToString
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  name: ToString()
+  nameWithType: ValueType.ToString()
+  fullName: System.ValueType.ToString()
+  spec.csharp:
+  - uid: System.ValueType.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.ValueType
+  commentId: T:System.ValueType
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype
+  name: ValueType
+  nameWithType: ValueType
+  fullName: System.ValueType
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.SByte*
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.sbyte
+  name: sbyte*
+  nameWithType: sbyte*
+  fullName: sbyte*
+  nameWithType.vb: SByte*
+  fullName.vb: SByte*
+  name.vb: SByte*
+  spec.csharp:
+  - uid: System.SByte
+    name: sbyte
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.sbyte
+  - name: '*'
+  spec.vb:
+  - uid: System.SByte
+    name: SByte
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.sbyte
+  - name: '*'

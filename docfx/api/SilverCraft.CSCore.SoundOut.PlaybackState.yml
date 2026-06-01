@@ -1,0 +1,155 @@
+### YamlMime:ManagedReference
+items:
+- uid: SilverCraft.CSCore.SoundOut.PlaybackState
+  commentId: T:SilverCraft.CSCore.SoundOut.PlaybackState
+  id: PlaybackState
+  parent: SilverCraft.CSCore.SoundOut
+  children:
+  - SilverCraft.CSCore.SoundOut.PlaybackState.Paused
+  - SilverCraft.CSCore.SoundOut.PlaybackState.Playing
+  - SilverCraft.CSCore.SoundOut.PlaybackState.Stopped
+  langs:
+  - csharp
+  - vb
+  name: PlaybackState
+  nameWithType: PlaybackState
+  fullName: SilverCraft.CSCore.SoundOut.PlaybackState
+  type: Enum
+  source:
+    remote:
+      path: SilverCraft.CSCore/SoundOut/PlaybackState.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: PlaybackState
+    path: ../SilverCraft.CSCore/SoundOut/PlaybackState.cs
+    startLine: 5
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.SoundOut
+  summary: Defines playback states.
+  example: []
+  syntax:
+    content: public enum PlaybackState
+    content.vb: Public Enum PlaybackState
+- uid: SilverCraft.CSCore.SoundOut.PlaybackState.Stopped
+  commentId: F:SilverCraft.CSCore.SoundOut.PlaybackState.Stopped
+  id: Stopped
+  parent: SilverCraft.CSCore.SoundOut.PlaybackState
+  langs:
+  - csharp
+  - vb
+  name: Stopped
+  nameWithType: PlaybackState.Stopped
+  fullName: SilverCraft.CSCore.SoundOut.PlaybackState.Stopped
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/SoundOut/PlaybackState.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: Stopped
+    path: ../SilverCraft.CSCore/SoundOut/PlaybackState.cs
+    startLine: 10
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.SoundOut
+  summary: Playback is stopped.
+  example: []
+  syntax:
+    content: Stopped = 0
+    return:
+      type: SilverCraft.CSCore.SoundOut.PlaybackState
+- uid: SilverCraft.CSCore.SoundOut.PlaybackState.Playing
+  commentId: F:SilverCraft.CSCore.SoundOut.PlaybackState.Playing
+  id: Playing
+  parent: SilverCraft.CSCore.SoundOut.PlaybackState
+  langs:
+  - csharp
+  - vb
+  name: Playing
+  nameWithType: PlaybackState.Playing
+  fullName: SilverCraft.CSCore.SoundOut.PlaybackState.Playing
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/SoundOut/PlaybackState.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: Playing
+    path: ../SilverCraft.CSCore/SoundOut/PlaybackState.cs
+    startLine: 15
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.SoundOut
+  summary: Playback is playing.
+  example: []
+  syntax:
+    content: Playing = 1
+    return:
+      type: SilverCraft.CSCore.SoundOut.PlaybackState
+- uid: SilverCraft.CSCore.SoundOut.PlaybackState.Paused
+  commentId: F:SilverCraft.CSCore.SoundOut.PlaybackState.Paused
+  id: Paused
+  parent: SilverCraft.CSCore.SoundOut.PlaybackState
+  langs:
+  - csharp
+  - vb
+  name: Paused
+  nameWithType: PlaybackState.Paused
+  fullName: SilverCraft.CSCore.SoundOut.PlaybackState.Paused
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/SoundOut/PlaybackState.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: Paused
+    path: ../SilverCraft.CSCore/SoundOut/PlaybackState.cs
+    startLine: 20
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.SoundOut
+  summary: Playback is paused.
+  example: []
+  syntax:
+    content: Paused = 2
+    return:
+      type: SilverCraft.CSCore.SoundOut.PlaybackState
+references:
+- uid: SilverCraft.CSCore.SoundOut
+  commentId: N:SilverCraft.CSCore.SoundOut
+  href: SilverCraft.html
+  name: SilverCraft.CSCore.SoundOut
+  nameWithType: SilverCraft.CSCore.SoundOut
+  fullName: SilverCraft.CSCore.SoundOut
+  spec.csharp:
+  - uid: SilverCraft
+    name: SilverCraft
+    href: SilverCraft.html
+  - name: .
+  - uid: SilverCraft.CSCore
+    name: CSCore
+    href: SilverCraft.CSCore.html
+  - name: .
+  - uid: SilverCraft.CSCore.SoundOut
+    name: SoundOut
+    href: SilverCraft.CSCore.SoundOut.html
+  spec.vb:
+  - uid: SilverCraft
+    name: SilverCraft
+    href: SilverCraft.html
+  - name: .
+  - uid: SilverCraft.CSCore
+    name: CSCore
+    href: SilverCraft.CSCore.html
+  - name: .
+  - uid: SilverCraft.CSCore.SoundOut
+    name: SoundOut
+    href: SilverCraft.CSCore.SoundOut.html
+- uid: SilverCraft.CSCore.SoundOut.PlaybackState
+  commentId: T:SilverCraft.CSCore.SoundOut.PlaybackState
+  parent: SilverCraft.CSCore.SoundOut
+  href: SilverCraft.CSCore.SoundOut.PlaybackState.html
+  name: PlaybackState
+  nameWithType: PlaybackState
+  fullName: SilverCraft.CSCore.SoundOut.PlaybackState

@@ -1,0 +1,303 @@
+### YamlMime:ManagedReference
+items:
+- uid: SilverCraft.CSCore.IWriteable
+  commentId: T:SilverCraft.CSCore.IWriteable
+  id: IWriteable
+  parent: SilverCraft.CSCore
+  children:
+  - SilverCraft.CSCore.IWriteable.Write(System.Byte[],System.Int32,System.Int32)
+  langs:
+  - csharp
+  - vb
+  name: IWriteable
+  nameWithType: IWriteable
+  fullName: SilverCraft.CSCore.IWriteable
+  type: Interface
+  source:
+    remote:
+      path: SilverCraft.CSCore/IWriteable.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: IWriteable
+    path: ../SilverCraft.CSCore/IWriteable.cs
+    startLine: 5
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore
+  summary: Provides the <xref href="SilverCraft.CSCore.IWriteable.Write(System.Byte%5b%5d%2cSystem.Int32%2cSystem.Int32)" data-throw-if-not-resolved="false"></xref> method.
+  example: []
+  syntax:
+    content: public interface IWriteable
+    content.vb: Public Interface IWriteable
+  derivedClasses:
+  - SilverCraft.CSCore.Codecs.WAV.WaveWriter
+  extensionMethods:
+  - SilverCraft.CSCore.IWriteable.SilverCraft.CSCore.FluentExtensions.Synchronized``2
+- uid: SilverCraft.CSCore.IWriteable.Write(System.Byte[],System.Int32,System.Int32)
+  commentId: M:SilverCraft.CSCore.IWriteable.Write(System.Byte[],System.Int32,System.Int32)
+  id: Write(System.Byte[],System.Int32,System.Int32)
+  parent: SilverCraft.CSCore.IWriteable
+  langs:
+  - csharp
+  - vb
+  name: Write(byte[], int, int)
+  nameWithType: IWriteable.Write(byte[], int, int)
+  fullName: SilverCraft.CSCore.IWriteable.Write(byte[], int, int)
+  type: Method
+  source:
+    remote:
+      path: SilverCraft.CSCore/IWriteable.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: Write
+    path: ../SilverCraft.CSCore/IWriteable.cs
+    startLine: 13
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore
+  summary: Used to write down raw byte data.
+  example: []
+  syntax:
+    content: void Write(byte[] buffer, int offset, int count)
+    parameters:
+    - id: buffer
+      type: System.Byte[]
+      description: Byte array which contains the data to write down.
+    - id: offset
+      type: System.Int32
+      description: Zero-based offset in the <code class="paramref">buffer</code>.
+    - id: count
+      type: System.Int32
+      description: Number of bytes to write.
+    content.vb: Sub Write(buffer As Byte(), offset As Integer, count As Integer)
+  overload: SilverCraft.CSCore.IWriteable.Write*
+  nameWithType.vb: IWriteable.Write(Byte(), Integer, Integer)
+  fullName.vb: SilverCraft.CSCore.IWriteable.Write(Byte(), Integer, Integer)
+  name.vb: Write(Byte(), Integer, Integer)
+references:
+- uid: SilverCraft.CSCore.IWriteable.Write(System.Byte[],System.Int32,System.Int32)
+  commentId: M:SilverCraft.CSCore.IWriteable.Write(System.Byte[],System.Int32,System.Int32)
+  parent: SilverCraft.CSCore.IWriteable
+  isExternal: true
+  href: SilverCraft.CSCore.IWriteable.html#SilverCraft_CSCore_IWriteable_Write_System_Byte___System_Int32_System_Int32_
+  name: Write(byte[], int, int)
+  nameWithType: IWriteable.Write(byte[], int, int)
+  fullName: SilverCraft.CSCore.IWriteable.Write(byte[], int, int)
+  nameWithType.vb: IWriteable.Write(Byte(), Integer, Integer)
+  fullName.vb: SilverCraft.CSCore.IWriteable.Write(Byte(), Integer, Integer)
+  name.vb: Write(Byte(), Integer, Integer)
+  spec.csharp:
+  - uid: SilverCraft.CSCore.IWriteable.Write(System.Byte[],System.Int32,System.Int32)
+    name: Write
+    href: SilverCraft.CSCore.IWriteable.html#SilverCraft_CSCore_IWriteable_Write_System_Byte___System_Int32_System_Int32_
+  - name: (
+  - uid: System.Byte
+    name: byte
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.byte
+  - name: '['
+  - name: ']'
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+  spec.vb:
+  - uid: SilverCraft.CSCore.IWriteable.Write(System.Byte[],System.Int32,System.Int32)
+    name: Write
+    href: SilverCraft.CSCore.IWriteable.html#SilverCraft_CSCore_IWriteable_Write_System_Byte___System_Int32_System_Int32_
+  - name: (
+  - uid: System.Byte
+    name: Byte
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.byte
+  - name: (
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: SilverCraft.CSCore
+  commentId: N:SilverCraft.CSCore
+  href: SilverCraft.html
+  name: SilverCraft.CSCore
+  nameWithType: SilverCraft.CSCore
+  fullName: SilverCraft.CSCore
+  spec.csharp:
+  - uid: SilverCraft
+    name: SilverCraft
+    href: SilverCraft.html
+  - name: .
+  - uid: SilverCraft.CSCore
+    name: CSCore
+    href: SilverCraft.CSCore.html
+  spec.vb:
+  - uid: SilverCraft
+    name: SilverCraft
+    href: SilverCraft.html
+  - name: .
+  - uid: SilverCraft.CSCore
+    name: CSCore
+    href: SilverCraft.CSCore.html
+- uid: SilverCraft.CSCore.IWriteable.SilverCraft.CSCore.FluentExtensions.Synchronized``2
+  commentId: M:SilverCraft.CSCore.FluentExtensions.Synchronized``2(``0)
+  parent: SilverCraft.CSCore.FluentExtensions
+  definition: SilverCraft.CSCore.FluentExtensions.Synchronized``2(``0)
+  href: SilverCraft.CSCore.FluentExtensions.html#SilverCraft_CSCore_FluentExtensions_Synchronized__2___0_
+  name: Synchronized<IWriteable, T>(IWriteable)
+  nameWithType: FluentExtensions.Synchronized<IWriteable, T>(IWriteable)
+  fullName: SilverCraft.CSCore.FluentExtensions.Synchronized<SilverCraft.CSCore.IWriteable, T>(SilverCraft.CSCore.IWriteable)
+  nameWithType.vb: FluentExtensions.Synchronized(Of IWriteable, T)(IWriteable)
+  fullName.vb: SilverCraft.CSCore.FluentExtensions.Synchronized(Of SilverCraft.CSCore.IWriteable, T)(SilverCraft.CSCore.IWriteable)
+  name.vb: Synchronized(Of IWriteable, T)(IWriteable)
+  spec.csharp:
+  - uid: SilverCraft.CSCore.FluentExtensions.Synchronized``2(SilverCraft.CSCore.IWriteable)
+    name: Synchronized
+    href: SilverCraft.CSCore.FluentExtensions.html#SilverCraft_CSCore_FluentExtensions_Synchronized__2___0_
+  - name: <
+  - uid: SilverCraft.CSCore.IWriteable
+    name: IWriteable
+    href: SilverCraft.CSCore.IWriteable.html
+  - name: ','
+  - name: " "
+  - name: T
+  - name: '>'
+  - name: (
+  - uid: SilverCraft.CSCore.IWriteable
+    name: IWriteable
+    href: SilverCraft.CSCore.IWriteable.html
+  - name: )
+  spec.vb:
+  - uid: SilverCraft.CSCore.FluentExtensions.Synchronized``2(SilverCraft.CSCore.IWriteable)
+    name: Synchronized
+    href: SilverCraft.CSCore.FluentExtensions.html#SilverCraft_CSCore_FluentExtensions_Synchronized__2___0_
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: SilverCraft.CSCore.IWriteable
+    name: IWriteable
+    href: SilverCraft.CSCore.IWriteable.html
+  - name: ','
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: SilverCraft.CSCore.IWriteable
+    name: IWriteable
+    href: SilverCraft.CSCore.IWriteable.html
+  - name: )
+- uid: SilverCraft.CSCore.IWriteable
+  commentId: T:SilverCraft.CSCore.IWriteable
+  parent: SilverCraft.CSCore
+  href: SilverCraft.CSCore.IWriteable.html
+  name: IWriteable
+  nameWithType: IWriteable
+  fullName: SilverCraft.CSCore.IWriteable
+- uid: SilverCraft.CSCore.FluentExtensions.Synchronized``2(``0)
+  commentId: M:SilverCraft.CSCore.FluentExtensions.Synchronized``2(``0)
+  href: SilverCraft.CSCore.FluentExtensions.html#SilverCraft_CSCore_FluentExtensions_Synchronized__2___0_
+  name: Synchronized<TAudioSource, T>(TAudioSource)
+  nameWithType: FluentExtensions.Synchronized<TAudioSource, T>(TAudioSource)
+  fullName: SilverCraft.CSCore.FluentExtensions.Synchronized<TAudioSource, T>(TAudioSource)
+  nameWithType.vb: FluentExtensions.Synchronized(Of TAudioSource, T)(TAudioSource)
+  fullName.vb: SilverCraft.CSCore.FluentExtensions.Synchronized(Of TAudioSource, T)(TAudioSource)
+  name.vb: Synchronized(Of TAudioSource, T)(TAudioSource)
+  spec.csharp:
+  - uid: SilverCraft.CSCore.FluentExtensions.Synchronized``2(``0)
+    name: Synchronized
+    href: SilverCraft.CSCore.FluentExtensions.html#SilverCraft_CSCore_FluentExtensions_Synchronized__2___0_
+  - name: <
+  - name: TAudioSource
+  - name: ','
+  - name: " "
+  - name: T
+  - name: '>'
+  - name: (
+  - name: TAudioSource
+  - name: )
+  spec.vb:
+  - uid: SilverCraft.CSCore.FluentExtensions.Synchronized``2(``0)
+    name: Synchronized
+    href: SilverCraft.CSCore.FluentExtensions.html#SilverCraft_CSCore_FluentExtensions_Synchronized__2___0_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TAudioSource
+  - name: ','
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - name: TAudioSource
+  - name: )
+- uid: SilverCraft.CSCore.FluentExtensions
+  commentId: T:SilverCraft.CSCore.FluentExtensions
+  parent: SilverCraft.CSCore
+  href: SilverCraft.CSCore.FluentExtensions.html
+  name: FluentExtensions
+  nameWithType: FluentExtensions
+  fullName: SilverCraft.CSCore.FluentExtensions
+- uid: SilverCraft.CSCore.IWriteable.Write*
+  commentId: Overload:SilverCraft.CSCore.IWriteable.Write
+  href: SilverCraft.CSCore.IWriteable.html#SilverCraft_CSCore_IWriteable_Write_System_Byte___System_Int32_System_Int32_
+  name: Write
+  nameWithType: IWriteable.Write
+  fullName: SilverCraft.CSCore.IWriteable.Write
+- uid: System.Byte[]
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.byte
+  name: byte[]
+  nameWithType: byte[]
+  fullName: byte[]
+  nameWithType.vb: Byte()
+  fullName.vb: Byte()
+  name.vb: Byte()
+  spec.csharp:
+  - uid: System.Byte
+    name: byte
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.byte
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: System.Byte
+    name: Byte
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.byte
+  - name: (
+  - name: )
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System

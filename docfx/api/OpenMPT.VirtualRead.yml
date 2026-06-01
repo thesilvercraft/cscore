@@ -1,0 +1,188 @@
+### YamlMime:ManagedReference
+items:
+- uid: OpenMPT.VirtualRead
+  commentId: T:OpenMPT.VirtualRead
+  id: VirtualRead
+  parent: OpenMPT
+  children: []
+  langs:
+  - csharp
+  - vb
+  name: VirtualRead
+  nameWithType: VirtualRead
+  fullName: OpenMPT.VirtualRead
+  type: Delegate
+  source:
+    remote:
+      path: SilverCraft.CSCore.OpenMPT/Interop/openmpt_stream_callbacks.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: VirtualRead
+    path: ../SilverCraft.CSCore.OpenMPT/Interop/openmpt_stream_callbacks.cs
+    startLine: 71
+  assemblies:
+  - SilverCraft.OpenMPT
+  namespace: OpenMPT
+  syntax:
+    content: public delegate nuint VirtualRead(nint stream, nint destination, nuint bytes)
+    parameters:
+    - id: stream
+      type: System.IntPtr
+    - id: destination
+      type: System.IntPtr
+    - id: bytes
+      type: System.UIntPtr
+    return:
+      type: System.UIntPtr
+    content.vb: Public Delegate Function VirtualRead(stream As IntPtr, destination As IntPtr, bytes As UIntPtr) As UIntPtr
+  extensionMethods:
+  - OpenMPT.VirtualRead.SilverCraft.CSCore.FluentExtensions.Synchronized``2
+references:
+- uid: OpenMPT
+  commentId: N:OpenMPT
+  href: OpenMPT.html
+  name: OpenMPT
+  nameWithType: OpenMPT
+  fullName: OpenMPT
+- uid: OpenMPT.VirtualRead.SilverCraft.CSCore.FluentExtensions.Synchronized``2
+  commentId: M:SilverCraft.CSCore.FluentExtensions.Synchronized``2(``0)
+  parent: SilverCraft.CSCore.FluentExtensions
+  definition: SilverCraft.CSCore.FluentExtensions.Synchronized``2(``0)
+  href: SilverCraft.CSCore.FluentExtensions.html#SilverCraft_CSCore_FluentExtensions_Synchronized__2___0_
+  name: Synchronized<VirtualRead, T>(VirtualRead)
+  nameWithType: FluentExtensions.Synchronized<VirtualRead, T>(VirtualRead)
+  fullName: SilverCraft.CSCore.FluentExtensions.Synchronized<OpenMPT.VirtualRead, T>(OpenMPT.VirtualRead)
+  nameWithType.vb: FluentExtensions.Synchronized(Of VirtualRead, T)(VirtualRead)
+  fullName.vb: SilverCraft.CSCore.FluentExtensions.Synchronized(Of OpenMPT.VirtualRead, T)(OpenMPT.VirtualRead)
+  name.vb: Synchronized(Of VirtualRead, T)(VirtualRead)
+  spec.csharp:
+  - uid: SilverCraft.CSCore.FluentExtensions.Synchronized``2(OpenMPT.VirtualRead)
+    name: Synchronized
+    href: SilverCraft.CSCore.FluentExtensions.html#SilverCraft_CSCore_FluentExtensions_Synchronized__2___0_
+  - name: <
+  - uid: OpenMPT.VirtualRead
+    name: VirtualRead
+    href: OpenMPT.VirtualRead.html
+  - name: ','
+  - name: " "
+  - name: T
+  - name: '>'
+  - name: (
+  - uid: OpenMPT.VirtualRead
+    name: VirtualRead
+    href: OpenMPT.VirtualRead.html
+  - name: )
+  spec.vb:
+  - uid: SilverCraft.CSCore.FluentExtensions.Synchronized``2(OpenMPT.VirtualRead)
+    name: Synchronized
+    href: SilverCraft.CSCore.FluentExtensions.html#SilverCraft_CSCore_FluentExtensions_Synchronized__2___0_
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: OpenMPT.VirtualRead
+    name: VirtualRead
+    href: OpenMPT.VirtualRead.html
+  - name: ','
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: OpenMPT.VirtualRead
+    name: VirtualRead
+    href: OpenMPT.VirtualRead.html
+  - name: )
+- uid: System.IntPtr
+  commentId: T:System.IntPtr
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.intptr
+  name: nint
+  nameWithType: nint
+  fullName: nint
+  nameWithType.vb: IntPtr
+  fullName.vb: System.IntPtr
+  name.vb: IntPtr
+- uid: System.UIntPtr
+  commentId: T:System.UIntPtr
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.uintptr
+  name: nuint
+  nameWithType: nuint
+  fullName: nuint
+  nameWithType.vb: UIntPtr
+  fullName.vb: System.UIntPtr
+  name.vb: UIntPtr
+- uid: SilverCraft.CSCore.FluentExtensions.Synchronized``2(``0)
+  commentId: M:SilverCraft.CSCore.FluentExtensions.Synchronized``2(``0)
+  href: SilverCraft.CSCore.FluentExtensions.html#SilverCraft_CSCore_FluentExtensions_Synchronized__2___0_
+  name: Synchronized<TAudioSource, T>(TAudioSource)
+  nameWithType: FluentExtensions.Synchronized<TAudioSource, T>(TAudioSource)
+  fullName: SilverCraft.CSCore.FluentExtensions.Synchronized<TAudioSource, T>(TAudioSource)
+  nameWithType.vb: FluentExtensions.Synchronized(Of TAudioSource, T)(TAudioSource)
+  fullName.vb: SilverCraft.CSCore.FluentExtensions.Synchronized(Of TAudioSource, T)(TAudioSource)
+  name.vb: Synchronized(Of TAudioSource, T)(TAudioSource)
+  spec.csharp:
+  - uid: SilverCraft.CSCore.FluentExtensions.Synchronized``2(``0)
+    name: Synchronized
+    href: SilverCraft.CSCore.FluentExtensions.html#SilverCraft_CSCore_FluentExtensions_Synchronized__2___0_
+  - name: <
+  - name: TAudioSource
+  - name: ','
+  - name: " "
+  - name: T
+  - name: '>'
+  - name: (
+  - name: TAudioSource
+  - name: )
+  spec.vb:
+  - uid: SilverCraft.CSCore.FluentExtensions.Synchronized``2(``0)
+    name: Synchronized
+    href: SilverCraft.CSCore.FluentExtensions.html#SilverCraft_CSCore_FluentExtensions_Synchronized__2___0_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TAudioSource
+  - name: ','
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - name: TAudioSource
+  - name: )
+- uid: SilverCraft.CSCore.FluentExtensions
+  commentId: T:SilverCraft.CSCore.FluentExtensions
+  parent: SilverCraft.CSCore
+  href: SilverCraft.CSCore.FluentExtensions.html
+  name: FluentExtensions
+  nameWithType: FluentExtensions
+  fullName: SilverCraft.CSCore.FluentExtensions
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: SilverCraft.CSCore
+  commentId: N:SilverCraft.CSCore
+  href: SilverCraft.html
+  name: SilverCraft.CSCore
+  nameWithType: SilverCraft.CSCore
+  fullName: SilverCraft.CSCore
+  spec.csharp:
+  - uid: SilverCraft
+    name: SilverCraft
+    href: SilverCraft.html
+  - name: .
+  - uid: SilverCraft.CSCore
+    name: CSCore
+    href: SilverCraft.CSCore.html
+  spec.vb:
+  - uid: SilverCraft
+    name: SilverCraft
+    href: SilverCraft.html
+  - name: .
+  - uid: SilverCraft.CSCore
+    name: CSCore
+    href: SilverCraft.CSCore.html

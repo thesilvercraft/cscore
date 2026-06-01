@@ -1,0 +1,849 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class ALSoundOut | SilverCraft.CSCore </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class ALSoundOut | SilverCraft.CSCore ">
+      
+      <meta name="description" content="Provides audioplayback through OpenAL.">
+      <link rel="icon" href="../images/cscore-square-notext.svg">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/thesilvercraft/cscore/new/master/apiSpec/new?filename=SilverCraft_CSCore_SoundOut_ALSoundOut.md&amp;value=---%0Auid%3A%20SilverCraft.CSCore.SoundOut.ALSoundOut%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../images/cscore-square-notext.svg" alt="SilverCraft.CSCore">
+            SilverCraft.CSCore
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="SilverCraft.CSCore.SoundOut.ALSoundOut">
+
+
+
+  <h1 id="SilverCraft_CSCore_SoundOut_ALSoundOut" data-uid="SilverCraft.CSCore.SoundOut.ALSoundOut" class="text-break">
+Class ALSoundOut  <a class="header-action link-secondary" title="View source" href="https://github.com/thesilvercraft/cscore/blob/master/SilverCraft.CSCore/SoundOut/ALSoundOut.cs/#L21"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="SilverCraft.html">SilverCraft</a>.<a class="xref" href="SilverCraft.CSCore.html">CSCore</a>.<a class="xref" href="SilverCraft.CSCore.SoundOut.html">SoundOut</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>SilverCraft.CSCore.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>Provides audioplayback through OpenAL.</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class ALSoundOut : ISoundOut, IDisposable</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">ALSoundOut</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="SilverCraft.CSCore.SoundOut.ISoundOut.html">ISoundOut</a></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+  </dd></dl>
+
+  <dl class="typelist extensionMethods">
+    <dt>Extension Methods</dt>
+    <dd>
+  <div>
+      <a class="xref" href="SilverCraft.CSCore.FluentExtensions.html#SilverCraft_CSCore_FluentExtensions_Synchronized__2___0_">FluentExtensions.Synchronized&lt;TAudioSource, T&gt;(TAudioSource)</a>
+  </div>
+  <div>
+      <a class="xref" href="SilverCraft.CSCore.Extensions.html#SilverCraft_CSCore_Extensions_WaitForStopped_SilverCraft_CSCore_SoundOut_ISoundOut_">Extensions.WaitForStopped(ISoundOut)</a>
+  </div>
+  <div>
+      <a class="xref" href="SilverCraft.CSCore.Extensions.html#SilverCraft_CSCore_Extensions_WaitForStopped_SilverCraft_CSCore_SoundOut_ISoundOut_System_Int32_">Extensions.WaitForStopped(ISoundOut, int)</a>
+  </div>
+  </dd></dl>
+
+
+
+  <h2 id="SilverCraft_CSCore_SoundOut_ALSoundOut_remarks">Remarks</h2>
+  <div class="markdown level0 remarks"><p>This SoundOut provider runs on multiple platforms.
+But since the OpenAL implementation on Windows platforms, has some different
+handling what context switching concerns, it is not possible to play sounds on multiple
+devices at once through OpenAL.</p>
+</div>
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="SilverCraft_CSCore_SoundOut_ALSoundOut__ctor_" data-uid="SilverCraft.CSCore.SoundOut.ALSoundOut.#ctor*"></a>
+
+  <h3 id="SilverCraft_CSCore_SoundOut_ALSoundOut__ctor" data-uid="SilverCraft.CSCore.SoundOut.ALSoundOut.#ctor">
+  ALSoundOut()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/thesilvercraft/cscore/blob/master/SilverCraft.CSCore/SoundOut/ALSoundOut.cs/#L50"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="SilverCraft.CSCore.SoundOut.ALSoundOut.html">ALSoundOut</a> class.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ALSoundOut()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SilverCraft_CSCore_SoundOut_ALSoundOut__ctor_" data-uid="SilverCraft.CSCore.SoundOut.ALSoundOut.#ctor*"></a>
+
+  <h3 id="SilverCraft_CSCore_SoundOut_ALSoundOut__ctor_System_Int32_System_Threading_ThreadPriority_" data-uid="SilverCraft.CSCore.SoundOut.ALSoundOut.#ctor(System.Int32,System.Threading.ThreadPriority)">
+  ALSoundOut(int, ThreadPriority)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/thesilvercraft/cscore/blob/master/SilverCraft.CSCore/SoundOut/ALSoundOut.cs/#L62"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="SilverCraft.CSCore.SoundOut.ALSoundOut.html">ALSoundOut</a> class with a initial latency
+and <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.threadpriority">ThreadPriority</a> of the playback thread.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ALSoundOut(int latency, ThreadPriority playbackThreadPriority = ThreadPriority.AboveNormal)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>latency</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The playback latency in milliseconds.</p>
+</dd>
+    <dt><code>playbackThreadPriority</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.threadpriority">ThreadPriority</a></dt>
+    <dd><p>The <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.threadpriority">ThreadPriority</a> of the playback thread.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentoutofrangeexception">ArgumentOutOfRangeException</a></dt>
+    <dd><p>latency</p>
+</dd>
+  </dl>
+
+
+
+  <a id="SilverCraft_CSCore_SoundOut_ALSoundOut__ctor_" data-uid="SilverCraft.CSCore.SoundOut.ALSoundOut.#ctor*"></a>
+
+  <h3 id="SilverCraft_CSCore_SoundOut_ALSoundOut__ctor_System_Int32_System_Threading_ThreadPriority_System_Threading_SynchronizationContext_" data-uid="SilverCraft.CSCore.SoundOut.ALSoundOut.#ctor(System.Int32,System.Threading.ThreadPriority,System.Threading.SynchronizationContext)">
+  ALSoundOut(int, ThreadPriority, SynchronizationContext)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/thesilvercraft/cscore/blob/master/SilverCraft.CSCore/SoundOut/ALSoundOut.cs/#L80"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="SilverCraft.CSCore.SoundOut.ALSoundOut.html">ALSoundOut</a> class based on a initial latency,
+the <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.threadpriority">ThreadPriority</a> of the playback thread and the <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.synchronizationcontext">SynchronizationContext</a> used to
+raise events.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ALSoundOut(int latency, ThreadPriority playbackThreadPriority, SynchronizationContext eventSyncContext)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>latency</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The playback latency in milliseconds.</p>
+</dd>
+    <dt><code>playbackThreadPriority</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.threadpriority">ThreadPriority</a></dt>
+    <dd><p>The <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.threadpriority">ThreadPriority</a> of the playback thread.</p>
+</dd>
+    <dt><code>eventSyncContext</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.synchronizationcontext">SynchronizationContext</a></dt>
+    <dd><p>The <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.synchronizationcontext">SynchronizationContext</a> which is used to raise any events like the <a class="xref" href="SilverCraft.CSCore.SoundOut.ALSoundOut.html#SilverCraft_CSCore_SoundOut_ALSoundOut_Stopped">Stopped</a>-event.
+If the passed value is not null, the events will be called async through the
+<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.synchronizationcontext.post">Post(SendOrPostCallback, object)</a> method.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentoutofrangeexception">ArgumentOutOfRangeException</a></dt>
+    <dd><p>latency</p>
+</dd>
+  </dl>
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="SilverCraft_CSCore_SoundOut_ALSoundOut_Context_" data-uid="SilverCraft.CSCore.SoundOut.ALSoundOut.Context*"></a>
+
+  <h3 id="SilverCraft_CSCore_SoundOut_ALSoundOut_Context" data-uid="SilverCraft.CSCore.SoundOut.ALSoundOut.Context">
+  Context
+  <a class="header-action link-secondary" title="View source" href="https://github.com/thesilvercraft/cscore/blob/master/SilverCraft.CSCore/SoundOut/ALSoundOut.cs/#L170"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the Context used for the playback.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected ALContext Context { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="SilverCraft.CSCore.SoundOut.AL.ALContext.html">ALContext</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="SilverCraft_CSCore_SoundOut_ALSoundOut_Device_" data-uid="SilverCraft.CSCore.SoundOut.ALSoundOut.Device*"></a>
+
+  <h3 id="SilverCraft_CSCore_SoundOut_ALSoundOut_Device" data-uid="SilverCraft.CSCore.SoundOut.ALSoundOut.Device">
+  Device
+  <a class="header-action link-secondary" title="View source" href="https://github.com/thesilvercraft/cscore/blob/master/SilverCraft.CSCore/SoundOut/ALSoundOut.cs/#L109"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets or sets the <a class="xref" href="SilverCraft.CSCore.SoundOut.ALSoundOut.html#SilverCraft_CSCore_SoundOut_ALSoundOut_Device">Device</a> which should be used for playback.
+The <a class="xref" href="SilverCraft.CSCore.SoundOut.ALSoundOut.html#SilverCraft_CSCore_SoundOut_ALSoundOut_Device">Device</a> property has to be set before initializing.
+The systems default playback device is used as default
+value of the <a class="xref" href="SilverCraft.CSCore.SoundOut.ALSoundOut.html#SilverCraft_CSCore_SoundOut_ALSoundOut_Device">Device</a> property.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ALDevice Device { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="SilverCraft.CSCore.SoundOut.AL.ALDevice.html">ALDevice</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></dt>
+    <dd><p>value is less than one</p>
+</dd>
+  </dl>
+
+
+
+  <a id="SilverCraft_CSCore_SoundOut_ALSoundOut_IsSupported_" data-uid="SilverCraft.CSCore.SoundOut.ALSoundOut.IsSupported*"></a>
+
+  <h3 id="SilverCraft_CSCore_SoundOut_ALSoundOut_IsSupported" data-uid="SilverCraft.CSCore.SoundOut.ALSoundOut.IsSupported">
+  IsSupported
+  <a class="header-action link-secondary" title="View source" href="https://github.com/thesilvercraft/cscore/blob/master/SilverCraft.CSCore/SoundOut/ALSoundOut.cs/#L26"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Checks whether the OpenAL library can be found and loaded</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool IsSupported { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="SilverCraft_CSCore_SoundOut_ALSoundOut_Latency_" data-uid="SilverCraft.CSCore.SoundOut.ALSoundOut.Latency*"></a>
+
+  <h3 id="SilverCraft_CSCore_SoundOut_ALSoundOut_Latency" data-uid="SilverCraft.CSCore.SoundOut.ALSoundOut.Latency">
+  Latency
+  <a class="header-action link-secondary" title="View source" href="https://github.com/thesilvercraft/cscore/blob/master/SilverCraft.CSCore/SoundOut/ALSoundOut.cs/#L126"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets or sets the latency of the playback specified in milliseconds.
+The <a class="xref" href="SilverCraft.CSCore.SoundOut.ALSoundOut.html#SilverCraft_CSCore_SoundOut_ALSoundOut_Latency">Latency</a> property has to be set before initializing.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int Latency { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="SilverCraft_CSCore_SoundOut_ALSoundOut_PlaybackState_" data-uid="SilverCraft.CSCore.SoundOut.ALSoundOut.PlaybackState*"></a>
+
+  <h3 id="SilverCraft_CSCore_SoundOut_ALSoundOut_PlaybackState" data-uid="SilverCraft.CSCore.SoundOut.ALSoundOut.PlaybackState">
+  PlaybackState
+  <a class="header-action link-secondary" title="View source" href="https://github.com/thesilvercraft/cscore/blob/master/SilverCraft.CSCore/SoundOut/ALSoundOut.cs/#L165"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the <a class="xref" href="SilverCraft.CSCore.SoundOut.PlaybackState.html">PlaybackState</a>.
+The playback state indicates whether the playback is currently playing, paused or stopped.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PlaybackState PlaybackState { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="SilverCraft.CSCore.SoundOut.PlaybackState.html">PlaybackState</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="SilverCraft_CSCore_SoundOut_ALSoundOut_Volume_" data-uid="SilverCraft.CSCore.SoundOut.ALSoundOut.Volume*"></a>
+
+  <h3 id="SilverCraft_CSCore_SoundOut_ALSoundOut_Volume" data-uid="SilverCraft.CSCore.SoundOut.ALSoundOut.Volume">
+  Volume
+  <a class="header-action link-secondary" title="View source" href="https://github.com/thesilvercraft/cscore/blob/master/SilverCraft.CSCore/SoundOut/ALSoundOut.cs/#L144"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets or sets the volume of the playback.
+Valid values are in the range from 0.0 (0%) to 1.0 (100%).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float Volume { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="SilverCraft_CSCore_SoundOut_ALSoundOut_WaveSource_" data-uid="SilverCraft.CSCore.SoundOut.ALSoundOut.WaveSource*"></a>
+
+  <h3 id="SilverCraft_CSCore_SoundOut_ALSoundOut_WaveSource" data-uid="SilverCraft.CSCore.SoundOut.ALSoundOut.WaveSource">
+  WaveSource
+  <a class="header-action link-secondary" title="View source" href="https://github.com/thesilvercraft/cscore/blob/master/SilverCraft.CSCore/SoundOut/ALSoundOut.cs/#L159"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the <a class="xref" href="SilverCraft.CSCore.IWaveSource.html">IWaveSource</a> which provides
+the waveform-audio data and was used to <a class="xref" href="SilverCraft.CSCore.SoundOut.ALSoundOut.html#SilverCraft_CSCore_SoundOut_ALSoundOut_Initialize_SilverCraft_CSCore_IWaveSource_">Initialize(IWaveSource)</a>
+the <a class="xref" href="SilverCraft.CSCore.SoundOut.ALSoundOut.html">ALSoundOut</a> instance.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IWaveSource WaveSource { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="SilverCraft.CSCore.IWaveSource.html">IWaveSource</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="SilverCraft_CSCore_SoundOut_ALSoundOut_Dispose_" data-uid="SilverCraft.CSCore.SoundOut.ALSoundOut.Dispose*"></a>
+
+  <h3 id="SilverCraft_CSCore_SoundOut_ALSoundOut_Dispose" data-uid="SilverCraft.CSCore.SoundOut.ALSoundOut.Dispose">
+  Dispose()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/thesilvercraft/cscore/blob/master/SilverCraft.CSCore/SoundOut/ALSoundOut.cs/#L331"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Stops the playback (if playing) and releases all allocated resources.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Dispose()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SilverCraft_CSCore_SoundOut_ALSoundOut_Dispose_" data-uid="SilverCraft.CSCore.SoundOut.ALSoundOut.Dispose*"></a>
+
+  <h3 id="SilverCraft_CSCore_SoundOut_ALSoundOut_Dispose_System_Boolean_" data-uid="SilverCraft.CSCore.SoundOut.ALSoundOut.Dispose(System.Boolean)">
+  Dispose(bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/thesilvercraft/cscore/blob/master/SilverCraft.CSCore/SoundOut/ALSoundOut.cs/#L542"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Disposes and stops the <a class="xref" href="SilverCraft.CSCore.SoundOut.ALSoundOut.html">ALSoundOut</a> instance.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void Dispose(bool disposing)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>disposing</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>True to release both managed and unmanaged resources; false to release only unmanaged
+resources.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SilverCraft_CSCore_SoundOut_ALSoundOut_Finalize_" data-uid="SilverCraft.CSCore.SoundOut.ALSoundOut.Finalize*"></a>
+
+  <h3 id="SilverCraft_CSCore_SoundOut_ALSoundOut_Finalize" data-uid="SilverCraft.CSCore.SoundOut.ALSoundOut.Finalize">
+  ~ALSoundOut()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/thesilvercraft/cscore/blob/master/SilverCraft.CSCore/SoundOut/ALSoundOut.cs/#L558"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected ~ALSoundOut()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SilverCraft_CSCore_SoundOut_ALSoundOut_Initialize_" data-uid="SilverCraft.CSCore.SoundOut.ALSoundOut.Initialize*"></a>
+
+  <h3 id="SilverCraft_CSCore_SoundOut_ALSoundOut_Initialize_SilverCraft_CSCore_IWaveSource_" data-uid="SilverCraft.CSCore.SoundOut.ALSoundOut.Initialize(SilverCraft.CSCore.IWaveSource)">
+  Initialize(IWaveSource)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/thesilvercraft/cscore/blob/master/SilverCraft.CSCore/SoundOut/ALSoundOut.cs/#L294"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Initializes the <a class="xref" href="SilverCraft.CSCore.SoundOut.ALSoundOut.html">ALSoundOut</a> instance for playing a <code class="paramref">source</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Initialize(IWaveSource source)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>source</code> <a class="xref" href="SilverCraft.CSCore.IWaveSource.html">IWaveSource</a></dt>
+    <dd><p><a class="xref" href="SilverCraft.CSCore.IWaveSource.html">IWaveSource</a> which provides waveform-audio data to play.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></dt>
+    <dd><p>source</p>
+</dd>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.invalidoperationexception">InvalidOperationException</a></dt>
+    <dd><p><a class="xref" href="SilverCraft.CSCore.SoundOut.ALSoundOut.html#SilverCraft_CSCore_SoundOut_ALSoundOut_PlaybackState">PlaybackState</a> is not
+<a class="xref" href="SilverCraft.CSCore.SoundOut.PlaybackState.html#SilverCraft_CSCore_SoundOut_PlaybackState_Stopped">Stopped</a>.</p>
+</dd>
+  </dl>
+
+
+
+  <a id="SilverCraft_CSCore_SoundOut_ALSoundOut_Pause_" data-uid="SilverCraft.CSCore.SoundOut.ALSoundOut.Pause*"></a>
+
+  <h3 id="SilverCraft_CSCore_SoundOut_ALSoundOut_Pause" data-uid="SilverCraft.CSCore.SoundOut.ALSoundOut.Pause">
+  Pause()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/thesilvercraft/cscore/blob/master/SilverCraft.CSCore/SoundOut/ALSoundOut.cs/#L222"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Pauses the audio playback.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Pause()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SilverCraft_CSCore_SoundOut_ALSoundOut_Play_" data-uid="SilverCraft.CSCore.SoundOut.ALSoundOut.Play*"></a>
+
+  <h3 id="SilverCraft_CSCore_SoundOut_ALSoundOut_Play" data-uid="SilverCraft.CSCore.SoundOut.ALSoundOut.Play">
+  Play()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/thesilvercraft/cscore/blob/master/SilverCraft.CSCore/SoundOut/ALSoundOut.cs/#L184"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Starts the playback.
+Note: The <a class="xref" href="SilverCraft.CSCore.SoundOut.ALSoundOut.html#SilverCraft_CSCore_SoundOut_ALSoundOut_Initialize_SilverCraft_CSCore_IWaveSource_">Initialize(IWaveSource)</a> method has to get called before calling <a class="xref" href="SilverCraft.CSCore.SoundOut.ALSoundOut.html#SilverCraft_CSCore_SoundOut_ALSoundOut_Play">Play()</a>.
+If the <a class="xref" href="SilverCraft.CSCore.SoundOut.ALSoundOut.html#SilverCraft_CSCore_SoundOut_ALSoundOut_PlaybackState">PlaybackState</a> is <a class="xref" href="SilverCraft.CSCore.SoundOut.PlaybackState.html#SilverCraft_CSCore_SoundOut_PlaybackState_Paused">Paused</a>, the
+<a class="xref" href="SilverCraft.CSCore.SoundOut.ALSoundOut.html#SilverCraft_CSCore_SoundOut_ALSoundOut_Resume">Resume()</a>
+will be called automatically.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Play()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SilverCraft_CSCore_SoundOut_ALSoundOut_Resume_" data-uid="SilverCraft.CSCore.SoundOut.ALSoundOut.Resume*"></a>
+
+  <h3 id="SilverCraft_CSCore_SoundOut_ALSoundOut_Resume" data-uid="SilverCraft.CSCore.SoundOut.ALSoundOut.Resume">
+  Resume()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/thesilvercraft/cscore/blob/master/SilverCraft.CSCore/SoundOut/ALSoundOut.cs/#L240"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Resumes the audio playback.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Resume()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SilverCraft_CSCore_SoundOut_ALSoundOut_Stop_" data-uid="SilverCraft.CSCore.SoundOut.ALSoundOut.Stop*"></a>
+
+  <h3 id="SilverCraft_CSCore_SoundOut_ALSoundOut_Stop" data-uid="SilverCraft.CSCore.SoundOut.ALSoundOut.Stop">
+  Stop()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/thesilvercraft/cscore/blob/master/SilverCraft.CSCore/SoundOut/ALSoundOut.cs/#L258"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Stops the audio playback and releases most of allocated resources.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Stop()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="events">Events
+</h2>
+
+
+
+  <h3 id="SilverCraft_CSCore_SoundOut_ALSoundOut_Stopped" data-uid="SilverCraft.CSCore.SoundOut.ALSoundOut.Stopped">
+  Stopped
+  <a class="header-action link-secondary" title="View source" href="https://github.com/thesilvercraft/cscore/blob/master/SilverCraft.CSCore/SoundOut/ALSoundOut.cs/#L175"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Occurs when the playback stops.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event EventHandler&lt;PlaybackStoppedEventArgs&gt; Stopped</code></pre>
+  </div>
+
+
+
+
+
+
+  <h4 class="section">Event Type</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.eventhandler-1">EventHandler</a>&lt;<a class="xref" href="SilverCraft.CSCore.SoundOut.PlaybackStoppedEventArgs.html">PlaybackStoppedEventArgs</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/thesilvercraft/cscore/blob/master/SilverCraft.CSCore/SoundOut/ALSoundOut.cs/#L21" class="edit-link">Edit this page</a>
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

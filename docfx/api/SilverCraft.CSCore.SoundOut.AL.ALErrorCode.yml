@@ -1,0 +1,250 @@
+### YamlMime:ManagedReference
+items:
+- uid: SilverCraft.CSCore.SoundOut.AL.ALErrorCode
+  commentId: T:SilverCraft.CSCore.SoundOut.AL.ALErrorCode
+  id: ALErrorCode
+  parent: SilverCraft.CSCore.SoundOut.AL
+  children:
+  - SilverCraft.CSCore.SoundOut.AL.ALErrorCode.InvalidEnum
+  - SilverCraft.CSCore.SoundOut.AL.ALErrorCode.InvalidName
+  - SilverCraft.CSCore.SoundOut.AL.ALErrorCode.InvalidOperation
+  - SilverCraft.CSCore.SoundOut.AL.ALErrorCode.InvalidValue
+  - SilverCraft.CSCore.SoundOut.AL.ALErrorCode.NoError
+  - SilverCraft.CSCore.SoundOut.AL.ALErrorCode.OutOfMemory
+  langs:
+  - csharp
+  - vb
+  name: ALErrorCode
+  nameWithType: ALErrorCode
+  fullName: SilverCraft.CSCore.SoundOut.AL.ALErrorCode
+  type: Enum
+  source:
+    remote:
+      path: SilverCraft.CSCore/SoundOut/AL/ALErrorCodes.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: ALErrorCode
+    path: ../SilverCraft.CSCore/SoundOut/AL/ALErrorCodes.cs
+    startLine: 5
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.SoundOut.AL
+  summary: Defines OpenAL Error Codes.
+  example: []
+  syntax:
+    content: public enum ALErrorCode
+    content.vb: Public Enum ALErrorCode
+- uid: SilverCraft.CSCore.SoundOut.AL.ALErrorCode.NoError
+  commentId: F:SilverCraft.CSCore.SoundOut.AL.ALErrorCode.NoError
+  id: NoError
+  parent: SilverCraft.CSCore.SoundOut.AL.ALErrorCode
+  langs:
+  - csharp
+  - vb
+  name: NoError
+  nameWithType: ALErrorCode.NoError
+  fullName: SilverCraft.CSCore.SoundOut.AL.ALErrorCode.NoError
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/SoundOut/AL/ALErrorCodes.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: NoError
+    path: ../SilverCraft.CSCore/SoundOut/AL/ALErrorCodes.cs
+    startLine: 10
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.SoundOut.AL
+  summary: No Error
+  example: []
+  syntax:
+    content: NoError = 0
+    return:
+      type: SilverCraft.CSCore.SoundOut.AL.ALErrorCode
+- uid: SilverCraft.CSCore.SoundOut.AL.ALErrorCode.InvalidName
+  commentId: F:SilverCraft.CSCore.SoundOut.AL.ALErrorCode.InvalidName
+  id: InvalidName
+  parent: SilverCraft.CSCore.SoundOut.AL.ALErrorCode
+  langs:
+  - csharp
+  - vb
+  name: InvalidName
+  nameWithType: ALErrorCode.InvalidName
+  fullName: SilverCraft.CSCore.SoundOut.AL.ALErrorCode.InvalidName
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/SoundOut/AL/ALErrorCodes.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: InvalidName
+    path: ../SilverCraft.CSCore/SoundOut/AL/ALErrorCodes.cs
+    startLine: 15
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.SoundOut.AL
+  summary: Invalid Name
+  example: []
+  syntax:
+    content: InvalidName = 40961
+    return:
+      type: SilverCraft.CSCore.SoundOut.AL.ALErrorCode
+- uid: SilverCraft.CSCore.SoundOut.AL.ALErrorCode.InvalidEnum
+  commentId: F:SilverCraft.CSCore.SoundOut.AL.ALErrorCode.InvalidEnum
+  id: InvalidEnum
+  parent: SilverCraft.CSCore.SoundOut.AL.ALErrorCode
+  langs:
+  - csharp
+  - vb
+  name: InvalidEnum
+  nameWithType: ALErrorCode.InvalidEnum
+  fullName: SilverCraft.CSCore.SoundOut.AL.ALErrorCode.InvalidEnum
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/SoundOut/AL/ALErrorCodes.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: InvalidEnum
+    path: ../SilverCraft.CSCore/SoundOut/AL/ALErrorCodes.cs
+    startLine: 20
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.SoundOut.AL
+  summary: Invalid Enum
+  example: []
+  syntax:
+    content: InvalidEnum = 40962
+    return:
+      type: SilverCraft.CSCore.SoundOut.AL.ALErrorCode
+- uid: SilverCraft.CSCore.SoundOut.AL.ALErrorCode.InvalidValue
+  commentId: F:SilverCraft.CSCore.SoundOut.AL.ALErrorCode.InvalidValue
+  id: InvalidValue
+  parent: SilverCraft.CSCore.SoundOut.AL.ALErrorCode
+  langs:
+  - csharp
+  - vb
+  name: InvalidValue
+  nameWithType: ALErrorCode.InvalidValue
+  fullName: SilverCraft.CSCore.SoundOut.AL.ALErrorCode.InvalidValue
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/SoundOut/AL/ALErrorCodes.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: InvalidValue
+    path: ../SilverCraft.CSCore/SoundOut/AL/ALErrorCodes.cs
+    startLine: 25
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.SoundOut.AL
+  summary: Invalid Value
+  example: []
+  syntax:
+    content: InvalidValue = 40963
+    return:
+      type: SilverCraft.CSCore.SoundOut.AL.ALErrorCode
+- uid: SilverCraft.CSCore.SoundOut.AL.ALErrorCode.InvalidOperation
+  commentId: F:SilverCraft.CSCore.SoundOut.AL.ALErrorCode.InvalidOperation
+  id: InvalidOperation
+  parent: SilverCraft.CSCore.SoundOut.AL.ALErrorCode
+  langs:
+  - csharp
+  - vb
+  name: InvalidOperation
+  nameWithType: ALErrorCode.InvalidOperation
+  fullName: SilverCraft.CSCore.SoundOut.AL.ALErrorCode.InvalidOperation
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/SoundOut/AL/ALErrorCodes.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: InvalidOperation
+    path: ../SilverCraft.CSCore/SoundOut/AL/ALErrorCodes.cs
+    startLine: 30
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.SoundOut.AL
+  summary: Invalid Operation
+  example: []
+  syntax:
+    content: InvalidOperation = 40964
+    return:
+      type: SilverCraft.CSCore.SoundOut.AL.ALErrorCode
+- uid: SilverCraft.CSCore.SoundOut.AL.ALErrorCode.OutOfMemory
+  commentId: F:SilverCraft.CSCore.SoundOut.AL.ALErrorCode.OutOfMemory
+  id: OutOfMemory
+  parent: SilverCraft.CSCore.SoundOut.AL.ALErrorCode
+  langs:
+  - csharp
+  - vb
+  name: OutOfMemory
+  nameWithType: ALErrorCode.OutOfMemory
+  fullName: SilverCraft.CSCore.SoundOut.AL.ALErrorCode.OutOfMemory
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/SoundOut/AL/ALErrorCodes.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: OutOfMemory
+    path: ../SilverCraft.CSCore/SoundOut/AL/ALErrorCodes.cs
+    startLine: 35
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.SoundOut.AL
+  summary: Out of Memory
+  example: []
+  syntax:
+    content: OutOfMemory = 40965
+    return:
+      type: SilverCraft.CSCore.SoundOut.AL.ALErrorCode
+references:
+- uid: SilverCraft.CSCore.SoundOut.AL
+  commentId: N:SilverCraft.CSCore.SoundOut.AL
+  href: SilverCraft.html
+  name: SilverCraft.CSCore.SoundOut.AL
+  nameWithType: SilverCraft.CSCore.SoundOut.AL
+  fullName: SilverCraft.CSCore.SoundOut.AL
+  spec.csharp:
+  - uid: SilverCraft
+    name: SilverCraft
+    href: SilverCraft.html
+  - name: .
+  - uid: SilverCraft.CSCore
+    name: CSCore
+    href: SilverCraft.CSCore.html
+  - name: .
+  - uid: SilverCraft.CSCore.SoundOut
+    name: SoundOut
+    href: SilverCraft.CSCore.SoundOut.html
+  - name: .
+  - uid: SilverCraft.CSCore.SoundOut.AL
+    name: AL
+    href: SilverCraft.CSCore.SoundOut.AL.html
+  spec.vb:
+  - uid: SilverCraft
+    name: SilverCraft
+    href: SilverCraft.html
+  - name: .
+  - uid: SilverCraft.CSCore
+    name: CSCore
+    href: SilverCraft.CSCore.html
+  - name: .
+  - uid: SilverCraft.CSCore.SoundOut
+    name: SoundOut
+    href: SilverCraft.CSCore.SoundOut.html
+  - name: .
+  - uid: SilverCraft.CSCore.SoundOut.AL
+    name: AL
+    href: SilverCraft.CSCore.SoundOut.AL.html
+- uid: SilverCraft.CSCore.SoundOut.AL.ALErrorCode
+  commentId: T:SilverCraft.CSCore.SoundOut.AL.ALErrorCode
+  parent: SilverCraft.CSCore.SoundOut.AL
+  href: SilverCraft.CSCore.SoundOut.AL.ALErrorCode.html
+  name: ALErrorCode
+  nameWithType: ALErrorCode
+  fullName: SilverCraft.CSCore.SoundOut.AL.ALErrorCode

@@ -1,0 +1,198 @@
+### YamlMime:ManagedReference
+items:
+- uid: SilverCraft.CSCore.PortAudio.PaStreamFinishedCallback
+  commentId: T:SilverCraft.CSCore.PortAudio.PaStreamFinishedCallback
+  id: PaStreamFinishedCallback
+  parent: SilverCraft.CSCore.PortAudio
+  children: []
+  langs:
+  - csharp
+  - vb
+  name: PaStreamFinishedCallback
+  nameWithType: PaStreamFinishedCallback
+  fullName: SilverCraft.CSCore.PortAudio.PaStreamFinishedCallback
+  type: Delegate
+  source:
+    remote:
+      path: SilverCraft.CSCore.PortAudio/PortAudioSoundOut.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: PaStreamFinishedCallback
+    path: ../SilverCraft.CSCore.PortAudio/PortAudioSoundOut.cs
+    startLine: 15
+  assemblies:
+  - SilverCraft.CSCore.PortAudio
+  namespace: SilverCraft.CSCore.PortAudio
+  syntax:
+    content: public delegate void PaStreamFinishedCallback(void* userData)
+    parameters:
+    - id: userData
+      type: System.Void*
+    content.vb: Public Delegate Sub PaStreamFinishedCallback(userData As Void*)
+  extensionMethods:
+  - SilverCraft.CSCore.PortAudio.PaStreamFinishedCallback.SilverCraft.CSCore.FluentExtensions.Synchronized``2
+references:
+- uid: SilverCraft.CSCore.PortAudio
+  commentId: N:SilverCraft.CSCore.PortAudio
+  href: SilverCraft.html
+  name: SilverCraft.CSCore.PortAudio
+  nameWithType: SilverCraft.CSCore.PortAudio
+  fullName: SilverCraft.CSCore.PortAudio
+  spec.csharp:
+  - uid: SilverCraft
+    name: SilverCraft
+    href: SilverCraft.html
+  - name: .
+  - uid: SilverCraft.CSCore
+    name: CSCore
+    href: SilverCraft.CSCore.html
+  - name: .
+  - uid: SilverCraft.CSCore.PortAudio
+    name: PortAudio
+    href: SilverCraft.CSCore.PortAudio.html
+  spec.vb:
+  - uid: SilverCraft
+    name: SilverCraft
+    href: SilverCraft.html
+  - name: .
+  - uid: SilverCraft.CSCore
+    name: CSCore
+    href: SilverCraft.CSCore.html
+  - name: .
+  - uid: SilverCraft.CSCore.PortAudio
+    name: PortAudio
+    href: SilverCraft.CSCore.PortAudio.html
+- uid: SilverCraft.CSCore.PortAudio.PaStreamFinishedCallback.SilverCraft.CSCore.FluentExtensions.Synchronized``2
+  commentId: M:SilverCraft.CSCore.FluentExtensions.Synchronized``2(``0)
+  parent: SilverCraft.CSCore.FluentExtensions
+  definition: SilverCraft.CSCore.FluentExtensions.Synchronized``2(``0)
+  href: SilverCraft.CSCore.FluentExtensions.html#SilverCraft_CSCore_FluentExtensions_Synchronized__2___0_
+  name: Synchronized<PaStreamFinishedCallback, T>(PaStreamFinishedCallback)
+  nameWithType: FluentExtensions.Synchronized<PaStreamFinishedCallback, T>(PaStreamFinishedCallback)
+  fullName: SilverCraft.CSCore.FluentExtensions.Synchronized<SilverCraft.CSCore.PortAudio.PaStreamFinishedCallback, T>(SilverCraft.CSCore.PortAudio.PaStreamFinishedCallback)
+  nameWithType.vb: FluentExtensions.Synchronized(Of PaStreamFinishedCallback, T)(PaStreamFinishedCallback)
+  fullName.vb: SilverCraft.CSCore.FluentExtensions.Synchronized(Of SilverCraft.CSCore.PortAudio.PaStreamFinishedCallback, T)(SilverCraft.CSCore.PortAudio.PaStreamFinishedCallback)
+  name.vb: Synchronized(Of PaStreamFinishedCallback, T)(PaStreamFinishedCallback)
+  spec.csharp:
+  - uid: SilverCraft.CSCore.FluentExtensions.Synchronized``2(SilverCraft.CSCore.PortAudio.PaStreamFinishedCallback)
+    name: Synchronized
+    href: SilverCraft.CSCore.FluentExtensions.html#SilverCraft_CSCore_FluentExtensions_Synchronized__2___0_
+  - name: <
+  - uid: SilverCraft.CSCore.PortAudio.PaStreamFinishedCallback
+    name: PaStreamFinishedCallback
+    href: SilverCraft.CSCore.PortAudio.PaStreamFinishedCallback.html
+  - name: ','
+  - name: " "
+  - name: T
+  - name: '>'
+  - name: (
+  - uid: SilverCraft.CSCore.PortAudio.PaStreamFinishedCallback
+    name: PaStreamFinishedCallback
+    href: SilverCraft.CSCore.PortAudio.PaStreamFinishedCallback.html
+  - name: )
+  spec.vb:
+  - uid: SilverCraft.CSCore.FluentExtensions.Synchronized``2(SilverCraft.CSCore.PortAudio.PaStreamFinishedCallback)
+    name: Synchronized
+    href: SilverCraft.CSCore.FluentExtensions.html#SilverCraft_CSCore_FluentExtensions_Synchronized__2___0_
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: SilverCraft.CSCore.PortAudio.PaStreamFinishedCallback
+    name: PaStreamFinishedCallback
+    href: SilverCraft.CSCore.PortAudio.PaStreamFinishedCallback.html
+  - name: ','
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: SilverCraft.CSCore.PortAudio.PaStreamFinishedCallback
+    name: PaStreamFinishedCallback
+    href: SilverCraft.CSCore.PortAudio.PaStreamFinishedCallback.html
+  - name: )
+- uid: System.Void*
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.void
+  name: void*
+  nameWithType: void*
+  fullName: void*
+  nameWithType.vb: Void*
+  fullName.vb: Void*
+  name.vb: Void*
+  spec.csharp:
+  - uid: System.Void
+    name: void
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.void
+  - name: '*'
+  spec.vb:
+  - uid: System.Void
+    name: Void
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.void
+  - name: '*'
+- uid: SilverCraft.CSCore.FluentExtensions.Synchronized``2(``0)
+  commentId: M:SilverCraft.CSCore.FluentExtensions.Synchronized``2(``0)
+  href: SilverCraft.CSCore.FluentExtensions.html#SilverCraft_CSCore_FluentExtensions_Synchronized__2___0_
+  name: Synchronized<TAudioSource, T>(TAudioSource)
+  nameWithType: FluentExtensions.Synchronized<TAudioSource, T>(TAudioSource)
+  fullName: SilverCraft.CSCore.FluentExtensions.Synchronized<TAudioSource, T>(TAudioSource)
+  nameWithType.vb: FluentExtensions.Synchronized(Of TAudioSource, T)(TAudioSource)
+  fullName.vb: SilverCraft.CSCore.FluentExtensions.Synchronized(Of TAudioSource, T)(TAudioSource)
+  name.vb: Synchronized(Of TAudioSource, T)(TAudioSource)
+  spec.csharp:
+  - uid: SilverCraft.CSCore.FluentExtensions.Synchronized``2(``0)
+    name: Synchronized
+    href: SilverCraft.CSCore.FluentExtensions.html#SilverCraft_CSCore_FluentExtensions_Synchronized__2___0_
+  - name: <
+  - name: TAudioSource
+  - name: ','
+  - name: " "
+  - name: T
+  - name: '>'
+  - name: (
+  - name: TAudioSource
+  - name: )
+  spec.vb:
+  - uid: SilverCraft.CSCore.FluentExtensions.Synchronized``2(``0)
+    name: Synchronized
+    href: SilverCraft.CSCore.FluentExtensions.html#SilverCraft_CSCore_FluentExtensions_Synchronized__2___0_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TAudioSource
+  - name: ','
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - name: TAudioSource
+  - name: )
+- uid: SilverCraft.CSCore.FluentExtensions
+  commentId: T:SilverCraft.CSCore.FluentExtensions
+  parent: SilverCraft.CSCore
+  href: SilverCraft.CSCore.FluentExtensions.html
+  name: FluentExtensions
+  nameWithType: FluentExtensions
+  fullName: SilverCraft.CSCore.FluentExtensions
+- uid: SilverCraft.CSCore
+  commentId: N:SilverCraft.CSCore
+  href: SilverCraft.html
+  name: SilverCraft.CSCore
+  nameWithType: SilverCraft.CSCore
+  fullName: SilverCraft.CSCore
+  spec.csharp:
+  - uid: SilverCraft
+    name: SilverCraft
+    href: SilverCraft.html
+  - name: .
+  - uid: SilverCraft.CSCore
+    name: CSCore
+    href: SilverCraft.CSCore.html
+  spec.vb:
+  - uid: SilverCraft
+    name: SilverCraft
+    href: SilverCraft.html
+  - name: .
+  - uid: SilverCraft.CSCore
+    name: CSCore
+    href: SilverCraft.CSCore.html

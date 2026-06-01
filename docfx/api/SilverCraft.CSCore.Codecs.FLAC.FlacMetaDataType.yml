@@ -1,0 +1,308 @@
+### YamlMime:ManagedReference
+items:
+- uid: SilverCraft.CSCore.Codecs.FLAC.FlacMetaDataType
+  commentId: T:SilverCraft.CSCore.Codecs.FLAC.FlacMetaDataType
+  id: FlacMetaDataType
+  parent: SilverCraft.CSCore.Codecs.FLAC
+  children:
+  - SilverCraft.CSCore.Codecs.FLAC.FlacMetaDataType.Application
+  - SilverCraft.CSCore.Codecs.FLAC.FlacMetaDataType.CueSheet
+  - SilverCraft.CSCore.Codecs.FLAC.FlacMetaDataType.Padding
+  - SilverCraft.CSCore.Codecs.FLAC.FlacMetaDataType.Picture
+  - SilverCraft.CSCore.Codecs.FLAC.FlacMetaDataType.Seektable
+  - SilverCraft.CSCore.Codecs.FLAC.FlacMetaDataType.StreamInfo
+  - SilverCraft.CSCore.Codecs.FLAC.FlacMetaDataType.Undef
+  - SilverCraft.CSCore.Codecs.FLAC.FlacMetaDataType.VorbisComment
+  langs:
+  - csharp
+  - vb
+  name: FlacMetaDataType
+  nameWithType: FlacMetaDataType
+  fullName: SilverCraft.CSCore.Codecs.FLAC.FlacMetaDataType
+  type: Enum
+  source:
+    remote:
+      path: SilverCraft.CSCore/Codecs/FLAC/Metadata/FlacMetaDataType.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: FlacMetaDataType
+    path: ../SilverCraft.CSCore/Codecs/FLAC/Metadata/FlacMetaDataType.cs
+    startLine: 6
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Codecs.FLAC
+  summary: Defines flac metadata types.
+  example: []
+  syntax:
+    content: public enum FlacMetaDataType
+    content.vb: Public Enum FlacMetaDataType
+- uid: SilverCraft.CSCore.Codecs.FLAC.FlacMetaDataType.StreamInfo
+  commentId: F:SilverCraft.CSCore.Codecs.FLAC.FlacMetaDataType.StreamInfo
+  id: StreamInfo
+  parent: SilverCraft.CSCore.Codecs.FLAC.FlacMetaDataType
+  langs:
+  - csharp
+  - vb
+  name: StreamInfo
+  nameWithType: FlacMetaDataType.StreamInfo
+  fullName: SilverCraft.CSCore.Codecs.FLAC.FlacMetaDataType.StreamInfo
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/Codecs/FLAC/Metadata/FlacMetaDataType.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: StreamInfo
+    path: ../SilverCraft.CSCore/Codecs/FLAC/Metadata/FlacMetaDataType.cs
+    startLine: 11
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Codecs.FLAC
+  summary: Streaminfo metadata.
+  example: []
+  syntax:
+    content: StreamInfo = 0
+    return:
+      type: SilverCraft.CSCore.Codecs.FLAC.FlacMetaDataType
+- uid: SilverCraft.CSCore.Codecs.FLAC.FlacMetaDataType.Padding
+  commentId: F:SilverCraft.CSCore.Codecs.FLAC.FlacMetaDataType.Padding
+  id: Padding
+  parent: SilverCraft.CSCore.Codecs.FLAC.FlacMetaDataType
+  langs:
+  - csharp
+  - vb
+  name: Padding
+  nameWithType: FlacMetaDataType.Padding
+  fullName: SilverCraft.CSCore.Codecs.FLAC.FlacMetaDataType.Padding
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/Codecs/FLAC/Metadata/FlacMetaDataType.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: Padding
+    path: ../SilverCraft.CSCore/Codecs/FLAC/Metadata/FlacMetaDataType.cs
+    startLine: 15
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Codecs.FLAC
+  summary: Padding metadata.
+  example: []
+  syntax:
+    content: Padding = 1
+    return:
+      type: SilverCraft.CSCore.Codecs.FLAC.FlacMetaDataType
+- uid: SilverCraft.CSCore.Codecs.FLAC.FlacMetaDataType.Application
+  commentId: F:SilverCraft.CSCore.Codecs.FLAC.FlacMetaDataType.Application
+  id: Application
+  parent: SilverCraft.CSCore.Codecs.FLAC.FlacMetaDataType
+  langs:
+  - csharp
+  - vb
+  name: Application
+  nameWithType: FlacMetaDataType.Application
+  fullName: SilverCraft.CSCore.Codecs.FLAC.FlacMetaDataType.Application
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/Codecs/FLAC/Metadata/FlacMetaDataType.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: Application
+    path: ../SilverCraft.CSCore/Codecs/FLAC/Metadata/FlacMetaDataType.cs
+    startLine: 19
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Codecs.FLAC
+  summary: Application metadata.
+  example: []
+  syntax:
+    content: Application = 2
+    return:
+      type: SilverCraft.CSCore.Codecs.FLAC.FlacMetaDataType
+- uid: SilverCraft.CSCore.Codecs.FLAC.FlacMetaDataType.Seektable
+  commentId: F:SilverCraft.CSCore.Codecs.FLAC.FlacMetaDataType.Seektable
+  id: Seektable
+  parent: SilverCraft.CSCore.Codecs.FLAC.FlacMetaDataType
+  langs:
+  - csharp
+  - vb
+  name: Seektable
+  nameWithType: FlacMetaDataType.Seektable
+  fullName: SilverCraft.CSCore.Codecs.FLAC.FlacMetaDataType.Seektable
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/Codecs/FLAC/Metadata/FlacMetaDataType.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: Seektable
+    path: ../SilverCraft.CSCore/Codecs/FLAC/Metadata/FlacMetaDataType.cs
+    startLine: 23
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Codecs.FLAC
+  summary: Seektable metadata.
+  example: []
+  syntax:
+    content: Seektable = 3
+    return:
+      type: SilverCraft.CSCore.Codecs.FLAC.FlacMetaDataType
+- uid: SilverCraft.CSCore.Codecs.FLAC.FlacMetaDataType.VorbisComment
+  commentId: F:SilverCraft.CSCore.Codecs.FLAC.FlacMetaDataType.VorbisComment
+  id: VorbisComment
+  parent: SilverCraft.CSCore.Codecs.FLAC.FlacMetaDataType
+  langs:
+  - csharp
+  - vb
+  name: VorbisComment
+  nameWithType: FlacMetaDataType.VorbisComment
+  fullName: SilverCraft.CSCore.Codecs.FLAC.FlacMetaDataType.VorbisComment
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/Codecs/FLAC/Metadata/FlacMetaDataType.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: VorbisComment
+    path: ../SilverCraft.CSCore/Codecs/FLAC/Metadata/FlacMetaDataType.cs
+    startLine: 27
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Codecs.FLAC
+  summary: Vorbis comment metadata.
+  example: []
+  syntax:
+    content: VorbisComment = 4
+    return:
+      type: SilverCraft.CSCore.Codecs.FLAC.FlacMetaDataType
+- uid: SilverCraft.CSCore.Codecs.FLAC.FlacMetaDataType.CueSheet
+  commentId: F:SilverCraft.CSCore.Codecs.FLAC.FlacMetaDataType.CueSheet
+  id: CueSheet
+  parent: SilverCraft.CSCore.Codecs.FLAC.FlacMetaDataType
+  langs:
+  - csharp
+  - vb
+  name: CueSheet
+  nameWithType: FlacMetaDataType.CueSheet
+  fullName: SilverCraft.CSCore.Codecs.FLAC.FlacMetaDataType.CueSheet
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/Codecs/FLAC/Metadata/FlacMetaDataType.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: CueSheet
+    path: ../SilverCraft.CSCore/Codecs/FLAC/Metadata/FlacMetaDataType.cs
+    startLine: 31
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Codecs.FLAC
+  summary: Cue sheet metadata.
+  example: []
+  syntax:
+    content: CueSheet = 5
+    return:
+      type: SilverCraft.CSCore.Codecs.FLAC.FlacMetaDataType
+- uid: SilverCraft.CSCore.Codecs.FLAC.FlacMetaDataType.Picture
+  commentId: F:SilverCraft.CSCore.Codecs.FLAC.FlacMetaDataType.Picture
+  id: Picture
+  parent: SilverCraft.CSCore.Codecs.FLAC.FlacMetaDataType
+  langs:
+  - csharp
+  - vb
+  name: Picture
+  nameWithType: FlacMetaDataType.Picture
+  fullName: SilverCraft.CSCore.Codecs.FLAC.FlacMetaDataType.Picture
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/Codecs/FLAC/Metadata/FlacMetaDataType.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: Picture
+    path: ../SilverCraft.CSCore/Codecs/FLAC/Metadata/FlacMetaDataType.cs
+    startLine: 35
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Codecs.FLAC
+  summary: Picture metadata.
+  example: []
+  syntax:
+    content: Picture = 6
+    return:
+      type: SilverCraft.CSCore.Codecs.FLAC.FlacMetaDataType
+- uid: SilverCraft.CSCore.Codecs.FLAC.FlacMetaDataType.Undef
+  commentId: F:SilverCraft.CSCore.Codecs.FLAC.FlacMetaDataType.Undef
+  id: Undef
+  parent: SilverCraft.CSCore.Codecs.FLAC.FlacMetaDataType
+  langs:
+  - csharp
+  - vb
+  name: Undef
+  nameWithType: FlacMetaDataType.Undef
+  fullName: SilverCraft.CSCore.Codecs.FLAC.FlacMetaDataType.Undef
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/Codecs/FLAC/Metadata/FlacMetaDataType.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: Undef
+    path: ../SilverCraft.CSCore/Codecs/FLAC/Metadata/FlacMetaDataType.cs
+    startLine: 39
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Codecs.FLAC
+  summary: Undefined metadata. Used for custom metadata fields.
+  example: []
+  syntax:
+    content: Undef = 7
+    return:
+      type: SilverCraft.CSCore.Codecs.FLAC.FlacMetaDataType
+references:
+- uid: SilverCraft.CSCore.Codecs.FLAC
+  commentId: N:SilverCraft.CSCore.Codecs.FLAC
+  href: SilverCraft.html
+  name: SilverCraft.CSCore.Codecs.FLAC
+  nameWithType: SilverCraft.CSCore.Codecs.FLAC
+  fullName: SilverCraft.CSCore.Codecs.FLAC
+  spec.csharp:
+  - uid: SilverCraft
+    name: SilverCraft
+    href: SilverCraft.html
+  - name: .
+  - uid: SilverCraft.CSCore
+    name: CSCore
+    href: SilverCraft.CSCore.html
+  - name: .
+  - uid: SilverCraft.CSCore.Codecs
+    name: Codecs
+    href: SilverCraft.CSCore.Codecs.html
+  - name: .
+  - uid: SilverCraft.CSCore.Codecs.FLAC
+    name: FLAC
+    href: SilverCraft.CSCore.Codecs.FLAC.html
+  spec.vb:
+  - uid: SilverCraft
+    name: SilverCraft
+    href: SilverCraft.html
+  - name: .
+  - uid: SilverCraft.CSCore
+    name: CSCore
+    href: SilverCraft.CSCore.html
+  - name: .
+  - uid: SilverCraft.CSCore.Codecs
+    name: Codecs
+    href: SilverCraft.CSCore.Codecs.html
+  - name: .
+  - uid: SilverCraft.CSCore.Codecs.FLAC
+    name: FLAC
+    href: SilverCraft.CSCore.Codecs.FLAC.html
+- uid: SilverCraft.CSCore.Codecs.FLAC.FlacMetaDataType
+  commentId: T:SilverCraft.CSCore.Codecs.FLAC.FlacMetaDataType
+  parent: SilverCraft.CSCore.Codecs.FLAC
+  href: SilverCraft.CSCore.Codecs.FLAC.FlacMetaDataType.html
+  name: FlacMetaDataType
+  nameWithType: FlacMetaDataType
+  fullName: SilverCraft.CSCore.Codecs.FLAC.FlacMetaDataType

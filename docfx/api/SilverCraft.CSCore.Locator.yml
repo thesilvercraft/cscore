@@ -1,0 +1,559 @@
+### YamlMime:ManagedReference
+items:
+- uid: SilverCraft.CSCore.Locator
+  commentId: T:SilverCraft.CSCore.Locator
+  id: Locator
+  parent: SilverCraft.CSCore
+  children:
+  - SilverCraft.CSCore.Locator.Get``1
+  - SilverCraft.CSCore.Locator.Instance
+  - SilverCraft.CSCore.Locator.Register``2(System.Func{``1})
+  langs:
+  - csharp
+  - vb
+  name: Locator
+  nameWithType: Locator
+  fullName: SilverCraft.CSCore.Locator
+  type: Class
+  source:
+    remote:
+      path: SilverCraft.CSCore/Locator.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: Locator
+    path: ../SilverCraft.CSCore/Locator.cs
+    startLine: 2
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore
+  syntax:
+    content: public sealed class Locator
+    content.vb: Public NotInheritable Class Locator
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  extensionMethods:
+  - SilverCraft.CSCore.Locator.SilverCraft.CSCore.FluentExtensions.Synchronized``2
+- uid: SilverCraft.CSCore.Locator.Instance
+  commentId: P:SilverCraft.CSCore.Locator.Instance
+  id: Instance
+  parent: SilverCraft.CSCore.Locator
+  langs:
+  - csharp
+  - vb
+  name: Instance
+  nameWithType: Locator.Instance
+  fullName: SilverCraft.CSCore.Locator.Instance
+  type: Property
+  source:
+    remote:
+      path: SilverCraft.CSCore/Locator.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: Instance
+    path: ../SilverCraft.CSCore/Locator.cs
+    startLine: 4
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore
+  syntax:
+    content: public static Locator Instance { get; }
+    parameters: []
+    return:
+      type: SilverCraft.CSCore.Locator
+    content.vb: Public Shared ReadOnly Property Instance As Locator
+  overload: SilverCraft.CSCore.Locator.Instance*
+- uid: SilverCraft.CSCore.Locator.Register``2(System.Func{``1})
+  commentId: M:SilverCraft.CSCore.Locator.Register``2(System.Func{``1})
+  id: Register``2(System.Func{``1})
+  parent: SilverCraft.CSCore.Locator
+  langs:
+  - csharp
+  - vb
+  name: Register<TRegisterAs, TImplementation>(Func<TImplementation>)
+  nameWithType: Locator.Register<TRegisterAs, TImplementation>(Func<TImplementation>)
+  fullName: SilverCraft.CSCore.Locator.Register<TRegisterAs, TImplementation>(System.Func<TImplementation>)
+  type: Method
+  source:
+    remote:
+      path: SilverCraft.CSCore/Locator.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: Register
+    path: ../SilverCraft.CSCore/Locator.cs
+    startLine: 12
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore
+  syntax:
+    content: 'public void Register<TRegisterAs, TImplementation>(Func<TImplementation> factory) where TImplementation : TRegisterAs'
+    parameters:
+    - id: factory
+      type: System.Func{{TImplementation}}
+    typeParameters:
+    - id: TRegisterAs
+    - id: TImplementation
+    content.vb: Public Sub Register(Of TRegisterAs, TImplementation As TRegisterAs)(factory As Func(Of TImplementation))
+  overload: SilverCraft.CSCore.Locator.Register*
+  nameWithType.vb: Locator.Register(Of TRegisterAs, TImplementation)(Func(Of TImplementation))
+  fullName.vb: SilverCraft.CSCore.Locator.Register(Of TRegisterAs, TImplementation)(System.Func(Of TImplementation))
+  name.vb: Register(Of TRegisterAs, TImplementation)(Func(Of TImplementation))
+- uid: SilverCraft.CSCore.Locator.Get``1
+  commentId: M:SilverCraft.CSCore.Locator.Get``1
+  id: Get``1
+  parent: SilverCraft.CSCore.Locator
+  langs:
+  - csharp
+  - vb
+  name: Get<T>()
+  nameWithType: Locator.Get<T>()
+  fullName: SilverCraft.CSCore.Locator.Get<T>()
+  type: Method
+  source:
+    remote:
+      path: SilverCraft.CSCore/Locator.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: Get
+    path: ../SilverCraft.CSCore/Locator.cs
+    startLine: 22
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore
+  syntax:
+    content: public T Get<T>()
+    typeParameters:
+    - id: T
+    return:
+      type: '{T}'
+    content.vb: Public Function [Get](Of T)() As T
+  overload: SilverCraft.CSCore.Locator.Get*
+  nameWithType.vb: Locator.Get(Of T)()
+  fullName.vb: SilverCraft.CSCore.Locator.Get(Of T)()
+  name.vb: Get(Of T)()
+references:
+- uid: SilverCraft.CSCore
+  commentId: N:SilverCraft.CSCore
+  href: SilverCraft.html
+  name: SilverCraft.CSCore
+  nameWithType: SilverCraft.CSCore
+  fullName: SilverCraft.CSCore
+  spec.csharp:
+  - uid: SilverCraft
+    name: SilverCraft
+    href: SilverCraft.html
+  - name: .
+  - uid: SilverCraft.CSCore
+    name: CSCore
+    href: SilverCraft.CSCore.html
+  spec.vb:
+  - uid: SilverCraft
+    name: SilverCraft
+    href: SilverCraft.html
+  - name: .
+  - uid: SilverCraft.CSCore
+    name: CSCore
+    href: SilverCraft.CSCore.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: SilverCraft.CSCore.Locator.SilverCraft.CSCore.FluentExtensions.Synchronized``2
+  commentId: M:SilverCraft.CSCore.FluentExtensions.Synchronized``2(``0)
+  parent: SilverCraft.CSCore.FluentExtensions
+  definition: SilverCraft.CSCore.FluentExtensions.Synchronized``2(``0)
+  href: SilverCraft.CSCore.FluentExtensions.html#SilverCraft_CSCore_FluentExtensions_Synchronized__2___0_
+  name: Synchronized<Locator, T>(Locator)
+  nameWithType: FluentExtensions.Synchronized<Locator, T>(Locator)
+  fullName: SilverCraft.CSCore.FluentExtensions.Synchronized<SilverCraft.CSCore.Locator, T>(SilverCraft.CSCore.Locator)
+  nameWithType.vb: FluentExtensions.Synchronized(Of Locator, T)(Locator)
+  fullName.vb: SilverCraft.CSCore.FluentExtensions.Synchronized(Of SilverCraft.CSCore.Locator, T)(SilverCraft.CSCore.Locator)
+  name.vb: Synchronized(Of Locator, T)(Locator)
+  spec.csharp:
+  - uid: SilverCraft.CSCore.FluentExtensions.Synchronized``2(SilverCraft.CSCore.Locator)
+    name: Synchronized
+    href: SilverCraft.CSCore.FluentExtensions.html#SilverCraft_CSCore_FluentExtensions_Synchronized__2___0_
+  - name: <
+  - uid: SilverCraft.CSCore.Locator
+    name: Locator
+    href: SilverCraft.CSCore.Locator.html
+  - name: ','
+  - name: " "
+  - name: T
+  - name: '>'
+  - name: (
+  - uid: SilverCraft.CSCore.Locator
+    name: Locator
+    href: SilverCraft.CSCore.Locator.html
+  - name: )
+  spec.vb:
+  - uid: SilverCraft.CSCore.FluentExtensions.Synchronized``2(SilverCraft.CSCore.Locator)
+    name: Synchronized
+    href: SilverCraft.CSCore.FluentExtensions.html#SilverCraft_CSCore_FluentExtensions_Synchronized__2___0_
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: SilverCraft.CSCore.Locator
+    name: Locator
+    href: SilverCraft.CSCore.Locator.html
+  - name: ','
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: SilverCraft.CSCore.Locator
+    name: Locator
+    href: SilverCraft.CSCore.Locator.html
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: SilverCraft.CSCore.FluentExtensions.Synchronized``2(``0)
+  commentId: M:SilverCraft.CSCore.FluentExtensions.Synchronized``2(``0)
+  href: SilverCraft.CSCore.FluentExtensions.html#SilverCraft_CSCore_FluentExtensions_Synchronized__2___0_
+  name: Synchronized<TAudioSource, T>(TAudioSource)
+  nameWithType: FluentExtensions.Synchronized<TAudioSource, T>(TAudioSource)
+  fullName: SilverCraft.CSCore.FluentExtensions.Synchronized<TAudioSource, T>(TAudioSource)
+  nameWithType.vb: FluentExtensions.Synchronized(Of TAudioSource, T)(TAudioSource)
+  fullName.vb: SilverCraft.CSCore.FluentExtensions.Synchronized(Of TAudioSource, T)(TAudioSource)
+  name.vb: Synchronized(Of TAudioSource, T)(TAudioSource)
+  spec.csharp:
+  - uid: SilverCraft.CSCore.FluentExtensions.Synchronized``2(``0)
+    name: Synchronized
+    href: SilverCraft.CSCore.FluentExtensions.html#SilverCraft_CSCore_FluentExtensions_Synchronized__2___0_
+  - name: <
+  - name: TAudioSource
+  - name: ','
+  - name: " "
+  - name: T
+  - name: '>'
+  - name: (
+  - name: TAudioSource
+  - name: )
+  spec.vb:
+  - uid: SilverCraft.CSCore.FluentExtensions.Synchronized``2(``0)
+    name: Synchronized
+    href: SilverCraft.CSCore.FluentExtensions.html#SilverCraft_CSCore_FluentExtensions_Synchronized__2___0_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TAudioSource
+  - name: ','
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - name: TAudioSource
+  - name: )
+- uid: SilverCraft.CSCore.FluentExtensions
+  commentId: T:SilverCraft.CSCore.FluentExtensions
+  parent: SilverCraft.CSCore
+  href: SilverCraft.CSCore.FluentExtensions.html
+  name: FluentExtensions
+  nameWithType: FluentExtensions
+  fullName: SilverCraft.CSCore.FluentExtensions
+- uid: SilverCraft.CSCore.Locator.Instance*
+  commentId: Overload:SilverCraft.CSCore.Locator.Instance
+  href: SilverCraft.CSCore.Locator.html#SilverCraft_CSCore_Locator_Instance
+  name: Instance
+  nameWithType: Locator.Instance
+  fullName: SilverCraft.CSCore.Locator.Instance
+- uid: SilverCraft.CSCore.Locator
+  commentId: T:SilverCraft.CSCore.Locator
+  parent: SilverCraft.CSCore
+  href: SilverCraft.CSCore.Locator.html
+  name: Locator
+  nameWithType: Locator
+  fullName: SilverCraft.CSCore.Locator
+- uid: SilverCraft.CSCore.Locator.Register*
+  commentId: Overload:SilverCraft.CSCore.Locator.Register
+  href: SilverCraft.CSCore.Locator.html#SilverCraft_CSCore_Locator_Register__2_System_Func___1__
+  name: Register
+  nameWithType: Locator.Register
+  fullName: SilverCraft.CSCore.Locator.Register
+- uid: System.Func{{TImplementation}}
+  commentId: T:System.Func{``1}
+  parent: System
+  definition: System.Func`1
+  href: https://learn.microsoft.com/dotnet/api/system.func-1
+  name: Func<TImplementation>
+  nameWithType: Func<TImplementation>
+  fullName: System.Func<TImplementation>
+  nameWithType.vb: Func(Of TImplementation)
+  fullName.vb: System.Func(Of TImplementation)
+  name.vb: Func(Of TImplementation)
+  spec.csharp:
+  - uid: System.Func`1
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-1
+  - name: <
+  - name: TImplementation
+  - name: '>'
+  spec.vb:
+  - uid: System.Func`1
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TImplementation
+  - name: )
+- uid: System.Func`1
+  commentId: T:System.Func`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.func-1
+  name: Func<TResult>
+  nameWithType: Func<TResult>
+  fullName: System.Func<TResult>
+  nameWithType.vb: Func(Of TResult)
+  fullName.vb: System.Func(Of TResult)
+  name.vb: Func(Of TResult)
+  spec.csharp:
+  - uid: System.Func`1
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-1
+  - name: <
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Func`1
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: SilverCraft.CSCore.Locator.Get*
+  commentId: Overload:SilverCraft.CSCore.Locator.Get
+  href: SilverCraft.CSCore.Locator.html#SilverCraft_CSCore_Locator_Get__1
+  name: Get
+  nameWithType: Locator.Get
+  fullName: SilverCraft.CSCore.Locator.Get
+- uid: '{T}'
+  commentId: '!:T'
+  definition: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: T
+  commentId: '!:T'
+  name: T
+  nameWithType: T
+  fullName: T

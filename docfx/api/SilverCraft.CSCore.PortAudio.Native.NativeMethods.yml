@@ -1,0 +1,2631 @@
+### YamlMime:ManagedReference
+items:
+- uid: SilverCraft.CSCore.PortAudio.Native.NativeMethods
+  commentId: T:SilverCraft.CSCore.PortAudio.Native.NativeMethods
+  id: NativeMethods
+  parent: SilverCraft.CSCore.PortAudio.Native
+  children:
+  - SilverCraft.CSCore.PortAudio.Native.NativeMethods.DllImportResolver(System.String,System.Reflection.Assembly,System.Nullable{System.Runtime.InteropServices.DllImportSearchPath})
+  - SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_AbortStream(System.Void*)
+  - SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_CloseStream(SilverCraft.CSCore.PortAudio.Native.PaStream*)
+  - SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_GetDefaultHostApi
+  - SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_GetDefaultInputDevice
+  - SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_GetDefaultOutputDevice
+  - SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_GetDeviceCount
+  - SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_GetDeviceInfo(System.Int32)
+  - SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_GetErrorText(System.Int32)
+  - SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_GetHostApiCount
+  - SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_GetHostApiInfo(System.Int32)
+  - SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_GetLastHostErrorInfo
+  - SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_GetSampleSize(System.UIntPtr)
+  - SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_GetStreamCpuLoad(System.Void*)
+  - SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_GetStreamInfo(System.Void*)
+  - SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_GetStreamReadAvailable(System.Void*)
+  - SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_GetStreamTime(System.Void*)
+  - SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_GetStreamWriteAvailable(System.Void*)
+  - SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_GetVersion
+  - SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_GetVersionInfo
+  - SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_GetVersionText
+  - SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_HostApiDeviceIndexToDeviceIndex(System.Int32,System.Int32)
+  - SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_HostApiTypeIdToHostApiIndex(SilverCraft.CSCore.PortAudio.Native.PaHostApiTypeId)
+  - SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_Initialize
+  - SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_IsFormatSupported(SilverCraft.CSCore.PortAudio.Native.PaStreamParameters*,SilverCraft.CSCore.PortAudio.Native.PaStreamParameters*,System.Double)
+  - SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_IsStreamActive(System.Void*)
+  - SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_IsStreamStopped(System.Void*)
+  - SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_OpenDefaultStream(SilverCraft.CSCore.PortAudio.Native.PaStream**,System.Int32,System.Int32,System.UIntPtr,System.Double,System.UIntPtr,SilverCraft.CSCore.PortAudio.StreamCallBack,System.IntPtr)
+  - SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_OpenStream(SilverCraft.CSCore.PortAudio.Native.PaStream**,SilverCraft.CSCore.PortAudio.Native.PaStreamParameters*,SilverCraft.CSCore.PortAudio.Native.PaStreamParameters*,System.Double,System.UIntPtr,System.UIntPtr,,System.Void*)
+  - SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_ReadStream(System.Void*,System.Void*,System.UIntPtr)
+  - SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_SetStreamFinishedCallback(SilverCraft.CSCore.PortAudio.Native.PaStream*,SilverCraft.CSCore.PortAudio.PaStreamFinishedCallback)
+  - SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_Sleep(System.IntPtr)
+  - SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_StartStream(System.Void*)
+  - SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_StopStream(System.Void*)
+  - SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_Terminate
+  - SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_WriteStream(System.Void*,System.Void*,System.UIntPtr)
+  - SilverCraft.CSCore.PortAudio.Native.NativeMethods.dllName
+  - SilverCraft.CSCore.PortAudio.Native.NativeMethods.paClipOff
+  - SilverCraft.CSCore.PortAudio.Native.NativeMethods.paCustomFormat
+  - SilverCraft.CSCore.PortAudio.Native.NativeMethods.paDitherOff
+  - SilverCraft.CSCore.PortAudio.Native.NativeMethods.paFloat32
+  - SilverCraft.CSCore.PortAudio.Native.NativeMethods.paFormatIsSupported
+  - SilverCraft.CSCore.PortAudio.Native.NativeMethods.paFramesPerBufferUnspecified
+  - SilverCraft.CSCore.PortAudio.Native.NativeMethods.paInputOverflow
+  - SilverCraft.CSCore.PortAudio.Native.NativeMethods.paInputUnderflow
+  - SilverCraft.CSCore.PortAudio.Native.NativeMethods.paInt16
+  - SilverCraft.CSCore.PortAudio.Native.NativeMethods.paInt24
+  - SilverCraft.CSCore.PortAudio.Native.NativeMethods.paInt32
+  - SilverCraft.CSCore.PortAudio.Native.NativeMethods.paInt8
+  - SilverCraft.CSCore.PortAudio.Native.NativeMethods.paNeverDropInput
+  - SilverCraft.CSCore.PortAudio.Native.NativeMethods.paNoDevice
+  - SilverCraft.CSCore.PortAudio.Native.NativeMethods.paNoFlag
+  - SilverCraft.CSCore.PortAudio.Native.NativeMethods.paNonInterleaved
+  - SilverCraft.CSCore.PortAudio.Native.NativeMethods.paOutputOverflow
+  - SilverCraft.CSCore.PortAudio.Native.NativeMethods.paOutputUnderflow
+  - SilverCraft.CSCore.PortAudio.Native.NativeMethods.paPlatformSpecificFlags
+  - SilverCraft.CSCore.PortAudio.Native.NativeMethods.paPrimeOutputBuffersUsingStreamCallback
+  - SilverCraft.CSCore.PortAudio.Native.NativeMethods.paPrimingOutput
+  - SilverCraft.CSCore.PortAudio.Native.NativeMethods.paUInt8
+  - SilverCraft.CSCore.PortAudio.Native.NativeMethods.paUseHostApiSpecificDeviceSpecification
+  langs:
+  - csharp
+  - vb
+  name: NativeMethods
+  nameWithType: NativeMethods
+  fullName: SilverCraft.CSCore.PortAudio.Native.NativeMethods
+  type: Class
+  source:
+    remote:
+      path: SilverCraft.CSCore.PortAudio/Native/NativeMethods.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: NativeMethods
+    path: ../SilverCraft.CSCore.PortAudio/Native/NativeMethods.cs
+    startLine: 21
+  assemblies:
+  - SilverCraft.CSCore.PortAudio
+  namespace: SilverCraft.CSCore.PortAudio.Native
+  syntax:
+    content: public static class NativeMethods
+    content.vb: Public Module NativeMethods
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: SilverCraft.CSCore.PortAudio.Native.NativeMethods.dllName
+  commentId: F:SilverCraft.CSCore.PortAudio.Native.NativeMethods.dllName
+  id: dllName
+  parent: SilverCraft.CSCore.PortAudio.Native.NativeMethods
+  langs:
+  - csharp
+  - vb
+  name: dllName
+  nameWithType: NativeMethods.dllName
+  fullName: SilverCraft.CSCore.PortAudio.Native.NativeMethods.dllName
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore.PortAudio/Native/NativeMethods.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: dllName
+    path: ../SilverCraft.CSCore.PortAudio/Native/NativeMethods.cs
+    startLine: 23
+  assemblies:
+  - SilverCraft.CSCore.PortAudio
+  namespace: SilverCraft.CSCore.PortAudio.Native
+  syntax:
+    content: public const string dllName = "libportaudio.so.2"
+    return:
+      type: System.String
+    content.vb: Public Const dllName As String = "libportaudio.so.2"
+- uid: SilverCraft.CSCore.PortAudio.Native.NativeMethods.DllImportResolver(System.String,System.Reflection.Assembly,System.Nullable{System.Runtime.InteropServices.DllImportSearchPath})
+  commentId: M:SilverCraft.CSCore.PortAudio.Native.NativeMethods.DllImportResolver(System.String,System.Reflection.Assembly,System.Nullable{System.Runtime.InteropServices.DllImportSearchPath})
+  id: DllImportResolver(System.String,System.Reflection.Assembly,System.Nullable{System.Runtime.InteropServices.DllImportSearchPath})
+  parent: SilverCraft.CSCore.PortAudio.Native.NativeMethods
+  langs:
+  - csharp
+  - vb
+  name: DllImportResolver(string, Assembly, DllImportSearchPath?)
+  nameWithType: NativeMethods.DllImportResolver(string, Assembly, DllImportSearchPath?)
+  fullName: SilverCraft.CSCore.PortAudio.Native.NativeMethods.DllImportResolver(string, System.Reflection.Assembly, System.Runtime.InteropServices.DllImportSearchPath?)
+  type: Method
+  source:
+    remote:
+      path: SilverCraft.CSCore.PortAudio/Native/NativeMethods.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: DllImportResolver
+    path: ../SilverCraft.CSCore.PortAudio/Native/NativeMethods.cs
+    startLine: 24
+  assemblies:
+  - SilverCraft.CSCore.PortAudio
+  namespace: SilverCraft.CSCore.PortAudio.Native
+  syntax:
+    content: public static nint DllImportResolver(string libraryName, Assembly assembly, DllImportSearchPath? searchPath)
+    parameters:
+    - id: libraryName
+      type: System.String
+    - id: assembly
+      type: System.Reflection.Assembly
+    - id: searchPath
+      type: System.Nullable{System.Runtime.InteropServices.DllImportSearchPath}
+    return:
+      type: System.IntPtr
+    content.vb: Public Shared Function DllImportResolver(libraryName As String, assembly As Assembly, searchPath As DllImportSearchPath?) As IntPtr
+  overload: SilverCraft.CSCore.PortAudio.Native.NativeMethods.DllImportResolver*
+  nameWithType.vb: NativeMethods.DllImportResolver(String, Assembly, DllImportSearchPath?)
+  fullName.vb: SilverCraft.CSCore.PortAudio.Native.NativeMethods.DllImportResolver(String, System.Reflection.Assembly, System.Runtime.InteropServices.DllImportSearchPath?)
+  name.vb: DllImportResolver(String, Assembly, DllImportSearchPath?)
+- uid: SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_GetVersion
+  commentId: M:SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_GetVersion
+  id: Pa_GetVersion
+  parent: SilverCraft.CSCore.PortAudio.Native.NativeMethods
+  langs:
+  - csharp
+  - vb
+  name: Pa_GetVersion()
+  nameWithType: NativeMethods.Pa_GetVersion()
+  fullName: SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_GetVersion()
+  type: Method
+  assemblies:
+  - SilverCraft.CSCore.PortAudio
+  namespace: SilverCraft.CSCore.PortAudio.Native
+  syntax:
+    content: public static extern int Pa_GetVersion()
+    return:
+      type: System.Int32
+    content.vb: Public Shared Function Pa_GetVersion() As Integer
+  overload: SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_GetVersion*
+- uid: SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_GetVersionText
+  commentId: M:SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_GetVersionText
+  id: Pa_GetVersionText
+  parent: SilverCraft.CSCore.PortAudio.Native.NativeMethods
+  langs:
+  - csharp
+  - vb
+  name: Pa_GetVersionText()
+  nameWithType: NativeMethods.Pa_GetVersionText()
+  fullName: SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_GetVersionText()
+  type: Method
+  assemblies:
+  - SilverCraft.CSCore.PortAudio
+  namespace: SilverCraft.CSCore.PortAudio.Native
+  syntax:
+    content: public static extern sbyte* Pa_GetVersionText()
+    return:
+      type: System.SByte*
+    content.vb: Public Shared Function Pa_GetVersionText() As SByte*
+  overload: SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_GetVersionText*
+- uid: SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_GetVersionInfo
+  commentId: M:SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_GetVersionInfo
+  id: Pa_GetVersionInfo
+  parent: SilverCraft.CSCore.PortAudio.Native.NativeMethods
+  langs:
+  - csharp
+  - vb
+  name: Pa_GetVersionInfo()
+  nameWithType: NativeMethods.Pa_GetVersionInfo()
+  fullName: SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_GetVersionInfo()
+  type: Method
+  assemblies:
+  - SilverCraft.CSCore.PortAudio
+  namespace: SilverCraft.CSCore.PortAudio.Native
+  syntax:
+    content: public static extern PaVersionInfo* Pa_GetVersionInfo()
+    return:
+      type: SilverCraft.CSCore.PortAudio.Native.PaVersionInfo*
+    content.vb: Public Shared Function Pa_GetVersionInfo() As PaVersionInfo*
+  overload: SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_GetVersionInfo*
+- uid: SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_GetErrorText(System.Int32)
+  commentId: M:SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_GetErrorText(System.Int32)
+  id: Pa_GetErrorText(System.Int32)
+  parent: SilverCraft.CSCore.PortAudio.Native.NativeMethods
+  langs:
+  - csharp
+  - vb
+  name: Pa_GetErrorText(int)
+  nameWithType: NativeMethods.Pa_GetErrorText(int)
+  fullName: SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_GetErrorText(int)
+  type: Method
+  assemblies:
+  - SilverCraft.CSCore.PortAudio
+  namespace: SilverCraft.CSCore.PortAudio.Native
+  syntax:
+    content: public static extern char* Pa_GetErrorText(int errorCode)
+    parameters:
+    - id: errorCode
+      type: System.Int32
+    return:
+      type: System.Char*
+    content.vb: Public Shared Function Pa_GetErrorText(errorCode As Integer) As Char*
+  overload: SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_GetErrorText*
+  nameWithType.vb: NativeMethods.Pa_GetErrorText(Integer)
+  fullName.vb: SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_GetErrorText(Integer)
+  name.vb: Pa_GetErrorText(Integer)
+- uid: SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_Initialize
+  commentId: M:SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_Initialize
+  id: Pa_Initialize
+  parent: SilverCraft.CSCore.PortAudio.Native.NativeMethods
+  langs:
+  - csharp
+  - vb
+  name: Pa_Initialize()
+  nameWithType: NativeMethods.Pa_Initialize()
+  fullName: SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_Initialize()
+  type: Method
+  assemblies:
+  - SilverCraft.CSCore.PortAudio
+  namespace: SilverCraft.CSCore.PortAudio.Native
+  syntax:
+    content: public static extern int Pa_Initialize()
+    return:
+      type: System.Int32
+    content.vb: Public Shared Function Pa_Initialize() As Integer
+  overload: SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_Initialize*
+- uid: SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_Terminate
+  commentId: M:SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_Terminate
+  id: Pa_Terminate
+  parent: SilverCraft.CSCore.PortAudio.Native.NativeMethods
+  langs:
+  - csharp
+  - vb
+  name: Pa_Terminate()
+  nameWithType: NativeMethods.Pa_Terminate()
+  fullName: SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_Terminate()
+  type: Method
+  assemblies:
+  - SilverCraft.CSCore.PortAudio
+  namespace: SilverCraft.CSCore.PortAudio.Native
+  syntax:
+    content: public static extern int Pa_Terminate()
+    return:
+      type: System.Int32
+    content.vb: Public Shared Function Pa_Terminate() As Integer
+  overload: SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_Terminate*
+- uid: SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_GetHostApiCount
+  commentId: M:SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_GetHostApiCount
+  id: Pa_GetHostApiCount
+  parent: SilverCraft.CSCore.PortAudio.Native.NativeMethods
+  langs:
+  - csharp
+  - vb
+  name: Pa_GetHostApiCount()
+  nameWithType: NativeMethods.Pa_GetHostApiCount()
+  fullName: SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_GetHostApiCount()
+  type: Method
+  assemblies:
+  - SilverCraft.CSCore.PortAudio
+  namespace: SilverCraft.CSCore.PortAudio.Native
+  syntax:
+    content: public static extern int Pa_GetHostApiCount()
+    return:
+      type: System.Int32
+    content.vb: Public Shared Function Pa_GetHostApiCount() As Integer
+  overload: SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_GetHostApiCount*
+- uid: SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_GetDefaultHostApi
+  commentId: M:SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_GetDefaultHostApi
+  id: Pa_GetDefaultHostApi
+  parent: SilverCraft.CSCore.PortAudio.Native.NativeMethods
+  langs:
+  - csharp
+  - vb
+  name: Pa_GetDefaultHostApi()
+  nameWithType: NativeMethods.Pa_GetDefaultHostApi()
+  fullName: SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_GetDefaultHostApi()
+  type: Method
+  assemblies:
+  - SilverCraft.CSCore.PortAudio
+  namespace: SilverCraft.CSCore.PortAudio.Native
+  syntax:
+    content: public static extern int Pa_GetDefaultHostApi()
+    return:
+      type: System.Int32
+    content.vb: Public Shared Function Pa_GetDefaultHostApi() As Integer
+  overload: SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_GetDefaultHostApi*
+- uid: SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_GetHostApiInfo(System.Int32)
+  commentId: M:SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_GetHostApiInfo(System.Int32)
+  id: Pa_GetHostApiInfo(System.Int32)
+  parent: SilverCraft.CSCore.PortAudio.Native.NativeMethods
+  langs:
+  - csharp
+  - vb
+  name: Pa_GetHostApiInfo(int)
+  nameWithType: NativeMethods.Pa_GetHostApiInfo(int)
+  fullName: SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_GetHostApiInfo(int)
+  type: Method
+  assemblies:
+  - SilverCraft.CSCore.PortAudio
+  namespace: SilverCraft.CSCore.PortAudio.Native
+  syntax:
+    content: public static extern PaHostApiInfo* Pa_GetHostApiInfo(int hostApi)
+    parameters:
+    - id: hostApi
+      type: System.Int32
+    return:
+      type: SilverCraft.CSCore.PortAudio.Native.PaHostApiInfo*
+    content.vb: Public Shared Function Pa_GetHostApiInfo(hostApi As Integer) As PaHostApiInfo*
+  overload: SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_GetHostApiInfo*
+  nameWithType.vb: NativeMethods.Pa_GetHostApiInfo(Integer)
+  fullName.vb: SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_GetHostApiInfo(Integer)
+  name.vb: Pa_GetHostApiInfo(Integer)
+- uid: SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_HostApiTypeIdToHostApiIndex(SilverCraft.CSCore.PortAudio.Native.PaHostApiTypeId)
+  commentId: M:SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_HostApiTypeIdToHostApiIndex(SilverCraft.CSCore.PortAudio.Native.PaHostApiTypeId)
+  id: Pa_HostApiTypeIdToHostApiIndex(SilverCraft.CSCore.PortAudio.Native.PaHostApiTypeId)
+  parent: SilverCraft.CSCore.PortAudio.Native.NativeMethods
+  langs:
+  - csharp
+  - vb
+  name: Pa_HostApiTypeIdToHostApiIndex(PaHostApiTypeId)
+  nameWithType: NativeMethods.Pa_HostApiTypeIdToHostApiIndex(PaHostApiTypeId)
+  fullName: SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_HostApiTypeIdToHostApiIndex(SilverCraft.CSCore.PortAudio.Native.PaHostApiTypeId)
+  type: Method
+  assemblies:
+  - SilverCraft.CSCore.PortAudio
+  namespace: SilverCraft.CSCore.PortAudio.Native
+  syntax:
+    content: public static extern int Pa_HostApiTypeIdToHostApiIndex(PaHostApiTypeId type)
+    parameters:
+    - id: type
+      type: SilverCraft.CSCore.PortAudio.Native.PaHostApiTypeId
+    return:
+      type: System.Int32
+    content.vb: Public Shared Function Pa_HostApiTypeIdToHostApiIndex(type As PaHostApiTypeId) As Integer
+  overload: SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_HostApiTypeIdToHostApiIndex*
+- uid: SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_HostApiDeviceIndexToDeviceIndex(System.Int32,System.Int32)
+  commentId: M:SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_HostApiDeviceIndexToDeviceIndex(System.Int32,System.Int32)
+  id: Pa_HostApiDeviceIndexToDeviceIndex(System.Int32,System.Int32)
+  parent: SilverCraft.CSCore.PortAudio.Native.NativeMethods
+  langs:
+  - csharp
+  - vb
+  name: Pa_HostApiDeviceIndexToDeviceIndex(int, int)
+  nameWithType: NativeMethods.Pa_HostApiDeviceIndexToDeviceIndex(int, int)
+  fullName: SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_HostApiDeviceIndexToDeviceIndex(int, int)
+  type: Method
+  assemblies:
+  - SilverCraft.CSCore.PortAudio
+  namespace: SilverCraft.CSCore.PortAudio.Native
+  syntax:
+    content: public static extern int Pa_HostApiDeviceIndexToDeviceIndex(int hostApi, int hostApiDeviceIndex)
+    parameters:
+    - id: hostApi
+      type: System.Int32
+    - id: hostApiDeviceIndex
+      type: System.Int32
+    return:
+      type: System.Int32
+    content.vb: Public Shared Function Pa_HostApiDeviceIndexToDeviceIndex(hostApi As Integer, hostApiDeviceIndex As Integer) As Integer
+  overload: SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_HostApiDeviceIndexToDeviceIndex*
+  nameWithType.vb: NativeMethods.Pa_HostApiDeviceIndexToDeviceIndex(Integer, Integer)
+  fullName.vb: SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_HostApiDeviceIndexToDeviceIndex(Integer, Integer)
+  name.vb: Pa_HostApiDeviceIndexToDeviceIndex(Integer, Integer)
+- uid: SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_GetLastHostErrorInfo
+  commentId: M:SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_GetLastHostErrorInfo
+  id: Pa_GetLastHostErrorInfo
+  parent: SilverCraft.CSCore.PortAudio.Native.NativeMethods
+  langs:
+  - csharp
+  - vb
+  name: Pa_GetLastHostErrorInfo()
+  nameWithType: NativeMethods.Pa_GetLastHostErrorInfo()
+  fullName: SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_GetLastHostErrorInfo()
+  type: Method
+  assemblies:
+  - SilverCraft.CSCore.PortAudio
+  namespace: SilverCraft.CSCore.PortAudio.Native
+  syntax:
+    content: public static extern PaHostErrorInfo* Pa_GetLastHostErrorInfo()
+    return:
+      type: SilverCraft.CSCore.PortAudio.Native.PaHostErrorInfo*
+    content.vb: Public Shared Function Pa_GetLastHostErrorInfo() As PaHostErrorInfo*
+  overload: SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_GetLastHostErrorInfo*
+- uid: SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_GetDeviceCount
+  commentId: M:SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_GetDeviceCount
+  id: Pa_GetDeviceCount
+  parent: SilverCraft.CSCore.PortAudio.Native.NativeMethods
+  langs:
+  - csharp
+  - vb
+  name: Pa_GetDeviceCount()
+  nameWithType: NativeMethods.Pa_GetDeviceCount()
+  fullName: SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_GetDeviceCount()
+  type: Method
+  assemblies:
+  - SilverCraft.CSCore.PortAudio
+  namespace: SilverCraft.CSCore.PortAudio.Native
+  syntax:
+    content: public static extern int Pa_GetDeviceCount()
+    return:
+      type: System.Int32
+    content.vb: Public Shared Function Pa_GetDeviceCount() As Integer
+  overload: SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_GetDeviceCount*
+- uid: SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_GetDefaultInputDevice
+  commentId: M:SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_GetDefaultInputDevice
+  id: Pa_GetDefaultInputDevice
+  parent: SilverCraft.CSCore.PortAudio.Native.NativeMethods
+  langs:
+  - csharp
+  - vb
+  name: Pa_GetDefaultInputDevice()
+  nameWithType: NativeMethods.Pa_GetDefaultInputDevice()
+  fullName: SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_GetDefaultInputDevice()
+  type: Method
+  assemblies:
+  - SilverCraft.CSCore.PortAudio
+  namespace: SilverCraft.CSCore.PortAudio.Native
+  syntax:
+    content: public static extern int Pa_GetDefaultInputDevice()
+    return:
+      type: System.Int32
+    content.vb: Public Shared Function Pa_GetDefaultInputDevice() As Integer
+  overload: SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_GetDefaultInputDevice*
+- uid: SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_GetDefaultOutputDevice
+  commentId: M:SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_GetDefaultOutputDevice
+  id: Pa_GetDefaultOutputDevice
+  parent: SilverCraft.CSCore.PortAudio.Native.NativeMethods
+  langs:
+  - csharp
+  - vb
+  name: Pa_GetDefaultOutputDevice()
+  nameWithType: NativeMethods.Pa_GetDefaultOutputDevice()
+  fullName: SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_GetDefaultOutputDevice()
+  type: Method
+  assemblies:
+  - SilverCraft.CSCore.PortAudio
+  namespace: SilverCraft.CSCore.PortAudio.Native
+  syntax:
+    content: public static extern int Pa_GetDefaultOutputDevice()
+    return:
+      type: System.Int32
+    content.vb: Public Shared Function Pa_GetDefaultOutputDevice() As Integer
+  overload: SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_GetDefaultOutputDevice*
+- uid: SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_GetDeviceInfo(System.Int32)
+  commentId: M:SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_GetDeviceInfo(System.Int32)
+  id: Pa_GetDeviceInfo(System.Int32)
+  parent: SilverCraft.CSCore.PortAudio.Native.NativeMethods
+  langs:
+  - csharp
+  - vb
+  name: Pa_GetDeviceInfo(int)
+  nameWithType: NativeMethods.Pa_GetDeviceInfo(int)
+  fullName: SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_GetDeviceInfo(int)
+  type: Method
+  assemblies:
+  - SilverCraft.CSCore.PortAudio
+  namespace: SilverCraft.CSCore.PortAudio.Native
+  syntax:
+    content: public static extern PaDeviceInfo* Pa_GetDeviceInfo(int device)
+    parameters:
+    - id: device
+      type: System.Int32
+    return:
+      type: SilverCraft.CSCore.PortAudio.Native.PaDeviceInfo*
+    content.vb: Public Shared Function Pa_GetDeviceInfo(device As Integer) As PaDeviceInfo*
+  overload: SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_GetDeviceInfo*
+  nameWithType.vb: NativeMethods.Pa_GetDeviceInfo(Integer)
+  fullName.vb: SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_GetDeviceInfo(Integer)
+  name.vb: Pa_GetDeviceInfo(Integer)
+- uid: SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_IsFormatSupported(SilverCraft.CSCore.PortAudio.Native.PaStreamParameters*,SilverCraft.CSCore.PortAudio.Native.PaStreamParameters*,System.Double)
+  commentId: M:SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_IsFormatSupported(SilverCraft.CSCore.PortAudio.Native.PaStreamParameters*,SilverCraft.CSCore.PortAudio.Native.PaStreamParameters*,System.Double)
+  id: Pa_IsFormatSupported(SilverCraft.CSCore.PortAudio.Native.PaStreamParameters*,SilverCraft.CSCore.PortAudio.Native.PaStreamParameters*,System.Double)
+  parent: SilverCraft.CSCore.PortAudio.Native.NativeMethods
+  langs:
+  - csharp
+  - vb
+  name: Pa_IsFormatSupported(PaStreamParameters*, PaStreamParameters*, double)
+  nameWithType: NativeMethods.Pa_IsFormatSupported(PaStreamParameters*, PaStreamParameters*, double)
+  fullName: SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_IsFormatSupported(SilverCraft.CSCore.PortAudio.Native.PaStreamParameters*, SilverCraft.CSCore.PortAudio.Native.PaStreamParameters*, double)
+  type: Method
+  assemblies:
+  - SilverCraft.CSCore.PortAudio
+  namespace: SilverCraft.CSCore.PortAudio.Native
+  syntax:
+    content: public static extern int Pa_IsFormatSupported(PaStreamParameters* inputParameters, PaStreamParameters* outputParameters, double sampleRate)
+    parameters:
+    - id: inputParameters
+      type: SilverCraft.CSCore.PortAudio.Native.PaStreamParameters*
+    - id: outputParameters
+      type: SilverCraft.CSCore.PortAudio.Native.PaStreamParameters*
+    - id: sampleRate
+      type: System.Double
+    return:
+      type: System.Int32
+    content.vb: Public Shared Function Pa_IsFormatSupported(inputParameters As PaStreamParameters*, outputParameters As PaStreamParameters*, sampleRate As Double) As Integer
+  overload: SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_IsFormatSupported*
+  nameWithType.vb: NativeMethods.Pa_IsFormatSupported(PaStreamParameters*, PaStreamParameters*, Double)
+  fullName.vb: SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_IsFormatSupported(SilverCraft.CSCore.PortAudio.Native.PaStreamParameters*, SilverCraft.CSCore.PortAudio.Native.PaStreamParameters*, Double)
+  name.vb: Pa_IsFormatSupported(PaStreamParameters*, PaStreamParameters*, Double)
+- uid: SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_OpenStream(SilverCraft.CSCore.PortAudio.Native.PaStream**,SilverCraft.CSCore.PortAudio.Native.PaStreamParameters*,SilverCraft.CSCore.PortAudio.Native.PaStreamParameters*,System.Double,System.UIntPtr,System.UIntPtr,,System.Void*)
+  commentId: M:SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_OpenStream(SilverCraft.CSCore.PortAudio.Native.PaStream**,SilverCraft.CSCore.PortAudio.Native.PaStreamParameters*,SilverCraft.CSCore.PortAudio.Native.PaStreamParameters*,System.Double,System.UIntPtr,System.UIntPtr,,System.Void*)
+  id: Pa_OpenStream(SilverCraft.CSCore.PortAudio.Native.PaStream**,SilverCraft.CSCore.PortAudio.Native.PaStreamParameters*,SilverCraft.CSCore.PortAudio.Native.PaStreamParameters*,System.Double,System.UIntPtr,System.UIntPtr,,System.Void*)
+  parent: SilverCraft.CSCore.PortAudio.Native.NativeMethods
+  langs:
+  - csharp
+  - vb
+  name: Pa_OpenStream(PaStream**, PaStreamParameters*, PaStreamParameters*, double, nuint, nuint, delegate* unmanaged[Cdecl]<void*, void*, ulong, PaStreamCallbackTimeInfo*, nuint, void*, int>, void*)
+  nameWithType: NativeMethods.Pa_OpenStream(PaStream**, PaStreamParameters*, PaStreamParameters*, double, nuint, nuint, delegate* unmanaged[Cdecl]<void*, void*, ulong, PaStreamCallbackTimeInfo*, nuint, void*, int>, void*)
+  fullName: SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_OpenStream(SilverCraft.CSCore.PortAudio.Native.PaStream**, SilverCraft.CSCore.PortAudio.Native.PaStreamParameters*, SilverCraft.CSCore.PortAudio.Native.PaStreamParameters*, double, nuint, nuint, delegate* unmanaged[Cdecl]<void*, void*, ulong, SilverCraft.CSCore.PortAudio.Native.PaStreamCallbackTimeInfo*, nuint, void*, int>, void*)
+  type: Method
+  assemblies:
+  - SilverCraft.CSCore.PortAudio
+  namespace: SilverCraft.CSCore.PortAudio.Native
+  syntax:
+    content: public static extern int Pa_OpenStream(PaStream** stream, PaStreamParameters* inputParameters, PaStreamParameters* outputParameters, double sampleRate, nuint framesPerBuffer, nuint streamFlags, delegate* unmanaged[Cdecl]<void*, void*, ulong, PaStreamCallbackTimeInfo*, nuint, void*, int> streamCallback, void* userData)
+    parameters:
+    - id: stream
+      type: SilverCraft.CSCore.PortAudio.Native.PaStream**
+    - id: inputParameters
+      type: SilverCraft.CSCore.PortAudio.Native.PaStreamParameters*
+    - id: outputParameters
+      type: SilverCraft.CSCore.PortAudio.Native.PaStreamParameters*
+    - id: sampleRate
+      type: System.Double
+    - id: framesPerBuffer
+      type: System.UIntPtr
+    - id: streamFlags
+      type: System.UIntPtr
+    - id: streamCallback
+      type: delegate* unmanaged[Cdecl]<void*, void*, ulong, SilverCraft.CSCore.PortAudio.Native.PaStreamCallbackTimeInfo*, nuint, void*, int>
+    - id: userData
+      type: System.Void*
+    return:
+      type: System.Int32
+    content.vb: Public Shared Function Pa_OpenStream(stream As PaStream**, inputParameters As PaStreamParameters*, outputParameters As PaStreamParameters*, sampleRate As Double, framesPerBuffer As UIntPtr, streamFlags As UIntPtr, streamCallback As , userData As Void*) As Integer
+  overload: SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_OpenStream*
+  nameWithType.vb: NativeMethods.Pa_OpenStream(PaStream**, PaStreamParameters*, PaStreamParameters*, Double, UIntPtr, UIntPtr, , Void*)
+  fullName.vb: SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_OpenStream(SilverCraft.CSCore.PortAudio.Native.PaStream**, SilverCraft.CSCore.PortAudio.Native.PaStreamParameters*, SilverCraft.CSCore.PortAudio.Native.PaStreamParameters*, Double, System.UIntPtr, System.UIntPtr, , Void*)
+  name.vb: Pa_OpenStream(PaStream**, PaStreamParameters*, PaStreamParameters*, Double, UIntPtr, UIntPtr, , Void*)
+- uid: SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_OpenDefaultStream(SilverCraft.CSCore.PortAudio.Native.PaStream**,System.Int32,System.Int32,System.UIntPtr,System.Double,System.UIntPtr,SilverCraft.CSCore.PortAudio.StreamCallBack,System.IntPtr)
+  commentId: M:SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_OpenDefaultStream(SilverCraft.CSCore.PortAudio.Native.PaStream**,System.Int32,System.Int32,System.UIntPtr,System.Double,System.UIntPtr,SilverCraft.CSCore.PortAudio.StreamCallBack,System.IntPtr)
+  id: Pa_OpenDefaultStream(SilverCraft.CSCore.PortAudio.Native.PaStream**,System.Int32,System.Int32,System.UIntPtr,System.Double,System.UIntPtr,SilverCraft.CSCore.PortAudio.StreamCallBack,System.IntPtr)
+  parent: SilverCraft.CSCore.PortAudio.Native.NativeMethods
+  langs:
+  - csharp
+  - vb
+  name: Pa_OpenDefaultStream(PaStream**, int, int, nuint, double, nuint, StreamCallBack, nint)
+  nameWithType: NativeMethods.Pa_OpenDefaultStream(PaStream**, int, int, nuint, double, nuint, StreamCallBack, nint)
+  fullName: SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_OpenDefaultStream(SilverCraft.CSCore.PortAudio.Native.PaStream**, int, int, nuint, double, nuint, SilverCraft.CSCore.PortAudio.StreamCallBack, nint)
+  type: Method
+  assemblies:
+  - SilverCraft.CSCore.PortAudio
+  namespace: SilverCraft.CSCore.PortAudio.Native
+  syntax:
+    content: public static extern int Pa_OpenDefaultStream(PaStream** stream, int numInputChannels, int numOutputChannels, nuint sampleFormat, double sampleRate, nuint framesPerBuffer, StreamCallBack streamCallback, nint userData)
+    parameters:
+    - id: stream
+      type: SilverCraft.CSCore.PortAudio.Native.PaStream**
+    - id: numInputChannels
+      type: System.Int32
+    - id: numOutputChannels
+      type: System.Int32
+    - id: sampleFormat
+      type: System.UIntPtr
+    - id: sampleRate
+      type: System.Double
+    - id: framesPerBuffer
+      type: System.UIntPtr
+    - id: streamCallback
+      type: SilverCraft.CSCore.PortAudio.StreamCallBack
+    - id: userData
+      type: System.IntPtr
+    return:
+      type: System.Int32
+    content.vb: Public Shared Function Pa_OpenDefaultStream(stream As PaStream**, numInputChannels As Integer, numOutputChannels As Integer, sampleFormat As UIntPtr, sampleRate As Double, framesPerBuffer As UIntPtr, streamCallback As StreamCallBack, userData As IntPtr) As Integer
+  overload: SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_OpenDefaultStream*
+  nameWithType.vb: NativeMethods.Pa_OpenDefaultStream(PaStream**, Integer, Integer, UIntPtr, Double, UIntPtr, StreamCallBack, IntPtr)
+  fullName.vb: SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_OpenDefaultStream(SilverCraft.CSCore.PortAudio.Native.PaStream**, Integer, Integer, System.UIntPtr, Double, System.UIntPtr, SilverCraft.CSCore.PortAudio.StreamCallBack, System.IntPtr)
+  name.vb: Pa_OpenDefaultStream(PaStream**, Integer, Integer, UIntPtr, Double, UIntPtr, StreamCallBack, IntPtr)
+- uid: SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_CloseStream(SilverCraft.CSCore.PortAudio.Native.PaStream*)
+  commentId: M:SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_CloseStream(SilverCraft.CSCore.PortAudio.Native.PaStream*)
+  id: Pa_CloseStream(SilverCraft.CSCore.PortAudio.Native.PaStream*)
+  parent: SilverCraft.CSCore.PortAudio.Native.NativeMethods
+  langs:
+  - csharp
+  - vb
+  name: Pa_CloseStream(PaStream*)
+  nameWithType: NativeMethods.Pa_CloseStream(PaStream*)
+  fullName: SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_CloseStream(SilverCraft.CSCore.PortAudio.Native.PaStream*)
+  type: Method
+  assemblies:
+  - SilverCraft.CSCore.PortAudio
+  namespace: SilverCraft.CSCore.PortAudio.Native
+  syntax:
+    content: public static extern int Pa_CloseStream(PaStream* stream)
+    parameters:
+    - id: stream
+      type: SilverCraft.CSCore.PortAudio.Native.PaStream*
+    return:
+      type: System.Int32
+    content.vb: Public Shared Function Pa_CloseStream(stream As PaStream*) As Integer
+  overload: SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_CloseStream*
+- uid: SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_SetStreamFinishedCallback(SilverCraft.CSCore.PortAudio.Native.PaStream*,SilverCraft.CSCore.PortAudio.PaStreamFinishedCallback)
+  commentId: M:SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_SetStreamFinishedCallback(SilverCraft.CSCore.PortAudio.Native.PaStream*,SilverCraft.CSCore.PortAudio.PaStreamFinishedCallback)
+  id: Pa_SetStreamFinishedCallback(SilverCraft.CSCore.PortAudio.Native.PaStream*,SilverCraft.CSCore.PortAudio.PaStreamFinishedCallback)
+  parent: SilverCraft.CSCore.PortAudio.Native.NativeMethods
+  langs:
+  - csharp
+  - vb
+  name: Pa_SetStreamFinishedCallback(PaStream*, PaStreamFinishedCallback)
+  nameWithType: NativeMethods.Pa_SetStreamFinishedCallback(PaStream*, PaStreamFinishedCallback)
+  fullName: SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_SetStreamFinishedCallback(SilverCraft.CSCore.PortAudio.Native.PaStream*, SilverCraft.CSCore.PortAudio.PaStreamFinishedCallback)
+  type: Method
+  assemblies:
+  - SilverCraft.CSCore.PortAudio
+  namespace: SilverCraft.CSCore.PortAudio.Native
+  syntax:
+    content: public static extern int Pa_SetStreamFinishedCallback(PaStream* stream, PaStreamFinishedCallback streamFinishedCallback)
+    parameters:
+    - id: stream
+      type: SilverCraft.CSCore.PortAudio.Native.PaStream*
+    - id: streamFinishedCallback
+      type: SilverCraft.CSCore.PortAudio.PaStreamFinishedCallback
+    return:
+      type: System.Int32
+    content.vb: Public Shared Function Pa_SetStreamFinishedCallback(stream As PaStream*, streamFinishedCallback As PaStreamFinishedCallback) As Integer
+  overload: SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_SetStreamFinishedCallback*
+- uid: SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_StartStream(System.Void*)
+  commentId: M:SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_StartStream(System.Void*)
+  id: Pa_StartStream(System.Void*)
+  parent: SilverCraft.CSCore.PortAudio.Native.NativeMethods
+  langs:
+  - csharp
+  - vb
+  name: Pa_StartStream(void*)
+  nameWithType: NativeMethods.Pa_StartStream(void*)
+  fullName: SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_StartStream(void*)
+  type: Method
+  assemblies:
+  - SilverCraft.CSCore.PortAudio
+  namespace: SilverCraft.CSCore.PortAudio.Native
+  syntax:
+    content: public static extern int Pa_StartStream(void* stream)
+    parameters:
+    - id: stream
+      type: System.Void*
+    return:
+      type: System.Int32
+    content.vb: Public Shared Function Pa_StartStream(stream As Void*) As Integer
+  overload: SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_StartStream*
+  nameWithType.vb: NativeMethods.Pa_StartStream(Void*)
+  fullName.vb: SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_StartStream(Void*)
+  name.vb: Pa_StartStream(Void*)
+- uid: SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_StopStream(System.Void*)
+  commentId: M:SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_StopStream(System.Void*)
+  id: Pa_StopStream(System.Void*)
+  parent: SilverCraft.CSCore.PortAudio.Native.NativeMethods
+  langs:
+  - csharp
+  - vb
+  name: Pa_StopStream(void*)
+  nameWithType: NativeMethods.Pa_StopStream(void*)
+  fullName: SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_StopStream(void*)
+  type: Method
+  assemblies:
+  - SilverCraft.CSCore.PortAudio
+  namespace: SilverCraft.CSCore.PortAudio.Native
+  syntax:
+    content: public static extern int Pa_StopStream(void* stream)
+    parameters:
+    - id: stream
+      type: System.Void*
+    return:
+      type: System.Int32
+    content.vb: Public Shared Function Pa_StopStream(stream As Void*) As Integer
+  overload: SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_StopStream*
+  nameWithType.vb: NativeMethods.Pa_StopStream(Void*)
+  fullName.vb: SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_StopStream(Void*)
+  name.vb: Pa_StopStream(Void*)
+- uid: SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_AbortStream(System.Void*)
+  commentId: M:SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_AbortStream(System.Void*)
+  id: Pa_AbortStream(System.Void*)
+  parent: SilverCraft.CSCore.PortAudio.Native.NativeMethods
+  langs:
+  - csharp
+  - vb
+  name: Pa_AbortStream(void*)
+  nameWithType: NativeMethods.Pa_AbortStream(void*)
+  fullName: SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_AbortStream(void*)
+  type: Method
+  assemblies:
+  - SilverCraft.CSCore.PortAudio
+  namespace: SilverCraft.CSCore.PortAudio.Native
+  syntax:
+    content: public static extern int Pa_AbortStream(void* stream)
+    parameters:
+    - id: stream
+      type: System.Void*
+    return:
+      type: System.Int32
+    content.vb: Public Shared Function Pa_AbortStream(stream As Void*) As Integer
+  overload: SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_AbortStream*
+  nameWithType.vb: NativeMethods.Pa_AbortStream(Void*)
+  fullName.vb: SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_AbortStream(Void*)
+  name.vb: Pa_AbortStream(Void*)
+- uid: SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_IsStreamStopped(System.Void*)
+  commentId: M:SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_IsStreamStopped(System.Void*)
+  id: Pa_IsStreamStopped(System.Void*)
+  parent: SilverCraft.CSCore.PortAudio.Native.NativeMethods
+  langs:
+  - csharp
+  - vb
+  name: Pa_IsStreamStopped(void*)
+  nameWithType: NativeMethods.Pa_IsStreamStopped(void*)
+  fullName: SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_IsStreamStopped(void*)
+  type: Method
+  assemblies:
+  - SilverCraft.CSCore.PortAudio
+  namespace: SilverCraft.CSCore.PortAudio.Native
+  syntax:
+    content: public static extern int Pa_IsStreamStopped(void* stream)
+    parameters:
+    - id: stream
+      type: System.Void*
+    return:
+      type: System.Int32
+    content.vb: Public Shared Function Pa_IsStreamStopped(stream As Void*) As Integer
+  overload: SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_IsStreamStopped*
+  nameWithType.vb: NativeMethods.Pa_IsStreamStopped(Void*)
+  fullName.vb: SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_IsStreamStopped(Void*)
+  name.vb: Pa_IsStreamStopped(Void*)
+- uid: SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_IsStreamActive(System.Void*)
+  commentId: M:SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_IsStreamActive(System.Void*)
+  id: Pa_IsStreamActive(System.Void*)
+  parent: SilverCraft.CSCore.PortAudio.Native.NativeMethods
+  langs:
+  - csharp
+  - vb
+  name: Pa_IsStreamActive(void*)
+  nameWithType: NativeMethods.Pa_IsStreamActive(void*)
+  fullName: SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_IsStreamActive(void*)
+  type: Method
+  assemblies:
+  - SilverCraft.CSCore.PortAudio
+  namespace: SilverCraft.CSCore.PortAudio.Native
+  syntax:
+    content: public static extern int Pa_IsStreamActive(void* stream)
+    parameters:
+    - id: stream
+      type: System.Void*
+    return:
+      type: System.Int32
+    content.vb: Public Shared Function Pa_IsStreamActive(stream As Void*) As Integer
+  overload: SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_IsStreamActive*
+  nameWithType.vb: NativeMethods.Pa_IsStreamActive(Void*)
+  fullName.vb: SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_IsStreamActive(Void*)
+  name.vb: Pa_IsStreamActive(Void*)
+- uid: SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_GetStreamInfo(System.Void*)
+  commentId: M:SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_GetStreamInfo(System.Void*)
+  id: Pa_GetStreamInfo(System.Void*)
+  parent: SilverCraft.CSCore.PortAudio.Native.NativeMethods
+  langs:
+  - csharp
+  - vb
+  name: Pa_GetStreamInfo(void*)
+  nameWithType: NativeMethods.Pa_GetStreamInfo(void*)
+  fullName: SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_GetStreamInfo(void*)
+  type: Method
+  assemblies:
+  - SilverCraft.CSCore.PortAudio
+  namespace: SilverCraft.CSCore.PortAudio.Native
+  syntax:
+    content: public static extern PaStreamInfo* Pa_GetStreamInfo(void* stream)
+    parameters:
+    - id: stream
+      type: System.Void*
+    return:
+      type: SilverCraft.CSCore.PortAudio.Native.PaStreamInfo*
+    content.vb: Public Shared Function Pa_GetStreamInfo(stream As Void*) As PaStreamInfo*
+  overload: SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_GetStreamInfo*
+  nameWithType.vb: NativeMethods.Pa_GetStreamInfo(Void*)
+  fullName.vb: SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_GetStreamInfo(Void*)
+  name.vb: Pa_GetStreamInfo(Void*)
+- uid: SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_GetStreamTime(System.Void*)
+  commentId: M:SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_GetStreamTime(System.Void*)
+  id: Pa_GetStreamTime(System.Void*)
+  parent: SilverCraft.CSCore.PortAudio.Native.NativeMethods
+  langs:
+  - csharp
+  - vb
+  name: Pa_GetStreamTime(void*)
+  nameWithType: NativeMethods.Pa_GetStreamTime(void*)
+  fullName: SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_GetStreamTime(void*)
+  type: Method
+  assemblies:
+  - SilverCraft.CSCore.PortAudio
+  namespace: SilverCraft.CSCore.PortAudio.Native
+  syntax:
+    content: public static extern double Pa_GetStreamTime(void* stream)
+    parameters:
+    - id: stream
+      type: System.Void*
+    return:
+      type: System.Double
+    content.vb: Public Shared Function Pa_GetStreamTime(stream As Void*) As Double
+  overload: SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_GetStreamTime*
+  nameWithType.vb: NativeMethods.Pa_GetStreamTime(Void*)
+  fullName.vb: SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_GetStreamTime(Void*)
+  name.vb: Pa_GetStreamTime(Void*)
+- uid: SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_GetStreamCpuLoad(System.Void*)
+  commentId: M:SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_GetStreamCpuLoad(System.Void*)
+  id: Pa_GetStreamCpuLoad(System.Void*)
+  parent: SilverCraft.CSCore.PortAudio.Native.NativeMethods
+  langs:
+  - csharp
+  - vb
+  name: Pa_GetStreamCpuLoad(void*)
+  nameWithType: NativeMethods.Pa_GetStreamCpuLoad(void*)
+  fullName: SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_GetStreamCpuLoad(void*)
+  type: Method
+  assemblies:
+  - SilverCraft.CSCore.PortAudio
+  namespace: SilverCraft.CSCore.PortAudio.Native
+  syntax:
+    content: public static extern double Pa_GetStreamCpuLoad(void* stream)
+    parameters:
+    - id: stream
+      type: System.Void*
+    return:
+      type: System.Double
+    content.vb: Public Shared Function Pa_GetStreamCpuLoad(stream As Void*) As Double
+  overload: SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_GetStreamCpuLoad*
+  nameWithType.vb: NativeMethods.Pa_GetStreamCpuLoad(Void*)
+  fullName.vb: SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_GetStreamCpuLoad(Void*)
+  name.vb: Pa_GetStreamCpuLoad(Void*)
+- uid: SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_ReadStream(System.Void*,System.Void*,System.UIntPtr)
+  commentId: M:SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_ReadStream(System.Void*,System.Void*,System.UIntPtr)
+  id: Pa_ReadStream(System.Void*,System.Void*,System.UIntPtr)
+  parent: SilverCraft.CSCore.PortAudio.Native.NativeMethods
+  langs:
+  - csharp
+  - vb
+  name: Pa_ReadStream(void*, void*, nuint)
+  nameWithType: NativeMethods.Pa_ReadStream(void*, void*, nuint)
+  fullName: SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_ReadStream(void*, void*, nuint)
+  type: Method
+  assemblies:
+  - SilverCraft.CSCore.PortAudio
+  namespace: SilverCraft.CSCore.PortAudio.Native
+  syntax:
+    content: public static extern int Pa_ReadStream(void* stream, void* buffer, nuint frames)
+    parameters:
+    - id: stream
+      type: System.Void*
+    - id: buffer
+      type: System.Void*
+    - id: frames
+      type: System.UIntPtr
+    return:
+      type: System.Int32
+    content.vb: Public Shared Function Pa_ReadStream(stream As Void*, buffer As Void*, frames As UIntPtr) As Integer
+  overload: SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_ReadStream*
+  nameWithType.vb: NativeMethods.Pa_ReadStream(Void*, Void*, UIntPtr)
+  fullName.vb: SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_ReadStream(Void*, Void*, System.UIntPtr)
+  name.vb: Pa_ReadStream(Void*, Void*, UIntPtr)
+- uid: SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_WriteStream(System.Void*,System.Void*,System.UIntPtr)
+  commentId: M:SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_WriteStream(System.Void*,System.Void*,System.UIntPtr)
+  id: Pa_WriteStream(System.Void*,System.Void*,System.UIntPtr)
+  parent: SilverCraft.CSCore.PortAudio.Native.NativeMethods
+  langs:
+  - csharp
+  - vb
+  name: Pa_WriteStream(void*, void*, nuint)
+  nameWithType: NativeMethods.Pa_WriteStream(void*, void*, nuint)
+  fullName: SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_WriteStream(void*, void*, nuint)
+  type: Method
+  assemblies:
+  - SilverCraft.CSCore.PortAudio
+  namespace: SilverCraft.CSCore.PortAudio.Native
+  syntax:
+    content: public static extern int Pa_WriteStream(void* stream, void* buffer, nuint frames)
+    parameters:
+    - id: stream
+      type: System.Void*
+    - id: buffer
+      type: System.Void*
+    - id: frames
+      type: System.UIntPtr
+    return:
+      type: System.Int32
+    content.vb: Public Shared Function Pa_WriteStream(stream As Void*, buffer As Void*, frames As UIntPtr) As Integer
+  overload: SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_WriteStream*
+  nameWithType.vb: NativeMethods.Pa_WriteStream(Void*, Void*, UIntPtr)
+  fullName.vb: SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_WriteStream(Void*, Void*, System.UIntPtr)
+  name.vb: Pa_WriteStream(Void*, Void*, UIntPtr)
+- uid: SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_GetStreamReadAvailable(System.Void*)
+  commentId: M:SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_GetStreamReadAvailable(System.Void*)
+  id: Pa_GetStreamReadAvailable(System.Void*)
+  parent: SilverCraft.CSCore.PortAudio.Native.NativeMethods
+  langs:
+  - csharp
+  - vb
+  name: Pa_GetStreamReadAvailable(void*)
+  nameWithType: NativeMethods.Pa_GetStreamReadAvailable(void*)
+  fullName: SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_GetStreamReadAvailable(void*)
+  type: Method
+  assemblies:
+  - SilverCraft.CSCore.PortAudio
+  namespace: SilverCraft.CSCore.PortAudio.Native
+  syntax:
+    content: public static extern nint Pa_GetStreamReadAvailable(void* stream)
+    parameters:
+    - id: stream
+      type: System.Void*
+    return:
+      type: System.IntPtr
+    content.vb: Public Shared Function Pa_GetStreamReadAvailable(stream As Void*) As IntPtr
+  overload: SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_GetStreamReadAvailable*
+  nameWithType.vb: NativeMethods.Pa_GetStreamReadAvailable(Void*)
+  fullName.vb: SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_GetStreamReadAvailable(Void*)
+  name.vb: Pa_GetStreamReadAvailable(Void*)
+- uid: SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_GetStreamWriteAvailable(System.Void*)
+  commentId: M:SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_GetStreamWriteAvailable(System.Void*)
+  id: Pa_GetStreamWriteAvailable(System.Void*)
+  parent: SilverCraft.CSCore.PortAudio.Native.NativeMethods
+  langs:
+  - csharp
+  - vb
+  name: Pa_GetStreamWriteAvailable(void*)
+  nameWithType: NativeMethods.Pa_GetStreamWriteAvailable(void*)
+  fullName: SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_GetStreamWriteAvailable(void*)
+  type: Method
+  assemblies:
+  - SilverCraft.CSCore.PortAudio
+  namespace: SilverCraft.CSCore.PortAudio.Native
+  syntax:
+    content: public static extern nint Pa_GetStreamWriteAvailable(void* stream)
+    parameters:
+    - id: stream
+      type: System.Void*
+    return:
+      type: System.IntPtr
+    content.vb: Public Shared Function Pa_GetStreamWriteAvailable(stream As Void*) As IntPtr
+  overload: SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_GetStreamWriteAvailable*
+  nameWithType.vb: NativeMethods.Pa_GetStreamWriteAvailable(Void*)
+  fullName.vb: SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_GetStreamWriteAvailable(Void*)
+  name.vb: Pa_GetStreamWriteAvailable(Void*)
+- uid: SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_GetSampleSize(System.UIntPtr)
+  commentId: M:SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_GetSampleSize(System.UIntPtr)
+  id: Pa_GetSampleSize(System.UIntPtr)
+  parent: SilverCraft.CSCore.PortAudio.Native.NativeMethods
+  langs:
+  - csharp
+  - vb
+  name: Pa_GetSampleSize(nuint)
+  nameWithType: NativeMethods.Pa_GetSampleSize(nuint)
+  fullName: SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_GetSampleSize(nuint)
+  type: Method
+  assemblies:
+  - SilverCraft.CSCore.PortAudio
+  namespace: SilverCraft.CSCore.PortAudio.Native
+  syntax:
+    content: public static extern int Pa_GetSampleSize(nuint format)
+    parameters:
+    - id: format
+      type: System.UIntPtr
+    return:
+      type: System.Int32
+    content.vb: Public Shared Function Pa_GetSampleSize(format As UIntPtr) As Integer
+  overload: SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_GetSampleSize*
+  nameWithType.vb: NativeMethods.Pa_GetSampleSize(UIntPtr)
+  fullName.vb: SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_GetSampleSize(System.UIntPtr)
+  name.vb: Pa_GetSampleSize(UIntPtr)
+- uid: SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_Sleep(System.IntPtr)
+  commentId: M:SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_Sleep(System.IntPtr)
+  id: Pa_Sleep(System.IntPtr)
+  parent: SilverCraft.CSCore.PortAudio.Native.NativeMethods
+  langs:
+  - csharp
+  - vb
+  name: Pa_Sleep(nint)
+  nameWithType: NativeMethods.Pa_Sleep(nint)
+  fullName: SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_Sleep(nint)
+  type: Method
+  assemblies:
+  - SilverCraft.CSCore.PortAudio
+  namespace: SilverCraft.CSCore.PortAudio.Native
+  syntax:
+    content: public static extern void Pa_Sleep(nint msec)
+    parameters:
+    - id: msec
+      type: System.IntPtr
+    content.vb: Public Shared Sub Pa_Sleep(msec As IntPtr)
+  overload: SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_Sleep*
+  nameWithType.vb: NativeMethods.Pa_Sleep(IntPtr)
+  fullName.vb: SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_Sleep(System.IntPtr)
+  name.vb: Pa_Sleep(IntPtr)
+- uid: SilverCraft.CSCore.PortAudio.Native.NativeMethods.paNoDevice
+  commentId: F:SilverCraft.CSCore.PortAudio.Native.NativeMethods.paNoDevice
+  id: paNoDevice
+  parent: SilverCraft.CSCore.PortAudio.Native.NativeMethods
+  langs:
+  - csharp
+  - vb
+  name: paNoDevice
+  nameWithType: NativeMethods.paNoDevice
+  fullName: SilverCraft.CSCore.PortAudio.Native.NativeMethods.paNoDevice
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore.PortAudio/Native/NativeMethods.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: paNoDevice
+    path: ../SilverCraft.CSCore.PortAudio/Native/NativeMethods.cs
+    startLine: 167
+  assemblies:
+  - SilverCraft.CSCore.PortAudio
+  namespace: SilverCraft.CSCore.PortAudio.Native
+  syntax:
+    content: public const int paNoDevice = -1
+    return:
+      type: System.Int32
+    content.vb: Public Const paNoDevice As Integer = -1
+- uid: SilverCraft.CSCore.PortAudio.Native.NativeMethods.paUseHostApiSpecificDeviceSpecification
+  commentId: F:SilverCraft.CSCore.PortAudio.Native.NativeMethods.paUseHostApiSpecificDeviceSpecification
+  id: paUseHostApiSpecificDeviceSpecification
+  parent: SilverCraft.CSCore.PortAudio.Native.NativeMethods
+  langs:
+  - csharp
+  - vb
+  name: paUseHostApiSpecificDeviceSpecification
+  nameWithType: NativeMethods.paUseHostApiSpecificDeviceSpecification
+  fullName: SilverCraft.CSCore.PortAudio.Native.NativeMethods.paUseHostApiSpecificDeviceSpecification
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore.PortAudio/Native/NativeMethods.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: paUseHostApiSpecificDeviceSpecification
+    path: ../SilverCraft.CSCore.PortAudio/Native/NativeMethods.cs
+    startLine: 170
+  assemblies:
+  - SilverCraft.CSCore.PortAudio
+  namespace: SilverCraft.CSCore.PortAudio.Native
+  syntax:
+    content: public const int paUseHostApiSpecificDeviceSpecification = -2
+    return:
+      type: System.Int32
+    content.vb: Public Const paUseHostApiSpecificDeviceSpecification As Integer = -2
+- uid: SilverCraft.CSCore.PortAudio.Native.NativeMethods.paFloat32
+  commentId: F:SilverCraft.CSCore.PortAudio.Native.NativeMethods.paFloat32
+  id: paFloat32
+  parent: SilverCraft.CSCore.PortAudio.Native.NativeMethods
+  langs:
+  - csharp
+  - vb
+  name: paFloat32
+  nameWithType: NativeMethods.paFloat32
+  fullName: SilverCraft.CSCore.PortAudio.Native.NativeMethods.paFloat32
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore.PortAudio/Native/NativeMethods.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: paFloat32
+    path: ../SilverCraft.CSCore.PortAudio/Native/NativeMethods.cs
+    startLine: 173
+  assemblies:
+  - SilverCraft.CSCore.PortAudio
+  namespace: SilverCraft.CSCore.PortAudio.Native
+  syntax:
+    content: public const nuint paFloat32 = 1
+    return:
+      type: System.UIntPtr
+    content.vb: Public Const paFloat32 As UIntPtr = 1
+- uid: SilverCraft.CSCore.PortAudio.Native.NativeMethods.paInt32
+  commentId: F:SilverCraft.CSCore.PortAudio.Native.NativeMethods.paInt32
+  id: paInt32
+  parent: SilverCraft.CSCore.PortAudio.Native.NativeMethods
+  langs:
+  - csharp
+  - vb
+  name: paInt32
+  nameWithType: NativeMethods.paInt32
+  fullName: SilverCraft.CSCore.PortAudio.Native.NativeMethods.paInt32
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore.PortAudio/Native/NativeMethods.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: paInt32
+    path: ../SilverCraft.CSCore.PortAudio/Native/NativeMethods.cs
+    startLine: 176
+  assemblies:
+  - SilverCraft.CSCore.PortAudio
+  namespace: SilverCraft.CSCore.PortAudio.Native
+  syntax:
+    content: public const nuint paInt32 = 2
+    return:
+      type: System.UIntPtr
+    content.vb: Public Const paInt32 As UIntPtr = 2
+- uid: SilverCraft.CSCore.PortAudio.Native.NativeMethods.paInt24
+  commentId: F:SilverCraft.CSCore.PortAudio.Native.NativeMethods.paInt24
+  id: paInt24
+  parent: SilverCraft.CSCore.PortAudio.Native.NativeMethods
+  langs:
+  - csharp
+  - vb
+  name: paInt24
+  nameWithType: NativeMethods.paInt24
+  fullName: SilverCraft.CSCore.PortAudio.Native.NativeMethods.paInt24
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore.PortAudio/Native/NativeMethods.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: paInt24
+    path: ../SilverCraft.CSCore.PortAudio/Native/NativeMethods.cs
+    startLine: 179
+  assemblies:
+  - SilverCraft.CSCore.PortAudio
+  namespace: SilverCraft.CSCore.PortAudio.Native
+  syntax:
+    content: public const nuint paInt24 = 4
+    return:
+      type: System.UIntPtr
+    content.vb: Public Const paInt24 As UIntPtr = 4
+- uid: SilverCraft.CSCore.PortAudio.Native.NativeMethods.paInt16
+  commentId: F:SilverCraft.CSCore.PortAudio.Native.NativeMethods.paInt16
+  id: paInt16
+  parent: SilverCraft.CSCore.PortAudio.Native.NativeMethods
+  langs:
+  - csharp
+  - vb
+  name: paInt16
+  nameWithType: NativeMethods.paInt16
+  fullName: SilverCraft.CSCore.PortAudio.Native.NativeMethods.paInt16
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore.PortAudio/Native/NativeMethods.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: paInt16
+    path: ../SilverCraft.CSCore.PortAudio/Native/NativeMethods.cs
+    startLine: 182
+  assemblies:
+  - SilverCraft.CSCore.PortAudio
+  namespace: SilverCraft.CSCore.PortAudio.Native
+  syntax:
+    content: public const nuint paInt16 = 8
+    return:
+      type: System.UIntPtr
+    content.vb: Public Const paInt16 As UIntPtr = 8
+- uid: SilverCraft.CSCore.PortAudio.Native.NativeMethods.paInt8
+  commentId: F:SilverCraft.CSCore.PortAudio.Native.NativeMethods.paInt8
+  id: paInt8
+  parent: SilverCraft.CSCore.PortAudio.Native.NativeMethods
+  langs:
+  - csharp
+  - vb
+  name: paInt8
+  nameWithType: NativeMethods.paInt8
+  fullName: SilverCraft.CSCore.PortAudio.Native.NativeMethods.paInt8
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore.PortAudio/Native/NativeMethods.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: paInt8
+    path: ../SilverCraft.CSCore.PortAudio/Native/NativeMethods.cs
+    startLine: 185
+  assemblies:
+  - SilverCraft.CSCore.PortAudio
+  namespace: SilverCraft.CSCore.PortAudio.Native
+  syntax:
+    content: public const nuint paInt8 = 16
+    return:
+      type: System.UIntPtr
+    content.vb: Public Const paInt8 As UIntPtr = 16
+- uid: SilverCraft.CSCore.PortAudio.Native.NativeMethods.paUInt8
+  commentId: F:SilverCraft.CSCore.PortAudio.Native.NativeMethods.paUInt8
+  id: paUInt8
+  parent: SilverCraft.CSCore.PortAudio.Native.NativeMethods
+  langs:
+  - csharp
+  - vb
+  name: paUInt8
+  nameWithType: NativeMethods.paUInt8
+  fullName: SilverCraft.CSCore.PortAudio.Native.NativeMethods.paUInt8
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore.PortAudio/Native/NativeMethods.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: paUInt8
+    path: ../SilverCraft.CSCore.PortAudio/Native/NativeMethods.cs
+    startLine: 188
+  assemblies:
+  - SilverCraft.CSCore.PortAudio
+  namespace: SilverCraft.CSCore.PortAudio.Native
+  syntax:
+    content: public const nuint paUInt8 = 32
+    return:
+      type: System.UIntPtr
+    content.vb: Public Const paUInt8 As UIntPtr = 32
+- uid: SilverCraft.CSCore.PortAudio.Native.NativeMethods.paCustomFormat
+  commentId: F:SilverCraft.CSCore.PortAudio.Native.NativeMethods.paCustomFormat
+  id: paCustomFormat
+  parent: SilverCraft.CSCore.PortAudio.Native.NativeMethods
+  langs:
+  - csharp
+  - vb
+  name: paCustomFormat
+  nameWithType: NativeMethods.paCustomFormat
+  fullName: SilverCraft.CSCore.PortAudio.Native.NativeMethods.paCustomFormat
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore.PortAudio/Native/NativeMethods.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: paCustomFormat
+    path: ../SilverCraft.CSCore.PortAudio/Native/NativeMethods.cs
+    startLine: 191
+  assemblies:
+  - SilverCraft.CSCore.PortAudio
+  namespace: SilverCraft.CSCore.PortAudio.Native
+  syntax:
+    content: public const nuint paCustomFormat = 65536
+    return:
+      type: System.UIntPtr
+    content.vb: Public Const paCustomFormat As UIntPtr = 65536
+- uid: SilverCraft.CSCore.PortAudio.Native.NativeMethods.paNonInterleaved
+  commentId: F:SilverCraft.CSCore.PortAudio.Native.NativeMethods.paNonInterleaved
+  id: paNonInterleaved
+  parent: SilverCraft.CSCore.PortAudio.Native.NativeMethods
+  langs:
+  - csharp
+  - vb
+  name: paNonInterleaved
+  nameWithType: NativeMethods.paNonInterleaved
+  fullName: SilverCraft.CSCore.PortAudio.Native.NativeMethods.paNonInterleaved
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore.PortAudio/Native/NativeMethods.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: paNonInterleaved
+    path: ../SilverCraft.CSCore.PortAudio/Native/NativeMethods.cs
+    startLine: 194
+  assemblies:
+  - SilverCraft.CSCore.PortAudio
+  namespace: SilverCraft.CSCore.PortAudio.Native
+  syntax:
+    content: public const nuint paNonInterleaved = 2147483648
+    return:
+      type: System.UIntPtr
+    content.vb: Public Const paNonInterleaved As UIntPtr = 2147483648
+- uid: SilverCraft.CSCore.PortAudio.Native.NativeMethods.paFormatIsSupported
+  commentId: F:SilverCraft.CSCore.PortAudio.Native.NativeMethods.paFormatIsSupported
+  id: paFormatIsSupported
+  parent: SilverCraft.CSCore.PortAudio.Native.NativeMethods
+  langs:
+  - csharp
+  - vb
+  name: paFormatIsSupported
+  nameWithType: NativeMethods.paFormatIsSupported
+  fullName: SilverCraft.CSCore.PortAudio.Native.NativeMethods.paFormatIsSupported
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore.PortAudio/Native/NativeMethods.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: paFormatIsSupported
+    path: ../SilverCraft.CSCore.PortAudio/Native/NativeMethods.cs
+    startLine: 197
+  assemblies:
+  - SilverCraft.CSCore.PortAudio
+  namespace: SilverCraft.CSCore.PortAudio.Native
+  syntax:
+    content: public const int paFormatIsSupported = 0
+    return:
+      type: System.Int32
+    content.vb: Public Const paFormatIsSupported As Integer = 0
+- uid: SilverCraft.CSCore.PortAudio.Native.NativeMethods.paFramesPerBufferUnspecified
+  commentId: F:SilverCraft.CSCore.PortAudio.Native.NativeMethods.paFramesPerBufferUnspecified
+  id: paFramesPerBufferUnspecified
+  parent: SilverCraft.CSCore.PortAudio.Native.NativeMethods
+  langs:
+  - csharp
+  - vb
+  name: paFramesPerBufferUnspecified
+  nameWithType: NativeMethods.paFramesPerBufferUnspecified
+  fullName: SilverCraft.CSCore.PortAudio.Native.NativeMethods.paFramesPerBufferUnspecified
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore.PortAudio/Native/NativeMethods.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: paFramesPerBufferUnspecified
+    path: ../SilverCraft.CSCore.PortAudio/Native/NativeMethods.cs
+    startLine: 200
+  assemblies:
+  - SilverCraft.CSCore.PortAudio
+  namespace: SilverCraft.CSCore.PortAudio.Native
+  syntax:
+    content: public const int paFramesPerBufferUnspecified = 0
+    return:
+      type: System.Int32
+    content.vb: Public Const paFramesPerBufferUnspecified As Integer = 0
+- uid: SilverCraft.CSCore.PortAudio.Native.NativeMethods.paNoFlag
+  commentId: F:SilverCraft.CSCore.PortAudio.Native.NativeMethods.paNoFlag
+  id: paNoFlag
+  parent: SilverCraft.CSCore.PortAudio.Native.NativeMethods
+  langs:
+  - csharp
+  - vb
+  name: paNoFlag
+  nameWithType: NativeMethods.paNoFlag
+  fullName: SilverCraft.CSCore.PortAudio.Native.NativeMethods.paNoFlag
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore.PortAudio/Native/NativeMethods.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: paNoFlag
+    path: ../SilverCraft.CSCore.PortAudio/Native/NativeMethods.cs
+    startLine: 203
+  assemblies:
+  - SilverCraft.CSCore.PortAudio
+  namespace: SilverCraft.CSCore.PortAudio.Native
+  syntax:
+    content: public const nuint paNoFlag = 0
+    return:
+      type: System.UIntPtr
+    content.vb: Public Const paNoFlag As UIntPtr = 0
+- uid: SilverCraft.CSCore.PortAudio.Native.NativeMethods.paClipOff
+  commentId: F:SilverCraft.CSCore.PortAudio.Native.NativeMethods.paClipOff
+  id: paClipOff
+  parent: SilverCraft.CSCore.PortAudio.Native.NativeMethods
+  langs:
+  - csharp
+  - vb
+  name: paClipOff
+  nameWithType: NativeMethods.paClipOff
+  fullName: SilverCraft.CSCore.PortAudio.Native.NativeMethods.paClipOff
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore.PortAudio/Native/NativeMethods.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: paClipOff
+    path: ../SilverCraft.CSCore.PortAudio/Native/NativeMethods.cs
+    startLine: 206
+  assemblies:
+  - SilverCraft.CSCore.PortAudio
+  namespace: SilverCraft.CSCore.PortAudio.Native
+  syntax:
+    content: public const nuint paClipOff = 1
+    return:
+      type: System.UIntPtr
+    content.vb: Public Const paClipOff As UIntPtr = 1
+- uid: SilverCraft.CSCore.PortAudio.Native.NativeMethods.paDitherOff
+  commentId: F:SilverCraft.CSCore.PortAudio.Native.NativeMethods.paDitherOff
+  id: paDitherOff
+  parent: SilverCraft.CSCore.PortAudio.Native.NativeMethods
+  langs:
+  - csharp
+  - vb
+  name: paDitherOff
+  nameWithType: NativeMethods.paDitherOff
+  fullName: SilverCraft.CSCore.PortAudio.Native.NativeMethods.paDitherOff
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore.PortAudio/Native/NativeMethods.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: paDitherOff
+    path: ../SilverCraft.CSCore.PortAudio/Native/NativeMethods.cs
+    startLine: 209
+  assemblies:
+  - SilverCraft.CSCore.PortAudio
+  namespace: SilverCraft.CSCore.PortAudio.Native
+  syntax:
+    content: public const nuint paDitherOff = 2
+    return:
+      type: System.UIntPtr
+    content.vb: Public Const paDitherOff As UIntPtr = 2
+- uid: SilverCraft.CSCore.PortAudio.Native.NativeMethods.paNeverDropInput
+  commentId: F:SilverCraft.CSCore.PortAudio.Native.NativeMethods.paNeverDropInput
+  id: paNeverDropInput
+  parent: SilverCraft.CSCore.PortAudio.Native.NativeMethods
+  langs:
+  - csharp
+  - vb
+  name: paNeverDropInput
+  nameWithType: NativeMethods.paNeverDropInput
+  fullName: SilverCraft.CSCore.PortAudio.Native.NativeMethods.paNeverDropInput
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore.PortAudio/Native/NativeMethods.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: paNeverDropInput
+    path: ../SilverCraft.CSCore.PortAudio/Native/NativeMethods.cs
+    startLine: 212
+  assemblies:
+  - SilverCraft.CSCore.PortAudio
+  namespace: SilverCraft.CSCore.PortAudio.Native
+  syntax:
+    content: public const nuint paNeverDropInput = 4
+    return:
+      type: System.UIntPtr
+    content.vb: Public Const paNeverDropInput As UIntPtr = 4
+- uid: SilverCraft.CSCore.PortAudio.Native.NativeMethods.paPrimeOutputBuffersUsingStreamCallback
+  commentId: F:SilverCraft.CSCore.PortAudio.Native.NativeMethods.paPrimeOutputBuffersUsingStreamCallback
+  id: paPrimeOutputBuffersUsingStreamCallback
+  parent: SilverCraft.CSCore.PortAudio.Native.NativeMethods
+  langs:
+  - csharp
+  - vb
+  name: paPrimeOutputBuffersUsingStreamCallback
+  nameWithType: NativeMethods.paPrimeOutputBuffersUsingStreamCallback
+  fullName: SilverCraft.CSCore.PortAudio.Native.NativeMethods.paPrimeOutputBuffersUsingStreamCallback
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore.PortAudio/Native/NativeMethods.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: paPrimeOutputBuffersUsingStreamCallback
+    path: ../SilverCraft.CSCore.PortAudio/Native/NativeMethods.cs
+    startLine: 215
+  assemblies:
+  - SilverCraft.CSCore.PortAudio
+  namespace: SilverCraft.CSCore.PortAudio.Native
+  syntax:
+    content: public const nuint paPrimeOutputBuffersUsingStreamCallback = 8
+    return:
+      type: System.UIntPtr
+    content.vb: Public Const paPrimeOutputBuffersUsingStreamCallback As UIntPtr = 8
+- uid: SilverCraft.CSCore.PortAudio.Native.NativeMethods.paPlatformSpecificFlags
+  commentId: F:SilverCraft.CSCore.PortAudio.Native.NativeMethods.paPlatformSpecificFlags
+  id: paPlatformSpecificFlags
+  parent: SilverCraft.CSCore.PortAudio.Native.NativeMethods
+  langs:
+  - csharp
+  - vb
+  name: paPlatformSpecificFlags
+  nameWithType: NativeMethods.paPlatformSpecificFlags
+  fullName: SilverCraft.CSCore.PortAudio.Native.NativeMethods.paPlatformSpecificFlags
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore.PortAudio/Native/NativeMethods.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: paPlatformSpecificFlags
+    path: ../SilverCraft.CSCore.PortAudio/Native/NativeMethods.cs
+    startLine: 218
+  assemblies:
+  - SilverCraft.CSCore.PortAudio
+  namespace: SilverCraft.CSCore.PortAudio.Native
+  syntax:
+    content: public const nuint paPlatformSpecificFlags = 4294901760
+    return:
+      type: System.UIntPtr
+    content.vb: Public Const paPlatformSpecificFlags As UIntPtr = 4294901760
+- uid: SilverCraft.CSCore.PortAudio.Native.NativeMethods.paInputUnderflow
+  commentId: F:SilverCraft.CSCore.PortAudio.Native.NativeMethods.paInputUnderflow
+  id: paInputUnderflow
+  parent: SilverCraft.CSCore.PortAudio.Native.NativeMethods
+  langs:
+  - csharp
+  - vb
+  name: paInputUnderflow
+  nameWithType: NativeMethods.paInputUnderflow
+  fullName: SilverCraft.CSCore.PortAudio.Native.NativeMethods.paInputUnderflow
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore.PortAudio/Native/NativeMethods.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: paInputUnderflow
+    path: ../SilverCraft.CSCore.PortAudio/Native/NativeMethods.cs
+    startLine: 221
+  assemblies:
+  - SilverCraft.CSCore.PortAudio
+  namespace: SilverCraft.CSCore.PortAudio.Native
+  syntax:
+    content: public const nuint paInputUnderflow = 1
+    return:
+      type: System.UIntPtr
+    content.vb: Public Const paInputUnderflow As UIntPtr = 1
+- uid: SilverCraft.CSCore.PortAudio.Native.NativeMethods.paInputOverflow
+  commentId: F:SilverCraft.CSCore.PortAudio.Native.NativeMethods.paInputOverflow
+  id: paInputOverflow
+  parent: SilverCraft.CSCore.PortAudio.Native.NativeMethods
+  langs:
+  - csharp
+  - vb
+  name: paInputOverflow
+  nameWithType: NativeMethods.paInputOverflow
+  fullName: SilverCraft.CSCore.PortAudio.Native.NativeMethods.paInputOverflow
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore.PortAudio/Native/NativeMethods.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: paInputOverflow
+    path: ../SilverCraft.CSCore.PortAudio/Native/NativeMethods.cs
+    startLine: 224
+  assemblies:
+  - SilverCraft.CSCore.PortAudio
+  namespace: SilverCraft.CSCore.PortAudio.Native
+  syntax:
+    content: public const nuint paInputOverflow = 2
+    return:
+      type: System.UIntPtr
+    content.vb: Public Const paInputOverflow As UIntPtr = 2
+- uid: SilverCraft.CSCore.PortAudio.Native.NativeMethods.paOutputUnderflow
+  commentId: F:SilverCraft.CSCore.PortAudio.Native.NativeMethods.paOutputUnderflow
+  id: paOutputUnderflow
+  parent: SilverCraft.CSCore.PortAudio.Native.NativeMethods
+  langs:
+  - csharp
+  - vb
+  name: paOutputUnderflow
+  nameWithType: NativeMethods.paOutputUnderflow
+  fullName: SilverCraft.CSCore.PortAudio.Native.NativeMethods.paOutputUnderflow
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore.PortAudio/Native/NativeMethods.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: paOutputUnderflow
+    path: ../SilverCraft.CSCore.PortAudio/Native/NativeMethods.cs
+    startLine: 227
+  assemblies:
+  - SilverCraft.CSCore.PortAudio
+  namespace: SilverCraft.CSCore.PortAudio.Native
+  syntax:
+    content: public const nuint paOutputUnderflow = 4
+    return:
+      type: System.UIntPtr
+    content.vb: Public Const paOutputUnderflow As UIntPtr = 4
+- uid: SilverCraft.CSCore.PortAudio.Native.NativeMethods.paOutputOverflow
+  commentId: F:SilverCraft.CSCore.PortAudio.Native.NativeMethods.paOutputOverflow
+  id: paOutputOverflow
+  parent: SilverCraft.CSCore.PortAudio.Native.NativeMethods
+  langs:
+  - csharp
+  - vb
+  name: paOutputOverflow
+  nameWithType: NativeMethods.paOutputOverflow
+  fullName: SilverCraft.CSCore.PortAudio.Native.NativeMethods.paOutputOverflow
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore.PortAudio/Native/NativeMethods.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: paOutputOverflow
+    path: ../SilverCraft.CSCore.PortAudio/Native/NativeMethods.cs
+    startLine: 230
+  assemblies:
+  - SilverCraft.CSCore.PortAudio
+  namespace: SilverCraft.CSCore.PortAudio.Native
+  syntax:
+    content: public const nuint paOutputOverflow = 8
+    return:
+      type: System.UIntPtr
+    content.vb: Public Const paOutputOverflow As UIntPtr = 8
+- uid: SilverCraft.CSCore.PortAudio.Native.NativeMethods.paPrimingOutput
+  commentId: F:SilverCraft.CSCore.PortAudio.Native.NativeMethods.paPrimingOutput
+  id: paPrimingOutput
+  parent: SilverCraft.CSCore.PortAudio.Native.NativeMethods
+  langs:
+  - csharp
+  - vb
+  name: paPrimingOutput
+  nameWithType: NativeMethods.paPrimingOutput
+  fullName: SilverCraft.CSCore.PortAudio.Native.NativeMethods.paPrimingOutput
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore.PortAudio/Native/NativeMethods.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: paPrimingOutput
+    path: ../SilverCraft.CSCore.PortAudio/Native/NativeMethods.cs
+    startLine: 233
+  assemblies:
+  - SilverCraft.CSCore.PortAudio
+  namespace: SilverCraft.CSCore.PortAudio.Native
+  syntax:
+    content: public const nuint paPrimingOutput = 16
+    return:
+      type: System.UIntPtr
+    content.vb: Public Const paPrimingOutput As UIntPtr = 16
+references:
+- uid: SilverCraft.CSCore.PortAudio.Native
+  commentId: N:SilverCraft.CSCore.PortAudio.Native
+  href: SilverCraft.html
+  name: SilverCraft.CSCore.PortAudio.Native
+  nameWithType: SilverCraft.CSCore.PortAudio.Native
+  fullName: SilverCraft.CSCore.PortAudio.Native
+  spec.csharp:
+  - uid: SilverCraft
+    name: SilverCraft
+    href: SilverCraft.html
+  - name: .
+  - uid: SilverCraft.CSCore
+    name: CSCore
+    href: SilverCraft.CSCore.html
+  - name: .
+  - uid: SilverCraft.CSCore.PortAudio
+    name: PortAudio
+    href: SilverCraft.CSCore.PortAudio.html
+  - name: .
+  - uid: SilverCraft.CSCore.PortAudio.Native
+    name: Native
+    href: SilverCraft.CSCore.PortAudio.Native.html
+  spec.vb:
+  - uid: SilverCraft
+    name: SilverCraft
+    href: SilverCraft.html
+  - name: .
+  - uid: SilverCraft.CSCore
+    name: CSCore
+    href: SilverCraft.CSCore.html
+  - name: .
+  - uid: SilverCraft.CSCore.PortAudio
+    name: PortAudio
+    href: SilverCraft.CSCore.PortAudio.html
+  - name: .
+  - uid: SilverCraft.CSCore.PortAudio.Native
+    name: Native
+    href: SilverCraft.CSCore.PortAudio.Native.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: SilverCraft.CSCore.PortAudio.Native.NativeMethods.DllImportResolver*
+  commentId: Overload:SilverCraft.CSCore.PortAudio.Native.NativeMethods.DllImportResolver
+  href: SilverCraft.CSCore.PortAudio.Native.NativeMethods.html#SilverCraft_CSCore_PortAudio_Native_NativeMethods_DllImportResolver_System_String_System_Reflection_Assembly_System_Nullable_System_Runtime_InteropServices_DllImportSearchPath__
+  name: DllImportResolver
+  nameWithType: NativeMethods.DllImportResolver
+  fullName: SilverCraft.CSCore.PortAudio.Native.NativeMethods.DllImportResolver
+- uid: System.Reflection.Assembly
+  commentId: T:System.Reflection.Assembly
+  parent: System.Reflection
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.reflection.assembly
+  name: Assembly
+  nameWithType: Assembly
+  fullName: System.Reflection.Assembly
+- uid: System.Nullable{System.Runtime.InteropServices.DllImportSearchPath}
+  commentId: T:System.Nullable{System.Runtime.InteropServices.DllImportSearchPath}
+  parent: System
+  definition: System.Nullable`1
+  href: https://learn.microsoft.com/dotnet/api/system.runtime.interopservices.dllimportsearchpath
+  name: DllImportSearchPath?
+  nameWithType: DllImportSearchPath?
+  fullName: System.Runtime.InteropServices.DllImportSearchPath?
+  spec.csharp:
+  - uid: System.Runtime.InteropServices.DllImportSearchPath
+    name: DllImportSearchPath
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime.interopservices.dllimportsearchpath
+  - name: '?'
+  spec.vb:
+  - uid: System.Runtime.InteropServices.DllImportSearchPath
+    name: DllImportSearchPath
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime.interopservices.dllimportsearchpath
+  - name: '?'
+- uid: System.IntPtr
+  commentId: T:System.IntPtr
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.intptr
+  name: nint
+  nameWithType: nint
+  fullName: nint
+  nameWithType.vb: IntPtr
+  fullName.vb: System.IntPtr
+  name.vb: IntPtr
+- uid: System.Reflection
+  commentId: N:System.Reflection
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Reflection
+  nameWithType: System.Reflection
+  fullName: System.Reflection
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Reflection
+    name: Reflection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.reflection
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Reflection
+    name: Reflection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.reflection
+- uid: System.Nullable`1
+  commentId: T:System.Nullable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  name: Nullable<T>
+  nameWithType: Nullable<T>
+  fullName: System.Nullable<T>
+  nameWithType.vb: Nullable(Of T)
+  fullName.vb: System.Nullable(Of T)
+  name.vb: Nullable(Of T)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_GetVersion*
+  commentId: Overload:SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_GetVersion
+  isExternal: true
+  href: SilverCraft.CSCore.PortAudio.Native.NativeMethods.html#SilverCraft_CSCore_PortAudio_Native_NativeMethods_Pa_GetVersion
+  name: Pa_GetVersion
+  nameWithType: NativeMethods.Pa_GetVersion
+  fullName: SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_GetVersion
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_GetVersionText*
+  commentId: Overload:SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_GetVersionText
+  isExternal: true
+  href: SilverCraft.CSCore.PortAudio.Native.NativeMethods.html#SilverCraft_CSCore_PortAudio_Native_NativeMethods_Pa_GetVersionText
+  name: Pa_GetVersionText
+  nameWithType: NativeMethods.Pa_GetVersionText
+  fullName: SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_GetVersionText
+- uid: System.SByte*
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.sbyte
+  name: sbyte*
+  nameWithType: sbyte*
+  fullName: sbyte*
+  nameWithType.vb: SByte*
+  fullName.vb: SByte*
+  name.vb: SByte*
+  spec.csharp:
+  - uid: System.SByte
+    name: sbyte
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.sbyte
+  - name: '*'
+  spec.vb:
+  - uid: System.SByte
+    name: SByte
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.sbyte
+  - name: '*'
+- uid: SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_GetVersionInfo*
+  commentId: Overload:SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_GetVersionInfo
+  isExternal: true
+  href: SilverCraft.CSCore.PortAudio.Native.NativeMethods.html#SilverCraft_CSCore_PortAudio_Native_NativeMethods_Pa_GetVersionInfo
+  name: Pa_GetVersionInfo
+  nameWithType: NativeMethods.Pa_GetVersionInfo
+  fullName: SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_GetVersionInfo
+- uid: SilverCraft.CSCore.PortAudio.Native.PaVersionInfo*
+  isExternal: true
+  href: SilverCraft.CSCore.PortAudio.Native.PaVersionInfo.html
+  name: PaVersionInfo*
+  nameWithType: PaVersionInfo*
+  fullName: SilverCraft.CSCore.PortAudio.Native.PaVersionInfo*
+  spec.csharp:
+  - uid: SilverCraft.CSCore.PortAudio.Native.PaVersionInfo
+    name: PaVersionInfo
+    href: SilverCraft.CSCore.PortAudio.Native.PaVersionInfo.html
+  - name: '*'
+  spec.vb:
+  - uid: SilverCraft.CSCore.PortAudio.Native.PaVersionInfo
+    name: PaVersionInfo
+    href: SilverCraft.CSCore.PortAudio.Native.PaVersionInfo.html
+  - name: '*'
+- uid: SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_GetErrorText*
+  commentId: Overload:SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_GetErrorText
+  isExternal: true
+  href: SilverCraft.CSCore.PortAudio.Native.NativeMethods.html#SilverCraft_CSCore_PortAudio_Native_NativeMethods_Pa_GetErrorText_System_Int32_
+  name: Pa_GetErrorText
+  nameWithType: NativeMethods.Pa_GetErrorText
+  fullName: SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_GetErrorText
+- uid: System.Char*
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.char
+  name: char*
+  nameWithType: char*
+  fullName: char*
+  nameWithType.vb: Char*
+  fullName.vb: Char*
+  name.vb: Char*
+  spec.csharp:
+  - uid: System.Char
+    name: char
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.char
+  - name: '*'
+  spec.vb:
+  - uid: System.Char
+    name: Char
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.char
+  - name: '*'
+- uid: SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_Initialize*
+  commentId: Overload:SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_Initialize
+  isExternal: true
+  href: SilverCraft.CSCore.PortAudio.Native.NativeMethods.html#SilverCraft_CSCore_PortAudio_Native_NativeMethods_Pa_Initialize
+  name: Pa_Initialize
+  nameWithType: NativeMethods.Pa_Initialize
+  fullName: SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_Initialize
+- uid: SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_Terminate*
+  commentId: Overload:SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_Terminate
+  isExternal: true
+  href: SilverCraft.CSCore.PortAudio.Native.NativeMethods.html#SilverCraft_CSCore_PortAudio_Native_NativeMethods_Pa_Terminate
+  name: Pa_Terminate
+  nameWithType: NativeMethods.Pa_Terminate
+  fullName: SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_Terminate
+- uid: SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_GetHostApiCount*
+  commentId: Overload:SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_GetHostApiCount
+  isExternal: true
+  href: SilverCraft.CSCore.PortAudio.Native.NativeMethods.html#SilverCraft_CSCore_PortAudio_Native_NativeMethods_Pa_GetHostApiCount
+  name: Pa_GetHostApiCount
+  nameWithType: NativeMethods.Pa_GetHostApiCount
+  fullName: SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_GetHostApiCount
+- uid: SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_GetDefaultHostApi*
+  commentId: Overload:SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_GetDefaultHostApi
+  isExternal: true
+  href: SilverCraft.CSCore.PortAudio.Native.NativeMethods.html#SilverCraft_CSCore_PortAudio_Native_NativeMethods_Pa_GetDefaultHostApi
+  name: Pa_GetDefaultHostApi
+  nameWithType: NativeMethods.Pa_GetDefaultHostApi
+  fullName: SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_GetDefaultHostApi
+- uid: SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_GetHostApiInfo*
+  commentId: Overload:SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_GetHostApiInfo
+  isExternal: true
+  href: SilverCraft.CSCore.PortAudio.Native.NativeMethods.html#SilverCraft_CSCore_PortAudio_Native_NativeMethods_Pa_GetHostApiInfo_System_Int32_
+  name: Pa_GetHostApiInfo
+  nameWithType: NativeMethods.Pa_GetHostApiInfo
+  fullName: SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_GetHostApiInfo
+- uid: SilverCraft.CSCore.PortAudio.Native.PaHostApiInfo*
+  isExternal: true
+  href: SilverCraft.CSCore.PortAudio.Native.PaHostApiInfo.html
+  name: PaHostApiInfo*
+  nameWithType: PaHostApiInfo*
+  fullName: SilverCraft.CSCore.PortAudio.Native.PaHostApiInfo*
+  spec.csharp:
+  - uid: SilverCraft.CSCore.PortAudio.Native.PaHostApiInfo
+    name: PaHostApiInfo
+    href: SilverCraft.CSCore.PortAudio.Native.PaHostApiInfo.html
+  - name: '*'
+  spec.vb:
+  - uid: SilverCraft.CSCore.PortAudio.Native.PaHostApiInfo
+    name: PaHostApiInfo
+    href: SilverCraft.CSCore.PortAudio.Native.PaHostApiInfo.html
+  - name: '*'
+- uid: SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_HostApiTypeIdToHostApiIndex*
+  commentId: Overload:SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_HostApiTypeIdToHostApiIndex
+  isExternal: true
+  href: SilverCraft.CSCore.PortAudio.Native.NativeMethods.html#SilverCraft_CSCore_PortAudio_Native_NativeMethods_Pa_HostApiTypeIdToHostApiIndex_SilverCraft_CSCore_PortAudio_Native_PaHostApiTypeId_
+  name: Pa_HostApiTypeIdToHostApiIndex
+  nameWithType: NativeMethods.Pa_HostApiTypeIdToHostApiIndex
+  fullName: SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_HostApiTypeIdToHostApiIndex
+- uid: SilverCraft.CSCore.PortAudio.Native.PaHostApiTypeId
+  commentId: T:SilverCraft.CSCore.PortAudio.Native.PaHostApiTypeId
+  parent: SilverCraft.CSCore.PortAudio.Native
+  href: SilverCraft.CSCore.PortAudio.Native.PaHostApiTypeId.html
+  name: PaHostApiTypeId
+  nameWithType: PaHostApiTypeId
+  fullName: SilverCraft.CSCore.PortAudio.Native.PaHostApiTypeId
+- uid: SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_HostApiDeviceIndexToDeviceIndex*
+  commentId: Overload:SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_HostApiDeviceIndexToDeviceIndex
+  isExternal: true
+  href: SilverCraft.CSCore.PortAudio.Native.NativeMethods.html#SilverCraft_CSCore_PortAudio_Native_NativeMethods_Pa_HostApiDeviceIndexToDeviceIndex_System_Int32_System_Int32_
+  name: Pa_HostApiDeviceIndexToDeviceIndex
+  nameWithType: NativeMethods.Pa_HostApiDeviceIndexToDeviceIndex
+  fullName: SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_HostApiDeviceIndexToDeviceIndex
+- uid: SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_GetLastHostErrorInfo*
+  commentId: Overload:SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_GetLastHostErrorInfo
+  isExternal: true
+  href: SilverCraft.CSCore.PortAudio.Native.NativeMethods.html#SilverCraft_CSCore_PortAudio_Native_NativeMethods_Pa_GetLastHostErrorInfo
+  name: Pa_GetLastHostErrorInfo
+  nameWithType: NativeMethods.Pa_GetLastHostErrorInfo
+  fullName: SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_GetLastHostErrorInfo
+- uid: SilverCraft.CSCore.PortAudio.Native.PaHostErrorInfo*
+  isExternal: true
+  href: SilverCraft.CSCore.PortAudio.Native.PaHostErrorInfo.html
+  name: PaHostErrorInfo*
+  nameWithType: PaHostErrorInfo*
+  fullName: SilverCraft.CSCore.PortAudio.Native.PaHostErrorInfo*
+  spec.csharp:
+  - uid: SilverCraft.CSCore.PortAudio.Native.PaHostErrorInfo
+    name: PaHostErrorInfo
+    href: SilverCraft.CSCore.PortAudio.Native.PaHostErrorInfo.html
+  - name: '*'
+  spec.vb:
+  - uid: SilverCraft.CSCore.PortAudio.Native.PaHostErrorInfo
+    name: PaHostErrorInfo
+    href: SilverCraft.CSCore.PortAudio.Native.PaHostErrorInfo.html
+  - name: '*'
+- uid: SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_GetDeviceCount*
+  commentId: Overload:SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_GetDeviceCount
+  isExternal: true
+  href: SilverCraft.CSCore.PortAudio.Native.NativeMethods.html#SilverCraft_CSCore_PortAudio_Native_NativeMethods_Pa_GetDeviceCount
+  name: Pa_GetDeviceCount
+  nameWithType: NativeMethods.Pa_GetDeviceCount
+  fullName: SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_GetDeviceCount
+- uid: SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_GetDefaultInputDevice*
+  commentId: Overload:SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_GetDefaultInputDevice
+  isExternal: true
+  href: SilverCraft.CSCore.PortAudio.Native.NativeMethods.html#SilverCraft_CSCore_PortAudio_Native_NativeMethods_Pa_GetDefaultInputDevice
+  name: Pa_GetDefaultInputDevice
+  nameWithType: NativeMethods.Pa_GetDefaultInputDevice
+  fullName: SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_GetDefaultInputDevice
+- uid: SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_GetDefaultOutputDevice*
+  commentId: Overload:SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_GetDefaultOutputDevice
+  isExternal: true
+  href: SilverCraft.CSCore.PortAudio.Native.NativeMethods.html#SilverCraft_CSCore_PortAudio_Native_NativeMethods_Pa_GetDefaultOutputDevice
+  name: Pa_GetDefaultOutputDevice
+  nameWithType: NativeMethods.Pa_GetDefaultOutputDevice
+  fullName: SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_GetDefaultOutputDevice
+- uid: SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_GetDeviceInfo*
+  commentId: Overload:SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_GetDeviceInfo
+  isExternal: true
+  href: SilverCraft.CSCore.PortAudio.Native.NativeMethods.html#SilverCraft_CSCore_PortAudio_Native_NativeMethods_Pa_GetDeviceInfo_System_Int32_
+  name: Pa_GetDeviceInfo
+  nameWithType: NativeMethods.Pa_GetDeviceInfo
+  fullName: SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_GetDeviceInfo
+- uid: SilverCraft.CSCore.PortAudio.Native.PaDeviceInfo*
+  isExternal: true
+  href: SilverCraft.CSCore.PortAudio.Native.PaDeviceInfo.html
+  name: PaDeviceInfo*
+  nameWithType: PaDeviceInfo*
+  fullName: SilverCraft.CSCore.PortAudio.Native.PaDeviceInfo*
+  spec.csharp:
+  - uid: SilverCraft.CSCore.PortAudio.Native.PaDeviceInfo
+    name: PaDeviceInfo
+    href: SilverCraft.CSCore.PortAudio.Native.PaDeviceInfo.html
+  - name: '*'
+  spec.vb:
+  - uid: SilverCraft.CSCore.PortAudio.Native.PaDeviceInfo
+    name: PaDeviceInfo
+    href: SilverCraft.CSCore.PortAudio.Native.PaDeviceInfo.html
+  - name: '*'
+- uid: SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_IsFormatSupported*
+  commentId: Overload:SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_IsFormatSupported
+  isExternal: true
+  href: SilverCraft.CSCore.PortAudio.Native.NativeMethods.html#SilverCraft_CSCore_PortAudio_Native_NativeMethods_Pa_IsFormatSupported_SilverCraft_CSCore_PortAudio_Native_PaStreamParameters__SilverCraft_CSCore_PortAudio_Native_PaStreamParameters__System_Double_
+  name: Pa_IsFormatSupported
+  nameWithType: NativeMethods.Pa_IsFormatSupported
+  fullName: SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_IsFormatSupported
+- uid: SilverCraft.CSCore.PortAudio.Native.PaStreamParameters*
+  isExternal: true
+  href: SilverCraft.CSCore.PortAudio.Native.PaStreamParameters.html
+  name: PaStreamParameters*
+  nameWithType: PaStreamParameters*
+  fullName: SilverCraft.CSCore.PortAudio.Native.PaStreamParameters*
+  spec.csharp:
+  - uid: SilverCraft.CSCore.PortAudio.Native.PaStreamParameters
+    name: PaStreamParameters
+    href: SilverCraft.CSCore.PortAudio.Native.PaStreamParameters.html
+  - name: '*'
+  spec.vb:
+  - uid: SilverCraft.CSCore.PortAudio.Native.PaStreamParameters
+    name: PaStreamParameters
+    href: SilverCraft.CSCore.PortAudio.Native.PaStreamParameters.html
+  - name: '*'
+- uid: System.Double
+  commentId: T:System.Double
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.double
+  name: double
+  nameWithType: double
+  fullName: double
+  nameWithType.vb: Double
+  fullName.vb: Double
+  name.vb: Double
+- uid: SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_OpenStream*
+  commentId: Overload:SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_OpenStream
+  isExternal: true
+  href: SilverCraft.CSCore.PortAudio.Native.NativeMethods.html#SilverCraft_CSCore_PortAudio_Native_NativeMethods_Pa_OpenStream_SilverCraft_CSCore_PortAudio_Native_PaStream___SilverCraft_CSCore_PortAudio_Native_PaStreamParameters__SilverCraft_CSCore_PortAudio_Native_PaStreamParameters__System_Double_System_UIntPtr_System_UIntPtr__System_Void__
+  name: Pa_OpenStream
+  nameWithType: NativeMethods.Pa_OpenStream
+  fullName: SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_OpenStream
+- uid: SilverCraft.CSCore.PortAudio.Native.PaStream**
+  isExternal: true
+  href: SilverCraft.CSCore.PortAudio.Native.PaStream.html
+  name: PaStream**
+  nameWithType: PaStream**
+  fullName: SilverCraft.CSCore.PortAudio.Native.PaStream**
+  spec.csharp:
+  - uid: SilverCraft.CSCore.PortAudio.Native.PaStream
+    name: PaStream
+    href: SilverCraft.CSCore.PortAudio.Native.PaStream.html
+  - name: '*'
+  - name: '*'
+  spec.vb:
+  - uid: SilverCraft.CSCore.PortAudio.Native.PaStream
+    name: PaStream
+    href: SilverCraft.CSCore.PortAudio.Native.PaStream.html
+  - name: '*'
+  - name: '*'
+- uid: System.UIntPtr
+  commentId: T:System.UIntPtr
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.uintptr
+  name: nuint
+  nameWithType: nuint
+  fullName: nuint
+  nameWithType.vb: UIntPtr
+  fullName.vb: System.UIntPtr
+  name.vb: UIntPtr
+- uid: delegate* unmanaged[Cdecl]<void*, void*, ulong, SilverCraft.CSCore.PortAudio.Native.PaStreamCallbackTimeInfo*, nuint, void*, int>
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.void
+  name: delegate* unmanaged[Cdecl]<void*, void*, ulong, PaStreamCallbackTimeInfo*, nuint, void*, int>
+  nameWithType: delegate* unmanaged[Cdecl]<void*, void*, ulong, PaStreamCallbackTimeInfo*, nuint, void*, int>
+  fullName: delegate* unmanaged[Cdecl]<void*, void*, ulong, SilverCraft.CSCore.PortAudio.Native.PaStreamCallbackTimeInfo*, nuint, void*, int>
+  spec.csharp:
+  - name: delegate
+  - name: '*'
+  - name: " "
+  - name: unmanaged
+  - name: '['
+  - uid: .(System.Void*,System.Void*,System.UInt64,SilverCraft.CSCore.PortAudio.Native.PaStreamCallbackTimeInfo*,System.UIntPtr,System.Void*)
+    name: Cdecl
+    isExternal: true
+  - name: ']'
+  - name: <
+  - uid: System.Void
+    name: void
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.void
+  - name: '*'
+  - name: ','
+  - name: " "
+  - uid: System.Void
+    name: void
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.void
+  - name: '*'
+  - name: ','
+  - name: " "
+  - uid: System.UInt64
+    name: ulong
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.uint64
+  - name: ','
+  - name: " "
+  - uid: SilverCraft.CSCore.PortAudio.Native.PaStreamCallbackTimeInfo
+    name: PaStreamCallbackTimeInfo
+    href: SilverCraft.CSCore.PortAudio.Native.PaStreamCallbackTimeInfo.html
+  - name: '*'
+  - name: ','
+  - name: " "
+  - uid: System.UIntPtr
+    name: nuint
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.uintptr
+  - name: ','
+  - name: " "
+  - uid: System.Void
+    name: void
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.void
+  - name: '*'
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: '>'
+- uid: System.Void*
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.void
+  name: void*
+  nameWithType: void*
+  fullName: void*
+  nameWithType.vb: Void*
+  fullName.vb: Void*
+  name.vb: Void*
+  spec.csharp:
+  - uid: System.Void
+    name: void
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.void
+  - name: '*'
+  spec.vb:
+  - uid: System.Void
+    name: Void
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.void
+  - name: '*'
+- uid: SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_OpenDefaultStream*
+  commentId: Overload:SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_OpenDefaultStream
+  isExternal: true
+  href: SilverCraft.CSCore.PortAudio.Native.NativeMethods.html#SilverCraft_CSCore_PortAudio_Native_NativeMethods_Pa_OpenDefaultStream_SilverCraft_CSCore_PortAudio_Native_PaStream___System_Int32_System_Int32_System_UIntPtr_System_Double_System_UIntPtr_SilverCraft_CSCore_PortAudio_StreamCallBack_System_IntPtr_
+  name: Pa_OpenDefaultStream
+  nameWithType: NativeMethods.Pa_OpenDefaultStream
+  fullName: SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_OpenDefaultStream
+- uid: SilverCraft.CSCore.PortAudio.StreamCallBack
+  commentId: T:SilverCraft.CSCore.PortAudio.StreamCallBack
+  parent: SilverCraft.CSCore.PortAudio
+  href: SilverCraft.CSCore.PortAudio.StreamCallBack.html
+  name: StreamCallBack
+  nameWithType: StreamCallBack
+  fullName: SilverCraft.CSCore.PortAudio.StreamCallBack
+- uid: SilverCraft.CSCore.PortAudio
+  commentId: N:SilverCraft.CSCore.PortAudio
+  href: SilverCraft.html
+  name: SilverCraft.CSCore.PortAudio
+  nameWithType: SilverCraft.CSCore.PortAudio
+  fullName: SilverCraft.CSCore.PortAudio
+  spec.csharp:
+  - uid: SilverCraft
+    name: SilverCraft
+    href: SilverCraft.html
+  - name: .
+  - uid: SilverCraft.CSCore
+    name: CSCore
+    href: SilverCraft.CSCore.html
+  - name: .
+  - uid: SilverCraft.CSCore.PortAudio
+    name: PortAudio
+    href: SilverCraft.CSCore.PortAudio.html
+  spec.vb:
+  - uid: SilverCraft
+    name: SilverCraft
+    href: SilverCraft.html
+  - name: .
+  - uid: SilverCraft.CSCore
+    name: CSCore
+    href: SilverCraft.CSCore.html
+  - name: .
+  - uid: SilverCraft.CSCore.PortAudio
+    name: PortAudio
+    href: SilverCraft.CSCore.PortAudio.html
+- uid: SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_CloseStream*
+  commentId: Overload:SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_CloseStream
+  isExternal: true
+  href: SilverCraft.CSCore.PortAudio.Native.NativeMethods.html#SilverCraft_CSCore_PortAudio_Native_NativeMethods_Pa_CloseStream_SilverCraft_CSCore_PortAudio_Native_PaStream__
+  name: Pa_CloseStream
+  nameWithType: NativeMethods.Pa_CloseStream
+  fullName: SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_CloseStream
+- uid: SilverCraft.CSCore.PortAudio.Native.PaStream*
+  isExternal: true
+  href: SilverCraft.CSCore.PortAudio.Native.PaStream.html
+  name: PaStream*
+  nameWithType: PaStream*
+  fullName: SilverCraft.CSCore.PortAudio.Native.PaStream*
+  spec.csharp:
+  - uid: SilverCraft.CSCore.PortAudio.Native.PaStream
+    name: PaStream
+    href: SilverCraft.CSCore.PortAudio.Native.PaStream.html
+  - name: '*'
+  spec.vb:
+  - uid: SilverCraft.CSCore.PortAudio.Native.PaStream
+    name: PaStream
+    href: SilverCraft.CSCore.PortAudio.Native.PaStream.html
+  - name: '*'
+- uid: SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_SetStreamFinishedCallback*
+  commentId: Overload:SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_SetStreamFinishedCallback
+  isExternal: true
+  href: SilverCraft.CSCore.PortAudio.Native.NativeMethods.html#SilverCraft_CSCore_PortAudio_Native_NativeMethods_Pa_SetStreamFinishedCallback_SilverCraft_CSCore_PortAudio_Native_PaStream__SilverCraft_CSCore_PortAudio_PaStreamFinishedCallback_
+  name: Pa_SetStreamFinishedCallback
+  nameWithType: NativeMethods.Pa_SetStreamFinishedCallback
+  fullName: SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_SetStreamFinishedCallback
+- uid: SilverCraft.CSCore.PortAudio.PaStreamFinishedCallback
+  commentId: T:SilverCraft.CSCore.PortAudio.PaStreamFinishedCallback
+  parent: SilverCraft.CSCore.PortAudio
+  href: SilverCraft.CSCore.PortAudio.PaStreamFinishedCallback.html
+  name: PaStreamFinishedCallback
+  nameWithType: PaStreamFinishedCallback
+  fullName: SilverCraft.CSCore.PortAudio.PaStreamFinishedCallback
+- uid: SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_StartStream*
+  commentId: Overload:SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_StartStream
+  isExternal: true
+  href: SilverCraft.CSCore.PortAudio.Native.NativeMethods.html#SilverCraft_CSCore_PortAudio_Native_NativeMethods_Pa_StartStream_System_Void__
+  name: Pa_StartStream
+  nameWithType: NativeMethods.Pa_StartStream
+  fullName: SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_StartStream
+- uid: SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_StopStream*
+  commentId: Overload:SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_StopStream
+  isExternal: true
+  href: SilverCraft.CSCore.PortAudio.Native.NativeMethods.html#SilverCraft_CSCore_PortAudio_Native_NativeMethods_Pa_StopStream_System_Void__
+  name: Pa_StopStream
+  nameWithType: NativeMethods.Pa_StopStream
+  fullName: SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_StopStream
+- uid: SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_AbortStream*
+  commentId: Overload:SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_AbortStream
+  isExternal: true
+  href: SilverCraft.CSCore.PortAudio.Native.NativeMethods.html#SilverCraft_CSCore_PortAudio_Native_NativeMethods_Pa_AbortStream_System_Void__
+  name: Pa_AbortStream
+  nameWithType: NativeMethods.Pa_AbortStream
+  fullName: SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_AbortStream
+- uid: SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_IsStreamStopped*
+  commentId: Overload:SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_IsStreamStopped
+  isExternal: true
+  href: SilverCraft.CSCore.PortAudio.Native.NativeMethods.html#SilverCraft_CSCore_PortAudio_Native_NativeMethods_Pa_IsStreamStopped_System_Void__
+  name: Pa_IsStreamStopped
+  nameWithType: NativeMethods.Pa_IsStreamStopped
+  fullName: SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_IsStreamStopped
+- uid: SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_IsStreamActive*
+  commentId: Overload:SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_IsStreamActive
+  isExternal: true
+  href: SilverCraft.CSCore.PortAudio.Native.NativeMethods.html#SilverCraft_CSCore_PortAudio_Native_NativeMethods_Pa_IsStreamActive_System_Void__
+  name: Pa_IsStreamActive
+  nameWithType: NativeMethods.Pa_IsStreamActive
+  fullName: SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_IsStreamActive
+- uid: SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_GetStreamInfo*
+  commentId: Overload:SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_GetStreamInfo
+  isExternal: true
+  href: SilverCraft.CSCore.PortAudio.Native.NativeMethods.html#SilverCraft_CSCore_PortAudio_Native_NativeMethods_Pa_GetStreamInfo_System_Void__
+  name: Pa_GetStreamInfo
+  nameWithType: NativeMethods.Pa_GetStreamInfo
+  fullName: SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_GetStreamInfo
+- uid: SilverCraft.CSCore.PortAudio.Native.PaStreamInfo*
+  isExternal: true
+  href: SilverCraft.CSCore.PortAudio.Native.PaStreamInfo.html
+  name: PaStreamInfo*
+  nameWithType: PaStreamInfo*
+  fullName: SilverCraft.CSCore.PortAudio.Native.PaStreamInfo*
+  spec.csharp:
+  - uid: SilverCraft.CSCore.PortAudio.Native.PaStreamInfo
+    name: PaStreamInfo
+    href: SilverCraft.CSCore.PortAudio.Native.PaStreamInfo.html
+  - name: '*'
+  spec.vb:
+  - uid: SilverCraft.CSCore.PortAudio.Native.PaStreamInfo
+    name: PaStreamInfo
+    href: SilverCraft.CSCore.PortAudio.Native.PaStreamInfo.html
+  - name: '*'
+- uid: SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_GetStreamTime*
+  commentId: Overload:SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_GetStreamTime
+  isExternal: true
+  href: SilverCraft.CSCore.PortAudio.Native.NativeMethods.html#SilverCraft_CSCore_PortAudio_Native_NativeMethods_Pa_GetStreamTime_System_Void__
+  name: Pa_GetStreamTime
+  nameWithType: NativeMethods.Pa_GetStreamTime
+  fullName: SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_GetStreamTime
+- uid: SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_GetStreamCpuLoad*
+  commentId: Overload:SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_GetStreamCpuLoad
+  isExternal: true
+  href: SilverCraft.CSCore.PortAudio.Native.NativeMethods.html#SilverCraft_CSCore_PortAudio_Native_NativeMethods_Pa_GetStreamCpuLoad_System_Void__
+  name: Pa_GetStreamCpuLoad
+  nameWithType: NativeMethods.Pa_GetStreamCpuLoad
+  fullName: SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_GetStreamCpuLoad
+- uid: SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_ReadStream*
+  commentId: Overload:SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_ReadStream
+  isExternal: true
+  href: SilverCraft.CSCore.PortAudio.Native.NativeMethods.html#SilverCraft_CSCore_PortAudio_Native_NativeMethods_Pa_ReadStream_System_Void__System_Void__System_UIntPtr_
+  name: Pa_ReadStream
+  nameWithType: NativeMethods.Pa_ReadStream
+  fullName: SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_ReadStream
+- uid: SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_WriteStream*
+  commentId: Overload:SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_WriteStream
+  isExternal: true
+  href: SilverCraft.CSCore.PortAudio.Native.NativeMethods.html#SilverCraft_CSCore_PortAudio_Native_NativeMethods_Pa_WriteStream_System_Void__System_Void__System_UIntPtr_
+  name: Pa_WriteStream
+  nameWithType: NativeMethods.Pa_WriteStream
+  fullName: SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_WriteStream
+- uid: SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_GetStreamReadAvailable*
+  commentId: Overload:SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_GetStreamReadAvailable
+  isExternal: true
+  href: SilverCraft.CSCore.PortAudio.Native.NativeMethods.html#SilverCraft_CSCore_PortAudio_Native_NativeMethods_Pa_GetStreamReadAvailable_System_Void__
+  name: Pa_GetStreamReadAvailable
+  nameWithType: NativeMethods.Pa_GetStreamReadAvailable
+  fullName: SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_GetStreamReadAvailable
+- uid: SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_GetStreamWriteAvailable*
+  commentId: Overload:SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_GetStreamWriteAvailable
+  isExternal: true
+  href: SilverCraft.CSCore.PortAudio.Native.NativeMethods.html#SilverCraft_CSCore_PortAudio_Native_NativeMethods_Pa_GetStreamWriteAvailable_System_Void__
+  name: Pa_GetStreamWriteAvailable
+  nameWithType: NativeMethods.Pa_GetStreamWriteAvailable
+  fullName: SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_GetStreamWriteAvailable
+- uid: SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_GetSampleSize*
+  commentId: Overload:SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_GetSampleSize
+  isExternal: true
+  href: SilverCraft.CSCore.PortAudio.Native.NativeMethods.html#SilverCraft_CSCore_PortAudio_Native_NativeMethods_Pa_GetSampleSize_System_UIntPtr_
+  name: Pa_GetSampleSize
+  nameWithType: NativeMethods.Pa_GetSampleSize
+  fullName: SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_GetSampleSize
+- uid: SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_Sleep*
+  commentId: Overload:SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_Sleep
+  isExternal: true
+  href: SilverCraft.CSCore.PortAudio.Native.NativeMethods.html#SilverCraft_CSCore_PortAudio_Native_NativeMethods_Pa_Sleep_System_IntPtr_
+  name: Pa_Sleep
+  nameWithType: NativeMethods.Pa_Sleep
+  fullName: SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_Sleep

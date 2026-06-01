@@ -1,0 +1,54 @@
+### YamlMime:ManagedReference
+items:
+- uid: SilverCraft.CSCore.Utils
+  commentId: N:SilverCraft.CSCore.Utils
+  id: SilverCraft.CSCore.Utils
+  children:
+  - SilverCraft.CSCore.Utils.Complex
+  langs:
+  - csharp
+  - vb
+  name: SilverCraft.CSCore.Utils
+  nameWithType: SilverCraft.CSCore.Utils
+  fullName: SilverCraft.CSCore.Utils
+  type: Namespace
+  assemblies:
+  - SilverCraft.CSCore
+references:
+- uid: SilverCraft.CSCore.Utils.Complex
+  commentId: T:SilverCraft.CSCore.Utils.Complex
+  parent: SilverCraft.CSCore.Utils
+  href: SilverCraft.CSCore.Utils.Complex.html
+  name: Complex
+  nameWithType: Complex
+  fullName: SilverCraft.CSCore.Utils.Complex
+- uid: SilverCraft.CSCore.Utils
+  commentId: N:SilverCraft.CSCore.Utils
+  href: SilverCraft.html
+  name: SilverCraft.CSCore.Utils
+  nameWithType: SilverCraft.CSCore.Utils
+  fullName: SilverCraft.CSCore.Utils
+  spec.csharp:
+  - uid: SilverCraft
+    name: SilverCraft
+    href: SilverCraft.html
+  - name: .
+  - uid: SilverCraft.CSCore
+    name: CSCore
+    href: SilverCraft.CSCore.html
+  - name: .
+  - uid: SilverCraft.CSCore.Utils
+    name: Utils
+    href: SilverCraft.CSCore.Utils.html
+  spec.vb:
+  - uid: SilverCraft
+    name: SilverCraft
+    href: SilverCraft.html
+  - name: .
+  - uid: SilverCraft.CSCore
+    name: CSCore
+    href: SilverCraft.CSCore.html
+  - name: .
+  - uid: SilverCraft.CSCore.Utils
+    name: Utils
+    href: SilverCraft.CSCore.Utils.html

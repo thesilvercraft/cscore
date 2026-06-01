@@ -1,0 +1,182 @@
+### YamlMime:ManagedReference
+items:
+- uid: SilverCraft.CSCore.Tags.ID3.ID3Version
+  commentId: T:SilverCraft.CSCore.Tags.ID3.ID3Version
+  id: ID3Version
+  parent: SilverCraft.CSCore.Tags.ID3
+  children:
+  - SilverCraft.CSCore.Tags.ID3.ID3Version.ID3v1
+  - SilverCraft.CSCore.Tags.ID3.ID3Version.ID3v2_2
+  - SilverCraft.CSCore.Tags.ID3.ID3Version.ID3v2_3
+  - SilverCraft.CSCore.Tags.ID3.ID3Version.ID3v2_4
+  langs:
+  - csharp
+  - vb
+  name: ID3Version
+  nameWithType: ID3Version
+  fullName: SilverCraft.CSCore.Tags.ID3.ID3Version
+  type: Enum
+  source:
+    remote:
+      path: SilverCraft.CSCore/Tags/ID3/ID3Version.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: ID3Version
+    path: ../SilverCraft.CSCore/Tags/ID3/ID3Version.cs
+    startLine: 2
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Tags.ID3
+  syntax:
+    content: public enum ID3Version
+    content.vb: Public Enum ID3Version
+- uid: SilverCraft.CSCore.Tags.ID3.ID3Version.ID3v1
+  commentId: F:SilverCraft.CSCore.Tags.ID3.ID3Version.ID3v1
+  id: ID3v1
+  parent: SilverCraft.CSCore.Tags.ID3.ID3Version
+  langs:
+  - csharp
+  - vb
+  name: ID3v1
+  nameWithType: ID3Version.ID3v1
+  fullName: SilverCraft.CSCore.Tags.ID3.ID3Version.ID3v1
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/Tags/ID3/ID3Version.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: ID3v1
+    path: ../SilverCraft.CSCore/Tags/ID3/ID3Version.cs
+    startLine: 4
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Tags.ID3
+  syntax:
+    content: ID3v1 = 1
+    return:
+      type: SilverCraft.CSCore.Tags.ID3.ID3Version
+- uid: SilverCraft.CSCore.Tags.ID3.ID3Version.ID3v2_2
+  commentId: F:SilverCraft.CSCore.Tags.ID3.ID3Version.ID3v2_2
+  id: ID3v2_2
+  parent: SilverCraft.CSCore.Tags.ID3.ID3Version
+  langs:
+  - csharp
+  - vb
+  name: ID3v2_2
+  nameWithType: ID3Version.ID3v2_2
+  fullName: SilverCraft.CSCore.Tags.ID3.ID3Version.ID3v2_2
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/Tags/ID3/ID3Version.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: ID3v2_2
+    path: ../SilverCraft.CSCore/Tags/ID3/ID3Version.cs
+    startLine: 5
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Tags.ID3
+  syntax:
+    content: ID3v2_2 = 2
+    return:
+      type: SilverCraft.CSCore.Tags.ID3.ID3Version
+- uid: SilverCraft.CSCore.Tags.ID3.ID3Version.ID3v2_3
+  commentId: F:SilverCraft.CSCore.Tags.ID3.ID3Version.ID3v2_3
+  id: ID3v2_3
+  parent: SilverCraft.CSCore.Tags.ID3.ID3Version
+  langs:
+  - csharp
+  - vb
+  name: ID3v2_3
+  nameWithType: ID3Version.ID3v2_3
+  fullName: SilverCraft.CSCore.Tags.ID3.ID3Version.ID3v2_3
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/Tags/ID3/ID3Version.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: ID3v2_3
+    path: ../SilverCraft.CSCore/Tags/ID3/ID3Version.cs
+    startLine: 6
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Tags.ID3
+  syntax:
+    content: ID3v2_3 = 3
+    return:
+      type: SilverCraft.CSCore.Tags.ID3.ID3Version
+- uid: SilverCraft.CSCore.Tags.ID3.ID3Version.ID3v2_4
+  commentId: F:SilverCraft.CSCore.Tags.ID3.ID3Version.ID3v2_4
+  id: ID3v2_4
+  parent: SilverCraft.CSCore.Tags.ID3.ID3Version
+  langs:
+  - csharp
+  - vb
+  name: ID3v2_4
+  nameWithType: ID3Version.ID3v2_4
+  fullName: SilverCraft.CSCore.Tags.ID3.ID3Version.ID3v2_4
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/Tags/ID3/ID3Version.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: ID3v2_4
+    path: ../SilverCraft.CSCore/Tags/ID3/ID3Version.cs
+    startLine: 7
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Tags.ID3
+  syntax:
+    content: ID3v2_4 = 4
+    return:
+      type: SilverCraft.CSCore.Tags.ID3.ID3Version
+references:
+- uid: SilverCraft.CSCore.Tags.ID3
+  commentId: N:SilverCraft.CSCore.Tags.ID3
+  href: SilverCraft.html
+  name: SilverCraft.CSCore.Tags.ID3
+  nameWithType: SilverCraft.CSCore.Tags.ID3
+  fullName: SilverCraft.CSCore.Tags.ID3
+  spec.csharp:
+  - uid: SilverCraft
+    name: SilverCraft
+    href: SilverCraft.html
+  - name: .
+  - uid: SilverCraft.CSCore
+    name: CSCore
+    href: SilverCraft.CSCore.html
+  - name: .
+  - uid: SilverCraft.CSCore.Tags
+    name: Tags
+    href: SilverCraft.CSCore.Tags.html
+  - name: .
+  - uid: SilverCraft.CSCore.Tags.ID3
+    name: ID3
+    href: SilverCraft.CSCore.Tags.ID3.html
+  spec.vb:
+  - uid: SilverCraft
+    name: SilverCraft
+    href: SilverCraft.html
+  - name: .
+  - uid: SilverCraft.CSCore
+    name: CSCore
+    href: SilverCraft.CSCore.html
+  - name: .
+  - uid: SilverCraft.CSCore.Tags
+    name: Tags
+    href: SilverCraft.CSCore.Tags.html
+  - name: .
+  - uid: SilverCraft.CSCore.Tags.ID3
+    name: ID3
+    href: SilverCraft.CSCore.Tags.ID3.html
+- uid: SilverCraft.CSCore.Tags.ID3.ID3Version
+  commentId: T:SilverCraft.CSCore.Tags.ID3.ID3Version
+  parent: SilverCraft.CSCore.Tags.ID3
+  href: SilverCraft.CSCore.Tags.ID3.ID3Version.html
+  name: ID3Version
+  nameWithType: ID3Version
+  fullName: SilverCraft.CSCore.Tags.ID3.ID3Version

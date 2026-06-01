@@ -1,0 +1,133 @@
+### YamlMime:ManagedReference
+items:
+- uid: SilverCraft.CSCore.SoundIn.RecordingState
+  commentId: T:SilverCraft.CSCore.SoundIn.RecordingState
+  id: RecordingState
+  parent: SilverCraft.CSCore.SoundIn
+  children:
+  - SilverCraft.CSCore.SoundIn.RecordingState.Recording
+  - SilverCraft.CSCore.SoundIn.RecordingState.Stopped
+  langs:
+  - csharp
+  - vb
+  name: RecordingState
+  nameWithType: RecordingState
+  fullName: SilverCraft.CSCore.SoundIn.RecordingState
+  type: Enum
+  source:
+    remote:
+      path: SilverCraft.CSCore/SoundIn/RecordingState.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: RecordingState
+    path: ../SilverCraft.CSCore/SoundIn/RecordingState.cs
+    startLine: 5
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.SoundIn
+  summary: Defines the states of a <xref href="SilverCraft.CSCore.SoundIn.ISoundIn" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public enum RecordingState
+    content.vb: Public Enum RecordingState
+- uid: SilverCraft.CSCore.SoundIn.RecordingState.Recording
+  commentId: F:SilverCraft.CSCore.SoundIn.RecordingState.Recording
+  id: Recording
+  parent: SilverCraft.CSCore.SoundIn.RecordingState
+  langs:
+  - csharp
+  - vb
+  name: Recording
+  nameWithType: RecordingState.Recording
+  fullName: SilverCraft.CSCore.SoundIn.RecordingState.Recording
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/SoundIn/RecordingState.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: Recording
+    path: ../SilverCraft.CSCore/SoundIn/RecordingState.cs
+    startLine: 10
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.SoundIn
+  summary: The <xref href="SilverCraft.CSCore.SoundIn.ISoundIn" data-throw-if-not-resolved="false"></xref> is currently recording.
+  example: []
+  syntax:
+    content: Recording = 0
+    return:
+      type: SilverCraft.CSCore.SoundIn.RecordingState
+- uid: SilverCraft.CSCore.SoundIn.RecordingState.Stopped
+  commentId: F:SilverCraft.CSCore.SoundIn.RecordingState.Stopped
+  id: Stopped
+  parent: SilverCraft.CSCore.SoundIn.RecordingState
+  langs:
+  - csharp
+  - vb
+  name: Stopped
+  nameWithType: RecordingState.Stopped
+  fullName: SilverCraft.CSCore.SoundIn.RecordingState.Stopped
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/SoundIn/RecordingState.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: Stopped
+    path: ../SilverCraft.CSCore/SoundIn/RecordingState.cs
+    startLine: 14
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.SoundIn
+  summary: The <xref href="SilverCraft.CSCore.SoundIn.ISoundIn" data-throw-if-not-resolved="false"></xref> is currently stopped.
+  example: []
+  syntax:
+    content: Stopped = 1
+    return:
+      type: SilverCraft.CSCore.SoundIn.RecordingState
+references:
+- uid: SilverCraft.CSCore.SoundIn.ISoundIn
+  commentId: T:SilverCraft.CSCore.SoundIn.ISoundIn
+  parent: SilverCraft.CSCore.SoundIn
+  href: SilverCraft.CSCore.SoundIn.ISoundIn.html
+  name: ISoundIn
+  nameWithType: ISoundIn
+  fullName: SilverCraft.CSCore.SoundIn.ISoundIn
+- uid: SilverCraft.CSCore.SoundIn
+  commentId: N:SilverCraft.CSCore.SoundIn
+  href: SilverCraft.html
+  name: SilverCraft.CSCore.SoundIn
+  nameWithType: SilverCraft.CSCore.SoundIn
+  fullName: SilverCraft.CSCore.SoundIn
+  spec.csharp:
+  - uid: SilverCraft
+    name: SilverCraft
+    href: SilverCraft.html
+  - name: .
+  - uid: SilverCraft.CSCore
+    name: CSCore
+    href: SilverCraft.CSCore.html
+  - name: .
+  - uid: SilverCraft.CSCore.SoundIn
+    name: SoundIn
+    href: SilverCraft.CSCore.SoundIn.html
+  spec.vb:
+  - uid: SilverCraft
+    name: SilverCraft
+    href: SilverCraft.html
+  - name: .
+  - uid: SilverCraft.CSCore
+    name: CSCore
+    href: SilverCraft.CSCore.html
+  - name: .
+  - uid: SilverCraft.CSCore.SoundIn
+    name: SoundIn
+    href: SilverCraft.CSCore.SoundIn.html
+- uid: SilverCraft.CSCore.SoundIn.RecordingState
+  commentId: T:SilverCraft.CSCore.SoundIn.RecordingState
+  parent: SilverCraft.CSCore.SoundIn
+  href: SilverCraft.CSCore.SoundIn.RecordingState.html
+  name: RecordingState
+  nameWithType: RecordingState
+  fullName: SilverCraft.CSCore.SoundIn.RecordingState

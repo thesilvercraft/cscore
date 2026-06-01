@@ -1,0 +1,735 @@
+### YamlMime:ManagedReference
+items:
+- uid: SilverCraft.CSCore.SoundIn.DataAvailableEventArgs
+  commentId: T:SilverCraft.CSCore.SoundIn.DataAvailableEventArgs
+  id: DataAvailableEventArgs
+  parent: SilverCraft.CSCore.SoundIn
+  children:
+  - SilverCraft.CSCore.SoundIn.DataAvailableEventArgs.#ctor(System.Byte[],System.Int32,System.Int32,SilverCraft.CSCore.WaveFormat)
+  - SilverCraft.CSCore.SoundIn.DataAvailableEventArgs.ByteCount
+  - SilverCraft.CSCore.SoundIn.DataAvailableEventArgs.Data
+  - SilverCraft.CSCore.SoundIn.DataAvailableEventArgs.Format
+  - SilverCraft.CSCore.SoundIn.DataAvailableEventArgs.Offset
+  langs:
+  - csharp
+  - vb
+  name: DataAvailableEventArgs
+  nameWithType: DataAvailableEventArgs
+  fullName: SilverCraft.CSCore.SoundIn.DataAvailableEventArgs
+  type: Class
+  source:
+    remote:
+      path: SilverCraft.CSCore/SoundIn/DataAvailableEventArgs.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: DataAvailableEventArgs
+    path: ../SilverCraft.CSCore/SoundIn/DataAvailableEventArgs.cs
+    startLine: 7
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.SoundIn
+  summary: Provides data for the <xref href="SilverCraft.CSCore.SoundIn.ISoundIn.DataAvailable" data-throw-if-not-resolved="false"></xref> event.
+  example: []
+  syntax:
+    content: 'public class DataAvailableEventArgs : EventArgs'
+    content.vb: Public Class DataAvailableEventArgs Inherits EventArgs
+  inheritance:
+  - System.Object
+  - System.EventArgs
+  inheritedMembers:
+  - System.EventArgs.Empty
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  extensionMethods:
+  - SilverCraft.CSCore.SoundIn.DataAvailableEventArgs.SilverCraft.CSCore.FluentExtensions.Synchronized``2
+- uid: SilverCraft.CSCore.SoundIn.DataAvailableEventArgs.Data
+  commentId: P:SilverCraft.CSCore.SoundIn.DataAvailableEventArgs.Data
+  id: Data
+  parent: SilverCraft.CSCore.SoundIn.DataAvailableEventArgs
+  langs:
+  - csharp
+  - vb
+  name: Data
+  nameWithType: DataAvailableEventArgs.Data
+  fullName: SilverCraft.CSCore.SoundIn.DataAvailableEventArgs.Data
+  type: Property
+  source:
+    remote:
+      path: SilverCraft.CSCore/SoundIn/DataAvailableEventArgs.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: Data
+    path: ../SilverCraft.CSCore/SoundIn/DataAvailableEventArgs.cs
+    startLine: 12
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.SoundIn
+  summary: Gets the available data.
+  example: []
+  syntax:
+    content: public byte[] Data { get; }
+    parameters: []
+    return:
+      type: System.Byte[]
+    content.vb: Public Property Data As Byte()
+  overload: SilverCraft.CSCore.SoundIn.DataAvailableEventArgs.Data*
+- uid: SilverCraft.CSCore.SoundIn.DataAvailableEventArgs.ByteCount
+  commentId: P:SilverCraft.CSCore.SoundIn.DataAvailableEventArgs.ByteCount
+  id: ByteCount
+  parent: SilverCraft.CSCore.SoundIn.DataAvailableEventArgs
+  langs:
+  - csharp
+  - vb
+  name: ByteCount
+  nameWithType: DataAvailableEventArgs.ByteCount
+  fullName: SilverCraft.CSCore.SoundIn.DataAvailableEventArgs.ByteCount
+  type: Property
+  source:
+    remote:
+      path: SilverCraft.CSCore/SoundIn/DataAvailableEventArgs.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: ByteCount
+    path: ../SilverCraft.CSCore/SoundIn/DataAvailableEventArgs.cs
+    startLine: 17
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.SoundIn
+  summary: Gets the number of available bytes.
+  example: []
+  syntax:
+    content: public int ByteCount { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property ByteCount As Integer
+  overload: SilverCraft.CSCore.SoundIn.DataAvailableEventArgs.ByteCount*
+- uid: SilverCraft.CSCore.SoundIn.DataAvailableEventArgs.Offset
+  commentId: P:SilverCraft.CSCore.SoundIn.DataAvailableEventArgs.Offset
+  id: Offset
+  parent: SilverCraft.CSCore.SoundIn.DataAvailableEventArgs
+  langs:
+  - csharp
+  - vb
+  name: Offset
+  nameWithType: DataAvailableEventArgs.Offset
+  fullName: SilverCraft.CSCore.SoundIn.DataAvailableEventArgs.Offset
+  type: Property
+  source:
+    remote:
+      path: SilverCraft.CSCore/SoundIn/DataAvailableEventArgs.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: Offset
+    path: ../SilverCraft.CSCore/SoundIn/DataAvailableEventArgs.cs
+    startLine: 22
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.SoundIn
+  summary: Gets the zero-based offset inside of the <xref href="SilverCraft.CSCore.SoundIn.DataAvailableEventArgs.Data" data-throw-if-not-resolved="false"></xref> array at which the available data starts.
+  example: []
+  syntax:
+    content: public int Offset { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property Offset As Integer
+  overload: SilverCraft.CSCore.SoundIn.DataAvailableEventArgs.Offset*
+- uid: SilverCraft.CSCore.SoundIn.DataAvailableEventArgs.Format
+  commentId: P:SilverCraft.CSCore.SoundIn.DataAvailableEventArgs.Format
+  id: Format
+  parent: SilverCraft.CSCore.SoundIn.DataAvailableEventArgs
+  langs:
+  - csharp
+  - vb
+  name: Format
+  nameWithType: DataAvailableEventArgs.Format
+  fullName: SilverCraft.CSCore.SoundIn.DataAvailableEventArgs.Format
+  type: Property
+  source:
+    remote:
+      path: SilverCraft.CSCore/SoundIn/DataAvailableEventArgs.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: Format
+    path: ../SilverCraft.CSCore/SoundIn/DataAvailableEventArgs.cs
+    startLine: 27
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.SoundIn
+  summary: Gets the format of the available <xref href="SilverCraft.CSCore.SoundIn.DataAvailableEventArgs.Data" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public WaveFormat Format { get; }
+    parameters: []
+    return:
+      type: SilverCraft.CSCore.WaveFormat
+    content.vb: Public Property Format As WaveFormat
+  overload: SilverCraft.CSCore.SoundIn.DataAvailableEventArgs.Format*
+- uid: SilverCraft.CSCore.SoundIn.DataAvailableEventArgs.#ctor(System.Byte[],System.Int32,System.Int32,SilverCraft.CSCore.WaveFormat)
+  commentId: M:SilverCraft.CSCore.SoundIn.DataAvailableEventArgs.#ctor(System.Byte[],System.Int32,System.Int32,SilverCraft.CSCore.WaveFormat)
+  id: '#ctor(System.Byte[],System.Int32,System.Int32,SilverCraft.CSCore.WaveFormat)'
+  parent: SilverCraft.CSCore.SoundIn.DataAvailableEventArgs
+  langs:
+  - csharp
+  - vb
+  name: DataAvailableEventArgs(byte[], int, int, WaveFormat)
+  nameWithType: DataAvailableEventArgs.DataAvailableEventArgs(byte[], int, int, WaveFormat)
+  fullName: SilverCraft.CSCore.SoundIn.DataAvailableEventArgs.DataAvailableEventArgs(byte[], int, int, SilverCraft.CSCore.WaveFormat)
+  type: Constructor
+  source:
+    remote:
+      path: SilverCraft.CSCore/SoundIn/DataAvailableEventArgs.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: .ctor
+    path: ../SilverCraft.CSCore/SoundIn/DataAvailableEventArgs.cs
+    startLine: 45
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.SoundIn
+  summary: Initializes a new instance of the <xref href="SilverCraft.CSCore.SoundIn.DataAvailableEventArgs" data-throw-if-not-resolved="false"></xref> class.
+  example: []
+  syntax:
+    content: public DataAvailableEventArgs(byte[] data, int offset, int bytecount, WaveFormat format)
+    parameters:
+    - id: data
+      type: System.Byte[]
+      description: A byte array which contains the data.
+    - id: offset
+      type: System.Int32
+      description: The offset inside of the <xref href="SilverCraft.CSCore.SoundIn.DataAvailableEventArgs.Data" data-throw-if-not-resolved="false"></xref> array at which the available data starts.
+    - id: bytecount
+      type: System.Int32
+      description: The number of available bytes.
+    - id: format
+      type: SilverCraft.CSCore.WaveFormat
+      description: The format of the <code class="paramref">data</code>.
+    content.vb: Public Sub New(data As Byte(), offset As Integer, bytecount As Integer, format As WaveFormat)
+  overload: SilverCraft.CSCore.SoundIn.DataAvailableEventArgs.#ctor*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: >-
+      data
+
+      or
+
+      format
+  - type: System.ArgumentOutOfRangeException
+    commentId: T:System.ArgumentOutOfRangeException
+    description: >-
+      offset must not be less than zero. 
+
+      bytecount must not be or equal to zero.
+  nameWithType.vb: DataAvailableEventArgs.New(Byte(), Integer, Integer, WaveFormat)
+  fullName.vb: SilverCraft.CSCore.SoundIn.DataAvailableEventArgs.New(Byte(), Integer, Integer, SilverCraft.CSCore.WaveFormat)
+  name.vb: New(Byte(), Integer, Integer, WaveFormat)
+references:
+- uid: SilverCraft.CSCore.SoundIn.ISoundIn.DataAvailable
+  commentId: E:SilverCraft.CSCore.SoundIn.ISoundIn.DataAvailable
+  href: SilverCraft.CSCore.SoundIn.ISoundIn.html#SilverCraft_CSCore_SoundIn_ISoundIn_DataAvailable
+  name: DataAvailable
+  nameWithType: ISoundIn.DataAvailable
+  fullName: SilverCraft.CSCore.SoundIn.ISoundIn.DataAvailable
+- uid: SilverCraft.CSCore.SoundIn
+  commentId: N:SilverCraft.CSCore.SoundIn
+  href: SilverCraft.html
+  name: SilverCraft.CSCore.SoundIn
+  nameWithType: SilverCraft.CSCore.SoundIn
+  fullName: SilverCraft.CSCore.SoundIn
+  spec.csharp:
+  - uid: SilverCraft
+    name: SilverCraft
+    href: SilverCraft.html
+  - name: .
+  - uid: SilverCraft.CSCore
+    name: CSCore
+    href: SilverCraft.CSCore.html
+  - name: .
+  - uid: SilverCraft.CSCore.SoundIn
+    name: SoundIn
+    href: SilverCraft.CSCore.SoundIn.html
+  spec.vb:
+  - uid: SilverCraft
+    name: SilverCraft
+    href: SilverCraft.html
+  - name: .
+  - uid: SilverCraft.CSCore
+    name: CSCore
+    href: SilverCraft.CSCore.html
+  - name: .
+  - uid: SilverCraft.CSCore.SoundIn
+    name: SoundIn
+    href: SilverCraft.CSCore.SoundIn.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.EventArgs
+  commentId: T:System.EventArgs
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.eventargs
+  name: EventArgs
+  nameWithType: EventArgs
+  fullName: System.EventArgs
+- uid: System.EventArgs.Empty
+  commentId: F:System.EventArgs.Empty
+  parent: System.EventArgs
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.eventargs.empty
+  name: Empty
+  nameWithType: EventArgs.Empty
+  fullName: System.EventArgs.Empty
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: SilverCraft.CSCore.SoundIn.DataAvailableEventArgs.SilverCraft.CSCore.FluentExtensions.Synchronized``2
+  commentId: M:SilverCraft.CSCore.FluentExtensions.Synchronized``2(``0)
+  parent: SilverCraft.CSCore.FluentExtensions
+  definition: SilverCraft.CSCore.FluentExtensions.Synchronized``2(``0)
+  href: SilverCraft.CSCore.FluentExtensions.html#SilverCraft_CSCore_FluentExtensions_Synchronized__2___0_
+  name: Synchronized<DataAvailableEventArgs, T>(DataAvailableEventArgs)
+  nameWithType: FluentExtensions.Synchronized<DataAvailableEventArgs, T>(DataAvailableEventArgs)
+  fullName: SilverCraft.CSCore.FluentExtensions.Synchronized<SilverCraft.CSCore.SoundIn.DataAvailableEventArgs, T>(SilverCraft.CSCore.SoundIn.DataAvailableEventArgs)
+  nameWithType.vb: FluentExtensions.Synchronized(Of DataAvailableEventArgs, T)(DataAvailableEventArgs)
+  fullName.vb: SilverCraft.CSCore.FluentExtensions.Synchronized(Of SilverCraft.CSCore.SoundIn.DataAvailableEventArgs, T)(SilverCraft.CSCore.SoundIn.DataAvailableEventArgs)
+  name.vb: Synchronized(Of DataAvailableEventArgs, T)(DataAvailableEventArgs)
+  spec.csharp:
+  - uid: SilverCraft.CSCore.FluentExtensions.Synchronized``2(SilverCraft.CSCore.SoundIn.DataAvailableEventArgs)
+    name: Synchronized
+    href: SilverCraft.CSCore.FluentExtensions.html#SilverCraft_CSCore_FluentExtensions_Synchronized__2___0_
+  - name: <
+  - uid: SilverCraft.CSCore.SoundIn.DataAvailableEventArgs
+    name: DataAvailableEventArgs
+    href: SilverCraft.CSCore.SoundIn.DataAvailableEventArgs.html
+  - name: ','
+  - name: " "
+  - name: T
+  - name: '>'
+  - name: (
+  - uid: SilverCraft.CSCore.SoundIn.DataAvailableEventArgs
+    name: DataAvailableEventArgs
+    href: SilverCraft.CSCore.SoundIn.DataAvailableEventArgs.html
+  - name: )
+  spec.vb:
+  - uid: SilverCraft.CSCore.FluentExtensions.Synchronized``2(SilverCraft.CSCore.SoundIn.DataAvailableEventArgs)
+    name: Synchronized
+    href: SilverCraft.CSCore.FluentExtensions.html#SilverCraft_CSCore_FluentExtensions_Synchronized__2___0_
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: SilverCraft.CSCore.SoundIn.DataAvailableEventArgs
+    name: DataAvailableEventArgs
+    href: SilverCraft.CSCore.SoundIn.DataAvailableEventArgs.html
+  - name: ','
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: SilverCraft.CSCore.SoundIn.DataAvailableEventArgs
+    name: DataAvailableEventArgs
+    href: SilverCraft.CSCore.SoundIn.DataAvailableEventArgs.html
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: SilverCraft.CSCore.FluentExtensions.Synchronized``2(``0)
+  commentId: M:SilverCraft.CSCore.FluentExtensions.Synchronized``2(``0)
+  href: SilverCraft.CSCore.FluentExtensions.html#SilverCraft_CSCore_FluentExtensions_Synchronized__2___0_
+  name: Synchronized<TAudioSource, T>(TAudioSource)
+  nameWithType: FluentExtensions.Synchronized<TAudioSource, T>(TAudioSource)
+  fullName: SilverCraft.CSCore.FluentExtensions.Synchronized<TAudioSource, T>(TAudioSource)
+  nameWithType.vb: FluentExtensions.Synchronized(Of TAudioSource, T)(TAudioSource)
+  fullName.vb: SilverCraft.CSCore.FluentExtensions.Synchronized(Of TAudioSource, T)(TAudioSource)
+  name.vb: Synchronized(Of TAudioSource, T)(TAudioSource)
+  spec.csharp:
+  - uid: SilverCraft.CSCore.FluentExtensions.Synchronized``2(``0)
+    name: Synchronized
+    href: SilverCraft.CSCore.FluentExtensions.html#SilverCraft_CSCore_FluentExtensions_Synchronized__2___0_
+  - name: <
+  - name: TAudioSource
+  - name: ','
+  - name: " "
+  - name: T
+  - name: '>'
+  - name: (
+  - name: TAudioSource
+  - name: )
+  spec.vb:
+  - uid: SilverCraft.CSCore.FluentExtensions.Synchronized``2(``0)
+    name: Synchronized
+    href: SilverCraft.CSCore.FluentExtensions.html#SilverCraft_CSCore_FluentExtensions_Synchronized__2___0_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TAudioSource
+  - name: ','
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - name: TAudioSource
+  - name: )
+- uid: SilverCraft.CSCore.FluentExtensions
+  commentId: T:SilverCraft.CSCore.FluentExtensions
+  parent: SilverCraft.CSCore
+  href: SilverCraft.CSCore.FluentExtensions.html
+  name: FluentExtensions
+  nameWithType: FluentExtensions
+  fullName: SilverCraft.CSCore.FluentExtensions
+- uid: SilverCraft.CSCore
+  commentId: N:SilverCraft.CSCore
+  href: SilverCraft.html
+  name: SilverCraft.CSCore
+  nameWithType: SilverCraft.CSCore
+  fullName: SilverCraft.CSCore
+  spec.csharp:
+  - uid: SilverCraft
+    name: SilverCraft
+    href: SilverCraft.html
+  - name: .
+  - uid: SilverCraft.CSCore
+    name: CSCore
+    href: SilverCraft.CSCore.html
+  spec.vb:
+  - uid: SilverCraft
+    name: SilverCraft
+    href: SilverCraft.html
+  - name: .
+  - uid: SilverCraft.CSCore
+    name: CSCore
+    href: SilverCraft.CSCore.html
+- uid: SilverCraft.CSCore.SoundIn.DataAvailableEventArgs.Data*
+  commentId: Overload:SilverCraft.CSCore.SoundIn.DataAvailableEventArgs.Data
+  href: SilverCraft.CSCore.SoundIn.DataAvailableEventArgs.html#SilverCraft_CSCore_SoundIn_DataAvailableEventArgs_Data
+  name: Data
+  nameWithType: DataAvailableEventArgs.Data
+  fullName: SilverCraft.CSCore.SoundIn.DataAvailableEventArgs.Data
+- uid: System.Byte[]
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.byte
+  name: byte[]
+  nameWithType: byte[]
+  fullName: byte[]
+  nameWithType.vb: Byte()
+  fullName.vb: Byte()
+  name.vb: Byte()
+  spec.csharp:
+  - uid: System.Byte
+    name: byte
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.byte
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: System.Byte
+    name: Byte
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.byte
+  - name: (
+  - name: )
+- uid: SilverCraft.CSCore.SoundIn.DataAvailableEventArgs.ByteCount*
+  commentId: Overload:SilverCraft.CSCore.SoundIn.DataAvailableEventArgs.ByteCount
+  href: SilverCraft.CSCore.SoundIn.DataAvailableEventArgs.html#SilverCraft_CSCore_SoundIn_DataAvailableEventArgs_ByteCount
+  name: ByteCount
+  nameWithType: DataAvailableEventArgs.ByteCount
+  fullName: SilverCraft.CSCore.SoundIn.DataAvailableEventArgs.ByteCount
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: SilverCraft.CSCore.SoundIn.DataAvailableEventArgs.Data
+  commentId: P:SilverCraft.CSCore.SoundIn.DataAvailableEventArgs.Data
+  href: SilverCraft.CSCore.SoundIn.DataAvailableEventArgs.html#SilverCraft_CSCore_SoundIn_DataAvailableEventArgs_Data
+  name: Data
+  nameWithType: DataAvailableEventArgs.Data
+  fullName: SilverCraft.CSCore.SoundIn.DataAvailableEventArgs.Data
+- uid: SilverCraft.CSCore.SoundIn.DataAvailableEventArgs.Offset*
+  commentId: Overload:SilverCraft.CSCore.SoundIn.DataAvailableEventArgs.Offset
+  href: SilverCraft.CSCore.SoundIn.DataAvailableEventArgs.html#SilverCraft_CSCore_SoundIn_DataAvailableEventArgs_Offset
+  name: Offset
+  nameWithType: DataAvailableEventArgs.Offset
+  fullName: SilverCraft.CSCore.SoundIn.DataAvailableEventArgs.Offset
+- uid: SilverCraft.CSCore.SoundIn.DataAvailableEventArgs.Format*
+  commentId: Overload:SilverCraft.CSCore.SoundIn.DataAvailableEventArgs.Format
+  href: SilverCraft.CSCore.SoundIn.DataAvailableEventArgs.html#SilverCraft_CSCore_SoundIn_DataAvailableEventArgs_Format
+  name: Format
+  nameWithType: DataAvailableEventArgs.Format
+  fullName: SilverCraft.CSCore.SoundIn.DataAvailableEventArgs.Format
+- uid: SilverCraft.CSCore.WaveFormat
+  commentId: T:SilverCraft.CSCore.WaveFormat
+  parent: SilverCraft.CSCore
+  href: SilverCraft.CSCore.WaveFormat.html
+  name: WaveFormat
+  nameWithType: WaveFormat
+  fullName: SilverCraft.CSCore.WaveFormat
+- uid: SilverCraft.CSCore.SoundIn.DataAvailableEventArgs
+  commentId: T:SilverCraft.CSCore.SoundIn.DataAvailableEventArgs
+  href: SilverCraft.CSCore.SoundIn.DataAvailableEventArgs.html
+  name: DataAvailableEventArgs
+  nameWithType: DataAvailableEventArgs
+  fullName: SilverCraft.CSCore.SoundIn.DataAvailableEventArgs
+- uid: System.ArgumentNullException
+  commentId: T:System.ArgumentNullException
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.argumentnullexception
+  name: ArgumentNullException
+  nameWithType: ArgumentNullException
+  fullName: System.ArgumentNullException
+- uid: System.ArgumentOutOfRangeException
+  commentId: T:System.ArgumentOutOfRangeException
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.argumentoutofrangeexception
+  name: ArgumentOutOfRangeException
+  nameWithType: ArgumentOutOfRangeException
+  fullName: System.ArgumentOutOfRangeException
+- uid: SilverCraft.CSCore.SoundIn.DataAvailableEventArgs.#ctor*
+  commentId: Overload:SilverCraft.CSCore.SoundIn.DataAvailableEventArgs.#ctor
+  href: SilverCraft.CSCore.SoundIn.DataAvailableEventArgs.html#SilverCraft_CSCore_SoundIn_DataAvailableEventArgs__ctor_System_Byte___System_Int32_System_Int32_SilverCraft_CSCore_WaveFormat_
+  name: DataAvailableEventArgs
+  nameWithType: DataAvailableEventArgs.DataAvailableEventArgs
+  fullName: SilverCraft.CSCore.SoundIn.DataAvailableEventArgs.DataAvailableEventArgs
+  nameWithType.vb: DataAvailableEventArgs.New
+  fullName.vb: SilverCraft.CSCore.SoundIn.DataAvailableEventArgs.New
+  name.vb: New

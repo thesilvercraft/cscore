@@ -1,0 +1,23 @@
+### YamlMime:ManagedReference
+items:
+- uid: SilverCraft.CSCore.OpenMPT
+  commentId: N:SilverCraft.CSCore.OpenMPT
+  id: SilverCraft.CSCore.OpenMPT
+  children:
+  - SilverCraft.CSCore.OpenMPT.OpenMptWaveStream
+  langs:
+  - csharp
+  - vb
+  name: SilverCraft.CSCore.OpenMPT
+  nameWithType: SilverCraft.CSCore.OpenMPT
+  fullName: SilverCraft.CSCore.OpenMPT
+  type: Namespace
+  assemblies:
+  - SilverCraft.OpenMPT
+references:
+- uid: SilverCraft.CSCore.OpenMPT.OpenMptWaveStream
+  commentId: T:SilverCraft.CSCore.OpenMPT.OpenMptWaveStream
+  href: SilverCraft.CSCore.OpenMPT.OpenMptWaveStream.html
+  name: OpenMptWaveStream
+  nameWithType: OpenMptWaveStream
+  fullName: SilverCraft.CSCore.OpenMPT.OpenMptWaveStream

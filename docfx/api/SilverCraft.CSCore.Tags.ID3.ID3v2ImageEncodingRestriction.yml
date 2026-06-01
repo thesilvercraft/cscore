@@ -1,0 +1,128 @@
+### YamlMime:ManagedReference
+items:
+- uid: SilverCraft.CSCore.Tags.ID3.ID3v2ImageEncodingRestriction
+  commentId: T:SilverCraft.CSCore.Tags.ID3.ID3v2ImageEncodingRestriction
+  id: ID3v2ImageEncodingRestriction
+  parent: SilverCraft.CSCore.Tags.ID3
+  children:
+  - SilverCraft.CSCore.Tags.ID3.ID3v2ImageEncodingRestriction.NoRestrictions
+  - SilverCraft.CSCore.Tags.ID3.ID3v2ImageEncodingRestriction.PngOrJpegOnly
+  langs:
+  - csharp
+  - vb
+  name: ID3v2ImageEncodingRestriction
+  nameWithType: ID3v2ImageEncodingRestriction
+  fullName: SilverCraft.CSCore.Tags.ID3.ID3v2ImageEncodingRestriction
+  type: Enum
+  source:
+    remote:
+      path: SilverCraft.CSCore/Tags/ID3/ID3v2ImageEncodingRestriction.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: ID3v2ImageEncodingRestriction
+    path: ../SilverCraft.CSCore/Tags/ID3/ID3v2ImageEncodingRestriction.cs
+    startLine: 2
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Tags.ID3
+  syntax:
+    content: public enum ID3v2ImageEncodingRestriction
+    content.vb: Public Enum ID3v2ImageEncodingRestriction
+- uid: SilverCraft.CSCore.Tags.ID3.ID3v2ImageEncodingRestriction.NoRestrictions
+  commentId: F:SilverCraft.CSCore.Tags.ID3.ID3v2ImageEncodingRestriction.NoRestrictions
+  id: NoRestrictions
+  parent: SilverCraft.CSCore.Tags.ID3.ID3v2ImageEncodingRestriction
+  langs:
+  - csharp
+  - vb
+  name: NoRestrictions
+  nameWithType: ID3v2ImageEncodingRestriction.NoRestrictions
+  fullName: SilverCraft.CSCore.Tags.ID3.ID3v2ImageEncodingRestriction.NoRestrictions
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/Tags/ID3/ID3v2ImageEncodingRestriction.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: NoRestrictions
+    path: ../SilverCraft.CSCore/Tags/ID3/ID3v2ImageEncodingRestriction.cs
+    startLine: 4
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Tags.ID3
+  syntax:
+    content: NoRestrictions = 0
+    return:
+      type: SilverCraft.CSCore.Tags.ID3.ID3v2ImageEncodingRestriction
+- uid: SilverCraft.CSCore.Tags.ID3.ID3v2ImageEncodingRestriction.PngOrJpegOnly
+  commentId: F:SilverCraft.CSCore.Tags.ID3.ID3v2ImageEncodingRestriction.PngOrJpegOnly
+  id: PngOrJpegOnly
+  parent: SilverCraft.CSCore.Tags.ID3.ID3v2ImageEncodingRestriction
+  langs:
+  - csharp
+  - vb
+  name: PngOrJpegOnly
+  nameWithType: ID3v2ImageEncodingRestriction.PngOrJpegOnly
+  fullName: SilverCraft.CSCore.Tags.ID3.ID3v2ImageEncodingRestriction.PngOrJpegOnly
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/Tags/ID3/ID3v2ImageEncodingRestriction.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: PngOrJpegOnly
+    path: ../SilverCraft.CSCore/Tags/ID3/ID3v2ImageEncodingRestriction.cs
+    startLine: 5
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Tags.ID3
+  syntax:
+    content: PngOrJpegOnly = 4
+    return:
+      type: SilverCraft.CSCore.Tags.ID3.ID3v2ImageEncodingRestriction
+references:
+- uid: SilverCraft.CSCore.Tags.ID3
+  commentId: N:SilverCraft.CSCore.Tags.ID3
+  href: SilverCraft.html
+  name: SilverCraft.CSCore.Tags.ID3
+  nameWithType: SilverCraft.CSCore.Tags.ID3
+  fullName: SilverCraft.CSCore.Tags.ID3
+  spec.csharp:
+  - uid: SilverCraft
+    name: SilverCraft
+    href: SilverCraft.html
+  - name: .
+  - uid: SilverCraft.CSCore
+    name: CSCore
+    href: SilverCraft.CSCore.html
+  - name: .
+  - uid: SilverCraft.CSCore.Tags
+    name: Tags
+    href: SilverCraft.CSCore.Tags.html
+  - name: .
+  - uid: SilverCraft.CSCore.Tags.ID3
+    name: ID3
+    href: SilverCraft.CSCore.Tags.ID3.html
+  spec.vb:
+  - uid: SilverCraft
+    name: SilverCraft
+    href: SilverCraft.html
+  - name: .
+  - uid: SilverCraft.CSCore
+    name: CSCore
+    href: SilverCraft.CSCore.html
+  - name: .
+  - uid: SilverCraft.CSCore.Tags
+    name: Tags
+    href: SilverCraft.CSCore.Tags.html
+  - name: .
+  - uid: SilverCraft.CSCore.Tags.ID3
+    name: ID3
+    href: SilverCraft.CSCore.Tags.ID3.html
+- uid: SilverCraft.CSCore.Tags.ID3.ID3v2ImageEncodingRestriction
+  commentId: T:SilverCraft.CSCore.Tags.ID3.ID3v2ImageEncodingRestriction
+  parent: SilverCraft.CSCore.Tags.ID3
+  href: SilverCraft.CSCore.Tags.ID3.ID3v2ImageEncodingRestriction.html
+  name: ID3v2ImageEncodingRestriction
+  nameWithType: ID3v2ImageEncodingRestriction
+  fullName: SilverCraft.CSCore.Tags.ID3.ID3v2ImageEncodingRestriction

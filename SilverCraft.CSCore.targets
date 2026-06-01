@@ -5,7 +5,7 @@
         <Nullable>enable</Nullable>
         <Configurations>Debug;Release</Configurations>
         <LangVersion>latest</LangVersion>
-        <VersionPrefix>0.1.3</VersionPrefix>
+        <VersionPrefix>0.1.4</VersionPrefix>
         <Optimize>True</Optimize>
         <DebugType>Portable</DebugType>
         <PreserveCompilationContext>false</PreserveCompilationContext>
@@ -26,10 +26,14 @@
         <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
         <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
         <PackageReleaseNotes>Fix flac memory leak and portaudio</PackageReleaseNotes>
+        <PackageIcon>cscore-square-notext.png</PackageIcon>
     </PropertyGroup>
     <PropertyGroup Condition="'$(Configuration)' == 'Debug'">
         <Optimize>False</Optimize>
     </PropertyGroup>
+    <ItemGroup>
+        <None Include="..\cscore-square-notext.png" Pack="true" PackagePath="\"/>
+    </ItemGroup>
     <ItemGroup>
         <PackageReference Include="DotNet.ReproducibleBuilds" Version="1.1.1" PrivateAssets="All" />
     </ItemGroup>

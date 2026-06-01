@@ -1,0 +1,996 @@
+### YamlMime:ManagedReference
+items:
+- uid: SilverCraft.CSCore.SoundOut.AL.ALContext
+  commentId: T:SilverCraft.CSCore.SoundOut.AL.ALContext
+  id: ALContext
+  parent: SilverCraft.CSCore.SoundOut.AL
+  children:
+  - SilverCraft.CSCore.SoundOut.AL.ALContext.#ctor(SilverCraft.CSCore.SoundOut.AL.ALDevice)
+  - SilverCraft.CSCore.SoundOut.AL.ALContext.#ctor(System.IntPtr)
+  - SilverCraft.CSCore.SoundOut.AL.ALContext.CurrentContextHandle
+  - SilverCraft.CSCore.SoundOut.AL.ALContext.Dispose
+  - SilverCraft.CSCore.SoundOut.AL.ALContext.Dispose(System.Boolean)
+  - SilverCraft.CSCore.SoundOut.AL.ALContext.Finalize
+  - SilverCraft.CSCore.SoundOut.AL.ALContext.Handle
+  - SilverCraft.CSCore.SoundOut.AL.ALContext.LockContext
+  - SilverCraft.CSCore.SoundOut.AL.ALContext.MakeCurrent
+  - SilverCraft.CSCore.SoundOut.AL.ALContext.Supports32Float
+  - SilverCraft.CSCore.SoundOut.AL.ALContext.Supports64Double
+  langs:
+  - csharp
+  - vb
+  name: ALContext
+  nameWithType: ALContext
+  fullName: SilverCraft.CSCore.SoundOut.AL.ALContext
+  type: Class
+  source:
+    remote:
+      path: SilverCraft.CSCore/SoundOut/AL/ALContext.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: ALContext
+    path: ../SilverCraft.CSCore/SoundOut/AL/ALContext.cs
+    startLine: 5
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.SoundOut.AL
+  summary: Represents an OpenAL Context.
+  example: []
+  syntax:
+    content: 'public class ALContext : IDisposable'
+    content.vb: Public Class ALContext Implements IDisposable
+  inheritance:
+  - System.Object
+  implements:
+  - System.IDisposable
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  extensionMethods:
+  - SilverCraft.CSCore.SoundOut.AL.ALContext.SilverCraft.CSCore.FluentExtensions.Synchronized``2
+- uid: SilverCraft.CSCore.SoundOut.AL.ALContext.CurrentContextHandle
+  commentId: P:SilverCraft.CSCore.SoundOut.AL.ALContext.CurrentContextHandle
+  id: CurrentContextHandle
+  parent: SilverCraft.CSCore.SoundOut.AL.ALContext
+  langs:
+  - csharp
+  - vb
+  name: CurrentContextHandle
+  nameWithType: ALContext.CurrentContextHandle
+  fullName: SilverCraft.CSCore.SoundOut.AL.ALContext.CurrentContextHandle
+  type: Property
+  source:
+    remote:
+      path: SilverCraft.CSCore/SoundOut/AL/ALContext.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: CurrentContextHandle
+    path: ../SilverCraft.CSCore/SoundOut/AL/ALContext.cs
+    startLine: 15
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.SoundOut.AL
+  summary: Gets the current context handle.
+  example: []
+  syntax:
+    content: public static nint CurrentContextHandle { get; }
+    parameters: []
+    return:
+      type: System.IntPtr
+    content.vb: Public Shared ReadOnly Property CurrentContextHandle As IntPtr
+  overload: SilverCraft.CSCore.SoundOut.AL.ALContext.CurrentContextHandle*
+- uid: SilverCraft.CSCore.SoundOut.AL.ALContext.Handle
+  commentId: P:SilverCraft.CSCore.SoundOut.AL.ALContext.Handle
+  id: Handle
+  parent: SilverCraft.CSCore.SoundOut.AL.ALContext
+  langs:
+  - csharp
+  - vb
+  name: Handle
+  nameWithType: ALContext.Handle
+  fullName: SilverCraft.CSCore.SoundOut.AL.ALContext.Handle
+  type: Property
+  source:
+    remote:
+      path: SilverCraft.CSCore/SoundOut/AL/ALContext.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: Handle
+    path: ../SilverCraft.CSCore/SoundOut/AL/ALContext.cs
+    startLine: 20
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.SoundOut.AL
+  summary: Gets the handle of the context.
+  example: []
+  syntax:
+    content: public nint Handle { get; }
+    parameters: []
+    return:
+      type: System.IntPtr
+    content.vb: Public Property Handle As IntPtr
+  overload: SilverCraft.CSCore.SoundOut.AL.ALContext.Handle*
+- uid: SilverCraft.CSCore.SoundOut.AL.ALContext.Supports32Float
+  commentId: P:SilverCraft.CSCore.SoundOut.AL.ALContext.Supports32Float
+  id: Supports32Float
+  parent: SilverCraft.CSCore.SoundOut.AL.ALContext
+  langs:
+  - csharp
+  - vb
+  name: Supports32Float
+  nameWithType: ALContext.Supports32Float
+  fullName: SilverCraft.CSCore.SoundOut.AL.ALContext.Supports32Float
+  type: Property
+  source:
+    remote:
+      path: SilverCraft.CSCore/SoundOut/AL/ALContext.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: Supports32Float
+    path: ../SilverCraft.CSCore/SoundOut/AL/ALContext.cs
+    startLine: 28
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.SoundOut.AL
+  summary: Gets a value indicating whether 32 bit float audio is supported.
+  example: []
+  syntax:
+    content: public bool Supports32Float { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+      description: <code>true</code> if 32 bit float audio is supported; otherwise, <code>false</code>.
+    content.vb: Public ReadOnly Property Supports32Float As Boolean
+  overload: SilverCraft.CSCore.SoundOut.AL.ALContext.Supports32Float*
+- uid: SilverCraft.CSCore.SoundOut.AL.ALContext.Supports64Double
+  commentId: P:SilverCraft.CSCore.SoundOut.AL.ALContext.Supports64Double
+  id: Supports64Double
+  parent: SilverCraft.CSCore.SoundOut.AL.ALContext
+  langs:
+  - csharp
+  - vb
+  name: Supports64Double
+  nameWithType: ALContext.Supports64Double
+  fullName: SilverCraft.CSCore.SoundOut.AL.ALContext.Supports64Double
+  type: Property
+  source:
+    remote:
+      path: SilverCraft.CSCore/SoundOut/AL/ALContext.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: Supports64Double
+    path: ../SilverCraft.CSCore/SoundOut/AL/ALContext.cs
+    startLine: 44
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.SoundOut.AL
+  summary: Gets a value indicating whether 64 bit double audio is supported.
+  example: []
+  syntax:
+    content: public bool Supports64Double { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+      description: <code>true</code> if 64 bit double audio is supported; otherwise, <code>false</code>.
+    content.vb: Public ReadOnly Property Supports64Double As Boolean
+  overload: SilverCraft.CSCore.SoundOut.AL.ALContext.Supports64Double*
+- uid: SilverCraft.CSCore.SoundOut.AL.ALContext.#ctor(SilverCraft.CSCore.SoundOut.AL.ALDevice)
+  commentId: M:SilverCraft.CSCore.SoundOut.AL.ALContext.#ctor(SilverCraft.CSCore.SoundOut.AL.ALDevice)
+  id: '#ctor(SilverCraft.CSCore.SoundOut.AL.ALDevice)'
+  parent: SilverCraft.CSCore.SoundOut.AL.ALContext
+  langs:
+  - csharp
+  - vb
+  name: ALContext(ALDevice)
+  nameWithType: ALContext.ALContext(ALDevice)
+  fullName: SilverCraft.CSCore.SoundOut.AL.ALContext.ALContext(SilverCraft.CSCore.SoundOut.AL.ALDevice)
+  type: Constructor
+  source:
+    remote:
+      path: SilverCraft.CSCore/SoundOut/AL/ALContext.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: .ctor
+    path: ../SilverCraft.CSCore/SoundOut/AL/ALContext.cs
+    startLine: 60
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.SoundOut.AL
+  summary: Initializes a new instance of the <xref href="SilverCraft.CSCore.SoundOut.AL.ALContext" data-throw-if-not-resolved="false"></xref> class.
+  example: []
+  syntax:
+    content: public ALContext(ALDevice device)
+    parameters:
+    - id: device
+      type: SilverCraft.CSCore.SoundOut.AL.ALDevice
+      description: The device to create a context for.
+    content.vb: Public Sub New(device As ALDevice)
+  overload: SilverCraft.CSCore.SoundOut.AL.ALContext.#ctor*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: device
+  - type: SilverCraft.CSCore.SoundOut.AL.ALException
+    commentId: T:SilverCraft.CSCore.SoundOut.AL.ALException
+    description: Could not create ALContext.
+  nameWithType.vb: ALContext.New(ALDevice)
+  fullName.vb: SilverCraft.CSCore.SoundOut.AL.ALContext.New(SilverCraft.CSCore.SoundOut.AL.ALDevice)
+  name.vb: New(ALDevice)
+- uid: SilverCraft.CSCore.SoundOut.AL.ALContext.#ctor(System.IntPtr)
+  commentId: M:SilverCraft.CSCore.SoundOut.AL.ALContext.#ctor(System.IntPtr)
+  id: '#ctor(System.IntPtr)'
+  parent: SilverCraft.CSCore.SoundOut.AL.ALContext
+  langs:
+  - csharp
+  - vb
+  name: ALContext(nint)
+  nameWithType: ALContext.ALContext(nint)
+  fullName: SilverCraft.CSCore.SoundOut.AL.ALContext.ALContext(nint)
+  type: Constructor
+  source:
+    remote:
+      path: SilverCraft.CSCore/SoundOut/AL/ALContext.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: .ctor
+    path: ../SilverCraft.CSCore/SoundOut/AL/ALContext.cs
+    startLine: 93
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.SoundOut.AL
+  summary: Initializes a new instance of the <xref href="SilverCraft.CSCore.SoundOut.AL.ALContext" data-throw-if-not-resolved="false"></xref> class.
+  example: []
+  syntax:
+    content: public ALContext(nint contextHandle)
+    parameters:
+    - id: contextHandle
+      type: System.IntPtr
+      description: The handle of the context.
+    content.vb: Public Sub New(contextHandle As IntPtr)
+  overload: SilverCraft.CSCore.SoundOut.AL.ALContext.#ctor*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: contextHandle
+  nameWithType.vb: ALContext.New(IntPtr)
+  fullName.vb: SilverCraft.CSCore.SoundOut.AL.ALContext.New(System.IntPtr)
+  name.vb: New(IntPtr)
+- uid: SilverCraft.CSCore.SoundOut.AL.ALContext.MakeCurrent
+  commentId: M:SilverCraft.CSCore.SoundOut.AL.ALContext.MakeCurrent
+  id: MakeCurrent
+  parent: SilverCraft.CSCore.SoundOut.AL.ALContext
+  langs:
+  - csharp
+  - vb
+  name: MakeCurrent()
+  nameWithType: ALContext.MakeCurrent()
+  fullName: SilverCraft.CSCore.SoundOut.AL.ALContext.MakeCurrent()
+  type: Method
+  source:
+    remote:
+      path: SilverCraft.CSCore/SoundOut/AL/ALContext.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: MakeCurrent
+    path: ../SilverCraft.CSCore/SoundOut/AL/ALContext.cs
+    startLine: 106
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.SoundOut.AL
+  summary: Makes the context the current context.
+  example: []
+  syntax:
+    content: public void MakeCurrent()
+    content.vb: Public Sub MakeCurrent()
+  overload: SilverCraft.CSCore.SoundOut.AL.ALContext.MakeCurrent*
+- uid: SilverCraft.CSCore.SoundOut.AL.ALContext.LockContext
+  commentId: M:SilverCraft.CSCore.SoundOut.AL.ALContext.LockContext
+  id: LockContext
+  parent: SilverCraft.CSCore.SoundOut.AL.ALContext
+  langs:
+  - csharp
+  - vb
+  name: LockContext()
+  nameWithType: ALContext.LockContext()
+  fullName: SilverCraft.CSCore.SoundOut.AL.ALContext.LockContext()
+  type: Method
+  source:
+    remote:
+      path: SilverCraft.CSCore/SoundOut/AL/ALContext.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: LockContext
+    path: ../SilverCraft.CSCore/SoundOut/AL/ALContext.cs
+    startLine: 127
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.SoundOut.AL
+  summary: >-
+    Makes the context the current context and locks it.
+
+    To unlock the current context, call the <xref href="SilverCraft.CSCore.SoundOut.AL.ALContext.ContextLock.Dispose" data-throw-if-not-resolved="false"></xref> method
+
+    of the returned <xref href="SilverCraft.CSCore.SoundOut.AL.ALContext.ContextLock" data-throw-if-not-resolved="false"></xref> object.
+  example: []
+  syntax:
+    content: public ALContext.ContextLock LockContext()
+    return:
+      type: SilverCraft.CSCore.SoundOut.AL.ALContext.ContextLock
+      description: >-
+        A <xref href="SilverCraft.CSCore.SoundOut.AL.ALContext.ContextLock" data-throw-if-not-resolved="false"></xref> object which represents the locked context.
+
+        Call its <xref href="SilverCraft.CSCore.SoundOut.AL.ALContext.ContextLock.Dispose" data-throw-if-not-resolved="false"></xref> method to release/unlock the context.
+    content.vb: Public Function LockContext() As ALContext.ContextLock
+  overload: SilverCraft.CSCore.SoundOut.AL.ALContext.LockContext*
+- uid: SilverCraft.CSCore.SoundOut.AL.ALContext.Finalize
+  commentId: M:SilverCraft.CSCore.SoundOut.AL.ALContext.Finalize
+  id: Finalize
+  parent: SilverCraft.CSCore.SoundOut.AL.ALContext
+  langs:
+  - csharp
+  - vb
+  name: ~ALContext()
+  nameWithType: ALContext.~ALContext()
+  fullName: SilverCraft.CSCore.SoundOut.AL.ALContext.~ALContext()
+  type: Method
+  source:
+    remote:
+      path: SilverCraft.CSCore/SoundOut/AL/ALContext.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: Finalize
+    path: ../SilverCraft.CSCore/SoundOut/AL/ALContext.cs
+    startLine: 135
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.SoundOut.AL
+  summary: Finalizes an instance of the <xref href="SilverCraft.CSCore.SoundOut.AL.ALContext" data-throw-if-not-resolved="false"></xref> class.
+  example: []
+  syntax:
+    content: protected ~ALContext()
+    content.vb: 'Protected '
+  overload: SilverCraft.CSCore.SoundOut.AL.ALContext.Finalize*
+  nameWithType.vb: ''
+  fullName.vb: ''
+  name.vb: ''
+- uid: SilverCraft.CSCore.SoundOut.AL.ALContext.Dispose
+  commentId: M:SilverCraft.CSCore.SoundOut.AL.ALContext.Dispose
+  id: Dispose
+  parent: SilverCraft.CSCore.SoundOut.AL.ALContext
+  langs:
+  - csharp
+  - vb
+  name: Dispose()
+  nameWithType: ALContext.Dispose()
+  fullName: SilverCraft.CSCore.SoundOut.AL.ALContext.Dispose()
+  type: Method
+  source:
+    remote:
+      path: SilverCraft.CSCore/SoundOut/AL/ALContext.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: Dispose
+    path: ../SilverCraft.CSCore/SoundOut/AL/ALContext.cs
+    startLine: 143
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.SoundOut.AL
+  summary: Releases the <xref href="SilverCraft.CSCore.SoundOut.AL.ALContext" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public void Dispose()
+    content.vb: Public Sub Dispose()
+  overload: SilverCraft.CSCore.SoundOut.AL.ALContext.Dispose*
+  implements:
+  - System.IDisposable.Dispose
+- uid: SilverCraft.CSCore.SoundOut.AL.ALContext.Dispose(System.Boolean)
+  commentId: M:SilverCraft.CSCore.SoundOut.AL.ALContext.Dispose(System.Boolean)
+  id: Dispose(System.Boolean)
+  parent: SilverCraft.CSCore.SoundOut.AL.ALContext
+  langs:
+  - csharp
+  - vb
+  name: Dispose(bool)
+  nameWithType: ALContext.Dispose(bool)
+  fullName: SilverCraft.CSCore.SoundOut.AL.ALContext.Dispose(bool)
+  type: Method
+  source:
+    remote:
+      path: SilverCraft.CSCore/SoundOut/AL/ALContext.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: Dispose
+    path: ../SilverCraft.CSCore/SoundOut/AL/ALContext.cs
+    startLine: 153
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.SoundOut.AL
+  summary: Releases the <xref href="SilverCraft.CSCore.SoundOut.AL.ALContext" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: protected void Dispose(bool disposing)
+    parameters:
+    - id: disposing
+      type: System.Boolean
+      description: <code>true</code> to release both managed and unmanaged resources; <code>false</code> to release only unmanaged resources.
+    content.vb: Protected Sub Dispose(disposing As Boolean)
+  overload: SilverCraft.CSCore.SoundOut.AL.ALContext.Dispose*
+  nameWithType.vb: ALContext.Dispose(Boolean)
+  fullName.vb: SilverCraft.CSCore.SoundOut.AL.ALContext.Dispose(Boolean)
+  name.vb: Dispose(Boolean)
+references:
+- uid: SilverCraft.CSCore.SoundOut.AL
+  commentId: N:SilverCraft.CSCore.SoundOut.AL
+  href: SilverCraft.html
+  name: SilverCraft.CSCore.SoundOut.AL
+  nameWithType: SilverCraft.CSCore.SoundOut.AL
+  fullName: SilverCraft.CSCore.SoundOut.AL
+  spec.csharp:
+  - uid: SilverCraft
+    name: SilverCraft
+    href: SilverCraft.html
+  - name: .
+  - uid: SilverCraft.CSCore
+    name: CSCore
+    href: SilverCraft.CSCore.html
+  - name: .
+  - uid: SilverCraft.CSCore.SoundOut
+    name: SoundOut
+    href: SilverCraft.CSCore.SoundOut.html
+  - name: .
+  - uid: SilverCraft.CSCore.SoundOut.AL
+    name: AL
+    href: SilverCraft.CSCore.SoundOut.AL.html
+  spec.vb:
+  - uid: SilverCraft
+    name: SilverCraft
+    href: SilverCraft.html
+  - name: .
+  - uid: SilverCraft.CSCore
+    name: CSCore
+    href: SilverCraft.CSCore.html
+  - name: .
+  - uid: SilverCraft.CSCore.SoundOut
+    name: SoundOut
+    href: SilverCraft.CSCore.SoundOut.html
+  - name: .
+  - uid: SilverCraft.CSCore.SoundOut.AL
+    name: AL
+    href: SilverCraft.CSCore.SoundOut.AL.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.IDisposable
+  commentId: T:System.IDisposable
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.idisposable
+  name: IDisposable
+  nameWithType: IDisposable
+  fullName: System.IDisposable
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: SilverCraft.CSCore.SoundOut.AL.ALContext.SilverCraft.CSCore.FluentExtensions.Synchronized``2
+  commentId: M:SilverCraft.CSCore.FluentExtensions.Synchronized``2(``0)
+  parent: SilverCraft.CSCore.FluentExtensions
+  definition: SilverCraft.CSCore.FluentExtensions.Synchronized``2(``0)
+  href: SilverCraft.CSCore.FluentExtensions.html#SilverCraft_CSCore_FluentExtensions_Synchronized__2___0_
+  name: Synchronized<ALContext, T>(ALContext)
+  nameWithType: FluentExtensions.Synchronized<ALContext, T>(ALContext)
+  fullName: SilverCraft.CSCore.FluentExtensions.Synchronized<SilverCraft.CSCore.SoundOut.AL.ALContext, T>(SilverCraft.CSCore.SoundOut.AL.ALContext)
+  nameWithType.vb: FluentExtensions.Synchronized(Of ALContext, T)(ALContext)
+  fullName.vb: SilverCraft.CSCore.FluentExtensions.Synchronized(Of SilverCraft.CSCore.SoundOut.AL.ALContext, T)(SilverCraft.CSCore.SoundOut.AL.ALContext)
+  name.vb: Synchronized(Of ALContext, T)(ALContext)
+  spec.csharp:
+  - uid: SilverCraft.CSCore.FluentExtensions.Synchronized``2(SilverCraft.CSCore.SoundOut.AL.ALContext)
+    name: Synchronized
+    href: SilverCraft.CSCore.FluentExtensions.html#SilverCraft_CSCore_FluentExtensions_Synchronized__2___0_
+  - name: <
+  - uid: SilverCraft.CSCore.SoundOut.AL.ALContext
+    name: ALContext
+    href: SilverCraft.CSCore.SoundOut.AL.ALContext.html
+  - name: ','
+  - name: " "
+  - name: T
+  - name: '>'
+  - name: (
+  - uid: SilverCraft.CSCore.SoundOut.AL.ALContext
+    name: ALContext
+    href: SilverCraft.CSCore.SoundOut.AL.ALContext.html
+  - name: )
+  spec.vb:
+  - uid: SilverCraft.CSCore.FluentExtensions.Synchronized``2(SilverCraft.CSCore.SoundOut.AL.ALContext)
+    name: Synchronized
+    href: SilverCraft.CSCore.FluentExtensions.html#SilverCraft_CSCore_FluentExtensions_Synchronized__2___0_
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: SilverCraft.CSCore.SoundOut.AL.ALContext
+    name: ALContext
+    href: SilverCraft.CSCore.SoundOut.AL.ALContext.html
+  - name: ','
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: SilverCraft.CSCore.SoundOut.AL.ALContext
+    name: ALContext
+    href: SilverCraft.CSCore.SoundOut.AL.ALContext.html
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: SilverCraft.CSCore.FluentExtensions.Synchronized``2(``0)
+  commentId: M:SilverCraft.CSCore.FluentExtensions.Synchronized``2(``0)
+  href: SilverCraft.CSCore.FluentExtensions.html#SilverCraft_CSCore_FluentExtensions_Synchronized__2___0_
+  name: Synchronized<TAudioSource, T>(TAudioSource)
+  nameWithType: FluentExtensions.Synchronized<TAudioSource, T>(TAudioSource)
+  fullName: SilverCraft.CSCore.FluentExtensions.Synchronized<TAudioSource, T>(TAudioSource)
+  nameWithType.vb: FluentExtensions.Synchronized(Of TAudioSource, T)(TAudioSource)
+  fullName.vb: SilverCraft.CSCore.FluentExtensions.Synchronized(Of TAudioSource, T)(TAudioSource)
+  name.vb: Synchronized(Of TAudioSource, T)(TAudioSource)
+  spec.csharp:
+  - uid: SilverCraft.CSCore.FluentExtensions.Synchronized``2(``0)
+    name: Synchronized
+    href: SilverCraft.CSCore.FluentExtensions.html#SilverCraft_CSCore_FluentExtensions_Synchronized__2___0_
+  - name: <
+  - name: TAudioSource
+  - name: ','
+  - name: " "
+  - name: T
+  - name: '>'
+  - name: (
+  - name: TAudioSource
+  - name: )
+  spec.vb:
+  - uid: SilverCraft.CSCore.FluentExtensions.Synchronized``2(``0)
+    name: Synchronized
+    href: SilverCraft.CSCore.FluentExtensions.html#SilverCraft_CSCore_FluentExtensions_Synchronized__2___0_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TAudioSource
+  - name: ','
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - name: TAudioSource
+  - name: )
+- uid: SilverCraft.CSCore.FluentExtensions
+  commentId: T:SilverCraft.CSCore.FluentExtensions
+  parent: SilverCraft.CSCore
+  href: SilverCraft.CSCore.FluentExtensions.html
+  name: FluentExtensions
+  nameWithType: FluentExtensions
+  fullName: SilverCraft.CSCore.FluentExtensions
+- uid: SilverCraft.CSCore
+  commentId: N:SilverCraft.CSCore
+  href: SilverCraft.html
+  name: SilverCraft.CSCore
+  nameWithType: SilverCraft.CSCore
+  fullName: SilverCraft.CSCore
+  spec.csharp:
+  - uid: SilverCraft
+    name: SilverCraft
+    href: SilverCraft.html
+  - name: .
+  - uid: SilverCraft.CSCore
+    name: CSCore
+    href: SilverCraft.CSCore.html
+  spec.vb:
+  - uid: SilverCraft
+    name: SilverCraft
+    href: SilverCraft.html
+  - name: .
+  - uid: SilverCraft.CSCore
+    name: CSCore
+    href: SilverCraft.CSCore.html
+- uid: SilverCraft.CSCore.SoundOut.AL.ALContext.CurrentContextHandle*
+  commentId: Overload:SilverCraft.CSCore.SoundOut.AL.ALContext.CurrentContextHandle
+  href: SilverCraft.CSCore.SoundOut.AL.ALContext.html#SilverCraft_CSCore_SoundOut_AL_ALContext_CurrentContextHandle
+  name: CurrentContextHandle
+  nameWithType: ALContext.CurrentContextHandle
+  fullName: SilverCraft.CSCore.SoundOut.AL.ALContext.CurrentContextHandle
+- uid: System.IntPtr
+  commentId: T:System.IntPtr
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.intptr
+  name: nint
+  nameWithType: nint
+  fullName: nint
+  nameWithType.vb: IntPtr
+  fullName.vb: System.IntPtr
+  name.vb: IntPtr
+- uid: SilverCraft.CSCore.SoundOut.AL.ALContext.Handle*
+  commentId: Overload:SilverCraft.CSCore.SoundOut.AL.ALContext.Handle
+  href: SilverCraft.CSCore.SoundOut.AL.ALContext.html#SilverCraft_CSCore_SoundOut_AL_ALContext_Handle
+  name: Handle
+  nameWithType: ALContext.Handle
+  fullName: SilverCraft.CSCore.SoundOut.AL.ALContext.Handle
+- uid: SilverCraft.CSCore.SoundOut.AL.ALContext.Supports32Float*
+  commentId: Overload:SilverCraft.CSCore.SoundOut.AL.ALContext.Supports32Float
+  href: SilverCraft.CSCore.SoundOut.AL.ALContext.html#SilverCraft_CSCore_SoundOut_AL_ALContext_Supports32Float
+  name: Supports32Float
+  nameWithType: ALContext.Supports32Float
+  fullName: SilverCraft.CSCore.SoundOut.AL.ALContext.Supports32Float
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: SilverCraft.CSCore.SoundOut.AL.ALContext.Supports64Double*
+  commentId: Overload:SilverCraft.CSCore.SoundOut.AL.ALContext.Supports64Double
+  href: SilverCraft.CSCore.SoundOut.AL.ALContext.html#SilverCraft_CSCore_SoundOut_AL_ALContext_Supports64Double
+  name: Supports64Double
+  nameWithType: ALContext.Supports64Double
+  fullName: SilverCraft.CSCore.SoundOut.AL.ALContext.Supports64Double
+- uid: SilverCraft.CSCore.SoundOut.AL.ALContext
+  commentId: T:SilverCraft.CSCore.SoundOut.AL.ALContext
+  parent: SilverCraft.CSCore.SoundOut.AL
+  href: SilverCraft.CSCore.SoundOut.AL.ALContext.html
+  name: ALContext
+  nameWithType: ALContext
+  fullName: SilverCraft.CSCore.SoundOut.AL.ALContext
+- uid: System.ArgumentNullException
+  commentId: T:System.ArgumentNullException
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.argumentnullexception
+  name: ArgumentNullException
+  nameWithType: ArgumentNullException
+  fullName: System.ArgumentNullException
+- uid: SilverCraft.CSCore.SoundOut.AL.ALException
+  commentId: T:SilverCraft.CSCore.SoundOut.AL.ALException
+  href: SilverCraft.CSCore.SoundOut.AL.ALException.html
+  name: ALException
+  nameWithType: ALException
+  fullName: SilverCraft.CSCore.SoundOut.AL.ALException
+- uid: SilverCraft.CSCore.SoundOut.AL.ALContext.#ctor*
+  commentId: Overload:SilverCraft.CSCore.SoundOut.AL.ALContext.#ctor
+  href: SilverCraft.CSCore.SoundOut.AL.ALContext.html#SilverCraft_CSCore_SoundOut_AL_ALContext__ctor_SilverCraft_CSCore_SoundOut_AL_ALDevice_
+  name: ALContext
+  nameWithType: ALContext.ALContext
+  fullName: SilverCraft.CSCore.SoundOut.AL.ALContext.ALContext
+  nameWithType.vb: ALContext.New
+  fullName.vb: SilverCraft.CSCore.SoundOut.AL.ALContext.New
+  name.vb: New
+- uid: SilverCraft.CSCore.SoundOut.AL.ALDevice
+  commentId: T:SilverCraft.CSCore.SoundOut.AL.ALDevice
+  parent: SilverCraft.CSCore.SoundOut.AL
+  href: SilverCraft.CSCore.SoundOut.AL.ALDevice.html
+  name: ALDevice
+  nameWithType: ALDevice
+  fullName: SilverCraft.CSCore.SoundOut.AL.ALDevice
+- uid: SilverCraft.CSCore.SoundOut.AL.ALContext.MakeCurrent*
+  commentId: Overload:SilverCraft.CSCore.SoundOut.AL.ALContext.MakeCurrent
+  href: SilverCraft.CSCore.SoundOut.AL.ALContext.html#SilverCraft_CSCore_SoundOut_AL_ALContext_MakeCurrent
+  name: MakeCurrent
+  nameWithType: ALContext.MakeCurrent
+  fullName: SilverCraft.CSCore.SoundOut.AL.ALContext.MakeCurrent
+- uid: SilverCraft.CSCore.SoundOut.AL.ALContext.ContextLock.Dispose
+  commentId: M:SilverCraft.CSCore.SoundOut.AL.ALContext.ContextLock.Dispose
+  href: SilverCraft.CSCore.SoundOut.AL.ALContext.ContextLock.html#SilverCraft_CSCore_SoundOut_AL_ALContext_ContextLock_Dispose
+  name: Dispose()
+  nameWithType: ALContext.ContextLock.Dispose()
+  fullName: SilverCraft.CSCore.SoundOut.AL.ALContext.ContextLock.Dispose()
+  spec.csharp:
+  - uid: SilverCraft.CSCore.SoundOut.AL.ALContext.ContextLock.Dispose
+    name: Dispose
+    href: SilverCraft.CSCore.SoundOut.AL.ALContext.ContextLock.html#SilverCraft_CSCore_SoundOut_AL_ALContext_ContextLock_Dispose
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: SilverCraft.CSCore.SoundOut.AL.ALContext.ContextLock.Dispose
+    name: Dispose
+    href: SilverCraft.CSCore.SoundOut.AL.ALContext.ContextLock.html#SilverCraft_CSCore_SoundOut_AL_ALContext_ContextLock_Dispose
+  - name: (
+  - name: )
+- uid: SilverCraft.CSCore.SoundOut.AL.ALContext.ContextLock
+  commentId: T:SilverCraft.CSCore.SoundOut.AL.ALContext.ContextLock
+  parent: SilverCraft.CSCore.SoundOut.AL
+  href: SilverCraft.CSCore.SoundOut.AL.ALContext.html
+  name: ALContext.ContextLock
+  nameWithType: ALContext.ContextLock
+  fullName: SilverCraft.CSCore.SoundOut.AL.ALContext.ContextLock
+  spec.csharp:
+  - uid: SilverCraft.CSCore.SoundOut.AL.ALContext
+    name: ALContext
+    href: SilverCraft.CSCore.SoundOut.AL.ALContext.html
+  - name: .
+  - uid: SilverCraft.CSCore.SoundOut.AL.ALContext.ContextLock
+    name: ContextLock
+    href: SilverCraft.CSCore.SoundOut.AL.ALContext.ContextLock.html
+  spec.vb:
+  - uid: SilverCraft.CSCore.SoundOut.AL.ALContext
+    name: ALContext
+    href: SilverCraft.CSCore.SoundOut.AL.ALContext.html
+  - name: .
+  - uid: SilverCraft.CSCore.SoundOut.AL.ALContext.ContextLock
+    name: ContextLock
+    href: SilverCraft.CSCore.SoundOut.AL.ALContext.ContextLock.html
+- uid: SilverCraft.CSCore.SoundOut.AL.ALContext.LockContext*
+  commentId: Overload:SilverCraft.CSCore.SoundOut.AL.ALContext.LockContext
+  href: SilverCraft.CSCore.SoundOut.AL.ALContext.html#SilverCraft_CSCore_SoundOut_AL_ALContext_LockContext
+  name: LockContext
+  nameWithType: ALContext.LockContext
+  fullName: SilverCraft.CSCore.SoundOut.AL.ALContext.LockContext
+- uid: SilverCraft.CSCore.SoundOut.AL.ALContext.Finalize*
+  commentId: Overload:SilverCraft.CSCore.SoundOut.AL.ALContext.Finalize
+  href: SilverCraft.CSCore.SoundOut.AL.ALContext.html#SilverCraft_CSCore_SoundOut_AL_ALContext_Finalize
+  name: ~ALContext
+  nameWithType: ALContext.~ALContext
+  fullName: SilverCraft.CSCore.SoundOut.AL.ALContext.~ALContext
+  spec.csharp:
+  - name: "~"
+  - uid: SilverCraft.CSCore.SoundOut.AL.ALContext.Finalize*
+    name: ALContext
+    href: SilverCraft.CSCore.SoundOut.AL.ALContext.html#SilverCraft_CSCore_SoundOut_AL_ALContext_Finalize
+- uid: SilverCraft.CSCore.SoundOut.AL.ALContext.Dispose*
+  commentId: Overload:SilverCraft.CSCore.SoundOut.AL.ALContext.Dispose
+  href: SilverCraft.CSCore.SoundOut.AL.ALContext.html#SilverCraft_CSCore_SoundOut_AL_ALContext_Dispose
+  name: Dispose
+  nameWithType: ALContext.Dispose
+  fullName: SilverCraft.CSCore.SoundOut.AL.ALContext.Dispose
+- uid: System.IDisposable.Dispose
+  commentId: M:System.IDisposable.Dispose
+  parent: System.IDisposable
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.idisposable.dispose
+  name: Dispose()
+  nameWithType: IDisposable.Dispose()
+  fullName: System.IDisposable.Dispose()
+  spec.csharp:
+  - uid: System.IDisposable.Dispose
+    name: Dispose
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.idisposable.dispose
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.IDisposable.Dispose
+    name: Dispose
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.idisposable.dispose
+  - name: (
+  - name: )

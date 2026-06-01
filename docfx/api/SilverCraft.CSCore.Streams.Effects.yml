@@ -1,0 +1,85 @@
+### YamlMime:ManagedReference
+items:
+- uid: SilverCraft.CSCore.Streams.Effects
+  commentId: N:SilverCraft.CSCore.Streams.Effects
+  id: SilverCraft.CSCore.Streams.Effects
+  children:
+  - SilverCraft.CSCore.Streams.Effects.Equalizer
+  - SilverCraft.CSCore.Streams.Effects.EqualizerChannelFilter
+  - SilverCraft.CSCore.Streams.Effects.EqualizerFilter
+  - SilverCraft.CSCore.Streams.Effects.PitchShifter
+  langs:
+  - csharp
+  - vb
+  name: SilverCraft.CSCore.Streams.Effects
+  nameWithType: SilverCraft.CSCore.Streams.Effects
+  fullName: SilverCraft.CSCore.Streams.Effects
+  type: Namespace
+  assemblies:
+  - SilverCraft.CSCore
+references:
+- uid: SilverCraft.CSCore.Streams.Effects.Equalizer
+  commentId: T:SilverCraft.CSCore.Streams.Effects.Equalizer
+  parent: SilverCraft.CSCore.Streams.Effects
+  href: SilverCraft.CSCore.Streams.Effects.Equalizer.html
+  name: Equalizer
+  nameWithType: Equalizer
+  fullName: SilverCraft.CSCore.Streams.Effects.Equalizer
+- uid: SilverCraft.CSCore.Streams.Effects.EqualizerChannelFilter
+  commentId: T:SilverCraft.CSCore.Streams.Effects.EqualizerChannelFilter
+  parent: SilverCraft.CSCore.Streams.Effects
+  href: SilverCraft.CSCore.Streams.Effects.EqualizerChannelFilter.html
+  name: EqualizerChannelFilter
+  nameWithType: EqualizerChannelFilter
+  fullName: SilverCraft.CSCore.Streams.Effects.EqualizerChannelFilter
+- uid: SilverCraft.CSCore.Streams.Effects.EqualizerFilter
+  commentId: T:SilverCraft.CSCore.Streams.Effects.EqualizerFilter
+  parent: SilverCraft.CSCore.Streams.Effects
+  href: SilverCraft.CSCore.Streams.Effects.EqualizerFilter.html
+  name: EqualizerFilter
+  nameWithType: EqualizerFilter
+  fullName: SilverCraft.CSCore.Streams.Effects.EqualizerFilter
+- uid: SilverCraft.CSCore.Streams.Effects.PitchShifter
+  commentId: T:SilverCraft.CSCore.Streams.Effects.PitchShifter
+  href: SilverCraft.CSCore.Streams.Effects.PitchShifter.html
+  name: PitchShifter
+  nameWithType: PitchShifter
+  fullName: SilverCraft.CSCore.Streams.Effects.PitchShifter
+- uid: SilverCraft.CSCore.Streams.Effects
+  commentId: N:SilverCraft.CSCore.Streams.Effects
+  href: SilverCraft.html
+  name: SilverCraft.CSCore.Streams.Effects
+  nameWithType: SilverCraft.CSCore.Streams.Effects
+  fullName: SilverCraft.CSCore.Streams.Effects
+  spec.csharp:
+  - uid: SilverCraft
+    name: SilverCraft
+    href: SilverCraft.html
+  - name: .
+  - uid: SilverCraft.CSCore
+    name: CSCore
+    href: SilverCraft.CSCore.html
+  - name: .
+  - uid: SilverCraft.CSCore.Streams
+    name: Streams
+    href: SilverCraft.CSCore.Streams.html
+  - name: .
+  - uid: SilverCraft.CSCore.Streams.Effects
+    name: Effects
+    href: SilverCraft.CSCore.Streams.Effects.html
+  spec.vb:
+  - uid: SilverCraft
+    name: SilverCraft
+    href: SilverCraft.html
+  - name: .
+  - uid: SilverCraft.CSCore
+    name: CSCore
+    href: SilverCraft.CSCore.html
+  - name: .
+  - uid: SilverCraft.CSCore.Streams
+    name: Streams
+    href: SilverCraft.CSCore.Streams.html
+  - name: .
+  - uid: SilverCraft.CSCore.Streams.Effects
+    name: Effects
+    href: SilverCraft.CSCore.Streams.Effects.html

@@ -1,0 +1,182 @@
+### YamlMime:ManagedReference
+items:
+- uid: SilverCraft.CSCore.Tags.ID3.ID3v2TagSizeRestriction
+  commentId: T:SilverCraft.CSCore.Tags.ID3.ID3v2TagSizeRestriction
+  id: ID3v2TagSizeRestriction
+  parent: SilverCraft.CSCore.Tags.ID3
+  children:
+  - SilverCraft.CSCore.Tags.ID3.ID3v2TagSizeRestriction.Less128FramesAnd1MB
+  - SilverCraft.CSCore.Tags.ID3.ID3v2TagSizeRestriction.Less32FramesAnd40KB
+  - SilverCraft.CSCore.Tags.ID3.ID3v2TagSizeRestriction.Less32FramesAnd4KB
+  - SilverCraft.CSCore.Tags.ID3.ID3v2TagSizeRestriction.Less64FramesAnd128KB
+  langs:
+  - csharp
+  - vb
+  name: ID3v2TagSizeRestriction
+  nameWithType: ID3v2TagSizeRestriction
+  fullName: SilverCraft.CSCore.Tags.ID3.ID3v2TagSizeRestriction
+  type: Enum
+  source:
+    remote:
+      path: SilverCraft.CSCore/Tags/ID3/ID3v2TagSizeRestriction.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: ID3v2TagSizeRestriction
+    path: ../SilverCraft.CSCore/Tags/ID3/ID3v2TagSizeRestriction.cs
+    startLine: 2
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Tags.ID3
+  syntax:
+    content: public enum ID3v2TagSizeRestriction
+    content.vb: Public Enum ID3v2TagSizeRestriction
+- uid: SilverCraft.CSCore.Tags.ID3.ID3v2TagSizeRestriction.Less128FramesAnd1MB
+  commentId: F:SilverCraft.CSCore.Tags.ID3.ID3v2TagSizeRestriction.Less128FramesAnd1MB
+  id: Less128FramesAnd1MB
+  parent: SilverCraft.CSCore.Tags.ID3.ID3v2TagSizeRestriction
+  langs:
+  - csharp
+  - vb
+  name: Less128FramesAnd1MB
+  nameWithType: ID3v2TagSizeRestriction.Less128FramesAnd1MB
+  fullName: SilverCraft.CSCore.Tags.ID3.ID3v2TagSizeRestriction.Less128FramesAnd1MB
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/Tags/ID3/ID3v2TagSizeRestriction.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: Less128FramesAnd1MB
+    path: ../SilverCraft.CSCore/Tags/ID3/ID3v2TagSizeRestriction.cs
+    startLine: 4
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Tags.ID3
+  syntax:
+    content: Less128FramesAnd1MB = 0
+    return:
+      type: SilverCraft.CSCore.Tags.ID3.ID3v2TagSizeRestriction
+- uid: SilverCraft.CSCore.Tags.ID3.ID3v2TagSizeRestriction.Less64FramesAnd128KB
+  commentId: F:SilverCraft.CSCore.Tags.ID3.ID3v2TagSizeRestriction.Less64FramesAnd128KB
+  id: Less64FramesAnd128KB
+  parent: SilverCraft.CSCore.Tags.ID3.ID3v2TagSizeRestriction
+  langs:
+  - csharp
+  - vb
+  name: Less64FramesAnd128KB
+  nameWithType: ID3v2TagSizeRestriction.Less64FramesAnd128KB
+  fullName: SilverCraft.CSCore.Tags.ID3.ID3v2TagSizeRestriction.Less64FramesAnd128KB
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/Tags/ID3/ID3v2TagSizeRestriction.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: Less64FramesAnd128KB
+    path: ../SilverCraft.CSCore/Tags/ID3/ID3v2TagSizeRestriction.cs
+    startLine: 5
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Tags.ID3
+  syntax:
+    content: Less64FramesAnd128KB = 64
+    return:
+      type: SilverCraft.CSCore.Tags.ID3.ID3v2TagSizeRestriction
+- uid: SilverCraft.CSCore.Tags.ID3.ID3v2TagSizeRestriction.Less32FramesAnd40KB
+  commentId: F:SilverCraft.CSCore.Tags.ID3.ID3v2TagSizeRestriction.Less32FramesAnd40KB
+  id: Less32FramesAnd40KB
+  parent: SilverCraft.CSCore.Tags.ID3.ID3v2TagSizeRestriction
+  langs:
+  - csharp
+  - vb
+  name: Less32FramesAnd40KB
+  nameWithType: ID3v2TagSizeRestriction.Less32FramesAnd40KB
+  fullName: SilverCraft.CSCore.Tags.ID3.ID3v2TagSizeRestriction.Less32FramesAnd40KB
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/Tags/ID3/ID3v2TagSizeRestriction.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: Less32FramesAnd40KB
+    path: ../SilverCraft.CSCore/Tags/ID3/ID3v2TagSizeRestriction.cs
+    startLine: 6
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Tags.ID3
+  syntax:
+    content: Less32FramesAnd40KB = 128
+    return:
+      type: SilverCraft.CSCore.Tags.ID3.ID3v2TagSizeRestriction
+- uid: SilverCraft.CSCore.Tags.ID3.ID3v2TagSizeRestriction.Less32FramesAnd4KB
+  commentId: F:SilverCraft.CSCore.Tags.ID3.ID3v2TagSizeRestriction.Less32FramesAnd4KB
+  id: Less32FramesAnd4KB
+  parent: SilverCraft.CSCore.Tags.ID3.ID3v2TagSizeRestriction
+  langs:
+  - csharp
+  - vb
+  name: Less32FramesAnd4KB
+  nameWithType: ID3v2TagSizeRestriction.Less32FramesAnd4KB
+  fullName: SilverCraft.CSCore.Tags.ID3.ID3v2TagSizeRestriction.Less32FramesAnd4KB
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/Tags/ID3/ID3v2TagSizeRestriction.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: Less32FramesAnd4KB
+    path: ../SilverCraft.CSCore/Tags/ID3/ID3v2TagSizeRestriction.cs
+    startLine: 7
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Tags.ID3
+  syntax:
+    content: Less32FramesAnd4KB = 192
+    return:
+      type: SilverCraft.CSCore.Tags.ID3.ID3v2TagSizeRestriction
+references:
+- uid: SilverCraft.CSCore.Tags.ID3
+  commentId: N:SilverCraft.CSCore.Tags.ID3
+  href: SilverCraft.html
+  name: SilverCraft.CSCore.Tags.ID3
+  nameWithType: SilverCraft.CSCore.Tags.ID3
+  fullName: SilverCraft.CSCore.Tags.ID3
+  spec.csharp:
+  - uid: SilverCraft
+    name: SilverCraft
+    href: SilverCraft.html
+  - name: .
+  - uid: SilverCraft.CSCore
+    name: CSCore
+    href: SilverCraft.CSCore.html
+  - name: .
+  - uid: SilverCraft.CSCore.Tags
+    name: Tags
+    href: SilverCraft.CSCore.Tags.html
+  - name: .
+  - uid: SilverCraft.CSCore.Tags.ID3
+    name: ID3
+    href: SilverCraft.CSCore.Tags.ID3.html
+  spec.vb:
+  - uid: SilverCraft
+    name: SilverCraft
+    href: SilverCraft.html
+  - name: .
+  - uid: SilverCraft.CSCore
+    name: CSCore
+    href: SilverCraft.CSCore.html
+  - name: .
+  - uid: SilverCraft.CSCore.Tags
+    name: Tags
+    href: SilverCraft.CSCore.Tags.html
+  - name: .
+  - uid: SilverCraft.CSCore.Tags.ID3
+    name: ID3
+    href: SilverCraft.CSCore.Tags.ID3.html
+- uid: SilverCraft.CSCore.Tags.ID3.ID3v2TagSizeRestriction
+  commentId: T:SilverCraft.CSCore.Tags.ID3.ID3v2TagSizeRestriction
+  parent: SilverCraft.CSCore.Tags.ID3
+  href: SilverCraft.CSCore.Tags.ID3.ID3v2TagSizeRestriction.html
+  name: ID3v2TagSizeRestriction
+  nameWithType: ID3v2TagSizeRestriction
+  fullName: SilverCraft.CSCore.Tags.ID3.ID3v2TagSizeRestriction

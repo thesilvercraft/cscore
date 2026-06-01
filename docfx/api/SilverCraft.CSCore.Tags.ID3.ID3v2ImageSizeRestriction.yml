@@ -1,0 +1,182 @@
+### YamlMime:ManagedReference
+items:
+- uid: SilverCraft.CSCore.Tags.ID3.ID3v2ImageSizeRestriction
+  commentId: T:SilverCraft.CSCore.Tags.ID3.ID3v2ImageSizeRestriction
+  id: ID3v2ImageSizeRestriction
+  parent: SilverCraft.CSCore.Tags.ID3
+  children:
+  - SilverCraft.CSCore.Tags.ID3.ID3v2ImageSizeRestriction.Max256x256
+  - SilverCraft.CSCore.Tags.ID3.ID3v2ImageSizeRestriction.Max64x64
+  - SilverCraft.CSCore.Tags.ID3.ID3v2ImageSizeRestriction.NoRestrictions
+  - SilverCraft.CSCore.Tags.ID3.ID3v2ImageSizeRestriction.Only64x64
+  langs:
+  - csharp
+  - vb
+  name: ID3v2ImageSizeRestriction
+  nameWithType: ID3v2ImageSizeRestriction
+  fullName: SilverCraft.CSCore.Tags.ID3.ID3v2ImageSizeRestriction
+  type: Enum
+  source:
+    remote:
+      path: SilverCraft.CSCore/Tags/ID3/ID3v2ImageSizeRestriction.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: ID3v2ImageSizeRestriction
+    path: ../SilverCraft.CSCore/Tags/ID3/ID3v2ImageSizeRestriction.cs
+    startLine: 2
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Tags.ID3
+  syntax:
+    content: public enum ID3v2ImageSizeRestriction
+    content.vb: Public Enum ID3v2ImageSizeRestriction
+- uid: SilverCraft.CSCore.Tags.ID3.ID3v2ImageSizeRestriction.NoRestrictions
+  commentId: F:SilverCraft.CSCore.Tags.ID3.ID3v2ImageSizeRestriction.NoRestrictions
+  id: NoRestrictions
+  parent: SilverCraft.CSCore.Tags.ID3.ID3v2ImageSizeRestriction
+  langs:
+  - csharp
+  - vb
+  name: NoRestrictions
+  nameWithType: ID3v2ImageSizeRestriction.NoRestrictions
+  fullName: SilverCraft.CSCore.Tags.ID3.ID3v2ImageSizeRestriction.NoRestrictions
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/Tags/ID3/ID3v2ImageSizeRestriction.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: NoRestrictions
+    path: ../SilverCraft.CSCore/Tags/ID3/ID3v2ImageSizeRestriction.cs
+    startLine: 4
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Tags.ID3
+  syntax:
+    content: NoRestrictions = 0
+    return:
+      type: SilverCraft.CSCore.Tags.ID3.ID3v2ImageSizeRestriction
+- uid: SilverCraft.CSCore.Tags.ID3.ID3v2ImageSizeRestriction.Max256x256
+  commentId: F:SilverCraft.CSCore.Tags.ID3.ID3v2ImageSizeRestriction.Max256x256
+  id: Max256x256
+  parent: SilverCraft.CSCore.Tags.ID3.ID3v2ImageSizeRestriction
+  langs:
+  - csharp
+  - vb
+  name: Max256x256
+  nameWithType: ID3v2ImageSizeRestriction.Max256x256
+  fullName: SilverCraft.CSCore.Tags.ID3.ID3v2ImageSizeRestriction.Max256x256
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/Tags/ID3/ID3v2ImageSizeRestriction.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: Max256x256
+    path: ../SilverCraft.CSCore/Tags/ID3/ID3v2ImageSizeRestriction.cs
+    startLine: 5
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Tags.ID3
+  syntax:
+    content: Max256x256 = 1
+    return:
+      type: SilverCraft.CSCore.Tags.ID3.ID3v2ImageSizeRestriction
+- uid: SilverCraft.CSCore.Tags.ID3.ID3v2ImageSizeRestriction.Max64x64
+  commentId: F:SilverCraft.CSCore.Tags.ID3.ID3v2ImageSizeRestriction.Max64x64
+  id: Max64x64
+  parent: SilverCraft.CSCore.Tags.ID3.ID3v2ImageSizeRestriction
+  langs:
+  - csharp
+  - vb
+  name: Max64x64
+  nameWithType: ID3v2ImageSizeRestriction.Max64x64
+  fullName: SilverCraft.CSCore.Tags.ID3.ID3v2ImageSizeRestriction.Max64x64
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/Tags/ID3/ID3v2ImageSizeRestriction.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: Max64x64
+    path: ../SilverCraft.CSCore/Tags/ID3/ID3v2ImageSizeRestriction.cs
+    startLine: 6
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Tags.ID3
+  syntax:
+    content: Max64x64 = 2
+    return:
+      type: SilverCraft.CSCore.Tags.ID3.ID3v2ImageSizeRestriction
+- uid: SilverCraft.CSCore.Tags.ID3.ID3v2ImageSizeRestriction.Only64x64
+  commentId: F:SilverCraft.CSCore.Tags.ID3.ID3v2ImageSizeRestriction.Only64x64
+  id: Only64x64
+  parent: SilverCraft.CSCore.Tags.ID3.ID3v2ImageSizeRestriction
+  langs:
+  - csharp
+  - vb
+  name: Only64x64
+  nameWithType: ID3v2ImageSizeRestriction.Only64x64
+  fullName: SilverCraft.CSCore.Tags.ID3.ID3v2ImageSizeRestriction.Only64x64
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/Tags/ID3/ID3v2ImageSizeRestriction.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: Only64x64
+    path: ../SilverCraft.CSCore/Tags/ID3/ID3v2ImageSizeRestriction.cs
+    startLine: 7
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Tags.ID3
+  syntax:
+    content: Only64x64 = 3
+    return:
+      type: SilverCraft.CSCore.Tags.ID3.ID3v2ImageSizeRestriction
+references:
+- uid: SilverCraft.CSCore.Tags.ID3
+  commentId: N:SilverCraft.CSCore.Tags.ID3
+  href: SilverCraft.html
+  name: SilverCraft.CSCore.Tags.ID3
+  nameWithType: SilverCraft.CSCore.Tags.ID3
+  fullName: SilverCraft.CSCore.Tags.ID3
+  spec.csharp:
+  - uid: SilverCraft
+    name: SilverCraft
+    href: SilverCraft.html
+  - name: .
+  - uid: SilverCraft.CSCore
+    name: CSCore
+    href: SilverCraft.CSCore.html
+  - name: .
+  - uid: SilverCraft.CSCore.Tags
+    name: Tags
+    href: SilverCraft.CSCore.Tags.html
+  - name: .
+  - uid: SilverCraft.CSCore.Tags.ID3
+    name: ID3
+    href: SilverCraft.CSCore.Tags.ID3.html
+  spec.vb:
+  - uid: SilverCraft
+    name: SilverCraft
+    href: SilverCraft.html
+  - name: .
+  - uid: SilverCraft.CSCore
+    name: CSCore
+    href: SilverCraft.CSCore.html
+  - name: .
+  - uid: SilverCraft.CSCore.Tags
+    name: Tags
+    href: SilverCraft.CSCore.Tags.html
+  - name: .
+  - uid: SilverCraft.CSCore.Tags.ID3
+    name: ID3
+    href: SilverCraft.CSCore.Tags.ID3.html
+- uid: SilverCraft.CSCore.Tags.ID3.ID3v2ImageSizeRestriction
+  commentId: T:SilverCraft.CSCore.Tags.ID3.ID3v2ImageSizeRestriction
+  parent: SilverCraft.CSCore.Tags.ID3
+  href: SilverCraft.CSCore.Tags.ID3.ID3v2ImageSizeRestriction.html
+  name: ID3v2ImageSizeRestriction
+  nameWithType: ID3v2ImageSizeRestriction
+  fullName: SilverCraft.CSCore.Tags.ID3.ID3v2ImageSizeRestriction

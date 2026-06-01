@@ -1,0 +1,3237 @@
+### YamlMime:ManagedReference
+items:
+- uid: sndfile.SF_CUES._cue_points_e__FixedBuffer
+  commentId: T:sndfile.SF_CUES._cue_points_e__FixedBuffer
+  id: SF_CUES._cue_points_e__FixedBuffer
+  parent: sndfile
+  children:
+  - sndfile.SF_CUES._cue_points_e__FixedBuffer.AsSpan
+  - sndfile.SF_CUES._cue_points_e__FixedBuffer.Item(System.Int32)
+  - sndfile.SF_CUES._cue_points_e__FixedBuffer.e0
+  - sndfile.SF_CUES._cue_points_e__FixedBuffer.e1
+  - sndfile.SF_CUES._cue_points_e__FixedBuffer.e10
+  - sndfile.SF_CUES._cue_points_e__FixedBuffer.e11
+  - sndfile.SF_CUES._cue_points_e__FixedBuffer.e12
+  - sndfile.SF_CUES._cue_points_e__FixedBuffer.e13
+  - sndfile.SF_CUES._cue_points_e__FixedBuffer.e14
+  - sndfile.SF_CUES._cue_points_e__FixedBuffer.e15
+  - sndfile.SF_CUES._cue_points_e__FixedBuffer.e16
+  - sndfile.SF_CUES._cue_points_e__FixedBuffer.e17
+  - sndfile.SF_CUES._cue_points_e__FixedBuffer.e18
+  - sndfile.SF_CUES._cue_points_e__FixedBuffer.e19
+  - sndfile.SF_CUES._cue_points_e__FixedBuffer.e2
+  - sndfile.SF_CUES._cue_points_e__FixedBuffer.e20
+  - sndfile.SF_CUES._cue_points_e__FixedBuffer.e21
+  - sndfile.SF_CUES._cue_points_e__FixedBuffer.e22
+  - sndfile.SF_CUES._cue_points_e__FixedBuffer.e23
+  - sndfile.SF_CUES._cue_points_e__FixedBuffer.e24
+  - sndfile.SF_CUES._cue_points_e__FixedBuffer.e25
+  - sndfile.SF_CUES._cue_points_e__FixedBuffer.e26
+  - sndfile.SF_CUES._cue_points_e__FixedBuffer.e27
+  - sndfile.SF_CUES._cue_points_e__FixedBuffer.e28
+  - sndfile.SF_CUES._cue_points_e__FixedBuffer.e29
+  - sndfile.SF_CUES._cue_points_e__FixedBuffer.e3
+  - sndfile.SF_CUES._cue_points_e__FixedBuffer.e30
+  - sndfile.SF_CUES._cue_points_e__FixedBuffer.e31
+  - sndfile.SF_CUES._cue_points_e__FixedBuffer.e32
+  - sndfile.SF_CUES._cue_points_e__FixedBuffer.e33
+  - sndfile.SF_CUES._cue_points_e__FixedBuffer.e34
+  - sndfile.SF_CUES._cue_points_e__FixedBuffer.e35
+  - sndfile.SF_CUES._cue_points_e__FixedBuffer.e36
+  - sndfile.SF_CUES._cue_points_e__FixedBuffer.e37
+  - sndfile.SF_CUES._cue_points_e__FixedBuffer.e38
+  - sndfile.SF_CUES._cue_points_e__FixedBuffer.e39
+  - sndfile.SF_CUES._cue_points_e__FixedBuffer.e4
+  - sndfile.SF_CUES._cue_points_e__FixedBuffer.e40
+  - sndfile.SF_CUES._cue_points_e__FixedBuffer.e41
+  - sndfile.SF_CUES._cue_points_e__FixedBuffer.e42
+  - sndfile.SF_CUES._cue_points_e__FixedBuffer.e43
+  - sndfile.SF_CUES._cue_points_e__FixedBuffer.e44
+  - sndfile.SF_CUES._cue_points_e__FixedBuffer.e45
+  - sndfile.SF_CUES._cue_points_e__FixedBuffer.e46
+  - sndfile.SF_CUES._cue_points_e__FixedBuffer.e47
+  - sndfile.SF_CUES._cue_points_e__FixedBuffer.e48
+  - sndfile.SF_CUES._cue_points_e__FixedBuffer.e49
+  - sndfile.SF_CUES._cue_points_e__FixedBuffer.e5
+  - sndfile.SF_CUES._cue_points_e__FixedBuffer.e50
+  - sndfile.SF_CUES._cue_points_e__FixedBuffer.e51
+  - sndfile.SF_CUES._cue_points_e__FixedBuffer.e52
+  - sndfile.SF_CUES._cue_points_e__FixedBuffer.e53
+  - sndfile.SF_CUES._cue_points_e__FixedBuffer.e54
+  - sndfile.SF_CUES._cue_points_e__FixedBuffer.e55
+  - sndfile.SF_CUES._cue_points_e__FixedBuffer.e56
+  - sndfile.SF_CUES._cue_points_e__FixedBuffer.e57
+  - sndfile.SF_CUES._cue_points_e__FixedBuffer.e58
+  - sndfile.SF_CUES._cue_points_e__FixedBuffer.e59
+  - sndfile.SF_CUES._cue_points_e__FixedBuffer.e6
+  - sndfile.SF_CUES._cue_points_e__FixedBuffer.e60
+  - sndfile.SF_CUES._cue_points_e__FixedBuffer.e61
+  - sndfile.SF_CUES._cue_points_e__FixedBuffer.e62
+  - sndfile.SF_CUES._cue_points_e__FixedBuffer.e63
+  - sndfile.SF_CUES._cue_points_e__FixedBuffer.e64
+  - sndfile.SF_CUES._cue_points_e__FixedBuffer.e65
+  - sndfile.SF_CUES._cue_points_e__FixedBuffer.e66
+  - sndfile.SF_CUES._cue_points_e__FixedBuffer.e67
+  - sndfile.SF_CUES._cue_points_e__FixedBuffer.e68
+  - sndfile.SF_CUES._cue_points_e__FixedBuffer.e69
+  - sndfile.SF_CUES._cue_points_e__FixedBuffer.e7
+  - sndfile.SF_CUES._cue_points_e__FixedBuffer.e70
+  - sndfile.SF_CUES._cue_points_e__FixedBuffer.e71
+  - sndfile.SF_CUES._cue_points_e__FixedBuffer.e72
+  - sndfile.SF_CUES._cue_points_e__FixedBuffer.e73
+  - sndfile.SF_CUES._cue_points_e__FixedBuffer.e74
+  - sndfile.SF_CUES._cue_points_e__FixedBuffer.e75
+  - sndfile.SF_CUES._cue_points_e__FixedBuffer.e76
+  - sndfile.SF_CUES._cue_points_e__FixedBuffer.e77
+  - sndfile.SF_CUES._cue_points_e__FixedBuffer.e78
+  - sndfile.SF_CUES._cue_points_e__FixedBuffer.e79
+  - sndfile.SF_CUES._cue_points_e__FixedBuffer.e8
+  - sndfile.SF_CUES._cue_points_e__FixedBuffer.e80
+  - sndfile.SF_CUES._cue_points_e__FixedBuffer.e81
+  - sndfile.SF_CUES._cue_points_e__FixedBuffer.e82
+  - sndfile.SF_CUES._cue_points_e__FixedBuffer.e83
+  - sndfile.SF_CUES._cue_points_e__FixedBuffer.e84
+  - sndfile.SF_CUES._cue_points_e__FixedBuffer.e85
+  - sndfile.SF_CUES._cue_points_e__FixedBuffer.e86
+  - sndfile.SF_CUES._cue_points_e__FixedBuffer.e87
+  - sndfile.SF_CUES._cue_points_e__FixedBuffer.e88
+  - sndfile.SF_CUES._cue_points_e__FixedBuffer.e89
+  - sndfile.SF_CUES._cue_points_e__FixedBuffer.e9
+  - sndfile.SF_CUES._cue_points_e__FixedBuffer.e90
+  - sndfile.SF_CUES._cue_points_e__FixedBuffer.e91
+  - sndfile.SF_CUES._cue_points_e__FixedBuffer.e92
+  - sndfile.SF_CUES._cue_points_e__FixedBuffer.e93
+  - sndfile.SF_CUES._cue_points_e__FixedBuffer.e94
+  - sndfile.SF_CUES._cue_points_e__FixedBuffer.e95
+  - sndfile.SF_CUES._cue_points_e__FixedBuffer.e96
+  - sndfile.SF_CUES._cue_points_e__FixedBuffer.e97
+  - sndfile.SF_CUES._cue_points_e__FixedBuffer.e98
+  - sndfile.SF_CUES._cue_points_e__FixedBuffer.e99
+  langs:
+  - csharp
+  - vb
+  name: SF_CUES._cue_points_e__FixedBuffer
+  nameWithType: SF_CUES._cue_points_e__FixedBuffer
+  fullName: sndfile.SF_CUES._cue_points_e__FixedBuffer
+  type: Struct
+  source:
+    remote:
+      path: SilverCraft.SndFile/Native/SF_CUES.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: _cue_points_e__FixedBuffer
+    path: ../SilverCraft.SndFile/Native/SF_CUES.cs
+    startLine: 15
+  assemblies:
+  - SilverCraft.CSCore.SndFile
+  namespace: sndfile
+  syntax:
+    content: public struct SF_CUES._cue_points_e__FixedBuffer
+    content.vb: Public Structure SF_CUES._cue_points_e__FixedBuffer
+  inheritedMembers:
+  - System.ValueType.Equals(System.Object)
+  - System.ValueType.GetHashCode
+  - System.ValueType.ToString
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetType
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+- uid: sndfile.SF_CUES._cue_points_e__FixedBuffer.e0
+  commentId: F:sndfile.SF_CUES._cue_points_e__FixedBuffer.e0
+  id: e0
+  parent: sndfile.SF_CUES._cue_points_e__FixedBuffer
+  langs:
+  - csharp
+  - vb
+  name: e0
+  nameWithType: SF_CUES._cue_points_e__FixedBuffer.e0
+  fullName: sndfile.SF_CUES._cue_points_e__FixedBuffer.e0
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.SndFile/Native/SF_CUES.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: e0
+    path: ../SilverCraft.SndFile/Native/SF_CUES.cs
+    startLine: 17
+  assemblies:
+  - SilverCraft.CSCore.SndFile
+  namespace: sndfile
+  syntax:
+    content: public SF_CUE_POINT e0
+    return:
+      type: sndfile.SF_CUE_POINT
+    content.vb: Public e0 As SF_CUE_POINT
+- uid: sndfile.SF_CUES._cue_points_e__FixedBuffer.e1
+  commentId: F:sndfile.SF_CUES._cue_points_e__FixedBuffer.e1
+  id: e1
+  parent: sndfile.SF_CUES._cue_points_e__FixedBuffer
+  langs:
+  - csharp
+  - vb
+  name: e1
+  nameWithType: SF_CUES._cue_points_e__FixedBuffer.e1
+  fullName: sndfile.SF_CUES._cue_points_e__FixedBuffer.e1
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.SndFile/Native/SF_CUES.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: e1
+    path: ../SilverCraft.SndFile/Native/SF_CUES.cs
+    startLine: 18
+  assemblies:
+  - SilverCraft.CSCore.SndFile
+  namespace: sndfile
+  syntax:
+    content: public SF_CUE_POINT e1
+    return:
+      type: sndfile.SF_CUE_POINT
+    content.vb: Public e1 As SF_CUE_POINT
+- uid: sndfile.SF_CUES._cue_points_e__FixedBuffer.e2
+  commentId: F:sndfile.SF_CUES._cue_points_e__FixedBuffer.e2
+  id: e2
+  parent: sndfile.SF_CUES._cue_points_e__FixedBuffer
+  langs:
+  - csharp
+  - vb
+  name: e2
+  nameWithType: SF_CUES._cue_points_e__FixedBuffer.e2
+  fullName: sndfile.SF_CUES._cue_points_e__FixedBuffer.e2
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.SndFile/Native/SF_CUES.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: e2
+    path: ../SilverCraft.SndFile/Native/SF_CUES.cs
+    startLine: 19
+  assemblies:
+  - SilverCraft.CSCore.SndFile
+  namespace: sndfile
+  syntax:
+    content: public SF_CUE_POINT e2
+    return:
+      type: sndfile.SF_CUE_POINT
+    content.vb: Public e2 As SF_CUE_POINT
+- uid: sndfile.SF_CUES._cue_points_e__FixedBuffer.e3
+  commentId: F:sndfile.SF_CUES._cue_points_e__FixedBuffer.e3
+  id: e3
+  parent: sndfile.SF_CUES._cue_points_e__FixedBuffer
+  langs:
+  - csharp
+  - vb
+  name: e3
+  nameWithType: SF_CUES._cue_points_e__FixedBuffer.e3
+  fullName: sndfile.SF_CUES._cue_points_e__FixedBuffer.e3
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.SndFile/Native/SF_CUES.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: e3
+    path: ../SilverCraft.SndFile/Native/SF_CUES.cs
+    startLine: 20
+  assemblies:
+  - SilverCraft.CSCore.SndFile
+  namespace: sndfile
+  syntax:
+    content: public SF_CUE_POINT e3
+    return:
+      type: sndfile.SF_CUE_POINT
+    content.vb: Public e3 As SF_CUE_POINT
+- uid: sndfile.SF_CUES._cue_points_e__FixedBuffer.e4
+  commentId: F:sndfile.SF_CUES._cue_points_e__FixedBuffer.e4
+  id: e4
+  parent: sndfile.SF_CUES._cue_points_e__FixedBuffer
+  langs:
+  - csharp
+  - vb
+  name: e4
+  nameWithType: SF_CUES._cue_points_e__FixedBuffer.e4
+  fullName: sndfile.SF_CUES._cue_points_e__FixedBuffer.e4
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.SndFile/Native/SF_CUES.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: e4
+    path: ../SilverCraft.SndFile/Native/SF_CUES.cs
+    startLine: 21
+  assemblies:
+  - SilverCraft.CSCore.SndFile
+  namespace: sndfile
+  syntax:
+    content: public SF_CUE_POINT e4
+    return:
+      type: sndfile.SF_CUE_POINT
+    content.vb: Public e4 As SF_CUE_POINT
+- uid: sndfile.SF_CUES._cue_points_e__FixedBuffer.e5
+  commentId: F:sndfile.SF_CUES._cue_points_e__FixedBuffer.e5
+  id: e5
+  parent: sndfile.SF_CUES._cue_points_e__FixedBuffer
+  langs:
+  - csharp
+  - vb
+  name: e5
+  nameWithType: SF_CUES._cue_points_e__FixedBuffer.e5
+  fullName: sndfile.SF_CUES._cue_points_e__FixedBuffer.e5
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.SndFile/Native/SF_CUES.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: e5
+    path: ../SilverCraft.SndFile/Native/SF_CUES.cs
+    startLine: 22
+  assemblies:
+  - SilverCraft.CSCore.SndFile
+  namespace: sndfile
+  syntax:
+    content: public SF_CUE_POINT e5
+    return:
+      type: sndfile.SF_CUE_POINT
+    content.vb: Public e5 As SF_CUE_POINT
+- uid: sndfile.SF_CUES._cue_points_e__FixedBuffer.e6
+  commentId: F:sndfile.SF_CUES._cue_points_e__FixedBuffer.e6
+  id: e6
+  parent: sndfile.SF_CUES._cue_points_e__FixedBuffer
+  langs:
+  - csharp
+  - vb
+  name: e6
+  nameWithType: SF_CUES._cue_points_e__FixedBuffer.e6
+  fullName: sndfile.SF_CUES._cue_points_e__FixedBuffer.e6
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.SndFile/Native/SF_CUES.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: e6
+    path: ../SilverCraft.SndFile/Native/SF_CUES.cs
+    startLine: 23
+  assemblies:
+  - SilverCraft.CSCore.SndFile
+  namespace: sndfile
+  syntax:
+    content: public SF_CUE_POINT e6
+    return:
+      type: sndfile.SF_CUE_POINT
+    content.vb: Public e6 As SF_CUE_POINT
+- uid: sndfile.SF_CUES._cue_points_e__FixedBuffer.e7
+  commentId: F:sndfile.SF_CUES._cue_points_e__FixedBuffer.e7
+  id: e7
+  parent: sndfile.SF_CUES._cue_points_e__FixedBuffer
+  langs:
+  - csharp
+  - vb
+  name: e7
+  nameWithType: SF_CUES._cue_points_e__FixedBuffer.e7
+  fullName: sndfile.SF_CUES._cue_points_e__FixedBuffer.e7
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.SndFile/Native/SF_CUES.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: e7
+    path: ../SilverCraft.SndFile/Native/SF_CUES.cs
+    startLine: 24
+  assemblies:
+  - SilverCraft.CSCore.SndFile
+  namespace: sndfile
+  syntax:
+    content: public SF_CUE_POINT e7
+    return:
+      type: sndfile.SF_CUE_POINT
+    content.vb: Public e7 As SF_CUE_POINT
+- uid: sndfile.SF_CUES._cue_points_e__FixedBuffer.e8
+  commentId: F:sndfile.SF_CUES._cue_points_e__FixedBuffer.e8
+  id: e8
+  parent: sndfile.SF_CUES._cue_points_e__FixedBuffer
+  langs:
+  - csharp
+  - vb
+  name: e8
+  nameWithType: SF_CUES._cue_points_e__FixedBuffer.e8
+  fullName: sndfile.SF_CUES._cue_points_e__FixedBuffer.e8
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.SndFile/Native/SF_CUES.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: e8
+    path: ../SilverCraft.SndFile/Native/SF_CUES.cs
+    startLine: 25
+  assemblies:
+  - SilverCraft.CSCore.SndFile
+  namespace: sndfile
+  syntax:
+    content: public SF_CUE_POINT e8
+    return:
+      type: sndfile.SF_CUE_POINT
+    content.vb: Public e8 As SF_CUE_POINT
+- uid: sndfile.SF_CUES._cue_points_e__FixedBuffer.e9
+  commentId: F:sndfile.SF_CUES._cue_points_e__FixedBuffer.e9
+  id: e9
+  parent: sndfile.SF_CUES._cue_points_e__FixedBuffer
+  langs:
+  - csharp
+  - vb
+  name: e9
+  nameWithType: SF_CUES._cue_points_e__FixedBuffer.e9
+  fullName: sndfile.SF_CUES._cue_points_e__FixedBuffer.e9
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.SndFile/Native/SF_CUES.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: e9
+    path: ../SilverCraft.SndFile/Native/SF_CUES.cs
+    startLine: 26
+  assemblies:
+  - SilverCraft.CSCore.SndFile
+  namespace: sndfile
+  syntax:
+    content: public SF_CUE_POINT e9
+    return:
+      type: sndfile.SF_CUE_POINT
+    content.vb: Public e9 As SF_CUE_POINT
+- uid: sndfile.SF_CUES._cue_points_e__FixedBuffer.e10
+  commentId: F:sndfile.SF_CUES._cue_points_e__FixedBuffer.e10
+  id: e10
+  parent: sndfile.SF_CUES._cue_points_e__FixedBuffer
+  langs:
+  - csharp
+  - vb
+  name: e10
+  nameWithType: SF_CUES._cue_points_e__FixedBuffer.e10
+  fullName: sndfile.SF_CUES._cue_points_e__FixedBuffer.e10
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.SndFile/Native/SF_CUES.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: e10
+    path: ../SilverCraft.SndFile/Native/SF_CUES.cs
+    startLine: 27
+  assemblies:
+  - SilverCraft.CSCore.SndFile
+  namespace: sndfile
+  syntax:
+    content: public SF_CUE_POINT e10
+    return:
+      type: sndfile.SF_CUE_POINT
+    content.vb: Public e10 As SF_CUE_POINT
+- uid: sndfile.SF_CUES._cue_points_e__FixedBuffer.e11
+  commentId: F:sndfile.SF_CUES._cue_points_e__FixedBuffer.e11
+  id: e11
+  parent: sndfile.SF_CUES._cue_points_e__FixedBuffer
+  langs:
+  - csharp
+  - vb
+  name: e11
+  nameWithType: SF_CUES._cue_points_e__FixedBuffer.e11
+  fullName: sndfile.SF_CUES._cue_points_e__FixedBuffer.e11
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.SndFile/Native/SF_CUES.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: e11
+    path: ../SilverCraft.SndFile/Native/SF_CUES.cs
+    startLine: 28
+  assemblies:
+  - SilverCraft.CSCore.SndFile
+  namespace: sndfile
+  syntax:
+    content: public SF_CUE_POINT e11
+    return:
+      type: sndfile.SF_CUE_POINT
+    content.vb: Public e11 As SF_CUE_POINT
+- uid: sndfile.SF_CUES._cue_points_e__FixedBuffer.e12
+  commentId: F:sndfile.SF_CUES._cue_points_e__FixedBuffer.e12
+  id: e12
+  parent: sndfile.SF_CUES._cue_points_e__FixedBuffer
+  langs:
+  - csharp
+  - vb
+  name: e12
+  nameWithType: SF_CUES._cue_points_e__FixedBuffer.e12
+  fullName: sndfile.SF_CUES._cue_points_e__FixedBuffer.e12
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.SndFile/Native/SF_CUES.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: e12
+    path: ../SilverCraft.SndFile/Native/SF_CUES.cs
+    startLine: 29
+  assemblies:
+  - SilverCraft.CSCore.SndFile
+  namespace: sndfile
+  syntax:
+    content: public SF_CUE_POINT e12
+    return:
+      type: sndfile.SF_CUE_POINT
+    content.vb: Public e12 As SF_CUE_POINT
+- uid: sndfile.SF_CUES._cue_points_e__FixedBuffer.e13
+  commentId: F:sndfile.SF_CUES._cue_points_e__FixedBuffer.e13
+  id: e13
+  parent: sndfile.SF_CUES._cue_points_e__FixedBuffer
+  langs:
+  - csharp
+  - vb
+  name: e13
+  nameWithType: SF_CUES._cue_points_e__FixedBuffer.e13
+  fullName: sndfile.SF_CUES._cue_points_e__FixedBuffer.e13
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.SndFile/Native/SF_CUES.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: e13
+    path: ../SilverCraft.SndFile/Native/SF_CUES.cs
+    startLine: 30
+  assemblies:
+  - SilverCraft.CSCore.SndFile
+  namespace: sndfile
+  syntax:
+    content: public SF_CUE_POINT e13
+    return:
+      type: sndfile.SF_CUE_POINT
+    content.vb: Public e13 As SF_CUE_POINT
+- uid: sndfile.SF_CUES._cue_points_e__FixedBuffer.e14
+  commentId: F:sndfile.SF_CUES._cue_points_e__FixedBuffer.e14
+  id: e14
+  parent: sndfile.SF_CUES._cue_points_e__FixedBuffer
+  langs:
+  - csharp
+  - vb
+  name: e14
+  nameWithType: SF_CUES._cue_points_e__FixedBuffer.e14
+  fullName: sndfile.SF_CUES._cue_points_e__FixedBuffer.e14
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.SndFile/Native/SF_CUES.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: e14
+    path: ../SilverCraft.SndFile/Native/SF_CUES.cs
+    startLine: 31
+  assemblies:
+  - SilverCraft.CSCore.SndFile
+  namespace: sndfile
+  syntax:
+    content: public SF_CUE_POINT e14
+    return:
+      type: sndfile.SF_CUE_POINT
+    content.vb: Public e14 As SF_CUE_POINT
+- uid: sndfile.SF_CUES._cue_points_e__FixedBuffer.e15
+  commentId: F:sndfile.SF_CUES._cue_points_e__FixedBuffer.e15
+  id: e15
+  parent: sndfile.SF_CUES._cue_points_e__FixedBuffer
+  langs:
+  - csharp
+  - vb
+  name: e15
+  nameWithType: SF_CUES._cue_points_e__FixedBuffer.e15
+  fullName: sndfile.SF_CUES._cue_points_e__FixedBuffer.e15
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.SndFile/Native/SF_CUES.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: e15
+    path: ../SilverCraft.SndFile/Native/SF_CUES.cs
+    startLine: 32
+  assemblies:
+  - SilverCraft.CSCore.SndFile
+  namespace: sndfile
+  syntax:
+    content: public SF_CUE_POINT e15
+    return:
+      type: sndfile.SF_CUE_POINT
+    content.vb: Public e15 As SF_CUE_POINT
+- uid: sndfile.SF_CUES._cue_points_e__FixedBuffer.e16
+  commentId: F:sndfile.SF_CUES._cue_points_e__FixedBuffer.e16
+  id: e16
+  parent: sndfile.SF_CUES._cue_points_e__FixedBuffer
+  langs:
+  - csharp
+  - vb
+  name: e16
+  nameWithType: SF_CUES._cue_points_e__FixedBuffer.e16
+  fullName: sndfile.SF_CUES._cue_points_e__FixedBuffer.e16
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.SndFile/Native/SF_CUES.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: e16
+    path: ../SilverCraft.SndFile/Native/SF_CUES.cs
+    startLine: 33
+  assemblies:
+  - SilverCraft.CSCore.SndFile
+  namespace: sndfile
+  syntax:
+    content: public SF_CUE_POINT e16
+    return:
+      type: sndfile.SF_CUE_POINT
+    content.vb: Public e16 As SF_CUE_POINT
+- uid: sndfile.SF_CUES._cue_points_e__FixedBuffer.e17
+  commentId: F:sndfile.SF_CUES._cue_points_e__FixedBuffer.e17
+  id: e17
+  parent: sndfile.SF_CUES._cue_points_e__FixedBuffer
+  langs:
+  - csharp
+  - vb
+  name: e17
+  nameWithType: SF_CUES._cue_points_e__FixedBuffer.e17
+  fullName: sndfile.SF_CUES._cue_points_e__FixedBuffer.e17
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.SndFile/Native/SF_CUES.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: e17
+    path: ../SilverCraft.SndFile/Native/SF_CUES.cs
+    startLine: 34
+  assemblies:
+  - SilverCraft.CSCore.SndFile
+  namespace: sndfile
+  syntax:
+    content: public SF_CUE_POINT e17
+    return:
+      type: sndfile.SF_CUE_POINT
+    content.vb: Public e17 As SF_CUE_POINT
+- uid: sndfile.SF_CUES._cue_points_e__FixedBuffer.e18
+  commentId: F:sndfile.SF_CUES._cue_points_e__FixedBuffer.e18
+  id: e18
+  parent: sndfile.SF_CUES._cue_points_e__FixedBuffer
+  langs:
+  - csharp
+  - vb
+  name: e18
+  nameWithType: SF_CUES._cue_points_e__FixedBuffer.e18
+  fullName: sndfile.SF_CUES._cue_points_e__FixedBuffer.e18
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.SndFile/Native/SF_CUES.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: e18
+    path: ../SilverCraft.SndFile/Native/SF_CUES.cs
+    startLine: 35
+  assemblies:
+  - SilverCraft.CSCore.SndFile
+  namespace: sndfile
+  syntax:
+    content: public SF_CUE_POINT e18
+    return:
+      type: sndfile.SF_CUE_POINT
+    content.vb: Public e18 As SF_CUE_POINT
+- uid: sndfile.SF_CUES._cue_points_e__FixedBuffer.e19
+  commentId: F:sndfile.SF_CUES._cue_points_e__FixedBuffer.e19
+  id: e19
+  parent: sndfile.SF_CUES._cue_points_e__FixedBuffer
+  langs:
+  - csharp
+  - vb
+  name: e19
+  nameWithType: SF_CUES._cue_points_e__FixedBuffer.e19
+  fullName: sndfile.SF_CUES._cue_points_e__FixedBuffer.e19
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.SndFile/Native/SF_CUES.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: e19
+    path: ../SilverCraft.SndFile/Native/SF_CUES.cs
+    startLine: 36
+  assemblies:
+  - SilverCraft.CSCore.SndFile
+  namespace: sndfile
+  syntax:
+    content: public SF_CUE_POINT e19
+    return:
+      type: sndfile.SF_CUE_POINT
+    content.vb: Public e19 As SF_CUE_POINT
+- uid: sndfile.SF_CUES._cue_points_e__FixedBuffer.e20
+  commentId: F:sndfile.SF_CUES._cue_points_e__FixedBuffer.e20
+  id: e20
+  parent: sndfile.SF_CUES._cue_points_e__FixedBuffer
+  langs:
+  - csharp
+  - vb
+  name: e20
+  nameWithType: SF_CUES._cue_points_e__FixedBuffer.e20
+  fullName: sndfile.SF_CUES._cue_points_e__FixedBuffer.e20
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.SndFile/Native/SF_CUES.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: e20
+    path: ../SilverCraft.SndFile/Native/SF_CUES.cs
+    startLine: 37
+  assemblies:
+  - SilverCraft.CSCore.SndFile
+  namespace: sndfile
+  syntax:
+    content: public SF_CUE_POINT e20
+    return:
+      type: sndfile.SF_CUE_POINT
+    content.vb: Public e20 As SF_CUE_POINT
+- uid: sndfile.SF_CUES._cue_points_e__FixedBuffer.e21
+  commentId: F:sndfile.SF_CUES._cue_points_e__FixedBuffer.e21
+  id: e21
+  parent: sndfile.SF_CUES._cue_points_e__FixedBuffer
+  langs:
+  - csharp
+  - vb
+  name: e21
+  nameWithType: SF_CUES._cue_points_e__FixedBuffer.e21
+  fullName: sndfile.SF_CUES._cue_points_e__FixedBuffer.e21
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.SndFile/Native/SF_CUES.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: e21
+    path: ../SilverCraft.SndFile/Native/SF_CUES.cs
+    startLine: 38
+  assemblies:
+  - SilverCraft.CSCore.SndFile
+  namespace: sndfile
+  syntax:
+    content: public SF_CUE_POINT e21
+    return:
+      type: sndfile.SF_CUE_POINT
+    content.vb: Public e21 As SF_CUE_POINT
+- uid: sndfile.SF_CUES._cue_points_e__FixedBuffer.e22
+  commentId: F:sndfile.SF_CUES._cue_points_e__FixedBuffer.e22
+  id: e22
+  parent: sndfile.SF_CUES._cue_points_e__FixedBuffer
+  langs:
+  - csharp
+  - vb
+  name: e22
+  nameWithType: SF_CUES._cue_points_e__FixedBuffer.e22
+  fullName: sndfile.SF_CUES._cue_points_e__FixedBuffer.e22
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.SndFile/Native/SF_CUES.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: e22
+    path: ../SilverCraft.SndFile/Native/SF_CUES.cs
+    startLine: 39
+  assemblies:
+  - SilverCraft.CSCore.SndFile
+  namespace: sndfile
+  syntax:
+    content: public SF_CUE_POINT e22
+    return:
+      type: sndfile.SF_CUE_POINT
+    content.vb: Public e22 As SF_CUE_POINT
+- uid: sndfile.SF_CUES._cue_points_e__FixedBuffer.e23
+  commentId: F:sndfile.SF_CUES._cue_points_e__FixedBuffer.e23
+  id: e23
+  parent: sndfile.SF_CUES._cue_points_e__FixedBuffer
+  langs:
+  - csharp
+  - vb
+  name: e23
+  nameWithType: SF_CUES._cue_points_e__FixedBuffer.e23
+  fullName: sndfile.SF_CUES._cue_points_e__FixedBuffer.e23
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.SndFile/Native/SF_CUES.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: e23
+    path: ../SilverCraft.SndFile/Native/SF_CUES.cs
+    startLine: 40
+  assemblies:
+  - SilverCraft.CSCore.SndFile
+  namespace: sndfile
+  syntax:
+    content: public SF_CUE_POINT e23
+    return:
+      type: sndfile.SF_CUE_POINT
+    content.vb: Public e23 As SF_CUE_POINT
+- uid: sndfile.SF_CUES._cue_points_e__FixedBuffer.e24
+  commentId: F:sndfile.SF_CUES._cue_points_e__FixedBuffer.e24
+  id: e24
+  parent: sndfile.SF_CUES._cue_points_e__FixedBuffer
+  langs:
+  - csharp
+  - vb
+  name: e24
+  nameWithType: SF_CUES._cue_points_e__FixedBuffer.e24
+  fullName: sndfile.SF_CUES._cue_points_e__FixedBuffer.e24
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.SndFile/Native/SF_CUES.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: e24
+    path: ../SilverCraft.SndFile/Native/SF_CUES.cs
+    startLine: 41
+  assemblies:
+  - SilverCraft.CSCore.SndFile
+  namespace: sndfile
+  syntax:
+    content: public SF_CUE_POINT e24
+    return:
+      type: sndfile.SF_CUE_POINT
+    content.vb: Public e24 As SF_CUE_POINT
+- uid: sndfile.SF_CUES._cue_points_e__FixedBuffer.e25
+  commentId: F:sndfile.SF_CUES._cue_points_e__FixedBuffer.e25
+  id: e25
+  parent: sndfile.SF_CUES._cue_points_e__FixedBuffer
+  langs:
+  - csharp
+  - vb
+  name: e25
+  nameWithType: SF_CUES._cue_points_e__FixedBuffer.e25
+  fullName: sndfile.SF_CUES._cue_points_e__FixedBuffer.e25
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.SndFile/Native/SF_CUES.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: e25
+    path: ../SilverCraft.SndFile/Native/SF_CUES.cs
+    startLine: 42
+  assemblies:
+  - SilverCraft.CSCore.SndFile
+  namespace: sndfile
+  syntax:
+    content: public SF_CUE_POINT e25
+    return:
+      type: sndfile.SF_CUE_POINT
+    content.vb: Public e25 As SF_CUE_POINT
+- uid: sndfile.SF_CUES._cue_points_e__FixedBuffer.e26
+  commentId: F:sndfile.SF_CUES._cue_points_e__FixedBuffer.e26
+  id: e26
+  parent: sndfile.SF_CUES._cue_points_e__FixedBuffer
+  langs:
+  - csharp
+  - vb
+  name: e26
+  nameWithType: SF_CUES._cue_points_e__FixedBuffer.e26
+  fullName: sndfile.SF_CUES._cue_points_e__FixedBuffer.e26
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.SndFile/Native/SF_CUES.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: e26
+    path: ../SilverCraft.SndFile/Native/SF_CUES.cs
+    startLine: 43
+  assemblies:
+  - SilverCraft.CSCore.SndFile
+  namespace: sndfile
+  syntax:
+    content: public SF_CUE_POINT e26
+    return:
+      type: sndfile.SF_CUE_POINT
+    content.vb: Public e26 As SF_CUE_POINT
+- uid: sndfile.SF_CUES._cue_points_e__FixedBuffer.e27
+  commentId: F:sndfile.SF_CUES._cue_points_e__FixedBuffer.e27
+  id: e27
+  parent: sndfile.SF_CUES._cue_points_e__FixedBuffer
+  langs:
+  - csharp
+  - vb
+  name: e27
+  nameWithType: SF_CUES._cue_points_e__FixedBuffer.e27
+  fullName: sndfile.SF_CUES._cue_points_e__FixedBuffer.e27
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.SndFile/Native/SF_CUES.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: e27
+    path: ../SilverCraft.SndFile/Native/SF_CUES.cs
+    startLine: 44
+  assemblies:
+  - SilverCraft.CSCore.SndFile
+  namespace: sndfile
+  syntax:
+    content: public SF_CUE_POINT e27
+    return:
+      type: sndfile.SF_CUE_POINT
+    content.vb: Public e27 As SF_CUE_POINT
+- uid: sndfile.SF_CUES._cue_points_e__FixedBuffer.e28
+  commentId: F:sndfile.SF_CUES._cue_points_e__FixedBuffer.e28
+  id: e28
+  parent: sndfile.SF_CUES._cue_points_e__FixedBuffer
+  langs:
+  - csharp
+  - vb
+  name: e28
+  nameWithType: SF_CUES._cue_points_e__FixedBuffer.e28
+  fullName: sndfile.SF_CUES._cue_points_e__FixedBuffer.e28
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.SndFile/Native/SF_CUES.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: e28
+    path: ../SilverCraft.SndFile/Native/SF_CUES.cs
+    startLine: 45
+  assemblies:
+  - SilverCraft.CSCore.SndFile
+  namespace: sndfile
+  syntax:
+    content: public SF_CUE_POINT e28
+    return:
+      type: sndfile.SF_CUE_POINT
+    content.vb: Public e28 As SF_CUE_POINT
+- uid: sndfile.SF_CUES._cue_points_e__FixedBuffer.e29
+  commentId: F:sndfile.SF_CUES._cue_points_e__FixedBuffer.e29
+  id: e29
+  parent: sndfile.SF_CUES._cue_points_e__FixedBuffer
+  langs:
+  - csharp
+  - vb
+  name: e29
+  nameWithType: SF_CUES._cue_points_e__FixedBuffer.e29
+  fullName: sndfile.SF_CUES._cue_points_e__FixedBuffer.e29
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.SndFile/Native/SF_CUES.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: e29
+    path: ../SilverCraft.SndFile/Native/SF_CUES.cs
+    startLine: 46
+  assemblies:
+  - SilverCraft.CSCore.SndFile
+  namespace: sndfile
+  syntax:
+    content: public SF_CUE_POINT e29
+    return:
+      type: sndfile.SF_CUE_POINT
+    content.vb: Public e29 As SF_CUE_POINT
+- uid: sndfile.SF_CUES._cue_points_e__FixedBuffer.e30
+  commentId: F:sndfile.SF_CUES._cue_points_e__FixedBuffer.e30
+  id: e30
+  parent: sndfile.SF_CUES._cue_points_e__FixedBuffer
+  langs:
+  - csharp
+  - vb
+  name: e30
+  nameWithType: SF_CUES._cue_points_e__FixedBuffer.e30
+  fullName: sndfile.SF_CUES._cue_points_e__FixedBuffer.e30
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.SndFile/Native/SF_CUES.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: e30
+    path: ../SilverCraft.SndFile/Native/SF_CUES.cs
+    startLine: 47
+  assemblies:
+  - SilverCraft.CSCore.SndFile
+  namespace: sndfile
+  syntax:
+    content: public SF_CUE_POINT e30
+    return:
+      type: sndfile.SF_CUE_POINT
+    content.vb: Public e30 As SF_CUE_POINT
+- uid: sndfile.SF_CUES._cue_points_e__FixedBuffer.e31
+  commentId: F:sndfile.SF_CUES._cue_points_e__FixedBuffer.e31
+  id: e31
+  parent: sndfile.SF_CUES._cue_points_e__FixedBuffer
+  langs:
+  - csharp
+  - vb
+  name: e31
+  nameWithType: SF_CUES._cue_points_e__FixedBuffer.e31
+  fullName: sndfile.SF_CUES._cue_points_e__FixedBuffer.e31
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.SndFile/Native/SF_CUES.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: e31
+    path: ../SilverCraft.SndFile/Native/SF_CUES.cs
+    startLine: 48
+  assemblies:
+  - SilverCraft.CSCore.SndFile
+  namespace: sndfile
+  syntax:
+    content: public SF_CUE_POINT e31
+    return:
+      type: sndfile.SF_CUE_POINT
+    content.vb: Public e31 As SF_CUE_POINT
+- uid: sndfile.SF_CUES._cue_points_e__FixedBuffer.e32
+  commentId: F:sndfile.SF_CUES._cue_points_e__FixedBuffer.e32
+  id: e32
+  parent: sndfile.SF_CUES._cue_points_e__FixedBuffer
+  langs:
+  - csharp
+  - vb
+  name: e32
+  nameWithType: SF_CUES._cue_points_e__FixedBuffer.e32
+  fullName: sndfile.SF_CUES._cue_points_e__FixedBuffer.e32
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.SndFile/Native/SF_CUES.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: e32
+    path: ../SilverCraft.SndFile/Native/SF_CUES.cs
+    startLine: 49
+  assemblies:
+  - SilverCraft.CSCore.SndFile
+  namespace: sndfile
+  syntax:
+    content: public SF_CUE_POINT e32
+    return:
+      type: sndfile.SF_CUE_POINT
+    content.vb: Public e32 As SF_CUE_POINT
+- uid: sndfile.SF_CUES._cue_points_e__FixedBuffer.e33
+  commentId: F:sndfile.SF_CUES._cue_points_e__FixedBuffer.e33
+  id: e33
+  parent: sndfile.SF_CUES._cue_points_e__FixedBuffer
+  langs:
+  - csharp
+  - vb
+  name: e33
+  nameWithType: SF_CUES._cue_points_e__FixedBuffer.e33
+  fullName: sndfile.SF_CUES._cue_points_e__FixedBuffer.e33
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.SndFile/Native/SF_CUES.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: e33
+    path: ../SilverCraft.SndFile/Native/SF_CUES.cs
+    startLine: 50
+  assemblies:
+  - SilverCraft.CSCore.SndFile
+  namespace: sndfile
+  syntax:
+    content: public SF_CUE_POINT e33
+    return:
+      type: sndfile.SF_CUE_POINT
+    content.vb: Public e33 As SF_CUE_POINT
+- uid: sndfile.SF_CUES._cue_points_e__FixedBuffer.e34
+  commentId: F:sndfile.SF_CUES._cue_points_e__FixedBuffer.e34
+  id: e34
+  parent: sndfile.SF_CUES._cue_points_e__FixedBuffer
+  langs:
+  - csharp
+  - vb
+  name: e34
+  nameWithType: SF_CUES._cue_points_e__FixedBuffer.e34
+  fullName: sndfile.SF_CUES._cue_points_e__FixedBuffer.e34
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.SndFile/Native/SF_CUES.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: e34
+    path: ../SilverCraft.SndFile/Native/SF_CUES.cs
+    startLine: 51
+  assemblies:
+  - SilverCraft.CSCore.SndFile
+  namespace: sndfile
+  syntax:
+    content: public SF_CUE_POINT e34
+    return:
+      type: sndfile.SF_CUE_POINT
+    content.vb: Public e34 As SF_CUE_POINT
+- uid: sndfile.SF_CUES._cue_points_e__FixedBuffer.e35
+  commentId: F:sndfile.SF_CUES._cue_points_e__FixedBuffer.e35
+  id: e35
+  parent: sndfile.SF_CUES._cue_points_e__FixedBuffer
+  langs:
+  - csharp
+  - vb
+  name: e35
+  nameWithType: SF_CUES._cue_points_e__FixedBuffer.e35
+  fullName: sndfile.SF_CUES._cue_points_e__FixedBuffer.e35
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.SndFile/Native/SF_CUES.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: e35
+    path: ../SilverCraft.SndFile/Native/SF_CUES.cs
+    startLine: 52
+  assemblies:
+  - SilverCraft.CSCore.SndFile
+  namespace: sndfile
+  syntax:
+    content: public SF_CUE_POINT e35
+    return:
+      type: sndfile.SF_CUE_POINT
+    content.vb: Public e35 As SF_CUE_POINT
+- uid: sndfile.SF_CUES._cue_points_e__FixedBuffer.e36
+  commentId: F:sndfile.SF_CUES._cue_points_e__FixedBuffer.e36
+  id: e36
+  parent: sndfile.SF_CUES._cue_points_e__FixedBuffer
+  langs:
+  - csharp
+  - vb
+  name: e36
+  nameWithType: SF_CUES._cue_points_e__FixedBuffer.e36
+  fullName: sndfile.SF_CUES._cue_points_e__FixedBuffer.e36
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.SndFile/Native/SF_CUES.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: e36
+    path: ../SilverCraft.SndFile/Native/SF_CUES.cs
+    startLine: 53
+  assemblies:
+  - SilverCraft.CSCore.SndFile
+  namespace: sndfile
+  syntax:
+    content: public SF_CUE_POINT e36
+    return:
+      type: sndfile.SF_CUE_POINT
+    content.vb: Public e36 As SF_CUE_POINT
+- uid: sndfile.SF_CUES._cue_points_e__FixedBuffer.e37
+  commentId: F:sndfile.SF_CUES._cue_points_e__FixedBuffer.e37
+  id: e37
+  parent: sndfile.SF_CUES._cue_points_e__FixedBuffer
+  langs:
+  - csharp
+  - vb
+  name: e37
+  nameWithType: SF_CUES._cue_points_e__FixedBuffer.e37
+  fullName: sndfile.SF_CUES._cue_points_e__FixedBuffer.e37
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.SndFile/Native/SF_CUES.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: e37
+    path: ../SilverCraft.SndFile/Native/SF_CUES.cs
+    startLine: 54
+  assemblies:
+  - SilverCraft.CSCore.SndFile
+  namespace: sndfile
+  syntax:
+    content: public SF_CUE_POINT e37
+    return:
+      type: sndfile.SF_CUE_POINT
+    content.vb: Public e37 As SF_CUE_POINT
+- uid: sndfile.SF_CUES._cue_points_e__FixedBuffer.e38
+  commentId: F:sndfile.SF_CUES._cue_points_e__FixedBuffer.e38
+  id: e38
+  parent: sndfile.SF_CUES._cue_points_e__FixedBuffer
+  langs:
+  - csharp
+  - vb
+  name: e38
+  nameWithType: SF_CUES._cue_points_e__FixedBuffer.e38
+  fullName: sndfile.SF_CUES._cue_points_e__FixedBuffer.e38
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.SndFile/Native/SF_CUES.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: e38
+    path: ../SilverCraft.SndFile/Native/SF_CUES.cs
+    startLine: 55
+  assemblies:
+  - SilverCraft.CSCore.SndFile
+  namespace: sndfile
+  syntax:
+    content: public SF_CUE_POINT e38
+    return:
+      type: sndfile.SF_CUE_POINT
+    content.vb: Public e38 As SF_CUE_POINT
+- uid: sndfile.SF_CUES._cue_points_e__FixedBuffer.e39
+  commentId: F:sndfile.SF_CUES._cue_points_e__FixedBuffer.e39
+  id: e39
+  parent: sndfile.SF_CUES._cue_points_e__FixedBuffer
+  langs:
+  - csharp
+  - vb
+  name: e39
+  nameWithType: SF_CUES._cue_points_e__FixedBuffer.e39
+  fullName: sndfile.SF_CUES._cue_points_e__FixedBuffer.e39
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.SndFile/Native/SF_CUES.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: e39
+    path: ../SilverCraft.SndFile/Native/SF_CUES.cs
+    startLine: 56
+  assemblies:
+  - SilverCraft.CSCore.SndFile
+  namespace: sndfile
+  syntax:
+    content: public SF_CUE_POINT e39
+    return:
+      type: sndfile.SF_CUE_POINT
+    content.vb: Public e39 As SF_CUE_POINT
+- uid: sndfile.SF_CUES._cue_points_e__FixedBuffer.e40
+  commentId: F:sndfile.SF_CUES._cue_points_e__FixedBuffer.e40
+  id: e40
+  parent: sndfile.SF_CUES._cue_points_e__FixedBuffer
+  langs:
+  - csharp
+  - vb
+  name: e40
+  nameWithType: SF_CUES._cue_points_e__FixedBuffer.e40
+  fullName: sndfile.SF_CUES._cue_points_e__FixedBuffer.e40
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.SndFile/Native/SF_CUES.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: e40
+    path: ../SilverCraft.SndFile/Native/SF_CUES.cs
+    startLine: 57
+  assemblies:
+  - SilverCraft.CSCore.SndFile
+  namespace: sndfile
+  syntax:
+    content: public SF_CUE_POINT e40
+    return:
+      type: sndfile.SF_CUE_POINT
+    content.vb: Public e40 As SF_CUE_POINT
+- uid: sndfile.SF_CUES._cue_points_e__FixedBuffer.e41
+  commentId: F:sndfile.SF_CUES._cue_points_e__FixedBuffer.e41
+  id: e41
+  parent: sndfile.SF_CUES._cue_points_e__FixedBuffer
+  langs:
+  - csharp
+  - vb
+  name: e41
+  nameWithType: SF_CUES._cue_points_e__FixedBuffer.e41
+  fullName: sndfile.SF_CUES._cue_points_e__FixedBuffer.e41
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.SndFile/Native/SF_CUES.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: e41
+    path: ../SilverCraft.SndFile/Native/SF_CUES.cs
+    startLine: 58
+  assemblies:
+  - SilverCraft.CSCore.SndFile
+  namespace: sndfile
+  syntax:
+    content: public SF_CUE_POINT e41
+    return:
+      type: sndfile.SF_CUE_POINT
+    content.vb: Public e41 As SF_CUE_POINT
+- uid: sndfile.SF_CUES._cue_points_e__FixedBuffer.e42
+  commentId: F:sndfile.SF_CUES._cue_points_e__FixedBuffer.e42
+  id: e42
+  parent: sndfile.SF_CUES._cue_points_e__FixedBuffer
+  langs:
+  - csharp
+  - vb
+  name: e42
+  nameWithType: SF_CUES._cue_points_e__FixedBuffer.e42
+  fullName: sndfile.SF_CUES._cue_points_e__FixedBuffer.e42
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.SndFile/Native/SF_CUES.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: e42
+    path: ../SilverCraft.SndFile/Native/SF_CUES.cs
+    startLine: 59
+  assemblies:
+  - SilverCraft.CSCore.SndFile
+  namespace: sndfile
+  syntax:
+    content: public SF_CUE_POINT e42
+    return:
+      type: sndfile.SF_CUE_POINT
+    content.vb: Public e42 As SF_CUE_POINT
+- uid: sndfile.SF_CUES._cue_points_e__FixedBuffer.e43
+  commentId: F:sndfile.SF_CUES._cue_points_e__FixedBuffer.e43
+  id: e43
+  parent: sndfile.SF_CUES._cue_points_e__FixedBuffer
+  langs:
+  - csharp
+  - vb
+  name: e43
+  nameWithType: SF_CUES._cue_points_e__FixedBuffer.e43
+  fullName: sndfile.SF_CUES._cue_points_e__FixedBuffer.e43
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.SndFile/Native/SF_CUES.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: e43
+    path: ../SilverCraft.SndFile/Native/SF_CUES.cs
+    startLine: 60
+  assemblies:
+  - SilverCraft.CSCore.SndFile
+  namespace: sndfile
+  syntax:
+    content: public SF_CUE_POINT e43
+    return:
+      type: sndfile.SF_CUE_POINT
+    content.vb: Public e43 As SF_CUE_POINT
+- uid: sndfile.SF_CUES._cue_points_e__FixedBuffer.e44
+  commentId: F:sndfile.SF_CUES._cue_points_e__FixedBuffer.e44
+  id: e44
+  parent: sndfile.SF_CUES._cue_points_e__FixedBuffer
+  langs:
+  - csharp
+  - vb
+  name: e44
+  nameWithType: SF_CUES._cue_points_e__FixedBuffer.e44
+  fullName: sndfile.SF_CUES._cue_points_e__FixedBuffer.e44
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.SndFile/Native/SF_CUES.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: e44
+    path: ../SilverCraft.SndFile/Native/SF_CUES.cs
+    startLine: 61
+  assemblies:
+  - SilverCraft.CSCore.SndFile
+  namespace: sndfile
+  syntax:
+    content: public SF_CUE_POINT e44
+    return:
+      type: sndfile.SF_CUE_POINT
+    content.vb: Public e44 As SF_CUE_POINT
+- uid: sndfile.SF_CUES._cue_points_e__FixedBuffer.e45
+  commentId: F:sndfile.SF_CUES._cue_points_e__FixedBuffer.e45
+  id: e45
+  parent: sndfile.SF_CUES._cue_points_e__FixedBuffer
+  langs:
+  - csharp
+  - vb
+  name: e45
+  nameWithType: SF_CUES._cue_points_e__FixedBuffer.e45
+  fullName: sndfile.SF_CUES._cue_points_e__FixedBuffer.e45
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.SndFile/Native/SF_CUES.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: e45
+    path: ../SilverCraft.SndFile/Native/SF_CUES.cs
+    startLine: 62
+  assemblies:
+  - SilverCraft.CSCore.SndFile
+  namespace: sndfile
+  syntax:
+    content: public SF_CUE_POINT e45
+    return:
+      type: sndfile.SF_CUE_POINT
+    content.vb: Public e45 As SF_CUE_POINT
+- uid: sndfile.SF_CUES._cue_points_e__FixedBuffer.e46
+  commentId: F:sndfile.SF_CUES._cue_points_e__FixedBuffer.e46
+  id: e46
+  parent: sndfile.SF_CUES._cue_points_e__FixedBuffer
+  langs:
+  - csharp
+  - vb
+  name: e46
+  nameWithType: SF_CUES._cue_points_e__FixedBuffer.e46
+  fullName: sndfile.SF_CUES._cue_points_e__FixedBuffer.e46
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.SndFile/Native/SF_CUES.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: e46
+    path: ../SilverCraft.SndFile/Native/SF_CUES.cs
+    startLine: 63
+  assemblies:
+  - SilverCraft.CSCore.SndFile
+  namespace: sndfile
+  syntax:
+    content: public SF_CUE_POINT e46
+    return:
+      type: sndfile.SF_CUE_POINT
+    content.vb: Public e46 As SF_CUE_POINT
+- uid: sndfile.SF_CUES._cue_points_e__FixedBuffer.e47
+  commentId: F:sndfile.SF_CUES._cue_points_e__FixedBuffer.e47
+  id: e47
+  parent: sndfile.SF_CUES._cue_points_e__FixedBuffer
+  langs:
+  - csharp
+  - vb
+  name: e47
+  nameWithType: SF_CUES._cue_points_e__FixedBuffer.e47
+  fullName: sndfile.SF_CUES._cue_points_e__FixedBuffer.e47
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.SndFile/Native/SF_CUES.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: e47
+    path: ../SilverCraft.SndFile/Native/SF_CUES.cs
+    startLine: 64
+  assemblies:
+  - SilverCraft.CSCore.SndFile
+  namespace: sndfile
+  syntax:
+    content: public SF_CUE_POINT e47
+    return:
+      type: sndfile.SF_CUE_POINT
+    content.vb: Public e47 As SF_CUE_POINT
+- uid: sndfile.SF_CUES._cue_points_e__FixedBuffer.e48
+  commentId: F:sndfile.SF_CUES._cue_points_e__FixedBuffer.e48
+  id: e48
+  parent: sndfile.SF_CUES._cue_points_e__FixedBuffer
+  langs:
+  - csharp
+  - vb
+  name: e48
+  nameWithType: SF_CUES._cue_points_e__FixedBuffer.e48
+  fullName: sndfile.SF_CUES._cue_points_e__FixedBuffer.e48
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.SndFile/Native/SF_CUES.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: e48
+    path: ../SilverCraft.SndFile/Native/SF_CUES.cs
+    startLine: 65
+  assemblies:
+  - SilverCraft.CSCore.SndFile
+  namespace: sndfile
+  syntax:
+    content: public SF_CUE_POINT e48
+    return:
+      type: sndfile.SF_CUE_POINT
+    content.vb: Public e48 As SF_CUE_POINT
+- uid: sndfile.SF_CUES._cue_points_e__FixedBuffer.e49
+  commentId: F:sndfile.SF_CUES._cue_points_e__FixedBuffer.e49
+  id: e49
+  parent: sndfile.SF_CUES._cue_points_e__FixedBuffer
+  langs:
+  - csharp
+  - vb
+  name: e49
+  nameWithType: SF_CUES._cue_points_e__FixedBuffer.e49
+  fullName: sndfile.SF_CUES._cue_points_e__FixedBuffer.e49
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.SndFile/Native/SF_CUES.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: e49
+    path: ../SilverCraft.SndFile/Native/SF_CUES.cs
+    startLine: 66
+  assemblies:
+  - SilverCraft.CSCore.SndFile
+  namespace: sndfile
+  syntax:
+    content: public SF_CUE_POINT e49
+    return:
+      type: sndfile.SF_CUE_POINT
+    content.vb: Public e49 As SF_CUE_POINT
+- uid: sndfile.SF_CUES._cue_points_e__FixedBuffer.e50
+  commentId: F:sndfile.SF_CUES._cue_points_e__FixedBuffer.e50
+  id: e50
+  parent: sndfile.SF_CUES._cue_points_e__FixedBuffer
+  langs:
+  - csharp
+  - vb
+  name: e50
+  nameWithType: SF_CUES._cue_points_e__FixedBuffer.e50
+  fullName: sndfile.SF_CUES._cue_points_e__FixedBuffer.e50
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.SndFile/Native/SF_CUES.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: e50
+    path: ../SilverCraft.SndFile/Native/SF_CUES.cs
+    startLine: 67
+  assemblies:
+  - SilverCraft.CSCore.SndFile
+  namespace: sndfile
+  syntax:
+    content: public SF_CUE_POINT e50
+    return:
+      type: sndfile.SF_CUE_POINT
+    content.vb: Public e50 As SF_CUE_POINT
+- uid: sndfile.SF_CUES._cue_points_e__FixedBuffer.e51
+  commentId: F:sndfile.SF_CUES._cue_points_e__FixedBuffer.e51
+  id: e51
+  parent: sndfile.SF_CUES._cue_points_e__FixedBuffer
+  langs:
+  - csharp
+  - vb
+  name: e51
+  nameWithType: SF_CUES._cue_points_e__FixedBuffer.e51
+  fullName: sndfile.SF_CUES._cue_points_e__FixedBuffer.e51
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.SndFile/Native/SF_CUES.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: e51
+    path: ../SilverCraft.SndFile/Native/SF_CUES.cs
+    startLine: 68
+  assemblies:
+  - SilverCraft.CSCore.SndFile
+  namespace: sndfile
+  syntax:
+    content: public SF_CUE_POINT e51
+    return:
+      type: sndfile.SF_CUE_POINT
+    content.vb: Public e51 As SF_CUE_POINT
+- uid: sndfile.SF_CUES._cue_points_e__FixedBuffer.e52
+  commentId: F:sndfile.SF_CUES._cue_points_e__FixedBuffer.e52
+  id: e52
+  parent: sndfile.SF_CUES._cue_points_e__FixedBuffer
+  langs:
+  - csharp
+  - vb
+  name: e52
+  nameWithType: SF_CUES._cue_points_e__FixedBuffer.e52
+  fullName: sndfile.SF_CUES._cue_points_e__FixedBuffer.e52
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.SndFile/Native/SF_CUES.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: e52
+    path: ../SilverCraft.SndFile/Native/SF_CUES.cs
+    startLine: 69
+  assemblies:
+  - SilverCraft.CSCore.SndFile
+  namespace: sndfile
+  syntax:
+    content: public SF_CUE_POINT e52
+    return:
+      type: sndfile.SF_CUE_POINT
+    content.vb: Public e52 As SF_CUE_POINT
+- uid: sndfile.SF_CUES._cue_points_e__FixedBuffer.e53
+  commentId: F:sndfile.SF_CUES._cue_points_e__FixedBuffer.e53
+  id: e53
+  parent: sndfile.SF_CUES._cue_points_e__FixedBuffer
+  langs:
+  - csharp
+  - vb
+  name: e53
+  nameWithType: SF_CUES._cue_points_e__FixedBuffer.e53
+  fullName: sndfile.SF_CUES._cue_points_e__FixedBuffer.e53
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.SndFile/Native/SF_CUES.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: e53
+    path: ../SilverCraft.SndFile/Native/SF_CUES.cs
+    startLine: 70
+  assemblies:
+  - SilverCraft.CSCore.SndFile
+  namespace: sndfile
+  syntax:
+    content: public SF_CUE_POINT e53
+    return:
+      type: sndfile.SF_CUE_POINT
+    content.vb: Public e53 As SF_CUE_POINT
+- uid: sndfile.SF_CUES._cue_points_e__FixedBuffer.e54
+  commentId: F:sndfile.SF_CUES._cue_points_e__FixedBuffer.e54
+  id: e54
+  parent: sndfile.SF_CUES._cue_points_e__FixedBuffer
+  langs:
+  - csharp
+  - vb
+  name: e54
+  nameWithType: SF_CUES._cue_points_e__FixedBuffer.e54
+  fullName: sndfile.SF_CUES._cue_points_e__FixedBuffer.e54
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.SndFile/Native/SF_CUES.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: e54
+    path: ../SilverCraft.SndFile/Native/SF_CUES.cs
+    startLine: 71
+  assemblies:
+  - SilverCraft.CSCore.SndFile
+  namespace: sndfile
+  syntax:
+    content: public SF_CUE_POINT e54
+    return:
+      type: sndfile.SF_CUE_POINT
+    content.vb: Public e54 As SF_CUE_POINT
+- uid: sndfile.SF_CUES._cue_points_e__FixedBuffer.e55
+  commentId: F:sndfile.SF_CUES._cue_points_e__FixedBuffer.e55
+  id: e55
+  parent: sndfile.SF_CUES._cue_points_e__FixedBuffer
+  langs:
+  - csharp
+  - vb
+  name: e55
+  nameWithType: SF_CUES._cue_points_e__FixedBuffer.e55
+  fullName: sndfile.SF_CUES._cue_points_e__FixedBuffer.e55
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.SndFile/Native/SF_CUES.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: e55
+    path: ../SilverCraft.SndFile/Native/SF_CUES.cs
+    startLine: 72
+  assemblies:
+  - SilverCraft.CSCore.SndFile
+  namespace: sndfile
+  syntax:
+    content: public SF_CUE_POINT e55
+    return:
+      type: sndfile.SF_CUE_POINT
+    content.vb: Public e55 As SF_CUE_POINT
+- uid: sndfile.SF_CUES._cue_points_e__FixedBuffer.e56
+  commentId: F:sndfile.SF_CUES._cue_points_e__FixedBuffer.e56
+  id: e56
+  parent: sndfile.SF_CUES._cue_points_e__FixedBuffer
+  langs:
+  - csharp
+  - vb
+  name: e56
+  nameWithType: SF_CUES._cue_points_e__FixedBuffer.e56
+  fullName: sndfile.SF_CUES._cue_points_e__FixedBuffer.e56
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.SndFile/Native/SF_CUES.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: e56
+    path: ../SilverCraft.SndFile/Native/SF_CUES.cs
+    startLine: 73
+  assemblies:
+  - SilverCraft.CSCore.SndFile
+  namespace: sndfile
+  syntax:
+    content: public SF_CUE_POINT e56
+    return:
+      type: sndfile.SF_CUE_POINT
+    content.vb: Public e56 As SF_CUE_POINT
+- uid: sndfile.SF_CUES._cue_points_e__FixedBuffer.e57
+  commentId: F:sndfile.SF_CUES._cue_points_e__FixedBuffer.e57
+  id: e57
+  parent: sndfile.SF_CUES._cue_points_e__FixedBuffer
+  langs:
+  - csharp
+  - vb
+  name: e57
+  nameWithType: SF_CUES._cue_points_e__FixedBuffer.e57
+  fullName: sndfile.SF_CUES._cue_points_e__FixedBuffer.e57
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.SndFile/Native/SF_CUES.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: e57
+    path: ../SilverCraft.SndFile/Native/SF_CUES.cs
+    startLine: 74
+  assemblies:
+  - SilverCraft.CSCore.SndFile
+  namespace: sndfile
+  syntax:
+    content: public SF_CUE_POINT e57
+    return:
+      type: sndfile.SF_CUE_POINT
+    content.vb: Public e57 As SF_CUE_POINT
+- uid: sndfile.SF_CUES._cue_points_e__FixedBuffer.e58
+  commentId: F:sndfile.SF_CUES._cue_points_e__FixedBuffer.e58
+  id: e58
+  parent: sndfile.SF_CUES._cue_points_e__FixedBuffer
+  langs:
+  - csharp
+  - vb
+  name: e58
+  nameWithType: SF_CUES._cue_points_e__FixedBuffer.e58
+  fullName: sndfile.SF_CUES._cue_points_e__FixedBuffer.e58
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.SndFile/Native/SF_CUES.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: e58
+    path: ../SilverCraft.SndFile/Native/SF_CUES.cs
+    startLine: 75
+  assemblies:
+  - SilverCraft.CSCore.SndFile
+  namespace: sndfile
+  syntax:
+    content: public SF_CUE_POINT e58
+    return:
+      type: sndfile.SF_CUE_POINT
+    content.vb: Public e58 As SF_CUE_POINT
+- uid: sndfile.SF_CUES._cue_points_e__FixedBuffer.e59
+  commentId: F:sndfile.SF_CUES._cue_points_e__FixedBuffer.e59
+  id: e59
+  parent: sndfile.SF_CUES._cue_points_e__FixedBuffer
+  langs:
+  - csharp
+  - vb
+  name: e59
+  nameWithType: SF_CUES._cue_points_e__FixedBuffer.e59
+  fullName: sndfile.SF_CUES._cue_points_e__FixedBuffer.e59
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.SndFile/Native/SF_CUES.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: e59
+    path: ../SilverCraft.SndFile/Native/SF_CUES.cs
+    startLine: 76
+  assemblies:
+  - SilverCraft.CSCore.SndFile
+  namespace: sndfile
+  syntax:
+    content: public SF_CUE_POINT e59
+    return:
+      type: sndfile.SF_CUE_POINT
+    content.vb: Public e59 As SF_CUE_POINT
+- uid: sndfile.SF_CUES._cue_points_e__FixedBuffer.e60
+  commentId: F:sndfile.SF_CUES._cue_points_e__FixedBuffer.e60
+  id: e60
+  parent: sndfile.SF_CUES._cue_points_e__FixedBuffer
+  langs:
+  - csharp
+  - vb
+  name: e60
+  nameWithType: SF_CUES._cue_points_e__FixedBuffer.e60
+  fullName: sndfile.SF_CUES._cue_points_e__FixedBuffer.e60
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.SndFile/Native/SF_CUES.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: e60
+    path: ../SilverCraft.SndFile/Native/SF_CUES.cs
+    startLine: 77
+  assemblies:
+  - SilverCraft.CSCore.SndFile
+  namespace: sndfile
+  syntax:
+    content: public SF_CUE_POINT e60
+    return:
+      type: sndfile.SF_CUE_POINT
+    content.vb: Public e60 As SF_CUE_POINT
+- uid: sndfile.SF_CUES._cue_points_e__FixedBuffer.e61
+  commentId: F:sndfile.SF_CUES._cue_points_e__FixedBuffer.e61
+  id: e61
+  parent: sndfile.SF_CUES._cue_points_e__FixedBuffer
+  langs:
+  - csharp
+  - vb
+  name: e61
+  nameWithType: SF_CUES._cue_points_e__FixedBuffer.e61
+  fullName: sndfile.SF_CUES._cue_points_e__FixedBuffer.e61
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.SndFile/Native/SF_CUES.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: e61
+    path: ../SilverCraft.SndFile/Native/SF_CUES.cs
+    startLine: 78
+  assemblies:
+  - SilverCraft.CSCore.SndFile
+  namespace: sndfile
+  syntax:
+    content: public SF_CUE_POINT e61
+    return:
+      type: sndfile.SF_CUE_POINT
+    content.vb: Public e61 As SF_CUE_POINT
+- uid: sndfile.SF_CUES._cue_points_e__FixedBuffer.e62
+  commentId: F:sndfile.SF_CUES._cue_points_e__FixedBuffer.e62
+  id: e62
+  parent: sndfile.SF_CUES._cue_points_e__FixedBuffer
+  langs:
+  - csharp
+  - vb
+  name: e62
+  nameWithType: SF_CUES._cue_points_e__FixedBuffer.e62
+  fullName: sndfile.SF_CUES._cue_points_e__FixedBuffer.e62
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.SndFile/Native/SF_CUES.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: e62
+    path: ../SilverCraft.SndFile/Native/SF_CUES.cs
+    startLine: 79
+  assemblies:
+  - SilverCraft.CSCore.SndFile
+  namespace: sndfile
+  syntax:
+    content: public SF_CUE_POINT e62
+    return:
+      type: sndfile.SF_CUE_POINT
+    content.vb: Public e62 As SF_CUE_POINT
+- uid: sndfile.SF_CUES._cue_points_e__FixedBuffer.e63
+  commentId: F:sndfile.SF_CUES._cue_points_e__FixedBuffer.e63
+  id: e63
+  parent: sndfile.SF_CUES._cue_points_e__FixedBuffer
+  langs:
+  - csharp
+  - vb
+  name: e63
+  nameWithType: SF_CUES._cue_points_e__FixedBuffer.e63
+  fullName: sndfile.SF_CUES._cue_points_e__FixedBuffer.e63
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.SndFile/Native/SF_CUES.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: e63
+    path: ../SilverCraft.SndFile/Native/SF_CUES.cs
+    startLine: 80
+  assemblies:
+  - SilverCraft.CSCore.SndFile
+  namespace: sndfile
+  syntax:
+    content: public SF_CUE_POINT e63
+    return:
+      type: sndfile.SF_CUE_POINT
+    content.vb: Public e63 As SF_CUE_POINT
+- uid: sndfile.SF_CUES._cue_points_e__FixedBuffer.e64
+  commentId: F:sndfile.SF_CUES._cue_points_e__FixedBuffer.e64
+  id: e64
+  parent: sndfile.SF_CUES._cue_points_e__FixedBuffer
+  langs:
+  - csharp
+  - vb
+  name: e64
+  nameWithType: SF_CUES._cue_points_e__FixedBuffer.e64
+  fullName: sndfile.SF_CUES._cue_points_e__FixedBuffer.e64
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.SndFile/Native/SF_CUES.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: e64
+    path: ../SilverCraft.SndFile/Native/SF_CUES.cs
+    startLine: 81
+  assemblies:
+  - SilverCraft.CSCore.SndFile
+  namespace: sndfile
+  syntax:
+    content: public SF_CUE_POINT e64
+    return:
+      type: sndfile.SF_CUE_POINT
+    content.vb: Public e64 As SF_CUE_POINT
+- uid: sndfile.SF_CUES._cue_points_e__FixedBuffer.e65
+  commentId: F:sndfile.SF_CUES._cue_points_e__FixedBuffer.e65
+  id: e65
+  parent: sndfile.SF_CUES._cue_points_e__FixedBuffer
+  langs:
+  - csharp
+  - vb
+  name: e65
+  nameWithType: SF_CUES._cue_points_e__FixedBuffer.e65
+  fullName: sndfile.SF_CUES._cue_points_e__FixedBuffer.e65
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.SndFile/Native/SF_CUES.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: e65
+    path: ../SilverCraft.SndFile/Native/SF_CUES.cs
+    startLine: 82
+  assemblies:
+  - SilverCraft.CSCore.SndFile
+  namespace: sndfile
+  syntax:
+    content: public SF_CUE_POINT e65
+    return:
+      type: sndfile.SF_CUE_POINT
+    content.vb: Public e65 As SF_CUE_POINT
+- uid: sndfile.SF_CUES._cue_points_e__FixedBuffer.e66
+  commentId: F:sndfile.SF_CUES._cue_points_e__FixedBuffer.e66
+  id: e66
+  parent: sndfile.SF_CUES._cue_points_e__FixedBuffer
+  langs:
+  - csharp
+  - vb
+  name: e66
+  nameWithType: SF_CUES._cue_points_e__FixedBuffer.e66
+  fullName: sndfile.SF_CUES._cue_points_e__FixedBuffer.e66
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.SndFile/Native/SF_CUES.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: e66
+    path: ../SilverCraft.SndFile/Native/SF_CUES.cs
+    startLine: 83
+  assemblies:
+  - SilverCraft.CSCore.SndFile
+  namespace: sndfile
+  syntax:
+    content: public SF_CUE_POINT e66
+    return:
+      type: sndfile.SF_CUE_POINT
+    content.vb: Public e66 As SF_CUE_POINT
+- uid: sndfile.SF_CUES._cue_points_e__FixedBuffer.e67
+  commentId: F:sndfile.SF_CUES._cue_points_e__FixedBuffer.e67
+  id: e67
+  parent: sndfile.SF_CUES._cue_points_e__FixedBuffer
+  langs:
+  - csharp
+  - vb
+  name: e67
+  nameWithType: SF_CUES._cue_points_e__FixedBuffer.e67
+  fullName: sndfile.SF_CUES._cue_points_e__FixedBuffer.e67
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.SndFile/Native/SF_CUES.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: e67
+    path: ../SilverCraft.SndFile/Native/SF_CUES.cs
+    startLine: 84
+  assemblies:
+  - SilverCraft.CSCore.SndFile
+  namespace: sndfile
+  syntax:
+    content: public SF_CUE_POINT e67
+    return:
+      type: sndfile.SF_CUE_POINT
+    content.vb: Public e67 As SF_CUE_POINT
+- uid: sndfile.SF_CUES._cue_points_e__FixedBuffer.e68
+  commentId: F:sndfile.SF_CUES._cue_points_e__FixedBuffer.e68
+  id: e68
+  parent: sndfile.SF_CUES._cue_points_e__FixedBuffer
+  langs:
+  - csharp
+  - vb
+  name: e68
+  nameWithType: SF_CUES._cue_points_e__FixedBuffer.e68
+  fullName: sndfile.SF_CUES._cue_points_e__FixedBuffer.e68
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.SndFile/Native/SF_CUES.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: e68
+    path: ../SilverCraft.SndFile/Native/SF_CUES.cs
+    startLine: 85
+  assemblies:
+  - SilverCraft.CSCore.SndFile
+  namespace: sndfile
+  syntax:
+    content: public SF_CUE_POINT e68
+    return:
+      type: sndfile.SF_CUE_POINT
+    content.vb: Public e68 As SF_CUE_POINT
+- uid: sndfile.SF_CUES._cue_points_e__FixedBuffer.e69
+  commentId: F:sndfile.SF_CUES._cue_points_e__FixedBuffer.e69
+  id: e69
+  parent: sndfile.SF_CUES._cue_points_e__FixedBuffer
+  langs:
+  - csharp
+  - vb
+  name: e69
+  nameWithType: SF_CUES._cue_points_e__FixedBuffer.e69
+  fullName: sndfile.SF_CUES._cue_points_e__FixedBuffer.e69
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.SndFile/Native/SF_CUES.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: e69
+    path: ../SilverCraft.SndFile/Native/SF_CUES.cs
+    startLine: 86
+  assemblies:
+  - SilverCraft.CSCore.SndFile
+  namespace: sndfile
+  syntax:
+    content: public SF_CUE_POINT e69
+    return:
+      type: sndfile.SF_CUE_POINT
+    content.vb: Public e69 As SF_CUE_POINT
+- uid: sndfile.SF_CUES._cue_points_e__FixedBuffer.e70
+  commentId: F:sndfile.SF_CUES._cue_points_e__FixedBuffer.e70
+  id: e70
+  parent: sndfile.SF_CUES._cue_points_e__FixedBuffer
+  langs:
+  - csharp
+  - vb
+  name: e70
+  nameWithType: SF_CUES._cue_points_e__FixedBuffer.e70
+  fullName: sndfile.SF_CUES._cue_points_e__FixedBuffer.e70
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.SndFile/Native/SF_CUES.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: e70
+    path: ../SilverCraft.SndFile/Native/SF_CUES.cs
+    startLine: 87
+  assemblies:
+  - SilverCraft.CSCore.SndFile
+  namespace: sndfile
+  syntax:
+    content: public SF_CUE_POINT e70
+    return:
+      type: sndfile.SF_CUE_POINT
+    content.vb: Public e70 As SF_CUE_POINT
+- uid: sndfile.SF_CUES._cue_points_e__FixedBuffer.e71
+  commentId: F:sndfile.SF_CUES._cue_points_e__FixedBuffer.e71
+  id: e71
+  parent: sndfile.SF_CUES._cue_points_e__FixedBuffer
+  langs:
+  - csharp
+  - vb
+  name: e71
+  nameWithType: SF_CUES._cue_points_e__FixedBuffer.e71
+  fullName: sndfile.SF_CUES._cue_points_e__FixedBuffer.e71
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.SndFile/Native/SF_CUES.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: e71
+    path: ../SilverCraft.SndFile/Native/SF_CUES.cs
+    startLine: 88
+  assemblies:
+  - SilverCraft.CSCore.SndFile
+  namespace: sndfile
+  syntax:
+    content: public SF_CUE_POINT e71
+    return:
+      type: sndfile.SF_CUE_POINT
+    content.vb: Public e71 As SF_CUE_POINT
+- uid: sndfile.SF_CUES._cue_points_e__FixedBuffer.e72
+  commentId: F:sndfile.SF_CUES._cue_points_e__FixedBuffer.e72
+  id: e72
+  parent: sndfile.SF_CUES._cue_points_e__FixedBuffer
+  langs:
+  - csharp
+  - vb
+  name: e72
+  nameWithType: SF_CUES._cue_points_e__FixedBuffer.e72
+  fullName: sndfile.SF_CUES._cue_points_e__FixedBuffer.e72
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.SndFile/Native/SF_CUES.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: e72
+    path: ../SilverCraft.SndFile/Native/SF_CUES.cs
+    startLine: 89
+  assemblies:
+  - SilverCraft.CSCore.SndFile
+  namespace: sndfile
+  syntax:
+    content: public SF_CUE_POINT e72
+    return:
+      type: sndfile.SF_CUE_POINT
+    content.vb: Public e72 As SF_CUE_POINT
+- uid: sndfile.SF_CUES._cue_points_e__FixedBuffer.e73
+  commentId: F:sndfile.SF_CUES._cue_points_e__FixedBuffer.e73
+  id: e73
+  parent: sndfile.SF_CUES._cue_points_e__FixedBuffer
+  langs:
+  - csharp
+  - vb
+  name: e73
+  nameWithType: SF_CUES._cue_points_e__FixedBuffer.e73
+  fullName: sndfile.SF_CUES._cue_points_e__FixedBuffer.e73
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.SndFile/Native/SF_CUES.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: e73
+    path: ../SilverCraft.SndFile/Native/SF_CUES.cs
+    startLine: 90
+  assemblies:
+  - SilverCraft.CSCore.SndFile
+  namespace: sndfile
+  syntax:
+    content: public SF_CUE_POINT e73
+    return:
+      type: sndfile.SF_CUE_POINT
+    content.vb: Public e73 As SF_CUE_POINT
+- uid: sndfile.SF_CUES._cue_points_e__FixedBuffer.e74
+  commentId: F:sndfile.SF_CUES._cue_points_e__FixedBuffer.e74
+  id: e74
+  parent: sndfile.SF_CUES._cue_points_e__FixedBuffer
+  langs:
+  - csharp
+  - vb
+  name: e74
+  nameWithType: SF_CUES._cue_points_e__FixedBuffer.e74
+  fullName: sndfile.SF_CUES._cue_points_e__FixedBuffer.e74
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.SndFile/Native/SF_CUES.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: e74
+    path: ../SilverCraft.SndFile/Native/SF_CUES.cs
+    startLine: 91
+  assemblies:
+  - SilverCraft.CSCore.SndFile
+  namespace: sndfile
+  syntax:
+    content: public SF_CUE_POINT e74
+    return:
+      type: sndfile.SF_CUE_POINT
+    content.vb: Public e74 As SF_CUE_POINT
+- uid: sndfile.SF_CUES._cue_points_e__FixedBuffer.e75
+  commentId: F:sndfile.SF_CUES._cue_points_e__FixedBuffer.e75
+  id: e75
+  parent: sndfile.SF_CUES._cue_points_e__FixedBuffer
+  langs:
+  - csharp
+  - vb
+  name: e75
+  nameWithType: SF_CUES._cue_points_e__FixedBuffer.e75
+  fullName: sndfile.SF_CUES._cue_points_e__FixedBuffer.e75
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.SndFile/Native/SF_CUES.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: e75
+    path: ../SilverCraft.SndFile/Native/SF_CUES.cs
+    startLine: 92
+  assemblies:
+  - SilverCraft.CSCore.SndFile
+  namespace: sndfile
+  syntax:
+    content: public SF_CUE_POINT e75
+    return:
+      type: sndfile.SF_CUE_POINT
+    content.vb: Public e75 As SF_CUE_POINT
+- uid: sndfile.SF_CUES._cue_points_e__FixedBuffer.e76
+  commentId: F:sndfile.SF_CUES._cue_points_e__FixedBuffer.e76
+  id: e76
+  parent: sndfile.SF_CUES._cue_points_e__FixedBuffer
+  langs:
+  - csharp
+  - vb
+  name: e76
+  nameWithType: SF_CUES._cue_points_e__FixedBuffer.e76
+  fullName: sndfile.SF_CUES._cue_points_e__FixedBuffer.e76
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.SndFile/Native/SF_CUES.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: e76
+    path: ../SilverCraft.SndFile/Native/SF_CUES.cs
+    startLine: 93
+  assemblies:
+  - SilverCraft.CSCore.SndFile
+  namespace: sndfile
+  syntax:
+    content: public SF_CUE_POINT e76
+    return:
+      type: sndfile.SF_CUE_POINT
+    content.vb: Public e76 As SF_CUE_POINT
+- uid: sndfile.SF_CUES._cue_points_e__FixedBuffer.e77
+  commentId: F:sndfile.SF_CUES._cue_points_e__FixedBuffer.e77
+  id: e77
+  parent: sndfile.SF_CUES._cue_points_e__FixedBuffer
+  langs:
+  - csharp
+  - vb
+  name: e77
+  nameWithType: SF_CUES._cue_points_e__FixedBuffer.e77
+  fullName: sndfile.SF_CUES._cue_points_e__FixedBuffer.e77
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.SndFile/Native/SF_CUES.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: e77
+    path: ../SilverCraft.SndFile/Native/SF_CUES.cs
+    startLine: 94
+  assemblies:
+  - SilverCraft.CSCore.SndFile
+  namespace: sndfile
+  syntax:
+    content: public SF_CUE_POINT e77
+    return:
+      type: sndfile.SF_CUE_POINT
+    content.vb: Public e77 As SF_CUE_POINT
+- uid: sndfile.SF_CUES._cue_points_e__FixedBuffer.e78
+  commentId: F:sndfile.SF_CUES._cue_points_e__FixedBuffer.e78
+  id: e78
+  parent: sndfile.SF_CUES._cue_points_e__FixedBuffer
+  langs:
+  - csharp
+  - vb
+  name: e78
+  nameWithType: SF_CUES._cue_points_e__FixedBuffer.e78
+  fullName: sndfile.SF_CUES._cue_points_e__FixedBuffer.e78
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.SndFile/Native/SF_CUES.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: e78
+    path: ../SilverCraft.SndFile/Native/SF_CUES.cs
+    startLine: 95
+  assemblies:
+  - SilverCraft.CSCore.SndFile
+  namespace: sndfile
+  syntax:
+    content: public SF_CUE_POINT e78
+    return:
+      type: sndfile.SF_CUE_POINT
+    content.vb: Public e78 As SF_CUE_POINT
+- uid: sndfile.SF_CUES._cue_points_e__FixedBuffer.e79
+  commentId: F:sndfile.SF_CUES._cue_points_e__FixedBuffer.e79
+  id: e79
+  parent: sndfile.SF_CUES._cue_points_e__FixedBuffer
+  langs:
+  - csharp
+  - vb
+  name: e79
+  nameWithType: SF_CUES._cue_points_e__FixedBuffer.e79
+  fullName: sndfile.SF_CUES._cue_points_e__FixedBuffer.e79
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.SndFile/Native/SF_CUES.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: e79
+    path: ../SilverCraft.SndFile/Native/SF_CUES.cs
+    startLine: 96
+  assemblies:
+  - SilverCraft.CSCore.SndFile
+  namespace: sndfile
+  syntax:
+    content: public SF_CUE_POINT e79
+    return:
+      type: sndfile.SF_CUE_POINT
+    content.vb: Public e79 As SF_CUE_POINT
+- uid: sndfile.SF_CUES._cue_points_e__FixedBuffer.e80
+  commentId: F:sndfile.SF_CUES._cue_points_e__FixedBuffer.e80
+  id: e80
+  parent: sndfile.SF_CUES._cue_points_e__FixedBuffer
+  langs:
+  - csharp
+  - vb
+  name: e80
+  nameWithType: SF_CUES._cue_points_e__FixedBuffer.e80
+  fullName: sndfile.SF_CUES._cue_points_e__FixedBuffer.e80
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.SndFile/Native/SF_CUES.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: e80
+    path: ../SilverCraft.SndFile/Native/SF_CUES.cs
+    startLine: 97
+  assemblies:
+  - SilverCraft.CSCore.SndFile
+  namespace: sndfile
+  syntax:
+    content: public SF_CUE_POINT e80
+    return:
+      type: sndfile.SF_CUE_POINT
+    content.vb: Public e80 As SF_CUE_POINT
+- uid: sndfile.SF_CUES._cue_points_e__FixedBuffer.e81
+  commentId: F:sndfile.SF_CUES._cue_points_e__FixedBuffer.e81
+  id: e81
+  parent: sndfile.SF_CUES._cue_points_e__FixedBuffer
+  langs:
+  - csharp
+  - vb
+  name: e81
+  nameWithType: SF_CUES._cue_points_e__FixedBuffer.e81
+  fullName: sndfile.SF_CUES._cue_points_e__FixedBuffer.e81
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.SndFile/Native/SF_CUES.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: e81
+    path: ../SilverCraft.SndFile/Native/SF_CUES.cs
+    startLine: 98
+  assemblies:
+  - SilverCraft.CSCore.SndFile
+  namespace: sndfile
+  syntax:
+    content: public SF_CUE_POINT e81
+    return:
+      type: sndfile.SF_CUE_POINT
+    content.vb: Public e81 As SF_CUE_POINT
+- uid: sndfile.SF_CUES._cue_points_e__FixedBuffer.e82
+  commentId: F:sndfile.SF_CUES._cue_points_e__FixedBuffer.e82
+  id: e82
+  parent: sndfile.SF_CUES._cue_points_e__FixedBuffer
+  langs:
+  - csharp
+  - vb
+  name: e82
+  nameWithType: SF_CUES._cue_points_e__FixedBuffer.e82
+  fullName: sndfile.SF_CUES._cue_points_e__FixedBuffer.e82
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.SndFile/Native/SF_CUES.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: e82
+    path: ../SilverCraft.SndFile/Native/SF_CUES.cs
+    startLine: 99
+  assemblies:
+  - SilverCraft.CSCore.SndFile
+  namespace: sndfile
+  syntax:
+    content: public SF_CUE_POINT e82
+    return:
+      type: sndfile.SF_CUE_POINT
+    content.vb: Public e82 As SF_CUE_POINT
+- uid: sndfile.SF_CUES._cue_points_e__FixedBuffer.e83
+  commentId: F:sndfile.SF_CUES._cue_points_e__FixedBuffer.e83
+  id: e83
+  parent: sndfile.SF_CUES._cue_points_e__FixedBuffer
+  langs:
+  - csharp
+  - vb
+  name: e83
+  nameWithType: SF_CUES._cue_points_e__FixedBuffer.e83
+  fullName: sndfile.SF_CUES._cue_points_e__FixedBuffer.e83
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.SndFile/Native/SF_CUES.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: e83
+    path: ../SilverCraft.SndFile/Native/SF_CUES.cs
+    startLine: 100
+  assemblies:
+  - SilverCraft.CSCore.SndFile
+  namespace: sndfile
+  syntax:
+    content: public SF_CUE_POINT e83
+    return:
+      type: sndfile.SF_CUE_POINT
+    content.vb: Public e83 As SF_CUE_POINT
+- uid: sndfile.SF_CUES._cue_points_e__FixedBuffer.e84
+  commentId: F:sndfile.SF_CUES._cue_points_e__FixedBuffer.e84
+  id: e84
+  parent: sndfile.SF_CUES._cue_points_e__FixedBuffer
+  langs:
+  - csharp
+  - vb
+  name: e84
+  nameWithType: SF_CUES._cue_points_e__FixedBuffer.e84
+  fullName: sndfile.SF_CUES._cue_points_e__FixedBuffer.e84
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.SndFile/Native/SF_CUES.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: e84
+    path: ../SilverCraft.SndFile/Native/SF_CUES.cs
+    startLine: 101
+  assemblies:
+  - SilverCraft.CSCore.SndFile
+  namespace: sndfile
+  syntax:
+    content: public SF_CUE_POINT e84
+    return:
+      type: sndfile.SF_CUE_POINT
+    content.vb: Public e84 As SF_CUE_POINT
+- uid: sndfile.SF_CUES._cue_points_e__FixedBuffer.e85
+  commentId: F:sndfile.SF_CUES._cue_points_e__FixedBuffer.e85
+  id: e85
+  parent: sndfile.SF_CUES._cue_points_e__FixedBuffer
+  langs:
+  - csharp
+  - vb
+  name: e85
+  nameWithType: SF_CUES._cue_points_e__FixedBuffer.e85
+  fullName: sndfile.SF_CUES._cue_points_e__FixedBuffer.e85
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.SndFile/Native/SF_CUES.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: e85
+    path: ../SilverCraft.SndFile/Native/SF_CUES.cs
+    startLine: 102
+  assemblies:
+  - SilverCraft.CSCore.SndFile
+  namespace: sndfile
+  syntax:
+    content: public SF_CUE_POINT e85
+    return:
+      type: sndfile.SF_CUE_POINT
+    content.vb: Public e85 As SF_CUE_POINT
+- uid: sndfile.SF_CUES._cue_points_e__FixedBuffer.e86
+  commentId: F:sndfile.SF_CUES._cue_points_e__FixedBuffer.e86
+  id: e86
+  parent: sndfile.SF_CUES._cue_points_e__FixedBuffer
+  langs:
+  - csharp
+  - vb
+  name: e86
+  nameWithType: SF_CUES._cue_points_e__FixedBuffer.e86
+  fullName: sndfile.SF_CUES._cue_points_e__FixedBuffer.e86
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.SndFile/Native/SF_CUES.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: e86
+    path: ../SilverCraft.SndFile/Native/SF_CUES.cs
+    startLine: 103
+  assemblies:
+  - SilverCraft.CSCore.SndFile
+  namespace: sndfile
+  syntax:
+    content: public SF_CUE_POINT e86
+    return:
+      type: sndfile.SF_CUE_POINT
+    content.vb: Public e86 As SF_CUE_POINT
+- uid: sndfile.SF_CUES._cue_points_e__FixedBuffer.e87
+  commentId: F:sndfile.SF_CUES._cue_points_e__FixedBuffer.e87
+  id: e87
+  parent: sndfile.SF_CUES._cue_points_e__FixedBuffer
+  langs:
+  - csharp
+  - vb
+  name: e87
+  nameWithType: SF_CUES._cue_points_e__FixedBuffer.e87
+  fullName: sndfile.SF_CUES._cue_points_e__FixedBuffer.e87
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.SndFile/Native/SF_CUES.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: e87
+    path: ../SilverCraft.SndFile/Native/SF_CUES.cs
+    startLine: 104
+  assemblies:
+  - SilverCraft.CSCore.SndFile
+  namespace: sndfile
+  syntax:
+    content: public SF_CUE_POINT e87
+    return:
+      type: sndfile.SF_CUE_POINT
+    content.vb: Public e87 As SF_CUE_POINT
+- uid: sndfile.SF_CUES._cue_points_e__FixedBuffer.e88
+  commentId: F:sndfile.SF_CUES._cue_points_e__FixedBuffer.e88
+  id: e88
+  parent: sndfile.SF_CUES._cue_points_e__FixedBuffer
+  langs:
+  - csharp
+  - vb
+  name: e88
+  nameWithType: SF_CUES._cue_points_e__FixedBuffer.e88
+  fullName: sndfile.SF_CUES._cue_points_e__FixedBuffer.e88
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.SndFile/Native/SF_CUES.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: e88
+    path: ../SilverCraft.SndFile/Native/SF_CUES.cs
+    startLine: 105
+  assemblies:
+  - SilverCraft.CSCore.SndFile
+  namespace: sndfile
+  syntax:
+    content: public SF_CUE_POINT e88
+    return:
+      type: sndfile.SF_CUE_POINT
+    content.vb: Public e88 As SF_CUE_POINT
+- uid: sndfile.SF_CUES._cue_points_e__FixedBuffer.e89
+  commentId: F:sndfile.SF_CUES._cue_points_e__FixedBuffer.e89
+  id: e89
+  parent: sndfile.SF_CUES._cue_points_e__FixedBuffer
+  langs:
+  - csharp
+  - vb
+  name: e89
+  nameWithType: SF_CUES._cue_points_e__FixedBuffer.e89
+  fullName: sndfile.SF_CUES._cue_points_e__FixedBuffer.e89
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.SndFile/Native/SF_CUES.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: e89
+    path: ../SilverCraft.SndFile/Native/SF_CUES.cs
+    startLine: 106
+  assemblies:
+  - SilverCraft.CSCore.SndFile
+  namespace: sndfile
+  syntax:
+    content: public SF_CUE_POINT e89
+    return:
+      type: sndfile.SF_CUE_POINT
+    content.vb: Public e89 As SF_CUE_POINT
+- uid: sndfile.SF_CUES._cue_points_e__FixedBuffer.e90
+  commentId: F:sndfile.SF_CUES._cue_points_e__FixedBuffer.e90
+  id: e90
+  parent: sndfile.SF_CUES._cue_points_e__FixedBuffer
+  langs:
+  - csharp
+  - vb
+  name: e90
+  nameWithType: SF_CUES._cue_points_e__FixedBuffer.e90
+  fullName: sndfile.SF_CUES._cue_points_e__FixedBuffer.e90
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.SndFile/Native/SF_CUES.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: e90
+    path: ../SilverCraft.SndFile/Native/SF_CUES.cs
+    startLine: 107
+  assemblies:
+  - SilverCraft.CSCore.SndFile
+  namespace: sndfile
+  syntax:
+    content: public SF_CUE_POINT e90
+    return:
+      type: sndfile.SF_CUE_POINT
+    content.vb: Public e90 As SF_CUE_POINT
+- uid: sndfile.SF_CUES._cue_points_e__FixedBuffer.e91
+  commentId: F:sndfile.SF_CUES._cue_points_e__FixedBuffer.e91
+  id: e91
+  parent: sndfile.SF_CUES._cue_points_e__FixedBuffer
+  langs:
+  - csharp
+  - vb
+  name: e91
+  nameWithType: SF_CUES._cue_points_e__FixedBuffer.e91
+  fullName: sndfile.SF_CUES._cue_points_e__FixedBuffer.e91
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.SndFile/Native/SF_CUES.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: e91
+    path: ../SilverCraft.SndFile/Native/SF_CUES.cs
+    startLine: 108
+  assemblies:
+  - SilverCraft.CSCore.SndFile
+  namespace: sndfile
+  syntax:
+    content: public SF_CUE_POINT e91
+    return:
+      type: sndfile.SF_CUE_POINT
+    content.vb: Public e91 As SF_CUE_POINT
+- uid: sndfile.SF_CUES._cue_points_e__FixedBuffer.e92
+  commentId: F:sndfile.SF_CUES._cue_points_e__FixedBuffer.e92
+  id: e92
+  parent: sndfile.SF_CUES._cue_points_e__FixedBuffer
+  langs:
+  - csharp
+  - vb
+  name: e92
+  nameWithType: SF_CUES._cue_points_e__FixedBuffer.e92
+  fullName: sndfile.SF_CUES._cue_points_e__FixedBuffer.e92
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.SndFile/Native/SF_CUES.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: e92
+    path: ../SilverCraft.SndFile/Native/SF_CUES.cs
+    startLine: 109
+  assemblies:
+  - SilverCraft.CSCore.SndFile
+  namespace: sndfile
+  syntax:
+    content: public SF_CUE_POINT e92
+    return:
+      type: sndfile.SF_CUE_POINT
+    content.vb: Public e92 As SF_CUE_POINT
+- uid: sndfile.SF_CUES._cue_points_e__FixedBuffer.e93
+  commentId: F:sndfile.SF_CUES._cue_points_e__FixedBuffer.e93
+  id: e93
+  parent: sndfile.SF_CUES._cue_points_e__FixedBuffer
+  langs:
+  - csharp
+  - vb
+  name: e93
+  nameWithType: SF_CUES._cue_points_e__FixedBuffer.e93
+  fullName: sndfile.SF_CUES._cue_points_e__FixedBuffer.e93
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.SndFile/Native/SF_CUES.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: e93
+    path: ../SilverCraft.SndFile/Native/SF_CUES.cs
+    startLine: 110
+  assemblies:
+  - SilverCraft.CSCore.SndFile
+  namespace: sndfile
+  syntax:
+    content: public SF_CUE_POINT e93
+    return:
+      type: sndfile.SF_CUE_POINT
+    content.vb: Public e93 As SF_CUE_POINT
+- uid: sndfile.SF_CUES._cue_points_e__FixedBuffer.e94
+  commentId: F:sndfile.SF_CUES._cue_points_e__FixedBuffer.e94
+  id: e94
+  parent: sndfile.SF_CUES._cue_points_e__FixedBuffer
+  langs:
+  - csharp
+  - vb
+  name: e94
+  nameWithType: SF_CUES._cue_points_e__FixedBuffer.e94
+  fullName: sndfile.SF_CUES._cue_points_e__FixedBuffer.e94
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.SndFile/Native/SF_CUES.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: e94
+    path: ../SilverCraft.SndFile/Native/SF_CUES.cs
+    startLine: 111
+  assemblies:
+  - SilverCraft.CSCore.SndFile
+  namespace: sndfile
+  syntax:
+    content: public SF_CUE_POINT e94
+    return:
+      type: sndfile.SF_CUE_POINT
+    content.vb: Public e94 As SF_CUE_POINT
+- uid: sndfile.SF_CUES._cue_points_e__FixedBuffer.e95
+  commentId: F:sndfile.SF_CUES._cue_points_e__FixedBuffer.e95
+  id: e95
+  parent: sndfile.SF_CUES._cue_points_e__FixedBuffer
+  langs:
+  - csharp
+  - vb
+  name: e95
+  nameWithType: SF_CUES._cue_points_e__FixedBuffer.e95
+  fullName: sndfile.SF_CUES._cue_points_e__FixedBuffer.e95
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.SndFile/Native/SF_CUES.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: e95
+    path: ../SilverCraft.SndFile/Native/SF_CUES.cs
+    startLine: 112
+  assemblies:
+  - SilverCraft.CSCore.SndFile
+  namespace: sndfile
+  syntax:
+    content: public SF_CUE_POINT e95
+    return:
+      type: sndfile.SF_CUE_POINT
+    content.vb: Public e95 As SF_CUE_POINT
+- uid: sndfile.SF_CUES._cue_points_e__FixedBuffer.e96
+  commentId: F:sndfile.SF_CUES._cue_points_e__FixedBuffer.e96
+  id: e96
+  parent: sndfile.SF_CUES._cue_points_e__FixedBuffer
+  langs:
+  - csharp
+  - vb
+  name: e96
+  nameWithType: SF_CUES._cue_points_e__FixedBuffer.e96
+  fullName: sndfile.SF_CUES._cue_points_e__FixedBuffer.e96
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.SndFile/Native/SF_CUES.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: e96
+    path: ../SilverCraft.SndFile/Native/SF_CUES.cs
+    startLine: 113
+  assemblies:
+  - SilverCraft.CSCore.SndFile
+  namespace: sndfile
+  syntax:
+    content: public SF_CUE_POINT e96
+    return:
+      type: sndfile.SF_CUE_POINT
+    content.vb: Public e96 As SF_CUE_POINT
+- uid: sndfile.SF_CUES._cue_points_e__FixedBuffer.e97
+  commentId: F:sndfile.SF_CUES._cue_points_e__FixedBuffer.e97
+  id: e97
+  parent: sndfile.SF_CUES._cue_points_e__FixedBuffer
+  langs:
+  - csharp
+  - vb
+  name: e97
+  nameWithType: SF_CUES._cue_points_e__FixedBuffer.e97
+  fullName: sndfile.SF_CUES._cue_points_e__FixedBuffer.e97
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.SndFile/Native/SF_CUES.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: e97
+    path: ../SilverCraft.SndFile/Native/SF_CUES.cs
+    startLine: 114
+  assemblies:
+  - SilverCraft.CSCore.SndFile
+  namespace: sndfile
+  syntax:
+    content: public SF_CUE_POINT e97
+    return:
+      type: sndfile.SF_CUE_POINT
+    content.vb: Public e97 As SF_CUE_POINT
+- uid: sndfile.SF_CUES._cue_points_e__FixedBuffer.e98
+  commentId: F:sndfile.SF_CUES._cue_points_e__FixedBuffer.e98
+  id: e98
+  parent: sndfile.SF_CUES._cue_points_e__FixedBuffer
+  langs:
+  - csharp
+  - vb
+  name: e98
+  nameWithType: SF_CUES._cue_points_e__FixedBuffer.e98
+  fullName: sndfile.SF_CUES._cue_points_e__FixedBuffer.e98
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.SndFile/Native/SF_CUES.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: e98
+    path: ../SilverCraft.SndFile/Native/SF_CUES.cs
+    startLine: 115
+  assemblies:
+  - SilverCraft.CSCore.SndFile
+  namespace: sndfile
+  syntax:
+    content: public SF_CUE_POINT e98
+    return:
+      type: sndfile.SF_CUE_POINT
+    content.vb: Public e98 As SF_CUE_POINT
+- uid: sndfile.SF_CUES._cue_points_e__FixedBuffer.e99
+  commentId: F:sndfile.SF_CUES._cue_points_e__FixedBuffer.e99
+  id: e99
+  parent: sndfile.SF_CUES._cue_points_e__FixedBuffer
+  langs:
+  - csharp
+  - vb
+  name: e99
+  nameWithType: SF_CUES._cue_points_e__FixedBuffer.e99
+  fullName: sndfile.SF_CUES._cue_points_e__FixedBuffer.e99
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.SndFile/Native/SF_CUES.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: e99
+    path: ../SilverCraft.SndFile/Native/SF_CUES.cs
+    startLine: 116
+  assemblies:
+  - SilverCraft.CSCore.SndFile
+  namespace: sndfile
+  syntax:
+    content: public SF_CUE_POINT e99
+    return:
+      type: sndfile.SF_CUE_POINT
+    content.vb: Public e99 As SF_CUE_POINT
+- uid: sndfile.SF_CUES._cue_points_e__FixedBuffer.Item(System.Int32)
+  commentId: P:sndfile.SF_CUES._cue_points_e__FixedBuffer.Item(System.Int32)
+  id: Item(System.Int32)
+  parent: sndfile.SF_CUES._cue_points_e__FixedBuffer
+  langs:
+  - csharp
+  - vb
+  name: this[int]
+  nameWithType: SF_CUES._cue_points_e__FixedBuffer.this[int]
+  fullName: sndfile.SF_CUES._cue_points_e__FixedBuffer.this[int]
+  type: Property
+  source:
+    remote:
+      path: SilverCraft.SndFile/Native/SF_CUES.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: this[]
+    path: ../SilverCraft.SndFile/Native/SF_CUES.cs
+    startLine: 118
+  assemblies:
+  - SilverCraft.CSCore.SndFile
+  namespace: sndfile
+  syntax:
+    content: >-
+      [UnscopedRef]
+
+      public ref SF_CUE_POINT this[int index] { get; }
+    parameters:
+    - id: index
+      type: System.Int32
+    return:
+      type: sndfile.SF_CUE_POINT
+    content.vb: >-
+      <UnscopedRef>
+
+      Public ReadOnly Default ByRef Property this[](index As Integer) As SF_CUE_POINT
+  overload: sndfile.SF_CUES._cue_points_e__FixedBuffer.Item*
+  attributes:
+  - type: System.Diagnostics.CodeAnalysis.UnscopedRefAttribute
+    ctor: System.Diagnostics.CodeAnalysis.UnscopedRefAttribute.#ctor
+    arguments: []
+  nameWithType.vb: SF_CUES._cue_points_e__FixedBuffer.this[](Integer)
+  fullName.vb: sndfile.SF_CUES._cue_points_e__FixedBuffer.this[](Integer)
+  name.vb: this[](Integer)
+- uid: sndfile.SF_CUES._cue_points_e__FixedBuffer.AsSpan
+  commentId: M:sndfile.SF_CUES._cue_points_e__FixedBuffer.AsSpan
+  id: AsSpan
+  parent: sndfile.SF_CUES._cue_points_e__FixedBuffer
+  langs:
+  - csharp
+  - vb
+  name: AsSpan()
+  nameWithType: SF_CUES._cue_points_e__FixedBuffer.AsSpan()
+  fullName: sndfile.SF_CUES._cue_points_e__FixedBuffer.AsSpan()
+  type: Method
+  source:
+    remote:
+      path: SilverCraft.SndFile/Native/SF_CUES.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: AsSpan
+    path: ../SilverCraft.SndFile/Native/SF_CUES.cs
+    startLine: 128
+  assemblies:
+  - SilverCraft.CSCore.SndFile
+  namespace: sndfile
+  syntax:
+    content: >-
+      [UnscopedRef]
+
+      public Span<SF_CUE_POINT> AsSpan()
+    return:
+      type: System.Span{sndfile.SF_CUE_POINT}
+    content.vb: >-
+      <UnscopedRef>
+
+      Public Function AsSpan() As Span(Of SF_CUE_POINT)
+  overload: sndfile.SF_CUES._cue_points_e__FixedBuffer.AsSpan*
+  attributes:
+  - type: System.Diagnostics.CodeAnalysis.UnscopedRefAttribute
+    ctor: System.Diagnostics.CodeAnalysis.UnscopedRefAttribute.#ctor
+    arguments: []
+references:
+- uid: sndfile
+  commentId: N:sndfile
+  href: sndfile.html
+  name: sndfile
+  nameWithType: sndfile
+  fullName: sndfile
+- uid: System.ValueType.Equals(System.Object)
+  commentId: M:System.ValueType.Equals(System.Object)
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  name: Equals(object)
+  nameWithType: ValueType.Equals(object)
+  fullName: System.ValueType.Equals(object)
+  nameWithType.vb: ValueType.Equals(Object)
+  fullName.vb: System.ValueType.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.ValueType.GetHashCode
+  commentId: M:System.ValueType.GetHashCode
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  name: GetHashCode()
+  nameWithType: ValueType.GetHashCode()
+  fullName: System.ValueType.GetHashCode()
+  spec.csharp:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  - name: (
+  - name: )
+- uid: System.ValueType.ToString
+  commentId: M:System.ValueType.ToString
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  name: ToString()
+  nameWithType: ValueType.ToString()
+  fullName: System.ValueType.ToString()
+  spec.csharp:
+  - uid: System.ValueType.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.ValueType
+  commentId: T:System.ValueType
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype
+  name: ValueType
+  nameWithType: ValueType
+  fullName: System.ValueType
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: sndfile.SF_CUE_POINT
+  commentId: T:sndfile.SF_CUE_POINT
+  parent: sndfile
+  href: sndfile.SF_CUE_POINT.html
+  name: SF_CUE_POINT
+  nameWithType: SF_CUE_POINT
+  fullName: sndfile.SF_CUE_POINT
+- uid: sndfile.SF_CUES._cue_points_e__FixedBuffer.Item*
+  commentId: Overload:sndfile.SF_CUES._cue_points_e__FixedBuffer.Item
+  href: sndfile.SF_CUES._cue_points_e__FixedBuffer.html#sndfile_SF_CUES__cue_points_e__FixedBuffer_Item_System_Int32_
+  name: this
+  nameWithType: SF_CUES._cue_points_e__FixedBuffer.this
+  fullName: sndfile.SF_CUES._cue_points_e__FixedBuffer.this
+  nameWithType.vb: SF_CUES._cue_points_e__FixedBuffer.this[]
+  fullName.vb: sndfile.SF_CUES._cue_points_e__FixedBuffer.this[]
+  name.vb: this[]
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: sndfile.SF_CUES._cue_points_e__FixedBuffer.AsSpan*
+  commentId: Overload:sndfile.SF_CUES._cue_points_e__FixedBuffer.AsSpan
+  href: sndfile.SF_CUES._cue_points_e__FixedBuffer.html#sndfile_SF_CUES__cue_points_e__FixedBuffer_AsSpan
+  name: AsSpan
+  nameWithType: SF_CUES._cue_points_e__FixedBuffer.AsSpan
+  fullName: sndfile.SF_CUES._cue_points_e__FixedBuffer.AsSpan
+- uid: System.Span{sndfile.SF_CUE_POINT}
+  commentId: T:System.Span{sndfile.SF_CUE_POINT}
+  parent: System
+  definition: System.Span`1
+  href: https://learn.microsoft.com/dotnet/api/system.span-1
+  name: Span<SF_CUE_POINT>
+  nameWithType: Span<SF_CUE_POINT>
+  fullName: System.Span<sndfile.SF_CUE_POINT>
+  nameWithType.vb: Span(Of SF_CUE_POINT)
+  fullName.vb: System.Span(Of sndfile.SF_CUE_POINT)
+  name.vb: Span(Of SF_CUE_POINT)
+  spec.csharp:
+  - uid: System.Span`1
+    name: Span
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.span-1
+  - name: <
+  - uid: sndfile.SF_CUE_POINT
+    name: SF_CUE_POINT
+    href: sndfile.SF_CUE_POINT.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Span`1
+    name: Span
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.span-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: sndfile.SF_CUE_POINT
+    name: SF_CUE_POINT
+    href: sndfile.SF_CUE_POINT.html
+  - name: )
+- uid: System.Span`1
+  commentId: T:System.Span`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.span-1
+  name: Span<T>
+  nameWithType: Span<T>
+  fullName: System.Span<T>
+  nameWithType.vb: Span(Of T)
+  fullName.vb: System.Span(Of T)
+  name.vb: Span(Of T)
+  spec.csharp:
+  - uid: System.Span`1
+    name: Span
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.span-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Span`1
+    name: Span
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.span-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )

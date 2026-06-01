@@ -1,0 +1,770 @@
+### YamlMime:ManagedReference
+items:
+- uid: sndfile.SF_VIRTUAL_IO
+  commentId: T:sndfile.SF_VIRTUAL_IO
+  id: SF_VIRTUAL_IO
+  parent: sndfile
+  children:
+  - sndfile.SF_VIRTUAL_IO.#ctor(sndfile.SfVirtualLength,sndfile.SfVirtualSeek,sndfile.SfVirtualRead,sndfile.SfVirtualWrite,sndfile.SfVirtualTell)
+  - sndfile.SF_VIRTUAL_IO.Equals(System.Object)
+  - sndfile.SF_VIRTUAL_IO.GetHashCode
+  - sndfile.SF_VIRTUAL_IO.Length
+  - sndfile.SF_VIRTUAL_IO.Read
+  - sndfile.SF_VIRTUAL_IO.Seek
+  - sndfile.SF_VIRTUAL_IO.Tell
+  - sndfile.SF_VIRTUAL_IO.Write
+  - sndfile.SF_VIRTUAL_IO.op_Equality(sndfile.SF_VIRTUAL_IO,sndfile.SF_VIRTUAL_IO)
+  - sndfile.SF_VIRTUAL_IO.op_Inequality(sndfile.SF_VIRTUAL_IO,sndfile.SF_VIRTUAL_IO)
+  langs:
+  - csharp
+  - vb
+  name: SF_VIRTUAL_IO
+  nameWithType: SF_VIRTUAL_IO
+  fullName: sndfile.SF_VIRTUAL_IO
+  type: Struct
+  source:
+    remote:
+      path: SilverCraft.SndFile/Native/SF_VIRTUAL_IO.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: SF_VIRTUAL_IO
+    path: ../SilverCraft.SndFile/Native/SF_VIRTUAL_IO.cs
+    startLine: 71
+  assemblies:
+  - SilverCraft.CSCore.SndFile
+  namespace: sndfile
+  syntax:
+    content: public struct SF_VIRTUAL_IO
+    content.vb: Public Structure SF_VIRTUAL_IO
+  inheritedMembers:
+  - System.ValueType.ToString
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetType
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+- uid: sndfile.SF_VIRTUAL_IO.Length
+  commentId: F:sndfile.SF_VIRTUAL_IO.Length
+  id: Length
+  parent: sndfile.SF_VIRTUAL_IO
+  langs:
+  - csharp
+  - vb
+  name: Length
+  nameWithType: SF_VIRTUAL_IO.Length
+  fullName: sndfile.SF_VIRTUAL_IO.Length
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.SndFile/Native/SF_VIRTUAL_IO.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: Length
+    path: ../SilverCraft.SndFile/Native/SF_VIRTUAL_IO.cs
+    startLine: 75
+  assemblies:
+  - SilverCraft.CSCore.SndFile
+  namespace: sndfile
+  syntax:
+    content: >-
+      [NotNull]
+
+      public readonly SfVirtualLength Length
+    return:
+      type: sndfile.SfVirtualLength
+    content.vb: >-
+      <NotNull>
+
+      Public ReadOnly Length As SfVirtualLength
+  attributes:
+  - type: System.Diagnostics.CodeAnalysis.NotNullAttribute
+    ctor: System.Diagnostics.CodeAnalysis.NotNullAttribute.#ctor
+    arguments: []
+- uid: sndfile.SF_VIRTUAL_IO.Seek
+  commentId: F:sndfile.SF_VIRTUAL_IO.Seek
+  id: Seek
+  parent: sndfile.SF_VIRTUAL_IO
+  langs:
+  - csharp
+  - vb
+  name: Seek
+  nameWithType: SF_VIRTUAL_IO.Seek
+  fullName: sndfile.SF_VIRTUAL_IO.Seek
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.SndFile/Native/SF_VIRTUAL_IO.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: Seek
+    path: ../SilverCraft.SndFile/Native/SF_VIRTUAL_IO.cs
+    startLine: 79
+  assemblies:
+  - SilverCraft.CSCore.SndFile
+  namespace: sndfile
+  syntax:
+    content: >-
+      [NotNull]
+
+      public readonly SfVirtualSeek Seek
+    return:
+      type: sndfile.SfVirtualSeek
+    content.vb: >-
+      <NotNull>
+
+      Public ReadOnly Seek As SfVirtualSeek
+  attributes:
+  - type: System.Diagnostics.CodeAnalysis.NotNullAttribute
+    ctor: System.Diagnostics.CodeAnalysis.NotNullAttribute.#ctor
+    arguments: []
+- uid: sndfile.SF_VIRTUAL_IO.Read
+  commentId: F:sndfile.SF_VIRTUAL_IO.Read
+  id: Read
+  parent: sndfile.SF_VIRTUAL_IO
+  langs:
+  - csharp
+  - vb
+  name: Read
+  nameWithType: SF_VIRTUAL_IO.Read
+  fullName: sndfile.SF_VIRTUAL_IO.Read
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.SndFile/Native/SF_VIRTUAL_IO.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: Read
+    path: ../SilverCraft.SndFile/Native/SF_VIRTUAL_IO.cs
+    startLine: 83
+  assemblies:
+  - SilverCraft.CSCore.SndFile
+  namespace: sndfile
+  syntax:
+    content: >-
+      [NotNull]
+
+      public readonly SfVirtualRead Read
+    return:
+      type: sndfile.SfVirtualRead
+    content.vb: >-
+      <NotNull>
+
+      Public ReadOnly Read As SfVirtualRead
+  attributes:
+  - type: System.Diagnostics.CodeAnalysis.NotNullAttribute
+    ctor: System.Diagnostics.CodeAnalysis.NotNullAttribute.#ctor
+    arguments: []
+- uid: sndfile.SF_VIRTUAL_IO.Write
+  commentId: F:sndfile.SF_VIRTUAL_IO.Write
+  id: Write
+  parent: sndfile.SF_VIRTUAL_IO
+  langs:
+  - csharp
+  - vb
+  name: Write
+  nameWithType: SF_VIRTUAL_IO.Write
+  fullName: sndfile.SF_VIRTUAL_IO.Write
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.SndFile/Native/SF_VIRTUAL_IO.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: Write
+    path: ../SilverCraft.SndFile/Native/SF_VIRTUAL_IO.cs
+    startLine: 87
+  assemblies:
+  - SilverCraft.CSCore.SndFile
+  namespace: sndfile
+  syntax:
+    content: >-
+      [NotNull]
+
+      public readonly SfVirtualWrite Write
+    return:
+      type: sndfile.SfVirtualWrite
+    content.vb: >-
+      <NotNull>
+
+      Public ReadOnly Write As SfVirtualWrite
+  attributes:
+  - type: System.Diagnostics.CodeAnalysis.NotNullAttribute
+    ctor: System.Diagnostics.CodeAnalysis.NotNullAttribute.#ctor
+    arguments: []
+- uid: sndfile.SF_VIRTUAL_IO.Tell
+  commentId: F:sndfile.SF_VIRTUAL_IO.Tell
+  id: Tell
+  parent: sndfile.SF_VIRTUAL_IO
+  langs:
+  - csharp
+  - vb
+  name: Tell
+  nameWithType: SF_VIRTUAL_IO.Tell
+  fullName: sndfile.SF_VIRTUAL_IO.Tell
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.SndFile/Native/SF_VIRTUAL_IO.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: Tell
+    path: ../SilverCraft.SndFile/Native/SF_VIRTUAL_IO.cs
+    startLine: 91
+  assemblies:
+  - SilverCraft.CSCore.SndFile
+  namespace: sndfile
+  syntax:
+    content: >-
+      [NotNull]
+
+      public readonly SfVirtualTell Tell
+    return:
+      type: sndfile.SfVirtualTell
+    content.vb: >-
+      <NotNull>
+
+      Public ReadOnly Tell As SfVirtualTell
+  attributes:
+  - type: System.Diagnostics.CodeAnalysis.NotNullAttribute
+    ctor: System.Diagnostics.CodeAnalysis.NotNullAttribute.#ctor
+    arguments: []
+- uid: sndfile.SF_VIRTUAL_IO.#ctor(sndfile.SfVirtualLength,sndfile.SfVirtualSeek,sndfile.SfVirtualRead,sndfile.SfVirtualWrite,sndfile.SfVirtualTell)
+  commentId: M:sndfile.SF_VIRTUAL_IO.#ctor(sndfile.SfVirtualLength,sndfile.SfVirtualSeek,sndfile.SfVirtualRead,sndfile.SfVirtualWrite,sndfile.SfVirtualTell)
+  id: '#ctor(sndfile.SfVirtualLength,sndfile.SfVirtualSeek,sndfile.SfVirtualRead,sndfile.SfVirtualWrite,sndfile.SfVirtualTell)'
+  parent: sndfile.SF_VIRTUAL_IO
+  langs:
+  - csharp
+  - vb
+  name: SF_VIRTUAL_IO(SfVirtualLength, SfVirtualSeek, SfVirtualRead, SfVirtualWrite, SfVirtualTell)
+  nameWithType: SF_VIRTUAL_IO.SF_VIRTUAL_IO(SfVirtualLength, SfVirtualSeek, SfVirtualRead, SfVirtualWrite, SfVirtualTell)
+  fullName: sndfile.SF_VIRTUAL_IO.SF_VIRTUAL_IO(sndfile.SfVirtualLength, sndfile.SfVirtualSeek, sndfile.SfVirtualRead, sndfile.SfVirtualWrite, sndfile.SfVirtualTell)
+  type: Constructor
+  source:
+    remote:
+      path: SilverCraft.SndFile/Native/SF_VIRTUAL_IO.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: .ctor
+    path: ../SilverCraft.SndFile/Native/SF_VIRTUAL_IO.cs
+    startLine: 93
+  assemblies:
+  - SilverCraft.CSCore.SndFile
+  namespace: sndfile
+  syntax:
+    content: public SF_VIRTUAL_IO(SfVirtualLength length, SfVirtualSeek seek, SfVirtualRead read, SfVirtualWrite write, SfVirtualTell tell)
+    parameters:
+    - id: length
+      type: sndfile.SfVirtualLength
+      attributes:
+      - type: System.Diagnostics.CodeAnalysis.NotNullAttribute
+        ctor: System.Diagnostics.CodeAnalysis.NotNullAttribute.#ctor
+        arguments: []
+    - id: seek
+      type: sndfile.SfVirtualSeek
+      attributes:
+      - type: System.Diagnostics.CodeAnalysis.NotNullAttribute
+        ctor: System.Diagnostics.CodeAnalysis.NotNullAttribute.#ctor
+        arguments: []
+    - id: read
+      type: sndfile.SfVirtualRead
+      attributes:
+      - type: System.Diagnostics.CodeAnalysis.NotNullAttribute
+        ctor: System.Diagnostics.CodeAnalysis.NotNullAttribute.#ctor
+        arguments: []
+    - id: write
+      type: sndfile.SfVirtualWrite
+      attributes:
+      - type: System.Diagnostics.CodeAnalysis.NotNullAttribute
+        ctor: System.Diagnostics.CodeAnalysis.NotNullAttribute.#ctor
+        arguments: []
+    - id: tell
+      type: sndfile.SfVirtualTell
+      attributes:
+      - type: System.Diagnostics.CodeAnalysis.NotNullAttribute
+        ctor: System.Diagnostics.CodeAnalysis.NotNullAttribute.#ctor
+        arguments: []
+    content.vb: Public Sub New(length As SfVirtualLength, seek As SfVirtualSeek, read As SfVirtualRead, write As SfVirtualWrite, tell As SfVirtualTell)
+  overload: sndfile.SF_VIRTUAL_IO.#ctor*
+  nameWithType.vb: SF_VIRTUAL_IO.New(SfVirtualLength, SfVirtualSeek, SfVirtualRead, SfVirtualWrite, SfVirtualTell)
+  fullName.vb: sndfile.SF_VIRTUAL_IO.New(sndfile.SfVirtualLength, sndfile.SfVirtualSeek, sndfile.SfVirtualRead, sndfile.SfVirtualWrite, sndfile.SfVirtualTell)
+  name.vb: New(SfVirtualLength, SfVirtualSeek, SfVirtualRead, SfVirtualWrite, SfVirtualTell)
+- uid: sndfile.SF_VIRTUAL_IO.Equals(System.Object)
+  commentId: M:sndfile.SF_VIRTUAL_IO.Equals(System.Object)
+  id: Equals(System.Object)
+  parent: sndfile.SF_VIRTUAL_IO
+  langs:
+  - csharp
+  - vb
+  name: Equals(object?)
+  nameWithType: SF_VIRTUAL_IO.Equals(object?)
+  fullName: sndfile.SF_VIRTUAL_IO.Equals(object?)
+  type: Method
+  source:
+    remote:
+      path: SilverCraft.SndFile/Native/SF_VIRTUAL_IO.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: Equals
+    path: ../SilverCraft.SndFile/Native/SF_VIRTUAL_IO.cs
+    startLine: 113
+  assemblies:
+  - SilverCraft.CSCore.SndFile
+  namespace: sndfile
+  summary: Indicates whether this instance and a specified object are equal.
+  example: []
+  syntax:
+    content: public override bool Equals(object? obj)
+    parameters:
+    - id: obj
+      type: System.Object
+      description: The object to compare with the current instance.
+    return:
+      type: System.Boolean
+      description: <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if <code class="paramref">obj</code> and this instance are the same type and represent the same value; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.
+    content.vb: Public Overrides Function Equals(obj As Object) As Boolean
+  overridden: System.ValueType.Equals(System.Object)
+  overload: sndfile.SF_VIRTUAL_IO.Equals*
+  nameWithType.vb: SF_VIRTUAL_IO.Equals(Object)
+  fullName.vb: sndfile.SF_VIRTUAL_IO.Equals(Object)
+  name.vb: Equals(Object)
+- uid: sndfile.SF_VIRTUAL_IO.GetHashCode
+  commentId: M:sndfile.SF_VIRTUAL_IO.GetHashCode
+  id: GetHashCode
+  parent: sndfile.SF_VIRTUAL_IO
+  langs:
+  - csharp
+  - vb
+  name: GetHashCode()
+  nameWithType: SF_VIRTUAL_IO.GetHashCode()
+  fullName: sndfile.SF_VIRTUAL_IO.GetHashCode()
+  type: Method
+  source:
+    remote:
+      path: SilverCraft.SndFile/Native/SF_VIRTUAL_IO.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: GetHashCode
+    path: ../SilverCraft.SndFile/Native/SF_VIRTUAL_IO.cs
+    startLine: 118
+  assemblies:
+  - SilverCraft.CSCore.SndFile
+  namespace: sndfile
+  summary: Returns the hash code for this instance.
+  example: []
+  syntax:
+    content: public override int GetHashCode()
+    return:
+      type: System.Int32
+      description: A 32-bit signed integer that is the hash code for this instance.
+    content.vb: Public Overrides Function GetHashCode() As Integer
+  overridden: System.ValueType.GetHashCode
+  overload: sndfile.SF_VIRTUAL_IO.GetHashCode*
+- uid: sndfile.SF_VIRTUAL_IO.op_Equality(sndfile.SF_VIRTUAL_IO,sndfile.SF_VIRTUAL_IO)
+  commentId: M:sndfile.SF_VIRTUAL_IO.op_Equality(sndfile.SF_VIRTUAL_IO,sndfile.SF_VIRTUAL_IO)
+  id: op_Equality(sndfile.SF_VIRTUAL_IO,sndfile.SF_VIRTUAL_IO)
+  parent: sndfile.SF_VIRTUAL_IO
+  langs:
+  - csharp
+  - vb
+  name: operator ==(SF_VIRTUAL_IO, SF_VIRTUAL_IO)
+  nameWithType: SF_VIRTUAL_IO.operator ==(SF_VIRTUAL_IO, SF_VIRTUAL_IO)
+  fullName: sndfile.SF_VIRTUAL_IO.operator ==(sndfile.SF_VIRTUAL_IO, sndfile.SF_VIRTUAL_IO)
+  type: Operator
+  source:
+    remote:
+      path: SilverCraft.SndFile/Native/SF_VIRTUAL_IO.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: op_Equality
+    path: ../SilverCraft.SndFile/Native/SF_VIRTUAL_IO.cs
+    startLine: 131
+  assemblies:
+  - SilverCraft.CSCore.SndFile
+  namespace: sndfile
+  syntax:
+    content: public static bool operator ==(SF_VIRTUAL_IO left, SF_VIRTUAL_IO right)
+    parameters:
+    - id: left
+      type: sndfile.SF_VIRTUAL_IO
+    - id: right
+      type: sndfile.SF_VIRTUAL_IO
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Operator =(left As SF_VIRTUAL_IO, right As SF_VIRTUAL_IO) As Boolean
+  overload: sndfile.SF_VIRTUAL_IO.op_Equality*
+  nameWithType.vb: SF_VIRTUAL_IO.=(SF_VIRTUAL_IO, SF_VIRTUAL_IO)
+  fullName.vb: sndfile.SF_VIRTUAL_IO.=(sndfile.SF_VIRTUAL_IO, sndfile.SF_VIRTUAL_IO)
+  name.vb: =(SF_VIRTUAL_IO, SF_VIRTUAL_IO)
+- uid: sndfile.SF_VIRTUAL_IO.op_Inequality(sndfile.SF_VIRTUAL_IO,sndfile.SF_VIRTUAL_IO)
+  commentId: M:sndfile.SF_VIRTUAL_IO.op_Inequality(sndfile.SF_VIRTUAL_IO,sndfile.SF_VIRTUAL_IO)
+  id: op_Inequality(sndfile.SF_VIRTUAL_IO,sndfile.SF_VIRTUAL_IO)
+  parent: sndfile.SF_VIRTUAL_IO
+  langs:
+  - csharp
+  - vb
+  name: operator !=(SF_VIRTUAL_IO, SF_VIRTUAL_IO)
+  nameWithType: SF_VIRTUAL_IO.operator !=(SF_VIRTUAL_IO, SF_VIRTUAL_IO)
+  fullName: sndfile.SF_VIRTUAL_IO.operator !=(sndfile.SF_VIRTUAL_IO, sndfile.SF_VIRTUAL_IO)
+  type: Operator
+  source:
+    remote:
+      path: SilverCraft.SndFile/Native/SF_VIRTUAL_IO.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: op_Inequality
+    path: ../SilverCraft.SndFile/Native/SF_VIRTUAL_IO.cs
+    startLine: 136
+  assemblies:
+  - SilverCraft.CSCore.SndFile
+  namespace: sndfile
+  syntax:
+    content: public static bool operator !=(SF_VIRTUAL_IO left, SF_VIRTUAL_IO right)
+    parameters:
+    - id: left
+      type: sndfile.SF_VIRTUAL_IO
+    - id: right
+      type: sndfile.SF_VIRTUAL_IO
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Operator <>(left As SF_VIRTUAL_IO, right As SF_VIRTUAL_IO) As Boolean
+  overload: sndfile.SF_VIRTUAL_IO.op_Inequality*
+  nameWithType.vb: SF_VIRTUAL_IO.<>(SF_VIRTUAL_IO, SF_VIRTUAL_IO)
+  fullName.vb: sndfile.SF_VIRTUAL_IO.<>(sndfile.SF_VIRTUAL_IO, sndfile.SF_VIRTUAL_IO)
+  name.vb: <>(SF_VIRTUAL_IO, SF_VIRTUAL_IO)
+references:
+- uid: sndfile
+  commentId: N:sndfile
+  href: sndfile.html
+  name: sndfile
+  nameWithType: sndfile
+  fullName: sndfile
+- uid: System.ValueType.ToString
+  commentId: M:System.ValueType.ToString
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  name: ToString()
+  nameWithType: ValueType.ToString()
+  fullName: System.ValueType.ToString()
+  spec.csharp:
+  - uid: System.ValueType.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.ValueType
+  commentId: T:System.ValueType
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype
+  name: ValueType
+  nameWithType: ValueType
+  fullName: System.ValueType
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: sndfile.SfVirtualLength
+  commentId: T:sndfile.SfVirtualLength
+  parent: sndfile
+  href: sndfile.SfVirtualLength.html
+  name: SfVirtualLength
+  nameWithType: SfVirtualLength
+  fullName: sndfile.SfVirtualLength
+- uid: sndfile.SfVirtualSeek
+  commentId: T:sndfile.SfVirtualSeek
+  parent: sndfile
+  href: sndfile.SfVirtualSeek.html
+  name: SfVirtualSeek
+  nameWithType: SfVirtualSeek
+  fullName: sndfile.SfVirtualSeek
+- uid: sndfile.SfVirtualRead
+  commentId: T:sndfile.SfVirtualRead
+  parent: sndfile
+  href: sndfile.SfVirtualRead.html
+  name: SfVirtualRead
+  nameWithType: SfVirtualRead
+  fullName: sndfile.SfVirtualRead
+- uid: sndfile.SfVirtualWrite
+  commentId: T:sndfile.SfVirtualWrite
+  parent: sndfile
+  href: sndfile.SfVirtualWrite.html
+  name: SfVirtualWrite
+  nameWithType: SfVirtualWrite
+  fullName: sndfile.SfVirtualWrite
+- uid: sndfile.SfVirtualTell
+  commentId: T:sndfile.SfVirtualTell
+  parent: sndfile
+  href: sndfile.SfVirtualTell.html
+  name: SfVirtualTell
+  nameWithType: SfVirtualTell
+  fullName: sndfile.SfVirtualTell
+- uid: sndfile.SF_VIRTUAL_IO.#ctor*
+  commentId: Overload:sndfile.SF_VIRTUAL_IO.#ctor
+  href: sndfile.SF_VIRTUAL_IO.html#sndfile_SF_VIRTUAL_IO__ctor_sndfile_SfVirtualLength_sndfile_SfVirtualSeek_sndfile_SfVirtualRead_sndfile_SfVirtualWrite_sndfile_SfVirtualTell_
+  name: SF_VIRTUAL_IO
+  nameWithType: SF_VIRTUAL_IO.SF_VIRTUAL_IO
+  fullName: sndfile.SF_VIRTUAL_IO.SF_VIRTUAL_IO
+  nameWithType.vb: SF_VIRTUAL_IO.New
+  fullName.vb: sndfile.SF_VIRTUAL_IO.New
+  name.vb: New
+- uid: System.ValueType.Equals(System.Object)
+  commentId: M:System.ValueType.Equals(System.Object)
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  name: Equals(object)
+  nameWithType: ValueType.Equals(object)
+  fullName: System.ValueType.Equals(object)
+  nameWithType.vb: ValueType.Equals(Object)
+  fullName.vb: System.ValueType.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: sndfile.SF_VIRTUAL_IO.Equals*
+  commentId: Overload:sndfile.SF_VIRTUAL_IO.Equals
+  href: sndfile.SF_VIRTUAL_IO.html#sndfile_SF_VIRTUAL_IO_Equals_System_Object_
+  name: Equals
+  nameWithType: SF_VIRTUAL_IO.Equals
+  fullName: sndfile.SF_VIRTUAL_IO.Equals
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: System.ValueType.GetHashCode
+  commentId: M:System.ValueType.GetHashCode
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  name: GetHashCode()
+  nameWithType: ValueType.GetHashCode()
+  fullName: System.ValueType.GetHashCode()
+  spec.csharp:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  - name: (
+  - name: )
+- uid: sndfile.SF_VIRTUAL_IO.GetHashCode*
+  commentId: Overload:sndfile.SF_VIRTUAL_IO.GetHashCode
+  href: sndfile.SF_VIRTUAL_IO.html#sndfile_SF_VIRTUAL_IO_GetHashCode
+  name: GetHashCode
+  nameWithType: SF_VIRTUAL_IO.GetHashCode
+  fullName: sndfile.SF_VIRTUAL_IO.GetHashCode
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: sndfile.SF_VIRTUAL_IO.op_Equality*
+  commentId: Overload:sndfile.SF_VIRTUAL_IO.op_Equality
+  href: sndfile.SF_VIRTUAL_IO.html#sndfile_SF_VIRTUAL_IO_op_Equality_sndfile_SF_VIRTUAL_IO_sndfile_SF_VIRTUAL_IO_
+  name: operator ==
+  nameWithType: SF_VIRTUAL_IO.operator ==
+  fullName: sndfile.SF_VIRTUAL_IO.operator ==
+  nameWithType.vb: SF_VIRTUAL_IO.=
+  fullName.vb: sndfile.SF_VIRTUAL_IO.=
+  name.vb: =
+  spec.csharp:
+  - name: operator
+  - name: " "
+  - uid: sndfile.SF_VIRTUAL_IO.op_Equality*
+    name: ==
+    href: sndfile.SF_VIRTUAL_IO.html#sndfile_SF_VIRTUAL_IO_op_Equality_sndfile_SF_VIRTUAL_IO_sndfile_SF_VIRTUAL_IO_
+- uid: sndfile.SF_VIRTUAL_IO
+  commentId: T:sndfile.SF_VIRTUAL_IO
+  parent: sndfile
+  href: sndfile.SF_VIRTUAL_IO.html
+  name: SF_VIRTUAL_IO
+  nameWithType: SF_VIRTUAL_IO
+  fullName: sndfile.SF_VIRTUAL_IO
+- uid: sndfile.SF_VIRTUAL_IO.op_Inequality*
+  commentId: Overload:sndfile.SF_VIRTUAL_IO.op_Inequality
+  href: sndfile.SF_VIRTUAL_IO.html#sndfile_SF_VIRTUAL_IO_op_Inequality_sndfile_SF_VIRTUAL_IO_sndfile_SF_VIRTUAL_IO_
+  name: operator !=
+  nameWithType: SF_VIRTUAL_IO.operator !=
+  fullName: sndfile.SF_VIRTUAL_IO.operator !=
+  nameWithType.vb: SF_VIRTUAL_IO.<>
+  fullName.vb: sndfile.SF_VIRTUAL_IO.<>
+  name.vb: <>
+  spec.csharp:
+  - name: operator
+  - name: " "
+  - uid: sndfile.SF_VIRTUAL_IO.op_Inequality*
+    name: '!='
+    href: sndfile.SF_VIRTUAL_IO.html#sndfile_SF_VIRTUAL_IO_op_Inequality_sndfile_SF_VIRTUAL_IO_sndfile_SF_VIRTUAL_IO_

@@ -1,0 +1,953 @@
+### YamlMime:ManagedReference
+items:
+- uid: SilverCraft.CSCore.Tags.ID3.ID3v2ExtendedHeader
+  commentId: T:SilverCraft.CSCore.Tags.ID3.ID3v2ExtendedHeader
+  id: ID3v2ExtendedHeader
+  parent: SilverCraft.CSCore.Tags.ID3
+  children:
+  - SilverCraft.CSCore.Tags.ID3.ID3v2ExtendedHeader.#ctor(System.IO.Stream,SilverCraft.CSCore.Tags.ID3.ID3Version)
+  - SilverCraft.CSCore.Tags.ID3.ID3v2ExtendedHeader.CRC
+  - SilverCraft.CSCore.Tags.ID3.ID3v2ExtendedHeader.Flags
+  - SilverCraft.CSCore.Tags.ID3.ID3v2ExtendedHeader.HeaderLength
+  - SilverCraft.CSCore.Tags.ID3.ID3v2ExtendedHeader.ImageEncodingRestriction
+  - SilverCraft.CSCore.Tags.ID3.ID3v2ExtendedHeader.ImageSizeRestriction
+  - SilverCraft.CSCore.Tags.ID3.ID3v2ExtendedHeader.PaddingSize
+  - SilverCraft.CSCore.Tags.ID3.ID3v2ExtendedHeader.TagSizeRestriction
+  - SilverCraft.CSCore.Tags.ID3.ID3v2ExtendedHeader.TextEncodingRestriction
+  - SilverCraft.CSCore.Tags.ID3.ID3v2ExtendedHeader.TextFieldSizeRestriction
+  - SilverCraft.CSCore.Tags.ID3.ID3v2ExtendedHeader.Version
+  langs:
+  - csharp
+  - vb
+  name: ID3v2ExtendedHeader
+  nameWithType: ID3v2ExtendedHeader
+  fullName: SilverCraft.CSCore.Tags.ID3.ID3v2ExtendedHeader
+  type: Class
+  source:
+    remote:
+      path: SilverCraft.CSCore/Tags/ID3/ID3v2ExtendedHeader.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: ID3v2ExtendedHeader
+    path: ../SilverCraft.CSCore/Tags/ID3/ID3v2ExtendedHeader.cs
+    startLine: 6
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Tags.ID3
+  summary: Represents the extended header section found in ID3v2 tags.
+  example: []
+  syntax:
+    content: public class ID3v2ExtendedHeader
+    content.vb: Public Class ID3v2ExtendedHeader
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  extensionMethods:
+  - SilverCraft.CSCore.Tags.ID3.ID3v2ExtendedHeader.SilverCraft.CSCore.FluentExtensions.Synchronized``2
+- uid: SilverCraft.CSCore.Tags.ID3.ID3v2ExtendedHeader.HeaderLength
+  commentId: P:SilverCraft.CSCore.Tags.ID3.ID3v2ExtendedHeader.HeaderLength
+  id: HeaderLength
+  parent: SilverCraft.CSCore.Tags.ID3.ID3v2ExtendedHeader
+  langs:
+  - csharp
+  - vb
+  name: HeaderLength
+  nameWithType: ID3v2ExtendedHeader.HeaderLength
+  fullName: SilverCraft.CSCore.Tags.ID3.ID3v2ExtendedHeader.HeaderLength
+  type: Property
+  source:
+    remote:
+      path: SilverCraft.CSCore/Tags/ID3/ID3v2ExtendedHeader.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: HeaderLength
+    path: ../SilverCraft.CSCore/Tags/ID3/ID3v2ExtendedHeader.cs
+    startLine: 9
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Tags.ID3
+  syntax:
+    content: public int HeaderLength { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property HeaderLength As Integer
+  overload: SilverCraft.CSCore.Tags.ID3.ID3v2ExtendedHeader.HeaderLength*
+- uid: SilverCraft.CSCore.Tags.ID3.ID3v2ExtendedHeader.PaddingSize
+  commentId: P:SilverCraft.CSCore.Tags.ID3.ID3v2ExtendedHeader.PaddingSize
+  id: PaddingSize
+  parent: SilverCraft.CSCore.Tags.ID3.ID3v2ExtendedHeader
+  langs:
+  - csharp
+  - vb
+  name: PaddingSize
+  nameWithType: ID3v2ExtendedHeader.PaddingSize
+  fullName: SilverCraft.CSCore.Tags.ID3.ID3v2ExtendedHeader.PaddingSize
+  type: Property
+  source:
+    remote:
+      path: SilverCraft.CSCore/Tags/ID3/ID3v2ExtendedHeader.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: PaddingSize
+    path: ../SilverCraft.CSCore/Tags/ID3/ID3v2ExtendedHeader.cs
+    startLine: 11
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Tags.ID3
+  syntax:
+    content: public int PaddingSize { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property PaddingSize As Integer
+  overload: SilverCraft.CSCore.Tags.ID3.ID3v2ExtendedHeader.PaddingSize*
+- uid: SilverCraft.CSCore.Tags.ID3.ID3v2ExtendedHeader.Flags
+  commentId: P:SilverCraft.CSCore.Tags.ID3.ID3v2ExtendedHeader.Flags
+  id: Flags
+  parent: SilverCraft.CSCore.Tags.ID3.ID3v2ExtendedHeader
+  langs:
+  - csharp
+  - vb
+  name: Flags
+  nameWithType: ID3v2ExtendedHeader.Flags
+  fullName: SilverCraft.CSCore.Tags.ID3.ID3v2ExtendedHeader.Flags
+  type: Property
+  source:
+    remote:
+      path: SilverCraft.CSCore/Tags/ID3/ID3v2ExtendedHeader.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: Flags
+    path: ../SilverCraft.CSCore/Tags/ID3/ID3v2ExtendedHeader.cs
+    startLine: 13
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Tags.ID3
+  syntax:
+    content: public ID3v2ExtendedHeaderFlags Flags { get; }
+    parameters: []
+    return:
+      type: SilverCraft.CSCore.Tags.ID3.ID3v2ExtendedHeaderFlags
+    content.vb: Public Property Flags As ID3v2ExtendedHeaderFlags
+  overload: SilverCraft.CSCore.Tags.ID3.ID3v2ExtendedHeader.Flags*
+- uid: SilverCraft.CSCore.Tags.ID3.ID3v2ExtendedHeader.CRC
+  commentId: P:SilverCraft.CSCore.Tags.ID3.ID3v2ExtendedHeader.CRC
+  id: CRC
+  parent: SilverCraft.CSCore.Tags.ID3.ID3v2ExtendedHeader
+  langs:
+  - csharp
+  - vb
+  name: CRC
+  nameWithType: ID3v2ExtendedHeader.CRC
+  fullName: SilverCraft.CSCore.Tags.ID3.ID3v2ExtendedHeader.CRC
+  type: Property
+  source:
+    remote:
+      path: SilverCraft.CSCore/Tags/ID3/ID3v2ExtendedHeader.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: CRC
+    path: ../SilverCraft.CSCore/Tags/ID3/ID3v2ExtendedHeader.cs
+    startLine: 15
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Tags.ID3
+  syntax:
+    content: public byte[] CRC { get; }
+    parameters: []
+    return:
+      type: System.Byte[]
+    content.vb: Public Property CRC As Byte()
+  overload: SilverCraft.CSCore.Tags.ID3.ID3v2ExtendedHeader.CRC*
+- uid: SilverCraft.CSCore.Tags.ID3.ID3v2ExtendedHeader.TagSizeRestriction
+  commentId: P:SilverCraft.CSCore.Tags.ID3.ID3v2ExtendedHeader.TagSizeRestriction
+  id: TagSizeRestriction
+  parent: SilverCraft.CSCore.Tags.ID3.ID3v2ExtendedHeader
+  langs:
+  - csharp
+  - vb
+  name: TagSizeRestriction
+  nameWithType: ID3v2ExtendedHeader.TagSizeRestriction
+  fullName: SilverCraft.CSCore.Tags.ID3.ID3v2ExtendedHeader.TagSizeRestriction
+  type: Property
+  source:
+    remote:
+      path: SilverCraft.CSCore/Tags/ID3/ID3v2ExtendedHeader.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: TagSizeRestriction
+    path: ../SilverCraft.CSCore/Tags/ID3/ID3v2ExtendedHeader.cs
+    startLine: 18
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Tags.ID3
+  syntax:
+    content: public ID3v2TagSizeRestriction TagSizeRestriction { get; }
+    parameters: []
+    return:
+      type: SilverCraft.CSCore.Tags.ID3.ID3v2TagSizeRestriction
+    content.vb: Public Property TagSizeRestriction As ID3v2TagSizeRestriction
+  overload: SilverCraft.CSCore.Tags.ID3.ID3v2ExtendedHeader.TagSizeRestriction*
+- uid: SilverCraft.CSCore.Tags.ID3.ID3v2ExtendedHeader.TextEncodingRestriction
+  commentId: P:SilverCraft.CSCore.Tags.ID3.ID3v2ExtendedHeader.TextEncodingRestriction
+  id: TextEncodingRestriction
+  parent: SilverCraft.CSCore.Tags.ID3.ID3v2ExtendedHeader
+  langs:
+  - csharp
+  - vb
+  name: TextEncodingRestriction
+  nameWithType: ID3v2ExtendedHeader.TextEncodingRestriction
+  fullName: SilverCraft.CSCore.Tags.ID3.ID3v2ExtendedHeader.TextEncodingRestriction
+  type: Property
+  source:
+    remote:
+      path: SilverCraft.CSCore/Tags/ID3/ID3v2ExtendedHeader.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: TextEncodingRestriction
+    path: ../SilverCraft.CSCore/Tags/ID3/ID3v2ExtendedHeader.cs
+    startLine: 20
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Tags.ID3
+  syntax:
+    content: public ID3v2TextEncodingRestriction TextEncodingRestriction { get; }
+    parameters: []
+    return:
+      type: SilverCraft.CSCore.Tags.ID3.ID3v2TextEncodingRestriction
+    content.vb: Public Property TextEncodingRestriction As ID3v2TextEncodingRestriction
+  overload: SilverCraft.CSCore.Tags.ID3.ID3v2ExtendedHeader.TextEncodingRestriction*
+- uid: SilverCraft.CSCore.Tags.ID3.ID3v2ExtendedHeader.TextFieldSizeRestriction
+  commentId: P:SilverCraft.CSCore.Tags.ID3.ID3v2ExtendedHeader.TextFieldSizeRestriction
+  id: TextFieldSizeRestriction
+  parent: SilverCraft.CSCore.Tags.ID3.ID3v2ExtendedHeader
+  langs:
+  - csharp
+  - vb
+  name: TextFieldSizeRestriction
+  nameWithType: ID3v2ExtendedHeader.TextFieldSizeRestriction
+  fullName: SilverCraft.CSCore.Tags.ID3.ID3v2ExtendedHeader.TextFieldSizeRestriction
+  type: Property
+  source:
+    remote:
+      path: SilverCraft.CSCore/Tags/ID3/ID3v2ExtendedHeader.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: TextFieldSizeRestriction
+    path: ../SilverCraft.CSCore/Tags/ID3/ID3v2ExtendedHeader.cs
+    startLine: 22
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Tags.ID3
+  syntax:
+    content: public ID3v2TextFieldSizeRestriction TextFieldSizeRestriction { get; }
+    parameters: []
+    return:
+      type: SilverCraft.CSCore.Tags.ID3.ID3v2TextFieldSizeRestriction
+    content.vb: Public Property TextFieldSizeRestriction As ID3v2TextFieldSizeRestriction
+  overload: SilverCraft.CSCore.Tags.ID3.ID3v2ExtendedHeader.TextFieldSizeRestriction*
+- uid: SilverCraft.CSCore.Tags.ID3.ID3v2ExtendedHeader.ImageEncodingRestriction
+  commentId: P:SilverCraft.CSCore.Tags.ID3.ID3v2ExtendedHeader.ImageEncodingRestriction
+  id: ImageEncodingRestriction
+  parent: SilverCraft.CSCore.Tags.ID3.ID3v2ExtendedHeader
+  langs:
+  - csharp
+  - vb
+  name: ImageEncodingRestriction
+  nameWithType: ID3v2ExtendedHeader.ImageEncodingRestriction
+  fullName: SilverCraft.CSCore.Tags.ID3.ID3v2ExtendedHeader.ImageEncodingRestriction
+  type: Property
+  source:
+    remote:
+      path: SilverCraft.CSCore/Tags/ID3/ID3v2ExtendedHeader.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: ImageEncodingRestriction
+    path: ../SilverCraft.CSCore/Tags/ID3/ID3v2ExtendedHeader.cs
+    startLine: 24
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Tags.ID3
+  syntax:
+    content: public ID3v2ImageEncodingRestriction ImageEncodingRestriction { get; }
+    parameters: []
+    return:
+      type: SilverCraft.CSCore.Tags.ID3.ID3v2ImageEncodingRestriction
+    content.vb: Public Property ImageEncodingRestriction As ID3v2ImageEncodingRestriction
+  overload: SilverCraft.CSCore.Tags.ID3.ID3v2ExtendedHeader.ImageEncodingRestriction*
+- uid: SilverCraft.CSCore.Tags.ID3.ID3v2ExtendedHeader.ImageSizeRestriction
+  commentId: P:SilverCraft.CSCore.Tags.ID3.ID3v2ExtendedHeader.ImageSizeRestriction
+  id: ImageSizeRestriction
+  parent: SilverCraft.CSCore.Tags.ID3.ID3v2ExtendedHeader
+  langs:
+  - csharp
+  - vb
+  name: ImageSizeRestriction
+  nameWithType: ID3v2ExtendedHeader.ImageSizeRestriction
+  fullName: SilverCraft.CSCore.Tags.ID3.ID3v2ExtendedHeader.ImageSizeRestriction
+  type: Property
+  source:
+    remote:
+      path: SilverCraft.CSCore/Tags/ID3/ID3v2ExtendedHeader.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: ImageSizeRestriction
+    path: ../SilverCraft.CSCore/Tags/ID3/ID3v2ExtendedHeader.cs
+    startLine: 26
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Tags.ID3
+  syntax:
+    content: public ID3v2ImageSizeRestriction ImageSizeRestriction { get; }
+    parameters: []
+    return:
+      type: SilverCraft.CSCore.Tags.ID3.ID3v2ImageSizeRestriction
+    content.vb: Public Property ImageSizeRestriction As ID3v2ImageSizeRestriction
+  overload: SilverCraft.CSCore.Tags.ID3.ID3v2ExtendedHeader.ImageSizeRestriction*
+- uid: SilverCraft.CSCore.Tags.ID3.ID3v2ExtendedHeader.Version
+  commentId: P:SilverCraft.CSCore.Tags.ID3.ID3v2ExtendedHeader.Version
+  id: Version
+  parent: SilverCraft.CSCore.Tags.ID3.ID3v2ExtendedHeader
+  langs:
+  - csharp
+  - vb
+  name: Version
+  nameWithType: ID3v2ExtendedHeader.Version
+  fullName: SilverCraft.CSCore.Tags.ID3.ID3v2ExtendedHeader.Version
+  type: Property
+  source:
+    remote:
+      path: SilverCraft.CSCore/Tags/ID3/ID3v2ExtendedHeader.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: Version
+    path: ../SilverCraft.CSCore/Tags/ID3/ID3v2ExtendedHeader.cs
+    startLine: 28
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Tags.ID3
+  syntax:
+    content: public ID3Version Version { get; }
+    parameters: []
+    return:
+      type: SilverCraft.CSCore.Tags.ID3.ID3Version
+    content.vb: Public Property Version As ID3Version
+  overload: SilverCraft.CSCore.Tags.ID3.ID3v2ExtendedHeader.Version*
+- uid: SilverCraft.CSCore.Tags.ID3.ID3v2ExtendedHeader.#ctor(System.IO.Stream,SilverCraft.CSCore.Tags.ID3.ID3Version)
+  commentId: M:SilverCraft.CSCore.Tags.ID3.ID3v2ExtendedHeader.#ctor(System.IO.Stream,SilverCraft.CSCore.Tags.ID3.ID3Version)
+  id: '#ctor(System.IO.Stream,SilverCraft.CSCore.Tags.ID3.ID3Version)'
+  parent: SilverCraft.CSCore.Tags.ID3.ID3v2ExtendedHeader
+  langs:
+  - csharp
+  - vb
+  name: ID3v2ExtendedHeader(Stream, ID3Version)
+  nameWithType: ID3v2ExtendedHeader.ID3v2ExtendedHeader(Stream, ID3Version)
+  fullName: SilverCraft.CSCore.Tags.ID3.ID3v2ExtendedHeader.ID3v2ExtendedHeader(System.IO.Stream, SilverCraft.CSCore.Tags.ID3.ID3Version)
+  type: Constructor
+  source:
+    remote:
+      path: SilverCraft.CSCore/Tags/ID3/ID3v2ExtendedHeader.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: .ctor
+    path: ../SilverCraft.CSCore/Tags/ID3/ID3v2ExtendedHeader.cs
+    startLine: 30
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Tags.ID3
+  syntax:
+    content: public ID3v2ExtendedHeader(Stream stream, ID3Version version)
+    parameters:
+    - id: stream
+      type: System.IO.Stream
+    - id: version
+      type: SilverCraft.CSCore.Tags.ID3.ID3Version
+    content.vb: Public Sub New(stream As Stream, version As ID3Version)
+  overload: SilverCraft.CSCore.Tags.ID3.ID3v2ExtendedHeader.#ctor*
+  nameWithType.vb: ID3v2ExtendedHeader.New(Stream, ID3Version)
+  fullName.vb: SilverCraft.CSCore.Tags.ID3.ID3v2ExtendedHeader.New(System.IO.Stream, SilverCraft.CSCore.Tags.ID3.ID3Version)
+  name.vb: New(Stream, ID3Version)
+references:
+- uid: SilverCraft.CSCore.Tags.ID3
+  commentId: N:SilverCraft.CSCore.Tags.ID3
+  href: SilverCraft.html
+  name: SilverCraft.CSCore.Tags.ID3
+  nameWithType: SilverCraft.CSCore.Tags.ID3
+  fullName: SilverCraft.CSCore.Tags.ID3
+  spec.csharp:
+  - uid: SilverCraft
+    name: SilverCraft
+    href: SilverCraft.html
+  - name: .
+  - uid: SilverCraft.CSCore
+    name: CSCore
+    href: SilverCraft.CSCore.html
+  - name: .
+  - uid: SilverCraft.CSCore.Tags
+    name: Tags
+    href: SilverCraft.CSCore.Tags.html
+  - name: .
+  - uid: SilverCraft.CSCore.Tags.ID3
+    name: ID3
+    href: SilverCraft.CSCore.Tags.ID3.html
+  spec.vb:
+  - uid: SilverCraft
+    name: SilverCraft
+    href: SilverCraft.html
+  - name: .
+  - uid: SilverCraft.CSCore
+    name: CSCore
+    href: SilverCraft.CSCore.html
+  - name: .
+  - uid: SilverCraft.CSCore.Tags
+    name: Tags
+    href: SilverCraft.CSCore.Tags.html
+  - name: .
+  - uid: SilverCraft.CSCore.Tags.ID3
+    name: ID3
+    href: SilverCraft.CSCore.Tags.ID3.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: SilverCraft.CSCore.Tags.ID3.ID3v2ExtendedHeader.SilverCraft.CSCore.FluentExtensions.Synchronized``2
+  commentId: M:SilverCraft.CSCore.FluentExtensions.Synchronized``2(``0)
+  parent: SilverCraft.CSCore.FluentExtensions
+  definition: SilverCraft.CSCore.FluentExtensions.Synchronized``2(``0)
+  href: SilverCraft.CSCore.FluentExtensions.html#SilverCraft_CSCore_FluentExtensions_Synchronized__2___0_
+  name: Synchronized<ID3v2ExtendedHeader, T>(ID3v2ExtendedHeader)
+  nameWithType: FluentExtensions.Synchronized<ID3v2ExtendedHeader, T>(ID3v2ExtendedHeader)
+  fullName: SilverCraft.CSCore.FluentExtensions.Synchronized<SilverCraft.CSCore.Tags.ID3.ID3v2ExtendedHeader, T>(SilverCraft.CSCore.Tags.ID3.ID3v2ExtendedHeader)
+  nameWithType.vb: FluentExtensions.Synchronized(Of ID3v2ExtendedHeader, T)(ID3v2ExtendedHeader)
+  fullName.vb: SilverCraft.CSCore.FluentExtensions.Synchronized(Of SilverCraft.CSCore.Tags.ID3.ID3v2ExtendedHeader, T)(SilverCraft.CSCore.Tags.ID3.ID3v2ExtendedHeader)
+  name.vb: Synchronized(Of ID3v2ExtendedHeader, T)(ID3v2ExtendedHeader)
+  spec.csharp:
+  - uid: SilverCraft.CSCore.FluentExtensions.Synchronized``2(SilverCraft.CSCore.Tags.ID3.ID3v2ExtendedHeader)
+    name: Synchronized
+    href: SilverCraft.CSCore.FluentExtensions.html#SilverCraft_CSCore_FluentExtensions_Synchronized__2___0_
+  - name: <
+  - uid: SilverCraft.CSCore.Tags.ID3.ID3v2ExtendedHeader
+    name: ID3v2ExtendedHeader
+    href: SilverCraft.CSCore.Tags.ID3.ID3v2ExtendedHeader.html
+  - name: ','
+  - name: " "
+  - name: T
+  - name: '>'
+  - name: (
+  - uid: SilverCraft.CSCore.Tags.ID3.ID3v2ExtendedHeader
+    name: ID3v2ExtendedHeader
+    href: SilverCraft.CSCore.Tags.ID3.ID3v2ExtendedHeader.html
+  - name: )
+  spec.vb:
+  - uid: SilverCraft.CSCore.FluentExtensions.Synchronized``2(SilverCraft.CSCore.Tags.ID3.ID3v2ExtendedHeader)
+    name: Synchronized
+    href: SilverCraft.CSCore.FluentExtensions.html#SilverCraft_CSCore_FluentExtensions_Synchronized__2___0_
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: SilverCraft.CSCore.Tags.ID3.ID3v2ExtendedHeader
+    name: ID3v2ExtendedHeader
+    href: SilverCraft.CSCore.Tags.ID3.ID3v2ExtendedHeader.html
+  - name: ','
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: SilverCraft.CSCore.Tags.ID3.ID3v2ExtendedHeader
+    name: ID3v2ExtendedHeader
+    href: SilverCraft.CSCore.Tags.ID3.ID3v2ExtendedHeader.html
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: SilverCraft.CSCore.FluentExtensions.Synchronized``2(``0)
+  commentId: M:SilverCraft.CSCore.FluentExtensions.Synchronized``2(``0)
+  href: SilverCraft.CSCore.FluentExtensions.html#SilverCraft_CSCore_FluentExtensions_Synchronized__2___0_
+  name: Synchronized<TAudioSource, T>(TAudioSource)
+  nameWithType: FluentExtensions.Synchronized<TAudioSource, T>(TAudioSource)
+  fullName: SilverCraft.CSCore.FluentExtensions.Synchronized<TAudioSource, T>(TAudioSource)
+  nameWithType.vb: FluentExtensions.Synchronized(Of TAudioSource, T)(TAudioSource)
+  fullName.vb: SilverCraft.CSCore.FluentExtensions.Synchronized(Of TAudioSource, T)(TAudioSource)
+  name.vb: Synchronized(Of TAudioSource, T)(TAudioSource)
+  spec.csharp:
+  - uid: SilverCraft.CSCore.FluentExtensions.Synchronized``2(``0)
+    name: Synchronized
+    href: SilverCraft.CSCore.FluentExtensions.html#SilverCraft_CSCore_FluentExtensions_Synchronized__2___0_
+  - name: <
+  - name: TAudioSource
+  - name: ','
+  - name: " "
+  - name: T
+  - name: '>'
+  - name: (
+  - name: TAudioSource
+  - name: )
+  spec.vb:
+  - uid: SilverCraft.CSCore.FluentExtensions.Synchronized``2(``0)
+    name: Synchronized
+    href: SilverCraft.CSCore.FluentExtensions.html#SilverCraft_CSCore_FluentExtensions_Synchronized__2___0_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TAudioSource
+  - name: ','
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - name: TAudioSource
+  - name: )
+- uid: SilverCraft.CSCore.FluentExtensions
+  commentId: T:SilverCraft.CSCore.FluentExtensions
+  parent: SilverCraft.CSCore
+  href: SilverCraft.CSCore.FluentExtensions.html
+  name: FluentExtensions
+  nameWithType: FluentExtensions
+  fullName: SilverCraft.CSCore.FluentExtensions
+- uid: SilverCraft.CSCore
+  commentId: N:SilverCraft.CSCore
+  href: SilverCraft.html
+  name: SilverCraft.CSCore
+  nameWithType: SilverCraft.CSCore
+  fullName: SilverCraft.CSCore
+  spec.csharp:
+  - uid: SilverCraft
+    name: SilverCraft
+    href: SilverCraft.html
+  - name: .
+  - uid: SilverCraft.CSCore
+    name: CSCore
+    href: SilverCraft.CSCore.html
+  spec.vb:
+  - uid: SilverCraft
+    name: SilverCraft
+    href: SilverCraft.html
+  - name: .
+  - uid: SilverCraft.CSCore
+    name: CSCore
+    href: SilverCraft.CSCore.html
+- uid: SilverCraft.CSCore.Tags.ID3.ID3v2ExtendedHeader.HeaderLength*
+  commentId: Overload:SilverCraft.CSCore.Tags.ID3.ID3v2ExtendedHeader.HeaderLength
+  href: SilverCraft.CSCore.Tags.ID3.ID3v2ExtendedHeader.html#SilverCraft_CSCore_Tags_ID3_ID3v2ExtendedHeader_HeaderLength
+  name: HeaderLength
+  nameWithType: ID3v2ExtendedHeader.HeaderLength
+  fullName: SilverCraft.CSCore.Tags.ID3.ID3v2ExtendedHeader.HeaderLength
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: SilverCraft.CSCore.Tags.ID3.ID3v2ExtendedHeader.PaddingSize*
+  commentId: Overload:SilverCraft.CSCore.Tags.ID3.ID3v2ExtendedHeader.PaddingSize
+  href: SilverCraft.CSCore.Tags.ID3.ID3v2ExtendedHeader.html#SilverCraft_CSCore_Tags_ID3_ID3v2ExtendedHeader_PaddingSize
+  name: PaddingSize
+  nameWithType: ID3v2ExtendedHeader.PaddingSize
+  fullName: SilverCraft.CSCore.Tags.ID3.ID3v2ExtendedHeader.PaddingSize
+- uid: SilverCraft.CSCore.Tags.ID3.ID3v2ExtendedHeader.Flags*
+  commentId: Overload:SilverCraft.CSCore.Tags.ID3.ID3v2ExtendedHeader.Flags
+  href: SilverCraft.CSCore.Tags.ID3.ID3v2ExtendedHeader.html#SilverCraft_CSCore_Tags_ID3_ID3v2ExtendedHeader_Flags
+  name: Flags
+  nameWithType: ID3v2ExtendedHeader.Flags
+  fullName: SilverCraft.CSCore.Tags.ID3.ID3v2ExtendedHeader.Flags
+- uid: SilverCraft.CSCore.Tags.ID3.ID3v2ExtendedHeaderFlags
+  commentId: T:SilverCraft.CSCore.Tags.ID3.ID3v2ExtendedHeaderFlags
+  parent: SilverCraft.CSCore.Tags.ID3
+  href: SilverCraft.CSCore.Tags.ID3.ID3v2ExtendedHeaderFlags.html
+  name: ID3v2ExtendedHeaderFlags
+  nameWithType: ID3v2ExtendedHeaderFlags
+  fullName: SilverCraft.CSCore.Tags.ID3.ID3v2ExtendedHeaderFlags
+- uid: SilverCraft.CSCore.Tags.ID3.ID3v2ExtendedHeader.CRC*
+  commentId: Overload:SilverCraft.CSCore.Tags.ID3.ID3v2ExtendedHeader.CRC
+  href: SilverCraft.CSCore.Tags.ID3.ID3v2ExtendedHeader.html#SilverCraft_CSCore_Tags_ID3_ID3v2ExtendedHeader_CRC
+  name: CRC
+  nameWithType: ID3v2ExtendedHeader.CRC
+  fullName: SilverCraft.CSCore.Tags.ID3.ID3v2ExtendedHeader.CRC
+- uid: System.Byte[]
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.byte
+  name: byte[]
+  nameWithType: byte[]
+  fullName: byte[]
+  nameWithType.vb: Byte()
+  fullName.vb: Byte()
+  name.vb: Byte()
+  spec.csharp:
+  - uid: System.Byte
+    name: byte
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.byte
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: System.Byte
+    name: Byte
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.byte
+  - name: (
+  - name: )
+- uid: SilverCraft.CSCore.Tags.ID3.ID3v2ExtendedHeader.TagSizeRestriction*
+  commentId: Overload:SilverCraft.CSCore.Tags.ID3.ID3v2ExtendedHeader.TagSizeRestriction
+  href: SilverCraft.CSCore.Tags.ID3.ID3v2ExtendedHeader.html#SilverCraft_CSCore_Tags_ID3_ID3v2ExtendedHeader_TagSizeRestriction
+  name: TagSizeRestriction
+  nameWithType: ID3v2ExtendedHeader.TagSizeRestriction
+  fullName: SilverCraft.CSCore.Tags.ID3.ID3v2ExtendedHeader.TagSizeRestriction
+- uid: SilverCraft.CSCore.Tags.ID3.ID3v2TagSizeRestriction
+  commentId: T:SilverCraft.CSCore.Tags.ID3.ID3v2TagSizeRestriction
+  parent: SilverCraft.CSCore.Tags.ID3
+  href: SilverCraft.CSCore.Tags.ID3.ID3v2TagSizeRestriction.html
+  name: ID3v2TagSizeRestriction
+  nameWithType: ID3v2TagSizeRestriction
+  fullName: SilverCraft.CSCore.Tags.ID3.ID3v2TagSizeRestriction
+- uid: SilverCraft.CSCore.Tags.ID3.ID3v2ExtendedHeader.TextEncodingRestriction*
+  commentId: Overload:SilverCraft.CSCore.Tags.ID3.ID3v2ExtendedHeader.TextEncodingRestriction
+  href: SilverCraft.CSCore.Tags.ID3.ID3v2ExtendedHeader.html#SilverCraft_CSCore_Tags_ID3_ID3v2ExtendedHeader_TextEncodingRestriction
+  name: TextEncodingRestriction
+  nameWithType: ID3v2ExtendedHeader.TextEncodingRestriction
+  fullName: SilverCraft.CSCore.Tags.ID3.ID3v2ExtendedHeader.TextEncodingRestriction
+- uid: SilverCraft.CSCore.Tags.ID3.ID3v2TextEncodingRestriction
+  commentId: T:SilverCraft.CSCore.Tags.ID3.ID3v2TextEncodingRestriction
+  parent: SilverCraft.CSCore.Tags.ID3
+  href: SilverCraft.CSCore.Tags.ID3.ID3v2TextEncodingRestriction.html
+  name: ID3v2TextEncodingRestriction
+  nameWithType: ID3v2TextEncodingRestriction
+  fullName: SilverCraft.CSCore.Tags.ID3.ID3v2TextEncodingRestriction
+- uid: SilverCraft.CSCore.Tags.ID3.ID3v2ExtendedHeader.TextFieldSizeRestriction*
+  commentId: Overload:SilverCraft.CSCore.Tags.ID3.ID3v2ExtendedHeader.TextFieldSizeRestriction
+  href: SilverCraft.CSCore.Tags.ID3.ID3v2ExtendedHeader.html#SilverCraft_CSCore_Tags_ID3_ID3v2ExtendedHeader_TextFieldSizeRestriction
+  name: TextFieldSizeRestriction
+  nameWithType: ID3v2ExtendedHeader.TextFieldSizeRestriction
+  fullName: SilverCraft.CSCore.Tags.ID3.ID3v2ExtendedHeader.TextFieldSizeRestriction
+- uid: SilverCraft.CSCore.Tags.ID3.ID3v2TextFieldSizeRestriction
+  commentId: T:SilverCraft.CSCore.Tags.ID3.ID3v2TextFieldSizeRestriction
+  parent: SilverCraft.CSCore.Tags.ID3
+  href: SilverCraft.CSCore.Tags.ID3.ID3v2TextFieldSizeRestriction.html
+  name: ID3v2TextFieldSizeRestriction
+  nameWithType: ID3v2TextFieldSizeRestriction
+  fullName: SilverCraft.CSCore.Tags.ID3.ID3v2TextFieldSizeRestriction
+- uid: SilverCraft.CSCore.Tags.ID3.ID3v2ExtendedHeader.ImageEncodingRestriction*
+  commentId: Overload:SilverCraft.CSCore.Tags.ID3.ID3v2ExtendedHeader.ImageEncodingRestriction
+  href: SilverCraft.CSCore.Tags.ID3.ID3v2ExtendedHeader.html#SilverCraft_CSCore_Tags_ID3_ID3v2ExtendedHeader_ImageEncodingRestriction
+  name: ImageEncodingRestriction
+  nameWithType: ID3v2ExtendedHeader.ImageEncodingRestriction
+  fullName: SilverCraft.CSCore.Tags.ID3.ID3v2ExtendedHeader.ImageEncodingRestriction
+- uid: SilverCraft.CSCore.Tags.ID3.ID3v2ImageEncodingRestriction
+  commentId: T:SilverCraft.CSCore.Tags.ID3.ID3v2ImageEncodingRestriction
+  parent: SilverCraft.CSCore.Tags.ID3
+  href: SilverCraft.CSCore.Tags.ID3.ID3v2ImageEncodingRestriction.html
+  name: ID3v2ImageEncodingRestriction
+  nameWithType: ID3v2ImageEncodingRestriction
+  fullName: SilverCraft.CSCore.Tags.ID3.ID3v2ImageEncodingRestriction
+- uid: SilverCraft.CSCore.Tags.ID3.ID3v2ExtendedHeader.ImageSizeRestriction*
+  commentId: Overload:SilverCraft.CSCore.Tags.ID3.ID3v2ExtendedHeader.ImageSizeRestriction
+  href: SilverCraft.CSCore.Tags.ID3.ID3v2ExtendedHeader.html#SilverCraft_CSCore_Tags_ID3_ID3v2ExtendedHeader_ImageSizeRestriction
+  name: ImageSizeRestriction
+  nameWithType: ID3v2ExtendedHeader.ImageSizeRestriction
+  fullName: SilverCraft.CSCore.Tags.ID3.ID3v2ExtendedHeader.ImageSizeRestriction
+- uid: SilverCraft.CSCore.Tags.ID3.ID3v2ImageSizeRestriction
+  commentId: T:SilverCraft.CSCore.Tags.ID3.ID3v2ImageSizeRestriction
+  parent: SilverCraft.CSCore.Tags.ID3
+  href: SilverCraft.CSCore.Tags.ID3.ID3v2ImageSizeRestriction.html
+  name: ID3v2ImageSizeRestriction
+  nameWithType: ID3v2ImageSizeRestriction
+  fullName: SilverCraft.CSCore.Tags.ID3.ID3v2ImageSizeRestriction
+- uid: SilverCraft.CSCore.Tags.ID3.ID3v2ExtendedHeader.Version*
+  commentId: Overload:SilverCraft.CSCore.Tags.ID3.ID3v2ExtendedHeader.Version
+  href: SilverCraft.CSCore.Tags.ID3.ID3v2ExtendedHeader.html#SilverCraft_CSCore_Tags_ID3_ID3v2ExtendedHeader_Version
+  name: Version
+  nameWithType: ID3v2ExtendedHeader.Version
+  fullName: SilverCraft.CSCore.Tags.ID3.ID3v2ExtendedHeader.Version
+- uid: SilverCraft.CSCore.Tags.ID3.ID3Version
+  commentId: T:SilverCraft.CSCore.Tags.ID3.ID3Version
+  parent: SilverCraft.CSCore.Tags.ID3
+  href: SilverCraft.CSCore.Tags.ID3.ID3Version.html
+  name: ID3Version
+  nameWithType: ID3Version
+  fullName: SilverCraft.CSCore.Tags.ID3.ID3Version
+- uid: SilverCraft.CSCore.Tags.ID3.ID3v2ExtendedHeader.#ctor*
+  commentId: Overload:SilverCraft.CSCore.Tags.ID3.ID3v2ExtendedHeader.#ctor
+  href: SilverCraft.CSCore.Tags.ID3.ID3v2ExtendedHeader.html#SilverCraft_CSCore_Tags_ID3_ID3v2ExtendedHeader__ctor_System_IO_Stream_SilverCraft_CSCore_Tags_ID3_ID3Version_
+  name: ID3v2ExtendedHeader
+  nameWithType: ID3v2ExtendedHeader.ID3v2ExtendedHeader
+  fullName: SilverCraft.CSCore.Tags.ID3.ID3v2ExtendedHeader.ID3v2ExtendedHeader
+  nameWithType.vb: ID3v2ExtendedHeader.New
+  fullName.vb: SilverCraft.CSCore.Tags.ID3.ID3v2ExtendedHeader.New
+  name.vb: New
+- uid: System.IO.Stream
+  commentId: T:System.IO.Stream
+  parent: System.IO
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.io.stream
+  name: Stream
+  nameWithType: Stream
+  fullName: System.IO.Stream
+- uid: System.IO
+  commentId: N:System.IO
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.IO
+  nameWithType: System.IO
+  fullName: System.IO
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.IO
+    name: IO
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.io
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.IO
+    name: IO
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.io

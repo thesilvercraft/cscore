@@ -1,0 +1,487 @@
+### YamlMime:ManagedReference
+items:
+- uid: SilverCraft.CSCore.ChannelMasks
+  commentId: T:SilverCraft.CSCore.ChannelMasks
+  id: ChannelMasks
+  parent: SilverCraft.CSCore
+  children:
+  - SilverCraft.CSCore.ChannelMasks.FiveDotOneWithRearMask
+  - SilverCraft.CSCore.ChannelMasks.FiveDotOneWithSideMask
+  - SilverCraft.CSCore.ChannelMasks.MonoMask
+  - SilverCraft.CSCore.ChannelMasks.QuadraphonicMask
+  - SilverCraft.CSCore.ChannelMasks.SevenDotOneMask
+  - SilverCraft.CSCore.ChannelMasks.StereoMask
+  langs:
+  - csharp
+  - vb
+  name: ChannelMasks
+  nameWithType: ChannelMasks
+  fullName: SilverCraft.CSCore.ChannelMasks
+  type: Class
+  source:
+    remote:
+      path: SilverCraft.CSCore/ChannelMasks.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: ChannelMasks
+    path: ../SilverCraft.CSCore/ChannelMasks.cs
+    startLine: 6
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore
+  summary: Defines common channelmasks.
+  example: []
+  syntax:
+    content: public static class ChannelMasks
+    content.vb: Public Module ChannelMasks
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: SilverCraft.CSCore.ChannelMasks.MonoMask
+  commentId: F:SilverCraft.CSCore.ChannelMasks.MonoMask
+  id: MonoMask
+  parent: SilverCraft.CSCore.ChannelMasks
+  langs:
+  - csharp
+  - vb
+  name: MonoMask
+  nameWithType: ChannelMasks.MonoMask
+  fullName: SilverCraft.CSCore.ChannelMasks.MonoMask
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/ChannelMasks.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: MonoMask
+    path: ../SilverCraft.CSCore/ChannelMasks.cs
+    startLine: 11
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore
+  summary: Mono.
+  example: []
+  syntax:
+    content: public const ChannelMask MonoMask = SpeakerFrontCenter
+    return:
+      type: SilverCraft.CSCore.ChannelMask
+    content.vb: Public Const MonoMask As ChannelMask = SpeakerFrontCenter
+- uid: SilverCraft.CSCore.ChannelMasks.StereoMask
+  commentId: F:SilverCraft.CSCore.ChannelMasks.StereoMask
+  id: StereoMask
+  parent: SilverCraft.CSCore.ChannelMasks
+  langs:
+  - csharp
+  - vb
+  name: StereoMask
+  nameWithType: ChannelMasks.StereoMask
+  fullName: SilverCraft.CSCore.ChannelMasks.StereoMask
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/ChannelMasks.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: StereoMask
+    path: ../SilverCraft.CSCore/ChannelMasks.cs
+    startLine: 15
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore
+  summary: Stereo.
+  example: []
+  syntax:
+    content: public const ChannelMask StereoMask = SpeakerFrontLeft | SpeakerFrontRight
+    return:
+      type: SilverCraft.CSCore.ChannelMask
+    content.vb: Public Const StereoMask As ChannelMask = SpeakerFrontLeft Or SpeakerFrontRight
+- uid: SilverCraft.CSCore.ChannelMasks.QuadraphonicMask
+  commentId: F:SilverCraft.CSCore.ChannelMasks.QuadraphonicMask
+  id: QuadraphonicMask
+  parent: SilverCraft.CSCore.ChannelMasks
+  langs:
+  - csharp
+  - vb
+  name: QuadraphonicMask
+  nameWithType: ChannelMasks.QuadraphonicMask
+  fullName: SilverCraft.CSCore.ChannelMasks.QuadraphonicMask
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/ChannelMasks.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: QuadraphonicMask
+    path: ../SilverCraft.CSCore/ChannelMasks.cs
+    startLine: 20
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore
+  summary: Quadraphonic
+  example: []
+  syntax:
+    content: public const ChannelMask QuadraphonicMask = SpeakerFrontLeft | SpeakerFrontRight | SpeakerBackLeft | SpeakerBackRight
+    return:
+      type: SilverCraft.CSCore.ChannelMask
+    content.vb: Public Const QuadraphonicMask As ChannelMask = SpeakerFrontLeft Or SpeakerFrontRight Or SpeakerBackLeft Or SpeakerBackRight
+- uid: SilverCraft.CSCore.ChannelMasks.FiveDotOneWithRearMask
+  commentId: F:SilverCraft.CSCore.ChannelMasks.FiveDotOneWithRearMask
+  id: FiveDotOneWithRearMask
+  parent: SilverCraft.CSCore.ChannelMasks
+  langs:
+  - csharp
+  - vb
+  name: FiveDotOneWithRearMask
+  nameWithType: ChannelMasks.FiveDotOneWithRearMask
+  fullName: SilverCraft.CSCore.ChannelMasks.FiveDotOneWithRearMask
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/ChannelMasks.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: FiveDotOneWithRearMask
+    path: ../SilverCraft.CSCore/ChannelMasks.cs
+    startLine: 25
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore
+  summary: 5.1 surround with rear speakers.
+  example: []
+  syntax:
+    content: public const ChannelMask FiveDotOneWithRearMask = SpeakerFrontLeft | SpeakerFrontRight | SpeakerFrontCenter | SpeakerLowFrequency | SpeakerBackLeft | SpeakerBackRight
+    return:
+      type: SilverCraft.CSCore.ChannelMask
+    content.vb: Public Const FiveDotOneWithRearMask As ChannelMask = SpeakerFrontLeft Or SpeakerFrontRight Or SpeakerFrontCenter Or SpeakerLowFrequency Or SpeakerBackLeft Or SpeakerBackRight
+- uid: SilverCraft.CSCore.ChannelMasks.FiveDotOneWithSideMask
+  commentId: F:SilverCraft.CSCore.ChannelMasks.FiveDotOneWithSideMask
+  id: FiveDotOneWithSideMask
+  parent: SilverCraft.CSCore.ChannelMasks
+  langs:
+  - csharp
+  - vb
+  name: FiveDotOneWithSideMask
+  nameWithType: ChannelMasks.FiveDotOneWithSideMask
+  fullName: SilverCraft.CSCore.ChannelMasks.FiveDotOneWithSideMask
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/ChannelMasks.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: FiveDotOneWithSideMask
+    path: ../SilverCraft.CSCore/ChannelMasks.cs
+    startLine: 29
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore
+  summary: 5.1 surround with side speakers.
+  example: []
+  syntax:
+    content: public const ChannelMask FiveDotOneWithSideMask = SpeakerFrontLeft | SpeakerFrontRight | SpeakerFrontCenter | SpeakerLowFrequency | SpeakerSideLeft | SpeakerSideRight
+    return:
+      type: SilverCraft.CSCore.ChannelMask
+    content.vb: Public Const FiveDotOneWithSideMask As ChannelMask = SpeakerFrontLeft Or SpeakerFrontRight Or SpeakerFrontCenter Or SpeakerLowFrequency Or SpeakerSideLeft Or SpeakerSideRight
+- uid: SilverCraft.CSCore.ChannelMasks.SevenDotOneMask
+  commentId: F:SilverCraft.CSCore.ChannelMasks.SevenDotOneMask
+  id: SevenDotOneMask
+  parent: SilverCraft.CSCore.ChannelMasks
+  langs:
+  - csharp
+  - vb
+  name: SevenDotOneMask
+  nameWithType: ChannelMasks.SevenDotOneMask
+  fullName: SilverCraft.CSCore.ChannelMasks.SevenDotOneMask
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/ChannelMasks.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: SevenDotOneMask
+    path: ../SilverCraft.CSCore/ChannelMasks.cs
+    startLine: 33
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore
+  summary: 7.1 surround.
+  example: []
+  syntax:
+    content: public const ChannelMask SevenDotOneMask = SpeakerFrontLeft | SpeakerFrontRight | SpeakerFrontCenter | SpeakerLowFrequency | SpeakerBackLeft | SpeakerBackRight | SpeakerSideLeft | SpeakerSideRight
+    return:
+      type: SilverCraft.CSCore.ChannelMask
+    content.vb: Public Const SevenDotOneMask As ChannelMask = SpeakerFrontLeft Or SpeakerFrontRight Or SpeakerFrontCenter Or SpeakerLowFrequency Or SpeakerBackLeft Or SpeakerBackRight Or SpeakerSideLeft Or SpeakerSideRight
+references:
+- uid: SilverCraft.CSCore
+  commentId: N:SilverCraft.CSCore
+  href: SilverCraft.html
+  name: SilverCraft.CSCore
+  nameWithType: SilverCraft.CSCore
+  fullName: SilverCraft.CSCore
+  spec.csharp:
+  - uid: SilverCraft
+    name: SilverCraft
+    href: SilverCraft.html
+  - name: .
+  - uid: SilverCraft.CSCore
+    name: CSCore
+    href: SilverCraft.CSCore.html
+  spec.vb:
+  - uid: SilverCraft
+    name: SilverCraft
+    href: SilverCraft.html
+  - name: .
+  - uid: SilverCraft.CSCore
+    name: CSCore
+    href: SilverCraft.CSCore.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: SilverCraft.CSCore.ChannelMask
+  commentId: T:SilverCraft.CSCore.ChannelMask
+  parent: SilverCraft.CSCore
+  href: SilverCraft.CSCore.ChannelMask.html
+  name: ChannelMask
+  nameWithType: ChannelMask
+  fullName: SilverCraft.CSCore.ChannelMask

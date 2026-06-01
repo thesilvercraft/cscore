@@ -1,0 +1,677 @@
+### YamlMime:ManagedReference
+items:
+- uid: SilverCraft.CSCore.Streams.IFadeStrategy
+  commentId: T:SilverCraft.CSCore.Streams.IFadeStrategy
+  id: IFadeStrategy
+  parent: SilverCraft.CSCore.Streams
+  children:
+  - SilverCraft.CSCore.Streams.IFadeStrategy.ApplyFading(System.Single[],System.Int32,System.Int32)
+  - SilverCraft.CSCore.Streams.IFadeStrategy.Channels
+  - SilverCraft.CSCore.Streams.IFadeStrategy.FadingFinished
+  - SilverCraft.CSCore.Streams.IFadeStrategy.IsFading
+  - SilverCraft.CSCore.Streams.IFadeStrategy.SampleRate
+  - SilverCraft.CSCore.Streams.IFadeStrategy.StartFading(System.Nullable{System.Single},System.Single,System.Double)
+  - SilverCraft.CSCore.Streams.IFadeStrategy.StartFading(System.Nullable{System.Single},System.Single,System.TimeSpan)
+  - SilverCraft.CSCore.Streams.IFadeStrategy.StopFading
+  langs:
+  - csharp
+  - vb
+  name: IFadeStrategy
+  nameWithType: IFadeStrategy
+  fullName: SilverCraft.CSCore.Streams.IFadeStrategy
+  type: Interface
+  source:
+    remote:
+      path: SilverCraft.CSCore/Streams/IFadeStrategy.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: IFadeStrategy
+    path: ../SilverCraft.CSCore/Streams/IFadeStrategy.cs
+    startLine: 11
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Streams
+  summary: Provides a mechanism for fading in/out audio.
+  remarks: >-
+    The <xref href="SilverCraft.CSCore.Streams.IFadeStrategy.SampleRate" data-throw-if-not-resolved="false"></xref>- and the <xref href="SilverCraft.CSCore.Streams.IFadeStrategy.Channels" data-throw-if-not-resolved="false"></xref>-property must be set before the
+
+    <xref href="SilverCraft.CSCore.Streams.IFadeStrategy" data-throw-if-not-resolved="false"></xref> can be used.
+  example: []
+  syntax:
+    content: public interface IFadeStrategy
+    content.vb: Public Interface IFadeStrategy
+  derivedClasses:
+  - SilverCraft.CSCore.Streams.LinearFadeStrategy
+  extensionMethods:
+  - SilverCraft.CSCore.Streams.IFadeStrategy.SilverCraft.CSCore.FluentExtensions.Synchronized``2
+- uid: SilverCraft.CSCore.Streams.IFadeStrategy.IsFading
+  commentId: P:SilverCraft.CSCore.Streams.IFadeStrategy.IsFading
+  id: IsFading
+  parent: SilverCraft.CSCore.Streams.IFadeStrategy
+  langs:
+  - csharp
+  - vb
+  name: IsFading
+  nameWithType: IFadeStrategy.IsFading
+  fullName: SilverCraft.CSCore.Streams.IFadeStrategy.IsFading
+  type: Property
+  source:
+    remote:
+      path: SilverCraft.CSCore/Streams/IFadeStrategy.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: IsFading
+    path: ../SilverCraft.CSCore/Streams/IFadeStrategy.cs
+    startLine: 17
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Streams
+  summary: >-
+    Gets a value which indicates whether the current volume equals the target volume. If not, the
+
+    <xref href="SilverCraft.CSCore.Streams.IFadeStrategy.IsFading" data-throw-if-not-resolved="false"></xref> property returns false.
+  example: []
+  syntax:
+    content: bool IsFading { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: ReadOnly Property IsFading As Boolean
+  overload: SilverCraft.CSCore.Streams.IFadeStrategy.IsFading*
+- uid: SilverCraft.CSCore.Streams.IFadeStrategy.SampleRate
+  commentId: P:SilverCraft.CSCore.Streams.IFadeStrategy.SampleRate
+  id: SampleRate
+  parent: SilverCraft.CSCore.Streams.IFadeStrategy
+  langs:
+  - csharp
+  - vb
+  name: SampleRate
+  nameWithType: IFadeStrategy.SampleRate
+  fullName: SilverCraft.CSCore.Streams.IFadeStrategy.SampleRate
+  type: Property
+  source:
+    remote:
+      path: SilverCraft.CSCore/Streams/IFadeStrategy.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: SampleRate
+    path: ../SilverCraft.CSCore/Streams/IFadeStrategy.cs
+    startLine: 22
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Streams
+  summary: Gets or sets the sample rate to use.
+  example: []
+  syntax:
+    content: int SampleRate { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Property SampleRate As Integer
+  overload: SilverCraft.CSCore.Streams.IFadeStrategy.SampleRate*
+- uid: SilverCraft.CSCore.Streams.IFadeStrategy.Channels
+  commentId: P:SilverCraft.CSCore.Streams.IFadeStrategy.Channels
+  id: Channels
+  parent: SilverCraft.CSCore.Streams.IFadeStrategy
+  langs:
+  - csharp
+  - vb
+  name: Channels
+  nameWithType: IFadeStrategy.Channels
+  fullName: SilverCraft.CSCore.Streams.IFadeStrategy.Channels
+  type: Property
+  source:
+    remote:
+      path: SilverCraft.CSCore/Streams/IFadeStrategy.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: Channels
+    path: ../SilverCraft.CSCore/Streams/IFadeStrategy.cs
+    startLine: 27
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Streams
+  summary: Gets or sets the number of channels.
+  example: []
+  syntax:
+    content: int Channels { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Property Channels As Integer
+  overload: SilverCraft.CSCore.Streams.IFadeStrategy.Channels*
+- uid: SilverCraft.CSCore.Streams.IFadeStrategy.FadingFinished
+  commentId: E:SilverCraft.CSCore.Streams.IFadeStrategy.FadingFinished
+  id: FadingFinished
+  parent: SilverCraft.CSCore.Streams.IFadeStrategy
+  langs:
+  - csharp
+  - vb
+  name: FadingFinished
+  nameWithType: IFadeStrategy.FadingFinished
+  fullName: SilverCraft.CSCore.Streams.IFadeStrategy.FadingFinished
+  type: Event
+  source:
+    remote:
+      path: SilverCraft.CSCore/Streams/IFadeStrategy.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: FadingFinished
+    path: ../SilverCraft.CSCore/Streams/IFadeStrategy.cs
+    startLine: 32
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Streams
+  summary: Occurs when the fading process has reached its target volume.
+  example: []
+  syntax:
+    content: event EventHandler FadingFinished
+    return:
+      type: System.EventHandler
+    content.vb: Event FadingFinished As EventHandler
+- uid: SilverCraft.CSCore.Streams.IFadeStrategy.ApplyFading(System.Single[],System.Int32,System.Int32)
+  commentId: M:SilverCraft.CSCore.Streams.IFadeStrategy.ApplyFading(System.Single[],System.Int32,System.Int32)
+  id: ApplyFading(System.Single[],System.Int32,System.Int32)
+  parent: SilverCraft.CSCore.Streams.IFadeStrategy
+  langs:
+  - csharp
+  - vb
+  name: ApplyFading(float[], int, int)
+  nameWithType: IFadeStrategy.ApplyFading(float[], int, int)
+  fullName: SilverCraft.CSCore.Streams.IFadeStrategy.ApplyFading(float[], int, int)
+  type: Method
+  source:
+    remote:
+      path: SilverCraft.CSCore/Streams/IFadeStrategy.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: ApplyFading
+    path: ../SilverCraft.CSCore/Streams/IFadeStrategy.cs
+    startLine: 40
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Streams
+  summary: Applies the fading algorithm to the waveform-audio data.
+  example: []
+  syntax:
+    content: void ApplyFading(float[] buffer, int offset, int count)
+    parameters:
+    - id: buffer
+      type: System.Single[]
+      description: Float-array which contains IEEE-Float samples.
+    - id: offset
+      type: System.Int32
+      description: Zero-based offset of the <code class="paramref">buffer</code>.
+    - id: count
+      type: System.Int32
+      description: The number of samples, the fading algorithm has to be applied on.
+    content.vb: Sub ApplyFading(buffer As Single(), offset As Integer, count As Integer)
+  overload: SilverCraft.CSCore.Streams.IFadeStrategy.ApplyFading*
+  nameWithType.vb: IFadeStrategy.ApplyFading(Single(), Integer, Integer)
+  fullName.vb: SilverCraft.CSCore.Streams.IFadeStrategy.ApplyFading(Single(), Integer, Integer)
+  name.vb: ApplyFading(Single(), Integer, Integer)
+- uid: SilverCraft.CSCore.Streams.IFadeStrategy.StartFading(System.Nullable{System.Single},System.Single,System.TimeSpan)
+  commentId: M:SilverCraft.CSCore.Streams.IFadeStrategy.StartFading(System.Nullable{System.Single},System.Single,System.TimeSpan)
+  id: StartFading(System.Nullable{System.Single},System.Single,System.TimeSpan)
+  parent: SilverCraft.CSCore.Streams.IFadeStrategy
+  langs:
+  - csharp
+  - vb
+  name: StartFading(float?, float, TimeSpan)
+  nameWithType: IFadeStrategy.StartFading(float?, float, TimeSpan)
+  fullName: SilverCraft.CSCore.Streams.IFadeStrategy.StartFading(float?, float, System.TimeSpan)
+  type: Method
+  source:
+    remote:
+      path: SilverCraft.CSCore/Streams/IFadeStrategy.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: StartFading
+    path: ../SilverCraft.CSCore/Streams/IFadeStrategy.cs
+    startLine: 51
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Streams
+  summary: Starts fading <code class="paramref">from</code> a specified volume <code class="paramref">to</code> another volume.
+  example: []
+  syntax:
+    content: void StartFading(float? from, float to, TimeSpan duration)
+    parameters:
+    - id: from
+      type: System.Nullable{System.Single}
+      description: >-
+        The start volume in the range from 0.0 to 1.0. If no value gets specified, the default volume will be used.
+
+        The default volume is typically 100% or the current volume.
+    - id: to
+      type: System.Single
+      description: The target volume in the range from 0.0 to 1.0.
+    - id: duration
+      type: System.TimeSpan
+      description: The duration.
+    content.vb: Sub StartFading(from As Single?, [to] As Single, duration As TimeSpan)
+  overload: SilverCraft.CSCore.Streams.IFadeStrategy.StartFading*
+  nameWithType.vb: IFadeStrategy.StartFading(Single?, Single, TimeSpan)
+  fullName.vb: SilverCraft.CSCore.Streams.IFadeStrategy.StartFading(Single?, Single, System.TimeSpan)
+  name.vb: StartFading(Single?, Single, TimeSpan)
+- uid: SilverCraft.CSCore.Streams.IFadeStrategy.StartFading(System.Nullable{System.Single},System.Single,System.Double)
+  commentId: M:SilverCraft.CSCore.Streams.IFadeStrategy.StartFading(System.Nullable{System.Single},System.Single,System.Double)
+  id: StartFading(System.Nullable{System.Single},System.Single,System.Double)
+  parent: SilverCraft.CSCore.Streams.IFadeStrategy
+  langs:
+  - csharp
+  - vb
+  name: StartFading(float?, float, double)
+  nameWithType: IFadeStrategy.StartFading(float?, float, double)
+  fullName: SilverCraft.CSCore.Streams.IFadeStrategy.StartFading(float?, float, double)
+  type: Method
+  source:
+    remote:
+      path: SilverCraft.CSCore/Streams/IFadeStrategy.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: StartFading
+    path: ../SilverCraft.CSCore/Streams/IFadeStrategy.cs
+    startLine: 62
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Streams
+  summary: Starts fading <code class="paramref">from</code> a specified volume <code class="paramref">to</code> another volume.
+  example: []
+  syntax:
+    content: void StartFading(float? from, float to, double duration)
+    parameters:
+    - id: from
+      type: System.Nullable{System.Single}
+      description: >-
+        The start volume in the range from 0.0 to 1.0. If no value gets specified, the default volume will be used.
+
+        The default volume is typically 100% or the current volume.
+    - id: to
+      type: System.Single
+      description: The target volume in the range from 0.0 to 1.0.
+    - id: duration
+      type: System.Double
+      description: The duration in milliseconds.
+    content.vb: Sub StartFading(from As Single?, [to] As Single, duration As Double)
+  overload: SilverCraft.CSCore.Streams.IFadeStrategy.StartFading*
+  nameWithType.vb: IFadeStrategy.StartFading(Single?, Single, Double)
+  fullName.vb: SilverCraft.CSCore.Streams.IFadeStrategy.StartFading(Single?, Single, Double)
+  name.vb: StartFading(Single?, Single, Double)
+- uid: SilverCraft.CSCore.Streams.IFadeStrategy.StopFading
+  commentId: M:SilverCraft.CSCore.Streams.IFadeStrategy.StopFading
+  id: StopFading
+  parent: SilverCraft.CSCore.Streams.IFadeStrategy
+  langs:
+  - csharp
+  - vb
+  name: StopFading()
+  nameWithType: IFadeStrategy.StopFading()
+  fullName: SilverCraft.CSCore.Streams.IFadeStrategy.StopFading()
+  type: Method
+  source:
+    remote:
+      path: SilverCraft.CSCore/Streams/IFadeStrategy.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: StopFading
+    path: ../SilverCraft.CSCore/Streams/IFadeStrategy.cs
+    startLine: 67
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Streams
+  summary: Stops the fading.
+  example: []
+  syntax:
+    content: void StopFading()
+    content.vb: Sub StopFading()
+  overload: SilverCraft.CSCore.Streams.IFadeStrategy.StopFading*
+references:
+- uid: SilverCraft.CSCore.Streams.IFadeStrategy.SampleRate
+  commentId: P:SilverCraft.CSCore.Streams.IFadeStrategy.SampleRate
+  parent: SilverCraft.CSCore.Streams.IFadeStrategy
+  href: SilverCraft.CSCore.Streams.IFadeStrategy.html#SilverCraft_CSCore_Streams_IFadeStrategy_SampleRate
+  name: SampleRate
+  nameWithType: IFadeStrategy.SampleRate
+  fullName: SilverCraft.CSCore.Streams.IFadeStrategy.SampleRate
+- uid: SilverCraft.CSCore.Streams.IFadeStrategy.Channels
+  commentId: P:SilverCraft.CSCore.Streams.IFadeStrategy.Channels
+  parent: SilverCraft.CSCore.Streams.IFadeStrategy
+  href: SilverCraft.CSCore.Streams.IFadeStrategy.html#SilverCraft_CSCore_Streams_IFadeStrategy_Channels
+  name: Channels
+  nameWithType: IFadeStrategy.Channels
+  fullName: SilverCraft.CSCore.Streams.IFadeStrategy.Channels
+- uid: SilverCraft.CSCore.Streams.IFadeStrategy
+  commentId: T:SilverCraft.CSCore.Streams.IFadeStrategy
+  parent: SilverCraft.CSCore.Streams
+  href: SilverCraft.CSCore.Streams.IFadeStrategy.html
+  name: IFadeStrategy
+  nameWithType: IFadeStrategy
+  fullName: SilverCraft.CSCore.Streams.IFadeStrategy
+- uid: SilverCraft.CSCore.Streams
+  commentId: N:SilverCraft.CSCore.Streams
+  href: SilverCraft.html
+  name: SilverCraft.CSCore.Streams
+  nameWithType: SilverCraft.CSCore.Streams
+  fullName: SilverCraft.CSCore.Streams
+  spec.csharp:
+  - uid: SilverCraft
+    name: SilverCraft
+    href: SilverCraft.html
+  - name: .
+  - uid: SilverCraft.CSCore
+    name: CSCore
+    href: SilverCraft.CSCore.html
+  - name: .
+  - uid: SilverCraft.CSCore.Streams
+    name: Streams
+    href: SilverCraft.CSCore.Streams.html
+  spec.vb:
+  - uid: SilverCraft
+    name: SilverCraft
+    href: SilverCraft.html
+  - name: .
+  - uid: SilverCraft.CSCore
+    name: CSCore
+    href: SilverCraft.CSCore.html
+  - name: .
+  - uid: SilverCraft.CSCore.Streams
+    name: Streams
+    href: SilverCraft.CSCore.Streams.html
+- uid: SilverCraft.CSCore.Streams.IFadeStrategy.SilverCraft.CSCore.FluentExtensions.Synchronized``2
+  commentId: M:SilverCraft.CSCore.FluentExtensions.Synchronized``2(``0)
+  parent: SilverCraft.CSCore.FluentExtensions
+  definition: SilverCraft.CSCore.FluentExtensions.Synchronized``2(``0)
+  href: SilverCraft.CSCore.FluentExtensions.html#SilverCraft_CSCore_FluentExtensions_Synchronized__2___0_
+  name: Synchronized<IFadeStrategy, T>(IFadeStrategy)
+  nameWithType: FluentExtensions.Synchronized<IFadeStrategy, T>(IFadeStrategy)
+  fullName: SilverCraft.CSCore.FluentExtensions.Synchronized<SilverCraft.CSCore.Streams.IFadeStrategy, T>(SilverCraft.CSCore.Streams.IFadeStrategy)
+  nameWithType.vb: FluentExtensions.Synchronized(Of IFadeStrategy, T)(IFadeStrategy)
+  fullName.vb: SilverCraft.CSCore.FluentExtensions.Synchronized(Of SilverCraft.CSCore.Streams.IFadeStrategy, T)(SilverCraft.CSCore.Streams.IFadeStrategy)
+  name.vb: Synchronized(Of IFadeStrategy, T)(IFadeStrategy)
+  spec.csharp:
+  - uid: SilverCraft.CSCore.FluentExtensions.Synchronized``2(SilverCraft.CSCore.Streams.IFadeStrategy)
+    name: Synchronized
+    href: SilverCraft.CSCore.FluentExtensions.html#SilverCraft_CSCore_FluentExtensions_Synchronized__2___0_
+  - name: <
+  - uid: SilverCraft.CSCore.Streams.IFadeStrategy
+    name: IFadeStrategy
+    href: SilverCraft.CSCore.Streams.IFadeStrategy.html
+  - name: ','
+  - name: " "
+  - name: T
+  - name: '>'
+  - name: (
+  - uid: SilverCraft.CSCore.Streams.IFadeStrategy
+    name: IFadeStrategy
+    href: SilverCraft.CSCore.Streams.IFadeStrategy.html
+  - name: )
+  spec.vb:
+  - uid: SilverCraft.CSCore.FluentExtensions.Synchronized``2(SilverCraft.CSCore.Streams.IFadeStrategy)
+    name: Synchronized
+    href: SilverCraft.CSCore.FluentExtensions.html#SilverCraft_CSCore_FluentExtensions_Synchronized__2___0_
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: SilverCraft.CSCore.Streams.IFadeStrategy
+    name: IFadeStrategy
+    href: SilverCraft.CSCore.Streams.IFadeStrategy.html
+  - name: ','
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: SilverCraft.CSCore.Streams.IFadeStrategy
+    name: IFadeStrategy
+    href: SilverCraft.CSCore.Streams.IFadeStrategy.html
+  - name: )
+- uid: SilverCraft.CSCore.FluentExtensions.Synchronized``2(``0)
+  commentId: M:SilverCraft.CSCore.FluentExtensions.Synchronized``2(``0)
+  href: SilverCraft.CSCore.FluentExtensions.html#SilverCraft_CSCore_FluentExtensions_Synchronized__2___0_
+  name: Synchronized<TAudioSource, T>(TAudioSource)
+  nameWithType: FluentExtensions.Synchronized<TAudioSource, T>(TAudioSource)
+  fullName: SilverCraft.CSCore.FluentExtensions.Synchronized<TAudioSource, T>(TAudioSource)
+  nameWithType.vb: FluentExtensions.Synchronized(Of TAudioSource, T)(TAudioSource)
+  fullName.vb: SilverCraft.CSCore.FluentExtensions.Synchronized(Of TAudioSource, T)(TAudioSource)
+  name.vb: Synchronized(Of TAudioSource, T)(TAudioSource)
+  spec.csharp:
+  - uid: SilverCraft.CSCore.FluentExtensions.Synchronized``2(``0)
+    name: Synchronized
+    href: SilverCraft.CSCore.FluentExtensions.html#SilverCraft_CSCore_FluentExtensions_Synchronized__2___0_
+  - name: <
+  - name: TAudioSource
+  - name: ','
+  - name: " "
+  - name: T
+  - name: '>'
+  - name: (
+  - name: TAudioSource
+  - name: )
+  spec.vb:
+  - uid: SilverCraft.CSCore.FluentExtensions.Synchronized``2(``0)
+    name: Synchronized
+    href: SilverCraft.CSCore.FluentExtensions.html#SilverCraft_CSCore_FluentExtensions_Synchronized__2___0_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TAudioSource
+  - name: ','
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - name: TAudioSource
+  - name: )
+- uid: SilverCraft.CSCore.FluentExtensions
+  commentId: T:SilverCraft.CSCore.FluentExtensions
+  parent: SilverCraft.CSCore
+  href: SilverCraft.CSCore.FluentExtensions.html
+  name: FluentExtensions
+  nameWithType: FluentExtensions
+  fullName: SilverCraft.CSCore.FluentExtensions
+- uid: SilverCraft.CSCore
+  commentId: N:SilverCraft.CSCore
+  href: SilverCraft.html
+  name: SilverCraft.CSCore
+  nameWithType: SilverCraft.CSCore
+  fullName: SilverCraft.CSCore
+  spec.csharp:
+  - uid: SilverCraft
+    name: SilverCraft
+    href: SilverCraft.html
+  - name: .
+  - uid: SilverCraft.CSCore
+    name: CSCore
+    href: SilverCraft.CSCore.html
+  spec.vb:
+  - uid: SilverCraft
+    name: SilverCraft
+    href: SilverCraft.html
+  - name: .
+  - uid: SilverCraft.CSCore
+    name: CSCore
+    href: SilverCraft.CSCore.html
+- uid: SilverCraft.CSCore.Streams.IFadeStrategy.IsFading
+  commentId: P:SilverCraft.CSCore.Streams.IFadeStrategy.IsFading
+  parent: SilverCraft.CSCore.Streams.IFadeStrategy
+  href: SilverCraft.CSCore.Streams.IFadeStrategy.html#SilverCraft_CSCore_Streams_IFadeStrategy_IsFading
+  name: IsFading
+  nameWithType: IFadeStrategy.IsFading
+  fullName: SilverCraft.CSCore.Streams.IFadeStrategy.IsFading
+- uid: SilverCraft.CSCore.Streams.IFadeStrategy.IsFading*
+  commentId: Overload:SilverCraft.CSCore.Streams.IFadeStrategy.IsFading
+  href: SilverCraft.CSCore.Streams.IFadeStrategy.html#SilverCraft_CSCore_Streams_IFadeStrategy_IsFading
+  name: IsFading
+  nameWithType: IFadeStrategy.IsFading
+  fullName: SilverCraft.CSCore.Streams.IFadeStrategy.IsFading
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: SilverCraft.CSCore.Streams.IFadeStrategy.SampleRate*
+  commentId: Overload:SilverCraft.CSCore.Streams.IFadeStrategy.SampleRate
+  href: SilverCraft.CSCore.Streams.IFadeStrategy.html#SilverCraft_CSCore_Streams_IFadeStrategy_SampleRate
+  name: SampleRate
+  nameWithType: IFadeStrategy.SampleRate
+  fullName: SilverCraft.CSCore.Streams.IFadeStrategy.SampleRate
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: SilverCraft.CSCore.Streams.IFadeStrategy.Channels*
+  commentId: Overload:SilverCraft.CSCore.Streams.IFadeStrategy.Channels
+  href: SilverCraft.CSCore.Streams.IFadeStrategy.html#SilverCraft_CSCore_Streams_IFadeStrategy_Channels
+  name: Channels
+  nameWithType: IFadeStrategy.Channels
+  fullName: SilverCraft.CSCore.Streams.IFadeStrategy.Channels
+- uid: System.EventHandler
+  commentId: T:System.EventHandler
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.eventhandler
+  name: EventHandler
+  nameWithType: EventHandler
+  fullName: System.EventHandler
+- uid: SilverCraft.CSCore.Streams.IFadeStrategy.ApplyFading*
+  commentId: Overload:SilverCraft.CSCore.Streams.IFadeStrategy.ApplyFading
+  href: SilverCraft.CSCore.Streams.IFadeStrategy.html#SilverCraft_CSCore_Streams_IFadeStrategy_ApplyFading_System_Single___System_Int32_System_Int32_
+  name: ApplyFading
+  nameWithType: IFadeStrategy.ApplyFading
+  fullName: SilverCraft.CSCore.Streams.IFadeStrategy.ApplyFading
+- uid: System.Single[]
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.single
+  name: float[]
+  nameWithType: float[]
+  fullName: float[]
+  nameWithType.vb: Single()
+  fullName.vb: Single()
+  name.vb: Single()
+  spec.csharp:
+  - uid: System.Single
+    name: float
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: System.Single
+    name: Single
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: (
+  - name: )
+- uid: SilverCraft.CSCore.Streams.IFadeStrategy.StartFading*
+  commentId: Overload:SilverCraft.CSCore.Streams.IFadeStrategy.StartFading
+  href: SilverCraft.CSCore.Streams.IFadeStrategy.html#SilverCraft_CSCore_Streams_IFadeStrategy_StartFading_System_Nullable_System_Single__System_Single_System_TimeSpan_
+  name: StartFading
+  nameWithType: IFadeStrategy.StartFading
+  fullName: SilverCraft.CSCore.Streams.IFadeStrategy.StartFading
+- uid: System.Nullable{System.Single}
+  commentId: T:System.Nullable{System.Single}
+  parent: System
+  definition: System.Nullable`1
+  href: https://learn.microsoft.com/dotnet/api/system.single
+  name: float?
+  nameWithType: float?
+  fullName: float?
+  nameWithType.vb: Single?
+  fullName.vb: Single?
+  name.vb: Single?
+  spec.csharp:
+  - uid: System.Single
+    name: float
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: '?'
+  spec.vb:
+  - uid: System.Single
+    name: Single
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: '?'
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.single
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single
+- uid: System.TimeSpan
+  commentId: T:System.TimeSpan
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.timespan
+  name: TimeSpan
+  nameWithType: TimeSpan
+  fullName: System.TimeSpan
+- uid: System.Nullable`1
+  commentId: T:System.Nullable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  name: Nullable<T>
+  nameWithType: Nullable<T>
+  fullName: System.Nullable<T>
+  nameWithType.vb: Nullable(Of T)
+  fullName.vb: System.Nullable(Of T)
+  name.vb: Nullable(Of T)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Double
+  commentId: T:System.Double
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.double
+  name: double
+  nameWithType: double
+  fullName: double
+  nameWithType.vb: Double
+  fullName.vb: Double
+  name.vb: Double
+- uid: SilverCraft.CSCore.Streams.IFadeStrategy.StopFading*
+  commentId: Overload:SilverCraft.CSCore.Streams.IFadeStrategy.StopFading
+  href: SilverCraft.CSCore.Streams.IFadeStrategy.html#SilverCraft_CSCore_Streams_IFadeStrategy_StopFading
+  name: StopFading
+  nameWithType: IFadeStrategy.StopFading
+  fullName: SilverCraft.CSCore.Streams.IFadeStrategy.StopFading

@@ -1,0 +1,1104 @@
+### YamlMime:ManagedReference
+items:
+- uid: SilverCraft.CSCore.SoundOut.AL.ALSource
+  commentId: T:SilverCraft.CSCore.SoundOut.AL.ALSource
+  id: ALSource
+  parent: SilverCraft.CSCore.SoundOut.AL
+  children:
+  - SilverCraft.CSCore.SoundOut.AL.ALSource.#ctor(SilverCraft.CSCore.SoundOut.AL.ALContext)
+  - SilverCraft.CSCore.SoundOut.AL.ALSource.BuffersProcessed
+  - SilverCraft.CSCore.SoundOut.AL.ALSource.BuffersQueued
+  - SilverCraft.CSCore.SoundOut.AL.ALSource.Dispose
+  - SilverCraft.CSCore.SoundOut.AL.ALSource.Dispose(System.Boolean)
+  - SilverCraft.CSCore.SoundOut.AL.ALSource.Finalize
+  - SilverCraft.CSCore.SoundOut.AL.ALSource.Gain
+  - SilverCraft.CSCore.SoundOut.AL.ALSource.Id
+  - SilverCraft.CSCore.SoundOut.AL.ALSource.Pause
+  - SilverCraft.CSCore.SoundOut.AL.ALSource.Play
+  - SilverCraft.CSCore.SoundOut.AL.ALSource.QueueBuffer(System.UInt32)
+  - SilverCraft.CSCore.SoundOut.AL.ALSource.SourceState
+  - SilverCraft.CSCore.SoundOut.AL.ALSource.Stop
+  - SilverCraft.CSCore.SoundOut.AL.ALSource.UnqueueBuffers(System.Int32)
+  langs:
+  - csharp
+  - vb
+  name: ALSource
+  nameWithType: ALSource
+  fullName: SilverCraft.CSCore.SoundOut.AL.ALSource
+  type: Class
+  source:
+    remote:
+      path: SilverCraft.CSCore/SoundOut/AL/ALSource.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: ALSource
+    path: ../SilverCraft.CSCore/SoundOut/AL/ALSource.cs
+    startLine: 8
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.SoundOut.AL
+  summary: Represents an OpenAL Source.
+  example: []
+  syntax:
+    content: 'public class ALSource : IDisposable'
+    content.vb: Public Class ALSource Implements IDisposable
+  inheritance:
+  - System.Object
+  implements:
+  - System.IDisposable
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  extensionMethods:
+  - SilverCraft.CSCore.SoundOut.AL.ALSource.SilverCraft.CSCore.FluentExtensions.Synchronized``2
+- uid: SilverCraft.CSCore.SoundOut.AL.ALSource.Id
+  commentId: P:SilverCraft.CSCore.SoundOut.AL.ALSource.Id
+  id: Id
+  parent: SilverCraft.CSCore.SoundOut.AL.ALSource
+  langs:
+  - csharp
+  - vb
+  name: Id
+  nameWithType: ALSource.Id
+  fullName: SilverCraft.CSCore.SoundOut.AL.ALSource.Id
+  type: Property
+  source:
+    remote:
+      path: SilverCraft.CSCore/SoundOut/AL/ALSource.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: Id
+    path: ../SilverCraft.CSCore/SoundOut/AL/ALSource.cs
+    startLine: 13
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.SoundOut.AL
+  summary: Gets the openal source id.
+  example: []
+  syntax:
+    content: public uint Id { get; }
+    parameters: []
+    return:
+      type: System.UInt32
+    content.vb: Public Property Id As UInteger
+  overload: SilverCraft.CSCore.SoundOut.AL.ALSource.Id*
+- uid: SilverCraft.CSCore.SoundOut.AL.ALSource.Gain
+  commentId: P:SilverCraft.CSCore.SoundOut.AL.ALSource.Gain
+  id: Gain
+  parent: SilverCraft.CSCore.SoundOut.AL.ALSource
+  langs:
+  - csharp
+  - vb
+  name: Gain
+  nameWithType: ALSource.Gain
+  fullName: SilverCraft.CSCore.SoundOut.AL.ALSource.Gain
+  type: Property
+  source:
+    remote:
+      path: SilverCraft.CSCore/SoundOut/AL/ALSource.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: Gain
+    path: ../SilverCraft.CSCore/SoundOut/AL/ALSource.cs
+    startLine: 19
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.SoundOut.AL
+  summary: Sets gain of <xref href="SilverCraft.CSCore.SoundOut.AL.ALSource" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public float Gain { get; set; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public Property Gain As Single
+  overload: SilverCraft.CSCore.SoundOut.AL.ALSource.Gain*
+- uid: SilverCraft.CSCore.SoundOut.AL.ALSource.#ctor(SilverCraft.CSCore.SoundOut.AL.ALContext)
+  commentId: M:SilverCraft.CSCore.SoundOut.AL.ALSource.#ctor(SilverCraft.CSCore.SoundOut.AL.ALContext)
+  id: '#ctor(SilverCraft.CSCore.SoundOut.AL.ALContext)'
+  parent: SilverCraft.CSCore.SoundOut.AL.ALSource
+  langs:
+  - csharp
+  - vb
+  name: ALSource(ALContext)
+  nameWithType: ALSource.ALSource(ALContext)
+  fullName: SilverCraft.CSCore.SoundOut.AL.ALSource.ALSource(SilverCraft.CSCore.SoundOut.AL.ALContext)
+  type: Constructor
+  source:
+    remote:
+      path: SilverCraft.CSCore/SoundOut/AL/ALSource.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: .ctor
+    path: ../SilverCraft.CSCore/SoundOut/AL/ALSource.cs
+    startLine: 47
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.SoundOut.AL
+  summary: Initializes a new instance of the <xref href="SilverCraft.CSCore.SoundOut.AL.ALSource" data-throw-if-not-resolved="false"></xref> class.
+  example: []
+  syntax:
+    content: public ALSource(ALContext context)
+    parameters:
+    - id: context
+      type: SilverCraft.CSCore.SoundOut.AL.ALContext
+      description: The context used to create the <xref href="SilverCraft.CSCore.SoundOut.AL.ALSource" data-throw-if-not-resolved="false"></xref>.
+    content.vb: Public Sub New(context As ALContext)
+  overload: SilverCraft.CSCore.SoundOut.AL.ALSource.#ctor*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: context
+  nameWithType.vb: ALSource.New(ALContext)
+  fullName.vb: SilverCraft.CSCore.SoundOut.AL.ALSource.New(SilverCraft.CSCore.SoundOut.AL.ALContext)
+  name.vb: New(ALContext)
+- uid: SilverCraft.CSCore.SoundOut.AL.ALSource.Play
+  commentId: M:SilverCraft.CSCore.SoundOut.AL.ALSource.Play
+  id: Play
+  parent: SilverCraft.CSCore.SoundOut.AL.ALSource
+  langs:
+  - csharp
+  - vb
+  name: Play()
+  nameWithType: ALSource.Play()
+  fullName: SilverCraft.CSCore.SoundOut.AL.ALSource.Play()
+  type: Method
+  source:
+    remote:
+      path: SilverCraft.CSCore/SoundOut/AL/ALSource.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: Play
+    path: ../SilverCraft.CSCore/SoundOut/AL/ALSource.cs
+    startLine: 68
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.SoundOut.AL
+  summary: Plays the <xref href="SilverCraft.CSCore.SoundOut.AL.ALSource" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public void Play()
+    content.vb: Public Sub Play()
+  overload: SilverCraft.CSCore.SoundOut.AL.ALSource.Play*
+- uid: SilverCraft.CSCore.SoundOut.AL.ALSource.Pause
+  commentId: M:SilverCraft.CSCore.SoundOut.AL.ALSource.Pause
+  id: Pause
+  parent: SilverCraft.CSCore.SoundOut.AL.ALSource
+  langs:
+  - csharp
+  - vb
+  name: Pause()
+  nameWithType: ALSource.Pause()
+  fullName: SilverCraft.CSCore.SoundOut.AL.ALSource.Pause()
+  type: Method
+  source:
+    remote:
+      path: SilverCraft.CSCore/SoundOut/AL/ALSource.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: Pause
+    path: ../SilverCraft.CSCore/SoundOut/AL/ALSource.cs
+    startLine: 82
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.SoundOut.AL
+  summary: Pauses the <xref href="SilverCraft.CSCore.SoundOut.AL.ALSource" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public void Pause()
+    content.vb: Public Sub Pause()
+  overload: SilverCraft.CSCore.SoundOut.AL.ALSource.Pause*
+- uid: SilverCraft.CSCore.SoundOut.AL.ALSource.Stop
+  commentId: M:SilverCraft.CSCore.SoundOut.AL.ALSource.Stop
+  id: Stop
+  parent: SilverCraft.CSCore.SoundOut.AL.ALSource
+  langs:
+  - csharp
+  - vb
+  name: Stop()
+  nameWithType: ALSource.Stop()
+  fullName: SilverCraft.CSCore.SoundOut.AL.ALSource.Stop()
+  type: Method
+  source:
+    remote:
+      path: SilverCraft.CSCore/SoundOut/AL/ALSource.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: Stop
+    path: ../SilverCraft.CSCore/SoundOut/AL/ALSource.cs
+    startLine: 97
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.SoundOut.AL
+  summary: Stops the <xref href="SilverCraft.CSCore.SoundOut.AL.ALSource" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public void Stop()
+    content.vb: Public Sub [Stop]()
+  overload: SilverCraft.CSCore.SoundOut.AL.ALSource.Stop*
+- uid: SilverCraft.CSCore.SoundOut.AL.ALSource.QueueBuffer(System.UInt32)
+  commentId: M:SilverCraft.CSCore.SoundOut.AL.ALSource.QueueBuffer(System.UInt32)
+  id: QueueBuffer(System.UInt32)
+  parent: SilverCraft.CSCore.SoundOut.AL.ALSource
+  langs:
+  - csharp
+  - vb
+  name: QueueBuffer(uint)
+  nameWithType: ALSource.QueueBuffer(uint)
+  fullName: SilverCraft.CSCore.SoundOut.AL.ALSource.QueueBuffer(uint)
+  type: Method
+  source:
+    remote:
+      path: SilverCraft.CSCore/SoundOut/AL/ALSource.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: QueueBuffer
+    path: ../SilverCraft.CSCore/SoundOut/AL/ALSource.cs
+    startLine: 112
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.SoundOut.AL
+  summary: Queues a buffer specified by the <code class="paramref">bufferHandle</code>.
+  example: []
+  syntax:
+    content: public void QueueBuffer(uint bufferHandle)
+    parameters:
+    - id: bufferHandle
+      type: System.UInt32
+      description: The buffer handle.
+    content.vb: Public Sub QueueBuffer(bufferHandle As UInteger)
+  overload: SilverCraft.CSCore.SoundOut.AL.ALSource.QueueBuffer*
+  nameWithType.vb: ALSource.QueueBuffer(UInteger)
+  fullName.vb: SilverCraft.CSCore.SoundOut.AL.ALSource.QueueBuffer(UInteger)
+  name.vb: QueueBuffer(UInteger)
+- uid: SilverCraft.CSCore.SoundOut.AL.ALSource.UnqueueBuffers(System.Int32)
+  commentId: M:SilverCraft.CSCore.SoundOut.AL.ALSource.UnqueueBuffers(System.Int32)
+  id: UnqueueBuffers(System.Int32)
+  parent: SilverCraft.CSCore.SoundOut.AL.ALSource
+  langs:
+  - csharp
+  - vb
+  name: UnqueueBuffers(int)
+  nameWithType: ALSource.UnqueueBuffers(int)
+  fullName: SilverCraft.CSCore.SoundOut.AL.ALSource.UnqueueBuffers(int)
+  type: Method
+  source:
+    remote:
+      path: SilverCraft.CSCore/SoundOut/AL/ALSource.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: UnqueueBuffers
+    path: ../SilverCraft.CSCore/SoundOut/AL/ALSource.cs
+    startLine: 128
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.SoundOut.AL
+  summary: Unqueues a specified number of buffers and returns their handles.
+  example: []
+  syntax:
+    content: public uint[] UnqueueBuffers(int count)
+    parameters:
+    - id: count
+      type: System.Int32
+      description: The number of buffers to unqueue.
+    return:
+      type: System.UInt32[]
+      description: The handles of the unqueued buffers.
+    content.vb: Public Function UnqueueBuffers(count As Integer) As UInteger()
+  overload: SilverCraft.CSCore.SoundOut.AL.ALSource.UnqueueBuffers*
+  nameWithType.vb: ALSource.UnqueueBuffers(Integer)
+  fullName.vb: SilverCraft.CSCore.SoundOut.AL.ALSource.UnqueueBuffers(Integer)
+  name.vb: UnqueueBuffers(Integer)
+- uid: SilverCraft.CSCore.SoundOut.AL.ALSource.BuffersProcessed
+  commentId: P:SilverCraft.CSCore.SoundOut.AL.ALSource.BuffersProcessed
+  id: BuffersProcessed
+  parent: SilverCraft.CSCore.SoundOut.AL.ALSource
+  langs:
+  - csharp
+  - vb
+  name: BuffersProcessed
+  nameWithType: ALSource.BuffersProcessed
+  fullName: SilverCraft.CSCore.SoundOut.AL.ALSource.BuffersProcessed
+  type: Property
+  source:
+    remote:
+      path: SilverCraft.CSCore/SoundOut/AL/ALSource.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: BuffersProcessed
+    path: ../SilverCraft.CSCore/SoundOut/AL/ALSource.cs
+    startLine: 144
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.SoundOut.AL
+  summary: Gets the number of processed buffers.
+  example: []
+  syntax:
+    content: public int BuffersProcessed { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public ReadOnly Property BuffersProcessed As Integer
+  overload: SilverCraft.CSCore.SoundOut.AL.ALSource.BuffersProcessed*
+- uid: SilverCraft.CSCore.SoundOut.AL.ALSource.BuffersQueued
+  commentId: P:SilverCraft.CSCore.SoundOut.AL.ALSource.BuffersQueued
+  id: BuffersQueued
+  parent: SilverCraft.CSCore.SoundOut.AL.ALSource
+  langs:
+  - csharp
+  - vb
+  name: BuffersQueued
+  nameWithType: ALSource.BuffersQueued
+  fullName: SilverCraft.CSCore.SoundOut.AL.ALSource.BuffersQueued
+  type: Property
+  source:
+    remote:
+      path: SilverCraft.CSCore/SoundOut/AL/ALSource.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: BuffersQueued
+    path: ../SilverCraft.CSCore/SoundOut/AL/ALSource.cs
+    startLine: 164
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.SoundOut.AL
+  summary: Gets the number of queued buffers.
+  example: []
+  syntax:
+    content: public int BuffersQueued { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public ReadOnly Property BuffersQueued As Integer
+  overload: SilverCraft.CSCore.SoundOut.AL.ALSource.BuffersQueued*
+- uid: SilverCraft.CSCore.SoundOut.AL.ALSource.SourceState
+  commentId: P:SilverCraft.CSCore.SoundOut.AL.ALSource.SourceState
+  id: SourceState
+  parent: SilverCraft.CSCore.SoundOut.AL.ALSource
+  langs:
+  - csharp
+  - vb
+  name: SourceState
+  nameWithType: ALSource.SourceState
+  fullName: SilverCraft.CSCore.SoundOut.AL.ALSource.SourceState
+  type: Property
+  source:
+    remote:
+      path: SilverCraft.CSCore/SoundOut/AL/ALSource.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: SourceState
+    path: ../SilverCraft.CSCore/SoundOut/AL/ALSource.cs
+    startLine: 184
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.SoundOut.AL
+  summary: Gets the <xref href="SilverCraft.CSCore.SoundOut.AL.ALSourceState" data-throw-if-not-resolved="false"></xref> of the <xref href="SilverCraft.CSCore.SoundOut.AL.ALSource" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public ALSourceState SourceState { get; }
+    parameters: []
+    return:
+      type: SilverCraft.CSCore.SoundOut.AL.ALSourceState
+    content.vb: Public ReadOnly Property SourceState As ALSourceState
+  overload: SilverCraft.CSCore.SoundOut.AL.ALSource.SourceState*
+- uid: SilverCraft.CSCore.SoundOut.AL.ALSource.Finalize
+  commentId: M:SilverCraft.CSCore.SoundOut.AL.ALSource.Finalize
+  id: Finalize
+  parent: SilverCraft.CSCore.SoundOut.AL.ALSource
+  langs:
+  - csharp
+  - vb
+  name: ~ALSource()
+  nameWithType: ALSource.~ALSource()
+  fullName: SilverCraft.CSCore.SoundOut.AL.ALSource.~ALSource()
+  type: Method
+  source:
+    remote:
+      path: SilverCraft.CSCore/SoundOut/AL/ALSource.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: Finalize
+    path: ../SilverCraft.CSCore/SoundOut/AL/ALSource.cs
+    startLine: 204
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.SoundOut.AL
+  summary: Finalizes an instance of the <xref href="SilverCraft.CSCore.SoundOut.AL.ALSource" data-throw-if-not-resolved="false"></xref> class.
+  example: []
+  syntax:
+    content: protected ~ALSource()
+    content.vb: 'Protected '
+  overload: SilverCraft.CSCore.SoundOut.AL.ALSource.Finalize*
+  nameWithType.vb: ''
+  fullName.vb: ''
+  name.vb: ''
+- uid: SilverCraft.CSCore.SoundOut.AL.ALSource.Dispose
+  commentId: M:SilverCraft.CSCore.SoundOut.AL.ALSource.Dispose
+  id: Dispose
+  parent: SilverCraft.CSCore.SoundOut.AL.ALSource
+  langs:
+  - csharp
+  - vb
+  name: Dispose()
+  nameWithType: ALSource.Dispose()
+  fullName: SilverCraft.CSCore.SoundOut.AL.ALSource.Dispose()
+  type: Method
+  source:
+    remote:
+      path: SilverCraft.CSCore/SoundOut/AL/ALSource.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: Dispose
+    path: ../SilverCraft.CSCore/SoundOut/AL/ALSource.cs
+    startLine: 212
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.SoundOut.AL
+  summary: Disposes the <xref href="SilverCraft.CSCore.SoundOut.AL.ALSource" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public void Dispose()
+    content.vb: Public Sub Dispose()
+  overload: SilverCraft.CSCore.SoundOut.AL.ALSource.Dispose*
+  implements:
+  - System.IDisposable.Dispose
+- uid: SilverCraft.CSCore.SoundOut.AL.ALSource.Dispose(System.Boolean)
+  commentId: M:SilverCraft.CSCore.SoundOut.AL.ALSource.Dispose(System.Boolean)
+  id: Dispose(System.Boolean)
+  parent: SilverCraft.CSCore.SoundOut.AL.ALSource
+  langs:
+  - csharp
+  - vb
+  name: Dispose(bool)
+  nameWithType: ALSource.Dispose(bool)
+  fullName: SilverCraft.CSCore.SoundOut.AL.ALSource.Dispose(bool)
+  type: Method
+  source:
+    remote:
+      path: SilverCraft.CSCore/SoundOut/AL/ALSource.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: Dispose
+    path: ../SilverCraft.CSCore/SoundOut/AL/ALSource.cs
+    startLine: 222
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.SoundOut.AL
+  summary: Disposes the OpenAL source.
+  example: []
+  syntax:
+    content: protected void Dispose(bool disposing)
+    parameters:
+    - id: disposing
+      type: System.Boolean
+      description: The disposing state
+    content.vb: Protected Sub Dispose(disposing As Boolean)
+  overload: SilverCraft.CSCore.SoundOut.AL.ALSource.Dispose*
+  nameWithType.vb: ALSource.Dispose(Boolean)
+  fullName.vb: SilverCraft.CSCore.SoundOut.AL.ALSource.Dispose(Boolean)
+  name.vb: Dispose(Boolean)
+references:
+- uid: SilverCraft.CSCore.SoundOut.AL
+  commentId: N:SilverCraft.CSCore.SoundOut.AL
+  href: SilverCraft.html
+  name: SilverCraft.CSCore.SoundOut.AL
+  nameWithType: SilverCraft.CSCore.SoundOut.AL
+  fullName: SilverCraft.CSCore.SoundOut.AL
+  spec.csharp:
+  - uid: SilverCraft
+    name: SilverCraft
+    href: SilverCraft.html
+  - name: .
+  - uid: SilverCraft.CSCore
+    name: CSCore
+    href: SilverCraft.CSCore.html
+  - name: .
+  - uid: SilverCraft.CSCore.SoundOut
+    name: SoundOut
+    href: SilverCraft.CSCore.SoundOut.html
+  - name: .
+  - uid: SilverCraft.CSCore.SoundOut.AL
+    name: AL
+    href: SilverCraft.CSCore.SoundOut.AL.html
+  spec.vb:
+  - uid: SilverCraft
+    name: SilverCraft
+    href: SilverCraft.html
+  - name: .
+  - uid: SilverCraft.CSCore
+    name: CSCore
+    href: SilverCraft.CSCore.html
+  - name: .
+  - uid: SilverCraft.CSCore.SoundOut
+    name: SoundOut
+    href: SilverCraft.CSCore.SoundOut.html
+  - name: .
+  - uid: SilverCraft.CSCore.SoundOut.AL
+    name: AL
+    href: SilverCraft.CSCore.SoundOut.AL.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.IDisposable
+  commentId: T:System.IDisposable
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.idisposable
+  name: IDisposable
+  nameWithType: IDisposable
+  fullName: System.IDisposable
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: SilverCraft.CSCore.SoundOut.AL.ALSource.SilverCraft.CSCore.FluentExtensions.Synchronized``2
+  commentId: M:SilverCraft.CSCore.FluentExtensions.Synchronized``2(``0)
+  parent: SilverCraft.CSCore.FluentExtensions
+  definition: SilverCraft.CSCore.FluentExtensions.Synchronized``2(``0)
+  href: SilverCraft.CSCore.FluentExtensions.html#SilverCraft_CSCore_FluentExtensions_Synchronized__2___0_
+  name: Synchronized<ALSource, T>(ALSource)
+  nameWithType: FluentExtensions.Synchronized<ALSource, T>(ALSource)
+  fullName: SilverCraft.CSCore.FluentExtensions.Synchronized<SilverCraft.CSCore.SoundOut.AL.ALSource, T>(SilverCraft.CSCore.SoundOut.AL.ALSource)
+  nameWithType.vb: FluentExtensions.Synchronized(Of ALSource, T)(ALSource)
+  fullName.vb: SilverCraft.CSCore.FluentExtensions.Synchronized(Of SilverCraft.CSCore.SoundOut.AL.ALSource, T)(SilverCraft.CSCore.SoundOut.AL.ALSource)
+  name.vb: Synchronized(Of ALSource, T)(ALSource)
+  spec.csharp:
+  - uid: SilverCraft.CSCore.FluentExtensions.Synchronized``2(SilverCraft.CSCore.SoundOut.AL.ALSource)
+    name: Synchronized
+    href: SilverCraft.CSCore.FluentExtensions.html#SilverCraft_CSCore_FluentExtensions_Synchronized__2___0_
+  - name: <
+  - uid: SilverCraft.CSCore.SoundOut.AL.ALSource
+    name: ALSource
+    href: SilverCraft.CSCore.SoundOut.AL.ALSource.html
+  - name: ','
+  - name: " "
+  - name: T
+  - name: '>'
+  - name: (
+  - uid: SilverCraft.CSCore.SoundOut.AL.ALSource
+    name: ALSource
+    href: SilverCraft.CSCore.SoundOut.AL.ALSource.html
+  - name: )
+  spec.vb:
+  - uid: SilverCraft.CSCore.FluentExtensions.Synchronized``2(SilverCraft.CSCore.SoundOut.AL.ALSource)
+    name: Synchronized
+    href: SilverCraft.CSCore.FluentExtensions.html#SilverCraft_CSCore_FluentExtensions_Synchronized__2___0_
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: SilverCraft.CSCore.SoundOut.AL.ALSource
+    name: ALSource
+    href: SilverCraft.CSCore.SoundOut.AL.ALSource.html
+  - name: ','
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: SilverCraft.CSCore.SoundOut.AL.ALSource
+    name: ALSource
+    href: SilverCraft.CSCore.SoundOut.AL.ALSource.html
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: SilverCraft.CSCore.FluentExtensions.Synchronized``2(``0)
+  commentId: M:SilverCraft.CSCore.FluentExtensions.Synchronized``2(``0)
+  href: SilverCraft.CSCore.FluentExtensions.html#SilverCraft_CSCore_FluentExtensions_Synchronized__2___0_
+  name: Synchronized<TAudioSource, T>(TAudioSource)
+  nameWithType: FluentExtensions.Synchronized<TAudioSource, T>(TAudioSource)
+  fullName: SilverCraft.CSCore.FluentExtensions.Synchronized<TAudioSource, T>(TAudioSource)
+  nameWithType.vb: FluentExtensions.Synchronized(Of TAudioSource, T)(TAudioSource)
+  fullName.vb: SilverCraft.CSCore.FluentExtensions.Synchronized(Of TAudioSource, T)(TAudioSource)
+  name.vb: Synchronized(Of TAudioSource, T)(TAudioSource)
+  spec.csharp:
+  - uid: SilverCraft.CSCore.FluentExtensions.Synchronized``2(``0)
+    name: Synchronized
+    href: SilverCraft.CSCore.FluentExtensions.html#SilverCraft_CSCore_FluentExtensions_Synchronized__2___0_
+  - name: <
+  - name: TAudioSource
+  - name: ','
+  - name: " "
+  - name: T
+  - name: '>'
+  - name: (
+  - name: TAudioSource
+  - name: )
+  spec.vb:
+  - uid: SilverCraft.CSCore.FluentExtensions.Synchronized``2(``0)
+    name: Synchronized
+    href: SilverCraft.CSCore.FluentExtensions.html#SilverCraft_CSCore_FluentExtensions_Synchronized__2___0_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TAudioSource
+  - name: ','
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - name: TAudioSource
+  - name: )
+- uid: SilverCraft.CSCore.FluentExtensions
+  commentId: T:SilverCraft.CSCore.FluentExtensions
+  parent: SilverCraft.CSCore
+  href: SilverCraft.CSCore.FluentExtensions.html
+  name: FluentExtensions
+  nameWithType: FluentExtensions
+  fullName: SilverCraft.CSCore.FluentExtensions
+- uid: SilverCraft.CSCore
+  commentId: N:SilverCraft.CSCore
+  href: SilverCraft.html
+  name: SilverCraft.CSCore
+  nameWithType: SilverCraft.CSCore
+  fullName: SilverCraft.CSCore
+  spec.csharp:
+  - uid: SilverCraft
+    name: SilverCraft
+    href: SilverCraft.html
+  - name: .
+  - uid: SilverCraft.CSCore
+    name: CSCore
+    href: SilverCraft.CSCore.html
+  spec.vb:
+  - uid: SilverCraft
+    name: SilverCraft
+    href: SilverCraft.html
+  - name: .
+  - uid: SilverCraft.CSCore
+    name: CSCore
+    href: SilverCraft.CSCore.html
+- uid: SilverCraft.CSCore.SoundOut.AL.ALSource.Id*
+  commentId: Overload:SilverCraft.CSCore.SoundOut.AL.ALSource.Id
+  href: SilverCraft.CSCore.SoundOut.AL.ALSource.html#SilverCraft_CSCore_SoundOut_AL_ALSource_Id
+  name: Id
+  nameWithType: ALSource.Id
+  fullName: SilverCraft.CSCore.SoundOut.AL.ALSource.Id
+- uid: System.UInt32
+  commentId: T:System.UInt32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.uint32
+  name: uint
+  nameWithType: uint
+  fullName: uint
+  nameWithType.vb: UInteger
+  fullName.vb: UInteger
+  name.vb: UInteger
+- uid: SilverCraft.CSCore.SoundOut.AL.ALSource
+  commentId: T:SilverCraft.CSCore.SoundOut.AL.ALSource
+  href: SilverCraft.CSCore.SoundOut.AL.ALSource.html
+  name: ALSource
+  nameWithType: ALSource
+  fullName: SilverCraft.CSCore.SoundOut.AL.ALSource
+- uid: SilverCraft.CSCore.SoundOut.AL.ALSource.Gain*
+  commentId: Overload:SilverCraft.CSCore.SoundOut.AL.ALSource.Gain
+  href: SilverCraft.CSCore.SoundOut.AL.ALSource.html#SilverCraft_CSCore_SoundOut_AL_ALSource_Gain
+  name: Gain
+  nameWithType: ALSource.Gain
+  fullName: SilverCraft.CSCore.SoundOut.AL.ALSource.Gain
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.single
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single
+- uid: System.ArgumentNullException
+  commentId: T:System.ArgumentNullException
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.argumentnullexception
+  name: ArgumentNullException
+  nameWithType: ArgumentNullException
+  fullName: System.ArgumentNullException
+- uid: SilverCraft.CSCore.SoundOut.AL.ALSource.#ctor*
+  commentId: Overload:SilverCraft.CSCore.SoundOut.AL.ALSource.#ctor
+  href: SilverCraft.CSCore.SoundOut.AL.ALSource.html#SilverCraft_CSCore_SoundOut_AL_ALSource__ctor_SilverCraft_CSCore_SoundOut_AL_ALContext_
+  name: ALSource
+  nameWithType: ALSource.ALSource
+  fullName: SilverCraft.CSCore.SoundOut.AL.ALSource.ALSource
+  nameWithType.vb: ALSource.New
+  fullName.vb: SilverCraft.CSCore.SoundOut.AL.ALSource.New
+  name.vb: New
+- uid: SilverCraft.CSCore.SoundOut.AL.ALContext
+  commentId: T:SilverCraft.CSCore.SoundOut.AL.ALContext
+  parent: SilverCraft.CSCore.SoundOut.AL
+  href: SilverCraft.CSCore.SoundOut.AL.ALContext.html
+  name: ALContext
+  nameWithType: ALContext
+  fullName: SilverCraft.CSCore.SoundOut.AL.ALContext
+- uid: SilverCraft.CSCore.SoundOut.AL.ALSource.Play*
+  commentId: Overload:SilverCraft.CSCore.SoundOut.AL.ALSource.Play
+  href: SilverCraft.CSCore.SoundOut.AL.ALSource.html#SilverCraft_CSCore_SoundOut_AL_ALSource_Play
+  name: Play
+  nameWithType: ALSource.Play
+  fullName: SilverCraft.CSCore.SoundOut.AL.ALSource.Play
+- uid: SilverCraft.CSCore.SoundOut.AL.ALSource.Pause*
+  commentId: Overload:SilverCraft.CSCore.SoundOut.AL.ALSource.Pause
+  href: SilverCraft.CSCore.SoundOut.AL.ALSource.html#SilverCraft_CSCore_SoundOut_AL_ALSource_Pause
+  name: Pause
+  nameWithType: ALSource.Pause
+  fullName: SilverCraft.CSCore.SoundOut.AL.ALSource.Pause
+- uid: SilverCraft.CSCore.SoundOut.AL.ALSource.Stop*
+  commentId: Overload:SilverCraft.CSCore.SoundOut.AL.ALSource.Stop
+  href: SilverCraft.CSCore.SoundOut.AL.ALSource.html#SilverCraft_CSCore_SoundOut_AL_ALSource_Stop
+  name: Stop
+  nameWithType: ALSource.Stop
+  fullName: SilverCraft.CSCore.SoundOut.AL.ALSource.Stop
+- uid: SilverCraft.CSCore.SoundOut.AL.ALSource.QueueBuffer*
+  commentId: Overload:SilverCraft.CSCore.SoundOut.AL.ALSource.QueueBuffer
+  href: SilverCraft.CSCore.SoundOut.AL.ALSource.html#SilverCraft_CSCore_SoundOut_AL_ALSource_QueueBuffer_System_UInt32_
+  name: QueueBuffer
+  nameWithType: ALSource.QueueBuffer
+  fullName: SilverCraft.CSCore.SoundOut.AL.ALSource.QueueBuffer
+- uid: SilverCraft.CSCore.SoundOut.AL.ALSource.UnqueueBuffers*
+  commentId: Overload:SilverCraft.CSCore.SoundOut.AL.ALSource.UnqueueBuffers
+  href: SilverCraft.CSCore.SoundOut.AL.ALSource.html#SilverCraft_CSCore_SoundOut_AL_ALSource_UnqueueBuffers_System_Int32_
+  name: UnqueueBuffers
+  nameWithType: ALSource.UnqueueBuffers
+  fullName: SilverCraft.CSCore.SoundOut.AL.ALSource.UnqueueBuffers
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: System.UInt32[]
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.uint32
+  name: uint[]
+  nameWithType: uint[]
+  fullName: uint[]
+  nameWithType.vb: UInteger()
+  fullName.vb: UInteger()
+  name.vb: UInteger()
+  spec.csharp:
+  - uid: System.UInt32
+    name: uint
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.uint32
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: System.UInt32
+    name: UInteger
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.uint32
+  - name: (
+  - name: )
+- uid: SilverCraft.CSCore.SoundOut.AL.ALSource.BuffersProcessed*
+  commentId: Overload:SilverCraft.CSCore.SoundOut.AL.ALSource.BuffersProcessed
+  href: SilverCraft.CSCore.SoundOut.AL.ALSource.html#SilverCraft_CSCore_SoundOut_AL_ALSource_BuffersProcessed
+  name: BuffersProcessed
+  nameWithType: ALSource.BuffersProcessed
+  fullName: SilverCraft.CSCore.SoundOut.AL.ALSource.BuffersProcessed
+- uid: SilverCraft.CSCore.SoundOut.AL.ALSource.BuffersQueued*
+  commentId: Overload:SilverCraft.CSCore.SoundOut.AL.ALSource.BuffersQueued
+  href: SilverCraft.CSCore.SoundOut.AL.ALSource.html#SilverCraft_CSCore_SoundOut_AL_ALSource_BuffersQueued
+  name: BuffersQueued
+  nameWithType: ALSource.BuffersQueued
+  fullName: SilverCraft.CSCore.SoundOut.AL.ALSource.BuffersQueued
+- uid: SilverCraft.CSCore.SoundOut.AL.ALSourceState
+  commentId: T:SilverCraft.CSCore.SoundOut.AL.ALSourceState
+  parent: SilverCraft.CSCore.SoundOut.AL
+  href: SilverCraft.CSCore.SoundOut.AL.ALSourceState.html
+  name: ALSourceState
+  nameWithType: ALSourceState
+  fullName: SilverCraft.CSCore.SoundOut.AL.ALSourceState
+- uid: SilverCraft.CSCore.SoundOut.AL.ALSource.SourceState*
+  commentId: Overload:SilverCraft.CSCore.SoundOut.AL.ALSource.SourceState
+  href: SilverCraft.CSCore.SoundOut.AL.ALSource.html#SilverCraft_CSCore_SoundOut_AL_ALSource_SourceState
+  name: SourceState
+  nameWithType: ALSource.SourceState
+  fullName: SilverCraft.CSCore.SoundOut.AL.ALSource.SourceState
+- uid: SilverCraft.CSCore.SoundOut.AL.ALSource.Finalize*
+  commentId: Overload:SilverCraft.CSCore.SoundOut.AL.ALSource.Finalize
+  href: SilverCraft.CSCore.SoundOut.AL.ALSource.html#SilverCraft_CSCore_SoundOut_AL_ALSource_Finalize
+  name: ~ALSource
+  nameWithType: ALSource.~ALSource
+  fullName: SilverCraft.CSCore.SoundOut.AL.ALSource.~ALSource
+  spec.csharp:
+  - name: "~"
+  - uid: SilverCraft.CSCore.SoundOut.AL.ALSource.Finalize*
+    name: ALSource
+    href: SilverCraft.CSCore.SoundOut.AL.ALSource.html#SilverCraft_CSCore_SoundOut_AL_ALSource_Finalize
+- uid: SilverCraft.CSCore.SoundOut.AL.ALSource.Dispose*
+  commentId: Overload:SilverCraft.CSCore.SoundOut.AL.ALSource.Dispose
+  href: SilverCraft.CSCore.SoundOut.AL.ALSource.html#SilverCraft_CSCore_SoundOut_AL_ALSource_Dispose
+  name: Dispose
+  nameWithType: ALSource.Dispose
+  fullName: SilverCraft.CSCore.SoundOut.AL.ALSource.Dispose
+- uid: System.IDisposable.Dispose
+  commentId: M:System.IDisposable.Dispose
+  parent: System.IDisposable
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.idisposable.dispose
+  name: Dispose()
+  nameWithType: IDisposable.Dispose()
+  fullName: System.IDisposable.Dispose()
+  spec.csharp:
+  - uid: System.IDisposable.Dispose
+    name: Dispose
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.idisposable.dispose
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.IDisposable.Dispose
+    name: Dispose
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.idisposable.dispose
+  - name: (
+  - name: )
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean

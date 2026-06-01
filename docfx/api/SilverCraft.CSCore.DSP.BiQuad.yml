@@ -1,0 +1,1100 @@
+### YamlMime:ManagedReference
+items:
+- uid: SilverCraft.CSCore.DSP.BiQuad
+  commentId: T:SilverCraft.CSCore.DSP.BiQuad
+  id: BiQuad
+  parent: SilverCraft.CSCore.DSP
+  children:
+  - SilverCraft.CSCore.DSP.BiQuad.#ctor(System.Int32,System.Double)
+  - SilverCraft.CSCore.DSP.BiQuad.#ctor(System.Int32,System.Double,System.Double)
+  - SilverCraft.CSCore.DSP.BiQuad.A0
+  - SilverCraft.CSCore.DSP.BiQuad.A1
+  - SilverCraft.CSCore.DSP.BiQuad.A2
+  - SilverCraft.CSCore.DSP.BiQuad.B1
+  - SilverCraft.CSCore.DSP.BiQuad.B2
+  - SilverCraft.CSCore.DSP.BiQuad.CalculateBiQuadCoefficients
+  - SilverCraft.CSCore.DSP.BiQuad.Frequency
+  - SilverCraft.CSCore.DSP.BiQuad.GainDB
+  - SilverCraft.CSCore.DSP.BiQuad.Process(System.Single)
+  - SilverCraft.CSCore.DSP.BiQuad.Process(System.Single[])
+  - SilverCraft.CSCore.DSP.BiQuad.Q
+  - SilverCraft.CSCore.DSP.BiQuad.SampleRate
+  - SilverCraft.CSCore.DSP.BiQuad.Z1
+  - SilverCraft.CSCore.DSP.BiQuad.Z2
+  langs:
+  - csharp
+  - vb
+  name: BiQuad
+  nameWithType: BiQuad
+  fullName: SilverCraft.CSCore.DSP.BiQuad
+  type: Class
+  source:
+    remote:
+      path: SilverCraft.CSCore/DSP/BiQuad.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: BiQuad
+    path: ../SilverCraft.CSCore/DSP/BiQuad.cs
+    startLine: 11
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.DSP
+  summary: Represents a biquad-filter.
+  example: []
+  syntax:
+    content: public abstract class BiQuad
+    content.vb: Public MustInherit Class BiQuad
+  inheritance:
+  - System.Object
+  derivedClasses:
+  - SilverCraft.CSCore.DSP.BandpassFilter
+  - SilverCraft.CSCore.DSP.HighShelfFilter
+  - SilverCraft.CSCore.DSP.HighpassFilter
+  - SilverCraft.CSCore.DSP.LowShelfFilter
+  - SilverCraft.CSCore.DSP.LowpassFilter
+  - SilverCraft.CSCore.DSP.NotchFilter
+  - SilverCraft.CSCore.DSP.PeakFilter
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  extensionMethods:
+  - SilverCraft.CSCore.DSP.BiQuad.SilverCraft.CSCore.FluentExtensions.Synchronized``2
+- uid: SilverCraft.CSCore.DSP.BiQuad.A0
+  commentId: F:SilverCraft.CSCore.DSP.BiQuad.A0
+  id: A0
+  parent: SilverCraft.CSCore.DSP.BiQuad
+  langs:
+  - csharp
+  - vb
+  name: A0
+  nameWithType: BiQuad.A0
+  fullName: SilverCraft.CSCore.DSP.BiQuad.A0
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/DSP/BiQuad.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: A0
+    path: ../SilverCraft.CSCore/DSP/BiQuad.cs
+    startLine: 16
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.DSP
+  summary: The a0 value.
+  example: []
+  syntax:
+    content: protected double A0
+    return:
+      type: System.Double
+    content.vb: Protected A0 As Double
+- uid: SilverCraft.CSCore.DSP.BiQuad.A1
+  commentId: F:SilverCraft.CSCore.DSP.BiQuad.A1
+  id: A1
+  parent: SilverCraft.CSCore.DSP.BiQuad
+  langs:
+  - csharp
+  - vb
+  name: A1
+  nameWithType: BiQuad.A1
+  fullName: SilverCraft.CSCore.DSP.BiQuad.A1
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/DSP/BiQuad.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: A1
+    path: ../SilverCraft.CSCore/DSP/BiQuad.cs
+    startLine: 20
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.DSP
+  summary: The a1 value.
+  example: []
+  syntax:
+    content: protected double A1
+    return:
+      type: System.Double
+    content.vb: Protected A1 As Double
+- uid: SilverCraft.CSCore.DSP.BiQuad.A2
+  commentId: F:SilverCraft.CSCore.DSP.BiQuad.A2
+  id: A2
+  parent: SilverCraft.CSCore.DSP.BiQuad
+  langs:
+  - csharp
+  - vb
+  name: A2
+  nameWithType: BiQuad.A2
+  fullName: SilverCraft.CSCore.DSP.BiQuad.A2
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/DSP/BiQuad.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: A2
+    path: ../SilverCraft.CSCore/DSP/BiQuad.cs
+    startLine: 24
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.DSP
+  summary: The a2 value.
+  example: []
+  syntax:
+    content: protected double A2
+    return:
+      type: System.Double
+    content.vb: Protected A2 As Double
+- uid: SilverCraft.CSCore.DSP.BiQuad.B1
+  commentId: F:SilverCraft.CSCore.DSP.BiQuad.B1
+  id: B1
+  parent: SilverCraft.CSCore.DSP.BiQuad
+  langs:
+  - csharp
+  - vb
+  name: B1
+  nameWithType: BiQuad.B1
+  fullName: SilverCraft.CSCore.DSP.BiQuad.B1
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/DSP/BiQuad.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: B1
+    path: ../SilverCraft.CSCore/DSP/BiQuad.cs
+    startLine: 28
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.DSP
+  summary: The b1 value.
+  example: []
+  syntax:
+    content: protected double B1
+    return:
+      type: System.Double
+    content.vb: Protected B1 As Double
+- uid: SilverCraft.CSCore.DSP.BiQuad.B2
+  commentId: F:SilverCraft.CSCore.DSP.BiQuad.B2
+  id: B2
+  parent: SilverCraft.CSCore.DSP.BiQuad
+  langs:
+  - csharp
+  - vb
+  name: B2
+  nameWithType: BiQuad.B2
+  fullName: SilverCraft.CSCore.DSP.BiQuad.B2
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/DSP/BiQuad.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: B2
+    path: ../SilverCraft.CSCore/DSP/BiQuad.cs
+    startLine: 32
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.DSP
+  summary: The b2 value.
+  example: []
+  syntax:
+    content: protected double B2
+    return:
+      type: System.Double
+    content.vb: Protected B2 As Double
+- uid: SilverCraft.CSCore.DSP.BiQuad.Z1
+  commentId: F:SilverCraft.CSCore.DSP.BiQuad.Z1
+  id: Z1
+  parent: SilverCraft.CSCore.DSP.BiQuad
+  langs:
+  - csharp
+  - vb
+  name: Z1
+  nameWithType: BiQuad.Z1
+  fullName: SilverCraft.CSCore.DSP.BiQuad.Z1
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/DSP/BiQuad.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: Z1
+    path: ../SilverCraft.CSCore/DSP/BiQuad.cs
+    startLine: 44
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.DSP
+  summary: The z1 value.
+  example: []
+  syntax:
+    content: protected double Z1
+    return:
+      type: System.Double
+    content.vb: Protected Z1 As Double
+- uid: SilverCraft.CSCore.DSP.BiQuad.Z2
+  commentId: F:SilverCraft.CSCore.DSP.BiQuad.Z2
+  id: Z2
+  parent: SilverCraft.CSCore.DSP.BiQuad
+  langs:
+  - csharp
+  - vb
+  name: Z2
+  nameWithType: BiQuad.Z2
+  fullName: SilverCraft.CSCore.DSP.BiQuad.Z2
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/DSP/BiQuad.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: Z2
+    path: ../SilverCraft.CSCore/DSP/BiQuad.cs
+    startLine: 48
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.DSP
+  summary: The z2 value.
+  example: []
+  syntax:
+    content: protected double Z2
+    return:
+      type: System.Double
+    content.vb: Protected Z2 As Double
+- uid: SilverCraft.CSCore.DSP.BiQuad.Frequency
+  commentId: P:SilverCraft.CSCore.DSP.BiQuad.Frequency
+  id: Frequency
+  parent: SilverCraft.CSCore.DSP.BiQuad
+  langs:
+  - csharp
+  - vb
+  name: Frequency
+  nameWithType: BiQuad.Frequency
+  fullName: SilverCraft.CSCore.DSP.BiQuad.Frequency
+  type: Property
+  source:
+    remote:
+      path: SilverCraft.CSCore/DSP/BiQuad.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: Frequency
+    path: ../SilverCraft.CSCore/DSP/BiQuad.cs
+    startLine: 56
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.DSP
+  summary: Gets or sets the frequency.
+  example: []
+  syntax:
+    content: public double Frequency { get; set; }
+    parameters: []
+    return:
+      type: System.Double
+    content.vb: Public Property Frequency As Double
+  overload: SilverCraft.CSCore.DSP.BiQuad.Frequency*
+  exceptions:
+  - type: System.ArgumentOutOfRangeException
+    commentId: T:System.ArgumentOutOfRangeException
+    description: value;The samplerate has to be bigger than 2 * frequency.
+- uid: SilverCraft.CSCore.DSP.BiQuad.SampleRate
+  commentId: P:SilverCraft.CSCore.DSP.BiQuad.SampleRate
+  id: SampleRate
+  parent: SilverCraft.CSCore.DSP.BiQuad
+  langs:
+  - csharp
+  - vb
+  name: SampleRate
+  nameWithType: BiQuad.SampleRate
+  fullName: SilverCraft.CSCore.DSP.BiQuad.SampleRate
+  type: Property
+  source:
+    remote:
+      path: SilverCraft.CSCore/DSP/BiQuad.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: SampleRate
+    path: ../SilverCraft.CSCore/DSP/BiQuad.cs
+    startLine: 73
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.DSP
+  summary: Gets the sample rate.
+  example: []
+  syntax:
+    content: public int SampleRate { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property SampleRate As Integer
+  overload: SilverCraft.CSCore.DSP.BiQuad.SampleRate*
+- uid: SilverCraft.CSCore.DSP.BiQuad.Q
+  commentId: P:SilverCraft.CSCore.DSP.BiQuad.Q
+  id: Q
+  parent: SilverCraft.CSCore.DSP.BiQuad
+  langs:
+  - csharp
+  - vb
+  name: Q
+  nameWithType: BiQuad.Q
+  fullName: SilverCraft.CSCore.DSP.BiQuad.Q
+  type: Property
+  source:
+    remote:
+      path: SilverCraft.CSCore/DSP/BiQuad.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: Q
+    path: ../SilverCraft.CSCore/DSP/BiQuad.cs
+    startLine: 78
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.DSP
+  summary: The q value.
+  example: []
+  syntax:
+    content: public double Q { get; set; }
+    parameters: []
+    return:
+      type: System.Double
+    content.vb: Public Property Q As Double
+  overload: SilverCraft.CSCore.DSP.BiQuad.Q*
+- uid: SilverCraft.CSCore.DSP.BiQuad.GainDB
+  commentId: P:SilverCraft.CSCore.DSP.BiQuad.GainDB
+  id: GainDB
+  parent: SilverCraft.CSCore.DSP.BiQuad
+  langs:
+  - csharp
+  - vb
+  name: GainDB
+  nameWithType: BiQuad.GainDB
+  fullName: SilverCraft.CSCore.DSP.BiQuad.GainDB
+  type: Property
+  source:
+    remote:
+      path: SilverCraft.CSCore/DSP/BiQuad.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: GainDB
+    path: ../SilverCraft.CSCore/DSP/BiQuad.cs
+    startLine: 92
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.DSP
+  summary: Gets or sets the gain value in dB.
+  example: []
+  syntax:
+    content: public double GainDB { get; set; }
+    parameters: []
+    return:
+      type: System.Double
+    content.vb: Public Property GainDB As Double
+  overload: SilverCraft.CSCore.DSP.BiQuad.GainDB*
+- uid: SilverCraft.CSCore.DSP.BiQuad.#ctor(System.Int32,System.Double)
+  commentId: M:SilverCraft.CSCore.DSP.BiQuad.#ctor(System.Int32,System.Double)
+  id: '#ctor(System.Int32,System.Double)'
+  parent: SilverCraft.CSCore.DSP.BiQuad
+  langs:
+  - csharp
+  - vb
+  name: BiQuad(int, double)
+  nameWithType: BiQuad.BiQuad(int, double)
+  fullName: SilverCraft.CSCore.DSP.BiQuad.BiQuad(int, double)
+  type: Constructor
+  source:
+    remote:
+      path: SilverCraft.CSCore/DSP/BiQuad.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: .ctor
+    path: ../SilverCraft.CSCore/DSP/BiQuad.cs
+    startLine: 114
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.DSP
+  summary: Initializes a new instance of the <xref href="SilverCraft.CSCore.DSP.BiQuad" data-throw-if-not-resolved="false"></xref> class.
+  example: []
+  syntax:
+    content: protected BiQuad(int sampleRate, double frequency)
+    parameters:
+    - id: sampleRate
+      type: System.Int32
+      description: The sample rate.
+    - id: frequency
+      type: System.Double
+      description: The frequency.
+    content.vb: Protected Sub New(sampleRate As Integer, frequency As Double)
+  overload: SilverCraft.CSCore.DSP.BiQuad.#ctor*
+  exceptions:
+  - type: System.ArgumentOutOfRangeException
+    commentId: T:System.ArgumentOutOfRangeException
+    description: >-
+      sampleRate
+
+      or
+
+      frequency
+
+      or
+
+      q
+  nameWithType.vb: BiQuad.New(Integer, Double)
+  fullName.vb: SilverCraft.CSCore.DSP.BiQuad.New(Integer, Double)
+  name.vb: New(Integer, Double)
+- uid: SilverCraft.CSCore.DSP.BiQuad.#ctor(System.Int32,System.Double,System.Double)
+  commentId: M:SilverCraft.CSCore.DSP.BiQuad.#ctor(System.Int32,System.Double,System.Double)
+  id: '#ctor(System.Int32,System.Double,System.Double)'
+  parent: SilverCraft.CSCore.DSP.BiQuad
+  langs:
+  - csharp
+  - vb
+  name: BiQuad(int, double, double)
+  nameWithType: BiQuad.BiQuad(int, double, double)
+  fullName: SilverCraft.CSCore.DSP.BiQuad.BiQuad(int, double, double)
+  type: Constructor
+  source:
+    remote:
+      path: SilverCraft.CSCore/DSP/BiQuad.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: .ctor
+    path: ../SilverCraft.CSCore/DSP/BiQuad.cs
+    startLine: 132
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.DSP
+  summary: Initializes a new instance of the <xref href="SilverCraft.CSCore.DSP.BiQuad" data-throw-if-not-resolved="false"></xref> class.
+  example: []
+  syntax:
+    content: protected BiQuad(int sampleRate, double frequency, double q)
+    parameters:
+    - id: sampleRate
+      type: System.Int32
+      description: The sample rate.
+    - id: frequency
+      type: System.Double
+      description: The frequency.
+    - id: q
+      type: System.Double
+      description: The q.
+    content.vb: Protected Sub New(sampleRate As Integer, frequency As Double, q As Double)
+  overload: SilverCraft.CSCore.DSP.BiQuad.#ctor*
+  exceptions:
+  - type: System.ArgumentOutOfRangeException
+    commentId: T:System.ArgumentOutOfRangeException
+    description: >-
+      sampleRate
+
+      or
+
+      frequency
+
+      or
+
+      q
+  nameWithType.vb: BiQuad.New(Integer, Double, Double)
+  fullName.vb: SilverCraft.CSCore.DSP.BiQuad.New(Integer, Double, Double)
+  name.vb: New(Integer, Double, Double)
+- uid: SilverCraft.CSCore.DSP.BiQuad.Process(System.Single)
+  commentId: M:SilverCraft.CSCore.DSP.BiQuad.Process(System.Single)
+  id: Process(System.Single)
+  parent: SilverCraft.CSCore.DSP.BiQuad
+  langs:
+  - csharp
+  - vb
+  name: Process(float)
+  nameWithType: BiQuad.Process(float)
+  fullName: SilverCraft.CSCore.DSP.BiQuad.Process(float)
+  type: Method
+  source:
+    remote:
+      path: SilverCraft.CSCore/DSP/BiQuad.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: Process
+    path: ../SilverCraft.CSCore/DSP/BiQuad.cs
+    startLine: 148
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.DSP
+  summary: Processes a single <code class="paramref">input</code> sample and returns the result.
+  example: []
+  syntax:
+    content: public float Process(float input)
+    parameters:
+    - id: input
+      type: System.Single
+      description: The input sample to process.
+    return:
+      type: System.Single
+      description: The result of the processed <code class="paramref">input</code> sample.
+    content.vb: Public Function Process(input As Single) As Single
+  overload: SilverCraft.CSCore.DSP.BiQuad.Process*
+  nameWithType.vb: BiQuad.Process(Single)
+  fullName.vb: SilverCraft.CSCore.DSP.BiQuad.Process(Single)
+  name.vb: Process(Single)
+- uid: SilverCraft.CSCore.DSP.BiQuad.Process(System.Single[])
+  commentId: M:SilverCraft.CSCore.DSP.BiQuad.Process(System.Single[])
+  id: Process(System.Single[])
+  parent: SilverCraft.CSCore.DSP.BiQuad
+  langs:
+  - csharp
+  - vb
+  name: Process(float[])
+  nameWithType: BiQuad.Process(float[])
+  fullName: SilverCraft.CSCore.DSP.BiQuad.Process(float[])
+  type: Method
+  source:
+    remote:
+      path: SilverCraft.CSCore/DSP/BiQuad.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: Process
+    path: ../SilverCraft.CSCore/DSP/BiQuad.cs
+    startLine: 161
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.DSP
+  summary: Processes multiple <code class="paramref">input</code> samples.
+  remarks: The result of the calculation gets stored within the <code class="paramref">input</code> array.
+  example: []
+  syntax:
+    content: public void Process(float[] input)
+    parameters:
+    - id: input
+      type: System.Single[]
+      description: The input samples to process.
+    content.vb: Public Sub Process(input As Single())
+  overload: SilverCraft.CSCore.DSP.BiQuad.Process*
+  nameWithType.vb: BiQuad.Process(Single())
+  fullName.vb: SilverCraft.CSCore.DSP.BiQuad.Process(Single())
+  name.vb: Process(Single())
+- uid: SilverCraft.CSCore.DSP.BiQuad.CalculateBiQuadCoefficients
+  commentId: M:SilverCraft.CSCore.DSP.BiQuad.CalculateBiQuadCoefficients
+  id: CalculateBiQuadCoefficients
+  parent: SilverCraft.CSCore.DSP.BiQuad
+  langs:
+  - csharp
+  - vb
+  name: CalculateBiQuadCoefficients()
+  nameWithType: BiQuad.CalculateBiQuadCoefficients()
+  fullName: SilverCraft.CSCore.DSP.BiQuad.CalculateBiQuadCoefficients()
+  type: Method
+  source:
+    remote:
+      path: SilverCraft.CSCore/DSP/BiQuad.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: CalculateBiQuadCoefficients
+    path: ../SilverCraft.CSCore/DSP/BiQuad.cs
+    startLine: 172
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.DSP
+  summary: Calculates all coefficients.
+  example: []
+  syntax:
+    content: protected abstract void CalculateBiQuadCoefficients()
+    content.vb: Protected MustOverride Sub CalculateBiQuadCoefficients()
+  overload: SilverCraft.CSCore.DSP.BiQuad.CalculateBiQuadCoefficients*
+references:
+- uid: SilverCraft.CSCore.DSP
+  commentId: N:SilverCraft.CSCore.DSP
+  href: SilverCraft.html
+  name: SilverCraft.CSCore.DSP
+  nameWithType: SilverCraft.CSCore.DSP
+  fullName: SilverCraft.CSCore.DSP
+  spec.csharp:
+  - uid: SilverCraft
+    name: SilverCraft
+    href: SilverCraft.html
+  - name: .
+  - uid: SilverCraft.CSCore
+    name: CSCore
+    href: SilverCraft.CSCore.html
+  - name: .
+  - uid: SilverCraft.CSCore.DSP
+    name: DSP
+    href: SilverCraft.CSCore.DSP.html
+  spec.vb:
+  - uid: SilverCraft
+    name: SilverCraft
+    href: SilverCraft.html
+  - name: .
+  - uid: SilverCraft.CSCore
+    name: CSCore
+    href: SilverCraft.CSCore.html
+  - name: .
+  - uid: SilverCraft.CSCore.DSP
+    name: DSP
+    href: SilverCraft.CSCore.DSP.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: SilverCraft.CSCore.DSP.BiQuad.SilverCraft.CSCore.FluentExtensions.Synchronized``2
+  commentId: M:SilverCraft.CSCore.FluentExtensions.Synchronized``2(``0)
+  parent: SilverCraft.CSCore.FluentExtensions
+  definition: SilverCraft.CSCore.FluentExtensions.Synchronized``2(``0)
+  href: SilverCraft.CSCore.FluentExtensions.html#SilverCraft_CSCore_FluentExtensions_Synchronized__2___0_
+  name: Synchronized<BiQuad, T>(BiQuad)
+  nameWithType: FluentExtensions.Synchronized<BiQuad, T>(BiQuad)
+  fullName: SilverCraft.CSCore.FluentExtensions.Synchronized<SilverCraft.CSCore.DSP.BiQuad, T>(SilverCraft.CSCore.DSP.BiQuad)
+  nameWithType.vb: FluentExtensions.Synchronized(Of BiQuad, T)(BiQuad)
+  fullName.vb: SilverCraft.CSCore.FluentExtensions.Synchronized(Of SilverCraft.CSCore.DSP.BiQuad, T)(SilverCraft.CSCore.DSP.BiQuad)
+  name.vb: Synchronized(Of BiQuad, T)(BiQuad)
+  spec.csharp:
+  - uid: SilverCraft.CSCore.FluentExtensions.Synchronized``2(SilverCraft.CSCore.DSP.BiQuad)
+    name: Synchronized
+    href: SilverCraft.CSCore.FluentExtensions.html#SilverCraft_CSCore_FluentExtensions_Synchronized__2___0_
+  - name: <
+  - uid: SilverCraft.CSCore.DSP.BiQuad
+    name: BiQuad
+    href: SilverCraft.CSCore.DSP.BiQuad.html
+  - name: ','
+  - name: " "
+  - name: T
+  - name: '>'
+  - name: (
+  - uid: SilverCraft.CSCore.DSP.BiQuad
+    name: BiQuad
+    href: SilverCraft.CSCore.DSP.BiQuad.html
+  - name: )
+  spec.vb:
+  - uid: SilverCraft.CSCore.FluentExtensions.Synchronized``2(SilverCraft.CSCore.DSP.BiQuad)
+    name: Synchronized
+    href: SilverCraft.CSCore.FluentExtensions.html#SilverCraft_CSCore_FluentExtensions_Synchronized__2___0_
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: SilverCraft.CSCore.DSP.BiQuad
+    name: BiQuad
+    href: SilverCraft.CSCore.DSP.BiQuad.html
+  - name: ','
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: SilverCraft.CSCore.DSP.BiQuad
+    name: BiQuad
+    href: SilverCraft.CSCore.DSP.BiQuad.html
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: SilverCraft.CSCore.FluentExtensions.Synchronized``2(``0)
+  commentId: M:SilverCraft.CSCore.FluentExtensions.Synchronized``2(``0)
+  href: SilverCraft.CSCore.FluentExtensions.html#SilverCraft_CSCore_FluentExtensions_Synchronized__2___0_
+  name: Synchronized<TAudioSource, T>(TAudioSource)
+  nameWithType: FluentExtensions.Synchronized<TAudioSource, T>(TAudioSource)
+  fullName: SilverCraft.CSCore.FluentExtensions.Synchronized<TAudioSource, T>(TAudioSource)
+  nameWithType.vb: FluentExtensions.Synchronized(Of TAudioSource, T)(TAudioSource)
+  fullName.vb: SilverCraft.CSCore.FluentExtensions.Synchronized(Of TAudioSource, T)(TAudioSource)
+  name.vb: Synchronized(Of TAudioSource, T)(TAudioSource)
+  spec.csharp:
+  - uid: SilverCraft.CSCore.FluentExtensions.Synchronized``2(``0)
+    name: Synchronized
+    href: SilverCraft.CSCore.FluentExtensions.html#SilverCraft_CSCore_FluentExtensions_Synchronized__2___0_
+  - name: <
+  - name: TAudioSource
+  - name: ','
+  - name: " "
+  - name: T
+  - name: '>'
+  - name: (
+  - name: TAudioSource
+  - name: )
+  spec.vb:
+  - uid: SilverCraft.CSCore.FluentExtensions.Synchronized``2(``0)
+    name: Synchronized
+    href: SilverCraft.CSCore.FluentExtensions.html#SilverCraft_CSCore_FluentExtensions_Synchronized__2___0_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TAudioSource
+  - name: ','
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - name: TAudioSource
+  - name: )
+- uid: SilverCraft.CSCore.FluentExtensions
+  commentId: T:SilverCraft.CSCore.FluentExtensions
+  parent: SilverCraft.CSCore
+  href: SilverCraft.CSCore.FluentExtensions.html
+  name: FluentExtensions
+  nameWithType: FluentExtensions
+  fullName: SilverCraft.CSCore.FluentExtensions
+- uid: SilverCraft.CSCore
+  commentId: N:SilverCraft.CSCore
+  href: SilverCraft.html
+  name: SilverCraft.CSCore
+  nameWithType: SilverCraft.CSCore
+  fullName: SilverCraft.CSCore
+  spec.csharp:
+  - uid: SilverCraft
+    name: SilverCraft
+    href: SilverCraft.html
+  - name: .
+  - uid: SilverCraft.CSCore
+    name: CSCore
+    href: SilverCraft.CSCore.html
+  spec.vb:
+  - uid: SilverCraft
+    name: SilverCraft
+    href: SilverCraft.html
+  - name: .
+  - uid: SilverCraft.CSCore
+    name: CSCore
+    href: SilverCraft.CSCore.html
+- uid: System.Double
+  commentId: T:System.Double
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.double
+  name: double
+  nameWithType: double
+  fullName: double
+  nameWithType.vb: Double
+  fullName.vb: Double
+  name.vb: Double
+- uid: System.ArgumentOutOfRangeException
+  commentId: T:System.ArgumentOutOfRangeException
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.argumentoutofrangeexception
+  name: ArgumentOutOfRangeException
+  nameWithType: ArgumentOutOfRangeException
+  fullName: System.ArgumentOutOfRangeException
+- uid: SilverCraft.CSCore.DSP.BiQuad.Frequency*
+  commentId: Overload:SilverCraft.CSCore.DSP.BiQuad.Frequency
+  href: SilverCraft.CSCore.DSP.BiQuad.html#SilverCraft_CSCore_DSP_BiQuad_Frequency
+  name: Frequency
+  nameWithType: BiQuad.Frequency
+  fullName: SilverCraft.CSCore.DSP.BiQuad.Frequency
+- uid: SilverCraft.CSCore.DSP.BiQuad.SampleRate*
+  commentId: Overload:SilverCraft.CSCore.DSP.BiQuad.SampleRate
+  href: SilverCraft.CSCore.DSP.BiQuad.html#SilverCraft_CSCore_DSP_BiQuad_SampleRate
+  name: SampleRate
+  nameWithType: BiQuad.SampleRate
+  fullName: SilverCraft.CSCore.DSP.BiQuad.SampleRate
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: SilverCraft.CSCore.DSP.BiQuad.Q*
+  commentId: Overload:SilverCraft.CSCore.DSP.BiQuad.Q
+  href: SilverCraft.CSCore.DSP.BiQuad.html#SilverCraft_CSCore_DSP_BiQuad_Q
+  name: Q
+  nameWithType: BiQuad.Q
+  fullName: SilverCraft.CSCore.DSP.BiQuad.Q
+- uid: SilverCraft.CSCore.DSP.BiQuad.GainDB*
+  commentId: Overload:SilverCraft.CSCore.DSP.BiQuad.GainDB
+  href: SilverCraft.CSCore.DSP.BiQuad.html#SilverCraft_CSCore_DSP_BiQuad_GainDB
+  name: GainDB
+  nameWithType: BiQuad.GainDB
+  fullName: SilverCraft.CSCore.DSP.BiQuad.GainDB
+- uid: SilverCraft.CSCore.DSP.BiQuad
+  commentId: T:SilverCraft.CSCore.DSP.BiQuad
+  parent: SilverCraft.CSCore.DSP
+  href: SilverCraft.CSCore.DSP.BiQuad.html
+  name: BiQuad
+  nameWithType: BiQuad
+  fullName: SilverCraft.CSCore.DSP.BiQuad
+- uid: SilverCraft.CSCore.DSP.BiQuad.#ctor*
+  commentId: Overload:SilverCraft.CSCore.DSP.BiQuad.#ctor
+  href: SilverCraft.CSCore.DSP.BiQuad.html#SilverCraft_CSCore_DSP_BiQuad__ctor_System_Int32_System_Double_
+  name: BiQuad
+  nameWithType: BiQuad.BiQuad
+  fullName: SilverCraft.CSCore.DSP.BiQuad.BiQuad
+  nameWithType.vb: BiQuad.New
+  fullName.vb: SilverCraft.CSCore.DSP.BiQuad.New
+  name.vb: New
+- uid: SilverCraft.CSCore.DSP.BiQuad.Process*
+  commentId: Overload:SilverCraft.CSCore.DSP.BiQuad.Process
+  href: SilverCraft.CSCore.DSP.BiQuad.html#SilverCraft_CSCore_DSP_BiQuad_Process_System_Single_
+  name: Process
+  nameWithType: BiQuad.Process
+  fullName: SilverCraft.CSCore.DSP.BiQuad.Process
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.single
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single
+- uid: System.Single[]
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.single
+  name: float[]
+  nameWithType: float[]
+  fullName: float[]
+  nameWithType.vb: Single()
+  fullName.vb: Single()
+  name.vb: Single()
+  spec.csharp:
+  - uid: System.Single
+    name: float
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: System.Single
+    name: Single
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: (
+  - name: )
+- uid: SilverCraft.CSCore.DSP.BiQuad.CalculateBiQuadCoefficients*
+  commentId: Overload:SilverCraft.CSCore.DSP.BiQuad.CalculateBiQuadCoefficients
+  href: SilverCraft.CSCore.DSP.BiQuad.html#SilverCraft_CSCore_DSP_BiQuad_CalculateBiQuadCoefficients
+  name: CalculateBiQuadCoefficients
+  nameWithType: BiQuad.CalculateBiQuadCoefficients
+  fullName: SilverCraft.CSCore.DSP.BiQuad.CalculateBiQuadCoefficients

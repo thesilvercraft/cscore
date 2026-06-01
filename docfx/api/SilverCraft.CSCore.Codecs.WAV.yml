@@ -1,0 +1,90 @@
+### YamlMime:ManagedReference
+items:
+- uid: SilverCraft.CSCore.Codecs.WAV
+  commentId: N:SilverCraft.CSCore.Codecs.WAV
+  id: SilverCraft.CSCore.Codecs.WAV
+  children:
+  - SilverCraft.CSCore.Codecs.WAV.DataChunk
+  - SilverCraft.CSCore.Codecs.WAV.FmtChunk
+  - SilverCraft.CSCore.Codecs.WAV.WaveFileChunk
+  - SilverCraft.CSCore.Codecs.WAV.WaveFileReader
+  - SilverCraft.CSCore.Codecs.WAV.WaveWriter
+  langs:
+  - csharp
+  - vb
+  name: SilverCraft.CSCore.Codecs.WAV
+  nameWithType: SilverCraft.CSCore.Codecs.WAV
+  fullName: SilverCraft.CSCore.Codecs.WAV
+  type: Namespace
+  assemblies:
+  - SilverCraft.CSCore
+references:
+- uid: SilverCraft.CSCore.Codecs.WAV.DataChunk
+  commentId: T:SilverCraft.CSCore.Codecs.WAV.DataChunk
+  href: SilverCraft.CSCore.Codecs.WAV.DataChunk.html
+  name: DataChunk
+  nameWithType: DataChunk
+  fullName: SilverCraft.CSCore.Codecs.WAV.DataChunk
+- uid: SilverCraft.CSCore.Codecs.WAV.FmtChunk
+  commentId: T:SilverCraft.CSCore.Codecs.WAV.FmtChunk
+  href: SilverCraft.CSCore.Codecs.WAV.FmtChunk.html
+  name: FmtChunk
+  nameWithType: FmtChunk
+  fullName: SilverCraft.CSCore.Codecs.WAV.FmtChunk
+- uid: SilverCraft.CSCore.Codecs.WAV.WaveFileChunk
+  commentId: T:SilverCraft.CSCore.Codecs.WAV.WaveFileChunk
+  parent: SilverCraft.CSCore.Codecs.WAV
+  href: SilverCraft.CSCore.Codecs.WAV.WaveFileChunk.html
+  name: WaveFileChunk
+  nameWithType: WaveFileChunk
+  fullName: SilverCraft.CSCore.Codecs.WAV.WaveFileChunk
+- uid: SilverCraft.CSCore.Codecs.WAV.WaveFileReader
+  commentId: T:SilverCraft.CSCore.Codecs.WAV.WaveFileReader
+  href: SilverCraft.CSCore.Codecs.WAV.WaveFileReader.html
+  name: WaveFileReader
+  nameWithType: WaveFileReader
+  fullName: SilverCraft.CSCore.Codecs.WAV.WaveFileReader
+- uid: SilverCraft.CSCore.Codecs.WAV.WaveWriter
+  commentId: T:SilverCraft.CSCore.Codecs.WAV.WaveWriter
+  href: SilverCraft.CSCore.Codecs.WAV.WaveWriter.html
+  name: WaveWriter
+  nameWithType: WaveWriter
+  fullName: SilverCraft.CSCore.Codecs.WAV.WaveWriter
+- uid: SilverCraft.CSCore.Codecs.WAV
+  commentId: N:SilverCraft.CSCore.Codecs.WAV
+  href: SilverCraft.html
+  name: SilverCraft.CSCore.Codecs.WAV
+  nameWithType: SilverCraft.CSCore.Codecs.WAV
+  fullName: SilverCraft.CSCore.Codecs.WAV
+  spec.csharp:
+  - uid: SilverCraft
+    name: SilverCraft
+    href: SilverCraft.html
+  - name: .
+  - uid: SilverCraft.CSCore
+    name: CSCore
+    href: SilverCraft.CSCore.html
+  - name: .
+  - uid: SilverCraft.CSCore.Codecs
+    name: Codecs
+    href: SilverCraft.CSCore.Codecs.html
+  - name: .
+  - uid: SilverCraft.CSCore.Codecs.WAV
+    name: WAV
+    href: SilverCraft.CSCore.Codecs.WAV.html
+  spec.vb:
+  - uid: SilverCraft
+    name: SilverCraft
+    href: SilverCraft.html
+  - name: .
+  - uid: SilverCraft.CSCore
+    name: CSCore
+    href: SilverCraft.CSCore.html
+  - name: .
+  - uid: SilverCraft.CSCore.Codecs
+    name: Codecs
+    href: SilverCraft.CSCore.Codecs.html
+  - name: .
+  - uid: SilverCraft.CSCore.Codecs.WAV
+    name: WAV
+    href: SilverCraft.CSCore.Codecs.WAV.html

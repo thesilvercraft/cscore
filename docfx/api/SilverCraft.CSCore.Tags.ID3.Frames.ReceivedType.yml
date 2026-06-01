@@ -1,0 +1,325 @@
+### YamlMime:ManagedReference
+items:
+- uid: SilverCraft.CSCore.Tags.ID3.Frames.ReceivedType
+  commentId: T:SilverCraft.CSCore.Tags.ID3.Frames.ReceivedType
+  id: ReceivedType
+  parent: SilverCraft.CSCore.Tags.ID3.Frames
+  children:
+  - SilverCraft.CSCore.Tags.ID3.Frames.ReceivedType.CompressedAudioOnCD
+  - SilverCraft.CSCore.Tags.ID3.Frames.ReceivedType.FileOverInternet
+  - SilverCraft.CSCore.Tags.ID3.Frames.ReceivedType.MusicOnOtherMedia
+  - SilverCraft.CSCore.Tags.ID3.Frames.ReceivedType.NonmusicalMerchandise
+  - SilverCraft.CSCore.Tags.ID3.Frames.ReceivedType.NoteSheet
+  - SilverCraft.CSCore.Tags.ID3.Frames.ReceivedType.NoteSheetBook
+  - SilverCraft.CSCore.Tags.ID3.Frames.ReceivedType.Other
+  - SilverCraft.CSCore.Tags.ID3.Frames.ReceivedType.StandardCDAlbum
+  - SilverCraft.CSCore.Tags.ID3.Frames.ReceivedType.StreamOverInternet
+  langs:
+  - csharp
+  - vb
+  name: ReceivedType
+  nameWithType: ReceivedType
+  fullName: SilverCraft.CSCore.Tags.ID3.Frames.ReceivedType
+  type: Enum
+  source:
+    remote:
+      path: SilverCraft.CSCore/Tags/ID3/Frames/ReceivedType.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: ReceivedType
+    path: ../SilverCraft.CSCore/Tags/ID3/Frames/ReceivedType.cs
+    startLine: 2
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Tags.ID3.Frames
+  syntax:
+    content: 'public enum ReceivedType : byte'
+    content.vb: Public Enum ReceivedType As Byte
+- uid: SilverCraft.CSCore.Tags.ID3.Frames.ReceivedType.Other
+  commentId: F:SilverCraft.CSCore.Tags.ID3.Frames.ReceivedType.Other
+  id: Other
+  parent: SilverCraft.CSCore.Tags.ID3.Frames.ReceivedType
+  langs:
+  - csharp
+  - vb
+  name: Other
+  nameWithType: ReceivedType.Other
+  fullName: SilverCraft.CSCore.Tags.ID3.Frames.ReceivedType.Other
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/Tags/ID3/Frames/ReceivedType.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: Other
+    path: ../SilverCraft.CSCore/Tags/ID3/Frames/ReceivedType.cs
+    startLine: 4
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Tags.ID3.Frames
+  syntax:
+    content: Other = 0
+    return:
+      type: SilverCraft.CSCore.Tags.ID3.Frames.ReceivedType
+- uid: SilverCraft.CSCore.Tags.ID3.Frames.ReceivedType.StandardCDAlbum
+  commentId: F:SilverCraft.CSCore.Tags.ID3.Frames.ReceivedType.StandardCDAlbum
+  id: StandardCDAlbum
+  parent: SilverCraft.CSCore.Tags.ID3.Frames.ReceivedType
+  langs:
+  - csharp
+  - vb
+  name: StandardCDAlbum
+  nameWithType: ReceivedType.StandardCDAlbum
+  fullName: SilverCraft.CSCore.Tags.ID3.Frames.ReceivedType.StandardCDAlbum
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/Tags/ID3/Frames/ReceivedType.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: StandardCDAlbum
+    path: ../SilverCraft.CSCore/Tags/ID3/Frames/ReceivedType.cs
+    startLine: 5
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Tags.ID3.Frames
+  syntax:
+    content: StandardCDAlbum = 1
+    return:
+      type: SilverCraft.CSCore.Tags.ID3.Frames.ReceivedType
+- uid: SilverCraft.CSCore.Tags.ID3.Frames.ReceivedType.CompressedAudioOnCD
+  commentId: F:SilverCraft.CSCore.Tags.ID3.Frames.ReceivedType.CompressedAudioOnCD
+  id: CompressedAudioOnCD
+  parent: SilverCraft.CSCore.Tags.ID3.Frames.ReceivedType
+  langs:
+  - csharp
+  - vb
+  name: CompressedAudioOnCD
+  nameWithType: ReceivedType.CompressedAudioOnCD
+  fullName: SilverCraft.CSCore.Tags.ID3.Frames.ReceivedType.CompressedAudioOnCD
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/Tags/ID3/Frames/ReceivedType.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: CompressedAudioOnCD
+    path: ../SilverCraft.CSCore/Tags/ID3/Frames/ReceivedType.cs
+    startLine: 6
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Tags.ID3.Frames
+  syntax:
+    content: CompressedAudioOnCD = 2
+    return:
+      type: SilverCraft.CSCore.Tags.ID3.Frames.ReceivedType
+- uid: SilverCraft.CSCore.Tags.ID3.Frames.ReceivedType.FileOverInternet
+  commentId: F:SilverCraft.CSCore.Tags.ID3.Frames.ReceivedType.FileOverInternet
+  id: FileOverInternet
+  parent: SilverCraft.CSCore.Tags.ID3.Frames.ReceivedType
+  langs:
+  - csharp
+  - vb
+  name: FileOverInternet
+  nameWithType: ReceivedType.FileOverInternet
+  fullName: SilverCraft.CSCore.Tags.ID3.Frames.ReceivedType.FileOverInternet
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/Tags/ID3/Frames/ReceivedType.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: FileOverInternet
+    path: ../SilverCraft.CSCore/Tags/ID3/Frames/ReceivedType.cs
+    startLine: 7
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Tags.ID3.Frames
+  syntax:
+    content: FileOverInternet = 3
+    return:
+      type: SilverCraft.CSCore.Tags.ID3.Frames.ReceivedType
+- uid: SilverCraft.CSCore.Tags.ID3.Frames.ReceivedType.StreamOverInternet
+  commentId: F:SilverCraft.CSCore.Tags.ID3.Frames.ReceivedType.StreamOverInternet
+  id: StreamOverInternet
+  parent: SilverCraft.CSCore.Tags.ID3.Frames.ReceivedType
+  langs:
+  - csharp
+  - vb
+  name: StreamOverInternet
+  nameWithType: ReceivedType.StreamOverInternet
+  fullName: SilverCraft.CSCore.Tags.ID3.Frames.ReceivedType.StreamOverInternet
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/Tags/ID3/Frames/ReceivedType.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: StreamOverInternet
+    path: ../SilverCraft.CSCore/Tags/ID3/Frames/ReceivedType.cs
+    startLine: 8
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Tags.ID3.Frames
+  syntax:
+    content: StreamOverInternet = 4
+    return:
+      type: SilverCraft.CSCore.Tags.ID3.Frames.ReceivedType
+- uid: SilverCraft.CSCore.Tags.ID3.Frames.ReceivedType.NoteSheet
+  commentId: F:SilverCraft.CSCore.Tags.ID3.Frames.ReceivedType.NoteSheet
+  id: NoteSheet
+  parent: SilverCraft.CSCore.Tags.ID3.Frames.ReceivedType
+  langs:
+  - csharp
+  - vb
+  name: NoteSheet
+  nameWithType: ReceivedType.NoteSheet
+  fullName: SilverCraft.CSCore.Tags.ID3.Frames.ReceivedType.NoteSheet
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/Tags/ID3/Frames/ReceivedType.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: NoteSheet
+    path: ../SilverCraft.CSCore/Tags/ID3/Frames/ReceivedType.cs
+    startLine: 9
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Tags.ID3.Frames
+  syntax:
+    content: NoteSheet = 5
+    return:
+      type: SilverCraft.CSCore.Tags.ID3.Frames.ReceivedType
+- uid: SilverCraft.CSCore.Tags.ID3.Frames.ReceivedType.NoteSheetBook
+  commentId: F:SilverCraft.CSCore.Tags.ID3.Frames.ReceivedType.NoteSheetBook
+  id: NoteSheetBook
+  parent: SilverCraft.CSCore.Tags.ID3.Frames.ReceivedType
+  langs:
+  - csharp
+  - vb
+  name: NoteSheetBook
+  nameWithType: ReceivedType.NoteSheetBook
+  fullName: SilverCraft.CSCore.Tags.ID3.Frames.ReceivedType.NoteSheetBook
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/Tags/ID3/Frames/ReceivedType.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: NoteSheetBook
+    path: ../SilverCraft.CSCore/Tags/ID3/Frames/ReceivedType.cs
+    startLine: 10
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Tags.ID3.Frames
+  syntax:
+    content: NoteSheetBook = 6
+    return:
+      type: SilverCraft.CSCore.Tags.ID3.Frames.ReceivedType
+- uid: SilverCraft.CSCore.Tags.ID3.Frames.ReceivedType.MusicOnOtherMedia
+  commentId: F:SilverCraft.CSCore.Tags.ID3.Frames.ReceivedType.MusicOnOtherMedia
+  id: MusicOnOtherMedia
+  parent: SilverCraft.CSCore.Tags.ID3.Frames.ReceivedType
+  langs:
+  - csharp
+  - vb
+  name: MusicOnOtherMedia
+  nameWithType: ReceivedType.MusicOnOtherMedia
+  fullName: SilverCraft.CSCore.Tags.ID3.Frames.ReceivedType.MusicOnOtherMedia
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/Tags/ID3/Frames/ReceivedType.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: MusicOnOtherMedia
+    path: ../SilverCraft.CSCore/Tags/ID3/Frames/ReceivedType.cs
+    startLine: 11
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Tags.ID3.Frames
+  syntax:
+    content: MusicOnOtherMedia = 7
+    return:
+      type: SilverCraft.CSCore.Tags.ID3.Frames.ReceivedType
+- uid: SilverCraft.CSCore.Tags.ID3.Frames.ReceivedType.NonmusicalMerchandise
+  commentId: F:SilverCraft.CSCore.Tags.ID3.Frames.ReceivedType.NonmusicalMerchandise
+  id: NonmusicalMerchandise
+  parent: SilverCraft.CSCore.Tags.ID3.Frames.ReceivedType
+  langs:
+  - csharp
+  - vb
+  name: NonmusicalMerchandise
+  nameWithType: ReceivedType.NonmusicalMerchandise
+  fullName: SilverCraft.CSCore.Tags.ID3.Frames.ReceivedType.NonmusicalMerchandise
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/Tags/ID3/Frames/ReceivedType.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: NonmusicalMerchandise
+    path: ../SilverCraft.CSCore/Tags/ID3/Frames/ReceivedType.cs
+    startLine: 12
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Tags.ID3.Frames
+  syntax:
+    content: NonmusicalMerchandise = 8
+    return:
+      type: SilverCraft.CSCore.Tags.ID3.Frames.ReceivedType
+references:
+- uid: SilverCraft.CSCore.Tags.ID3.Frames
+  commentId: N:SilverCraft.CSCore.Tags.ID3.Frames
+  href: SilverCraft.html
+  name: SilverCraft.CSCore.Tags.ID3.Frames
+  nameWithType: SilverCraft.CSCore.Tags.ID3.Frames
+  fullName: SilverCraft.CSCore.Tags.ID3.Frames
+  spec.csharp:
+  - uid: SilverCraft
+    name: SilverCraft
+    href: SilverCraft.html
+  - name: .
+  - uid: SilverCraft.CSCore
+    name: CSCore
+    href: SilverCraft.CSCore.html
+  - name: .
+  - uid: SilverCraft.CSCore.Tags
+    name: Tags
+    href: SilverCraft.CSCore.Tags.html
+  - name: .
+  - uid: SilverCraft.CSCore.Tags.ID3
+    name: ID3
+    href: SilverCraft.CSCore.Tags.ID3.html
+  - name: .
+  - uid: SilverCraft.CSCore.Tags.ID3.Frames
+    name: Frames
+    href: SilverCraft.CSCore.Tags.ID3.Frames.html
+  spec.vb:
+  - uid: SilverCraft
+    name: SilverCraft
+    href: SilverCraft.html
+  - name: .
+  - uid: SilverCraft.CSCore
+    name: CSCore
+    href: SilverCraft.CSCore.html
+  - name: .
+  - uid: SilverCraft.CSCore.Tags
+    name: Tags
+    href: SilverCraft.CSCore.Tags.html
+  - name: .
+  - uid: SilverCraft.CSCore.Tags.ID3
+    name: ID3
+    href: SilverCraft.CSCore.Tags.ID3.html
+  - name: .
+  - uid: SilverCraft.CSCore.Tags.ID3.Frames
+    name: Frames
+    href: SilverCraft.CSCore.Tags.ID3.Frames.html
+- uid: SilverCraft.CSCore.Tags.ID3.Frames.ReceivedType
+  commentId: T:SilverCraft.CSCore.Tags.ID3.Frames.ReceivedType
+  parent: SilverCraft.CSCore.Tags.ID3.Frames
+  href: SilverCraft.CSCore.Tags.ID3.Frames.ReceivedType.html
+  name: ReceivedType
+  nameWithType: ReceivedType
+  fullName: SilverCraft.CSCore.Tags.ID3.Frames.ReceivedType

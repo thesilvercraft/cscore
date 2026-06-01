@@ -1,0 +1,130 @@
+### YamlMime:ManagedReference
+items:
+- uid: SilverCraft.CSCore.Tags.ID3.ID3v2TextEncodingRestriction
+  commentId: T:SilverCraft.CSCore.Tags.ID3.ID3v2TextEncodingRestriction
+  id: ID3v2TextEncodingRestriction
+  parent: SilverCraft.CSCore.Tags.ID3
+  children:
+  - SilverCraft.CSCore.Tags.ID3.ID3v2TextEncodingRestriction.IsoOrUTF8
+  - SilverCraft.CSCore.Tags.ID3.ID3v2TextEncodingRestriction.None
+  langs:
+  - csharp
+  - vb
+  name: ID3v2TextEncodingRestriction
+  nameWithType: ID3v2TextEncodingRestriction
+  fullName: SilverCraft.CSCore.Tags.ID3.ID3v2TextEncodingRestriction
+  type: Enum
+  source:
+    remote:
+      path: SilverCraft.CSCore/Tags/ID3/ID3v2TextEncodingRestriction.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: ID3v2TextEncodingRestriction
+    path: ../SilverCraft.CSCore/Tags/ID3/ID3v2TextEncodingRestriction.cs
+    startLine: 2
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Tags.ID3
+  syntax:
+    content: public enum ID3v2TextEncodingRestriction
+    content.vb: Public Enum ID3v2TextEncodingRestriction
+- uid: SilverCraft.CSCore.Tags.ID3.ID3v2TextEncodingRestriction.None
+  commentId: F:SilverCraft.CSCore.Tags.ID3.ID3v2TextEncodingRestriction.None
+  id: None
+  parent: SilverCraft.CSCore.Tags.ID3.ID3v2TextEncodingRestriction
+  langs:
+  - csharp
+  - vb
+  name: None
+  nameWithType: ID3v2TextEncodingRestriction.None
+  fullName: SilverCraft.CSCore.Tags.ID3.ID3v2TextEncodingRestriction.None
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/Tags/ID3/ID3v2TextEncodingRestriction.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: None
+    path: ../SilverCraft.CSCore/Tags/ID3/ID3v2TextEncodingRestriction.cs
+    startLine: 4
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Tags.ID3
+  syntax:
+    content: None = 0
+    return:
+      type: SilverCraft.CSCore.Tags.ID3.ID3v2TextEncodingRestriction
+- uid: SilverCraft.CSCore.Tags.ID3.ID3v2TextEncodingRestriction.IsoOrUTF8
+  commentId: F:SilverCraft.CSCore.Tags.ID3.ID3v2TextEncodingRestriction.IsoOrUTF8
+  id: IsoOrUTF8
+  parent: SilverCraft.CSCore.Tags.ID3.ID3v2TextEncodingRestriction
+  langs:
+  - csharp
+  - vb
+  name: IsoOrUTF8
+  nameWithType: ID3v2TextEncodingRestriction.IsoOrUTF8
+  fullName: SilverCraft.CSCore.Tags.ID3.ID3v2TextEncodingRestriction.IsoOrUTF8
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/Tags/ID3/ID3v2TextEncodingRestriction.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: IsoOrUTF8
+    path: ../SilverCraft.CSCore/Tags/ID3/ID3v2TextEncodingRestriction.cs
+    startLine: 9
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Tags.ID3
+  summary: encoded with ISO-8859-1 [ISO-8859-1] or UTF-8 [UTF-8]
+  example: []
+  syntax:
+    content: IsoOrUTF8 = 32
+    return:
+      type: SilverCraft.CSCore.Tags.ID3.ID3v2TextEncodingRestriction
+references:
+- uid: SilverCraft.CSCore.Tags.ID3
+  commentId: N:SilverCraft.CSCore.Tags.ID3
+  href: SilverCraft.html
+  name: SilverCraft.CSCore.Tags.ID3
+  nameWithType: SilverCraft.CSCore.Tags.ID3
+  fullName: SilverCraft.CSCore.Tags.ID3
+  spec.csharp:
+  - uid: SilverCraft
+    name: SilverCraft
+    href: SilverCraft.html
+  - name: .
+  - uid: SilverCraft.CSCore
+    name: CSCore
+    href: SilverCraft.CSCore.html
+  - name: .
+  - uid: SilverCraft.CSCore.Tags
+    name: Tags
+    href: SilverCraft.CSCore.Tags.html
+  - name: .
+  - uid: SilverCraft.CSCore.Tags.ID3
+    name: ID3
+    href: SilverCraft.CSCore.Tags.ID3.html
+  spec.vb:
+  - uid: SilverCraft
+    name: SilverCraft
+    href: SilverCraft.html
+  - name: .
+  - uid: SilverCraft.CSCore
+    name: CSCore
+    href: SilverCraft.CSCore.html
+  - name: .
+  - uid: SilverCraft.CSCore.Tags
+    name: Tags
+    href: SilverCraft.CSCore.Tags.html
+  - name: .
+  - uid: SilverCraft.CSCore.Tags.ID3
+    name: ID3
+    href: SilverCraft.CSCore.Tags.ID3.html
+- uid: SilverCraft.CSCore.Tags.ID3.ID3v2TextEncodingRestriction
+  commentId: T:SilverCraft.CSCore.Tags.ID3.ID3v2TextEncodingRestriction
+  parent: SilverCraft.CSCore.Tags.ID3
+  href: SilverCraft.CSCore.Tags.ID3.ID3v2TextEncodingRestriction.html
+  name: ID3v2TextEncodingRestriction
+  nameWithType: ID3v2TextEncodingRestriction
+  fullName: SilverCraft.CSCore.Tags.ID3.ID3v2TextEncodingRestriction

@@ -1,0 +1,571 @@
+### YamlMime:ManagedReference
+items:
+- uid: SilverCraft.CSCore.SoundIn.ISoundIn
+  commentId: T:SilverCraft.CSCore.SoundIn.ISoundIn
+  id: ISoundIn
+  parent: SilverCraft.CSCore.SoundIn
+  children:
+  - SilverCraft.CSCore.SoundIn.ISoundIn.DataAvailable
+  - SilverCraft.CSCore.SoundIn.ISoundIn.Initialize
+  - SilverCraft.CSCore.SoundIn.ISoundIn.RecordingState
+  - SilverCraft.CSCore.SoundIn.ISoundIn.Start
+  - SilverCraft.CSCore.SoundIn.ISoundIn.Stop
+  - SilverCraft.CSCore.SoundIn.ISoundIn.Stopped
+  - SilverCraft.CSCore.SoundIn.ISoundIn.WaveFormat
+  langs:
+  - csharp
+  - vb
+  name: ISoundIn
+  nameWithType: ISoundIn
+  fullName: SilverCraft.CSCore.SoundIn.ISoundIn
+  type: Interface
+  source:
+    remote:
+      path: SilverCraft.CSCore/SoundIn/ISoundIn.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: ISoundIn
+    path: ../SilverCraft.CSCore/SoundIn/ISoundIn.cs
+    startLine: 7
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.SoundIn
+  summary: Defines a interface for capturing audio.
+  example: []
+  syntax:
+    content: 'public interface ISoundIn : IDisposable'
+    content.vb: Public Interface ISoundIn Inherits IDisposable
+  inheritedMembers:
+  - System.IDisposable.Dispose
+  extensionMethods:
+  - SilverCraft.CSCore.SoundIn.ISoundIn.SilverCraft.CSCore.FluentExtensions.Synchronized``2
+- uid: SilverCraft.CSCore.SoundIn.ISoundIn.DataAvailable
+  commentId: E:SilverCraft.CSCore.SoundIn.ISoundIn.DataAvailable
+  id: DataAvailable
+  parent: SilverCraft.CSCore.SoundIn.ISoundIn
+  langs:
+  - csharp
+  - vb
+  name: DataAvailable
+  nameWithType: ISoundIn.DataAvailable
+  fullName: SilverCraft.CSCore.SoundIn.ISoundIn.DataAvailable
+  type: Event
+  source:
+    remote:
+      path: SilverCraft.CSCore/SoundIn/ISoundIn.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: DataAvailable
+    path: ../SilverCraft.CSCore/SoundIn/ISoundIn.cs
+    startLine: 12
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.SoundIn
+  summary: Occurs when new data got captured and is available.
+  example: []
+  syntax:
+    content: event EventHandler<DataAvailableEventArgs> DataAvailable
+    return:
+      type: System.EventHandler{SilverCraft.CSCore.SoundIn.DataAvailableEventArgs}
+    content.vb: Event DataAvailable As EventHandler(Of DataAvailableEventArgs)
+- uid: SilverCraft.CSCore.SoundIn.ISoundIn.Stopped
+  commentId: E:SilverCraft.CSCore.SoundIn.ISoundIn.Stopped
+  id: Stopped
+  parent: SilverCraft.CSCore.SoundIn.ISoundIn
+  langs:
+  - csharp
+  - vb
+  name: Stopped
+  nameWithType: ISoundIn.Stopped
+  fullName: SilverCraft.CSCore.SoundIn.ISoundIn.Stopped
+  type: Event
+  source:
+    remote:
+      path: SilverCraft.CSCore/SoundIn/ISoundIn.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: Stopped
+    path: ../SilverCraft.CSCore/SoundIn/ISoundIn.cs
+    startLine: 17
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.SoundIn
+  summary: Occurs when the recording stopped.
+  example: []
+  syntax:
+    content: event EventHandler<RecordingStoppedEventArgs> Stopped
+    return:
+      type: System.EventHandler{SilverCraft.CSCore.SoundIn.RecordingStoppedEventArgs}
+    content.vb: Event Stopped As EventHandler(Of RecordingStoppedEventArgs)
+- uid: SilverCraft.CSCore.SoundIn.ISoundIn.WaveFormat
+  commentId: P:SilverCraft.CSCore.SoundIn.ISoundIn.WaveFormat
+  id: WaveFormat
+  parent: SilverCraft.CSCore.SoundIn.ISoundIn
+  langs:
+  - csharp
+  - vb
+  name: WaveFormat
+  nameWithType: ISoundIn.WaveFormat
+  fullName: SilverCraft.CSCore.SoundIn.ISoundIn.WaveFormat
+  type: Property
+  source:
+    remote:
+      path: SilverCraft.CSCore/SoundIn/ISoundIn.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: WaveFormat
+    path: ../SilverCraft.CSCore/SoundIn/ISoundIn.cs
+    startLine: 22
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.SoundIn
+  summary: Gets the format of the captured audio data.
+  example: []
+  syntax:
+    content: WaveFormat WaveFormat { get; }
+    parameters: []
+    return:
+      type: SilverCraft.CSCore.WaveFormat
+    content.vb: ReadOnly Property WaveFormat As WaveFormat
+  overload: SilverCraft.CSCore.SoundIn.ISoundIn.WaveFormat*
+- uid: SilverCraft.CSCore.SoundIn.ISoundIn.Initialize
+  commentId: M:SilverCraft.CSCore.SoundIn.ISoundIn.Initialize
+  id: Initialize
+  parent: SilverCraft.CSCore.SoundIn.ISoundIn
+  langs:
+  - csharp
+  - vb
+  name: Initialize()
+  nameWithType: ISoundIn.Initialize()
+  fullName: SilverCraft.CSCore.SoundIn.ISoundIn.Initialize()
+  type: Method
+  source:
+    remote:
+      path: SilverCraft.CSCore/SoundIn/ISoundIn.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: Initialize
+    path: ../SilverCraft.CSCore/SoundIn/ISoundIn.cs
+    startLine: 27
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.SoundIn
+  summary: Initializes the <xref href="SilverCraft.CSCore.SoundIn.ISoundIn" data-throw-if-not-resolved="false"></xref> instance.
+  example: []
+  syntax:
+    content: void Initialize()
+    content.vb: Sub Initialize()
+  overload: SilverCraft.CSCore.SoundIn.ISoundIn.Initialize*
+- uid: SilverCraft.CSCore.SoundIn.ISoundIn.Start
+  commentId: M:SilverCraft.CSCore.SoundIn.ISoundIn.Start
+  id: Start
+  parent: SilverCraft.CSCore.SoundIn.ISoundIn
+  langs:
+  - csharp
+  - vb
+  name: Start()
+  nameWithType: ISoundIn.Start()
+  fullName: SilverCraft.CSCore.SoundIn.ISoundIn.Start()
+  type: Method
+  source:
+    remote:
+      path: SilverCraft.CSCore/SoundIn/ISoundIn.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: Start
+    path: ../SilverCraft.CSCore/SoundIn/ISoundIn.cs
+    startLine: 32
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.SoundIn
+  summary: Starts capturing.
+  example: []
+  syntax:
+    content: void Start()
+    content.vb: Sub Start()
+  overload: SilverCraft.CSCore.SoundIn.ISoundIn.Start*
+- uid: SilverCraft.CSCore.SoundIn.ISoundIn.Stop
+  commentId: M:SilverCraft.CSCore.SoundIn.ISoundIn.Stop
+  id: Stop
+  parent: SilverCraft.CSCore.SoundIn.ISoundIn
+  langs:
+  - csharp
+  - vb
+  name: Stop()
+  nameWithType: ISoundIn.Stop()
+  fullName: SilverCraft.CSCore.SoundIn.ISoundIn.Stop()
+  type: Method
+  source:
+    remote:
+      path: SilverCraft.CSCore/SoundIn/ISoundIn.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: Stop
+    path: ../SilverCraft.CSCore/SoundIn/ISoundIn.cs
+    startLine: 37
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.SoundIn
+  summary: Stops capturing.
+  example: []
+  syntax:
+    content: void Stop()
+    content.vb: Sub [Stop]()
+  overload: SilverCraft.CSCore.SoundIn.ISoundIn.Stop*
+- uid: SilverCraft.CSCore.SoundIn.ISoundIn.RecordingState
+  commentId: P:SilverCraft.CSCore.SoundIn.ISoundIn.RecordingState
+  id: RecordingState
+  parent: SilverCraft.CSCore.SoundIn.ISoundIn
+  langs:
+  - csharp
+  - vb
+  name: RecordingState
+  nameWithType: ISoundIn.RecordingState
+  fullName: SilverCraft.CSCore.SoundIn.ISoundIn.RecordingState
+  type: Property
+  source:
+    remote:
+      path: SilverCraft.CSCore/SoundIn/ISoundIn.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: RecordingState
+    path: ../SilverCraft.CSCore/SoundIn/ISoundIn.cs
+    startLine: 42
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.SoundIn
+  summary: Gets the current <xref href="SilverCraft.CSCore.SoundIn.RecordingState" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: RecordingState RecordingState { get; }
+    parameters: []
+    return:
+      type: SilverCraft.CSCore.SoundIn.RecordingState
+    content.vb: ReadOnly Property RecordingState As RecordingState
+  overload: SilverCraft.CSCore.SoundIn.ISoundIn.RecordingState*
+references:
+- uid: SilverCraft.CSCore.SoundIn
+  commentId: N:SilverCraft.CSCore.SoundIn
+  href: SilverCraft.html
+  name: SilverCraft.CSCore.SoundIn
+  nameWithType: SilverCraft.CSCore.SoundIn
+  fullName: SilverCraft.CSCore.SoundIn
+  spec.csharp:
+  - uid: SilverCraft
+    name: SilverCraft
+    href: SilverCraft.html
+  - name: .
+  - uid: SilverCraft.CSCore
+    name: CSCore
+    href: SilverCraft.CSCore.html
+  - name: .
+  - uid: SilverCraft.CSCore.SoundIn
+    name: SoundIn
+    href: SilverCraft.CSCore.SoundIn.html
+  spec.vb:
+  - uid: SilverCraft
+    name: SilverCraft
+    href: SilverCraft.html
+  - name: .
+  - uid: SilverCraft.CSCore
+    name: CSCore
+    href: SilverCraft.CSCore.html
+  - name: .
+  - uid: SilverCraft.CSCore.SoundIn
+    name: SoundIn
+    href: SilverCraft.CSCore.SoundIn.html
+- uid: System.IDisposable.Dispose
+  commentId: M:System.IDisposable.Dispose
+  parent: System.IDisposable
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.idisposable.dispose
+  name: Dispose()
+  nameWithType: IDisposable.Dispose()
+  fullName: System.IDisposable.Dispose()
+  spec.csharp:
+  - uid: System.IDisposable.Dispose
+    name: Dispose
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.idisposable.dispose
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.IDisposable.Dispose
+    name: Dispose
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.idisposable.dispose
+  - name: (
+  - name: )
+- uid: SilverCraft.CSCore.SoundIn.ISoundIn.SilverCraft.CSCore.FluentExtensions.Synchronized``2
+  commentId: M:SilverCraft.CSCore.FluentExtensions.Synchronized``2(``0)
+  parent: SilverCraft.CSCore.FluentExtensions
+  definition: SilverCraft.CSCore.FluentExtensions.Synchronized``2(``0)
+  href: SilverCraft.CSCore.FluentExtensions.html#SilverCraft_CSCore_FluentExtensions_Synchronized__2___0_
+  name: Synchronized<ISoundIn, T>(ISoundIn)
+  nameWithType: FluentExtensions.Synchronized<ISoundIn, T>(ISoundIn)
+  fullName: SilverCraft.CSCore.FluentExtensions.Synchronized<SilverCraft.CSCore.SoundIn.ISoundIn, T>(SilverCraft.CSCore.SoundIn.ISoundIn)
+  nameWithType.vb: FluentExtensions.Synchronized(Of ISoundIn, T)(ISoundIn)
+  fullName.vb: SilverCraft.CSCore.FluentExtensions.Synchronized(Of SilverCraft.CSCore.SoundIn.ISoundIn, T)(SilverCraft.CSCore.SoundIn.ISoundIn)
+  name.vb: Synchronized(Of ISoundIn, T)(ISoundIn)
+  spec.csharp:
+  - uid: SilverCraft.CSCore.FluentExtensions.Synchronized``2(SilverCraft.CSCore.SoundIn.ISoundIn)
+    name: Synchronized
+    href: SilverCraft.CSCore.FluentExtensions.html#SilverCraft_CSCore_FluentExtensions_Synchronized__2___0_
+  - name: <
+  - uid: SilverCraft.CSCore.SoundIn.ISoundIn
+    name: ISoundIn
+    href: SilverCraft.CSCore.SoundIn.ISoundIn.html
+  - name: ','
+  - name: " "
+  - name: T
+  - name: '>'
+  - name: (
+  - uid: SilverCraft.CSCore.SoundIn.ISoundIn
+    name: ISoundIn
+    href: SilverCraft.CSCore.SoundIn.ISoundIn.html
+  - name: )
+  spec.vb:
+  - uid: SilverCraft.CSCore.FluentExtensions.Synchronized``2(SilverCraft.CSCore.SoundIn.ISoundIn)
+    name: Synchronized
+    href: SilverCraft.CSCore.FluentExtensions.html#SilverCraft_CSCore_FluentExtensions_Synchronized__2___0_
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: SilverCraft.CSCore.SoundIn.ISoundIn
+    name: ISoundIn
+    href: SilverCraft.CSCore.SoundIn.ISoundIn.html
+  - name: ','
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: SilverCraft.CSCore.SoundIn.ISoundIn
+    name: ISoundIn
+    href: SilverCraft.CSCore.SoundIn.ISoundIn.html
+  - name: )
+- uid: System.IDisposable
+  commentId: T:System.IDisposable
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.idisposable
+  name: IDisposable
+  nameWithType: IDisposable
+  fullName: System.IDisposable
+- uid: SilverCraft.CSCore.FluentExtensions.Synchronized``2(``0)
+  commentId: M:SilverCraft.CSCore.FluentExtensions.Synchronized``2(``0)
+  href: SilverCraft.CSCore.FluentExtensions.html#SilverCraft_CSCore_FluentExtensions_Synchronized__2___0_
+  name: Synchronized<TAudioSource, T>(TAudioSource)
+  nameWithType: FluentExtensions.Synchronized<TAudioSource, T>(TAudioSource)
+  fullName: SilverCraft.CSCore.FluentExtensions.Synchronized<TAudioSource, T>(TAudioSource)
+  nameWithType.vb: FluentExtensions.Synchronized(Of TAudioSource, T)(TAudioSource)
+  fullName.vb: SilverCraft.CSCore.FluentExtensions.Synchronized(Of TAudioSource, T)(TAudioSource)
+  name.vb: Synchronized(Of TAudioSource, T)(TAudioSource)
+  spec.csharp:
+  - uid: SilverCraft.CSCore.FluentExtensions.Synchronized``2(``0)
+    name: Synchronized
+    href: SilverCraft.CSCore.FluentExtensions.html#SilverCraft_CSCore_FluentExtensions_Synchronized__2___0_
+  - name: <
+  - name: TAudioSource
+  - name: ','
+  - name: " "
+  - name: T
+  - name: '>'
+  - name: (
+  - name: TAudioSource
+  - name: )
+  spec.vb:
+  - uid: SilverCraft.CSCore.FluentExtensions.Synchronized``2(``0)
+    name: Synchronized
+    href: SilverCraft.CSCore.FluentExtensions.html#SilverCraft_CSCore_FluentExtensions_Synchronized__2___0_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TAudioSource
+  - name: ','
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - name: TAudioSource
+  - name: )
+- uid: SilverCraft.CSCore.FluentExtensions
+  commentId: T:SilverCraft.CSCore.FluentExtensions
+  parent: SilverCraft.CSCore
+  href: SilverCraft.CSCore.FluentExtensions.html
+  name: FluentExtensions
+  nameWithType: FluentExtensions
+  fullName: SilverCraft.CSCore.FluentExtensions
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: SilverCraft.CSCore
+  commentId: N:SilverCraft.CSCore
+  href: SilverCraft.html
+  name: SilverCraft.CSCore
+  nameWithType: SilverCraft.CSCore
+  fullName: SilverCraft.CSCore
+  spec.csharp:
+  - uid: SilverCraft
+    name: SilverCraft
+    href: SilverCraft.html
+  - name: .
+  - uid: SilverCraft.CSCore
+    name: CSCore
+    href: SilverCraft.CSCore.html
+  spec.vb:
+  - uid: SilverCraft
+    name: SilverCraft
+    href: SilverCraft.html
+  - name: .
+  - uid: SilverCraft.CSCore
+    name: CSCore
+    href: SilverCraft.CSCore.html
+- uid: System.EventHandler{SilverCraft.CSCore.SoundIn.DataAvailableEventArgs}
+  commentId: T:System.EventHandler{SilverCraft.CSCore.SoundIn.DataAvailableEventArgs}
+  parent: System
+  definition: System.EventHandler`1
+  href: https://learn.microsoft.com/dotnet/api/system.eventhandler-1
+  name: EventHandler<DataAvailableEventArgs>
+  nameWithType: EventHandler<DataAvailableEventArgs>
+  fullName: System.EventHandler<SilverCraft.CSCore.SoundIn.DataAvailableEventArgs>
+  nameWithType.vb: EventHandler(Of DataAvailableEventArgs)
+  fullName.vb: System.EventHandler(Of SilverCraft.CSCore.SoundIn.DataAvailableEventArgs)
+  name.vb: EventHandler(Of DataAvailableEventArgs)
+  spec.csharp:
+  - uid: System.EventHandler`1
+    name: EventHandler
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.eventhandler-1
+  - name: <
+  - uid: SilverCraft.CSCore.SoundIn.DataAvailableEventArgs
+    name: DataAvailableEventArgs
+    href: SilverCraft.CSCore.SoundIn.DataAvailableEventArgs.html
+  - name: '>'
+  spec.vb:
+  - uid: System.EventHandler`1
+    name: EventHandler
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.eventhandler-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: SilverCraft.CSCore.SoundIn.DataAvailableEventArgs
+    name: DataAvailableEventArgs
+    href: SilverCraft.CSCore.SoundIn.DataAvailableEventArgs.html
+  - name: )
+- uid: System.EventHandler`1
+  commentId: T:System.EventHandler`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.eventhandler-1
+  name: EventHandler<TEventArgs>
+  nameWithType: EventHandler<TEventArgs>
+  fullName: System.EventHandler<TEventArgs>
+  nameWithType.vb: EventHandler(Of TEventArgs)
+  fullName.vb: System.EventHandler(Of TEventArgs)
+  name.vb: EventHandler(Of TEventArgs)
+  spec.csharp:
+  - uid: System.EventHandler`1
+    name: EventHandler
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.eventhandler-1
+  - name: <
+  - name: TEventArgs
+  - name: '>'
+  spec.vb:
+  - uid: System.EventHandler`1
+    name: EventHandler
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.eventhandler-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TEventArgs
+  - name: )
+- uid: System.EventHandler{SilverCraft.CSCore.SoundIn.RecordingStoppedEventArgs}
+  commentId: T:System.EventHandler{SilverCraft.CSCore.SoundIn.RecordingStoppedEventArgs}
+  parent: System
+  definition: System.EventHandler`1
+  href: https://learn.microsoft.com/dotnet/api/system.eventhandler-1
+  name: EventHandler<RecordingStoppedEventArgs>
+  nameWithType: EventHandler<RecordingStoppedEventArgs>
+  fullName: System.EventHandler<SilverCraft.CSCore.SoundIn.RecordingStoppedEventArgs>
+  nameWithType.vb: EventHandler(Of RecordingStoppedEventArgs)
+  fullName.vb: System.EventHandler(Of SilverCraft.CSCore.SoundIn.RecordingStoppedEventArgs)
+  name.vb: EventHandler(Of RecordingStoppedEventArgs)
+  spec.csharp:
+  - uid: System.EventHandler`1
+    name: EventHandler
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.eventhandler-1
+  - name: <
+  - uid: SilverCraft.CSCore.SoundIn.RecordingStoppedEventArgs
+    name: RecordingStoppedEventArgs
+    href: SilverCraft.CSCore.SoundIn.RecordingStoppedEventArgs.html
+  - name: '>'
+  spec.vb:
+  - uid: System.EventHandler`1
+    name: EventHandler
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.eventhandler-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: SilverCraft.CSCore.SoundIn.RecordingStoppedEventArgs
+    name: RecordingStoppedEventArgs
+    href: SilverCraft.CSCore.SoundIn.RecordingStoppedEventArgs.html
+  - name: )
+- uid: SilverCraft.CSCore.SoundIn.ISoundIn.WaveFormat*
+  commentId: Overload:SilverCraft.CSCore.SoundIn.ISoundIn.WaveFormat
+  href: SilverCraft.CSCore.SoundIn.ISoundIn.html#SilverCraft_CSCore_SoundIn_ISoundIn_WaveFormat
+  name: WaveFormat
+  nameWithType: ISoundIn.WaveFormat
+  fullName: SilverCraft.CSCore.SoundIn.ISoundIn.WaveFormat
+- uid: SilverCraft.CSCore.WaveFormat
+  commentId: T:SilverCraft.CSCore.WaveFormat
+  parent: SilverCraft.CSCore
+  href: SilverCraft.CSCore.WaveFormat.html
+  name: WaveFormat
+  nameWithType: WaveFormat
+  fullName: SilverCraft.CSCore.WaveFormat
+- uid: SilverCraft.CSCore.SoundIn.ISoundIn
+  commentId: T:SilverCraft.CSCore.SoundIn.ISoundIn
+  parent: SilverCraft.CSCore.SoundIn
+  href: SilverCraft.CSCore.SoundIn.ISoundIn.html
+  name: ISoundIn
+  nameWithType: ISoundIn
+  fullName: SilverCraft.CSCore.SoundIn.ISoundIn
+- uid: SilverCraft.CSCore.SoundIn.ISoundIn.Initialize*
+  commentId: Overload:SilverCraft.CSCore.SoundIn.ISoundIn.Initialize
+  href: SilverCraft.CSCore.SoundIn.ISoundIn.html#SilverCraft_CSCore_SoundIn_ISoundIn_Initialize
+  name: Initialize
+  nameWithType: ISoundIn.Initialize
+  fullName: SilverCraft.CSCore.SoundIn.ISoundIn.Initialize
+- uid: SilverCraft.CSCore.SoundIn.ISoundIn.Start*
+  commentId: Overload:SilverCraft.CSCore.SoundIn.ISoundIn.Start
+  href: SilverCraft.CSCore.SoundIn.ISoundIn.html#SilverCraft_CSCore_SoundIn_ISoundIn_Start
+  name: Start
+  nameWithType: ISoundIn.Start
+  fullName: SilverCraft.CSCore.SoundIn.ISoundIn.Start
+- uid: SilverCraft.CSCore.SoundIn.ISoundIn.Stop*
+  commentId: Overload:SilverCraft.CSCore.SoundIn.ISoundIn.Stop
+  href: SilverCraft.CSCore.SoundIn.ISoundIn.html#SilverCraft_CSCore_SoundIn_ISoundIn_Stop
+  name: Stop
+  nameWithType: ISoundIn.Stop
+  fullName: SilverCraft.CSCore.SoundIn.ISoundIn.Stop
+- uid: SilverCraft.CSCore.SoundIn.RecordingState
+  commentId: T:SilverCraft.CSCore.SoundIn.RecordingState
+  parent: SilverCraft.CSCore.SoundIn
+  href: SilverCraft.CSCore.SoundIn.RecordingState.html
+  name: RecordingState
+  nameWithType: RecordingState
+  fullName: SilverCraft.CSCore.SoundIn.RecordingState
+- uid: SilverCraft.CSCore.SoundIn.ISoundIn.RecordingState*
+  commentId: Overload:SilverCraft.CSCore.SoundIn.ISoundIn.RecordingState
+  href: SilverCraft.CSCore.SoundIn.ISoundIn.html#SilverCraft_CSCore_SoundIn_ISoundIn_RecordingState
+  name: RecordingState
+  nameWithType: ISoundIn.RecordingState
+  fullName: SilverCraft.CSCore.SoundIn.ISoundIn.RecordingState

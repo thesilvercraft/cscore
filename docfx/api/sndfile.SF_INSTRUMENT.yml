@@ -1,0 +1,556 @@
+### YamlMime:ManagedReference
+items:
+- uid: sndfile.SF_INSTRUMENT
+  commentId: T:sndfile.SF_INSTRUMENT
+  id: SF_INSTRUMENT
+  parent: sndfile
+  children:
+  - sndfile.SF_INSTRUMENT.basenote
+  - sndfile.SF_INSTRUMENT.detune
+  - sndfile.SF_INSTRUMENT.gain
+  - sndfile.SF_INSTRUMENT.key_hi
+  - sndfile.SF_INSTRUMENT.key_lo
+  - sndfile.SF_INSTRUMENT.loop_count
+  - sndfile.SF_INSTRUMENT.loops
+  - sndfile.SF_INSTRUMENT.velocity_hi
+  - sndfile.SF_INSTRUMENT.velocity_lo
+  langs:
+  - csharp
+  - vb
+  name: SF_INSTRUMENT
+  nameWithType: SF_INSTRUMENT
+  fullName: sndfile.SF_INSTRUMENT
+  type: Struct
+  source:
+    remote:
+      path: SilverCraft.SndFile/Native/SF_INSTRUMENT.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: SF_INSTRUMENT
+    path: ../SilverCraft.SndFile/Native/SF_INSTRUMENT.cs
+    startLine: 7
+  assemblies:
+  - SilverCraft.CSCore.SndFile
+  namespace: sndfile
+  syntax:
+    content: public struct SF_INSTRUMENT
+    content.vb: Public Structure SF_INSTRUMENT
+  inheritedMembers:
+  - System.ValueType.Equals(System.Object)
+  - System.ValueType.GetHashCode
+  - System.ValueType.ToString
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetType
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+- uid: sndfile.SF_INSTRUMENT.gain
+  commentId: F:sndfile.SF_INSTRUMENT.gain
+  id: gain
+  parent: sndfile.SF_INSTRUMENT
+  langs:
+  - csharp
+  - vb
+  name: gain
+  nameWithType: SF_INSTRUMENT.gain
+  fullName: sndfile.SF_INSTRUMENT.gain
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.SndFile/Native/SF_INSTRUMENT.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: gain
+    path: ../SilverCraft.SndFile/Native/SF_INSTRUMENT.cs
+    startLine: 9
+  assemblies:
+  - SilverCraft.CSCore.SndFile
+  namespace: sndfile
+  syntax:
+    content: public int gain
+    return:
+      type: System.Int32
+    content.vb: Public gain As Integer
+- uid: sndfile.SF_INSTRUMENT.basenote
+  commentId: F:sndfile.SF_INSTRUMENT.basenote
+  id: basenote
+  parent: sndfile.SF_INSTRUMENT
+  langs:
+  - csharp
+  - vb
+  name: basenote
+  nameWithType: SF_INSTRUMENT.basenote
+  fullName: sndfile.SF_INSTRUMENT.basenote
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.SndFile/Native/SF_INSTRUMENT.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: basenote
+    path: ../SilverCraft.SndFile/Native/SF_INSTRUMENT.cs
+    startLine: 12
+  assemblies:
+  - SilverCraft.CSCore.SndFile
+  namespace: sndfile
+  syntax:
+    content: public sbyte basenote
+    return:
+      type: System.SByte
+    content.vb: Public basenote As SByte
+- uid: sndfile.SF_INSTRUMENT.detune
+  commentId: F:sndfile.SF_INSTRUMENT.detune
+  id: detune
+  parent: sndfile.SF_INSTRUMENT
+  langs:
+  - csharp
+  - vb
+  name: detune
+  nameWithType: SF_INSTRUMENT.detune
+  fullName: sndfile.SF_INSTRUMENT.detune
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.SndFile/Native/SF_INSTRUMENT.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: detune
+    path: ../SilverCraft.SndFile/Native/SF_INSTRUMENT.cs
+    startLine: 15
+  assemblies:
+  - SilverCraft.CSCore.SndFile
+  namespace: sndfile
+  syntax:
+    content: public sbyte detune
+    return:
+      type: System.SByte
+    content.vb: Public detune As SByte
+- uid: sndfile.SF_INSTRUMENT.velocity_lo
+  commentId: F:sndfile.SF_INSTRUMENT.velocity_lo
+  id: velocity_lo
+  parent: sndfile.SF_INSTRUMENT
+  langs:
+  - csharp
+  - vb
+  name: velocity_lo
+  nameWithType: SF_INSTRUMENT.velocity_lo
+  fullName: sndfile.SF_INSTRUMENT.velocity_lo
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.SndFile/Native/SF_INSTRUMENT.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: velocity_lo
+    path: ../SilverCraft.SndFile/Native/SF_INSTRUMENT.cs
+    startLine: 18
+  assemblies:
+  - SilverCraft.CSCore.SndFile
+  namespace: sndfile
+  syntax:
+    content: public sbyte velocity_lo
+    return:
+      type: System.SByte
+    content.vb: Public velocity_lo As SByte
+- uid: sndfile.SF_INSTRUMENT.velocity_hi
+  commentId: F:sndfile.SF_INSTRUMENT.velocity_hi
+  id: velocity_hi
+  parent: sndfile.SF_INSTRUMENT
+  langs:
+  - csharp
+  - vb
+  name: velocity_hi
+  nameWithType: SF_INSTRUMENT.velocity_hi
+  fullName: sndfile.SF_INSTRUMENT.velocity_hi
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.SndFile/Native/SF_INSTRUMENT.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: velocity_hi
+    path: ../SilverCraft.SndFile/Native/SF_INSTRUMENT.cs
+    startLine: 21
+  assemblies:
+  - SilverCraft.CSCore.SndFile
+  namespace: sndfile
+  syntax:
+    content: public sbyte velocity_hi
+    return:
+      type: System.SByte
+    content.vb: Public velocity_hi As SByte
+- uid: sndfile.SF_INSTRUMENT.key_lo
+  commentId: F:sndfile.SF_INSTRUMENT.key_lo
+  id: key_lo
+  parent: sndfile.SF_INSTRUMENT
+  langs:
+  - csharp
+  - vb
+  name: key_lo
+  nameWithType: SF_INSTRUMENT.key_lo
+  fullName: sndfile.SF_INSTRUMENT.key_lo
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.SndFile/Native/SF_INSTRUMENT.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: key_lo
+    path: ../SilverCraft.SndFile/Native/SF_INSTRUMENT.cs
+    startLine: 24
+  assemblies:
+  - SilverCraft.CSCore.SndFile
+  namespace: sndfile
+  syntax:
+    content: public sbyte key_lo
+    return:
+      type: System.SByte
+    content.vb: Public key_lo As SByte
+- uid: sndfile.SF_INSTRUMENT.key_hi
+  commentId: F:sndfile.SF_INSTRUMENT.key_hi
+  id: key_hi
+  parent: sndfile.SF_INSTRUMENT
+  langs:
+  - csharp
+  - vb
+  name: key_hi
+  nameWithType: SF_INSTRUMENT.key_hi
+  fullName: sndfile.SF_INSTRUMENT.key_hi
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.SndFile/Native/SF_INSTRUMENT.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: key_hi
+    path: ../SilverCraft.SndFile/Native/SF_INSTRUMENT.cs
+    startLine: 27
+  assemblies:
+  - SilverCraft.CSCore.SndFile
+  namespace: sndfile
+  syntax:
+    content: public sbyte key_hi
+    return:
+      type: System.SByte
+    content.vb: Public key_hi As SByte
+- uid: sndfile.SF_INSTRUMENT.loop_count
+  commentId: F:sndfile.SF_INSTRUMENT.loop_count
+  id: loop_count
+  parent: sndfile.SF_INSTRUMENT
+  langs:
+  - csharp
+  - vb
+  name: loop_count
+  nameWithType: SF_INSTRUMENT.loop_count
+  fullName: sndfile.SF_INSTRUMENT.loop_count
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.SndFile/Native/SF_INSTRUMENT.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: loop_count
+    path: ../SilverCraft.SndFile/Native/SF_INSTRUMENT.cs
+    startLine: 29
+  assemblies:
+  - SilverCraft.CSCore.SndFile
+  namespace: sndfile
+  syntax:
+    content: public int loop_count
+    return:
+      type: System.Int32
+    content.vb: Public loop_count As Integer
+- uid: sndfile.SF_INSTRUMENT.loops
+  commentId: F:sndfile.SF_INSTRUMENT.loops
+  id: loops
+  parent: sndfile.SF_INSTRUMENT
+  langs:
+  - csharp
+  - vb
+  name: loops
+  nameWithType: SF_INSTRUMENT.loops
+  fullName: sndfile.SF_INSTRUMENT.loops
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.SndFile/Native/SF_INSTRUMENT.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: loops
+    path: ../SilverCraft.SndFile/Native/SF_INSTRUMENT.cs
+    startLine: 32
+  assemblies:
+  - SilverCraft.CSCore.SndFile
+  namespace: sndfile
+  syntax:
+    content: public SF_INSTRUMENT._loops_e__FixedBuffer loops
+    return:
+      type: sndfile.SF_INSTRUMENT._loops_e__FixedBuffer
+    content.vb: Public loops As SF_INSTRUMENT._loops_e__FixedBuffer
+references:
+- uid: sndfile
+  commentId: N:sndfile
+  href: sndfile.html
+  name: sndfile
+  nameWithType: sndfile
+  fullName: sndfile
+- uid: System.ValueType.Equals(System.Object)
+  commentId: M:System.ValueType.Equals(System.Object)
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  name: Equals(object)
+  nameWithType: ValueType.Equals(object)
+  fullName: System.ValueType.Equals(object)
+  nameWithType.vb: ValueType.Equals(Object)
+  fullName.vb: System.ValueType.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.ValueType.GetHashCode
+  commentId: M:System.ValueType.GetHashCode
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  name: GetHashCode()
+  nameWithType: ValueType.GetHashCode()
+  fullName: System.ValueType.GetHashCode()
+  spec.csharp:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  - name: (
+  - name: )
+- uid: System.ValueType.ToString
+  commentId: M:System.ValueType.ToString
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  name: ToString()
+  nameWithType: ValueType.ToString()
+  fullName: System.ValueType.ToString()
+  spec.csharp:
+  - uid: System.ValueType.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.ValueType
+  commentId: T:System.ValueType
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype
+  name: ValueType
+  nameWithType: ValueType
+  fullName: System.ValueType
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: System.SByte
+  commentId: T:System.SByte
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.sbyte
+  name: sbyte
+  nameWithType: sbyte
+  fullName: sbyte
+  nameWithType.vb: SByte
+  fullName.vb: SByte
+  name.vb: SByte
+- uid: sndfile.SF_INSTRUMENT._loops_e__FixedBuffer
+  commentId: T:sndfile.SF_INSTRUMENT._loops_e__FixedBuffer
+  parent: sndfile
+  href: sndfile.SF_INSTRUMENT.html
+  name: SF_INSTRUMENT._loops_e__FixedBuffer
+  nameWithType: SF_INSTRUMENT._loops_e__FixedBuffer
+  fullName: sndfile.SF_INSTRUMENT._loops_e__FixedBuffer
+  spec.csharp:
+  - uid: sndfile.SF_INSTRUMENT
+    name: SF_INSTRUMENT
+    href: sndfile.SF_INSTRUMENT.html
+  - name: .
+  - uid: sndfile.SF_INSTRUMENT._loops_e__FixedBuffer
+    name: _loops_e__FixedBuffer
+    href: sndfile.SF_INSTRUMENT._loops_e__FixedBuffer.html
+  spec.vb:
+  - uid: sndfile.SF_INSTRUMENT
+    name: SF_INSTRUMENT
+    href: sndfile.SF_INSTRUMENT.html
+  - name: .
+  - uid: sndfile.SF_INSTRUMENT._loops_e__FixedBuffer
+    name: _loops_e__FixedBuffer
+    href: sndfile.SF_INSTRUMENT._loops_e__FixedBuffer.html

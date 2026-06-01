@@ -1,0 +1,69 @@
+### YamlMime:ManagedReference
+items:
+- uid: SilverCraft.CSCore.DSP.Resampler
+  commentId: N:SilverCraft.CSCore.DSP.Resampler
+  id: SilverCraft.CSCore.DSP.Resampler
+  children:
+  - SilverCraft.CSCore.DSP.Resampler.ResamplerBase
+  - SilverCraft.CSCore.DSP.Resampler.SimpleResampler
+  langs:
+  - csharp
+  - vb
+  name: SilverCraft.CSCore.DSP.Resampler
+  nameWithType: SilverCraft.CSCore.DSP.Resampler
+  fullName: SilverCraft.CSCore.DSP.Resampler
+  type: Namespace
+  assemblies:
+  - SilverCraft.CSCore
+references:
+- uid: SilverCraft.CSCore.DSP.Resampler.ResamplerBase
+  commentId: T:SilverCraft.CSCore.DSP.Resampler.ResamplerBase
+  parent: SilverCraft.CSCore.DSP.Resampler
+  href: SilverCraft.CSCore.DSP.Resampler.ResamplerBase.html
+  name: ResamplerBase
+  nameWithType: ResamplerBase
+  fullName: SilverCraft.CSCore.DSP.Resampler.ResamplerBase
+- uid: SilverCraft.CSCore.DSP.Resampler.SimpleResampler
+  commentId: T:SilverCraft.CSCore.DSP.Resampler.SimpleResampler
+  href: SilverCraft.CSCore.DSP.Resampler.SimpleResampler.html
+  name: SimpleResampler
+  nameWithType: SimpleResampler
+  fullName: SilverCraft.CSCore.DSP.Resampler.SimpleResampler
+- uid: SilverCraft.CSCore.DSP.Resampler
+  commentId: N:SilverCraft.CSCore.DSP.Resampler
+  href: SilverCraft.html
+  name: SilverCraft.CSCore.DSP.Resampler
+  nameWithType: SilverCraft.CSCore.DSP.Resampler
+  fullName: SilverCraft.CSCore.DSP.Resampler
+  spec.csharp:
+  - uid: SilverCraft
+    name: SilverCraft
+    href: SilverCraft.html
+  - name: .
+  - uid: SilverCraft.CSCore
+    name: CSCore
+    href: SilverCraft.CSCore.html
+  - name: .
+  - uid: SilverCraft.CSCore.DSP
+    name: DSP
+    href: SilverCraft.CSCore.DSP.html
+  - name: .
+  - uid: SilverCraft.CSCore.DSP.Resampler
+    name: Resampler
+    href: SilverCraft.CSCore.DSP.Resampler.html
+  spec.vb:
+  - uid: SilverCraft
+    name: SilverCraft
+    href: SilverCraft.html
+  - name: .
+  - uid: SilverCraft.CSCore
+    name: CSCore
+    href: SilverCraft.CSCore.html
+  - name: .
+  - uid: SilverCraft.CSCore.DSP
+    name: DSP
+    href: SilverCraft.CSCore.DSP.html
+  - name: .
+  - uid: SilverCraft.CSCore.DSP.Resampler
+    name: Resampler
+    href: SilverCraft.CSCore.DSP.Resampler.html

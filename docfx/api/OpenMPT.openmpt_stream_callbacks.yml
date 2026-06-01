@@ -1,0 +1,668 @@
+### YamlMime:ManagedReference
+items:
+- uid: OpenMPT.openmpt_stream_callbacks
+  commentId: T:OpenMPT.openmpt_stream_callbacks
+  id: openmpt_stream_callbacks
+  parent: OpenMPT
+  children:
+  - OpenMPT.openmpt_stream_callbacks.#ctor(OpenMPT.VirtualSeek,OpenMPT.VirtualRead,OpenMPT.VirtualTell)
+  - OpenMPT.openmpt_stream_callbacks.Equals(System.Object)
+  - OpenMPT.openmpt_stream_callbacks.GetHashCode
+  - OpenMPT.openmpt_stream_callbacks.Read
+  - OpenMPT.openmpt_stream_callbacks.Seek
+  - OpenMPT.openmpt_stream_callbacks.Tell
+  - OpenMPT.openmpt_stream_callbacks.op_Equality(OpenMPT.openmpt_stream_callbacks,OpenMPT.openmpt_stream_callbacks)
+  - OpenMPT.openmpt_stream_callbacks.op_Inequality(OpenMPT.openmpt_stream_callbacks,OpenMPT.openmpt_stream_callbacks)
+  langs:
+  - csharp
+  - vb
+  name: openmpt_stream_callbacks
+  nameWithType: openmpt_stream_callbacks
+  fullName: OpenMPT.openmpt_stream_callbacks
+  type: Struct
+  source:
+    remote:
+      path: SilverCraft.CSCore.OpenMPT/Interop/openmpt_stream_callbacks.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: openmpt_stream_callbacks
+    path: ../SilverCraft.CSCore.OpenMPT/Interop/openmpt_stream_callbacks.cs
+    startLine: 77
+  assemblies:
+  - SilverCraft.OpenMPT
+  namespace: OpenMPT
+  syntax:
+    content: public struct openmpt_stream_callbacks
+    content.vb: Public Structure openmpt_stream_callbacks
+  inheritedMembers:
+  - System.ValueType.ToString
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetType
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+- uid: OpenMPT.openmpt_stream_callbacks.Read
+  commentId: F:OpenMPT.openmpt_stream_callbacks.Read
+  id: Read
+  parent: OpenMPT.openmpt_stream_callbacks
+  langs:
+  - csharp
+  - vb
+  name: Read
+  nameWithType: openmpt_stream_callbacks.Read
+  fullName: OpenMPT.openmpt_stream_callbacks.Read
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore.OpenMPT/Interop/openmpt_stream_callbacks.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: Read
+    path: ../SilverCraft.CSCore.OpenMPT/Interop/openmpt_stream_callbacks.cs
+    startLine: 81
+  assemblies:
+  - SilverCraft.OpenMPT
+  namespace: OpenMPT
+  syntax:
+    content: >-
+      [NotNull]
+
+      public readonly VirtualRead Read
+    return:
+      type: OpenMPT.VirtualRead
+    content.vb: >-
+      <NotNull>
+
+      Public ReadOnly Read As VirtualRead
+  attributes:
+  - type: System.Diagnostics.CodeAnalysis.NotNullAttribute
+    ctor: System.Diagnostics.CodeAnalysis.NotNullAttribute.#ctor
+    arguments: []
+- uid: OpenMPT.openmpt_stream_callbacks.Seek
+  commentId: F:OpenMPT.openmpt_stream_callbacks.Seek
+  id: Seek
+  parent: OpenMPT.openmpt_stream_callbacks
+  langs:
+  - csharp
+  - vb
+  name: Seek
+  nameWithType: openmpt_stream_callbacks.Seek
+  fullName: OpenMPT.openmpt_stream_callbacks.Seek
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore.OpenMPT/Interop/openmpt_stream_callbacks.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: Seek
+    path: ../SilverCraft.CSCore.OpenMPT/Interop/openmpt_stream_callbacks.cs
+    startLine: 84
+  assemblies:
+  - SilverCraft.OpenMPT
+  namespace: OpenMPT
+  syntax:
+    content: >-
+      [NotNull]
+
+      public readonly VirtualSeek Seek
+    return:
+      type: OpenMPT.VirtualSeek
+    content.vb: >-
+      <NotNull>
+
+      Public ReadOnly Seek As VirtualSeek
+  attributes:
+  - type: System.Diagnostics.CodeAnalysis.NotNullAttribute
+    ctor: System.Diagnostics.CodeAnalysis.NotNullAttribute.#ctor
+    arguments: []
+- uid: OpenMPT.openmpt_stream_callbacks.Tell
+  commentId: F:OpenMPT.openmpt_stream_callbacks.Tell
+  id: Tell
+  parent: OpenMPT.openmpt_stream_callbacks
+  langs:
+  - csharp
+  - vb
+  name: Tell
+  nameWithType: openmpt_stream_callbacks.Tell
+  fullName: OpenMPT.openmpt_stream_callbacks.Tell
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore.OpenMPT/Interop/openmpt_stream_callbacks.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: Tell
+    path: ../SilverCraft.CSCore.OpenMPT/Interop/openmpt_stream_callbacks.cs
+    startLine: 87
+  assemblies:
+  - SilverCraft.OpenMPT
+  namespace: OpenMPT
+  syntax:
+    content: >-
+      [NotNull]
+
+      public readonly VirtualTell Tell
+    return:
+      type: OpenMPT.VirtualTell
+    content.vb: >-
+      <NotNull>
+
+      Public ReadOnly Tell As VirtualTell
+  attributes:
+  - type: System.Diagnostics.CodeAnalysis.NotNullAttribute
+    ctor: System.Diagnostics.CodeAnalysis.NotNullAttribute.#ctor
+    arguments: []
+- uid: OpenMPT.openmpt_stream_callbacks.#ctor(OpenMPT.VirtualSeek,OpenMPT.VirtualRead,OpenMPT.VirtualTell)
+  commentId: M:OpenMPT.openmpt_stream_callbacks.#ctor(OpenMPT.VirtualSeek,OpenMPT.VirtualRead,OpenMPT.VirtualTell)
+  id: '#ctor(OpenMPT.VirtualSeek,OpenMPT.VirtualRead,OpenMPT.VirtualTell)'
+  parent: OpenMPT.openmpt_stream_callbacks
+  langs:
+  - csharp
+  - vb
+  name: openmpt_stream_callbacks(VirtualSeek, VirtualRead, VirtualTell)
+  nameWithType: openmpt_stream_callbacks.openmpt_stream_callbacks(VirtualSeek, VirtualRead, VirtualTell)
+  fullName: OpenMPT.openmpt_stream_callbacks.openmpt_stream_callbacks(OpenMPT.VirtualSeek, OpenMPT.VirtualRead, OpenMPT.VirtualTell)
+  type: Constructor
+  source:
+    remote:
+      path: SilverCraft.CSCore.OpenMPT/Interop/openmpt_stream_callbacks.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: .ctor
+    path: ../SilverCraft.CSCore.OpenMPT/Interop/openmpt_stream_callbacks.cs
+    startLine: 89
+  assemblies:
+  - SilverCraft.OpenMPT
+  namespace: OpenMPT
+  syntax:
+    content: public openmpt_stream_callbacks(VirtualSeek seek, VirtualRead read, VirtualTell tell)
+    parameters:
+    - id: seek
+      type: OpenMPT.VirtualSeek
+      attributes:
+      - type: System.Diagnostics.CodeAnalysis.NotNullAttribute
+        ctor: System.Diagnostics.CodeAnalysis.NotNullAttribute.#ctor
+        arguments: []
+    - id: read
+      type: OpenMPT.VirtualRead
+      attributes:
+      - type: System.Diagnostics.CodeAnalysis.NotNullAttribute
+        ctor: System.Diagnostics.CodeAnalysis.NotNullAttribute.#ctor
+        arguments: []
+    - id: tell
+      type: OpenMPT.VirtualTell
+      attributes:
+      - type: System.Diagnostics.CodeAnalysis.NotNullAttribute
+        ctor: System.Diagnostics.CodeAnalysis.NotNullAttribute.#ctor
+        arguments: []
+    content.vb: Public Sub New(seek As VirtualSeek, read As VirtualRead, tell As VirtualTell)
+  overload: OpenMPT.openmpt_stream_callbacks.#ctor*
+  nameWithType.vb: openmpt_stream_callbacks.New(VirtualSeek, VirtualRead, VirtualTell)
+  fullName.vb: OpenMPT.openmpt_stream_callbacks.New(OpenMPT.VirtualSeek, OpenMPT.VirtualRead, OpenMPT.VirtualTell)
+  name.vb: New(VirtualSeek, VirtualRead, VirtualTell)
+- uid: OpenMPT.openmpt_stream_callbacks.Equals(System.Object)
+  commentId: M:OpenMPT.openmpt_stream_callbacks.Equals(System.Object)
+  id: Equals(System.Object)
+  parent: OpenMPT.openmpt_stream_callbacks
+  langs:
+  - csharp
+  - vb
+  name: Equals(object?)
+  nameWithType: openmpt_stream_callbacks.Equals(object?)
+  fullName: OpenMPT.openmpt_stream_callbacks.Equals(object?)
+  type: Method
+  source:
+    remote:
+      path: SilverCraft.CSCore.OpenMPT/Interop/openmpt_stream_callbacks.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: Equals
+    path: ../SilverCraft.CSCore.OpenMPT/Interop/openmpt_stream_callbacks.cs
+    startLine: 105
+  assemblies:
+  - SilverCraft.OpenMPT
+  namespace: OpenMPT
+  summary: Indicates whether this instance and a specified object are equal.
+  example: []
+  syntax:
+    content: public override readonly bool Equals(object? obj)
+    parameters:
+    - id: obj
+      type: System.Object
+      description: The object to compare with the current instance.
+    return:
+      type: System.Boolean
+      description: <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if <code class="paramref">obj</code> and this instance are the same type and represent the same value; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.
+    content.vb: Public Overrides Function Equals(obj As Object) As Boolean
+  overridden: System.ValueType.Equals(System.Object)
+  overload: OpenMPT.openmpt_stream_callbacks.Equals*
+  nameWithType.vb: openmpt_stream_callbacks.Equals(Object)
+  fullName.vb: OpenMPT.openmpt_stream_callbacks.Equals(Object)
+  name.vb: Equals(Object)
+- uid: OpenMPT.openmpt_stream_callbacks.GetHashCode
+  commentId: M:OpenMPT.openmpt_stream_callbacks.GetHashCode
+  id: GetHashCode
+  parent: OpenMPT.openmpt_stream_callbacks
+  langs:
+  - csharp
+  - vb
+  name: GetHashCode()
+  nameWithType: openmpt_stream_callbacks.GetHashCode()
+  fullName: OpenMPT.openmpt_stream_callbacks.GetHashCode()
+  type: Method
+  source:
+    remote:
+      path: SilverCraft.CSCore.OpenMPT/Interop/openmpt_stream_callbacks.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: GetHashCode
+    path: ../SilverCraft.CSCore.OpenMPT/Interop/openmpt_stream_callbacks.cs
+    startLine: 110
+  assemblies:
+  - SilverCraft.OpenMPT
+  namespace: OpenMPT
+  summary: Returns the hash code for this instance.
+  example: []
+  syntax:
+    content: public override int GetHashCode()
+    return:
+      type: System.Int32
+      description: A 32-bit signed integer that is the hash code for this instance.
+    content.vb: Public Overrides Function GetHashCode() As Integer
+  overridden: System.ValueType.GetHashCode
+  overload: OpenMPT.openmpt_stream_callbacks.GetHashCode*
+- uid: OpenMPT.openmpt_stream_callbacks.op_Equality(OpenMPT.openmpt_stream_callbacks,OpenMPT.openmpt_stream_callbacks)
+  commentId: M:OpenMPT.openmpt_stream_callbacks.op_Equality(OpenMPT.openmpt_stream_callbacks,OpenMPT.openmpt_stream_callbacks)
+  id: op_Equality(OpenMPT.openmpt_stream_callbacks,OpenMPT.openmpt_stream_callbacks)
+  parent: OpenMPT.openmpt_stream_callbacks
+  langs:
+  - csharp
+  - vb
+  name: operator ==(openmpt_stream_callbacks, openmpt_stream_callbacks)
+  nameWithType: openmpt_stream_callbacks.operator ==(openmpt_stream_callbacks, openmpt_stream_callbacks)
+  fullName: OpenMPT.openmpt_stream_callbacks.operator ==(OpenMPT.openmpt_stream_callbacks, OpenMPT.openmpt_stream_callbacks)
+  type: Operator
+  source:
+    remote:
+      path: SilverCraft.CSCore.OpenMPT/Interop/openmpt_stream_callbacks.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: op_Equality
+    path: ../SilverCraft.CSCore.OpenMPT/Interop/openmpt_stream_callbacks.cs
+    startLine: 115
+  assemblies:
+  - SilverCraft.OpenMPT
+  namespace: OpenMPT
+  syntax:
+    content: public static bool operator ==(openmpt_stream_callbacks left, openmpt_stream_callbacks right)
+    parameters:
+    - id: left
+      type: OpenMPT.openmpt_stream_callbacks
+    - id: right
+      type: OpenMPT.openmpt_stream_callbacks
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Operator =(left As openmpt_stream_callbacks, right As openmpt_stream_callbacks) As Boolean
+  overload: OpenMPT.openmpt_stream_callbacks.op_Equality*
+  nameWithType.vb: openmpt_stream_callbacks.=(openmpt_stream_callbacks, openmpt_stream_callbacks)
+  fullName.vb: OpenMPT.openmpt_stream_callbacks.=(OpenMPT.openmpt_stream_callbacks, OpenMPT.openmpt_stream_callbacks)
+  name.vb: =(openmpt_stream_callbacks, openmpt_stream_callbacks)
+- uid: OpenMPT.openmpt_stream_callbacks.op_Inequality(OpenMPT.openmpt_stream_callbacks,OpenMPT.openmpt_stream_callbacks)
+  commentId: M:OpenMPT.openmpt_stream_callbacks.op_Inequality(OpenMPT.openmpt_stream_callbacks,OpenMPT.openmpt_stream_callbacks)
+  id: op_Inequality(OpenMPT.openmpt_stream_callbacks,OpenMPT.openmpt_stream_callbacks)
+  parent: OpenMPT.openmpt_stream_callbacks
+  langs:
+  - csharp
+  - vb
+  name: operator !=(openmpt_stream_callbacks, openmpt_stream_callbacks)
+  nameWithType: openmpt_stream_callbacks.operator !=(openmpt_stream_callbacks, openmpt_stream_callbacks)
+  fullName: OpenMPT.openmpt_stream_callbacks.operator !=(OpenMPT.openmpt_stream_callbacks, OpenMPT.openmpt_stream_callbacks)
+  type: Operator
+  source:
+    remote:
+      path: SilverCraft.CSCore.OpenMPT/Interop/openmpt_stream_callbacks.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: op_Inequality
+    path: ../SilverCraft.CSCore.OpenMPT/Interop/openmpt_stream_callbacks.cs
+    startLine: 120
+  assemblies:
+  - SilverCraft.OpenMPT
+  namespace: OpenMPT
+  syntax:
+    content: public static bool operator !=(openmpt_stream_callbacks left, openmpt_stream_callbacks right)
+    parameters:
+    - id: left
+      type: OpenMPT.openmpt_stream_callbacks
+    - id: right
+      type: OpenMPT.openmpt_stream_callbacks
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Operator <>(left As openmpt_stream_callbacks, right As openmpt_stream_callbacks) As Boolean
+  overload: OpenMPT.openmpt_stream_callbacks.op_Inequality*
+  nameWithType.vb: openmpt_stream_callbacks.<>(openmpt_stream_callbacks, openmpt_stream_callbacks)
+  fullName.vb: OpenMPT.openmpt_stream_callbacks.<>(OpenMPT.openmpt_stream_callbacks, OpenMPT.openmpt_stream_callbacks)
+  name.vb: <>(openmpt_stream_callbacks, openmpt_stream_callbacks)
+references:
+- uid: OpenMPT
+  commentId: N:OpenMPT
+  href: OpenMPT.html
+  name: OpenMPT
+  nameWithType: OpenMPT
+  fullName: OpenMPT
+- uid: System.ValueType.ToString
+  commentId: M:System.ValueType.ToString
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  name: ToString()
+  nameWithType: ValueType.ToString()
+  fullName: System.ValueType.ToString()
+  spec.csharp:
+  - uid: System.ValueType.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.ValueType
+  commentId: T:System.ValueType
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype
+  name: ValueType
+  nameWithType: ValueType
+  fullName: System.ValueType
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: OpenMPT.VirtualRead
+  commentId: T:OpenMPT.VirtualRead
+  parent: OpenMPT
+  href: OpenMPT.VirtualRead.html
+  name: VirtualRead
+  nameWithType: VirtualRead
+  fullName: OpenMPT.VirtualRead
+- uid: OpenMPT.VirtualSeek
+  commentId: T:OpenMPT.VirtualSeek
+  parent: OpenMPT
+  href: OpenMPT.VirtualSeek.html
+  name: VirtualSeek
+  nameWithType: VirtualSeek
+  fullName: OpenMPT.VirtualSeek
+- uid: OpenMPT.VirtualTell
+  commentId: T:OpenMPT.VirtualTell
+  parent: OpenMPT
+  href: OpenMPT.VirtualTell.html
+  name: VirtualTell
+  nameWithType: VirtualTell
+  fullName: OpenMPT.VirtualTell
+- uid: OpenMPT.openmpt_stream_callbacks.#ctor*
+  commentId: Overload:OpenMPT.openmpt_stream_callbacks.#ctor
+  href: OpenMPT.openmpt_stream_callbacks.html#OpenMPT_openmpt_stream_callbacks__ctor_OpenMPT_VirtualSeek_OpenMPT_VirtualRead_OpenMPT_VirtualTell_
+  name: openmpt_stream_callbacks
+  nameWithType: openmpt_stream_callbacks.openmpt_stream_callbacks
+  fullName: OpenMPT.openmpt_stream_callbacks.openmpt_stream_callbacks
+  nameWithType.vb: openmpt_stream_callbacks.New
+  fullName.vb: OpenMPT.openmpt_stream_callbacks.New
+  name.vb: New
+- uid: System.ValueType.Equals(System.Object)
+  commentId: M:System.ValueType.Equals(System.Object)
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  name: Equals(object)
+  nameWithType: ValueType.Equals(object)
+  fullName: System.ValueType.Equals(object)
+  nameWithType.vb: ValueType.Equals(Object)
+  fullName.vb: System.ValueType.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: OpenMPT.openmpt_stream_callbacks.Equals*
+  commentId: Overload:OpenMPT.openmpt_stream_callbacks.Equals
+  href: OpenMPT.openmpt_stream_callbacks.html#OpenMPT_openmpt_stream_callbacks_Equals_System_Object_
+  name: Equals
+  nameWithType: openmpt_stream_callbacks.Equals
+  fullName: OpenMPT.openmpt_stream_callbacks.Equals
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: System.ValueType.GetHashCode
+  commentId: M:System.ValueType.GetHashCode
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  name: GetHashCode()
+  nameWithType: ValueType.GetHashCode()
+  fullName: System.ValueType.GetHashCode()
+  spec.csharp:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  - name: (
+  - name: )
+- uid: OpenMPT.openmpt_stream_callbacks.GetHashCode*
+  commentId: Overload:OpenMPT.openmpt_stream_callbacks.GetHashCode
+  href: OpenMPT.openmpt_stream_callbacks.html#OpenMPT_openmpt_stream_callbacks_GetHashCode
+  name: GetHashCode
+  nameWithType: openmpt_stream_callbacks.GetHashCode
+  fullName: OpenMPT.openmpt_stream_callbacks.GetHashCode
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: OpenMPT.openmpt_stream_callbacks.op_Equality*
+  commentId: Overload:OpenMPT.openmpt_stream_callbacks.op_Equality
+  href: OpenMPT.openmpt_stream_callbacks.html#OpenMPT_openmpt_stream_callbacks_op_Equality_OpenMPT_openmpt_stream_callbacks_OpenMPT_openmpt_stream_callbacks_
+  name: operator ==
+  nameWithType: openmpt_stream_callbacks.operator ==
+  fullName: OpenMPT.openmpt_stream_callbacks.operator ==
+  nameWithType.vb: openmpt_stream_callbacks.=
+  fullName.vb: OpenMPT.openmpt_stream_callbacks.=
+  name.vb: =
+  spec.csharp:
+  - name: operator
+  - name: " "
+  - uid: OpenMPT.openmpt_stream_callbacks.op_Equality*
+    name: ==
+    href: OpenMPT.openmpt_stream_callbacks.html#OpenMPT_openmpt_stream_callbacks_op_Equality_OpenMPT_openmpt_stream_callbacks_OpenMPT_openmpt_stream_callbacks_
+- uid: OpenMPT.openmpt_stream_callbacks
+  commentId: T:OpenMPT.openmpt_stream_callbacks
+  parent: OpenMPT
+  href: OpenMPT.openmpt_stream_callbacks.html
+  name: openmpt_stream_callbacks
+  nameWithType: openmpt_stream_callbacks
+  fullName: OpenMPT.openmpt_stream_callbacks
+- uid: OpenMPT.openmpt_stream_callbacks.op_Inequality*
+  commentId: Overload:OpenMPT.openmpt_stream_callbacks.op_Inequality
+  href: OpenMPT.openmpt_stream_callbacks.html#OpenMPT_openmpt_stream_callbacks_op_Inequality_OpenMPT_openmpt_stream_callbacks_OpenMPT_openmpt_stream_callbacks_
+  name: operator !=
+  nameWithType: openmpt_stream_callbacks.operator !=
+  fullName: OpenMPT.openmpt_stream_callbacks.operator !=
+  nameWithType.vb: openmpt_stream_callbacks.<>
+  fullName.vb: OpenMPT.openmpt_stream_callbacks.<>
+  name.vb: <>
+  spec.csharp:
+  - name: operator
+  - name: " "
+  - uid: OpenMPT.openmpt_stream_callbacks.op_Inequality*
+    name: '!='
+    href: OpenMPT.openmpt_stream_callbacks.html#OpenMPT_openmpt_stream_callbacks_op_Inequality_OpenMPT_openmpt_stream_callbacks_OpenMPT_openmpt_stream_callbacks_

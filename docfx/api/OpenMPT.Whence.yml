@@ -1,0 +1,123 @@
+### YamlMime:ManagedReference
+items:
+- uid: OpenMPT.Whence
+  commentId: T:OpenMPT.Whence
+  id: Whence
+  parent: OpenMPT
+  children:
+  - OpenMPT.Whence.Current
+  - OpenMPT.Whence.End
+  - OpenMPT.Whence.Set
+  langs:
+  - csharp
+  - vb
+  name: Whence
+  nameWithType: Whence
+  fullName: OpenMPT.Whence
+  type: Enum
+  source:
+    remote:
+      path: SilverCraft.CSCore.OpenMPT/Interop/openmpt_stream_callbacks.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: Whence
+    path: ../SilverCraft.CSCore.OpenMPT/Interop/openmpt_stream_callbacks.cs
+    startLine: 62
+  assemblies:
+  - SilverCraft.OpenMPT
+  namespace: OpenMPT
+  syntax:
+    content: public enum Whence
+    content.vb: Public Enum Whence
+- uid: OpenMPT.Whence.Set
+  commentId: F:OpenMPT.Whence.Set
+  id: Set
+  parent: OpenMPT.Whence
+  langs:
+  - csharp
+  - vb
+  name: Set
+  nameWithType: Whence.Set
+  fullName: OpenMPT.Whence.Set
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore.OpenMPT/Interop/openmpt_stream_callbacks.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: Set
+    path: ../SilverCraft.CSCore.OpenMPT/Interop/openmpt_stream_callbacks.cs
+    startLine: 63
+  assemblies:
+  - SilverCraft.OpenMPT
+  namespace: OpenMPT
+  syntax:
+    content: Set = 0
+    return:
+      type: OpenMPT.Whence
+- uid: OpenMPT.Whence.Current
+  commentId: F:OpenMPT.Whence.Current
+  id: Current
+  parent: OpenMPT.Whence
+  langs:
+  - csharp
+  - vb
+  name: Current
+  nameWithType: Whence.Current
+  fullName: OpenMPT.Whence.Current
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore.OpenMPT/Interop/openmpt_stream_callbacks.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: Current
+    path: ../SilverCraft.CSCore.OpenMPT/Interop/openmpt_stream_callbacks.cs
+    startLine: 64
+  assemblies:
+  - SilverCraft.OpenMPT
+  namespace: OpenMPT
+  syntax:
+    content: Current = 1
+    return:
+      type: OpenMPT.Whence
+- uid: OpenMPT.Whence.End
+  commentId: F:OpenMPT.Whence.End
+  id: End
+  parent: OpenMPT.Whence
+  langs:
+  - csharp
+  - vb
+  name: End
+  nameWithType: Whence.End
+  fullName: OpenMPT.Whence.End
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore.OpenMPT/Interop/openmpt_stream_callbacks.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: End
+    path: ../SilverCraft.CSCore.OpenMPT/Interop/openmpt_stream_callbacks.cs
+    startLine: 65
+  assemblies:
+  - SilverCraft.OpenMPT
+  namespace: OpenMPT
+  syntax:
+    content: End = 2
+    return:
+      type: OpenMPT.Whence
+references:
+- uid: OpenMPT
+  commentId: N:OpenMPT
+  href: OpenMPT.html
+  name: OpenMPT
+  nameWithType: OpenMPT
+  fullName: OpenMPT
+- uid: OpenMPT.Whence
+  commentId: T:OpenMPT.Whence
+  parent: OpenMPT
+  href: OpenMPT.Whence.html
+  name: Whence
+  nameWithType: Whence
+  fullName: OpenMPT.Whence

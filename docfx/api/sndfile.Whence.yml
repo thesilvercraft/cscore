@@ -1,0 +1,123 @@
+### YamlMime:ManagedReference
+items:
+- uid: sndfile.Whence
+  commentId: T:sndfile.Whence
+  id: Whence
+  parent: sndfile
+  children:
+  - sndfile.Whence.Current
+  - sndfile.Whence.End
+  - sndfile.Whence.Set
+  langs:
+  - csharp
+  - vb
+  name: Whence
+  nameWithType: Whence
+  fullName: sndfile.Whence
+  type: Enum
+  source:
+    remote:
+      path: SilverCraft.SndFile/Native/Whence.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: Whence
+    path: ../SilverCraft.SndFile/Native/Whence.cs
+    startLine: 2
+  assemblies:
+  - SilverCraft.CSCore.SndFile
+  namespace: sndfile
+  syntax:
+    content: 'public enum Whence : uint'
+    content.vb: Public Enum Whence As UInteger
+- uid: sndfile.Whence.Current
+  commentId: F:sndfile.Whence.Current
+  id: Current
+  parent: sndfile.Whence
+  langs:
+  - csharp
+  - vb
+  name: Current
+  nameWithType: Whence.Current
+  fullName: sndfile.Whence.Current
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.SndFile/Native/Whence.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: Current
+    path: ../SilverCraft.SndFile/Native/Whence.cs
+    startLine: 4
+  assemblies:
+  - SilverCraft.CSCore.SndFile
+  namespace: sndfile
+  syntax:
+    content: Current = 1
+    return:
+      type: sndfile.Whence
+- uid: sndfile.Whence.Set
+  commentId: F:sndfile.Whence.Set
+  id: Set
+  parent: sndfile.Whence
+  langs:
+  - csharp
+  - vb
+  name: Set
+  nameWithType: Whence.Set
+  fullName: sndfile.Whence.Set
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.SndFile/Native/Whence.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: Set
+    path: ../SilverCraft.SndFile/Native/Whence.cs
+    startLine: 5
+  assemblies:
+  - SilverCraft.CSCore.SndFile
+  namespace: sndfile
+  syntax:
+    content: Set = 0
+    return:
+      type: sndfile.Whence
+- uid: sndfile.Whence.End
+  commentId: F:sndfile.Whence.End
+  id: End
+  parent: sndfile.Whence
+  langs:
+  - csharp
+  - vb
+  name: End
+  nameWithType: Whence.End
+  fullName: sndfile.Whence.End
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.SndFile/Native/Whence.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: End
+    path: ../SilverCraft.SndFile/Native/Whence.cs
+    startLine: 6
+  assemblies:
+  - SilverCraft.CSCore.SndFile
+  namespace: sndfile
+  syntax:
+    content: End = 2
+    return:
+      type: sndfile.Whence
+references:
+- uid: sndfile
+  commentId: N:sndfile
+  href: sndfile.html
+  name: sndfile
+  nameWithType: sndfile
+  fullName: sndfile
+- uid: sndfile.Whence
+  commentId: T:sndfile.Whence
+  parent: sndfile
+  href: sndfile.Whence.html
+  name: Whence
+  nameWithType: Whence
+  fullName: sndfile.Whence

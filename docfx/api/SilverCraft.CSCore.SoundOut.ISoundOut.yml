@@ -1,0 +1,799 @@
+### YamlMime:ManagedReference
+items:
+- uid: SilverCraft.CSCore.SoundOut.ISoundOut
+  commentId: T:SilverCraft.CSCore.SoundOut.ISoundOut
+  id: ISoundOut
+  parent: SilverCraft.CSCore.SoundOut
+  children:
+  - SilverCraft.CSCore.SoundOut.ISoundOut.Initialize(SilverCraft.CSCore.IWaveSource)
+  - SilverCraft.CSCore.SoundOut.ISoundOut.Pause
+  - SilverCraft.CSCore.SoundOut.ISoundOut.Play
+  - SilverCraft.CSCore.SoundOut.ISoundOut.PlaybackState
+  - SilverCraft.CSCore.SoundOut.ISoundOut.Resume
+  - SilverCraft.CSCore.SoundOut.ISoundOut.Stop
+  - SilverCraft.CSCore.SoundOut.ISoundOut.Stopped
+  - SilverCraft.CSCore.SoundOut.ISoundOut.Volume
+  - SilverCraft.CSCore.SoundOut.ISoundOut.WaveSource
+  langs:
+  - csharp
+  - vb
+  name: ISoundOut
+  nameWithType: ISoundOut
+  fullName: SilverCraft.CSCore.SoundOut.ISoundOut
+  type: Interface
+  source:
+    remote:
+      path: SilverCraft.CSCore/SoundOut/ISoundOut.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: ISoundOut
+    path: ../SilverCraft.CSCore/SoundOut/ISoundOut.cs
+    startLine: 7
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.SoundOut
+  summary: Defines a interface for audio playbacks.
+  example: []
+  syntax:
+    content: 'public interface ISoundOut : IDisposable'
+    content.vb: Public Interface ISoundOut Inherits IDisposable
+  derivedClasses:
+  - SilverCraft.CSCore.PortAudio.PortAudioSoundOut
+  - SilverCraft.CSCore.SoundOut.ALSoundOut
+  inheritedMembers:
+  - System.IDisposable.Dispose
+  extensionMethods:
+  - SilverCraft.CSCore.SoundOut.ISoundOut.SilverCraft.CSCore.Extensions.WaitForStopped
+  - SilverCraft.CSCore.SoundOut.ISoundOut.SilverCraft.CSCore.Extensions.WaitForStopped(System.Int32)
+  - SilverCraft.CSCore.SoundOut.ISoundOut.SilverCraft.CSCore.FluentExtensions.Synchronized``2
+- uid: SilverCraft.CSCore.SoundOut.ISoundOut.Play
+  commentId: M:SilverCraft.CSCore.SoundOut.ISoundOut.Play
+  id: Play
+  parent: SilverCraft.CSCore.SoundOut.ISoundOut
+  langs:
+  - csharp
+  - vb
+  name: Play()
+  nameWithType: ISoundOut.Play()
+  fullName: SilverCraft.CSCore.SoundOut.ISoundOut.Play()
+  type: Method
+  source:
+    remote:
+      path: SilverCraft.CSCore/SoundOut/ISoundOut.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: Play
+    path: ../SilverCraft.CSCore/SoundOut/ISoundOut.cs
+    startLine: 12
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.SoundOut
+  summary: Starts the audio playback.
+  example: []
+  syntax:
+    content: void Play()
+    content.vb: Sub Play()
+  overload: SilverCraft.CSCore.SoundOut.ISoundOut.Play*
+- uid: SilverCraft.CSCore.SoundOut.ISoundOut.Pause
+  commentId: M:SilverCraft.CSCore.SoundOut.ISoundOut.Pause
+  id: Pause
+  parent: SilverCraft.CSCore.SoundOut.ISoundOut
+  langs:
+  - csharp
+  - vb
+  name: Pause()
+  nameWithType: ISoundOut.Pause()
+  fullName: SilverCraft.CSCore.SoundOut.ISoundOut.Pause()
+  type: Method
+  source:
+    remote:
+      path: SilverCraft.CSCore/SoundOut/ISoundOut.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: Pause
+    path: ../SilverCraft.CSCore/SoundOut/ISoundOut.cs
+    startLine: 17
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.SoundOut
+  summary: Pauses the audio playback.
+  example: []
+  syntax:
+    content: void Pause()
+    content.vb: Sub Pause()
+  overload: SilverCraft.CSCore.SoundOut.ISoundOut.Pause*
+- uid: SilverCraft.CSCore.SoundOut.ISoundOut.Resume
+  commentId: M:SilverCraft.CSCore.SoundOut.ISoundOut.Resume
+  id: Resume
+  parent: SilverCraft.CSCore.SoundOut.ISoundOut
+  langs:
+  - csharp
+  - vb
+  name: Resume()
+  nameWithType: ISoundOut.Resume()
+  fullName: SilverCraft.CSCore.SoundOut.ISoundOut.Resume()
+  type: Method
+  source:
+    remote:
+      path: SilverCraft.CSCore/SoundOut/ISoundOut.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: Resume
+    path: ../SilverCraft.CSCore/SoundOut/ISoundOut.cs
+    startLine: 22
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.SoundOut
+  summary: Resumes the audio playback.
+  example: []
+  syntax:
+    content: void Resume()
+    content.vb: Sub [Resume]()
+  overload: SilverCraft.CSCore.SoundOut.ISoundOut.Resume*
+- uid: SilverCraft.CSCore.SoundOut.ISoundOut.Stop
+  commentId: M:SilverCraft.CSCore.SoundOut.ISoundOut.Stop
+  id: Stop
+  parent: SilverCraft.CSCore.SoundOut.ISoundOut
+  langs:
+  - csharp
+  - vb
+  name: Stop()
+  nameWithType: ISoundOut.Stop()
+  fullName: SilverCraft.CSCore.SoundOut.ISoundOut.Stop()
+  type: Method
+  source:
+    remote:
+      path: SilverCraft.CSCore/SoundOut/ISoundOut.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: Stop
+    path: ../SilverCraft.CSCore/SoundOut/ISoundOut.cs
+    startLine: 27
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.SoundOut
+  summary: Stops the audio playback.
+  example: []
+  syntax:
+    content: void Stop()
+    content.vb: Sub [Stop]()
+  overload: SilverCraft.CSCore.SoundOut.ISoundOut.Stop*
+- uid: SilverCraft.CSCore.SoundOut.ISoundOut.Initialize(SilverCraft.CSCore.IWaveSource)
+  commentId: M:SilverCraft.CSCore.SoundOut.ISoundOut.Initialize(SilverCraft.CSCore.IWaveSource)
+  id: Initialize(SilverCraft.CSCore.IWaveSource)
+  parent: SilverCraft.CSCore.SoundOut.ISoundOut
+  langs:
+  - csharp
+  - vb
+  name: Initialize(IWaveSource)
+  nameWithType: ISoundOut.Initialize(IWaveSource)
+  fullName: SilverCraft.CSCore.SoundOut.ISoundOut.Initialize(SilverCraft.CSCore.IWaveSource)
+  type: Method
+  source:
+    remote:
+      path: SilverCraft.CSCore/SoundOut/ISoundOut.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: Initialize
+    path: ../SilverCraft.CSCore/SoundOut/ISoundOut.cs
+    startLine: 33
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.SoundOut
+  summary: Initializes the <xref href="SilverCraft.CSCore.SoundOut.ISoundOut" data-throw-if-not-resolved="false"></xref> for playing a <code class="paramref">source</code>.
+  example: []
+  syntax:
+    content: void Initialize(IWaveSource source)
+    parameters:
+    - id: source
+      type: SilverCraft.CSCore.IWaveSource
+      description: <xref href="SilverCraft.CSCore.IWaveSource" data-throw-if-not-resolved="false"></xref> which provides waveform-audio data to play.
+    content.vb: Sub Initialize(source As IWaveSource)
+  overload: SilverCraft.CSCore.SoundOut.ISoundOut.Initialize*
+- uid: SilverCraft.CSCore.SoundOut.ISoundOut.Volume
+  commentId: P:SilverCraft.CSCore.SoundOut.ISoundOut.Volume
+  id: Volume
+  parent: SilverCraft.CSCore.SoundOut.ISoundOut
+  langs:
+  - csharp
+  - vb
+  name: Volume
+  nameWithType: ISoundOut.Volume
+  fullName: SilverCraft.CSCore.SoundOut.ISoundOut.Volume
+  type: Property
+  source:
+    remote:
+      path: SilverCraft.CSCore/SoundOut/ISoundOut.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: Volume
+    path: ../SilverCraft.CSCore/SoundOut/ISoundOut.cs
+    startLine: 38
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.SoundOut
+  summary: Gets or sets the volume of the playback. The value of this property must be within the range from 0.0 to 1.0 where 0.0 equals 0% (muted) and 1.0 equals 100%.
+  example: []
+  syntax:
+    content: float Volume { get; set; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Property Volume As Single
+  overload: SilverCraft.CSCore.SoundOut.ISoundOut.Volume*
+- uid: SilverCraft.CSCore.SoundOut.ISoundOut.WaveSource
+  commentId: P:SilverCraft.CSCore.SoundOut.ISoundOut.WaveSource
+  id: WaveSource
+  parent: SilverCraft.CSCore.SoundOut.ISoundOut
+  langs:
+  - csharp
+  - vb
+  name: WaveSource
+  nameWithType: ISoundOut.WaveSource
+  fullName: SilverCraft.CSCore.SoundOut.ISoundOut.WaveSource
+  type: Property
+  source:
+    remote:
+      path: SilverCraft.CSCore/SoundOut/ISoundOut.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: WaveSource
+    path: ../SilverCraft.CSCore/SoundOut/ISoundOut.cs
+    startLine: 43
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.SoundOut
+  summary: Gets the <xref href="SilverCraft.CSCore.IWaveSource" data-throw-if-not-resolved="false"></xref> which provides the waveform-audio data and was used to <xref href="SilverCraft.CSCore.SoundOut.ISoundOut.Initialize(SilverCraft.CSCore.IWaveSource)" data-throw-if-not-resolved="false"></xref> the <xref href="SilverCraft.CSCore.SoundOut.ISoundOut" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: IWaveSource WaveSource { get; }
+    parameters: []
+    return:
+      type: SilverCraft.CSCore.IWaveSource
+    content.vb: ReadOnly Property WaveSource As IWaveSource
+  overload: SilverCraft.CSCore.SoundOut.ISoundOut.WaveSource*
+- uid: SilverCraft.CSCore.SoundOut.ISoundOut.PlaybackState
+  commentId: P:SilverCraft.CSCore.SoundOut.ISoundOut.PlaybackState
+  id: PlaybackState
+  parent: SilverCraft.CSCore.SoundOut.ISoundOut
+  langs:
+  - csharp
+  - vb
+  name: PlaybackState
+  nameWithType: ISoundOut.PlaybackState
+  fullName: SilverCraft.CSCore.SoundOut.ISoundOut.PlaybackState
+  type: Property
+  source:
+    remote:
+      path: SilverCraft.CSCore/SoundOut/ISoundOut.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: PlaybackState
+    path: ../SilverCraft.CSCore/SoundOut/ISoundOut.cs
+    startLine: 48
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.SoundOut
+  summary: Gets the <xref href="SilverCraft.CSCore.SoundOut.PlaybackState" data-throw-if-not-resolved="false"></xref> of the <xref href="SilverCraft.CSCore.SoundOut.ISoundOut" data-throw-if-not-resolved="false"></xref>. The playback state indicates whether the playback is currently playing, paused or stopped.
+  example: []
+  syntax:
+    content: PlaybackState PlaybackState { get; }
+    parameters: []
+    return:
+      type: SilverCraft.CSCore.SoundOut.PlaybackState
+    content.vb: ReadOnly Property PlaybackState As PlaybackState
+  overload: SilverCraft.CSCore.SoundOut.ISoundOut.PlaybackState*
+- uid: SilverCraft.CSCore.SoundOut.ISoundOut.Stopped
+  commentId: E:SilverCraft.CSCore.SoundOut.ISoundOut.Stopped
+  id: Stopped
+  parent: SilverCraft.CSCore.SoundOut.ISoundOut
+  langs:
+  - csharp
+  - vb
+  name: Stopped
+  nameWithType: ISoundOut.Stopped
+  fullName: SilverCraft.CSCore.SoundOut.ISoundOut.Stopped
+  type: Event
+  source:
+    remote:
+      path: SilverCraft.CSCore/SoundOut/ISoundOut.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: Stopped
+    path: ../SilverCraft.CSCore/SoundOut/ISoundOut.cs
+    startLine: 53
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.SoundOut
+  summary: Occurs when the playback stops.
+  example: []
+  syntax:
+    content: event EventHandler<PlaybackStoppedEventArgs> Stopped
+    return:
+      type: System.EventHandler{SilverCraft.CSCore.SoundOut.PlaybackStoppedEventArgs}
+    content.vb: Event Stopped As EventHandler(Of PlaybackStoppedEventArgs)
+references:
+- uid: SilverCraft.CSCore.SoundOut
+  commentId: N:SilverCraft.CSCore.SoundOut
+  href: SilverCraft.html
+  name: SilverCraft.CSCore.SoundOut
+  nameWithType: SilverCraft.CSCore.SoundOut
+  fullName: SilverCraft.CSCore.SoundOut
+  spec.csharp:
+  - uid: SilverCraft
+    name: SilverCraft
+    href: SilverCraft.html
+  - name: .
+  - uid: SilverCraft.CSCore
+    name: CSCore
+    href: SilverCraft.CSCore.html
+  - name: .
+  - uid: SilverCraft.CSCore.SoundOut
+    name: SoundOut
+    href: SilverCraft.CSCore.SoundOut.html
+  spec.vb:
+  - uid: SilverCraft
+    name: SilverCraft
+    href: SilverCraft.html
+  - name: .
+  - uid: SilverCraft.CSCore
+    name: CSCore
+    href: SilverCraft.CSCore.html
+  - name: .
+  - uid: SilverCraft.CSCore.SoundOut
+    name: SoundOut
+    href: SilverCraft.CSCore.SoundOut.html
+- uid: System.IDisposable.Dispose
+  commentId: M:System.IDisposable.Dispose
+  parent: System.IDisposable
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.idisposable.dispose
+  name: Dispose()
+  nameWithType: IDisposable.Dispose()
+  fullName: System.IDisposable.Dispose()
+  spec.csharp:
+  - uid: System.IDisposable.Dispose
+    name: Dispose
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.idisposable.dispose
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.IDisposable.Dispose
+    name: Dispose
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.idisposable.dispose
+  - name: (
+  - name: )
+- uid: SilverCraft.CSCore.SoundOut.ISoundOut.SilverCraft.CSCore.Extensions.WaitForStopped
+  commentId: M:SilverCraft.CSCore.Extensions.WaitForStopped(SilverCraft.CSCore.SoundOut.ISoundOut)
+  parent: SilverCraft.CSCore.Extensions
+  definition: SilverCraft.CSCore.Extensions.WaitForStopped(SilverCraft.CSCore.SoundOut.ISoundOut)
+  href: SilverCraft.CSCore.Extensions.html#SilverCraft_CSCore_Extensions_WaitForStopped_SilverCraft_CSCore_SoundOut_ISoundOut_
+  name: WaitForStopped(ISoundOut)
+  nameWithType: Extensions.WaitForStopped(ISoundOut)
+  fullName: SilverCraft.CSCore.Extensions.WaitForStopped(SilverCraft.CSCore.SoundOut.ISoundOut)
+  spec.csharp:
+  - uid: SilverCraft.CSCore.Extensions.WaitForStopped(SilverCraft.CSCore.SoundOut.ISoundOut)
+    name: WaitForStopped
+    href: SilverCraft.CSCore.Extensions.html#SilverCraft_CSCore_Extensions_WaitForStopped_SilverCraft_CSCore_SoundOut_ISoundOut_
+  - name: (
+  - uid: SilverCraft.CSCore.SoundOut.ISoundOut
+    name: ISoundOut
+    href: SilverCraft.CSCore.SoundOut.ISoundOut.html
+  - name: )
+  spec.vb:
+  - uid: SilverCraft.CSCore.Extensions.WaitForStopped(SilverCraft.CSCore.SoundOut.ISoundOut)
+    name: WaitForStopped
+    href: SilverCraft.CSCore.Extensions.html#SilverCraft_CSCore_Extensions_WaitForStopped_SilverCraft_CSCore_SoundOut_ISoundOut_
+  - name: (
+  - uid: SilverCraft.CSCore.SoundOut.ISoundOut
+    name: ISoundOut
+    href: SilverCraft.CSCore.SoundOut.ISoundOut.html
+  - name: )
+- uid: SilverCraft.CSCore.SoundOut.ISoundOut.SilverCraft.CSCore.Extensions.WaitForStopped(System.Int32)
+  commentId: M:SilverCraft.CSCore.Extensions.WaitForStopped(SilverCraft.CSCore.SoundOut.ISoundOut,System.Int32)
+  parent: SilverCraft.CSCore.Extensions
+  definition: SilverCraft.CSCore.Extensions.WaitForStopped(SilverCraft.CSCore.SoundOut.ISoundOut,System.Int32)
+  href: SilverCraft.CSCore.Extensions.html#SilverCraft_CSCore_Extensions_WaitForStopped_SilverCraft_CSCore_SoundOut_ISoundOut_System_Int32_
+  name: WaitForStopped(ISoundOut, int)
+  nameWithType: Extensions.WaitForStopped(ISoundOut, int)
+  fullName: SilverCraft.CSCore.Extensions.WaitForStopped(SilverCraft.CSCore.SoundOut.ISoundOut, int)
+  nameWithType.vb: Extensions.WaitForStopped(ISoundOut, Integer)
+  fullName.vb: SilverCraft.CSCore.Extensions.WaitForStopped(SilverCraft.CSCore.SoundOut.ISoundOut, Integer)
+  name.vb: WaitForStopped(ISoundOut, Integer)
+  spec.csharp:
+  - uid: SilverCraft.CSCore.Extensions.WaitForStopped(SilverCraft.CSCore.SoundOut.ISoundOut,System.Int32)
+    name: WaitForStopped
+    href: SilverCraft.CSCore.Extensions.html#SilverCraft_CSCore_Extensions_WaitForStopped_SilverCraft_CSCore_SoundOut_ISoundOut_System_Int32_
+  - name: (
+  - uid: SilverCraft.CSCore.SoundOut.ISoundOut
+    name: ISoundOut
+    href: SilverCraft.CSCore.SoundOut.ISoundOut.html
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+  spec.vb:
+  - uid: SilverCraft.CSCore.Extensions.WaitForStopped(SilverCraft.CSCore.SoundOut.ISoundOut,System.Int32)
+    name: WaitForStopped
+    href: SilverCraft.CSCore.Extensions.html#SilverCraft_CSCore_Extensions_WaitForStopped_SilverCraft_CSCore_SoundOut_ISoundOut_System_Int32_
+  - name: (
+  - uid: SilverCraft.CSCore.SoundOut.ISoundOut
+    name: ISoundOut
+    href: SilverCraft.CSCore.SoundOut.ISoundOut.html
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: SilverCraft.CSCore.SoundOut.ISoundOut.SilverCraft.CSCore.FluentExtensions.Synchronized``2
+  commentId: M:SilverCraft.CSCore.FluentExtensions.Synchronized``2(``0)
+  parent: SilverCraft.CSCore.FluentExtensions
+  definition: SilverCraft.CSCore.FluentExtensions.Synchronized``2(``0)
+  href: SilverCraft.CSCore.FluentExtensions.html#SilverCraft_CSCore_FluentExtensions_Synchronized__2___0_
+  name: Synchronized<ISoundOut, T>(ISoundOut)
+  nameWithType: FluentExtensions.Synchronized<ISoundOut, T>(ISoundOut)
+  fullName: SilverCraft.CSCore.FluentExtensions.Synchronized<SilverCraft.CSCore.SoundOut.ISoundOut, T>(SilverCraft.CSCore.SoundOut.ISoundOut)
+  nameWithType.vb: FluentExtensions.Synchronized(Of ISoundOut, T)(ISoundOut)
+  fullName.vb: SilverCraft.CSCore.FluentExtensions.Synchronized(Of SilverCraft.CSCore.SoundOut.ISoundOut, T)(SilverCraft.CSCore.SoundOut.ISoundOut)
+  name.vb: Synchronized(Of ISoundOut, T)(ISoundOut)
+  spec.csharp:
+  - uid: SilverCraft.CSCore.FluentExtensions.Synchronized``2(SilverCraft.CSCore.SoundOut.ISoundOut)
+    name: Synchronized
+    href: SilverCraft.CSCore.FluentExtensions.html#SilverCraft_CSCore_FluentExtensions_Synchronized__2___0_
+  - name: <
+  - uid: SilverCraft.CSCore.SoundOut.ISoundOut
+    name: ISoundOut
+    href: SilverCraft.CSCore.SoundOut.ISoundOut.html
+  - name: ','
+  - name: " "
+  - name: T
+  - name: '>'
+  - name: (
+  - uid: SilverCraft.CSCore.SoundOut.ISoundOut
+    name: ISoundOut
+    href: SilverCraft.CSCore.SoundOut.ISoundOut.html
+  - name: )
+  spec.vb:
+  - uid: SilverCraft.CSCore.FluentExtensions.Synchronized``2(SilverCraft.CSCore.SoundOut.ISoundOut)
+    name: Synchronized
+    href: SilverCraft.CSCore.FluentExtensions.html#SilverCraft_CSCore_FluentExtensions_Synchronized__2___0_
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: SilverCraft.CSCore.SoundOut.ISoundOut
+    name: ISoundOut
+    href: SilverCraft.CSCore.SoundOut.ISoundOut.html
+  - name: ','
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: SilverCraft.CSCore.SoundOut.ISoundOut
+    name: ISoundOut
+    href: SilverCraft.CSCore.SoundOut.ISoundOut.html
+  - name: )
+- uid: System.IDisposable
+  commentId: T:System.IDisposable
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.idisposable
+  name: IDisposable
+  nameWithType: IDisposable
+  fullName: System.IDisposable
+- uid: SilverCraft.CSCore.Extensions.WaitForStopped(SilverCraft.CSCore.SoundOut.ISoundOut)
+  commentId: M:SilverCraft.CSCore.Extensions.WaitForStopped(SilverCraft.CSCore.SoundOut.ISoundOut)
+  href: SilverCraft.CSCore.Extensions.html#SilverCraft_CSCore_Extensions_WaitForStopped_SilverCraft_CSCore_SoundOut_ISoundOut_
+  name: WaitForStopped(ISoundOut)
+  nameWithType: Extensions.WaitForStopped(ISoundOut)
+  fullName: SilverCraft.CSCore.Extensions.WaitForStopped(SilverCraft.CSCore.SoundOut.ISoundOut)
+  spec.csharp:
+  - uid: SilverCraft.CSCore.Extensions.WaitForStopped(SilverCraft.CSCore.SoundOut.ISoundOut)
+    name: WaitForStopped
+    href: SilverCraft.CSCore.Extensions.html#SilverCraft_CSCore_Extensions_WaitForStopped_SilverCraft_CSCore_SoundOut_ISoundOut_
+  - name: (
+  - uid: SilverCraft.CSCore.SoundOut.ISoundOut
+    name: ISoundOut
+    href: SilverCraft.CSCore.SoundOut.ISoundOut.html
+  - name: )
+  spec.vb:
+  - uid: SilverCraft.CSCore.Extensions.WaitForStopped(SilverCraft.CSCore.SoundOut.ISoundOut)
+    name: WaitForStopped
+    href: SilverCraft.CSCore.Extensions.html#SilverCraft_CSCore_Extensions_WaitForStopped_SilverCraft_CSCore_SoundOut_ISoundOut_
+  - name: (
+  - uid: SilverCraft.CSCore.SoundOut.ISoundOut
+    name: ISoundOut
+    href: SilverCraft.CSCore.SoundOut.ISoundOut.html
+  - name: )
+- uid: SilverCraft.CSCore.Extensions
+  commentId: T:SilverCraft.CSCore.Extensions
+  parent: SilverCraft.CSCore
+  href: SilverCraft.CSCore.Extensions.html
+  name: Extensions
+  nameWithType: Extensions
+  fullName: SilverCraft.CSCore.Extensions
+- uid: SilverCraft.CSCore.Extensions.WaitForStopped(SilverCraft.CSCore.SoundOut.ISoundOut,System.Int32)
+  commentId: M:SilverCraft.CSCore.Extensions.WaitForStopped(SilverCraft.CSCore.SoundOut.ISoundOut,System.Int32)
+  isExternal: true
+  href: SilverCraft.CSCore.Extensions.html#SilverCraft_CSCore_Extensions_WaitForStopped_SilverCraft_CSCore_SoundOut_ISoundOut_System_Int32_
+  name: WaitForStopped(ISoundOut, int)
+  nameWithType: Extensions.WaitForStopped(ISoundOut, int)
+  fullName: SilverCraft.CSCore.Extensions.WaitForStopped(SilverCraft.CSCore.SoundOut.ISoundOut, int)
+  nameWithType.vb: Extensions.WaitForStopped(ISoundOut, Integer)
+  fullName.vb: SilverCraft.CSCore.Extensions.WaitForStopped(SilverCraft.CSCore.SoundOut.ISoundOut, Integer)
+  name.vb: WaitForStopped(ISoundOut, Integer)
+  spec.csharp:
+  - uid: SilverCraft.CSCore.Extensions.WaitForStopped(SilverCraft.CSCore.SoundOut.ISoundOut,System.Int32)
+    name: WaitForStopped
+    href: SilverCraft.CSCore.Extensions.html#SilverCraft_CSCore_Extensions_WaitForStopped_SilverCraft_CSCore_SoundOut_ISoundOut_System_Int32_
+  - name: (
+  - uid: SilverCraft.CSCore.SoundOut.ISoundOut
+    name: ISoundOut
+    href: SilverCraft.CSCore.SoundOut.ISoundOut.html
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+  spec.vb:
+  - uid: SilverCraft.CSCore.Extensions.WaitForStopped(SilverCraft.CSCore.SoundOut.ISoundOut,System.Int32)
+    name: WaitForStopped
+    href: SilverCraft.CSCore.Extensions.html#SilverCraft_CSCore_Extensions_WaitForStopped_SilverCraft_CSCore_SoundOut_ISoundOut_System_Int32_
+  - name: (
+  - uid: SilverCraft.CSCore.SoundOut.ISoundOut
+    name: ISoundOut
+    href: SilverCraft.CSCore.SoundOut.ISoundOut.html
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: SilverCraft.CSCore.FluentExtensions.Synchronized``2(``0)
+  commentId: M:SilverCraft.CSCore.FluentExtensions.Synchronized``2(``0)
+  href: SilverCraft.CSCore.FluentExtensions.html#SilverCraft_CSCore_FluentExtensions_Synchronized__2___0_
+  name: Synchronized<TAudioSource, T>(TAudioSource)
+  nameWithType: FluentExtensions.Synchronized<TAudioSource, T>(TAudioSource)
+  fullName: SilverCraft.CSCore.FluentExtensions.Synchronized<TAudioSource, T>(TAudioSource)
+  nameWithType.vb: FluentExtensions.Synchronized(Of TAudioSource, T)(TAudioSource)
+  fullName.vb: SilverCraft.CSCore.FluentExtensions.Synchronized(Of TAudioSource, T)(TAudioSource)
+  name.vb: Synchronized(Of TAudioSource, T)(TAudioSource)
+  spec.csharp:
+  - uid: SilverCraft.CSCore.FluentExtensions.Synchronized``2(``0)
+    name: Synchronized
+    href: SilverCraft.CSCore.FluentExtensions.html#SilverCraft_CSCore_FluentExtensions_Synchronized__2___0_
+  - name: <
+  - name: TAudioSource
+  - name: ','
+  - name: " "
+  - name: T
+  - name: '>'
+  - name: (
+  - name: TAudioSource
+  - name: )
+  spec.vb:
+  - uid: SilverCraft.CSCore.FluentExtensions.Synchronized``2(``0)
+    name: Synchronized
+    href: SilverCraft.CSCore.FluentExtensions.html#SilverCraft_CSCore_FluentExtensions_Synchronized__2___0_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TAudioSource
+  - name: ','
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - name: TAudioSource
+  - name: )
+- uid: SilverCraft.CSCore.FluentExtensions
+  commentId: T:SilverCraft.CSCore.FluentExtensions
+  parent: SilverCraft.CSCore
+  href: SilverCraft.CSCore.FluentExtensions.html
+  name: FluentExtensions
+  nameWithType: FluentExtensions
+  fullName: SilverCraft.CSCore.FluentExtensions
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: SilverCraft.CSCore
+  commentId: N:SilverCraft.CSCore
+  href: SilverCraft.html
+  name: SilverCraft.CSCore
+  nameWithType: SilverCraft.CSCore
+  fullName: SilverCraft.CSCore
+  spec.csharp:
+  - uid: SilverCraft
+    name: SilverCraft
+    href: SilverCraft.html
+  - name: .
+  - uid: SilverCraft.CSCore
+    name: CSCore
+    href: SilverCraft.CSCore.html
+  spec.vb:
+  - uid: SilverCraft
+    name: SilverCraft
+    href: SilverCraft.html
+  - name: .
+  - uid: SilverCraft.CSCore
+    name: CSCore
+    href: SilverCraft.CSCore.html
+- uid: SilverCraft.CSCore.SoundOut.ISoundOut.Play*
+  commentId: Overload:SilverCraft.CSCore.SoundOut.ISoundOut.Play
+  href: SilverCraft.CSCore.SoundOut.ISoundOut.html#SilverCraft_CSCore_SoundOut_ISoundOut_Play
+  name: Play
+  nameWithType: ISoundOut.Play
+  fullName: SilverCraft.CSCore.SoundOut.ISoundOut.Play
+- uid: SilverCraft.CSCore.SoundOut.ISoundOut.Pause*
+  commentId: Overload:SilverCraft.CSCore.SoundOut.ISoundOut.Pause
+  href: SilverCraft.CSCore.SoundOut.ISoundOut.html#SilverCraft_CSCore_SoundOut_ISoundOut_Pause
+  name: Pause
+  nameWithType: ISoundOut.Pause
+  fullName: SilverCraft.CSCore.SoundOut.ISoundOut.Pause
+- uid: SilverCraft.CSCore.SoundOut.ISoundOut.Resume*
+  commentId: Overload:SilverCraft.CSCore.SoundOut.ISoundOut.Resume
+  href: SilverCraft.CSCore.SoundOut.ISoundOut.html#SilverCraft_CSCore_SoundOut_ISoundOut_Resume
+  name: Resume
+  nameWithType: ISoundOut.Resume
+  fullName: SilverCraft.CSCore.SoundOut.ISoundOut.Resume
+- uid: SilverCraft.CSCore.SoundOut.ISoundOut.Stop*
+  commentId: Overload:SilverCraft.CSCore.SoundOut.ISoundOut.Stop
+  href: SilverCraft.CSCore.SoundOut.ISoundOut.html#SilverCraft_CSCore_SoundOut_ISoundOut_Stop
+  name: Stop
+  nameWithType: ISoundOut.Stop
+  fullName: SilverCraft.CSCore.SoundOut.ISoundOut.Stop
+- uid: SilverCraft.CSCore.SoundOut.ISoundOut
+  commentId: T:SilverCraft.CSCore.SoundOut.ISoundOut
+  parent: SilverCraft.CSCore.SoundOut
+  href: SilverCraft.CSCore.SoundOut.ISoundOut.html
+  name: ISoundOut
+  nameWithType: ISoundOut
+  fullName: SilverCraft.CSCore.SoundOut.ISoundOut
+- uid: SilverCraft.CSCore.IWaveSource
+  commentId: T:SilverCraft.CSCore.IWaveSource
+  parent: SilverCraft.CSCore
+  href: SilverCraft.CSCore.IWaveSource.html
+  name: IWaveSource
+  nameWithType: IWaveSource
+  fullName: SilverCraft.CSCore.IWaveSource
+- uid: SilverCraft.CSCore.SoundOut.ISoundOut.Initialize*
+  commentId: Overload:SilverCraft.CSCore.SoundOut.ISoundOut.Initialize
+  href: SilverCraft.CSCore.SoundOut.ISoundOut.html#SilverCraft_CSCore_SoundOut_ISoundOut_Initialize_SilverCraft_CSCore_IWaveSource_
+  name: Initialize
+  nameWithType: ISoundOut.Initialize
+  fullName: SilverCraft.CSCore.SoundOut.ISoundOut.Initialize
+- uid: SilverCraft.CSCore.SoundOut.ISoundOut.Volume*
+  commentId: Overload:SilverCraft.CSCore.SoundOut.ISoundOut.Volume
+  href: SilverCraft.CSCore.SoundOut.ISoundOut.html#SilverCraft_CSCore_SoundOut_ISoundOut_Volume
+  name: Volume
+  nameWithType: ISoundOut.Volume
+  fullName: SilverCraft.CSCore.SoundOut.ISoundOut.Volume
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.single
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single
+- uid: SilverCraft.CSCore.SoundOut.ISoundOut.Initialize(SilverCraft.CSCore.IWaveSource)
+  commentId: M:SilverCraft.CSCore.SoundOut.ISoundOut.Initialize(SilverCraft.CSCore.IWaveSource)
+  parent: SilverCraft.CSCore.SoundOut.ISoundOut
+  href: SilverCraft.CSCore.SoundOut.ISoundOut.html#SilverCraft_CSCore_SoundOut_ISoundOut_Initialize_SilverCraft_CSCore_IWaveSource_
+  name: Initialize(IWaveSource)
+  nameWithType: ISoundOut.Initialize(IWaveSource)
+  fullName: SilverCraft.CSCore.SoundOut.ISoundOut.Initialize(SilverCraft.CSCore.IWaveSource)
+  spec.csharp:
+  - uid: SilverCraft.CSCore.SoundOut.ISoundOut.Initialize(SilverCraft.CSCore.IWaveSource)
+    name: Initialize
+    href: SilverCraft.CSCore.SoundOut.ISoundOut.html#SilverCraft_CSCore_SoundOut_ISoundOut_Initialize_SilverCraft_CSCore_IWaveSource_
+  - name: (
+  - uid: SilverCraft.CSCore.IWaveSource
+    name: IWaveSource
+    href: SilverCraft.CSCore.IWaveSource.html
+  - name: )
+  spec.vb:
+  - uid: SilverCraft.CSCore.SoundOut.ISoundOut.Initialize(SilverCraft.CSCore.IWaveSource)
+    name: Initialize
+    href: SilverCraft.CSCore.SoundOut.ISoundOut.html#SilverCraft_CSCore_SoundOut_ISoundOut_Initialize_SilverCraft_CSCore_IWaveSource_
+  - name: (
+  - uid: SilverCraft.CSCore.IWaveSource
+    name: IWaveSource
+    href: SilverCraft.CSCore.IWaveSource.html
+  - name: )
+- uid: SilverCraft.CSCore.SoundOut.ISoundOut.WaveSource*
+  commentId: Overload:SilverCraft.CSCore.SoundOut.ISoundOut.WaveSource
+  href: SilverCraft.CSCore.SoundOut.ISoundOut.html#SilverCraft_CSCore_SoundOut_ISoundOut_WaveSource
+  name: WaveSource
+  nameWithType: ISoundOut.WaveSource
+  fullName: SilverCraft.CSCore.SoundOut.ISoundOut.WaveSource
+- uid: SilverCraft.CSCore.SoundOut.PlaybackState
+  commentId: T:SilverCraft.CSCore.SoundOut.PlaybackState
+  parent: SilverCraft.CSCore.SoundOut
+  href: SilverCraft.CSCore.SoundOut.PlaybackState.html
+  name: PlaybackState
+  nameWithType: PlaybackState
+  fullName: SilverCraft.CSCore.SoundOut.PlaybackState
+- uid: SilverCraft.CSCore.SoundOut.ISoundOut.PlaybackState*
+  commentId: Overload:SilverCraft.CSCore.SoundOut.ISoundOut.PlaybackState
+  href: SilverCraft.CSCore.SoundOut.ISoundOut.html#SilverCraft_CSCore_SoundOut_ISoundOut_PlaybackState
+  name: PlaybackState
+  nameWithType: ISoundOut.PlaybackState
+  fullName: SilverCraft.CSCore.SoundOut.ISoundOut.PlaybackState
+- uid: System.EventHandler{SilverCraft.CSCore.SoundOut.PlaybackStoppedEventArgs}
+  commentId: T:System.EventHandler{SilverCraft.CSCore.SoundOut.PlaybackStoppedEventArgs}
+  parent: System
+  definition: System.EventHandler`1
+  href: https://learn.microsoft.com/dotnet/api/system.eventhandler-1
+  name: EventHandler<PlaybackStoppedEventArgs>
+  nameWithType: EventHandler<PlaybackStoppedEventArgs>
+  fullName: System.EventHandler<SilverCraft.CSCore.SoundOut.PlaybackStoppedEventArgs>
+  nameWithType.vb: EventHandler(Of PlaybackStoppedEventArgs)
+  fullName.vb: System.EventHandler(Of SilverCraft.CSCore.SoundOut.PlaybackStoppedEventArgs)
+  name.vb: EventHandler(Of PlaybackStoppedEventArgs)
+  spec.csharp:
+  - uid: System.EventHandler`1
+    name: EventHandler
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.eventhandler-1
+  - name: <
+  - uid: SilverCraft.CSCore.SoundOut.PlaybackStoppedEventArgs
+    name: PlaybackStoppedEventArgs
+    href: SilverCraft.CSCore.SoundOut.PlaybackStoppedEventArgs.html
+  - name: '>'
+  spec.vb:
+  - uid: System.EventHandler`1
+    name: EventHandler
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.eventhandler-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: SilverCraft.CSCore.SoundOut.PlaybackStoppedEventArgs
+    name: PlaybackStoppedEventArgs
+    href: SilverCraft.CSCore.SoundOut.PlaybackStoppedEventArgs.html
+  - name: )
+- uid: System.EventHandler`1
+  commentId: T:System.EventHandler`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.eventhandler-1
+  name: EventHandler<TEventArgs>
+  nameWithType: EventHandler<TEventArgs>
+  fullName: System.EventHandler<TEventArgs>
+  nameWithType.vb: EventHandler(Of TEventArgs)
+  fullName.vb: System.EventHandler(Of TEventArgs)
+  name.vb: EventHandler(Of TEventArgs)
+  spec.csharp:
+  - uid: System.EventHandler`1
+    name: EventHandler
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.eventhandler-1
+  - name: <
+  - name: TEventArgs
+  - name: '>'
+  spec.vb:
+  - uid: System.EventHandler`1
+    name: EventHandler
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.eventhandler-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TEventArgs
+  - name: )

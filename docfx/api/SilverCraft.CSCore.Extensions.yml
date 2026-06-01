@@ -1,0 +1,1393 @@
+### YamlMime:ManagedReference
+items:
+- uid: SilverCraft.CSCore.Extensions
+  commentId: T:SilverCraft.CSCore.Extensions
+  id: Extensions
+  parent: SilverCraft.CSCore
+  children:
+  - SilverCraft.CSCore.Extensions.CheckBuffer``1(``0[],System.Int64,System.Boolean)
+  - SilverCraft.CSCore.Extensions.GetLength(SilverCraft.CSCore.IAudioSource)
+  - SilverCraft.CSCore.Extensions.GetMilliseconds(SilverCraft.CSCore.IAudioSource,System.Int64)
+  - SilverCraft.CSCore.Extensions.GetPosition(SilverCraft.CSCore.IAudioSource)
+  - SilverCraft.CSCore.Extensions.GetRawElements(SilverCraft.CSCore.IAudioSource,System.Int64)
+  - SilverCraft.CSCore.Extensions.GetRawElements(SilverCraft.CSCore.IAudioSource,System.TimeSpan)
+  - SilverCraft.CSCore.Extensions.GetTime(SilverCraft.CSCore.IAudioSource,System.Int64)
+  - SilverCraft.CSCore.Extensions.SetPosition(SilverCraft.CSCore.IAudioSource,System.TimeSpan)
+  - SilverCraft.CSCore.Extensions.WaitForStopped(SilverCraft.CSCore.SoundOut.ISoundOut)
+  - SilverCraft.CSCore.Extensions.WaitForStopped(SilverCraft.CSCore.SoundOut.ISoundOut,System.Int32)
+  - SilverCraft.CSCore.Extensions.WriteToFile(SilverCraft.CSCore.IWaveSource,System.String)
+  - SilverCraft.CSCore.Extensions.WriteToStream(SilverCraft.CSCore.IWaveSource,System.IO.Stream)
+  - SilverCraft.CSCore.Extensions.WriteToWaveStream(SilverCraft.CSCore.IWaveSource,System.IO.Stream)
+  langs:
+  - csharp
+  - vb
+  name: Extensions
+  nameWithType: Extensions
+  fullName: SilverCraft.CSCore.Extensions
+  type: Class
+  source:
+    remote:
+      path: SilverCraft.CSCore/Extensions.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: Extensions
+    path: ../SilverCraft.CSCore/Extensions.cs
+    startLine: 13
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore
+  summary: Provides a few basic extensions.
+  example: []
+  syntax:
+    content: public static class Extensions
+    content.vb: Public Module Extensions
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: SilverCraft.CSCore.Extensions.GetLength(SilverCraft.CSCore.IAudioSource)
+  commentId: M:SilverCraft.CSCore.Extensions.GetLength(SilverCraft.CSCore.IAudioSource)
+  id: GetLength(SilverCraft.CSCore.IAudioSource)
+  isExtensionMethod: true
+  parent: SilverCraft.CSCore.Extensions
+  langs:
+  - csharp
+  - vb
+  name: GetLength(IAudioSource)
+  nameWithType: Extensions.GetLength(IAudioSource)
+  fullName: SilverCraft.CSCore.Extensions.GetLength(SilverCraft.CSCore.IAudioSource)
+  type: Method
+  source:
+    remote:
+      path: SilverCraft.CSCore/Extensions.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: GetLength
+    path: ../SilverCraft.CSCore/Extensions.cs
+    startLine: 20
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore
+  summary: Gets the length of a <xref href="SilverCraft.CSCore.IAudioSource" data-throw-if-not-resolved="false"></xref> as a <xref href="System.TimeSpan" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public static TimeSpan GetLength(this IAudioSource source)
+    parameters:
+    - id: source
+      type: SilverCraft.CSCore.IAudioSource
+      description: The source to get the length for.
+    return:
+      type: System.TimeSpan
+      description: The length of the specified <code class="paramref">source</code> as a <xref href="System.TimeSpan" data-throw-if-not-resolved="false"></xref> value.
+    content.vb: Public Shared Function GetLength(source As IAudioSource) As TimeSpan
+  overload: SilverCraft.CSCore.Extensions.GetLength*
+- uid: SilverCraft.CSCore.Extensions.GetPosition(SilverCraft.CSCore.IAudioSource)
+  commentId: M:SilverCraft.CSCore.Extensions.GetPosition(SilverCraft.CSCore.IAudioSource)
+  id: GetPosition(SilverCraft.CSCore.IAudioSource)
+  isExtensionMethod: true
+  parent: SilverCraft.CSCore.Extensions
+  langs:
+  - csharp
+  - vb
+  name: GetPosition(IAudioSource)
+  nameWithType: Extensions.GetPosition(IAudioSource)
+  fullName: SilverCraft.CSCore.Extensions.GetPosition(SilverCraft.CSCore.IAudioSource)
+  type: Method
+  source:
+    remote:
+      path: SilverCraft.CSCore/Extensions.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: GetPosition
+    path: ../SilverCraft.CSCore/Extensions.cs
+    startLine: 33
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore
+  summary: Gets the position of a <xref href="SilverCraft.CSCore.IAudioSource" data-throw-if-not-resolved="false"></xref> as a <xref href="System.TimeSpan" data-throw-if-not-resolved="false"></xref> value.
+  remarks: >-
+    The source must support seeking to get or set the position. 
+        Use the <xref href="SilverCraft.CSCore.IAudioSource.CanSeek" data-throw-if-not-resolved="false"></xref> property to determine whether the stream supports seeking.
+        Otherwise a call to this method may result in an exception.
+  example: []
+  syntax:
+    content: public static TimeSpan GetPosition(this IAudioSource source)
+    parameters:
+    - id: source
+      type: SilverCraft.CSCore.IAudioSource
+      description: The source to get the position of.
+    return:
+      type: System.TimeSpan
+      description: The position of the specified <code class="paramref">source</code> as a <xref href="System.TimeSpan" data-throw-if-not-resolved="false"></xref> value.
+    content.vb: Public Shared Function GetPosition(source As IAudioSource) As TimeSpan
+  overload: SilverCraft.CSCore.Extensions.GetPosition*
+- uid: SilverCraft.CSCore.Extensions.SetPosition(SilverCraft.CSCore.IAudioSource,System.TimeSpan)
+  commentId: M:SilverCraft.CSCore.Extensions.SetPosition(SilverCraft.CSCore.IAudioSource,System.TimeSpan)
+  id: SetPosition(SilverCraft.CSCore.IAudioSource,System.TimeSpan)
+  isExtensionMethod: true
+  parent: SilverCraft.CSCore.Extensions
+  langs:
+  - csharp
+  - vb
+  name: SetPosition(IAudioSource, TimeSpan)
+  nameWithType: Extensions.SetPosition(IAudioSource, TimeSpan)
+  fullName: SilverCraft.CSCore.Extensions.SetPosition(SilverCraft.CSCore.IAudioSource, System.TimeSpan)
+  type: Method
+  source:
+    remote:
+      path: SilverCraft.CSCore/Extensions.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: SetPosition
+    path: ../SilverCraft.CSCore/Extensions.cs
+    startLine: 48
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore
+  summary: Sets the position of a <xref href="SilverCraft.CSCore.IAudioSource" data-throw-if-not-resolved="false"></xref> as a <xref href="System.TimeSpan" data-throw-if-not-resolved="false"></xref> value.
+  remarks: >-
+    The source must support seeking to get or set the position. 
+
+    Use the <xref href="SilverCraft.CSCore.IAudioSource.CanSeek" data-throw-if-not-resolved="false"></xref> property to determine whether the stream supports seeking.
+
+    Otherwise a call to this method may result in an exception.
+  example: []
+  syntax:
+    content: public static void SetPosition(this IAudioSource source, TimeSpan position)
+    parameters:
+    - id: source
+      type: SilverCraft.CSCore.IAudioSource
+      description: The source to set the new position for.
+    - id: position
+      type: System.TimeSpan
+      description: The new position as a <xref href="System.TimeSpan" data-throw-if-not-resolved="false"></xref> value.
+    content.vb: Public Shared Sub SetPosition(source As IAudioSource, position As TimeSpan)
+  overload: SilverCraft.CSCore.Extensions.SetPosition*
+- uid: SilverCraft.CSCore.Extensions.GetTime(SilverCraft.CSCore.IAudioSource,System.Int64)
+  commentId: M:SilverCraft.CSCore.Extensions.GetTime(SilverCraft.CSCore.IAudioSource,System.Int64)
+  id: GetTime(SilverCraft.CSCore.IAudioSource,System.Int64)
+  isExtensionMethod: true
+  parent: SilverCraft.CSCore.Extensions
+  langs:
+  - csharp
+  - vb
+  name: GetTime(IAudioSource, long)
+  nameWithType: Extensions.GetTime(IAudioSource, long)
+  fullName: SilverCraft.CSCore.Extensions.GetTime(SilverCraft.CSCore.IAudioSource, long)
+  type: Method
+  source:
+    remote:
+      path: SilverCraft.CSCore/Extensions.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: GetTime
+    path: ../SilverCraft.CSCore/Extensions.cs
+    startLine: 83
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore
+  summary: Converts a duration in raw elements to a <xref href="System.TimeSpan" data-throw-if-not-resolved="false"></xref> value. For more information about "raw elements" see remarks.
+  remarks: >-
+    The term "raw elements" describes the elements, an audio source uses. 
+
+    What type of unit an implementation of the <xref href="SilverCraft.CSCore.IAudioSource" data-throw-if-not-resolved="false"></xref> interface uses, depends on the implementation itself.
+
+    For example, a <xref href="SilverCraft.CSCore.IWaveSource" data-throw-if-not-resolved="false"></xref> uses bytes while a <xref href="SilverCraft.CSCore.ISampleSource" data-throw-if-not-resolved="false"></xref> uses samples. 
+
+    That means that a <xref href="SilverCraft.CSCore.IWaveSource" data-throw-if-not-resolved="false"></xref> provides its position, length,... in bytes 
+
+    while a <xref href="SilverCraft.CSCore.ISampleSource" data-throw-if-not-resolved="false"></xref> provides its position, length,... in samples.
+
+
+    <p></p>
+
+
+    To get the length or the position of a <xref href="SilverCraft.CSCore.IAudioSource" data-throw-if-not-resolved="false"></xref> as a <xref href="System.TimeSpan" data-throw-if-not-resolved="false"></xref> value, use the 
+
+    <xref href="SilverCraft.CSCore.Extensions.GetLength(SilverCraft.CSCore.IAudioSource)" data-throw-if-not-resolved="false"></xref> or the <xref href="SilverCraft.CSCore.Extensions.GetPosition(SilverCraft.CSCore.IAudioSource)" data-throw-if-not-resolved="false"></xref> property.
+
+
+    <p></p><p></p>
+
+
+    Internally this method uses the <xref href="SilverCraft.CSCore.TimeConverterFactory" data-throw-if-not-resolved="false"></xref> class.
+  example: []
+  syntax:
+    content: public static TimeSpan GetTime(this IAudioSource source, long elementCount)
+    parameters:
+    - id: source
+      type: SilverCraft.CSCore.IAudioSource
+      description: >-
+        The <xref href="SilverCraft.CSCore.IAudioSource" data-throw-if-not-resolved="false"></xref> instance which provides the <xref href="SilverCraft.CSCore.WaveFormat" data-throw-if-not-resolved="false"></xref> used 
+            to convert the duration in "raw elements" to a <xref href="System.TimeSpan" data-throw-if-not-resolved="false"></xref> value.
+    - id: elementCount
+      type: System.Int64
+      description: The duration in "raw elements" to convert to a <xref href="System.TimeSpan" data-throw-if-not-resolved="false"></xref> value.
+    return:
+      type: System.TimeSpan
+      description: The duration as a <xref href="System.TimeSpan" data-throw-if-not-resolved="false"></xref> value.
+    content.vb: Public Shared Function GetTime(source As IAudioSource, elementCount As Long) As TimeSpan
+  overload: SilverCraft.CSCore.Extensions.GetTime*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: >-
+      source
+
+      or
+
+      elementCount
+  nameWithType.vb: Extensions.GetTime(IAudioSource, Long)
+  fullName.vb: SilverCraft.CSCore.Extensions.GetTime(SilverCraft.CSCore.IAudioSource, Long)
+  name.vb: GetTime(IAudioSource, Long)
+- uid: SilverCraft.CSCore.Extensions.GetMilliseconds(SilverCraft.CSCore.IAudioSource,System.Int64)
+  commentId: M:SilverCraft.CSCore.Extensions.GetMilliseconds(SilverCraft.CSCore.IAudioSource,System.Int64)
+  id: GetMilliseconds(SilverCraft.CSCore.IAudioSource,System.Int64)
+  isExtensionMethod: true
+  parent: SilverCraft.CSCore.Extensions
+  langs:
+  - csharp
+  - vb
+  name: GetMilliseconds(IAudioSource, long)
+  nameWithType: Extensions.GetMilliseconds(IAudioSource, long)
+  fullName: SilverCraft.CSCore.Extensions.GetMilliseconds(SilverCraft.CSCore.IAudioSource, long)
+  type: Method
+  source:
+    remote:
+      path: SilverCraft.CSCore/Extensions.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: GetMilliseconds
+    path: ../SilverCraft.CSCore/Extensions.cs
+    startLine: 117
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore
+  summary: Converts a duration in raw elements to a duration in milliseconds. For more information about "raw elements" see remarks.
+  remarks: >-
+    The term "raw elements" describes the elements, an audio source uses. 
+
+    What type of unit an implementation of the <xref href="SilverCraft.CSCore.IAudioSource" data-throw-if-not-resolved="false"></xref> interface uses, depends on the implementation itself.
+
+    For example, a <xref href="SilverCraft.CSCore.IWaveSource" data-throw-if-not-resolved="false"></xref> uses bytes while a <xref href="SilverCraft.CSCore.ISampleSource" data-throw-if-not-resolved="false"></xref> uses samples. 
+
+    That means that a <xref href="SilverCraft.CSCore.IWaveSource" data-throw-if-not-resolved="false"></xref> provides its position, length,... in bytes 
+
+    while a <xref href="SilverCraft.CSCore.ISampleSource" data-throw-if-not-resolved="false"></xref> provides its position, length,... in samples.
+
+
+    <p></p>
+
+
+    To get the length or the position of a <xref href="SilverCraft.CSCore.IAudioSource" data-throw-if-not-resolved="false"></xref> as a <xref href="System.TimeSpan" data-throw-if-not-resolved="false"></xref> value, use the 
+
+    <xref href="SilverCraft.CSCore.Extensions.GetLength(SilverCraft.CSCore.IAudioSource)" data-throw-if-not-resolved="false"></xref> or the <xref href="SilverCraft.CSCore.Extensions.GetPosition(SilverCraft.CSCore.IAudioSource)" data-throw-if-not-resolved="false"></xref> property.
+
+
+    <p></p><p></p>
+
+
+    Internally this method uses the <xref href="SilverCraft.CSCore.TimeConverterFactory" data-throw-if-not-resolved="false"></xref> class.
+  example: []
+  syntax:
+    content: public static long GetMilliseconds(this IAudioSource source, long elementCount)
+    parameters:
+    - id: source
+      type: SilverCraft.CSCore.IAudioSource
+      description: >-
+        The <xref href="SilverCraft.CSCore.IAudioSource" data-throw-if-not-resolved="false"></xref> instance which provides the <xref href="SilverCraft.CSCore.WaveFormat" data-throw-if-not-resolved="false"></xref> used 
+            to convert the duration in "raw elements" to a duration in milliseconds.
+    - id: elementCount
+      type: System.Int64
+      description: The duration in "raw elements" to convert to duration in milliseconds.
+    return:
+      type: System.Int64
+      description: The duration in milliseconds.
+    content.vb: Public Shared Function GetMilliseconds(source As IAudioSource, elementCount As Long) As Long
+  overload: SilverCraft.CSCore.Extensions.GetMilliseconds*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: >-
+      source
+
+      or
+
+      elementCount
+  nameWithType.vb: Extensions.GetMilliseconds(IAudioSource, Long)
+  fullName.vb: SilverCraft.CSCore.Extensions.GetMilliseconds(SilverCraft.CSCore.IAudioSource, Long)
+  name.vb: GetMilliseconds(IAudioSource, Long)
+- uid: SilverCraft.CSCore.Extensions.GetRawElements(SilverCraft.CSCore.IAudioSource,System.TimeSpan)
+  commentId: M:SilverCraft.CSCore.Extensions.GetRawElements(SilverCraft.CSCore.IAudioSource,System.TimeSpan)
+  id: GetRawElements(SilverCraft.CSCore.IAudioSource,System.TimeSpan)
+  isExtensionMethod: true
+  parent: SilverCraft.CSCore.Extensions
+  langs:
+  - csharp
+  - vb
+  name: GetRawElements(IAudioSource, TimeSpan)
+  nameWithType: Extensions.GetRawElements(IAudioSource, TimeSpan)
+  fullName: SilverCraft.CSCore.Extensions.GetRawElements(SilverCraft.CSCore.IAudioSource, System.TimeSpan)
+  type: Method
+  source:
+    remote:
+      path: SilverCraft.CSCore/Extensions.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: GetRawElements
+    path: ../SilverCraft.CSCore/Extensions.cs
+    startLine: 147
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore
+  summary: Converts a duration as a <xref href="System.TimeSpan" data-throw-if-not-resolved="false"></xref> to a duration in "raw elements". For more information about "raw elements" see remarks.
+  remarks: >-
+    The term "raw elements" describes the elements, an audio source uses. 
+
+    What type of unit an implementation of the <xref href="SilverCraft.CSCore.IAudioSource" data-throw-if-not-resolved="false"></xref> interface uses, depends on the implementation itself.
+
+    For example, a <xref href="SilverCraft.CSCore.IWaveSource" data-throw-if-not-resolved="false"></xref> uses bytes while a <xref href="SilverCraft.CSCore.ISampleSource" data-throw-if-not-resolved="false"></xref> uses samples. 
+
+    That means that a <xref href="SilverCraft.CSCore.IWaveSource" data-throw-if-not-resolved="false"></xref> provides its position, length,... in bytes 
+
+    while a <xref href="SilverCraft.CSCore.ISampleSource" data-throw-if-not-resolved="false"></xref> provides its position, length,... in samples.
+
+
+    <p></p>
+
+
+    To get the length or the position of a <xref href="SilverCraft.CSCore.IAudioSource" data-throw-if-not-resolved="false"></xref> as a <xref href="System.TimeSpan" data-throw-if-not-resolved="false"></xref> value, use the 
+
+    <xref href="SilverCraft.CSCore.Extensions.GetLength(SilverCraft.CSCore.IAudioSource)" data-throw-if-not-resolved="false"></xref> or the <xref href="SilverCraft.CSCore.Extensions.GetPosition(SilverCraft.CSCore.IAudioSource)" data-throw-if-not-resolved="false"></xref> property.
+
+
+    <p></p><p></p>
+
+
+    Internally this method uses the <xref href="SilverCraft.CSCore.TimeConverterFactory" data-throw-if-not-resolved="false"></xref> class.
+  example: []
+  syntax:
+    content: public static long GetRawElements(this IAudioSource source, TimeSpan timespan)
+    parameters:
+    - id: source
+      type: SilverCraft.CSCore.IAudioSource
+      description: >-
+        <xref href="SilverCraft.CSCore.IWaveSource" data-throw-if-not-resolved="false"></xref> instance which provides the <xref href="SilverCraft.CSCore.WaveFormat" data-throw-if-not-resolved="false"></xref> used to convert
+
+        the duration as a <xref href="System.TimeSpan" data-throw-if-not-resolved="false"></xref> to a duration in "raw elements".
+    - id: timespan
+      type: System.TimeSpan
+      description: Duration as a <xref href="System.TimeSpan" data-throw-if-not-resolved="false"></xref> to convert to a duration in "raw elements".
+    return:
+      type: System.Int64
+      description: Duration in "raw elements".
+    content.vb: Public Shared Function GetRawElements(source As IAudioSource, timespan As TimeSpan) As Long
+  overload: SilverCraft.CSCore.Extensions.GetRawElements*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: source
+- uid: SilverCraft.CSCore.Extensions.GetRawElements(SilverCraft.CSCore.IAudioSource,System.Int64)
+  commentId: M:SilverCraft.CSCore.Extensions.GetRawElements(SilverCraft.CSCore.IAudioSource,System.Int64)
+  id: GetRawElements(SilverCraft.CSCore.IAudioSource,System.Int64)
+  isExtensionMethod: true
+  parent: SilverCraft.CSCore.Extensions
+  langs:
+  - csharp
+  - vb
+  name: GetRawElements(IAudioSource, long)
+  nameWithType: Extensions.GetRawElements(IAudioSource, long)
+  fullName: SilverCraft.CSCore.Extensions.GetRawElements(SilverCraft.CSCore.IAudioSource, long)
+  type: Method
+  source:
+    remote:
+      path: SilverCraft.CSCore/Extensions.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: GetRawElements
+    path: ../SilverCraft.CSCore/Extensions.cs
+    startLine: 178
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore
+  summary: Converts a duration in milliseconds to a duration in "raw elements". For more information about "raw elements" see remarks.
+  remarks: >-
+    The term "raw elements" describes the elements, an audio source uses. 
+
+    What type of unit an implementation of the <xref href="SilverCraft.CSCore.IAudioSource" data-throw-if-not-resolved="false"></xref> interface uses, depends on the implementation itself.
+
+    For example, a <xref href="SilverCraft.CSCore.IWaveSource" data-throw-if-not-resolved="false"></xref> uses bytes while a <xref href="SilverCraft.CSCore.ISampleSource" data-throw-if-not-resolved="false"></xref> uses samples. 
+
+    That means that a <xref href="SilverCraft.CSCore.IWaveSource" data-throw-if-not-resolved="false"></xref> provides its position, length,... in bytes 
+
+    while a <xref href="SilverCraft.CSCore.ISampleSource" data-throw-if-not-resolved="false"></xref> provides its position, length,... in samples.
+
+
+    <p></p>
+
+
+    To get the length or the position of a <xref href="SilverCraft.CSCore.IAudioSource" data-throw-if-not-resolved="false"></xref> as a <xref href="System.TimeSpan" data-throw-if-not-resolved="false"></xref> value, use the 
+
+    <xref href="SilverCraft.CSCore.Extensions.GetLength(SilverCraft.CSCore.IAudioSource)" data-throw-if-not-resolved="false"></xref> or the <xref href="SilverCraft.CSCore.Extensions.GetPosition(SilverCraft.CSCore.IAudioSource)" data-throw-if-not-resolved="false"></xref> property.
+
+
+    <p></p><p></p>
+
+
+    Internally this method uses the <xref href="SilverCraft.CSCore.TimeConverterFactory" data-throw-if-not-resolved="false"></xref> class.
+  example: []
+  syntax:
+    content: public static long GetRawElements(this IAudioSource source, long milliseconds)
+    parameters:
+    - id: source
+      type: SilverCraft.CSCore.IAudioSource
+      description: >-
+        <xref href="SilverCraft.CSCore.IWaveSource" data-throw-if-not-resolved="false"></xref> instance which provides the <xref href="SilverCraft.CSCore.WaveFormat" data-throw-if-not-resolved="false"></xref> used to convert
+            the duration in milliseconds to a duration in "raw elements".
+    - id: milliseconds
+      type: System.Int64
+      description: Duration in milliseconds to convert to a duration in "raw elements".
+    return:
+      type: System.Int64
+      description: Duration in "raw elements".
+    content.vb: Public Shared Function GetRawElements(source As IAudioSource, milliseconds As Long) As Long
+  overload: SilverCraft.CSCore.Extensions.GetRawElements*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: source
+  - type: System.ArgumentOutOfRangeException
+    commentId: T:System.ArgumentOutOfRangeException
+    description: milliseconds is less than zero.
+  nameWithType.vb: Extensions.GetRawElements(IAudioSource, Long)
+  fullName.vb: SilverCraft.CSCore.Extensions.GetRawElements(SilverCraft.CSCore.IAudioSource, Long)
+  name.vb: GetRawElements(IAudioSource, Long)
+- uid: SilverCraft.CSCore.Extensions.WriteToFile(SilverCraft.CSCore.IWaveSource,System.String)
+  commentId: M:SilverCraft.CSCore.Extensions.WriteToFile(SilverCraft.CSCore.IWaveSource,System.String)
+  id: WriteToFile(SilverCraft.CSCore.IWaveSource,System.String)
+  isExtensionMethod: true
+  parent: SilverCraft.CSCore.Extensions
+  langs:
+  - csharp
+  - vb
+  name: WriteToFile(IWaveSource, string)
+  nameWithType: Extensions.WriteToFile(IWaveSource, string)
+  fullName: SilverCraft.CSCore.Extensions.WriteToFile(SilverCraft.CSCore.IWaveSource, string)
+  type: Method
+  source:
+    remote:
+      path: SilverCraft.CSCore/Extensions.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: WriteToFile
+    path: ../SilverCraft.CSCore/Extensions.cs
+    startLine: 192
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore
+  summary: Creates a new file, writes all audio data of the <code class="paramref">source</code> to the file, and then closes the file. If the target file already exists, it is overwritten.
+  example: []
+  syntax:
+    content: public static void WriteToFile(this IWaveSource source, string filename)
+    parameters:
+    - id: source
+      type: SilverCraft.CSCore.IWaveSource
+      description: Source which provides the audio data to write to the file.
+    - id: filename
+      type: System.String
+      description: The file to write to.
+    content.vb: Public Shared Sub WriteToFile(source As IWaveSource, filename As String)
+  overload: SilverCraft.CSCore.Extensions.WriteToFile*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: source
+  nameWithType.vb: Extensions.WriteToFile(IWaveSource, String)
+  fullName.vb: SilverCraft.CSCore.Extensions.WriteToFile(SilverCraft.CSCore.IWaveSource, String)
+  name.vb: WriteToFile(IWaveSource, String)
+- uid: SilverCraft.CSCore.Extensions.WriteToWaveStream(SilverCraft.CSCore.IWaveSource,System.IO.Stream)
+  commentId: M:SilverCraft.CSCore.Extensions.WriteToWaveStream(SilverCraft.CSCore.IWaveSource,System.IO.Stream)
+  id: WriteToWaveStream(SilverCraft.CSCore.IWaveSource,System.IO.Stream)
+  isExtensionMethod: true
+  parent: SilverCraft.CSCore.Extensions
+  langs:
+  - csharp
+  - vb
+  name: WriteToWaveStream(IWaveSource, Stream)
+  nameWithType: Extensions.WriteToWaveStream(IWaveSource, Stream)
+  fullName: SilverCraft.CSCore.Extensions.WriteToWaveStream(SilverCraft.CSCore.IWaveSource, System.IO.Stream)
+  type: Method
+  source:
+    remote:
+      path: SilverCraft.CSCore/Extensions.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: WriteToWaveStream
+    path: ../SilverCraft.CSCore/Extensions.cs
+    startLine: 212
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore
+  summary: Writes all audio data of the <code class="paramref">source</code> to a wavestream (including a wav header).
+  example: []
+  syntax:
+    content: public static void WriteToWaveStream(this IWaveSource source, Stream stream)
+    parameters:
+    - id: source
+      type: SilverCraft.CSCore.IWaveSource
+      description: Source which provides the audio data to write to the <code class="paramref">stream</code>.
+    - id: stream
+      type: System.IO.Stream
+      description: <xref href="System.IO.Stream" data-throw-if-not-resolved="false"></xref> to store the audio data in.
+    content.vb: Public Shared Sub WriteToWaveStream(source As IWaveSource, stream As Stream)
+  overload: SilverCraft.CSCore.Extensions.WriteToWaveStream*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: >-
+      source
+
+      or
+
+      stream
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: Stream is not writeable.;stream
+- uid: SilverCraft.CSCore.Extensions.WriteToStream(SilverCraft.CSCore.IWaveSource,System.IO.Stream)
+  commentId: M:SilverCraft.CSCore.Extensions.WriteToStream(SilverCraft.CSCore.IWaveSource,System.IO.Stream)
+  id: WriteToStream(SilverCraft.CSCore.IWaveSource,System.IO.Stream)
+  isExtensionMethod: true
+  parent: SilverCraft.CSCore.Extensions
+  langs:
+  - csharp
+  - vb
+  name: WriteToStream(IWaveSource, Stream)
+  nameWithType: Extensions.WriteToStream(IWaveSource, Stream)
+  fullName: SilverCraft.CSCore.Extensions.WriteToStream(SilverCraft.CSCore.IWaveSource, System.IO.Stream)
+  type: Method
+  source:
+    remote:
+      path: SilverCraft.CSCore/Extensions.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: WriteToStream
+    path: ../SilverCraft.CSCore/Extensions.cs
+    startLine: 242
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore
+  summary: >-
+    Writes all audio data of the <code class="paramref">waveSource</code> to a stream. In comparison to the <xref href="SilverCraft.CSCore.Extensions.WriteToWaveStream(SilverCraft.CSCore.IWaveSource%2cSystem.IO.Stream)" data-throw-if-not-resolved="false"></xref> method, 
+
+    the <xref href="SilverCraft.CSCore.Extensions.WriteToStream(SilverCraft.CSCore.IWaveSource%2cSystem.IO.Stream)" data-throw-if-not-resolved="false"></xref> method won't encode the provided audio to any particular format. No wav, aiff,... header won't be included.
+  example: []
+  syntax:
+    content: public static void WriteToStream(this IWaveSource waveSource, Stream stream)
+    parameters:
+    - id: waveSource
+      type: SilverCraft.CSCore.IWaveSource
+      description: The waveSource which provides the audio data to write to the <code class="paramref">stream</code>.
+    - id: stream
+      type: System.IO.Stream
+      description: The <xref href="System.IO.Stream" data-throw-if-not-resolved="false"></xref> to store the audio data in.
+    content.vb: Public Shared Sub WriteToStream(waveSource As IWaveSource, stream As Stream)
+  overload: SilverCraft.CSCore.Extensions.WriteToStream*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: >-
+      waveSource
+
+      or
+
+      stream
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: Stream is not writeable.;stream
+- uid: SilverCraft.CSCore.Extensions.CheckBuffer``1(``0[],System.Int64,System.Boolean)
+  commentId: M:SilverCraft.CSCore.Extensions.CheckBuffer``1(``0[],System.Int64,System.Boolean)
+  id: CheckBuffer``1(``0[],System.Int64,System.Boolean)
+  isExtensionMethod: true
+  parent: SilverCraft.CSCore.Extensions
+  langs:
+  - csharp
+  - vb
+  name: CheckBuffer<T>(T[], long, bool)
+  nameWithType: Extensions.CheckBuffer<T>(T[], long, bool)
+  fullName: SilverCraft.CSCore.Extensions.CheckBuffer<T>(T[], long, bool)
+  type: Method
+  source:
+    remote:
+      path: SilverCraft.CSCore/Extensions.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: CheckBuffer
+    path: ../SilverCraft.CSCore/Extensions.cs
+    startLine: 266
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore
+  summary: Checks the length of an array.
+  example: []
+  syntax:
+    content: public static T[] CheckBuffer<T>(this T[] inst, long size, bool exactSize = false)
+    parameters:
+    - id: inst
+      type: '{T}[]'
+      description: The array to check. This parameter can be null.
+    - id: size
+      type: System.Int64
+      description: The target length of the array.
+    - id: exactSize
+      type: System.Boolean
+      description: A value which indicates whether the length of the array has to fit exactly the specified <code class="paramref">size</code>.
+    typeParameters:
+    - id: T
+      description: Type of the array.
+    return:
+      type: '{T}[]'
+      description: Array which fits the specified requirements. Note that if a new array got created, the content of the old array won't get copied to the return value.
+    content.vb: Public Shared Function CheckBuffer(Of T)(inst As T(), size As Long, exactSize As Boolean = False) As T()
+  overload: SilverCraft.CSCore.Extensions.CheckBuffer*
+  nameWithType.vb: Extensions.CheckBuffer(Of T)(T(), Long, Boolean)
+  fullName.vb: SilverCraft.CSCore.Extensions.CheckBuffer(Of T)(T(), Long, Boolean)
+  name.vb: CheckBuffer(Of T)(T(), Long, Boolean)
+- uid: SilverCraft.CSCore.Extensions.WaitForStopped(SilverCraft.CSCore.SoundOut.ISoundOut,System.Int32)
+  commentId: M:SilverCraft.CSCore.Extensions.WaitForStopped(SilverCraft.CSCore.SoundOut.ISoundOut,System.Int32)
+  id: WaitForStopped(SilverCraft.CSCore.SoundOut.ISoundOut,System.Int32)
+  isExtensionMethod: true
+  parent: SilverCraft.CSCore.Extensions
+  langs:
+  - csharp
+  - vb
+  name: WaitForStopped(ISoundOut, int)
+  nameWithType: Extensions.WaitForStopped(ISoundOut, int)
+  fullName: SilverCraft.CSCore.Extensions.WaitForStopped(SilverCraft.CSCore.SoundOut.ISoundOut, int)
+  type: Method
+  source:
+    remote:
+      path: SilverCraft.CSCore/Extensions.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: WaitForStopped
+    path: ../SilverCraft.CSCore/Extensions.cs
+    startLine: 398
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore
+  summary: Blocks the current thread until the playback of the specified <code class="paramref">soundOut</code> instance stops or the specified timeout expires.
+  example: []
+  syntax:
+    content: public static bool WaitForStopped(this ISoundOut soundOut, int millisecondsTimeout)
+    parameters:
+    - id: soundOut
+      type: SilverCraft.CSCore.SoundOut.ISoundOut
+      description: The <xref href="SilverCraft.CSCore.SoundOut.ISoundOut" data-throw-if-not-resolved="false"></xref> instance to wait for its playback to stop.
+    - id: millisecondsTimeout
+      type: System.Int32
+      description: The number of milliseconds to wait. Pass <xref href="System.Threading.Timeout.Infinite" data-throw-if-not-resolved="false"></xref> to wait indefinitely.
+    return:
+      type: System.Boolean
+      description: <code>true</code> if the <code class="paramref">soundOut</code> got stopped; <code>false</code> if the specified <code class="paramref">millisecondsTimeout</code> expired.
+    content.vb: Public Shared Function WaitForStopped(soundOut As ISoundOut, millisecondsTimeout As Integer) As Boolean
+  overload: SilverCraft.CSCore.Extensions.WaitForStopped*
+  nameWithType.vb: Extensions.WaitForStopped(ISoundOut, Integer)
+  fullName.vb: SilverCraft.CSCore.Extensions.WaitForStopped(SilverCraft.CSCore.SoundOut.ISoundOut, Integer)
+  name.vb: WaitForStopped(ISoundOut, Integer)
+- uid: SilverCraft.CSCore.Extensions.WaitForStopped(SilverCraft.CSCore.SoundOut.ISoundOut)
+  commentId: M:SilverCraft.CSCore.Extensions.WaitForStopped(SilverCraft.CSCore.SoundOut.ISoundOut)
+  id: WaitForStopped(SilverCraft.CSCore.SoundOut.ISoundOut)
+  isExtensionMethod: true
+  parent: SilverCraft.CSCore.Extensions
+  langs:
+  - csharp
+  - vb
+  name: WaitForStopped(ISoundOut)
+  nameWithType: Extensions.WaitForStopped(ISoundOut)
+  fullName: SilverCraft.CSCore.Extensions.WaitForStopped(SilverCraft.CSCore.SoundOut.ISoundOut)
+  type: Method
+  source:
+    remote:
+      path: SilverCraft.CSCore/Extensions.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: WaitForStopped
+    path: ../SilverCraft.CSCore/Extensions.cs
+    startLine: 419
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore
+  summary: Blocks the current thread until the playback of the specified <code class="paramref">soundOut</code> instance stops.
+  example: []
+  syntax:
+    content: public static void WaitForStopped(this ISoundOut soundOut)
+    parameters:
+    - id: soundOut
+      type: SilverCraft.CSCore.SoundOut.ISoundOut
+      description: The <xref href="SilverCraft.CSCore.SoundOut.ISoundOut" data-throw-if-not-resolved="false"></xref> instance to wait for its playback to stop.
+    content.vb: Public Shared Sub WaitForStopped(soundOut As ISoundOut)
+  overload: SilverCraft.CSCore.Extensions.WaitForStopped*
+references:
+- uid: SilverCraft.CSCore
+  commentId: N:SilverCraft.CSCore
+  href: SilverCraft.html
+  name: SilverCraft.CSCore
+  nameWithType: SilverCraft.CSCore
+  fullName: SilverCraft.CSCore
+  spec.csharp:
+  - uid: SilverCraft
+    name: SilverCraft
+    href: SilverCraft.html
+  - name: .
+  - uid: SilverCraft.CSCore
+    name: CSCore
+    href: SilverCraft.CSCore.html
+  spec.vb:
+  - uid: SilverCraft
+    name: SilverCraft
+    href: SilverCraft.html
+  - name: .
+  - uid: SilverCraft.CSCore
+    name: CSCore
+    href: SilverCraft.CSCore.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: SilverCraft.CSCore.IAudioSource
+  commentId: T:SilverCraft.CSCore.IAudioSource
+  parent: SilverCraft.CSCore
+  href: SilverCraft.CSCore.IAudioSource.html
+  name: IAudioSource
+  nameWithType: IAudioSource
+  fullName: SilverCraft.CSCore.IAudioSource
+- uid: System.TimeSpan
+  commentId: T:System.TimeSpan
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.timespan
+  name: TimeSpan
+  nameWithType: TimeSpan
+  fullName: System.TimeSpan
+- uid: SilverCraft.CSCore.Extensions.GetLength*
+  commentId: Overload:SilverCraft.CSCore.Extensions.GetLength
+  href: SilverCraft.CSCore.Extensions.html#SilverCraft_CSCore_Extensions_GetLength_SilverCraft_CSCore_IAudioSource_
+  name: GetLength
+  nameWithType: Extensions.GetLength
+  fullName: SilverCraft.CSCore.Extensions.GetLength
+- uid: SilverCraft.CSCore.IAudioSource.CanSeek
+  commentId: P:SilverCraft.CSCore.IAudioSource.CanSeek
+  parent: SilverCraft.CSCore.IAudioSource
+  href: SilverCraft.CSCore.IAudioSource.html#SilverCraft_CSCore_IAudioSource_CanSeek
+  name: CanSeek
+  nameWithType: IAudioSource.CanSeek
+  fullName: SilverCraft.CSCore.IAudioSource.CanSeek
+- uid: SilverCraft.CSCore.Extensions.GetPosition*
+  commentId: Overload:SilverCraft.CSCore.Extensions.GetPosition
+  href: SilverCraft.CSCore.Extensions.html#SilverCraft_CSCore_Extensions_GetPosition_SilverCraft_CSCore_IAudioSource_
+  name: GetPosition
+  nameWithType: Extensions.GetPosition
+  fullName: SilverCraft.CSCore.Extensions.GetPosition
+- uid: SilverCraft.CSCore.Extensions.SetPosition*
+  commentId: Overload:SilverCraft.CSCore.Extensions.SetPosition
+  href: SilverCraft.CSCore.Extensions.html#SilverCraft_CSCore_Extensions_SetPosition_SilverCraft_CSCore_IAudioSource_System_TimeSpan_
+  name: SetPosition
+  nameWithType: Extensions.SetPosition
+  fullName: SilverCraft.CSCore.Extensions.SetPosition
+- uid: SilverCraft.CSCore.WaveFormat
+  commentId: T:SilverCraft.CSCore.WaveFormat
+  parent: SilverCraft.CSCore
+  href: SilverCraft.CSCore.WaveFormat.html
+  name: WaveFormat
+  nameWithType: WaveFormat
+  fullName: SilverCraft.CSCore.WaveFormat
+- uid: SilverCraft.CSCore.IWaveSource
+  commentId: T:SilverCraft.CSCore.IWaveSource
+  parent: SilverCraft.CSCore
+  href: SilverCraft.CSCore.IWaveSource.html
+  name: IWaveSource
+  nameWithType: IWaveSource
+  fullName: SilverCraft.CSCore.IWaveSource
+- uid: SilverCraft.CSCore.ISampleSource
+  commentId: T:SilverCraft.CSCore.ISampleSource
+  parent: SilverCraft.CSCore
+  href: SilverCraft.CSCore.ISampleSource.html
+  name: ISampleSource
+  nameWithType: ISampleSource
+  fullName: SilverCraft.CSCore.ISampleSource
+- uid: SilverCraft.CSCore.Extensions.GetLength(SilverCraft.CSCore.IAudioSource)
+  commentId: M:SilverCraft.CSCore.Extensions.GetLength(SilverCraft.CSCore.IAudioSource)
+  href: SilverCraft.CSCore.Extensions.html#SilverCraft_CSCore_Extensions_GetLength_SilverCraft_CSCore_IAudioSource_
+  name: GetLength(IAudioSource)
+  nameWithType: Extensions.GetLength(IAudioSource)
+  fullName: SilverCraft.CSCore.Extensions.GetLength(SilverCraft.CSCore.IAudioSource)
+  spec.csharp:
+  - uid: SilverCraft.CSCore.Extensions.GetLength(SilverCraft.CSCore.IAudioSource)
+    name: GetLength
+    href: SilverCraft.CSCore.Extensions.html#SilverCraft_CSCore_Extensions_GetLength_SilverCraft_CSCore_IAudioSource_
+  - name: (
+  - uid: SilverCraft.CSCore.IAudioSource
+    name: IAudioSource
+    href: SilverCraft.CSCore.IAudioSource.html
+  - name: )
+  spec.vb:
+  - uid: SilverCraft.CSCore.Extensions.GetLength(SilverCraft.CSCore.IAudioSource)
+    name: GetLength
+    href: SilverCraft.CSCore.Extensions.html#SilverCraft_CSCore_Extensions_GetLength_SilverCraft_CSCore_IAudioSource_
+  - name: (
+  - uid: SilverCraft.CSCore.IAudioSource
+    name: IAudioSource
+    href: SilverCraft.CSCore.IAudioSource.html
+  - name: )
+- uid: SilverCraft.CSCore.Extensions.GetPosition(SilverCraft.CSCore.IAudioSource)
+  commentId: M:SilverCraft.CSCore.Extensions.GetPosition(SilverCraft.CSCore.IAudioSource)
+  href: SilverCraft.CSCore.Extensions.html#SilverCraft_CSCore_Extensions_GetPosition_SilverCraft_CSCore_IAudioSource_
+  name: GetPosition(IAudioSource)
+  nameWithType: Extensions.GetPosition(IAudioSource)
+  fullName: SilverCraft.CSCore.Extensions.GetPosition(SilverCraft.CSCore.IAudioSource)
+  spec.csharp:
+  - uid: SilverCraft.CSCore.Extensions.GetPosition(SilverCraft.CSCore.IAudioSource)
+    name: GetPosition
+    href: SilverCraft.CSCore.Extensions.html#SilverCraft_CSCore_Extensions_GetPosition_SilverCraft_CSCore_IAudioSource_
+  - name: (
+  - uid: SilverCraft.CSCore.IAudioSource
+    name: IAudioSource
+    href: SilverCraft.CSCore.IAudioSource.html
+  - name: )
+  spec.vb:
+  - uid: SilverCraft.CSCore.Extensions.GetPosition(SilverCraft.CSCore.IAudioSource)
+    name: GetPosition
+    href: SilverCraft.CSCore.Extensions.html#SilverCraft_CSCore_Extensions_GetPosition_SilverCraft_CSCore_IAudioSource_
+  - name: (
+  - uid: SilverCraft.CSCore.IAudioSource
+    name: IAudioSource
+    href: SilverCraft.CSCore.IAudioSource.html
+  - name: )
+- uid: SilverCraft.CSCore.TimeConverterFactory
+  commentId: T:SilverCraft.CSCore.TimeConverterFactory
+  parent: SilverCraft.CSCore
+  href: SilverCraft.CSCore.TimeConverterFactory.html
+  name: TimeConverterFactory
+  nameWithType: TimeConverterFactory
+  fullName: SilverCraft.CSCore.TimeConverterFactory
+- uid: System.ArgumentNullException
+  commentId: T:System.ArgumentNullException
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.argumentnullexception
+  name: ArgumentNullException
+  nameWithType: ArgumentNullException
+  fullName: System.ArgumentNullException
+- uid: SilverCraft.CSCore.Extensions.GetTime*
+  commentId: Overload:SilverCraft.CSCore.Extensions.GetTime
+  href: SilverCraft.CSCore.Extensions.html#SilverCraft_CSCore_Extensions_GetTime_SilverCraft_CSCore_IAudioSource_System_Int64_
+  name: GetTime
+  nameWithType: Extensions.GetTime
+  fullName: SilverCraft.CSCore.Extensions.GetTime
+- uid: System.Int64
+  commentId: T:System.Int64
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int64
+  name: long
+  nameWithType: long
+  fullName: long
+  nameWithType.vb: Long
+  fullName.vb: Long
+  name.vb: Long
+- uid: SilverCraft.CSCore.Extensions.GetMilliseconds*
+  commentId: Overload:SilverCraft.CSCore.Extensions.GetMilliseconds
+  href: SilverCraft.CSCore.Extensions.html#SilverCraft_CSCore_Extensions_GetMilliseconds_SilverCraft_CSCore_IAudioSource_System_Int64_
+  name: GetMilliseconds
+  nameWithType: Extensions.GetMilliseconds
+  fullName: SilverCraft.CSCore.Extensions.GetMilliseconds
+- uid: SilverCraft.CSCore.Extensions.GetRawElements*
+  commentId: Overload:SilverCraft.CSCore.Extensions.GetRawElements
+  href: SilverCraft.CSCore.Extensions.html#SilverCraft_CSCore_Extensions_GetRawElements_SilverCraft_CSCore_IAudioSource_System_TimeSpan_
+  name: GetRawElements
+  nameWithType: Extensions.GetRawElements
+  fullName: SilverCraft.CSCore.Extensions.GetRawElements
+- uid: System.ArgumentOutOfRangeException
+  commentId: T:System.ArgumentOutOfRangeException
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.argumentoutofrangeexception
+  name: ArgumentOutOfRangeException
+  nameWithType: ArgumentOutOfRangeException
+  fullName: System.ArgumentOutOfRangeException
+- uid: SilverCraft.CSCore.Extensions.WriteToFile*
+  commentId: Overload:SilverCraft.CSCore.Extensions.WriteToFile
+  href: SilverCraft.CSCore.Extensions.html#SilverCraft_CSCore_Extensions_WriteToFile_SilverCraft_CSCore_IWaveSource_System_String_
+  name: WriteToFile
+  nameWithType: Extensions.WriteToFile
+  fullName: SilverCraft.CSCore.Extensions.WriteToFile
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System.IO.Stream
+  commentId: T:System.IO.Stream
+  parent: System.IO
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.io.stream
+  name: Stream
+  nameWithType: Stream
+  fullName: System.IO.Stream
+- uid: System.ArgumentException
+  commentId: T:System.ArgumentException
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.argumentexception
+  name: ArgumentException
+  nameWithType: ArgumentException
+  fullName: System.ArgumentException
+- uid: SilverCraft.CSCore.Extensions.WriteToWaveStream*
+  commentId: Overload:SilverCraft.CSCore.Extensions.WriteToWaveStream
+  href: SilverCraft.CSCore.Extensions.html#SilverCraft_CSCore_Extensions_WriteToWaveStream_SilverCraft_CSCore_IWaveSource_System_IO_Stream_
+  name: WriteToWaveStream
+  nameWithType: Extensions.WriteToWaveStream
+  fullName: SilverCraft.CSCore.Extensions.WriteToWaveStream
+- uid: System.IO
+  commentId: N:System.IO
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.IO
+  nameWithType: System.IO
+  fullName: System.IO
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.IO
+    name: IO
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.io
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.IO
+    name: IO
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.io
+- uid: SilverCraft.CSCore.Extensions.WriteToWaveStream(SilverCraft.CSCore.IWaveSource,System.IO.Stream)
+  commentId: M:SilverCraft.CSCore.Extensions.WriteToWaveStream(SilverCraft.CSCore.IWaveSource,System.IO.Stream)
+  isExternal: true
+  href: SilverCraft.CSCore.Extensions.html#SilverCraft_CSCore_Extensions_WriteToWaveStream_SilverCraft_CSCore_IWaveSource_System_IO_Stream_
+  name: WriteToWaveStream(IWaveSource, Stream)
+  nameWithType: Extensions.WriteToWaveStream(IWaveSource, Stream)
+  fullName: SilverCraft.CSCore.Extensions.WriteToWaveStream(SilverCraft.CSCore.IWaveSource, System.IO.Stream)
+  spec.csharp:
+  - uid: SilverCraft.CSCore.Extensions.WriteToWaveStream(SilverCraft.CSCore.IWaveSource,System.IO.Stream)
+    name: WriteToWaveStream
+    href: SilverCraft.CSCore.Extensions.html#SilverCraft_CSCore_Extensions_WriteToWaveStream_SilverCraft_CSCore_IWaveSource_System_IO_Stream_
+  - name: (
+  - uid: SilverCraft.CSCore.IWaveSource
+    name: IWaveSource
+    href: SilverCraft.CSCore.IWaveSource.html
+  - name: ','
+  - name: " "
+  - uid: System.IO.Stream
+    name: Stream
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.io.stream
+  - name: )
+  spec.vb:
+  - uid: SilverCraft.CSCore.Extensions.WriteToWaveStream(SilverCraft.CSCore.IWaveSource,System.IO.Stream)
+    name: WriteToWaveStream
+    href: SilverCraft.CSCore.Extensions.html#SilverCraft_CSCore_Extensions_WriteToWaveStream_SilverCraft_CSCore_IWaveSource_System_IO_Stream_
+  - name: (
+  - uid: SilverCraft.CSCore.IWaveSource
+    name: IWaveSource
+    href: SilverCraft.CSCore.IWaveSource.html
+  - name: ','
+  - name: " "
+  - uid: System.IO.Stream
+    name: Stream
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.io.stream
+  - name: )
+- uid: SilverCraft.CSCore.Extensions.WriteToStream(SilverCraft.CSCore.IWaveSource,System.IO.Stream)
+  commentId: M:SilverCraft.CSCore.Extensions.WriteToStream(SilverCraft.CSCore.IWaveSource,System.IO.Stream)
+  isExternal: true
+  href: SilverCraft.CSCore.Extensions.html#SilverCraft_CSCore_Extensions_WriteToStream_SilverCraft_CSCore_IWaveSource_System_IO_Stream_
+  name: WriteToStream(IWaveSource, Stream)
+  nameWithType: Extensions.WriteToStream(IWaveSource, Stream)
+  fullName: SilverCraft.CSCore.Extensions.WriteToStream(SilverCraft.CSCore.IWaveSource, System.IO.Stream)
+  spec.csharp:
+  - uid: SilverCraft.CSCore.Extensions.WriteToStream(SilverCraft.CSCore.IWaveSource,System.IO.Stream)
+    name: WriteToStream
+    href: SilverCraft.CSCore.Extensions.html#SilverCraft_CSCore_Extensions_WriteToStream_SilverCraft_CSCore_IWaveSource_System_IO_Stream_
+  - name: (
+  - uid: SilverCraft.CSCore.IWaveSource
+    name: IWaveSource
+    href: SilverCraft.CSCore.IWaveSource.html
+  - name: ','
+  - name: " "
+  - uid: System.IO.Stream
+    name: Stream
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.io.stream
+  - name: )
+  spec.vb:
+  - uid: SilverCraft.CSCore.Extensions.WriteToStream(SilverCraft.CSCore.IWaveSource,System.IO.Stream)
+    name: WriteToStream
+    href: SilverCraft.CSCore.Extensions.html#SilverCraft_CSCore_Extensions_WriteToStream_SilverCraft_CSCore_IWaveSource_System_IO_Stream_
+  - name: (
+  - uid: SilverCraft.CSCore.IWaveSource
+    name: IWaveSource
+    href: SilverCraft.CSCore.IWaveSource.html
+  - name: ','
+  - name: " "
+  - uid: System.IO.Stream
+    name: Stream
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.io.stream
+  - name: )
+- uid: SilverCraft.CSCore.Extensions.WriteToStream*
+  commentId: Overload:SilverCraft.CSCore.Extensions.WriteToStream
+  href: SilverCraft.CSCore.Extensions.html#SilverCraft_CSCore_Extensions_WriteToStream_SilverCraft_CSCore_IWaveSource_System_IO_Stream_
+  name: WriteToStream
+  nameWithType: Extensions.WriteToStream
+  fullName: SilverCraft.CSCore.Extensions.WriteToStream
+- uid: SilverCraft.CSCore.Extensions.CheckBuffer*
+  commentId: Overload:SilverCraft.CSCore.Extensions.CheckBuffer
+  href: SilverCraft.CSCore.Extensions.html#SilverCraft_CSCore_Extensions_CheckBuffer__1___0___System_Int64_System_Boolean_
+  name: CheckBuffer
+  nameWithType: Extensions.CheckBuffer
+  fullName: SilverCraft.CSCore.Extensions.CheckBuffer
+- uid: '{T}[]'
+  isExternal: true
+  name: T[]
+  nameWithType: T[]
+  fullName: T[]
+  nameWithType.vb: T()
+  fullName.vb: T()
+  name.vb: T()
+  spec.csharp:
+  - name: T
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - name: T
+  - name: (
+  - name: )
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: SilverCraft.CSCore.SoundOut.ISoundOut
+  commentId: T:SilverCraft.CSCore.SoundOut.ISoundOut
+  parent: SilverCraft.CSCore.SoundOut
+  href: SilverCraft.CSCore.SoundOut.ISoundOut.html
+  name: ISoundOut
+  nameWithType: ISoundOut
+  fullName: SilverCraft.CSCore.SoundOut.ISoundOut
+- uid: System.Threading.Timeout.Infinite
+  commentId: F:System.Threading.Timeout.Infinite
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.timeout.infinite
+  name: Infinite
+  nameWithType: Timeout.Infinite
+  fullName: System.Threading.Timeout.Infinite
+- uid: SilverCraft.CSCore.Extensions.WaitForStopped*
+  commentId: Overload:SilverCraft.CSCore.Extensions.WaitForStopped
+  href: SilverCraft.CSCore.Extensions.html#SilverCraft_CSCore_Extensions_WaitForStopped_SilverCraft_CSCore_SoundOut_ISoundOut_System_Int32_
+  name: WaitForStopped
+  nameWithType: Extensions.WaitForStopped
+  fullName: SilverCraft.CSCore.Extensions.WaitForStopped
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: SilverCraft.CSCore.SoundOut
+  commentId: N:SilverCraft.CSCore.SoundOut
+  href: SilverCraft.html
+  name: SilverCraft.CSCore.SoundOut
+  nameWithType: SilverCraft.CSCore.SoundOut
+  fullName: SilverCraft.CSCore.SoundOut
+  spec.csharp:
+  - uid: SilverCraft
+    name: SilverCraft
+    href: SilverCraft.html
+  - name: .
+  - uid: SilverCraft.CSCore
+    name: CSCore
+    href: SilverCraft.CSCore.html
+  - name: .
+  - uid: SilverCraft.CSCore.SoundOut
+    name: SoundOut
+    href: SilverCraft.CSCore.SoundOut.html
+  spec.vb:
+  - uid: SilverCraft
+    name: SilverCraft
+    href: SilverCraft.html
+  - name: .
+  - uid: SilverCraft.CSCore
+    name: CSCore
+    href: SilverCraft.CSCore.html
+  - name: .
+  - uid: SilverCraft.CSCore.SoundOut
+    name: SoundOut
+    href: SilverCraft.CSCore.SoundOut.html

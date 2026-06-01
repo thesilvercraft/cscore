@@ -1,0 +1,5360 @@
+### YamlMime:ManagedReference
+items:
+- uid: SilverCraft.CSCore.AudioSubTypes
+  commentId: T:SilverCraft.CSCore.AudioSubTypes
+  id: AudioSubTypes
+  parent: SilverCraft.CSCore
+  children:
+  - SilverCraft.CSCore.AudioSubTypes.ALaw
+  - SilverCraft.CSCore.AudioSubTypes.Acelp
+  - SilverCraft.CSCore.AudioSubTypes.Adpcm
+  - SilverCraft.CSCore.AudioSubTypes.AntexAdpcme
+  - SilverCraft.CSCore.AudioSubTypes.Aptx
+  - SilverCraft.CSCore.AudioSubTypes.AudioFileAf10
+  - SilverCraft.CSCore.AudioSubTypes.AudioFileAf36
+  - SilverCraft.CSCore.AudioSubTypes.CUCodec
+  - SilverCraft.CSCore.AudioSubTypes.ControlResCr10
+  - SilverCraft.CSCore.AudioSubTypes.ControlResVqlpc
+  - SilverCraft.CSCore.AudioSubTypes.DialogicOkiAdpcm
+  - SilverCraft.CSCore.AudioSubTypes.DigiAdpcm
+  - SilverCraft.CSCore.AudioSubTypes.DigiFix
+  - SilverCraft.CSCore.AudioSubTypes.DigiReal
+  - SilverCraft.CSCore.AudioSubTypes.DigiStd
+  - SilverCraft.CSCore.AudioSubTypes.DolbyAc2
+  - SilverCraft.CSCore.AudioSubTypes.Drm
+  - SilverCraft.CSCore.AudioSubTypes.DspGroupTrueSpeech
+  - SilverCraft.CSCore.AudioSubTypes.Dts
+  - SilverCraft.CSCore.AudioSubTypes.DviAdpcm
+  - SilverCraft.CSCore.AudioSubTypes.EchoSpeechCorporation1
+  - SilverCraft.CSCore.AudioSubTypes.EncodingFromSubType(System.Guid)
+  - SilverCraft.CSCore.AudioSubTypes.Extensible
+  - SilverCraft.CSCore.AudioSubTypes.G723
+  - SilverCraft.CSCore.AudioSubTypes.G723Adpcm
+  - SilverCraft.CSCore.AudioSubTypes.G729
+  - SilverCraft.CSCore.AudioSubTypes.Gsm
+  - SilverCraft.CSCore.AudioSubTypes.Gsm610
+  - SilverCraft.CSCore.AudioSubTypes.IbmCvsd
+  - SilverCraft.CSCore.AudioSubTypes.IeeeFloat
+  - SilverCraft.CSCore.AudioSubTypes.ImaAdpcm
+  - SilverCraft.CSCore.AudioSubTypes.Lrc
+  - SilverCraft.CSCore.AudioSubTypes.MPEG_ADTS_AAC
+  - SilverCraft.CSCore.AudioSubTypes.MPEG_HEAAC
+  - SilverCraft.CSCore.AudioSubTypes.MPEG_LOAS
+  - SilverCraft.CSCore.AudioSubTypes.MPEG_RAW_AAC
+  - SilverCraft.CSCore.AudioSubTypes.MediaTypeAudio
+  - SilverCraft.CSCore.AudioSubTypes.MediaVisionAdpcm
+  - SilverCraft.CSCore.AudioSubTypes.MediaspaceAdpcm
+  - SilverCraft.CSCore.AudioSubTypes.Mpeg
+  - SilverCraft.CSCore.AudioSubTypes.MpegLayer3
+  - SilverCraft.CSCore.AudioSubTypes.MsnAudio
+  - SilverCraft.CSCore.AudioSubTypes.MuLaw
+  - SilverCraft.CSCore.AudioSubTypes.NOKIA_MPEG_ADTS_AAC
+  - SilverCraft.CSCore.AudioSubTypes.NOKIA_MPEG_RAW_AAC
+  - SilverCraft.CSCore.AudioSubTypes.OkiAdpcm
+  - SilverCraft.CSCore.AudioSubTypes.Pcm
+  - SilverCraft.CSCore.AudioSubTypes.Prosody1612
+  - SilverCraft.CSCore.AudioSubTypes.RawAac
+  - SilverCraft.CSCore.AudioSubTypes.SierraAdpcm
+  - SilverCraft.CSCore.AudioSubTypes.SonarC
+  - SilverCraft.CSCore.AudioSubTypes.SubTypeFromEncoding(SilverCraft.CSCore.AudioEncoding)
+  - SilverCraft.CSCore.AudioSubTypes.Unknown
+  - SilverCraft.CSCore.AudioSubTypes.VODAFONE_MPEG_ADTS_AAC
+  - SilverCraft.CSCore.AudioSubTypes.VODAFONE_MPEG_RAW_AAC
+  - SilverCraft.CSCore.AudioSubTypes.Vorbis1
+  - SilverCraft.CSCore.AudioSubTypes.Vorbis1P
+  - SilverCraft.CSCore.AudioSubTypes.Vorbis2
+  - SilverCraft.CSCore.AudioSubTypes.Vorbis2P
+  - SilverCraft.CSCore.AudioSubTypes.Vorbis3
+  - SilverCraft.CSCore.AudioSubTypes.Vorbis3P
+  - SilverCraft.CSCore.AudioSubTypes.Vselp
+  - SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_BTV_DIGITAL
+  - SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_CANOPUS_ATRAC
+  - SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_CIRRUS
+  - SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_CREATIVE_ADPCM
+  - SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_CREATIVE_FASTSPEECH10
+  - SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_CREATIVE_FASTSPEECH8
+  - SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_CS2
+  - SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_CS_IMAADPCM
+  - SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_DEVELOPMENT
+  - SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_DF_G726
+  - SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_DF_GSM610
+  - SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_DIGITAL_G723
+  - SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_DOLBY_AC3_SPDIF
+  - SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_DSAT_DISPLAY
+  - SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_DVM
+  - SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_ECHOSC3
+  - SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_ESPCM
+  - SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_ESST_AC3
+  - SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_FLAC
+  - SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_FM_TOWNS_SND
+  - SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_G721_ADPCM
+  - SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_G722_ADPCM
+  - SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_G726ADPCM
+  - SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_G726_ADPCM
+  - SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_G728_CELP
+  - SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_G729A
+  - SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_ILINK_VC
+  - SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_IPI_HSX
+  - SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_IPI_RPELP
+  - SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_IRAT
+  - SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_ISIAUDIO
+  - SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_LH_CODEC
+  - SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_LUCENT_G723
+  - SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_MALDEN_PHONYTALK
+  - SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_MEDIASONIC_G723
+  - SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_MSAUDIO1
+  - SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_MSG723
+  - SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_MSRT24
+  - SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_MVI_MVI2
+  - SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_NMS_VBXADPCM
+  - SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_NORRIS
+  - SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_OLIADPCM
+  - SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_OLICELP
+  - SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_OLIGSM
+  - SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_OLIOPR
+  - SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_OLISBC
+  - SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_ONLIVE
+  - SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_PAC
+  - SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_PACKED
+  - SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_PHILIPS_LPCBB
+  - SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_PROSODY_8KBPS
+  - SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_QDESIGN_MUSIC
+  - SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_QUALCOMM_HALFRATE
+  - SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_QUALCOMM_PUREVOICE
+  - SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_QUARTERDECK
+  - SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_RAW_AAC1
+  - SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_RAW_SPORT
+  - SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_RHETOREX_ADPCM
+  - SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_ROCKWELL_ADPCM
+  - SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_ROCKWELL_DIGITALK
+  - SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_RT24
+  - SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_SANYO_LD_ADPCM
+  - SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_SBC24
+  - SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_SIPROLAB_ACELP4800
+  - SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_SIPROLAB_ACELP8V3
+  - SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_SIPROLAB_ACEPLNET
+  - SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_SIPROLAB_G729
+  - SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_SIPROLAB_G729A
+  - SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_SIPROLAB_KELVIN
+  - SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_SOFTSOUND
+  - SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_SONY_SCX
+  - SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_SOUNDSPACE_MUSICOMPRESS
+  - SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_TPC
+  - SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_TUBGSM
+  - SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_UHER_ADPCM
+  - SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_UNISYS_NAP_16K
+  - SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_UNISYS_NAP_ADPCM
+  - SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_UNISYS_NAP_ALAW
+  - SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_UNISYS_NAP_ULAW
+  - SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_VIVO_G723
+  - SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_VIVO_SIREN
+  - SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_VME_VMPCM
+  - SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_VOXWARE
+  - SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_VOXWARE_AC10
+  - SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_VOXWARE_AC16
+  - SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_VOXWARE_AC20
+  - SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_VOXWARE_AC8
+  - SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_VOXWARE_BYTE_ALIGNED
+  - SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_VOXWARE_RT24
+  - SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_VOXWARE_RT29
+  - SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_VOXWARE_RT29HW
+  - SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_VOXWARE_TQ40
+  - SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_VOXWARE_TQ60
+  - SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_VOXWARE_VR12
+  - SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_VOXWARE_VR18
+  - SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_WMAVOICE9
+  - SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_XEBEC
+  - SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_ZYXEL_ADPCM
+  - SilverCraft.CSCore.AudioSubTypes.WindowsMediaAudio
+  - SilverCraft.CSCore.AudioSubTypes.WindowsMediaAudioLosseless
+  - SilverCraft.CSCore.AudioSubTypes.WindowsMediaAudioProfessional
+  - SilverCraft.CSCore.AudioSubTypes.WindowsMediaAudioSpdif
+  - SilverCraft.CSCore.AudioSubTypes.WmaVoice9
+  - SilverCraft.CSCore.AudioSubTypes.YamahaAdpcm
+  langs:
+  - csharp
+  - vb
+  name: AudioSubTypes
+  nameWithType: AudioSubTypes
+  fullName: SilverCraft.CSCore.AudioSubTypes
+  type: Class
+  source:
+    remote:
+      path: SilverCraft.CSCore/AudioSubTypes.Utils.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: AudioSubTypes
+    path: ../SilverCraft.CSCore/AudioSubTypes.Utils.cs
+    startLine: 8
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore
+  summary: Defines <xref href="SilverCraft.CSCore.AudioSubTypes" data-throw-if-not-resolved="false"></xref> and provides methods to convert between <xref href="SilverCraft.CSCore.AudioEncoding" data-throw-if-not-resolved="false"></xref>-values and <xref href="SilverCraft.CSCore.AudioSubTypes" data-throw-if-not-resolved="false"></xref>-values.
+  remarks: <xref href="SilverCraft.CSCore.AudioSubTypes" data-throw-if-not-resolved="false"></xref> are used by the <xref href="SilverCraft.CSCore.WaveFormatExtensible" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public static class AudioSubTypes
+    content.vb: Public Module AudioSubTypes
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: SilverCraft.CSCore.AudioSubTypes.Unknown
+  commentId: F:SilverCraft.CSCore.AudioSubTypes.Unknown
+  id: Unknown
+  parent: SilverCraft.CSCore.AudioSubTypes
+  langs:
+  - csharp
+  - vb
+  name: Unknown
+  nameWithType: AudioSubTypes.Unknown
+  fullName: SilverCraft.CSCore.AudioSubTypes.Unknown
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/AudioSubTypes.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: Unknown
+    path: ../SilverCraft.CSCore/AudioSubTypes.cs
+    startLine: 9
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore
+  summary: WAVE_FORMAT_UNKNOWN,	Microsoft Corporation
+  example: []
+  syntax:
+    content: public static readonly Guid Unknown
+    return:
+      type: System.Guid
+    content.vb: Public Shared ReadOnly Unknown As Guid
+- uid: SilverCraft.CSCore.AudioSubTypes.Pcm
+  commentId: F:SilverCraft.CSCore.AudioSubTypes.Pcm
+  id: Pcm
+  parent: SilverCraft.CSCore.AudioSubTypes
+  langs:
+  - csharp
+  - vb
+  name: Pcm
+  nameWithType: AudioSubTypes.Pcm
+  fullName: SilverCraft.CSCore.AudioSubTypes.Pcm
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/AudioSubTypes.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: Pcm
+    path: ../SilverCraft.CSCore/AudioSubTypes.cs
+    startLine: 12
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore
+  summary: WAVE_FORMAT_PCM		Microsoft Corporation
+  example: []
+  syntax:
+    content: public static readonly Guid Pcm
+    return:
+      type: System.Guid
+    content.vb: Public Shared ReadOnly Pcm As Guid
+- uid: SilverCraft.CSCore.AudioSubTypes.Adpcm
+  commentId: F:SilverCraft.CSCore.AudioSubTypes.Adpcm
+  id: Adpcm
+  parent: SilverCraft.CSCore.AudioSubTypes
+  langs:
+  - csharp
+  - vb
+  name: Adpcm
+  nameWithType: AudioSubTypes.Adpcm
+  fullName: SilverCraft.CSCore.AudioSubTypes.Adpcm
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/AudioSubTypes.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: Adpcm
+    path: ../SilverCraft.CSCore/AudioSubTypes.cs
+    startLine: 15
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore
+  summary: WAVE_FORMAT_ADPCM		Microsoft Corporation
+  example: []
+  syntax:
+    content: public static readonly Guid Adpcm
+    return:
+      type: System.Guid
+    content.vb: Public Shared ReadOnly Adpcm As Guid
+- uid: SilverCraft.CSCore.AudioSubTypes.IeeeFloat
+  commentId: F:SilverCraft.CSCore.AudioSubTypes.IeeeFloat
+  id: IeeeFloat
+  parent: SilverCraft.CSCore.AudioSubTypes
+  langs:
+  - csharp
+  - vb
+  name: IeeeFloat
+  nameWithType: AudioSubTypes.IeeeFloat
+  fullName: SilverCraft.CSCore.AudioSubTypes.IeeeFloat
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/AudioSubTypes.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: IeeeFloat
+    path: ../SilverCraft.CSCore/AudioSubTypes.cs
+    startLine: 18
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore
+  summary: WAVE_FORMAT_IEEE_FLOAT Microsoft Corporation
+  example: []
+  syntax:
+    content: public static readonly Guid IeeeFloat
+    return:
+      type: System.Guid
+    content.vb: Public Shared ReadOnly IeeeFloat As Guid
+- uid: SilverCraft.CSCore.AudioSubTypes.Vselp
+  commentId: F:SilverCraft.CSCore.AudioSubTypes.Vselp
+  id: Vselp
+  parent: SilverCraft.CSCore.AudioSubTypes
+  langs:
+  - csharp
+  - vb
+  name: Vselp
+  nameWithType: AudioSubTypes.Vselp
+  fullName: SilverCraft.CSCore.AudioSubTypes.Vselp
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/AudioSubTypes.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: Vselp
+    path: ../SilverCraft.CSCore/AudioSubTypes.cs
+    startLine: 21
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore
+  summary: WAVE_FORMAT_VSELP		Compaq Computer Corp.
+  example: []
+  syntax:
+    content: public static readonly Guid Vselp
+    return:
+      type: System.Guid
+    content.vb: Public Shared ReadOnly Vselp As Guid
+- uid: SilverCraft.CSCore.AudioSubTypes.IbmCvsd
+  commentId: F:SilverCraft.CSCore.AudioSubTypes.IbmCvsd
+  id: IbmCvsd
+  parent: SilverCraft.CSCore.AudioSubTypes
+  langs:
+  - csharp
+  - vb
+  name: IbmCvsd
+  nameWithType: AudioSubTypes.IbmCvsd
+  fullName: SilverCraft.CSCore.AudioSubTypes.IbmCvsd
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/AudioSubTypes.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: IbmCvsd
+    path: ../SilverCraft.CSCore/AudioSubTypes.cs
+    startLine: 24
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore
+  summary: WAVE_FORMAT_IBM_CVSD	IBM Corporation
+  example: []
+  syntax:
+    content: public static readonly Guid IbmCvsd
+    return:
+      type: System.Guid
+    content.vb: Public Shared ReadOnly IbmCvsd As Guid
+- uid: SilverCraft.CSCore.AudioSubTypes.ALaw
+  commentId: F:SilverCraft.CSCore.AudioSubTypes.ALaw
+  id: ALaw
+  parent: SilverCraft.CSCore.AudioSubTypes
+  langs:
+  - csharp
+  - vb
+  name: ALaw
+  nameWithType: AudioSubTypes.ALaw
+  fullName: SilverCraft.CSCore.AudioSubTypes.ALaw
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/AudioSubTypes.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: ALaw
+    path: ../SilverCraft.CSCore/AudioSubTypes.cs
+    startLine: 27
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore
+  summary: WAVE_FORMAT_ALAW		Microsoft Corporation
+  example: []
+  syntax:
+    content: public static readonly Guid ALaw
+    return:
+      type: System.Guid
+    content.vb: Public Shared ReadOnly ALaw As Guid
+- uid: SilverCraft.CSCore.AudioSubTypes.MuLaw
+  commentId: F:SilverCraft.CSCore.AudioSubTypes.MuLaw
+  id: MuLaw
+  parent: SilverCraft.CSCore.AudioSubTypes
+  langs:
+  - csharp
+  - vb
+  name: MuLaw
+  nameWithType: AudioSubTypes.MuLaw
+  fullName: SilverCraft.CSCore.AudioSubTypes.MuLaw
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/AudioSubTypes.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: MuLaw
+    path: ../SilverCraft.CSCore/AudioSubTypes.cs
+    startLine: 30
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore
+  summary: WAVE_FORMAT_MULAW		Microsoft Corporation
+  example: []
+  syntax:
+    content: public static readonly Guid MuLaw
+    return:
+      type: System.Guid
+    content.vb: Public Shared ReadOnly MuLaw As Guid
+- uid: SilverCraft.CSCore.AudioSubTypes.Dts
+  commentId: F:SilverCraft.CSCore.AudioSubTypes.Dts
+  id: Dts
+  parent: SilverCraft.CSCore.AudioSubTypes
+  langs:
+  - csharp
+  - vb
+  name: Dts
+  nameWithType: AudioSubTypes.Dts
+  fullName: SilverCraft.CSCore.AudioSubTypes.Dts
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/AudioSubTypes.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: Dts
+    path: ../SilverCraft.CSCore/AudioSubTypes.cs
+    startLine: 33
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore
+  summary: WAVE_FORMAT_DTS		Microsoft Corporation
+  example: []
+  syntax:
+    content: public static readonly Guid Dts
+    return:
+      type: System.Guid
+    content.vb: Public Shared ReadOnly Dts As Guid
+- uid: SilverCraft.CSCore.AudioSubTypes.Drm
+  commentId: F:SilverCraft.CSCore.AudioSubTypes.Drm
+  id: Drm
+  parent: SilverCraft.CSCore.AudioSubTypes
+  langs:
+  - csharp
+  - vb
+  name: Drm
+  nameWithType: AudioSubTypes.Drm
+  fullName: SilverCraft.CSCore.AudioSubTypes.Drm
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/AudioSubTypes.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: Drm
+    path: ../SilverCraft.CSCore/AudioSubTypes.cs
+    startLine: 36
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore
+  summary: WAVE_FORMAT_DRM		Microsoft Corporation
+  example: []
+  syntax:
+    content: public static readonly Guid Drm
+    return:
+      type: System.Guid
+    content.vb: Public Shared ReadOnly Drm As Guid
+- uid: SilverCraft.CSCore.AudioSubTypes.WmaVoice9
+  commentId: F:SilverCraft.CSCore.AudioSubTypes.WmaVoice9
+  id: WmaVoice9
+  parent: SilverCraft.CSCore.AudioSubTypes
+  langs:
+  - csharp
+  - vb
+  name: WmaVoice9
+  nameWithType: AudioSubTypes.WmaVoice9
+  fullName: SilverCraft.CSCore.AudioSubTypes.WmaVoice9
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/AudioSubTypes.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: WmaVoice9
+    path: ../SilverCraft.CSCore/AudioSubTypes.cs
+    startLine: 39
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore
+  summary: WAVE_FORMAT_WMAVOICE9
+  example: []
+  syntax:
+    content: public static readonly Guid WmaVoice9
+    return:
+      type: System.Guid
+    content.vb: Public Shared ReadOnly WmaVoice9 As Guid
+- uid: SilverCraft.CSCore.AudioSubTypes.OkiAdpcm
+  commentId: F:SilverCraft.CSCore.AudioSubTypes.OkiAdpcm
+  id: OkiAdpcm
+  parent: SilverCraft.CSCore.AudioSubTypes
+  langs:
+  - csharp
+  - vb
+  name: OkiAdpcm
+  nameWithType: AudioSubTypes.OkiAdpcm
+  fullName: SilverCraft.CSCore.AudioSubTypes.OkiAdpcm
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/AudioSubTypes.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: OkiAdpcm
+    path: ../SilverCraft.CSCore/AudioSubTypes.cs
+    startLine: 42
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore
+  summary: WAVE_FORMAT_OKI_ADPCM	OKI
+  example: []
+  syntax:
+    content: public static readonly Guid OkiAdpcm
+    return:
+      type: System.Guid
+    content.vb: Public Shared ReadOnly OkiAdpcm As Guid
+- uid: SilverCraft.CSCore.AudioSubTypes.DviAdpcm
+  commentId: F:SilverCraft.CSCore.AudioSubTypes.DviAdpcm
+  id: DviAdpcm
+  parent: SilverCraft.CSCore.AudioSubTypes
+  langs:
+  - csharp
+  - vb
+  name: DviAdpcm
+  nameWithType: AudioSubTypes.DviAdpcm
+  fullName: SilverCraft.CSCore.AudioSubTypes.DviAdpcm
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/AudioSubTypes.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: DviAdpcm
+    path: ../SilverCraft.CSCore/AudioSubTypes.cs
+    startLine: 45
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore
+  summary: WAVE_FORMAT_DVI_ADPCM	Intel Corporation
+  example: []
+  syntax:
+    content: public static readonly Guid DviAdpcm
+    return:
+      type: System.Guid
+    content.vb: Public Shared ReadOnly DviAdpcm As Guid
+- uid: SilverCraft.CSCore.AudioSubTypes.ImaAdpcm
+  commentId: F:SilverCraft.CSCore.AudioSubTypes.ImaAdpcm
+  id: ImaAdpcm
+  parent: SilverCraft.CSCore.AudioSubTypes
+  langs:
+  - csharp
+  - vb
+  name: ImaAdpcm
+  nameWithType: AudioSubTypes.ImaAdpcm
+  fullName: SilverCraft.CSCore.AudioSubTypes.ImaAdpcm
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/AudioSubTypes.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: ImaAdpcm
+    path: ../SilverCraft.CSCore/AudioSubTypes.cs
+    startLine: 48
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore
+  summary: WAVE_FORMAT_IMA_ADPCM  Intel Corporation
+  example: []
+  syntax:
+    content: public static readonly Guid ImaAdpcm
+    return:
+      type: System.Guid
+    content.vb: Public Shared ReadOnly ImaAdpcm As Guid
+- uid: SilverCraft.CSCore.AudioSubTypes.MediaspaceAdpcm
+  commentId: F:SilverCraft.CSCore.AudioSubTypes.MediaspaceAdpcm
+  id: MediaspaceAdpcm
+  parent: SilverCraft.CSCore.AudioSubTypes
+  langs:
+  - csharp
+  - vb
+  name: MediaspaceAdpcm
+  nameWithType: AudioSubTypes.MediaspaceAdpcm
+  fullName: SilverCraft.CSCore.AudioSubTypes.MediaspaceAdpcm
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/AudioSubTypes.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: MediaspaceAdpcm
+    path: ../SilverCraft.CSCore/AudioSubTypes.cs
+    startLine: 51
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore
+  summary: WAVE_FORMAT_MEDIASPACE_ADPCM Videologic
+  example: []
+  syntax:
+    content: public static readonly Guid MediaspaceAdpcm
+    return:
+      type: System.Guid
+    content.vb: Public Shared ReadOnly MediaspaceAdpcm As Guid
+- uid: SilverCraft.CSCore.AudioSubTypes.SierraAdpcm
+  commentId: F:SilverCraft.CSCore.AudioSubTypes.SierraAdpcm
+  id: SierraAdpcm
+  parent: SilverCraft.CSCore.AudioSubTypes
+  langs:
+  - csharp
+  - vb
+  name: SierraAdpcm
+  nameWithType: AudioSubTypes.SierraAdpcm
+  fullName: SilverCraft.CSCore.AudioSubTypes.SierraAdpcm
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/AudioSubTypes.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: SierraAdpcm
+    path: ../SilverCraft.CSCore/AudioSubTypes.cs
+    startLine: 54
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore
+  summary: WAVE_FORMAT_SIERRA_ADPCM Sierra Semiconductor Corp
+  example: []
+  syntax:
+    content: public static readonly Guid SierraAdpcm
+    return:
+      type: System.Guid
+    content.vb: Public Shared ReadOnly SierraAdpcm As Guid
+- uid: SilverCraft.CSCore.AudioSubTypes.G723Adpcm
+  commentId: F:SilverCraft.CSCore.AudioSubTypes.G723Adpcm
+  id: G723Adpcm
+  parent: SilverCraft.CSCore.AudioSubTypes
+  langs:
+  - csharp
+  - vb
+  name: G723Adpcm
+  nameWithType: AudioSubTypes.G723Adpcm
+  fullName: SilverCraft.CSCore.AudioSubTypes.G723Adpcm
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/AudioSubTypes.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: G723Adpcm
+    path: ../SilverCraft.CSCore/AudioSubTypes.cs
+    startLine: 57
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore
+  summary: WAVE_FORMAT_G723_ADPCM Antex Electronics Corporation
+  example: []
+  syntax:
+    content: public static readonly Guid G723Adpcm
+    return:
+      type: System.Guid
+    content.vb: Public Shared ReadOnly G723Adpcm As Guid
+- uid: SilverCraft.CSCore.AudioSubTypes.DigiStd
+  commentId: F:SilverCraft.CSCore.AudioSubTypes.DigiStd
+  id: DigiStd
+  parent: SilverCraft.CSCore.AudioSubTypes
+  langs:
+  - csharp
+  - vb
+  name: DigiStd
+  nameWithType: AudioSubTypes.DigiStd
+  fullName: SilverCraft.CSCore.AudioSubTypes.DigiStd
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/AudioSubTypes.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: DigiStd
+    path: ../SilverCraft.CSCore/AudioSubTypes.cs
+    startLine: 60
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore
+  summary: WAVE_FORMAT_DIGISTD DSP Solutions, Inc.
+  example: []
+  syntax:
+    content: public static readonly Guid DigiStd
+    return:
+      type: System.Guid
+    content.vb: Public Shared ReadOnly DigiStd As Guid
+- uid: SilverCraft.CSCore.AudioSubTypes.DigiFix
+  commentId: F:SilverCraft.CSCore.AudioSubTypes.DigiFix
+  id: DigiFix
+  parent: SilverCraft.CSCore.AudioSubTypes
+  langs:
+  - csharp
+  - vb
+  name: DigiFix
+  nameWithType: AudioSubTypes.DigiFix
+  fullName: SilverCraft.CSCore.AudioSubTypes.DigiFix
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/AudioSubTypes.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: DigiFix
+    path: ../SilverCraft.CSCore/AudioSubTypes.cs
+    startLine: 63
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore
+  summary: WAVE_FORMAT_DIGIFIX DSP Solutions, Inc.
+  example: []
+  syntax:
+    content: public static readonly Guid DigiFix
+    return:
+      type: System.Guid
+    content.vb: Public Shared ReadOnly DigiFix As Guid
+- uid: SilverCraft.CSCore.AudioSubTypes.DialogicOkiAdpcm
+  commentId: F:SilverCraft.CSCore.AudioSubTypes.DialogicOkiAdpcm
+  id: DialogicOkiAdpcm
+  parent: SilverCraft.CSCore.AudioSubTypes
+  langs:
+  - csharp
+  - vb
+  name: DialogicOkiAdpcm
+  nameWithType: AudioSubTypes.DialogicOkiAdpcm
+  fullName: SilverCraft.CSCore.AudioSubTypes.DialogicOkiAdpcm
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/AudioSubTypes.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: DialogicOkiAdpcm
+    path: ../SilverCraft.CSCore/AudioSubTypes.cs
+    startLine: 66
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore
+  summary: WAVE_FORMAT_DIALOGIC_OKI_ADPCM Dialogic Corporation
+  example: []
+  syntax:
+    content: public static readonly Guid DialogicOkiAdpcm
+    return:
+      type: System.Guid
+    content.vb: Public Shared ReadOnly DialogicOkiAdpcm As Guid
+- uid: SilverCraft.CSCore.AudioSubTypes.MediaVisionAdpcm
+  commentId: F:SilverCraft.CSCore.AudioSubTypes.MediaVisionAdpcm
+  id: MediaVisionAdpcm
+  parent: SilverCraft.CSCore.AudioSubTypes
+  langs:
+  - csharp
+  - vb
+  name: MediaVisionAdpcm
+  nameWithType: AudioSubTypes.MediaVisionAdpcm
+  fullName: SilverCraft.CSCore.AudioSubTypes.MediaVisionAdpcm
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/AudioSubTypes.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: MediaVisionAdpcm
+    path: ../SilverCraft.CSCore/AudioSubTypes.cs
+    startLine: 69
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore
+  summary: WAVE_FORMAT_MEDIAVISION_ADPCM Media Vision, Inc.
+  example: []
+  syntax:
+    content: public static readonly Guid MediaVisionAdpcm
+    return:
+      type: System.Guid
+    content.vb: Public Shared ReadOnly MediaVisionAdpcm As Guid
+- uid: SilverCraft.CSCore.AudioSubTypes.CUCodec
+  commentId: F:SilverCraft.CSCore.AudioSubTypes.CUCodec
+  id: CUCodec
+  parent: SilverCraft.CSCore.AudioSubTypes
+  langs:
+  - csharp
+  - vb
+  name: CUCodec
+  nameWithType: AudioSubTypes.CUCodec
+  fullName: SilverCraft.CSCore.AudioSubTypes.CUCodec
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/AudioSubTypes.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: CUCodec
+    path: ../SilverCraft.CSCore/AudioSubTypes.cs
+    startLine: 72
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore
+  summary: WAVE_FORMAT_CU_CODEC Hewlett-Packard Company
+  example: []
+  syntax:
+    content: public static readonly Guid CUCodec
+    return:
+      type: System.Guid
+    content.vb: Public Shared ReadOnly CUCodec As Guid
+- uid: SilverCraft.CSCore.AudioSubTypes.YamahaAdpcm
+  commentId: F:SilverCraft.CSCore.AudioSubTypes.YamahaAdpcm
+  id: YamahaAdpcm
+  parent: SilverCraft.CSCore.AudioSubTypes
+  langs:
+  - csharp
+  - vb
+  name: YamahaAdpcm
+  nameWithType: AudioSubTypes.YamahaAdpcm
+  fullName: SilverCraft.CSCore.AudioSubTypes.YamahaAdpcm
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/AudioSubTypes.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: YamahaAdpcm
+    path: ../SilverCraft.CSCore/AudioSubTypes.cs
+    startLine: 75
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore
+  summary: WAVE_FORMAT_YAMAHA_ADPCM Yamaha Corporation of America
+  example: []
+  syntax:
+    content: public static readonly Guid YamahaAdpcm
+    return:
+      type: System.Guid
+    content.vb: Public Shared ReadOnly YamahaAdpcm As Guid
+- uid: SilverCraft.CSCore.AudioSubTypes.SonarC
+  commentId: F:SilverCraft.CSCore.AudioSubTypes.SonarC
+  id: SonarC
+  parent: SilverCraft.CSCore.AudioSubTypes
+  langs:
+  - csharp
+  - vb
+  name: SonarC
+  nameWithType: AudioSubTypes.SonarC
+  fullName: SilverCraft.CSCore.AudioSubTypes.SonarC
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/AudioSubTypes.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: SonarC
+    path: ../SilverCraft.CSCore/AudioSubTypes.cs
+    startLine: 78
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore
+  summary: WAVE_FORMAT_SONARC Speech Compression
+  example: []
+  syntax:
+    content: public static readonly Guid SonarC
+    return:
+      type: System.Guid
+    content.vb: Public Shared ReadOnly SonarC As Guid
+- uid: SilverCraft.CSCore.AudioSubTypes.DspGroupTrueSpeech
+  commentId: F:SilverCraft.CSCore.AudioSubTypes.DspGroupTrueSpeech
+  id: DspGroupTrueSpeech
+  parent: SilverCraft.CSCore.AudioSubTypes
+  langs:
+  - csharp
+  - vb
+  name: DspGroupTrueSpeech
+  nameWithType: AudioSubTypes.DspGroupTrueSpeech
+  fullName: SilverCraft.CSCore.AudioSubTypes.DspGroupTrueSpeech
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/AudioSubTypes.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: DspGroupTrueSpeech
+    path: ../SilverCraft.CSCore/AudioSubTypes.cs
+    startLine: 81
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore
+  summary: WAVE_FORMAT_DSPGROUP_TRUESPEECH DSP Group, Inc
+  example: []
+  syntax:
+    content: public static readonly Guid DspGroupTrueSpeech
+    return:
+      type: System.Guid
+    content.vb: Public Shared ReadOnly DspGroupTrueSpeech As Guid
+- uid: SilverCraft.CSCore.AudioSubTypes.EchoSpeechCorporation1
+  commentId: F:SilverCraft.CSCore.AudioSubTypes.EchoSpeechCorporation1
+  id: EchoSpeechCorporation1
+  parent: SilverCraft.CSCore.AudioSubTypes
+  langs:
+  - csharp
+  - vb
+  name: EchoSpeechCorporation1
+  nameWithType: AudioSubTypes.EchoSpeechCorporation1
+  fullName: SilverCraft.CSCore.AudioSubTypes.EchoSpeechCorporation1
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/AudioSubTypes.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: EchoSpeechCorporation1
+    path: ../SilverCraft.CSCore/AudioSubTypes.cs
+    startLine: 84
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore
+  summary: WAVE_FORMAT_ECHOSC1 Echo Speech Corporation
+  example: []
+  syntax:
+    content: public static readonly Guid EchoSpeechCorporation1
+    return:
+      type: System.Guid
+    content.vb: Public Shared ReadOnly EchoSpeechCorporation1 As Guid
+- uid: SilverCraft.CSCore.AudioSubTypes.AudioFileAf36
+  commentId: F:SilverCraft.CSCore.AudioSubTypes.AudioFileAf36
+  id: AudioFileAf36
+  parent: SilverCraft.CSCore.AudioSubTypes
+  langs:
+  - csharp
+  - vb
+  name: AudioFileAf36
+  nameWithType: AudioSubTypes.AudioFileAf36
+  fullName: SilverCraft.CSCore.AudioSubTypes.AudioFileAf36
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/AudioSubTypes.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: AudioFileAf36
+    path: ../SilverCraft.CSCore/AudioSubTypes.cs
+    startLine: 87
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore
+  summary: WAVE_FORMAT_AUDIOFILE_AF36, Virtual Music, Inc.
+  example: []
+  syntax:
+    content: public static readonly Guid AudioFileAf36
+    return:
+      type: System.Guid
+    content.vb: Public Shared ReadOnly AudioFileAf36 As Guid
+- uid: SilverCraft.CSCore.AudioSubTypes.Aptx
+  commentId: F:SilverCraft.CSCore.AudioSubTypes.Aptx
+  id: Aptx
+  parent: SilverCraft.CSCore.AudioSubTypes
+  langs:
+  - csharp
+  - vb
+  name: Aptx
+  nameWithType: AudioSubTypes.Aptx
+  fullName: SilverCraft.CSCore.AudioSubTypes.Aptx
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/AudioSubTypes.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: Aptx
+    path: ../SilverCraft.CSCore/AudioSubTypes.cs
+    startLine: 90
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore
+  summary: WAVE_FORMAT_APTX Audio Processing Technology
+  example: []
+  syntax:
+    content: public static readonly Guid Aptx
+    return:
+      type: System.Guid
+    content.vb: Public Shared ReadOnly Aptx As Guid
+- uid: SilverCraft.CSCore.AudioSubTypes.AudioFileAf10
+  commentId: F:SilverCraft.CSCore.AudioSubTypes.AudioFileAf10
+  id: AudioFileAf10
+  parent: SilverCraft.CSCore.AudioSubTypes
+  langs:
+  - csharp
+  - vb
+  name: AudioFileAf10
+  nameWithType: AudioSubTypes.AudioFileAf10
+  fullName: SilverCraft.CSCore.AudioSubTypes.AudioFileAf10
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/AudioSubTypes.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: AudioFileAf10
+    path: ../SilverCraft.CSCore/AudioSubTypes.cs
+    startLine: 93
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore
+  summary: WAVE_FORMAT_AUDIOFILE_AF10, Virtual Music, Inc.
+  example: []
+  syntax:
+    content: public static readonly Guid AudioFileAf10
+    return:
+      type: System.Guid
+    content.vb: Public Shared ReadOnly AudioFileAf10 As Guid
+- uid: SilverCraft.CSCore.AudioSubTypes.Prosody1612
+  commentId: F:SilverCraft.CSCore.AudioSubTypes.Prosody1612
+  id: Prosody1612
+  parent: SilverCraft.CSCore.AudioSubTypes
+  langs:
+  - csharp
+  - vb
+  name: Prosody1612
+  nameWithType: AudioSubTypes.Prosody1612
+  fullName: SilverCraft.CSCore.AudioSubTypes.Prosody1612
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/AudioSubTypes.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: Prosody1612
+    path: ../SilverCraft.CSCore/AudioSubTypes.cs
+    startLine: 96
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore
+  summary: WAVE_FORMAT_PROSODY_1612, Aculab plc
+  example: []
+  syntax:
+    content: public static readonly Guid Prosody1612
+    return:
+      type: System.Guid
+    content.vb: Public Shared ReadOnly Prosody1612 As Guid
+- uid: SilverCraft.CSCore.AudioSubTypes.Lrc
+  commentId: F:SilverCraft.CSCore.AudioSubTypes.Lrc
+  id: Lrc
+  parent: SilverCraft.CSCore.AudioSubTypes
+  langs:
+  - csharp
+  - vb
+  name: Lrc
+  nameWithType: AudioSubTypes.Lrc
+  fullName: SilverCraft.CSCore.AudioSubTypes.Lrc
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/AudioSubTypes.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: Lrc
+    path: ../SilverCraft.CSCore/AudioSubTypes.cs
+    startLine: 99
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore
+  summary: WAVE_FORMAT_LRC, Merging Technologies S.A.
+  example: []
+  syntax:
+    content: public static readonly Guid Lrc
+    return:
+      type: System.Guid
+    content.vb: Public Shared ReadOnly Lrc As Guid
+- uid: SilverCraft.CSCore.AudioSubTypes.DolbyAc2
+  commentId: F:SilverCraft.CSCore.AudioSubTypes.DolbyAc2
+  id: DolbyAc2
+  parent: SilverCraft.CSCore.AudioSubTypes
+  langs:
+  - csharp
+  - vb
+  name: DolbyAc2
+  nameWithType: AudioSubTypes.DolbyAc2
+  fullName: SilverCraft.CSCore.AudioSubTypes.DolbyAc2
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/AudioSubTypes.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: DolbyAc2
+    path: ../SilverCraft.CSCore/AudioSubTypes.cs
+    startLine: 102
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore
+  summary: WAVE_FORMAT_DOLBY_AC2, Dolby Laboratories
+  example: []
+  syntax:
+    content: public static readonly Guid DolbyAc2
+    return:
+      type: System.Guid
+    content.vb: Public Shared ReadOnly DolbyAc2 As Guid
+- uid: SilverCraft.CSCore.AudioSubTypes.Gsm610
+  commentId: F:SilverCraft.CSCore.AudioSubTypes.Gsm610
+  id: Gsm610
+  parent: SilverCraft.CSCore.AudioSubTypes
+  langs:
+  - csharp
+  - vb
+  name: Gsm610
+  nameWithType: AudioSubTypes.Gsm610
+  fullName: SilverCraft.CSCore.AudioSubTypes.Gsm610
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/AudioSubTypes.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: Gsm610
+    path: ../SilverCraft.CSCore/AudioSubTypes.cs
+    startLine: 105
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore
+  summary: WAVE_FORMAT_GSM610, Microsoft Corporation
+  example: []
+  syntax:
+    content: public static readonly Guid Gsm610
+    return:
+      type: System.Guid
+    content.vb: Public Shared ReadOnly Gsm610 As Guid
+- uid: SilverCraft.CSCore.AudioSubTypes.MsnAudio
+  commentId: F:SilverCraft.CSCore.AudioSubTypes.MsnAudio
+  id: MsnAudio
+  parent: SilverCraft.CSCore.AudioSubTypes
+  langs:
+  - csharp
+  - vb
+  name: MsnAudio
+  nameWithType: AudioSubTypes.MsnAudio
+  fullName: SilverCraft.CSCore.AudioSubTypes.MsnAudio
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/AudioSubTypes.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: MsnAudio
+    path: ../SilverCraft.CSCore/AudioSubTypes.cs
+    startLine: 108
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore
+  summary: WAVE_FORMAT_MSNAUDIO, Microsoft Corporation
+  example: []
+  syntax:
+    content: public static readonly Guid MsnAudio
+    return:
+      type: System.Guid
+    content.vb: Public Shared ReadOnly MsnAudio As Guid
+- uid: SilverCraft.CSCore.AudioSubTypes.AntexAdpcme
+  commentId: F:SilverCraft.CSCore.AudioSubTypes.AntexAdpcme
+  id: AntexAdpcme
+  parent: SilverCraft.CSCore.AudioSubTypes
+  langs:
+  - csharp
+  - vb
+  name: AntexAdpcme
+  nameWithType: AudioSubTypes.AntexAdpcme
+  fullName: SilverCraft.CSCore.AudioSubTypes.AntexAdpcme
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/AudioSubTypes.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: AntexAdpcme
+    path: ../SilverCraft.CSCore/AudioSubTypes.cs
+    startLine: 111
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore
+  summary: WAVE_FORMAT_ANTEX_ADPCME, Antex Electronics Corporation
+  example: []
+  syntax:
+    content: public static readonly Guid AntexAdpcme
+    return:
+      type: System.Guid
+    content.vb: Public Shared ReadOnly AntexAdpcme As Guid
+- uid: SilverCraft.CSCore.AudioSubTypes.ControlResVqlpc
+  commentId: F:SilverCraft.CSCore.AudioSubTypes.ControlResVqlpc
+  id: ControlResVqlpc
+  parent: SilverCraft.CSCore.AudioSubTypes
+  langs:
+  - csharp
+  - vb
+  name: ControlResVqlpc
+  nameWithType: AudioSubTypes.ControlResVqlpc
+  fullName: SilverCraft.CSCore.AudioSubTypes.ControlResVqlpc
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/AudioSubTypes.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: ControlResVqlpc
+    path: ../SilverCraft.CSCore/AudioSubTypes.cs
+    startLine: 114
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore
+  summary: WAVE_FORMAT_CONTROL_RES_VQLPC, Control Resources Limited
+  example: []
+  syntax:
+    content: public static readonly Guid ControlResVqlpc
+    return:
+      type: System.Guid
+    content.vb: Public Shared ReadOnly ControlResVqlpc As Guid
+- uid: SilverCraft.CSCore.AudioSubTypes.DigiReal
+  commentId: F:SilverCraft.CSCore.AudioSubTypes.DigiReal
+  id: DigiReal
+  parent: SilverCraft.CSCore.AudioSubTypes
+  langs:
+  - csharp
+  - vb
+  name: DigiReal
+  nameWithType: AudioSubTypes.DigiReal
+  fullName: SilverCraft.CSCore.AudioSubTypes.DigiReal
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/AudioSubTypes.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: DigiReal
+    path: ../SilverCraft.CSCore/AudioSubTypes.cs
+    startLine: 117
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore
+  summary: WAVE_FORMAT_DIGIREAL, DSP Solutions, Inc.
+  example: []
+  syntax:
+    content: public static readonly Guid DigiReal
+    return:
+      type: System.Guid
+    content.vb: Public Shared ReadOnly DigiReal As Guid
+- uid: SilverCraft.CSCore.AudioSubTypes.DigiAdpcm
+  commentId: F:SilverCraft.CSCore.AudioSubTypes.DigiAdpcm
+  id: DigiAdpcm
+  parent: SilverCraft.CSCore.AudioSubTypes
+  langs:
+  - csharp
+  - vb
+  name: DigiAdpcm
+  nameWithType: AudioSubTypes.DigiAdpcm
+  fullName: SilverCraft.CSCore.AudioSubTypes.DigiAdpcm
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/AudioSubTypes.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: DigiAdpcm
+    path: ../SilverCraft.CSCore/AudioSubTypes.cs
+    startLine: 120
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore
+  summary: WAVE_FORMAT_DIGIADPCM, DSP Solutions, Inc.
+  example: []
+  syntax:
+    content: public static readonly Guid DigiAdpcm
+    return:
+      type: System.Guid
+    content.vb: Public Shared ReadOnly DigiAdpcm As Guid
+- uid: SilverCraft.CSCore.AudioSubTypes.ControlResCr10
+  commentId: F:SilverCraft.CSCore.AudioSubTypes.ControlResCr10
+  id: ControlResCr10
+  parent: SilverCraft.CSCore.AudioSubTypes
+  langs:
+  - csharp
+  - vb
+  name: ControlResCr10
+  nameWithType: AudioSubTypes.ControlResCr10
+  fullName: SilverCraft.CSCore.AudioSubTypes.ControlResCr10
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/AudioSubTypes.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: ControlResCr10
+    path: ../SilverCraft.CSCore/AudioSubTypes.cs
+    startLine: 123
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore
+  summary: WAVE_FORMAT_CONTROL_RES_CR10, Control Resources Limited
+  example: []
+  syntax:
+    content: public static readonly Guid ControlResCr10
+    return:
+      type: System.Guid
+    content.vb: Public Shared ReadOnly ControlResCr10 As Guid
+- uid: SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_NMS_VBXADPCM
+  commentId: F:SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_NMS_VBXADPCM
+  id: WAVE_FORMAT_NMS_VBXADPCM
+  parent: SilverCraft.CSCore.AudioSubTypes
+  langs:
+  - csharp
+  - vb
+  name: WAVE_FORMAT_NMS_VBXADPCM
+  nameWithType: AudioSubTypes.WAVE_FORMAT_NMS_VBXADPCM
+  fullName: SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_NMS_VBXADPCM
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/AudioSubTypes.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: WAVE_FORMAT_NMS_VBXADPCM
+    path: ../SilverCraft.CSCore/AudioSubTypes.cs
+    startLine: 126
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore
+  summary: WAVE_FORMAT_NMS_VBXADPCM
+  example: []
+  syntax:
+    content: public static readonly Guid WAVE_FORMAT_NMS_VBXADPCM
+    return:
+      type: System.Guid
+    content.vb: Public Shared ReadOnly WAVE_FORMAT_NMS_VBXADPCM As Guid
+- uid: SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_CS_IMAADPCM
+  commentId: F:SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_CS_IMAADPCM
+  id: WAVE_FORMAT_CS_IMAADPCM
+  parent: SilverCraft.CSCore.AudioSubTypes
+  langs:
+  - csharp
+  - vb
+  name: WAVE_FORMAT_CS_IMAADPCM
+  nameWithType: AudioSubTypes.WAVE_FORMAT_CS_IMAADPCM
+  fullName: SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_CS_IMAADPCM
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/AudioSubTypes.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: WAVE_FORMAT_CS_IMAADPCM
+    path: ../SilverCraft.CSCore/AudioSubTypes.cs
+    startLine: 129
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore
+  summary: WAVE_FORMAT_CS_IMAADPCM
+  example: []
+  syntax:
+    content: public static readonly Guid WAVE_FORMAT_CS_IMAADPCM
+    return:
+      type: System.Guid
+    content.vb: Public Shared ReadOnly WAVE_FORMAT_CS_IMAADPCM As Guid
+- uid: SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_ECHOSC3
+  commentId: F:SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_ECHOSC3
+  id: WAVE_FORMAT_ECHOSC3
+  parent: SilverCraft.CSCore.AudioSubTypes
+  langs:
+  - csharp
+  - vb
+  name: WAVE_FORMAT_ECHOSC3
+  nameWithType: AudioSubTypes.WAVE_FORMAT_ECHOSC3
+  fullName: SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_ECHOSC3
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/AudioSubTypes.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: WAVE_FORMAT_ECHOSC3
+    path: ../SilverCraft.CSCore/AudioSubTypes.cs
+    startLine: 132
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore
+  summary: WAVE_FORMAT_ECHOSC3
+  example: []
+  syntax:
+    content: public static readonly Guid WAVE_FORMAT_ECHOSC3
+    return:
+      type: System.Guid
+    content.vb: Public Shared ReadOnly WAVE_FORMAT_ECHOSC3 As Guid
+- uid: SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_ROCKWELL_ADPCM
+  commentId: F:SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_ROCKWELL_ADPCM
+  id: WAVE_FORMAT_ROCKWELL_ADPCM
+  parent: SilverCraft.CSCore.AudioSubTypes
+  langs:
+  - csharp
+  - vb
+  name: WAVE_FORMAT_ROCKWELL_ADPCM
+  nameWithType: AudioSubTypes.WAVE_FORMAT_ROCKWELL_ADPCM
+  fullName: SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_ROCKWELL_ADPCM
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/AudioSubTypes.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: WAVE_FORMAT_ROCKWELL_ADPCM
+    path: ../SilverCraft.CSCore/AudioSubTypes.cs
+    startLine: 135
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore
+  summary: WAVE_FORMAT_ROCKWELL_ADPCM
+  example: []
+  syntax:
+    content: public static readonly Guid WAVE_FORMAT_ROCKWELL_ADPCM
+    return:
+      type: System.Guid
+    content.vb: Public Shared ReadOnly WAVE_FORMAT_ROCKWELL_ADPCM As Guid
+- uid: SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_ROCKWELL_DIGITALK
+  commentId: F:SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_ROCKWELL_DIGITALK
+  id: WAVE_FORMAT_ROCKWELL_DIGITALK
+  parent: SilverCraft.CSCore.AudioSubTypes
+  langs:
+  - csharp
+  - vb
+  name: WAVE_FORMAT_ROCKWELL_DIGITALK
+  nameWithType: AudioSubTypes.WAVE_FORMAT_ROCKWELL_DIGITALK
+  fullName: SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_ROCKWELL_DIGITALK
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/AudioSubTypes.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: WAVE_FORMAT_ROCKWELL_DIGITALK
+    path: ../SilverCraft.CSCore/AudioSubTypes.cs
+    startLine: 138
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore
+  summary: WAVE_FORMAT_ROCKWELL_DIGITALK
+  example: []
+  syntax:
+    content: public static readonly Guid WAVE_FORMAT_ROCKWELL_DIGITALK
+    return:
+      type: System.Guid
+    content.vb: Public Shared ReadOnly WAVE_FORMAT_ROCKWELL_DIGITALK As Guid
+- uid: SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_XEBEC
+  commentId: F:SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_XEBEC
+  id: WAVE_FORMAT_XEBEC
+  parent: SilverCraft.CSCore.AudioSubTypes
+  langs:
+  - csharp
+  - vb
+  name: WAVE_FORMAT_XEBEC
+  nameWithType: AudioSubTypes.WAVE_FORMAT_XEBEC
+  fullName: SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_XEBEC
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/AudioSubTypes.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: WAVE_FORMAT_XEBEC
+    path: ../SilverCraft.CSCore/AudioSubTypes.cs
+    startLine: 141
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore
+  summary: WAVE_FORMAT_XEBEC
+  example: []
+  syntax:
+    content: public static readonly Guid WAVE_FORMAT_XEBEC
+    return:
+      type: System.Guid
+    content.vb: Public Shared ReadOnly WAVE_FORMAT_XEBEC As Guid
+- uid: SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_G721_ADPCM
+  commentId: F:SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_G721_ADPCM
+  id: WAVE_FORMAT_G721_ADPCM
+  parent: SilverCraft.CSCore.AudioSubTypes
+  langs:
+  - csharp
+  - vb
+  name: WAVE_FORMAT_G721_ADPCM
+  nameWithType: AudioSubTypes.WAVE_FORMAT_G721_ADPCM
+  fullName: SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_G721_ADPCM
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/AudioSubTypes.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: WAVE_FORMAT_G721_ADPCM
+    path: ../SilverCraft.CSCore/AudioSubTypes.cs
+    startLine: 144
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore
+  summary: WAVE_FORMAT_G721_ADPCM
+  example: []
+  syntax:
+    content: public static readonly Guid WAVE_FORMAT_G721_ADPCM
+    return:
+      type: System.Guid
+    content.vb: Public Shared ReadOnly WAVE_FORMAT_G721_ADPCM As Guid
+- uid: SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_G728_CELP
+  commentId: F:SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_G728_CELP
+  id: WAVE_FORMAT_G728_CELP
+  parent: SilverCraft.CSCore.AudioSubTypes
+  langs:
+  - csharp
+  - vb
+  name: WAVE_FORMAT_G728_CELP
+  nameWithType: AudioSubTypes.WAVE_FORMAT_G728_CELP
+  fullName: SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_G728_CELP
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/AudioSubTypes.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: WAVE_FORMAT_G728_CELP
+    path: ../SilverCraft.CSCore/AudioSubTypes.cs
+    startLine: 147
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore
+  summary: WAVE_FORMAT_G728_CELP
+  example: []
+  syntax:
+    content: public static readonly Guid WAVE_FORMAT_G728_CELP
+    return:
+      type: System.Guid
+    content.vb: Public Shared ReadOnly WAVE_FORMAT_G728_CELP As Guid
+- uid: SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_MSG723
+  commentId: F:SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_MSG723
+  id: WAVE_FORMAT_MSG723
+  parent: SilverCraft.CSCore.AudioSubTypes
+  langs:
+  - csharp
+  - vb
+  name: WAVE_FORMAT_MSG723
+  nameWithType: AudioSubTypes.WAVE_FORMAT_MSG723
+  fullName: SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_MSG723
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/AudioSubTypes.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: WAVE_FORMAT_MSG723
+    path: ../SilverCraft.CSCore/AudioSubTypes.cs
+    startLine: 150
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore
+  summary: WAVE_FORMAT_MSG723
+  example: []
+  syntax:
+    content: public static readonly Guid WAVE_FORMAT_MSG723
+    return:
+      type: System.Guid
+    content.vb: Public Shared ReadOnly WAVE_FORMAT_MSG723 As Guid
+- uid: SilverCraft.CSCore.AudioSubTypes.Mpeg
+  commentId: F:SilverCraft.CSCore.AudioSubTypes.Mpeg
+  id: Mpeg
+  parent: SilverCraft.CSCore.AudioSubTypes
+  langs:
+  - csharp
+  - vb
+  name: Mpeg
+  nameWithType: AudioSubTypes.Mpeg
+  fullName: SilverCraft.CSCore.AudioSubTypes.Mpeg
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/AudioSubTypes.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: Mpeg
+    path: ../SilverCraft.CSCore/AudioSubTypes.cs
+    startLine: 153
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore
+  summary: WAVE_FORMAT_MPEG, Microsoft Corporation
+  example: []
+  syntax:
+    content: public static readonly Guid Mpeg
+    return:
+      type: System.Guid
+    content.vb: Public Shared ReadOnly Mpeg As Guid
+- uid: SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_RT24
+  commentId: F:SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_RT24
+  id: WAVE_FORMAT_RT24
+  parent: SilverCraft.CSCore.AudioSubTypes
+  langs:
+  - csharp
+  - vb
+  name: WAVE_FORMAT_RT24
+  nameWithType: AudioSubTypes.WAVE_FORMAT_RT24
+  fullName: SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_RT24
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/AudioSubTypes.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: WAVE_FORMAT_RT24
+    path: ../SilverCraft.CSCore/AudioSubTypes.cs
+    startLine: 156
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore
+  summary: WAVE_FORMAT_RT24
+  example: []
+  syntax:
+    content: public static readonly Guid WAVE_FORMAT_RT24
+    return:
+      type: System.Guid
+    content.vb: Public Shared ReadOnly WAVE_FORMAT_RT24 As Guid
+- uid: SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_PAC
+  commentId: F:SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_PAC
+  id: WAVE_FORMAT_PAC
+  parent: SilverCraft.CSCore.AudioSubTypes
+  langs:
+  - csharp
+  - vb
+  name: WAVE_FORMAT_PAC
+  nameWithType: AudioSubTypes.WAVE_FORMAT_PAC
+  fullName: SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_PAC
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/AudioSubTypes.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: WAVE_FORMAT_PAC
+    path: ../SilverCraft.CSCore/AudioSubTypes.cs
+    startLine: 159
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore
+  summary: WAVE_FORMAT_PAC
+  example: []
+  syntax:
+    content: public static readonly Guid WAVE_FORMAT_PAC
+    return:
+      type: System.Guid
+    content.vb: Public Shared ReadOnly WAVE_FORMAT_PAC As Guid
+- uid: SilverCraft.CSCore.AudioSubTypes.MpegLayer3
+  commentId: F:SilverCraft.CSCore.AudioSubTypes.MpegLayer3
+  id: MpegLayer3
+  parent: SilverCraft.CSCore.AudioSubTypes
+  langs:
+  - csharp
+  - vb
+  name: MpegLayer3
+  nameWithType: AudioSubTypes.MpegLayer3
+  fullName: SilverCraft.CSCore.AudioSubTypes.MpegLayer3
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/AudioSubTypes.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: MpegLayer3
+    path: ../SilverCraft.CSCore/AudioSubTypes.cs
+    startLine: 162
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore
+  summary: WAVE_FORMAT_MPEGLAYER3, ISO/MPEG Layer3 Format Tag
+  example: []
+  syntax:
+    content: public static readonly Guid MpegLayer3
+    return:
+      type: System.Guid
+    content.vb: Public Shared ReadOnly MpegLayer3 As Guid
+- uid: SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_LUCENT_G723
+  commentId: F:SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_LUCENT_G723
+  id: WAVE_FORMAT_LUCENT_G723
+  parent: SilverCraft.CSCore.AudioSubTypes
+  langs:
+  - csharp
+  - vb
+  name: WAVE_FORMAT_LUCENT_G723
+  nameWithType: AudioSubTypes.WAVE_FORMAT_LUCENT_G723
+  fullName: SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_LUCENT_G723
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/AudioSubTypes.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: WAVE_FORMAT_LUCENT_G723
+    path: ../SilverCraft.CSCore/AudioSubTypes.cs
+    startLine: 165
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore
+  summary: WAVE_FORMAT_LUCENT_G723
+  example: []
+  syntax:
+    content: public static readonly Guid WAVE_FORMAT_LUCENT_G723
+    return:
+      type: System.Guid
+    content.vb: Public Shared ReadOnly WAVE_FORMAT_LUCENT_G723 As Guid
+- uid: SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_CIRRUS
+  commentId: F:SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_CIRRUS
+  id: WAVE_FORMAT_CIRRUS
+  parent: SilverCraft.CSCore.AudioSubTypes
+  langs:
+  - csharp
+  - vb
+  name: WAVE_FORMAT_CIRRUS
+  nameWithType: AudioSubTypes.WAVE_FORMAT_CIRRUS
+  fullName: SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_CIRRUS
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/AudioSubTypes.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: WAVE_FORMAT_CIRRUS
+    path: ../SilverCraft.CSCore/AudioSubTypes.cs
+    startLine: 168
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore
+  summary: WAVE_FORMAT_CIRRUS
+  example: []
+  syntax:
+    content: public static readonly Guid WAVE_FORMAT_CIRRUS
+    return:
+      type: System.Guid
+    content.vb: Public Shared ReadOnly WAVE_FORMAT_CIRRUS As Guid
+- uid: SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_ESPCM
+  commentId: F:SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_ESPCM
+  id: WAVE_FORMAT_ESPCM
+  parent: SilverCraft.CSCore.AudioSubTypes
+  langs:
+  - csharp
+  - vb
+  name: WAVE_FORMAT_ESPCM
+  nameWithType: AudioSubTypes.WAVE_FORMAT_ESPCM
+  fullName: SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_ESPCM
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/AudioSubTypes.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: WAVE_FORMAT_ESPCM
+    path: ../SilverCraft.CSCore/AudioSubTypes.cs
+    startLine: 171
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore
+  summary: WAVE_FORMAT_ESPCM
+  example: []
+  syntax:
+    content: public static readonly Guid WAVE_FORMAT_ESPCM
+    return:
+      type: System.Guid
+    content.vb: Public Shared ReadOnly WAVE_FORMAT_ESPCM As Guid
+- uid: SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_VOXWARE
+  commentId: F:SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_VOXWARE
+  id: WAVE_FORMAT_VOXWARE
+  parent: SilverCraft.CSCore.AudioSubTypes
+  langs:
+  - csharp
+  - vb
+  name: WAVE_FORMAT_VOXWARE
+  nameWithType: AudioSubTypes.WAVE_FORMAT_VOXWARE
+  fullName: SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_VOXWARE
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/AudioSubTypes.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: WAVE_FORMAT_VOXWARE
+    path: ../SilverCraft.CSCore/AudioSubTypes.cs
+    startLine: 174
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore
+  summary: WAVE_FORMAT_VOXWARE
+  example: []
+  syntax:
+    content: public static readonly Guid WAVE_FORMAT_VOXWARE
+    return:
+      type: System.Guid
+    content.vb: Public Shared ReadOnly WAVE_FORMAT_VOXWARE As Guid
+- uid: SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_CANOPUS_ATRAC
+  commentId: F:SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_CANOPUS_ATRAC
+  id: WAVE_FORMAT_CANOPUS_ATRAC
+  parent: SilverCraft.CSCore.AudioSubTypes
+  langs:
+  - csharp
+  - vb
+  name: WAVE_FORMAT_CANOPUS_ATRAC
+  nameWithType: AudioSubTypes.WAVE_FORMAT_CANOPUS_ATRAC
+  fullName: SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_CANOPUS_ATRAC
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/AudioSubTypes.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: WAVE_FORMAT_CANOPUS_ATRAC
+    path: ../SilverCraft.CSCore/AudioSubTypes.cs
+    startLine: 177
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore
+  summary: WAVE_FORMAT_CANOPUS_ATRAC
+  example: []
+  syntax:
+    content: public static readonly Guid WAVE_FORMAT_CANOPUS_ATRAC
+    return:
+      type: System.Guid
+    content.vb: Public Shared ReadOnly WAVE_FORMAT_CANOPUS_ATRAC As Guid
+- uid: SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_G726_ADPCM
+  commentId: F:SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_G726_ADPCM
+  id: WAVE_FORMAT_G726_ADPCM
+  parent: SilverCraft.CSCore.AudioSubTypes
+  langs:
+  - csharp
+  - vb
+  name: WAVE_FORMAT_G726_ADPCM
+  nameWithType: AudioSubTypes.WAVE_FORMAT_G726_ADPCM
+  fullName: SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_G726_ADPCM
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/AudioSubTypes.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: WAVE_FORMAT_G726_ADPCM
+    path: ../SilverCraft.CSCore/AudioSubTypes.cs
+    startLine: 180
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore
+  summary: WAVE_FORMAT_G726_ADPCM
+  example: []
+  syntax:
+    content: public static readonly Guid WAVE_FORMAT_G726_ADPCM
+    return:
+      type: System.Guid
+    content.vb: Public Shared ReadOnly WAVE_FORMAT_G726_ADPCM As Guid
+- uid: SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_G722_ADPCM
+  commentId: F:SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_G722_ADPCM
+  id: WAVE_FORMAT_G722_ADPCM
+  parent: SilverCraft.CSCore.AudioSubTypes
+  langs:
+  - csharp
+  - vb
+  name: WAVE_FORMAT_G722_ADPCM
+  nameWithType: AudioSubTypes.WAVE_FORMAT_G722_ADPCM
+  fullName: SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_G722_ADPCM
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/AudioSubTypes.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: WAVE_FORMAT_G722_ADPCM
+    path: ../SilverCraft.CSCore/AudioSubTypes.cs
+    startLine: 183
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore
+  summary: WAVE_FORMAT_G722_ADPCM
+  example: []
+  syntax:
+    content: public static readonly Guid WAVE_FORMAT_G722_ADPCM
+    return:
+      type: System.Guid
+    content.vb: Public Shared ReadOnly WAVE_FORMAT_G722_ADPCM As Guid
+- uid: SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_DSAT_DISPLAY
+  commentId: F:SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_DSAT_DISPLAY
+  id: WAVE_FORMAT_DSAT_DISPLAY
+  parent: SilverCraft.CSCore.AudioSubTypes
+  langs:
+  - csharp
+  - vb
+  name: WAVE_FORMAT_DSAT_DISPLAY
+  nameWithType: AudioSubTypes.WAVE_FORMAT_DSAT_DISPLAY
+  fullName: SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_DSAT_DISPLAY
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/AudioSubTypes.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: WAVE_FORMAT_DSAT_DISPLAY
+    path: ../SilverCraft.CSCore/AudioSubTypes.cs
+    startLine: 186
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore
+  summary: WAVE_FORMAT_DSAT_DISPLAY
+  example: []
+  syntax:
+    content: public static readonly Guid WAVE_FORMAT_DSAT_DISPLAY
+    return:
+      type: System.Guid
+    content.vb: Public Shared ReadOnly WAVE_FORMAT_DSAT_DISPLAY As Guid
+- uid: SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_VOXWARE_BYTE_ALIGNED
+  commentId: F:SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_VOXWARE_BYTE_ALIGNED
+  id: WAVE_FORMAT_VOXWARE_BYTE_ALIGNED
+  parent: SilverCraft.CSCore.AudioSubTypes
+  langs:
+  - csharp
+  - vb
+  name: WAVE_FORMAT_VOXWARE_BYTE_ALIGNED
+  nameWithType: AudioSubTypes.WAVE_FORMAT_VOXWARE_BYTE_ALIGNED
+  fullName: SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_VOXWARE_BYTE_ALIGNED
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/AudioSubTypes.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: WAVE_FORMAT_VOXWARE_BYTE_ALIGNED
+    path: ../SilverCraft.CSCore/AudioSubTypes.cs
+    startLine: 189
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore
+  summary: WAVE_FORMAT_VOXWARE_BYTE_ALIGNED
+  example: []
+  syntax:
+    content: public static readonly Guid WAVE_FORMAT_VOXWARE_BYTE_ALIGNED
+    return:
+      type: System.Guid
+    content.vb: Public Shared ReadOnly WAVE_FORMAT_VOXWARE_BYTE_ALIGNED As Guid
+- uid: SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_VOXWARE_AC8
+  commentId: F:SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_VOXWARE_AC8
+  id: WAVE_FORMAT_VOXWARE_AC8
+  parent: SilverCraft.CSCore.AudioSubTypes
+  langs:
+  - csharp
+  - vb
+  name: WAVE_FORMAT_VOXWARE_AC8
+  nameWithType: AudioSubTypes.WAVE_FORMAT_VOXWARE_AC8
+  fullName: SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_VOXWARE_AC8
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/AudioSubTypes.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: WAVE_FORMAT_VOXWARE_AC8
+    path: ../SilverCraft.CSCore/AudioSubTypes.cs
+    startLine: 192
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore
+  summary: WAVE_FORMAT_VOXWARE_AC8
+  example: []
+  syntax:
+    content: public static readonly Guid WAVE_FORMAT_VOXWARE_AC8
+    return:
+      type: System.Guid
+    content.vb: Public Shared ReadOnly WAVE_FORMAT_VOXWARE_AC8 As Guid
+- uid: SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_VOXWARE_AC10
+  commentId: F:SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_VOXWARE_AC10
+  id: WAVE_FORMAT_VOXWARE_AC10
+  parent: SilverCraft.CSCore.AudioSubTypes
+  langs:
+  - csharp
+  - vb
+  name: WAVE_FORMAT_VOXWARE_AC10
+  nameWithType: AudioSubTypes.WAVE_FORMAT_VOXWARE_AC10
+  fullName: SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_VOXWARE_AC10
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/AudioSubTypes.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: WAVE_FORMAT_VOXWARE_AC10
+    path: ../SilverCraft.CSCore/AudioSubTypes.cs
+    startLine: 195
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore
+  summary: WAVE_FORMAT_VOXWARE_AC10
+  example: []
+  syntax:
+    content: public static readonly Guid WAVE_FORMAT_VOXWARE_AC10
+    return:
+      type: System.Guid
+    content.vb: Public Shared ReadOnly WAVE_FORMAT_VOXWARE_AC10 As Guid
+- uid: SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_VOXWARE_AC16
+  commentId: F:SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_VOXWARE_AC16
+  id: WAVE_FORMAT_VOXWARE_AC16
+  parent: SilverCraft.CSCore.AudioSubTypes
+  langs:
+  - csharp
+  - vb
+  name: WAVE_FORMAT_VOXWARE_AC16
+  nameWithType: AudioSubTypes.WAVE_FORMAT_VOXWARE_AC16
+  fullName: SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_VOXWARE_AC16
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/AudioSubTypes.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: WAVE_FORMAT_VOXWARE_AC16
+    path: ../SilverCraft.CSCore/AudioSubTypes.cs
+    startLine: 198
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore
+  summary: WAVE_FORMAT_VOXWARE_AC16
+  example: []
+  syntax:
+    content: public static readonly Guid WAVE_FORMAT_VOXWARE_AC16
+    return:
+      type: System.Guid
+    content.vb: Public Shared ReadOnly WAVE_FORMAT_VOXWARE_AC16 As Guid
+- uid: SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_VOXWARE_AC20
+  commentId: F:SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_VOXWARE_AC20
+  id: WAVE_FORMAT_VOXWARE_AC20
+  parent: SilverCraft.CSCore.AudioSubTypes
+  langs:
+  - csharp
+  - vb
+  name: WAVE_FORMAT_VOXWARE_AC20
+  nameWithType: AudioSubTypes.WAVE_FORMAT_VOXWARE_AC20
+  fullName: SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_VOXWARE_AC20
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/AudioSubTypes.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: WAVE_FORMAT_VOXWARE_AC20
+    path: ../SilverCraft.CSCore/AudioSubTypes.cs
+    startLine: 201
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore
+  summary: WAVE_FORMAT_VOXWARE_AC20
+  example: []
+  syntax:
+    content: public static readonly Guid WAVE_FORMAT_VOXWARE_AC20
+    return:
+      type: System.Guid
+    content.vb: Public Shared ReadOnly WAVE_FORMAT_VOXWARE_AC20 As Guid
+- uid: SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_VOXWARE_RT24
+  commentId: F:SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_VOXWARE_RT24
+  id: WAVE_FORMAT_VOXWARE_RT24
+  parent: SilverCraft.CSCore.AudioSubTypes
+  langs:
+  - csharp
+  - vb
+  name: WAVE_FORMAT_VOXWARE_RT24
+  nameWithType: AudioSubTypes.WAVE_FORMAT_VOXWARE_RT24
+  fullName: SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_VOXWARE_RT24
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/AudioSubTypes.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: WAVE_FORMAT_VOXWARE_RT24
+    path: ../SilverCraft.CSCore/AudioSubTypes.cs
+    startLine: 204
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore
+  summary: WAVE_FORMAT_VOXWARE_RT24
+  example: []
+  syntax:
+    content: public static readonly Guid WAVE_FORMAT_VOXWARE_RT24
+    return:
+      type: System.Guid
+    content.vb: Public Shared ReadOnly WAVE_FORMAT_VOXWARE_RT24 As Guid
+- uid: SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_VOXWARE_RT29
+  commentId: F:SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_VOXWARE_RT29
+  id: WAVE_FORMAT_VOXWARE_RT29
+  parent: SilverCraft.CSCore.AudioSubTypes
+  langs:
+  - csharp
+  - vb
+  name: WAVE_FORMAT_VOXWARE_RT29
+  nameWithType: AudioSubTypes.WAVE_FORMAT_VOXWARE_RT29
+  fullName: SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_VOXWARE_RT29
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/AudioSubTypes.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: WAVE_FORMAT_VOXWARE_RT29
+    path: ../SilverCraft.CSCore/AudioSubTypes.cs
+    startLine: 207
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore
+  summary: WAVE_FORMAT_VOXWARE_RT29
+  example: []
+  syntax:
+    content: public static readonly Guid WAVE_FORMAT_VOXWARE_RT29
+    return:
+      type: System.Guid
+    content.vb: Public Shared ReadOnly WAVE_FORMAT_VOXWARE_RT29 As Guid
+- uid: SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_VOXWARE_RT29HW
+  commentId: F:SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_VOXWARE_RT29HW
+  id: WAVE_FORMAT_VOXWARE_RT29HW
+  parent: SilverCraft.CSCore.AudioSubTypes
+  langs:
+  - csharp
+  - vb
+  name: WAVE_FORMAT_VOXWARE_RT29HW
+  nameWithType: AudioSubTypes.WAVE_FORMAT_VOXWARE_RT29HW
+  fullName: SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_VOXWARE_RT29HW
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/AudioSubTypes.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: WAVE_FORMAT_VOXWARE_RT29HW
+    path: ../SilverCraft.CSCore/AudioSubTypes.cs
+    startLine: 210
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore
+  summary: WAVE_FORMAT_VOXWARE_RT29HW
+  example: []
+  syntax:
+    content: public static readonly Guid WAVE_FORMAT_VOXWARE_RT29HW
+    return:
+      type: System.Guid
+    content.vb: Public Shared ReadOnly WAVE_FORMAT_VOXWARE_RT29HW As Guid
+- uid: SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_VOXWARE_VR12
+  commentId: F:SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_VOXWARE_VR12
+  id: WAVE_FORMAT_VOXWARE_VR12
+  parent: SilverCraft.CSCore.AudioSubTypes
+  langs:
+  - csharp
+  - vb
+  name: WAVE_FORMAT_VOXWARE_VR12
+  nameWithType: AudioSubTypes.WAVE_FORMAT_VOXWARE_VR12
+  fullName: SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_VOXWARE_VR12
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/AudioSubTypes.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: WAVE_FORMAT_VOXWARE_VR12
+    path: ../SilverCraft.CSCore/AudioSubTypes.cs
+    startLine: 213
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore
+  summary: WAVE_FORMAT_VOXWARE_VR12
+  example: []
+  syntax:
+    content: public static readonly Guid WAVE_FORMAT_VOXWARE_VR12
+    return:
+      type: System.Guid
+    content.vb: Public Shared ReadOnly WAVE_FORMAT_VOXWARE_VR12 As Guid
+- uid: SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_VOXWARE_VR18
+  commentId: F:SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_VOXWARE_VR18
+  id: WAVE_FORMAT_VOXWARE_VR18
+  parent: SilverCraft.CSCore.AudioSubTypes
+  langs:
+  - csharp
+  - vb
+  name: WAVE_FORMAT_VOXWARE_VR18
+  nameWithType: AudioSubTypes.WAVE_FORMAT_VOXWARE_VR18
+  fullName: SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_VOXWARE_VR18
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/AudioSubTypes.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: WAVE_FORMAT_VOXWARE_VR18
+    path: ../SilverCraft.CSCore/AudioSubTypes.cs
+    startLine: 216
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore
+  summary: WAVE_FORMAT_VOXWARE_VR18
+  example: []
+  syntax:
+    content: public static readonly Guid WAVE_FORMAT_VOXWARE_VR18
+    return:
+      type: System.Guid
+    content.vb: Public Shared ReadOnly WAVE_FORMAT_VOXWARE_VR18 As Guid
+- uid: SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_VOXWARE_TQ40
+  commentId: F:SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_VOXWARE_TQ40
+  id: WAVE_FORMAT_VOXWARE_TQ40
+  parent: SilverCraft.CSCore.AudioSubTypes
+  langs:
+  - csharp
+  - vb
+  name: WAVE_FORMAT_VOXWARE_TQ40
+  nameWithType: AudioSubTypes.WAVE_FORMAT_VOXWARE_TQ40
+  fullName: SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_VOXWARE_TQ40
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/AudioSubTypes.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: WAVE_FORMAT_VOXWARE_TQ40
+    path: ../SilverCraft.CSCore/AudioSubTypes.cs
+    startLine: 219
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore
+  summary: WAVE_FORMAT_VOXWARE_TQ40
+  example: []
+  syntax:
+    content: public static readonly Guid WAVE_FORMAT_VOXWARE_TQ40
+    return:
+      type: System.Guid
+    content.vb: Public Shared ReadOnly WAVE_FORMAT_VOXWARE_TQ40 As Guid
+- uid: SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_SOFTSOUND
+  commentId: F:SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_SOFTSOUND
+  id: WAVE_FORMAT_SOFTSOUND
+  parent: SilverCraft.CSCore.AudioSubTypes
+  langs:
+  - csharp
+  - vb
+  name: WAVE_FORMAT_SOFTSOUND
+  nameWithType: AudioSubTypes.WAVE_FORMAT_SOFTSOUND
+  fullName: SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_SOFTSOUND
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/AudioSubTypes.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: WAVE_FORMAT_SOFTSOUND
+    path: ../SilverCraft.CSCore/AudioSubTypes.cs
+    startLine: 222
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore
+  summary: WAVE_FORMAT_SOFTSOUND
+  example: []
+  syntax:
+    content: public static readonly Guid WAVE_FORMAT_SOFTSOUND
+    return:
+      type: System.Guid
+    content.vb: Public Shared ReadOnly WAVE_FORMAT_SOFTSOUND As Guid
+- uid: SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_VOXWARE_TQ60
+  commentId: F:SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_VOXWARE_TQ60
+  id: WAVE_FORMAT_VOXWARE_TQ60
+  parent: SilverCraft.CSCore.AudioSubTypes
+  langs:
+  - csharp
+  - vb
+  name: WAVE_FORMAT_VOXWARE_TQ60
+  nameWithType: AudioSubTypes.WAVE_FORMAT_VOXWARE_TQ60
+  fullName: SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_VOXWARE_TQ60
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/AudioSubTypes.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: WAVE_FORMAT_VOXWARE_TQ60
+    path: ../SilverCraft.CSCore/AudioSubTypes.cs
+    startLine: 225
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore
+  summary: WAVE_FORMAT_VOXWARE_TQ60
+  example: []
+  syntax:
+    content: public static readonly Guid WAVE_FORMAT_VOXWARE_TQ60
+    return:
+      type: System.Guid
+    content.vb: Public Shared ReadOnly WAVE_FORMAT_VOXWARE_TQ60 As Guid
+- uid: SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_MSRT24
+  commentId: F:SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_MSRT24
+  id: WAVE_FORMAT_MSRT24
+  parent: SilverCraft.CSCore.AudioSubTypes
+  langs:
+  - csharp
+  - vb
+  name: WAVE_FORMAT_MSRT24
+  nameWithType: AudioSubTypes.WAVE_FORMAT_MSRT24
+  fullName: SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_MSRT24
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/AudioSubTypes.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: WAVE_FORMAT_MSRT24
+    path: ../SilverCraft.CSCore/AudioSubTypes.cs
+    startLine: 228
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore
+  summary: WAVE_FORMAT_MSRT24
+  example: []
+  syntax:
+    content: public static readonly Guid WAVE_FORMAT_MSRT24
+    return:
+      type: System.Guid
+    content.vb: Public Shared ReadOnly WAVE_FORMAT_MSRT24 As Guid
+- uid: SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_G729A
+  commentId: F:SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_G729A
+  id: WAVE_FORMAT_G729A
+  parent: SilverCraft.CSCore.AudioSubTypes
+  langs:
+  - csharp
+  - vb
+  name: WAVE_FORMAT_G729A
+  nameWithType: AudioSubTypes.WAVE_FORMAT_G729A
+  fullName: SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_G729A
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/AudioSubTypes.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: WAVE_FORMAT_G729A
+    path: ../SilverCraft.CSCore/AudioSubTypes.cs
+    startLine: 231
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore
+  summary: WAVE_FORMAT_G729A
+  example: []
+  syntax:
+    content: public static readonly Guid WAVE_FORMAT_G729A
+    return:
+      type: System.Guid
+    content.vb: Public Shared ReadOnly WAVE_FORMAT_G729A As Guid
+- uid: SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_MVI_MVI2
+  commentId: F:SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_MVI_MVI2
+  id: WAVE_FORMAT_MVI_MVI2
+  parent: SilverCraft.CSCore.AudioSubTypes
+  langs:
+  - csharp
+  - vb
+  name: WAVE_FORMAT_MVI_MVI2
+  nameWithType: AudioSubTypes.WAVE_FORMAT_MVI_MVI2
+  fullName: SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_MVI_MVI2
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/AudioSubTypes.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: WAVE_FORMAT_MVI_MVI2
+    path: ../SilverCraft.CSCore/AudioSubTypes.cs
+    startLine: 234
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore
+  summary: WAVE_FORMAT_MVI_MVI2
+  example: []
+  syntax:
+    content: public static readonly Guid WAVE_FORMAT_MVI_MVI2
+    return:
+      type: System.Guid
+    content.vb: Public Shared ReadOnly WAVE_FORMAT_MVI_MVI2 As Guid
+- uid: SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_DF_G726
+  commentId: F:SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_DF_G726
+  id: WAVE_FORMAT_DF_G726
+  parent: SilverCraft.CSCore.AudioSubTypes
+  langs:
+  - csharp
+  - vb
+  name: WAVE_FORMAT_DF_G726
+  nameWithType: AudioSubTypes.WAVE_FORMAT_DF_G726
+  fullName: SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_DF_G726
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/AudioSubTypes.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: WAVE_FORMAT_DF_G726
+    path: ../SilverCraft.CSCore/AudioSubTypes.cs
+    startLine: 237
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore
+  summary: WAVE_FORMAT_DF_G726
+  example: []
+  syntax:
+    content: public static readonly Guid WAVE_FORMAT_DF_G726
+    return:
+      type: System.Guid
+    content.vb: Public Shared ReadOnly WAVE_FORMAT_DF_G726 As Guid
+- uid: SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_DF_GSM610
+  commentId: F:SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_DF_GSM610
+  id: WAVE_FORMAT_DF_GSM610
+  parent: SilverCraft.CSCore.AudioSubTypes
+  langs:
+  - csharp
+  - vb
+  name: WAVE_FORMAT_DF_GSM610
+  nameWithType: AudioSubTypes.WAVE_FORMAT_DF_GSM610
+  fullName: SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_DF_GSM610
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/AudioSubTypes.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: WAVE_FORMAT_DF_GSM610
+    path: ../SilverCraft.CSCore/AudioSubTypes.cs
+    startLine: 240
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore
+  summary: WAVE_FORMAT_DF_GSM610
+  example: []
+  syntax:
+    content: public static readonly Guid WAVE_FORMAT_DF_GSM610
+    return:
+      type: System.Guid
+    content.vb: Public Shared ReadOnly WAVE_FORMAT_DF_GSM610 As Guid
+- uid: SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_ISIAUDIO
+  commentId: F:SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_ISIAUDIO
+  id: WAVE_FORMAT_ISIAUDIO
+  parent: SilverCraft.CSCore.AudioSubTypes
+  langs:
+  - csharp
+  - vb
+  name: WAVE_FORMAT_ISIAUDIO
+  nameWithType: AudioSubTypes.WAVE_FORMAT_ISIAUDIO
+  fullName: SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_ISIAUDIO
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/AudioSubTypes.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: WAVE_FORMAT_ISIAUDIO
+    path: ../SilverCraft.CSCore/AudioSubTypes.cs
+    startLine: 243
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore
+  summary: WAVE_FORMAT_ISIAUDIO
+  example: []
+  syntax:
+    content: public static readonly Guid WAVE_FORMAT_ISIAUDIO
+    return:
+      type: System.Guid
+    content.vb: Public Shared ReadOnly WAVE_FORMAT_ISIAUDIO As Guid
+- uid: SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_ONLIVE
+  commentId: F:SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_ONLIVE
+  id: WAVE_FORMAT_ONLIVE
+  parent: SilverCraft.CSCore.AudioSubTypes
+  langs:
+  - csharp
+  - vb
+  name: WAVE_FORMAT_ONLIVE
+  nameWithType: AudioSubTypes.WAVE_FORMAT_ONLIVE
+  fullName: SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_ONLIVE
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/AudioSubTypes.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: WAVE_FORMAT_ONLIVE
+    path: ../SilverCraft.CSCore/AudioSubTypes.cs
+    startLine: 246
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore
+  summary: WAVE_FORMAT_ONLIVE
+  example: []
+  syntax:
+    content: public static readonly Guid WAVE_FORMAT_ONLIVE
+    return:
+      type: System.Guid
+    content.vb: Public Shared ReadOnly WAVE_FORMAT_ONLIVE As Guid
+- uid: SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_SBC24
+  commentId: F:SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_SBC24
+  id: WAVE_FORMAT_SBC24
+  parent: SilverCraft.CSCore.AudioSubTypes
+  langs:
+  - csharp
+  - vb
+  name: WAVE_FORMAT_SBC24
+  nameWithType: AudioSubTypes.WAVE_FORMAT_SBC24
+  fullName: SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_SBC24
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/AudioSubTypes.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: WAVE_FORMAT_SBC24
+    path: ../SilverCraft.CSCore/AudioSubTypes.cs
+    startLine: 249
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore
+  summary: WAVE_FORMAT_SBC24
+  example: []
+  syntax:
+    content: public static readonly Guid WAVE_FORMAT_SBC24
+    return:
+      type: System.Guid
+    content.vb: Public Shared ReadOnly WAVE_FORMAT_SBC24 As Guid
+- uid: SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_DOLBY_AC3_SPDIF
+  commentId: F:SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_DOLBY_AC3_SPDIF
+  id: WAVE_FORMAT_DOLBY_AC3_SPDIF
+  parent: SilverCraft.CSCore.AudioSubTypes
+  langs:
+  - csharp
+  - vb
+  name: WAVE_FORMAT_DOLBY_AC3_SPDIF
+  nameWithType: AudioSubTypes.WAVE_FORMAT_DOLBY_AC3_SPDIF
+  fullName: SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_DOLBY_AC3_SPDIF
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/AudioSubTypes.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: WAVE_FORMAT_DOLBY_AC3_SPDIF
+    path: ../SilverCraft.CSCore/AudioSubTypes.cs
+    startLine: 252
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore
+  summary: WAVE_FORMAT_DOLBY_AC3_SPDIF
+  example: []
+  syntax:
+    content: public static readonly Guid WAVE_FORMAT_DOLBY_AC3_SPDIF
+    return:
+      type: System.Guid
+    content.vb: Public Shared ReadOnly WAVE_FORMAT_DOLBY_AC3_SPDIF As Guid
+- uid: SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_MEDIASONIC_G723
+  commentId: F:SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_MEDIASONIC_G723
+  id: WAVE_FORMAT_MEDIASONIC_G723
+  parent: SilverCraft.CSCore.AudioSubTypes
+  langs:
+  - csharp
+  - vb
+  name: WAVE_FORMAT_MEDIASONIC_G723
+  nameWithType: AudioSubTypes.WAVE_FORMAT_MEDIASONIC_G723
+  fullName: SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_MEDIASONIC_G723
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/AudioSubTypes.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: WAVE_FORMAT_MEDIASONIC_G723
+    path: ../SilverCraft.CSCore/AudioSubTypes.cs
+    startLine: 255
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore
+  summary: WAVE_FORMAT_MEDIASONIC_G723
+  example: []
+  syntax:
+    content: public static readonly Guid WAVE_FORMAT_MEDIASONIC_G723
+    return:
+      type: System.Guid
+    content.vb: Public Shared ReadOnly WAVE_FORMAT_MEDIASONIC_G723 As Guid
+- uid: SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_PROSODY_8KBPS
+  commentId: F:SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_PROSODY_8KBPS
+  id: WAVE_FORMAT_PROSODY_8KBPS
+  parent: SilverCraft.CSCore.AudioSubTypes
+  langs:
+  - csharp
+  - vb
+  name: WAVE_FORMAT_PROSODY_8KBPS
+  nameWithType: AudioSubTypes.WAVE_FORMAT_PROSODY_8KBPS
+  fullName: SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_PROSODY_8KBPS
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/AudioSubTypes.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: WAVE_FORMAT_PROSODY_8KBPS
+    path: ../SilverCraft.CSCore/AudioSubTypes.cs
+    startLine: 258
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore
+  summary: WAVE_FORMAT_PROSODY_8KBPS
+  example: []
+  syntax:
+    content: public static readonly Guid WAVE_FORMAT_PROSODY_8KBPS
+    return:
+      type: System.Guid
+    content.vb: Public Shared ReadOnly WAVE_FORMAT_PROSODY_8KBPS As Guid
+- uid: SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_ZYXEL_ADPCM
+  commentId: F:SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_ZYXEL_ADPCM
+  id: WAVE_FORMAT_ZYXEL_ADPCM
+  parent: SilverCraft.CSCore.AudioSubTypes
+  langs:
+  - csharp
+  - vb
+  name: WAVE_FORMAT_ZYXEL_ADPCM
+  nameWithType: AudioSubTypes.WAVE_FORMAT_ZYXEL_ADPCM
+  fullName: SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_ZYXEL_ADPCM
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/AudioSubTypes.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: WAVE_FORMAT_ZYXEL_ADPCM
+    path: ../SilverCraft.CSCore/AudioSubTypes.cs
+    startLine: 261
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore
+  summary: WAVE_FORMAT_ZYXEL_ADPCM
+  example: []
+  syntax:
+    content: public static readonly Guid WAVE_FORMAT_ZYXEL_ADPCM
+    return:
+      type: System.Guid
+    content.vb: Public Shared ReadOnly WAVE_FORMAT_ZYXEL_ADPCM As Guid
+- uid: SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_PHILIPS_LPCBB
+  commentId: F:SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_PHILIPS_LPCBB
+  id: WAVE_FORMAT_PHILIPS_LPCBB
+  parent: SilverCraft.CSCore.AudioSubTypes
+  langs:
+  - csharp
+  - vb
+  name: WAVE_FORMAT_PHILIPS_LPCBB
+  nameWithType: AudioSubTypes.WAVE_FORMAT_PHILIPS_LPCBB
+  fullName: SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_PHILIPS_LPCBB
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/AudioSubTypes.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: WAVE_FORMAT_PHILIPS_LPCBB
+    path: ../SilverCraft.CSCore/AudioSubTypes.cs
+    startLine: 264
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore
+  summary: WAVE_FORMAT_PHILIPS_LPCBB
+  example: []
+  syntax:
+    content: public static readonly Guid WAVE_FORMAT_PHILIPS_LPCBB
+    return:
+      type: System.Guid
+    content.vb: Public Shared ReadOnly WAVE_FORMAT_PHILIPS_LPCBB As Guid
+- uid: SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_PACKED
+  commentId: F:SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_PACKED
+  id: WAVE_FORMAT_PACKED
+  parent: SilverCraft.CSCore.AudioSubTypes
+  langs:
+  - csharp
+  - vb
+  name: WAVE_FORMAT_PACKED
+  nameWithType: AudioSubTypes.WAVE_FORMAT_PACKED
+  fullName: SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_PACKED
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/AudioSubTypes.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: WAVE_FORMAT_PACKED
+    path: ../SilverCraft.CSCore/AudioSubTypes.cs
+    startLine: 267
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore
+  summary: WAVE_FORMAT_PACKED
+  example: []
+  syntax:
+    content: public static readonly Guid WAVE_FORMAT_PACKED
+    return:
+      type: System.Guid
+    content.vb: Public Shared ReadOnly WAVE_FORMAT_PACKED As Guid
+- uid: SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_MALDEN_PHONYTALK
+  commentId: F:SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_MALDEN_PHONYTALK
+  id: WAVE_FORMAT_MALDEN_PHONYTALK
+  parent: SilverCraft.CSCore.AudioSubTypes
+  langs:
+  - csharp
+  - vb
+  name: WAVE_FORMAT_MALDEN_PHONYTALK
+  nameWithType: AudioSubTypes.WAVE_FORMAT_MALDEN_PHONYTALK
+  fullName: SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_MALDEN_PHONYTALK
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/AudioSubTypes.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: WAVE_FORMAT_MALDEN_PHONYTALK
+    path: ../SilverCraft.CSCore/AudioSubTypes.cs
+    startLine: 270
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore
+  summary: WAVE_FORMAT_MALDEN_PHONYTALK
+  example: []
+  syntax:
+    content: public static readonly Guid WAVE_FORMAT_MALDEN_PHONYTALK
+    return:
+      type: System.Guid
+    content.vb: Public Shared ReadOnly WAVE_FORMAT_MALDEN_PHONYTALK As Guid
+- uid: SilverCraft.CSCore.AudioSubTypes.Gsm
+  commentId: F:SilverCraft.CSCore.AudioSubTypes.Gsm
+  id: Gsm
+  parent: SilverCraft.CSCore.AudioSubTypes
+  langs:
+  - csharp
+  - vb
+  name: Gsm
+  nameWithType: AudioSubTypes.Gsm
+  fullName: SilverCraft.CSCore.AudioSubTypes.Gsm
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/AudioSubTypes.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: Gsm
+    path: ../SilverCraft.CSCore/AudioSubTypes.cs
+    startLine: 273
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore
+  summary: WAVE_FORMAT_GSM
+  example: []
+  syntax:
+    content: public static readonly Guid Gsm
+    return:
+      type: System.Guid
+    content.vb: Public Shared ReadOnly Gsm As Guid
+- uid: SilverCraft.CSCore.AudioSubTypes.G729
+  commentId: F:SilverCraft.CSCore.AudioSubTypes.G729
+  id: G729
+  parent: SilverCraft.CSCore.AudioSubTypes
+  langs:
+  - csharp
+  - vb
+  name: G729
+  nameWithType: AudioSubTypes.G729
+  fullName: SilverCraft.CSCore.AudioSubTypes.G729
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/AudioSubTypes.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: G729
+    path: ../SilverCraft.CSCore/AudioSubTypes.cs
+    startLine: 276
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore
+  summary: WAVE_FORMAT_G729
+  example: []
+  syntax:
+    content: public static readonly Guid G729
+    return:
+      type: System.Guid
+    content.vb: Public Shared ReadOnly G729 As Guid
+- uid: SilverCraft.CSCore.AudioSubTypes.G723
+  commentId: F:SilverCraft.CSCore.AudioSubTypes.G723
+  id: G723
+  parent: SilverCraft.CSCore.AudioSubTypes
+  langs:
+  - csharp
+  - vb
+  name: G723
+  nameWithType: AudioSubTypes.G723
+  fullName: SilverCraft.CSCore.AudioSubTypes.G723
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/AudioSubTypes.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: G723
+    path: ../SilverCraft.CSCore/AudioSubTypes.cs
+    startLine: 279
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore
+  summary: WAVE_FORMAT_G723
+  example: []
+  syntax:
+    content: public static readonly Guid G723
+    return:
+      type: System.Guid
+    content.vb: Public Shared ReadOnly G723 As Guid
+- uid: SilverCraft.CSCore.AudioSubTypes.Acelp
+  commentId: F:SilverCraft.CSCore.AudioSubTypes.Acelp
+  id: Acelp
+  parent: SilverCraft.CSCore.AudioSubTypes
+  langs:
+  - csharp
+  - vb
+  name: Acelp
+  nameWithType: AudioSubTypes.Acelp
+  fullName: SilverCraft.CSCore.AudioSubTypes.Acelp
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/AudioSubTypes.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: Acelp
+    path: ../SilverCraft.CSCore/AudioSubTypes.cs
+    startLine: 282
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore
+  summary: WAVE_FORMAT_ACELP
+  example: []
+  syntax:
+    content: public static readonly Guid Acelp
+    return:
+      type: System.Guid
+    content.vb: Public Shared ReadOnly Acelp As Guid
+- uid: SilverCraft.CSCore.AudioSubTypes.RawAac
+  commentId: F:SilverCraft.CSCore.AudioSubTypes.RawAac
+  id: RawAac
+  parent: SilverCraft.CSCore.AudioSubTypes
+  langs:
+  - csharp
+  - vb
+  name: RawAac
+  nameWithType: AudioSubTypes.RawAac
+  fullName: SilverCraft.CSCore.AudioSubTypes.RawAac
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/AudioSubTypes.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: RawAac
+    path: ../SilverCraft.CSCore/AudioSubTypes.cs
+    startLine: 287
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore
+  summary: WAVE_FORMAT_RAW_AAC1
+  example: []
+  syntax:
+    content: public static readonly Guid RawAac
+    return:
+      type: System.Guid
+    content.vb: Public Shared ReadOnly RawAac As Guid
+- uid: SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_RHETOREX_ADPCM
+  commentId: F:SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_RHETOREX_ADPCM
+  id: WAVE_FORMAT_RHETOREX_ADPCM
+  parent: SilverCraft.CSCore.AudioSubTypes
+  langs:
+  - csharp
+  - vb
+  name: WAVE_FORMAT_RHETOREX_ADPCM
+  nameWithType: AudioSubTypes.WAVE_FORMAT_RHETOREX_ADPCM
+  fullName: SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_RHETOREX_ADPCM
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/AudioSubTypes.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: WAVE_FORMAT_RHETOREX_ADPCM
+    path: ../SilverCraft.CSCore/AudioSubTypes.cs
+    startLine: 290
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore
+  summary: WAVE_FORMAT_RHETOREX_ADPCM
+  example: []
+  syntax:
+    content: public static readonly Guid WAVE_FORMAT_RHETOREX_ADPCM
+    return:
+      type: System.Guid
+    content.vb: Public Shared ReadOnly WAVE_FORMAT_RHETOREX_ADPCM As Guid
+- uid: SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_IRAT
+  commentId: F:SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_IRAT
+  id: WAVE_FORMAT_IRAT
+  parent: SilverCraft.CSCore.AudioSubTypes
+  langs:
+  - csharp
+  - vb
+  name: WAVE_FORMAT_IRAT
+  nameWithType: AudioSubTypes.WAVE_FORMAT_IRAT
+  fullName: SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_IRAT
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/AudioSubTypes.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: WAVE_FORMAT_IRAT
+    path: ../SilverCraft.CSCore/AudioSubTypes.cs
+    startLine: 293
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore
+  summary: WAVE_FORMAT_IRAT
+  example: []
+  syntax:
+    content: public static readonly Guid WAVE_FORMAT_IRAT
+    return:
+      type: System.Guid
+    content.vb: Public Shared ReadOnly WAVE_FORMAT_IRAT As Guid
+- uid: SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_VIVO_G723
+  commentId: F:SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_VIVO_G723
+  id: WAVE_FORMAT_VIVO_G723
+  parent: SilverCraft.CSCore.AudioSubTypes
+  langs:
+  - csharp
+  - vb
+  name: WAVE_FORMAT_VIVO_G723
+  nameWithType: AudioSubTypes.WAVE_FORMAT_VIVO_G723
+  fullName: SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_VIVO_G723
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/AudioSubTypes.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: WAVE_FORMAT_VIVO_G723
+    path: ../SilverCraft.CSCore/AudioSubTypes.cs
+    startLine: 296
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore
+  summary: WAVE_FORMAT_VIVO_G723
+  example: []
+  syntax:
+    content: public static readonly Guid WAVE_FORMAT_VIVO_G723
+    return:
+      type: System.Guid
+    content.vb: Public Shared ReadOnly WAVE_FORMAT_VIVO_G723 As Guid
+- uid: SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_VIVO_SIREN
+  commentId: F:SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_VIVO_SIREN
+  id: WAVE_FORMAT_VIVO_SIREN
+  parent: SilverCraft.CSCore.AudioSubTypes
+  langs:
+  - csharp
+  - vb
+  name: WAVE_FORMAT_VIVO_SIREN
+  nameWithType: AudioSubTypes.WAVE_FORMAT_VIVO_SIREN
+  fullName: SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_VIVO_SIREN
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/AudioSubTypes.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: WAVE_FORMAT_VIVO_SIREN
+    path: ../SilverCraft.CSCore/AudioSubTypes.cs
+    startLine: 299
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore
+  summary: WAVE_FORMAT_VIVO_SIREN
+  example: []
+  syntax:
+    content: public static readonly Guid WAVE_FORMAT_VIVO_SIREN
+    return:
+      type: System.Guid
+    content.vb: Public Shared ReadOnly WAVE_FORMAT_VIVO_SIREN As Guid
+- uid: SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_DIGITAL_G723
+  commentId: F:SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_DIGITAL_G723
+  id: WAVE_FORMAT_DIGITAL_G723
+  parent: SilverCraft.CSCore.AudioSubTypes
+  langs:
+  - csharp
+  - vb
+  name: WAVE_FORMAT_DIGITAL_G723
+  nameWithType: AudioSubTypes.WAVE_FORMAT_DIGITAL_G723
+  fullName: SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_DIGITAL_G723
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/AudioSubTypes.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: WAVE_FORMAT_DIGITAL_G723
+    path: ../SilverCraft.CSCore/AudioSubTypes.cs
+    startLine: 302
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore
+  summary: WAVE_FORMAT_DIGITAL_G723
+  example: []
+  syntax:
+    content: public static readonly Guid WAVE_FORMAT_DIGITAL_G723
+    return:
+      type: System.Guid
+    content.vb: Public Shared ReadOnly WAVE_FORMAT_DIGITAL_G723 As Guid
+- uid: SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_SANYO_LD_ADPCM
+  commentId: F:SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_SANYO_LD_ADPCM
+  id: WAVE_FORMAT_SANYO_LD_ADPCM
+  parent: SilverCraft.CSCore.AudioSubTypes
+  langs:
+  - csharp
+  - vb
+  name: WAVE_FORMAT_SANYO_LD_ADPCM
+  nameWithType: AudioSubTypes.WAVE_FORMAT_SANYO_LD_ADPCM
+  fullName: SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_SANYO_LD_ADPCM
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/AudioSubTypes.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: WAVE_FORMAT_SANYO_LD_ADPCM
+    path: ../SilverCraft.CSCore/AudioSubTypes.cs
+    startLine: 305
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore
+  summary: WAVE_FORMAT_SANYO_LD_ADPCM
+  example: []
+  syntax:
+    content: public static readonly Guid WAVE_FORMAT_SANYO_LD_ADPCM
+    return:
+      type: System.Guid
+    content.vb: Public Shared ReadOnly WAVE_FORMAT_SANYO_LD_ADPCM As Guid
+- uid: SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_SIPROLAB_ACEPLNET
+  commentId: F:SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_SIPROLAB_ACEPLNET
+  id: WAVE_FORMAT_SIPROLAB_ACEPLNET
+  parent: SilverCraft.CSCore.AudioSubTypes
+  langs:
+  - csharp
+  - vb
+  name: WAVE_FORMAT_SIPROLAB_ACEPLNET
+  nameWithType: AudioSubTypes.WAVE_FORMAT_SIPROLAB_ACEPLNET
+  fullName: SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_SIPROLAB_ACEPLNET
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/AudioSubTypes.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: WAVE_FORMAT_SIPROLAB_ACEPLNET
+    path: ../SilverCraft.CSCore/AudioSubTypes.cs
+    startLine: 308
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore
+  summary: WAVE_FORMAT_SIPROLAB_ACEPLNET
+  example: []
+  syntax:
+    content: public static readonly Guid WAVE_FORMAT_SIPROLAB_ACEPLNET
+    return:
+      type: System.Guid
+    content.vb: Public Shared ReadOnly WAVE_FORMAT_SIPROLAB_ACEPLNET As Guid
+- uid: SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_SIPROLAB_ACELP4800
+  commentId: F:SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_SIPROLAB_ACELP4800
+  id: WAVE_FORMAT_SIPROLAB_ACELP4800
+  parent: SilverCraft.CSCore.AudioSubTypes
+  langs:
+  - csharp
+  - vb
+  name: WAVE_FORMAT_SIPROLAB_ACELP4800
+  nameWithType: AudioSubTypes.WAVE_FORMAT_SIPROLAB_ACELP4800
+  fullName: SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_SIPROLAB_ACELP4800
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/AudioSubTypes.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: WAVE_FORMAT_SIPROLAB_ACELP4800
+    path: ../SilverCraft.CSCore/AudioSubTypes.cs
+    startLine: 311
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore
+  summary: WAVE_FORMAT_SIPROLAB_ACELP4800
+  example: []
+  syntax:
+    content: public static readonly Guid WAVE_FORMAT_SIPROLAB_ACELP4800
+    return:
+      type: System.Guid
+    content.vb: Public Shared ReadOnly WAVE_FORMAT_SIPROLAB_ACELP4800 As Guid
+- uid: SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_SIPROLAB_ACELP8V3
+  commentId: F:SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_SIPROLAB_ACELP8V3
+  id: WAVE_FORMAT_SIPROLAB_ACELP8V3
+  parent: SilverCraft.CSCore.AudioSubTypes
+  langs:
+  - csharp
+  - vb
+  name: WAVE_FORMAT_SIPROLAB_ACELP8V3
+  nameWithType: AudioSubTypes.WAVE_FORMAT_SIPROLAB_ACELP8V3
+  fullName: SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_SIPROLAB_ACELP8V3
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/AudioSubTypes.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: WAVE_FORMAT_SIPROLAB_ACELP8V3
+    path: ../SilverCraft.CSCore/AudioSubTypes.cs
+    startLine: 314
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore
+  summary: WAVE_FORMAT_SIPROLAB_ACELP8V3
+  example: []
+  syntax:
+    content: public static readonly Guid WAVE_FORMAT_SIPROLAB_ACELP8V3
+    return:
+      type: System.Guid
+    content.vb: Public Shared ReadOnly WAVE_FORMAT_SIPROLAB_ACELP8V3 As Guid
+- uid: SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_SIPROLAB_G729
+  commentId: F:SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_SIPROLAB_G729
+  id: WAVE_FORMAT_SIPROLAB_G729
+  parent: SilverCraft.CSCore.AudioSubTypes
+  langs:
+  - csharp
+  - vb
+  name: WAVE_FORMAT_SIPROLAB_G729
+  nameWithType: AudioSubTypes.WAVE_FORMAT_SIPROLAB_G729
+  fullName: SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_SIPROLAB_G729
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/AudioSubTypes.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: WAVE_FORMAT_SIPROLAB_G729
+    path: ../SilverCraft.CSCore/AudioSubTypes.cs
+    startLine: 317
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore
+  summary: WAVE_FORMAT_SIPROLAB_G729
+  example: []
+  syntax:
+    content: public static readonly Guid WAVE_FORMAT_SIPROLAB_G729
+    return:
+      type: System.Guid
+    content.vb: Public Shared ReadOnly WAVE_FORMAT_SIPROLAB_G729 As Guid
+- uid: SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_SIPROLAB_G729A
+  commentId: F:SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_SIPROLAB_G729A
+  id: WAVE_FORMAT_SIPROLAB_G729A
+  parent: SilverCraft.CSCore.AudioSubTypes
+  langs:
+  - csharp
+  - vb
+  name: WAVE_FORMAT_SIPROLAB_G729A
+  nameWithType: AudioSubTypes.WAVE_FORMAT_SIPROLAB_G729A
+  fullName: SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_SIPROLAB_G729A
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/AudioSubTypes.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: WAVE_FORMAT_SIPROLAB_G729A
+    path: ../SilverCraft.CSCore/AudioSubTypes.cs
+    startLine: 320
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore
+  summary: WAVE_FORMAT_SIPROLAB_G729A
+  example: []
+  syntax:
+    content: public static readonly Guid WAVE_FORMAT_SIPROLAB_G729A
+    return:
+      type: System.Guid
+    content.vb: Public Shared ReadOnly WAVE_FORMAT_SIPROLAB_G729A As Guid
+- uid: SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_SIPROLAB_KELVIN
+  commentId: F:SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_SIPROLAB_KELVIN
+  id: WAVE_FORMAT_SIPROLAB_KELVIN
+  parent: SilverCraft.CSCore.AudioSubTypes
+  langs:
+  - csharp
+  - vb
+  name: WAVE_FORMAT_SIPROLAB_KELVIN
+  nameWithType: AudioSubTypes.WAVE_FORMAT_SIPROLAB_KELVIN
+  fullName: SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_SIPROLAB_KELVIN
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/AudioSubTypes.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: WAVE_FORMAT_SIPROLAB_KELVIN
+    path: ../SilverCraft.CSCore/AudioSubTypes.cs
+    startLine: 323
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore
+  summary: WAVE_FORMAT_SIPROLAB_KELVIN
+  example: []
+  syntax:
+    content: public static readonly Guid WAVE_FORMAT_SIPROLAB_KELVIN
+    return:
+      type: System.Guid
+    content.vb: Public Shared ReadOnly WAVE_FORMAT_SIPROLAB_KELVIN As Guid
+- uid: SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_G726ADPCM
+  commentId: F:SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_G726ADPCM
+  id: WAVE_FORMAT_G726ADPCM
+  parent: SilverCraft.CSCore.AudioSubTypes
+  langs:
+  - csharp
+  - vb
+  name: WAVE_FORMAT_G726ADPCM
+  nameWithType: AudioSubTypes.WAVE_FORMAT_G726ADPCM
+  fullName: SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_G726ADPCM
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/AudioSubTypes.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: WAVE_FORMAT_G726ADPCM
+    path: ../SilverCraft.CSCore/AudioSubTypes.cs
+    startLine: 326
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore
+  summary: WAVE_FORMAT_G726ADPCM
+  example: []
+  syntax:
+    content: public static readonly Guid WAVE_FORMAT_G726ADPCM
+    return:
+      type: System.Guid
+    content.vb: Public Shared ReadOnly WAVE_FORMAT_G726ADPCM As Guid
+- uid: SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_QUALCOMM_PUREVOICE
+  commentId: F:SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_QUALCOMM_PUREVOICE
+  id: WAVE_FORMAT_QUALCOMM_PUREVOICE
+  parent: SilverCraft.CSCore.AudioSubTypes
+  langs:
+  - csharp
+  - vb
+  name: WAVE_FORMAT_QUALCOMM_PUREVOICE
+  nameWithType: AudioSubTypes.WAVE_FORMAT_QUALCOMM_PUREVOICE
+  fullName: SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_QUALCOMM_PUREVOICE
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/AudioSubTypes.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: WAVE_FORMAT_QUALCOMM_PUREVOICE
+    path: ../SilverCraft.CSCore/AudioSubTypes.cs
+    startLine: 329
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore
+  summary: WAVE_FORMAT_QUALCOMM_PUREVOICE
+  example: []
+  syntax:
+    content: public static readonly Guid WAVE_FORMAT_QUALCOMM_PUREVOICE
+    return:
+      type: System.Guid
+    content.vb: Public Shared ReadOnly WAVE_FORMAT_QUALCOMM_PUREVOICE As Guid
+- uid: SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_QUALCOMM_HALFRATE
+  commentId: F:SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_QUALCOMM_HALFRATE
+  id: WAVE_FORMAT_QUALCOMM_HALFRATE
+  parent: SilverCraft.CSCore.AudioSubTypes
+  langs:
+  - csharp
+  - vb
+  name: WAVE_FORMAT_QUALCOMM_HALFRATE
+  nameWithType: AudioSubTypes.WAVE_FORMAT_QUALCOMM_HALFRATE
+  fullName: SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_QUALCOMM_HALFRATE
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/AudioSubTypes.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: WAVE_FORMAT_QUALCOMM_HALFRATE
+    path: ../SilverCraft.CSCore/AudioSubTypes.cs
+    startLine: 332
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore
+  summary: WAVE_FORMAT_QUALCOMM_HALFRATE
+  example: []
+  syntax:
+    content: public static readonly Guid WAVE_FORMAT_QUALCOMM_HALFRATE
+    return:
+      type: System.Guid
+    content.vb: Public Shared ReadOnly WAVE_FORMAT_QUALCOMM_HALFRATE As Guid
+- uid: SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_TUBGSM
+  commentId: F:SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_TUBGSM
+  id: WAVE_FORMAT_TUBGSM
+  parent: SilverCraft.CSCore.AudioSubTypes
+  langs:
+  - csharp
+  - vb
+  name: WAVE_FORMAT_TUBGSM
+  nameWithType: AudioSubTypes.WAVE_FORMAT_TUBGSM
+  fullName: SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_TUBGSM
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/AudioSubTypes.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: WAVE_FORMAT_TUBGSM
+    path: ../SilverCraft.CSCore/AudioSubTypes.cs
+    startLine: 335
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore
+  summary: WAVE_FORMAT_TUBGSM
+  example: []
+  syntax:
+    content: public static readonly Guid WAVE_FORMAT_TUBGSM
+    return:
+      type: System.Guid
+    content.vb: Public Shared ReadOnly WAVE_FORMAT_TUBGSM As Guid
+- uid: SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_MSAUDIO1
+  commentId: F:SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_MSAUDIO1
+  id: WAVE_FORMAT_MSAUDIO1
+  parent: SilverCraft.CSCore.AudioSubTypes
+  langs:
+  - csharp
+  - vb
+  name: WAVE_FORMAT_MSAUDIO1
+  nameWithType: AudioSubTypes.WAVE_FORMAT_MSAUDIO1
+  fullName: SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_MSAUDIO1
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/AudioSubTypes.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: WAVE_FORMAT_MSAUDIO1
+    path: ../SilverCraft.CSCore/AudioSubTypes.cs
+    startLine: 338
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore
+  summary: WAVE_FORMAT_MSAUDIO1
+  example: []
+  syntax:
+    content: public static readonly Guid WAVE_FORMAT_MSAUDIO1
+    return:
+      type: System.Guid
+    content.vb: Public Shared ReadOnly WAVE_FORMAT_MSAUDIO1 As Guid
+- uid: SilverCraft.CSCore.AudioSubTypes.WindowsMediaAudio
+  commentId: F:SilverCraft.CSCore.AudioSubTypes.WindowsMediaAudio
+  id: WindowsMediaAudio
+  parent: SilverCraft.CSCore.AudioSubTypes
+  langs:
+  - csharp
+  - vb
+  name: WindowsMediaAudio
+  nameWithType: AudioSubTypes.WindowsMediaAudio
+  fullName: SilverCraft.CSCore.AudioSubTypes.WindowsMediaAudio
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/AudioSubTypes.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: WindowsMediaAudio
+    path: ../SilverCraft.CSCore/AudioSubTypes.cs
+    startLine: 343
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore
+  summary: Windows Media Audio, WAVE_FORMAT_WMAUDIO2, Microsoft Corporation
+  example: []
+  syntax:
+    content: public static readonly Guid WindowsMediaAudio
+    return:
+      type: System.Guid
+    content.vb: Public Shared ReadOnly WindowsMediaAudio As Guid
+- uid: SilverCraft.CSCore.AudioSubTypes.WindowsMediaAudioProfessional
+  commentId: F:SilverCraft.CSCore.AudioSubTypes.WindowsMediaAudioProfessional
+  id: WindowsMediaAudioProfessional
+  parent: SilverCraft.CSCore.AudioSubTypes
+  langs:
+  - csharp
+  - vb
+  name: WindowsMediaAudioProfessional
+  nameWithType: AudioSubTypes.WindowsMediaAudioProfessional
+  fullName: SilverCraft.CSCore.AudioSubTypes.WindowsMediaAudioProfessional
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/AudioSubTypes.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: WindowsMediaAudioProfessional
+    path: ../SilverCraft.CSCore/AudioSubTypes.cs
+    startLine: 348
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore
+  summary: Windows Media Audio Professional WAVE_FORMAT_WMAUDIO3, Microsoft Corporation
+  example: []
+  syntax:
+    content: public static readonly Guid WindowsMediaAudioProfessional
+    return:
+      type: System.Guid
+    content.vb: Public Shared ReadOnly WindowsMediaAudioProfessional As Guid
+- uid: SilverCraft.CSCore.AudioSubTypes.WindowsMediaAudioLosseless
+  commentId: F:SilverCraft.CSCore.AudioSubTypes.WindowsMediaAudioLosseless
+  id: WindowsMediaAudioLosseless
+  parent: SilverCraft.CSCore.AudioSubTypes
+  langs:
+  - csharp
+  - vb
+  name: WindowsMediaAudioLosseless
+  nameWithType: AudioSubTypes.WindowsMediaAudioLosseless
+  fullName: SilverCraft.CSCore.AudioSubTypes.WindowsMediaAudioLosseless
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/AudioSubTypes.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: WindowsMediaAudioLosseless
+    path: ../SilverCraft.CSCore/AudioSubTypes.cs
+    startLine: 353
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore
+  summary: Windows Media Audio Lossless, WAVE_FORMAT_WMAUDIO_LOSSLESS
+  example: []
+  syntax:
+    content: public static readonly Guid WindowsMediaAudioLosseless
+    return:
+      type: System.Guid
+    content.vb: Public Shared ReadOnly WindowsMediaAudioLosseless As Guid
+- uid: SilverCraft.CSCore.AudioSubTypes.WindowsMediaAudioSpdif
+  commentId: F:SilverCraft.CSCore.AudioSubTypes.WindowsMediaAudioSpdif
+  id: WindowsMediaAudioSpdif
+  parent: SilverCraft.CSCore.AudioSubTypes
+  langs:
+  - csharp
+  - vb
+  name: WindowsMediaAudioSpdif
+  nameWithType: AudioSubTypes.WindowsMediaAudioSpdif
+  fullName: SilverCraft.CSCore.AudioSubTypes.WindowsMediaAudioSpdif
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/AudioSubTypes.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: WindowsMediaAudioSpdif
+    path: ../SilverCraft.CSCore/AudioSubTypes.cs
+    startLine: 358
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore
+  summary: Windows Media Audio Professional over SPDIF WAVE_FORMAT_WMASPDIF (0x0164)
+  example: []
+  syntax:
+    content: public static readonly Guid WindowsMediaAudioSpdif
+    return:
+      type: System.Guid
+    content.vb: Public Shared ReadOnly WindowsMediaAudioSpdif As Guid
+- uid: SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_UNISYS_NAP_ADPCM
+  commentId: F:SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_UNISYS_NAP_ADPCM
+  id: WAVE_FORMAT_UNISYS_NAP_ADPCM
+  parent: SilverCraft.CSCore.AudioSubTypes
+  langs:
+  - csharp
+  - vb
+  name: WAVE_FORMAT_UNISYS_NAP_ADPCM
+  nameWithType: AudioSubTypes.WAVE_FORMAT_UNISYS_NAP_ADPCM
+  fullName: SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_UNISYS_NAP_ADPCM
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/AudioSubTypes.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: WAVE_FORMAT_UNISYS_NAP_ADPCM
+    path: ../SilverCraft.CSCore/AudioSubTypes.cs
+    startLine: 361
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore
+  summary: WAVE_FORMAT_UNISYS_NAP_ADPCM
+  example: []
+  syntax:
+    content: public static readonly Guid WAVE_FORMAT_UNISYS_NAP_ADPCM
+    return:
+      type: System.Guid
+    content.vb: Public Shared ReadOnly WAVE_FORMAT_UNISYS_NAP_ADPCM As Guid
+- uid: SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_UNISYS_NAP_ULAW
+  commentId: F:SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_UNISYS_NAP_ULAW
+  id: WAVE_FORMAT_UNISYS_NAP_ULAW
+  parent: SilverCraft.CSCore.AudioSubTypes
+  langs:
+  - csharp
+  - vb
+  name: WAVE_FORMAT_UNISYS_NAP_ULAW
+  nameWithType: AudioSubTypes.WAVE_FORMAT_UNISYS_NAP_ULAW
+  fullName: SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_UNISYS_NAP_ULAW
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/AudioSubTypes.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: WAVE_FORMAT_UNISYS_NAP_ULAW
+    path: ../SilverCraft.CSCore/AudioSubTypes.cs
+    startLine: 364
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore
+  summary: WAVE_FORMAT_UNISYS_NAP_ULAW
+  example: []
+  syntax:
+    content: public static readonly Guid WAVE_FORMAT_UNISYS_NAP_ULAW
+    return:
+      type: System.Guid
+    content.vb: Public Shared ReadOnly WAVE_FORMAT_UNISYS_NAP_ULAW As Guid
+- uid: SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_UNISYS_NAP_ALAW
+  commentId: F:SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_UNISYS_NAP_ALAW
+  id: WAVE_FORMAT_UNISYS_NAP_ALAW
+  parent: SilverCraft.CSCore.AudioSubTypes
+  langs:
+  - csharp
+  - vb
+  name: WAVE_FORMAT_UNISYS_NAP_ALAW
+  nameWithType: AudioSubTypes.WAVE_FORMAT_UNISYS_NAP_ALAW
+  fullName: SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_UNISYS_NAP_ALAW
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/AudioSubTypes.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: WAVE_FORMAT_UNISYS_NAP_ALAW
+    path: ../SilverCraft.CSCore/AudioSubTypes.cs
+    startLine: 367
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore
+  summary: WAVE_FORMAT_UNISYS_NAP_ALAW
+  example: []
+  syntax:
+    content: public static readonly Guid WAVE_FORMAT_UNISYS_NAP_ALAW
+    return:
+      type: System.Guid
+    content.vb: Public Shared ReadOnly WAVE_FORMAT_UNISYS_NAP_ALAW As Guid
+- uid: SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_UNISYS_NAP_16K
+  commentId: F:SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_UNISYS_NAP_16K
+  id: WAVE_FORMAT_UNISYS_NAP_16K
+  parent: SilverCraft.CSCore.AudioSubTypes
+  langs:
+  - csharp
+  - vb
+  name: WAVE_FORMAT_UNISYS_NAP_16K
+  nameWithType: AudioSubTypes.WAVE_FORMAT_UNISYS_NAP_16K
+  fullName: SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_UNISYS_NAP_16K
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/AudioSubTypes.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: WAVE_FORMAT_UNISYS_NAP_16K
+    path: ../SilverCraft.CSCore/AudioSubTypes.cs
+    startLine: 370
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore
+  summary: WAVE_FORMAT_UNISYS_NAP_16K
+  example: []
+  syntax:
+    content: public static readonly Guid WAVE_FORMAT_UNISYS_NAP_16K
+    return:
+      type: System.Guid
+    content.vb: Public Shared ReadOnly WAVE_FORMAT_UNISYS_NAP_16K As Guid
+- uid: SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_CREATIVE_ADPCM
+  commentId: F:SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_CREATIVE_ADPCM
+  id: WAVE_FORMAT_CREATIVE_ADPCM
+  parent: SilverCraft.CSCore.AudioSubTypes
+  langs:
+  - csharp
+  - vb
+  name: WAVE_FORMAT_CREATIVE_ADPCM
+  nameWithType: AudioSubTypes.WAVE_FORMAT_CREATIVE_ADPCM
+  fullName: SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_CREATIVE_ADPCM
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/AudioSubTypes.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: WAVE_FORMAT_CREATIVE_ADPCM
+    path: ../SilverCraft.CSCore/AudioSubTypes.cs
+    startLine: 373
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore
+  summary: WAVE_FORMAT_CREATIVE_ADPCM
+  example: []
+  syntax:
+    content: public static readonly Guid WAVE_FORMAT_CREATIVE_ADPCM
+    return:
+      type: System.Guid
+    content.vb: Public Shared ReadOnly WAVE_FORMAT_CREATIVE_ADPCM As Guid
+- uid: SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_CREATIVE_FASTSPEECH8
+  commentId: F:SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_CREATIVE_FASTSPEECH8
+  id: WAVE_FORMAT_CREATIVE_FASTSPEECH8
+  parent: SilverCraft.CSCore.AudioSubTypes
+  langs:
+  - csharp
+  - vb
+  name: WAVE_FORMAT_CREATIVE_FASTSPEECH8
+  nameWithType: AudioSubTypes.WAVE_FORMAT_CREATIVE_FASTSPEECH8
+  fullName: SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_CREATIVE_FASTSPEECH8
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/AudioSubTypes.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: WAVE_FORMAT_CREATIVE_FASTSPEECH8
+    path: ../SilverCraft.CSCore/AudioSubTypes.cs
+    startLine: 376
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore
+  summary: WAVE_FORMAT_CREATIVE_FASTSPEECH8
+  example: []
+  syntax:
+    content: public static readonly Guid WAVE_FORMAT_CREATIVE_FASTSPEECH8
+    return:
+      type: System.Guid
+    content.vb: Public Shared ReadOnly WAVE_FORMAT_CREATIVE_FASTSPEECH8 As Guid
+- uid: SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_CREATIVE_FASTSPEECH10
+  commentId: F:SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_CREATIVE_FASTSPEECH10
+  id: WAVE_FORMAT_CREATIVE_FASTSPEECH10
+  parent: SilverCraft.CSCore.AudioSubTypes
+  langs:
+  - csharp
+  - vb
+  name: WAVE_FORMAT_CREATIVE_FASTSPEECH10
+  nameWithType: AudioSubTypes.WAVE_FORMAT_CREATIVE_FASTSPEECH10
+  fullName: SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_CREATIVE_FASTSPEECH10
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/AudioSubTypes.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: WAVE_FORMAT_CREATIVE_FASTSPEECH10
+    path: ../SilverCraft.CSCore/AudioSubTypes.cs
+    startLine: 379
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore
+  summary: WAVE_FORMAT_CREATIVE_FASTSPEECH10
+  example: []
+  syntax:
+    content: public static readonly Guid WAVE_FORMAT_CREATIVE_FASTSPEECH10
+    return:
+      type: System.Guid
+    content.vb: Public Shared ReadOnly WAVE_FORMAT_CREATIVE_FASTSPEECH10 As Guid
+- uid: SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_UHER_ADPCM
+  commentId: F:SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_UHER_ADPCM
+  id: WAVE_FORMAT_UHER_ADPCM
+  parent: SilverCraft.CSCore.AudioSubTypes
+  langs:
+  - csharp
+  - vb
+  name: WAVE_FORMAT_UHER_ADPCM
+  nameWithType: AudioSubTypes.WAVE_FORMAT_UHER_ADPCM
+  fullName: SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_UHER_ADPCM
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/AudioSubTypes.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: WAVE_FORMAT_UHER_ADPCM
+    path: ../SilverCraft.CSCore/AudioSubTypes.cs
+    startLine: 382
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore
+  summary: WAVE_FORMAT_UHER_ADPCM
+  example: []
+  syntax:
+    content: public static readonly Guid WAVE_FORMAT_UHER_ADPCM
+    return:
+      type: System.Guid
+    content.vb: Public Shared ReadOnly WAVE_FORMAT_UHER_ADPCM As Guid
+- uid: SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_QUARTERDECK
+  commentId: F:SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_QUARTERDECK
+  id: WAVE_FORMAT_QUARTERDECK
+  parent: SilverCraft.CSCore.AudioSubTypes
+  langs:
+  - csharp
+  - vb
+  name: WAVE_FORMAT_QUARTERDECK
+  nameWithType: AudioSubTypes.WAVE_FORMAT_QUARTERDECK
+  fullName: SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_QUARTERDECK
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/AudioSubTypes.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: WAVE_FORMAT_QUARTERDECK
+    path: ../SilverCraft.CSCore/AudioSubTypes.cs
+    startLine: 385
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore
+  summary: WAVE_FORMAT_QUARTERDECK
+  example: []
+  syntax:
+    content: public static readonly Guid WAVE_FORMAT_QUARTERDECK
+    return:
+      type: System.Guid
+    content.vb: Public Shared ReadOnly WAVE_FORMAT_QUARTERDECK As Guid
+- uid: SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_ILINK_VC
+  commentId: F:SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_ILINK_VC
+  id: WAVE_FORMAT_ILINK_VC
+  parent: SilverCraft.CSCore.AudioSubTypes
+  langs:
+  - csharp
+  - vb
+  name: WAVE_FORMAT_ILINK_VC
+  nameWithType: AudioSubTypes.WAVE_FORMAT_ILINK_VC
+  fullName: SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_ILINK_VC
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/AudioSubTypes.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: WAVE_FORMAT_ILINK_VC
+    path: ../SilverCraft.CSCore/AudioSubTypes.cs
+    startLine: 388
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore
+  summary: WAVE_FORMAT_ILINK_VC
+  example: []
+  syntax:
+    content: public static readonly Guid WAVE_FORMAT_ILINK_VC
+    return:
+      type: System.Guid
+    content.vb: Public Shared ReadOnly WAVE_FORMAT_ILINK_VC As Guid
+- uid: SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_RAW_SPORT
+  commentId: F:SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_RAW_SPORT
+  id: WAVE_FORMAT_RAW_SPORT
+  parent: SilverCraft.CSCore.AudioSubTypes
+  langs:
+  - csharp
+  - vb
+  name: WAVE_FORMAT_RAW_SPORT
+  nameWithType: AudioSubTypes.WAVE_FORMAT_RAW_SPORT
+  fullName: SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_RAW_SPORT
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/AudioSubTypes.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: WAVE_FORMAT_RAW_SPORT
+    path: ../SilverCraft.CSCore/AudioSubTypes.cs
+    startLine: 391
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore
+  summary: WAVE_FORMAT_RAW_SPORT
+  example: []
+  syntax:
+    content: public static readonly Guid WAVE_FORMAT_RAW_SPORT
+    return:
+      type: System.Guid
+    content.vb: Public Shared ReadOnly WAVE_FORMAT_RAW_SPORT As Guid
+- uid: SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_ESST_AC3
+  commentId: F:SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_ESST_AC3
+  id: WAVE_FORMAT_ESST_AC3
+  parent: SilverCraft.CSCore.AudioSubTypes
+  langs:
+  - csharp
+  - vb
+  name: WAVE_FORMAT_ESST_AC3
+  nameWithType: AudioSubTypes.WAVE_FORMAT_ESST_AC3
+  fullName: SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_ESST_AC3
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/AudioSubTypes.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: WAVE_FORMAT_ESST_AC3
+    path: ../SilverCraft.CSCore/AudioSubTypes.cs
+    startLine: 394
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore
+  summary: WAVE_FORMAT_ESST_AC3
+  example: []
+  syntax:
+    content: public static readonly Guid WAVE_FORMAT_ESST_AC3
+    return:
+      type: System.Guid
+    content.vb: Public Shared ReadOnly WAVE_FORMAT_ESST_AC3 As Guid
+- uid: SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_IPI_HSX
+  commentId: F:SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_IPI_HSX
+  id: WAVE_FORMAT_IPI_HSX
+  parent: SilverCraft.CSCore.AudioSubTypes
+  langs:
+  - csharp
+  - vb
+  name: WAVE_FORMAT_IPI_HSX
+  nameWithType: AudioSubTypes.WAVE_FORMAT_IPI_HSX
+  fullName: SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_IPI_HSX
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/AudioSubTypes.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: WAVE_FORMAT_IPI_HSX
+    path: ../SilverCraft.CSCore/AudioSubTypes.cs
+    startLine: 397
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore
+  summary: WAVE_FORMAT_IPI_HSX
+  example: []
+  syntax:
+    content: public static readonly Guid WAVE_FORMAT_IPI_HSX
+    return:
+      type: System.Guid
+    content.vb: Public Shared ReadOnly WAVE_FORMAT_IPI_HSX As Guid
+- uid: SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_IPI_RPELP
+  commentId: F:SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_IPI_RPELP
+  id: WAVE_FORMAT_IPI_RPELP
+  parent: SilverCraft.CSCore.AudioSubTypes
+  langs:
+  - csharp
+  - vb
+  name: WAVE_FORMAT_IPI_RPELP
+  nameWithType: AudioSubTypes.WAVE_FORMAT_IPI_RPELP
+  fullName: SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_IPI_RPELP
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/AudioSubTypes.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: WAVE_FORMAT_IPI_RPELP
+    path: ../SilverCraft.CSCore/AudioSubTypes.cs
+    startLine: 400
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore
+  summary: WAVE_FORMAT_IPI_RPELP
+  example: []
+  syntax:
+    content: public static readonly Guid WAVE_FORMAT_IPI_RPELP
+    return:
+      type: System.Guid
+    content.vb: Public Shared ReadOnly WAVE_FORMAT_IPI_RPELP As Guid
+- uid: SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_CS2
+  commentId: F:SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_CS2
+  id: WAVE_FORMAT_CS2
+  parent: SilverCraft.CSCore.AudioSubTypes
+  langs:
+  - csharp
+  - vb
+  name: WAVE_FORMAT_CS2
+  nameWithType: AudioSubTypes.WAVE_FORMAT_CS2
+  fullName: SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_CS2
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/AudioSubTypes.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: WAVE_FORMAT_CS2
+    path: ../SilverCraft.CSCore/AudioSubTypes.cs
+    startLine: 403
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore
+  summary: WAVE_FORMAT_CS2
+  example: []
+  syntax:
+    content: public static readonly Guid WAVE_FORMAT_CS2
+    return:
+      type: System.Guid
+    content.vb: Public Shared ReadOnly WAVE_FORMAT_CS2 As Guid
+- uid: SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_SONY_SCX
+  commentId: F:SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_SONY_SCX
+  id: WAVE_FORMAT_SONY_SCX
+  parent: SilverCraft.CSCore.AudioSubTypes
+  langs:
+  - csharp
+  - vb
+  name: WAVE_FORMAT_SONY_SCX
+  nameWithType: AudioSubTypes.WAVE_FORMAT_SONY_SCX
+  fullName: SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_SONY_SCX
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/AudioSubTypes.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: WAVE_FORMAT_SONY_SCX
+    path: ../SilverCraft.CSCore/AudioSubTypes.cs
+    startLine: 406
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore
+  summary: WAVE_FORMAT_SONY_SCX
+  example: []
+  syntax:
+    content: public static readonly Guid WAVE_FORMAT_SONY_SCX
+    return:
+      type: System.Guid
+    content.vb: Public Shared ReadOnly WAVE_FORMAT_SONY_SCX As Guid
+- uid: SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_FM_TOWNS_SND
+  commentId: F:SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_FM_TOWNS_SND
+  id: WAVE_FORMAT_FM_TOWNS_SND
+  parent: SilverCraft.CSCore.AudioSubTypes
+  langs:
+  - csharp
+  - vb
+  name: WAVE_FORMAT_FM_TOWNS_SND
+  nameWithType: AudioSubTypes.WAVE_FORMAT_FM_TOWNS_SND
+  fullName: SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_FM_TOWNS_SND
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/AudioSubTypes.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: WAVE_FORMAT_FM_TOWNS_SND
+    path: ../SilverCraft.CSCore/AudioSubTypes.cs
+    startLine: 409
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore
+  summary: WAVE_FORMAT_FM_TOWNS_SND
+  example: []
+  syntax:
+    content: public static readonly Guid WAVE_FORMAT_FM_TOWNS_SND
+    return:
+      type: System.Guid
+    content.vb: Public Shared ReadOnly WAVE_FORMAT_FM_TOWNS_SND As Guid
+- uid: SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_BTV_DIGITAL
+  commentId: F:SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_BTV_DIGITAL
+  id: WAVE_FORMAT_BTV_DIGITAL
+  parent: SilverCraft.CSCore.AudioSubTypes
+  langs:
+  - csharp
+  - vb
+  name: WAVE_FORMAT_BTV_DIGITAL
+  nameWithType: AudioSubTypes.WAVE_FORMAT_BTV_DIGITAL
+  fullName: SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_BTV_DIGITAL
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/AudioSubTypes.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: WAVE_FORMAT_BTV_DIGITAL
+    path: ../SilverCraft.CSCore/AudioSubTypes.cs
+    startLine: 412
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore
+  summary: WAVE_FORMAT_BTV_DIGITAL
+  example: []
+  syntax:
+    content: public static readonly Guid WAVE_FORMAT_BTV_DIGITAL
+    return:
+      type: System.Guid
+    content.vb: Public Shared ReadOnly WAVE_FORMAT_BTV_DIGITAL As Guid
+- uid: SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_QDESIGN_MUSIC
+  commentId: F:SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_QDESIGN_MUSIC
+  id: WAVE_FORMAT_QDESIGN_MUSIC
+  parent: SilverCraft.CSCore.AudioSubTypes
+  langs:
+  - csharp
+  - vb
+  name: WAVE_FORMAT_QDESIGN_MUSIC
+  nameWithType: AudioSubTypes.WAVE_FORMAT_QDESIGN_MUSIC
+  fullName: SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_QDESIGN_MUSIC
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/AudioSubTypes.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: WAVE_FORMAT_QDESIGN_MUSIC
+    path: ../SilverCraft.CSCore/AudioSubTypes.cs
+    startLine: 415
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore
+  summary: WAVE_FORMAT_QDESIGN_MUSIC
+  example: []
+  syntax:
+    content: public static readonly Guid WAVE_FORMAT_QDESIGN_MUSIC
+    return:
+      type: System.Guid
+    content.vb: Public Shared ReadOnly WAVE_FORMAT_QDESIGN_MUSIC As Guid
+- uid: SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_VME_VMPCM
+  commentId: F:SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_VME_VMPCM
+  id: WAVE_FORMAT_VME_VMPCM
+  parent: SilverCraft.CSCore.AudioSubTypes
+  langs:
+  - csharp
+  - vb
+  name: WAVE_FORMAT_VME_VMPCM
+  nameWithType: AudioSubTypes.WAVE_FORMAT_VME_VMPCM
+  fullName: SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_VME_VMPCM
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/AudioSubTypes.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: WAVE_FORMAT_VME_VMPCM
+    path: ../SilverCraft.CSCore/AudioSubTypes.cs
+    startLine: 418
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore
+  summary: WAVE_FORMAT_VME_VMPCM
+  example: []
+  syntax:
+    content: public static readonly Guid WAVE_FORMAT_VME_VMPCM
+    return:
+      type: System.Guid
+    content.vb: Public Shared ReadOnly WAVE_FORMAT_VME_VMPCM As Guid
+- uid: SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_TPC
+  commentId: F:SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_TPC
+  id: WAVE_FORMAT_TPC
+  parent: SilverCraft.CSCore.AudioSubTypes
+  langs:
+  - csharp
+  - vb
+  name: WAVE_FORMAT_TPC
+  nameWithType: AudioSubTypes.WAVE_FORMAT_TPC
+  fullName: SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_TPC
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/AudioSubTypes.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: WAVE_FORMAT_TPC
+    path: ../SilverCraft.CSCore/AudioSubTypes.cs
+    startLine: 421
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore
+  summary: WAVE_FORMAT_TPC
+  example: []
+  syntax:
+    content: public static readonly Guid WAVE_FORMAT_TPC
+    return:
+      type: System.Guid
+    content.vb: Public Shared ReadOnly WAVE_FORMAT_TPC As Guid
+- uid: SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_OLIGSM
+  commentId: F:SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_OLIGSM
+  id: WAVE_FORMAT_OLIGSM
+  parent: SilverCraft.CSCore.AudioSubTypes
+  langs:
+  - csharp
+  - vb
+  name: WAVE_FORMAT_OLIGSM
+  nameWithType: AudioSubTypes.WAVE_FORMAT_OLIGSM
+  fullName: SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_OLIGSM
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/AudioSubTypes.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: WAVE_FORMAT_OLIGSM
+    path: ../SilverCraft.CSCore/AudioSubTypes.cs
+    startLine: 424
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore
+  summary: WAVE_FORMAT_OLIGSM
+  example: []
+  syntax:
+    content: public static readonly Guid WAVE_FORMAT_OLIGSM
+    return:
+      type: System.Guid
+    content.vb: Public Shared ReadOnly WAVE_FORMAT_OLIGSM As Guid
+- uid: SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_OLIADPCM
+  commentId: F:SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_OLIADPCM
+  id: WAVE_FORMAT_OLIADPCM
+  parent: SilverCraft.CSCore.AudioSubTypes
+  langs:
+  - csharp
+  - vb
+  name: WAVE_FORMAT_OLIADPCM
+  nameWithType: AudioSubTypes.WAVE_FORMAT_OLIADPCM
+  fullName: SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_OLIADPCM
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/AudioSubTypes.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: WAVE_FORMAT_OLIADPCM
+    path: ../SilverCraft.CSCore/AudioSubTypes.cs
+    startLine: 427
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore
+  summary: WAVE_FORMAT_OLIADPCM
+  example: []
+  syntax:
+    content: public static readonly Guid WAVE_FORMAT_OLIADPCM
+    return:
+      type: System.Guid
+    content.vb: Public Shared ReadOnly WAVE_FORMAT_OLIADPCM As Guid
+- uid: SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_OLICELP
+  commentId: F:SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_OLICELP
+  id: WAVE_FORMAT_OLICELP
+  parent: SilverCraft.CSCore.AudioSubTypes
+  langs:
+  - csharp
+  - vb
+  name: WAVE_FORMAT_OLICELP
+  nameWithType: AudioSubTypes.WAVE_FORMAT_OLICELP
+  fullName: SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_OLICELP
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/AudioSubTypes.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: WAVE_FORMAT_OLICELP
+    path: ../SilverCraft.CSCore/AudioSubTypes.cs
+    startLine: 430
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore
+  summary: WAVE_FORMAT_OLICELP
+  example: []
+  syntax:
+    content: public static readonly Guid WAVE_FORMAT_OLICELP
+    return:
+      type: System.Guid
+    content.vb: Public Shared ReadOnly WAVE_FORMAT_OLICELP As Guid
+- uid: SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_OLISBC
+  commentId: F:SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_OLISBC
+  id: WAVE_FORMAT_OLISBC
+  parent: SilverCraft.CSCore.AudioSubTypes
+  langs:
+  - csharp
+  - vb
+  name: WAVE_FORMAT_OLISBC
+  nameWithType: AudioSubTypes.WAVE_FORMAT_OLISBC
+  fullName: SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_OLISBC
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/AudioSubTypes.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: WAVE_FORMAT_OLISBC
+    path: ../SilverCraft.CSCore/AudioSubTypes.cs
+    startLine: 433
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore
+  summary: WAVE_FORMAT_OLISBC
+  example: []
+  syntax:
+    content: public static readonly Guid WAVE_FORMAT_OLISBC
+    return:
+      type: System.Guid
+    content.vb: Public Shared ReadOnly WAVE_FORMAT_OLISBC As Guid
+- uid: SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_OLIOPR
+  commentId: F:SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_OLIOPR
+  id: WAVE_FORMAT_OLIOPR
+  parent: SilverCraft.CSCore.AudioSubTypes
+  langs:
+  - csharp
+  - vb
+  name: WAVE_FORMAT_OLIOPR
+  nameWithType: AudioSubTypes.WAVE_FORMAT_OLIOPR
+  fullName: SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_OLIOPR
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/AudioSubTypes.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: WAVE_FORMAT_OLIOPR
+    path: ../SilverCraft.CSCore/AudioSubTypes.cs
+    startLine: 436
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore
+  summary: WAVE_FORMAT_OLIOPR
+  example: []
+  syntax:
+    content: public static readonly Guid WAVE_FORMAT_OLIOPR
+    return:
+      type: System.Guid
+    content.vb: Public Shared ReadOnly WAVE_FORMAT_OLIOPR As Guid
+- uid: SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_LH_CODEC
+  commentId: F:SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_LH_CODEC
+  id: WAVE_FORMAT_LH_CODEC
+  parent: SilverCraft.CSCore.AudioSubTypes
+  langs:
+  - csharp
+  - vb
+  name: WAVE_FORMAT_LH_CODEC
+  nameWithType: AudioSubTypes.WAVE_FORMAT_LH_CODEC
+  fullName: SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_LH_CODEC
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/AudioSubTypes.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: WAVE_FORMAT_LH_CODEC
+    path: ../SilverCraft.CSCore/AudioSubTypes.cs
+    startLine: 439
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore
+  summary: WAVE_FORMAT_LH_CODEC
+  example: []
+  syntax:
+    content: public static readonly Guid WAVE_FORMAT_LH_CODEC
+    return:
+      type: System.Guid
+    content.vb: Public Shared ReadOnly WAVE_FORMAT_LH_CODEC As Guid
+- uid: SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_NORRIS
+  commentId: F:SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_NORRIS
+  id: WAVE_FORMAT_NORRIS
+  parent: SilverCraft.CSCore.AudioSubTypes
+  langs:
+  - csharp
+  - vb
+  name: WAVE_FORMAT_NORRIS
+  nameWithType: AudioSubTypes.WAVE_FORMAT_NORRIS
+  fullName: SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_NORRIS
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/AudioSubTypes.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: WAVE_FORMAT_NORRIS
+    path: ../SilverCraft.CSCore/AudioSubTypes.cs
+    startLine: 442
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore
+  summary: WAVE_FORMAT_NORRIS
+  example: []
+  syntax:
+    content: public static readonly Guid WAVE_FORMAT_NORRIS
+    return:
+      type: System.Guid
+    content.vb: Public Shared ReadOnly WAVE_FORMAT_NORRIS As Guid
+- uid: SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_SOUNDSPACE_MUSICOMPRESS
+  commentId: F:SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_SOUNDSPACE_MUSICOMPRESS
+  id: WAVE_FORMAT_SOUNDSPACE_MUSICOMPRESS
+  parent: SilverCraft.CSCore.AudioSubTypes
+  langs:
+  - csharp
+  - vb
+  name: WAVE_FORMAT_SOUNDSPACE_MUSICOMPRESS
+  nameWithType: AudioSubTypes.WAVE_FORMAT_SOUNDSPACE_MUSICOMPRESS
+  fullName: SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_SOUNDSPACE_MUSICOMPRESS
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/AudioSubTypes.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: WAVE_FORMAT_SOUNDSPACE_MUSICOMPRESS
+    path: ../SilverCraft.CSCore/AudioSubTypes.cs
+    startLine: 445
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore
+  summary: WAVE_FORMAT_SOUNDSPACE_MUSICOMPRESS
+  example: []
+  syntax:
+    content: public static readonly Guid WAVE_FORMAT_SOUNDSPACE_MUSICOMPRESS
+    return:
+      type: System.Guid
+    content.vb: Public Shared ReadOnly WAVE_FORMAT_SOUNDSPACE_MUSICOMPRESS As Guid
+- uid: SilverCraft.CSCore.AudioSubTypes.MPEG_ADTS_AAC
+  commentId: F:SilverCraft.CSCore.AudioSubTypes.MPEG_ADTS_AAC
+  id: MPEG_ADTS_AAC
+  parent: SilverCraft.CSCore.AudioSubTypes
+  langs:
+  - csharp
+  - vb
+  name: MPEG_ADTS_AAC
+  nameWithType: AudioSubTypes.MPEG_ADTS_AAC
+  fullName: SilverCraft.CSCore.AudioSubTypes.MPEG_ADTS_AAC
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/AudioSubTypes.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: MPEG_ADTS_AAC
+    path: ../SilverCraft.CSCore/AudioSubTypes.cs
+    startLine: 457
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore
+  summary: >-
+    Advanced Audio Coding (AAC) audio in Audio Data Transport Stream (ADTS) format.
+
+    The format block is a WAVEFORMATEX structure with wFormatTag equal to WAVE_FORMAT_MPEG_ADTS_AAC.
+  remarks: >-
+    The WAVEFORMATEX structure specifies the core AAC-LC sample rate and number of channels,
+
+    prior to applying spectral band replication (SBR) or parametric stereo (PS) tools, if present.
+
+    No additional data is required after the WAVEFORMATEX structure.
+  example: []
+  syntax:
+    content: public static readonly Guid MPEG_ADTS_AAC
+    return:
+      type: System.Guid
+    content.vb: Public Shared ReadOnly MPEG_ADTS_AAC As Guid
+- uid: SilverCraft.CSCore.AudioSubTypes.MPEG_RAW_AAC
+  commentId: F:SilverCraft.CSCore.AudioSubTypes.MPEG_RAW_AAC
+  id: MPEG_RAW_AAC
+  parent: SilverCraft.CSCore.AudioSubTypes
+  langs:
+  - csharp
+  - vb
+  name: MPEG_RAW_AAC
+  nameWithType: AudioSubTypes.MPEG_RAW_AAC
+  fullName: SilverCraft.CSCore.AudioSubTypes.MPEG_RAW_AAC
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/AudioSubTypes.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: MPEG_RAW_AAC
+    path: ../SilverCraft.CSCore/AudioSubTypes.cs
+    startLine: 461
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore
+  summary: MPEG_RAW_AAC
+  remarks: Source wmCodec.h
+  example: []
+  syntax:
+    content: public static readonly Guid MPEG_RAW_AAC
+    return:
+      type: System.Guid
+    content.vb: Public Shared ReadOnly MPEG_RAW_AAC As Guid
+- uid: SilverCraft.CSCore.AudioSubTypes.MPEG_LOAS
+  commentId: F:SilverCraft.CSCore.AudioSubTypes.MPEG_LOAS
+  id: MPEG_LOAS
+  parent: SilverCraft.CSCore.AudioSubTypes
+  langs:
+  - csharp
+  - vb
+  name: MPEG_LOAS
+  nameWithType: AudioSubTypes.MPEG_LOAS
+  fullName: SilverCraft.CSCore.AudioSubTypes.MPEG_LOAS
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/AudioSubTypes.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: MPEG_LOAS
+    path: ../SilverCraft.CSCore/AudioSubTypes.cs
+    startLine: 473
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore
+  summary: >-
+    MPEG-4 audio transport stream with a synchronization layer (LOAS) and a multiplex layer (LATM).
+
+    The format block is a WAVEFORMATEX structure with wFormatTag equal to WAVE_FORMAT_MPEG_LOAS.
+
+    See <a href="http://msdn.microsoft.com/en-us/library/dd317599%28VS.85%29.aspx">http://msdn.microsoft.com/en-us/library/dd317599%28VS.85%29.aspx</a>.
+  remarks: >-
+    The WAVEFORMATEX structure specifies the core AAC-LC sample rate and number of channels,
+
+    prior to applying spectral SBR or PS tools, if present.
+
+    No additional data is required after the WAVEFORMATEX structure.
+  example: []
+  syntax:
+    content: public static readonly Guid MPEG_LOAS
+    return:
+      type: System.Guid
+    content.vb: Public Shared ReadOnly MPEG_LOAS As Guid
+- uid: SilverCraft.CSCore.AudioSubTypes.NOKIA_MPEG_ADTS_AAC
+  commentId: F:SilverCraft.CSCore.AudioSubTypes.NOKIA_MPEG_ADTS_AAC
+  id: NOKIA_MPEG_ADTS_AAC
+  parent: SilverCraft.CSCore.AudioSubTypes
+  langs:
+  - csharp
+  - vb
+  name: NOKIA_MPEG_ADTS_AAC
+  nameWithType: AudioSubTypes.NOKIA_MPEG_ADTS_AAC
+  fullName: SilverCraft.CSCore.AudioSubTypes.NOKIA_MPEG_ADTS_AAC
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/AudioSubTypes.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: NOKIA_MPEG_ADTS_AAC
+    path: ../SilverCraft.CSCore/AudioSubTypes.cs
+    startLine: 477
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore
+  summary: NOKIA_MPEG_ADTS_AAC
+  remarks: Source wmCodec.h
+  example: []
+  syntax:
+    content: public static readonly Guid NOKIA_MPEG_ADTS_AAC
+    return:
+      type: System.Guid
+    content.vb: Public Shared ReadOnly NOKIA_MPEG_ADTS_AAC As Guid
+- uid: SilverCraft.CSCore.AudioSubTypes.NOKIA_MPEG_RAW_AAC
+  commentId: F:SilverCraft.CSCore.AudioSubTypes.NOKIA_MPEG_RAW_AAC
+  id: NOKIA_MPEG_RAW_AAC
+  parent: SilverCraft.CSCore.AudioSubTypes
+  langs:
+  - csharp
+  - vb
+  name: NOKIA_MPEG_RAW_AAC
+  nameWithType: AudioSubTypes.NOKIA_MPEG_RAW_AAC
+  fullName: SilverCraft.CSCore.AudioSubTypes.NOKIA_MPEG_RAW_AAC
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/AudioSubTypes.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: NOKIA_MPEG_RAW_AAC
+    path: ../SilverCraft.CSCore/AudioSubTypes.cs
+    startLine: 481
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore
+  summary: NOKIA_MPEG_RAW_AAC
+  remarks: Source wmCodec.h
+  example: []
+  syntax:
+    content: public static readonly Guid NOKIA_MPEG_RAW_AAC
+    return:
+      type: System.Guid
+    content.vb: Public Shared ReadOnly NOKIA_MPEG_RAW_AAC As Guid
+- uid: SilverCraft.CSCore.AudioSubTypes.VODAFONE_MPEG_ADTS_AAC
+  commentId: F:SilverCraft.CSCore.AudioSubTypes.VODAFONE_MPEG_ADTS_AAC
+  id: VODAFONE_MPEG_ADTS_AAC
+  parent: SilverCraft.CSCore.AudioSubTypes
+  langs:
+  - csharp
+  - vb
+  name: VODAFONE_MPEG_ADTS_AAC
+  nameWithType: AudioSubTypes.VODAFONE_MPEG_ADTS_AAC
+  fullName: SilverCraft.CSCore.AudioSubTypes.VODAFONE_MPEG_ADTS_AAC
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/AudioSubTypes.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: VODAFONE_MPEG_ADTS_AAC
+    path: ../SilverCraft.CSCore/AudioSubTypes.cs
+    startLine: 485
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore
+  summary: VODAFONE_MPEG_ADTS_AAC
+  remarks: Source wmCodec.h
+  example: []
+  syntax:
+    content: public static readonly Guid VODAFONE_MPEG_ADTS_AAC
+    return:
+      type: System.Guid
+    content.vb: Public Shared ReadOnly VODAFONE_MPEG_ADTS_AAC As Guid
+- uid: SilverCraft.CSCore.AudioSubTypes.VODAFONE_MPEG_RAW_AAC
+  commentId: F:SilverCraft.CSCore.AudioSubTypes.VODAFONE_MPEG_RAW_AAC
+  id: VODAFONE_MPEG_RAW_AAC
+  parent: SilverCraft.CSCore.AudioSubTypes
+  langs:
+  - csharp
+  - vb
+  name: VODAFONE_MPEG_RAW_AAC
+  nameWithType: AudioSubTypes.VODAFONE_MPEG_RAW_AAC
+  fullName: SilverCraft.CSCore.AudioSubTypes.VODAFONE_MPEG_RAW_AAC
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/AudioSubTypes.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: VODAFONE_MPEG_RAW_AAC
+    path: ../SilverCraft.CSCore/AudioSubTypes.cs
+    startLine: 489
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore
+  summary: VODAFONE_MPEG_RAW_AAC
+  remarks: Source wmCodec.h
+  example: []
+  syntax:
+    content: public static readonly Guid VODAFONE_MPEG_RAW_AAC
+    return:
+      type: System.Guid
+    content.vb: Public Shared ReadOnly VODAFONE_MPEG_RAW_AAC As Guid
+- uid: SilverCraft.CSCore.AudioSubTypes.MPEG_HEAAC
+  commentId: F:SilverCraft.CSCore.AudioSubTypes.MPEG_HEAAC
+  id: MPEG_HEAAC
+  parent: SilverCraft.CSCore.AudioSubTypes
+  langs:
+  - csharp
+  - vb
+  name: MPEG_HEAAC
+  nameWithType: AudioSubTypes.MPEG_HEAAC
+  fullName: SilverCraft.CSCore.AudioSubTypes.MPEG_HEAAC
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/AudioSubTypes.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: MPEG_HEAAC
+    path: ../SilverCraft.CSCore/AudioSubTypes.cs
+    startLine: 495
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore
+  summary: >-
+    High-Efficiency Advanced Audio Coding (HE-AAC) stream.
+
+    The format block is an HEAACWAVEFORMAT structure. See <a href="http://msdn.microsoft.com/en-us/library/dd317599%28VS.85%29.aspx">http://msdn.microsoft.com/en-us/library/dd317599%28VS.85%29.aspx</a>.
+  example: []
+  syntax:
+    content: public static readonly Guid MPEG_HEAAC
+    return:
+      type: System.Guid
+    content.vb: Public Shared ReadOnly MPEG_HEAAC As Guid
+- uid: SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_DVM
+  commentId: F:SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_DVM
+  id: WAVE_FORMAT_DVM
+  parent: SilverCraft.CSCore.AudioSubTypes
+  langs:
+  - csharp
+  - vb
+  name: WAVE_FORMAT_DVM
+  nameWithType: AudioSubTypes.WAVE_FORMAT_DVM
+  fullName: SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_DVM
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/AudioSubTypes.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: WAVE_FORMAT_DVM
+    path: ../SilverCraft.CSCore/AudioSubTypes.cs
+    startLine: 498
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore
+  summary: WAVE_FORMAT_DVM
+  example: []
+  syntax:
+    content: public static readonly Guid WAVE_FORMAT_DVM
+    return:
+      type: System.Guid
+    content.vb: Public Shared ReadOnly WAVE_FORMAT_DVM As Guid
+- uid: SilverCraft.CSCore.AudioSubTypes.Vorbis1
+  commentId: F:SilverCraft.CSCore.AudioSubTypes.Vorbis1
+  id: Vorbis1
+  parent: SilverCraft.CSCore.AudioSubTypes
+  langs:
+  - csharp
+  - vb
+  name: Vorbis1
+  nameWithType: AudioSubTypes.Vorbis1
+  fullName: SilverCraft.CSCore.AudioSubTypes.Vorbis1
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/AudioSubTypes.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: Vorbis1
+    path: ../SilverCraft.CSCore/AudioSubTypes.cs
+    startLine: 502
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore
+  summary: WAVE_FORMAT_VORBIS1 "Og" Original stream compatible
+  example: []
+  syntax:
+    content: public static readonly Guid Vorbis1
+    return:
+      type: System.Guid
+    content.vb: Public Shared ReadOnly Vorbis1 As Guid
+- uid: SilverCraft.CSCore.AudioSubTypes.Vorbis2
+  commentId: F:SilverCraft.CSCore.AudioSubTypes.Vorbis2
+  id: Vorbis2
+  parent: SilverCraft.CSCore.AudioSubTypes
+  langs:
+  - csharp
+  - vb
+  name: Vorbis2
+  nameWithType: AudioSubTypes.Vorbis2
+  fullName: SilverCraft.CSCore.AudioSubTypes.Vorbis2
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/AudioSubTypes.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: Vorbis2
+    path: ../SilverCraft.CSCore/AudioSubTypes.cs
+    startLine: 505
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore
+  summary: WAVE_FORMAT_VORBIS2 "Pg" Have independent header
+  example: []
+  syntax:
+    content: public static readonly Guid Vorbis2
+    return:
+      type: System.Guid
+    content.vb: Public Shared ReadOnly Vorbis2 As Guid
+- uid: SilverCraft.CSCore.AudioSubTypes.Vorbis3
+  commentId: F:SilverCraft.CSCore.AudioSubTypes.Vorbis3
+  id: Vorbis3
+  parent: SilverCraft.CSCore.AudioSubTypes
+  langs:
+  - csharp
+  - vb
+  name: Vorbis3
+  nameWithType: AudioSubTypes.Vorbis3
+  fullName: SilverCraft.CSCore.AudioSubTypes.Vorbis3
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/AudioSubTypes.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: Vorbis3
+    path: ../SilverCraft.CSCore/AudioSubTypes.cs
+    startLine: 508
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore
+  summary: WAVE_FORMAT_VORBIS3 "Qg" Have no codebook header
+  example: []
+  syntax:
+    content: public static readonly Guid Vorbis3
+    return:
+      type: System.Guid
+    content.vb: Public Shared ReadOnly Vorbis3 As Guid
+- uid: SilverCraft.CSCore.AudioSubTypes.Vorbis1P
+  commentId: F:SilverCraft.CSCore.AudioSubTypes.Vorbis1P
+  id: Vorbis1P
+  parent: SilverCraft.CSCore.AudioSubTypes
+  langs:
+  - csharp
+  - vb
+  name: Vorbis1P
+  nameWithType: AudioSubTypes.Vorbis1P
+  fullName: SilverCraft.CSCore.AudioSubTypes.Vorbis1P
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/AudioSubTypes.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: Vorbis1P
+    path: ../SilverCraft.CSCore/AudioSubTypes.cs
+    startLine: 511
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore
+  summary: WAVE_FORMAT_VORBIS1P "og" Original stream compatible
+  example: []
+  syntax:
+    content: public static readonly Guid Vorbis1P
+    return:
+      type: System.Guid
+    content.vb: Public Shared ReadOnly Vorbis1P As Guid
+- uid: SilverCraft.CSCore.AudioSubTypes.Vorbis2P
+  commentId: F:SilverCraft.CSCore.AudioSubTypes.Vorbis2P
+  id: Vorbis2P
+  parent: SilverCraft.CSCore.AudioSubTypes
+  langs:
+  - csharp
+  - vb
+  name: Vorbis2P
+  nameWithType: AudioSubTypes.Vorbis2P
+  fullName: SilverCraft.CSCore.AudioSubTypes.Vorbis2P
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/AudioSubTypes.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: Vorbis2P
+    path: ../SilverCraft.CSCore/AudioSubTypes.cs
+    startLine: 514
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore
+  summary: WAVE_FORMAT_VORBIS2P "pg" Have independent headere
+  example: []
+  syntax:
+    content: public static readonly Guid Vorbis2P
+    return:
+      type: System.Guid
+    content.vb: Public Shared ReadOnly Vorbis2P As Guid
+- uid: SilverCraft.CSCore.AudioSubTypes.Vorbis3P
+  commentId: F:SilverCraft.CSCore.AudioSubTypes.Vorbis3P
+  id: Vorbis3P
+  parent: SilverCraft.CSCore.AudioSubTypes
+  langs:
+  - csharp
+  - vb
+  name: Vorbis3P
+  nameWithType: AudioSubTypes.Vorbis3P
+  fullName: SilverCraft.CSCore.AudioSubTypes.Vorbis3P
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/AudioSubTypes.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: Vorbis3P
+    path: ../SilverCraft.CSCore/AudioSubTypes.cs
+    startLine: 517
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore
+  summary: WAVE_FORMAT_VORBIS3P "qg" Have no codebook header
+  example: []
+  syntax:
+    content: public static readonly Guid Vorbis3P
+    return:
+      type: System.Guid
+    content.vb: Public Shared ReadOnly Vorbis3P As Guid
+- uid: SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_RAW_AAC1
+  commentId: F:SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_RAW_AAC1
+  id: WAVE_FORMAT_RAW_AAC1
+  parent: SilverCraft.CSCore.AudioSubTypes
+  langs:
+  - csharp
+  - vb
+  name: WAVE_FORMAT_RAW_AAC1
+  nameWithType: AudioSubTypes.WAVE_FORMAT_RAW_AAC1
+  fullName: SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_RAW_AAC1
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/AudioSubTypes.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: WAVE_FORMAT_RAW_AAC1
+    path: ../SilverCraft.CSCore/AudioSubTypes.cs
+    startLine: 522
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore
+  summary: Raw AAC1
+  example: []
+  syntax:
+    content: public static readonly Guid WAVE_FORMAT_RAW_AAC1
+    return:
+      type: System.Guid
+    content.vb: Public Shared ReadOnly WAVE_FORMAT_RAW_AAC1 As Guid
+- uid: SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_WMAVOICE9
+  commentId: F:SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_WMAVOICE9
+  id: WAVE_FORMAT_WMAVOICE9
+  parent: SilverCraft.CSCore.AudioSubTypes
+  langs:
+  - csharp
+  - vb
+  name: WAVE_FORMAT_WMAVOICE9
+  nameWithType: AudioSubTypes.WAVE_FORMAT_WMAVOICE9
+  fullName: SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_WMAVOICE9
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/AudioSubTypes.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: WAVE_FORMAT_WMAVOICE9
+    path: ../SilverCraft.CSCore/AudioSubTypes.cs
+    startLine: 527
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore
+  summary: Windows Media Audio Voice (WMA Voice)
+  example: []
+  syntax:
+    content: public static readonly Guid WAVE_FORMAT_WMAVOICE9
+    return:
+      type: System.Guid
+    content.vb: Public Shared ReadOnly WAVE_FORMAT_WMAVOICE9 As Guid
+- uid: SilverCraft.CSCore.AudioSubTypes.Extensible
+  commentId: F:SilverCraft.CSCore.AudioSubTypes.Extensible
+  id: Extensible
+  parent: SilverCraft.CSCore.AudioSubTypes
+  langs:
+  - csharp
+  - vb
+  name: Extensible
+  nameWithType: AudioSubTypes.Extensible
+  fullName: SilverCraft.CSCore.AudioSubTypes.Extensible
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/AudioSubTypes.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: Extensible
+    path: ../SilverCraft.CSCore/AudioSubTypes.cs
+    startLine: 530
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore
+  summary: Extensible
+  example: []
+  syntax:
+    content: public static readonly Guid Extensible
+    return:
+      type: System.Guid
+    content.vb: Public Shared ReadOnly Extensible As Guid
+- uid: SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_DEVELOPMENT
+  commentId: F:SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_DEVELOPMENT
+  id: WAVE_FORMAT_DEVELOPMENT
+  parent: SilverCraft.CSCore.AudioSubTypes
+  langs:
+  - csharp
+  - vb
+  name: WAVE_FORMAT_DEVELOPMENT
+  nameWithType: AudioSubTypes.WAVE_FORMAT_DEVELOPMENT
+  fullName: SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_DEVELOPMENT
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/AudioSubTypes.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: WAVE_FORMAT_DEVELOPMENT
+    path: ../SilverCraft.CSCore/AudioSubTypes.cs
+    startLine: 533
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore
+  summary: WAVE_FORMAT_DEVELOPMENT
+  example: []
+  syntax:
+    content: public static readonly Guid WAVE_FORMAT_DEVELOPMENT
+    return:
+      type: System.Guid
+    content.vb: Public Shared ReadOnly WAVE_FORMAT_DEVELOPMENT As Guid
+- uid: SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_FLAC
+  commentId: F:SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_FLAC
+  id: WAVE_FORMAT_FLAC
+  parent: SilverCraft.CSCore.AudioSubTypes
+  langs:
+  - csharp
+  - vb
+  name: WAVE_FORMAT_FLAC
+  nameWithType: AudioSubTypes.WAVE_FORMAT_FLAC
+  fullName: SilverCraft.CSCore.AudioSubTypes.WAVE_FORMAT_FLAC
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/AudioSubTypes.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: WAVE_FORMAT_FLAC
+    path: ../SilverCraft.CSCore/AudioSubTypes.cs
+    startLine: 538
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore
+  summary: FLAC
+  example: []
+  syntax:
+    content: public static readonly Guid WAVE_FORMAT_FLAC
+    return:
+      type: System.Guid
+    content.vb: Public Shared ReadOnly WAVE_FORMAT_FLAC As Guid
+- uid: SilverCraft.CSCore.AudioSubTypes.EncodingFromSubType(System.Guid)
+  commentId: M:SilverCraft.CSCore.AudioSubTypes.EncodingFromSubType(System.Guid)
+  id: EncodingFromSubType(System.Guid)
+  parent: SilverCraft.CSCore.AudioSubTypes
+  langs:
+  - csharp
+  - vb
+  name: EncodingFromSubType(Guid)
+  nameWithType: AudioSubTypes.EncodingFromSubType(Guid)
+  fullName: SilverCraft.CSCore.AudioSubTypes.EncodingFromSubType(System.Guid)
+  type: Method
+  source:
+    remote:
+      path: SilverCraft.CSCore/AudioSubTypes.Utils.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: EncodingFromSubType
+    path: ../SilverCraft.CSCore/AudioSubTypes.Utils.cs
+    startLine: 15
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore
+  summary: Converts a <xref href="SilverCraft.CSCore.AudioSubTypes" data-throw-if-not-resolved="false"></xref>-value to a <xref href="SilverCraft.CSCore.AudioEncoding" data-throw-if-not-resolved="false"></xref>-value.
+  example: []
+  syntax:
+    content: public static AudioEncoding EncodingFromSubType(Guid audioSubType)
+    parameters:
+    - id: audioSubType
+      type: System.Guid
+      description: The <xref href="SilverCraft.CSCore.AudioSubTypes" data-throw-if-not-resolved="false"></xref>-value to convert to the equivalent <xref href="SilverCraft.CSCore.AudioEncoding" data-throw-if-not-resolved="false"></xref>-value.
+    return:
+      type: SilverCraft.CSCore.AudioEncoding
+      description: The <xref href="SilverCraft.CSCore.AudioEncoding" data-throw-if-not-resolved="false"></xref> which belongs to the specified <code class="paramref">audioSubType</code>.
+    content.vb: Public Shared Function EncodingFromSubType(audioSubType As Guid) As AudioEncoding
+  overload: SilverCraft.CSCore.AudioSubTypes.EncodingFromSubType*
+- uid: SilverCraft.CSCore.AudioSubTypes.SubTypeFromEncoding(SilverCraft.CSCore.AudioEncoding)
+  commentId: M:SilverCraft.CSCore.AudioSubTypes.SubTypeFromEncoding(SilverCraft.CSCore.AudioEncoding)
+  id: SubTypeFromEncoding(SilverCraft.CSCore.AudioEncoding)
+  parent: SilverCraft.CSCore.AudioSubTypes
+  langs:
+  - csharp
+  - vb
+  name: SubTypeFromEncoding(AudioEncoding)
+  nameWithType: AudioSubTypes.SubTypeFromEncoding(AudioEncoding)
+  fullName: SilverCraft.CSCore.AudioSubTypes.SubTypeFromEncoding(SilverCraft.CSCore.AudioEncoding)
+  type: Method
+  source:
+    remote:
+      path: SilverCraft.CSCore/AudioSubTypes.Utils.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: SubTypeFromEncoding
+    path: ../SilverCraft.CSCore/AudioSubTypes.Utils.cs
+    startLine: 30
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore
+  summary: Converts a <xref href="SilverCraft.CSCore.AudioEncoding" data-throw-if-not-resolved="false"></xref> value to a <xref href="SilverCraft.CSCore.AudioSubTypes" data-throw-if-not-resolved="false"></xref>-value.
+  example: []
+  syntax:
+    content: public static Guid SubTypeFromEncoding(AudioEncoding audioEncoding)
+    parameters:
+    - id: audioEncoding
+      type: SilverCraft.CSCore.AudioEncoding
+      description: The <xref href="SilverCraft.CSCore.AudioEncoding" data-throw-if-not-resolved="false"></xref> to convert to the equivalent <xref href="SilverCraft.CSCore.AudioSubTypes" data-throw-if-not-resolved="false"></xref>-value.
+    return:
+      type: System.Guid
+      description: The <xref href="SilverCraft.CSCore.AudioSubTypes" data-throw-if-not-resolved="false"></xref>-value which belongs to the specified <code class="paramref">audioEncoding</code>.
+    content.vb: Public Shared Function SubTypeFromEncoding(audioEncoding As AudioEncoding) As Guid
+  overload: SilverCraft.CSCore.AudioSubTypes.SubTypeFromEncoding*
+- uid: SilverCraft.CSCore.AudioSubTypes.MediaTypeAudio
+  commentId: F:SilverCraft.CSCore.AudioSubTypes.MediaTypeAudio
+  id: MediaTypeAudio
+  parent: SilverCraft.CSCore.AudioSubTypes
+  langs:
+  - csharp
+  - vb
+  name: MediaTypeAudio
+  nameWithType: AudioSubTypes.MediaTypeAudio
+  fullName: SilverCraft.CSCore.AudioSubTypes.MediaTypeAudio
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/AudioSubTypes.Utils.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: MediaTypeAudio
+    path: ../SilverCraft.CSCore/AudioSubTypes.Utils.cs
+    startLine: 41
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore
+  summary: The Major Type for <code>Audio</code> media types.
+  example: []
+  syntax:
+    content: public static readonly Guid MediaTypeAudio
+    return:
+      type: System.Guid
+    content.vb: Public Shared ReadOnly MediaTypeAudio As Guid
+references:
+- uid: SilverCraft.CSCore.AudioSubTypes
+  commentId: T:SilverCraft.CSCore.AudioSubTypes
+  href: SilverCraft.CSCore.AudioSubTypes.html
+  name: AudioSubTypes
+  nameWithType: AudioSubTypes
+  fullName: SilverCraft.CSCore.AudioSubTypes
+- uid: SilverCraft.CSCore.AudioEncoding
+  commentId: T:SilverCraft.CSCore.AudioEncoding
+  parent: SilverCraft.CSCore
+  href: SilverCraft.CSCore.AudioEncoding.html
+  name: AudioEncoding
+  nameWithType: AudioEncoding
+  fullName: SilverCraft.CSCore.AudioEncoding
+- uid: SilverCraft.CSCore.WaveFormatExtensible
+  commentId: T:SilverCraft.CSCore.WaveFormatExtensible
+  href: SilverCraft.CSCore.WaveFormatExtensible.html
+  name: WaveFormatExtensible
+  nameWithType: WaveFormatExtensible
+  fullName: SilverCraft.CSCore.WaveFormatExtensible
+- uid: SilverCraft.CSCore
+  commentId: N:SilverCraft.CSCore
+  href: SilverCraft.html
+  name: SilverCraft.CSCore
+  nameWithType: SilverCraft.CSCore
+  fullName: SilverCraft.CSCore
+  spec.csharp:
+  - uid: SilverCraft
+    name: SilverCraft
+    href: SilverCraft.html
+  - name: .
+  - uid: SilverCraft.CSCore
+    name: CSCore
+    href: SilverCraft.CSCore.html
+  spec.vb:
+  - uid: SilverCraft
+    name: SilverCraft
+    href: SilverCraft.html
+  - name: .
+  - uid: SilverCraft.CSCore
+    name: CSCore
+    href: SilverCraft.CSCore.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Guid
+  commentId: T:System.Guid
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.guid
+  name: Guid
+  nameWithType: Guid
+  fullName: System.Guid
+- uid: SilverCraft.CSCore.AudioSubTypes.EncodingFromSubType*
+  commentId: Overload:SilverCraft.CSCore.AudioSubTypes.EncodingFromSubType
+  href: SilverCraft.CSCore.AudioSubTypes.html#SilverCraft_CSCore_AudioSubTypes_EncodingFromSubType_System_Guid_
+  name: EncodingFromSubType
+  nameWithType: AudioSubTypes.EncodingFromSubType
+  fullName: SilverCraft.CSCore.AudioSubTypes.EncodingFromSubType
+- uid: SilverCraft.CSCore.AudioSubTypes.SubTypeFromEncoding*
+  commentId: Overload:SilverCraft.CSCore.AudioSubTypes.SubTypeFromEncoding
+  href: SilverCraft.CSCore.AudioSubTypes.html#SilverCraft_CSCore_AudioSubTypes_SubTypeFromEncoding_SilverCraft_CSCore_AudioEncoding_
+  name: SubTypeFromEncoding
+  nameWithType: AudioSubTypes.SubTypeFromEncoding
+  fullName: SilverCraft.CSCore.AudioSubTypes.SubTypeFromEncoding

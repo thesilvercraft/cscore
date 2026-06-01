@@ -1,0 +1,520 @@
+### YamlMime:ManagedReference
+items:
+- uid: SilverCraft.CSCore.SoundOut.AL.ALContext.ContextLock
+  commentId: T:SilverCraft.CSCore.SoundOut.AL.ALContext.ContextLock
+  id: ALContext.ContextLock
+  parent: SilverCraft.CSCore.SoundOut.AL
+  children:
+  - SilverCraft.CSCore.SoundOut.AL.ALContext.ContextLock.Context
+  - SilverCraft.CSCore.SoundOut.AL.ALContext.ContextLock.Dispose
+  langs:
+  - csharp
+  - vb
+  name: ALContext.ContextLock
+  nameWithType: ALContext.ContextLock
+  fullName: SilverCraft.CSCore.SoundOut.AL.ALContext.ContextLock
+  type: Class
+  source:
+    remote:
+      path: SilverCraft.CSCore/SoundOut/AL/ALContext.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: ContextLock
+    path: ../SilverCraft.CSCore/SoundOut/AL/ALContext.cs
+    startLine: 179
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.SoundOut.AL
+  summary: Represents a locked Context.
+  example: []
+  syntax:
+    content: 'public sealed class ALContext.ContextLock : IDisposable'
+    content.vb: Public NotInheritable Class ALContext.ContextLock Implements IDisposable
+  inheritance:
+  - System.Object
+  implements:
+  - System.IDisposable
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  extensionMethods:
+  - SilverCraft.CSCore.SoundOut.AL.ALContext.ContextLock.SilverCraft.CSCore.FluentExtensions.Synchronized``2
+- uid: SilverCraft.CSCore.SoundOut.AL.ALContext.ContextLock.Context
+  commentId: P:SilverCraft.CSCore.SoundOut.AL.ALContext.ContextLock.Context
+  id: Context
+  parent: SilverCraft.CSCore.SoundOut.AL.ALContext.ContextLock
+  langs:
+  - csharp
+  - vb
+  name: Context
+  nameWithType: ALContext.ContextLock.Context
+  fullName: SilverCraft.CSCore.SoundOut.AL.ALContext.ContextLock.Context
+  type: Property
+  source:
+    remote:
+      path: SilverCraft.CSCore/SoundOut/AL/ALContext.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: Context
+    path: ../SilverCraft.CSCore/SoundOut/AL/ALContext.cs
+    startLine: 197
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.SoundOut.AL
+  summary: Gets the locked context.
+  example: []
+  syntax:
+    content: public ALContext Context { get; }
+    parameters: []
+    return:
+      type: SilverCraft.CSCore.SoundOut.AL.ALContext
+    content.vb: Public Property Context As ALContext
+  overload: SilverCraft.CSCore.SoundOut.AL.ALContext.ContextLock.Context*
+- uid: SilverCraft.CSCore.SoundOut.AL.ALContext.ContextLock.Dispose
+  commentId: M:SilverCraft.CSCore.SoundOut.AL.ALContext.ContextLock.Dispose
+  id: Dispose
+  parent: SilverCraft.CSCore.SoundOut.AL.ALContext.ContextLock
+  langs:
+  - csharp
+  - vb
+  name: Dispose()
+  nameWithType: ALContext.ContextLock.Dispose()
+  fullName: SilverCraft.CSCore.SoundOut.AL.ALContext.ContextLock.Dispose()
+  type: Method
+  source:
+    remote:
+      path: SilverCraft.CSCore/SoundOut/AL/ALContext.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: Dispose
+    path: ../SilverCraft.CSCore/SoundOut/AL/ALContext.cs
+    startLine: 215
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.SoundOut.AL
+  summary: Unlocks the locked Context.
+  example: []
+  syntax:
+    content: public void Dispose()
+    content.vb: Public Sub Dispose()
+  overload: SilverCraft.CSCore.SoundOut.AL.ALContext.ContextLock.Dispose*
+  implements:
+  - System.IDisposable.Dispose
+references:
+- uid: SilverCraft.CSCore.SoundOut.AL
+  commentId: N:SilverCraft.CSCore.SoundOut.AL
+  href: SilverCraft.html
+  name: SilverCraft.CSCore.SoundOut.AL
+  nameWithType: SilverCraft.CSCore.SoundOut.AL
+  fullName: SilverCraft.CSCore.SoundOut.AL
+  spec.csharp:
+  - uid: SilverCraft
+    name: SilverCraft
+    href: SilverCraft.html
+  - name: .
+  - uid: SilverCraft.CSCore
+    name: CSCore
+    href: SilverCraft.CSCore.html
+  - name: .
+  - uid: SilverCraft.CSCore.SoundOut
+    name: SoundOut
+    href: SilverCraft.CSCore.SoundOut.html
+  - name: .
+  - uid: SilverCraft.CSCore.SoundOut.AL
+    name: AL
+    href: SilverCraft.CSCore.SoundOut.AL.html
+  spec.vb:
+  - uid: SilverCraft
+    name: SilverCraft
+    href: SilverCraft.html
+  - name: .
+  - uid: SilverCraft.CSCore
+    name: CSCore
+    href: SilverCraft.CSCore.html
+  - name: .
+  - uid: SilverCraft.CSCore.SoundOut
+    name: SoundOut
+    href: SilverCraft.CSCore.SoundOut.html
+  - name: .
+  - uid: SilverCraft.CSCore.SoundOut.AL
+    name: AL
+    href: SilverCraft.CSCore.SoundOut.AL.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.IDisposable
+  commentId: T:System.IDisposable
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.idisposable
+  name: IDisposable
+  nameWithType: IDisposable
+  fullName: System.IDisposable
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: SilverCraft.CSCore.SoundOut.AL.ALContext.ContextLock.SilverCraft.CSCore.FluentExtensions.Synchronized``2
+  commentId: M:SilverCraft.CSCore.FluentExtensions.Synchronized``2(``0)
+  parent: SilverCraft.CSCore.FluentExtensions
+  definition: SilverCraft.CSCore.FluentExtensions.Synchronized``2(``0)
+  href: SilverCraft.CSCore.FluentExtensions.html#SilverCraft_CSCore_FluentExtensions_Synchronized__2___0_
+  name: Synchronized<ContextLock, T>(ContextLock)
+  nameWithType: FluentExtensions.Synchronized<ALContext.ContextLock, T>(ALContext.ContextLock)
+  fullName: SilverCraft.CSCore.FluentExtensions.Synchronized<SilverCraft.CSCore.SoundOut.AL.ALContext.ContextLock, T>(SilverCraft.CSCore.SoundOut.AL.ALContext.ContextLock)
+  nameWithType.vb: FluentExtensions.Synchronized(Of ALContext.ContextLock, T)(ALContext.ContextLock)
+  fullName.vb: SilverCraft.CSCore.FluentExtensions.Synchronized(Of SilverCraft.CSCore.SoundOut.AL.ALContext.ContextLock, T)(SilverCraft.CSCore.SoundOut.AL.ALContext.ContextLock)
+  name.vb: Synchronized(Of ContextLock, T)(ContextLock)
+  spec.csharp:
+  - uid: SilverCraft.CSCore.FluentExtensions.Synchronized``2(SilverCraft.CSCore.SoundOut.AL.ALContext.ContextLock)
+    name: Synchronized
+    href: SilverCraft.CSCore.FluentExtensions.html#SilverCraft_CSCore_FluentExtensions_Synchronized__2___0_
+  - name: <
+  - uid: SilverCraft.CSCore.SoundOut.AL.ALContext.ContextLock
+    name: ContextLock
+    href: SilverCraft.CSCore.SoundOut.AL.ALContext.ContextLock.html
+  - name: ','
+  - name: " "
+  - name: T
+  - name: '>'
+  - name: (
+  - uid: SilverCraft.CSCore.SoundOut.AL.ALContext.ContextLock
+    name: ContextLock
+    href: SilverCraft.CSCore.SoundOut.AL.ALContext.ContextLock.html
+  - name: )
+  spec.vb:
+  - uid: SilverCraft.CSCore.FluentExtensions.Synchronized``2(SilverCraft.CSCore.SoundOut.AL.ALContext.ContextLock)
+    name: Synchronized
+    href: SilverCraft.CSCore.FluentExtensions.html#SilverCraft_CSCore_FluentExtensions_Synchronized__2___0_
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: SilverCraft.CSCore.SoundOut.AL.ALContext.ContextLock
+    name: ContextLock
+    href: SilverCraft.CSCore.SoundOut.AL.ALContext.ContextLock.html
+  - name: ','
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: SilverCraft.CSCore.SoundOut.AL.ALContext.ContextLock
+    name: ContextLock
+    href: SilverCraft.CSCore.SoundOut.AL.ALContext.ContextLock.html
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: SilverCraft.CSCore.FluentExtensions.Synchronized``2(``0)
+  commentId: M:SilverCraft.CSCore.FluentExtensions.Synchronized``2(``0)
+  href: SilverCraft.CSCore.FluentExtensions.html#SilverCraft_CSCore_FluentExtensions_Synchronized__2___0_
+  name: Synchronized<TAudioSource, T>(TAudioSource)
+  nameWithType: FluentExtensions.Synchronized<TAudioSource, T>(TAudioSource)
+  fullName: SilverCraft.CSCore.FluentExtensions.Synchronized<TAudioSource, T>(TAudioSource)
+  nameWithType.vb: FluentExtensions.Synchronized(Of TAudioSource, T)(TAudioSource)
+  fullName.vb: SilverCraft.CSCore.FluentExtensions.Synchronized(Of TAudioSource, T)(TAudioSource)
+  name.vb: Synchronized(Of TAudioSource, T)(TAudioSource)
+  spec.csharp:
+  - uid: SilverCraft.CSCore.FluentExtensions.Synchronized``2(``0)
+    name: Synchronized
+    href: SilverCraft.CSCore.FluentExtensions.html#SilverCraft_CSCore_FluentExtensions_Synchronized__2___0_
+  - name: <
+  - name: TAudioSource
+  - name: ','
+  - name: " "
+  - name: T
+  - name: '>'
+  - name: (
+  - name: TAudioSource
+  - name: )
+  spec.vb:
+  - uid: SilverCraft.CSCore.FluentExtensions.Synchronized``2(``0)
+    name: Synchronized
+    href: SilverCraft.CSCore.FluentExtensions.html#SilverCraft_CSCore_FluentExtensions_Synchronized__2___0_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TAudioSource
+  - name: ','
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - name: TAudioSource
+  - name: )
+- uid: SilverCraft.CSCore.FluentExtensions
+  commentId: T:SilverCraft.CSCore.FluentExtensions
+  parent: SilverCraft.CSCore
+  href: SilverCraft.CSCore.FluentExtensions.html
+  name: FluentExtensions
+  nameWithType: FluentExtensions
+  fullName: SilverCraft.CSCore.FluentExtensions
+- uid: SilverCraft.CSCore
+  commentId: N:SilverCraft.CSCore
+  href: SilverCraft.html
+  name: SilverCraft.CSCore
+  nameWithType: SilverCraft.CSCore
+  fullName: SilverCraft.CSCore
+  spec.csharp:
+  - uid: SilverCraft
+    name: SilverCraft
+    href: SilverCraft.html
+  - name: .
+  - uid: SilverCraft.CSCore
+    name: CSCore
+    href: SilverCraft.CSCore.html
+  spec.vb:
+  - uid: SilverCraft
+    name: SilverCraft
+    href: SilverCraft.html
+  - name: .
+  - uid: SilverCraft.CSCore
+    name: CSCore
+    href: SilverCraft.CSCore.html
+- uid: SilverCraft.CSCore.SoundOut.AL.ALContext.ContextLock.Context*
+  commentId: Overload:SilverCraft.CSCore.SoundOut.AL.ALContext.ContextLock.Context
+  href: SilverCraft.CSCore.SoundOut.AL.ALContext.ContextLock.html#SilverCraft_CSCore_SoundOut_AL_ALContext_ContextLock_Context
+  name: Context
+  nameWithType: ALContext.ContextLock.Context
+  fullName: SilverCraft.CSCore.SoundOut.AL.ALContext.ContextLock.Context
+- uid: SilverCraft.CSCore.SoundOut.AL.ALContext
+  commentId: T:SilverCraft.CSCore.SoundOut.AL.ALContext
+  parent: SilverCraft.CSCore.SoundOut.AL
+  href: SilverCraft.CSCore.SoundOut.AL.ALContext.html
+  name: ALContext
+  nameWithType: ALContext
+  fullName: SilverCraft.CSCore.SoundOut.AL.ALContext
+- uid: SilverCraft.CSCore.SoundOut.AL.ALContext.ContextLock.Dispose*
+  commentId: Overload:SilverCraft.CSCore.SoundOut.AL.ALContext.ContextLock.Dispose
+  href: SilverCraft.CSCore.SoundOut.AL.ALContext.ContextLock.html#SilverCraft_CSCore_SoundOut_AL_ALContext_ContextLock_Dispose
+  name: Dispose
+  nameWithType: ALContext.ContextLock.Dispose
+  fullName: SilverCraft.CSCore.SoundOut.AL.ALContext.ContextLock.Dispose
+- uid: System.IDisposable.Dispose
+  commentId: M:System.IDisposable.Dispose
+  parent: System.IDisposable
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.idisposable.dispose
+  name: Dispose()
+  nameWithType: IDisposable.Dispose()
+  fullName: System.IDisposable.Dispose()
+  spec.csharp:
+  - uid: System.IDisposable.Dispose
+    name: Dispose
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.idisposable.dispose
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.IDisposable.Dispose
+    name: Dispose
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.idisposable.dispose
+  - name: (
+  - name: )

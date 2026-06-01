@@ -1,10 +1,22 @@
 ﻿using SilverCraft.CSCore;
 using SilverCraft.CSCore.Codecs.FLAC;
-using SilverCraft.CSCore.PortAudio;
-using SilverCraft.CSCore.SndFile;
 using SilverCraft.CSCore.SoundOut;
-using SilverCraft.CSCore.Streams.SampleConverter;
+FlacFile f = new("Sample_BeeMoved_96kHz24bit.flac");
+try
+{
+    using var o = new ALSoundOut();
+    o.Volume=0.6f;
+    o.Initialize(f);
+    o.Play();
+    o.WaitForStopped();
+}
+finally
+{
+    f.Dispose();
+}
 
+
+/*
 args = ["/home/silver/source/cscore/SilverCraft.CsCore.BasicPlayTest/music.flac"];
 float volume = 1f;
 while (true)
@@ -43,3 +55,4 @@ while (true)
     soundOut.Dispose();
     f.Dispose();
 }
+*/

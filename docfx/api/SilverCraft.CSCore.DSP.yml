@@ -1,0 +1,164 @@
+### YamlMime:ManagedReference
+items:
+- uid: SilverCraft.CSCore.DSP
+  commentId: N:SilverCraft.CSCore.DSP
+  id: SilverCraft.CSCore.DSP
+  children:
+  - SilverCraft.CSCore.DSP.BandpassFilter
+  - SilverCraft.CSCore.DSP.BiQuad
+  - SilverCraft.CSCore.DSP.ChannelMatrix
+  - SilverCraft.CSCore.DSP.ChannelMatrixElement
+  - SilverCraft.CSCore.DSP.FastFourierTransformation
+  - SilverCraft.CSCore.DSP.FftMode
+  - SilverCraft.CSCore.DSP.FftProvider
+  - SilverCraft.CSCore.DSP.FftSize
+  - SilverCraft.CSCore.DSP.HighShelfFilter
+  - SilverCraft.CSCore.DSP.HighpassFilter
+  - SilverCraft.CSCore.DSP.LowShelfFilter
+  - SilverCraft.CSCore.DSP.LowpassFilter
+  - SilverCraft.CSCore.DSP.NotchFilter
+  - SilverCraft.CSCore.DSP.PeakFilter
+  - SilverCraft.CSCore.DSP.WindowFunction
+  - SilverCraft.CSCore.DSP.WindowFunctions
+  langs:
+  - csharp
+  - vb
+  name: SilverCraft.CSCore.DSP
+  nameWithType: SilverCraft.CSCore.DSP
+  fullName: SilverCraft.CSCore.DSP
+  type: Namespace
+  assemblies:
+  - SilverCraft.CSCore
+references:
+- uid: SilverCraft.CSCore.DSP.BandpassFilter
+  commentId: T:SilverCraft.CSCore.DSP.BandpassFilter
+  href: SilverCraft.CSCore.DSP.BandpassFilter.html
+  name: BandpassFilter
+  nameWithType: BandpassFilter
+  fullName: SilverCraft.CSCore.DSP.BandpassFilter
+- uid: SilverCraft.CSCore.DSP.BiQuad
+  commentId: T:SilverCraft.CSCore.DSP.BiQuad
+  parent: SilverCraft.CSCore.DSP
+  href: SilverCraft.CSCore.DSP.BiQuad.html
+  name: BiQuad
+  nameWithType: BiQuad
+  fullName: SilverCraft.CSCore.DSP.BiQuad
+- uid: SilverCraft.CSCore.DSP.ChannelMatrix
+  commentId: T:SilverCraft.CSCore.DSP.ChannelMatrix
+  parent: SilverCraft.CSCore.DSP
+  href: SilverCraft.CSCore.DSP.ChannelMatrix.html
+  name: ChannelMatrix
+  nameWithType: ChannelMatrix
+  fullName: SilverCraft.CSCore.DSP.ChannelMatrix
+- uid: SilverCraft.CSCore.DSP.ChannelMatrixElement
+  commentId: T:SilverCraft.CSCore.DSP.ChannelMatrixElement
+  parent: SilverCraft.CSCore.DSP
+  href: SilverCraft.CSCore.DSP.ChannelMatrixElement.html
+  name: ChannelMatrixElement
+  nameWithType: ChannelMatrixElement
+  fullName: SilverCraft.CSCore.DSP.ChannelMatrixElement
+- uid: SilverCraft.CSCore.DSP.FastFourierTransformation
+  commentId: T:SilverCraft.CSCore.DSP.FastFourierTransformation
+  href: SilverCraft.CSCore.DSP.FastFourierTransformation.html
+  name: FastFourierTransformation
+  nameWithType: FastFourierTransformation
+  fullName: SilverCraft.CSCore.DSP.FastFourierTransformation
+- uid: SilverCraft.CSCore.DSP.FftMode
+  commentId: T:SilverCraft.CSCore.DSP.FftMode
+  parent: SilverCraft.CSCore.DSP
+  href: SilverCraft.CSCore.DSP.FftMode.html
+  name: FftMode
+  nameWithType: FftMode
+  fullName: SilverCraft.CSCore.DSP.FftMode
+- uid: SilverCraft.CSCore.DSP.FftProvider
+  commentId: T:SilverCraft.CSCore.DSP.FftProvider
+  href: SilverCraft.CSCore.DSP.FftProvider.html
+  name: FftProvider
+  nameWithType: FftProvider
+  fullName: SilverCraft.CSCore.DSP.FftProvider
+- uid: SilverCraft.CSCore.DSP.FftSize
+  commentId: T:SilverCraft.CSCore.DSP.FftSize
+  parent: SilverCraft.CSCore.DSP
+  href: SilverCraft.CSCore.DSP.FftSize.html
+  name: FftSize
+  nameWithType: FftSize
+  fullName: SilverCraft.CSCore.DSP.FftSize
+- uid: SilverCraft.CSCore.DSP.HighpassFilter
+  commentId: T:SilverCraft.CSCore.DSP.HighpassFilter
+  href: SilverCraft.CSCore.DSP.HighpassFilter.html
+  name: HighpassFilter
+  nameWithType: HighpassFilter
+  fullName: SilverCraft.CSCore.DSP.HighpassFilter
+- uid: SilverCraft.CSCore.DSP.HighShelfFilter
+  commentId: T:SilverCraft.CSCore.DSP.HighShelfFilter
+  href: SilverCraft.CSCore.DSP.HighShelfFilter.html
+  name: HighShelfFilter
+  nameWithType: HighShelfFilter
+  fullName: SilverCraft.CSCore.DSP.HighShelfFilter
+- uid: SilverCraft.CSCore.DSP.LowpassFilter
+  commentId: T:SilverCraft.CSCore.DSP.LowpassFilter
+  href: SilverCraft.CSCore.DSP.LowpassFilter.html
+  name: LowpassFilter
+  nameWithType: LowpassFilter
+  fullName: SilverCraft.CSCore.DSP.LowpassFilter
+- uid: SilverCraft.CSCore.DSP.LowShelfFilter
+  commentId: T:SilverCraft.CSCore.DSP.LowShelfFilter
+  href: SilverCraft.CSCore.DSP.LowShelfFilter.html
+  name: LowShelfFilter
+  nameWithType: LowShelfFilter
+  fullName: SilverCraft.CSCore.DSP.LowShelfFilter
+- uid: SilverCraft.CSCore.DSP.NotchFilter
+  commentId: T:SilverCraft.CSCore.DSP.NotchFilter
+  href: SilverCraft.CSCore.DSP.NotchFilter.html
+  name: NotchFilter
+  nameWithType: NotchFilter
+  fullName: SilverCraft.CSCore.DSP.NotchFilter
+- uid: SilverCraft.CSCore.DSP.PeakFilter
+  commentId: T:SilverCraft.CSCore.DSP.PeakFilter
+  href: SilverCraft.CSCore.DSP.PeakFilter.html
+  name: PeakFilter
+  nameWithType: PeakFilter
+  fullName: SilverCraft.CSCore.DSP.PeakFilter
+- uid: SilverCraft.CSCore.DSP.WindowFunction
+  commentId: T:SilverCraft.CSCore.DSP.WindowFunction
+  parent: SilverCraft.CSCore.DSP
+  href: SilverCraft.CSCore.DSP.WindowFunction.html
+  name: WindowFunction
+  nameWithType: WindowFunction
+  fullName: SilverCraft.CSCore.DSP.WindowFunction
+- uid: SilverCraft.CSCore.DSP.WindowFunctions
+  commentId: T:SilverCraft.CSCore.DSP.WindowFunctions
+  href: SilverCraft.CSCore.DSP.WindowFunctions.html
+  name: WindowFunctions
+  nameWithType: WindowFunctions
+  fullName: SilverCraft.CSCore.DSP.WindowFunctions
+- uid: SilverCraft.CSCore.DSP
+  commentId: N:SilverCraft.CSCore.DSP
+  href: SilverCraft.html
+  name: SilverCraft.CSCore.DSP
+  nameWithType: SilverCraft.CSCore.DSP
+  fullName: SilverCraft.CSCore.DSP
+  spec.csharp:
+  - uid: SilverCraft
+    name: SilverCraft
+    href: SilverCraft.html
+  - name: .
+  - uid: SilverCraft.CSCore
+    name: CSCore
+    href: SilverCraft.CSCore.html
+  - name: .
+  - uid: SilverCraft.CSCore.DSP
+    name: DSP
+    href: SilverCraft.CSCore.DSP.html
+  spec.vb:
+  - uid: SilverCraft
+    name: SilverCraft
+    href: SilverCraft.html
+  - name: .
+  - uid: SilverCraft.CSCore
+    name: CSCore
+    href: SilverCraft.CSCore.html
+  - name: .
+  - uid: SilverCraft.CSCore.DSP
+    name: DSP
+    href: SilverCraft.CSCore.DSP.html

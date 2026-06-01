@@ -1,0 +1,817 @@
+### YamlMime:ManagedReference
+items:
+- uid: SilverCraft.CSCore.Codecs.AIFF.AiffChunkContainer
+  commentId: T:SilverCraft.CSCore.Codecs.AIFF.AiffChunkContainer
+  id: AiffChunkContainer
+  parent: SilverCraft.CSCore.Codecs.AIFF
+  children:
+  - SilverCraft.CSCore.Codecs.AIFF.AiffChunkContainer.#ctor(System.IO.BinaryReader)
+  - SilverCraft.CSCore.Codecs.AIFF.AiffChunkContainer.Chunks
+  - SilverCraft.CSCore.Codecs.AIFF.AiffChunkContainer.FormType
+  - SilverCraft.CSCore.Codecs.AIFF.AiffChunkContainer.SkipChunk
+  langs:
+  - csharp
+  - vb
+  name: AiffChunkContainer
+  nameWithType: AiffChunkContainer
+  fullName: SilverCraft.CSCore.Codecs.AIFF.AiffChunkContainer
+  type: Class
+  source:
+    remote:
+      path: SilverCraft.CSCore/Codecs/AIFF/AiffChunkContainer.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: AiffChunkContainer
+    path: ../SilverCraft.CSCore/Codecs/AIFF/AiffChunkContainer.cs
+    startLine: 10
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Codecs.AIFF
+  summary: Provides all <xref href="SilverCraft.CSCore.Codecs.AIFF.AiffChunk" data-throw-if-not-resolved="false"></xref>s of a aiff stream.
+  example: []
+  syntax:
+    content: 'public class AiffChunkContainer : AiffChunk'
+    content.vb: Public Class AiffChunkContainer Inherits AiffChunk
+  inheritance:
+  - System.Object
+  - SilverCraft.CSCore.Codecs.AIFF.AiffChunk
+  inheritedMembers:
+  - SilverCraft.CSCore.Codecs.AIFF.AiffChunk.BinaryReader
+  - SilverCraft.CSCore.Codecs.AIFF.AiffChunk.ChunkId
+  - SilverCraft.CSCore.Codecs.AIFF.AiffChunk.DataSize
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  extensionMethods:
+  - SilverCraft.CSCore.Codecs.AIFF.AiffChunkContainer.SilverCraft.CSCore.FluentExtensions.Synchronized``2
+- uid: SilverCraft.CSCore.Codecs.AIFF.AiffChunkContainer.#ctor(System.IO.BinaryReader)
+  commentId: M:SilverCraft.CSCore.Codecs.AIFF.AiffChunkContainer.#ctor(System.IO.BinaryReader)
+  id: '#ctor(System.IO.BinaryReader)'
+  parent: SilverCraft.CSCore.Codecs.AIFF.AiffChunkContainer
+  langs:
+  - csharp
+  - vb
+  name: AiffChunkContainer(BinaryReader)
+  nameWithType: AiffChunkContainer.AiffChunkContainer(BinaryReader)
+  fullName: SilverCraft.CSCore.Codecs.AIFF.AiffChunkContainer.AiffChunkContainer(System.IO.BinaryReader)
+  type: Constructor
+  source:
+    remote:
+      path: SilverCraft.CSCore/Codecs/AIFF/AiffChunkContainer.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: .ctor
+    path: ../SilverCraft.CSCore/Codecs/AIFF/AiffChunkContainer.cs
+    startLine: 23
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Codecs.AIFF
+  summary: Initializes a new instance of the <xref href="SilverCraft.CSCore.Codecs.AIFF.AiffChunkContainer" data-throw-if-not-resolved="false"></xref> class.
+  example: []
+  syntax:
+    content: public AiffChunkContainer(BinaryReader binaryReader)
+    parameters:
+    - id: binaryReader
+      type: System.IO.BinaryReader
+      description: The binary reader which provides can be used to decode the chunk.
+    content.vb: Public Sub New(binaryReader As BinaryReader)
+  overload: SilverCraft.CSCore.Codecs.AIFF.AiffChunkContainer.#ctor*
+  exceptions:
+  - type: SilverCraft.CSCore.Codecs.AIFF.AiffException
+    commentId: T:SilverCraft.CSCore.Codecs.AIFF.AiffException
+    description: >-
+      FORM header not found.
+
+      or
+
+      Invalid Formtype.
+  nameWithType.vb: AiffChunkContainer.New(BinaryReader)
+  fullName.vb: SilverCraft.CSCore.Codecs.AIFF.AiffChunkContainer.New(System.IO.BinaryReader)
+  name.vb: New(BinaryReader)
+- uid: SilverCraft.CSCore.Codecs.AIFF.AiffChunkContainer.FormType
+  commentId: P:SilverCraft.CSCore.Codecs.AIFF.AiffChunkContainer.FormType
+  id: FormType
+  parent: SilverCraft.CSCore.Codecs.AIFF.AiffChunkContainer
+  langs:
+  - csharp
+  - vb
+  name: FormType
+  nameWithType: AiffChunkContainer.FormType
+  fullName: SilverCraft.CSCore.Codecs.AIFF.AiffChunkContainer.FormType
+  type: Property
+  source:
+    remote:
+      path: SilverCraft.CSCore/Codecs/AIFF/AiffChunkContainer.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: FormType
+    path: ../SilverCraft.CSCore/Codecs/AIFF/AiffChunkContainer.cs
+    startLine: 50
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Codecs.AIFF
+  summary: Gets the form type.
+  example: []
+  syntax:
+    content: public string FormType { get; }
+    parameters: []
+    return:
+      type: System.String
+      description: Either 'AIFF' or 'AIFC'.
+    content.vb: Public Property FormType As String
+  overload: SilverCraft.CSCore.Codecs.AIFF.AiffChunkContainer.FormType*
+- uid: SilverCraft.CSCore.Codecs.AIFF.AiffChunkContainer.Chunks
+  commentId: P:SilverCraft.CSCore.Codecs.AIFF.AiffChunkContainer.Chunks
+  id: Chunks
+  parent: SilverCraft.CSCore.Codecs.AIFF.AiffChunkContainer
+  langs:
+  - csharp
+  - vb
+  name: Chunks
+  nameWithType: AiffChunkContainer.Chunks
+  fullName: SilverCraft.CSCore.Codecs.AIFF.AiffChunkContainer.Chunks
+  type: Property
+  source:
+    remote:
+      path: SilverCraft.CSCore/Codecs/AIFF/AiffChunkContainer.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: Chunks
+    path: ../SilverCraft.CSCore/Codecs/AIFF/AiffChunkContainer.cs
+    startLine: 55
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Codecs.AIFF
+  summary: Gets all found <xref href="SilverCraft.CSCore.Codecs.AIFF.AiffChunk" data-throw-if-not-resolved="false"></xref> of the <xref href="SilverCraft.CSCore.Codecs.AIFF.AiffChunkContainer" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public ReadOnlyCollection<AiffChunk> Chunks { get; }
+    parameters: []
+    return:
+      type: System.Collections.ObjectModel.ReadOnlyCollection{SilverCraft.CSCore.Codecs.AIFF.AiffChunk}
+    content.vb: Public ReadOnly Property Chunks As ReadOnlyCollection(Of AiffChunk)
+  overload: SilverCraft.CSCore.Codecs.AIFF.AiffChunkContainer.Chunks*
+- uid: SilverCraft.CSCore.Codecs.AIFF.AiffChunkContainer.SkipChunk
+  commentId: M:SilverCraft.CSCore.Codecs.AIFF.AiffChunkContainer.SkipChunk
+  id: SkipChunk
+  parent: SilverCraft.CSCore.Codecs.AIFF.AiffChunkContainer
+  langs:
+  - csharp
+  - vb
+  name: SkipChunk()
+  nameWithType: AiffChunkContainer.SkipChunk()
+  fullName: SilverCraft.CSCore.Codecs.AIFF.AiffChunkContainer.SkipChunk()
+  type: Method
+  source:
+    remote:
+      path: SilverCraft.CSCore/Codecs/AIFF/AiffChunkContainer.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: SkipChunk
+    path: ../SilverCraft.CSCore/Codecs/AIFF/AiffChunkContainer.cs
+    startLine: 88
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Codecs.AIFF
+  summary: Seeks to the end of the chunk.
+  remarks: >-
+    Can be used to make sure that the underlying <xref href="System.IO.Stream" data-throw-if-not-resolved="false"></xref>/<xref href="System.IO.BinaryReader" data-throw-if-not-resolved="false"></xref> points to
+
+    the next <xref href="SilverCraft.CSCore.Codecs.AIFF.AiffChunk" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public override void SkipChunk()
+    content.vb: Public Overrides Sub SkipChunk()
+  overridden: SilverCraft.CSCore.Codecs.AIFF.AiffChunk.SkipChunk
+  overload: SilverCraft.CSCore.Codecs.AIFF.AiffChunkContainer.SkipChunk*
+references:
+- uid: SilverCraft.CSCore.Codecs.AIFF.AiffChunk
+  commentId: T:SilverCraft.CSCore.Codecs.AIFF.AiffChunk
+  parent: SilverCraft.CSCore.Codecs.AIFF
+  href: SilverCraft.CSCore.Codecs.AIFF.AiffChunk.html
+  name: AiffChunk
+  nameWithType: AiffChunk
+  fullName: SilverCraft.CSCore.Codecs.AIFF.AiffChunk
+- uid: SilverCraft.CSCore.Codecs.AIFF
+  commentId: N:SilverCraft.CSCore.Codecs.AIFF
+  href: SilverCraft.html
+  name: SilverCraft.CSCore.Codecs.AIFF
+  nameWithType: SilverCraft.CSCore.Codecs.AIFF
+  fullName: SilverCraft.CSCore.Codecs.AIFF
+  spec.csharp:
+  - uid: SilverCraft
+    name: SilverCraft
+    href: SilverCraft.html
+  - name: .
+  - uid: SilverCraft.CSCore
+    name: CSCore
+    href: SilverCraft.CSCore.html
+  - name: .
+  - uid: SilverCraft.CSCore.Codecs
+    name: Codecs
+    href: SilverCraft.CSCore.Codecs.html
+  - name: .
+  - uid: SilverCraft.CSCore.Codecs.AIFF
+    name: AIFF
+    href: SilverCraft.CSCore.Codecs.AIFF.html
+  spec.vb:
+  - uid: SilverCraft
+    name: SilverCraft
+    href: SilverCraft.html
+  - name: .
+  - uid: SilverCraft.CSCore
+    name: CSCore
+    href: SilverCraft.CSCore.html
+  - name: .
+  - uid: SilverCraft.CSCore.Codecs
+    name: Codecs
+    href: SilverCraft.CSCore.Codecs.html
+  - name: .
+  - uid: SilverCraft.CSCore.Codecs.AIFF
+    name: AIFF
+    href: SilverCraft.CSCore.Codecs.AIFF.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: SilverCraft.CSCore.Codecs.AIFF.AiffChunk.BinaryReader
+  commentId: P:SilverCraft.CSCore.Codecs.AIFF.AiffChunk.BinaryReader
+  parent: SilverCraft.CSCore.Codecs.AIFF.AiffChunk
+  href: SilverCraft.CSCore.Codecs.AIFF.AiffChunk.html#SilverCraft_CSCore_Codecs_AIFF_AiffChunk_BinaryReader
+  name: BinaryReader
+  nameWithType: AiffChunk.BinaryReader
+  fullName: SilverCraft.CSCore.Codecs.AIFF.AiffChunk.BinaryReader
+- uid: SilverCraft.CSCore.Codecs.AIFF.AiffChunk.ChunkId
+  commentId: P:SilverCraft.CSCore.Codecs.AIFF.AiffChunk.ChunkId
+  parent: SilverCraft.CSCore.Codecs.AIFF.AiffChunk
+  href: SilverCraft.CSCore.Codecs.AIFF.AiffChunk.html#SilverCraft_CSCore_Codecs_AIFF_AiffChunk_ChunkId
+  name: ChunkId
+  nameWithType: AiffChunk.ChunkId
+  fullName: SilverCraft.CSCore.Codecs.AIFF.AiffChunk.ChunkId
+- uid: SilverCraft.CSCore.Codecs.AIFF.AiffChunk.DataSize
+  commentId: P:SilverCraft.CSCore.Codecs.AIFF.AiffChunk.DataSize
+  parent: SilverCraft.CSCore.Codecs.AIFF.AiffChunk
+  href: SilverCraft.CSCore.Codecs.AIFF.AiffChunk.html#SilverCraft_CSCore_Codecs_AIFF_AiffChunk_DataSize
+  name: DataSize
+  nameWithType: AiffChunk.DataSize
+  fullName: SilverCraft.CSCore.Codecs.AIFF.AiffChunk.DataSize
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: SilverCraft.CSCore.Codecs.AIFF.AiffChunkContainer.SilverCraft.CSCore.FluentExtensions.Synchronized``2
+  commentId: M:SilverCraft.CSCore.FluentExtensions.Synchronized``2(``0)
+  parent: SilverCraft.CSCore.FluentExtensions
+  definition: SilverCraft.CSCore.FluentExtensions.Synchronized``2(``0)
+  href: SilverCraft.CSCore.FluentExtensions.html#SilverCraft_CSCore_FluentExtensions_Synchronized__2___0_
+  name: Synchronized<AiffChunkContainer, T>(AiffChunkContainer)
+  nameWithType: FluentExtensions.Synchronized<AiffChunkContainer, T>(AiffChunkContainer)
+  fullName: SilverCraft.CSCore.FluentExtensions.Synchronized<SilverCraft.CSCore.Codecs.AIFF.AiffChunkContainer, T>(SilverCraft.CSCore.Codecs.AIFF.AiffChunkContainer)
+  nameWithType.vb: FluentExtensions.Synchronized(Of AiffChunkContainer, T)(AiffChunkContainer)
+  fullName.vb: SilverCraft.CSCore.FluentExtensions.Synchronized(Of SilverCraft.CSCore.Codecs.AIFF.AiffChunkContainer, T)(SilverCraft.CSCore.Codecs.AIFF.AiffChunkContainer)
+  name.vb: Synchronized(Of AiffChunkContainer, T)(AiffChunkContainer)
+  spec.csharp:
+  - uid: SilverCraft.CSCore.FluentExtensions.Synchronized``2(SilverCraft.CSCore.Codecs.AIFF.AiffChunkContainer)
+    name: Synchronized
+    href: SilverCraft.CSCore.FluentExtensions.html#SilverCraft_CSCore_FluentExtensions_Synchronized__2___0_
+  - name: <
+  - uid: SilverCraft.CSCore.Codecs.AIFF.AiffChunkContainer
+    name: AiffChunkContainer
+    href: SilverCraft.CSCore.Codecs.AIFF.AiffChunkContainer.html
+  - name: ','
+  - name: " "
+  - name: T
+  - name: '>'
+  - name: (
+  - uid: SilverCraft.CSCore.Codecs.AIFF.AiffChunkContainer
+    name: AiffChunkContainer
+    href: SilverCraft.CSCore.Codecs.AIFF.AiffChunkContainer.html
+  - name: )
+  spec.vb:
+  - uid: SilverCraft.CSCore.FluentExtensions.Synchronized``2(SilverCraft.CSCore.Codecs.AIFF.AiffChunkContainer)
+    name: Synchronized
+    href: SilverCraft.CSCore.FluentExtensions.html#SilverCraft_CSCore_FluentExtensions_Synchronized__2___0_
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: SilverCraft.CSCore.Codecs.AIFF.AiffChunkContainer
+    name: AiffChunkContainer
+    href: SilverCraft.CSCore.Codecs.AIFF.AiffChunkContainer.html
+  - name: ','
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: SilverCraft.CSCore.Codecs.AIFF.AiffChunkContainer
+    name: AiffChunkContainer
+    href: SilverCraft.CSCore.Codecs.AIFF.AiffChunkContainer.html
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: SilverCraft.CSCore.FluentExtensions.Synchronized``2(``0)
+  commentId: M:SilverCraft.CSCore.FluentExtensions.Synchronized``2(``0)
+  href: SilverCraft.CSCore.FluentExtensions.html#SilverCraft_CSCore_FluentExtensions_Synchronized__2___0_
+  name: Synchronized<TAudioSource, T>(TAudioSource)
+  nameWithType: FluentExtensions.Synchronized<TAudioSource, T>(TAudioSource)
+  fullName: SilverCraft.CSCore.FluentExtensions.Synchronized<TAudioSource, T>(TAudioSource)
+  nameWithType.vb: FluentExtensions.Synchronized(Of TAudioSource, T)(TAudioSource)
+  fullName.vb: SilverCraft.CSCore.FluentExtensions.Synchronized(Of TAudioSource, T)(TAudioSource)
+  name.vb: Synchronized(Of TAudioSource, T)(TAudioSource)
+  spec.csharp:
+  - uid: SilverCraft.CSCore.FluentExtensions.Synchronized``2(``0)
+    name: Synchronized
+    href: SilverCraft.CSCore.FluentExtensions.html#SilverCraft_CSCore_FluentExtensions_Synchronized__2___0_
+  - name: <
+  - name: TAudioSource
+  - name: ','
+  - name: " "
+  - name: T
+  - name: '>'
+  - name: (
+  - name: TAudioSource
+  - name: )
+  spec.vb:
+  - uid: SilverCraft.CSCore.FluentExtensions.Synchronized``2(``0)
+    name: Synchronized
+    href: SilverCraft.CSCore.FluentExtensions.html#SilverCraft_CSCore_FluentExtensions_Synchronized__2___0_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TAudioSource
+  - name: ','
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - name: TAudioSource
+  - name: )
+- uid: SilverCraft.CSCore.FluentExtensions
+  commentId: T:SilverCraft.CSCore.FluentExtensions
+  parent: SilverCraft.CSCore
+  href: SilverCraft.CSCore.FluentExtensions.html
+  name: FluentExtensions
+  nameWithType: FluentExtensions
+  fullName: SilverCraft.CSCore.FluentExtensions
+- uid: SilverCraft.CSCore
+  commentId: N:SilverCraft.CSCore
+  href: SilverCraft.html
+  name: SilverCraft.CSCore
+  nameWithType: SilverCraft.CSCore
+  fullName: SilverCraft.CSCore
+  spec.csharp:
+  - uid: SilverCraft
+    name: SilverCraft
+    href: SilverCraft.html
+  - name: .
+  - uid: SilverCraft.CSCore
+    name: CSCore
+    href: SilverCraft.CSCore.html
+  spec.vb:
+  - uid: SilverCraft
+    name: SilverCraft
+    href: SilverCraft.html
+  - name: .
+  - uid: SilverCraft.CSCore
+    name: CSCore
+    href: SilverCraft.CSCore.html
+- uid: SilverCraft.CSCore.Codecs.AIFF.AiffChunkContainer
+  commentId: T:SilverCraft.CSCore.Codecs.AIFF.AiffChunkContainer
+  href: SilverCraft.CSCore.Codecs.AIFF.AiffChunkContainer.html
+  name: AiffChunkContainer
+  nameWithType: AiffChunkContainer
+  fullName: SilverCraft.CSCore.Codecs.AIFF.AiffChunkContainer
+- uid: SilverCraft.CSCore.Codecs.AIFF.AiffException
+  commentId: T:SilverCraft.CSCore.Codecs.AIFF.AiffException
+  href: SilverCraft.CSCore.Codecs.AIFF.AiffException.html
+  name: AiffException
+  nameWithType: AiffException
+  fullName: SilverCraft.CSCore.Codecs.AIFF.AiffException
+- uid: SilverCraft.CSCore.Codecs.AIFF.AiffChunkContainer.#ctor*
+  commentId: Overload:SilverCraft.CSCore.Codecs.AIFF.AiffChunkContainer.#ctor
+  href: SilverCraft.CSCore.Codecs.AIFF.AiffChunkContainer.html#SilverCraft_CSCore_Codecs_AIFF_AiffChunkContainer__ctor_System_IO_BinaryReader_
+  name: AiffChunkContainer
+  nameWithType: AiffChunkContainer.AiffChunkContainer
+  fullName: SilverCraft.CSCore.Codecs.AIFF.AiffChunkContainer.AiffChunkContainer
+  nameWithType.vb: AiffChunkContainer.New
+  fullName.vb: SilverCraft.CSCore.Codecs.AIFF.AiffChunkContainer.New
+  name.vb: New
+- uid: System.IO.BinaryReader
+  commentId: T:System.IO.BinaryReader
+  parent: System.IO
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.io.binaryreader
+  name: BinaryReader
+  nameWithType: BinaryReader
+  fullName: System.IO.BinaryReader
+- uid: System.IO
+  commentId: N:System.IO
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.IO
+  nameWithType: System.IO
+  fullName: System.IO
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.IO
+    name: IO
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.io
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.IO
+    name: IO
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.io
+- uid: SilverCraft.CSCore.Codecs.AIFF.AiffChunkContainer.FormType*
+  commentId: Overload:SilverCraft.CSCore.Codecs.AIFF.AiffChunkContainer.FormType
+  href: SilverCraft.CSCore.Codecs.AIFF.AiffChunkContainer.html#SilverCraft_CSCore_Codecs_AIFF_AiffChunkContainer_FormType
+  name: FormType
+  nameWithType: AiffChunkContainer.FormType
+  fullName: SilverCraft.CSCore.Codecs.AIFF.AiffChunkContainer.FormType
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: SilverCraft.CSCore.Codecs.AIFF.AiffChunkContainer.Chunks*
+  commentId: Overload:SilverCraft.CSCore.Codecs.AIFF.AiffChunkContainer.Chunks
+  href: SilverCraft.CSCore.Codecs.AIFF.AiffChunkContainer.html#SilverCraft_CSCore_Codecs_AIFF_AiffChunkContainer_Chunks
+  name: Chunks
+  nameWithType: AiffChunkContainer.Chunks
+  fullName: SilverCraft.CSCore.Codecs.AIFF.AiffChunkContainer.Chunks
+- uid: System.Collections.ObjectModel.ReadOnlyCollection{SilverCraft.CSCore.Codecs.AIFF.AiffChunk}
+  commentId: T:System.Collections.ObjectModel.ReadOnlyCollection{SilverCraft.CSCore.Codecs.AIFF.AiffChunk}
+  parent: System.Collections.ObjectModel
+  definition: System.Collections.ObjectModel.ReadOnlyCollection`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.objectmodel.readonlycollection-1
+  name: ReadOnlyCollection<AiffChunk>
+  nameWithType: ReadOnlyCollection<AiffChunk>
+  fullName: System.Collections.ObjectModel.ReadOnlyCollection<SilverCraft.CSCore.Codecs.AIFF.AiffChunk>
+  nameWithType.vb: ReadOnlyCollection(Of AiffChunk)
+  fullName.vb: System.Collections.ObjectModel.ReadOnlyCollection(Of SilverCraft.CSCore.Codecs.AIFF.AiffChunk)
+  name.vb: ReadOnlyCollection(Of AiffChunk)
+  spec.csharp:
+  - uid: System.Collections.ObjectModel.ReadOnlyCollection`1
+    name: ReadOnlyCollection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.objectmodel.readonlycollection-1
+  - name: <
+  - uid: SilverCraft.CSCore.Codecs.AIFF.AiffChunk
+    name: AiffChunk
+    href: SilverCraft.CSCore.Codecs.AIFF.AiffChunk.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.ObjectModel.ReadOnlyCollection`1
+    name: ReadOnlyCollection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.objectmodel.readonlycollection-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: SilverCraft.CSCore.Codecs.AIFF.AiffChunk
+    name: AiffChunk
+    href: SilverCraft.CSCore.Codecs.AIFF.AiffChunk.html
+  - name: )
+- uid: System.Collections.ObjectModel.ReadOnlyCollection`1
+  commentId: T:System.Collections.ObjectModel.ReadOnlyCollection`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.objectmodel.readonlycollection-1
+  name: ReadOnlyCollection<T>
+  nameWithType: ReadOnlyCollection<T>
+  fullName: System.Collections.ObjectModel.ReadOnlyCollection<T>
+  nameWithType.vb: ReadOnlyCollection(Of T)
+  fullName.vb: System.Collections.ObjectModel.ReadOnlyCollection(Of T)
+  name.vb: ReadOnlyCollection(Of T)
+  spec.csharp:
+  - uid: System.Collections.ObjectModel.ReadOnlyCollection`1
+    name: ReadOnlyCollection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.objectmodel.readonlycollection-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.ObjectModel.ReadOnlyCollection`1
+    name: ReadOnlyCollection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.objectmodel.readonlycollection-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.ObjectModel
+  commentId: N:System.Collections.ObjectModel
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.ObjectModel
+  nameWithType: System.Collections.ObjectModel
+  fullName: System.Collections.ObjectModel
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.ObjectModel
+    name: ObjectModel
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.objectmodel
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.ObjectModel
+    name: ObjectModel
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.objectmodel
+- uid: System.IO.Stream
+  commentId: T:System.IO.Stream
+  parent: System.IO
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.io.stream
+  name: Stream
+  nameWithType: Stream
+  fullName: System.IO.Stream
+- uid: SilverCraft.CSCore.Codecs.AIFF.AiffChunk.SkipChunk
+  commentId: M:SilverCraft.CSCore.Codecs.AIFF.AiffChunk.SkipChunk
+  parent: SilverCraft.CSCore.Codecs.AIFF.AiffChunk
+  href: SilverCraft.CSCore.Codecs.AIFF.AiffChunk.html#SilverCraft_CSCore_Codecs_AIFF_AiffChunk_SkipChunk
+  name: SkipChunk()
+  nameWithType: AiffChunk.SkipChunk()
+  fullName: SilverCraft.CSCore.Codecs.AIFF.AiffChunk.SkipChunk()
+  spec.csharp:
+  - uid: SilverCraft.CSCore.Codecs.AIFF.AiffChunk.SkipChunk
+    name: SkipChunk
+    href: SilverCraft.CSCore.Codecs.AIFF.AiffChunk.html#SilverCraft_CSCore_Codecs_AIFF_AiffChunk_SkipChunk
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: SilverCraft.CSCore.Codecs.AIFF.AiffChunk.SkipChunk
+    name: SkipChunk
+    href: SilverCraft.CSCore.Codecs.AIFF.AiffChunk.html#SilverCraft_CSCore_Codecs_AIFF_AiffChunk_SkipChunk
+  - name: (
+  - name: )
+- uid: SilverCraft.CSCore.Codecs.AIFF.AiffChunkContainer.SkipChunk*
+  commentId: Overload:SilverCraft.CSCore.Codecs.AIFF.AiffChunkContainer.SkipChunk
+  href: SilverCraft.CSCore.Codecs.AIFF.AiffChunkContainer.html#SilverCraft_CSCore_Codecs_AIFF_AiffChunkContainer_SkipChunk
+  name: SkipChunk
+  nameWithType: AiffChunkContainer.SkipChunk
+  fullName: SilverCraft.CSCore.Codecs.AIFF.AiffChunkContainer.SkipChunk

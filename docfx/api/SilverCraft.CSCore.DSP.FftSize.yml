@@ -1,0 +1,361 @@
+### YamlMime:ManagedReference
+items:
+- uid: SilverCraft.CSCore.DSP.FftSize
+  commentId: T:SilverCraft.CSCore.DSP.FftSize
+  id: FftSize
+  parent: SilverCraft.CSCore.DSP
+  children:
+  - SilverCraft.CSCore.DSP.FftSize.Fft1024
+  - SilverCraft.CSCore.DSP.FftSize.Fft128
+  - SilverCraft.CSCore.DSP.FftSize.Fft16384
+  - SilverCraft.CSCore.DSP.FftSize.Fft2048
+  - SilverCraft.CSCore.DSP.FftSize.Fft256
+  - SilverCraft.CSCore.DSP.FftSize.Fft32768
+  - SilverCraft.CSCore.DSP.FftSize.Fft4096
+  - SilverCraft.CSCore.DSP.FftSize.Fft512
+  - SilverCraft.CSCore.DSP.FftSize.Fft64
+  - SilverCraft.CSCore.DSP.FftSize.Fft8192
+  langs:
+  - csharp
+  - vb
+  name: FftSize
+  nameWithType: FftSize
+  fullName: SilverCraft.CSCore.DSP.FftSize
+  type: Enum
+  source:
+    remote:
+      path: SilverCraft.CSCore/DSP/FftSize.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: FftSize
+    path: ../SilverCraft.CSCore/DSP/FftSize.cs
+    startLine: 6
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.DSP
+  summary: >-
+    Defines FFT data size constants that can be used for FFT calculations.
+
+    Note that only the half of the specified size can be used for visualizations.
+  example: []
+  syntax:
+    content: public enum FftSize
+    content.vb: Public Enum FftSize
+- uid: SilverCraft.CSCore.DSP.FftSize.Fft64
+  commentId: F:SilverCraft.CSCore.DSP.FftSize.Fft64
+  id: Fft64
+  parent: SilverCraft.CSCore.DSP.FftSize
+  langs:
+  - csharp
+  - vb
+  name: Fft64
+  nameWithType: FftSize.Fft64
+  fullName: SilverCraft.CSCore.DSP.FftSize.Fft64
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/DSP/FftSize.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: Fft64
+    path: ../SilverCraft.CSCore/DSP/FftSize.cs
+    startLine: 11
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.DSP
+  summary: 64 bands.
+  example: []
+  syntax:
+    content: Fft64 = 64
+    return:
+      type: SilverCraft.CSCore.DSP.FftSize
+- uid: SilverCraft.CSCore.DSP.FftSize.Fft128
+  commentId: F:SilverCraft.CSCore.DSP.FftSize.Fft128
+  id: Fft128
+  parent: SilverCraft.CSCore.DSP.FftSize
+  langs:
+  - csharp
+  - vb
+  name: Fft128
+  nameWithType: FftSize.Fft128
+  fullName: SilverCraft.CSCore.DSP.FftSize.Fft128
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/DSP/FftSize.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: Fft128
+    path: ../SilverCraft.CSCore/DSP/FftSize.cs
+    startLine: 16
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.DSP
+  summary: 128 bands.
+  example: []
+  syntax:
+    content: Fft128 = 128
+    return:
+      type: SilverCraft.CSCore.DSP.FftSize
+- uid: SilverCraft.CSCore.DSP.FftSize.Fft256
+  commentId: F:SilverCraft.CSCore.DSP.FftSize.Fft256
+  id: Fft256
+  parent: SilverCraft.CSCore.DSP.FftSize
+  langs:
+  - csharp
+  - vb
+  name: Fft256
+  nameWithType: FftSize.Fft256
+  fullName: SilverCraft.CSCore.DSP.FftSize.Fft256
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/DSP/FftSize.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: Fft256
+    path: ../SilverCraft.CSCore/DSP/FftSize.cs
+    startLine: 21
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.DSP
+  summary: 256 bands.
+  example: []
+  syntax:
+    content: Fft256 = 256
+    return:
+      type: SilverCraft.CSCore.DSP.FftSize
+- uid: SilverCraft.CSCore.DSP.FftSize.Fft512
+  commentId: F:SilverCraft.CSCore.DSP.FftSize.Fft512
+  id: Fft512
+  parent: SilverCraft.CSCore.DSP.FftSize
+  langs:
+  - csharp
+  - vb
+  name: Fft512
+  nameWithType: FftSize.Fft512
+  fullName: SilverCraft.CSCore.DSP.FftSize.Fft512
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/DSP/FftSize.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: Fft512
+    path: ../SilverCraft.CSCore/DSP/FftSize.cs
+    startLine: 26
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.DSP
+  summary: 512 bands.
+  example: []
+  syntax:
+    content: Fft512 = 512
+    return:
+      type: SilverCraft.CSCore.DSP.FftSize
+- uid: SilverCraft.CSCore.DSP.FftSize.Fft1024
+  commentId: F:SilverCraft.CSCore.DSP.FftSize.Fft1024
+  id: Fft1024
+  parent: SilverCraft.CSCore.DSP.FftSize
+  langs:
+  - csharp
+  - vb
+  name: Fft1024
+  nameWithType: FftSize.Fft1024
+  fullName: SilverCraft.CSCore.DSP.FftSize.Fft1024
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/DSP/FftSize.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: Fft1024
+    path: ../SilverCraft.CSCore/DSP/FftSize.cs
+    startLine: 31
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.DSP
+  summary: 1024 bands.
+  example: []
+  syntax:
+    content: Fft1024 = 1024
+    return:
+      type: SilverCraft.CSCore.DSP.FftSize
+- uid: SilverCraft.CSCore.DSP.FftSize.Fft2048
+  commentId: F:SilverCraft.CSCore.DSP.FftSize.Fft2048
+  id: Fft2048
+  parent: SilverCraft.CSCore.DSP.FftSize
+  langs:
+  - csharp
+  - vb
+  name: Fft2048
+  nameWithType: FftSize.Fft2048
+  fullName: SilverCraft.CSCore.DSP.FftSize.Fft2048
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/DSP/FftSize.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: Fft2048
+    path: ../SilverCraft.CSCore/DSP/FftSize.cs
+    startLine: 36
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.DSP
+  summary: 2014 bands.
+  example: []
+  syntax:
+    content: Fft2048 = 2048
+    return:
+      type: SilverCraft.CSCore.DSP.FftSize
+- uid: SilverCraft.CSCore.DSP.FftSize.Fft4096
+  commentId: F:SilverCraft.CSCore.DSP.FftSize.Fft4096
+  id: Fft4096
+  parent: SilverCraft.CSCore.DSP.FftSize
+  langs:
+  - csharp
+  - vb
+  name: Fft4096
+  nameWithType: FftSize.Fft4096
+  fullName: SilverCraft.CSCore.DSP.FftSize.Fft4096
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/DSP/FftSize.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: Fft4096
+    path: ../SilverCraft.CSCore/DSP/FftSize.cs
+    startLine: 41
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.DSP
+  summary: 4096 bands.
+  example: []
+  syntax:
+    content: Fft4096 = 4096
+    return:
+      type: SilverCraft.CSCore.DSP.FftSize
+- uid: SilverCraft.CSCore.DSP.FftSize.Fft8192
+  commentId: F:SilverCraft.CSCore.DSP.FftSize.Fft8192
+  id: Fft8192
+  parent: SilverCraft.CSCore.DSP.FftSize
+  langs:
+  - csharp
+  - vb
+  name: Fft8192
+  nameWithType: FftSize.Fft8192
+  fullName: SilverCraft.CSCore.DSP.FftSize.Fft8192
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/DSP/FftSize.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: Fft8192
+    path: ../SilverCraft.CSCore/DSP/FftSize.cs
+    startLine: 46
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.DSP
+  summary: 8192 bands.
+  example: []
+  syntax:
+    content: Fft8192 = 8192
+    return:
+      type: SilverCraft.CSCore.DSP.FftSize
+- uid: SilverCraft.CSCore.DSP.FftSize.Fft16384
+  commentId: F:SilverCraft.CSCore.DSP.FftSize.Fft16384
+  id: Fft16384
+  parent: SilverCraft.CSCore.DSP.FftSize
+  langs:
+  - csharp
+  - vb
+  name: Fft16384
+  nameWithType: FftSize.Fft16384
+  fullName: SilverCraft.CSCore.DSP.FftSize.Fft16384
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/DSP/FftSize.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: Fft16384
+    path: ../SilverCraft.CSCore/DSP/FftSize.cs
+    startLine: 51
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.DSP
+  summary: 16384 bands.
+  example: []
+  syntax:
+    content: Fft16384 = 16384
+    return:
+      type: SilverCraft.CSCore.DSP.FftSize
+- uid: SilverCraft.CSCore.DSP.FftSize.Fft32768
+  commentId: F:SilverCraft.CSCore.DSP.FftSize.Fft32768
+  id: Fft32768
+  parent: SilverCraft.CSCore.DSP.FftSize
+  langs:
+  - csharp
+  - vb
+  name: Fft32768
+  nameWithType: FftSize.Fft32768
+  fullName: SilverCraft.CSCore.DSP.FftSize.Fft32768
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/DSP/FftSize.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: Fft32768
+    path: ../SilverCraft.CSCore/DSP/FftSize.cs
+    startLine: 56
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.DSP
+  summary: 32768 bands.
+  example: []
+  syntax:
+    content: Fft32768 = 32768
+    return:
+      type: SilverCraft.CSCore.DSP.FftSize
+references:
+- uid: SilverCraft.CSCore.DSP
+  commentId: N:SilverCraft.CSCore.DSP
+  href: SilverCraft.html
+  name: SilverCraft.CSCore.DSP
+  nameWithType: SilverCraft.CSCore.DSP
+  fullName: SilverCraft.CSCore.DSP
+  spec.csharp:
+  - uid: SilverCraft
+    name: SilverCraft
+    href: SilverCraft.html
+  - name: .
+  - uid: SilverCraft.CSCore
+    name: CSCore
+    href: SilverCraft.CSCore.html
+  - name: .
+  - uid: SilverCraft.CSCore.DSP
+    name: DSP
+    href: SilverCraft.CSCore.DSP.html
+  spec.vb:
+  - uid: SilverCraft
+    name: SilverCraft
+    href: SilverCraft.html
+  - name: .
+  - uid: SilverCraft.CSCore
+    name: CSCore
+    href: SilverCraft.CSCore.html
+  - name: .
+  - uid: SilverCraft.CSCore.DSP
+    name: DSP
+    href: SilverCraft.CSCore.DSP.html
+- uid: SilverCraft.CSCore.DSP.FftSize
+  commentId: T:SilverCraft.CSCore.DSP.FftSize
+  parent: SilverCraft.CSCore.DSP
+  href: SilverCraft.CSCore.DSP.FftSize.html
+  name: FftSize
+  nameWithType: FftSize
+  fullName: SilverCraft.CSCore.DSP.FftSize

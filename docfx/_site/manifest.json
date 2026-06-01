@@ -1,0 +1,3650 @@
+{
+  "source_base_path": "/home/silver/source/cscore/docfx",
+  "xrefmap": "xrefmap.yml",
+  "files": [
+    {
+      "type": "Resource",
+      "output": {
+        "resource": {
+          "relative_path": "index.json"
+        }
+      }
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenMPT.MPTVirtualStreamHelper.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenMPT.MPTVirtualStreamHelper.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "OpenMPT.MPTVirtualStreamHelper",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenMPT.NativeMethods.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenMPT.NativeMethods.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "OpenMPT.NativeMethods",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenMPT.VirtualRead.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenMPT.VirtualRead.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "OpenMPT.VirtualRead",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenMPT.VirtualSeek.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenMPT.VirtualSeek.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "OpenMPT.VirtualSeek",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenMPT.VirtualTell.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenMPT.VirtualTell.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "OpenMPT.VirtualTell",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenMPT.Whence.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenMPT.Whence.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "OpenMPT.Whence",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenMPT.openmpt_module.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenMPT.openmpt_module.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "OpenMPT.openmpt_module",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenMPT.openmpt_module_initial_ctl.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenMPT.openmpt_module_initial_ctl.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "OpenMPT.openmpt_module_initial_ctl",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenMPT.openmpt_stream_callbacks.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenMPT.openmpt_stream_callbacks.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "OpenMPT.openmpt_stream_callbacks",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenMPT.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenMPT.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "OpenMPT",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SilverCraft.CSCore.AudioEncoding.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SilverCraft.CSCore.AudioEncoding.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SilverCraft.CSCore.AudioEncoding",
+      "Summary": "<p sourcefile=\"api/SilverCraft.CSCore.AudioEncoding.yml\" sourcestartlinenumber=\"1\">Defines all known encoding types. Primary used in the <xref href=\"SilverCraft.CSCore.WaveFormat\" data-throw-if-not-resolved=\"false\"></xref> class. See\n<xref href=\"SilverCraft.CSCore.WaveFormat.WaveFormatTag\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SilverCraft.CSCore.AudioSubTypes.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SilverCraft.CSCore.AudioSubTypes.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SilverCraft.CSCore.AudioSubTypes",
+      "Summary": "<p sourcefile=\"api/SilverCraft.CSCore.AudioSubTypes.yml\" sourcestartlinenumber=\"1\">Defines <xref href=\"SilverCraft.CSCore.AudioSubTypes\" data-throw-if-not-resolved=\"false\"></xref> and provides methods to convert between <xref href=\"SilverCraft.CSCore.AudioEncoding\" data-throw-if-not-resolved=\"false\"></xref>-values and <xref href=\"SilverCraft.CSCore.AudioSubTypes\" data-throw-if-not-resolved=\"false\"></xref>-values.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SilverCraft.CSCore.ChannelMask.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SilverCraft.CSCore.ChannelMask.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SilverCraft.CSCore.ChannelMask",
+      "Summary": "<p sourcefile=\"api/SilverCraft.CSCore.ChannelMask.yml\" sourcestartlinenumber=\"1\">Channelmask used by <xref href=\"SilverCraft.CSCore.WaveFormatExtensible\" data-throw-if-not-resolved=\"false\"></xref>. For more information see\n<a href=\"http://msdn.microsoft.com/en-us/library/windows/desktop/dd757714(v=vs.85).aspx\" sourcefile=\"api/SilverCraft.CSCore.ChannelMask.yml\" sourcestartlinenumber=\"2\">http://msdn.microsoft.com/en-us/library/windows/desktop/dd757714(v=vs.85).aspx</a></p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SilverCraft.CSCore.ChannelMasks.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SilverCraft.CSCore.ChannelMasks.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SilverCraft.CSCore.ChannelMasks",
+      "Summary": "<p sourcefile=\"api/SilverCraft.CSCore.ChannelMasks.yml\" sourcestartlinenumber=\"1\">Defines common channelmasks.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SilverCraft.CSCore.Codecs.AIFF.AiffChunk.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SilverCraft.CSCore.Codecs.AIFF.AiffChunk.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SilverCraft.CSCore.Codecs.AIFF.AiffChunk",
+      "Summary": "<p sourcefile=\"api/SilverCraft.CSCore.Codecs.AIFF.AiffChunk.yml\" sourcestartlinenumber=\"1\">Decodes an aiff-chunk and provides its stored data.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SilverCraft.CSCore.Codecs.AIFF.AiffChunkContainer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SilverCraft.CSCore.Codecs.AIFF.AiffChunkContainer.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SilverCraft.CSCore.Codecs.AIFF.AiffChunkContainer",
+      "Summary": "<p sourcefile=\"api/SilverCraft.CSCore.Codecs.AIFF.AiffChunkContainer.yml\" sourcestartlinenumber=\"1\">Provides all <xref href=\"SilverCraft.CSCore.Codecs.AIFF.AiffChunk\" data-throw-if-not-resolved=\"false\"></xref>s of a aiff stream.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SilverCraft.CSCore.Codecs.AIFF.AiffException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SilverCraft.CSCore.Codecs.AIFF.AiffException.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SilverCraft.CSCore.Codecs.AIFF.AiffException",
+      "Summary": "<p sourcefile=\"api/SilverCraft.CSCore.Codecs.AIFF.AiffException.yml\" sourcestartlinenumber=\"1\">Represents errors that occur when decoding or encoding Aiff-streams/files.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SilverCraft.CSCore.Codecs.AIFF.AiffReader.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SilverCraft.CSCore.Codecs.AIFF.AiffReader.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SilverCraft.CSCore.Codecs.AIFF.AiffReader",
+      "Summary": "<p sourcefile=\"api/SilverCraft.CSCore.Codecs.AIFF.AiffReader.yml\" sourcestartlinenumber=\"1\">Decodes a aiff stream/file.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SilverCraft.CSCore.Codecs.AIFF.CommonChunk.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SilverCraft.CSCore.Codecs.AIFF.CommonChunk.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SilverCraft.CSCore.Codecs.AIFF.CommonChunk",
+      "Summary": "<p sourcefile=\"api/SilverCraft.CSCore.Codecs.AIFF.CommonChunk.yml\" sourcestartlinenumber=\"1\">Provides the format of the encoded audio data of a AIFF-file.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SilverCraft.CSCore.Codecs.AIFF.FormatVersionChunk.AifcVersion.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SilverCraft.CSCore.Codecs.AIFF.FormatVersionChunk.AifcVersion.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SilverCraft.CSCore.Codecs.AIFF.FormatVersionChunk.AifcVersion",
+      "Summary": "<p sourcefile=\"api/SilverCraft.CSCore.Codecs.AIFF.FormatVersionChunk.AifcVersion.yml\" sourcestartlinenumber=\"1\">Defines Aiff-Versions.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SilverCraft.CSCore.Codecs.AIFF.FormatVersionChunk.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SilverCraft.CSCore.Codecs.AIFF.FormatVersionChunk.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SilverCraft.CSCore.Codecs.AIFF.FormatVersionChunk",
+      "Summary": "<p sourcefile=\"api/SilverCraft.CSCore.Codecs.AIFF.FormatVersionChunk.yml\" sourcestartlinenumber=\"1\">Provides the format version of the aifc file.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SilverCraft.CSCore.Codecs.AIFF.SoundDataChunk.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SilverCraft.CSCore.Codecs.AIFF.SoundDataChunk.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SilverCraft.CSCore.Codecs.AIFF.SoundDataChunk",
+      "Summary": "<p sourcefile=\"api/SilverCraft.CSCore.Codecs.AIFF.SoundDataChunk.yml\" sourcestartlinenumber=\"1\">Provides the encoded audio data of an aiff stream.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SilverCraft.CSCore.Codecs.AIFF.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SilverCraft.CSCore.Codecs.AIFF.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SilverCraft.CSCore.Codecs.AIFF",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SilverCraft.CSCore.Codecs.FLAC.BlockingStrategy.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SilverCraft.CSCore.Codecs.FLAC.BlockingStrategy.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SilverCraft.CSCore.Codecs.FLAC.BlockingStrategy",
+      "Summary": "<p sourcefile=\"api/SilverCraft.CSCore.Codecs.FLAC.BlockingStrategy.yml\" sourcestartlinenumber=\"1\">Defines the blocking strategy of the a flac frame.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SilverCraft.CSCore.Codecs.FLAC.ChannelAssignment.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SilverCraft.CSCore.Codecs.FLAC.ChannelAssignment.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SilverCraft.CSCore.Codecs.FLAC.ChannelAssignment",
+      "Summary": "<p sourcefile=\"api/SilverCraft.CSCore.Codecs.FLAC.ChannelAssignment.yml\" sourcestartlinenumber=\"1\">Defines the channel assignments.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SilverCraft.CSCore.Codecs.FLAC.DefaultFlacMetadata.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SilverCraft.CSCore.Codecs.FLAC.DefaultFlacMetadata.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SilverCraft.CSCore.Codecs.FLAC.DefaultFlacMetadata",
+      "Summary": "<p sourcefile=\"api/SilverCraft.CSCore.Codecs.FLAC.DefaultFlacMetadata.yml\" sourcestartlinenumber=\"1\">The default implementation of the <xref href=\"SilverCraft.CSCore.Codecs.FLAC.FlacMetadata\" data-throw-if-not-resolved=\"false\"></xref> class for <xref href=\"SilverCraft.CSCore.Codecs.FLAC.FlacMetaDataType\" data-throw-if-not-resolved=\"false\"></xref>\nwith no specific implemetation.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SilverCraft.CSCore.Codecs.FLAC.FlacException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SilverCraft.CSCore.Codecs.FLAC.FlacException.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SilverCraft.CSCore.Codecs.FLAC.FlacException",
+      "Summary": "<p sourcefile=\"api/SilverCraft.CSCore.Codecs.FLAC.FlacException.yml\" sourcestartlinenumber=\"1\">FLAC Exception.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SilverCraft.CSCore.Codecs.FLAC.FlacFile.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SilverCraft.CSCore.Codecs.FLAC.FlacFile.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SilverCraft.CSCore.Codecs.FLAC.FlacFile",
+      "Summary": "<p sourcefile=\"api/SilverCraft.CSCore.Codecs.FLAC.FlacFile.yml\" sourcestartlinenumber=\"1\">Provides a decoder for decoding flac (Free Lostless Audio Codec) data.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SilverCraft.CSCore.Codecs.FLAC.FlacFrame.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SilverCraft.CSCore.Codecs.FLAC.FlacFrame.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SilverCraft.CSCore.Codecs.FLAC.FlacFrame",
+      "Summary": "<p sourcefile=\"api/SilverCraft.CSCore.Codecs.FLAC.FlacFrame.yml\" sourcestartlinenumber=\"1\">Represents a frame inside of an Flac-Stream.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SilverCraft.CSCore.Codecs.FLAC.FlacFrameHeader.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SilverCraft.CSCore.Codecs.FLAC.FlacFrameHeader.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SilverCraft.CSCore.Codecs.FLAC.FlacFrameHeader",
+      "Summary": "<p sourcefile=\"api/SilverCraft.CSCore.Codecs.FLAC.FlacFrameHeader.yml\" sourcestartlinenumber=\"1\">Represents the header of a <xref href=\"SilverCraft.CSCore.Codecs.FLAC.FlacFrame\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SilverCraft.CSCore.Codecs.FLAC.FlacFrameInformation.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SilverCraft.CSCore.Codecs.FLAC.FlacFrameInformation.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SilverCraft.CSCore.Codecs.FLAC.FlacFrameInformation",
+      "Summary": "<p sourcefile=\"api/SilverCraft.CSCore.Codecs.FLAC.FlacFrameInformation.yml\" sourcestartlinenumber=\"1\">Provides some basic information about a flac frame. This structure is typically used for implementing a seeking algorithm.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SilverCraft.CSCore.Codecs.FLAC.FlacLayer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SilverCraft.CSCore.Codecs.FLAC.FlacLayer.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SilverCraft.CSCore.Codecs.FLAC.FlacLayer",
+      "Summary": "<p sourcefile=\"api/SilverCraft.CSCore.Codecs.FLAC.FlacLayer.yml\" sourcestartlinenumber=\"1\">Splits a flac file into a few basic layers and defines them. Mainly used for debugging purposes.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SilverCraft.CSCore.Codecs.FLAC.FlacMetaDataType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SilverCraft.CSCore.Codecs.FLAC.FlacMetaDataType.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SilverCraft.CSCore.Codecs.FLAC.FlacMetaDataType",
+      "Summary": "<p sourcefile=\"api/SilverCraft.CSCore.Codecs.FLAC.FlacMetaDataType.yml\" sourcestartlinenumber=\"1\">Defines flac metadata types.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SilverCraft.CSCore.Codecs.FLAC.FlacMetadata.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SilverCraft.CSCore.Codecs.FLAC.FlacMetadata.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SilverCraft.CSCore.Codecs.FLAC.FlacMetadata",
+      "Summary": "<p sourcefile=\"api/SilverCraft.CSCore.Codecs.FLAC.FlacMetadata.yml\" sourcestartlinenumber=\"1\">Represents a flac metadata block.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SilverCraft.CSCore.Codecs.FLAC.FlacMetadataSeekTable.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SilverCraft.CSCore.Codecs.FLAC.FlacMetadataSeekTable.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SilverCraft.CSCore.Codecs.FLAC.FlacMetadataSeekTable",
+      "Summary": "<p sourcefile=\"api/SilverCraft.CSCore.Codecs.FLAC.FlacMetadataSeekTable.yml\" sourcestartlinenumber=\"1\">Represents a flac seektable.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SilverCraft.CSCore.Codecs.FLAC.FlacMetadataStreamInfo.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SilverCraft.CSCore.Codecs.FLAC.FlacMetadataStreamInfo.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SilverCraft.CSCore.Codecs.FLAC.FlacMetadataStreamInfo",
+      "Summary": "<p sourcefile=\"api/SilverCraft.CSCore.Codecs.FLAC.FlacMetadataStreamInfo.yml\" sourcestartlinenumber=\"1\">Represents the streaminfo metadata flac which provides general information about the flac stream.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SilverCraft.CSCore.Codecs.FLAC.FlacPreScanFinishedEventArgs.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SilverCraft.CSCore.Codecs.FLAC.FlacPreScanFinishedEventArgs.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SilverCraft.CSCore.Codecs.FLAC.FlacPreScanFinishedEventArgs",
+      "Summary": "<p sourcefile=\"api/SilverCraft.CSCore.Codecs.FLAC.FlacPreScanFinishedEventArgs.yml\" sourcestartlinenumber=\"1\">Provides data for a FlacPreScan.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SilverCraft.CSCore.Codecs.FLAC.FlacPreScanMode.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SilverCraft.CSCore.Codecs.FLAC.FlacPreScanMode.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SilverCraft.CSCore.Codecs.FLAC.FlacPreScanMode",
+      "Summary": "<p sourcefile=\"api/SilverCraft.CSCore.Codecs.FLAC.FlacPreScanMode.yml\" sourcestartlinenumber=\"1\">Defines how to scan a flac stream.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SilverCraft.CSCore.Codecs.FLAC.FlacSeekPoint.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SilverCraft.CSCore.Codecs.FLAC.FlacSeekPoint.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SilverCraft.CSCore.Codecs.FLAC.FlacSeekPoint",
+      "Summary": "<p sourcefile=\"api/SilverCraft.CSCore.Codecs.FLAC.FlacSeekPoint.yml\" sourcestartlinenumber=\"1\">Represents a single flac seek point.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SilverCraft.CSCore.Codecs.FLAC.Metadata.FlacMetadataFactory.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SilverCraft.CSCore.Codecs.FLAC.Metadata.FlacMetadataFactory.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SilverCraft.CSCore.Codecs.FLAC.Metadata.FlacMetadataFactory",
+      "Summary": "<p sourcefile=\"api/SilverCraft.CSCore.Codecs.FLAC.Metadata.FlacMetadataFactory.yml\" sourcestartlinenumber=\"1\">Flac metadata factory.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SilverCraft.CSCore.Codecs.FLAC.Metadata.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SilverCraft.CSCore.Codecs.FLAC.Metadata.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SilverCraft.CSCore.Codecs.FLAC.Metadata",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SilverCraft.CSCore.Codecs.FLAC.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SilverCraft.CSCore.Codecs.FLAC.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SilverCraft.CSCore.Codecs.FLAC",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SilverCraft.CSCore.Codecs.RAW.RawDataReader.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SilverCraft.CSCore.Codecs.RAW.RawDataReader.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SilverCraft.CSCore.Codecs.RAW.RawDataReader",
+      "Summary": "<p sourcefile=\"api/SilverCraft.CSCore.Codecs.RAW.RawDataReader.yml\" sourcestartlinenumber=\"1\">Implementation of the <xref href=\"SilverCraft.CSCore.IWaveSource\" data-throw-if-not-resolved=\"false\"></xref> interface which reads raw data from a <xref href=\"System.IO.Stream\" data-throw-if-not-resolved=\"false\"></xref> based\non a specified <xref href=\"SilverCraft.CSCore.Codecs.RAW.RawDataReader.WaveFormat\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SilverCraft.CSCore.Codecs.RAW.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SilverCraft.CSCore.Codecs.RAW.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SilverCraft.CSCore.Codecs.RAW",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SilverCraft.CSCore.Codecs.WAV.DataChunk.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SilverCraft.CSCore.Codecs.WAV.DataChunk.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SilverCraft.CSCore.Codecs.WAV.DataChunk",
+      "Summary": "<p sourcefile=\"api/SilverCraft.CSCore.Codecs.WAV.DataChunk.yml\" sourcestartlinenumber=\"1\">Represents the <xref href=\"SilverCraft.CSCore.Codecs.WAV.DataChunk\" data-throw-if-not-resolved=\"false\"></xref> of a wave file.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SilverCraft.CSCore.Codecs.WAV.FmtChunk.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SilverCraft.CSCore.Codecs.WAV.FmtChunk.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SilverCraft.CSCore.Codecs.WAV.FmtChunk",
+      "Summary": "<p sourcefile=\"api/SilverCraft.CSCore.Codecs.WAV.FmtChunk.yml\" sourcestartlinenumber=\"1\">Represents the <xref href=\"SilverCraft.CSCore.Codecs.WAV.FmtChunk\" data-throw-if-not-resolved=\"false\"></xref> of a wave file.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SilverCraft.CSCore.Codecs.WAV.WaveFileChunk.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SilverCraft.CSCore.Codecs.WAV.WaveFileChunk.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SilverCraft.CSCore.Codecs.WAV.WaveFileChunk",
+      "Summary": "<p sourcefile=\"api/SilverCraft.CSCore.Codecs.WAV.WaveFileChunk.yml\" sourcestartlinenumber=\"1\">Represents a wave file chunk. For more information see\n<a href=\"http://www.sonicspot.com/guide/wavefiles.html#wavefilechunks\">http://www.sonicspot.com/guide/wavefiles.html#wavefilechunks</a>.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SilverCraft.CSCore.Codecs.WAV.WaveFileReader.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SilverCraft.CSCore.Codecs.WAV.WaveFileReader.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SilverCraft.CSCore.Codecs.WAV.WaveFileReader",
+      "Summary": "<p sourcefile=\"api/SilverCraft.CSCore.Codecs.WAV.WaveFileReader.yml\" sourcestartlinenumber=\"1\">Provides a decoder for reading wave files.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SilverCraft.CSCore.Codecs.WAV.WaveWriter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SilverCraft.CSCore.Codecs.WAV.WaveWriter.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SilverCraft.CSCore.Codecs.WAV.WaveWriter",
+      "Summary": "<p sourcefile=\"api/SilverCraft.CSCore.Codecs.WAV.WaveWriter.yml\" sourcestartlinenumber=\"1\">Encoder for wave files.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SilverCraft.CSCore.Codecs.WAV.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SilverCraft.CSCore.Codecs.WAV.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SilverCraft.CSCore.Codecs.WAV",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SilverCraft.CSCore.DSP.BandpassFilter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SilverCraft.CSCore.DSP.BandpassFilter.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SilverCraft.CSCore.DSP.BandpassFilter",
+      "Summary": "<p sourcefile=\"api/SilverCraft.CSCore.DSP.BandpassFilter.yml\" sourcestartlinenumber=\"1\">Used to apply a bandpass-filter to a signal.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SilverCraft.CSCore.DSP.BiQuad.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SilverCraft.CSCore.DSP.BiQuad.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SilverCraft.CSCore.DSP.BiQuad",
+      "Summary": "<p sourcefile=\"api/SilverCraft.CSCore.DSP.BiQuad.yml\" sourcestartlinenumber=\"1\">Represents a biquad-filter.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SilverCraft.CSCore.DSP.ChannelMatrix.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SilverCraft.CSCore.DSP.ChannelMatrix.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SilverCraft.CSCore.DSP.ChannelMatrix",
+      "Summary": "<p sourcefile=\"api/SilverCraft.CSCore.DSP.ChannelMatrix.yml\" sourcestartlinenumber=\"1\">Represents a channel conversion matrix. For more information, see\n<a href=\"http://msdn.microsoft.com/en-us/library/windows/desktop/ff819070(v=vs.85).aspx\">http://msdn.microsoft.com/en-us/library/windows/desktop/ff819070(v=vs.85).aspx</a>.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SilverCraft.CSCore.DSP.ChannelMatrixElement.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SilverCraft.CSCore.DSP.ChannelMatrixElement.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SilverCraft.CSCore.DSP.ChannelMatrixElement",
+      "Summary": "<p sourcefile=\"api/SilverCraft.CSCore.DSP.ChannelMatrixElement.yml\" sourcestartlinenumber=\"1\">Represents an element inside of a <xref href=\"SilverCraft.CSCore.DSP.ChannelMatrix\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SilverCraft.CSCore.DSP.FastFourierTransformation.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SilverCraft.CSCore.DSP.FastFourierTransformation.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SilverCraft.CSCore.DSP.FastFourierTransformation",
+      "Summary": "<p sourcefile=\"api/SilverCraft.CSCore.DSP.FastFourierTransformation.yml\" sourcestartlinenumber=\"1\">Provides an Fast Fourier Transform implementation including a few utils method which are commonly used in combination with FFT (e.g. the hamming window function).</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SilverCraft.CSCore.DSP.FftMode.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SilverCraft.CSCore.DSP.FftMode.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SilverCraft.CSCore.DSP.FftMode",
+      "Summary": "<p sourcefile=\"api/SilverCraft.CSCore.DSP.FftMode.yml\" sourcestartlinenumber=\"1\">Fft mode.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SilverCraft.CSCore.DSP.FftProvider.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SilverCraft.CSCore.DSP.FftProvider.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SilverCraft.CSCore.DSP.FftProvider",
+      "Summary": "<p sourcefile=\"api/SilverCraft.CSCore.DSP.FftProvider.yml\" sourcestartlinenumber=\"1\">Provides FFT calculations.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SilverCraft.CSCore.DSP.FftSize.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SilverCraft.CSCore.DSP.FftSize.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SilverCraft.CSCore.DSP.FftSize",
+      "Summary": "<p sourcefile=\"api/SilverCraft.CSCore.DSP.FftSize.yml\" sourcestartlinenumber=\"1\">Defines FFT data size constants that can be used for FFT calculations.\nNote that only the half of the specified size can be used for visualizations.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SilverCraft.CSCore.DSP.HighShelfFilter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SilverCraft.CSCore.DSP.HighShelfFilter.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SilverCraft.CSCore.DSP.HighShelfFilter",
+      "Summary": "<p sourcefile=\"api/SilverCraft.CSCore.DSP.HighShelfFilter.yml\" sourcestartlinenumber=\"1\">Used to apply a highshelf-filter to a signal.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SilverCraft.CSCore.DSP.HighpassFilter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SilverCraft.CSCore.DSP.HighpassFilter.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SilverCraft.CSCore.DSP.HighpassFilter",
+      "Summary": "<p sourcefile=\"api/SilverCraft.CSCore.DSP.HighpassFilter.yml\" sourcestartlinenumber=\"1\">Used to apply a highpass-filter to a signal.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SilverCraft.CSCore.DSP.LowShelfFilter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SilverCraft.CSCore.DSP.LowShelfFilter.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SilverCraft.CSCore.DSP.LowShelfFilter",
+      "Summary": "<p sourcefile=\"api/SilverCraft.CSCore.DSP.LowShelfFilter.yml\" sourcestartlinenumber=\"1\">Used to apply a lowshelf-filter to a signal.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SilverCraft.CSCore.DSP.LowpassFilter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SilverCraft.CSCore.DSP.LowpassFilter.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SilverCraft.CSCore.DSP.LowpassFilter",
+      "Summary": "<p sourcefile=\"api/SilverCraft.CSCore.DSP.LowpassFilter.yml\" sourcestartlinenumber=\"1\">Used to apply a lowpass-filter to a signal.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SilverCraft.CSCore.DSP.NotchFilter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SilverCraft.CSCore.DSP.NotchFilter.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SilverCraft.CSCore.DSP.NotchFilter",
+      "Summary": "<p sourcefile=\"api/SilverCraft.CSCore.DSP.NotchFilter.yml\" sourcestartlinenumber=\"1\">Used to apply a notch-filter to a signal.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SilverCraft.CSCore.DSP.PeakFilter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SilverCraft.CSCore.DSP.PeakFilter.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SilverCraft.CSCore.DSP.PeakFilter",
+      "Summary": "<p sourcefile=\"api/SilverCraft.CSCore.DSP.PeakFilter.yml\" sourcestartlinenumber=\"1\">Used to apply an peak-filter to a signal.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SilverCraft.CSCore.DSP.Resampler.ResamplerBase.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SilverCraft.CSCore.DSP.Resampler.ResamplerBase.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SilverCraft.CSCore.DSP.Resampler.ResamplerBase",
+      "Summary": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SilverCraft.CSCore.DSP.Resampler.SimpleResampler.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SilverCraft.CSCore.DSP.Resampler.SimpleResampler.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SilverCraft.CSCore.DSP.Resampler.SimpleResampler",
+      "Summary": "<p sourcefile=\"api/SilverCraft.CSCore.DSP.Resampler.SimpleResampler.yml\" sourcestartlinenumber=\"1\">Linear interpolation method.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SilverCraft.CSCore.DSP.Resampler.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SilverCraft.CSCore.DSP.Resampler.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SilverCraft.CSCore.DSP.Resampler",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SilverCraft.CSCore.DSP.WindowFunction.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SilverCraft.CSCore.DSP.WindowFunction.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SilverCraft.CSCore.DSP.WindowFunction",
+      "Summary": "<p sourcefile=\"api/SilverCraft.CSCore.DSP.WindowFunction.yml\" sourcestartlinenumber=\"1\">Encapsulates a window function.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SilverCraft.CSCore.DSP.WindowFunctions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SilverCraft.CSCore.DSP.WindowFunctions.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SilverCraft.CSCore.DSP.WindowFunctions",
+      "Summary": "<p sourcefile=\"api/SilverCraft.CSCore.DSP.WindowFunctions.yml\" sourcestartlinenumber=\"1\">Defines window functions.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SilverCraft.CSCore.DSP.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SilverCraft.CSCore.DSP.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SilverCraft.CSCore.DSP",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SilverCraft.CSCore.Extensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SilverCraft.CSCore.Extensions.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SilverCraft.CSCore.Extensions",
+      "Summary": "<p sourcefile=\"api/SilverCraft.CSCore.Extensions.yml\" sourcestartlinenumber=\"1\">Provides a few basic extensions.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SilverCraft.CSCore.FluentExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SilverCraft.CSCore.FluentExtensions.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SilverCraft.CSCore.FluentExtensions",
+      "Summary": "<p sourcefile=\"api/SilverCraft.CSCore.FluentExtensions.yml\" sourcestartlinenumber=\"1\">Provides a basic fluent API for creating a source chain.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SilverCraft.CSCore.IAggregator-2.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SilverCraft.CSCore.IAggregator-2.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SilverCraft.CSCore.IAggregator<T, TAggregator>",
+      "Summary": "<p sourcefile=\"api/SilverCraft.CSCore.IAggregator-2.yml\" sourcestartlinenumber=\"1\">Defines the base for all aggregators.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SilverCraft.CSCore.IAudioSource.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SilverCraft.CSCore.IAudioSource.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SilverCraft.CSCore.IAudioSource",
+      "Summary": "<p sourcefile=\"api/SilverCraft.CSCore.IAudioSource.yml\" sourcestartlinenumber=\"1\">Defines the base for all audio streams.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SilverCraft.CSCore.IChannelMapperFactory.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SilverCraft.CSCore.IChannelMapperFactory.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SilverCraft.CSCore.IChannelMapperFactory",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SilverCraft.CSCore.IReadableAudioSource-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SilverCraft.CSCore.IReadableAudioSource-1.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SilverCraft.CSCore.IReadableAudioSource<T>",
+      "Summary": "<p sourcefile=\"api/SilverCraft.CSCore.IReadableAudioSource-1.yml\" sourcestartlinenumber=\"1\">Defines a generic base for all readable audio streams.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SilverCraft.CSCore.IResamplerFactory.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SilverCraft.CSCore.IResamplerFactory.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SilverCraft.CSCore.IResamplerFactory",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SilverCraft.CSCore.ISampleAggregator.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SilverCraft.CSCore.ISampleAggregator.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SilverCraft.CSCore.ISampleAggregator",
+      "Summary": "<p sourcefile=\"api/SilverCraft.CSCore.ISampleAggregator.yml\" sourcestartlinenumber=\"1\">Defines the base for all <xref href=\"SilverCraft.CSCore.ISampleSource\" data-throw-if-not-resolved=\"false\"></xref> aggregators.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SilverCraft.CSCore.ISampleSource.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SilverCraft.CSCore.ISampleSource.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SilverCraft.CSCore.ISampleSource",
+      "Summary": "<p sourcefile=\"api/SilverCraft.CSCore.ISampleSource.yml\" sourcestartlinenumber=\"1\">Defines the base for all audio streams which provide samples instead of raw byte data.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SilverCraft.CSCore.IWaveAggregator.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SilverCraft.CSCore.IWaveAggregator.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SilverCraft.CSCore.IWaveAggregator",
+      "Summary": "<p sourcefile=\"api/SilverCraft.CSCore.IWaveAggregator.yml\" sourcestartlinenumber=\"1\">Defines the base for all <xref href=\"SilverCraft.CSCore.IWaveSource\" data-throw-if-not-resolved=\"false\"></xref> aggregators.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SilverCraft.CSCore.IWaveSource.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SilverCraft.CSCore.IWaveSource.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SilverCraft.CSCore.IWaveSource",
+      "Summary": "<p sourcefile=\"api/SilverCraft.CSCore.IWaveSource.yml\" sourcestartlinenumber=\"1\">Defines the base for all audio streams which provide raw byte data.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SilverCraft.CSCore.IWriteable.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SilverCraft.CSCore.IWriteable.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SilverCraft.CSCore.IWriteable",
+      "Summary": "<p sourcefile=\"api/SilverCraft.CSCore.IWriteable.yml\" sourcestartlinenumber=\"1\">Provides the <xref href=\"SilverCraft.CSCore.IWriteable.Write(System.Byte%5b%5d%2cSystem.Int32%2cSystem.Int32)\" data-throw-if-not-resolved=\"false\"></xref> method.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SilverCraft.CSCore.Locator.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SilverCraft.CSCore.Locator.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SilverCraft.CSCore.Locator",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SilverCraft.CSCore.LogLocation.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SilverCraft.CSCore.LogLocation.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SilverCraft.CSCore.LogLocation",
+      "Summary": "<p sourcefile=\"api/SilverCraft.CSCore.LogLocation.yml\" sourcestartlinenumber=\"1\">Provides static methods for obtaining an <xref href=\"Serilog.ILogger\" data-throw-if-not-resolved=\"false\"></xref> instance associated with a specific type.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SilverCraft.CSCore.OpenMPT.OpenMptWaveStream.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SilverCraft.CSCore.OpenMPT.OpenMptWaveStream.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SilverCraft.CSCore.OpenMPT.OpenMptWaveStream",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SilverCraft.CSCore.OpenMPT.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SilverCraft.CSCore.OpenMPT.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SilverCraft.CSCore.OpenMPT",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SilverCraft.CSCore.PortAudio.Native.NativeMethods.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SilverCraft.CSCore.PortAudio.Native.NativeMethods.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SilverCraft.CSCore.PortAudio.Native.NativeMethods",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SilverCraft.CSCore.PortAudio.Native.PaDeviceInfo.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SilverCraft.CSCore.PortAudio.Native.PaDeviceInfo.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SilverCraft.CSCore.PortAudio.Native.PaDeviceInfo",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SilverCraft.CSCore.PortAudio.Native.PaErrorCode.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SilverCraft.CSCore.PortAudio.Native.PaErrorCode.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SilverCraft.CSCore.PortAudio.Native.PaErrorCode",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SilverCraft.CSCore.PortAudio.Native.PaHostApiInfo.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SilverCraft.CSCore.PortAudio.Native.PaHostApiInfo.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SilverCraft.CSCore.PortAudio.Native.PaHostApiInfo",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SilverCraft.CSCore.PortAudio.Native.PaHostApiTypeId.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SilverCraft.CSCore.PortAudio.Native.PaHostApiTypeId.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SilverCraft.CSCore.PortAudio.Native.PaHostApiTypeId",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SilverCraft.CSCore.PortAudio.Native.PaHostErrorInfo.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SilverCraft.CSCore.PortAudio.Native.PaHostErrorInfo.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SilverCraft.CSCore.PortAudio.Native.PaHostErrorInfo",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SilverCraft.CSCore.PortAudio.Native.PaStream.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SilverCraft.CSCore.PortAudio.Native.PaStream.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SilverCraft.CSCore.PortAudio.Native.PaStream",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SilverCraft.CSCore.PortAudio.Native.PaStreamCallbackFlags.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SilverCraft.CSCore.PortAudio.Native.PaStreamCallbackFlags.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SilverCraft.CSCore.PortAudio.Native.PaStreamCallbackFlags",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SilverCraft.CSCore.PortAudio.Native.PaStreamCallbackResult.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SilverCraft.CSCore.PortAudio.Native.PaStreamCallbackResult.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SilverCraft.CSCore.PortAudio.Native.PaStreamCallbackResult",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SilverCraft.CSCore.PortAudio.Native.PaStreamCallbackTimeInfo.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SilverCraft.CSCore.PortAudio.Native.PaStreamCallbackTimeInfo.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SilverCraft.CSCore.PortAudio.Native.PaStreamCallbackTimeInfo",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SilverCraft.CSCore.PortAudio.Native.PaStreamInfo.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SilverCraft.CSCore.PortAudio.Native.PaStreamInfo.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SilverCraft.CSCore.PortAudio.Native.PaStreamInfo",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SilverCraft.CSCore.PortAudio.Native.PaStreamParameters.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SilverCraft.CSCore.PortAudio.Native.PaStreamParameters.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SilverCraft.CSCore.PortAudio.Native.PaStreamParameters",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SilverCraft.CSCore.PortAudio.Native.PaVersionInfo.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SilverCraft.CSCore.PortAudio.Native.PaVersionInfo.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SilverCraft.CSCore.PortAudio.Native.PaVersionInfo",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SilverCraft.CSCore.PortAudio.Native.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SilverCraft.CSCore.PortAudio.Native.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SilverCraft.CSCore.PortAudio.Native",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SilverCraft.CSCore.PortAudio.PaStreamFinishedCallback.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SilverCraft.CSCore.PortAudio.PaStreamFinishedCallback.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SilverCraft.CSCore.PortAudio.PaStreamFinishedCallback",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SilverCraft.CSCore.PortAudio.PortAudioException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SilverCraft.CSCore.PortAudio.PortAudioException.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SilverCraft.CSCore.PortAudio.PortAudioException",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SilverCraft.CSCore.PortAudio.PortAudioLifetimeManager.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SilverCraft.CSCore.PortAudio.PortAudioLifetimeManager.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SilverCraft.CSCore.PortAudio.PortAudioLifetimeManager",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SilverCraft.CSCore.PortAudio.PortAudioSoundOut.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SilverCraft.CSCore.PortAudio.PortAudioSoundOut.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SilverCraft.CSCore.PortAudio.PortAudioSoundOut",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SilverCraft.CSCore.PortAudio.StreamCallBack.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SilverCraft.CSCore.PortAudio.StreamCallBack.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SilverCraft.CSCore.PortAudio.StreamCallBack",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SilverCraft.CSCore.PortAudio.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SilverCraft.CSCore.PortAudio.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SilverCraft.CSCore.PortAudio",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SilverCraft.CSCore.SampleAggregatorBase.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SilverCraft.CSCore.SampleAggregatorBase.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SilverCraft.CSCore.SampleAggregatorBase",
+      "Summary": "<p sourcefile=\"api/SilverCraft.CSCore.SampleAggregatorBase.yml\" sourcestartlinenumber=\"1\">Base class for most of the sample sources.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SilverCraft.CSCore.Settings.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SilverCraft.CSCore.Settings.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SilverCraft.CSCore.Settings",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SilverCraft.CSCore.SndFile.SndFileException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SilverCraft.CSCore.SndFile.SndFileException.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SilverCraft.CSCore.SndFile.SndFileException",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SilverCraft.CSCore.SndFile.SndFileWaveStream.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SilverCraft.CSCore.SndFile.SndFileWaveStream.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SilverCraft.CSCore.SndFile.SndFileWaveStream",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SilverCraft.CSCore.SndFile.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SilverCraft.CSCore.SndFile.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SilverCraft.CSCore.SndFile",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SilverCraft.CSCore.SoundIn.DataAvailableEventArgs.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SilverCraft.CSCore.SoundIn.DataAvailableEventArgs.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SilverCraft.CSCore.SoundIn.DataAvailableEventArgs",
+      "Summary": "<p sourcefile=\"api/SilverCraft.CSCore.SoundIn.DataAvailableEventArgs.yml\" sourcestartlinenumber=\"1\">Provides data for the <xref href=\"SilverCraft.CSCore.SoundIn.ISoundIn.DataAvailable\" data-throw-if-not-resolved=\"false\"></xref> event.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SilverCraft.CSCore.SoundIn.ISoundIn.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SilverCraft.CSCore.SoundIn.ISoundIn.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SilverCraft.CSCore.SoundIn.ISoundIn",
+      "Summary": "<p sourcefile=\"api/SilverCraft.CSCore.SoundIn.ISoundIn.yml\" sourcestartlinenumber=\"1\">Defines a interface for capturing audio.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SilverCraft.CSCore.SoundIn.RecordingState.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SilverCraft.CSCore.SoundIn.RecordingState.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SilverCraft.CSCore.SoundIn.RecordingState",
+      "Summary": "<p sourcefile=\"api/SilverCraft.CSCore.SoundIn.RecordingState.yml\" sourcestartlinenumber=\"1\">Defines the states of a <xref href=\"SilverCraft.CSCore.SoundIn.ISoundIn\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SilverCraft.CSCore.SoundIn.RecordingStoppedEventArgs.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SilverCraft.CSCore.SoundIn.RecordingStoppedEventArgs.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SilverCraft.CSCore.SoundIn.RecordingStoppedEventArgs",
+      "Summary": "<p sourcefile=\"api/SilverCraft.CSCore.SoundIn.RecordingStoppedEventArgs.yml\" sourcestartlinenumber=\"1\">Provides data for the <xref href=\"SilverCraft.CSCore.SoundIn.ISoundIn.Stopped\" data-throw-if-not-resolved=\"false\"></xref> event.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SilverCraft.CSCore.SoundIn.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SilverCraft.CSCore.SoundIn.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SilverCraft.CSCore.SoundIn",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SilverCraft.CSCore.SoundOut.AL.ALContext.ContextLock.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SilverCraft.CSCore.SoundOut.AL.ALContext.ContextLock.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SilverCraft.CSCore.SoundOut.AL.ALContext.ContextLock",
+      "Summary": "<p sourcefile=\"api/SilverCraft.CSCore.SoundOut.AL.ALContext.ContextLock.yml\" sourcestartlinenumber=\"1\">Represents a locked Context.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SilverCraft.CSCore.SoundOut.AL.ALContext.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SilverCraft.CSCore.SoundOut.AL.ALContext.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SilverCraft.CSCore.SoundOut.AL.ALContext",
+      "Summary": "<p sourcefile=\"api/SilverCraft.CSCore.SoundOut.AL.ALContext.yml\" sourcestartlinenumber=\"1\">Represents an OpenAL Context.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SilverCraft.CSCore.SoundOut.AL.ALDevice.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SilverCraft.CSCore.SoundOut.AL.ALDevice.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SilverCraft.CSCore.SoundOut.AL.ALDevice",
+      "Summary": "<p sourcefile=\"api/SilverCraft.CSCore.SoundOut.AL.ALDevice.yml\" sourcestartlinenumber=\"1\">Represents an OpenAL Device.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SilverCraft.CSCore.SoundOut.AL.ALErrorCode.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SilverCraft.CSCore.SoundOut.AL.ALErrorCode.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SilverCraft.CSCore.SoundOut.AL.ALErrorCode",
+      "Summary": "<p sourcefile=\"api/SilverCraft.CSCore.SoundOut.AL.ALErrorCode.yml\" sourcestartlinenumber=\"1\">Defines OpenAL Error Codes.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SilverCraft.CSCore.SoundOut.AL.ALException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SilverCraft.CSCore.SoundOut.AL.ALException.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SilverCraft.CSCore.SoundOut.AL.ALException",
+      "Summary": "<p sourcefile=\"api/SilverCraft.CSCore.SoundOut.AL.ALException.yml\" sourcestartlinenumber=\"1\">OpenAL Exception</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SilverCraft.CSCore.SoundOut.AL.ALFormat.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SilverCraft.CSCore.SoundOut.AL.ALFormat.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SilverCraft.CSCore.SoundOut.AL.ALFormat",
+      "Summary": "<p sourcefile=\"api/SilverCraft.CSCore.SoundOut.AL.ALFormat.yml\" sourcestartlinenumber=\"1\">Defines different OpenAL formats.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SilverCraft.CSCore.SoundOut.AL.ALSource.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SilverCraft.CSCore.SoundOut.AL.ALSource.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SilverCraft.CSCore.SoundOut.AL.ALSource",
+      "Summary": "<p sourcefile=\"api/SilverCraft.CSCore.SoundOut.AL.ALSource.yml\" sourcestartlinenumber=\"1\">Represents an OpenAL Source.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SilverCraft.CSCore.SoundOut.AL.ALSourceParameters.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SilverCraft.CSCore.SoundOut.AL.ALSourceParameters.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SilverCraft.CSCore.SoundOut.AL.ALSourceParameters",
+      "Summary": "<p sourcefile=\"api/SilverCraft.CSCore.SoundOut.AL.ALSourceParameters.yml\" sourcestartlinenumber=\"1\">Defines ALSource parameters.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SilverCraft.CSCore.SoundOut.AL.ALSourceState.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SilverCraft.CSCore.SoundOut.AL.ALSourceState.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SilverCraft.CSCore.SoundOut.AL.ALSourceState",
+      "Summary": "<p sourcefile=\"api/SilverCraft.CSCore.SoundOut.AL.ALSourceState.yml\" sourcestartlinenumber=\"1\">Defines source states.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SilverCraft.CSCore.SoundOut.AL.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SilverCraft.CSCore.SoundOut.AL.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SilverCraft.CSCore.SoundOut.AL",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SilverCraft.CSCore.SoundOut.ALSoundOut.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SilverCraft.CSCore.SoundOut.ALSoundOut.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SilverCraft.CSCore.SoundOut.ALSoundOut",
+      "Summary": "<p sourcefile=\"api/SilverCraft.CSCore.SoundOut.ALSoundOut.yml\" sourcestartlinenumber=\"1\">Provides audioplayback through OpenAL.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SilverCraft.CSCore.SoundOut.ISoundOut.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SilverCraft.CSCore.SoundOut.ISoundOut.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SilverCraft.CSCore.SoundOut.ISoundOut",
+      "Summary": "<p sourcefile=\"api/SilverCraft.CSCore.SoundOut.ISoundOut.yml\" sourcestartlinenumber=\"1\">Defines a interface for audio playbacks.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SilverCraft.CSCore.SoundOut.PlaybackState.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SilverCraft.CSCore.SoundOut.PlaybackState.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SilverCraft.CSCore.SoundOut.PlaybackState",
+      "Summary": "<p sourcefile=\"api/SilverCraft.CSCore.SoundOut.PlaybackState.yml\" sourcestartlinenumber=\"1\">Defines playback states.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SilverCraft.CSCore.SoundOut.PlaybackStoppedEventArgs.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SilverCraft.CSCore.SoundOut.PlaybackStoppedEventArgs.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SilverCraft.CSCore.SoundOut.PlaybackStoppedEventArgs",
+      "Summary": "<p sourcefile=\"api/SilverCraft.CSCore.SoundOut.PlaybackStoppedEventArgs.yml\" sourcestartlinenumber=\"1\">Provides data for the <xref href=\"SilverCraft.CSCore.SoundOut.ISoundOut.Stopped\" data-throw-if-not-resolved=\"false\"></xref> event.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SilverCraft.CSCore.SoundOut.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SilverCraft.CSCore.SoundOut.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SilverCraft.CSCore.SoundOut",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SilverCraft.CSCore.StoppedEventArgs.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SilverCraft.CSCore.StoppedEventArgs.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SilverCraft.CSCore.StoppedEventArgs",
+      "Summary": "<p sourcefile=\"api/SilverCraft.CSCore.StoppedEventArgs.yml\" sourcestartlinenumber=\"1\">Provides data for any stopped operations.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SilverCraft.CSCore.Streams.BlockReadEventArgs-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SilverCraft.CSCore.Streams.BlockReadEventArgs-1.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SilverCraft.CSCore.Streams.BlockReadEventArgs<T>",
+      "Summary": "<p sourcefile=\"api/SilverCraft.CSCore.Streams.BlockReadEventArgs-1.yml\" sourcestartlinenumber=\"1\">Provides data for the <xref href=\"SilverCraft.CSCore.Streams.NotificationSource.BlockRead\" data-throw-if-not-resolved=\"false\"></xref> event.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SilverCraft.CSCore.Streams.BufferSource.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SilverCraft.CSCore.Streams.BufferSource.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SilverCraft.CSCore.Streams.BufferSource",
+      "Summary": "<p sourcefile=\"api/SilverCraft.CSCore.Streams.BufferSource.yml\" sourcestartlinenumber=\"1\">Reads data from the <xref href=\"SilverCraft.CSCore.WaveAggregatorBase.BaseSource\" data-throw-if-not-resolved=\"false\"></xref> and stores the read data in a buffer.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SilverCraft.CSCore.Streams.CachedSoundSource.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SilverCraft.CSCore.Streams.CachedSoundSource.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SilverCraft.CSCore.Streams.CachedSoundSource",
+      "Summary": "<p sourcefile=\"api/SilverCraft.CSCore.Streams.CachedSoundSource.yml\" sourcestartlinenumber=\"1\">Cached wave source.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SilverCraft.CSCore.Streams.Effects.Equalizer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SilverCraft.CSCore.Streams.Effects.Equalizer.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SilverCraft.CSCore.Streams.Effects.Equalizer",
+      "Summary": "<p sourcefile=\"api/SilverCraft.CSCore.Streams.Effects.Equalizer.yml\" sourcestartlinenumber=\"1\">Represents an equalizer which can be dynamically modified by adding, removing or modifying\n<xref href=\"SilverCraft.CSCore.Streams.Effects.EqualizerFilter\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SilverCraft.CSCore.Streams.Effects.EqualizerChannelFilter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SilverCraft.CSCore.Streams.Effects.EqualizerChannelFilter.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SilverCraft.CSCore.Streams.Effects.EqualizerChannelFilter",
+      "Summary": "<p sourcefile=\"api/SilverCraft.CSCore.Streams.Effects.EqualizerChannelFilter.yml\" sourcestartlinenumber=\"1\">Represents an EqualizerFilter for a single channel.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SilverCraft.CSCore.Streams.Effects.EqualizerFilter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SilverCraft.CSCore.Streams.Effects.EqualizerFilter.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SilverCraft.CSCore.Streams.Effects.EqualizerFilter",
+      "Summary": "<p sourcefile=\"api/SilverCraft.CSCore.Streams.Effects.EqualizerFilter.yml\" sourcestartlinenumber=\"1\">Represents an EqualizerFilter which holds an <xref href=\"SilverCraft.CSCore.Streams.Effects.EqualizerChannelFilter\" data-throw-if-not-resolved=\"false\"></xref> for each channel.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SilverCraft.CSCore.Streams.Effects.PitchShifter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SilverCraft.CSCore.Streams.Effects.PitchShifter.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SilverCraft.CSCore.Streams.Effects.PitchShifter",
+      "Summary": "<p sourcefile=\"api/SilverCraft.CSCore.Streams.Effects.PitchShifter.yml\" sourcestartlinenumber=\"1\">A pitch shifting effect.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SilverCraft.CSCore.Streams.Effects.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SilverCraft.CSCore.Streams.Effects.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SilverCraft.CSCore.Streams.Effects",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SilverCraft.CSCore.Streams.FadeInOut.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SilverCraft.CSCore.Streams.FadeInOut.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SilverCraft.CSCore.Streams.FadeInOut",
+      "Summary": "<p sourcefile=\"api/SilverCraft.CSCore.Streams.FadeInOut.yml\" sourcestartlinenumber=\"1\">Provides the ability use an implementation of the <xref href=\"SilverCraft.CSCore.Streams.IFadeStrategy\" data-throw-if-not-resolved=\"false\"></xref> interface fade waveform-audio data.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SilverCraft.CSCore.Streams.GainSource.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SilverCraft.CSCore.Streams.GainSource.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SilverCraft.CSCore.Streams.GainSource",
+      "Summary": "<p sourcefile=\"api/SilverCraft.CSCore.Streams.GainSource.yml\" sourcestartlinenumber=\"1\">Compared to the <xref href=\"SilverCraft.CSCore.Streams.VolumeSource\" data-throw-if-not-resolved=\"false\"></xref>, the <xref href=\"SilverCraft.CSCore.Streams.GainSource.Volume\" data-throw-if-not-resolved=\"false\"></xref> property of the <xref href=\"SilverCraft.CSCore.Streams.GainSource\" data-throw-if-not-resolved=\"false\"></xref> accepts any value.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SilverCraft.CSCore.Streams.IFadeStrategy.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SilverCraft.CSCore.Streams.IFadeStrategy.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SilverCraft.CSCore.Streams.IFadeStrategy",
+      "Summary": "<p sourcefile=\"api/SilverCraft.CSCore.Streams.IFadeStrategy.yml\" sourcestartlinenumber=\"1\">Provides a mechanism for fading in/out audio.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SilverCraft.CSCore.Streams.LinearFadeStrategy.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SilverCraft.CSCore.Streams.LinearFadeStrategy.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SilverCraft.CSCore.Streams.LinearFadeStrategy",
+      "Summary": "<p sourcefile=\"api/SilverCraft.CSCore.Streams.LinearFadeStrategy.yml\" sourcestartlinenumber=\"1\">Provides a linear fading algorithm.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SilverCraft.CSCore.Streams.LoopStream.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SilverCraft.CSCore.Streams.LoopStream.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SilverCraft.CSCore.Streams.LoopStream",
+      "Summary": "<p sourcefile=\"api/SilverCraft.CSCore.Streams.LoopStream.yml\" sourcestartlinenumber=\"1\">A Stream which can be used for endless looping.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SilverCraft.CSCore.Streams.MonoToStereoSource.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SilverCraft.CSCore.Streams.MonoToStereoSource.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SilverCraft.CSCore.Streams.MonoToStereoSource",
+      "Summary": "<p sourcefile=\"api/SilverCraft.CSCore.Streams.MonoToStereoSource.yml\" sourcestartlinenumber=\"1\">Converts a mono source to a stereo source.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SilverCraft.CSCore.Streams.NotificationSource.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SilverCraft.CSCore.Streams.NotificationSource.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SilverCraft.CSCore.Streams.NotificationSource",
+      "Summary": "<p sourcefile=\"api/SilverCraft.CSCore.Streams.NotificationSource.yml\" sourcestartlinenumber=\"1\">Notifies the client when a certain amount of data got read.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SilverCraft.CSCore.Streams.PanSource.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SilverCraft.CSCore.Streams.PanSource.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SilverCraft.CSCore.Streams.PanSource",
+      "Summary": "<p sourcefile=\"api/SilverCraft.CSCore.Streams.PanSource.yml\" sourcestartlinenumber=\"1\">Provides control over the balance between the left and the right channel of an audio source.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SilverCraft.CSCore.Streams.PeakEventArgs.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SilverCraft.CSCore.Streams.PeakEventArgs.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SilverCraft.CSCore.Streams.PeakEventArgs",
+      "Summary": "<p sourcefile=\"api/SilverCraft.CSCore.Streams.PeakEventArgs.yml\" sourcestartlinenumber=\"1\">Provides data for the <xref href=\"SilverCraft.CSCore.Streams.PeakMeter.PeakCalculated\" data-throw-if-not-resolved=\"false\"></xref> event.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SilverCraft.CSCore.Streams.PeakMeter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SilverCraft.CSCore.Streams.PeakMeter.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SilverCraft.CSCore.Streams.PeakMeter",
+      "Summary": "<p sourcefile=\"api/SilverCraft.CSCore.Streams.PeakMeter.yml\" sourcestartlinenumber=\"1\">Represents a peak meter.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SilverCraft.CSCore.Streams.SampleConverter.IeeeFloatToSample.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SilverCraft.CSCore.Streams.SampleConverter.IeeeFloatToSample.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SilverCraft.CSCore.Streams.SampleConverter.IeeeFloatToSample",
+      "Summary": "<p sourcefile=\"api/SilverCraft.CSCore.Streams.SampleConverter.IeeeFloatToSample.yml\" sourcestartlinenumber=\"1\">Converts a 32-bit IeeeFloat <xref href=\"SilverCraft.CSCore.IWaveSource\" data-throw-if-not-resolved=\"false\"></xref> to a <xref href=\"SilverCraft.CSCore.ISampleSource\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SilverCraft.CSCore.Streams.SampleConverter.Pcm16BitToSample.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SilverCraft.CSCore.Streams.SampleConverter.Pcm16BitToSample.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SilverCraft.CSCore.Streams.SampleConverter.Pcm16BitToSample",
+      "Summary": "<p sourcefile=\"api/SilverCraft.CSCore.Streams.SampleConverter.Pcm16BitToSample.yml\" sourcestartlinenumber=\"1\">Converts a 16-bit PCM <xref href=\"SilverCraft.CSCore.IWaveSource\" data-throw-if-not-resolved=\"false\"></xref> to a <xref href=\"SilverCraft.CSCore.ISampleSource\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SilverCraft.CSCore.Streams.SampleConverter.Pcm24BitToSample.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SilverCraft.CSCore.Streams.SampleConverter.Pcm24BitToSample.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SilverCraft.CSCore.Streams.SampleConverter.Pcm24BitToSample",
+      "Summary": "<p sourcefile=\"api/SilverCraft.CSCore.Streams.SampleConverter.Pcm24BitToSample.yml\" sourcestartlinenumber=\"1\">Converts a 24-bit PCM <xref href=\"SilverCraft.CSCore.IWaveSource\" data-throw-if-not-resolved=\"false\"></xref> to a <xref href=\"SilverCraft.CSCore.ISampleSource\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SilverCraft.CSCore.Streams.SampleConverter.Pcm32BitToSample.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SilverCraft.CSCore.Streams.SampleConverter.Pcm32BitToSample.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SilverCraft.CSCore.Streams.SampleConverter.Pcm32BitToSample",
+      "Summary": "<p sourcefile=\"api/SilverCraft.CSCore.Streams.SampleConverter.Pcm32BitToSample.yml\" sourcestartlinenumber=\"1\">Converts a 32-bit PCM <xref href=\"SilverCraft.CSCore.IWaveSource\" data-throw-if-not-resolved=\"false\"></xref> to a <xref href=\"SilverCraft.CSCore.ISampleSource\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SilverCraft.CSCore.Streams.SampleConverter.Pcm8BitToSample.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SilverCraft.CSCore.Streams.SampleConverter.Pcm8BitToSample.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SilverCraft.CSCore.Streams.SampleConverter.Pcm8BitToSample",
+      "Summary": "<p sourcefile=\"api/SilverCraft.CSCore.Streams.SampleConverter.Pcm8BitToSample.yml\" sourcestartlinenumber=\"1\">Converts a 8-bit PCM <xref href=\"SilverCraft.CSCore.IWaveSource\" data-throw-if-not-resolved=\"false\"></xref> to a <xref href=\"SilverCraft.CSCore.ISampleSource\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SilverCraft.CSCore.Streams.SampleConverter.SampleToIeeeFloat32.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SilverCraft.CSCore.Streams.SampleConverter.SampleToIeeeFloat32.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SilverCraft.CSCore.Streams.SampleConverter.SampleToIeeeFloat32",
+      "Summary": "<p sourcefile=\"api/SilverCraft.CSCore.Streams.SampleConverter.SampleToIeeeFloat32.yml\" sourcestartlinenumber=\"1\">Converts a <xref href=\"SilverCraft.CSCore.ISampleSource\" data-throw-if-not-resolved=\"false\"></xref> to a 32-bit IeeeFloat <xref href=\"SilverCraft.CSCore.IWaveSource\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SilverCraft.CSCore.Streams.SampleConverter.SampleToPcm16.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SilverCraft.CSCore.Streams.SampleConverter.SampleToPcm16.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SilverCraft.CSCore.Streams.SampleConverter.SampleToPcm16",
+      "Summary": "<p sourcefile=\"api/SilverCraft.CSCore.Streams.SampleConverter.SampleToPcm16.yml\" sourcestartlinenumber=\"1\">Converts a <xref href=\"SilverCraft.CSCore.ISampleSource\" data-throw-if-not-resolved=\"false\"></xref> to a 16-bit PCM <xref href=\"SilverCraft.CSCore.IWaveSource\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SilverCraft.CSCore.Streams.SampleConverter.SampleToPcm24.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SilverCraft.CSCore.Streams.SampleConverter.SampleToPcm24.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SilverCraft.CSCore.Streams.SampleConverter.SampleToPcm24",
+      "Summary": "<p sourcefile=\"api/SilverCraft.CSCore.Streams.SampleConverter.SampleToPcm24.yml\" sourcestartlinenumber=\"1\">Converts a <xref href=\"SilverCraft.CSCore.ISampleSource\" data-throw-if-not-resolved=\"false\"></xref> to a 24-bit PCM <xref href=\"SilverCraft.CSCore.IWaveSource\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SilverCraft.CSCore.Streams.SampleConverter.SampleToPcm32.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SilverCraft.CSCore.Streams.SampleConverter.SampleToPcm32.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SilverCraft.CSCore.Streams.SampleConverter.SampleToPcm32",
+      "Summary": "<p sourcefile=\"api/SilverCraft.CSCore.Streams.SampleConverter.SampleToPcm32.yml\" sourcestartlinenumber=\"1\">Converts a <xref href=\"SilverCraft.CSCore.ISampleSource\" data-throw-if-not-resolved=\"false\"></xref> to a 32-bit PCM <xref href=\"SilverCraft.CSCore.IWaveSource\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SilverCraft.CSCore.Streams.SampleConverter.SampleToPcm8.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SilverCraft.CSCore.Streams.SampleConverter.SampleToPcm8.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SilverCraft.CSCore.Streams.SampleConverter.SampleToPcm8",
+      "Summary": "<p sourcefile=\"api/SilverCraft.CSCore.Streams.SampleConverter.SampleToPcm8.yml\" sourcestartlinenumber=\"1\">Converts a <xref href=\"SilverCraft.CSCore.ISampleSource\" data-throw-if-not-resolved=\"false\"></xref> to a 8-bit PCM <xref href=\"SilverCraft.CSCore.IWaveSource\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SilverCraft.CSCore.Streams.SampleConverter.SampleToWaveBase.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SilverCraft.CSCore.Streams.SampleConverter.SampleToWaveBase.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SilverCraft.CSCore.Streams.SampleConverter.SampleToWaveBase",
+      "Summary": "<p sourcefile=\"api/SilverCraft.CSCore.Streams.SampleConverter.SampleToWaveBase.yml\" sourcestartlinenumber=\"1\">Converts a <xref href=\"SilverCraft.CSCore.ISampleSource\" data-throw-if-not-resolved=\"false\"></xref> to a <xref href=\"SilverCraft.CSCore.IWaveSource\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SilverCraft.CSCore.Streams.SampleConverter.WaveToSampleBase.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SilverCraft.CSCore.Streams.SampleConverter.WaveToSampleBase.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SilverCraft.CSCore.Streams.SampleConverter.WaveToSampleBase",
+      "Summary": "<p sourcefile=\"api/SilverCraft.CSCore.Streams.SampleConverter.WaveToSampleBase.yml\" sourcestartlinenumber=\"1\">Converts a <xref href=\"SilverCraft.CSCore.ISampleSource\" data-throw-if-not-resolved=\"false\"></xref> to a <xref href=\"SilverCraft.CSCore.IWaveSource\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SilverCraft.CSCore.Streams.SampleConverter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SilverCraft.CSCore.Streams.SampleConverter.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SilverCraft.CSCore.Streams.SampleConverter",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SilverCraft.CSCore.Streams.SimpleNotificationSource.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SilverCraft.CSCore.Streams.SimpleNotificationSource.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SilverCraft.CSCore.Streams.SimpleNotificationSource",
+      "Summary": "<p sourcefile=\"api/SilverCraft.CSCore.Streams.SimpleNotificationSource.yml\" sourcestartlinenumber=\"1\">Notifies the client when a specific number of samples got read and when the <xref href=\"SilverCraft.CSCore.Streams.SimpleNotificationSource.Read(System.Single%5b%5d%2cSystem.Int32%2cSystem.Int32)\" data-throw-if-not-resolved=\"false\"></xref> method got called.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SilverCraft.CSCore.Streams.SineGenerator.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SilverCraft.CSCore.Streams.SineGenerator.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SilverCraft.CSCore.Streams.SineGenerator",
+      "Summary": "<p sourcefile=\"api/SilverCraft.CSCore.Streams.SineGenerator.yml\" sourcestartlinenumber=\"1\">Generates a sine wave.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SilverCraft.CSCore.Streams.SingleBlockNotificationStream.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SilverCraft.CSCore.Streams.SingleBlockNotificationStream.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SilverCraft.CSCore.Streams.SingleBlockNotificationStream",
+      "Summary": "<p sourcefile=\"api/SilverCraft.CSCore.Streams.SingleBlockNotificationStream.yml\" sourcestartlinenumber=\"1\">Fire the <xref href=\"SilverCraft.CSCore.Streams.SingleBlockNotificationStream.SingleBlockRead\" data-throw-if-not-resolved=\"false\"></xref> event after every block read.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SilverCraft.CSCore.Streams.SingleBlockReadEventArgs.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SilverCraft.CSCore.Streams.SingleBlockReadEventArgs.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SilverCraft.CSCore.Streams.SingleBlockReadEventArgs",
+      "Summary": "<p sourcefile=\"api/SilverCraft.CSCore.Streams.SingleBlockReadEventArgs.yml\" sourcestartlinenumber=\"1\">Provides data for the <xref href=\"SilverCraft.CSCore.Streams.SingleBlockNotificationStream.SingleBlockRead\" data-throw-if-not-resolved=\"false\"></xref> event.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SilverCraft.CSCore.Streams.SoundInSource.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SilverCraft.CSCore.Streams.SoundInSource.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SilverCraft.CSCore.Streams.SoundInSource",
+      "Summary": "<p sourcefile=\"api/SilverCraft.CSCore.Streams.SoundInSource.yml\" sourcestartlinenumber=\"1\">Represents an implementation of the <xref href=\"SilverCraft.CSCore.IWaveSource\" data-throw-if-not-resolved=\"false\"></xref> interface which provides the data provided by a specified <xref href=\"SilverCraft.CSCore.SoundIn.ISoundIn\" data-throw-if-not-resolved=\"false\"></xref> object.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SilverCraft.CSCore.Streams.StereoToMonoSource.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SilverCraft.CSCore.Streams.StereoToMonoSource.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SilverCraft.CSCore.Streams.StereoToMonoSource",
+      "Summary": "<p sourcefile=\"api/SilverCraft.CSCore.Streams.StereoToMonoSource.yml\" sourcestartlinenumber=\"1\">Converts a stereo source to a mono source.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SilverCraft.CSCore.Streams.SynchronizedWaveSource-2.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SilverCraft.CSCore.Streams.SynchronizedWaveSource-2.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SilverCraft.CSCore.Streams.SynchronizedWaveSource<TBaseSource, T>",
+      "Summary": "<p sourcefile=\"api/SilverCraft.CSCore.Streams.SynchronizedWaveSource-2.yml\" sourcestartlinenumber=\"1\">A thread-safe (synchronized) wrapper around the specified a <xref href=\"SilverCraft.CSCore.IReadableAudioSource%601\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SilverCraft.CSCore.Streams.VolumeSource.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SilverCraft.CSCore.Streams.VolumeSource.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SilverCraft.CSCore.Streams.VolumeSource",
+      "Summary": "<p sourcefile=\"api/SilverCraft.CSCore.Streams.VolumeSource.yml\" sourcestartlinenumber=\"1\">Provides the ability to adjust the volume of an audio stream.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SilverCraft.CSCore.Streams.WriteableBufferingSource.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SilverCraft.CSCore.Streams.WriteableBufferingSource.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SilverCraft.CSCore.Streams.WriteableBufferingSource",
+      "Summary": "<p sourcefile=\"api/SilverCraft.CSCore.Streams.WriteableBufferingSource.yml\" sourcestartlinenumber=\"1\">Buffered WaveSource which overrides the allocated memory after the internal buffer got full.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SilverCraft.CSCore.Streams.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SilverCraft.CSCore.Streams.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SilverCraft.CSCore.Streams",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SilverCraft.CSCore.Tags.ID3.Frames.BinaryFrame.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SilverCraft.CSCore.Tags.ID3.Frames.BinaryFrame.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SilverCraft.CSCore.Tags.ID3.Frames.BinaryFrame",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SilverCraft.CSCore.Tags.ID3.Frames.CommentAndLyricsFrame.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SilverCraft.CSCore.Tags.ID3.Frames.CommentAndLyricsFrame.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SilverCraft.CSCore.Tags.ID3.Frames.CommentAndLyricsFrame",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SilverCraft.CSCore.Tags.ID3.Frames.CommercialFrame.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SilverCraft.CSCore.Tags.ID3.Frames.CommercialFrame.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SilverCraft.CSCore.Tags.ID3.Frames.CommercialFrame",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SilverCraft.CSCore.Tags.ID3.Frames.DataFrame.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SilverCraft.CSCore.Tags.ID3.Frames.DataFrame.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SilverCraft.CSCore.Tags.ID3.Frames.DataFrame",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SilverCraft.CSCore.Tags.ID3.Frames.Frame.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SilverCraft.CSCore.Tags.ID3.Frames.Frame.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SilverCraft.CSCore.Tags.ID3.Frames.Frame",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SilverCraft.CSCore.Tags.ID3.Frames.FrameFactory.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SilverCraft.CSCore.Tags.ID3.Frames.FrameFactory.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SilverCraft.CSCore.Tags.ID3.Frames.FrameFactory",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SilverCraft.CSCore.Tags.ID3.Frames.FrameFlags.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SilverCraft.CSCore.Tags.ID3.Frames.FrameFlags.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SilverCraft.CSCore.Tags.ID3.Frames.FrameFlags",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SilverCraft.CSCore.Tags.ID3.Frames.FrameHeader.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SilverCraft.CSCore.Tags.ID3.Frames.FrameHeader.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SilverCraft.CSCore.Tags.ID3.Frames.FrameHeader",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SilverCraft.CSCore.Tags.ID3.Frames.FrameID.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SilverCraft.CSCore.Tags.ID3.Frames.FrameID.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SilverCraft.CSCore.Tags.ID3.Frames.FrameID",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SilverCraft.CSCore.Tags.ID3.Frames.FrameIDFactory.ID3v2FrameEntry.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SilverCraft.CSCore.Tags.ID3.Frames.FrameIDFactory.ID3v2FrameEntry.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SilverCraft.CSCore.Tags.ID3.Frames.FrameIDFactory.ID3v2FrameEntry",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SilverCraft.CSCore.Tags.ID3.Frames.FrameIDFactory.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SilverCraft.CSCore.Tags.ID3.Frames.FrameIDFactory.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SilverCraft.CSCore.Tags.ID3.Frames.FrameIDFactory",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SilverCraft.CSCore.Tags.ID3.Frames.MultiStringTextFrame.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SilverCraft.CSCore.Tags.ID3.Frames.MultiStringTextFrame.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SilverCraft.CSCore.Tags.ID3.Frames.MultiStringTextFrame",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SilverCraft.CSCore.Tags.ID3.Frames.NumericTextFrame.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SilverCraft.CSCore.Tags.ID3.Frames.NumericTextFrame.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SilverCraft.CSCore.Tags.ID3.Frames.NumericTextFrame",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SilverCraft.CSCore.Tags.ID3.Frames.OwnershipFrame.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SilverCraft.CSCore.Tags.ID3.Frames.OwnershipFrame.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SilverCraft.CSCore.Tags.ID3.Frames.OwnershipFrame",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SilverCraft.CSCore.Tags.ID3.Frames.PictureFormat.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SilverCraft.CSCore.Tags.ID3.Frames.PictureFormat.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SilverCraft.CSCore.Tags.ID3.Frames.PictureFormat",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SilverCraft.CSCore.Tags.ID3.Frames.PictureFrame.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SilverCraft.CSCore.Tags.ID3.Frames.PictureFrame.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SilverCraft.CSCore.Tags.ID3.Frames.PictureFrame",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SilverCraft.CSCore.Tags.ID3.Frames.Popularimeter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SilverCraft.CSCore.Tags.ID3.Frames.Popularimeter.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SilverCraft.CSCore.Tags.ID3.Frames.Popularimeter",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SilverCraft.CSCore.Tags.ID3.Frames.ReceivedType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SilverCraft.CSCore.Tags.ID3.Frames.ReceivedType.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SilverCraft.CSCore.Tags.ID3.Frames.ReceivedType",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SilverCraft.CSCore.Tags.ID3.Frames.TermsOfUseFrame.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SilverCraft.CSCore.Tags.ID3.Frames.TermsOfUseFrame.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SilverCraft.CSCore.Tags.ID3.Frames.TermsOfUseFrame",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SilverCraft.CSCore.Tags.ID3.Frames.TextFrame.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SilverCraft.CSCore.Tags.ID3.Frames.TextFrame.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SilverCraft.CSCore.Tags.ID3.Frames.TextFrame",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SilverCraft.CSCore.Tags.ID3.Frames.TimestampTextFrame.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SilverCraft.CSCore.Tags.ID3.Frames.TimestampTextFrame.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SilverCraft.CSCore.Tags.ID3.Frames.TimestampTextFrame",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SilverCraft.CSCore.Tags.ID3.Frames.UserDefiniedTextFrame.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SilverCraft.CSCore.Tags.ID3.Frames.UserDefiniedTextFrame.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SilverCraft.CSCore.Tags.ID3.Frames.UserDefiniedTextFrame",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SilverCraft.CSCore.Tags.ID3.Frames.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SilverCraft.CSCore.Tags.ID3.Frames.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SilverCraft.CSCore.Tags.ID3.Frames",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SilverCraft.CSCore.Tags.ID3.ID3Exception.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SilverCraft.CSCore.Tags.ID3.ID3Exception.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SilverCraft.CSCore.Tags.ID3.ID3Exception",
+      "Summary": "<p sourcefile=\"api/SilverCraft.CSCore.Tags.ID3.ID3Exception.yml\" sourcestartlinenumber=\"1\">Exception class for all ID3-Tag related Exceptions.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SilverCraft.CSCore.Tags.ID3.ID3Genre.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SilverCraft.CSCore.Tags.ID3.ID3Genre.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SilverCraft.CSCore.Tags.ID3.ID3Genre",
+      "Summary": "<p sourcefile=\"api/SilverCraft.CSCore.Tags.ID3.ID3Genre.yml\" sourcestartlinenumber=\"1\">Represents a list of common ID3v1 genre tags used in media files.\n<a href=\"https://en.wikipedia.org/wiki/List_of_ID3v1_genres\" sourcefile=\"api/SilverCraft.CSCore.Tags.ID3.ID3Genre.yml\" sourcestartlinenumber=\"2\">https://en.wikipedia.org/wiki/List_of_ID3v1_genres</a></p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SilverCraft.CSCore.Tags.ID3.ID3Version.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SilverCraft.CSCore.Tags.ID3.ID3Version.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SilverCraft.CSCore.Tags.ID3.ID3Version",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SilverCraft.CSCore.Tags.ID3.ID3v1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SilverCraft.CSCore.Tags.ID3.ID3v1.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SilverCraft.CSCore.Tags.ID3.ID3v1",
+      "Summary": "<p sourcefile=\"api/SilverCraft.CSCore.Tags.ID3.ID3v1.yml\" sourcestartlinenumber=\"1\">Represents an ID3v1 tag structure used in audio files.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SilverCraft.CSCore.Tags.ID3.ID3v2.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SilverCraft.CSCore.Tags.ID3.ID3v2.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SilverCraft.CSCore.Tags.ID3.ID3v2",
+      "Summary": "<p sourcefile=\"api/SilverCraft.CSCore.Tags.ID3.ID3v2.yml\" sourcestartlinenumber=\"1\">Represents an ID3v2 tag structure, providing access to headers, footers, metadata frames, and other components of an audio file container.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SilverCraft.CSCore.Tags.ID3.ID3v2ExtendedHeader.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SilverCraft.CSCore.Tags.ID3.ID3v2ExtendedHeader.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SilverCraft.CSCore.Tags.ID3.ID3v2ExtendedHeader",
+      "Summary": "<p sourcefile=\"api/SilverCraft.CSCore.Tags.ID3.ID3v2ExtendedHeader.yml\" sourcestartlinenumber=\"1\">Represents the extended header section found in ID3v2 tags.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SilverCraft.CSCore.Tags.ID3.ID3v2ExtendedHeaderFlags.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SilverCraft.CSCore.Tags.ID3.ID3v2ExtendedHeaderFlags.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SilverCraft.CSCore.Tags.ID3.ID3v2ExtendedHeaderFlags",
+      "Summary": "<p sourcefile=\"api/SilverCraft.CSCore.Tags.ID3.ID3v2ExtendedHeaderFlags.yml\" sourcestartlinenumber=\"1\">Flags indicating various options and restrictions found in the extended header section of an ID3v2 tag.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SilverCraft.CSCore.Tags.ID3.ID3v2Footer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SilverCraft.CSCore.Tags.ID3.ID3v2Footer.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SilverCraft.CSCore.Tags.ID3.ID3v2Footer",
+      "Summary": "<p sourcefile=\"api/SilverCraft.CSCore.Tags.ID3.ID3v2Footer.yml\" sourcestartlinenumber=\"1\">Represents the footer section of an ID3v2 tag structure, typically located at the end of the file data.\nThis footer contains metadata about the overall size and versioning information for the tag.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SilverCraft.CSCore.Tags.ID3.ID3v2Header.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SilverCraft.CSCore.Tags.ID3.ID3v2Header.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SilverCraft.CSCore.Tags.ID3.ID3v2Header",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SilverCraft.CSCore.Tags.ID3.ID3v2HeaderFlags.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SilverCraft.CSCore.Tags.ID3.ID3v2HeaderFlags.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SilverCraft.CSCore.Tags.ID3.ID3v2HeaderFlags",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SilverCraft.CSCore.Tags.ID3.ID3v2ImageEncodingRestriction.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SilverCraft.CSCore.Tags.ID3.ID3v2ImageEncodingRestriction.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SilverCraft.CSCore.Tags.ID3.ID3v2ImageEncodingRestriction",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SilverCraft.CSCore.Tags.ID3.ID3v2ImageSizeRestriction.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SilverCraft.CSCore.Tags.ID3.ID3v2ImageSizeRestriction.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SilverCraft.CSCore.Tags.ID3.ID3v2ImageSizeRestriction",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SilverCraft.CSCore.Tags.ID3.ID3v2QuickInfo.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SilverCraft.CSCore.Tags.ID3.ID3v2QuickInfo.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SilverCraft.CSCore.Tags.ID3.ID3v2QuickInfo",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SilverCraft.CSCore.Tags.ID3.ID3v2TagSizeRestriction.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SilverCraft.CSCore.Tags.ID3.ID3v2TagSizeRestriction.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SilverCraft.CSCore.Tags.ID3.ID3v2TagSizeRestriction",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SilverCraft.CSCore.Tags.ID3.ID3v2TextEncodingRestriction.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SilverCraft.CSCore.Tags.ID3.ID3v2TextEncodingRestriction.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SilverCraft.CSCore.Tags.ID3.ID3v2TextEncodingRestriction",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SilverCraft.CSCore.Tags.ID3.ID3v2TextFieldSizeRestriction.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SilverCraft.CSCore.Tags.ID3.ID3v2TextFieldSizeRestriction.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SilverCraft.CSCore.Tags.ID3.ID3v2TextFieldSizeRestriction",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SilverCraft.CSCore.Tags.ID3.UnsyncStream.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SilverCraft.CSCore.Tags.ID3.UnsyncStream.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SilverCraft.CSCore.Tags.ID3.UnsyncStream",
+      "Summary": "<p sourcefile=\"api/SilverCraft.CSCore.Tags.ID3.UnsyncStream.yml\" sourcestartlinenumber=\"1\">Provides a stream wrapper that reads bytes from an underlying stream while handling specific &quot;unsync&quot; byte sequences.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SilverCraft.CSCore.Tags.ID3.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SilverCraft.CSCore.Tags.ID3.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SilverCraft.CSCore.Tags.ID3",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SilverCraft.CSCore.TimeConverter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SilverCraft.CSCore.TimeConverter.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SilverCraft.CSCore.TimeConverter",
+      "Summary": "<p sourcefile=\"api/SilverCraft.CSCore.TimeConverter.yml\" sourcestartlinenumber=\"1\">Defines a base class for all time converts. A time converter can be used to convert raw positions (depending on the implementation i.e. bytes or samples) to a human\nreadable <xref href=\"System.TimeSpan\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SilverCraft.CSCore.TimeConverterAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SilverCraft.CSCore.TimeConverterAttribute.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SilverCraft.CSCore.TimeConverterAttribute",
+      "Summary": "<p sourcefile=\"api/SilverCraft.CSCore.TimeConverterAttribute.yml\" sourcestartlinenumber=\"1\">Specifies which <xref href=\"SilverCraft.CSCore.TimeConverter\" data-throw-if-not-resolved=\"false\"></xref> to use.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SilverCraft.CSCore.TimeConverterFactory.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SilverCraft.CSCore.TimeConverterFactory.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SilverCraft.CSCore.TimeConverterFactory",
+      "Summary": "<p sourcefile=\"api/SilverCraft.CSCore.TimeConverterFactory.yml\" sourcestartlinenumber=\"1\">Provides <xref href=\"SilverCraft.CSCore.TimeConverter\" data-throw-if-not-resolved=\"false\"></xref>s for converting raw time values (e.g. bytes, samples,...) to a <xref href=\"System.TimeSpan\" data-throw-if-not-resolved=\"false\"></xref> and back.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SilverCraft.CSCore.Utils.Buffer.FixedSizeBuffer-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SilverCraft.CSCore.Utils.Buffer.FixedSizeBuffer-1.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SilverCraft.CSCore.Utils.Buffer.FixedSizeBuffer<T>",
+      "Summary": "<p sourcefile=\"api/SilverCraft.CSCore.Utils.Buffer.FixedSizeBuffer-1.yml\" sourcestartlinenumber=\"1\">Represents a read- and writeable buffer which can hold a specified number of elements.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SilverCraft.CSCore.Utils.Buffer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SilverCraft.CSCore.Utils.Buffer.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SilverCraft.CSCore.Utils.Buffer",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SilverCraft.CSCore.Utils.Complex.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SilverCraft.CSCore.Utils.Complex.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SilverCraft.CSCore.Utils.Complex",
+      "Summary": "<p sourcefile=\"api/SilverCraft.CSCore.Utils.Complex.yml\" sourcestartlinenumber=\"1\">Represents a complex number.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SilverCraft.CSCore.Utils.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SilverCraft.CSCore.Utils.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SilverCraft.CSCore.Utils",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SilverCraft.CSCore.WaveAggregatorBase.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SilverCraft.CSCore.WaveAggregatorBase.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SilverCraft.CSCore.WaveAggregatorBase",
+      "Summary": "<p sourcefile=\"api/SilverCraft.CSCore.WaveAggregatorBase.yml\" sourcestartlinenumber=\"1\">Base class for all wave aggregators.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SilverCraft.CSCore.WaveFormat.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SilverCraft.CSCore.WaveFormat.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SilverCraft.CSCore.WaveFormat",
+      "Summary": "<p sourcefile=\"api/SilverCraft.CSCore.WaveFormat.yml\" sourcestartlinenumber=\"1\">Defines the format of waveform-audio data.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SilverCraft.CSCore.WaveFormatExtensible.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SilverCraft.CSCore.WaveFormatExtensible.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SilverCraft.CSCore.WaveFormatExtensible",
+      "Summary": "<p sourcefile=\"api/SilverCraft.CSCore.WaveFormatExtensible.yml\" sourcestartlinenumber=\"1\">Defines the format of waveform-audio data for formats having more than two channels or higher sample resolutions\nthan allowed by <xref href=\"SilverCraft.CSCore.WaveFormat\" data-throw-if-not-resolved=\"false\"></xref>.\nCan be used to define any format that can be defined by <xref href=\"SilverCraft.CSCore.WaveFormat\" data-throw-if-not-resolved=\"false\"></xref>.\nFor more information see <a href=\"http://msdn.microsoft.com/en-us/library/windows/hardware/gg463006.aspx\">http://msdn.microsoft.com/en-us/library/windows/hardware/gg463006.aspx</a> and\n<a href=\"http://msdn.microsoft.com/en-us/library/windows/hardware/ff536383(v=vs.85).aspx\">http://msdn.microsoft.com/en-us/library/windows/hardware/ff536383(v=vs.85).aspx</a>.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SilverCraft.CSCore.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SilverCraft.CSCore.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SilverCraft.CSCore",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/sndfile.Methods.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/sndfile.Methods.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "sndfile.Methods",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/sndfile.Mode.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/sndfile.Mode.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "sndfile.Mode",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/sndfile.SF_BROADCAST_INFO.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/sndfile.SF_BROADCAST_INFO.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "sndfile.SF_BROADCAST_INFO",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/sndfile.SF_CART_INFO._post_timers_e__FixedBuffer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/sndfile.SF_CART_INFO._post_timers_e__FixedBuffer.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "sndfile.SF_CART_INFO._post_timers_e__FixedBuffer",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/sndfile.SF_CART_INFO.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/sndfile.SF_CART_INFO.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "sndfile.SF_CART_INFO",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/sndfile.SF_CART_TIMER.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/sndfile.SF_CART_TIMER.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "sndfile.SF_CART_TIMER",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/sndfile.SF_CHUNK_INFO.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/sndfile.SF_CHUNK_INFO.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "sndfile.SF_CHUNK_INFO",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/sndfile.SF_CUES._cue_points_e__FixedBuffer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/sndfile.SF_CUES._cue_points_e__FixedBuffer.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "sndfile.SF_CUES._cue_points_e__FixedBuffer",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/sndfile.SF_CUES.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/sndfile.SF_CUES.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "sndfile.SF_CUES",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/sndfile.SF_CUE_POINT.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/sndfile.SF_CUE_POINT.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "sndfile.SF_CUE_POINT",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/sndfile.SF_DITHER_INFO.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/sndfile.SF_DITHER_INFO.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "sndfile.SF_DITHER_INFO",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/sndfile.SF_EMBED_FILE_INFO.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/sndfile.SF_EMBED_FILE_INFO.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "sndfile.SF_EMBED_FILE_INFO",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/sndfile.SF_FORMAT_INFO.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/sndfile.SF_FORMAT_INFO.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "sndfile.SF_FORMAT_INFO",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/sndfile.SF_INFO.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/sndfile.SF_INFO.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "sndfile.SF_INFO",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/sndfile.SF_INSTRUMENT._Anonymous_e__Struct.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/sndfile.SF_INSTRUMENT._Anonymous_e__Struct.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "sndfile.SF_INSTRUMENT._Anonymous_e__Struct",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/sndfile.SF_INSTRUMENT._loops_e__FixedBuffer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/sndfile.SF_INSTRUMENT._loops_e__FixedBuffer.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "sndfile.SF_INSTRUMENT._loops_e__FixedBuffer",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/sndfile.SF_INSTRUMENT.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/sndfile.SF_INSTRUMENT.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "sndfile.SF_INSTRUMENT",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/sndfile.SF_LOOP_INFO.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/sndfile.SF_LOOP_INFO.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "sndfile.SF_LOOP_INFO",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/sndfile.SF_VIRTUAL_IO.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/sndfile.SF_VIRTUAL_IO.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "sndfile.SF_VIRTUAL_IO",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/sndfile.SfVirtualLength.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/sndfile.SfVirtualLength.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "sndfile.SfVirtualLength",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/sndfile.SfVirtualRead.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/sndfile.SfVirtualRead.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "sndfile.SfVirtualRead",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/sndfile.SfVirtualSeek.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/sndfile.SfVirtualSeek.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "sndfile.SfVirtualSeek",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/sndfile.SfVirtualStreamHelper.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/sndfile.SfVirtualStreamHelper.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "sndfile.SfVirtualStreamHelper",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/sndfile.SfVirtualTell.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/sndfile.SfVirtualTell.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "sndfile.SfVirtualTell",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/sndfile.SfVirtualWrite.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/sndfile.SfVirtualWrite.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "sndfile.SfVirtualWrite",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/sndfile.Whence.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/sndfile.Whence.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "sndfile.Whence",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/sndfile.sf_private_tag.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/sndfile.sf_private_tag.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "sndfile.sf_private_tag",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/sndfile.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/sndfile.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "sndfile",
+      "Summary": null
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "api/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/toc.html"
+        },
+        ".json": {
+          "relative_path": "api/toc.json"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/getting-started.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/getting-started.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "docs/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "docs/toc.html"
+        },
+        ".json": {
+          "relative_path": "docs/toc.json"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/cscore-square-notext.svg",
+      "output": {
+        "resource": {
+          "relative_path": "images/cscore-square-notext.svg"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/cscore-square.svg",
+      "output": {
+        "resource": {
+          "relative_path": "images/cscore-square.svg"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/cscore.svg",
+      "output": {
+        "resource": {
+          "relative_path": "images/cscore.svg"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "index.md",
+      "output": {
+        ".html": {
+          "relative_path": "index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "toc.html"
+        },
+        ".json": {
+          "relative_path": "toc.json"
+        }
+      },
+      "version": ""
+    }
+  ],
+  "groups": [
+    {
+      "xrefmap": "xrefmap.yml"
+    }
+  ]
+}

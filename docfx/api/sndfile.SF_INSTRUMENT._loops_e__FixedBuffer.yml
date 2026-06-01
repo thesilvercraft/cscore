@@ -1,0 +1,909 @@
+### YamlMime:ManagedReference
+items:
+- uid: sndfile.SF_INSTRUMENT._loops_e__FixedBuffer
+  commentId: T:sndfile.SF_INSTRUMENT._loops_e__FixedBuffer
+  id: SF_INSTRUMENT._loops_e__FixedBuffer
+  parent: sndfile
+  children:
+  - sndfile.SF_INSTRUMENT._loops_e__FixedBuffer.AsSpan
+  - sndfile.SF_INSTRUMENT._loops_e__FixedBuffer.Item(System.Int32)
+  - sndfile.SF_INSTRUMENT._loops_e__FixedBuffer.e0
+  - sndfile.SF_INSTRUMENT._loops_e__FixedBuffer.e1
+  - sndfile.SF_INSTRUMENT._loops_e__FixedBuffer.e10
+  - sndfile.SF_INSTRUMENT._loops_e__FixedBuffer.e11
+  - sndfile.SF_INSTRUMENT._loops_e__FixedBuffer.e12
+  - sndfile.SF_INSTRUMENT._loops_e__FixedBuffer.e13
+  - sndfile.SF_INSTRUMENT._loops_e__FixedBuffer.e14
+  - sndfile.SF_INSTRUMENT._loops_e__FixedBuffer.e15
+  - sndfile.SF_INSTRUMENT._loops_e__FixedBuffer.e2
+  - sndfile.SF_INSTRUMENT._loops_e__FixedBuffer.e3
+  - sndfile.SF_INSTRUMENT._loops_e__FixedBuffer.e4
+  - sndfile.SF_INSTRUMENT._loops_e__FixedBuffer.e5
+  - sndfile.SF_INSTRUMENT._loops_e__FixedBuffer.e6
+  - sndfile.SF_INSTRUMENT._loops_e__FixedBuffer.e7
+  - sndfile.SF_INSTRUMENT._loops_e__FixedBuffer.e8
+  - sndfile.SF_INSTRUMENT._loops_e__FixedBuffer.e9
+  langs:
+  - csharp
+  - vb
+  name: SF_INSTRUMENT._loops_e__FixedBuffer
+  nameWithType: SF_INSTRUMENT._loops_e__FixedBuffer
+  fullName: sndfile.SF_INSTRUMENT._loops_e__FixedBuffer
+  type: Struct
+  source:
+    remote:
+      path: SilverCraft.SndFile/Native/SF_INSTRUMENT.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: _loops_e__FixedBuffer
+    path: ../SilverCraft.SndFile/Native/SF_INSTRUMENT.cs
+    startLine: 48
+  assemblies:
+  - SilverCraft.CSCore.SndFile
+  namespace: sndfile
+  syntax:
+    content: public struct SF_INSTRUMENT._loops_e__FixedBuffer
+    content.vb: Public Structure SF_INSTRUMENT._loops_e__FixedBuffer
+  inheritedMembers:
+  - System.ValueType.Equals(System.Object)
+  - System.ValueType.GetHashCode
+  - System.ValueType.ToString
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetType
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+- uid: sndfile.SF_INSTRUMENT._loops_e__FixedBuffer.e0
+  commentId: F:sndfile.SF_INSTRUMENT._loops_e__FixedBuffer.e0
+  id: e0
+  parent: sndfile.SF_INSTRUMENT._loops_e__FixedBuffer
+  langs:
+  - csharp
+  - vb
+  name: e0
+  nameWithType: SF_INSTRUMENT._loops_e__FixedBuffer.e0
+  fullName: sndfile.SF_INSTRUMENT._loops_e__FixedBuffer.e0
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.SndFile/Native/SF_INSTRUMENT.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: e0
+    path: ../SilverCraft.SndFile/Native/SF_INSTRUMENT.cs
+    startLine: 50
+  assemblies:
+  - SilverCraft.CSCore.SndFile
+  namespace: sndfile
+  syntax:
+    content: public SF_INSTRUMENT._Anonymous_e__Struct e0
+    return:
+      type: sndfile.SF_INSTRUMENT._Anonymous_e__Struct
+    content.vb: Public e0 As SF_INSTRUMENT._Anonymous_e__Struct
+- uid: sndfile.SF_INSTRUMENT._loops_e__FixedBuffer.e1
+  commentId: F:sndfile.SF_INSTRUMENT._loops_e__FixedBuffer.e1
+  id: e1
+  parent: sndfile.SF_INSTRUMENT._loops_e__FixedBuffer
+  langs:
+  - csharp
+  - vb
+  name: e1
+  nameWithType: SF_INSTRUMENT._loops_e__FixedBuffer.e1
+  fullName: sndfile.SF_INSTRUMENT._loops_e__FixedBuffer.e1
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.SndFile/Native/SF_INSTRUMENT.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: e1
+    path: ../SilverCraft.SndFile/Native/SF_INSTRUMENT.cs
+    startLine: 51
+  assemblies:
+  - SilverCraft.CSCore.SndFile
+  namespace: sndfile
+  syntax:
+    content: public SF_INSTRUMENT._Anonymous_e__Struct e1
+    return:
+      type: sndfile.SF_INSTRUMENT._Anonymous_e__Struct
+    content.vb: Public e1 As SF_INSTRUMENT._Anonymous_e__Struct
+- uid: sndfile.SF_INSTRUMENT._loops_e__FixedBuffer.e2
+  commentId: F:sndfile.SF_INSTRUMENT._loops_e__FixedBuffer.e2
+  id: e2
+  parent: sndfile.SF_INSTRUMENT._loops_e__FixedBuffer
+  langs:
+  - csharp
+  - vb
+  name: e2
+  nameWithType: SF_INSTRUMENT._loops_e__FixedBuffer.e2
+  fullName: sndfile.SF_INSTRUMENT._loops_e__FixedBuffer.e2
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.SndFile/Native/SF_INSTRUMENT.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: e2
+    path: ../SilverCraft.SndFile/Native/SF_INSTRUMENT.cs
+    startLine: 52
+  assemblies:
+  - SilverCraft.CSCore.SndFile
+  namespace: sndfile
+  syntax:
+    content: public SF_INSTRUMENT._Anonymous_e__Struct e2
+    return:
+      type: sndfile.SF_INSTRUMENT._Anonymous_e__Struct
+    content.vb: Public e2 As SF_INSTRUMENT._Anonymous_e__Struct
+- uid: sndfile.SF_INSTRUMENT._loops_e__FixedBuffer.e3
+  commentId: F:sndfile.SF_INSTRUMENT._loops_e__FixedBuffer.e3
+  id: e3
+  parent: sndfile.SF_INSTRUMENT._loops_e__FixedBuffer
+  langs:
+  - csharp
+  - vb
+  name: e3
+  nameWithType: SF_INSTRUMENT._loops_e__FixedBuffer.e3
+  fullName: sndfile.SF_INSTRUMENT._loops_e__FixedBuffer.e3
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.SndFile/Native/SF_INSTRUMENT.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: e3
+    path: ../SilverCraft.SndFile/Native/SF_INSTRUMENT.cs
+    startLine: 53
+  assemblies:
+  - SilverCraft.CSCore.SndFile
+  namespace: sndfile
+  syntax:
+    content: public SF_INSTRUMENT._Anonymous_e__Struct e3
+    return:
+      type: sndfile.SF_INSTRUMENT._Anonymous_e__Struct
+    content.vb: Public e3 As SF_INSTRUMENT._Anonymous_e__Struct
+- uid: sndfile.SF_INSTRUMENT._loops_e__FixedBuffer.e4
+  commentId: F:sndfile.SF_INSTRUMENT._loops_e__FixedBuffer.e4
+  id: e4
+  parent: sndfile.SF_INSTRUMENT._loops_e__FixedBuffer
+  langs:
+  - csharp
+  - vb
+  name: e4
+  nameWithType: SF_INSTRUMENT._loops_e__FixedBuffer.e4
+  fullName: sndfile.SF_INSTRUMENT._loops_e__FixedBuffer.e4
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.SndFile/Native/SF_INSTRUMENT.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: e4
+    path: ../SilverCraft.SndFile/Native/SF_INSTRUMENT.cs
+    startLine: 54
+  assemblies:
+  - SilverCraft.CSCore.SndFile
+  namespace: sndfile
+  syntax:
+    content: public SF_INSTRUMENT._Anonymous_e__Struct e4
+    return:
+      type: sndfile.SF_INSTRUMENT._Anonymous_e__Struct
+    content.vb: Public e4 As SF_INSTRUMENT._Anonymous_e__Struct
+- uid: sndfile.SF_INSTRUMENT._loops_e__FixedBuffer.e5
+  commentId: F:sndfile.SF_INSTRUMENT._loops_e__FixedBuffer.e5
+  id: e5
+  parent: sndfile.SF_INSTRUMENT._loops_e__FixedBuffer
+  langs:
+  - csharp
+  - vb
+  name: e5
+  nameWithType: SF_INSTRUMENT._loops_e__FixedBuffer.e5
+  fullName: sndfile.SF_INSTRUMENT._loops_e__FixedBuffer.e5
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.SndFile/Native/SF_INSTRUMENT.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: e5
+    path: ../SilverCraft.SndFile/Native/SF_INSTRUMENT.cs
+    startLine: 55
+  assemblies:
+  - SilverCraft.CSCore.SndFile
+  namespace: sndfile
+  syntax:
+    content: public SF_INSTRUMENT._Anonymous_e__Struct e5
+    return:
+      type: sndfile.SF_INSTRUMENT._Anonymous_e__Struct
+    content.vb: Public e5 As SF_INSTRUMENT._Anonymous_e__Struct
+- uid: sndfile.SF_INSTRUMENT._loops_e__FixedBuffer.e6
+  commentId: F:sndfile.SF_INSTRUMENT._loops_e__FixedBuffer.e6
+  id: e6
+  parent: sndfile.SF_INSTRUMENT._loops_e__FixedBuffer
+  langs:
+  - csharp
+  - vb
+  name: e6
+  nameWithType: SF_INSTRUMENT._loops_e__FixedBuffer.e6
+  fullName: sndfile.SF_INSTRUMENT._loops_e__FixedBuffer.e6
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.SndFile/Native/SF_INSTRUMENT.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: e6
+    path: ../SilverCraft.SndFile/Native/SF_INSTRUMENT.cs
+    startLine: 56
+  assemblies:
+  - SilverCraft.CSCore.SndFile
+  namespace: sndfile
+  syntax:
+    content: public SF_INSTRUMENT._Anonymous_e__Struct e6
+    return:
+      type: sndfile.SF_INSTRUMENT._Anonymous_e__Struct
+    content.vb: Public e6 As SF_INSTRUMENT._Anonymous_e__Struct
+- uid: sndfile.SF_INSTRUMENT._loops_e__FixedBuffer.e7
+  commentId: F:sndfile.SF_INSTRUMENT._loops_e__FixedBuffer.e7
+  id: e7
+  parent: sndfile.SF_INSTRUMENT._loops_e__FixedBuffer
+  langs:
+  - csharp
+  - vb
+  name: e7
+  nameWithType: SF_INSTRUMENT._loops_e__FixedBuffer.e7
+  fullName: sndfile.SF_INSTRUMENT._loops_e__FixedBuffer.e7
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.SndFile/Native/SF_INSTRUMENT.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: e7
+    path: ../SilverCraft.SndFile/Native/SF_INSTRUMENT.cs
+    startLine: 57
+  assemblies:
+  - SilverCraft.CSCore.SndFile
+  namespace: sndfile
+  syntax:
+    content: public SF_INSTRUMENT._Anonymous_e__Struct e7
+    return:
+      type: sndfile.SF_INSTRUMENT._Anonymous_e__Struct
+    content.vb: Public e7 As SF_INSTRUMENT._Anonymous_e__Struct
+- uid: sndfile.SF_INSTRUMENT._loops_e__FixedBuffer.e8
+  commentId: F:sndfile.SF_INSTRUMENT._loops_e__FixedBuffer.e8
+  id: e8
+  parent: sndfile.SF_INSTRUMENT._loops_e__FixedBuffer
+  langs:
+  - csharp
+  - vb
+  name: e8
+  nameWithType: SF_INSTRUMENT._loops_e__FixedBuffer.e8
+  fullName: sndfile.SF_INSTRUMENT._loops_e__FixedBuffer.e8
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.SndFile/Native/SF_INSTRUMENT.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: e8
+    path: ../SilverCraft.SndFile/Native/SF_INSTRUMENT.cs
+    startLine: 58
+  assemblies:
+  - SilverCraft.CSCore.SndFile
+  namespace: sndfile
+  syntax:
+    content: public SF_INSTRUMENT._Anonymous_e__Struct e8
+    return:
+      type: sndfile.SF_INSTRUMENT._Anonymous_e__Struct
+    content.vb: Public e8 As SF_INSTRUMENT._Anonymous_e__Struct
+- uid: sndfile.SF_INSTRUMENT._loops_e__FixedBuffer.e9
+  commentId: F:sndfile.SF_INSTRUMENT._loops_e__FixedBuffer.e9
+  id: e9
+  parent: sndfile.SF_INSTRUMENT._loops_e__FixedBuffer
+  langs:
+  - csharp
+  - vb
+  name: e9
+  nameWithType: SF_INSTRUMENT._loops_e__FixedBuffer.e9
+  fullName: sndfile.SF_INSTRUMENT._loops_e__FixedBuffer.e9
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.SndFile/Native/SF_INSTRUMENT.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: e9
+    path: ../SilverCraft.SndFile/Native/SF_INSTRUMENT.cs
+    startLine: 59
+  assemblies:
+  - SilverCraft.CSCore.SndFile
+  namespace: sndfile
+  syntax:
+    content: public SF_INSTRUMENT._Anonymous_e__Struct e9
+    return:
+      type: sndfile.SF_INSTRUMENT._Anonymous_e__Struct
+    content.vb: Public e9 As SF_INSTRUMENT._Anonymous_e__Struct
+- uid: sndfile.SF_INSTRUMENT._loops_e__FixedBuffer.e10
+  commentId: F:sndfile.SF_INSTRUMENT._loops_e__FixedBuffer.e10
+  id: e10
+  parent: sndfile.SF_INSTRUMENT._loops_e__FixedBuffer
+  langs:
+  - csharp
+  - vb
+  name: e10
+  nameWithType: SF_INSTRUMENT._loops_e__FixedBuffer.e10
+  fullName: sndfile.SF_INSTRUMENT._loops_e__FixedBuffer.e10
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.SndFile/Native/SF_INSTRUMENT.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: e10
+    path: ../SilverCraft.SndFile/Native/SF_INSTRUMENT.cs
+    startLine: 60
+  assemblies:
+  - SilverCraft.CSCore.SndFile
+  namespace: sndfile
+  syntax:
+    content: public SF_INSTRUMENT._Anonymous_e__Struct e10
+    return:
+      type: sndfile.SF_INSTRUMENT._Anonymous_e__Struct
+    content.vb: Public e10 As SF_INSTRUMENT._Anonymous_e__Struct
+- uid: sndfile.SF_INSTRUMENT._loops_e__FixedBuffer.e11
+  commentId: F:sndfile.SF_INSTRUMENT._loops_e__FixedBuffer.e11
+  id: e11
+  parent: sndfile.SF_INSTRUMENT._loops_e__FixedBuffer
+  langs:
+  - csharp
+  - vb
+  name: e11
+  nameWithType: SF_INSTRUMENT._loops_e__FixedBuffer.e11
+  fullName: sndfile.SF_INSTRUMENT._loops_e__FixedBuffer.e11
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.SndFile/Native/SF_INSTRUMENT.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: e11
+    path: ../SilverCraft.SndFile/Native/SF_INSTRUMENT.cs
+    startLine: 61
+  assemblies:
+  - SilverCraft.CSCore.SndFile
+  namespace: sndfile
+  syntax:
+    content: public SF_INSTRUMENT._Anonymous_e__Struct e11
+    return:
+      type: sndfile.SF_INSTRUMENT._Anonymous_e__Struct
+    content.vb: Public e11 As SF_INSTRUMENT._Anonymous_e__Struct
+- uid: sndfile.SF_INSTRUMENT._loops_e__FixedBuffer.e12
+  commentId: F:sndfile.SF_INSTRUMENT._loops_e__FixedBuffer.e12
+  id: e12
+  parent: sndfile.SF_INSTRUMENT._loops_e__FixedBuffer
+  langs:
+  - csharp
+  - vb
+  name: e12
+  nameWithType: SF_INSTRUMENT._loops_e__FixedBuffer.e12
+  fullName: sndfile.SF_INSTRUMENT._loops_e__FixedBuffer.e12
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.SndFile/Native/SF_INSTRUMENT.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: e12
+    path: ../SilverCraft.SndFile/Native/SF_INSTRUMENT.cs
+    startLine: 62
+  assemblies:
+  - SilverCraft.CSCore.SndFile
+  namespace: sndfile
+  syntax:
+    content: public SF_INSTRUMENT._Anonymous_e__Struct e12
+    return:
+      type: sndfile.SF_INSTRUMENT._Anonymous_e__Struct
+    content.vb: Public e12 As SF_INSTRUMENT._Anonymous_e__Struct
+- uid: sndfile.SF_INSTRUMENT._loops_e__FixedBuffer.e13
+  commentId: F:sndfile.SF_INSTRUMENT._loops_e__FixedBuffer.e13
+  id: e13
+  parent: sndfile.SF_INSTRUMENT._loops_e__FixedBuffer
+  langs:
+  - csharp
+  - vb
+  name: e13
+  nameWithType: SF_INSTRUMENT._loops_e__FixedBuffer.e13
+  fullName: sndfile.SF_INSTRUMENT._loops_e__FixedBuffer.e13
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.SndFile/Native/SF_INSTRUMENT.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: e13
+    path: ../SilverCraft.SndFile/Native/SF_INSTRUMENT.cs
+    startLine: 63
+  assemblies:
+  - SilverCraft.CSCore.SndFile
+  namespace: sndfile
+  syntax:
+    content: public SF_INSTRUMENT._Anonymous_e__Struct e13
+    return:
+      type: sndfile.SF_INSTRUMENT._Anonymous_e__Struct
+    content.vb: Public e13 As SF_INSTRUMENT._Anonymous_e__Struct
+- uid: sndfile.SF_INSTRUMENT._loops_e__FixedBuffer.e14
+  commentId: F:sndfile.SF_INSTRUMENT._loops_e__FixedBuffer.e14
+  id: e14
+  parent: sndfile.SF_INSTRUMENT._loops_e__FixedBuffer
+  langs:
+  - csharp
+  - vb
+  name: e14
+  nameWithType: SF_INSTRUMENT._loops_e__FixedBuffer.e14
+  fullName: sndfile.SF_INSTRUMENT._loops_e__FixedBuffer.e14
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.SndFile/Native/SF_INSTRUMENT.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: e14
+    path: ../SilverCraft.SndFile/Native/SF_INSTRUMENT.cs
+    startLine: 64
+  assemblies:
+  - SilverCraft.CSCore.SndFile
+  namespace: sndfile
+  syntax:
+    content: public SF_INSTRUMENT._Anonymous_e__Struct e14
+    return:
+      type: sndfile.SF_INSTRUMENT._Anonymous_e__Struct
+    content.vb: Public e14 As SF_INSTRUMENT._Anonymous_e__Struct
+- uid: sndfile.SF_INSTRUMENT._loops_e__FixedBuffer.e15
+  commentId: F:sndfile.SF_INSTRUMENT._loops_e__FixedBuffer.e15
+  id: e15
+  parent: sndfile.SF_INSTRUMENT._loops_e__FixedBuffer
+  langs:
+  - csharp
+  - vb
+  name: e15
+  nameWithType: SF_INSTRUMENT._loops_e__FixedBuffer.e15
+  fullName: sndfile.SF_INSTRUMENT._loops_e__FixedBuffer.e15
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.SndFile/Native/SF_INSTRUMENT.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: e15
+    path: ../SilverCraft.SndFile/Native/SF_INSTRUMENT.cs
+    startLine: 65
+  assemblies:
+  - SilverCraft.CSCore.SndFile
+  namespace: sndfile
+  syntax:
+    content: public SF_INSTRUMENT._Anonymous_e__Struct e15
+    return:
+      type: sndfile.SF_INSTRUMENT._Anonymous_e__Struct
+    content.vb: Public e15 As SF_INSTRUMENT._Anonymous_e__Struct
+- uid: sndfile.SF_INSTRUMENT._loops_e__FixedBuffer.Item(System.Int32)
+  commentId: P:sndfile.SF_INSTRUMENT._loops_e__FixedBuffer.Item(System.Int32)
+  id: Item(System.Int32)
+  parent: sndfile.SF_INSTRUMENT._loops_e__FixedBuffer
+  langs:
+  - csharp
+  - vb
+  name: this[int]
+  nameWithType: SF_INSTRUMENT._loops_e__FixedBuffer.this[int]
+  fullName: sndfile.SF_INSTRUMENT._loops_e__FixedBuffer.this[int]
+  type: Property
+  source:
+    remote:
+      path: SilverCraft.SndFile/Native/SF_INSTRUMENT.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: this[]
+    path: ../SilverCraft.SndFile/Native/SF_INSTRUMENT.cs
+    startLine: 67
+  assemblies:
+  - SilverCraft.CSCore.SndFile
+  namespace: sndfile
+  syntax:
+    content: >-
+      [UnscopedRef]
+
+      public ref SF_INSTRUMENT._Anonymous_e__Struct this[int index] { get; }
+    parameters:
+    - id: index
+      type: System.Int32
+    return:
+      type: sndfile.SF_INSTRUMENT._Anonymous_e__Struct
+    content.vb: >-
+      <UnscopedRef>
+
+      Public ReadOnly Default ByRef Property this[](index As Integer) As SF_INSTRUMENT._Anonymous_e__Struct
+  overload: sndfile.SF_INSTRUMENT._loops_e__FixedBuffer.Item*
+  attributes:
+  - type: System.Diagnostics.CodeAnalysis.UnscopedRefAttribute
+    ctor: System.Diagnostics.CodeAnalysis.UnscopedRefAttribute.#ctor
+    arguments: []
+  nameWithType.vb: SF_INSTRUMENT._loops_e__FixedBuffer.this[](Integer)
+  fullName.vb: sndfile.SF_INSTRUMENT._loops_e__FixedBuffer.this[](Integer)
+  name.vb: this[](Integer)
+- uid: sndfile.SF_INSTRUMENT._loops_e__FixedBuffer.AsSpan
+  commentId: M:sndfile.SF_INSTRUMENT._loops_e__FixedBuffer.AsSpan
+  id: AsSpan
+  parent: sndfile.SF_INSTRUMENT._loops_e__FixedBuffer
+  langs:
+  - csharp
+  - vb
+  name: AsSpan()
+  nameWithType: SF_INSTRUMENT._loops_e__FixedBuffer.AsSpan()
+  fullName: sndfile.SF_INSTRUMENT._loops_e__FixedBuffer.AsSpan()
+  type: Method
+  source:
+    remote:
+      path: SilverCraft.SndFile/Native/SF_INSTRUMENT.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: AsSpan
+    path: ../SilverCraft.SndFile/Native/SF_INSTRUMENT.cs
+    startLine: 77
+  assemblies:
+  - SilverCraft.CSCore.SndFile
+  namespace: sndfile
+  syntax:
+    content: >-
+      [UnscopedRef]
+
+      public Span<SF_INSTRUMENT._Anonymous_e__Struct> AsSpan()
+    return:
+      type: System.Span{sndfile.SF_INSTRUMENT._Anonymous_e__Struct}
+    content.vb: >-
+      <UnscopedRef>
+
+      Public Function AsSpan() As Span(Of SF_INSTRUMENT._Anonymous_e__Struct)
+  overload: sndfile.SF_INSTRUMENT._loops_e__FixedBuffer.AsSpan*
+  attributes:
+  - type: System.Diagnostics.CodeAnalysis.UnscopedRefAttribute
+    ctor: System.Diagnostics.CodeAnalysis.UnscopedRefAttribute.#ctor
+    arguments: []
+references:
+- uid: sndfile
+  commentId: N:sndfile
+  href: sndfile.html
+  name: sndfile
+  nameWithType: sndfile
+  fullName: sndfile
+- uid: System.ValueType.Equals(System.Object)
+  commentId: M:System.ValueType.Equals(System.Object)
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  name: Equals(object)
+  nameWithType: ValueType.Equals(object)
+  fullName: System.ValueType.Equals(object)
+  nameWithType.vb: ValueType.Equals(Object)
+  fullName.vb: System.ValueType.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.ValueType.GetHashCode
+  commentId: M:System.ValueType.GetHashCode
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  name: GetHashCode()
+  nameWithType: ValueType.GetHashCode()
+  fullName: System.ValueType.GetHashCode()
+  spec.csharp:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  - name: (
+  - name: )
+- uid: System.ValueType.ToString
+  commentId: M:System.ValueType.ToString
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  name: ToString()
+  nameWithType: ValueType.ToString()
+  fullName: System.ValueType.ToString()
+  spec.csharp:
+  - uid: System.ValueType.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.ValueType
+  commentId: T:System.ValueType
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype
+  name: ValueType
+  nameWithType: ValueType
+  fullName: System.ValueType
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: sndfile.SF_INSTRUMENT._Anonymous_e__Struct
+  commentId: T:sndfile.SF_INSTRUMENT._Anonymous_e__Struct
+  parent: sndfile
+  href: sndfile.SF_INSTRUMENT.html
+  name: SF_INSTRUMENT._Anonymous_e__Struct
+  nameWithType: SF_INSTRUMENT._Anonymous_e__Struct
+  fullName: sndfile.SF_INSTRUMENT._Anonymous_e__Struct
+  spec.csharp:
+  - uid: sndfile.SF_INSTRUMENT
+    name: SF_INSTRUMENT
+    href: sndfile.SF_INSTRUMENT.html
+  - name: .
+  - uid: sndfile.SF_INSTRUMENT._Anonymous_e__Struct
+    name: _Anonymous_e__Struct
+    href: sndfile.SF_INSTRUMENT._Anonymous_e__Struct.html
+  spec.vb:
+  - uid: sndfile.SF_INSTRUMENT
+    name: SF_INSTRUMENT
+    href: sndfile.SF_INSTRUMENT.html
+  - name: .
+  - uid: sndfile.SF_INSTRUMENT._Anonymous_e__Struct
+    name: _Anonymous_e__Struct
+    href: sndfile.SF_INSTRUMENT._Anonymous_e__Struct.html
+- uid: sndfile.SF_INSTRUMENT._loops_e__FixedBuffer.Item*
+  commentId: Overload:sndfile.SF_INSTRUMENT._loops_e__FixedBuffer.Item
+  href: sndfile.SF_INSTRUMENT._loops_e__FixedBuffer.html#sndfile_SF_INSTRUMENT__loops_e__FixedBuffer_Item_System_Int32_
+  name: this
+  nameWithType: SF_INSTRUMENT._loops_e__FixedBuffer.this
+  fullName: sndfile.SF_INSTRUMENT._loops_e__FixedBuffer.this
+  nameWithType.vb: SF_INSTRUMENT._loops_e__FixedBuffer.this[]
+  fullName.vb: sndfile.SF_INSTRUMENT._loops_e__FixedBuffer.this[]
+  name.vb: this[]
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: sndfile.SF_INSTRUMENT._loops_e__FixedBuffer.AsSpan*
+  commentId: Overload:sndfile.SF_INSTRUMENT._loops_e__FixedBuffer.AsSpan
+  href: sndfile.SF_INSTRUMENT._loops_e__FixedBuffer.html#sndfile_SF_INSTRUMENT__loops_e__FixedBuffer_AsSpan
+  name: AsSpan
+  nameWithType: SF_INSTRUMENT._loops_e__FixedBuffer.AsSpan
+  fullName: sndfile.SF_INSTRUMENT._loops_e__FixedBuffer.AsSpan
+- uid: System.Span{sndfile.SF_INSTRUMENT._Anonymous_e__Struct}
+  commentId: T:System.Span{sndfile.SF_INSTRUMENT._Anonymous_e__Struct}
+  parent: System
+  definition: System.Span`1
+  href: https://learn.microsoft.com/dotnet/api/system.span-1
+  name: Span<SF_INSTRUMENT._Anonymous_e__Struct>
+  nameWithType: Span<SF_INSTRUMENT._Anonymous_e__Struct>
+  fullName: System.Span<sndfile.SF_INSTRUMENT._Anonymous_e__Struct>
+  nameWithType.vb: Span(Of SF_INSTRUMENT._Anonymous_e__Struct)
+  fullName.vb: System.Span(Of sndfile.SF_INSTRUMENT._Anonymous_e__Struct)
+  name.vb: Span(Of SF_INSTRUMENT._Anonymous_e__Struct)
+  spec.csharp:
+  - uid: System.Span`1
+    name: Span
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.span-1
+  - name: <
+  - uid: sndfile.SF_INSTRUMENT
+    name: SF_INSTRUMENT
+    href: sndfile.SF_INSTRUMENT.html
+  - name: .
+  - uid: sndfile.SF_INSTRUMENT._Anonymous_e__Struct
+    name: _Anonymous_e__Struct
+    href: sndfile.SF_INSTRUMENT._Anonymous_e__Struct.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Span`1
+    name: Span
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.span-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: sndfile.SF_INSTRUMENT
+    name: SF_INSTRUMENT
+    href: sndfile.SF_INSTRUMENT.html
+  - name: .
+  - uid: sndfile.SF_INSTRUMENT._Anonymous_e__Struct
+    name: _Anonymous_e__Struct
+    href: sndfile.SF_INSTRUMENT._Anonymous_e__Struct.html
+  - name: )
+- uid: System.Span`1
+  commentId: T:System.Span`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.span-1
+  name: Span<T>
+  nameWithType: Span<T>
+  fullName: System.Span<T>
+  nameWithType.vb: Span(Of T)
+  fullName.vb: System.Span(Of T)
+  name.vb: Span(Of T)
+  spec.csharp:
+  - uid: System.Span`1
+    name: Span
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.span-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Span`1
+    name: Span
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.span-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )

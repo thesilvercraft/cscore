@@ -1,0 +1,290 @@
+### YamlMime:ManagedReference
+items:
+- uid: sndfile
+  commentId: N:sndfile
+  id: sndfile
+  children:
+  - sndfile.Methods
+  - sndfile.Mode
+  - sndfile.SF_BROADCAST_INFO
+  - sndfile.SF_CART_INFO
+  - sndfile.SF_CART_INFO._post_timers_e__FixedBuffer
+  - sndfile.SF_CART_TIMER
+  - sndfile.SF_CHUNK_INFO
+  - sndfile.SF_CUES
+  - sndfile.SF_CUES._cue_points_e__FixedBuffer
+  - sndfile.SF_CUE_POINT
+  - sndfile.SF_DITHER_INFO
+  - sndfile.SF_EMBED_FILE_INFO
+  - sndfile.SF_FORMAT_INFO
+  - sndfile.SF_INFO
+  - sndfile.SF_INSTRUMENT
+  - sndfile.SF_INSTRUMENT._Anonymous_e__Struct
+  - sndfile.SF_INSTRUMENT._loops_e__FixedBuffer
+  - sndfile.SF_LOOP_INFO
+  - sndfile.SF_VIRTUAL_IO
+  - sndfile.SfVirtualLength
+  - sndfile.SfVirtualRead
+  - sndfile.SfVirtualSeek
+  - sndfile.SfVirtualStreamHelper
+  - sndfile.SfVirtualTell
+  - sndfile.SfVirtualWrite
+  - sndfile.Whence
+  - sndfile.sf_private_tag
+  langs:
+  - csharp
+  - vb
+  name: sndfile
+  nameWithType: sndfile
+  fullName: sndfile
+  type: Namespace
+  assemblies:
+  - SilverCraft.CSCore.SndFile
+references:
+- uid: sndfile.Methods
+  commentId: T:sndfile.Methods
+  href: sndfile.Methods.html
+  name: Methods
+  nameWithType: Methods
+  fullName: sndfile.Methods
+- uid: sndfile.Mode
+  commentId: T:sndfile.Mode
+  parent: sndfile
+  href: sndfile.Mode.html
+  name: Mode
+  nameWithType: Mode
+  fullName: sndfile.Mode
+- uid: sndfile.SF_BROADCAST_INFO
+  commentId: T:sndfile.SF_BROADCAST_INFO
+  href: sndfile.SF_BROADCAST_INFO.html
+  name: SF_BROADCAST_INFO
+  nameWithType: SF_BROADCAST_INFO
+  fullName: sndfile.SF_BROADCAST_INFO
+- uid: sndfile.SF_CART_INFO
+  commentId: T:sndfile.SF_CART_INFO
+  href: sndfile.SF_CART_INFO.html
+  name: SF_CART_INFO
+  nameWithType: SF_CART_INFO
+  fullName: sndfile.SF_CART_INFO
+- uid: sndfile.SF_CART_INFO._post_timers_e__FixedBuffer
+  commentId: T:sndfile.SF_CART_INFO._post_timers_e__FixedBuffer
+  parent: sndfile
+  href: sndfile.SF_CART_INFO.html
+  name: SF_CART_INFO._post_timers_e__FixedBuffer
+  nameWithType: SF_CART_INFO._post_timers_e__FixedBuffer
+  fullName: sndfile.SF_CART_INFO._post_timers_e__FixedBuffer
+  spec.csharp:
+  - uid: sndfile.SF_CART_INFO
+    name: SF_CART_INFO
+    href: sndfile.SF_CART_INFO.html
+  - name: .
+  - uid: sndfile.SF_CART_INFO._post_timers_e__FixedBuffer
+    name: _post_timers_e__FixedBuffer
+    href: sndfile.SF_CART_INFO._post_timers_e__FixedBuffer.html
+  spec.vb:
+  - uid: sndfile.SF_CART_INFO
+    name: SF_CART_INFO
+    href: sndfile.SF_CART_INFO.html
+  - name: .
+  - uid: sndfile.SF_CART_INFO._post_timers_e__FixedBuffer
+    name: _post_timers_e__FixedBuffer
+    href: sndfile.SF_CART_INFO._post_timers_e__FixedBuffer.html
+- uid: sndfile.SF_CART_TIMER
+  commentId: T:sndfile.SF_CART_TIMER
+  parent: sndfile
+  href: sndfile.SF_CART_TIMER.html
+  name: SF_CART_TIMER
+  nameWithType: SF_CART_TIMER
+  fullName: sndfile.SF_CART_TIMER
+- uid: sndfile.SF_CHUNK_INFO
+  commentId: T:sndfile.SF_CHUNK_INFO
+  href: sndfile.SF_CHUNK_INFO.html
+  name: SF_CHUNK_INFO
+  nameWithType: SF_CHUNK_INFO
+  fullName: sndfile.SF_CHUNK_INFO
+- uid: sndfile.SF_CUES
+  commentId: T:sndfile.SF_CUES
+  href: sndfile.SF_CUES.html
+  name: SF_CUES
+  nameWithType: SF_CUES
+  fullName: sndfile.SF_CUES
+- uid: sndfile.SF_CUES._cue_points_e__FixedBuffer
+  commentId: T:sndfile.SF_CUES._cue_points_e__FixedBuffer
+  parent: sndfile
+  href: sndfile.SF_CUES.html
+  name: SF_CUES._cue_points_e__FixedBuffer
+  nameWithType: SF_CUES._cue_points_e__FixedBuffer
+  fullName: sndfile.SF_CUES._cue_points_e__FixedBuffer
+  spec.csharp:
+  - uid: sndfile.SF_CUES
+    name: SF_CUES
+    href: sndfile.SF_CUES.html
+  - name: .
+  - uid: sndfile.SF_CUES._cue_points_e__FixedBuffer
+    name: _cue_points_e__FixedBuffer
+    href: sndfile.SF_CUES._cue_points_e__FixedBuffer.html
+  spec.vb:
+  - uid: sndfile.SF_CUES
+    name: SF_CUES
+    href: sndfile.SF_CUES.html
+  - name: .
+  - uid: sndfile.SF_CUES._cue_points_e__FixedBuffer
+    name: _cue_points_e__FixedBuffer
+    href: sndfile.SF_CUES._cue_points_e__FixedBuffer.html
+- uid: sndfile.SF_CUE_POINT
+  commentId: T:sndfile.SF_CUE_POINT
+  parent: sndfile
+  href: sndfile.SF_CUE_POINT.html
+  name: SF_CUE_POINT
+  nameWithType: SF_CUE_POINT
+  fullName: sndfile.SF_CUE_POINT
+- uid: sndfile.SF_DITHER_INFO
+  commentId: T:sndfile.SF_DITHER_INFO
+  href: sndfile.SF_DITHER_INFO.html
+  name: SF_DITHER_INFO
+  nameWithType: SF_DITHER_INFO
+  fullName: sndfile.SF_DITHER_INFO
+- uid: sndfile.SF_EMBED_FILE_INFO
+  commentId: T:sndfile.SF_EMBED_FILE_INFO
+  href: sndfile.SF_EMBED_FILE_INFO.html
+  name: SF_EMBED_FILE_INFO
+  nameWithType: SF_EMBED_FILE_INFO
+  fullName: sndfile.SF_EMBED_FILE_INFO
+- uid: sndfile.SF_FORMAT_INFO
+  commentId: T:sndfile.SF_FORMAT_INFO
+  href: sndfile.SF_FORMAT_INFO.html
+  name: SF_FORMAT_INFO
+  nameWithType: SF_FORMAT_INFO
+  fullName: sndfile.SF_FORMAT_INFO
+- uid: sndfile.SF_INFO
+  commentId: T:sndfile.SF_INFO
+  parent: sndfile
+  href: sndfile.SF_INFO.html
+  name: SF_INFO
+  nameWithType: SF_INFO
+  fullName: sndfile.SF_INFO
+- uid: sndfile.sf_private_tag
+  commentId: T:sndfile.sf_private_tag
+  href: sndfile.sf_private_tag.html
+  name: sf_private_tag
+  nameWithType: sf_private_tag
+  fullName: sndfile.sf_private_tag
+- uid: sndfile.SF_INSTRUMENT
+  commentId: T:sndfile.SF_INSTRUMENT
+  href: sndfile.SF_INSTRUMENT.html
+  name: SF_INSTRUMENT
+  nameWithType: SF_INSTRUMENT
+  fullName: sndfile.SF_INSTRUMENT
+- uid: sndfile.SF_INSTRUMENT._Anonymous_e__Struct
+  commentId: T:sndfile.SF_INSTRUMENT._Anonymous_e__Struct
+  parent: sndfile
+  href: sndfile.SF_INSTRUMENT.html
+  name: SF_INSTRUMENT._Anonymous_e__Struct
+  nameWithType: SF_INSTRUMENT._Anonymous_e__Struct
+  fullName: sndfile.SF_INSTRUMENT._Anonymous_e__Struct
+  spec.csharp:
+  - uid: sndfile.SF_INSTRUMENT
+    name: SF_INSTRUMENT
+    href: sndfile.SF_INSTRUMENT.html
+  - name: .
+  - uid: sndfile.SF_INSTRUMENT._Anonymous_e__Struct
+    name: _Anonymous_e__Struct
+    href: sndfile.SF_INSTRUMENT._Anonymous_e__Struct.html
+  spec.vb:
+  - uid: sndfile.SF_INSTRUMENT
+    name: SF_INSTRUMENT
+    href: sndfile.SF_INSTRUMENT.html
+  - name: .
+  - uid: sndfile.SF_INSTRUMENT._Anonymous_e__Struct
+    name: _Anonymous_e__Struct
+    href: sndfile.SF_INSTRUMENT._Anonymous_e__Struct.html
+- uid: sndfile.SF_INSTRUMENT._loops_e__FixedBuffer
+  commentId: T:sndfile.SF_INSTRUMENT._loops_e__FixedBuffer
+  parent: sndfile
+  href: sndfile.SF_INSTRUMENT.html
+  name: SF_INSTRUMENT._loops_e__FixedBuffer
+  nameWithType: SF_INSTRUMENT._loops_e__FixedBuffer
+  fullName: sndfile.SF_INSTRUMENT._loops_e__FixedBuffer
+  spec.csharp:
+  - uid: sndfile.SF_INSTRUMENT
+    name: SF_INSTRUMENT
+    href: sndfile.SF_INSTRUMENT.html
+  - name: .
+  - uid: sndfile.SF_INSTRUMENT._loops_e__FixedBuffer
+    name: _loops_e__FixedBuffer
+    href: sndfile.SF_INSTRUMENT._loops_e__FixedBuffer.html
+  spec.vb:
+  - uid: sndfile.SF_INSTRUMENT
+    name: SF_INSTRUMENT
+    href: sndfile.SF_INSTRUMENT.html
+  - name: .
+  - uid: sndfile.SF_INSTRUMENT._loops_e__FixedBuffer
+    name: _loops_e__FixedBuffer
+    href: sndfile.SF_INSTRUMENT._loops_e__FixedBuffer.html
+- uid: sndfile.SF_LOOP_INFO
+  commentId: T:sndfile.SF_LOOP_INFO
+  href: sndfile.SF_LOOP_INFO.html
+  name: SF_LOOP_INFO
+  nameWithType: SF_LOOP_INFO
+  fullName: sndfile.SF_LOOP_INFO
+- uid: sndfile.SfVirtualStreamHelper
+  commentId: T:sndfile.SfVirtualStreamHelper
+  href: sndfile.SfVirtualStreamHelper.html
+  name: SfVirtualStreamHelper
+  nameWithType: SfVirtualStreamHelper
+  fullName: sndfile.SfVirtualStreamHelper
+- uid: sndfile.SF_VIRTUAL_IO
+  commentId: T:sndfile.SF_VIRTUAL_IO
+  parent: sndfile
+  href: sndfile.SF_VIRTUAL_IO.html
+  name: SF_VIRTUAL_IO
+  nameWithType: SF_VIRTUAL_IO
+  fullName: sndfile.SF_VIRTUAL_IO
+- uid: sndfile.SfVirtualLength
+  commentId: T:sndfile.SfVirtualLength
+  parent: sndfile
+  href: sndfile.SfVirtualLength.html
+  name: SfVirtualLength
+  nameWithType: SfVirtualLength
+  fullName: sndfile.SfVirtualLength
+- uid: sndfile.SfVirtualSeek
+  commentId: T:sndfile.SfVirtualSeek
+  parent: sndfile
+  href: sndfile.SfVirtualSeek.html
+  name: SfVirtualSeek
+  nameWithType: SfVirtualSeek
+  fullName: sndfile.SfVirtualSeek
+- uid: sndfile.SfVirtualRead
+  commentId: T:sndfile.SfVirtualRead
+  parent: sndfile
+  href: sndfile.SfVirtualRead.html
+  name: SfVirtualRead
+  nameWithType: SfVirtualRead
+  fullName: sndfile.SfVirtualRead
+- uid: sndfile.SfVirtualWrite
+  commentId: T:sndfile.SfVirtualWrite
+  parent: sndfile
+  href: sndfile.SfVirtualWrite.html
+  name: SfVirtualWrite
+  nameWithType: SfVirtualWrite
+  fullName: sndfile.SfVirtualWrite
+- uid: sndfile.SfVirtualTell
+  commentId: T:sndfile.SfVirtualTell
+  parent: sndfile
+  href: sndfile.SfVirtualTell.html
+  name: SfVirtualTell
+  nameWithType: SfVirtualTell
+  fullName: sndfile.SfVirtualTell
+- uid: sndfile.Whence
+  commentId: T:sndfile.Whence
+  parent: sndfile
+  href: sndfile.Whence.html
+  name: Whence
+  nameWithType: Whence
+  fullName: sndfile.Whence
+- uid: sndfile
+  commentId: N:sndfile
+  href: sndfile.html
+  name: sndfile
+  nameWithType: sndfile
+  fullName: sndfile

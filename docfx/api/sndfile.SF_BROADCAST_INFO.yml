@@ -1,0 +1,778 @@
+### YamlMime:ManagedReference
+items:
+- uid: sndfile.SF_BROADCAST_INFO
+  commentId: T:sndfile.SF_BROADCAST_INFO
+  id: SF_BROADCAST_INFO
+  parent: sndfile
+  children:
+  - sndfile.SF_BROADCAST_INFO.coding_history
+  - sndfile.SF_BROADCAST_INFO.coding_history_size
+  - sndfile.SF_BROADCAST_INFO.description
+  - sndfile.SF_BROADCAST_INFO.loudness_range
+  - sndfile.SF_BROADCAST_INFO.loudness_value
+  - sndfile.SF_BROADCAST_INFO.max_momentary_loudness
+  - sndfile.SF_BROADCAST_INFO.max_shortterm_loudness
+  - sndfile.SF_BROADCAST_INFO.max_true_peak_level
+  - sndfile.SF_BROADCAST_INFO.origination_date
+  - sndfile.SF_BROADCAST_INFO.origination_time
+  - sndfile.SF_BROADCAST_INFO.originator
+  - sndfile.SF_BROADCAST_INFO.originator_reference
+  - sndfile.SF_BROADCAST_INFO.reserved
+  - sndfile.SF_BROADCAST_INFO.time_reference_high
+  - sndfile.SF_BROADCAST_INFO.time_reference_low
+  - sndfile.SF_BROADCAST_INFO.umid
+  - sndfile.SF_BROADCAST_INFO.version
+  langs:
+  - csharp
+  - vb
+  name: SF_BROADCAST_INFO
+  nameWithType: SF_BROADCAST_INFO
+  fullName: sndfile.SF_BROADCAST_INFO
+  type: Struct
+  source:
+    remote:
+      path: SilverCraft.SndFile/Native/SF_BROADCAST_INFO.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: SF_BROADCAST_INFO
+    path: ../SilverCraft.SndFile/Native/SF_BROADCAST_INFO.cs
+    startLine: 2
+  assemblies:
+  - SilverCraft.CSCore.SndFile
+  namespace: sndfile
+  syntax:
+    content: public struct SF_BROADCAST_INFO
+    content.vb: Public Structure SF_BROADCAST_INFO
+  inheritedMembers:
+  - System.ValueType.Equals(System.Object)
+  - System.ValueType.GetHashCode
+  - System.ValueType.ToString
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetType
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+- uid: sndfile.SF_BROADCAST_INFO.description
+  commentId: F:sndfile.SF_BROADCAST_INFO.description
+  id: description
+  parent: sndfile.SF_BROADCAST_INFO
+  langs:
+  - csharp
+  - vb
+  name: description
+  nameWithType: SF_BROADCAST_INFO.description
+  fullName: sndfile.SF_BROADCAST_INFO.description
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.SndFile/Native/SF_BROADCAST_INFO.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: description
+    path: ../SilverCraft.SndFile/Native/SF_BROADCAST_INFO.cs
+    startLine: 5
+  assemblies:
+  - SilverCraft.CSCore.SndFile
+  namespace: sndfile
+  syntax:
+    content: public sbyte* description
+    return:
+      type: System.SByte*
+    content.vb: Public description As SByte*
+- uid: sndfile.SF_BROADCAST_INFO.originator
+  commentId: F:sndfile.SF_BROADCAST_INFO.originator
+  id: originator
+  parent: sndfile.SF_BROADCAST_INFO
+  langs:
+  - csharp
+  - vb
+  name: originator
+  nameWithType: SF_BROADCAST_INFO.originator
+  fullName: sndfile.SF_BROADCAST_INFO.originator
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.SndFile/Native/SF_BROADCAST_INFO.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: originator
+    path: ../SilverCraft.SndFile/Native/SF_BROADCAST_INFO.cs
+    startLine: 8
+  assemblies:
+  - SilverCraft.CSCore.SndFile
+  namespace: sndfile
+  syntax:
+    content: public sbyte* originator
+    return:
+      type: System.SByte*
+    content.vb: Public originator As SByte*
+- uid: sndfile.SF_BROADCAST_INFO.originator_reference
+  commentId: F:sndfile.SF_BROADCAST_INFO.originator_reference
+  id: originator_reference
+  parent: sndfile.SF_BROADCAST_INFO
+  langs:
+  - csharp
+  - vb
+  name: originator_reference
+  nameWithType: SF_BROADCAST_INFO.originator_reference
+  fullName: sndfile.SF_BROADCAST_INFO.originator_reference
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.SndFile/Native/SF_BROADCAST_INFO.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: originator_reference
+    path: ../SilverCraft.SndFile/Native/SF_BROADCAST_INFO.cs
+    startLine: 11
+  assemblies:
+  - SilverCraft.CSCore.SndFile
+  namespace: sndfile
+  syntax:
+    content: public sbyte* originator_reference
+    return:
+      type: System.SByte*
+    content.vb: Public originator_reference As SByte*
+- uid: sndfile.SF_BROADCAST_INFO.origination_date
+  commentId: F:sndfile.SF_BROADCAST_INFO.origination_date
+  id: origination_date
+  parent: sndfile.SF_BROADCAST_INFO
+  langs:
+  - csharp
+  - vb
+  name: origination_date
+  nameWithType: SF_BROADCAST_INFO.origination_date
+  fullName: sndfile.SF_BROADCAST_INFO.origination_date
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.SndFile/Native/SF_BROADCAST_INFO.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: origination_date
+    path: ../SilverCraft.SndFile/Native/SF_BROADCAST_INFO.cs
+    startLine: 14
+  assemblies:
+  - SilverCraft.CSCore.SndFile
+  namespace: sndfile
+  syntax:
+    content: public sbyte* origination_date
+    return:
+      type: System.SByte*
+    content.vb: Public origination_date As SByte*
+- uid: sndfile.SF_BROADCAST_INFO.origination_time
+  commentId: F:sndfile.SF_BROADCAST_INFO.origination_time
+  id: origination_time
+  parent: sndfile.SF_BROADCAST_INFO
+  langs:
+  - csharp
+  - vb
+  name: origination_time
+  nameWithType: SF_BROADCAST_INFO.origination_time
+  fullName: sndfile.SF_BROADCAST_INFO.origination_time
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.SndFile/Native/SF_BROADCAST_INFO.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: origination_time
+    path: ../SilverCraft.SndFile/Native/SF_BROADCAST_INFO.cs
+    startLine: 17
+  assemblies:
+  - SilverCraft.CSCore.SndFile
+  namespace: sndfile
+  syntax:
+    content: public sbyte* origination_time
+    return:
+      type: System.SByte*
+    content.vb: Public origination_time As SByte*
+- uid: sndfile.SF_BROADCAST_INFO.time_reference_low
+  commentId: F:sndfile.SF_BROADCAST_INFO.time_reference_low
+  id: time_reference_low
+  parent: sndfile.SF_BROADCAST_INFO
+  langs:
+  - csharp
+  - vb
+  name: time_reference_low
+  nameWithType: SF_BROADCAST_INFO.time_reference_low
+  fullName: sndfile.SF_BROADCAST_INFO.time_reference_low
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.SndFile/Native/SF_BROADCAST_INFO.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: time_reference_low
+    path: ../SilverCraft.SndFile/Native/SF_BROADCAST_INFO.cs
+    startLine: 20
+  assemblies:
+  - SilverCraft.CSCore.SndFile
+  namespace: sndfile
+  syntax:
+    content: public uint time_reference_low
+    return:
+      type: System.UInt32
+    content.vb: Public time_reference_low As UInteger
+- uid: sndfile.SF_BROADCAST_INFO.time_reference_high
+  commentId: F:sndfile.SF_BROADCAST_INFO.time_reference_high
+  id: time_reference_high
+  parent: sndfile.SF_BROADCAST_INFO
+  langs:
+  - csharp
+  - vb
+  name: time_reference_high
+  nameWithType: SF_BROADCAST_INFO.time_reference_high
+  fullName: sndfile.SF_BROADCAST_INFO.time_reference_high
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.SndFile/Native/SF_BROADCAST_INFO.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: time_reference_high
+    path: ../SilverCraft.SndFile/Native/SF_BROADCAST_INFO.cs
+    startLine: 23
+  assemblies:
+  - SilverCraft.CSCore.SndFile
+  namespace: sndfile
+  syntax:
+    content: public uint time_reference_high
+    return:
+      type: System.UInt32
+    content.vb: Public time_reference_high As UInteger
+- uid: sndfile.SF_BROADCAST_INFO.version
+  commentId: F:sndfile.SF_BROADCAST_INFO.version
+  id: version
+  parent: sndfile.SF_BROADCAST_INFO
+  langs:
+  - csharp
+  - vb
+  name: version
+  nameWithType: SF_BROADCAST_INFO.version
+  fullName: sndfile.SF_BROADCAST_INFO.version
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.SndFile/Native/SF_BROADCAST_INFO.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: version
+    path: ../SilverCraft.SndFile/Native/SF_BROADCAST_INFO.cs
+    startLine: 25
+  assemblies:
+  - SilverCraft.CSCore.SndFile
+  namespace: sndfile
+  syntax:
+    content: public short version
+    return:
+      type: System.Int16
+    content.vb: Public version As Short
+- uid: sndfile.SF_BROADCAST_INFO.umid
+  commentId: F:sndfile.SF_BROADCAST_INFO.umid
+  id: umid
+  parent: sndfile.SF_BROADCAST_INFO
+  langs:
+  - csharp
+  - vb
+  name: umid
+  nameWithType: SF_BROADCAST_INFO.umid
+  fullName: sndfile.SF_BROADCAST_INFO.umid
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.SndFile/Native/SF_BROADCAST_INFO.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: umid
+    path: ../SilverCraft.SndFile/Native/SF_BROADCAST_INFO.cs
+    startLine: 28
+  assemblies:
+  - SilverCraft.CSCore.SndFile
+  namespace: sndfile
+  syntax:
+    content: public sbyte* umid
+    return:
+      type: System.SByte*
+    content.vb: Public umid As SByte*
+- uid: sndfile.SF_BROADCAST_INFO.loudness_value
+  commentId: F:sndfile.SF_BROADCAST_INFO.loudness_value
+  id: loudness_value
+  parent: sndfile.SF_BROADCAST_INFO
+  langs:
+  - csharp
+  - vb
+  name: loudness_value
+  nameWithType: SF_BROADCAST_INFO.loudness_value
+  fullName: sndfile.SF_BROADCAST_INFO.loudness_value
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.SndFile/Native/SF_BROADCAST_INFO.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: loudness_value
+    path: ../SilverCraft.SndFile/Native/SF_BROADCAST_INFO.cs
+    startLine: 31
+  assemblies:
+  - SilverCraft.CSCore.SndFile
+  namespace: sndfile
+  syntax:
+    content: public short loudness_value
+    return:
+      type: System.Int16
+    content.vb: Public loudness_value As Short
+- uid: sndfile.SF_BROADCAST_INFO.loudness_range
+  commentId: F:sndfile.SF_BROADCAST_INFO.loudness_range
+  id: loudness_range
+  parent: sndfile.SF_BROADCAST_INFO
+  langs:
+  - csharp
+  - vb
+  name: loudness_range
+  nameWithType: SF_BROADCAST_INFO.loudness_range
+  fullName: sndfile.SF_BROADCAST_INFO.loudness_range
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.SndFile/Native/SF_BROADCAST_INFO.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: loudness_range
+    path: ../SilverCraft.SndFile/Native/SF_BROADCAST_INFO.cs
+    startLine: 34
+  assemblies:
+  - SilverCraft.CSCore.SndFile
+  namespace: sndfile
+  syntax:
+    content: public short loudness_range
+    return:
+      type: System.Int16
+    content.vb: Public loudness_range As Short
+- uid: sndfile.SF_BROADCAST_INFO.max_true_peak_level
+  commentId: F:sndfile.SF_BROADCAST_INFO.max_true_peak_level
+  id: max_true_peak_level
+  parent: sndfile.SF_BROADCAST_INFO
+  langs:
+  - csharp
+  - vb
+  name: max_true_peak_level
+  nameWithType: SF_BROADCAST_INFO.max_true_peak_level
+  fullName: sndfile.SF_BROADCAST_INFO.max_true_peak_level
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.SndFile/Native/SF_BROADCAST_INFO.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: max_true_peak_level
+    path: ../SilverCraft.SndFile/Native/SF_BROADCAST_INFO.cs
+    startLine: 37
+  assemblies:
+  - SilverCraft.CSCore.SndFile
+  namespace: sndfile
+  syntax:
+    content: public short max_true_peak_level
+    return:
+      type: System.Int16
+    content.vb: Public max_true_peak_level As Short
+- uid: sndfile.SF_BROADCAST_INFO.max_momentary_loudness
+  commentId: F:sndfile.SF_BROADCAST_INFO.max_momentary_loudness
+  id: max_momentary_loudness
+  parent: sndfile.SF_BROADCAST_INFO
+  langs:
+  - csharp
+  - vb
+  name: max_momentary_loudness
+  nameWithType: SF_BROADCAST_INFO.max_momentary_loudness
+  fullName: sndfile.SF_BROADCAST_INFO.max_momentary_loudness
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.SndFile/Native/SF_BROADCAST_INFO.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: max_momentary_loudness
+    path: ../SilverCraft.SndFile/Native/SF_BROADCAST_INFO.cs
+    startLine: 40
+  assemblies:
+  - SilverCraft.CSCore.SndFile
+  namespace: sndfile
+  syntax:
+    content: public short max_momentary_loudness
+    return:
+      type: System.Int16
+    content.vb: Public max_momentary_loudness As Short
+- uid: sndfile.SF_BROADCAST_INFO.max_shortterm_loudness
+  commentId: F:sndfile.SF_BROADCAST_INFO.max_shortterm_loudness
+  id: max_shortterm_loudness
+  parent: sndfile.SF_BROADCAST_INFO
+  langs:
+  - csharp
+  - vb
+  name: max_shortterm_loudness
+  nameWithType: SF_BROADCAST_INFO.max_shortterm_loudness
+  fullName: sndfile.SF_BROADCAST_INFO.max_shortterm_loudness
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.SndFile/Native/SF_BROADCAST_INFO.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: max_shortterm_loudness
+    path: ../SilverCraft.SndFile/Native/SF_BROADCAST_INFO.cs
+    startLine: 43
+  assemblies:
+  - SilverCraft.CSCore.SndFile
+  namespace: sndfile
+  syntax:
+    content: public short max_shortterm_loudness
+    return:
+      type: System.Int16
+    content.vb: Public max_shortterm_loudness As Short
+- uid: sndfile.SF_BROADCAST_INFO.reserved
+  commentId: F:sndfile.SF_BROADCAST_INFO.reserved
+  id: reserved
+  parent: sndfile.SF_BROADCAST_INFO
+  langs:
+  - csharp
+  - vb
+  name: reserved
+  nameWithType: SF_BROADCAST_INFO.reserved
+  fullName: sndfile.SF_BROADCAST_INFO.reserved
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.SndFile/Native/SF_BROADCAST_INFO.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: reserved
+    path: ../SilverCraft.SndFile/Native/SF_BROADCAST_INFO.cs
+    startLine: 46
+  assemblies:
+  - SilverCraft.CSCore.SndFile
+  namespace: sndfile
+  syntax:
+    content: public sbyte* reserved
+    return:
+      type: System.SByte*
+    content.vb: Public reserved As SByte*
+- uid: sndfile.SF_BROADCAST_INFO.coding_history_size
+  commentId: F:sndfile.SF_BROADCAST_INFO.coding_history_size
+  id: coding_history_size
+  parent: sndfile.SF_BROADCAST_INFO
+  langs:
+  - csharp
+  - vb
+  name: coding_history_size
+  nameWithType: SF_BROADCAST_INFO.coding_history_size
+  fullName: sndfile.SF_BROADCAST_INFO.coding_history_size
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.SndFile/Native/SF_BROADCAST_INFO.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: coding_history_size
+    path: ../SilverCraft.SndFile/Native/SF_BROADCAST_INFO.cs
+    startLine: 49
+  assemblies:
+  - SilverCraft.CSCore.SndFile
+  namespace: sndfile
+  syntax:
+    content: public uint coding_history_size
+    return:
+      type: System.UInt32
+    content.vb: Public coding_history_size As UInteger
+- uid: sndfile.SF_BROADCAST_INFO.coding_history
+  commentId: F:sndfile.SF_BROADCAST_INFO.coding_history
+  id: coding_history
+  parent: sndfile.SF_BROADCAST_INFO
+  langs:
+  - csharp
+  - vb
+  name: coding_history
+  nameWithType: SF_BROADCAST_INFO.coding_history
+  fullName: sndfile.SF_BROADCAST_INFO.coding_history
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.SndFile/Native/SF_BROADCAST_INFO.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: coding_history
+    path: ../SilverCraft.SndFile/Native/SF_BROADCAST_INFO.cs
+    startLine: 52
+  assemblies:
+  - SilverCraft.CSCore.SndFile
+  namespace: sndfile
+  syntax:
+    content: public sbyte* coding_history
+    return:
+      type: System.SByte*
+    content.vb: Public coding_history As SByte*
+references:
+- uid: sndfile
+  commentId: N:sndfile
+  href: sndfile.html
+  name: sndfile
+  nameWithType: sndfile
+  fullName: sndfile
+- uid: System.ValueType.Equals(System.Object)
+  commentId: M:System.ValueType.Equals(System.Object)
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  name: Equals(object)
+  nameWithType: ValueType.Equals(object)
+  fullName: System.ValueType.Equals(object)
+  nameWithType.vb: ValueType.Equals(Object)
+  fullName.vb: System.ValueType.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.ValueType.GetHashCode
+  commentId: M:System.ValueType.GetHashCode
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  name: GetHashCode()
+  nameWithType: ValueType.GetHashCode()
+  fullName: System.ValueType.GetHashCode()
+  spec.csharp:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  - name: (
+  - name: )
+- uid: System.ValueType.ToString
+  commentId: M:System.ValueType.ToString
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  name: ToString()
+  nameWithType: ValueType.ToString()
+  fullName: System.ValueType.ToString()
+  spec.csharp:
+  - uid: System.ValueType.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.ValueType
+  commentId: T:System.ValueType
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype
+  name: ValueType
+  nameWithType: ValueType
+  fullName: System.ValueType
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.SByte*
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.sbyte
+  name: sbyte*
+  nameWithType: sbyte*
+  fullName: sbyte*
+  nameWithType.vb: SByte*
+  fullName.vb: SByte*
+  name.vb: SByte*
+  spec.csharp:
+  - uid: System.SByte
+    name: sbyte
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.sbyte
+  - name: '*'
+  spec.vb:
+  - uid: System.SByte
+    name: SByte
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.sbyte
+  - name: '*'
+- uid: System.UInt32
+  commentId: T:System.UInt32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.uint32
+  name: uint
+  nameWithType: uint
+  fullName: uint
+  nameWithType.vb: UInteger
+  fullName.vb: UInteger
+  name.vb: UInteger
+- uid: System.Int16
+  commentId: T:System.Int16
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int16
+  name: short
+  nameWithType: short
+  fullName: short
+  nameWithType.vb: Short
+  fullName.vb: Short
+  name.vb: Short

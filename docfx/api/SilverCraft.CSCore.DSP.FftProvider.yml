@@ -1,0 +1,952 @@
+### YamlMime:ManagedReference
+items:
+- uid: SilverCraft.CSCore.DSP.FftProvider
+  commentId: T:SilverCraft.CSCore.DSP.FftProvider
+  id: FftProvider
+  parent: SilverCraft.CSCore.DSP
+  children:
+  - SilverCraft.CSCore.DSP.FftProvider.#ctor(System.Int32,SilverCraft.CSCore.DSP.FftSize)
+  - SilverCraft.CSCore.DSP.FftProvider.Add(System.Single,System.Single)
+  - SilverCraft.CSCore.DSP.FftProvider.Add(System.Single[],System.Int32)
+  - SilverCraft.CSCore.DSP.FftProvider.FftSize
+  - SilverCraft.CSCore.DSP.FftProvider.GetFftData(SilverCraft.CSCore.Utils.Complex[])
+  - SilverCraft.CSCore.DSP.FftProvider.GetFftData(System.Single[])
+  - SilverCraft.CSCore.DSP.FftProvider.IsNewDataAvailable
+  - SilverCraft.CSCore.DSP.FftProvider.WindowFunction
+  langs:
+  - csharp
+  - vb
+  name: FftProvider
+  nameWithType: FftProvider
+  fullName: SilverCraft.CSCore.DSP.FftProvider
+  type: Class
+  source:
+    remote:
+      path: SilverCraft.CSCore/DSP/FftProvider.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: FftProvider
+    path: ../SilverCraft.CSCore/DSP/FftProvider.cs
+    startLine: 12
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.DSP
+  summary: Provides FFT calculations.
+  remarks: >-
+    Usage: Use the <xref href="SilverCraft.CSCore.DSP.FftProvider.Add(System.Single%5b%5d%2cSystem.Int32)" data-throw-if-not-resolved="false"></xref>-method to input samples to the <xref href="SilverCraft.CSCore.DSP.FftProvider" data-throw-if-not-resolved="false"></xref>. Use the <xref href="SilverCraft.CSCore.DSP.FftProvider.GetFftData(System.Single%5b%5d)" data-throw-if-not-resolved="false"></xref> method to 
+
+    calculate the Fast Fourier Transform.
+  example: []
+  syntax:
+    content: public class FftProvider
+    content.vb: Public Class FftProvider
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  extensionMethods:
+  - SilverCraft.CSCore.DSP.FftProvider.SilverCraft.CSCore.FluentExtensions.Synchronized``2
+- uid: SilverCraft.CSCore.DSP.FftProvider.FftSize
+  commentId: P:SilverCraft.CSCore.DSP.FftProvider.FftSize
+  id: FftSize
+  parent: SilverCraft.CSCore.DSP.FftProvider
+  langs:
+  - csharp
+  - vb
+  name: FftSize
+  nameWithType: FftProvider.FftSize
+  fullName: SilverCraft.CSCore.DSP.FftProvider.FftSize
+  type: Property
+  source:
+    remote:
+      path: SilverCraft.CSCore/DSP/FftProvider.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: FftSize
+    path: ../SilverCraft.CSCore/DSP/FftProvider.cs
+    startLine: 26
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.DSP
+  summary: Gets the specified fft size.
+  example: []
+  syntax:
+    content: public FftSize FftSize { get; }
+    parameters: []
+    return:
+      type: SilverCraft.CSCore.DSP.FftSize
+    content.vb: Public ReadOnly Property FftSize As FftSize
+  overload: SilverCraft.CSCore.DSP.FftProvider.FftSize*
+- uid: SilverCraft.CSCore.DSP.FftProvider.IsNewDataAvailable
+  commentId: P:SilverCraft.CSCore.DSP.FftProvider.IsNewDataAvailable
+  id: IsNewDataAvailable
+  parent: SilverCraft.CSCore.DSP.FftProvider
+  langs:
+  - csharp
+  - vb
+  name: IsNewDataAvailable
+  nameWithType: FftProvider.IsNewDataAvailable
+  fullName: SilverCraft.CSCore.DSP.FftProvider.IsNewDataAvailable
+  type: Property
+  source:
+    remote:
+      path: SilverCraft.CSCore/DSP/FftProvider.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: IsNewDataAvailable
+    path: ../SilverCraft.CSCore/DSP/FftProvider.cs
+    startLine: 31
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.DSP
+  summary: Gets a value which indicates whether new data is available.
+  example: []
+  syntax:
+    content: public virtual bool IsNewDataAvailable { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Overridable ReadOnly Property IsNewDataAvailable As Boolean
+  overload: SilverCraft.CSCore.DSP.FftProvider.IsNewDataAvailable*
+- uid: SilverCraft.CSCore.DSP.FftProvider.WindowFunction
+  commentId: P:SilverCraft.CSCore.DSP.FftProvider.WindowFunction
+  id: WindowFunction
+  parent: SilverCraft.CSCore.DSP.FftProvider
+  langs:
+  - csharp
+  - vb
+  name: WindowFunction
+  nameWithType: FftProvider.WindowFunction
+  fullName: SilverCraft.CSCore.DSP.FftProvider.WindowFunction
+  type: Property
+  source:
+    remote:
+      path: SilverCraft.CSCore/DSP/FftProvider.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: WindowFunction
+    path: ../SilverCraft.CSCore/DSP/FftProvider.cs
+    startLine: 39
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.DSP
+  summary: Gets or sets the used window function.
+  remarks: The default value is <xref href="SilverCraft.CSCore.DSP.WindowFunctions.None" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public WindowFunction WindowFunction { get; set; }
+    parameters: []
+    return:
+      type: SilverCraft.CSCore.DSP.WindowFunction
+    content.vb: Public Property WindowFunction As WindowFunction
+  overload: SilverCraft.CSCore.DSP.FftProvider.WindowFunction*
+- uid: SilverCraft.CSCore.DSP.FftProvider.#ctor(System.Int32,SilverCraft.CSCore.DSP.FftSize)
+  commentId: M:SilverCraft.CSCore.DSP.FftProvider.#ctor(System.Int32,SilverCraft.CSCore.DSP.FftSize)
+  id: '#ctor(System.Int32,SilverCraft.CSCore.DSP.FftSize)'
+  parent: SilverCraft.CSCore.DSP.FftProvider
+  langs:
+  - csharp
+  - vb
+  name: FftProvider(int, FftSize)
+  nameWithType: FftProvider.FftProvider(int, FftSize)
+  fullName: SilverCraft.CSCore.DSP.FftProvider.FftProvider(int, SilverCraft.CSCore.DSP.FftSize)
+  type: Constructor
+  source:
+    remote:
+      path: SilverCraft.CSCore/DSP/FftProvider.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: .ctor
+    path: ../SilverCraft.CSCore/DSP/FftProvider.cs
+    startLine: 47
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.DSP
+  summary: Initializes a new instance of the <xref href="SilverCraft.CSCore.DSP.FftProvider" data-throw-if-not-resolved="false"></xref> class.
+  example: []
+  syntax:
+    content: public FftProvider(int channels, FftSize fftSize)
+    parameters:
+    - id: channels
+      type: System.Int32
+      description: Number of channels of the input data.
+    - id: fftSize
+      type: SilverCraft.CSCore.DSP.FftSize
+      description: The number of bands to use.
+    content.vb: Public Sub New(channels As Integer, fftSize As FftSize)
+  overload: SilverCraft.CSCore.DSP.FftProvider.#ctor*
+  exceptions:
+  - type: System.ArgumentOutOfRangeException
+    commentId: T:System.ArgumentOutOfRangeException
+    description: <code class="paramref">channels</code> is less than zero.
+  nameWithType.vb: FftProvider.New(Integer, FftSize)
+  fullName.vb: SilverCraft.CSCore.DSP.FftProvider.New(Integer, SilverCraft.CSCore.DSP.FftSize)
+  name.vb: New(Integer, FftSize)
+- uid: SilverCraft.CSCore.DSP.FftProvider.Add(System.Single,System.Single)
+  commentId: M:SilverCraft.CSCore.DSP.FftProvider.Add(System.Single,System.Single)
+  id: Add(System.Single,System.Single)
+  parent: SilverCraft.CSCore.DSP.FftProvider
+  langs:
+  - csharp
+  - vb
+  name: Add(float, float)
+  nameWithType: FftProvider.Add(float, float)
+  fullName: SilverCraft.CSCore.DSP.FftProvider.Add(float, float)
+  type: Method
+  source:
+    remote:
+      path: SilverCraft.CSCore/DSP/FftProvider.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: Add
+    path: ../SilverCraft.CSCore/DSP/FftProvider.cs
+    startLine: 69
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.DSP
+  summary: Adds a <code class="paramref">left</code> and a <code class="paramref">right</code> sample to the <xref href="SilverCraft.CSCore.DSP.FftProvider" data-throw-if-not-resolved="false"></xref>. The <code class="paramref">left</code> and the <code class="paramref">right</code> sample will be merged together.
+  example: []
+  syntax:
+    content: public virtual void Add(float left, float right)
+    parameters:
+    - id: left
+      type: System.Single
+      description: The sample of the left channel.
+    - id: right
+      type: System.Single
+      description: The sample of the right channel.
+    content.vb: Public Overridable Sub Add(left As Single, right As Single)
+  overload: SilverCraft.CSCore.DSP.FftProvider.Add*
+  nameWithType.vb: FftProvider.Add(Single, Single)
+  fullName.vb: SilverCraft.CSCore.DSP.FftProvider.Add(Single, Single)
+  name.vb: Add(Single, Single)
+- uid: SilverCraft.CSCore.DSP.FftProvider.Add(System.Single[],System.Int32)
+  commentId: M:SilverCraft.CSCore.DSP.FftProvider.Add(System.Single[],System.Int32)
+  id: Add(System.Single[],System.Int32)
+  parent: SilverCraft.CSCore.DSP.FftProvider
+  langs:
+  - csharp
+  - vb
+  name: Add(float[], int)
+  nameWithType: FftProvider.Add(float[], int)
+  fullName: SilverCraft.CSCore.DSP.FftProvider.Add(float[], int)
+  type: Method
+  source:
+    remote:
+      path: SilverCraft.CSCore/DSP/FftProvider.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: Add
+    path: ../SilverCraft.CSCore/DSP/FftProvider.cs
+    startLine: 89
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.DSP
+  summary: Adds multiple samples to the <xref href="SilverCraft.CSCore.DSP.FftProvider" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public virtual void Add(float[] samples, int count)
+    parameters:
+    - id: samples
+      type: System.Single[]
+      description: Float Array which contains samples.
+    - id: count
+      type: System.Int32
+      description: Number of samples to add to the <xref href="SilverCraft.CSCore.DSP.FftProvider" data-throw-if-not-resolved="false"></xref>.
+    content.vb: Public Overridable Sub Add(samples As Single(), count As Integer)
+  overload: SilverCraft.CSCore.DSP.FftProvider.Add*
+  nameWithType.vb: FftProvider.Add(Single(), Integer)
+  fullName.vb: SilverCraft.CSCore.DSP.FftProvider.Add(Single(), Integer)
+  name.vb: Add(Single(), Integer)
+- uid: SilverCraft.CSCore.DSP.FftProvider.GetFftData(SilverCraft.CSCore.Utils.Complex[])
+  commentId: M:SilverCraft.CSCore.DSP.FftProvider.GetFftData(SilverCraft.CSCore.Utils.Complex[])
+  id: GetFftData(SilverCraft.CSCore.Utils.Complex[])
+  parent: SilverCraft.CSCore.DSP.FftProvider
+  langs:
+  - csharp
+  - vb
+  name: GetFftData(Complex[])
+  nameWithType: FftProvider.GetFftData(Complex[])
+  fullName: SilverCraft.CSCore.DSP.FftProvider.GetFftData(SilverCraft.CSCore.Utils.Complex[])
+  type: Method
+  source:
+    remote:
+      path: SilverCraft.CSCore/DSP/FftProvider.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: GetFftData
+    path: ../SilverCraft.CSCore/DSP/FftProvider.cs
+    startLine: 117
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.DSP
+  summary: Calculates the Fast Fourier Transform and stores the result in the <code class="paramref">fftResultBuffer</code>.
+  example: []
+  syntax:
+    content: public virtual bool GetFftData(Complex[] fftResultBuffer)
+    parameters:
+    - id: fftResultBuffer
+      type: SilverCraft.CSCore.Utils.Complex[]
+      description: The output buffer.
+    return:
+      type: System.Boolean
+      description: Returns a value which indicates whether the Fast Fourier Transform got calculated. If there have not been added any new samples since the last transform, the FFT won't be calculated. True means that the Fast Fourier Transform got calculated.
+    content.vb: Public Overridable Function GetFftData(fftResultBuffer As Complex()) As Boolean
+  overload: SilverCraft.CSCore.DSP.FftProvider.GetFftData*
+  nameWithType.vb: FftProvider.GetFftData(Complex())
+  fullName.vb: SilverCraft.CSCore.DSP.FftProvider.GetFftData(SilverCraft.CSCore.Utils.Complex())
+  name.vb: GetFftData(Complex())
+- uid: SilverCraft.CSCore.DSP.FftProvider.GetFftData(System.Single[])
+  commentId: M:SilverCraft.CSCore.DSP.FftProvider.GetFftData(System.Single[])
+  id: GetFftData(System.Single[])
+  parent: SilverCraft.CSCore.DSP.FftProvider
+  langs:
+  - csharp
+  - vb
+  name: GetFftData(float[])
+  nameWithType: FftProvider.GetFftData(float[])
+  fullName: SilverCraft.CSCore.DSP.FftProvider.GetFftData(float[])
+  type: Method
+  source:
+    remote:
+      path: SilverCraft.CSCore/DSP/FftProvider.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: GetFftData
+    path: ../SilverCraft.CSCore/DSP/FftProvider.cs
+    startLine: 153
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.DSP
+  summary: Calculates the Fast Fourier Transform and stores the result in the <code class="paramref">fftResultBuffer</code>.
+  example: []
+  syntax:
+    content: public virtual bool GetFftData(float[] fftResultBuffer)
+    parameters:
+    - id: fftResultBuffer
+      type: System.Single[]
+      description: The output buffer.
+    return:
+      type: System.Boolean
+      description: Returns a value which indicates whether the Fast Fourier Transform got calculated. If there have not been added any new samples since the last transform, the FFT won't be calculated. True means that the Fast Fourier Transform got calculated.
+    content.vb: Public Overridable Function GetFftData(fftResultBuffer As Single()) As Boolean
+  overload: SilverCraft.CSCore.DSP.FftProvider.GetFftData*
+  nameWithType.vb: FftProvider.GetFftData(Single())
+  fullName.vb: SilverCraft.CSCore.DSP.FftProvider.GetFftData(Single())
+  name.vb: GetFftData(Single())
+references:
+- uid: SilverCraft.CSCore.DSP.FftProvider.Add(System.Single[],System.Int32)
+  commentId: M:SilverCraft.CSCore.DSP.FftProvider.Add(System.Single[],System.Int32)
+  isExternal: true
+  href: SilverCraft.CSCore.DSP.FftProvider.html#SilverCraft_CSCore_DSP_FftProvider_Add_System_Single___System_Int32_
+  name: Add(float[], int)
+  nameWithType: FftProvider.Add(float[], int)
+  fullName: SilverCraft.CSCore.DSP.FftProvider.Add(float[], int)
+  nameWithType.vb: FftProvider.Add(Single(), Integer)
+  fullName.vb: SilverCraft.CSCore.DSP.FftProvider.Add(Single(), Integer)
+  name.vb: Add(Single(), Integer)
+  spec.csharp:
+  - uid: SilverCraft.CSCore.DSP.FftProvider.Add(System.Single[],System.Int32)
+    name: Add
+    href: SilverCraft.CSCore.DSP.FftProvider.html#SilverCraft_CSCore_DSP_FftProvider_Add_System_Single___System_Int32_
+  - name: (
+  - uid: System.Single
+    name: float
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: '['
+  - name: ']'
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+  spec.vb:
+  - uid: SilverCraft.CSCore.DSP.FftProvider.Add(System.Single[],System.Int32)
+    name: Add
+    href: SilverCraft.CSCore.DSP.FftProvider.html#SilverCraft_CSCore_DSP_FftProvider_Add_System_Single___System_Int32_
+  - name: (
+  - uid: System.Single
+    name: Single
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: (
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: SilverCraft.CSCore.DSP.FftProvider
+  commentId: T:SilverCraft.CSCore.DSP.FftProvider
+  href: SilverCraft.CSCore.DSP.FftProvider.html
+  name: FftProvider
+  nameWithType: FftProvider
+  fullName: SilverCraft.CSCore.DSP.FftProvider
+- uid: SilverCraft.CSCore.DSP.FftProvider.GetFftData(System.Single[])
+  commentId: M:SilverCraft.CSCore.DSP.FftProvider.GetFftData(System.Single[])
+  isExternal: true
+  href: SilverCraft.CSCore.DSP.FftProvider.html#SilverCraft_CSCore_DSP_FftProvider_GetFftData_System_Single___
+  name: GetFftData(float[])
+  nameWithType: FftProvider.GetFftData(float[])
+  fullName: SilverCraft.CSCore.DSP.FftProvider.GetFftData(float[])
+  nameWithType.vb: FftProvider.GetFftData(Single())
+  fullName.vb: SilverCraft.CSCore.DSP.FftProvider.GetFftData(Single())
+  name.vb: GetFftData(Single())
+  spec.csharp:
+  - uid: SilverCraft.CSCore.DSP.FftProvider.GetFftData(System.Single[])
+    name: GetFftData
+    href: SilverCraft.CSCore.DSP.FftProvider.html#SilverCraft_CSCore_DSP_FftProvider_GetFftData_System_Single___
+  - name: (
+  - uid: System.Single
+    name: float
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: '['
+  - name: ']'
+  - name: )
+  spec.vb:
+  - uid: SilverCraft.CSCore.DSP.FftProvider.GetFftData(System.Single[])
+    name: GetFftData
+    href: SilverCraft.CSCore.DSP.FftProvider.html#SilverCraft_CSCore_DSP_FftProvider_GetFftData_System_Single___
+  - name: (
+  - uid: System.Single
+    name: Single
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: (
+  - name: )
+  - name: )
+- uid: SilverCraft.CSCore.DSP
+  commentId: N:SilverCraft.CSCore.DSP
+  href: SilverCraft.html
+  name: SilverCraft.CSCore.DSP
+  nameWithType: SilverCraft.CSCore.DSP
+  fullName: SilverCraft.CSCore.DSP
+  spec.csharp:
+  - uid: SilverCraft
+    name: SilverCraft
+    href: SilverCraft.html
+  - name: .
+  - uid: SilverCraft.CSCore
+    name: CSCore
+    href: SilverCraft.CSCore.html
+  - name: .
+  - uid: SilverCraft.CSCore.DSP
+    name: DSP
+    href: SilverCraft.CSCore.DSP.html
+  spec.vb:
+  - uid: SilverCraft
+    name: SilverCraft
+    href: SilverCraft.html
+  - name: .
+  - uid: SilverCraft.CSCore
+    name: CSCore
+    href: SilverCraft.CSCore.html
+  - name: .
+  - uid: SilverCraft.CSCore.DSP
+    name: DSP
+    href: SilverCraft.CSCore.DSP.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: SilverCraft.CSCore.DSP.FftProvider.SilverCraft.CSCore.FluentExtensions.Synchronized``2
+  commentId: M:SilverCraft.CSCore.FluentExtensions.Synchronized``2(``0)
+  parent: SilverCraft.CSCore.FluentExtensions
+  definition: SilverCraft.CSCore.FluentExtensions.Synchronized``2(``0)
+  href: SilverCraft.CSCore.FluentExtensions.html#SilverCraft_CSCore_FluentExtensions_Synchronized__2___0_
+  name: Synchronized<FftProvider, T>(FftProvider)
+  nameWithType: FluentExtensions.Synchronized<FftProvider, T>(FftProvider)
+  fullName: SilverCraft.CSCore.FluentExtensions.Synchronized<SilverCraft.CSCore.DSP.FftProvider, T>(SilverCraft.CSCore.DSP.FftProvider)
+  nameWithType.vb: FluentExtensions.Synchronized(Of FftProvider, T)(FftProvider)
+  fullName.vb: SilverCraft.CSCore.FluentExtensions.Synchronized(Of SilverCraft.CSCore.DSP.FftProvider, T)(SilverCraft.CSCore.DSP.FftProvider)
+  name.vb: Synchronized(Of FftProvider, T)(FftProvider)
+  spec.csharp:
+  - uid: SilverCraft.CSCore.FluentExtensions.Synchronized``2(SilverCraft.CSCore.DSP.FftProvider)
+    name: Synchronized
+    href: SilverCraft.CSCore.FluentExtensions.html#SilverCraft_CSCore_FluentExtensions_Synchronized__2___0_
+  - name: <
+  - uid: SilverCraft.CSCore.DSP.FftProvider
+    name: FftProvider
+    href: SilverCraft.CSCore.DSP.FftProvider.html
+  - name: ','
+  - name: " "
+  - name: T
+  - name: '>'
+  - name: (
+  - uid: SilverCraft.CSCore.DSP.FftProvider
+    name: FftProvider
+    href: SilverCraft.CSCore.DSP.FftProvider.html
+  - name: )
+  spec.vb:
+  - uid: SilverCraft.CSCore.FluentExtensions.Synchronized``2(SilverCraft.CSCore.DSP.FftProvider)
+    name: Synchronized
+    href: SilverCraft.CSCore.FluentExtensions.html#SilverCraft_CSCore_FluentExtensions_Synchronized__2___0_
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: SilverCraft.CSCore.DSP.FftProvider
+    name: FftProvider
+    href: SilverCraft.CSCore.DSP.FftProvider.html
+  - name: ','
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: SilverCraft.CSCore.DSP.FftProvider
+    name: FftProvider
+    href: SilverCraft.CSCore.DSP.FftProvider.html
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: SilverCraft.CSCore.FluentExtensions.Synchronized``2(``0)
+  commentId: M:SilverCraft.CSCore.FluentExtensions.Synchronized``2(``0)
+  href: SilverCraft.CSCore.FluentExtensions.html#SilverCraft_CSCore_FluentExtensions_Synchronized__2___0_
+  name: Synchronized<TAudioSource, T>(TAudioSource)
+  nameWithType: FluentExtensions.Synchronized<TAudioSource, T>(TAudioSource)
+  fullName: SilverCraft.CSCore.FluentExtensions.Synchronized<TAudioSource, T>(TAudioSource)
+  nameWithType.vb: FluentExtensions.Synchronized(Of TAudioSource, T)(TAudioSource)
+  fullName.vb: SilverCraft.CSCore.FluentExtensions.Synchronized(Of TAudioSource, T)(TAudioSource)
+  name.vb: Synchronized(Of TAudioSource, T)(TAudioSource)
+  spec.csharp:
+  - uid: SilverCraft.CSCore.FluentExtensions.Synchronized``2(``0)
+    name: Synchronized
+    href: SilverCraft.CSCore.FluentExtensions.html#SilverCraft_CSCore_FluentExtensions_Synchronized__2___0_
+  - name: <
+  - name: TAudioSource
+  - name: ','
+  - name: " "
+  - name: T
+  - name: '>'
+  - name: (
+  - name: TAudioSource
+  - name: )
+  spec.vb:
+  - uid: SilverCraft.CSCore.FluentExtensions.Synchronized``2(``0)
+    name: Synchronized
+    href: SilverCraft.CSCore.FluentExtensions.html#SilverCraft_CSCore_FluentExtensions_Synchronized__2___0_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TAudioSource
+  - name: ','
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - name: TAudioSource
+  - name: )
+- uid: SilverCraft.CSCore.FluentExtensions
+  commentId: T:SilverCraft.CSCore.FluentExtensions
+  parent: SilverCraft.CSCore
+  href: SilverCraft.CSCore.FluentExtensions.html
+  name: FluentExtensions
+  nameWithType: FluentExtensions
+  fullName: SilverCraft.CSCore.FluentExtensions
+- uid: SilverCraft.CSCore
+  commentId: N:SilverCraft.CSCore
+  href: SilverCraft.html
+  name: SilverCraft.CSCore
+  nameWithType: SilverCraft.CSCore
+  fullName: SilverCraft.CSCore
+  spec.csharp:
+  - uid: SilverCraft
+    name: SilverCraft
+    href: SilverCraft.html
+  - name: .
+  - uid: SilverCraft.CSCore
+    name: CSCore
+    href: SilverCraft.CSCore.html
+  spec.vb:
+  - uid: SilverCraft
+    name: SilverCraft
+    href: SilverCraft.html
+  - name: .
+  - uid: SilverCraft.CSCore
+    name: CSCore
+    href: SilverCraft.CSCore.html
+- uid: SilverCraft.CSCore.DSP.FftProvider.FftSize*
+  commentId: Overload:SilverCraft.CSCore.DSP.FftProvider.FftSize
+  href: SilverCraft.CSCore.DSP.FftProvider.html#SilverCraft_CSCore_DSP_FftProvider_FftSize
+  name: FftSize
+  nameWithType: FftProvider.FftSize
+  fullName: SilverCraft.CSCore.DSP.FftProvider.FftSize
+- uid: SilverCraft.CSCore.DSP.FftSize
+  commentId: T:SilverCraft.CSCore.DSP.FftSize
+  parent: SilverCraft.CSCore.DSP
+  href: SilverCraft.CSCore.DSP.FftSize.html
+  name: FftSize
+  nameWithType: FftSize
+  fullName: SilverCraft.CSCore.DSP.FftSize
+- uid: SilverCraft.CSCore.DSP.FftProvider.IsNewDataAvailable*
+  commentId: Overload:SilverCraft.CSCore.DSP.FftProvider.IsNewDataAvailable
+  href: SilverCraft.CSCore.DSP.FftProvider.html#SilverCraft_CSCore_DSP_FftProvider_IsNewDataAvailable
+  name: IsNewDataAvailable
+  nameWithType: FftProvider.IsNewDataAvailable
+  fullName: SilverCraft.CSCore.DSP.FftProvider.IsNewDataAvailable
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: SilverCraft.CSCore.DSP.WindowFunctions.None
+  commentId: F:SilverCraft.CSCore.DSP.WindowFunctions.None
+  href: SilverCraft.CSCore.DSP.WindowFunctions.html#SilverCraft_CSCore_DSP_WindowFunctions_None
+  name: None
+  nameWithType: WindowFunctions.None
+  fullName: SilverCraft.CSCore.DSP.WindowFunctions.None
+- uid: SilverCraft.CSCore.DSP.FftProvider.WindowFunction*
+  commentId: Overload:SilverCraft.CSCore.DSP.FftProvider.WindowFunction
+  href: SilverCraft.CSCore.DSP.FftProvider.html#SilverCraft_CSCore_DSP_FftProvider_WindowFunction
+  name: WindowFunction
+  nameWithType: FftProvider.WindowFunction
+  fullName: SilverCraft.CSCore.DSP.FftProvider.WindowFunction
+- uid: SilverCraft.CSCore.DSP.WindowFunction
+  commentId: T:SilverCraft.CSCore.DSP.WindowFunction
+  parent: SilverCraft.CSCore.DSP
+  href: SilverCraft.CSCore.DSP.WindowFunction.html
+  name: WindowFunction
+  nameWithType: WindowFunction
+  fullName: SilverCraft.CSCore.DSP.WindowFunction
+- uid: System.ArgumentOutOfRangeException
+  commentId: T:System.ArgumentOutOfRangeException
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.argumentoutofrangeexception
+  name: ArgumentOutOfRangeException
+  nameWithType: ArgumentOutOfRangeException
+  fullName: System.ArgumentOutOfRangeException
+- uid: SilverCraft.CSCore.DSP.FftProvider.#ctor*
+  commentId: Overload:SilverCraft.CSCore.DSP.FftProvider.#ctor
+  href: SilverCraft.CSCore.DSP.FftProvider.html#SilverCraft_CSCore_DSP_FftProvider__ctor_System_Int32_SilverCraft_CSCore_DSP_FftSize_
+  name: FftProvider
+  nameWithType: FftProvider.FftProvider
+  fullName: SilverCraft.CSCore.DSP.FftProvider.FftProvider
+  nameWithType.vb: FftProvider.New
+  fullName.vb: SilverCraft.CSCore.DSP.FftProvider.New
+  name.vb: New
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: SilverCraft.CSCore.DSP.FftProvider.Add*
+  commentId: Overload:SilverCraft.CSCore.DSP.FftProvider.Add
+  href: SilverCraft.CSCore.DSP.FftProvider.html#SilverCraft_CSCore_DSP_FftProvider_Add_System_Single_System_Single_
+  name: Add
+  nameWithType: FftProvider.Add
+  fullName: SilverCraft.CSCore.DSP.FftProvider.Add
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.single
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single
+- uid: System.Single[]
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.single
+  name: float[]
+  nameWithType: float[]
+  fullName: float[]
+  nameWithType.vb: Single()
+  fullName.vb: Single()
+  name.vb: Single()
+  spec.csharp:
+  - uid: System.Single
+    name: float
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: System.Single
+    name: Single
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: (
+  - name: )
+- uid: SilverCraft.CSCore.DSP.FftProvider.GetFftData*
+  commentId: Overload:SilverCraft.CSCore.DSP.FftProvider.GetFftData
+  href: SilverCraft.CSCore.DSP.FftProvider.html#SilverCraft_CSCore_DSP_FftProvider_GetFftData_SilverCraft_CSCore_Utils_Complex___
+  name: GetFftData
+  nameWithType: FftProvider.GetFftData
+  fullName: SilverCraft.CSCore.DSP.FftProvider.GetFftData
+- uid: SilverCraft.CSCore.Utils.Complex[]
+  isExternal: true
+  href: SilverCraft.CSCore.Utils.Complex.html
+  name: Complex[]
+  nameWithType: Complex[]
+  fullName: SilverCraft.CSCore.Utils.Complex[]
+  nameWithType.vb: Complex()
+  fullName.vb: SilverCraft.CSCore.Utils.Complex()
+  name.vb: Complex()
+  spec.csharp:
+  - uid: SilverCraft.CSCore.Utils.Complex
+    name: Complex
+    href: SilverCraft.CSCore.Utils.Complex.html
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: SilverCraft.CSCore.Utils.Complex
+    name: Complex
+    href: SilverCraft.CSCore.Utils.Complex.html
+  - name: (
+  - name: )

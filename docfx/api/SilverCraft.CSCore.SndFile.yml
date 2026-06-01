@@ -1,0 +1,30 @@
+### YamlMime:ManagedReference
+items:
+- uid: SilverCraft.CSCore.SndFile
+  commentId: N:SilverCraft.CSCore.SndFile
+  id: SilverCraft.CSCore.SndFile
+  children:
+  - SilverCraft.CSCore.SndFile.SndFileException
+  - SilverCraft.CSCore.SndFile.SndFileWaveStream
+  langs:
+  - csharp
+  - vb
+  name: SilverCraft.CSCore.SndFile
+  nameWithType: SilverCraft.CSCore.SndFile
+  fullName: SilverCraft.CSCore.SndFile
+  type: Namespace
+  assemblies:
+  - SilverCraft.CSCore.SndFile
+references:
+- uid: SilverCraft.CSCore.SndFile.SndFileException
+  commentId: T:SilverCraft.CSCore.SndFile.SndFileException
+  href: SilverCraft.CSCore.SndFile.SndFileException.html
+  name: SndFileException
+  nameWithType: SndFileException
+  fullName: SilverCraft.CSCore.SndFile.SndFileException
+- uid: SilverCraft.CSCore.SndFile.SndFileWaveStream
+  commentId: T:SilverCraft.CSCore.SndFile.SndFileWaveStream
+  href: SilverCraft.CSCore.SndFile.SndFileWaveStream.html
+  name: SndFileWaveStream
+  nameWithType: SndFileWaveStream
+  fullName: SilverCraft.CSCore.SndFile.SndFileWaveStream

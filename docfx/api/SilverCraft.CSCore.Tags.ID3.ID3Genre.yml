@@ -1,0 +1,5263 @@
+### YamlMime:ManagedReference
+items:
+- uid: SilverCraft.CSCore.Tags.ID3.ID3Genre
+  commentId: T:SilverCraft.CSCore.Tags.ID3.ID3Genre
+  id: ID3Genre
+  parent: SilverCraft.CSCore.Tags.ID3
+  children:
+  - SilverCraft.CSCore.Tags.ID3.ID3Genre.ACapella
+  - SilverCraft.CSCore.Tags.ID3.ID3Genre.Acid
+  - SilverCraft.CSCore.Tags.ID3.ID3Genre.AcidJazz
+  - SilverCraft.CSCore.Tags.ID3.ID3Genre.AcidPunk
+  - SilverCraft.CSCore.Tags.ID3.ID3Genre.Acoustic
+  - SilverCraft.CSCore.Tags.ID3.ID3Genre.AlternRock
+  - SilverCraft.CSCore.Tags.ID3.ID3Genre.Alternative
+  - SilverCraft.CSCore.Tags.ID3.ID3Genre.Ambient
+  - SilverCraft.CSCore.Tags.ID3.ID3Genre.Anime
+  - SilverCraft.CSCore.Tags.ID3.ID3Genre.ArtRock
+  - SilverCraft.CSCore.Tags.ID3.ID3Genre.AudioTheatre
+  - SilverCraft.CSCore.Tags.ID3.ID3Genre.Audiobook
+  - SilverCraft.CSCore.Tags.ID3.ID3Genre.Avantgrade
+  - SilverCraft.CSCore.Tags.ID3.ID3Genre.Ballad
+  - SilverCraft.CSCore.Tags.ID3.ID3Genre.Baroque
+  - SilverCraft.CSCore.Tags.ID3.ID3Genre.Bass
+  - SilverCraft.CSCore.Tags.ID3.ID3Genre.Beat
+  - SilverCraft.CSCore.Tags.ID3.ID3Genre.Bebob
+  - SilverCraft.CSCore.Tags.ID3.ID3Genre.Bhangra
+  - SilverCraft.CSCore.Tags.ID3.ID3Genre.BigBand
+  - SilverCraft.CSCore.Tags.ID3.ID3Genre.BigBeat
+  - SilverCraft.CSCore.Tags.ID3.ID3Genre.BlackMetal
+  - SilverCraft.CSCore.Tags.ID3.ID3Genre.Bluegrass
+  - SilverCraft.CSCore.Tags.ID3.ID3Genre.Blues
+  - SilverCraft.CSCore.Tags.ID3.ID3Genre.BootyBass
+  - SilverCraft.CSCore.Tags.ID3.ID3Genre.Breakbeat
+  - SilverCraft.CSCore.Tags.ID3.ID3Genre.Britpop
+  - SilverCraft.CSCore.Tags.ID3.ID3Genre.Cabaret
+  - SilverCraft.CSCore.Tags.ID3.ID3Genre.Celtic
+  - SilverCraft.CSCore.Tags.ID3.ID3Genre.ChamberMusic
+  - SilverCraft.CSCore.Tags.ID3.ID3Genre.Chanson
+  - SilverCraft.CSCore.Tags.ID3.ID3Genre.Chillout
+  - SilverCraft.CSCore.Tags.ID3.ID3Genre.Chorus
+  - SilverCraft.CSCore.Tags.ID3.ID3Genre.ChrisitanRock
+  - SilverCraft.CSCore.Tags.ID3.ID3Genre.ChristianGangstaRap
+  - SilverCraft.CSCore.Tags.ID3.ID3Genre.ChristianRap
+  - SilverCraft.CSCore.Tags.ID3.ID3Genre.Christmas
+  - SilverCraft.CSCore.Tags.ID3.ID3Genre.ClassicRock
+  - SilverCraft.CSCore.Tags.ID3.ID3Genre.Classical
+  - SilverCraft.CSCore.Tags.ID3.ID3Genre.Club
+  - SilverCraft.CSCore.Tags.ID3.ID3Genre.ClubHouse
+  - SilverCraft.CSCore.Tags.ID3.ID3Genre.Comedy
+  - SilverCraft.CSCore.Tags.ID3.ID3Genre.ContemporaryChrisitan
+  - SilverCraft.CSCore.Tags.ID3.ID3Genre.Country
+  - SilverCraft.CSCore.Tags.ID3.ID3Genre.Crossover
+  - SilverCraft.CSCore.Tags.ID3.ID3Genre.Cult
+  - SilverCraft.CSCore.Tags.ID3.ID3Genre.Dance
+  - SilverCraft.CSCore.Tags.ID3.ID3Genre.DanceHall
+  - SilverCraft.CSCore.Tags.ID3.ID3Genre.Darkwave
+  - SilverCraft.CSCore.Tags.ID3.ID3Genre.DeathMetal
+  - SilverCraft.CSCore.Tags.ID3.ID3Genre.Disco
+  - SilverCraft.CSCore.Tags.ID3.ID3Genre.Downtempo
+  - SilverCraft.CSCore.Tags.ID3.ID3Genre.Dream
+  - SilverCraft.CSCore.Tags.ID3.ID3Genre.DrumAndBass
+  - SilverCraft.CSCore.Tags.ID3.ID3Genre.DrumSolo
+  - SilverCraft.CSCore.Tags.ID3.ID3Genre.Dub
+  - SilverCraft.CSCore.Tags.ID3.ID3Genre.Dubstep
+  - SilverCraft.CSCore.Tags.ID3.ID3Genre.Duet
+  - SilverCraft.CSCore.Tags.ID3.ID3Genre.EBM
+  - SilverCraft.CSCore.Tags.ID3.ID3Genre.EasyListening
+  - SilverCraft.CSCore.Tags.ID3.ID3Genre.Eclectic
+  - SilverCraft.CSCore.Tags.ID3.ID3Genre.Electro
+  - SilverCraft.CSCore.Tags.ID3.ID3Genre.Electroclash
+  - SilverCraft.CSCore.Tags.ID3.ID3Genre.Electronic
+  - SilverCraft.CSCore.Tags.ID3.ID3Genre.Emo
+  - SilverCraft.CSCore.Tags.ID3.ID3Genre.Ethnic
+  - SilverCraft.CSCore.Tags.ID3.ID3Genre.EuroHouse
+  - SilverCraft.CSCore.Tags.ID3.ID3Genre.EuroTechno
+  - SilverCraft.CSCore.Tags.ID3.ID3Genre.Eurodance
+  - SilverCraft.CSCore.Tags.ID3.ID3Genre.Experimental
+  - SilverCraft.CSCore.Tags.ID3.ID3Genre.FastFusion
+  - SilverCraft.CSCore.Tags.ID3.ID3Genre.Folk
+  - SilverCraft.CSCore.Tags.ID3.ID3Genre.FolkRock
+  - SilverCraft.CSCore.Tags.ID3.ID3Genre.Folklore
+  - SilverCraft.CSCore.Tags.ID3.ID3Genre.Freestyle
+  - SilverCraft.CSCore.Tags.ID3.ID3Genre.Funk
+  - SilverCraft.CSCore.Tags.ID3.ID3Genre.Fusion
+  - SilverCraft.CSCore.Tags.ID3.ID3Genre.GFunk
+  - SilverCraft.CSCore.Tags.ID3.ID3Genre.Game
+  - SilverCraft.CSCore.Tags.ID3.ID3Genre.Gangsta
+  - SilverCraft.CSCore.Tags.ID3.ID3Genre.Garage
+  - SilverCraft.CSCore.Tags.ID3.ID3Genre.GarageRock
+  - SilverCraft.CSCore.Tags.ID3.ID3Genre.Global
+  - SilverCraft.CSCore.Tags.ID3.ID3Genre.Goa
+  - SilverCraft.CSCore.Tags.ID3.ID3Genre.Gospel
+  - SilverCraft.CSCore.Tags.ID3.ID3Genre.Gothic
+  - SilverCraft.CSCore.Tags.ID3.ID3Genre.GothicRock
+  - SilverCraft.CSCore.Tags.ID3.ID3Genre.Grunge
+  - SilverCraft.CSCore.Tags.ID3.ID3Genre.HardRock
+  - SilverCraft.CSCore.Tags.ID3.ID3Genre.HardcoreTechno
+  - SilverCraft.CSCore.Tags.ID3.ID3Genre.HeavyMetal
+  - SilverCraft.CSCore.Tags.ID3.ID3Genre.HipHop
+  - SilverCraft.CSCore.Tags.ID3.ID3Genre.House
+  - SilverCraft.CSCore.Tags.ID3.ID3Genre.Humour
+  - SilverCraft.CSCore.Tags.ID3.ID3Genre.IDM
+  - SilverCraft.CSCore.Tags.ID3.ID3Genre.Illbient
+  - SilverCraft.CSCore.Tags.ID3.ID3Genre.Indie
+  - SilverCraft.CSCore.Tags.ID3.ID3Genre.IndieRock
+  - SilverCraft.CSCore.Tags.ID3.ID3Genre.Industrial
+  - SilverCraft.CSCore.Tags.ID3.ID3Genre.IndustroGoth
+  - SilverCraft.CSCore.Tags.ID3.ID3Genre.Instrumental
+  - SilverCraft.CSCore.Tags.ID3.ID3Genre.InstrumentalPop
+  - SilverCraft.CSCore.Tags.ID3.ID3Genre.InstrumentalRock
+  - SilverCraft.CSCore.Tags.ID3.ID3Genre.JamBand
+  - SilverCraft.CSCore.Tags.ID3.ID3Genre.Jazz
+  - SilverCraft.CSCore.Tags.ID3.ID3Genre.JazzAndFunk
+  - SilverCraft.CSCore.Tags.ID3.ID3Genre.Jpop
+  - SilverCraft.CSCore.Tags.ID3.ID3Genre.Jungle
+  - SilverCraft.CSCore.Tags.ID3.ID3Genre.Krautrock
+  - SilverCraft.CSCore.Tags.ID3.ID3Genre.Latin
+  - SilverCraft.CSCore.Tags.ID3.ID3Genre.Leftfield
+  - SilverCraft.CSCore.Tags.ID3.ID3Genre.LoFi
+  - SilverCraft.CSCore.Tags.ID3.ID3Genre.Lounge
+  - SilverCraft.CSCore.Tags.ID3.ID3Genre.MathRock
+  - SilverCraft.CSCore.Tags.ID3.ID3Genre.Meditative
+  - SilverCraft.CSCore.Tags.ID3.ID3Genre.Merengue
+  - SilverCraft.CSCore.Tags.ID3.ID3Genre.Metal
+  - SilverCraft.CSCore.Tags.ID3.ID3Genre.Musical
+  - SilverCraft.CSCore.Tags.ID3.ID3Genre.NationalFolk
+  - SilverCraft.CSCore.Tags.ID3.ID3Genre.NativeAmerican
+  - SilverCraft.CSCore.Tags.ID3.ID3Genre.NegerPunk
+  - SilverCraft.CSCore.Tags.ID3.ID3Genre.Neoclassical
+  - SilverCraft.CSCore.Tags.ID3.ID3Genre.NeueDeutscheWelle
+  - SilverCraft.CSCore.Tags.ID3.ID3Genre.NewAge
+  - SilverCraft.CSCore.Tags.ID3.ID3Genre.NewRomantic
+  - SilverCraft.CSCore.Tags.ID3.ID3Genre.NewWave
+  - SilverCraft.CSCore.Tags.ID3.ID3Genre.Noise
+  - SilverCraft.CSCore.Tags.ID3.ID3Genre.NuBreakz
+  - SilverCraft.CSCore.Tags.ID3.ID3Genre.Oldies
+  - SilverCraft.CSCore.Tags.ID3.ID3Genre.Opera
+  - SilverCraft.CSCore.Tags.ID3.ID3Genre.Other
+  - SilverCraft.CSCore.Tags.ID3.ID3Genre.Podcast
+  - SilverCraft.CSCore.Tags.ID3.ID3Genre.Polka
+  - SilverCraft.CSCore.Tags.ID3.ID3Genre.PolskPunk
+  - SilverCraft.CSCore.Tags.ID3.ID3Genre.Pop
+  - SilverCraft.CSCore.Tags.ID3.ID3Genre.PopFolk
+  - SilverCraft.CSCore.Tags.ID3.ID3Genre.PopFunk
+  - SilverCraft.CSCore.Tags.ID3.ID3Genre.PornGroove
+  - SilverCraft.CSCore.Tags.ID3.ID3Genre.PostPunk
+  - SilverCraft.CSCore.Tags.ID3.ID3Genre.PostRock
+  - SilverCraft.CSCore.Tags.ID3.ID3Genre.PowerBallad
+  - SilverCraft.CSCore.Tags.ID3.ID3Genre.Pranks
+  - SilverCraft.CSCore.Tags.ID3.ID3Genre.Primus
+  - SilverCraft.CSCore.Tags.ID3.ID3Genre.ProgressiveRock
+  - SilverCraft.CSCore.Tags.ID3.ID3Genre.Psybient
+  - SilverCraft.CSCore.Tags.ID3.ID3Genre.Psychadelic
+  - SilverCraft.CSCore.Tags.ID3.ID3Genre.PsychedelicRock
+  - SilverCraft.CSCore.Tags.ID3.ID3Genre.Psytrance
+  - SilverCraft.CSCore.Tags.ID3.ID3Genre.Punk
+  - SilverCraft.CSCore.Tags.ID3.ID3Genre.PunkRock
+  - SilverCraft.CSCore.Tags.ID3.ID3Genre.RAndB
+  - SilverCraft.CSCore.Tags.ID3.ID3Genre.Rap
+  - SilverCraft.CSCore.Tags.ID3.ID3Genre.Rave
+  - SilverCraft.CSCore.Tags.ID3.ID3Genre.Reggae
+  - SilverCraft.CSCore.Tags.ID3.ID3Genre.Retro
+  - SilverCraft.CSCore.Tags.ID3.ID3Genre.Revival
+  - SilverCraft.CSCore.Tags.ID3.ID3Genre.Rock
+  - SilverCraft.CSCore.Tags.ID3.ID3Genre.RockAndRoll
+  - SilverCraft.CSCore.Tags.ID3.ID3Genre.RythmicSoul
+  - SilverCraft.CSCore.Tags.ID3.ID3Genre.Salsa
+  - SilverCraft.CSCore.Tags.ID3.ID3Genre.Samba
+  - SilverCraft.CSCore.Tags.ID3.ID3Genre.Satire
+  - SilverCraft.CSCore.Tags.ID3.ID3Genre.Shoegaze
+  - SilverCraft.CSCore.Tags.ID3.ID3Genre.Showtunes
+  - SilverCraft.CSCore.Tags.ID3.ID3Genre.Ska
+  - SilverCraft.CSCore.Tags.ID3.ID3Genre.SlowJam
+  - SilverCraft.CSCore.Tags.ID3.ID3Genre.SlowRock
+  - SilverCraft.CSCore.Tags.ID3.ID3Genre.Sonata
+  - SilverCraft.CSCore.Tags.ID3.ID3Genre.Soul
+  - SilverCraft.CSCore.Tags.ID3.ID3Genre.SoundClip
+  - SilverCraft.CSCore.Tags.ID3.ID3Genre.Soundtrack
+  - SilverCraft.CSCore.Tags.ID3.ID3Genre.SouthernRock
+  - SilverCraft.CSCore.Tags.ID3.ID3Genre.Space
+  - SilverCraft.CSCore.Tags.ID3.ID3Genre.SpaceRock
+  - SilverCraft.CSCore.Tags.ID3.ID3Genre.Speech
+  - SilverCraft.CSCore.Tags.ID3.ID3Genre.Swing
+  - SilverCraft.CSCore.Tags.ID3.ID3Genre.Symphonicrock
+  - SilverCraft.CSCore.Tags.ID3.ID3Genre.Symphony
+  - SilverCraft.CSCore.Tags.ID3.ID3Genre.Synthpop
+  - SilverCraft.CSCore.Tags.ID3.ID3Genre.Tango
+  - SilverCraft.CSCore.Tags.ID3.ID3Genre.Techno
+  - SilverCraft.CSCore.Tags.ID3.ID3Genre.TechnoIndustrial
+  - SilverCraft.CSCore.Tags.ID3.ID3Genre.Terror
+  - SilverCraft.CSCore.Tags.ID3.ID3Genre.ThrashMetal
+  - SilverCraft.CSCore.Tags.ID3.ID3Genre.Top40
+  - SilverCraft.CSCore.Tags.ID3.ID3Genre.Trailer
+  - SilverCraft.CSCore.Tags.ID3.ID3Genre.Trance
+  - SilverCraft.CSCore.Tags.ID3.ID3Genre.Tribal
+  - SilverCraft.CSCore.Tags.ID3.ID3Genre.TripHop
+  - SilverCraft.CSCore.Tags.ID3.ID3Genre.TropRock
+  - SilverCraft.CSCore.Tags.ID3.ID3Genre.Vocal
+  - SilverCraft.CSCore.Tags.ID3.ID3Genre.WorldMusic
+  langs:
+  - csharp
+  - vb
+  name: ID3Genre
+  nameWithType: ID3Genre
+  fullName: SilverCraft.CSCore.Tags.ID3.ID3Genre
+  type: Enum
+  source:
+    remote:
+      path: SilverCraft.CSCore/Tags/ID3/ID3Genre.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: ID3Genre
+    path: ../SilverCraft.CSCore/Tags/ID3/ID3Genre.cs
+    startLine: 6
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Tags.ID3
+  summary: >-
+    Represents a list of common ID3v1 genre tags used in media files.
+
+    https://en.wikipedia.org/wiki/List_of_ID3v1_genres
+  example: []
+  syntax:
+    content: 'public enum ID3Genre : byte'
+    content.vb: Public Enum ID3Genre As Byte
+- uid: SilverCraft.CSCore.Tags.ID3.ID3Genre.Blues
+  commentId: F:SilverCraft.CSCore.Tags.ID3.ID3Genre.Blues
+  id: Blues
+  parent: SilverCraft.CSCore.Tags.ID3.ID3Genre
+  langs:
+  - csharp
+  - vb
+  name: Blues
+  nameWithType: ID3Genre.Blues
+  fullName: SilverCraft.CSCore.Tags.ID3.ID3Genre.Blues
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/Tags/ID3/ID3Genre.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: Blues
+    path: ../SilverCraft.CSCore/Tags/ID3/ID3Genre.cs
+    startLine: 8
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Tags.ID3
+  syntax:
+    content: Blues = 0
+    return:
+      type: SilverCraft.CSCore.Tags.ID3.ID3Genre
+- uid: SilverCraft.CSCore.Tags.ID3.ID3Genre.ClassicRock
+  commentId: F:SilverCraft.CSCore.Tags.ID3.ID3Genre.ClassicRock
+  id: ClassicRock
+  parent: SilverCraft.CSCore.Tags.ID3.ID3Genre
+  langs:
+  - csharp
+  - vb
+  name: ClassicRock
+  nameWithType: ID3Genre.ClassicRock
+  fullName: SilverCraft.CSCore.Tags.ID3.ID3Genre.ClassicRock
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/Tags/ID3/ID3Genre.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: ClassicRock
+    path: ../SilverCraft.CSCore/Tags/ID3/ID3Genre.cs
+    startLine: 9
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Tags.ID3
+  syntax:
+    content: ClassicRock = 1
+    return:
+      type: SilverCraft.CSCore.Tags.ID3.ID3Genre
+- uid: SilverCraft.CSCore.Tags.ID3.ID3Genre.Country
+  commentId: F:SilverCraft.CSCore.Tags.ID3.ID3Genre.Country
+  id: Country
+  parent: SilverCraft.CSCore.Tags.ID3.ID3Genre
+  langs:
+  - csharp
+  - vb
+  name: Country
+  nameWithType: ID3Genre.Country
+  fullName: SilverCraft.CSCore.Tags.ID3.ID3Genre.Country
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/Tags/ID3/ID3Genre.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: Country
+    path: ../SilverCraft.CSCore/Tags/ID3/ID3Genre.cs
+    startLine: 10
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Tags.ID3
+  syntax:
+    content: Country = 2
+    return:
+      type: SilverCraft.CSCore.Tags.ID3.ID3Genre
+- uid: SilverCraft.CSCore.Tags.ID3.ID3Genre.Dance
+  commentId: F:SilverCraft.CSCore.Tags.ID3.ID3Genre.Dance
+  id: Dance
+  parent: SilverCraft.CSCore.Tags.ID3.ID3Genre
+  langs:
+  - csharp
+  - vb
+  name: Dance
+  nameWithType: ID3Genre.Dance
+  fullName: SilverCraft.CSCore.Tags.ID3.ID3Genre.Dance
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/Tags/ID3/ID3Genre.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: Dance
+    path: ../SilverCraft.CSCore/Tags/ID3/ID3Genre.cs
+    startLine: 11
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Tags.ID3
+  syntax:
+    content: Dance = 3
+    return:
+      type: SilverCraft.CSCore.Tags.ID3.ID3Genre
+- uid: SilverCraft.CSCore.Tags.ID3.ID3Genre.Disco
+  commentId: F:SilverCraft.CSCore.Tags.ID3.ID3Genre.Disco
+  id: Disco
+  parent: SilverCraft.CSCore.Tags.ID3.ID3Genre
+  langs:
+  - csharp
+  - vb
+  name: Disco
+  nameWithType: ID3Genre.Disco
+  fullName: SilverCraft.CSCore.Tags.ID3.ID3Genre.Disco
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/Tags/ID3/ID3Genre.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: Disco
+    path: ../SilverCraft.CSCore/Tags/ID3/ID3Genre.cs
+    startLine: 12
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Tags.ID3
+  syntax:
+    content: Disco = 4
+    return:
+      type: SilverCraft.CSCore.Tags.ID3.ID3Genre
+- uid: SilverCraft.CSCore.Tags.ID3.ID3Genre.Funk
+  commentId: F:SilverCraft.CSCore.Tags.ID3.ID3Genre.Funk
+  id: Funk
+  parent: SilverCraft.CSCore.Tags.ID3.ID3Genre
+  langs:
+  - csharp
+  - vb
+  name: Funk
+  nameWithType: ID3Genre.Funk
+  fullName: SilverCraft.CSCore.Tags.ID3.ID3Genre.Funk
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/Tags/ID3/ID3Genre.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: Funk
+    path: ../SilverCraft.CSCore/Tags/ID3/ID3Genre.cs
+    startLine: 13
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Tags.ID3
+  syntax:
+    content: Funk = 5
+    return:
+      type: SilverCraft.CSCore.Tags.ID3.ID3Genre
+- uid: SilverCraft.CSCore.Tags.ID3.ID3Genre.Grunge
+  commentId: F:SilverCraft.CSCore.Tags.ID3.ID3Genre.Grunge
+  id: Grunge
+  parent: SilverCraft.CSCore.Tags.ID3.ID3Genre
+  langs:
+  - csharp
+  - vb
+  name: Grunge
+  nameWithType: ID3Genre.Grunge
+  fullName: SilverCraft.CSCore.Tags.ID3.ID3Genre.Grunge
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/Tags/ID3/ID3Genre.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: Grunge
+    path: ../SilverCraft.CSCore/Tags/ID3/ID3Genre.cs
+    startLine: 14
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Tags.ID3
+  syntax:
+    content: Grunge = 6
+    return:
+      type: SilverCraft.CSCore.Tags.ID3.ID3Genre
+- uid: SilverCraft.CSCore.Tags.ID3.ID3Genre.HipHop
+  commentId: F:SilverCraft.CSCore.Tags.ID3.ID3Genre.HipHop
+  id: HipHop
+  parent: SilverCraft.CSCore.Tags.ID3.ID3Genre
+  langs:
+  - csharp
+  - vb
+  name: HipHop
+  nameWithType: ID3Genre.HipHop
+  fullName: SilverCraft.CSCore.Tags.ID3.ID3Genre.HipHop
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/Tags/ID3/ID3Genre.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: HipHop
+    path: ../SilverCraft.CSCore/Tags/ID3/ID3Genre.cs
+    startLine: 15
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Tags.ID3
+  syntax:
+    content: HipHop = 7
+    return:
+      type: SilverCraft.CSCore.Tags.ID3.ID3Genre
+- uid: SilverCraft.CSCore.Tags.ID3.ID3Genre.Jazz
+  commentId: F:SilverCraft.CSCore.Tags.ID3.ID3Genre.Jazz
+  id: Jazz
+  parent: SilverCraft.CSCore.Tags.ID3.ID3Genre
+  langs:
+  - csharp
+  - vb
+  name: Jazz
+  nameWithType: ID3Genre.Jazz
+  fullName: SilverCraft.CSCore.Tags.ID3.ID3Genre.Jazz
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/Tags/ID3/ID3Genre.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: Jazz
+    path: ../SilverCraft.CSCore/Tags/ID3/ID3Genre.cs
+    startLine: 16
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Tags.ID3
+  syntax:
+    content: Jazz = 8
+    return:
+      type: SilverCraft.CSCore.Tags.ID3.ID3Genre
+- uid: SilverCraft.CSCore.Tags.ID3.ID3Genre.Metal
+  commentId: F:SilverCraft.CSCore.Tags.ID3.ID3Genre.Metal
+  id: Metal
+  parent: SilverCraft.CSCore.Tags.ID3.ID3Genre
+  langs:
+  - csharp
+  - vb
+  name: Metal
+  nameWithType: ID3Genre.Metal
+  fullName: SilverCraft.CSCore.Tags.ID3.ID3Genre.Metal
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/Tags/ID3/ID3Genre.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: Metal
+    path: ../SilverCraft.CSCore/Tags/ID3/ID3Genre.cs
+    startLine: 17
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Tags.ID3
+  syntax:
+    content: Metal = 9
+    return:
+      type: SilverCraft.CSCore.Tags.ID3.ID3Genre
+- uid: SilverCraft.CSCore.Tags.ID3.ID3Genre.NewAge
+  commentId: F:SilverCraft.CSCore.Tags.ID3.ID3Genre.NewAge
+  id: NewAge
+  parent: SilverCraft.CSCore.Tags.ID3.ID3Genre
+  langs:
+  - csharp
+  - vb
+  name: NewAge
+  nameWithType: ID3Genre.NewAge
+  fullName: SilverCraft.CSCore.Tags.ID3.ID3Genre.NewAge
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/Tags/ID3/ID3Genre.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: NewAge
+    path: ../SilverCraft.CSCore/Tags/ID3/ID3Genre.cs
+    startLine: 18
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Tags.ID3
+  syntax:
+    content: NewAge = 10
+    return:
+      type: SilverCraft.CSCore.Tags.ID3.ID3Genre
+- uid: SilverCraft.CSCore.Tags.ID3.ID3Genre.Oldies
+  commentId: F:SilverCraft.CSCore.Tags.ID3.ID3Genre.Oldies
+  id: Oldies
+  parent: SilverCraft.CSCore.Tags.ID3.ID3Genre
+  langs:
+  - csharp
+  - vb
+  name: Oldies
+  nameWithType: ID3Genre.Oldies
+  fullName: SilverCraft.CSCore.Tags.ID3.ID3Genre.Oldies
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/Tags/ID3/ID3Genre.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: Oldies
+    path: ../SilverCraft.CSCore/Tags/ID3/ID3Genre.cs
+    startLine: 19
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Tags.ID3
+  syntax:
+    content: Oldies = 11
+    return:
+      type: SilverCraft.CSCore.Tags.ID3.ID3Genre
+- uid: SilverCraft.CSCore.Tags.ID3.ID3Genre.Other
+  commentId: F:SilverCraft.CSCore.Tags.ID3.ID3Genre.Other
+  id: Other
+  parent: SilverCraft.CSCore.Tags.ID3.ID3Genre
+  langs:
+  - csharp
+  - vb
+  name: Other
+  nameWithType: ID3Genre.Other
+  fullName: SilverCraft.CSCore.Tags.ID3.ID3Genre.Other
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/Tags/ID3/ID3Genre.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: Other
+    path: ../SilverCraft.CSCore/Tags/ID3/ID3Genre.cs
+    startLine: 20
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Tags.ID3
+  syntax:
+    content: Other = 12
+    return:
+      type: SilverCraft.CSCore.Tags.ID3.ID3Genre
+- uid: SilverCraft.CSCore.Tags.ID3.ID3Genre.Pop
+  commentId: F:SilverCraft.CSCore.Tags.ID3.ID3Genre.Pop
+  id: Pop
+  parent: SilverCraft.CSCore.Tags.ID3.ID3Genre
+  langs:
+  - csharp
+  - vb
+  name: Pop
+  nameWithType: ID3Genre.Pop
+  fullName: SilverCraft.CSCore.Tags.ID3.ID3Genre.Pop
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/Tags/ID3/ID3Genre.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: Pop
+    path: ../SilverCraft.CSCore/Tags/ID3/ID3Genre.cs
+    startLine: 21
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Tags.ID3
+  syntax:
+    content: Pop = 13
+    return:
+      type: SilverCraft.CSCore.Tags.ID3.ID3Genre
+- uid: SilverCraft.CSCore.Tags.ID3.ID3Genre.RAndB
+  commentId: F:SilverCraft.CSCore.Tags.ID3.ID3Genre.RAndB
+  id: RAndB
+  parent: SilverCraft.CSCore.Tags.ID3.ID3Genre
+  langs:
+  - csharp
+  - vb
+  name: RAndB
+  nameWithType: ID3Genre.RAndB
+  fullName: SilverCraft.CSCore.Tags.ID3.ID3Genre.RAndB
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/Tags/ID3/ID3Genre.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: RAndB
+    path: ../SilverCraft.CSCore/Tags/ID3/ID3Genre.cs
+    startLine: 22
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Tags.ID3
+  syntax:
+    content: RAndB = 14
+    return:
+      type: SilverCraft.CSCore.Tags.ID3.ID3Genre
+- uid: SilverCraft.CSCore.Tags.ID3.ID3Genre.Rap
+  commentId: F:SilverCraft.CSCore.Tags.ID3.ID3Genre.Rap
+  id: Rap
+  parent: SilverCraft.CSCore.Tags.ID3.ID3Genre
+  langs:
+  - csharp
+  - vb
+  name: Rap
+  nameWithType: ID3Genre.Rap
+  fullName: SilverCraft.CSCore.Tags.ID3.ID3Genre.Rap
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/Tags/ID3/ID3Genre.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: Rap
+    path: ../SilverCraft.CSCore/Tags/ID3/ID3Genre.cs
+    startLine: 23
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Tags.ID3
+  syntax:
+    content: Rap = 15
+    return:
+      type: SilverCraft.CSCore.Tags.ID3.ID3Genre
+- uid: SilverCraft.CSCore.Tags.ID3.ID3Genre.Reggae
+  commentId: F:SilverCraft.CSCore.Tags.ID3.ID3Genre.Reggae
+  id: Reggae
+  parent: SilverCraft.CSCore.Tags.ID3.ID3Genre
+  langs:
+  - csharp
+  - vb
+  name: Reggae
+  nameWithType: ID3Genre.Reggae
+  fullName: SilverCraft.CSCore.Tags.ID3.ID3Genre.Reggae
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/Tags/ID3/ID3Genre.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: Reggae
+    path: ../SilverCraft.CSCore/Tags/ID3/ID3Genre.cs
+    startLine: 24
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Tags.ID3
+  syntax:
+    content: Reggae = 16
+    return:
+      type: SilverCraft.CSCore.Tags.ID3.ID3Genre
+- uid: SilverCraft.CSCore.Tags.ID3.ID3Genre.Rock
+  commentId: F:SilverCraft.CSCore.Tags.ID3.ID3Genre.Rock
+  id: Rock
+  parent: SilverCraft.CSCore.Tags.ID3.ID3Genre
+  langs:
+  - csharp
+  - vb
+  name: Rock
+  nameWithType: ID3Genre.Rock
+  fullName: SilverCraft.CSCore.Tags.ID3.ID3Genre.Rock
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/Tags/ID3/ID3Genre.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: Rock
+    path: ../SilverCraft.CSCore/Tags/ID3/ID3Genre.cs
+    startLine: 25
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Tags.ID3
+  syntax:
+    content: Rock = 17
+    return:
+      type: SilverCraft.CSCore.Tags.ID3.ID3Genre
+- uid: SilverCraft.CSCore.Tags.ID3.ID3Genre.Techno
+  commentId: F:SilverCraft.CSCore.Tags.ID3.ID3Genre.Techno
+  id: Techno
+  parent: SilverCraft.CSCore.Tags.ID3.ID3Genre
+  langs:
+  - csharp
+  - vb
+  name: Techno
+  nameWithType: ID3Genre.Techno
+  fullName: SilverCraft.CSCore.Tags.ID3.ID3Genre.Techno
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/Tags/ID3/ID3Genre.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: Techno
+    path: ../SilverCraft.CSCore/Tags/ID3/ID3Genre.cs
+    startLine: 26
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Tags.ID3
+  syntax:
+    content: Techno = 18
+    return:
+      type: SilverCraft.CSCore.Tags.ID3.ID3Genre
+- uid: SilverCraft.CSCore.Tags.ID3.ID3Genre.Industrial
+  commentId: F:SilverCraft.CSCore.Tags.ID3.ID3Genre.Industrial
+  id: Industrial
+  parent: SilverCraft.CSCore.Tags.ID3.ID3Genre
+  langs:
+  - csharp
+  - vb
+  name: Industrial
+  nameWithType: ID3Genre.Industrial
+  fullName: SilverCraft.CSCore.Tags.ID3.ID3Genre.Industrial
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/Tags/ID3/ID3Genre.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: Industrial
+    path: ../SilverCraft.CSCore/Tags/ID3/ID3Genre.cs
+    startLine: 27
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Tags.ID3
+  syntax:
+    content: Industrial = 19
+    return:
+      type: SilverCraft.CSCore.Tags.ID3.ID3Genre
+- uid: SilverCraft.CSCore.Tags.ID3.ID3Genre.Alternative
+  commentId: F:SilverCraft.CSCore.Tags.ID3.ID3Genre.Alternative
+  id: Alternative
+  parent: SilverCraft.CSCore.Tags.ID3.ID3Genre
+  langs:
+  - csharp
+  - vb
+  name: Alternative
+  nameWithType: ID3Genre.Alternative
+  fullName: SilverCraft.CSCore.Tags.ID3.ID3Genre.Alternative
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/Tags/ID3/ID3Genre.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: Alternative
+    path: ../SilverCraft.CSCore/Tags/ID3/ID3Genre.cs
+    startLine: 28
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Tags.ID3
+  syntax:
+    content: Alternative = 20
+    return:
+      type: SilverCraft.CSCore.Tags.ID3.ID3Genre
+- uid: SilverCraft.CSCore.Tags.ID3.ID3Genre.Ska
+  commentId: F:SilverCraft.CSCore.Tags.ID3.ID3Genre.Ska
+  id: Ska
+  parent: SilverCraft.CSCore.Tags.ID3.ID3Genre
+  langs:
+  - csharp
+  - vb
+  name: Ska
+  nameWithType: ID3Genre.Ska
+  fullName: SilverCraft.CSCore.Tags.ID3.ID3Genre.Ska
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/Tags/ID3/ID3Genre.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: Ska
+    path: ../SilverCraft.CSCore/Tags/ID3/ID3Genre.cs
+    startLine: 29
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Tags.ID3
+  syntax:
+    content: Ska = 21
+    return:
+      type: SilverCraft.CSCore.Tags.ID3.ID3Genre
+- uid: SilverCraft.CSCore.Tags.ID3.ID3Genre.DeathMetal
+  commentId: F:SilverCraft.CSCore.Tags.ID3.ID3Genre.DeathMetal
+  id: DeathMetal
+  parent: SilverCraft.CSCore.Tags.ID3.ID3Genre
+  langs:
+  - csharp
+  - vb
+  name: DeathMetal
+  nameWithType: ID3Genre.DeathMetal
+  fullName: SilverCraft.CSCore.Tags.ID3.ID3Genre.DeathMetal
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/Tags/ID3/ID3Genre.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: DeathMetal
+    path: ../SilverCraft.CSCore/Tags/ID3/ID3Genre.cs
+    startLine: 30
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Tags.ID3
+  syntax:
+    content: DeathMetal = 22
+    return:
+      type: SilverCraft.CSCore.Tags.ID3.ID3Genre
+- uid: SilverCraft.CSCore.Tags.ID3.ID3Genre.Pranks
+  commentId: F:SilverCraft.CSCore.Tags.ID3.ID3Genre.Pranks
+  id: Pranks
+  parent: SilverCraft.CSCore.Tags.ID3.ID3Genre
+  langs:
+  - csharp
+  - vb
+  name: Pranks
+  nameWithType: ID3Genre.Pranks
+  fullName: SilverCraft.CSCore.Tags.ID3.ID3Genre.Pranks
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/Tags/ID3/ID3Genre.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: Pranks
+    path: ../SilverCraft.CSCore/Tags/ID3/ID3Genre.cs
+    startLine: 31
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Tags.ID3
+  syntax:
+    content: Pranks = 23
+    return:
+      type: SilverCraft.CSCore.Tags.ID3.ID3Genre
+- uid: SilverCraft.CSCore.Tags.ID3.ID3Genre.Soundtrack
+  commentId: F:SilverCraft.CSCore.Tags.ID3.ID3Genre.Soundtrack
+  id: Soundtrack
+  parent: SilverCraft.CSCore.Tags.ID3.ID3Genre
+  langs:
+  - csharp
+  - vb
+  name: Soundtrack
+  nameWithType: ID3Genre.Soundtrack
+  fullName: SilverCraft.CSCore.Tags.ID3.ID3Genre.Soundtrack
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/Tags/ID3/ID3Genre.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: Soundtrack
+    path: ../SilverCraft.CSCore/Tags/ID3/ID3Genre.cs
+    startLine: 32
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Tags.ID3
+  syntax:
+    content: Soundtrack = 24
+    return:
+      type: SilverCraft.CSCore.Tags.ID3.ID3Genre
+- uid: SilverCraft.CSCore.Tags.ID3.ID3Genre.EuroTechno
+  commentId: F:SilverCraft.CSCore.Tags.ID3.ID3Genre.EuroTechno
+  id: EuroTechno
+  parent: SilverCraft.CSCore.Tags.ID3.ID3Genre
+  langs:
+  - csharp
+  - vb
+  name: EuroTechno
+  nameWithType: ID3Genre.EuroTechno
+  fullName: SilverCraft.CSCore.Tags.ID3.ID3Genre.EuroTechno
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/Tags/ID3/ID3Genre.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: EuroTechno
+    path: ../SilverCraft.CSCore/Tags/ID3/ID3Genre.cs
+    startLine: 33
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Tags.ID3
+  syntax:
+    content: EuroTechno = 25
+    return:
+      type: SilverCraft.CSCore.Tags.ID3.ID3Genre
+- uid: SilverCraft.CSCore.Tags.ID3.ID3Genre.Ambient
+  commentId: F:SilverCraft.CSCore.Tags.ID3.ID3Genre.Ambient
+  id: Ambient
+  parent: SilverCraft.CSCore.Tags.ID3.ID3Genre
+  langs:
+  - csharp
+  - vb
+  name: Ambient
+  nameWithType: ID3Genre.Ambient
+  fullName: SilverCraft.CSCore.Tags.ID3.ID3Genre.Ambient
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/Tags/ID3/ID3Genre.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: Ambient
+    path: ../SilverCraft.CSCore/Tags/ID3/ID3Genre.cs
+    startLine: 34
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Tags.ID3
+  syntax:
+    content: Ambient = 26
+    return:
+      type: SilverCraft.CSCore.Tags.ID3.ID3Genre
+- uid: SilverCraft.CSCore.Tags.ID3.ID3Genre.TripHop
+  commentId: F:SilverCraft.CSCore.Tags.ID3.ID3Genre.TripHop
+  id: TripHop
+  parent: SilverCraft.CSCore.Tags.ID3.ID3Genre
+  langs:
+  - csharp
+  - vb
+  name: TripHop
+  nameWithType: ID3Genre.TripHop
+  fullName: SilverCraft.CSCore.Tags.ID3.ID3Genre.TripHop
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/Tags/ID3/ID3Genre.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: TripHop
+    path: ../SilverCraft.CSCore/Tags/ID3/ID3Genre.cs
+    startLine: 35
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Tags.ID3
+  syntax:
+    content: TripHop = 27
+    return:
+      type: SilverCraft.CSCore.Tags.ID3.ID3Genre
+- uid: SilverCraft.CSCore.Tags.ID3.ID3Genre.Vocal
+  commentId: F:SilverCraft.CSCore.Tags.ID3.ID3Genre.Vocal
+  id: Vocal
+  parent: SilverCraft.CSCore.Tags.ID3.ID3Genre
+  langs:
+  - csharp
+  - vb
+  name: Vocal
+  nameWithType: ID3Genre.Vocal
+  fullName: SilverCraft.CSCore.Tags.ID3.ID3Genre.Vocal
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/Tags/ID3/ID3Genre.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: Vocal
+    path: ../SilverCraft.CSCore/Tags/ID3/ID3Genre.cs
+    startLine: 36
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Tags.ID3
+  syntax:
+    content: Vocal = 28
+    return:
+      type: SilverCraft.CSCore.Tags.ID3.ID3Genre
+- uid: SilverCraft.CSCore.Tags.ID3.ID3Genre.JazzAndFunk
+  commentId: F:SilverCraft.CSCore.Tags.ID3.ID3Genre.JazzAndFunk
+  id: JazzAndFunk
+  parent: SilverCraft.CSCore.Tags.ID3.ID3Genre
+  langs:
+  - csharp
+  - vb
+  name: JazzAndFunk
+  nameWithType: ID3Genre.JazzAndFunk
+  fullName: SilverCraft.CSCore.Tags.ID3.ID3Genre.JazzAndFunk
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/Tags/ID3/ID3Genre.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: JazzAndFunk
+    path: ../SilverCraft.CSCore/Tags/ID3/ID3Genre.cs
+    startLine: 37
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Tags.ID3
+  syntax:
+    content: JazzAndFunk = 29
+    return:
+      type: SilverCraft.CSCore.Tags.ID3.ID3Genre
+- uid: SilverCraft.CSCore.Tags.ID3.ID3Genre.Fusion
+  commentId: F:SilverCraft.CSCore.Tags.ID3.ID3Genre.Fusion
+  id: Fusion
+  parent: SilverCraft.CSCore.Tags.ID3.ID3Genre
+  langs:
+  - csharp
+  - vb
+  name: Fusion
+  nameWithType: ID3Genre.Fusion
+  fullName: SilverCraft.CSCore.Tags.ID3.ID3Genre.Fusion
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/Tags/ID3/ID3Genre.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: Fusion
+    path: ../SilverCraft.CSCore/Tags/ID3/ID3Genre.cs
+    startLine: 38
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Tags.ID3
+  syntax:
+    content: Fusion = 30
+    return:
+      type: SilverCraft.CSCore.Tags.ID3.ID3Genre
+- uid: SilverCraft.CSCore.Tags.ID3.ID3Genre.Trance
+  commentId: F:SilverCraft.CSCore.Tags.ID3.ID3Genre.Trance
+  id: Trance
+  parent: SilverCraft.CSCore.Tags.ID3.ID3Genre
+  langs:
+  - csharp
+  - vb
+  name: Trance
+  nameWithType: ID3Genre.Trance
+  fullName: SilverCraft.CSCore.Tags.ID3.ID3Genre.Trance
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/Tags/ID3/ID3Genre.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: Trance
+    path: ../SilverCraft.CSCore/Tags/ID3/ID3Genre.cs
+    startLine: 39
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Tags.ID3
+  syntax:
+    content: Trance = 31
+    return:
+      type: SilverCraft.CSCore.Tags.ID3.ID3Genre
+- uid: SilverCraft.CSCore.Tags.ID3.ID3Genre.Classical
+  commentId: F:SilverCraft.CSCore.Tags.ID3.ID3Genre.Classical
+  id: Classical
+  parent: SilverCraft.CSCore.Tags.ID3.ID3Genre
+  langs:
+  - csharp
+  - vb
+  name: Classical
+  nameWithType: ID3Genre.Classical
+  fullName: SilverCraft.CSCore.Tags.ID3.ID3Genre.Classical
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/Tags/ID3/ID3Genre.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: Classical
+    path: ../SilverCraft.CSCore/Tags/ID3/ID3Genre.cs
+    startLine: 40
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Tags.ID3
+  syntax:
+    content: Classical = 32
+    return:
+      type: SilverCraft.CSCore.Tags.ID3.ID3Genre
+- uid: SilverCraft.CSCore.Tags.ID3.ID3Genre.Instrumental
+  commentId: F:SilverCraft.CSCore.Tags.ID3.ID3Genre.Instrumental
+  id: Instrumental
+  parent: SilverCraft.CSCore.Tags.ID3.ID3Genre
+  langs:
+  - csharp
+  - vb
+  name: Instrumental
+  nameWithType: ID3Genre.Instrumental
+  fullName: SilverCraft.CSCore.Tags.ID3.ID3Genre.Instrumental
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/Tags/ID3/ID3Genre.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: Instrumental
+    path: ../SilverCraft.CSCore/Tags/ID3/ID3Genre.cs
+    startLine: 41
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Tags.ID3
+  syntax:
+    content: Instrumental = 33
+    return:
+      type: SilverCraft.CSCore.Tags.ID3.ID3Genre
+- uid: SilverCraft.CSCore.Tags.ID3.ID3Genre.Acid
+  commentId: F:SilverCraft.CSCore.Tags.ID3.ID3Genre.Acid
+  id: Acid
+  parent: SilverCraft.CSCore.Tags.ID3.ID3Genre
+  langs:
+  - csharp
+  - vb
+  name: Acid
+  nameWithType: ID3Genre.Acid
+  fullName: SilverCraft.CSCore.Tags.ID3.ID3Genre.Acid
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/Tags/ID3/ID3Genre.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: Acid
+    path: ../SilverCraft.CSCore/Tags/ID3/ID3Genre.cs
+    startLine: 42
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Tags.ID3
+  syntax:
+    content: Acid = 34
+    return:
+      type: SilverCraft.CSCore.Tags.ID3.ID3Genre
+- uid: SilverCraft.CSCore.Tags.ID3.ID3Genre.House
+  commentId: F:SilverCraft.CSCore.Tags.ID3.ID3Genre.House
+  id: House
+  parent: SilverCraft.CSCore.Tags.ID3.ID3Genre
+  langs:
+  - csharp
+  - vb
+  name: House
+  nameWithType: ID3Genre.House
+  fullName: SilverCraft.CSCore.Tags.ID3.ID3Genre.House
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/Tags/ID3/ID3Genre.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: House
+    path: ../SilverCraft.CSCore/Tags/ID3/ID3Genre.cs
+    startLine: 43
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Tags.ID3
+  syntax:
+    content: House = 35
+    return:
+      type: SilverCraft.CSCore.Tags.ID3.ID3Genre
+- uid: SilverCraft.CSCore.Tags.ID3.ID3Genre.Game
+  commentId: F:SilverCraft.CSCore.Tags.ID3.ID3Genre.Game
+  id: Game
+  parent: SilverCraft.CSCore.Tags.ID3.ID3Genre
+  langs:
+  - csharp
+  - vb
+  name: Game
+  nameWithType: ID3Genre.Game
+  fullName: SilverCraft.CSCore.Tags.ID3.ID3Genre.Game
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/Tags/ID3/ID3Genre.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: Game
+    path: ../SilverCraft.CSCore/Tags/ID3/ID3Genre.cs
+    startLine: 44
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Tags.ID3
+  syntax:
+    content: Game = 36
+    return:
+      type: SilverCraft.CSCore.Tags.ID3.ID3Genre
+- uid: SilverCraft.CSCore.Tags.ID3.ID3Genre.SoundClip
+  commentId: F:SilverCraft.CSCore.Tags.ID3.ID3Genre.SoundClip
+  id: SoundClip
+  parent: SilverCraft.CSCore.Tags.ID3.ID3Genre
+  langs:
+  - csharp
+  - vb
+  name: SoundClip
+  nameWithType: ID3Genre.SoundClip
+  fullName: SilverCraft.CSCore.Tags.ID3.ID3Genre.SoundClip
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/Tags/ID3/ID3Genre.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: SoundClip
+    path: ../SilverCraft.CSCore/Tags/ID3/ID3Genre.cs
+    startLine: 45
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Tags.ID3
+  syntax:
+    content: SoundClip = 37
+    return:
+      type: SilverCraft.CSCore.Tags.ID3.ID3Genre
+- uid: SilverCraft.CSCore.Tags.ID3.ID3Genre.Gospel
+  commentId: F:SilverCraft.CSCore.Tags.ID3.ID3Genre.Gospel
+  id: Gospel
+  parent: SilverCraft.CSCore.Tags.ID3.ID3Genre
+  langs:
+  - csharp
+  - vb
+  name: Gospel
+  nameWithType: ID3Genre.Gospel
+  fullName: SilverCraft.CSCore.Tags.ID3.ID3Genre.Gospel
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/Tags/ID3/ID3Genre.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: Gospel
+    path: ../SilverCraft.CSCore/Tags/ID3/ID3Genre.cs
+    startLine: 46
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Tags.ID3
+  syntax:
+    content: Gospel = 38
+    return:
+      type: SilverCraft.CSCore.Tags.ID3.ID3Genre
+- uid: SilverCraft.CSCore.Tags.ID3.ID3Genre.Noise
+  commentId: F:SilverCraft.CSCore.Tags.ID3.ID3Genre.Noise
+  id: Noise
+  parent: SilverCraft.CSCore.Tags.ID3.ID3Genre
+  langs:
+  - csharp
+  - vb
+  name: Noise
+  nameWithType: ID3Genre.Noise
+  fullName: SilverCraft.CSCore.Tags.ID3.ID3Genre.Noise
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/Tags/ID3/ID3Genre.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: Noise
+    path: ../SilverCraft.CSCore/Tags/ID3/ID3Genre.cs
+    startLine: 47
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Tags.ID3
+  syntax:
+    content: Noise = 39
+    return:
+      type: SilverCraft.CSCore.Tags.ID3.ID3Genre
+- uid: SilverCraft.CSCore.Tags.ID3.ID3Genre.AlternRock
+  commentId: F:SilverCraft.CSCore.Tags.ID3.ID3Genre.AlternRock
+  id: AlternRock
+  parent: SilverCraft.CSCore.Tags.ID3.ID3Genre
+  langs:
+  - csharp
+  - vb
+  name: AlternRock
+  nameWithType: ID3Genre.AlternRock
+  fullName: SilverCraft.CSCore.Tags.ID3.ID3Genre.AlternRock
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/Tags/ID3/ID3Genre.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: AlternRock
+    path: ../SilverCraft.CSCore/Tags/ID3/ID3Genre.cs
+    startLine: 48
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Tags.ID3
+  syntax:
+    content: AlternRock = 40
+    return:
+      type: SilverCraft.CSCore.Tags.ID3.ID3Genre
+- uid: SilverCraft.CSCore.Tags.ID3.ID3Genre.Bass
+  commentId: F:SilverCraft.CSCore.Tags.ID3.ID3Genre.Bass
+  id: Bass
+  parent: SilverCraft.CSCore.Tags.ID3.ID3Genre
+  langs:
+  - csharp
+  - vb
+  name: Bass
+  nameWithType: ID3Genre.Bass
+  fullName: SilverCraft.CSCore.Tags.ID3.ID3Genre.Bass
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/Tags/ID3/ID3Genre.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: Bass
+    path: ../SilverCraft.CSCore/Tags/ID3/ID3Genre.cs
+    startLine: 49
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Tags.ID3
+  syntax:
+    content: Bass = 41
+    return:
+      type: SilverCraft.CSCore.Tags.ID3.ID3Genre
+- uid: SilverCraft.CSCore.Tags.ID3.ID3Genre.Soul
+  commentId: F:SilverCraft.CSCore.Tags.ID3.ID3Genre.Soul
+  id: Soul
+  parent: SilverCraft.CSCore.Tags.ID3.ID3Genre
+  langs:
+  - csharp
+  - vb
+  name: Soul
+  nameWithType: ID3Genre.Soul
+  fullName: SilverCraft.CSCore.Tags.ID3.ID3Genre.Soul
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/Tags/ID3/ID3Genre.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: Soul
+    path: ../SilverCraft.CSCore/Tags/ID3/ID3Genre.cs
+    startLine: 50
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Tags.ID3
+  syntax:
+    content: Soul = 42
+    return:
+      type: SilverCraft.CSCore.Tags.ID3.ID3Genre
+- uid: SilverCraft.CSCore.Tags.ID3.ID3Genre.Punk
+  commentId: F:SilverCraft.CSCore.Tags.ID3.ID3Genre.Punk
+  id: Punk
+  parent: SilverCraft.CSCore.Tags.ID3.ID3Genre
+  langs:
+  - csharp
+  - vb
+  name: Punk
+  nameWithType: ID3Genre.Punk
+  fullName: SilverCraft.CSCore.Tags.ID3.ID3Genre.Punk
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/Tags/ID3/ID3Genre.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: Punk
+    path: ../SilverCraft.CSCore/Tags/ID3/ID3Genre.cs
+    startLine: 51
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Tags.ID3
+  syntax:
+    content: Punk = 43
+    return:
+      type: SilverCraft.CSCore.Tags.ID3.ID3Genre
+- uid: SilverCraft.CSCore.Tags.ID3.ID3Genre.Space
+  commentId: F:SilverCraft.CSCore.Tags.ID3.ID3Genre.Space
+  id: Space
+  parent: SilverCraft.CSCore.Tags.ID3.ID3Genre
+  langs:
+  - csharp
+  - vb
+  name: Space
+  nameWithType: ID3Genre.Space
+  fullName: SilverCraft.CSCore.Tags.ID3.ID3Genre.Space
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/Tags/ID3/ID3Genre.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: Space
+    path: ../SilverCraft.CSCore/Tags/ID3/ID3Genre.cs
+    startLine: 52
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Tags.ID3
+  syntax:
+    content: Space = 44
+    return:
+      type: SilverCraft.CSCore.Tags.ID3.ID3Genre
+- uid: SilverCraft.CSCore.Tags.ID3.ID3Genre.Meditative
+  commentId: F:SilverCraft.CSCore.Tags.ID3.ID3Genre.Meditative
+  id: Meditative
+  parent: SilverCraft.CSCore.Tags.ID3.ID3Genre
+  langs:
+  - csharp
+  - vb
+  name: Meditative
+  nameWithType: ID3Genre.Meditative
+  fullName: SilverCraft.CSCore.Tags.ID3.ID3Genre.Meditative
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/Tags/ID3/ID3Genre.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: Meditative
+    path: ../SilverCraft.CSCore/Tags/ID3/ID3Genre.cs
+    startLine: 53
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Tags.ID3
+  syntax:
+    content: Meditative = 45
+    return:
+      type: SilverCraft.CSCore.Tags.ID3.ID3Genre
+- uid: SilverCraft.CSCore.Tags.ID3.ID3Genre.InstrumentalPop
+  commentId: F:SilverCraft.CSCore.Tags.ID3.ID3Genre.InstrumentalPop
+  id: InstrumentalPop
+  parent: SilverCraft.CSCore.Tags.ID3.ID3Genre
+  langs:
+  - csharp
+  - vb
+  name: InstrumentalPop
+  nameWithType: ID3Genre.InstrumentalPop
+  fullName: SilverCraft.CSCore.Tags.ID3.ID3Genre.InstrumentalPop
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/Tags/ID3/ID3Genre.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: InstrumentalPop
+    path: ../SilverCraft.CSCore/Tags/ID3/ID3Genre.cs
+    startLine: 54
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Tags.ID3
+  syntax:
+    content: InstrumentalPop = 46
+    return:
+      type: SilverCraft.CSCore.Tags.ID3.ID3Genre
+- uid: SilverCraft.CSCore.Tags.ID3.ID3Genre.InstrumentalRock
+  commentId: F:SilverCraft.CSCore.Tags.ID3.ID3Genre.InstrumentalRock
+  id: InstrumentalRock
+  parent: SilverCraft.CSCore.Tags.ID3.ID3Genre
+  langs:
+  - csharp
+  - vb
+  name: InstrumentalRock
+  nameWithType: ID3Genre.InstrumentalRock
+  fullName: SilverCraft.CSCore.Tags.ID3.ID3Genre.InstrumentalRock
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/Tags/ID3/ID3Genre.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: InstrumentalRock
+    path: ../SilverCraft.CSCore/Tags/ID3/ID3Genre.cs
+    startLine: 55
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Tags.ID3
+  syntax:
+    content: InstrumentalRock = 47
+    return:
+      type: SilverCraft.CSCore.Tags.ID3.ID3Genre
+- uid: SilverCraft.CSCore.Tags.ID3.ID3Genre.Ethnic
+  commentId: F:SilverCraft.CSCore.Tags.ID3.ID3Genre.Ethnic
+  id: Ethnic
+  parent: SilverCraft.CSCore.Tags.ID3.ID3Genre
+  langs:
+  - csharp
+  - vb
+  name: Ethnic
+  nameWithType: ID3Genre.Ethnic
+  fullName: SilverCraft.CSCore.Tags.ID3.ID3Genre.Ethnic
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/Tags/ID3/ID3Genre.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: Ethnic
+    path: ../SilverCraft.CSCore/Tags/ID3/ID3Genre.cs
+    startLine: 56
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Tags.ID3
+  syntax:
+    content: Ethnic = 48
+    return:
+      type: SilverCraft.CSCore.Tags.ID3.ID3Genre
+- uid: SilverCraft.CSCore.Tags.ID3.ID3Genre.Gothic
+  commentId: F:SilverCraft.CSCore.Tags.ID3.ID3Genre.Gothic
+  id: Gothic
+  parent: SilverCraft.CSCore.Tags.ID3.ID3Genre
+  langs:
+  - csharp
+  - vb
+  name: Gothic
+  nameWithType: ID3Genre.Gothic
+  fullName: SilverCraft.CSCore.Tags.ID3.ID3Genre.Gothic
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/Tags/ID3/ID3Genre.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: Gothic
+    path: ../SilverCraft.CSCore/Tags/ID3/ID3Genre.cs
+    startLine: 57
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Tags.ID3
+  syntax:
+    content: Gothic = 49
+    return:
+      type: SilverCraft.CSCore.Tags.ID3.ID3Genre
+- uid: SilverCraft.CSCore.Tags.ID3.ID3Genre.Darkwave
+  commentId: F:SilverCraft.CSCore.Tags.ID3.ID3Genre.Darkwave
+  id: Darkwave
+  parent: SilverCraft.CSCore.Tags.ID3.ID3Genre
+  langs:
+  - csharp
+  - vb
+  name: Darkwave
+  nameWithType: ID3Genre.Darkwave
+  fullName: SilverCraft.CSCore.Tags.ID3.ID3Genre.Darkwave
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/Tags/ID3/ID3Genre.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: Darkwave
+    path: ../SilverCraft.CSCore/Tags/ID3/ID3Genre.cs
+    startLine: 58
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Tags.ID3
+  syntax:
+    content: Darkwave = 50
+    return:
+      type: SilverCraft.CSCore.Tags.ID3.ID3Genre
+- uid: SilverCraft.CSCore.Tags.ID3.ID3Genre.TechnoIndustrial
+  commentId: F:SilverCraft.CSCore.Tags.ID3.ID3Genre.TechnoIndustrial
+  id: TechnoIndustrial
+  parent: SilverCraft.CSCore.Tags.ID3.ID3Genre
+  langs:
+  - csharp
+  - vb
+  name: TechnoIndustrial
+  nameWithType: ID3Genre.TechnoIndustrial
+  fullName: SilverCraft.CSCore.Tags.ID3.ID3Genre.TechnoIndustrial
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/Tags/ID3/ID3Genre.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: TechnoIndustrial
+    path: ../SilverCraft.CSCore/Tags/ID3/ID3Genre.cs
+    startLine: 59
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Tags.ID3
+  syntax:
+    content: TechnoIndustrial = 51
+    return:
+      type: SilverCraft.CSCore.Tags.ID3.ID3Genre
+- uid: SilverCraft.CSCore.Tags.ID3.ID3Genre.Electronic
+  commentId: F:SilverCraft.CSCore.Tags.ID3.ID3Genre.Electronic
+  id: Electronic
+  parent: SilverCraft.CSCore.Tags.ID3.ID3Genre
+  langs:
+  - csharp
+  - vb
+  name: Electronic
+  nameWithType: ID3Genre.Electronic
+  fullName: SilverCraft.CSCore.Tags.ID3.ID3Genre.Electronic
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/Tags/ID3/ID3Genre.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: Electronic
+    path: ../SilverCraft.CSCore/Tags/ID3/ID3Genre.cs
+    startLine: 60
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Tags.ID3
+  syntax:
+    content: Electronic = 52
+    return:
+      type: SilverCraft.CSCore.Tags.ID3.ID3Genre
+- uid: SilverCraft.CSCore.Tags.ID3.ID3Genre.PopFolk
+  commentId: F:SilverCraft.CSCore.Tags.ID3.ID3Genre.PopFolk
+  id: PopFolk
+  parent: SilverCraft.CSCore.Tags.ID3.ID3Genre
+  langs:
+  - csharp
+  - vb
+  name: PopFolk
+  nameWithType: ID3Genre.PopFolk
+  fullName: SilverCraft.CSCore.Tags.ID3.ID3Genre.PopFolk
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/Tags/ID3/ID3Genre.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: PopFolk
+    path: ../SilverCraft.CSCore/Tags/ID3/ID3Genre.cs
+    startLine: 61
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Tags.ID3
+  syntax:
+    content: PopFolk = 53
+    return:
+      type: SilverCraft.CSCore.Tags.ID3.ID3Genre
+- uid: SilverCraft.CSCore.Tags.ID3.ID3Genre.Eurodance
+  commentId: F:SilverCraft.CSCore.Tags.ID3.ID3Genre.Eurodance
+  id: Eurodance
+  parent: SilverCraft.CSCore.Tags.ID3.ID3Genre
+  langs:
+  - csharp
+  - vb
+  name: Eurodance
+  nameWithType: ID3Genre.Eurodance
+  fullName: SilverCraft.CSCore.Tags.ID3.ID3Genre.Eurodance
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/Tags/ID3/ID3Genre.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: Eurodance
+    path: ../SilverCraft.CSCore/Tags/ID3/ID3Genre.cs
+    startLine: 62
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Tags.ID3
+  syntax:
+    content: Eurodance = 54
+    return:
+      type: SilverCraft.CSCore.Tags.ID3.ID3Genre
+- uid: SilverCraft.CSCore.Tags.ID3.ID3Genre.Dream
+  commentId: F:SilverCraft.CSCore.Tags.ID3.ID3Genre.Dream
+  id: Dream
+  parent: SilverCraft.CSCore.Tags.ID3.ID3Genre
+  langs:
+  - csharp
+  - vb
+  name: Dream
+  nameWithType: ID3Genre.Dream
+  fullName: SilverCraft.CSCore.Tags.ID3.ID3Genre.Dream
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/Tags/ID3/ID3Genre.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: Dream
+    path: ../SilverCraft.CSCore/Tags/ID3/ID3Genre.cs
+    startLine: 63
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Tags.ID3
+  syntax:
+    content: Dream = 55
+    return:
+      type: SilverCraft.CSCore.Tags.ID3.ID3Genre
+- uid: SilverCraft.CSCore.Tags.ID3.ID3Genre.SouthernRock
+  commentId: F:SilverCraft.CSCore.Tags.ID3.ID3Genre.SouthernRock
+  id: SouthernRock
+  parent: SilverCraft.CSCore.Tags.ID3.ID3Genre
+  langs:
+  - csharp
+  - vb
+  name: SouthernRock
+  nameWithType: ID3Genre.SouthernRock
+  fullName: SilverCraft.CSCore.Tags.ID3.ID3Genre.SouthernRock
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/Tags/ID3/ID3Genre.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: SouthernRock
+    path: ../SilverCraft.CSCore/Tags/ID3/ID3Genre.cs
+    startLine: 64
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Tags.ID3
+  syntax:
+    content: SouthernRock = 56
+    return:
+      type: SilverCraft.CSCore.Tags.ID3.ID3Genre
+- uid: SilverCraft.CSCore.Tags.ID3.ID3Genre.Comedy
+  commentId: F:SilverCraft.CSCore.Tags.ID3.ID3Genre.Comedy
+  id: Comedy
+  parent: SilverCraft.CSCore.Tags.ID3.ID3Genre
+  langs:
+  - csharp
+  - vb
+  name: Comedy
+  nameWithType: ID3Genre.Comedy
+  fullName: SilverCraft.CSCore.Tags.ID3.ID3Genre.Comedy
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/Tags/ID3/ID3Genre.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: Comedy
+    path: ../SilverCraft.CSCore/Tags/ID3/ID3Genre.cs
+    startLine: 65
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Tags.ID3
+  syntax:
+    content: Comedy = 57
+    return:
+      type: SilverCraft.CSCore.Tags.ID3.ID3Genre
+- uid: SilverCraft.CSCore.Tags.ID3.ID3Genre.Cult
+  commentId: F:SilverCraft.CSCore.Tags.ID3.ID3Genre.Cult
+  id: Cult
+  parent: SilverCraft.CSCore.Tags.ID3.ID3Genre
+  langs:
+  - csharp
+  - vb
+  name: Cult
+  nameWithType: ID3Genre.Cult
+  fullName: SilverCraft.CSCore.Tags.ID3.ID3Genre.Cult
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/Tags/ID3/ID3Genre.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: Cult
+    path: ../SilverCraft.CSCore/Tags/ID3/ID3Genre.cs
+    startLine: 66
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Tags.ID3
+  syntax:
+    content: Cult = 58
+    return:
+      type: SilverCraft.CSCore.Tags.ID3.ID3Genre
+- uid: SilverCraft.CSCore.Tags.ID3.ID3Genre.Gangsta
+  commentId: F:SilverCraft.CSCore.Tags.ID3.ID3Genre.Gangsta
+  id: Gangsta
+  parent: SilverCraft.CSCore.Tags.ID3.ID3Genre
+  langs:
+  - csharp
+  - vb
+  name: Gangsta
+  nameWithType: ID3Genre.Gangsta
+  fullName: SilverCraft.CSCore.Tags.ID3.ID3Genre.Gangsta
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/Tags/ID3/ID3Genre.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: Gangsta
+    path: ../SilverCraft.CSCore/Tags/ID3/ID3Genre.cs
+    startLine: 67
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Tags.ID3
+  syntax:
+    content: Gangsta = 59
+    return:
+      type: SilverCraft.CSCore.Tags.ID3.ID3Genre
+- uid: SilverCraft.CSCore.Tags.ID3.ID3Genre.Top40
+  commentId: F:SilverCraft.CSCore.Tags.ID3.ID3Genre.Top40
+  id: Top40
+  parent: SilverCraft.CSCore.Tags.ID3.ID3Genre
+  langs:
+  - csharp
+  - vb
+  name: Top40
+  nameWithType: ID3Genre.Top40
+  fullName: SilverCraft.CSCore.Tags.ID3.ID3Genre.Top40
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/Tags/ID3/ID3Genre.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: Top40
+    path: ../SilverCraft.CSCore/Tags/ID3/ID3Genre.cs
+    startLine: 68
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Tags.ID3
+  syntax:
+    content: Top40 = 60
+    return:
+      type: SilverCraft.CSCore.Tags.ID3.ID3Genre
+- uid: SilverCraft.CSCore.Tags.ID3.ID3Genre.ChristianRap
+  commentId: F:SilverCraft.CSCore.Tags.ID3.ID3Genre.ChristianRap
+  id: ChristianRap
+  parent: SilverCraft.CSCore.Tags.ID3.ID3Genre
+  langs:
+  - csharp
+  - vb
+  name: ChristianRap
+  nameWithType: ID3Genre.ChristianRap
+  fullName: SilverCraft.CSCore.Tags.ID3.ID3Genre.ChristianRap
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/Tags/ID3/ID3Genre.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: ChristianRap
+    path: ../SilverCraft.CSCore/Tags/ID3/ID3Genre.cs
+    startLine: 69
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Tags.ID3
+  syntax:
+    content: ChristianRap = 61
+    return:
+      type: SilverCraft.CSCore.Tags.ID3.ID3Genre
+- uid: SilverCraft.CSCore.Tags.ID3.ID3Genre.PopFunk
+  commentId: F:SilverCraft.CSCore.Tags.ID3.ID3Genre.PopFunk
+  id: PopFunk
+  parent: SilverCraft.CSCore.Tags.ID3.ID3Genre
+  langs:
+  - csharp
+  - vb
+  name: PopFunk
+  nameWithType: ID3Genre.PopFunk
+  fullName: SilverCraft.CSCore.Tags.ID3.ID3Genre.PopFunk
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/Tags/ID3/ID3Genre.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: PopFunk
+    path: ../SilverCraft.CSCore/Tags/ID3/ID3Genre.cs
+    startLine: 70
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Tags.ID3
+  syntax:
+    content: PopFunk = 62
+    return:
+      type: SilverCraft.CSCore.Tags.ID3.ID3Genre
+- uid: SilverCraft.CSCore.Tags.ID3.ID3Genre.Jungle
+  commentId: F:SilverCraft.CSCore.Tags.ID3.ID3Genre.Jungle
+  id: Jungle
+  parent: SilverCraft.CSCore.Tags.ID3.ID3Genre
+  langs:
+  - csharp
+  - vb
+  name: Jungle
+  nameWithType: ID3Genre.Jungle
+  fullName: SilverCraft.CSCore.Tags.ID3.ID3Genre.Jungle
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/Tags/ID3/ID3Genre.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: Jungle
+    path: ../SilverCraft.CSCore/Tags/ID3/ID3Genre.cs
+    startLine: 71
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Tags.ID3
+  syntax:
+    content: Jungle = 63
+    return:
+      type: SilverCraft.CSCore.Tags.ID3.ID3Genre
+- uid: SilverCraft.CSCore.Tags.ID3.ID3Genre.NativeAmerican
+  commentId: F:SilverCraft.CSCore.Tags.ID3.ID3Genre.NativeAmerican
+  id: NativeAmerican
+  parent: SilverCraft.CSCore.Tags.ID3.ID3Genre
+  langs:
+  - csharp
+  - vb
+  name: NativeAmerican
+  nameWithType: ID3Genre.NativeAmerican
+  fullName: SilverCraft.CSCore.Tags.ID3.ID3Genre.NativeAmerican
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/Tags/ID3/ID3Genre.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: NativeAmerican
+    path: ../SilverCraft.CSCore/Tags/ID3/ID3Genre.cs
+    startLine: 72
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Tags.ID3
+  syntax:
+    content: NativeAmerican = 64
+    return:
+      type: SilverCraft.CSCore.Tags.ID3.ID3Genre
+- uid: SilverCraft.CSCore.Tags.ID3.ID3Genre.Cabaret
+  commentId: F:SilverCraft.CSCore.Tags.ID3.ID3Genre.Cabaret
+  id: Cabaret
+  parent: SilverCraft.CSCore.Tags.ID3.ID3Genre
+  langs:
+  - csharp
+  - vb
+  name: Cabaret
+  nameWithType: ID3Genre.Cabaret
+  fullName: SilverCraft.CSCore.Tags.ID3.ID3Genre.Cabaret
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/Tags/ID3/ID3Genre.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: Cabaret
+    path: ../SilverCraft.CSCore/Tags/ID3/ID3Genre.cs
+    startLine: 73
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Tags.ID3
+  syntax:
+    content: Cabaret = 65
+    return:
+      type: SilverCraft.CSCore.Tags.ID3.ID3Genre
+- uid: SilverCraft.CSCore.Tags.ID3.ID3Genre.NewWave
+  commentId: F:SilverCraft.CSCore.Tags.ID3.ID3Genre.NewWave
+  id: NewWave
+  parent: SilverCraft.CSCore.Tags.ID3.ID3Genre
+  langs:
+  - csharp
+  - vb
+  name: NewWave
+  nameWithType: ID3Genre.NewWave
+  fullName: SilverCraft.CSCore.Tags.ID3.ID3Genre.NewWave
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/Tags/ID3/ID3Genre.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: NewWave
+    path: ../SilverCraft.CSCore/Tags/ID3/ID3Genre.cs
+    startLine: 74
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Tags.ID3
+  syntax:
+    content: NewWave = 66
+    return:
+      type: SilverCraft.CSCore.Tags.ID3.ID3Genre
+- uid: SilverCraft.CSCore.Tags.ID3.ID3Genre.Psychadelic
+  commentId: F:SilverCraft.CSCore.Tags.ID3.ID3Genre.Psychadelic
+  id: Psychadelic
+  parent: SilverCraft.CSCore.Tags.ID3.ID3Genre
+  langs:
+  - csharp
+  - vb
+  name: Psychadelic
+  nameWithType: ID3Genre.Psychadelic
+  fullName: SilverCraft.CSCore.Tags.ID3.ID3Genre.Psychadelic
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/Tags/ID3/ID3Genre.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: Psychadelic
+    path: ../SilverCraft.CSCore/Tags/ID3/ID3Genre.cs
+    startLine: 75
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Tags.ID3
+  syntax:
+    content: Psychadelic = 67
+    return:
+      type: SilverCraft.CSCore.Tags.ID3.ID3Genre
+- uid: SilverCraft.CSCore.Tags.ID3.ID3Genre.Rave
+  commentId: F:SilverCraft.CSCore.Tags.ID3.ID3Genre.Rave
+  id: Rave
+  parent: SilverCraft.CSCore.Tags.ID3.ID3Genre
+  langs:
+  - csharp
+  - vb
+  name: Rave
+  nameWithType: ID3Genre.Rave
+  fullName: SilverCraft.CSCore.Tags.ID3.ID3Genre.Rave
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/Tags/ID3/ID3Genre.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: Rave
+    path: ../SilverCraft.CSCore/Tags/ID3/ID3Genre.cs
+    startLine: 76
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Tags.ID3
+  syntax:
+    content: Rave = 68
+    return:
+      type: SilverCraft.CSCore.Tags.ID3.ID3Genre
+- uid: SilverCraft.CSCore.Tags.ID3.ID3Genre.Showtunes
+  commentId: F:SilverCraft.CSCore.Tags.ID3.ID3Genre.Showtunes
+  id: Showtunes
+  parent: SilverCraft.CSCore.Tags.ID3.ID3Genre
+  langs:
+  - csharp
+  - vb
+  name: Showtunes
+  nameWithType: ID3Genre.Showtunes
+  fullName: SilverCraft.CSCore.Tags.ID3.ID3Genre.Showtunes
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/Tags/ID3/ID3Genre.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: Showtunes
+    path: ../SilverCraft.CSCore/Tags/ID3/ID3Genre.cs
+    startLine: 77
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Tags.ID3
+  syntax:
+    content: Showtunes = 69
+    return:
+      type: SilverCraft.CSCore.Tags.ID3.ID3Genre
+- uid: SilverCraft.CSCore.Tags.ID3.ID3Genre.Trailer
+  commentId: F:SilverCraft.CSCore.Tags.ID3.ID3Genre.Trailer
+  id: Trailer
+  parent: SilverCraft.CSCore.Tags.ID3.ID3Genre
+  langs:
+  - csharp
+  - vb
+  name: Trailer
+  nameWithType: ID3Genre.Trailer
+  fullName: SilverCraft.CSCore.Tags.ID3.ID3Genre.Trailer
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/Tags/ID3/ID3Genre.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: Trailer
+    path: ../SilverCraft.CSCore/Tags/ID3/ID3Genre.cs
+    startLine: 78
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Tags.ID3
+  syntax:
+    content: Trailer = 70
+    return:
+      type: SilverCraft.CSCore.Tags.ID3.ID3Genre
+- uid: SilverCraft.CSCore.Tags.ID3.ID3Genre.LoFi
+  commentId: F:SilverCraft.CSCore.Tags.ID3.ID3Genre.LoFi
+  id: LoFi
+  parent: SilverCraft.CSCore.Tags.ID3.ID3Genre
+  langs:
+  - csharp
+  - vb
+  name: LoFi
+  nameWithType: ID3Genre.LoFi
+  fullName: SilverCraft.CSCore.Tags.ID3.ID3Genre.LoFi
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/Tags/ID3/ID3Genre.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: LoFi
+    path: ../SilverCraft.CSCore/Tags/ID3/ID3Genre.cs
+    startLine: 79
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Tags.ID3
+  syntax:
+    content: LoFi = 71
+    return:
+      type: SilverCraft.CSCore.Tags.ID3.ID3Genre
+- uid: SilverCraft.CSCore.Tags.ID3.ID3Genre.Tribal
+  commentId: F:SilverCraft.CSCore.Tags.ID3.ID3Genre.Tribal
+  id: Tribal
+  parent: SilverCraft.CSCore.Tags.ID3.ID3Genre
+  langs:
+  - csharp
+  - vb
+  name: Tribal
+  nameWithType: ID3Genre.Tribal
+  fullName: SilverCraft.CSCore.Tags.ID3.ID3Genre.Tribal
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/Tags/ID3/ID3Genre.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: Tribal
+    path: ../SilverCraft.CSCore/Tags/ID3/ID3Genre.cs
+    startLine: 80
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Tags.ID3
+  syntax:
+    content: Tribal = 72
+    return:
+      type: SilverCraft.CSCore.Tags.ID3.ID3Genre
+- uid: SilverCraft.CSCore.Tags.ID3.ID3Genre.AcidPunk
+  commentId: F:SilverCraft.CSCore.Tags.ID3.ID3Genre.AcidPunk
+  id: AcidPunk
+  parent: SilverCraft.CSCore.Tags.ID3.ID3Genre
+  langs:
+  - csharp
+  - vb
+  name: AcidPunk
+  nameWithType: ID3Genre.AcidPunk
+  fullName: SilverCraft.CSCore.Tags.ID3.ID3Genre.AcidPunk
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/Tags/ID3/ID3Genre.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: AcidPunk
+    path: ../SilverCraft.CSCore/Tags/ID3/ID3Genre.cs
+    startLine: 81
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Tags.ID3
+  syntax:
+    content: AcidPunk = 73
+    return:
+      type: SilverCraft.CSCore.Tags.ID3.ID3Genre
+- uid: SilverCraft.CSCore.Tags.ID3.ID3Genre.AcidJazz
+  commentId: F:SilverCraft.CSCore.Tags.ID3.ID3Genre.AcidJazz
+  id: AcidJazz
+  parent: SilverCraft.CSCore.Tags.ID3.ID3Genre
+  langs:
+  - csharp
+  - vb
+  name: AcidJazz
+  nameWithType: ID3Genre.AcidJazz
+  fullName: SilverCraft.CSCore.Tags.ID3.ID3Genre.AcidJazz
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/Tags/ID3/ID3Genre.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: AcidJazz
+    path: ../SilverCraft.CSCore/Tags/ID3/ID3Genre.cs
+    startLine: 82
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Tags.ID3
+  syntax:
+    content: AcidJazz = 74
+    return:
+      type: SilverCraft.CSCore.Tags.ID3.ID3Genre
+- uid: SilverCraft.CSCore.Tags.ID3.ID3Genre.Polka
+  commentId: F:SilverCraft.CSCore.Tags.ID3.ID3Genre.Polka
+  id: Polka
+  parent: SilverCraft.CSCore.Tags.ID3.ID3Genre
+  langs:
+  - csharp
+  - vb
+  name: Polka
+  nameWithType: ID3Genre.Polka
+  fullName: SilverCraft.CSCore.Tags.ID3.ID3Genre.Polka
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/Tags/ID3/ID3Genre.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: Polka
+    path: ../SilverCraft.CSCore/Tags/ID3/ID3Genre.cs
+    startLine: 83
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Tags.ID3
+  syntax:
+    content: Polka = 75
+    return:
+      type: SilverCraft.CSCore.Tags.ID3.ID3Genre
+- uid: SilverCraft.CSCore.Tags.ID3.ID3Genre.Retro
+  commentId: F:SilverCraft.CSCore.Tags.ID3.ID3Genre.Retro
+  id: Retro
+  parent: SilverCraft.CSCore.Tags.ID3.ID3Genre
+  langs:
+  - csharp
+  - vb
+  name: Retro
+  nameWithType: ID3Genre.Retro
+  fullName: SilverCraft.CSCore.Tags.ID3.ID3Genre.Retro
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/Tags/ID3/ID3Genre.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: Retro
+    path: ../SilverCraft.CSCore/Tags/ID3/ID3Genre.cs
+    startLine: 84
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Tags.ID3
+  syntax:
+    content: Retro = 76
+    return:
+      type: SilverCraft.CSCore.Tags.ID3.ID3Genre
+- uid: SilverCraft.CSCore.Tags.ID3.ID3Genre.Musical
+  commentId: F:SilverCraft.CSCore.Tags.ID3.ID3Genre.Musical
+  id: Musical
+  parent: SilverCraft.CSCore.Tags.ID3.ID3Genre
+  langs:
+  - csharp
+  - vb
+  name: Musical
+  nameWithType: ID3Genre.Musical
+  fullName: SilverCraft.CSCore.Tags.ID3.ID3Genre.Musical
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/Tags/ID3/ID3Genre.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: Musical
+    path: ../SilverCraft.CSCore/Tags/ID3/ID3Genre.cs
+    startLine: 85
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Tags.ID3
+  syntax:
+    content: Musical = 77
+    return:
+      type: SilverCraft.CSCore.Tags.ID3.ID3Genre
+- uid: SilverCraft.CSCore.Tags.ID3.ID3Genre.RockAndRoll
+  commentId: F:SilverCraft.CSCore.Tags.ID3.ID3Genre.RockAndRoll
+  id: RockAndRoll
+  parent: SilverCraft.CSCore.Tags.ID3.ID3Genre
+  langs:
+  - csharp
+  - vb
+  name: RockAndRoll
+  nameWithType: ID3Genre.RockAndRoll
+  fullName: SilverCraft.CSCore.Tags.ID3.ID3Genre.RockAndRoll
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/Tags/ID3/ID3Genre.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: RockAndRoll
+    path: ../SilverCraft.CSCore/Tags/ID3/ID3Genre.cs
+    startLine: 86
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Tags.ID3
+  syntax:
+    content: RockAndRoll = 78
+    return:
+      type: SilverCraft.CSCore.Tags.ID3.ID3Genre
+- uid: SilverCraft.CSCore.Tags.ID3.ID3Genre.HardRock
+  commentId: F:SilverCraft.CSCore.Tags.ID3.ID3Genre.HardRock
+  id: HardRock
+  parent: SilverCraft.CSCore.Tags.ID3.ID3Genre
+  langs:
+  - csharp
+  - vb
+  name: HardRock
+  nameWithType: ID3Genre.HardRock
+  fullName: SilverCraft.CSCore.Tags.ID3.ID3Genre.HardRock
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/Tags/ID3/ID3Genre.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: HardRock
+    path: ../SilverCraft.CSCore/Tags/ID3/ID3Genre.cs
+    startLine: 87
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Tags.ID3
+  syntax:
+    content: HardRock = 79
+    return:
+      type: SilverCraft.CSCore.Tags.ID3.ID3Genre
+- uid: SilverCraft.CSCore.Tags.ID3.ID3Genre.Folk
+  commentId: F:SilverCraft.CSCore.Tags.ID3.ID3Genre.Folk
+  id: Folk
+  parent: SilverCraft.CSCore.Tags.ID3.ID3Genre
+  langs:
+  - csharp
+  - vb
+  name: Folk
+  nameWithType: ID3Genre.Folk
+  fullName: SilverCraft.CSCore.Tags.ID3.ID3Genre.Folk
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/Tags/ID3/ID3Genre.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: Folk
+    path: ../SilverCraft.CSCore/Tags/ID3/ID3Genre.cs
+    startLine: 88
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Tags.ID3
+  syntax:
+    content: Folk = 80
+    return:
+      type: SilverCraft.CSCore.Tags.ID3.ID3Genre
+- uid: SilverCraft.CSCore.Tags.ID3.ID3Genre.FolkRock
+  commentId: F:SilverCraft.CSCore.Tags.ID3.ID3Genre.FolkRock
+  id: FolkRock
+  parent: SilverCraft.CSCore.Tags.ID3.ID3Genre
+  langs:
+  - csharp
+  - vb
+  name: FolkRock
+  nameWithType: ID3Genre.FolkRock
+  fullName: SilverCraft.CSCore.Tags.ID3.ID3Genre.FolkRock
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/Tags/ID3/ID3Genre.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: FolkRock
+    path: ../SilverCraft.CSCore/Tags/ID3/ID3Genre.cs
+    startLine: 89
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Tags.ID3
+  syntax:
+    content: FolkRock = 81
+    return:
+      type: SilverCraft.CSCore.Tags.ID3.ID3Genre
+- uid: SilverCraft.CSCore.Tags.ID3.ID3Genre.NationalFolk
+  commentId: F:SilverCraft.CSCore.Tags.ID3.ID3Genre.NationalFolk
+  id: NationalFolk
+  parent: SilverCraft.CSCore.Tags.ID3.ID3Genre
+  langs:
+  - csharp
+  - vb
+  name: NationalFolk
+  nameWithType: ID3Genre.NationalFolk
+  fullName: SilverCraft.CSCore.Tags.ID3.ID3Genre.NationalFolk
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/Tags/ID3/ID3Genre.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: NationalFolk
+    path: ../SilverCraft.CSCore/Tags/ID3/ID3Genre.cs
+    startLine: 90
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Tags.ID3
+  syntax:
+    content: NationalFolk = 82
+    return:
+      type: SilverCraft.CSCore.Tags.ID3.ID3Genre
+- uid: SilverCraft.CSCore.Tags.ID3.ID3Genre.Swing
+  commentId: F:SilverCraft.CSCore.Tags.ID3.ID3Genre.Swing
+  id: Swing
+  parent: SilverCraft.CSCore.Tags.ID3.ID3Genre
+  langs:
+  - csharp
+  - vb
+  name: Swing
+  nameWithType: ID3Genre.Swing
+  fullName: SilverCraft.CSCore.Tags.ID3.ID3Genre.Swing
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/Tags/ID3/ID3Genre.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: Swing
+    path: ../SilverCraft.CSCore/Tags/ID3/ID3Genre.cs
+    startLine: 91
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Tags.ID3
+  syntax:
+    content: Swing = 83
+    return:
+      type: SilverCraft.CSCore.Tags.ID3.ID3Genre
+- uid: SilverCraft.CSCore.Tags.ID3.ID3Genre.FastFusion
+  commentId: F:SilverCraft.CSCore.Tags.ID3.ID3Genre.FastFusion
+  id: FastFusion
+  parent: SilverCraft.CSCore.Tags.ID3.ID3Genre
+  langs:
+  - csharp
+  - vb
+  name: FastFusion
+  nameWithType: ID3Genre.FastFusion
+  fullName: SilverCraft.CSCore.Tags.ID3.ID3Genre.FastFusion
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/Tags/ID3/ID3Genre.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: FastFusion
+    path: ../SilverCraft.CSCore/Tags/ID3/ID3Genre.cs
+    startLine: 92
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Tags.ID3
+  syntax:
+    content: FastFusion = 84
+    return:
+      type: SilverCraft.CSCore.Tags.ID3.ID3Genre
+- uid: SilverCraft.CSCore.Tags.ID3.ID3Genre.Bebob
+  commentId: F:SilverCraft.CSCore.Tags.ID3.ID3Genre.Bebob
+  id: Bebob
+  parent: SilverCraft.CSCore.Tags.ID3.ID3Genre
+  langs:
+  - csharp
+  - vb
+  name: Bebob
+  nameWithType: ID3Genre.Bebob
+  fullName: SilverCraft.CSCore.Tags.ID3.ID3Genre.Bebob
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/Tags/ID3/ID3Genre.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: Bebob
+    path: ../SilverCraft.CSCore/Tags/ID3/ID3Genre.cs
+    startLine: 93
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Tags.ID3
+  syntax:
+    content: Bebob = 85
+    return:
+      type: SilverCraft.CSCore.Tags.ID3.ID3Genre
+- uid: SilverCraft.CSCore.Tags.ID3.ID3Genre.Latin
+  commentId: F:SilverCraft.CSCore.Tags.ID3.ID3Genre.Latin
+  id: Latin
+  parent: SilverCraft.CSCore.Tags.ID3.ID3Genre
+  langs:
+  - csharp
+  - vb
+  name: Latin
+  nameWithType: ID3Genre.Latin
+  fullName: SilverCraft.CSCore.Tags.ID3.ID3Genre.Latin
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/Tags/ID3/ID3Genre.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: Latin
+    path: ../SilverCraft.CSCore/Tags/ID3/ID3Genre.cs
+    startLine: 94
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Tags.ID3
+  syntax:
+    content: Latin = 86
+    return:
+      type: SilverCraft.CSCore.Tags.ID3.ID3Genre
+- uid: SilverCraft.CSCore.Tags.ID3.ID3Genre.Revival
+  commentId: F:SilverCraft.CSCore.Tags.ID3.ID3Genre.Revival
+  id: Revival
+  parent: SilverCraft.CSCore.Tags.ID3.ID3Genre
+  langs:
+  - csharp
+  - vb
+  name: Revival
+  nameWithType: ID3Genre.Revival
+  fullName: SilverCraft.CSCore.Tags.ID3.ID3Genre.Revival
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/Tags/ID3/ID3Genre.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: Revival
+    path: ../SilverCraft.CSCore/Tags/ID3/ID3Genre.cs
+    startLine: 95
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Tags.ID3
+  syntax:
+    content: Revival = 87
+    return:
+      type: SilverCraft.CSCore.Tags.ID3.ID3Genre
+- uid: SilverCraft.CSCore.Tags.ID3.ID3Genre.Celtic
+  commentId: F:SilverCraft.CSCore.Tags.ID3.ID3Genre.Celtic
+  id: Celtic
+  parent: SilverCraft.CSCore.Tags.ID3.ID3Genre
+  langs:
+  - csharp
+  - vb
+  name: Celtic
+  nameWithType: ID3Genre.Celtic
+  fullName: SilverCraft.CSCore.Tags.ID3.ID3Genre.Celtic
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/Tags/ID3/ID3Genre.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: Celtic
+    path: ../SilverCraft.CSCore/Tags/ID3/ID3Genre.cs
+    startLine: 96
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Tags.ID3
+  syntax:
+    content: Celtic = 88
+    return:
+      type: SilverCraft.CSCore.Tags.ID3.ID3Genre
+- uid: SilverCraft.CSCore.Tags.ID3.ID3Genre.Bluegrass
+  commentId: F:SilverCraft.CSCore.Tags.ID3.ID3Genre.Bluegrass
+  id: Bluegrass
+  parent: SilverCraft.CSCore.Tags.ID3.ID3Genre
+  langs:
+  - csharp
+  - vb
+  name: Bluegrass
+  nameWithType: ID3Genre.Bluegrass
+  fullName: SilverCraft.CSCore.Tags.ID3.ID3Genre.Bluegrass
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/Tags/ID3/ID3Genre.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: Bluegrass
+    path: ../SilverCraft.CSCore/Tags/ID3/ID3Genre.cs
+    startLine: 97
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Tags.ID3
+  syntax:
+    content: Bluegrass = 89
+    return:
+      type: SilverCraft.CSCore.Tags.ID3.ID3Genre
+- uid: SilverCraft.CSCore.Tags.ID3.ID3Genre.Avantgrade
+  commentId: F:SilverCraft.CSCore.Tags.ID3.ID3Genre.Avantgrade
+  id: Avantgrade
+  parent: SilverCraft.CSCore.Tags.ID3.ID3Genre
+  langs:
+  - csharp
+  - vb
+  name: Avantgrade
+  nameWithType: ID3Genre.Avantgrade
+  fullName: SilverCraft.CSCore.Tags.ID3.ID3Genre.Avantgrade
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/Tags/ID3/ID3Genre.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: Avantgrade
+    path: ../SilverCraft.CSCore/Tags/ID3/ID3Genre.cs
+    startLine: 98
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Tags.ID3
+  syntax:
+    content: Avantgrade = 90
+    return:
+      type: SilverCraft.CSCore.Tags.ID3.ID3Genre
+- uid: SilverCraft.CSCore.Tags.ID3.ID3Genre.GothicRock
+  commentId: F:SilverCraft.CSCore.Tags.ID3.ID3Genre.GothicRock
+  id: GothicRock
+  parent: SilverCraft.CSCore.Tags.ID3.ID3Genre
+  langs:
+  - csharp
+  - vb
+  name: GothicRock
+  nameWithType: ID3Genre.GothicRock
+  fullName: SilverCraft.CSCore.Tags.ID3.ID3Genre.GothicRock
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/Tags/ID3/ID3Genre.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: GothicRock
+    path: ../SilverCraft.CSCore/Tags/ID3/ID3Genre.cs
+    startLine: 99
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Tags.ID3
+  syntax:
+    content: GothicRock = 91
+    return:
+      type: SilverCraft.CSCore.Tags.ID3.ID3Genre
+- uid: SilverCraft.CSCore.Tags.ID3.ID3Genre.ProgressiveRock
+  commentId: F:SilverCraft.CSCore.Tags.ID3.ID3Genre.ProgressiveRock
+  id: ProgressiveRock
+  parent: SilverCraft.CSCore.Tags.ID3.ID3Genre
+  langs:
+  - csharp
+  - vb
+  name: ProgressiveRock
+  nameWithType: ID3Genre.ProgressiveRock
+  fullName: SilverCraft.CSCore.Tags.ID3.ID3Genre.ProgressiveRock
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/Tags/ID3/ID3Genre.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: ProgressiveRock
+    path: ../SilverCraft.CSCore/Tags/ID3/ID3Genre.cs
+    startLine: 100
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Tags.ID3
+  syntax:
+    content: ProgressiveRock = 92
+    return:
+      type: SilverCraft.CSCore.Tags.ID3.ID3Genre
+- uid: SilverCraft.CSCore.Tags.ID3.ID3Genre.PsychedelicRock
+  commentId: F:SilverCraft.CSCore.Tags.ID3.ID3Genre.PsychedelicRock
+  id: PsychedelicRock
+  parent: SilverCraft.CSCore.Tags.ID3.ID3Genre
+  langs:
+  - csharp
+  - vb
+  name: PsychedelicRock
+  nameWithType: ID3Genre.PsychedelicRock
+  fullName: SilverCraft.CSCore.Tags.ID3.ID3Genre.PsychedelicRock
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/Tags/ID3/ID3Genre.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: PsychedelicRock
+    path: ../SilverCraft.CSCore/Tags/ID3/ID3Genre.cs
+    startLine: 101
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Tags.ID3
+  syntax:
+    content: PsychedelicRock = 93
+    return:
+      type: SilverCraft.CSCore.Tags.ID3.ID3Genre
+- uid: SilverCraft.CSCore.Tags.ID3.ID3Genre.Symphonicrock
+  commentId: F:SilverCraft.CSCore.Tags.ID3.ID3Genre.Symphonicrock
+  id: Symphonicrock
+  parent: SilverCraft.CSCore.Tags.ID3.ID3Genre
+  langs:
+  - csharp
+  - vb
+  name: Symphonicrock
+  nameWithType: ID3Genre.Symphonicrock
+  fullName: SilverCraft.CSCore.Tags.ID3.ID3Genre.Symphonicrock
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/Tags/ID3/ID3Genre.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: Symphonicrock
+    path: ../SilverCraft.CSCore/Tags/ID3/ID3Genre.cs
+    startLine: 102
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Tags.ID3
+  syntax:
+    content: Symphonicrock = 94
+    return:
+      type: SilverCraft.CSCore.Tags.ID3.ID3Genre
+- uid: SilverCraft.CSCore.Tags.ID3.ID3Genre.SlowRock
+  commentId: F:SilverCraft.CSCore.Tags.ID3.ID3Genre.SlowRock
+  id: SlowRock
+  parent: SilverCraft.CSCore.Tags.ID3.ID3Genre
+  langs:
+  - csharp
+  - vb
+  name: SlowRock
+  nameWithType: ID3Genre.SlowRock
+  fullName: SilverCraft.CSCore.Tags.ID3.ID3Genre.SlowRock
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/Tags/ID3/ID3Genre.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: SlowRock
+    path: ../SilverCraft.CSCore/Tags/ID3/ID3Genre.cs
+    startLine: 103
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Tags.ID3
+  syntax:
+    content: SlowRock = 95
+    return:
+      type: SilverCraft.CSCore.Tags.ID3.ID3Genre
+- uid: SilverCraft.CSCore.Tags.ID3.ID3Genre.BigBand
+  commentId: F:SilverCraft.CSCore.Tags.ID3.ID3Genre.BigBand
+  id: BigBand
+  parent: SilverCraft.CSCore.Tags.ID3.ID3Genre
+  langs:
+  - csharp
+  - vb
+  name: BigBand
+  nameWithType: ID3Genre.BigBand
+  fullName: SilverCraft.CSCore.Tags.ID3.ID3Genre.BigBand
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/Tags/ID3/ID3Genre.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: BigBand
+    path: ../SilverCraft.CSCore/Tags/ID3/ID3Genre.cs
+    startLine: 104
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Tags.ID3
+  syntax:
+    content: BigBand = 96
+    return:
+      type: SilverCraft.CSCore.Tags.ID3.ID3Genre
+- uid: SilverCraft.CSCore.Tags.ID3.ID3Genre.Chorus
+  commentId: F:SilverCraft.CSCore.Tags.ID3.ID3Genre.Chorus
+  id: Chorus
+  parent: SilverCraft.CSCore.Tags.ID3.ID3Genre
+  langs:
+  - csharp
+  - vb
+  name: Chorus
+  nameWithType: ID3Genre.Chorus
+  fullName: SilverCraft.CSCore.Tags.ID3.ID3Genre.Chorus
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/Tags/ID3/ID3Genre.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: Chorus
+    path: ../SilverCraft.CSCore/Tags/ID3/ID3Genre.cs
+    startLine: 105
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Tags.ID3
+  syntax:
+    content: Chorus = 97
+    return:
+      type: SilverCraft.CSCore.Tags.ID3.ID3Genre
+- uid: SilverCraft.CSCore.Tags.ID3.ID3Genre.EasyListening
+  commentId: F:SilverCraft.CSCore.Tags.ID3.ID3Genre.EasyListening
+  id: EasyListening
+  parent: SilverCraft.CSCore.Tags.ID3.ID3Genre
+  langs:
+  - csharp
+  - vb
+  name: EasyListening
+  nameWithType: ID3Genre.EasyListening
+  fullName: SilverCraft.CSCore.Tags.ID3.ID3Genre.EasyListening
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/Tags/ID3/ID3Genre.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: EasyListening
+    path: ../SilverCraft.CSCore/Tags/ID3/ID3Genre.cs
+    startLine: 106
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Tags.ID3
+  syntax:
+    content: EasyListening = 98
+    return:
+      type: SilverCraft.CSCore.Tags.ID3.ID3Genre
+- uid: SilverCraft.CSCore.Tags.ID3.ID3Genre.Acoustic
+  commentId: F:SilverCraft.CSCore.Tags.ID3.ID3Genre.Acoustic
+  id: Acoustic
+  parent: SilverCraft.CSCore.Tags.ID3.ID3Genre
+  langs:
+  - csharp
+  - vb
+  name: Acoustic
+  nameWithType: ID3Genre.Acoustic
+  fullName: SilverCraft.CSCore.Tags.ID3.ID3Genre.Acoustic
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/Tags/ID3/ID3Genre.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: Acoustic
+    path: ../SilverCraft.CSCore/Tags/ID3/ID3Genre.cs
+    startLine: 107
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Tags.ID3
+  syntax:
+    content: Acoustic = 99
+    return:
+      type: SilverCraft.CSCore.Tags.ID3.ID3Genre
+- uid: SilverCraft.CSCore.Tags.ID3.ID3Genre.Humour
+  commentId: F:SilverCraft.CSCore.Tags.ID3.ID3Genre.Humour
+  id: Humour
+  parent: SilverCraft.CSCore.Tags.ID3.ID3Genre
+  langs:
+  - csharp
+  - vb
+  name: Humour
+  nameWithType: ID3Genre.Humour
+  fullName: SilverCraft.CSCore.Tags.ID3.ID3Genre.Humour
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/Tags/ID3/ID3Genre.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: Humour
+    path: ../SilverCraft.CSCore/Tags/ID3/ID3Genre.cs
+    startLine: 108
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Tags.ID3
+  syntax:
+    content: Humour = 100
+    return:
+      type: SilverCraft.CSCore.Tags.ID3.ID3Genre
+- uid: SilverCraft.CSCore.Tags.ID3.ID3Genre.Speech
+  commentId: F:SilverCraft.CSCore.Tags.ID3.ID3Genre.Speech
+  id: Speech
+  parent: SilverCraft.CSCore.Tags.ID3.ID3Genre
+  langs:
+  - csharp
+  - vb
+  name: Speech
+  nameWithType: ID3Genre.Speech
+  fullName: SilverCraft.CSCore.Tags.ID3.ID3Genre.Speech
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/Tags/ID3/ID3Genre.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: Speech
+    path: ../SilverCraft.CSCore/Tags/ID3/ID3Genre.cs
+    startLine: 109
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Tags.ID3
+  syntax:
+    content: Speech = 101
+    return:
+      type: SilverCraft.CSCore.Tags.ID3.ID3Genre
+- uid: SilverCraft.CSCore.Tags.ID3.ID3Genre.Chanson
+  commentId: F:SilverCraft.CSCore.Tags.ID3.ID3Genre.Chanson
+  id: Chanson
+  parent: SilverCraft.CSCore.Tags.ID3.ID3Genre
+  langs:
+  - csharp
+  - vb
+  name: Chanson
+  nameWithType: ID3Genre.Chanson
+  fullName: SilverCraft.CSCore.Tags.ID3.ID3Genre.Chanson
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/Tags/ID3/ID3Genre.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: Chanson
+    path: ../SilverCraft.CSCore/Tags/ID3/ID3Genre.cs
+    startLine: 110
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Tags.ID3
+  syntax:
+    content: Chanson = 102
+    return:
+      type: SilverCraft.CSCore.Tags.ID3.ID3Genre
+- uid: SilverCraft.CSCore.Tags.ID3.ID3Genre.Opera
+  commentId: F:SilverCraft.CSCore.Tags.ID3.ID3Genre.Opera
+  id: Opera
+  parent: SilverCraft.CSCore.Tags.ID3.ID3Genre
+  langs:
+  - csharp
+  - vb
+  name: Opera
+  nameWithType: ID3Genre.Opera
+  fullName: SilverCraft.CSCore.Tags.ID3.ID3Genre.Opera
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/Tags/ID3/ID3Genre.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: Opera
+    path: ../SilverCraft.CSCore/Tags/ID3/ID3Genre.cs
+    startLine: 111
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Tags.ID3
+  syntax:
+    content: Opera = 103
+    return:
+      type: SilverCraft.CSCore.Tags.ID3.ID3Genre
+- uid: SilverCraft.CSCore.Tags.ID3.ID3Genre.ChamberMusic
+  commentId: F:SilverCraft.CSCore.Tags.ID3.ID3Genre.ChamberMusic
+  id: ChamberMusic
+  parent: SilverCraft.CSCore.Tags.ID3.ID3Genre
+  langs:
+  - csharp
+  - vb
+  name: ChamberMusic
+  nameWithType: ID3Genre.ChamberMusic
+  fullName: SilverCraft.CSCore.Tags.ID3.ID3Genre.ChamberMusic
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/Tags/ID3/ID3Genre.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: ChamberMusic
+    path: ../SilverCraft.CSCore/Tags/ID3/ID3Genre.cs
+    startLine: 112
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Tags.ID3
+  syntax:
+    content: ChamberMusic = 104
+    return:
+      type: SilverCraft.CSCore.Tags.ID3.ID3Genre
+- uid: SilverCraft.CSCore.Tags.ID3.ID3Genre.Sonata
+  commentId: F:SilverCraft.CSCore.Tags.ID3.ID3Genre.Sonata
+  id: Sonata
+  parent: SilverCraft.CSCore.Tags.ID3.ID3Genre
+  langs:
+  - csharp
+  - vb
+  name: Sonata
+  nameWithType: ID3Genre.Sonata
+  fullName: SilverCraft.CSCore.Tags.ID3.ID3Genre.Sonata
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/Tags/ID3/ID3Genre.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: Sonata
+    path: ../SilverCraft.CSCore/Tags/ID3/ID3Genre.cs
+    startLine: 113
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Tags.ID3
+  syntax:
+    content: Sonata = 105
+    return:
+      type: SilverCraft.CSCore.Tags.ID3.ID3Genre
+- uid: SilverCraft.CSCore.Tags.ID3.ID3Genre.Symphony
+  commentId: F:SilverCraft.CSCore.Tags.ID3.ID3Genre.Symphony
+  id: Symphony
+  parent: SilverCraft.CSCore.Tags.ID3.ID3Genre
+  langs:
+  - csharp
+  - vb
+  name: Symphony
+  nameWithType: ID3Genre.Symphony
+  fullName: SilverCraft.CSCore.Tags.ID3.ID3Genre.Symphony
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/Tags/ID3/ID3Genre.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: Symphony
+    path: ../SilverCraft.CSCore/Tags/ID3/ID3Genre.cs
+    startLine: 114
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Tags.ID3
+  syntax:
+    content: Symphony = 106
+    return:
+      type: SilverCraft.CSCore.Tags.ID3.ID3Genre
+- uid: SilverCraft.CSCore.Tags.ID3.ID3Genre.BootyBass
+  commentId: F:SilverCraft.CSCore.Tags.ID3.ID3Genre.BootyBass
+  id: BootyBass
+  parent: SilverCraft.CSCore.Tags.ID3.ID3Genre
+  langs:
+  - csharp
+  - vb
+  name: BootyBass
+  nameWithType: ID3Genre.BootyBass
+  fullName: SilverCraft.CSCore.Tags.ID3.ID3Genre.BootyBass
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/Tags/ID3/ID3Genre.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: BootyBass
+    path: ../SilverCraft.CSCore/Tags/ID3/ID3Genre.cs
+    startLine: 115
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Tags.ID3
+  syntax:
+    content: BootyBass = 107
+    return:
+      type: SilverCraft.CSCore.Tags.ID3.ID3Genre
+- uid: SilverCraft.CSCore.Tags.ID3.ID3Genre.Primus
+  commentId: F:SilverCraft.CSCore.Tags.ID3.ID3Genre.Primus
+  id: Primus
+  parent: SilverCraft.CSCore.Tags.ID3.ID3Genre
+  langs:
+  - csharp
+  - vb
+  name: Primus
+  nameWithType: ID3Genre.Primus
+  fullName: SilverCraft.CSCore.Tags.ID3.ID3Genre.Primus
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/Tags/ID3/ID3Genre.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: Primus
+    path: ../SilverCraft.CSCore/Tags/ID3/ID3Genre.cs
+    startLine: 116
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Tags.ID3
+  syntax:
+    content: Primus = 108
+    return:
+      type: SilverCraft.CSCore.Tags.ID3.ID3Genre
+- uid: SilverCraft.CSCore.Tags.ID3.ID3Genre.PornGroove
+  commentId: F:SilverCraft.CSCore.Tags.ID3.ID3Genre.PornGroove
+  id: PornGroove
+  parent: SilverCraft.CSCore.Tags.ID3.ID3Genre
+  langs:
+  - csharp
+  - vb
+  name: PornGroove
+  nameWithType: ID3Genre.PornGroove
+  fullName: SilverCraft.CSCore.Tags.ID3.ID3Genre.PornGroove
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/Tags/ID3/ID3Genre.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: PornGroove
+    path: ../SilverCraft.CSCore/Tags/ID3/ID3Genre.cs
+    startLine: 117
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Tags.ID3
+  syntax:
+    content: PornGroove = 109
+    return:
+      type: SilverCraft.CSCore.Tags.ID3.ID3Genre
+- uid: SilverCraft.CSCore.Tags.ID3.ID3Genre.Satire
+  commentId: F:SilverCraft.CSCore.Tags.ID3.ID3Genre.Satire
+  id: Satire
+  parent: SilverCraft.CSCore.Tags.ID3.ID3Genre
+  langs:
+  - csharp
+  - vb
+  name: Satire
+  nameWithType: ID3Genre.Satire
+  fullName: SilverCraft.CSCore.Tags.ID3.ID3Genre.Satire
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/Tags/ID3/ID3Genre.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: Satire
+    path: ../SilverCraft.CSCore/Tags/ID3/ID3Genre.cs
+    startLine: 118
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Tags.ID3
+  syntax:
+    content: Satire = 110
+    return:
+      type: SilverCraft.CSCore.Tags.ID3.ID3Genre
+- uid: SilverCraft.CSCore.Tags.ID3.ID3Genre.SlowJam
+  commentId: F:SilverCraft.CSCore.Tags.ID3.ID3Genre.SlowJam
+  id: SlowJam
+  parent: SilverCraft.CSCore.Tags.ID3.ID3Genre
+  langs:
+  - csharp
+  - vb
+  name: SlowJam
+  nameWithType: ID3Genre.SlowJam
+  fullName: SilverCraft.CSCore.Tags.ID3.ID3Genre.SlowJam
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/Tags/ID3/ID3Genre.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: SlowJam
+    path: ../SilverCraft.CSCore/Tags/ID3/ID3Genre.cs
+    startLine: 119
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Tags.ID3
+  syntax:
+    content: SlowJam = 111
+    return:
+      type: SilverCraft.CSCore.Tags.ID3.ID3Genre
+- uid: SilverCraft.CSCore.Tags.ID3.ID3Genre.Club
+  commentId: F:SilverCraft.CSCore.Tags.ID3.ID3Genre.Club
+  id: Club
+  parent: SilverCraft.CSCore.Tags.ID3.ID3Genre
+  langs:
+  - csharp
+  - vb
+  name: Club
+  nameWithType: ID3Genre.Club
+  fullName: SilverCraft.CSCore.Tags.ID3.ID3Genre.Club
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/Tags/ID3/ID3Genre.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: Club
+    path: ../SilverCraft.CSCore/Tags/ID3/ID3Genre.cs
+    startLine: 120
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Tags.ID3
+  syntax:
+    content: Club = 112
+    return:
+      type: SilverCraft.CSCore.Tags.ID3.ID3Genre
+- uid: SilverCraft.CSCore.Tags.ID3.ID3Genre.Tango
+  commentId: F:SilverCraft.CSCore.Tags.ID3.ID3Genre.Tango
+  id: Tango
+  parent: SilverCraft.CSCore.Tags.ID3.ID3Genre
+  langs:
+  - csharp
+  - vb
+  name: Tango
+  nameWithType: ID3Genre.Tango
+  fullName: SilverCraft.CSCore.Tags.ID3.ID3Genre.Tango
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/Tags/ID3/ID3Genre.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: Tango
+    path: ../SilverCraft.CSCore/Tags/ID3/ID3Genre.cs
+    startLine: 121
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Tags.ID3
+  syntax:
+    content: Tango = 113
+    return:
+      type: SilverCraft.CSCore.Tags.ID3.ID3Genre
+- uid: SilverCraft.CSCore.Tags.ID3.ID3Genre.Samba
+  commentId: F:SilverCraft.CSCore.Tags.ID3.ID3Genre.Samba
+  id: Samba
+  parent: SilverCraft.CSCore.Tags.ID3.ID3Genre
+  langs:
+  - csharp
+  - vb
+  name: Samba
+  nameWithType: ID3Genre.Samba
+  fullName: SilverCraft.CSCore.Tags.ID3.ID3Genre.Samba
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/Tags/ID3/ID3Genre.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: Samba
+    path: ../SilverCraft.CSCore/Tags/ID3/ID3Genre.cs
+    startLine: 122
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Tags.ID3
+  syntax:
+    content: Samba = 114
+    return:
+      type: SilverCraft.CSCore.Tags.ID3.ID3Genre
+- uid: SilverCraft.CSCore.Tags.ID3.ID3Genre.Folklore
+  commentId: F:SilverCraft.CSCore.Tags.ID3.ID3Genre.Folklore
+  id: Folklore
+  parent: SilverCraft.CSCore.Tags.ID3.ID3Genre
+  langs:
+  - csharp
+  - vb
+  name: Folklore
+  nameWithType: ID3Genre.Folklore
+  fullName: SilverCraft.CSCore.Tags.ID3.ID3Genre.Folklore
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/Tags/ID3/ID3Genre.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: Folklore
+    path: ../SilverCraft.CSCore/Tags/ID3/ID3Genre.cs
+    startLine: 123
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Tags.ID3
+  syntax:
+    content: Folklore = 115
+    return:
+      type: SilverCraft.CSCore.Tags.ID3.ID3Genre
+- uid: SilverCraft.CSCore.Tags.ID3.ID3Genre.Ballad
+  commentId: F:SilverCraft.CSCore.Tags.ID3.ID3Genre.Ballad
+  id: Ballad
+  parent: SilverCraft.CSCore.Tags.ID3.ID3Genre
+  langs:
+  - csharp
+  - vb
+  name: Ballad
+  nameWithType: ID3Genre.Ballad
+  fullName: SilverCraft.CSCore.Tags.ID3.ID3Genre.Ballad
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/Tags/ID3/ID3Genre.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: Ballad
+    path: ../SilverCraft.CSCore/Tags/ID3/ID3Genre.cs
+    startLine: 124
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Tags.ID3
+  syntax:
+    content: Ballad = 116
+    return:
+      type: SilverCraft.CSCore.Tags.ID3.ID3Genre
+- uid: SilverCraft.CSCore.Tags.ID3.ID3Genre.PowerBallad
+  commentId: F:SilverCraft.CSCore.Tags.ID3.ID3Genre.PowerBallad
+  id: PowerBallad
+  parent: SilverCraft.CSCore.Tags.ID3.ID3Genre
+  langs:
+  - csharp
+  - vb
+  name: PowerBallad
+  nameWithType: ID3Genre.PowerBallad
+  fullName: SilverCraft.CSCore.Tags.ID3.ID3Genre.PowerBallad
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/Tags/ID3/ID3Genre.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: PowerBallad
+    path: ../SilverCraft.CSCore/Tags/ID3/ID3Genre.cs
+    startLine: 125
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Tags.ID3
+  syntax:
+    content: PowerBallad = 117
+    return:
+      type: SilverCraft.CSCore.Tags.ID3.ID3Genre
+- uid: SilverCraft.CSCore.Tags.ID3.ID3Genre.RythmicSoul
+  commentId: F:SilverCraft.CSCore.Tags.ID3.ID3Genre.RythmicSoul
+  id: RythmicSoul
+  parent: SilverCraft.CSCore.Tags.ID3.ID3Genre
+  langs:
+  - csharp
+  - vb
+  name: RythmicSoul
+  nameWithType: ID3Genre.RythmicSoul
+  fullName: SilverCraft.CSCore.Tags.ID3.ID3Genre.RythmicSoul
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/Tags/ID3/ID3Genre.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: RythmicSoul
+    path: ../SilverCraft.CSCore/Tags/ID3/ID3Genre.cs
+    startLine: 126
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Tags.ID3
+  syntax:
+    content: RythmicSoul = 118
+    return:
+      type: SilverCraft.CSCore.Tags.ID3.ID3Genre
+- uid: SilverCraft.CSCore.Tags.ID3.ID3Genre.Freestyle
+  commentId: F:SilverCraft.CSCore.Tags.ID3.ID3Genre.Freestyle
+  id: Freestyle
+  parent: SilverCraft.CSCore.Tags.ID3.ID3Genre
+  langs:
+  - csharp
+  - vb
+  name: Freestyle
+  nameWithType: ID3Genre.Freestyle
+  fullName: SilverCraft.CSCore.Tags.ID3.ID3Genre.Freestyle
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/Tags/ID3/ID3Genre.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: Freestyle
+    path: ../SilverCraft.CSCore/Tags/ID3/ID3Genre.cs
+    startLine: 127
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Tags.ID3
+  syntax:
+    content: Freestyle = 119
+    return:
+      type: SilverCraft.CSCore.Tags.ID3.ID3Genre
+- uid: SilverCraft.CSCore.Tags.ID3.ID3Genre.Duet
+  commentId: F:SilverCraft.CSCore.Tags.ID3.ID3Genre.Duet
+  id: Duet
+  parent: SilverCraft.CSCore.Tags.ID3.ID3Genre
+  langs:
+  - csharp
+  - vb
+  name: Duet
+  nameWithType: ID3Genre.Duet
+  fullName: SilverCraft.CSCore.Tags.ID3.ID3Genre.Duet
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/Tags/ID3/ID3Genre.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: Duet
+    path: ../SilverCraft.CSCore/Tags/ID3/ID3Genre.cs
+    startLine: 128
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Tags.ID3
+  syntax:
+    content: Duet = 120
+    return:
+      type: SilverCraft.CSCore.Tags.ID3.ID3Genre
+- uid: SilverCraft.CSCore.Tags.ID3.ID3Genre.PunkRock
+  commentId: F:SilverCraft.CSCore.Tags.ID3.ID3Genre.PunkRock
+  id: PunkRock
+  parent: SilverCraft.CSCore.Tags.ID3.ID3Genre
+  langs:
+  - csharp
+  - vb
+  name: PunkRock
+  nameWithType: ID3Genre.PunkRock
+  fullName: SilverCraft.CSCore.Tags.ID3.ID3Genre.PunkRock
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/Tags/ID3/ID3Genre.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: PunkRock
+    path: ../SilverCraft.CSCore/Tags/ID3/ID3Genre.cs
+    startLine: 129
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Tags.ID3
+  syntax:
+    content: PunkRock = 121
+    return:
+      type: SilverCraft.CSCore.Tags.ID3.ID3Genre
+- uid: SilverCraft.CSCore.Tags.ID3.ID3Genre.DrumSolo
+  commentId: F:SilverCraft.CSCore.Tags.ID3.ID3Genre.DrumSolo
+  id: DrumSolo
+  parent: SilverCraft.CSCore.Tags.ID3.ID3Genre
+  langs:
+  - csharp
+  - vb
+  name: DrumSolo
+  nameWithType: ID3Genre.DrumSolo
+  fullName: SilverCraft.CSCore.Tags.ID3.ID3Genre.DrumSolo
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/Tags/ID3/ID3Genre.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: DrumSolo
+    path: ../SilverCraft.CSCore/Tags/ID3/ID3Genre.cs
+    startLine: 130
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Tags.ID3
+  syntax:
+    content: DrumSolo = 122
+    return:
+      type: SilverCraft.CSCore.Tags.ID3.ID3Genre
+- uid: SilverCraft.CSCore.Tags.ID3.ID3Genre.ACapella
+  commentId: F:SilverCraft.CSCore.Tags.ID3.ID3Genre.ACapella
+  id: ACapella
+  parent: SilverCraft.CSCore.Tags.ID3.ID3Genre
+  langs:
+  - csharp
+  - vb
+  name: ACapella
+  nameWithType: ID3Genre.ACapella
+  fullName: SilverCraft.CSCore.Tags.ID3.ID3Genre.ACapella
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/Tags/ID3/ID3Genre.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: ACapella
+    path: ../SilverCraft.CSCore/Tags/ID3/ID3Genre.cs
+    startLine: 131
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Tags.ID3
+  syntax:
+    content: ACapella = 123
+    return:
+      type: SilverCraft.CSCore.Tags.ID3.ID3Genre
+- uid: SilverCraft.CSCore.Tags.ID3.ID3Genre.EuroHouse
+  commentId: F:SilverCraft.CSCore.Tags.ID3.ID3Genre.EuroHouse
+  id: EuroHouse
+  parent: SilverCraft.CSCore.Tags.ID3.ID3Genre
+  langs:
+  - csharp
+  - vb
+  name: EuroHouse
+  nameWithType: ID3Genre.EuroHouse
+  fullName: SilverCraft.CSCore.Tags.ID3.ID3Genre.EuroHouse
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/Tags/ID3/ID3Genre.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: EuroHouse
+    path: ../SilverCraft.CSCore/Tags/ID3/ID3Genre.cs
+    startLine: 132
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Tags.ID3
+  syntax:
+    content: EuroHouse = 124
+    return:
+      type: SilverCraft.CSCore.Tags.ID3.ID3Genre
+- uid: SilverCraft.CSCore.Tags.ID3.ID3Genre.DanceHall
+  commentId: F:SilverCraft.CSCore.Tags.ID3.ID3Genre.DanceHall
+  id: DanceHall
+  parent: SilverCraft.CSCore.Tags.ID3.ID3Genre
+  langs:
+  - csharp
+  - vb
+  name: DanceHall
+  nameWithType: ID3Genre.DanceHall
+  fullName: SilverCraft.CSCore.Tags.ID3.ID3Genre.DanceHall
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/Tags/ID3/ID3Genre.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: DanceHall
+    path: ../SilverCraft.CSCore/Tags/ID3/ID3Genre.cs
+    startLine: 133
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Tags.ID3
+  syntax:
+    content: DanceHall = 125
+    return:
+      type: SilverCraft.CSCore.Tags.ID3.ID3Genre
+- uid: SilverCraft.CSCore.Tags.ID3.ID3Genre.Goa
+  commentId: F:SilverCraft.CSCore.Tags.ID3.ID3Genre.Goa
+  id: Goa
+  parent: SilverCraft.CSCore.Tags.ID3.ID3Genre
+  langs:
+  - csharp
+  - vb
+  name: Goa
+  nameWithType: ID3Genre.Goa
+  fullName: SilverCraft.CSCore.Tags.ID3.ID3Genre.Goa
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/Tags/ID3/ID3Genre.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: Goa
+    path: ../SilverCraft.CSCore/Tags/ID3/ID3Genre.cs
+    startLine: 134
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Tags.ID3
+  syntax:
+    content: Goa = 126
+    return:
+      type: SilverCraft.CSCore.Tags.ID3.ID3Genre
+- uid: SilverCraft.CSCore.Tags.ID3.ID3Genre.DrumAndBass
+  commentId: F:SilverCraft.CSCore.Tags.ID3.ID3Genre.DrumAndBass
+  id: DrumAndBass
+  parent: SilverCraft.CSCore.Tags.ID3.ID3Genre
+  langs:
+  - csharp
+  - vb
+  name: DrumAndBass
+  nameWithType: ID3Genre.DrumAndBass
+  fullName: SilverCraft.CSCore.Tags.ID3.ID3Genre.DrumAndBass
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/Tags/ID3/ID3Genre.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: DrumAndBass
+    path: ../SilverCraft.CSCore/Tags/ID3/ID3Genre.cs
+    startLine: 135
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Tags.ID3
+  syntax:
+    content: DrumAndBass = 127
+    return:
+      type: SilverCraft.CSCore.Tags.ID3.ID3Genre
+- uid: SilverCraft.CSCore.Tags.ID3.ID3Genre.ClubHouse
+  commentId: F:SilverCraft.CSCore.Tags.ID3.ID3Genre.ClubHouse
+  id: ClubHouse
+  parent: SilverCraft.CSCore.Tags.ID3.ID3Genre
+  langs:
+  - csharp
+  - vb
+  name: ClubHouse
+  nameWithType: ID3Genre.ClubHouse
+  fullName: SilverCraft.CSCore.Tags.ID3.ID3Genre.ClubHouse
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/Tags/ID3/ID3Genre.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: ClubHouse
+    path: ../SilverCraft.CSCore/Tags/ID3/ID3Genre.cs
+    startLine: 136
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Tags.ID3
+  syntax:
+    content: ClubHouse = 128
+    return:
+      type: SilverCraft.CSCore.Tags.ID3.ID3Genre
+- uid: SilverCraft.CSCore.Tags.ID3.ID3Genre.HardcoreTechno
+  commentId: F:SilverCraft.CSCore.Tags.ID3.ID3Genre.HardcoreTechno
+  id: HardcoreTechno
+  parent: SilverCraft.CSCore.Tags.ID3.ID3Genre
+  langs:
+  - csharp
+  - vb
+  name: HardcoreTechno
+  nameWithType: ID3Genre.HardcoreTechno
+  fullName: SilverCraft.CSCore.Tags.ID3.ID3Genre.HardcoreTechno
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/Tags/ID3/ID3Genre.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: HardcoreTechno
+    path: ../SilverCraft.CSCore/Tags/ID3/ID3Genre.cs
+    startLine: 137
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Tags.ID3
+  syntax:
+    content: HardcoreTechno = 129
+    return:
+      type: SilverCraft.CSCore.Tags.ID3.ID3Genre
+- uid: SilverCraft.CSCore.Tags.ID3.ID3Genre.Terror
+  commentId: F:SilverCraft.CSCore.Tags.ID3.ID3Genre.Terror
+  id: Terror
+  parent: SilverCraft.CSCore.Tags.ID3.ID3Genre
+  langs:
+  - csharp
+  - vb
+  name: Terror
+  nameWithType: ID3Genre.Terror
+  fullName: SilverCraft.CSCore.Tags.ID3.ID3Genre.Terror
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/Tags/ID3/ID3Genre.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: Terror
+    path: ../SilverCraft.CSCore/Tags/ID3/ID3Genre.cs
+    startLine: 138
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Tags.ID3
+  syntax:
+    content: Terror = 130
+    return:
+      type: SilverCraft.CSCore.Tags.ID3.ID3Genre
+- uid: SilverCraft.CSCore.Tags.ID3.ID3Genre.Indie
+  commentId: F:SilverCraft.CSCore.Tags.ID3.ID3Genre.Indie
+  id: Indie
+  parent: SilverCraft.CSCore.Tags.ID3.ID3Genre
+  langs:
+  - csharp
+  - vb
+  name: Indie
+  nameWithType: ID3Genre.Indie
+  fullName: SilverCraft.CSCore.Tags.ID3.ID3Genre.Indie
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/Tags/ID3/ID3Genre.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: Indie
+    path: ../SilverCraft.CSCore/Tags/ID3/ID3Genre.cs
+    startLine: 139
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Tags.ID3
+  syntax:
+    content: Indie = 131
+    return:
+      type: SilverCraft.CSCore.Tags.ID3.ID3Genre
+- uid: SilverCraft.CSCore.Tags.ID3.ID3Genre.Britpop
+  commentId: F:SilverCraft.CSCore.Tags.ID3.ID3Genre.Britpop
+  id: Britpop
+  parent: SilverCraft.CSCore.Tags.ID3.ID3Genre
+  langs:
+  - csharp
+  - vb
+  name: Britpop
+  nameWithType: ID3Genre.Britpop
+  fullName: SilverCraft.CSCore.Tags.ID3.ID3Genre.Britpop
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/Tags/ID3/ID3Genre.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: Britpop
+    path: ../SilverCraft.CSCore/Tags/ID3/ID3Genre.cs
+    startLine: 140
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Tags.ID3
+  syntax:
+    content: Britpop = 132
+    return:
+      type: SilverCraft.CSCore.Tags.ID3.ID3Genre
+- uid: SilverCraft.CSCore.Tags.ID3.ID3Genre.NegerPunk
+  commentId: F:SilverCraft.CSCore.Tags.ID3.ID3Genre.NegerPunk
+  id: NegerPunk
+  parent: SilverCraft.CSCore.Tags.ID3.ID3Genre
+  langs:
+  - csharp
+  - vb
+  name: NegerPunk
+  nameWithType: ID3Genre.NegerPunk
+  fullName: SilverCraft.CSCore.Tags.ID3.ID3Genre.NegerPunk
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/Tags/ID3/ID3Genre.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: NegerPunk
+    path: ../SilverCraft.CSCore/Tags/ID3/ID3Genre.cs
+    startLine: 141
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Tags.ID3
+  syntax:
+    content: NegerPunk = 133
+    return:
+      type: SilverCraft.CSCore.Tags.ID3.ID3Genre
+- uid: SilverCraft.CSCore.Tags.ID3.ID3Genre.PolskPunk
+  commentId: F:SilverCraft.CSCore.Tags.ID3.ID3Genre.PolskPunk
+  id: PolskPunk
+  parent: SilverCraft.CSCore.Tags.ID3.ID3Genre
+  langs:
+  - csharp
+  - vb
+  name: PolskPunk
+  nameWithType: ID3Genre.PolskPunk
+  fullName: SilverCraft.CSCore.Tags.ID3.ID3Genre.PolskPunk
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/Tags/ID3/ID3Genre.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: PolskPunk
+    path: ../SilverCraft.CSCore/Tags/ID3/ID3Genre.cs
+    startLine: 142
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Tags.ID3
+  syntax:
+    content: PolskPunk = 134
+    return:
+      type: SilverCraft.CSCore.Tags.ID3.ID3Genre
+- uid: SilverCraft.CSCore.Tags.ID3.ID3Genre.Beat
+  commentId: F:SilverCraft.CSCore.Tags.ID3.ID3Genre.Beat
+  id: Beat
+  parent: SilverCraft.CSCore.Tags.ID3.ID3Genre
+  langs:
+  - csharp
+  - vb
+  name: Beat
+  nameWithType: ID3Genre.Beat
+  fullName: SilverCraft.CSCore.Tags.ID3.ID3Genre.Beat
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/Tags/ID3/ID3Genre.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: Beat
+    path: ../SilverCraft.CSCore/Tags/ID3/ID3Genre.cs
+    startLine: 143
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Tags.ID3
+  syntax:
+    content: Beat = 135
+    return:
+      type: SilverCraft.CSCore.Tags.ID3.ID3Genre
+- uid: SilverCraft.CSCore.Tags.ID3.ID3Genre.ChristianGangstaRap
+  commentId: F:SilverCraft.CSCore.Tags.ID3.ID3Genre.ChristianGangstaRap
+  id: ChristianGangstaRap
+  parent: SilverCraft.CSCore.Tags.ID3.ID3Genre
+  langs:
+  - csharp
+  - vb
+  name: ChristianGangstaRap
+  nameWithType: ID3Genre.ChristianGangstaRap
+  fullName: SilverCraft.CSCore.Tags.ID3.ID3Genre.ChristianGangstaRap
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/Tags/ID3/ID3Genre.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: ChristianGangstaRap
+    path: ../SilverCraft.CSCore/Tags/ID3/ID3Genre.cs
+    startLine: 144
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Tags.ID3
+  syntax:
+    content: ChristianGangstaRap = 136
+    return:
+      type: SilverCraft.CSCore.Tags.ID3.ID3Genre
+- uid: SilverCraft.CSCore.Tags.ID3.ID3Genre.HeavyMetal
+  commentId: F:SilverCraft.CSCore.Tags.ID3.ID3Genre.HeavyMetal
+  id: HeavyMetal
+  parent: SilverCraft.CSCore.Tags.ID3.ID3Genre
+  langs:
+  - csharp
+  - vb
+  name: HeavyMetal
+  nameWithType: ID3Genre.HeavyMetal
+  fullName: SilverCraft.CSCore.Tags.ID3.ID3Genre.HeavyMetal
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/Tags/ID3/ID3Genre.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: HeavyMetal
+    path: ../SilverCraft.CSCore/Tags/ID3/ID3Genre.cs
+    startLine: 145
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Tags.ID3
+  syntax:
+    content: HeavyMetal = 137
+    return:
+      type: SilverCraft.CSCore.Tags.ID3.ID3Genre
+- uid: SilverCraft.CSCore.Tags.ID3.ID3Genre.BlackMetal
+  commentId: F:SilverCraft.CSCore.Tags.ID3.ID3Genre.BlackMetal
+  id: BlackMetal
+  parent: SilverCraft.CSCore.Tags.ID3.ID3Genre
+  langs:
+  - csharp
+  - vb
+  name: BlackMetal
+  nameWithType: ID3Genre.BlackMetal
+  fullName: SilverCraft.CSCore.Tags.ID3.ID3Genre.BlackMetal
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/Tags/ID3/ID3Genre.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: BlackMetal
+    path: ../SilverCraft.CSCore/Tags/ID3/ID3Genre.cs
+    startLine: 146
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Tags.ID3
+  syntax:
+    content: BlackMetal = 138
+    return:
+      type: SilverCraft.CSCore.Tags.ID3.ID3Genre
+- uid: SilverCraft.CSCore.Tags.ID3.ID3Genre.Crossover
+  commentId: F:SilverCraft.CSCore.Tags.ID3.ID3Genre.Crossover
+  id: Crossover
+  parent: SilverCraft.CSCore.Tags.ID3.ID3Genre
+  langs:
+  - csharp
+  - vb
+  name: Crossover
+  nameWithType: ID3Genre.Crossover
+  fullName: SilverCraft.CSCore.Tags.ID3.ID3Genre.Crossover
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/Tags/ID3/ID3Genre.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: Crossover
+    path: ../SilverCraft.CSCore/Tags/ID3/ID3Genre.cs
+    startLine: 147
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Tags.ID3
+  syntax:
+    content: Crossover = 139
+    return:
+      type: SilverCraft.CSCore.Tags.ID3.ID3Genre
+- uid: SilverCraft.CSCore.Tags.ID3.ID3Genre.ContemporaryChrisitan
+  commentId: F:SilverCraft.CSCore.Tags.ID3.ID3Genre.ContemporaryChrisitan
+  id: ContemporaryChrisitan
+  parent: SilverCraft.CSCore.Tags.ID3.ID3Genre
+  langs:
+  - csharp
+  - vb
+  name: ContemporaryChrisitan
+  nameWithType: ID3Genre.ContemporaryChrisitan
+  fullName: SilverCraft.CSCore.Tags.ID3.ID3Genre.ContemporaryChrisitan
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/Tags/ID3/ID3Genre.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: ContemporaryChrisitan
+    path: ../SilverCraft.CSCore/Tags/ID3/ID3Genre.cs
+    startLine: 148
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Tags.ID3
+  syntax:
+    content: ContemporaryChrisitan = 140
+    return:
+      type: SilverCraft.CSCore.Tags.ID3.ID3Genre
+- uid: SilverCraft.CSCore.Tags.ID3.ID3Genre.ChrisitanRock
+  commentId: F:SilverCraft.CSCore.Tags.ID3.ID3Genre.ChrisitanRock
+  id: ChrisitanRock
+  parent: SilverCraft.CSCore.Tags.ID3.ID3Genre
+  langs:
+  - csharp
+  - vb
+  name: ChrisitanRock
+  nameWithType: ID3Genre.ChrisitanRock
+  fullName: SilverCraft.CSCore.Tags.ID3.ID3Genre.ChrisitanRock
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/Tags/ID3/ID3Genre.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: ChrisitanRock
+    path: ../SilverCraft.CSCore/Tags/ID3/ID3Genre.cs
+    startLine: 149
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Tags.ID3
+  syntax:
+    content: ChrisitanRock = 141
+    return:
+      type: SilverCraft.CSCore.Tags.ID3.ID3Genre
+- uid: SilverCraft.CSCore.Tags.ID3.ID3Genre.Merengue
+  commentId: F:SilverCraft.CSCore.Tags.ID3.ID3Genre.Merengue
+  id: Merengue
+  parent: SilverCraft.CSCore.Tags.ID3.ID3Genre
+  langs:
+  - csharp
+  - vb
+  name: Merengue
+  nameWithType: ID3Genre.Merengue
+  fullName: SilverCraft.CSCore.Tags.ID3.ID3Genre.Merengue
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/Tags/ID3/ID3Genre.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: Merengue
+    path: ../SilverCraft.CSCore/Tags/ID3/ID3Genre.cs
+    startLine: 150
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Tags.ID3
+  syntax:
+    content: Merengue = 142
+    return:
+      type: SilverCraft.CSCore.Tags.ID3.ID3Genre
+- uid: SilverCraft.CSCore.Tags.ID3.ID3Genre.Salsa
+  commentId: F:SilverCraft.CSCore.Tags.ID3.ID3Genre.Salsa
+  id: Salsa
+  parent: SilverCraft.CSCore.Tags.ID3.ID3Genre
+  langs:
+  - csharp
+  - vb
+  name: Salsa
+  nameWithType: ID3Genre.Salsa
+  fullName: SilverCraft.CSCore.Tags.ID3.ID3Genre.Salsa
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/Tags/ID3/ID3Genre.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: Salsa
+    path: ../SilverCraft.CSCore/Tags/ID3/ID3Genre.cs
+    startLine: 151
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Tags.ID3
+  syntax:
+    content: Salsa = 143
+    return:
+      type: SilverCraft.CSCore.Tags.ID3.ID3Genre
+- uid: SilverCraft.CSCore.Tags.ID3.ID3Genre.ThrashMetal
+  commentId: F:SilverCraft.CSCore.Tags.ID3.ID3Genre.ThrashMetal
+  id: ThrashMetal
+  parent: SilverCraft.CSCore.Tags.ID3.ID3Genre
+  langs:
+  - csharp
+  - vb
+  name: ThrashMetal
+  nameWithType: ID3Genre.ThrashMetal
+  fullName: SilverCraft.CSCore.Tags.ID3.ID3Genre.ThrashMetal
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/Tags/ID3/ID3Genre.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: ThrashMetal
+    path: ../SilverCraft.CSCore/Tags/ID3/ID3Genre.cs
+    startLine: 152
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Tags.ID3
+  syntax:
+    content: ThrashMetal = 144
+    return:
+      type: SilverCraft.CSCore.Tags.ID3.ID3Genre
+- uid: SilverCraft.CSCore.Tags.ID3.ID3Genre.Anime
+  commentId: F:SilverCraft.CSCore.Tags.ID3.ID3Genre.Anime
+  id: Anime
+  parent: SilverCraft.CSCore.Tags.ID3.ID3Genre
+  langs:
+  - csharp
+  - vb
+  name: Anime
+  nameWithType: ID3Genre.Anime
+  fullName: SilverCraft.CSCore.Tags.ID3.ID3Genre.Anime
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/Tags/ID3/ID3Genre.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: Anime
+    path: ../SilverCraft.CSCore/Tags/ID3/ID3Genre.cs
+    startLine: 153
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Tags.ID3
+  syntax:
+    content: Anime = 145
+    return:
+      type: SilverCraft.CSCore.Tags.ID3.ID3Genre
+- uid: SilverCraft.CSCore.Tags.ID3.ID3Genre.Jpop
+  commentId: F:SilverCraft.CSCore.Tags.ID3.ID3Genre.Jpop
+  id: Jpop
+  parent: SilverCraft.CSCore.Tags.ID3.ID3Genre
+  langs:
+  - csharp
+  - vb
+  name: Jpop
+  nameWithType: ID3Genre.Jpop
+  fullName: SilverCraft.CSCore.Tags.ID3.ID3Genre.Jpop
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/Tags/ID3/ID3Genre.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: Jpop
+    path: ../SilverCraft.CSCore/Tags/ID3/ID3Genre.cs
+    startLine: 154
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Tags.ID3
+  syntax:
+    content: Jpop = 146
+    return:
+      type: SilverCraft.CSCore.Tags.ID3.ID3Genre
+- uid: SilverCraft.CSCore.Tags.ID3.ID3Genre.Synthpop
+  commentId: F:SilverCraft.CSCore.Tags.ID3.ID3Genre.Synthpop
+  id: Synthpop
+  parent: SilverCraft.CSCore.Tags.ID3.ID3Genre
+  langs:
+  - csharp
+  - vb
+  name: Synthpop
+  nameWithType: ID3Genre.Synthpop
+  fullName: SilverCraft.CSCore.Tags.ID3.ID3Genre.Synthpop
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/Tags/ID3/ID3Genre.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: Synthpop
+    path: ../SilverCraft.CSCore/Tags/ID3/ID3Genre.cs
+    startLine: 155
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Tags.ID3
+  syntax:
+    content: Synthpop = 147
+    return:
+      type: SilverCraft.CSCore.Tags.ID3.ID3Genre
+- uid: SilverCraft.CSCore.Tags.ID3.ID3Genre.Christmas
+  commentId: F:SilverCraft.CSCore.Tags.ID3.ID3Genre.Christmas
+  id: Christmas
+  parent: SilverCraft.CSCore.Tags.ID3.ID3Genre
+  langs:
+  - csharp
+  - vb
+  name: Christmas
+  nameWithType: ID3Genre.Christmas
+  fullName: SilverCraft.CSCore.Tags.ID3.ID3Genre.Christmas
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/Tags/ID3/ID3Genre.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: Christmas
+    path: ../SilverCraft.CSCore/Tags/ID3/ID3Genre.cs
+    startLine: 156
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Tags.ID3
+  syntax:
+    content: Christmas = 148
+    return:
+      type: SilverCraft.CSCore.Tags.ID3.ID3Genre
+- uid: SilverCraft.CSCore.Tags.ID3.ID3Genre.ArtRock
+  commentId: F:SilverCraft.CSCore.Tags.ID3.ID3Genre.ArtRock
+  id: ArtRock
+  parent: SilverCraft.CSCore.Tags.ID3.ID3Genre
+  langs:
+  - csharp
+  - vb
+  name: ArtRock
+  nameWithType: ID3Genre.ArtRock
+  fullName: SilverCraft.CSCore.Tags.ID3.ID3Genre.ArtRock
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/Tags/ID3/ID3Genre.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: ArtRock
+    path: ../SilverCraft.CSCore/Tags/ID3/ID3Genre.cs
+    startLine: 157
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Tags.ID3
+  syntax:
+    content: ArtRock = 149
+    return:
+      type: SilverCraft.CSCore.Tags.ID3.ID3Genre
+- uid: SilverCraft.CSCore.Tags.ID3.ID3Genre.Baroque
+  commentId: F:SilverCraft.CSCore.Tags.ID3.ID3Genre.Baroque
+  id: Baroque
+  parent: SilverCraft.CSCore.Tags.ID3.ID3Genre
+  langs:
+  - csharp
+  - vb
+  name: Baroque
+  nameWithType: ID3Genre.Baroque
+  fullName: SilverCraft.CSCore.Tags.ID3.ID3Genre.Baroque
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/Tags/ID3/ID3Genre.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: Baroque
+    path: ../SilverCraft.CSCore/Tags/ID3/ID3Genre.cs
+    startLine: 158
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Tags.ID3
+  syntax:
+    content: Baroque = 150
+    return:
+      type: SilverCraft.CSCore.Tags.ID3.ID3Genre
+- uid: SilverCraft.CSCore.Tags.ID3.ID3Genre.Bhangra
+  commentId: F:SilverCraft.CSCore.Tags.ID3.ID3Genre.Bhangra
+  id: Bhangra
+  parent: SilverCraft.CSCore.Tags.ID3.ID3Genre
+  langs:
+  - csharp
+  - vb
+  name: Bhangra
+  nameWithType: ID3Genre.Bhangra
+  fullName: SilverCraft.CSCore.Tags.ID3.ID3Genre.Bhangra
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/Tags/ID3/ID3Genre.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: Bhangra
+    path: ../SilverCraft.CSCore/Tags/ID3/ID3Genre.cs
+    startLine: 159
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Tags.ID3
+  syntax:
+    content: Bhangra = 151
+    return:
+      type: SilverCraft.CSCore.Tags.ID3.ID3Genre
+- uid: SilverCraft.CSCore.Tags.ID3.ID3Genre.BigBeat
+  commentId: F:SilverCraft.CSCore.Tags.ID3.ID3Genre.BigBeat
+  id: BigBeat
+  parent: SilverCraft.CSCore.Tags.ID3.ID3Genre
+  langs:
+  - csharp
+  - vb
+  name: BigBeat
+  nameWithType: ID3Genre.BigBeat
+  fullName: SilverCraft.CSCore.Tags.ID3.ID3Genre.BigBeat
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/Tags/ID3/ID3Genre.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: BigBeat
+    path: ../SilverCraft.CSCore/Tags/ID3/ID3Genre.cs
+    startLine: 160
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Tags.ID3
+  syntax:
+    content: BigBeat = 152
+    return:
+      type: SilverCraft.CSCore.Tags.ID3.ID3Genre
+- uid: SilverCraft.CSCore.Tags.ID3.ID3Genre.Breakbeat
+  commentId: F:SilverCraft.CSCore.Tags.ID3.ID3Genre.Breakbeat
+  id: Breakbeat
+  parent: SilverCraft.CSCore.Tags.ID3.ID3Genre
+  langs:
+  - csharp
+  - vb
+  name: Breakbeat
+  nameWithType: ID3Genre.Breakbeat
+  fullName: SilverCraft.CSCore.Tags.ID3.ID3Genre.Breakbeat
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/Tags/ID3/ID3Genre.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: Breakbeat
+    path: ../SilverCraft.CSCore/Tags/ID3/ID3Genre.cs
+    startLine: 161
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Tags.ID3
+  syntax:
+    content: Breakbeat = 153
+    return:
+      type: SilverCraft.CSCore.Tags.ID3.ID3Genre
+- uid: SilverCraft.CSCore.Tags.ID3.ID3Genre.Chillout
+  commentId: F:SilverCraft.CSCore.Tags.ID3.ID3Genre.Chillout
+  id: Chillout
+  parent: SilverCraft.CSCore.Tags.ID3.ID3Genre
+  langs:
+  - csharp
+  - vb
+  name: Chillout
+  nameWithType: ID3Genre.Chillout
+  fullName: SilverCraft.CSCore.Tags.ID3.ID3Genre.Chillout
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/Tags/ID3/ID3Genre.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: Chillout
+    path: ../SilverCraft.CSCore/Tags/ID3/ID3Genre.cs
+    startLine: 162
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Tags.ID3
+  syntax:
+    content: Chillout = 154
+    return:
+      type: SilverCraft.CSCore.Tags.ID3.ID3Genre
+- uid: SilverCraft.CSCore.Tags.ID3.ID3Genre.Downtempo
+  commentId: F:SilverCraft.CSCore.Tags.ID3.ID3Genre.Downtempo
+  id: Downtempo
+  parent: SilverCraft.CSCore.Tags.ID3.ID3Genre
+  langs:
+  - csharp
+  - vb
+  name: Downtempo
+  nameWithType: ID3Genre.Downtempo
+  fullName: SilverCraft.CSCore.Tags.ID3.ID3Genre.Downtempo
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/Tags/ID3/ID3Genre.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: Downtempo
+    path: ../SilverCraft.CSCore/Tags/ID3/ID3Genre.cs
+    startLine: 163
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Tags.ID3
+  syntax:
+    content: Downtempo = 155
+    return:
+      type: SilverCraft.CSCore.Tags.ID3.ID3Genre
+- uid: SilverCraft.CSCore.Tags.ID3.ID3Genre.Dub
+  commentId: F:SilverCraft.CSCore.Tags.ID3.ID3Genre.Dub
+  id: Dub
+  parent: SilverCraft.CSCore.Tags.ID3.ID3Genre
+  langs:
+  - csharp
+  - vb
+  name: Dub
+  nameWithType: ID3Genre.Dub
+  fullName: SilverCraft.CSCore.Tags.ID3.ID3Genre.Dub
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/Tags/ID3/ID3Genre.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: Dub
+    path: ../SilverCraft.CSCore/Tags/ID3/ID3Genre.cs
+    startLine: 164
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Tags.ID3
+  syntax:
+    content: Dub = 156
+    return:
+      type: SilverCraft.CSCore.Tags.ID3.ID3Genre
+- uid: SilverCraft.CSCore.Tags.ID3.ID3Genre.EBM
+  commentId: F:SilverCraft.CSCore.Tags.ID3.ID3Genre.EBM
+  id: EBM
+  parent: SilverCraft.CSCore.Tags.ID3.ID3Genre
+  langs:
+  - csharp
+  - vb
+  name: EBM
+  nameWithType: ID3Genre.EBM
+  fullName: SilverCraft.CSCore.Tags.ID3.ID3Genre.EBM
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/Tags/ID3/ID3Genre.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: EBM
+    path: ../SilverCraft.CSCore/Tags/ID3/ID3Genre.cs
+    startLine: 165
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Tags.ID3
+  syntax:
+    content: EBM = 157
+    return:
+      type: SilverCraft.CSCore.Tags.ID3.ID3Genre
+- uid: SilverCraft.CSCore.Tags.ID3.ID3Genre.Eclectic
+  commentId: F:SilverCraft.CSCore.Tags.ID3.ID3Genre.Eclectic
+  id: Eclectic
+  parent: SilverCraft.CSCore.Tags.ID3.ID3Genre
+  langs:
+  - csharp
+  - vb
+  name: Eclectic
+  nameWithType: ID3Genre.Eclectic
+  fullName: SilverCraft.CSCore.Tags.ID3.ID3Genre.Eclectic
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/Tags/ID3/ID3Genre.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: Eclectic
+    path: ../SilverCraft.CSCore/Tags/ID3/ID3Genre.cs
+    startLine: 166
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Tags.ID3
+  syntax:
+    content: Eclectic = 158
+    return:
+      type: SilverCraft.CSCore.Tags.ID3.ID3Genre
+- uid: SilverCraft.CSCore.Tags.ID3.ID3Genre.Electro
+  commentId: F:SilverCraft.CSCore.Tags.ID3.ID3Genre.Electro
+  id: Electro
+  parent: SilverCraft.CSCore.Tags.ID3.ID3Genre
+  langs:
+  - csharp
+  - vb
+  name: Electro
+  nameWithType: ID3Genre.Electro
+  fullName: SilverCraft.CSCore.Tags.ID3.ID3Genre.Electro
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/Tags/ID3/ID3Genre.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: Electro
+    path: ../SilverCraft.CSCore/Tags/ID3/ID3Genre.cs
+    startLine: 167
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Tags.ID3
+  syntax:
+    content: Electro = 159
+    return:
+      type: SilverCraft.CSCore.Tags.ID3.ID3Genre
+- uid: SilverCraft.CSCore.Tags.ID3.ID3Genre.Electroclash
+  commentId: F:SilverCraft.CSCore.Tags.ID3.ID3Genre.Electroclash
+  id: Electroclash
+  parent: SilverCraft.CSCore.Tags.ID3.ID3Genre
+  langs:
+  - csharp
+  - vb
+  name: Electroclash
+  nameWithType: ID3Genre.Electroclash
+  fullName: SilverCraft.CSCore.Tags.ID3.ID3Genre.Electroclash
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/Tags/ID3/ID3Genre.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: Electroclash
+    path: ../SilverCraft.CSCore/Tags/ID3/ID3Genre.cs
+    startLine: 168
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Tags.ID3
+  syntax:
+    content: Electroclash = 160
+    return:
+      type: SilverCraft.CSCore.Tags.ID3.ID3Genre
+- uid: SilverCraft.CSCore.Tags.ID3.ID3Genre.Emo
+  commentId: F:SilverCraft.CSCore.Tags.ID3.ID3Genre.Emo
+  id: Emo
+  parent: SilverCraft.CSCore.Tags.ID3.ID3Genre
+  langs:
+  - csharp
+  - vb
+  name: Emo
+  nameWithType: ID3Genre.Emo
+  fullName: SilverCraft.CSCore.Tags.ID3.ID3Genre.Emo
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/Tags/ID3/ID3Genre.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: Emo
+    path: ../SilverCraft.CSCore/Tags/ID3/ID3Genre.cs
+    startLine: 169
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Tags.ID3
+  syntax:
+    content: Emo = 161
+    return:
+      type: SilverCraft.CSCore.Tags.ID3.ID3Genre
+- uid: SilverCraft.CSCore.Tags.ID3.ID3Genre.Experimental
+  commentId: F:SilverCraft.CSCore.Tags.ID3.ID3Genre.Experimental
+  id: Experimental
+  parent: SilverCraft.CSCore.Tags.ID3.ID3Genre
+  langs:
+  - csharp
+  - vb
+  name: Experimental
+  nameWithType: ID3Genre.Experimental
+  fullName: SilverCraft.CSCore.Tags.ID3.ID3Genre.Experimental
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/Tags/ID3/ID3Genre.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: Experimental
+    path: ../SilverCraft.CSCore/Tags/ID3/ID3Genre.cs
+    startLine: 170
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Tags.ID3
+  syntax:
+    content: Experimental = 162
+    return:
+      type: SilverCraft.CSCore.Tags.ID3.ID3Genre
+- uid: SilverCraft.CSCore.Tags.ID3.ID3Genre.Garage
+  commentId: F:SilverCraft.CSCore.Tags.ID3.ID3Genre.Garage
+  id: Garage
+  parent: SilverCraft.CSCore.Tags.ID3.ID3Genre
+  langs:
+  - csharp
+  - vb
+  name: Garage
+  nameWithType: ID3Genre.Garage
+  fullName: SilverCraft.CSCore.Tags.ID3.ID3Genre.Garage
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/Tags/ID3/ID3Genre.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: Garage
+    path: ../SilverCraft.CSCore/Tags/ID3/ID3Genre.cs
+    startLine: 171
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Tags.ID3
+  syntax:
+    content: Garage = 163
+    return:
+      type: SilverCraft.CSCore.Tags.ID3.ID3Genre
+- uid: SilverCraft.CSCore.Tags.ID3.ID3Genre.Global
+  commentId: F:SilverCraft.CSCore.Tags.ID3.ID3Genre.Global
+  id: Global
+  parent: SilverCraft.CSCore.Tags.ID3.ID3Genre
+  langs:
+  - csharp
+  - vb
+  name: Global
+  nameWithType: ID3Genre.Global
+  fullName: SilverCraft.CSCore.Tags.ID3.ID3Genre.Global
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/Tags/ID3/ID3Genre.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: Global
+    path: ../SilverCraft.CSCore/Tags/ID3/ID3Genre.cs
+    startLine: 172
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Tags.ID3
+  syntax:
+    content: Global = 164
+    return:
+      type: SilverCraft.CSCore.Tags.ID3.ID3Genre
+- uid: SilverCraft.CSCore.Tags.ID3.ID3Genre.IDM
+  commentId: F:SilverCraft.CSCore.Tags.ID3.ID3Genre.IDM
+  id: IDM
+  parent: SilverCraft.CSCore.Tags.ID3.ID3Genre
+  langs:
+  - csharp
+  - vb
+  name: IDM
+  nameWithType: ID3Genre.IDM
+  fullName: SilverCraft.CSCore.Tags.ID3.ID3Genre.IDM
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/Tags/ID3/ID3Genre.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: IDM
+    path: ../SilverCraft.CSCore/Tags/ID3/ID3Genre.cs
+    startLine: 173
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Tags.ID3
+  syntax:
+    content: IDM = 165
+    return:
+      type: SilverCraft.CSCore.Tags.ID3.ID3Genre
+- uid: SilverCraft.CSCore.Tags.ID3.ID3Genre.Illbient
+  commentId: F:SilverCraft.CSCore.Tags.ID3.ID3Genre.Illbient
+  id: Illbient
+  parent: SilverCraft.CSCore.Tags.ID3.ID3Genre
+  langs:
+  - csharp
+  - vb
+  name: Illbient
+  nameWithType: ID3Genre.Illbient
+  fullName: SilverCraft.CSCore.Tags.ID3.ID3Genre.Illbient
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/Tags/ID3/ID3Genre.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: Illbient
+    path: ../SilverCraft.CSCore/Tags/ID3/ID3Genre.cs
+    startLine: 174
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Tags.ID3
+  syntax:
+    content: Illbient = 166
+    return:
+      type: SilverCraft.CSCore.Tags.ID3.ID3Genre
+- uid: SilverCraft.CSCore.Tags.ID3.ID3Genre.IndustroGoth
+  commentId: F:SilverCraft.CSCore.Tags.ID3.ID3Genre.IndustroGoth
+  id: IndustroGoth
+  parent: SilverCraft.CSCore.Tags.ID3.ID3Genre
+  langs:
+  - csharp
+  - vb
+  name: IndustroGoth
+  nameWithType: ID3Genre.IndustroGoth
+  fullName: SilverCraft.CSCore.Tags.ID3.ID3Genre.IndustroGoth
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/Tags/ID3/ID3Genre.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: IndustroGoth
+    path: ../SilverCraft.CSCore/Tags/ID3/ID3Genre.cs
+    startLine: 175
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Tags.ID3
+  syntax:
+    content: IndustroGoth = 167
+    return:
+      type: SilverCraft.CSCore.Tags.ID3.ID3Genre
+- uid: SilverCraft.CSCore.Tags.ID3.ID3Genre.JamBand
+  commentId: F:SilverCraft.CSCore.Tags.ID3.ID3Genre.JamBand
+  id: JamBand
+  parent: SilverCraft.CSCore.Tags.ID3.ID3Genre
+  langs:
+  - csharp
+  - vb
+  name: JamBand
+  nameWithType: ID3Genre.JamBand
+  fullName: SilverCraft.CSCore.Tags.ID3.ID3Genre.JamBand
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/Tags/ID3/ID3Genre.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: JamBand
+    path: ../SilverCraft.CSCore/Tags/ID3/ID3Genre.cs
+    startLine: 176
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Tags.ID3
+  syntax:
+    content: JamBand = 168
+    return:
+      type: SilverCraft.CSCore.Tags.ID3.ID3Genre
+- uid: SilverCraft.CSCore.Tags.ID3.ID3Genre.Krautrock
+  commentId: F:SilverCraft.CSCore.Tags.ID3.ID3Genre.Krautrock
+  id: Krautrock
+  parent: SilverCraft.CSCore.Tags.ID3.ID3Genre
+  langs:
+  - csharp
+  - vb
+  name: Krautrock
+  nameWithType: ID3Genre.Krautrock
+  fullName: SilverCraft.CSCore.Tags.ID3.ID3Genre.Krautrock
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/Tags/ID3/ID3Genre.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: Krautrock
+    path: ../SilverCraft.CSCore/Tags/ID3/ID3Genre.cs
+    startLine: 177
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Tags.ID3
+  syntax:
+    content: Krautrock = 169
+    return:
+      type: SilverCraft.CSCore.Tags.ID3.ID3Genre
+- uid: SilverCraft.CSCore.Tags.ID3.ID3Genre.Leftfield
+  commentId: F:SilverCraft.CSCore.Tags.ID3.ID3Genre.Leftfield
+  id: Leftfield
+  parent: SilverCraft.CSCore.Tags.ID3.ID3Genre
+  langs:
+  - csharp
+  - vb
+  name: Leftfield
+  nameWithType: ID3Genre.Leftfield
+  fullName: SilverCraft.CSCore.Tags.ID3.ID3Genre.Leftfield
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/Tags/ID3/ID3Genre.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: Leftfield
+    path: ../SilverCraft.CSCore/Tags/ID3/ID3Genre.cs
+    startLine: 178
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Tags.ID3
+  syntax:
+    content: Leftfield = 170
+    return:
+      type: SilverCraft.CSCore.Tags.ID3.ID3Genre
+- uid: SilverCraft.CSCore.Tags.ID3.ID3Genre.Lounge
+  commentId: F:SilverCraft.CSCore.Tags.ID3.ID3Genre.Lounge
+  id: Lounge
+  parent: SilverCraft.CSCore.Tags.ID3.ID3Genre
+  langs:
+  - csharp
+  - vb
+  name: Lounge
+  nameWithType: ID3Genre.Lounge
+  fullName: SilverCraft.CSCore.Tags.ID3.ID3Genre.Lounge
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/Tags/ID3/ID3Genre.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: Lounge
+    path: ../SilverCraft.CSCore/Tags/ID3/ID3Genre.cs
+    startLine: 179
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Tags.ID3
+  syntax:
+    content: Lounge = 171
+    return:
+      type: SilverCraft.CSCore.Tags.ID3.ID3Genre
+- uid: SilverCraft.CSCore.Tags.ID3.ID3Genre.MathRock
+  commentId: F:SilverCraft.CSCore.Tags.ID3.ID3Genre.MathRock
+  id: MathRock
+  parent: SilverCraft.CSCore.Tags.ID3.ID3Genre
+  langs:
+  - csharp
+  - vb
+  name: MathRock
+  nameWithType: ID3Genre.MathRock
+  fullName: SilverCraft.CSCore.Tags.ID3.ID3Genre.MathRock
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/Tags/ID3/ID3Genre.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: MathRock
+    path: ../SilverCraft.CSCore/Tags/ID3/ID3Genre.cs
+    startLine: 180
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Tags.ID3
+  syntax:
+    content: MathRock = 172
+    return:
+      type: SilverCraft.CSCore.Tags.ID3.ID3Genre
+- uid: SilverCraft.CSCore.Tags.ID3.ID3Genre.NewRomantic
+  commentId: F:SilverCraft.CSCore.Tags.ID3.ID3Genre.NewRomantic
+  id: NewRomantic
+  parent: SilverCraft.CSCore.Tags.ID3.ID3Genre
+  langs:
+  - csharp
+  - vb
+  name: NewRomantic
+  nameWithType: ID3Genre.NewRomantic
+  fullName: SilverCraft.CSCore.Tags.ID3.ID3Genre.NewRomantic
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/Tags/ID3/ID3Genre.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: NewRomantic
+    path: ../SilverCraft.CSCore/Tags/ID3/ID3Genre.cs
+    startLine: 181
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Tags.ID3
+  syntax:
+    content: NewRomantic = 173
+    return:
+      type: SilverCraft.CSCore.Tags.ID3.ID3Genre
+- uid: SilverCraft.CSCore.Tags.ID3.ID3Genre.NuBreakz
+  commentId: F:SilverCraft.CSCore.Tags.ID3.ID3Genre.NuBreakz
+  id: NuBreakz
+  parent: SilverCraft.CSCore.Tags.ID3.ID3Genre
+  langs:
+  - csharp
+  - vb
+  name: NuBreakz
+  nameWithType: ID3Genre.NuBreakz
+  fullName: SilverCraft.CSCore.Tags.ID3.ID3Genre.NuBreakz
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/Tags/ID3/ID3Genre.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: NuBreakz
+    path: ../SilverCraft.CSCore/Tags/ID3/ID3Genre.cs
+    startLine: 182
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Tags.ID3
+  syntax:
+    content: NuBreakz = 174
+    return:
+      type: SilverCraft.CSCore.Tags.ID3.ID3Genre
+- uid: SilverCraft.CSCore.Tags.ID3.ID3Genre.PostPunk
+  commentId: F:SilverCraft.CSCore.Tags.ID3.ID3Genre.PostPunk
+  id: PostPunk
+  parent: SilverCraft.CSCore.Tags.ID3.ID3Genre
+  langs:
+  - csharp
+  - vb
+  name: PostPunk
+  nameWithType: ID3Genre.PostPunk
+  fullName: SilverCraft.CSCore.Tags.ID3.ID3Genre.PostPunk
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/Tags/ID3/ID3Genre.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: PostPunk
+    path: ../SilverCraft.CSCore/Tags/ID3/ID3Genre.cs
+    startLine: 183
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Tags.ID3
+  syntax:
+    content: PostPunk = 175
+    return:
+      type: SilverCraft.CSCore.Tags.ID3.ID3Genre
+- uid: SilverCraft.CSCore.Tags.ID3.ID3Genre.PostRock
+  commentId: F:SilverCraft.CSCore.Tags.ID3.ID3Genre.PostRock
+  id: PostRock
+  parent: SilverCraft.CSCore.Tags.ID3.ID3Genre
+  langs:
+  - csharp
+  - vb
+  name: PostRock
+  nameWithType: ID3Genre.PostRock
+  fullName: SilverCraft.CSCore.Tags.ID3.ID3Genre.PostRock
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/Tags/ID3/ID3Genre.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: PostRock
+    path: ../SilverCraft.CSCore/Tags/ID3/ID3Genre.cs
+    startLine: 184
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Tags.ID3
+  syntax:
+    content: PostRock = 176
+    return:
+      type: SilverCraft.CSCore.Tags.ID3.ID3Genre
+- uid: SilverCraft.CSCore.Tags.ID3.ID3Genre.Psytrance
+  commentId: F:SilverCraft.CSCore.Tags.ID3.ID3Genre.Psytrance
+  id: Psytrance
+  parent: SilverCraft.CSCore.Tags.ID3.ID3Genre
+  langs:
+  - csharp
+  - vb
+  name: Psytrance
+  nameWithType: ID3Genre.Psytrance
+  fullName: SilverCraft.CSCore.Tags.ID3.ID3Genre.Psytrance
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/Tags/ID3/ID3Genre.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: Psytrance
+    path: ../SilverCraft.CSCore/Tags/ID3/ID3Genre.cs
+    startLine: 185
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Tags.ID3
+  syntax:
+    content: Psytrance = 177
+    return:
+      type: SilverCraft.CSCore.Tags.ID3.ID3Genre
+- uid: SilverCraft.CSCore.Tags.ID3.ID3Genre.Shoegaze
+  commentId: F:SilverCraft.CSCore.Tags.ID3.ID3Genre.Shoegaze
+  id: Shoegaze
+  parent: SilverCraft.CSCore.Tags.ID3.ID3Genre
+  langs:
+  - csharp
+  - vb
+  name: Shoegaze
+  nameWithType: ID3Genre.Shoegaze
+  fullName: SilverCraft.CSCore.Tags.ID3.ID3Genre.Shoegaze
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/Tags/ID3/ID3Genre.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: Shoegaze
+    path: ../SilverCraft.CSCore/Tags/ID3/ID3Genre.cs
+    startLine: 186
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Tags.ID3
+  syntax:
+    content: Shoegaze = 178
+    return:
+      type: SilverCraft.CSCore.Tags.ID3.ID3Genre
+- uid: SilverCraft.CSCore.Tags.ID3.ID3Genre.SpaceRock
+  commentId: F:SilverCraft.CSCore.Tags.ID3.ID3Genre.SpaceRock
+  id: SpaceRock
+  parent: SilverCraft.CSCore.Tags.ID3.ID3Genre
+  langs:
+  - csharp
+  - vb
+  name: SpaceRock
+  nameWithType: ID3Genre.SpaceRock
+  fullName: SilverCraft.CSCore.Tags.ID3.ID3Genre.SpaceRock
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/Tags/ID3/ID3Genre.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: SpaceRock
+    path: ../SilverCraft.CSCore/Tags/ID3/ID3Genre.cs
+    startLine: 187
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Tags.ID3
+  syntax:
+    content: SpaceRock = 179
+    return:
+      type: SilverCraft.CSCore.Tags.ID3.ID3Genre
+- uid: SilverCraft.CSCore.Tags.ID3.ID3Genre.TropRock
+  commentId: F:SilverCraft.CSCore.Tags.ID3.ID3Genre.TropRock
+  id: TropRock
+  parent: SilverCraft.CSCore.Tags.ID3.ID3Genre
+  langs:
+  - csharp
+  - vb
+  name: TropRock
+  nameWithType: ID3Genre.TropRock
+  fullName: SilverCraft.CSCore.Tags.ID3.ID3Genre.TropRock
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/Tags/ID3/ID3Genre.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: TropRock
+    path: ../SilverCraft.CSCore/Tags/ID3/ID3Genre.cs
+    startLine: 188
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Tags.ID3
+  syntax:
+    content: TropRock = 180
+    return:
+      type: SilverCraft.CSCore.Tags.ID3.ID3Genre
+- uid: SilverCraft.CSCore.Tags.ID3.ID3Genre.WorldMusic
+  commentId: F:SilverCraft.CSCore.Tags.ID3.ID3Genre.WorldMusic
+  id: WorldMusic
+  parent: SilverCraft.CSCore.Tags.ID3.ID3Genre
+  langs:
+  - csharp
+  - vb
+  name: WorldMusic
+  nameWithType: ID3Genre.WorldMusic
+  fullName: SilverCraft.CSCore.Tags.ID3.ID3Genre.WorldMusic
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/Tags/ID3/ID3Genre.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: WorldMusic
+    path: ../SilverCraft.CSCore/Tags/ID3/ID3Genre.cs
+    startLine: 189
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Tags.ID3
+  syntax:
+    content: WorldMusic = 181
+    return:
+      type: SilverCraft.CSCore.Tags.ID3.ID3Genre
+- uid: SilverCraft.CSCore.Tags.ID3.ID3Genre.Neoclassical
+  commentId: F:SilverCraft.CSCore.Tags.ID3.ID3Genre.Neoclassical
+  id: Neoclassical
+  parent: SilverCraft.CSCore.Tags.ID3.ID3Genre
+  langs:
+  - csharp
+  - vb
+  name: Neoclassical
+  nameWithType: ID3Genre.Neoclassical
+  fullName: SilverCraft.CSCore.Tags.ID3.ID3Genre.Neoclassical
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/Tags/ID3/ID3Genre.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: Neoclassical
+    path: ../SilverCraft.CSCore/Tags/ID3/ID3Genre.cs
+    startLine: 190
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Tags.ID3
+  syntax:
+    content: Neoclassical = 182
+    return:
+      type: SilverCraft.CSCore.Tags.ID3.ID3Genre
+- uid: SilverCraft.CSCore.Tags.ID3.ID3Genre.Audiobook
+  commentId: F:SilverCraft.CSCore.Tags.ID3.ID3Genre.Audiobook
+  id: Audiobook
+  parent: SilverCraft.CSCore.Tags.ID3.ID3Genre
+  langs:
+  - csharp
+  - vb
+  name: Audiobook
+  nameWithType: ID3Genre.Audiobook
+  fullName: SilverCraft.CSCore.Tags.ID3.ID3Genre.Audiobook
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/Tags/ID3/ID3Genre.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: Audiobook
+    path: ../SilverCraft.CSCore/Tags/ID3/ID3Genre.cs
+    startLine: 191
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Tags.ID3
+  syntax:
+    content: Audiobook = 183
+    return:
+      type: SilverCraft.CSCore.Tags.ID3.ID3Genre
+- uid: SilverCraft.CSCore.Tags.ID3.ID3Genre.AudioTheatre
+  commentId: F:SilverCraft.CSCore.Tags.ID3.ID3Genre.AudioTheatre
+  id: AudioTheatre
+  parent: SilverCraft.CSCore.Tags.ID3.ID3Genre
+  langs:
+  - csharp
+  - vb
+  name: AudioTheatre
+  nameWithType: ID3Genre.AudioTheatre
+  fullName: SilverCraft.CSCore.Tags.ID3.ID3Genre.AudioTheatre
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/Tags/ID3/ID3Genre.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: AudioTheatre
+    path: ../SilverCraft.CSCore/Tags/ID3/ID3Genre.cs
+    startLine: 192
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Tags.ID3
+  syntax:
+    content: AudioTheatre = 184
+    return:
+      type: SilverCraft.CSCore.Tags.ID3.ID3Genre
+- uid: SilverCraft.CSCore.Tags.ID3.ID3Genre.NeueDeutscheWelle
+  commentId: F:SilverCraft.CSCore.Tags.ID3.ID3Genre.NeueDeutscheWelle
+  id: NeueDeutscheWelle
+  parent: SilverCraft.CSCore.Tags.ID3.ID3Genre
+  langs:
+  - csharp
+  - vb
+  name: NeueDeutscheWelle
+  nameWithType: ID3Genre.NeueDeutscheWelle
+  fullName: SilverCraft.CSCore.Tags.ID3.ID3Genre.NeueDeutscheWelle
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/Tags/ID3/ID3Genre.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: NeueDeutscheWelle
+    path: ../SilverCraft.CSCore/Tags/ID3/ID3Genre.cs
+    startLine: 193
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Tags.ID3
+  syntax:
+    content: NeueDeutscheWelle = 185
+    return:
+      type: SilverCraft.CSCore.Tags.ID3.ID3Genre
+- uid: SilverCraft.CSCore.Tags.ID3.ID3Genre.Podcast
+  commentId: F:SilverCraft.CSCore.Tags.ID3.ID3Genre.Podcast
+  id: Podcast
+  parent: SilverCraft.CSCore.Tags.ID3.ID3Genre
+  langs:
+  - csharp
+  - vb
+  name: Podcast
+  nameWithType: ID3Genre.Podcast
+  fullName: SilverCraft.CSCore.Tags.ID3.ID3Genre.Podcast
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/Tags/ID3/ID3Genre.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: Podcast
+    path: ../SilverCraft.CSCore/Tags/ID3/ID3Genre.cs
+    startLine: 194
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Tags.ID3
+  syntax:
+    content: Podcast = 186
+    return:
+      type: SilverCraft.CSCore.Tags.ID3.ID3Genre
+- uid: SilverCraft.CSCore.Tags.ID3.ID3Genre.IndieRock
+  commentId: F:SilverCraft.CSCore.Tags.ID3.ID3Genre.IndieRock
+  id: IndieRock
+  parent: SilverCraft.CSCore.Tags.ID3.ID3Genre
+  langs:
+  - csharp
+  - vb
+  name: IndieRock
+  nameWithType: ID3Genre.IndieRock
+  fullName: SilverCraft.CSCore.Tags.ID3.ID3Genre.IndieRock
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/Tags/ID3/ID3Genre.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: IndieRock
+    path: ../SilverCraft.CSCore/Tags/ID3/ID3Genre.cs
+    startLine: 195
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Tags.ID3
+  syntax:
+    content: IndieRock = 187
+    return:
+      type: SilverCraft.CSCore.Tags.ID3.ID3Genre
+- uid: SilverCraft.CSCore.Tags.ID3.ID3Genre.GFunk
+  commentId: F:SilverCraft.CSCore.Tags.ID3.ID3Genre.GFunk
+  id: GFunk
+  parent: SilverCraft.CSCore.Tags.ID3.ID3Genre
+  langs:
+  - csharp
+  - vb
+  name: GFunk
+  nameWithType: ID3Genre.GFunk
+  fullName: SilverCraft.CSCore.Tags.ID3.ID3Genre.GFunk
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/Tags/ID3/ID3Genre.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: GFunk
+    path: ../SilverCraft.CSCore/Tags/ID3/ID3Genre.cs
+    startLine: 196
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Tags.ID3
+  syntax:
+    content: GFunk = 188
+    return:
+      type: SilverCraft.CSCore.Tags.ID3.ID3Genre
+- uid: SilverCraft.CSCore.Tags.ID3.ID3Genre.Dubstep
+  commentId: F:SilverCraft.CSCore.Tags.ID3.ID3Genre.Dubstep
+  id: Dubstep
+  parent: SilverCraft.CSCore.Tags.ID3.ID3Genre
+  langs:
+  - csharp
+  - vb
+  name: Dubstep
+  nameWithType: ID3Genre.Dubstep
+  fullName: SilverCraft.CSCore.Tags.ID3.ID3Genre.Dubstep
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/Tags/ID3/ID3Genre.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: Dubstep
+    path: ../SilverCraft.CSCore/Tags/ID3/ID3Genre.cs
+    startLine: 197
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Tags.ID3
+  syntax:
+    content: Dubstep = 189
+    return:
+      type: SilverCraft.CSCore.Tags.ID3.ID3Genre
+- uid: SilverCraft.CSCore.Tags.ID3.ID3Genre.GarageRock
+  commentId: F:SilverCraft.CSCore.Tags.ID3.ID3Genre.GarageRock
+  id: GarageRock
+  parent: SilverCraft.CSCore.Tags.ID3.ID3Genre
+  langs:
+  - csharp
+  - vb
+  name: GarageRock
+  nameWithType: ID3Genre.GarageRock
+  fullName: SilverCraft.CSCore.Tags.ID3.ID3Genre.GarageRock
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/Tags/ID3/ID3Genre.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: GarageRock
+    path: ../SilverCraft.CSCore/Tags/ID3/ID3Genre.cs
+    startLine: 198
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Tags.ID3
+  syntax:
+    content: GarageRock = 190
+    return:
+      type: SilverCraft.CSCore.Tags.ID3.ID3Genre
+- uid: SilverCraft.CSCore.Tags.ID3.ID3Genre.Psybient
+  commentId: F:SilverCraft.CSCore.Tags.ID3.ID3Genre.Psybient
+  id: Psybient
+  parent: SilverCraft.CSCore.Tags.ID3.ID3Genre
+  langs:
+  - csharp
+  - vb
+  name: Psybient
+  nameWithType: ID3Genre.Psybient
+  fullName: SilverCraft.CSCore.Tags.ID3.ID3Genre.Psybient
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/Tags/ID3/ID3Genre.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: Psybient
+    path: ../SilverCraft.CSCore/Tags/ID3/ID3Genre.cs
+    startLine: 199
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Tags.ID3
+  syntax:
+    content: Psybient = 191
+    return:
+      type: SilverCraft.CSCore.Tags.ID3.ID3Genre
+references:
+- uid: SilverCraft.CSCore.Tags.ID3
+  commentId: N:SilverCraft.CSCore.Tags.ID3
+  href: SilverCraft.html
+  name: SilverCraft.CSCore.Tags.ID3
+  nameWithType: SilverCraft.CSCore.Tags.ID3
+  fullName: SilverCraft.CSCore.Tags.ID3
+  spec.csharp:
+  - uid: SilverCraft
+    name: SilverCraft
+    href: SilverCraft.html
+  - name: .
+  - uid: SilverCraft.CSCore
+    name: CSCore
+    href: SilverCraft.CSCore.html
+  - name: .
+  - uid: SilverCraft.CSCore.Tags
+    name: Tags
+    href: SilverCraft.CSCore.Tags.html
+  - name: .
+  - uid: SilverCraft.CSCore.Tags.ID3
+    name: ID3
+    href: SilverCraft.CSCore.Tags.ID3.html
+  spec.vb:
+  - uid: SilverCraft
+    name: SilverCraft
+    href: SilverCraft.html
+  - name: .
+  - uid: SilverCraft.CSCore
+    name: CSCore
+    href: SilverCraft.CSCore.html
+  - name: .
+  - uid: SilverCraft.CSCore.Tags
+    name: Tags
+    href: SilverCraft.CSCore.Tags.html
+  - name: .
+  - uid: SilverCraft.CSCore.Tags.ID3
+    name: ID3
+    href: SilverCraft.CSCore.Tags.ID3.html
+- uid: SilverCraft.CSCore.Tags.ID3.ID3Genre
+  commentId: T:SilverCraft.CSCore.Tags.ID3.ID3Genre
+  parent: SilverCraft.CSCore.Tags.ID3
+  href: SilverCraft.CSCore.Tags.ID3.ID3Genre.html
+  name: ID3Genre
+  nameWithType: ID3Genre
+  fullName: SilverCraft.CSCore.Tags.ID3.ID3Genre

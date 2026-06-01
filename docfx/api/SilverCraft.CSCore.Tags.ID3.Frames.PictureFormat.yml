@@ -1,0 +1,649 @@
+### YamlMime:ManagedReference
+items:
+- uid: SilverCraft.CSCore.Tags.ID3.Frames.PictureFormat
+  commentId: T:SilverCraft.CSCore.Tags.ID3.Frames.PictureFormat
+  id: PictureFormat
+  parent: SilverCraft.CSCore.Tags.ID3.Frames
+  children:
+  - SilverCraft.CSCore.Tags.ID3.Frames.PictureFormat.Artist
+  - SilverCraft.CSCore.Tags.ID3.Frames.PictureFormat.Band
+  - SilverCraft.CSCore.Tags.ID3.Frames.PictureFormat.BrightColoredFish
+  - SilverCraft.CSCore.Tags.ID3.Frames.PictureFormat.Composer
+  - SilverCraft.CSCore.Tags.ID3.Frames.PictureFormat.Conductor
+  - SilverCraft.CSCore.Tags.ID3.Frames.PictureFormat.CoverBack
+  - SilverCraft.CSCore.Tags.ID3.Frames.PictureFormat.CoverFront
+  - SilverCraft.CSCore.Tags.ID3.Frames.PictureFormat.DuringPerformance
+  - SilverCraft.CSCore.Tags.ID3.Frames.PictureFormat.DuringRecording
+  - SilverCraft.CSCore.Tags.ID3.Frames.PictureFormat.Icon32x32
+  - SilverCraft.CSCore.Tags.ID3.Frames.PictureFormat.Illustration
+  - SilverCraft.CSCore.Tags.ID3.Frames.PictureFormat.LeadArtist
+  - SilverCraft.CSCore.Tags.ID3.Frames.PictureFormat.LeafletPage
+  - SilverCraft.CSCore.Tags.ID3.Frames.PictureFormat.LogoArtist
+  - SilverCraft.CSCore.Tags.ID3.Frames.PictureFormat.LogoPublisher
+  - SilverCraft.CSCore.Tags.ID3.Frames.PictureFormat.Lyricist
+  - SilverCraft.CSCore.Tags.ID3.Frames.PictureFormat.Media
+  - SilverCraft.CSCore.Tags.ID3.Frames.PictureFormat.MovieCapture
+  - SilverCraft.CSCore.Tags.ID3.Frames.PictureFormat.None
+  - SilverCraft.CSCore.Tags.ID3.Frames.PictureFormat.OtherIcon
+  - SilverCraft.CSCore.Tags.ID3.Frames.PictureFormat.RecordingLocation
+  langs:
+  - csharp
+  - vb
+  name: PictureFormat
+  nameWithType: PictureFormat
+  fullName: SilverCraft.CSCore.Tags.ID3.Frames.PictureFormat
+  type: Enum
+  source:
+    remote:
+      path: SilverCraft.CSCore/Tags/ID3/Frames/PictureFormat.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: PictureFormat
+    path: ../SilverCraft.CSCore/Tags/ID3/Frames/PictureFormat.cs
+    startLine: 2
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Tags.ID3.Frames
+  syntax:
+    content: 'public enum PictureFormat : byte'
+    content.vb: Public Enum PictureFormat As Byte
+- uid: SilverCraft.CSCore.Tags.ID3.Frames.PictureFormat.None
+  commentId: F:SilverCraft.CSCore.Tags.ID3.Frames.PictureFormat.None
+  id: None
+  parent: SilverCraft.CSCore.Tags.ID3.Frames.PictureFormat
+  langs:
+  - csharp
+  - vb
+  name: None
+  nameWithType: PictureFormat.None
+  fullName: SilverCraft.CSCore.Tags.ID3.Frames.PictureFormat.None
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/Tags/ID3/Frames/PictureFormat.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: None
+    path: ../SilverCraft.CSCore/Tags/ID3/Frames/PictureFormat.cs
+    startLine: 4
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Tags.ID3.Frames
+  syntax:
+    content: None = 0
+    return:
+      type: SilverCraft.CSCore.Tags.ID3.Frames.PictureFormat
+- uid: SilverCraft.CSCore.Tags.ID3.Frames.PictureFormat.Icon32x32
+  commentId: F:SilverCraft.CSCore.Tags.ID3.Frames.PictureFormat.Icon32x32
+  id: Icon32x32
+  parent: SilverCraft.CSCore.Tags.ID3.Frames.PictureFormat
+  langs:
+  - csharp
+  - vb
+  name: Icon32x32
+  nameWithType: PictureFormat.Icon32x32
+  fullName: SilverCraft.CSCore.Tags.ID3.Frames.PictureFormat.Icon32x32
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/Tags/ID3/Frames/PictureFormat.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: Icon32x32
+    path: ../SilverCraft.CSCore/Tags/ID3/Frames/PictureFormat.cs
+    startLine: 5
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Tags.ID3.Frames
+  syntax:
+    content: Icon32x32 = 1
+    return:
+      type: SilverCraft.CSCore.Tags.ID3.Frames.PictureFormat
+- uid: SilverCraft.CSCore.Tags.ID3.Frames.PictureFormat.OtherIcon
+  commentId: F:SilverCraft.CSCore.Tags.ID3.Frames.PictureFormat.OtherIcon
+  id: OtherIcon
+  parent: SilverCraft.CSCore.Tags.ID3.Frames.PictureFormat
+  langs:
+  - csharp
+  - vb
+  name: OtherIcon
+  nameWithType: PictureFormat.OtherIcon
+  fullName: SilverCraft.CSCore.Tags.ID3.Frames.PictureFormat.OtherIcon
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/Tags/ID3/Frames/PictureFormat.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: OtherIcon
+    path: ../SilverCraft.CSCore/Tags/ID3/Frames/PictureFormat.cs
+    startLine: 6
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Tags.ID3.Frames
+  syntax:
+    content: OtherIcon = 2
+    return:
+      type: SilverCraft.CSCore.Tags.ID3.Frames.PictureFormat
+- uid: SilverCraft.CSCore.Tags.ID3.Frames.PictureFormat.CoverFront
+  commentId: F:SilverCraft.CSCore.Tags.ID3.Frames.PictureFormat.CoverFront
+  id: CoverFront
+  parent: SilverCraft.CSCore.Tags.ID3.Frames.PictureFormat
+  langs:
+  - csharp
+  - vb
+  name: CoverFront
+  nameWithType: PictureFormat.CoverFront
+  fullName: SilverCraft.CSCore.Tags.ID3.Frames.PictureFormat.CoverFront
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/Tags/ID3/Frames/PictureFormat.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: CoverFront
+    path: ../SilverCraft.CSCore/Tags/ID3/Frames/PictureFormat.cs
+    startLine: 7
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Tags.ID3.Frames
+  syntax:
+    content: CoverFront = 3
+    return:
+      type: SilverCraft.CSCore.Tags.ID3.Frames.PictureFormat
+- uid: SilverCraft.CSCore.Tags.ID3.Frames.PictureFormat.CoverBack
+  commentId: F:SilverCraft.CSCore.Tags.ID3.Frames.PictureFormat.CoverBack
+  id: CoverBack
+  parent: SilverCraft.CSCore.Tags.ID3.Frames.PictureFormat
+  langs:
+  - csharp
+  - vb
+  name: CoverBack
+  nameWithType: PictureFormat.CoverBack
+  fullName: SilverCraft.CSCore.Tags.ID3.Frames.PictureFormat.CoverBack
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/Tags/ID3/Frames/PictureFormat.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: CoverBack
+    path: ../SilverCraft.CSCore/Tags/ID3/Frames/PictureFormat.cs
+    startLine: 8
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Tags.ID3.Frames
+  syntax:
+    content: CoverBack = 4
+    return:
+      type: SilverCraft.CSCore.Tags.ID3.Frames.PictureFormat
+- uid: SilverCraft.CSCore.Tags.ID3.Frames.PictureFormat.LeafletPage
+  commentId: F:SilverCraft.CSCore.Tags.ID3.Frames.PictureFormat.LeafletPage
+  id: LeafletPage
+  parent: SilverCraft.CSCore.Tags.ID3.Frames.PictureFormat
+  langs:
+  - csharp
+  - vb
+  name: LeafletPage
+  nameWithType: PictureFormat.LeafletPage
+  fullName: SilverCraft.CSCore.Tags.ID3.Frames.PictureFormat.LeafletPage
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/Tags/ID3/Frames/PictureFormat.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: LeafletPage
+    path: ../SilverCraft.CSCore/Tags/ID3/Frames/PictureFormat.cs
+    startLine: 9
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Tags.ID3.Frames
+  syntax:
+    content: LeafletPage = 5
+    return:
+      type: SilverCraft.CSCore.Tags.ID3.Frames.PictureFormat
+- uid: SilverCraft.CSCore.Tags.ID3.Frames.PictureFormat.Media
+  commentId: F:SilverCraft.CSCore.Tags.ID3.Frames.PictureFormat.Media
+  id: Media
+  parent: SilverCraft.CSCore.Tags.ID3.Frames.PictureFormat
+  langs:
+  - csharp
+  - vb
+  name: Media
+  nameWithType: PictureFormat.Media
+  fullName: SilverCraft.CSCore.Tags.ID3.Frames.PictureFormat.Media
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/Tags/ID3/Frames/PictureFormat.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: Media
+    path: ../SilverCraft.CSCore/Tags/ID3/Frames/PictureFormat.cs
+    startLine: 10
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Tags.ID3.Frames
+  syntax:
+    content: Media = 6
+    return:
+      type: SilverCraft.CSCore.Tags.ID3.Frames.PictureFormat
+- uid: SilverCraft.CSCore.Tags.ID3.Frames.PictureFormat.LeadArtist
+  commentId: F:SilverCraft.CSCore.Tags.ID3.Frames.PictureFormat.LeadArtist
+  id: LeadArtist
+  parent: SilverCraft.CSCore.Tags.ID3.Frames.PictureFormat
+  langs:
+  - csharp
+  - vb
+  name: LeadArtist
+  nameWithType: PictureFormat.LeadArtist
+  fullName: SilverCraft.CSCore.Tags.ID3.Frames.PictureFormat.LeadArtist
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/Tags/ID3/Frames/PictureFormat.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: LeadArtist
+    path: ../SilverCraft.CSCore/Tags/ID3/Frames/PictureFormat.cs
+    startLine: 11
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Tags.ID3.Frames
+  syntax:
+    content: LeadArtist = 7
+    return:
+      type: SilverCraft.CSCore.Tags.ID3.Frames.PictureFormat
+- uid: SilverCraft.CSCore.Tags.ID3.Frames.PictureFormat.Artist
+  commentId: F:SilverCraft.CSCore.Tags.ID3.Frames.PictureFormat.Artist
+  id: Artist
+  parent: SilverCraft.CSCore.Tags.ID3.Frames.PictureFormat
+  langs:
+  - csharp
+  - vb
+  name: Artist
+  nameWithType: PictureFormat.Artist
+  fullName: SilverCraft.CSCore.Tags.ID3.Frames.PictureFormat.Artist
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/Tags/ID3/Frames/PictureFormat.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: Artist
+    path: ../SilverCraft.CSCore/Tags/ID3/Frames/PictureFormat.cs
+    startLine: 12
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Tags.ID3.Frames
+  syntax:
+    content: Artist = 8
+    return:
+      type: SilverCraft.CSCore.Tags.ID3.Frames.PictureFormat
+- uid: SilverCraft.CSCore.Tags.ID3.Frames.PictureFormat.Conductor
+  commentId: F:SilverCraft.CSCore.Tags.ID3.Frames.PictureFormat.Conductor
+  id: Conductor
+  parent: SilverCraft.CSCore.Tags.ID3.Frames.PictureFormat
+  langs:
+  - csharp
+  - vb
+  name: Conductor
+  nameWithType: PictureFormat.Conductor
+  fullName: SilverCraft.CSCore.Tags.ID3.Frames.PictureFormat.Conductor
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/Tags/ID3/Frames/PictureFormat.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: Conductor
+    path: ../SilverCraft.CSCore/Tags/ID3/Frames/PictureFormat.cs
+    startLine: 13
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Tags.ID3.Frames
+  syntax:
+    content: Conductor = 9
+    return:
+      type: SilverCraft.CSCore.Tags.ID3.Frames.PictureFormat
+- uid: SilverCraft.CSCore.Tags.ID3.Frames.PictureFormat.Band
+  commentId: F:SilverCraft.CSCore.Tags.ID3.Frames.PictureFormat.Band
+  id: Band
+  parent: SilverCraft.CSCore.Tags.ID3.Frames.PictureFormat
+  langs:
+  - csharp
+  - vb
+  name: Band
+  nameWithType: PictureFormat.Band
+  fullName: SilverCraft.CSCore.Tags.ID3.Frames.PictureFormat.Band
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/Tags/ID3/Frames/PictureFormat.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: Band
+    path: ../SilverCraft.CSCore/Tags/ID3/Frames/PictureFormat.cs
+    startLine: 14
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Tags.ID3.Frames
+  syntax:
+    content: Band = 10
+    return:
+      type: SilverCraft.CSCore.Tags.ID3.Frames.PictureFormat
+- uid: SilverCraft.CSCore.Tags.ID3.Frames.PictureFormat.Composer
+  commentId: F:SilverCraft.CSCore.Tags.ID3.Frames.PictureFormat.Composer
+  id: Composer
+  parent: SilverCraft.CSCore.Tags.ID3.Frames.PictureFormat
+  langs:
+  - csharp
+  - vb
+  name: Composer
+  nameWithType: PictureFormat.Composer
+  fullName: SilverCraft.CSCore.Tags.ID3.Frames.PictureFormat.Composer
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/Tags/ID3/Frames/PictureFormat.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: Composer
+    path: ../SilverCraft.CSCore/Tags/ID3/Frames/PictureFormat.cs
+    startLine: 15
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Tags.ID3.Frames
+  syntax:
+    content: Composer = 11
+    return:
+      type: SilverCraft.CSCore.Tags.ID3.Frames.PictureFormat
+- uid: SilverCraft.CSCore.Tags.ID3.Frames.PictureFormat.Lyricist
+  commentId: F:SilverCraft.CSCore.Tags.ID3.Frames.PictureFormat.Lyricist
+  id: Lyricist
+  parent: SilverCraft.CSCore.Tags.ID3.Frames.PictureFormat
+  langs:
+  - csharp
+  - vb
+  name: Lyricist
+  nameWithType: PictureFormat.Lyricist
+  fullName: SilverCraft.CSCore.Tags.ID3.Frames.PictureFormat.Lyricist
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/Tags/ID3/Frames/PictureFormat.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: Lyricist
+    path: ../SilverCraft.CSCore/Tags/ID3/Frames/PictureFormat.cs
+    startLine: 16
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Tags.ID3.Frames
+  syntax:
+    content: Lyricist = 12
+    return:
+      type: SilverCraft.CSCore.Tags.ID3.Frames.PictureFormat
+- uid: SilverCraft.CSCore.Tags.ID3.Frames.PictureFormat.RecordingLocation
+  commentId: F:SilverCraft.CSCore.Tags.ID3.Frames.PictureFormat.RecordingLocation
+  id: RecordingLocation
+  parent: SilverCraft.CSCore.Tags.ID3.Frames.PictureFormat
+  langs:
+  - csharp
+  - vb
+  name: RecordingLocation
+  nameWithType: PictureFormat.RecordingLocation
+  fullName: SilverCraft.CSCore.Tags.ID3.Frames.PictureFormat.RecordingLocation
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/Tags/ID3/Frames/PictureFormat.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: RecordingLocation
+    path: ../SilverCraft.CSCore/Tags/ID3/Frames/PictureFormat.cs
+    startLine: 17
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Tags.ID3.Frames
+  syntax:
+    content: RecordingLocation = 13
+    return:
+      type: SilverCraft.CSCore.Tags.ID3.Frames.PictureFormat
+- uid: SilverCraft.CSCore.Tags.ID3.Frames.PictureFormat.DuringRecording
+  commentId: F:SilverCraft.CSCore.Tags.ID3.Frames.PictureFormat.DuringRecording
+  id: DuringRecording
+  parent: SilverCraft.CSCore.Tags.ID3.Frames.PictureFormat
+  langs:
+  - csharp
+  - vb
+  name: DuringRecording
+  nameWithType: PictureFormat.DuringRecording
+  fullName: SilverCraft.CSCore.Tags.ID3.Frames.PictureFormat.DuringRecording
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/Tags/ID3/Frames/PictureFormat.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: DuringRecording
+    path: ../SilverCraft.CSCore/Tags/ID3/Frames/PictureFormat.cs
+    startLine: 18
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Tags.ID3.Frames
+  syntax:
+    content: DuringRecording = 14
+    return:
+      type: SilverCraft.CSCore.Tags.ID3.Frames.PictureFormat
+- uid: SilverCraft.CSCore.Tags.ID3.Frames.PictureFormat.DuringPerformance
+  commentId: F:SilverCraft.CSCore.Tags.ID3.Frames.PictureFormat.DuringPerformance
+  id: DuringPerformance
+  parent: SilverCraft.CSCore.Tags.ID3.Frames.PictureFormat
+  langs:
+  - csharp
+  - vb
+  name: DuringPerformance
+  nameWithType: PictureFormat.DuringPerformance
+  fullName: SilverCraft.CSCore.Tags.ID3.Frames.PictureFormat.DuringPerformance
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/Tags/ID3/Frames/PictureFormat.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: DuringPerformance
+    path: ../SilverCraft.CSCore/Tags/ID3/Frames/PictureFormat.cs
+    startLine: 19
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Tags.ID3.Frames
+  syntax:
+    content: DuringPerformance = 15
+    return:
+      type: SilverCraft.CSCore.Tags.ID3.Frames.PictureFormat
+- uid: SilverCraft.CSCore.Tags.ID3.Frames.PictureFormat.MovieCapture
+  commentId: F:SilverCraft.CSCore.Tags.ID3.Frames.PictureFormat.MovieCapture
+  id: MovieCapture
+  parent: SilverCraft.CSCore.Tags.ID3.Frames.PictureFormat
+  langs:
+  - csharp
+  - vb
+  name: MovieCapture
+  nameWithType: PictureFormat.MovieCapture
+  fullName: SilverCraft.CSCore.Tags.ID3.Frames.PictureFormat.MovieCapture
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/Tags/ID3/Frames/PictureFormat.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: MovieCapture
+    path: ../SilverCraft.CSCore/Tags/ID3/Frames/PictureFormat.cs
+    startLine: 20
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Tags.ID3.Frames
+  syntax:
+    content: MovieCapture = 16
+    return:
+      type: SilverCraft.CSCore.Tags.ID3.Frames.PictureFormat
+- uid: SilverCraft.CSCore.Tags.ID3.Frames.PictureFormat.BrightColoredFish
+  commentId: F:SilverCraft.CSCore.Tags.ID3.Frames.PictureFormat.BrightColoredFish
+  id: BrightColoredFish
+  parent: SilverCraft.CSCore.Tags.ID3.Frames.PictureFormat
+  langs:
+  - csharp
+  - vb
+  name: BrightColoredFish
+  nameWithType: PictureFormat.BrightColoredFish
+  fullName: SilverCraft.CSCore.Tags.ID3.Frames.PictureFormat.BrightColoredFish
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/Tags/ID3/Frames/PictureFormat.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: BrightColoredFish
+    path: ../SilverCraft.CSCore/Tags/ID3/Frames/PictureFormat.cs
+    startLine: 21
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Tags.ID3.Frames
+  syntax:
+    content: BrightColoredFish = 17
+    return:
+      type: SilverCraft.CSCore.Tags.ID3.Frames.PictureFormat
+- uid: SilverCraft.CSCore.Tags.ID3.Frames.PictureFormat.Illustration
+  commentId: F:SilverCraft.CSCore.Tags.ID3.Frames.PictureFormat.Illustration
+  id: Illustration
+  parent: SilverCraft.CSCore.Tags.ID3.Frames.PictureFormat
+  langs:
+  - csharp
+  - vb
+  name: Illustration
+  nameWithType: PictureFormat.Illustration
+  fullName: SilverCraft.CSCore.Tags.ID3.Frames.PictureFormat.Illustration
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/Tags/ID3/Frames/PictureFormat.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: Illustration
+    path: ../SilverCraft.CSCore/Tags/ID3/Frames/PictureFormat.cs
+    startLine: 22
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Tags.ID3.Frames
+  syntax:
+    content: Illustration = 18
+    return:
+      type: SilverCraft.CSCore.Tags.ID3.Frames.PictureFormat
+- uid: SilverCraft.CSCore.Tags.ID3.Frames.PictureFormat.LogoArtist
+  commentId: F:SilverCraft.CSCore.Tags.ID3.Frames.PictureFormat.LogoArtist
+  id: LogoArtist
+  parent: SilverCraft.CSCore.Tags.ID3.Frames.PictureFormat
+  langs:
+  - csharp
+  - vb
+  name: LogoArtist
+  nameWithType: PictureFormat.LogoArtist
+  fullName: SilverCraft.CSCore.Tags.ID3.Frames.PictureFormat.LogoArtist
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/Tags/ID3/Frames/PictureFormat.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: LogoArtist
+    path: ../SilverCraft.CSCore/Tags/ID3/Frames/PictureFormat.cs
+    startLine: 23
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Tags.ID3.Frames
+  syntax:
+    content: LogoArtist = 19
+    return:
+      type: SilverCraft.CSCore.Tags.ID3.Frames.PictureFormat
+- uid: SilverCraft.CSCore.Tags.ID3.Frames.PictureFormat.LogoPublisher
+  commentId: F:SilverCraft.CSCore.Tags.ID3.Frames.PictureFormat.LogoPublisher
+  id: LogoPublisher
+  parent: SilverCraft.CSCore.Tags.ID3.Frames.PictureFormat
+  langs:
+  - csharp
+  - vb
+  name: LogoPublisher
+  nameWithType: PictureFormat.LogoPublisher
+  fullName: SilverCraft.CSCore.Tags.ID3.Frames.PictureFormat.LogoPublisher
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/Tags/ID3/Frames/PictureFormat.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: LogoPublisher
+    path: ../SilverCraft.CSCore/Tags/ID3/Frames/PictureFormat.cs
+    startLine: 24
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Tags.ID3.Frames
+  syntax:
+    content: LogoPublisher = 20
+    return:
+      type: SilverCraft.CSCore.Tags.ID3.Frames.PictureFormat
+references:
+- uid: SilverCraft.CSCore.Tags.ID3.Frames
+  commentId: N:SilverCraft.CSCore.Tags.ID3.Frames
+  href: SilverCraft.html
+  name: SilverCraft.CSCore.Tags.ID3.Frames
+  nameWithType: SilverCraft.CSCore.Tags.ID3.Frames
+  fullName: SilverCraft.CSCore.Tags.ID3.Frames
+  spec.csharp:
+  - uid: SilverCraft
+    name: SilverCraft
+    href: SilverCraft.html
+  - name: .
+  - uid: SilverCraft.CSCore
+    name: CSCore
+    href: SilverCraft.CSCore.html
+  - name: .
+  - uid: SilverCraft.CSCore.Tags
+    name: Tags
+    href: SilverCraft.CSCore.Tags.html
+  - name: .
+  - uid: SilverCraft.CSCore.Tags.ID3
+    name: ID3
+    href: SilverCraft.CSCore.Tags.ID3.html
+  - name: .
+  - uid: SilverCraft.CSCore.Tags.ID3.Frames
+    name: Frames
+    href: SilverCraft.CSCore.Tags.ID3.Frames.html
+  spec.vb:
+  - uid: SilverCraft
+    name: SilverCraft
+    href: SilverCraft.html
+  - name: .
+  - uid: SilverCraft.CSCore
+    name: CSCore
+    href: SilverCraft.CSCore.html
+  - name: .
+  - uid: SilverCraft.CSCore.Tags
+    name: Tags
+    href: SilverCraft.CSCore.Tags.html
+  - name: .
+  - uid: SilverCraft.CSCore.Tags.ID3
+    name: ID3
+    href: SilverCraft.CSCore.Tags.ID3.html
+  - name: .
+  - uid: SilverCraft.CSCore.Tags.ID3.Frames
+    name: Frames
+    href: SilverCraft.CSCore.Tags.ID3.Frames.html
+- uid: SilverCraft.CSCore.Tags.ID3.Frames.PictureFormat
+  commentId: T:SilverCraft.CSCore.Tags.ID3.Frames.PictureFormat
+  parent: SilverCraft.CSCore.Tags.ID3.Frames
+  href: SilverCraft.CSCore.Tags.ID3.Frames.PictureFormat.html
+  name: PictureFormat
+  nameWithType: PictureFormat
+  fullName: SilverCraft.CSCore.Tags.ID3.Frames.PictureFormat

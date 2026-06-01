@@ -1,0 +1,338 @@
+### YamlMime:ManagedReference
+items:
+- uid: SilverCraft.CSCore.Tags.ID3.Frames.FrameFlags
+  commentId: T:SilverCraft.CSCore.Tags.ID3.Frames.FrameFlags
+  id: FrameFlags
+  parent: SilverCraft.CSCore.Tags.ID3.Frames
+  children:
+  - SilverCraft.CSCore.Tags.ID3.Frames.FrameFlags.Compressed
+  - SilverCraft.CSCore.Tags.ID3.Frames.FrameFlags.DataLengthIndicatorPresent
+  - SilverCraft.CSCore.Tags.ID3.Frames.FrameFlags.Encrypted
+  - SilverCraft.CSCore.Tags.ID3.Frames.FrameFlags.GroupIdentified
+  - SilverCraft.CSCore.Tags.ID3.Frames.FrameFlags.None
+  - SilverCraft.CSCore.Tags.ID3.Frames.FrameFlags.PreserveFileAltered
+  - SilverCraft.CSCore.Tags.ID3.Frames.FrameFlags.PreserveTagAltered
+  - SilverCraft.CSCore.Tags.ID3.Frames.FrameFlags.ReadOnly
+  - SilverCraft.CSCore.Tags.ID3.Frames.FrameFlags.UnsyncApplied
+  langs:
+  - csharp
+  - vb
+  name: FrameFlags
+  nameWithType: FrameFlags
+  fullName: SilverCraft.CSCore.Tags.ID3.Frames.FrameFlags
+  type: Enum
+  source:
+    remote:
+      path: SilverCraft.CSCore/Tags/ID3/Frames/FrameFlags.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: FrameFlags
+    path: ../SilverCraft.CSCore/Tags/ID3/Frames/FrameFlags.cs
+    startLine: 4
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Tags.ID3.Frames
+  syntax:
+    content: >-
+      [Flags]
+
+      public enum FrameFlags
+    content.vb: >-
+      <Flags>
+
+      Public Enum FrameFlags
+  attributes:
+  - type: System.FlagsAttribute
+    ctor: System.FlagsAttribute.#ctor
+    arguments: []
+- uid: SilverCraft.CSCore.Tags.ID3.Frames.FrameFlags.None
+  commentId: F:SilverCraft.CSCore.Tags.ID3.Frames.FrameFlags.None
+  id: None
+  parent: SilverCraft.CSCore.Tags.ID3.Frames.FrameFlags
+  langs:
+  - csharp
+  - vb
+  name: None
+  nameWithType: FrameFlags.None
+  fullName: SilverCraft.CSCore.Tags.ID3.Frames.FrameFlags.None
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/Tags/ID3/Frames/FrameFlags.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: None
+    path: ../SilverCraft.CSCore/Tags/ID3/Frames/FrameFlags.cs
+    startLine: 7
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Tags.ID3.Frames
+  syntax:
+    content: None = 0
+    return:
+      type: SilverCraft.CSCore.Tags.ID3.Frames.FrameFlags
+- uid: SilverCraft.CSCore.Tags.ID3.Frames.FrameFlags.ReadOnly
+  commentId: F:SilverCraft.CSCore.Tags.ID3.Frames.FrameFlags.ReadOnly
+  id: ReadOnly
+  parent: SilverCraft.CSCore.Tags.ID3.Frames.FrameFlags
+  langs:
+  - csharp
+  - vb
+  name: ReadOnly
+  nameWithType: FrameFlags.ReadOnly
+  fullName: SilverCraft.CSCore.Tags.ID3.Frames.FrameFlags.ReadOnly
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/Tags/ID3/Frames/FrameFlags.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: ReadOnly
+    path: ../SilverCraft.CSCore/Tags/ID3/Frames/FrameFlags.cs
+    startLine: 8
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Tags.ID3.Frames
+  syntax:
+    content: ReadOnly = 1
+    return:
+      type: SilverCraft.CSCore.Tags.ID3.Frames.FrameFlags
+- uid: SilverCraft.CSCore.Tags.ID3.Frames.FrameFlags.PreserveFileAltered
+  commentId: F:SilverCraft.CSCore.Tags.ID3.Frames.FrameFlags.PreserveFileAltered
+  id: PreserveFileAltered
+  parent: SilverCraft.CSCore.Tags.ID3.Frames.FrameFlags
+  langs:
+  - csharp
+  - vb
+  name: PreserveFileAltered
+  nameWithType: FrameFlags.PreserveFileAltered
+  fullName: SilverCraft.CSCore.Tags.ID3.Frames.FrameFlags.PreserveFileAltered
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/Tags/ID3/Frames/FrameFlags.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: PreserveFileAltered
+    path: ../SilverCraft.CSCore/Tags/ID3/Frames/FrameFlags.cs
+    startLine: 9
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Tags.ID3.Frames
+  syntax:
+    content: PreserveFileAltered = 2
+    return:
+      type: SilverCraft.CSCore.Tags.ID3.Frames.FrameFlags
+- uid: SilverCraft.CSCore.Tags.ID3.Frames.FrameFlags.PreserveTagAltered
+  commentId: F:SilverCraft.CSCore.Tags.ID3.Frames.FrameFlags.PreserveTagAltered
+  id: PreserveTagAltered
+  parent: SilverCraft.CSCore.Tags.ID3.Frames.FrameFlags
+  langs:
+  - csharp
+  - vb
+  name: PreserveTagAltered
+  nameWithType: FrameFlags.PreserveTagAltered
+  fullName: SilverCraft.CSCore.Tags.ID3.Frames.FrameFlags.PreserveTagAltered
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/Tags/ID3/Frames/FrameFlags.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: PreserveTagAltered
+    path: ../SilverCraft.CSCore/Tags/ID3/Frames/FrameFlags.cs
+    startLine: 10
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Tags.ID3.Frames
+  syntax:
+    content: PreserveTagAltered = 4
+    return:
+      type: SilverCraft.CSCore.Tags.ID3.Frames.FrameFlags
+- uid: SilverCraft.CSCore.Tags.ID3.Frames.FrameFlags.Compressed
+  commentId: F:SilverCraft.CSCore.Tags.ID3.Frames.FrameFlags.Compressed
+  id: Compressed
+  parent: SilverCraft.CSCore.Tags.ID3.Frames.FrameFlags
+  langs:
+  - csharp
+  - vb
+  name: Compressed
+  nameWithType: FrameFlags.Compressed
+  fullName: SilverCraft.CSCore.Tags.ID3.Frames.FrameFlags.Compressed
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/Tags/ID3/Frames/FrameFlags.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: Compressed
+    path: ../SilverCraft.CSCore/Tags/ID3/Frames/FrameFlags.cs
+    startLine: 11
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Tags.ID3.Frames
+  syntax:
+    content: Compressed = 8
+    return:
+      type: SilverCraft.CSCore.Tags.ID3.Frames.FrameFlags
+- uid: SilverCraft.CSCore.Tags.ID3.Frames.FrameFlags.Encrypted
+  commentId: F:SilverCraft.CSCore.Tags.ID3.Frames.FrameFlags.Encrypted
+  id: Encrypted
+  parent: SilverCraft.CSCore.Tags.ID3.Frames.FrameFlags
+  langs:
+  - csharp
+  - vb
+  name: Encrypted
+  nameWithType: FrameFlags.Encrypted
+  fullName: SilverCraft.CSCore.Tags.ID3.Frames.FrameFlags.Encrypted
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/Tags/ID3/Frames/FrameFlags.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: Encrypted
+    path: ../SilverCraft.CSCore/Tags/ID3/Frames/FrameFlags.cs
+    startLine: 12
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Tags.ID3.Frames
+  syntax:
+    content: Encrypted = PreserveFileAltered | Compressed
+    return:
+      type: SilverCraft.CSCore.Tags.ID3.Frames.FrameFlags
+    content.vb: Encrypted = PreserveFileAltered Or Compressed
+- uid: SilverCraft.CSCore.Tags.ID3.Frames.FrameFlags.GroupIdentified
+  commentId: F:SilverCraft.CSCore.Tags.ID3.Frames.FrameFlags.GroupIdentified
+  id: GroupIdentified
+  parent: SilverCraft.CSCore.Tags.ID3.Frames.FrameFlags
+  langs:
+  - csharp
+  - vb
+  name: GroupIdentified
+  nameWithType: FrameFlags.GroupIdentified
+  fullName: SilverCraft.CSCore.Tags.ID3.Frames.FrameFlags.GroupIdentified
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/Tags/ID3/Frames/FrameFlags.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: GroupIdentified
+    path: ../SilverCraft.CSCore/Tags/ID3/Frames/FrameFlags.cs
+    startLine: 13
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Tags.ID3.Frames
+  syntax:
+    content: GroupIdentified = PreserveTagAltered | Compressed
+    return:
+      type: SilverCraft.CSCore.Tags.ID3.Frames.FrameFlags
+    content.vb: GroupIdentified = PreserveTagAltered Or Compressed
+- uid: SilverCraft.CSCore.Tags.ID3.Frames.FrameFlags.UnsyncApplied
+  commentId: F:SilverCraft.CSCore.Tags.ID3.Frames.FrameFlags.UnsyncApplied
+  id: UnsyncApplied
+  parent: SilverCraft.CSCore.Tags.ID3.Frames.FrameFlags
+  langs:
+  - csharp
+  - vb
+  name: UnsyncApplied
+  nameWithType: FrameFlags.UnsyncApplied
+  fullName: SilverCraft.CSCore.Tags.ID3.Frames.FrameFlags.UnsyncApplied
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/Tags/ID3/Frames/FrameFlags.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: UnsyncApplied
+    path: ../SilverCraft.CSCore/Tags/ID3/Frames/FrameFlags.cs
+    startLine: 14
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Tags.ID3.Frames
+  syntax:
+    content: UnsyncApplied = PreserveFileAltered | GroupIdentified
+    return:
+      type: SilverCraft.CSCore.Tags.ID3.Frames.FrameFlags
+    content.vb: UnsyncApplied = PreserveFileAltered Or GroupIdentified
+- uid: SilverCraft.CSCore.Tags.ID3.Frames.FrameFlags.DataLengthIndicatorPresent
+  commentId: F:SilverCraft.CSCore.Tags.ID3.Frames.FrameFlags.DataLengthIndicatorPresent
+  id: DataLengthIndicatorPresent
+  parent: SilverCraft.CSCore.Tags.ID3.Frames.FrameFlags
+  langs:
+  - csharp
+  - vb
+  name: DataLengthIndicatorPresent
+  nameWithType: FrameFlags.DataLengthIndicatorPresent
+  fullName: SilverCraft.CSCore.Tags.ID3.Frames.FrameFlags.DataLengthIndicatorPresent
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/Tags/ID3/Frames/FrameFlags.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: DataLengthIndicatorPresent
+    path: ../SilverCraft.CSCore/Tags/ID3/Frames/FrameFlags.cs
+    startLine: 15
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Tags.ID3.Frames
+  syntax:
+    content: DataLengthIndicatorPresent = 16
+    return:
+      type: SilverCraft.CSCore.Tags.ID3.Frames.FrameFlags
+references:
+- uid: SilverCraft.CSCore.Tags.ID3.Frames
+  commentId: N:SilverCraft.CSCore.Tags.ID3.Frames
+  href: SilverCraft.html
+  name: SilverCraft.CSCore.Tags.ID3.Frames
+  nameWithType: SilverCraft.CSCore.Tags.ID3.Frames
+  fullName: SilverCraft.CSCore.Tags.ID3.Frames
+  spec.csharp:
+  - uid: SilverCraft
+    name: SilverCraft
+    href: SilverCraft.html
+  - name: .
+  - uid: SilverCraft.CSCore
+    name: CSCore
+    href: SilverCraft.CSCore.html
+  - name: .
+  - uid: SilverCraft.CSCore.Tags
+    name: Tags
+    href: SilverCraft.CSCore.Tags.html
+  - name: .
+  - uid: SilverCraft.CSCore.Tags.ID3
+    name: ID3
+    href: SilverCraft.CSCore.Tags.ID3.html
+  - name: .
+  - uid: SilverCraft.CSCore.Tags.ID3.Frames
+    name: Frames
+    href: SilverCraft.CSCore.Tags.ID3.Frames.html
+  spec.vb:
+  - uid: SilverCraft
+    name: SilverCraft
+    href: SilverCraft.html
+  - name: .
+  - uid: SilverCraft.CSCore
+    name: CSCore
+    href: SilverCraft.CSCore.html
+  - name: .
+  - uid: SilverCraft.CSCore.Tags
+    name: Tags
+    href: SilverCraft.CSCore.Tags.html
+  - name: .
+  - uid: SilverCraft.CSCore.Tags.ID3
+    name: ID3
+    href: SilverCraft.CSCore.Tags.ID3.html
+  - name: .
+  - uid: SilverCraft.CSCore.Tags.ID3.Frames
+    name: Frames
+    href: SilverCraft.CSCore.Tags.ID3.Frames.html
+- uid: SilverCraft.CSCore.Tags.ID3.Frames.FrameFlags
+  commentId: T:SilverCraft.CSCore.Tags.ID3.Frames.FrameFlags
+  parent: SilverCraft.CSCore.Tags.ID3.Frames
+  href: SilverCraft.CSCore.Tags.ID3.Frames.FrameFlags.html
+  name: FrameFlags
+  nameWithType: FrameFlags
+  fullName: SilverCraft.CSCore.Tags.ID3.Frames.FrameFlags

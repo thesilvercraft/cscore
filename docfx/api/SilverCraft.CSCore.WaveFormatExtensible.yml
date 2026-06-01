@@ -1,0 +1,1228 @@
+### YamlMime:ManagedReference
+items:
+- uid: SilverCraft.CSCore.WaveFormatExtensible
+  commentId: T:SilverCraft.CSCore.WaveFormatExtensible
+  id: WaveFormatExtensible
+  parent: SilverCraft.CSCore
+  children:
+  - SilverCraft.CSCore.WaveFormatExtensible.#ctor(System.Int32,System.Int32,System.Int32,System.Guid)
+  - SilverCraft.CSCore.WaveFormatExtensible.#ctor(System.Int32,System.Int32,System.Int32,System.Guid,SilverCraft.CSCore.ChannelMask)
+  - SilverCraft.CSCore.WaveFormatExtensible.ChannelMask
+  - SilverCraft.CSCore.WaveFormatExtensible.Clone
+  - SilverCraft.CSCore.WaveFormatExtensible.SamplesPerBlock
+  - SilverCraft.CSCore.WaveFormatExtensible.SubFormat
+  - SilverCraft.CSCore.WaveFormatExtensible.SubTypeFromWaveFormat(SilverCraft.CSCore.WaveFormat)
+  - SilverCraft.CSCore.WaveFormatExtensible.ToString
+  - SilverCraft.CSCore.WaveFormatExtensible.ToWaveFormat
+  - SilverCraft.CSCore.WaveFormatExtensible.ValidBitsPerSample
+  langs:
+  - csharp
+  - vb
+  name: WaveFormatExtensible
+  nameWithType: WaveFormatExtensible
+  fullName: SilverCraft.CSCore.WaveFormatExtensible
+  type: Class
+  source:
+    remote:
+      path: SilverCraft.CSCore/WaveFormatExtensible.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: WaveFormatExtensible
+    path: ../SilverCraft.CSCore/WaveFormatExtensible.cs
+    startLine: 15
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore
+  summary: >-
+    Defines the format of waveform-audio data for formats having more than two channels or higher sample resolutions
+
+    than allowed by <xref href="SilverCraft.CSCore.WaveFormat" data-throw-if-not-resolved="false"></xref>.
+
+    Can be used to define any format that can be defined by <xref href="SilverCraft.CSCore.WaveFormat" data-throw-if-not-resolved="false"></xref>.
+
+    For more information see <a href="http://msdn.microsoft.com/en-us/library/windows/hardware/gg463006.aspx">http://msdn.microsoft.com/en-us/library/windows/hardware/gg463006.aspx</a> and
+
+    <a href="http://msdn.microsoft.com/en-us/library/windows/hardware/ff536383(v=vs.85).aspx">http://msdn.microsoft.com/en-us/library/windows/hardware/ff536383(v=vs.85).aspx</a>.
+  example: []
+  syntax:
+    content: 'public class WaveFormatExtensible : WaveFormat, ICloneable, IEquatable<WaveFormat>'
+    content.vb: Public Class WaveFormatExtensible Inherits WaveFormat Implements ICloneable, IEquatable(Of WaveFormat)
+  inheritance:
+  - System.Object
+  - SilverCraft.CSCore.WaveFormat
+  implements:
+  - System.ICloneable
+  - System.IEquatable{SilverCraft.CSCore.WaveFormat}
+  inheritedMembers:
+  - SilverCraft.CSCore.WaveFormat.Channels
+  - SilverCraft.CSCore.WaveFormat.SampleRate
+  - SilverCraft.CSCore.WaveFormat.BytesPerSecond
+  - SilverCraft.CSCore.WaveFormat.BlockAlign
+  - SilverCraft.CSCore.WaveFormat.BitsPerSample
+  - SilverCraft.CSCore.WaveFormat.ExtraSize
+  - SilverCraft.CSCore.WaveFormat.BytesPerSample
+  - SilverCraft.CSCore.WaveFormat.BytesPerBlock
+  - SilverCraft.CSCore.WaveFormat.WaveFormatTag
+  - SilverCraft.CSCore.WaveFormat.MillisecondsToBytes(System.Double)
+  - SilverCraft.CSCore.WaveFormat.BytesToMilliseconds(System.Int64)
+  - SilverCraft.CSCore.WaveFormat.Equals(SilverCraft.CSCore.WaveFormat)
+  - SilverCraft.CSCore.WaveFormat.UpdateProperties
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  extensionMethods:
+  - SilverCraft.CSCore.WaveFormatExtensible.SilverCraft.CSCore.FluentExtensions.Synchronized``2
+- uid: SilverCraft.CSCore.WaveFormatExtensible.SubTypeFromWaveFormat(SilverCraft.CSCore.WaveFormat)
+  commentId: M:SilverCraft.CSCore.WaveFormatExtensible.SubTypeFromWaveFormat(SilverCraft.CSCore.WaveFormat)
+  id: SubTypeFromWaveFormat(SilverCraft.CSCore.WaveFormat)
+  parent: SilverCraft.CSCore.WaveFormatExtensible
+  langs:
+  - csharp
+  - vb
+  name: SubTypeFromWaveFormat(WaveFormat)
+  nameWithType: WaveFormatExtensible.SubTypeFromWaveFormat(WaveFormat)
+  fullName: SilverCraft.CSCore.WaveFormatExtensible.SubTypeFromWaveFormat(SilverCraft.CSCore.WaveFormat)
+  type: Method
+  source:
+    remote:
+      path: SilverCraft.CSCore/WaveFormatExtensible.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: SubTypeFromWaveFormat
+    path: ../SilverCraft.CSCore/WaveFormatExtensible.cs
+    startLine: 33
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore
+  summary: >-
+    Returns the SubType-Guid of a <code class="paramref">waveFormat</code>. If the specified <code class="paramref">waveFormat</code> does
+
+    not contain a SubType-Guid, the <xref href="SilverCraft.CSCore.WaveFormat.WaveFormatTag" data-throw-if-not-resolved="false"></xref> gets converted to the equal SubType-Guid
+
+    using the <xref href="SilverCraft.CSCore.AudioSubTypes.SubTypeFromEncoding(SilverCraft.CSCore.AudioEncoding)" data-throw-if-not-resolved="false"></xref> method.
+  example: []
+  syntax:
+    content: public static Guid SubTypeFromWaveFormat(WaveFormat waveFormat)
+    parameters:
+    - id: waveFormat
+      type: SilverCraft.CSCore.WaveFormat
+      description: <xref href="SilverCraft.CSCore.WaveFormat" data-throw-if-not-resolved="false"></xref> which gets used to determine the SubType-Guid.
+    return:
+      type: System.Guid
+      description: SubType-Guid of the specified <code class="paramref">waveFormat</code>.
+    content.vb: Public Shared Function SubTypeFromWaveFormat(waveFormat As WaveFormat) As Guid
+  overload: SilverCraft.CSCore.WaveFormatExtensible.SubTypeFromWaveFormat*
+- uid: SilverCraft.CSCore.WaveFormatExtensible.ValidBitsPerSample
+  commentId: P:SilverCraft.CSCore.WaveFormatExtensible.ValidBitsPerSample
+  id: ValidBitsPerSample
+  parent: SilverCraft.CSCore.WaveFormatExtensible
+  langs:
+  - csharp
+  - vb
+  name: ValidBitsPerSample
+  nameWithType: WaveFormatExtensible.ValidBitsPerSample
+  fullName: SilverCraft.CSCore.WaveFormatExtensible.ValidBitsPerSample
+  type: Property
+  source:
+    remote:
+      path: SilverCraft.CSCore/WaveFormatExtensible.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: ValidBitsPerSample
+    path: ../SilverCraft.CSCore/WaveFormatExtensible.cs
+    startLine: 50
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore
+  summary: >-
+    Gets the number of bits of precision in the signal.
+
+    Usually equal to <xref href="SilverCraft.CSCore.WaveFormat.BitsPerSample" data-throw-if-not-resolved="false"></xref>. However, <xref href="SilverCraft.CSCore.WaveFormat.BitsPerSample" data-throw-if-not-resolved="false"></xref> is the
+
+    container size and must be a multiple of 8, whereas <xref href="SilverCraft.CSCore.WaveFormatExtensible.ValidBitsPerSample" data-throw-if-not-resolved="false"></xref> can be any value not
+
+    exceeding the container size. For example, if the format uses 20-bit samples,
+
+    <xref href="SilverCraft.CSCore.WaveFormat.BitsPerSample" data-throw-if-not-resolved="false"></xref> must be at least 24, but <xref href="SilverCraft.CSCore.WaveFormatExtensible.ValidBitsPerSample" data-throw-if-not-resolved="false"></xref> is 20.
+  example: []
+  syntax:
+    content: public int ValidBitsPerSample { get; protected set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property ValidBitsPerSample As Integer
+  overload: SilverCraft.CSCore.WaveFormatExtensible.ValidBitsPerSample*
+- uid: SilverCraft.CSCore.WaveFormatExtensible.SamplesPerBlock
+  commentId: P:SilverCraft.CSCore.WaveFormatExtensible.SamplesPerBlock
+  id: SamplesPerBlock
+  parent: SilverCraft.CSCore.WaveFormatExtensible
+  langs:
+  - csharp
+  - vb
+  name: SamplesPerBlock
+  nameWithType: WaveFormatExtensible.SamplesPerBlock
+  fullName: SilverCraft.CSCore.WaveFormatExtensible.SamplesPerBlock
+  type: Property
+  source:
+    remote:
+      path: SilverCraft.CSCore/WaveFormatExtensible.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: SamplesPerBlock
+    path: ../SilverCraft.CSCore/WaveFormatExtensible.cs
+    startLine: 62
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore
+  summary: >-
+    Gets the number of samples contained in one compressed block of audio data. This value is used in buffer
+
+    estimation. This value is used with compressed formats that have a fixed number of samples within each block. This
+
+    value can be set to 0 if a variable number of samples is contained in each block of compressed audio data. In this
+
+    case, buffer estimation and position information needs to be obtained in other ways.
+  example: []
+  syntax:
+    content: public int SamplesPerBlock { get; protected set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property SamplesPerBlock As Integer
+  overload: SilverCraft.CSCore.WaveFormatExtensible.SamplesPerBlock*
+- uid: SilverCraft.CSCore.WaveFormatExtensible.ChannelMask
+  commentId: P:SilverCraft.CSCore.WaveFormatExtensible.ChannelMask
+  id: ChannelMask
+  parent: SilverCraft.CSCore.WaveFormatExtensible
+  langs:
+  - csharp
+  - vb
+  name: ChannelMask
+  nameWithType: WaveFormatExtensible.ChannelMask
+  fullName: SilverCraft.CSCore.WaveFormatExtensible.ChannelMask
+  type: Property
+  source:
+    remote:
+      path: SilverCraft.CSCore/WaveFormatExtensible.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: ChannelMask
+    path: ../SilverCraft.CSCore/WaveFormatExtensible.cs
+    startLine: 71
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore
+  summary: Gets a bitmask specifying the assignment of channels in the stream to speaker positions.
+  example: []
+  syntax:
+    content: public ChannelMask ChannelMask { get; protected set; }
+    parameters: []
+    return:
+      type: SilverCraft.CSCore.ChannelMask
+    content.vb: Public Property ChannelMask As ChannelMask
+  overload: SilverCraft.CSCore.WaveFormatExtensible.ChannelMask*
+- uid: SilverCraft.CSCore.WaveFormatExtensible.SubFormat
+  commentId: P:SilverCraft.CSCore.WaveFormatExtensible.SubFormat
+  id: SubFormat
+  parent: SilverCraft.CSCore.WaveFormatExtensible
+  langs:
+  - csharp
+  - vb
+  name: SubFormat
+  nameWithType: WaveFormatExtensible.SubFormat
+  fullName: SilverCraft.CSCore.WaveFormatExtensible.SubFormat
+  type: Property
+  source:
+    remote:
+      path: SilverCraft.CSCore/WaveFormatExtensible.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: SubFormat
+    path: ../SilverCraft.CSCore/WaveFormatExtensible.cs
+    startLine: 81
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore
+  summary: >-
+    Subformat of the data, such as <xref href="SilverCraft.CSCore.AudioSubTypes.Pcm" data-throw-if-not-resolved="false"></xref>. The subformat information is similar to
+
+    that provided by the tag in the <xref href="SilverCraft.CSCore.WaveFormat" data-throw-if-not-resolved="false"></xref> class's <xref href="SilverCraft.CSCore.WaveFormat.WaveFormatTag" data-throw-if-not-resolved="false"></xref> member.
+  example: []
+  syntax:
+    content: public Guid SubFormat { get; protected set; }
+    parameters: []
+    return:
+      type: System.Guid
+    content.vb: Public Property SubFormat As Guid
+  overload: SilverCraft.CSCore.WaveFormatExtensible.SubFormat*
+- uid: SilverCraft.CSCore.WaveFormatExtensible.#ctor(System.Int32,System.Int32,System.Int32,System.Guid)
+  commentId: M:SilverCraft.CSCore.WaveFormatExtensible.#ctor(System.Int32,System.Int32,System.Int32,System.Guid)
+  id: '#ctor(System.Int32,System.Int32,System.Int32,System.Guid)'
+  parent: SilverCraft.CSCore.WaveFormatExtensible
+  langs:
+  - csharp
+  - vb
+  name: WaveFormatExtensible(int, int, int, Guid)
+  nameWithType: WaveFormatExtensible.WaveFormatExtensible(int, int, int, Guid)
+  fullName: SilverCraft.CSCore.WaveFormatExtensible.WaveFormatExtensible(int, int, int, System.Guid)
+  type: Constructor
+  source:
+    remote:
+      path: SilverCraft.CSCore/WaveFormatExtensible.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: .ctor
+    path: ../SilverCraft.CSCore/WaveFormatExtensible.cs
+    startLine: 107
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore
+  summary: Initializes a new instance of the <xref href="SilverCraft.CSCore.WaveFormatExtensible" data-throw-if-not-resolved="false"></xref> class.
+  example: []
+  syntax:
+    content: public WaveFormatExtensible(int sampleRate, int bits, int channels, Guid subFormat)
+    parameters:
+    - id: sampleRate
+      type: System.Int32
+      description: >-
+        Samplerate of the waveform-audio. This value will get applied to the
+
+        <xref href="SilverCraft.CSCore.WaveFormat.SampleRate" data-throw-if-not-resolved="false"></xref> property.
+    - id: bits
+      type: System.Int32
+      description: >-
+        Bits per sample of the waveform-audio. This value will get applied to the
+
+        <xref href="SilverCraft.CSCore.WaveFormat.BitsPerSample" data-throw-if-not-resolved="false"></xref> property and the <xref href="SilverCraft.CSCore.WaveFormatExtensible.ValidBitsPerSample" data-throw-if-not-resolved="false"></xref> property.
+    - id: channels
+      type: System.Int32
+      description: >-
+        Number of channels of the waveform-audio. This value will get applied to the
+
+        <xref href="SilverCraft.CSCore.WaveFormat.Channels" data-throw-if-not-resolved="false"></xref> property.
+    - id: subFormat
+      type: System.Guid
+      description: Subformat of the data. This value will get applied to the <xref href="SilverCraft.CSCore.WaveFormatExtensible.SubFormat" data-throw-if-not-resolved="false"></xref> property.
+    content.vb: Public Sub New(sampleRate As Integer, bits As Integer, channels As Integer, subFormat As Guid)
+  overload: SilverCraft.CSCore.WaveFormatExtensible.#ctor*
+  nameWithType.vb: WaveFormatExtensible.New(Integer, Integer, Integer, Guid)
+  fullName.vb: SilverCraft.CSCore.WaveFormatExtensible.New(Integer, Integer, Integer, System.Guid)
+  name.vb: New(Integer, Integer, Integer, Guid)
+- uid: SilverCraft.CSCore.WaveFormatExtensible.#ctor(System.Int32,System.Int32,System.Int32,System.Guid,SilverCraft.CSCore.ChannelMask)
+  commentId: M:SilverCraft.CSCore.WaveFormatExtensible.#ctor(System.Int32,System.Int32,System.Int32,System.Guid,SilverCraft.CSCore.ChannelMask)
+  id: '#ctor(System.Int32,System.Int32,System.Int32,System.Guid,SilverCraft.CSCore.ChannelMask)'
+  parent: SilverCraft.CSCore.WaveFormatExtensible
+  langs:
+  - csharp
+  - vb
+  name: WaveFormatExtensible(int, int, int, Guid, ChannelMask)
+  nameWithType: WaveFormatExtensible.WaveFormatExtensible(int, int, int, Guid, ChannelMask)
+  fullName: SilverCraft.CSCore.WaveFormatExtensible.WaveFormatExtensible(int, int, int, System.Guid, SilverCraft.CSCore.ChannelMask)
+  type: Constructor
+  source:
+    remote:
+      path: SilverCraft.CSCore/WaveFormatExtensible.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: .ctor
+    path: ../SilverCraft.CSCore/WaveFormatExtensible.cs
+    startLine: 142
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore
+  summary: Initializes a new instance of the <xref href="SilverCraft.CSCore.WaveFormatExtensible" data-throw-if-not-resolved="false"></xref> class.
+  example: []
+  syntax:
+    content: public WaveFormatExtensible(int sampleRate, int bits, int channels, Guid subFormat, ChannelMask channelMask)
+    parameters:
+    - id: sampleRate
+      type: System.Int32
+      description: >-
+        Samplerate of the waveform-audio. This value will get applied to the
+
+        <xref href="SilverCraft.CSCore.WaveFormat.SampleRate" data-throw-if-not-resolved="false"></xref> property.
+    - id: bits
+      type: System.Int32
+      description: >-
+        Bits per sample of the waveform-audio. This value will get applied to the
+
+        <xref href="SilverCraft.CSCore.WaveFormat.BitsPerSample" data-throw-if-not-resolved="false"></xref> property and the <xref href="SilverCraft.CSCore.WaveFormatExtensible.ValidBitsPerSample" data-throw-if-not-resolved="false"></xref> property.
+    - id: channels
+      type: System.Int32
+      description: >-
+        Number of channels of the waveform-audio. This value will get applied to the
+
+        <xref href="SilverCraft.CSCore.WaveFormat.Channels" data-throw-if-not-resolved="false"></xref> property.
+    - id: subFormat
+      type: System.Guid
+      description: Subformat of the data. This value will get applied to the <xref href="SilverCraft.CSCore.WaveFormatExtensible.SubFormat" data-throw-if-not-resolved="false"></xref> property.
+    - id: channelMask
+      type: SilverCraft.CSCore.ChannelMask
+      description: >-
+        Bitmask specifying the assignment of channels in the stream to speaker positions. Thie value
+
+        will get applied to the <xref href="SilverCraft.CSCore.WaveFormatExtensible.ChannelMask" data-throw-if-not-resolved="false"></xref> property.
+    content.vb: Public Sub New(sampleRate As Integer, bits As Integer, channels As Integer, subFormat As Guid, channelMask As ChannelMask)
+  overload: SilverCraft.CSCore.WaveFormatExtensible.#ctor*
+  nameWithType.vb: WaveFormatExtensible.New(Integer, Integer, Integer, Guid, ChannelMask)
+  fullName.vb: SilverCraft.CSCore.WaveFormatExtensible.New(Integer, Integer, Integer, System.Guid, SilverCraft.CSCore.ChannelMask)
+  name.vb: New(Integer, Integer, Integer, Guid, ChannelMask)
+- uid: SilverCraft.CSCore.WaveFormatExtensible.ToWaveFormat
+  commentId: M:SilverCraft.CSCore.WaveFormatExtensible.ToWaveFormat
+  id: ToWaveFormat
+  parent: SilverCraft.CSCore.WaveFormatExtensible
+  langs:
+  - csharp
+  - vb
+  name: ToWaveFormat()
+  nameWithType: WaveFormatExtensible.ToWaveFormat()
+  fullName: SilverCraft.CSCore.WaveFormatExtensible.ToWaveFormat()
+  type: Method
+  source:
+    remote:
+      path: SilverCraft.CSCore/WaveFormatExtensible.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: ToWaveFormat
+    path: ../SilverCraft.CSCore/WaveFormatExtensible.cs
+    startLine: 165
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore
+  summary: >-
+    Converts the <xref href="SilverCraft.CSCore.WaveFormatExtensible" data-throw-if-not-resolved="false"></xref> instance to a raw <xref href="SilverCraft.CSCore.WaveFormat" data-throw-if-not-resolved="false"></xref> instance by converting
+
+    the <xref href="SilverCraft.CSCore.WaveFormatExtensible.SubFormat" data-throw-if-not-resolved="false"></xref> to the equal <xref href="SilverCraft.CSCore.WaveFormat.WaveFormatTag" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public WaveFormat ToWaveFormat()
+    return:
+      type: SilverCraft.CSCore.WaveFormat
+      description: A simple <xref href="SilverCraft.CSCore.WaveFormat" data-throw-if-not-resolved="false"></xref> instance.
+    content.vb: Public Function ToWaveFormat() As WaveFormat
+  overload: SilverCraft.CSCore.WaveFormatExtensible.ToWaveFormat*
+- uid: SilverCraft.CSCore.WaveFormatExtensible.Clone
+  commentId: M:SilverCraft.CSCore.WaveFormatExtensible.Clone
+  id: Clone
+  parent: SilverCraft.CSCore.WaveFormatExtensible
+  langs:
+  - csharp
+  - vb
+  name: Clone()
+  nameWithType: WaveFormatExtensible.Clone()
+  fullName: SilverCraft.CSCore.WaveFormatExtensible.Clone()
+  type: Method
+  source:
+    remote:
+      path: SilverCraft.CSCore/WaveFormatExtensible.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: Clone
+    path: ../SilverCraft.CSCore/WaveFormatExtensible.cs
+    startLine: 176
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore
+  summary: Creates a new <xref href="SilverCraft.CSCore.WaveFormat" data-throw-if-not-resolved="false"></xref> object that is a copy of the current instance.
+  example: []
+  syntax:
+    content: public override object Clone()
+    return:
+      type: System.Object
+      description: A copy of the current instance.
+    content.vb: Public Overrides Function Clone() As Object
+  overridden: SilverCraft.CSCore.WaveFormat.Clone
+  overload: SilverCraft.CSCore.WaveFormatExtensible.Clone*
+- uid: SilverCraft.CSCore.WaveFormatExtensible.ToString
+  commentId: M:SilverCraft.CSCore.WaveFormatExtensible.ToString
+  id: ToString
+  parent: SilverCraft.CSCore.WaveFormatExtensible
+  langs:
+  - csharp
+  - vb
+  name: ToString()
+  nameWithType: WaveFormatExtensible.ToString()
+  fullName: SilverCraft.CSCore.WaveFormatExtensible.ToString()
+  type: Method
+  source:
+    remote:
+      path: SilverCraft.CSCore/WaveFormatExtensible.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: ToString
+    path: ../SilverCraft.CSCore/WaveFormatExtensible.cs
+    startLine: 193
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore
+  summary: Returns a string which describes the <xref href="SilverCraft.CSCore.WaveFormatExtensible" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public override string ToString()
+    return:
+      type: System.String
+      description: A string which describes the <xref href="SilverCraft.CSCore.WaveFormatExtensible" data-throw-if-not-resolved="false"></xref>.
+    content.vb: Public Overrides Function ToString() As String
+  overridden: SilverCraft.CSCore.WaveFormat.ToString
+  overload: SilverCraft.CSCore.WaveFormatExtensible.ToString*
+references:
+- uid: SilverCraft.CSCore.WaveFormat
+  commentId: T:SilverCraft.CSCore.WaveFormat
+  parent: SilverCraft.CSCore
+  href: SilverCraft.CSCore.WaveFormat.html
+  name: WaveFormat
+  nameWithType: WaveFormat
+  fullName: SilverCraft.CSCore.WaveFormat
+- uid: SilverCraft.CSCore
+  commentId: N:SilverCraft.CSCore
+  href: SilverCraft.html
+  name: SilverCraft.CSCore
+  nameWithType: SilverCraft.CSCore
+  fullName: SilverCraft.CSCore
+  spec.csharp:
+  - uid: SilverCraft
+    name: SilverCraft
+    href: SilverCraft.html
+  - name: .
+  - uid: SilverCraft.CSCore
+    name: CSCore
+    href: SilverCraft.CSCore.html
+  spec.vb:
+  - uid: SilverCraft
+    name: SilverCraft
+    href: SilverCraft.html
+  - name: .
+  - uid: SilverCraft.CSCore
+    name: CSCore
+    href: SilverCraft.CSCore.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.ICloneable
+  commentId: T:System.ICloneable
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.icloneable
+  name: ICloneable
+  nameWithType: ICloneable
+  fullName: System.ICloneable
+- uid: System.IEquatable{SilverCraft.CSCore.WaveFormat}
+  commentId: T:System.IEquatable{SilverCraft.CSCore.WaveFormat}
+  parent: System
+  definition: System.IEquatable`1
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<WaveFormat>
+  nameWithType: IEquatable<WaveFormat>
+  fullName: System.IEquatable<SilverCraft.CSCore.WaveFormat>
+  nameWithType.vb: IEquatable(Of WaveFormat)
+  fullName.vb: System.IEquatable(Of SilverCraft.CSCore.WaveFormat)
+  name.vb: IEquatable(Of WaveFormat)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - uid: SilverCraft.CSCore.WaveFormat
+    name: WaveFormat
+    href: SilverCraft.CSCore.WaveFormat.html
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: SilverCraft.CSCore.WaveFormat
+    name: WaveFormat
+    href: SilverCraft.CSCore.WaveFormat.html
+  - name: )
+- uid: SilverCraft.CSCore.WaveFormat.Channels
+  commentId: P:SilverCraft.CSCore.WaveFormat.Channels
+  parent: SilverCraft.CSCore.WaveFormat
+  href: SilverCraft.CSCore.WaveFormat.html#SilverCraft_CSCore_WaveFormat_Channels
+  name: Channels
+  nameWithType: WaveFormat.Channels
+  fullName: SilverCraft.CSCore.WaveFormat.Channels
+- uid: SilverCraft.CSCore.WaveFormat.SampleRate
+  commentId: P:SilverCraft.CSCore.WaveFormat.SampleRate
+  parent: SilverCraft.CSCore.WaveFormat
+  href: SilverCraft.CSCore.WaveFormat.html#SilverCraft_CSCore_WaveFormat_SampleRate
+  name: SampleRate
+  nameWithType: WaveFormat.SampleRate
+  fullName: SilverCraft.CSCore.WaveFormat.SampleRate
+- uid: SilverCraft.CSCore.WaveFormat.BytesPerSecond
+  commentId: P:SilverCraft.CSCore.WaveFormat.BytesPerSecond
+  parent: SilverCraft.CSCore.WaveFormat
+  href: SilverCraft.CSCore.WaveFormat.html#SilverCraft_CSCore_WaveFormat_BytesPerSecond
+  name: BytesPerSecond
+  nameWithType: WaveFormat.BytesPerSecond
+  fullName: SilverCraft.CSCore.WaveFormat.BytesPerSecond
+- uid: SilverCraft.CSCore.WaveFormat.BlockAlign
+  commentId: P:SilverCraft.CSCore.WaveFormat.BlockAlign
+  parent: SilverCraft.CSCore.WaveFormat
+  href: SilverCraft.CSCore.WaveFormat.html#SilverCraft_CSCore_WaveFormat_BlockAlign
+  name: BlockAlign
+  nameWithType: WaveFormat.BlockAlign
+  fullName: SilverCraft.CSCore.WaveFormat.BlockAlign
+- uid: SilverCraft.CSCore.WaveFormat.BitsPerSample
+  commentId: P:SilverCraft.CSCore.WaveFormat.BitsPerSample
+  parent: SilverCraft.CSCore.WaveFormat
+  href: SilverCraft.CSCore.WaveFormat.html#SilverCraft_CSCore_WaveFormat_BitsPerSample
+  name: BitsPerSample
+  nameWithType: WaveFormat.BitsPerSample
+  fullName: SilverCraft.CSCore.WaveFormat.BitsPerSample
+- uid: SilverCraft.CSCore.WaveFormat.ExtraSize
+  commentId: P:SilverCraft.CSCore.WaveFormat.ExtraSize
+  parent: SilverCraft.CSCore.WaveFormat
+  href: SilverCraft.CSCore.WaveFormat.html#SilverCraft_CSCore_WaveFormat_ExtraSize
+  name: ExtraSize
+  nameWithType: WaveFormat.ExtraSize
+  fullName: SilverCraft.CSCore.WaveFormat.ExtraSize
+- uid: SilverCraft.CSCore.WaveFormat.BytesPerSample
+  commentId: P:SilverCraft.CSCore.WaveFormat.BytesPerSample
+  parent: SilverCraft.CSCore.WaveFormat
+  href: SilverCraft.CSCore.WaveFormat.html#SilverCraft_CSCore_WaveFormat_BytesPerSample
+  name: BytesPerSample
+  nameWithType: WaveFormat.BytesPerSample
+  fullName: SilverCraft.CSCore.WaveFormat.BytesPerSample
+- uid: SilverCraft.CSCore.WaveFormat.BytesPerBlock
+  commentId: P:SilverCraft.CSCore.WaveFormat.BytesPerBlock
+  parent: SilverCraft.CSCore.WaveFormat
+  href: SilverCraft.CSCore.WaveFormat.html#SilverCraft_CSCore_WaveFormat_BytesPerBlock
+  name: BytesPerBlock
+  nameWithType: WaveFormat.BytesPerBlock
+  fullName: SilverCraft.CSCore.WaveFormat.BytesPerBlock
+- uid: SilverCraft.CSCore.WaveFormat.WaveFormatTag
+  commentId: P:SilverCraft.CSCore.WaveFormat.WaveFormatTag
+  parent: SilverCraft.CSCore.WaveFormat
+  href: SilverCraft.CSCore.WaveFormat.html#SilverCraft_CSCore_WaveFormat_WaveFormatTag
+  name: WaveFormatTag
+  nameWithType: WaveFormat.WaveFormatTag
+  fullName: SilverCraft.CSCore.WaveFormat.WaveFormatTag
+- uid: SilverCraft.CSCore.WaveFormat.MillisecondsToBytes(System.Double)
+  commentId: M:SilverCraft.CSCore.WaveFormat.MillisecondsToBytes(System.Double)
+  parent: SilverCraft.CSCore.WaveFormat
+  isExternal: true
+  href: SilverCraft.CSCore.WaveFormat.html#SilverCraft_CSCore_WaveFormat_MillisecondsToBytes_System_Double_
+  name: MillisecondsToBytes(double)
+  nameWithType: WaveFormat.MillisecondsToBytes(double)
+  fullName: SilverCraft.CSCore.WaveFormat.MillisecondsToBytes(double)
+  nameWithType.vb: WaveFormat.MillisecondsToBytes(Double)
+  fullName.vb: SilverCraft.CSCore.WaveFormat.MillisecondsToBytes(Double)
+  name.vb: MillisecondsToBytes(Double)
+  spec.csharp:
+  - uid: SilverCraft.CSCore.WaveFormat.MillisecondsToBytes(System.Double)
+    name: MillisecondsToBytes
+    href: SilverCraft.CSCore.WaveFormat.html#SilverCraft_CSCore_WaveFormat_MillisecondsToBytes_System_Double_
+  - name: (
+  - uid: System.Double
+    name: double
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.double
+  - name: )
+  spec.vb:
+  - uid: SilverCraft.CSCore.WaveFormat.MillisecondsToBytes(System.Double)
+    name: MillisecondsToBytes
+    href: SilverCraft.CSCore.WaveFormat.html#SilverCraft_CSCore_WaveFormat_MillisecondsToBytes_System_Double_
+  - name: (
+  - uid: System.Double
+    name: Double
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.double
+  - name: )
+- uid: SilverCraft.CSCore.WaveFormat.BytesToMilliseconds(System.Int64)
+  commentId: M:SilverCraft.CSCore.WaveFormat.BytesToMilliseconds(System.Int64)
+  parent: SilverCraft.CSCore.WaveFormat
+  isExternal: true
+  href: SilverCraft.CSCore.WaveFormat.html#SilverCraft_CSCore_WaveFormat_BytesToMilliseconds_System_Int64_
+  name: BytesToMilliseconds(long)
+  nameWithType: WaveFormat.BytesToMilliseconds(long)
+  fullName: SilverCraft.CSCore.WaveFormat.BytesToMilliseconds(long)
+  nameWithType.vb: WaveFormat.BytesToMilliseconds(Long)
+  fullName.vb: SilverCraft.CSCore.WaveFormat.BytesToMilliseconds(Long)
+  name.vb: BytesToMilliseconds(Long)
+  spec.csharp:
+  - uid: SilverCraft.CSCore.WaveFormat.BytesToMilliseconds(System.Int64)
+    name: BytesToMilliseconds
+    href: SilverCraft.CSCore.WaveFormat.html#SilverCraft_CSCore_WaveFormat_BytesToMilliseconds_System_Int64_
+  - name: (
+  - uid: System.Int64
+    name: long
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int64
+  - name: )
+  spec.vb:
+  - uid: SilverCraft.CSCore.WaveFormat.BytesToMilliseconds(System.Int64)
+    name: BytesToMilliseconds
+    href: SilverCraft.CSCore.WaveFormat.html#SilverCraft_CSCore_WaveFormat_BytesToMilliseconds_System_Int64_
+  - name: (
+  - uid: System.Int64
+    name: Long
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int64
+  - name: )
+- uid: SilverCraft.CSCore.WaveFormat.Equals(SilverCraft.CSCore.WaveFormat)
+  commentId: M:SilverCraft.CSCore.WaveFormat.Equals(SilverCraft.CSCore.WaveFormat)
+  parent: SilverCraft.CSCore.WaveFormat
+  href: SilverCraft.CSCore.WaveFormat.html#SilverCraft_CSCore_WaveFormat_Equals_SilverCraft_CSCore_WaveFormat_
+  name: Equals(WaveFormat)
+  nameWithType: WaveFormat.Equals(WaveFormat)
+  fullName: SilverCraft.CSCore.WaveFormat.Equals(SilverCraft.CSCore.WaveFormat)
+  spec.csharp:
+  - uid: SilverCraft.CSCore.WaveFormat.Equals(SilverCraft.CSCore.WaveFormat)
+    name: Equals
+    href: SilverCraft.CSCore.WaveFormat.html#SilverCraft_CSCore_WaveFormat_Equals_SilverCraft_CSCore_WaveFormat_
+  - name: (
+  - uid: SilverCraft.CSCore.WaveFormat
+    name: WaveFormat
+    href: SilverCraft.CSCore.WaveFormat.html
+  - name: )
+  spec.vb:
+  - uid: SilverCraft.CSCore.WaveFormat.Equals(SilverCraft.CSCore.WaveFormat)
+    name: Equals
+    href: SilverCraft.CSCore.WaveFormat.html#SilverCraft_CSCore_WaveFormat_Equals_SilverCraft_CSCore_WaveFormat_
+  - name: (
+  - uid: SilverCraft.CSCore.WaveFormat
+    name: WaveFormat
+    href: SilverCraft.CSCore.WaveFormat.html
+  - name: )
+- uid: SilverCraft.CSCore.WaveFormat.UpdateProperties
+  commentId: M:SilverCraft.CSCore.WaveFormat.UpdateProperties
+  parent: SilverCraft.CSCore.WaveFormat
+  href: SilverCraft.CSCore.WaveFormat.html#SilverCraft_CSCore_WaveFormat_UpdateProperties
+  name: UpdateProperties()
+  nameWithType: WaveFormat.UpdateProperties()
+  fullName: SilverCraft.CSCore.WaveFormat.UpdateProperties()
+  spec.csharp:
+  - uid: SilverCraft.CSCore.WaveFormat.UpdateProperties
+    name: UpdateProperties
+    href: SilverCraft.CSCore.WaveFormat.html#SilverCraft_CSCore_WaveFormat_UpdateProperties
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: SilverCraft.CSCore.WaveFormat.UpdateProperties
+    name: UpdateProperties
+    href: SilverCraft.CSCore.WaveFormat.html#SilverCraft_CSCore_WaveFormat_UpdateProperties
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: SilverCraft.CSCore.WaveFormatExtensible.SilverCraft.CSCore.FluentExtensions.Synchronized``2
+  commentId: M:SilverCraft.CSCore.FluentExtensions.Synchronized``2(``0)
+  parent: SilverCraft.CSCore.FluentExtensions
+  definition: SilverCraft.CSCore.FluentExtensions.Synchronized``2(``0)
+  href: SilverCraft.CSCore.FluentExtensions.html#SilverCraft_CSCore_FluentExtensions_Synchronized__2___0_
+  name: Synchronized<WaveFormatExtensible, T>(WaveFormatExtensible)
+  nameWithType: FluentExtensions.Synchronized<WaveFormatExtensible, T>(WaveFormatExtensible)
+  fullName: SilverCraft.CSCore.FluentExtensions.Synchronized<SilverCraft.CSCore.WaveFormatExtensible, T>(SilverCraft.CSCore.WaveFormatExtensible)
+  nameWithType.vb: FluentExtensions.Synchronized(Of WaveFormatExtensible, T)(WaveFormatExtensible)
+  fullName.vb: SilverCraft.CSCore.FluentExtensions.Synchronized(Of SilverCraft.CSCore.WaveFormatExtensible, T)(SilverCraft.CSCore.WaveFormatExtensible)
+  name.vb: Synchronized(Of WaveFormatExtensible, T)(WaveFormatExtensible)
+  spec.csharp:
+  - uid: SilverCraft.CSCore.FluentExtensions.Synchronized``2(SilverCraft.CSCore.WaveFormatExtensible)
+    name: Synchronized
+    href: SilverCraft.CSCore.FluentExtensions.html#SilverCraft_CSCore_FluentExtensions_Synchronized__2___0_
+  - name: <
+  - uid: SilverCraft.CSCore.WaveFormatExtensible
+    name: WaveFormatExtensible
+    href: SilverCraft.CSCore.WaveFormatExtensible.html
+  - name: ','
+  - name: " "
+  - name: T
+  - name: '>'
+  - name: (
+  - uid: SilverCraft.CSCore.WaveFormatExtensible
+    name: WaveFormatExtensible
+    href: SilverCraft.CSCore.WaveFormatExtensible.html
+  - name: )
+  spec.vb:
+  - uid: SilverCraft.CSCore.FluentExtensions.Synchronized``2(SilverCraft.CSCore.WaveFormatExtensible)
+    name: Synchronized
+    href: SilverCraft.CSCore.FluentExtensions.html#SilverCraft_CSCore_FluentExtensions_Synchronized__2___0_
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: SilverCraft.CSCore.WaveFormatExtensible
+    name: WaveFormatExtensible
+    href: SilverCraft.CSCore.WaveFormatExtensible.html
+  - name: ','
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: SilverCraft.CSCore.WaveFormatExtensible
+    name: WaveFormatExtensible
+    href: SilverCraft.CSCore.WaveFormatExtensible.html
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.IEquatable`1
+  commentId: T:System.IEquatable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<T>
+  nameWithType: IEquatable<T>
+  fullName: System.IEquatable<T>
+  nameWithType.vb: IEquatable(Of T)
+  fullName.vb: System.IEquatable(Of T)
+  name.vb: IEquatable(Of T)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: SilverCraft.CSCore.FluentExtensions.Synchronized``2(``0)
+  commentId: M:SilverCraft.CSCore.FluentExtensions.Synchronized``2(``0)
+  href: SilverCraft.CSCore.FluentExtensions.html#SilverCraft_CSCore_FluentExtensions_Synchronized__2___0_
+  name: Synchronized<TAudioSource, T>(TAudioSource)
+  nameWithType: FluentExtensions.Synchronized<TAudioSource, T>(TAudioSource)
+  fullName: SilverCraft.CSCore.FluentExtensions.Synchronized<TAudioSource, T>(TAudioSource)
+  nameWithType.vb: FluentExtensions.Synchronized(Of TAudioSource, T)(TAudioSource)
+  fullName.vb: SilverCraft.CSCore.FluentExtensions.Synchronized(Of TAudioSource, T)(TAudioSource)
+  name.vb: Synchronized(Of TAudioSource, T)(TAudioSource)
+  spec.csharp:
+  - uid: SilverCraft.CSCore.FluentExtensions.Synchronized``2(``0)
+    name: Synchronized
+    href: SilverCraft.CSCore.FluentExtensions.html#SilverCraft_CSCore_FluentExtensions_Synchronized__2___0_
+  - name: <
+  - name: TAudioSource
+  - name: ','
+  - name: " "
+  - name: T
+  - name: '>'
+  - name: (
+  - name: TAudioSource
+  - name: )
+  spec.vb:
+  - uid: SilverCraft.CSCore.FluentExtensions.Synchronized``2(``0)
+    name: Synchronized
+    href: SilverCraft.CSCore.FluentExtensions.html#SilverCraft_CSCore_FluentExtensions_Synchronized__2___0_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TAudioSource
+  - name: ','
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - name: TAudioSource
+  - name: )
+- uid: SilverCraft.CSCore.FluentExtensions
+  commentId: T:SilverCraft.CSCore.FluentExtensions
+  parent: SilverCraft.CSCore
+  href: SilverCraft.CSCore.FluentExtensions.html
+  name: FluentExtensions
+  nameWithType: FluentExtensions
+  fullName: SilverCraft.CSCore.FluentExtensions
+- uid: SilverCraft.CSCore.AudioSubTypes.SubTypeFromEncoding(SilverCraft.CSCore.AudioEncoding)
+  commentId: M:SilverCraft.CSCore.AudioSubTypes.SubTypeFromEncoding(SilverCraft.CSCore.AudioEncoding)
+  href: SilverCraft.CSCore.AudioSubTypes.html#SilverCraft_CSCore_AudioSubTypes_SubTypeFromEncoding_SilverCraft_CSCore_AudioEncoding_
+  name: SubTypeFromEncoding(AudioEncoding)
+  nameWithType: AudioSubTypes.SubTypeFromEncoding(AudioEncoding)
+  fullName: SilverCraft.CSCore.AudioSubTypes.SubTypeFromEncoding(SilverCraft.CSCore.AudioEncoding)
+  spec.csharp:
+  - uid: SilverCraft.CSCore.AudioSubTypes.SubTypeFromEncoding(SilverCraft.CSCore.AudioEncoding)
+    name: SubTypeFromEncoding
+    href: SilverCraft.CSCore.AudioSubTypes.html#SilverCraft_CSCore_AudioSubTypes_SubTypeFromEncoding_SilverCraft_CSCore_AudioEncoding_
+  - name: (
+  - uid: SilverCraft.CSCore.AudioEncoding
+    name: AudioEncoding
+    href: SilverCraft.CSCore.AudioEncoding.html
+  - name: )
+  spec.vb:
+  - uid: SilverCraft.CSCore.AudioSubTypes.SubTypeFromEncoding(SilverCraft.CSCore.AudioEncoding)
+    name: SubTypeFromEncoding
+    href: SilverCraft.CSCore.AudioSubTypes.html#SilverCraft_CSCore_AudioSubTypes_SubTypeFromEncoding_SilverCraft_CSCore_AudioEncoding_
+  - name: (
+  - uid: SilverCraft.CSCore.AudioEncoding
+    name: AudioEncoding
+    href: SilverCraft.CSCore.AudioEncoding.html
+  - name: )
+- uid: SilverCraft.CSCore.WaveFormatExtensible.SubTypeFromWaveFormat*
+  commentId: Overload:SilverCraft.CSCore.WaveFormatExtensible.SubTypeFromWaveFormat
+  href: SilverCraft.CSCore.WaveFormatExtensible.html#SilverCraft_CSCore_WaveFormatExtensible_SubTypeFromWaveFormat_SilverCraft_CSCore_WaveFormat_
+  name: SubTypeFromWaveFormat
+  nameWithType: WaveFormatExtensible.SubTypeFromWaveFormat
+  fullName: SilverCraft.CSCore.WaveFormatExtensible.SubTypeFromWaveFormat
+- uid: System.Guid
+  commentId: T:System.Guid
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.guid
+  name: Guid
+  nameWithType: Guid
+  fullName: System.Guid
+- uid: SilverCraft.CSCore.WaveFormatExtensible.ValidBitsPerSample
+  commentId: P:SilverCraft.CSCore.WaveFormatExtensible.ValidBitsPerSample
+  href: SilverCraft.CSCore.WaveFormatExtensible.html#SilverCraft_CSCore_WaveFormatExtensible_ValidBitsPerSample
+  name: ValidBitsPerSample
+  nameWithType: WaveFormatExtensible.ValidBitsPerSample
+  fullName: SilverCraft.CSCore.WaveFormatExtensible.ValidBitsPerSample
+- uid: SilverCraft.CSCore.WaveFormatExtensible.ValidBitsPerSample*
+  commentId: Overload:SilverCraft.CSCore.WaveFormatExtensible.ValidBitsPerSample
+  href: SilverCraft.CSCore.WaveFormatExtensible.html#SilverCraft_CSCore_WaveFormatExtensible_ValidBitsPerSample
+  name: ValidBitsPerSample
+  nameWithType: WaveFormatExtensible.ValidBitsPerSample
+  fullName: SilverCraft.CSCore.WaveFormatExtensible.ValidBitsPerSample
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: SilverCraft.CSCore.WaveFormatExtensible.SamplesPerBlock*
+  commentId: Overload:SilverCraft.CSCore.WaveFormatExtensible.SamplesPerBlock
+  href: SilverCraft.CSCore.WaveFormatExtensible.html#SilverCraft_CSCore_WaveFormatExtensible_SamplesPerBlock
+  name: SamplesPerBlock
+  nameWithType: WaveFormatExtensible.SamplesPerBlock
+  fullName: SilverCraft.CSCore.WaveFormatExtensible.SamplesPerBlock
+- uid: SilverCraft.CSCore.WaveFormatExtensible.ChannelMask*
+  commentId: Overload:SilverCraft.CSCore.WaveFormatExtensible.ChannelMask
+  href: SilverCraft.CSCore.WaveFormatExtensible.html#SilverCraft_CSCore_WaveFormatExtensible_ChannelMask
+  name: ChannelMask
+  nameWithType: WaveFormatExtensible.ChannelMask
+  fullName: SilverCraft.CSCore.WaveFormatExtensible.ChannelMask
+- uid: SilverCraft.CSCore.ChannelMask
+  commentId: T:SilverCraft.CSCore.ChannelMask
+  parent: SilverCraft.CSCore
+  href: SilverCraft.CSCore.ChannelMask.html
+  name: ChannelMask
+  nameWithType: ChannelMask
+  fullName: SilverCraft.CSCore.ChannelMask
+- uid: SilverCraft.CSCore.AudioSubTypes.Pcm
+  commentId: F:SilverCraft.CSCore.AudioSubTypes.Pcm
+  href: SilverCraft.CSCore.AudioSubTypes.html#SilverCraft_CSCore_AudioSubTypes_Pcm
+  name: Pcm
+  nameWithType: AudioSubTypes.Pcm
+  fullName: SilverCraft.CSCore.AudioSubTypes.Pcm
+- uid: SilverCraft.CSCore.WaveFormatExtensible.SubFormat*
+  commentId: Overload:SilverCraft.CSCore.WaveFormatExtensible.SubFormat
+  href: SilverCraft.CSCore.WaveFormatExtensible.html#SilverCraft_CSCore_WaveFormatExtensible_SubFormat
+  name: SubFormat
+  nameWithType: WaveFormatExtensible.SubFormat
+  fullName: SilverCraft.CSCore.WaveFormatExtensible.SubFormat
+- uid: SilverCraft.CSCore.WaveFormatExtensible
+  commentId: T:SilverCraft.CSCore.WaveFormatExtensible
+  href: SilverCraft.CSCore.WaveFormatExtensible.html
+  name: WaveFormatExtensible
+  nameWithType: WaveFormatExtensible
+  fullName: SilverCraft.CSCore.WaveFormatExtensible
+- uid: SilverCraft.CSCore.WaveFormatExtensible.SubFormat
+  commentId: P:SilverCraft.CSCore.WaveFormatExtensible.SubFormat
+  href: SilverCraft.CSCore.WaveFormatExtensible.html#SilverCraft_CSCore_WaveFormatExtensible_SubFormat
+  name: SubFormat
+  nameWithType: WaveFormatExtensible.SubFormat
+  fullName: SilverCraft.CSCore.WaveFormatExtensible.SubFormat
+- uid: SilverCraft.CSCore.WaveFormatExtensible.#ctor*
+  commentId: Overload:SilverCraft.CSCore.WaveFormatExtensible.#ctor
+  href: SilverCraft.CSCore.WaveFormatExtensible.html#SilverCraft_CSCore_WaveFormatExtensible__ctor_System_Int32_System_Int32_System_Int32_System_Guid_
+  name: WaveFormatExtensible
+  nameWithType: WaveFormatExtensible.WaveFormatExtensible
+  fullName: SilverCraft.CSCore.WaveFormatExtensible.WaveFormatExtensible
+  nameWithType.vb: WaveFormatExtensible.New
+  fullName.vb: SilverCraft.CSCore.WaveFormatExtensible.New
+  name.vb: New
+- uid: SilverCraft.CSCore.WaveFormatExtensible.ChannelMask
+  commentId: P:SilverCraft.CSCore.WaveFormatExtensible.ChannelMask
+  href: SilverCraft.CSCore.WaveFormatExtensible.html#SilverCraft_CSCore_WaveFormatExtensible_ChannelMask
+  name: ChannelMask
+  nameWithType: WaveFormatExtensible.ChannelMask
+  fullName: SilverCraft.CSCore.WaveFormatExtensible.ChannelMask
+- uid: SilverCraft.CSCore.WaveFormatExtensible.ToWaveFormat*
+  commentId: Overload:SilverCraft.CSCore.WaveFormatExtensible.ToWaveFormat
+  href: SilverCraft.CSCore.WaveFormatExtensible.html#SilverCraft_CSCore_WaveFormatExtensible_ToWaveFormat
+  name: ToWaveFormat
+  nameWithType: WaveFormatExtensible.ToWaveFormat
+  fullName: SilverCraft.CSCore.WaveFormatExtensible.ToWaveFormat
+- uid: SilverCraft.CSCore.WaveFormat.Clone
+  commentId: M:SilverCraft.CSCore.WaveFormat.Clone
+  parent: SilverCraft.CSCore.WaveFormat
+  href: SilverCraft.CSCore.WaveFormat.html#SilverCraft_CSCore_WaveFormat_Clone
+  name: Clone()
+  nameWithType: WaveFormat.Clone()
+  fullName: SilverCraft.CSCore.WaveFormat.Clone()
+  spec.csharp:
+  - uid: SilverCraft.CSCore.WaveFormat.Clone
+    name: Clone
+    href: SilverCraft.CSCore.WaveFormat.html#SilverCraft_CSCore_WaveFormat_Clone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: SilverCraft.CSCore.WaveFormat.Clone
+    name: Clone
+    href: SilverCraft.CSCore.WaveFormat.html#SilverCraft_CSCore_WaveFormat_Clone
+  - name: (
+  - name: )
+- uid: SilverCraft.CSCore.WaveFormatExtensible.Clone*
+  commentId: Overload:SilverCraft.CSCore.WaveFormatExtensible.Clone
+  href: SilverCraft.CSCore.WaveFormatExtensible.html#SilverCraft_CSCore_WaveFormatExtensible_Clone
+  name: Clone
+  nameWithType: WaveFormatExtensible.Clone
+  fullName: SilverCraft.CSCore.WaveFormatExtensible.Clone
+- uid: SilverCraft.CSCore.WaveFormat.ToString
+  commentId: M:SilverCraft.CSCore.WaveFormat.ToString
+  parent: SilverCraft.CSCore.WaveFormat
+  href: SilverCraft.CSCore.WaveFormat.html#SilverCraft_CSCore_WaveFormat_ToString
+  name: ToString()
+  nameWithType: WaveFormat.ToString()
+  fullName: SilverCraft.CSCore.WaveFormat.ToString()
+  spec.csharp:
+  - uid: SilverCraft.CSCore.WaveFormat.ToString
+    name: ToString
+    href: SilverCraft.CSCore.WaveFormat.html#SilverCraft_CSCore_WaveFormat_ToString
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: SilverCraft.CSCore.WaveFormat.ToString
+    name: ToString
+    href: SilverCraft.CSCore.WaveFormat.html#SilverCraft_CSCore_WaveFormat_ToString
+  - name: (
+  - name: )
+- uid: SilverCraft.CSCore.WaveFormatExtensible.ToString*
+  commentId: Overload:SilverCraft.CSCore.WaveFormatExtensible.ToString
+  href: SilverCraft.CSCore.WaveFormatExtensible.html#SilverCraft_CSCore_WaveFormatExtensible_ToString
+  name: ToString
+  nameWithType: WaveFormatExtensible.ToString
+  fullName: SilverCraft.CSCore.WaveFormatExtensible.ToString
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String

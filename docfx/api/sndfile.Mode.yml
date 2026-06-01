@@ -1,0 +1,123 @@
+### YamlMime:ManagedReference
+items:
+- uid: sndfile.Mode
+  commentId: T:sndfile.Mode
+  id: Mode
+  parent: sndfile
+  children:
+  - sndfile.Mode.Read
+  - sndfile.Mode.ReadWrite
+  - sndfile.Mode.Write
+  langs:
+  - csharp
+  - vb
+  name: Mode
+  nameWithType: Mode
+  fullName: sndfile.Mode
+  type: Enum
+  source:
+    remote:
+      path: SilverCraft.SndFile/Native/Mode.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: Mode
+    path: ../SilverCraft.SndFile/Native/Mode.cs
+    startLine: 2
+  assemblies:
+  - SilverCraft.CSCore.SndFile
+  namespace: sndfile
+  syntax:
+    content: public enum Mode
+    content.vb: Public Enum Mode
+- uid: sndfile.Mode.Read
+  commentId: F:sndfile.Mode.Read
+  id: Read
+  parent: sndfile.Mode
+  langs:
+  - csharp
+  - vb
+  name: Read
+  nameWithType: Mode.Read
+  fullName: sndfile.Mode.Read
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.SndFile/Native/Mode.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: Read
+    path: ../SilverCraft.SndFile/Native/Mode.cs
+    startLine: 4
+  assemblies:
+  - SilverCraft.CSCore.SndFile
+  namespace: sndfile
+  syntax:
+    content: Read = 16
+    return:
+      type: sndfile.Mode
+- uid: sndfile.Mode.Write
+  commentId: F:sndfile.Mode.Write
+  id: Write
+  parent: sndfile.Mode
+  langs:
+  - csharp
+  - vb
+  name: Write
+  nameWithType: Mode.Write
+  fullName: sndfile.Mode.Write
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.SndFile/Native/Mode.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: Write
+    path: ../SilverCraft.SndFile/Native/Mode.cs
+    startLine: 5
+  assemblies:
+  - SilverCraft.CSCore.SndFile
+  namespace: sndfile
+  syntax:
+    content: Write = 32
+    return:
+      type: sndfile.Mode
+- uid: sndfile.Mode.ReadWrite
+  commentId: F:sndfile.Mode.ReadWrite
+  id: ReadWrite
+  parent: sndfile.Mode
+  langs:
+  - csharp
+  - vb
+  name: ReadWrite
+  nameWithType: Mode.ReadWrite
+  fullName: sndfile.Mode.ReadWrite
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.SndFile/Native/Mode.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: ReadWrite
+    path: ../SilverCraft.SndFile/Native/Mode.cs
+    startLine: 6
+  assemblies:
+  - SilverCraft.CSCore.SndFile
+  namespace: sndfile
+  syntax:
+    content: ReadWrite = 48
+    return:
+      type: sndfile.Mode
+references:
+- uid: sndfile
+  commentId: N:sndfile
+  href: sndfile.html
+  name: sndfile
+  nameWithType: sndfile
+  fullName: sndfile
+- uid: sndfile.Mode
+  commentId: T:sndfile.Mode
+  parent: sndfile
+  href: sndfile.Mode.html
+  name: Mode
+  nameWithType: Mode
+  fullName: sndfile.Mode

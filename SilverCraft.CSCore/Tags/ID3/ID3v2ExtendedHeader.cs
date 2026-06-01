@@ -1,6 +1,9 @@
 ﻿
 namespace SilverCraft.CSCore.Tags.ID3
 {
+    /// <summary>
+    /// Represents the extended header section found in ID3v2 tags.
+    /// </summary>
     public class ID3v2ExtendedHeader
     {
         //länge des extendedheaders ohne die headerlength(4 byte)

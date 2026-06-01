@@ -1,0 +1,923 @@
+### YamlMime:ManagedReference
+items:
+- uid: SilverCraft.CSCore.TimeConverterFactory
+  commentId: T:SilverCraft.CSCore.TimeConverterFactory
+  id: TimeConverterFactory
+  parent: SilverCraft.CSCore
+  children:
+  - SilverCraft.CSCore.TimeConverterFactory.ClearCache
+  - SilverCraft.CSCore.TimeConverterFactory.GetTimeConverterForSourceType(System.Type)
+  - SilverCraft.CSCore.TimeConverterFactory.GetTimeConverterForSource``1
+  - SilverCraft.CSCore.TimeConverterFactory.GetTimeConverterForSource``1(``0)
+  - SilverCraft.CSCore.TimeConverterFactory.Instance
+  - SilverCraft.CSCore.TimeConverterFactory.RegisterTimeConverterForSourceType``1(SilverCraft.CSCore.TimeConverter)
+  - SilverCraft.CSCore.TimeConverterFactory.UnregisterTimeConverter``1
+  langs:
+  - csharp
+  - vb
+  name: TimeConverterFactory
+  nameWithType: TimeConverterFactory
+  fullName: SilverCraft.CSCore.TimeConverterFactory
+  type: Class
+  source:
+    remote:
+      path: SilverCraft.CSCore/TimeConverterFactory.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: TimeConverterFactory
+    path: ../SilverCraft.CSCore/TimeConverterFactory.cs
+    startLine: 5
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore
+  summary: Provides <xref href="SilverCraft.CSCore.TimeConverter" data-throw-if-not-resolved="false"></xref>s for converting raw time values (e.g. bytes, samples,...) to a <xref href="System.TimeSpan" data-throw-if-not-resolved="false"></xref> and back.
+  example: []
+  syntax:
+    content: public sealed class TimeConverterFactory
+    content.vb: Public NotInheritable Class TimeConverterFactory
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  extensionMethods:
+  - SilverCraft.CSCore.TimeConverterFactory.SilverCraft.CSCore.FluentExtensions.Synchronized``2
+- uid: SilverCraft.CSCore.TimeConverterFactory.Instance
+  commentId: P:SilverCraft.CSCore.TimeConverterFactory.Instance
+  id: Instance
+  parent: SilverCraft.CSCore.TimeConverterFactory
+  langs:
+  - csharp
+  - vb
+  name: Instance
+  nameWithType: TimeConverterFactory.Instance
+  fullName: SilverCraft.CSCore.TimeConverterFactory.Instance
+  type: Property
+  source:
+    remote:
+      path: SilverCraft.CSCore/TimeConverterFactory.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: Instance
+    path: ../SilverCraft.CSCore/TimeConverterFactory.cs
+    startLine: 10
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore
+  summary: Gets the default instance of the factory.
+  example: []
+  syntax:
+    content: public static TimeConverterFactory Instance { get; }
+    parameters: []
+    return:
+      type: SilverCraft.CSCore.TimeConverterFactory
+    content.vb: Public Shared ReadOnly Property Instance As TimeConverterFactory
+  overload: SilverCraft.CSCore.TimeConverterFactory.Instance*
+- uid: SilverCraft.CSCore.TimeConverterFactory.RegisterTimeConverterForSourceType``1(SilverCraft.CSCore.TimeConverter)
+  commentId: M:SilverCraft.CSCore.TimeConverterFactory.RegisterTimeConverterForSourceType``1(SilverCraft.CSCore.TimeConverter)
+  id: RegisterTimeConverterForSourceType``1(SilverCraft.CSCore.TimeConverter)
+  parent: SilverCraft.CSCore.TimeConverterFactory
+  langs:
+  - csharp
+  - vb
+  name: RegisterTimeConverterForSourceType<TSource>(TimeConverter)
+  nameWithType: TimeConverterFactory.RegisterTimeConverterForSourceType<TSource>(TimeConverter)
+  fullName: SilverCraft.CSCore.TimeConverterFactory.RegisterTimeConverterForSourceType<TSource>(SilverCraft.CSCore.TimeConverter)
+  type: Method
+  source:
+    remote:
+      path: SilverCraft.CSCore/TimeConverterFactory.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: RegisterTimeConverterForSourceType
+    path: ../SilverCraft.CSCore/TimeConverterFactory.cs
+    startLine: 32
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore
+  summary: Registers a new <xref href="SilverCraft.CSCore.TimeConverter" data-throw-if-not-resolved="false"></xref> for a specific source type.
+  remarks: The <xref href="SilverCraft.CSCore.TimeConverterFactory" data-throw-if-not-resolved="false"></xref> class uses the source type to find choose the best <xref href="SilverCraft.CSCore.TimeConverter" data-throw-if-not-resolved="false"></xref> for an <xref href="SilverCraft.CSCore.IAudioSource" data-throw-if-not-resolved="false"></xref>. For more information, see <xref href="SilverCraft.CSCore.TimeConverterFactory.GetTimeConverterForSourceType(System.Type)" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: 'public void RegisterTimeConverterForSourceType<TSource>(TimeConverter timeConverter) where TSource : IAudioSource'
+    parameters:
+    - id: timeConverter
+      type: SilverCraft.CSCore.TimeConverter
+      description: The <xref href="SilverCraft.CSCore.TimeConverter" data-throw-if-not-resolved="false"></xref> to register.
+    typeParameters:
+    - id: TSource
+      description: The source type.
+    content.vb: Public Sub RegisterTimeConverterForSourceType(Of TSource As IAudioSource)(timeConverter As TimeConverter)
+  overload: SilverCraft.CSCore.TimeConverterFactory.RegisterTimeConverterForSourceType*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: timeConverter is null.
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: There is already a <xref href="SilverCraft.CSCore.TimeConverter" data-throw-if-not-resolved="false"></xref> registered for the specified <code class="typeparamref">TSource</code>.
+  nameWithType.vb: TimeConverterFactory.RegisterTimeConverterForSourceType(Of TSource)(TimeConverter)
+  fullName.vb: SilverCraft.CSCore.TimeConverterFactory.RegisterTimeConverterForSourceType(Of TSource)(SilverCraft.CSCore.TimeConverter)
+  name.vb: RegisterTimeConverterForSourceType(Of TSource)(TimeConverter)
+- uid: SilverCraft.CSCore.TimeConverterFactory.UnregisterTimeConverter``1
+  commentId: M:SilverCraft.CSCore.TimeConverterFactory.UnregisterTimeConverter``1
+  id: UnregisterTimeConverter``1
+  parent: SilverCraft.CSCore.TimeConverterFactory
+  langs:
+  - csharp
+  - vb
+  name: UnregisterTimeConverter<TSource>()
+  nameWithType: TimeConverterFactory.UnregisterTimeConverter<TSource>()
+  fullName: SilverCraft.CSCore.TimeConverterFactory.UnregisterTimeConverter<TSource>()
+  type: Method
+  source:
+    remote:
+      path: SilverCraft.CSCore/TimeConverterFactory.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: UnregisterTimeConverter
+    path: ../SilverCraft.CSCore/TimeConverterFactory.cs
+    startLine: 49
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore
+  summary: Unregisters a previously registered <xref href="SilverCraft.CSCore.TimeConverter" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: 'public void UnregisterTimeConverter<TSource>() where TSource : IAudioSource'
+    typeParameters:
+    - id: TSource
+      description: The source type, that got passed to the <xref href="SilverCraft.CSCore.TimeConverterFactory.RegisterTimeConverterForSourceType%60%601(SilverCraft.CSCore.TimeConverter)" data-throw-if-not-resolved="false"></xref> method previously.
+    content.vb: Public Sub UnregisterTimeConverter(Of TSource As IAudioSource)()
+  overload: SilverCraft.CSCore.TimeConverterFactory.UnregisterTimeConverter*
+  exceptions:
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: The specified source type could not be found.
+  nameWithType.vb: TimeConverterFactory.UnregisterTimeConverter(Of TSource)()
+  fullName.vb: SilverCraft.CSCore.TimeConverterFactory.UnregisterTimeConverter(Of TSource)()
+  name.vb: UnregisterTimeConverter(Of TSource)()
+- uid: SilverCraft.CSCore.TimeConverterFactory.GetTimeConverterForSource``1(``0)
+  commentId: M:SilverCraft.CSCore.TimeConverterFactory.GetTimeConverterForSource``1(``0)
+  id: GetTimeConverterForSource``1(``0)
+  parent: SilverCraft.CSCore.TimeConverterFactory
+  langs:
+  - csharp
+  - vb
+  name: GetTimeConverterForSource<TSource>(TSource)
+  nameWithType: TimeConverterFactory.GetTimeConverterForSource<TSource>(TSource)
+  fullName: SilverCraft.CSCore.TimeConverterFactory.GetTimeConverterForSource<TSource>(TSource)
+  type: Method
+  source:
+    remote:
+      path: SilverCraft.CSCore/TimeConverterFactory.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: GetTimeConverterForSource
+    path: ../SilverCraft.CSCore/TimeConverterFactory.cs
+    startLine: 78
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore
+  summary: Gets the <xref href="SilverCraft.CSCore.TimeConverter" data-throw-if-not-resolved="false"></xref> for the specified <code class="paramref">source</code>.
+  remarks: >-
+    The <xref href="SilverCraft.CSCore.TimeConverterFactory.GetTimeConverterForSource%60%601(%60%600)" data-throw-if-not-resolved="false"></xref> chooses the best <xref href="SilverCraft.CSCore.TimeConverter" data-throw-if-not-resolved="false"></xref> for the specified <code class="paramref">source</code>.
+
+    If there is no <xref href="SilverCraft.CSCore.TimeConverterAttribute" data-throw-if-not-resolved="false"></xref> applied to the <xref href="SilverCraft.CSCore.IAudioSource" data-throw-if-not-resolved="false"></xref> object (the <code class="paramref">source</code>), it looks up the inheritance hierarchy (interfaces included) of the <xref href="SilverCraft.CSCore.IAudioSource" data-throw-if-not-resolved="false"></xref> object
+
+    and searches for all registered source types. If there is a match it returns the associated <xref href="SilverCraft.CSCore.TimeConverter" data-throw-if-not-resolved="false"></xref>. If there are more or less than one match BUT no <xref href="SilverCraft.CSCore.TimeConverterAttribute" data-throw-if-not-resolved="false"></xref>
+
+    it throws an exception.
+  example: []
+  syntax:
+    content: 'public TimeConverter GetTimeConverterForSource<TSource>(TSource source) where TSource : class, IAudioSource'
+    parameters:
+    - id: source
+      type: '{TSource}'
+      description: The <xref href="SilverCraft.CSCore.IAudioSource" data-throw-if-not-resolved="false"></xref> object to get the <xref href="SilverCraft.CSCore.TimeConverter" data-throw-if-not-resolved="false"></xref> for.
+    typeParameters:
+    - id: TSource
+      description: The type of the <code class="paramref">source</code>.
+    return:
+      type: SilverCraft.CSCore.TimeConverter
+      description: The best <xref href="SilverCraft.CSCore.TimeConverter" data-throw-if-not-resolved="false"></xref> for the specified <code class="paramref">source</code>.
+    content.vb: Public Function GetTimeConverterForSource(Of TSource As {Class, IAudioSource})(source As TSource) As TimeConverter
+  overload: SilverCraft.CSCore.TimeConverterFactory.GetTimeConverterForSource*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: The specified <code class="paramref">source</code> is null.
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: >-
+      Specified type is no AudioSource.;type
+
+      or
+
+      No registered time converter for the specified source type was found.
+
+      or
+
+      Multiple possible time converters, for the specified source type, were found. Specify which time converter to use, through the <xref href="SilverCraft.CSCore.TimeConverterAttribute" data-throw-if-not-resolved="false"></xref>.
+  nameWithType.vb: TimeConverterFactory.GetTimeConverterForSource(Of TSource)(TSource)
+  fullName.vb: SilverCraft.CSCore.TimeConverterFactory.GetTimeConverterForSource(Of TSource)(TSource)
+  name.vb: GetTimeConverterForSource(Of TSource)(TSource)
+- uid: SilverCraft.CSCore.TimeConverterFactory.GetTimeConverterForSource``1
+  commentId: M:SilverCraft.CSCore.TimeConverterFactory.GetTimeConverterForSource``1
+  id: GetTimeConverterForSource``1
+  parent: SilverCraft.CSCore.TimeConverterFactory
+  langs:
+  - csharp
+  - vb
+  name: GetTimeConverterForSource<TSource>()
+  nameWithType: TimeConverterFactory.GetTimeConverterForSource<TSource>()
+  fullName: SilverCraft.CSCore.TimeConverterFactory.GetTimeConverterForSource<TSource>()
+  type: Method
+  source:
+    remote:
+      path: SilverCraft.CSCore/TimeConverterFactory.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: GetTimeConverterForSource
+    path: ../SilverCraft.CSCore/TimeConverterFactory.cs
+    startLine: 102
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore
+  summary: Gets the <xref href="SilverCraft.CSCore.TimeConverter" data-throw-if-not-resolved="false"></xref> for the specified source type.
+  remarks: >-
+    The <xref href="SilverCraft.CSCore.TimeConverterFactory.GetTimeConverterForSource%60%601" data-throw-if-not-resolved="false"></xref> chooses the best <xref href="SilverCraft.CSCore.TimeConverter" data-throw-if-not-resolved="false"></xref> for the specified source type.
+
+    If there is no <xref href="SilverCraft.CSCore.TimeConverterAttribute" data-throw-if-not-resolved="false"></xref> applied to the <xref href="SilverCraft.CSCore.IAudioSource" data-throw-if-not-resolved="false"></xref> object, it looks up the inheritance hierarchy (interfaces included) of the <xref href="SilverCraft.CSCore.IAudioSource" data-throw-if-not-resolved="false"></xref> object
+
+    and searches for all registered source types. If there is a match it returns the associated <xref href="SilverCraft.CSCore.TimeConverter" data-throw-if-not-resolved="false"></xref>. If there are more or less than one match BUT no <xref href="SilverCraft.CSCore.TimeConverterAttribute" data-throw-if-not-resolved="false"></xref>
+
+    it throws an exception.
+  example: []
+  syntax:
+    content: 'public TimeConverter GetTimeConverterForSource<TSource>() where TSource : IAudioSource'
+    typeParameters:
+    - id: TSource
+      description: The type of the source.
+    return:
+      type: SilverCraft.CSCore.TimeConverter
+      description: The best <xref href="SilverCraft.CSCore.TimeConverter" data-throw-if-not-resolved="false"></xref> for the specified source type.
+    content.vb: Public Function GetTimeConverterForSource(Of TSource As IAudioSource)() As TimeConverter
+  overload: SilverCraft.CSCore.TimeConverterFactory.GetTimeConverterForSource*
+  exceptions:
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: >-
+      Specified type is no AudioSource.;type
+
+      or
+
+      No registered time converter for the specified source type was found.
+
+      or
+
+      Multiple possible time converters, for the specified source type, were found. Specify which time converter to use, through the <xref href="SilverCraft.CSCore.TimeConverterAttribute" data-throw-if-not-resolved="false"></xref>.
+  nameWithType.vb: TimeConverterFactory.GetTimeConverterForSource(Of TSource)()
+  fullName.vb: SilverCraft.CSCore.TimeConverterFactory.GetTimeConverterForSource(Of TSource)()
+  name.vb: GetTimeConverterForSource(Of TSource)()
+- uid: SilverCraft.CSCore.TimeConverterFactory.GetTimeConverterForSourceType(System.Type)
+  commentId: M:SilverCraft.CSCore.TimeConverterFactory.GetTimeConverterForSourceType(System.Type)
+  id: GetTimeConverterForSourceType(System.Type)
+  parent: SilverCraft.CSCore.TimeConverterFactory
+  langs:
+  - csharp
+  - vb
+  name: GetTimeConverterForSourceType(Type)
+  nameWithType: TimeConverterFactory.GetTimeConverterForSourceType(Type)
+  fullName: SilverCraft.CSCore.TimeConverterFactory.GetTimeConverterForSourceType(System.Type)
+  type: Method
+  source:
+    remote:
+      path: SilverCraft.CSCore/TimeConverterFactory.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: GetTimeConverterForSourceType
+    path: ../SilverCraft.CSCore/TimeConverterFactory.cs
+    startLine: 125
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore
+  summary: Gets the <xref href="SilverCraft.CSCore.TimeConverter" data-throw-if-not-resolved="false"></xref> for the specified <code class="paramref">sourceType</code>.
+  remarks: >-
+    The <xref href="SilverCraft.CSCore.TimeConverterFactory.GetTimeConverterForSourceType(System.Type)" data-throw-if-not-resolved="false"></xref> chooses the best <xref href="SilverCraft.CSCore.TimeConverter" data-throw-if-not-resolved="false"></xref> for the specified <code class="paramref">sourceType</code>.
+
+    If there is no <xref href="SilverCraft.CSCore.TimeConverterAttribute" data-throw-if-not-resolved="false"></xref> applied to the <xref href="SilverCraft.CSCore.IAudioSource" data-throw-if-not-resolved="false"></xref> object (the <code class="paramref">sourceType</code>), it looks up the inheritance hierarchy (interfaces included) of the <xref href="SilverCraft.CSCore.IAudioSource" data-throw-if-not-resolved="false"></xref> object
+
+    and searches for all registered source types. If there is a match it returns the associated <xref href="SilverCraft.CSCore.TimeConverter" data-throw-if-not-resolved="false"></xref>. If there are more or less than one match BUT no <xref href="SilverCraft.CSCore.TimeConverterAttribute" data-throw-if-not-resolved="false"></xref>
+
+    it throws an exception.
+  example: []
+  syntax:
+    content: public TimeConverter GetTimeConverterForSourceType(Type sourceType)
+    parameters:
+    - id: sourceType
+      type: System.Type
+      description: The <xref href="System.Type" data-throw-if-not-resolved="false"></xref> to get the associated <xref href="SilverCraft.CSCore.TimeConverter" data-throw-if-not-resolved="false"></xref> for.
+    return:
+      type: SilverCraft.CSCore.TimeConverter
+      description: The best <xref href="SilverCraft.CSCore.TimeConverter" data-throw-if-not-resolved="false"></xref> for the specified <code class="paramref">sourceType</code>.
+    content.vb: Public Function GetTimeConverterForSourceType(sourceType As Type) As TimeConverter
+  overload: SilverCraft.CSCore.TimeConverterFactory.GetTimeConverterForSourceType*
+  exceptions:
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: >-
+      Specified type is no AudioSource.;type
+
+      or
+
+      No registered time converter for the specified source type was found.
+
+      or
+
+      Multiple possible time converters, for the specified source type, were found. Specify which time converter to use, through the <xref href="SilverCraft.CSCore.TimeConverterAttribute" data-throw-if-not-resolved="false"></xref>.
+- uid: SilverCraft.CSCore.TimeConverterFactory.ClearCache
+  commentId: M:SilverCraft.CSCore.TimeConverterFactory.ClearCache
+  id: ClearCache
+  parent: SilverCraft.CSCore.TimeConverterFactory
+  langs:
+  - csharp
+  - vb
+  name: ClearCache()
+  nameWithType: TimeConverterFactory.ClearCache()
+  fullName: SilverCraft.CSCore.TimeConverterFactory.ClearCache()
+  type: Method
+  source:
+    remote:
+      path: SilverCraft.CSCore/TimeConverterFactory.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: ClearCache
+    path: ../SilverCraft.CSCore/TimeConverterFactory.cs
+    startLine: 195
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore
+  summary: Clears the internal cache.
+  example: []
+  syntax:
+    content: public void ClearCache()
+    content.vb: Public Sub ClearCache()
+  overload: SilverCraft.CSCore.TimeConverterFactory.ClearCache*
+references:
+- uid: SilverCraft.CSCore.TimeConverter
+  commentId: T:SilverCraft.CSCore.TimeConverter
+  parent: SilverCraft.CSCore
+  href: SilverCraft.CSCore.TimeConverter.html
+  name: TimeConverter
+  nameWithType: TimeConverter
+  fullName: SilverCraft.CSCore.TimeConverter
+- uid: System.TimeSpan
+  commentId: T:System.TimeSpan
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.timespan
+  name: TimeSpan
+  nameWithType: TimeSpan
+  fullName: System.TimeSpan
+- uid: SilverCraft.CSCore
+  commentId: N:SilverCraft.CSCore
+  href: SilverCraft.html
+  name: SilverCraft.CSCore
+  nameWithType: SilverCraft.CSCore
+  fullName: SilverCraft.CSCore
+  spec.csharp:
+  - uid: SilverCraft
+    name: SilverCraft
+    href: SilverCraft.html
+  - name: .
+  - uid: SilverCraft.CSCore
+    name: CSCore
+    href: SilverCraft.CSCore.html
+  spec.vb:
+  - uid: SilverCraft
+    name: SilverCraft
+    href: SilverCraft.html
+  - name: .
+  - uid: SilverCraft.CSCore
+    name: CSCore
+    href: SilverCraft.CSCore.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: SilverCraft.CSCore.TimeConverterFactory.SilverCraft.CSCore.FluentExtensions.Synchronized``2
+  commentId: M:SilverCraft.CSCore.FluentExtensions.Synchronized``2(``0)
+  parent: SilverCraft.CSCore.FluentExtensions
+  definition: SilverCraft.CSCore.FluentExtensions.Synchronized``2(``0)
+  href: SilverCraft.CSCore.FluentExtensions.html#SilverCraft_CSCore_FluentExtensions_Synchronized__2___0_
+  name: Synchronized<TimeConverterFactory, T>(TimeConverterFactory)
+  nameWithType: FluentExtensions.Synchronized<TimeConverterFactory, T>(TimeConverterFactory)
+  fullName: SilverCraft.CSCore.FluentExtensions.Synchronized<SilverCraft.CSCore.TimeConverterFactory, T>(SilverCraft.CSCore.TimeConverterFactory)
+  nameWithType.vb: FluentExtensions.Synchronized(Of TimeConverterFactory, T)(TimeConverterFactory)
+  fullName.vb: SilverCraft.CSCore.FluentExtensions.Synchronized(Of SilverCraft.CSCore.TimeConverterFactory, T)(SilverCraft.CSCore.TimeConverterFactory)
+  name.vb: Synchronized(Of TimeConverterFactory, T)(TimeConverterFactory)
+  spec.csharp:
+  - uid: SilverCraft.CSCore.FluentExtensions.Synchronized``2(SilverCraft.CSCore.TimeConverterFactory)
+    name: Synchronized
+    href: SilverCraft.CSCore.FluentExtensions.html#SilverCraft_CSCore_FluentExtensions_Synchronized__2___0_
+  - name: <
+  - uid: SilverCraft.CSCore.TimeConverterFactory
+    name: TimeConverterFactory
+    href: SilverCraft.CSCore.TimeConverterFactory.html
+  - name: ','
+  - name: " "
+  - name: T
+  - name: '>'
+  - name: (
+  - uid: SilverCraft.CSCore.TimeConverterFactory
+    name: TimeConverterFactory
+    href: SilverCraft.CSCore.TimeConverterFactory.html
+  - name: )
+  spec.vb:
+  - uid: SilverCraft.CSCore.FluentExtensions.Synchronized``2(SilverCraft.CSCore.TimeConverterFactory)
+    name: Synchronized
+    href: SilverCraft.CSCore.FluentExtensions.html#SilverCraft_CSCore_FluentExtensions_Synchronized__2___0_
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: SilverCraft.CSCore.TimeConverterFactory
+    name: TimeConverterFactory
+    href: SilverCraft.CSCore.TimeConverterFactory.html
+  - name: ','
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: SilverCraft.CSCore.TimeConverterFactory
+    name: TimeConverterFactory
+    href: SilverCraft.CSCore.TimeConverterFactory.html
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: SilverCraft.CSCore.FluentExtensions.Synchronized``2(``0)
+  commentId: M:SilverCraft.CSCore.FluentExtensions.Synchronized``2(``0)
+  href: SilverCraft.CSCore.FluentExtensions.html#SilverCraft_CSCore_FluentExtensions_Synchronized__2___0_
+  name: Synchronized<TAudioSource, T>(TAudioSource)
+  nameWithType: FluentExtensions.Synchronized<TAudioSource, T>(TAudioSource)
+  fullName: SilverCraft.CSCore.FluentExtensions.Synchronized<TAudioSource, T>(TAudioSource)
+  nameWithType.vb: FluentExtensions.Synchronized(Of TAudioSource, T)(TAudioSource)
+  fullName.vb: SilverCraft.CSCore.FluentExtensions.Synchronized(Of TAudioSource, T)(TAudioSource)
+  name.vb: Synchronized(Of TAudioSource, T)(TAudioSource)
+  spec.csharp:
+  - uid: SilverCraft.CSCore.FluentExtensions.Synchronized``2(``0)
+    name: Synchronized
+    href: SilverCraft.CSCore.FluentExtensions.html#SilverCraft_CSCore_FluentExtensions_Synchronized__2___0_
+  - name: <
+  - name: TAudioSource
+  - name: ','
+  - name: " "
+  - name: T
+  - name: '>'
+  - name: (
+  - name: TAudioSource
+  - name: )
+  spec.vb:
+  - uid: SilverCraft.CSCore.FluentExtensions.Synchronized``2(``0)
+    name: Synchronized
+    href: SilverCraft.CSCore.FluentExtensions.html#SilverCraft_CSCore_FluentExtensions_Synchronized__2___0_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TAudioSource
+  - name: ','
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - name: TAudioSource
+  - name: )
+- uid: SilverCraft.CSCore.FluentExtensions
+  commentId: T:SilverCraft.CSCore.FluentExtensions
+  parent: SilverCraft.CSCore
+  href: SilverCraft.CSCore.FluentExtensions.html
+  name: FluentExtensions
+  nameWithType: FluentExtensions
+  fullName: SilverCraft.CSCore.FluentExtensions
+- uid: SilverCraft.CSCore.TimeConverterFactory.Instance*
+  commentId: Overload:SilverCraft.CSCore.TimeConverterFactory.Instance
+  href: SilverCraft.CSCore.TimeConverterFactory.html#SilverCraft_CSCore_TimeConverterFactory_Instance
+  name: Instance
+  nameWithType: TimeConverterFactory.Instance
+  fullName: SilverCraft.CSCore.TimeConverterFactory.Instance
+- uid: SilverCraft.CSCore.TimeConverterFactory
+  commentId: T:SilverCraft.CSCore.TimeConverterFactory
+  parent: SilverCraft.CSCore
+  href: SilverCraft.CSCore.TimeConverterFactory.html
+  name: TimeConverterFactory
+  nameWithType: TimeConverterFactory
+  fullName: SilverCraft.CSCore.TimeConverterFactory
+- uid: SilverCraft.CSCore.IAudioSource
+  commentId: T:SilverCraft.CSCore.IAudioSource
+  parent: SilverCraft.CSCore
+  href: SilverCraft.CSCore.IAudioSource.html
+  name: IAudioSource
+  nameWithType: IAudioSource
+  fullName: SilverCraft.CSCore.IAudioSource
+- uid: SilverCraft.CSCore.TimeConverterFactory.GetTimeConverterForSourceType(System.Type)
+  commentId: M:SilverCraft.CSCore.TimeConverterFactory.GetTimeConverterForSourceType(System.Type)
+  isExternal: true
+  href: SilverCraft.CSCore.TimeConverterFactory.html#SilverCraft_CSCore_TimeConverterFactory_GetTimeConverterForSourceType_System_Type_
+  name: GetTimeConverterForSourceType(Type)
+  nameWithType: TimeConverterFactory.GetTimeConverterForSourceType(Type)
+  fullName: SilverCraft.CSCore.TimeConverterFactory.GetTimeConverterForSourceType(System.Type)
+  spec.csharp:
+  - uid: SilverCraft.CSCore.TimeConverterFactory.GetTimeConverterForSourceType(System.Type)
+    name: GetTimeConverterForSourceType
+    href: SilverCraft.CSCore.TimeConverterFactory.html#SilverCraft_CSCore_TimeConverterFactory_GetTimeConverterForSourceType_System_Type_
+  - name: (
+  - uid: System.Type
+    name: Type
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.type
+  - name: )
+  spec.vb:
+  - uid: SilverCraft.CSCore.TimeConverterFactory.GetTimeConverterForSourceType(System.Type)
+    name: GetTimeConverterForSourceType
+    href: SilverCraft.CSCore.TimeConverterFactory.html#SilverCraft_CSCore_TimeConverterFactory_GetTimeConverterForSourceType_System_Type_
+  - name: (
+  - uid: System.Type
+    name: Type
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.type
+  - name: )
+- uid: System.ArgumentNullException
+  commentId: T:System.ArgumentNullException
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.argumentnullexception
+  name: ArgumentNullException
+  nameWithType: ArgumentNullException
+  fullName: System.ArgumentNullException
+- uid: System.ArgumentException
+  commentId: T:System.ArgumentException
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.argumentexception
+  name: ArgumentException
+  nameWithType: ArgumentException
+  fullName: System.ArgumentException
+- uid: SilverCraft.CSCore.TimeConverterFactory.RegisterTimeConverterForSourceType*
+  commentId: Overload:SilverCraft.CSCore.TimeConverterFactory.RegisterTimeConverterForSourceType
+  href: SilverCraft.CSCore.TimeConverterFactory.html#SilverCraft_CSCore_TimeConverterFactory_RegisterTimeConverterForSourceType__1_SilverCraft_CSCore_TimeConverter_
+  name: RegisterTimeConverterForSourceType
+  nameWithType: TimeConverterFactory.RegisterTimeConverterForSourceType
+  fullName: SilverCraft.CSCore.TimeConverterFactory.RegisterTimeConverterForSourceType
+- uid: SilverCraft.CSCore.TimeConverterFactory.RegisterTimeConverterForSourceType``1(SilverCraft.CSCore.TimeConverter)
+  commentId: M:SilverCraft.CSCore.TimeConverterFactory.RegisterTimeConverterForSourceType``1(SilverCraft.CSCore.TimeConverter)
+  href: SilverCraft.CSCore.TimeConverterFactory.html#SilverCraft_CSCore_TimeConverterFactory_RegisterTimeConverterForSourceType__1_SilverCraft_CSCore_TimeConverter_
+  name: RegisterTimeConverterForSourceType<TSource>(TimeConverter)
+  nameWithType: TimeConverterFactory.RegisterTimeConverterForSourceType<TSource>(TimeConverter)
+  fullName: SilverCraft.CSCore.TimeConverterFactory.RegisterTimeConverterForSourceType<TSource>(SilverCraft.CSCore.TimeConverter)
+  nameWithType.vb: TimeConverterFactory.RegisterTimeConverterForSourceType(Of TSource)(TimeConverter)
+  fullName.vb: SilverCraft.CSCore.TimeConverterFactory.RegisterTimeConverterForSourceType(Of TSource)(SilverCraft.CSCore.TimeConverter)
+  name.vb: RegisterTimeConverterForSourceType(Of TSource)(TimeConverter)
+  spec.csharp:
+  - uid: SilverCraft.CSCore.TimeConverterFactory.RegisterTimeConverterForSourceType``1(SilverCraft.CSCore.TimeConverter)
+    name: RegisterTimeConverterForSourceType
+    href: SilverCraft.CSCore.TimeConverterFactory.html#SilverCraft_CSCore_TimeConverterFactory_RegisterTimeConverterForSourceType__1_SilverCraft_CSCore_TimeConverter_
+  - name: <
+  - name: TSource
+  - name: '>'
+  - name: (
+  - uid: SilverCraft.CSCore.TimeConverter
+    name: TimeConverter
+    href: SilverCraft.CSCore.TimeConverter.html
+  - name: )
+  spec.vb:
+  - uid: SilverCraft.CSCore.TimeConverterFactory.RegisterTimeConverterForSourceType``1(SilverCraft.CSCore.TimeConverter)
+    name: RegisterTimeConverterForSourceType
+    href: SilverCraft.CSCore.TimeConverterFactory.html#SilverCraft_CSCore_TimeConverterFactory_RegisterTimeConverterForSourceType__1_SilverCraft_CSCore_TimeConverter_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TSource
+  - name: )
+  - name: (
+  - uid: SilverCraft.CSCore.TimeConverter
+    name: TimeConverter
+    href: SilverCraft.CSCore.TimeConverter.html
+  - name: )
+- uid: SilverCraft.CSCore.TimeConverterFactory.UnregisterTimeConverter*
+  commentId: Overload:SilverCraft.CSCore.TimeConverterFactory.UnregisterTimeConverter
+  href: SilverCraft.CSCore.TimeConverterFactory.html#SilverCraft_CSCore_TimeConverterFactory_UnregisterTimeConverter__1
+  name: UnregisterTimeConverter
+  nameWithType: TimeConverterFactory.UnregisterTimeConverter
+  fullName: SilverCraft.CSCore.TimeConverterFactory.UnregisterTimeConverter
+- uid: SilverCraft.CSCore.TimeConverterAttribute
+  commentId: T:SilverCraft.CSCore.TimeConverterAttribute
+  href: SilverCraft.CSCore.TimeConverterAttribute.html
+  name: TimeConverterAttribute
+  nameWithType: TimeConverterAttribute
+  fullName: SilverCraft.CSCore.TimeConverterAttribute
+- uid: SilverCraft.CSCore.TimeConverterFactory.GetTimeConverterForSource``1(``0)
+  commentId: M:SilverCraft.CSCore.TimeConverterFactory.GetTimeConverterForSource``1(``0)
+  href: SilverCraft.CSCore.TimeConverterFactory.html#SilverCraft_CSCore_TimeConverterFactory_GetTimeConverterForSource__1___0_
+  name: GetTimeConverterForSource<TSource>(TSource)
+  nameWithType: TimeConverterFactory.GetTimeConverterForSource<TSource>(TSource)
+  fullName: SilverCraft.CSCore.TimeConverterFactory.GetTimeConverterForSource<TSource>(TSource)
+  nameWithType.vb: TimeConverterFactory.GetTimeConverterForSource(Of TSource)(TSource)
+  fullName.vb: SilverCraft.CSCore.TimeConverterFactory.GetTimeConverterForSource(Of TSource)(TSource)
+  name.vb: GetTimeConverterForSource(Of TSource)(TSource)
+  spec.csharp:
+  - uid: SilverCraft.CSCore.TimeConverterFactory.GetTimeConverterForSource``1(``0)
+    name: GetTimeConverterForSource
+    href: SilverCraft.CSCore.TimeConverterFactory.html#SilverCraft_CSCore_TimeConverterFactory_GetTimeConverterForSource__1___0_
+  - name: <
+  - name: TSource
+  - name: '>'
+  - name: (
+  - name: TSource
+  - name: )
+  spec.vb:
+  - uid: SilverCraft.CSCore.TimeConverterFactory.GetTimeConverterForSource``1(``0)
+    name: GetTimeConverterForSource
+    href: SilverCraft.CSCore.TimeConverterFactory.html#SilverCraft_CSCore_TimeConverterFactory_GetTimeConverterForSource__1___0_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TSource
+  - name: )
+  - name: (
+  - name: TSource
+  - name: )
+- uid: SilverCraft.CSCore.TimeConverterFactory.GetTimeConverterForSource*
+  commentId: Overload:SilverCraft.CSCore.TimeConverterFactory.GetTimeConverterForSource
+  href: SilverCraft.CSCore.TimeConverterFactory.html#SilverCraft_CSCore_TimeConverterFactory_GetTimeConverterForSource__1___0_
+  name: GetTimeConverterForSource
+  nameWithType: TimeConverterFactory.GetTimeConverterForSource
+  fullName: SilverCraft.CSCore.TimeConverterFactory.GetTimeConverterForSource
+- uid: '{TSource}'
+  commentId: '!:TSource'
+  definition: TSource
+  name: TSource
+  nameWithType: TSource
+  fullName: TSource
+- uid: TSource
+  commentId: '!:TSource'
+  name: TSource
+  nameWithType: TSource
+  fullName: TSource
+- uid: SilverCraft.CSCore.TimeConverterFactory.GetTimeConverterForSource``1
+  commentId: M:SilverCraft.CSCore.TimeConverterFactory.GetTimeConverterForSource``1
+  href: SilverCraft.CSCore.TimeConverterFactory.html#SilverCraft_CSCore_TimeConverterFactory_GetTimeConverterForSource__1
+  name: GetTimeConverterForSource<TSource>()
+  nameWithType: TimeConverterFactory.GetTimeConverterForSource<TSource>()
+  fullName: SilverCraft.CSCore.TimeConverterFactory.GetTimeConverterForSource<TSource>()
+  nameWithType.vb: TimeConverterFactory.GetTimeConverterForSource(Of TSource)()
+  fullName.vb: SilverCraft.CSCore.TimeConverterFactory.GetTimeConverterForSource(Of TSource)()
+  name.vb: GetTimeConverterForSource(Of TSource)()
+  spec.csharp:
+  - uid: SilverCraft.CSCore.TimeConverterFactory.GetTimeConverterForSource``1
+    name: GetTimeConverterForSource
+    href: SilverCraft.CSCore.TimeConverterFactory.html#SilverCraft_CSCore_TimeConverterFactory_GetTimeConverterForSource__1
+  - name: <
+  - name: TSource
+  - name: '>'
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: SilverCraft.CSCore.TimeConverterFactory.GetTimeConverterForSource``1
+    name: GetTimeConverterForSource
+    href: SilverCraft.CSCore.TimeConverterFactory.html#SilverCraft_CSCore_TimeConverterFactory_GetTimeConverterForSource__1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TSource
+  - name: )
+  - name: (
+  - name: )
+- uid: System.Type
+  commentId: T:System.Type
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.type
+  name: Type
+  nameWithType: Type
+  fullName: System.Type
+- uid: SilverCraft.CSCore.TimeConverterFactory.GetTimeConverterForSourceType*
+  commentId: Overload:SilverCraft.CSCore.TimeConverterFactory.GetTimeConverterForSourceType
+  href: SilverCraft.CSCore.TimeConverterFactory.html#SilverCraft_CSCore_TimeConverterFactory_GetTimeConverterForSourceType_System_Type_
+  name: GetTimeConverterForSourceType
+  nameWithType: TimeConverterFactory.GetTimeConverterForSourceType
+  fullName: SilverCraft.CSCore.TimeConverterFactory.GetTimeConverterForSourceType
+- uid: SilverCraft.CSCore.TimeConverterFactory.ClearCache*
+  commentId: Overload:SilverCraft.CSCore.TimeConverterFactory.ClearCache
+  href: SilverCraft.CSCore.TimeConverterFactory.html#SilverCraft_CSCore_TimeConverterFactory_ClearCache
+  name: ClearCache
+  nameWithType: TimeConverterFactory.ClearCache
+  fullName: SilverCraft.CSCore.TimeConverterFactory.ClearCache

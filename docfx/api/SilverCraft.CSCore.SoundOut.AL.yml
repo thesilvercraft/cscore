@@ -1,0 +1,140 @@
+### YamlMime:ManagedReference
+items:
+- uid: SilverCraft.CSCore.SoundOut.AL
+  commentId: N:SilverCraft.CSCore.SoundOut.AL
+  id: SilverCraft.CSCore.SoundOut.AL
+  children:
+  - SilverCraft.CSCore.SoundOut.AL.ALContext
+  - SilverCraft.CSCore.SoundOut.AL.ALContext.ContextLock
+  - SilverCraft.CSCore.SoundOut.AL.ALDevice
+  - SilverCraft.CSCore.SoundOut.AL.ALErrorCode
+  - SilverCraft.CSCore.SoundOut.AL.ALException
+  - SilverCraft.CSCore.SoundOut.AL.ALFormat
+  - SilverCraft.CSCore.SoundOut.AL.ALSource
+  - SilverCraft.CSCore.SoundOut.AL.ALSourceParameters
+  - SilverCraft.CSCore.SoundOut.AL.ALSourceState
+  langs:
+  - csharp
+  - vb
+  name: SilverCraft.CSCore.SoundOut.AL
+  nameWithType: SilverCraft.CSCore.SoundOut.AL
+  fullName: SilverCraft.CSCore.SoundOut.AL
+  type: Namespace
+  assemblies:
+  - SilverCraft.CSCore
+references:
+- uid: SilverCraft.CSCore.SoundOut.AL.ALContext
+  commentId: T:SilverCraft.CSCore.SoundOut.AL.ALContext
+  parent: SilverCraft.CSCore.SoundOut.AL
+  href: SilverCraft.CSCore.SoundOut.AL.ALContext.html
+  name: ALContext
+  nameWithType: ALContext
+  fullName: SilverCraft.CSCore.SoundOut.AL.ALContext
+- uid: SilverCraft.CSCore.SoundOut.AL.ALContext.ContextLock
+  commentId: T:SilverCraft.CSCore.SoundOut.AL.ALContext.ContextLock
+  parent: SilverCraft.CSCore.SoundOut.AL
+  href: SilverCraft.CSCore.SoundOut.AL.ALContext.html
+  name: ALContext.ContextLock
+  nameWithType: ALContext.ContextLock
+  fullName: SilverCraft.CSCore.SoundOut.AL.ALContext.ContextLock
+  spec.csharp:
+  - uid: SilverCraft.CSCore.SoundOut.AL.ALContext
+    name: ALContext
+    href: SilverCraft.CSCore.SoundOut.AL.ALContext.html
+  - name: .
+  - uid: SilverCraft.CSCore.SoundOut.AL.ALContext.ContextLock
+    name: ContextLock
+    href: SilverCraft.CSCore.SoundOut.AL.ALContext.ContextLock.html
+  spec.vb:
+  - uid: SilverCraft.CSCore.SoundOut.AL.ALContext
+    name: ALContext
+    href: SilverCraft.CSCore.SoundOut.AL.ALContext.html
+  - name: .
+  - uid: SilverCraft.CSCore.SoundOut.AL.ALContext.ContextLock
+    name: ContextLock
+    href: SilverCraft.CSCore.SoundOut.AL.ALContext.ContextLock.html
+- uid: SilverCraft.CSCore.SoundOut.AL.ALDevice
+  commentId: T:SilverCraft.CSCore.SoundOut.AL.ALDevice
+  parent: SilverCraft.CSCore.SoundOut.AL
+  href: SilverCraft.CSCore.SoundOut.AL.ALDevice.html
+  name: ALDevice
+  nameWithType: ALDevice
+  fullName: SilverCraft.CSCore.SoundOut.AL.ALDevice
+- uid: SilverCraft.CSCore.SoundOut.AL.ALErrorCode
+  commentId: T:SilverCraft.CSCore.SoundOut.AL.ALErrorCode
+  parent: SilverCraft.CSCore.SoundOut.AL
+  href: SilverCraft.CSCore.SoundOut.AL.ALErrorCode.html
+  name: ALErrorCode
+  nameWithType: ALErrorCode
+  fullName: SilverCraft.CSCore.SoundOut.AL.ALErrorCode
+- uid: SilverCraft.CSCore.SoundOut.AL.ALException
+  commentId: T:SilverCraft.CSCore.SoundOut.AL.ALException
+  href: SilverCraft.CSCore.SoundOut.AL.ALException.html
+  name: ALException
+  nameWithType: ALException
+  fullName: SilverCraft.CSCore.SoundOut.AL.ALException
+- uid: SilverCraft.CSCore.SoundOut.AL.ALFormat
+  commentId: T:SilverCraft.CSCore.SoundOut.AL.ALFormat
+  parent: SilverCraft.CSCore.SoundOut.AL
+  href: SilverCraft.CSCore.SoundOut.AL.ALFormat.html
+  name: ALFormat
+  nameWithType: ALFormat
+  fullName: SilverCraft.CSCore.SoundOut.AL.ALFormat
+- uid: SilverCraft.CSCore.SoundOut.AL.ALSource
+  commentId: T:SilverCraft.CSCore.SoundOut.AL.ALSource
+  href: SilverCraft.CSCore.SoundOut.AL.ALSource.html
+  name: ALSource
+  nameWithType: ALSource
+  fullName: SilverCraft.CSCore.SoundOut.AL.ALSource
+- uid: SilverCraft.CSCore.SoundOut.AL.ALSourceParameters
+  commentId: T:SilverCraft.CSCore.SoundOut.AL.ALSourceParameters
+  parent: SilverCraft.CSCore.SoundOut.AL
+  href: SilverCraft.CSCore.SoundOut.AL.ALSourceParameters.html
+  name: ALSourceParameters
+  nameWithType: ALSourceParameters
+  fullName: SilverCraft.CSCore.SoundOut.AL.ALSourceParameters
+- uid: SilverCraft.CSCore.SoundOut.AL.ALSourceState
+  commentId: T:SilverCraft.CSCore.SoundOut.AL.ALSourceState
+  parent: SilverCraft.CSCore.SoundOut.AL
+  href: SilverCraft.CSCore.SoundOut.AL.ALSourceState.html
+  name: ALSourceState
+  nameWithType: ALSourceState
+  fullName: SilverCraft.CSCore.SoundOut.AL.ALSourceState
+- uid: SilverCraft.CSCore.SoundOut.AL
+  commentId: N:SilverCraft.CSCore.SoundOut.AL
+  href: SilverCraft.html
+  name: SilverCraft.CSCore.SoundOut.AL
+  nameWithType: SilverCraft.CSCore.SoundOut.AL
+  fullName: SilverCraft.CSCore.SoundOut.AL
+  spec.csharp:
+  - uid: SilverCraft
+    name: SilverCraft
+    href: SilverCraft.html
+  - name: .
+  - uid: SilverCraft.CSCore
+    name: CSCore
+    href: SilverCraft.CSCore.html
+  - name: .
+  - uid: SilverCraft.CSCore.SoundOut
+    name: SoundOut
+    href: SilverCraft.CSCore.SoundOut.html
+  - name: .
+  - uid: SilverCraft.CSCore.SoundOut.AL
+    name: AL
+    href: SilverCraft.CSCore.SoundOut.AL.html
+  spec.vb:
+  - uid: SilverCraft
+    name: SilverCraft
+    href: SilverCraft.html
+  - name: .
+  - uid: SilverCraft.CSCore
+    name: CSCore
+    href: SilverCraft.CSCore.html
+  - name: .
+  - uid: SilverCraft.CSCore.SoundOut
+    name: SoundOut
+    href: SilverCraft.CSCore.SoundOut.html
+  - name: .
+  - uid: SilverCraft.CSCore.SoundOut.AL
+    name: AL
+    href: SilverCraft.CSCore.SoundOut.AL.html

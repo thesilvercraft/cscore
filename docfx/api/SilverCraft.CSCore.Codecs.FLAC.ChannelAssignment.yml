@@ -1,0 +1,192 @@
+### YamlMime:ManagedReference
+items:
+- uid: SilverCraft.CSCore.Codecs.FLAC.ChannelAssignment
+  commentId: T:SilverCraft.CSCore.Codecs.FLAC.ChannelAssignment
+  id: ChannelAssignment
+  parent: SilverCraft.CSCore.Codecs.FLAC
+  children:
+  - SilverCraft.CSCore.Codecs.FLAC.ChannelAssignment.Independent
+  - SilverCraft.CSCore.Codecs.FLAC.ChannelAssignment.LeftSide
+  - SilverCraft.CSCore.Codecs.FLAC.ChannelAssignment.MidSide
+  - SilverCraft.CSCore.Codecs.FLAC.ChannelAssignment.RightSide
+  langs:
+  - csharp
+  - vb
+  name: ChannelAssignment
+  nameWithType: ChannelAssignment
+  fullName: SilverCraft.CSCore.Codecs.FLAC.ChannelAssignment
+  type: Enum
+  source:
+    remote:
+      path: SilverCraft.CSCore/Codecs/FLAC/ChannelAssignment.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: ChannelAssignment
+    path: ../SilverCraft.CSCore/Codecs/FLAC/ChannelAssignment.cs
+    startLine: 6
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Codecs.FLAC
+  summary: Defines the channel assignments.
+  example: []
+  syntax:
+    content: public enum ChannelAssignment
+    content.vb: Public Enum ChannelAssignment
+- uid: SilverCraft.CSCore.Codecs.FLAC.ChannelAssignment.Independent
+  commentId: F:SilverCraft.CSCore.Codecs.FLAC.ChannelAssignment.Independent
+  id: Independent
+  parent: SilverCraft.CSCore.Codecs.FLAC.ChannelAssignment
+  langs:
+  - csharp
+  - vb
+  name: Independent
+  nameWithType: ChannelAssignment.Independent
+  fullName: SilverCraft.CSCore.Codecs.FLAC.ChannelAssignment.Independent
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/Codecs/FLAC/ChannelAssignment.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: Independent
+    path: ../SilverCraft.CSCore/Codecs/FLAC/ChannelAssignment.cs
+    startLine: 11
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Codecs.FLAC
+  summary: Independent assignment.
+  example: []
+  syntax:
+    content: Independent = 0
+    return:
+      type: SilverCraft.CSCore.Codecs.FLAC.ChannelAssignment
+- uid: SilverCraft.CSCore.Codecs.FLAC.ChannelAssignment.LeftSide
+  commentId: F:SilverCraft.CSCore.Codecs.FLAC.ChannelAssignment.LeftSide
+  id: LeftSide
+  parent: SilverCraft.CSCore.Codecs.FLAC.ChannelAssignment
+  langs:
+  - csharp
+  - vb
+  name: LeftSide
+  nameWithType: ChannelAssignment.LeftSide
+  fullName: SilverCraft.CSCore.Codecs.FLAC.ChannelAssignment.LeftSide
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/Codecs/FLAC/ChannelAssignment.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: LeftSide
+    path: ../SilverCraft.CSCore/Codecs/FLAC/ChannelAssignment.cs
+    startLine: 15
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Codecs.FLAC
+  summary: Left/side stereo. Channel 0 becomes the left channel while channel 1 becomes the side channel.
+  example: []
+  syntax:
+    content: LeftSide = 1
+    return:
+      type: SilverCraft.CSCore.Codecs.FLAC.ChannelAssignment
+- uid: SilverCraft.CSCore.Codecs.FLAC.ChannelAssignment.RightSide
+  commentId: F:SilverCraft.CSCore.Codecs.FLAC.ChannelAssignment.RightSide
+  id: RightSide
+  parent: SilverCraft.CSCore.Codecs.FLAC.ChannelAssignment
+  langs:
+  - csharp
+  - vb
+  name: RightSide
+  nameWithType: ChannelAssignment.RightSide
+  fullName: SilverCraft.CSCore.Codecs.FLAC.ChannelAssignment.RightSide
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/Codecs/FLAC/ChannelAssignment.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: RightSide
+    path: ../SilverCraft.CSCore/Codecs/FLAC/ChannelAssignment.cs
+    startLine: 19
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Codecs.FLAC
+  summary: Right/side stereo. Channel 0 becomes the right channel while channel 1 becomes the side channel.
+  example: []
+  syntax:
+    content: RightSide = 2
+    return:
+      type: SilverCraft.CSCore.Codecs.FLAC.ChannelAssignment
+- uid: SilverCraft.CSCore.Codecs.FLAC.ChannelAssignment.MidSide
+  commentId: F:SilverCraft.CSCore.Codecs.FLAC.ChannelAssignment.MidSide
+  id: MidSide
+  parent: SilverCraft.CSCore.Codecs.FLAC.ChannelAssignment
+  langs:
+  - csharp
+  - vb
+  name: MidSide
+  nameWithType: ChannelAssignment.MidSide
+  fullName: SilverCraft.CSCore.Codecs.FLAC.ChannelAssignment.MidSide
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/Codecs/FLAC/ChannelAssignment.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: MidSide
+    path: ../SilverCraft.CSCore/Codecs/FLAC/ChannelAssignment.cs
+    startLine: 23
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Codecs.FLAC
+  summary: Mid/side stereo. Channel 0 becomes the mid channel while channel 1 becomes the side channel.
+  example: []
+  syntax:
+    content: MidSide = 3
+    return:
+      type: SilverCraft.CSCore.Codecs.FLAC.ChannelAssignment
+references:
+- uid: SilverCraft.CSCore.Codecs.FLAC
+  commentId: N:SilverCraft.CSCore.Codecs.FLAC
+  href: SilverCraft.html
+  name: SilverCraft.CSCore.Codecs.FLAC
+  nameWithType: SilverCraft.CSCore.Codecs.FLAC
+  fullName: SilverCraft.CSCore.Codecs.FLAC
+  spec.csharp:
+  - uid: SilverCraft
+    name: SilverCraft
+    href: SilverCraft.html
+  - name: .
+  - uid: SilverCraft.CSCore
+    name: CSCore
+    href: SilverCraft.CSCore.html
+  - name: .
+  - uid: SilverCraft.CSCore.Codecs
+    name: Codecs
+    href: SilverCraft.CSCore.Codecs.html
+  - name: .
+  - uid: SilverCraft.CSCore.Codecs.FLAC
+    name: FLAC
+    href: SilverCraft.CSCore.Codecs.FLAC.html
+  spec.vb:
+  - uid: SilverCraft
+    name: SilverCraft
+    href: SilverCraft.html
+  - name: .
+  - uid: SilverCraft.CSCore
+    name: CSCore
+    href: SilverCraft.CSCore.html
+  - name: .
+  - uid: SilverCraft.CSCore.Codecs
+    name: Codecs
+    href: SilverCraft.CSCore.Codecs.html
+  - name: .
+  - uid: SilverCraft.CSCore.Codecs.FLAC
+    name: FLAC
+    href: SilverCraft.CSCore.Codecs.FLAC.html
+- uid: SilverCraft.CSCore.Codecs.FLAC.ChannelAssignment
+  commentId: T:SilverCraft.CSCore.Codecs.FLAC.ChannelAssignment
+  parent: SilverCraft.CSCore.Codecs.FLAC
+  href: SilverCraft.CSCore.Codecs.FLAC.ChannelAssignment.html
+  name: ChannelAssignment
+  nameWithType: ChannelAssignment
+  fullName: SilverCraft.CSCore.Codecs.FLAC.ChannelAssignment

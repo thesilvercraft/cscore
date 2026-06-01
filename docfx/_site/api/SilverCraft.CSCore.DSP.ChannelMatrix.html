@@ -1,0 +1,1314 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class ChannelMatrix | SilverCraft.CSCore </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class ChannelMatrix | SilverCraft.CSCore ">
+      
+      <meta name="description" content="Represents a channel conversion matrix. For more information, see http://msdn.microsoft.com/en-us/library/windows/desktop/ff819070(v=vs.85).aspx.">
+      <link rel="icon" href="../images/cscore-square-notext.svg">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/thesilvercraft/cscore/new/master/apiSpec/new?filename=SilverCraft_CSCore_DSP_ChannelMatrix.md&amp;value=---%0Auid%3A%20SilverCraft.CSCore.DSP.ChannelMatrix%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../images/cscore-square-notext.svg" alt="SilverCraft.CSCore">
+            SilverCraft.CSCore
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="SilverCraft.CSCore.DSP.ChannelMatrix">
+
+
+
+  <h1 id="SilverCraft_CSCore_DSP_ChannelMatrix" data-uid="SilverCraft.CSCore.DSP.ChannelMatrix" class="text-break">
+Class ChannelMatrix  <a class="header-action link-secondary" title="View source" href="https://github.com/thesilvercraft/cscore/blob/master/SilverCraft.CSCore/DSP/ChannelMatrix.cs/#L11"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="SilverCraft.html">SilverCraft</a>.<a class="xref" href="SilverCraft.CSCore.html">CSCore</a>.<a class="xref" href="SilverCraft.CSCore.DSP.html">DSP</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>SilverCraft.CSCore.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>Represents a channel conversion matrix. For more information, see
+<a href="http://msdn.microsoft.com/en-us/library/windows/desktop/ff819070(v=vs.85).aspx">http://msdn.microsoft.com/en-us/library/windows/desktop/ff819070(v=vs.85).aspx</a>.</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class ChannelMatrix</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">ChannelMatrix</span></div>
+    </dd>
+  </dl>
+
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+  </dd></dl>
+
+  <dl class="typelist extensionMethods">
+    <dt>Extension Methods</dt>
+    <dd>
+  <div>
+      <a class="xref" href="SilverCraft.CSCore.FluentExtensions.html#SilverCraft_CSCore_FluentExtensions_Synchronized__2___0_">FluentExtensions.Synchronized&lt;TAudioSource, T&gt;(TAudioSource)</a>
+  </div>
+  </dd></dl>
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="SilverCraft_CSCore_DSP_ChannelMatrix__ctor_" data-uid="SilverCraft.CSCore.DSP.ChannelMatrix.#ctor*"></a>
+
+  <h3 id="SilverCraft_CSCore_DSP_ChannelMatrix__ctor_SilverCraft_CSCore_ChannelMask_SilverCraft_CSCore_ChannelMask_" data-uid="SilverCraft.CSCore.DSP.ChannelMatrix.#ctor(SilverCraft.CSCore.ChannelMask,SilverCraft.CSCore.ChannelMask)">
+  ChannelMatrix(ChannelMask, ChannelMask)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/thesilvercraft/cscore/blob/master/SilverCraft.CSCore/DSP/ChannelMatrix.cs/#L342"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="SilverCraft.CSCore.DSP.ChannelMatrix.html">ChannelMatrix</a> class.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ChannelMatrix(ChannelMask inputMask, ChannelMask outputMask)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>inputMask</code> <a class="xref" href="SilverCraft.CSCore.ChannelMask.html">ChannelMask</a></dt>
+    <dd><p>The <a class="xref" href="SilverCraft.CSCore.ChannelMask.html">ChannelMask</a> of the input signal.</p>
+</dd>
+    <dt><code>outputMask</code> <a class="xref" href="SilverCraft.CSCore.ChannelMask.html">ChannelMask</a></dt>
+    <dd><p>The <a class="xref" href="SilverCraft.CSCore.ChannelMask.html">ChannelMask</a> of the output signal.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentexception">ArgumentException</a></dt>
+    <dd><p>Invalid <code class="paramref">inputMask</code>/<code class="paramref">outputMask</code>.</p>
+</dd>
+  </dl>
+
+
+
+  <h2 class="section" id="fields">Fields
+</h2>
+
+
+
+  <h3 id="SilverCraft_CSCore_DSP_ChannelMatrix_FiveDotOneSurroundWithRearToMono" data-uid="SilverCraft.CSCore.DSP.ChannelMatrix.FiveDotOneSurroundWithRearToMono">
+  FiveDotOneSurroundWithRearToMono
+  <a class="header-action link-secondary" title="View source" href="https://github.com/thesilvercraft/cscore/blob/master/SilverCraft.CSCore/DSP/ChannelMatrix.cs/#L53"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Defines a 5.1 surround (with rear) to mono channel conversion matrix.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly ChannelMatrix FiveDotOneSurroundWithRearToMono</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="SilverCraft.CSCore.DSP.ChannelMatrix.html">ChannelMatrix</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="SilverCraft_CSCore_DSP_ChannelMatrix_FiveDotOneSurroundWithRearToSevenDotOne" data-uid="SilverCraft.CSCore.DSP.ChannelMatrix.FiveDotOneSurroundWithRearToSevenDotOne">
+  FiveDotOneSurroundWithRearToSevenDotOne
+  <a class="header-action link-secondary" title="View source" href="https://github.com/thesilvercraft/cscore/blob/master/SilverCraft.CSCore/DSP/ChannelMatrix.cs/#L89"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Defines a 5.1 surround (with rear) to 7.1 surround channel conversion matrix.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly ChannelMatrix FiveDotOneSurroundWithRearToSevenDotOne</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="SilverCraft.CSCore.DSP.ChannelMatrix.html">ChannelMatrix</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="SilverCraft_CSCore_DSP_ChannelMatrix_FiveDotOneSurroundWithRearToStereo" data-uid="SilverCraft.CSCore.DSP.ChannelMatrix.FiveDotOneSurroundWithRearToStereo">
+  FiveDotOneSurroundWithRearToStereo
+  <a class="header-action link-secondary" title="View source" href="https://github.com/thesilvercraft/cscore/blob/master/SilverCraft.CSCore/DSP/ChannelMatrix.cs/#L21"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Defines a 5.1 surround (with rear) to stereo channel conversion matrix.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly ChannelMatrix FiveDotOneSurroundWithRearToStereo</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="SilverCraft.CSCore.DSP.ChannelMatrix.html">ChannelMatrix</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="SilverCraft_CSCore_DSP_ChannelMatrix_FiveDotOneSurroundWithSideToMono" data-uid="SilverCraft.CSCore.DSP.ChannelMatrix.FiveDotOneSurroundWithSideToMono">
+  FiveDotOneSurroundWithSideToMono
+  <a class="header-action link-secondary" title="View source" href="https://github.com/thesilvercraft/cscore/blob/master/SilverCraft.CSCore/DSP/ChannelMatrix.cs/#L64"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Defines a 5.1 surround (with side) to mono channel conversion matrix.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly ChannelMatrix FiveDotOneSurroundWithSideToMono</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="SilverCraft.CSCore.DSP.ChannelMatrix.html">ChannelMatrix</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="SilverCraft_CSCore_DSP_ChannelMatrix_FiveDotOneSurroundWithSideToSevenDotOne" data-uid="SilverCraft.CSCore.DSP.ChannelMatrix.FiveDotOneSurroundWithSideToSevenDotOne">
+  FiveDotOneSurroundWithSideToSevenDotOne
+  <a class="header-action link-secondary" title="View source" href="https://github.com/thesilvercraft/cscore/blob/master/SilverCraft.CSCore/DSP/ChannelMatrix.cs/#L99"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Defines a 5.1 surround (with side) to 7.1 surround channel conversion matrix.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly ChannelMatrix FiveDotOneSurroundWithSideToSevenDotOne</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="SilverCraft.CSCore.DSP.ChannelMatrix.html">ChannelMatrix</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="SilverCraft_CSCore_DSP_ChannelMatrix_FiveDotOneSurroundWithSideToStereo" data-uid="SilverCraft.CSCore.DSP.ChannelMatrix.FiveDotOneSurroundWithSideToStereo">
+  FiveDotOneSurroundWithSideToStereo
+  <a class="header-action link-secondary" title="View source" href="https://github.com/thesilvercraft/cscore/blob/master/SilverCraft.CSCore/DSP/ChannelMatrix.cs/#L31"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Defines a 5.1 surround (with side) to stereo channel conversion matrix.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly ChannelMatrix FiveDotOneSurroundWithSideToStereo</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="SilverCraft.CSCore.DSP.ChannelMatrix.html">ChannelMatrix</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="SilverCraft_CSCore_DSP_ChannelMatrix_MonoToFiveDotOneSurroundWithRear" data-uid="SilverCraft.CSCore.DSP.ChannelMatrix.MonoToFiveDotOneSurroundWithRear">
+  MonoToFiveDotOneSurroundWithRear
+  <a class="header-action link-secondary" title="View source" href="https://github.com/thesilvercraft/cscore/blob/master/SilverCraft.CSCore/DSP/ChannelMatrix.cs/#L48"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Defines a mono to 5.1 surround (with rear) channel conversion matrix.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly ChannelMatrix MonoToFiveDotOneSurroundWithRear</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="SilverCraft.CSCore.DSP.ChannelMatrix.html">ChannelMatrix</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="SilverCraft_CSCore_DSP_ChannelMatrix_MonoToFiveDotOneSurroundWithSide" data-uid="SilverCraft.CSCore.DSP.ChannelMatrix.MonoToFiveDotOneSurroundWithSide">
+  MonoToFiveDotOneSurroundWithSide
+  <a class="header-action link-secondary" title="View source" href="https://github.com/thesilvercraft/cscore/blob/master/SilverCraft.CSCore/DSP/ChannelMatrix.cs/#L59"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Defines a mono to 5.1 surround (with side) channel conversion matrix.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly ChannelMatrix MonoToFiveDotOneSurroundWithSide</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="SilverCraft.CSCore.DSP.ChannelMatrix.html">ChannelMatrix</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="SilverCraft_CSCore_DSP_ChannelMatrix_MonoToSevenDotOneSurround" data-uid="SilverCraft.CSCore.DSP.ChannelMatrix.MonoToSevenDotOneSurround">
+  MonoToSevenDotOneSurround
+  <a class="header-action link-secondary" title="View source" href="https://github.com/thesilvercraft/cscore/blob/master/SilverCraft.CSCore/DSP/ChannelMatrix.cs/#L69"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Defines a mono to 7.1 surround channel conversion matrix.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly ChannelMatrix MonoToSevenDotOneSurround</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="SilverCraft.CSCore.DSP.ChannelMatrix.html">ChannelMatrix</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="SilverCraft_CSCore_DSP_ChannelMatrix_MonoToStereoMatrix" data-uid="SilverCraft.CSCore.DSP.ChannelMatrix.MonoToStereoMatrix">
+  MonoToStereoMatrix
+  <a class="header-action link-secondary" title="View source" href="https://github.com/thesilvercraft/cscore/blob/master/SilverCraft.CSCore/DSP/ChannelMatrix.cs/#L84"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Defines a mono to stereo conversion matrix.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly ChannelMatrix MonoToStereoMatrix</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="SilverCraft.CSCore.DSP.ChannelMatrix.html">ChannelMatrix</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="SilverCraft_CSCore_DSP_ChannelMatrix_QuadraphonicToStereo" data-uid="SilverCraft.CSCore.DSP.ChannelMatrix.QuadraphonicToStereo">
+  QuadraphonicToStereo
+  <a class="header-action link-secondary" title="View source" href="https://github.com/thesilvercraft/cscore/blob/master/SilverCraft.CSCore/DSP/ChannelMatrix.cs/#L109"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Defines a quadraphonic to stereo channel conversion matrix.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly ChannelMatrix QuadraphonicToStereo</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="SilverCraft.CSCore.DSP.ChannelMatrix.html">ChannelMatrix</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="SilverCraft_CSCore_DSP_ChannelMatrix_SevenDotOneSurroundToFiveDotOneSurroundWithRear" data-uid="SilverCraft.CSCore.DSP.ChannelMatrix.SevenDotOneSurroundToFiveDotOneSurroundWithRear">
+  SevenDotOneSurroundToFiveDotOneSurroundWithRear
+  <a class="header-action link-secondary" title="View source" href="https://github.com/thesilvercraft/cscore/blob/master/SilverCraft.CSCore/DSP/ChannelMatrix.cs/#L94"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Defines a 7.1 surround to 5.1 surround (with rear) channel conversion matrix</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly ChannelMatrix SevenDotOneSurroundToFiveDotOneSurroundWithRear</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="SilverCraft.CSCore.DSP.ChannelMatrix.html">ChannelMatrix</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="SilverCraft_CSCore_DSP_ChannelMatrix_SevenDotOneSurroundToFiveDotOneSurroundWithSide" data-uid="SilverCraft.CSCore.DSP.ChannelMatrix.SevenDotOneSurroundToFiveDotOneSurroundWithSide">
+  SevenDotOneSurroundToFiveDotOneSurroundWithSide
+  <a class="header-action link-secondary" title="View source" href="https://github.com/thesilvercraft/cscore/blob/master/SilverCraft.CSCore/DSP/ChannelMatrix.cs/#L104"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Defines a 7.1 surround to 5.1 surround (with side) channel conversion matrix</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly ChannelMatrix SevenDotOneSurroundToFiveDotOneSurroundWithSide</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="SilverCraft.CSCore.DSP.ChannelMatrix.html">ChannelMatrix</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="SilverCraft_CSCore_DSP_ChannelMatrix_SevenDotOneSurroundToMono" data-uid="SilverCraft.CSCore.DSP.ChannelMatrix.SevenDotOneSurroundToMono">
+  SevenDotOneSurroundToMono
+  <a class="header-action link-secondary" title="View source" href="https://github.com/thesilvercraft/cscore/blob/master/SilverCraft.CSCore/DSP/ChannelMatrix.cs/#L74"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Defines a 7.1 surround channel to mono conversion matrix.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly ChannelMatrix SevenDotOneSurroundToMono</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="SilverCraft.CSCore.DSP.ChannelMatrix.html">ChannelMatrix</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="SilverCraft_CSCore_DSP_ChannelMatrix_SevenDotOneSurroundToStereo" data-uid="SilverCraft.CSCore.DSP.ChannelMatrix.SevenDotOneSurroundToStereo">
+  SevenDotOneSurroundToStereo
+  <a class="header-action link-secondary" title="View source" href="https://github.com/thesilvercraft/cscore/blob/master/SilverCraft.CSCore/DSP/ChannelMatrix.cs/#L41"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Defines a 7.1 surround to stereo channel conversion matrix.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly ChannelMatrix SevenDotOneSurroundToStereo</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="SilverCraft.CSCore.DSP.ChannelMatrix.html">ChannelMatrix</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="SilverCraft_CSCore_DSP_ChannelMatrix_StereoToFiveDotOneSurroundWithRear" data-uid="SilverCraft.CSCore.DSP.ChannelMatrix.StereoToFiveDotOneSurroundWithRear">
+  StereoToFiveDotOneSurroundWithRear
+  <a class="header-action link-secondary" title="View source" href="https://github.com/thesilvercraft/cscore/blob/master/SilverCraft.CSCore/DSP/ChannelMatrix.cs/#L16"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Defines a stereo to 5.1 surround (with rear) channel conversion matrix.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly ChannelMatrix StereoToFiveDotOneSurroundWithRear</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="SilverCraft.CSCore.DSP.ChannelMatrix.html">ChannelMatrix</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="SilverCraft_CSCore_DSP_ChannelMatrix_StereoToFiveDotOneSurroundWithSide" data-uid="SilverCraft.CSCore.DSP.ChannelMatrix.StereoToFiveDotOneSurroundWithSide">
+  StereoToFiveDotOneSurroundWithSide
+  <a class="header-action link-secondary" title="View source" href="https://github.com/thesilvercraft/cscore/blob/master/SilverCraft.CSCore/DSP/ChannelMatrix.cs/#L26"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Defines a stereo to 5.1 surround (with side) channel conversion matrix.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly ChannelMatrix StereoToFiveDotOneSurroundWithSide</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="SilverCraft.CSCore.DSP.ChannelMatrix.html">ChannelMatrix</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="SilverCraft_CSCore_DSP_ChannelMatrix_StereoToMonoMatrix" data-uid="SilverCraft.CSCore.DSP.ChannelMatrix.StereoToMonoMatrix">
+  StereoToMonoMatrix
+  <a class="header-action link-secondary" title="View source" href="https://github.com/thesilvercraft/cscore/blob/master/SilverCraft.CSCore/DSP/ChannelMatrix.cs/#L79"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Defines a stereo to mono conversion matrix.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly ChannelMatrix StereoToMonoMatrix</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="SilverCraft.CSCore.DSP.ChannelMatrix.html">ChannelMatrix</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="SilverCraft_CSCore_DSP_ChannelMatrix_StereoToQuadraphonic" data-uid="SilverCraft.CSCore.DSP.ChannelMatrix.StereoToQuadraphonic">
+  StereoToQuadraphonic
+  <a class="header-action link-secondary" title="View source" href="https://github.com/thesilvercraft/cscore/blob/master/SilverCraft.CSCore/DSP/ChannelMatrix.cs/#L114"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Defines a stereo to quadraphonic channel conversion matrix.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly ChannelMatrix StereoToQuadraphonic</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="SilverCraft.CSCore.DSP.ChannelMatrix.html">ChannelMatrix</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="SilverCraft_CSCore_DSP_ChannelMatrix_StereoToSevenDotOneSurround" data-uid="SilverCraft.CSCore.DSP.ChannelMatrix.StereoToSevenDotOneSurround">
+  StereoToSevenDotOneSurround
+  <a class="header-action link-secondary" title="View source" href="https://github.com/thesilvercraft/cscore/blob/master/SilverCraft.CSCore/DSP/ChannelMatrix.cs/#L36"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Defines a stereo to 7.1 surround channel conversion matrix.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly ChannelMatrix StereoToSevenDotOneSurround</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="SilverCraft.CSCore.DSP.ChannelMatrix.html">ChannelMatrix</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="SilverCraft_CSCore_DSP_ChannelMatrix_Height_" data-uid="SilverCraft.CSCore.DSP.ChannelMatrix.Height*"></a>
+
+  <h3 id="SilverCraft_CSCore_DSP_ChannelMatrix_Height" data-uid="SilverCraft.CSCore.DSP.ChannelMatrix.Height">
+  Height
+  <a class="header-action link-secondary" title="View source" href="https://github.com/thesilvercraft/cscore/blob/master/SilverCraft.CSCore/DSP/ChannelMatrix.cs/#L378"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the number of rows of the channel conversion matrix.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int Height { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="SilverCraft_CSCore_DSP_ChannelMatrix_InputChannelCount_" data-uid="SilverCraft.CSCore.DSP.ChannelMatrix.InputChannelCount*"></a>
+
+  <h3 id="SilverCraft_CSCore_DSP_ChannelMatrix_InputChannelCount" data-uid="SilverCraft.CSCore.DSP.ChannelMatrix.InputChannelCount">
+  InputChannelCount
+  <a class="header-action link-secondary" title="View source" href="https://github.com/thesilvercraft/cscore/blob/master/SilverCraft.CSCore/DSP/ChannelMatrix.cs/#L392"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the input signals number of channels.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int InputChannelCount { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+  <h4 class="section" id="SilverCraft_CSCore_DSP_ChannelMatrix_InputChannelCount_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>The <a class="xref" href="SilverCraft.CSCore.DSP.ChannelMatrix.html#SilverCraft_CSCore_DSP_ChannelMatrix_InputChannelCount">InputChannelCount</a> property always returns the same value as the <a class="xref" href="SilverCraft.CSCore.DSP.ChannelMatrix.html#SilverCraft_CSCore_DSP_ChannelMatrix_Height">Height</a>
+property.</p>
+</div>
+
+
+
+
+  <a id="SilverCraft_CSCore_DSP_ChannelMatrix_InputMask_" data-uid="SilverCraft.CSCore.DSP.ChannelMatrix.InputMask*"></a>
+
+  <h3 id="SilverCraft_CSCore_DSP_ChannelMatrix_InputMask" data-uid="SilverCraft.CSCore.DSP.ChannelMatrix.InputMask">
+  InputMask
+  <a class="header-action link-secondary" title="View source" href="https://github.com/thesilvercraft/cscore/blob/master/SilverCraft.CSCore/DSP/ChannelMatrix.cs/#L368"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the <a class="xref" href="SilverCraft.CSCore.ChannelMask.html">ChannelMask</a> of the input signal.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ChannelMask InputMask { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="SilverCraft.CSCore.ChannelMask.html">ChannelMask</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="SilverCraft_CSCore_DSP_ChannelMatrix_Item_" data-uid="SilverCraft.CSCore.DSP.ChannelMatrix.Item*"></a>
+
+  <h3 id="SilverCraft_CSCore_DSP_ChannelMatrix_Item_System_Int32_System_Int32_" data-uid="SilverCraft.CSCore.DSP.ChannelMatrix.Item(System.Int32,System.Int32)">
+  this[int, int]
+  <a class="header-action link-secondary" title="View source" href="https://github.com/thesilvercraft/cscore/blob/master/SilverCraft.CSCore/DSP/ChannelMatrix.cs/#L409"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets or sets a <a class="xref" href="SilverCraft.CSCore.DSP.ChannelMatrixElement.html">ChannelMatrixElement</a> of the <a class="xref" href="SilverCraft.CSCore.DSP.ChannelMatrix.html">ChannelMatrix</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ChannelMatrixElement this[int input, int output] { get; set; }</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>input</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The zero-based index of the input channel.</p>
+</dd>
+    <dt><code>output</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The zero-based index of the output channel.</p>
+</dd>
+  </dl>
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="SilverCraft.CSCore.DSP.ChannelMatrixElement.html">ChannelMatrixElement</a></dt>
+    <dd><p>The <a class="xref" href="SilverCraft.CSCore.DSP.ChannelMatrixElement.html">ChannelMatrixElement</a> of the <a class="xref" href="SilverCraft.CSCore.DSP.ChannelMatrix.html">ChannelMatrix</a> at the specified position.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="SilverCraft_CSCore_DSP_ChannelMatrix_OutputChannelCount_" data-uid="SilverCraft.CSCore.DSP.ChannelMatrix.OutputChannelCount*"></a>
+
+  <h3 id="SilverCraft_CSCore_DSP_ChannelMatrix_OutputChannelCount" data-uid="SilverCraft.CSCore.DSP.ChannelMatrix.OutputChannelCount">
+  OutputChannelCount
+  <a class="header-action link-secondary" title="View source" href="https://github.com/thesilvercraft/cscore/blob/master/SilverCraft.CSCore/DSP/ChannelMatrix.cs/#L401"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the output signals number of channels.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int OutputChannelCount { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+  <h4 class="section" id="SilverCraft_CSCore_DSP_ChannelMatrix_OutputChannelCount_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>The <a class="xref" href="SilverCraft.CSCore.DSP.ChannelMatrix.html#SilverCraft_CSCore_DSP_ChannelMatrix_OutputChannelCount">OutputChannelCount</a> property always returns the same value as the <a class="xref" href="SilverCraft.CSCore.DSP.ChannelMatrix.html#SilverCraft_CSCore_DSP_ChannelMatrix_Width">Width</a>
+property.</p>
+</div>
+
+
+
+
+  <a id="SilverCraft_CSCore_DSP_ChannelMatrix_OutputMask_" data-uid="SilverCraft.CSCore.DSP.ChannelMatrix.OutputMask*"></a>
+
+  <h3 id="SilverCraft_CSCore_DSP_ChannelMatrix_OutputMask" data-uid="SilverCraft.CSCore.DSP.ChannelMatrix.OutputMask">
+  OutputMask
+  <a class="header-action link-secondary" title="View source" href="https://github.com/thesilvercraft/cscore/blob/master/SilverCraft.CSCore/DSP/ChannelMatrix.cs/#L373"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the <a class="xref" href="SilverCraft.CSCore.ChannelMask.html">ChannelMask</a> of the output signal.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ChannelMask OutputMask { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="SilverCraft.CSCore.ChannelMask.html">ChannelMask</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="SilverCraft_CSCore_DSP_ChannelMatrix_Width_" data-uid="SilverCraft.CSCore.DSP.ChannelMatrix.Width*"></a>
+
+  <h3 id="SilverCraft_CSCore_DSP_ChannelMatrix_Width" data-uid="SilverCraft.CSCore.DSP.ChannelMatrix.Width">
+  Width
+  <a class="header-action link-secondary" title="View source" href="https://github.com/thesilvercraft/cscore/blob/master/SilverCraft.CSCore/DSP/ChannelMatrix.cs/#L383"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the number of columns of the channel conversion matrix.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int Width { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="SilverCraft_CSCore_DSP_ChannelMatrix_Flip_" data-uid="SilverCraft.CSCore.DSP.ChannelMatrix.Flip*"></a>
+
+  <h3 id="SilverCraft_CSCore_DSP_ChannelMatrix_Flip" data-uid="SilverCraft.CSCore.DSP.ChannelMatrix.Flip">
+  Flip()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/thesilvercraft/cscore/blob/master/SilverCraft.CSCore/DSP/ChannelMatrix.cs/#L466"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Flips the axis of the matrix and returns the new matrix with the flipped axis.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ChannelMatrix Flip()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="SilverCraft.CSCore.DSP.ChannelMatrix.html">ChannelMatrix</a></dt>
+    <dd><p>A matrix with flipped axis.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="SilverCraft_CSCore_DSP_ChannelMatrix_Flip_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>This could be typically used in the following scenario: There is a
+5.1 to stereo matrix. By using the <a class="xref" href="SilverCraft.CSCore.DSP.ChannelMatrix.html#SilverCraft_CSCore_DSP_ChannelMatrix_Flip">Flip()</a> method the 5.1 to stereo matrix can be
+converted into a stereo to 5.1 matrix.</p>
+</div>
+
+
+
+
+  <a id="SilverCraft_CSCore_DSP_ChannelMatrix_GetMatrix_" data-uid="SilverCraft.CSCore.DSP.ChannelMatrix.GetMatrix*"></a>
+
+  <h3 id="SilverCraft_CSCore_DSP_ChannelMatrix_GetMatrix_SilverCraft_CSCore_ChannelMask_SilverCraft_CSCore_ChannelMask_" data-uid="SilverCraft.CSCore.DSP.ChannelMatrix.GetMatrix(SilverCraft.CSCore.ChannelMask,SilverCraft.CSCore.ChannelMask)">
+  GetMatrix(ChannelMask, ChannelMask)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/thesilvercraft/cscore/blob/master/SilverCraft.CSCore/DSP/ChannelMatrix.cs/#L124"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets a <a class="xref" href="SilverCraft.CSCore.DSP.ChannelMatrix.html">ChannelMatrix</a> to convert between the two specified <a class="xref" href="SilverCraft.CSCore.ChannelMask.html">ChannelMask</a>s.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ChannelMatrix GetMatrix(ChannelMask from, ChannelMask to)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>from</code> <a class="xref" href="SilverCraft.CSCore.ChannelMask.html">ChannelMask</a></dt>
+    <dd><p>The <a class="xref" href="SilverCraft.CSCore.ChannelMask.html">ChannelMask</a> of the input stream.</p>
+</dd>
+    <dt><code>to</code> <a class="xref" href="SilverCraft.CSCore.ChannelMask.html">ChannelMask</a></dt>
+    <dd><p>The desired <a class="xref" href="SilverCraft.CSCore.ChannelMask.html">ChannelMask</a> of the output stream.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="SilverCraft.CSCore.DSP.ChannelMatrix.html">ChannelMatrix</a></dt>
+    <dd><p>A <a class="xref" href="SilverCraft.CSCore.DSP.ChannelMatrix.html">ChannelMatrix</a> to convert between the two specified <a class="xref" href="SilverCraft.CSCore.ChannelMask.html">ChannelMask</a>s.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentexception">ArgumentException</a></dt>
+    <dd><p><code class="paramref">from</code> equals <code class="paramref">to</code></p>
+</dd>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.keynotfoundexception">KeyNotFoundException</a></dt>
+    <dd><p>No accurate <a class="xref" href="SilverCraft.CSCore.DSP.ChannelMatrix.html">ChannelMatrix</a> was found.</p>
+</dd>
+  </dl>
+
+
+
+  <a id="SilverCraft_CSCore_DSP_ChannelMatrix_GetMatrix_" data-uid="SilverCraft.CSCore.DSP.ChannelMatrix.GetMatrix*"></a>
+
+  <h3 id="SilverCraft_CSCore_DSP_ChannelMatrix_GetMatrix_SilverCraft_CSCore_WaveFormat_SilverCraft_CSCore_WaveFormat_" data-uid="SilverCraft.CSCore.DSP.ChannelMatrix.GetMatrix(SilverCraft.CSCore.WaveFormat,SilverCraft.CSCore.WaveFormat)">
+  GetMatrix(WaveFormat, WaveFormat)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/thesilvercraft/cscore/blob/master/SilverCraft.CSCore/DSP/ChannelMatrix.cs/#L139"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets a <a class="xref" href="SilverCraft.CSCore.DSP.ChannelMatrix.html">ChannelMatrix</a> to convert between the two specified formats.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ChannelMatrix GetMatrix(WaveFormat from, WaveFormat to)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>from</code> <a class="xref" href="SilverCraft.CSCore.WaveFormat.html">WaveFormat</a></dt>
+    <dd><p>The input waveformat.</p>
+</dd>
+    <dt><code>to</code> <a class="xref" href="SilverCraft.CSCore.WaveFormat.html">WaveFormat</a></dt>
+    <dd><p>The output waveformat.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="SilverCraft.CSCore.DSP.ChannelMatrix.html">ChannelMatrix</a></dt>
+    <dd><p>A <a class="xref" href="SilverCraft.CSCore.DSP.ChannelMatrix.html">ChannelMatrix</a> to convert between the two specified formats.
+If no channelmask could be found, the return value is <code>null</code>.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentexception">ArgumentException</a></dt>
+    <dd><p>The channelmask of the input format equals the channelmask of the output format.</p>
+</dd>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.keynotfoundexception">KeyNotFoundException</a></dt>
+    <dd><p>No accurate <a class="xref" href="SilverCraft.CSCore.DSP.ChannelMatrix.html">ChannelMatrix</a> was found.</p>
+</dd>
+  </dl>
+
+
+
+  <a id="SilverCraft_CSCore_DSP_ChannelMatrix_GetOneDimensionalMatrix_" data-uid="SilverCraft.CSCore.DSP.ChannelMatrix.GetOneDimensionalMatrix*"></a>
+
+  <h3 id="SilverCraft_CSCore_DSP_ChannelMatrix_GetOneDimensionalMatrix" data-uid="SilverCraft.CSCore.DSP.ChannelMatrix.GetOneDimensionalMatrix">
+  GetOneDimensionalMatrix()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/thesilvercraft/cscore/blob/master/SilverCraft.CSCore/DSP/ChannelMatrix.cs/#L443"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Returns a one dimensional array which contains the channel conversion matrix coefficients.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float[] GetOneDimensionalMatrix()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a>[]</dt>
+    <dd><p>A one dimensional array which contains the channel conversion matrix coefficients</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SilverCraft_CSCore_DSP_ChannelMatrix_SetMatrix_" data-uid="SilverCraft.CSCore.DSP.ChannelMatrix.SetMatrix*"></a>
+
+  <h3 id="SilverCraft_CSCore_DSP_ChannelMatrix_SetMatrix_System_Single_0__0___" data-uid="SilverCraft.CSCore.DSP.ChannelMatrix.SetMatrix(System.Single[0:,0:])">
+  SetMatrix(float[,])
+  <a class="header-action link-secondary" title="View source" href="https://github.com/thesilvercraft/cscore/blob/master/SilverCraft.CSCore/DSP/ChannelMatrix.cs/#L421"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Sets the channel conversion matrix.
+The x-axis of the <code class="paramref">matrix</code> specifies the output channels. The y-axis
+of the <code class="paramref">matrix</code> specifies the input channels.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetMatrix(float[,] matrix)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>matrix</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a>[,]</dt>
+    <dd><p>Channel conversion matrix to use.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/thesilvercraft/cscore/blob/master/SilverCraft.CSCore/DSP/ChannelMatrix.cs/#L11" class="edit-link">Edit this page</a>
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

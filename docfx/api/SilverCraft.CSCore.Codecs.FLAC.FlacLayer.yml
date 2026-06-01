@@ -1,0 +1,193 @@
+### YamlMime:ManagedReference
+items:
+- uid: SilverCraft.CSCore.Codecs.FLAC.FlacLayer
+  commentId: T:SilverCraft.CSCore.Codecs.FLAC.FlacLayer
+  id: FlacLayer
+  parent: SilverCraft.CSCore.Codecs.FLAC
+  children:
+  - SilverCraft.CSCore.Codecs.FLAC.FlacLayer.Frame
+  - SilverCraft.CSCore.Codecs.FLAC.FlacLayer.Metadata
+  - SilverCraft.CSCore.Codecs.FLAC.FlacLayer.OutSideOfFrame
+  - SilverCraft.CSCore.Codecs.FLAC.FlacLayer.SubFrame
+  langs:
+  - csharp
+  - vb
+  name: FlacLayer
+  nameWithType: FlacLayer
+  fullName: SilverCraft.CSCore.Codecs.FLAC.FlacLayer
+  type: Enum
+  source:
+    remote:
+      path: SilverCraft.CSCore/Codecs/FLAC/FlacLayer.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: FlacLayer
+    path: ../SilverCraft.CSCore/Codecs/FLAC/FlacLayer.cs
+    startLine: 5
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Codecs.FLAC
+  summary: Splits a flac file into a few basic layers and defines them. Mainly used for debugging purposes.
+  example: []
+  syntax:
+    content: public enum FlacLayer
+    content.vb: Public Enum FlacLayer
+- uid: SilverCraft.CSCore.Codecs.FLAC.FlacLayer.OutSideOfFrame
+  commentId: F:SilverCraft.CSCore.Codecs.FLAC.FlacLayer.OutSideOfFrame
+  id: OutSideOfFrame
+  parent: SilverCraft.CSCore.Codecs.FLAC.FlacLayer
+  langs:
+  - csharp
+  - vb
+  name: OutSideOfFrame
+  nameWithType: FlacLayer.OutSideOfFrame
+  fullName: SilverCraft.CSCore.Codecs.FLAC.FlacLayer.OutSideOfFrame
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/Codecs/FLAC/FlacLayer.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: OutSideOfFrame
+    path: ../SilverCraft.CSCore/Codecs/FLAC/FlacLayer.cs
+    startLine: 11
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Codecs.FLAC
+  summary: Everything which is not part of a flac frame.
+  remarks: For example the "fLaC" sync code.
+  example: []
+  syntax:
+    content: OutSideOfFrame = 0
+    return:
+      type: SilverCraft.CSCore.Codecs.FLAC.FlacLayer
+- uid: SilverCraft.CSCore.Codecs.FLAC.FlacLayer.Metadata
+  commentId: F:SilverCraft.CSCore.Codecs.FLAC.FlacLayer.Metadata
+  id: Metadata
+  parent: SilverCraft.CSCore.Codecs.FLAC.FlacLayer
+  langs:
+  - csharp
+  - vb
+  name: Metadata
+  nameWithType: FlacLayer.Metadata
+  fullName: SilverCraft.CSCore.Codecs.FLAC.FlacLayer.Metadata
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/Codecs/FLAC/FlacLayer.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: Metadata
+    path: ../SilverCraft.CSCore/Codecs/FLAC/FlacLayer.cs
+    startLine: 15
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Codecs.FLAC
+  summary: Everything metadata related.
+  example: []
+  syntax:
+    content: Metadata = 1
+    return:
+      type: SilverCraft.CSCore.Codecs.FLAC.FlacLayer
+- uid: SilverCraft.CSCore.Codecs.FLAC.FlacLayer.Frame
+  commentId: F:SilverCraft.CSCore.Codecs.FLAC.FlacLayer.Frame
+  id: Frame
+  parent: SilverCraft.CSCore.Codecs.FLAC.FlacLayer
+  langs:
+  - csharp
+  - vb
+  name: Frame
+  nameWithType: FlacLayer.Frame
+  fullName: SilverCraft.CSCore.Codecs.FLAC.FlacLayer.Frame
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/Codecs/FLAC/FlacLayer.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: Frame
+    path: ../SilverCraft.CSCore/Codecs/FLAC/FlacLayer.cs
+    startLine: 19
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Codecs.FLAC
+  summary: Everything which is part of a frame but not part of its subframes.
+  example: []
+  syntax:
+    content: Frame = 2
+    return:
+      type: SilverCraft.CSCore.Codecs.FLAC.FlacLayer
+- uid: SilverCraft.CSCore.Codecs.FLAC.FlacLayer.SubFrame
+  commentId: F:SilverCraft.CSCore.Codecs.FLAC.FlacLayer.SubFrame
+  id: SubFrame
+  parent: SilverCraft.CSCore.Codecs.FLAC.FlacLayer
+  langs:
+  - csharp
+  - vb
+  name: SubFrame
+  nameWithType: FlacLayer.SubFrame
+  fullName: SilverCraft.CSCore.Codecs.FLAC.FlacLayer.SubFrame
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/Codecs/FLAC/FlacLayer.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: SubFrame
+    path: ../SilverCraft.CSCore/Codecs/FLAC/FlacLayer.cs
+    startLine: 23
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Codecs.FLAC
+  summary: Everything subframe related.
+  example: []
+  syntax:
+    content: SubFrame = 3
+    return:
+      type: SilverCraft.CSCore.Codecs.FLAC.FlacLayer
+references:
+- uid: SilverCraft.CSCore.Codecs.FLAC
+  commentId: N:SilverCraft.CSCore.Codecs.FLAC
+  href: SilverCraft.html
+  name: SilverCraft.CSCore.Codecs.FLAC
+  nameWithType: SilverCraft.CSCore.Codecs.FLAC
+  fullName: SilverCraft.CSCore.Codecs.FLAC
+  spec.csharp:
+  - uid: SilverCraft
+    name: SilverCraft
+    href: SilverCraft.html
+  - name: .
+  - uid: SilverCraft.CSCore
+    name: CSCore
+    href: SilverCraft.CSCore.html
+  - name: .
+  - uid: SilverCraft.CSCore.Codecs
+    name: Codecs
+    href: SilverCraft.CSCore.Codecs.html
+  - name: .
+  - uid: SilverCraft.CSCore.Codecs.FLAC
+    name: FLAC
+    href: SilverCraft.CSCore.Codecs.FLAC.html
+  spec.vb:
+  - uid: SilverCraft
+    name: SilverCraft
+    href: SilverCraft.html
+  - name: .
+  - uid: SilverCraft.CSCore
+    name: CSCore
+    href: SilverCraft.CSCore.html
+  - name: .
+  - uid: SilverCraft.CSCore.Codecs
+    name: Codecs
+    href: SilverCraft.CSCore.Codecs.html
+  - name: .
+  - uid: SilverCraft.CSCore.Codecs.FLAC
+    name: FLAC
+    href: SilverCraft.CSCore.Codecs.FLAC.html
+- uid: SilverCraft.CSCore.Codecs.FLAC.FlacLayer
+  commentId: T:SilverCraft.CSCore.Codecs.FLAC.FlacLayer
+  parent: SilverCraft.CSCore.Codecs.FLAC
+  href: SilverCraft.CSCore.Codecs.FLAC.FlacLayer.html
+  name: FlacLayer
+  nameWithType: FlacLayer
+  fullName: SilverCraft.CSCore.Codecs.FLAC.FlacLayer

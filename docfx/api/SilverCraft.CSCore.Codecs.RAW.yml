@@ -1,0 +1,23 @@
+### YamlMime:ManagedReference
+items:
+- uid: SilverCraft.CSCore.Codecs.RAW
+  commentId: N:SilverCraft.CSCore.Codecs.RAW
+  id: SilverCraft.CSCore.Codecs.RAW
+  children:
+  - SilverCraft.CSCore.Codecs.RAW.RawDataReader
+  langs:
+  - csharp
+  - vb
+  name: SilverCraft.CSCore.Codecs.RAW
+  nameWithType: SilverCraft.CSCore.Codecs.RAW
+  fullName: SilverCraft.CSCore.Codecs.RAW
+  type: Namespace
+  assemblies:
+  - SilverCraft.CSCore
+references:
+- uid: SilverCraft.CSCore.Codecs.RAW.RawDataReader
+  commentId: T:SilverCraft.CSCore.Codecs.RAW.RawDataReader
+  href: SilverCraft.CSCore.Codecs.RAW.RawDataReader.html
+  name: RawDataReader
+  nameWithType: RawDataReader
+  fullName: SilverCraft.CSCore.Codecs.RAW.RawDataReader

@@ -1,0 +1,839 @@
+### YamlMime:ManagedReference
+items:
+- uid: SilverCraft.CSCore.Tags.ID3.Frames.Popularimeter
+  commentId: T:SilverCraft.CSCore.Tags.ID3.Frames.Popularimeter
+  id: Popularimeter
+  parent: SilverCraft.CSCore.Tags.ID3.Frames
+  children:
+  - SilverCraft.CSCore.Tags.ID3.Frames.Popularimeter.#ctor(SilverCraft.CSCore.Tags.ID3.Frames.FrameHeader)
+  - SilverCraft.CSCore.Tags.ID3.Frames.Popularimeter.Decode(System.Byte[])
+  - SilverCraft.CSCore.Tags.ID3.Frames.Popularimeter.PlayedCounter
+  - SilverCraft.CSCore.Tags.ID3.Frames.Popularimeter.Rating
+  - SilverCraft.CSCore.Tags.ID3.Frames.Popularimeter.UserEmail
+  langs:
+  - csharp
+  - vb
+  name: Popularimeter
+  nameWithType: Popularimeter
+  fullName: SilverCraft.CSCore.Tags.ID3.Frames.Popularimeter
+  type: Class
+  source:
+    remote:
+      path: SilverCraft.CSCore/Tags/ID3/Frames/Popularimeter.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: Popularimeter
+    path: ../SilverCraft.CSCore/Tags/ID3/Frames/Popularimeter.cs
+    startLine: 2
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Tags.ID3.Frames
+  syntax:
+    content: 'public class Popularimeter : Frame'
+    content.vb: Public Class Popularimeter Inherits Frame
+  inheritance:
+  - System.Object
+  - SilverCraft.CSCore.Tags.ID3.Frames.Frame
+  inheritedMembers:
+  - SilverCraft.CSCore.Tags.ID3.Frames.Frame.FromStream(System.IO.Stream,SilverCraft.CSCore.Tags.ID3.ID3v2)
+  - SilverCraft.CSCore.Tags.ID3.Frames.Frame.Header
+  - SilverCraft.CSCore.Tags.ID3.Frames.Frame.FrameId
+  - SilverCraft.CSCore.Tags.ID3.Frames.Frame.FrameSize
+  - SilverCraft.CSCore.Tags.ID3.Frames.Frame.DecodeContent(System.Byte[])
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  extensionMethods:
+  - SilverCraft.CSCore.Tags.ID3.Frames.Popularimeter.SilverCraft.CSCore.FluentExtensions.Synchronized``2
+- uid: SilverCraft.CSCore.Tags.ID3.Frames.Popularimeter.UserEmail
+  commentId: P:SilverCraft.CSCore.Tags.ID3.Frames.Popularimeter.UserEmail
+  id: UserEmail
+  parent: SilverCraft.CSCore.Tags.ID3.Frames.Popularimeter
+  langs:
+  - csharp
+  - vb
+  name: UserEmail
+  nameWithType: Popularimeter.UserEmail
+  fullName: SilverCraft.CSCore.Tags.ID3.Frames.Popularimeter.UserEmail
+  type: Property
+  source:
+    remote:
+      path: SilverCraft.CSCore/Tags/ID3/Frames/Popularimeter.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: UserEmail
+    path: ../SilverCraft.CSCore/Tags/ID3/Frames/Popularimeter.cs
+    startLine: 4
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Tags.ID3.Frames
+  syntax:
+    content: public string UserEmail { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property UserEmail As String
+  overload: SilverCraft.CSCore.Tags.ID3.Frames.Popularimeter.UserEmail*
+- uid: SilverCraft.CSCore.Tags.ID3.Frames.Popularimeter.Rating
+  commentId: P:SilverCraft.CSCore.Tags.ID3.Frames.Popularimeter.Rating
+  id: Rating
+  parent: SilverCraft.CSCore.Tags.ID3.Frames.Popularimeter
+  langs:
+  - csharp
+  - vb
+  name: Rating
+  nameWithType: Popularimeter.Rating
+  fullName: SilverCraft.CSCore.Tags.ID3.Frames.Popularimeter.Rating
+  type: Property
+  source:
+    remote:
+      path: SilverCraft.CSCore/Tags/ID3/Frames/Popularimeter.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: Rating
+    path: ../SilverCraft.CSCore/Tags/ID3/Frames/Popularimeter.cs
+    startLine: 9
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Tags.ID3.Frames
+  summary: Range from 1(worst) to 255(best). Zero -&gt; Rating disabled.
+  example: []
+  syntax:
+    content: public byte Rating { get; }
+    parameters: []
+    return:
+      type: System.Byte
+    content.vb: Public Property Rating As Byte
+  overload: SilverCraft.CSCore.Tags.ID3.Frames.Popularimeter.Rating*
+- uid: SilverCraft.CSCore.Tags.ID3.Frames.Popularimeter.PlayedCounter
+  commentId: P:SilverCraft.CSCore.Tags.ID3.Frames.Popularimeter.PlayedCounter
+  id: PlayedCounter
+  parent: SilverCraft.CSCore.Tags.ID3.Frames.Popularimeter
+  langs:
+  - csharp
+  - vb
+  name: PlayedCounter
+  nameWithType: Popularimeter.PlayedCounter
+  fullName: SilverCraft.CSCore.Tags.ID3.Frames.Popularimeter.PlayedCounter
+  type: Property
+  source:
+    remote:
+      path: SilverCraft.CSCore/Tags/ID3/Frames/Popularimeter.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: PlayedCounter
+    path: ../SilverCraft.CSCore/Tags/ID3/Frames/Popularimeter.cs
+    startLine: 15
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Tags.ID3.Frames
+  summary: >-
+    - 1 -&gt; ommit the counter. Default length is 4 byte. If 4 byte is not enough to hold the
+      number, a byte will be added(up to 8 bytes total).
+  example: []
+  syntax:
+    content: public long PlayedCounter { get; }
+    parameters: []
+    return:
+      type: System.Int64
+    content.vb: Public Property PlayedCounter As Long
+  overload: SilverCraft.CSCore.Tags.ID3.Frames.Popularimeter.PlayedCounter*
+- uid: SilverCraft.CSCore.Tags.ID3.Frames.Popularimeter.#ctor(SilverCraft.CSCore.Tags.ID3.Frames.FrameHeader)
+  commentId: M:SilverCraft.CSCore.Tags.ID3.Frames.Popularimeter.#ctor(SilverCraft.CSCore.Tags.ID3.Frames.FrameHeader)
+  id: '#ctor(SilverCraft.CSCore.Tags.ID3.Frames.FrameHeader)'
+  parent: SilverCraft.CSCore.Tags.ID3.Frames.Popularimeter
+  langs:
+  - csharp
+  - vb
+  name: Popularimeter(FrameHeader)
+  nameWithType: Popularimeter.Popularimeter(FrameHeader)
+  fullName: SilverCraft.CSCore.Tags.ID3.Frames.Popularimeter.Popularimeter(SilverCraft.CSCore.Tags.ID3.Frames.FrameHeader)
+  type: Constructor
+  source:
+    remote:
+      path: SilverCraft.CSCore/Tags/ID3/Frames/Popularimeter.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: .ctor
+    path: ../SilverCraft.CSCore/Tags/ID3/Frames/Popularimeter.cs
+    startLine: 17
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Tags.ID3.Frames
+  syntax:
+    content: public Popularimeter(FrameHeader header)
+    parameters:
+    - id: header
+      type: SilverCraft.CSCore.Tags.ID3.Frames.FrameHeader
+    content.vb: Public Sub New(header As FrameHeader)
+  overload: SilverCraft.CSCore.Tags.ID3.Frames.Popularimeter.#ctor*
+  nameWithType.vb: Popularimeter.New(FrameHeader)
+  fullName.vb: SilverCraft.CSCore.Tags.ID3.Frames.Popularimeter.New(SilverCraft.CSCore.Tags.ID3.Frames.FrameHeader)
+  name.vb: New(FrameHeader)
+- uid: SilverCraft.CSCore.Tags.ID3.Frames.Popularimeter.Decode(System.Byte[])
+  commentId: M:SilverCraft.CSCore.Tags.ID3.Frames.Popularimeter.Decode(System.Byte[])
+  id: Decode(System.Byte[])
+  parent: SilverCraft.CSCore.Tags.ID3.Frames.Popularimeter
+  langs:
+  - csharp
+  - vb
+  name: Decode(byte[])
+  nameWithType: Popularimeter.Decode(byte[])
+  fullName: SilverCraft.CSCore.Tags.ID3.Frames.Popularimeter.Decode(byte[])
+  type: Method
+  source:
+    remote:
+      path: SilverCraft.CSCore/Tags/ID3/Frames/Popularimeter.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: Decode
+    path: ../SilverCraft.CSCore/Tags/ID3/Frames/Popularimeter.cs
+    startLine: 22
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Tags.ID3.Frames
+  example: []
+  syntax:
+    content: protected override void Decode(byte[] content)
+    parameters:
+    - id: content
+      type: System.Byte[]
+    content.vb: Protected Overrides Sub Decode(content As Byte())
+  overridden: SilverCraft.CSCore.Tags.ID3.Frames.Frame.Decode(System.Byte[])
+  overload: SilverCraft.CSCore.Tags.ID3.Frames.Popularimeter.Decode*
+  nameWithType.vb: Popularimeter.Decode(Byte())
+  fullName.vb: SilverCraft.CSCore.Tags.ID3.Frames.Popularimeter.Decode(Byte())
+  name.vb: Decode(Byte())
+references:
+- uid: SilverCraft.CSCore.Tags.ID3.Frames
+  commentId: N:SilverCraft.CSCore.Tags.ID3.Frames
+  href: SilverCraft.html
+  name: SilverCraft.CSCore.Tags.ID3.Frames
+  nameWithType: SilverCraft.CSCore.Tags.ID3.Frames
+  fullName: SilverCraft.CSCore.Tags.ID3.Frames
+  spec.csharp:
+  - uid: SilverCraft
+    name: SilverCraft
+    href: SilverCraft.html
+  - name: .
+  - uid: SilverCraft.CSCore
+    name: CSCore
+    href: SilverCraft.CSCore.html
+  - name: .
+  - uid: SilverCraft.CSCore.Tags
+    name: Tags
+    href: SilverCraft.CSCore.Tags.html
+  - name: .
+  - uid: SilverCraft.CSCore.Tags.ID3
+    name: ID3
+    href: SilverCraft.CSCore.Tags.ID3.html
+  - name: .
+  - uid: SilverCraft.CSCore.Tags.ID3.Frames
+    name: Frames
+    href: SilverCraft.CSCore.Tags.ID3.Frames.html
+  spec.vb:
+  - uid: SilverCraft
+    name: SilverCraft
+    href: SilverCraft.html
+  - name: .
+  - uid: SilverCraft.CSCore
+    name: CSCore
+    href: SilverCraft.CSCore.html
+  - name: .
+  - uid: SilverCraft.CSCore.Tags
+    name: Tags
+    href: SilverCraft.CSCore.Tags.html
+  - name: .
+  - uid: SilverCraft.CSCore.Tags.ID3
+    name: ID3
+    href: SilverCraft.CSCore.Tags.ID3.html
+  - name: .
+  - uid: SilverCraft.CSCore.Tags.ID3.Frames
+    name: Frames
+    href: SilverCraft.CSCore.Tags.ID3.Frames.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: SilverCraft.CSCore.Tags.ID3.Frames.Frame
+  commentId: T:SilverCraft.CSCore.Tags.ID3.Frames.Frame
+  parent: SilverCraft.CSCore.Tags.ID3.Frames
+  href: SilverCraft.CSCore.Tags.ID3.Frames.Frame.html
+  name: Frame
+  nameWithType: Frame
+  fullName: SilverCraft.CSCore.Tags.ID3.Frames.Frame
+- uid: SilverCraft.CSCore.Tags.ID3.Frames.Frame.FromStream(System.IO.Stream,SilverCraft.CSCore.Tags.ID3.ID3v2)
+  commentId: M:SilverCraft.CSCore.Tags.ID3.Frames.Frame.FromStream(System.IO.Stream,SilverCraft.CSCore.Tags.ID3.ID3v2)
+  parent: SilverCraft.CSCore.Tags.ID3.Frames.Frame
+  isExternal: true
+  href: SilverCraft.CSCore.Tags.ID3.Frames.Frame.html#SilverCraft_CSCore_Tags_ID3_Frames_Frame_FromStream_System_IO_Stream_SilverCraft_CSCore_Tags_ID3_ID3v2_
+  name: FromStream(Stream, ID3v2)
+  nameWithType: Frame.FromStream(Stream, ID3v2)
+  fullName: SilverCraft.CSCore.Tags.ID3.Frames.Frame.FromStream(System.IO.Stream, SilverCraft.CSCore.Tags.ID3.ID3v2)
+  spec.csharp:
+  - uid: SilverCraft.CSCore.Tags.ID3.Frames.Frame.FromStream(System.IO.Stream,SilverCraft.CSCore.Tags.ID3.ID3v2)
+    name: FromStream
+    href: SilverCraft.CSCore.Tags.ID3.Frames.Frame.html#SilverCraft_CSCore_Tags_ID3_Frames_Frame_FromStream_System_IO_Stream_SilverCraft_CSCore_Tags_ID3_ID3v2_
+  - name: (
+  - uid: System.IO.Stream
+    name: Stream
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.io.stream
+  - name: ','
+  - name: " "
+  - uid: SilverCraft.CSCore.Tags.ID3.ID3v2
+    name: ID3v2
+    href: SilverCraft.CSCore.Tags.ID3.ID3v2.html
+  - name: )
+  spec.vb:
+  - uid: SilverCraft.CSCore.Tags.ID3.Frames.Frame.FromStream(System.IO.Stream,SilverCraft.CSCore.Tags.ID3.ID3v2)
+    name: FromStream
+    href: SilverCraft.CSCore.Tags.ID3.Frames.Frame.html#SilverCraft_CSCore_Tags_ID3_Frames_Frame_FromStream_System_IO_Stream_SilverCraft_CSCore_Tags_ID3_ID3v2_
+  - name: (
+  - uid: System.IO.Stream
+    name: Stream
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.io.stream
+  - name: ','
+  - name: " "
+  - uid: SilverCraft.CSCore.Tags.ID3.ID3v2
+    name: ID3v2
+    href: SilverCraft.CSCore.Tags.ID3.ID3v2.html
+  - name: )
+- uid: SilverCraft.CSCore.Tags.ID3.Frames.Frame.Header
+  commentId: P:SilverCraft.CSCore.Tags.ID3.Frames.Frame.Header
+  parent: SilverCraft.CSCore.Tags.ID3.Frames.Frame
+  href: SilverCraft.CSCore.Tags.ID3.Frames.Frame.html#SilverCraft_CSCore_Tags_ID3_Frames_Frame_Header
+  name: Header
+  nameWithType: Frame.Header
+  fullName: SilverCraft.CSCore.Tags.ID3.Frames.Frame.Header
+- uid: SilverCraft.CSCore.Tags.ID3.Frames.Frame.FrameId
+  commentId: P:SilverCraft.CSCore.Tags.ID3.Frames.Frame.FrameId
+  parent: SilverCraft.CSCore.Tags.ID3.Frames.Frame
+  href: SilverCraft.CSCore.Tags.ID3.Frames.Frame.html#SilverCraft_CSCore_Tags_ID3_Frames_Frame_FrameId
+  name: FrameId
+  nameWithType: Frame.FrameId
+  fullName: SilverCraft.CSCore.Tags.ID3.Frames.Frame.FrameId
+- uid: SilverCraft.CSCore.Tags.ID3.Frames.Frame.FrameSize
+  commentId: P:SilverCraft.CSCore.Tags.ID3.Frames.Frame.FrameSize
+  parent: SilverCraft.CSCore.Tags.ID3.Frames.Frame
+  href: SilverCraft.CSCore.Tags.ID3.Frames.Frame.html#SilverCraft_CSCore_Tags_ID3_Frames_Frame_FrameSize
+  name: FrameSize
+  nameWithType: Frame.FrameSize
+  fullName: SilverCraft.CSCore.Tags.ID3.Frames.Frame.FrameSize
+- uid: SilverCraft.CSCore.Tags.ID3.Frames.Frame.DecodeContent(System.Byte[])
+  commentId: M:SilverCraft.CSCore.Tags.ID3.Frames.Frame.DecodeContent(System.Byte[])
+  parent: SilverCraft.CSCore.Tags.ID3.Frames.Frame
+  isExternal: true
+  href: SilverCraft.CSCore.Tags.ID3.Frames.Frame.html#SilverCraft_CSCore_Tags_ID3_Frames_Frame_DecodeContent_System_Byte___
+  name: DecodeContent(byte[])
+  nameWithType: Frame.DecodeContent(byte[])
+  fullName: SilverCraft.CSCore.Tags.ID3.Frames.Frame.DecodeContent(byte[])
+  nameWithType.vb: Frame.DecodeContent(Byte())
+  fullName.vb: SilverCraft.CSCore.Tags.ID3.Frames.Frame.DecodeContent(Byte())
+  name.vb: DecodeContent(Byte())
+  spec.csharp:
+  - uid: SilverCraft.CSCore.Tags.ID3.Frames.Frame.DecodeContent(System.Byte[])
+    name: DecodeContent
+    href: SilverCraft.CSCore.Tags.ID3.Frames.Frame.html#SilverCraft_CSCore_Tags_ID3_Frames_Frame_DecodeContent_System_Byte___
+  - name: (
+  - uid: System.Byte
+    name: byte
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.byte
+  - name: '['
+  - name: ']'
+  - name: )
+  spec.vb:
+  - uid: SilverCraft.CSCore.Tags.ID3.Frames.Frame.DecodeContent(System.Byte[])
+    name: DecodeContent
+    href: SilverCraft.CSCore.Tags.ID3.Frames.Frame.html#SilverCraft_CSCore_Tags_ID3_Frames_Frame_DecodeContent_System_Byte___
+  - name: (
+  - uid: System.Byte
+    name: Byte
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.byte
+  - name: (
+  - name: )
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: SilverCraft.CSCore.Tags.ID3.Frames.Popularimeter.SilverCraft.CSCore.FluentExtensions.Synchronized``2
+  commentId: M:SilverCraft.CSCore.FluentExtensions.Synchronized``2(``0)
+  parent: SilverCraft.CSCore.FluentExtensions
+  definition: SilverCraft.CSCore.FluentExtensions.Synchronized``2(``0)
+  href: SilverCraft.CSCore.FluentExtensions.html#SilverCraft_CSCore_FluentExtensions_Synchronized__2___0_
+  name: Synchronized<Popularimeter, T>(Popularimeter)
+  nameWithType: FluentExtensions.Synchronized<Popularimeter, T>(Popularimeter)
+  fullName: SilverCraft.CSCore.FluentExtensions.Synchronized<SilverCraft.CSCore.Tags.ID3.Frames.Popularimeter, T>(SilverCraft.CSCore.Tags.ID3.Frames.Popularimeter)
+  nameWithType.vb: FluentExtensions.Synchronized(Of Popularimeter, T)(Popularimeter)
+  fullName.vb: SilverCraft.CSCore.FluentExtensions.Synchronized(Of SilverCraft.CSCore.Tags.ID3.Frames.Popularimeter, T)(SilverCraft.CSCore.Tags.ID3.Frames.Popularimeter)
+  name.vb: Synchronized(Of Popularimeter, T)(Popularimeter)
+  spec.csharp:
+  - uid: SilverCraft.CSCore.FluentExtensions.Synchronized``2(SilverCraft.CSCore.Tags.ID3.Frames.Popularimeter)
+    name: Synchronized
+    href: SilverCraft.CSCore.FluentExtensions.html#SilverCraft_CSCore_FluentExtensions_Synchronized__2___0_
+  - name: <
+  - uid: SilverCraft.CSCore.Tags.ID3.Frames.Popularimeter
+    name: Popularimeter
+    href: SilverCraft.CSCore.Tags.ID3.Frames.Popularimeter.html
+  - name: ','
+  - name: " "
+  - name: T
+  - name: '>'
+  - name: (
+  - uid: SilverCraft.CSCore.Tags.ID3.Frames.Popularimeter
+    name: Popularimeter
+    href: SilverCraft.CSCore.Tags.ID3.Frames.Popularimeter.html
+  - name: )
+  spec.vb:
+  - uid: SilverCraft.CSCore.FluentExtensions.Synchronized``2(SilverCraft.CSCore.Tags.ID3.Frames.Popularimeter)
+    name: Synchronized
+    href: SilverCraft.CSCore.FluentExtensions.html#SilverCraft_CSCore_FluentExtensions_Synchronized__2___0_
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: SilverCraft.CSCore.Tags.ID3.Frames.Popularimeter
+    name: Popularimeter
+    href: SilverCraft.CSCore.Tags.ID3.Frames.Popularimeter.html
+  - name: ','
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: SilverCraft.CSCore.Tags.ID3.Frames.Popularimeter
+    name: Popularimeter
+    href: SilverCraft.CSCore.Tags.ID3.Frames.Popularimeter.html
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: SilverCraft.CSCore.FluentExtensions.Synchronized``2(``0)
+  commentId: M:SilverCraft.CSCore.FluentExtensions.Synchronized``2(``0)
+  href: SilverCraft.CSCore.FluentExtensions.html#SilverCraft_CSCore_FluentExtensions_Synchronized__2___0_
+  name: Synchronized<TAudioSource, T>(TAudioSource)
+  nameWithType: FluentExtensions.Synchronized<TAudioSource, T>(TAudioSource)
+  fullName: SilverCraft.CSCore.FluentExtensions.Synchronized<TAudioSource, T>(TAudioSource)
+  nameWithType.vb: FluentExtensions.Synchronized(Of TAudioSource, T)(TAudioSource)
+  fullName.vb: SilverCraft.CSCore.FluentExtensions.Synchronized(Of TAudioSource, T)(TAudioSource)
+  name.vb: Synchronized(Of TAudioSource, T)(TAudioSource)
+  spec.csharp:
+  - uid: SilverCraft.CSCore.FluentExtensions.Synchronized``2(``0)
+    name: Synchronized
+    href: SilverCraft.CSCore.FluentExtensions.html#SilverCraft_CSCore_FluentExtensions_Synchronized__2___0_
+  - name: <
+  - name: TAudioSource
+  - name: ','
+  - name: " "
+  - name: T
+  - name: '>'
+  - name: (
+  - name: TAudioSource
+  - name: )
+  spec.vb:
+  - uid: SilverCraft.CSCore.FluentExtensions.Synchronized``2(``0)
+    name: Synchronized
+    href: SilverCraft.CSCore.FluentExtensions.html#SilverCraft_CSCore_FluentExtensions_Synchronized__2___0_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TAudioSource
+  - name: ','
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - name: TAudioSource
+  - name: )
+- uid: SilverCraft.CSCore.FluentExtensions
+  commentId: T:SilverCraft.CSCore.FluentExtensions
+  parent: SilverCraft.CSCore
+  href: SilverCraft.CSCore.FluentExtensions.html
+  name: FluentExtensions
+  nameWithType: FluentExtensions
+  fullName: SilverCraft.CSCore.FluentExtensions
+- uid: SilverCraft.CSCore
+  commentId: N:SilverCraft.CSCore
+  href: SilverCraft.html
+  name: SilverCraft.CSCore
+  nameWithType: SilverCraft.CSCore
+  fullName: SilverCraft.CSCore
+  spec.csharp:
+  - uid: SilverCraft
+    name: SilverCraft
+    href: SilverCraft.html
+  - name: .
+  - uid: SilverCraft.CSCore
+    name: CSCore
+    href: SilverCraft.CSCore.html
+  spec.vb:
+  - uid: SilverCraft
+    name: SilverCraft
+    href: SilverCraft.html
+  - name: .
+  - uid: SilverCraft.CSCore
+    name: CSCore
+    href: SilverCraft.CSCore.html
+- uid: SilverCraft.CSCore.Tags.ID3.Frames.Popularimeter.UserEmail*
+  commentId: Overload:SilverCraft.CSCore.Tags.ID3.Frames.Popularimeter.UserEmail
+  href: SilverCraft.CSCore.Tags.ID3.Frames.Popularimeter.html#SilverCraft_CSCore_Tags_ID3_Frames_Popularimeter_UserEmail
+  name: UserEmail
+  nameWithType: Popularimeter.UserEmail
+  fullName: SilverCraft.CSCore.Tags.ID3.Frames.Popularimeter.UserEmail
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: SilverCraft.CSCore.Tags.ID3.Frames.Popularimeter.Rating*
+  commentId: Overload:SilverCraft.CSCore.Tags.ID3.Frames.Popularimeter.Rating
+  href: SilverCraft.CSCore.Tags.ID3.Frames.Popularimeter.html#SilverCraft_CSCore_Tags_ID3_Frames_Popularimeter_Rating
+  name: Rating
+  nameWithType: Popularimeter.Rating
+  fullName: SilverCraft.CSCore.Tags.ID3.Frames.Popularimeter.Rating
+- uid: System.Byte
+  commentId: T:System.Byte
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.byte
+  name: byte
+  nameWithType: byte
+  fullName: byte
+  nameWithType.vb: Byte
+  fullName.vb: Byte
+  name.vb: Byte
+- uid: SilverCraft.CSCore.Tags.ID3.Frames.Popularimeter.PlayedCounter*
+  commentId: Overload:SilverCraft.CSCore.Tags.ID3.Frames.Popularimeter.PlayedCounter
+  href: SilverCraft.CSCore.Tags.ID3.Frames.Popularimeter.html#SilverCraft_CSCore_Tags_ID3_Frames_Popularimeter_PlayedCounter
+  name: PlayedCounter
+  nameWithType: Popularimeter.PlayedCounter
+  fullName: SilverCraft.CSCore.Tags.ID3.Frames.Popularimeter.PlayedCounter
+- uid: System.Int64
+  commentId: T:System.Int64
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int64
+  name: long
+  nameWithType: long
+  fullName: long
+  nameWithType.vb: Long
+  fullName.vb: Long
+  name.vb: Long
+- uid: SilverCraft.CSCore.Tags.ID3.Frames.Popularimeter.#ctor*
+  commentId: Overload:SilverCraft.CSCore.Tags.ID3.Frames.Popularimeter.#ctor
+  href: SilverCraft.CSCore.Tags.ID3.Frames.Popularimeter.html#SilverCraft_CSCore_Tags_ID3_Frames_Popularimeter__ctor_SilverCraft_CSCore_Tags_ID3_Frames_FrameHeader_
+  name: Popularimeter
+  nameWithType: Popularimeter.Popularimeter
+  fullName: SilverCraft.CSCore.Tags.ID3.Frames.Popularimeter.Popularimeter
+  nameWithType.vb: Popularimeter.New
+  fullName.vb: SilverCraft.CSCore.Tags.ID3.Frames.Popularimeter.New
+  name.vb: New
+- uid: SilverCraft.CSCore.Tags.ID3.Frames.FrameHeader
+  commentId: T:SilverCraft.CSCore.Tags.ID3.Frames.FrameHeader
+  parent: SilverCraft.CSCore.Tags.ID3.Frames
+  href: SilverCraft.CSCore.Tags.ID3.Frames.FrameHeader.html
+  name: FrameHeader
+  nameWithType: FrameHeader
+  fullName: SilverCraft.CSCore.Tags.ID3.Frames.FrameHeader
+- uid: SilverCraft.CSCore.Tags.ID3.Frames.Frame.Decode(System.Byte[])
+  commentId: M:SilverCraft.CSCore.Tags.ID3.Frames.Frame.Decode(System.Byte[])
+  parent: SilverCraft.CSCore.Tags.ID3.Frames.Frame
+  isExternal: true
+  href: SilverCraft.CSCore.Tags.ID3.Frames.Frame.html#SilverCraft_CSCore_Tags_ID3_Frames_Frame_Decode_System_Byte___
+  name: Decode(byte[])
+  nameWithType: Frame.Decode(byte[])
+  fullName: SilverCraft.CSCore.Tags.ID3.Frames.Frame.Decode(byte[])
+  nameWithType.vb: Frame.Decode(Byte())
+  fullName.vb: SilverCraft.CSCore.Tags.ID3.Frames.Frame.Decode(Byte())
+  name.vb: Decode(Byte())
+  spec.csharp:
+  - uid: SilverCraft.CSCore.Tags.ID3.Frames.Frame.Decode(System.Byte[])
+    name: Decode
+    href: SilverCraft.CSCore.Tags.ID3.Frames.Frame.html#SilverCraft_CSCore_Tags_ID3_Frames_Frame_Decode_System_Byte___
+  - name: (
+  - uid: System.Byte
+    name: byte
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.byte
+  - name: '['
+  - name: ']'
+  - name: )
+  spec.vb:
+  - uid: SilverCraft.CSCore.Tags.ID3.Frames.Frame.Decode(System.Byte[])
+    name: Decode
+    href: SilverCraft.CSCore.Tags.ID3.Frames.Frame.html#SilverCraft_CSCore_Tags_ID3_Frames_Frame_Decode_System_Byte___
+  - name: (
+  - uid: System.Byte
+    name: Byte
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.byte
+  - name: (
+  - name: )
+  - name: )
+- uid: SilverCraft.CSCore.Tags.ID3.Frames.Popularimeter.Decode*
+  commentId: Overload:SilverCraft.CSCore.Tags.ID3.Frames.Popularimeter.Decode
+  href: SilverCraft.CSCore.Tags.ID3.Frames.Popularimeter.html#SilverCraft_CSCore_Tags_ID3_Frames_Popularimeter_Decode_System_Byte___
+  name: Decode
+  nameWithType: Popularimeter.Decode
+  fullName: SilverCraft.CSCore.Tags.ID3.Frames.Popularimeter.Decode
+- uid: System.Byte[]
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.byte
+  name: byte[]
+  nameWithType: byte[]
+  fullName: byte[]
+  nameWithType.vb: Byte()
+  fullName.vb: Byte()
+  name.vb: Byte()
+  spec.csharp:
+  - uid: System.Byte
+    name: byte
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.byte
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: System.Byte
+    name: Byte
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.byte
+  - name: (
+  - name: )

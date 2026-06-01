@@ -1,0 +1,247 @@
+### YamlMime:ManagedReference
+items:
+- uid: SilverCraft.CSCore.Streams
+  commentId: N:SilverCraft.CSCore.Streams
+  id: SilverCraft.CSCore.Streams
+  children:
+  - SilverCraft.CSCore.Streams.BlockReadEventArgs`1
+  - SilverCraft.CSCore.Streams.BufferSource
+  - SilverCraft.CSCore.Streams.CachedSoundSource
+  - SilverCraft.CSCore.Streams.FadeInOut
+  - SilverCraft.CSCore.Streams.GainSource
+  - SilverCraft.CSCore.Streams.IFadeStrategy
+  - SilverCraft.CSCore.Streams.LinearFadeStrategy
+  - SilverCraft.CSCore.Streams.LoopStream
+  - SilverCraft.CSCore.Streams.MonoToStereoSource
+  - SilverCraft.CSCore.Streams.NotificationSource
+  - SilverCraft.CSCore.Streams.PanSource
+  - SilverCraft.CSCore.Streams.PeakEventArgs
+  - SilverCraft.CSCore.Streams.PeakMeter
+  - SilverCraft.CSCore.Streams.SimpleNotificationSource
+  - SilverCraft.CSCore.Streams.SineGenerator
+  - SilverCraft.CSCore.Streams.SingleBlockNotificationStream
+  - SilverCraft.CSCore.Streams.SingleBlockReadEventArgs
+  - SilverCraft.CSCore.Streams.SoundInSource
+  - SilverCraft.CSCore.Streams.StereoToMonoSource
+  - SilverCraft.CSCore.Streams.SynchronizedWaveSource`2
+  - SilverCraft.CSCore.Streams.VolumeSource
+  - SilverCraft.CSCore.Streams.WriteableBufferingSource
+  langs:
+  - csharp
+  - vb
+  name: SilverCraft.CSCore.Streams
+  nameWithType: SilverCraft.CSCore.Streams
+  fullName: SilverCraft.CSCore.Streams
+  type: Namespace
+  assemblies:
+  - SilverCraft.CSCore
+references:
+- uid: SilverCraft.CSCore.Streams.BlockReadEventArgs`1
+  commentId: T:SilverCraft.CSCore.Streams.BlockReadEventArgs`1
+  href: SilverCraft.CSCore.Streams.BlockReadEventArgs-1.html
+  name: BlockReadEventArgs<T>
+  nameWithType: BlockReadEventArgs<T>
+  fullName: SilverCraft.CSCore.Streams.BlockReadEventArgs<T>
+  nameWithType.vb: BlockReadEventArgs(Of T)
+  fullName.vb: SilverCraft.CSCore.Streams.BlockReadEventArgs(Of T)
+  name.vb: BlockReadEventArgs(Of T)
+  spec.csharp:
+  - uid: SilverCraft.CSCore.Streams.BlockReadEventArgs`1
+    name: BlockReadEventArgs
+    href: SilverCraft.CSCore.Streams.BlockReadEventArgs-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: SilverCraft.CSCore.Streams.BlockReadEventArgs`1
+    name: BlockReadEventArgs
+    href: SilverCraft.CSCore.Streams.BlockReadEventArgs-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: SilverCraft.CSCore.Streams.BufferSource
+  commentId: T:SilverCraft.CSCore.Streams.BufferSource
+  href: SilverCraft.CSCore.Streams.BufferSource.html
+  name: BufferSource
+  nameWithType: BufferSource
+  fullName: SilverCraft.CSCore.Streams.BufferSource
+- uid: SilverCraft.CSCore.Streams.CachedSoundSource
+  commentId: T:SilverCraft.CSCore.Streams.CachedSoundSource
+  href: SilverCraft.CSCore.Streams.CachedSoundSource.html
+  name: CachedSoundSource
+  nameWithType: CachedSoundSource
+  fullName: SilverCraft.CSCore.Streams.CachedSoundSource
+- uid: SilverCraft.CSCore.Streams.FadeInOut
+  commentId: T:SilverCraft.CSCore.Streams.FadeInOut
+  href: SilverCraft.CSCore.Streams.FadeInOut.html
+  name: FadeInOut
+  nameWithType: FadeInOut
+  fullName: SilverCraft.CSCore.Streams.FadeInOut
+- uid: SilverCraft.CSCore.Streams.GainSource
+  commentId: T:SilverCraft.CSCore.Streams.GainSource
+  href: SilverCraft.CSCore.Streams.GainSource.html
+  name: GainSource
+  nameWithType: GainSource
+  fullName: SilverCraft.CSCore.Streams.GainSource
+- uid: SilverCraft.CSCore.Streams.IFadeStrategy
+  commentId: T:SilverCraft.CSCore.Streams.IFadeStrategy
+  parent: SilverCraft.CSCore.Streams
+  href: SilverCraft.CSCore.Streams.IFadeStrategy.html
+  name: IFadeStrategy
+  nameWithType: IFadeStrategy
+  fullName: SilverCraft.CSCore.Streams.IFadeStrategy
+- uid: SilverCraft.CSCore.Streams.LinearFadeStrategy
+  commentId: T:SilverCraft.CSCore.Streams.LinearFadeStrategy
+  href: SilverCraft.CSCore.Streams.LinearFadeStrategy.html
+  name: LinearFadeStrategy
+  nameWithType: LinearFadeStrategy
+  fullName: SilverCraft.CSCore.Streams.LinearFadeStrategy
+- uid: SilverCraft.CSCore.Streams.LoopStream
+  commentId: T:SilverCraft.CSCore.Streams.LoopStream
+  href: SilverCraft.CSCore.Streams.LoopStream.html
+  name: LoopStream
+  nameWithType: LoopStream
+  fullName: SilverCraft.CSCore.Streams.LoopStream
+- uid: SilverCraft.CSCore.Streams.MonoToStereoSource
+  commentId: T:SilverCraft.CSCore.Streams.MonoToStereoSource
+  href: SilverCraft.CSCore.Streams.MonoToStereoSource.html
+  name: MonoToStereoSource
+  nameWithType: MonoToStereoSource
+  fullName: SilverCraft.CSCore.Streams.MonoToStereoSource
+- uid: SilverCraft.CSCore.Streams.NotificationSource
+  commentId: T:SilverCraft.CSCore.Streams.NotificationSource
+  href: SilverCraft.CSCore.Streams.NotificationSource.html
+  name: NotificationSource
+  nameWithType: NotificationSource
+  fullName: SilverCraft.CSCore.Streams.NotificationSource
+- uid: SilverCraft.CSCore.Streams.PanSource
+  commentId: T:SilverCraft.CSCore.Streams.PanSource
+  href: SilverCraft.CSCore.Streams.PanSource.html
+  name: PanSource
+  nameWithType: PanSource
+  fullName: SilverCraft.CSCore.Streams.PanSource
+- uid: SilverCraft.CSCore.Streams.PeakEventArgs
+  commentId: T:SilverCraft.CSCore.Streams.PeakEventArgs
+  href: SilverCraft.CSCore.Streams.PeakEventArgs.html
+  name: PeakEventArgs
+  nameWithType: PeakEventArgs
+  fullName: SilverCraft.CSCore.Streams.PeakEventArgs
+- uid: SilverCraft.CSCore.Streams.PeakMeter
+  commentId: T:SilverCraft.CSCore.Streams.PeakMeter
+  href: SilverCraft.CSCore.Streams.PeakMeter.html
+  name: PeakMeter
+  nameWithType: PeakMeter
+  fullName: SilverCraft.CSCore.Streams.PeakMeter
+- uid: SilverCraft.CSCore.Streams.SimpleNotificationSource
+  commentId: T:SilverCraft.CSCore.Streams.SimpleNotificationSource
+  href: SilverCraft.CSCore.Streams.SimpleNotificationSource.html
+  name: SimpleNotificationSource
+  nameWithType: SimpleNotificationSource
+  fullName: SilverCraft.CSCore.Streams.SimpleNotificationSource
+- uid: SilverCraft.CSCore.Streams.SineGenerator
+  commentId: T:SilverCraft.CSCore.Streams.SineGenerator
+  href: SilverCraft.CSCore.Streams.SineGenerator.html
+  name: SineGenerator
+  nameWithType: SineGenerator
+  fullName: SilverCraft.CSCore.Streams.SineGenerator
+- uid: SilverCraft.CSCore.Streams.SingleBlockNotificationStream
+  commentId: T:SilverCraft.CSCore.Streams.SingleBlockNotificationStream
+  href: SilverCraft.CSCore.Streams.SingleBlockNotificationStream.html
+  name: SingleBlockNotificationStream
+  nameWithType: SingleBlockNotificationStream
+  fullName: SilverCraft.CSCore.Streams.SingleBlockNotificationStream
+- uid: SilverCraft.CSCore.Streams.SingleBlockReadEventArgs
+  commentId: T:SilverCraft.CSCore.Streams.SingleBlockReadEventArgs
+  href: SilverCraft.CSCore.Streams.SingleBlockReadEventArgs.html
+  name: SingleBlockReadEventArgs
+  nameWithType: SingleBlockReadEventArgs
+  fullName: SilverCraft.CSCore.Streams.SingleBlockReadEventArgs
+- uid: SilverCraft.CSCore.Streams.SoundInSource
+  commentId: T:SilverCraft.CSCore.Streams.SoundInSource
+  href: SilverCraft.CSCore.Streams.SoundInSource.html
+  name: SoundInSource
+  nameWithType: SoundInSource
+  fullName: SilverCraft.CSCore.Streams.SoundInSource
+- uid: SilverCraft.CSCore.Streams.StereoToMonoSource
+  commentId: T:SilverCraft.CSCore.Streams.StereoToMonoSource
+  href: SilverCraft.CSCore.Streams.StereoToMonoSource.html
+  name: StereoToMonoSource
+  nameWithType: StereoToMonoSource
+  fullName: SilverCraft.CSCore.Streams.StereoToMonoSource
+- uid: SilverCraft.CSCore.Streams.SynchronizedWaveSource`2
+  commentId: T:SilverCraft.CSCore.Streams.SynchronizedWaveSource`2
+  parent: SilverCraft.CSCore.Streams
+  href: SilverCraft.CSCore.Streams.SynchronizedWaveSource-2.html
+  name: SynchronizedWaveSource<TBaseSource, T>
+  nameWithType: SynchronizedWaveSource<TBaseSource, T>
+  fullName: SilverCraft.CSCore.Streams.SynchronizedWaveSource<TBaseSource, T>
+  nameWithType.vb: SynchronizedWaveSource(Of TBaseSource, T)
+  fullName.vb: SilverCraft.CSCore.Streams.SynchronizedWaveSource(Of TBaseSource, T)
+  name.vb: SynchronizedWaveSource(Of TBaseSource, T)
+  spec.csharp:
+  - uid: SilverCraft.CSCore.Streams.SynchronizedWaveSource`2
+    name: SynchronizedWaveSource
+    href: SilverCraft.CSCore.Streams.SynchronizedWaveSource-2.html
+  - name: <
+  - name: TBaseSource
+  - name: ','
+  - name: " "
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: SilverCraft.CSCore.Streams.SynchronizedWaveSource`2
+    name: SynchronizedWaveSource
+    href: SilverCraft.CSCore.Streams.SynchronizedWaveSource-2.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TBaseSource
+  - name: ','
+  - name: " "
+  - name: T
+  - name: )
+- uid: SilverCraft.CSCore.Streams.VolumeSource
+  commentId: T:SilverCraft.CSCore.Streams.VolumeSource
+  parent: SilverCraft.CSCore.Streams
+  href: SilverCraft.CSCore.Streams.VolumeSource.html
+  name: VolumeSource
+  nameWithType: VolumeSource
+  fullName: SilverCraft.CSCore.Streams.VolumeSource
+- uid: SilverCraft.CSCore.Streams.WriteableBufferingSource
+  commentId: T:SilverCraft.CSCore.Streams.WriteableBufferingSource
+  href: SilverCraft.CSCore.Streams.WriteableBufferingSource.html
+  name: WriteableBufferingSource
+  nameWithType: WriteableBufferingSource
+  fullName: SilverCraft.CSCore.Streams.WriteableBufferingSource
+- uid: SilverCraft.CSCore.Streams
+  commentId: N:SilverCraft.CSCore.Streams
+  href: SilverCraft.html
+  name: SilverCraft.CSCore.Streams
+  nameWithType: SilverCraft.CSCore.Streams
+  fullName: SilverCraft.CSCore.Streams
+  spec.csharp:
+  - uid: SilverCraft
+    name: SilverCraft
+    href: SilverCraft.html
+  - name: .
+  - uid: SilverCraft.CSCore
+    name: CSCore
+    href: SilverCraft.CSCore.html
+  - name: .
+  - uid: SilverCraft.CSCore.Streams
+    name: Streams
+    href: SilverCraft.CSCore.Streams.html
+  spec.vb:
+  - uid: SilverCraft
+    name: SilverCraft
+    href: SilverCraft.html
+  - name: .
+  - uid: SilverCraft.CSCore
+    name: CSCore
+    href: SilverCraft.CSCore.html
+  - name: .
+  - uid: SilverCraft.CSCore.Streams
+    name: Streams
+    href: SilverCraft.CSCore.Streams.html

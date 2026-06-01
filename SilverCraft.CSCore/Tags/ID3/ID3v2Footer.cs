@@ -1,6 +1,10 @@
 ﻿
 namespace SilverCraft.CSCore.Tags.ID3
 {
+    /// <summary>
+    /// Represents the footer section of an ID3v2 tag structure, typically located at the end of the file data.
+    /// This footer contains metadata about the overall size and versioning information for the tag.
+    /// </summary>
     public class ID3v2Footer
     {
         public const int FooterLength = 10;

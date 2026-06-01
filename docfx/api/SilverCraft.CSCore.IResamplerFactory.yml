@@ -1,0 +1,256 @@
+### YamlMime:ManagedReference
+items:
+- uid: SilverCraft.CSCore.IResamplerFactory
+  commentId: T:SilverCraft.CSCore.IResamplerFactory
+  id: IResamplerFactory
+  parent: SilverCraft.CSCore
+  children:
+  - SilverCraft.CSCore.IResamplerFactory.CreateResampler(SilverCraft.CSCore.ISampleSource,System.Int32)
+  - SilverCraft.CSCore.IResamplerFactory.CreateResampler(SilverCraft.CSCore.IWaveSource,System.Int32)
+  langs:
+  - csharp
+  - vb
+  name: IResamplerFactory
+  nameWithType: IResamplerFactory
+  fullName: SilverCraft.CSCore.IResamplerFactory
+  type: Interface
+  source:
+    remote:
+      path: SilverCraft.CSCore/IResamplerFactory.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: IResamplerFactory
+    path: ../SilverCraft.CSCore/IResamplerFactory.cs
+    startLine: 2
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore
+  syntax:
+    content: public interface IResamplerFactory
+    content.vb: Public Interface IResamplerFactory
+  extensionMethods:
+  - SilverCraft.CSCore.IResamplerFactory.SilverCraft.CSCore.FluentExtensions.Synchronized``2
+- uid: SilverCraft.CSCore.IResamplerFactory.CreateResampler(SilverCraft.CSCore.IWaveSource,System.Int32)
+  commentId: M:SilverCraft.CSCore.IResamplerFactory.CreateResampler(SilverCraft.CSCore.IWaveSource,System.Int32)
+  id: CreateResampler(SilverCraft.CSCore.IWaveSource,System.Int32)
+  parent: SilverCraft.CSCore.IResamplerFactory
+  langs:
+  - csharp
+  - vb
+  name: CreateResampler(IWaveSource, int)
+  nameWithType: IResamplerFactory.CreateResampler(IWaveSource, int)
+  fullName: SilverCraft.CSCore.IResamplerFactory.CreateResampler(SilverCraft.CSCore.IWaveSource, int)
+  type: Method
+  source:
+    remote:
+      path: SilverCraft.CSCore/IResamplerFactory.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: CreateResampler
+    path: ../SilverCraft.CSCore/IResamplerFactory.cs
+    startLine: 4
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore
+  syntax:
+    content: IWaveSource CreateResampler(IWaveSource waveSource, int targetSampleRate)
+    parameters:
+    - id: waveSource
+      type: SilverCraft.CSCore.IWaveSource
+    - id: targetSampleRate
+      type: System.Int32
+    return:
+      type: SilverCraft.CSCore.IWaveSource
+    content.vb: Function CreateResampler(waveSource As IWaveSource, targetSampleRate As Integer) As IWaveSource
+  overload: SilverCraft.CSCore.IResamplerFactory.CreateResampler*
+  nameWithType.vb: IResamplerFactory.CreateResampler(IWaveSource, Integer)
+  fullName.vb: SilverCraft.CSCore.IResamplerFactory.CreateResampler(SilverCraft.CSCore.IWaveSource, Integer)
+  name.vb: CreateResampler(IWaveSource, Integer)
+- uid: SilverCraft.CSCore.IResamplerFactory.CreateResampler(SilverCraft.CSCore.ISampleSource,System.Int32)
+  commentId: M:SilverCraft.CSCore.IResamplerFactory.CreateResampler(SilverCraft.CSCore.ISampleSource,System.Int32)
+  id: CreateResampler(SilverCraft.CSCore.ISampleSource,System.Int32)
+  parent: SilverCraft.CSCore.IResamplerFactory
+  langs:
+  - csharp
+  - vb
+  name: CreateResampler(ISampleSource, int)
+  nameWithType: IResamplerFactory.CreateResampler(ISampleSource, int)
+  fullName: SilverCraft.CSCore.IResamplerFactory.CreateResampler(SilverCraft.CSCore.ISampleSource, int)
+  type: Method
+  source:
+    remote:
+      path: SilverCraft.CSCore/IResamplerFactory.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: CreateResampler
+    path: ../SilverCraft.CSCore/IResamplerFactory.cs
+    startLine: 5
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore
+  syntax:
+    content: ISampleSource CreateResampler(ISampleSource sampleSource, int targetSampleRate)
+    parameters:
+    - id: sampleSource
+      type: SilverCraft.CSCore.ISampleSource
+    - id: targetSampleRate
+      type: System.Int32
+    return:
+      type: SilverCraft.CSCore.ISampleSource
+    content.vb: Function CreateResampler(sampleSource As ISampleSource, targetSampleRate As Integer) As ISampleSource
+  overload: SilverCraft.CSCore.IResamplerFactory.CreateResampler*
+  nameWithType.vb: IResamplerFactory.CreateResampler(ISampleSource, Integer)
+  fullName.vb: SilverCraft.CSCore.IResamplerFactory.CreateResampler(SilverCraft.CSCore.ISampleSource, Integer)
+  name.vb: CreateResampler(ISampleSource, Integer)
+references:
+- uid: SilverCraft.CSCore
+  commentId: N:SilverCraft.CSCore
+  href: SilverCraft.html
+  name: SilverCraft.CSCore
+  nameWithType: SilverCraft.CSCore
+  fullName: SilverCraft.CSCore
+  spec.csharp:
+  - uid: SilverCraft
+    name: SilverCraft
+    href: SilverCraft.html
+  - name: .
+  - uid: SilverCraft.CSCore
+    name: CSCore
+    href: SilverCraft.CSCore.html
+  spec.vb:
+  - uid: SilverCraft
+    name: SilverCraft
+    href: SilverCraft.html
+  - name: .
+  - uid: SilverCraft.CSCore
+    name: CSCore
+    href: SilverCraft.CSCore.html
+- uid: SilverCraft.CSCore.IResamplerFactory.SilverCraft.CSCore.FluentExtensions.Synchronized``2
+  commentId: M:SilverCraft.CSCore.FluentExtensions.Synchronized``2(``0)
+  parent: SilverCraft.CSCore.FluentExtensions
+  definition: SilverCraft.CSCore.FluentExtensions.Synchronized``2(``0)
+  href: SilverCraft.CSCore.FluentExtensions.html#SilverCraft_CSCore_FluentExtensions_Synchronized__2___0_
+  name: Synchronized<IResamplerFactory, T>(IResamplerFactory)
+  nameWithType: FluentExtensions.Synchronized<IResamplerFactory, T>(IResamplerFactory)
+  fullName: SilverCraft.CSCore.FluentExtensions.Synchronized<SilverCraft.CSCore.IResamplerFactory, T>(SilverCraft.CSCore.IResamplerFactory)
+  nameWithType.vb: FluentExtensions.Synchronized(Of IResamplerFactory, T)(IResamplerFactory)
+  fullName.vb: SilverCraft.CSCore.FluentExtensions.Synchronized(Of SilverCraft.CSCore.IResamplerFactory, T)(SilverCraft.CSCore.IResamplerFactory)
+  name.vb: Synchronized(Of IResamplerFactory, T)(IResamplerFactory)
+  spec.csharp:
+  - uid: SilverCraft.CSCore.FluentExtensions.Synchronized``2(SilverCraft.CSCore.IResamplerFactory)
+    name: Synchronized
+    href: SilverCraft.CSCore.FluentExtensions.html#SilverCraft_CSCore_FluentExtensions_Synchronized__2___0_
+  - name: <
+  - uid: SilverCraft.CSCore.IResamplerFactory
+    name: IResamplerFactory
+    href: SilverCraft.CSCore.IResamplerFactory.html
+  - name: ','
+  - name: " "
+  - name: T
+  - name: '>'
+  - name: (
+  - uid: SilverCraft.CSCore.IResamplerFactory
+    name: IResamplerFactory
+    href: SilverCraft.CSCore.IResamplerFactory.html
+  - name: )
+  spec.vb:
+  - uid: SilverCraft.CSCore.FluentExtensions.Synchronized``2(SilverCraft.CSCore.IResamplerFactory)
+    name: Synchronized
+    href: SilverCraft.CSCore.FluentExtensions.html#SilverCraft_CSCore_FluentExtensions_Synchronized__2___0_
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: SilverCraft.CSCore.IResamplerFactory
+    name: IResamplerFactory
+    href: SilverCraft.CSCore.IResamplerFactory.html
+  - name: ','
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: SilverCraft.CSCore.IResamplerFactory
+    name: IResamplerFactory
+    href: SilverCraft.CSCore.IResamplerFactory.html
+  - name: )
+- uid: SilverCraft.CSCore.FluentExtensions.Synchronized``2(``0)
+  commentId: M:SilverCraft.CSCore.FluentExtensions.Synchronized``2(``0)
+  href: SilverCraft.CSCore.FluentExtensions.html#SilverCraft_CSCore_FluentExtensions_Synchronized__2___0_
+  name: Synchronized<TAudioSource, T>(TAudioSource)
+  nameWithType: FluentExtensions.Synchronized<TAudioSource, T>(TAudioSource)
+  fullName: SilverCraft.CSCore.FluentExtensions.Synchronized<TAudioSource, T>(TAudioSource)
+  nameWithType.vb: FluentExtensions.Synchronized(Of TAudioSource, T)(TAudioSource)
+  fullName.vb: SilverCraft.CSCore.FluentExtensions.Synchronized(Of TAudioSource, T)(TAudioSource)
+  name.vb: Synchronized(Of TAudioSource, T)(TAudioSource)
+  spec.csharp:
+  - uid: SilverCraft.CSCore.FluentExtensions.Synchronized``2(``0)
+    name: Synchronized
+    href: SilverCraft.CSCore.FluentExtensions.html#SilverCraft_CSCore_FluentExtensions_Synchronized__2___0_
+  - name: <
+  - name: TAudioSource
+  - name: ','
+  - name: " "
+  - name: T
+  - name: '>'
+  - name: (
+  - name: TAudioSource
+  - name: )
+  spec.vb:
+  - uid: SilverCraft.CSCore.FluentExtensions.Synchronized``2(``0)
+    name: Synchronized
+    href: SilverCraft.CSCore.FluentExtensions.html#SilverCraft_CSCore_FluentExtensions_Synchronized__2___0_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TAudioSource
+  - name: ','
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - name: TAudioSource
+  - name: )
+- uid: SilverCraft.CSCore.FluentExtensions
+  commentId: T:SilverCraft.CSCore.FluentExtensions
+  parent: SilverCraft.CSCore
+  href: SilverCraft.CSCore.FluentExtensions.html
+  name: FluentExtensions
+  nameWithType: FluentExtensions
+  fullName: SilverCraft.CSCore.FluentExtensions
+- uid: SilverCraft.CSCore.IResamplerFactory.CreateResampler*
+  commentId: Overload:SilverCraft.CSCore.IResamplerFactory.CreateResampler
+  href: SilverCraft.CSCore.IResamplerFactory.html#SilverCraft_CSCore_IResamplerFactory_CreateResampler_SilverCraft_CSCore_IWaveSource_System_Int32_
+  name: CreateResampler
+  nameWithType: IResamplerFactory.CreateResampler
+  fullName: SilverCraft.CSCore.IResamplerFactory.CreateResampler
+- uid: SilverCraft.CSCore.IWaveSource
+  commentId: T:SilverCraft.CSCore.IWaveSource
+  parent: SilverCraft.CSCore
+  href: SilverCraft.CSCore.IWaveSource.html
+  name: IWaveSource
+  nameWithType: IWaveSource
+  fullName: SilverCraft.CSCore.IWaveSource
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: SilverCraft.CSCore.ISampleSource
+  commentId: T:SilverCraft.CSCore.ISampleSource
+  parent: SilverCraft.CSCore
+  href: SilverCraft.CSCore.ISampleSource.html
+  name: ISampleSource
+  nameWithType: ISampleSource
+  fullName: SilverCraft.CSCore.ISampleSource

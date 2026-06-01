@@ -1,0 +1,1737 @@
+### YamlMime:ManagedReference
+items:
+- uid: SilverCraft.CSCore.DSP.ChannelMatrix
+  commentId: T:SilverCraft.CSCore.DSP.ChannelMatrix
+  id: ChannelMatrix
+  parent: SilverCraft.CSCore.DSP
+  children:
+  - SilverCraft.CSCore.DSP.ChannelMatrix.#ctor(SilverCraft.CSCore.ChannelMask,SilverCraft.CSCore.ChannelMask)
+  - SilverCraft.CSCore.DSP.ChannelMatrix.FiveDotOneSurroundWithRearToMono
+  - SilverCraft.CSCore.DSP.ChannelMatrix.FiveDotOneSurroundWithRearToSevenDotOne
+  - SilverCraft.CSCore.DSP.ChannelMatrix.FiveDotOneSurroundWithRearToStereo
+  - SilverCraft.CSCore.DSP.ChannelMatrix.FiveDotOneSurroundWithSideToMono
+  - SilverCraft.CSCore.DSP.ChannelMatrix.FiveDotOneSurroundWithSideToSevenDotOne
+  - SilverCraft.CSCore.DSP.ChannelMatrix.FiveDotOneSurroundWithSideToStereo
+  - SilverCraft.CSCore.DSP.ChannelMatrix.Flip
+  - SilverCraft.CSCore.DSP.ChannelMatrix.GetMatrix(SilverCraft.CSCore.ChannelMask,SilverCraft.CSCore.ChannelMask)
+  - SilverCraft.CSCore.DSP.ChannelMatrix.GetMatrix(SilverCraft.CSCore.WaveFormat,SilverCraft.CSCore.WaveFormat)
+  - SilverCraft.CSCore.DSP.ChannelMatrix.GetOneDimensionalMatrix
+  - SilverCraft.CSCore.DSP.ChannelMatrix.Height
+  - SilverCraft.CSCore.DSP.ChannelMatrix.InputChannelCount
+  - SilverCraft.CSCore.DSP.ChannelMatrix.InputMask
+  - SilverCraft.CSCore.DSP.ChannelMatrix.Item(System.Int32,System.Int32)
+  - SilverCraft.CSCore.DSP.ChannelMatrix.MonoToFiveDotOneSurroundWithRear
+  - SilverCraft.CSCore.DSP.ChannelMatrix.MonoToFiveDotOneSurroundWithSide
+  - SilverCraft.CSCore.DSP.ChannelMatrix.MonoToSevenDotOneSurround
+  - SilverCraft.CSCore.DSP.ChannelMatrix.MonoToStereoMatrix
+  - SilverCraft.CSCore.DSP.ChannelMatrix.OutputChannelCount
+  - SilverCraft.CSCore.DSP.ChannelMatrix.OutputMask
+  - SilverCraft.CSCore.DSP.ChannelMatrix.QuadraphonicToStereo
+  - SilverCraft.CSCore.DSP.ChannelMatrix.SetMatrix(System.Single[0:,0:])
+  - SilverCraft.CSCore.DSP.ChannelMatrix.SevenDotOneSurroundToFiveDotOneSurroundWithRear
+  - SilverCraft.CSCore.DSP.ChannelMatrix.SevenDotOneSurroundToFiveDotOneSurroundWithSide
+  - SilverCraft.CSCore.DSP.ChannelMatrix.SevenDotOneSurroundToMono
+  - SilverCraft.CSCore.DSP.ChannelMatrix.SevenDotOneSurroundToStereo
+  - SilverCraft.CSCore.DSP.ChannelMatrix.StereoToFiveDotOneSurroundWithRear
+  - SilverCraft.CSCore.DSP.ChannelMatrix.StereoToFiveDotOneSurroundWithSide
+  - SilverCraft.CSCore.DSP.ChannelMatrix.StereoToMonoMatrix
+  - SilverCraft.CSCore.DSP.ChannelMatrix.StereoToQuadraphonic
+  - SilverCraft.CSCore.DSP.ChannelMatrix.StereoToSevenDotOneSurround
+  - SilverCraft.CSCore.DSP.ChannelMatrix.Width
+  langs:
+  - csharp
+  - vb
+  name: ChannelMatrix
+  nameWithType: ChannelMatrix
+  fullName: SilverCraft.CSCore.DSP.ChannelMatrix
+  type: Class
+  source:
+    remote:
+      path: SilverCraft.CSCore/DSP/ChannelMatrix.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: ChannelMatrix
+    path: ../SilverCraft.CSCore/DSP/ChannelMatrix.cs
+    startLine: 10
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.DSP
+  summary: >-
+    Represents a channel conversion matrix. For more information, see
+
+    <a href="http://msdn.microsoft.com/en-us/library/windows/desktop/ff819070(v=vs.85).aspx">http://msdn.microsoft.com/en-us/library/windows/desktop/ff819070(v=vs.85).aspx</a>.
+  example: []
+  syntax:
+    content: public class ChannelMatrix
+    content.vb: Public Class ChannelMatrix
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  extensionMethods:
+  - SilverCraft.CSCore.DSP.ChannelMatrix.SilverCraft.CSCore.FluentExtensions.Synchronized``2
+- uid: SilverCraft.CSCore.DSP.ChannelMatrix.StereoToFiveDotOneSurroundWithRear
+  commentId: F:SilverCraft.CSCore.DSP.ChannelMatrix.StereoToFiveDotOneSurroundWithRear
+  id: StereoToFiveDotOneSurroundWithRear
+  parent: SilverCraft.CSCore.DSP.ChannelMatrix
+  langs:
+  - csharp
+  - vb
+  name: StereoToFiveDotOneSurroundWithRear
+  nameWithType: ChannelMatrix.StereoToFiveDotOneSurroundWithRear
+  fullName: SilverCraft.CSCore.DSP.ChannelMatrix.StereoToFiveDotOneSurroundWithRear
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/DSP/ChannelMatrix.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: StereoToFiveDotOneSurroundWithRear
+    path: ../SilverCraft.CSCore/DSP/ChannelMatrix.cs
+    startLine: 15
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.DSP
+  summary: Defines a stereo to 5.1 surround (with rear) channel conversion matrix.
+  example: []
+  syntax:
+    content: public static readonly ChannelMatrix StereoToFiveDotOneSurroundWithRear
+    return:
+      type: SilverCraft.CSCore.DSP.ChannelMatrix
+    content.vb: Public Shared ReadOnly StereoToFiveDotOneSurroundWithRear As ChannelMatrix
+- uid: SilverCraft.CSCore.DSP.ChannelMatrix.FiveDotOneSurroundWithRearToStereo
+  commentId: F:SilverCraft.CSCore.DSP.ChannelMatrix.FiveDotOneSurroundWithRearToStereo
+  id: FiveDotOneSurroundWithRearToStereo
+  parent: SilverCraft.CSCore.DSP.ChannelMatrix
+  langs:
+  - csharp
+  - vb
+  name: FiveDotOneSurroundWithRearToStereo
+  nameWithType: ChannelMatrix.FiveDotOneSurroundWithRearToStereo
+  fullName: SilverCraft.CSCore.DSP.ChannelMatrix.FiveDotOneSurroundWithRearToStereo
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/DSP/ChannelMatrix.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: FiveDotOneSurroundWithRearToStereo
+    path: ../SilverCraft.CSCore/DSP/ChannelMatrix.cs
+    startLine: 20
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.DSP
+  summary: Defines a 5.1 surround (with rear) to stereo channel conversion matrix.
+  example: []
+  syntax:
+    content: public static readonly ChannelMatrix FiveDotOneSurroundWithRearToStereo
+    return:
+      type: SilverCraft.CSCore.DSP.ChannelMatrix
+    content.vb: Public Shared ReadOnly FiveDotOneSurroundWithRearToStereo As ChannelMatrix
+- uid: SilverCraft.CSCore.DSP.ChannelMatrix.StereoToFiveDotOneSurroundWithSide
+  commentId: F:SilverCraft.CSCore.DSP.ChannelMatrix.StereoToFiveDotOneSurroundWithSide
+  id: StereoToFiveDotOneSurroundWithSide
+  parent: SilverCraft.CSCore.DSP.ChannelMatrix
+  langs:
+  - csharp
+  - vb
+  name: StereoToFiveDotOneSurroundWithSide
+  nameWithType: ChannelMatrix.StereoToFiveDotOneSurroundWithSide
+  fullName: SilverCraft.CSCore.DSP.ChannelMatrix.StereoToFiveDotOneSurroundWithSide
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/DSP/ChannelMatrix.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: StereoToFiveDotOneSurroundWithSide
+    path: ../SilverCraft.CSCore/DSP/ChannelMatrix.cs
+    startLine: 25
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.DSP
+  summary: Defines a stereo to 5.1 surround (with side) channel conversion matrix.
+  example: []
+  syntax:
+    content: public static readonly ChannelMatrix StereoToFiveDotOneSurroundWithSide
+    return:
+      type: SilverCraft.CSCore.DSP.ChannelMatrix
+    content.vb: Public Shared ReadOnly StereoToFiveDotOneSurroundWithSide As ChannelMatrix
+- uid: SilverCraft.CSCore.DSP.ChannelMatrix.FiveDotOneSurroundWithSideToStereo
+  commentId: F:SilverCraft.CSCore.DSP.ChannelMatrix.FiveDotOneSurroundWithSideToStereo
+  id: FiveDotOneSurroundWithSideToStereo
+  parent: SilverCraft.CSCore.DSP.ChannelMatrix
+  langs:
+  - csharp
+  - vb
+  name: FiveDotOneSurroundWithSideToStereo
+  nameWithType: ChannelMatrix.FiveDotOneSurroundWithSideToStereo
+  fullName: SilverCraft.CSCore.DSP.ChannelMatrix.FiveDotOneSurroundWithSideToStereo
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/DSP/ChannelMatrix.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: FiveDotOneSurroundWithSideToStereo
+    path: ../SilverCraft.CSCore/DSP/ChannelMatrix.cs
+    startLine: 30
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.DSP
+  summary: Defines a 5.1 surround (with side) to stereo channel conversion matrix.
+  example: []
+  syntax:
+    content: public static readonly ChannelMatrix FiveDotOneSurroundWithSideToStereo
+    return:
+      type: SilverCraft.CSCore.DSP.ChannelMatrix
+    content.vb: Public Shared ReadOnly FiveDotOneSurroundWithSideToStereo As ChannelMatrix
+- uid: SilverCraft.CSCore.DSP.ChannelMatrix.StereoToSevenDotOneSurround
+  commentId: F:SilverCraft.CSCore.DSP.ChannelMatrix.StereoToSevenDotOneSurround
+  id: StereoToSevenDotOneSurround
+  parent: SilverCraft.CSCore.DSP.ChannelMatrix
+  langs:
+  - csharp
+  - vb
+  name: StereoToSevenDotOneSurround
+  nameWithType: ChannelMatrix.StereoToSevenDotOneSurround
+  fullName: SilverCraft.CSCore.DSP.ChannelMatrix.StereoToSevenDotOneSurround
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/DSP/ChannelMatrix.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: StereoToSevenDotOneSurround
+    path: ../SilverCraft.CSCore/DSP/ChannelMatrix.cs
+    startLine: 35
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.DSP
+  summary: Defines a stereo to 7.1 surround channel conversion matrix.
+  example: []
+  syntax:
+    content: public static readonly ChannelMatrix StereoToSevenDotOneSurround
+    return:
+      type: SilverCraft.CSCore.DSP.ChannelMatrix
+    content.vb: Public Shared ReadOnly StereoToSevenDotOneSurround As ChannelMatrix
+- uid: SilverCraft.CSCore.DSP.ChannelMatrix.SevenDotOneSurroundToStereo
+  commentId: F:SilverCraft.CSCore.DSP.ChannelMatrix.SevenDotOneSurroundToStereo
+  id: SevenDotOneSurroundToStereo
+  parent: SilverCraft.CSCore.DSP.ChannelMatrix
+  langs:
+  - csharp
+  - vb
+  name: SevenDotOneSurroundToStereo
+  nameWithType: ChannelMatrix.SevenDotOneSurroundToStereo
+  fullName: SilverCraft.CSCore.DSP.ChannelMatrix.SevenDotOneSurroundToStereo
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/DSP/ChannelMatrix.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: SevenDotOneSurroundToStereo
+    path: ../SilverCraft.CSCore/DSP/ChannelMatrix.cs
+    startLine: 40
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.DSP
+  summary: Defines a 7.1 surround to stereo channel conversion matrix.
+  example: []
+  syntax:
+    content: public static readonly ChannelMatrix SevenDotOneSurroundToStereo
+    return:
+      type: SilverCraft.CSCore.DSP.ChannelMatrix
+    content.vb: Public Shared ReadOnly SevenDotOneSurroundToStereo As ChannelMatrix
+- uid: SilverCraft.CSCore.DSP.ChannelMatrix.MonoToFiveDotOneSurroundWithRear
+  commentId: F:SilverCraft.CSCore.DSP.ChannelMatrix.MonoToFiveDotOneSurroundWithRear
+  id: MonoToFiveDotOneSurroundWithRear
+  parent: SilverCraft.CSCore.DSP.ChannelMatrix
+  langs:
+  - csharp
+  - vb
+  name: MonoToFiveDotOneSurroundWithRear
+  nameWithType: ChannelMatrix.MonoToFiveDotOneSurroundWithRear
+  fullName: SilverCraft.CSCore.DSP.ChannelMatrix.MonoToFiveDotOneSurroundWithRear
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/DSP/ChannelMatrix.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: MonoToFiveDotOneSurroundWithRear
+    path: ../SilverCraft.CSCore/DSP/ChannelMatrix.cs
+    startLine: 47
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.DSP
+  summary: Defines a mono to 5.1 surround (with rear) channel conversion matrix.
+  example: []
+  syntax:
+    content: public static readonly ChannelMatrix MonoToFiveDotOneSurroundWithRear
+    return:
+      type: SilverCraft.CSCore.DSP.ChannelMatrix
+    content.vb: Public Shared ReadOnly MonoToFiveDotOneSurroundWithRear As ChannelMatrix
+- uid: SilverCraft.CSCore.DSP.ChannelMatrix.FiveDotOneSurroundWithRearToMono
+  commentId: F:SilverCraft.CSCore.DSP.ChannelMatrix.FiveDotOneSurroundWithRearToMono
+  id: FiveDotOneSurroundWithRearToMono
+  parent: SilverCraft.CSCore.DSP.ChannelMatrix
+  langs:
+  - csharp
+  - vb
+  name: FiveDotOneSurroundWithRearToMono
+  nameWithType: ChannelMatrix.FiveDotOneSurroundWithRearToMono
+  fullName: SilverCraft.CSCore.DSP.ChannelMatrix.FiveDotOneSurroundWithRearToMono
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/DSP/ChannelMatrix.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: FiveDotOneSurroundWithRearToMono
+    path: ../SilverCraft.CSCore/DSP/ChannelMatrix.cs
+    startLine: 52
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.DSP
+  summary: Defines a 5.1 surround (with rear) to mono channel conversion matrix.
+  example: []
+  syntax:
+    content: public static readonly ChannelMatrix FiveDotOneSurroundWithRearToMono
+    return:
+      type: SilverCraft.CSCore.DSP.ChannelMatrix
+    content.vb: Public Shared ReadOnly FiveDotOneSurroundWithRearToMono As ChannelMatrix
+- uid: SilverCraft.CSCore.DSP.ChannelMatrix.MonoToFiveDotOneSurroundWithSide
+  commentId: F:SilverCraft.CSCore.DSP.ChannelMatrix.MonoToFiveDotOneSurroundWithSide
+  id: MonoToFiveDotOneSurroundWithSide
+  parent: SilverCraft.CSCore.DSP.ChannelMatrix
+  langs:
+  - csharp
+  - vb
+  name: MonoToFiveDotOneSurroundWithSide
+  nameWithType: ChannelMatrix.MonoToFiveDotOneSurroundWithSide
+  fullName: SilverCraft.CSCore.DSP.ChannelMatrix.MonoToFiveDotOneSurroundWithSide
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/DSP/ChannelMatrix.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: MonoToFiveDotOneSurroundWithSide
+    path: ../SilverCraft.CSCore/DSP/ChannelMatrix.cs
+    startLine: 58
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.DSP
+  summary: Defines a mono to 5.1 surround (with side) channel conversion matrix.
+  example: []
+  syntax:
+    content: public static readonly ChannelMatrix MonoToFiveDotOneSurroundWithSide
+    return:
+      type: SilverCraft.CSCore.DSP.ChannelMatrix
+    content.vb: Public Shared ReadOnly MonoToFiveDotOneSurroundWithSide As ChannelMatrix
+- uid: SilverCraft.CSCore.DSP.ChannelMatrix.FiveDotOneSurroundWithSideToMono
+  commentId: F:SilverCraft.CSCore.DSP.ChannelMatrix.FiveDotOneSurroundWithSideToMono
+  id: FiveDotOneSurroundWithSideToMono
+  parent: SilverCraft.CSCore.DSP.ChannelMatrix
+  langs:
+  - csharp
+  - vb
+  name: FiveDotOneSurroundWithSideToMono
+  nameWithType: ChannelMatrix.FiveDotOneSurroundWithSideToMono
+  fullName: SilverCraft.CSCore.DSP.ChannelMatrix.FiveDotOneSurroundWithSideToMono
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/DSP/ChannelMatrix.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: FiveDotOneSurroundWithSideToMono
+    path: ../SilverCraft.CSCore/DSP/ChannelMatrix.cs
+    startLine: 63
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.DSP
+  summary: Defines a 5.1 surround (with side) to mono channel conversion matrix.
+  example: []
+  syntax:
+    content: public static readonly ChannelMatrix FiveDotOneSurroundWithSideToMono
+    return:
+      type: SilverCraft.CSCore.DSP.ChannelMatrix
+    content.vb: Public Shared ReadOnly FiveDotOneSurroundWithSideToMono As ChannelMatrix
+- uid: SilverCraft.CSCore.DSP.ChannelMatrix.MonoToSevenDotOneSurround
+  commentId: F:SilverCraft.CSCore.DSP.ChannelMatrix.MonoToSevenDotOneSurround
+  id: MonoToSevenDotOneSurround
+  parent: SilverCraft.CSCore.DSP.ChannelMatrix
+  langs:
+  - csharp
+  - vb
+  name: MonoToSevenDotOneSurround
+  nameWithType: ChannelMatrix.MonoToSevenDotOneSurround
+  fullName: SilverCraft.CSCore.DSP.ChannelMatrix.MonoToSevenDotOneSurround
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/DSP/ChannelMatrix.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: MonoToSevenDotOneSurround
+    path: ../SilverCraft.CSCore/DSP/ChannelMatrix.cs
+    startLine: 68
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.DSP
+  summary: Defines a mono to 7.1 surround channel conversion matrix.
+  example: []
+  syntax:
+    content: public static readonly ChannelMatrix MonoToSevenDotOneSurround
+    return:
+      type: SilverCraft.CSCore.DSP.ChannelMatrix
+    content.vb: Public Shared ReadOnly MonoToSevenDotOneSurround As ChannelMatrix
+- uid: SilverCraft.CSCore.DSP.ChannelMatrix.SevenDotOneSurroundToMono
+  commentId: F:SilverCraft.CSCore.DSP.ChannelMatrix.SevenDotOneSurroundToMono
+  id: SevenDotOneSurroundToMono
+  parent: SilverCraft.CSCore.DSP.ChannelMatrix
+  langs:
+  - csharp
+  - vb
+  name: SevenDotOneSurroundToMono
+  nameWithType: ChannelMatrix.SevenDotOneSurroundToMono
+  fullName: SilverCraft.CSCore.DSP.ChannelMatrix.SevenDotOneSurroundToMono
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/DSP/ChannelMatrix.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: SevenDotOneSurroundToMono
+    path: ../SilverCraft.CSCore/DSP/ChannelMatrix.cs
+    startLine: 73
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.DSP
+  summary: Defines a 7.1 surround channel to mono conversion matrix.
+  example: []
+  syntax:
+    content: public static readonly ChannelMatrix SevenDotOneSurroundToMono
+    return:
+      type: SilverCraft.CSCore.DSP.ChannelMatrix
+    content.vb: Public Shared ReadOnly SevenDotOneSurroundToMono As ChannelMatrix
+- uid: SilverCraft.CSCore.DSP.ChannelMatrix.StereoToMonoMatrix
+  commentId: F:SilverCraft.CSCore.DSP.ChannelMatrix.StereoToMonoMatrix
+  id: StereoToMonoMatrix
+  parent: SilverCraft.CSCore.DSP.ChannelMatrix
+  langs:
+  - csharp
+  - vb
+  name: StereoToMonoMatrix
+  nameWithType: ChannelMatrix.StereoToMonoMatrix
+  fullName: SilverCraft.CSCore.DSP.ChannelMatrix.StereoToMonoMatrix
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/DSP/ChannelMatrix.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: StereoToMonoMatrix
+    path: ../SilverCraft.CSCore/DSP/ChannelMatrix.cs
+    startLine: 78
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.DSP
+  summary: Defines a stereo to mono conversion matrix.
+  example: []
+  syntax:
+    content: public static readonly ChannelMatrix StereoToMonoMatrix
+    return:
+      type: SilverCraft.CSCore.DSP.ChannelMatrix
+    content.vb: Public Shared ReadOnly StereoToMonoMatrix As ChannelMatrix
+- uid: SilverCraft.CSCore.DSP.ChannelMatrix.MonoToStereoMatrix
+  commentId: F:SilverCraft.CSCore.DSP.ChannelMatrix.MonoToStereoMatrix
+  id: MonoToStereoMatrix
+  parent: SilverCraft.CSCore.DSP.ChannelMatrix
+  langs:
+  - csharp
+  - vb
+  name: MonoToStereoMatrix
+  nameWithType: ChannelMatrix.MonoToStereoMatrix
+  fullName: SilverCraft.CSCore.DSP.ChannelMatrix.MonoToStereoMatrix
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/DSP/ChannelMatrix.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: MonoToStereoMatrix
+    path: ../SilverCraft.CSCore/DSP/ChannelMatrix.cs
+    startLine: 83
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.DSP
+  summary: Defines a mono to stereo conversion matrix.
+  example: []
+  syntax:
+    content: public static readonly ChannelMatrix MonoToStereoMatrix
+    return:
+      type: SilverCraft.CSCore.DSP.ChannelMatrix
+    content.vb: Public Shared ReadOnly MonoToStereoMatrix As ChannelMatrix
+- uid: SilverCraft.CSCore.DSP.ChannelMatrix.FiveDotOneSurroundWithRearToSevenDotOne
+  commentId: F:SilverCraft.CSCore.DSP.ChannelMatrix.FiveDotOneSurroundWithRearToSevenDotOne
+  id: FiveDotOneSurroundWithRearToSevenDotOne
+  parent: SilverCraft.CSCore.DSP.ChannelMatrix
+  langs:
+  - csharp
+  - vb
+  name: FiveDotOneSurroundWithRearToSevenDotOne
+  nameWithType: ChannelMatrix.FiveDotOneSurroundWithRearToSevenDotOne
+  fullName: SilverCraft.CSCore.DSP.ChannelMatrix.FiveDotOneSurroundWithRearToSevenDotOne
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/DSP/ChannelMatrix.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: FiveDotOneSurroundWithRearToSevenDotOne
+    path: ../SilverCraft.CSCore/DSP/ChannelMatrix.cs
+    startLine: 88
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.DSP
+  summary: Defines a 5.1 surround (with rear) to 7.1 surround channel conversion matrix.
+  example: []
+  syntax:
+    content: public static readonly ChannelMatrix FiveDotOneSurroundWithRearToSevenDotOne
+    return:
+      type: SilverCraft.CSCore.DSP.ChannelMatrix
+    content.vb: Public Shared ReadOnly FiveDotOneSurroundWithRearToSevenDotOne As ChannelMatrix
+- uid: SilverCraft.CSCore.DSP.ChannelMatrix.SevenDotOneSurroundToFiveDotOneSurroundWithRear
+  commentId: F:SilverCraft.CSCore.DSP.ChannelMatrix.SevenDotOneSurroundToFiveDotOneSurroundWithRear
+  id: SevenDotOneSurroundToFiveDotOneSurroundWithRear
+  parent: SilverCraft.CSCore.DSP.ChannelMatrix
+  langs:
+  - csharp
+  - vb
+  name: SevenDotOneSurroundToFiveDotOneSurroundWithRear
+  nameWithType: ChannelMatrix.SevenDotOneSurroundToFiveDotOneSurroundWithRear
+  fullName: SilverCraft.CSCore.DSP.ChannelMatrix.SevenDotOneSurroundToFiveDotOneSurroundWithRear
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/DSP/ChannelMatrix.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: SevenDotOneSurroundToFiveDotOneSurroundWithRear
+    path: ../SilverCraft.CSCore/DSP/ChannelMatrix.cs
+    startLine: 93
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.DSP
+  summary: Defines a 7.1 surround to 5.1 surround (with rear) channel conversion matrix
+  example: []
+  syntax:
+    content: public static readonly ChannelMatrix SevenDotOneSurroundToFiveDotOneSurroundWithRear
+    return:
+      type: SilverCraft.CSCore.DSP.ChannelMatrix
+    content.vb: Public Shared ReadOnly SevenDotOneSurroundToFiveDotOneSurroundWithRear As ChannelMatrix
+- uid: SilverCraft.CSCore.DSP.ChannelMatrix.FiveDotOneSurroundWithSideToSevenDotOne
+  commentId: F:SilverCraft.CSCore.DSP.ChannelMatrix.FiveDotOneSurroundWithSideToSevenDotOne
+  id: FiveDotOneSurroundWithSideToSevenDotOne
+  parent: SilverCraft.CSCore.DSP.ChannelMatrix
+  langs:
+  - csharp
+  - vb
+  name: FiveDotOneSurroundWithSideToSevenDotOne
+  nameWithType: ChannelMatrix.FiveDotOneSurroundWithSideToSevenDotOne
+  fullName: SilverCraft.CSCore.DSP.ChannelMatrix.FiveDotOneSurroundWithSideToSevenDotOne
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/DSP/ChannelMatrix.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: FiveDotOneSurroundWithSideToSevenDotOne
+    path: ../SilverCraft.CSCore/DSP/ChannelMatrix.cs
+    startLine: 98
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.DSP
+  summary: Defines a 5.1 surround (with side) to 7.1 surround channel conversion matrix.
+  example: []
+  syntax:
+    content: public static readonly ChannelMatrix FiveDotOneSurroundWithSideToSevenDotOne
+    return:
+      type: SilverCraft.CSCore.DSP.ChannelMatrix
+    content.vb: Public Shared ReadOnly FiveDotOneSurroundWithSideToSevenDotOne As ChannelMatrix
+- uid: SilverCraft.CSCore.DSP.ChannelMatrix.SevenDotOneSurroundToFiveDotOneSurroundWithSide
+  commentId: F:SilverCraft.CSCore.DSP.ChannelMatrix.SevenDotOneSurroundToFiveDotOneSurroundWithSide
+  id: SevenDotOneSurroundToFiveDotOneSurroundWithSide
+  parent: SilverCraft.CSCore.DSP.ChannelMatrix
+  langs:
+  - csharp
+  - vb
+  name: SevenDotOneSurroundToFiveDotOneSurroundWithSide
+  nameWithType: ChannelMatrix.SevenDotOneSurroundToFiveDotOneSurroundWithSide
+  fullName: SilverCraft.CSCore.DSP.ChannelMatrix.SevenDotOneSurroundToFiveDotOneSurroundWithSide
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/DSP/ChannelMatrix.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: SevenDotOneSurroundToFiveDotOneSurroundWithSide
+    path: ../SilverCraft.CSCore/DSP/ChannelMatrix.cs
+    startLine: 103
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.DSP
+  summary: Defines a 7.1 surround to 5.1 surround (with side) channel conversion matrix
+  example: []
+  syntax:
+    content: public static readonly ChannelMatrix SevenDotOneSurroundToFiveDotOneSurroundWithSide
+    return:
+      type: SilverCraft.CSCore.DSP.ChannelMatrix
+    content.vb: Public Shared ReadOnly SevenDotOneSurroundToFiveDotOneSurroundWithSide As ChannelMatrix
+- uid: SilverCraft.CSCore.DSP.ChannelMatrix.QuadraphonicToStereo
+  commentId: F:SilverCraft.CSCore.DSP.ChannelMatrix.QuadraphonicToStereo
+  id: QuadraphonicToStereo
+  parent: SilverCraft.CSCore.DSP.ChannelMatrix
+  langs:
+  - csharp
+  - vb
+  name: QuadraphonicToStereo
+  nameWithType: ChannelMatrix.QuadraphonicToStereo
+  fullName: SilverCraft.CSCore.DSP.ChannelMatrix.QuadraphonicToStereo
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/DSP/ChannelMatrix.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: QuadraphonicToStereo
+    path: ../SilverCraft.CSCore/DSP/ChannelMatrix.cs
+    startLine: 108
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.DSP
+  summary: Defines a quadraphonic to stereo channel conversion matrix.
+  example: []
+  syntax:
+    content: public static readonly ChannelMatrix QuadraphonicToStereo
+    return:
+      type: SilverCraft.CSCore.DSP.ChannelMatrix
+    content.vb: Public Shared ReadOnly QuadraphonicToStereo As ChannelMatrix
+- uid: SilverCraft.CSCore.DSP.ChannelMatrix.StereoToQuadraphonic
+  commentId: F:SilverCraft.CSCore.DSP.ChannelMatrix.StereoToQuadraphonic
+  id: StereoToQuadraphonic
+  parent: SilverCraft.CSCore.DSP.ChannelMatrix
+  langs:
+  - csharp
+  - vb
+  name: StereoToQuadraphonic
+  nameWithType: ChannelMatrix.StereoToQuadraphonic
+  fullName: SilverCraft.CSCore.DSP.ChannelMatrix.StereoToQuadraphonic
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/DSP/ChannelMatrix.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: StereoToQuadraphonic
+    path: ../SilverCraft.CSCore/DSP/ChannelMatrix.cs
+    startLine: 113
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.DSP
+  summary: Defines a stereo to quadraphonic channel conversion matrix.
+  example: []
+  syntax:
+    content: public static readonly ChannelMatrix StereoToQuadraphonic
+    return:
+      type: SilverCraft.CSCore.DSP.ChannelMatrix
+    content.vb: Public Shared ReadOnly StereoToQuadraphonic As ChannelMatrix
+- uid: SilverCraft.CSCore.DSP.ChannelMatrix.GetMatrix(SilverCraft.CSCore.ChannelMask,SilverCraft.CSCore.ChannelMask)
+  commentId: M:SilverCraft.CSCore.DSP.ChannelMatrix.GetMatrix(SilverCraft.CSCore.ChannelMask,SilverCraft.CSCore.ChannelMask)
+  id: GetMatrix(SilverCraft.CSCore.ChannelMask,SilverCraft.CSCore.ChannelMask)
+  parent: SilverCraft.CSCore.DSP.ChannelMatrix
+  langs:
+  - csharp
+  - vb
+  name: GetMatrix(ChannelMask, ChannelMask)
+  nameWithType: ChannelMatrix.GetMatrix(ChannelMask, ChannelMask)
+  fullName: SilverCraft.CSCore.DSP.ChannelMatrix.GetMatrix(SilverCraft.CSCore.ChannelMask, SilverCraft.CSCore.ChannelMask)
+  type: Method
+  source:
+    remote:
+      path: SilverCraft.CSCore/DSP/ChannelMatrix.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: GetMatrix
+    path: ../SilverCraft.CSCore/DSP/ChannelMatrix.cs
+    startLine: 123
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.DSP
+  summary: Gets a <xref href="SilverCraft.CSCore.DSP.ChannelMatrix" data-throw-if-not-resolved="false"></xref> to convert between the two specified <xref href="SilverCraft.CSCore.ChannelMask" data-throw-if-not-resolved="false"></xref>s.
+  example: []
+  syntax:
+    content: public static ChannelMatrix GetMatrix(ChannelMask from, ChannelMask to)
+    parameters:
+    - id: from
+      type: SilverCraft.CSCore.ChannelMask
+      description: The <xref href="SilverCraft.CSCore.ChannelMask" data-throw-if-not-resolved="false"></xref> of the input stream.
+    - id: to
+      type: SilverCraft.CSCore.ChannelMask
+      description: The desired <xref href="SilverCraft.CSCore.ChannelMask" data-throw-if-not-resolved="false"></xref> of the output stream.
+    return:
+      type: SilverCraft.CSCore.DSP.ChannelMatrix
+      description: A <xref href="SilverCraft.CSCore.DSP.ChannelMatrix" data-throw-if-not-resolved="false"></xref> to convert between the two specified <xref href="SilverCraft.CSCore.ChannelMask" data-throw-if-not-resolved="false"></xref>s.
+    content.vb: Public Shared Function GetMatrix(from As ChannelMask, [to] As ChannelMask) As ChannelMatrix
+  overload: SilverCraft.CSCore.DSP.ChannelMatrix.GetMatrix*
+  exceptions:
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: <code class="paramref">from</code> equals <code class="paramref">to</code>
+  - type: System.Collections.Generic.KeyNotFoundException
+    commentId: T:System.Collections.Generic.KeyNotFoundException
+    description: No accurate <xref href="SilverCraft.CSCore.DSP.ChannelMatrix" data-throw-if-not-resolved="false"></xref> was found.
+- uid: SilverCraft.CSCore.DSP.ChannelMatrix.GetMatrix(SilverCraft.CSCore.WaveFormat,SilverCraft.CSCore.WaveFormat)
+  commentId: M:SilverCraft.CSCore.DSP.ChannelMatrix.GetMatrix(SilverCraft.CSCore.WaveFormat,SilverCraft.CSCore.WaveFormat)
+  id: GetMatrix(SilverCraft.CSCore.WaveFormat,SilverCraft.CSCore.WaveFormat)
+  parent: SilverCraft.CSCore.DSP.ChannelMatrix
+  langs:
+  - csharp
+  - vb
+  name: GetMatrix(WaveFormat, WaveFormat)
+  nameWithType: ChannelMatrix.GetMatrix(WaveFormat, WaveFormat)
+  fullName: SilverCraft.CSCore.DSP.ChannelMatrix.GetMatrix(SilverCraft.CSCore.WaveFormat, SilverCraft.CSCore.WaveFormat)
+  type: Method
+  source:
+    remote:
+      path: SilverCraft.CSCore/DSP/ChannelMatrix.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: GetMatrix
+    path: ../SilverCraft.CSCore/DSP/ChannelMatrix.cs
+    startLine: 138
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.DSP
+  summary: Gets a <xref href="SilverCraft.CSCore.DSP.ChannelMatrix" data-throw-if-not-resolved="false"></xref> to convert between the two specified formats.
+  example: []
+  syntax:
+    content: public static ChannelMatrix GetMatrix(WaveFormat from, WaveFormat to)
+    parameters:
+    - id: from
+      type: SilverCraft.CSCore.WaveFormat
+      description: The input waveformat.
+    - id: to
+      type: SilverCraft.CSCore.WaveFormat
+      description: The output waveformat.
+    return:
+      type: SilverCraft.CSCore.DSP.ChannelMatrix
+      description: >-
+        A <xref href="SilverCraft.CSCore.DSP.ChannelMatrix" data-throw-if-not-resolved="false"></xref> to convert between the two specified formats.
+            If no channelmask could be found, the return value is <code>null</code>.
+    content.vb: Public Shared Function GetMatrix(from As WaveFormat, [to] As WaveFormat) As ChannelMatrix
+  overload: SilverCraft.CSCore.DSP.ChannelMatrix.GetMatrix*
+  exceptions:
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: The channelmask of the input format equals the channelmask of the output format.
+  - type: System.Collections.Generic.KeyNotFoundException
+    commentId: T:System.Collections.Generic.KeyNotFoundException
+    description: No accurate <xref href="SilverCraft.CSCore.DSP.ChannelMatrix" data-throw-if-not-resolved="false"></xref> was found.
+- uid: SilverCraft.CSCore.DSP.ChannelMatrix.#ctor(SilverCraft.CSCore.ChannelMask,SilverCraft.CSCore.ChannelMask)
+  commentId: M:SilverCraft.CSCore.DSP.ChannelMatrix.#ctor(SilverCraft.CSCore.ChannelMask,SilverCraft.CSCore.ChannelMask)
+  id: '#ctor(SilverCraft.CSCore.ChannelMask,SilverCraft.CSCore.ChannelMask)'
+  parent: SilverCraft.CSCore.DSP.ChannelMatrix
+  langs:
+  - csharp
+  - vb
+  name: ChannelMatrix(ChannelMask, ChannelMask)
+  nameWithType: ChannelMatrix.ChannelMatrix(ChannelMask, ChannelMask)
+  fullName: SilverCraft.CSCore.DSP.ChannelMatrix.ChannelMatrix(SilverCraft.CSCore.ChannelMask, SilverCraft.CSCore.ChannelMask)
+  type: Constructor
+  source:
+    remote:
+      path: SilverCraft.CSCore/DSP/ChannelMatrix.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: .ctor
+    path: ../SilverCraft.CSCore/DSP/ChannelMatrix.cs
+    startLine: 341
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.DSP
+  summary: Initializes a new instance of the <xref href="SilverCraft.CSCore.DSP.ChannelMatrix" data-throw-if-not-resolved="false"></xref> class.
+  example: []
+  syntax:
+    content: public ChannelMatrix(ChannelMask inputMask, ChannelMask outputMask)
+    parameters:
+    - id: inputMask
+      type: SilverCraft.CSCore.ChannelMask
+      description: The <xref href="SilverCraft.CSCore.ChannelMask" data-throw-if-not-resolved="false"></xref> of the input signal.
+    - id: outputMask
+      type: SilverCraft.CSCore.ChannelMask
+      description: The <xref href="SilverCraft.CSCore.ChannelMask" data-throw-if-not-resolved="false"></xref> of the output signal.
+    content.vb: Public Sub New(inputMask As ChannelMask, outputMask As ChannelMask)
+  overload: SilverCraft.CSCore.DSP.ChannelMatrix.#ctor*
+  exceptions:
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: Invalid <code class="paramref">inputMask</code>/<code class="paramref">outputMask</code>.
+  nameWithType.vb: ChannelMatrix.New(ChannelMask, ChannelMask)
+  fullName.vb: SilverCraft.CSCore.DSP.ChannelMatrix.New(SilverCraft.CSCore.ChannelMask, SilverCraft.CSCore.ChannelMask)
+  name.vb: New(ChannelMask, ChannelMask)
+- uid: SilverCraft.CSCore.DSP.ChannelMatrix.InputMask
+  commentId: P:SilverCraft.CSCore.DSP.ChannelMatrix.InputMask
+  id: InputMask
+  parent: SilverCraft.CSCore.DSP.ChannelMatrix
+  langs:
+  - csharp
+  - vb
+  name: InputMask
+  nameWithType: ChannelMatrix.InputMask
+  fullName: SilverCraft.CSCore.DSP.ChannelMatrix.InputMask
+  type: Property
+  source:
+    remote:
+      path: SilverCraft.CSCore/DSP/ChannelMatrix.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: InputMask
+    path: ../SilverCraft.CSCore/DSP/ChannelMatrix.cs
+    startLine: 367
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.DSP
+  summary: Gets the <xref href="SilverCraft.CSCore.ChannelMask" data-throw-if-not-resolved="false"></xref> of the input signal.
+  example: []
+  syntax:
+    content: public ChannelMask InputMask { get; }
+    parameters: []
+    return:
+      type: SilverCraft.CSCore.ChannelMask
+    content.vb: Public ReadOnly Property InputMask As ChannelMask
+  overload: SilverCraft.CSCore.DSP.ChannelMatrix.InputMask*
+- uid: SilverCraft.CSCore.DSP.ChannelMatrix.OutputMask
+  commentId: P:SilverCraft.CSCore.DSP.ChannelMatrix.OutputMask
+  id: OutputMask
+  parent: SilverCraft.CSCore.DSP.ChannelMatrix
+  langs:
+  - csharp
+  - vb
+  name: OutputMask
+  nameWithType: ChannelMatrix.OutputMask
+  fullName: SilverCraft.CSCore.DSP.ChannelMatrix.OutputMask
+  type: Property
+  source:
+    remote:
+      path: SilverCraft.CSCore/DSP/ChannelMatrix.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: OutputMask
+    path: ../SilverCraft.CSCore/DSP/ChannelMatrix.cs
+    startLine: 372
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.DSP
+  summary: Gets the <xref href="SilverCraft.CSCore.ChannelMask" data-throw-if-not-resolved="false"></xref> of the output signal.
+  example: []
+  syntax:
+    content: public ChannelMask OutputMask { get; }
+    parameters: []
+    return:
+      type: SilverCraft.CSCore.ChannelMask
+    content.vb: Public ReadOnly Property OutputMask As ChannelMask
+  overload: SilverCraft.CSCore.DSP.ChannelMatrix.OutputMask*
+- uid: SilverCraft.CSCore.DSP.ChannelMatrix.Height
+  commentId: P:SilverCraft.CSCore.DSP.ChannelMatrix.Height
+  id: Height
+  parent: SilverCraft.CSCore.DSP.ChannelMatrix
+  langs:
+  - csharp
+  - vb
+  name: Height
+  nameWithType: ChannelMatrix.Height
+  fullName: SilverCraft.CSCore.DSP.ChannelMatrix.Height
+  type: Property
+  source:
+    remote:
+      path: SilverCraft.CSCore/DSP/ChannelMatrix.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: Height
+    path: ../SilverCraft.CSCore/DSP/ChannelMatrix.cs
+    startLine: 377
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.DSP
+  summary: Gets the number of rows of the channel conversion matrix.
+  example: []
+  syntax:
+    content: public int Height { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public ReadOnly Property Height As Integer
+  overload: SilverCraft.CSCore.DSP.ChannelMatrix.Height*
+- uid: SilverCraft.CSCore.DSP.ChannelMatrix.Width
+  commentId: P:SilverCraft.CSCore.DSP.ChannelMatrix.Width
+  id: Width
+  parent: SilverCraft.CSCore.DSP.ChannelMatrix
+  langs:
+  - csharp
+  - vb
+  name: Width
+  nameWithType: ChannelMatrix.Width
+  fullName: SilverCraft.CSCore.DSP.ChannelMatrix.Width
+  type: Property
+  source:
+    remote:
+      path: SilverCraft.CSCore/DSP/ChannelMatrix.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: Width
+    path: ../SilverCraft.CSCore/DSP/ChannelMatrix.cs
+    startLine: 382
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.DSP
+  summary: Gets the number of columns of the channel conversion matrix.
+  example: []
+  syntax:
+    content: public int Width { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public ReadOnly Property Width As Integer
+  overload: SilverCraft.CSCore.DSP.ChannelMatrix.Width*
+- uid: SilverCraft.CSCore.DSP.ChannelMatrix.InputChannelCount
+  commentId: P:SilverCraft.CSCore.DSP.ChannelMatrix.InputChannelCount
+  id: InputChannelCount
+  parent: SilverCraft.CSCore.DSP.ChannelMatrix
+  langs:
+  - csharp
+  - vb
+  name: InputChannelCount
+  nameWithType: ChannelMatrix.InputChannelCount
+  fullName: SilverCraft.CSCore.DSP.ChannelMatrix.InputChannelCount
+  type: Property
+  source:
+    remote:
+      path: SilverCraft.CSCore/DSP/ChannelMatrix.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: InputChannelCount
+    path: ../SilverCraft.CSCore/DSP/ChannelMatrix.cs
+    startLine: 391
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.DSP
+  summary: Gets the input signals number of channels.
+  remarks: >-
+    The <xref href="SilverCraft.CSCore.DSP.ChannelMatrix.InputChannelCount" data-throw-if-not-resolved="false"></xref> property always returns the same value as the <xref href="SilverCraft.CSCore.DSP.ChannelMatrix.Height" data-throw-if-not-resolved="false"></xref>
+
+    property.
+  example: []
+  syntax:
+    content: public int InputChannelCount { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public ReadOnly Property InputChannelCount As Integer
+  overload: SilverCraft.CSCore.DSP.ChannelMatrix.InputChannelCount*
+- uid: SilverCraft.CSCore.DSP.ChannelMatrix.OutputChannelCount
+  commentId: P:SilverCraft.CSCore.DSP.ChannelMatrix.OutputChannelCount
+  id: OutputChannelCount
+  parent: SilverCraft.CSCore.DSP.ChannelMatrix
+  langs:
+  - csharp
+  - vb
+  name: OutputChannelCount
+  nameWithType: ChannelMatrix.OutputChannelCount
+  fullName: SilverCraft.CSCore.DSP.ChannelMatrix.OutputChannelCount
+  type: Property
+  source:
+    remote:
+      path: SilverCraft.CSCore/DSP/ChannelMatrix.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: OutputChannelCount
+    path: ../SilverCraft.CSCore/DSP/ChannelMatrix.cs
+    startLine: 400
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.DSP
+  summary: Gets the output signals number of channels.
+  remarks: >-
+    The <xref href="SilverCraft.CSCore.DSP.ChannelMatrix.OutputChannelCount" data-throw-if-not-resolved="false"></xref> property always returns the same value as the <xref href="SilverCraft.CSCore.DSP.ChannelMatrix.Width" data-throw-if-not-resolved="false"></xref>
+
+    property.
+  example: []
+  syntax:
+    content: public int OutputChannelCount { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public ReadOnly Property OutputChannelCount As Integer
+  overload: SilverCraft.CSCore.DSP.ChannelMatrix.OutputChannelCount*
+- uid: SilverCraft.CSCore.DSP.ChannelMatrix.Item(System.Int32,System.Int32)
+  commentId: P:SilverCraft.CSCore.DSP.ChannelMatrix.Item(System.Int32,System.Int32)
+  id: Item(System.Int32,System.Int32)
+  parent: SilverCraft.CSCore.DSP.ChannelMatrix
+  langs:
+  - csharp
+  - vb
+  name: this[int, int]
+  nameWithType: ChannelMatrix.this[int, int]
+  fullName: SilverCraft.CSCore.DSP.ChannelMatrix.this[int, int]
+  type: Property
+  source:
+    remote:
+      path: SilverCraft.CSCore/DSP/ChannelMatrix.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: this[]
+    path: ../SilverCraft.CSCore/DSP/ChannelMatrix.cs
+    startLine: 408
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.DSP
+  summary: Gets or sets a <xref href="SilverCraft.CSCore.DSP.ChannelMatrixElement" data-throw-if-not-resolved="false"></xref> of the <xref href="SilverCraft.CSCore.DSP.ChannelMatrix" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public ChannelMatrixElement this[int input, int output] { get; set; }
+    parameters:
+    - id: input
+      type: System.Int32
+      description: The zero-based index of the input channel.
+    - id: output
+      type: System.Int32
+      description: The zero-based index of the output channel.
+    return:
+      type: SilverCraft.CSCore.DSP.ChannelMatrixElement
+      description: The <xref href="SilverCraft.CSCore.DSP.ChannelMatrixElement" data-throw-if-not-resolved="false"></xref> of the <xref href="SilverCraft.CSCore.DSP.ChannelMatrix" data-throw-if-not-resolved="false"></xref> at the specified position.
+    content.vb: Public Default Property this[](input As Integer, output As Integer) As ChannelMatrixElement
+  overload: SilverCraft.CSCore.DSP.ChannelMatrix.Item*
+  nameWithType.vb: ChannelMatrix.this[](Integer, Integer)
+  fullName.vb: SilverCraft.CSCore.DSP.ChannelMatrix.this[](Integer, Integer)
+  name.vb: this[](Integer, Integer)
+- uid: SilverCraft.CSCore.DSP.ChannelMatrix.SetMatrix(System.Single[0:,0:])
+  commentId: M:SilverCraft.CSCore.DSP.ChannelMatrix.SetMatrix(System.Single[0:,0:])
+  id: SetMatrix(System.Single[0:,0:])
+  parent: SilverCraft.CSCore.DSP.ChannelMatrix
+  langs:
+  - csharp
+  - vb
+  name: SetMatrix(float[,])
+  nameWithType: ChannelMatrix.SetMatrix(float[,])
+  fullName: SilverCraft.CSCore.DSP.ChannelMatrix.SetMatrix(float[,])
+  type: Method
+  source:
+    remote:
+      path: SilverCraft.CSCore/DSP/ChannelMatrix.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: SetMatrix
+    path: ../SilverCraft.CSCore/DSP/ChannelMatrix.cs
+    startLine: 420
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.DSP
+  summary: >-
+    Sets the channel conversion matrix.
+
+    The x-axis of the <code class="paramref">matrix</code> specifies the output channels. The y-axis
+
+    of the <code class="paramref">matrix</code> specifies the input channels.
+  example: []
+  syntax:
+    content: public void SetMatrix(float[,] matrix)
+    parameters:
+    - id: matrix
+      type: System.Single[,]
+      description: Channel conversion matrix to use.
+    content.vb: Public Sub SetMatrix(matrix As Single(,))
+  overload: SilverCraft.CSCore.DSP.ChannelMatrix.SetMatrix*
+  nameWithType.vb: ChannelMatrix.SetMatrix(Single(,))
+  fullName.vb: SilverCraft.CSCore.DSP.ChannelMatrix.SetMatrix(Single(,))
+  name.vb: SetMatrix(Single(,))
+- uid: SilverCraft.CSCore.DSP.ChannelMatrix.GetOneDimensionalMatrix
+  commentId: M:SilverCraft.CSCore.DSP.ChannelMatrix.GetOneDimensionalMatrix
+  id: GetOneDimensionalMatrix
+  parent: SilverCraft.CSCore.DSP.ChannelMatrix
+  langs:
+  - csharp
+  - vb
+  name: GetOneDimensionalMatrix()
+  nameWithType: ChannelMatrix.GetOneDimensionalMatrix()
+  fullName: SilverCraft.CSCore.DSP.ChannelMatrix.GetOneDimensionalMatrix()
+  type: Method
+  source:
+    remote:
+      path: SilverCraft.CSCore/DSP/ChannelMatrix.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: GetOneDimensionalMatrix
+    path: ../SilverCraft.CSCore/DSP/ChannelMatrix.cs
+    startLine: 442
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.DSP
+  summary: Returns a one dimensional array which contains the channel conversion matrix coefficients.
+  example: []
+  syntax:
+    content: public float[] GetOneDimensionalMatrix()
+    return:
+      type: System.Single[]
+      description: A one dimensional array which contains the channel conversion matrix coefficients
+    content.vb: Public Function GetOneDimensionalMatrix() As Single()
+  overload: SilverCraft.CSCore.DSP.ChannelMatrix.GetOneDimensionalMatrix*
+- uid: SilverCraft.CSCore.DSP.ChannelMatrix.Flip
+  commentId: M:SilverCraft.CSCore.DSP.ChannelMatrix.Flip
+  id: Flip
+  parent: SilverCraft.CSCore.DSP.ChannelMatrix
+  langs:
+  - csharp
+  - vb
+  name: Flip()
+  nameWithType: ChannelMatrix.Flip()
+  fullName: SilverCraft.CSCore.DSP.ChannelMatrix.Flip()
+  type: Method
+  source:
+    remote:
+      path: SilverCraft.CSCore/DSP/ChannelMatrix.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: Flip
+    path: ../SilverCraft.CSCore/DSP/ChannelMatrix.cs
+    startLine: 465
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.DSP
+  summary: Flips the axis of the matrix and returns the new matrix with the flipped axis.
+  remarks: >-
+    This could be typically used in the following scenario: There is a
+
+    5.1 to stereo matrix. By using the <xref href="SilverCraft.CSCore.DSP.ChannelMatrix.Flip" data-throw-if-not-resolved="false"></xref> method the 5.1 to stereo matrix can be
+
+    converted into a stereo to 5.1 matrix.
+  example: []
+  syntax:
+    content: public ChannelMatrix Flip()
+    return:
+      type: SilverCraft.CSCore.DSP.ChannelMatrix
+      description: A matrix with flipped axis.
+    content.vb: Public Function Flip() As ChannelMatrix
+  overload: SilverCraft.CSCore.DSP.ChannelMatrix.Flip*
+references:
+- uid: SilverCraft.CSCore.DSP
+  commentId: N:SilverCraft.CSCore.DSP
+  href: SilverCraft.html
+  name: SilverCraft.CSCore.DSP
+  nameWithType: SilverCraft.CSCore.DSP
+  fullName: SilverCraft.CSCore.DSP
+  spec.csharp:
+  - uid: SilverCraft
+    name: SilverCraft
+    href: SilverCraft.html
+  - name: .
+  - uid: SilverCraft.CSCore
+    name: CSCore
+    href: SilverCraft.CSCore.html
+  - name: .
+  - uid: SilverCraft.CSCore.DSP
+    name: DSP
+    href: SilverCraft.CSCore.DSP.html
+  spec.vb:
+  - uid: SilverCraft
+    name: SilverCraft
+    href: SilverCraft.html
+  - name: .
+  - uid: SilverCraft.CSCore
+    name: CSCore
+    href: SilverCraft.CSCore.html
+  - name: .
+  - uid: SilverCraft.CSCore.DSP
+    name: DSP
+    href: SilverCraft.CSCore.DSP.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: SilverCraft.CSCore.DSP.ChannelMatrix.SilverCraft.CSCore.FluentExtensions.Synchronized``2
+  commentId: M:SilverCraft.CSCore.FluentExtensions.Synchronized``2(``0)
+  parent: SilverCraft.CSCore.FluentExtensions
+  definition: SilverCraft.CSCore.FluentExtensions.Synchronized``2(``0)
+  href: SilverCraft.CSCore.FluentExtensions.html#SilverCraft_CSCore_FluentExtensions_Synchronized__2___0_
+  name: Synchronized<ChannelMatrix, T>(ChannelMatrix)
+  nameWithType: FluentExtensions.Synchronized<ChannelMatrix, T>(ChannelMatrix)
+  fullName: SilverCraft.CSCore.FluentExtensions.Synchronized<SilverCraft.CSCore.DSP.ChannelMatrix, T>(SilverCraft.CSCore.DSP.ChannelMatrix)
+  nameWithType.vb: FluentExtensions.Synchronized(Of ChannelMatrix, T)(ChannelMatrix)
+  fullName.vb: SilverCraft.CSCore.FluentExtensions.Synchronized(Of SilverCraft.CSCore.DSP.ChannelMatrix, T)(SilverCraft.CSCore.DSP.ChannelMatrix)
+  name.vb: Synchronized(Of ChannelMatrix, T)(ChannelMatrix)
+  spec.csharp:
+  - uid: SilverCraft.CSCore.FluentExtensions.Synchronized``2(SilverCraft.CSCore.DSP.ChannelMatrix)
+    name: Synchronized
+    href: SilverCraft.CSCore.FluentExtensions.html#SilverCraft_CSCore_FluentExtensions_Synchronized__2___0_
+  - name: <
+  - uid: SilverCraft.CSCore.DSP.ChannelMatrix
+    name: ChannelMatrix
+    href: SilverCraft.CSCore.DSP.ChannelMatrix.html
+  - name: ','
+  - name: " "
+  - name: T
+  - name: '>'
+  - name: (
+  - uid: SilverCraft.CSCore.DSP.ChannelMatrix
+    name: ChannelMatrix
+    href: SilverCraft.CSCore.DSP.ChannelMatrix.html
+  - name: )
+  spec.vb:
+  - uid: SilverCraft.CSCore.FluentExtensions.Synchronized``2(SilverCraft.CSCore.DSP.ChannelMatrix)
+    name: Synchronized
+    href: SilverCraft.CSCore.FluentExtensions.html#SilverCraft_CSCore_FluentExtensions_Synchronized__2___0_
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: SilverCraft.CSCore.DSP.ChannelMatrix
+    name: ChannelMatrix
+    href: SilverCraft.CSCore.DSP.ChannelMatrix.html
+  - name: ','
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: SilverCraft.CSCore.DSP.ChannelMatrix
+    name: ChannelMatrix
+    href: SilverCraft.CSCore.DSP.ChannelMatrix.html
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: SilverCraft.CSCore.FluentExtensions.Synchronized``2(``0)
+  commentId: M:SilverCraft.CSCore.FluentExtensions.Synchronized``2(``0)
+  href: SilverCraft.CSCore.FluentExtensions.html#SilverCraft_CSCore_FluentExtensions_Synchronized__2___0_
+  name: Synchronized<TAudioSource, T>(TAudioSource)
+  nameWithType: FluentExtensions.Synchronized<TAudioSource, T>(TAudioSource)
+  fullName: SilverCraft.CSCore.FluentExtensions.Synchronized<TAudioSource, T>(TAudioSource)
+  nameWithType.vb: FluentExtensions.Synchronized(Of TAudioSource, T)(TAudioSource)
+  fullName.vb: SilverCraft.CSCore.FluentExtensions.Synchronized(Of TAudioSource, T)(TAudioSource)
+  name.vb: Synchronized(Of TAudioSource, T)(TAudioSource)
+  spec.csharp:
+  - uid: SilverCraft.CSCore.FluentExtensions.Synchronized``2(``0)
+    name: Synchronized
+    href: SilverCraft.CSCore.FluentExtensions.html#SilverCraft_CSCore_FluentExtensions_Synchronized__2___0_
+  - name: <
+  - name: TAudioSource
+  - name: ','
+  - name: " "
+  - name: T
+  - name: '>'
+  - name: (
+  - name: TAudioSource
+  - name: )
+  spec.vb:
+  - uid: SilverCraft.CSCore.FluentExtensions.Synchronized``2(``0)
+    name: Synchronized
+    href: SilverCraft.CSCore.FluentExtensions.html#SilverCraft_CSCore_FluentExtensions_Synchronized__2___0_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TAudioSource
+  - name: ','
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - name: TAudioSource
+  - name: )
+- uid: SilverCraft.CSCore.FluentExtensions
+  commentId: T:SilverCraft.CSCore.FluentExtensions
+  parent: SilverCraft.CSCore
+  href: SilverCraft.CSCore.FluentExtensions.html
+  name: FluentExtensions
+  nameWithType: FluentExtensions
+  fullName: SilverCraft.CSCore.FluentExtensions
+- uid: SilverCraft.CSCore
+  commentId: N:SilverCraft.CSCore
+  href: SilverCraft.html
+  name: SilverCraft.CSCore
+  nameWithType: SilverCraft.CSCore
+  fullName: SilverCraft.CSCore
+  spec.csharp:
+  - uid: SilverCraft
+    name: SilverCraft
+    href: SilverCraft.html
+  - name: .
+  - uid: SilverCraft.CSCore
+    name: CSCore
+    href: SilverCraft.CSCore.html
+  spec.vb:
+  - uid: SilverCraft
+    name: SilverCraft
+    href: SilverCraft.html
+  - name: .
+  - uid: SilverCraft.CSCore
+    name: CSCore
+    href: SilverCraft.CSCore.html
+- uid: SilverCraft.CSCore.DSP.ChannelMatrix
+  commentId: T:SilverCraft.CSCore.DSP.ChannelMatrix
+  parent: SilverCraft.CSCore.DSP
+  href: SilverCraft.CSCore.DSP.ChannelMatrix.html
+  name: ChannelMatrix
+  nameWithType: ChannelMatrix
+  fullName: SilverCraft.CSCore.DSP.ChannelMatrix
+- uid: SilverCraft.CSCore.ChannelMask
+  commentId: T:SilverCraft.CSCore.ChannelMask
+  parent: SilverCraft.CSCore
+  href: SilverCraft.CSCore.ChannelMask.html
+  name: ChannelMask
+  nameWithType: ChannelMask
+  fullName: SilverCraft.CSCore.ChannelMask
+- uid: System.ArgumentException
+  commentId: T:System.ArgumentException
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.argumentexception
+  name: ArgumentException
+  nameWithType: ArgumentException
+  fullName: System.ArgumentException
+- uid: System.Collections.Generic.KeyNotFoundException
+  commentId: T:System.Collections.Generic.KeyNotFoundException
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.keynotfoundexception
+  name: KeyNotFoundException
+  nameWithType: KeyNotFoundException
+  fullName: System.Collections.Generic.KeyNotFoundException
+- uid: SilverCraft.CSCore.DSP.ChannelMatrix.GetMatrix*
+  commentId: Overload:SilverCraft.CSCore.DSP.ChannelMatrix.GetMatrix
+  href: SilverCraft.CSCore.DSP.ChannelMatrix.html#SilverCraft_CSCore_DSP_ChannelMatrix_GetMatrix_SilverCraft_CSCore_ChannelMask_SilverCraft_CSCore_ChannelMask_
+  name: GetMatrix
+  nameWithType: ChannelMatrix.GetMatrix
+  fullName: SilverCraft.CSCore.DSP.ChannelMatrix.GetMatrix
+- uid: SilverCraft.CSCore.WaveFormat
+  commentId: T:SilverCraft.CSCore.WaveFormat
+  parent: SilverCraft.CSCore
+  href: SilverCraft.CSCore.WaveFormat.html
+  name: WaveFormat
+  nameWithType: WaveFormat
+  fullName: SilverCraft.CSCore.WaveFormat
+- uid: SilverCraft.CSCore.DSP.ChannelMatrix.#ctor*
+  commentId: Overload:SilverCraft.CSCore.DSP.ChannelMatrix.#ctor
+  href: SilverCraft.CSCore.DSP.ChannelMatrix.html#SilverCraft_CSCore_DSP_ChannelMatrix__ctor_SilverCraft_CSCore_ChannelMask_SilverCraft_CSCore_ChannelMask_
+  name: ChannelMatrix
+  nameWithType: ChannelMatrix.ChannelMatrix
+  fullName: SilverCraft.CSCore.DSP.ChannelMatrix.ChannelMatrix
+  nameWithType.vb: ChannelMatrix.New
+  fullName.vb: SilverCraft.CSCore.DSP.ChannelMatrix.New
+  name.vb: New
+- uid: SilverCraft.CSCore.DSP.ChannelMatrix.InputMask*
+  commentId: Overload:SilverCraft.CSCore.DSP.ChannelMatrix.InputMask
+  href: SilverCraft.CSCore.DSP.ChannelMatrix.html#SilverCraft_CSCore_DSP_ChannelMatrix_InputMask
+  name: InputMask
+  nameWithType: ChannelMatrix.InputMask
+  fullName: SilverCraft.CSCore.DSP.ChannelMatrix.InputMask
+- uid: SilverCraft.CSCore.DSP.ChannelMatrix.OutputMask*
+  commentId: Overload:SilverCraft.CSCore.DSP.ChannelMatrix.OutputMask
+  href: SilverCraft.CSCore.DSP.ChannelMatrix.html#SilverCraft_CSCore_DSP_ChannelMatrix_OutputMask
+  name: OutputMask
+  nameWithType: ChannelMatrix.OutputMask
+  fullName: SilverCraft.CSCore.DSP.ChannelMatrix.OutputMask
+- uid: SilverCraft.CSCore.DSP.ChannelMatrix.Height*
+  commentId: Overload:SilverCraft.CSCore.DSP.ChannelMatrix.Height
+  href: SilverCraft.CSCore.DSP.ChannelMatrix.html#SilverCraft_CSCore_DSP_ChannelMatrix_Height
+  name: Height
+  nameWithType: ChannelMatrix.Height
+  fullName: SilverCraft.CSCore.DSP.ChannelMatrix.Height
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: SilverCraft.CSCore.DSP.ChannelMatrix.Width*
+  commentId: Overload:SilverCraft.CSCore.DSP.ChannelMatrix.Width
+  href: SilverCraft.CSCore.DSP.ChannelMatrix.html#SilverCraft_CSCore_DSP_ChannelMatrix_Width
+  name: Width
+  nameWithType: ChannelMatrix.Width
+  fullName: SilverCraft.CSCore.DSP.ChannelMatrix.Width
+- uid: SilverCraft.CSCore.DSP.ChannelMatrix.InputChannelCount
+  commentId: P:SilverCraft.CSCore.DSP.ChannelMatrix.InputChannelCount
+  href: SilverCraft.CSCore.DSP.ChannelMatrix.html#SilverCraft_CSCore_DSP_ChannelMatrix_InputChannelCount
+  name: InputChannelCount
+  nameWithType: ChannelMatrix.InputChannelCount
+  fullName: SilverCraft.CSCore.DSP.ChannelMatrix.InputChannelCount
+- uid: SilverCraft.CSCore.DSP.ChannelMatrix.Height
+  commentId: P:SilverCraft.CSCore.DSP.ChannelMatrix.Height
+  href: SilverCraft.CSCore.DSP.ChannelMatrix.html#SilverCraft_CSCore_DSP_ChannelMatrix_Height
+  name: Height
+  nameWithType: ChannelMatrix.Height
+  fullName: SilverCraft.CSCore.DSP.ChannelMatrix.Height
+- uid: SilverCraft.CSCore.DSP.ChannelMatrix.InputChannelCount*
+  commentId: Overload:SilverCraft.CSCore.DSP.ChannelMatrix.InputChannelCount
+  href: SilverCraft.CSCore.DSP.ChannelMatrix.html#SilverCraft_CSCore_DSP_ChannelMatrix_InputChannelCount
+  name: InputChannelCount
+  nameWithType: ChannelMatrix.InputChannelCount
+  fullName: SilverCraft.CSCore.DSP.ChannelMatrix.InputChannelCount
+- uid: SilverCraft.CSCore.DSP.ChannelMatrix.OutputChannelCount
+  commentId: P:SilverCraft.CSCore.DSP.ChannelMatrix.OutputChannelCount
+  href: SilverCraft.CSCore.DSP.ChannelMatrix.html#SilverCraft_CSCore_DSP_ChannelMatrix_OutputChannelCount
+  name: OutputChannelCount
+  nameWithType: ChannelMatrix.OutputChannelCount
+  fullName: SilverCraft.CSCore.DSP.ChannelMatrix.OutputChannelCount
+- uid: SilverCraft.CSCore.DSP.ChannelMatrix.Width
+  commentId: P:SilverCraft.CSCore.DSP.ChannelMatrix.Width
+  href: SilverCraft.CSCore.DSP.ChannelMatrix.html#SilverCraft_CSCore_DSP_ChannelMatrix_Width
+  name: Width
+  nameWithType: ChannelMatrix.Width
+  fullName: SilverCraft.CSCore.DSP.ChannelMatrix.Width
+- uid: SilverCraft.CSCore.DSP.ChannelMatrix.OutputChannelCount*
+  commentId: Overload:SilverCraft.CSCore.DSP.ChannelMatrix.OutputChannelCount
+  href: SilverCraft.CSCore.DSP.ChannelMatrix.html#SilverCraft_CSCore_DSP_ChannelMatrix_OutputChannelCount
+  name: OutputChannelCount
+  nameWithType: ChannelMatrix.OutputChannelCount
+  fullName: SilverCraft.CSCore.DSP.ChannelMatrix.OutputChannelCount
+- uid: SilverCraft.CSCore.DSP.ChannelMatrixElement
+  commentId: T:SilverCraft.CSCore.DSP.ChannelMatrixElement
+  parent: SilverCraft.CSCore.DSP
+  href: SilverCraft.CSCore.DSP.ChannelMatrixElement.html
+  name: ChannelMatrixElement
+  nameWithType: ChannelMatrixElement
+  fullName: SilverCraft.CSCore.DSP.ChannelMatrixElement
+- uid: SilverCraft.CSCore.DSP.ChannelMatrix.Item*
+  commentId: Overload:SilverCraft.CSCore.DSP.ChannelMatrix.Item
+  href: SilverCraft.CSCore.DSP.ChannelMatrix.html#SilverCraft_CSCore_DSP_ChannelMatrix_Item_System_Int32_System_Int32_
+  name: this
+  nameWithType: ChannelMatrix.this
+  fullName: SilverCraft.CSCore.DSP.ChannelMatrix.this
+  nameWithType.vb: ChannelMatrix.this[]
+  fullName.vb: SilverCraft.CSCore.DSP.ChannelMatrix.this[]
+  name.vb: this[]
+- uid: SilverCraft.CSCore.DSP.ChannelMatrix.SetMatrix*
+  commentId: Overload:SilverCraft.CSCore.DSP.ChannelMatrix.SetMatrix
+  href: SilverCraft.CSCore.DSP.ChannelMatrix.html#SilverCraft_CSCore_DSP_ChannelMatrix_SetMatrix_System_Single_0
+  name: SetMatrix
+  nameWithType: ChannelMatrix.SetMatrix
+  fullName: SilverCraft.CSCore.DSP.ChannelMatrix.SetMatrix
+- uid: System.Single[,]
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.single
+  name: float[,]
+  nameWithType: float[,]
+  fullName: float[,]
+  nameWithType.vb: Single(,)
+  fullName.vb: Single(,)
+  name.vb: Single(,)
+  spec.csharp:
+  - uid: System.Single
+    name: float
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: '['
+  - name: ','
+  - name: ']'
+  spec.vb:
+  - uid: System.Single
+    name: Single
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: (
+  - name: ','
+  - name: )
+- uid: SilverCraft.CSCore.DSP.ChannelMatrix.GetOneDimensionalMatrix*
+  commentId: Overload:SilverCraft.CSCore.DSP.ChannelMatrix.GetOneDimensionalMatrix
+  href: SilverCraft.CSCore.DSP.ChannelMatrix.html#SilverCraft_CSCore_DSP_ChannelMatrix_GetOneDimensionalMatrix
+  name: GetOneDimensionalMatrix
+  nameWithType: ChannelMatrix.GetOneDimensionalMatrix
+  fullName: SilverCraft.CSCore.DSP.ChannelMatrix.GetOneDimensionalMatrix
+- uid: System.Single[]
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.single
+  name: float[]
+  nameWithType: float[]
+  fullName: float[]
+  nameWithType.vb: Single()
+  fullName.vb: Single()
+  name.vb: Single()
+  spec.csharp:
+  - uid: System.Single
+    name: float
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: System.Single
+    name: Single
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: (
+  - name: )
+- uid: SilverCraft.CSCore.DSP.ChannelMatrix.Flip
+  commentId: M:SilverCraft.CSCore.DSP.ChannelMatrix.Flip
+  href: SilverCraft.CSCore.DSP.ChannelMatrix.html#SilverCraft_CSCore_DSP_ChannelMatrix_Flip
+  name: Flip()
+  nameWithType: ChannelMatrix.Flip()
+  fullName: SilverCraft.CSCore.DSP.ChannelMatrix.Flip()
+  spec.csharp:
+  - uid: SilverCraft.CSCore.DSP.ChannelMatrix.Flip
+    name: Flip
+    href: SilverCraft.CSCore.DSP.ChannelMatrix.html#SilverCraft_CSCore_DSP_ChannelMatrix_Flip
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: SilverCraft.CSCore.DSP.ChannelMatrix.Flip
+    name: Flip
+    href: SilverCraft.CSCore.DSP.ChannelMatrix.html#SilverCraft_CSCore_DSP_ChannelMatrix_Flip
+  - name: (
+  - name: )
+- uid: SilverCraft.CSCore.DSP.ChannelMatrix.Flip*
+  commentId: Overload:SilverCraft.CSCore.DSP.ChannelMatrix.Flip
+  href: SilverCraft.CSCore.DSP.ChannelMatrix.html#SilverCraft_CSCore_DSP_ChannelMatrix_Flip
+  name: Flip
+  nameWithType: ChannelMatrix.Flip
+  fullName: SilverCraft.CSCore.DSP.ChannelMatrix.Flip

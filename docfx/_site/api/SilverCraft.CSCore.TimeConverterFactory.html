@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class TimeConverterFactory | SilverCraft.CSCore </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class TimeConverterFactory | SilverCraft.CSCore ">
+      
+      <meta name="description" content="Provides s for converting raw time values (e.g. bytes, samples,...) to a  and back.">
+      <link rel="icon" href="../images/cscore-square-notext.svg">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/thesilvercraft/cscore/new/master/apiSpec/new?filename=SilverCraft_CSCore_TimeConverterFactory.md&amp;value=---%0Auid%3A%20SilverCraft.CSCore.TimeConverterFactory%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../images/cscore-square-notext.svg" alt="SilverCraft.CSCore">
+            SilverCraft.CSCore
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="SilverCraft.CSCore.TimeConverterFactory">
+
+
+
+  <h1 id="SilverCraft_CSCore_TimeConverterFactory" data-uid="SilverCraft.CSCore.TimeConverterFactory" class="text-break">
+Class TimeConverterFactory  <a class="header-action link-secondary" title="View source" href="https://github.com/thesilvercraft/cscore/blob/master/SilverCraft.CSCore/TimeConverterFactory.cs/#L6"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="SilverCraft.html">SilverCraft</a>.<a class="xref" href="SilverCraft.CSCore.html">CSCore</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>SilverCraft.CSCore.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>Provides <a class="xref" href="SilverCraft.CSCore.TimeConverter.html">TimeConverter</a>s for converting raw time values (e.g. bytes, samples,...) to a <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.timespan">TimeSpan</a> and back.</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public sealed class TimeConverterFactory</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">TimeConverterFactory</span></div>
+    </dd>
+  </dl>
+
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+  </dd></dl>
+
+  <dl class="typelist extensionMethods">
+    <dt>Extension Methods</dt>
+    <dd>
+  <div>
+      <a class="xref" href="SilverCraft.CSCore.FluentExtensions.html#SilverCraft_CSCore_FluentExtensions_Synchronized__2___0_">FluentExtensions.Synchronized&lt;TAudioSource, T&gt;(TAudioSource)</a>
+  </div>
+  </dd></dl>
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="SilverCraft_CSCore_TimeConverterFactory_Instance_" data-uid="SilverCraft.CSCore.TimeConverterFactory.Instance*"></a>
+
+  <h3 id="SilverCraft_CSCore_TimeConverterFactory_Instance" data-uid="SilverCraft.CSCore.TimeConverterFactory.Instance">
+  Instance
+  <a class="header-action link-secondary" title="View source" href="https://github.com/thesilvercraft/cscore/blob/master/SilverCraft.CSCore/TimeConverterFactory.cs/#L11"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the default instance of the factory.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static TimeConverterFactory Instance { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="SilverCraft.CSCore.TimeConverterFactory.html">TimeConverterFactory</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="SilverCraft_CSCore_TimeConverterFactory_ClearCache_" data-uid="SilverCraft.CSCore.TimeConverterFactory.ClearCache*"></a>
+
+  <h3 id="SilverCraft_CSCore_TimeConverterFactory_ClearCache" data-uid="SilverCraft.CSCore.TimeConverterFactory.ClearCache">
+  ClearCache()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/thesilvercraft/cscore/blob/master/SilverCraft.CSCore/TimeConverterFactory.cs/#L196"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Clears the internal cache.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ClearCache()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SilverCraft_CSCore_TimeConverterFactory_GetTimeConverterForSourceType_" data-uid="SilverCraft.CSCore.TimeConverterFactory.GetTimeConverterForSourceType*"></a>
+
+  <h3 id="SilverCraft_CSCore_TimeConverterFactory_GetTimeConverterForSourceType_System_Type_" data-uid="SilverCraft.CSCore.TimeConverterFactory.GetTimeConverterForSourceType(System.Type)">
+  GetTimeConverterForSourceType(Type)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/thesilvercraft/cscore/blob/master/SilverCraft.CSCore/TimeConverterFactory.cs/#L126"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the <a class="xref" href="SilverCraft.CSCore.TimeConverter.html">TimeConverter</a> for the specified <code class="paramref">sourceType</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TimeConverter GetTimeConverterForSourceType(Type sourceType)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>sourceType</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Type</a></dt>
+    <dd><p>The <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Type</a> to get the associated <a class="xref" href="SilverCraft.CSCore.TimeConverter.html">TimeConverter</a> for.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="SilverCraft.CSCore.TimeConverter.html">TimeConverter</a></dt>
+    <dd><p>The best <a class="xref" href="SilverCraft.CSCore.TimeConverter.html">TimeConverter</a> for the specified <code class="paramref">sourceType</code>.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="SilverCraft_CSCore_TimeConverterFactory_GetTimeConverterForSourceType_System_Type__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>The <a class="xref" href="SilverCraft.CSCore.TimeConverterFactory.html#SilverCraft_CSCore_TimeConverterFactory_GetTimeConverterForSourceType_System_Type_">GetTimeConverterForSourceType(Type)</a> chooses the best <a class="xref" href="SilverCraft.CSCore.TimeConverter.html">TimeConverter</a> for the specified <code class="paramref">sourceType</code>.
+If there is no <a class="xref" href="SilverCraft.CSCore.TimeConverterAttribute.html">TimeConverterAttribute</a> applied to the <a class="xref" href="SilverCraft.CSCore.IAudioSource.html">IAudioSource</a> object (the <code class="paramref">sourceType</code>), it looks up the inheritance hierarchy (interfaces included) of the <a class="xref" href="SilverCraft.CSCore.IAudioSource.html">IAudioSource</a> object
+and searches for all registered source types. If there is a match it returns the associated <a class="xref" href="SilverCraft.CSCore.TimeConverter.html">TimeConverter</a>. If there are more or less than one match BUT no <a class="xref" href="SilverCraft.CSCore.TimeConverterAttribute.html">TimeConverterAttribute</a>
+it throws an exception.</p>
+</div>
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentexception">ArgumentException</a></dt>
+    <dd><p>Specified type is no AudioSource.;type
+or
+No registered time converter for the specified source type was found.
+or
+Multiple possible time converters, for the specified source type, were found. Specify which time converter to use, through the <a class="xref" href="SilverCraft.CSCore.TimeConverterAttribute.html">TimeConverterAttribute</a>.</p>
+</dd>
+  </dl>
+
+
+
+  <a id="SilverCraft_CSCore_TimeConverterFactory_GetTimeConverterForSource_" data-uid="SilverCraft.CSCore.TimeConverterFactory.GetTimeConverterForSource*"></a>
+
+  <h3 id="SilverCraft_CSCore_TimeConverterFactory_GetTimeConverterForSource__1" data-uid="SilverCraft.CSCore.TimeConverterFactory.GetTimeConverterForSource``1">
+  GetTimeConverterForSource&lt;TSource&gt;()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/thesilvercraft/cscore/blob/master/SilverCraft.CSCore/TimeConverterFactory.cs/#L103"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the <a class="xref" href="SilverCraft.CSCore.TimeConverter.html">TimeConverter</a> for the specified source type.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TimeConverter GetTimeConverterForSource&lt;TSource&gt;() where TSource : IAudioSource</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="SilverCraft.CSCore.TimeConverter.html">TimeConverter</a></dt>
+    <dd><p>The best <a class="xref" href="SilverCraft.CSCore.TimeConverter.html">TimeConverter</a> for the specified source type.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>TSource</code></dt>
+    <dd><p>The type of the source.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+  <h4 class="section" id="SilverCraft_CSCore_TimeConverterFactory_GetTimeConverterForSource__1_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>The <a class="xref" href="SilverCraft.CSCore.TimeConverterFactory.html#SilverCraft_CSCore_TimeConverterFactory_GetTimeConverterForSource__1">GetTimeConverterForSource&lt;TSource&gt;()</a> chooses the best <a class="xref" href="SilverCraft.CSCore.TimeConverter.html">TimeConverter</a> for the specified source type.
+If there is no <a class="xref" href="SilverCraft.CSCore.TimeConverterAttribute.html">TimeConverterAttribute</a> applied to the <a class="xref" href="SilverCraft.CSCore.IAudioSource.html">IAudioSource</a> object, it looks up the inheritance hierarchy (interfaces included) of the <a class="xref" href="SilverCraft.CSCore.IAudioSource.html">IAudioSource</a> object
+and searches for all registered source types. If there is a match it returns the associated <a class="xref" href="SilverCraft.CSCore.TimeConverter.html">TimeConverter</a>. If there are more or less than one match BUT no <a class="xref" href="SilverCraft.CSCore.TimeConverterAttribute.html">TimeConverterAttribute</a>
+it throws an exception.</p>
+</div>
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentexception">ArgumentException</a></dt>
+    <dd><p>Specified type is no AudioSource.;type
+or
+No registered time converter for the specified source type was found.
+or
+Multiple possible time converters, for the specified source type, were found. Specify which time converter to use, through the <a class="xref" href="SilverCraft.CSCore.TimeConverterAttribute.html">TimeConverterAttribute</a>.</p>
+</dd>
+  </dl>
+
+
+
+  <a id="SilverCraft_CSCore_TimeConverterFactory_GetTimeConverterForSource_" data-uid="SilverCraft.CSCore.TimeConverterFactory.GetTimeConverterForSource*"></a>
+
+  <h3 id="SilverCraft_CSCore_TimeConverterFactory_GetTimeConverterForSource__1___0_" data-uid="SilverCraft.CSCore.TimeConverterFactory.GetTimeConverterForSource``1(``0)">
+  GetTimeConverterForSource&lt;TSource&gt;(TSource)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/thesilvercraft/cscore/blob/master/SilverCraft.CSCore/TimeConverterFactory.cs/#L79"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the <a class="xref" href="SilverCraft.CSCore.TimeConverter.html">TimeConverter</a> for the specified <code class="paramref">source</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TimeConverter GetTimeConverterForSource&lt;TSource&gt;(TSource source) where TSource : class, IAudioSource</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>source</code> <span class="xref">TSource</span></dt>
+    <dd><p>The <a class="xref" href="SilverCraft.CSCore.IAudioSource.html">IAudioSource</a> object to get the <a class="xref" href="SilverCraft.CSCore.TimeConverter.html">TimeConverter</a> for.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="SilverCraft.CSCore.TimeConverter.html">TimeConverter</a></dt>
+    <dd><p>The best <a class="xref" href="SilverCraft.CSCore.TimeConverter.html">TimeConverter</a> for the specified <code class="paramref">source</code>.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>TSource</code></dt>
+    <dd><p>The type of the <code class="paramref">source</code>.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+  <h4 class="section" id="SilverCraft_CSCore_TimeConverterFactory_GetTimeConverterForSource__1___0__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>The <a class="xref" href="SilverCraft.CSCore.TimeConverterFactory.html#SilverCraft_CSCore_TimeConverterFactory_GetTimeConverterForSource__1___0_">GetTimeConverterForSource&lt;TSource&gt;(TSource)</a> chooses the best <a class="xref" href="SilverCraft.CSCore.TimeConverter.html">TimeConverter</a> for the specified <code class="paramref">source</code>.
+If there is no <a class="xref" href="SilverCraft.CSCore.TimeConverterAttribute.html">TimeConverterAttribute</a> applied to the <a class="xref" href="SilverCraft.CSCore.IAudioSource.html">IAudioSource</a> object (the <code class="paramref">source</code>), it looks up the inheritance hierarchy (interfaces included) of the <a class="xref" href="SilverCraft.CSCore.IAudioSource.html">IAudioSource</a> object
+and searches for all registered source types. If there is a match it returns the associated <a class="xref" href="SilverCraft.CSCore.TimeConverter.html">TimeConverter</a>. If there are more or less than one match BUT no <a class="xref" href="SilverCraft.CSCore.TimeConverterAttribute.html">TimeConverterAttribute</a>
+it throws an exception.</p>
+</div>
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></dt>
+    <dd><p>The specified <code class="paramref">source</code> is null.</p>
+</dd>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentexception">ArgumentException</a></dt>
+    <dd><p>Specified type is no AudioSource.;type
+or
+No registered time converter for the specified source type was found.
+or
+Multiple possible time converters, for the specified source type, were found. Specify which time converter to use, through the <a class="xref" href="SilverCraft.CSCore.TimeConverterAttribute.html">TimeConverterAttribute</a>.</p>
+</dd>
+  </dl>
+
+
+
+  <a id="SilverCraft_CSCore_TimeConverterFactory_RegisterTimeConverterForSourceType_" data-uid="SilverCraft.CSCore.TimeConverterFactory.RegisterTimeConverterForSourceType*"></a>
+
+  <h3 id="SilverCraft_CSCore_TimeConverterFactory_RegisterTimeConverterForSourceType__1_SilverCraft_CSCore_TimeConverter_" data-uid="SilverCraft.CSCore.TimeConverterFactory.RegisterTimeConverterForSourceType``1(SilverCraft.CSCore.TimeConverter)">
+  RegisterTimeConverterForSourceType&lt;TSource&gt;(TimeConverter)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/thesilvercraft/cscore/blob/master/SilverCraft.CSCore/TimeConverterFactory.cs/#L33"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Registers a new <a class="xref" href="SilverCraft.CSCore.TimeConverter.html">TimeConverter</a> for a specific source type.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RegisterTimeConverterForSourceType&lt;TSource&gt;(TimeConverter timeConverter) where TSource : IAudioSource</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>timeConverter</code> <a class="xref" href="SilverCraft.CSCore.TimeConverter.html">TimeConverter</a></dt>
+    <dd><p>The <a class="xref" href="SilverCraft.CSCore.TimeConverter.html">TimeConverter</a> to register.</p>
+</dd>
+  </dl>
+
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>TSource</code></dt>
+    <dd><p>The source type.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+  <h4 class="section" id="SilverCraft_CSCore_TimeConverterFactory_RegisterTimeConverterForSourceType__1_SilverCraft_CSCore_TimeConverter__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>The <a class="xref" href="SilverCraft.CSCore.TimeConverterFactory.html">TimeConverterFactory</a> class uses the source type to find choose the best <a class="xref" href="SilverCraft.CSCore.TimeConverter.html">TimeConverter</a> for an <a class="xref" href="SilverCraft.CSCore.IAudioSource.html">IAudioSource</a>. For more information, see <a class="xref" href="SilverCraft.CSCore.TimeConverterFactory.html#SilverCraft_CSCore_TimeConverterFactory_GetTimeConverterForSourceType_System_Type_">GetTimeConverterForSourceType(Type)</a>.</p>
+</div>
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></dt>
+    <dd><p>timeConverter is null.</p>
+</dd>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentexception">ArgumentException</a></dt>
+    <dd><p>There is already a <a class="xref" href="SilverCraft.CSCore.TimeConverter.html">TimeConverter</a> registered for the specified <code class="typeparamref">TSource</code>.</p>
+</dd>
+  </dl>
+
+
+
+  <a id="SilverCraft_CSCore_TimeConverterFactory_UnregisterTimeConverter_" data-uid="SilverCraft.CSCore.TimeConverterFactory.UnregisterTimeConverter*"></a>
+
+  <h3 id="SilverCraft_CSCore_TimeConverterFactory_UnregisterTimeConverter__1" data-uid="SilverCraft.CSCore.TimeConverterFactory.UnregisterTimeConverter``1">
+  UnregisterTimeConverter&lt;TSource&gt;()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/thesilvercraft/cscore/blob/master/SilverCraft.CSCore/TimeConverterFactory.cs/#L50"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Unregisters a previously registered <a class="xref" href="SilverCraft.CSCore.TimeConverter.html">TimeConverter</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void UnregisterTimeConverter&lt;TSource&gt;() where TSource : IAudioSource</code></pre>
+  </div>
+
+
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>TSource</code></dt>
+    <dd><p>The source type, that got passed to the <a class="xref" href="SilverCraft.CSCore.TimeConverterFactory.html#SilverCraft_CSCore_TimeConverterFactory_RegisterTimeConverterForSourceType__1_SilverCraft_CSCore_TimeConverter_">RegisterTimeConverterForSourceType&lt;TSource&gt;(TimeConverter)</a> method previously.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentexception">ArgumentException</a></dt>
+    <dd><p>The specified source type could not be found.</p>
+</dd>
+  </dl>
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/thesilvercraft/cscore/blob/master/SilverCraft.CSCore/TimeConverterFactory.cs/#L6" class="edit-link">Edit this page</a>
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

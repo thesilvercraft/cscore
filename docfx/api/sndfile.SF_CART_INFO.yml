@@ -1,0 +1,913 @@
+### YamlMime:ManagedReference
+items:
+- uid: sndfile.SF_CART_INFO
+  commentId: T:sndfile.SF_CART_INFO
+  id: SF_CART_INFO
+  parent: sndfile
+  children:
+  - sndfile.SF_CART_INFO.artist
+  - sndfile.SF_CART_INFO.category
+  - sndfile.SF_CART_INFO.classification
+  - sndfile.SF_CART_INFO.client_id
+  - sndfile.SF_CART_INFO.cut_id
+  - sndfile.SF_CART_INFO.end_date
+  - sndfile.SF_CART_INFO.end_time
+  - sndfile.SF_CART_INFO.level_reference
+  - sndfile.SF_CART_INFO.out_cue
+  - sndfile.SF_CART_INFO.post_timers
+  - sndfile.SF_CART_INFO.producer_app_id
+  - sndfile.SF_CART_INFO.producer_app_version
+  - sndfile.SF_CART_INFO.reserved
+  - sndfile.SF_CART_INFO.start_date
+  - sndfile.SF_CART_INFO.start_time
+  - sndfile.SF_CART_INFO.tag_text
+  - sndfile.SF_CART_INFO.tag_text_size
+  - sndfile.SF_CART_INFO.title
+  - sndfile.SF_CART_INFO.url
+  - sndfile.SF_CART_INFO.user_def
+  - sndfile.SF_CART_INFO.version
+  langs:
+  - csharp
+  - vb
+  name: SF_CART_INFO
+  nameWithType: SF_CART_INFO
+  fullName: sndfile.SF_CART_INFO
+  type: Struct
+  source:
+    remote:
+      path: SilverCraft.SndFile/Native/SF_CART_INFO.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: SF_CART_INFO
+    path: ../SilverCraft.SndFile/Native/SF_CART_INFO.cs
+    startLine: 7
+  assemblies:
+  - SilverCraft.CSCore.SndFile
+  namespace: sndfile
+  syntax:
+    content: public struct SF_CART_INFO
+    content.vb: Public Structure SF_CART_INFO
+  inheritedMembers:
+  - System.ValueType.Equals(System.Object)
+  - System.ValueType.GetHashCode
+  - System.ValueType.ToString
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetType
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+- uid: sndfile.SF_CART_INFO.version
+  commentId: F:sndfile.SF_CART_INFO.version
+  id: version
+  parent: sndfile.SF_CART_INFO
+  langs:
+  - csharp
+  - vb
+  name: version
+  nameWithType: SF_CART_INFO.version
+  fullName: sndfile.SF_CART_INFO.version
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.SndFile/Native/SF_CART_INFO.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: version
+    path: ../SilverCraft.SndFile/Native/SF_CART_INFO.cs
+    startLine: 10
+  assemblies:
+  - SilverCraft.CSCore.SndFile
+  namespace: sndfile
+  syntax:
+    content: public sbyte* version
+    return:
+      type: System.SByte*
+    content.vb: Public version As SByte*
+- uid: sndfile.SF_CART_INFO.title
+  commentId: F:sndfile.SF_CART_INFO.title
+  id: title
+  parent: sndfile.SF_CART_INFO
+  langs:
+  - csharp
+  - vb
+  name: title
+  nameWithType: SF_CART_INFO.title
+  fullName: sndfile.SF_CART_INFO.title
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.SndFile/Native/SF_CART_INFO.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: title
+    path: ../SilverCraft.SndFile/Native/SF_CART_INFO.cs
+    startLine: 13
+  assemblies:
+  - SilverCraft.CSCore.SndFile
+  namespace: sndfile
+  syntax:
+    content: public sbyte* title
+    return:
+      type: System.SByte*
+    content.vb: Public title As SByte*
+- uid: sndfile.SF_CART_INFO.artist
+  commentId: F:sndfile.SF_CART_INFO.artist
+  id: artist
+  parent: sndfile.SF_CART_INFO
+  langs:
+  - csharp
+  - vb
+  name: artist
+  nameWithType: SF_CART_INFO.artist
+  fullName: sndfile.SF_CART_INFO.artist
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.SndFile/Native/SF_CART_INFO.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: artist
+    path: ../SilverCraft.SndFile/Native/SF_CART_INFO.cs
+    startLine: 16
+  assemblies:
+  - SilverCraft.CSCore.SndFile
+  namespace: sndfile
+  syntax:
+    content: public sbyte* artist
+    return:
+      type: System.SByte*
+    content.vb: Public artist As SByte*
+- uid: sndfile.SF_CART_INFO.cut_id
+  commentId: F:sndfile.SF_CART_INFO.cut_id
+  id: cut_id
+  parent: sndfile.SF_CART_INFO
+  langs:
+  - csharp
+  - vb
+  name: cut_id
+  nameWithType: SF_CART_INFO.cut_id
+  fullName: sndfile.SF_CART_INFO.cut_id
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.SndFile/Native/SF_CART_INFO.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: cut_id
+    path: ../SilverCraft.SndFile/Native/SF_CART_INFO.cs
+    startLine: 19
+  assemblies:
+  - SilverCraft.CSCore.SndFile
+  namespace: sndfile
+  syntax:
+    content: public sbyte* cut_id
+    return:
+      type: System.SByte*
+    content.vb: Public cut_id As SByte*
+- uid: sndfile.SF_CART_INFO.client_id
+  commentId: F:sndfile.SF_CART_INFO.client_id
+  id: client_id
+  parent: sndfile.SF_CART_INFO
+  langs:
+  - csharp
+  - vb
+  name: client_id
+  nameWithType: SF_CART_INFO.client_id
+  fullName: sndfile.SF_CART_INFO.client_id
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.SndFile/Native/SF_CART_INFO.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: client_id
+    path: ../SilverCraft.SndFile/Native/SF_CART_INFO.cs
+    startLine: 22
+  assemblies:
+  - SilverCraft.CSCore.SndFile
+  namespace: sndfile
+  syntax:
+    content: public sbyte* client_id
+    return:
+      type: System.SByte*
+    content.vb: Public client_id As SByte*
+- uid: sndfile.SF_CART_INFO.category
+  commentId: F:sndfile.SF_CART_INFO.category
+  id: category
+  parent: sndfile.SF_CART_INFO
+  langs:
+  - csharp
+  - vb
+  name: category
+  nameWithType: SF_CART_INFO.category
+  fullName: sndfile.SF_CART_INFO.category
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.SndFile/Native/SF_CART_INFO.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: category
+    path: ../SilverCraft.SndFile/Native/SF_CART_INFO.cs
+    startLine: 25
+  assemblies:
+  - SilverCraft.CSCore.SndFile
+  namespace: sndfile
+  syntax:
+    content: public sbyte* category
+    return:
+      type: System.SByte*
+    content.vb: Public category As SByte*
+- uid: sndfile.SF_CART_INFO.classification
+  commentId: F:sndfile.SF_CART_INFO.classification
+  id: classification
+  parent: sndfile.SF_CART_INFO
+  langs:
+  - csharp
+  - vb
+  name: classification
+  nameWithType: SF_CART_INFO.classification
+  fullName: sndfile.SF_CART_INFO.classification
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.SndFile/Native/SF_CART_INFO.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: classification
+    path: ../SilverCraft.SndFile/Native/SF_CART_INFO.cs
+    startLine: 28
+  assemblies:
+  - SilverCraft.CSCore.SndFile
+  namespace: sndfile
+  syntax:
+    content: public sbyte* classification
+    return:
+      type: System.SByte*
+    content.vb: Public classification As SByte*
+- uid: sndfile.SF_CART_INFO.out_cue
+  commentId: F:sndfile.SF_CART_INFO.out_cue
+  id: out_cue
+  parent: sndfile.SF_CART_INFO
+  langs:
+  - csharp
+  - vb
+  name: out_cue
+  nameWithType: SF_CART_INFO.out_cue
+  fullName: sndfile.SF_CART_INFO.out_cue
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.SndFile/Native/SF_CART_INFO.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: out_cue
+    path: ../SilverCraft.SndFile/Native/SF_CART_INFO.cs
+    startLine: 31
+  assemblies:
+  - SilverCraft.CSCore.SndFile
+  namespace: sndfile
+  syntax:
+    content: public sbyte* out_cue
+    return:
+      type: System.SByte*
+    content.vb: Public out_cue As SByte*
+- uid: sndfile.SF_CART_INFO.start_date
+  commentId: F:sndfile.SF_CART_INFO.start_date
+  id: start_date
+  parent: sndfile.SF_CART_INFO
+  langs:
+  - csharp
+  - vb
+  name: start_date
+  nameWithType: SF_CART_INFO.start_date
+  fullName: sndfile.SF_CART_INFO.start_date
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.SndFile/Native/SF_CART_INFO.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: start_date
+    path: ../SilverCraft.SndFile/Native/SF_CART_INFO.cs
+    startLine: 34
+  assemblies:
+  - SilverCraft.CSCore.SndFile
+  namespace: sndfile
+  syntax:
+    content: public sbyte* start_date
+    return:
+      type: System.SByte*
+    content.vb: Public start_date As SByte*
+- uid: sndfile.SF_CART_INFO.start_time
+  commentId: F:sndfile.SF_CART_INFO.start_time
+  id: start_time
+  parent: sndfile.SF_CART_INFO
+  langs:
+  - csharp
+  - vb
+  name: start_time
+  nameWithType: SF_CART_INFO.start_time
+  fullName: sndfile.SF_CART_INFO.start_time
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.SndFile/Native/SF_CART_INFO.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: start_time
+    path: ../SilverCraft.SndFile/Native/SF_CART_INFO.cs
+    startLine: 37
+  assemblies:
+  - SilverCraft.CSCore.SndFile
+  namespace: sndfile
+  syntax:
+    content: public sbyte* start_time
+    return:
+      type: System.SByte*
+    content.vb: Public start_time As SByte*
+- uid: sndfile.SF_CART_INFO.end_date
+  commentId: F:sndfile.SF_CART_INFO.end_date
+  id: end_date
+  parent: sndfile.SF_CART_INFO
+  langs:
+  - csharp
+  - vb
+  name: end_date
+  nameWithType: SF_CART_INFO.end_date
+  fullName: sndfile.SF_CART_INFO.end_date
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.SndFile/Native/SF_CART_INFO.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: end_date
+    path: ../SilverCraft.SndFile/Native/SF_CART_INFO.cs
+    startLine: 40
+  assemblies:
+  - SilverCraft.CSCore.SndFile
+  namespace: sndfile
+  syntax:
+    content: public sbyte* end_date
+    return:
+      type: System.SByte*
+    content.vb: Public end_date As SByte*
+- uid: sndfile.SF_CART_INFO.end_time
+  commentId: F:sndfile.SF_CART_INFO.end_time
+  id: end_time
+  parent: sndfile.SF_CART_INFO
+  langs:
+  - csharp
+  - vb
+  name: end_time
+  nameWithType: SF_CART_INFO.end_time
+  fullName: sndfile.SF_CART_INFO.end_time
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.SndFile/Native/SF_CART_INFO.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: end_time
+    path: ../SilverCraft.SndFile/Native/SF_CART_INFO.cs
+    startLine: 43
+  assemblies:
+  - SilverCraft.CSCore.SndFile
+  namespace: sndfile
+  syntax:
+    content: public sbyte* end_time
+    return:
+      type: System.SByte*
+    content.vb: Public end_time As SByte*
+- uid: sndfile.SF_CART_INFO.producer_app_id
+  commentId: F:sndfile.SF_CART_INFO.producer_app_id
+  id: producer_app_id
+  parent: sndfile.SF_CART_INFO
+  langs:
+  - csharp
+  - vb
+  name: producer_app_id
+  nameWithType: SF_CART_INFO.producer_app_id
+  fullName: sndfile.SF_CART_INFO.producer_app_id
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.SndFile/Native/SF_CART_INFO.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: producer_app_id
+    path: ../SilverCraft.SndFile/Native/SF_CART_INFO.cs
+    startLine: 46
+  assemblies:
+  - SilverCraft.CSCore.SndFile
+  namespace: sndfile
+  syntax:
+    content: public sbyte* producer_app_id
+    return:
+      type: System.SByte*
+    content.vb: Public producer_app_id As SByte*
+- uid: sndfile.SF_CART_INFO.producer_app_version
+  commentId: F:sndfile.SF_CART_INFO.producer_app_version
+  id: producer_app_version
+  parent: sndfile.SF_CART_INFO
+  langs:
+  - csharp
+  - vb
+  name: producer_app_version
+  nameWithType: SF_CART_INFO.producer_app_version
+  fullName: sndfile.SF_CART_INFO.producer_app_version
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.SndFile/Native/SF_CART_INFO.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: producer_app_version
+    path: ../SilverCraft.SndFile/Native/SF_CART_INFO.cs
+    startLine: 49
+  assemblies:
+  - SilverCraft.CSCore.SndFile
+  namespace: sndfile
+  syntax:
+    content: public sbyte* producer_app_version
+    return:
+      type: System.SByte*
+    content.vb: Public producer_app_version As SByte*
+- uid: sndfile.SF_CART_INFO.user_def
+  commentId: F:sndfile.SF_CART_INFO.user_def
+  id: user_def
+  parent: sndfile.SF_CART_INFO
+  langs:
+  - csharp
+  - vb
+  name: user_def
+  nameWithType: SF_CART_INFO.user_def
+  fullName: sndfile.SF_CART_INFO.user_def
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.SndFile/Native/SF_CART_INFO.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: user_def
+    path: ../SilverCraft.SndFile/Native/SF_CART_INFO.cs
+    startLine: 52
+  assemblies:
+  - SilverCraft.CSCore.SndFile
+  namespace: sndfile
+  syntax:
+    content: public sbyte* user_def
+    return:
+      type: System.SByte*
+    content.vb: Public user_def As SByte*
+- uid: sndfile.SF_CART_INFO.level_reference
+  commentId: F:sndfile.SF_CART_INFO.level_reference
+  id: level_reference
+  parent: sndfile.SF_CART_INFO
+  langs:
+  - csharp
+  - vb
+  name: level_reference
+  nameWithType: SF_CART_INFO.level_reference
+  fullName: sndfile.SF_CART_INFO.level_reference
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.SndFile/Native/SF_CART_INFO.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: level_reference
+    path: ../SilverCraft.SndFile/Native/SF_CART_INFO.cs
+    startLine: 55
+  assemblies:
+  - SilverCraft.CSCore.SndFile
+  namespace: sndfile
+  syntax:
+    content: public int level_reference
+    return:
+      type: System.Int32
+    content.vb: Public level_reference As Integer
+- uid: sndfile.SF_CART_INFO.post_timers
+  commentId: F:sndfile.SF_CART_INFO.post_timers
+  id: post_timers
+  parent: sndfile.SF_CART_INFO
+  langs:
+  - csharp
+  - vb
+  name: post_timers
+  nameWithType: SF_CART_INFO.post_timers
+  fullName: sndfile.SF_CART_INFO.post_timers
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.SndFile/Native/SF_CART_INFO.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: post_timers
+    path: ../SilverCraft.SndFile/Native/SF_CART_INFO.cs
+    startLine: 58
+  assemblies:
+  - SilverCraft.CSCore.SndFile
+  namespace: sndfile
+  syntax:
+    content: public SF_CART_INFO._post_timers_e__FixedBuffer post_timers
+    return:
+      type: sndfile.SF_CART_INFO._post_timers_e__FixedBuffer
+    content.vb: Public post_timers As SF_CART_INFO._post_timers_e__FixedBuffer
+- uid: sndfile.SF_CART_INFO.reserved
+  commentId: F:sndfile.SF_CART_INFO.reserved
+  id: reserved
+  parent: sndfile.SF_CART_INFO
+  langs:
+  - csharp
+  - vb
+  name: reserved
+  nameWithType: SF_CART_INFO.reserved
+  fullName: sndfile.SF_CART_INFO.reserved
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.SndFile/Native/SF_CART_INFO.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: reserved
+    path: ../SilverCraft.SndFile/Native/SF_CART_INFO.cs
+    startLine: 61
+  assemblies:
+  - SilverCraft.CSCore.SndFile
+  namespace: sndfile
+  syntax:
+    content: public sbyte* reserved
+    return:
+      type: System.SByte*
+    content.vb: Public reserved As SByte*
+- uid: sndfile.SF_CART_INFO.url
+  commentId: F:sndfile.SF_CART_INFO.url
+  id: url
+  parent: sndfile.SF_CART_INFO
+  langs:
+  - csharp
+  - vb
+  name: url
+  nameWithType: SF_CART_INFO.url
+  fullName: sndfile.SF_CART_INFO.url
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.SndFile/Native/SF_CART_INFO.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: url
+    path: ../SilverCraft.SndFile/Native/SF_CART_INFO.cs
+    startLine: 64
+  assemblies:
+  - SilverCraft.CSCore.SndFile
+  namespace: sndfile
+  syntax:
+    content: public sbyte* url
+    return:
+      type: System.SByte*
+    content.vb: Public url As SByte*
+- uid: sndfile.SF_CART_INFO.tag_text_size
+  commentId: F:sndfile.SF_CART_INFO.tag_text_size
+  id: tag_text_size
+  parent: sndfile.SF_CART_INFO
+  langs:
+  - csharp
+  - vb
+  name: tag_text_size
+  nameWithType: SF_CART_INFO.tag_text_size
+  fullName: sndfile.SF_CART_INFO.tag_text_size
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.SndFile/Native/SF_CART_INFO.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: tag_text_size
+    path: ../SilverCraft.SndFile/Native/SF_CART_INFO.cs
+    startLine: 67
+  assemblies:
+  - SilverCraft.CSCore.SndFile
+  namespace: sndfile
+  syntax:
+    content: public uint tag_text_size
+    return:
+      type: System.UInt32
+    content.vb: Public tag_text_size As UInteger
+- uid: sndfile.SF_CART_INFO.tag_text
+  commentId: F:sndfile.SF_CART_INFO.tag_text
+  id: tag_text
+  parent: sndfile.SF_CART_INFO
+  langs:
+  - csharp
+  - vb
+  name: tag_text
+  nameWithType: SF_CART_INFO.tag_text
+  fullName: sndfile.SF_CART_INFO.tag_text
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.SndFile/Native/SF_CART_INFO.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: tag_text
+    path: ../SilverCraft.SndFile/Native/SF_CART_INFO.cs
+    startLine: 70
+  assemblies:
+  - SilverCraft.CSCore.SndFile
+  namespace: sndfile
+  syntax:
+    content: public sbyte* tag_text
+    return:
+      type: System.SByte*
+    content.vb: Public tag_text As SByte*
+references:
+- uid: sndfile
+  commentId: N:sndfile
+  href: sndfile.html
+  name: sndfile
+  nameWithType: sndfile
+  fullName: sndfile
+- uid: System.ValueType.Equals(System.Object)
+  commentId: M:System.ValueType.Equals(System.Object)
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  name: Equals(object)
+  nameWithType: ValueType.Equals(object)
+  fullName: System.ValueType.Equals(object)
+  nameWithType.vb: ValueType.Equals(Object)
+  fullName.vb: System.ValueType.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.ValueType.GetHashCode
+  commentId: M:System.ValueType.GetHashCode
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  name: GetHashCode()
+  nameWithType: ValueType.GetHashCode()
+  fullName: System.ValueType.GetHashCode()
+  spec.csharp:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  - name: (
+  - name: )
+- uid: System.ValueType.ToString
+  commentId: M:System.ValueType.ToString
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  name: ToString()
+  nameWithType: ValueType.ToString()
+  fullName: System.ValueType.ToString()
+  spec.csharp:
+  - uid: System.ValueType.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.ValueType
+  commentId: T:System.ValueType
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype
+  name: ValueType
+  nameWithType: ValueType
+  fullName: System.ValueType
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.SByte*
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.sbyte
+  name: sbyte*
+  nameWithType: sbyte*
+  fullName: sbyte*
+  nameWithType.vb: SByte*
+  fullName.vb: SByte*
+  name.vb: SByte*
+  spec.csharp:
+  - uid: System.SByte
+    name: sbyte
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.sbyte
+  - name: '*'
+  spec.vb:
+  - uid: System.SByte
+    name: SByte
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.sbyte
+  - name: '*'
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: sndfile.SF_CART_INFO._post_timers_e__FixedBuffer
+  commentId: T:sndfile.SF_CART_INFO._post_timers_e__FixedBuffer
+  parent: sndfile
+  href: sndfile.SF_CART_INFO.html
+  name: SF_CART_INFO._post_timers_e__FixedBuffer
+  nameWithType: SF_CART_INFO._post_timers_e__FixedBuffer
+  fullName: sndfile.SF_CART_INFO._post_timers_e__FixedBuffer
+  spec.csharp:
+  - uid: sndfile.SF_CART_INFO
+    name: SF_CART_INFO
+    href: sndfile.SF_CART_INFO.html
+  - name: .
+  - uid: sndfile.SF_CART_INFO._post_timers_e__FixedBuffer
+    name: _post_timers_e__FixedBuffer
+    href: sndfile.SF_CART_INFO._post_timers_e__FixedBuffer.html
+  spec.vb:
+  - uid: sndfile.SF_CART_INFO
+    name: SF_CART_INFO
+    href: sndfile.SF_CART_INFO.html
+  - name: .
+  - uid: sndfile.SF_CART_INFO._post_timers_e__FixedBuffer
+    name: _post_timers_e__FixedBuffer
+    href: sndfile.SF_CART_INFO._post_timers_e__FixedBuffer.html
+- uid: System.UInt32
+  commentId: T:System.UInt32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.uint32
+  name: uint
+  nameWithType: uint
+  fullName: uint
+  nameWithType.vb: UInteger
+  fullName.vb: UInteger
+  name.vb: UInteger

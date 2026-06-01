@@ -1,0 +1,452 @@
+### YamlMime:ManagedReference
+items:
+- uid: SilverCraft.CSCore.PortAudio.Native.PaHostApiTypeId
+  commentId: T:SilverCraft.CSCore.PortAudio.Native.PaHostApiTypeId
+  id: PaHostApiTypeId
+  parent: SilverCraft.CSCore.PortAudio.Native
+  children:
+  - SilverCraft.CSCore.PortAudio.Native.PaHostApiTypeId.paAL
+  - SilverCraft.CSCore.PortAudio.Native.PaHostApiTypeId.paALSA
+  - SilverCraft.CSCore.PortAudio.Native.PaHostApiTypeId.paASIO
+  - SilverCraft.CSCore.PortAudio.Native.PaHostApiTypeId.paAudioScienceHPI
+  - SilverCraft.CSCore.PortAudio.Native.PaHostApiTypeId.paBeOS
+  - SilverCraft.CSCore.PortAudio.Native.PaHostApiTypeId.paCoreAudio
+  - SilverCraft.CSCore.PortAudio.Native.PaHostApiTypeId.paDirectSound
+  - SilverCraft.CSCore.PortAudio.Native.PaHostApiTypeId.paInDevelopment
+  - SilverCraft.CSCore.PortAudio.Native.PaHostApiTypeId.paJACK
+  - SilverCraft.CSCore.PortAudio.Native.PaHostApiTypeId.paMME
+  - SilverCraft.CSCore.PortAudio.Native.PaHostApiTypeId.paOSS
+  - SilverCraft.CSCore.PortAudio.Native.PaHostApiTypeId.paSoundManager
+  - SilverCraft.CSCore.PortAudio.Native.PaHostApiTypeId.paWASAPI
+  - SilverCraft.CSCore.PortAudio.Native.PaHostApiTypeId.paWDMKS
+  langs:
+  - csharp
+  - vb
+  name: PaHostApiTypeId
+  nameWithType: PaHostApiTypeId
+  fullName: SilverCraft.CSCore.PortAudio.Native.PaHostApiTypeId
+  type: Enum
+  source:
+    remote:
+      path: SilverCraft.CSCore.PortAudio/Native/PaHostApiTypeId.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: PaHostApiTypeId
+    path: ../SilverCraft.CSCore.PortAudio/Native/PaHostApiTypeId.cs
+    startLine: 2
+  assemblies:
+  - SilverCraft.CSCore.PortAudio
+  namespace: SilverCraft.CSCore.PortAudio.Native
+  syntax:
+    content: 'public enum PaHostApiTypeId : uint'
+    content.vb: Public Enum PaHostApiTypeId As UInteger
+- uid: SilverCraft.CSCore.PortAudio.Native.PaHostApiTypeId.paInDevelopment
+  commentId: F:SilverCraft.CSCore.PortAudio.Native.PaHostApiTypeId.paInDevelopment
+  id: paInDevelopment
+  parent: SilverCraft.CSCore.PortAudio.Native.PaHostApiTypeId
+  langs:
+  - csharp
+  - vb
+  name: paInDevelopment
+  nameWithType: PaHostApiTypeId.paInDevelopment
+  fullName: SilverCraft.CSCore.PortAudio.Native.PaHostApiTypeId.paInDevelopment
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore.PortAudio/Native/PaHostApiTypeId.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: paInDevelopment
+    path: ../SilverCraft.CSCore.PortAudio/Native/PaHostApiTypeId.cs
+    startLine: 5
+  assemblies:
+  - SilverCraft.CSCore.PortAudio
+  namespace: SilverCraft.CSCore.PortAudio.Native
+  syntax:
+    content: paInDevelopment = 0
+    return:
+      type: SilverCraft.CSCore.PortAudio.Native.PaHostApiTypeId
+- uid: SilverCraft.CSCore.PortAudio.Native.PaHostApiTypeId.paDirectSound
+  commentId: F:SilverCraft.CSCore.PortAudio.Native.PaHostApiTypeId.paDirectSound
+  id: paDirectSound
+  parent: SilverCraft.CSCore.PortAudio.Native.PaHostApiTypeId
+  langs:
+  - csharp
+  - vb
+  name: paDirectSound
+  nameWithType: PaHostApiTypeId.paDirectSound
+  fullName: SilverCraft.CSCore.PortAudio.Native.PaHostApiTypeId.paDirectSound
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore.PortAudio/Native/PaHostApiTypeId.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: paDirectSound
+    path: ../SilverCraft.CSCore.PortAudio/Native/PaHostApiTypeId.cs
+    startLine: 6
+  assemblies:
+  - SilverCraft.CSCore.PortAudio
+  namespace: SilverCraft.CSCore.PortAudio.Native
+  syntax:
+    content: paDirectSound = 1
+    return:
+      type: SilverCraft.CSCore.PortAudio.Native.PaHostApiTypeId
+- uid: SilverCraft.CSCore.PortAudio.Native.PaHostApiTypeId.paMME
+  commentId: F:SilverCraft.CSCore.PortAudio.Native.PaHostApiTypeId.paMME
+  id: paMME
+  parent: SilverCraft.CSCore.PortAudio.Native.PaHostApiTypeId
+  langs:
+  - csharp
+  - vb
+  name: paMME
+  nameWithType: PaHostApiTypeId.paMME
+  fullName: SilverCraft.CSCore.PortAudio.Native.PaHostApiTypeId.paMME
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore.PortAudio/Native/PaHostApiTypeId.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: paMME
+    path: ../SilverCraft.CSCore.PortAudio/Native/PaHostApiTypeId.cs
+    startLine: 7
+  assemblies:
+  - SilverCraft.CSCore.PortAudio
+  namespace: SilverCraft.CSCore.PortAudio.Native
+  syntax:
+    content: paMME = 2
+    return:
+      type: SilverCraft.CSCore.PortAudio.Native.PaHostApiTypeId
+- uid: SilverCraft.CSCore.PortAudio.Native.PaHostApiTypeId.paASIO
+  commentId: F:SilverCraft.CSCore.PortAudio.Native.PaHostApiTypeId.paASIO
+  id: paASIO
+  parent: SilverCraft.CSCore.PortAudio.Native.PaHostApiTypeId
+  langs:
+  - csharp
+  - vb
+  name: paASIO
+  nameWithType: PaHostApiTypeId.paASIO
+  fullName: SilverCraft.CSCore.PortAudio.Native.PaHostApiTypeId.paASIO
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore.PortAudio/Native/PaHostApiTypeId.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: paASIO
+    path: ../SilverCraft.CSCore.PortAudio/Native/PaHostApiTypeId.cs
+    startLine: 8
+  assemblies:
+  - SilverCraft.CSCore.PortAudio
+  namespace: SilverCraft.CSCore.PortAudio.Native
+  syntax:
+    content: paASIO = 3
+    return:
+      type: SilverCraft.CSCore.PortAudio.Native.PaHostApiTypeId
+- uid: SilverCraft.CSCore.PortAudio.Native.PaHostApiTypeId.paSoundManager
+  commentId: F:SilverCraft.CSCore.PortAudio.Native.PaHostApiTypeId.paSoundManager
+  id: paSoundManager
+  parent: SilverCraft.CSCore.PortAudio.Native.PaHostApiTypeId
+  langs:
+  - csharp
+  - vb
+  name: paSoundManager
+  nameWithType: PaHostApiTypeId.paSoundManager
+  fullName: SilverCraft.CSCore.PortAudio.Native.PaHostApiTypeId.paSoundManager
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore.PortAudio/Native/PaHostApiTypeId.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: paSoundManager
+    path: ../SilverCraft.CSCore.PortAudio/Native/PaHostApiTypeId.cs
+    startLine: 9
+  assemblies:
+  - SilverCraft.CSCore.PortAudio
+  namespace: SilverCraft.CSCore.PortAudio.Native
+  syntax:
+    content: paSoundManager = 4
+    return:
+      type: SilverCraft.CSCore.PortAudio.Native.PaHostApiTypeId
+- uid: SilverCraft.CSCore.PortAudio.Native.PaHostApiTypeId.paCoreAudio
+  commentId: F:SilverCraft.CSCore.PortAudio.Native.PaHostApiTypeId.paCoreAudio
+  id: paCoreAudio
+  parent: SilverCraft.CSCore.PortAudio.Native.PaHostApiTypeId
+  langs:
+  - csharp
+  - vb
+  name: paCoreAudio
+  nameWithType: PaHostApiTypeId.paCoreAudio
+  fullName: SilverCraft.CSCore.PortAudio.Native.PaHostApiTypeId.paCoreAudio
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore.PortAudio/Native/PaHostApiTypeId.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: paCoreAudio
+    path: ../SilverCraft.CSCore.PortAudio/Native/PaHostApiTypeId.cs
+    startLine: 10
+  assemblies:
+  - SilverCraft.CSCore.PortAudio
+  namespace: SilverCraft.CSCore.PortAudio.Native
+  syntax:
+    content: paCoreAudio = 5
+    return:
+      type: SilverCraft.CSCore.PortAudio.Native.PaHostApiTypeId
+- uid: SilverCraft.CSCore.PortAudio.Native.PaHostApiTypeId.paOSS
+  commentId: F:SilverCraft.CSCore.PortAudio.Native.PaHostApiTypeId.paOSS
+  id: paOSS
+  parent: SilverCraft.CSCore.PortAudio.Native.PaHostApiTypeId
+  langs:
+  - csharp
+  - vb
+  name: paOSS
+  nameWithType: PaHostApiTypeId.paOSS
+  fullName: SilverCraft.CSCore.PortAudio.Native.PaHostApiTypeId.paOSS
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore.PortAudio/Native/PaHostApiTypeId.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: paOSS
+    path: ../SilverCraft.CSCore.PortAudio/Native/PaHostApiTypeId.cs
+    startLine: 11
+  assemblies:
+  - SilverCraft.CSCore.PortAudio
+  namespace: SilverCraft.CSCore.PortAudio.Native
+  syntax:
+    content: paOSS = 7
+    return:
+      type: SilverCraft.CSCore.PortAudio.Native.PaHostApiTypeId
+- uid: SilverCraft.CSCore.PortAudio.Native.PaHostApiTypeId.paALSA
+  commentId: F:SilverCraft.CSCore.PortAudio.Native.PaHostApiTypeId.paALSA
+  id: paALSA
+  parent: SilverCraft.CSCore.PortAudio.Native.PaHostApiTypeId
+  langs:
+  - csharp
+  - vb
+  name: paALSA
+  nameWithType: PaHostApiTypeId.paALSA
+  fullName: SilverCraft.CSCore.PortAudio.Native.PaHostApiTypeId.paALSA
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore.PortAudio/Native/PaHostApiTypeId.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: paALSA
+    path: ../SilverCraft.CSCore.PortAudio/Native/PaHostApiTypeId.cs
+    startLine: 12
+  assemblies:
+  - SilverCraft.CSCore.PortAudio
+  namespace: SilverCraft.CSCore.PortAudio.Native
+  syntax:
+    content: paALSA = 8
+    return:
+      type: SilverCraft.CSCore.PortAudio.Native.PaHostApiTypeId
+- uid: SilverCraft.CSCore.PortAudio.Native.PaHostApiTypeId.paAL
+  commentId: F:SilverCraft.CSCore.PortAudio.Native.PaHostApiTypeId.paAL
+  id: paAL
+  parent: SilverCraft.CSCore.PortAudio.Native.PaHostApiTypeId
+  langs:
+  - csharp
+  - vb
+  name: paAL
+  nameWithType: PaHostApiTypeId.paAL
+  fullName: SilverCraft.CSCore.PortAudio.Native.PaHostApiTypeId.paAL
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore.PortAudio/Native/PaHostApiTypeId.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: paAL
+    path: ../SilverCraft.CSCore.PortAudio/Native/PaHostApiTypeId.cs
+    startLine: 13
+  assemblies:
+  - SilverCraft.CSCore.PortAudio
+  namespace: SilverCraft.CSCore.PortAudio.Native
+  syntax:
+    content: paAL = 9
+    return:
+      type: SilverCraft.CSCore.PortAudio.Native.PaHostApiTypeId
+- uid: SilverCraft.CSCore.PortAudio.Native.PaHostApiTypeId.paBeOS
+  commentId: F:SilverCraft.CSCore.PortAudio.Native.PaHostApiTypeId.paBeOS
+  id: paBeOS
+  parent: SilverCraft.CSCore.PortAudio.Native.PaHostApiTypeId
+  langs:
+  - csharp
+  - vb
+  name: paBeOS
+  nameWithType: PaHostApiTypeId.paBeOS
+  fullName: SilverCraft.CSCore.PortAudio.Native.PaHostApiTypeId.paBeOS
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore.PortAudio/Native/PaHostApiTypeId.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: paBeOS
+    path: ../SilverCraft.CSCore.PortAudio/Native/PaHostApiTypeId.cs
+    startLine: 14
+  assemblies:
+  - SilverCraft.CSCore.PortAudio
+  namespace: SilverCraft.CSCore.PortAudio.Native
+  syntax:
+    content: paBeOS = 10
+    return:
+      type: SilverCraft.CSCore.PortAudio.Native.PaHostApiTypeId
+- uid: SilverCraft.CSCore.PortAudio.Native.PaHostApiTypeId.paWDMKS
+  commentId: F:SilverCraft.CSCore.PortAudio.Native.PaHostApiTypeId.paWDMKS
+  id: paWDMKS
+  parent: SilverCraft.CSCore.PortAudio.Native.PaHostApiTypeId
+  langs:
+  - csharp
+  - vb
+  name: paWDMKS
+  nameWithType: PaHostApiTypeId.paWDMKS
+  fullName: SilverCraft.CSCore.PortAudio.Native.PaHostApiTypeId.paWDMKS
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore.PortAudio/Native/PaHostApiTypeId.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: paWDMKS
+    path: ../SilverCraft.CSCore.PortAudio/Native/PaHostApiTypeId.cs
+    startLine: 15
+  assemblies:
+  - SilverCraft.CSCore.PortAudio
+  namespace: SilverCraft.CSCore.PortAudio.Native
+  syntax:
+    content: paWDMKS = 11
+    return:
+      type: SilverCraft.CSCore.PortAudio.Native.PaHostApiTypeId
+- uid: SilverCraft.CSCore.PortAudio.Native.PaHostApiTypeId.paJACK
+  commentId: F:SilverCraft.CSCore.PortAudio.Native.PaHostApiTypeId.paJACK
+  id: paJACK
+  parent: SilverCraft.CSCore.PortAudio.Native.PaHostApiTypeId
+  langs:
+  - csharp
+  - vb
+  name: paJACK
+  nameWithType: PaHostApiTypeId.paJACK
+  fullName: SilverCraft.CSCore.PortAudio.Native.PaHostApiTypeId.paJACK
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore.PortAudio/Native/PaHostApiTypeId.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: paJACK
+    path: ../SilverCraft.CSCore.PortAudio/Native/PaHostApiTypeId.cs
+    startLine: 16
+  assemblies:
+  - SilverCraft.CSCore.PortAudio
+  namespace: SilverCraft.CSCore.PortAudio.Native
+  syntax:
+    content: paJACK = 12
+    return:
+      type: SilverCraft.CSCore.PortAudio.Native.PaHostApiTypeId
+- uid: SilverCraft.CSCore.PortAudio.Native.PaHostApiTypeId.paWASAPI
+  commentId: F:SilverCraft.CSCore.PortAudio.Native.PaHostApiTypeId.paWASAPI
+  id: paWASAPI
+  parent: SilverCraft.CSCore.PortAudio.Native.PaHostApiTypeId
+  langs:
+  - csharp
+  - vb
+  name: paWASAPI
+  nameWithType: PaHostApiTypeId.paWASAPI
+  fullName: SilverCraft.CSCore.PortAudio.Native.PaHostApiTypeId.paWASAPI
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore.PortAudio/Native/PaHostApiTypeId.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: paWASAPI
+    path: ../SilverCraft.CSCore.PortAudio/Native/PaHostApiTypeId.cs
+    startLine: 17
+  assemblies:
+  - SilverCraft.CSCore.PortAudio
+  namespace: SilverCraft.CSCore.PortAudio.Native
+  syntax:
+    content: paWASAPI = 13
+    return:
+      type: SilverCraft.CSCore.PortAudio.Native.PaHostApiTypeId
+- uid: SilverCraft.CSCore.PortAudio.Native.PaHostApiTypeId.paAudioScienceHPI
+  commentId: F:SilverCraft.CSCore.PortAudio.Native.PaHostApiTypeId.paAudioScienceHPI
+  id: paAudioScienceHPI
+  parent: SilverCraft.CSCore.PortAudio.Native.PaHostApiTypeId
+  langs:
+  - csharp
+  - vb
+  name: paAudioScienceHPI
+  nameWithType: PaHostApiTypeId.paAudioScienceHPI
+  fullName: SilverCraft.CSCore.PortAudio.Native.PaHostApiTypeId.paAudioScienceHPI
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore.PortAudio/Native/PaHostApiTypeId.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: paAudioScienceHPI
+    path: ../SilverCraft.CSCore.PortAudio/Native/PaHostApiTypeId.cs
+    startLine: 18
+  assemblies:
+  - SilverCraft.CSCore.PortAudio
+  namespace: SilverCraft.CSCore.PortAudio.Native
+  syntax:
+    content: paAudioScienceHPI = 14
+    return:
+      type: SilverCraft.CSCore.PortAudio.Native.PaHostApiTypeId
+references:
+- uid: SilverCraft.CSCore.PortAudio.Native
+  commentId: N:SilverCraft.CSCore.PortAudio.Native
+  href: SilverCraft.html
+  name: SilverCraft.CSCore.PortAudio.Native
+  nameWithType: SilverCraft.CSCore.PortAudio.Native
+  fullName: SilverCraft.CSCore.PortAudio.Native
+  spec.csharp:
+  - uid: SilverCraft
+    name: SilverCraft
+    href: SilverCraft.html
+  - name: .
+  - uid: SilverCraft.CSCore
+    name: CSCore
+    href: SilverCraft.CSCore.html
+  - name: .
+  - uid: SilverCraft.CSCore.PortAudio
+    name: PortAudio
+    href: SilverCraft.CSCore.PortAudio.html
+  - name: .
+  - uid: SilverCraft.CSCore.PortAudio.Native
+    name: Native
+    href: SilverCraft.CSCore.PortAudio.Native.html
+  spec.vb:
+  - uid: SilverCraft
+    name: SilverCraft
+    href: SilverCraft.html
+  - name: .
+  - uid: SilverCraft.CSCore
+    name: CSCore
+    href: SilverCraft.CSCore.html
+  - name: .
+  - uid: SilverCraft.CSCore.PortAudio
+    name: PortAudio
+    href: SilverCraft.CSCore.PortAudio.html
+  - name: .
+  - uid: SilverCraft.CSCore.PortAudio.Native
+    name: Native
+    href: SilverCraft.CSCore.PortAudio.Native.html
+- uid: SilverCraft.CSCore.PortAudio.Native.PaHostApiTypeId
+  commentId: T:SilverCraft.CSCore.PortAudio.Native.PaHostApiTypeId
+  parent: SilverCraft.CSCore.PortAudio.Native
+  href: SilverCraft.CSCore.PortAudio.Native.PaHostApiTypeId.html
+  name: PaHostApiTypeId
+  nameWithType: PaHostApiTypeId
+  fullName: SilverCraft.CSCore.PortAudio.Native.PaHostApiTypeId

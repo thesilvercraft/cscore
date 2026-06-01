@@ -1,0 +1,192 @@
+### YamlMime:ManagedReference
+items:
+- uid: SilverCraft.CSCore.Tags.ID3.ID3v2HeaderFlags
+  commentId: T:SilverCraft.CSCore.Tags.ID3.ID3v2HeaderFlags
+  id: ID3v2HeaderFlags
+  parent: SilverCraft.CSCore.Tags.ID3
+  children:
+  - SilverCraft.CSCore.Tags.ID3.ID3v2HeaderFlags.ExperimentalIndicator
+  - SilverCraft.CSCore.Tags.ID3.ID3v2HeaderFlags.ExtendedHeader
+  - SilverCraft.CSCore.Tags.ID3.ID3v2HeaderFlags.FooterPresent
+  - SilverCraft.CSCore.Tags.ID3.ID3v2HeaderFlags.Unsynchronisation
+  langs:
+  - csharp
+  - vb
+  name: ID3v2HeaderFlags
+  nameWithType: ID3v2HeaderFlags
+  fullName: SilverCraft.CSCore.Tags.ID3.ID3v2HeaderFlags
+  type: Enum
+  source:
+    remote:
+      path: SilverCraft.CSCore/Tags/ID3/ID3v2HeaderFlags.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: ID3v2HeaderFlags
+    path: ../SilverCraft.CSCore/Tags/ID3/ID3v2HeaderFlags.cs
+    startLine: 4
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Tags.ID3
+  syntax:
+    content: >-
+      [Flags]
+
+      public enum ID3v2HeaderFlags
+    content.vb: >-
+      <Flags>
+
+      Public Enum ID3v2HeaderFlags
+  attributes:
+  - type: System.FlagsAttribute
+    ctor: System.FlagsAttribute.#ctor
+    arguments: []
+- uid: SilverCraft.CSCore.Tags.ID3.ID3v2HeaderFlags.Unsynchronisation
+  commentId: F:SilverCraft.CSCore.Tags.ID3.ID3v2HeaderFlags.Unsynchronisation
+  id: Unsynchronisation
+  parent: SilverCraft.CSCore.Tags.ID3.ID3v2HeaderFlags
+  langs:
+  - csharp
+  - vb
+  name: Unsynchronisation
+  nameWithType: ID3v2HeaderFlags.Unsynchronisation
+  fullName: SilverCraft.CSCore.Tags.ID3.ID3v2HeaderFlags.Unsynchronisation
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/Tags/ID3/ID3v2HeaderFlags.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: Unsynchronisation
+    path: ../SilverCraft.CSCore/Tags/ID3/ID3v2HeaderFlags.cs
+    startLine: 7
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Tags.ID3
+  syntax:
+    content: Unsynchronisation = 128
+    return:
+      type: SilverCraft.CSCore.Tags.ID3.ID3v2HeaderFlags
+- uid: SilverCraft.CSCore.Tags.ID3.ID3v2HeaderFlags.ExtendedHeader
+  commentId: F:SilverCraft.CSCore.Tags.ID3.ID3v2HeaderFlags.ExtendedHeader
+  id: ExtendedHeader
+  parent: SilverCraft.CSCore.Tags.ID3.ID3v2HeaderFlags
+  langs:
+  - csharp
+  - vb
+  name: ExtendedHeader
+  nameWithType: ID3v2HeaderFlags.ExtendedHeader
+  fullName: SilverCraft.CSCore.Tags.ID3.ID3v2HeaderFlags.ExtendedHeader
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/Tags/ID3/ID3v2HeaderFlags.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: ExtendedHeader
+    path: ../SilverCraft.CSCore/Tags/ID3/ID3v2HeaderFlags.cs
+    startLine: 8
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Tags.ID3
+  syntax:
+    content: ExtendedHeader = 64
+    return:
+      type: SilverCraft.CSCore.Tags.ID3.ID3v2HeaderFlags
+- uid: SilverCraft.CSCore.Tags.ID3.ID3v2HeaderFlags.ExperimentalIndicator
+  commentId: F:SilverCraft.CSCore.Tags.ID3.ID3v2HeaderFlags.ExperimentalIndicator
+  id: ExperimentalIndicator
+  parent: SilverCraft.CSCore.Tags.ID3.ID3v2HeaderFlags
+  langs:
+  - csharp
+  - vb
+  name: ExperimentalIndicator
+  nameWithType: ID3v2HeaderFlags.ExperimentalIndicator
+  fullName: SilverCraft.CSCore.Tags.ID3.ID3v2HeaderFlags.ExperimentalIndicator
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/Tags/ID3/ID3v2HeaderFlags.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: ExperimentalIndicator
+    path: ../SilverCraft.CSCore/Tags/ID3/ID3v2HeaderFlags.cs
+    startLine: 9
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Tags.ID3
+  syntax:
+    content: ExperimentalIndicator = 32
+    return:
+      type: SilverCraft.CSCore.Tags.ID3.ID3v2HeaderFlags
+- uid: SilverCraft.CSCore.Tags.ID3.ID3v2HeaderFlags.FooterPresent
+  commentId: F:SilverCraft.CSCore.Tags.ID3.ID3v2HeaderFlags.FooterPresent
+  id: FooterPresent
+  parent: SilverCraft.CSCore.Tags.ID3.ID3v2HeaderFlags
+  langs:
+  - csharp
+  - vb
+  name: FooterPresent
+  nameWithType: ID3v2HeaderFlags.FooterPresent
+  fullName: SilverCraft.CSCore.Tags.ID3.ID3v2HeaderFlags.FooterPresent
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/Tags/ID3/ID3v2HeaderFlags.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: FooterPresent
+    path: ../SilverCraft.CSCore/Tags/ID3/ID3v2HeaderFlags.cs
+    startLine: 10
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Tags.ID3
+  syntax:
+    content: FooterPresent = 16
+    return:
+      type: SilverCraft.CSCore.Tags.ID3.ID3v2HeaderFlags
+references:
+- uid: SilverCraft.CSCore.Tags.ID3
+  commentId: N:SilverCraft.CSCore.Tags.ID3
+  href: SilverCraft.html
+  name: SilverCraft.CSCore.Tags.ID3
+  nameWithType: SilverCraft.CSCore.Tags.ID3
+  fullName: SilverCraft.CSCore.Tags.ID3
+  spec.csharp:
+  - uid: SilverCraft
+    name: SilverCraft
+    href: SilverCraft.html
+  - name: .
+  - uid: SilverCraft.CSCore
+    name: CSCore
+    href: SilverCraft.CSCore.html
+  - name: .
+  - uid: SilverCraft.CSCore.Tags
+    name: Tags
+    href: SilverCraft.CSCore.Tags.html
+  - name: .
+  - uid: SilverCraft.CSCore.Tags.ID3
+    name: ID3
+    href: SilverCraft.CSCore.Tags.ID3.html
+  spec.vb:
+  - uid: SilverCraft
+    name: SilverCraft
+    href: SilverCraft.html
+  - name: .
+  - uid: SilverCraft.CSCore
+    name: CSCore
+    href: SilverCraft.CSCore.html
+  - name: .
+  - uid: SilverCraft.CSCore.Tags
+    name: Tags
+    href: SilverCraft.CSCore.Tags.html
+  - name: .
+  - uid: SilverCraft.CSCore.Tags.ID3
+    name: ID3
+    href: SilverCraft.CSCore.Tags.ID3.html
+- uid: SilverCraft.CSCore.Tags.ID3.ID3v2HeaderFlags
+  commentId: T:SilverCraft.CSCore.Tags.ID3.ID3v2HeaderFlags
+  parent: SilverCraft.CSCore.Tags.ID3
+  href: SilverCraft.CSCore.Tags.ID3.ID3v2HeaderFlags.html
+  name: ID3v2HeaderFlags
+  nameWithType: ID3v2HeaderFlags
+  fullName: SilverCraft.CSCore.Tags.ID3.ID3v2HeaderFlags

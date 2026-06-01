@@ -1,0 +1,140 @@
+### YamlMime:ManagedReference
+items:
+- uid: SilverCraft.CSCore.Streams.SampleConverter
+  commentId: N:SilverCraft.CSCore.Streams.SampleConverter
+  id: SilverCraft.CSCore.Streams.SampleConverter
+  children:
+  - SilverCraft.CSCore.Streams.SampleConverter.IeeeFloatToSample
+  - SilverCraft.CSCore.Streams.SampleConverter.Pcm16BitToSample
+  - SilverCraft.CSCore.Streams.SampleConverter.Pcm24BitToSample
+  - SilverCraft.CSCore.Streams.SampleConverter.Pcm32BitToSample
+  - SilverCraft.CSCore.Streams.SampleConverter.Pcm8BitToSample
+  - SilverCraft.CSCore.Streams.SampleConverter.SampleToIeeeFloat32
+  - SilverCraft.CSCore.Streams.SampleConverter.SampleToPcm16
+  - SilverCraft.CSCore.Streams.SampleConverter.SampleToPcm24
+  - SilverCraft.CSCore.Streams.SampleConverter.SampleToPcm32
+  - SilverCraft.CSCore.Streams.SampleConverter.SampleToPcm8
+  - SilverCraft.CSCore.Streams.SampleConverter.SampleToWaveBase
+  - SilverCraft.CSCore.Streams.SampleConverter.WaveToSampleBase
+  langs:
+  - csharp
+  - vb
+  name: SilverCraft.CSCore.Streams.SampleConverter
+  nameWithType: SilverCraft.CSCore.Streams.SampleConverter
+  fullName: SilverCraft.CSCore.Streams.SampleConverter
+  type: Namespace
+  assemblies:
+  - SilverCraft.CSCore
+references:
+- uid: SilverCraft.CSCore.Streams.SampleConverter.IeeeFloatToSample
+  commentId: T:SilverCraft.CSCore.Streams.SampleConverter.IeeeFloatToSample
+  href: SilverCraft.CSCore.Streams.SampleConverter.IeeeFloatToSample.html
+  name: IeeeFloatToSample
+  nameWithType: IeeeFloatToSample
+  fullName: SilverCraft.CSCore.Streams.SampleConverter.IeeeFloatToSample
+- uid: SilverCraft.CSCore.Streams.SampleConverter.Pcm16BitToSample
+  commentId: T:SilverCraft.CSCore.Streams.SampleConverter.Pcm16BitToSample
+  href: SilverCraft.CSCore.Streams.SampleConverter.Pcm16BitToSample.html
+  name: Pcm16BitToSample
+  nameWithType: Pcm16BitToSample
+  fullName: SilverCraft.CSCore.Streams.SampleConverter.Pcm16BitToSample
+- uid: SilverCraft.CSCore.Streams.SampleConverter.Pcm24BitToSample
+  commentId: T:SilverCraft.CSCore.Streams.SampleConverter.Pcm24BitToSample
+  href: SilverCraft.CSCore.Streams.SampleConverter.Pcm24BitToSample.html
+  name: Pcm24BitToSample
+  nameWithType: Pcm24BitToSample
+  fullName: SilverCraft.CSCore.Streams.SampleConverter.Pcm24BitToSample
+- uid: SilverCraft.CSCore.Streams.SampleConverter.Pcm32BitToSample
+  commentId: T:SilverCraft.CSCore.Streams.SampleConverter.Pcm32BitToSample
+  href: SilverCraft.CSCore.Streams.SampleConverter.Pcm32BitToSample.html
+  name: Pcm32BitToSample
+  nameWithType: Pcm32BitToSample
+  fullName: SilverCraft.CSCore.Streams.SampleConverter.Pcm32BitToSample
+- uid: SilverCraft.CSCore.Streams.SampleConverter.Pcm8BitToSample
+  commentId: T:SilverCraft.CSCore.Streams.SampleConverter.Pcm8BitToSample
+  href: SilverCraft.CSCore.Streams.SampleConverter.Pcm8BitToSample.html
+  name: Pcm8BitToSample
+  nameWithType: Pcm8BitToSample
+  fullName: SilverCraft.CSCore.Streams.SampleConverter.Pcm8BitToSample
+- uid: SilverCraft.CSCore.Streams.SampleConverter.SampleToIeeeFloat32
+  commentId: T:SilverCraft.CSCore.Streams.SampleConverter.SampleToIeeeFloat32
+  href: SilverCraft.CSCore.Streams.SampleConverter.SampleToIeeeFloat32.html
+  name: SampleToIeeeFloat32
+  nameWithType: SampleToIeeeFloat32
+  fullName: SilverCraft.CSCore.Streams.SampleConverter.SampleToIeeeFloat32
+- uid: SilverCraft.CSCore.Streams.SampleConverter.SampleToPcm16
+  commentId: T:SilverCraft.CSCore.Streams.SampleConverter.SampleToPcm16
+  href: SilverCraft.CSCore.Streams.SampleConverter.SampleToPcm16.html
+  name: SampleToPcm16
+  nameWithType: SampleToPcm16
+  fullName: SilverCraft.CSCore.Streams.SampleConverter.SampleToPcm16
+- uid: SilverCraft.CSCore.Streams.SampleConverter.SampleToPcm24
+  commentId: T:SilverCraft.CSCore.Streams.SampleConverter.SampleToPcm24
+  href: SilverCraft.CSCore.Streams.SampleConverter.SampleToPcm24.html
+  name: SampleToPcm24
+  nameWithType: SampleToPcm24
+  fullName: SilverCraft.CSCore.Streams.SampleConverter.SampleToPcm24
+- uid: SilverCraft.CSCore.Streams.SampleConverter.SampleToPcm32
+  commentId: T:SilverCraft.CSCore.Streams.SampleConverter.SampleToPcm32
+  href: SilverCraft.CSCore.Streams.SampleConverter.SampleToPcm32.html
+  name: SampleToPcm32
+  nameWithType: SampleToPcm32
+  fullName: SilverCraft.CSCore.Streams.SampleConverter.SampleToPcm32
+- uid: SilverCraft.CSCore.Streams.SampleConverter.SampleToPcm8
+  commentId: T:SilverCraft.CSCore.Streams.SampleConverter.SampleToPcm8
+  href: SilverCraft.CSCore.Streams.SampleConverter.SampleToPcm8.html
+  name: SampleToPcm8
+  nameWithType: SampleToPcm8
+  fullName: SilverCraft.CSCore.Streams.SampleConverter.SampleToPcm8
+- uid: SilverCraft.CSCore.Streams.SampleConverter.SampleToWaveBase
+  commentId: T:SilverCraft.CSCore.Streams.SampleConverter.SampleToWaveBase
+  parent: SilverCraft.CSCore.Streams.SampleConverter
+  href: SilverCraft.CSCore.Streams.SampleConverter.SampleToWaveBase.html
+  name: SampleToWaveBase
+  nameWithType: SampleToWaveBase
+  fullName: SilverCraft.CSCore.Streams.SampleConverter.SampleToWaveBase
+- uid: SilverCraft.CSCore.Streams.SampleConverter.WaveToSampleBase
+  commentId: T:SilverCraft.CSCore.Streams.SampleConverter.WaveToSampleBase
+  parent: SilverCraft.CSCore.Streams.SampleConverter
+  href: SilverCraft.CSCore.Streams.SampleConverter.WaveToSampleBase.html
+  name: WaveToSampleBase
+  nameWithType: WaveToSampleBase
+  fullName: SilverCraft.CSCore.Streams.SampleConverter.WaveToSampleBase
+- uid: SilverCraft.CSCore.Streams.SampleConverter
+  commentId: N:SilverCraft.CSCore.Streams.SampleConverter
+  href: SilverCraft.html
+  name: SilverCraft.CSCore.Streams.SampleConverter
+  nameWithType: SilverCraft.CSCore.Streams.SampleConverter
+  fullName: SilverCraft.CSCore.Streams.SampleConverter
+  spec.csharp:
+  - uid: SilverCraft
+    name: SilverCraft
+    href: SilverCraft.html
+  - name: .
+  - uid: SilverCraft.CSCore
+    name: CSCore
+    href: SilverCraft.CSCore.html
+  - name: .
+  - uid: SilverCraft.CSCore.Streams
+    name: Streams
+    href: SilverCraft.CSCore.Streams.html
+  - name: .
+  - uid: SilverCraft.CSCore.Streams.SampleConverter
+    name: SampleConverter
+    href: SilverCraft.CSCore.Streams.SampleConverter.html
+  spec.vb:
+  - uid: SilverCraft
+    name: SilverCraft
+    href: SilverCraft.html
+  - name: .
+  - uid: SilverCraft.CSCore
+    name: CSCore
+    href: SilverCraft.CSCore.html
+  - name: .
+  - uid: SilverCraft.CSCore.Streams
+    name: Streams
+    href: SilverCraft.CSCore.Streams.html
+  - name: .
+  - uid: SilverCraft.CSCore.Streams.SampleConverter
+    name: SampleConverter
+    href: SilverCraft.CSCore.Streams.SampleConverter.html

@@ -1,0 +1,725 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Enum ID3Genre | SilverCraft.CSCore </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Enum ID3Genre | SilverCraft.CSCore ">
+      
+      <meta name="description" content="Represents a list of common ID3v1 genre tags used in media files. https://en.wikipedia.org/wiki/List_of_ID3v1_genres">
+      <link rel="icon" href="../images/cscore-square-notext.svg">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/thesilvercraft/cscore/new/master/apiSpec/new?filename=SilverCraft_CSCore_Tags_ID3_ID3Genre.md&amp;value=---%0Auid%3A%20SilverCraft.CSCore.Tags.ID3.ID3Genre%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../images/cscore-square-notext.svg" alt="SilverCraft.CSCore">
+            SilverCraft.CSCore
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="SilverCraft.CSCore.Tags.ID3.ID3Genre">
+
+
+
+
+  <h1 id="SilverCraft_CSCore_Tags_ID3_ID3Genre" data-uid="SilverCraft.CSCore.Tags.ID3.ID3Genre" class="text-break">
+Enum ID3Genre  <a class="header-action link-secondary" title="View source" href="https://github.com/thesilvercraft/cscore/blob/master/SilverCraft.CSCore/Tags/ID3/ID3Genre.cs/#L7"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="SilverCraft.html">SilverCraft</a>.<a class="xref" href="SilverCraft.CSCore.html">CSCore</a>.<a class="xref" href="SilverCraft.CSCore.Tags.html">Tags</a>.<a class="xref" href="SilverCraft.CSCore.Tags.ID3.html">ID3</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>SilverCraft.CSCore.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>Represents a list of common ID3v1 genre tags used in media files.
+<a href="https://en.wikipedia.org/wiki/List_of_ID3v1_genres">https://en.wikipedia.org/wiki/List_of_ID3v1_genres</a></p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public enum ID3Genre : byte</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+  <h2 id="fields">Fields
+</h2>
+  <dl class="parameters">
+    <dt id="SilverCraft_CSCore_Tags_ID3_ID3Genre_ACapella"><code>ACapella = 123</code></dt>
+  
+  <dd></dd>
+    <dt id="SilverCraft_CSCore_Tags_ID3_ID3Genre_Acid"><code>Acid = 34</code></dt>
+  
+  <dd></dd>
+    <dt id="SilverCraft_CSCore_Tags_ID3_ID3Genre_AcidJazz"><code>AcidJazz = 74</code></dt>
+  
+  <dd></dd>
+    <dt id="SilverCraft_CSCore_Tags_ID3_ID3Genre_AcidPunk"><code>AcidPunk = 73</code></dt>
+  
+  <dd></dd>
+    <dt id="SilverCraft_CSCore_Tags_ID3_ID3Genre_Acoustic"><code>Acoustic = 99</code></dt>
+  
+  <dd></dd>
+    <dt id="SilverCraft_CSCore_Tags_ID3_ID3Genre_AlternRock"><code>AlternRock = 40</code></dt>
+  
+  <dd></dd>
+    <dt id="SilverCraft_CSCore_Tags_ID3_ID3Genre_Alternative"><code>Alternative = 20</code></dt>
+  
+  <dd></dd>
+    <dt id="SilverCraft_CSCore_Tags_ID3_ID3Genre_Ambient"><code>Ambient = 26</code></dt>
+  
+  <dd></dd>
+    <dt id="SilverCraft_CSCore_Tags_ID3_ID3Genre_Anime"><code>Anime = 145</code></dt>
+  
+  <dd></dd>
+    <dt id="SilverCraft_CSCore_Tags_ID3_ID3Genre_ArtRock"><code>ArtRock = 149</code></dt>
+  
+  <dd></dd>
+    <dt id="SilverCraft_CSCore_Tags_ID3_ID3Genre_AudioTheatre"><code>AudioTheatre = 184</code></dt>
+  
+  <dd></dd>
+    <dt id="SilverCraft_CSCore_Tags_ID3_ID3Genre_Audiobook"><code>Audiobook = 183</code></dt>
+  
+  <dd></dd>
+    <dt id="SilverCraft_CSCore_Tags_ID3_ID3Genre_Avantgrade"><code>Avantgrade = 90</code></dt>
+  
+  <dd></dd>
+    <dt id="SilverCraft_CSCore_Tags_ID3_ID3Genre_Ballad"><code>Ballad = 116</code></dt>
+  
+  <dd></dd>
+    <dt id="SilverCraft_CSCore_Tags_ID3_ID3Genre_Baroque"><code>Baroque = 150</code></dt>
+  
+  <dd></dd>
+    <dt id="SilverCraft_CSCore_Tags_ID3_ID3Genre_Bass"><code>Bass = 41</code></dt>
+  
+  <dd></dd>
+    <dt id="SilverCraft_CSCore_Tags_ID3_ID3Genre_Beat"><code>Beat = 135</code></dt>
+  
+  <dd></dd>
+    <dt id="SilverCraft_CSCore_Tags_ID3_ID3Genre_Bebob"><code>Bebob = 85</code></dt>
+  
+  <dd></dd>
+    <dt id="SilverCraft_CSCore_Tags_ID3_ID3Genre_Bhangra"><code>Bhangra = 151</code></dt>
+  
+  <dd></dd>
+    <dt id="SilverCraft_CSCore_Tags_ID3_ID3Genre_BigBand"><code>BigBand = 96</code></dt>
+  
+  <dd></dd>
+    <dt id="SilverCraft_CSCore_Tags_ID3_ID3Genre_BigBeat"><code>BigBeat = 152</code></dt>
+  
+  <dd></dd>
+    <dt id="SilverCraft_CSCore_Tags_ID3_ID3Genre_BlackMetal"><code>BlackMetal = 138</code></dt>
+  
+  <dd></dd>
+    <dt id="SilverCraft_CSCore_Tags_ID3_ID3Genre_Bluegrass"><code>Bluegrass = 89</code></dt>
+  
+  <dd></dd>
+    <dt id="SilverCraft_CSCore_Tags_ID3_ID3Genre_Blues"><code>Blues = 0</code></dt>
+  
+  <dd></dd>
+    <dt id="SilverCraft_CSCore_Tags_ID3_ID3Genre_BootyBass"><code>BootyBass = 107</code></dt>
+  
+  <dd></dd>
+    <dt id="SilverCraft_CSCore_Tags_ID3_ID3Genre_Breakbeat"><code>Breakbeat = 153</code></dt>
+  
+  <dd></dd>
+    <dt id="SilverCraft_CSCore_Tags_ID3_ID3Genre_Britpop"><code>Britpop = 132</code></dt>
+  
+  <dd></dd>
+    <dt id="SilverCraft_CSCore_Tags_ID3_ID3Genre_Cabaret"><code>Cabaret = 65</code></dt>
+  
+  <dd></dd>
+    <dt id="SilverCraft_CSCore_Tags_ID3_ID3Genre_Celtic"><code>Celtic = 88</code></dt>
+  
+  <dd></dd>
+    <dt id="SilverCraft_CSCore_Tags_ID3_ID3Genre_ChamberMusic"><code>ChamberMusic = 104</code></dt>
+  
+  <dd></dd>
+    <dt id="SilverCraft_CSCore_Tags_ID3_ID3Genre_Chanson"><code>Chanson = 102</code></dt>
+  
+  <dd></dd>
+    <dt id="SilverCraft_CSCore_Tags_ID3_ID3Genre_Chillout"><code>Chillout = 154</code></dt>
+  
+  <dd></dd>
+    <dt id="SilverCraft_CSCore_Tags_ID3_ID3Genre_Chorus"><code>Chorus = 97</code></dt>
+  
+  <dd></dd>
+    <dt id="SilverCraft_CSCore_Tags_ID3_ID3Genre_ChrisitanRock"><code>ChrisitanRock = 141</code></dt>
+  
+  <dd></dd>
+    <dt id="SilverCraft_CSCore_Tags_ID3_ID3Genre_ChristianGangstaRap"><code>ChristianGangstaRap = 136</code></dt>
+  
+  <dd></dd>
+    <dt id="SilverCraft_CSCore_Tags_ID3_ID3Genre_ChristianRap"><code>ChristianRap = 61</code></dt>
+  
+  <dd></dd>
+    <dt id="SilverCraft_CSCore_Tags_ID3_ID3Genre_Christmas"><code>Christmas = 148</code></dt>
+  
+  <dd></dd>
+    <dt id="SilverCraft_CSCore_Tags_ID3_ID3Genre_ClassicRock"><code>ClassicRock = 1</code></dt>
+  
+  <dd></dd>
+    <dt id="SilverCraft_CSCore_Tags_ID3_ID3Genre_Classical"><code>Classical = 32</code></dt>
+  
+  <dd></dd>
+    <dt id="SilverCraft_CSCore_Tags_ID3_ID3Genre_Club"><code>Club = 112</code></dt>
+  
+  <dd></dd>
+    <dt id="SilverCraft_CSCore_Tags_ID3_ID3Genre_ClubHouse"><code>ClubHouse = 128</code></dt>
+  
+  <dd></dd>
+    <dt id="SilverCraft_CSCore_Tags_ID3_ID3Genre_Comedy"><code>Comedy = 57</code></dt>
+  
+  <dd></dd>
+    <dt id="SilverCraft_CSCore_Tags_ID3_ID3Genre_ContemporaryChrisitan"><code>ContemporaryChrisitan = 140</code></dt>
+  
+  <dd></dd>
+    <dt id="SilverCraft_CSCore_Tags_ID3_ID3Genre_Country"><code>Country = 2</code></dt>
+  
+  <dd></dd>
+    <dt id="SilverCraft_CSCore_Tags_ID3_ID3Genre_Crossover"><code>Crossover = 139</code></dt>
+  
+  <dd></dd>
+    <dt id="SilverCraft_CSCore_Tags_ID3_ID3Genre_Cult"><code>Cult = 58</code></dt>
+  
+  <dd></dd>
+    <dt id="SilverCraft_CSCore_Tags_ID3_ID3Genre_Dance"><code>Dance = 3</code></dt>
+  
+  <dd></dd>
+    <dt id="SilverCraft_CSCore_Tags_ID3_ID3Genre_DanceHall"><code>DanceHall = 125</code></dt>
+  
+  <dd></dd>
+    <dt id="SilverCraft_CSCore_Tags_ID3_ID3Genre_Darkwave"><code>Darkwave = 50</code></dt>
+  
+  <dd></dd>
+    <dt id="SilverCraft_CSCore_Tags_ID3_ID3Genre_DeathMetal"><code>DeathMetal = 22</code></dt>
+  
+  <dd></dd>
+    <dt id="SilverCraft_CSCore_Tags_ID3_ID3Genre_Disco"><code>Disco = 4</code></dt>
+  
+  <dd></dd>
+    <dt id="SilverCraft_CSCore_Tags_ID3_ID3Genre_Downtempo"><code>Downtempo = 155</code></dt>
+  
+  <dd></dd>
+    <dt id="SilverCraft_CSCore_Tags_ID3_ID3Genre_Dream"><code>Dream = 55</code></dt>
+  
+  <dd></dd>
+    <dt id="SilverCraft_CSCore_Tags_ID3_ID3Genre_DrumAndBass"><code>DrumAndBass = 127</code></dt>
+  
+  <dd></dd>
+    <dt id="SilverCraft_CSCore_Tags_ID3_ID3Genre_DrumSolo"><code>DrumSolo = 122</code></dt>
+  
+  <dd></dd>
+    <dt id="SilverCraft_CSCore_Tags_ID3_ID3Genre_Dub"><code>Dub = 156</code></dt>
+  
+  <dd></dd>
+    <dt id="SilverCraft_CSCore_Tags_ID3_ID3Genre_Dubstep"><code>Dubstep = 189</code></dt>
+  
+  <dd></dd>
+    <dt id="SilverCraft_CSCore_Tags_ID3_ID3Genre_Duet"><code>Duet = 120</code></dt>
+  
+  <dd></dd>
+    <dt id="SilverCraft_CSCore_Tags_ID3_ID3Genre_EBM"><code>EBM = 157</code></dt>
+  
+  <dd></dd>
+    <dt id="SilverCraft_CSCore_Tags_ID3_ID3Genre_EasyListening"><code>EasyListening = 98</code></dt>
+  
+  <dd></dd>
+    <dt id="SilverCraft_CSCore_Tags_ID3_ID3Genre_Eclectic"><code>Eclectic = 158</code></dt>
+  
+  <dd></dd>
+    <dt id="SilverCraft_CSCore_Tags_ID3_ID3Genre_Electro"><code>Electro = 159</code></dt>
+  
+  <dd></dd>
+    <dt id="SilverCraft_CSCore_Tags_ID3_ID3Genre_Electroclash"><code>Electroclash = 160</code></dt>
+  
+  <dd></dd>
+    <dt id="SilverCraft_CSCore_Tags_ID3_ID3Genre_Electronic"><code>Electronic = 52</code></dt>
+  
+  <dd></dd>
+    <dt id="SilverCraft_CSCore_Tags_ID3_ID3Genre_Emo"><code>Emo = 161</code></dt>
+  
+  <dd></dd>
+    <dt id="SilverCraft_CSCore_Tags_ID3_ID3Genre_Ethnic"><code>Ethnic = 48</code></dt>
+  
+  <dd></dd>
+    <dt id="SilverCraft_CSCore_Tags_ID3_ID3Genre_EuroHouse"><code>EuroHouse = 124</code></dt>
+  
+  <dd></dd>
+    <dt id="SilverCraft_CSCore_Tags_ID3_ID3Genre_EuroTechno"><code>EuroTechno = 25</code></dt>
+  
+  <dd></dd>
+    <dt id="SilverCraft_CSCore_Tags_ID3_ID3Genre_Eurodance"><code>Eurodance = 54</code></dt>
+  
+  <dd></dd>
+    <dt id="SilverCraft_CSCore_Tags_ID3_ID3Genre_Experimental"><code>Experimental = 162</code></dt>
+  
+  <dd></dd>
+    <dt id="SilverCraft_CSCore_Tags_ID3_ID3Genre_FastFusion"><code>FastFusion = 84</code></dt>
+  
+  <dd></dd>
+    <dt id="SilverCraft_CSCore_Tags_ID3_ID3Genre_Folk"><code>Folk = 80</code></dt>
+  
+  <dd></dd>
+    <dt id="SilverCraft_CSCore_Tags_ID3_ID3Genre_FolkRock"><code>FolkRock = 81</code></dt>
+  
+  <dd></dd>
+    <dt id="SilverCraft_CSCore_Tags_ID3_ID3Genre_Folklore"><code>Folklore = 115</code></dt>
+  
+  <dd></dd>
+    <dt id="SilverCraft_CSCore_Tags_ID3_ID3Genre_Freestyle"><code>Freestyle = 119</code></dt>
+  
+  <dd></dd>
+    <dt id="SilverCraft_CSCore_Tags_ID3_ID3Genre_Funk"><code>Funk = 5</code></dt>
+  
+  <dd></dd>
+    <dt id="SilverCraft_CSCore_Tags_ID3_ID3Genre_Fusion"><code>Fusion = 30</code></dt>
+  
+  <dd></dd>
+    <dt id="SilverCraft_CSCore_Tags_ID3_ID3Genre_GFunk"><code>GFunk = 188</code></dt>
+  
+  <dd></dd>
+    <dt id="SilverCraft_CSCore_Tags_ID3_ID3Genre_Game"><code>Game = 36</code></dt>
+  
+  <dd></dd>
+    <dt id="SilverCraft_CSCore_Tags_ID3_ID3Genre_Gangsta"><code>Gangsta = 59</code></dt>
+  
+  <dd></dd>
+    <dt id="SilverCraft_CSCore_Tags_ID3_ID3Genre_Garage"><code>Garage = 163</code></dt>
+  
+  <dd></dd>
+    <dt id="SilverCraft_CSCore_Tags_ID3_ID3Genre_GarageRock"><code>GarageRock = 190</code></dt>
+  
+  <dd></dd>
+    <dt id="SilverCraft_CSCore_Tags_ID3_ID3Genre_Global"><code>Global = 164</code></dt>
+  
+  <dd></dd>
+    <dt id="SilverCraft_CSCore_Tags_ID3_ID3Genre_Goa"><code>Goa = 126</code></dt>
+  
+  <dd></dd>
+    <dt id="SilverCraft_CSCore_Tags_ID3_ID3Genre_Gospel"><code>Gospel = 38</code></dt>
+  
+  <dd></dd>
+    <dt id="SilverCraft_CSCore_Tags_ID3_ID3Genre_Gothic"><code>Gothic = 49</code></dt>
+  
+  <dd></dd>
+    <dt id="SilverCraft_CSCore_Tags_ID3_ID3Genre_GothicRock"><code>GothicRock = 91</code></dt>
+  
+  <dd></dd>
+    <dt id="SilverCraft_CSCore_Tags_ID3_ID3Genre_Grunge"><code>Grunge = 6</code></dt>
+  
+  <dd></dd>
+    <dt id="SilverCraft_CSCore_Tags_ID3_ID3Genre_HardRock"><code>HardRock = 79</code></dt>
+  
+  <dd></dd>
+    <dt id="SilverCraft_CSCore_Tags_ID3_ID3Genre_HardcoreTechno"><code>HardcoreTechno = 129</code></dt>
+  
+  <dd></dd>
+    <dt id="SilverCraft_CSCore_Tags_ID3_ID3Genre_HeavyMetal"><code>HeavyMetal = 137</code></dt>
+  
+  <dd></dd>
+    <dt id="SilverCraft_CSCore_Tags_ID3_ID3Genre_HipHop"><code>HipHop = 7</code></dt>
+  
+  <dd></dd>
+    <dt id="SilverCraft_CSCore_Tags_ID3_ID3Genre_House"><code>House = 35</code></dt>
+  
+  <dd></dd>
+    <dt id="SilverCraft_CSCore_Tags_ID3_ID3Genre_Humour"><code>Humour = 100</code></dt>
+  
+  <dd></dd>
+    <dt id="SilverCraft_CSCore_Tags_ID3_ID3Genre_IDM"><code>IDM = 165</code></dt>
+  
+  <dd></dd>
+    <dt id="SilverCraft_CSCore_Tags_ID3_ID3Genre_Illbient"><code>Illbient = 166</code></dt>
+  
+  <dd></dd>
+    <dt id="SilverCraft_CSCore_Tags_ID3_ID3Genre_Indie"><code>Indie = 131</code></dt>
+  
+  <dd></dd>
+    <dt id="SilverCraft_CSCore_Tags_ID3_ID3Genre_IndieRock"><code>IndieRock = 187</code></dt>
+  
+  <dd></dd>
+    <dt id="SilverCraft_CSCore_Tags_ID3_ID3Genre_Industrial"><code>Industrial = 19</code></dt>
+  
+  <dd></dd>
+    <dt id="SilverCraft_CSCore_Tags_ID3_ID3Genre_IndustroGoth"><code>IndustroGoth = 167</code></dt>
+  
+  <dd></dd>
+    <dt id="SilverCraft_CSCore_Tags_ID3_ID3Genre_Instrumental"><code>Instrumental = 33</code></dt>
+  
+  <dd></dd>
+    <dt id="SilverCraft_CSCore_Tags_ID3_ID3Genre_InstrumentalPop"><code>InstrumentalPop = 46</code></dt>
+  
+  <dd></dd>
+    <dt id="SilverCraft_CSCore_Tags_ID3_ID3Genre_InstrumentalRock"><code>InstrumentalRock = 47</code></dt>
+  
+  <dd></dd>
+    <dt id="SilverCraft_CSCore_Tags_ID3_ID3Genre_JamBand"><code>JamBand = 168</code></dt>
+  
+  <dd></dd>
+    <dt id="SilverCraft_CSCore_Tags_ID3_ID3Genre_Jazz"><code>Jazz = 8</code></dt>
+  
+  <dd></dd>
+    <dt id="SilverCraft_CSCore_Tags_ID3_ID3Genre_JazzAndFunk"><code>JazzAndFunk = 29</code></dt>
+  
+  <dd></dd>
+    <dt id="SilverCraft_CSCore_Tags_ID3_ID3Genre_Jpop"><code>Jpop = 146</code></dt>
+  
+  <dd></dd>
+    <dt id="SilverCraft_CSCore_Tags_ID3_ID3Genre_Jungle"><code>Jungle = 63</code></dt>
+  
+  <dd></dd>
+    <dt id="SilverCraft_CSCore_Tags_ID3_ID3Genre_Krautrock"><code>Krautrock = 169</code></dt>
+  
+  <dd></dd>
+    <dt id="SilverCraft_CSCore_Tags_ID3_ID3Genre_Latin"><code>Latin = 86</code></dt>
+  
+  <dd></dd>
+    <dt id="SilverCraft_CSCore_Tags_ID3_ID3Genre_Leftfield"><code>Leftfield = 170</code></dt>
+  
+  <dd></dd>
+    <dt id="SilverCraft_CSCore_Tags_ID3_ID3Genre_LoFi"><code>LoFi = 71</code></dt>
+  
+  <dd></dd>
+    <dt id="SilverCraft_CSCore_Tags_ID3_ID3Genre_Lounge"><code>Lounge = 171</code></dt>
+  
+  <dd></dd>
+    <dt id="SilverCraft_CSCore_Tags_ID3_ID3Genre_MathRock"><code>MathRock = 172</code></dt>
+  
+  <dd></dd>
+    <dt id="SilverCraft_CSCore_Tags_ID3_ID3Genre_Meditative"><code>Meditative = 45</code></dt>
+  
+  <dd></dd>
+    <dt id="SilverCraft_CSCore_Tags_ID3_ID3Genre_Merengue"><code>Merengue = 142</code></dt>
+  
+  <dd></dd>
+    <dt id="SilverCraft_CSCore_Tags_ID3_ID3Genre_Metal"><code>Metal = 9</code></dt>
+  
+  <dd></dd>
+    <dt id="SilverCraft_CSCore_Tags_ID3_ID3Genre_Musical"><code>Musical = 77</code></dt>
+  
+  <dd></dd>
+    <dt id="SilverCraft_CSCore_Tags_ID3_ID3Genre_NationalFolk"><code>NationalFolk = 82</code></dt>
+  
+  <dd></dd>
+    <dt id="SilverCraft_CSCore_Tags_ID3_ID3Genre_NativeAmerican"><code>NativeAmerican = 64</code></dt>
+  
+  <dd></dd>
+    <dt id="SilverCraft_CSCore_Tags_ID3_ID3Genre_NegerPunk"><code>NegerPunk = 133</code></dt>
+  
+  <dd></dd>
+    <dt id="SilverCraft_CSCore_Tags_ID3_ID3Genre_Neoclassical"><code>Neoclassical = 182</code></dt>
+  
+  <dd></dd>
+    <dt id="SilverCraft_CSCore_Tags_ID3_ID3Genre_NeueDeutscheWelle"><code>NeueDeutscheWelle = 185</code></dt>
+  
+  <dd></dd>
+    <dt id="SilverCraft_CSCore_Tags_ID3_ID3Genre_NewAge"><code>NewAge = 10</code></dt>
+  
+  <dd></dd>
+    <dt id="SilverCraft_CSCore_Tags_ID3_ID3Genre_NewRomantic"><code>NewRomantic = 173</code></dt>
+  
+  <dd></dd>
+    <dt id="SilverCraft_CSCore_Tags_ID3_ID3Genre_NewWave"><code>NewWave = 66</code></dt>
+  
+  <dd></dd>
+    <dt id="SilverCraft_CSCore_Tags_ID3_ID3Genre_Noise"><code>Noise = 39</code></dt>
+  
+  <dd></dd>
+    <dt id="SilverCraft_CSCore_Tags_ID3_ID3Genre_NuBreakz"><code>NuBreakz = 174</code></dt>
+  
+  <dd></dd>
+    <dt id="SilverCraft_CSCore_Tags_ID3_ID3Genre_Oldies"><code>Oldies = 11</code></dt>
+  
+  <dd></dd>
+    <dt id="SilverCraft_CSCore_Tags_ID3_ID3Genre_Opera"><code>Opera = 103</code></dt>
+  
+  <dd></dd>
+    <dt id="SilverCraft_CSCore_Tags_ID3_ID3Genre_Other"><code>Other = 12</code></dt>
+  
+  <dd></dd>
+    <dt id="SilverCraft_CSCore_Tags_ID3_ID3Genre_Podcast"><code>Podcast = 186</code></dt>
+  
+  <dd></dd>
+    <dt id="SilverCraft_CSCore_Tags_ID3_ID3Genre_Polka"><code>Polka = 75</code></dt>
+  
+  <dd></dd>
+    <dt id="SilverCraft_CSCore_Tags_ID3_ID3Genre_PolskPunk"><code>PolskPunk = 134</code></dt>
+  
+  <dd></dd>
+    <dt id="SilverCraft_CSCore_Tags_ID3_ID3Genre_Pop"><code>Pop = 13</code></dt>
+  
+  <dd></dd>
+    <dt id="SilverCraft_CSCore_Tags_ID3_ID3Genre_PopFolk"><code>PopFolk = 53</code></dt>
+  
+  <dd></dd>
+    <dt id="SilverCraft_CSCore_Tags_ID3_ID3Genre_PopFunk"><code>PopFunk = 62</code></dt>
+  
+  <dd></dd>
+    <dt id="SilverCraft_CSCore_Tags_ID3_ID3Genre_PornGroove"><code>PornGroove = 109</code></dt>
+  
+  <dd></dd>
+    <dt id="SilverCraft_CSCore_Tags_ID3_ID3Genre_PostPunk"><code>PostPunk = 175</code></dt>
+  
+  <dd></dd>
+    <dt id="SilverCraft_CSCore_Tags_ID3_ID3Genre_PostRock"><code>PostRock = 176</code></dt>
+  
+  <dd></dd>
+    <dt id="SilverCraft_CSCore_Tags_ID3_ID3Genre_PowerBallad"><code>PowerBallad = 117</code></dt>
+  
+  <dd></dd>
+    <dt id="SilverCraft_CSCore_Tags_ID3_ID3Genre_Pranks"><code>Pranks = 23</code></dt>
+  
+  <dd></dd>
+    <dt id="SilverCraft_CSCore_Tags_ID3_ID3Genre_Primus"><code>Primus = 108</code></dt>
+  
+  <dd></dd>
+    <dt id="SilverCraft_CSCore_Tags_ID3_ID3Genre_ProgressiveRock"><code>ProgressiveRock = 92</code></dt>
+  
+  <dd></dd>
+    <dt id="SilverCraft_CSCore_Tags_ID3_ID3Genre_Psybient"><code>Psybient = 191</code></dt>
+  
+  <dd></dd>
+    <dt id="SilverCraft_CSCore_Tags_ID3_ID3Genre_Psychadelic"><code>Psychadelic = 67</code></dt>
+  
+  <dd></dd>
+    <dt id="SilverCraft_CSCore_Tags_ID3_ID3Genre_PsychedelicRock"><code>PsychedelicRock = 93</code></dt>
+  
+  <dd></dd>
+    <dt id="SilverCraft_CSCore_Tags_ID3_ID3Genre_Psytrance"><code>Psytrance = 177</code></dt>
+  
+  <dd></dd>
+    <dt id="SilverCraft_CSCore_Tags_ID3_ID3Genre_Punk"><code>Punk = 43</code></dt>
+  
+  <dd></dd>
+    <dt id="SilverCraft_CSCore_Tags_ID3_ID3Genre_PunkRock"><code>PunkRock = 121</code></dt>
+  
+  <dd></dd>
+    <dt id="SilverCraft_CSCore_Tags_ID3_ID3Genre_RAndB"><code>RAndB = 14</code></dt>
+  
+  <dd></dd>
+    <dt id="SilverCraft_CSCore_Tags_ID3_ID3Genre_Rap"><code>Rap = 15</code></dt>
+  
+  <dd></dd>
+    <dt id="SilverCraft_CSCore_Tags_ID3_ID3Genre_Rave"><code>Rave = 68</code></dt>
+  
+  <dd></dd>
+    <dt id="SilverCraft_CSCore_Tags_ID3_ID3Genre_Reggae"><code>Reggae = 16</code></dt>
+  
+  <dd></dd>
+    <dt id="SilverCraft_CSCore_Tags_ID3_ID3Genre_Retro"><code>Retro = 76</code></dt>
+  
+  <dd></dd>
+    <dt id="SilverCraft_CSCore_Tags_ID3_ID3Genre_Revival"><code>Revival = 87</code></dt>
+  
+  <dd></dd>
+    <dt id="SilverCraft_CSCore_Tags_ID3_ID3Genre_Rock"><code>Rock = 17</code></dt>
+  
+  <dd></dd>
+    <dt id="SilverCraft_CSCore_Tags_ID3_ID3Genre_RockAndRoll"><code>RockAndRoll = 78</code></dt>
+  
+  <dd></dd>
+    <dt id="SilverCraft_CSCore_Tags_ID3_ID3Genre_RythmicSoul"><code>RythmicSoul = 118</code></dt>
+  
+  <dd></dd>
+    <dt id="SilverCraft_CSCore_Tags_ID3_ID3Genre_Salsa"><code>Salsa = 143</code></dt>
+  
+  <dd></dd>
+    <dt id="SilverCraft_CSCore_Tags_ID3_ID3Genre_Samba"><code>Samba = 114</code></dt>
+  
+  <dd></dd>
+    <dt id="SilverCraft_CSCore_Tags_ID3_ID3Genre_Satire"><code>Satire = 110</code></dt>
+  
+  <dd></dd>
+    <dt id="SilverCraft_CSCore_Tags_ID3_ID3Genre_Shoegaze"><code>Shoegaze = 178</code></dt>
+  
+  <dd></dd>
+    <dt id="SilverCraft_CSCore_Tags_ID3_ID3Genre_Showtunes"><code>Showtunes = 69</code></dt>
+  
+  <dd></dd>
+    <dt id="SilverCraft_CSCore_Tags_ID3_ID3Genre_Ska"><code>Ska = 21</code></dt>
+  
+  <dd></dd>
+    <dt id="SilverCraft_CSCore_Tags_ID3_ID3Genre_SlowJam"><code>SlowJam = 111</code></dt>
+  
+  <dd></dd>
+    <dt id="SilverCraft_CSCore_Tags_ID3_ID3Genre_SlowRock"><code>SlowRock = 95</code></dt>
+  
+  <dd></dd>
+    <dt id="SilverCraft_CSCore_Tags_ID3_ID3Genre_Sonata"><code>Sonata = 105</code></dt>
+  
+  <dd></dd>
+    <dt id="SilverCraft_CSCore_Tags_ID3_ID3Genre_Soul"><code>Soul = 42</code></dt>
+  
+  <dd></dd>
+    <dt id="SilverCraft_CSCore_Tags_ID3_ID3Genre_SoundClip"><code>SoundClip = 37</code></dt>
+  
+  <dd></dd>
+    <dt id="SilverCraft_CSCore_Tags_ID3_ID3Genre_Soundtrack"><code>Soundtrack = 24</code></dt>
+  
+  <dd></dd>
+    <dt id="SilverCraft_CSCore_Tags_ID3_ID3Genre_SouthernRock"><code>SouthernRock = 56</code></dt>
+  
+  <dd></dd>
+    <dt id="SilverCraft_CSCore_Tags_ID3_ID3Genre_Space"><code>Space = 44</code></dt>
+  
+  <dd></dd>
+    <dt id="SilverCraft_CSCore_Tags_ID3_ID3Genre_SpaceRock"><code>SpaceRock = 179</code></dt>
+  
+  <dd></dd>
+    <dt id="SilverCraft_CSCore_Tags_ID3_ID3Genre_Speech"><code>Speech = 101</code></dt>
+  
+  <dd></dd>
+    <dt id="SilverCraft_CSCore_Tags_ID3_ID3Genre_Swing"><code>Swing = 83</code></dt>
+  
+  <dd></dd>
+    <dt id="SilverCraft_CSCore_Tags_ID3_ID3Genre_Symphonicrock"><code>Symphonicrock = 94</code></dt>
+  
+  <dd></dd>
+    <dt id="SilverCraft_CSCore_Tags_ID3_ID3Genre_Symphony"><code>Symphony = 106</code></dt>
+  
+  <dd></dd>
+    <dt id="SilverCraft_CSCore_Tags_ID3_ID3Genre_Synthpop"><code>Synthpop = 147</code></dt>
+  
+  <dd></dd>
+    <dt id="SilverCraft_CSCore_Tags_ID3_ID3Genre_Tango"><code>Tango = 113</code></dt>
+  
+  <dd></dd>
+    <dt id="SilverCraft_CSCore_Tags_ID3_ID3Genre_Techno"><code>Techno = 18</code></dt>
+  
+  <dd></dd>
+    <dt id="SilverCraft_CSCore_Tags_ID3_ID3Genre_TechnoIndustrial"><code>TechnoIndustrial = 51</code></dt>
+  
+  <dd></dd>
+    <dt id="SilverCraft_CSCore_Tags_ID3_ID3Genre_Terror"><code>Terror = 130</code></dt>
+  
+  <dd></dd>
+    <dt id="SilverCraft_CSCore_Tags_ID3_ID3Genre_ThrashMetal"><code>ThrashMetal = 144</code></dt>
+  
+  <dd></dd>
+    <dt id="SilverCraft_CSCore_Tags_ID3_ID3Genre_Top40"><code>Top40 = 60</code></dt>
+  
+  <dd></dd>
+    <dt id="SilverCraft_CSCore_Tags_ID3_ID3Genre_Trailer"><code>Trailer = 70</code></dt>
+  
+  <dd></dd>
+    <dt id="SilverCraft_CSCore_Tags_ID3_ID3Genre_Trance"><code>Trance = 31</code></dt>
+  
+  <dd></dd>
+    <dt id="SilverCraft_CSCore_Tags_ID3_ID3Genre_Tribal"><code>Tribal = 72</code></dt>
+  
+  <dd></dd>
+    <dt id="SilverCraft_CSCore_Tags_ID3_ID3Genre_TripHop"><code>TripHop = 27</code></dt>
+  
+  <dd></dd>
+    <dt id="SilverCraft_CSCore_Tags_ID3_ID3Genre_TropRock"><code>TropRock = 180</code></dt>
+  
+  <dd></dd>
+    <dt id="SilverCraft_CSCore_Tags_ID3_ID3Genre_Vocal"><code>Vocal = 28</code></dt>
+  
+  <dd></dd>
+    <dt id="SilverCraft_CSCore_Tags_ID3_ID3Genre_WorldMusic"><code>WorldMusic = 181</code></dt>
+  
+  <dd></dd>
+  </dl>
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/thesilvercraft/cscore/blob/master/SilverCraft.CSCore/Tags/ID3/ID3Genre.cs/#L7" class="edit-link">Edit this page</a>
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

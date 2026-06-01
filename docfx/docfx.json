@@ -1,0 +1,55 @@
+{
+  "$schema": "https://raw.githubusercontent.com/dotnet/docfx/main/schemas/docfx.schema.json",
+  "metadata": [
+    {
+      "src": [
+        {
+          "src": "../.",
+          "files": [
+            "**/*.csproj"
+          ],
+          "exclude": [
+            "**/bin/**",
+            "**/obj/**",
+            "SilverCraft.CsCore.BasicPlayTest/*.csproj",
+            "SilverCraft.CSCore.Benchmark/*.csproj"
+          ]
+        }
+      ],
+      "dest": "api"
+    }
+  ],
+  "build": {
+    "content": [
+      {
+        "files": [
+          "**/*.{md,yml}"
+        ],
+        "exclude": [
+          "_site/**"
+        ]
+      }
+    ],
+    "resource": [
+      {
+        "files": [
+          "images/**"
+        ]
+      }
+    ],
+    "output": "_site",
+    "template": [
+      "default",
+      "modern",
+      "my-template"
+    ],
+    "globalMetadata": {
+      "_appName": "SilverCraft.CSCore",
+      "_appTitle": "SilverCraft.CSCore",
+      "_appFaviconPath":"images/cscore-square-notext.svg",
+      "_appLogoPath":"images/cscore-square-notext.svg",
+      "_enableSearch": true,
+      "pdf": false
+    }
+  }
+}

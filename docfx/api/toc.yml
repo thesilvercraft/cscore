@@ -1,0 +1,786 @@
+### YamlMime:TableOfContent
+items:
+- uid: OpenMPT
+  name: OpenMPT
+  type: Namespace
+  items:
+  - uid: OpenMPT.MPTVirtualStreamHelper
+    name: MPTVirtualStreamHelper
+    type: Class
+  - uid: OpenMPT.NativeMethods
+    name: NativeMethods
+    type: Class
+  - uid: OpenMPT.VirtualRead
+    name: VirtualRead
+    type: Delegate
+  - uid: OpenMPT.VirtualSeek
+    name: VirtualSeek
+    type: Delegate
+  - uid: OpenMPT.VirtualTell
+    name: VirtualTell
+    type: Delegate
+  - uid: OpenMPT.Whence
+    name: Whence
+    type: Enum
+  - uid: OpenMPT.openmpt_module
+    name: openmpt_module
+    type: Struct
+  - uid: OpenMPT.openmpt_module_initial_ctl
+    name: openmpt_module_initial_ctl
+    type: Struct
+  - uid: OpenMPT.openmpt_stream_callbacks
+    name: openmpt_stream_callbacks
+    type: Struct
+- uid: SilverCraft.CSCore
+  name: SilverCraft.CSCore
+  type: Namespace
+  items:
+  - uid: SilverCraft.CSCore.AudioEncoding
+    name: AudioEncoding
+    type: Enum
+  - uid: SilverCraft.CSCore.AudioSubTypes
+    name: AudioSubTypes
+    type: Class
+  - uid: SilverCraft.CSCore.ChannelMask
+    name: ChannelMask
+    type: Enum
+  - uid: SilverCraft.CSCore.ChannelMasks
+    name: ChannelMasks
+    type: Class
+  - uid: SilverCraft.CSCore.Extensions
+    name: Extensions
+    type: Class
+  - uid: SilverCraft.CSCore.FluentExtensions
+    name: FluentExtensions
+    type: Class
+  - uid: SilverCraft.CSCore.IAggregator`2
+    name: IAggregator<T, TAggregator>
+    type: Interface
+  - uid: SilverCraft.CSCore.IAudioSource
+    name: IAudioSource
+    type: Interface
+  - uid: SilverCraft.CSCore.IChannelMapperFactory
+    name: IChannelMapperFactory
+    type: Interface
+  - uid: SilverCraft.CSCore.IReadableAudioSource`1
+    name: IReadableAudioSource<T>
+    type: Interface
+  - uid: SilverCraft.CSCore.IResamplerFactory
+    name: IResamplerFactory
+    type: Interface
+  - uid: SilverCraft.CSCore.ISampleAggregator
+    name: ISampleAggregator
+    type: Interface
+  - uid: SilverCraft.CSCore.ISampleSource
+    name: ISampleSource
+    type: Interface
+  - uid: SilverCraft.CSCore.IWaveAggregator
+    name: IWaveAggregator
+    type: Interface
+  - uid: SilverCraft.CSCore.IWaveSource
+    name: IWaveSource
+    type: Interface
+  - uid: SilverCraft.CSCore.IWriteable
+    name: IWriteable
+    type: Interface
+  - uid: SilverCraft.CSCore.Locator
+    name: Locator
+    type: Class
+  - uid: SilverCraft.CSCore.LogLocation
+    name: LogLocation
+    type: Class
+  - uid: SilverCraft.CSCore.SampleAggregatorBase
+    name: SampleAggregatorBase
+    type: Class
+  - uid: SilverCraft.CSCore.Settings
+    name: Settings
+    type: Class
+  - uid: SilverCraft.CSCore.StoppedEventArgs
+    name: StoppedEventArgs
+    type: Class
+  - uid: SilverCraft.CSCore.TimeConverter
+    name: TimeConverter
+    type: Class
+  - uid: SilverCraft.CSCore.TimeConverterAttribute
+    name: TimeConverterAttribute
+    type: Class
+  - uid: SilverCraft.CSCore.TimeConverterFactory
+    name: TimeConverterFactory
+    type: Class
+  - uid: SilverCraft.CSCore.WaveAggregatorBase
+    name: WaveAggregatorBase
+    type: Class
+  - uid: SilverCraft.CSCore.WaveFormat
+    name: WaveFormat
+    type: Class
+  - uid: SilverCraft.CSCore.WaveFormatExtensible
+    name: WaveFormatExtensible
+    type: Class
+- uid: SilverCraft.CSCore.Codecs.AIFF
+  name: SilverCraft.CSCore.Codecs.AIFF
+  type: Namespace
+  items:
+  - uid: SilverCraft.CSCore.Codecs.AIFF.AiffChunk
+    name: AiffChunk
+    type: Class
+  - uid: SilverCraft.CSCore.Codecs.AIFF.AiffChunkContainer
+    name: AiffChunkContainer
+    type: Class
+  - uid: SilverCraft.CSCore.Codecs.AIFF.AiffException
+    name: AiffException
+    type: Class
+  - uid: SilverCraft.CSCore.Codecs.AIFF.AiffReader
+    name: AiffReader
+    type: Class
+  - uid: SilverCraft.CSCore.Codecs.AIFF.CommonChunk
+    name: CommonChunk
+    type: Class
+  - uid: SilverCraft.CSCore.Codecs.AIFF.FormatVersionChunk
+    name: FormatVersionChunk
+    type: Class
+  - uid: SilverCraft.CSCore.Codecs.AIFF.FormatVersionChunk.AifcVersion
+    name: FormatVersionChunk.AifcVersion
+    type: Enum
+  - uid: SilverCraft.CSCore.Codecs.AIFF.SoundDataChunk
+    name: SoundDataChunk
+    type: Class
+- uid: SilverCraft.CSCore.Codecs.FLAC
+  name: SilverCraft.CSCore.Codecs.FLAC
+  type: Namespace
+  items:
+  - uid: SilverCraft.CSCore.Codecs.FLAC.BlockingStrategy
+    name: BlockingStrategy
+    type: Enum
+  - uid: SilverCraft.CSCore.Codecs.FLAC.ChannelAssignment
+    name: ChannelAssignment
+    type: Enum
+  - uid: SilverCraft.CSCore.Codecs.FLAC.DefaultFlacMetadata
+    name: DefaultFlacMetadata
+    type: Class
+  - uid: SilverCraft.CSCore.Codecs.FLAC.FlacException
+    name: FlacException
+    type: Class
+  - uid: SilverCraft.CSCore.Codecs.FLAC.FlacFile
+    name: FlacFile
+    type: Class
+  - uid: SilverCraft.CSCore.Codecs.FLAC.FlacFrame
+    name: FlacFrame
+    type: Class
+  - uid: SilverCraft.CSCore.Codecs.FLAC.FlacFrameHeader
+    name: FlacFrameHeader
+    type: Class
+  - uid: SilverCraft.CSCore.Codecs.FLAC.FlacFrameInformation
+    name: FlacFrameInformation
+    type: Struct
+  - uid: SilverCraft.CSCore.Codecs.FLAC.FlacLayer
+    name: FlacLayer
+    type: Enum
+  - uid: SilverCraft.CSCore.Codecs.FLAC.FlacMetaDataType
+    name: FlacMetaDataType
+    type: Enum
+  - uid: SilverCraft.CSCore.Codecs.FLAC.FlacMetadata
+    name: FlacMetadata
+    type: Class
+  - uid: SilverCraft.CSCore.Codecs.FLAC.FlacMetadataSeekTable
+    name: FlacMetadataSeekTable
+    type: Class
+  - uid: SilverCraft.CSCore.Codecs.FLAC.FlacMetadataStreamInfo
+    name: FlacMetadataStreamInfo
+    type: Class
+  - uid: SilverCraft.CSCore.Codecs.FLAC.FlacPreScanFinishedEventArgs
+    name: FlacPreScanFinishedEventArgs
+    type: Class
+  - uid: SilverCraft.CSCore.Codecs.FLAC.FlacPreScanMode
+    name: FlacPreScanMode
+    type: Enum
+  - uid: SilverCraft.CSCore.Codecs.FLAC.FlacSeekPoint
+    name: FlacSeekPoint
+    type: Class
+- uid: SilverCraft.CSCore.Codecs.FLAC.Metadata
+  name: SilverCraft.CSCore.Codecs.FLAC.Metadata
+  type: Namespace
+  items:
+  - uid: SilverCraft.CSCore.Codecs.FLAC.Metadata.FlacMetadataFactory
+    name: FlacMetadataFactory
+    type: Class
+- uid: SilverCraft.CSCore.Codecs.RAW
+  name: SilverCraft.CSCore.Codecs.RAW
+  type: Namespace
+  items:
+  - uid: SilverCraft.CSCore.Codecs.RAW.RawDataReader
+    name: RawDataReader
+    type: Class
+- uid: SilverCraft.CSCore.Codecs.WAV
+  name: SilverCraft.CSCore.Codecs.WAV
+  type: Namespace
+  items:
+  - uid: SilverCraft.CSCore.Codecs.WAV.DataChunk
+    name: DataChunk
+    type: Class
+  - uid: SilverCraft.CSCore.Codecs.WAV.FmtChunk
+    name: FmtChunk
+    type: Class
+  - uid: SilverCraft.CSCore.Codecs.WAV.WaveFileChunk
+    name: WaveFileChunk
+    type: Class
+  - uid: SilverCraft.CSCore.Codecs.WAV.WaveFileReader
+    name: WaveFileReader
+    type: Class
+  - uid: SilverCraft.CSCore.Codecs.WAV.WaveWriter
+    name: WaveWriter
+    type: Class
+- uid: SilverCraft.CSCore.DSP
+  name: SilverCraft.CSCore.DSP
+  type: Namespace
+  items:
+  - uid: SilverCraft.CSCore.DSP.BandpassFilter
+    name: BandpassFilter
+    type: Class
+  - uid: SilverCraft.CSCore.DSP.BiQuad
+    name: BiQuad
+    type: Class
+  - uid: SilverCraft.CSCore.DSP.ChannelMatrix
+    name: ChannelMatrix
+    type: Class
+  - uid: SilverCraft.CSCore.DSP.ChannelMatrixElement
+    name: ChannelMatrixElement
+    type: Class
+  - uid: SilverCraft.CSCore.DSP.FastFourierTransformation
+    name: FastFourierTransformation
+    type: Class
+  - uid: SilverCraft.CSCore.DSP.FftMode
+    name: FftMode
+    type: Enum
+  - uid: SilverCraft.CSCore.DSP.FftProvider
+    name: FftProvider
+    type: Class
+  - uid: SilverCraft.CSCore.DSP.FftSize
+    name: FftSize
+    type: Enum
+  - uid: SilverCraft.CSCore.DSP.HighShelfFilter
+    name: HighShelfFilter
+    type: Class
+  - uid: SilverCraft.CSCore.DSP.HighpassFilter
+    name: HighpassFilter
+    type: Class
+  - uid: SilverCraft.CSCore.DSP.LowShelfFilter
+    name: LowShelfFilter
+    type: Class
+  - uid: SilverCraft.CSCore.DSP.LowpassFilter
+    name: LowpassFilter
+    type: Class
+  - uid: SilverCraft.CSCore.DSP.NotchFilter
+    name: NotchFilter
+    type: Class
+  - uid: SilverCraft.CSCore.DSP.PeakFilter
+    name: PeakFilter
+    type: Class
+  - uid: SilverCraft.CSCore.DSP.WindowFunction
+    name: WindowFunction
+    type: Delegate
+  - uid: SilverCraft.CSCore.DSP.WindowFunctions
+    name: WindowFunctions
+    type: Class
+- uid: SilverCraft.CSCore.DSP.Resampler
+  name: SilverCraft.CSCore.DSP.Resampler
+  type: Namespace
+  items:
+  - uid: SilverCraft.CSCore.DSP.Resampler.ResamplerBase
+    name: ResamplerBase
+    type: Class
+  - uid: SilverCraft.CSCore.DSP.Resampler.SimpleResampler
+    name: SimpleResampler
+    type: Class
+- uid: SilverCraft.CSCore.OpenMPT
+  name: SilverCraft.CSCore.OpenMPT
+  type: Namespace
+  items:
+  - uid: SilverCraft.CSCore.OpenMPT.OpenMptWaveStream
+    name: OpenMptWaveStream
+    type: Class
+- uid: SilverCraft.CSCore.PortAudio
+  name: SilverCraft.CSCore.PortAudio
+  type: Namespace
+  items:
+  - uid: SilverCraft.CSCore.PortAudio.PaStreamFinishedCallback
+    name: PaStreamFinishedCallback
+    type: Delegate
+  - uid: SilverCraft.CSCore.PortAudio.PortAudioException
+    name: PortAudioException
+    type: Class
+  - uid: SilverCraft.CSCore.PortAudio.PortAudioLifetimeManager
+    name: PortAudioLifetimeManager
+    type: Class
+  - uid: SilverCraft.CSCore.PortAudio.PortAudioSoundOut
+    name: PortAudioSoundOut
+    type: Class
+  - uid: SilverCraft.CSCore.PortAudio.StreamCallBack
+    name: StreamCallBack
+    type: Delegate
+- uid: SilverCraft.CSCore.PortAudio.Native
+  name: SilverCraft.CSCore.PortAudio.Native
+  type: Namespace
+  items:
+  - uid: SilverCraft.CSCore.PortAudio.Native.NativeMethods
+    name: NativeMethods
+    type: Class
+  - uid: SilverCraft.CSCore.PortAudio.Native.PaDeviceInfo
+    name: PaDeviceInfo
+    type: Struct
+  - uid: SilverCraft.CSCore.PortAudio.Native.PaErrorCode
+    name: PaErrorCode
+    type: Enum
+  - uid: SilverCraft.CSCore.PortAudio.Native.PaHostApiInfo
+    name: PaHostApiInfo
+    type: Struct
+  - uid: SilverCraft.CSCore.PortAudio.Native.PaHostApiTypeId
+    name: PaHostApiTypeId
+    type: Enum
+  - uid: SilverCraft.CSCore.PortAudio.Native.PaHostErrorInfo
+    name: PaHostErrorInfo
+    type: Struct
+  - uid: SilverCraft.CSCore.PortAudio.Native.PaStream
+    name: PaStream
+    type: Struct
+  - uid: SilverCraft.CSCore.PortAudio.Native.PaStreamCallbackFlags
+    name: PaStreamCallbackFlags
+    type: Struct
+  - uid: SilverCraft.CSCore.PortAudio.Native.PaStreamCallbackResult
+    name: PaStreamCallbackResult
+    type: Enum
+  - uid: SilverCraft.CSCore.PortAudio.Native.PaStreamCallbackTimeInfo
+    name: PaStreamCallbackTimeInfo
+    type: Struct
+  - uid: SilverCraft.CSCore.PortAudio.Native.PaStreamInfo
+    name: PaStreamInfo
+    type: Struct
+  - uid: SilverCraft.CSCore.PortAudio.Native.PaStreamParameters
+    name: PaStreamParameters
+    type: Struct
+  - uid: SilverCraft.CSCore.PortAudio.Native.PaVersionInfo
+    name: PaVersionInfo
+    type: Struct
+- uid: SilverCraft.CSCore.SndFile
+  name: SilverCraft.CSCore.SndFile
+  type: Namespace
+  items:
+  - uid: SilverCraft.CSCore.SndFile.SndFileException
+    name: SndFileException
+    type: Class
+  - uid: SilverCraft.CSCore.SndFile.SndFileWaveStream
+    name: SndFileWaveStream
+    type: Class
+- uid: SilverCraft.CSCore.SoundIn
+  name: SilverCraft.CSCore.SoundIn
+  type: Namespace
+  items:
+  - uid: SilverCraft.CSCore.SoundIn.DataAvailableEventArgs
+    name: DataAvailableEventArgs
+    type: Class
+  - uid: SilverCraft.CSCore.SoundIn.ISoundIn
+    name: ISoundIn
+    type: Interface
+  - uid: SilverCraft.CSCore.SoundIn.RecordingState
+    name: RecordingState
+    type: Enum
+  - uid: SilverCraft.CSCore.SoundIn.RecordingStoppedEventArgs
+    name: RecordingStoppedEventArgs
+    type: Class
+- uid: SilverCraft.CSCore.SoundOut
+  name: SilverCraft.CSCore.SoundOut
+  type: Namespace
+  items:
+  - uid: SilverCraft.CSCore.SoundOut.ALSoundOut
+    name: ALSoundOut
+    type: Class
+  - uid: SilverCraft.CSCore.SoundOut.ISoundOut
+    name: ISoundOut
+    type: Interface
+  - uid: SilverCraft.CSCore.SoundOut.PlaybackState
+    name: PlaybackState
+    type: Enum
+  - uid: SilverCraft.CSCore.SoundOut.PlaybackStoppedEventArgs
+    name: PlaybackStoppedEventArgs
+    type: Class
+- uid: SilverCraft.CSCore.SoundOut.AL
+  name: SilverCraft.CSCore.SoundOut.AL
+  type: Namespace
+  items:
+  - uid: SilverCraft.CSCore.SoundOut.AL.ALContext
+    name: ALContext
+    type: Class
+  - uid: SilverCraft.CSCore.SoundOut.AL.ALContext.ContextLock
+    name: ALContext.ContextLock
+    type: Class
+  - uid: SilverCraft.CSCore.SoundOut.AL.ALDevice
+    name: ALDevice
+    type: Class
+  - uid: SilverCraft.CSCore.SoundOut.AL.ALErrorCode
+    name: ALErrorCode
+    type: Enum
+  - uid: SilverCraft.CSCore.SoundOut.AL.ALException
+    name: ALException
+    type: Class
+  - uid: SilverCraft.CSCore.SoundOut.AL.ALFormat
+    name: ALFormat
+    type: Enum
+  - uid: SilverCraft.CSCore.SoundOut.AL.ALSource
+    name: ALSource
+    type: Class
+  - uid: SilverCraft.CSCore.SoundOut.AL.ALSourceParameters
+    name: ALSourceParameters
+    type: Enum
+  - uid: SilverCraft.CSCore.SoundOut.AL.ALSourceState
+    name: ALSourceState
+    type: Enum
+- uid: SilverCraft.CSCore.Streams
+  name: SilverCraft.CSCore.Streams
+  type: Namespace
+  items:
+  - uid: SilverCraft.CSCore.Streams.BlockReadEventArgs`1
+    name: BlockReadEventArgs<T>
+    type: Class
+  - uid: SilverCraft.CSCore.Streams.BufferSource
+    name: BufferSource
+    type: Class
+  - uid: SilverCraft.CSCore.Streams.CachedSoundSource
+    name: CachedSoundSource
+    type: Class
+  - uid: SilverCraft.CSCore.Streams.FadeInOut
+    name: FadeInOut
+    type: Class
+  - uid: SilverCraft.CSCore.Streams.GainSource
+    name: GainSource
+    type: Class
+  - uid: SilverCraft.CSCore.Streams.IFadeStrategy
+    name: IFadeStrategy
+    type: Interface
+  - uid: SilverCraft.CSCore.Streams.LinearFadeStrategy
+    name: LinearFadeStrategy
+    type: Class
+  - uid: SilverCraft.CSCore.Streams.LoopStream
+    name: LoopStream
+    type: Class
+  - uid: SilverCraft.CSCore.Streams.MonoToStereoSource
+    name: MonoToStereoSource
+    type: Class
+  - uid: SilverCraft.CSCore.Streams.NotificationSource
+    name: NotificationSource
+    type: Class
+  - uid: SilverCraft.CSCore.Streams.PanSource
+    name: PanSource
+    type: Class
+  - uid: SilverCraft.CSCore.Streams.PeakEventArgs
+    name: PeakEventArgs
+    type: Class
+  - uid: SilverCraft.CSCore.Streams.PeakMeter
+    name: PeakMeter
+    type: Class
+  - uid: SilverCraft.CSCore.Streams.SimpleNotificationSource
+    name: SimpleNotificationSource
+    type: Class
+  - uid: SilverCraft.CSCore.Streams.SineGenerator
+    name: SineGenerator
+    type: Class
+  - uid: SilverCraft.CSCore.Streams.SingleBlockNotificationStream
+    name: SingleBlockNotificationStream
+    type: Class
+  - uid: SilverCraft.CSCore.Streams.SingleBlockReadEventArgs
+    name: SingleBlockReadEventArgs
+    type: Class
+  - uid: SilverCraft.CSCore.Streams.SoundInSource
+    name: SoundInSource
+    type: Class
+  - uid: SilverCraft.CSCore.Streams.StereoToMonoSource
+    name: StereoToMonoSource
+    type: Class
+  - uid: SilverCraft.CSCore.Streams.SynchronizedWaveSource`2
+    name: SynchronizedWaveSource<TBaseSource, T>
+    type: Class
+  - uid: SilverCraft.CSCore.Streams.VolumeSource
+    name: VolumeSource
+    type: Class
+  - uid: SilverCraft.CSCore.Streams.WriteableBufferingSource
+    name: WriteableBufferingSource
+    type: Class
+- uid: SilverCraft.CSCore.Streams.Effects
+  name: SilverCraft.CSCore.Streams.Effects
+  type: Namespace
+  items:
+  - uid: SilverCraft.CSCore.Streams.Effects.Equalizer
+    name: Equalizer
+    type: Class
+  - uid: SilverCraft.CSCore.Streams.Effects.EqualizerChannelFilter
+    name: EqualizerChannelFilter
+    type: Class
+  - uid: SilverCraft.CSCore.Streams.Effects.EqualizerFilter
+    name: EqualizerFilter
+    type: Class
+  - uid: SilverCraft.CSCore.Streams.Effects.PitchShifter
+    name: PitchShifter
+    type: Class
+- uid: SilverCraft.CSCore.Streams.SampleConverter
+  name: SilverCraft.CSCore.Streams.SampleConverter
+  type: Namespace
+  items:
+  - uid: SilverCraft.CSCore.Streams.SampleConverter.IeeeFloatToSample
+    name: IeeeFloatToSample
+    type: Class
+  - uid: SilverCraft.CSCore.Streams.SampleConverter.Pcm16BitToSample
+    name: Pcm16BitToSample
+    type: Class
+  - uid: SilverCraft.CSCore.Streams.SampleConverter.Pcm24BitToSample
+    name: Pcm24BitToSample
+    type: Class
+  - uid: SilverCraft.CSCore.Streams.SampleConverter.Pcm32BitToSample
+    name: Pcm32BitToSample
+    type: Class
+  - uid: SilverCraft.CSCore.Streams.SampleConverter.Pcm8BitToSample
+    name: Pcm8BitToSample
+    type: Class
+  - uid: SilverCraft.CSCore.Streams.SampleConverter.SampleToIeeeFloat32
+    name: SampleToIeeeFloat32
+    type: Class
+  - uid: SilverCraft.CSCore.Streams.SampleConverter.SampleToPcm16
+    name: SampleToPcm16
+    type: Class
+  - uid: SilverCraft.CSCore.Streams.SampleConverter.SampleToPcm24
+    name: SampleToPcm24
+    type: Class
+  - uid: SilverCraft.CSCore.Streams.SampleConverter.SampleToPcm32
+    name: SampleToPcm32
+    type: Class
+  - uid: SilverCraft.CSCore.Streams.SampleConverter.SampleToPcm8
+    name: SampleToPcm8
+    type: Class
+  - uid: SilverCraft.CSCore.Streams.SampleConverter.SampleToWaveBase
+    name: SampleToWaveBase
+    type: Class
+  - uid: SilverCraft.CSCore.Streams.SampleConverter.WaveToSampleBase
+    name: WaveToSampleBase
+    type: Class
+- uid: SilverCraft.CSCore.Tags.ID3
+  name: SilverCraft.CSCore.Tags.ID3
+  type: Namespace
+  items:
+  - uid: SilverCraft.CSCore.Tags.ID3.ID3Exception
+    name: ID3Exception
+    type: Class
+  - uid: SilverCraft.CSCore.Tags.ID3.ID3Genre
+    name: ID3Genre
+    type: Enum
+  - uid: SilverCraft.CSCore.Tags.ID3.ID3Version
+    name: ID3Version
+    type: Enum
+  - uid: SilverCraft.CSCore.Tags.ID3.ID3v1
+    name: ID3v1
+    type: Class
+  - uid: SilverCraft.CSCore.Tags.ID3.ID3v2
+    name: ID3v2
+    type: Class
+  - uid: SilverCraft.CSCore.Tags.ID3.ID3v2ExtendedHeader
+    name: ID3v2ExtendedHeader
+    type: Class
+  - uid: SilverCraft.CSCore.Tags.ID3.ID3v2ExtendedHeaderFlags
+    name: ID3v2ExtendedHeaderFlags
+    type: Enum
+  - uid: SilverCraft.CSCore.Tags.ID3.ID3v2Footer
+    name: ID3v2Footer
+    type: Class
+  - uid: SilverCraft.CSCore.Tags.ID3.ID3v2Header
+    name: ID3v2Header
+    type: Class
+  - uid: SilverCraft.CSCore.Tags.ID3.ID3v2HeaderFlags
+    name: ID3v2HeaderFlags
+    type: Enum
+  - uid: SilverCraft.CSCore.Tags.ID3.ID3v2ImageEncodingRestriction
+    name: ID3v2ImageEncodingRestriction
+    type: Enum
+  - uid: SilverCraft.CSCore.Tags.ID3.ID3v2ImageSizeRestriction
+    name: ID3v2ImageSizeRestriction
+    type: Enum
+  - uid: SilverCraft.CSCore.Tags.ID3.ID3v2QuickInfo
+    name: ID3v2QuickInfo
+    type: Class
+  - uid: SilverCraft.CSCore.Tags.ID3.ID3v2TagSizeRestriction
+    name: ID3v2TagSizeRestriction
+    type: Enum
+  - uid: SilverCraft.CSCore.Tags.ID3.ID3v2TextEncodingRestriction
+    name: ID3v2TextEncodingRestriction
+    type: Enum
+  - uid: SilverCraft.CSCore.Tags.ID3.ID3v2TextFieldSizeRestriction
+    name: ID3v2TextFieldSizeRestriction
+    type: Enum
+  - uid: SilverCraft.CSCore.Tags.ID3.UnsyncStream
+    name: UnsyncStream
+    type: Class
+- uid: SilverCraft.CSCore.Tags.ID3.Frames
+  name: SilverCraft.CSCore.Tags.ID3.Frames
+  type: Namespace
+  items:
+  - uid: SilverCraft.CSCore.Tags.ID3.Frames.BinaryFrame
+    name: BinaryFrame
+    type: Class
+  - uid: SilverCraft.CSCore.Tags.ID3.Frames.CommentAndLyricsFrame
+    name: CommentAndLyricsFrame
+    type: Class
+  - uid: SilverCraft.CSCore.Tags.ID3.Frames.CommercialFrame
+    name: CommercialFrame
+    type: Class
+  - uid: SilverCraft.CSCore.Tags.ID3.Frames.DataFrame
+    name: DataFrame
+    type: Class
+  - uid: SilverCraft.CSCore.Tags.ID3.Frames.Frame
+    name: Frame
+    type: Class
+  - uid: SilverCraft.CSCore.Tags.ID3.Frames.FrameFactory
+    name: FrameFactory
+    type: Class
+  - uid: SilverCraft.CSCore.Tags.ID3.Frames.FrameFlags
+    name: FrameFlags
+    type: Enum
+  - uid: SilverCraft.CSCore.Tags.ID3.Frames.FrameHeader
+    name: FrameHeader
+    type: Class
+  - uid: SilverCraft.CSCore.Tags.ID3.Frames.FrameID
+    name: FrameID
+    type: Enum
+  - uid: SilverCraft.CSCore.Tags.ID3.Frames.FrameIDFactory
+    name: FrameIDFactory
+    type: Class
+  - uid: SilverCraft.CSCore.Tags.ID3.Frames.FrameIDFactory.ID3v2FrameEntry
+    name: FrameIDFactory.ID3v2FrameEntry
+    type: Class
+  - uid: SilverCraft.CSCore.Tags.ID3.Frames.MultiStringTextFrame
+    name: MultiStringTextFrame
+    type: Class
+  - uid: SilverCraft.CSCore.Tags.ID3.Frames.NumericTextFrame
+    name: NumericTextFrame
+    type: Class
+  - uid: SilverCraft.CSCore.Tags.ID3.Frames.OwnershipFrame
+    name: OwnershipFrame
+    type: Class
+  - uid: SilverCraft.CSCore.Tags.ID3.Frames.PictureFormat
+    name: PictureFormat
+    type: Enum
+  - uid: SilverCraft.CSCore.Tags.ID3.Frames.PictureFrame
+    name: PictureFrame
+    type: Class
+  - uid: SilverCraft.CSCore.Tags.ID3.Frames.Popularimeter
+    name: Popularimeter
+    type: Class
+  - uid: SilverCraft.CSCore.Tags.ID3.Frames.ReceivedType
+    name: ReceivedType
+    type: Enum
+  - uid: SilverCraft.CSCore.Tags.ID3.Frames.TermsOfUseFrame
+    name: TermsOfUseFrame
+    type: Class
+  - uid: SilverCraft.CSCore.Tags.ID3.Frames.TextFrame
+    name: TextFrame
+    type: Class
+  - uid: SilverCraft.CSCore.Tags.ID3.Frames.TimestampTextFrame
+    name: TimestampTextFrame
+    type: Class
+  - uid: SilverCraft.CSCore.Tags.ID3.Frames.UserDefiniedTextFrame
+    name: UserDefiniedTextFrame
+    type: Class
+- uid: SilverCraft.CSCore.Utils
+  name: SilverCraft.CSCore.Utils
+  type: Namespace
+  items:
+  - uid: SilverCraft.CSCore.Utils.Complex
+    name: Complex
+    type: Struct
+- uid: SilverCraft.CSCore.Utils.Buffer
+  name: SilverCraft.CSCore.Utils.Buffer
+  type: Namespace
+  items:
+  - uid: SilverCraft.CSCore.Utils.Buffer.FixedSizeBuffer`1
+    name: FixedSizeBuffer<T>
+    type: Class
+- uid: sndfile
+  name: sndfile
+  type: Namespace
+  items:
+  - uid: sndfile.Methods
+    name: Methods
+    type: Class
+  - uid: sndfile.Mode
+    name: Mode
+    type: Enum
+  - uid: sndfile.SF_BROADCAST_INFO
+    name: SF_BROADCAST_INFO
+    type: Struct
+  - uid: sndfile.SF_CART_INFO
+    name: SF_CART_INFO
+    type: Struct
+  - uid: sndfile.SF_CART_INFO._post_timers_e__FixedBuffer
+    name: SF_CART_INFO._post_timers_e__FixedBuffer
+    type: Struct
+  - uid: sndfile.SF_CART_TIMER
+    name: SF_CART_TIMER
+    type: Struct
+  - uid: sndfile.SF_CHUNK_INFO
+    name: SF_CHUNK_INFO
+    type: Struct
+  - uid: sndfile.SF_CUES
+    name: SF_CUES
+    type: Struct
+  - uid: sndfile.SF_CUES._cue_points_e__FixedBuffer
+    name: SF_CUES._cue_points_e__FixedBuffer
+    type: Struct
+  - uid: sndfile.SF_CUE_POINT
+    name: SF_CUE_POINT
+    type: Struct
+  - uid: sndfile.SF_DITHER_INFO
+    name: SF_DITHER_INFO
+    type: Struct
+  - uid: sndfile.SF_EMBED_FILE_INFO
+    name: SF_EMBED_FILE_INFO
+    type: Struct
+  - uid: sndfile.SF_FORMAT_INFO
+    name: SF_FORMAT_INFO
+    type: Struct
+  - uid: sndfile.SF_INFO
+    name: SF_INFO
+    type: Struct
+  - uid: sndfile.SF_INSTRUMENT
+    name: SF_INSTRUMENT
+    type: Struct
+  - uid: sndfile.SF_INSTRUMENT._Anonymous_e__Struct
+    name: SF_INSTRUMENT._Anonymous_e__Struct
+    type: Struct
+  - uid: sndfile.SF_INSTRUMENT._loops_e__FixedBuffer
+    name: SF_INSTRUMENT._loops_e__FixedBuffer
+    type: Struct
+  - uid: sndfile.SF_LOOP_INFO
+    name: SF_LOOP_INFO
+    type: Struct
+  - uid: sndfile.SF_VIRTUAL_IO
+    name: SF_VIRTUAL_IO
+    type: Struct
+  - uid: sndfile.SfVirtualLength
+    name: SfVirtualLength
+    type: Delegate
+  - uid: sndfile.SfVirtualRead
+    name: SfVirtualRead
+    type: Delegate
+  - uid: sndfile.SfVirtualSeek
+    name: SfVirtualSeek
+    type: Delegate
+  - uid: sndfile.SfVirtualStreamHelper
+    name: SfVirtualStreamHelper
+    type: Class
+  - uid: sndfile.SfVirtualTell
+    name: SfVirtualTell
+    type: Delegate
+  - uid: sndfile.SfVirtualWrite
+    name: SfVirtualWrite
+    type: Delegate
+  - uid: sndfile.Whence
+    name: Whence
+    type: Enum
+  - uid: sndfile.sf_private_tag
+    name: sf_private_tag
+    type: Struct
+memberLayout: SamePage

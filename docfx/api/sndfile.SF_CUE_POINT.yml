@@ -1,0 +1,498 @@
+### YamlMime:ManagedReference
+items:
+- uid: sndfile.SF_CUE_POINT
+  commentId: T:sndfile.SF_CUE_POINT
+  id: SF_CUE_POINT
+  parent: sndfile
+  children:
+  - sndfile.SF_CUE_POINT.block_start
+  - sndfile.SF_CUE_POINT.chunk_start
+  - sndfile.SF_CUE_POINT.fcc_chunk
+  - sndfile.SF_CUE_POINT.indx
+  - sndfile.SF_CUE_POINT.name
+  - sndfile.SF_CUE_POINT.position
+  - sndfile.SF_CUE_POINT.sample_offset
+  langs:
+  - csharp
+  - vb
+  name: SF_CUE_POINT
+  nameWithType: SF_CUE_POINT
+  fullName: sndfile.SF_CUE_POINT
+  type: Struct
+  source:
+    remote:
+      path: SilverCraft.SndFile/Native/SF_CUE_POINT.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: SF_CUE_POINT
+    path: ../SilverCraft.SndFile/Native/SF_CUE_POINT.cs
+    startLine: 2
+  assemblies:
+  - SilverCraft.CSCore.SndFile
+  namespace: sndfile
+  syntax:
+    content: public struct SF_CUE_POINT
+    content.vb: Public Structure SF_CUE_POINT
+  inheritedMembers:
+  - System.ValueType.Equals(System.Object)
+  - System.ValueType.GetHashCode
+  - System.ValueType.ToString
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetType
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+- uid: sndfile.SF_CUE_POINT.indx
+  commentId: F:sndfile.SF_CUE_POINT.indx
+  id: indx
+  parent: sndfile.SF_CUE_POINT
+  langs:
+  - csharp
+  - vb
+  name: indx
+  nameWithType: SF_CUE_POINT.indx
+  fullName: sndfile.SF_CUE_POINT.indx
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.SndFile/Native/SF_CUE_POINT.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: indx
+    path: ../SilverCraft.SndFile/Native/SF_CUE_POINT.cs
+    startLine: 5
+  assemblies:
+  - SilverCraft.CSCore.SndFile
+  namespace: sndfile
+  syntax:
+    content: public int indx
+    return:
+      type: System.Int32
+    content.vb: Public indx As Integer
+- uid: sndfile.SF_CUE_POINT.position
+  commentId: F:sndfile.SF_CUE_POINT.position
+  id: position
+  parent: sndfile.SF_CUE_POINT
+  langs:
+  - csharp
+  - vb
+  name: position
+  nameWithType: SF_CUE_POINT.position
+  fullName: sndfile.SF_CUE_POINT.position
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.SndFile/Native/SF_CUE_POINT.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: position
+    path: ../SilverCraft.SndFile/Native/SF_CUE_POINT.cs
+    startLine: 8
+  assemblies:
+  - SilverCraft.CSCore.SndFile
+  namespace: sndfile
+  syntax:
+    content: public uint position
+    return:
+      type: System.UInt32
+    content.vb: Public position As UInteger
+- uid: sndfile.SF_CUE_POINT.fcc_chunk
+  commentId: F:sndfile.SF_CUE_POINT.fcc_chunk
+  id: fcc_chunk
+  parent: sndfile.SF_CUE_POINT
+  langs:
+  - csharp
+  - vb
+  name: fcc_chunk
+  nameWithType: SF_CUE_POINT.fcc_chunk
+  fullName: sndfile.SF_CUE_POINT.fcc_chunk
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.SndFile/Native/SF_CUE_POINT.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: fcc_chunk
+    path: ../SilverCraft.SndFile/Native/SF_CUE_POINT.cs
+    startLine: 11
+  assemblies:
+  - SilverCraft.CSCore.SndFile
+  namespace: sndfile
+  syntax:
+    content: public int fcc_chunk
+    return:
+      type: System.Int32
+    content.vb: Public fcc_chunk As Integer
+- uid: sndfile.SF_CUE_POINT.chunk_start
+  commentId: F:sndfile.SF_CUE_POINT.chunk_start
+  id: chunk_start
+  parent: sndfile.SF_CUE_POINT
+  langs:
+  - csharp
+  - vb
+  name: chunk_start
+  nameWithType: SF_CUE_POINT.chunk_start
+  fullName: sndfile.SF_CUE_POINT.chunk_start
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.SndFile/Native/SF_CUE_POINT.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: chunk_start
+    path: ../SilverCraft.SndFile/Native/SF_CUE_POINT.cs
+    startLine: 14
+  assemblies:
+  - SilverCraft.CSCore.SndFile
+  namespace: sndfile
+  syntax:
+    content: public int chunk_start
+    return:
+      type: System.Int32
+    content.vb: Public chunk_start As Integer
+- uid: sndfile.SF_CUE_POINT.block_start
+  commentId: F:sndfile.SF_CUE_POINT.block_start
+  id: block_start
+  parent: sndfile.SF_CUE_POINT
+  langs:
+  - csharp
+  - vb
+  name: block_start
+  nameWithType: SF_CUE_POINT.block_start
+  fullName: sndfile.SF_CUE_POINT.block_start
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.SndFile/Native/SF_CUE_POINT.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: block_start
+    path: ../SilverCraft.SndFile/Native/SF_CUE_POINT.cs
+    startLine: 17
+  assemblies:
+  - SilverCraft.CSCore.SndFile
+  namespace: sndfile
+  syntax:
+    content: public int block_start
+    return:
+      type: System.Int32
+    content.vb: Public block_start As Integer
+- uid: sndfile.SF_CUE_POINT.sample_offset
+  commentId: F:sndfile.SF_CUE_POINT.sample_offset
+  id: sample_offset
+  parent: sndfile.SF_CUE_POINT
+  langs:
+  - csharp
+  - vb
+  name: sample_offset
+  nameWithType: SF_CUE_POINT.sample_offset
+  fullName: sndfile.SF_CUE_POINT.sample_offset
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.SndFile/Native/SF_CUE_POINT.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: sample_offset
+    path: ../SilverCraft.SndFile/Native/SF_CUE_POINT.cs
+    startLine: 20
+  assemblies:
+  - SilverCraft.CSCore.SndFile
+  namespace: sndfile
+  syntax:
+    content: public uint sample_offset
+    return:
+      type: System.UInt32
+    content.vb: Public sample_offset As UInteger
+- uid: sndfile.SF_CUE_POINT.name
+  commentId: F:sndfile.SF_CUE_POINT.name
+  id: name
+  parent: sndfile.SF_CUE_POINT
+  langs:
+  - csharp
+  - vb
+  name: name
+  nameWithType: SF_CUE_POINT.name
+  fullName: sndfile.SF_CUE_POINT.name
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.SndFile/Native/SF_CUE_POINT.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: name
+    path: ../SilverCraft.SndFile/Native/SF_CUE_POINT.cs
+    startLine: 23
+  assemblies:
+  - SilverCraft.CSCore.SndFile
+  namespace: sndfile
+  syntax:
+    content: public sbyte* name
+    return:
+      type: System.SByte*
+    content.vb: Public name As SByte*
+references:
+- uid: sndfile
+  commentId: N:sndfile
+  href: sndfile.html
+  name: sndfile
+  nameWithType: sndfile
+  fullName: sndfile
+- uid: System.ValueType.Equals(System.Object)
+  commentId: M:System.ValueType.Equals(System.Object)
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  name: Equals(object)
+  nameWithType: ValueType.Equals(object)
+  fullName: System.ValueType.Equals(object)
+  nameWithType.vb: ValueType.Equals(Object)
+  fullName.vb: System.ValueType.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.ValueType.GetHashCode
+  commentId: M:System.ValueType.GetHashCode
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  name: GetHashCode()
+  nameWithType: ValueType.GetHashCode()
+  fullName: System.ValueType.GetHashCode()
+  spec.csharp:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  - name: (
+  - name: )
+- uid: System.ValueType.ToString
+  commentId: M:System.ValueType.ToString
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  name: ToString()
+  nameWithType: ValueType.ToString()
+  fullName: System.ValueType.ToString()
+  spec.csharp:
+  - uid: System.ValueType.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.ValueType
+  commentId: T:System.ValueType
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype
+  name: ValueType
+  nameWithType: ValueType
+  fullName: System.ValueType
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: System.UInt32
+  commentId: T:System.UInt32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.uint32
+  name: uint
+  nameWithType: uint
+  fullName: uint
+  nameWithType.vb: UInteger
+  fullName.vb: UInteger
+  name.vb: UInteger
+- uid: System.SByte*
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.sbyte
+  name: sbyte*
+  nameWithType: sbyte*
+  fullName: sbyte*
+  nameWithType.vb: SByte*
+  fullName.vb: SByte*
+  name.vb: SByte*
+  spec.csharp:
+  - uid: System.SByte
+    name: sbyte
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.sbyte
+  - name: '*'
+  spec.vb:
+  - uid: System.SByte
+    name: SByte
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.sbyte
+  - name: '*'

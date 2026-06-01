@@ -1,0 +1,149 @@
+### YamlMime:ManagedReference
+items:
+- uid: SilverCraft.CSCore.PortAudio.Native
+  commentId: N:SilverCraft.CSCore.PortAudio.Native
+  id: SilverCraft.CSCore.PortAudio.Native
+  children:
+  - SilverCraft.CSCore.PortAudio.Native.NativeMethods
+  - SilverCraft.CSCore.PortAudio.Native.PaDeviceInfo
+  - SilverCraft.CSCore.PortAudio.Native.PaErrorCode
+  - SilverCraft.CSCore.PortAudio.Native.PaHostApiInfo
+  - SilverCraft.CSCore.PortAudio.Native.PaHostApiTypeId
+  - SilverCraft.CSCore.PortAudio.Native.PaHostErrorInfo
+  - SilverCraft.CSCore.PortAudio.Native.PaStream
+  - SilverCraft.CSCore.PortAudio.Native.PaStreamCallbackFlags
+  - SilverCraft.CSCore.PortAudio.Native.PaStreamCallbackResult
+  - SilverCraft.CSCore.PortAudio.Native.PaStreamCallbackTimeInfo
+  - SilverCraft.CSCore.PortAudio.Native.PaStreamInfo
+  - SilverCraft.CSCore.PortAudio.Native.PaStreamParameters
+  - SilverCraft.CSCore.PortAudio.Native.PaVersionInfo
+  langs:
+  - csharp
+  - vb
+  name: SilverCraft.CSCore.PortAudio.Native
+  nameWithType: SilverCraft.CSCore.PortAudio.Native
+  fullName: SilverCraft.CSCore.PortAudio.Native
+  type: Namespace
+  assemblies:
+  - SilverCraft.CSCore.PortAudio
+references:
+- uid: SilverCraft.CSCore.PortAudio.Native.PaStream
+  commentId: T:SilverCraft.CSCore.PortAudio.Native.PaStream
+  href: SilverCraft.CSCore.PortAudio.Native.PaStream.html
+  name: PaStream
+  nameWithType: PaStream
+  fullName: SilverCraft.CSCore.PortAudio.Native.PaStream
+- uid: SilverCraft.CSCore.PortAudio.Native.PaStreamCallbackFlags
+  commentId: T:SilverCraft.CSCore.PortAudio.Native.PaStreamCallbackFlags
+  parent: SilverCraft.CSCore.PortAudio.Native
+  href: SilverCraft.CSCore.PortAudio.Native.PaStreamCallbackFlags.html
+  name: PaStreamCallbackFlags
+  nameWithType: PaStreamCallbackFlags
+  fullName: SilverCraft.CSCore.PortAudio.Native.PaStreamCallbackFlags
+- uid: SilverCraft.CSCore.PortAudio.Native.NativeMethods
+  commentId: T:SilverCraft.CSCore.PortAudio.Native.NativeMethods
+  href: SilverCraft.CSCore.PortAudio.Native.NativeMethods.html
+  name: NativeMethods
+  nameWithType: NativeMethods
+  fullName: SilverCraft.CSCore.PortAudio.Native.NativeMethods
+- uid: SilverCraft.CSCore.PortAudio.Native.PaDeviceInfo
+  commentId: T:SilverCraft.CSCore.PortAudio.Native.PaDeviceInfo
+  href: SilverCraft.CSCore.PortAudio.Native.PaDeviceInfo.html
+  name: PaDeviceInfo
+  nameWithType: PaDeviceInfo
+  fullName: SilverCraft.CSCore.PortAudio.Native.PaDeviceInfo
+- uid: SilverCraft.CSCore.PortAudio.Native.PaErrorCode
+  commentId: T:SilverCraft.CSCore.PortAudio.Native.PaErrorCode
+  parent: SilverCraft.CSCore.PortAudio.Native
+  href: SilverCraft.CSCore.PortAudio.Native.PaErrorCode.html
+  name: PaErrorCode
+  nameWithType: PaErrorCode
+  fullName: SilverCraft.CSCore.PortAudio.Native.PaErrorCode
+- uid: SilverCraft.CSCore.PortAudio.Native.PaHostApiInfo
+  commentId: T:SilverCraft.CSCore.PortAudio.Native.PaHostApiInfo
+  href: SilverCraft.CSCore.PortAudio.Native.PaHostApiInfo.html
+  name: PaHostApiInfo
+  nameWithType: PaHostApiInfo
+  fullName: SilverCraft.CSCore.PortAudio.Native.PaHostApiInfo
+- uid: SilverCraft.CSCore.PortAudio.Native.PaHostApiTypeId
+  commentId: T:SilverCraft.CSCore.PortAudio.Native.PaHostApiTypeId
+  parent: SilverCraft.CSCore.PortAudio.Native
+  href: SilverCraft.CSCore.PortAudio.Native.PaHostApiTypeId.html
+  name: PaHostApiTypeId
+  nameWithType: PaHostApiTypeId
+  fullName: SilverCraft.CSCore.PortAudio.Native.PaHostApiTypeId
+- uid: SilverCraft.CSCore.PortAudio.Native.PaHostErrorInfo
+  commentId: T:SilverCraft.CSCore.PortAudio.Native.PaHostErrorInfo
+  href: SilverCraft.CSCore.PortAudio.Native.PaHostErrorInfo.html
+  name: PaHostErrorInfo
+  nameWithType: PaHostErrorInfo
+  fullName: SilverCraft.CSCore.PortAudio.Native.PaHostErrorInfo
+- uid: SilverCraft.CSCore.PortAudio.Native.PaStreamCallbackResult
+  commentId: T:SilverCraft.CSCore.PortAudio.Native.PaStreamCallbackResult
+  parent: SilverCraft.CSCore.PortAudio.Native
+  href: SilverCraft.CSCore.PortAudio.Native.PaStreamCallbackResult.html
+  name: PaStreamCallbackResult
+  nameWithType: PaStreamCallbackResult
+  fullName: SilverCraft.CSCore.PortAudio.Native.PaStreamCallbackResult
+- uid: SilverCraft.CSCore.PortAudio.Native.PaStreamCallbackTimeInfo
+  commentId: T:SilverCraft.CSCore.PortAudio.Native.PaStreamCallbackTimeInfo
+  href: SilverCraft.CSCore.PortAudio.Native.PaStreamCallbackTimeInfo.html
+  name: PaStreamCallbackTimeInfo
+  nameWithType: PaStreamCallbackTimeInfo
+  fullName: SilverCraft.CSCore.PortAudio.Native.PaStreamCallbackTimeInfo
+- uid: SilverCraft.CSCore.PortAudio.Native.PaStreamInfo
+  commentId: T:SilverCraft.CSCore.PortAudio.Native.PaStreamInfo
+  href: SilverCraft.CSCore.PortAudio.Native.PaStreamInfo.html
+  name: PaStreamInfo
+  nameWithType: PaStreamInfo
+  fullName: SilverCraft.CSCore.PortAudio.Native.PaStreamInfo
+- uid: SilverCraft.CSCore.PortAudio.Native.PaStreamParameters
+  commentId: T:SilverCraft.CSCore.PortAudio.Native.PaStreamParameters
+  href: SilverCraft.CSCore.PortAudio.Native.PaStreamParameters.html
+  name: PaStreamParameters
+  nameWithType: PaStreamParameters
+  fullName: SilverCraft.CSCore.PortAudio.Native.PaStreamParameters
+- uid: SilverCraft.CSCore.PortAudio.Native.PaVersionInfo
+  commentId: T:SilverCraft.CSCore.PortAudio.Native.PaVersionInfo
+  href: SilverCraft.CSCore.PortAudio.Native.PaVersionInfo.html
+  name: PaVersionInfo
+  nameWithType: PaVersionInfo
+  fullName: SilverCraft.CSCore.PortAudio.Native.PaVersionInfo
+- uid: SilverCraft.CSCore.PortAudio.Native
+  commentId: N:SilverCraft.CSCore.PortAudio.Native
+  href: SilverCraft.html
+  name: SilverCraft.CSCore.PortAudio.Native
+  nameWithType: SilverCraft.CSCore.PortAudio.Native
+  fullName: SilverCraft.CSCore.PortAudio.Native
+  spec.csharp:
+  - uid: SilverCraft
+    name: SilverCraft
+    href: SilverCraft.html
+  - name: .
+  - uid: SilverCraft.CSCore
+    name: CSCore
+    href: SilverCraft.CSCore.html
+  - name: .
+  - uid: SilverCraft.CSCore.PortAudio
+    name: PortAudio
+    href: SilverCraft.CSCore.PortAudio.html
+  - name: .
+  - uid: SilverCraft.CSCore.PortAudio.Native
+    name: Native
+    href: SilverCraft.CSCore.PortAudio.Native.html
+  spec.vb:
+  - uid: SilverCraft
+    name: SilverCraft
+    href: SilverCraft.html
+  - name: .
+  - uid: SilverCraft.CSCore
+    name: CSCore
+    href: SilverCraft.CSCore.html
+  - name: .
+  - uid: SilverCraft.CSCore.PortAudio
+    name: PortAudio
+    href: SilverCraft.CSCore.PortAudio.html
+  - name: .
+  - uid: SilverCraft.CSCore.PortAudio.Native
+    name: Native
+    href: SilverCraft.CSCore.PortAudio.Native.html

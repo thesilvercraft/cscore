@@ -1,0 +1,598 @@
+### YamlMime:ManagedReference
+items:
+- uid: SilverCraft.CSCore.SoundOut.AL.ALSourceParameters
+  commentId: T:SilverCraft.CSCore.SoundOut.AL.ALSourceParameters
+  id: ALSourceParameters
+  parent: SilverCraft.CSCore.SoundOut.AL
+  children:
+  - SilverCraft.CSCore.SoundOut.AL.ALSourceParameters.BuffersProcessed
+  - SilverCraft.CSCore.SoundOut.AL.ALSourceParameters.BuffersQueued
+  - SilverCraft.CSCore.SoundOut.AL.ALSourceParameters.ConeInnerAngle
+  - SilverCraft.CSCore.SoundOut.AL.ALSourceParameters.ConeOuterAngle
+  - SilverCraft.CSCore.SoundOut.AL.ALSourceParameters.ConeOuterGain
+  - SilverCraft.CSCore.SoundOut.AL.ALSourceParameters.Direction
+  - SilverCraft.CSCore.SoundOut.AL.ALSourceParameters.Gain
+  - SilverCraft.CSCore.SoundOut.AL.ALSourceParameters.MaxDistance
+  - SilverCraft.CSCore.SoundOut.AL.ALSourceParameters.MaxGain
+  - SilverCraft.CSCore.SoundOut.AL.ALSourceParameters.MinGain
+  - SilverCraft.CSCore.SoundOut.AL.ALSourceParameters.Orientation
+  - SilverCraft.CSCore.SoundOut.AL.ALSourceParameters.Pitch
+  - SilverCraft.CSCore.SoundOut.AL.ALSourceParameters.Position
+  - SilverCraft.CSCore.SoundOut.AL.ALSourceParameters.ReferenceDistance
+  - SilverCraft.CSCore.SoundOut.AL.ALSourceParameters.RollOffFactor
+  - SilverCraft.CSCore.SoundOut.AL.ALSourceParameters.SourceRelative
+  - SilverCraft.CSCore.SoundOut.AL.ALSourceParameters.SourceState
+  - SilverCraft.CSCore.SoundOut.AL.ALSourceParameters.Velocity
+  langs:
+  - csharp
+  - vb
+  name: ALSourceParameters
+  nameWithType: ALSourceParameters
+  fullName: SilverCraft.CSCore.SoundOut.AL.ALSourceParameters
+  type: Enum
+  source:
+    remote:
+      path: SilverCraft.CSCore/SoundOut/AL/ALSourceParameters.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: ALSourceParameters
+    path: ../SilverCraft.CSCore/SoundOut/AL/ALSourceParameters.cs
+    startLine: 6
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.SoundOut.AL
+  summary: Defines ALSource parameters.
+  example: []
+  syntax:
+    content: public enum ALSourceParameters
+    content.vb: Public Enum ALSourceParameters
+- uid: SilverCraft.CSCore.SoundOut.AL.ALSourceParameters.SourceState
+  commentId: F:SilverCraft.CSCore.SoundOut.AL.ALSourceParameters.SourceState
+  id: SourceState
+  parent: SilverCraft.CSCore.SoundOut.AL.ALSourceParameters
+  langs:
+  - csharp
+  - vb
+  name: SourceState
+  nameWithType: ALSourceParameters.SourceState
+  fullName: SilverCraft.CSCore.SoundOut.AL.ALSourceParameters.SourceState
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/SoundOut/AL/ALSourceParameters.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: SourceState
+    path: ../SilverCraft.CSCore/SoundOut/AL/ALSourceParameters.cs
+    startLine: 11
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.SoundOut.AL
+  summary: SourceState
+  example: []
+  syntax:
+    content: SourceState = 4112
+    return:
+      type: SilverCraft.CSCore.SoundOut.AL.ALSourceParameters
+- uid: SilverCraft.CSCore.SoundOut.AL.ALSourceParameters.BuffersQueued
+  commentId: F:SilverCraft.CSCore.SoundOut.AL.ALSourceParameters.BuffersQueued
+  id: BuffersQueued
+  parent: SilverCraft.CSCore.SoundOut.AL.ALSourceParameters
+  langs:
+  - csharp
+  - vb
+  name: BuffersQueued
+  nameWithType: ALSourceParameters.BuffersQueued
+  fullName: SilverCraft.CSCore.SoundOut.AL.ALSourceParameters.BuffersQueued
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/SoundOut/AL/ALSourceParameters.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: BuffersQueued
+    path: ../SilverCraft.CSCore/SoundOut/AL/ALSourceParameters.cs
+    startLine: 16
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.SoundOut.AL
+  summary: BuffersQueued
+  example: []
+  syntax:
+    content: BuffersQueued = 4117
+    return:
+      type: SilverCraft.CSCore.SoundOut.AL.ALSourceParameters
+- uid: SilverCraft.CSCore.SoundOut.AL.ALSourceParameters.BuffersProcessed
+  commentId: F:SilverCraft.CSCore.SoundOut.AL.ALSourceParameters.BuffersProcessed
+  id: BuffersProcessed
+  parent: SilverCraft.CSCore.SoundOut.AL.ALSourceParameters
+  langs:
+  - csharp
+  - vb
+  name: BuffersProcessed
+  nameWithType: ALSourceParameters.BuffersProcessed
+  fullName: SilverCraft.CSCore.SoundOut.AL.ALSourceParameters.BuffersProcessed
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/SoundOut/AL/ALSourceParameters.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: BuffersProcessed
+    path: ../SilverCraft.CSCore/SoundOut/AL/ALSourceParameters.cs
+    startLine: 21
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.SoundOut.AL
+  summary: BuffersProcessed
+  example: []
+  syntax:
+    content: BuffersProcessed = 4118
+    return:
+      type: SilverCraft.CSCore.SoundOut.AL.ALSourceParameters
+- uid: SilverCraft.CSCore.SoundOut.AL.ALSourceParameters.Pitch
+  commentId: F:SilverCraft.CSCore.SoundOut.AL.ALSourceParameters.Pitch
+  id: Pitch
+  parent: SilverCraft.CSCore.SoundOut.AL.ALSourceParameters
+  langs:
+  - csharp
+  - vb
+  name: Pitch
+  nameWithType: ALSourceParameters.Pitch
+  fullName: SilverCraft.CSCore.SoundOut.AL.ALSourceParameters.Pitch
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/SoundOut/AL/ALSourceParameters.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: Pitch
+    path: ../SilverCraft.CSCore/SoundOut/AL/ALSourceParameters.cs
+    startLine: 26
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.SoundOut.AL
+  summary: Pitch
+  example: []
+  syntax:
+    content: Pitch = 4099
+    return:
+      type: SilverCraft.CSCore.SoundOut.AL.ALSourceParameters
+- uid: SilverCraft.CSCore.SoundOut.AL.ALSourceParameters.Position
+  commentId: F:SilverCraft.CSCore.SoundOut.AL.ALSourceParameters.Position
+  id: Position
+  parent: SilverCraft.CSCore.SoundOut.AL.ALSourceParameters
+  langs:
+  - csharp
+  - vb
+  name: Position
+  nameWithType: ALSourceParameters.Position
+  fullName: SilverCraft.CSCore.SoundOut.AL.ALSourceParameters.Position
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/SoundOut/AL/ALSourceParameters.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: Position
+    path: ../SilverCraft.CSCore/SoundOut/AL/ALSourceParameters.cs
+    startLine: 31
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.SoundOut.AL
+  summary: Position
+  example: []
+  syntax:
+    content: Position = 4100
+    return:
+      type: SilverCraft.CSCore.SoundOut.AL.ALSourceParameters
+- uid: SilverCraft.CSCore.SoundOut.AL.ALSourceParameters.Direction
+  commentId: F:SilverCraft.CSCore.SoundOut.AL.ALSourceParameters.Direction
+  id: Direction
+  parent: SilverCraft.CSCore.SoundOut.AL.ALSourceParameters
+  langs:
+  - csharp
+  - vb
+  name: Direction
+  nameWithType: ALSourceParameters.Direction
+  fullName: SilverCraft.CSCore.SoundOut.AL.ALSourceParameters.Direction
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/SoundOut/AL/ALSourceParameters.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: Direction
+    path: ../SilverCraft.CSCore/SoundOut/AL/ALSourceParameters.cs
+    startLine: 36
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.SoundOut.AL
+  summary: Direction
+  example: []
+  syntax:
+    content: Direction = 4101
+    return:
+      type: SilverCraft.CSCore.SoundOut.AL.ALSourceParameters
+- uid: SilverCraft.CSCore.SoundOut.AL.ALSourceParameters.Velocity
+  commentId: F:SilverCraft.CSCore.SoundOut.AL.ALSourceParameters.Velocity
+  id: Velocity
+  parent: SilverCraft.CSCore.SoundOut.AL.ALSourceParameters
+  langs:
+  - csharp
+  - vb
+  name: Velocity
+  nameWithType: ALSourceParameters.Velocity
+  fullName: SilverCraft.CSCore.SoundOut.AL.ALSourceParameters.Velocity
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/SoundOut/AL/ALSourceParameters.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: Velocity
+    path: ../SilverCraft.CSCore/SoundOut/AL/ALSourceParameters.cs
+    startLine: 41
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.SoundOut.AL
+  summary: Velocity
+  example: []
+  syntax:
+    content: Velocity = 4102
+    return:
+      type: SilverCraft.CSCore.SoundOut.AL.ALSourceParameters
+- uid: SilverCraft.CSCore.SoundOut.AL.ALSourceParameters.Gain
+  commentId: F:SilverCraft.CSCore.SoundOut.AL.ALSourceParameters.Gain
+  id: Gain
+  parent: SilverCraft.CSCore.SoundOut.AL.ALSourceParameters
+  langs:
+  - csharp
+  - vb
+  name: Gain
+  nameWithType: ALSourceParameters.Gain
+  fullName: SilverCraft.CSCore.SoundOut.AL.ALSourceParameters.Gain
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/SoundOut/AL/ALSourceParameters.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: Gain
+    path: ../SilverCraft.CSCore/SoundOut/AL/ALSourceParameters.cs
+    startLine: 46
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.SoundOut.AL
+  summary: Gain
+  example: []
+  syntax:
+    content: Gain = 4106
+    return:
+      type: SilverCraft.CSCore.SoundOut.AL.ALSourceParameters
+- uid: SilverCraft.CSCore.SoundOut.AL.ALSourceParameters.MinGain
+  commentId: F:SilverCraft.CSCore.SoundOut.AL.ALSourceParameters.MinGain
+  id: MinGain
+  parent: SilverCraft.CSCore.SoundOut.AL.ALSourceParameters
+  langs:
+  - csharp
+  - vb
+  name: MinGain
+  nameWithType: ALSourceParameters.MinGain
+  fullName: SilverCraft.CSCore.SoundOut.AL.ALSourceParameters.MinGain
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/SoundOut/AL/ALSourceParameters.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: MinGain
+    path: ../SilverCraft.CSCore/SoundOut/AL/ALSourceParameters.cs
+    startLine: 51
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.SoundOut.AL
+  summary: Min gain
+  example: []
+  syntax:
+    content: MinGain = 4109
+    return:
+      type: SilverCraft.CSCore.SoundOut.AL.ALSourceParameters
+- uid: SilverCraft.CSCore.SoundOut.AL.ALSourceParameters.MaxGain
+  commentId: F:SilverCraft.CSCore.SoundOut.AL.ALSourceParameters.MaxGain
+  id: MaxGain
+  parent: SilverCraft.CSCore.SoundOut.AL.ALSourceParameters
+  langs:
+  - csharp
+  - vb
+  name: MaxGain
+  nameWithType: ALSourceParameters.MaxGain
+  fullName: SilverCraft.CSCore.SoundOut.AL.ALSourceParameters.MaxGain
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/SoundOut/AL/ALSourceParameters.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: MaxGain
+    path: ../SilverCraft.CSCore/SoundOut/AL/ALSourceParameters.cs
+    startLine: 56
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.SoundOut.AL
+  summary: Max gain
+  example: []
+  syntax:
+    content: MaxGain = 4110
+    return:
+      type: SilverCraft.CSCore.SoundOut.AL.ALSourceParameters
+- uid: SilverCraft.CSCore.SoundOut.AL.ALSourceParameters.Orientation
+  commentId: F:SilverCraft.CSCore.SoundOut.AL.ALSourceParameters.Orientation
+  id: Orientation
+  parent: SilverCraft.CSCore.SoundOut.AL.ALSourceParameters
+  langs:
+  - csharp
+  - vb
+  name: Orientation
+  nameWithType: ALSourceParameters.Orientation
+  fullName: SilverCraft.CSCore.SoundOut.AL.ALSourceParameters.Orientation
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/SoundOut/AL/ALSourceParameters.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: Orientation
+    path: ../SilverCraft.CSCore/SoundOut/AL/ALSourceParameters.cs
+    startLine: 61
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.SoundOut.AL
+  summary: Orientation
+  example: []
+  syntax:
+    content: Orientation = 4111
+    return:
+      type: SilverCraft.CSCore.SoundOut.AL.ALSourceParameters
+- uid: SilverCraft.CSCore.SoundOut.AL.ALSourceParameters.MaxDistance
+  commentId: F:SilverCraft.CSCore.SoundOut.AL.ALSourceParameters.MaxDistance
+  id: MaxDistance
+  parent: SilverCraft.CSCore.SoundOut.AL.ALSourceParameters
+  langs:
+  - csharp
+  - vb
+  name: MaxDistance
+  nameWithType: ALSourceParameters.MaxDistance
+  fullName: SilverCraft.CSCore.SoundOut.AL.ALSourceParameters.MaxDistance
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/SoundOut/AL/ALSourceParameters.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: MaxDistance
+    path: ../SilverCraft.CSCore/SoundOut/AL/ALSourceParameters.cs
+    startLine: 66
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.SoundOut.AL
+  summary: Max distance
+  example: []
+  syntax:
+    content: MaxDistance = 4131
+    return:
+      type: SilverCraft.CSCore.SoundOut.AL.ALSourceParameters
+- uid: SilverCraft.CSCore.SoundOut.AL.ALSourceParameters.RollOffFactor
+  commentId: F:SilverCraft.CSCore.SoundOut.AL.ALSourceParameters.RollOffFactor
+  id: RollOffFactor
+  parent: SilverCraft.CSCore.SoundOut.AL.ALSourceParameters
+  langs:
+  - csharp
+  - vb
+  name: RollOffFactor
+  nameWithType: ALSourceParameters.RollOffFactor
+  fullName: SilverCraft.CSCore.SoundOut.AL.ALSourceParameters.RollOffFactor
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/SoundOut/AL/ALSourceParameters.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: RollOffFactor
+    path: ../SilverCraft.CSCore/SoundOut/AL/ALSourceParameters.cs
+    startLine: 71
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.SoundOut.AL
+  summary: Roll off factor
+  example: []
+  syntax:
+    content: RollOffFactor = 4129
+    return:
+      type: SilverCraft.CSCore.SoundOut.AL.ALSourceParameters
+- uid: SilverCraft.CSCore.SoundOut.AL.ALSourceParameters.ConeOuterGain
+  commentId: F:SilverCraft.CSCore.SoundOut.AL.ALSourceParameters.ConeOuterGain
+  id: ConeOuterGain
+  parent: SilverCraft.CSCore.SoundOut.AL.ALSourceParameters
+  langs:
+  - csharp
+  - vb
+  name: ConeOuterGain
+  nameWithType: ALSourceParameters.ConeOuterGain
+  fullName: SilverCraft.CSCore.SoundOut.AL.ALSourceParameters.ConeOuterGain
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/SoundOut/AL/ALSourceParameters.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: ConeOuterGain
+    path: ../SilverCraft.CSCore/SoundOut/AL/ALSourceParameters.cs
+    startLine: 76
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.SoundOut.AL
+  summary: Cone outer gain
+  example: []
+  syntax:
+    content: ConeOuterGain = 4130
+    return:
+      type: SilverCraft.CSCore.SoundOut.AL.ALSourceParameters
+- uid: SilverCraft.CSCore.SoundOut.AL.ALSourceParameters.ConeInnerAngle
+  commentId: F:SilverCraft.CSCore.SoundOut.AL.ALSourceParameters.ConeInnerAngle
+  id: ConeInnerAngle
+  parent: SilverCraft.CSCore.SoundOut.AL.ALSourceParameters
+  langs:
+  - csharp
+  - vb
+  name: ConeInnerAngle
+  nameWithType: ALSourceParameters.ConeInnerAngle
+  fullName: SilverCraft.CSCore.SoundOut.AL.ALSourceParameters.ConeInnerAngle
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/SoundOut/AL/ALSourceParameters.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: ConeInnerAngle
+    path: ../SilverCraft.CSCore/SoundOut/AL/ALSourceParameters.cs
+    startLine: 81
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.SoundOut.AL
+  summary: Cone inner angle
+  example: []
+  syntax:
+    content: ConeInnerAngle = 4097
+    return:
+      type: SilverCraft.CSCore.SoundOut.AL.ALSourceParameters
+- uid: SilverCraft.CSCore.SoundOut.AL.ALSourceParameters.ConeOuterAngle
+  commentId: F:SilverCraft.CSCore.SoundOut.AL.ALSourceParameters.ConeOuterAngle
+  id: ConeOuterAngle
+  parent: SilverCraft.CSCore.SoundOut.AL.ALSourceParameters
+  langs:
+  - csharp
+  - vb
+  name: ConeOuterAngle
+  nameWithType: ALSourceParameters.ConeOuterAngle
+  fullName: SilverCraft.CSCore.SoundOut.AL.ALSourceParameters.ConeOuterAngle
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/SoundOut/AL/ALSourceParameters.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: ConeOuterAngle
+    path: ../SilverCraft.CSCore/SoundOut/AL/ALSourceParameters.cs
+    startLine: 86
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.SoundOut.AL
+  summary: Cone outer angle
+  example: []
+  syntax:
+    content: ConeOuterAngle = 4098
+    return:
+      type: SilverCraft.CSCore.SoundOut.AL.ALSourceParameters
+- uid: SilverCraft.CSCore.SoundOut.AL.ALSourceParameters.ReferenceDistance
+  commentId: F:SilverCraft.CSCore.SoundOut.AL.ALSourceParameters.ReferenceDistance
+  id: ReferenceDistance
+  parent: SilverCraft.CSCore.SoundOut.AL.ALSourceParameters
+  langs:
+  - csharp
+  - vb
+  name: ReferenceDistance
+  nameWithType: ALSourceParameters.ReferenceDistance
+  fullName: SilverCraft.CSCore.SoundOut.AL.ALSourceParameters.ReferenceDistance
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/SoundOut/AL/ALSourceParameters.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: ReferenceDistance
+    path: ../SilverCraft.CSCore/SoundOut/AL/ALSourceParameters.cs
+    startLine: 91
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.SoundOut.AL
+  summary: Reference distance
+  example: []
+  syntax:
+    content: ReferenceDistance = 4128
+    return:
+      type: SilverCraft.CSCore.SoundOut.AL.ALSourceParameters
+- uid: SilverCraft.CSCore.SoundOut.AL.ALSourceParameters.SourceRelative
+  commentId: F:SilverCraft.CSCore.SoundOut.AL.ALSourceParameters.SourceRelative
+  id: SourceRelative
+  parent: SilverCraft.CSCore.SoundOut.AL.ALSourceParameters
+  langs:
+  - csharp
+  - vb
+  name: SourceRelative
+  nameWithType: ALSourceParameters.SourceRelative
+  fullName: SilverCraft.CSCore.SoundOut.AL.ALSourceParameters.SourceRelative
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/SoundOut/AL/ALSourceParameters.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: SourceRelative
+    path: ../SilverCraft.CSCore/SoundOut/AL/ALSourceParameters.cs
+    startLine: 96
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.SoundOut.AL
+  summary: Source relative
+  example: []
+  syntax:
+    content: SourceRelative = 514
+    return:
+      type: SilverCraft.CSCore.SoundOut.AL.ALSourceParameters
+references:
+- uid: SilverCraft.CSCore.SoundOut.AL
+  commentId: N:SilverCraft.CSCore.SoundOut.AL
+  href: SilverCraft.html
+  name: SilverCraft.CSCore.SoundOut.AL
+  nameWithType: SilverCraft.CSCore.SoundOut.AL
+  fullName: SilverCraft.CSCore.SoundOut.AL
+  spec.csharp:
+  - uid: SilverCraft
+    name: SilverCraft
+    href: SilverCraft.html
+  - name: .
+  - uid: SilverCraft.CSCore
+    name: CSCore
+    href: SilverCraft.CSCore.html
+  - name: .
+  - uid: SilverCraft.CSCore.SoundOut
+    name: SoundOut
+    href: SilverCraft.CSCore.SoundOut.html
+  - name: .
+  - uid: SilverCraft.CSCore.SoundOut.AL
+    name: AL
+    href: SilverCraft.CSCore.SoundOut.AL.html
+  spec.vb:
+  - uid: SilverCraft
+    name: SilverCraft
+    href: SilverCraft.html
+  - name: .
+  - uid: SilverCraft.CSCore
+    name: CSCore
+    href: SilverCraft.CSCore.html
+  - name: .
+  - uid: SilverCraft.CSCore.SoundOut
+    name: SoundOut
+    href: SilverCraft.CSCore.SoundOut.html
+  - name: .
+  - uid: SilverCraft.CSCore.SoundOut.AL
+    name: AL
+    href: SilverCraft.CSCore.SoundOut.AL.html
+- uid: SilverCraft.CSCore.SoundOut.AL.ALSourceParameters
+  commentId: T:SilverCraft.CSCore.SoundOut.AL.ALSourceParameters
+  parent: SilverCraft.CSCore.SoundOut.AL
+  href: SilverCraft.CSCore.SoundOut.AL.ALSourceParameters.html
+  name: ALSourceParameters
+  nameWithType: ALSourceParameters
+  fullName: SilverCraft.CSCore.SoundOut.AL.ALSourceParameters

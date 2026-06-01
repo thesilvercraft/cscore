@@ -1,0 +1,242 @@
+### YamlMime:ManagedReference
+items:
+- uid: SilverCraft.CSCore.Tags.ID3.Frames
+  commentId: N:SilverCraft.CSCore.Tags.ID3.Frames
+  id: SilverCraft.CSCore.Tags.ID3.Frames
+  children:
+  - SilverCraft.CSCore.Tags.ID3.Frames.BinaryFrame
+  - SilverCraft.CSCore.Tags.ID3.Frames.CommentAndLyricsFrame
+  - SilverCraft.CSCore.Tags.ID3.Frames.CommercialFrame
+  - SilverCraft.CSCore.Tags.ID3.Frames.DataFrame
+  - SilverCraft.CSCore.Tags.ID3.Frames.Frame
+  - SilverCraft.CSCore.Tags.ID3.Frames.FrameFactory
+  - SilverCraft.CSCore.Tags.ID3.Frames.FrameFlags
+  - SilverCraft.CSCore.Tags.ID3.Frames.FrameHeader
+  - SilverCraft.CSCore.Tags.ID3.Frames.FrameID
+  - SilverCraft.CSCore.Tags.ID3.Frames.FrameIDFactory
+  - SilverCraft.CSCore.Tags.ID3.Frames.FrameIDFactory.ID3v2FrameEntry
+  - SilverCraft.CSCore.Tags.ID3.Frames.MultiStringTextFrame
+  - SilverCraft.CSCore.Tags.ID3.Frames.NumericTextFrame
+  - SilverCraft.CSCore.Tags.ID3.Frames.OwnershipFrame
+  - SilverCraft.CSCore.Tags.ID3.Frames.PictureFormat
+  - SilverCraft.CSCore.Tags.ID3.Frames.PictureFrame
+  - SilverCraft.CSCore.Tags.ID3.Frames.Popularimeter
+  - SilverCraft.CSCore.Tags.ID3.Frames.ReceivedType
+  - SilverCraft.CSCore.Tags.ID3.Frames.TermsOfUseFrame
+  - SilverCraft.CSCore.Tags.ID3.Frames.TextFrame
+  - SilverCraft.CSCore.Tags.ID3.Frames.TimestampTextFrame
+  - SilverCraft.CSCore.Tags.ID3.Frames.UserDefiniedTextFrame
+  langs:
+  - csharp
+  - vb
+  name: SilverCraft.CSCore.Tags.ID3.Frames
+  nameWithType: SilverCraft.CSCore.Tags.ID3.Frames
+  fullName: SilverCraft.CSCore.Tags.ID3.Frames
+  type: Namespace
+  assemblies:
+  - SilverCraft.CSCore
+references:
+- uid: SilverCraft.CSCore.Tags.ID3.Frames.BinaryFrame
+  commentId: T:SilverCraft.CSCore.Tags.ID3.Frames.BinaryFrame
+  href: SilverCraft.CSCore.Tags.ID3.Frames.BinaryFrame.html
+  name: BinaryFrame
+  nameWithType: BinaryFrame
+  fullName: SilverCraft.CSCore.Tags.ID3.Frames.BinaryFrame
+- uid: SilverCraft.CSCore.Tags.ID3.Frames.CommentAndLyricsFrame
+  commentId: T:SilverCraft.CSCore.Tags.ID3.Frames.CommentAndLyricsFrame
+  href: SilverCraft.CSCore.Tags.ID3.Frames.CommentAndLyricsFrame.html
+  name: CommentAndLyricsFrame
+  nameWithType: CommentAndLyricsFrame
+  fullName: SilverCraft.CSCore.Tags.ID3.Frames.CommentAndLyricsFrame
+- uid: SilverCraft.CSCore.Tags.ID3.Frames.CommercialFrame
+  commentId: T:SilverCraft.CSCore.Tags.ID3.Frames.CommercialFrame
+  href: SilverCraft.CSCore.Tags.ID3.Frames.CommercialFrame.html
+  name: CommercialFrame
+  nameWithType: CommercialFrame
+  fullName: SilverCraft.CSCore.Tags.ID3.Frames.CommercialFrame
+- uid: SilverCraft.CSCore.Tags.ID3.Frames.DataFrame
+  commentId: T:SilverCraft.CSCore.Tags.ID3.Frames.DataFrame
+  href: SilverCraft.CSCore.Tags.ID3.Frames.DataFrame.html
+  name: DataFrame
+  nameWithType: DataFrame
+  fullName: SilverCraft.CSCore.Tags.ID3.Frames.DataFrame
+- uid: SilverCraft.CSCore.Tags.ID3.Frames.Frame
+  commentId: T:SilverCraft.CSCore.Tags.ID3.Frames.Frame
+  parent: SilverCraft.CSCore.Tags.ID3.Frames
+  href: SilverCraft.CSCore.Tags.ID3.Frames.Frame.html
+  name: Frame
+  nameWithType: Frame
+  fullName: SilverCraft.CSCore.Tags.ID3.Frames.Frame
+- uid: SilverCraft.CSCore.Tags.ID3.Frames.FrameFactory
+  commentId: T:SilverCraft.CSCore.Tags.ID3.Frames.FrameFactory
+  parent: SilverCraft.CSCore.Tags.ID3.Frames
+  href: SilverCraft.CSCore.Tags.ID3.Frames.FrameFactory.html
+  name: FrameFactory
+  nameWithType: FrameFactory
+  fullName: SilverCraft.CSCore.Tags.ID3.Frames.FrameFactory
+- uid: SilverCraft.CSCore.Tags.ID3.Frames.FrameFlags
+  commentId: T:SilverCraft.CSCore.Tags.ID3.Frames.FrameFlags
+  parent: SilverCraft.CSCore.Tags.ID3.Frames
+  href: SilverCraft.CSCore.Tags.ID3.Frames.FrameFlags.html
+  name: FrameFlags
+  nameWithType: FrameFlags
+  fullName: SilverCraft.CSCore.Tags.ID3.Frames.FrameFlags
+- uid: SilverCraft.CSCore.Tags.ID3.Frames.FrameHeader
+  commentId: T:SilverCraft.CSCore.Tags.ID3.Frames.FrameHeader
+  parent: SilverCraft.CSCore.Tags.ID3.Frames
+  href: SilverCraft.CSCore.Tags.ID3.Frames.FrameHeader.html
+  name: FrameHeader
+  nameWithType: FrameHeader
+  fullName: SilverCraft.CSCore.Tags.ID3.Frames.FrameHeader
+- uid: SilverCraft.CSCore.Tags.ID3.Frames.FrameID
+  commentId: T:SilverCraft.CSCore.Tags.ID3.Frames.FrameID
+  parent: SilverCraft.CSCore.Tags.ID3.Frames
+  href: SilverCraft.CSCore.Tags.ID3.Frames.FrameID.html
+  name: FrameID
+  nameWithType: FrameID
+  fullName: SilverCraft.CSCore.Tags.ID3.Frames.FrameID
+- uid: SilverCraft.CSCore.Tags.ID3.Frames.FrameIDFactory
+  commentId: T:SilverCraft.CSCore.Tags.ID3.Frames.FrameIDFactory
+  href: SilverCraft.CSCore.Tags.ID3.Frames.FrameIDFactory.html
+  name: FrameIDFactory
+  nameWithType: FrameIDFactory
+  fullName: SilverCraft.CSCore.Tags.ID3.Frames.FrameIDFactory
+- uid: SilverCraft.CSCore.Tags.ID3.Frames.FrameIDFactory.ID3v2FrameEntry
+  commentId: T:SilverCraft.CSCore.Tags.ID3.Frames.FrameIDFactory.ID3v2FrameEntry
+  parent: SilverCraft.CSCore.Tags.ID3.Frames
+  href: SilverCraft.CSCore.Tags.ID3.Frames.FrameIDFactory.html
+  name: FrameIDFactory.ID3v2FrameEntry
+  nameWithType: FrameIDFactory.ID3v2FrameEntry
+  fullName: SilverCraft.CSCore.Tags.ID3.Frames.FrameIDFactory.ID3v2FrameEntry
+  spec.csharp:
+  - uid: SilverCraft.CSCore.Tags.ID3.Frames.FrameIDFactory
+    name: FrameIDFactory
+    href: SilverCraft.CSCore.Tags.ID3.Frames.FrameIDFactory.html
+  - name: .
+  - uid: SilverCraft.CSCore.Tags.ID3.Frames.FrameIDFactory.ID3v2FrameEntry
+    name: ID3v2FrameEntry
+    href: SilverCraft.CSCore.Tags.ID3.Frames.FrameIDFactory.ID3v2FrameEntry.html
+  spec.vb:
+  - uid: SilverCraft.CSCore.Tags.ID3.Frames.FrameIDFactory
+    name: FrameIDFactory
+    href: SilverCraft.CSCore.Tags.ID3.Frames.FrameIDFactory.html
+  - name: .
+  - uid: SilverCraft.CSCore.Tags.ID3.Frames.FrameIDFactory.ID3v2FrameEntry
+    name: ID3v2FrameEntry
+    href: SilverCraft.CSCore.Tags.ID3.Frames.FrameIDFactory.ID3v2FrameEntry.html
+- uid: SilverCraft.CSCore.Tags.ID3.Frames.MultiStringTextFrame
+  commentId: T:SilverCraft.CSCore.Tags.ID3.Frames.MultiStringTextFrame
+  parent: SilverCraft.CSCore.Tags.ID3.Frames
+  href: SilverCraft.CSCore.Tags.ID3.Frames.MultiStringTextFrame.html
+  name: MultiStringTextFrame
+  nameWithType: MultiStringTextFrame
+  fullName: SilverCraft.CSCore.Tags.ID3.Frames.MultiStringTextFrame
+- uid: SilverCraft.CSCore.Tags.ID3.Frames.NumericTextFrame
+  commentId: T:SilverCraft.CSCore.Tags.ID3.Frames.NumericTextFrame
+  href: SilverCraft.CSCore.Tags.ID3.Frames.NumericTextFrame.html
+  name: NumericTextFrame
+  nameWithType: NumericTextFrame
+  fullName: SilverCraft.CSCore.Tags.ID3.Frames.NumericTextFrame
+- uid: SilverCraft.CSCore.Tags.ID3.Frames.OwnershipFrame
+  commentId: T:SilverCraft.CSCore.Tags.ID3.Frames.OwnershipFrame
+  href: SilverCraft.CSCore.Tags.ID3.Frames.OwnershipFrame.html
+  name: OwnershipFrame
+  nameWithType: OwnershipFrame
+  fullName: SilverCraft.CSCore.Tags.ID3.Frames.OwnershipFrame
+- uid: SilverCraft.CSCore.Tags.ID3.Frames.PictureFormat
+  commentId: T:SilverCraft.CSCore.Tags.ID3.Frames.PictureFormat
+  parent: SilverCraft.CSCore.Tags.ID3.Frames
+  href: SilverCraft.CSCore.Tags.ID3.Frames.PictureFormat.html
+  name: PictureFormat
+  nameWithType: PictureFormat
+  fullName: SilverCraft.CSCore.Tags.ID3.Frames.PictureFormat
+- uid: SilverCraft.CSCore.Tags.ID3.Frames.PictureFrame
+  commentId: T:SilverCraft.CSCore.Tags.ID3.Frames.PictureFrame
+  href: SilverCraft.CSCore.Tags.ID3.Frames.PictureFrame.html
+  name: PictureFrame
+  nameWithType: PictureFrame
+  fullName: SilverCraft.CSCore.Tags.ID3.Frames.PictureFrame
+- uid: SilverCraft.CSCore.Tags.ID3.Frames.Popularimeter
+  commentId: T:SilverCraft.CSCore.Tags.ID3.Frames.Popularimeter
+  href: SilverCraft.CSCore.Tags.ID3.Frames.Popularimeter.html
+  name: Popularimeter
+  nameWithType: Popularimeter
+  fullName: SilverCraft.CSCore.Tags.ID3.Frames.Popularimeter
+- uid: SilverCraft.CSCore.Tags.ID3.Frames.ReceivedType
+  commentId: T:SilverCraft.CSCore.Tags.ID3.Frames.ReceivedType
+  parent: SilverCraft.CSCore.Tags.ID3.Frames
+  href: SilverCraft.CSCore.Tags.ID3.Frames.ReceivedType.html
+  name: ReceivedType
+  nameWithType: ReceivedType
+  fullName: SilverCraft.CSCore.Tags.ID3.Frames.ReceivedType
+- uid: SilverCraft.CSCore.Tags.ID3.Frames.TermsOfUseFrame
+  commentId: T:SilverCraft.CSCore.Tags.ID3.Frames.TermsOfUseFrame
+  href: SilverCraft.CSCore.Tags.ID3.Frames.TermsOfUseFrame.html
+  name: TermsOfUseFrame
+  nameWithType: TermsOfUseFrame
+  fullName: SilverCraft.CSCore.Tags.ID3.Frames.TermsOfUseFrame
+- uid: SilverCraft.CSCore.Tags.ID3.Frames.TextFrame
+  commentId: T:SilverCraft.CSCore.Tags.ID3.Frames.TextFrame
+  parent: SilverCraft.CSCore.Tags.ID3.Frames
+  href: SilverCraft.CSCore.Tags.ID3.Frames.TextFrame.html
+  name: TextFrame
+  nameWithType: TextFrame
+  fullName: SilverCraft.CSCore.Tags.ID3.Frames.TextFrame
+- uid: SilverCraft.CSCore.Tags.ID3.Frames.TimestampTextFrame
+  commentId: T:SilverCraft.CSCore.Tags.ID3.Frames.TimestampTextFrame
+  href: SilverCraft.CSCore.Tags.ID3.Frames.TimestampTextFrame.html
+  name: TimestampTextFrame
+  nameWithType: TimestampTextFrame
+  fullName: SilverCraft.CSCore.Tags.ID3.Frames.TimestampTextFrame
+- uid: SilverCraft.CSCore.Tags.ID3.Frames.UserDefiniedTextFrame
+  commentId: T:SilverCraft.CSCore.Tags.ID3.Frames.UserDefiniedTextFrame
+  href: SilverCraft.CSCore.Tags.ID3.Frames.UserDefiniedTextFrame.html
+  name: UserDefiniedTextFrame
+  nameWithType: UserDefiniedTextFrame
+  fullName: SilverCraft.CSCore.Tags.ID3.Frames.UserDefiniedTextFrame
+- uid: SilverCraft.CSCore.Tags.ID3.Frames
+  commentId: N:SilverCraft.CSCore.Tags.ID3.Frames
+  href: SilverCraft.html
+  name: SilverCraft.CSCore.Tags.ID3.Frames
+  nameWithType: SilverCraft.CSCore.Tags.ID3.Frames
+  fullName: SilverCraft.CSCore.Tags.ID3.Frames
+  spec.csharp:
+  - uid: SilverCraft
+    name: SilverCraft
+    href: SilverCraft.html
+  - name: .
+  - uid: SilverCraft.CSCore
+    name: CSCore
+    href: SilverCraft.CSCore.html
+  - name: .
+  - uid: SilverCraft.CSCore.Tags
+    name: Tags
+    href: SilverCraft.CSCore.Tags.html
+  - name: .
+  - uid: SilverCraft.CSCore.Tags.ID3
+    name: ID3
+    href: SilverCraft.CSCore.Tags.ID3.html
+  - name: .
+  - uid: SilverCraft.CSCore.Tags.ID3.Frames
+    name: Frames
+    href: SilverCraft.CSCore.Tags.ID3.Frames.html
+  spec.vb:
+  - uid: SilverCraft
+    name: SilverCraft
+    href: SilverCraft.html
+  - name: .
+  - uid: SilverCraft.CSCore
+    name: CSCore
+    href: SilverCraft.CSCore.html
+  - name: .
+  - uid: SilverCraft.CSCore.Tags
+    name: Tags
+    href: SilverCraft.CSCore.Tags.html
+  - name: .
+  - uid: SilverCraft.CSCore.Tags.ID3
+    name: ID3
+    href: SilverCraft.CSCore.Tags.ID3.html
+  - name: .
+  - uid: SilverCraft.CSCore.Tags.ID3.Frames
+    name: Frames
+    href: SilverCraft.CSCore.Tags.ID3.Frames.html

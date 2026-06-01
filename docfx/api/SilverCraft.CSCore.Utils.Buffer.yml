@@ -1,0 +1,42 @@
+### YamlMime:ManagedReference
+items:
+- uid: SilverCraft.CSCore.Utils.Buffer
+  commentId: N:SilverCraft.CSCore.Utils.Buffer
+  id: SilverCraft.CSCore.Utils.Buffer
+  children:
+  - SilverCraft.CSCore.Utils.Buffer.FixedSizeBuffer`1
+  langs:
+  - csharp
+  - vb
+  name: SilverCraft.CSCore.Utils.Buffer
+  nameWithType: SilverCraft.CSCore.Utils.Buffer
+  fullName: SilverCraft.CSCore.Utils.Buffer
+  type: Namespace
+  assemblies:
+  - SilverCraft.CSCore
+references:
+- uid: SilverCraft.CSCore.Utils.Buffer.FixedSizeBuffer`1
+  commentId: T:SilverCraft.CSCore.Utils.Buffer.FixedSizeBuffer`1
+  href: SilverCraft.CSCore.Utils.Buffer.FixedSizeBuffer-1.html
+  name: FixedSizeBuffer<T>
+  nameWithType: FixedSizeBuffer<T>
+  fullName: SilverCraft.CSCore.Utils.Buffer.FixedSizeBuffer<T>
+  nameWithType.vb: FixedSizeBuffer(Of T)
+  fullName.vb: SilverCraft.CSCore.Utils.Buffer.FixedSizeBuffer(Of T)
+  name.vb: FixedSizeBuffer(Of T)
+  spec.csharp:
+  - uid: SilverCraft.CSCore.Utils.Buffer.FixedSizeBuffer`1
+    name: FixedSizeBuffer
+    href: SilverCraft.CSCore.Utils.Buffer.FixedSizeBuffer-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: SilverCraft.CSCore.Utils.Buffer.FixedSizeBuffer`1
+    name: FixedSizeBuffer
+    href: SilverCraft.CSCore.Utils.Buffer.FixedSizeBuffer-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )

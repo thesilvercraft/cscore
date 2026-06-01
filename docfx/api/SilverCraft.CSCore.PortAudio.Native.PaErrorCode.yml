@@ -1,0 +1,884 @@
+### YamlMime:ManagedReference
+items:
+- uid: SilverCraft.CSCore.PortAudio.Native.PaErrorCode
+  commentId: T:SilverCraft.CSCore.PortAudio.Native.PaErrorCode
+  id: PaErrorCode
+  parent: SilverCraft.CSCore.PortAudio.Native
+  children:
+  - SilverCraft.CSCore.PortAudio.Native.PaErrorCode.paBadBufferPtr
+  - SilverCraft.CSCore.PortAudio.Native.PaErrorCode.paBadIODeviceCombination
+  - SilverCraft.CSCore.PortAudio.Native.PaErrorCode.paBadStreamPtr
+  - SilverCraft.CSCore.PortAudio.Native.PaErrorCode.paBufferTooBig
+  - SilverCraft.CSCore.PortAudio.Native.PaErrorCode.paBufferTooSmall
+  - SilverCraft.CSCore.PortAudio.Native.PaErrorCode.paCanNotReadFromACallbackStream
+  - SilverCraft.CSCore.PortAudio.Native.PaErrorCode.paCanNotReadFromAnOutputOnlyStream
+  - SilverCraft.CSCore.PortAudio.Native.PaErrorCode.paCanNotWriteToACallbackStream
+  - SilverCraft.CSCore.PortAudio.Native.PaErrorCode.paCanNotWriteToAnInputOnlyStream
+  - SilverCraft.CSCore.PortAudio.Native.PaErrorCode.paDeviceUnavailable
+  - SilverCraft.CSCore.PortAudio.Native.PaErrorCode.paHostApiNotFound
+  - SilverCraft.CSCore.PortAudio.Native.PaErrorCode.paIncompatibleHostApiSpecificStreamInfo
+  - SilverCraft.CSCore.PortAudio.Native.PaErrorCode.paIncompatibleStreamHostApi
+  - SilverCraft.CSCore.PortAudio.Native.PaErrorCode.paInputOverflowed
+  - SilverCraft.CSCore.PortAudio.Native.PaErrorCode.paInsufficientMemory
+  - SilverCraft.CSCore.PortAudio.Native.PaErrorCode.paInternalError
+  - SilverCraft.CSCore.PortAudio.Native.PaErrorCode.paInvalidChannelCount
+  - SilverCraft.CSCore.PortAudio.Native.PaErrorCode.paInvalidDevice
+  - SilverCraft.CSCore.PortAudio.Native.PaErrorCode.paInvalidFlag
+  - SilverCraft.CSCore.PortAudio.Native.PaErrorCode.paInvalidHostApi
+  - SilverCraft.CSCore.PortAudio.Native.PaErrorCode.paInvalidSampleRate
+  - SilverCraft.CSCore.PortAudio.Native.PaErrorCode.paNoError
+  - SilverCraft.CSCore.PortAudio.Native.PaErrorCode.paNotInitialized
+  - SilverCraft.CSCore.PortAudio.Native.PaErrorCode.paNullCallback
+  - SilverCraft.CSCore.PortAudio.Native.PaErrorCode.paOutputUnderflowed
+  - SilverCraft.CSCore.PortAudio.Native.PaErrorCode.paSampleFormatNotSupported
+  - SilverCraft.CSCore.PortAudio.Native.PaErrorCode.paStreamIsNotStopped
+  - SilverCraft.CSCore.PortAudio.Native.PaErrorCode.paStreamIsStopped
+  - SilverCraft.CSCore.PortAudio.Native.PaErrorCode.paTimedOut
+  - SilverCraft.CSCore.PortAudio.Native.PaErrorCode.paUnanticipatedHostError
+  langs:
+  - csharp
+  - vb
+  name: PaErrorCode
+  nameWithType: PaErrorCode
+  fullName: SilverCraft.CSCore.PortAudio.Native.PaErrorCode
+  type: Enum
+  source:
+    remote:
+      path: SilverCraft.CSCore.PortAudio/Native/PaErrorCode.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: PaErrorCode
+    path: ../SilverCraft.CSCore.PortAudio/Native/PaErrorCode.cs
+    startLine: 2
+  assemblies:
+  - SilverCraft.CSCore.PortAudio
+  namespace: SilverCraft.CSCore.PortAudio.Native
+  syntax:
+    content: public enum PaErrorCode
+    content.vb: Public Enum PaErrorCode
+- uid: SilverCraft.CSCore.PortAudio.Native.PaErrorCode.paNoError
+  commentId: F:SilverCraft.CSCore.PortAudio.Native.PaErrorCode.paNoError
+  id: paNoError
+  parent: SilverCraft.CSCore.PortAudio.Native.PaErrorCode
+  langs:
+  - csharp
+  - vb
+  name: paNoError
+  nameWithType: PaErrorCode.paNoError
+  fullName: SilverCraft.CSCore.PortAudio.Native.PaErrorCode.paNoError
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore.PortAudio/Native/PaErrorCode.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: paNoError
+    path: ../SilverCraft.CSCore.PortAudio/Native/PaErrorCode.cs
+    startLine: 4
+  assemblies:
+  - SilverCraft.CSCore.PortAudio
+  namespace: SilverCraft.CSCore.PortAudio.Native
+  syntax:
+    content: paNoError = 0
+    return:
+      type: SilverCraft.CSCore.PortAudio.Native.PaErrorCode
+- uid: SilverCraft.CSCore.PortAudio.Native.PaErrorCode.paNotInitialized
+  commentId: F:SilverCraft.CSCore.PortAudio.Native.PaErrorCode.paNotInitialized
+  id: paNotInitialized
+  parent: SilverCraft.CSCore.PortAudio.Native.PaErrorCode
+  langs:
+  - csharp
+  - vb
+  name: paNotInitialized
+  nameWithType: PaErrorCode.paNotInitialized
+  fullName: SilverCraft.CSCore.PortAudio.Native.PaErrorCode.paNotInitialized
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore.PortAudio/Native/PaErrorCode.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: paNotInitialized
+    path: ../SilverCraft.CSCore.PortAudio/Native/PaErrorCode.cs
+    startLine: 5
+  assemblies:
+  - SilverCraft.CSCore.PortAudio
+  namespace: SilverCraft.CSCore.PortAudio.Native
+  syntax:
+    content: paNotInitialized = -10000
+    return:
+      type: SilverCraft.CSCore.PortAudio.Native.PaErrorCode
+- uid: SilverCraft.CSCore.PortAudio.Native.PaErrorCode.paUnanticipatedHostError
+  commentId: F:SilverCraft.CSCore.PortAudio.Native.PaErrorCode.paUnanticipatedHostError
+  id: paUnanticipatedHostError
+  parent: SilverCraft.CSCore.PortAudio.Native.PaErrorCode
+  langs:
+  - csharp
+  - vb
+  name: paUnanticipatedHostError
+  nameWithType: PaErrorCode.paUnanticipatedHostError
+  fullName: SilverCraft.CSCore.PortAudio.Native.PaErrorCode.paUnanticipatedHostError
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore.PortAudio/Native/PaErrorCode.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: paUnanticipatedHostError
+    path: ../SilverCraft.CSCore.PortAudio/Native/PaErrorCode.cs
+    startLine: 6
+  assemblies:
+  - SilverCraft.CSCore.PortAudio
+  namespace: SilverCraft.CSCore.PortAudio.Native
+  syntax:
+    content: paUnanticipatedHostError = -9999
+    return:
+      type: SilverCraft.CSCore.PortAudio.Native.PaErrorCode
+- uid: SilverCraft.CSCore.PortAudio.Native.PaErrorCode.paInvalidChannelCount
+  commentId: F:SilverCraft.CSCore.PortAudio.Native.PaErrorCode.paInvalidChannelCount
+  id: paInvalidChannelCount
+  parent: SilverCraft.CSCore.PortAudio.Native.PaErrorCode
+  langs:
+  - csharp
+  - vb
+  name: paInvalidChannelCount
+  nameWithType: PaErrorCode.paInvalidChannelCount
+  fullName: SilverCraft.CSCore.PortAudio.Native.PaErrorCode.paInvalidChannelCount
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore.PortAudio/Native/PaErrorCode.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: paInvalidChannelCount
+    path: ../SilverCraft.CSCore.PortAudio/Native/PaErrorCode.cs
+    startLine: 7
+  assemblies:
+  - SilverCraft.CSCore.PortAudio
+  namespace: SilverCraft.CSCore.PortAudio.Native
+  syntax:
+    content: paInvalidChannelCount = -9998
+    return:
+      type: SilverCraft.CSCore.PortAudio.Native.PaErrorCode
+- uid: SilverCraft.CSCore.PortAudio.Native.PaErrorCode.paInvalidSampleRate
+  commentId: F:SilverCraft.CSCore.PortAudio.Native.PaErrorCode.paInvalidSampleRate
+  id: paInvalidSampleRate
+  parent: SilverCraft.CSCore.PortAudio.Native.PaErrorCode
+  langs:
+  - csharp
+  - vb
+  name: paInvalidSampleRate
+  nameWithType: PaErrorCode.paInvalidSampleRate
+  fullName: SilverCraft.CSCore.PortAudio.Native.PaErrorCode.paInvalidSampleRate
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore.PortAudio/Native/PaErrorCode.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: paInvalidSampleRate
+    path: ../SilverCraft.CSCore.PortAudio/Native/PaErrorCode.cs
+    startLine: 8
+  assemblies:
+  - SilverCraft.CSCore.PortAudio
+  namespace: SilverCraft.CSCore.PortAudio.Native
+  syntax:
+    content: paInvalidSampleRate = -9997
+    return:
+      type: SilverCraft.CSCore.PortAudio.Native.PaErrorCode
+- uid: SilverCraft.CSCore.PortAudio.Native.PaErrorCode.paInvalidDevice
+  commentId: F:SilverCraft.CSCore.PortAudio.Native.PaErrorCode.paInvalidDevice
+  id: paInvalidDevice
+  parent: SilverCraft.CSCore.PortAudio.Native.PaErrorCode
+  langs:
+  - csharp
+  - vb
+  name: paInvalidDevice
+  nameWithType: PaErrorCode.paInvalidDevice
+  fullName: SilverCraft.CSCore.PortAudio.Native.PaErrorCode.paInvalidDevice
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore.PortAudio/Native/PaErrorCode.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: paInvalidDevice
+    path: ../SilverCraft.CSCore.PortAudio/Native/PaErrorCode.cs
+    startLine: 9
+  assemblies:
+  - SilverCraft.CSCore.PortAudio
+  namespace: SilverCraft.CSCore.PortAudio.Native
+  syntax:
+    content: paInvalidDevice = -9996
+    return:
+      type: SilverCraft.CSCore.PortAudio.Native.PaErrorCode
+- uid: SilverCraft.CSCore.PortAudio.Native.PaErrorCode.paInvalidFlag
+  commentId: F:SilverCraft.CSCore.PortAudio.Native.PaErrorCode.paInvalidFlag
+  id: paInvalidFlag
+  parent: SilverCraft.CSCore.PortAudio.Native.PaErrorCode
+  langs:
+  - csharp
+  - vb
+  name: paInvalidFlag
+  nameWithType: PaErrorCode.paInvalidFlag
+  fullName: SilverCraft.CSCore.PortAudio.Native.PaErrorCode.paInvalidFlag
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore.PortAudio/Native/PaErrorCode.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: paInvalidFlag
+    path: ../SilverCraft.CSCore.PortAudio/Native/PaErrorCode.cs
+    startLine: 10
+  assemblies:
+  - SilverCraft.CSCore.PortAudio
+  namespace: SilverCraft.CSCore.PortAudio.Native
+  syntax:
+    content: paInvalidFlag = -9995
+    return:
+      type: SilverCraft.CSCore.PortAudio.Native.PaErrorCode
+- uid: SilverCraft.CSCore.PortAudio.Native.PaErrorCode.paSampleFormatNotSupported
+  commentId: F:SilverCraft.CSCore.PortAudio.Native.PaErrorCode.paSampleFormatNotSupported
+  id: paSampleFormatNotSupported
+  parent: SilverCraft.CSCore.PortAudio.Native.PaErrorCode
+  langs:
+  - csharp
+  - vb
+  name: paSampleFormatNotSupported
+  nameWithType: PaErrorCode.paSampleFormatNotSupported
+  fullName: SilverCraft.CSCore.PortAudio.Native.PaErrorCode.paSampleFormatNotSupported
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore.PortAudio/Native/PaErrorCode.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: paSampleFormatNotSupported
+    path: ../SilverCraft.CSCore.PortAudio/Native/PaErrorCode.cs
+    startLine: 11
+  assemblies:
+  - SilverCraft.CSCore.PortAudio
+  namespace: SilverCraft.CSCore.PortAudio.Native
+  syntax:
+    content: paSampleFormatNotSupported = -9994
+    return:
+      type: SilverCraft.CSCore.PortAudio.Native.PaErrorCode
+- uid: SilverCraft.CSCore.PortAudio.Native.PaErrorCode.paBadIODeviceCombination
+  commentId: F:SilverCraft.CSCore.PortAudio.Native.PaErrorCode.paBadIODeviceCombination
+  id: paBadIODeviceCombination
+  parent: SilverCraft.CSCore.PortAudio.Native.PaErrorCode
+  langs:
+  - csharp
+  - vb
+  name: paBadIODeviceCombination
+  nameWithType: PaErrorCode.paBadIODeviceCombination
+  fullName: SilverCraft.CSCore.PortAudio.Native.PaErrorCode.paBadIODeviceCombination
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore.PortAudio/Native/PaErrorCode.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: paBadIODeviceCombination
+    path: ../SilverCraft.CSCore.PortAudio/Native/PaErrorCode.cs
+    startLine: 12
+  assemblies:
+  - SilverCraft.CSCore.PortAudio
+  namespace: SilverCraft.CSCore.PortAudio.Native
+  syntax:
+    content: paBadIODeviceCombination = -9993
+    return:
+      type: SilverCraft.CSCore.PortAudio.Native.PaErrorCode
+- uid: SilverCraft.CSCore.PortAudio.Native.PaErrorCode.paInsufficientMemory
+  commentId: F:SilverCraft.CSCore.PortAudio.Native.PaErrorCode.paInsufficientMemory
+  id: paInsufficientMemory
+  parent: SilverCraft.CSCore.PortAudio.Native.PaErrorCode
+  langs:
+  - csharp
+  - vb
+  name: paInsufficientMemory
+  nameWithType: PaErrorCode.paInsufficientMemory
+  fullName: SilverCraft.CSCore.PortAudio.Native.PaErrorCode.paInsufficientMemory
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore.PortAudio/Native/PaErrorCode.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: paInsufficientMemory
+    path: ../SilverCraft.CSCore.PortAudio/Native/PaErrorCode.cs
+    startLine: 13
+  assemblies:
+  - SilverCraft.CSCore.PortAudio
+  namespace: SilverCraft.CSCore.PortAudio.Native
+  syntax:
+    content: paInsufficientMemory = -9992
+    return:
+      type: SilverCraft.CSCore.PortAudio.Native.PaErrorCode
+- uid: SilverCraft.CSCore.PortAudio.Native.PaErrorCode.paBufferTooBig
+  commentId: F:SilverCraft.CSCore.PortAudio.Native.PaErrorCode.paBufferTooBig
+  id: paBufferTooBig
+  parent: SilverCraft.CSCore.PortAudio.Native.PaErrorCode
+  langs:
+  - csharp
+  - vb
+  name: paBufferTooBig
+  nameWithType: PaErrorCode.paBufferTooBig
+  fullName: SilverCraft.CSCore.PortAudio.Native.PaErrorCode.paBufferTooBig
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore.PortAudio/Native/PaErrorCode.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: paBufferTooBig
+    path: ../SilverCraft.CSCore.PortAudio/Native/PaErrorCode.cs
+    startLine: 14
+  assemblies:
+  - SilverCraft.CSCore.PortAudio
+  namespace: SilverCraft.CSCore.PortAudio.Native
+  syntax:
+    content: paBufferTooBig = -9991
+    return:
+      type: SilverCraft.CSCore.PortAudio.Native.PaErrorCode
+- uid: SilverCraft.CSCore.PortAudio.Native.PaErrorCode.paBufferTooSmall
+  commentId: F:SilverCraft.CSCore.PortAudio.Native.PaErrorCode.paBufferTooSmall
+  id: paBufferTooSmall
+  parent: SilverCraft.CSCore.PortAudio.Native.PaErrorCode
+  langs:
+  - csharp
+  - vb
+  name: paBufferTooSmall
+  nameWithType: PaErrorCode.paBufferTooSmall
+  fullName: SilverCraft.CSCore.PortAudio.Native.PaErrorCode.paBufferTooSmall
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore.PortAudio/Native/PaErrorCode.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: paBufferTooSmall
+    path: ../SilverCraft.CSCore.PortAudio/Native/PaErrorCode.cs
+    startLine: 15
+  assemblies:
+  - SilverCraft.CSCore.PortAudio
+  namespace: SilverCraft.CSCore.PortAudio.Native
+  syntax:
+    content: paBufferTooSmall = -9990
+    return:
+      type: SilverCraft.CSCore.PortAudio.Native.PaErrorCode
+- uid: SilverCraft.CSCore.PortAudio.Native.PaErrorCode.paNullCallback
+  commentId: F:SilverCraft.CSCore.PortAudio.Native.PaErrorCode.paNullCallback
+  id: paNullCallback
+  parent: SilverCraft.CSCore.PortAudio.Native.PaErrorCode
+  langs:
+  - csharp
+  - vb
+  name: paNullCallback
+  nameWithType: PaErrorCode.paNullCallback
+  fullName: SilverCraft.CSCore.PortAudio.Native.PaErrorCode.paNullCallback
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore.PortAudio/Native/PaErrorCode.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: paNullCallback
+    path: ../SilverCraft.CSCore.PortAudio/Native/PaErrorCode.cs
+    startLine: 16
+  assemblies:
+  - SilverCraft.CSCore.PortAudio
+  namespace: SilverCraft.CSCore.PortAudio.Native
+  syntax:
+    content: paNullCallback = -9989
+    return:
+      type: SilverCraft.CSCore.PortAudio.Native.PaErrorCode
+- uid: SilverCraft.CSCore.PortAudio.Native.PaErrorCode.paBadStreamPtr
+  commentId: F:SilverCraft.CSCore.PortAudio.Native.PaErrorCode.paBadStreamPtr
+  id: paBadStreamPtr
+  parent: SilverCraft.CSCore.PortAudio.Native.PaErrorCode
+  langs:
+  - csharp
+  - vb
+  name: paBadStreamPtr
+  nameWithType: PaErrorCode.paBadStreamPtr
+  fullName: SilverCraft.CSCore.PortAudio.Native.PaErrorCode.paBadStreamPtr
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore.PortAudio/Native/PaErrorCode.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: paBadStreamPtr
+    path: ../SilverCraft.CSCore.PortAudio/Native/PaErrorCode.cs
+    startLine: 17
+  assemblies:
+  - SilverCraft.CSCore.PortAudio
+  namespace: SilverCraft.CSCore.PortAudio.Native
+  syntax:
+    content: paBadStreamPtr = -9988
+    return:
+      type: SilverCraft.CSCore.PortAudio.Native.PaErrorCode
+- uid: SilverCraft.CSCore.PortAudio.Native.PaErrorCode.paTimedOut
+  commentId: F:SilverCraft.CSCore.PortAudio.Native.PaErrorCode.paTimedOut
+  id: paTimedOut
+  parent: SilverCraft.CSCore.PortAudio.Native.PaErrorCode
+  langs:
+  - csharp
+  - vb
+  name: paTimedOut
+  nameWithType: PaErrorCode.paTimedOut
+  fullName: SilverCraft.CSCore.PortAudio.Native.PaErrorCode.paTimedOut
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore.PortAudio/Native/PaErrorCode.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: paTimedOut
+    path: ../SilverCraft.CSCore.PortAudio/Native/PaErrorCode.cs
+    startLine: 18
+  assemblies:
+  - SilverCraft.CSCore.PortAudio
+  namespace: SilverCraft.CSCore.PortAudio.Native
+  syntax:
+    content: paTimedOut = -9987
+    return:
+      type: SilverCraft.CSCore.PortAudio.Native.PaErrorCode
+- uid: SilverCraft.CSCore.PortAudio.Native.PaErrorCode.paInternalError
+  commentId: F:SilverCraft.CSCore.PortAudio.Native.PaErrorCode.paInternalError
+  id: paInternalError
+  parent: SilverCraft.CSCore.PortAudio.Native.PaErrorCode
+  langs:
+  - csharp
+  - vb
+  name: paInternalError
+  nameWithType: PaErrorCode.paInternalError
+  fullName: SilverCraft.CSCore.PortAudio.Native.PaErrorCode.paInternalError
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore.PortAudio/Native/PaErrorCode.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: paInternalError
+    path: ../SilverCraft.CSCore.PortAudio/Native/PaErrorCode.cs
+    startLine: 19
+  assemblies:
+  - SilverCraft.CSCore.PortAudio
+  namespace: SilverCraft.CSCore.PortAudio.Native
+  syntax:
+    content: paInternalError = -9986
+    return:
+      type: SilverCraft.CSCore.PortAudio.Native.PaErrorCode
+- uid: SilverCraft.CSCore.PortAudio.Native.PaErrorCode.paDeviceUnavailable
+  commentId: F:SilverCraft.CSCore.PortAudio.Native.PaErrorCode.paDeviceUnavailable
+  id: paDeviceUnavailable
+  parent: SilverCraft.CSCore.PortAudio.Native.PaErrorCode
+  langs:
+  - csharp
+  - vb
+  name: paDeviceUnavailable
+  nameWithType: PaErrorCode.paDeviceUnavailable
+  fullName: SilverCraft.CSCore.PortAudio.Native.PaErrorCode.paDeviceUnavailable
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore.PortAudio/Native/PaErrorCode.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: paDeviceUnavailable
+    path: ../SilverCraft.CSCore.PortAudio/Native/PaErrorCode.cs
+    startLine: 20
+  assemblies:
+  - SilverCraft.CSCore.PortAudio
+  namespace: SilverCraft.CSCore.PortAudio.Native
+  syntax:
+    content: paDeviceUnavailable = -9985
+    return:
+      type: SilverCraft.CSCore.PortAudio.Native.PaErrorCode
+- uid: SilverCraft.CSCore.PortAudio.Native.PaErrorCode.paIncompatibleHostApiSpecificStreamInfo
+  commentId: F:SilverCraft.CSCore.PortAudio.Native.PaErrorCode.paIncompatibleHostApiSpecificStreamInfo
+  id: paIncompatibleHostApiSpecificStreamInfo
+  parent: SilverCraft.CSCore.PortAudio.Native.PaErrorCode
+  langs:
+  - csharp
+  - vb
+  name: paIncompatibleHostApiSpecificStreamInfo
+  nameWithType: PaErrorCode.paIncompatibleHostApiSpecificStreamInfo
+  fullName: SilverCraft.CSCore.PortAudio.Native.PaErrorCode.paIncompatibleHostApiSpecificStreamInfo
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore.PortAudio/Native/PaErrorCode.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: paIncompatibleHostApiSpecificStreamInfo
+    path: ../SilverCraft.CSCore.PortAudio/Native/PaErrorCode.cs
+    startLine: 21
+  assemblies:
+  - SilverCraft.CSCore.PortAudio
+  namespace: SilverCraft.CSCore.PortAudio.Native
+  syntax:
+    content: paIncompatibleHostApiSpecificStreamInfo = -9984
+    return:
+      type: SilverCraft.CSCore.PortAudio.Native.PaErrorCode
+- uid: SilverCraft.CSCore.PortAudio.Native.PaErrorCode.paStreamIsStopped
+  commentId: F:SilverCraft.CSCore.PortAudio.Native.PaErrorCode.paStreamIsStopped
+  id: paStreamIsStopped
+  parent: SilverCraft.CSCore.PortAudio.Native.PaErrorCode
+  langs:
+  - csharp
+  - vb
+  name: paStreamIsStopped
+  nameWithType: PaErrorCode.paStreamIsStopped
+  fullName: SilverCraft.CSCore.PortAudio.Native.PaErrorCode.paStreamIsStopped
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore.PortAudio/Native/PaErrorCode.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: paStreamIsStopped
+    path: ../SilverCraft.CSCore.PortAudio/Native/PaErrorCode.cs
+    startLine: 22
+  assemblies:
+  - SilverCraft.CSCore.PortAudio
+  namespace: SilverCraft.CSCore.PortAudio.Native
+  syntax:
+    content: paStreamIsStopped = -9983
+    return:
+      type: SilverCraft.CSCore.PortAudio.Native.PaErrorCode
+- uid: SilverCraft.CSCore.PortAudio.Native.PaErrorCode.paStreamIsNotStopped
+  commentId: F:SilverCraft.CSCore.PortAudio.Native.PaErrorCode.paStreamIsNotStopped
+  id: paStreamIsNotStopped
+  parent: SilverCraft.CSCore.PortAudio.Native.PaErrorCode
+  langs:
+  - csharp
+  - vb
+  name: paStreamIsNotStopped
+  nameWithType: PaErrorCode.paStreamIsNotStopped
+  fullName: SilverCraft.CSCore.PortAudio.Native.PaErrorCode.paStreamIsNotStopped
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore.PortAudio/Native/PaErrorCode.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: paStreamIsNotStopped
+    path: ../SilverCraft.CSCore.PortAudio/Native/PaErrorCode.cs
+    startLine: 23
+  assemblies:
+  - SilverCraft.CSCore.PortAudio
+  namespace: SilverCraft.CSCore.PortAudio.Native
+  syntax:
+    content: paStreamIsNotStopped = -9982
+    return:
+      type: SilverCraft.CSCore.PortAudio.Native.PaErrorCode
+- uid: SilverCraft.CSCore.PortAudio.Native.PaErrorCode.paInputOverflowed
+  commentId: F:SilverCraft.CSCore.PortAudio.Native.PaErrorCode.paInputOverflowed
+  id: paInputOverflowed
+  parent: SilverCraft.CSCore.PortAudio.Native.PaErrorCode
+  langs:
+  - csharp
+  - vb
+  name: paInputOverflowed
+  nameWithType: PaErrorCode.paInputOverflowed
+  fullName: SilverCraft.CSCore.PortAudio.Native.PaErrorCode.paInputOverflowed
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore.PortAudio/Native/PaErrorCode.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: paInputOverflowed
+    path: ../SilverCraft.CSCore.PortAudio/Native/PaErrorCode.cs
+    startLine: 24
+  assemblies:
+  - SilverCraft.CSCore.PortAudio
+  namespace: SilverCraft.CSCore.PortAudio.Native
+  syntax:
+    content: paInputOverflowed = -9981
+    return:
+      type: SilverCraft.CSCore.PortAudio.Native.PaErrorCode
+- uid: SilverCraft.CSCore.PortAudio.Native.PaErrorCode.paOutputUnderflowed
+  commentId: F:SilverCraft.CSCore.PortAudio.Native.PaErrorCode.paOutputUnderflowed
+  id: paOutputUnderflowed
+  parent: SilverCraft.CSCore.PortAudio.Native.PaErrorCode
+  langs:
+  - csharp
+  - vb
+  name: paOutputUnderflowed
+  nameWithType: PaErrorCode.paOutputUnderflowed
+  fullName: SilverCraft.CSCore.PortAudio.Native.PaErrorCode.paOutputUnderflowed
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore.PortAudio/Native/PaErrorCode.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: paOutputUnderflowed
+    path: ../SilverCraft.CSCore.PortAudio/Native/PaErrorCode.cs
+    startLine: 25
+  assemblies:
+  - SilverCraft.CSCore.PortAudio
+  namespace: SilverCraft.CSCore.PortAudio.Native
+  syntax:
+    content: paOutputUnderflowed = -9980
+    return:
+      type: SilverCraft.CSCore.PortAudio.Native.PaErrorCode
+- uid: SilverCraft.CSCore.PortAudio.Native.PaErrorCode.paHostApiNotFound
+  commentId: F:SilverCraft.CSCore.PortAudio.Native.PaErrorCode.paHostApiNotFound
+  id: paHostApiNotFound
+  parent: SilverCraft.CSCore.PortAudio.Native.PaErrorCode
+  langs:
+  - csharp
+  - vb
+  name: paHostApiNotFound
+  nameWithType: PaErrorCode.paHostApiNotFound
+  fullName: SilverCraft.CSCore.PortAudio.Native.PaErrorCode.paHostApiNotFound
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore.PortAudio/Native/PaErrorCode.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: paHostApiNotFound
+    path: ../SilverCraft.CSCore.PortAudio/Native/PaErrorCode.cs
+    startLine: 26
+  assemblies:
+  - SilverCraft.CSCore.PortAudio
+  namespace: SilverCraft.CSCore.PortAudio.Native
+  syntax:
+    content: paHostApiNotFound = -9979
+    return:
+      type: SilverCraft.CSCore.PortAudio.Native.PaErrorCode
+- uid: SilverCraft.CSCore.PortAudio.Native.PaErrorCode.paInvalidHostApi
+  commentId: F:SilverCraft.CSCore.PortAudio.Native.PaErrorCode.paInvalidHostApi
+  id: paInvalidHostApi
+  parent: SilverCraft.CSCore.PortAudio.Native.PaErrorCode
+  langs:
+  - csharp
+  - vb
+  name: paInvalidHostApi
+  nameWithType: PaErrorCode.paInvalidHostApi
+  fullName: SilverCraft.CSCore.PortAudio.Native.PaErrorCode.paInvalidHostApi
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore.PortAudio/Native/PaErrorCode.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: paInvalidHostApi
+    path: ../SilverCraft.CSCore.PortAudio/Native/PaErrorCode.cs
+    startLine: 27
+  assemblies:
+  - SilverCraft.CSCore.PortAudio
+  namespace: SilverCraft.CSCore.PortAudio.Native
+  syntax:
+    content: paInvalidHostApi = -9978
+    return:
+      type: SilverCraft.CSCore.PortAudio.Native.PaErrorCode
+- uid: SilverCraft.CSCore.PortAudio.Native.PaErrorCode.paCanNotReadFromACallbackStream
+  commentId: F:SilverCraft.CSCore.PortAudio.Native.PaErrorCode.paCanNotReadFromACallbackStream
+  id: paCanNotReadFromACallbackStream
+  parent: SilverCraft.CSCore.PortAudio.Native.PaErrorCode
+  langs:
+  - csharp
+  - vb
+  name: paCanNotReadFromACallbackStream
+  nameWithType: PaErrorCode.paCanNotReadFromACallbackStream
+  fullName: SilverCraft.CSCore.PortAudio.Native.PaErrorCode.paCanNotReadFromACallbackStream
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore.PortAudio/Native/PaErrorCode.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: paCanNotReadFromACallbackStream
+    path: ../SilverCraft.CSCore.PortAudio/Native/PaErrorCode.cs
+    startLine: 28
+  assemblies:
+  - SilverCraft.CSCore.PortAudio
+  namespace: SilverCraft.CSCore.PortAudio.Native
+  syntax:
+    content: paCanNotReadFromACallbackStream = -9977
+    return:
+      type: SilverCraft.CSCore.PortAudio.Native.PaErrorCode
+- uid: SilverCraft.CSCore.PortAudio.Native.PaErrorCode.paCanNotWriteToACallbackStream
+  commentId: F:SilverCraft.CSCore.PortAudio.Native.PaErrorCode.paCanNotWriteToACallbackStream
+  id: paCanNotWriteToACallbackStream
+  parent: SilverCraft.CSCore.PortAudio.Native.PaErrorCode
+  langs:
+  - csharp
+  - vb
+  name: paCanNotWriteToACallbackStream
+  nameWithType: PaErrorCode.paCanNotWriteToACallbackStream
+  fullName: SilverCraft.CSCore.PortAudio.Native.PaErrorCode.paCanNotWriteToACallbackStream
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore.PortAudio/Native/PaErrorCode.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: paCanNotWriteToACallbackStream
+    path: ../SilverCraft.CSCore.PortAudio/Native/PaErrorCode.cs
+    startLine: 29
+  assemblies:
+  - SilverCraft.CSCore.PortAudio
+  namespace: SilverCraft.CSCore.PortAudio.Native
+  syntax:
+    content: paCanNotWriteToACallbackStream = -9976
+    return:
+      type: SilverCraft.CSCore.PortAudio.Native.PaErrorCode
+- uid: SilverCraft.CSCore.PortAudio.Native.PaErrorCode.paCanNotReadFromAnOutputOnlyStream
+  commentId: F:SilverCraft.CSCore.PortAudio.Native.PaErrorCode.paCanNotReadFromAnOutputOnlyStream
+  id: paCanNotReadFromAnOutputOnlyStream
+  parent: SilverCraft.CSCore.PortAudio.Native.PaErrorCode
+  langs:
+  - csharp
+  - vb
+  name: paCanNotReadFromAnOutputOnlyStream
+  nameWithType: PaErrorCode.paCanNotReadFromAnOutputOnlyStream
+  fullName: SilverCraft.CSCore.PortAudio.Native.PaErrorCode.paCanNotReadFromAnOutputOnlyStream
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore.PortAudio/Native/PaErrorCode.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: paCanNotReadFromAnOutputOnlyStream
+    path: ../SilverCraft.CSCore.PortAudio/Native/PaErrorCode.cs
+    startLine: 30
+  assemblies:
+  - SilverCraft.CSCore.PortAudio
+  namespace: SilverCraft.CSCore.PortAudio.Native
+  syntax:
+    content: paCanNotReadFromAnOutputOnlyStream = -9975
+    return:
+      type: SilverCraft.CSCore.PortAudio.Native.PaErrorCode
+- uid: SilverCraft.CSCore.PortAudio.Native.PaErrorCode.paCanNotWriteToAnInputOnlyStream
+  commentId: F:SilverCraft.CSCore.PortAudio.Native.PaErrorCode.paCanNotWriteToAnInputOnlyStream
+  id: paCanNotWriteToAnInputOnlyStream
+  parent: SilverCraft.CSCore.PortAudio.Native.PaErrorCode
+  langs:
+  - csharp
+  - vb
+  name: paCanNotWriteToAnInputOnlyStream
+  nameWithType: PaErrorCode.paCanNotWriteToAnInputOnlyStream
+  fullName: SilverCraft.CSCore.PortAudio.Native.PaErrorCode.paCanNotWriteToAnInputOnlyStream
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore.PortAudio/Native/PaErrorCode.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: paCanNotWriteToAnInputOnlyStream
+    path: ../SilverCraft.CSCore.PortAudio/Native/PaErrorCode.cs
+    startLine: 31
+  assemblies:
+  - SilverCraft.CSCore.PortAudio
+  namespace: SilverCraft.CSCore.PortAudio.Native
+  syntax:
+    content: paCanNotWriteToAnInputOnlyStream = -9974
+    return:
+      type: SilverCraft.CSCore.PortAudio.Native.PaErrorCode
+- uid: SilverCraft.CSCore.PortAudio.Native.PaErrorCode.paIncompatibleStreamHostApi
+  commentId: F:SilverCraft.CSCore.PortAudio.Native.PaErrorCode.paIncompatibleStreamHostApi
+  id: paIncompatibleStreamHostApi
+  parent: SilverCraft.CSCore.PortAudio.Native.PaErrorCode
+  langs:
+  - csharp
+  - vb
+  name: paIncompatibleStreamHostApi
+  nameWithType: PaErrorCode.paIncompatibleStreamHostApi
+  fullName: SilverCraft.CSCore.PortAudio.Native.PaErrorCode.paIncompatibleStreamHostApi
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore.PortAudio/Native/PaErrorCode.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: paIncompatibleStreamHostApi
+    path: ../SilverCraft.CSCore.PortAudio/Native/PaErrorCode.cs
+    startLine: 32
+  assemblies:
+  - SilverCraft.CSCore.PortAudio
+  namespace: SilverCraft.CSCore.PortAudio.Native
+  syntax:
+    content: paIncompatibleStreamHostApi = -9973
+    return:
+      type: SilverCraft.CSCore.PortAudio.Native.PaErrorCode
+- uid: SilverCraft.CSCore.PortAudio.Native.PaErrorCode.paBadBufferPtr
+  commentId: F:SilverCraft.CSCore.PortAudio.Native.PaErrorCode.paBadBufferPtr
+  id: paBadBufferPtr
+  parent: SilverCraft.CSCore.PortAudio.Native.PaErrorCode
+  langs:
+  - csharp
+  - vb
+  name: paBadBufferPtr
+  nameWithType: PaErrorCode.paBadBufferPtr
+  fullName: SilverCraft.CSCore.PortAudio.Native.PaErrorCode.paBadBufferPtr
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore.PortAudio/Native/PaErrorCode.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: paBadBufferPtr
+    path: ../SilverCraft.CSCore.PortAudio/Native/PaErrorCode.cs
+    startLine: 33
+  assemblies:
+  - SilverCraft.CSCore.PortAudio
+  namespace: SilverCraft.CSCore.PortAudio.Native
+  syntax:
+    content: paBadBufferPtr = -9972
+    return:
+      type: SilverCraft.CSCore.PortAudio.Native.PaErrorCode
+references:
+- uid: SilverCraft.CSCore.PortAudio.Native
+  commentId: N:SilverCraft.CSCore.PortAudio.Native
+  href: SilverCraft.html
+  name: SilverCraft.CSCore.PortAudio.Native
+  nameWithType: SilverCraft.CSCore.PortAudio.Native
+  fullName: SilverCraft.CSCore.PortAudio.Native
+  spec.csharp:
+  - uid: SilverCraft
+    name: SilverCraft
+    href: SilverCraft.html
+  - name: .
+  - uid: SilverCraft.CSCore
+    name: CSCore
+    href: SilverCraft.CSCore.html
+  - name: .
+  - uid: SilverCraft.CSCore.PortAudio
+    name: PortAudio
+    href: SilverCraft.CSCore.PortAudio.html
+  - name: .
+  - uid: SilverCraft.CSCore.PortAudio.Native
+    name: Native
+    href: SilverCraft.CSCore.PortAudio.Native.html
+  spec.vb:
+  - uid: SilverCraft
+    name: SilverCraft
+    href: SilverCraft.html
+  - name: .
+  - uid: SilverCraft.CSCore
+    name: CSCore
+    href: SilverCraft.CSCore.html
+  - name: .
+  - uid: SilverCraft.CSCore.PortAudio
+    name: PortAudio
+    href: SilverCraft.CSCore.PortAudio.html
+  - name: .
+  - uid: SilverCraft.CSCore.PortAudio.Native
+    name: Native
+    href: SilverCraft.CSCore.PortAudio.Native.html
+- uid: SilverCraft.CSCore.PortAudio.Native.PaErrorCode
+  commentId: T:SilverCraft.CSCore.PortAudio.Native.PaErrorCode
+  parent: SilverCraft.CSCore.PortAudio.Native
+  href: SilverCraft.CSCore.PortAudio.Native.PaErrorCode.html
+  name: PaErrorCode
+  nameWithType: PaErrorCode
+  fullName: SilverCraft.CSCore.PortAudio.Native.PaErrorCode

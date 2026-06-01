@@ -1,0 +1,953 @@
+### YamlMime:ManagedReference
+items:
+- uid: SilverCraft.CSCore.Tags.ID3.ID3v2QuickInfo
+  commentId: T:SilverCraft.CSCore.Tags.ID3.ID3v2QuickInfo
+  id: ID3v2QuickInfo
+  parent: SilverCraft.CSCore.Tags.ID3
+  children:
+  - SilverCraft.CSCore.Tags.ID3.ID3v2QuickInfo.#ctor(SilverCraft.CSCore.Tags.ID3.ID3v2)
+  - SilverCraft.CSCore.Tags.ID3.ID3v2QuickInfo.Album
+  - SilverCraft.CSCore.Tags.ID3.ID3v2QuickInfo.Artist
+  - SilverCraft.CSCore.Tags.ID3.ID3v2QuickInfo.Comments
+  - SilverCraft.CSCore.Tags.ID3.ID3v2QuickInfo.Genre
+  - SilverCraft.CSCore.Tags.ID3.ID3v2QuickInfo.Image
+  - SilverCraft.CSCore.Tags.ID3.ID3v2QuickInfo.LeadPerformers
+  - SilverCraft.CSCore.Tags.ID3.ID3v2QuickInfo.OriginalReleaseYear
+  - SilverCraft.CSCore.Tags.ID3.ID3v2QuickInfo.Title
+  - SilverCraft.CSCore.Tags.ID3.ID3v2QuickInfo.TrackNumber
+  - SilverCraft.CSCore.Tags.ID3.ID3v2QuickInfo.Year
+  langs:
+  - csharp
+  - vb
+  name: ID3v2QuickInfo
+  nameWithType: ID3v2QuickInfo
+  fullName: SilverCraft.CSCore.Tags.ID3.ID3v2QuickInfo
+  type: Class
+  source:
+    remote:
+      path: SilverCraft.CSCore/Tags/ID3/ID3v2QuickInfo.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: ID3v2QuickInfo
+    path: ../SilverCraft.CSCore/Tags/ID3/ID3v2QuickInfo.cs
+    startLine: 6
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Tags.ID3
+  syntax:
+    content: public class ID3v2QuickInfo
+    content.vb: Public Class ID3v2QuickInfo
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  extensionMethods:
+  - SilverCraft.CSCore.Tags.ID3.ID3v2QuickInfo.SilverCraft.CSCore.FluentExtensions.Synchronized``2
+- uid: SilverCraft.CSCore.Tags.ID3.ID3v2QuickInfo.Title
+  commentId: P:SilverCraft.CSCore.Tags.ID3.ID3v2QuickInfo.Title
+  id: Title
+  parent: SilverCraft.CSCore.Tags.ID3.ID3v2QuickInfo
+  langs:
+  - csharp
+  - vb
+  name: Title
+  nameWithType: ID3v2QuickInfo.Title
+  fullName: SilverCraft.CSCore.Tags.ID3.ID3v2QuickInfo.Title
+  type: Property
+  source:
+    remote:
+      path: SilverCraft.CSCore/Tags/ID3/ID3v2QuickInfo.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: Title
+    path: ../SilverCraft.CSCore/Tags/ID3/ID3v2QuickInfo.cs
+    startLine: 11
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Tags.ID3
+  syntax:
+    content: public string Title { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public ReadOnly Property Title As String
+  overload: SilverCraft.CSCore.Tags.ID3.ID3v2QuickInfo.Title*
+- uid: SilverCraft.CSCore.Tags.ID3.ID3v2QuickInfo.Album
+  commentId: P:SilverCraft.CSCore.Tags.ID3.ID3v2QuickInfo.Album
+  id: Album
+  parent: SilverCraft.CSCore.Tags.ID3.ID3v2QuickInfo
+  langs:
+  - csharp
+  - vb
+  name: Album
+  nameWithType: ID3v2QuickInfo.Album
+  fullName: SilverCraft.CSCore.Tags.ID3.ID3v2QuickInfo.Album
+  type: Property
+  source:
+    remote:
+      path: SilverCraft.CSCore/Tags/ID3/ID3v2QuickInfo.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: Album
+    path: ../SilverCraft.CSCore/Tags/ID3/ID3v2QuickInfo.cs
+    startLine: 13
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Tags.ID3
+  syntax:
+    content: public string Album { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public ReadOnly Property Album As String
+  overload: SilverCraft.CSCore.Tags.ID3.ID3v2QuickInfo.Album*
+- uid: SilverCraft.CSCore.Tags.ID3.ID3v2QuickInfo.Artist
+  commentId: P:SilverCraft.CSCore.Tags.ID3.ID3v2QuickInfo.Artist
+  id: Artist
+  parent: SilverCraft.CSCore.Tags.ID3.ID3v2QuickInfo
+  langs:
+  - csharp
+  - vb
+  name: Artist
+  nameWithType: ID3v2QuickInfo.Artist
+  fullName: SilverCraft.CSCore.Tags.ID3.ID3v2QuickInfo.Artist
+  type: Property
+  source:
+    remote:
+      path: SilverCraft.CSCore/Tags/ID3/ID3v2QuickInfo.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: Artist
+    path: ../SilverCraft.CSCore/Tags/ID3/ID3v2QuickInfo.cs
+    startLine: 16
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Tags.ID3
+  syntax:
+    content: public string Artist { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public ReadOnly Property Artist As String
+  overload: SilverCraft.CSCore.Tags.ID3.ID3v2QuickInfo.Artist*
+- uid: SilverCraft.CSCore.Tags.ID3.ID3v2QuickInfo.LeadPerformers
+  commentId: P:SilverCraft.CSCore.Tags.ID3.ID3v2QuickInfo.LeadPerformers
+  id: LeadPerformers
+  parent: SilverCraft.CSCore.Tags.ID3.ID3v2QuickInfo
+  langs:
+  - csharp
+  - vb
+  name: LeadPerformers
+  nameWithType: ID3v2QuickInfo.LeadPerformers
+  fullName: SilverCraft.CSCore.Tags.ID3.ID3v2QuickInfo.LeadPerformers
+  type: Property
+  source:
+    remote:
+      path: SilverCraft.CSCore/Tags/ID3/ID3v2QuickInfo.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: LeadPerformers
+    path: ../SilverCraft.CSCore/Tags/ID3/ID3v2QuickInfo.cs
+    startLine: 19
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Tags.ID3
+  syntax:
+    content: public string LeadPerformers { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public ReadOnly Property LeadPerformers As String
+  overload: SilverCraft.CSCore.Tags.ID3.ID3v2QuickInfo.LeadPerformers*
+- uid: SilverCraft.CSCore.Tags.ID3.ID3v2QuickInfo.Comments
+  commentId: P:SilverCraft.CSCore.Tags.ID3.ID3v2QuickInfo.Comments
+  id: Comments
+  parent: SilverCraft.CSCore.Tags.ID3.ID3v2QuickInfo
+  langs:
+  - csharp
+  - vb
+  name: Comments
+  nameWithType: ID3v2QuickInfo.Comments
+  fullName: SilverCraft.CSCore.Tags.ID3.ID3v2QuickInfo.Comments
+  type: Property
+  source:
+    remote:
+      path: SilverCraft.CSCore/Tags/ID3/ID3v2QuickInfo.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: Comments
+    path: ../SilverCraft.CSCore/Tags/ID3/ID3v2QuickInfo.cs
+    startLine: 22
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Tags.ID3
+  syntax:
+    content: public string Comments { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public ReadOnly Property Comments As String
+  overload: SilverCraft.CSCore.Tags.ID3.ID3v2QuickInfo.Comments*
+- uid: SilverCraft.CSCore.Tags.ID3.ID3v2QuickInfo.Image
+  commentId: P:SilverCraft.CSCore.Tags.ID3.ID3v2QuickInfo.Image
+  id: Image
+  parent: SilverCraft.CSCore.Tags.ID3.ID3v2QuickInfo
+  langs:
+  - csharp
+  - vb
+  name: Image
+  nameWithType: ID3v2QuickInfo.Image
+  fullName: SilverCraft.CSCore.Tags.ID3.ID3v2QuickInfo.Image
+  type: Property
+  source:
+    remote:
+      path: SilverCraft.CSCore/Tags/ID3/ID3v2QuickInfo.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: Image
+    path: ../SilverCraft.CSCore/Tags/ID3/ID3v2QuickInfo.cs
+    startLine: 25
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Tags.ID3
+  syntax:
+    content: public Stream? Image { get; }
+    parameters: []
+    return:
+      type: System.IO.Stream
+    content.vb: Public ReadOnly Property Image As Stream
+  overload: SilverCraft.CSCore.Tags.ID3.ID3v2QuickInfo.Image*
+- uid: SilverCraft.CSCore.Tags.ID3.ID3v2QuickInfo.Year
+  commentId: P:SilverCraft.CSCore.Tags.ID3.ID3v2QuickInfo.Year
+  id: Year
+  parent: SilverCraft.CSCore.Tags.ID3.ID3v2QuickInfo
+  langs:
+  - csharp
+  - vb
+  name: Year
+  nameWithType: ID3v2QuickInfo.Year
+  fullName: SilverCraft.CSCore.Tags.ID3.ID3v2QuickInfo.Year
+  type: Property
+  source:
+    remote:
+      path: SilverCraft.CSCore/Tags/ID3/ID3v2QuickInfo.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: Year
+    path: ../SilverCraft.CSCore/Tags/ID3/ID3v2QuickInfo.cs
+    startLine: 30
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Tags.ID3
+  syntax:
+    content: public int? Year { get; }
+    parameters: []
+    return:
+      type: System.Nullable{System.Int32}
+    content.vb: Public ReadOnly Property Year As Integer?
+  overload: SilverCraft.CSCore.Tags.ID3.ID3v2QuickInfo.Year*
+- uid: SilverCraft.CSCore.Tags.ID3.ID3v2QuickInfo.TrackNumber
+  commentId: P:SilverCraft.CSCore.Tags.ID3.ID3v2QuickInfo.TrackNumber
+  id: TrackNumber
+  parent: SilverCraft.CSCore.Tags.ID3.ID3v2QuickInfo
+  langs:
+  - csharp
+  - vb
+  name: TrackNumber
+  nameWithType: ID3v2QuickInfo.TrackNumber
+  fullName: SilverCraft.CSCore.Tags.ID3.ID3v2QuickInfo.TrackNumber
+  type: Property
+  source:
+    remote:
+      path: SilverCraft.CSCore/Tags/ID3/ID3v2QuickInfo.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: TrackNumber
+    path: ../SilverCraft.CSCore/Tags/ID3/ID3v2QuickInfo.cs
+    startLine: 33
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Tags.ID3
+  syntax:
+    content: public int? TrackNumber { get; }
+    parameters: []
+    return:
+      type: System.Nullable{System.Int32}
+    content.vb: Public ReadOnly Property TrackNumber As Integer?
+  overload: SilverCraft.CSCore.Tags.ID3.ID3v2QuickInfo.TrackNumber*
+- uid: SilverCraft.CSCore.Tags.ID3.ID3v2QuickInfo.OriginalReleaseYear
+  commentId: P:SilverCraft.CSCore.Tags.ID3.ID3v2QuickInfo.OriginalReleaseYear
+  id: OriginalReleaseYear
+  parent: SilverCraft.CSCore.Tags.ID3.ID3v2QuickInfo
+  langs:
+  - csharp
+  - vb
+  name: OriginalReleaseYear
+  nameWithType: ID3v2QuickInfo.OriginalReleaseYear
+  fullName: SilverCraft.CSCore.Tags.ID3.ID3v2QuickInfo.OriginalReleaseYear
+  type: Property
+  source:
+    remote:
+      path: SilverCraft.CSCore/Tags/ID3/ID3v2QuickInfo.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: OriginalReleaseYear
+    path: ../SilverCraft.CSCore/Tags/ID3/ID3v2QuickInfo.cs
+    startLine: 36
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Tags.ID3
+  syntax:
+    content: public int? OriginalReleaseYear { get; }
+    parameters: []
+    return:
+      type: System.Nullable{System.Int32}
+    content.vb: Public ReadOnly Property OriginalReleaseYear As Integer?
+  overload: SilverCraft.CSCore.Tags.ID3.ID3v2QuickInfo.OriginalReleaseYear*
+- uid: SilverCraft.CSCore.Tags.ID3.ID3v2QuickInfo.Genre
+  commentId: P:SilverCraft.CSCore.Tags.ID3.ID3v2QuickInfo.Genre
+  id: Genre
+  parent: SilverCraft.CSCore.Tags.ID3.ID3v2QuickInfo
+  langs:
+  - csharp
+  - vb
+  name: Genre
+  nameWithType: ID3v2QuickInfo.Genre
+  fullName: SilverCraft.CSCore.Tags.ID3.ID3v2QuickInfo.Genre
+  type: Property
+  source:
+    remote:
+      path: SilverCraft.CSCore/Tags/ID3/ID3v2QuickInfo.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: Genre
+    path: ../SilverCraft.CSCore/Tags/ID3/ID3v2QuickInfo.cs
+    startLine: 39
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Tags.ID3
+  syntax:
+    content: public ID3Genre? Genre { get; }
+    parameters: []
+    return:
+      type: System.Nullable{SilverCraft.CSCore.Tags.ID3.ID3Genre}
+    content.vb: Public ReadOnly Property Genre As ID3Genre?
+  overload: SilverCraft.CSCore.Tags.ID3.ID3v2QuickInfo.Genre*
+- uid: SilverCraft.CSCore.Tags.ID3.ID3v2QuickInfo.#ctor(SilverCraft.CSCore.Tags.ID3.ID3v2)
+  commentId: M:SilverCraft.CSCore.Tags.ID3.ID3v2QuickInfo.#ctor(SilverCraft.CSCore.Tags.ID3.ID3v2)
+  id: '#ctor(SilverCraft.CSCore.Tags.ID3.ID3v2)'
+  parent: SilverCraft.CSCore.Tags.ID3.ID3v2QuickInfo
+  langs:
+  - csharp
+  - vb
+  name: ID3v2QuickInfo(ID3v2)
+  nameWithType: ID3v2QuickInfo.ID3v2QuickInfo(ID3v2)
+  fullName: SilverCraft.CSCore.Tags.ID3.ID3v2QuickInfo.ID3v2QuickInfo(SilverCraft.CSCore.Tags.ID3.ID3v2)
+  type: Constructor
+  source:
+    remote:
+      path: SilverCraft.CSCore/Tags/ID3/ID3v2QuickInfo.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: .ctor
+    path: ../SilverCraft.CSCore/Tags/ID3/ID3v2QuickInfo.cs
+    startLine: 77
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Tags.ID3
+  syntax:
+    content: public ID3v2QuickInfo(ID3v2 id3)
+    parameters:
+    - id: id3
+      type: SilverCraft.CSCore.Tags.ID3.ID3v2
+    content.vb: Public Sub New(id3 As ID3v2)
+  overload: SilverCraft.CSCore.Tags.ID3.ID3v2QuickInfo.#ctor*
+  nameWithType.vb: ID3v2QuickInfo.New(ID3v2)
+  fullName.vb: SilverCraft.CSCore.Tags.ID3.ID3v2QuickInfo.New(SilverCraft.CSCore.Tags.ID3.ID3v2)
+  name.vb: New(ID3v2)
+references:
+- uid: SilverCraft.CSCore.Tags.ID3
+  commentId: N:SilverCraft.CSCore.Tags.ID3
+  href: SilverCraft.html
+  name: SilverCraft.CSCore.Tags.ID3
+  nameWithType: SilverCraft.CSCore.Tags.ID3
+  fullName: SilverCraft.CSCore.Tags.ID3
+  spec.csharp:
+  - uid: SilverCraft
+    name: SilverCraft
+    href: SilverCraft.html
+  - name: .
+  - uid: SilverCraft.CSCore
+    name: CSCore
+    href: SilverCraft.CSCore.html
+  - name: .
+  - uid: SilverCraft.CSCore.Tags
+    name: Tags
+    href: SilverCraft.CSCore.Tags.html
+  - name: .
+  - uid: SilverCraft.CSCore.Tags.ID3
+    name: ID3
+    href: SilverCraft.CSCore.Tags.ID3.html
+  spec.vb:
+  - uid: SilverCraft
+    name: SilverCraft
+    href: SilverCraft.html
+  - name: .
+  - uid: SilverCraft.CSCore
+    name: CSCore
+    href: SilverCraft.CSCore.html
+  - name: .
+  - uid: SilverCraft.CSCore.Tags
+    name: Tags
+    href: SilverCraft.CSCore.Tags.html
+  - name: .
+  - uid: SilverCraft.CSCore.Tags.ID3
+    name: ID3
+    href: SilverCraft.CSCore.Tags.ID3.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: SilverCraft.CSCore.Tags.ID3.ID3v2QuickInfo.SilverCraft.CSCore.FluentExtensions.Synchronized``2
+  commentId: M:SilverCraft.CSCore.FluentExtensions.Synchronized``2(``0)
+  parent: SilverCraft.CSCore.FluentExtensions
+  definition: SilverCraft.CSCore.FluentExtensions.Synchronized``2(``0)
+  href: SilverCraft.CSCore.FluentExtensions.html#SilverCraft_CSCore_FluentExtensions_Synchronized__2___0_
+  name: Synchronized<ID3v2QuickInfo, T>(ID3v2QuickInfo)
+  nameWithType: FluentExtensions.Synchronized<ID3v2QuickInfo, T>(ID3v2QuickInfo)
+  fullName: SilverCraft.CSCore.FluentExtensions.Synchronized<SilverCraft.CSCore.Tags.ID3.ID3v2QuickInfo, T>(SilverCraft.CSCore.Tags.ID3.ID3v2QuickInfo)
+  nameWithType.vb: FluentExtensions.Synchronized(Of ID3v2QuickInfo, T)(ID3v2QuickInfo)
+  fullName.vb: SilverCraft.CSCore.FluentExtensions.Synchronized(Of SilverCraft.CSCore.Tags.ID3.ID3v2QuickInfo, T)(SilverCraft.CSCore.Tags.ID3.ID3v2QuickInfo)
+  name.vb: Synchronized(Of ID3v2QuickInfo, T)(ID3v2QuickInfo)
+  spec.csharp:
+  - uid: SilverCraft.CSCore.FluentExtensions.Synchronized``2(SilverCraft.CSCore.Tags.ID3.ID3v2QuickInfo)
+    name: Synchronized
+    href: SilverCraft.CSCore.FluentExtensions.html#SilverCraft_CSCore_FluentExtensions_Synchronized__2___0_
+  - name: <
+  - uid: SilverCraft.CSCore.Tags.ID3.ID3v2QuickInfo
+    name: ID3v2QuickInfo
+    href: SilverCraft.CSCore.Tags.ID3.ID3v2QuickInfo.html
+  - name: ','
+  - name: " "
+  - name: T
+  - name: '>'
+  - name: (
+  - uid: SilverCraft.CSCore.Tags.ID3.ID3v2QuickInfo
+    name: ID3v2QuickInfo
+    href: SilverCraft.CSCore.Tags.ID3.ID3v2QuickInfo.html
+  - name: )
+  spec.vb:
+  - uid: SilverCraft.CSCore.FluentExtensions.Synchronized``2(SilverCraft.CSCore.Tags.ID3.ID3v2QuickInfo)
+    name: Synchronized
+    href: SilverCraft.CSCore.FluentExtensions.html#SilverCraft_CSCore_FluentExtensions_Synchronized__2___0_
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: SilverCraft.CSCore.Tags.ID3.ID3v2QuickInfo
+    name: ID3v2QuickInfo
+    href: SilverCraft.CSCore.Tags.ID3.ID3v2QuickInfo.html
+  - name: ','
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: SilverCraft.CSCore.Tags.ID3.ID3v2QuickInfo
+    name: ID3v2QuickInfo
+    href: SilverCraft.CSCore.Tags.ID3.ID3v2QuickInfo.html
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: SilverCraft.CSCore.FluentExtensions.Synchronized``2(``0)
+  commentId: M:SilverCraft.CSCore.FluentExtensions.Synchronized``2(``0)
+  href: SilverCraft.CSCore.FluentExtensions.html#SilverCraft_CSCore_FluentExtensions_Synchronized__2___0_
+  name: Synchronized<TAudioSource, T>(TAudioSource)
+  nameWithType: FluentExtensions.Synchronized<TAudioSource, T>(TAudioSource)
+  fullName: SilverCraft.CSCore.FluentExtensions.Synchronized<TAudioSource, T>(TAudioSource)
+  nameWithType.vb: FluentExtensions.Synchronized(Of TAudioSource, T)(TAudioSource)
+  fullName.vb: SilverCraft.CSCore.FluentExtensions.Synchronized(Of TAudioSource, T)(TAudioSource)
+  name.vb: Synchronized(Of TAudioSource, T)(TAudioSource)
+  spec.csharp:
+  - uid: SilverCraft.CSCore.FluentExtensions.Synchronized``2(``0)
+    name: Synchronized
+    href: SilverCraft.CSCore.FluentExtensions.html#SilverCraft_CSCore_FluentExtensions_Synchronized__2___0_
+  - name: <
+  - name: TAudioSource
+  - name: ','
+  - name: " "
+  - name: T
+  - name: '>'
+  - name: (
+  - name: TAudioSource
+  - name: )
+  spec.vb:
+  - uid: SilverCraft.CSCore.FluentExtensions.Synchronized``2(``0)
+    name: Synchronized
+    href: SilverCraft.CSCore.FluentExtensions.html#SilverCraft_CSCore_FluentExtensions_Synchronized__2___0_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TAudioSource
+  - name: ','
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - name: TAudioSource
+  - name: )
+- uid: SilverCraft.CSCore.FluentExtensions
+  commentId: T:SilverCraft.CSCore.FluentExtensions
+  parent: SilverCraft.CSCore
+  href: SilverCraft.CSCore.FluentExtensions.html
+  name: FluentExtensions
+  nameWithType: FluentExtensions
+  fullName: SilverCraft.CSCore.FluentExtensions
+- uid: SilverCraft.CSCore
+  commentId: N:SilverCraft.CSCore
+  href: SilverCraft.html
+  name: SilverCraft.CSCore
+  nameWithType: SilverCraft.CSCore
+  fullName: SilverCraft.CSCore
+  spec.csharp:
+  - uid: SilverCraft
+    name: SilverCraft
+    href: SilverCraft.html
+  - name: .
+  - uid: SilverCraft.CSCore
+    name: CSCore
+    href: SilverCraft.CSCore.html
+  spec.vb:
+  - uid: SilverCraft
+    name: SilverCraft
+    href: SilverCraft.html
+  - name: .
+  - uid: SilverCraft.CSCore
+    name: CSCore
+    href: SilverCraft.CSCore.html
+- uid: SilverCraft.CSCore.Tags.ID3.ID3v2QuickInfo.Title*
+  commentId: Overload:SilverCraft.CSCore.Tags.ID3.ID3v2QuickInfo.Title
+  href: SilverCraft.CSCore.Tags.ID3.ID3v2QuickInfo.html#SilverCraft_CSCore_Tags_ID3_ID3v2QuickInfo_Title
+  name: Title
+  nameWithType: ID3v2QuickInfo.Title
+  fullName: SilverCraft.CSCore.Tags.ID3.ID3v2QuickInfo.Title
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: SilverCraft.CSCore.Tags.ID3.ID3v2QuickInfo.Album*
+  commentId: Overload:SilverCraft.CSCore.Tags.ID3.ID3v2QuickInfo.Album
+  href: SilverCraft.CSCore.Tags.ID3.ID3v2QuickInfo.html#SilverCraft_CSCore_Tags_ID3_ID3v2QuickInfo_Album
+  name: Album
+  nameWithType: ID3v2QuickInfo.Album
+  fullName: SilverCraft.CSCore.Tags.ID3.ID3v2QuickInfo.Album
+- uid: SilverCraft.CSCore.Tags.ID3.ID3v2QuickInfo.Artist*
+  commentId: Overload:SilverCraft.CSCore.Tags.ID3.ID3v2QuickInfo.Artist
+  href: SilverCraft.CSCore.Tags.ID3.ID3v2QuickInfo.html#SilverCraft_CSCore_Tags_ID3_ID3v2QuickInfo_Artist
+  name: Artist
+  nameWithType: ID3v2QuickInfo.Artist
+  fullName: SilverCraft.CSCore.Tags.ID3.ID3v2QuickInfo.Artist
+- uid: SilverCraft.CSCore.Tags.ID3.ID3v2QuickInfo.LeadPerformers*
+  commentId: Overload:SilverCraft.CSCore.Tags.ID3.ID3v2QuickInfo.LeadPerformers
+  href: SilverCraft.CSCore.Tags.ID3.ID3v2QuickInfo.html#SilverCraft_CSCore_Tags_ID3_ID3v2QuickInfo_LeadPerformers
+  name: LeadPerformers
+  nameWithType: ID3v2QuickInfo.LeadPerformers
+  fullName: SilverCraft.CSCore.Tags.ID3.ID3v2QuickInfo.LeadPerformers
+- uid: SilverCraft.CSCore.Tags.ID3.ID3v2QuickInfo.Comments*
+  commentId: Overload:SilverCraft.CSCore.Tags.ID3.ID3v2QuickInfo.Comments
+  href: SilverCraft.CSCore.Tags.ID3.ID3v2QuickInfo.html#SilverCraft_CSCore_Tags_ID3_ID3v2QuickInfo_Comments
+  name: Comments
+  nameWithType: ID3v2QuickInfo.Comments
+  fullName: SilverCraft.CSCore.Tags.ID3.ID3v2QuickInfo.Comments
+- uid: SilverCraft.CSCore.Tags.ID3.ID3v2QuickInfo.Image*
+  commentId: Overload:SilverCraft.CSCore.Tags.ID3.ID3v2QuickInfo.Image
+  href: SilverCraft.CSCore.Tags.ID3.ID3v2QuickInfo.html#SilverCraft_CSCore_Tags_ID3_ID3v2QuickInfo_Image
+  name: Image
+  nameWithType: ID3v2QuickInfo.Image
+  fullName: SilverCraft.CSCore.Tags.ID3.ID3v2QuickInfo.Image
+- uid: System.IO.Stream
+  commentId: T:System.IO.Stream
+  parent: System.IO
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.io.stream
+  name: Stream
+  nameWithType: Stream
+  fullName: System.IO.Stream
+- uid: System.IO
+  commentId: N:System.IO
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.IO
+  nameWithType: System.IO
+  fullName: System.IO
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.IO
+    name: IO
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.io
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.IO
+    name: IO
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.io
+- uid: SilverCraft.CSCore.Tags.ID3.ID3v2QuickInfo.Year*
+  commentId: Overload:SilverCraft.CSCore.Tags.ID3.ID3v2QuickInfo.Year
+  href: SilverCraft.CSCore.Tags.ID3.ID3v2QuickInfo.html#SilverCraft_CSCore_Tags_ID3_ID3v2QuickInfo_Year
+  name: Year
+  nameWithType: ID3v2QuickInfo.Year
+  fullName: SilverCraft.CSCore.Tags.ID3.ID3v2QuickInfo.Year
+- uid: System.Nullable{System.Int32}
+  commentId: T:System.Nullable{System.Int32}
+  parent: System
+  definition: System.Nullable`1
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int?
+  nameWithType: int?
+  fullName: int?
+  nameWithType.vb: Integer?
+  fullName.vb: Integer?
+  name.vb: Integer?
+  spec.csharp:
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: '?'
+  spec.vb:
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: '?'
+- uid: System.Nullable`1
+  commentId: T:System.Nullable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  name: Nullable<T>
+  nameWithType: Nullable<T>
+  fullName: System.Nullable<T>
+  nameWithType.vb: Nullable(Of T)
+  fullName.vb: System.Nullable(Of T)
+  name.vb: Nullable(Of T)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: SilverCraft.CSCore.Tags.ID3.ID3v2QuickInfo.TrackNumber*
+  commentId: Overload:SilverCraft.CSCore.Tags.ID3.ID3v2QuickInfo.TrackNumber
+  href: SilverCraft.CSCore.Tags.ID3.ID3v2QuickInfo.html#SilverCraft_CSCore_Tags_ID3_ID3v2QuickInfo_TrackNumber
+  name: TrackNumber
+  nameWithType: ID3v2QuickInfo.TrackNumber
+  fullName: SilverCraft.CSCore.Tags.ID3.ID3v2QuickInfo.TrackNumber
+- uid: SilverCraft.CSCore.Tags.ID3.ID3v2QuickInfo.OriginalReleaseYear*
+  commentId: Overload:SilverCraft.CSCore.Tags.ID3.ID3v2QuickInfo.OriginalReleaseYear
+  href: SilverCraft.CSCore.Tags.ID3.ID3v2QuickInfo.html#SilverCraft_CSCore_Tags_ID3_ID3v2QuickInfo_OriginalReleaseYear
+  name: OriginalReleaseYear
+  nameWithType: ID3v2QuickInfo.OriginalReleaseYear
+  fullName: SilverCraft.CSCore.Tags.ID3.ID3v2QuickInfo.OriginalReleaseYear
+- uid: SilverCraft.CSCore.Tags.ID3.ID3v2QuickInfo.Genre*
+  commentId: Overload:SilverCraft.CSCore.Tags.ID3.ID3v2QuickInfo.Genre
+  href: SilverCraft.CSCore.Tags.ID3.ID3v2QuickInfo.html#SilverCraft_CSCore_Tags_ID3_ID3v2QuickInfo_Genre
+  name: Genre
+  nameWithType: ID3v2QuickInfo.Genre
+  fullName: SilverCraft.CSCore.Tags.ID3.ID3v2QuickInfo.Genre
+- uid: System.Nullable{SilverCraft.CSCore.Tags.ID3.ID3Genre}
+  commentId: T:System.Nullable{SilverCraft.CSCore.Tags.ID3.ID3Genre}
+  parent: System
+  definition: System.Nullable`1
+  href: SilverCraft.CSCore.Tags.ID3.ID3Genre.html
+  name: ID3Genre?
+  nameWithType: ID3Genre?
+  fullName: SilverCraft.CSCore.Tags.ID3.ID3Genre?
+  spec.csharp:
+  - uid: SilverCraft.CSCore.Tags.ID3.ID3Genre
+    name: ID3Genre
+    href: SilverCraft.CSCore.Tags.ID3.ID3Genre.html
+  - name: '?'
+  spec.vb:
+  - uid: SilverCraft.CSCore.Tags.ID3.ID3Genre
+    name: ID3Genre
+    href: SilverCraft.CSCore.Tags.ID3.ID3Genre.html
+  - name: '?'
+- uid: SilverCraft.CSCore.Tags.ID3.ID3v2QuickInfo.#ctor*
+  commentId: Overload:SilverCraft.CSCore.Tags.ID3.ID3v2QuickInfo.#ctor
+  href: SilverCraft.CSCore.Tags.ID3.ID3v2QuickInfo.html#SilverCraft_CSCore_Tags_ID3_ID3v2QuickInfo__ctor_SilverCraft_CSCore_Tags_ID3_ID3v2_
+  name: ID3v2QuickInfo
+  nameWithType: ID3v2QuickInfo.ID3v2QuickInfo
+  fullName: SilverCraft.CSCore.Tags.ID3.ID3v2QuickInfo.ID3v2QuickInfo
+  nameWithType.vb: ID3v2QuickInfo.New
+  fullName.vb: SilverCraft.CSCore.Tags.ID3.ID3v2QuickInfo.New
+  name.vb: New
+- uid: SilverCraft.CSCore.Tags.ID3.ID3v2
+  commentId: T:SilverCraft.CSCore.Tags.ID3.ID3v2
+  parent: SilverCraft.CSCore.Tags.ID3
+  href: SilverCraft.CSCore.Tags.ID3.ID3v2.html
+  name: ID3v2
+  nameWithType: ID3v2
+  fullName: SilverCraft.CSCore.Tags.ID3.ID3v2

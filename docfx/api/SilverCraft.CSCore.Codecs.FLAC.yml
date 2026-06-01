@@ -1,0 +1,176 @@
+### YamlMime:ManagedReference
+items:
+- uid: SilverCraft.CSCore.Codecs.FLAC
+  commentId: N:SilverCraft.CSCore.Codecs.FLAC
+  id: SilverCraft.CSCore.Codecs.FLAC
+  children:
+  - SilverCraft.CSCore.Codecs.FLAC.BlockingStrategy
+  - SilverCraft.CSCore.Codecs.FLAC.ChannelAssignment
+  - SilverCraft.CSCore.Codecs.FLAC.DefaultFlacMetadata
+  - SilverCraft.CSCore.Codecs.FLAC.FlacException
+  - SilverCraft.CSCore.Codecs.FLAC.FlacFile
+  - SilverCraft.CSCore.Codecs.FLAC.FlacFrame
+  - SilverCraft.CSCore.Codecs.FLAC.FlacFrameHeader
+  - SilverCraft.CSCore.Codecs.FLAC.FlacFrameInformation
+  - SilverCraft.CSCore.Codecs.FLAC.FlacLayer
+  - SilverCraft.CSCore.Codecs.FLAC.FlacMetaDataType
+  - SilverCraft.CSCore.Codecs.FLAC.FlacMetadata
+  - SilverCraft.CSCore.Codecs.FLAC.FlacMetadataSeekTable
+  - SilverCraft.CSCore.Codecs.FLAC.FlacMetadataStreamInfo
+  - SilverCraft.CSCore.Codecs.FLAC.FlacPreScanFinishedEventArgs
+  - SilverCraft.CSCore.Codecs.FLAC.FlacPreScanMode
+  - SilverCraft.CSCore.Codecs.FLAC.FlacSeekPoint
+  langs:
+  - csharp
+  - vb
+  name: SilverCraft.CSCore.Codecs.FLAC
+  nameWithType: SilverCraft.CSCore.Codecs.FLAC
+  fullName: SilverCraft.CSCore.Codecs.FLAC
+  type: Namespace
+  assemblies:
+  - SilverCraft.CSCore
+references:
+- uid: SilverCraft.CSCore.Codecs.FLAC.BlockingStrategy
+  commentId: T:SilverCraft.CSCore.Codecs.FLAC.BlockingStrategy
+  parent: SilverCraft.CSCore.Codecs.FLAC
+  href: SilverCraft.CSCore.Codecs.FLAC.BlockingStrategy.html
+  name: BlockingStrategy
+  nameWithType: BlockingStrategy
+  fullName: SilverCraft.CSCore.Codecs.FLAC.BlockingStrategy
+- uid: SilverCraft.CSCore.Codecs.FLAC.ChannelAssignment
+  commentId: T:SilverCraft.CSCore.Codecs.FLAC.ChannelAssignment
+  parent: SilverCraft.CSCore.Codecs.FLAC
+  href: SilverCraft.CSCore.Codecs.FLAC.ChannelAssignment.html
+  name: ChannelAssignment
+  nameWithType: ChannelAssignment
+  fullName: SilverCraft.CSCore.Codecs.FLAC.ChannelAssignment
+- uid: SilverCraft.CSCore.Codecs.FLAC.FlacException
+  commentId: T:SilverCraft.CSCore.Codecs.FLAC.FlacException
+  href: SilverCraft.CSCore.Codecs.FLAC.FlacException.html
+  name: FlacException
+  nameWithType: FlacException
+  fullName: SilverCraft.CSCore.Codecs.FLAC.FlacException
+- uid: SilverCraft.CSCore.Codecs.FLAC.FlacFile
+  commentId: T:SilverCraft.CSCore.Codecs.FLAC.FlacFile
+  href: SilverCraft.CSCore.Codecs.FLAC.FlacFile.html
+  name: FlacFile
+  nameWithType: FlacFile
+  fullName: SilverCraft.CSCore.Codecs.FLAC.FlacFile
+- uid: SilverCraft.CSCore.Codecs.FLAC.FlacFrame
+  commentId: T:SilverCraft.CSCore.Codecs.FLAC.FlacFrame
+  parent: SilverCraft.CSCore.Codecs.FLAC
+  href: SilverCraft.CSCore.Codecs.FLAC.FlacFrame.html
+  name: FlacFrame
+  nameWithType: FlacFrame
+  fullName: SilverCraft.CSCore.Codecs.FLAC.FlacFrame
+- uid: SilverCraft.CSCore.Codecs.FLAC.FlacFrameHeader
+  commentId: T:SilverCraft.CSCore.Codecs.FLAC.FlacFrameHeader
+  parent: SilverCraft.CSCore.Codecs.FLAC
+  href: SilverCraft.CSCore.Codecs.FLAC.FlacFrameHeader.html
+  name: FlacFrameHeader
+  nameWithType: FlacFrameHeader
+  fullName: SilverCraft.CSCore.Codecs.FLAC.FlacFrameHeader
+- uid: SilverCraft.CSCore.Codecs.FLAC.FlacFrameInformation
+  commentId: T:SilverCraft.CSCore.Codecs.FLAC.FlacFrameInformation
+  href: SilverCraft.CSCore.Codecs.FLAC.FlacFrameInformation.html
+  name: FlacFrameInformation
+  nameWithType: FlacFrameInformation
+  fullName: SilverCraft.CSCore.Codecs.FLAC.FlacFrameInformation
+- uid: SilverCraft.CSCore.Codecs.FLAC.FlacLayer
+  commentId: T:SilverCraft.CSCore.Codecs.FLAC.FlacLayer
+  parent: SilverCraft.CSCore.Codecs.FLAC
+  href: SilverCraft.CSCore.Codecs.FLAC.FlacLayer.html
+  name: FlacLayer
+  nameWithType: FlacLayer
+  fullName: SilverCraft.CSCore.Codecs.FLAC.FlacLayer
+- uid: SilverCraft.CSCore.Codecs.FLAC.FlacPreScanFinishedEventArgs
+  commentId: T:SilverCraft.CSCore.Codecs.FLAC.FlacPreScanFinishedEventArgs
+  href: SilverCraft.CSCore.Codecs.FLAC.FlacPreScanFinishedEventArgs.html
+  name: FlacPreScanFinishedEventArgs
+  nameWithType: FlacPreScanFinishedEventArgs
+  fullName: SilverCraft.CSCore.Codecs.FLAC.FlacPreScanFinishedEventArgs
+- uid: SilverCraft.CSCore.Codecs.FLAC.FlacPreScanMode
+  commentId: T:SilverCraft.CSCore.Codecs.FLAC.FlacPreScanMode
+  parent: SilverCraft.CSCore.Codecs.FLAC
+  href: SilverCraft.CSCore.Codecs.FLAC.FlacPreScanMode.html
+  name: FlacPreScanMode
+  nameWithType: FlacPreScanMode
+  fullName: SilverCraft.CSCore.Codecs.FLAC.FlacPreScanMode
+- uid: SilverCraft.CSCore.Codecs.FLAC.DefaultFlacMetadata
+  commentId: T:SilverCraft.CSCore.Codecs.FLAC.DefaultFlacMetadata
+  href: SilverCraft.CSCore.Codecs.FLAC.DefaultFlacMetadata.html
+  name: DefaultFlacMetadata
+  nameWithType: DefaultFlacMetadata
+  fullName: SilverCraft.CSCore.Codecs.FLAC.DefaultFlacMetadata
+- uid: SilverCraft.CSCore.Codecs.FLAC.FlacMetadata
+  commentId: T:SilverCraft.CSCore.Codecs.FLAC.FlacMetadata
+  parent: SilverCraft.CSCore.Codecs.FLAC
+  href: SilverCraft.CSCore.Codecs.FLAC.FlacMetadata.html
+  name: FlacMetadata
+  nameWithType: FlacMetadata
+  fullName: SilverCraft.CSCore.Codecs.FLAC.FlacMetadata
+- uid: SilverCraft.CSCore.Codecs.FLAC.FlacMetadataSeekTable
+  commentId: T:SilverCraft.CSCore.Codecs.FLAC.FlacMetadataSeekTable
+  href: SilverCraft.CSCore.Codecs.FLAC.FlacMetadataSeekTable.html
+  name: FlacMetadataSeekTable
+  nameWithType: FlacMetadataSeekTable
+  fullName: SilverCraft.CSCore.Codecs.FLAC.FlacMetadataSeekTable
+- uid: SilverCraft.CSCore.Codecs.FLAC.FlacMetadataStreamInfo
+  commentId: T:SilverCraft.CSCore.Codecs.FLAC.FlacMetadataStreamInfo
+  parent: SilverCraft.CSCore.Codecs.FLAC
+  href: SilverCraft.CSCore.Codecs.FLAC.FlacMetadataStreamInfo.html
+  name: FlacMetadataStreamInfo
+  nameWithType: FlacMetadataStreamInfo
+  fullName: SilverCraft.CSCore.Codecs.FLAC.FlacMetadataStreamInfo
+- uid: SilverCraft.CSCore.Codecs.FLAC.FlacMetaDataType
+  commentId: T:SilverCraft.CSCore.Codecs.FLAC.FlacMetaDataType
+  parent: SilverCraft.CSCore.Codecs.FLAC
+  href: SilverCraft.CSCore.Codecs.FLAC.FlacMetaDataType.html
+  name: FlacMetaDataType
+  nameWithType: FlacMetaDataType
+  fullName: SilverCraft.CSCore.Codecs.FLAC.FlacMetaDataType
+- uid: SilverCraft.CSCore.Codecs.FLAC.FlacSeekPoint
+  commentId: T:SilverCraft.CSCore.Codecs.FLAC.FlacSeekPoint
+  parent: SilverCraft.CSCore.Codecs.FLAC
+  href: SilverCraft.CSCore.Codecs.FLAC.FlacSeekPoint.html
+  name: FlacSeekPoint
+  nameWithType: FlacSeekPoint
+  fullName: SilverCraft.CSCore.Codecs.FLAC.FlacSeekPoint
+- uid: SilverCraft.CSCore.Codecs.FLAC
+  commentId: N:SilverCraft.CSCore.Codecs.FLAC
+  href: SilverCraft.html
+  name: SilverCraft.CSCore.Codecs.FLAC
+  nameWithType: SilverCraft.CSCore.Codecs.FLAC
+  fullName: SilverCraft.CSCore.Codecs.FLAC
+  spec.csharp:
+  - uid: SilverCraft
+    name: SilverCraft
+    href: SilverCraft.html
+  - name: .
+  - uid: SilverCraft.CSCore
+    name: CSCore
+    href: SilverCraft.CSCore.html
+  - name: .
+  - uid: SilverCraft.CSCore.Codecs
+    name: Codecs
+    href: SilverCraft.CSCore.Codecs.html
+  - name: .
+  - uid: SilverCraft.CSCore.Codecs.FLAC
+    name: FLAC
+    href: SilverCraft.CSCore.Codecs.FLAC.html
+  spec.vb:
+  - uid: SilverCraft
+    name: SilverCraft
+    href: SilverCraft.html
+  - name: .
+  - uid: SilverCraft.CSCore
+    name: CSCore
+    href: SilverCraft.CSCore.html
+  - name: .
+  - uid: SilverCraft.CSCore.Codecs
+    name: Codecs
+    href: SilverCraft.CSCore.Codecs.html
+  - name: .
+  - uid: SilverCraft.CSCore.Codecs.FLAC
+    name: FLAC
+    href: SilverCraft.CSCore.Codecs.FLAC.html

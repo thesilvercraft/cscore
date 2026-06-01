@@ -1,0 +1,714 @@
+### YamlMime:ManagedReference
+items:
+- uid: SilverCraft.CSCore.Streams.SingleBlockReadEventArgs
+  commentId: T:SilverCraft.CSCore.Streams.SingleBlockReadEventArgs
+  id: SingleBlockReadEventArgs
+  parent: SilverCraft.CSCore.Streams
+  children:
+  - SilverCraft.CSCore.Streams.SingleBlockReadEventArgs.#ctor(System.Single[],System.Int32,System.Int32)
+  - SilverCraft.CSCore.Streams.SingleBlockReadEventArgs.Channels
+  - SilverCraft.CSCore.Streams.SingleBlockReadEventArgs.Left
+  - SilverCraft.CSCore.Streams.SingleBlockReadEventArgs.Right
+  - SilverCraft.CSCore.Streams.SingleBlockReadEventArgs.Samples
+  langs:
+  - csharp
+  - vb
+  name: SingleBlockReadEventArgs
+  nameWithType: SingleBlockReadEventArgs
+  fullName: SilverCraft.CSCore.Streams.SingleBlockReadEventArgs
+  type: Class
+  source:
+    remote:
+      path: SilverCraft.CSCore/Streams/SingleBlockReadEventArgs.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: SingleBlockReadEventArgs
+    path: ../SilverCraft.CSCore/Streams/SingleBlockReadEventArgs.cs
+    startLine: 7
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Streams
+  summary: Provides data for the <xref href="SilverCraft.CSCore.Streams.SingleBlockNotificationStream.SingleBlockRead" data-throw-if-not-resolved="false"></xref> event.
+  example: []
+  syntax:
+    content: 'public class SingleBlockReadEventArgs : EventArgs'
+    content.vb: Public Class SingleBlockReadEventArgs Inherits EventArgs
+  inheritance:
+  - System.Object
+  - System.EventArgs
+  inheritedMembers:
+  - System.EventArgs.Empty
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  extensionMethods:
+  - SilverCraft.CSCore.Streams.SingleBlockReadEventArgs.SilverCraft.CSCore.FluentExtensions.Synchronized``2
+- uid: SilverCraft.CSCore.Streams.SingleBlockReadEventArgs.Left
+  commentId: P:SilverCraft.CSCore.Streams.SingleBlockReadEventArgs.Left
+  id: Left
+  parent: SilverCraft.CSCore.Streams.SingleBlockReadEventArgs
+  langs:
+  - csharp
+  - vb
+  name: Left
+  nameWithType: SingleBlockReadEventArgs.Left
+  fullName: SilverCraft.CSCore.Streams.SingleBlockReadEventArgs.Left
+  type: Property
+  source:
+    remote:
+      path: SilverCraft.CSCore/Streams/SingleBlockReadEventArgs.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: Left
+    path: ../SilverCraft.CSCore/Streams/SingleBlockReadEventArgs.cs
+    startLine: 12
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Streams
+  summary: Gets the sample of the left channel.
+  example: []
+  syntax:
+    content: public float Left { get; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public Property Left As Single
+  overload: SilverCraft.CSCore.Streams.SingleBlockReadEventArgs.Left*
+- uid: SilverCraft.CSCore.Streams.SingleBlockReadEventArgs.Right
+  commentId: P:SilverCraft.CSCore.Streams.SingleBlockReadEventArgs.Right
+  id: Right
+  parent: SilverCraft.CSCore.Streams.SingleBlockReadEventArgs
+  langs:
+  - csharp
+  - vb
+  name: Right
+  nameWithType: SingleBlockReadEventArgs.Right
+  fullName: SilverCraft.CSCore.Streams.SingleBlockReadEventArgs.Right
+  type: Property
+  source:
+    remote:
+      path: SilverCraft.CSCore/Streams/SingleBlockReadEventArgs.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: Right
+    path: ../SilverCraft.CSCore/Streams/SingleBlockReadEventArgs.cs
+    startLine: 16
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Streams
+  summary: Gets the sample of the right channel.
+  example: []
+  syntax:
+    content: public float Right { get; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public Property Right As Single
+  overload: SilverCraft.CSCore.Streams.SingleBlockReadEventArgs.Right*
+- uid: SilverCraft.CSCore.Streams.SingleBlockReadEventArgs.Samples
+  commentId: P:SilverCraft.CSCore.Streams.SingleBlockReadEventArgs.Samples
+  id: Samples
+  parent: SilverCraft.CSCore.Streams.SingleBlockReadEventArgs
+  langs:
+  - csharp
+  - vb
+  name: Samples
+  nameWithType: SingleBlockReadEventArgs.Samples
+  fullName: SilverCraft.CSCore.Streams.SingleBlockReadEventArgs.Samples
+  type: Property
+  source:
+    remote:
+      path: SilverCraft.CSCore/Streams/SingleBlockReadEventArgs.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: Samples
+    path: ../SilverCraft.CSCore/Streams/SingleBlockReadEventArgs.cs
+    startLine: 22
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Streams
+  summary: Gets the samples of all channels if the number of <xref href="SilverCraft.CSCore.Streams.SingleBlockReadEventArgs.Channels" data-throw-if-not-resolved="false"></xref> is greater or equal to three.
+  remarks: If the number of <xref href="SilverCraft.CSCore.Streams.SingleBlockReadEventArgs.Channels" data-throw-if-not-resolved="false"></xref> is less than three, the value of the <xref href="SilverCraft.CSCore.Streams.SingleBlockReadEventArgs.Samples" data-throw-if-not-resolved="false"></xref> property is null.
+  example: []
+  syntax:
+    content: public float[] Samples { get; }
+    parameters: []
+    return:
+      type: System.Single[]
+    content.vb: Public Property Samples As Single()
+  overload: SilverCraft.CSCore.Streams.SingleBlockReadEventArgs.Samples*
+- uid: SilverCraft.CSCore.Streams.SingleBlockReadEventArgs.Channels
+  commentId: P:SilverCraft.CSCore.Streams.SingleBlockReadEventArgs.Channels
+  id: Channels
+  parent: SilverCraft.CSCore.Streams.SingleBlockReadEventArgs
+  langs:
+  - csharp
+  - vb
+  name: Channels
+  nameWithType: SingleBlockReadEventArgs.Channels
+  fullName: SilverCraft.CSCore.Streams.SingleBlockReadEventArgs.Channels
+  type: Property
+  source:
+    remote:
+      path: SilverCraft.CSCore/Streams/SingleBlockReadEventArgs.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: Channels
+    path: ../SilverCraft.CSCore/Streams/SingleBlockReadEventArgs.cs
+    startLine: 27
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Streams
+  summary: Gets the number of channels.
+  example: []
+  syntax:
+    content: public int Channels { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property Channels As Integer
+  overload: SilverCraft.CSCore.Streams.SingleBlockReadEventArgs.Channels*
+- uid: SilverCraft.CSCore.Streams.SingleBlockReadEventArgs.#ctor(System.Single[],System.Int32,System.Int32)
+  commentId: M:SilverCraft.CSCore.Streams.SingleBlockReadEventArgs.#ctor(System.Single[],System.Int32,System.Int32)
+  id: '#ctor(System.Single[],System.Int32,System.Int32)'
+  parent: SilverCraft.CSCore.Streams.SingleBlockReadEventArgs
+  langs:
+  - csharp
+  - vb
+  name: SingleBlockReadEventArgs(float[], int, int)
+  nameWithType: SingleBlockReadEventArgs.SingleBlockReadEventArgs(float[], int, int)
+  fullName: SilverCraft.CSCore.Streams.SingleBlockReadEventArgs.SingleBlockReadEventArgs(float[], int, int)
+  type: Constructor
+  source:
+    remote:
+      path: SilverCraft.CSCore/Streams/SingleBlockReadEventArgs.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: .ctor
+    path: ../SilverCraft.CSCore/Streams/SingleBlockReadEventArgs.cs
+    startLine: 35
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Streams
+  summary: Initializes a new instance of the <xref href="SilverCraft.CSCore.Streams.SingleBlockReadEventArgs" data-throw-if-not-resolved="false"></xref> class.
+  example: []
+  syntax:
+    content: public SingleBlockReadEventArgs(float[] samples, int index, int channels)
+    parameters:
+    - id: samples
+      type: System.Single[]
+      description: The samples.
+    - id: index
+      type: System.Int32
+      description: The index inside of the <code class="paramref">samples</code>-array.
+    - id: channels
+      type: System.Int32
+      description: The number of channels.
+    content.vb: Public Sub New(samples As Single(), index As Integer, channels As Integer)
+  overload: SilverCraft.CSCore.Streams.SingleBlockReadEventArgs.#ctor*
+  nameWithType.vb: SingleBlockReadEventArgs.New(Single(), Integer, Integer)
+  fullName.vb: SilverCraft.CSCore.Streams.SingleBlockReadEventArgs.New(Single(), Integer, Integer)
+  name.vb: New(Single(), Integer, Integer)
+references:
+- uid: SilverCraft.CSCore.Streams.SingleBlockNotificationStream.SingleBlockRead
+  commentId: E:SilverCraft.CSCore.Streams.SingleBlockNotificationStream.SingleBlockRead
+  href: SilverCraft.CSCore.Streams.SingleBlockNotificationStream.html#SilverCraft_CSCore_Streams_SingleBlockNotificationStream_SingleBlockRead
+  name: SingleBlockRead
+  nameWithType: SingleBlockNotificationStream.SingleBlockRead
+  fullName: SilverCraft.CSCore.Streams.SingleBlockNotificationStream.SingleBlockRead
+- uid: SilverCraft.CSCore.Streams
+  commentId: N:SilverCraft.CSCore.Streams
+  href: SilverCraft.html
+  name: SilverCraft.CSCore.Streams
+  nameWithType: SilverCraft.CSCore.Streams
+  fullName: SilverCraft.CSCore.Streams
+  spec.csharp:
+  - uid: SilverCraft
+    name: SilverCraft
+    href: SilverCraft.html
+  - name: .
+  - uid: SilverCraft.CSCore
+    name: CSCore
+    href: SilverCraft.CSCore.html
+  - name: .
+  - uid: SilverCraft.CSCore.Streams
+    name: Streams
+    href: SilverCraft.CSCore.Streams.html
+  spec.vb:
+  - uid: SilverCraft
+    name: SilverCraft
+    href: SilverCraft.html
+  - name: .
+  - uid: SilverCraft.CSCore
+    name: CSCore
+    href: SilverCraft.CSCore.html
+  - name: .
+  - uid: SilverCraft.CSCore.Streams
+    name: Streams
+    href: SilverCraft.CSCore.Streams.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.EventArgs
+  commentId: T:System.EventArgs
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.eventargs
+  name: EventArgs
+  nameWithType: EventArgs
+  fullName: System.EventArgs
+- uid: System.EventArgs.Empty
+  commentId: F:System.EventArgs.Empty
+  parent: System.EventArgs
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.eventargs.empty
+  name: Empty
+  nameWithType: EventArgs.Empty
+  fullName: System.EventArgs.Empty
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: SilverCraft.CSCore.Streams.SingleBlockReadEventArgs.SilverCraft.CSCore.FluentExtensions.Synchronized``2
+  commentId: M:SilverCraft.CSCore.FluentExtensions.Synchronized``2(``0)
+  parent: SilverCraft.CSCore.FluentExtensions
+  definition: SilverCraft.CSCore.FluentExtensions.Synchronized``2(``0)
+  href: SilverCraft.CSCore.FluentExtensions.html#SilverCraft_CSCore_FluentExtensions_Synchronized__2___0_
+  name: Synchronized<SingleBlockReadEventArgs, T>(SingleBlockReadEventArgs)
+  nameWithType: FluentExtensions.Synchronized<SingleBlockReadEventArgs, T>(SingleBlockReadEventArgs)
+  fullName: SilverCraft.CSCore.FluentExtensions.Synchronized<SilverCraft.CSCore.Streams.SingleBlockReadEventArgs, T>(SilverCraft.CSCore.Streams.SingleBlockReadEventArgs)
+  nameWithType.vb: FluentExtensions.Synchronized(Of SingleBlockReadEventArgs, T)(SingleBlockReadEventArgs)
+  fullName.vb: SilverCraft.CSCore.FluentExtensions.Synchronized(Of SilverCraft.CSCore.Streams.SingleBlockReadEventArgs, T)(SilverCraft.CSCore.Streams.SingleBlockReadEventArgs)
+  name.vb: Synchronized(Of SingleBlockReadEventArgs, T)(SingleBlockReadEventArgs)
+  spec.csharp:
+  - uid: SilverCraft.CSCore.FluentExtensions.Synchronized``2(SilverCraft.CSCore.Streams.SingleBlockReadEventArgs)
+    name: Synchronized
+    href: SilverCraft.CSCore.FluentExtensions.html#SilverCraft_CSCore_FluentExtensions_Synchronized__2___0_
+  - name: <
+  - uid: SilverCraft.CSCore.Streams.SingleBlockReadEventArgs
+    name: SingleBlockReadEventArgs
+    href: SilverCraft.CSCore.Streams.SingleBlockReadEventArgs.html
+  - name: ','
+  - name: " "
+  - name: T
+  - name: '>'
+  - name: (
+  - uid: SilverCraft.CSCore.Streams.SingleBlockReadEventArgs
+    name: SingleBlockReadEventArgs
+    href: SilverCraft.CSCore.Streams.SingleBlockReadEventArgs.html
+  - name: )
+  spec.vb:
+  - uid: SilverCraft.CSCore.FluentExtensions.Synchronized``2(SilverCraft.CSCore.Streams.SingleBlockReadEventArgs)
+    name: Synchronized
+    href: SilverCraft.CSCore.FluentExtensions.html#SilverCraft_CSCore_FluentExtensions_Synchronized__2___0_
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: SilverCraft.CSCore.Streams.SingleBlockReadEventArgs
+    name: SingleBlockReadEventArgs
+    href: SilverCraft.CSCore.Streams.SingleBlockReadEventArgs.html
+  - name: ','
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: SilverCraft.CSCore.Streams.SingleBlockReadEventArgs
+    name: SingleBlockReadEventArgs
+    href: SilverCraft.CSCore.Streams.SingleBlockReadEventArgs.html
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: SilverCraft.CSCore.FluentExtensions.Synchronized``2(``0)
+  commentId: M:SilverCraft.CSCore.FluentExtensions.Synchronized``2(``0)
+  href: SilverCraft.CSCore.FluentExtensions.html#SilverCraft_CSCore_FluentExtensions_Synchronized__2___0_
+  name: Synchronized<TAudioSource, T>(TAudioSource)
+  nameWithType: FluentExtensions.Synchronized<TAudioSource, T>(TAudioSource)
+  fullName: SilverCraft.CSCore.FluentExtensions.Synchronized<TAudioSource, T>(TAudioSource)
+  nameWithType.vb: FluentExtensions.Synchronized(Of TAudioSource, T)(TAudioSource)
+  fullName.vb: SilverCraft.CSCore.FluentExtensions.Synchronized(Of TAudioSource, T)(TAudioSource)
+  name.vb: Synchronized(Of TAudioSource, T)(TAudioSource)
+  spec.csharp:
+  - uid: SilverCraft.CSCore.FluentExtensions.Synchronized``2(``0)
+    name: Synchronized
+    href: SilverCraft.CSCore.FluentExtensions.html#SilverCraft_CSCore_FluentExtensions_Synchronized__2___0_
+  - name: <
+  - name: TAudioSource
+  - name: ','
+  - name: " "
+  - name: T
+  - name: '>'
+  - name: (
+  - name: TAudioSource
+  - name: )
+  spec.vb:
+  - uid: SilverCraft.CSCore.FluentExtensions.Synchronized``2(``0)
+    name: Synchronized
+    href: SilverCraft.CSCore.FluentExtensions.html#SilverCraft_CSCore_FluentExtensions_Synchronized__2___0_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TAudioSource
+  - name: ','
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - name: TAudioSource
+  - name: )
+- uid: SilverCraft.CSCore.FluentExtensions
+  commentId: T:SilverCraft.CSCore.FluentExtensions
+  parent: SilverCraft.CSCore
+  href: SilverCraft.CSCore.FluentExtensions.html
+  name: FluentExtensions
+  nameWithType: FluentExtensions
+  fullName: SilverCraft.CSCore.FluentExtensions
+- uid: SilverCraft.CSCore
+  commentId: N:SilverCraft.CSCore
+  href: SilverCraft.html
+  name: SilverCraft.CSCore
+  nameWithType: SilverCraft.CSCore
+  fullName: SilverCraft.CSCore
+  spec.csharp:
+  - uid: SilverCraft
+    name: SilverCraft
+    href: SilverCraft.html
+  - name: .
+  - uid: SilverCraft.CSCore
+    name: CSCore
+    href: SilverCraft.CSCore.html
+  spec.vb:
+  - uid: SilverCraft
+    name: SilverCraft
+    href: SilverCraft.html
+  - name: .
+  - uid: SilverCraft.CSCore
+    name: CSCore
+    href: SilverCraft.CSCore.html
+- uid: SilverCraft.CSCore.Streams.SingleBlockReadEventArgs.Left*
+  commentId: Overload:SilverCraft.CSCore.Streams.SingleBlockReadEventArgs.Left
+  href: SilverCraft.CSCore.Streams.SingleBlockReadEventArgs.html#SilverCraft_CSCore_Streams_SingleBlockReadEventArgs_Left
+  name: Left
+  nameWithType: SingleBlockReadEventArgs.Left
+  fullName: SilverCraft.CSCore.Streams.SingleBlockReadEventArgs.Left
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.single
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single
+- uid: SilverCraft.CSCore.Streams.SingleBlockReadEventArgs.Right*
+  commentId: Overload:SilverCraft.CSCore.Streams.SingleBlockReadEventArgs.Right
+  href: SilverCraft.CSCore.Streams.SingleBlockReadEventArgs.html#SilverCraft_CSCore_Streams_SingleBlockReadEventArgs_Right
+  name: Right
+  nameWithType: SingleBlockReadEventArgs.Right
+  fullName: SilverCraft.CSCore.Streams.SingleBlockReadEventArgs.Right
+- uid: SilverCraft.CSCore.Streams.SingleBlockReadEventArgs.Channels
+  commentId: P:SilverCraft.CSCore.Streams.SingleBlockReadEventArgs.Channels
+  href: SilverCraft.CSCore.Streams.SingleBlockReadEventArgs.html#SilverCraft_CSCore_Streams_SingleBlockReadEventArgs_Channels
+  name: Channels
+  nameWithType: SingleBlockReadEventArgs.Channels
+  fullName: SilverCraft.CSCore.Streams.SingleBlockReadEventArgs.Channels
+- uid: SilverCraft.CSCore.Streams.SingleBlockReadEventArgs.Samples
+  commentId: P:SilverCraft.CSCore.Streams.SingleBlockReadEventArgs.Samples
+  href: SilverCraft.CSCore.Streams.SingleBlockReadEventArgs.html#SilverCraft_CSCore_Streams_SingleBlockReadEventArgs_Samples
+  name: Samples
+  nameWithType: SingleBlockReadEventArgs.Samples
+  fullName: SilverCraft.CSCore.Streams.SingleBlockReadEventArgs.Samples
+- uid: SilverCraft.CSCore.Streams.SingleBlockReadEventArgs.Samples*
+  commentId: Overload:SilverCraft.CSCore.Streams.SingleBlockReadEventArgs.Samples
+  href: SilverCraft.CSCore.Streams.SingleBlockReadEventArgs.html#SilverCraft_CSCore_Streams_SingleBlockReadEventArgs_Samples
+  name: Samples
+  nameWithType: SingleBlockReadEventArgs.Samples
+  fullName: SilverCraft.CSCore.Streams.SingleBlockReadEventArgs.Samples
+- uid: System.Single[]
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.single
+  name: float[]
+  nameWithType: float[]
+  fullName: float[]
+  nameWithType.vb: Single()
+  fullName.vb: Single()
+  name.vb: Single()
+  spec.csharp:
+  - uid: System.Single
+    name: float
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: System.Single
+    name: Single
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: (
+  - name: )
+- uid: SilverCraft.CSCore.Streams.SingleBlockReadEventArgs.Channels*
+  commentId: Overload:SilverCraft.CSCore.Streams.SingleBlockReadEventArgs.Channels
+  href: SilverCraft.CSCore.Streams.SingleBlockReadEventArgs.html#SilverCraft_CSCore_Streams_SingleBlockReadEventArgs_Channels
+  name: Channels
+  nameWithType: SingleBlockReadEventArgs.Channels
+  fullName: SilverCraft.CSCore.Streams.SingleBlockReadEventArgs.Channels
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: SilverCraft.CSCore.Streams.SingleBlockReadEventArgs
+  commentId: T:SilverCraft.CSCore.Streams.SingleBlockReadEventArgs
+  href: SilverCraft.CSCore.Streams.SingleBlockReadEventArgs.html
+  name: SingleBlockReadEventArgs
+  nameWithType: SingleBlockReadEventArgs
+  fullName: SilverCraft.CSCore.Streams.SingleBlockReadEventArgs
+- uid: SilverCraft.CSCore.Streams.SingleBlockReadEventArgs.#ctor*
+  commentId: Overload:SilverCraft.CSCore.Streams.SingleBlockReadEventArgs.#ctor
+  href: SilverCraft.CSCore.Streams.SingleBlockReadEventArgs.html#SilverCraft_CSCore_Streams_SingleBlockReadEventArgs__ctor_System_Single___System_Int32_System_Int32_
+  name: SingleBlockReadEventArgs
+  nameWithType: SingleBlockReadEventArgs.SingleBlockReadEventArgs
+  fullName: SilverCraft.CSCore.Streams.SingleBlockReadEventArgs.SingleBlockReadEventArgs
+  nameWithType.vb: SingleBlockReadEventArgs.New
+  fullName.vb: SilverCraft.CSCore.Streams.SingleBlockReadEventArgs.New
+  name.vb: New

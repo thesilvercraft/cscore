@@ -1,0 +1,992 @@
+### YamlMime:ManagedReference
+items:
+- uid: SilverCraft.CSCore.Utils.Complex
+  commentId: T:SilverCraft.CSCore.Utils.Complex
+  id: Complex
+  parent: SilverCraft.CSCore.Utils
+  children:
+  - SilverCraft.CSCore.Utils.Complex.#ctor(System.Single)
+  - SilverCraft.CSCore.Utils.Complex.#ctor(System.Single,System.Single)
+  - SilverCraft.CSCore.Utils.Complex.Equals(SilverCraft.CSCore.Utils.Complex)
+  - SilverCraft.CSCore.Utils.Complex.Equals(System.Object)
+  - SilverCraft.CSCore.Utils.Complex.GetHashCode
+  - SilverCraft.CSCore.Utils.Complex.Imaginary
+  - SilverCraft.CSCore.Utils.Complex.Real
+  - SilverCraft.CSCore.Utils.Complex.Value
+  - SilverCraft.CSCore.Utils.Complex.Zero
+  - SilverCraft.CSCore.Utils.Complex.op_Equality(SilverCraft.CSCore.Utils.Complex,SilverCraft.CSCore.Utils.Complex)
+  - SilverCraft.CSCore.Utils.Complex.op_Implicit(SilverCraft.CSCore.Utils.Complex)~System.Double
+  - SilverCraft.CSCore.Utils.Complex.op_Implicit(SilverCraft.CSCore.Utils.Complex)~System.Single
+  - SilverCraft.CSCore.Utils.Complex.op_Inequality(SilverCraft.CSCore.Utils.Complex,SilverCraft.CSCore.Utils.Complex)
+  langs:
+  - csharp
+  - vb
+  name: Complex
+  nameWithType: Complex
+  fullName: SilverCraft.CSCore.Utils.Complex
+  type: Struct
+  source:
+    remote:
+      path: SilverCraft.CSCore/Utils/Complex.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: Complex
+    path: ../SilverCraft.CSCore/Utils/Complex.cs
+    startLine: 8
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Utils
+  summary: Represents a complex number.
+  example: []
+  syntax:
+    content: 'public struct Complex : IEquatable<Complex>'
+    content.vb: Public Structure Complex Implements IEquatable(Of Complex)
+  implements:
+  - System.IEquatable{SilverCraft.CSCore.Utils.Complex}
+  inheritedMembers:
+  - System.ValueType.ToString
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetType
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+- uid: SilverCraft.CSCore.Utils.Complex.Zero
+  commentId: F:SilverCraft.CSCore.Utils.Complex.Zero
+  id: Zero
+  parent: SilverCraft.CSCore.Utils.Complex
+  langs:
+  - csharp
+  - vb
+  name: Zero
+  nameWithType: Complex.Zero
+  fullName: SilverCraft.CSCore.Utils.Complex.Zero
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/Utils/Complex.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: Zero
+    path: ../SilverCraft.CSCore/Utils/Complex.cs
+    startLine: 14
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Utils
+  summary: A complex number with a total length of zero.
+  example: []
+  syntax:
+    content: public static readonly Complex Zero
+    return:
+      type: SilverCraft.CSCore.Utils.Complex
+    content.vb: Public Shared ReadOnly Zero As Complex
+- uid: SilverCraft.CSCore.Utils.Complex.Imaginary
+  commentId: F:SilverCraft.CSCore.Utils.Complex.Imaginary
+  id: Imaginary
+  parent: SilverCraft.CSCore.Utils.Complex
+  langs:
+  - csharp
+  - vb
+  name: Imaginary
+  nameWithType: Complex.Imaginary
+  fullName: SilverCraft.CSCore.Utils.Complex.Imaginary
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/Utils/Complex.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: Imaginary
+    path: ../SilverCraft.CSCore/Utils/Complex.cs
+    startLine: 19
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Utils
+  summary: Imaginary component of the complex number.
+  example: []
+  syntax:
+    content: public float Imaginary
+    return:
+      type: System.Single
+    content.vb: Public Imaginary As Single
+- uid: SilverCraft.CSCore.Utils.Complex.Real
+  commentId: F:SilverCraft.CSCore.Utils.Complex.Real
+  id: Real
+  parent: SilverCraft.CSCore.Utils.Complex
+  langs:
+  - csharp
+  - vb
+  name: Real
+  nameWithType: Complex.Real
+  fullName: SilverCraft.CSCore.Utils.Complex.Real
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/Utils/Complex.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: Real
+    path: ../SilverCraft.CSCore/Utils/Complex.cs
+    startLine: 24
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Utils
+  summary: Real component of the complex number.
+  example: []
+  syntax:
+    content: public float Real
+    return:
+      type: System.Single
+    content.vb: Public Real As Single
+- uid: SilverCraft.CSCore.Utils.Complex.#ctor(System.Single)
+  commentId: M:SilverCraft.CSCore.Utils.Complex.#ctor(System.Single)
+  id: '#ctor(System.Single)'
+  parent: SilverCraft.CSCore.Utils.Complex
+  langs:
+  - csharp
+  - vb
+  name: Complex(float)
+  nameWithType: Complex.Complex(float)
+  fullName: SilverCraft.CSCore.Utils.Complex.Complex(float)
+  type: Constructor
+  source:
+    remote:
+      path: SilverCraft.CSCore/Utils/Complex.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: .ctor
+    path: ../SilverCraft.CSCore/Utils/Complex.cs
+    startLine: 31
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Utils
+  summary: Initializes a new instance of the <xref href="SilverCraft.CSCore.Utils.Complex" data-throw-if-not-resolved="false"></xref> structure.
+  remarks: The imaginary component of the complex number will be set to zero.
+  example: []
+  syntax:
+    content: public Complex(float real)
+    parameters:
+    - id: real
+      type: System.Single
+      description: The real component of the complex number.
+    content.vb: Public Sub New(real As Single)
+  overload: SilverCraft.CSCore.Utils.Complex.#ctor*
+  nameWithType.vb: Complex.New(Single)
+  fullName.vb: SilverCraft.CSCore.Utils.Complex.New(Single)
+  name.vb: New(Single)
+- uid: SilverCraft.CSCore.Utils.Complex.#ctor(System.Single,System.Single)
+  commentId: M:SilverCraft.CSCore.Utils.Complex.#ctor(System.Single,System.Single)
+  id: '#ctor(System.Single,System.Single)'
+  parent: SilverCraft.CSCore.Utils.Complex
+  langs:
+  - csharp
+  - vb
+  name: Complex(float, float)
+  nameWithType: Complex.Complex(float, float)
+  fullName: SilverCraft.CSCore.Utils.Complex.Complex(float, float)
+  type: Constructor
+  source:
+    remote:
+      path: SilverCraft.CSCore/Utils/Complex.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: .ctor
+    path: ../SilverCraft.CSCore/Utils/Complex.cs
+    startLine: 41
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Utils
+  summary: Initializes a new instance of the <xref href="SilverCraft.CSCore.Utils.Complex" data-throw-if-not-resolved="false"></xref> structure.
+  example: []
+  syntax:
+    content: public Complex(float real, float img)
+    parameters:
+    - id: real
+      type: System.Single
+      description: The real component of the complex number.
+    - id: img
+      type: System.Single
+      description: The imaginary component of the complex number.
+    content.vb: Public Sub New(real As Single, img As Single)
+  overload: SilverCraft.CSCore.Utils.Complex.#ctor*
+  nameWithType.vb: Complex.New(Single, Single)
+  fullName.vb: SilverCraft.CSCore.Utils.Complex.New(Single, Single)
+  name.vb: New(Single, Single)
+- uid: SilverCraft.CSCore.Utils.Complex.Value
+  commentId: P:SilverCraft.CSCore.Utils.Complex.Value
+  id: Value
+  parent: SilverCraft.CSCore.Utils.Complex
+  langs:
+  - csharp
+  - vb
+  name: Value
+  nameWithType: Complex.Value
+  fullName: SilverCraft.CSCore.Utils.Complex.Value
+  type: Property
+  source:
+    remote:
+      path: SilverCraft.CSCore/Utils/Complex.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: Value
+    path: ../SilverCraft.CSCore/Utils/Complex.cs
+    startLine: 50
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Utils
+  summary: Gets the absolute value of the complex number.
+  example: []
+  syntax:
+    content: public double Value { get; }
+    parameters: []
+    return:
+      type: System.Double
+    content.vb: Public ReadOnly Property Value As Double
+  overload: SilverCraft.CSCore.Utils.Complex.Value*
+- uid: SilverCraft.CSCore.Utils.Complex.op_Implicit(SilverCraft.CSCore.Utils.Complex)~System.Single
+  commentId: M:SilverCraft.CSCore.Utils.Complex.op_Implicit(SilverCraft.CSCore.Utils.Complex)~System.Single
+  id: op_Implicit(SilverCraft.CSCore.Utils.Complex)~System.Single
+  parent: SilverCraft.CSCore.Utils.Complex
+  langs:
+  - csharp
+  - vb
+  name: implicit operator float(Complex)
+  nameWithType: Complex.implicit operator float(Complex)
+  fullName: SilverCraft.CSCore.Utils.Complex.implicit operator float(SilverCraft.CSCore.Utils.Complex)
+  type: Operator
+  source:
+    remote:
+      path: SilverCraft.CSCore/Utils/Complex.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: op_Implicit
+    path: ../SilverCraft.CSCore/Utils/Complex.cs
+    startLine: 57
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Utils
+  summary: Defines an implicit conversion of a complex number to a single-precision floating-point number.
+  example: []
+  syntax:
+    content: public static implicit operator float(Complex complex)
+    parameters:
+    - id: complex
+      type: SilverCraft.CSCore.Utils.Complex
+      description: Complex number.
+    return:
+      type: System.Single
+      description: The absolute value of the <code class="paramref">complex</code>.
+    content.vb: Public Shared Widening Operator CType(complex As Complex) As Single
+  overload: SilverCraft.CSCore.Utils.Complex.op_Implicit*
+  nameWithType.vb: Complex.CType(Complex)
+  fullName.vb: SilverCraft.CSCore.Utils.Complex.CType(SilverCraft.CSCore.Utils.Complex)
+  name.vb: CType(Complex)
+- uid: SilverCraft.CSCore.Utils.Complex.op_Implicit(SilverCraft.CSCore.Utils.Complex)~System.Double
+  commentId: M:SilverCraft.CSCore.Utils.Complex.op_Implicit(SilverCraft.CSCore.Utils.Complex)~System.Double
+  id: op_Implicit(SilverCraft.CSCore.Utils.Complex)~System.Double
+  parent: SilverCraft.CSCore.Utils.Complex
+  langs:
+  - csharp
+  - vb
+  name: implicit operator double(Complex)
+  nameWithType: Complex.implicit operator double(Complex)
+  fullName: SilverCraft.CSCore.Utils.Complex.implicit operator double(SilverCraft.CSCore.Utils.Complex)
+  type: Operator
+  source:
+    remote:
+      path: SilverCraft.CSCore/Utils/Complex.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: op_Implicit
+    path: ../SilverCraft.CSCore/Utils/Complex.cs
+    startLine: 67
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Utils
+  summary: Defines an implicit conversion of a complex number to a double-precision floating-point number.
+  example: []
+  syntax:
+    content: public static implicit operator double(Complex complex)
+    parameters:
+    - id: complex
+      type: SilverCraft.CSCore.Utils.Complex
+      description: Complex number.
+    return:
+      type: System.Double
+      description: The absolute value of the <code class="paramref">complex</code>.
+    content.vb: Public Shared Widening Operator CType(complex As Complex) As Double
+  overload: SilverCraft.CSCore.Utils.Complex.op_Implicit*
+  nameWithType.vb: Complex.CType(Complex)
+  fullName.vb: SilverCraft.CSCore.Utils.Complex.CType(SilverCraft.CSCore.Utils.Complex)
+  name.vb: CType(Complex)
+- uid: SilverCraft.CSCore.Utils.Complex.op_Equality(SilverCraft.CSCore.Utils.Complex,SilverCraft.CSCore.Utils.Complex)
+  commentId: M:SilverCraft.CSCore.Utils.Complex.op_Equality(SilverCraft.CSCore.Utils.Complex,SilverCraft.CSCore.Utils.Complex)
+  id: op_Equality(SilverCraft.CSCore.Utils.Complex,SilverCraft.CSCore.Utils.Complex)
+  parent: SilverCraft.CSCore.Utils.Complex
+  langs:
+  - csharp
+  - vb
+  name: operator ==(Complex, Complex)
+  nameWithType: Complex.operator ==(Complex, Complex)
+  fullName: SilverCraft.CSCore.Utils.Complex.operator ==(SilverCraft.CSCore.Utils.Complex, SilverCraft.CSCore.Utils.Complex)
+  type: Operator
+  source:
+    remote:
+      path: SilverCraft.CSCore/Utils/Complex.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: op_Equality
+    path: ../SilverCraft.CSCore/Utils/Complex.cs
+    startLine: 80
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Utils
+  summary: Implements the operator ==.
+  example: []
+  syntax:
+    content: public static bool operator ==(Complex complex1, Complex complex2)
+    parameters:
+    - id: complex1
+      type: SilverCraft.CSCore.Utils.Complex
+      description: The complex1.
+    - id: complex2
+      type: SilverCraft.CSCore.Utils.Complex
+      description: The complex2.
+    return:
+      type: System.Boolean
+      description: The result of the operator.
+    content.vb: Public Shared Operator =(complex1 As Complex, complex2 As Complex) As Boolean
+  overload: SilverCraft.CSCore.Utils.Complex.op_Equality*
+  nameWithType.vb: Complex.=(Complex, Complex)
+  fullName.vb: SilverCraft.CSCore.Utils.Complex.=(SilverCraft.CSCore.Utils.Complex, SilverCraft.CSCore.Utils.Complex)
+  name.vb: =(Complex, Complex)
+- uid: SilverCraft.CSCore.Utils.Complex.op_Inequality(SilverCraft.CSCore.Utils.Complex,SilverCraft.CSCore.Utils.Complex)
+  commentId: M:SilverCraft.CSCore.Utils.Complex.op_Inequality(SilverCraft.CSCore.Utils.Complex,SilverCraft.CSCore.Utils.Complex)
+  id: op_Inequality(SilverCraft.CSCore.Utils.Complex,SilverCraft.CSCore.Utils.Complex)
+  parent: SilverCraft.CSCore.Utils.Complex
+  langs:
+  - csharp
+  - vb
+  name: operator !=(Complex, Complex)
+  nameWithType: Complex.operator !=(Complex, Complex)
+  fullName: SilverCraft.CSCore.Utils.Complex.operator !=(SilverCraft.CSCore.Utils.Complex, SilverCraft.CSCore.Utils.Complex)
+  type: Operator
+  source:
+    remote:
+      path: SilverCraft.CSCore/Utils/Complex.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: op_Inequality
+    path: ../SilverCraft.CSCore/Utils/Complex.cs
+    startLine: 93
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Utils
+  summary: Implements the operator !=.
+  example: []
+  syntax:
+    content: public static bool operator !=(Complex complex1, Complex complex2)
+    parameters:
+    - id: complex1
+      type: SilverCraft.CSCore.Utils.Complex
+      description: The complex1.
+    - id: complex2
+      type: SilverCraft.CSCore.Utils.Complex
+      description: The complex2.
+    return:
+      type: System.Boolean
+      description: The result of the operator.
+    content.vb: Public Shared Operator <>(complex1 As Complex, complex2 As Complex) As Boolean
+  overload: SilverCraft.CSCore.Utils.Complex.op_Inequality*
+  nameWithType.vb: Complex.<>(Complex, Complex)
+  fullName.vb: SilverCraft.CSCore.Utils.Complex.<>(SilverCraft.CSCore.Utils.Complex, SilverCraft.CSCore.Utils.Complex)
+  name.vb: <>(Complex, Complex)
+- uid: SilverCraft.CSCore.Utils.Complex.Equals(SilverCraft.CSCore.Utils.Complex)
+  commentId: M:SilverCraft.CSCore.Utils.Complex.Equals(SilverCraft.CSCore.Utils.Complex)
+  id: Equals(SilverCraft.CSCore.Utils.Complex)
+  parent: SilverCraft.CSCore.Utils.Complex
+  langs:
+  - csharp
+  - vb
+  name: Equals(Complex)
+  nameWithType: Complex.Equals(Complex)
+  fullName: SilverCraft.CSCore.Utils.Complex.Equals(SilverCraft.CSCore.Utils.Complex)
+  type: Method
+  source:
+    remote:
+      path: SilverCraft.CSCore/Utils/Complex.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: Equals
+    path: ../SilverCraft.CSCore/Utils/Complex.cs
+    startLine: 105
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Utils
+  summary: Indicates whether the current complex value is equal to another complex value.
+  example: []
+  syntax:
+    content: public bool Equals(Complex other)
+    parameters:
+    - id: other
+      type: SilverCraft.CSCore.Utils.Complex
+      description: A complex value to compare with this complex value.
+    return:
+      type: System.Boolean
+      description: true if the current complex value is equal to the <code class="paramref">other</code> complex value; otherwise, false.
+    content.vb: Public Function Equals(other As Complex) As Boolean
+  overload: SilverCraft.CSCore.Utils.Complex.Equals*
+  implements:
+  - System.IEquatable{SilverCraft.CSCore.Utils.Complex}.Equals(SilverCraft.CSCore.Utils.Complex)
+- uid: SilverCraft.CSCore.Utils.Complex.Equals(System.Object)
+  commentId: M:SilverCraft.CSCore.Utils.Complex.Equals(System.Object)
+  id: Equals(System.Object)
+  parent: SilverCraft.CSCore.Utils.Complex
+  langs:
+  - csharp
+  - vb
+  name: Equals(object?)
+  nameWithType: Complex.Equals(object?)
+  fullName: SilverCraft.CSCore.Utils.Complex.Equals(object?)
+  type: Method
+  source:
+    remote:
+      path: SilverCraft.CSCore/Utils/Complex.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: Equals
+    path: ../SilverCraft.CSCore/Utils/Complex.cs
+    startLine: 117
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Utils
+  summary: Determines whether the specified <xref href="System.Object" data-throw-if-not-resolved="false"></xref>, is equal to this instance.
+  example: []
+  syntax:
+    content: public override bool Equals(object? obj)
+    parameters:
+    - id: obj
+      type: System.Object
+      description: The <xref href="System.Object" data-throw-if-not-resolved="false"></xref> to compare with this instance.
+    return:
+      type: System.Boolean
+      description: <code>true</code> if the specified <xref href="System.Object" data-throw-if-not-resolved="false"></xref> is equal to this instance; otherwise, <code>false</code>.
+    content.vb: Public Overrides Function Equals(obj As Object) As Boolean
+  overridden: System.ValueType.Equals(System.Object)
+  overload: SilverCraft.CSCore.Utils.Complex.Equals*
+  nameWithType.vb: Complex.Equals(Object)
+  fullName.vb: SilverCraft.CSCore.Utils.Complex.Equals(Object)
+  name.vb: Equals(Object)
+- uid: SilverCraft.CSCore.Utils.Complex.GetHashCode
+  commentId: M:SilverCraft.CSCore.Utils.Complex.GetHashCode
+  id: GetHashCode
+  parent: SilverCraft.CSCore.Utils.Complex
+  langs:
+  - csharp
+  - vb
+  name: GetHashCode()
+  nameWithType: Complex.GetHashCode()
+  fullName: SilverCraft.CSCore.Utils.Complex.GetHashCode()
+  type: Method
+  source:
+    remote:
+      path: SilverCraft.CSCore/Utils/Complex.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: GetHashCode
+    path: ../SilverCraft.CSCore/Utils/Complex.cs
+    startLine: 130
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Utils
+  summary: Returns a hash code for this instance.
+  example: []
+  syntax:
+    content: public override int GetHashCode()
+    return:
+      type: System.Int32
+      description: A hash code for this instance, suitable for use in hashing algorithms and data structures like a hash table.
+    content.vb: Public Overrides Function GetHashCode() As Integer
+  overridden: System.ValueType.GetHashCode
+  overload: SilverCraft.CSCore.Utils.Complex.GetHashCode*
+references:
+- uid: SilverCraft.CSCore.Utils
+  commentId: N:SilverCraft.CSCore.Utils
+  href: SilverCraft.html
+  name: SilverCraft.CSCore.Utils
+  nameWithType: SilverCraft.CSCore.Utils
+  fullName: SilverCraft.CSCore.Utils
+  spec.csharp:
+  - uid: SilverCraft
+    name: SilverCraft
+    href: SilverCraft.html
+  - name: .
+  - uid: SilverCraft.CSCore
+    name: CSCore
+    href: SilverCraft.CSCore.html
+  - name: .
+  - uid: SilverCraft.CSCore.Utils
+    name: Utils
+    href: SilverCraft.CSCore.Utils.html
+  spec.vb:
+  - uid: SilverCraft
+    name: SilverCraft
+    href: SilverCraft.html
+  - name: .
+  - uid: SilverCraft.CSCore
+    name: CSCore
+    href: SilverCraft.CSCore.html
+  - name: .
+  - uid: SilverCraft.CSCore.Utils
+    name: Utils
+    href: SilverCraft.CSCore.Utils.html
+- uid: System.IEquatable{SilverCraft.CSCore.Utils.Complex}
+  commentId: T:System.IEquatable{SilverCraft.CSCore.Utils.Complex}
+  parent: System
+  definition: System.IEquatable`1
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<Complex>
+  nameWithType: IEquatable<Complex>
+  fullName: System.IEquatable<SilverCraft.CSCore.Utils.Complex>
+  nameWithType.vb: IEquatable(Of Complex)
+  fullName.vb: System.IEquatable(Of SilverCraft.CSCore.Utils.Complex)
+  name.vb: IEquatable(Of Complex)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - uid: SilverCraft.CSCore.Utils.Complex
+    name: Complex
+    href: SilverCraft.CSCore.Utils.Complex.html
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: SilverCraft.CSCore.Utils.Complex
+    name: Complex
+    href: SilverCraft.CSCore.Utils.Complex.html
+  - name: )
+- uid: System.ValueType.ToString
+  commentId: M:System.ValueType.ToString
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  name: ToString()
+  nameWithType: ValueType.ToString()
+  fullName: System.ValueType.ToString()
+  spec.csharp:
+  - uid: System.ValueType.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.IEquatable`1
+  commentId: T:System.IEquatable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<T>
+  nameWithType: IEquatable<T>
+  fullName: System.IEquatable<T>
+  nameWithType.vb: IEquatable(Of T)
+  fullName.vb: System.IEquatable(Of T)
+  name.vb: IEquatable(Of T)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.ValueType
+  commentId: T:System.ValueType
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype
+  name: ValueType
+  nameWithType: ValueType
+  fullName: System.ValueType
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: SilverCraft.CSCore.Utils.Complex
+  commentId: T:SilverCraft.CSCore.Utils.Complex
+  parent: SilverCraft.CSCore.Utils
+  href: SilverCraft.CSCore.Utils.Complex.html
+  name: Complex
+  nameWithType: Complex
+  fullName: SilverCraft.CSCore.Utils.Complex
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.single
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single
+- uid: SilverCraft.CSCore.Utils.Complex.#ctor*
+  commentId: Overload:SilverCraft.CSCore.Utils.Complex.#ctor
+  href: SilverCraft.CSCore.Utils.Complex.html#SilverCraft_CSCore_Utils_Complex__ctor_System_Single_
+  name: Complex
+  nameWithType: Complex.Complex
+  fullName: SilverCraft.CSCore.Utils.Complex.Complex
+  nameWithType.vb: Complex.New
+  fullName.vb: SilverCraft.CSCore.Utils.Complex.New
+  name.vb: New
+- uid: SilverCraft.CSCore.Utils.Complex.Value*
+  commentId: Overload:SilverCraft.CSCore.Utils.Complex.Value
+  href: SilverCraft.CSCore.Utils.Complex.html#SilverCraft_CSCore_Utils_Complex_Value
+  name: Value
+  nameWithType: Complex.Value
+  fullName: SilverCraft.CSCore.Utils.Complex.Value
+- uid: System.Double
+  commentId: T:System.Double
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.double
+  name: double
+  nameWithType: double
+  fullName: double
+  nameWithType.vb: Double
+  fullName.vb: Double
+  name.vb: Double
+- uid: SilverCraft.CSCore.Utils.Complex.op_Implicit*
+  commentId: Overload:SilverCraft.CSCore.Utils.Complex.op_Implicit
+  name: implicit operator
+  nameWithType: Complex.implicit operator
+  fullName: SilverCraft.CSCore.Utils.Complex.implicit operator
+  nameWithType.vb: Complex.CType
+  fullName.vb: SilverCraft.CSCore.Utils.Complex.CType
+  name.vb: CType
+  spec.csharp:
+  - name: implicit
+  - name: " "
+  - name: operator
+- uid: SilverCraft.CSCore.Utils.Complex.op_Equality*
+  commentId: Overload:SilverCraft.CSCore.Utils.Complex.op_Equality
+  href: SilverCraft.CSCore.Utils.Complex.html#SilverCraft_CSCore_Utils_Complex_op_Equality_SilverCraft_CSCore_Utils_Complex_SilverCraft_CSCore_Utils_Complex_
+  name: operator ==
+  nameWithType: Complex.operator ==
+  fullName: SilverCraft.CSCore.Utils.Complex.operator ==
+  nameWithType.vb: Complex.=
+  fullName.vb: SilverCraft.CSCore.Utils.Complex.=
+  name.vb: =
+  spec.csharp:
+  - name: operator
+  - name: " "
+  - uid: SilverCraft.CSCore.Utils.Complex.op_Equality*
+    name: ==
+    href: SilverCraft.CSCore.Utils.Complex.html#SilverCraft_CSCore_Utils_Complex_op_Equality_SilverCraft_CSCore_Utils_Complex_SilverCraft_CSCore_Utils_Complex_
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: SilverCraft.CSCore.Utils.Complex.op_Inequality*
+  commentId: Overload:SilverCraft.CSCore.Utils.Complex.op_Inequality
+  href: SilverCraft.CSCore.Utils.Complex.html#SilverCraft_CSCore_Utils_Complex_op_Inequality_SilverCraft_CSCore_Utils_Complex_SilverCraft_CSCore_Utils_Complex_
+  name: operator !=
+  nameWithType: Complex.operator !=
+  fullName: SilverCraft.CSCore.Utils.Complex.operator !=
+  nameWithType.vb: Complex.<>
+  fullName.vb: SilverCraft.CSCore.Utils.Complex.<>
+  name.vb: <>
+  spec.csharp:
+  - name: operator
+  - name: " "
+  - uid: SilverCraft.CSCore.Utils.Complex.op_Inequality*
+    name: '!='
+    href: SilverCraft.CSCore.Utils.Complex.html#SilverCraft_CSCore_Utils_Complex_op_Inequality_SilverCraft_CSCore_Utils_Complex_SilverCraft_CSCore_Utils_Complex_
+- uid: SilverCraft.CSCore.Utils.Complex.Equals*
+  commentId: Overload:SilverCraft.CSCore.Utils.Complex.Equals
+  href: SilverCraft.CSCore.Utils.Complex.html#SilverCraft_CSCore_Utils_Complex_Equals_SilverCraft_CSCore_Utils_Complex_
+  name: Equals
+  nameWithType: Complex.Equals
+  fullName: SilverCraft.CSCore.Utils.Complex.Equals
+- uid: System.IEquatable{SilverCraft.CSCore.Utils.Complex}.Equals(SilverCraft.CSCore.Utils.Complex)
+  commentId: M:System.IEquatable{SilverCraft.CSCore.Utils.Complex}.Equals(SilverCraft.CSCore.Utils.Complex)
+  parent: System.IEquatable{SilverCraft.CSCore.Utils.Complex}
+  definition: System.IEquatable`1.Equals(`0)
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  name: Equals(Complex)
+  nameWithType: IEquatable<Complex>.Equals(Complex)
+  fullName: System.IEquatable<SilverCraft.CSCore.Utils.Complex>.Equals(SilverCraft.CSCore.Utils.Complex)
+  nameWithType.vb: IEquatable(Of Complex).Equals(Complex)
+  fullName.vb: System.IEquatable(Of SilverCraft.CSCore.Utils.Complex).Equals(SilverCraft.CSCore.Utils.Complex)
+  spec.csharp:
+  - uid: System.IEquatable{SilverCraft.CSCore.Utils.Complex}.Equals(SilverCraft.CSCore.Utils.Complex)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - uid: SilverCraft.CSCore.Utils.Complex
+    name: Complex
+    href: SilverCraft.CSCore.Utils.Complex.html
+  - name: )
+  spec.vb:
+  - uid: System.IEquatable{SilverCraft.CSCore.Utils.Complex}.Equals(SilverCraft.CSCore.Utils.Complex)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - uid: SilverCraft.CSCore.Utils.Complex
+    name: Complex
+    href: SilverCraft.CSCore.Utils.Complex.html
+  - name: )
+- uid: System.IEquatable`1.Equals(`0)
+  commentId: M:System.IEquatable`1.Equals(`0)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  name: Equals(T)
+  nameWithType: IEquatable<T>.Equals(T)
+  fullName: System.IEquatable<T>.Equals(T)
+  nameWithType.vb: IEquatable(Of T).Equals(T)
+  fullName.vb: System.IEquatable(Of T).Equals(T)
+  spec.csharp:
+  - uid: System.IEquatable`1.Equals(`0)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: System.IEquatable`1.Equals(`0)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - name: T
+  - name: )
+- uid: System.ValueType.Equals(System.Object)
+  commentId: M:System.ValueType.Equals(System.Object)
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  name: Equals(object)
+  nameWithType: ValueType.Equals(object)
+  fullName: System.ValueType.Equals(object)
+  nameWithType.vb: ValueType.Equals(Object)
+  fullName.vb: System.ValueType.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.ValueType.GetHashCode
+  commentId: M:System.ValueType.GetHashCode
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  name: GetHashCode()
+  nameWithType: ValueType.GetHashCode()
+  fullName: System.ValueType.GetHashCode()
+  spec.csharp:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  - name: (
+  - name: )
+- uid: SilverCraft.CSCore.Utils.Complex.GetHashCode*
+  commentId: Overload:SilverCraft.CSCore.Utils.Complex.GetHashCode
+  href: SilverCraft.CSCore.Utils.Complex.html#SilverCraft_CSCore_Utils_Complex_GetHashCode
+  name: GetHashCode
+  nameWithType: Complex.GetHashCode
+  fullName: SilverCraft.CSCore.Utils.Complex.GetHashCode
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer

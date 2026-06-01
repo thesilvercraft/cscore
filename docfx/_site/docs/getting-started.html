@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Getting Started with CSCore | SilverCraft.CSCore </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Getting Started with CSCore | SilverCraft.CSCore ">
+      
+      
+      <link rel="icon" href="../images/cscore-square-notext.svg">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/thesilvercraft/cscore/blob/master/docfx/docs/getting-started.md/#L1">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../images/cscore-square-notext.svg" alt="SilverCraft.CSCore">
+            SilverCraft.CSCore
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="">
+<h1 id="getting-started-with-cscore">Getting Started with CSCore</h1>
+
+<p>This guide will walk you through creating a simple .NET console application that plays a FLAC audio file using the <code>SilverCraft.CSCore</code> library.</p>
+<hr>
+<h2 id="prerequisites">Prerequisites</h2>
+<p>Before you begin, ensure you have the following installed on your system:</p>
+<ul>
+<li><strong>.NET SDK</strong> (8.0 or newer recommended)</li>
+<li><strong>OpenAL</strong> (Required for audio playback)</li>
+<li><strong>wget</strong> or <strong>curl</strong> (For downloading the sample file)</li>
+<li><strong>unzip</strong> (To extract the sample file)</li>
+</ul>
+<hr>
+<h2 id="step-1-set-up-your-project">Step 1: Set Up Your Project</h2>
+<p>Open your terminal and run the following commands to create a new directory and initialize a .NET console application.</p>
+<pre><code class="lang-bash"># Create and navigate to the project directory
+mkdir cscoretestapp
+cd cscoretestapp
+
+# Create a new .NET console project
+dotnet new console
+
+# Add the SilverCraft.CSCore NuGet package
+dotnet add package SilverCraft.CSCore
+
+</code></pre>
+<hr>
+<h2 id="step-2-download-sample-audio">Step 2: Download Sample Audio</h2>
+<p>Download and extract a sample FLAC file to use for testing.</p>
+<pre><code class="lang-bash"># Download the sample ZIP file
+wget https://helpguide.sony.net/high-res/sample1/v1/data/Sample_BeeMoved_96kHz24bit.flac.zip
+
+# Extract the FLAC file from the archive
+unzip Sample_BeeMoved_96kHz24bit.flac.zip
+
+# Clean up the ZIP file
+rm Sample_BeeMoved_96kHz24bit.flac.zip
+
+</code></pre>
+<hr>
+<h2 id="step-3-implement-the-code">Step 3: Implement the Code</h2>
+<p>Replace the entire contents of your <code>Program.cs</code> file with the following code:</p>
+<pre><code class="lang-csharp">using SilverCraft.CSCore;
+using SilverCraft.CSCore.Codecs.FLAC;
+using SilverCraft.CSCore.SoundOut;
+
+// Load the downloaded FLAC file
+FlacFile soundFile = new(&quot;Sample_BeeMoved_96kHz24bit.flac&quot;);
+
+try
+{
+    // Initialize the OpenAL audio output device
+    using var outputDevice = new ALSoundOut();
+    
+    outputDevice.Initialize(soundFile);
+    outputDevice.Volume = 0.3f; // Set volume (0.0 to 1.0)
+    
+    Console.WriteLine(&quot;Playing audio... Press Ctrl+C to stop.&quot;);
+    outputDevice.Play();
+    
+    // Block the thread until the audio finishes playing
+    outputDevice.WaitForStopped();
+}
+finally
+{
+    // Ensure the file stream is properly closed and released
+    soundFile.Dispose();
+}
+
+</code></pre>
+<hr>
+<h2 id="step-4-run-the-application">Step 4: Run the Application</h2>
+<p>Execute the application using the .NET CLI:</p>
+<pre><code class="lang-bash">dotnet run
+
+</code></pre>
+<hr>
+<h2 id="troubleshooting">Troubleshooting</h2>
+<h3 id="openal-errors">OpenAL Errors</h3>
+<p>If you encounter errors related to OpenAL driver initialization, the OpenAL runtime library might be missing from your system.</p>
+<ul>
+<li><strong>Windows:</strong> Download and run the OpenAL Installer from the official OpenAL website.</li>
+<li><strong>Linux (Ubuntu/Debian):</strong> Install it via your package manager: <code>sudo apt-get install libopenal1</code></li>
+</ul>
+<h3 id="sample-file-download-fails">Sample File Download Fails</h3>
+<p>If the Sony sample link is broken or unavailable:</p>
+<ol>
+<li>Download any standard <code>.flac</code> audio file manually.</li>
+<li>Place it directly into your <code>cscoretestapp</code> project directory.</li>
+<li>Update the filename in <code>Program.cs</code> to match your downloaded file:</li>
+</ol>
+<pre><code class="lang-csharp">FlacFile soundFile = new(&quot;your_audio_file.flac&quot;);
+</code></pre>
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/thesilvercraft/cscore/blob/master/docfx/docs/getting-started.md/#L1" class="edit-link">Edit this page</a>
+        </div>
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

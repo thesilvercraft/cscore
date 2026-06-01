@@ -1,0 +1,121 @@
+### YamlMime:ManagedReference
+items:
+- uid: SilverCraft.CSCore.Codecs.AIFF.FormatVersionChunk.AifcVersion
+  commentId: T:SilverCraft.CSCore.Codecs.AIFF.FormatVersionChunk.AifcVersion
+  id: FormatVersionChunk.AifcVersion
+  parent: SilverCraft.CSCore.Codecs.AIFF
+  children:
+  - SilverCraft.CSCore.Codecs.AIFF.FormatVersionChunk.AifcVersion.Version1
+  langs:
+  - csharp
+  - vb
+  name: FormatVersionChunk.AifcVersion
+  nameWithType: FormatVersionChunk.AifcVersion
+  fullName: SilverCraft.CSCore.Codecs.AIFF.FormatVersionChunk.AifcVersion
+  type: Enum
+  source:
+    remote:
+      path: SilverCraft.CSCore/Codecs/AIFF/FormatVersionChunk.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: AifcVersion
+    path: ../SilverCraft.CSCore/Codecs/AIFF/FormatVersionChunk.cs
+    startLine: 12
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Codecs.AIFF
+  summary: Defines Aiff-Versions.
+  example: []
+  syntax:
+    content: public enum FormatVersionChunk.AifcVersion
+    content.vb: Public Enum FormatVersionChunk.AifcVersion
+- uid: SilverCraft.CSCore.Codecs.AIFF.FormatVersionChunk.AifcVersion.Version1
+  commentId: F:SilverCraft.CSCore.Codecs.AIFF.FormatVersionChunk.AifcVersion.Version1
+  id: Version1
+  parent: SilverCraft.CSCore.Codecs.AIFF.FormatVersionChunk.AifcVersion
+  langs:
+  - csharp
+  - vb
+  name: Version1
+  nameWithType: FormatVersionChunk.AifcVersion.Version1
+  fullName: SilverCraft.CSCore.Codecs.AIFF.FormatVersionChunk.AifcVersion.Version1
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/Codecs/AIFF/FormatVersionChunk.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: Version1
+    path: ../SilverCraft.CSCore/Codecs/AIFF/FormatVersionChunk.cs
+    startLine: 17
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Codecs.AIFF
+  summary: Version 1.
+  example: []
+  syntax:
+    content: Version1 = -1568648896
+    return:
+      type: SilverCraft.CSCore.Codecs.AIFF.FormatVersionChunk.AifcVersion
+references:
+- uid: SilverCraft.CSCore.Codecs.AIFF
+  commentId: N:SilverCraft.CSCore.Codecs.AIFF
+  href: SilverCraft.html
+  name: SilverCraft.CSCore.Codecs.AIFF
+  nameWithType: SilverCraft.CSCore.Codecs.AIFF
+  fullName: SilverCraft.CSCore.Codecs.AIFF
+  spec.csharp:
+  - uid: SilverCraft
+    name: SilverCraft
+    href: SilverCraft.html
+  - name: .
+  - uid: SilverCraft.CSCore
+    name: CSCore
+    href: SilverCraft.CSCore.html
+  - name: .
+  - uid: SilverCraft.CSCore.Codecs
+    name: Codecs
+    href: SilverCraft.CSCore.Codecs.html
+  - name: .
+  - uid: SilverCraft.CSCore.Codecs.AIFF
+    name: AIFF
+    href: SilverCraft.CSCore.Codecs.AIFF.html
+  spec.vb:
+  - uid: SilverCraft
+    name: SilverCraft
+    href: SilverCraft.html
+  - name: .
+  - uid: SilverCraft.CSCore
+    name: CSCore
+    href: SilverCraft.CSCore.html
+  - name: .
+  - uid: SilverCraft.CSCore.Codecs
+    name: Codecs
+    href: SilverCraft.CSCore.Codecs.html
+  - name: .
+  - uid: SilverCraft.CSCore.Codecs.AIFF
+    name: AIFF
+    href: SilverCraft.CSCore.Codecs.AIFF.html
+- uid: SilverCraft.CSCore.Codecs.AIFF.FormatVersionChunk.AifcVersion
+  commentId: T:SilverCraft.CSCore.Codecs.AIFF.FormatVersionChunk.AifcVersion
+  parent: SilverCraft.CSCore.Codecs.AIFF
+  href: SilverCraft.CSCore.Codecs.AIFF.FormatVersionChunk.html
+  name: FormatVersionChunk.AifcVersion
+  nameWithType: FormatVersionChunk.AifcVersion
+  fullName: SilverCraft.CSCore.Codecs.AIFF.FormatVersionChunk.AifcVersion
+  spec.csharp:
+  - uid: SilverCraft.CSCore.Codecs.AIFF.FormatVersionChunk
+    name: FormatVersionChunk
+    href: SilverCraft.CSCore.Codecs.AIFF.FormatVersionChunk.html
+  - name: .
+  - uid: SilverCraft.CSCore.Codecs.AIFF.FormatVersionChunk.AifcVersion
+    name: AifcVersion
+    href: SilverCraft.CSCore.Codecs.AIFF.FormatVersionChunk.AifcVersion.html
+  spec.vb:
+  - uid: SilverCraft.CSCore.Codecs.AIFF.FormatVersionChunk
+    name: FormatVersionChunk
+    href: SilverCraft.CSCore.Codecs.AIFF.FormatVersionChunk.html
+  - name: .
+  - uid: SilverCraft.CSCore.Codecs.AIFF.FormatVersionChunk.AifcVersion
+    name: AifcVersion
+    href: SilverCraft.CSCore.Codecs.AIFF.FormatVersionChunk.AifcVersion.html

@@ -1,0 +1,672 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class FlacFile | SilverCraft.CSCore </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class FlacFile | SilverCraft.CSCore ">
+      
+      <meta name="description" content="Provides a decoder for decoding flac (Free Lostless Audio Codec) data.">
+      <link rel="icon" href="../images/cscore-square-notext.svg">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/thesilvercraft/cscore/new/master/apiSpec/new?filename=SilverCraft_CSCore_Codecs_FLAC_FlacFile.md&amp;value=---%0Auid%3A%20SilverCraft.CSCore.Codecs.FLAC.FlacFile%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../images/cscore-square-notext.svg" alt="SilverCraft.CSCore">
+            SilverCraft.CSCore
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="SilverCraft.CSCore.Codecs.FLAC.FlacFile">
+
+
+
+  <h1 id="SilverCraft_CSCore_Codecs_FLAC_FlacFile" data-uid="SilverCraft.CSCore.Codecs.FLAC.FlacFile" class="text-break">
+Class FlacFile  <a class="header-action link-secondary" title="View source" href="https://github.com/thesilvercraft/cscore/blob/master/SilverCraft.CSCore/Codecs/FLAC/FlacFile.cs/#L13"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="SilverCraft.html">SilverCraft</a>.<a class="xref" href="SilverCraft.CSCore.html">CSCore</a>.<a class="xref" href="SilverCraft.CSCore.Codecs.html">Codecs</a>.<a class="xref" href="SilverCraft.CSCore.Codecs.FLAC.html">FLAC</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>SilverCraft.CSCore.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>Provides a decoder for decoding flac (Free Lostless Audio Codec) data.</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class FlacFile : IWaveSource, IReadableAudioSource&lt;byte&gt;, IAudioSource, IDisposable</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">FlacFile</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="SilverCraft.CSCore.IWaveSource.html">IWaveSource</a></div>
+      <div><a class="xref" href="SilverCraft.CSCore.IReadableAudioSource-1.html">IReadableAudioSource</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>&gt;</div>
+      <div><a class="xref" href="SilverCraft.CSCore.IAudioSource.html">IAudioSource</a></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+  </dd></dl>
+
+  <dl class="typelist extensionMethods">
+    <dt>Extension Methods</dt>
+    <dd>
+  <div>
+      <a class="xref" href="SilverCraft.CSCore.FluentExtensions.html#SilverCraft_CSCore_FluentExtensions_AppendSource__2___0_System_Func___0___1__">FluentExtensions.AppendSource&lt;TInput, TResult&gt;(TInput, Func&lt;TInput, TResult&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="SilverCraft.CSCore.FluentExtensions.html#SilverCraft_CSCore_FluentExtensions_AppendSource__2___0_System_Func___0___1____1__">FluentExtensions.AppendSource&lt;TInput, TResult&gt;(TInput, Func&lt;TInput, TResult&gt;, out TResult)</a>
+  </div>
+  <div>
+      <a class="xref" href="SilverCraft.CSCore.FluentExtensions.html#SilverCraft_CSCore_FluentExtensions_Synchronized__2___0_">FluentExtensions.Synchronized&lt;TAudioSource, T&gt;(TAudioSource)</a>
+  </div>
+  <div>
+      <a class="xref" href="SilverCraft.CSCore.Extensions.html#SilverCraft_CSCore_Extensions_GetLength_SilverCraft_CSCore_IAudioSource_">Extensions.GetLength(IAudioSource)</a>
+  </div>
+  <div>
+      <a class="xref" href="SilverCraft.CSCore.Extensions.html#SilverCraft_CSCore_Extensions_GetMilliseconds_SilverCraft_CSCore_IAudioSource_System_Int64_">Extensions.GetMilliseconds(IAudioSource, long)</a>
+  </div>
+  <div>
+      <a class="xref" href="SilverCraft.CSCore.Extensions.html#SilverCraft_CSCore_Extensions_GetPosition_SilverCraft_CSCore_IAudioSource_">Extensions.GetPosition(IAudioSource)</a>
+  </div>
+  <div>
+      <a class="xref" href="SilverCraft.CSCore.Extensions.html#SilverCraft_CSCore_Extensions_GetRawElements_SilverCraft_CSCore_IAudioSource_System_Int64_">Extensions.GetRawElements(IAudioSource, long)</a>
+  </div>
+  <div>
+      <a class="xref" href="SilverCraft.CSCore.Extensions.html#SilverCraft_CSCore_Extensions_GetRawElements_SilverCraft_CSCore_IAudioSource_System_TimeSpan_">Extensions.GetRawElements(IAudioSource, TimeSpan)</a>
+  </div>
+  <div>
+      <a class="xref" href="SilverCraft.CSCore.Extensions.html#SilverCraft_CSCore_Extensions_GetTime_SilverCraft_CSCore_IAudioSource_System_Int64_">Extensions.GetTime(IAudioSource, long)</a>
+  </div>
+  <div>
+      <a class="xref" href="SilverCraft.CSCore.Extensions.html#SilverCraft_CSCore_Extensions_SetPosition_SilverCraft_CSCore_IAudioSource_System_TimeSpan_">Extensions.SetPosition(IAudioSource, TimeSpan)</a>
+  </div>
+  <div>
+      <a class="xref" href="SilverCraft.CSCore.Extensions.html#SilverCraft_CSCore_Extensions_WriteToFile_SilverCraft_CSCore_IWaveSource_System_String_">Extensions.WriteToFile(IWaveSource, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="SilverCraft.CSCore.Extensions.html#SilverCraft_CSCore_Extensions_WriteToStream_SilverCraft_CSCore_IWaveSource_System_IO_Stream_">Extensions.WriteToStream(IWaveSource, Stream)</a>
+  </div>
+  <div>
+      <a class="xref" href="SilverCraft.CSCore.Extensions.html#SilverCraft_CSCore_Extensions_WriteToWaveStream_SilverCraft_CSCore_IWaveSource_System_IO_Stream_">Extensions.WriteToWaveStream(IWaveSource, Stream)</a>
+  </div>
+  <div>
+      <a class="xref" href="SilverCraft.CSCore.FluentExtensions.html#SilverCraft_CSCore_FluentExtensions_ChangeSampleRate_SilverCraft_CSCore_IWaveSource_System_Int32_">FluentExtensions.ChangeSampleRate(IWaveSource, int)</a>
+  </div>
+  <div>
+      <a class="xref" href="SilverCraft.CSCore.FluentExtensions.html#SilverCraft_CSCore_FluentExtensions_Loop_SilverCraft_CSCore_IWaveSource_">FluentExtensions.Loop(IWaveSource)</a>
+  </div>
+  <div>
+      <a class="xref" href="SilverCraft.CSCore.FluentExtensions.html#SilverCraft_CSCore_FluentExtensions_OnEndOfStream_SilverCraft_CSCore_IWaveSource_System_Action_SilverCraft_CSCore_IWaveSource__">FluentExtensions.OnEndOfStream(IWaveSource, Action&lt;IWaveSource&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="SilverCraft.CSCore.FluentExtensions.html#SilverCraft_CSCore_FluentExtensions_ToMono_SilverCraft_CSCore_IWaveSource_">FluentExtensions.ToMono(IWaveSource)</a>
+  </div>
+  <div>
+      <a class="xref" href="SilverCraft.CSCore.FluentExtensions.html#SilverCraft_CSCore_FluentExtensions_ToSampleSource_SilverCraft_CSCore_IWaveSource_">FluentExtensions.ToSampleSource(IWaveSource)</a>
+  </div>
+  <div>
+      <a class="xref" href="SilverCraft.CSCore.FluentExtensions.html#SilverCraft_CSCore_FluentExtensions_ToStereo_SilverCraft_CSCore_IWaveSource_">FluentExtensions.ToStereo(IWaveSource)</a>
+  </div>
+  </dd></dl>
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="SilverCraft_CSCore_Codecs_FLAC_FlacFile__ctor_" data-uid="SilverCraft.CSCore.Codecs.FLAC.FlacFile.#ctor*"></a>
+
+  <h3 id="SilverCraft_CSCore_Codecs_FLAC_FlacFile__ctor_System_IO_Stream_" data-uid="SilverCraft.CSCore.Codecs.FLAC.FlacFile.#ctor(System.IO.Stream)">
+  FlacFile(Stream)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/thesilvercraft/cscore/blob/master/SilverCraft.CSCore/Codecs/FLAC/FlacFile.cs/#L46"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="SilverCraft.CSCore.Codecs.FLAC.FlacFile.html">FlacFile</a> class.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public FlacFile(Stream stream)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>stream</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.stream">Stream</a></dt>
+    <dd><p>Stream which contains flac data which should be decoded.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SilverCraft_CSCore_Codecs_FLAC_FlacFile__ctor_" data-uid="SilverCraft.CSCore.Codecs.FLAC.FlacFile.#ctor*"></a>
+
+  <h3 id="SilverCraft_CSCore_Codecs_FLAC_FlacFile__ctor_System_IO_Stream_SilverCraft_CSCore_Codecs_FLAC_FlacPreScanMode_" data-uid="SilverCraft.CSCore.Codecs.FLAC.FlacFile.#ctor(System.IO.Stream,SilverCraft.CSCore.Codecs.FLAC.FlacPreScanMode)">
+  FlacFile(Stream, FlacPreScanMode)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/thesilvercraft/cscore/blob/master/SilverCraft.CSCore/Codecs/FLAC/FlacFile.cs/#L56"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="SilverCraft.CSCore.Codecs.FLAC.FlacFile.html">FlacFile</a> class.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public FlacFile(Stream stream, FlacPreScanMode scanFlag)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>stream</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.stream">Stream</a></dt>
+    <dd><p>Stream which contains flac data which should be decoded.</p>
+</dd>
+    <dt><code>scanFlag</code> <a class="xref" href="SilverCraft.CSCore.Codecs.FLAC.FlacPreScanMode.html">FlacPreScanMode</a></dt>
+    <dd><p>Scan mode which defines how to scan the flac data for frames.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SilverCraft_CSCore_Codecs_FLAC_FlacFile__ctor_" data-uid="SilverCraft.CSCore.Codecs.FLAC.FlacFile.#ctor*"></a>
+
+  <h3 id="SilverCraft_CSCore_Codecs_FLAC_FlacFile__ctor_System_IO_Stream_SilverCraft_CSCore_Codecs_FLAC_FlacPreScanMode_System_Action_SilverCraft_CSCore_Codecs_FLAC_FlacPreScanFinishedEventArgs__" data-uid="SilverCraft.CSCore.Codecs.FLAC.FlacFile.#ctor(System.IO.Stream,SilverCraft.CSCore.Codecs.FLAC.FlacPreScanMode,System.Action{SilverCraft.CSCore.Codecs.FLAC.FlacPreScanFinishedEventArgs})">
+  FlacFile(Stream, FlacPreScanMode, Action&lt;FlacPreScanFinishedEventArgs&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/thesilvercraft/cscore/blob/master/SilverCraft.CSCore/Codecs/FLAC/FlacFile.cs/#L70"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="SilverCraft.CSCore.Codecs.FLAC.FlacFile.html">FlacFile</a> class.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public FlacFile(Stream stream, FlacPreScanMode scanFlag, Action&lt;FlacPreScanFinishedEventArgs&gt; onscanFinished)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>stream</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.stream">Stream</a></dt>
+    <dd><p>Stream which contains flac data which should be decoded.</p>
+</dd>
+    <dt><code>scanFlag</code> <a class="xref" href="SilverCraft.CSCore.Codecs.FLAC.FlacPreScanMode.html">FlacPreScanMode</a></dt>
+    <dd><p>Scan mode which defines how to scan the flac data for frames.</p>
+</dd>
+    <dt><code>onscanFinished</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-1">Action</a>&lt;<a class="xref" href="SilverCraft.CSCore.Codecs.FLAC.FlacPreScanFinishedEventArgs.html">FlacPreScanFinishedEventArgs</a>&gt;</dt>
+    <dd><p>Callback which gets called when the pre scan processes finished. Should be used if the
+<code class="paramref">scanFlag</code> argument is set the <a class="xref" href="SilverCraft.CSCore.Codecs.FLAC.FlacPreScanMode.html#SilverCraft_CSCore_Codecs_FLAC_FlacPreScanMode_Async">Async</a>.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SilverCraft_CSCore_Codecs_FLAC_FlacFile__ctor_" data-uid="SilverCraft.CSCore.Codecs.FLAC.FlacFile.#ctor*"></a>
+
+  <h3 id="SilverCraft_CSCore_Codecs_FLAC_FlacFile__ctor_System_String_" data-uid="SilverCraft.CSCore.Codecs.FLAC.FlacFile.#ctor(System.String)">
+  FlacFile(string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/thesilvercraft/cscore/blob/master/SilverCraft.CSCore/Codecs/FLAC/FlacFile.cs/#L36"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="SilverCraft.CSCore.Codecs.FLAC.FlacFile.html">FlacFile</a> class.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public FlacFile(string fileName)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>fileName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Filename which of a flac file which should be decoded.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="SilverCraft_CSCore_Codecs_FLAC_FlacFile_CanSeek_" data-uid="SilverCraft.CSCore.Codecs.FLAC.FlacFile.CanSeek*"></a>
+
+  <h3 id="SilverCraft_CSCore_Codecs_FLAC_FlacFile_CanSeek" data-uid="SilverCraft.CSCore.Codecs.FLAC.FlacFile.CanSeek">
+  CanSeek
+  <a class="header-action link-secondary" title="View source" href="https://github.com/thesilvercraft/cscore/blob/master/SilverCraft.CSCore/Codecs/FLAC/FlacFile.cs/#L130"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets a value which indicates whether the seeking is supported. True means that seeking is supported; False means
+that seeking is not supported.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool CanSeek { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="SilverCraft_CSCore_Codecs_FLAC_FlacFile_Length_" data-uid="SilverCraft.CSCore.Codecs.FLAC.FlacFile.Length*"></a>
+
+  <h3 id="SilverCraft_CSCore_Codecs_FLAC_FlacFile_Length" data-uid="SilverCraft.CSCore.Codecs.FLAC.FlacFile.Length">
+  Length
+  <a class="header-action link-secondary" title="View source" href="https://github.com/thesilvercraft/cscore/blob/master/SilverCraft.CSCore/Codecs/FLAC/FlacFile.cs/#L263"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the length of the <a class="xref" href="SilverCraft.CSCore.Codecs.FLAC.FlacFile.html">FlacFile</a> in bytes.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public long Length { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="SilverCraft_CSCore_Codecs_FLAC_FlacFile_Metadata_" data-uid="SilverCraft.CSCore.Codecs.FLAC.FlacFile.Metadata*"></a>
+
+  <h3 id="SilverCraft_CSCore_Codecs_FLAC_FlacFile_Metadata" data-uid="SilverCraft.CSCore.Codecs.FLAC.FlacFile.Metadata">
+  Metadata
+  <a class="header-action link-secondary" title="View source" href="https://github.com/thesilvercraft/cscore/blob/master/SilverCraft.CSCore/Codecs/FLAC/FlacFile.cs/#L117"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets a list with all found metadata fields.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ReadOnlyCollection&lt;FlacMetadata&gt; Metadata { get; protected set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.objectmodel.readonlycollection-1">ReadOnlyCollection</a>&lt;<a class="xref" href="SilverCraft.CSCore.Codecs.FLAC.FlacMetadata.html">FlacMetadata</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="SilverCraft_CSCore_Codecs_FLAC_FlacFile_Position_" data-uid="SilverCraft.CSCore.Codecs.FLAC.FlacFile.Position*"></a>
+
+  <h3 id="SilverCraft_CSCore_Codecs_FLAC_FlacFile_Position" data-uid="SilverCraft.CSCore.Codecs.FLAC.FlacFile.Position">
+  Position
+  <a class="header-action link-secondary" title="View source" href="https://github.com/thesilvercraft/cscore/blob/master/SilverCraft.CSCore/Codecs/FLAC/FlacFile.cs/#L205"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets or sets the position of the <a class="xref" href="SilverCraft.CSCore.Codecs.FLAC.FlacFile.html">FlacFile</a> in bytes.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public long Position { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="SilverCraft_CSCore_Codecs_FLAC_FlacFile_WaveFormat_" data-uid="SilverCraft.CSCore.Codecs.FLAC.FlacFile.WaveFormat*"></a>
+
+  <h3 id="SilverCraft_CSCore_Codecs_FLAC_FlacFile_WaveFormat" data-uid="SilverCraft.CSCore.Codecs.FLAC.FlacFile.WaveFormat">
+  WaveFormat
+  <a class="header-action link-secondary" title="View source" href="https://github.com/thesilvercraft/cscore/blob/master/SilverCraft.CSCore/Codecs/FLAC/FlacFile.cs/#L124"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the output <a class="xref" href="SilverCraft.CSCore.WaveFormat.html">WaveFormat</a> of the decoder.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public WaveFormat WaveFormat { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="SilverCraft.CSCore.WaveFormat.html">WaveFormat</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="SilverCraft_CSCore_Codecs_FLAC_FlacFile_Dispose_" data-uid="SilverCraft.CSCore.Codecs.FLAC.FlacFile.Dispose*"></a>
+
+  <h3 id="SilverCraft_CSCore_Codecs_FLAC_FlacFile_Dispose" data-uid="SilverCraft.CSCore.Codecs.FLAC.FlacFile.Dispose">
+  Dispose()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/thesilvercraft/cscore/blob/master/SilverCraft.CSCore/Codecs/FLAC/FlacFile.cs/#L278"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Disposes the <a class="xref" href="SilverCraft.CSCore.Codecs.FLAC.FlacFile.html">FlacFile</a> instance and disposes the underlying stream.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Dispose()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SilverCraft_CSCore_Codecs_FLAC_FlacFile_Dispose_" data-uid="SilverCraft.CSCore.Codecs.FLAC.FlacFile.Dispose*"></a>
+
+  <h3 id="SilverCraft_CSCore_Codecs_FLAC_FlacFile_Dispose_System_Boolean_" data-uid="SilverCraft.CSCore.Codecs.FLAC.FlacFile.Dispose(System.Boolean)">
+  Dispose(bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/thesilvercraft/cscore/blob/master/SilverCraft.CSCore/Codecs/FLAC/FlacFile.cs/#L343"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Disposes the <a class="xref" href="SilverCraft.CSCore.Codecs.FLAC.FlacFile.html">FlacFile</a> instance and disposes the underlying stream.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void Dispose(bool disposing)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>disposing</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>True to release both managed and unmanaged resources; false to release only unmanaged
+resources.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SilverCraft_CSCore_Codecs_FLAC_FlacFile_Read_" data-uid="SilverCraft.CSCore.Codecs.FLAC.FlacFile.Read*"></a>
+
+  <h3 id="SilverCraft_CSCore_Codecs_FLAC_FlacFile_Read_System_Byte___System_Int32_System_Int32_" data-uid="SilverCraft.CSCore.Codecs.FLAC.FlacFile.Read(System.Byte[],System.Int32,System.Int32)">
+  Read(byte[], int, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/thesilvercraft/cscore/blob/master/SilverCraft.CSCore/Codecs/FLAC/FlacFile.cs/#L147"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Reads a sequence of bytes from the <a class="xref" href="SilverCraft.CSCore.Codecs.FLAC.FlacFile.html">FlacFile</a> and advances the position within the stream by the
+number of bytes read.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int Read(byte[] buffer, int offset, int count)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>buffer</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>[]</dt>
+    <dd><p>An array of bytes. When this method returns, the <code class="paramref">buffer</code> contains the specified
+byte array with the values between <code class="paramref">offset</code> and (<code class="paramref">offset</code> +
+<code class="paramref">count</code> - 1) replaced by the bytes read from the current source.</p>
+</dd>
+    <dt><code>offset</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The zero-based byte offset in the <code class="paramref">buffer</code> at which to begin storing the data
+read from the current stream.</p>
+</dd>
+    <dt><code>count</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The maximum number of bytes to read from the current source.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The total number of bytes read into the buffer.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/thesilvercraft/cscore/blob/master/SilverCraft.CSCore/Codecs/FLAC/FlacFile.cs/#L13" class="edit-link">Edit this page</a>
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

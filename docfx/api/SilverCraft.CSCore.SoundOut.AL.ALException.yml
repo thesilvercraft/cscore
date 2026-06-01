@@ -1,0 +1,1037 @@
+### YamlMime:ManagedReference
+items:
+- uid: SilverCraft.CSCore.SoundOut.AL.ALException
+  commentId: T:SilverCraft.CSCore.SoundOut.AL.ALException
+  id: ALException
+  parent: SilverCraft.CSCore.SoundOut.AL
+  children:
+  - SilverCraft.CSCore.SoundOut.AL.ALException.#ctor(System.String)
+  - SilverCraft.CSCore.SoundOut.AL.ALException.#ctor(System.String,SilverCraft.CSCore.SoundOut.AL.ALErrorCode)
+  - SilverCraft.CSCore.SoundOut.AL.ALException.LastError
+  - SilverCraft.CSCore.SoundOut.AL.ALException.Try(System.Action,System.String)
+  - SilverCraft.CSCore.SoundOut.AL.ALException.Try(System.Action,System.String,System.IntPtr)
+  - SilverCraft.CSCore.SoundOut.AL.ALException.Try(System.String)
+  - SilverCraft.CSCore.SoundOut.AL.ALException.Try(System.String,System.IntPtr)
+  langs:
+  - csharp
+  - vb
+  name: ALException
+  nameWithType: ALException
+  fullName: SilverCraft.CSCore.SoundOut.AL.ALException
+  type: Class
+  source:
+    remote:
+      path: SilverCraft.CSCore/SoundOut/AL/ALException.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: ALException
+    path: ../SilverCraft.CSCore/SoundOut/AL/ALException.cs
+    startLine: 8
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.SoundOut.AL
+  summary: OpenAL Exception
+  example: []
+  syntax:
+    content: 'public class ALException : Exception, ISerializable'
+    content.vb: Public Class ALException Inherits Exception Implements ISerializable
+  inheritance:
+  - System.Object
+  - System.Exception
+  implements:
+  - System.Runtime.Serialization.ISerializable
+  inheritedMembers:
+  - System.Exception.GetBaseException
+  - System.Exception.GetType
+  - System.Exception.ToString
+  - System.Exception.Data
+  - System.Exception.HelpLink
+  - System.Exception.HResult
+  - System.Exception.InnerException
+  - System.Exception.Message
+  - System.Exception.Source
+  - System.Exception.StackTrace
+  - System.Exception.TargetSite
+  - System.Exception.SerializeObjectState
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  extensionMethods:
+  - SilverCraft.CSCore.SoundOut.AL.ALException.SilverCraft.CSCore.FluentExtensions.Synchronized``2
+- uid: SilverCraft.CSCore.SoundOut.AL.ALException.Try(System.String)
+  commentId: M:SilverCraft.CSCore.SoundOut.AL.ALException.Try(System.String)
+  id: Try(System.String)
+  parent: SilverCraft.CSCore.SoundOut.AL.ALException
+  langs:
+  - csharp
+  - vb
+  name: Try(string)
+  nameWithType: ALException.Try(string)
+  fullName: SilverCraft.CSCore.SoundOut.AL.ALException.Try(string)
+  type: Method
+  source:
+    remote:
+      path: SilverCraft.CSCore/SoundOut/AL/ALException.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: Try
+    path: ../SilverCraft.CSCore/SoundOut/AL/ALException.cs
+    startLine: 19
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.SoundOut.AL
+  summary: >-
+    Checks whether the OpenAL Error-Stack contains errors. 
+
+    If an error occurs, the a <xref href="SilverCraft.CSCore.SoundOut.AL.ALException" data-throw-if-not-resolved="false"></xref> gets thrown.
+  remarks: >-
+    If the <code class="paramref">functionName</code> starts with "alc" use the <xref href="SilverCraft.CSCore.SoundOut.AL.ALException.Try(System.String%2cSystem.IntPtr)" data-throw-if-not-resolved="false"></xref> 
+
+    method instead and provide a contextHandle.
+  example: []
+  syntax:
+    content: public static void Try(string functionName)
+    parameters:
+    - id: functionName
+      type: System.String
+      description: The name of the OpenAL function which caused the error.
+    content.vb: Public Shared Sub [Try](functionName As String)
+  overload: SilverCraft.CSCore.SoundOut.AL.ALException.Try*
+  nameWithType.vb: ALException.Try(String)
+  fullName.vb: SilverCraft.CSCore.SoundOut.AL.ALException.Try(String)
+  name.vb: Try(String)
+- uid: SilverCraft.CSCore.SoundOut.AL.ALException.Try(System.String,System.IntPtr)
+  commentId: M:SilverCraft.CSCore.SoundOut.AL.ALException.Try(System.String,System.IntPtr)
+  id: Try(System.String,System.IntPtr)
+  parent: SilverCraft.CSCore.SoundOut.AL.ALException
+  langs:
+  - csharp
+  - vb
+  name: Try(string, nint)
+  nameWithType: ALException.Try(string, nint)
+  fullName: SilverCraft.CSCore.SoundOut.AL.ALException.Try(string, nint)
+  type: Method
+  source:
+    remote:
+      path: SilverCraft.CSCore/SoundOut/AL/ALException.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: Try
+    path: ../SilverCraft.CSCore/SoundOut/AL/ALException.cs
+    startLine: 30
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.SoundOut.AL
+  summary: >-
+    Checks whether the OpenAL Error-Stack contains errors. 
+
+    If an error occurs, the a <xref href="SilverCraft.CSCore.SoundOut.AL.ALException" data-throw-if-not-resolved="false"></xref> gets thrown.
+  example: []
+  syntax:
+    content: public static void Try(string functionName, nint contextHandle)
+    parameters:
+    - id: functionName
+      type: System.String
+      description: The name of the OpenAL function which caused the error.
+    - id: contextHandle
+      type: System.IntPtr
+      description: The handle of the <xref href="SilverCraft.CSCore.SoundOut.AL.ALContext" data-throw-if-not-resolved="false"></xref> if the <code class="paramref">functionName</code> starts with "alc".
+    content.vb: Public Shared Sub [Try](functionName As String, contextHandle As IntPtr)
+  overload: SilverCraft.CSCore.SoundOut.AL.ALException.Try*
+  nameWithType.vb: ALException.Try(String, IntPtr)
+  fullName.vb: SilverCraft.CSCore.SoundOut.AL.ALException.Try(String, System.IntPtr)
+  name.vb: Try(String, IntPtr)
+- uid: SilverCraft.CSCore.SoundOut.AL.ALException.Try(System.Action,System.String)
+  commentId: M:SilverCraft.CSCore.SoundOut.AL.ALException.Try(System.Action,System.String)
+  id: Try(System.Action,System.String)
+  parent: SilverCraft.CSCore.SoundOut.AL.ALException
+  langs:
+  - csharp
+  - vb
+  name: Try(Action, string)
+  nameWithType: ALException.Try(Action, string)
+  fullName: SilverCraft.CSCore.SoundOut.AL.ALException.Try(System.Action, string)
+  type: Method
+  source:
+    remote:
+      path: SilverCraft.CSCore/SoundOut/AL/ALException.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: Try
+    path: ../SilverCraft.CSCore/SoundOut/AL/ALException.cs
+    startLine: 47
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.SoundOut.AL
+  summary: >-
+    Resets the OpenAL Error-Stack, executes the <code class="paramref">alAction</code> and checks
+
+    for an OpenAL Error afterwards. If an error occurs, the a <xref href="SilverCraft.CSCore.SoundOut.AL.ALException" data-throw-if-not-resolved="false"></xref>
+
+    gets thrown.
+  remarks: If a OpenAL function, starting with "alc" gets executed, use the <xref href="SilverCraft.CSCore.SoundOut.AL.ALException.Try(System.Action%2cSystem.String%2cSystem.IntPtr)" data-throw-if-not-resolved="false"></xref> method instead.
+  example: []
+  syntax:
+    content: public static void Try(Action alAction, string functionName)
+    parameters:
+    - id: alAction
+      type: System.Action
+      description: The action to execute.
+    - id: functionName
+      type: System.String
+      description: The name of the OpenAL function which gets executed by the <code class="paramref">alAction</code>.
+    content.vb: Public Shared Sub [Try](alAction As Action, functionName As String)
+  overload: SilverCraft.CSCore.SoundOut.AL.ALException.Try*
+  nameWithType.vb: ALException.Try(Action, String)
+  fullName.vb: SilverCraft.CSCore.SoundOut.AL.ALException.Try(System.Action, String)
+  name.vb: Try(Action, String)
+- uid: SilverCraft.CSCore.SoundOut.AL.ALException.Try(System.Action,System.String,System.IntPtr)
+  commentId: M:SilverCraft.CSCore.SoundOut.AL.ALException.Try(System.Action,System.String,System.IntPtr)
+  id: Try(System.Action,System.String,System.IntPtr)
+  parent: SilverCraft.CSCore.SoundOut.AL.ALException
+  langs:
+  - csharp
+  - vb
+  name: Try(Action, string, nint)
+  nameWithType: ALException.Try(Action, string, nint)
+  fullName: SilverCraft.CSCore.SoundOut.AL.ALException.Try(System.Action, string, nint)
+  type: Method
+  source:
+    remote:
+      path: SilverCraft.CSCore/SoundOut/AL/ALException.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: Try
+    path: ../SilverCraft.CSCore/SoundOut/AL/ALException.cs
+    startLine: 60
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.SoundOut.AL
+  summary: >-
+    Resets the OpenAL Error-Stack, executes the <code class="paramref">alAction</code> and checks
+
+    for an OpenAL Error afterwards. If an error occurs, the an <xref href="SilverCraft.CSCore.SoundOut.AL.ALException" data-throw-if-not-resolved="false"></xref>
+
+    gets thrown.
+  example: []
+  syntax:
+    content: public static void Try(Action alAction, string functionName, nint contextHandle)
+    parameters:
+    - id: alAction
+      type: System.Action
+      description: The action to execute.
+    - id: functionName
+      type: System.String
+      description: The name of the OpenAL function which gets executed by the <code class="paramref">alAction</code>.
+    - id: contextHandle
+      type: System.IntPtr
+      description: The handle of the <xref href="SilverCraft.CSCore.SoundOut.AL.ALContext" data-throw-if-not-resolved="false"></xref> if the <code class="paramref">functionName</code> starts with "alc".
+    content.vb: Public Shared Sub [Try](alAction As Action, functionName As String, contextHandle As IntPtr)
+  overload: SilverCraft.CSCore.SoundOut.AL.ALException.Try*
+  nameWithType.vb: ALException.Try(Action, String, IntPtr)
+  fullName.vb: SilverCraft.CSCore.SoundOut.AL.ALException.Try(System.Action, String, System.IntPtr)
+  name.vb: Try(Action, String, IntPtr)
+- uid: SilverCraft.CSCore.SoundOut.AL.ALException.#ctor(System.String)
+  commentId: M:SilverCraft.CSCore.SoundOut.AL.ALException.#ctor(System.String)
+  id: '#ctor(System.String)'
+  parent: SilverCraft.CSCore.SoundOut.AL.ALException
+  langs:
+  - csharp
+  - vb
+  name: ALException(string)
+  nameWithType: ALException.ALException(string)
+  fullName: SilverCraft.CSCore.SoundOut.AL.ALException.ALException(string)
+  type: Constructor
+  source:
+    remote:
+      path: SilverCraft.CSCore/SoundOut/AL/ALException.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: .ctor
+    path: ../SilverCraft.CSCore/SoundOut/AL/ALException.cs
+    startLine: 83
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.SoundOut.AL
+  summary: Initializes a new instance of the <xref href="SilverCraft.CSCore.SoundOut.AL.ALException" data-throw-if-not-resolved="false"></xref> class.
+  example: []
+  syntax:
+    content: public ALException(string message)
+    parameters:
+    - id: message
+      type: System.String
+      description: The message that describes the error.
+    content.vb: Public Sub New(message As String)
+  overload: SilverCraft.CSCore.SoundOut.AL.ALException.#ctor*
+  nameWithType.vb: ALException.New(String)
+  fullName.vb: SilverCraft.CSCore.SoundOut.AL.ALException.New(String)
+  name.vb: New(String)
+- uid: SilverCraft.CSCore.SoundOut.AL.ALException.#ctor(System.String,SilverCraft.CSCore.SoundOut.AL.ALErrorCode)
+  commentId: M:SilverCraft.CSCore.SoundOut.AL.ALException.#ctor(System.String,SilverCraft.CSCore.SoundOut.AL.ALErrorCode)
+  id: '#ctor(System.String,SilverCraft.CSCore.SoundOut.AL.ALErrorCode)'
+  parent: SilverCraft.CSCore.SoundOut.AL.ALException
+  langs:
+  - csharp
+  - vb
+  name: ALException(string, ALErrorCode)
+  nameWithType: ALException.ALException(string, ALErrorCode)
+  fullName: SilverCraft.CSCore.SoundOut.AL.ALException.ALException(string, SilverCraft.CSCore.SoundOut.AL.ALErrorCode)
+  type: Constructor
+  source:
+    remote:
+      path: SilverCraft.CSCore/SoundOut/AL/ALException.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: .ctor
+    path: ../SilverCraft.CSCore/SoundOut/AL/ALException.cs
+    startLine: 93
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.SoundOut.AL
+  summary: Initializes a new instance of the <xref href="SilverCraft.CSCore.SoundOut.AL.ALException" data-throw-if-not-resolved="false"></xref> class.
+  example: []
+  syntax:
+    content: public ALException(string message, ALErrorCode errorCode)
+    parameters:
+    - id: message
+      type: System.String
+      description: The message that describes the error.
+    - id: errorCode
+      type: SilverCraft.CSCore.SoundOut.AL.ALErrorCode
+    content.vb: Public Sub New(message As String, errorCode As ALErrorCode)
+  overload: SilverCraft.CSCore.SoundOut.AL.ALException.#ctor*
+  nameWithType.vb: ALException.New(String, ALErrorCode)
+  fullName.vb: SilverCraft.CSCore.SoundOut.AL.ALException.New(String, SilverCraft.CSCore.SoundOut.AL.ALErrorCode)
+  name.vb: New(String, ALErrorCode)
+- uid: SilverCraft.CSCore.SoundOut.AL.ALException.LastError
+  commentId: P:SilverCraft.CSCore.SoundOut.AL.ALException.LastError
+  id: LastError
+  parent: SilverCraft.CSCore.SoundOut.AL.ALException
+  langs:
+  - csharp
+  - vb
+  name: LastError
+  nameWithType: ALException.LastError
+  fullName: SilverCraft.CSCore.SoundOut.AL.ALException.LastError
+  type: Property
+  source:
+    remote:
+      path: SilverCraft.CSCore/SoundOut/AL/ALException.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: LastError
+    path: ../SilverCraft.CSCore/SoundOut/AL/ALException.cs
+    startLine: 102
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.SoundOut.AL
+  summary: Gets the last OpenAL Error.
+  example: []
+  syntax:
+    content: public ALErrorCode LastError { get; }
+    parameters: []
+    return:
+      type: SilverCraft.CSCore.SoundOut.AL.ALErrorCode
+    content.vb: Public Property LastError As ALErrorCode
+  overload: SilverCraft.CSCore.SoundOut.AL.ALException.LastError*
+references:
+- uid: SilverCraft.CSCore.SoundOut.AL
+  commentId: N:SilverCraft.CSCore.SoundOut.AL
+  href: SilverCraft.html
+  name: SilverCraft.CSCore.SoundOut.AL
+  nameWithType: SilverCraft.CSCore.SoundOut.AL
+  fullName: SilverCraft.CSCore.SoundOut.AL
+  spec.csharp:
+  - uid: SilverCraft
+    name: SilverCraft
+    href: SilverCraft.html
+  - name: .
+  - uid: SilverCraft.CSCore
+    name: CSCore
+    href: SilverCraft.CSCore.html
+  - name: .
+  - uid: SilverCraft.CSCore.SoundOut
+    name: SoundOut
+    href: SilverCraft.CSCore.SoundOut.html
+  - name: .
+  - uid: SilverCraft.CSCore.SoundOut.AL
+    name: AL
+    href: SilverCraft.CSCore.SoundOut.AL.html
+  spec.vb:
+  - uid: SilverCraft
+    name: SilverCraft
+    href: SilverCraft.html
+  - name: .
+  - uid: SilverCraft.CSCore
+    name: CSCore
+    href: SilverCraft.CSCore.html
+  - name: .
+  - uid: SilverCraft.CSCore.SoundOut
+    name: SoundOut
+    href: SilverCraft.CSCore.SoundOut.html
+  - name: .
+  - uid: SilverCraft.CSCore.SoundOut.AL
+    name: AL
+    href: SilverCraft.CSCore.SoundOut.AL.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Exception
+  commentId: T:System.Exception
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.exception
+  name: Exception
+  nameWithType: Exception
+  fullName: System.Exception
+- uid: System.Runtime.Serialization.ISerializable
+  commentId: T:System.Runtime.Serialization.ISerializable
+  parent: System.Runtime.Serialization
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.runtime.serialization.iserializable
+  name: ISerializable
+  nameWithType: ISerializable
+  fullName: System.Runtime.Serialization.ISerializable
+- uid: System.Exception.GetBaseException
+  commentId: M:System.Exception.GetBaseException
+  parent: System.Exception
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.exception.getbaseexception
+  name: GetBaseException()
+  nameWithType: Exception.GetBaseException()
+  fullName: System.Exception.GetBaseException()
+  spec.csharp:
+  - uid: System.Exception.GetBaseException
+    name: GetBaseException
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.exception.getbaseexception
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Exception.GetBaseException
+    name: GetBaseException
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.exception.getbaseexception
+  - name: (
+  - name: )
+- uid: System.Exception.GetType
+  commentId: M:System.Exception.GetType
+  parent: System.Exception
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.exception.gettype
+  name: GetType()
+  nameWithType: Exception.GetType()
+  fullName: System.Exception.GetType()
+  spec.csharp:
+  - uid: System.Exception.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.exception.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Exception.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.exception.gettype
+  - name: (
+  - name: )
+- uid: System.Exception.ToString
+  commentId: M:System.Exception.ToString
+  parent: System.Exception
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.exception.tostring
+  name: ToString()
+  nameWithType: Exception.ToString()
+  fullName: System.Exception.ToString()
+  spec.csharp:
+  - uid: System.Exception.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.exception.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Exception.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.exception.tostring
+  - name: (
+  - name: )
+- uid: System.Exception.Data
+  commentId: P:System.Exception.Data
+  parent: System.Exception
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.exception.data
+  name: Data
+  nameWithType: Exception.Data
+  fullName: System.Exception.Data
+- uid: System.Exception.HelpLink
+  commentId: P:System.Exception.HelpLink
+  parent: System.Exception
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.exception.helplink
+  name: HelpLink
+  nameWithType: Exception.HelpLink
+  fullName: System.Exception.HelpLink
+- uid: System.Exception.HResult
+  commentId: P:System.Exception.HResult
+  parent: System.Exception
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.exception.hresult
+  name: HResult
+  nameWithType: Exception.HResult
+  fullName: System.Exception.HResult
+- uid: System.Exception.InnerException
+  commentId: P:System.Exception.InnerException
+  parent: System.Exception
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.exception.innerexception
+  name: InnerException
+  nameWithType: Exception.InnerException
+  fullName: System.Exception.InnerException
+- uid: System.Exception.Message
+  commentId: P:System.Exception.Message
+  parent: System.Exception
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.exception.message
+  name: Message
+  nameWithType: Exception.Message
+  fullName: System.Exception.Message
+- uid: System.Exception.Source
+  commentId: P:System.Exception.Source
+  parent: System.Exception
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.exception.source
+  name: Source
+  nameWithType: Exception.Source
+  fullName: System.Exception.Source
+- uid: System.Exception.StackTrace
+  commentId: P:System.Exception.StackTrace
+  parent: System.Exception
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.exception.stacktrace
+  name: StackTrace
+  nameWithType: Exception.StackTrace
+  fullName: System.Exception.StackTrace
+- uid: System.Exception.TargetSite
+  commentId: P:System.Exception.TargetSite
+  parent: System.Exception
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.exception.targetsite
+  name: TargetSite
+  nameWithType: Exception.TargetSite
+  fullName: System.Exception.TargetSite
+- uid: System.Exception.SerializeObjectState
+  commentId: E:System.Exception.SerializeObjectState
+  parent: System.Exception
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.exception.serializeobjectstate
+  name: SerializeObjectState
+  nameWithType: Exception.SerializeObjectState
+  fullName: System.Exception.SerializeObjectState
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: SilverCraft.CSCore.SoundOut.AL.ALException.SilverCraft.CSCore.FluentExtensions.Synchronized``2
+  commentId: M:SilverCraft.CSCore.FluentExtensions.Synchronized``2(``0)
+  parent: SilverCraft.CSCore.FluentExtensions
+  definition: SilverCraft.CSCore.FluentExtensions.Synchronized``2(``0)
+  href: SilverCraft.CSCore.FluentExtensions.html#SilverCraft_CSCore_FluentExtensions_Synchronized__2___0_
+  name: Synchronized<ALException, T>(ALException)
+  nameWithType: FluentExtensions.Synchronized<ALException, T>(ALException)
+  fullName: SilverCraft.CSCore.FluentExtensions.Synchronized<SilverCraft.CSCore.SoundOut.AL.ALException, T>(SilverCraft.CSCore.SoundOut.AL.ALException)
+  nameWithType.vb: FluentExtensions.Synchronized(Of ALException, T)(ALException)
+  fullName.vb: SilverCraft.CSCore.FluentExtensions.Synchronized(Of SilverCraft.CSCore.SoundOut.AL.ALException, T)(SilverCraft.CSCore.SoundOut.AL.ALException)
+  name.vb: Synchronized(Of ALException, T)(ALException)
+  spec.csharp:
+  - uid: SilverCraft.CSCore.FluentExtensions.Synchronized``2(SilverCraft.CSCore.SoundOut.AL.ALException)
+    name: Synchronized
+    href: SilverCraft.CSCore.FluentExtensions.html#SilverCraft_CSCore_FluentExtensions_Synchronized__2___0_
+  - name: <
+  - uid: SilverCraft.CSCore.SoundOut.AL.ALException
+    name: ALException
+    href: SilverCraft.CSCore.SoundOut.AL.ALException.html
+  - name: ','
+  - name: " "
+  - name: T
+  - name: '>'
+  - name: (
+  - uid: SilverCraft.CSCore.SoundOut.AL.ALException
+    name: ALException
+    href: SilverCraft.CSCore.SoundOut.AL.ALException.html
+  - name: )
+  spec.vb:
+  - uid: SilverCraft.CSCore.FluentExtensions.Synchronized``2(SilverCraft.CSCore.SoundOut.AL.ALException)
+    name: Synchronized
+    href: SilverCraft.CSCore.FluentExtensions.html#SilverCraft_CSCore_FluentExtensions_Synchronized__2___0_
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: SilverCraft.CSCore.SoundOut.AL.ALException
+    name: ALException
+    href: SilverCraft.CSCore.SoundOut.AL.ALException.html
+  - name: ','
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: SilverCraft.CSCore.SoundOut.AL.ALException
+    name: ALException
+    href: SilverCraft.CSCore.SoundOut.AL.ALException.html
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Runtime.Serialization
+  commentId: N:System.Runtime.Serialization
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Runtime.Serialization
+  nameWithType: System.Runtime.Serialization
+  fullName: System.Runtime.Serialization
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Runtime
+    name: Runtime
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime
+  - name: .
+  - uid: System.Runtime.Serialization
+    name: Serialization
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime.serialization
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Runtime
+    name: Runtime
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime
+  - name: .
+  - uid: System.Runtime.Serialization
+    name: Serialization
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime.serialization
+- uid: SilverCraft.CSCore.FluentExtensions.Synchronized``2(``0)
+  commentId: M:SilverCraft.CSCore.FluentExtensions.Synchronized``2(``0)
+  href: SilverCraft.CSCore.FluentExtensions.html#SilverCraft_CSCore_FluentExtensions_Synchronized__2___0_
+  name: Synchronized<TAudioSource, T>(TAudioSource)
+  nameWithType: FluentExtensions.Synchronized<TAudioSource, T>(TAudioSource)
+  fullName: SilverCraft.CSCore.FluentExtensions.Synchronized<TAudioSource, T>(TAudioSource)
+  nameWithType.vb: FluentExtensions.Synchronized(Of TAudioSource, T)(TAudioSource)
+  fullName.vb: SilverCraft.CSCore.FluentExtensions.Synchronized(Of TAudioSource, T)(TAudioSource)
+  name.vb: Synchronized(Of TAudioSource, T)(TAudioSource)
+  spec.csharp:
+  - uid: SilverCraft.CSCore.FluentExtensions.Synchronized``2(``0)
+    name: Synchronized
+    href: SilverCraft.CSCore.FluentExtensions.html#SilverCraft_CSCore_FluentExtensions_Synchronized__2___0_
+  - name: <
+  - name: TAudioSource
+  - name: ','
+  - name: " "
+  - name: T
+  - name: '>'
+  - name: (
+  - name: TAudioSource
+  - name: )
+  spec.vb:
+  - uid: SilverCraft.CSCore.FluentExtensions.Synchronized``2(``0)
+    name: Synchronized
+    href: SilverCraft.CSCore.FluentExtensions.html#SilverCraft_CSCore_FluentExtensions_Synchronized__2___0_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TAudioSource
+  - name: ','
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - name: TAudioSource
+  - name: )
+- uid: SilverCraft.CSCore.FluentExtensions
+  commentId: T:SilverCraft.CSCore.FluentExtensions
+  parent: SilverCraft.CSCore
+  href: SilverCraft.CSCore.FluentExtensions.html
+  name: FluentExtensions
+  nameWithType: FluentExtensions
+  fullName: SilverCraft.CSCore.FluentExtensions
+- uid: SilverCraft.CSCore
+  commentId: N:SilverCraft.CSCore
+  href: SilverCraft.html
+  name: SilverCraft.CSCore
+  nameWithType: SilverCraft.CSCore
+  fullName: SilverCraft.CSCore
+  spec.csharp:
+  - uid: SilverCraft
+    name: SilverCraft
+    href: SilverCraft.html
+  - name: .
+  - uid: SilverCraft.CSCore
+    name: CSCore
+    href: SilverCraft.CSCore.html
+  spec.vb:
+  - uid: SilverCraft
+    name: SilverCraft
+    href: SilverCraft.html
+  - name: .
+  - uid: SilverCraft.CSCore
+    name: CSCore
+    href: SilverCraft.CSCore.html
+- uid: SilverCraft.CSCore.SoundOut.AL.ALException
+  commentId: T:SilverCraft.CSCore.SoundOut.AL.ALException
+  href: SilverCraft.CSCore.SoundOut.AL.ALException.html
+  name: ALException
+  nameWithType: ALException
+  fullName: SilverCraft.CSCore.SoundOut.AL.ALException
+- uid: SilverCraft.CSCore.SoundOut.AL.ALException.Try(System.String,System.IntPtr)
+  commentId: M:SilverCraft.CSCore.SoundOut.AL.ALException.Try(System.String,System.IntPtr)
+  isExternal: true
+  href: SilverCraft.CSCore.SoundOut.AL.ALException.html#SilverCraft_CSCore_SoundOut_AL_ALException_Try_System_String_System_IntPtr_
+  name: Try(string, nint)
+  nameWithType: ALException.Try(string, nint)
+  fullName: SilverCraft.CSCore.SoundOut.AL.ALException.Try(string, nint)
+  nameWithType.vb: ALException.Try(String, IntPtr)
+  fullName.vb: SilverCraft.CSCore.SoundOut.AL.ALException.Try(String, System.IntPtr)
+  name.vb: Try(String, IntPtr)
+  spec.csharp:
+  - uid: SilverCraft.CSCore.SoundOut.AL.ALException.Try(System.String,System.IntPtr)
+    name: Try
+    href: SilverCraft.CSCore.SoundOut.AL.ALException.html#SilverCraft_CSCore_SoundOut_AL_ALException_Try_System_String_System_IntPtr_
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.IntPtr
+    name: nint
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.intptr
+  - name: )
+  spec.vb:
+  - uid: SilverCraft.CSCore.SoundOut.AL.ALException.Try(System.String,System.IntPtr)
+    name: Try
+    href: SilverCraft.CSCore.SoundOut.AL.ALException.html#SilverCraft_CSCore_SoundOut_AL_ALException_Try_System_String_System_IntPtr_
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.IntPtr
+    name: IntPtr
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.intptr
+  - name: )
+- uid: SilverCraft.CSCore.SoundOut.AL.ALException.Try*
+  commentId: Overload:SilverCraft.CSCore.SoundOut.AL.ALException.Try
+  href: SilverCraft.CSCore.SoundOut.AL.ALException.html#SilverCraft_CSCore_SoundOut_AL_ALException_Try_System_String_
+  name: Try
+  nameWithType: ALException.Try
+  fullName: SilverCraft.CSCore.SoundOut.AL.ALException.Try
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: SilverCraft.CSCore.SoundOut.AL.ALContext
+  commentId: T:SilverCraft.CSCore.SoundOut.AL.ALContext
+  parent: SilverCraft.CSCore.SoundOut.AL
+  href: SilverCraft.CSCore.SoundOut.AL.ALContext.html
+  name: ALContext
+  nameWithType: ALContext
+  fullName: SilverCraft.CSCore.SoundOut.AL.ALContext
+- uid: System.IntPtr
+  commentId: T:System.IntPtr
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.intptr
+  name: nint
+  nameWithType: nint
+  fullName: nint
+  nameWithType.vb: IntPtr
+  fullName.vb: System.IntPtr
+  name.vb: IntPtr
+- uid: SilverCraft.CSCore.SoundOut.AL.ALException.Try(System.Action,System.String,System.IntPtr)
+  commentId: M:SilverCraft.CSCore.SoundOut.AL.ALException.Try(System.Action,System.String,System.IntPtr)
+  isExternal: true
+  href: SilverCraft.CSCore.SoundOut.AL.ALException.html#SilverCraft_CSCore_SoundOut_AL_ALException_Try_System_Action_System_String_System_IntPtr_
+  name: Try(Action, string, nint)
+  nameWithType: ALException.Try(Action, string, nint)
+  fullName: SilverCraft.CSCore.SoundOut.AL.ALException.Try(System.Action, string, nint)
+  nameWithType.vb: ALException.Try(Action, String, IntPtr)
+  fullName.vb: SilverCraft.CSCore.SoundOut.AL.ALException.Try(System.Action, String, System.IntPtr)
+  name.vb: Try(Action, String, IntPtr)
+  spec.csharp:
+  - uid: SilverCraft.CSCore.SoundOut.AL.ALException.Try(System.Action,System.String,System.IntPtr)
+    name: Try
+    href: SilverCraft.CSCore.SoundOut.AL.ALException.html#SilverCraft_CSCore_SoundOut_AL_ALException_Try_System_Action_System_String_System_IntPtr_
+  - name: (
+  - uid: System.Action
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.IntPtr
+    name: nint
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.intptr
+  - name: )
+  spec.vb:
+  - uid: SilverCraft.CSCore.SoundOut.AL.ALException.Try(System.Action,System.String,System.IntPtr)
+    name: Try
+    href: SilverCraft.CSCore.SoundOut.AL.ALException.html#SilverCraft_CSCore_SoundOut_AL_ALException_Try_System_Action_System_String_System_IntPtr_
+  - name: (
+  - uid: System.Action
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.IntPtr
+    name: IntPtr
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.intptr
+  - name: )
+- uid: System.Action
+  commentId: T:System.Action
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.action
+  name: Action
+  nameWithType: Action
+  fullName: System.Action
+- uid: SilverCraft.CSCore.SoundOut.AL.ALException.#ctor*
+  commentId: Overload:SilverCraft.CSCore.SoundOut.AL.ALException.#ctor
+  href: SilverCraft.CSCore.SoundOut.AL.ALException.html#SilverCraft_CSCore_SoundOut_AL_ALException__ctor_System_String_
+  name: ALException
+  nameWithType: ALException.ALException
+  fullName: SilverCraft.CSCore.SoundOut.AL.ALException.ALException
+  nameWithType.vb: ALException.New
+  fullName.vb: SilverCraft.CSCore.SoundOut.AL.ALException.New
+  name.vb: New
+- uid: SilverCraft.CSCore.SoundOut.AL.ALErrorCode
+  commentId: T:SilverCraft.CSCore.SoundOut.AL.ALErrorCode
+  parent: SilverCraft.CSCore.SoundOut.AL
+  href: SilverCraft.CSCore.SoundOut.AL.ALErrorCode.html
+  name: ALErrorCode
+  nameWithType: ALErrorCode
+  fullName: SilverCraft.CSCore.SoundOut.AL.ALErrorCode
+- uid: SilverCraft.CSCore.SoundOut.AL.ALException.LastError*
+  commentId: Overload:SilverCraft.CSCore.SoundOut.AL.ALException.LastError
+  href: SilverCraft.CSCore.SoundOut.AL.ALException.html#SilverCraft_CSCore_SoundOut_AL_ALException_LastError
+  name: LastError
+  nameWithType: ALException.LastError
+  fullName: SilverCraft.CSCore.SoundOut.AL.ALException.LastError

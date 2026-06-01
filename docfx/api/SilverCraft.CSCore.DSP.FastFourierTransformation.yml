@@ -1,0 +1,620 @@
+### YamlMime:ManagedReference
+items:
+- uid: SilverCraft.CSCore.DSP.FastFourierTransformation
+  commentId: T:SilverCraft.CSCore.DSP.FastFourierTransformation
+  id: FastFourierTransformation
+  parent: SilverCraft.CSCore.DSP
+  children:
+  - SilverCraft.CSCore.DSP.FastFourierTransformation.Fft(SilverCraft.CSCore.Utils.Complex[],System.Int32,SilverCraft.CSCore.DSP.FftMode)
+  - SilverCraft.CSCore.DSP.FastFourierTransformation.GetIntensity(SilverCraft.CSCore.Utils.Complex)
+  - SilverCraft.CSCore.DSP.FastFourierTransformation.HammingWindow(System.Int32,System.Int32)
+  - SilverCraft.CSCore.DSP.FastFourierTransformation.HammingWindowF(System.Int32,System.Int32)
+  langs:
+  - csharp
+  - vb
+  name: FastFourierTransformation
+  nameWithType: FastFourierTransformation
+  fullName: SilverCraft.CSCore.DSP.FastFourierTransformation
+  type: Class
+  source:
+    remote:
+      path: SilverCraft.CSCore/DSP/FastFourierTransformation.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: FastFourierTransformation
+    path: ../SilverCraft.CSCore/DSP/FastFourierTransformation.cs
+    startLine: 9
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.DSP
+  summary: Provides an Fast Fourier Transform implementation including a few utils method which are commonly used in combination with FFT (e.g. the hamming window function).
+  example: []
+  syntax:
+    content: public static class FastFourierTransformation
+    content.vb: Public Module FastFourierTransformation
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: SilverCraft.CSCore.DSP.FastFourierTransformation.GetIntensity(SilverCraft.CSCore.Utils.Complex)
+  commentId: M:SilverCraft.CSCore.DSP.FastFourierTransformation.GetIntensity(SilverCraft.CSCore.Utils.Complex)
+  id: GetIntensity(SilverCraft.CSCore.Utils.Complex)
+  parent: SilverCraft.CSCore.DSP.FastFourierTransformation
+  langs:
+  - csharp
+  - vb
+  name: GetIntensity(Complex)
+  nameWithType: FastFourierTransformation.GetIntensity(Complex)
+  fullName: SilverCraft.CSCore.DSP.FastFourierTransformation.GetIntensity(SilverCraft.CSCore.Utils.Complex)
+  type: Method
+  source:
+    remote:
+      path: SilverCraft.CSCore/DSP/FastFourierTransformation.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: GetIntensity
+    path: ../SilverCraft.CSCore/DSP/FastFourierTransformation.cs
+    startLine: 18
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.DSP
+  summary: >-
+    Obsolete. Use the <xref href="SilverCraft.CSCore.Utils.Complex.Value" data-throw-if-not-resolved="false"></xref> property instead.
+
+    <xref href="SilverCraft.CSCore.Utils.Complex.Value" data-throw-if-not-resolved="false"></xref>
+  remarks: sqrt(r² + i²)
+  example: []
+  syntax:
+    content: >-
+      [Obsolete("Use the Complex.Value property instead.")]
+
+      public static double GetIntensity(Complex c)
+    parameters:
+    - id: c
+      type: SilverCraft.CSCore.Utils.Complex
+      description: ''
+    return:
+      type: System.Double
+      description: The intensity of the complex value <code class="paramref">c</code>.
+    content.vb: >-
+      <Obsolete("Use the Complex.Value property instead.")>
+
+      Public Shared Function GetIntensity(c As Complex) As Double
+  overload: SilverCraft.CSCore.DSP.FastFourierTransformation.GetIntensity*
+  attributes:
+  - type: System.ObsoleteAttribute
+    ctor: System.ObsoleteAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Use the Complex.Value property instead.
+- uid: SilverCraft.CSCore.DSP.FastFourierTransformation.HammingWindow(System.Int32,System.Int32)
+  commentId: M:SilverCraft.CSCore.DSP.FastFourierTransformation.HammingWindow(System.Int32,System.Int32)
+  id: HammingWindow(System.Int32,System.Int32)
+  parent: SilverCraft.CSCore.DSP.FastFourierTransformation
+  langs:
+  - csharp
+  - vb
+  name: HammingWindow(int, int)
+  nameWithType: FastFourierTransformation.HammingWindow(int, int)
+  fullName: SilverCraft.CSCore.DSP.FastFourierTransformation.HammingWindow(int, int)
+  type: Method
+  source:
+    remote:
+      path: SilverCraft.CSCore/DSP/FastFourierTransformation.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: HammingWindow
+    path: ../SilverCraft.CSCore/DSP/FastFourierTransformation.cs
+    startLine: 31
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.DSP
+  summary: Implementation of the Hamming Window using double-precision floating-point numbers.
+  example: []
+  syntax:
+    content: public static double HammingWindow(int n, int N)
+    parameters:
+    - id: n
+      type: System.Int32
+      description: Current index of the input signal.
+    - id: N
+      type: System.Int32
+      description: Window width.
+    return:
+      type: System.Double
+      description: Hamming window multiplier.
+    content.vb: Public Shared Function HammingWindow(n As Integer, N As Integer) As Double
+  overload: SilverCraft.CSCore.DSP.FastFourierTransformation.HammingWindow*
+  nameWithType.vb: FastFourierTransformation.HammingWindow(Integer, Integer)
+  fullName.vb: SilverCraft.CSCore.DSP.FastFourierTransformation.HammingWindow(Integer, Integer)
+  name.vb: HammingWindow(Integer, Integer)
+- uid: SilverCraft.CSCore.DSP.FastFourierTransformation.HammingWindowF(System.Int32,System.Int32)
+  commentId: M:SilverCraft.CSCore.DSP.FastFourierTransformation.HammingWindowF(System.Int32,System.Int32)
+  id: HammingWindowF(System.Int32,System.Int32)
+  parent: SilverCraft.CSCore.DSP.FastFourierTransformation
+  langs:
+  - csharp
+  - vb
+  name: HammingWindowF(int, int)
+  nameWithType: FastFourierTransformation.HammingWindowF(int, int)
+  fullName: SilverCraft.CSCore.DSP.FastFourierTransformation.HammingWindowF(int, int)
+  type: Method
+  source:
+    remote:
+      path: SilverCraft.CSCore/DSP/FastFourierTransformation.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: HammingWindowF
+    path: ../SilverCraft.CSCore/DSP/FastFourierTransformation.cs
+    startLine: 46
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.DSP
+  summary: Hamming window implementation using single-precision floating-point numbers.
+  example: []
+  syntax:
+    content: public static float HammingWindowF(int n, int N)
+    parameters:
+    - id: n
+      type: System.Int32
+      description: Current index of the input signal.
+    - id: N
+      type: System.Int32
+      description: Window width.
+    return:
+      type: System.Single
+      description: Hamming Window multiplier.
+    content.vb: Public Shared Function HammingWindowF(n As Integer, N As Integer) As Single
+  overload: SilverCraft.CSCore.DSP.FastFourierTransformation.HammingWindowF*
+  nameWithType.vb: FastFourierTransformation.HammingWindowF(Integer, Integer)
+  fullName.vb: SilverCraft.CSCore.DSP.FastFourierTransformation.HammingWindowF(Integer, Integer)
+  name.vb: HammingWindowF(Integer, Integer)
+- uid: SilverCraft.CSCore.DSP.FastFourierTransformation.Fft(SilverCraft.CSCore.Utils.Complex[],System.Int32,SilverCraft.CSCore.DSP.FftMode)
+  commentId: M:SilverCraft.CSCore.DSP.FastFourierTransformation.Fft(SilverCraft.CSCore.Utils.Complex[],System.Int32,SilverCraft.CSCore.DSP.FftMode)
+  id: Fft(SilverCraft.CSCore.Utils.Complex[],System.Int32,SilverCraft.CSCore.DSP.FftMode)
+  parent: SilverCraft.CSCore.DSP.FastFourierTransformation
+  langs:
+  - csharp
+  - vb
+  name: Fft(Complex[], int, FftMode)
+  nameWithType: FastFourierTransformation.Fft(Complex[], int, FftMode)
+  fullName: SilverCraft.CSCore.DSP.FastFourierTransformation.Fft(SilverCraft.CSCore.Utils.Complex[], int, SilverCraft.CSCore.DSP.FftMode)
+  type: Method
+  source:
+    remote:
+      path: SilverCraft.CSCore/DSP/FastFourierTransformation.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: Fft
+    path: ../SilverCraft.CSCore/DSP/FastFourierTransformation.cs
+    startLine: 60
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.DSP
+  summary: Computes an Fast Fourier Transform.
+  example: []
+  syntax:
+    content: public static void Fft(Complex[] data, int exponent, FftMode mode = FftMode.Forward)
+    parameters:
+    - id: data
+      type: SilverCraft.CSCore.Utils.Complex[]
+      description: Array of complex numbers. This array provides the input data and is used to store the result of the FFT.
+    - id: exponent
+      type: System.Int32
+      description: The exponent n.
+    - id: mode
+      type: SilverCraft.CSCore.DSP.FftMode
+      description: The <xref href="SilverCraft.CSCore.DSP.FftMode" data-throw-if-not-resolved="false"></xref> to use. Use <xref href="SilverCraft.CSCore.DSP.FftMode.Forward" data-throw-if-not-resolved="false"></xref> as the default value.
+    content.vb: Public Shared Sub Fft(data As Complex(), exponent As Integer, mode As FftMode = FftMode.Forward)
+  overload: SilverCraft.CSCore.DSP.FastFourierTransformation.Fft*
+  nameWithType.vb: FastFourierTransformation.Fft(Complex(), Integer, FftMode)
+  fullName.vb: SilverCraft.CSCore.DSP.FastFourierTransformation.Fft(SilverCraft.CSCore.Utils.Complex(), Integer, SilverCraft.CSCore.DSP.FftMode)
+  name.vb: Fft(Complex(), Integer, FftMode)
+references:
+- uid: SilverCraft.CSCore.DSP
+  commentId: N:SilverCraft.CSCore.DSP
+  href: SilverCraft.html
+  name: SilverCraft.CSCore.DSP
+  nameWithType: SilverCraft.CSCore.DSP
+  fullName: SilverCraft.CSCore.DSP
+  spec.csharp:
+  - uid: SilverCraft
+    name: SilverCraft
+    href: SilverCraft.html
+  - name: .
+  - uid: SilverCraft.CSCore
+    name: CSCore
+    href: SilverCraft.CSCore.html
+  - name: .
+  - uid: SilverCraft.CSCore.DSP
+    name: DSP
+    href: SilverCraft.CSCore.DSP.html
+  spec.vb:
+  - uid: SilverCraft
+    name: SilverCraft
+    href: SilverCraft.html
+  - name: .
+  - uid: SilverCraft.CSCore
+    name: CSCore
+    href: SilverCraft.CSCore.html
+  - name: .
+  - uid: SilverCraft.CSCore.DSP
+    name: DSP
+    href: SilverCraft.CSCore.DSP.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: SilverCraft.CSCore.Utils.Complex.Value
+  commentId: P:SilverCraft.CSCore.Utils.Complex.Value
+  href: SilverCraft.CSCore.Utils.Complex.html#SilverCraft_CSCore_Utils_Complex_Value
+  name: Value
+  nameWithType: Complex.Value
+  fullName: SilverCraft.CSCore.Utils.Complex.Value
+- uid: SilverCraft.CSCore.DSP.FastFourierTransformation.GetIntensity*
+  commentId: Overload:SilverCraft.CSCore.DSP.FastFourierTransformation.GetIntensity
+  href: SilverCraft.CSCore.DSP.FastFourierTransformation.html#SilverCraft_CSCore_DSP_FastFourierTransformation_GetIntensity_SilverCraft_CSCore_Utils_Complex_
+  name: GetIntensity
+  nameWithType: FastFourierTransformation.GetIntensity
+  fullName: SilverCraft.CSCore.DSP.FastFourierTransformation.GetIntensity
+- uid: SilverCraft.CSCore.Utils.Complex
+  commentId: T:SilverCraft.CSCore.Utils.Complex
+  parent: SilverCraft.CSCore.Utils
+  href: SilverCraft.CSCore.Utils.Complex.html
+  name: Complex
+  nameWithType: Complex
+  fullName: SilverCraft.CSCore.Utils.Complex
+- uid: System.Double
+  commentId: T:System.Double
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.double
+  name: double
+  nameWithType: double
+  fullName: double
+  nameWithType.vb: Double
+  fullName.vb: Double
+  name.vb: Double
+- uid: SilverCraft.CSCore.Utils
+  commentId: N:SilverCraft.CSCore.Utils
+  href: SilverCraft.html
+  name: SilverCraft.CSCore.Utils
+  nameWithType: SilverCraft.CSCore.Utils
+  fullName: SilverCraft.CSCore.Utils
+  spec.csharp:
+  - uid: SilverCraft
+    name: SilverCraft
+    href: SilverCraft.html
+  - name: .
+  - uid: SilverCraft.CSCore
+    name: CSCore
+    href: SilverCraft.CSCore.html
+  - name: .
+  - uid: SilverCraft.CSCore.Utils
+    name: Utils
+    href: SilverCraft.CSCore.Utils.html
+  spec.vb:
+  - uid: SilverCraft
+    name: SilverCraft
+    href: SilverCraft.html
+  - name: .
+  - uid: SilverCraft.CSCore
+    name: CSCore
+    href: SilverCraft.CSCore.html
+  - name: .
+  - uid: SilverCraft.CSCore.Utils
+    name: Utils
+    href: SilverCraft.CSCore.Utils.html
+- uid: SilverCraft.CSCore.DSP.FastFourierTransformation.HammingWindow*
+  commentId: Overload:SilverCraft.CSCore.DSP.FastFourierTransformation.HammingWindow
+  href: SilverCraft.CSCore.DSP.FastFourierTransformation.html#SilverCraft_CSCore_DSP_FastFourierTransformation_HammingWindow_System_Int32_System_Int32_
+  name: HammingWindow
+  nameWithType: FastFourierTransformation.HammingWindow
+  fullName: SilverCraft.CSCore.DSP.FastFourierTransformation.HammingWindow
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: SilverCraft.CSCore.DSP.FastFourierTransformation.HammingWindowF*
+  commentId: Overload:SilverCraft.CSCore.DSP.FastFourierTransformation.HammingWindowF
+  href: SilverCraft.CSCore.DSP.FastFourierTransformation.html#SilverCraft_CSCore_DSP_FastFourierTransformation_HammingWindowF_System_Int32_System_Int32_
+  name: HammingWindowF
+  nameWithType: FastFourierTransformation.HammingWindowF
+  fullName: SilverCraft.CSCore.DSP.FastFourierTransformation.HammingWindowF
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.single
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single
+- uid: SilverCraft.CSCore.DSP.FftMode
+  commentId: T:SilverCraft.CSCore.DSP.FftMode
+  parent: SilverCraft.CSCore.DSP
+  href: SilverCraft.CSCore.DSP.FftMode.html
+  name: FftMode
+  nameWithType: FftMode
+  fullName: SilverCraft.CSCore.DSP.FftMode
+- uid: SilverCraft.CSCore.DSP.FftMode.Forward
+  commentId: F:SilverCraft.CSCore.DSP.FftMode.Forward
+  href: SilverCraft.CSCore.DSP.FftMode.html#SilverCraft_CSCore_DSP_FftMode_Forward
+  name: Forward
+  nameWithType: FftMode.Forward
+  fullName: SilverCraft.CSCore.DSP.FftMode.Forward
+- uid: SilverCraft.CSCore.DSP.FastFourierTransformation.Fft*
+  commentId: Overload:SilverCraft.CSCore.DSP.FastFourierTransformation.Fft
+  href: SilverCraft.CSCore.DSP.FastFourierTransformation.html#SilverCraft_CSCore_DSP_FastFourierTransformation_Fft_SilverCraft_CSCore_Utils_Complex___System_Int32_SilverCraft_CSCore_DSP_FftMode_
+  name: Fft
+  nameWithType: FastFourierTransformation.Fft
+  fullName: SilverCraft.CSCore.DSP.FastFourierTransformation.Fft
+- uid: SilverCraft.CSCore.Utils.Complex[]
+  isExternal: true
+  href: SilverCraft.CSCore.Utils.Complex.html
+  name: Complex[]
+  nameWithType: Complex[]
+  fullName: SilverCraft.CSCore.Utils.Complex[]
+  nameWithType.vb: Complex()
+  fullName.vb: SilverCraft.CSCore.Utils.Complex()
+  name.vb: Complex()
+  spec.csharp:
+  - uid: SilverCraft.CSCore.Utils.Complex
+    name: Complex
+    href: SilverCraft.CSCore.Utils.Complex.html
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: SilverCraft.CSCore.Utils.Complex
+    name: Complex
+    href: SilverCraft.CSCore.Utils.Complex.html
+  - name: (
+  - name: )

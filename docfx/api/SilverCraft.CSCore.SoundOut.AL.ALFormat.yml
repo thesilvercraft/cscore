@@ -1,0 +1,975 @@
+### YamlMime:ManagedReference
+items:
+- uid: SilverCraft.CSCore.SoundOut.AL.ALFormat
+  commentId: T:SilverCraft.CSCore.SoundOut.AL.ALFormat
+  id: ALFormat
+  parent: SilverCraft.CSCore.SoundOut.AL
+  children:
+  - SilverCraft.CSCore.SoundOut.AL.ALFormat.Mono16Bit
+  - SilverCraft.CSCore.SoundOut.AL.ALFormat.Mono8Bit
+  - SilverCraft.CSCore.SoundOut.AL.ALFormat.MonoALaw
+  - SilverCraft.CSCore.SoundOut.AL.ALFormat.MonoDouble
+  - SilverCraft.CSCore.SoundOut.AL.ALFormat.MonoFloat32Bit
+  - SilverCraft.CSCore.SoundOut.AL.ALFormat.MonoIma4
+  - SilverCraft.CSCore.SoundOut.AL.ALFormat.MonoMuLaw
+  - SilverCraft.CSCore.SoundOut.AL.ALFormat.Mp3
+  - SilverCraft.CSCore.SoundOut.AL.ALFormat.Multi51Chn16Bit
+  - SilverCraft.CSCore.SoundOut.AL.ALFormat.Multi51Chn32Bit
+  - SilverCraft.CSCore.SoundOut.AL.ALFormat.Multi51Chn8Bit
+  - SilverCraft.CSCore.SoundOut.AL.ALFormat.Multi61Chn16Bit
+  - SilverCraft.CSCore.SoundOut.AL.ALFormat.Multi61Chn32Bit
+  - SilverCraft.CSCore.SoundOut.AL.ALFormat.Multi61Chn8Bit
+  - SilverCraft.CSCore.SoundOut.AL.ALFormat.Multi71Chn16Bit
+  - SilverCraft.CSCore.SoundOut.AL.ALFormat.Multi71Chn32Bit
+  - SilverCraft.CSCore.SoundOut.AL.ALFormat.Multi71Chn8Bit
+  - SilverCraft.CSCore.SoundOut.AL.ALFormat.MultiQuad16Bit
+  - SilverCraft.CSCore.SoundOut.AL.ALFormat.MultiQuad32Bit
+  - SilverCraft.CSCore.SoundOut.AL.ALFormat.MultiQuad8Bit
+  - SilverCraft.CSCore.SoundOut.AL.ALFormat.MultiRear16Bit
+  - SilverCraft.CSCore.SoundOut.AL.ALFormat.MultiRear32Bit
+  - SilverCraft.CSCore.SoundOut.AL.ALFormat.MultiRear8Bit
+  - SilverCraft.CSCore.SoundOut.AL.ALFormat.Stereo16Bit
+  - SilverCraft.CSCore.SoundOut.AL.ALFormat.Stereo8Bit
+  - SilverCraft.CSCore.SoundOut.AL.ALFormat.StereoALaw
+  - SilverCraft.CSCore.SoundOut.AL.ALFormat.StereoDouble
+  - SilverCraft.CSCore.SoundOut.AL.ALFormat.StereoFloat32Bit
+  - SilverCraft.CSCore.SoundOut.AL.ALFormat.StereoIma4
+  - SilverCraft.CSCore.SoundOut.AL.ALFormat.StereoMuLaw
+  - SilverCraft.CSCore.SoundOut.AL.ALFormat.Vorbis
+  langs:
+  - csharp
+  - vb
+  name: ALFormat
+  nameWithType: ALFormat
+  fullName: SilverCraft.CSCore.SoundOut.AL.ALFormat
+  type: Enum
+  source:
+    remote:
+      path: SilverCraft.CSCore/SoundOut/AL/ALFormat.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: ALFormat
+    path: ../SilverCraft.CSCore/SoundOut/AL/ALFormat.cs
+    startLine: 6
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.SoundOut.AL
+  summary: Defines different OpenAL formats.
+  example: []
+  syntax:
+    content: public enum ALFormat
+    content.vb: Public Enum ALFormat
+- uid: SilverCraft.CSCore.SoundOut.AL.ALFormat.Mono8Bit
+  commentId: F:SilverCraft.CSCore.SoundOut.AL.ALFormat.Mono8Bit
+  id: Mono8Bit
+  parent: SilverCraft.CSCore.SoundOut.AL.ALFormat
+  langs:
+  - csharp
+  - vb
+  name: Mono8Bit
+  nameWithType: ALFormat.Mono8Bit
+  fullName: SilverCraft.CSCore.SoundOut.AL.ALFormat.Mono8Bit
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/SoundOut/AL/ALFormat.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: Mono8Bit
+    path: ../SilverCraft.CSCore/SoundOut/AL/ALFormat.cs
+    startLine: 9
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.SoundOut.AL
+  summary: 1 Channel, 8 bits per sample.
+  example: []
+  syntax:
+    content: Mono8Bit = 4352
+    return:
+      type: SilverCraft.CSCore.SoundOut.AL.ALFormat
+- uid: SilverCraft.CSCore.SoundOut.AL.ALFormat.Mono16Bit
+  commentId: F:SilverCraft.CSCore.SoundOut.AL.ALFormat.Mono16Bit
+  id: Mono16Bit
+  parent: SilverCraft.CSCore.SoundOut.AL.ALFormat
+  langs:
+  - csharp
+  - vb
+  name: Mono16Bit
+  nameWithType: ALFormat.Mono16Bit
+  fullName: SilverCraft.CSCore.SoundOut.AL.ALFormat.Mono16Bit
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/SoundOut/AL/ALFormat.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: Mono16Bit
+    path: ../SilverCraft.CSCore/SoundOut/AL/ALFormat.cs
+    startLine: 12
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.SoundOut.AL
+  summary: 1 Channel, 16 bits per sample.
+  example: []
+  syntax:
+    content: Mono16Bit = 4353
+    return:
+      type: SilverCraft.CSCore.SoundOut.AL.ALFormat
+- uid: SilverCraft.CSCore.SoundOut.AL.ALFormat.Stereo8Bit
+  commentId: F:SilverCraft.CSCore.SoundOut.AL.ALFormat.Stereo8Bit
+  id: Stereo8Bit
+  parent: SilverCraft.CSCore.SoundOut.AL.ALFormat
+  langs:
+  - csharp
+  - vb
+  name: Stereo8Bit
+  nameWithType: ALFormat.Stereo8Bit
+  fullName: SilverCraft.CSCore.SoundOut.AL.ALFormat.Stereo8Bit
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/SoundOut/AL/ALFormat.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: Stereo8Bit
+    path: ../SilverCraft.CSCore/SoundOut/AL/ALFormat.cs
+    startLine: 15
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.SoundOut.AL
+  summary: 2 Channels, 8 bits per sample each.
+  example: []
+  syntax:
+    content: Stereo8Bit = 4354
+    return:
+      type: SilverCraft.CSCore.SoundOut.AL.ALFormat
+- uid: SilverCraft.CSCore.SoundOut.AL.ALFormat.Stereo16Bit
+  commentId: F:SilverCraft.CSCore.SoundOut.AL.ALFormat.Stereo16Bit
+  id: Stereo16Bit
+  parent: SilverCraft.CSCore.SoundOut.AL.ALFormat
+  langs:
+  - csharp
+  - vb
+  name: Stereo16Bit
+  nameWithType: ALFormat.Stereo16Bit
+  fullName: SilverCraft.CSCore.SoundOut.AL.ALFormat.Stereo16Bit
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/SoundOut/AL/ALFormat.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: Stereo16Bit
+    path: ../SilverCraft.CSCore/SoundOut/AL/ALFormat.cs
+    startLine: 18
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.SoundOut.AL
+  summary: 2 Channels, 16 bits per sample each.
+  example: []
+  syntax:
+    content: Stereo16Bit = 4355
+    return:
+      type: SilverCraft.CSCore.SoundOut.AL.ALFormat
+- uid: SilverCraft.CSCore.SoundOut.AL.ALFormat.MonoALaw
+  commentId: F:SilverCraft.CSCore.SoundOut.AL.ALFormat.MonoALaw
+  id: MonoALaw
+  parent: SilverCraft.CSCore.SoundOut.AL.ALFormat
+  langs:
+  - csharp
+  - vb
+  name: MonoALaw
+  nameWithType: ALFormat.MonoALaw
+  fullName: SilverCraft.CSCore.SoundOut.AL.ALFormat.MonoALaw
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/SoundOut/AL/ALFormat.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: MonoALaw
+    path: ../SilverCraft.CSCore/SoundOut/AL/ALFormat.cs
+    startLine: 21
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.SoundOut.AL
+  summary: '1 Channel, A-law encoded data. Requires Extension: AL_EXT_ALAW'
+  example: []
+  syntax:
+    content: MonoALaw = 65558
+    return:
+      type: SilverCraft.CSCore.SoundOut.AL.ALFormat
+- uid: SilverCraft.CSCore.SoundOut.AL.ALFormat.StereoALaw
+  commentId: F:SilverCraft.CSCore.SoundOut.AL.ALFormat.StereoALaw
+  id: StereoALaw
+  parent: SilverCraft.CSCore.SoundOut.AL.ALFormat
+  langs:
+  - csharp
+  - vb
+  name: StereoALaw
+  nameWithType: ALFormat.StereoALaw
+  fullName: SilverCraft.CSCore.SoundOut.AL.ALFormat.StereoALaw
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/SoundOut/AL/ALFormat.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: StereoALaw
+    path: ../SilverCraft.CSCore/SoundOut/AL/ALFormat.cs
+    startLine: 24
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.SoundOut.AL
+  summary: '2 Channels, A-law encoded data. Requires Extension: AL_EXT_ALAW'
+  example: []
+  syntax:
+    content: StereoALaw = 65559
+    return:
+      type: SilverCraft.CSCore.SoundOut.AL.ALFormat
+- uid: SilverCraft.CSCore.SoundOut.AL.ALFormat.MonoMuLaw
+  commentId: F:SilverCraft.CSCore.SoundOut.AL.ALFormat.MonoMuLaw
+  id: MonoMuLaw
+  parent: SilverCraft.CSCore.SoundOut.AL.ALFormat
+  langs:
+  - csharp
+  - vb
+  name: MonoMuLaw
+  nameWithType: ALFormat.MonoMuLaw
+  fullName: SilverCraft.CSCore.SoundOut.AL.ALFormat.MonoMuLaw
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/SoundOut/AL/ALFormat.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: MonoMuLaw
+    path: ../SilverCraft.CSCore/SoundOut/AL/ALFormat.cs
+    startLine: 27
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.SoundOut.AL
+  summary: '1 Channel, µ-law encoded data. Requires Extension: AL_EXT_MULAW'
+  example: []
+  syntax:
+    content: MonoMuLaw = 65556
+    return:
+      type: SilverCraft.CSCore.SoundOut.AL.ALFormat
+- uid: SilverCraft.CSCore.SoundOut.AL.ALFormat.StereoMuLaw
+  commentId: F:SilverCraft.CSCore.SoundOut.AL.ALFormat.StereoMuLaw
+  id: StereoMuLaw
+  parent: SilverCraft.CSCore.SoundOut.AL.ALFormat
+  langs:
+  - csharp
+  - vb
+  name: StereoMuLaw
+  nameWithType: ALFormat.StereoMuLaw
+  fullName: SilverCraft.CSCore.SoundOut.AL.ALFormat.StereoMuLaw
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/SoundOut/AL/ALFormat.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: StereoMuLaw
+    path: ../SilverCraft.CSCore/SoundOut/AL/ALFormat.cs
+    startLine: 30
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.SoundOut.AL
+  summary: '2 Channels, µ-law encoded data. Requires Extension: AL_EXT_MULAW'
+  example: []
+  syntax:
+    content: StereoMuLaw = 65557
+    return:
+      type: SilverCraft.CSCore.SoundOut.AL.ALFormat
+- uid: SilverCraft.CSCore.SoundOut.AL.ALFormat.Vorbis
+  commentId: F:SilverCraft.CSCore.SoundOut.AL.ALFormat.Vorbis
+  id: Vorbis
+  parent: SilverCraft.CSCore.SoundOut.AL.ALFormat
+  langs:
+  - csharp
+  - vb
+  name: Vorbis
+  nameWithType: ALFormat.Vorbis
+  fullName: SilverCraft.CSCore.SoundOut.AL.ALFormat.Vorbis
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/SoundOut/AL/ALFormat.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: Vorbis
+    path: ../SilverCraft.CSCore/SoundOut/AL/ALFormat.cs
+    startLine: 33
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.SoundOut.AL
+  summary: 'Ogg Vorbis encoded data. Requires Extension: AL_EXT_vorbis'
+  example: []
+  syntax:
+    content: Vorbis = 65539
+    return:
+      type: SilverCraft.CSCore.SoundOut.AL.ALFormat
+- uid: SilverCraft.CSCore.SoundOut.AL.ALFormat.Mp3
+  commentId: F:SilverCraft.CSCore.SoundOut.AL.ALFormat.Mp3
+  id: Mp3
+  parent: SilverCraft.CSCore.SoundOut.AL.ALFormat
+  langs:
+  - csharp
+  - vb
+  name: Mp3
+  nameWithType: ALFormat.Mp3
+  fullName: SilverCraft.CSCore.SoundOut.AL.ALFormat.Mp3
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/SoundOut/AL/ALFormat.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: Mp3
+    path: ../SilverCraft.CSCore/SoundOut/AL/ALFormat.cs
+    startLine: 36
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.SoundOut.AL
+  summary: 'MP3 encoded data. Requires Extension: AL_EXT_mp3'
+  example: []
+  syntax:
+    content: Mp3 = 65568
+    return:
+      type: SilverCraft.CSCore.SoundOut.AL.ALFormat
+- uid: SilverCraft.CSCore.SoundOut.AL.ALFormat.MonoIma4
+  commentId: F:SilverCraft.CSCore.SoundOut.AL.ALFormat.MonoIma4
+  id: MonoIma4
+  parent: SilverCraft.CSCore.SoundOut.AL.ALFormat
+  langs:
+  - csharp
+  - vb
+  name: MonoIma4
+  nameWithType: ALFormat.MonoIma4
+  fullName: SilverCraft.CSCore.SoundOut.AL.ALFormat.MonoIma4
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/SoundOut/AL/ALFormat.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: MonoIma4
+    path: ../SilverCraft.CSCore/SoundOut/AL/ALFormat.cs
+    startLine: 39
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.SoundOut.AL
+  summary: '1 Channel, IMA4 ADPCM encoded data. Requires Extension: AL_EXT_IMA4'
+  example: []
+  syntax:
+    content: MonoIma4 = 4864
+    return:
+      type: SilverCraft.CSCore.SoundOut.AL.ALFormat
+- uid: SilverCraft.CSCore.SoundOut.AL.ALFormat.StereoIma4
+  commentId: F:SilverCraft.CSCore.SoundOut.AL.ALFormat.StereoIma4
+  id: StereoIma4
+  parent: SilverCraft.CSCore.SoundOut.AL.ALFormat
+  langs:
+  - csharp
+  - vb
+  name: StereoIma4
+  nameWithType: ALFormat.StereoIma4
+  fullName: SilverCraft.CSCore.SoundOut.AL.ALFormat.StereoIma4
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/SoundOut/AL/ALFormat.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: StereoIma4
+    path: ../SilverCraft.CSCore/SoundOut/AL/ALFormat.cs
+    startLine: 42
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.SoundOut.AL
+  summary: '2 Channels, IMA4 ADPCM encoded data. Requires Extension: AL_EXT_IMA4'
+  example: []
+  syntax:
+    content: StereoIma4 = 4865
+    return:
+      type: SilverCraft.CSCore.SoundOut.AL.ALFormat
+- uid: SilverCraft.CSCore.SoundOut.AL.ALFormat.MonoFloat32Bit
+  commentId: F:SilverCraft.CSCore.SoundOut.AL.ALFormat.MonoFloat32Bit
+  id: MonoFloat32Bit
+  parent: SilverCraft.CSCore.SoundOut.AL.ALFormat
+  langs:
+  - csharp
+  - vb
+  name: MonoFloat32Bit
+  nameWithType: ALFormat.MonoFloat32Bit
+  fullName: SilverCraft.CSCore.SoundOut.AL.ALFormat.MonoFloat32Bit
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/SoundOut/AL/ALFormat.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: MonoFloat32Bit
+    path: ../SilverCraft.CSCore/SoundOut/AL/ALFormat.cs
+    startLine: 45
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.SoundOut.AL
+  summary: '1 Channel, single-precision floating-point data. Requires Extension: AL_EXT_float32'
+  example: []
+  syntax:
+    content: MonoFloat32Bit = 65552
+    return:
+      type: SilverCraft.CSCore.SoundOut.AL.ALFormat
+- uid: SilverCraft.CSCore.SoundOut.AL.ALFormat.StereoFloat32Bit
+  commentId: F:SilverCraft.CSCore.SoundOut.AL.ALFormat.StereoFloat32Bit
+  id: StereoFloat32Bit
+  parent: SilverCraft.CSCore.SoundOut.AL.ALFormat
+  langs:
+  - csharp
+  - vb
+  name: StereoFloat32Bit
+  nameWithType: ALFormat.StereoFloat32Bit
+  fullName: SilverCraft.CSCore.SoundOut.AL.ALFormat.StereoFloat32Bit
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/SoundOut/AL/ALFormat.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: StereoFloat32Bit
+    path: ../SilverCraft.CSCore/SoundOut/AL/ALFormat.cs
+    startLine: 48
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.SoundOut.AL
+  summary: '2 Channels, single-precision floating-point data. Requires Extension: AL_EXT_float32'
+  example: []
+  syntax:
+    content: StereoFloat32Bit = 65553
+    return:
+      type: SilverCraft.CSCore.SoundOut.AL.ALFormat
+- uid: SilverCraft.CSCore.SoundOut.AL.ALFormat.MonoDouble
+  commentId: F:SilverCraft.CSCore.SoundOut.AL.ALFormat.MonoDouble
+  id: MonoDouble
+  parent: SilverCraft.CSCore.SoundOut.AL.ALFormat
+  langs:
+  - csharp
+  - vb
+  name: MonoDouble
+  nameWithType: ALFormat.MonoDouble
+  fullName: SilverCraft.CSCore.SoundOut.AL.ALFormat.MonoDouble
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/SoundOut/AL/ALFormat.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: MonoDouble
+    path: ../SilverCraft.CSCore/SoundOut/AL/ALFormat.cs
+    startLine: 51
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.SoundOut.AL
+  summary: '1 Channel, double-precision floating-point data. Requires Extension: AL_EXT_double'
+  example: []
+  syntax:
+    content: MonoDouble = 65554
+    return:
+      type: SilverCraft.CSCore.SoundOut.AL.ALFormat
+- uid: SilverCraft.CSCore.SoundOut.AL.ALFormat.StereoDouble
+  commentId: F:SilverCraft.CSCore.SoundOut.AL.ALFormat.StereoDouble
+  id: StereoDouble
+  parent: SilverCraft.CSCore.SoundOut.AL.ALFormat
+  langs:
+  - csharp
+  - vb
+  name: StereoDouble
+  nameWithType: ALFormat.StereoDouble
+  fullName: SilverCraft.CSCore.SoundOut.AL.ALFormat.StereoDouble
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/SoundOut/AL/ALFormat.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: StereoDouble
+    path: ../SilverCraft.CSCore/SoundOut/AL/ALFormat.cs
+    startLine: 54
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.SoundOut.AL
+  summary: '2 Channels, double-precision floating-point data. Requires Extension: AL_EXT_double'
+  example: []
+  syntax:
+    content: StereoDouble = 65555
+    return:
+      type: SilverCraft.CSCore.SoundOut.AL.ALFormat
+- uid: SilverCraft.CSCore.SoundOut.AL.ALFormat.Multi51Chn16Bit
+  commentId: F:SilverCraft.CSCore.SoundOut.AL.ALFormat.Multi51Chn16Bit
+  id: Multi51Chn16Bit
+  parent: SilverCraft.CSCore.SoundOut.AL.ALFormat
+  langs:
+  - csharp
+  - vb
+  name: Multi51Chn16Bit
+  nameWithType: ALFormat.Multi51Chn16Bit
+  fullName: SilverCraft.CSCore.SoundOut.AL.ALFormat.Multi51Chn16Bit
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/SoundOut/AL/ALFormat.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: Multi51Chn16Bit
+    path: ../SilverCraft.CSCore/SoundOut/AL/ALFormat.cs
+    startLine: 57
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.SoundOut.AL
+  summary: 'Multichannel 5.1, 16-bit data. Requires Extension: AL_EXT_MCFORMATS'
+  example: []
+  syntax:
+    content: Multi51Chn16Bit = 4619
+    return:
+      type: SilverCraft.CSCore.SoundOut.AL.ALFormat
+- uid: SilverCraft.CSCore.SoundOut.AL.ALFormat.Multi51Chn32Bit
+  commentId: F:SilverCraft.CSCore.SoundOut.AL.ALFormat.Multi51Chn32Bit
+  id: Multi51Chn32Bit
+  parent: SilverCraft.CSCore.SoundOut.AL.ALFormat
+  langs:
+  - csharp
+  - vb
+  name: Multi51Chn32Bit
+  nameWithType: ALFormat.Multi51Chn32Bit
+  fullName: SilverCraft.CSCore.SoundOut.AL.ALFormat.Multi51Chn32Bit
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/SoundOut/AL/ALFormat.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: Multi51Chn32Bit
+    path: ../SilverCraft.CSCore/SoundOut/AL/ALFormat.cs
+    startLine: 60
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.SoundOut.AL
+  summary: 'Multichannel 5.1, 32-bit data. Requires Extension: AL_EXT_MCFORMATS'
+  example: []
+  syntax:
+    content: Multi51Chn32Bit = 4620
+    return:
+      type: SilverCraft.CSCore.SoundOut.AL.ALFormat
+- uid: SilverCraft.CSCore.SoundOut.AL.ALFormat.Multi51Chn8Bit
+  commentId: F:SilverCraft.CSCore.SoundOut.AL.ALFormat.Multi51Chn8Bit
+  id: Multi51Chn8Bit
+  parent: SilverCraft.CSCore.SoundOut.AL.ALFormat
+  langs:
+  - csharp
+  - vb
+  name: Multi51Chn8Bit
+  nameWithType: ALFormat.Multi51Chn8Bit
+  fullName: SilverCraft.CSCore.SoundOut.AL.ALFormat.Multi51Chn8Bit
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/SoundOut/AL/ALFormat.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: Multi51Chn8Bit
+    path: ../SilverCraft.CSCore/SoundOut/AL/ALFormat.cs
+    startLine: 63
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.SoundOut.AL
+  summary: 'Multichannel 5.1, 8-bit data. Requires Extension: AL_EXT_MCFORMATS'
+  example: []
+  syntax:
+    content: Multi51Chn8Bit = 4618
+    return:
+      type: SilverCraft.CSCore.SoundOut.AL.ALFormat
+- uid: SilverCraft.CSCore.SoundOut.AL.ALFormat.Multi61Chn16Bit
+  commentId: F:SilverCraft.CSCore.SoundOut.AL.ALFormat.Multi61Chn16Bit
+  id: Multi61Chn16Bit
+  parent: SilverCraft.CSCore.SoundOut.AL.ALFormat
+  langs:
+  - csharp
+  - vb
+  name: Multi61Chn16Bit
+  nameWithType: ALFormat.Multi61Chn16Bit
+  fullName: SilverCraft.CSCore.SoundOut.AL.ALFormat.Multi61Chn16Bit
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/SoundOut/AL/ALFormat.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: Multi61Chn16Bit
+    path: ../SilverCraft.CSCore/SoundOut/AL/ALFormat.cs
+    startLine: 66
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.SoundOut.AL
+  summary: 'Multichannel 6.1, 16-bit data. Requires Extension: AL_EXT_MCFORMATS'
+  example: []
+  syntax:
+    content: Multi61Chn16Bit = 4622
+    return:
+      type: SilverCraft.CSCore.SoundOut.AL.ALFormat
+- uid: SilverCraft.CSCore.SoundOut.AL.ALFormat.Multi61Chn32Bit
+  commentId: F:SilverCraft.CSCore.SoundOut.AL.ALFormat.Multi61Chn32Bit
+  id: Multi61Chn32Bit
+  parent: SilverCraft.CSCore.SoundOut.AL.ALFormat
+  langs:
+  - csharp
+  - vb
+  name: Multi61Chn32Bit
+  nameWithType: ALFormat.Multi61Chn32Bit
+  fullName: SilverCraft.CSCore.SoundOut.AL.ALFormat.Multi61Chn32Bit
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/SoundOut/AL/ALFormat.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: Multi61Chn32Bit
+    path: ../SilverCraft.CSCore/SoundOut/AL/ALFormat.cs
+    startLine: 69
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.SoundOut.AL
+  summary: 'Multichannel 6.1, 32-bit data. Requires Extension: AL_EXT_MCFORMATS'
+  example: []
+  syntax:
+    content: Multi61Chn32Bit = 4623
+    return:
+      type: SilverCraft.CSCore.SoundOut.AL.ALFormat
+- uid: SilverCraft.CSCore.SoundOut.AL.ALFormat.Multi61Chn8Bit
+  commentId: F:SilverCraft.CSCore.SoundOut.AL.ALFormat.Multi61Chn8Bit
+  id: Multi61Chn8Bit
+  parent: SilverCraft.CSCore.SoundOut.AL.ALFormat
+  langs:
+  - csharp
+  - vb
+  name: Multi61Chn8Bit
+  nameWithType: ALFormat.Multi61Chn8Bit
+  fullName: SilverCraft.CSCore.SoundOut.AL.ALFormat.Multi61Chn8Bit
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/SoundOut/AL/ALFormat.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: Multi61Chn8Bit
+    path: ../SilverCraft.CSCore/SoundOut/AL/ALFormat.cs
+    startLine: 72
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.SoundOut.AL
+  summary: 'Multichannel 6.1, 8-bit data. Requires Extension: AL_EXT_MCFORMATS'
+  example: []
+  syntax:
+    content: Multi61Chn8Bit = 4621
+    return:
+      type: SilverCraft.CSCore.SoundOut.AL.ALFormat
+- uid: SilverCraft.CSCore.SoundOut.AL.ALFormat.Multi71Chn16Bit
+  commentId: F:SilverCraft.CSCore.SoundOut.AL.ALFormat.Multi71Chn16Bit
+  id: Multi71Chn16Bit
+  parent: SilverCraft.CSCore.SoundOut.AL.ALFormat
+  langs:
+  - csharp
+  - vb
+  name: Multi71Chn16Bit
+  nameWithType: ALFormat.Multi71Chn16Bit
+  fullName: SilverCraft.CSCore.SoundOut.AL.ALFormat.Multi71Chn16Bit
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/SoundOut/AL/ALFormat.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: Multi71Chn16Bit
+    path: ../SilverCraft.CSCore/SoundOut/AL/ALFormat.cs
+    startLine: 75
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.SoundOut.AL
+  summary: 'Multichannel 7.1, 16-bit data. Requires Extension: AL_EXT_MCFORMATS'
+  example: []
+  syntax:
+    content: Multi71Chn16Bit = 4625
+    return:
+      type: SilverCraft.CSCore.SoundOut.AL.ALFormat
+- uid: SilverCraft.CSCore.SoundOut.AL.ALFormat.Multi71Chn32Bit
+  commentId: F:SilverCraft.CSCore.SoundOut.AL.ALFormat.Multi71Chn32Bit
+  id: Multi71Chn32Bit
+  parent: SilverCraft.CSCore.SoundOut.AL.ALFormat
+  langs:
+  - csharp
+  - vb
+  name: Multi71Chn32Bit
+  nameWithType: ALFormat.Multi71Chn32Bit
+  fullName: SilverCraft.CSCore.SoundOut.AL.ALFormat.Multi71Chn32Bit
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/SoundOut/AL/ALFormat.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: Multi71Chn32Bit
+    path: ../SilverCraft.CSCore/SoundOut/AL/ALFormat.cs
+    startLine: 78
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.SoundOut.AL
+  summary: 'Multichannel 7.1, 32-bit data. Requires Extension: AL_EXT_MCFORMATS'
+  example: []
+  syntax:
+    content: Multi71Chn32Bit = 4626
+    return:
+      type: SilverCraft.CSCore.SoundOut.AL.ALFormat
+- uid: SilverCraft.CSCore.SoundOut.AL.ALFormat.Multi71Chn8Bit
+  commentId: F:SilverCraft.CSCore.SoundOut.AL.ALFormat.Multi71Chn8Bit
+  id: Multi71Chn8Bit
+  parent: SilverCraft.CSCore.SoundOut.AL.ALFormat
+  langs:
+  - csharp
+  - vb
+  name: Multi71Chn8Bit
+  nameWithType: ALFormat.Multi71Chn8Bit
+  fullName: SilverCraft.CSCore.SoundOut.AL.ALFormat.Multi71Chn8Bit
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/SoundOut/AL/ALFormat.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: Multi71Chn8Bit
+    path: ../SilverCraft.CSCore/SoundOut/AL/ALFormat.cs
+    startLine: 81
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.SoundOut.AL
+  summary: 'Multichannel 7.1, 8-bit data. Requires Extension: AL_EXT_MCFORMATS'
+  example: []
+  syntax:
+    content: Multi71Chn8Bit = 4624
+    return:
+      type: SilverCraft.CSCore.SoundOut.AL.ALFormat
+- uid: SilverCraft.CSCore.SoundOut.AL.ALFormat.MultiQuad16Bit
+  commentId: F:SilverCraft.CSCore.SoundOut.AL.ALFormat.MultiQuad16Bit
+  id: MultiQuad16Bit
+  parent: SilverCraft.CSCore.SoundOut.AL.ALFormat
+  langs:
+  - csharp
+  - vb
+  name: MultiQuad16Bit
+  nameWithType: ALFormat.MultiQuad16Bit
+  fullName: SilverCraft.CSCore.SoundOut.AL.ALFormat.MultiQuad16Bit
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/SoundOut/AL/ALFormat.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: MultiQuad16Bit
+    path: ../SilverCraft.CSCore/SoundOut/AL/ALFormat.cs
+    startLine: 84
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.SoundOut.AL
+  summary: 'Multichannel 4.0, 16-bit data. Requires Extension: AL_EXT_MCFORMATS'
+  example: []
+  syntax:
+    content: MultiQuad16Bit = 4613
+    return:
+      type: SilverCraft.CSCore.SoundOut.AL.ALFormat
+- uid: SilverCraft.CSCore.SoundOut.AL.ALFormat.MultiQuad32Bit
+  commentId: F:SilverCraft.CSCore.SoundOut.AL.ALFormat.MultiQuad32Bit
+  id: MultiQuad32Bit
+  parent: SilverCraft.CSCore.SoundOut.AL.ALFormat
+  langs:
+  - csharp
+  - vb
+  name: MultiQuad32Bit
+  nameWithType: ALFormat.MultiQuad32Bit
+  fullName: SilverCraft.CSCore.SoundOut.AL.ALFormat.MultiQuad32Bit
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/SoundOut/AL/ALFormat.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: MultiQuad32Bit
+    path: ../SilverCraft.CSCore/SoundOut/AL/ALFormat.cs
+    startLine: 87
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.SoundOut.AL
+  summary: 'Multichannel 4.0, 32-bit data. Requires Extension: AL_EXT_MCFORMATS'
+  example: []
+  syntax:
+    content: MultiQuad32Bit = 4614
+    return:
+      type: SilverCraft.CSCore.SoundOut.AL.ALFormat
+- uid: SilverCraft.CSCore.SoundOut.AL.ALFormat.MultiQuad8Bit
+  commentId: F:SilverCraft.CSCore.SoundOut.AL.ALFormat.MultiQuad8Bit
+  id: MultiQuad8Bit
+  parent: SilverCraft.CSCore.SoundOut.AL.ALFormat
+  langs:
+  - csharp
+  - vb
+  name: MultiQuad8Bit
+  nameWithType: ALFormat.MultiQuad8Bit
+  fullName: SilverCraft.CSCore.SoundOut.AL.ALFormat.MultiQuad8Bit
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/SoundOut/AL/ALFormat.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: MultiQuad8Bit
+    path: ../SilverCraft.CSCore/SoundOut/AL/ALFormat.cs
+    startLine: 90
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.SoundOut.AL
+  summary: 'Multichannel 4.0, 8-bit data. Requires Extension: AL_EXT_MCFORMATS'
+  example: []
+  syntax:
+    content: MultiQuad8Bit = 4612
+    return:
+      type: SilverCraft.CSCore.SoundOut.AL.ALFormat
+- uid: SilverCraft.CSCore.SoundOut.AL.ALFormat.MultiRear16Bit
+  commentId: F:SilverCraft.CSCore.SoundOut.AL.ALFormat.MultiRear16Bit
+  id: MultiRear16Bit
+  parent: SilverCraft.CSCore.SoundOut.AL.ALFormat
+  langs:
+  - csharp
+  - vb
+  name: MultiRear16Bit
+  nameWithType: ALFormat.MultiRear16Bit
+  fullName: SilverCraft.CSCore.SoundOut.AL.ALFormat.MultiRear16Bit
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/SoundOut/AL/ALFormat.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: MultiRear16Bit
+    path: ../SilverCraft.CSCore/SoundOut/AL/ALFormat.cs
+    startLine: 93
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.SoundOut.AL
+  summary: '1 Channel rear speaker, 16-bit data. See Quadrophonic setups. Requires Extension: AL_EXT_MCFORMATS'
+  example: []
+  syntax:
+    content: MultiRear16Bit = 4616
+    return:
+      type: SilverCraft.CSCore.SoundOut.AL.ALFormat
+- uid: SilverCraft.CSCore.SoundOut.AL.ALFormat.MultiRear32Bit
+  commentId: F:SilverCraft.CSCore.SoundOut.AL.ALFormat.MultiRear32Bit
+  id: MultiRear32Bit
+  parent: SilverCraft.CSCore.SoundOut.AL.ALFormat
+  langs:
+  - csharp
+  - vb
+  name: MultiRear32Bit
+  nameWithType: ALFormat.MultiRear32Bit
+  fullName: SilverCraft.CSCore.SoundOut.AL.ALFormat.MultiRear32Bit
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/SoundOut/AL/ALFormat.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: MultiRear32Bit
+    path: ../SilverCraft.CSCore/SoundOut/AL/ALFormat.cs
+    startLine: 96
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.SoundOut.AL
+  summary: '1 Channel rear speaker, 32-bit data. See Quadrophonic setups. Requires Extension: AL_EXT_MCFORMATS'
+  example: []
+  syntax:
+    content: MultiRear32Bit = 4617
+    return:
+      type: SilverCraft.CSCore.SoundOut.AL.ALFormat
+- uid: SilverCraft.CSCore.SoundOut.AL.ALFormat.MultiRear8Bit
+  commentId: F:SilverCraft.CSCore.SoundOut.AL.ALFormat.MultiRear8Bit
+  id: MultiRear8Bit
+  parent: SilverCraft.CSCore.SoundOut.AL.ALFormat
+  langs:
+  - csharp
+  - vb
+  name: MultiRear8Bit
+  nameWithType: ALFormat.MultiRear8Bit
+  fullName: SilverCraft.CSCore.SoundOut.AL.ALFormat.MultiRear8Bit
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/SoundOut/AL/ALFormat.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: MultiRear8Bit
+    path: ../SilverCraft.CSCore/SoundOut/AL/ALFormat.cs
+    startLine: 99
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.SoundOut.AL
+  summary: '1 Channel rear speaker, 8-bit data. See Quadrophonic setups. Requires Extension: AL_EXT_MCFORMATS'
+  example: []
+  syntax:
+    content: MultiRear8Bit = 4615
+    return:
+      type: SilverCraft.CSCore.SoundOut.AL.ALFormat
+references:
+- uid: SilverCraft.CSCore.SoundOut.AL
+  commentId: N:SilverCraft.CSCore.SoundOut.AL
+  href: SilverCraft.html
+  name: SilverCraft.CSCore.SoundOut.AL
+  nameWithType: SilverCraft.CSCore.SoundOut.AL
+  fullName: SilverCraft.CSCore.SoundOut.AL
+  spec.csharp:
+  - uid: SilverCraft
+    name: SilverCraft
+    href: SilverCraft.html
+  - name: .
+  - uid: SilverCraft.CSCore
+    name: CSCore
+    href: SilverCraft.CSCore.html
+  - name: .
+  - uid: SilverCraft.CSCore.SoundOut
+    name: SoundOut
+    href: SilverCraft.CSCore.SoundOut.html
+  - name: .
+  - uid: SilverCraft.CSCore.SoundOut.AL
+    name: AL
+    href: SilverCraft.CSCore.SoundOut.AL.html
+  spec.vb:
+  - uid: SilverCraft
+    name: SilverCraft
+    href: SilverCraft.html
+  - name: .
+  - uid: SilverCraft.CSCore
+    name: CSCore
+    href: SilverCraft.CSCore.html
+  - name: .
+  - uid: SilverCraft.CSCore.SoundOut
+    name: SoundOut
+    href: SilverCraft.CSCore.SoundOut.html
+  - name: .
+  - uid: SilverCraft.CSCore.SoundOut.AL
+    name: AL
+    href: SilverCraft.CSCore.SoundOut.AL.html
+- uid: SilverCraft.CSCore.SoundOut.AL.ALFormat
+  commentId: T:SilverCraft.CSCore.SoundOut.AL.ALFormat
+  parent: SilverCraft.CSCore.SoundOut.AL
+  href: SilverCraft.CSCore.SoundOut.AL.ALFormat.html
+  name: ALFormat
+  nameWithType: ALFormat
+  fullName: SilverCraft.CSCore.SoundOut.AL.ALFormat

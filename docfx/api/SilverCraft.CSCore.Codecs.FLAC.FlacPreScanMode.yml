@@ -1,0 +1,196 @@
+### YamlMime:ManagedReference
+items:
+- uid: SilverCraft.CSCore.Codecs.FLAC.FlacPreScanMode
+  commentId: T:SilverCraft.CSCore.Codecs.FLAC.FlacPreScanMode
+  id: FlacPreScanMode
+  parent: SilverCraft.CSCore.Codecs.FLAC
+  children:
+  - SilverCraft.CSCore.Codecs.FLAC.FlacPreScanMode.Async
+  - SilverCraft.CSCore.Codecs.FLAC.FlacPreScanMode.Default
+  - SilverCraft.CSCore.Codecs.FLAC.FlacPreScanMode.None
+  - SilverCraft.CSCore.Codecs.FLAC.FlacPreScanMode.Sync
+  langs:
+  - csharp
+  - vb
+  name: FlacPreScanMode
+  nameWithType: FlacPreScanMode
+  fullName: SilverCraft.CSCore.Codecs.FLAC.FlacPreScanMode
+  type: Enum
+  source:
+    remote:
+      path: SilverCraft.CSCore/Codecs/FLAC/FlacPreScanMode.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: FlacPreScanMode
+    path: ../SilverCraft.CSCore/Codecs/FLAC/FlacPreScanMode.cs
+    startLine: 5
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Codecs.FLAC
+  summary: Defines how to scan a flac stream.
+  example: []
+  syntax:
+    content: public enum FlacPreScanMode
+    content.vb: Public Enum FlacPreScanMode
+- uid: SilverCraft.CSCore.Codecs.FLAC.FlacPreScanMode.None
+  commentId: F:SilverCraft.CSCore.Codecs.FLAC.FlacPreScanMode.None
+  id: None
+  parent: SilverCraft.CSCore.Codecs.FLAC.FlacPreScanMode
+  langs:
+  - csharp
+  - vb
+  name: None
+  nameWithType: FlacPreScanMode.None
+  fullName: SilverCraft.CSCore.Codecs.FLAC.FlacPreScanMode.None
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/Codecs/FLAC/FlacPreScanMode.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: None
+    path: ../SilverCraft.CSCore/Codecs/FLAC/FlacPreScanMode.cs
+    startLine: 10
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Codecs.FLAC
+  summary: Don't scan the flac stream. This will cause a stream to be not seekable.
+  example: []
+  syntax:
+    content: None = 0
+    return:
+      type: SilverCraft.CSCore.Codecs.FLAC.FlacPreScanMode
+- uid: SilverCraft.CSCore.Codecs.FLAC.FlacPreScanMode.Sync
+  commentId: F:SilverCraft.CSCore.Codecs.FLAC.FlacPreScanMode.Sync
+  id: Sync
+  parent: SilverCraft.CSCore.Codecs.FLAC.FlacPreScanMode
+  langs:
+  - csharp
+  - vb
+  name: Sync
+  nameWithType: FlacPreScanMode.Sync
+  fullName: SilverCraft.CSCore.Codecs.FLAC.FlacPreScanMode.Sync
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/Codecs/FLAC/FlacPreScanMode.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: Sync
+    path: ../SilverCraft.CSCore/Codecs/FLAC/FlacPreScanMode.cs
+    startLine: 15
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Codecs.FLAC
+  summary: Scan synchronously.
+  example: []
+  syntax:
+    content: Sync = 1
+    return:
+      type: SilverCraft.CSCore.Codecs.FLAC.FlacPreScanMode
+- uid: SilverCraft.CSCore.Codecs.FLAC.FlacPreScanMode.Async
+  commentId: F:SilverCraft.CSCore.Codecs.FLAC.FlacPreScanMode.Async
+  id: Async
+  parent: SilverCraft.CSCore.Codecs.FLAC.FlacPreScanMode
+  langs:
+  - csharp
+  - vb
+  name: Async
+  nameWithType: FlacPreScanMode.Async
+  fullName: SilverCraft.CSCore.Codecs.FLAC.FlacPreScanMode.Async
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/Codecs/FLAC/FlacPreScanMode.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: Async
+    path: ../SilverCraft.CSCore/Codecs/FLAC/FlacPreScanMode.cs
+    startLine: 24
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Codecs.FLAC
+  summary: Scan async.
+  remarks: >-
+    Don't use the stream while scan is running because the stream position
+
+    will change while scanning. If you playback the stream, it will cause an error!
+  example: []
+  syntax:
+    content: Async = 2
+    return:
+      type: SilverCraft.CSCore.Codecs.FLAC.FlacPreScanMode
+- uid: SilverCraft.CSCore.Codecs.FLAC.FlacPreScanMode.Default
+  commentId: F:SilverCraft.CSCore.Codecs.FLAC.FlacPreScanMode.Default
+  id: Default
+  parent: SilverCraft.CSCore.Codecs.FLAC.FlacPreScanMode
+  langs:
+  - csharp
+  - vb
+  name: Default
+  nameWithType: FlacPreScanMode.Default
+  fullName: SilverCraft.CSCore.Codecs.FLAC.FlacPreScanMode.Default
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/Codecs/FLAC/FlacPreScanMode.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: Default
+    path: ../SilverCraft.CSCore/Codecs/FLAC/FlacPreScanMode.cs
+    startLine: 29
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Codecs.FLAC
+  summary: Default value.
+  example: []
+  syntax:
+    content: Default = 1
+    return:
+      type: SilverCraft.CSCore.Codecs.FLAC.FlacPreScanMode
+references:
+- uid: SilverCraft.CSCore.Codecs.FLAC
+  commentId: N:SilverCraft.CSCore.Codecs.FLAC
+  href: SilverCraft.html
+  name: SilverCraft.CSCore.Codecs.FLAC
+  nameWithType: SilverCraft.CSCore.Codecs.FLAC
+  fullName: SilverCraft.CSCore.Codecs.FLAC
+  spec.csharp:
+  - uid: SilverCraft
+    name: SilverCraft
+    href: SilverCraft.html
+  - name: .
+  - uid: SilverCraft.CSCore
+    name: CSCore
+    href: SilverCraft.CSCore.html
+  - name: .
+  - uid: SilverCraft.CSCore.Codecs
+    name: Codecs
+    href: SilverCraft.CSCore.Codecs.html
+  - name: .
+  - uid: SilverCraft.CSCore.Codecs.FLAC
+    name: FLAC
+    href: SilverCraft.CSCore.Codecs.FLAC.html
+  spec.vb:
+  - uid: SilverCraft
+    name: SilverCraft
+    href: SilverCraft.html
+  - name: .
+  - uid: SilverCraft.CSCore
+    name: CSCore
+    href: SilverCraft.CSCore.html
+  - name: .
+  - uid: SilverCraft.CSCore.Codecs
+    name: Codecs
+    href: SilverCraft.CSCore.Codecs.html
+  - name: .
+  - uid: SilverCraft.CSCore.Codecs.FLAC
+    name: FLAC
+    href: SilverCraft.CSCore.Codecs.FLAC.html
+- uid: SilverCraft.CSCore.Codecs.FLAC.FlacPreScanMode
+  commentId: T:SilverCraft.CSCore.Codecs.FLAC.FlacPreScanMode
+  parent: SilverCraft.CSCore.Codecs.FLAC
+  href: SilverCraft.CSCore.Codecs.FLAC.FlacPreScanMode.html
+  name: FlacPreScanMode
+  nameWithType: FlacPreScanMode
+  fullName: SilverCraft.CSCore.Codecs.FLAC.FlacPreScanMode
