@@ -1,0 +1,1594 @@
+### YamlMime:ManagedReference
+items:
+- uid: VgmStream.VGMSTREAMCHANNEL
+  commentId: T:VgmStream.VGMSTREAMCHANNEL
+  id: VGMSTREAMCHANNEL
+  parent: VgmStream
+  children:
+  - VgmStream.VGMSTREAMCHANNEL.Anonymous1
+  - VgmStream.VGMSTREAMCHANNEL.Anonymous2
+  - VgmStream.VGMSTREAMCHANNEL.Anonymous3
+  - VgmStream.VGMSTREAMCHANNEL.Anonymous4
+  - VgmStream.VGMSTREAMCHANNEL.Anonymous5
+  - VgmStream.VGMSTREAMCHANNEL.Anonymous6
+  - VgmStream.VGMSTREAMCHANNEL.adpcm_coef
+  - VgmStream.VGMSTREAMCHANNEL.adpcm_coef_3by32
+  - VgmStream.VGMSTREAMCHANNEL.adpcm_history1_16
+  - VgmStream.VGMSTREAMCHANNEL.adpcm_history1_32
+  - VgmStream.VGMSTREAMCHANNEL.adpcm_history2_16
+  - VgmStream.VGMSTREAMCHANNEL.adpcm_history2_32
+  - VgmStream.VGMSTREAMCHANNEL.adpcm_history3_16
+  - VgmStream.VGMSTREAMCHANNEL.adpcm_history3_32
+  - VgmStream.VGMSTREAMCHANNEL.adpcm_history4_16
+  - VgmStream.VGMSTREAMCHANNEL.adpcm_history4_32
+  - VgmStream.VGMSTREAMCHANNEL.adpcm_scale
+  - VgmStream.VGMSTREAMCHANNEL.adpcm_step_index
+  - VgmStream.VGMSTREAMCHANNEL.adx_add
+  - VgmStream.VGMSTREAMCHANNEL.adx_mult
+  - VgmStream.VGMSTREAMCHANNEL.adx_xor
+  - VgmStream.VGMSTREAMCHANNEL.channel_start_offset
+  - VgmStream.VGMSTREAMCHANNEL.g72x_state
+  - VgmStream.VGMSTREAMCHANNEL.offset
+  - VgmStream.VGMSTREAMCHANNEL.streamfile
+  - VgmStream.VGMSTREAMCHANNEL.vadpcm_coefs
+  - VgmStream.VGMSTREAMCHANNEL.ws_frame_header_offset
+  - VgmStream.VGMSTREAMCHANNEL.ws_samples_left_in_frame
+  langs:
+  - csharp
+  - vb
+  name: VGMSTREAMCHANNEL
+  nameWithType: VGMSTREAMCHANNEL
+  fullName: VgmStream.VGMSTREAMCHANNEL
+  type: Struct
+  source:
+    remote:
+      path: SilverCraft.CSCore.VGMStream/InteropVgmStream/VGMSTREAMCHANNEL.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: VGMSTREAMCHANNEL
+    path: ../SilverCraft.CSCore.VGMStream/InteropVgmStream/VGMSTREAMCHANNEL.cs
+    startLine: 7
+  assemblies:
+  - SilverCraft.CSCore.VGMStream
+  namespace: VgmStream
+  syntax:
+    content: public struct VGMSTREAMCHANNEL
+    content.vb: Public Structure VGMSTREAMCHANNEL
+  inheritedMembers:
+  - System.ValueType.Equals(System.Object)
+  - System.ValueType.GetHashCode
+  - System.ValueType.ToString
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetType
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+- uid: VgmStream.VGMSTREAMCHANNEL.streamfile
+  commentId: F:VgmStream.VGMSTREAMCHANNEL.streamfile
+  id: streamfile
+  parent: VgmStream.VGMSTREAMCHANNEL
+  langs:
+  - csharp
+  - vb
+  name: streamfile
+  nameWithType: VGMSTREAMCHANNEL.streamfile
+  fullName: VgmStream.VGMSTREAMCHANNEL.streamfile
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore.VGMStream/InteropVgmStream/VGMSTREAMCHANNEL.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: streamfile
+    path: ../SilverCraft.CSCore.VGMStream/InteropVgmStream/VGMSTREAMCHANNEL.cs
+    startLine: 9
+  assemblies:
+  - SilverCraft.CSCore.VGMStream
+  namespace: VgmStream
+  syntax:
+    content: public STREAMFILE* streamfile
+    return:
+      type: VgmStream.STREAMFILE*
+    content.vb: Public streamfile As STREAMFILE*
+- uid: VgmStream.VGMSTREAMCHANNEL.channel_start_offset
+  commentId: F:VgmStream.VGMSTREAMCHANNEL.channel_start_offset
+  id: channel_start_offset
+  parent: VgmStream.VGMSTREAMCHANNEL
+  langs:
+  - csharp
+  - vb
+  name: channel_start_offset
+  nameWithType: VGMSTREAMCHANNEL.channel_start_offset
+  fullName: VgmStream.VGMSTREAMCHANNEL.channel_start_offset
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore.VGMStream/InteropVgmStream/VGMSTREAMCHANNEL.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: channel_start_offset
+    path: ../SilverCraft.CSCore.VGMStream/InteropVgmStream/VGMSTREAMCHANNEL.cs
+    startLine: 12
+  assemblies:
+  - SilverCraft.CSCore.VGMStream
+  namespace: VgmStream
+  syntax:
+    content: public nint channel_start_offset
+    return:
+      type: System.IntPtr
+    content.vb: Public channel_start_offset As IntPtr
+- uid: VgmStream.VGMSTREAMCHANNEL.offset
+  commentId: F:VgmStream.VGMSTREAMCHANNEL.offset
+  id: offset
+  parent: VgmStream.VGMSTREAMCHANNEL
+  langs:
+  - csharp
+  - vb
+  name: offset
+  nameWithType: VGMSTREAMCHANNEL.offset
+  fullName: VgmStream.VGMSTREAMCHANNEL.offset
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore.VGMStream/InteropVgmStream/VGMSTREAMCHANNEL.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: offset
+    path: ../SilverCraft.CSCore.VGMStream/InteropVgmStream/VGMSTREAMCHANNEL.cs
+    startLine: 15
+  assemblies:
+  - SilverCraft.CSCore.VGMStream
+  namespace: VgmStream
+  syntax:
+    content: public nint offset
+    return:
+      type: System.IntPtr
+    content.vb: Public offset As IntPtr
+- uid: VgmStream.VGMSTREAMCHANNEL.Anonymous1
+  commentId: F:VgmStream.VGMSTREAMCHANNEL.Anonymous1
+  id: Anonymous1
+  parent: VgmStream.VGMSTREAMCHANNEL
+  langs:
+  - csharp
+  - vb
+  name: Anonymous1
+  nameWithType: VGMSTREAMCHANNEL.Anonymous1
+  fullName: VgmStream.VGMSTREAMCHANNEL.Anonymous1
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore.VGMStream/InteropVgmStream/VGMSTREAMCHANNEL.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: Anonymous1
+    path: ../SilverCraft.CSCore.VGMStream/InteropVgmStream/VGMSTREAMCHANNEL.cs
+    startLine: 18
+  assemblies:
+  - SilverCraft.CSCore.VGMStream
+  namespace: VgmStream
+  syntax:
+    content: public VGMSTREAMCHANNEL._Anonymous1_e__Union Anonymous1
+    return:
+      type: VgmStream.VGMSTREAMCHANNEL._Anonymous1_e__Union
+    content.vb: Public Anonymous1 As VGMSTREAMCHANNEL._Anonymous1_e__Union
+- uid: VgmStream.VGMSTREAMCHANNEL.Anonymous2
+  commentId: F:VgmStream.VGMSTREAMCHANNEL.Anonymous2
+  id: Anonymous2
+  parent: VgmStream.VGMSTREAMCHANNEL
+  langs:
+  - csharp
+  - vb
+  name: Anonymous2
+  nameWithType: VGMSTREAMCHANNEL.Anonymous2
+  fullName: VgmStream.VGMSTREAMCHANNEL.Anonymous2
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore.VGMStream/InteropVgmStream/VGMSTREAMCHANNEL.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: Anonymous2
+    path: ../SilverCraft.CSCore.VGMStream/InteropVgmStream/VGMSTREAMCHANNEL.cs
+    startLine: 21
+  assemblies:
+  - SilverCraft.CSCore.VGMStream
+  namespace: VgmStream
+  syntax:
+    content: public VGMSTREAMCHANNEL._Anonymous2_e__Union Anonymous2
+    return:
+      type: VgmStream.VGMSTREAMCHANNEL._Anonymous2_e__Union
+    content.vb: Public Anonymous2 As VGMSTREAMCHANNEL._Anonymous2_e__Union
+- uid: VgmStream.VGMSTREAMCHANNEL.Anonymous3
+  commentId: F:VgmStream.VGMSTREAMCHANNEL.Anonymous3
+  id: Anonymous3
+  parent: VgmStream.VGMSTREAMCHANNEL
+  langs:
+  - csharp
+  - vb
+  name: Anonymous3
+  nameWithType: VGMSTREAMCHANNEL.Anonymous3
+  fullName: VgmStream.VGMSTREAMCHANNEL.Anonymous3
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore.VGMStream/InteropVgmStream/VGMSTREAMCHANNEL.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: Anonymous3
+    path: ../SilverCraft.CSCore.VGMStream/InteropVgmStream/VGMSTREAMCHANNEL.cs
+    startLine: 24
+  assemblies:
+  - SilverCraft.CSCore.VGMStream
+  namespace: VgmStream
+  syntax:
+    content: public VGMSTREAMCHANNEL._Anonymous3_e__Union Anonymous3
+    return:
+      type: VgmStream.VGMSTREAMCHANNEL._Anonymous3_e__Union
+    content.vb: Public Anonymous3 As VGMSTREAMCHANNEL._Anonymous3_e__Union
+- uid: VgmStream.VGMSTREAMCHANNEL.Anonymous4
+  commentId: F:VgmStream.VGMSTREAMCHANNEL.Anonymous4
+  id: Anonymous4
+  parent: VgmStream.VGMSTREAMCHANNEL
+  langs:
+  - csharp
+  - vb
+  name: Anonymous4
+  nameWithType: VGMSTREAMCHANNEL.Anonymous4
+  fullName: VgmStream.VGMSTREAMCHANNEL.Anonymous4
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore.VGMStream/InteropVgmStream/VGMSTREAMCHANNEL.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: Anonymous4
+    path: ../SilverCraft.CSCore.VGMStream/InteropVgmStream/VGMSTREAMCHANNEL.cs
+    startLine: 27
+  assemblies:
+  - SilverCraft.CSCore.VGMStream
+  namespace: VgmStream
+  syntax:
+    content: public VGMSTREAMCHANNEL._Anonymous4_e__Union Anonymous4
+    return:
+      type: VgmStream.VGMSTREAMCHANNEL._Anonymous4_e__Union
+    content.vb: Public Anonymous4 As VGMSTREAMCHANNEL._Anonymous4_e__Union
+- uid: VgmStream.VGMSTREAMCHANNEL.Anonymous5
+  commentId: F:VgmStream.VGMSTREAMCHANNEL.Anonymous5
+  id: Anonymous5
+  parent: VgmStream.VGMSTREAMCHANNEL
+  langs:
+  - csharp
+  - vb
+  name: Anonymous5
+  nameWithType: VGMSTREAMCHANNEL.Anonymous5
+  fullName: VgmStream.VGMSTREAMCHANNEL.Anonymous5
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore.VGMStream/InteropVgmStream/VGMSTREAMCHANNEL.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: Anonymous5
+    path: ../SilverCraft.CSCore.VGMStream/InteropVgmStream/VGMSTREAMCHANNEL.cs
+    startLine: 30
+  assemblies:
+  - SilverCraft.CSCore.VGMStream
+  namespace: VgmStream
+  syntax:
+    content: public VGMSTREAMCHANNEL._Anonymous5_e__Union Anonymous5
+    return:
+      type: VgmStream.VGMSTREAMCHANNEL._Anonymous5_e__Union
+    content.vb: Public Anonymous5 As VGMSTREAMCHANNEL._Anonymous5_e__Union
+- uid: VgmStream.VGMSTREAMCHANNEL.Anonymous6
+  commentId: F:VgmStream.VGMSTREAMCHANNEL.Anonymous6
+  id: Anonymous6
+  parent: VgmStream.VGMSTREAMCHANNEL
+  langs:
+  - csharp
+  - vb
+  name: Anonymous6
+  nameWithType: VGMSTREAMCHANNEL.Anonymous6
+  fullName: VgmStream.VGMSTREAMCHANNEL.Anonymous6
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore.VGMStream/InteropVgmStream/VGMSTREAMCHANNEL.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: Anonymous6
+    path: ../SilverCraft.CSCore.VGMStream/InteropVgmStream/VGMSTREAMCHANNEL.cs
+    startLine: 33
+  assemblies:
+  - SilverCraft.CSCore.VGMStream
+  namespace: VgmStream
+  syntax:
+    content: public VGMSTREAMCHANNEL._Anonymous6_e__Union Anonymous6
+    return:
+      type: VgmStream.VGMSTREAMCHANNEL._Anonymous6_e__Union
+    content.vb: Public Anonymous6 As VGMSTREAMCHANNEL._Anonymous6_e__Union
+- uid: VgmStream.VGMSTREAMCHANNEL.ws_frame_header_offset
+  commentId: F:VgmStream.VGMSTREAMCHANNEL.ws_frame_header_offset
+  id: ws_frame_header_offset
+  parent: VgmStream.VGMSTREAMCHANNEL
+  langs:
+  - csharp
+  - vb
+  name: ws_frame_header_offset
+  nameWithType: VGMSTREAMCHANNEL.ws_frame_header_offset
+  fullName: VgmStream.VGMSTREAMCHANNEL.ws_frame_header_offset
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore.VGMStream/InteropVgmStream/VGMSTREAMCHANNEL.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: ws_frame_header_offset
+    path: ../SilverCraft.CSCore.VGMStream/InteropVgmStream/VGMSTREAMCHANNEL.cs
+    startLine: 36
+  assemblies:
+  - SilverCraft.CSCore.VGMStream
+  namespace: VgmStream
+  syntax:
+    content: public nint ws_frame_header_offset
+    return:
+      type: System.IntPtr
+    content.vb: Public ws_frame_header_offset As IntPtr
+- uid: VgmStream.VGMSTREAMCHANNEL.ws_samples_left_in_frame
+  commentId: F:VgmStream.VGMSTREAMCHANNEL.ws_samples_left_in_frame
+  id: ws_samples_left_in_frame
+  parent: VgmStream.VGMSTREAMCHANNEL
+  langs:
+  - csharp
+  - vb
+  name: ws_samples_left_in_frame
+  nameWithType: VGMSTREAMCHANNEL.ws_samples_left_in_frame
+  fullName: VgmStream.VGMSTREAMCHANNEL.ws_samples_left_in_frame
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore.VGMStream/InteropVgmStream/VGMSTREAMCHANNEL.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: ws_samples_left_in_frame
+    path: ../SilverCraft.CSCore.VGMStream/InteropVgmStream/VGMSTREAMCHANNEL.cs
+    startLine: 38
+  assemblies:
+  - SilverCraft.CSCore.VGMStream
+  namespace: VgmStream
+  syntax:
+    content: public int ws_samples_left_in_frame
+    return:
+      type: System.Int32
+    content.vb: Public ws_samples_left_in_frame As Integer
+- uid: VgmStream.VGMSTREAMCHANNEL.g72x_state
+  commentId: F:VgmStream.VGMSTREAMCHANNEL.g72x_state
+  id: g72x_state
+  parent: VgmStream.VGMSTREAMCHANNEL
+  langs:
+  - csharp
+  - vb
+  name: g72x_state
+  nameWithType: VGMSTREAMCHANNEL.g72x_state
+  fullName: VgmStream.VGMSTREAMCHANNEL.g72x_state
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore.VGMStream/InteropVgmStream/VGMSTREAMCHANNEL.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: g72x_state
+    path: ../SilverCraft.CSCore.VGMStream/InteropVgmStream/VGMSTREAMCHANNEL.cs
+    startLine: 41
+  assemblies:
+  - SilverCraft.CSCore.VGMStream
+  namespace: VgmStream
+  syntax:
+    content: public void* g72x_state
+    return:
+      type: System.Void*
+    content.vb: Public g72x_state As Void*
+- uid: VgmStream.VGMSTREAMCHANNEL.adx_xor
+  commentId: F:VgmStream.VGMSTREAMCHANNEL.adx_xor
+  id: adx_xor
+  parent: VgmStream.VGMSTREAMCHANNEL
+  langs:
+  - csharp
+  - vb
+  name: adx_xor
+  nameWithType: VGMSTREAMCHANNEL.adx_xor
+  fullName: VgmStream.VGMSTREAMCHANNEL.adx_xor
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore.VGMStream/InteropVgmStream/VGMSTREAMCHANNEL.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: adx_xor
+    path: ../SilverCraft.CSCore.VGMStream/InteropVgmStream/VGMSTREAMCHANNEL.cs
+    startLine: 44
+  assemblies:
+  - SilverCraft.CSCore.VGMStream
+  namespace: VgmStream
+  syntax:
+    content: public ushort adx_xor
+    return:
+      type: System.UInt16
+    content.vb: Public adx_xor As UShort
+- uid: VgmStream.VGMSTREAMCHANNEL.adx_mult
+  commentId: F:VgmStream.VGMSTREAMCHANNEL.adx_mult
+  id: adx_mult
+  parent: VgmStream.VGMSTREAMCHANNEL
+  langs:
+  - csharp
+  - vb
+  name: adx_mult
+  nameWithType: VGMSTREAMCHANNEL.adx_mult
+  fullName: VgmStream.VGMSTREAMCHANNEL.adx_mult
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore.VGMStream/InteropVgmStream/VGMSTREAMCHANNEL.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: adx_mult
+    path: ../SilverCraft.CSCore.VGMStream/InteropVgmStream/VGMSTREAMCHANNEL.cs
+    startLine: 47
+  assemblies:
+  - SilverCraft.CSCore.VGMStream
+  namespace: VgmStream
+  syntax:
+    content: public ushort adx_mult
+    return:
+      type: System.UInt16
+    content.vb: Public adx_mult As UShort
+- uid: VgmStream.VGMSTREAMCHANNEL.adx_add
+  commentId: F:VgmStream.VGMSTREAMCHANNEL.adx_add
+  id: adx_add
+  parent: VgmStream.VGMSTREAMCHANNEL
+  langs:
+  - csharp
+  - vb
+  name: adx_add
+  nameWithType: VGMSTREAMCHANNEL.adx_add
+  fullName: VgmStream.VGMSTREAMCHANNEL.adx_add
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore.VGMStream/InteropVgmStream/VGMSTREAMCHANNEL.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: adx_add
+    path: ../SilverCraft.CSCore.VGMStream/InteropVgmStream/VGMSTREAMCHANNEL.cs
+    startLine: 50
+  assemblies:
+  - SilverCraft.CSCore.VGMStream
+  namespace: VgmStream
+  syntax:
+    content: public ushort adx_add
+    return:
+      type: System.UInt16
+    content.vb: Public adx_add As UShort
+- uid: VgmStream.VGMSTREAMCHANNEL.adpcm_coef
+  commentId: P:VgmStream.VGMSTREAMCHANNEL.adpcm_coef
+  id: adpcm_coef
+  parent: VgmStream.VGMSTREAMCHANNEL
+  langs:
+  - csharp
+  - vb
+  name: adpcm_coef
+  nameWithType: VGMSTREAMCHANNEL.adpcm_coef
+  fullName: VgmStream.VGMSTREAMCHANNEL.adpcm_coef
+  type: Property
+  source:
+    remote:
+      path: SilverCraft.CSCore.VGMStream/InteropVgmStream/VGMSTREAMCHANNEL.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: adpcm_coef
+    path: ../SilverCraft.CSCore.VGMStream/InteropVgmStream/VGMSTREAMCHANNEL.cs
+    startLine: 52
+  assemblies:
+  - SilverCraft.CSCore.VGMStream
+  namespace: VgmStream
+  syntax:
+    content: >-
+      [UnscopedRef]
+
+      public Span<short> adpcm_coef { get; }
+    parameters: []
+    return:
+      type: System.Span{System.Int16}
+    content.vb: >-
+      <UnscopedRef>
+
+      Public ReadOnly Property adpcm_coef As Span(Of Short)
+  overload: VgmStream.VGMSTREAMCHANNEL.adpcm_coef*
+  attributes:
+  - type: System.Diagnostics.CodeAnalysis.UnscopedRefAttribute
+    ctor: System.Diagnostics.CodeAnalysis.UnscopedRefAttribute.#ctor
+    arguments: []
+- uid: VgmStream.VGMSTREAMCHANNEL.vadpcm_coefs
+  commentId: P:VgmStream.VGMSTREAMCHANNEL.vadpcm_coefs
+  id: vadpcm_coefs
+  parent: VgmStream.VGMSTREAMCHANNEL
+  langs:
+  - csharp
+  - vb
+  name: vadpcm_coefs
+  nameWithType: VGMSTREAMCHANNEL.vadpcm_coefs
+  fullName: VgmStream.VGMSTREAMCHANNEL.vadpcm_coefs
+  type: Property
+  source:
+    remote:
+      path: SilverCraft.CSCore.VGMStream/InteropVgmStream/VGMSTREAMCHANNEL.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: vadpcm_coefs
+    path: ../SilverCraft.CSCore.VGMStream/InteropVgmStream/VGMSTREAMCHANNEL.cs
+    startLine: 62
+  assemblies:
+  - SilverCraft.CSCore.VGMStream
+  namespace: VgmStream
+  syntax:
+    content: >-
+      [UnscopedRef]
+
+      public Span<short> vadpcm_coefs { get; }
+    parameters: []
+    return:
+      type: System.Span{System.Int16}
+    content.vb: >-
+      <UnscopedRef>
+
+      Public ReadOnly Property vadpcm_coefs As Span(Of Short)
+  overload: VgmStream.VGMSTREAMCHANNEL.vadpcm_coefs*
+  attributes:
+  - type: System.Diagnostics.CodeAnalysis.UnscopedRefAttribute
+    ctor: System.Diagnostics.CodeAnalysis.UnscopedRefAttribute.#ctor
+    arguments: []
+- uid: VgmStream.VGMSTREAMCHANNEL.adpcm_coef_3by32
+  commentId: P:VgmStream.VGMSTREAMCHANNEL.adpcm_coef_3by32
+  id: adpcm_coef_3by32
+  parent: VgmStream.VGMSTREAMCHANNEL
+  langs:
+  - csharp
+  - vb
+  name: adpcm_coef_3by32
+  nameWithType: VGMSTREAMCHANNEL.adpcm_coef_3by32
+  fullName: VgmStream.VGMSTREAMCHANNEL.adpcm_coef_3by32
+  type: Property
+  source:
+    remote:
+      path: SilverCraft.CSCore.VGMStream/InteropVgmStream/VGMSTREAMCHANNEL.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: adpcm_coef_3by32
+    path: ../SilverCraft.CSCore.VGMStream/InteropVgmStream/VGMSTREAMCHANNEL.cs
+    startLine: 72
+  assemblies:
+  - SilverCraft.CSCore.VGMStream
+  namespace: VgmStream
+  syntax:
+    content: >-
+      [UnscopedRef]
+
+      public Span<int> adpcm_coef_3by32 { get; }
+    parameters: []
+    return:
+      type: System.Span{System.Int32}
+    content.vb: >-
+      <UnscopedRef>
+
+      Public ReadOnly Property adpcm_coef_3by32 As Span(Of Integer)
+  overload: VgmStream.VGMSTREAMCHANNEL.adpcm_coef_3by32*
+  attributes:
+  - type: System.Diagnostics.CodeAnalysis.UnscopedRefAttribute
+    ctor: System.Diagnostics.CodeAnalysis.UnscopedRefAttribute.#ctor
+    arguments: []
+- uid: VgmStream.VGMSTREAMCHANNEL.adpcm_history1_16
+  commentId: P:VgmStream.VGMSTREAMCHANNEL.adpcm_history1_16
+  id: adpcm_history1_16
+  parent: VgmStream.VGMSTREAMCHANNEL
+  langs:
+  - csharp
+  - vb
+  name: adpcm_history1_16
+  nameWithType: VGMSTREAMCHANNEL.adpcm_history1_16
+  fullName: VgmStream.VGMSTREAMCHANNEL.adpcm_history1_16
+  type: Property
+  source:
+    remote:
+      path: SilverCraft.CSCore.VGMStream/InteropVgmStream/VGMSTREAMCHANNEL.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: adpcm_history1_16
+    path: ../SilverCraft.CSCore.VGMStream/InteropVgmStream/VGMSTREAMCHANNEL.cs
+    startLine: 82
+  assemblies:
+  - SilverCraft.CSCore.VGMStream
+  namespace: VgmStream
+  syntax:
+    content: >-
+      [UnscopedRef]
+
+      public ref short adpcm_history1_16 { get; }
+    parameters: []
+    return:
+      type: System.Int16
+    content.vb: >-
+      <UnscopedRef>
+
+      Public ReadOnly ByRef Property adpcm_history1_16 As Short
+  overload: VgmStream.VGMSTREAMCHANNEL.adpcm_history1_16*
+  attributes:
+  - type: System.Diagnostics.CodeAnalysis.UnscopedRefAttribute
+    ctor: System.Diagnostics.CodeAnalysis.UnscopedRefAttribute.#ctor
+    arguments: []
+- uid: VgmStream.VGMSTREAMCHANNEL.adpcm_history1_32
+  commentId: P:VgmStream.VGMSTREAMCHANNEL.adpcm_history1_32
+  id: adpcm_history1_32
+  parent: VgmStream.VGMSTREAMCHANNEL
+  langs:
+  - csharp
+  - vb
+  name: adpcm_history1_32
+  nameWithType: VGMSTREAMCHANNEL.adpcm_history1_32
+  fullName: VgmStream.VGMSTREAMCHANNEL.adpcm_history1_32
+  type: Property
+  source:
+    remote:
+      path: SilverCraft.CSCore.VGMStream/InteropVgmStream/VGMSTREAMCHANNEL.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: adpcm_history1_32
+    path: ../SilverCraft.CSCore.VGMStream/InteropVgmStream/VGMSTREAMCHANNEL.cs
+    startLine: 92
+  assemblies:
+  - SilverCraft.CSCore.VGMStream
+  namespace: VgmStream
+  syntax:
+    content: >-
+      [UnscopedRef]
+
+      public ref int adpcm_history1_32 { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: >-
+      <UnscopedRef>
+
+      Public ReadOnly ByRef Property adpcm_history1_32 As Integer
+  overload: VgmStream.VGMSTREAMCHANNEL.adpcm_history1_32*
+  attributes:
+  - type: System.Diagnostics.CodeAnalysis.UnscopedRefAttribute
+    ctor: System.Diagnostics.CodeAnalysis.UnscopedRefAttribute.#ctor
+    arguments: []
+- uid: VgmStream.VGMSTREAMCHANNEL.adpcm_history2_16
+  commentId: P:VgmStream.VGMSTREAMCHANNEL.adpcm_history2_16
+  id: adpcm_history2_16
+  parent: VgmStream.VGMSTREAMCHANNEL
+  langs:
+  - csharp
+  - vb
+  name: adpcm_history2_16
+  nameWithType: VGMSTREAMCHANNEL.adpcm_history2_16
+  fullName: VgmStream.VGMSTREAMCHANNEL.adpcm_history2_16
+  type: Property
+  source:
+    remote:
+      path: SilverCraft.CSCore.VGMStream/InteropVgmStream/VGMSTREAMCHANNEL.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: adpcm_history2_16
+    path: ../SilverCraft.CSCore.VGMStream/InteropVgmStream/VGMSTREAMCHANNEL.cs
+    startLine: 102
+  assemblies:
+  - SilverCraft.CSCore.VGMStream
+  namespace: VgmStream
+  syntax:
+    content: >-
+      [UnscopedRef]
+
+      public ref short adpcm_history2_16 { get; }
+    parameters: []
+    return:
+      type: System.Int16
+    content.vb: >-
+      <UnscopedRef>
+
+      Public ReadOnly ByRef Property adpcm_history2_16 As Short
+  overload: VgmStream.VGMSTREAMCHANNEL.adpcm_history2_16*
+  attributes:
+  - type: System.Diagnostics.CodeAnalysis.UnscopedRefAttribute
+    ctor: System.Diagnostics.CodeAnalysis.UnscopedRefAttribute.#ctor
+    arguments: []
+- uid: VgmStream.VGMSTREAMCHANNEL.adpcm_history2_32
+  commentId: P:VgmStream.VGMSTREAMCHANNEL.adpcm_history2_32
+  id: adpcm_history2_32
+  parent: VgmStream.VGMSTREAMCHANNEL
+  langs:
+  - csharp
+  - vb
+  name: adpcm_history2_32
+  nameWithType: VGMSTREAMCHANNEL.adpcm_history2_32
+  fullName: VgmStream.VGMSTREAMCHANNEL.adpcm_history2_32
+  type: Property
+  source:
+    remote:
+      path: SilverCraft.CSCore.VGMStream/InteropVgmStream/VGMSTREAMCHANNEL.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: adpcm_history2_32
+    path: ../SilverCraft.CSCore.VGMStream/InteropVgmStream/VGMSTREAMCHANNEL.cs
+    startLine: 112
+  assemblies:
+  - SilverCraft.CSCore.VGMStream
+  namespace: VgmStream
+  syntax:
+    content: >-
+      [UnscopedRef]
+
+      public ref int adpcm_history2_32 { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: >-
+      <UnscopedRef>
+
+      Public ReadOnly ByRef Property adpcm_history2_32 As Integer
+  overload: VgmStream.VGMSTREAMCHANNEL.adpcm_history2_32*
+  attributes:
+  - type: System.Diagnostics.CodeAnalysis.UnscopedRefAttribute
+    ctor: System.Diagnostics.CodeAnalysis.UnscopedRefAttribute.#ctor
+    arguments: []
+- uid: VgmStream.VGMSTREAMCHANNEL.adpcm_history3_16
+  commentId: P:VgmStream.VGMSTREAMCHANNEL.adpcm_history3_16
+  id: adpcm_history3_16
+  parent: VgmStream.VGMSTREAMCHANNEL
+  langs:
+  - csharp
+  - vb
+  name: adpcm_history3_16
+  nameWithType: VGMSTREAMCHANNEL.adpcm_history3_16
+  fullName: VgmStream.VGMSTREAMCHANNEL.adpcm_history3_16
+  type: Property
+  source:
+    remote:
+      path: SilverCraft.CSCore.VGMStream/InteropVgmStream/VGMSTREAMCHANNEL.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: adpcm_history3_16
+    path: ../SilverCraft.CSCore.VGMStream/InteropVgmStream/VGMSTREAMCHANNEL.cs
+    startLine: 122
+  assemblies:
+  - SilverCraft.CSCore.VGMStream
+  namespace: VgmStream
+  syntax:
+    content: >-
+      [UnscopedRef]
+
+      public ref short adpcm_history3_16 { get; }
+    parameters: []
+    return:
+      type: System.Int16
+    content.vb: >-
+      <UnscopedRef>
+
+      Public ReadOnly ByRef Property adpcm_history3_16 As Short
+  overload: VgmStream.VGMSTREAMCHANNEL.adpcm_history3_16*
+  attributes:
+  - type: System.Diagnostics.CodeAnalysis.UnscopedRefAttribute
+    ctor: System.Diagnostics.CodeAnalysis.UnscopedRefAttribute.#ctor
+    arguments: []
+- uid: VgmStream.VGMSTREAMCHANNEL.adpcm_history3_32
+  commentId: P:VgmStream.VGMSTREAMCHANNEL.adpcm_history3_32
+  id: adpcm_history3_32
+  parent: VgmStream.VGMSTREAMCHANNEL
+  langs:
+  - csharp
+  - vb
+  name: adpcm_history3_32
+  nameWithType: VGMSTREAMCHANNEL.adpcm_history3_32
+  fullName: VgmStream.VGMSTREAMCHANNEL.adpcm_history3_32
+  type: Property
+  source:
+    remote:
+      path: SilverCraft.CSCore.VGMStream/InteropVgmStream/VGMSTREAMCHANNEL.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: adpcm_history3_32
+    path: ../SilverCraft.CSCore.VGMStream/InteropVgmStream/VGMSTREAMCHANNEL.cs
+    startLine: 132
+  assemblies:
+  - SilverCraft.CSCore.VGMStream
+  namespace: VgmStream
+  syntax:
+    content: >-
+      [UnscopedRef]
+
+      public ref int adpcm_history3_32 { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: >-
+      <UnscopedRef>
+
+      Public ReadOnly ByRef Property adpcm_history3_32 As Integer
+  overload: VgmStream.VGMSTREAMCHANNEL.adpcm_history3_32*
+  attributes:
+  - type: System.Diagnostics.CodeAnalysis.UnscopedRefAttribute
+    ctor: System.Diagnostics.CodeAnalysis.UnscopedRefAttribute.#ctor
+    arguments: []
+- uid: VgmStream.VGMSTREAMCHANNEL.adpcm_history4_16
+  commentId: P:VgmStream.VGMSTREAMCHANNEL.adpcm_history4_16
+  id: adpcm_history4_16
+  parent: VgmStream.VGMSTREAMCHANNEL
+  langs:
+  - csharp
+  - vb
+  name: adpcm_history4_16
+  nameWithType: VGMSTREAMCHANNEL.adpcm_history4_16
+  fullName: VgmStream.VGMSTREAMCHANNEL.adpcm_history4_16
+  type: Property
+  source:
+    remote:
+      path: SilverCraft.CSCore.VGMStream/InteropVgmStream/VGMSTREAMCHANNEL.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: adpcm_history4_16
+    path: ../SilverCraft.CSCore.VGMStream/InteropVgmStream/VGMSTREAMCHANNEL.cs
+    startLine: 142
+  assemblies:
+  - SilverCraft.CSCore.VGMStream
+  namespace: VgmStream
+  syntax:
+    content: >-
+      [UnscopedRef]
+
+      public ref short adpcm_history4_16 { get; }
+    parameters: []
+    return:
+      type: System.Int16
+    content.vb: >-
+      <UnscopedRef>
+
+      Public ReadOnly ByRef Property adpcm_history4_16 As Short
+  overload: VgmStream.VGMSTREAMCHANNEL.adpcm_history4_16*
+  attributes:
+  - type: System.Diagnostics.CodeAnalysis.UnscopedRefAttribute
+    ctor: System.Diagnostics.CodeAnalysis.UnscopedRefAttribute.#ctor
+    arguments: []
+- uid: VgmStream.VGMSTREAMCHANNEL.adpcm_history4_32
+  commentId: P:VgmStream.VGMSTREAMCHANNEL.adpcm_history4_32
+  id: adpcm_history4_32
+  parent: VgmStream.VGMSTREAMCHANNEL
+  langs:
+  - csharp
+  - vb
+  name: adpcm_history4_32
+  nameWithType: VGMSTREAMCHANNEL.adpcm_history4_32
+  fullName: VgmStream.VGMSTREAMCHANNEL.adpcm_history4_32
+  type: Property
+  source:
+    remote:
+      path: SilverCraft.CSCore.VGMStream/InteropVgmStream/VGMSTREAMCHANNEL.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: adpcm_history4_32
+    path: ../SilverCraft.CSCore.VGMStream/InteropVgmStream/VGMSTREAMCHANNEL.cs
+    startLine: 152
+  assemblies:
+  - SilverCraft.CSCore.VGMStream
+  namespace: VgmStream
+  syntax:
+    content: >-
+      [UnscopedRef]
+
+      public ref int adpcm_history4_32 { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: >-
+      <UnscopedRef>
+
+      Public ReadOnly ByRef Property adpcm_history4_32 As Integer
+  overload: VgmStream.VGMSTREAMCHANNEL.adpcm_history4_32*
+  attributes:
+  - type: System.Diagnostics.CodeAnalysis.UnscopedRefAttribute
+    ctor: System.Diagnostics.CodeAnalysis.UnscopedRefAttribute.#ctor
+    arguments: []
+- uid: VgmStream.VGMSTREAMCHANNEL.adpcm_step_index
+  commentId: P:VgmStream.VGMSTREAMCHANNEL.adpcm_step_index
+  id: adpcm_step_index
+  parent: VgmStream.VGMSTREAMCHANNEL
+  langs:
+  - csharp
+  - vb
+  name: adpcm_step_index
+  nameWithType: VGMSTREAMCHANNEL.adpcm_step_index
+  fullName: VgmStream.VGMSTREAMCHANNEL.adpcm_step_index
+  type: Property
+  source:
+    remote:
+      path: SilverCraft.CSCore.VGMStream/InteropVgmStream/VGMSTREAMCHANNEL.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: adpcm_step_index
+    path: ../SilverCraft.CSCore.VGMStream/InteropVgmStream/VGMSTREAMCHANNEL.cs
+    startLine: 162
+  assemblies:
+  - SilverCraft.CSCore.VGMStream
+  namespace: VgmStream
+  syntax:
+    content: >-
+      [UnscopedRef]
+
+      public ref int adpcm_step_index { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: >-
+      <UnscopedRef>
+
+      Public ReadOnly ByRef Property adpcm_step_index As Integer
+  overload: VgmStream.VGMSTREAMCHANNEL.adpcm_step_index*
+  attributes:
+  - type: System.Diagnostics.CodeAnalysis.UnscopedRefAttribute
+    ctor: System.Diagnostics.CodeAnalysis.UnscopedRefAttribute.#ctor
+    arguments: []
+- uid: VgmStream.VGMSTREAMCHANNEL.adpcm_scale
+  commentId: P:VgmStream.VGMSTREAMCHANNEL.adpcm_scale
+  id: adpcm_scale
+  parent: VgmStream.VGMSTREAMCHANNEL
+  langs:
+  - csharp
+  - vb
+  name: adpcm_scale
+  nameWithType: VGMSTREAMCHANNEL.adpcm_scale
+  fullName: VgmStream.VGMSTREAMCHANNEL.adpcm_scale
+  type: Property
+  source:
+    remote:
+      path: SilverCraft.CSCore.VGMStream/InteropVgmStream/VGMSTREAMCHANNEL.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: adpcm_scale
+    path: ../SilverCraft.CSCore.VGMStream/InteropVgmStream/VGMSTREAMCHANNEL.cs
+    startLine: 172
+  assemblies:
+  - SilverCraft.CSCore.VGMStream
+  namespace: VgmStream
+  syntax:
+    content: >-
+      [UnscopedRef]
+
+      public ref int adpcm_scale { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: >-
+      <UnscopedRef>
+
+      Public ReadOnly ByRef Property adpcm_scale As Integer
+  overload: VgmStream.VGMSTREAMCHANNEL.adpcm_scale*
+  attributes:
+  - type: System.Diagnostics.CodeAnalysis.UnscopedRefAttribute
+    ctor: System.Diagnostics.CodeAnalysis.UnscopedRefAttribute.#ctor
+    arguments: []
+references:
+- uid: VgmStream
+  commentId: N:VgmStream
+  href: VgmStream.html
+  name: VgmStream
+  nameWithType: VgmStream
+  fullName: VgmStream
+- uid: System.ValueType.Equals(System.Object)
+  commentId: M:System.ValueType.Equals(System.Object)
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  name: Equals(object)
+  nameWithType: ValueType.Equals(object)
+  fullName: System.ValueType.Equals(object)
+  nameWithType.vb: ValueType.Equals(Object)
+  fullName.vb: System.ValueType.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.ValueType.GetHashCode
+  commentId: M:System.ValueType.GetHashCode
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  name: GetHashCode()
+  nameWithType: ValueType.GetHashCode()
+  fullName: System.ValueType.GetHashCode()
+  spec.csharp:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  - name: (
+  - name: )
+- uid: System.ValueType.ToString
+  commentId: M:System.ValueType.ToString
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  name: ToString()
+  nameWithType: ValueType.ToString()
+  fullName: System.ValueType.ToString()
+  spec.csharp:
+  - uid: System.ValueType.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.ValueType
+  commentId: T:System.ValueType
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype
+  name: ValueType
+  nameWithType: ValueType
+  fullName: System.ValueType
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: VgmStream.STREAMFILE*
+  isExternal: true
+  href: VgmStream.STREAMFILE.html
+  name: STREAMFILE*
+  nameWithType: STREAMFILE*
+  fullName: VgmStream.STREAMFILE*
+  spec.csharp:
+  - uid: VgmStream.STREAMFILE
+    name: STREAMFILE
+    href: VgmStream.STREAMFILE.html
+  - name: '*'
+  spec.vb:
+  - uid: VgmStream.STREAMFILE
+    name: STREAMFILE
+    href: VgmStream.STREAMFILE.html
+  - name: '*'
+- uid: System.IntPtr
+  commentId: T:System.IntPtr
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.intptr
+  name: nint
+  nameWithType: nint
+  fullName: nint
+  nameWithType.vb: IntPtr
+  fullName.vb: System.IntPtr
+  name.vb: IntPtr
+- uid: VgmStream.VGMSTREAMCHANNEL._Anonymous1_e__Union
+  commentId: T:VgmStream.VGMSTREAMCHANNEL._Anonymous1_e__Union
+  parent: VgmStream
+  href: VgmStream.VGMSTREAMCHANNEL.html
+  name: VGMSTREAMCHANNEL._Anonymous1_e__Union
+  nameWithType: VGMSTREAMCHANNEL._Anonymous1_e__Union
+  fullName: VgmStream.VGMSTREAMCHANNEL._Anonymous1_e__Union
+  spec.csharp:
+  - uid: VgmStream.VGMSTREAMCHANNEL
+    name: VGMSTREAMCHANNEL
+    href: VgmStream.VGMSTREAMCHANNEL.html
+  - name: .
+  - uid: VgmStream.VGMSTREAMCHANNEL._Anonymous1_e__Union
+    name: _Anonymous1_e__Union
+    href: VgmStream.VGMSTREAMCHANNEL._Anonymous1_e__Union.html
+  spec.vb:
+  - uid: VgmStream.VGMSTREAMCHANNEL
+    name: VGMSTREAMCHANNEL
+    href: VgmStream.VGMSTREAMCHANNEL.html
+  - name: .
+  - uid: VgmStream.VGMSTREAMCHANNEL._Anonymous1_e__Union
+    name: _Anonymous1_e__Union
+    href: VgmStream.VGMSTREAMCHANNEL._Anonymous1_e__Union.html
+- uid: VgmStream.VGMSTREAMCHANNEL._Anonymous2_e__Union
+  commentId: T:VgmStream.VGMSTREAMCHANNEL._Anonymous2_e__Union
+  parent: VgmStream
+  href: VgmStream.VGMSTREAMCHANNEL.html
+  name: VGMSTREAMCHANNEL._Anonymous2_e__Union
+  nameWithType: VGMSTREAMCHANNEL._Anonymous2_e__Union
+  fullName: VgmStream.VGMSTREAMCHANNEL._Anonymous2_e__Union
+  spec.csharp:
+  - uid: VgmStream.VGMSTREAMCHANNEL
+    name: VGMSTREAMCHANNEL
+    href: VgmStream.VGMSTREAMCHANNEL.html
+  - name: .
+  - uid: VgmStream.VGMSTREAMCHANNEL._Anonymous2_e__Union
+    name: _Anonymous2_e__Union
+    href: VgmStream.VGMSTREAMCHANNEL._Anonymous2_e__Union.html
+  spec.vb:
+  - uid: VgmStream.VGMSTREAMCHANNEL
+    name: VGMSTREAMCHANNEL
+    href: VgmStream.VGMSTREAMCHANNEL.html
+  - name: .
+  - uid: VgmStream.VGMSTREAMCHANNEL._Anonymous2_e__Union
+    name: _Anonymous2_e__Union
+    href: VgmStream.VGMSTREAMCHANNEL._Anonymous2_e__Union.html
+- uid: VgmStream.VGMSTREAMCHANNEL._Anonymous3_e__Union
+  commentId: T:VgmStream.VGMSTREAMCHANNEL._Anonymous3_e__Union
+  parent: VgmStream
+  href: VgmStream.VGMSTREAMCHANNEL.html
+  name: VGMSTREAMCHANNEL._Anonymous3_e__Union
+  nameWithType: VGMSTREAMCHANNEL._Anonymous3_e__Union
+  fullName: VgmStream.VGMSTREAMCHANNEL._Anonymous3_e__Union
+  spec.csharp:
+  - uid: VgmStream.VGMSTREAMCHANNEL
+    name: VGMSTREAMCHANNEL
+    href: VgmStream.VGMSTREAMCHANNEL.html
+  - name: .
+  - uid: VgmStream.VGMSTREAMCHANNEL._Anonymous3_e__Union
+    name: _Anonymous3_e__Union
+    href: VgmStream.VGMSTREAMCHANNEL._Anonymous3_e__Union.html
+  spec.vb:
+  - uid: VgmStream.VGMSTREAMCHANNEL
+    name: VGMSTREAMCHANNEL
+    href: VgmStream.VGMSTREAMCHANNEL.html
+  - name: .
+  - uid: VgmStream.VGMSTREAMCHANNEL._Anonymous3_e__Union
+    name: _Anonymous3_e__Union
+    href: VgmStream.VGMSTREAMCHANNEL._Anonymous3_e__Union.html
+- uid: VgmStream.VGMSTREAMCHANNEL._Anonymous4_e__Union
+  commentId: T:VgmStream.VGMSTREAMCHANNEL._Anonymous4_e__Union
+  parent: VgmStream
+  href: VgmStream.VGMSTREAMCHANNEL.html
+  name: VGMSTREAMCHANNEL._Anonymous4_e__Union
+  nameWithType: VGMSTREAMCHANNEL._Anonymous4_e__Union
+  fullName: VgmStream.VGMSTREAMCHANNEL._Anonymous4_e__Union
+  spec.csharp:
+  - uid: VgmStream.VGMSTREAMCHANNEL
+    name: VGMSTREAMCHANNEL
+    href: VgmStream.VGMSTREAMCHANNEL.html
+  - name: .
+  - uid: VgmStream.VGMSTREAMCHANNEL._Anonymous4_e__Union
+    name: _Anonymous4_e__Union
+    href: VgmStream.VGMSTREAMCHANNEL._Anonymous4_e__Union.html
+  spec.vb:
+  - uid: VgmStream.VGMSTREAMCHANNEL
+    name: VGMSTREAMCHANNEL
+    href: VgmStream.VGMSTREAMCHANNEL.html
+  - name: .
+  - uid: VgmStream.VGMSTREAMCHANNEL._Anonymous4_e__Union
+    name: _Anonymous4_e__Union
+    href: VgmStream.VGMSTREAMCHANNEL._Anonymous4_e__Union.html
+- uid: VgmStream.VGMSTREAMCHANNEL._Anonymous5_e__Union
+  commentId: T:VgmStream.VGMSTREAMCHANNEL._Anonymous5_e__Union
+  parent: VgmStream
+  href: VgmStream.VGMSTREAMCHANNEL.html
+  name: VGMSTREAMCHANNEL._Anonymous5_e__Union
+  nameWithType: VGMSTREAMCHANNEL._Anonymous5_e__Union
+  fullName: VgmStream.VGMSTREAMCHANNEL._Anonymous5_e__Union
+  spec.csharp:
+  - uid: VgmStream.VGMSTREAMCHANNEL
+    name: VGMSTREAMCHANNEL
+    href: VgmStream.VGMSTREAMCHANNEL.html
+  - name: .
+  - uid: VgmStream.VGMSTREAMCHANNEL._Anonymous5_e__Union
+    name: _Anonymous5_e__Union
+    href: VgmStream.VGMSTREAMCHANNEL._Anonymous5_e__Union.html
+  spec.vb:
+  - uid: VgmStream.VGMSTREAMCHANNEL
+    name: VGMSTREAMCHANNEL
+    href: VgmStream.VGMSTREAMCHANNEL.html
+  - name: .
+  - uid: VgmStream.VGMSTREAMCHANNEL._Anonymous5_e__Union
+    name: _Anonymous5_e__Union
+    href: VgmStream.VGMSTREAMCHANNEL._Anonymous5_e__Union.html
+- uid: VgmStream.VGMSTREAMCHANNEL._Anonymous6_e__Union
+  commentId: T:VgmStream.VGMSTREAMCHANNEL._Anonymous6_e__Union
+  parent: VgmStream
+  href: VgmStream.VGMSTREAMCHANNEL.html
+  name: VGMSTREAMCHANNEL._Anonymous6_e__Union
+  nameWithType: VGMSTREAMCHANNEL._Anonymous6_e__Union
+  fullName: VgmStream.VGMSTREAMCHANNEL._Anonymous6_e__Union
+  spec.csharp:
+  - uid: VgmStream.VGMSTREAMCHANNEL
+    name: VGMSTREAMCHANNEL
+    href: VgmStream.VGMSTREAMCHANNEL.html
+  - name: .
+  - uid: VgmStream.VGMSTREAMCHANNEL._Anonymous6_e__Union
+    name: _Anonymous6_e__Union
+    href: VgmStream.VGMSTREAMCHANNEL._Anonymous6_e__Union.html
+  spec.vb:
+  - uid: VgmStream.VGMSTREAMCHANNEL
+    name: VGMSTREAMCHANNEL
+    href: VgmStream.VGMSTREAMCHANNEL.html
+  - name: .
+  - uid: VgmStream.VGMSTREAMCHANNEL._Anonymous6_e__Union
+    name: _Anonymous6_e__Union
+    href: VgmStream.VGMSTREAMCHANNEL._Anonymous6_e__Union.html
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: System.Void*
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.void
+  name: void*
+  nameWithType: void*
+  fullName: void*
+  nameWithType.vb: Void*
+  fullName.vb: Void*
+  name.vb: Void*
+  spec.csharp:
+  - uid: System.Void
+    name: void
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.void
+  - name: '*'
+  spec.vb:
+  - uid: System.Void
+    name: Void
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.void
+  - name: '*'
+- uid: System.UInt16
+  commentId: T:System.UInt16
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.uint16
+  name: ushort
+  nameWithType: ushort
+  fullName: ushort
+  nameWithType.vb: UShort
+  fullName.vb: UShort
+  name.vb: UShort
+- uid: VgmStream.VGMSTREAMCHANNEL.adpcm_coef*
+  commentId: Overload:VgmStream.VGMSTREAMCHANNEL.adpcm_coef
+  href: VgmStream.VGMSTREAMCHANNEL.html#VgmStream_VGMSTREAMCHANNEL_adpcm_coef
+  name: adpcm_coef
+  nameWithType: VGMSTREAMCHANNEL.adpcm_coef
+  fullName: VgmStream.VGMSTREAMCHANNEL.adpcm_coef
+- uid: System.Span{System.Int16}
+  commentId: T:System.Span{System.Int16}
+  parent: System
+  definition: System.Span`1
+  href: https://learn.microsoft.com/dotnet/api/system.span-1
+  name: Span<short>
+  nameWithType: Span<short>
+  fullName: System.Span<short>
+  nameWithType.vb: Span(Of Short)
+  fullName.vb: System.Span(Of Short)
+  name.vb: Span(Of Short)
+  spec.csharp:
+  - uid: System.Span`1
+    name: Span
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.span-1
+  - name: <
+  - uid: System.Int16
+    name: short
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int16
+  - name: '>'
+  spec.vb:
+  - uid: System.Span`1
+    name: Span
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.span-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Int16
+    name: Short
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int16
+  - name: )
+- uid: System.Span`1
+  commentId: T:System.Span`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.span-1
+  name: Span<T>
+  nameWithType: Span<T>
+  fullName: System.Span<T>
+  nameWithType.vb: Span(Of T)
+  fullName.vb: System.Span(Of T)
+  name.vb: Span(Of T)
+  spec.csharp:
+  - uid: System.Span`1
+    name: Span
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.span-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Span`1
+    name: Span
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.span-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: VgmStream.VGMSTREAMCHANNEL.vadpcm_coefs*
+  commentId: Overload:VgmStream.VGMSTREAMCHANNEL.vadpcm_coefs
+  href: VgmStream.VGMSTREAMCHANNEL.html#VgmStream_VGMSTREAMCHANNEL_vadpcm_coefs
+  name: vadpcm_coefs
+  nameWithType: VGMSTREAMCHANNEL.vadpcm_coefs
+  fullName: VgmStream.VGMSTREAMCHANNEL.vadpcm_coefs
+- uid: VgmStream.VGMSTREAMCHANNEL.adpcm_coef_3by32*
+  commentId: Overload:VgmStream.VGMSTREAMCHANNEL.adpcm_coef_3by32
+  href: VgmStream.VGMSTREAMCHANNEL.html#VgmStream_VGMSTREAMCHANNEL_adpcm_coef_3by32
+  name: adpcm_coef_3by32
+  nameWithType: VGMSTREAMCHANNEL.adpcm_coef_3by32
+  fullName: VgmStream.VGMSTREAMCHANNEL.adpcm_coef_3by32
+- uid: System.Span{System.Int32}
+  commentId: T:System.Span{System.Int32}
+  parent: System
+  definition: System.Span`1
+  href: https://learn.microsoft.com/dotnet/api/system.span-1
+  name: Span<int>
+  nameWithType: Span<int>
+  fullName: System.Span<int>
+  nameWithType.vb: Span(Of Integer)
+  fullName.vb: System.Span(Of Integer)
+  name.vb: Span(Of Integer)
+  spec.csharp:
+  - uid: System.Span`1
+    name: Span
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.span-1
+  - name: <
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: '>'
+  spec.vb:
+  - uid: System.Span`1
+    name: Span
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.span-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: VgmStream.VGMSTREAMCHANNEL.adpcm_history1_16*
+  commentId: Overload:VgmStream.VGMSTREAMCHANNEL.adpcm_history1_16
+  href: VgmStream.VGMSTREAMCHANNEL.html#VgmStream_VGMSTREAMCHANNEL_adpcm_history1_16
+  name: adpcm_history1_16
+  nameWithType: VGMSTREAMCHANNEL.adpcm_history1_16
+  fullName: VgmStream.VGMSTREAMCHANNEL.adpcm_history1_16
+- uid: System.Int16
+  commentId: T:System.Int16
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int16
+  name: short
+  nameWithType: short
+  fullName: short
+  nameWithType.vb: Short
+  fullName.vb: Short
+  name.vb: Short
+- uid: VgmStream.VGMSTREAMCHANNEL.adpcm_history1_32*
+  commentId: Overload:VgmStream.VGMSTREAMCHANNEL.adpcm_history1_32
+  href: VgmStream.VGMSTREAMCHANNEL.html#VgmStream_VGMSTREAMCHANNEL_adpcm_history1_32
+  name: adpcm_history1_32
+  nameWithType: VGMSTREAMCHANNEL.adpcm_history1_32
+  fullName: VgmStream.VGMSTREAMCHANNEL.adpcm_history1_32
+- uid: VgmStream.VGMSTREAMCHANNEL.adpcm_history2_16*
+  commentId: Overload:VgmStream.VGMSTREAMCHANNEL.adpcm_history2_16
+  href: VgmStream.VGMSTREAMCHANNEL.html#VgmStream_VGMSTREAMCHANNEL_adpcm_history2_16
+  name: adpcm_history2_16
+  nameWithType: VGMSTREAMCHANNEL.adpcm_history2_16
+  fullName: VgmStream.VGMSTREAMCHANNEL.adpcm_history2_16
+- uid: VgmStream.VGMSTREAMCHANNEL.adpcm_history2_32*
+  commentId: Overload:VgmStream.VGMSTREAMCHANNEL.adpcm_history2_32
+  href: VgmStream.VGMSTREAMCHANNEL.html#VgmStream_VGMSTREAMCHANNEL_adpcm_history2_32
+  name: adpcm_history2_32
+  nameWithType: VGMSTREAMCHANNEL.adpcm_history2_32
+  fullName: VgmStream.VGMSTREAMCHANNEL.adpcm_history2_32
+- uid: VgmStream.VGMSTREAMCHANNEL.adpcm_history3_16*
+  commentId: Overload:VgmStream.VGMSTREAMCHANNEL.adpcm_history3_16
+  href: VgmStream.VGMSTREAMCHANNEL.html#VgmStream_VGMSTREAMCHANNEL_adpcm_history3_16
+  name: adpcm_history3_16
+  nameWithType: VGMSTREAMCHANNEL.adpcm_history3_16
+  fullName: VgmStream.VGMSTREAMCHANNEL.adpcm_history3_16
+- uid: VgmStream.VGMSTREAMCHANNEL.adpcm_history3_32*
+  commentId: Overload:VgmStream.VGMSTREAMCHANNEL.adpcm_history3_32
+  href: VgmStream.VGMSTREAMCHANNEL.html#VgmStream_VGMSTREAMCHANNEL_adpcm_history3_32
+  name: adpcm_history3_32
+  nameWithType: VGMSTREAMCHANNEL.adpcm_history3_32
+  fullName: VgmStream.VGMSTREAMCHANNEL.adpcm_history3_32
+- uid: VgmStream.VGMSTREAMCHANNEL.adpcm_history4_16*
+  commentId: Overload:VgmStream.VGMSTREAMCHANNEL.adpcm_history4_16
+  href: VgmStream.VGMSTREAMCHANNEL.html#VgmStream_VGMSTREAMCHANNEL_adpcm_history4_16
+  name: adpcm_history4_16
+  nameWithType: VGMSTREAMCHANNEL.adpcm_history4_16
+  fullName: VgmStream.VGMSTREAMCHANNEL.adpcm_history4_16
+- uid: VgmStream.VGMSTREAMCHANNEL.adpcm_history4_32*
+  commentId: Overload:VgmStream.VGMSTREAMCHANNEL.adpcm_history4_32
+  href: VgmStream.VGMSTREAMCHANNEL.html#VgmStream_VGMSTREAMCHANNEL_adpcm_history4_32
+  name: adpcm_history4_32
+  nameWithType: VGMSTREAMCHANNEL.adpcm_history4_32
+  fullName: VgmStream.VGMSTREAMCHANNEL.adpcm_history4_32
+- uid: VgmStream.VGMSTREAMCHANNEL.adpcm_step_index*
+  commentId: Overload:VgmStream.VGMSTREAMCHANNEL.adpcm_step_index
+  href: VgmStream.VGMSTREAMCHANNEL.html#VgmStream_VGMSTREAMCHANNEL_adpcm_step_index
+  name: adpcm_step_index
+  nameWithType: VGMSTREAMCHANNEL.adpcm_step_index
+  fullName: VgmStream.VGMSTREAMCHANNEL.adpcm_step_index
+- uid: VgmStream.VGMSTREAMCHANNEL.adpcm_scale*
+  commentId: Overload:VgmStream.VGMSTREAMCHANNEL.adpcm_scale
+  href: VgmStream.VGMSTREAMCHANNEL.html#VgmStream_VGMSTREAMCHANNEL_adpcm_scale
+  name: adpcm_scale
+  nameWithType: VGMSTREAMCHANNEL.adpcm_scale
+  fullName: VgmStream.VGMSTREAMCHANNEL.adpcm_scale

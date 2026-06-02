@@ -1,0 +1,1104 @@
+### YamlMime:ManagedReference
+items:
+- uid: VgmStream.play_config_t
+  commentId: T:VgmStream.play_config_t
+  id: play_config_t
+  parent: VgmStream
+  children:
+  - VgmStream.play_config_t.body_time
+  - VgmStream.play_config_t.body_time_s
+  - VgmStream.play_config_t.body_time_set
+  - VgmStream.play_config_t.config_set
+  - VgmStream.play_config_t.fade_delay
+  - VgmStream.play_config_t.fade_delay_set
+  - VgmStream.play_config_t.fade_time
+  - VgmStream.play_config_t.fade_time_set
+  - VgmStream.play_config_t.force_loop
+  - VgmStream.play_config_t.ignore_fade
+  - VgmStream.play_config_t.ignore_loop
+  - VgmStream.play_config_t.is_mini_txtp
+  - VgmStream.play_config_t.is_txtp
+  - VgmStream.play_config_t.loop_count
+  - VgmStream.play_config_t.loop_count_set
+  - VgmStream.play_config_t.pad_begin
+  - VgmStream.play_config_t.pad_begin_s
+  - VgmStream.play_config_t.pad_begin_set
+  - VgmStream.play_config_t.pad_end
+  - VgmStream.play_config_t.pad_end_s
+  - VgmStream.play_config_t.pad_end_set
+  - VgmStream.play_config_t.play_forever
+  - VgmStream.play_config_t.really_force_loop
+  - VgmStream.play_config_t.trim_begin
+  - VgmStream.play_config_t.trim_begin_s
+  - VgmStream.play_config_t.trim_begin_set
+  - VgmStream.play_config_t.trim_end
+  - VgmStream.play_config_t.trim_end_s
+  - VgmStream.play_config_t.trim_end_set
+  langs:
+  - csharp
+  - vb
+  name: play_config_t
+  nameWithType: play_config_t
+  fullName: VgmStream.play_config_t
+  type: Struct
+  source:
+    remote:
+      path: SilverCraft.CSCore.VGMStream/InteropVgmStream/play_config_t.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: play_config_t
+    path: ../SilverCraft.CSCore.VGMStream/InteropVgmStream/play_config_t.cs
+    startLine: 2
+  assemblies:
+  - SilverCraft.CSCore.VGMStream
+  namespace: VgmStream
+  syntax:
+    content: public struct play_config_t
+    content.vb: Public Structure play_config_t
+  inheritedMembers:
+  - System.ValueType.Equals(System.Object)
+  - System.ValueType.GetHashCode
+  - System.ValueType.ToString
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetType
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+- uid: VgmStream.play_config_t.config_set
+  commentId: F:VgmStream.play_config_t.config_set
+  id: config_set
+  parent: VgmStream.play_config_t
+  langs:
+  - csharp
+  - vb
+  name: config_set
+  nameWithType: play_config_t.config_set
+  fullName: VgmStream.play_config_t.config_set
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore.VGMStream/InteropVgmStream/play_config_t.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: config_set
+    path: ../SilverCraft.CSCore.VGMStream/InteropVgmStream/play_config_t.cs
+    startLine: 4
+  assemblies:
+  - SilverCraft.CSCore.VGMStream
+  namespace: VgmStream
+  syntax:
+    content: public bool config_set
+    return:
+      type: System.Boolean
+    content.vb: Public config_set As Boolean
+- uid: VgmStream.play_config_t.play_forever
+  commentId: F:VgmStream.play_config_t.play_forever
+  id: play_forever
+  parent: VgmStream.play_config_t
+  langs:
+  - csharp
+  - vb
+  name: play_forever
+  nameWithType: play_config_t.play_forever
+  fullName: VgmStream.play_config_t.play_forever
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore.VGMStream/InteropVgmStream/play_config_t.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: play_forever
+    path: ../SilverCraft.CSCore.VGMStream/InteropVgmStream/play_config_t.cs
+    startLine: 6
+  assemblies:
+  - SilverCraft.CSCore.VGMStream
+  namespace: VgmStream
+  syntax:
+    content: public bool play_forever
+    return:
+      type: System.Boolean
+    content.vb: Public play_forever As Boolean
+- uid: VgmStream.play_config_t.ignore_loop
+  commentId: F:VgmStream.play_config_t.ignore_loop
+  id: ignore_loop
+  parent: VgmStream.play_config_t
+  langs:
+  - csharp
+  - vb
+  name: ignore_loop
+  nameWithType: play_config_t.ignore_loop
+  fullName: VgmStream.play_config_t.ignore_loop
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore.VGMStream/InteropVgmStream/play_config_t.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: ignore_loop
+    path: ../SilverCraft.CSCore.VGMStream/InteropVgmStream/play_config_t.cs
+    startLine: 8
+  assemblies:
+  - SilverCraft.CSCore.VGMStream
+  namespace: VgmStream
+  syntax:
+    content: public bool ignore_loop
+    return:
+      type: System.Boolean
+    content.vb: Public ignore_loop As Boolean
+- uid: VgmStream.play_config_t.force_loop
+  commentId: F:VgmStream.play_config_t.force_loop
+  id: force_loop
+  parent: VgmStream.play_config_t
+  langs:
+  - csharp
+  - vb
+  name: force_loop
+  nameWithType: play_config_t.force_loop
+  fullName: VgmStream.play_config_t.force_loop
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore.VGMStream/InteropVgmStream/play_config_t.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: force_loop
+    path: ../SilverCraft.CSCore.VGMStream/InteropVgmStream/play_config_t.cs
+    startLine: 10
+  assemblies:
+  - SilverCraft.CSCore.VGMStream
+  namespace: VgmStream
+  syntax:
+    content: public bool force_loop
+    return:
+      type: System.Boolean
+    content.vb: Public force_loop As Boolean
+- uid: VgmStream.play_config_t.really_force_loop
+  commentId: F:VgmStream.play_config_t.really_force_loop
+  id: really_force_loop
+  parent: VgmStream.play_config_t
+  langs:
+  - csharp
+  - vb
+  name: really_force_loop
+  nameWithType: play_config_t.really_force_loop
+  fullName: VgmStream.play_config_t.really_force_loop
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore.VGMStream/InteropVgmStream/play_config_t.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: really_force_loop
+    path: ../SilverCraft.CSCore.VGMStream/InteropVgmStream/play_config_t.cs
+    startLine: 12
+  assemblies:
+  - SilverCraft.CSCore.VGMStream
+  namespace: VgmStream
+  syntax:
+    content: public bool really_force_loop
+    return:
+      type: System.Boolean
+    content.vb: Public really_force_loop As Boolean
+- uid: VgmStream.play_config_t.ignore_fade
+  commentId: F:VgmStream.play_config_t.ignore_fade
+  id: ignore_fade
+  parent: VgmStream.play_config_t
+  langs:
+  - csharp
+  - vb
+  name: ignore_fade
+  nameWithType: play_config_t.ignore_fade
+  fullName: VgmStream.play_config_t.ignore_fade
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore.VGMStream/InteropVgmStream/play_config_t.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: ignore_fade
+    path: ../SilverCraft.CSCore.VGMStream/InteropVgmStream/play_config_t.cs
+    startLine: 14
+  assemblies:
+  - SilverCraft.CSCore.VGMStream
+  namespace: VgmStream
+  syntax:
+    content: public bool ignore_fade
+    return:
+      type: System.Boolean
+    content.vb: Public ignore_fade As Boolean
+- uid: VgmStream.play_config_t.loop_count
+  commentId: F:VgmStream.play_config_t.loop_count
+  id: loop_count
+  parent: VgmStream.play_config_t
+  langs:
+  - csharp
+  - vb
+  name: loop_count
+  nameWithType: play_config_t.loop_count
+  fullName: VgmStream.play_config_t.loop_count
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore.VGMStream/InteropVgmStream/play_config_t.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: loop_count
+    path: ../SilverCraft.CSCore.VGMStream/InteropVgmStream/play_config_t.cs
+    startLine: 16
+  assemblies:
+  - SilverCraft.CSCore.VGMStream
+  namespace: VgmStream
+  syntax:
+    content: public double loop_count
+    return:
+      type: System.Double
+    content.vb: Public loop_count As Double
+- uid: VgmStream.play_config_t.pad_begin
+  commentId: F:VgmStream.play_config_t.pad_begin
+  id: pad_begin
+  parent: VgmStream.play_config_t
+  langs:
+  - csharp
+  - vb
+  name: pad_begin
+  nameWithType: play_config_t.pad_begin
+  fullName: VgmStream.play_config_t.pad_begin
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore.VGMStream/InteropVgmStream/play_config_t.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: pad_begin
+    path: ../SilverCraft.CSCore.VGMStream/InteropVgmStream/play_config_t.cs
+    startLine: 19
+  assemblies:
+  - SilverCraft.CSCore.VGMStream
+  namespace: VgmStream
+  syntax:
+    content: public int pad_begin
+    return:
+      type: System.Int32
+    content.vb: Public pad_begin As Integer
+- uid: VgmStream.play_config_t.trim_begin
+  commentId: F:VgmStream.play_config_t.trim_begin
+  id: trim_begin
+  parent: VgmStream.play_config_t
+  langs:
+  - csharp
+  - vb
+  name: trim_begin
+  nameWithType: play_config_t.trim_begin
+  fullName: VgmStream.play_config_t.trim_begin
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore.VGMStream/InteropVgmStream/play_config_t.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: trim_begin
+    path: ../SilverCraft.CSCore.VGMStream/InteropVgmStream/play_config_t.cs
+    startLine: 22
+  assemblies:
+  - SilverCraft.CSCore.VGMStream
+  namespace: VgmStream
+  syntax:
+    content: public int trim_begin
+    return:
+      type: System.Int32
+    content.vb: Public trim_begin As Integer
+- uid: VgmStream.play_config_t.body_time
+  commentId: F:VgmStream.play_config_t.body_time
+  id: body_time
+  parent: VgmStream.play_config_t
+  langs:
+  - csharp
+  - vb
+  name: body_time
+  nameWithType: play_config_t.body_time
+  fullName: VgmStream.play_config_t.body_time
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore.VGMStream/InteropVgmStream/play_config_t.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: body_time
+    path: ../SilverCraft.CSCore.VGMStream/InteropVgmStream/play_config_t.cs
+    startLine: 25
+  assemblies:
+  - SilverCraft.CSCore.VGMStream
+  namespace: VgmStream
+  syntax:
+    content: public int body_time
+    return:
+      type: System.Int32
+    content.vb: Public body_time As Integer
+- uid: VgmStream.play_config_t.trim_end
+  commentId: F:VgmStream.play_config_t.trim_end
+  id: trim_end
+  parent: VgmStream.play_config_t
+  langs:
+  - csharp
+  - vb
+  name: trim_end
+  nameWithType: play_config_t.trim_end
+  fullName: VgmStream.play_config_t.trim_end
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore.VGMStream/InteropVgmStream/play_config_t.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: trim_end
+    path: ../SilverCraft.CSCore.VGMStream/InteropVgmStream/play_config_t.cs
+    startLine: 28
+  assemblies:
+  - SilverCraft.CSCore.VGMStream
+  namespace: VgmStream
+  syntax:
+    content: public int trim_end
+    return:
+      type: System.Int32
+    content.vb: Public trim_end As Integer
+- uid: VgmStream.play_config_t.fade_delay
+  commentId: F:VgmStream.play_config_t.fade_delay
+  id: fade_delay
+  parent: VgmStream.play_config_t
+  langs:
+  - csharp
+  - vb
+  name: fade_delay
+  nameWithType: play_config_t.fade_delay
+  fullName: VgmStream.play_config_t.fade_delay
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore.VGMStream/InteropVgmStream/play_config_t.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: fade_delay
+    path: ../SilverCraft.CSCore.VGMStream/InteropVgmStream/play_config_t.cs
+    startLine: 30
+  assemblies:
+  - SilverCraft.CSCore.VGMStream
+  namespace: VgmStream
+  syntax:
+    content: public double fade_delay
+    return:
+      type: System.Double
+    content.vb: Public fade_delay As Double
+- uid: VgmStream.play_config_t.fade_time
+  commentId: F:VgmStream.play_config_t.fade_time
+  id: fade_time
+  parent: VgmStream.play_config_t
+  langs:
+  - csharp
+  - vb
+  name: fade_time
+  nameWithType: play_config_t.fade_time
+  fullName: VgmStream.play_config_t.fade_time
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore.VGMStream/InteropVgmStream/play_config_t.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: fade_time
+    path: ../SilverCraft.CSCore.VGMStream/InteropVgmStream/play_config_t.cs
+    startLine: 32
+  assemblies:
+  - SilverCraft.CSCore.VGMStream
+  namespace: VgmStream
+  syntax:
+    content: public double fade_time
+    return:
+      type: System.Double
+    content.vb: Public fade_time As Double
+- uid: VgmStream.play_config_t.pad_end
+  commentId: F:VgmStream.play_config_t.pad_end
+  id: pad_end
+  parent: VgmStream.play_config_t
+  langs:
+  - csharp
+  - vb
+  name: pad_end
+  nameWithType: play_config_t.pad_end
+  fullName: VgmStream.play_config_t.pad_end
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore.VGMStream/InteropVgmStream/play_config_t.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: pad_end
+    path: ../SilverCraft.CSCore.VGMStream/InteropVgmStream/play_config_t.cs
+    startLine: 35
+  assemblies:
+  - SilverCraft.CSCore.VGMStream
+  namespace: VgmStream
+  syntax:
+    content: public int pad_end
+    return:
+      type: System.Int32
+    content.vb: Public pad_end As Integer
+- uid: VgmStream.play_config_t.pad_begin_s
+  commentId: F:VgmStream.play_config_t.pad_begin_s
+  id: pad_begin_s
+  parent: VgmStream.play_config_t
+  langs:
+  - csharp
+  - vb
+  name: pad_begin_s
+  nameWithType: play_config_t.pad_begin_s
+  fullName: VgmStream.play_config_t.pad_begin_s
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore.VGMStream/InteropVgmStream/play_config_t.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: pad_begin_s
+    path: ../SilverCraft.CSCore.VGMStream/InteropVgmStream/play_config_t.cs
+    startLine: 37
+  assemblies:
+  - SilverCraft.CSCore.VGMStream
+  namespace: VgmStream
+  syntax:
+    content: public double pad_begin_s
+    return:
+      type: System.Double
+    content.vb: Public pad_begin_s As Double
+- uid: VgmStream.play_config_t.trim_begin_s
+  commentId: F:VgmStream.play_config_t.trim_begin_s
+  id: trim_begin_s
+  parent: VgmStream.play_config_t
+  langs:
+  - csharp
+  - vb
+  name: trim_begin_s
+  nameWithType: play_config_t.trim_begin_s
+  fullName: VgmStream.play_config_t.trim_begin_s
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore.VGMStream/InteropVgmStream/play_config_t.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: trim_begin_s
+    path: ../SilverCraft.CSCore.VGMStream/InteropVgmStream/play_config_t.cs
+    startLine: 39
+  assemblies:
+  - SilverCraft.CSCore.VGMStream
+  namespace: VgmStream
+  syntax:
+    content: public double trim_begin_s
+    return:
+      type: System.Double
+    content.vb: Public trim_begin_s As Double
+- uid: VgmStream.play_config_t.body_time_s
+  commentId: F:VgmStream.play_config_t.body_time_s
+  id: body_time_s
+  parent: VgmStream.play_config_t
+  langs:
+  - csharp
+  - vb
+  name: body_time_s
+  nameWithType: play_config_t.body_time_s
+  fullName: VgmStream.play_config_t.body_time_s
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore.VGMStream/InteropVgmStream/play_config_t.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: body_time_s
+    path: ../SilverCraft.CSCore.VGMStream/InteropVgmStream/play_config_t.cs
+    startLine: 41
+  assemblies:
+  - SilverCraft.CSCore.VGMStream
+  namespace: VgmStream
+  syntax:
+    content: public double body_time_s
+    return:
+      type: System.Double
+    content.vb: Public body_time_s As Double
+- uid: VgmStream.play_config_t.trim_end_s
+  commentId: F:VgmStream.play_config_t.trim_end_s
+  id: trim_end_s
+  parent: VgmStream.play_config_t
+  langs:
+  - csharp
+  - vb
+  name: trim_end_s
+  nameWithType: play_config_t.trim_end_s
+  fullName: VgmStream.play_config_t.trim_end_s
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore.VGMStream/InteropVgmStream/play_config_t.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: trim_end_s
+    path: ../SilverCraft.CSCore.VGMStream/InteropVgmStream/play_config_t.cs
+    startLine: 43
+  assemblies:
+  - SilverCraft.CSCore.VGMStream
+  namespace: VgmStream
+  syntax:
+    content: public double trim_end_s
+    return:
+      type: System.Double
+    content.vb: Public trim_end_s As Double
+- uid: VgmStream.play_config_t.pad_end_s
+  commentId: F:VgmStream.play_config_t.pad_end_s
+  id: pad_end_s
+  parent: VgmStream.play_config_t
+  langs:
+  - csharp
+  - vb
+  name: pad_end_s
+  nameWithType: play_config_t.pad_end_s
+  fullName: VgmStream.play_config_t.pad_end_s
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore.VGMStream/InteropVgmStream/play_config_t.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: pad_end_s
+    path: ../SilverCraft.CSCore.VGMStream/InteropVgmStream/play_config_t.cs
+    startLine: 45
+  assemblies:
+  - SilverCraft.CSCore.VGMStream
+  namespace: VgmStream
+  syntax:
+    content: public double pad_end_s
+    return:
+      type: System.Double
+    content.vb: Public pad_end_s As Double
+- uid: VgmStream.play_config_t.pad_begin_set
+  commentId: F:VgmStream.play_config_t.pad_begin_set
+  id: pad_begin_set
+  parent: VgmStream.play_config_t
+  langs:
+  - csharp
+  - vb
+  name: pad_begin_set
+  nameWithType: play_config_t.pad_begin_set
+  fullName: VgmStream.play_config_t.pad_begin_set
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore.VGMStream/InteropVgmStream/play_config_t.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: pad_begin_set
+    path: ../SilverCraft.CSCore.VGMStream/InteropVgmStream/play_config_t.cs
+    startLine: 47
+  assemblies:
+  - SilverCraft.CSCore.VGMStream
+  namespace: VgmStream
+  syntax:
+    content: public bool pad_begin_set
+    return:
+      type: System.Boolean
+    content.vb: Public pad_begin_set As Boolean
+- uid: VgmStream.play_config_t.trim_begin_set
+  commentId: F:VgmStream.play_config_t.trim_begin_set
+  id: trim_begin_set
+  parent: VgmStream.play_config_t
+  langs:
+  - csharp
+  - vb
+  name: trim_begin_set
+  nameWithType: play_config_t.trim_begin_set
+  fullName: VgmStream.play_config_t.trim_begin_set
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore.VGMStream/InteropVgmStream/play_config_t.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: trim_begin_set
+    path: ../SilverCraft.CSCore.VGMStream/InteropVgmStream/play_config_t.cs
+    startLine: 49
+  assemblies:
+  - SilverCraft.CSCore.VGMStream
+  namespace: VgmStream
+  syntax:
+    content: public bool trim_begin_set
+    return:
+      type: System.Boolean
+    content.vb: Public trim_begin_set As Boolean
+- uid: VgmStream.play_config_t.body_time_set
+  commentId: F:VgmStream.play_config_t.body_time_set
+  id: body_time_set
+  parent: VgmStream.play_config_t
+  langs:
+  - csharp
+  - vb
+  name: body_time_set
+  nameWithType: play_config_t.body_time_set
+  fullName: VgmStream.play_config_t.body_time_set
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore.VGMStream/InteropVgmStream/play_config_t.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: body_time_set
+    path: ../SilverCraft.CSCore.VGMStream/InteropVgmStream/play_config_t.cs
+    startLine: 51
+  assemblies:
+  - SilverCraft.CSCore.VGMStream
+  namespace: VgmStream
+  syntax:
+    content: public bool body_time_set
+    return:
+      type: System.Boolean
+    content.vb: Public body_time_set As Boolean
+- uid: VgmStream.play_config_t.loop_count_set
+  commentId: F:VgmStream.play_config_t.loop_count_set
+  id: loop_count_set
+  parent: VgmStream.play_config_t
+  langs:
+  - csharp
+  - vb
+  name: loop_count_set
+  nameWithType: play_config_t.loop_count_set
+  fullName: VgmStream.play_config_t.loop_count_set
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore.VGMStream/InteropVgmStream/play_config_t.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: loop_count_set
+    path: ../SilverCraft.CSCore.VGMStream/InteropVgmStream/play_config_t.cs
+    startLine: 53
+  assemblies:
+  - SilverCraft.CSCore.VGMStream
+  namespace: VgmStream
+  syntax:
+    content: public bool loop_count_set
+    return:
+      type: System.Boolean
+    content.vb: Public loop_count_set As Boolean
+- uid: VgmStream.play_config_t.trim_end_set
+  commentId: F:VgmStream.play_config_t.trim_end_set
+  id: trim_end_set
+  parent: VgmStream.play_config_t
+  langs:
+  - csharp
+  - vb
+  name: trim_end_set
+  nameWithType: play_config_t.trim_end_set
+  fullName: VgmStream.play_config_t.trim_end_set
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore.VGMStream/InteropVgmStream/play_config_t.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: trim_end_set
+    path: ../SilverCraft.CSCore.VGMStream/InteropVgmStream/play_config_t.cs
+    startLine: 55
+  assemblies:
+  - SilverCraft.CSCore.VGMStream
+  namespace: VgmStream
+  syntax:
+    content: public bool trim_end_set
+    return:
+      type: System.Boolean
+    content.vb: Public trim_end_set As Boolean
+- uid: VgmStream.play_config_t.fade_delay_set
+  commentId: F:VgmStream.play_config_t.fade_delay_set
+  id: fade_delay_set
+  parent: VgmStream.play_config_t
+  langs:
+  - csharp
+  - vb
+  name: fade_delay_set
+  nameWithType: play_config_t.fade_delay_set
+  fullName: VgmStream.play_config_t.fade_delay_set
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore.VGMStream/InteropVgmStream/play_config_t.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: fade_delay_set
+    path: ../SilverCraft.CSCore.VGMStream/InteropVgmStream/play_config_t.cs
+    startLine: 57
+  assemblies:
+  - SilverCraft.CSCore.VGMStream
+  namespace: VgmStream
+  syntax:
+    content: public bool fade_delay_set
+    return:
+      type: System.Boolean
+    content.vb: Public fade_delay_set As Boolean
+- uid: VgmStream.play_config_t.fade_time_set
+  commentId: F:VgmStream.play_config_t.fade_time_set
+  id: fade_time_set
+  parent: VgmStream.play_config_t
+  langs:
+  - csharp
+  - vb
+  name: fade_time_set
+  nameWithType: play_config_t.fade_time_set
+  fullName: VgmStream.play_config_t.fade_time_set
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore.VGMStream/InteropVgmStream/play_config_t.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: fade_time_set
+    path: ../SilverCraft.CSCore.VGMStream/InteropVgmStream/play_config_t.cs
+    startLine: 59
+  assemblies:
+  - SilverCraft.CSCore.VGMStream
+  namespace: VgmStream
+  syntax:
+    content: public bool fade_time_set
+    return:
+      type: System.Boolean
+    content.vb: Public fade_time_set As Boolean
+- uid: VgmStream.play_config_t.pad_end_set
+  commentId: F:VgmStream.play_config_t.pad_end_set
+  id: pad_end_set
+  parent: VgmStream.play_config_t
+  langs:
+  - csharp
+  - vb
+  name: pad_end_set
+  nameWithType: play_config_t.pad_end_set
+  fullName: VgmStream.play_config_t.pad_end_set
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore.VGMStream/InteropVgmStream/play_config_t.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: pad_end_set
+    path: ../SilverCraft.CSCore.VGMStream/InteropVgmStream/play_config_t.cs
+    startLine: 61
+  assemblies:
+  - SilverCraft.CSCore.VGMStream
+  namespace: VgmStream
+  syntax:
+    content: public bool pad_end_set
+    return:
+      type: System.Boolean
+    content.vb: Public pad_end_set As Boolean
+- uid: VgmStream.play_config_t.is_txtp
+  commentId: F:VgmStream.play_config_t.is_txtp
+  id: is_txtp
+  parent: VgmStream.play_config_t
+  langs:
+  - csharp
+  - vb
+  name: is_txtp
+  nameWithType: play_config_t.is_txtp
+  fullName: VgmStream.play_config_t.is_txtp
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore.VGMStream/InteropVgmStream/play_config_t.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: is_txtp
+    path: ../SilverCraft.CSCore.VGMStream/InteropVgmStream/play_config_t.cs
+    startLine: 63
+  assemblies:
+  - SilverCraft.CSCore.VGMStream
+  namespace: VgmStream
+  syntax:
+    content: public bool is_txtp
+    return:
+      type: System.Boolean
+    content.vb: Public is_txtp As Boolean
+- uid: VgmStream.play_config_t.is_mini_txtp
+  commentId: F:VgmStream.play_config_t.is_mini_txtp
+  id: is_mini_txtp
+  parent: VgmStream.play_config_t
+  langs:
+  - csharp
+  - vb
+  name: is_mini_txtp
+  nameWithType: play_config_t.is_mini_txtp
+  fullName: VgmStream.play_config_t.is_mini_txtp
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore.VGMStream/InteropVgmStream/play_config_t.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: is_mini_txtp
+    path: ../SilverCraft.CSCore.VGMStream/InteropVgmStream/play_config_t.cs
+    startLine: 65
+  assemblies:
+  - SilverCraft.CSCore.VGMStream
+  namespace: VgmStream
+  syntax:
+    content: public bool is_mini_txtp
+    return:
+      type: System.Boolean
+    content.vb: Public is_mini_txtp As Boolean
+references:
+- uid: VgmStream
+  commentId: N:VgmStream
+  href: VgmStream.html
+  name: VgmStream
+  nameWithType: VgmStream
+  fullName: VgmStream
+- uid: System.ValueType.Equals(System.Object)
+  commentId: M:System.ValueType.Equals(System.Object)
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  name: Equals(object)
+  nameWithType: ValueType.Equals(object)
+  fullName: System.ValueType.Equals(object)
+  nameWithType.vb: ValueType.Equals(Object)
+  fullName.vb: System.ValueType.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.ValueType.GetHashCode
+  commentId: M:System.ValueType.GetHashCode
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  name: GetHashCode()
+  nameWithType: ValueType.GetHashCode()
+  fullName: System.ValueType.GetHashCode()
+  spec.csharp:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  - name: (
+  - name: )
+- uid: System.ValueType.ToString
+  commentId: M:System.ValueType.ToString
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  name: ToString()
+  nameWithType: ValueType.ToString()
+  fullName: System.ValueType.ToString()
+  spec.csharp:
+  - uid: System.ValueType.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.ValueType
+  commentId: T:System.ValueType
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype
+  name: ValueType
+  nameWithType: ValueType
+  fullName: System.ValueType
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: System.Double
+  commentId: T:System.Double
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.double
+  name: double
+  nameWithType: double
+  fullName: double
+  nameWithType.vb: Double
+  fullName.vb: Double
+  name.vb: Double
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer

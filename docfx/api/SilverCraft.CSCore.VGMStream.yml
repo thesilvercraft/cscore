@@ -1,0 +1,23 @@
+### YamlMime:ManagedReference
+items:
+- uid: SilverCraft.CSCore.VGMStream
+  commentId: N:SilverCraft.CSCore.VGMStream
+  id: SilverCraft.CSCore.VGMStream
+  children:
+  - SilverCraft.CSCore.VGMStream.VGMStreamWaveSource
+  langs:
+  - csharp
+  - vb
+  name: SilverCraft.CSCore.VGMStream
+  nameWithType: SilverCraft.CSCore.VGMStream
+  fullName: SilverCraft.CSCore.VGMStream
+  type: Namespace
+  assemblies:
+  - SilverCraft.CSCore.VGMStream
+references:
+- uid: SilverCraft.CSCore.VGMStream.VGMStreamWaveSource
+  commentId: T:SilverCraft.CSCore.VGMStream.VGMStreamWaveSource
+  href: SilverCraft.CSCore.VGMStream.VGMStreamWaveSource.html
+  name: VGMStreamWaveSource
+  nameWithType: VGMStreamWaveSource
+  fullName: SilverCraft.CSCore.VGMStream.VGMStreamWaveSource

@@ -1,0 +1,337 @@
+### YamlMime:ManagedReference
+items:
+- uid: VgmStream.VGMSTREAMCHANNEL._Anonymous2_e__Union
+  commentId: T:VgmStream.VGMSTREAMCHANNEL._Anonymous2_e__Union
+  id: VGMSTREAMCHANNEL._Anonymous2_e__Union
+  parent: VgmStream
+  children:
+  - VgmStream.VGMSTREAMCHANNEL._Anonymous2_e__Union.adpcm_history1_16
+  - VgmStream.VGMSTREAMCHANNEL._Anonymous2_e__Union.adpcm_history1_32
+  langs:
+  - csharp
+  - vb
+  name: VGMSTREAMCHANNEL._Anonymous2_e__Union
+  nameWithType: VGMSTREAMCHANNEL._Anonymous2_e__Union
+  fullName: VgmStream.VGMSTREAMCHANNEL._Anonymous2_e__Union
+  type: Struct
+  source:
+    remote:
+      path: SilverCraft.CSCore.VGMStream/InteropVgmStream/VGMSTREAMCHANNEL.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: _Anonymous2_e__Union
+    path: ../SilverCraft.CSCore.VGMStream/InteropVgmStream/VGMSTREAMCHANNEL.cs
+    startLine: 216
+  assemblies:
+  - SilverCraft.CSCore.VGMStream
+  namespace: VgmStream
+  syntax:
+    content: public struct VGMSTREAMCHANNEL._Anonymous2_e__Union
+    content.vb: Public Structure VGMSTREAMCHANNEL._Anonymous2_e__Union
+  inheritedMembers:
+  - System.ValueType.Equals(System.Object)
+  - System.ValueType.GetHashCode
+  - System.ValueType.ToString
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetType
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+- uid: VgmStream.VGMSTREAMCHANNEL._Anonymous2_e__Union.adpcm_history1_16
+  commentId: F:VgmStream.VGMSTREAMCHANNEL._Anonymous2_e__Union.adpcm_history1_16
+  id: adpcm_history1_16
+  parent: VgmStream.VGMSTREAMCHANNEL._Anonymous2_e__Union
+  langs:
+  - csharp
+  - vb
+  name: adpcm_history1_16
+  nameWithType: VGMSTREAMCHANNEL._Anonymous2_e__Union.adpcm_history1_16
+  fullName: VgmStream.VGMSTREAMCHANNEL._Anonymous2_e__Union.adpcm_history1_16
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore.VGMStream/InteropVgmStream/VGMSTREAMCHANNEL.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: adpcm_history1_16
+    path: ../SilverCraft.CSCore.VGMStream/InteropVgmStream/VGMSTREAMCHANNEL.cs
+    startLine: 221
+  assemblies:
+  - SilverCraft.CSCore.VGMStream
+  namespace: VgmStream
+  syntax:
+    content: public short adpcm_history1_16
+    return:
+      type: System.Int16
+    content.vb: Public adpcm_history1_16 As Short
+- uid: VgmStream.VGMSTREAMCHANNEL._Anonymous2_e__Union.adpcm_history1_32
+  commentId: F:VgmStream.VGMSTREAMCHANNEL._Anonymous2_e__Union.adpcm_history1_32
+  id: adpcm_history1_32
+  parent: VgmStream.VGMSTREAMCHANNEL._Anonymous2_e__Union
+  langs:
+  - csharp
+  - vb
+  name: adpcm_history1_32
+  nameWithType: VGMSTREAMCHANNEL._Anonymous2_e__Union.adpcm_history1_32
+  fullName: VgmStream.VGMSTREAMCHANNEL._Anonymous2_e__Union.adpcm_history1_32
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore.VGMStream/InteropVgmStream/VGMSTREAMCHANNEL.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: adpcm_history1_32
+    path: ../SilverCraft.CSCore.VGMStream/InteropVgmStream/VGMSTREAMCHANNEL.cs
+    startLine: 225
+  assemblies:
+  - SilverCraft.CSCore.VGMStream
+  namespace: VgmStream
+  syntax:
+    content: public int adpcm_history1_32
+    return:
+      type: System.Int32
+    content.vb: Public adpcm_history1_32 As Integer
+references:
+- uid: VgmStream
+  commentId: N:VgmStream
+  href: VgmStream.html
+  name: VgmStream
+  nameWithType: VgmStream
+  fullName: VgmStream
+- uid: System.ValueType.Equals(System.Object)
+  commentId: M:System.ValueType.Equals(System.Object)
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  name: Equals(object)
+  nameWithType: ValueType.Equals(object)
+  fullName: System.ValueType.Equals(object)
+  nameWithType.vb: ValueType.Equals(Object)
+  fullName.vb: System.ValueType.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.ValueType.GetHashCode
+  commentId: M:System.ValueType.GetHashCode
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  name: GetHashCode()
+  nameWithType: ValueType.GetHashCode()
+  fullName: System.ValueType.GetHashCode()
+  spec.csharp:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  - name: (
+  - name: )
+- uid: System.ValueType.ToString
+  commentId: M:System.ValueType.ToString
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  name: ToString()
+  nameWithType: ValueType.ToString()
+  fullName: System.ValueType.ToString()
+  spec.csharp:
+  - uid: System.ValueType.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.ValueType
+  commentId: T:System.ValueType
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype
+  name: ValueType
+  nameWithType: ValueType
+  fullName: System.ValueType
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Int16
+  commentId: T:System.Int16
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int16
+  name: short
+  nameWithType: short
+  fullName: short
+  nameWithType.vb: Short
+  fullName.vb: Short
+  name.vb: Short
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer

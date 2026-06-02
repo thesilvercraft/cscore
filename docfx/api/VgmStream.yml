@@ -1,0 +1,354 @@
+### YamlMime:ManagedReference
+items:
+- uid: VgmStream
+  commentId: N:VgmStream
+  id: VgmStream
+  children:
+  - VgmStream.NativeMethods
+  - VgmStream.STREAMFILE
+  - VgmStream.VGMSTREAM
+  - VgmStream.VGMSTREAM._stream_name_e__FixedBuffer
+  - VgmStream.VGMSTREAMCHANNEL
+  - VgmStream.VGMSTREAMCHANNEL._Anonymous1_e__Union
+  - VgmStream.VGMSTREAMCHANNEL._Anonymous1_e__Union._adpcm_coef_3by32_e__FixedBuffer
+  - VgmStream.VGMSTREAMCHANNEL._Anonymous1_e__Union._adpcm_coef_e__FixedBuffer
+  - VgmStream.VGMSTREAMCHANNEL._Anonymous1_e__Union._vadpcm_coefs_e__FixedBuffer
+  - VgmStream.VGMSTREAMCHANNEL._Anonymous2_e__Union
+  - VgmStream.VGMSTREAMCHANNEL._Anonymous3_e__Union
+  - VgmStream.VGMSTREAMCHANNEL._Anonymous4_e__Union
+  - VgmStream.VGMSTREAMCHANNEL._Anonymous5_e__Union
+  - VgmStream.VGMSTREAMCHANNEL._Anonymous6_e__Union
+  - VgmStream.coding_t
+  - VgmStream.layout_t
+  - VgmStream.meta_t
+  - VgmStream.play_config_t
+  - VgmStream.play_state_t
+  langs:
+  - csharp
+  - vb
+  name: VgmStream
+  nameWithType: VgmStream
+  fullName: VgmStream
+  type: Namespace
+  assemblies:
+  - SilverCraft.CSCore.VGMStream
+references:
+- uid: VgmStream.coding_t
+  commentId: T:VgmStream.coding_t
+  parent: VgmStream
+  href: VgmStream.coding_t.html
+  name: coding_t
+  nameWithType: coding_t
+  fullName: VgmStream.coding_t
+- uid: VgmStream.layout_t
+  commentId: T:VgmStream.layout_t
+  parent: VgmStream
+  href: VgmStream.layout_t.html
+  name: layout_t
+  nameWithType: layout_t
+  fullName: VgmStream.layout_t
+- uid: VgmStream.meta_t
+  commentId: T:VgmStream.meta_t
+  parent: VgmStream
+  href: VgmStream.meta_t.html
+  name: meta_t
+  nameWithType: meta_t
+  fullName: VgmStream.meta_t
+- uid: VgmStream.NativeMethods
+  commentId: T:VgmStream.NativeMethods
+  href: VgmStream.NativeMethods.html
+  name: NativeMethods
+  nameWithType: NativeMethods
+  fullName: VgmStream.NativeMethods
+- uid: VgmStream.play_config_t
+  commentId: T:VgmStream.play_config_t
+  parent: VgmStream
+  href: VgmStream.play_config_t.html
+  name: play_config_t
+  nameWithType: play_config_t
+  fullName: VgmStream.play_config_t
+- uid: VgmStream.play_state_t
+  commentId: T:VgmStream.play_state_t
+  parent: VgmStream
+  href: VgmStream.play_state_t.html
+  name: play_state_t
+  nameWithType: play_state_t
+  fullName: VgmStream.play_state_t
+- uid: VgmStream.STREAMFILE
+  commentId: T:VgmStream.STREAMFILE
+  href: VgmStream.STREAMFILE.html
+  name: STREAMFILE
+  nameWithType: STREAMFILE
+  fullName: VgmStream.STREAMFILE
+- uid: VgmStream.VGMSTREAM
+  commentId: T:VgmStream.VGMSTREAM
+  href: VgmStream.VGMSTREAM.html
+  name: VGMSTREAM
+  nameWithType: VGMSTREAM
+  fullName: VgmStream.VGMSTREAM
+- uid: VgmStream.VGMSTREAM._stream_name_e__FixedBuffer
+  commentId: T:VgmStream.VGMSTREAM._stream_name_e__FixedBuffer
+  parent: VgmStream
+  href: VgmStream.VGMSTREAM.html
+  name: VGMSTREAM._stream_name_e__FixedBuffer
+  nameWithType: VGMSTREAM._stream_name_e__FixedBuffer
+  fullName: VgmStream.VGMSTREAM._stream_name_e__FixedBuffer
+  spec.csharp:
+  - uid: VgmStream.VGMSTREAM
+    name: VGMSTREAM
+    href: VgmStream.VGMSTREAM.html
+  - name: .
+  - uid: VgmStream.VGMSTREAM._stream_name_e__FixedBuffer
+    name: _stream_name_e__FixedBuffer
+    href: VgmStream.VGMSTREAM._stream_name_e__FixedBuffer.html
+  spec.vb:
+  - uid: VgmStream.VGMSTREAM
+    name: VGMSTREAM
+    href: VgmStream.VGMSTREAM.html
+  - name: .
+  - uid: VgmStream.VGMSTREAM._stream_name_e__FixedBuffer
+    name: _stream_name_e__FixedBuffer
+    href: VgmStream.VGMSTREAM._stream_name_e__FixedBuffer.html
+- uid: VgmStream.VGMSTREAMCHANNEL
+  commentId: T:VgmStream.VGMSTREAMCHANNEL
+  href: VgmStream.VGMSTREAMCHANNEL.html
+  name: VGMSTREAMCHANNEL
+  nameWithType: VGMSTREAMCHANNEL
+  fullName: VgmStream.VGMSTREAMCHANNEL
+- uid: VgmStream.VGMSTREAMCHANNEL._Anonymous1_e__Union
+  commentId: T:VgmStream.VGMSTREAMCHANNEL._Anonymous1_e__Union
+  parent: VgmStream
+  href: VgmStream.VGMSTREAMCHANNEL.html
+  name: VGMSTREAMCHANNEL._Anonymous1_e__Union
+  nameWithType: VGMSTREAMCHANNEL._Anonymous1_e__Union
+  fullName: VgmStream.VGMSTREAMCHANNEL._Anonymous1_e__Union
+  spec.csharp:
+  - uid: VgmStream.VGMSTREAMCHANNEL
+    name: VGMSTREAMCHANNEL
+    href: VgmStream.VGMSTREAMCHANNEL.html
+  - name: .
+  - uid: VgmStream.VGMSTREAMCHANNEL._Anonymous1_e__Union
+    name: _Anonymous1_e__Union
+    href: VgmStream.VGMSTREAMCHANNEL._Anonymous1_e__Union.html
+  spec.vb:
+  - uid: VgmStream.VGMSTREAMCHANNEL
+    name: VGMSTREAMCHANNEL
+    href: VgmStream.VGMSTREAMCHANNEL.html
+  - name: .
+  - uid: VgmStream.VGMSTREAMCHANNEL._Anonymous1_e__Union
+    name: _Anonymous1_e__Union
+    href: VgmStream.VGMSTREAMCHANNEL._Anonymous1_e__Union.html
+- uid: VgmStream.VGMSTREAMCHANNEL._Anonymous1_e__Union._adpcm_coef_e__FixedBuffer
+  commentId: T:VgmStream.VGMSTREAMCHANNEL._Anonymous1_e__Union._adpcm_coef_e__FixedBuffer
+  parent: VgmStream
+  href: VgmStream.VGMSTREAMCHANNEL.html
+  name: VGMSTREAMCHANNEL._Anonymous1_e__Union._adpcm_coef_e__FixedBuffer
+  nameWithType: VGMSTREAMCHANNEL._Anonymous1_e__Union._adpcm_coef_e__FixedBuffer
+  fullName: VgmStream.VGMSTREAMCHANNEL._Anonymous1_e__Union._adpcm_coef_e__FixedBuffer
+  spec.csharp:
+  - uid: VgmStream.VGMSTREAMCHANNEL
+    name: VGMSTREAMCHANNEL
+    href: VgmStream.VGMSTREAMCHANNEL.html
+  - name: .
+  - uid: VgmStream.VGMSTREAMCHANNEL._Anonymous1_e__Union
+    name: _Anonymous1_e__Union
+    href: VgmStream.VGMSTREAMCHANNEL._Anonymous1_e__Union.html
+  - name: .
+  - uid: VgmStream.VGMSTREAMCHANNEL._Anonymous1_e__Union._adpcm_coef_e__FixedBuffer
+    name: _adpcm_coef_e__FixedBuffer
+    href: VgmStream.VGMSTREAMCHANNEL._Anonymous1_e__Union._adpcm_coef_e__FixedBuffer.html
+  spec.vb:
+  - uid: VgmStream.VGMSTREAMCHANNEL
+    name: VGMSTREAMCHANNEL
+    href: VgmStream.VGMSTREAMCHANNEL.html
+  - name: .
+  - uid: VgmStream.VGMSTREAMCHANNEL._Anonymous1_e__Union
+    name: _Anonymous1_e__Union
+    href: VgmStream.VGMSTREAMCHANNEL._Anonymous1_e__Union.html
+  - name: .
+  - uid: VgmStream.VGMSTREAMCHANNEL._Anonymous1_e__Union._adpcm_coef_e__FixedBuffer
+    name: _adpcm_coef_e__FixedBuffer
+    href: VgmStream.VGMSTREAMCHANNEL._Anonymous1_e__Union._adpcm_coef_e__FixedBuffer.html
+- uid: VgmStream.VGMSTREAMCHANNEL._Anonymous1_e__Union._vadpcm_coefs_e__FixedBuffer
+  commentId: T:VgmStream.VGMSTREAMCHANNEL._Anonymous1_e__Union._vadpcm_coefs_e__FixedBuffer
+  parent: VgmStream
+  href: VgmStream.VGMSTREAMCHANNEL.html
+  name: VGMSTREAMCHANNEL._Anonymous1_e__Union._vadpcm_coefs_e__FixedBuffer
+  nameWithType: VGMSTREAMCHANNEL._Anonymous1_e__Union._vadpcm_coefs_e__FixedBuffer
+  fullName: VgmStream.VGMSTREAMCHANNEL._Anonymous1_e__Union._vadpcm_coefs_e__FixedBuffer
+  spec.csharp:
+  - uid: VgmStream.VGMSTREAMCHANNEL
+    name: VGMSTREAMCHANNEL
+    href: VgmStream.VGMSTREAMCHANNEL.html
+  - name: .
+  - uid: VgmStream.VGMSTREAMCHANNEL._Anonymous1_e__Union
+    name: _Anonymous1_e__Union
+    href: VgmStream.VGMSTREAMCHANNEL._Anonymous1_e__Union.html
+  - name: .
+  - uid: VgmStream.VGMSTREAMCHANNEL._Anonymous1_e__Union._vadpcm_coefs_e__FixedBuffer
+    name: _vadpcm_coefs_e__FixedBuffer
+    href: VgmStream.VGMSTREAMCHANNEL._Anonymous1_e__Union._vadpcm_coefs_e__FixedBuffer.html
+  spec.vb:
+  - uid: VgmStream.VGMSTREAMCHANNEL
+    name: VGMSTREAMCHANNEL
+    href: VgmStream.VGMSTREAMCHANNEL.html
+  - name: .
+  - uid: VgmStream.VGMSTREAMCHANNEL._Anonymous1_e__Union
+    name: _Anonymous1_e__Union
+    href: VgmStream.VGMSTREAMCHANNEL._Anonymous1_e__Union.html
+  - name: .
+  - uid: VgmStream.VGMSTREAMCHANNEL._Anonymous1_e__Union._vadpcm_coefs_e__FixedBuffer
+    name: _vadpcm_coefs_e__FixedBuffer
+    href: VgmStream.VGMSTREAMCHANNEL._Anonymous1_e__Union._vadpcm_coefs_e__FixedBuffer.html
+- uid: VgmStream.VGMSTREAMCHANNEL._Anonymous1_e__Union._adpcm_coef_3by32_e__FixedBuffer
+  commentId: T:VgmStream.VGMSTREAMCHANNEL._Anonymous1_e__Union._adpcm_coef_3by32_e__FixedBuffer
+  parent: VgmStream
+  href: VgmStream.VGMSTREAMCHANNEL.html
+  name: VGMSTREAMCHANNEL._Anonymous1_e__Union._adpcm_coef_3by32_e__FixedBuffer
+  nameWithType: VGMSTREAMCHANNEL._Anonymous1_e__Union._adpcm_coef_3by32_e__FixedBuffer
+  fullName: VgmStream.VGMSTREAMCHANNEL._Anonymous1_e__Union._adpcm_coef_3by32_e__FixedBuffer
+  spec.csharp:
+  - uid: VgmStream.VGMSTREAMCHANNEL
+    name: VGMSTREAMCHANNEL
+    href: VgmStream.VGMSTREAMCHANNEL.html
+  - name: .
+  - uid: VgmStream.VGMSTREAMCHANNEL._Anonymous1_e__Union
+    name: _Anonymous1_e__Union
+    href: VgmStream.VGMSTREAMCHANNEL._Anonymous1_e__Union.html
+  - name: .
+  - uid: VgmStream.VGMSTREAMCHANNEL._Anonymous1_e__Union._adpcm_coef_3by32_e__FixedBuffer
+    name: _adpcm_coef_3by32_e__FixedBuffer
+    href: VgmStream.VGMSTREAMCHANNEL._Anonymous1_e__Union._adpcm_coef_3by32_e__FixedBuffer.html
+  spec.vb:
+  - uid: VgmStream.VGMSTREAMCHANNEL
+    name: VGMSTREAMCHANNEL
+    href: VgmStream.VGMSTREAMCHANNEL.html
+  - name: .
+  - uid: VgmStream.VGMSTREAMCHANNEL._Anonymous1_e__Union
+    name: _Anonymous1_e__Union
+    href: VgmStream.VGMSTREAMCHANNEL._Anonymous1_e__Union.html
+  - name: .
+  - uid: VgmStream.VGMSTREAMCHANNEL._Anonymous1_e__Union._adpcm_coef_3by32_e__FixedBuffer
+    name: _adpcm_coef_3by32_e__FixedBuffer
+    href: VgmStream.VGMSTREAMCHANNEL._Anonymous1_e__Union._adpcm_coef_3by32_e__FixedBuffer.html
+- uid: VgmStream.VGMSTREAMCHANNEL._Anonymous2_e__Union
+  commentId: T:VgmStream.VGMSTREAMCHANNEL._Anonymous2_e__Union
+  parent: VgmStream
+  href: VgmStream.VGMSTREAMCHANNEL.html
+  name: VGMSTREAMCHANNEL._Anonymous2_e__Union
+  nameWithType: VGMSTREAMCHANNEL._Anonymous2_e__Union
+  fullName: VgmStream.VGMSTREAMCHANNEL._Anonymous2_e__Union
+  spec.csharp:
+  - uid: VgmStream.VGMSTREAMCHANNEL
+    name: VGMSTREAMCHANNEL
+    href: VgmStream.VGMSTREAMCHANNEL.html
+  - name: .
+  - uid: VgmStream.VGMSTREAMCHANNEL._Anonymous2_e__Union
+    name: _Anonymous2_e__Union
+    href: VgmStream.VGMSTREAMCHANNEL._Anonymous2_e__Union.html
+  spec.vb:
+  - uid: VgmStream.VGMSTREAMCHANNEL
+    name: VGMSTREAMCHANNEL
+    href: VgmStream.VGMSTREAMCHANNEL.html
+  - name: .
+  - uid: VgmStream.VGMSTREAMCHANNEL._Anonymous2_e__Union
+    name: _Anonymous2_e__Union
+    href: VgmStream.VGMSTREAMCHANNEL._Anonymous2_e__Union.html
+- uid: VgmStream.VGMSTREAMCHANNEL._Anonymous3_e__Union
+  commentId: T:VgmStream.VGMSTREAMCHANNEL._Anonymous3_e__Union
+  parent: VgmStream
+  href: VgmStream.VGMSTREAMCHANNEL.html
+  name: VGMSTREAMCHANNEL._Anonymous3_e__Union
+  nameWithType: VGMSTREAMCHANNEL._Anonymous3_e__Union
+  fullName: VgmStream.VGMSTREAMCHANNEL._Anonymous3_e__Union
+  spec.csharp:
+  - uid: VgmStream.VGMSTREAMCHANNEL
+    name: VGMSTREAMCHANNEL
+    href: VgmStream.VGMSTREAMCHANNEL.html
+  - name: .
+  - uid: VgmStream.VGMSTREAMCHANNEL._Anonymous3_e__Union
+    name: _Anonymous3_e__Union
+    href: VgmStream.VGMSTREAMCHANNEL._Anonymous3_e__Union.html
+  spec.vb:
+  - uid: VgmStream.VGMSTREAMCHANNEL
+    name: VGMSTREAMCHANNEL
+    href: VgmStream.VGMSTREAMCHANNEL.html
+  - name: .
+  - uid: VgmStream.VGMSTREAMCHANNEL._Anonymous3_e__Union
+    name: _Anonymous3_e__Union
+    href: VgmStream.VGMSTREAMCHANNEL._Anonymous3_e__Union.html
+- uid: VgmStream.VGMSTREAMCHANNEL._Anonymous4_e__Union
+  commentId: T:VgmStream.VGMSTREAMCHANNEL._Anonymous4_e__Union
+  parent: VgmStream
+  href: VgmStream.VGMSTREAMCHANNEL.html
+  name: VGMSTREAMCHANNEL._Anonymous4_e__Union
+  nameWithType: VGMSTREAMCHANNEL._Anonymous4_e__Union
+  fullName: VgmStream.VGMSTREAMCHANNEL._Anonymous4_e__Union
+  spec.csharp:
+  - uid: VgmStream.VGMSTREAMCHANNEL
+    name: VGMSTREAMCHANNEL
+    href: VgmStream.VGMSTREAMCHANNEL.html
+  - name: .
+  - uid: VgmStream.VGMSTREAMCHANNEL._Anonymous4_e__Union
+    name: _Anonymous4_e__Union
+    href: VgmStream.VGMSTREAMCHANNEL._Anonymous4_e__Union.html
+  spec.vb:
+  - uid: VgmStream.VGMSTREAMCHANNEL
+    name: VGMSTREAMCHANNEL
+    href: VgmStream.VGMSTREAMCHANNEL.html
+  - name: .
+  - uid: VgmStream.VGMSTREAMCHANNEL._Anonymous4_e__Union
+    name: _Anonymous4_e__Union
+    href: VgmStream.VGMSTREAMCHANNEL._Anonymous4_e__Union.html
+- uid: VgmStream.VGMSTREAMCHANNEL._Anonymous5_e__Union
+  commentId: T:VgmStream.VGMSTREAMCHANNEL._Anonymous5_e__Union
+  parent: VgmStream
+  href: VgmStream.VGMSTREAMCHANNEL.html
+  name: VGMSTREAMCHANNEL._Anonymous5_e__Union
+  nameWithType: VGMSTREAMCHANNEL._Anonymous5_e__Union
+  fullName: VgmStream.VGMSTREAMCHANNEL._Anonymous5_e__Union
+  spec.csharp:
+  - uid: VgmStream.VGMSTREAMCHANNEL
+    name: VGMSTREAMCHANNEL
+    href: VgmStream.VGMSTREAMCHANNEL.html
+  - name: .
+  - uid: VgmStream.VGMSTREAMCHANNEL._Anonymous5_e__Union
+    name: _Anonymous5_e__Union
+    href: VgmStream.VGMSTREAMCHANNEL._Anonymous5_e__Union.html
+  spec.vb:
+  - uid: VgmStream.VGMSTREAMCHANNEL
+    name: VGMSTREAMCHANNEL
+    href: VgmStream.VGMSTREAMCHANNEL.html
+  - name: .
+  - uid: VgmStream.VGMSTREAMCHANNEL._Anonymous5_e__Union
+    name: _Anonymous5_e__Union
+    href: VgmStream.VGMSTREAMCHANNEL._Anonymous5_e__Union.html
+- uid: VgmStream.VGMSTREAMCHANNEL._Anonymous6_e__Union
+  commentId: T:VgmStream.VGMSTREAMCHANNEL._Anonymous6_e__Union
+  parent: VgmStream
+  href: VgmStream.VGMSTREAMCHANNEL.html
+  name: VGMSTREAMCHANNEL._Anonymous6_e__Union
+  nameWithType: VGMSTREAMCHANNEL._Anonymous6_e__Union
+  fullName: VgmStream.VGMSTREAMCHANNEL._Anonymous6_e__Union
+  spec.csharp:
+  - uid: VgmStream.VGMSTREAMCHANNEL
+    name: VGMSTREAMCHANNEL
+    href: VgmStream.VGMSTREAMCHANNEL.html
+  - name: .
+  - uid: VgmStream.VGMSTREAMCHANNEL._Anonymous6_e__Union
+    name: _Anonymous6_e__Union
+    href: VgmStream.VGMSTREAMCHANNEL._Anonymous6_e__Union.html
+  spec.vb:
+  - uid: VgmStream.VGMSTREAMCHANNEL
+    name: VGMSTREAMCHANNEL
+    href: VgmStream.VGMSTREAMCHANNEL.html
+  - name: .
+  - uid: VgmStream.VGMSTREAMCHANNEL._Anonymous6_e__Union
+    name: _Anonymous6_e__Union
+    href: VgmStream.VGMSTREAMCHANNEL._Anonymous6_e__Union.html
+- uid: VgmStream
+  commentId: N:VgmStream
+  href: VgmStream.html
+  name: VgmStream
+  nameWithType: VgmStream
+  fullName: VgmStream

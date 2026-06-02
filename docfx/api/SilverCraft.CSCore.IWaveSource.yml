@@ -52,6 +52,7 @@ items:
   - SilverCraft.CSCore.Streams.SampleConverter.SampleToWaveBase
   - SilverCraft.CSCore.Streams.SoundInSource
   - SilverCraft.CSCore.Streams.WriteableBufferingSource
+  - SilverCraft.CSCore.VGMStream.VGMStreamWaveSource
   - SilverCraft.CSCore.WaveAggregatorBase
   inheritedMembers:
   - SilverCraft.CSCore.IReadableAudioSource{System.Byte}.Read(System.Byte[],System.Int32,System.Int32)

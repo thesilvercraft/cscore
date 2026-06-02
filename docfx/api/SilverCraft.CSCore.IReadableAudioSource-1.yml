@@ -73,6 +73,7 @@ items:
   - SilverCraft.CSCore.Streams.SynchronizedWaveSource`2
   - SilverCraft.CSCore.Streams.VolumeSource
   - SilverCraft.CSCore.Streams.WriteableBufferingSource
+  - SilverCraft.CSCore.VGMStream.VGMStreamWaveSource
   - SilverCraft.CSCore.WaveAggregatorBase
   inheritedMembers:
   - SilverCraft.CSCore.IAudioSource.CanSeek

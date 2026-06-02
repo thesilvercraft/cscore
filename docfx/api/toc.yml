@@ -698,6 +698,74 @@ items:
   - uid: SilverCraft.CSCore.Utils.Buffer.FixedSizeBuffer`1
     name: FixedSizeBuffer<T>
     type: Class
+- uid: SilverCraft.CSCore.VGMStream
+  name: SilverCraft.CSCore.VGMStream
+  type: Namespace
+  items:
+  - uid: SilverCraft.CSCore.VGMStream.VGMStreamWaveSource
+    name: VGMStreamWaveSource
+    type: Class
+- uid: VgmStream
+  name: VgmStream
+  type: Namespace
+  items:
+  - uid: VgmStream.NativeMethods
+    name: NativeMethods
+    type: Class
+  - uid: VgmStream.STREAMFILE
+    name: STREAMFILE
+    type: Struct
+  - uid: VgmStream.VGMSTREAM
+    name: VGMSTREAM
+    type: Struct
+  - uid: VgmStream.VGMSTREAM._stream_name_e__FixedBuffer
+    name: VGMSTREAM._stream_name_e__FixedBuffer
+    type: Struct
+  - uid: VgmStream.VGMSTREAMCHANNEL
+    name: VGMSTREAMCHANNEL
+    type: Struct
+  - uid: VgmStream.VGMSTREAMCHANNEL._Anonymous1_e__Union
+    name: VGMSTREAMCHANNEL._Anonymous1_e__Union
+    type: Struct
+  - uid: VgmStream.VGMSTREAMCHANNEL._Anonymous1_e__Union._adpcm_coef_3by32_e__FixedBuffer
+    name: VGMSTREAMCHANNEL._Anonymous1_e__Union._adpcm_coef_3by32_e__FixedBuffer
+    type: Struct
+  - uid: VgmStream.VGMSTREAMCHANNEL._Anonymous1_e__Union._adpcm_coef_e__FixedBuffer
+    name: VGMSTREAMCHANNEL._Anonymous1_e__Union._adpcm_coef_e__FixedBuffer
+    type: Struct
+  - uid: VgmStream.VGMSTREAMCHANNEL._Anonymous1_e__Union._vadpcm_coefs_e__FixedBuffer
+    name: VGMSTREAMCHANNEL._Anonymous1_e__Union._vadpcm_coefs_e__FixedBuffer
+    type: Struct
+  - uid: VgmStream.VGMSTREAMCHANNEL._Anonymous2_e__Union
+    name: VGMSTREAMCHANNEL._Anonymous2_e__Union
+    type: Struct
+  - uid: VgmStream.VGMSTREAMCHANNEL._Anonymous3_e__Union
+    name: VGMSTREAMCHANNEL._Anonymous3_e__Union
+    type: Struct
+  - uid: VgmStream.VGMSTREAMCHANNEL._Anonymous4_e__Union
+    name: VGMSTREAMCHANNEL._Anonymous4_e__Union
+    type: Struct
+  - uid: VgmStream.VGMSTREAMCHANNEL._Anonymous5_e__Union
+    name: VGMSTREAMCHANNEL._Anonymous5_e__Union
+    type: Struct
+  - uid: VgmStream.VGMSTREAMCHANNEL._Anonymous6_e__Union
+    name: VGMSTREAMCHANNEL._Anonymous6_e__Union
+    type: Struct
+  - uid: VgmStream.coding_t
+    name: coding_t
+    type: Enum
+  - uid: VgmStream.layout_t
+    name: layout_t
+    type: Enum
+  - uid: VgmStream.meta_t
+    name: meta_t
+    type: Enum
+  - uid: VgmStream.play_config_t
+    name: play_config_t
+    type: Struct
+  - uid: VgmStream.play_state_t
+    name: play_state_t
+    type: Struct
 - uid: sndfile
   name: sndfile
   type: Namespace

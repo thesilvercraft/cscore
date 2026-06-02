@@ -1,0 +1,679 @@
+### YamlMime:ManagedReference
+items:
+- uid: VgmStream.STREAMFILE
+  commentId: T:VgmStream.STREAMFILE
+  id: STREAMFILE
+  parent: VgmStream
+  children:
+  - VgmStream.STREAMFILE.close
+  - VgmStream.STREAMFILE.get_name
+  - VgmStream.STREAMFILE.get_offset
+  - VgmStream.STREAMFILE.get_size
+  - VgmStream.STREAMFILE.open
+  - VgmStream.STREAMFILE.read
+  - VgmStream.STREAMFILE.stream_index
+  langs:
+  - csharp
+  - vb
+  name: STREAMFILE
+  nameWithType: STREAMFILE
+  fullName: VgmStream.STREAMFILE
+  type: Struct
+  source:
+    remote:
+      path: SilverCraft.CSCore.VGMStream/InteropVgmStream/STREAMFILE.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: STREAMFILE
+    path: ../SilverCraft.CSCore.VGMStream/InteropVgmStream/STREAMFILE.cs
+    startLine: 2
+  assemblies:
+  - SilverCraft.CSCore.VGMStream
+  namespace: VgmStream
+  syntax:
+    content: public struct STREAMFILE
+    content.vb: Public Structure STREAMFILE
+  inheritedMembers:
+  - System.ValueType.Equals(System.Object)
+  - System.ValueType.GetHashCode
+  - System.ValueType.ToString
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetType
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+- uid: VgmStream.STREAMFILE.read
+  commentId: F:VgmStream.STREAMFILE.read
+  id: read
+  parent: VgmStream.STREAMFILE
+  langs:
+  - csharp
+  - vb
+  name: read
+  nameWithType: STREAMFILE.read
+  fullName: VgmStream.STREAMFILE.read
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore.VGMStream/InteropVgmStream/STREAMFILE.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: read
+    path: ../SilverCraft.CSCore.VGMStream/InteropVgmStream/STREAMFILE.cs
+    startLine: 5
+  assemblies:
+  - SilverCraft.CSCore.VGMStream
+  namespace: VgmStream
+  syntax:
+    content: public delegate* unmanaged[Cdecl]<STREAMFILE*, byte*, nint, nuint, nuint> read
+    return:
+      type: delegate* unmanaged[Cdecl]<VgmStream.STREAMFILE*, byte*, nint, nuint, nuint>
+    content.vb: 'Public read As '
+- uid: VgmStream.STREAMFILE.get_size
+  commentId: F:VgmStream.STREAMFILE.get_size
+  id: get_size
+  parent: VgmStream.STREAMFILE
+  langs:
+  - csharp
+  - vb
+  name: get_size
+  nameWithType: STREAMFILE.get_size
+  fullName: VgmStream.STREAMFILE.get_size
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore.VGMStream/InteropVgmStream/STREAMFILE.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: get_size
+    path: ../SilverCraft.CSCore.VGMStream/InteropVgmStream/STREAMFILE.cs
+    startLine: 8
+  assemblies:
+  - SilverCraft.CSCore.VGMStream
+  namespace: VgmStream
+  syntax:
+    content: public delegate* unmanaged[Cdecl]<STREAMFILE*, nuint> get_size
+    return:
+      type: delegate* unmanaged[Cdecl]<VgmStream.STREAMFILE*, nuint>
+    content.vb: 'Public get_size As '
+- uid: VgmStream.STREAMFILE.get_offset
+  commentId: F:VgmStream.STREAMFILE.get_offset
+  id: get_offset
+  parent: VgmStream.STREAMFILE
+  langs:
+  - csharp
+  - vb
+  name: get_offset
+  nameWithType: STREAMFILE.get_offset
+  fullName: VgmStream.STREAMFILE.get_offset
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore.VGMStream/InteropVgmStream/STREAMFILE.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: get_offset
+    path: ../SilverCraft.CSCore.VGMStream/InteropVgmStream/STREAMFILE.cs
+    startLine: 11
+  assemblies:
+  - SilverCraft.CSCore.VGMStream
+  namespace: VgmStream
+  syntax:
+    content: public delegate* unmanaged[Cdecl]<STREAMFILE*, nint> get_offset
+    return:
+      type: delegate* unmanaged[Cdecl]<VgmStream.STREAMFILE*, nint>
+    content.vb: 'Public get_offset As '
+- uid: VgmStream.STREAMFILE.get_name
+  commentId: F:VgmStream.STREAMFILE.get_name
+  id: get_name
+  parent: VgmStream.STREAMFILE
+  langs:
+  - csharp
+  - vb
+  name: get_name
+  nameWithType: STREAMFILE.get_name
+  fullName: VgmStream.STREAMFILE.get_name
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore.VGMStream/InteropVgmStream/STREAMFILE.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: get_name
+    path: ../SilverCraft.CSCore.VGMStream/InteropVgmStream/STREAMFILE.cs
+    startLine: 14
+  assemblies:
+  - SilverCraft.CSCore.VGMStream
+  namespace: VgmStream
+  syntax:
+    content: public delegate* unmanaged[Cdecl]<STREAMFILE*, sbyte*, nuint, void> get_name
+    return:
+      type: delegate* unmanaged[Cdecl]<VgmStream.STREAMFILE*, sbyte*, nuint, void>
+    content.vb: 'Public get_name As '
+- uid: VgmStream.STREAMFILE.open
+  commentId: F:VgmStream.STREAMFILE.open
+  id: open
+  parent: VgmStream.STREAMFILE
+  langs:
+  - csharp
+  - vb
+  name: open
+  nameWithType: STREAMFILE.open
+  fullName: VgmStream.STREAMFILE.open
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore.VGMStream/InteropVgmStream/STREAMFILE.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: open
+    path: ../SilverCraft.CSCore.VGMStream/InteropVgmStream/STREAMFILE.cs
+    startLine: 17
+  assemblies:
+  - SilverCraft.CSCore.VGMStream
+  namespace: VgmStream
+  syntax:
+    content: public delegate* unmanaged[Cdecl]<STREAMFILE*, sbyte*, nuint, STREAMFILE*> open
+    return:
+      type: delegate* unmanaged[Cdecl]<VgmStream.STREAMFILE*, sbyte*, nuint, VgmStream.STREAMFILE*>
+    content.vb: 'Public open As '
+- uid: VgmStream.STREAMFILE.close
+  commentId: F:VgmStream.STREAMFILE.close
+  id: close
+  parent: VgmStream.STREAMFILE
+  langs:
+  - csharp
+  - vb
+  name: close
+  nameWithType: STREAMFILE.close
+  fullName: VgmStream.STREAMFILE.close
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore.VGMStream/InteropVgmStream/STREAMFILE.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: close
+    path: ../SilverCraft.CSCore.VGMStream/InteropVgmStream/STREAMFILE.cs
+    startLine: 20
+  assemblies:
+  - SilverCraft.CSCore.VGMStream
+  namespace: VgmStream
+  syntax:
+    content: public delegate* unmanaged[Cdecl]<STREAMFILE*, void> close
+    return:
+      type: delegate* unmanaged[Cdecl]<VgmStream.STREAMFILE*, void>
+    content.vb: 'Public close As '
+- uid: VgmStream.STREAMFILE.stream_index
+  commentId: F:VgmStream.STREAMFILE.stream_index
+  id: stream_index
+  parent: VgmStream.STREAMFILE
+  langs:
+  - csharp
+  - vb
+  name: stream_index
+  nameWithType: STREAMFILE.stream_index
+  fullName: VgmStream.STREAMFILE.stream_index
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore.VGMStream/InteropVgmStream/STREAMFILE.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: stream_index
+    path: ../SilverCraft.CSCore.VGMStream/InteropVgmStream/STREAMFILE.cs
+    startLine: 22
+  assemblies:
+  - SilverCraft.CSCore.VGMStream
+  namespace: VgmStream
+  syntax:
+    content: public int stream_index
+    return:
+      type: System.Int32
+    content.vb: Public stream_index As Integer
+references:
+- uid: VgmStream
+  commentId: N:VgmStream
+  href: VgmStream.html
+  name: VgmStream
+  nameWithType: VgmStream
+  fullName: VgmStream
+- uid: System.ValueType.Equals(System.Object)
+  commentId: M:System.ValueType.Equals(System.Object)
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  name: Equals(object)
+  nameWithType: ValueType.Equals(object)
+  fullName: System.ValueType.Equals(object)
+  nameWithType.vb: ValueType.Equals(Object)
+  fullName.vb: System.ValueType.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.ValueType.GetHashCode
+  commentId: M:System.ValueType.GetHashCode
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  name: GetHashCode()
+  nameWithType: ValueType.GetHashCode()
+  fullName: System.ValueType.GetHashCode()
+  spec.csharp:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  - name: (
+  - name: )
+- uid: System.ValueType.ToString
+  commentId: M:System.ValueType.ToString
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  name: ToString()
+  nameWithType: ValueType.ToString()
+  fullName: System.ValueType.ToString()
+  spec.csharp:
+  - uid: System.ValueType.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.ValueType
+  commentId: T:System.ValueType
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype
+  name: ValueType
+  nameWithType: ValueType
+  fullName: System.ValueType
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: delegate* unmanaged[Cdecl]<VgmStream.STREAMFILE*, byte*, nint, nuint, nuint>
+  isExternal: true
+  href: VgmStream.STREAMFILE.html
+  name: delegate* unmanaged[Cdecl]<STREAMFILE*, byte*, nint, nuint, nuint>
+  nameWithType: delegate* unmanaged[Cdecl]<STREAMFILE*, byte*, nint, nuint, nuint>
+  fullName: delegate* unmanaged[Cdecl]<VgmStream.STREAMFILE*, byte*, nint, nuint, nuint>
+  spec.csharp:
+  - name: delegate
+  - name: '*'
+  - name: " "
+  - name: unmanaged
+  - name: '['
+  - uid: .(VgmStream.STREAMFILE*,System.Byte*,System.IntPtr,System.UIntPtr)
+    name: Cdecl
+    isExternal: true
+  - name: ']'
+  - name: <
+  - uid: VgmStream.STREAMFILE
+    name: STREAMFILE
+    href: VgmStream.STREAMFILE.html
+  - name: '*'
+  - name: ','
+  - name: " "
+  - uid: System.Byte
+    name: byte
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.byte
+  - name: '*'
+  - name: ','
+  - name: " "
+  - uid: System.IntPtr
+    name: nint
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.intptr
+  - name: ','
+  - name: " "
+  - uid: System.UIntPtr
+    name: nuint
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.uintptr
+  - name: ','
+  - name: " "
+  - uid: System.UIntPtr
+    name: nuint
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.uintptr
+  - name: '>'
+- uid: delegate* unmanaged[Cdecl]<VgmStream.STREAMFILE*, nuint>
+  isExternal: true
+  href: VgmStream.STREAMFILE.html
+  name: delegate* unmanaged[Cdecl]<STREAMFILE*, nuint>
+  nameWithType: delegate* unmanaged[Cdecl]<STREAMFILE*, nuint>
+  fullName: delegate* unmanaged[Cdecl]<VgmStream.STREAMFILE*, nuint>
+  spec.csharp:
+  - name: delegate
+  - name: '*'
+  - name: " "
+  - name: unmanaged
+  - name: '['
+  - uid: .(VgmStream.STREAMFILE*)
+    name: Cdecl
+    isExternal: true
+  - name: ']'
+  - name: <
+  - uid: VgmStream.STREAMFILE
+    name: STREAMFILE
+    href: VgmStream.STREAMFILE.html
+  - name: '*'
+  - name: ','
+  - name: " "
+  - uid: System.UIntPtr
+    name: nuint
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.uintptr
+  - name: '>'
+- uid: delegate* unmanaged[Cdecl]<VgmStream.STREAMFILE*, nint>
+  isExternal: true
+  href: VgmStream.STREAMFILE.html
+  name: delegate* unmanaged[Cdecl]<STREAMFILE*, nint>
+  nameWithType: delegate* unmanaged[Cdecl]<STREAMFILE*, nint>
+  fullName: delegate* unmanaged[Cdecl]<VgmStream.STREAMFILE*, nint>
+  spec.csharp:
+  - name: delegate
+  - name: '*'
+  - name: " "
+  - name: unmanaged
+  - name: '['
+  - uid: .(VgmStream.STREAMFILE*)
+    name: Cdecl
+    isExternal: true
+  - name: ']'
+  - name: <
+  - uid: VgmStream.STREAMFILE
+    name: STREAMFILE
+    href: VgmStream.STREAMFILE.html
+  - name: '*'
+  - name: ','
+  - name: " "
+  - uid: System.IntPtr
+    name: nint
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.intptr
+  - name: '>'
+- uid: delegate* unmanaged[Cdecl]<VgmStream.STREAMFILE*, sbyte*, nuint, void>
+  isExternal: true
+  href: VgmStream.STREAMFILE.html
+  name: delegate* unmanaged[Cdecl]<STREAMFILE*, sbyte*, nuint, void>
+  nameWithType: delegate* unmanaged[Cdecl]<STREAMFILE*, sbyte*, nuint, void>
+  fullName: delegate* unmanaged[Cdecl]<VgmStream.STREAMFILE*, sbyte*, nuint, void>
+  spec.csharp:
+  - name: delegate
+  - name: '*'
+  - name: " "
+  - name: unmanaged
+  - name: '['
+  - uid: .(VgmStream.STREAMFILE*,System.SByte*,System.UIntPtr)
+    name: Cdecl
+    isExternal: true
+  - name: ']'
+  - name: <
+  - uid: VgmStream.STREAMFILE
+    name: STREAMFILE
+    href: VgmStream.STREAMFILE.html
+  - name: '*'
+  - name: ','
+  - name: " "
+  - uid: System.SByte
+    name: sbyte
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.sbyte
+  - name: '*'
+  - name: ','
+  - name: " "
+  - uid: System.UIntPtr
+    name: nuint
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.uintptr
+  - name: ','
+  - name: " "
+  - uid: System.Void
+    name: void
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.void
+  - name: '>'
+- uid: delegate* unmanaged[Cdecl]<VgmStream.STREAMFILE*, sbyte*, nuint, VgmStream.STREAMFILE*>
+  isExternal: true
+  href: VgmStream.STREAMFILE.html
+  name: delegate* unmanaged[Cdecl]<STREAMFILE*, sbyte*, nuint, STREAMFILE*>
+  nameWithType: delegate* unmanaged[Cdecl]<STREAMFILE*, sbyte*, nuint, STREAMFILE*>
+  fullName: delegate* unmanaged[Cdecl]<VgmStream.STREAMFILE*, sbyte*, nuint, VgmStream.STREAMFILE*>
+  spec.csharp:
+  - name: delegate
+  - name: '*'
+  - name: " "
+  - name: unmanaged
+  - name: '['
+  - uid: .(VgmStream.STREAMFILE*,System.SByte*,System.UIntPtr)
+    name: Cdecl
+    isExternal: true
+  - name: ']'
+  - name: <
+  - uid: VgmStream.STREAMFILE
+    name: STREAMFILE
+    href: VgmStream.STREAMFILE.html
+  - name: '*'
+  - name: ','
+  - name: " "
+  - uid: System.SByte
+    name: sbyte
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.sbyte
+  - name: '*'
+  - name: ','
+  - name: " "
+  - uid: System.UIntPtr
+    name: nuint
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.uintptr
+  - name: ','
+  - name: " "
+  - uid: VgmStream.STREAMFILE
+    name: STREAMFILE
+    href: VgmStream.STREAMFILE.html
+  - name: '*'
+  - name: '>'
+- uid: delegate* unmanaged[Cdecl]<VgmStream.STREAMFILE*, void>
+  isExternal: true
+  href: VgmStream.STREAMFILE.html
+  name: delegate* unmanaged[Cdecl]<STREAMFILE*, void>
+  nameWithType: delegate* unmanaged[Cdecl]<STREAMFILE*, void>
+  fullName: delegate* unmanaged[Cdecl]<VgmStream.STREAMFILE*, void>
+  spec.csharp:
+  - name: delegate
+  - name: '*'
+  - name: " "
+  - name: unmanaged
+  - name: '['
+  - uid: .(VgmStream.STREAMFILE*)
+    name: Cdecl
+    isExternal: true
+  - name: ']'
+  - name: <
+  - uid: VgmStream.STREAMFILE
+    name: STREAMFILE
+    href: VgmStream.STREAMFILE.html
+  - name: '*'
+  - name: ','
+  - name: " "
+  - uid: System.Void
+    name: void
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.void
+  - name: '>'
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer

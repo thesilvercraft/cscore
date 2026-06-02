@@ -3106,6 +3106,34 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/SilverCraft.CSCore.VGMStream.VGMStreamWaveSource.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SilverCraft.CSCore.VGMStream.VGMStreamWaveSource.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SilverCraft.CSCore.VGMStream.VGMStreamWaveSource",
+      "Summary": "<p sourcefile=\"api/SilverCraft.CSCore.VGMStream.VGMStreamWaveSource.yml\" sourcestartlinenumber=\"1\">Represents a stream wrapper for reading VGM format audio data from a file.\nThis class implements <xref href=\"SilverCraft.CSCore.IWaveSource\" data-throw-if-not-resolved=\"false\"></xref> to provide an interface for reading streaming audio content.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SilverCraft.CSCore.VGMStream.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SilverCraft.CSCore.VGMStream.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SilverCraft.CSCore.VGMStream",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/SilverCraft.CSCore.WaveAggregatorBase.yml",
       "output": {
         ".html": {
@@ -3158,6 +3186,286 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "SilverCraft.CSCore",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/VgmStream.NativeMethods.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/VgmStream.NativeMethods.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "VgmStream.NativeMethods",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/VgmStream.STREAMFILE.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/VgmStream.STREAMFILE.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "VgmStream.STREAMFILE",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/VgmStream.VGMSTREAM._stream_name_e__FixedBuffer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/VgmStream.VGMSTREAM._stream_name_e__FixedBuffer.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "VgmStream.VGMSTREAM._stream_name_e__FixedBuffer",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/VgmStream.VGMSTREAM.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/VgmStream.VGMSTREAM.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "VgmStream.VGMSTREAM",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/VgmStream.VGMSTREAMCHANNEL._Anonymous1_e__Union._adpcm_coef_3by32_e__FixedBuffer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/VgmStream.VGMSTREAMCHANNEL._Anonymous1_e__Union._adpcm_coef_3by32_e__FixedBuffer.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "VgmStream.VGMSTREAMCHANNEL._Anonymous1_e__Union._adpcm_coef_3by32_e__FixedBuffer",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/VgmStream.VGMSTREAMCHANNEL._Anonymous1_e__Union._adpcm_coef_e__FixedBuffer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/VgmStream.VGMSTREAMCHANNEL._Anonymous1_e__Union._adpcm_coef_e__FixedBuffer.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "VgmStream.VGMSTREAMCHANNEL._Anonymous1_e__Union._adpcm_coef_e__FixedBuffer",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/VgmStream.VGMSTREAMCHANNEL._Anonymous1_e__Union._vadpcm_coefs_e__FixedBuffer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/VgmStream.VGMSTREAMCHANNEL._Anonymous1_e__Union._vadpcm_coefs_e__FixedBuffer.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "VgmStream.VGMSTREAMCHANNEL._Anonymous1_e__Union._vadpcm_coefs_e__FixedBuffer",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/VgmStream.VGMSTREAMCHANNEL._Anonymous1_e__Union.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/VgmStream.VGMSTREAMCHANNEL._Anonymous1_e__Union.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "VgmStream.VGMSTREAMCHANNEL._Anonymous1_e__Union",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/VgmStream.VGMSTREAMCHANNEL._Anonymous2_e__Union.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/VgmStream.VGMSTREAMCHANNEL._Anonymous2_e__Union.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "VgmStream.VGMSTREAMCHANNEL._Anonymous2_e__Union",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/VgmStream.VGMSTREAMCHANNEL._Anonymous3_e__Union.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/VgmStream.VGMSTREAMCHANNEL._Anonymous3_e__Union.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "VgmStream.VGMSTREAMCHANNEL._Anonymous3_e__Union",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/VgmStream.VGMSTREAMCHANNEL._Anonymous4_e__Union.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/VgmStream.VGMSTREAMCHANNEL._Anonymous4_e__Union.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "VgmStream.VGMSTREAMCHANNEL._Anonymous4_e__Union",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/VgmStream.VGMSTREAMCHANNEL._Anonymous5_e__Union.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/VgmStream.VGMSTREAMCHANNEL._Anonymous5_e__Union.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "VgmStream.VGMSTREAMCHANNEL._Anonymous5_e__Union",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/VgmStream.VGMSTREAMCHANNEL._Anonymous6_e__Union.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/VgmStream.VGMSTREAMCHANNEL._Anonymous6_e__Union.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "VgmStream.VGMSTREAMCHANNEL._Anonymous6_e__Union",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/VgmStream.VGMSTREAMCHANNEL.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/VgmStream.VGMSTREAMCHANNEL.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "VgmStream.VGMSTREAMCHANNEL",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/VgmStream.coding_t.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/VgmStream.coding_t.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "VgmStream.coding_t",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/VgmStream.layout_t.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/VgmStream.layout_t.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "VgmStream.layout_t",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/VgmStream.meta_t.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/VgmStream.meta_t.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "VgmStream.meta_t",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/VgmStream.play_config_t.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/VgmStream.play_config_t.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "VgmStream.play_config_t",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/VgmStream.play_state_t.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/VgmStream.play_state_t.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "VgmStream.play_state_t",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/VgmStream.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/VgmStream.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "VgmStream",
       "Summary": null
     },
     {

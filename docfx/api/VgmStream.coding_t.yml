@@ -1,0 +1,3930 @@
+### YamlMime:ManagedReference
+items:
+- uid: VgmStream.coding_t
+  commentId: T:VgmStream.coding_t
+  id: coding_t
+  parent: VgmStream
+  children:
+  - VgmStream.coding_t.coding_ACM
+  - VgmStream.coding_t.coding_AFC
+  - VgmStream.coding_t.coding_AFC_2bit
+  - VgmStream.coding_t.coding_AFC_4X
+  - VgmStream.coding_t.coding_AICA
+  - VgmStream.coding_t.coding_AICA_int
+  - VgmStream.coding_t.coding_ALAW
+  - VgmStream.coding_t.coding_APPLE_IMA4
+  - VgmStream.coding_t.coding_ASF
+  - VgmStream.coding_t.coding_ASKA
+  - VgmStream.coding_t.coding_ATRAC9
+  - VgmStream.coding_t.coding_AWC_IMA
+  - VgmStream.coding_t.coding_BINKA
+  - VgmStream.coding_t.coding_BLITZ_IMA
+  - VgmStream.coding_t.coding_CAMELOT_IMA
+  - VgmStream.coding_t.coding_CBD2
+  - VgmStream.coding_t.coding_CBD2_int
+  - VgmStream.coding_t.coding_CD_IMA
+  - VgmStream.coding_t.coding_CELT_FSB
+  - VgmStream.coding_t.coding_CF_DF_ADPCM_V40
+  - VgmStream.coding_t.coding_CF_DF_DPCM_V41
+  - VgmStream.coding_t.coding_CIRCUS_ADPCM
+  - VgmStream.coding_t.coding_CIRCUS_VQ
+  - VgmStream.coding_t.coding_COMPRESSWAVE
+  - VgmStream.coding_t.coding_CP_YM
+  - VgmStream.coding_t.coding_CRANKCASE_IMA
+  - VgmStream.coding_t.coding_CRI_ADX
+  - VgmStream.coding_t.coding_CRI_ADX_enc_8
+  - VgmStream.coding_t.coding_CRI_ADX_enc_9
+  - VgmStream.coding_t.coding_CRI_ADX_exp
+  - VgmStream.coding_t.coding_CRI_ADX_fixed
+  - VgmStream.coding_t.coding_CRI_HCA
+  - VgmStream.coding_t.coding_DAT4_IMA
+  - VgmStream.coding_t.coding_DERF
+  - VgmStream.coding_t.coding_DPCM_KCEJ
+  - VgmStream.coding_t.coding_DSA
+  - VgmStream.coding_t.coding_DVI_IMA
+  - VgmStream.coding_t.coding_DVI_IMA_mono
+  - VgmStream.coding_t.coding_EA_MT
+  - VgmStream.coding_t.coding_EA_XA
+  - VgmStream.coding_t.coding_EA_XAS_V0
+  - VgmStream.coding_t.coding_EA_XAS_V1
+  - VgmStream.coding_t.coding_EA_XA_V2
+  - VgmStream.coding_t.coding_EA_XA_int
+  - VgmStream.coding_t.coding_FADPCM
+  - VgmStream.coding_t.coding_FFmpeg
+  - VgmStream.coding_t.coding_FSB_IMA
+  - VgmStream.coding_t.coding_G719
+  - VgmStream.coding_t.coding_G721
+  - VgmStream.coding_t.coding_G7221C
+  - VgmStream.coding_t.coding_HEVAG
+  - VgmStream.coding_t.coding_HVQM4_IMA
+  - VgmStream.coding_t.coding_HV_IMA
+  - VgmStream.coding_t.coding_ICE_DCT
+  - VgmStream.coding_t.coding_ICE_RANGE
+  - VgmStream.coding_t.coding_IMA
+  - VgmStream.coding_t.coding_IMA_mono
+  - VgmStream.coding_t.coding_IMUSE
+  - VgmStream.coding_t.coding_KA1A
+  - VgmStream.coding_t.coding_LEVEL5
+  - VgmStream.coding_t.coding_LSF
+  - VgmStream.coding_t.coding_MAXIS_XA
+  - VgmStream.coding_t.coding_MIO
+  - VgmStream.coding_t.coding_MP4_AAC
+  - VgmStream.coding_t.coding_MPC3
+  - VgmStream.coding_t.coding_MPEG_custom
+  - VgmStream.coding_t.coding_MPEG_ealayer3
+  - VgmStream.coding_t.coding_MPEG_layer1
+  - VgmStream.coding_t.coding_MPEG_layer2
+  - VgmStream.coding_t.coding_MPEG_layer3
+  - VgmStream.coding_t.coding_MSADPCM
+  - VgmStream.coding_t.coding_MSADPCM_ck
+  - VgmStream.coding_t.coding_MSADPCM_mono
+  - VgmStream.coding_t.coding_MS_IMA
+  - VgmStream.coding_t.coding_MS_IMA_mono
+  - VgmStream.coding_t.coding_MTA2
+  - VgmStream.coding_t.coding_MTAF
+  - VgmStream.coding_t.coding_MTF_IMA
+  - VgmStream.coding_t.coding_NDS_IMA
+  - VgmStream.coding_t.coding_NDS_PROCYON
+  - VgmStream.coding_t.coding_NGC_DSP
+  - VgmStream.coding_t.coding_NGC_DSP_subint
+  - VgmStream.coding_t.coding_NGC_DTK
+  - VgmStream.coding_t.coding_NWA
+  - VgmStream.coding_t.coding_NXAP
+  - VgmStream.coding_t.coding_OGG_VORBIS
+  - VgmStream.coding_t.coding_OKI16
+  - VgmStream.coding_t.coding_OKI4S
+  - VgmStream.coding_t.coding_ONGAKUKAN_ADPCM
+  - VgmStream.coding_t.coding_PCFX
+  - VgmStream.coding_t.coding_PCM16BE
+  - VgmStream.coding_t.coding_PCM16LE
+  - VgmStream.coding_t.coding_PCM16LE_U
+  - VgmStream.coding_t.coding_PCM16_int
+  - VgmStream.coding_t.coding_PCM24BE
+  - VgmStream.coding_t.coding_PCM24LE
+  - VgmStream.coding_t.coding_PCM32LE
+  - VgmStream.coding_t.coding_PCM4
+  - VgmStream.coding_t.coding_PCM4_U
+  - VgmStream.coding_t.coding_PCM8
+  - VgmStream.coding_t.coding_PCM8_SB
+  - VgmStream.coding_t.coding_PCM8_U
+  - VgmStream.coding_t.coding_PCM8_U_int
+  - VgmStream.coding_t.coding_PCM8_int
+  - VgmStream.coding_t.coding_PCMFLOAT
+  - VgmStream.coding_t.coding_PSX
+  - VgmStream.coding_t.coding_PSX_badflags
+  - VgmStream.coding_t.coding_PSX_cfg
+  - VgmStream.coding_t.coding_PSX_pivotal
+  - VgmStream.coding_t.coding_PTADPCM
+  - VgmStream.coding_t.coding_QD_IMA
+  - VgmStream.coding_t.coding_RAD_IMA
+  - VgmStream.coding_t.coding_RAD_IMA_mono
+  - VgmStream.coding_t.coding_REF_IMA
+  - VgmStream.coding_t.coding_RELIC
+  - VgmStream.coding_t.coding_SASSC
+  - VgmStream.coding_t.coding_SDX2
+  - VgmStream.coding_t.coding_SDX2_int
+  - VgmStream.coding_t.coding_SILENCE
+  - VgmStream.coding_t.coding_SNDS_IMA
+  - VgmStream.coding_t.coding_SPEEX
+  - VgmStream.coding_t.coding_SQEX_IMA
+  - VgmStream.coding_t.coding_TAC
+  - VgmStream.coding_t.coding_TANTALUS
+  - VgmStream.coding_t.coding_TGC
+  - VgmStream.coding_t.coding_UBI_ADPCM
+  - VgmStream.coding_t.coding_UBI_IMA
+  - VgmStream.coding_t.coding_UBI_MPEG
+  - VgmStream.coding_t.coding_UBI_SCE_IMA
+  - VgmStream.coding_t.coding_ULAW
+  - VgmStream.coding_t.coding_ULAW_int
+  - VgmStream.coding_t.coding_VADPCM
+  - VgmStream.coding_t.coding_VORBIS_custom
+  - VgmStream.coding_t.coding_WADY
+  - VgmStream.coding_t.coding_WS
+  - VgmStream.coding_t.coding_WV6_IMA
+  - VgmStream.coding_t.coding_WWISE_IMA
+  - VgmStream.coding_t.coding_XA
+  - VgmStream.coding_t.coding_XA8
+  - VgmStream.coding_t.coding_XA_EA
+  - VgmStream.coding_t.coding_XBOX_IMA
+  - VgmStream.coding_t.coding_XBOX_IMA_mch
+  - VgmStream.coding_t.coding_XBOX_IMA_mono
+  - VgmStream.coding_t.coding_XMD
+  langs:
+  - csharp
+  - vb
+  name: coding_t
+  nameWithType: coding_t
+  fullName: VgmStream.coding_t
+  type: Enum
+  source:
+    remote:
+      path: SilverCraft.CSCore.VGMStream/InteropVgmStream/enums.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: coding_t
+    path: ../SilverCraft.CSCore.VGMStream/InteropVgmStream/enums.cs
+    startLine: 28
+  assemblies:
+  - SilverCraft.CSCore.VGMStream
+  namespace: VgmStream
+  syntax:
+    content: public enum coding_t
+    content.vb: Public Enum coding_t
+- uid: VgmStream.coding_t.coding_SILENCE
+  commentId: F:VgmStream.coding_t.coding_SILENCE
+  id: coding_SILENCE
+  parent: VgmStream.coding_t
+  langs:
+  - csharp
+  - vb
+  name: coding_SILENCE
+  nameWithType: coding_t.coding_SILENCE
+  fullName: VgmStream.coding_t.coding_SILENCE
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore.VGMStream/InteropVgmStream/enums.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: coding_SILENCE
+    path: ../SilverCraft.CSCore.VGMStream/InteropVgmStream/enums.cs
+    startLine: 30
+  assemblies:
+  - SilverCraft.CSCore.VGMStream
+  namespace: VgmStream
+  syntax:
+    content: coding_SILENCE = 0
+    return:
+      type: VgmStream.coding_t
+- uid: VgmStream.coding_t.coding_PCM16LE
+  commentId: F:VgmStream.coding_t.coding_PCM16LE
+  id: coding_PCM16LE
+  parent: VgmStream.coding_t
+  langs:
+  - csharp
+  - vb
+  name: coding_PCM16LE
+  nameWithType: coding_t.coding_PCM16LE
+  fullName: VgmStream.coding_t.coding_PCM16LE
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore.VGMStream/InteropVgmStream/enums.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: coding_PCM16LE
+    path: ../SilverCraft.CSCore.VGMStream/InteropVgmStream/enums.cs
+    startLine: 33
+  assemblies:
+  - SilverCraft.CSCore.VGMStream
+  namespace: VgmStream
+  syntax:
+    content: coding_PCM16LE = 1
+    return:
+      type: VgmStream.coding_t
+- uid: VgmStream.coding_t.coding_PCM16LE_U
+  commentId: F:VgmStream.coding_t.coding_PCM16LE_U
+  id: coding_PCM16LE_U
+  parent: VgmStream.coding_t
+  langs:
+  - csharp
+  - vb
+  name: coding_PCM16LE_U
+  nameWithType: coding_t.coding_PCM16LE_U
+  fullName: VgmStream.coding_t.coding_PCM16LE_U
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore.VGMStream/InteropVgmStream/enums.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: coding_PCM16LE_U
+    path: ../SilverCraft.CSCore.VGMStream/InteropVgmStream/enums.cs
+    startLine: 34
+  assemblies:
+  - SilverCraft.CSCore.VGMStream
+  namespace: VgmStream
+  syntax:
+    content: coding_PCM16LE_U = 2
+    return:
+      type: VgmStream.coding_t
+- uid: VgmStream.coding_t.coding_PCM16BE
+  commentId: F:VgmStream.coding_t.coding_PCM16BE
+  id: coding_PCM16BE
+  parent: VgmStream.coding_t
+  langs:
+  - csharp
+  - vb
+  name: coding_PCM16BE
+  nameWithType: coding_t.coding_PCM16BE
+  fullName: VgmStream.coding_t.coding_PCM16BE
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore.VGMStream/InteropVgmStream/enums.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: coding_PCM16BE
+    path: ../SilverCraft.CSCore.VGMStream/InteropVgmStream/enums.cs
+    startLine: 35
+  assemblies:
+  - SilverCraft.CSCore.VGMStream
+  namespace: VgmStream
+  syntax:
+    content: coding_PCM16BE = 3
+    return:
+      type: VgmStream.coding_t
+- uid: VgmStream.coding_t.coding_PCM16_int
+  commentId: F:VgmStream.coding_t.coding_PCM16_int
+  id: coding_PCM16_int
+  parent: VgmStream.coding_t
+  langs:
+  - csharp
+  - vb
+  name: coding_PCM16_int
+  nameWithType: coding_t.coding_PCM16_int
+  fullName: VgmStream.coding_t.coding_PCM16_int
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore.VGMStream/InteropVgmStream/enums.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: coding_PCM16_int
+    path: ../SilverCraft.CSCore.VGMStream/InteropVgmStream/enums.cs
+    startLine: 36
+  assemblies:
+  - SilverCraft.CSCore.VGMStream
+  namespace: VgmStream
+  syntax:
+    content: coding_PCM16_int = 4
+    return:
+      type: VgmStream.coding_t
+- uid: VgmStream.coding_t.coding_PCM8
+  commentId: F:VgmStream.coding_t.coding_PCM8
+  id: coding_PCM8
+  parent: VgmStream.coding_t
+  langs:
+  - csharp
+  - vb
+  name: coding_PCM8
+  nameWithType: coding_t.coding_PCM8
+  fullName: VgmStream.coding_t.coding_PCM8
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore.VGMStream/InteropVgmStream/enums.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: coding_PCM8
+    path: ../SilverCraft.CSCore.VGMStream/InteropVgmStream/enums.cs
+    startLine: 38
+  assemblies:
+  - SilverCraft.CSCore.VGMStream
+  namespace: VgmStream
+  syntax:
+    content: coding_PCM8 = 5
+    return:
+      type: VgmStream.coding_t
+- uid: VgmStream.coding_t.coding_PCM8_int
+  commentId: F:VgmStream.coding_t.coding_PCM8_int
+  id: coding_PCM8_int
+  parent: VgmStream.coding_t
+  langs:
+  - csharp
+  - vb
+  name: coding_PCM8_int
+  nameWithType: coding_t.coding_PCM8_int
+  fullName: VgmStream.coding_t.coding_PCM8_int
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore.VGMStream/InteropVgmStream/enums.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: coding_PCM8_int
+    path: ../SilverCraft.CSCore.VGMStream/InteropVgmStream/enums.cs
+    startLine: 39
+  assemblies:
+  - SilverCraft.CSCore.VGMStream
+  namespace: VgmStream
+  syntax:
+    content: coding_PCM8_int = 6
+    return:
+      type: VgmStream.coding_t
+- uid: VgmStream.coding_t.coding_PCM8_U
+  commentId: F:VgmStream.coding_t.coding_PCM8_U
+  id: coding_PCM8_U
+  parent: VgmStream.coding_t
+  langs:
+  - csharp
+  - vb
+  name: coding_PCM8_U
+  nameWithType: coding_t.coding_PCM8_U
+  fullName: VgmStream.coding_t.coding_PCM8_U
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore.VGMStream/InteropVgmStream/enums.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: coding_PCM8_U
+    path: ../SilverCraft.CSCore.VGMStream/InteropVgmStream/enums.cs
+    startLine: 40
+  assemblies:
+  - SilverCraft.CSCore.VGMStream
+  namespace: VgmStream
+  syntax:
+    content: coding_PCM8_U = 7
+    return:
+      type: VgmStream.coding_t
+- uid: VgmStream.coding_t.coding_PCM8_U_int
+  commentId: F:VgmStream.coding_t.coding_PCM8_U_int
+  id: coding_PCM8_U_int
+  parent: VgmStream.coding_t
+  langs:
+  - csharp
+  - vb
+  name: coding_PCM8_U_int
+  nameWithType: coding_t.coding_PCM8_U_int
+  fullName: VgmStream.coding_t.coding_PCM8_U_int
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore.VGMStream/InteropVgmStream/enums.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: coding_PCM8_U_int
+    path: ../SilverCraft.CSCore.VGMStream/InteropVgmStream/enums.cs
+    startLine: 41
+  assemblies:
+  - SilverCraft.CSCore.VGMStream
+  namespace: VgmStream
+  syntax:
+    content: coding_PCM8_U_int = 8
+    return:
+      type: VgmStream.coding_t
+- uid: VgmStream.coding_t.coding_PCM8_SB
+  commentId: F:VgmStream.coding_t.coding_PCM8_SB
+  id: coding_PCM8_SB
+  parent: VgmStream.coding_t
+  langs:
+  - csharp
+  - vb
+  name: coding_PCM8_SB
+  nameWithType: coding_t.coding_PCM8_SB
+  fullName: VgmStream.coding_t.coding_PCM8_SB
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore.VGMStream/InteropVgmStream/enums.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: coding_PCM8_SB
+    path: ../SilverCraft.CSCore.VGMStream/InteropVgmStream/enums.cs
+    startLine: 42
+  assemblies:
+  - SilverCraft.CSCore.VGMStream
+  namespace: VgmStream
+  syntax:
+    content: coding_PCM8_SB = 9
+    return:
+      type: VgmStream.coding_t
+- uid: VgmStream.coding_t.coding_PCM4
+  commentId: F:VgmStream.coding_t.coding_PCM4
+  id: coding_PCM4
+  parent: VgmStream.coding_t
+  langs:
+  - csharp
+  - vb
+  name: coding_PCM4
+  nameWithType: coding_t.coding_PCM4
+  fullName: VgmStream.coding_t.coding_PCM4
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore.VGMStream/InteropVgmStream/enums.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: coding_PCM4
+    path: ../SilverCraft.CSCore.VGMStream/InteropVgmStream/enums.cs
+    startLine: 43
+  assemblies:
+  - SilverCraft.CSCore.VGMStream
+  namespace: VgmStream
+  syntax:
+    content: coding_PCM4 = 10
+    return:
+      type: VgmStream.coding_t
+- uid: VgmStream.coding_t.coding_PCM4_U
+  commentId: F:VgmStream.coding_t.coding_PCM4_U
+  id: coding_PCM4_U
+  parent: VgmStream.coding_t
+  langs:
+  - csharp
+  - vb
+  name: coding_PCM4_U
+  nameWithType: coding_t.coding_PCM4_U
+  fullName: VgmStream.coding_t.coding_PCM4_U
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore.VGMStream/InteropVgmStream/enums.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: coding_PCM4_U
+    path: ../SilverCraft.CSCore.VGMStream/InteropVgmStream/enums.cs
+    startLine: 44
+  assemblies:
+  - SilverCraft.CSCore.VGMStream
+  namespace: VgmStream
+  syntax:
+    content: coding_PCM4_U = 11
+    return:
+      type: VgmStream.coding_t
+- uid: VgmStream.coding_t.coding_ULAW
+  commentId: F:VgmStream.coding_t.coding_ULAW
+  id: coding_ULAW
+  parent: VgmStream.coding_t
+  langs:
+  - csharp
+  - vb
+  name: coding_ULAW
+  nameWithType: coding_t.coding_ULAW
+  fullName: VgmStream.coding_t.coding_ULAW
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore.VGMStream/InteropVgmStream/enums.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: coding_ULAW
+    path: ../SilverCraft.CSCore.VGMStream/InteropVgmStream/enums.cs
+    startLine: 46
+  assemblies:
+  - SilverCraft.CSCore.VGMStream
+  namespace: VgmStream
+  syntax:
+    content: coding_ULAW = 12
+    return:
+      type: VgmStream.coding_t
+- uid: VgmStream.coding_t.coding_ULAW_int
+  commentId: F:VgmStream.coding_t.coding_ULAW_int
+  id: coding_ULAW_int
+  parent: VgmStream.coding_t
+  langs:
+  - csharp
+  - vb
+  name: coding_ULAW_int
+  nameWithType: coding_t.coding_ULAW_int
+  fullName: VgmStream.coding_t.coding_ULAW_int
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore.VGMStream/InteropVgmStream/enums.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: coding_ULAW_int
+    path: ../SilverCraft.CSCore.VGMStream/InteropVgmStream/enums.cs
+    startLine: 47
+  assemblies:
+  - SilverCraft.CSCore.VGMStream
+  namespace: VgmStream
+  syntax:
+    content: coding_ULAW_int = 13
+    return:
+      type: VgmStream.coding_t
+- uid: VgmStream.coding_t.coding_ALAW
+  commentId: F:VgmStream.coding_t.coding_ALAW
+  id: coding_ALAW
+  parent: VgmStream.coding_t
+  langs:
+  - csharp
+  - vb
+  name: coding_ALAW
+  nameWithType: coding_t.coding_ALAW
+  fullName: VgmStream.coding_t.coding_ALAW
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore.VGMStream/InteropVgmStream/enums.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: coding_ALAW
+    path: ../SilverCraft.CSCore.VGMStream/InteropVgmStream/enums.cs
+    startLine: 48
+  assemblies:
+  - SilverCraft.CSCore.VGMStream
+  namespace: VgmStream
+  syntax:
+    content: coding_ALAW = 14
+    return:
+      type: VgmStream.coding_t
+- uid: VgmStream.coding_t.coding_PCMFLOAT
+  commentId: F:VgmStream.coding_t.coding_PCMFLOAT
+  id: coding_PCMFLOAT
+  parent: VgmStream.coding_t
+  langs:
+  - csharp
+  - vb
+  name: coding_PCMFLOAT
+  nameWithType: coding_t.coding_PCMFLOAT
+  fullName: VgmStream.coding_t.coding_PCMFLOAT
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore.VGMStream/InteropVgmStream/enums.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: coding_PCMFLOAT
+    path: ../SilverCraft.CSCore.VGMStream/InteropVgmStream/enums.cs
+    startLine: 50
+  assemblies:
+  - SilverCraft.CSCore.VGMStream
+  namespace: VgmStream
+  syntax:
+    content: coding_PCMFLOAT = 15
+    return:
+      type: VgmStream.coding_t
+- uid: VgmStream.coding_t.coding_PCM24LE
+  commentId: F:VgmStream.coding_t.coding_PCM24LE
+  id: coding_PCM24LE
+  parent: VgmStream.coding_t
+  langs:
+  - csharp
+  - vb
+  name: coding_PCM24LE
+  nameWithType: coding_t.coding_PCM24LE
+  fullName: VgmStream.coding_t.coding_PCM24LE
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore.VGMStream/InteropVgmStream/enums.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: coding_PCM24LE
+    path: ../SilverCraft.CSCore.VGMStream/InteropVgmStream/enums.cs
+    startLine: 51
+  assemblies:
+  - SilverCraft.CSCore.VGMStream
+  namespace: VgmStream
+  syntax:
+    content: coding_PCM24LE = 16
+    return:
+      type: VgmStream.coding_t
+- uid: VgmStream.coding_t.coding_PCM24BE
+  commentId: F:VgmStream.coding_t.coding_PCM24BE
+  id: coding_PCM24BE
+  parent: VgmStream.coding_t
+  langs:
+  - csharp
+  - vb
+  name: coding_PCM24BE
+  nameWithType: coding_t.coding_PCM24BE
+  fullName: VgmStream.coding_t.coding_PCM24BE
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore.VGMStream/InteropVgmStream/enums.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: coding_PCM24BE
+    path: ../SilverCraft.CSCore.VGMStream/InteropVgmStream/enums.cs
+    startLine: 52
+  assemblies:
+  - SilverCraft.CSCore.VGMStream
+  namespace: VgmStream
+  syntax:
+    content: coding_PCM24BE = 17
+    return:
+      type: VgmStream.coding_t
+- uid: VgmStream.coding_t.coding_PCM32LE
+  commentId: F:VgmStream.coding_t.coding_PCM32LE
+  id: coding_PCM32LE
+  parent: VgmStream.coding_t
+  langs:
+  - csharp
+  - vb
+  name: coding_PCM32LE
+  nameWithType: coding_t.coding_PCM32LE
+  fullName: VgmStream.coding_t.coding_PCM32LE
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore.VGMStream/InteropVgmStream/enums.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: coding_PCM32LE
+    path: ../SilverCraft.CSCore.VGMStream/InteropVgmStream/enums.cs
+    startLine: 53
+  assemblies:
+  - SilverCraft.CSCore.VGMStream
+  namespace: VgmStream
+  syntax:
+    content: coding_PCM32LE = 18
+    return:
+      type: VgmStream.coding_t
+- uid: VgmStream.coding_t.coding_CRI_ADX
+  commentId: F:VgmStream.coding_t.coding_CRI_ADX
+  id: coding_CRI_ADX
+  parent: VgmStream.coding_t
+  langs:
+  - csharp
+  - vb
+  name: coding_CRI_ADX
+  nameWithType: coding_t.coding_CRI_ADX
+  fullName: VgmStream.coding_t.coding_CRI_ADX
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore.VGMStream/InteropVgmStream/enums.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: coding_CRI_ADX
+    path: ../SilverCraft.CSCore.VGMStream/InteropVgmStream/enums.cs
+    startLine: 56
+  assemblies:
+  - SilverCraft.CSCore.VGMStream
+  namespace: VgmStream
+  syntax:
+    content: coding_CRI_ADX = 19
+    return:
+      type: VgmStream.coding_t
+- uid: VgmStream.coding_t.coding_CRI_ADX_fixed
+  commentId: F:VgmStream.coding_t.coding_CRI_ADX_fixed
+  id: coding_CRI_ADX_fixed
+  parent: VgmStream.coding_t
+  langs:
+  - csharp
+  - vb
+  name: coding_CRI_ADX_fixed
+  nameWithType: coding_t.coding_CRI_ADX_fixed
+  fullName: VgmStream.coding_t.coding_CRI_ADX_fixed
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore.VGMStream/InteropVgmStream/enums.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: coding_CRI_ADX_fixed
+    path: ../SilverCraft.CSCore.VGMStream/InteropVgmStream/enums.cs
+    startLine: 57
+  assemblies:
+  - SilverCraft.CSCore.VGMStream
+  namespace: VgmStream
+  syntax:
+    content: coding_CRI_ADX_fixed = 20
+    return:
+      type: VgmStream.coding_t
+- uid: VgmStream.coding_t.coding_CRI_ADX_exp
+  commentId: F:VgmStream.coding_t.coding_CRI_ADX_exp
+  id: coding_CRI_ADX_exp
+  parent: VgmStream.coding_t
+  langs:
+  - csharp
+  - vb
+  name: coding_CRI_ADX_exp
+  nameWithType: coding_t.coding_CRI_ADX_exp
+  fullName: VgmStream.coding_t.coding_CRI_ADX_exp
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore.VGMStream/InteropVgmStream/enums.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: coding_CRI_ADX_exp
+    path: ../SilverCraft.CSCore.VGMStream/InteropVgmStream/enums.cs
+    startLine: 58
+  assemblies:
+  - SilverCraft.CSCore.VGMStream
+  namespace: VgmStream
+  syntax:
+    content: coding_CRI_ADX_exp = 21
+    return:
+      type: VgmStream.coding_t
+- uid: VgmStream.coding_t.coding_CRI_ADX_enc_8
+  commentId: F:VgmStream.coding_t.coding_CRI_ADX_enc_8
+  id: coding_CRI_ADX_enc_8
+  parent: VgmStream.coding_t
+  langs:
+  - csharp
+  - vb
+  name: coding_CRI_ADX_enc_8
+  nameWithType: coding_t.coding_CRI_ADX_enc_8
+  fullName: VgmStream.coding_t.coding_CRI_ADX_enc_8
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore.VGMStream/InteropVgmStream/enums.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: coding_CRI_ADX_enc_8
+    path: ../SilverCraft.CSCore.VGMStream/InteropVgmStream/enums.cs
+    startLine: 59
+  assemblies:
+  - SilverCraft.CSCore.VGMStream
+  namespace: VgmStream
+  syntax:
+    content: coding_CRI_ADX_enc_8 = 22
+    return:
+      type: VgmStream.coding_t
+- uid: VgmStream.coding_t.coding_CRI_ADX_enc_9
+  commentId: F:VgmStream.coding_t.coding_CRI_ADX_enc_9
+  id: coding_CRI_ADX_enc_9
+  parent: VgmStream.coding_t
+  langs:
+  - csharp
+  - vb
+  name: coding_CRI_ADX_enc_9
+  nameWithType: coding_t.coding_CRI_ADX_enc_9
+  fullName: VgmStream.coding_t.coding_CRI_ADX_enc_9
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore.VGMStream/InteropVgmStream/enums.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: coding_CRI_ADX_enc_9
+    path: ../SilverCraft.CSCore.VGMStream/InteropVgmStream/enums.cs
+    startLine: 60
+  assemblies:
+  - SilverCraft.CSCore.VGMStream
+  namespace: VgmStream
+  syntax:
+    content: coding_CRI_ADX_enc_9 = 23
+    return:
+      type: VgmStream.coding_t
+- uid: VgmStream.coding_t.coding_NGC_DSP
+  commentId: F:VgmStream.coding_t.coding_NGC_DSP
+  id: coding_NGC_DSP
+  parent: VgmStream.coding_t
+  langs:
+  - csharp
+  - vb
+  name: coding_NGC_DSP
+  nameWithType: coding_t.coding_NGC_DSP
+  fullName: VgmStream.coding_t.coding_NGC_DSP
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore.VGMStream/InteropVgmStream/enums.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: coding_NGC_DSP
+    path: ../SilverCraft.CSCore.VGMStream/InteropVgmStream/enums.cs
+    startLine: 62
+  assemblies:
+  - SilverCraft.CSCore.VGMStream
+  namespace: VgmStream
+  syntax:
+    content: coding_NGC_DSP = 24
+    return:
+      type: VgmStream.coding_t
+- uid: VgmStream.coding_t.coding_NGC_DSP_subint
+  commentId: F:VgmStream.coding_t.coding_NGC_DSP_subint
+  id: coding_NGC_DSP_subint
+  parent: VgmStream.coding_t
+  langs:
+  - csharp
+  - vb
+  name: coding_NGC_DSP_subint
+  nameWithType: coding_t.coding_NGC_DSP_subint
+  fullName: VgmStream.coding_t.coding_NGC_DSP_subint
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore.VGMStream/InteropVgmStream/enums.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: coding_NGC_DSP_subint
+    path: ../SilverCraft.CSCore.VGMStream/InteropVgmStream/enums.cs
+    startLine: 63
+  assemblies:
+  - SilverCraft.CSCore.VGMStream
+  namespace: VgmStream
+  syntax:
+    content: coding_NGC_DSP_subint = 25
+    return:
+      type: VgmStream.coding_t
+- uid: VgmStream.coding_t.coding_NGC_DTK
+  commentId: F:VgmStream.coding_t.coding_NGC_DTK
+  id: coding_NGC_DTK
+  parent: VgmStream.coding_t
+  langs:
+  - csharp
+  - vb
+  name: coding_NGC_DTK
+  nameWithType: coding_t.coding_NGC_DTK
+  fullName: VgmStream.coding_t.coding_NGC_DTK
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore.VGMStream/InteropVgmStream/enums.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: coding_NGC_DTK
+    path: ../SilverCraft.CSCore.VGMStream/InteropVgmStream/enums.cs
+    startLine: 64
+  assemblies:
+  - SilverCraft.CSCore.VGMStream
+  namespace: VgmStream
+  syntax:
+    content: coding_NGC_DTK = 26
+    return:
+      type: VgmStream.coding_t
+- uid: VgmStream.coding_t.coding_AFC
+  commentId: F:VgmStream.coding_t.coding_AFC
+  id: coding_AFC
+  parent: VgmStream.coding_t
+  langs:
+  - csharp
+  - vb
+  name: coding_AFC
+  nameWithType: coding_t.coding_AFC
+  fullName: VgmStream.coding_t.coding_AFC
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore.VGMStream/InteropVgmStream/enums.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: coding_AFC
+    path: ../SilverCraft.CSCore.VGMStream/InteropVgmStream/enums.cs
+    startLine: 65
+  assemblies:
+  - SilverCraft.CSCore.VGMStream
+  namespace: VgmStream
+  syntax:
+    content: coding_AFC = 27
+    return:
+      type: VgmStream.coding_t
+- uid: VgmStream.coding_t.coding_AFC_2bit
+  commentId: F:VgmStream.coding_t.coding_AFC_2bit
+  id: coding_AFC_2bit
+  parent: VgmStream.coding_t
+  langs:
+  - csharp
+  - vb
+  name: coding_AFC_2bit
+  nameWithType: coding_t.coding_AFC_2bit
+  fullName: VgmStream.coding_t.coding_AFC_2bit
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore.VGMStream/InteropVgmStream/enums.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: coding_AFC_2bit
+    path: ../SilverCraft.CSCore.VGMStream/InteropVgmStream/enums.cs
+    startLine: 66
+  assemblies:
+  - SilverCraft.CSCore.VGMStream
+  namespace: VgmStream
+  syntax:
+    content: coding_AFC_2bit = 28
+    return:
+      type: VgmStream.coding_t
+- uid: VgmStream.coding_t.coding_AFC_4X
+  commentId: F:VgmStream.coding_t.coding_AFC_4X
+  id: coding_AFC_4X
+  parent: VgmStream.coding_t
+  langs:
+  - csharp
+  - vb
+  name: coding_AFC_4X
+  nameWithType: coding_t.coding_AFC_4X
+  fullName: VgmStream.coding_t.coding_AFC_4X
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore.VGMStream/InteropVgmStream/enums.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: coding_AFC_4X
+    path: ../SilverCraft.CSCore.VGMStream/InteropVgmStream/enums.cs
+    startLine: 67
+  assemblies:
+  - SilverCraft.CSCore.VGMStream
+  namespace: VgmStream
+  syntax:
+    content: coding_AFC_4X = 29
+    return:
+      type: VgmStream.coding_t
+- uid: VgmStream.coding_t.coding_VADPCM
+  commentId: F:VgmStream.coding_t.coding_VADPCM
+  id: coding_VADPCM
+  parent: VgmStream.coding_t
+  langs:
+  - csharp
+  - vb
+  name: coding_VADPCM
+  nameWithType: coding_t.coding_VADPCM
+  fullName: VgmStream.coding_t.coding_VADPCM
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore.VGMStream/InteropVgmStream/enums.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: coding_VADPCM
+    path: ../SilverCraft.CSCore.VGMStream/InteropVgmStream/enums.cs
+    startLine: 68
+  assemblies:
+  - SilverCraft.CSCore.VGMStream
+  namespace: VgmStream
+  syntax:
+    content: coding_VADPCM = 30
+    return:
+      type: VgmStream.coding_t
+- uid: VgmStream.coding_t.coding_G721
+  commentId: F:VgmStream.coding_t.coding_G721
+  id: coding_G721
+  parent: VgmStream.coding_t
+  langs:
+  - csharp
+  - vb
+  name: coding_G721
+  nameWithType: coding_t.coding_G721
+  fullName: VgmStream.coding_t.coding_G721
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore.VGMStream/InteropVgmStream/enums.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: coding_G721
+    path: ../SilverCraft.CSCore.VGMStream/InteropVgmStream/enums.cs
+    startLine: 70
+  assemblies:
+  - SilverCraft.CSCore.VGMStream
+  namespace: VgmStream
+  syntax:
+    content: coding_G721 = 31
+    return:
+      type: VgmStream.coding_t
+- uid: VgmStream.coding_t.coding_XA
+  commentId: F:VgmStream.coding_t.coding_XA
+  id: coding_XA
+  parent: VgmStream.coding_t
+  langs:
+  - csharp
+  - vb
+  name: coding_XA
+  nameWithType: coding_t.coding_XA
+  fullName: VgmStream.coding_t.coding_XA
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore.VGMStream/InteropVgmStream/enums.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: coding_XA
+    path: ../SilverCraft.CSCore.VGMStream/InteropVgmStream/enums.cs
+    startLine: 72
+  assemblies:
+  - SilverCraft.CSCore.VGMStream
+  namespace: VgmStream
+  syntax:
+    content: coding_XA = 32
+    return:
+      type: VgmStream.coding_t
+- uid: VgmStream.coding_t.coding_XA8
+  commentId: F:VgmStream.coding_t.coding_XA8
+  id: coding_XA8
+  parent: VgmStream.coding_t
+  langs:
+  - csharp
+  - vb
+  name: coding_XA8
+  nameWithType: coding_t.coding_XA8
+  fullName: VgmStream.coding_t.coding_XA8
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore.VGMStream/InteropVgmStream/enums.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: coding_XA8
+    path: ../SilverCraft.CSCore.VGMStream/InteropVgmStream/enums.cs
+    startLine: 73
+  assemblies:
+  - SilverCraft.CSCore.VGMStream
+  namespace: VgmStream
+  syntax:
+    content: coding_XA8 = 33
+    return:
+      type: VgmStream.coding_t
+- uid: VgmStream.coding_t.coding_XA_EA
+  commentId: F:VgmStream.coding_t.coding_XA_EA
+  id: coding_XA_EA
+  parent: VgmStream.coding_t
+  langs:
+  - csharp
+  - vb
+  name: coding_XA_EA
+  nameWithType: coding_t.coding_XA_EA
+  fullName: VgmStream.coding_t.coding_XA_EA
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore.VGMStream/InteropVgmStream/enums.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: coding_XA_EA
+    path: ../SilverCraft.CSCore.VGMStream/InteropVgmStream/enums.cs
+    startLine: 74
+  assemblies:
+  - SilverCraft.CSCore.VGMStream
+  namespace: VgmStream
+  syntax:
+    content: coding_XA_EA = 34
+    return:
+      type: VgmStream.coding_t
+- uid: VgmStream.coding_t.coding_PSX
+  commentId: F:VgmStream.coding_t.coding_PSX
+  id: coding_PSX
+  parent: VgmStream.coding_t
+  langs:
+  - csharp
+  - vb
+  name: coding_PSX
+  nameWithType: coding_t.coding_PSX
+  fullName: VgmStream.coding_t.coding_PSX
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore.VGMStream/InteropVgmStream/enums.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: coding_PSX
+    path: ../SilverCraft.CSCore.VGMStream/InteropVgmStream/enums.cs
+    startLine: 75
+  assemblies:
+  - SilverCraft.CSCore.VGMStream
+  namespace: VgmStream
+  syntax:
+    content: coding_PSX = 35
+    return:
+      type: VgmStream.coding_t
+- uid: VgmStream.coding_t.coding_PSX_badflags
+  commentId: F:VgmStream.coding_t.coding_PSX_badflags
+  id: coding_PSX_badflags
+  parent: VgmStream.coding_t
+  langs:
+  - csharp
+  - vb
+  name: coding_PSX_badflags
+  nameWithType: coding_t.coding_PSX_badflags
+  fullName: VgmStream.coding_t.coding_PSX_badflags
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore.VGMStream/InteropVgmStream/enums.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: coding_PSX_badflags
+    path: ../SilverCraft.CSCore.VGMStream/InteropVgmStream/enums.cs
+    startLine: 76
+  assemblies:
+  - SilverCraft.CSCore.VGMStream
+  namespace: VgmStream
+  syntax:
+    content: coding_PSX_badflags = 36
+    return:
+      type: VgmStream.coding_t
+- uid: VgmStream.coding_t.coding_PSX_cfg
+  commentId: F:VgmStream.coding_t.coding_PSX_cfg
+  id: coding_PSX_cfg
+  parent: VgmStream.coding_t
+  langs:
+  - csharp
+  - vb
+  name: coding_PSX_cfg
+  nameWithType: coding_t.coding_PSX_cfg
+  fullName: VgmStream.coding_t.coding_PSX_cfg
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore.VGMStream/InteropVgmStream/enums.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: coding_PSX_cfg
+    path: ../SilverCraft.CSCore.VGMStream/InteropVgmStream/enums.cs
+    startLine: 77
+  assemblies:
+  - SilverCraft.CSCore.VGMStream
+  namespace: VgmStream
+  syntax:
+    content: coding_PSX_cfg = 37
+    return:
+      type: VgmStream.coding_t
+- uid: VgmStream.coding_t.coding_PSX_pivotal
+  commentId: F:VgmStream.coding_t.coding_PSX_pivotal
+  id: coding_PSX_pivotal
+  parent: VgmStream.coding_t
+  langs:
+  - csharp
+  - vb
+  name: coding_PSX_pivotal
+  nameWithType: coding_t.coding_PSX_pivotal
+  fullName: VgmStream.coding_t.coding_PSX_pivotal
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore.VGMStream/InteropVgmStream/enums.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: coding_PSX_pivotal
+    path: ../SilverCraft.CSCore.VGMStream/InteropVgmStream/enums.cs
+    startLine: 78
+  assemblies:
+  - SilverCraft.CSCore.VGMStream
+  namespace: VgmStream
+  syntax:
+    content: coding_PSX_pivotal = 38
+    return:
+      type: VgmStream.coding_t
+- uid: VgmStream.coding_t.coding_HEVAG
+  commentId: F:VgmStream.coding_t.coding_HEVAG
+  id: coding_HEVAG
+  parent: VgmStream.coding_t
+  langs:
+  - csharp
+  - vb
+  name: coding_HEVAG
+  nameWithType: coding_t.coding_HEVAG
+  fullName: VgmStream.coding_t.coding_HEVAG
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore.VGMStream/InteropVgmStream/enums.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: coding_HEVAG
+    path: ../SilverCraft.CSCore.VGMStream/InteropVgmStream/enums.cs
+    startLine: 79
+  assemblies:
+  - SilverCraft.CSCore.VGMStream
+  namespace: VgmStream
+  syntax:
+    content: coding_HEVAG = 39
+    return:
+      type: VgmStream.coding_t
+- uid: VgmStream.coding_t.coding_EA_XA
+  commentId: F:VgmStream.coding_t.coding_EA_XA
+  id: coding_EA_XA
+  parent: VgmStream.coding_t
+  langs:
+  - csharp
+  - vb
+  name: coding_EA_XA
+  nameWithType: coding_t.coding_EA_XA
+  fullName: VgmStream.coding_t.coding_EA_XA
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore.VGMStream/InteropVgmStream/enums.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: coding_EA_XA
+    path: ../SilverCraft.CSCore.VGMStream/InteropVgmStream/enums.cs
+    startLine: 81
+  assemblies:
+  - SilverCraft.CSCore.VGMStream
+  namespace: VgmStream
+  syntax:
+    content: coding_EA_XA = 40
+    return:
+      type: VgmStream.coding_t
+- uid: VgmStream.coding_t.coding_EA_XA_int
+  commentId: F:VgmStream.coding_t.coding_EA_XA_int
+  id: coding_EA_XA_int
+  parent: VgmStream.coding_t
+  langs:
+  - csharp
+  - vb
+  name: coding_EA_XA_int
+  nameWithType: coding_t.coding_EA_XA_int
+  fullName: VgmStream.coding_t.coding_EA_XA_int
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore.VGMStream/InteropVgmStream/enums.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: coding_EA_XA_int
+    path: ../SilverCraft.CSCore.VGMStream/InteropVgmStream/enums.cs
+    startLine: 82
+  assemblies:
+  - SilverCraft.CSCore.VGMStream
+  namespace: VgmStream
+  syntax:
+    content: coding_EA_XA_int = 41
+    return:
+      type: VgmStream.coding_t
+- uid: VgmStream.coding_t.coding_EA_XA_V2
+  commentId: F:VgmStream.coding_t.coding_EA_XA_V2
+  id: coding_EA_XA_V2
+  parent: VgmStream.coding_t
+  langs:
+  - csharp
+  - vb
+  name: coding_EA_XA_V2
+  nameWithType: coding_t.coding_EA_XA_V2
+  fullName: VgmStream.coding_t.coding_EA_XA_V2
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore.VGMStream/InteropVgmStream/enums.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: coding_EA_XA_V2
+    path: ../SilverCraft.CSCore.VGMStream/InteropVgmStream/enums.cs
+    startLine: 83
+  assemblies:
+  - SilverCraft.CSCore.VGMStream
+  namespace: VgmStream
+  syntax:
+    content: coding_EA_XA_V2 = 42
+    return:
+      type: VgmStream.coding_t
+- uid: VgmStream.coding_t.coding_MAXIS_XA
+  commentId: F:VgmStream.coding_t.coding_MAXIS_XA
+  id: coding_MAXIS_XA
+  parent: VgmStream.coding_t
+  langs:
+  - csharp
+  - vb
+  name: coding_MAXIS_XA
+  nameWithType: coding_t.coding_MAXIS_XA
+  fullName: VgmStream.coding_t.coding_MAXIS_XA
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore.VGMStream/InteropVgmStream/enums.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: coding_MAXIS_XA
+    path: ../SilverCraft.CSCore.VGMStream/InteropVgmStream/enums.cs
+    startLine: 84
+  assemblies:
+  - SilverCraft.CSCore.VGMStream
+  namespace: VgmStream
+  syntax:
+    content: coding_MAXIS_XA = 43
+    return:
+      type: VgmStream.coding_t
+- uid: VgmStream.coding_t.coding_EA_XAS_V0
+  commentId: F:VgmStream.coding_t.coding_EA_XAS_V0
+  id: coding_EA_XAS_V0
+  parent: VgmStream.coding_t
+  langs:
+  - csharp
+  - vb
+  name: coding_EA_XAS_V0
+  nameWithType: coding_t.coding_EA_XAS_V0
+  fullName: VgmStream.coding_t.coding_EA_XAS_V0
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore.VGMStream/InteropVgmStream/enums.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: coding_EA_XAS_V0
+    path: ../SilverCraft.CSCore.VGMStream/InteropVgmStream/enums.cs
+    startLine: 85
+  assemblies:
+  - SilverCraft.CSCore.VGMStream
+  namespace: VgmStream
+  syntax:
+    content: coding_EA_XAS_V0 = 44
+    return:
+      type: VgmStream.coding_t
+- uid: VgmStream.coding_t.coding_EA_XAS_V1
+  commentId: F:VgmStream.coding_t.coding_EA_XAS_V1
+  id: coding_EA_XAS_V1
+  parent: VgmStream.coding_t
+  langs:
+  - csharp
+  - vb
+  name: coding_EA_XAS_V1
+  nameWithType: coding_t.coding_EA_XAS_V1
+  fullName: VgmStream.coding_t.coding_EA_XAS_V1
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore.VGMStream/InteropVgmStream/enums.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: coding_EA_XAS_V1
+    path: ../SilverCraft.CSCore.VGMStream/InteropVgmStream/enums.cs
+    startLine: 86
+  assemblies:
+  - SilverCraft.CSCore.VGMStream
+  namespace: VgmStream
+  syntax:
+    content: coding_EA_XAS_V1 = 45
+    return:
+      type: VgmStream.coding_t
+- uid: VgmStream.coding_t.coding_IMA
+  commentId: F:VgmStream.coding_t.coding_IMA
+  id: coding_IMA
+  parent: VgmStream.coding_t
+  langs:
+  - csharp
+  - vb
+  name: coding_IMA
+  nameWithType: coding_t.coding_IMA
+  fullName: VgmStream.coding_t.coding_IMA
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore.VGMStream/InteropVgmStream/enums.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: coding_IMA
+    path: ../SilverCraft.CSCore.VGMStream/InteropVgmStream/enums.cs
+    startLine: 88
+  assemblies:
+  - SilverCraft.CSCore.VGMStream
+  namespace: VgmStream
+  syntax:
+    content: coding_IMA = 46
+    return:
+      type: VgmStream.coding_t
+- uid: VgmStream.coding_t.coding_IMA_mono
+  commentId: F:VgmStream.coding_t.coding_IMA_mono
+  id: coding_IMA_mono
+  parent: VgmStream.coding_t
+  langs:
+  - csharp
+  - vb
+  name: coding_IMA_mono
+  nameWithType: coding_t.coding_IMA_mono
+  fullName: VgmStream.coding_t.coding_IMA_mono
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore.VGMStream/InteropVgmStream/enums.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: coding_IMA_mono
+    path: ../SilverCraft.CSCore.VGMStream/InteropVgmStream/enums.cs
+    startLine: 89
+  assemblies:
+  - SilverCraft.CSCore.VGMStream
+  namespace: VgmStream
+  syntax:
+    content: coding_IMA_mono = 47
+    return:
+      type: VgmStream.coding_t
+- uid: VgmStream.coding_t.coding_DVI_IMA
+  commentId: F:VgmStream.coding_t.coding_DVI_IMA
+  id: coding_DVI_IMA
+  parent: VgmStream.coding_t
+  langs:
+  - csharp
+  - vb
+  name: coding_DVI_IMA
+  nameWithType: coding_t.coding_DVI_IMA
+  fullName: VgmStream.coding_t.coding_DVI_IMA
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore.VGMStream/InteropVgmStream/enums.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: coding_DVI_IMA
+    path: ../SilverCraft.CSCore.VGMStream/InteropVgmStream/enums.cs
+    startLine: 90
+  assemblies:
+  - SilverCraft.CSCore.VGMStream
+  namespace: VgmStream
+  syntax:
+    content: coding_DVI_IMA = 48
+    return:
+      type: VgmStream.coding_t
+- uid: VgmStream.coding_t.coding_DVI_IMA_mono
+  commentId: F:VgmStream.coding_t.coding_DVI_IMA_mono
+  id: coding_DVI_IMA_mono
+  parent: VgmStream.coding_t
+  langs:
+  - csharp
+  - vb
+  name: coding_DVI_IMA_mono
+  nameWithType: coding_t.coding_DVI_IMA_mono
+  fullName: VgmStream.coding_t.coding_DVI_IMA_mono
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore.VGMStream/InteropVgmStream/enums.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: coding_DVI_IMA_mono
+    path: ../SilverCraft.CSCore.VGMStream/InteropVgmStream/enums.cs
+    startLine: 91
+  assemblies:
+  - SilverCraft.CSCore.VGMStream
+  namespace: VgmStream
+  syntax:
+    content: coding_DVI_IMA_mono = 49
+    return:
+      type: VgmStream.coding_t
+- uid: VgmStream.coding_t.coding_CAMELOT_IMA
+  commentId: F:VgmStream.coding_t.coding_CAMELOT_IMA
+  id: coding_CAMELOT_IMA
+  parent: VgmStream.coding_t
+  langs:
+  - csharp
+  - vb
+  name: coding_CAMELOT_IMA
+  nameWithType: coding_t.coding_CAMELOT_IMA
+  fullName: VgmStream.coding_t.coding_CAMELOT_IMA
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore.VGMStream/InteropVgmStream/enums.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: coding_CAMELOT_IMA
+    path: ../SilverCraft.CSCore.VGMStream/InteropVgmStream/enums.cs
+    startLine: 92
+  assemblies:
+  - SilverCraft.CSCore.VGMStream
+  namespace: VgmStream
+  syntax:
+    content: coding_CAMELOT_IMA = 50
+    return:
+      type: VgmStream.coding_t
+- uid: VgmStream.coding_t.coding_SNDS_IMA
+  commentId: F:VgmStream.coding_t.coding_SNDS_IMA
+  id: coding_SNDS_IMA
+  parent: VgmStream.coding_t
+  langs:
+  - csharp
+  - vb
+  name: coding_SNDS_IMA
+  nameWithType: coding_t.coding_SNDS_IMA
+  fullName: VgmStream.coding_t.coding_SNDS_IMA
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore.VGMStream/InteropVgmStream/enums.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: coding_SNDS_IMA
+    path: ../SilverCraft.CSCore.VGMStream/InteropVgmStream/enums.cs
+    startLine: 93
+  assemblies:
+  - SilverCraft.CSCore.VGMStream
+  namespace: VgmStream
+  syntax:
+    content: coding_SNDS_IMA = 51
+    return:
+      type: VgmStream.coding_t
+- uid: VgmStream.coding_t.coding_QD_IMA
+  commentId: F:VgmStream.coding_t.coding_QD_IMA
+  id: coding_QD_IMA
+  parent: VgmStream.coding_t
+  langs:
+  - csharp
+  - vb
+  name: coding_QD_IMA
+  nameWithType: coding_t.coding_QD_IMA
+  fullName: VgmStream.coding_t.coding_QD_IMA
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore.VGMStream/InteropVgmStream/enums.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: coding_QD_IMA
+    path: ../SilverCraft.CSCore.VGMStream/InteropVgmStream/enums.cs
+    startLine: 94
+  assemblies:
+  - SilverCraft.CSCore.VGMStream
+  namespace: VgmStream
+  syntax:
+    content: coding_QD_IMA = 52
+    return:
+      type: VgmStream.coding_t
+- uid: VgmStream.coding_t.coding_WV6_IMA
+  commentId: F:VgmStream.coding_t.coding_WV6_IMA
+  id: coding_WV6_IMA
+  parent: VgmStream.coding_t
+  langs:
+  - csharp
+  - vb
+  name: coding_WV6_IMA
+  nameWithType: coding_t.coding_WV6_IMA
+  fullName: VgmStream.coding_t.coding_WV6_IMA
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore.VGMStream/InteropVgmStream/enums.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: coding_WV6_IMA
+    path: ../SilverCraft.CSCore.VGMStream/InteropVgmStream/enums.cs
+    startLine: 95
+  assemblies:
+  - SilverCraft.CSCore.VGMStream
+  namespace: VgmStream
+  syntax:
+    content: coding_WV6_IMA = 53
+    return:
+      type: VgmStream.coding_t
+- uid: VgmStream.coding_t.coding_HV_IMA
+  commentId: F:VgmStream.coding_t.coding_HV_IMA
+  id: coding_HV_IMA
+  parent: VgmStream.coding_t
+  langs:
+  - csharp
+  - vb
+  name: coding_HV_IMA
+  nameWithType: coding_t.coding_HV_IMA
+  fullName: VgmStream.coding_t.coding_HV_IMA
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore.VGMStream/InteropVgmStream/enums.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: coding_HV_IMA
+    path: ../SilverCraft.CSCore.VGMStream/InteropVgmStream/enums.cs
+    startLine: 96
+  assemblies:
+  - SilverCraft.CSCore.VGMStream
+  namespace: VgmStream
+  syntax:
+    content: coding_HV_IMA = 54
+    return:
+      type: VgmStream.coding_t
+- uid: VgmStream.coding_t.coding_SQEX_IMA
+  commentId: F:VgmStream.coding_t.coding_SQEX_IMA
+  id: coding_SQEX_IMA
+  parent: VgmStream.coding_t
+  langs:
+  - csharp
+  - vb
+  name: coding_SQEX_IMA
+  nameWithType: coding_t.coding_SQEX_IMA
+  fullName: VgmStream.coding_t.coding_SQEX_IMA
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore.VGMStream/InteropVgmStream/enums.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: coding_SQEX_IMA
+    path: ../SilverCraft.CSCore.VGMStream/InteropVgmStream/enums.cs
+    startLine: 97
+  assemblies:
+  - SilverCraft.CSCore.VGMStream
+  namespace: VgmStream
+  syntax:
+    content: coding_SQEX_IMA = 55
+    return:
+      type: VgmStream.coding_t
+- uid: VgmStream.coding_t.coding_BLITZ_IMA
+  commentId: F:VgmStream.coding_t.coding_BLITZ_IMA
+  id: coding_BLITZ_IMA
+  parent: VgmStream.coding_t
+  langs:
+  - csharp
+  - vb
+  name: coding_BLITZ_IMA
+  nameWithType: coding_t.coding_BLITZ_IMA
+  fullName: VgmStream.coding_t.coding_BLITZ_IMA
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore.VGMStream/InteropVgmStream/enums.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: coding_BLITZ_IMA
+    path: ../SilverCraft.CSCore.VGMStream/InteropVgmStream/enums.cs
+    startLine: 98
+  assemblies:
+  - SilverCraft.CSCore.VGMStream
+  namespace: VgmStream
+  syntax:
+    content: coding_BLITZ_IMA = 56
+    return:
+      type: VgmStream.coding_t
+- uid: VgmStream.coding_t.coding_MS_IMA
+  commentId: F:VgmStream.coding_t.coding_MS_IMA
+  id: coding_MS_IMA
+  parent: VgmStream.coding_t
+  langs:
+  - csharp
+  - vb
+  name: coding_MS_IMA
+  nameWithType: coding_t.coding_MS_IMA
+  fullName: VgmStream.coding_t.coding_MS_IMA
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore.VGMStream/InteropVgmStream/enums.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: coding_MS_IMA
+    path: ../SilverCraft.CSCore.VGMStream/InteropVgmStream/enums.cs
+    startLine: 100
+  assemblies:
+  - SilverCraft.CSCore.VGMStream
+  namespace: VgmStream
+  syntax:
+    content: coding_MS_IMA = 57
+    return:
+      type: VgmStream.coding_t
+- uid: VgmStream.coding_t.coding_MS_IMA_mono
+  commentId: F:VgmStream.coding_t.coding_MS_IMA_mono
+  id: coding_MS_IMA_mono
+  parent: VgmStream.coding_t
+  langs:
+  - csharp
+  - vb
+  name: coding_MS_IMA_mono
+  nameWithType: coding_t.coding_MS_IMA_mono
+  fullName: VgmStream.coding_t.coding_MS_IMA_mono
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore.VGMStream/InteropVgmStream/enums.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: coding_MS_IMA_mono
+    path: ../SilverCraft.CSCore.VGMStream/InteropVgmStream/enums.cs
+    startLine: 101
+  assemblies:
+  - SilverCraft.CSCore.VGMStream
+  namespace: VgmStream
+  syntax:
+    content: coding_MS_IMA_mono = 58
+    return:
+      type: VgmStream.coding_t
+- uid: VgmStream.coding_t.coding_XBOX_IMA
+  commentId: F:VgmStream.coding_t.coding_XBOX_IMA
+  id: coding_XBOX_IMA
+  parent: VgmStream.coding_t
+  langs:
+  - csharp
+  - vb
+  name: coding_XBOX_IMA
+  nameWithType: coding_t.coding_XBOX_IMA
+  fullName: VgmStream.coding_t.coding_XBOX_IMA
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore.VGMStream/InteropVgmStream/enums.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: coding_XBOX_IMA
+    path: ../SilverCraft.CSCore.VGMStream/InteropVgmStream/enums.cs
+    startLine: 102
+  assemblies:
+  - SilverCraft.CSCore.VGMStream
+  namespace: VgmStream
+  syntax:
+    content: coding_XBOX_IMA = 59
+    return:
+      type: VgmStream.coding_t
+- uid: VgmStream.coding_t.coding_XBOX_IMA_mch
+  commentId: F:VgmStream.coding_t.coding_XBOX_IMA_mch
+  id: coding_XBOX_IMA_mch
+  parent: VgmStream.coding_t
+  langs:
+  - csharp
+  - vb
+  name: coding_XBOX_IMA_mch
+  nameWithType: coding_t.coding_XBOX_IMA_mch
+  fullName: VgmStream.coding_t.coding_XBOX_IMA_mch
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore.VGMStream/InteropVgmStream/enums.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: coding_XBOX_IMA_mch
+    path: ../SilverCraft.CSCore.VGMStream/InteropVgmStream/enums.cs
+    startLine: 103
+  assemblies:
+  - SilverCraft.CSCore.VGMStream
+  namespace: VgmStream
+  syntax:
+    content: coding_XBOX_IMA_mch = 60
+    return:
+      type: VgmStream.coding_t
+- uid: VgmStream.coding_t.coding_XBOX_IMA_mono
+  commentId: F:VgmStream.coding_t.coding_XBOX_IMA_mono
+  id: coding_XBOX_IMA_mono
+  parent: VgmStream.coding_t
+  langs:
+  - csharp
+  - vb
+  name: coding_XBOX_IMA_mono
+  nameWithType: coding_t.coding_XBOX_IMA_mono
+  fullName: VgmStream.coding_t.coding_XBOX_IMA_mono
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore.VGMStream/InteropVgmStream/enums.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: coding_XBOX_IMA_mono
+    path: ../SilverCraft.CSCore.VGMStream/InteropVgmStream/enums.cs
+    startLine: 104
+  assemblies:
+  - SilverCraft.CSCore.VGMStream
+  namespace: VgmStream
+  syntax:
+    content: coding_XBOX_IMA_mono = 61
+    return:
+      type: VgmStream.coding_t
+- uid: VgmStream.coding_t.coding_NDS_IMA
+  commentId: F:VgmStream.coding_t.coding_NDS_IMA
+  id: coding_NDS_IMA
+  parent: VgmStream.coding_t
+  langs:
+  - csharp
+  - vb
+  name: coding_NDS_IMA
+  nameWithType: coding_t.coding_NDS_IMA
+  fullName: VgmStream.coding_t.coding_NDS_IMA
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore.VGMStream/InteropVgmStream/enums.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: coding_NDS_IMA
+    path: ../SilverCraft.CSCore.VGMStream/InteropVgmStream/enums.cs
+    startLine: 105
+  assemblies:
+  - SilverCraft.CSCore.VGMStream
+  namespace: VgmStream
+  syntax:
+    content: coding_NDS_IMA = 62
+    return:
+      type: VgmStream.coding_t
+- uid: VgmStream.coding_t.coding_DAT4_IMA
+  commentId: F:VgmStream.coding_t.coding_DAT4_IMA
+  id: coding_DAT4_IMA
+  parent: VgmStream.coding_t
+  langs:
+  - csharp
+  - vb
+  name: coding_DAT4_IMA
+  nameWithType: coding_t.coding_DAT4_IMA
+  fullName: VgmStream.coding_t.coding_DAT4_IMA
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore.VGMStream/InteropVgmStream/enums.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: coding_DAT4_IMA
+    path: ../SilverCraft.CSCore.VGMStream/InteropVgmStream/enums.cs
+    startLine: 106
+  assemblies:
+  - SilverCraft.CSCore.VGMStream
+  namespace: VgmStream
+  syntax:
+    content: coding_DAT4_IMA = 63
+    return:
+      type: VgmStream.coding_t
+- uid: VgmStream.coding_t.coding_RAD_IMA
+  commentId: F:VgmStream.coding_t.coding_RAD_IMA
+  id: coding_RAD_IMA
+  parent: VgmStream.coding_t
+  langs:
+  - csharp
+  - vb
+  name: coding_RAD_IMA
+  nameWithType: coding_t.coding_RAD_IMA
+  fullName: VgmStream.coding_t.coding_RAD_IMA
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore.VGMStream/InteropVgmStream/enums.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: coding_RAD_IMA
+    path: ../SilverCraft.CSCore.VGMStream/InteropVgmStream/enums.cs
+    startLine: 107
+  assemblies:
+  - SilverCraft.CSCore.VGMStream
+  namespace: VgmStream
+  syntax:
+    content: coding_RAD_IMA = 64
+    return:
+      type: VgmStream.coding_t
+- uid: VgmStream.coding_t.coding_RAD_IMA_mono
+  commentId: F:VgmStream.coding_t.coding_RAD_IMA_mono
+  id: coding_RAD_IMA_mono
+  parent: VgmStream.coding_t
+  langs:
+  - csharp
+  - vb
+  name: coding_RAD_IMA_mono
+  nameWithType: coding_t.coding_RAD_IMA_mono
+  fullName: VgmStream.coding_t.coding_RAD_IMA_mono
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore.VGMStream/InteropVgmStream/enums.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: coding_RAD_IMA_mono
+    path: ../SilverCraft.CSCore.VGMStream/InteropVgmStream/enums.cs
+    startLine: 108
+  assemblies:
+  - SilverCraft.CSCore.VGMStream
+  namespace: VgmStream
+  syntax:
+    content: coding_RAD_IMA_mono = 65
+    return:
+      type: VgmStream.coding_t
+- uid: VgmStream.coding_t.coding_APPLE_IMA4
+  commentId: F:VgmStream.coding_t.coding_APPLE_IMA4
+  id: coding_APPLE_IMA4
+  parent: VgmStream.coding_t
+  langs:
+  - csharp
+  - vb
+  name: coding_APPLE_IMA4
+  nameWithType: coding_t.coding_APPLE_IMA4
+  fullName: VgmStream.coding_t.coding_APPLE_IMA4
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore.VGMStream/InteropVgmStream/enums.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: coding_APPLE_IMA4
+    path: ../SilverCraft.CSCore.VGMStream/InteropVgmStream/enums.cs
+    startLine: 109
+  assemblies:
+  - SilverCraft.CSCore.VGMStream
+  namespace: VgmStream
+  syntax:
+    content: coding_APPLE_IMA4 = 66
+    return:
+      type: VgmStream.coding_t
+- uid: VgmStream.coding_t.coding_FSB_IMA
+  commentId: F:VgmStream.coding_t.coding_FSB_IMA
+  id: coding_FSB_IMA
+  parent: VgmStream.coding_t
+  langs:
+  - csharp
+  - vb
+  name: coding_FSB_IMA
+  nameWithType: coding_t.coding_FSB_IMA
+  fullName: VgmStream.coding_t.coding_FSB_IMA
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore.VGMStream/InteropVgmStream/enums.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: coding_FSB_IMA
+    path: ../SilverCraft.CSCore.VGMStream/InteropVgmStream/enums.cs
+    startLine: 110
+  assemblies:
+  - SilverCraft.CSCore.VGMStream
+  namespace: VgmStream
+  syntax:
+    content: coding_FSB_IMA = 67
+    return:
+      type: VgmStream.coding_t
+- uid: VgmStream.coding_t.coding_WWISE_IMA
+  commentId: F:VgmStream.coding_t.coding_WWISE_IMA
+  id: coding_WWISE_IMA
+  parent: VgmStream.coding_t
+  langs:
+  - csharp
+  - vb
+  name: coding_WWISE_IMA
+  nameWithType: coding_t.coding_WWISE_IMA
+  fullName: VgmStream.coding_t.coding_WWISE_IMA
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore.VGMStream/InteropVgmStream/enums.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: coding_WWISE_IMA
+    path: ../SilverCraft.CSCore.VGMStream/InteropVgmStream/enums.cs
+    startLine: 111
+  assemblies:
+  - SilverCraft.CSCore.VGMStream
+  namespace: VgmStream
+  syntax:
+    content: coding_WWISE_IMA = 68
+    return:
+      type: VgmStream.coding_t
+- uid: VgmStream.coding_t.coding_REF_IMA
+  commentId: F:VgmStream.coding_t.coding_REF_IMA
+  id: coding_REF_IMA
+  parent: VgmStream.coding_t
+  langs:
+  - csharp
+  - vb
+  name: coding_REF_IMA
+  nameWithType: coding_t.coding_REF_IMA
+  fullName: VgmStream.coding_t.coding_REF_IMA
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore.VGMStream/InteropVgmStream/enums.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: coding_REF_IMA
+    path: ../SilverCraft.CSCore.VGMStream/InteropVgmStream/enums.cs
+    startLine: 112
+  assemblies:
+  - SilverCraft.CSCore.VGMStream
+  namespace: VgmStream
+  syntax:
+    content: coding_REF_IMA = 69
+    return:
+      type: VgmStream.coding_t
+- uid: VgmStream.coding_t.coding_AWC_IMA
+  commentId: F:VgmStream.coding_t.coding_AWC_IMA
+  id: coding_AWC_IMA
+  parent: VgmStream.coding_t
+  langs:
+  - csharp
+  - vb
+  name: coding_AWC_IMA
+  nameWithType: coding_t.coding_AWC_IMA
+  fullName: VgmStream.coding_t.coding_AWC_IMA
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore.VGMStream/InteropVgmStream/enums.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: coding_AWC_IMA
+    path: ../SilverCraft.CSCore.VGMStream/InteropVgmStream/enums.cs
+    startLine: 113
+  assemblies:
+  - SilverCraft.CSCore.VGMStream
+  namespace: VgmStream
+  syntax:
+    content: coding_AWC_IMA = 70
+    return:
+      type: VgmStream.coding_t
+- uid: VgmStream.coding_t.coding_UBI_IMA
+  commentId: F:VgmStream.coding_t.coding_UBI_IMA
+  id: coding_UBI_IMA
+  parent: VgmStream.coding_t
+  langs:
+  - csharp
+  - vb
+  name: coding_UBI_IMA
+  nameWithType: coding_t.coding_UBI_IMA
+  fullName: VgmStream.coding_t.coding_UBI_IMA
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore.VGMStream/InteropVgmStream/enums.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: coding_UBI_IMA
+    path: ../SilverCraft.CSCore.VGMStream/InteropVgmStream/enums.cs
+    startLine: 114
+  assemblies:
+  - SilverCraft.CSCore.VGMStream
+  namespace: VgmStream
+  syntax:
+    content: coding_UBI_IMA = 71
+    return:
+      type: VgmStream.coding_t
+- uid: VgmStream.coding_t.coding_UBI_SCE_IMA
+  commentId: F:VgmStream.coding_t.coding_UBI_SCE_IMA
+  id: coding_UBI_SCE_IMA
+  parent: VgmStream.coding_t
+  langs:
+  - csharp
+  - vb
+  name: coding_UBI_SCE_IMA
+  nameWithType: coding_t.coding_UBI_SCE_IMA
+  fullName: VgmStream.coding_t.coding_UBI_SCE_IMA
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore.VGMStream/InteropVgmStream/enums.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: coding_UBI_SCE_IMA
+    path: ../SilverCraft.CSCore.VGMStream/InteropVgmStream/enums.cs
+    startLine: 115
+  assemblies:
+  - SilverCraft.CSCore.VGMStream
+  namespace: VgmStream
+  syntax:
+    content: coding_UBI_SCE_IMA = 72
+    return:
+      type: VgmStream.coding_t
+- uid: VgmStream.coding_t.coding_HVQM4_IMA
+  commentId: F:VgmStream.coding_t.coding_HVQM4_IMA
+  id: coding_HVQM4_IMA
+  parent: VgmStream.coding_t
+  langs:
+  - csharp
+  - vb
+  name: coding_HVQM4_IMA
+  nameWithType: coding_t.coding_HVQM4_IMA
+  fullName: VgmStream.coding_t.coding_HVQM4_IMA
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore.VGMStream/InteropVgmStream/enums.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: coding_HVQM4_IMA
+    path: ../SilverCraft.CSCore.VGMStream/InteropVgmStream/enums.cs
+    startLine: 116
+  assemblies:
+  - SilverCraft.CSCore.VGMStream
+  namespace: VgmStream
+  syntax:
+    content: coding_HVQM4_IMA = 73
+    return:
+      type: VgmStream.coding_t
+- uid: VgmStream.coding_t.coding_MTF_IMA
+  commentId: F:VgmStream.coding_t.coding_MTF_IMA
+  id: coding_MTF_IMA
+  parent: VgmStream.coding_t
+  langs:
+  - csharp
+  - vb
+  name: coding_MTF_IMA
+  nameWithType: coding_t.coding_MTF_IMA
+  fullName: VgmStream.coding_t.coding_MTF_IMA
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore.VGMStream/InteropVgmStream/enums.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: coding_MTF_IMA
+    path: ../SilverCraft.CSCore.VGMStream/InteropVgmStream/enums.cs
+    startLine: 117
+  assemblies:
+  - SilverCraft.CSCore.VGMStream
+  namespace: VgmStream
+  syntax:
+    content: coding_MTF_IMA = 74
+    return:
+      type: VgmStream.coding_t
+- uid: VgmStream.coding_t.coding_CD_IMA
+  commentId: F:VgmStream.coding_t.coding_CD_IMA
+  id: coding_CD_IMA
+  parent: VgmStream.coding_t
+  langs:
+  - csharp
+  - vb
+  name: coding_CD_IMA
+  nameWithType: coding_t.coding_CD_IMA
+  fullName: VgmStream.coding_t.coding_CD_IMA
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore.VGMStream/InteropVgmStream/enums.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: coding_CD_IMA
+    path: ../SilverCraft.CSCore.VGMStream/InteropVgmStream/enums.cs
+    startLine: 118
+  assemblies:
+  - SilverCraft.CSCore.VGMStream
+  namespace: VgmStream
+  syntax:
+    content: coding_CD_IMA = 75
+    return:
+      type: VgmStream.coding_t
+- uid: VgmStream.coding_t.coding_CRANKCASE_IMA
+  commentId: F:VgmStream.coding_t.coding_CRANKCASE_IMA
+  id: coding_CRANKCASE_IMA
+  parent: VgmStream.coding_t
+  langs:
+  - csharp
+  - vb
+  name: coding_CRANKCASE_IMA
+  nameWithType: coding_t.coding_CRANKCASE_IMA
+  fullName: VgmStream.coding_t.coding_CRANKCASE_IMA
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore.VGMStream/InteropVgmStream/enums.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: coding_CRANKCASE_IMA
+    path: ../SilverCraft.CSCore.VGMStream/InteropVgmStream/enums.cs
+    startLine: 119
+  assemblies:
+  - SilverCraft.CSCore.VGMStream
+  namespace: VgmStream
+  syntax:
+    content: coding_CRANKCASE_IMA = 76
+    return:
+      type: VgmStream.coding_t
+- uid: VgmStream.coding_t.coding_MSADPCM
+  commentId: F:VgmStream.coding_t.coding_MSADPCM
+  id: coding_MSADPCM
+  parent: VgmStream.coding_t
+  langs:
+  - csharp
+  - vb
+  name: coding_MSADPCM
+  nameWithType: coding_t.coding_MSADPCM
+  fullName: VgmStream.coding_t.coding_MSADPCM
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore.VGMStream/InteropVgmStream/enums.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: coding_MSADPCM
+    path: ../SilverCraft.CSCore.VGMStream/InteropVgmStream/enums.cs
+    startLine: 121
+  assemblies:
+  - SilverCraft.CSCore.VGMStream
+  namespace: VgmStream
+  syntax:
+    content: coding_MSADPCM = 77
+    return:
+      type: VgmStream.coding_t
+- uid: VgmStream.coding_t.coding_MSADPCM_mono
+  commentId: F:VgmStream.coding_t.coding_MSADPCM_mono
+  id: coding_MSADPCM_mono
+  parent: VgmStream.coding_t
+  langs:
+  - csharp
+  - vb
+  name: coding_MSADPCM_mono
+  nameWithType: coding_t.coding_MSADPCM_mono
+  fullName: VgmStream.coding_t.coding_MSADPCM_mono
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore.VGMStream/InteropVgmStream/enums.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: coding_MSADPCM_mono
+    path: ../SilverCraft.CSCore.VGMStream/InteropVgmStream/enums.cs
+    startLine: 122
+  assemblies:
+  - SilverCraft.CSCore.VGMStream
+  namespace: VgmStream
+  syntax:
+    content: coding_MSADPCM_mono = 78
+    return:
+      type: VgmStream.coding_t
+- uid: VgmStream.coding_t.coding_MSADPCM_ck
+  commentId: F:VgmStream.coding_t.coding_MSADPCM_ck
+  id: coding_MSADPCM_ck
+  parent: VgmStream.coding_t
+  langs:
+  - csharp
+  - vb
+  name: coding_MSADPCM_ck
+  nameWithType: coding_t.coding_MSADPCM_ck
+  fullName: VgmStream.coding_t.coding_MSADPCM_ck
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore.VGMStream/InteropVgmStream/enums.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: coding_MSADPCM_ck
+    path: ../SilverCraft.CSCore.VGMStream/InteropVgmStream/enums.cs
+    startLine: 123
+  assemblies:
+  - SilverCraft.CSCore.VGMStream
+  namespace: VgmStream
+  syntax:
+    content: coding_MSADPCM_ck = 79
+    return:
+      type: VgmStream.coding_t
+- uid: VgmStream.coding_t.coding_WS
+  commentId: F:VgmStream.coding_t.coding_WS
+  id: coding_WS
+  parent: VgmStream.coding_t
+  langs:
+  - csharp
+  - vb
+  name: coding_WS
+  nameWithType: coding_t.coding_WS
+  fullName: VgmStream.coding_t.coding_WS
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore.VGMStream/InteropVgmStream/enums.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: coding_WS
+    path: ../SilverCraft.CSCore.VGMStream/InteropVgmStream/enums.cs
+    startLine: 124
+  assemblies:
+  - SilverCraft.CSCore.VGMStream
+  namespace: VgmStream
+  syntax:
+    content: coding_WS = 80
+    return:
+      type: VgmStream.coding_t
+- uid: VgmStream.coding_t.coding_AICA
+  commentId: F:VgmStream.coding_t.coding_AICA
+  id: coding_AICA
+  parent: VgmStream.coding_t
+  langs:
+  - csharp
+  - vb
+  name: coding_AICA
+  nameWithType: coding_t.coding_AICA
+  fullName: VgmStream.coding_t.coding_AICA
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore.VGMStream/InteropVgmStream/enums.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: coding_AICA
+    path: ../SilverCraft.CSCore.VGMStream/InteropVgmStream/enums.cs
+    startLine: 126
+  assemblies:
+  - SilverCraft.CSCore.VGMStream
+  namespace: VgmStream
+  syntax:
+    content: coding_AICA = 81
+    return:
+      type: VgmStream.coding_t
+- uid: VgmStream.coding_t.coding_AICA_int
+  commentId: F:VgmStream.coding_t.coding_AICA_int
+  id: coding_AICA_int
+  parent: VgmStream.coding_t
+  langs:
+  - csharp
+  - vb
+  name: coding_AICA_int
+  nameWithType: coding_t.coding_AICA_int
+  fullName: VgmStream.coding_t.coding_AICA_int
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore.VGMStream/InteropVgmStream/enums.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: coding_AICA_int
+    path: ../SilverCraft.CSCore.VGMStream/InteropVgmStream/enums.cs
+    startLine: 127
+  assemblies:
+  - SilverCraft.CSCore.VGMStream
+  namespace: VgmStream
+  syntax:
+    content: coding_AICA_int = 82
+    return:
+      type: VgmStream.coding_t
+- uid: VgmStream.coding_t.coding_CP_YM
+  commentId: F:VgmStream.coding_t.coding_CP_YM
+  id: coding_CP_YM
+  parent: VgmStream.coding_t
+  langs:
+  - csharp
+  - vb
+  name: coding_CP_YM
+  nameWithType: coding_t.coding_CP_YM
+  fullName: VgmStream.coding_t.coding_CP_YM
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore.VGMStream/InteropVgmStream/enums.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: coding_CP_YM
+    path: ../SilverCraft.CSCore.VGMStream/InteropVgmStream/enums.cs
+    startLine: 128
+  assemblies:
+  - SilverCraft.CSCore.VGMStream
+  namespace: VgmStream
+  syntax:
+    content: coding_CP_YM = 83
+    return:
+      type: VgmStream.coding_t
+- uid: VgmStream.coding_t.coding_ASKA
+  commentId: F:VgmStream.coding_t.coding_ASKA
+  id: coding_ASKA
+  parent: VgmStream.coding_t
+  langs:
+  - csharp
+  - vb
+  name: coding_ASKA
+  nameWithType: coding_t.coding_ASKA
+  fullName: VgmStream.coding_t.coding_ASKA
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore.VGMStream/InteropVgmStream/enums.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: coding_ASKA
+    path: ../SilverCraft.CSCore.VGMStream/InteropVgmStream/enums.cs
+    startLine: 129
+  assemblies:
+  - SilverCraft.CSCore.VGMStream
+  namespace: VgmStream
+  syntax:
+    content: coding_ASKA = 84
+    return:
+      type: VgmStream.coding_t
+- uid: VgmStream.coding_t.coding_NXAP
+  commentId: F:VgmStream.coding_t.coding_NXAP
+  id: coding_NXAP
+  parent: VgmStream.coding_t
+  langs:
+  - csharp
+  - vb
+  name: coding_NXAP
+  nameWithType: coding_t.coding_NXAP
+  fullName: VgmStream.coding_t.coding_NXAP
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore.VGMStream/InteropVgmStream/enums.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: coding_NXAP
+    path: ../SilverCraft.CSCore.VGMStream/InteropVgmStream/enums.cs
+    startLine: 130
+  assemblies:
+  - SilverCraft.CSCore.VGMStream
+  namespace: VgmStream
+  syntax:
+    content: coding_NXAP = 85
+    return:
+      type: VgmStream.coding_t
+- uid: VgmStream.coding_t.coding_TGC
+  commentId: F:VgmStream.coding_t.coding_TGC
+  id: coding_TGC
+  parent: VgmStream.coding_t
+  langs:
+  - csharp
+  - vb
+  name: coding_TGC
+  nameWithType: coding_t.coding_TGC
+  fullName: VgmStream.coding_t.coding_TGC
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore.VGMStream/InteropVgmStream/enums.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: coding_TGC
+    path: ../SilverCraft.CSCore.VGMStream/InteropVgmStream/enums.cs
+    startLine: 132
+  assemblies:
+  - SilverCraft.CSCore.VGMStream
+  namespace: VgmStream
+  syntax:
+    content: coding_TGC = 86
+    return:
+      type: VgmStream.coding_t
+- uid: VgmStream.coding_t.coding_NDS_PROCYON
+  commentId: F:VgmStream.coding_t.coding_NDS_PROCYON
+  id: coding_NDS_PROCYON
+  parent: VgmStream.coding_t
+  langs:
+  - csharp
+  - vb
+  name: coding_NDS_PROCYON
+  nameWithType: coding_t.coding_NDS_PROCYON
+  fullName: VgmStream.coding_t.coding_NDS_PROCYON
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore.VGMStream/InteropVgmStream/enums.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: coding_NDS_PROCYON
+    path: ../SilverCraft.CSCore.VGMStream/InteropVgmStream/enums.cs
+    startLine: 134
+  assemblies:
+  - SilverCraft.CSCore.VGMStream
+  namespace: VgmStream
+  syntax:
+    content: coding_NDS_PROCYON = 87
+    return:
+      type: VgmStream.coding_t
+- uid: VgmStream.coding_t.coding_LEVEL5
+  commentId: F:VgmStream.coding_t.coding_LEVEL5
+  id: coding_LEVEL5
+  parent: VgmStream.coding_t
+  langs:
+  - csharp
+  - vb
+  name: coding_LEVEL5
+  nameWithType: coding_t.coding_LEVEL5
+  fullName: VgmStream.coding_t.coding_LEVEL5
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore.VGMStream/InteropVgmStream/enums.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: coding_LEVEL5
+    path: ../SilverCraft.CSCore.VGMStream/InteropVgmStream/enums.cs
+    startLine: 135
+  assemblies:
+  - SilverCraft.CSCore.VGMStream
+  namespace: VgmStream
+  syntax:
+    content: coding_LEVEL5 = 88
+    return:
+      type: VgmStream.coding_t
+- uid: VgmStream.coding_t.coding_LSF
+  commentId: F:VgmStream.coding_t.coding_LSF
+  id: coding_LSF
+  parent: VgmStream.coding_t
+  langs:
+  - csharp
+  - vb
+  name: coding_LSF
+  nameWithType: coding_t.coding_LSF
+  fullName: VgmStream.coding_t.coding_LSF
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore.VGMStream/InteropVgmStream/enums.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: coding_LSF
+    path: ../SilverCraft.CSCore.VGMStream/InteropVgmStream/enums.cs
+    startLine: 136
+  assemblies:
+  - SilverCraft.CSCore.VGMStream
+  namespace: VgmStream
+  syntax:
+    content: coding_LSF = 89
+    return:
+      type: VgmStream.coding_t
+- uid: VgmStream.coding_t.coding_MTAF
+  commentId: F:VgmStream.coding_t.coding_MTAF
+  id: coding_MTAF
+  parent: VgmStream.coding_t
+  langs:
+  - csharp
+  - vb
+  name: coding_MTAF
+  nameWithType: coding_t.coding_MTAF
+  fullName: VgmStream.coding_t.coding_MTAF
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore.VGMStream/InteropVgmStream/enums.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: coding_MTAF
+    path: ../SilverCraft.CSCore.VGMStream/InteropVgmStream/enums.cs
+    startLine: 137
+  assemblies:
+  - SilverCraft.CSCore.VGMStream
+  namespace: VgmStream
+  syntax:
+    content: coding_MTAF = 90
+    return:
+      type: VgmStream.coding_t
+- uid: VgmStream.coding_t.coding_MTA2
+  commentId: F:VgmStream.coding_t.coding_MTA2
+  id: coding_MTA2
+  parent: VgmStream.coding_t
+  langs:
+  - csharp
+  - vb
+  name: coding_MTA2
+  nameWithType: coding_t.coding_MTA2
+  fullName: VgmStream.coding_t.coding_MTA2
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore.VGMStream/InteropVgmStream/enums.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: coding_MTA2
+    path: ../SilverCraft.CSCore.VGMStream/InteropVgmStream/enums.cs
+    startLine: 138
+  assemblies:
+  - SilverCraft.CSCore.VGMStream
+  namespace: VgmStream
+  syntax:
+    content: coding_MTA2 = 91
+    return:
+      type: VgmStream.coding_t
+- uid: VgmStream.coding_t.coding_MPC3
+  commentId: F:VgmStream.coding_t.coding_MPC3
+  id: coding_MPC3
+  parent: VgmStream.coding_t
+  langs:
+  - csharp
+  - vb
+  name: coding_MPC3
+  nameWithType: coding_t.coding_MPC3
+  fullName: VgmStream.coding_t.coding_MPC3
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore.VGMStream/InteropVgmStream/enums.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: coding_MPC3
+    path: ../SilverCraft.CSCore.VGMStream/InteropVgmStream/enums.cs
+    startLine: 139
+  assemblies:
+  - SilverCraft.CSCore.VGMStream
+  namespace: VgmStream
+  syntax:
+    content: coding_MPC3 = 92
+    return:
+      type: VgmStream.coding_t
+- uid: VgmStream.coding_t.coding_FADPCM
+  commentId: F:VgmStream.coding_t.coding_FADPCM
+  id: coding_FADPCM
+  parent: VgmStream.coding_t
+  langs:
+  - csharp
+  - vb
+  name: coding_FADPCM
+  nameWithType: coding_t.coding_FADPCM
+  fullName: VgmStream.coding_t.coding_FADPCM
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore.VGMStream/InteropVgmStream/enums.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: coding_FADPCM
+    path: ../SilverCraft.CSCore.VGMStream/InteropVgmStream/enums.cs
+    startLine: 140
+  assemblies:
+  - SilverCraft.CSCore.VGMStream
+  namespace: VgmStream
+  syntax:
+    content: coding_FADPCM = 93
+    return:
+      type: VgmStream.coding_t
+- uid: VgmStream.coding_t.coding_ASF
+  commentId: F:VgmStream.coding_t.coding_ASF
+  id: coding_ASF
+  parent: VgmStream.coding_t
+  langs:
+  - csharp
+  - vb
+  name: coding_ASF
+  nameWithType: coding_t.coding_ASF
+  fullName: VgmStream.coding_t.coding_ASF
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore.VGMStream/InteropVgmStream/enums.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: coding_ASF
+    path: ../SilverCraft.CSCore.VGMStream/InteropVgmStream/enums.cs
+    startLine: 141
+  assemblies:
+  - SilverCraft.CSCore.VGMStream
+  namespace: VgmStream
+  syntax:
+    content: coding_ASF = 94
+    return:
+      type: VgmStream.coding_t
+- uid: VgmStream.coding_t.coding_DSA
+  commentId: F:VgmStream.coding_t.coding_DSA
+  id: coding_DSA
+  parent: VgmStream.coding_t
+  langs:
+  - csharp
+  - vb
+  name: coding_DSA
+  nameWithType: coding_t.coding_DSA
+  fullName: VgmStream.coding_t.coding_DSA
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore.VGMStream/InteropVgmStream/enums.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: coding_DSA
+    path: ../SilverCraft.CSCore.VGMStream/InteropVgmStream/enums.cs
+    startLine: 142
+  assemblies:
+  - SilverCraft.CSCore.VGMStream
+  namespace: VgmStream
+  syntax:
+    content: coding_DSA = 95
+    return:
+      type: VgmStream.coding_t
+- uid: VgmStream.coding_t.coding_XMD
+  commentId: F:VgmStream.coding_t.coding_XMD
+  id: coding_XMD
+  parent: VgmStream.coding_t
+  langs:
+  - csharp
+  - vb
+  name: coding_XMD
+  nameWithType: coding_t.coding_XMD
+  fullName: VgmStream.coding_t.coding_XMD
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore.VGMStream/InteropVgmStream/enums.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: coding_XMD
+    path: ../SilverCraft.CSCore.VGMStream/InteropVgmStream/enums.cs
+    startLine: 143
+  assemblies:
+  - SilverCraft.CSCore.VGMStream
+  namespace: VgmStream
+  syntax:
+    content: coding_XMD = 96
+    return:
+      type: VgmStream.coding_t
+- uid: VgmStream.coding_t.coding_TANTALUS
+  commentId: F:VgmStream.coding_t.coding_TANTALUS
+  id: coding_TANTALUS
+  parent: VgmStream.coding_t
+  langs:
+  - csharp
+  - vb
+  name: coding_TANTALUS
+  nameWithType: coding_t.coding_TANTALUS
+  fullName: VgmStream.coding_t.coding_TANTALUS
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore.VGMStream/InteropVgmStream/enums.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: coding_TANTALUS
+    path: ../SilverCraft.CSCore.VGMStream/InteropVgmStream/enums.cs
+    startLine: 144
+  assemblies:
+  - SilverCraft.CSCore.VGMStream
+  namespace: VgmStream
+  syntax:
+    content: coding_TANTALUS = 97
+    return:
+      type: VgmStream.coding_t
+- uid: VgmStream.coding_t.coding_PCFX
+  commentId: F:VgmStream.coding_t.coding_PCFX
+  id: coding_PCFX
+  parent: VgmStream.coding_t
+  langs:
+  - csharp
+  - vb
+  name: coding_PCFX
+  nameWithType: coding_t.coding_PCFX
+  fullName: VgmStream.coding_t.coding_PCFX
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore.VGMStream/InteropVgmStream/enums.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: coding_PCFX
+    path: ../SilverCraft.CSCore.VGMStream/InteropVgmStream/enums.cs
+    startLine: 145
+  assemblies:
+  - SilverCraft.CSCore.VGMStream
+  namespace: VgmStream
+  syntax:
+    content: coding_PCFX = 98
+    return:
+      type: VgmStream.coding_t
+- uid: VgmStream.coding_t.coding_OKI16
+  commentId: F:VgmStream.coding_t.coding_OKI16
+  id: coding_OKI16
+  parent: VgmStream.coding_t
+  langs:
+  - csharp
+  - vb
+  name: coding_OKI16
+  nameWithType: coding_t.coding_OKI16
+  fullName: VgmStream.coding_t.coding_OKI16
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore.VGMStream/InteropVgmStream/enums.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: coding_OKI16
+    path: ../SilverCraft.CSCore.VGMStream/InteropVgmStream/enums.cs
+    startLine: 146
+  assemblies:
+  - SilverCraft.CSCore.VGMStream
+  namespace: VgmStream
+  syntax:
+    content: coding_OKI16 = 99
+    return:
+      type: VgmStream.coding_t
+- uid: VgmStream.coding_t.coding_OKI4S
+  commentId: F:VgmStream.coding_t.coding_OKI4S
+  id: coding_OKI4S
+  parent: VgmStream.coding_t
+  langs:
+  - csharp
+  - vb
+  name: coding_OKI4S
+  nameWithType: coding_t.coding_OKI4S
+  fullName: VgmStream.coding_t.coding_OKI4S
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore.VGMStream/InteropVgmStream/enums.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: coding_OKI4S
+    path: ../SilverCraft.CSCore.VGMStream/InteropVgmStream/enums.cs
+    startLine: 147
+  assemblies:
+  - SilverCraft.CSCore.VGMStream
+  namespace: VgmStream
+  syntax:
+    content: coding_OKI4S = 100
+    return:
+      type: VgmStream.coding_t
+- uid: VgmStream.coding_t.coding_PTADPCM
+  commentId: F:VgmStream.coding_t.coding_PTADPCM
+  id: coding_PTADPCM
+  parent: VgmStream.coding_t
+  langs:
+  - csharp
+  - vb
+  name: coding_PTADPCM
+  nameWithType: coding_t.coding_PTADPCM
+  fullName: VgmStream.coding_t.coding_PTADPCM
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore.VGMStream/InteropVgmStream/enums.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: coding_PTADPCM
+    path: ../SilverCraft.CSCore.VGMStream/InteropVgmStream/enums.cs
+    startLine: 148
+  assemblies:
+  - SilverCraft.CSCore.VGMStream
+  namespace: VgmStream
+  syntax:
+    content: coding_PTADPCM = 101
+    return:
+      type: VgmStream.coding_t
+- uid: VgmStream.coding_t.coding_IMUSE
+  commentId: F:VgmStream.coding_t.coding_IMUSE
+  id: coding_IMUSE
+  parent: VgmStream.coding_t
+  langs:
+  - csharp
+  - vb
+  name: coding_IMUSE
+  nameWithType: coding_t.coding_IMUSE
+  fullName: VgmStream.coding_t.coding_IMUSE
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore.VGMStream/InteropVgmStream/enums.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: coding_IMUSE
+    path: ../SilverCraft.CSCore.VGMStream/InteropVgmStream/enums.cs
+    startLine: 149
+  assemblies:
+  - SilverCraft.CSCore.VGMStream
+  namespace: VgmStream
+  syntax:
+    content: coding_IMUSE = 102
+    return:
+      type: VgmStream.coding_t
+- uid: VgmStream.coding_t.coding_COMPRESSWAVE
+  commentId: F:VgmStream.coding_t.coding_COMPRESSWAVE
+  id: coding_COMPRESSWAVE
+  parent: VgmStream.coding_t
+  langs:
+  - csharp
+  - vb
+  name: coding_COMPRESSWAVE
+  nameWithType: coding_t.coding_COMPRESSWAVE
+  fullName: VgmStream.coding_t.coding_COMPRESSWAVE
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore.VGMStream/InteropVgmStream/enums.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: coding_COMPRESSWAVE
+    path: ../SilverCraft.CSCore.VGMStream/InteropVgmStream/enums.cs
+    startLine: 150
+  assemblies:
+  - SilverCraft.CSCore.VGMStream
+  namespace: VgmStream
+  syntax:
+    content: coding_COMPRESSWAVE = 103
+    return:
+      type: VgmStream.coding_t
+- uid: VgmStream.coding_t.coding_SDX2
+  commentId: F:VgmStream.coding_t.coding_SDX2
+  id: coding_SDX2
+  parent: VgmStream.coding_t
+  langs:
+  - csharp
+  - vb
+  name: coding_SDX2
+  nameWithType: coding_t.coding_SDX2
+  fullName: VgmStream.coding_t.coding_SDX2
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore.VGMStream/InteropVgmStream/enums.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: coding_SDX2
+    path: ../SilverCraft.CSCore.VGMStream/InteropVgmStream/enums.cs
+    startLine: 153
+  assemblies:
+  - SilverCraft.CSCore.VGMStream
+  namespace: VgmStream
+  syntax:
+    content: coding_SDX2 = 104
+    return:
+      type: VgmStream.coding_t
+- uid: VgmStream.coding_t.coding_SDX2_int
+  commentId: F:VgmStream.coding_t.coding_SDX2_int
+  id: coding_SDX2_int
+  parent: VgmStream.coding_t
+  langs:
+  - csharp
+  - vb
+  name: coding_SDX2_int
+  nameWithType: coding_t.coding_SDX2_int
+  fullName: VgmStream.coding_t.coding_SDX2_int
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore.VGMStream/InteropVgmStream/enums.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: coding_SDX2_int
+    path: ../SilverCraft.CSCore.VGMStream/InteropVgmStream/enums.cs
+    startLine: 154
+  assemblies:
+  - SilverCraft.CSCore.VGMStream
+  namespace: VgmStream
+  syntax:
+    content: coding_SDX2_int = 105
+    return:
+      type: VgmStream.coding_t
+- uid: VgmStream.coding_t.coding_CBD2
+  commentId: F:VgmStream.coding_t.coding_CBD2
+  id: coding_CBD2
+  parent: VgmStream.coding_t
+  langs:
+  - csharp
+  - vb
+  name: coding_CBD2
+  nameWithType: coding_t.coding_CBD2
+  fullName: VgmStream.coding_t.coding_CBD2
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore.VGMStream/InteropVgmStream/enums.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: coding_CBD2
+    path: ../SilverCraft.CSCore.VGMStream/InteropVgmStream/enums.cs
+    startLine: 155
+  assemblies:
+  - SilverCraft.CSCore.VGMStream
+  namespace: VgmStream
+  syntax:
+    content: coding_CBD2 = 106
+    return:
+      type: VgmStream.coding_t
+- uid: VgmStream.coding_t.coding_CBD2_int
+  commentId: F:VgmStream.coding_t.coding_CBD2_int
+  id: coding_CBD2_int
+  parent: VgmStream.coding_t
+  langs:
+  - csharp
+  - vb
+  name: coding_CBD2_int
+  nameWithType: coding_t.coding_CBD2_int
+  fullName: VgmStream.coding_t.coding_CBD2_int
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore.VGMStream/InteropVgmStream/enums.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: coding_CBD2_int
+    path: ../SilverCraft.CSCore.VGMStream/InteropVgmStream/enums.cs
+    startLine: 156
+  assemblies:
+  - SilverCraft.CSCore.VGMStream
+  namespace: VgmStream
+  syntax:
+    content: coding_CBD2_int = 107
+    return:
+      type: VgmStream.coding_t
+- uid: VgmStream.coding_t.coding_SASSC
+  commentId: F:VgmStream.coding_t.coding_SASSC
+  id: coding_SASSC
+  parent: VgmStream.coding_t
+  langs:
+  - csharp
+  - vb
+  name: coding_SASSC
+  nameWithType: coding_t.coding_SASSC
+  fullName: VgmStream.coding_t.coding_SASSC
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore.VGMStream/InteropVgmStream/enums.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: coding_SASSC
+    path: ../SilverCraft.CSCore.VGMStream/InteropVgmStream/enums.cs
+    startLine: 157
+  assemblies:
+  - SilverCraft.CSCore.VGMStream
+  namespace: VgmStream
+  syntax:
+    content: coding_SASSC = 108
+    return:
+      type: VgmStream.coding_t
+- uid: VgmStream.coding_t.coding_DERF
+  commentId: F:VgmStream.coding_t.coding_DERF
+  id: coding_DERF
+  parent: VgmStream.coding_t
+  langs:
+  - csharp
+  - vb
+  name: coding_DERF
+  nameWithType: coding_t.coding_DERF
+  fullName: VgmStream.coding_t.coding_DERF
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore.VGMStream/InteropVgmStream/enums.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: coding_DERF
+    path: ../SilverCraft.CSCore.VGMStream/InteropVgmStream/enums.cs
+    startLine: 158
+  assemblies:
+  - SilverCraft.CSCore.VGMStream
+  namespace: VgmStream
+  syntax:
+    content: coding_DERF = 109
+    return:
+      type: VgmStream.coding_t
+- uid: VgmStream.coding_t.coding_WADY
+  commentId: F:VgmStream.coding_t.coding_WADY
+  id: coding_WADY
+  parent: VgmStream.coding_t
+  langs:
+  - csharp
+  - vb
+  name: coding_WADY
+  nameWithType: coding_t.coding_WADY
+  fullName: VgmStream.coding_t.coding_WADY
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore.VGMStream/InteropVgmStream/enums.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: coding_WADY
+    path: ../SilverCraft.CSCore.VGMStream/InteropVgmStream/enums.cs
+    startLine: 159
+  assemblies:
+  - SilverCraft.CSCore.VGMStream
+  namespace: VgmStream
+  syntax:
+    content: coding_WADY = 110
+    return:
+      type: VgmStream.coding_t
+- uid: VgmStream.coding_t.coding_DPCM_KCEJ
+  commentId: F:VgmStream.coding_t.coding_DPCM_KCEJ
+  id: coding_DPCM_KCEJ
+  parent: VgmStream.coding_t
+  langs:
+  - csharp
+  - vb
+  name: coding_DPCM_KCEJ
+  nameWithType: coding_t.coding_DPCM_KCEJ
+  fullName: VgmStream.coding_t.coding_DPCM_KCEJ
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore.VGMStream/InteropVgmStream/enums.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: coding_DPCM_KCEJ
+    path: ../SilverCraft.CSCore.VGMStream/InteropVgmStream/enums.cs
+    startLine: 160
+  assemblies:
+  - SilverCraft.CSCore.VGMStream
+  namespace: VgmStream
+  syntax:
+    content: coding_DPCM_KCEJ = 111
+    return:
+      type: VgmStream.coding_t
+- uid: VgmStream.coding_t.coding_NWA
+  commentId: F:VgmStream.coding_t.coding_NWA
+  id: coding_NWA
+  parent: VgmStream.coding_t
+  langs:
+  - csharp
+  - vb
+  name: coding_NWA
+  nameWithType: coding_t.coding_NWA
+  fullName: VgmStream.coding_t.coding_NWA
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore.VGMStream/InteropVgmStream/enums.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: coding_NWA
+    path: ../SilverCraft.CSCore.VGMStream/InteropVgmStream/enums.cs
+    startLine: 161
+  assemblies:
+  - SilverCraft.CSCore.VGMStream
+  namespace: VgmStream
+  syntax:
+    content: coding_NWA = 112
+    return:
+      type: VgmStream.coding_t
+- uid: VgmStream.coding_t.coding_ACM
+  commentId: F:VgmStream.coding_t.coding_ACM
+  id: coding_ACM
+  parent: VgmStream.coding_t
+  langs:
+  - csharp
+  - vb
+  name: coding_ACM
+  nameWithType: coding_t.coding_ACM
+  fullName: VgmStream.coding_t.coding_ACM
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore.VGMStream/InteropVgmStream/enums.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: coding_ACM
+    path: ../SilverCraft.CSCore.VGMStream/InteropVgmStream/enums.cs
+    startLine: 162
+  assemblies:
+  - SilverCraft.CSCore.VGMStream
+  namespace: VgmStream
+  syntax:
+    content: coding_ACM = 113
+    return:
+      type: VgmStream.coding_t
+- uid: VgmStream.coding_t.coding_CIRCUS_ADPCM
+  commentId: F:VgmStream.coding_t.coding_CIRCUS_ADPCM
+  id: coding_CIRCUS_ADPCM
+  parent: VgmStream.coding_t
+  langs:
+  - csharp
+  - vb
+  name: coding_CIRCUS_ADPCM
+  nameWithType: coding_t.coding_CIRCUS_ADPCM
+  fullName: VgmStream.coding_t.coding_CIRCUS_ADPCM
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore.VGMStream/InteropVgmStream/enums.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: coding_CIRCUS_ADPCM
+    path: ../SilverCraft.CSCore.VGMStream/InteropVgmStream/enums.cs
+    startLine: 163
+  assemblies:
+  - SilverCraft.CSCore.VGMStream
+  namespace: VgmStream
+  syntax:
+    content: coding_CIRCUS_ADPCM = 114
+    return:
+      type: VgmStream.coding_t
+- uid: VgmStream.coding_t.coding_UBI_ADPCM
+  commentId: F:VgmStream.coding_t.coding_UBI_ADPCM
+  id: coding_UBI_ADPCM
+  parent: VgmStream.coding_t
+  langs:
+  - csharp
+  - vb
+  name: coding_UBI_ADPCM
+  nameWithType: coding_t.coding_UBI_ADPCM
+  fullName: VgmStream.coding_t.coding_UBI_ADPCM
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore.VGMStream/InteropVgmStream/enums.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: coding_UBI_ADPCM
+    path: ../SilverCraft.CSCore.VGMStream/InteropVgmStream/enums.cs
+    startLine: 164
+  assemblies:
+  - SilverCraft.CSCore.VGMStream
+  namespace: VgmStream
+  syntax:
+    content: coding_UBI_ADPCM = 115
+    return:
+      type: VgmStream.coding_t
+- uid: VgmStream.coding_t.coding_ONGAKUKAN_ADPCM
+  commentId: F:VgmStream.coding_t.coding_ONGAKUKAN_ADPCM
+  id: coding_ONGAKUKAN_ADPCM
+  parent: VgmStream.coding_t
+  langs:
+  - csharp
+  - vb
+  name: coding_ONGAKUKAN_ADPCM
+  nameWithType: coding_t.coding_ONGAKUKAN_ADPCM
+  fullName: VgmStream.coding_t.coding_ONGAKUKAN_ADPCM
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore.VGMStream/InteropVgmStream/enums.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: coding_ONGAKUKAN_ADPCM
+    path: ../SilverCraft.CSCore.VGMStream/InteropVgmStream/enums.cs
+    startLine: 165
+  assemblies:
+  - SilverCraft.CSCore.VGMStream
+  namespace: VgmStream
+  syntax:
+    content: coding_ONGAKUKAN_ADPCM = 116
+    return:
+      type: VgmStream.coding_t
+- uid: VgmStream.coding_t.coding_EA_MT
+  commentId: F:VgmStream.coding_t.coding_EA_MT
+  id: coding_EA_MT
+  parent: VgmStream.coding_t
+  langs:
+  - csharp
+  - vb
+  name: coding_EA_MT
+  nameWithType: coding_t.coding_EA_MT
+  fullName: VgmStream.coding_t.coding_EA_MT
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore.VGMStream/InteropVgmStream/enums.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: coding_EA_MT
+    path: ../SilverCraft.CSCore.VGMStream/InteropVgmStream/enums.cs
+    startLine: 167
+  assemblies:
+  - SilverCraft.CSCore.VGMStream
+  namespace: VgmStream
+  syntax:
+    content: coding_EA_MT = 117
+    return:
+      type: VgmStream.coding_t
+- uid: VgmStream.coding_t.coding_CIRCUS_VQ
+  commentId: F:VgmStream.coding_t.coding_CIRCUS_VQ
+  id: coding_CIRCUS_VQ
+  parent: VgmStream.coding_t
+  langs:
+  - csharp
+  - vb
+  name: coding_CIRCUS_VQ
+  nameWithType: coding_t.coding_CIRCUS_VQ
+  fullName: VgmStream.coding_t.coding_CIRCUS_VQ
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore.VGMStream/InteropVgmStream/enums.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: coding_CIRCUS_VQ
+    path: ../SilverCraft.CSCore.VGMStream/InteropVgmStream/enums.cs
+    startLine: 169
+  assemblies:
+  - SilverCraft.CSCore.VGMStream
+  namespace: VgmStream
+  syntax:
+    content: coding_CIRCUS_VQ = 118
+    return:
+      type: VgmStream.coding_t
+- uid: VgmStream.coding_t.coding_RELIC
+  commentId: F:VgmStream.coding_t.coding_RELIC
+  id: coding_RELIC
+  parent: VgmStream.coding_t
+  langs:
+  - csharp
+  - vb
+  name: coding_RELIC
+  nameWithType: coding_t.coding_RELIC
+  fullName: VgmStream.coding_t.coding_RELIC
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore.VGMStream/InteropVgmStream/enums.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: coding_RELIC
+    path: ../SilverCraft.CSCore.VGMStream/InteropVgmStream/enums.cs
+    startLine: 170
+  assemblies:
+  - SilverCraft.CSCore.VGMStream
+  namespace: VgmStream
+  syntax:
+    content: coding_RELIC = 119
+    return:
+      type: VgmStream.coding_t
+- uid: VgmStream.coding_t.coding_CRI_HCA
+  commentId: F:VgmStream.coding_t.coding_CRI_HCA
+  id: coding_CRI_HCA
+  parent: VgmStream.coding_t
+  langs:
+  - csharp
+  - vb
+  name: coding_CRI_HCA
+  nameWithType: coding_t.coding_CRI_HCA
+  fullName: VgmStream.coding_t.coding_CRI_HCA
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore.VGMStream/InteropVgmStream/enums.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: coding_CRI_HCA
+    path: ../SilverCraft.CSCore.VGMStream/InteropVgmStream/enums.cs
+    startLine: 171
+  assemblies:
+  - SilverCraft.CSCore.VGMStream
+  namespace: VgmStream
+  syntax:
+    content: coding_CRI_HCA = 120
+    return:
+      type: VgmStream.coding_t
+- uid: VgmStream.coding_t.coding_TAC
+  commentId: F:VgmStream.coding_t.coding_TAC
+  id: coding_TAC
+  parent: VgmStream.coding_t
+  langs:
+  - csharp
+  - vb
+  name: coding_TAC
+  nameWithType: coding_t.coding_TAC
+  fullName: VgmStream.coding_t.coding_TAC
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore.VGMStream/InteropVgmStream/enums.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: coding_TAC
+    path: ../SilverCraft.CSCore.VGMStream/InteropVgmStream/enums.cs
+    startLine: 172
+  assemblies:
+  - SilverCraft.CSCore.VGMStream
+  namespace: VgmStream
+  syntax:
+    content: coding_TAC = 121
+    return:
+      type: VgmStream.coding_t
+- uid: VgmStream.coding_t.coding_ICE_RANGE
+  commentId: F:VgmStream.coding_t.coding_ICE_RANGE
+  id: coding_ICE_RANGE
+  parent: VgmStream.coding_t
+  langs:
+  - csharp
+  - vb
+  name: coding_ICE_RANGE
+  nameWithType: coding_t.coding_ICE_RANGE
+  fullName: VgmStream.coding_t.coding_ICE_RANGE
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore.VGMStream/InteropVgmStream/enums.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: coding_ICE_RANGE
+    path: ../SilverCraft.CSCore.VGMStream/InteropVgmStream/enums.cs
+    startLine: 173
+  assemblies:
+  - SilverCraft.CSCore.VGMStream
+  namespace: VgmStream
+  syntax:
+    content: coding_ICE_RANGE = 122
+    return:
+      type: VgmStream.coding_t
+- uid: VgmStream.coding_t.coding_ICE_DCT
+  commentId: F:VgmStream.coding_t.coding_ICE_DCT
+  id: coding_ICE_DCT
+  parent: VgmStream.coding_t
+  langs:
+  - csharp
+  - vb
+  name: coding_ICE_DCT
+  nameWithType: coding_t.coding_ICE_DCT
+  fullName: VgmStream.coding_t.coding_ICE_DCT
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore.VGMStream/InteropVgmStream/enums.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: coding_ICE_DCT
+    path: ../SilverCraft.CSCore.VGMStream/InteropVgmStream/enums.cs
+    startLine: 174
+  assemblies:
+  - SilverCraft.CSCore.VGMStream
+  namespace: VgmStream
+  syntax:
+    content: coding_ICE_DCT = 123
+    return:
+      type: VgmStream.coding_t
+- uid: VgmStream.coding_t.coding_KA1A
+  commentId: F:VgmStream.coding_t.coding_KA1A
+  id: coding_KA1A
+  parent: VgmStream.coding_t
+  langs:
+  - csharp
+  - vb
+  name: coding_KA1A
+  nameWithType: coding_t.coding_KA1A
+  fullName: VgmStream.coding_t.coding_KA1A
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore.VGMStream/InteropVgmStream/enums.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: coding_KA1A
+    path: ../SilverCraft.CSCore.VGMStream/InteropVgmStream/enums.cs
+    startLine: 175
+  assemblies:
+  - SilverCraft.CSCore.VGMStream
+  namespace: VgmStream
+  syntax:
+    content: coding_KA1A = 124
+    return:
+      type: VgmStream.coding_t
+- uid: VgmStream.coding_t.coding_UBI_MPEG
+  commentId: F:VgmStream.coding_t.coding_UBI_MPEG
+  id: coding_UBI_MPEG
+  parent: VgmStream.coding_t
+  langs:
+  - csharp
+  - vb
+  name: coding_UBI_MPEG
+  nameWithType: coding_t.coding_UBI_MPEG
+  fullName: VgmStream.coding_t.coding_UBI_MPEG
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore.VGMStream/InteropVgmStream/enums.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: coding_UBI_MPEG
+    path: ../SilverCraft.CSCore.VGMStream/InteropVgmStream/enums.cs
+    startLine: 176
+  assemblies:
+  - SilverCraft.CSCore.VGMStream
+  namespace: VgmStream
+  syntax:
+    content: coding_UBI_MPEG = 125
+    return:
+      type: VgmStream.coding_t
+- uid: VgmStream.coding_t.coding_MIO
+  commentId: F:VgmStream.coding_t.coding_MIO
+  id: coding_MIO
+  parent: VgmStream.coding_t
+  langs:
+  - csharp
+  - vb
+  name: coding_MIO
+  nameWithType: coding_t.coding_MIO
+  fullName: VgmStream.coding_t.coding_MIO
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore.VGMStream/InteropVgmStream/enums.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: coding_MIO
+    path: ../SilverCraft.CSCore.VGMStream/InteropVgmStream/enums.cs
+    startLine: 177
+  assemblies:
+  - SilverCraft.CSCore.VGMStream
+  namespace: VgmStream
+  syntax:
+    content: coding_MIO = 126
+    return:
+      type: VgmStream.coding_t
+- uid: VgmStream.coding_t.coding_BINKA
+  commentId: F:VgmStream.coding_t.coding_BINKA
+  id: coding_BINKA
+  parent: VgmStream.coding_t
+  langs:
+  - csharp
+  - vb
+  name: coding_BINKA
+  nameWithType: coding_t.coding_BINKA
+  fullName: VgmStream.coding_t.coding_BINKA
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore.VGMStream/InteropVgmStream/enums.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: coding_BINKA
+    path: ../SilverCraft.CSCore.VGMStream/InteropVgmStream/enums.cs
+    startLine: 178
+  assemblies:
+  - SilverCraft.CSCore.VGMStream
+  namespace: VgmStream
+  syntax:
+    content: coding_BINKA = 127
+    return:
+      type: VgmStream.coding_t
+- uid: VgmStream.coding_t.coding_CF_DF_ADPCM_V40
+  commentId: F:VgmStream.coding_t.coding_CF_DF_ADPCM_V40
+  id: coding_CF_DF_ADPCM_V40
+  parent: VgmStream.coding_t
+  langs:
+  - csharp
+  - vb
+  name: coding_CF_DF_ADPCM_V40
+  nameWithType: coding_t.coding_CF_DF_ADPCM_V40
+  fullName: VgmStream.coding_t.coding_CF_DF_ADPCM_V40
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore.VGMStream/InteropVgmStream/enums.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: coding_CF_DF_ADPCM_V40
+    path: ../SilverCraft.CSCore.VGMStream/InteropVgmStream/enums.cs
+    startLine: 180
+  assemblies:
+  - SilverCraft.CSCore.VGMStream
+  namespace: VgmStream
+  syntax:
+    content: coding_CF_DF_ADPCM_V40 = 128
+    return:
+      type: VgmStream.coding_t
+- uid: VgmStream.coding_t.coding_CF_DF_DPCM_V41
+  commentId: F:VgmStream.coding_t.coding_CF_DF_DPCM_V41
+  id: coding_CF_DF_DPCM_V41
+  parent: VgmStream.coding_t
+  langs:
+  - csharp
+  - vb
+  name: coding_CF_DF_DPCM_V41
+  nameWithType: coding_t.coding_CF_DF_DPCM_V41
+  fullName: VgmStream.coding_t.coding_CF_DF_DPCM_V41
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore.VGMStream/InteropVgmStream/enums.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: coding_CF_DF_DPCM_V41
+    path: ../SilverCraft.CSCore.VGMStream/InteropVgmStream/enums.cs
+    startLine: 181
+  assemblies:
+  - SilverCraft.CSCore.VGMStream
+  namespace: VgmStream
+  syntax:
+    content: coding_CF_DF_DPCM_V41 = 129
+    return:
+      type: VgmStream.coding_t
+- uid: VgmStream.coding_t.coding_OGG_VORBIS
+  commentId: F:VgmStream.coding_t.coding_OGG_VORBIS
+  id: coding_OGG_VORBIS
+  parent: VgmStream.coding_t
+  langs:
+  - csharp
+  - vb
+  name: coding_OGG_VORBIS
+  nameWithType: coding_t.coding_OGG_VORBIS
+  fullName: VgmStream.coding_t.coding_OGG_VORBIS
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore.VGMStream/InteropVgmStream/enums.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: coding_OGG_VORBIS
+    path: ../SilverCraft.CSCore.VGMStream/InteropVgmStream/enums.cs
+    startLine: 183
+  assemblies:
+  - SilverCraft.CSCore.VGMStream
+  namespace: VgmStream
+  syntax:
+    content: coding_OGG_VORBIS = 130
+    return:
+      type: VgmStream.coding_t
+- uid: VgmStream.coding_t.coding_VORBIS_custom
+  commentId: F:VgmStream.coding_t.coding_VORBIS_custom
+  id: coding_VORBIS_custom
+  parent: VgmStream.coding_t
+  langs:
+  - csharp
+  - vb
+  name: coding_VORBIS_custom
+  nameWithType: coding_t.coding_VORBIS_custom
+  fullName: VgmStream.coding_t.coding_VORBIS_custom
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore.VGMStream/InteropVgmStream/enums.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: coding_VORBIS_custom
+    path: ../SilverCraft.CSCore.VGMStream/InteropVgmStream/enums.cs
+    startLine: 184
+  assemblies:
+  - SilverCraft.CSCore.VGMStream
+  namespace: VgmStream
+  syntax:
+    content: coding_VORBIS_custom = 131
+    return:
+      type: VgmStream.coding_t
+- uid: VgmStream.coding_t.coding_MPEG_custom
+  commentId: F:VgmStream.coding_t.coding_MPEG_custom
+  id: coding_MPEG_custom
+  parent: VgmStream.coding_t
+  langs:
+  - csharp
+  - vb
+  name: coding_MPEG_custom
+  nameWithType: coding_t.coding_MPEG_custom
+  fullName: VgmStream.coding_t.coding_MPEG_custom
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore.VGMStream/InteropVgmStream/enums.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: coding_MPEG_custom
+    path: ../SilverCraft.CSCore.VGMStream/InteropVgmStream/enums.cs
+    startLine: 186
+  assemblies:
+  - SilverCraft.CSCore.VGMStream
+  namespace: VgmStream
+  syntax:
+    content: coding_MPEG_custom = 132
+    return:
+      type: VgmStream.coding_t
+- uid: VgmStream.coding_t.coding_MPEG_ealayer3
+  commentId: F:VgmStream.coding_t.coding_MPEG_ealayer3
+  id: coding_MPEG_ealayer3
+  parent: VgmStream.coding_t
+  langs:
+  - csharp
+  - vb
+  name: coding_MPEG_ealayer3
+  nameWithType: coding_t.coding_MPEG_ealayer3
+  fullName: VgmStream.coding_t.coding_MPEG_ealayer3
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore.VGMStream/InteropVgmStream/enums.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: coding_MPEG_ealayer3
+    path: ../SilverCraft.CSCore.VGMStream/InteropVgmStream/enums.cs
+    startLine: 187
+  assemblies:
+  - SilverCraft.CSCore.VGMStream
+  namespace: VgmStream
+  syntax:
+    content: coding_MPEG_ealayer3 = 133
+    return:
+      type: VgmStream.coding_t
+- uid: VgmStream.coding_t.coding_MPEG_layer1
+  commentId: F:VgmStream.coding_t.coding_MPEG_layer1
+  id: coding_MPEG_layer1
+  parent: VgmStream.coding_t
+  langs:
+  - csharp
+  - vb
+  name: coding_MPEG_layer1
+  nameWithType: coding_t.coding_MPEG_layer1
+  fullName: VgmStream.coding_t.coding_MPEG_layer1
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore.VGMStream/InteropVgmStream/enums.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: coding_MPEG_layer1
+    path: ../SilverCraft.CSCore.VGMStream/InteropVgmStream/enums.cs
+    startLine: 188
+  assemblies:
+  - SilverCraft.CSCore.VGMStream
+  namespace: VgmStream
+  syntax:
+    content: coding_MPEG_layer1 = 134
+    return:
+      type: VgmStream.coding_t
+- uid: VgmStream.coding_t.coding_MPEG_layer2
+  commentId: F:VgmStream.coding_t.coding_MPEG_layer2
+  id: coding_MPEG_layer2
+  parent: VgmStream.coding_t
+  langs:
+  - csharp
+  - vb
+  name: coding_MPEG_layer2
+  nameWithType: coding_t.coding_MPEG_layer2
+  fullName: VgmStream.coding_t.coding_MPEG_layer2
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore.VGMStream/InteropVgmStream/enums.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: coding_MPEG_layer2
+    path: ../SilverCraft.CSCore.VGMStream/InteropVgmStream/enums.cs
+    startLine: 189
+  assemblies:
+  - SilverCraft.CSCore.VGMStream
+  namespace: VgmStream
+  syntax:
+    content: coding_MPEG_layer2 = 135
+    return:
+      type: VgmStream.coding_t
+- uid: VgmStream.coding_t.coding_MPEG_layer3
+  commentId: F:VgmStream.coding_t.coding_MPEG_layer3
+  id: coding_MPEG_layer3
+  parent: VgmStream.coding_t
+  langs:
+  - csharp
+  - vb
+  name: coding_MPEG_layer3
+  nameWithType: coding_t.coding_MPEG_layer3
+  fullName: VgmStream.coding_t.coding_MPEG_layer3
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore.VGMStream/InteropVgmStream/enums.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: coding_MPEG_layer3
+    path: ../SilverCraft.CSCore.VGMStream/InteropVgmStream/enums.cs
+    startLine: 190
+  assemblies:
+  - SilverCraft.CSCore.VGMStream
+  namespace: VgmStream
+  syntax:
+    content: coding_MPEG_layer3 = 136
+    return:
+      type: VgmStream.coding_t
+- uid: VgmStream.coding_t.coding_G7221C
+  commentId: F:VgmStream.coding_t.coding_G7221C
+  id: coding_G7221C
+  parent: VgmStream.coding_t
+  langs:
+  - csharp
+  - vb
+  name: coding_G7221C
+  nameWithType: coding_t.coding_G7221C
+  fullName: VgmStream.coding_t.coding_G7221C
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore.VGMStream/InteropVgmStream/enums.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: coding_G7221C
+    path: ../SilverCraft.CSCore.VGMStream/InteropVgmStream/enums.cs
+    startLine: 192
+  assemblies:
+  - SilverCraft.CSCore.VGMStream
+  namespace: VgmStream
+  syntax:
+    content: coding_G7221C = 137
+    return:
+      type: VgmStream.coding_t
+- uid: VgmStream.coding_t.coding_G719
+  commentId: F:VgmStream.coding_t.coding_G719
+  id: coding_G719
+  parent: VgmStream.coding_t
+  langs:
+  - csharp
+  - vb
+  name: coding_G719
+  nameWithType: coding_t.coding_G719
+  fullName: VgmStream.coding_t.coding_G719
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore.VGMStream/InteropVgmStream/enums.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: coding_G719
+    path: ../SilverCraft.CSCore.VGMStream/InteropVgmStream/enums.cs
+    startLine: 194
+  assemblies:
+  - SilverCraft.CSCore.VGMStream
+  namespace: VgmStream
+  syntax:
+    content: coding_G719 = 138
+    return:
+      type: VgmStream.coding_t
+- uid: VgmStream.coding_t.coding_MP4_AAC
+  commentId: F:VgmStream.coding_t.coding_MP4_AAC
+  id: coding_MP4_AAC
+  parent: VgmStream.coding_t
+  langs:
+  - csharp
+  - vb
+  name: coding_MP4_AAC
+  nameWithType: coding_t.coding_MP4_AAC
+  fullName: VgmStream.coding_t.coding_MP4_AAC
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore.VGMStream/InteropVgmStream/enums.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: coding_MP4_AAC
+    path: ../SilverCraft.CSCore.VGMStream/InteropVgmStream/enums.cs
+    startLine: 196
+  assemblies:
+  - SilverCraft.CSCore.VGMStream
+  namespace: VgmStream
+  syntax:
+    content: coding_MP4_AAC = 139
+    return:
+      type: VgmStream.coding_t
+- uid: VgmStream.coding_t.coding_ATRAC9
+  commentId: F:VgmStream.coding_t.coding_ATRAC9
+  id: coding_ATRAC9
+  parent: VgmStream.coding_t
+  langs:
+  - csharp
+  - vb
+  name: coding_ATRAC9
+  nameWithType: coding_t.coding_ATRAC9
+  fullName: VgmStream.coding_t.coding_ATRAC9
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore.VGMStream/InteropVgmStream/enums.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: coding_ATRAC9
+    path: ../SilverCraft.CSCore.VGMStream/InteropVgmStream/enums.cs
+    startLine: 198
+  assemblies:
+  - SilverCraft.CSCore.VGMStream
+  namespace: VgmStream
+  syntax:
+    content: coding_ATRAC9 = 140
+    return:
+      type: VgmStream.coding_t
+- uid: VgmStream.coding_t.coding_CELT_FSB
+  commentId: F:VgmStream.coding_t.coding_CELT_FSB
+  id: coding_CELT_FSB
+  parent: VgmStream.coding_t
+  langs:
+  - csharp
+  - vb
+  name: coding_CELT_FSB
+  nameWithType: coding_t.coding_CELT_FSB
+  fullName: VgmStream.coding_t.coding_CELT_FSB
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore.VGMStream/InteropVgmStream/enums.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: coding_CELT_FSB
+    path: ../SilverCraft.CSCore.VGMStream/InteropVgmStream/enums.cs
+    startLine: 200
+  assemblies:
+  - SilverCraft.CSCore.VGMStream
+  namespace: VgmStream
+  syntax:
+    content: coding_CELT_FSB = 141
+    return:
+      type: VgmStream.coding_t
+- uid: VgmStream.coding_t.coding_SPEEX
+  commentId: F:VgmStream.coding_t.coding_SPEEX
+  id: coding_SPEEX
+  parent: VgmStream.coding_t
+  langs:
+  - csharp
+  - vb
+  name: coding_SPEEX
+  nameWithType: coding_t.coding_SPEEX
+  fullName: VgmStream.coding_t.coding_SPEEX
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore.VGMStream/InteropVgmStream/enums.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: coding_SPEEX
+    path: ../SilverCraft.CSCore.VGMStream/InteropVgmStream/enums.cs
+    startLine: 202
+  assemblies:
+  - SilverCraft.CSCore.VGMStream
+  namespace: VgmStream
+  syntax:
+    content: coding_SPEEX = 142
+    return:
+      type: VgmStream.coding_t
+- uid: VgmStream.coding_t.coding_FFmpeg
+  commentId: F:VgmStream.coding_t.coding_FFmpeg
+  id: coding_FFmpeg
+  parent: VgmStream.coding_t
+  langs:
+  - csharp
+  - vb
+  name: coding_FFmpeg
+  nameWithType: coding_t.coding_FFmpeg
+  fullName: VgmStream.coding_t.coding_FFmpeg
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore.VGMStream/InteropVgmStream/enums.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: coding_FFmpeg
+    path: ../SilverCraft.CSCore.VGMStream/InteropVgmStream/enums.cs
+    startLine: 204
+  assemblies:
+  - SilverCraft.CSCore.VGMStream
+  namespace: VgmStream
+  syntax:
+    content: coding_FFmpeg = 143
+    return:
+      type: VgmStream.coding_t
+references:
+- uid: VgmStream
+  commentId: N:VgmStream
+  href: VgmStream.html
+  name: VgmStream
+  nameWithType: VgmStream
+  fullName: VgmStream
+- uid: VgmStream.coding_t
+  commentId: T:VgmStream.coding_t
+  parent: VgmStream
+  href: VgmStream.coding_t.html
+  name: coding_t
+  nameWithType: coding_t
+  fullName: VgmStream.coding_t

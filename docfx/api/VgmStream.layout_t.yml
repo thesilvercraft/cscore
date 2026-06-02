@@ -1,0 +1,1203 @@
+### YamlMime:ManagedReference
+items:
+- uid: VgmStream.layout_t
+  commentId: T:VgmStream.layout_t
+  id: layout_t
+  parent: VgmStream
+  children:
+  - VgmStream.layout_t.layout_blocked_adm
+  - VgmStream.layout_t.layout_blocked_ast
+  - VgmStream.layout_t.layout_blocked_awc
+  - VgmStream.layout_t.layout_blocked_caf
+  - VgmStream.layout_t.layout_blocked_dec
+  - VgmStream.layout_t.layout_blocked_ea_1snh
+  - VgmStream.layout_t.layout_blocked_ea_schl
+  - VgmStream.layout_t.layout_blocked_ea_sns
+  - VgmStream.layout_t.layout_blocked_ea_swvr
+  - VgmStream.layout_t.layout_blocked_ea_wve_ad10
+  - VgmStream.layout_t.layout_blocked_ea_wve_au00
+  - VgmStream.layout_t.layout_blocked_filp
+  - VgmStream.layout_t.layout_blocked_gsnd
+  - VgmStream.layout_t.layout_blocked_halpst
+  - VgmStream.layout_t.layout_blocked_hvqm4
+  - VgmStream.layout_t.layout_blocked_hwas
+  - VgmStream.layout_t.layout_blocked_mul
+  - VgmStream.layout_t.layout_blocked_mxch
+  - VgmStream.layout_t.layout_blocked_ps2_iab
+  - VgmStream.layout_t.layout_blocked_rage_aud
+  - VgmStream.layout_t.layout_blocked_rws
+  - VgmStream.layout_t.layout_blocked_sthd
+  - VgmStream.layout_t.layout_blocked_str_snds
+  - VgmStream.layout_t.layout_blocked_thp
+  - VgmStream.layout_t.layout_blocked_tt_ad
+  - VgmStream.layout_t.layout_blocked_ubi_sce
+  - VgmStream.layout_t.layout_blocked_vas
+  - VgmStream.layout_t.layout_blocked_vas_kceo
+  - VgmStream.layout_t.layout_blocked_vgs
+  - VgmStream.layout_t.layout_blocked_vid1
+  - VgmStream.layout_t.layout_blocked_vs_mh
+  - VgmStream.layout_t.layout_blocked_vs_square
+  - VgmStream.layout_t.layout_blocked_vs_str
+  - VgmStream.layout_t.layout_blocked_ws_aud
+  - VgmStream.layout_t.layout_blocked_wsi
+  - VgmStream.layout_t.layout_blocked_xa
+  - VgmStream.layout_t.layout_blocked_xa_aiff
+  - VgmStream.layout_t.layout_blocked_xvag_subsong
+  - VgmStream.layout_t.layout_blocked_xwav
+  - VgmStream.layout_t.layout_interleave
+  - VgmStream.layout_t.layout_layered
+  - VgmStream.layout_t.layout_none
+  - VgmStream.layout_t.layout_segmented
+  langs:
+  - csharp
+  - vb
+  name: layout_t
+  nameWithType: layout_t
+  fullName: VgmStream.layout_t
+  type: Enum
+  source:
+    remote:
+      path: SilverCraft.CSCore.VGMStream/InteropVgmStream/enums.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: layout_t
+    path: ../SilverCraft.CSCore.VGMStream/InteropVgmStream/enums.cs
+    startLine: 207
+  assemblies:
+  - SilverCraft.CSCore.VGMStream
+  namespace: VgmStream
+  syntax:
+    content: public enum layout_t
+    content.vb: Public Enum layout_t
+- uid: VgmStream.layout_t.layout_none
+  commentId: F:VgmStream.layout_t.layout_none
+  id: layout_none
+  parent: VgmStream.layout_t
+  langs:
+  - csharp
+  - vb
+  name: layout_none
+  nameWithType: layout_t.layout_none
+  fullName: VgmStream.layout_t.layout_none
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore.VGMStream/InteropVgmStream/enums.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: layout_none
+    path: ../SilverCraft.CSCore.VGMStream/InteropVgmStream/enums.cs
+    startLine: 210
+  assemblies:
+  - SilverCraft.CSCore.VGMStream
+  namespace: VgmStream
+  syntax:
+    content: layout_none = 0
+    return:
+      type: VgmStream.layout_t
+- uid: VgmStream.layout_t.layout_interleave
+  commentId: F:VgmStream.layout_t.layout_interleave
+  id: layout_interleave
+  parent: VgmStream.layout_t
+  langs:
+  - csharp
+  - vb
+  name: layout_interleave
+  nameWithType: layout_t.layout_interleave
+  fullName: VgmStream.layout_t.layout_interleave
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore.VGMStream/InteropVgmStream/enums.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: layout_interleave
+    path: ../SilverCraft.CSCore.VGMStream/InteropVgmStream/enums.cs
+    startLine: 213
+  assemblies:
+  - SilverCraft.CSCore.VGMStream
+  namespace: VgmStream
+  syntax:
+    content: layout_interleave = 1
+    return:
+      type: VgmStream.layout_t
+- uid: VgmStream.layout_t.layout_blocked_ast
+  commentId: F:VgmStream.layout_t.layout_blocked_ast
+  id: layout_blocked_ast
+  parent: VgmStream.layout_t
+  langs:
+  - csharp
+  - vb
+  name: layout_blocked_ast
+  nameWithType: layout_t.layout_blocked_ast
+  fullName: VgmStream.layout_t.layout_blocked_ast
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore.VGMStream/InteropVgmStream/enums.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: layout_blocked_ast
+    path: ../SilverCraft.CSCore.VGMStream/InteropVgmStream/enums.cs
+    startLine: 216
+  assemblies:
+  - SilverCraft.CSCore.VGMStream
+  namespace: VgmStream
+  syntax:
+    content: layout_blocked_ast = 2
+    return:
+      type: VgmStream.layout_t
+- uid: VgmStream.layout_t.layout_blocked_halpst
+  commentId: F:VgmStream.layout_t.layout_blocked_halpst
+  id: layout_blocked_halpst
+  parent: VgmStream.layout_t
+  langs:
+  - csharp
+  - vb
+  name: layout_blocked_halpst
+  nameWithType: layout_t.layout_blocked_halpst
+  fullName: VgmStream.layout_t.layout_blocked_halpst
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore.VGMStream/InteropVgmStream/enums.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: layout_blocked_halpst
+    path: ../SilverCraft.CSCore.VGMStream/InteropVgmStream/enums.cs
+    startLine: 217
+  assemblies:
+  - SilverCraft.CSCore.VGMStream
+  namespace: VgmStream
+  syntax:
+    content: layout_blocked_halpst = 3
+    return:
+      type: VgmStream.layout_t
+- uid: VgmStream.layout_t.layout_blocked_xa
+  commentId: F:VgmStream.layout_t.layout_blocked_xa
+  id: layout_blocked_xa
+  parent: VgmStream.layout_t
+  langs:
+  - csharp
+  - vb
+  name: layout_blocked_xa
+  nameWithType: layout_t.layout_blocked_xa
+  fullName: VgmStream.layout_t.layout_blocked_xa
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore.VGMStream/InteropVgmStream/enums.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: layout_blocked_xa
+    path: ../SilverCraft.CSCore.VGMStream/InteropVgmStream/enums.cs
+    startLine: 218
+  assemblies:
+  - SilverCraft.CSCore.VGMStream
+  namespace: VgmStream
+  syntax:
+    content: layout_blocked_xa = 4
+    return:
+      type: VgmStream.layout_t
+- uid: VgmStream.layout_t.layout_blocked_ea_schl
+  commentId: F:VgmStream.layout_t.layout_blocked_ea_schl
+  id: layout_blocked_ea_schl
+  parent: VgmStream.layout_t
+  langs:
+  - csharp
+  - vb
+  name: layout_blocked_ea_schl
+  nameWithType: layout_t.layout_blocked_ea_schl
+  fullName: VgmStream.layout_t.layout_blocked_ea_schl
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore.VGMStream/InteropVgmStream/enums.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: layout_blocked_ea_schl
+    path: ../SilverCraft.CSCore.VGMStream/InteropVgmStream/enums.cs
+    startLine: 219
+  assemblies:
+  - SilverCraft.CSCore.VGMStream
+  namespace: VgmStream
+  syntax:
+    content: layout_blocked_ea_schl = 5
+    return:
+      type: VgmStream.layout_t
+- uid: VgmStream.layout_t.layout_blocked_ea_1snh
+  commentId: F:VgmStream.layout_t.layout_blocked_ea_1snh
+  id: layout_blocked_ea_1snh
+  parent: VgmStream.layout_t
+  langs:
+  - csharp
+  - vb
+  name: layout_blocked_ea_1snh
+  nameWithType: layout_t.layout_blocked_ea_1snh
+  fullName: VgmStream.layout_t.layout_blocked_ea_1snh
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore.VGMStream/InteropVgmStream/enums.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: layout_blocked_ea_1snh
+    path: ../SilverCraft.CSCore.VGMStream/InteropVgmStream/enums.cs
+    startLine: 220
+  assemblies:
+  - SilverCraft.CSCore.VGMStream
+  namespace: VgmStream
+  syntax:
+    content: layout_blocked_ea_1snh = 6
+    return:
+      type: VgmStream.layout_t
+- uid: VgmStream.layout_t.layout_blocked_caf
+  commentId: F:VgmStream.layout_t.layout_blocked_caf
+  id: layout_blocked_caf
+  parent: VgmStream.layout_t
+  langs:
+  - csharp
+  - vb
+  name: layout_blocked_caf
+  nameWithType: layout_t.layout_blocked_caf
+  fullName: VgmStream.layout_t.layout_blocked_caf
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore.VGMStream/InteropVgmStream/enums.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: layout_blocked_caf
+    path: ../SilverCraft.CSCore.VGMStream/InteropVgmStream/enums.cs
+    startLine: 221
+  assemblies:
+  - SilverCraft.CSCore.VGMStream
+  namespace: VgmStream
+  syntax:
+    content: layout_blocked_caf = 7
+    return:
+      type: VgmStream.layout_t
+- uid: VgmStream.layout_t.layout_blocked_wsi
+  commentId: F:VgmStream.layout_t.layout_blocked_wsi
+  id: layout_blocked_wsi
+  parent: VgmStream.layout_t
+  langs:
+  - csharp
+  - vb
+  name: layout_blocked_wsi
+  nameWithType: layout_t.layout_blocked_wsi
+  fullName: VgmStream.layout_t.layout_blocked_wsi
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore.VGMStream/InteropVgmStream/enums.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: layout_blocked_wsi
+    path: ../SilverCraft.CSCore.VGMStream/InteropVgmStream/enums.cs
+    startLine: 222
+  assemblies:
+  - SilverCraft.CSCore.VGMStream
+  namespace: VgmStream
+  syntax:
+    content: layout_blocked_wsi = 8
+    return:
+      type: VgmStream.layout_t
+- uid: VgmStream.layout_t.layout_blocked_str_snds
+  commentId: F:VgmStream.layout_t.layout_blocked_str_snds
+  id: layout_blocked_str_snds
+  parent: VgmStream.layout_t
+  langs:
+  - csharp
+  - vb
+  name: layout_blocked_str_snds
+  nameWithType: layout_t.layout_blocked_str_snds
+  fullName: VgmStream.layout_t.layout_blocked_str_snds
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore.VGMStream/InteropVgmStream/enums.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: layout_blocked_str_snds
+    path: ../SilverCraft.CSCore.VGMStream/InteropVgmStream/enums.cs
+    startLine: 223
+  assemblies:
+  - SilverCraft.CSCore.VGMStream
+  namespace: VgmStream
+  syntax:
+    content: layout_blocked_str_snds = 9
+    return:
+      type: VgmStream.layout_t
+- uid: VgmStream.layout_t.layout_blocked_ws_aud
+  commentId: F:VgmStream.layout_t.layout_blocked_ws_aud
+  id: layout_blocked_ws_aud
+  parent: VgmStream.layout_t
+  langs:
+  - csharp
+  - vb
+  name: layout_blocked_ws_aud
+  nameWithType: layout_t.layout_blocked_ws_aud
+  fullName: VgmStream.layout_t.layout_blocked_ws_aud
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore.VGMStream/InteropVgmStream/enums.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: layout_blocked_ws_aud
+    path: ../SilverCraft.CSCore.VGMStream/InteropVgmStream/enums.cs
+    startLine: 224
+  assemblies:
+  - SilverCraft.CSCore.VGMStream
+  namespace: VgmStream
+  syntax:
+    content: layout_blocked_ws_aud = 10
+    return:
+      type: VgmStream.layout_t
+- uid: VgmStream.layout_t.layout_blocked_dec
+  commentId: F:VgmStream.layout_t.layout_blocked_dec
+  id: layout_blocked_dec
+  parent: VgmStream.layout_t
+  langs:
+  - csharp
+  - vb
+  name: layout_blocked_dec
+  nameWithType: layout_t.layout_blocked_dec
+  fullName: VgmStream.layout_t.layout_blocked_dec
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore.VGMStream/InteropVgmStream/enums.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: layout_blocked_dec
+    path: ../SilverCraft.CSCore.VGMStream/InteropVgmStream/enums.cs
+    startLine: 225
+  assemblies:
+  - SilverCraft.CSCore.VGMStream
+  namespace: VgmStream
+  syntax:
+    content: layout_blocked_dec = 11
+    return:
+      type: VgmStream.layout_t
+- uid: VgmStream.layout_t.layout_blocked_vas_kceo
+  commentId: F:VgmStream.layout_t.layout_blocked_vas_kceo
+  id: layout_blocked_vas_kceo
+  parent: VgmStream.layout_t
+  langs:
+  - csharp
+  - vb
+  name: layout_blocked_vas_kceo
+  nameWithType: layout_t.layout_blocked_vas_kceo
+  fullName: VgmStream.layout_t.layout_blocked_vas_kceo
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore.VGMStream/InteropVgmStream/enums.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: layout_blocked_vas_kceo
+    path: ../SilverCraft.CSCore.VGMStream/InteropVgmStream/enums.cs
+    startLine: 226
+  assemblies:
+  - SilverCraft.CSCore.VGMStream
+  namespace: VgmStream
+  syntax:
+    content: layout_blocked_vas_kceo = 12
+    return:
+      type: VgmStream.layout_t
+- uid: VgmStream.layout_t.layout_blocked_vs_mh
+  commentId: F:VgmStream.layout_t.layout_blocked_vs_mh
+  id: layout_blocked_vs_mh
+  parent: VgmStream.layout_t
+  langs:
+  - csharp
+  - vb
+  name: layout_blocked_vs_mh
+  nameWithType: layout_t.layout_blocked_vs_mh
+  fullName: VgmStream.layout_t.layout_blocked_vs_mh
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore.VGMStream/InteropVgmStream/enums.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: layout_blocked_vs_mh
+    path: ../SilverCraft.CSCore.VGMStream/InteropVgmStream/enums.cs
+    startLine: 227
+  assemblies:
+  - SilverCraft.CSCore.VGMStream
+  namespace: VgmStream
+  syntax:
+    content: layout_blocked_vs_mh = 13
+    return:
+      type: VgmStream.layout_t
+- uid: VgmStream.layout_t.layout_blocked_mul
+  commentId: F:VgmStream.layout_t.layout_blocked_mul
+  id: layout_blocked_mul
+  parent: VgmStream.layout_t
+  langs:
+  - csharp
+  - vb
+  name: layout_blocked_mul
+  nameWithType: layout_t.layout_blocked_mul
+  fullName: VgmStream.layout_t.layout_blocked_mul
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore.VGMStream/InteropVgmStream/enums.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: layout_blocked_mul
+    path: ../SilverCraft.CSCore.VGMStream/InteropVgmStream/enums.cs
+    startLine: 228
+  assemblies:
+  - SilverCraft.CSCore.VGMStream
+  namespace: VgmStream
+  syntax:
+    content: layout_blocked_mul = 14
+    return:
+      type: VgmStream.layout_t
+- uid: VgmStream.layout_t.layout_blocked_gsnd
+  commentId: F:VgmStream.layout_t.layout_blocked_gsnd
+  id: layout_blocked_gsnd
+  parent: VgmStream.layout_t
+  langs:
+  - csharp
+  - vb
+  name: layout_blocked_gsnd
+  nameWithType: layout_t.layout_blocked_gsnd
+  fullName: VgmStream.layout_t.layout_blocked_gsnd
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore.VGMStream/InteropVgmStream/enums.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: layout_blocked_gsnd
+    path: ../SilverCraft.CSCore.VGMStream/InteropVgmStream/enums.cs
+    startLine: 229
+  assemblies:
+  - SilverCraft.CSCore.VGMStream
+  namespace: VgmStream
+  syntax:
+    content: layout_blocked_gsnd = 15
+    return:
+      type: VgmStream.layout_t
+- uid: VgmStream.layout_t.layout_blocked_thp
+  commentId: F:VgmStream.layout_t.layout_blocked_thp
+  id: layout_blocked_thp
+  parent: VgmStream.layout_t
+  langs:
+  - csharp
+  - vb
+  name: layout_blocked_thp
+  nameWithType: layout_t.layout_blocked_thp
+  fullName: VgmStream.layout_t.layout_blocked_thp
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore.VGMStream/InteropVgmStream/enums.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: layout_blocked_thp
+    path: ../SilverCraft.CSCore.VGMStream/InteropVgmStream/enums.cs
+    startLine: 230
+  assemblies:
+  - SilverCraft.CSCore.VGMStream
+  namespace: VgmStream
+  syntax:
+    content: layout_blocked_thp = 16
+    return:
+      type: VgmStream.layout_t
+- uid: VgmStream.layout_t.layout_blocked_filp
+  commentId: F:VgmStream.layout_t.layout_blocked_filp
+  id: layout_blocked_filp
+  parent: VgmStream.layout_t
+  langs:
+  - csharp
+  - vb
+  name: layout_blocked_filp
+  nameWithType: layout_t.layout_blocked_filp
+  fullName: VgmStream.layout_t.layout_blocked_filp
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore.VGMStream/InteropVgmStream/enums.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: layout_blocked_filp
+    path: ../SilverCraft.CSCore.VGMStream/InteropVgmStream/enums.cs
+    startLine: 231
+  assemblies:
+  - SilverCraft.CSCore.VGMStream
+  namespace: VgmStream
+  syntax:
+    content: layout_blocked_filp = 17
+    return:
+      type: VgmStream.layout_t
+- uid: VgmStream.layout_t.layout_blocked_ea_swvr
+  commentId: F:VgmStream.layout_t.layout_blocked_ea_swvr
+  id: layout_blocked_ea_swvr
+  parent: VgmStream.layout_t
+  langs:
+  - csharp
+  - vb
+  name: layout_blocked_ea_swvr
+  nameWithType: layout_t.layout_blocked_ea_swvr
+  fullName: VgmStream.layout_t.layout_blocked_ea_swvr
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore.VGMStream/InteropVgmStream/enums.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: layout_blocked_ea_swvr
+    path: ../SilverCraft.CSCore.VGMStream/InteropVgmStream/enums.cs
+    startLine: 232
+  assemblies:
+  - SilverCraft.CSCore.VGMStream
+  namespace: VgmStream
+  syntax:
+    content: layout_blocked_ea_swvr = 18
+    return:
+      type: VgmStream.layout_t
+- uid: VgmStream.layout_t.layout_blocked_adm
+  commentId: F:VgmStream.layout_t.layout_blocked_adm
+  id: layout_blocked_adm
+  parent: VgmStream.layout_t
+  langs:
+  - csharp
+  - vb
+  name: layout_blocked_adm
+  nameWithType: layout_t.layout_blocked_adm
+  fullName: VgmStream.layout_t.layout_blocked_adm
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore.VGMStream/InteropVgmStream/enums.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: layout_blocked_adm
+    path: ../SilverCraft.CSCore.VGMStream/InteropVgmStream/enums.cs
+    startLine: 233
+  assemblies:
+  - SilverCraft.CSCore.VGMStream
+  namespace: VgmStream
+  syntax:
+    content: layout_blocked_adm = 19
+    return:
+      type: VgmStream.layout_t
+- uid: VgmStream.layout_t.layout_blocked_mxch
+  commentId: F:VgmStream.layout_t.layout_blocked_mxch
+  id: layout_blocked_mxch
+  parent: VgmStream.layout_t
+  langs:
+  - csharp
+  - vb
+  name: layout_blocked_mxch
+  nameWithType: layout_t.layout_blocked_mxch
+  fullName: VgmStream.layout_t.layout_blocked_mxch
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore.VGMStream/InteropVgmStream/enums.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: layout_blocked_mxch
+    path: ../SilverCraft.CSCore.VGMStream/InteropVgmStream/enums.cs
+    startLine: 234
+  assemblies:
+  - SilverCraft.CSCore.VGMStream
+  namespace: VgmStream
+  syntax:
+    content: layout_blocked_mxch = 20
+    return:
+      type: VgmStream.layout_t
+- uid: VgmStream.layout_t.layout_blocked_rage_aud
+  commentId: F:VgmStream.layout_t.layout_blocked_rage_aud
+  id: layout_blocked_rage_aud
+  parent: VgmStream.layout_t
+  langs:
+  - csharp
+  - vb
+  name: layout_blocked_rage_aud
+  nameWithType: layout_t.layout_blocked_rage_aud
+  fullName: VgmStream.layout_t.layout_blocked_rage_aud
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore.VGMStream/InteropVgmStream/enums.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: layout_blocked_rage_aud
+    path: ../SilverCraft.CSCore.VGMStream/InteropVgmStream/enums.cs
+    startLine: 235
+  assemblies:
+  - SilverCraft.CSCore.VGMStream
+  namespace: VgmStream
+  syntax:
+    content: layout_blocked_rage_aud = 21
+    return:
+      type: VgmStream.layout_t
+- uid: VgmStream.layout_t.layout_blocked_ps2_iab
+  commentId: F:VgmStream.layout_t.layout_blocked_ps2_iab
+  id: layout_blocked_ps2_iab
+  parent: VgmStream.layout_t
+  langs:
+  - csharp
+  - vb
+  name: layout_blocked_ps2_iab
+  nameWithType: layout_t.layout_blocked_ps2_iab
+  fullName: VgmStream.layout_t.layout_blocked_ps2_iab
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore.VGMStream/InteropVgmStream/enums.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: layout_blocked_ps2_iab
+    path: ../SilverCraft.CSCore.VGMStream/InteropVgmStream/enums.cs
+    startLine: 236
+  assemblies:
+  - SilverCraft.CSCore.VGMStream
+  namespace: VgmStream
+  syntax:
+    content: layout_blocked_ps2_iab = 22
+    return:
+      type: VgmStream.layout_t
+- uid: VgmStream.layout_t.layout_blocked_vs_str
+  commentId: F:VgmStream.layout_t.layout_blocked_vs_str
+  id: layout_blocked_vs_str
+  parent: VgmStream.layout_t
+  langs:
+  - csharp
+  - vb
+  name: layout_blocked_vs_str
+  nameWithType: layout_t.layout_blocked_vs_str
+  fullName: VgmStream.layout_t.layout_blocked_vs_str
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore.VGMStream/InteropVgmStream/enums.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: layout_blocked_vs_str
+    path: ../SilverCraft.CSCore.VGMStream/InteropVgmStream/enums.cs
+    startLine: 237
+  assemblies:
+  - SilverCraft.CSCore.VGMStream
+  namespace: VgmStream
+  syntax:
+    content: layout_blocked_vs_str = 23
+    return:
+      type: VgmStream.layout_t
+- uid: VgmStream.layout_t.layout_blocked_rws
+  commentId: F:VgmStream.layout_t.layout_blocked_rws
+  id: layout_blocked_rws
+  parent: VgmStream.layout_t
+  langs:
+  - csharp
+  - vb
+  name: layout_blocked_rws
+  nameWithType: layout_t.layout_blocked_rws
+  fullName: VgmStream.layout_t.layout_blocked_rws
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore.VGMStream/InteropVgmStream/enums.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: layout_blocked_rws
+    path: ../SilverCraft.CSCore.VGMStream/InteropVgmStream/enums.cs
+    startLine: 238
+  assemblies:
+  - SilverCraft.CSCore.VGMStream
+  namespace: VgmStream
+  syntax:
+    content: layout_blocked_rws = 24
+    return:
+      type: VgmStream.layout_t
+- uid: VgmStream.layout_t.layout_blocked_hwas
+  commentId: F:VgmStream.layout_t.layout_blocked_hwas
+  id: layout_blocked_hwas
+  parent: VgmStream.layout_t
+  langs:
+  - csharp
+  - vb
+  name: layout_blocked_hwas
+  nameWithType: layout_t.layout_blocked_hwas
+  fullName: VgmStream.layout_t.layout_blocked_hwas
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore.VGMStream/InteropVgmStream/enums.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: layout_blocked_hwas
+    path: ../SilverCraft.CSCore.VGMStream/InteropVgmStream/enums.cs
+    startLine: 239
+  assemblies:
+  - SilverCraft.CSCore.VGMStream
+  namespace: VgmStream
+  syntax:
+    content: layout_blocked_hwas = 25
+    return:
+      type: VgmStream.layout_t
+- uid: VgmStream.layout_t.layout_blocked_ea_sns
+  commentId: F:VgmStream.layout_t.layout_blocked_ea_sns
+  id: layout_blocked_ea_sns
+  parent: VgmStream.layout_t
+  langs:
+  - csharp
+  - vb
+  name: layout_blocked_ea_sns
+  nameWithType: layout_t.layout_blocked_ea_sns
+  fullName: VgmStream.layout_t.layout_blocked_ea_sns
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore.VGMStream/InteropVgmStream/enums.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: layout_blocked_ea_sns
+    path: ../SilverCraft.CSCore.VGMStream/InteropVgmStream/enums.cs
+    startLine: 240
+  assemblies:
+  - SilverCraft.CSCore.VGMStream
+  namespace: VgmStream
+  syntax:
+    content: layout_blocked_ea_sns = 26
+    return:
+      type: VgmStream.layout_t
+- uid: VgmStream.layout_t.layout_blocked_awc
+  commentId: F:VgmStream.layout_t.layout_blocked_awc
+  id: layout_blocked_awc
+  parent: VgmStream.layout_t
+  langs:
+  - csharp
+  - vb
+  name: layout_blocked_awc
+  nameWithType: layout_t.layout_blocked_awc
+  fullName: VgmStream.layout_t.layout_blocked_awc
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore.VGMStream/InteropVgmStream/enums.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: layout_blocked_awc
+    path: ../SilverCraft.CSCore.VGMStream/InteropVgmStream/enums.cs
+    startLine: 241
+  assemblies:
+  - SilverCraft.CSCore.VGMStream
+  namespace: VgmStream
+  syntax:
+    content: layout_blocked_awc = 27
+    return:
+      type: VgmStream.layout_t
+- uid: VgmStream.layout_t.layout_blocked_vgs
+  commentId: F:VgmStream.layout_t.layout_blocked_vgs
+  id: layout_blocked_vgs
+  parent: VgmStream.layout_t
+  langs:
+  - csharp
+  - vb
+  name: layout_blocked_vgs
+  nameWithType: layout_t.layout_blocked_vgs
+  fullName: VgmStream.layout_t.layout_blocked_vgs
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore.VGMStream/InteropVgmStream/enums.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: layout_blocked_vgs
+    path: ../SilverCraft.CSCore.VGMStream/InteropVgmStream/enums.cs
+    startLine: 242
+  assemblies:
+  - SilverCraft.CSCore.VGMStream
+  namespace: VgmStream
+  syntax:
+    content: layout_blocked_vgs = 28
+    return:
+      type: VgmStream.layout_t
+- uid: VgmStream.layout_t.layout_blocked_xwav
+  commentId: F:VgmStream.layout_t.layout_blocked_xwav
+  id: layout_blocked_xwav
+  parent: VgmStream.layout_t
+  langs:
+  - csharp
+  - vb
+  name: layout_blocked_xwav
+  nameWithType: layout_t.layout_blocked_xwav
+  fullName: VgmStream.layout_t.layout_blocked_xwav
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore.VGMStream/InteropVgmStream/enums.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: layout_blocked_xwav
+    path: ../SilverCraft.CSCore.VGMStream/InteropVgmStream/enums.cs
+    startLine: 243
+  assemblies:
+  - SilverCraft.CSCore.VGMStream
+  namespace: VgmStream
+  syntax:
+    content: layout_blocked_xwav = 29
+    return:
+      type: VgmStream.layout_t
+- uid: VgmStream.layout_t.layout_blocked_xvag_subsong
+  commentId: F:VgmStream.layout_t.layout_blocked_xvag_subsong
+  id: layout_blocked_xvag_subsong
+  parent: VgmStream.layout_t
+  langs:
+  - csharp
+  - vb
+  name: layout_blocked_xvag_subsong
+  nameWithType: layout_t.layout_blocked_xvag_subsong
+  fullName: VgmStream.layout_t.layout_blocked_xvag_subsong
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore.VGMStream/InteropVgmStream/enums.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: layout_blocked_xvag_subsong
+    path: ../SilverCraft.CSCore.VGMStream/InteropVgmStream/enums.cs
+    startLine: 244
+  assemblies:
+  - SilverCraft.CSCore.VGMStream
+  namespace: VgmStream
+  syntax:
+    content: layout_blocked_xvag_subsong = 30
+    return:
+      type: VgmStream.layout_t
+- uid: VgmStream.layout_t.layout_blocked_ea_wve_au00
+  commentId: F:VgmStream.layout_t.layout_blocked_ea_wve_au00
+  id: layout_blocked_ea_wve_au00
+  parent: VgmStream.layout_t
+  langs:
+  - csharp
+  - vb
+  name: layout_blocked_ea_wve_au00
+  nameWithType: layout_t.layout_blocked_ea_wve_au00
+  fullName: VgmStream.layout_t.layout_blocked_ea_wve_au00
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore.VGMStream/InteropVgmStream/enums.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: layout_blocked_ea_wve_au00
+    path: ../SilverCraft.CSCore.VGMStream/InteropVgmStream/enums.cs
+    startLine: 245
+  assemblies:
+  - SilverCraft.CSCore.VGMStream
+  namespace: VgmStream
+  syntax:
+    content: layout_blocked_ea_wve_au00 = 31
+    return:
+      type: VgmStream.layout_t
+- uid: VgmStream.layout_t.layout_blocked_ea_wve_ad10
+  commentId: F:VgmStream.layout_t.layout_blocked_ea_wve_ad10
+  id: layout_blocked_ea_wve_ad10
+  parent: VgmStream.layout_t
+  langs:
+  - csharp
+  - vb
+  name: layout_blocked_ea_wve_ad10
+  nameWithType: layout_t.layout_blocked_ea_wve_ad10
+  fullName: VgmStream.layout_t.layout_blocked_ea_wve_ad10
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore.VGMStream/InteropVgmStream/enums.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: layout_blocked_ea_wve_ad10
+    path: ../SilverCraft.CSCore.VGMStream/InteropVgmStream/enums.cs
+    startLine: 246
+  assemblies:
+  - SilverCraft.CSCore.VGMStream
+  namespace: VgmStream
+  syntax:
+    content: layout_blocked_ea_wve_ad10 = 32
+    return:
+      type: VgmStream.layout_t
+- uid: VgmStream.layout_t.layout_blocked_sthd
+  commentId: F:VgmStream.layout_t.layout_blocked_sthd
+  id: layout_blocked_sthd
+  parent: VgmStream.layout_t
+  langs:
+  - csharp
+  - vb
+  name: layout_blocked_sthd
+  nameWithType: layout_t.layout_blocked_sthd
+  fullName: VgmStream.layout_t.layout_blocked_sthd
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore.VGMStream/InteropVgmStream/enums.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: layout_blocked_sthd
+    path: ../SilverCraft.CSCore.VGMStream/InteropVgmStream/enums.cs
+    startLine: 247
+  assemblies:
+  - SilverCraft.CSCore.VGMStream
+  namespace: VgmStream
+  syntax:
+    content: layout_blocked_sthd = 33
+    return:
+      type: VgmStream.layout_t
+- uid: VgmStream.layout_t.layout_blocked_hvqm4
+  commentId: F:VgmStream.layout_t.layout_blocked_hvqm4
+  id: layout_blocked_hvqm4
+  parent: VgmStream.layout_t
+  langs:
+  - csharp
+  - vb
+  name: layout_blocked_hvqm4
+  nameWithType: layout_t.layout_blocked_hvqm4
+  fullName: VgmStream.layout_t.layout_blocked_hvqm4
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore.VGMStream/InteropVgmStream/enums.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: layout_blocked_hvqm4
+    path: ../SilverCraft.CSCore.VGMStream/InteropVgmStream/enums.cs
+    startLine: 248
+  assemblies:
+  - SilverCraft.CSCore.VGMStream
+  namespace: VgmStream
+  syntax:
+    content: layout_blocked_hvqm4 = 34
+    return:
+      type: VgmStream.layout_t
+- uid: VgmStream.layout_t.layout_blocked_xa_aiff
+  commentId: F:VgmStream.layout_t.layout_blocked_xa_aiff
+  id: layout_blocked_xa_aiff
+  parent: VgmStream.layout_t
+  langs:
+  - csharp
+  - vb
+  name: layout_blocked_xa_aiff
+  nameWithType: layout_t.layout_blocked_xa_aiff
+  fullName: VgmStream.layout_t.layout_blocked_xa_aiff
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore.VGMStream/InteropVgmStream/enums.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: layout_blocked_xa_aiff
+    path: ../SilverCraft.CSCore.VGMStream/InteropVgmStream/enums.cs
+    startLine: 249
+  assemblies:
+  - SilverCraft.CSCore.VGMStream
+  namespace: VgmStream
+  syntax:
+    content: layout_blocked_xa_aiff = 35
+    return:
+      type: VgmStream.layout_t
+- uid: VgmStream.layout_t.layout_blocked_vs_square
+  commentId: F:VgmStream.layout_t.layout_blocked_vs_square
+  id: layout_blocked_vs_square
+  parent: VgmStream.layout_t
+  langs:
+  - csharp
+  - vb
+  name: layout_blocked_vs_square
+  nameWithType: layout_t.layout_blocked_vs_square
+  fullName: VgmStream.layout_t.layout_blocked_vs_square
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore.VGMStream/InteropVgmStream/enums.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: layout_blocked_vs_square
+    path: ../SilverCraft.CSCore.VGMStream/InteropVgmStream/enums.cs
+    startLine: 250
+  assemblies:
+  - SilverCraft.CSCore.VGMStream
+  namespace: VgmStream
+  syntax:
+    content: layout_blocked_vs_square = 36
+    return:
+      type: VgmStream.layout_t
+- uid: VgmStream.layout_t.layout_blocked_vid1
+  commentId: F:VgmStream.layout_t.layout_blocked_vid1
+  id: layout_blocked_vid1
+  parent: VgmStream.layout_t
+  langs:
+  - csharp
+  - vb
+  name: layout_blocked_vid1
+  nameWithType: layout_t.layout_blocked_vid1
+  fullName: VgmStream.layout_t.layout_blocked_vid1
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore.VGMStream/InteropVgmStream/enums.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: layout_blocked_vid1
+    path: ../SilverCraft.CSCore.VGMStream/InteropVgmStream/enums.cs
+    startLine: 251
+  assemblies:
+  - SilverCraft.CSCore.VGMStream
+  namespace: VgmStream
+  syntax:
+    content: layout_blocked_vid1 = 37
+    return:
+      type: VgmStream.layout_t
+- uid: VgmStream.layout_t.layout_blocked_ubi_sce
+  commentId: F:VgmStream.layout_t.layout_blocked_ubi_sce
+  id: layout_blocked_ubi_sce
+  parent: VgmStream.layout_t
+  langs:
+  - csharp
+  - vb
+  name: layout_blocked_ubi_sce
+  nameWithType: layout_t.layout_blocked_ubi_sce
+  fullName: VgmStream.layout_t.layout_blocked_ubi_sce
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore.VGMStream/InteropVgmStream/enums.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: layout_blocked_ubi_sce
+    path: ../SilverCraft.CSCore.VGMStream/InteropVgmStream/enums.cs
+    startLine: 252
+  assemblies:
+  - SilverCraft.CSCore.VGMStream
+  namespace: VgmStream
+  syntax:
+    content: layout_blocked_ubi_sce = 38
+    return:
+      type: VgmStream.layout_t
+- uid: VgmStream.layout_t.layout_blocked_tt_ad
+  commentId: F:VgmStream.layout_t.layout_blocked_tt_ad
+  id: layout_blocked_tt_ad
+  parent: VgmStream.layout_t
+  langs:
+  - csharp
+  - vb
+  name: layout_blocked_tt_ad
+  nameWithType: layout_t.layout_blocked_tt_ad
+  fullName: VgmStream.layout_t.layout_blocked_tt_ad
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore.VGMStream/InteropVgmStream/enums.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: layout_blocked_tt_ad
+    path: ../SilverCraft.CSCore.VGMStream/InteropVgmStream/enums.cs
+    startLine: 253
+  assemblies:
+  - SilverCraft.CSCore.VGMStream
+  namespace: VgmStream
+  syntax:
+    content: layout_blocked_tt_ad = 39
+    return:
+      type: VgmStream.layout_t
+- uid: VgmStream.layout_t.layout_blocked_vas
+  commentId: F:VgmStream.layout_t.layout_blocked_vas
+  id: layout_blocked_vas
+  parent: VgmStream.layout_t
+  langs:
+  - csharp
+  - vb
+  name: layout_blocked_vas
+  nameWithType: layout_t.layout_blocked_vas
+  fullName: VgmStream.layout_t.layout_blocked_vas
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore.VGMStream/InteropVgmStream/enums.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: layout_blocked_vas
+    path: ../SilverCraft.CSCore.VGMStream/InteropVgmStream/enums.cs
+    startLine: 254
+  assemblies:
+  - SilverCraft.CSCore.VGMStream
+  namespace: VgmStream
+  syntax:
+    content: layout_blocked_vas = 40
+    return:
+      type: VgmStream.layout_t
+- uid: VgmStream.layout_t.layout_segmented
+  commentId: F:VgmStream.layout_t.layout_segmented
+  id: layout_segmented
+  parent: VgmStream.layout_t
+  langs:
+  - csharp
+  - vb
+  name: layout_segmented
+  nameWithType: layout_t.layout_segmented
+  fullName: VgmStream.layout_t.layout_segmented
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore.VGMStream/InteropVgmStream/enums.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: layout_segmented
+    path: ../SilverCraft.CSCore.VGMStream/InteropVgmStream/enums.cs
+    startLine: 257
+  assemblies:
+  - SilverCraft.CSCore.VGMStream
+  namespace: VgmStream
+  syntax:
+    content: layout_segmented = 41
+    return:
+      type: VgmStream.layout_t
+- uid: VgmStream.layout_t.layout_layered
+  commentId: F:VgmStream.layout_t.layout_layered
+  id: layout_layered
+  parent: VgmStream.layout_t
+  langs:
+  - csharp
+  - vb
+  name: layout_layered
+  nameWithType: layout_t.layout_layered
+  fullName: VgmStream.layout_t.layout_layered
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore.VGMStream/InteropVgmStream/enums.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: layout_layered
+    path: ../SilverCraft.CSCore.VGMStream/InteropVgmStream/enums.cs
+    startLine: 258
+  assemblies:
+  - SilverCraft.CSCore.VGMStream
+  namespace: VgmStream
+  syntax:
+    content: layout_layered = 42
+    return:
+      type: VgmStream.layout_t
+references:
+- uid: VgmStream
+  commentId: N:VgmStream
+  href: VgmStream.html
+  name: VgmStream
+  nameWithType: VgmStream
+  fullName: VgmStream
+- uid: VgmStream.layout_t
+  commentId: T:VgmStream.layout_t
+  parent: VgmStream
+  href: VgmStream.layout_t.html
+  name: layout_t
+  nameWithType: layout_t
+  fullName: VgmStream.layout_t

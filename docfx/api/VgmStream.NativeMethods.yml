@@ -1,0 +1,1813 @@
+### YamlMime:ManagedReference
+items:
+- uid: VgmStream.NativeMethods
+  commentId: T:VgmStream.NativeMethods
+  id: NativeMethods
+  parent: VgmStream
+  children:
+  - VgmStream.NativeMethods.STREAMFILE_DEFAULT_BUFFER_SIZE
+  - VgmStream.NativeMethods.allocate_vgmstream(System.Int32,System.Int32)
+  - VgmStream.NativeMethods.close_streamfile(VgmStream.STREAMFILE*)
+  - VgmStream.NativeMethods.close_vgmstream(VgmStream.VGMSTREAM*)
+  - VgmStream.NativeMethods.dump_streamfile(VgmStream.STREAMFILE*,System.Int32)
+  - VgmStream.NativeMethods.get_streamfile_size(VgmStream.STREAMFILE*)
+  - VgmStream.NativeMethods.init_vgmstream(System.SByte*)
+  - VgmStream.NativeMethods.init_vgmstream_from_STREAMFILE(VgmStream.STREAMFILE*)
+  - VgmStream.NativeMethods.open_buffer_streamfile(VgmStream.STREAMFILE*,System.UIntPtr)
+  - VgmStream.NativeMethods.open_buffer_streamfile_f(VgmStream.STREAMFILE*,System.UIntPtr)
+  - VgmStream.NativeMethods.open_clamp_streamfile(VgmStream.STREAMFILE*,System.IntPtr,System.UIntPtr)
+  - VgmStream.NativeMethods.open_clamp_streamfile_f(VgmStream.STREAMFILE*,System.IntPtr,System.UIntPtr)
+  - VgmStream.NativeMethods.open_fakename_streamfile(VgmStream.STREAMFILE*,System.SByte*,System.SByte*)
+  - VgmStream.NativeMethods.open_fakename_streamfile_f(VgmStream.STREAMFILE*,System.SByte*,System.SByte*)
+  - VgmStream.NativeMethods.open_io_streamfile(VgmStream.STREAMFILE*,System.Void*,System.UIntPtr,System.Void*,System.Void*)
+  - VgmStream.NativeMethods.open_io_streamfile_ex(VgmStream.STREAMFILE*,System.Void*,System.UIntPtr,System.Void*,System.Void*,System.Void*,System.Void*)
+  - VgmStream.NativeMethods.open_io_streamfile_ex_f(VgmStream.STREAMFILE*,System.Void*,System.UIntPtr,System.Void*,System.Void*,System.Void*,System.Void*)
+  - VgmStream.NativeMethods.open_io_streamfile_f(VgmStream.STREAMFILE*,System.Void*,System.UIntPtr,System.Void*,System.Void*)
+  - VgmStream.NativeMethods.open_multifile_streamfile(VgmStream.STREAMFILE**,System.UIntPtr)
+  - VgmStream.NativeMethods.open_multifile_streamfile_f(VgmStream.STREAMFILE**,System.UIntPtr)
+  - VgmStream.NativeMethods.open_stdio_streamfile(System.SByte*)
+  - VgmStream.NativeMethods.open_stdio_streamfile_by_file(System.IntPtr*,System.SByte*)
+  - VgmStream.NativeMethods.open_streamfile(VgmStream.STREAMFILE*,System.SByte*)
+  - VgmStream.NativeMethods.open_wrap_streamfile(VgmStream.STREAMFILE*)
+  - VgmStream.NativeMethods.open_wrap_streamfile_f(VgmStream.STREAMFILE*)
+  - VgmStream.NativeMethods.read_streamfile(System.Byte*,System.IntPtr,System.UIntPtr,VgmStream.STREAMFILE*)
+  - VgmStream.NativeMethods.render_vgmstream2(System.Int16*,System.Int32,VgmStream.VGMSTREAM*)
+  - VgmStream.NativeMethods.reopen_streamfile(VgmStream.STREAMFILE*,System.UIntPtr)
+  - VgmStream.NativeMethods.reset_vgmstream(VgmStream.VGMSTREAM*)
+  - VgmStream.NativeMethods.seek_vgmstream(VgmStream.VGMSTREAM*,System.Int32)
+  - VgmStream.NativeMethods.setup_vgmstream(VgmStream.VGMSTREAM*)
+  - VgmStream.NativeMethods.setup_vgmstream_play_state(VgmStream.VGMSTREAM*)
+  - VgmStream.NativeMethods.vgmstream_force_loop(VgmStream.VGMSTREAM*,System.Int32,System.Int32,System.Int32)
+  - VgmStream.NativeMethods.vgmstream_is_virtual_filename(System.SByte*)
+  - VgmStream.NativeMethods.vgmstream_open_stream(VgmStream.VGMSTREAM*,VgmStream.STREAMFILE*,System.IntPtr)
+  - VgmStream.NativeMethods.vgmstream_open_stream_bf(VgmStream.VGMSTREAM*,VgmStream.STREAMFILE*,System.IntPtr,System.Boolean)
+  - VgmStream.NativeMethods.vgmstream_set_loop_target(VgmStream.VGMSTREAM*,System.Int32)
+  langs:
+  - csharp
+  - vb
+  name: NativeMethods
+  nameWithType: NativeMethods
+  fullName: VgmStream.NativeMethods
+  type: Class
+  source:
+    remote:
+      path: SilverCraft.CSCore.VGMStream/InteropVgmStream/NativeMethods.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: NativeMethods
+    path: ../SilverCraft.CSCore.VGMStream/InteropVgmStream/NativeMethods.cs
+    startLine: 12
+  assemblies:
+  - SilverCraft.CSCore.VGMStream
+  namespace: VgmStream
+  syntax:
+    content: public static class NativeMethods
+    content.vb: Public Module NativeMethods
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: VgmStream.NativeMethods.init_vgmstream(System.SByte*)
+  commentId: M:VgmStream.NativeMethods.init_vgmstream(System.SByte*)
+  id: init_vgmstream(System.SByte*)
+  parent: VgmStream.NativeMethods
+  langs:
+  - csharp
+  - vb
+  name: init_vgmstream(sbyte*)
+  nameWithType: NativeMethods.init_vgmstream(sbyte*)
+  fullName: VgmStream.NativeMethods.init_vgmstream(sbyte*)
+  type: Method
+  assemblies:
+  - SilverCraft.CSCore.VGMStream
+  namespace: VgmStream
+  syntax:
+    content: public static extern VGMSTREAM* init_vgmstream(sbyte* filename)
+    parameters:
+    - id: filename
+      type: System.SByte*
+    return:
+      type: VgmStream.VGMSTREAM*
+    content.vb: Public Shared Function init_vgmstream(filename As SByte*) As VGMSTREAM*
+  overload: VgmStream.NativeMethods.init_vgmstream*
+  nameWithType.vb: NativeMethods.init_vgmstream(SByte*)
+  fullName.vb: VgmStream.NativeMethods.init_vgmstream(SByte*)
+  name.vb: init_vgmstream(SByte*)
+- uid: VgmStream.NativeMethods.init_vgmstream_from_STREAMFILE(VgmStream.STREAMFILE*)
+  commentId: M:VgmStream.NativeMethods.init_vgmstream_from_STREAMFILE(VgmStream.STREAMFILE*)
+  id: init_vgmstream_from_STREAMFILE(VgmStream.STREAMFILE*)
+  parent: VgmStream.NativeMethods
+  langs:
+  - csharp
+  - vb
+  name: init_vgmstream_from_STREAMFILE(STREAMFILE*)
+  nameWithType: NativeMethods.init_vgmstream_from_STREAMFILE(STREAMFILE*)
+  fullName: VgmStream.NativeMethods.init_vgmstream_from_STREAMFILE(VgmStream.STREAMFILE*)
+  type: Method
+  assemblies:
+  - SilverCraft.CSCore.VGMStream
+  namespace: VgmStream
+  syntax:
+    content: public static extern VGMSTREAM* init_vgmstream_from_STREAMFILE(STREAMFILE* sf)
+    parameters:
+    - id: sf
+      type: VgmStream.STREAMFILE*
+    return:
+      type: VgmStream.VGMSTREAM*
+    content.vb: Public Shared Function init_vgmstream_from_STREAMFILE(sf As STREAMFILE*) As VGMSTREAM*
+  overload: VgmStream.NativeMethods.init_vgmstream_from_STREAMFILE*
+- uid: VgmStream.NativeMethods.reset_vgmstream(VgmStream.VGMSTREAM*)
+  commentId: M:VgmStream.NativeMethods.reset_vgmstream(VgmStream.VGMSTREAM*)
+  id: reset_vgmstream(VgmStream.VGMSTREAM*)
+  parent: VgmStream.NativeMethods
+  langs:
+  - csharp
+  - vb
+  name: reset_vgmstream(VGMSTREAM*)
+  nameWithType: NativeMethods.reset_vgmstream(VGMSTREAM*)
+  fullName: VgmStream.NativeMethods.reset_vgmstream(VgmStream.VGMSTREAM*)
+  type: Method
+  assemblies:
+  - SilverCraft.CSCore.VGMStream
+  namespace: VgmStream
+  syntax:
+    content: public static extern void reset_vgmstream(VGMSTREAM* vgmstream)
+    parameters:
+    - id: vgmstream
+      type: VgmStream.VGMSTREAM*
+    content.vb: Public Shared Sub reset_vgmstream(vgmstream As VGMSTREAM*)
+  overload: VgmStream.NativeMethods.reset_vgmstream*
+- uid: VgmStream.NativeMethods.close_vgmstream(VgmStream.VGMSTREAM*)
+  commentId: M:VgmStream.NativeMethods.close_vgmstream(VgmStream.VGMSTREAM*)
+  id: close_vgmstream(VgmStream.VGMSTREAM*)
+  parent: VgmStream.NativeMethods
+  langs:
+  - csharp
+  - vb
+  name: close_vgmstream(VGMSTREAM*)
+  nameWithType: NativeMethods.close_vgmstream(VGMSTREAM*)
+  fullName: VgmStream.NativeMethods.close_vgmstream(VgmStream.VGMSTREAM*)
+  type: Method
+  assemblies:
+  - SilverCraft.CSCore.VGMStream
+  namespace: VgmStream
+  syntax:
+    content: public static extern void close_vgmstream(VGMSTREAM* vgmstream)
+    parameters:
+    - id: vgmstream
+      type: VgmStream.VGMSTREAM*
+    content.vb: Public Shared Sub close_vgmstream(vgmstream As VGMSTREAM*)
+  overload: VgmStream.NativeMethods.close_vgmstream*
+- uid: VgmStream.NativeMethods.render_vgmstream2(System.Int16*,System.Int32,VgmStream.VGMSTREAM*)
+  commentId: M:VgmStream.NativeMethods.render_vgmstream2(System.Int16*,System.Int32,VgmStream.VGMSTREAM*)
+  id: render_vgmstream2(System.Int16*,System.Int32,VgmStream.VGMSTREAM*)
+  parent: VgmStream.NativeMethods
+  langs:
+  - csharp
+  - vb
+  name: render_vgmstream2(short*, int, VGMSTREAM*)
+  nameWithType: NativeMethods.render_vgmstream2(short*, int, VGMSTREAM*)
+  fullName: VgmStream.NativeMethods.render_vgmstream2(short*, int, VgmStream.VGMSTREAM*)
+  type: Method
+  assemblies:
+  - SilverCraft.CSCore.VGMStream
+  namespace: VgmStream
+  syntax:
+    content: public static extern int render_vgmstream2(short* buffer, int sample_count, VGMSTREAM* vgmstream)
+    parameters:
+    - id: buffer
+      type: System.Int16*
+    - id: sample_count
+      type: System.Int32
+    - id: vgmstream
+      type: VgmStream.VGMSTREAM*
+    return:
+      type: System.Int32
+    content.vb: Public Shared Function render_vgmstream2(buffer As Short*, sample_count As Integer, vgmstream As VGMSTREAM*) As Integer
+  overload: VgmStream.NativeMethods.render_vgmstream2*
+  nameWithType.vb: NativeMethods.render_vgmstream2(Short*, Integer, VGMSTREAM*)
+  fullName.vb: VgmStream.NativeMethods.render_vgmstream2(Short*, Integer, VgmStream.VGMSTREAM*)
+  name.vb: render_vgmstream2(Short*, Integer, VGMSTREAM*)
+- uid: VgmStream.NativeMethods.seek_vgmstream(VgmStream.VGMSTREAM*,System.Int32)
+  commentId: M:VgmStream.NativeMethods.seek_vgmstream(VgmStream.VGMSTREAM*,System.Int32)
+  id: seek_vgmstream(VgmStream.VGMSTREAM*,System.Int32)
+  parent: VgmStream.NativeMethods
+  langs:
+  - csharp
+  - vb
+  name: seek_vgmstream(VGMSTREAM*, int)
+  nameWithType: NativeMethods.seek_vgmstream(VGMSTREAM*, int)
+  fullName: VgmStream.NativeMethods.seek_vgmstream(VgmStream.VGMSTREAM*, int)
+  type: Method
+  assemblies:
+  - SilverCraft.CSCore.VGMStream
+  namespace: VgmStream
+  syntax:
+    content: public static extern void seek_vgmstream(VGMSTREAM* vgmstream, int seek_sample)
+    parameters:
+    - id: vgmstream
+      type: VgmStream.VGMSTREAM*
+    - id: seek_sample
+      type: System.Int32
+    content.vb: Public Shared Sub seek_vgmstream(vgmstream As VGMSTREAM*, seek_sample As Integer)
+  overload: VgmStream.NativeMethods.seek_vgmstream*
+  nameWithType.vb: NativeMethods.seek_vgmstream(VGMSTREAM*, Integer)
+  fullName.vb: VgmStream.NativeMethods.seek_vgmstream(VgmStream.VGMSTREAM*, Integer)
+  name.vb: seek_vgmstream(VGMSTREAM*, Integer)
+- uid: VgmStream.NativeMethods.allocate_vgmstream(System.Int32,System.Int32)
+  commentId: M:VgmStream.NativeMethods.allocate_vgmstream(System.Int32,System.Int32)
+  id: allocate_vgmstream(System.Int32,System.Int32)
+  parent: VgmStream.NativeMethods
+  langs:
+  - csharp
+  - vb
+  name: allocate_vgmstream(int, int)
+  nameWithType: NativeMethods.allocate_vgmstream(int, int)
+  fullName: VgmStream.NativeMethods.allocate_vgmstream(int, int)
+  type: Method
+  assemblies:
+  - SilverCraft.CSCore.VGMStream
+  namespace: VgmStream
+  syntax:
+    content: public static extern VGMSTREAM* allocate_vgmstream(int channel_count, int looped)
+    parameters:
+    - id: channel_count
+      type: System.Int32
+    - id: looped
+      type: System.Int32
+    return:
+      type: VgmStream.VGMSTREAM*
+    content.vb: Public Shared Function allocate_vgmstream(channel_count As Integer, looped As Integer) As VGMSTREAM*
+  overload: VgmStream.NativeMethods.allocate_vgmstream*
+  nameWithType.vb: NativeMethods.allocate_vgmstream(Integer, Integer)
+  fullName.vb: VgmStream.NativeMethods.allocate_vgmstream(Integer, Integer)
+  name.vb: allocate_vgmstream(Integer, Integer)
+- uid: VgmStream.NativeMethods.setup_vgmstream(VgmStream.VGMSTREAM*)
+  commentId: M:VgmStream.NativeMethods.setup_vgmstream(VgmStream.VGMSTREAM*)
+  id: setup_vgmstream(VgmStream.VGMSTREAM*)
+  parent: VgmStream.NativeMethods
+  langs:
+  - csharp
+  - vb
+  name: setup_vgmstream(VGMSTREAM*)
+  nameWithType: NativeMethods.setup_vgmstream(VGMSTREAM*)
+  fullName: VgmStream.NativeMethods.setup_vgmstream(VgmStream.VGMSTREAM*)
+  type: Method
+  assemblies:
+  - SilverCraft.CSCore.VGMStream
+  namespace: VgmStream
+  syntax:
+    content: public static extern void setup_vgmstream(VGMSTREAM* vgmstream)
+    parameters:
+    - id: vgmstream
+      type: VgmStream.VGMSTREAM*
+    content.vb: Public Shared Sub setup_vgmstream(vgmstream As VGMSTREAM*)
+  overload: VgmStream.NativeMethods.setup_vgmstream*
+- uid: VgmStream.NativeMethods.vgmstream_open_stream(VgmStream.VGMSTREAM*,VgmStream.STREAMFILE*,System.IntPtr)
+  commentId: M:VgmStream.NativeMethods.vgmstream_open_stream(VgmStream.VGMSTREAM*,VgmStream.STREAMFILE*,System.IntPtr)
+  id: vgmstream_open_stream(VgmStream.VGMSTREAM*,VgmStream.STREAMFILE*,System.IntPtr)
+  parent: VgmStream.NativeMethods
+  langs:
+  - csharp
+  - vb
+  name: vgmstream_open_stream(VGMSTREAM*, STREAMFILE*, nint)
+  nameWithType: NativeMethods.vgmstream_open_stream(VGMSTREAM*, STREAMFILE*, nint)
+  fullName: VgmStream.NativeMethods.vgmstream_open_stream(VgmStream.VGMSTREAM*, VgmStream.STREAMFILE*, nint)
+  type: Method
+  assemblies:
+  - SilverCraft.CSCore.VGMStream
+  namespace: VgmStream
+  syntax:
+    content: public static extern bool vgmstream_open_stream(VGMSTREAM* vgmstream, STREAMFILE* sf, nint start_offset)
+    parameters:
+    - id: vgmstream
+      type: VgmStream.VGMSTREAM*
+    - id: sf
+      type: VgmStream.STREAMFILE*
+    - id: start_offset
+      type: System.IntPtr
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Function vgmstream_open_stream(vgmstream As VGMSTREAM*, sf As STREAMFILE*, start_offset As IntPtr) As Boolean
+  overload: VgmStream.NativeMethods.vgmstream_open_stream*
+  nameWithType.vb: NativeMethods.vgmstream_open_stream(VGMSTREAM*, STREAMFILE*, IntPtr)
+  fullName.vb: VgmStream.NativeMethods.vgmstream_open_stream(VgmStream.VGMSTREAM*, VgmStream.STREAMFILE*, System.IntPtr)
+  name.vb: vgmstream_open_stream(VGMSTREAM*, STREAMFILE*, IntPtr)
+- uid: VgmStream.NativeMethods.vgmstream_open_stream_bf(VgmStream.VGMSTREAM*,VgmStream.STREAMFILE*,System.IntPtr,System.Boolean)
+  commentId: M:VgmStream.NativeMethods.vgmstream_open_stream_bf(VgmStream.VGMSTREAM*,VgmStream.STREAMFILE*,System.IntPtr,System.Boolean)
+  id: vgmstream_open_stream_bf(VgmStream.VGMSTREAM*,VgmStream.STREAMFILE*,System.IntPtr,System.Boolean)
+  parent: VgmStream.NativeMethods
+  langs:
+  - csharp
+  - vb
+  name: vgmstream_open_stream_bf(VGMSTREAM*, STREAMFILE*, nint, bool)
+  nameWithType: NativeMethods.vgmstream_open_stream_bf(VGMSTREAM*, STREAMFILE*, nint, bool)
+  fullName: VgmStream.NativeMethods.vgmstream_open_stream_bf(VgmStream.VGMSTREAM*, VgmStream.STREAMFILE*, nint, bool)
+  type: Method
+  assemblies:
+  - SilverCraft.CSCore.VGMStream
+  namespace: VgmStream
+  syntax:
+    content: public static extern bool vgmstream_open_stream_bf(VGMSTREAM* vgmstream, STREAMFILE* sf, nint start_offset, bool force_multibuffer)
+    parameters:
+    - id: vgmstream
+      type: VgmStream.VGMSTREAM*
+    - id: sf
+      type: VgmStream.STREAMFILE*
+    - id: start_offset
+      type: System.IntPtr
+    - id: force_multibuffer
+      type: System.Boolean
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Function vgmstream_open_stream_bf(vgmstream As VGMSTREAM*, sf As STREAMFILE*, start_offset As IntPtr, force_multibuffer As Boolean) As Boolean
+  overload: VgmStream.NativeMethods.vgmstream_open_stream_bf*
+  nameWithType.vb: NativeMethods.vgmstream_open_stream_bf(VGMSTREAM*, STREAMFILE*, IntPtr, Boolean)
+  fullName.vb: VgmStream.NativeMethods.vgmstream_open_stream_bf(VgmStream.VGMSTREAM*, VgmStream.STREAMFILE*, System.IntPtr, Boolean)
+  name.vb: vgmstream_open_stream_bf(VGMSTREAM*, STREAMFILE*, IntPtr, Boolean)
+- uid: VgmStream.NativeMethods.vgmstream_force_loop(VgmStream.VGMSTREAM*,System.Int32,System.Int32,System.Int32)
+  commentId: M:VgmStream.NativeMethods.vgmstream_force_loop(VgmStream.VGMSTREAM*,System.Int32,System.Int32,System.Int32)
+  id: vgmstream_force_loop(VgmStream.VGMSTREAM*,System.Int32,System.Int32,System.Int32)
+  parent: VgmStream.NativeMethods
+  langs:
+  - csharp
+  - vb
+  name: vgmstream_force_loop(VGMSTREAM*, int, int, int)
+  nameWithType: NativeMethods.vgmstream_force_loop(VGMSTREAM*, int, int, int)
+  fullName: VgmStream.NativeMethods.vgmstream_force_loop(VgmStream.VGMSTREAM*, int, int, int)
+  type: Method
+  assemblies:
+  - SilverCraft.CSCore.VGMStream
+  namespace: VgmStream
+  syntax:
+    content: public static extern void vgmstream_force_loop(VGMSTREAM* vgmstream, int loop_flag, int loop_start_sample, int loop_end_sample)
+    parameters:
+    - id: vgmstream
+      type: VgmStream.VGMSTREAM*
+    - id: loop_flag
+      type: System.Int32
+    - id: loop_start_sample
+      type: System.Int32
+    - id: loop_end_sample
+      type: System.Int32
+    content.vb: Public Shared Sub vgmstream_force_loop(vgmstream As VGMSTREAM*, loop_flag As Integer, loop_start_sample As Integer, loop_end_sample As Integer)
+  overload: VgmStream.NativeMethods.vgmstream_force_loop*
+  nameWithType.vb: NativeMethods.vgmstream_force_loop(VGMSTREAM*, Integer, Integer, Integer)
+  fullName.vb: VgmStream.NativeMethods.vgmstream_force_loop(VgmStream.VGMSTREAM*, Integer, Integer, Integer)
+  name.vb: vgmstream_force_loop(VGMSTREAM*, Integer, Integer, Integer)
+- uid: VgmStream.NativeMethods.vgmstream_set_loop_target(VgmStream.VGMSTREAM*,System.Int32)
+  commentId: M:VgmStream.NativeMethods.vgmstream_set_loop_target(VgmStream.VGMSTREAM*,System.Int32)
+  id: vgmstream_set_loop_target(VgmStream.VGMSTREAM*,System.Int32)
+  parent: VgmStream.NativeMethods
+  langs:
+  - csharp
+  - vb
+  name: vgmstream_set_loop_target(VGMSTREAM*, int)
+  nameWithType: NativeMethods.vgmstream_set_loop_target(VGMSTREAM*, int)
+  fullName: VgmStream.NativeMethods.vgmstream_set_loop_target(VgmStream.VGMSTREAM*, int)
+  type: Method
+  assemblies:
+  - SilverCraft.CSCore.VGMStream
+  namespace: VgmStream
+  syntax:
+    content: public static extern void vgmstream_set_loop_target(VGMSTREAM* vgmstream, int loop_target)
+    parameters:
+    - id: vgmstream
+      type: VgmStream.VGMSTREAM*
+    - id: loop_target
+      type: System.Int32
+    content.vb: Public Shared Sub vgmstream_set_loop_target(vgmstream As VGMSTREAM*, loop_target As Integer)
+  overload: VgmStream.NativeMethods.vgmstream_set_loop_target*
+  nameWithType.vb: NativeMethods.vgmstream_set_loop_target(VGMSTREAM*, Integer)
+  fullName.vb: VgmStream.NativeMethods.vgmstream_set_loop_target(VgmStream.VGMSTREAM*, Integer)
+  name.vb: vgmstream_set_loop_target(VGMSTREAM*, Integer)
+- uid: VgmStream.NativeMethods.setup_vgmstream_play_state(VgmStream.VGMSTREAM*)
+  commentId: M:VgmStream.NativeMethods.setup_vgmstream_play_state(VgmStream.VGMSTREAM*)
+  id: setup_vgmstream_play_state(VgmStream.VGMSTREAM*)
+  parent: VgmStream.NativeMethods
+  langs:
+  - csharp
+  - vb
+  name: setup_vgmstream_play_state(VGMSTREAM*)
+  nameWithType: NativeMethods.setup_vgmstream_play_state(VGMSTREAM*)
+  fullName: VgmStream.NativeMethods.setup_vgmstream_play_state(VgmStream.VGMSTREAM*)
+  type: Method
+  assemblies:
+  - SilverCraft.CSCore.VGMStream
+  namespace: VgmStream
+  syntax:
+    content: public static extern void setup_vgmstream_play_state(VGMSTREAM* vgmstream)
+    parameters:
+    - id: vgmstream
+      type: VgmStream.VGMSTREAM*
+    content.vb: Public Shared Sub setup_vgmstream_play_state(vgmstream As VGMSTREAM*)
+  overload: VgmStream.NativeMethods.setup_vgmstream_play_state*
+- uid: VgmStream.NativeMethods.vgmstream_is_virtual_filename(System.SByte*)
+  commentId: M:VgmStream.NativeMethods.vgmstream_is_virtual_filename(System.SByte*)
+  id: vgmstream_is_virtual_filename(System.SByte*)
+  parent: VgmStream.NativeMethods
+  langs:
+  - csharp
+  - vb
+  name: vgmstream_is_virtual_filename(sbyte*)
+  nameWithType: NativeMethods.vgmstream_is_virtual_filename(sbyte*)
+  fullName: VgmStream.NativeMethods.vgmstream_is_virtual_filename(sbyte*)
+  type: Method
+  assemblies:
+  - SilverCraft.CSCore.VGMStream
+  namespace: VgmStream
+  syntax:
+    content: public static extern bool vgmstream_is_virtual_filename(sbyte* filename)
+    parameters:
+    - id: filename
+      type: System.SByte*
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Function vgmstream_is_virtual_filename(filename As SByte*) As Boolean
+  overload: VgmStream.NativeMethods.vgmstream_is_virtual_filename*
+  nameWithType.vb: NativeMethods.vgmstream_is_virtual_filename(SByte*)
+  fullName.vb: VgmStream.NativeMethods.vgmstream_is_virtual_filename(SByte*)
+  name.vb: vgmstream_is_virtual_filename(SByte*)
+- uid: VgmStream.NativeMethods.open_stdio_streamfile(System.SByte*)
+  commentId: M:VgmStream.NativeMethods.open_stdio_streamfile(System.SByte*)
+  id: open_stdio_streamfile(System.SByte*)
+  parent: VgmStream.NativeMethods
+  langs:
+  - csharp
+  - vb
+  name: open_stdio_streamfile(sbyte*)
+  nameWithType: NativeMethods.open_stdio_streamfile(sbyte*)
+  fullName: VgmStream.NativeMethods.open_stdio_streamfile(sbyte*)
+  type: Method
+  assemblies:
+  - SilverCraft.CSCore.VGMStream
+  namespace: VgmStream
+  syntax:
+    content: public static extern STREAMFILE* open_stdio_streamfile(sbyte* filename)
+    parameters:
+    - id: filename
+      type: System.SByte*
+    return:
+      type: VgmStream.STREAMFILE*
+    content.vb: Public Shared Function open_stdio_streamfile(filename As SByte*) As STREAMFILE*
+  overload: VgmStream.NativeMethods.open_stdio_streamfile*
+  nameWithType.vb: NativeMethods.open_stdio_streamfile(SByte*)
+  fullName.vb: VgmStream.NativeMethods.open_stdio_streamfile(SByte*)
+  name.vb: open_stdio_streamfile(SByte*)
+- uid: VgmStream.NativeMethods.open_stdio_streamfile_by_file(System.IntPtr*,System.SByte*)
+  commentId: M:VgmStream.NativeMethods.open_stdio_streamfile_by_file(System.IntPtr*,System.SByte*)
+  id: open_stdio_streamfile_by_file(System.IntPtr*,System.SByte*)
+  parent: VgmStream.NativeMethods
+  langs:
+  - csharp
+  - vb
+  name: open_stdio_streamfile_by_file(nint*, sbyte*)
+  nameWithType: NativeMethods.open_stdio_streamfile_by_file(nint*, sbyte*)
+  fullName: VgmStream.NativeMethods.open_stdio_streamfile_by_file(nint*, sbyte*)
+  type: Method
+  assemblies:
+  - SilverCraft.CSCore.VGMStream
+  namespace: VgmStream
+  syntax:
+    content: public static extern STREAMFILE* open_stdio_streamfile_by_file(nint* file, sbyte* filename)
+    parameters:
+    - id: file
+      type: System.IntPtr*
+    - id: filename
+      type: System.SByte*
+    return:
+      type: VgmStream.STREAMFILE*
+    content.vb: Public Shared Function open_stdio_streamfile_by_file(file As IntPtr*, filename As SByte*) As STREAMFILE*
+  overload: VgmStream.NativeMethods.open_stdio_streamfile_by_file*
+  nameWithType.vb: NativeMethods.open_stdio_streamfile_by_file(IntPtr*, SByte*)
+  fullName.vb: VgmStream.NativeMethods.open_stdio_streamfile_by_file(System.IntPtr*, SByte*)
+  name.vb: open_stdio_streamfile_by_file(IntPtr*, SByte*)
+- uid: VgmStream.NativeMethods.open_buffer_streamfile(VgmStream.STREAMFILE*,System.UIntPtr)
+  commentId: M:VgmStream.NativeMethods.open_buffer_streamfile(VgmStream.STREAMFILE*,System.UIntPtr)
+  id: open_buffer_streamfile(VgmStream.STREAMFILE*,System.UIntPtr)
+  parent: VgmStream.NativeMethods
+  langs:
+  - csharp
+  - vb
+  name: open_buffer_streamfile(STREAMFILE*, nuint)
+  nameWithType: NativeMethods.open_buffer_streamfile(STREAMFILE*, nuint)
+  fullName: VgmStream.NativeMethods.open_buffer_streamfile(VgmStream.STREAMFILE*, nuint)
+  type: Method
+  assemblies:
+  - SilverCraft.CSCore.VGMStream
+  namespace: VgmStream
+  syntax:
+    content: public static extern STREAMFILE* open_buffer_streamfile(STREAMFILE* sf, nuint buffer_size)
+    parameters:
+    - id: sf
+      type: VgmStream.STREAMFILE*
+    - id: buffer_size
+      type: System.UIntPtr
+    return:
+      type: VgmStream.STREAMFILE*
+    content.vb: Public Shared Function open_buffer_streamfile(sf As STREAMFILE*, buffer_size As UIntPtr) As STREAMFILE*
+  overload: VgmStream.NativeMethods.open_buffer_streamfile*
+  nameWithType.vb: NativeMethods.open_buffer_streamfile(STREAMFILE*, UIntPtr)
+  fullName.vb: VgmStream.NativeMethods.open_buffer_streamfile(VgmStream.STREAMFILE*, System.UIntPtr)
+  name.vb: open_buffer_streamfile(STREAMFILE*, UIntPtr)
+- uid: VgmStream.NativeMethods.open_buffer_streamfile_f(VgmStream.STREAMFILE*,System.UIntPtr)
+  commentId: M:VgmStream.NativeMethods.open_buffer_streamfile_f(VgmStream.STREAMFILE*,System.UIntPtr)
+  id: open_buffer_streamfile_f(VgmStream.STREAMFILE*,System.UIntPtr)
+  parent: VgmStream.NativeMethods
+  langs:
+  - csharp
+  - vb
+  name: open_buffer_streamfile_f(STREAMFILE*, nuint)
+  nameWithType: NativeMethods.open_buffer_streamfile_f(STREAMFILE*, nuint)
+  fullName: VgmStream.NativeMethods.open_buffer_streamfile_f(VgmStream.STREAMFILE*, nuint)
+  type: Method
+  assemblies:
+  - SilverCraft.CSCore.VGMStream
+  namespace: VgmStream
+  syntax:
+    content: public static extern STREAMFILE* open_buffer_streamfile_f(STREAMFILE* sf, nuint buffer_size)
+    parameters:
+    - id: sf
+      type: VgmStream.STREAMFILE*
+    - id: buffer_size
+      type: System.UIntPtr
+    return:
+      type: VgmStream.STREAMFILE*
+    content.vb: Public Shared Function open_buffer_streamfile_f(sf As STREAMFILE*, buffer_size As UIntPtr) As STREAMFILE*
+  overload: VgmStream.NativeMethods.open_buffer_streamfile_f*
+  nameWithType.vb: NativeMethods.open_buffer_streamfile_f(STREAMFILE*, UIntPtr)
+  fullName.vb: VgmStream.NativeMethods.open_buffer_streamfile_f(VgmStream.STREAMFILE*, System.UIntPtr)
+  name.vb: open_buffer_streamfile_f(STREAMFILE*, UIntPtr)
+- uid: VgmStream.NativeMethods.open_wrap_streamfile(VgmStream.STREAMFILE*)
+  commentId: M:VgmStream.NativeMethods.open_wrap_streamfile(VgmStream.STREAMFILE*)
+  id: open_wrap_streamfile(VgmStream.STREAMFILE*)
+  parent: VgmStream.NativeMethods
+  langs:
+  - csharp
+  - vb
+  name: open_wrap_streamfile(STREAMFILE*)
+  nameWithType: NativeMethods.open_wrap_streamfile(STREAMFILE*)
+  fullName: VgmStream.NativeMethods.open_wrap_streamfile(VgmStream.STREAMFILE*)
+  type: Method
+  assemblies:
+  - SilverCraft.CSCore.VGMStream
+  namespace: VgmStream
+  syntax:
+    content: public static extern STREAMFILE* open_wrap_streamfile(STREAMFILE* sf)
+    parameters:
+    - id: sf
+      type: VgmStream.STREAMFILE*
+    return:
+      type: VgmStream.STREAMFILE*
+    content.vb: Public Shared Function open_wrap_streamfile(sf As STREAMFILE*) As STREAMFILE*
+  overload: VgmStream.NativeMethods.open_wrap_streamfile*
+- uid: VgmStream.NativeMethods.open_wrap_streamfile_f(VgmStream.STREAMFILE*)
+  commentId: M:VgmStream.NativeMethods.open_wrap_streamfile_f(VgmStream.STREAMFILE*)
+  id: open_wrap_streamfile_f(VgmStream.STREAMFILE*)
+  parent: VgmStream.NativeMethods
+  langs:
+  - csharp
+  - vb
+  name: open_wrap_streamfile_f(STREAMFILE*)
+  nameWithType: NativeMethods.open_wrap_streamfile_f(STREAMFILE*)
+  fullName: VgmStream.NativeMethods.open_wrap_streamfile_f(VgmStream.STREAMFILE*)
+  type: Method
+  assemblies:
+  - SilverCraft.CSCore.VGMStream
+  namespace: VgmStream
+  syntax:
+    content: public static extern STREAMFILE* open_wrap_streamfile_f(STREAMFILE* sf)
+    parameters:
+    - id: sf
+      type: VgmStream.STREAMFILE*
+    return:
+      type: VgmStream.STREAMFILE*
+    content.vb: Public Shared Function open_wrap_streamfile_f(sf As STREAMFILE*) As STREAMFILE*
+  overload: VgmStream.NativeMethods.open_wrap_streamfile_f*
+- uid: VgmStream.NativeMethods.open_clamp_streamfile(VgmStream.STREAMFILE*,System.IntPtr,System.UIntPtr)
+  commentId: M:VgmStream.NativeMethods.open_clamp_streamfile(VgmStream.STREAMFILE*,System.IntPtr,System.UIntPtr)
+  id: open_clamp_streamfile(VgmStream.STREAMFILE*,System.IntPtr,System.UIntPtr)
+  parent: VgmStream.NativeMethods
+  langs:
+  - csharp
+  - vb
+  name: open_clamp_streamfile(STREAMFILE*, nint, nuint)
+  nameWithType: NativeMethods.open_clamp_streamfile(STREAMFILE*, nint, nuint)
+  fullName: VgmStream.NativeMethods.open_clamp_streamfile(VgmStream.STREAMFILE*, nint, nuint)
+  type: Method
+  assemblies:
+  - SilverCraft.CSCore.VGMStream
+  namespace: VgmStream
+  syntax:
+    content: public static extern STREAMFILE* open_clamp_streamfile(STREAMFILE* sf, nint start, nuint size)
+    parameters:
+    - id: sf
+      type: VgmStream.STREAMFILE*
+    - id: start
+      type: System.IntPtr
+    - id: size
+      type: System.UIntPtr
+    return:
+      type: VgmStream.STREAMFILE*
+    content.vb: Public Shared Function open_clamp_streamfile(sf As STREAMFILE*, start As IntPtr, size As UIntPtr) As STREAMFILE*
+  overload: VgmStream.NativeMethods.open_clamp_streamfile*
+  nameWithType.vb: NativeMethods.open_clamp_streamfile(STREAMFILE*, IntPtr, UIntPtr)
+  fullName.vb: VgmStream.NativeMethods.open_clamp_streamfile(VgmStream.STREAMFILE*, System.IntPtr, System.UIntPtr)
+  name.vb: open_clamp_streamfile(STREAMFILE*, IntPtr, UIntPtr)
+- uid: VgmStream.NativeMethods.open_clamp_streamfile_f(VgmStream.STREAMFILE*,System.IntPtr,System.UIntPtr)
+  commentId: M:VgmStream.NativeMethods.open_clamp_streamfile_f(VgmStream.STREAMFILE*,System.IntPtr,System.UIntPtr)
+  id: open_clamp_streamfile_f(VgmStream.STREAMFILE*,System.IntPtr,System.UIntPtr)
+  parent: VgmStream.NativeMethods
+  langs:
+  - csharp
+  - vb
+  name: open_clamp_streamfile_f(STREAMFILE*, nint, nuint)
+  nameWithType: NativeMethods.open_clamp_streamfile_f(STREAMFILE*, nint, nuint)
+  fullName: VgmStream.NativeMethods.open_clamp_streamfile_f(VgmStream.STREAMFILE*, nint, nuint)
+  type: Method
+  assemblies:
+  - SilverCraft.CSCore.VGMStream
+  namespace: VgmStream
+  syntax:
+    content: public static extern STREAMFILE* open_clamp_streamfile_f(STREAMFILE* sf, nint start, nuint size)
+    parameters:
+    - id: sf
+      type: VgmStream.STREAMFILE*
+    - id: start
+      type: System.IntPtr
+    - id: size
+      type: System.UIntPtr
+    return:
+      type: VgmStream.STREAMFILE*
+    content.vb: Public Shared Function open_clamp_streamfile_f(sf As STREAMFILE*, start As IntPtr, size As UIntPtr) As STREAMFILE*
+  overload: VgmStream.NativeMethods.open_clamp_streamfile_f*
+  nameWithType.vb: NativeMethods.open_clamp_streamfile_f(STREAMFILE*, IntPtr, UIntPtr)
+  fullName.vb: VgmStream.NativeMethods.open_clamp_streamfile_f(VgmStream.STREAMFILE*, System.IntPtr, System.UIntPtr)
+  name.vb: open_clamp_streamfile_f(STREAMFILE*, IntPtr, UIntPtr)
+- uid: VgmStream.NativeMethods.open_io_streamfile(VgmStream.STREAMFILE*,System.Void*,System.UIntPtr,System.Void*,System.Void*)
+  commentId: M:VgmStream.NativeMethods.open_io_streamfile(VgmStream.STREAMFILE*,System.Void*,System.UIntPtr,System.Void*,System.Void*)
+  id: open_io_streamfile(VgmStream.STREAMFILE*,System.Void*,System.UIntPtr,System.Void*,System.Void*)
+  parent: VgmStream.NativeMethods
+  langs:
+  - csharp
+  - vb
+  name: open_io_streamfile(STREAMFILE*, void*, nuint, void*, void*)
+  nameWithType: NativeMethods.open_io_streamfile(STREAMFILE*, void*, nuint, void*, void*)
+  fullName: VgmStream.NativeMethods.open_io_streamfile(VgmStream.STREAMFILE*, void*, nuint, void*, void*)
+  type: Method
+  assemblies:
+  - SilverCraft.CSCore.VGMStream
+  namespace: VgmStream
+  syntax:
+    content: public static extern STREAMFILE* open_io_streamfile(STREAMFILE* sf, void* data, nuint data_size, void* read_callback, void* size_callback)
+    parameters:
+    - id: sf
+      type: VgmStream.STREAMFILE*
+    - id: data
+      type: System.Void*
+    - id: data_size
+      type: System.UIntPtr
+    - id: read_callback
+      type: System.Void*
+    - id: size_callback
+      type: System.Void*
+    return:
+      type: VgmStream.STREAMFILE*
+    content.vb: Public Shared Function open_io_streamfile(sf As STREAMFILE*, data As Void*, data_size As UIntPtr, read_callback As Void*, size_callback As Void*) As STREAMFILE*
+  overload: VgmStream.NativeMethods.open_io_streamfile*
+  nameWithType.vb: NativeMethods.open_io_streamfile(STREAMFILE*, Void*, UIntPtr, Void*, Void*)
+  fullName.vb: VgmStream.NativeMethods.open_io_streamfile(VgmStream.STREAMFILE*, Void*, System.UIntPtr, Void*, Void*)
+  name.vb: open_io_streamfile(STREAMFILE*, Void*, UIntPtr, Void*, Void*)
+- uid: VgmStream.NativeMethods.open_io_streamfile_f(VgmStream.STREAMFILE*,System.Void*,System.UIntPtr,System.Void*,System.Void*)
+  commentId: M:VgmStream.NativeMethods.open_io_streamfile_f(VgmStream.STREAMFILE*,System.Void*,System.UIntPtr,System.Void*,System.Void*)
+  id: open_io_streamfile_f(VgmStream.STREAMFILE*,System.Void*,System.UIntPtr,System.Void*,System.Void*)
+  parent: VgmStream.NativeMethods
+  langs:
+  - csharp
+  - vb
+  name: open_io_streamfile_f(STREAMFILE*, void*, nuint, void*, void*)
+  nameWithType: NativeMethods.open_io_streamfile_f(STREAMFILE*, void*, nuint, void*, void*)
+  fullName: VgmStream.NativeMethods.open_io_streamfile_f(VgmStream.STREAMFILE*, void*, nuint, void*, void*)
+  type: Method
+  assemblies:
+  - SilverCraft.CSCore.VGMStream
+  namespace: VgmStream
+  syntax:
+    content: public static extern STREAMFILE* open_io_streamfile_f(STREAMFILE* sf, void* data, nuint data_size, void* read_callback, void* size_callback)
+    parameters:
+    - id: sf
+      type: VgmStream.STREAMFILE*
+    - id: data
+      type: System.Void*
+    - id: data_size
+      type: System.UIntPtr
+    - id: read_callback
+      type: System.Void*
+    - id: size_callback
+      type: System.Void*
+    return:
+      type: VgmStream.STREAMFILE*
+    content.vb: Public Shared Function open_io_streamfile_f(sf As STREAMFILE*, data As Void*, data_size As UIntPtr, read_callback As Void*, size_callback As Void*) As STREAMFILE*
+  overload: VgmStream.NativeMethods.open_io_streamfile_f*
+  nameWithType.vb: NativeMethods.open_io_streamfile_f(STREAMFILE*, Void*, UIntPtr, Void*, Void*)
+  fullName.vb: VgmStream.NativeMethods.open_io_streamfile_f(VgmStream.STREAMFILE*, Void*, System.UIntPtr, Void*, Void*)
+  name.vb: open_io_streamfile_f(STREAMFILE*, Void*, UIntPtr, Void*, Void*)
+- uid: VgmStream.NativeMethods.open_io_streamfile_ex(VgmStream.STREAMFILE*,System.Void*,System.UIntPtr,System.Void*,System.Void*,System.Void*,System.Void*)
+  commentId: M:VgmStream.NativeMethods.open_io_streamfile_ex(VgmStream.STREAMFILE*,System.Void*,System.UIntPtr,System.Void*,System.Void*,System.Void*,System.Void*)
+  id: open_io_streamfile_ex(VgmStream.STREAMFILE*,System.Void*,System.UIntPtr,System.Void*,System.Void*,System.Void*,System.Void*)
+  parent: VgmStream.NativeMethods
+  langs:
+  - csharp
+  - vb
+  name: open_io_streamfile_ex(STREAMFILE*, void*, nuint, void*, void*, void*, void*)
+  nameWithType: NativeMethods.open_io_streamfile_ex(STREAMFILE*, void*, nuint, void*, void*, void*, void*)
+  fullName: VgmStream.NativeMethods.open_io_streamfile_ex(VgmStream.STREAMFILE*, void*, nuint, void*, void*, void*, void*)
+  type: Method
+  assemblies:
+  - SilverCraft.CSCore.VGMStream
+  namespace: VgmStream
+  syntax:
+    content: public static extern STREAMFILE* open_io_streamfile_ex(STREAMFILE* sf, void* data, nuint data_size, void* read_callback, void* size_callback, void* init_callback, void* close_callback)
+    parameters:
+    - id: sf
+      type: VgmStream.STREAMFILE*
+    - id: data
+      type: System.Void*
+    - id: data_size
+      type: System.UIntPtr
+    - id: read_callback
+      type: System.Void*
+    - id: size_callback
+      type: System.Void*
+    - id: init_callback
+      type: System.Void*
+    - id: close_callback
+      type: System.Void*
+    return:
+      type: VgmStream.STREAMFILE*
+    content.vb: Public Shared Function open_io_streamfile_ex(sf As STREAMFILE*, data As Void*, data_size As UIntPtr, read_callback As Void*, size_callback As Void*, init_callback As Void*, close_callback As Void*) As STREAMFILE*
+  overload: VgmStream.NativeMethods.open_io_streamfile_ex*
+  nameWithType.vb: NativeMethods.open_io_streamfile_ex(STREAMFILE*, Void*, UIntPtr, Void*, Void*, Void*, Void*)
+  fullName.vb: VgmStream.NativeMethods.open_io_streamfile_ex(VgmStream.STREAMFILE*, Void*, System.UIntPtr, Void*, Void*, Void*, Void*)
+  name.vb: open_io_streamfile_ex(STREAMFILE*, Void*, UIntPtr, Void*, Void*, Void*, Void*)
+- uid: VgmStream.NativeMethods.open_io_streamfile_ex_f(VgmStream.STREAMFILE*,System.Void*,System.UIntPtr,System.Void*,System.Void*,System.Void*,System.Void*)
+  commentId: M:VgmStream.NativeMethods.open_io_streamfile_ex_f(VgmStream.STREAMFILE*,System.Void*,System.UIntPtr,System.Void*,System.Void*,System.Void*,System.Void*)
+  id: open_io_streamfile_ex_f(VgmStream.STREAMFILE*,System.Void*,System.UIntPtr,System.Void*,System.Void*,System.Void*,System.Void*)
+  parent: VgmStream.NativeMethods
+  langs:
+  - csharp
+  - vb
+  name: open_io_streamfile_ex_f(STREAMFILE*, void*, nuint, void*, void*, void*, void*)
+  nameWithType: NativeMethods.open_io_streamfile_ex_f(STREAMFILE*, void*, nuint, void*, void*, void*, void*)
+  fullName: VgmStream.NativeMethods.open_io_streamfile_ex_f(VgmStream.STREAMFILE*, void*, nuint, void*, void*, void*, void*)
+  type: Method
+  assemblies:
+  - SilverCraft.CSCore.VGMStream
+  namespace: VgmStream
+  syntax:
+    content: public static extern STREAMFILE* open_io_streamfile_ex_f(STREAMFILE* sf, void* data, nuint data_size, void* read_callback, void* size_callback, void* init_callback, void* close_callback)
+    parameters:
+    - id: sf
+      type: VgmStream.STREAMFILE*
+    - id: data
+      type: System.Void*
+    - id: data_size
+      type: System.UIntPtr
+    - id: read_callback
+      type: System.Void*
+    - id: size_callback
+      type: System.Void*
+    - id: init_callback
+      type: System.Void*
+    - id: close_callback
+      type: System.Void*
+    return:
+      type: VgmStream.STREAMFILE*
+    content.vb: Public Shared Function open_io_streamfile_ex_f(sf As STREAMFILE*, data As Void*, data_size As UIntPtr, read_callback As Void*, size_callback As Void*, init_callback As Void*, close_callback As Void*) As STREAMFILE*
+  overload: VgmStream.NativeMethods.open_io_streamfile_ex_f*
+  nameWithType.vb: NativeMethods.open_io_streamfile_ex_f(STREAMFILE*, Void*, UIntPtr, Void*, Void*, Void*, Void*)
+  fullName.vb: VgmStream.NativeMethods.open_io_streamfile_ex_f(VgmStream.STREAMFILE*, Void*, System.UIntPtr, Void*, Void*, Void*, Void*)
+  name.vb: open_io_streamfile_ex_f(STREAMFILE*, Void*, UIntPtr, Void*, Void*, Void*, Void*)
+- uid: VgmStream.NativeMethods.open_fakename_streamfile(VgmStream.STREAMFILE*,System.SByte*,System.SByte*)
+  commentId: M:VgmStream.NativeMethods.open_fakename_streamfile(VgmStream.STREAMFILE*,System.SByte*,System.SByte*)
+  id: open_fakename_streamfile(VgmStream.STREAMFILE*,System.SByte*,System.SByte*)
+  parent: VgmStream.NativeMethods
+  langs:
+  - csharp
+  - vb
+  name: open_fakename_streamfile(STREAMFILE*, sbyte*, sbyte*)
+  nameWithType: NativeMethods.open_fakename_streamfile(STREAMFILE*, sbyte*, sbyte*)
+  fullName: VgmStream.NativeMethods.open_fakename_streamfile(VgmStream.STREAMFILE*, sbyte*, sbyte*)
+  type: Method
+  assemblies:
+  - SilverCraft.CSCore.VGMStream
+  namespace: VgmStream
+  syntax:
+    content: public static extern STREAMFILE* open_fakename_streamfile(STREAMFILE* sf, sbyte* fakename, sbyte* fakeext)
+    parameters:
+    - id: sf
+      type: VgmStream.STREAMFILE*
+    - id: fakename
+      type: System.SByte*
+    - id: fakeext
+      type: System.SByte*
+    return:
+      type: VgmStream.STREAMFILE*
+    content.vb: Public Shared Function open_fakename_streamfile(sf As STREAMFILE*, fakename As SByte*, fakeext As SByte*) As STREAMFILE*
+  overload: VgmStream.NativeMethods.open_fakename_streamfile*
+  nameWithType.vb: NativeMethods.open_fakename_streamfile(STREAMFILE*, SByte*, SByte*)
+  fullName.vb: VgmStream.NativeMethods.open_fakename_streamfile(VgmStream.STREAMFILE*, SByte*, SByte*)
+  name.vb: open_fakename_streamfile(STREAMFILE*, SByte*, SByte*)
+- uid: VgmStream.NativeMethods.open_fakename_streamfile_f(VgmStream.STREAMFILE*,System.SByte*,System.SByte*)
+  commentId: M:VgmStream.NativeMethods.open_fakename_streamfile_f(VgmStream.STREAMFILE*,System.SByte*,System.SByte*)
+  id: open_fakename_streamfile_f(VgmStream.STREAMFILE*,System.SByte*,System.SByte*)
+  parent: VgmStream.NativeMethods
+  langs:
+  - csharp
+  - vb
+  name: open_fakename_streamfile_f(STREAMFILE*, sbyte*, sbyte*)
+  nameWithType: NativeMethods.open_fakename_streamfile_f(STREAMFILE*, sbyte*, sbyte*)
+  fullName: VgmStream.NativeMethods.open_fakename_streamfile_f(VgmStream.STREAMFILE*, sbyte*, sbyte*)
+  type: Method
+  assemblies:
+  - SilverCraft.CSCore.VGMStream
+  namespace: VgmStream
+  syntax:
+    content: public static extern STREAMFILE* open_fakename_streamfile_f(STREAMFILE* sf, sbyte* fakename, sbyte* fakeext)
+    parameters:
+    - id: sf
+      type: VgmStream.STREAMFILE*
+    - id: fakename
+      type: System.SByte*
+    - id: fakeext
+      type: System.SByte*
+    return:
+      type: VgmStream.STREAMFILE*
+    content.vb: Public Shared Function open_fakename_streamfile_f(sf As STREAMFILE*, fakename As SByte*, fakeext As SByte*) As STREAMFILE*
+  overload: VgmStream.NativeMethods.open_fakename_streamfile_f*
+  nameWithType.vb: NativeMethods.open_fakename_streamfile_f(STREAMFILE*, SByte*, SByte*)
+  fullName.vb: VgmStream.NativeMethods.open_fakename_streamfile_f(VgmStream.STREAMFILE*, SByte*, SByte*)
+  name.vb: open_fakename_streamfile_f(STREAMFILE*, SByte*, SByte*)
+- uid: VgmStream.NativeMethods.open_multifile_streamfile(VgmStream.STREAMFILE**,System.UIntPtr)
+  commentId: M:VgmStream.NativeMethods.open_multifile_streamfile(VgmStream.STREAMFILE**,System.UIntPtr)
+  id: open_multifile_streamfile(VgmStream.STREAMFILE**,System.UIntPtr)
+  parent: VgmStream.NativeMethods
+  langs:
+  - csharp
+  - vb
+  name: open_multifile_streamfile(STREAMFILE**, nuint)
+  nameWithType: NativeMethods.open_multifile_streamfile(STREAMFILE**, nuint)
+  fullName: VgmStream.NativeMethods.open_multifile_streamfile(VgmStream.STREAMFILE**, nuint)
+  type: Method
+  assemblies:
+  - SilverCraft.CSCore.VGMStream
+  namespace: VgmStream
+  syntax:
+    content: public static extern STREAMFILE* open_multifile_streamfile(STREAMFILE** sfs, nuint sfs_size)
+    parameters:
+    - id: sfs
+      type: VgmStream.STREAMFILE**
+    - id: sfs_size
+      type: System.UIntPtr
+    return:
+      type: VgmStream.STREAMFILE*
+    content.vb: Public Shared Function open_multifile_streamfile(sfs As STREAMFILE**, sfs_size As UIntPtr) As STREAMFILE*
+  overload: VgmStream.NativeMethods.open_multifile_streamfile*
+  nameWithType.vb: NativeMethods.open_multifile_streamfile(STREAMFILE**, UIntPtr)
+  fullName.vb: VgmStream.NativeMethods.open_multifile_streamfile(VgmStream.STREAMFILE**, System.UIntPtr)
+  name.vb: open_multifile_streamfile(STREAMFILE**, UIntPtr)
+- uid: VgmStream.NativeMethods.open_multifile_streamfile_f(VgmStream.STREAMFILE**,System.UIntPtr)
+  commentId: M:VgmStream.NativeMethods.open_multifile_streamfile_f(VgmStream.STREAMFILE**,System.UIntPtr)
+  id: open_multifile_streamfile_f(VgmStream.STREAMFILE**,System.UIntPtr)
+  parent: VgmStream.NativeMethods
+  langs:
+  - csharp
+  - vb
+  name: open_multifile_streamfile_f(STREAMFILE**, nuint)
+  nameWithType: NativeMethods.open_multifile_streamfile_f(STREAMFILE**, nuint)
+  fullName: VgmStream.NativeMethods.open_multifile_streamfile_f(VgmStream.STREAMFILE**, nuint)
+  type: Method
+  assemblies:
+  - SilverCraft.CSCore.VGMStream
+  namespace: VgmStream
+  syntax:
+    content: public static extern STREAMFILE* open_multifile_streamfile_f(STREAMFILE** sfs, nuint sfs_size)
+    parameters:
+    - id: sfs
+      type: VgmStream.STREAMFILE**
+    - id: sfs_size
+      type: System.UIntPtr
+    return:
+      type: VgmStream.STREAMFILE*
+    content.vb: Public Shared Function open_multifile_streamfile_f(sfs As STREAMFILE**, sfs_size As UIntPtr) As STREAMFILE*
+  overload: VgmStream.NativeMethods.open_multifile_streamfile_f*
+  nameWithType.vb: NativeMethods.open_multifile_streamfile_f(STREAMFILE**, UIntPtr)
+  fullName.vb: VgmStream.NativeMethods.open_multifile_streamfile_f(VgmStream.STREAMFILE**, System.UIntPtr)
+  name.vb: open_multifile_streamfile_f(STREAMFILE**, UIntPtr)
+- uid: VgmStream.NativeMethods.open_streamfile(VgmStream.STREAMFILE*,System.SByte*)
+  commentId: M:VgmStream.NativeMethods.open_streamfile(VgmStream.STREAMFILE*,System.SByte*)
+  id: open_streamfile(VgmStream.STREAMFILE*,System.SByte*)
+  parent: VgmStream.NativeMethods
+  langs:
+  - csharp
+  - vb
+  name: open_streamfile(STREAMFILE*, sbyte*)
+  nameWithType: NativeMethods.open_streamfile(STREAMFILE*, sbyte*)
+  fullName: VgmStream.NativeMethods.open_streamfile(VgmStream.STREAMFILE*, sbyte*)
+  type: Method
+  assemblies:
+  - SilverCraft.CSCore.VGMStream
+  namespace: VgmStream
+  syntax:
+    content: public static extern STREAMFILE* open_streamfile(STREAMFILE* sf, sbyte* pathname)
+    parameters:
+    - id: sf
+      type: VgmStream.STREAMFILE*
+    - id: pathname
+      type: System.SByte*
+    return:
+      type: VgmStream.STREAMFILE*
+    content.vb: Public Shared Function open_streamfile(sf As STREAMFILE*, pathname As SByte*) As STREAMFILE*
+  overload: VgmStream.NativeMethods.open_streamfile*
+  nameWithType.vb: NativeMethods.open_streamfile(STREAMFILE*, SByte*)
+  fullName.vb: VgmStream.NativeMethods.open_streamfile(VgmStream.STREAMFILE*, SByte*)
+  name.vb: open_streamfile(STREAMFILE*, SByte*)
+- uid: VgmStream.NativeMethods.reopen_streamfile(VgmStream.STREAMFILE*,System.UIntPtr)
+  commentId: M:VgmStream.NativeMethods.reopen_streamfile(VgmStream.STREAMFILE*,System.UIntPtr)
+  id: reopen_streamfile(VgmStream.STREAMFILE*,System.UIntPtr)
+  parent: VgmStream.NativeMethods
+  langs:
+  - csharp
+  - vb
+  name: reopen_streamfile(STREAMFILE*, nuint)
+  nameWithType: NativeMethods.reopen_streamfile(STREAMFILE*, nuint)
+  fullName: VgmStream.NativeMethods.reopen_streamfile(VgmStream.STREAMFILE*, nuint)
+  type: Method
+  assemblies:
+  - SilverCraft.CSCore.VGMStream
+  namespace: VgmStream
+  syntax:
+    content: public static extern STREAMFILE* reopen_streamfile(STREAMFILE* sf, nuint buffer_size)
+    parameters:
+    - id: sf
+      type: VgmStream.STREAMFILE*
+    - id: buffer_size
+      type: System.UIntPtr
+    return:
+      type: VgmStream.STREAMFILE*
+    content.vb: Public Shared Function reopen_streamfile(sf As STREAMFILE*, buffer_size As UIntPtr) As STREAMFILE*
+  overload: VgmStream.NativeMethods.reopen_streamfile*
+  nameWithType.vb: NativeMethods.reopen_streamfile(STREAMFILE*, UIntPtr)
+  fullName.vb: VgmStream.NativeMethods.reopen_streamfile(VgmStream.STREAMFILE*, System.UIntPtr)
+  name.vb: reopen_streamfile(STREAMFILE*, UIntPtr)
+- uid: VgmStream.NativeMethods.close_streamfile(VgmStream.STREAMFILE*)
+  commentId: M:VgmStream.NativeMethods.close_streamfile(VgmStream.STREAMFILE*)
+  id: close_streamfile(VgmStream.STREAMFILE*)
+  parent: VgmStream.NativeMethods
+  langs:
+  - csharp
+  - vb
+  name: close_streamfile(STREAMFILE*)
+  nameWithType: NativeMethods.close_streamfile(STREAMFILE*)
+  fullName: VgmStream.NativeMethods.close_streamfile(VgmStream.STREAMFILE*)
+  type: Method
+  source:
+    remote:
+      path: SilverCraft.CSCore.VGMStream/InteropVgmStream/NativeMethods.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: close_streamfile
+    path: ../SilverCraft.CSCore.VGMStream/InteropVgmStream/NativeMethods.cs
+    startLine: 110
+  assemblies:
+  - SilverCraft.CSCore.VGMStream
+  namespace: VgmStream
+  syntax:
+    content: public static void close_streamfile(STREAMFILE* sf)
+    parameters:
+    - id: sf
+      type: VgmStream.STREAMFILE*
+    content.vb: Public Shared Sub close_streamfile(sf As STREAMFILE*)
+  overload: VgmStream.NativeMethods.close_streamfile*
+- uid: VgmStream.NativeMethods.read_streamfile(System.Byte*,System.IntPtr,System.UIntPtr,VgmStream.STREAMFILE*)
+  commentId: M:VgmStream.NativeMethods.read_streamfile(System.Byte*,System.IntPtr,System.UIntPtr,VgmStream.STREAMFILE*)
+  id: read_streamfile(System.Byte*,System.IntPtr,System.UIntPtr,VgmStream.STREAMFILE*)
+  parent: VgmStream.NativeMethods
+  langs:
+  - csharp
+  - vb
+  name: read_streamfile(byte*, nint, nuint, STREAMFILE*)
+  nameWithType: NativeMethods.read_streamfile(byte*, nint, nuint, STREAMFILE*)
+  fullName: VgmStream.NativeMethods.read_streamfile(byte*, nint, nuint, VgmStream.STREAMFILE*)
+  type: Method
+  source:
+    remote:
+      path: SilverCraft.CSCore.VGMStream/InteropVgmStream/NativeMethods.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: read_streamfile
+    path: ../SilverCraft.CSCore.VGMStream/InteropVgmStream/NativeMethods.cs
+    startLine: 118
+  assemblies:
+  - SilverCraft.CSCore.VGMStream
+  namespace: VgmStream
+  syntax:
+    content: public static nuint read_streamfile(byte* dst, nint offset, nuint length, STREAMFILE* sf)
+    parameters:
+    - id: dst
+      type: System.Byte*
+    - id: offset
+      type: System.IntPtr
+    - id: length
+      type: System.UIntPtr
+    - id: sf
+      type: VgmStream.STREAMFILE*
+    return:
+      type: System.UIntPtr
+    content.vb: Public Shared Function read_streamfile(dst As Byte*, offset As IntPtr, length As UIntPtr, sf As STREAMFILE*) As UIntPtr
+  overload: VgmStream.NativeMethods.read_streamfile*
+  nameWithType.vb: NativeMethods.read_streamfile(Byte*, IntPtr, UIntPtr, STREAMFILE*)
+  fullName.vb: VgmStream.NativeMethods.read_streamfile(Byte*, System.IntPtr, System.UIntPtr, VgmStream.STREAMFILE*)
+  name.vb: read_streamfile(Byte*, IntPtr, UIntPtr, STREAMFILE*)
+- uid: VgmStream.NativeMethods.get_streamfile_size(VgmStream.STREAMFILE*)
+  commentId: M:VgmStream.NativeMethods.get_streamfile_size(VgmStream.STREAMFILE*)
+  id: get_streamfile_size(VgmStream.STREAMFILE*)
+  parent: VgmStream.NativeMethods
+  langs:
+  - csharp
+  - vb
+  name: get_streamfile_size(STREAMFILE*)
+  nameWithType: NativeMethods.get_streamfile_size(STREAMFILE*)
+  fullName: VgmStream.NativeMethods.get_streamfile_size(VgmStream.STREAMFILE*)
+  type: Method
+  source:
+    remote:
+      path: SilverCraft.CSCore.VGMStream/InteropVgmStream/NativeMethods.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: get_streamfile_size
+    path: ../SilverCraft.CSCore.VGMStream/InteropVgmStream/NativeMethods.cs
+    startLine: 124
+  assemblies:
+  - SilverCraft.CSCore.VGMStream
+  namespace: VgmStream
+  syntax:
+    content: public static nuint get_streamfile_size(STREAMFILE* sf)
+    parameters:
+    - id: sf
+      type: VgmStream.STREAMFILE*
+    return:
+      type: System.UIntPtr
+    content.vb: Public Shared Function get_streamfile_size(sf As STREAMFILE*) As UIntPtr
+  overload: VgmStream.NativeMethods.get_streamfile_size*
+- uid: VgmStream.NativeMethods.dump_streamfile(VgmStream.STREAMFILE*,System.Int32)
+  commentId: M:VgmStream.NativeMethods.dump_streamfile(VgmStream.STREAMFILE*,System.Int32)
+  id: dump_streamfile(VgmStream.STREAMFILE*,System.Int32)
+  parent: VgmStream.NativeMethods
+  langs:
+  - csharp
+  - vb
+  name: dump_streamfile(STREAMFILE*, int)
+  nameWithType: NativeMethods.dump_streamfile(STREAMFILE*, int)
+  fullName: VgmStream.NativeMethods.dump_streamfile(VgmStream.STREAMFILE*, int)
+  type: Method
+  assemblies:
+  - SilverCraft.CSCore.VGMStream
+  namespace: VgmStream
+  syntax:
+    content: public static extern void dump_streamfile(STREAMFILE* sf, int num)
+    parameters:
+    - id: sf
+      type: VgmStream.STREAMFILE*
+    - id: num
+      type: System.Int32
+    content.vb: Public Shared Sub dump_streamfile(sf As STREAMFILE*, num As Integer)
+  overload: VgmStream.NativeMethods.dump_streamfile*
+  nameWithType.vb: NativeMethods.dump_streamfile(STREAMFILE*, Integer)
+  fullName.vb: VgmStream.NativeMethods.dump_streamfile(VgmStream.STREAMFILE*, Integer)
+  name.vb: dump_streamfile(STREAMFILE*, Integer)
+- uid: VgmStream.NativeMethods.STREAMFILE_DEFAULT_BUFFER_SIZE
+  commentId: F:VgmStream.NativeMethods.STREAMFILE_DEFAULT_BUFFER_SIZE
+  id: STREAMFILE_DEFAULT_BUFFER_SIZE
+  parent: VgmStream.NativeMethods
+  langs:
+  - csharp
+  - vb
+  name: STREAMFILE_DEFAULT_BUFFER_SIZE
+  nameWithType: NativeMethods.STREAMFILE_DEFAULT_BUFFER_SIZE
+  fullName: VgmStream.NativeMethods.STREAMFILE_DEFAULT_BUFFER_SIZE
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore.VGMStream/InteropVgmStream/NativeMethods.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: STREAMFILE_DEFAULT_BUFFER_SIZE
+    path: ../SilverCraft.CSCore.VGMStream/InteropVgmStream/NativeMethods.cs
+    startLine: 134
+  assemblies:
+  - SilverCraft.CSCore.VGMStream
+  namespace: VgmStream
+  syntax:
+    content: public const int STREAMFILE_DEFAULT_BUFFER_SIZE = 32768
+    return:
+      type: System.Int32
+    content.vb: Public Const STREAMFILE_DEFAULT_BUFFER_SIZE As Integer = 32768
+references:
+- uid: VgmStream
+  commentId: N:VgmStream
+  href: VgmStream.html
+  name: VgmStream
+  nameWithType: VgmStream
+  fullName: VgmStream
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: VgmStream.NativeMethods.init_vgmstream*
+  commentId: Overload:VgmStream.NativeMethods.init_vgmstream
+  isExternal: true
+  href: VgmStream.NativeMethods.html#VgmStream_NativeMethods_init_vgmstream_System_SByte__
+  name: init_vgmstream
+  nameWithType: NativeMethods.init_vgmstream
+  fullName: VgmStream.NativeMethods.init_vgmstream
+- uid: System.SByte*
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.sbyte
+  name: sbyte*
+  nameWithType: sbyte*
+  fullName: sbyte*
+  nameWithType.vb: SByte*
+  fullName.vb: SByte*
+  name.vb: SByte*
+  spec.csharp:
+  - uid: System.SByte
+    name: sbyte
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.sbyte
+  - name: '*'
+  spec.vb:
+  - uid: System.SByte
+    name: SByte
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.sbyte
+  - name: '*'
+- uid: VgmStream.VGMSTREAM*
+  isExternal: true
+  href: VgmStream.VGMSTREAM.html
+  name: VGMSTREAM*
+  nameWithType: VGMSTREAM*
+  fullName: VgmStream.VGMSTREAM*
+  spec.csharp:
+  - uid: VgmStream.VGMSTREAM
+    name: VGMSTREAM
+    href: VgmStream.VGMSTREAM.html
+  - name: '*'
+  spec.vb:
+  - uid: VgmStream.VGMSTREAM
+    name: VGMSTREAM
+    href: VgmStream.VGMSTREAM.html
+  - name: '*'
+- uid: VgmStream.NativeMethods.init_vgmstream_from_STREAMFILE*
+  commentId: Overload:VgmStream.NativeMethods.init_vgmstream_from_STREAMFILE
+  isExternal: true
+  href: VgmStream.NativeMethods.html#VgmStream_NativeMethods_init_vgmstream_from_STREAMFILE_VgmStream_STREAMFILE__
+  name: init_vgmstream_from_STREAMFILE
+  nameWithType: NativeMethods.init_vgmstream_from_STREAMFILE
+  fullName: VgmStream.NativeMethods.init_vgmstream_from_STREAMFILE
+- uid: VgmStream.STREAMFILE*
+  isExternal: true
+  href: VgmStream.STREAMFILE.html
+  name: STREAMFILE*
+  nameWithType: STREAMFILE*
+  fullName: VgmStream.STREAMFILE*
+  spec.csharp:
+  - uid: VgmStream.STREAMFILE
+    name: STREAMFILE
+    href: VgmStream.STREAMFILE.html
+  - name: '*'
+  spec.vb:
+  - uid: VgmStream.STREAMFILE
+    name: STREAMFILE
+    href: VgmStream.STREAMFILE.html
+  - name: '*'
+- uid: VgmStream.NativeMethods.reset_vgmstream*
+  commentId: Overload:VgmStream.NativeMethods.reset_vgmstream
+  isExternal: true
+  href: VgmStream.NativeMethods.html#VgmStream_NativeMethods_reset_vgmstream_VgmStream_VGMSTREAM__
+  name: reset_vgmstream
+  nameWithType: NativeMethods.reset_vgmstream
+  fullName: VgmStream.NativeMethods.reset_vgmstream
+- uid: VgmStream.NativeMethods.close_vgmstream*
+  commentId: Overload:VgmStream.NativeMethods.close_vgmstream
+  isExternal: true
+  href: VgmStream.NativeMethods.html#VgmStream_NativeMethods_close_vgmstream_VgmStream_VGMSTREAM__
+  name: close_vgmstream
+  nameWithType: NativeMethods.close_vgmstream
+  fullName: VgmStream.NativeMethods.close_vgmstream
+- uid: VgmStream.NativeMethods.render_vgmstream2*
+  commentId: Overload:VgmStream.NativeMethods.render_vgmstream2
+  isExternal: true
+  href: VgmStream.NativeMethods.html#VgmStream_NativeMethods_render_vgmstream2_System_Int16__System_Int32_VgmStream_VGMSTREAM__
+  name: render_vgmstream2
+  nameWithType: NativeMethods.render_vgmstream2
+  fullName: VgmStream.NativeMethods.render_vgmstream2
+- uid: System.Int16*
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int16
+  name: short*
+  nameWithType: short*
+  fullName: short*
+  nameWithType.vb: Short*
+  fullName.vb: Short*
+  name.vb: Short*
+  spec.csharp:
+  - uid: System.Int16
+    name: short
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int16
+  - name: '*'
+  spec.vb:
+  - uid: System.Int16
+    name: Short
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int16
+  - name: '*'
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: VgmStream.NativeMethods.seek_vgmstream*
+  commentId: Overload:VgmStream.NativeMethods.seek_vgmstream
+  isExternal: true
+  href: VgmStream.NativeMethods.html#VgmStream_NativeMethods_seek_vgmstream_VgmStream_VGMSTREAM__System_Int32_
+  name: seek_vgmstream
+  nameWithType: NativeMethods.seek_vgmstream
+  fullName: VgmStream.NativeMethods.seek_vgmstream
+- uid: VgmStream.NativeMethods.allocate_vgmstream*
+  commentId: Overload:VgmStream.NativeMethods.allocate_vgmstream
+  isExternal: true
+  href: VgmStream.NativeMethods.html#VgmStream_NativeMethods_allocate_vgmstream_System_Int32_System_Int32_
+  name: allocate_vgmstream
+  nameWithType: NativeMethods.allocate_vgmstream
+  fullName: VgmStream.NativeMethods.allocate_vgmstream
+- uid: VgmStream.NativeMethods.setup_vgmstream*
+  commentId: Overload:VgmStream.NativeMethods.setup_vgmstream
+  isExternal: true
+  href: VgmStream.NativeMethods.html#VgmStream_NativeMethods_setup_vgmstream_VgmStream_VGMSTREAM__
+  name: setup_vgmstream
+  nameWithType: NativeMethods.setup_vgmstream
+  fullName: VgmStream.NativeMethods.setup_vgmstream
+- uid: VgmStream.NativeMethods.vgmstream_open_stream*
+  commentId: Overload:VgmStream.NativeMethods.vgmstream_open_stream
+  isExternal: true
+  href: VgmStream.NativeMethods.html#VgmStream_NativeMethods_vgmstream_open_stream_VgmStream_VGMSTREAM__VgmStream_STREAMFILE__System_IntPtr_
+  name: vgmstream_open_stream
+  nameWithType: NativeMethods.vgmstream_open_stream
+  fullName: VgmStream.NativeMethods.vgmstream_open_stream
+- uid: System.IntPtr
+  commentId: T:System.IntPtr
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.intptr
+  name: nint
+  nameWithType: nint
+  fullName: nint
+  nameWithType.vb: IntPtr
+  fullName.vb: System.IntPtr
+  name.vb: IntPtr
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: VgmStream.NativeMethods.vgmstream_open_stream_bf*
+  commentId: Overload:VgmStream.NativeMethods.vgmstream_open_stream_bf
+  isExternal: true
+  href: VgmStream.NativeMethods.html#VgmStream_NativeMethods_vgmstream_open_stream_bf_VgmStream_VGMSTREAM__VgmStream_STREAMFILE__System_IntPtr_System_Boolean_
+  name: vgmstream_open_stream_bf
+  nameWithType: NativeMethods.vgmstream_open_stream_bf
+  fullName: VgmStream.NativeMethods.vgmstream_open_stream_bf
+- uid: VgmStream.NativeMethods.vgmstream_force_loop*
+  commentId: Overload:VgmStream.NativeMethods.vgmstream_force_loop
+  isExternal: true
+  href: VgmStream.NativeMethods.html#VgmStream_NativeMethods_vgmstream_force_loop_VgmStream_VGMSTREAM__System_Int32_System_Int32_System_Int32_
+  name: vgmstream_force_loop
+  nameWithType: NativeMethods.vgmstream_force_loop
+  fullName: VgmStream.NativeMethods.vgmstream_force_loop
+- uid: VgmStream.NativeMethods.vgmstream_set_loop_target*
+  commentId: Overload:VgmStream.NativeMethods.vgmstream_set_loop_target
+  isExternal: true
+  href: VgmStream.NativeMethods.html#VgmStream_NativeMethods_vgmstream_set_loop_target_VgmStream_VGMSTREAM__System_Int32_
+  name: vgmstream_set_loop_target
+  nameWithType: NativeMethods.vgmstream_set_loop_target
+  fullName: VgmStream.NativeMethods.vgmstream_set_loop_target
+- uid: VgmStream.NativeMethods.setup_vgmstream_play_state*
+  commentId: Overload:VgmStream.NativeMethods.setup_vgmstream_play_state
+  isExternal: true
+  href: VgmStream.NativeMethods.html#VgmStream_NativeMethods_setup_vgmstream_play_state_VgmStream_VGMSTREAM__
+  name: setup_vgmstream_play_state
+  nameWithType: NativeMethods.setup_vgmstream_play_state
+  fullName: VgmStream.NativeMethods.setup_vgmstream_play_state
+- uid: VgmStream.NativeMethods.vgmstream_is_virtual_filename*
+  commentId: Overload:VgmStream.NativeMethods.vgmstream_is_virtual_filename
+  isExternal: true
+  href: VgmStream.NativeMethods.html#VgmStream_NativeMethods_vgmstream_is_virtual_filename_System_SByte__
+  name: vgmstream_is_virtual_filename
+  nameWithType: NativeMethods.vgmstream_is_virtual_filename
+  fullName: VgmStream.NativeMethods.vgmstream_is_virtual_filename
+- uid: VgmStream.NativeMethods.open_stdio_streamfile*
+  commentId: Overload:VgmStream.NativeMethods.open_stdio_streamfile
+  isExternal: true
+  href: VgmStream.NativeMethods.html#VgmStream_NativeMethods_open_stdio_streamfile_System_SByte__
+  name: open_stdio_streamfile
+  nameWithType: NativeMethods.open_stdio_streamfile
+  fullName: VgmStream.NativeMethods.open_stdio_streamfile
+- uid: VgmStream.NativeMethods.open_stdio_streamfile_by_file*
+  commentId: Overload:VgmStream.NativeMethods.open_stdio_streamfile_by_file
+  isExternal: true
+  href: VgmStream.NativeMethods.html#VgmStream_NativeMethods_open_stdio_streamfile_by_file_System_IntPtr__System_SByte__
+  name: open_stdio_streamfile_by_file
+  nameWithType: NativeMethods.open_stdio_streamfile_by_file
+  fullName: VgmStream.NativeMethods.open_stdio_streamfile_by_file
+- uid: System.IntPtr*
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.intptr
+  name: nint*
+  nameWithType: nint*
+  fullName: nint*
+  nameWithType.vb: IntPtr*
+  fullName.vb: System.IntPtr*
+  name.vb: IntPtr*
+  spec.csharp:
+  - uid: System.IntPtr
+    name: nint
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.intptr
+  - name: '*'
+  spec.vb:
+  - uid: System.IntPtr
+    name: IntPtr
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.intptr
+  - name: '*'
+- uid: VgmStream.NativeMethods.open_buffer_streamfile*
+  commentId: Overload:VgmStream.NativeMethods.open_buffer_streamfile
+  isExternal: true
+  href: VgmStream.NativeMethods.html#VgmStream_NativeMethods_open_buffer_streamfile_VgmStream_STREAMFILE__System_UIntPtr_
+  name: open_buffer_streamfile
+  nameWithType: NativeMethods.open_buffer_streamfile
+  fullName: VgmStream.NativeMethods.open_buffer_streamfile
+- uid: System.UIntPtr
+  commentId: T:System.UIntPtr
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.uintptr
+  name: nuint
+  nameWithType: nuint
+  fullName: nuint
+  nameWithType.vb: UIntPtr
+  fullName.vb: System.UIntPtr
+  name.vb: UIntPtr
+- uid: VgmStream.NativeMethods.open_buffer_streamfile_f*
+  commentId: Overload:VgmStream.NativeMethods.open_buffer_streamfile_f
+  isExternal: true
+  href: VgmStream.NativeMethods.html#VgmStream_NativeMethods_open_buffer_streamfile_f_VgmStream_STREAMFILE__System_UIntPtr_
+  name: open_buffer_streamfile_f
+  nameWithType: NativeMethods.open_buffer_streamfile_f
+  fullName: VgmStream.NativeMethods.open_buffer_streamfile_f
+- uid: VgmStream.NativeMethods.open_wrap_streamfile*
+  commentId: Overload:VgmStream.NativeMethods.open_wrap_streamfile
+  isExternal: true
+  href: VgmStream.NativeMethods.html#VgmStream_NativeMethods_open_wrap_streamfile_VgmStream_STREAMFILE__
+  name: open_wrap_streamfile
+  nameWithType: NativeMethods.open_wrap_streamfile
+  fullName: VgmStream.NativeMethods.open_wrap_streamfile
+- uid: VgmStream.NativeMethods.open_wrap_streamfile_f*
+  commentId: Overload:VgmStream.NativeMethods.open_wrap_streamfile_f
+  isExternal: true
+  href: VgmStream.NativeMethods.html#VgmStream_NativeMethods_open_wrap_streamfile_f_VgmStream_STREAMFILE__
+  name: open_wrap_streamfile_f
+  nameWithType: NativeMethods.open_wrap_streamfile_f
+  fullName: VgmStream.NativeMethods.open_wrap_streamfile_f
+- uid: VgmStream.NativeMethods.open_clamp_streamfile*
+  commentId: Overload:VgmStream.NativeMethods.open_clamp_streamfile
+  isExternal: true
+  href: VgmStream.NativeMethods.html#VgmStream_NativeMethods_open_clamp_streamfile_VgmStream_STREAMFILE__System_IntPtr_System_UIntPtr_
+  name: open_clamp_streamfile
+  nameWithType: NativeMethods.open_clamp_streamfile
+  fullName: VgmStream.NativeMethods.open_clamp_streamfile
+- uid: VgmStream.NativeMethods.open_clamp_streamfile_f*
+  commentId: Overload:VgmStream.NativeMethods.open_clamp_streamfile_f
+  isExternal: true
+  href: VgmStream.NativeMethods.html#VgmStream_NativeMethods_open_clamp_streamfile_f_VgmStream_STREAMFILE__System_IntPtr_System_UIntPtr_
+  name: open_clamp_streamfile_f
+  nameWithType: NativeMethods.open_clamp_streamfile_f
+  fullName: VgmStream.NativeMethods.open_clamp_streamfile_f
+- uid: VgmStream.NativeMethods.open_io_streamfile*
+  commentId: Overload:VgmStream.NativeMethods.open_io_streamfile
+  isExternal: true
+  href: VgmStream.NativeMethods.html#VgmStream_NativeMethods_open_io_streamfile_VgmStream_STREAMFILE__System_Void__System_UIntPtr_System_Void__System_Void__
+  name: open_io_streamfile
+  nameWithType: NativeMethods.open_io_streamfile
+  fullName: VgmStream.NativeMethods.open_io_streamfile
+- uid: System.Void*
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.void
+  name: void*
+  nameWithType: void*
+  fullName: void*
+  nameWithType.vb: Void*
+  fullName.vb: Void*
+  name.vb: Void*
+  spec.csharp:
+  - uid: System.Void
+    name: void
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.void
+  - name: '*'
+  spec.vb:
+  - uid: System.Void
+    name: Void
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.void
+  - name: '*'
+- uid: VgmStream.NativeMethods.open_io_streamfile_f*
+  commentId: Overload:VgmStream.NativeMethods.open_io_streamfile_f
+  isExternal: true
+  href: VgmStream.NativeMethods.html#VgmStream_NativeMethods_open_io_streamfile_f_VgmStream_STREAMFILE__System_Void__System_UIntPtr_System_Void__System_Void__
+  name: open_io_streamfile_f
+  nameWithType: NativeMethods.open_io_streamfile_f
+  fullName: VgmStream.NativeMethods.open_io_streamfile_f
+- uid: VgmStream.NativeMethods.open_io_streamfile_ex*
+  commentId: Overload:VgmStream.NativeMethods.open_io_streamfile_ex
+  isExternal: true
+  href: VgmStream.NativeMethods.html#VgmStream_NativeMethods_open_io_streamfile_ex_VgmStream_STREAMFILE__System_Void__System_UIntPtr_System_Void__System_Void__System_Void__System_Void__
+  name: open_io_streamfile_ex
+  nameWithType: NativeMethods.open_io_streamfile_ex
+  fullName: VgmStream.NativeMethods.open_io_streamfile_ex
+- uid: VgmStream.NativeMethods.open_io_streamfile_ex_f*
+  commentId: Overload:VgmStream.NativeMethods.open_io_streamfile_ex_f
+  isExternal: true
+  href: VgmStream.NativeMethods.html#VgmStream_NativeMethods_open_io_streamfile_ex_f_VgmStream_STREAMFILE__System_Void__System_UIntPtr_System_Void__System_Void__System_Void__System_Void__
+  name: open_io_streamfile_ex_f
+  nameWithType: NativeMethods.open_io_streamfile_ex_f
+  fullName: VgmStream.NativeMethods.open_io_streamfile_ex_f
+- uid: VgmStream.NativeMethods.open_fakename_streamfile*
+  commentId: Overload:VgmStream.NativeMethods.open_fakename_streamfile
+  isExternal: true
+  href: VgmStream.NativeMethods.html#VgmStream_NativeMethods_open_fakename_streamfile_VgmStream_STREAMFILE__System_SByte__System_SByte__
+  name: open_fakename_streamfile
+  nameWithType: NativeMethods.open_fakename_streamfile
+  fullName: VgmStream.NativeMethods.open_fakename_streamfile
+- uid: VgmStream.NativeMethods.open_fakename_streamfile_f*
+  commentId: Overload:VgmStream.NativeMethods.open_fakename_streamfile_f
+  isExternal: true
+  href: VgmStream.NativeMethods.html#VgmStream_NativeMethods_open_fakename_streamfile_f_VgmStream_STREAMFILE__System_SByte__System_SByte__
+  name: open_fakename_streamfile_f
+  nameWithType: NativeMethods.open_fakename_streamfile_f
+  fullName: VgmStream.NativeMethods.open_fakename_streamfile_f
+- uid: VgmStream.NativeMethods.open_multifile_streamfile*
+  commentId: Overload:VgmStream.NativeMethods.open_multifile_streamfile
+  isExternal: true
+  href: VgmStream.NativeMethods.html#VgmStream_NativeMethods_open_multifile_streamfile_VgmStream_STREAMFILE___System_UIntPtr_
+  name: open_multifile_streamfile
+  nameWithType: NativeMethods.open_multifile_streamfile
+  fullName: VgmStream.NativeMethods.open_multifile_streamfile
+- uid: VgmStream.STREAMFILE**
+  isExternal: true
+  href: VgmStream.STREAMFILE.html
+  name: STREAMFILE**
+  nameWithType: STREAMFILE**
+  fullName: VgmStream.STREAMFILE**
+  spec.csharp:
+  - uid: VgmStream.STREAMFILE
+    name: STREAMFILE
+    href: VgmStream.STREAMFILE.html
+  - name: '*'
+  - name: '*'
+  spec.vb:
+  - uid: VgmStream.STREAMFILE
+    name: STREAMFILE
+    href: VgmStream.STREAMFILE.html
+  - name: '*'
+  - name: '*'
+- uid: VgmStream.NativeMethods.open_multifile_streamfile_f*
+  commentId: Overload:VgmStream.NativeMethods.open_multifile_streamfile_f
+  isExternal: true
+  href: VgmStream.NativeMethods.html#VgmStream_NativeMethods_open_multifile_streamfile_f_VgmStream_STREAMFILE___System_UIntPtr_
+  name: open_multifile_streamfile_f
+  nameWithType: NativeMethods.open_multifile_streamfile_f
+  fullName: VgmStream.NativeMethods.open_multifile_streamfile_f
+- uid: VgmStream.NativeMethods.open_streamfile*
+  commentId: Overload:VgmStream.NativeMethods.open_streamfile
+  isExternal: true
+  href: VgmStream.NativeMethods.html#VgmStream_NativeMethods_open_streamfile_VgmStream_STREAMFILE__System_SByte__
+  name: open_streamfile
+  nameWithType: NativeMethods.open_streamfile
+  fullName: VgmStream.NativeMethods.open_streamfile
+- uid: VgmStream.NativeMethods.reopen_streamfile*
+  commentId: Overload:VgmStream.NativeMethods.reopen_streamfile
+  isExternal: true
+  href: VgmStream.NativeMethods.html#VgmStream_NativeMethods_reopen_streamfile_VgmStream_STREAMFILE__System_UIntPtr_
+  name: reopen_streamfile
+  nameWithType: NativeMethods.reopen_streamfile
+  fullName: VgmStream.NativeMethods.reopen_streamfile
+- uid: VgmStream.NativeMethods.close_streamfile*
+  commentId: Overload:VgmStream.NativeMethods.close_streamfile
+  href: VgmStream.NativeMethods.html#VgmStream_NativeMethods_close_streamfile_VgmStream_STREAMFILE__
+  name: close_streamfile
+  nameWithType: NativeMethods.close_streamfile
+  fullName: VgmStream.NativeMethods.close_streamfile
+- uid: VgmStream.NativeMethods.read_streamfile*
+  commentId: Overload:VgmStream.NativeMethods.read_streamfile
+  href: VgmStream.NativeMethods.html#VgmStream_NativeMethods_read_streamfile_System_Byte__System_IntPtr_System_UIntPtr_VgmStream_STREAMFILE__
+  name: read_streamfile
+  nameWithType: NativeMethods.read_streamfile
+  fullName: VgmStream.NativeMethods.read_streamfile
+- uid: System.Byte*
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.byte
+  name: byte*
+  nameWithType: byte*
+  fullName: byte*
+  nameWithType.vb: Byte*
+  fullName.vb: Byte*
+  name.vb: Byte*
+  spec.csharp:
+  - uid: System.Byte
+    name: byte
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.byte
+  - name: '*'
+  spec.vb:
+  - uid: System.Byte
+    name: Byte
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.byte
+  - name: '*'
+- uid: VgmStream.NativeMethods.get_streamfile_size*
+  commentId: Overload:VgmStream.NativeMethods.get_streamfile_size
+  href: VgmStream.NativeMethods.html#VgmStream_NativeMethods_get_streamfile_size_VgmStream_STREAMFILE__
+  name: get_streamfile_size
+  nameWithType: NativeMethods.get_streamfile_size
+  fullName: VgmStream.NativeMethods.get_streamfile_size
+- uid: VgmStream.NativeMethods.dump_streamfile*
+  commentId: Overload:VgmStream.NativeMethods.dump_streamfile
+  isExternal: true
+  href: VgmStream.NativeMethods.html#VgmStream_NativeMethods_dump_streamfile_VgmStream_STREAMFILE__System_Int32_
+  name: dump_streamfile
+  nameWithType: NativeMethods.dump_streamfile
+  fullName: VgmStream.NativeMethods.dump_streamfile

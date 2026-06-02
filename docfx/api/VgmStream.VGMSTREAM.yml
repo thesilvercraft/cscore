@@ -1,0 +1,1977 @@
+### YamlMime:ManagedReference
+items:
+- uid: VgmStream.VGMSTREAM
+  commentId: T:VgmStream.VGMSTREAM
+  id: VGMSTREAM
+  parent: VgmStream
+  children:
+  - VgmStream.VGMSTREAM.allow_dual_stereo
+  - VgmStream.VGMSTREAM.ch
+  - VgmStream.VGMSTREAM.channel_layout
+  - VgmStream.VGMSTREAM.channels
+  - VgmStream.VGMSTREAM.codec_config
+  - VgmStream.VGMSTREAM.codec_data
+  - VgmStream.VGMSTREAM.codec_endian
+  - VgmStream.VGMSTREAM.codec_internal_updates
+  - VgmStream.VGMSTREAM.coding_type
+  - VgmStream.VGMSTREAM.config
+  - VgmStream.VGMSTREAM.config_enabled
+  - VgmStream.VGMSTREAM.current_block_offset
+  - VgmStream.VGMSTREAM.current_block_samples
+  - VgmStream.VGMSTREAM.current_block_size
+  - VgmStream.VGMSTREAM.current_sample
+  - VgmStream.VGMSTREAM.decode_state
+  - VgmStream.VGMSTREAM.format_id
+  - VgmStream.VGMSTREAM.frame_size
+  - VgmStream.VGMSTREAM.full_block_size
+  - VgmStream.VGMSTREAM.hit_loop
+  - VgmStream.VGMSTREAM.interleave_block_size
+  - VgmStream.VGMSTREAM.interleave_first_block_size
+  - VgmStream.VGMSTREAM.interleave_first_skip
+  - VgmStream.VGMSTREAM.interleave_last_block_size
+  - VgmStream.VGMSTREAM.layout_data
+  - VgmStream.VGMSTREAM.layout_type
+  - VgmStream.VGMSTREAM.loop_block_offset
+  - VgmStream.VGMSTREAM.loop_block_samples
+  - VgmStream.VGMSTREAM.loop_block_size
+  - VgmStream.VGMSTREAM.loop_ch
+  - VgmStream.VGMSTREAM.loop_count
+  - VgmStream.VGMSTREAM.loop_current_sample
+  - VgmStream.VGMSTREAM.loop_end_sample
+  - VgmStream.VGMSTREAM.loop_flag
+  - VgmStream.VGMSTREAM.loop_full_block_size
+  - VgmStream.VGMSTREAM.loop_next_block_offset
+  - VgmStream.VGMSTREAM.loop_samples_into_block
+  - VgmStream.VGMSTREAM.loop_start_sample
+  - VgmStream.VGMSTREAM.loop_target
+  - VgmStream.VGMSTREAM.meta_type
+  - VgmStream.VGMSTREAM.mixer
+  - VgmStream.VGMSTREAM.next_block_offset
+  - VgmStream.VGMSTREAM.num_samples
+  - VgmStream.VGMSTREAM.num_streams
+  - VgmStream.VGMSTREAM.pstate
+  - VgmStream.VGMSTREAM.sample_rate
+  - VgmStream.VGMSTREAM.samples_into_block
+  - VgmStream.VGMSTREAM.seek_table
+  - VgmStream.VGMSTREAM.start_ch
+  - VgmStream.VGMSTREAM.start_vgmstream
+  - VgmStream.VGMSTREAM.stream_index
+  - VgmStream.VGMSTREAM.stream_name
+  - VgmStream.VGMSTREAM.stream_size
+  - VgmStream.VGMSTREAM.tmpbuf
+  - VgmStream.VGMSTREAM.tmpbuf_size
+  - VgmStream.VGMSTREAM.ws_output_size
+  langs:
+  - csharp
+  - vb
+  name: VGMSTREAM
+  nameWithType: VGMSTREAM
+  fullName: VgmStream.VGMSTREAM
+  type: Struct
+  source:
+    remote:
+      path: SilverCraft.CSCore.VGMStream/InteropVgmStream/VGMSTREAM.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: VGMSTREAM
+    path: ../SilverCraft.CSCore.VGMStream/InteropVgmStream/VGMSTREAM.cs
+    startLine: 4
+  assemblies:
+  - SilverCraft.CSCore.VGMStream
+  namespace: VgmStream
+  syntax:
+    content: public struct VGMSTREAM
+    content.vb: Public Structure VGMSTREAM
+  inheritedMembers:
+  - System.ValueType.Equals(System.Object)
+  - System.ValueType.GetHashCode
+  - System.ValueType.ToString
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetType
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+- uid: VgmStream.VGMSTREAM.channels
+  commentId: F:VgmStream.VGMSTREAM.channels
+  id: channels
+  parent: VgmStream.VGMSTREAM
+  langs:
+  - csharp
+  - vb
+  name: channels
+  nameWithType: VGMSTREAM.channels
+  fullName: VgmStream.VGMSTREAM.channels
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore.VGMStream/InteropVgmStream/VGMSTREAM.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: channels
+    path: ../SilverCraft.CSCore.VGMStream/InteropVgmStream/VGMSTREAM.cs
+    startLine: 6
+  assemblies:
+  - SilverCraft.CSCore.VGMStream
+  namespace: VgmStream
+  syntax:
+    content: public int channels
+    return:
+      type: System.Int32
+    content.vb: Public channels As Integer
+- uid: VgmStream.VGMSTREAM.sample_rate
+  commentId: F:VgmStream.VGMSTREAM.sample_rate
+  id: sample_rate
+  parent: VgmStream.VGMSTREAM
+  langs:
+  - csharp
+  - vb
+  name: sample_rate
+  nameWithType: VGMSTREAM.sample_rate
+  fullName: VgmStream.VGMSTREAM.sample_rate
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore.VGMStream/InteropVgmStream/VGMSTREAM.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: sample_rate
+    path: ../SilverCraft.CSCore.VGMStream/InteropVgmStream/VGMSTREAM.cs
+    startLine: 9
+  assemblies:
+  - SilverCraft.CSCore.VGMStream
+  namespace: VgmStream
+  syntax:
+    content: public int sample_rate
+    return:
+      type: System.Int32
+    content.vb: Public sample_rate As Integer
+- uid: VgmStream.VGMSTREAM.num_samples
+  commentId: F:VgmStream.VGMSTREAM.num_samples
+  id: num_samples
+  parent: VgmStream.VGMSTREAM
+  langs:
+  - csharp
+  - vb
+  name: num_samples
+  nameWithType: VGMSTREAM.num_samples
+  fullName: VgmStream.VGMSTREAM.num_samples
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore.VGMStream/InteropVgmStream/VGMSTREAM.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: num_samples
+    path: ../SilverCraft.CSCore.VGMStream/InteropVgmStream/VGMSTREAM.cs
+    startLine: 12
+  assemblies:
+  - SilverCraft.CSCore.VGMStream
+  namespace: VgmStream
+  syntax:
+    content: public int num_samples
+    return:
+      type: System.Int32
+    content.vb: Public num_samples As Integer
+- uid: VgmStream.VGMSTREAM.coding_type
+  commentId: F:VgmStream.VGMSTREAM.coding_type
+  id: coding_type
+  parent: VgmStream.VGMSTREAM
+  langs:
+  - csharp
+  - vb
+  name: coding_type
+  nameWithType: VGMSTREAM.coding_type
+  fullName: VgmStream.VGMSTREAM.coding_type
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore.VGMStream/InteropVgmStream/VGMSTREAM.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: coding_type
+    path: ../SilverCraft.CSCore.VGMStream/InteropVgmStream/VGMSTREAM.cs
+    startLine: 14
+  assemblies:
+  - SilverCraft.CSCore.VGMStream
+  namespace: VgmStream
+  syntax:
+    content: public coding_t coding_type
+    return:
+      type: VgmStream.coding_t
+    content.vb: Public coding_type As coding_t
+- uid: VgmStream.VGMSTREAM.layout_type
+  commentId: F:VgmStream.VGMSTREAM.layout_type
+  id: layout_type
+  parent: VgmStream.VGMSTREAM
+  langs:
+  - csharp
+  - vb
+  name: layout_type
+  nameWithType: VGMSTREAM.layout_type
+  fullName: VgmStream.VGMSTREAM.layout_type
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore.VGMStream/InteropVgmStream/VGMSTREAM.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: layout_type
+    path: ../SilverCraft.CSCore.VGMStream/InteropVgmStream/VGMSTREAM.cs
+    startLine: 16
+  assemblies:
+  - SilverCraft.CSCore.VGMStream
+  namespace: VgmStream
+  syntax:
+    content: public layout_t layout_type
+    return:
+      type: VgmStream.layout_t
+    content.vb: Public layout_type As layout_t
+- uid: VgmStream.VGMSTREAM.meta_type
+  commentId: F:VgmStream.VGMSTREAM.meta_type
+  id: meta_type
+  parent: VgmStream.VGMSTREAM
+  langs:
+  - csharp
+  - vb
+  name: meta_type
+  nameWithType: VGMSTREAM.meta_type
+  fullName: VgmStream.VGMSTREAM.meta_type
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore.VGMStream/InteropVgmStream/VGMSTREAM.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: meta_type
+    path: ../SilverCraft.CSCore.VGMStream/InteropVgmStream/VGMSTREAM.cs
+    startLine: 18
+  assemblies:
+  - SilverCraft.CSCore.VGMStream
+  namespace: VgmStream
+  syntax:
+    content: public meta_t meta_type
+    return:
+      type: VgmStream.meta_t
+    content.vb: Public meta_type As meta_t
+- uid: VgmStream.VGMSTREAM.loop_flag
+  commentId: F:VgmStream.VGMSTREAM.loop_flag
+  id: loop_flag
+  parent: VgmStream.VGMSTREAM
+  langs:
+  - csharp
+  - vb
+  name: loop_flag
+  nameWithType: VGMSTREAM.loop_flag
+  fullName: VgmStream.VGMSTREAM.loop_flag
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore.VGMStream/InteropVgmStream/VGMSTREAM.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: loop_flag
+    path: ../SilverCraft.CSCore.VGMStream/InteropVgmStream/VGMSTREAM.cs
+    startLine: 20
+  assemblies:
+  - SilverCraft.CSCore.VGMStream
+  namespace: VgmStream
+  syntax:
+    content: public bool loop_flag
+    return:
+      type: System.Boolean
+    content.vb: Public loop_flag As Boolean
+- uid: VgmStream.VGMSTREAM.loop_start_sample
+  commentId: F:VgmStream.VGMSTREAM.loop_start_sample
+  id: loop_start_sample
+  parent: VgmStream.VGMSTREAM
+  langs:
+  - csharp
+  - vb
+  name: loop_start_sample
+  nameWithType: VGMSTREAM.loop_start_sample
+  fullName: VgmStream.VGMSTREAM.loop_start_sample
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore.VGMStream/InteropVgmStream/VGMSTREAM.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: loop_start_sample
+    path: ../SilverCraft.CSCore.VGMStream/InteropVgmStream/VGMSTREAM.cs
+    startLine: 23
+  assemblies:
+  - SilverCraft.CSCore.VGMStream
+  namespace: VgmStream
+  syntax:
+    content: public int loop_start_sample
+    return:
+      type: System.Int32
+    content.vb: Public loop_start_sample As Integer
+- uid: VgmStream.VGMSTREAM.loop_end_sample
+  commentId: F:VgmStream.VGMSTREAM.loop_end_sample
+  id: loop_end_sample
+  parent: VgmStream.VGMSTREAM
+  langs:
+  - csharp
+  - vb
+  name: loop_end_sample
+  nameWithType: VGMSTREAM.loop_end_sample
+  fullName: VgmStream.VGMSTREAM.loop_end_sample
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore.VGMStream/InteropVgmStream/VGMSTREAM.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: loop_end_sample
+    path: ../SilverCraft.CSCore.VGMStream/InteropVgmStream/VGMSTREAM.cs
+    startLine: 26
+  assemblies:
+  - SilverCraft.CSCore.VGMStream
+  namespace: VgmStream
+  syntax:
+    content: public int loop_end_sample
+    return:
+      type: System.Int32
+    content.vb: Public loop_end_sample As Integer
+- uid: VgmStream.VGMSTREAM.interleave_block_size
+  commentId: F:VgmStream.VGMSTREAM.interleave_block_size
+  id: interleave_block_size
+  parent: VgmStream.VGMSTREAM
+  langs:
+  - csharp
+  - vb
+  name: interleave_block_size
+  nameWithType: VGMSTREAM.interleave_block_size
+  fullName: VgmStream.VGMSTREAM.interleave_block_size
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore.VGMStream/InteropVgmStream/VGMSTREAM.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: interleave_block_size
+    path: ../SilverCraft.CSCore.VGMStream/InteropVgmStream/VGMSTREAM.cs
+    startLine: 29
+  assemblies:
+  - SilverCraft.CSCore.VGMStream
+  namespace: VgmStream
+  syntax:
+    content: public nuint interleave_block_size
+    return:
+      type: System.UIntPtr
+    content.vb: Public interleave_block_size As UIntPtr
+- uid: VgmStream.VGMSTREAM.interleave_first_block_size
+  commentId: F:VgmStream.VGMSTREAM.interleave_first_block_size
+  id: interleave_first_block_size
+  parent: VgmStream.VGMSTREAM
+  langs:
+  - csharp
+  - vb
+  name: interleave_first_block_size
+  nameWithType: VGMSTREAM.interleave_first_block_size
+  fullName: VgmStream.VGMSTREAM.interleave_first_block_size
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore.VGMStream/InteropVgmStream/VGMSTREAM.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: interleave_first_block_size
+    path: ../SilverCraft.CSCore.VGMStream/InteropVgmStream/VGMSTREAM.cs
+    startLine: 32
+  assemblies:
+  - SilverCraft.CSCore.VGMStream
+  namespace: VgmStream
+  syntax:
+    content: public nuint interleave_first_block_size
+    return:
+      type: System.UIntPtr
+    content.vb: Public interleave_first_block_size As UIntPtr
+- uid: VgmStream.VGMSTREAM.interleave_first_skip
+  commentId: F:VgmStream.VGMSTREAM.interleave_first_skip
+  id: interleave_first_skip
+  parent: VgmStream.VGMSTREAM
+  langs:
+  - csharp
+  - vb
+  name: interleave_first_skip
+  nameWithType: VGMSTREAM.interleave_first_skip
+  fullName: VgmStream.VGMSTREAM.interleave_first_skip
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore.VGMStream/InteropVgmStream/VGMSTREAM.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: interleave_first_skip
+    path: ../SilverCraft.CSCore.VGMStream/InteropVgmStream/VGMSTREAM.cs
+    startLine: 35
+  assemblies:
+  - SilverCraft.CSCore.VGMStream
+  namespace: VgmStream
+  syntax:
+    content: public nuint interleave_first_skip
+    return:
+      type: System.UIntPtr
+    content.vb: Public interleave_first_skip As UIntPtr
+- uid: VgmStream.VGMSTREAM.interleave_last_block_size
+  commentId: F:VgmStream.VGMSTREAM.interleave_last_block_size
+  id: interleave_last_block_size
+  parent: VgmStream.VGMSTREAM
+  langs:
+  - csharp
+  - vb
+  name: interleave_last_block_size
+  nameWithType: VGMSTREAM.interleave_last_block_size
+  fullName: VgmStream.VGMSTREAM.interleave_last_block_size
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore.VGMStream/InteropVgmStream/VGMSTREAM.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: interleave_last_block_size
+    path: ../SilverCraft.CSCore.VGMStream/InteropVgmStream/VGMSTREAM.cs
+    startLine: 38
+  assemblies:
+  - SilverCraft.CSCore.VGMStream
+  namespace: VgmStream
+  syntax:
+    content: public nuint interleave_last_block_size
+    return:
+      type: System.UIntPtr
+    content.vb: Public interleave_last_block_size As UIntPtr
+- uid: VgmStream.VGMSTREAM.frame_size
+  commentId: F:VgmStream.VGMSTREAM.frame_size
+  id: frame_size
+  parent: VgmStream.VGMSTREAM
+  langs:
+  - csharp
+  - vb
+  name: frame_size
+  nameWithType: VGMSTREAM.frame_size
+  fullName: VgmStream.VGMSTREAM.frame_size
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore.VGMStream/InteropVgmStream/VGMSTREAM.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: frame_size
+    path: ../SilverCraft.CSCore.VGMStream/InteropVgmStream/VGMSTREAM.cs
+    startLine: 41
+  assemblies:
+  - SilverCraft.CSCore.VGMStream
+  namespace: VgmStream
+  syntax:
+    content: public nuint frame_size
+    return:
+      type: System.UIntPtr
+    content.vb: Public frame_size As UIntPtr
+- uid: VgmStream.VGMSTREAM.num_streams
+  commentId: F:VgmStream.VGMSTREAM.num_streams
+  id: num_streams
+  parent: VgmStream.VGMSTREAM
+  langs:
+  - csharp
+  - vb
+  name: num_streams
+  nameWithType: VGMSTREAM.num_streams
+  fullName: VgmStream.VGMSTREAM.num_streams
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore.VGMStream/InteropVgmStream/VGMSTREAM.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: num_streams
+    path: ../SilverCraft.CSCore.VGMStream/InteropVgmStream/VGMSTREAM.cs
+    startLine: 43
+  assemblies:
+  - SilverCraft.CSCore.VGMStream
+  namespace: VgmStream
+  syntax:
+    content: public int num_streams
+    return:
+      type: System.Int32
+    content.vb: Public num_streams As Integer
+- uid: VgmStream.VGMSTREAM.stream_index
+  commentId: F:VgmStream.VGMSTREAM.stream_index
+  id: stream_index
+  parent: VgmStream.VGMSTREAM
+  langs:
+  - csharp
+  - vb
+  name: stream_index
+  nameWithType: VGMSTREAM.stream_index
+  fullName: VgmStream.VGMSTREAM.stream_index
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore.VGMStream/InteropVgmStream/VGMSTREAM.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: stream_index
+    path: ../SilverCraft.CSCore.VGMStream/InteropVgmStream/VGMSTREAM.cs
+    startLine: 45
+  assemblies:
+  - SilverCraft.CSCore.VGMStream
+  namespace: VgmStream
+  syntax:
+    content: public int stream_index
+    return:
+      type: System.Int32
+    content.vb: Public stream_index As Integer
+- uid: VgmStream.VGMSTREAM.stream_size
+  commentId: F:VgmStream.VGMSTREAM.stream_size
+  id: stream_size
+  parent: VgmStream.VGMSTREAM
+  langs:
+  - csharp
+  - vb
+  name: stream_size
+  nameWithType: VGMSTREAM.stream_size
+  fullName: VgmStream.VGMSTREAM.stream_size
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore.VGMStream/InteropVgmStream/VGMSTREAM.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: stream_size
+    path: ../SilverCraft.CSCore.VGMStream/InteropVgmStream/VGMSTREAM.cs
+    startLine: 48
+  assemblies:
+  - SilverCraft.CSCore.VGMStream
+  namespace: VgmStream
+  syntax:
+    content: public nuint stream_size
+    return:
+      type: System.UIntPtr
+    content.vb: Public stream_size As UIntPtr
+- uid: VgmStream.VGMSTREAM.stream_name
+  commentId: F:VgmStream.VGMSTREAM.stream_name
+  id: stream_name
+  parent: VgmStream.VGMSTREAM
+  langs:
+  - csharp
+  - vb
+  name: stream_name
+  nameWithType: VGMSTREAM.stream_name
+  fullName: VgmStream.VGMSTREAM.stream_name
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore.VGMStream/InteropVgmStream/VGMSTREAM.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: stream_name
+    path: ../SilverCraft.CSCore.VGMStream/InteropVgmStream/VGMSTREAM.cs
+    startLine: 51
+  assemblies:
+  - SilverCraft.CSCore.VGMStream
+  namespace: VgmStream
+  syntax:
+    content: public VGMSTREAM._stream_name_e__FixedBuffer stream_name
+    return:
+      type: VgmStream.VGMSTREAM._stream_name_e__FixedBuffer
+    content.vb: Public stream_name As VGMSTREAM._stream_name_e__FixedBuffer
+- uid: VgmStream.VGMSTREAM.channel_layout
+  commentId: F:VgmStream.VGMSTREAM.channel_layout
+  id: channel_layout
+  parent: VgmStream.VGMSTREAM
+  langs:
+  - csharp
+  - vb
+  name: channel_layout
+  nameWithType: VGMSTREAM.channel_layout
+  fullName: VgmStream.VGMSTREAM.channel_layout
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore.VGMStream/InteropVgmStream/VGMSTREAM.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: channel_layout
+    path: ../SilverCraft.CSCore.VGMStream/InteropVgmStream/VGMSTREAM.cs
+    startLine: 54
+  assemblies:
+  - SilverCraft.CSCore.VGMStream
+  namespace: VgmStream
+  syntax:
+    content: public uint channel_layout
+    return:
+      type: System.UInt32
+    content.vb: Public channel_layout As UInteger
+- uid: VgmStream.VGMSTREAM.allow_dual_stereo
+  commentId: F:VgmStream.VGMSTREAM.allow_dual_stereo
+  id: allow_dual_stereo
+  parent: VgmStream.VGMSTREAM
+  langs:
+  - csharp
+  - vb
+  name: allow_dual_stereo
+  nameWithType: VGMSTREAM.allow_dual_stereo
+  fullName: VgmStream.VGMSTREAM.allow_dual_stereo
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore.VGMStream/InteropVgmStream/VGMSTREAM.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: allow_dual_stereo
+    path: ../SilverCraft.CSCore.VGMStream/InteropVgmStream/VGMSTREAM.cs
+    startLine: 56
+  assemblies:
+  - SilverCraft.CSCore.VGMStream
+  namespace: VgmStream
+  syntax:
+    content: public bool allow_dual_stereo
+    return:
+      type: System.Boolean
+    content.vb: Public allow_dual_stereo As Boolean
+- uid: VgmStream.VGMSTREAM.format_id
+  commentId: F:VgmStream.VGMSTREAM.format_id
+  id: format_id
+  parent: VgmStream.VGMSTREAM
+  langs:
+  - csharp
+  - vb
+  name: format_id
+  nameWithType: VGMSTREAM.format_id
+  fullName: VgmStream.VGMSTREAM.format_id
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore.VGMStream/InteropVgmStream/VGMSTREAM.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: format_id
+    path: ../SilverCraft.CSCore.VGMStream/InteropVgmStream/VGMSTREAM.cs
+    startLine: 58
+  assemblies:
+  - SilverCraft.CSCore.VGMStream
+  namespace: VgmStream
+  syntax:
+    content: public int format_id
+    return:
+      type: System.Int32
+    content.vb: Public format_id As Integer
+- uid: VgmStream.VGMSTREAM.codec_endian
+  commentId: F:VgmStream.VGMSTREAM.codec_endian
+  id: codec_endian
+  parent: VgmStream.VGMSTREAM
+  langs:
+  - csharp
+  - vb
+  name: codec_endian
+  nameWithType: VGMSTREAM.codec_endian
+  fullName: VgmStream.VGMSTREAM.codec_endian
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore.VGMStream/InteropVgmStream/VGMSTREAM.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: codec_endian
+    path: ../SilverCraft.CSCore.VGMStream/InteropVgmStream/VGMSTREAM.cs
+    startLine: 60
+  assemblies:
+  - SilverCraft.CSCore.VGMStream
+  namespace: VgmStream
+  syntax:
+    content: public int codec_endian
+    return:
+      type: System.Int32
+    content.vb: Public codec_endian As Integer
+- uid: VgmStream.VGMSTREAM.codec_config
+  commentId: F:VgmStream.VGMSTREAM.codec_config
+  id: codec_config
+  parent: VgmStream.VGMSTREAM
+  langs:
+  - csharp
+  - vb
+  name: codec_config
+  nameWithType: VGMSTREAM.codec_config
+  fullName: VgmStream.VGMSTREAM.codec_config
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore.VGMStream/InteropVgmStream/VGMSTREAM.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: codec_config
+    path: ../SilverCraft.CSCore.VGMStream/InteropVgmStream/VGMSTREAM.cs
+    startLine: 62
+  assemblies:
+  - SilverCraft.CSCore.VGMStream
+  namespace: VgmStream
+  syntax:
+    content: public int codec_config
+    return:
+      type: System.Int32
+    content.vb: Public codec_config As Integer
+- uid: VgmStream.VGMSTREAM.codec_internal_updates
+  commentId: F:VgmStream.VGMSTREAM.codec_internal_updates
+  id: codec_internal_updates
+  parent: VgmStream.VGMSTREAM
+  langs:
+  - csharp
+  - vb
+  name: codec_internal_updates
+  nameWithType: VGMSTREAM.codec_internal_updates
+  fullName: VgmStream.VGMSTREAM.codec_internal_updates
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore.VGMStream/InteropVgmStream/VGMSTREAM.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: codec_internal_updates
+    path: ../SilverCraft.CSCore.VGMStream/InteropVgmStream/VGMSTREAM.cs
+    startLine: 64
+  assemblies:
+  - SilverCraft.CSCore.VGMStream
+  namespace: VgmStream
+  syntax:
+    content: public bool codec_internal_updates
+    return:
+      type: System.Boolean
+    content.vb: Public codec_internal_updates As Boolean
+- uid: VgmStream.VGMSTREAM.ws_output_size
+  commentId: F:VgmStream.VGMSTREAM.ws_output_size
+  id: ws_output_size
+  parent: VgmStream.VGMSTREAM
+  langs:
+  - csharp
+  - vb
+  name: ws_output_size
+  nameWithType: VGMSTREAM.ws_output_size
+  fullName: VgmStream.VGMSTREAM.ws_output_size
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore.VGMStream/InteropVgmStream/VGMSTREAM.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: ws_output_size
+    path: ../SilverCraft.CSCore.VGMStream/InteropVgmStream/VGMSTREAM.cs
+    startLine: 67
+  assemblies:
+  - SilverCraft.CSCore.VGMStream
+  namespace: VgmStream
+  syntax:
+    content: public int ws_output_size
+    return:
+      type: System.Int32
+    content.vb: Public ws_output_size As Integer
+- uid: VgmStream.VGMSTREAM.current_sample
+  commentId: F:VgmStream.VGMSTREAM.current_sample
+  id: current_sample
+  parent: VgmStream.VGMSTREAM
+  langs:
+  - csharp
+  - vb
+  name: current_sample
+  nameWithType: VGMSTREAM.current_sample
+  fullName: VgmStream.VGMSTREAM.current_sample
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore.VGMStream/InteropVgmStream/VGMSTREAM.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: current_sample
+    path: ../SilverCraft.CSCore.VGMStream/InteropVgmStream/VGMSTREAM.cs
+    startLine: 70
+  assemblies:
+  - SilverCraft.CSCore.VGMStream
+  namespace: VgmStream
+  syntax:
+    content: public int current_sample
+    return:
+      type: System.Int32
+    content.vb: Public current_sample As Integer
+- uid: VgmStream.VGMSTREAM.samples_into_block
+  commentId: F:VgmStream.VGMSTREAM.samples_into_block
+  id: samples_into_block
+  parent: VgmStream.VGMSTREAM
+  langs:
+  - csharp
+  - vb
+  name: samples_into_block
+  nameWithType: VGMSTREAM.samples_into_block
+  fullName: VgmStream.VGMSTREAM.samples_into_block
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore.VGMStream/InteropVgmStream/VGMSTREAM.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: samples_into_block
+    path: ../SilverCraft.CSCore.VGMStream/InteropVgmStream/VGMSTREAM.cs
+    startLine: 73
+  assemblies:
+  - SilverCraft.CSCore.VGMStream
+  namespace: VgmStream
+  syntax:
+    content: public int samples_into_block
+    return:
+      type: System.Int32
+    content.vb: Public samples_into_block As Integer
+- uid: VgmStream.VGMSTREAM.current_block_offset
+  commentId: F:VgmStream.VGMSTREAM.current_block_offset
+  id: current_block_offset
+  parent: VgmStream.VGMSTREAM
+  langs:
+  - csharp
+  - vb
+  name: current_block_offset
+  nameWithType: VGMSTREAM.current_block_offset
+  fullName: VgmStream.VGMSTREAM.current_block_offset
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore.VGMStream/InteropVgmStream/VGMSTREAM.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: current_block_offset
+    path: ../SilverCraft.CSCore.VGMStream/InteropVgmStream/VGMSTREAM.cs
+    startLine: 76
+  assemblies:
+  - SilverCraft.CSCore.VGMStream
+  namespace: VgmStream
+  syntax:
+    content: public nint current_block_offset
+    return:
+      type: System.IntPtr
+    content.vb: Public current_block_offset As IntPtr
+- uid: VgmStream.VGMSTREAM.current_block_size
+  commentId: F:VgmStream.VGMSTREAM.current_block_size
+  id: current_block_size
+  parent: VgmStream.VGMSTREAM
+  langs:
+  - csharp
+  - vb
+  name: current_block_size
+  nameWithType: VGMSTREAM.current_block_size
+  fullName: VgmStream.VGMSTREAM.current_block_size
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore.VGMStream/InteropVgmStream/VGMSTREAM.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: current_block_size
+    path: ../SilverCraft.CSCore.VGMStream/InteropVgmStream/VGMSTREAM.cs
+    startLine: 79
+  assemblies:
+  - SilverCraft.CSCore.VGMStream
+  namespace: VgmStream
+  syntax:
+    content: public nuint current_block_size
+    return:
+      type: System.UIntPtr
+    content.vb: Public current_block_size As UIntPtr
+- uid: VgmStream.VGMSTREAM.current_block_samples
+  commentId: F:VgmStream.VGMSTREAM.current_block_samples
+  id: current_block_samples
+  parent: VgmStream.VGMSTREAM
+  langs:
+  - csharp
+  - vb
+  name: current_block_samples
+  nameWithType: VGMSTREAM.current_block_samples
+  fullName: VgmStream.VGMSTREAM.current_block_samples
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore.VGMStream/InteropVgmStream/VGMSTREAM.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: current_block_samples
+    path: ../SilverCraft.CSCore.VGMStream/InteropVgmStream/VGMSTREAM.cs
+    startLine: 82
+  assemblies:
+  - SilverCraft.CSCore.VGMStream
+  namespace: VgmStream
+  syntax:
+    content: public int current_block_samples
+    return:
+      type: System.Int32
+    content.vb: Public current_block_samples As Integer
+- uid: VgmStream.VGMSTREAM.next_block_offset
+  commentId: F:VgmStream.VGMSTREAM.next_block_offset
+  id: next_block_offset
+  parent: VgmStream.VGMSTREAM
+  langs:
+  - csharp
+  - vb
+  name: next_block_offset
+  nameWithType: VGMSTREAM.next_block_offset
+  fullName: VgmStream.VGMSTREAM.next_block_offset
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore.VGMStream/InteropVgmStream/VGMSTREAM.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: next_block_offset
+    path: ../SilverCraft.CSCore.VGMStream/InteropVgmStream/VGMSTREAM.cs
+    startLine: 85
+  assemblies:
+  - SilverCraft.CSCore.VGMStream
+  namespace: VgmStream
+  syntax:
+    content: public nint next_block_offset
+    return:
+      type: System.IntPtr
+    content.vb: Public next_block_offset As IntPtr
+- uid: VgmStream.VGMSTREAM.full_block_size
+  commentId: F:VgmStream.VGMSTREAM.full_block_size
+  id: full_block_size
+  parent: VgmStream.VGMSTREAM
+  langs:
+  - csharp
+  - vb
+  name: full_block_size
+  nameWithType: VGMSTREAM.full_block_size
+  fullName: VgmStream.VGMSTREAM.full_block_size
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore.VGMStream/InteropVgmStream/VGMSTREAM.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: full_block_size
+    path: ../SilverCraft.CSCore.VGMStream/InteropVgmStream/VGMSTREAM.cs
+    startLine: 88
+  assemblies:
+  - SilverCraft.CSCore.VGMStream
+  namespace: VgmStream
+  syntax:
+    content: public nuint full_block_size
+    return:
+      type: System.UIntPtr
+    content.vb: Public full_block_size As UIntPtr
+- uid: VgmStream.VGMSTREAM.loop_current_sample
+  commentId: F:VgmStream.VGMSTREAM.loop_current_sample
+  id: loop_current_sample
+  parent: VgmStream.VGMSTREAM
+  langs:
+  - csharp
+  - vb
+  name: loop_current_sample
+  nameWithType: VGMSTREAM.loop_current_sample
+  fullName: VgmStream.VGMSTREAM.loop_current_sample
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore.VGMStream/InteropVgmStream/VGMSTREAM.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: loop_current_sample
+    path: ../SilverCraft.CSCore.VGMStream/InteropVgmStream/VGMSTREAM.cs
+    startLine: 91
+  assemblies:
+  - SilverCraft.CSCore.VGMStream
+  namespace: VgmStream
+  syntax:
+    content: public int loop_current_sample
+    return:
+      type: System.Int32
+    content.vb: Public loop_current_sample As Integer
+- uid: VgmStream.VGMSTREAM.loop_samples_into_block
+  commentId: F:VgmStream.VGMSTREAM.loop_samples_into_block
+  id: loop_samples_into_block
+  parent: VgmStream.VGMSTREAM
+  langs:
+  - csharp
+  - vb
+  name: loop_samples_into_block
+  nameWithType: VGMSTREAM.loop_samples_into_block
+  fullName: VgmStream.VGMSTREAM.loop_samples_into_block
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore.VGMStream/InteropVgmStream/VGMSTREAM.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: loop_samples_into_block
+    path: ../SilverCraft.CSCore.VGMStream/InteropVgmStream/VGMSTREAM.cs
+    startLine: 94
+  assemblies:
+  - SilverCraft.CSCore.VGMStream
+  namespace: VgmStream
+  syntax:
+    content: public int loop_samples_into_block
+    return:
+      type: System.Int32
+    content.vb: Public loop_samples_into_block As Integer
+- uid: VgmStream.VGMSTREAM.loop_block_offset
+  commentId: F:VgmStream.VGMSTREAM.loop_block_offset
+  id: loop_block_offset
+  parent: VgmStream.VGMSTREAM
+  langs:
+  - csharp
+  - vb
+  name: loop_block_offset
+  nameWithType: VGMSTREAM.loop_block_offset
+  fullName: VgmStream.VGMSTREAM.loop_block_offset
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore.VGMStream/InteropVgmStream/VGMSTREAM.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: loop_block_offset
+    path: ../SilverCraft.CSCore.VGMStream/InteropVgmStream/VGMSTREAM.cs
+    startLine: 97
+  assemblies:
+  - SilverCraft.CSCore.VGMStream
+  namespace: VgmStream
+  syntax:
+    content: public nint loop_block_offset
+    return:
+      type: System.IntPtr
+    content.vb: Public loop_block_offset As IntPtr
+- uid: VgmStream.VGMSTREAM.loop_block_size
+  commentId: F:VgmStream.VGMSTREAM.loop_block_size
+  id: loop_block_size
+  parent: VgmStream.VGMSTREAM
+  langs:
+  - csharp
+  - vb
+  name: loop_block_size
+  nameWithType: VGMSTREAM.loop_block_size
+  fullName: VgmStream.VGMSTREAM.loop_block_size
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore.VGMStream/InteropVgmStream/VGMSTREAM.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: loop_block_size
+    path: ../SilverCraft.CSCore.VGMStream/InteropVgmStream/VGMSTREAM.cs
+    startLine: 100
+  assemblies:
+  - SilverCraft.CSCore.VGMStream
+  namespace: VgmStream
+  syntax:
+    content: public nuint loop_block_size
+    return:
+      type: System.UIntPtr
+    content.vb: Public loop_block_size As UIntPtr
+- uid: VgmStream.VGMSTREAM.loop_block_samples
+  commentId: F:VgmStream.VGMSTREAM.loop_block_samples
+  id: loop_block_samples
+  parent: VgmStream.VGMSTREAM
+  langs:
+  - csharp
+  - vb
+  name: loop_block_samples
+  nameWithType: VGMSTREAM.loop_block_samples
+  fullName: VgmStream.VGMSTREAM.loop_block_samples
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore.VGMStream/InteropVgmStream/VGMSTREAM.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: loop_block_samples
+    path: ../SilverCraft.CSCore.VGMStream/InteropVgmStream/VGMSTREAM.cs
+    startLine: 103
+  assemblies:
+  - SilverCraft.CSCore.VGMStream
+  namespace: VgmStream
+  syntax:
+    content: public int loop_block_samples
+    return:
+      type: System.Int32
+    content.vb: Public loop_block_samples As Integer
+- uid: VgmStream.VGMSTREAM.loop_next_block_offset
+  commentId: F:VgmStream.VGMSTREAM.loop_next_block_offset
+  id: loop_next_block_offset
+  parent: VgmStream.VGMSTREAM
+  langs:
+  - csharp
+  - vb
+  name: loop_next_block_offset
+  nameWithType: VGMSTREAM.loop_next_block_offset
+  fullName: VgmStream.VGMSTREAM.loop_next_block_offset
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore.VGMStream/InteropVgmStream/VGMSTREAM.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: loop_next_block_offset
+    path: ../SilverCraft.CSCore.VGMStream/InteropVgmStream/VGMSTREAM.cs
+    startLine: 106
+  assemblies:
+  - SilverCraft.CSCore.VGMStream
+  namespace: VgmStream
+  syntax:
+    content: public nint loop_next_block_offset
+    return:
+      type: System.IntPtr
+    content.vb: Public loop_next_block_offset As IntPtr
+- uid: VgmStream.VGMSTREAM.loop_full_block_size
+  commentId: F:VgmStream.VGMSTREAM.loop_full_block_size
+  id: loop_full_block_size
+  parent: VgmStream.VGMSTREAM
+  langs:
+  - csharp
+  - vb
+  name: loop_full_block_size
+  nameWithType: VGMSTREAM.loop_full_block_size
+  fullName: VgmStream.VGMSTREAM.loop_full_block_size
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore.VGMStream/InteropVgmStream/VGMSTREAM.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: loop_full_block_size
+    path: ../SilverCraft.CSCore.VGMStream/InteropVgmStream/VGMSTREAM.cs
+    startLine: 109
+  assemblies:
+  - SilverCraft.CSCore.VGMStream
+  namespace: VgmStream
+  syntax:
+    content: public nuint loop_full_block_size
+    return:
+      type: System.UIntPtr
+    content.vb: Public loop_full_block_size As UIntPtr
+- uid: VgmStream.VGMSTREAM.hit_loop
+  commentId: F:VgmStream.VGMSTREAM.hit_loop
+  id: hit_loop
+  parent: VgmStream.VGMSTREAM
+  langs:
+  - csharp
+  - vb
+  name: hit_loop
+  nameWithType: VGMSTREAM.hit_loop
+  fullName: VgmStream.VGMSTREAM.hit_loop
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore.VGMStream/InteropVgmStream/VGMSTREAM.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: hit_loop
+    path: ../SilverCraft.CSCore.VGMStream/InteropVgmStream/VGMSTREAM.cs
+    startLine: 111
+  assemblies:
+  - SilverCraft.CSCore.VGMStream
+  namespace: VgmStream
+  syntax:
+    content: public bool hit_loop
+    return:
+      type: System.Boolean
+    content.vb: Public hit_loop As Boolean
+- uid: VgmStream.VGMSTREAM.ch
+  commentId: F:VgmStream.VGMSTREAM.ch
+  id: ch
+  parent: VgmStream.VGMSTREAM
+  langs:
+  - csharp
+  - vb
+  name: ch
+  nameWithType: VGMSTREAM.ch
+  fullName: VgmStream.VGMSTREAM.ch
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore.VGMStream/InteropVgmStream/VGMSTREAM.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: ch
+    path: ../SilverCraft.CSCore.VGMStream/InteropVgmStream/VGMSTREAM.cs
+    startLine: 113
+  assemblies:
+  - SilverCraft.CSCore.VGMStream
+  namespace: VgmStream
+  syntax:
+    content: public VGMSTREAMCHANNEL* ch
+    return:
+      type: VgmStream.VGMSTREAMCHANNEL*
+    content.vb: Public ch As VGMSTREAMCHANNEL*
+- uid: VgmStream.VGMSTREAM.loop_ch
+  commentId: F:VgmStream.VGMSTREAM.loop_ch
+  id: loop_ch
+  parent: VgmStream.VGMSTREAM
+  langs:
+  - csharp
+  - vb
+  name: loop_ch
+  nameWithType: VGMSTREAM.loop_ch
+  fullName: VgmStream.VGMSTREAM.loop_ch
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore.VGMStream/InteropVgmStream/VGMSTREAM.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: loop_ch
+    path: ../SilverCraft.CSCore.VGMStream/InteropVgmStream/VGMSTREAM.cs
+    startLine: 115
+  assemblies:
+  - SilverCraft.CSCore.VGMStream
+  namespace: VgmStream
+  syntax:
+    content: public VGMSTREAMCHANNEL* loop_ch
+    return:
+      type: VgmStream.VGMSTREAMCHANNEL*
+    content.vb: Public loop_ch As VGMSTREAMCHANNEL*
+- uid: VgmStream.VGMSTREAM.start_vgmstream
+  commentId: F:VgmStream.VGMSTREAM.start_vgmstream
+  id: start_vgmstream
+  parent: VgmStream.VGMSTREAM
+  langs:
+  - csharp
+  - vb
+  name: start_vgmstream
+  nameWithType: VGMSTREAM.start_vgmstream
+  fullName: VgmStream.VGMSTREAM.start_vgmstream
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore.VGMStream/InteropVgmStream/VGMSTREAM.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: start_vgmstream
+    path: ../SilverCraft.CSCore.VGMStream/InteropVgmStream/VGMSTREAM.cs
+    startLine: 117
+  assemblies:
+  - SilverCraft.CSCore.VGMStream
+  namespace: VgmStream
+  syntax:
+    content: public void* start_vgmstream
+    return:
+      type: System.Void*
+    content.vb: Public start_vgmstream As Void*
+- uid: VgmStream.VGMSTREAM.start_ch
+  commentId: F:VgmStream.VGMSTREAM.start_ch
+  id: start_ch
+  parent: VgmStream.VGMSTREAM
+  langs:
+  - csharp
+  - vb
+  name: start_ch
+  nameWithType: VGMSTREAM.start_ch
+  fullName: VgmStream.VGMSTREAM.start_ch
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore.VGMStream/InteropVgmStream/VGMSTREAM.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: start_ch
+    path: ../SilverCraft.CSCore.VGMStream/InteropVgmStream/VGMSTREAM.cs
+    startLine: 119
+  assemblies:
+  - SilverCraft.CSCore.VGMStream
+  namespace: VgmStream
+  syntax:
+    content: public VGMSTREAMCHANNEL* start_ch
+    return:
+      type: VgmStream.VGMSTREAMCHANNEL*
+    content.vb: Public start_ch As VGMSTREAMCHANNEL*
+- uid: VgmStream.VGMSTREAM.mixer
+  commentId: F:VgmStream.VGMSTREAM.mixer
+  id: mixer
+  parent: VgmStream.VGMSTREAM
+  langs:
+  - csharp
+  - vb
+  name: mixer
+  nameWithType: VGMSTREAM.mixer
+  fullName: VgmStream.VGMSTREAM.mixer
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore.VGMStream/InteropVgmStream/VGMSTREAM.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: mixer
+    path: ../SilverCraft.CSCore.VGMStream/InteropVgmStream/VGMSTREAM.cs
+    startLine: 121
+  assemblies:
+  - SilverCraft.CSCore.VGMStream
+  namespace: VgmStream
+  syntax:
+    content: public void* mixer
+    return:
+      type: System.Void*
+    content.vb: Public mixer As Void*
+- uid: VgmStream.VGMSTREAM.codec_data
+  commentId: F:VgmStream.VGMSTREAM.codec_data
+  id: codec_data
+  parent: VgmStream.VGMSTREAM
+  langs:
+  - csharp
+  - vb
+  name: codec_data
+  nameWithType: VGMSTREAM.codec_data
+  fullName: VgmStream.VGMSTREAM.codec_data
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore.VGMStream/InteropVgmStream/VGMSTREAM.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: codec_data
+    path: ../SilverCraft.CSCore.VGMStream/InteropVgmStream/VGMSTREAM.cs
+    startLine: 123
+  assemblies:
+  - SilverCraft.CSCore.VGMStream
+  namespace: VgmStream
+  syntax:
+    content: public void* codec_data
+    return:
+      type: System.Void*
+    content.vb: Public codec_data As Void*
+- uid: VgmStream.VGMSTREAM.layout_data
+  commentId: F:VgmStream.VGMSTREAM.layout_data
+  id: layout_data
+  parent: VgmStream.VGMSTREAM
+  langs:
+  - csharp
+  - vb
+  name: layout_data
+  nameWithType: VGMSTREAM.layout_data
+  fullName: VgmStream.VGMSTREAM.layout_data
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore.VGMStream/InteropVgmStream/VGMSTREAM.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: layout_data
+    path: ../SilverCraft.CSCore.VGMStream/InteropVgmStream/VGMSTREAM.cs
+    startLine: 125
+  assemblies:
+  - SilverCraft.CSCore.VGMStream
+  namespace: VgmStream
+  syntax:
+    content: public void* layout_data
+    return:
+      type: System.Void*
+    content.vb: Public layout_data As Void*
+- uid: VgmStream.VGMSTREAM.config_enabled
+  commentId: F:VgmStream.VGMSTREAM.config_enabled
+  id: config_enabled
+  parent: VgmStream.VGMSTREAM
+  langs:
+  - csharp
+  - vb
+  name: config_enabled
+  nameWithType: VGMSTREAM.config_enabled
+  fullName: VgmStream.VGMSTREAM.config_enabled
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore.VGMStream/InteropVgmStream/VGMSTREAM.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: config_enabled
+    path: ../SilverCraft.CSCore.VGMStream/InteropVgmStream/VGMSTREAM.cs
+    startLine: 127
+  assemblies:
+  - SilverCraft.CSCore.VGMStream
+  namespace: VgmStream
+  syntax:
+    content: public bool config_enabled
+    return:
+      type: System.Boolean
+    content.vb: Public config_enabled As Boolean
+- uid: VgmStream.VGMSTREAM.config
+  commentId: F:VgmStream.VGMSTREAM.config
+  id: config
+  parent: VgmStream.VGMSTREAM
+  langs:
+  - csharp
+  - vb
+  name: config
+  nameWithType: VGMSTREAM.config
+  fullName: VgmStream.VGMSTREAM.config
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore.VGMStream/InteropVgmStream/VGMSTREAM.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: config
+    path: ../SilverCraft.CSCore.VGMStream/InteropVgmStream/VGMSTREAM.cs
+    startLine: 129
+  assemblies:
+  - SilverCraft.CSCore.VGMStream
+  namespace: VgmStream
+  syntax:
+    content: public play_config_t config
+    return:
+      type: VgmStream.play_config_t
+    content.vb: Public config As play_config_t
+- uid: VgmStream.VGMSTREAM.pstate
+  commentId: F:VgmStream.VGMSTREAM.pstate
+  id: pstate
+  parent: VgmStream.VGMSTREAM
+  langs:
+  - csharp
+  - vb
+  name: pstate
+  nameWithType: VGMSTREAM.pstate
+  fullName: VgmStream.VGMSTREAM.pstate
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore.VGMStream/InteropVgmStream/VGMSTREAM.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: pstate
+    path: ../SilverCraft.CSCore.VGMStream/InteropVgmStream/VGMSTREAM.cs
+    startLine: 131
+  assemblies:
+  - SilverCraft.CSCore.VGMStream
+  namespace: VgmStream
+  syntax:
+    content: public play_state_t pstate
+    return:
+      type: VgmStream.play_state_t
+    content.vb: Public pstate As play_state_t
+- uid: VgmStream.VGMSTREAM.loop_count
+  commentId: F:VgmStream.VGMSTREAM.loop_count
+  id: loop_count
+  parent: VgmStream.VGMSTREAM
+  langs:
+  - csharp
+  - vb
+  name: loop_count
+  nameWithType: VGMSTREAM.loop_count
+  fullName: VgmStream.VGMSTREAM.loop_count
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore.VGMStream/InteropVgmStream/VGMSTREAM.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: loop_count
+    path: ../SilverCraft.CSCore.VGMStream/InteropVgmStream/VGMSTREAM.cs
+    startLine: 133
+  assemblies:
+  - SilverCraft.CSCore.VGMStream
+  namespace: VgmStream
+  syntax:
+    content: public int loop_count
+    return:
+      type: System.Int32
+    content.vb: Public loop_count As Integer
+- uid: VgmStream.VGMSTREAM.loop_target
+  commentId: F:VgmStream.VGMSTREAM.loop_target
+  id: loop_target
+  parent: VgmStream.VGMSTREAM
+  langs:
+  - csharp
+  - vb
+  name: loop_target
+  nameWithType: VGMSTREAM.loop_target
+  fullName: VgmStream.VGMSTREAM.loop_target
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore.VGMStream/InteropVgmStream/VGMSTREAM.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: loop_target
+    path: ../SilverCraft.CSCore.VGMStream/InteropVgmStream/VGMSTREAM.cs
+    startLine: 135
+  assemblies:
+  - SilverCraft.CSCore.VGMStream
+  namespace: VgmStream
+  syntax:
+    content: public int loop_target
+    return:
+      type: System.Int32
+    content.vb: Public loop_target As Integer
+- uid: VgmStream.VGMSTREAM.tmpbuf
+  commentId: F:VgmStream.VGMSTREAM.tmpbuf
+  id: tmpbuf
+  parent: VgmStream.VGMSTREAM
+  langs:
+  - csharp
+  - vb
+  name: tmpbuf
+  nameWithType: VGMSTREAM.tmpbuf
+  fullName: VgmStream.VGMSTREAM.tmpbuf
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore.VGMStream/InteropVgmStream/VGMSTREAM.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: tmpbuf
+    path: ../SilverCraft.CSCore.VGMStream/InteropVgmStream/VGMSTREAM.cs
+    startLine: 137
+  assemblies:
+  - SilverCraft.CSCore.VGMStream
+  namespace: VgmStream
+  syntax:
+    content: public void* tmpbuf
+    return:
+      type: System.Void*
+    content.vb: Public tmpbuf As Void*
+- uid: VgmStream.VGMSTREAM.tmpbuf_size
+  commentId: F:VgmStream.VGMSTREAM.tmpbuf_size
+  id: tmpbuf_size
+  parent: VgmStream.VGMSTREAM
+  langs:
+  - csharp
+  - vb
+  name: tmpbuf_size
+  nameWithType: VGMSTREAM.tmpbuf_size
+  fullName: VgmStream.VGMSTREAM.tmpbuf_size
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore.VGMStream/InteropVgmStream/VGMSTREAM.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: tmpbuf_size
+    path: ../SilverCraft.CSCore.VGMStream/InteropVgmStream/VGMSTREAM.cs
+    startLine: 140
+  assemblies:
+  - SilverCraft.CSCore.VGMStream
+  namespace: VgmStream
+  syntax:
+    content: public nuint tmpbuf_size
+    return:
+      type: System.UIntPtr
+    content.vb: Public tmpbuf_size As UIntPtr
+- uid: VgmStream.VGMSTREAM.decode_state
+  commentId: F:VgmStream.VGMSTREAM.decode_state
+  id: decode_state
+  parent: VgmStream.VGMSTREAM
+  langs:
+  - csharp
+  - vb
+  name: decode_state
+  nameWithType: VGMSTREAM.decode_state
+  fullName: VgmStream.VGMSTREAM.decode_state
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore.VGMStream/InteropVgmStream/VGMSTREAM.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: decode_state
+    path: ../SilverCraft.CSCore.VGMStream/InteropVgmStream/VGMSTREAM.cs
+    startLine: 142
+  assemblies:
+  - SilverCraft.CSCore.VGMStream
+  namespace: VgmStream
+  syntax:
+    content: public void* decode_state
+    return:
+      type: System.Void*
+    content.vb: Public decode_state As Void*
+- uid: VgmStream.VGMSTREAM.seek_table
+  commentId: F:VgmStream.VGMSTREAM.seek_table
+  id: seek_table
+  parent: VgmStream.VGMSTREAM
+  langs:
+  - csharp
+  - vb
+  name: seek_table
+  nameWithType: VGMSTREAM.seek_table
+  fullName: VgmStream.VGMSTREAM.seek_table
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore.VGMStream/InteropVgmStream/VGMSTREAM.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: seek_table
+    path: ../SilverCraft.CSCore.VGMStream/InteropVgmStream/VGMSTREAM.cs
+    startLine: 144
+  assemblies:
+  - SilverCraft.CSCore.VGMStream
+  namespace: VgmStream
+  syntax:
+    content: public void* seek_table
+    return:
+      type: System.Void*
+    content.vb: Public seek_table As Void*
+references:
+- uid: VgmStream
+  commentId: N:VgmStream
+  href: VgmStream.html
+  name: VgmStream
+  nameWithType: VgmStream
+  fullName: VgmStream
+- uid: System.ValueType.Equals(System.Object)
+  commentId: M:System.ValueType.Equals(System.Object)
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  name: Equals(object)
+  nameWithType: ValueType.Equals(object)
+  fullName: System.ValueType.Equals(object)
+  nameWithType.vb: ValueType.Equals(Object)
+  fullName.vb: System.ValueType.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.ValueType.GetHashCode
+  commentId: M:System.ValueType.GetHashCode
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  name: GetHashCode()
+  nameWithType: ValueType.GetHashCode()
+  fullName: System.ValueType.GetHashCode()
+  spec.csharp:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  - name: (
+  - name: )
+- uid: System.ValueType.ToString
+  commentId: M:System.ValueType.ToString
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  name: ToString()
+  nameWithType: ValueType.ToString()
+  fullName: System.ValueType.ToString()
+  spec.csharp:
+  - uid: System.ValueType.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.ValueType
+  commentId: T:System.ValueType
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype
+  name: ValueType
+  nameWithType: ValueType
+  fullName: System.ValueType
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: VgmStream.coding_t
+  commentId: T:VgmStream.coding_t
+  parent: VgmStream
+  href: VgmStream.coding_t.html
+  name: coding_t
+  nameWithType: coding_t
+  fullName: VgmStream.coding_t
+- uid: VgmStream.layout_t
+  commentId: T:VgmStream.layout_t
+  parent: VgmStream
+  href: VgmStream.layout_t.html
+  name: layout_t
+  nameWithType: layout_t
+  fullName: VgmStream.layout_t
+- uid: VgmStream.meta_t
+  commentId: T:VgmStream.meta_t
+  parent: VgmStream
+  href: VgmStream.meta_t.html
+  name: meta_t
+  nameWithType: meta_t
+  fullName: VgmStream.meta_t
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: System.UIntPtr
+  commentId: T:System.UIntPtr
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.uintptr
+  name: nuint
+  nameWithType: nuint
+  fullName: nuint
+  nameWithType.vb: UIntPtr
+  fullName.vb: System.UIntPtr
+  name.vb: UIntPtr
+- uid: VgmStream.VGMSTREAM._stream_name_e__FixedBuffer
+  commentId: T:VgmStream.VGMSTREAM._stream_name_e__FixedBuffer
+  parent: VgmStream
+  href: VgmStream.VGMSTREAM.html
+  name: VGMSTREAM._stream_name_e__FixedBuffer
+  nameWithType: VGMSTREAM._stream_name_e__FixedBuffer
+  fullName: VgmStream.VGMSTREAM._stream_name_e__FixedBuffer
+  spec.csharp:
+  - uid: VgmStream.VGMSTREAM
+    name: VGMSTREAM
+    href: VgmStream.VGMSTREAM.html
+  - name: .
+  - uid: VgmStream.VGMSTREAM._stream_name_e__FixedBuffer
+    name: _stream_name_e__FixedBuffer
+    href: VgmStream.VGMSTREAM._stream_name_e__FixedBuffer.html
+  spec.vb:
+  - uid: VgmStream.VGMSTREAM
+    name: VGMSTREAM
+    href: VgmStream.VGMSTREAM.html
+  - name: .
+  - uid: VgmStream.VGMSTREAM._stream_name_e__FixedBuffer
+    name: _stream_name_e__FixedBuffer
+    href: VgmStream.VGMSTREAM._stream_name_e__FixedBuffer.html
+- uid: System.UInt32
+  commentId: T:System.UInt32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.uint32
+  name: uint
+  nameWithType: uint
+  fullName: uint
+  nameWithType.vb: UInteger
+  fullName.vb: UInteger
+  name.vb: UInteger
+- uid: System.IntPtr
+  commentId: T:System.IntPtr
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.intptr
+  name: nint
+  nameWithType: nint
+  fullName: nint
+  nameWithType.vb: IntPtr
+  fullName.vb: System.IntPtr
+  name.vb: IntPtr
+- uid: VgmStream.VGMSTREAMCHANNEL*
+  isExternal: true
+  href: VgmStream.VGMSTREAMCHANNEL.html
+  name: VGMSTREAMCHANNEL*
+  nameWithType: VGMSTREAMCHANNEL*
+  fullName: VgmStream.VGMSTREAMCHANNEL*
+  spec.csharp:
+  - uid: VgmStream.VGMSTREAMCHANNEL
+    name: VGMSTREAMCHANNEL
+    href: VgmStream.VGMSTREAMCHANNEL.html
+  - name: '*'
+  spec.vb:
+  - uid: VgmStream.VGMSTREAMCHANNEL
+    name: VGMSTREAMCHANNEL
+    href: VgmStream.VGMSTREAMCHANNEL.html
+  - name: '*'
+- uid: System.Void*
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.void
+  name: void*
+  nameWithType: void*
+  fullName: void*
+  nameWithType.vb: Void*
+  fullName.vb: Void*
+  name.vb: Void*
+  spec.csharp:
+  - uid: System.Void
+    name: void
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.void
+  - name: '*'
+  spec.vb:
+  - uid: System.Void
+    name: Void
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.void
+  - name: '*'
+- uid: VgmStream.play_config_t
+  commentId: T:VgmStream.play_config_t
+  parent: VgmStream
+  href: VgmStream.play_config_t.html
+  name: play_config_t
+  nameWithType: play_config_t
+  fullName: VgmStream.play_config_t
+- uid: VgmStream.play_state_t
+  commentId: T:VgmStream.play_state_t
+  parent: VgmStream
+  href: VgmStream.play_state_t.html
+  name: play_state_t
+  nameWithType: play_state_t
+  fullName: VgmStream.play_state_t
