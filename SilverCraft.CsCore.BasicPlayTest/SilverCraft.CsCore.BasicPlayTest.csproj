@@ -10,6 +10,7 @@
     <ItemGroup>
       <ProjectReference Include="..\SilverCraft.CSCore.OpenMPT\SilverCraft.OpenMPT.csproj" />
       <ProjectReference Include="..\SilverCraft.CSCore.PortAudio\SilverCraft.CSCore.PortAudio.csproj" />
+      <ProjectReference Include="..\SilverCraft.CSCore.VGMStream\SilverCraft.CSCore.VGMStream.csproj" />
       <ProjectReference Include="..\SilverCraft.CSCore\SilverCraft.CSCore.csproj" />
       <ProjectReference Include="..\SilverCraft.SndFile\SilverCraft.CSCore.SndFile.csproj" />
     </ItemGroup>

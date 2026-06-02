@@ -270,12 +270,14 @@ public class PortAudioSoundOut : ISoundOut
                 if (currentVolume == 1.0f)
                 {
                     Unsafe.CopyBlockUnaligned(outputI, bufferI, (uint)(read * sizeof(float)));
-                    outputI += read; // Advance pointer so common zero-fill block handles any underruns
+                    outputI += read;
+                    bufferI += read;// Advance pointer so common zero-fill block handles any underruns
                 }
                 else if (currentVolume == 0.0f)
                 {
                     Unsafe.InitBlockUnaligned(outputI, 0, (uint)(read * sizeof(float)));
                     outputI += read; 
+                    bufferI += read;
                 }
                 if (Avx.IsSupported)
                 {

@@ -1,14 +1,44 @@
 ﻿using SilverCraft.CSCore;
 using SilverCraft.CSCore.Codecs.FLAC;
+using SilverCraft.CSCore.DSP.Resampler;
+using SilverCraft.CSCore.PortAudio;
 using SilverCraft.CSCore.SoundOut;
-FlacFile f = new("Sample_BeeMoved_96kHz24bit.flac");
+using SilverCraft.CSCore.Streams.SampleConverter;
+using SilverCraft.CSCore.VGMStream;
+VGMStreamWaveSource f =
+    new(("/home/silver/Downloads/Sega Bass Fishing (Europe) (En,Fr,De,Es,It)/stream/DC_RESULT.brstm"));
+float volume = 1f;
+
 try
 {
-    using var o = new ALSoundOut();
-    o.Volume=0.6f;
-    o.Initialize(f);
+    using var o = new PortAudioSoundOut();
+    o.Initialize(new Pcm16BitToSample(f).ToWaveSource());
+    o.Volume=volume;
     o.Play();
-    o.WaitForStopped();
+    while (o.PlaybackState != PlaybackState.Stopped)
+    {
+        if (Console.KeyAvailable)
+        {
+            switch (Console.ReadKey().Key)
+            {
+                case ConsoleKey.RightArrow:
+                    f.SetPosition(f.GetPosition()+ TimeSpan.FromSeconds(3));
+                    break;
+                case ConsoleKey.LeftArrow:
+                    f.SetPosition(f.GetPosition()- TimeSpan.FromSeconds(3));
+                    break;
+                case ConsoleKey.UpArrow:
+                    o.Volume =volume= MathF.Min(1, o.Volume + 0.1f);
+                    Console.WriteLine(volume);
+                    break;
+                case ConsoleKey.DownArrow:
+                    o.Volume =volume= MathF.Max(0, o.Volume - 0.1f);
+                    Console.WriteLine(volume);
+                    break;
+            }
+        }
+        Thread.Sleep(100);
+    }
 }
 finally
 {
