@@ -5,7 +5,7 @@
         <Nullable>enable</Nullable>
         <Configurations>Debug;Release</Configurations>
         <LangVersion>latest</LangVersion>
-        <VersionPrefix>0.1.5</VersionPrefix>
+        <VersionPrefix>0.1.6</VersionPrefix>
         <Optimize>True</Optimize>
         <DebugType>Portable</DebugType>
         <PreserveCompilationContext>false</PreserveCompilationContext>
@@ -25,7 +25,7 @@
         <Deterministic>true</Deterministic>
         <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
         <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-        <PackageReleaseNotes>Fix bug when volume is set to 1f for portaudio, introduce vgmstream</PackageReleaseNotes>
+        <PackageReleaseNotes>Fix deadlock bug in init</PackageReleaseNotes>
         <PackageIcon>cscore-square-notext.png</PackageIcon>
     </PropertyGroup>
     <PropertyGroup Condition="'$(Configuration)' == 'Debug'">

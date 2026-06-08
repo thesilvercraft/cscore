@@ -16,21 +16,19 @@ public unsafe delegate int StreamCallBack(void* input, void* output, ulong frame
 [UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 public unsafe delegate void PaStreamFinishedCallback(void* userData);
 
-
-
 //https://www.portaudio.com/docs/v19-doxydocs/writing_a_callback.html
 
 public class PortAudioSoundOut : ISoundOut
 {
     private readonly object streamLock = new();
-    private float[]? buffer = new float[2];
     private StreamCallBack? _callback;
     private PaStreamFinishedCallback? _finishedCallback;
+    private readonly ILogger? _log;
+    private float[]? buffer = new float[2];
     private int channels;
     private bool isDisposed;
     private bool isPAInit;
     private unsafe PaStream* stream;
-    private ILogger? _log;
     static PortAudioSoundOut()
     {
         try
@@ -44,8 +42,9 @@ public class PortAudioSoundOut : ISoundOut
 
     public PortAudioSoundOut()
     {
-        _log=LogLocation.GetLogger(typeof(PortAudioSoundOut));
+        _log = LogLocation.GetLogger(typeof(PortAudioSoundOut));
     }
+
     private ISampleSource? SampleSource { get; set; }
     public float Volume { get; set; } = 1;
     public IWaveSource? WaveSource { get; set; }
@@ -68,6 +67,7 @@ public class PortAudioSoundOut : ISoundOut
             PortAudioLifetimeManager.Initialize();
             isPAInit = true;
         }
+
         _callback = CallBackMethod;
         _finishedCallback = OnStreamFinished;
         if (source != WaveSource) WaveSource?.Dispose();
@@ -75,48 +75,55 @@ public class PortAudioSoundOut : ISoundOut
         WaveSource = source;
         SampleSource = source.ToSampleSource();
         channels = SampleSource.WaveFormat.Channels;
+
         var initialBufferLength = Math.Max(4096 * channels, 8192);
         buffer = new float[initialBufferLength];
-        if (stream != null)
-        {
-            Stop();
-            lock (streamLock)
-            {
-                ThrowIfError(NativeMethods.Pa_CloseStream(stream));
-                stream = null;
-            }
-        }
+
+        PaStream* oldStream = null;
         lock (streamLock)
         {
-            PaStream* paStream;
-            ThrowIfError(NativeMethods.Pa_OpenDefaultStream(&paStream,
-                0,
-                SampleSource.WaveFormat.Channels,
-                NativeMethods.paFloat32,
-                SampleSource.WaveFormat.SampleRate,
-                0,
-                _callback,
-                0));
-            ThrowIfError(NativeMethods.Pa_SetStreamFinishedCallback(paStream, _finishedCallback));
+            if (stream != null)
+            {
+                oldStream = stream;
+                stream = null;
+                PlaybackState = PlaybackState.Stopped;
+            }
+        }
+
+        if (oldStream != null)
+        {
+            NativeMethods.Pa_StopStream(oldStream);
+            NativeMethods.Pa_CloseStream(oldStream);
+        }
+
+        PaStream* paStream;
+        ThrowIfError(NativeMethods.Pa_OpenDefaultStream(
+            &paStream, 0,
+            SampleSource.WaveFormat.Channels,
+            NativeMethods.paFloat32,
+            SampleSource.WaveFormat.SampleRate,
+            0, _callback, 0));
+        ThrowIfError(NativeMethods.Pa_SetStreamFinishedCallback(paStream, _finishedCallback));
+
+        lock (streamLock)
+        {
             stream = paStream;
         }
-    }
-    public unsafe void OnStreamFinished(void* userData)
-    {
-        Task.Run(OnStop);
     }
 
     public unsafe void Play()
     {
         DebugTrace();
         if (PlaybackState == PlaybackState.Playing) return;
-        ObjectDisposedException.ThrowIf(stream==null, nameof(stream));
-        
-        PlaybackState = PlaybackState.Playing;
-        Task.Run(() =>
+
+        PaStream* s;
+        lock (streamLock)
         {
-            ThrowIfError(NativeMethods.Pa_StartStream(stream));
-        });
+            ObjectDisposedException.ThrowIf(stream == null, nameof(stream));
+            PlaybackState = PlaybackState.Playing;
+            s = stream;
+        }
+        ThrowIfError(NativeMethods.Pa_StartStream(s));
     }
 
     public void Resume()
@@ -124,31 +131,51 @@ public class PortAudioSoundOut : ISoundOut
         if (PlaybackState != PlaybackState.Paused) return;
         Play();
     }
-
     public unsafe void Pause()
     {
         DebugTrace();
         if (PlaybackState != PlaybackState.Playing) return;
-        ObjectDisposedException.ThrowIf(stream==null, nameof(stream));
-        PlaybackState = PlaybackState.Paused;
-        ThrowIfError(NativeMethods.Pa_StopStream(stream));
+
+        PaStream* s;
+        lock (streamLock)
+        {
+            ObjectDisposedException.ThrowIf(stream == null, nameof(stream));
+            PlaybackState = PlaybackState.Paused;
+            s = stream;
+        }
+        ThrowIfError(NativeMethods.Pa_StopStream(s));
     }
 
     public unsafe void Stop()
     {
         if (PlaybackState == PlaybackState.Stopped) return;
         DebugTrace();
-        ObjectDisposedException.ThrowIf(stream==null, nameof(stream));
+
         if (PlaybackState == PlaybackState.Paused)
         {
-            PlaybackState = PlaybackState.Stopped;
-            OnStop();
+            lock (streamLock)
+            {
+                PlaybackState = PlaybackState.Stopped;
+            }
+            Task.Run(OnStop);
             return;
         }
-        PlaybackState = PlaybackState.Stopped;
-        ThrowIfError(NativeMethods.Pa_StopStream(stream));
+
+        PaStream* s;
+        lock (streamLock)
+        {
+            ObjectDisposedException.ThrowIf(stream == null, nameof(stream));
+            s = stream;
+        }
+        ThrowIfError(NativeMethods.Pa_StopStream(s));
     }
 
+
+    public unsafe void OnStreamFinished(void* userData)
+    {
+        if (PlaybackState == PlaybackState.Stopped) return;
+        Task.Run(OnStop);
+    }
     public static bool IsSupported()
     {
         try
@@ -170,31 +197,34 @@ public class PortAudioSoundOut : ISoundOut
 
     protected virtual void Dispose(bool disposing)
     {
-        DebugTrace();
         unsafe
         {
-            if (stream != null)
+            DebugTrace();
+
+            if (isDisposed) return;
+            isDisposed = true;
+
+            PaStream* s;
+            lock (streamLock)
             {
-                NativeMethods.Pa_CloseStream(stream);
+                s = stream;
                 stream = null;
-            }    
-        }
+                PlaybackState = PlaybackState.Stopped;
+            }
 
-        if (disposing)
-        {
-            buffer = null;
-        }
+            if (s != null)
+            {
+                NativeMethods.Pa_StopStream(s);
+                NativeMethods.Pa_CloseStream(s);
+            }
 
-        if (isDisposed) return;
-        _callback= null;
+            if (disposing) buffer = null;
+            _callback = null;
 
-        if (isPAInit)
-        {
+            if (!isPAInit) return;
             PortAudioLifetimeManager.Terminate(_log);
             isPAInit = false;
         }
-
-        isDisposed = true;
     }
 
 
@@ -203,38 +233,35 @@ public class PortAudioSoundOut : ISoundOut
         Dispose(false);
     }
 
+   
     private void OnStop()
     {
-        if (PlaybackState == PlaybackState.Paused)
+        unsafe
         {
-            return;
-        }
-        DebugTrace();
-        PlaybackState = PlaybackState.Stopped;
+            if (PlaybackState == PlaybackState.Paused) return;
+            DebugTrace();
 
-        lock (streamLock)
-        {
-            unsafe
+            PaStream* s;
+            lock (streamLock)
             {
-                if (stream != null)
-                {
-                    var closeResult = NativeMethods.Pa_CloseStream(stream);
-                    if (closeResult != (int)PaErrorCode.paNoError)
-                    {
-                        _log?.Error("PORTAUDIO ERROR: Pa_CloseStream failed with code {CloseResult}", closeResult);
-                        Stopped?.Invoke(this,
-                            new PlaybackStoppedEventArgs(
-                                new PortAudioException($"PortAudio stream closure failed: {closeResult}")));
-                        stream = null;
-                        return;
-                    }
-
-                    stream = null;
-                }
+                if (stream == null) return;
+                s = stream;
+                stream = null;
+                PlaybackState = PlaybackState.Stopped;
             }
-        }
 
-        Stopped?.Invoke(this, new PlaybackStoppedEventArgs());
+            var closeResult = NativeMethods.Pa_CloseStream(s);
+            if (closeResult != (int)PaErrorCode.paNoError)
+            {
+                _log?.Error("PORTAUDIO ERROR: Pa_CloseStream failed with code {CloseResult}", closeResult);
+                Stopped?.Invoke(this,
+                    new PlaybackStoppedEventArgs(
+                        new PortAudioException($"PortAudio stream closure failed: {closeResult}")));
+                return;
+            }
+
+            Stopped?.Invoke(this, new PlaybackStoppedEventArgs());
+        }
     }
 
     private static unsafe void ThrowIfError(int err, [CallerMemberName] string callerName = "",
@@ -258,11 +285,11 @@ public class PortAudioSoundOut : ISoundOut
                 new Span<float>(outputBuffer, bufferLength).Clear();
                 return (int)PaStreamCallbackResult.paContinue;
             }
+
             var read = SampleSource.Read(buffer, 0, bufferLength);
-            
+
             fixed (float* bufferStart = buffer)
             {
-                
                 var bufferI = bufferStart;
                 var bufferEnd = bufferStart + read;
                 var outputI = outputBuffer;
@@ -271,20 +298,21 @@ public class PortAudioSoundOut : ISoundOut
                 {
                     Unsafe.CopyBlockUnaligned(outputI, bufferI, (uint)(read * sizeof(float)));
                     outputI += read;
-                    bufferI += read;// Advance pointer so common zero-fill block handles any underruns
+                    bufferI += read; // Advance pointer so common zero-fill block handles any underruns
                 }
                 else if (currentVolume == 0.0f)
                 {
                     Unsafe.InitBlockUnaligned(outputI, 0, (uint)(read * sizeof(float)));
-                    outputI += read; 
+                    outputI += read;
                     bufferI += read;
                 }
+
                 if (Avx.IsSupported)
                 {
                     var vol = Vector256.Create(currentVolume);
                     while (bufferI + 8 <= bufferEnd)
                     {
-                        var floatInput = Avx.LoadVector256(bufferI);
+                        var floatInput = Avx.LoadVector256(bufferI); 
                         var result = Avx.Multiply(floatInput, vol);
                         Avx.Store(outputI, result);
                         bufferI += 8;
@@ -303,26 +331,22 @@ public class PortAudioSoundOut : ISoundOut
                         outputI += 4;
                     }
                 }
+
                 // Handle remaining samples (scalar fallback)
-                while (bufferI < bufferEnd)
-                {
-                    *outputI++ = *bufferI++ * currentVolume;
-                }
+                while (bufferI < bufferEnd) *outputI++ = *bufferI++ * currentVolume;
                 // do not produce noise if uninitialized
                 var remainingSamples = bufferLength - (int)(outputI - outputBuffer);
                 if (remainingSamples > 0)
-                {
                     Unsafe.InitBlockUnaligned(outputI, 0, (uint)(remainingSamples * sizeof(float)));
-                }
             }
 
-            return read >= bufferLength 
-                ? (int)PaStreamCallbackResult.paContinue 
+            return read >= bufferLength
+                ? (int)PaStreamCallbackResult.paContinue
                 : (int)PaStreamCallbackResult.paComplete;
         }
         catch (Exception e)
         {
-            _log?.Error(e,"ERROR IN THE CALLBACK THREAD");
+            _log?.Error(e, "ERROR IN THE CALLBACK THREAD");
             return (int)PaStreamCallbackResult.paAbort;
         }
     }
