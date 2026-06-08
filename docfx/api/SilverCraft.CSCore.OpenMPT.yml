@@ -13,7 +13,7 @@ items:
   fullName: SilverCraft.CSCore.OpenMPT
   type: Namespace
   assemblies:
-  - SilverCraft.OpenMPT
+  - SilverCraft.CSCore.OpenMPT
 references:
 - uid: SilverCraft.CSCore.OpenMPT.OpenMptWaveStream
   commentId: T:SilverCraft.CSCore.OpenMPT.OpenMptWaveStream

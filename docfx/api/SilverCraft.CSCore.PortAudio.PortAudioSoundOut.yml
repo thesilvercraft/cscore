@@ -34,7 +34,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: PortAudioSoundOut
     path: ../SilverCraft.CSCore.PortAudio/PortAudioSoundOut.cs
-    startLine: 22
+    startLine: 20
   assemblies:
   - SilverCraft.CSCore.PortAudio
   namespace: SilverCraft.CSCore.PortAudio
@@ -76,7 +76,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: .ctor
     path: ../SilverCraft.CSCore.PortAudio/PortAudioSoundOut.cs
-    startLine: 44
+    startLine: 42
   assemblies:
   - SilverCraft.CSCore.PortAudio
   namespace: SilverCraft.CSCore.PortAudio
@@ -105,7 +105,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: Volume
     path: ../SilverCraft.CSCore.PortAudio/PortAudioSoundOut.cs
-    startLine: 49
+    startLine: 48
   assemblies:
   - SilverCraft.CSCore.PortAudio
   namespace: SilverCraft.CSCore.PortAudio
@@ -138,7 +138,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: WaveSource
     path: ../SilverCraft.CSCore.PortAudio/PortAudioSoundOut.cs
-    startLine: 50
+    startLine: 49
   assemblies:
   - SilverCraft.CSCore.PortAudio
   namespace: SilverCraft.CSCore.PortAudio
@@ -171,7 +171,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: PlaybackState
     path: ../SilverCraft.CSCore.PortAudio/PortAudioSoundOut.cs
-    startLine: 51
+    startLine: 50
   assemblies:
   - SilverCraft.CSCore.PortAudio
   namespace: SilverCraft.CSCore.PortAudio
@@ -204,7 +204,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: Stopped
     path: ../SilverCraft.CSCore.PortAudio/PortAudioSoundOut.cs
-    startLine: 53
+    startLine: 52
   assemblies:
   - SilverCraft.CSCore.PortAudio
   namespace: SilverCraft.CSCore.PortAudio
@@ -235,7 +235,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: Dispose
     path: ../SilverCraft.CSCore.PortAudio/PortAudioSoundOut.cs
-    startLine: 55
+    startLine: 54
   assemblies:
   - SilverCraft.CSCore.PortAudio
   namespace: SilverCraft.CSCore.PortAudio
@@ -265,7 +265,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: Initialize
     path: ../SilverCraft.CSCore.PortAudio/PortAudioSoundOut.cs
-    startLine: 61
+    startLine: 60
   assemblies:
   - SilverCraft.CSCore.PortAudio
   namespace: SilverCraft.CSCore.PortAudio
@@ -281,38 +281,6 @@ items:
   overload: SilverCraft.CSCore.PortAudio.PortAudioSoundOut.Initialize*
   implements:
   - SilverCraft.CSCore.SoundOut.ISoundOut.Initialize(SilverCraft.CSCore.IWaveSource)
-- uid: SilverCraft.CSCore.PortAudio.PortAudioSoundOut.OnStreamFinished(System.Void*)
-  commentId: M:SilverCraft.CSCore.PortAudio.PortAudioSoundOut.OnStreamFinished(System.Void*)
-  id: OnStreamFinished(System.Void*)
-  parent: SilverCraft.CSCore.PortAudio.PortAudioSoundOut
-  langs:
-  - csharp
-  - vb
-  name: OnStreamFinished(void*)
-  nameWithType: PortAudioSoundOut.OnStreamFinished(void*)
-  fullName: SilverCraft.CSCore.PortAudio.PortAudioSoundOut.OnStreamFinished(void*)
-  type: Method
-  source:
-    remote:
-      path: SilverCraft.CSCore.PortAudio/PortAudioSoundOut.cs
-      branch: master
-      repo: https://github.com/thesilvercraft/cscore
-    id: OnStreamFinished
-    path: ../SilverCraft.CSCore.PortAudio/PortAudioSoundOut.cs
-    startLine: 103
-  assemblies:
-  - SilverCraft.CSCore.PortAudio
-  namespace: SilverCraft.CSCore.PortAudio
-  syntax:
-    content: public void OnStreamFinished(void* userData)
-    parameters:
-    - id: userData
-      type: System.Void*
-    content.vb: Public Sub OnStreamFinished(userData As Void*)
-  overload: SilverCraft.CSCore.PortAudio.PortAudioSoundOut.OnStreamFinished*
-  nameWithType.vb: PortAudioSoundOut.OnStreamFinished(Void*)
-  fullName.vb: SilverCraft.CSCore.PortAudio.PortAudioSoundOut.OnStreamFinished(Void*)
-  name.vb: OnStreamFinished(Void*)
 - uid: SilverCraft.CSCore.PortAudio.PortAudioSoundOut.Play
   commentId: M:SilverCraft.CSCore.PortAudio.PortAudioSoundOut.Play
   id: Play
@@ -331,7 +299,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: Play
     path: ../SilverCraft.CSCore.PortAudio/PortAudioSoundOut.cs
-    startLine: 108
+    startLine: 113
   assemblies:
   - SilverCraft.CSCore.PortAudio
   namespace: SilverCraft.CSCore.PortAudio
@@ -361,7 +329,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: Resume
     path: ../SilverCraft.CSCore.PortAudio/PortAudioSoundOut.cs
-    startLine: 121
+    startLine: 128
   assemblies:
   - SilverCraft.CSCore.PortAudio
   namespace: SilverCraft.CSCore.PortAudio
@@ -391,7 +359,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: Pause
     path: ../SilverCraft.CSCore.PortAudio/PortAudioSoundOut.cs
-    startLine: 127
+    startLine: 133
   assemblies:
   - SilverCraft.CSCore.PortAudio
   namespace: SilverCraft.CSCore.PortAudio
@@ -421,7 +389,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: Stop
     path: ../SilverCraft.CSCore.PortAudio/PortAudioSoundOut.cs
-    startLine: 136
+    startLine: 148
   assemblies:
   - SilverCraft.CSCore.PortAudio
   namespace: SilverCraft.CSCore.PortAudio
@@ -433,6 +401,38 @@ items:
   overload: SilverCraft.CSCore.PortAudio.PortAudioSoundOut.Stop*
   implements:
   - SilverCraft.CSCore.SoundOut.ISoundOut.Stop
+- uid: SilverCraft.CSCore.PortAudio.PortAudioSoundOut.OnStreamFinished(System.Void*)
+  commentId: M:SilverCraft.CSCore.PortAudio.PortAudioSoundOut.OnStreamFinished(System.Void*)
+  id: OnStreamFinished(System.Void*)
+  parent: SilverCraft.CSCore.PortAudio.PortAudioSoundOut
+  langs:
+  - csharp
+  - vb
+  name: OnStreamFinished(void*)
+  nameWithType: PortAudioSoundOut.OnStreamFinished(void*)
+  fullName: SilverCraft.CSCore.PortAudio.PortAudioSoundOut.OnStreamFinished(void*)
+  type: Method
+  source:
+    remote:
+      path: SilverCraft.CSCore.PortAudio/PortAudioSoundOut.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: OnStreamFinished
+    path: ../SilverCraft.CSCore.PortAudio/PortAudioSoundOut.cs
+    startLine: 173
+  assemblies:
+  - SilverCraft.CSCore.PortAudio
+  namespace: SilverCraft.CSCore.PortAudio
+  syntax:
+    content: public void OnStreamFinished(void* userData)
+    parameters:
+    - id: userData
+      type: System.Void*
+    content.vb: Public Sub OnStreamFinished(userData As Void*)
+  overload: SilverCraft.CSCore.PortAudio.PortAudioSoundOut.OnStreamFinished*
+  nameWithType.vb: PortAudioSoundOut.OnStreamFinished(Void*)
+  fullName.vb: SilverCraft.CSCore.PortAudio.PortAudioSoundOut.OnStreamFinished(Void*)
+  name.vb: OnStreamFinished(Void*)
 - uid: SilverCraft.CSCore.PortAudio.PortAudioSoundOut.IsSupported
   commentId: M:SilverCraft.CSCore.PortAudio.PortAudioSoundOut.IsSupported
   id: IsSupported
@@ -451,7 +451,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: IsSupported
     path: ../SilverCraft.CSCore.PortAudio/PortAudioSoundOut.cs
-    startLine: 151
+    startLine: 178
   assemblies:
   - SilverCraft.CSCore.PortAudio
   namespace: SilverCraft.CSCore.PortAudio
@@ -479,7 +479,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: Dispose
     path: ../SilverCraft.CSCore.PortAudio/PortAudioSoundOut.cs
-    startLine: 170
+    startLine: 197
   assemblies:
   - SilverCraft.CSCore.PortAudio
   namespace: SilverCraft.CSCore.PortAudio
@@ -511,7 +511,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: Finalize
     path: ../SilverCraft.CSCore.PortAudio/PortAudioSoundOut.cs
-    startLine: 200
+    startLine: 230
   assemblies:
   - SilverCraft.CSCore.PortAudio
   namespace: SilverCraft.CSCore.PortAudio
@@ -1286,33 +1286,6 @@ references:
   name: Initialize
   nameWithType: PortAudioSoundOut.Initialize
   fullName: SilverCraft.CSCore.PortAudio.PortAudioSoundOut.Initialize
-- uid: SilverCraft.CSCore.PortAudio.PortAudioSoundOut.OnStreamFinished*
-  commentId: Overload:SilverCraft.CSCore.PortAudio.PortAudioSoundOut.OnStreamFinished
-  href: SilverCraft.CSCore.PortAudio.PortAudioSoundOut.html#SilverCraft_CSCore_PortAudio_PortAudioSoundOut_OnStreamFinished_System_Void__
-  name: OnStreamFinished
-  nameWithType: PortAudioSoundOut.OnStreamFinished
-  fullName: SilverCraft.CSCore.PortAudio.PortAudioSoundOut.OnStreamFinished
-- uid: System.Void*
-  isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system.void
-  name: void*
-  nameWithType: void*
-  fullName: void*
-  nameWithType.vb: Void*
-  fullName.vb: Void*
-  name.vb: Void*
-  spec.csharp:
-  - uid: System.Void
-    name: void
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.void
-  - name: '*'
-  spec.vb:
-  - uid: System.Void
-    name: Void
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.void
-  - name: '*'
 - uid: SilverCraft.CSCore.PortAudio.PortAudioSoundOut.Play*
   commentId: Overload:SilverCraft.CSCore.PortAudio.PortAudioSoundOut.Play
   href: SilverCraft.CSCore.PortAudio.PortAudioSoundOut.html#SilverCraft_CSCore_PortAudio_PortAudioSoundOut_Play
@@ -1413,6 +1386,33 @@ references:
     href: SilverCraft.CSCore.SoundOut.ISoundOut.html#SilverCraft_CSCore_SoundOut_ISoundOut_Stop
   - name: (
   - name: )
+- uid: SilverCraft.CSCore.PortAudio.PortAudioSoundOut.OnStreamFinished*
+  commentId: Overload:SilverCraft.CSCore.PortAudio.PortAudioSoundOut.OnStreamFinished
+  href: SilverCraft.CSCore.PortAudio.PortAudioSoundOut.html#SilverCraft_CSCore_PortAudio_PortAudioSoundOut_OnStreamFinished_System_Void__
+  name: OnStreamFinished
+  nameWithType: PortAudioSoundOut.OnStreamFinished
+  fullName: SilverCraft.CSCore.PortAudio.PortAudioSoundOut.OnStreamFinished
+- uid: System.Void*
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.void
+  name: void*
+  nameWithType: void*
+  fullName: void*
+  nameWithType.vb: Void*
+  fullName.vb: Void*
+  name.vb: Void*
+  spec.csharp:
+  - uid: System.Void
+    name: void
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.void
+  - name: '*'
+  spec.vb:
+  - uid: System.Void
+    name: Void
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.void
+  - name: '*'
 - uid: SilverCraft.CSCore.PortAudio.PortAudioSoundOut.IsSupported*
   commentId: Overload:SilverCraft.CSCore.PortAudio.PortAudioSoundOut.IsSupported
   href: SilverCraft.CSCore.PortAudio.PortAudioSoundOut.html#SilverCraft_CSCore_PortAudio_PortAudioSoundOut_IsSupported

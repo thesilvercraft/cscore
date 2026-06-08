@@ -6,9 +6,6 @@
         <Nullable>enable</Nullable>
         <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
         <Description>vgmstream support for SilverCraft.CSCore</Description>
-        <RepositoryType>git</RepositoryType>
-        <RepositoryUrl>https://github.com/thesilvercraft/cscore</RepositoryUrl>
-        <PackageProjectUrl>https://github.com/thesilvercraft/cscore/tree/master/SilverCraft.VGMStream</PackageProjectUrl>
         <PackageLicenseExpression>GPL-3.0-only</PackageLicenseExpression>
         <PackageRequireLicenseAcceptance>True</PackageRequireLicenseAcceptance>
         <IncludeSymbols>True</IncludeSymbols>

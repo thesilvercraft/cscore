@@ -7,7 +7,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SilverCraft.CSCore", "Silve
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SilverCraft.CSCore.PortAudio", "SilverCraft.CSCore.PortAudio\SilverCraft.CSCore.PortAudio.csproj", "{81F0CE41-07C1-47A1-9120-503DC6ADC7D5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SilverCraft.OpenMPT", "SilverCraft.CSCore.OpenMPT\SilverCraft.OpenMPT.csproj", "{D5ADC9A7-0800-4849-AFA7-CC8878E1D74F}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SilverCraft.CSCore.OpenMPT", "SilverCraft.CSCore.OpenMPT\SilverCraft.CSCore.OpenMPT.csproj", "{D5ADC9A7-0800-4849-AFA7-CC8878E1D74F}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SilverCraft.CSCore.SndFile", "SilverCraft.SndFile\SilverCraft.CSCore.SndFile.csproj", "{8BE640F8-CF2E-4AF8-8B47-CCBEF71C8ADD}"
 EndProject
@@ -16,6 +16,11 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SilverCraft.CSCore.Benchmark", "SilverCraft.CSCore.Benchmark\SilverCraft.CSCore.Benchmark.csproj", "{51475C91-3AAE-43F3-90E3-E403396536B3}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SilverCraft.CSCore.VGMStream", "SilverCraft.CSCore.VGMStream\SilverCraft.CSCore.VGMStream.csproj", "{F0F716F9-9286-4974-BBD7-C08E407F51A5}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Files", "Solution Files", "{84BF966E-3EC5-43E7-950D-1D060FBFE3A0}"
+	ProjectSection(SolutionItems) = preProject
+		SilverCraft.CSCore.targets = SilverCraft.CSCore.targets
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -21,7 +21,7 @@ items:
   fullName: OpenMPT
   type: Namespace
   assemblies:
-  - SilverCraft.OpenMPT
+  - SilverCraft.CSCore.OpenMPT
 references:
 - uid: OpenMPT.openmpt_module
   commentId: T:OpenMPT.openmpt_module

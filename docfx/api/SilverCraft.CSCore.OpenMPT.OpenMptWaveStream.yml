@@ -37,7 +37,7 @@ items:
     path: ../SilverCraft.CSCore.OpenMPT/OpenMptWaveStream.cs
     startLine: 5
   assemblies:
-  - SilverCraft.OpenMPT
+  - SilverCraft.CSCore.OpenMPT
   namespace: SilverCraft.CSCore.OpenMPT
   syntax:
     content: 'public class OpenMptWaveStream : ISampleSource, IReadableAudioSource<float>, IAudioSource, IDisposable, ISelector, ILoop'
@@ -96,7 +96,7 @@ items:
     path: ../SilverCraft.CSCore.OpenMPT/OpenMptWaveStream.cs
     startLine: 9
   assemblies:
-  - SilverCraft.OpenMPT
+  - SilverCraft.CSCore.OpenMPT
   namespace: SilverCraft.CSCore.OpenMPT
   syntax:
     content: public static bool ResolverIsSet
@@ -123,7 +123,7 @@ items:
     path: ../SilverCraft.CSCore.OpenMPT/OpenMptWaveStream.cs
     startLine: 10
   assemblies:
-  - SilverCraft.OpenMPT
+  - SilverCraft.CSCore.OpenMPT
   namespace: SilverCraft.CSCore.OpenMPT
   syntax:
     content: public OpenMptWaveStream(Stream s)
@@ -155,7 +155,7 @@ items:
     path: ../SilverCraft.CSCore.OpenMPT/OpenMptWaveStream.cs
     startLine: 24
   assemblies:
-  - SilverCraft.OpenMPT
+  - SilverCraft.CSCore.OpenMPT
   namespace: SilverCraft.CSCore.OpenMPT
   summary: >-
     Reads a sequence of elements from the <xref href="SilverCraft.CSCore.IReadableAudioSource%601" data-throw-if-not-resolved="false"></xref> and advances the position within the
@@ -214,7 +214,7 @@ items:
     path: ../SilverCraft.CSCore.OpenMPT/OpenMptWaveStream.cs
     startLine: 47
   assemblies:
-  - SilverCraft.OpenMPT
+  - SilverCraft.CSCore.OpenMPT
   namespace: SilverCraft.CSCore.OpenMPT
   summary: Performs application-defined tasks associated with freeing, releasing, or resetting unmanaged resources.
   example: []
@@ -244,7 +244,7 @@ items:
     path: ../SilverCraft.CSCore.OpenMPT/OpenMptWaveStream.cs
     startLine: 53
   assemblies:
-  - SilverCraft.OpenMPT
+  - SilverCraft.CSCore.OpenMPT
   namespace: SilverCraft.CSCore.OpenMPT
   syntax:
     content: protected virtual void Dispose(bool disposing)
@@ -276,7 +276,7 @@ items:
     path: ../SilverCraft.CSCore.OpenMPT/OpenMptWaveStream.cs
     startLine: 67
   assemblies:
-  - SilverCraft.OpenMPT
+  - SilverCraft.CSCore.OpenMPT
   namespace: SilverCraft.CSCore.OpenMPT
   syntax:
     content: protected ~OpenMptWaveStream()
@@ -305,7 +305,7 @@ items:
     path: ../SilverCraft.CSCore.OpenMPT/OpenMptWaveStream.cs
     startLine: 72
   assemblies:
-  - SilverCraft.OpenMPT
+  - SilverCraft.CSCore.OpenMPT
   namespace: SilverCraft.CSCore.OpenMPT
   example: []
   syntax:
@@ -340,7 +340,7 @@ items:
     path: ../SilverCraft.CSCore.OpenMPT/OpenMptWaveStream.cs
     startLine: 78
   assemblies:
-  - SilverCraft.OpenMPT
+  - SilverCraft.CSCore.OpenMPT
   namespace: SilverCraft.CSCore.OpenMPT
   example: []
   syntax:
@@ -369,7 +369,7 @@ items:
     path: ../SilverCraft.CSCore.OpenMPT/OpenMptWaveStream.cs
     startLine: 83
   assemblies:
-  - SilverCraft.OpenMPT
+  - SilverCraft.CSCore.OpenMPT
   namespace: SilverCraft.CSCore.OpenMPT
   example: []
   syntax:
@@ -398,7 +398,7 @@ items:
     path: ../SilverCraft.CSCore.OpenMPT/OpenMptWaveStream.cs
     startLine: 89
   assemblies:
-  - SilverCraft.OpenMPT
+  - SilverCraft.CSCore.OpenMPT
   namespace: SilverCraft.CSCore.OpenMPT
   summary: Gets a value indicating whether the <xref href="SilverCraft.CSCore.IAudioSource" data-throw-if-not-resolved="false"></xref> supports seeking.
   example: []
@@ -431,7 +431,7 @@ items:
     path: ../SilverCraft.CSCore.OpenMPT/OpenMptWaveStream.cs
     startLine: 90
   assemblies:
-  - SilverCraft.OpenMPT
+  - SilverCraft.CSCore.OpenMPT
   namespace: SilverCraft.CSCore.OpenMPT
   summary: Gets the <xref href="SilverCraft.CSCore.IAudioSource.WaveFormat" data-throw-if-not-resolved="false"></xref> of the waveform-audio data.
   example: []
@@ -464,7 +464,7 @@ items:
     path: ../SilverCraft.CSCore.OpenMPT/OpenMptWaveStream.cs
     startLine: 91
   assemblies:
-  - SilverCraft.OpenMPT
+  - SilverCraft.CSCore.OpenMPT
   namespace: SilverCraft.CSCore.OpenMPT
   summary: >-
     Gets or sets the current position. The unit of this property depends on the implementation of this interface. Some
@@ -500,7 +500,7 @@ items:
     path: ../SilverCraft.CSCore.OpenMPT/OpenMptWaveStream.cs
     startLine: 103
   assemblies:
-  - SilverCraft.OpenMPT
+  - SilverCraft.CSCore.OpenMPT
   namespace: SilverCraft.CSCore.OpenMPT
   summary: >-
     Gets the length of the waveform-audio data. The unit of this property depends on the implementation of this
@@ -536,7 +536,7 @@ items:
     path: ../SilverCraft.CSCore.OpenMPT/OpenMptWaveStream.cs
     startLine: 105
   assemblies:
-  - SilverCraft.OpenMPT
+  - SilverCraft.CSCore.OpenMPT
   namespace: SilverCraft.CSCore.OpenMPT
   example: []
   syntax:
@@ -568,7 +568,7 @@ items:
     path: ../SilverCraft.CSCore.OpenMPT/OpenMptWaveStream.cs
     startLine: 107
   assemblies:
-  - SilverCraft.OpenMPT
+  - SilverCraft.CSCore.OpenMPT
   namespace: SilverCraft.CSCore.OpenMPT
   example: []
   syntax:
@@ -600,7 +600,7 @@ items:
     path: ../SilverCraft.CSCore.OpenMPT/OpenMptWaveStream.cs
     startLine: 109
   assemblies:
-  - SilverCraft.OpenMPT
+  - SilverCraft.CSCore.OpenMPT
   namespace: SilverCraft.CSCore.OpenMPT
   example: []
   syntax:

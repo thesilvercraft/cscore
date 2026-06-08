@@ -21,7 +21,7 @@ items:
     path: ../SilverCraft.CSCore.OpenMPT/Interop/openmpt_stream_callbacks.cs
     startLine: 68
   assemblies:
-  - SilverCraft.OpenMPT
+  - SilverCraft.CSCore.OpenMPT
   namespace: OpenMPT
   syntax:
     content: public delegate int VirtualSeek(nint stream, nint offset, Whence whence)

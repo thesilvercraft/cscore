@@ -23,7 +23,7 @@ items:
     path: ../SilverCraft.CSCore.OpenMPT/Interop/openmpt_module_initial_ctl.cs
     startLine: 2
   assemblies:
-  - SilverCraft.OpenMPT
+  - SilverCraft.CSCore.OpenMPT
   namespace: OpenMPT
   syntax:
     content: public struct openmpt_module_initial_ctl
@@ -55,7 +55,7 @@ items:
     path: ../SilverCraft.CSCore.OpenMPT/Interop/openmpt_module_initial_ctl.cs
     startLine: 5
   assemblies:
-  - SilverCraft.OpenMPT
+  - SilverCraft.CSCore.OpenMPT
   namespace: OpenMPT
   syntax:
     content: public sbyte* ctl
@@ -82,7 +82,7 @@ items:
     path: ../SilverCraft.CSCore.OpenMPT/Interop/openmpt_module_initial_ctl.cs
     startLine: 8
   assemblies:
-  - SilverCraft.OpenMPT
+  - SilverCraft.CSCore.OpenMPT
   namespace: OpenMPT
   syntax:
     content: public sbyte* value

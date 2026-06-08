@@ -21,7 +21,7 @@ items:
     path: ../SilverCraft.CSCore.OpenMPT/Interop/NativeMethods.cs
     startLine: 14
   assemblies:
-  - SilverCraft.OpenMPT
+  - SilverCraft.CSCore.OpenMPT
   namespace: OpenMPT
   syntax:
     content: public struct openmpt_module

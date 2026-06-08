@@ -29,7 +29,7 @@ items:
     path: ../SilverCraft.CSCore.OpenMPT/Interop/openmpt_stream_callbacks.cs
     startLine: 77
   assemblies:
-  - SilverCraft.OpenMPT
+  - SilverCraft.CSCore.OpenMPT
   namespace: OpenMPT
   syntax:
     content: public struct openmpt_stream_callbacks
@@ -59,7 +59,7 @@ items:
     path: ../SilverCraft.CSCore.OpenMPT/Interop/openmpt_stream_callbacks.cs
     startLine: 81
   assemblies:
-  - SilverCraft.OpenMPT
+  - SilverCraft.CSCore.OpenMPT
   namespace: OpenMPT
   syntax:
     content: >-
@@ -96,7 +96,7 @@ items:
     path: ../SilverCraft.CSCore.OpenMPT/Interop/openmpt_stream_callbacks.cs
     startLine: 84
   assemblies:
-  - SilverCraft.OpenMPT
+  - SilverCraft.CSCore.OpenMPT
   namespace: OpenMPT
   syntax:
     content: >-
@@ -133,7 +133,7 @@ items:
     path: ../SilverCraft.CSCore.OpenMPT/Interop/openmpt_stream_callbacks.cs
     startLine: 87
   assemblies:
-  - SilverCraft.OpenMPT
+  - SilverCraft.CSCore.OpenMPT
   namespace: OpenMPT
   syntax:
     content: >-
@@ -170,7 +170,7 @@ items:
     path: ../SilverCraft.CSCore.OpenMPT/Interop/openmpt_stream_callbacks.cs
     startLine: 89
   assemblies:
-  - SilverCraft.OpenMPT
+  - SilverCraft.CSCore.OpenMPT
   namespace: OpenMPT
   syntax:
     content: public openmpt_stream_callbacks(VirtualSeek seek, VirtualRead read, VirtualTell tell)
@@ -218,7 +218,7 @@ items:
     path: ../SilverCraft.CSCore.OpenMPT/Interop/openmpt_stream_callbacks.cs
     startLine: 105
   assemblies:
-  - SilverCraft.OpenMPT
+  - SilverCraft.CSCore.OpenMPT
   namespace: OpenMPT
   summary: Indicates whether this instance and a specified object are equal.
   example: []
@@ -257,7 +257,7 @@ items:
     path: ../SilverCraft.CSCore.OpenMPT/Interop/openmpt_stream_callbacks.cs
     startLine: 110
   assemblies:
-  - SilverCraft.OpenMPT
+  - SilverCraft.CSCore.OpenMPT
   namespace: OpenMPT
   summary: Returns the hash code for this instance.
   example: []
@@ -289,7 +289,7 @@ items:
     path: ../SilverCraft.CSCore.OpenMPT/Interop/openmpt_stream_callbacks.cs
     startLine: 115
   assemblies:
-  - SilverCraft.OpenMPT
+  - SilverCraft.CSCore.OpenMPT
   namespace: OpenMPT
   syntax:
     content: public static bool operator ==(openmpt_stream_callbacks left, openmpt_stream_callbacks right)
@@ -325,7 +325,7 @@ items:
     path: ../SilverCraft.CSCore.OpenMPT/Interop/openmpt_stream_callbacks.cs
     startLine: 120
   assemblies:
-  - SilverCraft.OpenMPT
+  - SilverCraft.CSCore.OpenMPT
   namespace: OpenMPT
   syntax:
     content: public static bool operator !=(openmpt_stream_callbacks left, openmpt_stream_callbacks right)

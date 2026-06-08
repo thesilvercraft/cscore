@@ -4,6 +4,7 @@ _layout: landing
 ![cscore.svg](images/cscore.svg)
 
 # SilverCraft's fork of CSCore
+Located at https://github.com/thesilvercraft/cscore  
 Check out the [original cscore project](https://github.com/filoe/cscore)  
 A short list of differences between this project and the original cscore:
 - Linux support (OpenAL, PortAudio as addon)

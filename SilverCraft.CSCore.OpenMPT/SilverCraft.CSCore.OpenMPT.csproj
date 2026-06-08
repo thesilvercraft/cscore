@@ -4,13 +4,12 @@
   <PropertyGroup>
     <TargetFramework>net8.0</TargetFramework>
     <Description>openmpt support for SilverCraft.CSCore</Description>
-    <RepositoryType>git</RepositoryType>
-    <RepositoryUrl>https://github.com/thesilvercraft/cscore</RepositoryUrl>
-    <PackageProjectUrl>https://github.com/thesilvercraft/cscore/tree/master/SilverCraft.CSCore.OpenMPT</PackageProjectUrl>
     <PackageLicenseExpression>GPL-3.0-only</PackageLicenseExpression>
     <PackageRequireLicenseAcceptance>True</PackageRequireLicenseAcceptance>
     <IncludeSymbols>True</IncludeSymbols>
     <SymbolPackageFormat>snupkg</SymbolPackageFormat>
+    <AssemblyName>SilverCraft.CSCore.OpenMPT</AssemblyName>
+    <RootNamespace>SilverCraft.CSCore.OpenMPT</RootNamespace>
   </PropertyGroup>
   <ItemGroup>
     <ProjectReference Include="..\SilverCraft.CSCore\SilverCraft.CSCore.csproj" />

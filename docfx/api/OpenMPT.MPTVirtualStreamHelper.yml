@@ -24,7 +24,7 @@ items:
     path: ../SilverCraft.CSCore.OpenMPT/Interop/openmpt_stream_callbacks.cs
     startLine: 6
   assemblies:
-  - SilverCraft.OpenMPT
+  - SilverCraft.CSCore.OpenMPT
   namespace: OpenMPT
   syntax:
     content: 'public sealed class MPTVirtualStreamHelper : IDisposable'
@@ -62,7 +62,7 @@ items:
     path: ../SilverCraft.CSCore.OpenMPT/Interop/openmpt_stream_callbacks.cs
     startLine: 8
   assemblies:
-  - SilverCraft.OpenMPT
+  - SilverCraft.CSCore.OpenMPT
   namespace: OpenMPT
   syntax:
     content: public MPTVirtualStreamHelper(Stream stream, bool disposeStream = true)
@@ -100,7 +100,7 @@ items:
     path: ../SilverCraft.CSCore.OpenMPT/Interop/openmpt_stream_callbacks.cs
     startLine: 22
   assemblies:
-  - SilverCraft.OpenMPT
+  - SilverCraft.CSCore.OpenMPT
   namespace: OpenMPT
   syntax:
     content: public openmpt_stream_callbacks Virtual { get; }
@@ -129,7 +129,7 @@ items:
     path: ../SilverCraft.CSCore.OpenMPT/Interop/openmpt_stream_callbacks.cs
     startLine: 24
   assemblies:
-  - SilverCraft.OpenMPT
+  - SilverCraft.CSCore.OpenMPT
   namespace: OpenMPT
   summary: Performs application-defined tasks associated with freeing, releasing, or resetting unmanaged resources.
   example: []

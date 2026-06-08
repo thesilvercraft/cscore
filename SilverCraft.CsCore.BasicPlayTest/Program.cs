@@ -7,10 +7,11 @@ using SilverCraft.CSCore.Streams.SampleConverter;
 using SilverCraft.CSCore.VGMStream;
 args = ["/home/silver/source/cscore/SilverCraft.CsCore.BasicPlayTest/music.flac"];
 float volume = 1f;
+    PortAudioSoundOut soundOut = new();
+
 while (true)
 {
     FlacFile f = new(args.Length>0 ? args[0] : "../../../music.flac");
-    PortAudioSoundOut soundOut = new();
     soundOut.Initialize(f);
     soundOut.Volume = volume;
     soundOut.Play();
@@ -39,6 +40,5 @@ while (true)
         }
         Thread.Sleep(100);
     }
-    soundOut.Dispose();
     f.Dispose();
 }
