@@ -169,7 +169,11 @@ public class PortAudioSoundOut : ISoundOut
         PaStream* s;
         lock (streamLock)
         {
-            ObjectDisposedException.ThrowIf(stream == null, typeof(PaStream));
+            if (stream == null)
+            {
+                PlaybackState = PlaybackState.Stopped;
+                return;
+            }
             s = stream;
         }
         ThrowIfError(NativeMethods.Pa_AbortStream(s));
