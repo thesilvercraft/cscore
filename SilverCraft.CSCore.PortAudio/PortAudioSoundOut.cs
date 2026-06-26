@@ -46,7 +46,12 @@ public class PortAudioSoundOut : ISoundOut
     }
 
     private ISampleSource? SampleSource { get; set; }
-    public float Volume { get; set; } = 1;
+    private float _volume = 1.0f;
+    public float Volume 
+    { 
+        get => Volatile.Read(ref _volume); 
+        set => Volatile.Write(ref _volume, value); 
+    }
     public IWaveSource? WaveSource { get; set; }
     public PlaybackState PlaybackState { get; set; } = PlaybackState.Stopped;
 
@@ -92,7 +97,7 @@ public class PortAudioSoundOut : ISoundOut
 
         if (oldStream != null)
         {
-            NativeMethods.Pa_StopStream(oldStream);
+            NativeMethods.Pa_AbortStream(oldStream);
             NativeMethods.Pa_CloseStream(oldStream);
         }
 
@@ -164,10 +169,10 @@ public class PortAudioSoundOut : ISoundOut
         PaStream* s;
         lock (streamLock)
         {
-            ObjectDisposedException.ThrowIf(stream == null, nameof(stream));
+            ObjectDisposedException.ThrowIf(stream == null, typeof(PaStream));
             s = stream;
         }
-        ThrowIfError(NativeMethods.Pa_StopStream(s));
+        ThrowIfError(NativeMethods.Pa_AbortStream(s));
     }
 
 
@@ -214,8 +219,7 @@ public class PortAudioSoundOut : ISoundOut
 
             if (s != null)
             {
-                NativeMethods.Pa_StopStream(s);
-                NativeMethods.Pa_CloseStream(s);
+                NativeMethods.Pa_AbortStream(s);
             }
 
             if (disposing) buffer = null;
@@ -283,6 +287,7 @@ public class PortAudioSoundOut : ISoundOut
             {
                 Debugger.Break();
                 new Span<float>(outputBuffer, bufferLength).Clear();
+                Array.Resize(ref buffer, bufferLength);
                 return (int)PaStreamCallbackResult.paContinue;
             }
 
@@ -306,8 +311,7 @@ public class PortAudioSoundOut : ISoundOut
                     outputI += read;
                     bufferI += read;
                 }
-
-                if (Avx.IsSupported)
+                else if (Avx.IsSupported)
                 {
                     var vol = Vector256.Create(currentVolume);
                     while (bufferI + 8 <= bufferEnd)
@@ -340,7 +344,7 @@ public class PortAudioSoundOut : ISoundOut
                     Unsafe.InitBlockUnaligned(outputI, 0, (uint)(remainingSamples * sizeof(float)));
             }
 
-            return read >= bufferLength
+            return read > 0
                 ? (int)PaStreamCallbackResult.paContinue
                 : (int)PaStreamCallbackResult.paComplete;
         }

@@ -17,7 +17,10 @@ public static class PortAudioLifetimeManager
     /// </remarks>
     public static void IPinkyPromiseToTerminatePortAudioMyself()
     {
-        DisableTerminate = true;
+        lock (Lock)
+        {
+            DisableTerminate = true;
+        }
     }
 
     /// <summary>
