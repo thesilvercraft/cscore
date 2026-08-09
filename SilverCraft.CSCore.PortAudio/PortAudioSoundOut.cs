@@ -6,6 +6,7 @@ using System.Runtime.Intrinsics.X86;
 using Serilog;
 using SilverCraft.CSCore.PortAudio.Native;
 using SilverCraft.CSCore.SoundOut;
+
 namespace SilverCraft.CSCore.PortAudio;
 
 [UnmanagedFunctionPointer(CallingConvention.Cdecl)]
@@ -47,11 +48,13 @@ public class PortAudioSoundOut : ISoundOut
 
     private ISampleSource? SampleSource { get; set; }
     private float _volume = 1.0f;
-    public float Volume 
-    { 
-        get => Volatile.Read(ref _volume); 
-        set => Volatile.Write(ref _volume, value); 
+
+    public float Volume
+    {
+        get => Volatile.Read(ref _volume);
+        set => Volatile.Write(ref _volume, value);
     }
+
     public IWaveSource? WaveSource { get; set; }
     public PlaybackState PlaybackState { get; set; } = PlaybackState.Stopped;
 
@@ -77,7 +80,7 @@ public class PortAudioSoundOut : ISoundOut
 
         if (source != WaveSource) WaveSource?.Dispose();
         SampleSource?.Dispose();
-        
+
         WaveSource = source;
         SampleSource = source.ToSampleSource();
         channels = SampleSource.WaveFormat.Channels;
@@ -119,6 +122,7 @@ public class PortAudioSoundOut : ISoundOut
             PlaybackState = PlaybackState.Playing;
             s = stream;
         }
+
         ThrowIfError(NativeMethods.Pa_StartStream(s));
     }
 
@@ -140,6 +144,7 @@ public class PortAudioSoundOut : ISoundOut
             PlaybackState = PlaybackState.Paused;
             s = stream;
         }
+
         ThrowIfError(NativeMethods.Pa_StopStream(s));
     }
 
@@ -155,17 +160,19 @@ public class PortAudioSoundOut : ISoundOut
     public unsafe void OnStreamFinished(void* userData)
     {
         int callbackStreamId = (int)(nint)userData;
-    
+
         if (callbackStreamId != Volatile.Read(ref _currentStreamId))
         {
             DebugTrace($"Ignoring finished callback for obsolete stream ID {callbackStreamId}");
             return;
         }
+
         if (PlaybackState != PlaybackState.Playing)
         {
             DebugTrace($"Ignoring stream finished callback because state is {PlaybackState}");
             return;
         }
+
         if (PlaybackState == PlaybackState.Stopped) return;
         Task.Run(OnStop);
     }
@@ -192,6 +199,7 @@ public class PortAudioSoundOut : ISoundOut
                 PlaybackState = PlaybackState.Stopped;
                 return;
             }
+
             s = stream;
             stream = null;
             PlaybackState = PlaybackState.Stopped;
@@ -281,8 +289,13 @@ public class PortAudioSoundOut : ISoundOut
             }
 
             var outputBuffer = (float*)output;
+            if (frameCount > (ulong)(int.MaxValue / channels))
+            {
+                _log?.Error("Unusually large frameCount in callback method {frameCount}", frameCount);
+                return (int)PaStreamCallbackResult.paAbort;
+            }
             var bufferLength = (int)frameCount * channels;
-            
+
             if (buffer == null || buffer.Length < bufferLength)
             {
                 new Span<float>(outputBuffer, bufferLength).Clear();
@@ -291,6 +304,14 @@ public class PortAudioSoundOut : ISoundOut
             }
 
             var read = localSampleSource.Read(buffer, 0, bufferLength);
+            if (read > bufferLength)
+            {
+                read=bufferLength;
+            }
+            else if (read < 0)
+            {
+                read = 0;
+            }
 
             fixed (float* bufferStart = buffer)
             {
@@ -316,7 +337,8 @@ public class PortAudioSoundOut : ISoundOut
                     var vol = Vector256.Create(currentVolume);
                     while (bufferI + 8 <= bufferEnd)
                     {
-                        var floatInput = Avx.LoadVector256(bufferI); //NOT LoadAlignedVector256, our buffer is not aligned
+                        var floatInput =
+                            Avx.LoadVector256(bufferI); //NOT LoadAlignedVector256, our buffer is not aligned
                         var result = Avx.Multiply(floatInput, vol);
                         Avx.Store(outputI, result);
                         bufferI += 8;
@@ -328,7 +350,8 @@ public class PortAudioSoundOut : ISoundOut
                     var vol128 = Vector128.Create(currentVolume);
                     while (bufferI + 4 <= bufferEnd)
                     {
-                        var floatInput = Sse.LoadVector128(bufferI);//NOT LoadAlignedVector128, our buffer is not aligned
+                        var floatInput =
+                            Sse.LoadVector128(bufferI); //NOT LoadAlignedVector128, our buffer is not aligned
                         var result = Sse.Multiply(floatInput, vol128);
                         Sse.Store(outputI, result);
                         bufferI += 4;

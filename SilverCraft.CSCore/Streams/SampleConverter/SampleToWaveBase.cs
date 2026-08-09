@@ -1,5 +1,4 @@
-﻿using System;
-
+﻿
 namespace SilverCraft.CSCore.Streams.SampleConverter
 {
     /// <summary>

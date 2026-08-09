@@ -1,4 +1,6 @@
-﻿using System;
+﻿using System.Runtime.InteropServices;
+using System.Runtime.Intrinsics;
+using System.Runtime.Intrinsics.X86;
 
 namespace SilverCraft.CSCore.Streams.SampleConverter
 {
@@ -36,19 +38,56 @@ namespace SilverCraft.CSCore.Streams.SampleConverter
         /// </param>
         /// <param name="count">The maximum number of samples to read from the current source.</param>
         /// <returns>The total number of samples read into the buffer.</returns>
-        public override unsafe int Read(float[] buffer, int offset, int count)
+        public override int Read(float[] buffer, int offset, int count)
         {
-            Buffer = Buffer.CheckBuffer(count);
-            var read = Source.Read(Buffer, 0, count);
-            fixed (float* ptrBuffer = buffer)
+            var bytesToRead = count;
+            Buffer = Buffer.CheckBuffer(bytesToRead);
+            var bytesRead = Source.Read(Buffer, 0, bytesToRead);
+
+            ReadOnlySpan<byte> rawBytes = Buffer.AsSpan(0, bytesRead);
+            var targetSamples = buffer.AsSpan(offset, bytesRead);
+
+            var i = 0;
+            ref var srcRef = ref MemoryMarshal.GetReference(rawBytes);
+            if (Vector256.IsHardwareAccelerated && Vector128.IsHardwareAccelerated && rawBytes.Length >= 32)
             {
-                var ppbuffer = ptrBuffer + offset;
-                for (var i = 0; i < read; i++)
+                var scale = Vector128.Create(1.0f / 128f);
+                var offsetVector = Vector128.Create(1.0f);
+
+                for (; i <= rawBytes.Length - 32; i += 32)
                 {
-                    *(ppbuffer++) = Buffer[i] / 128f - 1.0f;
+                    var byteVec = Vector256.LoadUnsafe(ref srcRef, (nuint)i);
+                    var (lower16, upper16) = Vector256.Widen(byteVec);
+                    var (intVec0, intVec1) = Vector256.Widen(lower16);
+                    var (intVec2, intVec3) = Vector256.Widen(upper16);
+
+                    ConvertAndStore(intVec0.GetLower(), targetSamples, i);
+                    ConvertAndStore(intVec0.GetUpper(), targetSamples, i + 4);
+                    ConvertAndStore(intVec1.GetLower(), targetSamples, i + 8);
+                    ConvertAndStore(intVec1.GetUpper(), targetSamples, i + 12);
+                    ConvertAndStore(intVec2.GetLower(), targetSamples, i + 16);
+                    ConvertAndStore(intVec2.GetUpper(), targetSamples, i + 20);
+                    ConvertAndStore(intVec3.GetLower(), targetSamples, i + 24);
+                    ConvertAndStore(intVec3.GetUpper(), targetSamples, i + 28);
+                }
+
+                void ConvertAndStore(Vector128<uint> intVec, Span<float> dest, int index)
+                {
+                    var floatVec = Vector128.ConvertToSingle(intVec);
+                    var result = Fma.IsSupported
+                        ? Fma.MultiplySubtract(floatVec, scale, offsetVector)
+                        : (floatVec * scale) - offsetVector;
+
+                    result.StoreUnsafe(ref dest[index]);
                 }
             }
-            return read;
+
+            for (; i < rawBytes.Length; i++)
+            {
+                targetSamples[i] = (rawBytes[i] / 128f) - 1.0f;
+            }
+
+            return rawBytes.Length;
         }
     }
 }

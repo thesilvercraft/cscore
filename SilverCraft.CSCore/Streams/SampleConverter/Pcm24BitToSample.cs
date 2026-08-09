@@ -40,19 +40,21 @@ namespace SilverCraft.CSCore.Streams.SampleConverter
         {
             var bytesToRead = count * 3;
             Buffer = Buffer.CheckBuffer(bytesToRead);
-            var read = Source.Read(Buffer, 0, bytesToRead);
-            unsafe
+            var bytesRead = Source.Read(Buffer, 0, bytesToRead);
+            ReadOnlySpan<byte> rawBytes = Buffer.AsSpan(0, bytesRead);
+            var samplesRead = bytesRead / 3; 
+            var targetSamples = buffer.AsSpan(offset, samplesRead);
+
+            for (var i = 0; i < samplesRead; i++)
             {
-                fixed (float* ptrBuffer = buffer)
-                {
-                    var ppbuffer = ptrBuffer + offset;
-                    for (var i = 0; i < read; i += 3)
-                    {
-                        *(ppbuffer++) = (((sbyte)Buffer[i + 2] << 16) | (Buffer[i + 1] << 8) | Buffer[i]) / 8388608f;
-                    }
-                }
+                var byteIndex = i * 3;
+                var sample24 = ((sbyte)rawBytes[byteIndex + 2] << 16) 
+                               | (rawBytes[byteIndex + 1] << 8) 
+                               | rawBytes[byteIndex];
+                targetSamples[i] = sample24 / 8388608f;
             }
-            return read / 3;
+
+            return samplesRead;
         }
     }
 }

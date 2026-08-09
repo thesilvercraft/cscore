@@ -1,4 +1,6 @@
-﻿
+﻿using System.Runtime.InteropServices;
+using System.Runtime.Intrinsics;
+
 namespace SilverCraft.CSCore.Streams.SampleConverter
 {
     /// <summary>
@@ -39,16 +41,47 @@ namespace SilverCraft.CSCore.Streams.SampleConverter
         {
             var bytesToRead = count * 4;
             Buffer = Buffer.CheckBuffer(bytesToRead);
-            var read = Source.Read(Buffer, 0, bytesToRead);
+            var bytesRead = Source.Read(Buffer, 0, bytesToRead);
 
-            var startIndex = offset;
-            for (var i = 0; i < read; i += 4)
+            ReadOnlySpan<byte> rawBytes = Buffer.AsSpan(0, bytesRead);
+            var sourceSamples = MemoryMarshal.Cast<byte, int>(rawBytes);
+            var targetSamples = buffer.AsSpan(offset, sourceSamples.Length);
+
+            var i = 0;
+            if (Vector256.IsHardwareAccelerated)
             {
-                buffer[startIndex] = BitConverter.ToInt32(Buffer, i) / 2147483649f;
-                startIndex++;
+                var scaleVector = Vector256.Create(1.0f / 2147483648f);
+                var vectorSize = Vector256<int>.Count;
+                var vectorLoopEnd = sourceSamples.Length - (sourceSamples.Length % vectorSize);
+
+                for (; i < vectorLoopEnd; i += vectorSize)
+                {
+                    var intVec = Vector256.LoadUnsafe(ref MemoryMarshal.GetReference(sourceSamples), (uint)i);
+                    var floatVec = Vector256.ConvertToSingle(intVec);
+                    var resultVec = floatVec * scaleVector;
+                    resultVec.StoreUnsafe(ref MemoryMarshal.GetReference(targetSamples), (uint)i);
+                }
+            }
+            else if (Vector128.IsHardwareAccelerated)
+            {
+                var scaleVector = Vector128.Create(1.0f / 2147483648f);
+                var vectorSize = Vector128<int>.Count;
+                var vectorLoopEnd = sourceSamples.Length - (sourceSamples.Length % vectorSize);
+
+                for (; i < vectorLoopEnd; i += vectorSize)
+                {
+                    var intVec = Vector128.LoadUnsafe(ref MemoryMarshal.GetReference(sourceSamples), (uint)i);
+                    var floatVec = Vector128.ConvertToSingle(intVec);
+                    var resultVec = floatVec * scaleVector;
+                    resultVec.StoreUnsafe(ref MemoryMarshal.GetReference(targetSamples), (uint)i);
+                }
+            }
+            for (; i < sourceSamples.Length; i++)
+            {
+                targetSamples[i] = sourceSamples[i] / 2147483648f;
             }
 
-            return read / 4;
+            return sourceSamples.Length;
         }
     }
 }

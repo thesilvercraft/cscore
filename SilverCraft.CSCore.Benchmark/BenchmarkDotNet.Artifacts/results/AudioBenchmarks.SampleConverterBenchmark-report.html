@@ -2,7 +2,7 @@
 <html lang='en'>
 <head>
 <meta charset='utf-8' />
-<title>AudioBenchmarks.SampleConverterBenchmark-20260531-230258</title>
+<title>AudioBenchmarks.SampleConverterBenchmark-20260809-015210</title>
 
 <style type="text/css">
 	table { border-collapse: collapse; display: block; width: 100%; overflow: auto; }
@@ -13,25 +13,21 @@
 </head>
 <body>
 <pre><code>
-BenchmarkDotNet v0.15.8, Linux EndeavourOS
-12th Gen Intel Core i7-12700K 0.80GHz, 1 CPU, 20 logical and 12 physical cores
-.NET SDK 10.0.300
-  [Host]     : .NET 10.0.8 (10.0.8, 10.0.826.23019), X64 RyuJIT x86-64-v3
-  DefaultJob : .NET 10.0.8 (10.0.8, 10.0.826.23019), X64 RyuJIT x86-64-v3
+BenchmarkDotNet v0.15.8, Linux CachyOS
+AMD Ryzen Z1 Extreme 3,242.06GHz, 1 CPU, 16 logical and 8 physical cores
+.NET SDK 10.0.110
+  [Host]     : .NET 10.0.10 (10.0.10, 42.42.42.42424), X64 RyuJIT x86-64-v4
+  DefaultJob : .NET 10.0.10 (10.0.10, 42.42.42.42424), X64 RyuJIT x86-64-v4
 </code></pre>
 <pre><code></code></pre>
 
 <table>
-<thead><tr><th>Method                         </th><th>Count</th><th>Mean  </th><th>Error</th><th>StdDev</th><th>Ratio</th><th>RatioSD</th><th>Gen0</th><th>Allocated</th><th>Alloc Ratio</th>
+<thead><tr><th>Method  </th><th>Count</th><th>Mean</th><th>Error</th><th>StdDev</th><th>Ratio</th><th>RatioSD</th><th>Allocated</th><th>Alloc Ratio</th>
 </tr>
-</thead><tbody><tr><td>Raw_MemoryMarshalCast</td><td>512</td><td>3.929 ns</td><td>0.0328 ns</td><td>0.0306 ns</td><td>1.00</td><td>0.01</td><td>-</td><td>-</td><td>NA</td>
-</tr><tr><td>Raw_ManualBitConverterLoop</td><td>512</td><td>527.621 ns</td><td>10.4449 ns</td><td>13.2095 ns</td><td>134.30</td><td>3.45</td><td>0.3128</td><td>4096 B</td><td>NA</td>
-</tr><tr><td>Pcm_ManualBitConverterLoopWithScaling</td><td>512</td><td>567.267 ns</td><td>4.0847 ns</td><td>3.8208 ns</td><td>144.39</td><td>1.45</td><td>0.3128</td><td>4096 B</td><td>NA</td>
-</tr><tr><td>Pcm_VectorizedScaling</td><td>512</td><td>4.867 ns</td><td>0.0869 ns</td><td>0.0813 ns</td><td>1.24</td><td>0.02</td><td>-</td><td>-</td><td>NA</td>
-</tr><tr><td>Raw_MemoryMarshalCast</td><td>2048</td><td>14.050 ns</td><td>0.0791 ns</td><td>0.0618 ns</td><td>1.00</td><td>0.01</td><td>-</td><td>-</td><td>NA</td>
-</tr><tr><td>Raw_ManualBitConverterLoop</td><td>2048</td><td>2,059.279 ns</td><td>23.3322 ns</td><td>21.8249 ns</td><td>146.57</td><td>1.63</td><td>1.2512</td><td>16384 B</td><td>NA</td>
-</tr><tr><td>Pcm_ManualBitConverterLoopWithScaling</td><td>2048</td><td>2,246.479 ns</td><td>22.2595 ns</td><td>20.8216 ns</td><td>159.89</td><td>1.59</td><td>1.2512</td><td>16384 B</td><td>NA</td>
-</tr><tr><td>Pcm_VectorizedScaling</td><td>2048</td><td>24.304 ns</td><td>0.5076 ns</td><td>0.7440 ns</td><td>1.73</td><td>0.05</td><td>-</td><td>-</td><td>NA</td>
+</thead><tbody><tr><td>Pcm_ManualAvx2</td><td>512</td><td>5.897 ns</td><td>0.0690 ns</td><td>0.0645 ns</td><td>1.00</td><td>0.02</td><td>-</td><td>NA</td>
+</tr><tr><td>Pcm_Vector256</td><td>512</td><td>7.340 ns</td><td>0.0602 ns</td><td>0.0563 ns</td><td>1.24</td><td>0.02</td><td>-</td><td>NA</td>
+</tr><tr><td>Pcm_ManualAvx2</td><td>2048</td><td>20.929 ns</td><td>0.0442 ns</td><td>0.0413 ns</td><td>1.00</td><td>0.00</td><td>-</td><td>NA</td>
+</tr><tr><td>Pcm_Vector256</td><td>2048</td><td>29.060 ns</td><td>0.2070 ns</td><td>0.1835 ns</td><td>1.39</td><td>0.01</td><td>-</td><td>NA</td>
 </tr></tbody></table>
 </body>
 </html>

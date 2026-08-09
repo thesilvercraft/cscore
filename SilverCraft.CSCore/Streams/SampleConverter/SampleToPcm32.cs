@@ -1,6 +1,5 @@
-﻿using System.Runtime.CompilerServices;
+﻿using System.Runtime.InteropServices;
 using System.Runtime.Intrinsics;
-using System.Runtime.Intrinsics.X86;
 
 namespace SilverCraft.CSCore.Streams.SampleConverter;
 
@@ -35,7 +34,7 @@ public class SampleToPcm32 : SampleToWaveBase
     /// </param>
     /// <param name="count">The maximum number of bytes to read from the current source.</param>
     /// <returns>The total number of bytes read into the buffer.</returns>
-    public override unsafe int Read(byte[] buffer, int offset, int count)
+    public override int Read(byte[] buffer, int offset, int count)
     {
         var sampleCount = count >> 2;
         if (sampleCount <= 0) return 0;
@@ -45,43 +44,62 @@ public class SampleToPcm32 : SampleToWaveBase
         var samplesRead = Source.Read(Buffer, 0, sampleCount);
         if (samplesRead <= 0) return 0;
 
-        var bytesRead = samplesRead << 2;
+        ReadOnlySpan<float> sourceSpan = Buffer.AsSpan(0, samplesRead);
+        var destSpan = MemoryMarshal.Cast<byte, int>(buffer.AsSpan(offset, samplesRead * 4));
+        var i = 0;
 
-        fixed (float* srcStart = Buffer)
-        fixed (byte* dstStart = buffer)
+        ref var srcRef = ref MemoryMarshal.GetReference(sourceSpan);
+        ref var destRef = ref MemoryMarshal.GetReference(destSpan);
+        if (Vector256.IsHardwareAccelerated)
         {
-            var dest = (int*)(dstStart + offset);
-            var i = 0;
-            if (Avx.IsSupported)
+            var scaleMultiplier = Vector256.Create(2147483520.0f);
+            var minVal = Vector256.Create((float)int.MinValue);
+            var maxVal = Vector256.Create((float)int.MaxValue);
+
+            var limit = samplesRead & ~7;
+            for (; i < limit; i += 8)
             {
-                var scaleMultiplier = Vector256.Create((float)int.MaxValue);
-                var avxLimit = samplesRead & ~7; 
-                for (; i < avxLimit; i += 8)
-                {
-                    var floatInput = Unsafe.ReadUnaligned<Vector256<float>>(srcStart + i);
-                    var multiplied = Avx.Multiply(floatInput, scaleMultiplier);
-                    var intVector = Avx.ConvertToVector256Int32(multiplied);
-                    Unsafe.WriteUnaligned(dest + i, intVector);
-                }
+                var floatInput = Vector256.LoadUnsafe(ref srcRef, (uint)i);
+                var multiplied = Vector256.Multiply(floatInput, scaleMultiplier);
+                var clamped = Vector256.Min(Vector256.Max(multiplied, minVal), maxVal);
+                var intVector = Vector256.ConvertToInt32(clamped);
+                intVector.StoreUnsafe(ref destRef, (uint)i);
             }
-            else if (Sse2.IsSupported)
+        }
+        else if (Vector128.IsHardwareAccelerated)
+        {
+            var scaleMultiplier = Vector128.Create(2147483520.0f);
+            var minVal = Vector128.Create((float)int.MinValue);
+            var maxVal = Vector128.Create((float)int.MaxValue);
+
+            var limit = samplesRead & ~7;
+            for (; i < limit; i += 8)
             {
-                var scaleMultiplier128 = Vector128.Create((float)int.MaxValue);
-                var sseLimit = samplesRead & ~3;
-                for (; i < sseLimit; i += 4)
-                {
-                    var floatInput = Unsafe.ReadUnaligned<Vector128<float>>(srcStart + i);
-                    var multiplied = Sse.Multiply(floatInput, scaleMultiplier128);
-                    var intVector = Sse2.ConvertToVector128Int32WithTruncation(multiplied);
-                    Unsafe.WriteUnaligned(dest + i, intVector);
-                }
+                var v0 = Vector128.LoadUnsafe(ref srcRef, (uint)i);
+                var v1 = Vector128.LoadUnsafe(ref srcRef, (uint)(i + 4));
+
+                v0 = Vector128.Min(Vector128.Max(Vector128.Multiply(v0, scaleMultiplier), minVal), maxVal);
+                v1 = Vector128.Min(Vector128.Max(Vector128.Multiply(v1, scaleMultiplier), minVal), maxVal);
+
+                Vector128.ConvertToInt32(v0).StoreUnsafe(ref destRef, (uint)i);
+                Vector128.ConvertToInt32(v1).StoreUnsafe(ref destRef, (uint)(i + 4));
             }
-            for (; i < samplesRead; i++)
+
+            if (i <= samplesRead - 4)
             {
-                dest[i] = (int)(srcStart[i] * int.MaxValue);
+                var v0 = Vector128.LoadUnsafe(ref srcRef, (uint)i);
+                v0 = Vector128.Min(Vector128.Max(Vector128.Multiply(v0, scaleMultiplier), minVal), maxVal);
+                Vector128.ConvertToInt32(v0).StoreUnsafe(ref destRef, (uint)i);
+                i += 4;
             }
         }
 
-        return bytesRead;
+        for (; i < samplesRead; i++)
+        {
+            var scaled = sourceSpan[i] * 2147483520.0f;
+            destSpan[i] = (int)Math.Clamp(scaled, int.MinValue, int.MaxValue);
+        }
+
+        return samplesRead << 2;
     }
 }

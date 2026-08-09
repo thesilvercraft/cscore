@@ -1,4 +1,5 @@
-﻿using System;
+﻿using System.Runtime.InteropServices;
+using System.Runtime.Intrinsics;
 
 namespace SilverCraft.CSCore.Streams.SampleConverter
 {
@@ -38,18 +39,47 @@ namespace SilverCraft.CSCore.Streams.SampleConverter
         /// <returns>The total number of samples read into the buffer.</returns>
         public override int Read(float[] buffer, int offset, int count)
         {
-            var bytesToRead = count * 2;
+            var bytesToRead = count * sizeof(short);
             Buffer = Buffer.CheckBuffer(bytesToRead);
-            var read = Source.Read(Buffer, 0, bytesToRead);
+            var bytesRead = Source.Read(Buffer, 0, bytesToRead);
 
-            var startIndex = offset;
-            for (var i = 0; i < read; i += 2)
+            ReadOnlySpan<byte> rawBytes = Buffer.AsSpan(0, bytesRead);
+            var sourceSamples = MemoryMarshal.Cast<byte, short>(rawBytes);
+            var targetSamples = buffer.AsSpan(offset, sourceSamples.Length);
+
+            var i = 0;
+
+            if (Vector256.IsHardwareAccelerated && Vector128.IsHardwareAccelerated && sourceSamples.Length >= 16)
             {
-                buffer[startIndex] = BitConverter.ToInt16(Buffer, i) / 32768f;
-                startIndex++;
+                var scale = Vector128.Create(1.0f / 32768f);
+
+                for (; i <= sourceSamples.Length - 16; i += 16)
+                {
+                    var shortVec =
+                        Vector256.LoadUnsafe(ref MemoryMarshal.GetReference(sourceSamples.Slice(i)));
+
+                    var (lowerInts, upperInts) = Vector256.Widen(shortVec);
+
+                    ConvertAndStore(lowerInts.GetLower(), targetSamples, i);
+                    ConvertAndStore(lowerInts.GetUpper(), targetSamples, i + 4);
+                    ConvertAndStore(upperInts.GetLower(), targetSamples, i + 8);
+                    ConvertAndStore(upperInts.GetUpper(), targetSamples, i + 12);
+                }
+
+                void ConvertAndStore(Vector128<int> intVec, Span<float> dest, int index)
+                {
+                    var floatVec = Vector128.ConvertToSingle(intVec);
+                    var result = floatVec * scale;
+                    result.StoreUnsafe(ref dest[index]);
+                }
             }
 
-            return read / 2;
+            for (; i < sourceSamples.Length; i++)
+            {
+                targetSamples[i] = sourceSamples[i] / 32768f;
+            }
+
+            return sourceSamples.Length;
         }
     }
 }

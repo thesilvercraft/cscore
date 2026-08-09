@@ -1,4 +1,7 @@
 ﻿using System;
+using System.Runtime.CompilerServices;
+using System.Runtime.InteropServices;
+using System.Runtime.Intrinsics;
 
 namespace SilverCraft.CSCore.Streams.SampleConverter
 {
@@ -36,20 +39,79 @@ namespace SilverCraft.CSCore.Streams.SampleConverter
         public override int Read(byte[] buffer, int offset, int count)
         {
             ArgumentNullException.ThrowIfNull(buffer);
-            Buffer = Buffer.CheckBuffer(count / 2);
 
-            var read = Source.Read(Buffer, 0, count / 2);
-            var bufferOffset = offset;
-            for (var i = 0; i < read; i++)
+            var samplesToRead = count / 2;
+            if (samplesToRead <= 0) return 0;
+
+            Buffer = Buffer.CheckBuffer(samplesToRead);
+            var readSamples = Source.Read(Buffer, 0, samplesToRead);
+            if (readSamples <= 0) return 0;
+
+            var readBytes = readSamples * 2;
+            ReadOnlySpan<float> sourceSpan = Buffer.AsSpan(0, readSamples);
+            var targetSpan = MemoryMarshal.Cast<byte, short>(buffer.AsSpan(offset, readBytes));
+
+            var i = 0;
+            ref var srcRef = ref MemoryMarshal.GetReference(sourceSpan);
+            ref var dstRef = ref MemoryMarshal.GetReference(targetSpan);
+
+            if (Vector256.IsHardwareAccelerated && sourceSpan.Length >= 16)
             {
-                var value = (short)(Buffer[i] * short.MaxValue);
-                var bytes = BitConverter.GetBytes(value);
+                var scale = Vector256.Create(32768.0f);
+                var maxVal = Vector256.Create((float)short.MaxValue);
+                var minVal = Vector256.Create((float)short.MinValue);
 
-                buffer[bufferOffset++] = bytes[0];
-                buffer[bufferOffset++] = bytes[1];
+                var simdLimit = sourceSpan.Length & ~15;
+
+                for (; i < simdLimit; i += 16)
+                {
+                    var f1 = Vector256.LoadUnsafe(ref Unsafe.Add(ref srcRef, i));
+                    var f2 = Vector256.LoadUnsafe(ref srcRef, (nuint)(i + 8));
+
+                    var clamped1 = Vector256.Min(Vector256.Max(Vector256.Multiply(f1, scale), minVal), maxVal);
+                    var clamped2 = Vector256.Min(Vector256.Max(Vector256.Multiply(f2, scale), minVal), maxVal);
+
+                    var int1 = Vector256.ConvertToInt32(clamped1);
+                    var int2 = Vector256.ConvertToInt32(clamped2);
+
+                    var shorts256 = Vector256.Narrow(int1, int2);
+
+                    shorts256.StoreUnsafe(ref Unsafe.Add(ref dstRef, i));
+                }
             }
 
-            return read * 2;
+            if (Vector128.IsHardwareAccelerated && (sourceSpan.Length - i) >= 8)
+            {
+                var scale = Vector128.Create(32768.0f);
+                var maxVal = Vector128.Create((float)short.MaxValue);
+                var minVal = Vector128.Create((float)short.MinValue);
+
+                var simdLimit = sourceSpan.Length & ~7;
+
+                for (; i < simdLimit; i += 8)
+                {
+                    var f1 = Vector128.LoadUnsafe(ref Unsafe.Add(ref srcRef, i));
+                    var f2 = Vector128.LoadUnsafe(ref Unsafe.Add(ref srcRef, i + 4));
+
+                    var clamped1 = Vector128.Min(Vector128.Max(Vector128.Multiply(f1, scale), minVal), maxVal);
+                    var clamped2 = Vector128.Min(Vector128.Max(Vector128.Multiply(f2, scale), minVal), maxVal);
+
+                    var int1 = Vector128.ConvertToInt32(clamped1);
+                    var int2 = Vector128.ConvertToInt32(clamped2);
+
+                    var shorts128 = Vector128.Narrow(int1, int2);
+
+                    shorts128.StoreUnsafe(ref Unsafe.Add(ref dstRef, i));
+                }
+            }
+
+            for (; i < readSamples; i++)
+            {
+                var scaled = sourceSpan[i] * 32768.0f;
+                targetSpan[i] = (short)Math.Clamp((int)scaled, short.MinValue, short.MaxValue);
+            }
+
+            return readBytes;
         }
     }
 }
