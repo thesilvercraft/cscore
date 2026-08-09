@@ -3,11 +3,12 @@ using SilverCraft.CSCore.Codecs.FLAC;
 using SilverCraft.CSCore.DSP.Resampler;
 using SilverCraft.CSCore.PortAudio;
 using SilverCraft.CSCore.SoundOut;
+using SilverCraft.CSCore.Streams;
 using SilverCraft.CSCore.Streams.SampleConverter;
 using SilverCraft.CSCore.VGMStream;
 args = ["/home/silver/source/cscore/SilverCraft.CsCore.BasicPlayTest/music.flac"];
 float volume = 1f;
-    PortAudioSoundOut soundOut = new();
+/*PortAudioSoundOut soundOut = new();
 
 while (true)
 {
@@ -42,3 +43,12 @@ while (true)
     }
     f.Dispose();
 }
+*/
+
+var soundIn = new PortAudioSoundIn();
+var soundOut = new PortAudioSoundOut();
+soundIn.Initialize();
+soundOut.Initialize(new SoundInSource(soundIn));
+soundIn.Start();
+soundOut.Play();
+Thread.Sleep(-1);
