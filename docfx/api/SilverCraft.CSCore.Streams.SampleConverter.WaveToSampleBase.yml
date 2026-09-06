@@ -31,7 +31,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: WaveToSampleBase
     path: ../SilverCraft.CSCore/Streams/SampleConverter/WaveToSampleBase.cs
-    startLine: 7
+    startLine: 6
   assemblies:
   - SilverCraft.CSCore
   namespace: SilverCraft.CSCore.Streams.SampleConverter
@@ -96,7 +96,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: Source
     path: ../SilverCraft.CSCore/Streams/SampleConverter/WaveToSampleBase.cs
-    startLine: 12
+    startLine: 11
   assemblies:
   - SilverCraft.CSCore
   namespace: SilverCraft.CSCore.Streams.SampleConverter
@@ -125,7 +125,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: Buffer
     path: ../SilverCraft.CSCore/Streams/SampleConverter/WaveToSampleBase.cs
-    startLine: 16
+    startLine: 15
   assemblies:
   - SilverCraft.CSCore
   namespace: SilverCraft.CSCore.Streams.SampleConverter
@@ -154,7 +154,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: .ctor
     path: ../SilverCraft.CSCore/Streams/SampleConverter/WaveToSampleBase.cs
-    startLine: 23
+    startLine: 22
   assemblies:
   - SilverCraft.CSCore
   namespace: SilverCraft.CSCore.Streams.SampleConverter
@@ -193,7 +193,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: Read
     path: ../SilverCraft.CSCore/Streams/SampleConverter/WaveToSampleBase.cs
-    startLine: 48
+    startLine: 47
   assemblies:
   - SilverCraft.CSCore
   namespace: SilverCraft.CSCore.Streams.SampleConverter
@@ -250,7 +250,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: WaveFormat
     path: ../SilverCraft.CSCore/Streams/SampleConverter/WaveToSampleBase.cs
-    startLine: 53
+    startLine: 52
   assemblies:
   - SilverCraft.CSCore
   namespace: SilverCraft.CSCore.Streams.SampleConverter
@@ -283,7 +283,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: Position
     path: ../SilverCraft.CSCore/Streams/SampleConverter/WaveToSampleBase.cs
-    startLine: 58
+    startLine: 57
   assemblies:
   - SilverCraft.CSCore
   namespace: SilverCraft.CSCore.Streams.SampleConverter
@@ -316,7 +316,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: Length
     path: ../SilverCraft.CSCore/Streams/SampleConverter/WaveToSampleBase.cs
-    startLine: 78
+    startLine: 77
   assemblies:
   - SilverCraft.CSCore
   namespace: SilverCraft.CSCore.Streams.SampleConverter
@@ -349,7 +349,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: CanSeek
     path: ../SilverCraft.CSCore/Streams/SampleConverter/WaveToSampleBase.cs
-    startLine: 83
+    startLine: 82
   assemblies:
   - SilverCraft.CSCore
   namespace: SilverCraft.CSCore.Streams.SampleConverter
@@ -382,7 +382,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: Dispose
     path: ../SilverCraft.CSCore/Streams/SampleConverter/WaveToSampleBase.cs
-    startLine: 88
+    startLine: 87
   assemblies:
   - SilverCraft.CSCore
   namespace: SilverCraft.CSCore.Streams.SampleConverter
@@ -412,7 +412,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: Dispose
     path: ../SilverCraft.CSCore/Streams/SampleConverter/WaveToSampleBase.cs
-    startLine: 98
+    startLine: 97
   assemblies:
   - SilverCraft.CSCore
   namespace: SilverCraft.CSCore.Streams.SampleConverter
@@ -447,7 +447,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: Finalize
     path: ../SilverCraft.CSCore/Streams/SampleConverter/WaveToSampleBase.cs
-    startLine: 112
+    startLine: 111
   assemblies:
   - SilverCraft.CSCore
   namespace: SilverCraft.CSCore.Streams.SampleConverter
@@ -478,7 +478,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: CreateConverter
     path: ../SilverCraft.CSCore/Streams/SampleConverter/WaveToSampleBase.cs
-    startLine: 124
+    startLine: 123
   assemblies:
   - SilverCraft.CSCore
   namespace: SilverCraft.CSCore.Streams.SampleConverter

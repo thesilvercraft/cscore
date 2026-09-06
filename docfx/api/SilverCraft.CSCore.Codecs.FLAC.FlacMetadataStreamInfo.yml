@@ -30,7 +30,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: FlacMetadataStreamInfo
     path: ../SilverCraft.CSCore/Codecs/FLAC/Metadata/FlacMetadataStreamInfo.cs
-    startLine: 10
+    startLine: 8
   assemblies:
   - SilverCraft.CSCore
   namespace: SilverCraft.CSCore.Codecs.FLAC
@@ -76,7 +76,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: InitializeByStream
     path: ../SilverCraft.CSCore/Codecs/FLAC/Metadata/FlacMetadataStreamInfo.cs
-    startLine: 16
+    startLine: 14
   assemblies:
   - SilverCraft.CSCore
   namespace: SilverCraft.CSCore.Codecs.FLAC
@@ -109,7 +109,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: MetaDataType
     path: ../SilverCraft.CSCore/Codecs/FLAC/Metadata/FlacMetadataStreamInfo.cs
-    startLine: 53
+    startLine: 48
   assemblies:
   - SilverCraft.CSCore
   namespace: SilverCraft.CSCore.Codecs.FLAC
@@ -141,18 +141,17 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: MinBlockSize
     path: ../SilverCraft.CSCore/Codecs/FLAC/Metadata/FlacMetadataStreamInfo.cs
-    startLine: 61
+    startLine: 53
   assemblies:
   - SilverCraft.CSCore
   namespace: SilverCraft.CSCore.Codecs.FLAC
-  summary: Gets the minimum size of the block in samples.
+  summary: The minimum block size (in samples) used in the stream, excluding the last block.
   example: []
   syntax:
     content: public short MinBlockSize { get; }
     parameters: []
     return:
       type: System.Int16
-      description: The minimum size of the block in samples.
     content.vb: Public Property MinBlockSize As Short
   overload: SilverCraft.CSCore.Codecs.FLAC.FlacMetadataStreamInfo.MinBlockSize*
 - uid: SilverCraft.CSCore.Codecs.FLAC.FlacMetadataStreamInfo.MaxBlockSize
@@ -173,52 +172,19 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: MaxBlockSize
     path: ../SilverCraft.CSCore/Codecs/FLAC/Metadata/FlacMetadataStreamInfo.cs
-    startLine: 69
+    startLine: 58
   assemblies:
   - SilverCraft.CSCore
   namespace: SilverCraft.CSCore.Codecs.FLAC
-  summary: Gets the maximum size of the block in samples.
+  summary: The maximum block size (in samples) used in the stream.
   example: []
   syntax:
     content: public short MaxBlockSize { get; }
     parameters: []
     return:
       type: System.Int16
-      description: The maximum size of the block in samples.
     content.vb: Public Property MaxBlockSize As Short
   overload: SilverCraft.CSCore.Codecs.FLAC.FlacMetadataStreamInfo.MaxBlockSize*
-- uid: SilverCraft.CSCore.Codecs.FLAC.FlacMetadataStreamInfo.MaxFrameSize
-  commentId: P:SilverCraft.CSCore.Codecs.FLAC.FlacMetadataStreamInfo.MaxFrameSize
-  id: MaxFrameSize
-  parent: SilverCraft.CSCore.Codecs.FLAC.FlacMetadataStreamInfo
-  langs:
-  - csharp
-  - vb
-  name: MaxFrameSize
-  nameWithType: FlacMetadataStreamInfo.MaxFrameSize
-  fullName: SilverCraft.CSCore.Codecs.FLAC.FlacMetadataStreamInfo.MaxFrameSize
-  type: Property
-  source:
-    remote:
-      path: SilverCraft.CSCore/Codecs/FLAC/Metadata/FlacMetadataStreamInfo.cs
-      branch: master
-      repo: https://github.com/thesilvercraft/cscore
-    id: MaxFrameSize
-    path: ../SilverCraft.CSCore/Codecs/FLAC/Metadata/FlacMetadataStreamInfo.cs
-    startLine: 77
-  assemblies:
-  - SilverCraft.CSCore
-  namespace: SilverCraft.CSCore.Codecs.FLAC
-  summary: Gets the maximum size of the frame in bytes.
-  example: []
-  syntax:
-    content: public int MaxFrameSize { get; }
-    parameters: []
-    return:
-      type: System.Int32
-      description: The maximum size of the frame in bytes.
-    content.vb: Public Property MaxFrameSize As Integer
-  overload: SilverCraft.CSCore.Codecs.FLAC.FlacMetadataStreamInfo.MaxFrameSize*
 - uid: SilverCraft.CSCore.Codecs.FLAC.FlacMetadataStreamInfo.MinFrameSize
   commentId: P:SilverCraft.CSCore.Codecs.FLAC.FlacMetadataStreamInfo.MinFrameSize
   id: MinFrameSize
@@ -237,20 +203,50 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: MinFrameSize
     path: ../SilverCraft.CSCore/Codecs/FLAC/Metadata/FlacMetadataStreamInfo.cs
-    startLine: 85
+    startLine: 62
   assemblies:
   - SilverCraft.CSCore
   namespace: SilverCraft.CSCore.Codecs.FLAC
-  summary: Gets the minimum size of the frame in bytes.
+  summary: The minimum frame size (in bytes) used in the stream. A value of 0 signifies that the value is not known.
   example: []
   syntax:
     content: public int MinFrameSize { get; }
     parameters: []
     return:
       type: System.Int32
-      description: The minimum size of the frame in bytes.
     content.vb: Public Property MinFrameSize As Integer
   overload: SilverCraft.CSCore.Codecs.FLAC.FlacMetadataStreamInfo.MinFrameSize*
+- uid: SilverCraft.CSCore.Codecs.FLAC.FlacMetadataStreamInfo.MaxFrameSize
+  commentId: P:SilverCraft.CSCore.Codecs.FLAC.FlacMetadataStreamInfo.MaxFrameSize
+  id: MaxFrameSize
+  parent: SilverCraft.CSCore.Codecs.FLAC.FlacMetadataStreamInfo
+  langs:
+  - csharp
+  - vb
+  name: MaxFrameSize
+  nameWithType: FlacMetadataStreamInfo.MaxFrameSize
+  fullName: SilverCraft.CSCore.Codecs.FLAC.FlacMetadataStreamInfo.MaxFrameSize
+  type: Property
+  source:
+    remote:
+      path: SilverCraft.CSCore/Codecs/FLAC/Metadata/FlacMetadataStreamInfo.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: MaxFrameSize
+    path: ../SilverCraft.CSCore/Codecs/FLAC/Metadata/FlacMetadataStreamInfo.cs
+    startLine: 66
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Codecs.FLAC
+  summary: The maximum frame size (in bytes) used in the stream. A value of 0 signifies that the value is not known.
+  example: []
+  syntax:
+    content: public int MaxFrameSize { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property MaxFrameSize As Integer
+  overload: SilverCraft.CSCore.Codecs.FLAC.FlacMetadataStreamInfo.MaxFrameSize*
 - uid: SilverCraft.CSCore.Codecs.FLAC.FlacMetadataStreamInfo.SampleRate
   commentId: P:SilverCraft.CSCore.Codecs.FLAC.FlacMetadataStreamInfo.SampleRate
   id: SampleRate
@@ -269,18 +265,17 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: SampleRate
     path: ../SilverCraft.CSCore/Codecs/FLAC/Metadata/FlacMetadataStreamInfo.cs
-    startLine: 93
+    startLine: 71
   assemblies:
   - SilverCraft.CSCore
   namespace: SilverCraft.CSCore.Codecs.FLAC
-  summary: Gets the sample rate in Hz.
+  summary: Sample rate in Hz.
   example: []
   syntax:
     content: public int SampleRate { get; }
     parameters: []
     return:
       type: System.Int32
-      description: The sample rate.
     content.vb: Public Property SampleRate As Integer
   overload: SilverCraft.CSCore.Codecs.FLAC.FlacMetadataStreamInfo.SampleRate*
 - uid: SilverCraft.CSCore.Codecs.FLAC.FlacMetadataStreamInfo.Channels
@@ -301,18 +296,17 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: Channels
     path: ../SilverCraft.CSCore/Codecs/FLAC/Metadata/FlacMetadataStreamInfo.cs
-    startLine: 101
+    startLine: 76
   assemblies:
   - SilverCraft.CSCore
   namespace: SilverCraft.CSCore.Codecs.FLAC
-  summary: Gets the number of channels.
+  summary: Number of channels. FLAC supports from 1 to 8 channels.
   example: []
   syntax:
     content: public int Channels { get; }
     parameters: []
     return:
       type: System.Int32
-      description: The number of channels.
     content.vb: Public Property Channels As Integer
   overload: SilverCraft.CSCore.Codecs.FLAC.FlacMetadataStreamInfo.Channels*
 - uid: SilverCraft.CSCore.Codecs.FLAC.FlacMetadataStreamInfo.BitsPerSample
@@ -333,18 +327,17 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: BitsPerSample
     path: ../SilverCraft.CSCore/Codecs/FLAC/Metadata/FlacMetadataStreamInfo.cs
-    startLine: 109
+    startLine: 81
   assemblies:
   - SilverCraft.CSCore
   namespace: SilverCraft.CSCore.Codecs.FLAC
-  summary: Gets the number of bits per sample.
+  summary: Bits per sample. FLAC supports from 4 to 32 bits per sample.
   example: []
   syntax:
     content: public int BitsPerSample { get; }
     parameters: []
     return:
       type: System.Int32
-      description: The number of bits per sample.
     content.vb: Public Property BitsPerSample As Integer
   overload: SilverCraft.CSCore.Codecs.FLAC.FlacMetadataStreamInfo.BitsPerSample*
 - uid: SilverCraft.CSCore.Codecs.FLAC.FlacMetadataStreamInfo.TotalSamples
@@ -365,11 +358,11 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: TotalSamples
     path: ../SilverCraft.CSCore/Codecs/FLAC/Metadata/FlacMetadataStreamInfo.cs
-    startLine: 114
+    startLine: 86
   assemblies:
   - SilverCraft.CSCore
   namespace: SilverCraft.CSCore.Codecs.FLAC
-  summary: Gets the total number of samples inside of the stream.
+  summary: Total number of interchannel samples in the stream. A value of 0 here means the number of total samples is unknown.
   example: []
   syntax:
     content: public long TotalSamples { get; }
@@ -396,18 +389,17 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: Md5
     path: ../SilverCraft.CSCore/Codecs/FLAC/Metadata/FlacMetadataStreamInfo.cs
-    startLine: 122
+    startLine: 91
   assemblies:
   - SilverCraft.CSCore
   namespace: SilverCraft.CSCore.Codecs.FLAC
-  summary: Gets MD5 signature of the unencoded audio data.
+  summary: "     MD5 checksum of the unencoded audio data as HEX string. A value of \r\n<pre><code class=\"lang-csharp\">\"0000000000000000000000000000\"</code></pre>\r\n signifies that the value is not known."
   example: []
   syntax:
     content: public string Md5 { get; }
     parameters: []
     return:
       type: System.String
-      description: The MD5 signature of the unencoded audio data.
     content.vb: Public Property Md5 As String
   overload: SilverCraft.CSCore.Codecs.FLAC.FlacMetadataStreamInfo.Md5*
 references:
@@ -1071,12 +1063,12 @@ references:
   name: MaxBlockSize
   nameWithType: FlacMetadataStreamInfo.MaxBlockSize
   fullName: SilverCraft.CSCore.Codecs.FLAC.FlacMetadataStreamInfo.MaxBlockSize
-- uid: SilverCraft.CSCore.Codecs.FLAC.FlacMetadataStreamInfo.MaxFrameSize*
-  commentId: Overload:SilverCraft.CSCore.Codecs.FLAC.FlacMetadataStreamInfo.MaxFrameSize
-  href: SilverCraft.CSCore.Codecs.FLAC.FlacMetadataStreamInfo.html#SilverCraft_CSCore_Codecs_FLAC_FlacMetadataStreamInfo_MaxFrameSize
-  name: MaxFrameSize
-  nameWithType: FlacMetadataStreamInfo.MaxFrameSize
-  fullName: SilverCraft.CSCore.Codecs.FLAC.FlacMetadataStreamInfo.MaxFrameSize
+- uid: SilverCraft.CSCore.Codecs.FLAC.FlacMetadataStreamInfo.MinFrameSize*
+  commentId: Overload:SilverCraft.CSCore.Codecs.FLAC.FlacMetadataStreamInfo.MinFrameSize
+  href: SilverCraft.CSCore.Codecs.FLAC.FlacMetadataStreamInfo.html#SilverCraft_CSCore_Codecs_FLAC_FlacMetadataStreamInfo_MinFrameSize
+  name: MinFrameSize
+  nameWithType: FlacMetadataStreamInfo.MinFrameSize
+  fullName: SilverCraft.CSCore.Codecs.FLAC.FlacMetadataStreamInfo.MinFrameSize
 - uid: System.Int32
   commentId: T:System.Int32
   parent: System
@@ -1088,12 +1080,12 @@ references:
   nameWithType.vb: Integer
   fullName.vb: Integer
   name.vb: Integer
-- uid: SilverCraft.CSCore.Codecs.FLAC.FlacMetadataStreamInfo.MinFrameSize*
-  commentId: Overload:SilverCraft.CSCore.Codecs.FLAC.FlacMetadataStreamInfo.MinFrameSize
-  href: SilverCraft.CSCore.Codecs.FLAC.FlacMetadataStreamInfo.html#SilverCraft_CSCore_Codecs_FLAC_FlacMetadataStreamInfo_MinFrameSize
-  name: MinFrameSize
-  nameWithType: FlacMetadataStreamInfo.MinFrameSize
-  fullName: SilverCraft.CSCore.Codecs.FLAC.FlacMetadataStreamInfo.MinFrameSize
+- uid: SilverCraft.CSCore.Codecs.FLAC.FlacMetadataStreamInfo.MaxFrameSize*
+  commentId: Overload:SilverCraft.CSCore.Codecs.FLAC.FlacMetadataStreamInfo.MaxFrameSize
+  href: SilverCraft.CSCore.Codecs.FLAC.FlacMetadataStreamInfo.html#SilverCraft_CSCore_Codecs_FLAC_FlacMetadataStreamInfo_MaxFrameSize
+  name: MaxFrameSize
+  nameWithType: FlacMetadataStreamInfo.MaxFrameSize
+  fullName: SilverCraft.CSCore.Codecs.FLAC.FlacMetadataStreamInfo.MaxFrameSize
 - uid: SilverCraft.CSCore.Codecs.FLAC.FlacMetadataStreamInfo.SampleRate*
   commentId: Overload:SilverCraft.CSCore.Codecs.FLAC.FlacMetadataStreamInfo.SampleRate
   href: SilverCraft.CSCore.Codecs.FLAC.FlacMetadataStreamInfo.html#SilverCraft_CSCore_Codecs_FLAC_FlacMetadataStreamInfo_SampleRate

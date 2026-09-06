@@ -31,7 +31,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: FlacFile
     path: ../SilverCraft.CSCore/Codecs/FLAC/FlacFile.cs
-    startLine: 12
+    startLine: 10
   assemblies:
   - SilverCraft.CSCore
   namespace: SilverCraft.CSCore.Codecs.FLAC
@@ -93,7 +93,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: .ctor
     path: ../SilverCraft.CSCore/Codecs/FLAC/FlacFile.cs
-    startLine: 35
+    startLine: 33
   assemblies:
   - SilverCraft.CSCore
   namespace: SilverCraft.CSCore.Codecs.FLAC
@@ -128,7 +128,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: .ctor
     path: ../SilverCraft.CSCore/Codecs/FLAC/FlacFile.cs
-    startLine: 45
+    startLine: 43
   assemblies:
   - SilverCraft.CSCore
   namespace: SilverCraft.CSCore.Codecs.FLAC
@@ -163,7 +163,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: .ctor
     path: ../SilverCraft.CSCore/Codecs/FLAC/FlacFile.cs
-    startLine: 55
+    startLine: 53
   assemblies:
   - SilverCraft.CSCore
   namespace: SilverCraft.CSCore.Codecs.FLAC
@@ -190,9 +190,9 @@ items:
   langs:
   - csharp
   - vb
-  name: FlacFile(Stream, FlacPreScanMode, Action<FlacPreScanFinishedEventArgs>)
-  nameWithType: FlacFile.FlacFile(Stream, FlacPreScanMode, Action<FlacPreScanFinishedEventArgs>)
-  fullName: SilverCraft.CSCore.Codecs.FLAC.FlacFile.FlacFile(System.IO.Stream, SilverCraft.CSCore.Codecs.FLAC.FlacPreScanMode, System.Action<SilverCraft.CSCore.Codecs.FLAC.FlacPreScanFinishedEventArgs>)
+  name: FlacFile(Stream, FlacPreScanMode, Action<FlacPreScanFinishedEventArgs?>?)
+  nameWithType: FlacFile.FlacFile(Stream, FlacPreScanMode, Action<FlacPreScanFinishedEventArgs?>?)
+  fullName: SilverCraft.CSCore.Codecs.FLAC.FlacFile.FlacFile(System.IO.Stream, SilverCraft.CSCore.Codecs.FLAC.FlacPreScanMode, System.Action<SilverCraft.CSCore.Codecs.FLAC.FlacPreScanFinishedEventArgs?>?)
   type: Constructor
   source:
     remote:
@@ -201,14 +201,14 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: .ctor
     path: ../SilverCraft.CSCore/Codecs/FLAC/FlacFile.cs
-    startLine: 69
+    startLine: 68
   assemblies:
   - SilverCraft.CSCore
   namespace: SilverCraft.CSCore.Codecs.FLAC
   summary: Initializes a new instance of the <xref href="SilverCraft.CSCore.Codecs.FLAC.FlacFile" data-throw-if-not-resolved="false"></xref> class.
   example: []
   syntax:
-    content: public FlacFile(Stream stream, FlacPreScanMode scanFlag, Action<FlacPreScanFinishedEventArgs> onscanFinished)
+    content: public FlacFile(Stream stream, FlacPreScanMode scanFlag, Action<FlacPreScanFinishedEventArgs?>? onscanFinished)
     parameters:
     - id: stream
       type: System.IO.Stream
@@ -218,10 +218,7 @@ items:
       description: Scan mode which defines how to scan the flac data for frames.
     - id: onscanFinished
       type: System.Action{SilverCraft.CSCore.Codecs.FLAC.FlacPreScanFinishedEventArgs}
-      description: >-
-        Callback which gets called when the pre scan processes finished. Should be used if the
-
-        <code class="paramref">scanFlag</code> argument is set the <xref href="SilverCraft.CSCore.Codecs.FLAC.FlacPreScanMode.Async" data-throw-if-not-resolved="false"></xref>.
+      description: " Callback which gets called when the pre scan processes finished. Should be used if the\r\n <code class=\"paramref\">scanFlag</code> argument is set the <xref href=\"SilverCraft.CSCore.Codecs.FLAC.FlacPreScanMode.Async\" data-throw-if-not-resolved=\"false\"></xref>.\r\nIf a SeekTable is found scanning will be skipped but the callback will be called with a null."
     content.vb: Public Sub New(stream As Stream, scanFlag As FlacPreScanMode, onscanFinished As Action(Of FlacPreScanFinishedEventArgs))
   overload: SilverCraft.CSCore.Codecs.FLAC.FlacFile.#ctor*
   nameWithType.vb: FlacFile.New(Stream, FlacPreScanMode, Action(Of FlacPreScanFinishedEventArgs))
@@ -245,7 +242,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: Metadata
     path: ../SilverCraft.CSCore/Codecs/FLAC/FlacFile.cs
-    startLine: 116
+    startLine: 129
   assemblies:
   - SilverCraft.CSCore
   namespace: SilverCraft.CSCore.Codecs.FLAC
@@ -276,7 +273,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: WaveFormat
     path: ../SilverCraft.CSCore/Codecs/FLAC/FlacFile.cs
-    startLine: 123
+    startLine: 136
   assemblies:
   - SilverCraft.CSCore
   namespace: SilverCraft.CSCore.Codecs.FLAC
@@ -309,7 +306,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: CanSeek
     path: ../SilverCraft.CSCore/Codecs/FLAC/FlacFile.cs
-    startLine: 129
+    startLine: 142
   assemblies:
   - SilverCraft.CSCore
   namespace: SilverCraft.CSCore.Codecs.FLAC
@@ -345,7 +342,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: Read
     path: ../SilverCraft.CSCore/Codecs/FLAC/FlacFile.cs
-    startLine: 146
+    startLine: 159
   assemblies:
   - SilverCraft.CSCore
   namespace: SilverCraft.CSCore.Codecs.FLAC
@@ -402,7 +399,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: Position
     path: ../SilverCraft.CSCore/Codecs/FLAC/FlacFile.cs
-    startLine: 204
+    startLine: 221
   assemblies:
   - SilverCraft.CSCore
   namespace: SilverCraft.CSCore.Codecs.FLAC
@@ -435,7 +432,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: Length
     path: ../SilverCraft.CSCore/Codecs/FLAC/FlacFile.cs
-    startLine: 262
+    startLine: 305
   assemblies:
   - SilverCraft.CSCore
   namespace: SilverCraft.CSCore.Codecs.FLAC
@@ -468,7 +465,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: Dispose
     path: ../SilverCraft.CSCore/Codecs/FLAC/FlacFile.cs
-    startLine: 277
+    startLine: 318
   assemblies:
   - SilverCraft.CSCore
   namespace: SilverCraft.CSCore.Codecs.FLAC
@@ -498,7 +495,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: Dispose
     path: ../SilverCraft.CSCore/Codecs/FLAC/FlacFile.cs
-    startLine: 342
+    startLine: 383
   assemblies:
   - SilverCraft.CSCore
   namespace: SilverCraft.CSCore.Codecs.FLAC

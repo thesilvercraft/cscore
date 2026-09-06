@@ -74,3 +74,4 @@ remove.bat
 # CSCore.Ffmpeg binaries:
 !**/CSCore.Ffmpeg/FFmpeg/**
 *.flac
+.sonarqube/

@@ -89,7 +89,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: Initialize
     path: ../SilverCraft.CSCore.PortAudio/PortAudioLifetimeManager.cs
-    startLine: 29
+    startLine: 32
   assemblies:
   - SilverCraft.CSCore.PortAudio
   namespace: SilverCraft.CSCore.PortAudio
@@ -121,7 +121,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: Terminate
     path: ../SilverCraft.CSCore.PortAudio/PortAudioLifetimeManager.cs
-    startLine: 53
+    startLine: 56
   assemblies:
   - SilverCraft.CSCore.PortAudio
   namespace: SilverCraft.CSCore.PortAudio

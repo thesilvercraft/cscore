@@ -1,0 +1,30 @@
+### YamlMime:ManagedReference
+items:
+- uid: Generators
+  commentId: N:Generators
+  id: Generators
+  children:
+  - Generators.DllImportResolverAttribute
+  langs:
+  - csharp
+  - vb
+  name: Generators
+  nameWithType: Generators
+  fullName: Generators
+  type: Namespace
+  assemblies:
+  - SilverCraft.CSCore
+references:
+- uid: Generators.DllImportResolverAttribute
+  commentId: T:Generators.DllImportResolverAttribute
+  parent: Generators
+  href: Generators.DllImportResolverAttribute.html
+  name: DllImportResolverAttribute
+  nameWithType: DllImportResolverAttribute
+  fullName: Generators.DllImportResolverAttribute
+- uid: Generators
+  commentId: N:Generators
+  href: Generators.html
+  name: Generators
+  nameWithType: Generators
+  fullName: Generators

@@ -1,6 +1,154 @@
 ### YamlMime:XRefMap
 sorted: true
 references:
+- uid: Generators
+  name: Generators
+  href: api/Generators.html
+  commentId: N:Generators
+  fullName: Generators
+  nameWithType: Generators
+- uid: Generators.DllImportResolverAttribute
+  name: DllImportResolverAttribute
+  href: api/Generators.DllImportResolverAttribute.html
+  commentId: T:Generators.DllImportResolverAttribute
+  fullName: Generators.DllImportResolverAttribute
+  nameWithType: DllImportResolverAttribute
+- uid: Generators.DllImportResolverAttribute.#ctor(System.String,System.String)
+  name: DllImportResolverAttribute(string, string)
+  href: api/Generators.DllImportResolverAttribute.html#Generators_DllImportResolverAttribute__ctor_System_String_System_String_
+  commentId: M:Generators.DllImportResolverAttribute.#ctor(System.String,System.String)
+  name.vb: New(String, String)
+  fullName: Generators.DllImportResolverAttribute.DllImportResolverAttribute(string, string)
+  fullName.vb: Generators.DllImportResolverAttribute.New(String, String)
+  nameWithType: DllImportResolverAttribute.DllImportResolverAttribute(string, string)
+  nameWithType.vb: DllImportResolverAttribute.New(String, String)
+- uid: Generators.DllImportResolverAttribute.#ctor*
+  name: DllImportResolverAttribute
+  href: api/Generators.DllImportResolverAttribute.html#Generators_DllImportResolverAttribute__ctor_
+  commentId: Overload:Generators.DllImportResolverAttribute.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: Generators.DllImportResolverAttribute.DllImportResolverAttribute
+  fullName.vb: Generators.DllImportResolverAttribute.New
+  nameWithType: DllImportResolverAttribute.DllImportResolverAttribute
+  nameWithType.vb: DllImportResolverAttribute.New
+- uid: Generators.DllImportResolverAttribute.DllName
+  name: DllName
+  href: api/Generators.DllImportResolverAttribute.html#Generators_DllImportResolverAttribute_DllName
+  commentId: P:Generators.DllImportResolverAttribute.DllName
+  fullName: Generators.DllImportResolverAttribute.DllName
+  nameWithType: DllImportResolverAttribute.DllName
+- uid: Generators.DllImportResolverAttribute.DllName*
+  name: DllName
+  href: api/Generators.DllImportResolverAttribute.html#Generators_DllImportResolverAttribute_DllName_
+  commentId: Overload:Generators.DllImportResolverAttribute.DllName
+  isSpec: "True"
+  fullName: Generators.DllImportResolverAttribute.DllName
+  nameWithType: DllImportResolverAttribute.DllName
+- uid: Generators.DllImportResolverAttribute.GenericInstructionsLinuxEnd
+  name: GenericInstructionsLinuxEnd
+  href: api/Generators.DllImportResolverAttribute.html#Generators_DllImportResolverAttribute_GenericInstructionsLinuxEnd
+  commentId: P:Generators.DllImportResolverAttribute.GenericInstructionsLinuxEnd
+  fullName: Generators.DllImportResolverAttribute.GenericInstructionsLinuxEnd
+  nameWithType: DllImportResolverAttribute.GenericInstructionsLinuxEnd
+- uid: Generators.DllImportResolverAttribute.GenericInstructionsLinuxEnd*
+  name: GenericInstructionsLinuxEnd
+  href: api/Generators.DllImportResolverAttribute.html#Generators_DllImportResolverAttribute_GenericInstructionsLinuxEnd_
+  commentId: Overload:Generators.DllImportResolverAttribute.GenericInstructionsLinuxEnd
+  isSpec: "True"
+  fullName: Generators.DllImportResolverAttribute.GenericInstructionsLinuxEnd
+  nameWithType: DllImportResolverAttribute.GenericInstructionsLinuxEnd
+- uid: Generators.DllImportResolverAttribute.GenericInstructionsStart
+  name: GenericInstructionsStart
+  href: api/Generators.DllImportResolverAttribute.html#Generators_DllImportResolverAttribute_GenericInstructionsStart
+  commentId: P:Generators.DllImportResolverAttribute.GenericInstructionsStart
+  fullName: Generators.DllImportResolverAttribute.GenericInstructionsStart
+  nameWithType: DllImportResolverAttribute.GenericInstructionsStart
+- uid: Generators.DllImportResolverAttribute.GenericInstructionsStart*
+  name: GenericInstructionsStart
+  href: api/Generators.DllImportResolverAttribute.html#Generators_DllImportResolverAttribute_GenericInstructionsStart_
+  commentId: Overload:Generators.DllImportResolverAttribute.GenericInstructionsStart
+  isSpec: "True"
+  fullName: Generators.DllImportResolverAttribute.GenericInstructionsStart
+  nameWithType: DllImportResolverAttribute.GenericInstructionsStart
+- uid: Generators.DllImportResolverAttribute.GenericInstructionsWindowsEnd
+  name: GenericInstructionsWindowsEnd
+  href: api/Generators.DllImportResolverAttribute.html#Generators_DllImportResolverAttribute_GenericInstructionsWindowsEnd
+  commentId: P:Generators.DllImportResolverAttribute.GenericInstructionsWindowsEnd
+  fullName: Generators.DllImportResolverAttribute.GenericInstructionsWindowsEnd
+  nameWithType: DllImportResolverAttribute.GenericInstructionsWindowsEnd
+- uid: Generators.DllImportResolverAttribute.GenericInstructionsWindowsEnd*
+  name: GenericInstructionsWindowsEnd
+  href: api/Generators.DllImportResolverAttribute.html#Generators_DllImportResolverAttribute_GenericInstructionsWindowsEnd_
+  commentId: Overload:Generators.DllImportResolverAttribute.GenericInstructionsWindowsEnd
+  isSpec: "True"
+  fullName: Generators.DllImportResolverAttribute.GenericInstructionsWindowsEnd
+  nameWithType: DllImportResolverAttribute.GenericInstructionsWindowsEnd
+- uid: Generators.DllImportResolverAttribute.LibraryName
+  name: LibraryName
+  href: api/Generators.DllImportResolverAttribute.html#Generators_DllImportResolverAttribute_LibraryName
+  commentId: P:Generators.DllImportResolverAttribute.LibraryName
+  fullName: Generators.DllImportResolverAttribute.LibraryName
+  nameWithType: DllImportResolverAttribute.LibraryName
+- uid: Generators.DllImportResolverAttribute.LibraryName*
+  name: LibraryName
+  href: api/Generators.DllImportResolverAttribute.html#Generators_DllImportResolverAttribute_LibraryName_
+  commentId: Overload:Generators.DllImportResolverAttribute.LibraryName
+  isSpec: "True"
+  fullName: Generators.DllImportResolverAttribute.LibraryName
+  nameWithType: DllImportResolverAttribute.LibraryName
+- uid: Generators.DllImportResolverAttribute.LinuxDlls
+  name: LinuxDlls
+  href: api/Generators.DllImportResolverAttribute.html#Generators_DllImportResolverAttribute_LinuxDlls
+  commentId: P:Generators.DllImportResolverAttribute.LinuxDlls
+  fullName: Generators.DllImportResolverAttribute.LinuxDlls
+  nameWithType: DllImportResolverAttribute.LinuxDlls
+- uid: Generators.DllImportResolverAttribute.LinuxDlls*
+  name: LinuxDlls
+  href: api/Generators.DllImportResolverAttribute.html#Generators_DllImportResolverAttribute_LinuxDlls_
+  commentId: Overload:Generators.DllImportResolverAttribute.LinuxDlls
+  isSpec: "True"
+  fullName: Generators.DllImportResolverAttribute.LinuxDlls
+  nameWithType: DllImportResolverAttribute.LinuxDlls
+- uid: Generators.DllImportResolverAttribute.LinuxInstructions
+  name: LinuxInstructions
+  href: api/Generators.DllImportResolverAttribute.html#Generators_DllImportResolverAttribute_LinuxInstructions
+  commentId: P:Generators.DllImportResolverAttribute.LinuxInstructions
+  fullName: Generators.DllImportResolverAttribute.LinuxInstructions
+  nameWithType: DllImportResolverAttribute.LinuxInstructions
+- uid: Generators.DllImportResolverAttribute.LinuxInstructions*
+  name: LinuxInstructions
+  href: api/Generators.DllImportResolverAttribute.html#Generators_DllImportResolverAttribute_LinuxInstructions_
+  commentId: Overload:Generators.DllImportResolverAttribute.LinuxInstructions
+  isSpec: "True"
+  fullName: Generators.DllImportResolverAttribute.LinuxInstructions
+  nameWithType: DllImportResolverAttribute.LinuxInstructions
+- uid: Generators.DllImportResolverAttribute.MacOsDlls
+  name: MacOsDlls
+  href: api/Generators.DllImportResolverAttribute.html#Generators_DllImportResolverAttribute_MacOsDlls
+  commentId: P:Generators.DllImportResolverAttribute.MacOsDlls
+  fullName: Generators.DllImportResolverAttribute.MacOsDlls
+  nameWithType: DllImportResolverAttribute.MacOsDlls
+- uid: Generators.DllImportResolverAttribute.MacOsDlls*
+  name: MacOsDlls
+  href: api/Generators.DllImportResolverAttribute.html#Generators_DllImportResolverAttribute_MacOsDlls_
+  commentId: Overload:Generators.DllImportResolverAttribute.MacOsDlls
+  isSpec: "True"
+  fullName: Generators.DllImportResolverAttribute.MacOsDlls
+  nameWithType: DllImportResolverAttribute.MacOsDlls
+- uid: Generators.DllImportResolverAttribute.WindowsDlls
+  name: WindowsDlls
+  href: api/Generators.DllImportResolverAttribute.html#Generators_DllImportResolverAttribute_WindowsDlls
+  commentId: P:Generators.DllImportResolverAttribute.WindowsDlls
+  fullName: Generators.DllImportResolverAttribute.WindowsDlls
+  nameWithType: DllImportResolverAttribute.WindowsDlls
+- uid: Generators.DllImportResolverAttribute.WindowsDlls*
+  name: WindowsDlls
+  href: api/Generators.DllImportResolverAttribute.html#Generators_DllImportResolverAttribute_WindowsDlls_
+  commentId: Overload:Generators.DllImportResolverAttribute.WindowsDlls
+  isSpec: "True"
+  fullName: Generators.DllImportResolverAttribute.WindowsDlls
+  nameWithType: DllImportResolverAttribute.WindowsDlls
 - uid: OpenMPT
   name: OpenMPT
   href: api/OpenMPT.html
@@ -4953,13 +5101,13 @@ references:
   nameWithType: FlacFile.FlacFile(Stream, FlacPreScanMode)
   nameWithType.vb: FlacFile.New(Stream, FlacPreScanMode)
 - uid: SilverCraft.CSCore.Codecs.FLAC.FlacFile.#ctor(System.IO.Stream,SilverCraft.CSCore.Codecs.FLAC.FlacPreScanMode,System.Action{SilverCraft.CSCore.Codecs.FLAC.FlacPreScanFinishedEventArgs})
-  name: FlacFile(Stream, FlacPreScanMode, Action<FlacPreScanFinishedEventArgs>)
+  name: FlacFile(Stream, FlacPreScanMode, Action<FlacPreScanFinishedEventArgs?>?)
   href: api/SilverCraft.CSCore.Codecs.FLAC.FlacFile.html#SilverCraft_CSCore_Codecs_FLAC_FlacFile__ctor_System_IO_Stream_SilverCraft_CSCore_Codecs_FLAC_FlacPreScanMode_System_Action_SilverCraft_CSCore_Codecs_FLAC_FlacPreScanFinishedEventArgs__
   commentId: M:SilverCraft.CSCore.Codecs.FLAC.FlacFile.#ctor(System.IO.Stream,SilverCraft.CSCore.Codecs.FLAC.FlacPreScanMode,System.Action{SilverCraft.CSCore.Codecs.FLAC.FlacPreScanFinishedEventArgs})
   name.vb: New(Stream, FlacPreScanMode, Action(Of FlacPreScanFinishedEventArgs))
-  fullName: SilverCraft.CSCore.Codecs.FLAC.FlacFile.FlacFile(System.IO.Stream, SilverCraft.CSCore.Codecs.FLAC.FlacPreScanMode, System.Action<SilverCraft.CSCore.Codecs.FLAC.FlacPreScanFinishedEventArgs>)
+  fullName: SilverCraft.CSCore.Codecs.FLAC.FlacFile.FlacFile(System.IO.Stream, SilverCraft.CSCore.Codecs.FLAC.FlacPreScanMode, System.Action<SilverCraft.CSCore.Codecs.FLAC.FlacPreScanFinishedEventArgs?>?)
   fullName.vb: SilverCraft.CSCore.Codecs.FLAC.FlacFile.New(System.IO.Stream, SilverCraft.CSCore.Codecs.FLAC.FlacPreScanMode, System.Action(Of SilverCraft.CSCore.Codecs.FLAC.FlacPreScanFinishedEventArgs))
-  nameWithType: FlacFile.FlacFile(Stream, FlacPreScanMode, Action<FlacPreScanFinishedEventArgs>)
+  nameWithType: FlacFile.FlacFile(Stream, FlacPreScanMode, Action<FlacPreScanFinishedEventArgs?>?)
   nameWithType.vb: FlacFile.New(Stream, FlacPreScanMode, Action(Of FlacPreScanFinishedEventArgs))
 - uid: SilverCraft.CSCore.Codecs.FLAC.FlacFile.#ctor(System.String)
   name: FlacFile(string)
@@ -5195,15 +5343,15 @@ references:
   commentId: T:SilverCraft.CSCore.Codecs.FLAC.FlacFrameHeader
   fullName: SilverCraft.CSCore.Codecs.FLAC.FlacFrameHeader
   nameWithType: FlacFrameHeader
-- uid: SilverCraft.CSCore.Codecs.FLAC.FlacFrameHeader.#ctor(System.Byte*@,SilverCraft.CSCore.Codecs.FLAC.FlacMetadataStreamInfo,System.Boolean)
-  name: FlacFrameHeader(ref byte*, FlacMetadataStreamInfo, bool)
-  href: api/SilverCraft.CSCore.Codecs.FLAC.FlacFrameHeader.html#SilverCraft_CSCore_Codecs_FLAC_FlacFrameHeader__ctor_System_Byte___SilverCraft_CSCore_Codecs_FLAC_FlacMetadataStreamInfo_System_Boolean_
-  commentId: M:SilverCraft.CSCore.Codecs.FLAC.FlacFrameHeader.#ctor(System.Byte*@,SilverCraft.CSCore.Codecs.FLAC.FlacMetadataStreamInfo,System.Boolean)
-  name.vb: New(Byte*, FlacMetadataStreamInfo, Boolean)
-  fullName: SilverCraft.CSCore.Codecs.FLAC.FlacFrameHeader.FlacFrameHeader(ref byte*, SilverCraft.CSCore.Codecs.FLAC.FlacMetadataStreamInfo, bool)
-  fullName.vb: SilverCraft.CSCore.Codecs.FLAC.FlacFrameHeader.New(Byte*, SilverCraft.CSCore.Codecs.FLAC.FlacMetadataStreamInfo, Boolean)
-  nameWithType: FlacFrameHeader.FlacFrameHeader(ref byte*, FlacMetadataStreamInfo, bool)
-  nameWithType.vb: FlacFrameHeader.New(Byte*, FlacMetadataStreamInfo, Boolean)
+- uid: SilverCraft.CSCore.Codecs.FLAC.FlacFrameHeader.#ctor(System.Byte[],System.Int32,SilverCraft.CSCore.Codecs.FLAC.FlacMetadataStreamInfo,System.Boolean)
+  name: FlacFrameHeader(byte[], int, FlacMetadataStreamInfo, bool)
+  href: api/SilverCraft.CSCore.Codecs.FLAC.FlacFrameHeader.html#SilverCraft_CSCore_Codecs_FLAC_FlacFrameHeader__ctor_System_Byte___System_Int32_SilverCraft_CSCore_Codecs_FLAC_FlacMetadataStreamInfo_System_Boolean_
+  commentId: M:SilverCraft.CSCore.Codecs.FLAC.FlacFrameHeader.#ctor(System.Byte[],System.Int32,SilverCraft.CSCore.Codecs.FLAC.FlacMetadataStreamInfo,System.Boolean)
+  name.vb: New(Byte(), Integer, FlacMetadataStreamInfo, Boolean)
+  fullName: SilverCraft.CSCore.Codecs.FLAC.FlacFrameHeader.FlacFrameHeader(byte[], int, SilverCraft.CSCore.Codecs.FLAC.FlacMetadataStreamInfo, bool)
+  fullName.vb: SilverCraft.CSCore.Codecs.FLAC.FlacFrameHeader.New(Byte(), Integer, SilverCraft.CSCore.Codecs.FLAC.FlacMetadataStreamInfo, Boolean)
+  nameWithType: FlacFrameHeader.FlacFrameHeader(byte[], int, FlacMetadataStreamInfo, bool)
+  nameWithType.vb: FlacFrameHeader.New(Byte(), Integer, FlacMetadataStreamInfo, Boolean)
 - uid: SilverCraft.CSCore.Codecs.FLAC.FlacFrameHeader.#ctor(System.IO.Stream,SilverCraft.CSCore.Codecs.FLAC.FlacMetadataStreamInfo,System.Boolean)
   name: FlacFrameHeader(Stream, FlacMetadataStreamInfo?, bool)
   href: api/SilverCraft.CSCore.Codecs.FLAC.FlacFrameHeader.html#SilverCraft_CSCore_Codecs_FLAC_FlacFrameHeader__ctor_System_IO_Stream_SilverCraft_CSCore_Codecs_FLAC_FlacMetadataStreamInfo_System_Boolean_
@@ -5866,15 +6014,15 @@ references:
   commentId: T:SilverCraft.CSCore.Codecs.FLAC.FlacPreScanFinishedEventArgs
   fullName: SilverCraft.CSCore.Codecs.FLAC.FlacPreScanFinishedEventArgs
   nameWithType: FlacPreScanFinishedEventArgs
-- uid: SilverCraft.CSCore.Codecs.FLAC.FlacPreScanFinishedEventArgs.#ctor(System.Collections.Generic.List{SilverCraft.CSCore.Codecs.FLAC.FlacFrameInformation})
-  name: FlacPreScanFinishedEventArgs(List<FlacFrameInformation>)
-  href: api/SilverCraft.CSCore.Codecs.FLAC.FlacPreScanFinishedEventArgs.html#SilverCraft_CSCore_Codecs_FLAC_FlacPreScanFinishedEventArgs__ctor_System_Collections_Generic_List_SilverCraft_CSCore_Codecs_FLAC_FlacFrameInformation__
-  commentId: M:SilverCraft.CSCore.Codecs.FLAC.FlacPreScanFinishedEventArgs.#ctor(System.Collections.Generic.List{SilverCraft.CSCore.Codecs.FLAC.FlacFrameInformation})
-  name.vb: New(List(Of FlacFrameInformation))
-  fullName: SilverCraft.CSCore.Codecs.FLAC.FlacPreScanFinishedEventArgs.FlacPreScanFinishedEventArgs(System.Collections.Generic.List<SilverCraft.CSCore.Codecs.FLAC.FlacFrameInformation>)
-  fullName.vb: SilverCraft.CSCore.Codecs.FLAC.FlacPreScanFinishedEventArgs.New(System.Collections.Generic.List(Of SilverCraft.CSCore.Codecs.FLAC.FlacFrameInformation))
-  nameWithType: FlacPreScanFinishedEventArgs.FlacPreScanFinishedEventArgs(List<FlacFrameInformation>)
-  nameWithType.vb: FlacPreScanFinishedEventArgs.New(List(Of FlacFrameInformation))
+- uid: SilverCraft.CSCore.Codecs.FLAC.FlacPreScanFinishedEventArgs.#ctor(System.Collections.Generic.IReadOnlyCollection{SilverCraft.CSCore.Codecs.FLAC.FlacFrameInformation})
+  name: FlacPreScanFinishedEventArgs(IReadOnlyCollection<FlacFrameInformation>)
+  href: api/SilverCraft.CSCore.Codecs.FLAC.FlacPreScanFinishedEventArgs.html#SilverCraft_CSCore_Codecs_FLAC_FlacPreScanFinishedEventArgs__ctor_System_Collections_Generic_IReadOnlyCollection_SilverCraft_CSCore_Codecs_FLAC_FlacFrameInformation__
+  commentId: M:SilverCraft.CSCore.Codecs.FLAC.FlacPreScanFinishedEventArgs.#ctor(System.Collections.Generic.IReadOnlyCollection{SilverCraft.CSCore.Codecs.FLAC.FlacFrameInformation})
+  name.vb: New(IReadOnlyCollection(Of FlacFrameInformation))
+  fullName: SilverCraft.CSCore.Codecs.FLAC.FlacPreScanFinishedEventArgs.FlacPreScanFinishedEventArgs(System.Collections.Generic.IReadOnlyCollection<SilverCraft.CSCore.Codecs.FLAC.FlacFrameInformation>)
+  fullName.vb: SilverCraft.CSCore.Codecs.FLAC.FlacPreScanFinishedEventArgs.New(System.Collections.Generic.IReadOnlyCollection(Of SilverCraft.CSCore.Codecs.FLAC.FlacFrameInformation))
+  nameWithType: FlacPreScanFinishedEventArgs.FlacPreScanFinishedEventArgs(IReadOnlyCollection<FlacFrameInformation>)
+  nameWithType.vb: FlacPreScanFinishedEventArgs.New(IReadOnlyCollection(Of FlacFrameInformation))
 - uid: SilverCraft.CSCore.Codecs.FLAC.FlacPreScanFinishedEventArgs.#ctor*
   name: FlacPreScanFinishedEventArgs
   href: api/SilverCraft.CSCore.Codecs.FLAC.FlacPreScanFinishedEventArgs.html#SilverCraft_CSCore_Codecs_FLAC_FlacPreScanFinishedEventArgs__ctor_
@@ -8706,6 +8854,31 @@ references:
   isSpec: "True"
   fullName: SilverCraft.CSCore.LogLocation.GetLogger
   nameWithType: LogLocation.GetLogger
+- uid: SilverCraft.CSCore.NativeLibraryResolver
+  name: SilverCraft.CSCore.NativeLibraryResolver
+  href: api/SilverCraft.CSCore.NativeLibraryResolver.html
+  commentId: N:SilverCraft.CSCore.NativeLibraryResolver
+  fullName: SilverCraft.CSCore.NativeLibraryResolver
+  nameWithType: SilverCraft.CSCore.NativeLibraryResolver
+- uid: SilverCraft.CSCore.NativeLibraryResolver.SourceGeneratorWithAttributes
+  name: SourceGeneratorWithAttributes
+  href: api/SilverCraft.CSCore.NativeLibraryResolver.SourceGeneratorWithAttributes.html
+  commentId: T:SilverCraft.CSCore.NativeLibraryResolver.SourceGeneratorWithAttributes
+  fullName: SilverCraft.CSCore.NativeLibraryResolver.SourceGeneratorWithAttributes
+  nameWithType: SourceGeneratorWithAttributes
+- uid: SilverCraft.CSCore.NativeLibraryResolver.SourceGeneratorWithAttributes.Initialize(Microsoft.CodeAnalysis.IncrementalGeneratorInitializationContext)
+  name: Initialize(IncrementalGeneratorInitializationContext)
+  href: api/SilverCraft.CSCore.NativeLibraryResolver.SourceGeneratorWithAttributes.html#SilverCraft_CSCore_NativeLibraryResolver_SourceGeneratorWithAttributes_Initialize_Microsoft_CodeAnalysis_IncrementalGeneratorInitializationContext_
+  commentId: M:SilverCraft.CSCore.NativeLibraryResolver.SourceGeneratorWithAttributes.Initialize(Microsoft.CodeAnalysis.IncrementalGeneratorInitializationContext)
+  fullName: SilverCraft.CSCore.NativeLibraryResolver.SourceGeneratorWithAttributes.Initialize(Microsoft.CodeAnalysis.IncrementalGeneratorInitializationContext)
+  nameWithType: SourceGeneratorWithAttributes.Initialize(IncrementalGeneratorInitializationContext)
+- uid: SilverCraft.CSCore.NativeLibraryResolver.SourceGeneratorWithAttributes.Initialize*
+  name: Initialize
+  href: api/SilverCraft.CSCore.NativeLibraryResolver.SourceGeneratorWithAttributes.html#SilverCraft_CSCore_NativeLibraryResolver_SourceGeneratorWithAttributes_Initialize_
+  commentId: Overload:SilverCraft.CSCore.NativeLibraryResolver.SourceGeneratorWithAttributes.Initialize
+  isSpec: "True"
+  fullName: SilverCraft.CSCore.NativeLibraryResolver.SourceGeneratorWithAttributes.Initialize
+  nameWithType: SourceGeneratorWithAttributes.Initialize
 - uid: SilverCraft.CSCore.OpenMPT
   name: SilverCraft.CSCore.OpenMPT
   href: api/SilverCraft.CSCore.OpenMPT.html
@@ -10258,6 +10431,188 @@ references:
   isSpec: "True"
   fullName: SilverCraft.CSCore.PortAudio.PortAudioLifetimeManager.Terminate
   nameWithType: PortAudioLifetimeManager.Terminate
+- uid: SilverCraft.CSCore.PortAudio.PortAudioSoundIn
+  name: PortAudioSoundIn
+  href: api/SilverCraft.CSCore.PortAudio.PortAudioSoundIn.html
+  commentId: T:SilverCraft.CSCore.PortAudio.PortAudioSoundIn
+  fullName: SilverCraft.CSCore.PortAudio.PortAudioSoundIn
+  nameWithType: PortAudioSoundIn
+- uid: SilverCraft.CSCore.PortAudio.PortAudioSoundIn.#ctor(System.Int32,System.Int32)
+  name: PortAudioSoundIn(int, int)
+  href: api/SilverCraft.CSCore.PortAudio.PortAudioSoundIn.html#SilverCraft_CSCore_PortAudio_PortAudioSoundIn__ctor_System_Int32_System_Int32_
+  commentId: M:SilverCraft.CSCore.PortAudio.PortAudioSoundIn.#ctor(System.Int32,System.Int32)
+  name.vb: New(Integer, Integer)
+  fullName: SilverCraft.CSCore.PortAudio.PortAudioSoundIn.PortAudioSoundIn(int, int)
+  fullName.vb: SilverCraft.CSCore.PortAudio.PortAudioSoundIn.New(Integer, Integer)
+  nameWithType: PortAudioSoundIn.PortAudioSoundIn(int, int)
+  nameWithType.vb: PortAudioSoundIn.New(Integer, Integer)
+- uid: SilverCraft.CSCore.PortAudio.PortAudioSoundIn.#ctor*
+  name: PortAudioSoundIn
+  href: api/SilverCraft.CSCore.PortAudio.PortAudioSoundIn.html#SilverCraft_CSCore_PortAudio_PortAudioSoundIn__ctor_
+  commentId: Overload:SilverCraft.CSCore.PortAudio.PortAudioSoundIn.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: SilverCraft.CSCore.PortAudio.PortAudioSoundIn.PortAudioSoundIn
+  fullName.vb: SilverCraft.CSCore.PortAudio.PortAudioSoundIn.New
+  nameWithType: PortAudioSoundIn.PortAudioSoundIn
+  nameWithType.vb: PortAudioSoundIn.New
+- uid: SilverCraft.CSCore.PortAudio.PortAudioSoundIn.Channels
+  name: Channels
+  href: api/SilverCraft.CSCore.PortAudio.PortAudioSoundIn.html#SilverCraft_CSCore_PortAudio_PortAudioSoundIn_Channels
+  commentId: P:SilverCraft.CSCore.PortAudio.PortAudioSoundIn.Channels
+  fullName: SilverCraft.CSCore.PortAudio.PortAudioSoundIn.Channels
+  nameWithType: PortAudioSoundIn.Channels
+- uid: SilverCraft.CSCore.PortAudio.PortAudioSoundIn.Channels*
+  name: Channels
+  href: api/SilverCraft.CSCore.PortAudio.PortAudioSoundIn.html#SilverCraft_CSCore_PortAudio_PortAudioSoundIn_Channels_
+  commentId: Overload:SilverCraft.CSCore.PortAudio.PortAudioSoundIn.Channels
+  isSpec: "True"
+  fullName: SilverCraft.CSCore.PortAudio.PortAudioSoundIn.Channels
+  nameWithType: PortAudioSoundIn.Channels
+- uid: SilverCraft.CSCore.PortAudio.PortAudioSoundIn.DataAvailable
+  name: DataAvailable
+  href: api/SilverCraft.CSCore.PortAudio.PortAudioSoundIn.html#SilverCraft_CSCore_PortAudio_PortAudioSoundIn_DataAvailable
+  commentId: E:SilverCraft.CSCore.PortAudio.PortAudioSoundIn.DataAvailable
+  fullName: SilverCraft.CSCore.PortAudio.PortAudioSoundIn.DataAvailable
+  nameWithType: PortAudioSoundIn.DataAvailable
+- uid: SilverCraft.CSCore.PortAudio.PortAudioSoundIn.Dispose
+  name: Dispose()
+  href: api/SilverCraft.CSCore.PortAudio.PortAudioSoundIn.html#SilverCraft_CSCore_PortAudio_PortAudioSoundIn_Dispose
+  commentId: M:SilverCraft.CSCore.PortAudio.PortAudioSoundIn.Dispose
+  fullName: SilverCraft.CSCore.PortAudio.PortAudioSoundIn.Dispose()
+  nameWithType: PortAudioSoundIn.Dispose()
+- uid: SilverCraft.CSCore.PortAudio.PortAudioSoundIn.Dispose(System.Boolean)
+  name: Dispose(bool)
+  href: api/SilverCraft.CSCore.PortAudio.PortAudioSoundIn.html#SilverCraft_CSCore_PortAudio_PortAudioSoundIn_Dispose_System_Boolean_
+  commentId: M:SilverCraft.CSCore.PortAudio.PortAudioSoundIn.Dispose(System.Boolean)
+  name.vb: Dispose(Boolean)
+  fullName: SilverCraft.CSCore.PortAudio.PortAudioSoundIn.Dispose(bool)
+  fullName.vb: SilverCraft.CSCore.PortAudio.PortAudioSoundIn.Dispose(Boolean)
+  nameWithType: PortAudioSoundIn.Dispose(bool)
+  nameWithType.vb: PortAudioSoundIn.Dispose(Boolean)
+- uid: SilverCraft.CSCore.PortAudio.PortAudioSoundIn.Dispose*
+  name: Dispose
+  href: api/SilverCraft.CSCore.PortAudio.PortAudioSoundIn.html#SilverCraft_CSCore_PortAudio_PortAudioSoundIn_Dispose_
+  commentId: Overload:SilverCraft.CSCore.PortAudio.PortAudioSoundIn.Dispose
+  isSpec: "True"
+  fullName: SilverCraft.CSCore.PortAudio.PortAudioSoundIn.Dispose
+  nameWithType: PortAudioSoundIn.Dispose
+- uid: SilverCraft.CSCore.PortAudio.PortAudioSoundIn.Finalize
+  name: ~PortAudioSoundIn()
+  href: api/SilverCraft.CSCore.PortAudio.PortAudioSoundIn.html#SilverCraft_CSCore_PortAudio_PortAudioSoundIn_Finalize
+  commentId: M:SilverCraft.CSCore.PortAudio.PortAudioSoundIn.Finalize
+  name.vb: ''
+  fullName: SilverCraft.CSCore.PortAudio.PortAudioSoundIn.~PortAudioSoundIn()
+  fullName.vb: ''
+  nameWithType: PortAudioSoundIn.~PortAudioSoundIn()
+  nameWithType.vb: ''
+- uid: SilverCraft.CSCore.PortAudio.PortAudioSoundIn.Finalize*
+  name: ~PortAudioSoundIn
+  href: api/SilverCraft.CSCore.PortAudio.PortAudioSoundIn.html#SilverCraft_CSCore_PortAudio_PortAudioSoundIn_Finalize_
+  commentId: Overload:SilverCraft.CSCore.PortAudio.PortAudioSoundIn.Finalize
+  isSpec: "True"
+  fullName: SilverCraft.CSCore.PortAudio.PortAudioSoundIn.~PortAudioSoundIn
+  nameWithType: PortAudioSoundIn.~PortAudioSoundIn
+- uid: SilverCraft.CSCore.PortAudio.PortAudioSoundIn.Initialize
+  name: Initialize()
+  href: api/SilverCraft.CSCore.PortAudio.PortAudioSoundIn.html#SilverCraft_CSCore_PortAudio_PortAudioSoundIn_Initialize
+  commentId: M:SilverCraft.CSCore.PortAudio.PortAudioSoundIn.Initialize
+  fullName: SilverCraft.CSCore.PortAudio.PortAudioSoundIn.Initialize()
+  nameWithType: PortAudioSoundIn.Initialize()
+- uid: SilverCraft.CSCore.PortAudio.PortAudioSoundIn.Initialize*
+  name: Initialize
+  href: api/SilverCraft.CSCore.PortAudio.PortAudioSoundIn.html#SilverCraft_CSCore_PortAudio_PortAudioSoundIn_Initialize_
+  commentId: Overload:SilverCraft.CSCore.PortAudio.PortAudioSoundIn.Initialize
+  isSpec: "True"
+  fullName: SilverCraft.CSCore.PortAudio.PortAudioSoundIn.Initialize
+  nameWithType: PortAudioSoundIn.Initialize
+- uid: SilverCraft.CSCore.PortAudio.PortAudioSoundIn.OnStreamFinished(System.Void*)
+  name: OnStreamFinished(void*)
+  href: api/SilverCraft.CSCore.PortAudio.PortAudioSoundIn.html#SilverCraft_CSCore_PortAudio_PortAudioSoundIn_OnStreamFinished_System_Void__
+  commentId: M:SilverCraft.CSCore.PortAudio.PortAudioSoundIn.OnStreamFinished(System.Void*)
+  name.vb: OnStreamFinished(Void*)
+  fullName: SilverCraft.CSCore.PortAudio.PortAudioSoundIn.OnStreamFinished(void*)
+  fullName.vb: SilverCraft.CSCore.PortAudio.PortAudioSoundIn.OnStreamFinished(Void*)
+  nameWithType: PortAudioSoundIn.OnStreamFinished(void*)
+  nameWithType.vb: PortAudioSoundIn.OnStreamFinished(Void*)
+- uid: SilverCraft.CSCore.PortAudio.PortAudioSoundIn.OnStreamFinished*
+  name: OnStreamFinished
+  href: api/SilverCraft.CSCore.PortAudio.PortAudioSoundIn.html#SilverCraft_CSCore_PortAudio_PortAudioSoundIn_OnStreamFinished_
+  commentId: Overload:SilverCraft.CSCore.PortAudio.PortAudioSoundIn.OnStreamFinished
+  isSpec: "True"
+  fullName: SilverCraft.CSCore.PortAudio.PortAudioSoundIn.OnStreamFinished
+  nameWithType: PortAudioSoundIn.OnStreamFinished
+- uid: SilverCraft.CSCore.PortAudio.PortAudioSoundIn.RecordingState
+  name: RecordingState
+  href: api/SilverCraft.CSCore.PortAudio.PortAudioSoundIn.html#SilverCraft_CSCore_PortAudio_PortAudioSoundIn_RecordingState
+  commentId: P:SilverCraft.CSCore.PortAudio.PortAudioSoundIn.RecordingState
+  fullName: SilverCraft.CSCore.PortAudio.PortAudioSoundIn.RecordingState
+  nameWithType: PortAudioSoundIn.RecordingState
+- uid: SilverCraft.CSCore.PortAudio.PortAudioSoundIn.RecordingState*
+  name: RecordingState
+  href: api/SilverCraft.CSCore.PortAudio.PortAudioSoundIn.html#SilverCraft_CSCore_PortAudio_PortAudioSoundIn_RecordingState_
+  commentId: Overload:SilverCraft.CSCore.PortAudio.PortAudioSoundIn.RecordingState
+  isSpec: "True"
+  fullName: SilverCraft.CSCore.PortAudio.PortAudioSoundIn.RecordingState
+  nameWithType: PortAudioSoundIn.RecordingState
+- uid: SilverCraft.CSCore.PortAudio.PortAudioSoundIn.SampleRate
+  name: SampleRate
+  href: api/SilverCraft.CSCore.PortAudio.PortAudioSoundIn.html#SilverCraft_CSCore_PortAudio_PortAudioSoundIn_SampleRate
+  commentId: P:SilverCraft.CSCore.PortAudio.PortAudioSoundIn.SampleRate
+  fullName: SilverCraft.CSCore.PortAudio.PortAudioSoundIn.SampleRate
+  nameWithType: PortAudioSoundIn.SampleRate
+- uid: SilverCraft.CSCore.PortAudio.PortAudioSoundIn.SampleRate*
+  name: SampleRate
+  href: api/SilverCraft.CSCore.PortAudio.PortAudioSoundIn.html#SilverCraft_CSCore_PortAudio_PortAudioSoundIn_SampleRate_
+  commentId: Overload:SilverCraft.CSCore.PortAudio.PortAudioSoundIn.SampleRate
+  isSpec: "True"
+  fullName: SilverCraft.CSCore.PortAudio.PortAudioSoundIn.SampleRate
+  nameWithType: PortAudioSoundIn.SampleRate
+- uid: SilverCraft.CSCore.PortAudio.PortAudioSoundIn.Start
+  name: Start()
+  href: api/SilverCraft.CSCore.PortAudio.PortAudioSoundIn.html#SilverCraft_CSCore_PortAudio_PortAudioSoundIn_Start
+  commentId: M:SilverCraft.CSCore.PortAudio.PortAudioSoundIn.Start
+  fullName: SilverCraft.CSCore.PortAudio.PortAudioSoundIn.Start()
+  nameWithType: PortAudioSoundIn.Start()
+- uid: SilverCraft.CSCore.PortAudio.PortAudioSoundIn.Start*
+  name: Start
+  href: api/SilverCraft.CSCore.PortAudio.PortAudioSoundIn.html#SilverCraft_CSCore_PortAudio_PortAudioSoundIn_Start_
+  commentId: Overload:SilverCraft.CSCore.PortAudio.PortAudioSoundIn.Start
+  isSpec: "True"
+  fullName: SilverCraft.CSCore.PortAudio.PortAudioSoundIn.Start
+  nameWithType: PortAudioSoundIn.Start
+- uid: SilverCraft.CSCore.PortAudio.PortAudioSoundIn.Stop
+  name: Stop()
+  href: api/SilverCraft.CSCore.PortAudio.PortAudioSoundIn.html#SilverCraft_CSCore_PortAudio_PortAudioSoundIn_Stop
+  commentId: M:SilverCraft.CSCore.PortAudio.PortAudioSoundIn.Stop
+  fullName: SilverCraft.CSCore.PortAudio.PortAudioSoundIn.Stop()
+  nameWithType: PortAudioSoundIn.Stop()
+- uid: SilverCraft.CSCore.PortAudio.PortAudioSoundIn.Stop*
+  name: Stop
+  href: api/SilverCraft.CSCore.PortAudio.PortAudioSoundIn.html#SilverCraft_CSCore_PortAudio_PortAudioSoundIn_Stop_
+  commentId: Overload:SilverCraft.CSCore.PortAudio.PortAudioSoundIn.Stop
+  isSpec: "True"
+  fullName: SilverCraft.CSCore.PortAudio.PortAudioSoundIn.Stop
+  nameWithType: PortAudioSoundIn.Stop
+- uid: SilverCraft.CSCore.PortAudio.PortAudioSoundIn.Stopped
+  name: Stopped
+  href: api/SilverCraft.CSCore.PortAudio.PortAudioSoundIn.html#SilverCraft_CSCore_PortAudio_PortAudioSoundIn_Stopped
+  commentId: E:SilverCraft.CSCore.PortAudio.PortAudioSoundIn.Stopped
+  fullName: SilverCraft.CSCore.PortAudio.PortAudioSoundIn.Stopped
+  nameWithType: PortAudioSoundIn.Stopped
+- uid: SilverCraft.CSCore.PortAudio.PortAudioSoundIn.WaveFormat
+  name: WaveFormat
+  href: api/SilverCraft.CSCore.PortAudio.PortAudioSoundIn.html#SilverCraft_CSCore_PortAudio_PortAudioSoundIn_WaveFormat
+  commentId: P:SilverCraft.CSCore.PortAudio.PortAudioSoundIn.WaveFormat
+  fullName: SilverCraft.CSCore.PortAudio.PortAudioSoundIn.WaveFormat
+  nameWithType: PortAudioSoundIn.WaveFormat
+- uid: SilverCraft.CSCore.PortAudio.PortAudioSoundIn.WaveFormat*
+  name: WaveFormat
+  href: api/SilverCraft.CSCore.PortAudio.PortAudioSoundIn.html#SilverCraft_CSCore_PortAudio_PortAudioSoundIn_WaveFormat_
+  commentId: Overload:SilverCraft.CSCore.PortAudio.PortAudioSoundIn.WaveFormat
+  isSpec: "True"
+  fullName: SilverCraft.CSCore.PortAudio.PortAudioSoundIn.WaveFormat
+  nameWithType: PortAudioSoundIn.WaveFormat
 - uid: SilverCraft.CSCore.PortAudio.PortAudioSoundOut
   name: PortAudioSoundOut
   href: api/SilverCraft.CSCore.PortAudio.PortAudioSoundOut.html

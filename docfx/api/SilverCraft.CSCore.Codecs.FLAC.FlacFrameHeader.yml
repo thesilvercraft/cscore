@@ -5,7 +5,7 @@ items:
   id: FlacFrameHeader
   parent: SilverCraft.CSCore.Codecs.FLAC
   children:
-  - SilverCraft.CSCore.Codecs.FLAC.FlacFrameHeader.#ctor(System.Byte*@,SilverCraft.CSCore.Codecs.FLAC.FlacMetadataStreamInfo,System.Boolean)
+  - SilverCraft.CSCore.Codecs.FLAC.FlacFrameHeader.#ctor(System.Byte[],System.Int32,SilverCraft.CSCore.Codecs.FLAC.FlacMetadataStreamInfo,System.Boolean)
   - SilverCraft.CSCore.Codecs.FLAC.FlacFrameHeader.#ctor(System.IO.Stream,SilverCraft.CSCore.Codecs.FLAC.FlacMetadataStreamInfo,System.Boolean)
   - SilverCraft.CSCore.Codecs.FLAC.FlacFrameHeader.BitsPerSample
   - SilverCraft.CSCore.Codecs.FLAC.FlacFrameHeader.BlockSize
@@ -448,16 +448,16 @@ items:
   nameWithType.vb: FlacFrameHeader.New(Stream, FlacMetadataStreamInfo, Boolean)
   fullName.vb: SilverCraft.CSCore.Codecs.FLAC.FlacFrameHeader.New(System.IO.Stream, SilverCraft.CSCore.Codecs.FLAC.FlacMetadataStreamInfo, Boolean)
   name.vb: New(Stream, FlacMetadataStreamInfo, Boolean)
-- uid: SilverCraft.CSCore.Codecs.FLAC.FlacFrameHeader.#ctor(System.Byte*@,SilverCraft.CSCore.Codecs.FLAC.FlacMetadataStreamInfo,System.Boolean)
-  commentId: M:SilverCraft.CSCore.Codecs.FLAC.FlacFrameHeader.#ctor(System.Byte*@,SilverCraft.CSCore.Codecs.FLAC.FlacMetadataStreamInfo,System.Boolean)
-  id: '#ctor(System.Byte*@,SilverCraft.CSCore.Codecs.FLAC.FlacMetadataStreamInfo,System.Boolean)'
+- uid: SilverCraft.CSCore.Codecs.FLAC.FlacFrameHeader.#ctor(System.Byte[],System.Int32,SilverCraft.CSCore.Codecs.FLAC.FlacMetadataStreamInfo,System.Boolean)
+  commentId: M:SilverCraft.CSCore.Codecs.FLAC.FlacFrameHeader.#ctor(System.Byte[],System.Int32,SilverCraft.CSCore.Codecs.FLAC.FlacMetadataStreamInfo,System.Boolean)
+  id: '#ctor(System.Byte[],System.Int32,SilverCraft.CSCore.Codecs.FLAC.FlacMetadataStreamInfo,System.Boolean)'
   parent: SilverCraft.CSCore.Codecs.FLAC.FlacFrameHeader
   langs:
   - csharp
   - vb
-  name: FlacFrameHeader(ref byte*, FlacMetadataStreamInfo, bool)
-  nameWithType: FlacFrameHeader.FlacFrameHeader(ref byte*, FlacMetadataStreamInfo, bool)
-  fullName: SilverCraft.CSCore.Codecs.FLAC.FlacFrameHeader.FlacFrameHeader(ref byte*, SilverCraft.CSCore.Codecs.FLAC.FlacMetadataStreamInfo, bool)
+  name: FlacFrameHeader(byte[], int, FlacMetadataStreamInfo, bool)
+  nameWithType: FlacFrameHeader.FlacFrameHeader(byte[], int, FlacMetadataStreamInfo, bool)
+  fullName: SilverCraft.CSCore.Codecs.FLAC.FlacFrameHeader.FlacFrameHeader(byte[], int, SilverCraft.CSCore.Codecs.FLAC.FlacMetadataStreamInfo, bool)
   type: Constructor
   source:
     remote:
@@ -466,29 +466,31 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: .ctor
     path: ../SilverCraft.CSCore/Codecs/FLAC/FlacFrameHeader.cs
-    startLine: 134
+    startLine: 137
   assemblies:
   - SilverCraft.CSCore
   namespace: SilverCraft.CSCore.Codecs.FLAC
   summary: Initializes a new instance of the <xref href="SilverCraft.CSCore.Codecs.FLAC.FlacFrameHeader" data-throw-if-not-resolved="false"></xref> class.
   example: []
   syntax:
-    content: public FlacFrameHeader(ref byte* buffer, FlacMetadataStreamInfo streamInfo, bool doCrc)
+    content: public FlacFrameHeader(byte[] buffer, int offset, FlacMetadataStreamInfo streamInfo, bool doCrc)
     parameters:
     - id: buffer
-      type: System.Byte*
+      type: System.Byte[]
       description: The raw byte-data which contains the <xref href="SilverCraft.CSCore.Codecs.FLAC.FlacFrameHeader" data-throw-if-not-resolved="false"></xref>.
+    - id: offset
+      type: System.Int32
     - id: streamInfo
       type: SilverCraft.CSCore.Codecs.FLAC.FlacMetadataStreamInfo
       description: The stream-info-metadata-block of the flac stream which provides some basic information about the flac framestream. Can be set to null.
     - id: doCrc
       type: System.Boolean
       description: A value which indicates whether the crc8 checksum of the <xref href="SilverCraft.CSCore.Codecs.FLAC.FlacFrameHeader" data-throw-if-not-resolved="false"></xref> should be calculated.
-    content.vb: Public Sub New(buffer As Byte*, streamInfo As FlacMetadataStreamInfo, doCrc As Boolean)
+    content.vb: Public Sub New(buffer As Byte(), offset As Integer, streamInfo As FlacMetadataStreamInfo, doCrc As Boolean)
   overload: SilverCraft.CSCore.Codecs.FLAC.FlacFrameHeader.#ctor*
-  nameWithType.vb: FlacFrameHeader.New(Byte*, FlacMetadataStreamInfo, Boolean)
-  fullName.vb: SilverCraft.CSCore.Codecs.FLAC.FlacFrameHeader.New(Byte*, SilverCraft.CSCore.Codecs.FLAC.FlacMetadataStreamInfo, Boolean)
-  name.vb: New(Byte*, FlacMetadataStreamInfo, Boolean)
+  nameWithType.vb: FlacFrameHeader.New(Byte(), Integer, FlacMetadataStreamInfo, Boolean)
+  fullName.vb: SilverCraft.CSCore.Codecs.FLAC.FlacFrameHeader.New(Byte(), Integer, SilverCraft.CSCore.Codecs.FLAC.FlacMetadataStreamInfo, Boolean)
+  name.vb: New(Byte(), Integer, FlacMetadataStreamInfo, Boolean)
 - uid: SilverCraft.CSCore.Codecs.FLAC.FlacFrameHeader.IsFormatEqualTo(SilverCraft.CSCore.Codecs.FLAC.FlacFrameHeader)
   commentId: M:SilverCraft.CSCore.Codecs.FLAC.FlacFrameHeader.IsFormatEqualTo(SilverCraft.CSCore.Codecs.FLAC.FlacFrameHeader)
   id: IsFormatEqualTo(SilverCraft.CSCore.Codecs.FLAC.FlacFrameHeader)
@@ -507,7 +509,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: IsFormatEqualTo
     path: ../SilverCraft.CSCore/Codecs/FLAC/FlacFrameHeader.cs
-    startLine: 399
+    startLine: 414
   assemblies:
   - SilverCraft.CSCore
   namespace: SilverCraft.CSCore.Codecs.FLAC
@@ -1108,27 +1110,29 @@ references:
     name: IO
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/system.io
-- uid: System.Byte*
+- uid: System.Byte[]
   isExternal: true
   href: https://learn.microsoft.com/dotnet/api/system.byte
-  name: byte*
-  nameWithType: byte*
-  fullName: byte*
-  nameWithType.vb: Byte*
-  fullName.vb: Byte*
-  name.vb: Byte*
+  name: byte[]
+  nameWithType: byte[]
+  fullName: byte[]
+  nameWithType.vb: Byte()
+  fullName.vb: Byte()
+  name.vb: Byte()
   spec.csharp:
   - uid: System.Byte
     name: byte
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/system.byte
-  - name: '*'
+  - name: '['
+  - name: ']'
   spec.vb:
   - uid: System.Byte
     name: Byte
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/system.byte
-  - name: '*'
+  - name: (
+  - name: )
 - uid: SilverCraft.CSCore.Codecs.FLAC.FlacFrameHeader.IsFormatEqualTo*
   commentId: Overload:SilverCraft.CSCore.Codecs.FLAC.FlacFrameHeader.IsFormatEqualTo
   href: SilverCraft.CSCore.Codecs.FLAC.FlacFrameHeader.html#SilverCraft_CSCore_Codecs_FLAC_FlacFrameHeader_IsFormatEqualTo_SilverCraft_CSCore_Codecs_FLAC_FlacFrameHeader_

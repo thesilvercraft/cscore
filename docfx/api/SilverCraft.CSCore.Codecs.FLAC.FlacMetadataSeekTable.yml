@@ -203,7 +203,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: MetaDataType
     path: ../SilverCraft.CSCore/Codecs/FLAC/Metadata/FlacMetadataSeekTable.cs
-    startLine: 58
+    startLine: 64
   assemblies:
   - SilverCraft.CSCore
   namespace: SilverCraft.CSCore.Codecs.FLAC

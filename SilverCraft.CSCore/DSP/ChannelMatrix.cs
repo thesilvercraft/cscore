@@ -420,8 +420,7 @@ namespace SilverCraft.CSCore.DSP
         /// <param name="matrix">Channel conversion matrix to use.</param>
         public void SetMatrix(float[,] matrix)
         {
-            if (matrix == null)
-                throw new ArgumentException("matrix");
+            ArgumentNullException.ThrowIfNull(matrix);
             if (matrix.GetLength(1) != Width)
                 throw new ArgumentException("Matrix has to have a width of " + Width);
             if (matrix.GetLength(0) != Height)

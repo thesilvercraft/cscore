@@ -9,14 +9,12 @@
 
         public void UpdateSize(int partitionOrder)
         {
-            if (_capByOrder < partitionOrder)
-            {
-                var size = 1 << partitionOrder;
-                Parameters = new int[size];
-                RawBits = new int[size];
+            if (_capByOrder >= partitionOrder) return;
+            var size = 1 << partitionOrder;
+            Parameters = new int[size];
+            RawBits = new int[size];
 
-                _capByOrder = partitionOrder;
-            }
+            _capByOrder = partitionOrder;
         }
     }
 }

@@ -286,7 +286,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: .ctor
     path: ../SilverCraft.CSCore/SoundOut/AL/ALException.cs
-    startLine: 93
+    startLine: 94
   assemblies:
   - SilverCraft.CSCore
   namespace: SilverCraft.CSCore.SoundOut.AL
@@ -300,6 +300,7 @@ items:
       description: The message that describes the error.
     - id: errorCode
       type: SilverCraft.CSCore.SoundOut.AL.ALErrorCode
+      description: The openAL error code
     content.vb: Public Sub New(message As String, errorCode As ALErrorCode)
   overload: SilverCraft.CSCore.SoundOut.AL.ALException.#ctor*
   nameWithType.vb: ALException.New(String, ALErrorCode)
@@ -323,7 +324,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: LastError
     path: ../SilverCraft.CSCore/SoundOut/AL/ALException.cs
-    startLine: 102
+    startLine: 103
   assemblies:
   - SilverCraft.CSCore
   namespace: SilverCraft.CSCore.SoundOut.AL

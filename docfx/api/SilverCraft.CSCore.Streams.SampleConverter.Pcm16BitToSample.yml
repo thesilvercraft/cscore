@@ -21,7 +21,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: Pcm16BitToSample
     path: ../SilverCraft.CSCore/Streams/SampleConverter/Pcm16BitToSample.cs
-    startLine: 7
+    startLine: 8
   assemblies:
   - SilverCraft.CSCore
   namespace: SilverCraft.CSCore.Streams.SampleConverter
@@ -90,7 +90,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: .ctor
     path: ../SilverCraft.CSCore/Streams/SampleConverter/Pcm16BitToSample.cs
-    startLine: 15
+    startLine: 16
   assemblies:
   - SilverCraft.CSCore
   namespace: SilverCraft.CSCore.Streams.SampleConverter
@@ -132,7 +132,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: Read
     path: ../SilverCraft.CSCore/Streams/SampleConverter/Pcm16BitToSample.cs
-    startLine: 38
+    startLine: 39
   assemblies:
   - SilverCraft.CSCore
   namespace: SilverCraft.CSCore.Streams.SampleConverter

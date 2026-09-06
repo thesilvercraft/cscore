@@ -21,7 +21,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: SampleToPcm32
     path: ../SilverCraft.CSCore/Streams/SampleConverter/SampleToPcm32.cs
-    startLine: 9
+    startLine: 8
   assemblies:
   - SilverCraft.CSCore
   namespace: SilverCraft.CSCore.Streams.SampleConverter
@@ -92,7 +92,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: .ctor
     path: ../SilverCraft.CSCore/Streams/SampleConverter/SampleToPcm32.cs
-    startLine: 16
+    startLine: 15
   assemblies:
   - SilverCraft.CSCore
   namespace: SilverCraft.CSCore.Streams.SampleConverter
@@ -131,7 +131,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: Read
     path: ../SilverCraft.CSCore/Streams/SampleConverter/SampleToPcm32.cs
-    startLine: 37
+    startLine: 36
   assemblies:
   - SilverCraft.CSCore
   namespace: SilverCraft.CSCore.Streams.SampleConverter

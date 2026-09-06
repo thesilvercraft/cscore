@@ -21,7 +21,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: IeeeFloatToSample
     path: ../SilverCraft.CSCore/Streams/SampleConverter/IeeeFloatToSample.cs
-    startLine: 8
+    startLine: 7
   assemblies:
   - SilverCraft.CSCore
   namespace: SilverCraft.CSCore.Streams.SampleConverter
@@ -90,7 +90,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: .ctor
     path: ../SilverCraft.CSCore/Streams/SampleConverter/IeeeFloatToSample.cs
-    startLine: 16
+    startLine: 15
   assemblies:
   - SilverCraft.CSCore
   namespace: SilverCraft.CSCore.Streams.SampleConverter
@@ -132,7 +132,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: Read
     path: ../SilverCraft.CSCore/Streams/SampleConverter/IeeeFloatToSample.cs
-    startLine: 40
+    startLine: 39
   assemblies:
   - SilverCraft.CSCore
   namespace: SilverCraft.CSCore.Streams.SampleConverter

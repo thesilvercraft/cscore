@@ -73,19 +73,21 @@ items:
   fullName: SilverCraft.CSCore.PortAudio.Native.NativeMethods
   type: Class
   source:
-    remote:
-      path: SilverCraft.CSCore.PortAudio/Native/NativeMethods.cs
-      branch: master
-      repo: https://github.com/thesilvercraft/cscore
     id: NativeMethods
-    path: ../SilverCraft.CSCore.PortAudio/Native/NativeMethods.cs
-    startLine: 21
+    path: C:\Users\Filip Velichkovski\RiderProjects\cscore\SilverCraft.CSCore.PortAudio\obj\Release\net8.0\SilverCraft.CSCore.NativeLibraryResolver\SilverCraft.CSCore.NativeLibraryResolver.SourceGeneratorWithAttributes\NativeMethods.DllImportResolver.g.cs
+    startLine: 11
   assemblies:
   - SilverCraft.CSCore.PortAudio
   namespace: SilverCraft.CSCore.PortAudio.Native
   syntax:
-    content: public static class NativeMethods
-    content.vb: Public Module NativeMethods
+    content: >-
+      [DllImportResolver("PortAudio", "libportaudio.so.2", WindowsDlls = new string[] { "portaudio.dll", "portaudio_x64.dll" }, LinuxDlls = new string[] { "libportaudio.so.2", "libportaudio.so" }, MacOsDlls = new string[] { "libportaudio.dylib", "libportaudio.2.dylib" }, LinuxInstructions = "Please install PortAudio via your package manager:\nUbuntu/Debian: sudo apt install libportaudio2\nArch Linux:    sudo pacman -Sy portaudio", GenericInstructionsStart = "Download portaudio-19.7.0-{0}-{1}.7z from https://github.com/musescore/muse_deps/releases/tag/deps-20260817-100754", GenericInstructionsLinuxEnd = "Extract 'libportaudio.so' (or .dylib) from 'lib' into {0}.", GenericInstructionsWindowsEnd = "Extract 'portaudio_x64.dll' (or 'portaudio.dll') from 'bin' into {0}.")]
+
+      public static class NativeMethods
+    content.vb: >-
+      <DllImportResolver("PortAudio", "libportaudio.so.2", WindowsDlls:=New String() { "portaudio.dll", "portaudio_x64.dll" }, LinuxDlls:=New String() { "libportaudio.so.2", "libportaudio.so" }, MacOsDlls:=New String() { "libportaudio.dylib", "libportaudio.2.dylib" }, LinuxInstructions:="Please install PortAudio via your package manager:" & vbLf & "Ubuntu/Debian: sudo apt install libportaudio2" & vbLf & "Arch Linux:    sudo pacman -Sy portaudio", GenericInstructionsStart:="Download portaudio-19.7.0-{0}-{1}.7z from https://github.com/musescore/muse_deps/releases/tag/deps-20260817-100754", GenericInstructionsLinuxEnd:="Extract 'libportaudio.so' (or .dylib) from 'lib' into {0}.", GenericInstructionsWindowsEnd:="Extract 'portaudio_x64.dll' (or 'portaudio.dll') from 'bin' into {0}.")>
+
+      Public Module NativeMethods
   inheritance:
   - System.Object
   inheritedMembers:
@@ -96,6 +98,32 @@ items:
   - System.Object.MemberwiseClone
   - System.Object.ReferenceEquals(System.Object,System.Object)
   - System.Object.ToString
+  attributes:
+  - type: Generators.DllImportResolverAttribute
+    ctor: Generators.DllImportResolverAttribute.#ctor(System.String,System.String)
+    arguments:
+    - type: System.String
+      value: PortAudio
+    - type: System.String
+      value: libportaudio.so.2
+    namedArguments:
+    - name: LinuxInstructions
+      type: System.String
+      value: >-
+        Please install PortAudio via your package manager:
+
+        Ubuntu/Debian: sudo apt install libportaudio2
+
+        Arch Linux:    sudo pacman -Sy portaudio
+    - name: GenericInstructionsStart
+      type: System.String
+      value: Download portaudio-19.7.0-{0}-{1}.7z from https://github.com/musescore/muse_deps/releases/tag/deps-20260817-100754
+    - name: GenericInstructionsLinuxEnd
+      type: System.String
+      value: Extract 'libportaudio.so' (or .dylib) from 'lib' into {0}.
+    - name: GenericInstructionsWindowsEnd
+      type: System.String
+      value: Extract 'portaudio_x64.dll' (or 'portaudio.dll') from 'bin' into {0}.
 - uid: SilverCraft.CSCore.PortAudio.Native.NativeMethods.dllName
   commentId: F:SilverCraft.CSCore.PortAudio.Native.NativeMethods.dllName
   id: dllName
@@ -114,7 +142,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: dllName
     path: ../SilverCraft.CSCore.PortAudio/Native/NativeMethods.cs
-    startLine: 23
+    startLine: 31
   assemblies:
   - SilverCraft.CSCore.PortAudio
   namespace: SilverCraft.CSCore.PortAudio.Native
@@ -123,44 +151,6 @@ items:
     return:
       type: System.String
     content.vb: Public Const dllName As String = "libportaudio.so.2"
-- uid: SilverCraft.CSCore.PortAudio.Native.NativeMethods.DllImportResolver(System.String,System.Reflection.Assembly,System.Nullable{System.Runtime.InteropServices.DllImportSearchPath})
-  commentId: M:SilverCraft.CSCore.PortAudio.Native.NativeMethods.DllImportResolver(System.String,System.Reflection.Assembly,System.Nullable{System.Runtime.InteropServices.DllImportSearchPath})
-  id: DllImportResolver(System.String,System.Reflection.Assembly,System.Nullable{System.Runtime.InteropServices.DllImportSearchPath})
-  parent: SilverCraft.CSCore.PortAudio.Native.NativeMethods
-  langs:
-  - csharp
-  - vb
-  name: DllImportResolver(string, Assembly, DllImportSearchPath?)
-  nameWithType: NativeMethods.DllImportResolver(string, Assembly, DllImportSearchPath?)
-  fullName: SilverCraft.CSCore.PortAudio.Native.NativeMethods.DllImportResolver(string, System.Reflection.Assembly, System.Runtime.InteropServices.DllImportSearchPath?)
-  type: Method
-  source:
-    remote:
-      path: SilverCraft.CSCore.PortAudio/Native/NativeMethods.cs
-      branch: master
-      repo: https://github.com/thesilvercraft/cscore
-    id: DllImportResolver
-    path: ../SilverCraft.CSCore.PortAudio/Native/NativeMethods.cs
-    startLine: 24
-  assemblies:
-  - SilverCraft.CSCore.PortAudio
-  namespace: SilverCraft.CSCore.PortAudio.Native
-  syntax:
-    content: public static nint DllImportResolver(string libraryName, Assembly assembly, DllImportSearchPath? searchPath)
-    parameters:
-    - id: libraryName
-      type: System.String
-    - id: assembly
-      type: System.Reflection.Assembly
-    - id: searchPath
-      type: System.Nullable{System.Runtime.InteropServices.DllImportSearchPath}
-    return:
-      type: System.IntPtr
-    content.vb: Public Shared Function DllImportResolver(libraryName As String, assembly As Assembly, searchPath As DllImportSearchPath?) As IntPtr
-  overload: SilverCraft.CSCore.PortAudio.Native.NativeMethods.DllImportResolver*
-  nameWithType.vb: NativeMethods.DllImportResolver(String, Assembly, DllImportSearchPath?)
-  fullName.vb: SilverCraft.CSCore.PortAudio.Native.NativeMethods.DllImportResolver(String, System.Reflection.Assembly, System.Runtime.InteropServices.DllImportSearchPath?)
-  name.vb: DllImportResolver(String, Assembly, DllImportSearchPath?)
 - uid: SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_GetVersion
   commentId: M:SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_GetVersion
   id: Pa_GetVersion
@@ -1056,7 +1046,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: paNoDevice
     path: ../SilverCraft.CSCore.PortAudio/Native/NativeMethods.cs
-    startLine: 167
+    startLine: 188
   assemblies:
   - SilverCraft.CSCore.PortAudio
   namespace: SilverCraft.CSCore.PortAudio.Native
@@ -1083,7 +1073,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: paUseHostApiSpecificDeviceSpecification
     path: ../SilverCraft.CSCore.PortAudio/Native/NativeMethods.cs
-    startLine: 170
+    startLine: 191
   assemblies:
   - SilverCraft.CSCore.PortAudio
   namespace: SilverCraft.CSCore.PortAudio.Native
@@ -1110,7 +1100,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: paFloat32
     path: ../SilverCraft.CSCore.PortAudio/Native/NativeMethods.cs
-    startLine: 173
+    startLine: 194
   assemblies:
   - SilverCraft.CSCore.PortAudio
   namespace: SilverCraft.CSCore.PortAudio.Native
@@ -1137,7 +1127,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: paInt32
     path: ../SilverCraft.CSCore.PortAudio/Native/NativeMethods.cs
-    startLine: 176
+    startLine: 197
   assemblies:
   - SilverCraft.CSCore.PortAudio
   namespace: SilverCraft.CSCore.PortAudio.Native
@@ -1164,7 +1154,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: paInt24
     path: ../SilverCraft.CSCore.PortAudio/Native/NativeMethods.cs
-    startLine: 179
+    startLine: 200
   assemblies:
   - SilverCraft.CSCore.PortAudio
   namespace: SilverCraft.CSCore.PortAudio.Native
@@ -1191,7 +1181,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: paInt16
     path: ../SilverCraft.CSCore.PortAudio/Native/NativeMethods.cs
-    startLine: 182
+    startLine: 203
   assemblies:
   - SilverCraft.CSCore.PortAudio
   namespace: SilverCraft.CSCore.PortAudio.Native
@@ -1218,7 +1208,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: paInt8
     path: ../SilverCraft.CSCore.PortAudio/Native/NativeMethods.cs
-    startLine: 185
+    startLine: 206
   assemblies:
   - SilverCraft.CSCore.PortAudio
   namespace: SilverCraft.CSCore.PortAudio.Native
@@ -1245,7 +1235,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: paUInt8
     path: ../SilverCraft.CSCore.PortAudio/Native/NativeMethods.cs
-    startLine: 188
+    startLine: 209
   assemblies:
   - SilverCraft.CSCore.PortAudio
   namespace: SilverCraft.CSCore.PortAudio.Native
@@ -1272,7 +1262,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: paCustomFormat
     path: ../SilverCraft.CSCore.PortAudio/Native/NativeMethods.cs
-    startLine: 191
+    startLine: 212
   assemblies:
   - SilverCraft.CSCore.PortAudio
   namespace: SilverCraft.CSCore.PortAudio.Native
@@ -1299,7 +1289,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: paNonInterleaved
     path: ../SilverCraft.CSCore.PortAudio/Native/NativeMethods.cs
-    startLine: 194
+    startLine: 215
   assemblies:
   - SilverCraft.CSCore.PortAudio
   namespace: SilverCraft.CSCore.PortAudio.Native
@@ -1326,7 +1316,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: paFormatIsSupported
     path: ../SilverCraft.CSCore.PortAudio/Native/NativeMethods.cs
-    startLine: 197
+    startLine: 218
   assemblies:
   - SilverCraft.CSCore.PortAudio
   namespace: SilverCraft.CSCore.PortAudio.Native
@@ -1353,7 +1343,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: paFramesPerBufferUnspecified
     path: ../SilverCraft.CSCore.PortAudio/Native/NativeMethods.cs
-    startLine: 200
+    startLine: 221
   assemblies:
   - SilverCraft.CSCore.PortAudio
   namespace: SilverCraft.CSCore.PortAudio.Native
@@ -1380,7 +1370,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: paNoFlag
     path: ../SilverCraft.CSCore.PortAudio/Native/NativeMethods.cs
-    startLine: 203
+    startLine: 224
   assemblies:
   - SilverCraft.CSCore.PortAudio
   namespace: SilverCraft.CSCore.PortAudio.Native
@@ -1407,7 +1397,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: paClipOff
     path: ../SilverCraft.CSCore.PortAudio/Native/NativeMethods.cs
-    startLine: 206
+    startLine: 227
   assemblies:
   - SilverCraft.CSCore.PortAudio
   namespace: SilverCraft.CSCore.PortAudio.Native
@@ -1434,7 +1424,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: paDitherOff
     path: ../SilverCraft.CSCore.PortAudio/Native/NativeMethods.cs
-    startLine: 209
+    startLine: 230
   assemblies:
   - SilverCraft.CSCore.PortAudio
   namespace: SilverCraft.CSCore.PortAudio.Native
@@ -1461,7 +1451,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: paNeverDropInput
     path: ../SilverCraft.CSCore.PortAudio/Native/NativeMethods.cs
-    startLine: 212
+    startLine: 233
   assemblies:
   - SilverCraft.CSCore.PortAudio
   namespace: SilverCraft.CSCore.PortAudio.Native
@@ -1488,7 +1478,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: paPrimeOutputBuffersUsingStreamCallback
     path: ../SilverCraft.CSCore.PortAudio/Native/NativeMethods.cs
-    startLine: 215
+    startLine: 236
   assemblies:
   - SilverCraft.CSCore.PortAudio
   namespace: SilverCraft.CSCore.PortAudio.Native
@@ -1515,7 +1505,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: paPlatformSpecificFlags
     path: ../SilverCraft.CSCore.PortAudio/Native/NativeMethods.cs
-    startLine: 218
+    startLine: 239
   assemblies:
   - SilverCraft.CSCore.PortAudio
   namespace: SilverCraft.CSCore.PortAudio.Native
@@ -1542,7 +1532,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: paInputUnderflow
     path: ../SilverCraft.CSCore.PortAudio/Native/NativeMethods.cs
-    startLine: 221
+    startLine: 242
   assemblies:
   - SilverCraft.CSCore.PortAudio
   namespace: SilverCraft.CSCore.PortAudio.Native
@@ -1569,7 +1559,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: paInputOverflow
     path: ../SilverCraft.CSCore.PortAudio/Native/NativeMethods.cs
-    startLine: 224
+    startLine: 245
   assemblies:
   - SilverCraft.CSCore.PortAudio
   namespace: SilverCraft.CSCore.PortAudio.Native
@@ -1596,7 +1586,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: paOutputUnderflow
     path: ../SilverCraft.CSCore.PortAudio/Native/NativeMethods.cs
-    startLine: 227
+    startLine: 248
   assemblies:
   - SilverCraft.CSCore.PortAudio
   namespace: SilverCraft.CSCore.PortAudio.Native
@@ -1623,7 +1613,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: paOutputOverflow
     path: ../SilverCraft.CSCore.PortAudio/Native/NativeMethods.cs
-    startLine: 230
+    startLine: 251
   assemblies:
   - SilverCraft.CSCore.PortAudio
   namespace: SilverCraft.CSCore.PortAudio.Native
@@ -1650,7 +1640,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: paPrimingOutput
     path: ../SilverCraft.CSCore.PortAudio/Native/NativeMethods.cs
-    startLine: 233
+    startLine: 254
   assemblies:
   - SilverCraft.CSCore.PortAudio
   namespace: SilverCraft.CSCore.PortAudio.Native
@@ -1659,6 +1649,40 @@ items:
     return:
       type: System.UIntPtr
     content.vb: Public Const paPrimingOutput As UIntPtr = 16
+- uid: SilverCraft.CSCore.PortAudio.Native.NativeMethods.DllImportResolver(System.String,System.Reflection.Assembly,System.Nullable{System.Runtime.InteropServices.DllImportSearchPath})
+  commentId: M:SilverCraft.CSCore.PortAudio.Native.NativeMethods.DllImportResolver(System.String,System.Reflection.Assembly,System.Nullable{System.Runtime.InteropServices.DllImportSearchPath})
+  id: DllImportResolver(System.String,System.Reflection.Assembly,System.Nullable{System.Runtime.InteropServices.DllImportSearchPath})
+  parent: SilverCraft.CSCore.PortAudio.Native.NativeMethods
+  langs:
+  - csharp
+  - vb
+  name: DllImportResolver(string, Assembly, DllImportSearchPath?)
+  nameWithType: NativeMethods.DllImportResolver(string, Assembly, DllImportSearchPath?)
+  fullName: SilverCraft.CSCore.PortAudio.Native.NativeMethods.DllImportResolver(string, System.Reflection.Assembly, System.Runtime.InteropServices.DllImportSearchPath?)
+  type: Method
+  source:
+    id: DllImportResolver
+    path: C:\Users\Filip Velichkovski\RiderProjects\cscore\SilverCraft.CSCore.PortAudio\obj\Release\net8.0\SilverCraft.CSCore.NativeLibraryResolver\SilverCraft.CSCore.NativeLibraryResolver.SourceGeneratorWithAttributes\NativeMethods.DllImportResolver.g.cs
+    startLine: 13
+  assemblies:
+  - SilverCraft.CSCore.PortAudio
+  namespace: SilverCraft.CSCore.PortAudio.Native
+  syntax:
+    content: public static nint DllImportResolver(string libraryName, Assembly assembly, DllImportSearchPath? searchPath)
+    parameters:
+    - id: libraryName
+      type: System.String
+    - id: assembly
+      type: System.Reflection.Assembly
+    - id: searchPath
+      type: System.Nullable{System.Runtime.InteropServices.DllImportSearchPath}
+    return:
+      type: System.IntPtr
+    content.vb: Public Shared Function DllImportResolver(libraryName As String, assembly As Assembly, searchPath As DllImportSearchPath?) As IntPtr
+  overload: SilverCraft.CSCore.PortAudio.Native.NativeMethods.DllImportResolver*
+  nameWithType.vb: NativeMethods.DllImportResolver(String, Assembly, DllImportSearchPath?)
+  fullName.vb: SilverCraft.CSCore.PortAudio.Native.NativeMethods.DllImportResolver(String, System.Reflection.Assembly, System.Runtime.InteropServices.DllImportSearchPath?)
+  name.vb: DllImportResolver(String, Assembly, DllImportSearchPath?)
 references:
 - uid: SilverCraft.CSCore.PortAudio.Native
   commentId: N:SilverCraft.CSCore.PortAudio.Native
@@ -1946,106 +1970,6 @@ references:
   nameWithType.vb: String
   fullName.vb: String
   name.vb: String
-- uid: SilverCraft.CSCore.PortAudio.Native.NativeMethods.DllImportResolver*
-  commentId: Overload:SilverCraft.CSCore.PortAudio.Native.NativeMethods.DllImportResolver
-  href: SilverCraft.CSCore.PortAudio.Native.NativeMethods.html#SilverCraft_CSCore_PortAudio_Native_NativeMethods_DllImportResolver_System_String_System_Reflection_Assembly_System_Nullable_System_Runtime_InteropServices_DllImportSearchPath__
-  name: DllImportResolver
-  nameWithType: NativeMethods.DllImportResolver
-  fullName: SilverCraft.CSCore.PortAudio.Native.NativeMethods.DllImportResolver
-- uid: System.Reflection.Assembly
-  commentId: T:System.Reflection.Assembly
-  parent: System.Reflection
-  isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system.reflection.assembly
-  name: Assembly
-  nameWithType: Assembly
-  fullName: System.Reflection.Assembly
-- uid: System.Nullable{System.Runtime.InteropServices.DllImportSearchPath}
-  commentId: T:System.Nullable{System.Runtime.InteropServices.DllImportSearchPath}
-  parent: System
-  definition: System.Nullable`1
-  href: https://learn.microsoft.com/dotnet/api/system.runtime.interopservices.dllimportsearchpath
-  name: DllImportSearchPath?
-  nameWithType: DllImportSearchPath?
-  fullName: System.Runtime.InteropServices.DllImportSearchPath?
-  spec.csharp:
-  - uid: System.Runtime.InteropServices.DllImportSearchPath
-    name: DllImportSearchPath
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.runtime.interopservices.dllimportsearchpath
-  - name: '?'
-  spec.vb:
-  - uid: System.Runtime.InteropServices.DllImportSearchPath
-    name: DllImportSearchPath
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.runtime.interopservices.dllimportsearchpath
-  - name: '?'
-- uid: System.IntPtr
-  commentId: T:System.IntPtr
-  parent: System
-  isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system.intptr
-  name: nint
-  nameWithType: nint
-  fullName: nint
-  nameWithType.vb: IntPtr
-  fullName.vb: System.IntPtr
-  name.vb: IntPtr
-- uid: System.Reflection
-  commentId: N:System.Reflection
-  isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system
-  name: System.Reflection
-  nameWithType: System.Reflection
-  fullName: System.Reflection
-  spec.csharp:
-  - uid: System
-    name: System
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system
-  - name: .
-  - uid: System.Reflection
-    name: Reflection
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.reflection
-  spec.vb:
-  - uid: System
-    name: System
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system
-  - name: .
-  - uid: System.Reflection
-    name: Reflection
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.reflection
-- uid: System.Nullable`1
-  commentId: T:System.Nullable`1
-  isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system.nullable-1
-  name: Nullable<T>
-  nameWithType: Nullable<T>
-  fullName: System.Nullable<T>
-  nameWithType.vb: Nullable(Of T)
-  fullName.vb: System.Nullable(Of T)
-  name.vb: Nullable(Of T)
-  spec.csharp:
-  - uid: System.Nullable`1
-    name: Nullable
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
-  - name: <
-  - name: T
-  - name: '>'
-  spec.vb:
-  - uid: System.Nullable`1
-    name: Nullable
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
-  - name: (
-  - name: Of
-  - name: " "
-  - name: T
-  - name: )
 - uid: SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_GetVersion*
   commentId: Overload:SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_GetVersion
   isExternal: true
@@ -2448,6 +2372,17 @@ references:
   name: StreamCallBack
   nameWithType: StreamCallBack
   fullName: SilverCraft.CSCore.PortAudio.StreamCallBack
+- uid: System.IntPtr
+  commentId: T:System.IntPtr
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.intptr
+  name: nint
+  nameWithType: nint
+  fullName: nint
+  nameWithType.vb: IntPtr
+  fullName.vb: System.IntPtr
+  name.vb: IntPtr
 - uid: SilverCraft.CSCore.PortAudio
   commentId: N:SilverCraft.CSCore.PortAudio
   href: SilverCraft.html
@@ -2629,3 +2564,92 @@ references:
   name: Pa_Sleep
   nameWithType: NativeMethods.Pa_Sleep
   fullName: SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_Sleep
+- uid: SilverCraft.CSCore.PortAudio.Native.NativeMethods.DllImportResolver*
+  commentId: Overload:SilverCraft.CSCore.PortAudio.Native.NativeMethods.DllImportResolver
+  href: SilverCraft.CSCore.PortAudio.Native.NativeMethods.html#SilverCraft_CSCore_PortAudio_Native_NativeMethods_DllImportResolver_System_String_System_Reflection_Assembly_System_Nullable_System_Runtime_InteropServices_DllImportSearchPath__
+  name: DllImportResolver
+  nameWithType: NativeMethods.DllImportResolver
+  fullName: SilverCraft.CSCore.PortAudio.Native.NativeMethods.DllImportResolver
+- uid: System.Reflection.Assembly
+  commentId: T:System.Reflection.Assembly
+  parent: System.Reflection
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.reflection.assembly
+  name: Assembly
+  nameWithType: Assembly
+  fullName: System.Reflection.Assembly
+- uid: System.Nullable{System.Runtime.InteropServices.DllImportSearchPath}
+  commentId: T:System.Nullable{System.Runtime.InteropServices.DllImportSearchPath}
+  parent: System
+  definition: System.Nullable`1
+  href: https://learn.microsoft.com/dotnet/api/system.runtime.interopservices.dllimportsearchpath
+  name: DllImportSearchPath?
+  nameWithType: DllImportSearchPath?
+  fullName: System.Runtime.InteropServices.DllImportSearchPath?
+  spec.csharp:
+  - uid: System.Runtime.InteropServices.DllImportSearchPath
+    name: DllImportSearchPath
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime.interopservices.dllimportsearchpath
+  - name: '?'
+  spec.vb:
+  - uid: System.Runtime.InteropServices.DllImportSearchPath
+    name: DllImportSearchPath
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime.interopservices.dllimportsearchpath
+  - name: '?'
+- uid: System.Reflection
+  commentId: N:System.Reflection
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Reflection
+  nameWithType: System.Reflection
+  fullName: System.Reflection
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Reflection
+    name: Reflection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.reflection
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Reflection
+    name: Reflection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.reflection
+- uid: System.Nullable`1
+  commentId: T:System.Nullable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  name: Nullable<T>
+  nameWithType: Nullable<T>
+  fullName: System.Nullable<T>
+  nameWithType.vb: Nullable(Of T)
+  fullName.vb: System.Nullable(Of T)
+  name.vb: Nullable(Of T)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )

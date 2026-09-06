@@ -1,0 +1,23 @@
+### YamlMime:ManagedReference
+items:
+- uid: SilverCraft.CSCore.NativeLibraryResolver
+  commentId: N:SilverCraft.CSCore.NativeLibraryResolver
+  id: SilverCraft.CSCore.NativeLibraryResolver
+  children:
+  - SilverCraft.CSCore.NativeLibraryResolver.SourceGeneratorWithAttributes
+  langs:
+  - csharp
+  - vb
+  name: SilverCraft.CSCore.NativeLibraryResolver
+  nameWithType: SilverCraft.CSCore.NativeLibraryResolver
+  fullName: SilverCraft.CSCore.NativeLibraryResolver
+  type: Namespace
+  assemblies:
+  - SilverCraft.CSCore.NativeLibraryResolver
+references:
+- uid: SilverCraft.CSCore.NativeLibraryResolver.SourceGeneratorWithAttributes
+  commentId: T:SilverCraft.CSCore.NativeLibraryResolver.SourceGeneratorWithAttributes
+  href: SilverCraft.CSCore.NativeLibraryResolver.SourceGeneratorWithAttributes.html
+  name: SourceGeneratorWithAttributes
+  nameWithType: SourceGeneratorWithAttributes
+  fullName: SilverCraft.CSCore.NativeLibraryResolver.SourceGeneratorWithAttributes

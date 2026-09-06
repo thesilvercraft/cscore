@@ -1,5 +1,5 @@
 {
-  "source_base_path": "/home/silver/source/cscore/docfx",
+  "source_base_path": "C:/Users/Filip Velichkovski/RiderProjects/cscore/docfx",
   "xrefmap": "xrefmap.yml",
   "files": [
     {
@@ -9,6 +9,34 @@
           "relative_path": "index.json"
         }
       }
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Generators.DllImportResolverAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Generators.DllImportResolverAttribute.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Generators.DllImportResolverAttribute",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Generators.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Generators.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Generators",
+      "Summary": null
     },
     {
       "type": "ManagedReference",
@@ -1188,6 +1216,34 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/SilverCraft.CSCore.NativeLibraryResolver.SourceGeneratorWithAttributes.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SilverCraft.CSCore.NativeLibraryResolver.SourceGeneratorWithAttributes.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SilverCraft.CSCore.NativeLibraryResolver.SourceGeneratorWithAttributes",
+      "Summary": "<p sourcefile=\"api/SilverCraft.CSCore.NativeLibraryResolver.SourceGeneratorWithAttributes.yml\" sourcestartlinenumber=\"1\">A sample source generator that creates a custom report based on class properties. The target class should be annotated with the 'Generators.ReportAttribute' attribute.\nWhen using the source code as a baseline, an incremental source generator is preferable because it reduces the performance overhead.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SilverCraft.CSCore.NativeLibraryResolver.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SilverCraft.CSCore.NativeLibraryResolver.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SilverCraft.CSCore.NativeLibraryResolver",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/SilverCraft.CSCore.OpenMPT.OpenMptWaveStream.yml",
       "output": {
         ".html": {
@@ -1450,6 +1506,20 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "SilverCraft.CSCore.PortAudio.PortAudioLifetimeManager",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SilverCraft.CSCore.PortAudio.PortAudioSoundIn.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SilverCraft.CSCore.PortAudio.PortAudioSoundIn.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SilverCraft.CSCore.PortAudio.PortAudioSoundIn",
       "Summary": null
     },
     {

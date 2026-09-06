@@ -7,6 +7,7 @@ items:
   - SilverCraft.CSCore.PortAudio.PaStreamFinishedCallback
   - SilverCraft.CSCore.PortAudio.PortAudioException
   - SilverCraft.CSCore.PortAudio.PortAudioLifetimeManager
+  - SilverCraft.CSCore.PortAudio.PortAudioSoundIn
   - SilverCraft.CSCore.PortAudio.PortAudioSoundOut
   - SilverCraft.CSCore.PortAudio.StreamCallBack
   langs:
@@ -31,6 +32,12 @@ references:
   name: PortAudioLifetimeManager
   nameWithType: PortAudioLifetimeManager
   fullName: SilverCraft.CSCore.PortAudio.PortAudioLifetimeManager
+- uid: SilverCraft.CSCore.PortAudio.PortAudioSoundIn
+  commentId: T:SilverCraft.CSCore.PortAudio.PortAudioSoundIn
+  href: SilverCraft.CSCore.PortAudio.PortAudioSoundIn.html
+  name: PortAudioSoundIn
+  nameWithType: PortAudioSoundIn
+  fullName: SilverCraft.CSCore.PortAudio.PortAudioSoundIn
 - uid: SilverCraft.CSCore.PortAudio.StreamCallBack
   commentId: T:SilverCraft.CSCore.PortAudio.StreamCallBack
   parent: SilverCraft.CSCore.PortAudio

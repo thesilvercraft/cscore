@@ -248,19 +248,21 @@ items:
   fullName: sndfile.Methods
   type: Class
   source:
-    remote:
-      path: SilverCraft.SndFile/Native/Methods.cs
-      branch: master
-      repo: https://github.com/thesilvercraft/cscore
     id: Methods
-    path: ../SilverCraft.SndFile/Native/Methods.cs
-    startLine: 15
+    path: C:\Users\Filip Velichkovski\RiderProjects\cscore\SilverCraft.SndFile\obj\Release\net8.0\SilverCraft.CSCore.NativeLibraryResolver\SilverCraft.CSCore.NativeLibraryResolver.SourceGeneratorWithAttributes\Methods.DllImportResolver.g.cs
+    startLine: 11
   assemblies:
   - SilverCraft.CSCore.SndFile
   namespace: sndfile
   syntax:
-    content: public static class Methods
-    content.vb: Public Module Methods
+    content: >-
+      [DllImportResolver("sndfile", "libsndfile.so.1", WindowsDlls = new string[] { "sndfile.dll" }, LinuxDlls = new string[] { "libsndfile.so.1.0.37", "libsndfile.so.1", "libsndfile.so" }, MacOsDlls = new string[] { "libsndfile.1.0.37.dylib", "libsndfile.dylib" }, LinuxInstructions = "Please install libsndfile via your package manager:\nUbuntu/Debian: sudo apt install libsndfile1 \nArch Linux: sudo pacman -Sy libsndfile", GenericInstructionsStart = "Download libsndfile-1.2.2-{0}-{1}.7z from https://github.com/musescore/muse_deps/releases/tag/deps-20260817-100754", GenericInstructionsLinuxEnd = "Extract 'libsndfile.so' (or .dylib) from 'lib' into {0}.", GenericInstructionsWindowsEnd = "Extract 'sndfile.dll' from 'bin' into {0}.")]
+
+      public static class Methods
+    content.vb: >-
+      <DllImportResolver("sndfile", "libsndfile.so.1", WindowsDlls:=New String() { "sndfile.dll" }, LinuxDlls:=New String() { "libsndfile.so.1.0.37", "libsndfile.so.1", "libsndfile.so" }, MacOsDlls:=New String() { "libsndfile.1.0.37.dylib", "libsndfile.dylib" }, LinuxInstructions:="Please install libsndfile via your package manager:" & vbLf & "Ubuntu/Debian: sudo apt install libsndfile1 " & vbLf & "Arch Linux: sudo pacman -Sy libsndfile", GenericInstructionsStart:="Download libsndfile-1.2.2-{0}-{1}.7z from https://github.com/musescore/muse_deps/releases/tag/deps-20260817-100754", GenericInstructionsLinuxEnd:="Extract 'libsndfile.so' (or .dylib) from 'lib' into {0}.", GenericInstructionsWindowsEnd:="Extract 'sndfile.dll' from 'bin' into {0}.")>
+
+      Public Module Methods
   inheritance:
   - System.Object
   inheritedMembers:
@@ -271,6 +273,32 @@ items:
   - System.Object.MemberwiseClone
   - System.Object.ReferenceEquals(System.Object,System.Object)
   - System.Object.ToString
+  attributes:
+  - type: Generators.DllImportResolverAttribute
+    ctor: Generators.DllImportResolverAttribute.#ctor(System.String,System.String)
+    arguments:
+    - type: System.String
+      value: sndfile
+    - type: System.String
+      value: libsndfile.so.1
+    namedArguments:
+    - name: LinuxInstructions
+      type: System.String
+      value: >-
+        Please install libsndfile via your package manager:
+
+        Ubuntu/Debian: sudo apt install libsndfile1 
+
+        Arch Linux: sudo pacman -Sy libsndfile
+    - name: GenericInstructionsStart
+      type: System.String
+      value: Download libsndfile-1.2.2-{0}-{1}.7z from https://github.com/musescore/muse_deps/releases/tag/deps-20260817-100754
+    - name: GenericInstructionsLinuxEnd
+      type: System.String
+      value: Extract 'libsndfile.so' (or .dylib) from 'lib' into {0}.
+    - name: GenericInstructionsWindowsEnd
+      type: System.String
+      value: Extract 'sndfile.dll' from 'bin' into {0}.
 - uid: sndfile.Methods.dllName
   commentId: F:sndfile.Methods.dllName
   id: dllName
@@ -289,7 +317,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: dllName
     path: ../SilverCraft.SndFile/Native/Methods.cs
-    startLine: 17
+    startLine: 22
   assemblies:
   - SilverCraft.CSCore.SndFile
   namespace: sndfile
@@ -298,44 +326,6 @@ items:
     return:
       type: System.String
     content.vb: Public Const dllName As String = "libsndfile.so.1"
-- uid: sndfile.Methods.DllImportResolver(System.String,System.Reflection.Assembly,System.Nullable{System.Runtime.InteropServices.DllImportSearchPath})
-  commentId: M:sndfile.Methods.DllImportResolver(System.String,System.Reflection.Assembly,System.Nullable{System.Runtime.InteropServices.DllImportSearchPath})
-  id: DllImportResolver(System.String,System.Reflection.Assembly,System.Nullable{System.Runtime.InteropServices.DllImportSearchPath})
-  parent: sndfile.Methods
-  langs:
-  - csharp
-  - vb
-  name: DllImportResolver(string, Assembly, DllImportSearchPath?)
-  nameWithType: Methods.DllImportResolver(string, Assembly, DllImportSearchPath?)
-  fullName: sndfile.Methods.DllImportResolver(string, System.Reflection.Assembly, System.Runtime.InteropServices.DllImportSearchPath?)
-  type: Method
-  source:
-    remote:
-      path: SilverCraft.SndFile/Native/Methods.cs
-      branch: master
-      repo: https://github.com/thesilvercraft/cscore
-    id: DllImportResolver
-    path: ../SilverCraft.SndFile/Native/Methods.cs
-    startLine: 19
-  assemblies:
-  - SilverCraft.CSCore.SndFile
-  namespace: sndfile
-  syntax:
-    content: public static nint DllImportResolver(string libraryName, Assembly assembly, DllImportSearchPath? searchPath)
-    parameters:
-    - id: libraryName
-      type: System.String
-    - id: assembly
-      type: System.Reflection.Assembly
-    - id: searchPath
-      type: System.Nullable{System.Runtime.InteropServices.DllImportSearchPath}
-    return:
-      type: System.IntPtr
-    content.vb: Public Shared Function DllImportResolver(libraryName As String, assembly As Assembly, searchPath As DllImportSearchPath?) As IntPtr
-  overload: sndfile.Methods.DllImportResolver*
-  nameWithType.vb: Methods.DllImportResolver(String, Assembly, DllImportSearchPath?)
-  fullName.vb: sndfile.Methods.DllImportResolver(String, System.Reflection.Assembly, System.Runtime.InteropServices.DllImportSearchPath?)
-  name.vb: DllImportResolver(String, Assembly, DllImportSearchPath?)
 - uid: sndfile.Methods.sfe_copy_data_int(sndfile.sf_private_tag*@,sndfile.sf_private_tag*@,System.Int32)
   commentId: M:sndfile.Methods.sfe_copy_data_int(sndfile.sf_private_tag*@,sndfile.sf_private_tag*@,System.Int32)
   id: sfe_copy_data_int(sndfile.sf_private_tag*@,sndfile.sf_private_tag*@,System.Int32)
@@ -354,7 +344,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: sfe_copy_data_int
     path: ../SilverCraft.SndFile/Native/Methods.cs
-    startLine: 25
+    startLine: 24
   assemblies:
   - SilverCraft.CSCore.SndFile
   namespace: sndfile
@@ -390,7 +380,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: sfe_copy_data_fp
     path: ../SilverCraft.SndFile/Native/Methods.cs
-    startLine: 41
+    startLine: 40
   assemblies:
   - SilverCraft.CSCore.SndFile
   namespace: sndfile
@@ -430,7 +420,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: SF_FORMAT_WAV
     path: ../SilverCraft.SndFile/Native/Methods.cs
-    startLine: 85
+    startLine: 84
   assemblies:
   - SilverCraft.CSCore.SndFile
   namespace: sndfile
@@ -457,7 +447,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: SF_FORMAT_AIFF
     path: ../SilverCraft.SndFile/Native/Methods.cs
-    startLine: 86
+    startLine: 85
   assemblies:
   - SilverCraft.CSCore.SndFile
   namespace: sndfile
@@ -484,7 +474,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: SF_FORMAT_AU
     path: ../SilverCraft.SndFile/Native/Methods.cs
-    startLine: 87
+    startLine: 86
   assemblies:
   - SilverCraft.CSCore.SndFile
   namespace: sndfile
@@ -511,7 +501,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: SF_FORMAT_RAW
     path: ../SilverCraft.SndFile/Native/Methods.cs
-    startLine: 88
+    startLine: 87
   assemblies:
   - SilverCraft.CSCore.SndFile
   namespace: sndfile
@@ -538,7 +528,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: SF_FORMAT_PAF
     path: ../SilverCraft.SndFile/Native/Methods.cs
-    startLine: 89
+    startLine: 88
   assemblies:
   - SilverCraft.CSCore.SndFile
   namespace: sndfile
@@ -565,7 +555,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: SF_FORMAT_SVX
     path: ../SilverCraft.SndFile/Native/Methods.cs
-    startLine: 90
+    startLine: 89
   assemblies:
   - SilverCraft.CSCore.SndFile
   namespace: sndfile
@@ -592,7 +582,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: SF_FORMAT_NIST
     path: ../SilverCraft.SndFile/Native/Methods.cs
-    startLine: 91
+    startLine: 90
   assemblies:
   - SilverCraft.CSCore.SndFile
   namespace: sndfile
@@ -619,7 +609,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: SF_FORMAT_VOC
     path: ../SilverCraft.SndFile/Native/Methods.cs
-    startLine: 92
+    startLine: 91
   assemblies:
   - SilverCraft.CSCore.SndFile
   namespace: sndfile
@@ -646,7 +636,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: SF_FORMAT_IRCAM
     path: ../SilverCraft.SndFile/Native/Methods.cs
-    startLine: 93
+    startLine: 92
   assemblies:
   - SilverCraft.CSCore.SndFile
   namespace: sndfile
@@ -673,7 +663,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: SF_FORMAT_W64
     path: ../SilverCraft.SndFile/Native/Methods.cs
-    startLine: 94
+    startLine: 93
   assemblies:
   - SilverCraft.CSCore.SndFile
   namespace: sndfile
@@ -700,7 +690,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: SF_FORMAT_MAT4
     path: ../SilverCraft.SndFile/Native/Methods.cs
-    startLine: 95
+    startLine: 94
   assemblies:
   - SilverCraft.CSCore.SndFile
   namespace: sndfile
@@ -727,7 +717,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: SF_FORMAT_MAT5
     path: ../SilverCraft.SndFile/Native/Methods.cs
-    startLine: 96
+    startLine: 95
   assemblies:
   - SilverCraft.CSCore.SndFile
   namespace: sndfile
@@ -754,7 +744,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: SF_FORMAT_PVF
     path: ../SilverCraft.SndFile/Native/Methods.cs
-    startLine: 97
+    startLine: 96
   assemblies:
   - SilverCraft.CSCore.SndFile
   namespace: sndfile
@@ -781,7 +771,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: SF_FORMAT_XI
     path: ../SilverCraft.SndFile/Native/Methods.cs
-    startLine: 98
+    startLine: 97
   assemblies:
   - SilverCraft.CSCore.SndFile
   namespace: sndfile
@@ -808,7 +798,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: SF_FORMAT_HTK
     path: ../SilverCraft.SndFile/Native/Methods.cs
-    startLine: 99
+    startLine: 98
   assemblies:
   - SilverCraft.CSCore.SndFile
   namespace: sndfile
@@ -835,7 +825,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: SF_FORMAT_SDS
     path: ../SilverCraft.SndFile/Native/Methods.cs
-    startLine: 100
+    startLine: 99
   assemblies:
   - SilverCraft.CSCore.SndFile
   namespace: sndfile
@@ -862,7 +852,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: SF_FORMAT_AVR
     path: ../SilverCraft.SndFile/Native/Methods.cs
-    startLine: 101
+    startLine: 100
   assemblies:
   - SilverCraft.CSCore.SndFile
   namespace: sndfile
@@ -889,7 +879,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: SF_FORMAT_WAVEX
     path: ../SilverCraft.SndFile/Native/Methods.cs
-    startLine: 102
+    startLine: 101
   assemblies:
   - SilverCraft.CSCore.SndFile
   namespace: sndfile
@@ -916,7 +906,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: SF_FORMAT_SD2
     path: ../SilverCraft.SndFile/Native/Methods.cs
-    startLine: 103
+    startLine: 102
   assemblies:
   - SilverCraft.CSCore.SndFile
   namespace: sndfile
@@ -943,7 +933,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: SF_FORMAT_FLAC
     path: ../SilverCraft.SndFile/Native/Methods.cs
-    startLine: 104
+    startLine: 103
   assemblies:
   - SilverCraft.CSCore.SndFile
   namespace: sndfile
@@ -970,7 +960,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: SF_FORMAT_CAF
     path: ../SilverCraft.SndFile/Native/Methods.cs
-    startLine: 105
+    startLine: 104
   assemblies:
   - SilverCraft.CSCore.SndFile
   namespace: sndfile
@@ -997,7 +987,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: SF_FORMAT_WVE
     path: ../SilverCraft.SndFile/Native/Methods.cs
-    startLine: 106
+    startLine: 105
   assemblies:
   - SilverCraft.CSCore.SndFile
   namespace: sndfile
@@ -1024,7 +1014,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: SF_FORMAT_OGG
     path: ../SilverCraft.SndFile/Native/Methods.cs
-    startLine: 107
+    startLine: 106
   assemblies:
   - SilverCraft.CSCore.SndFile
   namespace: sndfile
@@ -1051,7 +1041,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: SF_FORMAT_MPC2K
     path: ../SilverCraft.SndFile/Native/Methods.cs
-    startLine: 108
+    startLine: 107
   assemblies:
   - SilverCraft.CSCore.SndFile
   namespace: sndfile
@@ -1078,7 +1068,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: SF_FORMAT_RF64
     path: ../SilverCraft.SndFile/Native/Methods.cs
-    startLine: 109
+    startLine: 108
   assemblies:
   - SilverCraft.CSCore.SndFile
   namespace: sndfile
@@ -1105,7 +1095,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: SF_FORMAT_MPEG
     path: ../SilverCraft.SndFile/Native/Methods.cs
-    startLine: 110
+    startLine: 109
   assemblies:
   - SilverCraft.CSCore.SndFile
   namespace: sndfile
@@ -1132,7 +1122,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: SF_FORMAT_PCM_S8
     path: ../SilverCraft.SndFile/Native/Methods.cs
-    startLine: 111
+    startLine: 110
   assemblies:
   - SilverCraft.CSCore.SndFile
   namespace: sndfile
@@ -1159,7 +1149,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: SF_FORMAT_PCM_16
     path: ../SilverCraft.SndFile/Native/Methods.cs
-    startLine: 112
+    startLine: 111
   assemblies:
   - SilverCraft.CSCore.SndFile
   namespace: sndfile
@@ -1186,7 +1176,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: SF_FORMAT_PCM_24
     path: ../SilverCraft.SndFile/Native/Methods.cs
-    startLine: 113
+    startLine: 112
   assemblies:
   - SilverCraft.CSCore.SndFile
   namespace: sndfile
@@ -1213,7 +1203,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: SF_FORMAT_PCM_32
     path: ../SilverCraft.SndFile/Native/Methods.cs
-    startLine: 114
+    startLine: 113
   assemblies:
   - SilverCraft.CSCore.SndFile
   namespace: sndfile
@@ -1240,7 +1230,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: SF_FORMAT_PCM_U8
     path: ../SilverCraft.SndFile/Native/Methods.cs
-    startLine: 115
+    startLine: 114
   assemblies:
   - SilverCraft.CSCore.SndFile
   namespace: sndfile
@@ -1267,7 +1257,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: SF_FORMAT_FLOAT
     path: ../SilverCraft.SndFile/Native/Methods.cs
-    startLine: 116
+    startLine: 115
   assemblies:
   - SilverCraft.CSCore.SndFile
   namespace: sndfile
@@ -1294,7 +1284,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: SF_FORMAT_DOUBLE
     path: ../SilverCraft.SndFile/Native/Methods.cs
-    startLine: 117
+    startLine: 116
   assemblies:
   - SilverCraft.CSCore.SndFile
   namespace: sndfile
@@ -1321,7 +1311,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: SF_FORMAT_ULAW
     path: ../SilverCraft.SndFile/Native/Methods.cs
-    startLine: 118
+    startLine: 117
   assemblies:
   - SilverCraft.CSCore.SndFile
   namespace: sndfile
@@ -1348,7 +1338,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: SF_FORMAT_ALAW
     path: ../SilverCraft.SndFile/Native/Methods.cs
-    startLine: 119
+    startLine: 118
   assemblies:
   - SilverCraft.CSCore.SndFile
   namespace: sndfile
@@ -1375,7 +1365,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: SF_FORMAT_IMA_ADPCM
     path: ../SilverCraft.SndFile/Native/Methods.cs
-    startLine: 120
+    startLine: 119
   assemblies:
   - SilverCraft.CSCore.SndFile
   namespace: sndfile
@@ -1402,7 +1392,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: SF_FORMAT_MS_ADPCM
     path: ../SilverCraft.SndFile/Native/Methods.cs
-    startLine: 121
+    startLine: 120
   assemblies:
   - SilverCraft.CSCore.SndFile
   namespace: sndfile
@@ -1429,7 +1419,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: SF_FORMAT_GSM610
     path: ../SilverCraft.SndFile/Native/Methods.cs
-    startLine: 122
+    startLine: 121
   assemblies:
   - SilverCraft.CSCore.SndFile
   namespace: sndfile
@@ -1456,7 +1446,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: SF_FORMAT_VOX_ADPCM
     path: ../SilverCraft.SndFile/Native/Methods.cs
-    startLine: 123
+    startLine: 122
   assemblies:
   - SilverCraft.CSCore.SndFile
   namespace: sndfile
@@ -1483,7 +1473,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: SF_FORMAT_NMS_ADPCM_16
     path: ../SilverCraft.SndFile/Native/Methods.cs
-    startLine: 124
+    startLine: 123
   assemblies:
   - SilverCraft.CSCore.SndFile
   namespace: sndfile
@@ -1510,7 +1500,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: SF_FORMAT_NMS_ADPCM_24
     path: ../SilverCraft.SndFile/Native/Methods.cs
-    startLine: 125
+    startLine: 124
   assemblies:
   - SilverCraft.CSCore.SndFile
   namespace: sndfile
@@ -1537,7 +1527,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: SF_FORMAT_NMS_ADPCM_32
     path: ../SilverCraft.SndFile/Native/Methods.cs
-    startLine: 126
+    startLine: 125
   assemblies:
   - SilverCraft.CSCore.SndFile
   namespace: sndfile
@@ -1564,7 +1554,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: SF_FORMAT_G721_32
     path: ../SilverCraft.SndFile/Native/Methods.cs
-    startLine: 127
+    startLine: 126
   assemblies:
   - SilverCraft.CSCore.SndFile
   namespace: sndfile
@@ -1591,7 +1581,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: SF_FORMAT_G723_24
     path: ../SilverCraft.SndFile/Native/Methods.cs
-    startLine: 128
+    startLine: 127
   assemblies:
   - SilverCraft.CSCore.SndFile
   namespace: sndfile
@@ -1618,7 +1608,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: SF_FORMAT_G723_40
     path: ../SilverCraft.SndFile/Native/Methods.cs
-    startLine: 129
+    startLine: 128
   assemblies:
   - SilverCraft.CSCore.SndFile
   namespace: sndfile
@@ -1645,7 +1635,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: SF_FORMAT_DWVW_12
     path: ../SilverCraft.SndFile/Native/Methods.cs
-    startLine: 130
+    startLine: 129
   assemblies:
   - SilverCraft.CSCore.SndFile
   namespace: sndfile
@@ -1672,7 +1662,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: SF_FORMAT_DWVW_16
     path: ../SilverCraft.SndFile/Native/Methods.cs
-    startLine: 131
+    startLine: 130
   assemblies:
   - SilverCraft.CSCore.SndFile
   namespace: sndfile
@@ -1699,7 +1689,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: SF_FORMAT_DWVW_24
     path: ../SilverCraft.SndFile/Native/Methods.cs
-    startLine: 132
+    startLine: 131
   assemblies:
   - SilverCraft.CSCore.SndFile
   namespace: sndfile
@@ -1726,7 +1716,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: SF_FORMAT_DWVW_N
     path: ../SilverCraft.SndFile/Native/Methods.cs
-    startLine: 133
+    startLine: 132
   assemblies:
   - SilverCraft.CSCore.SndFile
   namespace: sndfile
@@ -1753,7 +1743,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: SF_FORMAT_DPCM_8
     path: ../SilverCraft.SndFile/Native/Methods.cs
-    startLine: 134
+    startLine: 133
   assemblies:
   - SilverCraft.CSCore.SndFile
   namespace: sndfile
@@ -1780,7 +1770,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: SF_FORMAT_DPCM_16
     path: ../SilverCraft.SndFile/Native/Methods.cs
-    startLine: 135
+    startLine: 134
   assemblies:
   - SilverCraft.CSCore.SndFile
   namespace: sndfile
@@ -1807,7 +1797,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: SF_FORMAT_VORBIS
     path: ../SilverCraft.SndFile/Native/Methods.cs
-    startLine: 136
+    startLine: 135
   assemblies:
   - SilverCraft.CSCore.SndFile
   namespace: sndfile
@@ -1834,7 +1824,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: SF_FORMAT_OPUS
     path: ../SilverCraft.SndFile/Native/Methods.cs
-    startLine: 137
+    startLine: 136
   assemblies:
   - SilverCraft.CSCore.SndFile
   namespace: sndfile
@@ -1861,7 +1851,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: SF_FORMAT_ALAC_16
     path: ../SilverCraft.SndFile/Native/Methods.cs
-    startLine: 138
+    startLine: 137
   assemblies:
   - SilverCraft.CSCore.SndFile
   namespace: sndfile
@@ -1888,7 +1878,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: SF_FORMAT_ALAC_20
     path: ../SilverCraft.SndFile/Native/Methods.cs
-    startLine: 139
+    startLine: 138
   assemblies:
   - SilverCraft.CSCore.SndFile
   namespace: sndfile
@@ -1915,7 +1905,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: SF_FORMAT_ALAC_24
     path: ../SilverCraft.SndFile/Native/Methods.cs
-    startLine: 140
+    startLine: 139
   assemblies:
   - SilverCraft.CSCore.SndFile
   namespace: sndfile
@@ -1942,7 +1932,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: SF_FORMAT_ALAC_32
     path: ../SilverCraft.SndFile/Native/Methods.cs
-    startLine: 141
+    startLine: 140
   assemblies:
   - SilverCraft.CSCore.SndFile
   namespace: sndfile
@@ -1969,7 +1959,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: SF_FORMAT_MPEG_LAYER_I
     path: ../SilverCraft.SndFile/Native/Methods.cs
-    startLine: 142
+    startLine: 141
   assemblies:
   - SilverCraft.CSCore.SndFile
   namespace: sndfile
@@ -1996,7 +1986,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: SF_FORMAT_MPEG_LAYER_II
     path: ../SilverCraft.SndFile/Native/Methods.cs
-    startLine: 143
+    startLine: 142
   assemblies:
   - SilverCraft.CSCore.SndFile
   namespace: sndfile
@@ -2023,7 +2013,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: SF_FORMAT_MPEG_LAYER_III
     path: ../SilverCraft.SndFile/Native/Methods.cs
-    startLine: 144
+    startLine: 143
   assemblies:
   - SilverCraft.CSCore.SndFile
   namespace: sndfile
@@ -2050,7 +2040,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: SF_ENDIAN_FILE
     path: ../SilverCraft.SndFile/Native/Methods.cs
-    startLine: 145
+    startLine: 144
   assemblies:
   - SilverCraft.CSCore.SndFile
   namespace: sndfile
@@ -2077,7 +2067,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: SF_ENDIAN_LITTLE
     path: ../SilverCraft.SndFile/Native/Methods.cs
-    startLine: 146
+    startLine: 145
   assemblies:
   - SilverCraft.CSCore.SndFile
   namespace: sndfile
@@ -2104,7 +2094,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: SF_ENDIAN_BIG
     path: ../SilverCraft.SndFile/Native/Methods.cs
-    startLine: 147
+    startLine: 146
   assemblies:
   - SilverCraft.CSCore.SndFile
   namespace: sndfile
@@ -2131,7 +2121,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: SF_ENDIAN_CPU
     path: ../SilverCraft.SndFile/Native/Methods.cs
-    startLine: 148
+    startLine: 147
   assemblies:
   - SilverCraft.CSCore.SndFile
   namespace: sndfile
@@ -2158,7 +2148,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: SF_FORMAT_SUBMASK
     path: ../SilverCraft.SndFile/Native/Methods.cs
-    startLine: 149
+    startLine: 148
   assemblies:
   - SilverCraft.CSCore.SndFile
   namespace: sndfile
@@ -2185,7 +2175,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: SF_FORMAT_TYPEMASK
     path: ../SilverCraft.SndFile/Native/Methods.cs
-    startLine: 150
+    startLine: 149
   assemblies:
   - SilverCraft.CSCore.SndFile
   namespace: sndfile
@@ -2212,7 +2202,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: SF_FORMAT_ENDMASK
     path: ../SilverCraft.SndFile/Native/Methods.cs
-    startLine: 151
+    startLine: 150
   assemblies:
   - SilverCraft.CSCore.SndFile
   namespace: sndfile
@@ -2239,7 +2229,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: SFC_GET_LIB_VERSION
     path: ../SilverCraft.SndFile/Native/Methods.cs
-    startLine: 153
+    startLine: 152
   assemblies:
   - SilverCraft.CSCore.SndFile
   namespace: sndfile
@@ -2266,7 +2256,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: SFC_GET_LOG_INFO
     path: ../SilverCraft.SndFile/Native/Methods.cs
-    startLine: 154
+    startLine: 153
   assemblies:
   - SilverCraft.CSCore.SndFile
   namespace: sndfile
@@ -2293,7 +2283,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: SFC_GET_CURRENT_SF_INFO
     path: ../SilverCraft.SndFile/Native/Methods.cs
-    startLine: 155
+    startLine: 154
   assemblies:
   - SilverCraft.CSCore.SndFile
   namespace: sndfile
@@ -2320,7 +2310,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: SFC_GET_NORM_DOUBLE
     path: ../SilverCraft.SndFile/Native/Methods.cs
-    startLine: 156
+    startLine: 155
   assemblies:
   - SilverCraft.CSCore.SndFile
   namespace: sndfile
@@ -2347,7 +2337,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: SFC_GET_NORM_FLOAT
     path: ../SilverCraft.SndFile/Native/Methods.cs
-    startLine: 157
+    startLine: 156
   assemblies:
   - SilverCraft.CSCore.SndFile
   namespace: sndfile
@@ -2374,7 +2364,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: SFC_SET_NORM_DOUBLE
     path: ../SilverCraft.SndFile/Native/Methods.cs
-    startLine: 158
+    startLine: 157
   assemblies:
   - SilverCraft.CSCore.SndFile
   namespace: sndfile
@@ -2401,7 +2391,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: SFC_SET_NORM_FLOAT
     path: ../SilverCraft.SndFile/Native/Methods.cs
-    startLine: 159
+    startLine: 158
   assemblies:
   - SilverCraft.CSCore.SndFile
   namespace: sndfile
@@ -2428,7 +2418,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: SFC_SET_SCALE_FLOAT_INT_READ
     path: ../SilverCraft.SndFile/Native/Methods.cs
-    startLine: 160
+    startLine: 159
   assemblies:
   - SilverCraft.CSCore.SndFile
   namespace: sndfile
@@ -2455,7 +2445,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: SFC_SET_SCALE_INT_FLOAT_WRITE
     path: ../SilverCraft.SndFile/Native/Methods.cs
-    startLine: 161
+    startLine: 160
   assemblies:
   - SilverCraft.CSCore.SndFile
   namespace: sndfile
@@ -2482,7 +2472,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: SFC_GET_SIMPLE_FORMAT_COUNT
     path: ../SilverCraft.SndFile/Native/Methods.cs
-    startLine: 162
+    startLine: 161
   assemblies:
   - SilverCraft.CSCore.SndFile
   namespace: sndfile
@@ -2509,7 +2499,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: SFC_GET_SIMPLE_FORMAT
     path: ../SilverCraft.SndFile/Native/Methods.cs
-    startLine: 163
+    startLine: 162
   assemblies:
   - SilverCraft.CSCore.SndFile
   namespace: sndfile
@@ -2536,7 +2526,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: SFC_GET_FORMAT_INFO
     path: ../SilverCraft.SndFile/Native/Methods.cs
-    startLine: 164
+    startLine: 163
   assemblies:
   - SilverCraft.CSCore.SndFile
   namespace: sndfile
@@ -2563,7 +2553,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: SFC_GET_FORMAT_MAJOR_COUNT
     path: ../SilverCraft.SndFile/Native/Methods.cs
-    startLine: 165
+    startLine: 164
   assemblies:
   - SilverCraft.CSCore.SndFile
   namespace: sndfile
@@ -2590,7 +2580,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: SFC_GET_FORMAT_MAJOR
     path: ../SilverCraft.SndFile/Native/Methods.cs
-    startLine: 166
+    startLine: 165
   assemblies:
   - SilverCraft.CSCore.SndFile
   namespace: sndfile
@@ -2617,7 +2607,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: SFC_GET_FORMAT_SUBTYPE_COUNT
     path: ../SilverCraft.SndFile/Native/Methods.cs
-    startLine: 167
+    startLine: 166
   assemblies:
   - SilverCraft.CSCore.SndFile
   namespace: sndfile
@@ -2644,7 +2634,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: SFC_GET_FORMAT_SUBTYPE
     path: ../SilverCraft.SndFile/Native/Methods.cs
-    startLine: 168
+    startLine: 167
   assemblies:
   - SilverCraft.CSCore.SndFile
   namespace: sndfile
@@ -2671,7 +2661,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: SFC_CALC_SIGNAL_MAX
     path: ../SilverCraft.SndFile/Native/Methods.cs
-    startLine: 169
+    startLine: 168
   assemblies:
   - SilverCraft.CSCore.SndFile
   namespace: sndfile
@@ -2698,7 +2688,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: SFC_CALC_NORM_SIGNAL_MAX
     path: ../SilverCraft.SndFile/Native/Methods.cs
-    startLine: 170
+    startLine: 169
   assemblies:
   - SilverCraft.CSCore.SndFile
   namespace: sndfile
@@ -2725,7 +2715,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: SFC_CALC_MAX_ALL_CHANNELS
     path: ../SilverCraft.SndFile/Native/Methods.cs
-    startLine: 171
+    startLine: 170
   assemblies:
   - SilverCraft.CSCore.SndFile
   namespace: sndfile
@@ -2752,7 +2742,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: SFC_CALC_NORM_MAX_ALL_CHANNELS
     path: ../SilverCraft.SndFile/Native/Methods.cs
-    startLine: 172
+    startLine: 171
   assemblies:
   - SilverCraft.CSCore.SndFile
   namespace: sndfile
@@ -2779,7 +2769,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: SFC_GET_SIGNAL_MAX
     path: ../SilverCraft.SndFile/Native/Methods.cs
-    startLine: 173
+    startLine: 172
   assemblies:
   - SilverCraft.CSCore.SndFile
   namespace: sndfile
@@ -2806,7 +2796,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: SFC_GET_MAX_ALL_CHANNELS
     path: ../SilverCraft.SndFile/Native/Methods.cs
-    startLine: 174
+    startLine: 173
   assemblies:
   - SilverCraft.CSCore.SndFile
   namespace: sndfile
@@ -2833,7 +2823,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: SFC_SET_ADD_PEAK_CHUNK
     path: ../SilverCraft.SndFile/Native/Methods.cs
-    startLine: 175
+    startLine: 174
   assemblies:
   - SilverCraft.CSCore.SndFile
   namespace: sndfile
@@ -2860,7 +2850,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: SFC_UPDATE_HEADER_NOW
     path: ../SilverCraft.SndFile/Native/Methods.cs
-    startLine: 176
+    startLine: 175
   assemblies:
   - SilverCraft.CSCore.SndFile
   namespace: sndfile
@@ -2887,7 +2877,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: SFC_SET_UPDATE_HEADER_AUTO
     path: ../SilverCraft.SndFile/Native/Methods.cs
-    startLine: 177
+    startLine: 176
   assemblies:
   - SilverCraft.CSCore.SndFile
   namespace: sndfile
@@ -2914,7 +2904,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: SFC_FILE_TRUNCATE
     path: ../SilverCraft.SndFile/Native/Methods.cs
-    startLine: 178
+    startLine: 177
   assemblies:
   - SilverCraft.CSCore.SndFile
   namespace: sndfile
@@ -2941,7 +2931,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: SFC_SET_RAW_START_OFFSET
     path: ../SilverCraft.SndFile/Native/Methods.cs
-    startLine: 179
+    startLine: 178
   assemblies:
   - SilverCraft.CSCore.SndFile
   namespace: sndfile
@@ -2968,7 +2958,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: SFC_SET_DITHER_ON_WRITE
     path: ../SilverCraft.SndFile/Native/Methods.cs
-    startLine: 180
+    startLine: 179
   assemblies:
   - SilverCraft.CSCore.SndFile
   namespace: sndfile
@@ -2995,7 +2985,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: SFC_SET_DITHER_ON_READ
     path: ../SilverCraft.SndFile/Native/Methods.cs
-    startLine: 181
+    startLine: 180
   assemblies:
   - SilverCraft.CSCore.SndFile
   namespace: sndfile
@@ -3022,7 +3012,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: SFC_GET_DITHER_INFO_COUNT
     path: ../SilverCraft.SndFile/Native/Methods.cs
-    startLine: 182
+    startLine: 181
   assemblies:
   - SilverCraft.CSCore.SndFile
   namespace: sndfile
@@ -3049,7 +3039,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: SFC_GET_DITHER_INFO
     path: ../SilverCraft.SndFile/Native/Methods.cs
-    startLine: 183
+    startLine: 182
   assemblies:
   - SilverCraft.CSCore.SndFile
   namespace: sndfile
@@ -3076,7 +3066,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: SFC_GET_EMBED_FILE_INFO
     path: ../SilverCraft.SndFile/Native/Methods.cs
-    startLine: 184
+    startLine: 183
   assemblies:
   - SilverCraft.CSCore.SndFile
   namespace: sndfile
@@ -3103,7 +3093,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: SFC_SET_CLIPPING
     path: ../SilverCraft.SndFile/Native/Methods.cs
-    startLine: 185
+    startLine: 184
   assemblies:
   - SilverCraft.CSCore.SndFile
   namespace: sndfile
@@ -3130,7 +3120,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: SFC_GET_CLIPPING
     path: ../SilverCraft.SndFile/Native/Methods.cs
-    startLine: 186
+    startLine: 185
   assemblies:
   - SilverCraft.CSCore.SndFile
   namespace: sndfile
@@ -3157,7 +3147,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: SFC_GET_CUE_COUNT
     path: ../SilverCraft.SndFile/Native/Methods.cs
-    startLine: 187
+    startLine: 186
   assemblies:
   - SilverCraft.CSCore.SndFile
   namespace: sndfile
@@ -3184,7 +3174,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: SFC_GET_CUE
     path: ../SilverCraft.SndFile/Native/Methods.cs
-    startLine: 188
+    startLine: 187
   assemblies:
   - SilverCraft.CSCore.SndFile
   namespace: sndfile
@@ -3211,7 +3201,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: SFC_SET_CUE
     path: ../SilverCraft.SndFile/Native/Methods.cs
-    startLine: 189
+    startLine: 188
   assemblies:
   - SilverCraft.CSCore.SndFile
   namespace: sndfile
@@ -3238,7 +3228,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: SFC_GET_INSTRUMENT
     path: ../SilverCraft.SndFile/Native/Methods.cs
-    startLine: 190
+    startLine: 189
   assemblies:
   - SilverCraft.CSCore.SndFile
   namespace: sndfile
@@ -3265,7 +3255,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: SFC_SET_INSTRUMENT
     path: ../SilverCraft.SndFile/Native/Methods.cs
-    startLine: 191
+    startLine: 190
   assemblies:
   - SilverCraft.CSCore.SndFile
   namespace: sndfile
@@ -3292,7 +3282,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: SFC_GET_LOOP_INFO
     path: ../SilverCraft.SndFile/Native/Methods.cs
-    startLine: 192
+    startLine: 191
   assemblies:
   - SilverCraft.CSCore.SndFile
   namespace: sndfile
@@ -3319,7 +3309,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: SFC_GET_BROADCAST_INFO
     path: ../SilverCraft.SndFile/Native/Methods.cs
-    startLine: 193
+    startLine: 192
   assemblies:
   - SilverCraft.CSCore.SndFile
   namespace: sndfile
@@ -3346,7 +3336,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: SFC_SET_BROADCAST_INFO
     path: ../SilverCraft.SndFile/Native/Methods.cs
-    startLine: 194
+    startLine: 193
   assemblies:
   - SilverCraft.CSCore.SndFile
   namespace: sndfile
@@ -3373,7 +3363,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: SFC_GET_CHANNEL_MAP_INFO
     path: ../SilverCraft.SndFile/Native/Methods.cs
-    startLine: 195
+    startLine: 194
   assemblies:
   - SilverCraft.CSCore.SndFile
   namespace: sndfile
@@ -3400,7 +3390,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: SFC_SET_CHANNEL_MAP_INFO
     path: ../SilverCraft.SndFile/Native/Methods.cs
-    startLine: 196
+    startLine: 195
   assemblies:
   - SilverCraft.CSCore.SndFile
   namespace: sndfile
@@ -3427,7 +3417,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: SFC_RAW_DATA_NEEDS_ENDSWAP
     path: ../SilverCraft.SndFile/Native/Methods.cs
-    startLine: 197
+    startLine: 196
   assemblies:
   - SilverCraft.CSCore.SndFile
   namespace: sndfile
@@ -3454,7 +3444,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: SFC_WAVEX_SET_AMBISONIC
     path: ../SilverCraft.SndFile/Native/Methods.cs
-    startLine: 198
+    startLine: 197
   assemblies:
   - SilverCraft.CSCore.SndFile
   namespace: sndfile
@@ -3481,7 +3471,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: SFC_WAVEX_GET_AMBISONIC
     path: ../SilverCraft.SndFile/Native/Methods.cs
-    startLine: 199
+    startLine: 198
   assemblies:
   - SilverCraft.CSCore.SndFile
   namespace: sndfile
@@ -3508,7 +3498,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: SFC_RF64_AUTO_DOWNGRADE
     path: ../SilverCraft.SndFile/Native/Methods.cs
-    startLine: 200
+    startLine: 199
   assemblies:
   - SilverCraft.CSCore.SndFile
   namespace: sndfile
@@ -3535,7 +3525,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: SFC_SET_VBR_ENCODING_QUALITY
     path: ../SilverCraft.SndFile/Native/Methods.cs
-    startLine: 201
+    startLine: 200
   assemblies:
   - SilverCraft.CSCore.SndFile
   namespace: sndfile
@@ -3562,7 +3552,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: SFC_SET_COMPRESSION_LEVEL
     path: ../SilverCraft.SndFile/Native/Methods.cs
-    startLine: 202
+    startLine: 201
   assemblies:
   - SilverCraft.CSCore.SndFile
   namespace: sndfile
@@ -3589,7 +3579,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: SFC_SET_OGG_PAGE_LATENCY_MS
     path: ../SilverCraft.SndFile/Native/Methods.cs
-    startLine: 203
+    startLine: 202
   assemblies:
   - SilverCraft.CSCore.SndFile
   namespace: sndfile
@@ -3616,7 +3606,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: SFC_SET_OGG_PAGE_LATENCY
     path: ../SilverCraft.SndFile/Native/Methods.cs
-    startLine: 204
+    startLine: 203
   assemblies:
   - SilverCraft.CSCore.SndFile
   namespace: sndfile
@@ -3643,7 +3633,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: SFC_GET_OGG_STREAM_SERIALNO
     path: ../SilverCraft.SndFile/Native/Methods.cs
-    startLine: 205
+    startLine: 204
   assemblies:
   - SilverCraft.CSCore.SndFile
   namespace: sndfile
@@ -3670,7 +3660,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: SFC_GET_BITRATE_MODE
     path: ../SilverCraft.SndFile/Native/Methods.cs
-    startLine: 206
+    startLine: 205
   assemblies:
   - SilverCraft.CSCore.SndFile
   namespace: sndfile
@@ -3697,7 +3687,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: SFC_SET_BITRATE_MODE
     path: ../SilverCraft.SndFile/Native/Methods.cs
-    startLine: 207
+    startLine: 206
   assemblies:
   - SilverCraft.CSCore.SndFile
   namespace: sndfile
@@ -3724,7 +3714,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: SFC_SET_CART_INFO
     path: ../SilverCraft.SndFile/Native/Methods.cs
-    startLine: 208
+    startLine: 207
   assemblies:
   - SilverCraft.CSCore.SndFile
   namespace: sndfile
@@ -3751,7 +3741,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: SFC_GET_CART_INFO
     path: ../SilverCraft.SndFile/Native/Methods.cs
-    startLine: 209
+    startLine: 208
   assemblies:
   - SilverCraft.CSCore.SndFile
   namespace: sndfile
@@ -3778,7 +3768,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: SFC_SET_ORIGINAL_SAMPLERATE
     path: ../SilverCraft.SndFile/Native/Methods.cs
-    startLine: 210
+    startLine: 209
   assemblies:
   - SilverCraft.CSCore.SndFile
   namespace: sndfile
@@ -3805,7 +3795,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: SFC_GET_ORIGINAL_SAMPLERATE
     path: ../SilverCraft.SndFile/Native/Methods.cs
-    startLine: 211
+    startLine: 210
   assemblies:
   - SilverCraft.CSCore.SndFile
   namespace: sndfile
@@ -3832,7 +3822,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: SFC_TEST_IEEE_FLOAT_REPLACE
     path: ../SilverCraft.SndFile/Native/Methods.cs
-    startLine: 212
+    startLine: 211
   assemblies:
   - SilverCraft.CSCore.SndFile
   namespace: sndfile
@@ -3859,7 +3849,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: SFC_SET_ADD_HEADER_PAD_CHUNK
     path: ../SilverCraft.SndFile/Native/Methods.cs
-    startLine: 213
+    startLine: 212
   assemblies:
   - SilverCraft.CSCore.SndFile
   namespace: sndfile
@@ -3886,7 +3876,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: SFC_SET_ADD_DITHER_ON_WRITE
     path: ../SilverCraft.SndFile/Native/Methods.cs
-    startLine: 214
+    startLine: 213
   assemblies:
   - SilverCraft.CSCore.SndFile
   namespace: sndfile
@@ -3913,7 +3903,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: SFC_SET_ADD_DITHER_ON_READ
     path: ../SilverCraft.SndFile/Native/Methods.cs
-    startLine: 215
+    startLine: 214
   assemblies:
   - SilverCraft.CSCore.SndFile
   namespace: sndfile
@@ -3940,7 +3930,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: SF_STR_TITLE
     path: ../SilverCraft.SndFile/Native/Methods.cs
-    startLine: 217
+    startLine: 216
   assemblies:
   - SilverCraft.CSCore.SndFile
   namespace: sndfile
@@ -3967,7 +3957,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: SF_STR_COPYRIGHT
     path: ../SilverCraft.SndFile/Native/Methods.cs
-    startLine: 218
+    startLine: 217
   assemblies:
   - SilverCraft.CSCore.SndFile
   namespace: sndfile
@@ -3994,7 +3984,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: SF_STR_SOFTWARE
     path: ../SilverCraft.SndFile/Native/Methods.cs
-    startLine: 219
+    startLine: 218
   assemblies:
   - SilverCraft.CSCore.SndFile
   namespace: sndfile
@@ -4021,7 +4011,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: SF_STR_ARTIST
     path: ../SilverCraft.SndFile/Native/Methods.cs
-    startLine: 220
+    startLine: 219
   assemblies:
   - SilverCraft.CSCore.SndFile
   namespace: sndfile
@@ -4048,7 +4038,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: SF_STR_COMMENT
     path: ../SilverCraft.SndFile/Native/Methods.cs
-    startLine: 221
+    startLine: 220
   assemblies:
   - SilverCraft.CSCore.SndFile
   namespace: sndfile
@@ -4075,7 +4065,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: SF_STR_DATE
     path: ../SilverCraft.SndFile/Native/Methods.cs
-    startLine: 222
+    startLine: 221
   assemblies:
   - SilverCraft.CSCore.SndFile
   namespace: sndfile
@@ -4102,7 +4092,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: SF_STR_ALBUM
     path: ../SilverCraft.SndFile/Native/Methods.cs
-    startLine: 223
+    startLine: 222
   assemblies:
   - SilverCraft.CSCore.SndFile
   namespace: sndfile
@@ -4129,7 +4119,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: SF_STR_LICENSE
     path: ../SilverCraft.SndFile/Native/Methods.cs
-    startLine: 224
+    startLine: 223
   assemblies:
   - SilverCraft.CSCore.SndFile
   namespace: sndfile
@@ -4156,7 +4146,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: SF_STR_TRACKNUMBER
     path: ../SilverCraft.SndFile/Native/Methods.cs
-    startLine: 225
+    startLine: 224
   assemblies:
   - SilverCraft.CSCore.SndFile
   namespace: sndfile
@@ -4183,7 +4173,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: SF_STR_GENRE
     path: ../SilverCraft.SndFile/Native/Methods.cs
-    startLine: 226
+    startLine: 225
   assemblies:
   - SilverCraft.CSCore.SndFile
   namespace: sndfile
@@ -4210,7 +4200,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: SF_FALSE
     path: ../SilverCraft.SndFile/Native/Methods.cs
-    startLine: 228
+    startLine: 227
   assemblies:
   - SilverCraft.CSCore.SndFile
   namespace: sndfile
@@ -4237,7 +4227,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: SF_TRUE
     path: ../SilverCraft.SndFile/Native/Methods.cs
-    startLine: 229
+    startLine: 228
   assemblies:
   - SilverCraft.CSCore.SndFile
   namespace: sndfile
@@ -4264,7 +4254,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: SF_AMBISONIC_NONE
     path: ../SilverCraft.SndFile/Native/Methods.cs
-    startLine: 231
+    startLine: 230
   assemblies:
   - SilverCraft.CSCore.SndFile
   namespace: sndfile
@@ -4291,7 +4281,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: SF_AMBISONIC_B_FORMAT
     path: ../SilverCraft.SndFile/Native/Methods.cs
-    startLine: 232
+    startLine: 231
   assemblies:
   - SilverCraft.CSCore.SndFile
   namespace: sndfile
@@ -4318,7 +4308,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: SF_ERR_NO_ERROR
     path: ../SilverCraft.SndFile/Native/Methods.cs
-    startLine: 234
+    startLine: 233
   assemblies:
   - SilverCraft.CSCore.SndFile
   namespace: sndfile
@@ -4345,7 +4335,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: SF_ERR_UNRECOGNISED_FORMAT
     path: ../SilverCraft.SndFile/Native/Methods.cs
-    startLine: 235
+    startLine: 234
   assemblies:
   - SilverCraft.CSCore.SndFile
   namespace: sndfile
@@ -4372,7 +4362,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: SF_ERR_SYSTEM
     path: ../SilverCraft.SndFile/Native/Methods.cs
-    startLine: 236
+    startLine: 235
   assemblies:
   - SilverCraft.CSCore.SndFile
   namespace: sndfile
@@ -4399,7 +4389,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: SF_ERR_MALFORMED_FILE
     path: ../SilverCraft.SndFile/Native/Methods.cs
-    startLine: 237
+    startLine: 236
   assemblies:
   - SilverCraft.CSCore.SndFile
   namespace: sndfile
@@ -4426,7 +4416,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: SF_ERR_UNSUPPORTED_ENCODING
     path: ../SilverCraft.SndFile/Native/Methods.cs
-    startLine: 238
+    startLine: 237
   assemblies:
   - SilverCraft.CSCore.SndFile
   namespace: sndfile
@@ -4453,7 +4443,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: SF_CHANNEL_MAP_INVALID
     path: ../SilverCraft.SndFile/Native/Methods.cs
-    startLine: 240
+    startLine: 239
   assemblies:
   - SilverCraft.CSCore.SndFile
   namespace: sndfile
@@ -4480,7 +4470,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: SF_CHANNEL_MAP_MONO
     path: ../SilverCraft.SndFile/Native/Methods.cs
-    startLine: 241
+    startLine: 240
   assemblies:
   - SilverCraft.CSCore.SndFile
   namespace: sndfile
@@ -4507,7 +4497,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: SF_CHANNEL_MAP_LEFT
     path: ../SilverCraft.SndFile/Native/Methods.cs
-    startLine: 242
+    startLine: 241
   assemblies:
   - SilverCraft.CSCore.SndFile
   namespace: sndfile
@@ -4534,7 +4524,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: SF_CHANNEL_MAP_RIGHT
     path: ../SilverCraft.SndFile/Native/Methods.cs
-    startLine: 243
+    startLine: 242
   assemblies:
   - SilverCraft.CSCore.SndFile
   namespace: sndfile
@@ -4561,7 +4551,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: SF_CHANNEL_MAP_CENTER
     path: ../SilverCraft.SndFile/Native/Methods.cs
-    startLine: 244
+    startLine: 243
   assemblies:
   - SilverCraft.CSCore.SndFile
   namespace: sndfile
@@ -4588,7 +4578,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: SF_CHANNEL_MAP_FRONT_LEFT
     path: ../SilverCraft.SndFile/Native/Methods.cs
-    startLine: 245
+    startLine: 244
   assemblies:
   - SilverCraft.CSCore.SndFile
   namespace: sndfile
@@ -4615,7 +4605,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: SF_CHANNEL_MAP_FRONT_RIGHT
     path: ../SilverCraft.SndFile/Native/Methods.cs
-    startLine: 246
+    startLine: 245
   assemblies:
   - SilverCraft.CSCore.SndFile
   namespace: sndfile
@@ -4642,7 +4632,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: SF_CHANNEL_MAP_FRONT_CENTER
     path: ../SilverCraft.SndFile/Native/Methods.cs
-    startLine: 247
+    startLine: 246
   assemblies:
   - SilverCraft.CSCore.SndFile
   namespace: sndfile
@@ -4669,7 +4659,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: SF_CHANNEL_MAP_REAR_CENTER
     path: ../SilverCraft.SndFile/Native/Methods.cs
-    startLine: 248
+    startLine: 247
   assemblies:
   - SilverCraft.CSCore.SndFile
   namespace: sndfile
@@ -4696,7 +4686,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: SF_CHANNEL_MAP_REAR_LEFT
     path: ../SilverCraft.SndFile/Native/Methods.cs
-    startLine: 249
+    startLine: 248
   assemblies:
   - SilverCraft.CSCore.SndFile
   namespace: sndfile
@@ -4723,7 +4713,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: SF_CHANNEL_MAP_REAR_RIGHT
     path: ../SilverCraft.SndFile/Native/Methods.cs
-    startLine: 250
+    startLine: 249
   assemblies:
   - SilverCraft.CSCore.SndFile
   namespace: sndfile
@@ -4750,7 +4740,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: SF_CHANNEL_MAP_LFE
     path: ../SilverCraft.SndFile/Native/Methods.cs
-    startLine: 251
+    startLine: 250
   assemblies:
   - SilverCraft.CSCore.SndFile
   namespace: sndfile
@@ -4777,7 +4767,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: SF_CHANNEL_MAP_FRONT_LEFT_OF_CENTER
     path: ../SilverCraft.SndFile/Native/Methods.cs
-    startLine: 252
+    startLine: 251
   assemblies:
   - SilverCraft.CSCore.SndFile
   namespace: sndfile
@@ -4804,7 +4794,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: SF_CHANNEL_MAP_FRONT_RIGHT_OF_CENTER
     path: ../SilverCraft.SndFile/Native/Methods.cs
-    startLine: 253
+    startLine: 252
   assemblies:
   - SilverCraft.CSCore.SndFile
   namespace: sndfile
@@ -4831,7 +4821,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: SF_CHANNEL_MAP_SIDE_LEFT
     path: ../SilverCraft.SndFile/Native/Methods.cs
-    startLine: 254
+    startLine: 253
   assemblies:
   - SilverCraft.CSCore.SndFile
   namespace: sndfile
@@ -4858,7 +4848,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: SF_CHANNEL_MAP_SIDE_RIGHT
     path: ../SilverCraft.SndFile/Native/Methods.cs
-    startLine: 255
+    startLine: 254
   assemblies:
   - SilverCraft.CSCore.SndFile
   namespace: sndfile
@@ -4885,7 +4875,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: SF_CHANNEL_MAP_TOP_CENTER
     path: ../SilverCraft.SndFile/Native/Methods.cs
-    startLine: 256
+    startLine: 255
   assemblies:
   - SilverCraft.CSCore.SndFile
   namespace: sndfile
@@ -4912,7 +4902,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: SF_CHANNEL_MAP_TOP_FRONT_LEFT
     path: ../SilverCraft.SndFile/Native/Methods.cs
-    startLine: 257
+    startLine: 256
   assemblies:
   - SilverCraft.CSCore.SndFile
   namespace: sndfile
@@ -4939,7 +4929,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: SF_CHANNEL_MAP_TOP_FRONT_RIGHT
     path: ../SilverCraft.SndFile/Native/Methods.cs
-    startLine: 258
+    startLine: 257
   assemblies:
   - SilverCraft.CSCore.SndFile
   namespace: sndfile
@@ -4966,7 +4956,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: SF_CHANNEL_MAP_TOP_FRONT_CENTER
     path: ../SilverCraft.SndFile/Native/Methods.cs
-    startLine: 259
+    startLine: 258
   assemblies:
   - SilverCraft.CSCore.SndFile
   namespace: sndfile
@@ -4993,7 +4983,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: SF_CHANNEL_MAP_TOP_REAR_LEFT
     path: ../SilverCraft.SndFile/Native/Methods.cs
-    startLine: 260
+    startLine: 259
   assemblies:
   - SilverCraft.CSCore.SndFile
   namespace: sndfile
@@ -5020,7 +5010,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: SF_CHANNEL_MAP_TOP_REAR_RIGHT
     path: ../SilverCraft.SndFile/Native/Methods.cs
-    startLine: 261
+    startLine: 260
   assemblies:
   - SilverCraft.CSCore.SndFile
   namespace: sndfile
@@ -5047,7 +5037,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: SF_CHANNEL_MAP_TOP_REAR_CENTER
     path: ../SilverCraft.SndFile/Native/Methods.cs
-    startLine: 262
+    startLine: 261
   assemblies:
   - SilverCraft.CSCore.SndFile
   namespace: sndfile
@@ -5074,7 +5064,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: SF_CHANNEL_MAP_AMBISONIC_B_W
     path: ../SilverCraft.SndFile/Native/Methods.cs
-    startLine: 263
+    startLine: 262
   assemblies:
   - SilverCraft.CSCore.SndFile
   namespace: sndfile
@@ -5101,7 +5091,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: SF_CHANNEL_MAP_AMBISONIC_B_X
     path: ../SilverCraft.SndFile/Native/Methods.cs
-    startLine: 264
+    startLine: 263
   assemblies:
   - SilverCraft.CSCore.SndFile
   namespace: sndfile
@@ -5128,7 +5118,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: SF_CHANNEL_MAP_AMBISONIC_B_Y
     path: ../SilverCraft.SndFile/Native/Methods.cs
-    startLine: 265
+    startLine: 264
   assemblies:
   - SilverCraft.CSCore.SndFile
   namespace: sndfile
@@ -5155,7 +5145,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: SF_CHANNEL_MAP_AMBISONIC_B_Z
     path: ../SilverCraft.SndFile/Native/Methods.cs
-    startLine: 266
+    startLine: 265
   assemblies:
   - SilverCraft.CSCore.SndFile
   namespace: sndfile
@@ -5182,7 +5172,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: SF_CHANNEL_MAP_MAX
     path: ../SilverCraft.SndFile/Native/Methods.cs
-    startLine: 267
+    startLine: 266
   assemblies:
   - SilverCraft.CSCore.SndFile
   namespace: sndfile
@@ -5209,7 +5199,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: SF_BITRATE_MODE_CONSTANT
     path: ../SilverCraft.SndFile/Native/Methods.cs
-    startLine: 269
+    startLine: 268
   assemblies:
   - SilverCraft.CSCore.SndFile
   namespace: sndfile
@@ -5236,7 +5226,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: SF_BITRATE_MODE_AVERAGE
     path: ../SilverCraft.SndFile/Native/Methods.cs
-    startLine: 270
+    startLine: 269
   assemblies:
   - SilverCraft.CSCore.SndFile
   namespace: sndfile
@@ -5263,7 +5253,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: SF_BITRATE_MODE_VARIABLE
     path: ../SilverCraft.SndFile/Native/Methods.cs
-    startLine: 271
+    startLine: 270
   assemblies:
   - SilverCraft.CSCore.SndFile
   namespace: sndfile
@@ -5290,7 +5280,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: SFD_DEFAULT_LEVEL
     path: ../SilverCraft.SndFile/Native/Methods.cs
-    startLine: 273
+    startLine: 272
   assemblies:
   - SilverCraft.CSCore.SndFile
   namespace: sndfile
@@ -5317,7 +5307,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: SFD_CUSTOM_LEVEL
     path: ../SilverCraft.SndFile/Native/Methods.cs
-    startLine: 274
+    startLine: 273
   assemblies:
   - SilverCraft.CSCore.SndFile
   namespace: sndfile
@@ -5344,7 +5334,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: SFD_NO_DITHER
     path: ../SilverCraft.SndFile/Native/Methods.cs
-    startLine: 275
+    startLine: 274
   assemblies:
   - SilverCraft.CSCore.SndFile
   namespace: sndfile
@@ -5371,7 +5361,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: SFD_WHITE
     path: ../SilverCraft.SndFile/Native/Methods.cs
-    startLine: 276
+    startLine: 275
   assemblies:
   - SilverCraft.CSCore.SndFile
   namespace: sndfile
@@ -5398,7 +5388,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: SFD_TRIANGULAR_PDF
     path: ../SilverCraft.SndFile/Native/Methods.cs
-    startLine: 277
+    startLine: 276
   assemblies:
   - SilverCraft.CSCore.SndFile
   namespace: sndfile
@@ -5425,7 +5415,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: SF_LOOP_NONE
     path: ../SilverCraft.SndFile/Native/Methods.cs
-    startLine: 279
+    startLine: 278
   assemblies:
   - SilverCraft.CSCore.SndFile
   namespace: sndfile
@@ -5452,7 +5442,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: SF_LOOP_FORWARD
     path: ../SilverCraft.SndFile/Native/Methods.cs
-    startLine: 280
+    startLine: 279
   assemblies:
   - SilverCraft.CSCore.SndFile
   namespace: sndfile
@@ -5479,7 +5469,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: SF_LOOP_BACKWARD
     path: ../SilverCraft.SndFile/Native/Methods.cs
-    startLine: 281
+    startLine: 280
   assemblies:
   - SilverCraft.CSCore.SndFile
   namespace: sndfile
@@ -5506,7 +5496,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: SF_LOOP_ALTERNATING
     path: ../SilverCraft.SndFile/Native/Methods.cs
-    startLine: 282
+    startLine: 281
   assemblies:
   - SilverCraft.CSCore.SndFile
   namespace: sndfile
@@ -5831,7 +5821,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: SF_SEEK_SET
     path: ../SilverCraft.SndFile/Native/Methods.cs
-    startLine: 322
+    startLine: 321
   assemblies:
   - SilverCraft.CSCore.SndFile
   namespace: sndfile
@@ -5858,7 +5848,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: SF_SEEK_CUR
     path: ../SilverCraft.SndFile/Native/Methods.cs
-    startLine: 323
+    startLine: 322
   assemblies:
   - SilverCraft.CSCore.SndFile
   namespace: sndfile
@@ -5885,7 +5875,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: SF_SEEK_END
     path: ../SilverCraft.SndFile/Native/Methods.cs
-    startLine: 324
+    startLine: 323
   assemblies:
   - SilverCraft.CSCore.SndFile
   namespace: sndfile
@@ -6652,7 +6642,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: SF_STR_FIRST
     path: ../SilverCraft.SndFile/Native/Methods.cs
-    startLine: 438
+    startLine: 437
   assemblies:
   - SilverCraft.CSCore.SndFile
   namespace: sndfile
@@ -6679,7 +6669,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: SF_STR_LAST
     path: ../SilverCraft.SndFile/Native/Methods.cs
-    startLine: 441
+    startLine: 440
   assemblies:
   - SilverCraft.CSCore.SndFile
   namespace: sndfile
@@ -6706,7 +6696,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: SF_COUNT_MAX
     path: ../SilverCraft.SndFile/Native/Methods.cs
-    startLine: 444
+    startLine: 443
   assemblies:
   - SilverCraft.CSCore.SndFile
   namespace: sndfile
@@ -6715,6 +6705,40 @@ items:
     return:
       type: System.Int64
     content.vb: Public Const SF_COUNT_MAX As Long = 9223372036854775807
+- uid: sndfile.Methods.DllImportResolver(System.String,System.Reflection.Assembly,System.Nullable{System.Runtime.InteropServices.DllImportSearchPath})
+  commentId: M:sndfile.Methods.DllImportResolver(System.String,System.Reflection.Assembly,System.Nullable{System.Runtime.InteropServices.DllImportSearchPath})
+  id: DllImportResolver(System.String,System.Reflection.Assembly,System.Nullable{System.Runtime.InteropServices.DllImportSearchPath})
+  parent: sndfile.Methods
+  langs:
+  - csharp
+  - vb
+  name: DllImportResolver(string, Assembly, DllImportSearchPath?)
+  nameWithType: Methods.DllImportResolver(string, Assembly, DllImportSearchPath?)
+  fullName: sndfile.Methods.DllImportResolver(string, System.Reflection.Assembly, System.Runtime.InteropServices.DllImportSearchPath?)
+  type: Method
+  source:
+    id: DllImportResolver
+    path: C:\Users\Filip Velichkovski\RiderProjects\cscore\SilverCraft.SndFile\obj\Release\net8.0\SilverCraft.CSCore.NativeLibraryResolver\SilverCraft.CSCore.NativeLibraryResolver.SourceGeneratorWithAttributes\Methods.DllImportResolver.g.cs
+    startLine: 13
+  assemblies:
+  - SilverCraft.CSCore.SndFile
+  namespace: sndfile
+  syntax:
+    content: public static nint DllImportResolver(string libraryName, Assembly assembly, DllImportSearchPath? searchPath)
+    parameters:
+    - id: libraryName
+      type: System.String
+    - id: assembly
+      type: System.Reflection.Assembly
+    - id: searchPath
+      type: System.Nullable{System.Runtime.InteropServices.DllImportSearchPath}
+    return:
+      type: System.IntPtr
+    content.vb: Public Shared Function DllImportResolver(libraryName As String, assembly As Assembly, searchPath As DllImportSearchPath?) As IntPtr
+  overload: sndfile.Methods.DllImportResolver*
+  nameWithType.vb: Methods.DllImportResolver(String, Assembly, DllImportSearchPath?)
+  fullName.vb: sndfile.Methods.DllImportResolver(String, System.Reflection.Assembly, System.Runtime.InteropServices.DllImportSearchPath?)
+  name.vb: DllImportResolver(String, Assembly, DllImportSearchPath?)
 references:
 - uid: sndfile
   commentId: N:sndfile
@@ -6970,106 +6994,6 @@ references:
   nameWithType.vb: String
   fullName.vb: String
   name.vb: String
-- uid: sndfile.Methods.DllImportResolver*
-  commentId: Overload:sndfile.Methods.DllImportResolver
-  href: sndfile.Methods.html#sndfile_Methods_DllImportResolver_System_String_System_Reflection_Assembly_System_Nullable_System_Runtime_InteropServices_DllImportSearchPath__
-  name: DllImportResolver
-  nameWithType: Methods.DllImportResolver
-  fullName: sndfile.Methods.DllImportResolver
-- uid: System.Reflection.Assembly
-  commentId: T:System.Reflection.Assembly
-  parent: System.Reflection
-  isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system.reflection.assembly
-  name: Assembly
-  nameWithType: Assembly
-  fullName: System.Reflection.Assembly
-- uid: System.Nullable{System.Runtime.InteropServices.DllImportSearchPath}
-  commentId: T:System.Nullable{System.Runtime.InteropServices.DllImportSearchPath}
-  parent: System
-  definition: System.Nullable`1
-  href: https://learn.microsoft.com/dotnet/api/system.runtime.interopservices.dllimportsearchpath
-  name: DllImportSearchPath?
-  nameWithType: DllImportSearchPath?
-  fullName: System.Runtime.InteropServices.DllImportSearchPath?
-  spec.csharp:
-  - uid: System.Runtime.InteropServices.DllImportSearchPath
-    name: DllImportSearchPath
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.runtime.interopservices.dllimportsearchpath
-  - name: '?'
-  spec.vb:
-  - uid: System.Runtime.InteropServices.DllImportSearchPath
-    name: DllImportSearchPath
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.runtime.interopservices.dllimportsearchpath
-  - name: '?'
-- uid: System.IntPtr
-  commentId: T:System.IntPtr
-  parent: System
-  isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system.intptr
-  name: nint
-  nameWithType: nint
-  fullName: nint
-  nameWithType.vb: IntPtr
-  fullName.vb: System.IntPtr
-  name.vb: IntPtr
-- uid: System.Reflection
-  commentId: N:System.Reflection
-  isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system
-  name: System.Reflection
-  nameWithType: System.Reflection
-  fullName: System.Reflection
-  spec.csharp:
-  - uid: System
-    name: System
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system
-  - name: .
-  - uid: System.Reflection
-    name: Reflection
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.reflection
-  spec.vb:
-  - uid: System
-    name: System
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system
-  - name: .
-  - uid: System.Reflection
-    name: Reflection
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.reflection
-- uid: System.Nullable`1
-  commentId: T:System.Nullable`1
-  isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system.nullable-1
-  name: Nullable<T>
-  nameWithType: Nullable<T>
-  fullName: System.Nullable<T>
-  nameWithType.vb: Nullable(Of T)
-  fullName.vb: System.Nullable(Of T)
-  name.vb: Nullable(Of T)
-  spec.csharp:
-  - uid: System.Nullable`1
-    name: Nullable
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
-  - name: <
-  - name: T
-  - name: '>'
-  spec.vb:
-  - uid: System.Nullable`1
-    name: Nullable
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
-  - name: (
-  - name: Of
-  - name: " "
-  - name: T
-  - name: )
 - uid: sndfile.Methods.sfe_copy_data_int*
   commentId: Overload:sndfile.Methods.sfe_copy_data_int
   href: sndfile.Methods.html#sndfile_Methods_sfe_copy_data_int_sndfile_sf_private_tag___sndfile_sf_private_tag___System_Int32_
@@ -7178,6 +7102,17 @@ references:
   name: SF_INFO
   nameWithType: SF_INFO
   fullName: sndfile.SF_INFO
+- uid: System.IntPtr
+  commentId: T:System.IntPtr
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.intptr
+  name: nint
+  nameWithType: nint
+  fullName: nint
+  nameWithType.vb: IntPtr
+  fullName.vb: System.IntPtr
+  name.vb: IntPtr
 - uid: sndfile.Methods.sf_error*
   commentId: Overload:sndfile.Methods.sf_error
   isExternal: true
@@ -7601,3 +7536,92 @@ references:
   nameWithType.vb: Long
   fullName.vb: Long
   name.vb: Long
+- uid: sndfile.Methods.DllImportResolver*
+  commentId: Overload:sndfile.Methods.DllImportResolver
+  href: sndfile.Methods.html#sndfile_Methods_DllImportResolver_System_String_System_Reflection_Assembly_System_Nullable_System_Runtime_InteropServices_DllImportSearchPath__
+  name: DllImportResolver
+  nameWithType: Methods.DllImportResolver
+  fullName: sndfile.Methods.DllImportResolver
+- uid: System.Reflection.Assembly
+  commentId: T:System.Reflection.Assembly
+  parent: System.Reflection
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.reflection.assembly
+  name: Assembly
+  nameWithType: Assembly
+  fullName: System.Reflection.Assembly
+- uid: System.Nullable{System.Runtime.InteropServices.DllImportSearchPath}
+  commentId: T:System.Nullable{System.Runtime.InteropServices.DllImportSearchPath}
+  parent: System
+  definition: System.Nullable`1
+  href: https://learn.microsoft.com/dotnet/api/system.runtime.interopservices.dllimportsearchpath
+  name: DllImportSearchPath?
+  nameWithType: DllImportSearchPath?
+  fullName: System.Runtime.InteropServices.DllImportSearchPath?
+  spec.csharp:
+  - uid: System.Runtime.InteropServices.DllImportSearchPath
+    name: DllImportSearchPath
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime.interopservices.dllimportsearchpath
+  - name: '?'
+  spec.vb:
+  - uid: System.Runtime.InteropServices.DllImportSearchPath
+    name: DllImportSearchPath
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime.interopservices.dllimportsearchpath
+  - name: '?'
+- uid: System.Reflection
+  commentId: N:System.Reflection
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Reflection
+  nameWithType: System.Reflection
+  fullName: System.Reflection
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Reflection
+    name: Reflection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.reflection
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Reflection
+    name: Reflection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.reflection
+- uid: System.Nullable`1
+  commentId: T:System.Nullable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  name: Nullable<T>
+  nameWithType: Nullable<T>
+  fullName: System.Nullable<T>
+  nameWithType.vb: Nullable(Of T)
+  fullName.vb: System.Nullable(Of T)
+  name.vb: Nullable(Of T)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )

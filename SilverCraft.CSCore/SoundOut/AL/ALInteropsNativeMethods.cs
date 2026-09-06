@@ -6,16 +6,15 @@ using System.Runtime.InteropServices;
 
 namespace SilverCraft.CSCore.SoundOut.AL
 {
- 
-    internal static class ALInteropsNativeMethods 
+    [Generators.DllImportResolverAttribute("OpenAL", libLocation, WindowsDlls = ["openal32.dll"],
+        LinuxDlls= ["libopenal.so.1", "libopenal.so"],
+        MacOsDlls= ["libopenal.dylib", "openal"],
+        LinuxInstructions= "Please install OpenAL via your package manager:\nUbuntu/Debian: sudo apt install libopenal1 \nArch Linux: sudo pacman -Sy openal",
+        GenericInstructionsLinuxEnd = "Install openAL via your package manager",
+        GenericInstructionsWindowsEnd = "winget install --id CreativeTechnology.OpenAL --exact --version 1.1 or https://github.com/kcat/openal-soft") ]
+    internal  static partial class ALInteropsNativeMethods 
     {
-      
         private const string libLocation = "libopenal.so.1";
-        public static IntPtr DllImportResolver(string libraryName, Assembly assembly, DllImportSearchPath? searchPath)
-        {
-            if (libraryName != libLocation) return IntPtr.Zero;
-            return OperatingSystem.IsWindows() ? NativeLibrary.Load("openal32.dll", assembly, searchPath) : IntPtr.Zero;
-        }
 
         [DllImport(libLocation, CallingConvention = CallingConvention.Cdecl)]
         internal static extern IntPtr alGetString(int name);

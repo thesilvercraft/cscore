@@ -118,7 +118,7 @@ Enum FlacPreScanMode  <a class="header-action link-secondary" title="View source
 </h2>
   <dl class="parameters">
     <dt id="SilverCraft_CSCore_Codecs_FLAC_FlacPreScanMode_Async"><code>Async = 2</code></dt>
-  <dd><p>Scan async.</p>
+  <dd><p>Scan async. Scanning is skipped if a valid SeekTable is found, .</p>
 <p>Don't use the stream while scan is running because the stream position
 will change while scanning. If you playback the stream, it will cause an error!</p>
 </dd>
@@ -129,11 +129,11 @@ will change while scanning. If you playback the stream, it will cause an error!<
 </dd>
     <dt id="SilverCraft_CSCore_Codecs_FLAC_FlacPreScanMode_None"><code>None = 0</code></dt>
   
-  <dd><p>Don't scan the flac stream. This will cause a stream to be not seekable.</p>
+  <dd><p>Don't scan the flac stream. This will cause a stream to be not seekable if it has no valid SeekTable.</p>
 </dd>
     <dt id="SilverCraft_CSCore_Codecs_FLAC_FlacPreScanMode_Sync"><code>Sync = 1</code></dt>
   
-  <dd><p>Scan synchronously.</p>
+  <dd><p>Scan synchronously. Scanning is skipped if a valid SeekTable is found.</p>
 </dd>
   </dl>
 

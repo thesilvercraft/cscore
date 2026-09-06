@@ -19,7 +19,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: PaStreamCallbackFlags
     path: ../SilverCraft.CSCore.PortAudio/Native/NativeMethods.cs
-    startLine: 17
+    startLine: 19
   assemblies:
   - SilverCraft.CSCore.PortAudio
   namespace: SilverCraft.CSCore.PortAudio.Native

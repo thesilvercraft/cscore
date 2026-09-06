@@ -16,13 +16,15 @@ public struct openmpt_module
 {
 
 }
+[Generators.DllImportResolverAttribute("libopenmpt", NativeMethods.LibraryName, WindowsDlls = ["libopenmpt.dll"],
+    LinuxDlls= ["libopenmpt.so.0", "libopenmpt.so"],
+    MacOsDlls= ["libsndfile.1.0.37.dylib", "libsndfile.dylib"],
+    LinuxInstructions= "Please install libopenmpt via your package manager:\nUbuntu/Debian: sudo apt install libopenmpt \nArch Linux: sudo pacman -Sy libopenmpt",
+    GenericInstructionsStart ="Look at https://lib.openmpt.org/libopenmpt/download/",
+    GenericInstructionsLinuxEnd = "Extract 'libopenmpt.so' (or .dylib) into {0}.",
+    GenericInstructionsWindowsEnd = "Extract 'libopenmpt.dll' from 'bin' into {0}.") ]
 public static unsafe partial class NativeMethods
 {
-    public static IntPtr DllImportResolver(string libraryName, Assembly assembly, DllImportSearchPath? searchPath)
-    {
-        if (libraryName != LibraryName) return IntPtr.Zero;
-        return OperatingSystem.IsWindows() ? NativeLibrary.Load("libopenmpt.dll", assembly, searchPath) : IntPtr.Zero;
-    }
     public const string LibraryName = "libopenmpt.so.0";
     [DllImport(LibraryName, CallingConvention = CallingConvention.Cdecl, ExactSpelling = true)]
     [return: NativeTypeName("uint32_t")]

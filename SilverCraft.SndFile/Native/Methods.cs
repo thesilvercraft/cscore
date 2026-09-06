@@ -1,6 +1,4 @@
-using System.Reflection;
 using System.Runtime.InteropServices;
-using System.Runtime.Versioning;
 using static System.Int64;
 
 namespace sndfile;
@@ -13,17 +11,18 @@ internal sealed class NativeTypeNameAttribute : Attribute
 
     public string Name { get; }
 }
+[Generators.DllImportResolverAttribute("sndfile", Methods.dllName, WindowsDlls =  ["sndfile.dll"],
+    LinuxDlls= ["libsndfile.so.1.0.37", "libsndfile.so.1","libsndfile.so"],
+    MacOsDlls= ["libsndfile.1.0.37.dylib", "libsndfile.dylib"],
+    LinuxInstructions= "Please install libsndfile via your package manager:\nUbuntu/Debian: sudo apt install libsndfile1 \nArch Linux: sudo pacman -Sy libsndfile",
+    GenericInstructionsStart ="Download libsndfile-1.2.2-{0}-{1}.7z from https://github.com/musescore/muse_deps/releases/tag/deps-20260817-100754",
+    GenericInstructionsLinuxEnd = "Extract 'libsndfile.so' (or .dylib) from 'lib' into {0}.",
+    GenericInstructionsWindowsEnd = "Extract 'sndfile.dll' from 'bin' into {0}.") ]
 public static unsafe partial class Methods
 {
     public const string dllName = "libsndfile.so.1";
 
-    public static IntPtr DllImportResolver(string libraryName, Assembly assembly, DllImportSearchPath? searchPath)
-    {
-        if (libraryName != dllName) return IntPtr.Zero;
-        return OperatingSystem.IsWindows() ? NativeLibrary.Load("sndfile.dll", assembly, searchPath) : IntPtr.Zero;
-    }
-
-    public static unsafe void sfe_copy_data_int(ref sf_private_tag* outfile, ref sf_private_tag* infile, int channels)
+    public static  void sfe_copy_data_int(ref sf_private_tag* outfile, ref sf_private_tag* infile, int channels)
     {
         int[]	data =new int[4096] ;
         int		frames, readcount ;
@@ -39,7 +38,7 @@ public static unsafe partial class Methods
         }
     }
 
-    public static unsafe int sfe_copy_data_fp(ref sf_private_tag* outfile, ref sf_private_tag* infile, int channels, int normalize)
+    public static  int sfe_copy_data_fp(ref sf_private_tag* outfile, ref sf_private_tag* infile, int channels, int normalize)
     {
         double[] data = new double[4096];
         double max;

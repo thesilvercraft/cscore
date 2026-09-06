@@ -35,6 +35,8 @@ items:
   syntax:
     content: 'public interface ISoundIn : IDisposable'
     content.vb: Public Interface ISoundIn Inherits IDisposable
+  derivedClasses:
+  - SilverCraft.CSCore.PortAudio.PortAudioSoundIn
   inheritedMembers:
   - System.IDisposable.Dispose
   extensionMethods:

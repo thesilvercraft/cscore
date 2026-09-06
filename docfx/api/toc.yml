@@ -1,5 +1,12 @@
 ### YamlMime:TableOfContent
 items:
+- uid: Generators
+  name: Generators
+  type: Namespace
+  items:
+  - uid: Generators.DllImportResolverAttribute
+    name: DllImportResolverAttribute
+    type: Class
 - uid: OpenMPT
   name: OpenMPT
   type: Namespace
@@ -291,6 +298,13 @@ items:
   - uid: SilverCraft.CSCore.DSP.Resampler.SimpleResampler
     name: SimpleResampler
     type: Class
+- uid: SilverCraft.CSCore.NativeLibraryResolver
+  name: SilverCraft.CSCore.NativeLibraryResolver
+  type: Namespace
+  items:
+  - uid: SilverCraft.CSCore.NativeLibraryResolver.SourceGeneratorWithAttributes
+    name: SourceGeneratorWithAttributes
+    type: Class
 - uid: SilverCraft.CSCore.OpenMPT
   name: SilverCraft.CSCore.OpenMPT
   type: Namespace
@@ -310,6 +324,9 @@ items:
     type: Class
   - uid: SilverCraft.CSCore.PortAudio.PortAudioLifetimeManager
     name: PortAudioLifetimeManager
+    type: Class
+  - uid: SilverCraft.CSCore.PortAudio.PortAudioSoundIn
+    name: PortAudioSoundIn
     type: Class
   - uid: SilverCraft.CSCore.PortAudio.PortAudioSoundOut
     name: PortAudioSoundOut

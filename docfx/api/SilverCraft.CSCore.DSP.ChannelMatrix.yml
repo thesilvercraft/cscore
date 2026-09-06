@@ -1083,7 +1083,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: GetOneDimensionalMatrix
     path: ../SilverCraft.CSCore/DSP/ChannelMatrix.cs
-    startLine: 442
+    startLine: 441
   assemblies:
   - SilverCraft.CSCore
   namespace: SilverCraft.CSCore.DSP
@@ -1114,7 +1114,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: Flip
     path: ../SilverCraft.CSCore/DSP/ChannelMatrix.cs
-    startLine: 465
+    startLine: 464
   assemblies:
   - SilverCraft.CSCore
   namespace: SilverCraft.CSCore.DSP

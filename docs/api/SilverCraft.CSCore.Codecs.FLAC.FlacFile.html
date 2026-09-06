@@ -89,7 +89,7 @@
 
 
   <h1 id="SilverCraft_CSCore_Codecs_FLAC_FlacFile" data-uid="SilverCraft.CSCore.Codecs.FLAC.FlacFile" class="text-break">
-Class FlacFile  <a class="header-action link-secondary" title="View source" href="https://github.com/thesilvercraft/cscore/blob/master/SilverCraft.CSCore/Codecs/FLAC/FlacFile.cs/#L13"><i class="bi bi-code-slash"></i></a>
+Class FlacFile  <a class="header-action link-secondary" title="View source" href="https://github.com/thesilvercraft/cscore/blob/master/SilverCraft.CSCore/Codecs/FLAC/FlacFile.cs/#L11"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -227,7 +227,7 @@ Class FlacFile  <a class="header-action link-secondary" title="View source" href
 
   <h3 id="SilverCraft_CSCore_Codecs_FLAC_FlacFile__ctor_System_IO_Stream_" data-uid="SilverCraft.CSCore.Codecs.FLAC.FlacFile.#ctor(System.IO.Stream)">
   FlacFile(Stream)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/thesilvercraft/cscore/blob/master/SilverCraft.CSCore/Codecs/FLAC/FlacFile.cs/#L46"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/thesilvercraft/cscore/blob/master/SilverCraft.CSCore/Codecs/FLAC/FlacFile.cs/#L44"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="SilverCraft.CSCore.Codecs.FLAC.FlacFile.html">FlacFile</a> class.</p>
@@ -260,7 +260,7 @@ Class FlacFile  <a class="header-action link-secondary" title="View source" href
 
   <h3 id="SilverCraft_CSCore_Codecs_FLAC_FlacFile__ctor_System_IO_Stream_SilverCraft_CSCore_Codecs_FLAC_FlacPreScanMode_" data-uid="SilverCraft.CSCore.Codecs.FLAC.FlacFile.#ctor(System.IO.Stream,SilverCraft.CSCore.Codecs.FLAC.FlacPreScanMode)">
   FlacFile(Stream, FlacPreScanMode)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/thesilvercraft/cscore/blob/master/SilverCraft.CSCore/Codecs/FLAC/FlacFile.cs/#L56"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/thesilvercraft/cscore/blob/master/SilverCraft.CSCore/Codecs/FLAC/FlacFile.cs/#L54"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="SilverCraft.CSCore.Codecs.FLAC.FlacFile.html">FlacFile</a> class.</p>
@@ -295,8 +295,8 @@ Class FlacFile  <a class="header-action link-secondary" title="View source" href
   <a id="SilverCraft_CSCore_Codecs_FLAC_FlacFile__ctor_" data-uid="SilverCraft.CSCore.Codecs.FLAC.FlacFile.#ctor*"></a>
 
   <h3 id="SilverCraft_CSCore_Codecs_FLAC_FlacFile__ctor_System_IO_Stream_SilverCraft_CSCore_Codecs_FLAC_FlacPreScanMode_System_Action_SilverCraft_CSCore_Codecs_FLAC_FlacPreScanFinishedEventArgs__" data-uid="SilverCraft.CSCore.Codecs.FLAC.FlacFile.#ctor(System.IO.Stream,SilverCraft.CSCore.Codecs.FLAC.FlacPreScanMode,System.Action{SilverCraft.CSCore.Codecs.FLAC.FlacPreScanFinishedEventArgs})">
-  FlacFile(Stream, FlacPreScanMode, Action&lt;FlacPreScanFinishedEventArgs&gt;)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/thesilvercraft/cscore/blob/master/SilverCraft.CSCore/Codecs/FLAC/FlacFile.cs/#L70"><i class="bi bi-code-slash"></i></a>
+  FlacFile(Stream, FlacPreScanMode, Action&lt;FlacPreScanFinishedEventArgs?&gt;?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/thesilvercraft/cscore/blob/master/SilverCraft.CSCore/Codecs/FLAC/FlacFile.cs/#L69"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="SilverCraft.CSCore.Codecs.FLAC.FlacFile.html">FlacFile</a> class.</p>
@@ -304,7 +304,7 @@ Class FlacFile  <a class="header-action link-secondary" title="View source" href
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public FlacFile(Stream stream, FlacPreScanMode scanFlag, Action&lt;FlacPreScanFinishedEventArgs&gt; onscanFinished)</code></pre>
+    <pre><code class="lang-csharp hljs">public FlacFile(Stream stream, FlacPreScanMode scanFlag, Action&lt;FlacPreScanFinishedEventArgs?&gt;? onscanFinished)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
@@ -317,7 +317,8 @@ Class FlacFile  <a class="header-action link-secondary" title="View source" href
 </dd>
     <dt><code>onscanFinished</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-1">Action</a>&lt;<a class="xref" href="SilverCraft.CSCore.Codecs.FLAC.FlacPreScanFinishedEventArgs.html">FlacPreScanFinishedEventArgs</a>&gt;</dt>
     <dd><p>Callback which gets called when the pre scan processes finished. Should be used if the
-<code class="paramref">scanFlag</code> argument is set the <a class="xref" href="SilverCraft.CSCore.Codecs.FLAC.FlacPreScanMode.html#SilverCraft_CSCore_Codecs_FLAC_FlacPreScanMode_Async">Async</a>.</p>
+<code class="paramref">scanFlag</code> argument is set the <a class="xref" href="SilverCraft.CSCore.Codecs.FLAC.FlacPreScanMode.html#SilverCraft_CSCore_Codecs_FLAC_FlacPreScanMode_Async">Async</a>.
+If a SeekTable is found scanning will be skipped but the callback will be called with a null.</p>
 </dd>
   </dl>
 
@@ -336,7 +337,7 @@ Class FlacFile  <a class="header-action link-secondary" title="View source" href
 
   <h3 id="SilverCraft_CSCore_Codecs_FLAC_FlacFile__ctor_System_String_" data-uid="SilverCraft.CSCore.Codecs.FLAC.FlacFile.#ctor(System.String)">
   FlacFile(string)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/thesilvercraft/cscore/blob/master/SilverCraft.CSCore/Codecs/FLAC/FlacFile.cs/#L36"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/thesilvercraft/cscore/blob/master/SilverCraft.CSCore/Codecs/FLAC/FlacFile.cs/#L34"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="SilverCraft.CSCore.Codecs.FLAC.FlacFile.html">FlacFile</a> class.</p>
@@ -373,7 +374,7 @@ Class FlacFile  <a class="header-action link-secondary" title="View source" href
 
   <h3 id="SilverCraft_CSCore_Codecs_FLAC_FlacFile_CanSeek" data-uid="SilverCraft.CSCore.Codecs.FLAC.FlacFile.CanSeek">
   CanSeek
-  <a class="header-action link-secondary" title="View source" href="https://github.com/thesilvercraft/cscore/blob/master/SilverCraft.CSCore/Codecs/FLAC/FlacFile.cs/#L130"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/thesilvercraft/cscore/blob/master/SilverCraft.CSCore/Codecs/FLAC/FlacFile.cs/#L143"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Gets a value which indicates whether the seeking is supported. True means that seeking is supported; False means
@@ -406,7 +407,7 @@ that seeking is not supported.</p>
 
   <h3 id="SilverCraft_CSCore_Codecs_FLAC_FlacFile_Length" data-uid="SilverCraft.CSCore.Codecs.FLAC.FlacFile.Length">
   Length
-  <a class="header-action link-secondary" title="View source" href="https://github.com/thesilvercraft/cscore/blob/master/SilverCraft.CSCore/Codecs/FLAC/FlacFile.cs/#L263"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/thesilvercraft/cscore/blob/master/SilverCraft.CSCore/Codecs/FLAC/FlacFile.cs/#L306"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Gets the length of the <a class="xref" href="SilverCraft.CSCore.Codecs.FLAC.FlacFile.html">FlacFile</a> in bytes.</p>
@@ -438,7 +439,7 @@ that seeking is not supported.</p>
 
   <h3 id="SilverCraft_CSCore_Codecs_FLAC_FlacFile_Metadata" data-uid="SilverCraft.CSCore.Codecs.FLAC.FlacFile.Metadata">
   Metadata
-  <a class="header-action link-secondary" title="View source" href="https://github.com/thesilvercraft/cscore/blob/master/SilverCraft.CSCore/Codecs/FLAC/FlacFile.cs/#L117"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/thesilvercraft/cscore/blob/master/SilverCraft.CSCore/Codecs/FLAC/FlacFile.cs/#L130"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Gets a list with all found metadata fields.</p>
@@ -470,7 +471,7 @@ that seeking is not supported.</p>
 
   <h3 id="SilverCraft_CSCore_Codecs_FLAC_FlacFile_Position" data-uid="SilverCraft.CSCore.Codecs.FLAC.FlacFile.Position">
   Position
-  <a class="header-action link-secondary" title="View source" href="https://github.com/thesilvercraft/cscore/blob/master/SilverCraft.CSCore/Codecs/FLAC/FlacFile.cs/#L205"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/thesilvercraft/cscore/blob/master/SilverCraft.CSCore/Codecs/FLAC/FlacFile.cs/#L222"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Gets or sets the position of the <a class="xref" href="SilverCraft.CSCore.Codecs.FLAC.FlacFile.html">FlacFile</a> in bytes.</p>
@@ -502,7 +503,7 @@ that seeking is not supported.</p>
 
   <h3 id="SilverCraft_CSCore_Codecs_FLAC_FlacFile_WaveFormat" data-uid="SilverCraft.CSCore.Codecs.FLAC.FlacFile.WaveFormat">
   WaveFormat
-  <a class="header-action link-secondary" title="View source" href="https://github.com/thesilvercraft/cscore/blob/master/SilverCraft.CSCore/Codecs/FLAC/FlacFile.cs/#L124"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/thesilvercraft/cscore/blob/master/SilverCraft.CSCore/Codecs/FLAC/FlacFile.cs/#L137"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Gets the output <a class="xref" href="SilverCraft.CSCore.WaveFormat.html">WaveFormat</a> of the decoder.</p>
@@ -538,7 +539,7 @@ that seeking is not supported.</p>
 
   <h3 id="SilverCraft_CSCore_Codecs_FLAC_FlacFile_Dispose" data-uid="SilverCraft.CSCore.Codecs.FLAC.FlacFile.Dispose">
   Dispose()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/thesilvercraft/cscore/blob/master/SilverCraft.CSCore/Codecs/FLAC/FlacFile.cs/#L278"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/thesilvercraft/cscore/blob/master/SilverCraft.CSCore/Codecs/FLAC/FlacFile.cs/#L319"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Disposes the <a class="xref" href="SilverCraft.CSCore.Codecs.FLAC.FlacFile.html">FlacFile</a> instance and disposes the underlying stream.</p>
@@ -565,7 +566,7 @@ that seeking is not supported.</p>
 
   <h3 id="SilverCraft_CSCore_Codecs_FLAC_FlacFile_Dispose_System_Boolean_" data-uid="SilverCraft.CSCore.Codecs.FLAC.FlacFile.Dispose(System.Boolean)">
   Dispose(bool)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/thesilvercraft/cscore/blob/master/SilverCraft.CSCore/Codecs/FLAC/FlacFile.cs/#L343"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/thesilvercraft/cscore/blob/master/SilverCraft.CSCore/Codecs/FLAC/FlacFile.cs/#L384"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Disposes the <a class="xref" href="SilverCraft.CSCore.Codecs.FLAC.FlacFile.html">FlacFile</a> instance and disposes the underlying stream.</p>
@@ -599,7 +600,7 @@ resources.</p>
 
   <h3 id="SilverCraft_CSCore_Codecs_FLAC_FlacFile_Read_System_Byte___System_Int32_System_Int32_" data-uid="SilverCraft.CSCore.Codecs.FLAC.FlacFile.Read(System.Byte[],System.Int32,System.Int32)">
   Read(byte[], int, int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/thesilvercraft/cscore/blob/master/SilverCraft.CSCore/Codecs/FLAC/FlacFile.cs/#L147"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/thesilvercraft/cscore/blob/master/SilverCraft.CSCore/Codecs/FLAC/FlacFile.cs/#L160"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Reads a sequence of bytes from the <a class="xref" href="SilverCraft.CSCore.Codecs.FLAC.FlacFile.html">FlacFile</a> and advances the position within the stream by the
@@ -648,7 +649,7 @@ read from the current stream.</p>
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/thesilvercraft/cscore/blob/master/SilverCraft.CSCore/Codecs/FLAC/FlacFile.cs/#L13" class="edit-link">Edit this page</a>
+          <a href="https://github.com/thesilvercraft/cscore/blob/master/SilverCraft.CSCore/Codecs/FLAC/FlacFile.cs/#L11" class="edit-link">Edit this page</a>
         </div>
 
 

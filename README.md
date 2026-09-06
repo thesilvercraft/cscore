@@ -9,3 +9,7 @@ A short list of differences between this project and the original cscore:
 - Removed FFMpeg support  
 - (Will be) Packaged on nuget   
 - Optional sndfile and openmpt wrappers
+[![SilverCraft.CSCore](https://img.shields.io/nuget/v/SilverCraft.CSCore?label=SilverCraft.CSCore)](https://www.nuget.org/packages/SilverCraft.CSCore)  
+[![SilverCraft.CSCore.SndFile](https://img.shields.io/nuget/v/SilverCraft.CSCore.SndFile?label=SilverCraft.CSCore.SndFile)](https://www.nuget.org/packages/SilverCraft.CSCore.SndFile)  
+[![SilverCraft.OpenMPT](https://img.shields.io/nuget/v/SilverCraft.OpenMPT?label=SilverCraft.OpenMPT)](https://www.nuget.org/packages/SilverCraft.OpenMPT)  
+[![SilverCraft.CSCore.PortAudio](https://img.shields.io/nuget/v/SilverCraft.CSCore.PortAudio?label=SilverCraft.CSCore.PortAudio)](https://www.nuget.org/packages/SilverCraft.CSCore.PortAudio)

@@ -163,19 +163,21 @@ items:
   fullName: OpenMPT.NativeMethods
   type: Class
   source:
-    remote:
-      path: SilverCraft.CSCore.OpenMPT/Interop/NativeMethods.cs
-      branch: master
-      repo: https://github.com/thesilvercraft/cscore
     id: NativeMethods
-    path: ../SilverCraft.CSCore.OpenMPT/Interop/NativeMethods.cs
-    startLine: 18
+    path: C:\Users\Filip Velichkovski\RiderProjects\cscore\SilverCraft.CSCore.OpenMPT\obj\Release\net8.0\SilverCraft.CSCore.NativeLibraryResolver\SilverCraft.CSCore.NativeLibraryResolver.SourceGeneratorWithAttributes\NativeMethods.DllImportResolver.g.cs
+    startLine: 11
   assemblies:
   - SilverCraft.CSCore.OpenMPT
   namespace: OpenMPT
   syntax:
-    content: public static class NativeMethods
-    content.vb: Public Module NativeMethods
+    content: >-
+      [DllImportResolver("libopenmpt", "libopenmpt.so.0", WindowsDlls = new string[] { "libopenmpt.dll" }, LinuxDlls = new string[] { "libopenmpt.so.0", "libopenmpt.so" }, MacOsDlls = new string[] { "libsndfile.1.0.37.dylib", "libsndfile.dylib" }, LinuxInstructions = "Please install libopenmpt via your package manager:\nUbuntu/Debian: sudo apt install libopenmpt \nArch Linux: sudo pacman -Sy libopenmpt", GenericInstructionsStart = "Look at https://lib.openmpt.org/libopenmpt/download/", GenericInstructionsLinuxEnd = "Extract 'libopenmpt.so' (or .dylib) into {0}.", GenericInstructionsWindowsEnd = "Extract 'libopenmpt.dll' from 'bin' into {0}.")]
+
+      public static class NativeMethods
+    content.vb: >-
+      <DllImportResolver("libopenmpt", "libopenmpt.so.0", WindowsDlls:=New String() { "libopenmpt.dll" }, LinuxDlls:=New String() { "libopenmpt.so.0", "libopenmpt.so" }, MacOsDlls:=New String() { "libsndfile.1.0.37.dylib", "libsndfile.dylib" }, LinuxInstructions:="Please install libopenmpt via your package manager:" & vbLf & "Ubuntu/Debian: sudo apt install libopenmpt " & vbLf & "Arch Linux: sudo pacman -Sy libopenmpt", GenericInstructionsStart:="Look at https://lib.openmpt.org/libopenmpt/download/", GenericInstructionsLinuxEnd:="Extract 'libopenmpt.so' (or .dylib) into {0}.", GenericInstructionsWindowsEnd:="Extract 'libopenmpt.dll' from 'bin' into {0}.")>
+
+      Public Module NativeMethods
   inheritance:
   - System.Object
   inheritedMembers:
@@ -186,44 +188,32 @@ items:
   - System.Object.MemberwiseClone
   - System.Object.ReferenceEquals(System.Object,System.Object)
   - System.Object.ToString
-- uid: OpenMPT.NativeMethods.DllImportResolver(System.String,System.Reflection.Assembly,System.Nullable{System.Runtime.InteropServices.DllImportSearchPath})
-  commentId: M:OpenMPT.NativeMethods.DllImportResolver(System.String,System.Reflection.Assembly,System.Nullable{System.Runtime.InteropServices.DllImportSearchPath})
-  id: DllImportResolver(System.String,System.Reflection.Assembly,System.Nullable{System.Runtime.InteropServices.DllImportSearchPath})
-  parent: OpenMPT.NativeMethods
-  langs:
-  - csharp
-  - vb
-  name: DllImportResolver(string, Assembly, DllImportSearchPath?)
-  nameWithType: NativeMethods.DllImportResolver(string, Assembly, DllImportSearchPath?)
-  fullName: OpenMPT.NativeMethods.DllImportResolver(string, System.Reflection.Assembly, System.Runtime.InteropServices.DllImportSearchPath?)
-  type: Method
-  source:
-    remote:
-      path: SilverCraft.CSCore.OpenMPT/Interop/NativeMethods.cs
-      branch: master
-      repo: https://github.com/thesilvercraft/cscore
-    id: DllImportResolver
-    path: ../SilverCraft.CSCore.OpenMPT/Interop/NativeMethods.cs
-    startLine: 20
-  assemblies:
-  - SilverCraft.CSCore.OpenMPT
-  namespace: OpenMPT
-  syntax:
-    content: public static nint DllImportResolver(string libraryName, Assembly assembly, DllImportSearchPath? searchPath)
-    parameters:
-    - id: libraryName
+  attributes:
+  - type: Generators.DllImportResolverAttribute
+    ctor: Generators.DllImportResolverAttribute.#ctor(System.String,System.String)
+    arguments:
+    - type: System.String
+      value: libopenmpt
+    - type: System.String
+      value: libopenmpt.so.0
+    namedArguments:
+    - name: LinuxInstructions
       type: System.String
-    - id: assembly
-      type: System.Reflection.Assembly
-    - id: searchPath
-      type: System.Nullable{System.Runtime.InteropServices.DllImportSearchPath}
-    return:
-      type: System.IntPtr
-    content.vb: Public Shared Function DllImportResolver(libraryName As String, assembly As Assembly, searchPath As DllImportSearchPath?) As IntPtr
-  overload: OpenMPT.NativeMethods.DllImportResolver*
-  nameWithType.vb: NativeMethods.DllImportResolver(String, Assembly, DllImportSearchPath?)
-  fullName.vb: OpenMPT.NativeMethods.DllImportResolver(String, System.Reflection.Assembly, System.Runtime.InteropServices.DllImportSearchPath?)
-  name.vb: DllImportResolver(String, Assembly, DllImportSearchPath?)
+      value: >-
+        Please install libopenmpt via your package manager:
+
+        Ubuntu/Debian: sudo apt install libopenmpt 
+
+        Arch Linux: sudo pacman -Sy libopenmpt
+    - name: GenericInstructionsStart
+      type: System.String
+      value: Look at https://lib.openmpt.org/libopenmpt/download/
+    - name: GenericInstructionsLinuxEnd
+      type: System.String
+      value: Extract 'libopenmpt.so' (or .dylib) into {0}.
+    - name: GenericInstructionsWindowsEnd
+      type: System.String
+      value: Extract 'libopenmpt.dll' from 'bin' into {0}.
 - uid: OpenMPT.NativeMethods.LibraryName
   commentId: F:OpenMPT.NativeMethods.LibraryName
   id: LibraryName
@@ -242,7 +232,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: LibraryName
     path: ../SilverCraft.CSCore.OpenMPT/Interop/NativeMethods.cs
-    startLine: 25
+    startLine: 27
   assemblies:
   - SilverCraft.CSCore.OpenMPT
   namespace: OpenMPT
@@ -3151,7 +3141,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: OPENMPT_STRING_LIBRARY_VERSION
     path: ../SilverCraft.CSCore.OpenMPT/Interop/NativeMethods.cs
-    startLine: 380
+    startLine: 382
   assemblies:
   - SilverCraft.CSCore.OpenMPT
   namespace: OpenMPT
@@ -3180,7 +3170,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: OPENMPT_STRING_LIBRARY_FEATURES
     path: ../SilverCraft.CSCore.OpenMPT/Interop/NativeMethods.cs
-    startLine: 383
+    startLine: 385
   assemblies:
   - SilverCraft.CSCore.OpenMPT
   namespace: OpenMPT
@@ -3209,7 +3199,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: OPENMPT_STRING_CORE_VERSION
     path: ../SilverCraft.CSCore.OpenMPT/Interop/NativeMethods.cs
-    startLine: 386
+    startLine: 388
   assemblies:
   - SilverCraft.CSCore.OpenMPT
   namespace: OpenMPT
@@ -3238,7 +3228,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: OPENMPT_STRING_BUILD
     path: ../SilverCraft.CSCore.OpenMPT/Interop/NativeMethods.cs
-    startLine: 389
+    startLine: 391
   assemblies:
   - SilverCraft.CSCore.OpenMPT
   namespace: OpenMPT
@@ -3267,7 +3257,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: OPENMPT_STRING_CREDITS
     path: ../SilverCraft.CSCore.OpenMPT/Interop/NativeMethods.cs
-    startLine: 392
+    startLine: 394
   assemblies:
   - SilverCraft.CSCore.OpenMPT
   namespace: OpenMPT
@@ -3296,7 +3286,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: OPENMPT_STRING_CONTACT
     path: ../SilverCraft.CSCore.OpenMPT/Interop/NativeMethods.cs
-    startLine: 395
+    startLine: 397
   assemblies:
   - SilverCraft.CSCore.OpenMPT
   namespace: OpenMPT
@@ -3325,7 +3315,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: OPENMPT_STRING_LICENSE
     path: ../SilverCraft.CSCore.OpenMPT/Interop/NativeMethods.cs
-    startLine: 398
+    startLine: 400
   assemblies:
   - SilverCraft.CSCore.OpenMPT
   namespace: OpenMPT
@@ -3354,7 +3344,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: OPENMPT_STREAM_SEEK_SET
     path: ../SilverCraft.CSCore.OpenMPT/Interop/NativeMethods.cs
-    startLine: 402
+    startLine: 404
   assemblies:
   - SilverCraft.CSCore.OpenMPT
   namespace: OpenMPT
@@ -3381,7 +3371,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: OPENMPT_STREAM_SEEK_CUR
     path: ../SilverCraft.CSCore.OpenMPT/Interop/NativeMethods.cs
-    startLine: 405
+    startLine: 407
   assemblies:
   - SilverCraft.CSCore.OpenMPT
   namespace: OpenMPT
@@ -3408,7 +3398,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: OPENMPT_STREAM_SEEK_END
     path: ../SilverCraft.CSCore.OpenMPT/Interop/NativeMethods.cs
-    startLine: 408
+    startLine: 410
   assemblies:
   - SilverCraft.CSCore.OpenMPT
   namespace: OpenMPT
@@ -3435,7 +3425,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: OPENMPT_ERROR_OK
     path: ../SilverCraft.CSCore.OpenMPT/Interop/NativeMethods.cs
-    startLine: 411
+    startLine: 413
   assemblies:
   - SilverCraft.CSCore.OpenMPT
   namespace: OpenMPT
@@ -3462,7 +3452,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: OPENMPT_ERROR_BASE
     path: ../SilverCraft.CSCore.OpenMPT/Interop/NativeMethods.cs
-    startLine: 414
+    startLine: 416
   assemblies:
   - SilverCraft.CSCore.OpenMPT
   namespace: OpenMPT
@@ -3489,7 +3479,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: OPENMPT_ERROR_UNKNOWN
     path: ../SilverCraft.CSCore.OpenMPT/Interop/NativeMethods.cs
-    startLine: 417
+    startLine: 419
   assemblies:
   - SilverCraft.CSCore.OpenMPT
   namespace: OpenMPT
@@ -3516,7 +3506,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: OPENMPT_ERROR_EXCEPTION
     path: ../SilverCraft.CSCore.OpenMPT/Interop/NativeMethods.cs
-    startLine: 420
+    startLine: 422
   assemblies:
   - SilverCraft.CSCore.OpenMPT
   namespace: OpenMPT
@@ -3543,7 +3533,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: OPENMPT_ERROR_OUT_OF_MEMORY
     path: ../SilverCraft.CSCore.OpenMPT/Interop/NativeMethods.cs
-    startLine: 423
+    startLine: 425
   assemblies:
   - SilverCraft.CSCore.OpenMPT
   namespace: OpenMPT
@@ -3570,7 +3560,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: OPENMPT_ERROR_RUNTIME
     path: ../SilverCraft.CSCore.OpenMPT/Interop/NativeMethods.cs
-    startLine: 426
+    startLine: 428
   assemblies:
   - SilverCraft.CSCore.OpenMPT
   namespace: OpenMPT
@@ -3597,7 +3587,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: OPENMPT_ERROR_RANGE
     path: ../SilverCraft.CSCore.OpenMPT/Interop/NativeMethods.cs
-    startLine: 429
+    startLine: 431
   assemblies:
   - SilverCraft.CSCore.OpenMPT
   namespace: OpenMPT
@@ -3624,7 +3614,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: OPENMPT_ERROR_OVERFLOW
     path: ../SilverCraft.CSCore.OpenMPT/Interop/NativeMethods.cs
-    startLine: 432
+    startLine: 434
   assemblies:
   - SilverCraft.CSCore.OpenMPT
   namespace: OpenMPT
@@ -3651,7 +3641,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: OPENMPT_ERROR_UNDERFLOW
     path: ../SilverCraft.CSCore.OpenMPT/Interop/NativeMethods.cs
-    startLine: 435
+    startLine: 437
   assemblies:
   - SilverCraft.CSCore.OpenMPT
   namespace: OpenMPT
@@ -3678,7 +3668,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: OPENMPT_ERROR_LOGIC
     path: ../SilverCraft.CSCore.OpenMPT/Interop/NativeMethods.cs
-    startLine: 438
+    startLine: 440
   assemblies:
   - SilverCraft.CSCore.OpenMPT
   namespace: OpenMPT
@@ -3705,7 +3695,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: OPENMPT_ERROR_DOMAIN
     path: ../SilverCraft.CSCore.OpenMPT/Interop/NativeMethods.cs
-    startLine: 441
+    startLine: 443
   assemblies:
   - SilverCraft.CSCore.OpenMPT
   namespace: OpenMPT
@@ -3732,7 +3722,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: OPENMPT_ERROR_LENGTH
     path: ../SilverCraft.CSCore.OpenMPT/Interop/NativeMethods.cs
-    startLine: 444
+    startLine: 446
   assemblies:
   - SilverCraft.CSCore.OpenMPT
   namespace: OpenMPT
@@ -3759,7 +3749,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: OPENMPT_ERROR_OUT_OF_RANGE
     path: ../SilverCraft.CSCore.OpenMPT/Interop/NativeMethods.cs
-    startLine: 447
+    startLine: 449
   assemblies:
   - SilverCraft.CSCore.OpenMPT
   namespace: OpenMPT
@@ -3786,7 +3776,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: OPENMPT_ERROR_INVALID_ARGUMENT
     path: ../SilverCraft.CSCore.OpenMPT/Interop/NativeMethods.cs
-    startLine: 450
+    startLine: 452
   assemblies:
   - SilverCraft.CSCore.OpenMPT
   namespace: OpenMPT
@@ -3813,7 +3803,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: OPENMPT_ERROR_GENERAL
     path: ../SilverCraft.CSCore.OpenMPT/Interop/NativeMethods.cs
-    startLine: 453
+    startLine: 455
   assemblies:
   - SilverCraft.CSCore.OpenMPT
   namespace: OpenMPT
@@ -3840,7 +3830,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: OPENMPT_ERROR_INVALID_MODULE_POINTER
     path: ../SilverCraft.CSCore.OpenMPT/Interop/NativeMethods.cs
-    startLine: 456
+    startLine: 458
   assemblies:
   - SilverCraft.CSCore.OpenMPT
   namespace: OpenMPT
@@ -3867,7 +3857,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: OPENMPT_ERROR_ARGUMENT_NULL_POINTER
     path: ../SilverCraft.CSCore.OpenMPT/Interop/NativeMethods.cs
-    startLine: 459
+    startLine: 461
   assemblies:
   - SilverCraft.CSCore.OpenMPT
   namespace: OpenMPT
@@ -3894,7 +3884,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: OPENMPT_ERROR_FUNC_RESULT_NONE
     path: ../SilverCraft.CSCore.OpenMPT/Interop/NativeMethods.cs
-    startLine: 462
+    startLine: 464
   assemblies:
   - SilverCraft.CSCore.OpenMPT
   namespace: OpenMPT
@@ -3921,7 +3911,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: OPENMPT_ERROR_FUNC_RESULT_LOG
     path: ../SilverCraft.CSCore.OpenMPT/Interop/NativeMethods.cs
-    startLine: 465
+    startLine: 467
   assemblies:
   - SilverCraft.CSCore.OpenMPT
   namespace: OpenMPT
@@ -3948,7 +3938,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: OPENMPT_ERROR_FUNC_RESULT_STORE
     path: ../SilverCraft.CSCore.OpenMPT/Interop/NativeMethods.cs
-    startLine: 468
+    startLine: 470
   assemblies:
   - SilverCraft.CSCore.OpenMPT
   namespace: OpenMPT
@@ -3975,7 +3965,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: OPENMPT_ERROR_FUNC_RESULT_DEFAULT
     path: ../SilverCraft.CSCore.OpenMPT/Interop/NativeMethods.cs
-    startLine: 471
+    startLine: 473
   assemblies:
   - SilverCraft.CSCore.OpenMPT
   namespace: OpenMPT
@@ -4002,7 +3992,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: OPENMPT_PROBE_FILE_HEADER_FLAGS_MODULES
     path: ../SilverCraft.CSCore.OpenMPT/Interop/NativeMethods.cs
-    startLine: 474
+    startLine: 476
   assemblies:
   - SilverCraft.CSCore.OpenMPT
   namespace: OpenMPT
@@ -4029,7 +4019,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: OPENMPT_PROBE_FILE_HEADER_FLAGS_CONTAINERS
     path: ../SilverCraft.CSCore.OpenMPT/Interop/NativeMethods.cs
-    startLine: 477
+    startLine: 479
   assemblies:
   - SilverCraft.CSCore.OpenMPT
   namespace: OpenMPT
@@ -4056,7 +4046,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: OPENMPT_PROBE_FILE_HEADER_FLAGS_DEFAULT
     path: ../SilverCraft.CSCore.OpenMPT/Interop/NativeMethods.cs
-    startLine: 480
+    startLine: 482
   assemblies:
   - SilverCraft.CSCore.OpenMPT
   namespace: OpenMPT
@@ -4083,7 +4073,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: OPENMPT_PROBE_FILE_HEADER_FLAGS_NONE
     path: ../SilverCraft.CSCore.OpenMPT/Interop/NativeMethods.cs
-    startLine: 483
+    startLine: 485
   assemblies:
   - SilverCraft.CSCore.OpenMPT
   namespace: OpenMPT
@@ -4110,7 +4100,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: OPENMPT_PROBE_FILE_HEADER_RESULT_SUCCESS
     path: ../SilverCraft.CSCore.OpenMPT/Interop/NativeMethods.cs
-    startLine: 486
+    startLine: 488
   assemblies:
   - SilverCraft.CSCore.OpenMPT
   namespace: OpenMPT
@@ -4137,7 +4127,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: OPENMPT_PROBE_FILE_HEADER_RESULT_FAILURE
     path: ../SilverCraft.CSCore.OpenMPT/Interop/NativeMethods.cs
-    startLine: 489
+    startLine: 491
   assemblies:
   - SilverCraft.CSCore.OpenMPT
   namespace: OpenMPT
@@ -4164,7 +4154,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: OPENMPT_PROBE_FILE_HEADER_RESULT_WANTMOREDATA
     path: ../SilverCraft.CSCore.OpenMPT/Interop/NativeMethods.cs
-    startLine: 492
+    startLine: 494
   assemblies:
   - SilverCraft.CSCore.OpenMPT
   namespace: OpenMPT
@@ -4191,7 +4181,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: OPENMPT_PROBE_FILE_HEADER_RESULT_ERROR
     path: ../SilverCraft.CSCore.OpenMPT/Interop/NativeMethods.cs
-    startLine: 495
+    startLine: 497
   assemblies:
   - SilverCraft.CSCore.OpenMPT
   namespace: OpenMPT
@@ -4218,7 +4208,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: OPENMPT_MODULE_RENDER_MASTERGAIN_MILLIBEL
     path: ../SilverCraft.CSCore.OpenMPT/Interop/NativeMethods.cs
-    startLine: 498
+    startLine: 500
   assemblies:
   - SilverCraft.CSCore.OpenMPT
   namespace: OpenMPT
@@ -4245,7 +4235,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: OPENMPT_MODULE_RENDER_STEREOSEPARATION_PERCENT
     path: ../SilverCraft.CSCore.OpenMPT/Interop/NativeMethods.cs
-    startLine: 501
+    startLine: 503
   assemblies:
   - SilverCraft.CSCore.OpenMPT
   namespace: OpenMPT
@@ -4272,7 +4262,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: OPENMPT_MODULE_RENDER_INTERPOLATIONFILTER_LENGTH
     path: ../SilverCraft.CSCore.OpenMPT/Interop/NativeMethods.cs
-    startLine: 504
+    startLine: 506
   assemblies:
   - SilverCraft.CSCore.OpenMPT
   namespace: OpenMPT
@@ -4299,7 +4289,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: OPENMPT_MODULE_RENDER_VOLUMERAMPING_STRENGTH
     path: ../SilverCraft.CSCore.OpenMPT/Interop/NativeMethods.cs
-    startLine: 507
+    startLine: 509
   assemblies:
   - SilverCraft.CSCore.OpenMPT
   namespace: OpenMPT
@@ -4326,7 +4316,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: OPENMPT_MODULE_COMMAND_NOTE
     path: ../SilverCraft.CSCore.OpenMPT/Interop/NativeMethods.cs
-    startLine: 510
+    startLine: 512
   assemblies:
   - SilverCraft.CSCore.OpenMPT
   namespace: OpenMPT
@@ -4353,7 +4343,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: OPENMPT_MODULE_COMMAND_INSTRUMENT
     path: ../SilverCraft.CSCore.OpenMPT/Interop/NativeMethods.cs
-    startLine: 513
+    startLine: 515
   assemblies:
   - SilverCraft.CSCore.OpenMPT
   namespace: OpenMPT
@@ -4380,7 +4370,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: OPENMPT_MODULE_COMMAND_VOLUMEEFFECT
     path: ../SilverCraft.CSCore.OpenMPT/Interop/NativeMethods.cs
-    startLine: 516
+    startLine: 518
   assemblies:
   - SilverCraft.CSCore.OpenMPT
   namespace: OpenMPT
@@ -4407,7 +4397,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: OPENMPT_MODULE_COMMAND_EFFECT
     path: ../SilverCraft.CSCore.OpenMPT/Interop/NativeMethods.cs
-    startLine: 519
+    startLine: 521
   assemblies:
   - SilverCraft.CSCore.OpenMPT
   namespace: OpenMPT
@@ -4434,7 +4424,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: OPENMPT_MODULE_COMMAND_VOLUME
     path: ../SilverCraft.CSCore.OpenMPT/Interop/NativeMethods.cs
-    startLine: 522
+    startLine: 524
   assemblies:
   - SilverCraft.CSCore.OpenMPT
   namespace: OpenMPT
@@ -4461,7 +4451,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: OPENMPT_MODULE_COMMAND_PARAMETER
     path: ../SilverCraft.CSCore.OpenMPT/Interop/NativeMethods.cs
-    startLine: 525
+    startLine: 527
   assemblies:
   - SilverCraft.CSCore.OpenMPT
   namespace: OpenMPT
@@ -4470,6 +4460,40 @@ items:
     return:
       type: System.Int32
     content.vb: Public Const OPENMPT_MODULE_COMMAND_PARAMETER As Integer = 5
+- uid: OpenMPT.NativeMethods.DllImportResolver(System.String,System.Reflection.Assembly,System.Nullable{System.Runtime.InteropServices.DllImportSearchPath})
+  commentId: M:OpenMPT.NativeMethods.DllImportResolver(System.String,System.Reflection.Assembly,System.Nullable{System.Runtime.InteropServices.DllImportSearchPath})
+  id: DllImportResolver(System.String,System.Reflection.Assembly,System.Nullable{System.Runtime.InteropServices.DllImportSearchPath})
+  parent: OpenMPT.NativeMethods
+  langs:
+  - csharp
+  - vb
+  name: DllImportResolver(string, Assembly, DllImportSearchPath?)
+  nameWithType: NativeMethods.DllImportResolver(string, Assembly, DllImportSearchPath?)
+  fullName: OpenMPT.NativeMethods.DllImportResolver(string, System.Reflection.Assembly, System.Runtime.InteropServices.DllImportSearchPath?)
+  type: Method
+  source:
+    id: DllImportResolver
+    path: C:\Users\Filip Velichkovski\RiderProjects\cscore\SilverCraft.CSCore.OpenMPT\obj\Release\net8.0\SilverCraft.CSCore.NativeLibraryResolver\SilverCraft.CSCore.NativeLibraryResolver.SourceGeneratorWithAttributes\NativeMethods.DllImportResolver.g.cs
+    startLine: 13
+  assemblies:
+  - SilverCraft.CSCore.OpenMPT
+  namespace: OpenMPT
+  syntax:
+    content: public static nint DllImportResolver(string libraryName, Assembly assembly, DllImportSearchPath? searchPath)
+    parameters:
+    - id: libraryName
+      type: System.String
+    - id: assembly
+      type: System.Reflection.Assembly
+    - id: searchPath
+      type: System.Nullable{System.Runtime.InteropServices.DllImportSearchPath}
+    return:
+      type: System.IntPtr
+    content.vb: Public Shared Function DllImportResolver(libraryName As String, assembly As Assembly, searchPath As DllImportSearchPath?) As IntPtr
+  overload: OpenMPT.NativeMethods.DllImportResolver*
+  nameWithType.vb: NativeMethods.DllImportResolver(String, Assembly, DllImportSearchPath?)
+  fullName.vb: OpenMPT.NativeMethods.DllImportResolver(String, System.Reflection.Assembly, System.Runtime.InteropServices.DllImportSearchPath?)
+  name.vb: DllImportResolver(String, Assembly, DllImportSearchPath?)
 references:
 - uid: OpenMPT
   commentId: N:OpenMPT
@@ -4714,12 +4738,6 @@ references:
   name: System
   nameWithType: System
   fullName: System
-- uid: OpenMPT.NativeMethods.DllImportResolver*
-  commentId: Overload:OpenMPT.NativeMethods.DllImportResolver
-  href: OpenMPT.NativeMethods.html#OpenMPT_NativeMethods_DllImportResolver_System_String_System_Reflection_Assembly_System_Nullable_System_Runtime_InteropServices_DllImportSearchPath__
-  name: DllImportResolver
-  nameWithType: NativeMethods.DllImportResolver
-  fullName: OpenMPT.NativeMethods.DllImportResolver
 - uid: System.String
   commentId: T:System.String
   parent: System
@@ -4731,100 +4749,6 @@ references:
   nameWithType.vb: String
   fullName.vb: String
   name.vb: String
-- uid: System.Reflection.Assembly
-  commentId: T:System.Reflection.Assembly
-  parent: System.Reflection
-  isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system.reflection.assembly
-  name: Assembly
-  nameWithType: Assembly
-  fullName: System.Reflection.Assembly
-- uid: System.Nullable{System.Runtime.InteropServices.DllImportSearchPath}
-  commentId: T:System.Nullable{System.Runtime.InteropServices.DllImportSearchPath}
-  parent: System
-  definition: System.Nullable`1
-  href: https://learn.microsoft.com/dotnet/api/system.runtime.interopservices.dllimportsearchpath
-  name: DllImportSearchPath?
-  nameWithType: DllImportSearchPath?
-  fullName: System.Runtime.InteropServices.DllImportSearchPath?
-  spec.csharp:
-  - uid: System.Runtime.InteropServices.DllImportSearchPath
-    name: DllImportSearchPath
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.runtime.interopservices.dllimportsearchpath
-  - name: '?'
-  spec.vb:
-  - uid: System.Runtime.InteropServices.DllImportSearchPath
-    name: DllImportSearchPath
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.runtime.interopservices.dllimportsearchpath
-  - name: '?'
-- uid: System.IntPtr
-  commentId: T:System.IntPtr
-  parent: System
-  isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system.intptr
-  name: nint
-  nameWithType: nint
-  fullName: nint
-  nameWithType.vb: IntPtr
-  fullName.vb: System.IntPtr
-  name.vb: IntPtr
-- uid: System.Reflection
-  commentId: N:System.Reflection
-  isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system
-  name: System.Reflection
-  nameWithType: System.Reflection
-  fullName: System.Reflection
-  spec.csharp:
-  - uid: System
-    name: System
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system
-  - name: .
-  - uid: System.Reflection
-    name: Reflection
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.reflection
-  spec.vb:
-  - uid: System
-    name: System
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system
-  - name: .
-  - uid: System.Reflection
-    name: Reflection
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.reflection
-- uid: System.Nullable`1
-  commentId: T:System.Nullable`1
-  isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system.nullable-1
-  name: Nullable<T>
-  nameWithType: Nullable<T>
-  fullName: System.Nullable<T>
-  nameWithType.vb: Nullable(Of T)
-  fullName.vb: System.Nullable(Of T)
-  name.vb: Nullable(Of T)
-  spec.csharp:
-  - uid: System.Nullable`1
-    name: Nullable
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
-  - name: <
-  - name: T
-  - name: '>'
-  spec.vb:
-  - uid: System.Nullable`1
-    name: Nullable
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
-  - name: (
-  - name: Of
-  - name: " "
-  - name: T
-  - name: )
 - uid: OpenMPT.NativeMethods.openmpt_get_library_version*
   commentId: Overload:OpenMPT.NativeMethods.openmpt_get_library_version
   isExternal: true
@@ -5240,6 +5164,17 @@ references:
   name: openmpt_module_create2
   nameWithType: NativeMethods.openmpt_module_create2
   fullName: OpenMPT.NativeMethods.openmpt_module_create2
+- uid: System.IntPtr
+  commentId: T:System.IntPtr
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.intptr
+  name: nint
+  nameWithType: nint
+  fullName: nint
+  nameWithType.vb: IntPtr
+  fullName.vb: System.IntPtr
+  name.vb: IntPtr
 - uid: OpenMPT.NativeMethods.openmpt_module_create_from_memory*
   commentId: Overload:OpenMPT.NativeMethods.openmpt_module_create_from_memory
   isExternal: true
@@ -5938,3 +5873,92 @@ references:
   nameWithType.vb: ULong
   fullName.vb: ULong
   name.vb: ULong
+- uid: OpenMPT.NativeMethods.DllImportResolver*
+  commentId: Overload:OpenMPT.NativeMethods.DllImportResolver
+  href: OpenMPT.NativeMethods.html#OpenMPT_NativeMethods_DllImportResolver_System_String_System_Reflection_Assembly_System_Nullable_System_Runtime_InteropServices_DllImportSearchPath__
+  name: DllImportResolver
+  nameWithType: NativeMethods.DllImportResolver
+  fullName: OpenMPT.NativeMethods.DllImportResolver
+- uid: System.Reflection.Assembly
+  commentId: T:System.Reflection.Assembly
+  parent: System.Reflection
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.reflection.assembly
+  name: Assembly
+  nameWithType: Assembly
+  fullName: System.Reflection.Assembly
+- uid: System.Nullable{System.Runtime.InteropServices.DllImportSearchPath}
+  commentId: T:System.Nullable{System.Runtime.InteropServices.DllImportSearchPath}
+  parent: System
+  definition: System.Nullable`1
+  href: https://learn.microsoft.com/dotnet/api/system.runtime.interopservices.dllimportsearchpath
+  name: DllImportSearchPath?
+  nameWithType: DllImportSearchPath?
+  fullName: System.Runtime.InteropServices.DllImportSearchPath?
+  spec.csharp:
+  - uid: System.Runtime.InteropServices.DllImportSearchPath
+    name: DllImportSearchPath
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime.interopservices.dllimportsearchpath
+  - name: '?'
+  spec.vb:
+  - uid: System.Runtime.InteropServices.DllImportSearchPath
+    name: DllImportSearchPath
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime.interopservices.dllimportsearchpath
+  - name: '?'
+- uid: System.Reflection
+  commentId: N:System.Reflection
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Reflection
+  nameWithType: System.Reflection
+  fullName: System.Reflection
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Reflection
+    name: Reflection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.reflection
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Reflection
+    name: Reflection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.reflection
+- uid: System.Nullable`1
+  commentId: T:System.Nullable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  name: Nullable<T>
+  nameWithType: Nullable<T>
+  fullName: System.Nullable<T>
+  nameWithType.vb: Nullable(Of T)
+  fullName.vb: System.Nullable(Of T)
+  name.vb: Nullable(Of T)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )

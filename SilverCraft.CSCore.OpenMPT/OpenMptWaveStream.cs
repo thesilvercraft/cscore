@@ -8,7 +8,7 @@ public unsafe class OpenMptWaveStream : ISampleSource, ISelector, ILoop
     openmpt_module* infile;
     MPTVirtualStreamHelper Helper;
     public static bool ResolverIsSet = false;
-    public unsafe OpenMptWaveStream(Stream s)
+    public  OpenMptWaveStream(Stream s)
     {
         Helper = new(s);
         if (!ResolverIsSet)

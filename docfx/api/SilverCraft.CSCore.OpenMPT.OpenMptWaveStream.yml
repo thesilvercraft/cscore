@@ -498,7 +498,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: Length
     path: ../SilverCraft.CSCore.OpenMPT/OpenMptWaveStream.cs
-    startLine: 103
+    startLine: 100
   assemblies:
   - SilverCraft.CSCore.OpenMPT
   namespace: SilverCraft.CSCore.OpenMPT
@@ -534,7 +534,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: CurrentPattern
     path: ../SilverCraft.CSCore.OpenMPT/OpenMptWaveStream.cs
-    startLine: 105
+    startLine: 102
   assemblies:
   - SilverCraft.CSCore.OpenMPT
   namespace: SilverCraft.CSCore.OpenMPT
@@ -566,7 +566,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: NumberOfPatterns
     path: ../SilverCraft.CSCore.OpenMPT/OpenMptWaveStream.cs
-    startLine: 107
+    startLine: 104
   assemblies:
   - SilverCraft.CSCore.OpenMPT
   namespace: SilverCraft.CSCore.OpenMPT
@@ -598,7 +598,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: CanLoop
     path: ../SilverCraft.CSCore.OpenMPT/OpenMptWaveStream.cs
-    startLine: 109
+    startLine: 106
   assemblies:
   - SilverCraft.CSCore.OpenMPT
   namespace: SilverCraft.CSCore.OpenMPT

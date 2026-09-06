@@ -72,4 +72,9 @@
   <ItemGroup>
     <PackageReference Include="Serilog" Version="4.0.1" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SilverCraft.CSCore.NativeLibraryResolver\SilverCraft.CSCore.NativeLibraryResolver.csproj"
+                      OutputItemType="Analyzer"
+                      ReferenceOutputAssembly="false"/>
+  </ItemGroup>
 </Project>

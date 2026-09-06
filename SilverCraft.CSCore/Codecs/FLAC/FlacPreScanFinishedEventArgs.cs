@@ -6,7 +6,7 @@
     public class FlacPreScanFinishedEventArgs : EventArgs
     {
         /// <summary>
-        /// Gets the a list of found frames by the scan.
+        /// Gets a list of found frames by the scan.
         /// </summary>
         public IReadOnlyCollection<FlacFrameInformation> Frames { get; private set; }
 

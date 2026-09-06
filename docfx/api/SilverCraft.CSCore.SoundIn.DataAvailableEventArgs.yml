@@ -233,6 +233,7 @@ items:
 references:
 - uid: SilverCraft.CSCore.SoundIn.ISoundIn.DataAvailable
   commentId: E:SilverCraft.CSCore.SoundIn.ISoundIn.DataAvailable
+  parent: SilverCraft.CSCore.SoundIn.ISoundIn
   href: SilverCraft.CSCore.SoundIn.ISoundIn.html#SilverCraft_CSCore_SoundIn_ISoundIn_DataAvailable
   name: DataAvailable
   nameWithType: ISoundIn.DataAvailable
@@ -560,6 +561,13 @@ references:
     name: DataAvailableEventArgs
     href: SilverCraft.CSCore.SoundIn.DataAvailableEventArgs.html
   - name: )
+- uid: SilverCraft.CSCore.SoundIn.ISoundIn
+  commentId: T:SilverCraft.CSCore.SoundIn.ISoundIn
+  parent: SilverCraft.CSCore.SoundIn
+  href: SilverCraft.CSCore.SoundIn.ISoundIn.html
+  name: ISoundIn
+  nameWithType: ISoundIn
+  fullName: SilverCraft.CSCore.SoundIn.ISoundIn
 - uid: System
   commentId: N:System
   isExternal: true

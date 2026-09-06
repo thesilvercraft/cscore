@@ -20,4 +20,10 @@
   <ItemGroup>
     <PackageReference Include="SilverCraft.CSCore" Version="0.1.8" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SilverCraft.CSCore.NativeLibraryResolver\SilverCraft.CSCore.NativeLibraryResolver.csproj"
+                      OutputItemType="Analyzer"
+                      ReferenceOutputAssembly="false"/>
+  </ItemGroup>
+ 
 </Project>

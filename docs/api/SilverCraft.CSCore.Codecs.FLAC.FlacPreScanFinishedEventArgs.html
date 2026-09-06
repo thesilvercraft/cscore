@@ -89,7 +89,7 @@
 
 
   <h1 id="SilverCraft_CSCore_Codecs_FLAC_FlacPreScanFinishedEventArgs" data-uid="SilverCraft.CSCore.Codecs.FLAC.FlacPreScanFinishedEventArgs" class="text-break">
-Class FlacPreScanFinishedEventArgs  <a class="header-action link-secondary" title="View source" href="https://github.com/thesilvercraft/cscore/blob/master/SilverCraft.CSCore/Codecs/FLAC/FlacPreScanFinishedEventArgs.cs/#L10"><i class="bi bi-code-slash"></i></a>
+Class FlacPreScanFinishedEventArgs  <a class="header-action link-secondary" title="View source" href="https://github.com/thesilvercraft/cscore/blob/master/SilverCraft.CSCore/Codecs/FLAC/FlacPreScanFinishedEventArgs.cs/#L6"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -166,9 +166,9 @@ Class FlacPreScanFinishedEventArgs  <a class="header-action link-secondary" titl
 
   <a id="SilverCraft_CSCore_Codecs_FLAC_FlacPreScanFinishedEventArgs__ctor_" data-uid="SilverCraft.CSCore.Codecs.FLAC.FlacPreScanFinishedEventArgs.#ctor*"></a>
 
-  <h3 id="SilverCraft_CSCore_Codecs_FLAC_FlacPreScanFinishedEventArgs__ctor_System_Collections_Generic_List_SilverCraft_CSCore_Codecs_FLAC_FlacFrameInformation__" data-uid="SilverCraft.CSCore.Codecs.FLAC.FlacPreScanFinishedEventArgs.#ctor(System.Collections.Generic.List{SilverCraft.CSCore.Codecs.FLAC.FlacFrameInformation})">
-  FlacPreScanFinishedEventArgs(List&lt;FlacFrameInformation&gt;)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/thesilvercraft/cscore/blob/master/SilverCraft.CSCore/Codecs/FLAC/FlacPreScanFinishedEventArgs.cs/#L21"><i class="bi bi-code-slash"></i></a>
+  <h3 id="SilverCraft_CSCore_Codecs_FLAC_FlacPreScanFinishedEventArgs__ctor_System_Collections_Generic_IReadOnlyCollection_SilverCraft_CSCore_Codecs_FLAC_FlacFrameInformation__" data-uid="SilverCraft.CSCore.Codecs.FLAC.FlacPreScanFinishedEventArgs.#ctor(System.Collections.Generic.IReadOnlyCollection{SilverCraft.CSCore.Codecs.FLAC.FlacFrameInformation})">
+  FlacPreScanFinishedEventArgs(IReadOnlyCollection&lt;FlacFrameInformation&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/thesilvercraft/cscore/blob/master/SilverCraft.CSCore/Codecs/FLAC/FlacPreScanFinishedEventArgs.cs/#L17"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="SilverCraft.CSCore.Codecs.FLAC.FlacPreScanFinishedEventArgs.html">FlacPreScanFinishedEventArgs</a> class.</p>
@@ -176,12 +176,12 @@ Class FlacPreScanFinishedEventArgs  <a class="header-action link-secondary" titl
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public FlacPreScanFinishedEventArgs(List&lt;FlacFrameInformation&gt; frames)</code></pre>
+    <pre><code class="lang-csharp hljs">public FlacPreScanFinishedEventArgs(IReadOnlyCollection&lt;FlacFrameInformation&gt; frames)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
-    <dt><code>frames</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="SilverCraft.CSCore.Codecs.FLAC.FlacFrameInformation.html">FlacFrameInformation</a>&gt;</dt>
+    <dt><code>frames</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlycollection-1">IReadOnlyCollection</a>&lt;<a class="xref" href="SilverCraft.CSCore.Codecs.FLAC.FlacFrameInformation.html">FlacFrameInformation</a>&gt;</dt>
     <dd><p>Found frames.</p>
 </dd>
   </dl>
@@ -205,15 +205,15 @@ Class FlacPreScanFinishedEventArgs  <a class="header-action link-secondary" titl
 
   <h3 id="SilverCraft_CSCore_Codecs_FLAC_FlacPreScanFinishedEventArgs_Frames" data-uid="SilverCraft.CSCore.Codecs.FLAC.FlacPreScanFinishedEventArgs.Frames">
   Frames
-  <a class="header-action link-secondary" title="View source" href="https://github.com/thesilvercraft/cscore/blob/master/SilverCraft.CSCore/Codecs/FLAC/FlacPreScanFinishedEventArgs.cs/#L15"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/thesilvercraft/cscore/blob/master/SilverCraft.CSCore/Codecs/FLAC/FlacPreScanFinishedEventArgs.cs/#L11"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>Gets the a list of found frames by the scan.</p>
+  <div class="markdown level1 summary"><p>Gets a list of found frames by the scan.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public ReadOnlyCollection&lt;FlacFrameInformation&gt; Frames { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public IReadOnlyCollection&lt;FlacFrameInformation&gt; Frames { get; }</code></pre>
   </div>
 
 
@@ -222,7 +222,7 @@ Class FlacPreScanFinishedEventArgs  <a class="header-action link-secondary" titl
 
   <h4 class="section">Property Value</h4>
   <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.objectmodel.readonlycollection-1">ReadOnlyCollection</a>&lt;<a class="xref" href="SilverCraft.CSCore.Codecs.FLAC.FlacFrameInformation.html">FlacFrameInformation</a>&gt;</dt>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlycollection-1">IReadOnlyCollection</a>&lt;<a class="xref" href="SilverCraft.CSCore.Codecs.FLAC.FlacFrameInformation.html">FlacFrameInformation</a>&gt;</dt>
     <dd></dd>
   </dl>
 
@@ -237,7 +237,7 @@ Class FlacPreScanFinishedEventArgs  <a class="header-action link-secondary" titl
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/thesilvercraft/cscore/blob/master/SilverCraft.CSCore/Codecs/FLAC/FlacPreScanFinishedEventArgs.cs/#L10" class="edit-link">Edit this page</a>
+          <a href="https://github.com/thesilvercraft/cscore/blob/master/SilverCraft.CSCore/Codecs/FLAC/FlacPreScanFinishedEventArgs.cs/#L6" class="edit-link">Edit this page</a>
         </div>
 
 

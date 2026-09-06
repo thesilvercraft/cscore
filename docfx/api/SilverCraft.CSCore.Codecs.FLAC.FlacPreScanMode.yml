@@ -54,7 +54,7 @@ items:
   assemblies:
   - SilverCraft.CSCore
   namespace: SilverCraft.CSCore.Codecs.FLAC
-  summary: Don't scan the flac stream. This will cause a stream to be not seekable.
+  summary: Don't scan the flac stream. This will cause a stream to be not seekable if it has no valid SeekTable.
   example: []
   syntax:
     content: None = 0
@@ -82,7 +82,7 @@ items:
   assemblies:
   - SilverCraft.CSCore
   namespace: SilverCraft.CSCore.Codecs.FLAC
-  summary: Scan synchronously.
+  summary: Scan synchronously. Scanning is skipped if a valid SeekTable is found.
   example: []
   syntax:
     content: Sync = 1
@@ -110,7 +110,7 @@ items:
   assemblies:
   - SilverCraft.CSCore
   namespace: SilverCraft.CSCore.Codecs.FLAC
-  summary: Scan async.
+  summary: Scan async. Scanning is skipped if a valid SeekTable is found, .
   remarks: >-
     Don't use the stream while scan is running because the stream position
 

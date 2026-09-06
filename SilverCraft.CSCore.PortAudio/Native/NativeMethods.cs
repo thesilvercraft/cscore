@@ -2,6 +2,7 @@ using System.Reflection;
 using System.Runtime.InteropServices;
 
 namespace SilverCraft.CSCore.PortAudio.Native;
+
 internal sealed class NativeTypeNameAttribute : Attribute
 {
     public NativeTypeNameAttribute(string name)
@@ -11,22 +12,27 @@ internal sealed class NativeTypeNameAttribute : Attribute
 
     public string Name { get; }
 }
+
 public struct PaStream
 {
-
 }
+
 public struct PaStreamCallbackFlags
 {
-
 }
+[Generators.DllImportResolverAttribute("PortAudio", NativeMethods.dllName, WindowsDlls =  ["portaudio.dll", "portaudio_x64.dll"],
+    LinuxDlls= ["libportaudio.so.2", "libportaudio.so"],
+    MacOsDlls= ["libportaudio.dylib", "libportaudio.2.dylib"],
+    LinuxInstructions= "Please install PortAudio via your package manager:\nUbuntu/Debian: sudo apt install libportaudio2\nArch Linux:    sudo pacman -Sy portaudio",
+    GenericInstructionsStart ="Download portaudio-19.7.0-{0}-{1}.7z from https://github.com/musescore/muse_deps/releases/tag/deps-20260817-100754",
+    GenericInstructionsLinuxEnd = "Extract 'libportaudio.so' (or .dylib) from 'lib' into {0}.",
+    GenericInstructionsWindowsEnd = "Extract 'portaudio_x64.dll' (or 'portaudio.dll') from 'bin' into {0}.") ]
 public static unsafe partial class NativeMethods
 {
-    public const string dllName="libportaudio.so.2";
-    public static IntPtr DllImportResolver(string libraryName, Assembly assembly, DllImportSearchPath? searchPath)
-    {
-        if (libraryName != dllName) return IntPtr.Zero;
-        return OperatingSystem.IsWindows() ? NativeLibrary.Load("portaudio.dll", assembly, searchPath) : IntPtr.Zero;
-    }
+    public const string dllName = "libportaudio.so.2";
+
+    
+
     [DllImport(dllName, CallingConvention = CallingConvention.Cdecl, ExactSpelling = true)]
     public static extern int Pa_GetVersion();
 
@@ -68,7 +74,8 @@ public static unsafe partial class NativeMethods
 
     [DllImport(dllName, CallingConvention = CallingConvention.Cdecl, ExactSpelling = true)]
     [return: NativeTypeName("PaDeviceIndex")]
-    public static extern int Pa_HostApiDeviceIndexToDeviceIndex([NativeTypeName("PaHostApiIndex")] int hostApi, int hostApiDeviceIndex);
+    public static extern int Pa_HostApiDeviceIndexToDeviceIndex([NativeTypeName("PaHostApiIndex")] int hostApi,
+        int hostApiDeviceIndex);
 
     [DllImport(dllName, CallingConvention = CallingConvention.Cdecl, ExactSpelling = true)]
     [return: NativeTypeName("const PaHostErrorInfo *")]
@@ -92,15 +99,26 @@ public static unsafe partial class NativeMethods
 
     [DllImport(dllName, CallingConvention = CallingConvention.Cdecl, ExactSpelling = true)]
     [return: NativeTypeName("PaError")]
-    public static extern int Pa_IsFormatSupported([NativeTypeName("const PaStreamParameters *")] PaStreamParameters* inputParameters, [NativeTypeName("const PaStreamParameters *")] PaStreamParameters* outputParameters, double sampleRate);
+    public static extern int Pa_IsFormatSupported(
+        [NativeTypeName("const PaStreamParameters *")] PaStreamParameters* inputParameters,
+        [NativeTypeName("const PaStreamParameters *")] PaStreamParameters* outputParameters, double sampleRate);
 
     [DllImport(dllName, CallingConvention = CallingConvention.Cdecl, ExactSpelling = true)]
     [return: NativeTypeName("PaError")]
-    public static extern int Pa_OpenStream([NativeTypeName("PaStream **")] PaStream** stream, [NativeTypeName("const PaStreamParameters *")] PaStreamParameters* inputParameters, [NativeTypeName("const PaStreamParameters *")] PaStreamParameters* outputParameters, double sampleRate, [NativeTypeName("unsigned long")] nuint framesPerBuffer, [NativeTypeName("PaStreamFlags")] nuint streamFlags, [NativeTypeName("PaStreamCallback *")] delegate* unmanaged[Cdecl]<void*, void*, ulong, PaStreamCallbackTimeInfo*, nuint, void*, int> streamCallback, void* userData);
+    public static extern int Pa_OpenStream([NativeTypeName("PaStream **")] PaStream** stream,
+        [NativeTypeName("const PaStreamParameters *")] PaStreamParameters* inputParameters,
+        [NativeTypeName("const PaStreamParameters *")] PaStreamParameters* outputParameters, double sampleRate,
+        [NativeTypeName("unsigned long")] nuint framesPerBuffer, [NativeTypeName("PaStreamFlags")] nuint streamFlags,
+        [NativeTypeName("PaStreamCallback *")]
+        delegate* unmanaged[Cdecl]<void*, void*, ulong, PaStreamCallbackTimeInfo*, nuint, void*, int> streamCallback,
+        void* userData);
 
     [DllImport(dllName, CallingConvention = CallingConvention.Cdecl, ExactSpelling = true)]
     [return: NativeTypeName("PaError")]
-    public static extern int Pa_OpenDefaultStream([NativeTypeName("PaStream **")] PaStream** stream, int numInputChannels, int numOutputChannels, [NativeTypeName("PaSampleFormat")] nuint sampleFormat, double sampleRate, [NativeTypeName("unsigned long")] nuint framesPerBuffer, [NativeTypeName("PaStreamCallback *")] StreamCallBack streamCallback, IntPtr userData);
+    public static extern int Pa_OpenDefaultStream([NativeTypeName("PaStream **")] PaStream** stream,
+        int numInputChannels, int numOutputChannels, [NativeTypeName("PaSampleFormat")] nuint sampleFormat,
+        double sampleRate, [NativeTypeName("unsigned long")] nuint framesPerBuffer,
+        [NativeTypeName("PaStreamCallback *")] StreamCallBack streamCallback, IntPtr userData);
 
     [DllImport(dllName, CallingConvention = CallingConvention.Cdecl, ExactSpelling = true)]
     [return: NativeTypeName("PaError")]
@@ -108,7 +126,8 @@ public static unsafe partial class NativeMethods
 
     [DllImport(dllName, CallingConvention = CallingConvention.Cdecl, ExactSpelling = true)]
     [return: NativeTypeName("PaError")]
-    public static extern int Pa_SetStreamFinishedCallback([NativeTypeName("PaStream *")] PaStream* stream, [NativeTypeName("PaStreamFinishedCallback *")] PaStreamFinishedCallback streamFinishedCallback);
+    public static extern int Pa_SetStreamFinishedCallback([NativeTypeName("PaStream *")] PaStream* stream,
+        [NativeTypeName("PaStreamFinishedCallback *")] PaStreamFinishedCallback streamFinishedCallback);
 
     [DllImport(dllName, CallingConvention = CallingConvention.Cdecl, ExactSpelling = true)]
     [return: NativeTypeName("PaError")]
@@ -143,11 +162,13 @@ public static unsafe partial class NativeMethods
 
     [DllImport(dllName, CallingConvention = CallingConvention.Cdecl, ExactSpelling = true)]
     [return: NativeTypeName("PaError")]
-    public static extern int Pa_ReadStream([NativeTypeName("PaStream *")] void* stream, void* buffer, [NativeTypeName("unsigned long")] nuint frames);
+    public static extern int Pa_ReadStream([NativeTypeName("PaStream *")] void* stream, void* buffer,
+        [NativeTypeName("unsigned long")] nuint frames);
 
     [DllImport(dllName, CallingConvention = CallingConvention.Cdecl, ExactSpelling = true)]
     [return: NativeTypeName("PaError")]
-    public static extern int Pa_WriteStream([NativeTypeName("PaStream *")] void* stream, [NativeTypeName("const void *")] void* buffer, [NativeTypeName("unsigned long")] nuint frames);
+    public static extern int Pa_WriteStream([NativeTypeName("PaStream *")] void* stream,
+        [NativeTypeName("const void *")] void* buffer, [NativeTypeName("unsigned long")] nuint frames);
 
     [DllImport(dllName, CallingConvention = CallingConvention.Cdecl, ExactSpelling = true)]
     [return: NativeTypeName("long")]

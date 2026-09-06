@@ -22,6 +22,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Files", "Solution 
 		SilverCraft.CSCore.targets = SilverCraft.CSCore.targets
 	EndProjectSection
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SilverCraft.CSCore.NativeLibraryResolver", "SilverCraft.CSCore.NativeLibraryResolver\SilverCraft.CSCore.NativeLibraryResolver.csproj", "{ED725510-585E-4F32-B218-D57F00EFDB3E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -114,6 +116,18 @@ Global
 		{F0F716F9-9286-4974-BBD7-C08E407F51A5}.Release|Mixed Platforms.Build.0 = Release|Any CPU
 		{F0F716F9-9286-4974-BBD7-C08E407F51A5}.Release|Win32.ActiveCfg = Release|Any CPU
 		{F0F716F9-9286-4974-BBD7-C08E407F51A5}.Release|Win32.Build.0 = Release|Any CPU
+		{ED725510-585E-4F32-B218-D57F00EFDB3E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ED725510-585E-4F32-B218-D57F00EFDB3E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ED725510-585E-4F32-B218-D57F00EFDB3E}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{ED725510-585E-4F32-B218-D57F00EFDB3E}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{ED725510-585E-4F32-B218-D57F00EFDB3E}.Debug|Win32.ActiveCfg = Debug|Any CPU
+		{ED725510-585E-4F32-B218-D57F00EFDB3E}.Debug|Win32.Build.0 = Debug|Any CPU
+		{ED725510-585E-4F32-B218-D57F00EFDB3E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ED725510-585E-4F32-B218-D57F00EFDB3E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ED725510-585E-4F32-B218-D57F00EFDB3E}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{ED725510-585E-4F32-B218-D57F00EFDB3E}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{ED725510-585E-4F32-B218-D57F00EFDB3E}.Release|Win32.ActiveCfg = Release|Any CPU
+		{ED725510-585E-4F32-B218-D57F00EFDB3E}.Release|Win32.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
