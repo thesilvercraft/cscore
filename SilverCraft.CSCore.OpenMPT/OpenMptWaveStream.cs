@@ -89,15 +89,12 @@ public unsafe class OpenMptWaveStream : ISampleSource, ISelector, ILoop
 
     public bool CanSeek => true;
     public WaveFormat WaveFormat { get; set; }
-    public unsafe long Position
+    public  long Position
     {
         get => (long)(NativeMethods.openmpt_module_get_position_seconds(infile) * WaveFormat.BytesPerSecond);
         set
         {
-            unsafe
-            {
-                NativeMethods.openmpt_module_set_position_seconds(infile, value / WaveFormat.BytesPerSecond);
-            }
+            NativeMethods.openmpt_module_set_position_seconds(infile, value / (double)WaveFormat.BytesPerSecond);
         }
     }
 

@@ -1,19 +1,16 @@
-﻿using System;
-using System.Runtime.InteropServices;
-
+﻿
 namespace SilverCraft.CSCore.Utils
 {
     /// <summary>
     /// This class is based on the CUETools.NET BitReader (see http://sourceforge.net/p/cuetoolsnet/code/ci/default/tree/CUETools.Codecs/BitReader.cs, now located at https://github.com/gchudov/cuetools.net/blob/master/CUETools.Codecs/BitReader.cs)
     /// The author "Grigory Chudov" explicitly gave the permission to use the source as part of the cscore source code which got licensed under the ms-pl.
     /// </summary>
-    internal unsafe class BitReader : IDisposable
+    internal  class BitReader 
     {
-        private readonly byte* _storedBuffer;
         private int _bitoffset;
-        private byte* _buffer;
+        private int _bufferOffset;
+        private byte[] _buffer;
         private uint _cache;
-        private GCHandle? _hBuffer;
         private int _position;
 
         public BitReader(byte[] buffer, int offset)
@@ -21,56 +18,27 @@ namespace SilverCraft.CSCore.Utils
             if (buffer is not { Length: > 0 })
                 throw new ArgumentException("buffer is null or has no elements", nameof(buffer));
             ArgumentOutOfRangeException.ThrowIfNegative(offset);
-
-            _hBuffer = GCHandle.Alloc(buffer, GCHandleType.Pinned);
-            if (_hBuffer is {} hb)
-            {
-                _buffer = _storedBuffer = (byte*) hb.AddrOfPinnedObject().ToPointer() + offset;
-            }
-
-            _cache = PeekCache();
-        }
-
-        public BitReader(byte* buffer, int offset)
-        {
-            if (new IntPtr(buffer) == IntPtr.Zero)
-                throw new ArgumentNullException(nameof(buffer));
-            ArgumentOutOfRangeException.ThrowIfNegative(offset);
-
-            var byteoffset = offset / 8;
-
-            _buffer = _storedBuffer = buffer + byteoffset;
-            _bitoffset = offset % 8;
-
+            _buffer = buffer;
             _cache = PeekCache();
         }
 
         protected internal uint Cache => _cache;
 
-        protected internal int CacheSigned => (int) Cache;
-
-        public byte* Buffer => _storedBuffer;
-
-        public IntPtr BufferPtr => new(Buffer);
+        public byte[] Buffer => _buffer;
 
         public int Position => _position;
 
-        public void Dispose()
-        {
-            Dispose(true);
-            GC.SuppressFinalize(this);
-        }
-
+       
         private uint PeekCache()
         {
             unchecked
             {
-                var ptr = _buffer;
-                uint result = *(ptr++);
-                result = (result << 8) + *(ptr++);
-                result = (result << 8) + *(ptr++);
-                result = (result << 8) + *(ptr++);
+                uint b0 = _bufferOffset < _buffer.Length ? _buffer[_bufferOffset] : (uint)0;
+                uint b1 = _bufferOffset + 1 < _buffer.Length ? _buffer[_bufferOffset + 1] : (uint)0;
+                uint b2 = _bufferOffset + 2 < _buffer.Length ? _buffer[_bufferOffset + 2] : (uint)0;
+                uint b3 = _bufferOffset + 3 < _buffer.Length ? _buffer[_bufferOffset + 3] : (uint)0;
 
+                uint result = (b0 << 24) | (b1 << 16) | (b2 << 8) | b3;
                 return result << _bitoffset;
             }
         }
@@ -78,7 +46,6 @@ namespace SilverCraft.CSCore.Utils
         public void SeekBytes(int bytes)
         {
             ArgumentOutOfRangeException.ThrowIfNegativeOrZero(bytes);
-
             SeekBits(bytes * 8);
         }
 
@@ -87,12 +54,11 @@ namespace SilverCraft.CSCore.Utils
             ArgumentOutOfRangeException.ThrowIfNegativeOrZero(bits);
 
             var tmp = _bitoffset + bits;
-            _buffer += tmp >> 3; //skip bytes
-            _bitoffset = tmp & 7; //bitoverflow -> max 7 bit
-
-            _cache = PeekCache();
+            _bufferOffset += tmp >> 3;  //skip bytes
+            _bitoffset = tmp & 7;     ; //bitoverflow -> max 7 bit
 
             _position += tmp >> 3;
+            _cache = PeekCache();
         }
 
         public uint ReadBits(int bits)
@@ -203,14 +169,5 @@ namespace SilverCraft.CSCore.Utils
                 SeekBits(8 - _bitoffset);
         }
 
-        protected virtual void Dispose(bool disposing)
-        {
-            if (_hBuffer is { IsAllocated: true } hb) hb.Free();
-        }
-
-        ~BitReader()
-        {
-            Dispose(false);
-        }
     }
 }

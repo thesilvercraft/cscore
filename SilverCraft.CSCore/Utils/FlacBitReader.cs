@@ -25,10 +25,6 @@ namespace SilverCraft.CSCore.Codecs.FLAC
         {
         }
 
-        public unsafe FlacBitReader(byte* buffer, int offset)
-            : base(buffer, offset)
-        {
-        }
 
         public uint ReadUnary()
         {

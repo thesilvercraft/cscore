@@ -404,13 +404,29 @@ namespace SilverCraft.CSCore
             if (soundOut.PlaybackState == PlaybackState.Stopped)
                 return true;
 
-            using var waitHandle = new AutoResetEvent(false);
-            EventHandler<PlaybackStoppedEventArgs> handler = (s, e) => waitHandle.Set();
-            soundOut.Stopped += handler;
-            var result = waitHandle.WaitOne(millisecondsTimeout);
-            // need to unsubscrive because waitHandle will be disposed
-            soundOut.Stopped -= handler;
-            return result;
+            using var waitHandle = new ManualResetEventSlim(false);
+    
+            void OnStopped(object? s, PlaybackStoppedEventArgs e)
+            {
+                try
+                {
+                    waitHandle.Set();
+                }
+                catch (ObjectDisposedException)
+                {
+                    // Catches the edge case where waitHandle is disposed during/after timeout
+                }
+            }
+
+            soundOut.Stopped += OnStopped;
+            try
+            {
+                return waitHandle.Wait(millisecondsTimeout);
+            }
+            finally
+            {
+                soundOut.Stopped -= OnStopped;
+            }
         }
 
         /// <summary>

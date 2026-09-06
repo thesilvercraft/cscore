@@ -36,10 +36,12 @@ namespace SilverCraft.CSCore.Codecs.FLAC
                 totalLength += frame.Header.BlockSize * frame.Header.BitsPerSample * frame.Header.Channels;
                 totalsamples += frame.Header.BlockSize;
             }
+
             TotalLength = totalLength;
             TotalSamples = totalsamples;
-
-            Debug.WriteLineIf(TotalSamples == streamInfo.TotalSamples, "Flac prescan successful. Calculated total_samples value matching the streaminfo-metadata.");
+            Debug.Assert(TotalSamples == streamInfo.TotalSamples);
+            Debug.WriteLineIf(TotalSamples == streamInfo.TotalSamples,
+                "Flac prescan successful. Calculated total_samples value matching the streaminfo-metadata.");
         }
 
         private void StartScan(FlacMetadataStreamInfo streamInfo, FlacPreScanMode mode)
@@ -74,7 +76,8 @@ namespace SilverCraft.CSCore.Codecs.FLAC
 
 #if FLAC_DEBUG
             watch.Stop();
-            Debug.WriteLine("FlacPreScan finished: {0} Bytes processed in {1} ms.", _stream.Length, watch.ElapsedMilliseconds);
+            Debug.WriteLine("FlacPreScan finished: {0} Bytes processed in {1} ms. {2} frames", _stream.Length,
+                watch.ElapsedMilliseconds, result.Count);
 #endif
             RaiseScanFinished(result);
             return result;
@@ -85,26 +88,17 @@ namespace SilverCraft.CSCore.Codecs.FLAC
             ScanFinished?.Invoke(this, new FlacPreScanFinishedEventArgs(frames));
         }
 
-        private unsafe List<FlacFrameInformation> ScanThisShit(FlacMetadataStreamInfo streamInfo)
+        private List<FlacFrameInformation> ScanThisShit(FlacMetadataStreamInfo streamInfo)
         {
             var stream = _stream;
-
-            //if (!(stream is BufferedStream))
-            //    stream = new BufferedStream(stream);
-
             var buffer = new byte[BufferSize];
-            stream.Position = 4; //fLaC
-
-            //skip the metadata
+    
+            stream.Position = 4; // Skip 'fLaC' marker
             FlacMetadata.SkipMetadata(stream);
 
             var frames = new List<FlacFrameInformation>();
-            var frameInfo = new FlacFrameInformation
-            {
-                IsFirstFrame = true
-            };
-
             FlacFrameHeader? baseHeader = null;
+            long currentSampleOffset = 0;
 
             while (true)
             {
@@ -112,43 +106,35 @@ namespace SilverCraft.CSCore.Codecs.FLAC
                 if (read <= FlacConstant.FrameHeaderSize)
                     break;
 
-                fixed (byte* bufferPtr = buffer)
-                {
-                    var ptr = bufferPtr;
-                    //for (int i = 0; i < read - FlacConstant.FrameHeaderSize; i++)
-                    while ((bufferPtr + read - FlacConstant.FrameHeaderSize) > ptr)
-                    {
-                        if (*ptr++ == 0xFF && (*ptr & 0xF8) == 0xF8) //check sync
-                        {
-                            var ptrSafe = ptr;
-                            ptr--;
-                            if (IsFrame(ref ptr, streamInfo, out FlacFrameHeader tmp))
-                            {
-                                var header = tmp;
-                                if (frameInfo.IsFirstFrame)
-                                {
-                                    baseHeader = header;
-                                    frameInfo.IsFirstFrame = false;
-                                }
+                var offset = 0;
+                var maxOffset = read - FlacConstant.FrameHeaderSize;
 
-                                if (baseHeader != null && baseHeader.IsFormatEqualTo(header))
-                                {
-                                    frameInfo.StreamOffset = stream.Position - read + ((ptrSafe - 1) - bufferPtr);
-                                    frameInfo.Header = header;
-                                    frames.Add(frameInfo);
-                                    frameInfo.SampleOffset += header.BlockSize;
-                                }
-                                else
-                                {
-                                    ptr = ptrSafe;
-                                }
-                            }
-                            else
+                while (offset < maxOffset)
+                {
+                    // Sync code check: 11111111 111110xx
+                    if (buffer[offset] == 0xFF && (buffer[offset + 1] & 0xF8) == 0xF8)
+                    {
+                        if (IsFrame(buffer, offset, streamInfo, out FlacFrameHeader header))
+                        {
+                            baseHeader ??= header;
+
+                            if (baseHeader.IsFormatEqualTo(header))
                             {
-                                ptr = ptrSafe;
+                                var frameInfo = new FlacFrameInformation
+                                {
+                                    IsFirstFrame = (frames.Count == 0),
+                                    StreamOffset = stream.Position - read + offset,
+                                    SampleOffset = currentSampleOffset,
+                                    Header = header
+                                };
+
+                                frames.Add(frameInfo);
+                                currentSampleOffset += header.BlockSize;
                             }
                         }
                     }
+
+                    offset++;
                 }
 
                 stream.Position -= FlacConstant.FrameHeaderSize;
@@ -157,9 +143,9 @@ namespace SilverCraft.CSCore.Codecs.FLAC
             return frames;
         }
 
-        private unsafe bool IsFrame(ref byte* buffer, FlacMetadataStreamInfo streamInfo, out FlacFrameHeader header)
+        private bool IsFrame(byte[] buffer, int offset, FlacMetadataStreamInfo streamInfo, out FlacFrameHeader header)
         {
-            header = new FlacFrameHeader(ref buffer, streamInfo, true);
+            header = new FlacFrameHeader(buffer, offset, streamInfo, true);
             return !header.HasError;
         }
     }

@@ -1,4 +1,4 @@
-﻿using System.IO;
+﻿using System.Buffers.Binary;
 
 // ReSharper disable once CheckNamespace
 namespace SilverCraft.CSCore.Codecs.FLAC
@@ -39,12 +39,18 @@ namespace SilverCraft.CSCore.Codecs.FLAC
             var entryCount = Length / 18;
             EntryCount = entryCount;
             _seekPoints = new FlacSeekPoint[entryCount];
-            var reader = new BinaryReader(stream);
+            Span<byte> buffer = stackalloc byte[18];
             try
             {
                 for (var i = 0; i < entryCount; i++)
                 {
-                    _seekPoints[i] = new FlacSeekPoint(reader.ReadInt64(), reader.ReadInt64(), reader.ReadInt16());
+                    stream.ReadExactly(buffer);
+
+                    long sampleNumber = BinaryPrimitives.ReadInt64BigEndian(buffer[..8]);
+                    long offset       = BinaryPrimitives.ReadInt64BigEndian(buffer[8..16]);
+                    short frameSize   = BinaryPrimitives.ReadInt16BigEndian(buffer[16..18]);
+
+                    _seekPoints[i] = new FlacSeekPoint(sampleNumber, offset, frameSize);
                 }
             }
             catch (IOException e)

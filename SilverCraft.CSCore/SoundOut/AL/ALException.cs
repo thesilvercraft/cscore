@@ -91,6 +91,7 @@ namespace SilverCraft.CSCore.SoundOut.AL
         /// Initializes a new instance of the <see cref="ALException"/> class.
         /// </summary>
         /// <param name="message">The message that describes the error.</param>
+        /// <param name="errorCode">The openAL error code</param>
         public ALException(string message, ALErrorCode errorCode)
             : base(message)
         {

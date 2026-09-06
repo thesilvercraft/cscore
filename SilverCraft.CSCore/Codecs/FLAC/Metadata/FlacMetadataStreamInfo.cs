@@ -1,6 +1,4 @@
-﻿using System;
-using System.IO;
-using System.Text;
+﻿using System.Buffers.Binary;
 
 // ReSharper disable once CheckNamespace
 namespace SilverCraft.CSCore.Codecs.FLAC
@@ -14,38 +12,35 @@ namespace SilverCraft.CSCore.Codecs.FLAC
         /// Initializes the properties of the <see cref="FlacMetadata"/> by reading them from the <paramref name="stream"/>.
         /// </summary>
         /// <param name="stream">The stream which contains the metadata.</param>
-        protected override unsafe void InitializeByStream(Stream stream)
+        protected override void InitializeByStream(Stream stream)
         {
+            ArgumentNullException.ThrowIfNull(stream);
             //http://flac.sourceforge.net/format.html#metadata_block_streaminfo
-            var reader = new BinaryReader(stream, Encoding.ASCII);
+            //https://www.rfc-editor.org/rfc/rfc9639.html#name-streaminfo
+            var initialBuffer = new byte[4];
+            stream.ReadExactly(initialBuffer);
             try
             {
-                MinBlockSize = reader.ReadInt16();
-                MaxBlockSize = reader.ReadInt16();
+                MinBlockSize = BinaryPrimitives.ReadInt16BigEndian(initialBuffer);
+                MaxBlockSize = BinaryPrimitives.ReadInt16BigEndian(initialBuffer.AsSpan()[2..]);
             }
             catch (IOException e)
             {
                 throw new FlacException(e, FlacLayer.Metadata);
             }
             const int bytesToRead = (240 / 8) - 16;
-            var buffer = reader.ReadBytes(bytesToRead);
-            if (buffer.Length != bytesToRead)
-            {
-                throw new FlacException(new EndOfStreamException("Could not read StreamInfo-content"),
-                    FlacLayer.Metadata);
-            }
-
-            fixed (byte* b = buffer)
-            {
-                var bitreader = new FlacBitReader(b, 0);
-                MinFrameSize = (int)bitreader.ReadBits(24);
-                MaxFrameSize = (int)bitreader.ReadBits(24);
-                SampleRate = (int)bitreader.ReadBits(20);
-                Channels = 1 + (int)bitreader.ReadBits(3);
-                BitsPerSample = 1 + (int)bitreader.ReadBits(5);
-                TotalSamples = (long)bitreader.ReadBits64(36);
-                Md5 = new string(reader.ReadChars(16));
-            }
+            var buffer = new byte[bytesToRead];
+            stream.ReadExactly(buffer);
+            var bitreader = new FlacBitReader(buffer, 0);
+            MinFrameSize = (int)bitreader.ReadBits(24);
+            MaxFrameSize = (int)bitreader.ReadBits(24);
+            SampleRate = (int)bitreader.ReadBits(20);
+            Channels = 1 + (int)bitreader.ReadBits(3);
+            BitsPerSample = 1 + (int)bitreader.ReadBits(5);
+            TotalSamples = (long)bitreader.ReadBits64(36);
+            var md5Bytes = new byte[16];
+            stream.ReadExactly(md5Bytes);
+            Md5 = Convert.ToHexString(md5Bytes);
         }
 
         /// <summary>
@@ -54,72 +49,46 @@ namespace SilverCraft.CSCore.Codecs.FLAC
         public override FlacMetaDataType MetaDataType => FlacMetaDataType.StreamInfo;
 
         /// <summary>
-        /// Gets the minimum size of the block in samples.
+        ///  The minimum block size (in samples) used in the stream, excluding the last block.
         /// </summary>
-        /// <value>
-        /// The minimum size of the block in samples.
-        /// </value>
         public short MinBlockSize { get; private set; }
 
         /// <summary>
-        /// Gets the maximum size of the block in samples.
+        /// The maximum block size (in samples) used in the stream.
         /// </summary>
-        /// <value>
-        /// The maximum size of the block in samples.
-        /// </value>
         public short MaxBlockSize { get; private set; }
-
         /// <summary>
-        /// Gets the maximum size of the frame in bytes.
+        ///  The minimum frame size (in bytes) used in the stream. A value of 0 signifies that the value is not known.
         /// </summary>
-        /// <value>
-        /// The maximum size of the frame in bytes.
-        /// </value>
-        public int MaxFrameSize { get; private set; }
-
-        /// <summary>
-        /// Gets the minimum size of the frame in bytes.
-        /// </summary>
-        /// <value>
-        /// The minimum size of the frame in bytes.
-        /// </value>
         public int MinFrameSize { get; private set; }
-
         /// <summary>
-        /// Gets the sample rate in Hz.
+        /// The maximum frame size (in bytes) used in the stream. A value of 0 signifies that the value is not known.
         /// </summary>
-        /// <value>
-        /// The sample rate.
-        /// </value>
+        public int MaxFrameSize { get; private set; }
+  
+        /// <summary>
+        /// Sample rate in Hz.
+        /// </summary>
         public int SampleRate { get; private set; }
 
         /// <summary>
-        /// Gets the number of channels.
+        /// Number of channels. FLAC supports from 1 to 8 channels.
         /// </summary>
-        /// <value>
-        /// The number of channels.
-        /// </value>
         public int Channels { get; private set; }
 
         /// <summary>
-        /// Gets the number of bits per sample.
+        /// Bits per sample. FLAC supports from 4 to 32 bits per sample.
         /// </summary>
-        /// <value>
-        /// The number of bits per sample.
-        /// </value>
         public int BitsPerSample { get; private set; }
 
         /// <summary>
-        /// Gets the total number of samples inside of the stream.
+        ///  Total number of interchannel samples in the stream. A value of 0 here means the number of total samples is unknown.
         /// </summary>
         public long TotalSamples { get; private set; }
 
         /// <summary>
-        /// Gets MD5 signature of the unencoded audio data.
+        ///  MD5 checksum of the unencoded audio data as HEX string. A value of <code>"0000000000000000000000000000"</code> signifies that the value is not known.
         /// </summary>
-        /// <value>
-        /// The MD5 signature of the unencoded audio data.
-        /// </value>
         public string Md5 { get; private set; }
     }
 }

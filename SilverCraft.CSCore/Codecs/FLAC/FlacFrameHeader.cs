@@ -118,12 +118,15 @@ namespace SilverCraft.CSCore.Codecs.FLAC
         {
             ArgumentNullException.ThrowIfNull(stream);
             if (stream.CanRead == false) throw new ArgumentException("stream is not readable");
+            if (!stream.CanSeek)
+                throw new ArgumentException("stream must be readable and seekable", nameof(stream));
+
             //streamInfo can be null
 
             DoCrc = doCrc;
             StreamPosition = stream.Position;
             _logger = LogLocation.GetLogger(typeof(FlacFrameHeader));
-            HasError = !ParseHeader(stream, streamInfo);
+            HasError = !ParseHeader(stream,0, streamInfo);
         }
 
         /// <summary>
@@ -132,55 +135,67 @@ namespace SilverCraft.CSCore.Codecs.FLAC
         /// <param name="buffer">The raw byte-data which contains the <see cref="FlacFrameHeader"/>.</param>
         /// <param name="streamInfo">The stream-info-metadata-block of the flac stream which provides some basic information about the flac framestream. Can be set to null.</param>
         /// <param name="doCrc">A value which indicates whether the crc8 checksum of the <see cref="FlacFrameHeader"/> should be calculated.</param>
-        public unsafe FlacFrameHeader(ref byte* buffer, FlacMetadataStreamInfo streamInfo, bool doCrc)
+        public FlacFrameHeader(
+            byte[] buffer,
+            int offset,
+            FlacMetadataStreamInfo streamInfo,
+            bool doCrc)
         {
             DoCrc = doCrc;
             StreamPosition = -1;
             _logger = LogLocation.GetLogger(typeof(FlacFrameHeader));
 
-            HasError = !ParseHeader(ref buffer, streamInfo);
+            HasError = !ParseHeader(buffer, offset, streamInfo, out var _);
         }
 
-
-        private unsafe bool ParseHeader(Stream stream, FlacMetadataStreamInfo streamInfo)
+        private bool ParseHeader(Stream stream, int offset, FlacMetadataStreamInfo? streamInfo)
         {
-
             var headerBuffer = new byte[FlacConstant.FrameHeaderSize];
-            if (stream.Read(headerBuffer, 0, headerBuffer.Length) == headerBuffer.Length)
-            {
-                fixed (byte* ptrBuffer = headerBuffer)
-                {
-                    var ptrSave = ptrBuffer;
-                    var __ptrBuffer = ptrBuffer;
-                    var result = ParseHeader(ref __ptrBuffer, streamInfo);
-                    stream.Position -= (headerBuffer.Length - (__ptrBuffer - ptrSave)); //todo
 
-                    return result;
-                }
+            try
+            {
+                stream.ReadExactly(headerBuffer);
+            }
+            catch (EndOfStreamException)
+            {
+                _logger?.Error("Not able to read Flac header - EOF?");
+                return false;
             }
 
-            _logger?.Error("Not able to read Flac header - EOF?");
-            return false;
+            var result = ParseHeader(headerBuffer,offset, streamInfo, out var bytesConsumed);
+
+            stream.Position -= headerBuffer.Length - bytesConsumed;
+
+            return result;
         }
+
        //https://xiph.org/flac/format.html#FRAME_HEADER
-        private unsafe bool ParseHeader(ref byte* headerBuffer, FlacMetadataStreamInfo streamInfo)
+        private  bool ParseHeader( byte[] headerBuffer, int offset,
+            FlacMetadataStreamInfo? streamInfo,
+            out int bytesConsumed)
         {
             int val;
-            if (headerBuffer[0] == 0xFF && headerBuffer[1] >> 1 == 0x7C) //sync bits
+            bytesConsumed = 0;
+            if (offset < 0 || offset >= headerBuffer.Length)
+                return false;
+
+            if (headerBuffer.Length - offset < 4)
+                return false;
+            if (headerBuffer[offset ] == 0xFF && headerBuffer[offset +1] >> 1 == 0x7C) //sync bits
             {
-                if ((headerBuffer[1] & 0x02) != 0)
+                if ((headerBuffer[offset +1] & 0x02) != 0)
                 {
                      _logger?.Debug("Invalid FlacFrame. Reservedbit_0 is 1");
                     return false;
                 }
 
-                var __headerbufferPtr = headerBuffer;
-                var reader = new FlacBitReader(__headerbufferPtr, 0);
+                var reader = new FlacBitReader(
+                    headerBuffer, offset);
 
                 #region blocksize
 
                 //blocksize
-                val = headerBuffer[2] >> 4;
+                val = headerBuffer[offset +2] >> 4;
                 var blocksize = -1;
 
                 switch (val)
@@ -209,7 +224,7 @@ namespace SilverCraft.CSCore.Codecs.FLAC
                 #region samplerate
 
                 //samplerate
-                val = headerBuffer[2] & 0x0F;
+                val = headerBuffer[offset + 2] & 0x0F;
                 var sampleRate = -1;
 
                 switch (val)
@@ -237,7 +252,7 @@ namespace SilverCraft.CSCore.Codecs.FLAC
 
                 #region channels
 
-                val = headerBuffer[3] >> 4; //cc: unsigned
+                val = headerBuffer[offset +3] >> 4; //cc: unsigned
                 int channels;
                 if ((val & 8) != 0)
                 {
@@ -262,7 +277,7 @@ namespace SilverCraft.CSCore.Codecs.FLAC
 
                 #region bitspersample
 
-                val = (headerBuffer[3] & 0x0E) >> 1;
+                val = (headerBuffer[offset + 3] & 0x0E) >> 1;
                 int bitsPerSample;
                 switch (val)
                 {
@@ -287,7 +302,7 @@ namespace SilverCraft.CSCore.Codecs.FLAC
 
                 #endregion bitspersample
 
-                if ((headerBuffer[3] & 0x01) != 0) // reserved bit -> 0
+                if ((headerBuffer[offset + 3] & 0x01) != 0) // reserved bit -> 0
                 {
                     _logger?.Debug("Invalid FlacFrame. Reservedbit_1 is 1");
 
@@ -301,7 +316,7 @@ namespace SilverCraft.CSCore.Codecs.FLAC
                 #region utf8
 
                 //variable blocksize
-                if ((headerBuffer[1] & 0x01) != 0 ||
+                if ((headerBuffer[offset +1] & 0x01) != 0 ||
                     (streamInfo != null && streamInfo.MinBlockSize != streamInfo.MaxBlockSize))
                 {
                     ulong samplenumber;
@@ -382,7 +397,7 @@ namespace SilverCraft.CSCore.Codecs.FLAC
                     Crc8 = (byte)reader.ReadBits(8);
                 }
 
-                headerBuffer += reader.Position;
+                bytesConsumed = reader.Position;
                 return true;
             }
 

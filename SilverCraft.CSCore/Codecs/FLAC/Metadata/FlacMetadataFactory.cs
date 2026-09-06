@@ -31,7 +31,7 @@ namespace SilverCraft.CSCore.Codecs.FLAC.Metadata
         /// <typeparam name="T">The <see cref="FlacMetadata"/> object assigned to the <paramref name="metadataType"/>.</typeparam>
         public void RegistermetadataType<T>(FlacMetaDataType metadataType) where T : FlacMetadata
         {
-            RegistermetadataType<T>((int) metadataType);
+            RegistermetadataType<T>((int)metadataType);
         }
 
         /// <summary>
@@ -55,7 +55,7 @@ namespace SilverCraft.CSCore.Codecs.FLAC.Metadata
         /// <param name="stream">The stream which contains the <see cref="FlacMetadata"/>.</param>
         /// <returns>Returns the read <see cref="FlacMetadata"/>.</returns>
         /// <exception cref="FlacException">Could not read metadata.</exception>
-        public unsafe FlacMetadata ParseMetadata(Stream stream)
+        public FlacMetadata ParseMetadata(Stream stream)
         {
             bool isLastBlock;
             FlacMetaDataType type;
@@ -65,14 +65,11 @@ namespace SilverCraft.CSCore.Codecs.FLAC.Metadata
             if (stream.Read(b, 0, 4) <= 0)
                 throw new FlacException(new EndOfStreamException("Could not read metadata."), FlacLayer.Metadata);
 
-            fixed (byte* headerBytes = b)
-            {
-                var bitReader = new FlacBitReader(headerBytes, 0);
+            var bitReader = new FlacBitReader(b, 0);
 
-                isLastBlock = bitReader.ReadBits(1) == 1;
-                type = (FlacMetaDataType)bitReader.ReadBits(7);
-                length = (int)bitReader.ReadBits(24);
-            }
+            isLastBlock = bitReader.ReadBits(1) == 1;
+            type = (FlacMetaDataType)bitReader.ReadBits(7);
+            length = (int)bitReader.ReadBits(24);
 
             var streamStartPosition = stream.Position;
             if (type < 0 || (int)type > 6)
@@ -87,14 +84,14 @@ namespace SilverCraft.CSCore.Codecs.FLAC.Metadata
 
         private FlacMetadata CreateFlacMetadataInstance(FlacMetaDataType flacMetadataType)
         {
-            var flacMetadataTypeAsInt = (int) flacMetadataType;
+            var flacMetadataTypeAsInt = (int)flacMetadataType;
 
             if (!_registeredmetadataTypes.TryGetValue(flacMetadataTypeAsInt, out Type type))
             {
                 return new DefaultFlacMetadata(flacMetadataType);
             }
 
-            return (FlacMetadata) Activator.CreateInstance(type);
+            return (FlacMetadata)Activator.CreateInstance(type);
         }
     }
 }

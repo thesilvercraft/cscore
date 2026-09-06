@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Collections.ObjectModel;
-
-namespace SilverCraft.CSCore.Codecs.FLAC
+﻿namespace SilverCraft.CSCore.Codecs.FLAC
 {
     /// <summary>
     /// Provides data for a FlacPreScan.
@@ -12,15 +8,16 @@ namespace SilverCraft.CSCore.Codecs.FLAC
         /// <summary>
         /// Gets the a list of found frames by the scan.
         /// </summary>
-        public ReadOnlyCollection<FlacFrameInformation> Frames { get; private set; }
+        public IReadOnlyCollection<FlacFrameInformation> Frames { get; private set; }
 
         /// <summary>
         /// Initializes a new instance of the <see cref="FlacPreScanFinishedEventArgs"/> class.
         /// </summary>
         /// <param name="frames">Found frames.</param>
-        public FlacPreScanFinishedEventArgs(List<FlacFrameInformation> frames)
+        public FlacPreScanFinishedEventArgs(IReadOnlyCollection<FlacFrameInformation> frames)
         {
-            Frames = frames.AsReadOnly();
+            ArgumentNullException.ThrowIfNull(frames);
+            Frames = frames;
         }
     }
 }

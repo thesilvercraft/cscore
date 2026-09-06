@@ -568,7 +568,7 @@ namespace SilverCraft.CSCore.SoundOut
 				8, 
 				16, 
 				Context.Supports32Float ? 32 : 16
-			}.OrderBy(x => x);
+			}.OrderBy(x => x).ToArray();
 
 			foreach (var bits in supportedBitsPerSample)
 			{

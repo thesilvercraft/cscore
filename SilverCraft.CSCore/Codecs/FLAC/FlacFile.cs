@@ -1,6 +1,4 @@
-﻿#define DIAGNOSTICS
-
-using System.Buffers;
+﻿using System.Buffers;
 using System.Collections.ObjectModel;
 using System.Diagnostics;
 using SilverCraft.CSCore.Tags.ID3;
@@ -15,12 +13,12 @@ public class FlacFile : IWaveSource
     private readonly object _bufferLock = new();
 
     private readonly bool _closeStream;
-    private readonly FlacPreScan _scan;
+    private readonly FlacPreScan? _scan;
     private readonly Stream _stream;
     private readonly FlacMetadataStreamInfo _streamInfo;
-
+    private readonly FlacMetadataSeekTable? _seekTable;
     private FlacFrame? _frame;
-
+    private readonly long _firstFrameOffset;
     private int _frameIndex;
 
     //overflow:
@@ -66,9 +64,10 @@ public class FlacFile : IWaveSource
     /// <param name="onscanFinished">
     ///     Callback which gets called when the pre scan processes finished. Should be used if the
     ///     <paramref name="scanFlag" /> argument is set the <see cref="FlacPreScanMode.Async" />.
+    ///    If a SeekTable is found scanning will be skipped but the callback will be called with a null.
     /// </param>
     public FlacFile(Stream stream, FlacPreScanMode scanFlag,
-        Action<FlacPreScanFinishedEventArgs> onscanFinished)
+        Action<FlacPreScanFinishedEventArgs?>? onscanFinished)
     {
         ArgumentNullException.ThrowIfNull(stream);
         if (!stream.CanRead)
@@ -77,9 +76,9 @@ public class FlacFile : IWaveSource
         _stream = stream;
         _closeStream = true;
 
-        //skip ID3v2
         while (ID3v2.SkipTag(stream))
         {
+            //skip ID3v2
         }
 
         var beginSync = new byte[4];
@@ -97,12 +96,26 @@ public class FlacFile : IWaveSource
         if (metadata.First(x => x.MetaDataType == FlacMetaDataType.StreamInfo) is not FlacMetadataStreamInfo
             streamInfo)
             throw new FlacException("No StreamInfo-Metadata found.", FlacLayer.Metadata);
+        if (metadata.FirstOrDefault(x => x.MetaDataType == FlacMetaDataType.Seektable) is FlacMetadataSeekTable jackpot)
+        {
+            Debug.WriteLine("Flac SEEKATABLE FOUND :)");
+            _seekTable = jackpot;
+        }
 
         _streamInfo = streamInfo;
         WaveFormat = CreateWaveFormat(streamInfo);
         Debug.WriteLine("Flac StreamInfo found -> WaveFormat: " + WaveFormat);
         Debug.WriteLine("Flac-File-Metadata read.");
 
+        if (_seekTable is { SeekPoints.Length: > 0 })
+        {
+            Debug.WriteLine("Huh? Oh, wait! We're reading a flac with a SEEKATABLE. Lossless, too - no need to scan.");
+            _firstFrameOffset = _stream.Position;
+            onscanFinished?.Invoke(null);
+            return;
+        }
+
+        _firstFrameOffset = _stream.Position;
         //prescan stream
         if (scanFlag == FlacPreScanMode.None) return;
         var scan = new FlacPreScan(stream);
@@ -127,7 +140,7 @@ public class FlacFile : IWaveSource
     ///     Gets a value which indicates whether the seeking is supported. True means that seeking is supported; False means
     ///     that seeking is not supported.
     /// </summary>
-    public bool CanSeek => _scan != null;
+    public bool CanSeek => _seekTable != null || _scan != null;
 
     /// <summary>
     ///     Reads a sequence of bytes from the <see cref="FlacFile" /> and advances the position within the stream by the
@@ -164,11 +177,18 @@ public class FlacFile : IWaveSource
                     return read;
                 while (!frame.NextFrame())
                 {
-                    if (!CanSeek) continue;
-                    if (++_frameIndex >= _scan.Frames.Count)
+                    if (_scan is { Frames.Count: > 0 })
+                    {
+                        if (++_frameIndex >= _scan.Frames.Count)
+                            return read;
+                        _stream.Position = _scan.Frames[_frameIndex].StreamOffset;
+                    }
+                    else if (_stream.Position >= _stream.Length)
+                    {
                         return read;
-                    _stream.Position = _scan.Frames[_frameIndex].StreamOffset;
+                    }
                 }
+
                 _frameIndex++;
                 var bufferLength = frame.GetBuffer(ref _overflowBuffer);
                 ReadOnlySpan<byte> frameSpan = _overflowBuffer.AsSpan(0, bufferLength);
@@ -192,10 +212,7 @@ public class FlacFile : IWaveSource
                 }
             }
         }
-#if DIAGNOSTICS
         _position += read;
-#endif
-
         return read;
     }
 
@@ -206,18 +223,12 @@ public class FlacFile : IWaveSource
     {
         get
         {
-            if (!CanSeek || _disposed)
+            if (_disposed)
                 return 0;
 
             lock (_bufferLock)
             {
-#if !DIAGNOSTICS
-                    if (_frameIndex == _scan.Frames.Count)
-                        return Length;
-                    return _scan.Frames[_frameIndex].SampleOffset * WaveFormat.BlockAlign + _overflowOffset;
-#else
                 return _position;
-#endif
             }
         }
         set
@@ -226,11 +237,45 @@ public class FlacFile : IWaveSource
 
             if (!CanSeek)
                 return;
+
             lock (_bufferLock)
             {
                 value = Math.Max(Math.Min(value, Length), 0);
                 value -= value % WaveFormat.BlockAlign;
 
+                if (_seekTable is { EntryCount: > 0 })
+                {
+                    var targetSample = value / WaveFormat.BlockAlign;
+                    FlacSeekPoint? bestPoint = null;
+
+                    for (var i = 0; i < _seekTable.EntryCount; i++)
+                    {
+                        var point = _seekTable[i];
+                        if (point.SampleNumber == unchecked((long)0xFFFFFFFFFFFFFFFF)) continue; // skip placeholders
+
+                        if (point.SampleNumber > targetSample) continue;
+                        if (bestPoint == null || point.SampleNumber > bestPoint.SampleNumber)
+                            bestPoint = point;
+                    }
+
+                    if (bestPoint != null)
+                    {
+                        _stream.Position = _firstFrameOffset + bestPoint.Offset;
+                        _frame = FlacFrame.FromStream(_stream, _streamInfo);
+                        _overflowCount = 0;
+                        _overflowOffset = 0;
+
+                        _position = bestPoint.SampleNumber * WaveFormat.BlockAlign;
+
+                        var diff = (int)(value - Position);
+                        diff -= diff % WaveFormat.BlockAlign;
+                        if (diff > 0) this.ReadBytes(diff);
+
+                        return;
+                    }
+                }
+
+                if (_scan == null) return;
                 for (var i = 0; i < _scan.Frames.Count; i++)
                 {
                     if (value / WaveFormat.BlockAlign > _scan.Frames[i].SampleOffset) continue;
@@ -241,9 +286,7 @@ public class FlacFile : IWaveSource
                     _frameIndex = i;
                     if (_stream.Position >= _stream.Length)
                         throw new EndOfStreamException("Stream got EOF.");
-#if DIAGNOSTICS
                     _position = _scan.Frames[i].SampleOffset * WaveFormat.BlockAlign;
-#endif
                     _overflowCount = 0;
                     _overflowOffset = 0;
 
@@ -266,9 +309,7 @@ public class FlacFile : IWaveSource
         {
             if (_disposed)
                 return 0;
-            if (CanSeek)
-                return _scan.TotalSamples * WaveFormat.BlockAlign;
-            return -1;
+            return _streamInfo.TotalSamples * WaveFormat.BlockAlign;
         }
     }
 
@@ -356,7 +397,5 @@ public class FlacFile : IWaveSource
         }
     }
     private bool _disposed;
-#if DIAGNOSTICS
     private long _position;
-#endif
 }
