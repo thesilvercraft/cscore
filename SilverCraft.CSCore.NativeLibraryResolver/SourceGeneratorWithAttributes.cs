@@ -12,8 +12,9 @@ using Microsoft.CodeAnalysis.Text;
 namespace SilverCraft.CSCore.NativeLibraryResolver;
 
 /// <summary>
-/// A sample source generator that creates a custom report based on class properties. The target class should be annotated with the 'Generators.ReportAttribute' attribute.
-/// When using the source code as a baseline, an incremental source generator is preferable because it reduces the performance overhead.
+/// A source generator that creates partial class declarations with DllImportResolver methods for annotated classes.
+/// The generated methods automatically handle platform-specific DLL paths (Windows/Linux/macOS) and CPU architectures.
+/// Use the [DllImportResolver] attribute on a class to enable automatic native library resolution.
 /// </summary>
 [Generator]
 public class SourceGeneratorWithAttributes : IIncrementalGenerator
@@ -55,7 +56,7 @@ public class SourceGeneratorWithAttributes : IIncrementalGenerator
             "DllImportResolverAttribute.g.cs",
             SourceText.From(AttributeSourceCode, Encoding.UTF8)));
 
-        // Filter classes annotated with the [Report] attribute. Only filtered Syntax Nodes can trigger code generation.
+        // Filter classes annotated with the [DllImportResolver] attribute. Only filtered Syntax Nodes can trigger code generation.
         var provider = context.SyntaxProvider
             .CreateSyntaxProvider(
                 (s, _) => s is ClassDeclarationSyntax,
@@ -69,7 +70,7 @@ public class SourceGeneratorWithAttributes : IIncrementalGenerator
     }
 
     /// <summary>
-    /// Checks whether the Node is annotated with the [Report] attribute and maps syntax context to the specific node type (ClassDeclarationSyntax).
+    /// Checks whether the Node is annotated with the [DllImportResolver] attribute and maps syntax context to the specific node type (ClassDeclarationSyntax).
     /// </summary>
     /// <param name="context">Syntax context, based on CreateSyntaxProvider predicate</param>
     /// <returns>The specific cast and whether the attribute was found.</returns>
@@ -86,7 +87,7 @@ public class SourceGeneratorWithAttributes : IIncrementalGenerator
 
             var attributeName = attributeSymbol.ContainingType.ToDisplayString();
 
-            // Check the full name of the [Report] attribute.
+            // Check the full name of the [DllImportResolver] attribute.
             if (attributeName == $"{Namespace}.{AttributeName}")
                 return (classDeclarationSyntax, true);
         }

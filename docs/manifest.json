@@ -1226,7 +1226,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "SilverCraft.CSCore.NativeLibraryResolver.SourceGeneratorWithAttributes",
-      "Summary": "<p sourcefile=\"api/SilverCraft.CSCore.NativeLibraryResolver.SourceGeneratorWithAttributes.yml\" sourcestartlinenumber=\"1\">A sample source generator that creates a custom report based on class properties. The target class should be annotated with the 'Generators.ReportAttribute' attribute.\nWhen using the source code as a baseline, an incremental source generator is preferable because it reduces the performance overhead.</p>\n"
+      "Summary": "<p sourcefile=\"api/SilverCraft.CSCore.NativeLibraryResolver.SourceGeneratorWithAttributes.yml\" sourcestartlinenumber=\"1\">A source generator that creates partial class declarations with DllImportResolver methods for annotated classes.\nThe generated methods automatically handle platform-specific DLL paths (Windows/Linux/macOS) and CPU architectures.\nUse the [DllImportResolver] attribute on a class to enable automatic native library resolution.</p>\n"
     },
     {
       "type": "ManagedReference",

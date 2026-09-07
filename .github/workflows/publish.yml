@@ -1,0 +1,40 @@
+name: Pack NuGet packages
+
+on:
+  workflow_dispatch:
+
+jobs:
+  pack:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup .NET 10
+        uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: 10.x
+
+      - name: Restore
+        run: dotnet restore
+
+      - name: Build
+        run: dotnet build -c Release --no-restore
+
+      - name: Pack
+        run: |
+          dotnet pack SilverCraft.CSCore/SilverCraft.CSCore.csproj -c Release --no-build --no-restore -o ./artifacts
+          dotnet pack SilverCraft.CSCore.PortAudio/SilverCraft.CSCore.PortAudio.csproj -c Release --no-build --no-restore -o ./artifacts
+          dotnet pack SilverCraft.CSCore.OpenMPT/SilverCraft.CSCore.OpenMPT.csproj -c Release --no-build --no-restore -o ./artifacts
+          dotnet pack SilverCraft.CSCore.SndFile/SilverCraft.CSCore.SndFile.csproj -c Release --no-build --no-restore -o ./artifacts
+          dotnet pack SilverCraft.CSCore.VGMStream/SilverCraft.CSCore.VGMStream.csproj -c Release --no-build --no-restore -o ./artifacts
+
+      - name: Upload packages
+        uses: actions/upload-artifact@v4
+        with:
+          name: nuget-packages
+          path: |
+            ./artifacts/*.nupkg
+            ./artifacts/*.snupkg
+          if-no-files-found: error

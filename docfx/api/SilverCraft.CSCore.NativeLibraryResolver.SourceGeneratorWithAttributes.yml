@@ -20,14 +20,16 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: SourceGeneratorWithAttributes
     path: ../SilverCraft.CSCore.NativeLibraryResolver/SourceGeneratorWithAttributes.cs
-    startLine: 17
+    startLine: 18
   assemblies:
   - SilverCraft.CSCore.NativeLibraryResolver
   namespace: SilverCraft.CSCore.NativeLibraryResolver
   summary: >-
-    A sample source generator that creates a custom report based on class properties. The target class should be annotated with the 'Generators.ReportAttribute' attribute.
+    A source generator that creates partial class declarations with DllImportResolver methods for annotated classes.
 
-    When using the source code as a baseline, an incremental source generator is preferable because it reduces the performance overhead.
+    The generated methods automatically handle platform-specific DLL paths (Windows/Linux/macOS) and CPU architectures.
+
+    Use the [DllImportResolver] attribute on a class to enable automatic native library resolution.
   example: []
   syntax:
     content: >-
@@ -74,7 +76,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: Initialize
     path: ../SilverCraft.CSCore.NativeLibraryResolver/SourceGeneratorWithAttributes.cs
-    startLine: 50
+    startLine: 51
   assemblies:
   - SilverCraft.CSCore.NativeLibraryResolver
   namespace: SilverCraft.CSCore.NativeLibraryResolver
