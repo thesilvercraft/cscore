@@ -1,6 +1,6 @@
 ﻿namespace SilverCraft.CSCore.Codecs.FLAC
 {
-    internal  class FlacSubFrameData
+    internal class FlacSubFrameData
     {
         public Memory<int> DestinationBuffer { get; set; }
         public Memory<int> ResidualBuffer { get; set; }

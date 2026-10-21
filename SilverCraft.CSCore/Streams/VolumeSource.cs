@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 namespace SilverCraft.CSCore.Streams
 {
@@ -22,7 +22,7 @@ namespace SilverCraft.CSCore.Streams
             get => _volume;
             set
             {
-                if (_volume is < 0 or > 1)
+                if (value is < 0 or > 1)
                     throw new ArgumentOutOfRangeException(nameof(value));
                 _volume = value;
             }
@@ -73,3 +73,4 @@ namespace SilverCraft.CSCore.Streams
         }
     }
 }
+

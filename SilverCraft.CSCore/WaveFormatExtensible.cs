@@ -51,7 +51,7 @@ namespace SilverCraft.CSCore
         public int ValidBitsPerSample
         {
             get => _samplesUnion;
-            internal protected set => _samplesUnion = (short) value;
+            protected internal set => _samplesUnion = (short) value;
         }
 
         /// <summary>
@@ -63,7 +63,7 @@ namespace SilverCraft.CSCore
         public int SamplesPerBlock
         {
             get => _samplesUnion;
-            internal protected set => _samplesUnion = (short) value;
+            protected internal set => _samplesUnion = (short) value;
         }
 
         /// <summary>
@@ -72,7 +72,7 @@ namespace SilverCraft.CSCore
         public ChannelMask ChannelMask
         {
             get => _channelMask;
-            internal protected set => _channelMask = value;
+            protected internal set => _channelMask = value;
         }
 
         /// <summary>
@@ -82,7 +82,7 @@ namespace SilverCraft.CSCore
         public Guid SubFormat
         {
             get => _subFormat;
-            internal protected set => _subFormat = value;
+            protected internal set => _subFormat = value;
         }
 
         internal WaveFormatExtensible()

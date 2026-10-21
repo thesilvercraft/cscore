@@ -1,4 +1,6 @@
-﻿namespace SilverCraft.CSCore.Utils
+﻿using System.Runtime.CompilerServices;
+
+namespace SilverCraft.CSCore.Utils
 {
     /// <summary>
     /// This class is based on the CUETools.NET project (see http://sourceforge.net/p/cuetoolsnet/ , now located at https://github.com/gchudov/cuetools.net)
@@ -6,31 +8,22 @@
     /// </summary>
     internal class CRC16 : CRCBase<ushort>
     {
-        public CRC16()
+        public CRC16() : base(0x8005) { }
+
+        public override ushort CalcCheckSum(ReadOnlySpan<byte> buffer)
         {
-            CalcTable(16);
+            ushort res = 0;
+            foreach (var b in buffer)
+            {
+                res = (ushort)((res << 8) ^ crc_table[(res >> 8) ^ b]);
+            }
+            return res;
         }
 
-        public override unsafe ushort CalcCheckSum(byte[] buffer, int offset, int count)
+        [MethodImpl(MethodImplOptions.AggressiveInlining)]
+        public override ushort CalcCheckSum(byte[] buffer, int offset, int count)
         {
-            fixed (byte* pBuffer = buffer)
-            {
-                return CalcCheckSum(pBuffer + offset, count);
-            }
-        }
-
-        public unsafe ushort CalcCheckSum(byte* buffer, int count)
-        {
-            var res = 0;
-            fixed (ushort* pTable = crc_table)
-            {
-                for (var i = count; i > 0; i--)
-                {
-                    res = ((res << 8) ^
-                           pTable[(res >> 8) ^ *(buffer++)]);
-                }
-            }
-            return (ushort) res;
+            return CalcCheckSum(buffer.AsSpan(offset, count));
         }
     }
 }

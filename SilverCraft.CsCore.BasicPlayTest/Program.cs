@@ -1,24 +1,27 @@
 ﻿using SilverCraft.CSCore;
 using SilverCraft.CSCore.Codecs.FLAC;
 using SilverCraft.CSCore.DSP.Resampler;
+using SilverCraft.CSCore.OpenMPT;
 using SilverCraft.CSCore.PortAudio;
 using SilverCraft.CSCore.SoundOut;
 using SilverCraft.CSCore.Streams;
 using SilverCraft.CSCore.Streams.SampleConverter;
 using SilverCraft.CSCore.VGMStream;
-args = ["/home/silver/source/cscore/SilverCraft.CsCore.BasicPlayTest/music.flac"];
 float volume = 1f;
-/*PortAudioSoundOut soundOut = new();
+
+PortAudioSoundOut soundOut = new();
+    soundOut.Stopped+= (sender, eventArgs) => Console.WriteLine("Sound Out Stopped");
 
 while (true)
 {
-    FlacFile f = new(args.Length>0 ? args[0] : "../../../music.flac");
+ 
+    FlacFile f = new(File.Open(args.Length > 0 ? args[0] : "../../../music.flac", FileMode.Open, FileAccess.Read));
     soundOut.Initialize(f);
     soundOut.Volume = volume;
     soundOut.Play();
-    soundOut.Stopped+= (sender, eventArgs) => Console.WriteLine("Sound Out Stopped");
     while (soundOut.PlaybackState != PlaybackState.Stopped)
     {
+        Console.Write("\r"+f.GetPosition());
         if (Console.KeyAvailable)
         {
             switch (Console.ReadKey().Key)
@@ -39,16 +42,18 @@ while (true)
                       break;
             }
         }
-        Thread.Sleep(100);
+        Thread.Sleep(33);
     }
     f.Dispose();
 }
-*/
-
+/*
+var x = new OpenMptWaveStream(File.OpenRead(@"alphaline.mod"));
 var soundIn = new PortAudioSoundIn();
 var soundOut = new PortAudioSoundOut();
 soundIn.Initialize();
-soundOut.Initialize(new SoundInSource(soundIn));
+soundOut.Initialize(new SoundInSource(soundIn, 44100));
 soundIn.Start();
 soundOut.Play();
+
 Thread.Sleep(-1);
+*/
