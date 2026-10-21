@@ -1,3 +1,4 @@
+using Microsoft.Extensions.Logging;
 using SilverCraft.CSCore.PortAudio.Native;
 
 namespace SilverCraft.CSCore.PortAudio;
@@ -54,7 +55,7 @@ public static class PortAudioLifetimeManager
     /// If termination occurs, it calls the native PortAudio termination function (<see cref="NativeMethods.Pa_Terminate()"/>).
     /// </remarks>
     /// <param name="log">An optional logger used to record any errors encountered during the native PortAudio shutdown process.</param>
-    public static void Terminate(Serilog.ILogger? log)
+    public static void Terminate(ILogger? log)
     {
         lock (Lock)
         {
@@ -65,7 +66,7 @@ public static class PortAudioLifetimeManager
             var err = NativeMethods.Pa_Terminate();
             if (err != (int)PaErrorCode.paNoError)
             {
-                log?.Error("PortAudio terminated with error code {Err}", err);
+                log?.LogError("PortAudio terminated with error code {Err}", err);
             }
         }
     }

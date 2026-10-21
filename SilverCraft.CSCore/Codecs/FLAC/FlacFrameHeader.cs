@@ -1,14 +1,11 @@
-﻿using System;
-using System.Diagnostics;
-using System.IO;
-using Serilog;
+﻿using Microsoft.Extensions.Logging;
 
 namespace SilverCraft.CSCore.Codecs.FLAC
 {
     /// <summary>
     /// Represents the header of a <see cref="FlacFrame"/>.
     /// </summary>
-    public sealed class FlacFrameHeader
+    public sealed partial class FlacFrameHeader
     {
         private int _blocksizeHint; //if bsindex == 6 || 7
         private int _sampleRateHint; //if sampleRateIndex == 12 || 13 || 14
@@ -97,7 +94,11 @@ namespace SilverCraft.CSCore.Codecs.FLAC
         ///   <c>true</c> if this instance has error; otherwise, <c>false</c>.
         /// </value>
         public bool HasError { get; private set; }
-
+        /// <summary>
+        /// The number of bytes parsing this header took
+        /// Only filled if constructed via byte array
+        /// </summary>
+        public int BytesConsumed { get; private set; }
         /// <summary>
         /// Gets the stream position.
         /// </summary>
@@ -107,7 +108,7 @@ namespace SilverCraft.CSCore.Codecs.FLAC
         public long StreamPosition { get; private set; }
 
         private readonly ILogger? _logger;
-
+        
         /// <summary>
         /// Initializes a new instance of the <see cref="FlacFrameHeader"/> class.
         /// </summary>
@@ -117,7 +118,7 @@ namespace SilverCraft.CSCore.Codecs.FLAC
         public FlacFrameHeader(Stream stream, FlacMetadataStreamInfo? streamInfo = null, bool doCrc = true)
         {
             ArgumentNullException.ThrowIfNull(stream);
-            if (stream.CanRead == false) throw new ArgumentException("stream is not readable");
+            if (!stream.CanRead) throw new ArgumentException("stream is not readable");
             if (!stream.CanSeek)
                 throw new ArgumentException("stream must be readable and seekable", nameof(stream));
 
@@ -125,14 +126,16 @@ namespace SilverCraft.CSCore.Codecs.FLAC
 
             DoCrc = doCrc;
             StreamPosition = stream.Position;
-            _logger = LogLocation.GetLogger(typeof(FlacFrameHeader));
+            _logger = LogLocation.GetLogger<FlacFrameHeader>();
             HasError = !ParseHeader(stream,0, streamInfo);
         }
+
 
         /// <summary>
         /// Initializes a new instance of the <see cref="FlacFrameHeader"/> class.
         /// </summary>
         /// <param name="buffer">The raw byte-data which contains the <see cref="FlacFrameHeader"/>.</param>
+        /// <param name="offset">The offset from which data will be read from the buffer</param>
         /// <param name="streamInfo">The stream-info-metadata-block of the flac stream which provides some basic information about the flac framestream. Can be set to null.</param>
         /// <param name="doCrc">A value which indicates whether the crc8 checksum of the <see cref="FlacFrameHeader"/> should be calculated.</param>
         public FlacFrameHeader(
@@ -143,9 +146,10 @@ namespace SilverCraft.CSCore.Codecs.FLAC
         {
             DoCrc = doCrc;
             StreamPosition = -1;
-            _logger = LogLocation.GetLogger(typeof(FlacFrameHeader));
-
-            HasError = !ParseHeader(buffer, offset, streamInfo, out var _);
+            _logger = LogLocation.GetLogger<FlacFrameHeader>();
+            ArgumentNullException.ThrowIfNull(buffer);
+            HasError = !ParseHeader(buffer, offset, streamInfo, out var bytesConsumed);
+            BytesConsumed = bytesConsumed;
         }
 
         private bool ParseHeader(Stream stream, int offset, FlacMetadataStreamInfo? streamInfo)
@@ -158,7 +162,7 @@ namespace SilverCraft.CSCore.Codecs.FLAC
             }
             catch (EndOfStreamException)
             {
-                _logger?.Error("Not able to read Flac header - EOF?");
+                Log_EOFErrorHeader();
                 return false;
             }
 
@@ -185,7 +189,7 @@ namespace SilverCraft.CSCore.Codecs.FLAC
             {
                 if ((headerBuffer[offset +1] & 0x02) != 0)
                 {
-                     _logger?.Debug("Invalid FlacFrame. Reservedbit_0 is 1");
+                    Log_EOFErrorReservedBit1();
                     return false;
                 }
 
@@ -201,7 +205,7 @@ namespace SilverCraft.CSCore.Codecs.FLAC
                 switch (val)
                 {
                     case 0:
-                        _logger?.Debug("Invalid Blocksize value: 0");
+                        Log_EOFErrorBlocksize0();
                         return false;
                     case 1:
                         blocksize = 192;
@@ -233,7 +237,7 @@ namespace SilverCraft.CSCore.Codecs.FLAC
                         sampleRate = streamInfo.SampleRate;
                         break;
                     case 0:
-                        _logger?.Debug("Missing Samplerate. Samplerate Index = 0 && streamInfoMetaData == null.");
+                        Log_EOFMissingSampleRate();
                         return false;
                     case >= 1 and <= 11:
                         sampleRate = FlacConstant.SampleRateTable[val];
@@ -242,7 +246,7 @@ namespace SilverCraft.CSCore.Codecs.FLAC
                         _sampleRateHint = val;
                         break;
                     default:
-                        _logger?.Debug("Invalid SampleRate value: {Value}", val);
+                        Log_EOFInvalidSampleRate(val);
                         return false;
                 }
 
@@ -259,7 +263,7 @@ namespace SilverCraft.CSCore.Codecs.FLAC
                     channels = 2;
                     if ((val & 7) > 2 || (val & 7) < 0)
                     {
-                         _logger?.Debug("Invalid ChannelAssignment");
+                        Log_EOFInvalidChannelAssignment();
                         return false;
                     }
 
@@ -285,13 +289,12 @@ namespace SilverCraft.CSCore.Codecs.FLAC
                         bitsPerSample = streamInfo.BitsPerSample;
                         break;
                     case 0:
-                         _logger?.Debug("Missing BitsPerSample. Index = 0 && streamInfoMetaData == null.");
+                         Log_MissingBitsPerSample();
                         return false;
                     case 3:
                     case >= 7:
                     case < 0:
-                        _logger?.Debug("Invalid BitsPerSampleIndex");
-
+                        Log_InvalidBitsPerSampleIndex();
                         return false;
                     default:
                         bitsPerSample = FlacConstant.BitPerSampleTable[val];
@@ -304,8 +307,7 @@ namespace SilverCraft.CSCore.Codecs.FLAC
 
                 if ((headerBuffer[offset + 3] & 0x01) != 0) // reserved bit -> 0
                 {
-                    _logger?.Debug("Invalid FlacFrame. Reservedbit_1 is 1");
-
+                    Log_InvalidErrorReservedBit1();
                     return false;
                 }
 
@@ -327,7 +329,7 @@ namespace SilverCraft.CSCore.Codecs.FLAC
                     }
                     else
                     {
-                        _logger?.Debug("Invalid UTF8 Samplenumber coding");
+                        Log_InvalidUtf8SampleNumberCoding();
                         return false;
                     }
                 }
@@ -342,7 +344,7 @@ namespace SilverCraft.CSCore.Codecs.FLAC
                     }
                     else
                     {
-                        _logger?.Debug("Invalid UTF8 Framenumber coding");
+                        Log_InvalidUtf8FrameNumberCoding();
                         return false;
                     }
                 }
@@ -372,23 +374,23 @@ namespace SilverCraft.CSCore.Codecs.FLAC
                         val = (val << 8) | (int)reader.ReadBits(8);
                     }
 
-                    if (_sampleRateHint == 12)
-                        SampleRate = val * 1000;
-                    else if (_sampleRateHint == 13)
-                        SampleRate = val;
-                    else
-                        SampleRate = val * 10;
+                    SampleRate = _sampleRateHint switch
+                    {
+                        12 => val * 1000,
+                        13 => val,
+                        _ => val * 10
+                    };
                 }
 
                 #endregion read hints
 
                 if (DoCrc)
                 {
-                    var crc8 = Utils.CRC8.Instance.CalcCheckSum(reader.Buffer, 0, reader.Position);
+                    var crc8 = Utils.CRC8.Instance.CalcCheckSum(reader.Buffer, offset, reader.Position);
                     Crc8 = (byte)reader.ReadBits(8);
                     if (Crc8 != crc8)
                     {
-                        _logger?.Debug("CRC8 missmatch");
+                        Log_ErrorCRC8();
                         return false;
                     }
                 }
@@ -401,8 +403,7 @@ namespace SilverCraft.CSCore.Codecs.FLAC
                 return true;
             }
 
-            _logger?.Debug("Invalid Syncbits");
-
+            Log_InvalidSyncBits();
             return false;
         }
 
@@ -414,6 +415,7 @@ namespace SilverCraft.CSCore.Codecs.FLAC
         /// <returns><c>true</c> if the format of the current <see cref="FlacFrameHeader"/> is equal to the format of the <paramref name="other"/> <see cref="FlacFrameHeader"/>.</returns>
         public bool IsFormatEqualTo(FlacFrameHeader other)
         {
+            ArgumentNullException.ThrowIfNull(other);
             return (BitsPerSample == other.BitsPerSample &&
                     Channels == other.Channels &&
                     SampleRate == other.SampleRate);

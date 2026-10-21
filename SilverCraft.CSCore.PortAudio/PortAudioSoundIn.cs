@@ -1,6 +1,6 @@
 using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
-using Serilog;
+using Microsoft.Extensions.Logging;
 using SilverCraft.CSCore.PortAudio.Native;
 using SilverCraft.CSCore.SoundIn;
 
@@ -25,7 +25,7 @@ public class PortAudioSoundIn : ISoundIn
     {
         Channels = channels;
         SampleRate = sampleRate;
-        _log = LogLocation.GetLogger(typeof(PortAudioSoundIn));
+        _log = LogLocation.GetLogger<PortAudioSoundIn>();
     }
 
     public int Channels
@@ -144,7 +144,7 @@ public class PortAudioSoundIn : ISoundIn
         var closeResult = NativeMethods.Pa_CloseStream(s);
         if (closeResult != (int)PaErrorCode.paNoError)
         {
-            _log?.Error("PORTAUDIO ERROR: Pa_CloseStream failed with code {CloseResult}", closeResult);
+            _log?.LogError("PORTAUDIO ERROR: Pa_CloseStream failed with code {CloseResult}", closeResult);
         }
     }
 
@@ -186,7 +186,7 @@ public class PortAudioSoundIn : ISoundIn
         }
         catch (Exception e)
         {
-            _log?.Error(e, "ERROR IN THE PORTAUDIO INPUT CALLBACK THREAD");
+            _log?.LogError(e, "ERROR IN THE PORTAUDIO INPUT CALLBACK THREAD");
             return (int)PaStreamCallbackResult.paAbort;
         }
     }

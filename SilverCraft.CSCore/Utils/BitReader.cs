@@ -19,6 +19,7 @@ namespace SilverCraft.CSCore.Utils
                 throw new ArgumentException("buffer is null or has no elements", nameof(buffer));
             ArgumentOutOfRangeException.ThrowIfNegative(offset);
             _buffer = buffer;
+            _bufferOffset = offset;
             _cache = PeekCache();
         }
 
@@ -55,7 +56,7 @@ namespace SilverCraft.CSCore.Utils
 
             var tmp = _bitoffset + bits;
             _bufferOffset += tmp >> 3;  //skip bytes
-            _bitoffset = tmp & 7;     ; //bitoverflow -> max 7 bit
+            _bitoffset = tmp & 7;      //bitoverflow -> max 7 bit
 
             _position += tmp >> 3;
             _cache = PeekCache();

@@ -16,7 +16,7 @@ public sealed partial class FlacFrame : IDisposable
     private bool _disposed;
     private int[]? _residualBuffer;
     private Stream _stream;
-    private FlacMetadataStreamInfo _streamInfo;
+    private FlacMetadataStreamInfo? _streamInfo;
     private List<FlacSubFrameData> _subFrameData;
 #if FLAC_DEBUG
     private ReadOnlyCollection<FlacSubFrameBase> _subFrames;
@@ -74,7 +74,6 @@ public sealed partial class FlacFrame : IDisposable
     {
         var frame = new FlacFrame(stream);
         return frame;
-        //return frame.HasError ? null : frame;
     }
 
     /// <summary>
@@ -88,11 +87,10 @@ public sealed partial class FlacFrame : IDisposable
     {
         var frame = new FlacFrame(stream, streamInfo);
         return frame;
-        //return frame.HasError ? null : frame;
     }
 
     /// <summary>
-    ///     Tries to read the next flac frame inside of the specified stream and returns a value which indicates whether the
+    ///     Tries to read the next flac frame inside the specified stream and returns a value which indicates whether the
     ///     next flac frame could be successfully read.
     /// </summary>
     /// <returns>True if the next flac frame could be successfully read; false if not.</returns>
@@ -102,7 +100,7 @@ public sealed partial class FlacFrame : IDisposable
         return !HasError;
     }
 
-    private void Decode(Stream stream, FlacMetadataStreamInfo streamInfo)
+    private void Decode(Stream stream, FlacMetadataStreamInfo? streamInfo)
     {
         Header = new FlacFrameHeader(stream, streamInfo);
         _stream = stream;
@@ -181,9 +179,9 @@ public sealed partial class FlacFrame : IDisposable
 
     private void MapToChannels(List<FlacSubFrameData> subFrames)
     {
-        var left = subFrames[0].DestinationSpan;
-        var right = subFrames[1].DestinationSpan;
-        int blockSize = Header.BlockSize;
+        var blockSize = Header.BlockSize;
+        var left = subFrames[0].DestinationSpan[..blockSize];
+        var right = subFrames[1].DestinationSpan[..blockSize];
         switch (Header.ChannelAssignment)
         {
             case ChannelAssignment.LeftSide:
@@ -202,10 +200,8 @@ public sealed partial class FlacFrame : IDisposable
             }
             case ChannelAssignment.MidSide:
             {
-
                 for (var i = 0; i < blockSize; i++)
                 {
-                    
                     var mid = left[i] << 1;      // Uses cached 'left' span for midSpan
                     var side = right[i];         //                             sideSpan
 
@@ -214,7 +210,6 @@ public sealed partial class FlacFrame : IDisposable
                     left[i] = (mid + side) >> 1;
                     right[i] = (mid - side) >> 1;
                 }
-
                 break;
             }
         }

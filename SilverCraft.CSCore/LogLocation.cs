@@ -1,27 +1,36 @@
-using Serilog;
+using Microsoft.Extensions.Logging;
+using Microsoft.Extensions.Logging.Abstractions;
 
 namespace SilverCraft.CSCore;
 
 /// <summary>
-/// Provides static methods for obtaining an <see cref="Serilog.ILogger"/> instance associated with a specific type.
+/// Provides static methods for obtaining an <see cref="Microsoft.Extensions.Logging.ILogger"/> instance.
 /// </summary>
 public static class LogLocation
 {
+    // Default to a null logger factory to prevent crashes if uninitialized
+    private static ILoggerFactory _factory = new NullLoggerFactory();
     /// <summary>
-    /// Gets the logger instance for a specific type.
+    /// Called by the consuming application at startup to provide a real logger factory.
     /// </summary>
-    /// <param name="type">The Type used to get the associated logger.</param>
-    /// <returns>An ILogger instance scoped to the provided type.</returns>
-    public static ILogger? GetLogger(Type type)
+    public static void Initialize(ILoggerFactory factory)
     {
-        return GetFunc?.Invoke(type);
+        _factory = factory ?? throw new ArgumentNullException(nameof(factory));
     }
 
     /// <summary>
-    /// Gets or sets the function used to resolve and create an ILogger instance based on a given type.
+    /// Gets the logger instance for a specific type.
     /// </summary>
-    /// <remarks>
-    /// This delegate must return a functional logger configured for use within the application's scope.
-    /// </remarks>
-    public static Func<Type, ILogger> GetFunc;
+    public static ILogger GetLogger(Type type)
+    {
+        return _factory.CreateLogger(type);
+    }
+
+    /// <summary>
+    /// Generic helper for easier syntax.
+    /// </summary>
+    public static ILogger<T> GetLogger<T>()
+    {
+        return _factory.CreateLogger<T>();
+    }
 }

@@ -3,7 +3,7 @@ using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
 using System.Runtime.Intrinsics;
 using System.Runtime.Intrinsics.X86;
-using Serilog;
+using Microsoft.Extensions.Logging;
 using SilverCraft.CSCore.PortAudio.Native;
 using SilverCraft.CSCore.SoundOut;
 
@@ -210,7 +210,7 @@ public class PortAudioSoundOut : ISoundOut
         var closeResult = NativeMethods.Pa_CloseStream(s);
         if (closeResult != (int)PaErrorCode.paNoError)
         {
-            _log?.Error("PORTAUDIO ERROR: Pa_CloseStream failed with code {CloseResult}", closeResult);
+            _log?.LogError("PORTAUDIO ERROR: Pa_CloseStream failed with code {CloseResult}", closeResult);
         }
     }
 
@@ -291,7 +291,7 @@ public class PortAudioSoundOut : ISoundOut
             var outputBuffer = (float*)output;
             if (frameCount > (ulong)(int.MaxValue / channels))
             {
-                _log?.Error("Unusually large frameCount in callback method {frameCount}", frameCount);
+                _log?.LogError("Unusually large frameCount in callback method {frameCount}", frameCount);
                 return (int)PaStreamCallbackResult.paAbort;
             }
             var bufferLength = (int)frameCount * channels;
@@ -373,7 +373,7 @@ public class PortAudioSoundOut : ISoundOut
         }
         catch (Exception e)
         {
-            _log?.Error(e, "ERROR IN THE CALLBACK THREAD");
+            _log?.LogError(e, "ERROR IN THE CALLBACK THREAD");
             return (int)PaStreamCallbackResult.paAbort;
         }
     }

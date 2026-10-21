@@ -1,8 +1,8 @@
-﻿<Project Sdk="Microsoft.NET.Sdk">
+<Project Sdk="Microsoft.NET.Sdk">
   <Import Project="../SilverCraft.CSCore.targets" />
 
   <PropertyGroup>
-    <TargetFramework>net8.0</TargetFramework>
+    <TargetFramework>net10.0</TargetFramework>
     <Copyright>Florian R., SilverDiamond</Copyright>
     <Description>.NET Sound Library modified to suit SilverAudioPlayer</Description>
   </PropertyGroup>
@@ -11,6 +11,7 @@
     <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.Logging" Version="10.0.13" />
     <PackageReference Include="Microsoft.SourceLink.GitHub" Version="8.0.0" PrivateAssets="All" />
     <PackageReference Update="DotNet.ReproducibleBuilds" Version="1.2.4" />
   </ItemGroup>
@@ -20,6 +21,9 @@
   <ItemGroup>
     <None Remove=".gitattributes" />
     <None Remove=".gitignore" />
+    <Compile Remove="Tests\**\*.cs" />
+    <EmbeddedResource Remove="Tests\**\*" />
+    <None Remove="Tests\**\*" />
   </ItemGroup>
 
   <ItemGroup>
@@ -70,11 +74,10 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="Serilog" Version="4.0.1" />
-  </ItemGroup>
-  <ItemGroup>
     <ProjectReference Include="..\SilverCraft.CSCore.NativeLibraryResolver\SilverCraft.CSCore.NativeLibraryResolver.csproj"
                       OutputItemType="Analyzer"
                       ReferenceOutputAssembly="false"/>
   </ItemGroup>
 </Project>
+
+

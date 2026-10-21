@@ -1,4 +1,4 @@
-﻿using System.Buffers.Binary;
+using System.Buffers.Binary;
 
 // ReSharper disable once CheckNamespace
 namespace SilverCraft.CSCore.Codecs.FLAC
@@ -36,6 +36,9 @@ namespace SilverCraft.CSCore.Codecs.FLAC
         /// <param name="stream">The stream which contains the metadata.</param>
         protected override void InitializeByStream(Stream stream)
         {
+            if (Length % 18 != 0)
+                throw new FlacException("Seek table length must be a multiple of 18 bytes.", FlacLayer.Metadata);
+
             var entryCount = Length / 18;
             EntryCount = entryCount;
             _seekPoints = new FlacSeekPoint[entryCount];

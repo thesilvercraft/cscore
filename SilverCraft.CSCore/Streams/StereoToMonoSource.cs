@@ -40,20 +40,21 @@ namespace SilverCraft.CSCore.Streams
         /// </param>
         /// <param name="count">The maximum number of samples to read from the current source.</param>
         /// <returns>The total number of samples read into the buffer.</returns>
-        public unsafe override int Read(float[] buffer, int offset, int count)
+        public override int Read(float[] buffer, int offset, int count)
         {
             _buffer = _buffer.CheckBuffer(count * 2);
             var read = BaseSource.Read(_buffer, 0, count * 2);
-            fixed (float* pbuffer = buffer)
+            var frames = read / 2;
+            ReadOnlySpan<float> source = _buffer.AsSpan(0, frames * 2);
+            var destination = buffer.AsSpan(offset, frames);
+
+            for (var i = 0; i < frames; i++)
             {
-                var ppbuffer = pbuffer + offset;
-                for (var i = 0; i < read - 1; i += 2)
-                {
-                    *(ppbuffer++) = (_buffer[i] + _buffer[i + 1]) / 2;
-                }
+                var srcIdx = i * 2;
+                destination[i] = (source[srcIdx] + source[srcIdx + 1]) * 0.5f;
             }
 
-            return read / 2;
+            return frames;
         }
 
         /// <summary>

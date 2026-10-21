@@ -5,7 +5,8 @@
         <Nullable>enable</Nullable>
         <Configurations>Debug;Release</Configurations>
         <LangVersion>latest</LangVersion>
-        <VersionPrefix>0.1.12</VersionPrefix>
+        <VersionPrefix>0.2.0</VersionPrefix>
+        <VersionSuffix>beta</VersionSuffix>
         <Optimize>True</Optimize>
         <DebugType>Portable</DebugType>
         <PreserveCompilationContext>false</PreserveCompilationContext>

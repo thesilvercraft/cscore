@@ -11,9 +11,13 @@ namespace SilverCraft.CSCore.Codecs.FLAC
         public event EventHandler<FlacPreScanFinishedEventArgs> ScanFinished;
 
         public List<FlacFrameInformation> Frames { get; private set; }
-
-        public long TotalLength { get; private set; }
-
+        /// <summary>
+        /// Total length in bits
+        /// </summary>
+        public long TotalLengthBits { get; private set; }
+        /// <summary>
+        /// Total number of samples
+        /// </summary>
         public long TotalSamples { get; private set; }
 
         public FlacPreScan(Stream stream)
@@ -37,9 +41,9 @@ namespace SilverCraft.CSCore.Codecs.FLAC
                 totalsamples += frame.Header.BlockSize;
             }
 
-            TotalLength = totalLength;
+            TotalLengthBits = totalLength;
             TotalSamples = totalsamples;
-            Debug.Assert(TotalSamples == streamInfo.TotalSamples);
+            Debug.WriteLineIf(TotalSamples != streamInfo.TotalSamples, "SCANNING SAMPLES LED TO DIFFERENCES BETWEEN HEADER AND FILE, POSSIBLY WRONG SCANNING");
             Debug.WriteLineIf(TotalSamples == streamInfo.TotalSamples,
                 "Flac prescan successful. Calculated total_samples value matching the streaminfo-metadata.");
         }
@@ -114,7 +118,7 @@ namespace SilverCraft.CSCore.Codecs.FLAC
                     // Sync code check: 11111111 111110xx
                     if (buffer[offset] == 0xFF && (buffer[offset + 1] & 0xF8) == 0xF8)
                     {
-                        if (IsFrame(buffer, offset, streamInfo, out FlacFrameHeader header))
+                        if (IsFrame(buffer, offset, streamInfo, out var header))
                         {
                             baseHeader ??= header;
 
@@ -130,10 +134,11 @@ namespace SilverCraft.CSCore.Codecs.FLAC
 
                                 frames.Add(frameInfo);
                                 currentSampleOffset += header.BlockSize;
+                                offset += Math.Max(1, header.BytesConsumed);
+                                continue;
                             }
                         }
                     }
-
                     offset++;
                 }
 

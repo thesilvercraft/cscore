@@ -1,5 +1,4 @@
 ﻿using SilverCraft.CSCore.DSP;
-using System;
 
 namespace SilverCraft.CSCore.Streams
 {
@@ -46,46 +45,51 @@ namespace SilverCraft.CSCore.Streams
         /// </param>
         /// <param name="count">The maximum number of samples to read from the current source.</param>
         /// <returns>The total number of samples read into the buffer.</returns>
-        public override unsafe int Read(float[] buffer, int offset, int count)
+        public override int Read(float[] buffer, int offset, int count)
         {
             if (buffer.Length < offset + count)
-                throw new ArgumentException("buffer");
+                throw new ArgumentException("Buffer too small", nameof(buffer));
             ArgumentOutOfRangeException.ThrowIfNegative(offset);
             ArgumentOutOfRangeException.ThrowIfNegativeOrZero(count);
 
-            count -= count % WaveFormat.Channels;
+            var inChannels = BaseSource.WaveFormat.Channels;
+            var outChannels = _channelMatrix.OutputChannelCount;
+
+            count -= count % outChannels;
 
             var bytesToRead = (int)OutputToInput(count);
             _buffer = _buffer.CheckBuffer(bytesToRead);
 
             var read = base.Read(_buffer, 0, bytesToRead);
-            var counter = 0;
-            Array.Clear(buffer, offset, (int) InputToOutput(read));
 
-            fixed (float* buf = &buffer[offset])
+            var frameCount = read / inChannels;
+            var outputSampleCount = frameCount * outChannels;
+
+            if (frameCount == 0)
+                return 0;
+
+            ReadOnlySpan<float> input = _buffer.AsSpan(0, frameCount * inChannels);
+            var output = buffer.AsSpan(offset, outputSampleCount);
+
+            var inIdx = 0;
+            var outIdx = 0;
+
+            for (var f = 0; f < frameCount; f++)
             {
-                var pbuf = buf;
-
-                for (var i = 0; i < read; i++)
+                for (var ic = 0; ic < inChannels; ic++)
                 {
-                    var value = _buffer[i];
-
-                    var channelIndex = i % BaseSource.WaveFormat.Channels;
-                    for (var o = 0; o < _channelMatrix.OutputChannelCount; o++)
+                    var sampleVal = input[inIdx++];
+            
+                    // Channel matrix accumulation
+                    for (var oc = 0; oc < outChannels; oc++)
                     {
-                        pbuf[o] += value * _channelMatrix[channelIndex, o].Value;
-                    }
-
-                    if (channelIndex == _channelMatrix.InputChannelCount - 1 || i == read - 1)
-                    {
-                        pbuf += _channelMatrix.OutputChannelCount;
-                        counter += _channelMatrix.OutputChannelCount;
+                        output[outIdx + oc] += sampleVal * _channelMatrix[ic, oc].Value;
                     }
                 }
+                outIdx += outChannels;
             }
 
-
-            return counter;
+            return outputSampleCount;
         }
 
         /// <summary>
