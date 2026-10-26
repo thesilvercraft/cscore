@@ -1,4 +1,3 @@
-using System.Reflection;
 using System.Runtime.InteropServices;
 
 namespace SilverCraft.CSCore.PortAudio.Native;
@@ -13,13 +12,15 @@ internal sealed class NativeTypeNameAttribute : Attribute
     public string Name { get; }
 }
 
-public struct PaStream
-{
-}
+public struct PaStream;
 
-public struct PaStreamCallbackFlags
-{
-}
+public struct PaStreamCallbackFlags;
+[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
+public unsafe delegate int StreamCallBack(void* input, void* output, ulong frameCount,
+    PaStreamCallbackTimeInfo* timeInfo, PaStreamCallbackFlags statusFlags, nint userData);
+
+[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
+public unsafe delegate void PaStreamFinishedCallback(void* userData);
 [Generators.DllImportResolverAttribute("PortAudio", NativeMethods.dllName, WindowsDlls =  ["portaudio.dll", "portaudio_x64.dll"],
     LinuxDlls= ["libportaudio.so.2", "libportaudio.so"],
     MacOsDlls= ["libportaudio.dylib", "libportaudio.2.dylib"],

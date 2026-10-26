@@ -1,15 +1,15 @@
 using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
 using Microsoft.Extensions.Logging;
+using SilverCraft.CSCore.PortAudio;
 using SilverCraft.CSCore.PortAudio.Native;
-using SilverCraft.CSCore.SoundIn;
 
-namespace SilverCraft.CSCore.PortAudio;
+namespace SilverCraft.CSCore.SoundIn;
 
 public class PortAudioSoundIn : ISoundIn
 {
     private readonly ILogger? _log;
-    private readonly object _streamLock = new();
+    private readonly Lock _streamLock = new();
 
     private StreamCallBack? _callback;
     private PaStreamFinishedCallback? _finishedCallback;
@@ -193,7 +193,7 @@ public class PortAudioSoundIn : ISoundIn
 
     public unsafe void OnStreamFinished(void* userData)
     {
-        int callbackStreamId = (int)(nint)userData;
+        var callbackStreamId = (int)(nint)userData;
         if (callbackStreamId != Volatile.Read(ref _currentStreamId))
         {
             return;
@@ -209,12 +209,10 @@ public class PortAudioSoundIn : ISoundIn
         [CallerFilePath] string path = "",
         [CallerLineNumber] int num = 0)
     {
-        if (err != (int)PaErrorCode.paNoError)
-        {
-            var errorText = Marshal.PtrToStringAnsi((nint)NativeMethods.Pa_GetErrorText(err));
-            throw new PortAudioException(
-                $"PortAudio failed with code {err} ({errorText}) in {callerName} [{path}:{num}]");
-        }
+        if (err == (int)PaErrorCode.paNoError) return;
+        var errorText = Marshal.PtrToStringAnsi((nint)NativeMethods.Pa_GetErrorText(err));
+        throw new PortAudioException(
+            $"PortAudio failed with code {err} ({errorText}) in {callerName} [{path}:{num}]");
     }
 
     public void Dispose()
@@ -232,11 +230,9 @@ public class PortAudioSoundIn : ISoundIn
 
         Stop();
 
-        if (_isPAInit)
-        {
-            PortAudioLifetimeManager.Terminate(_log);
-            _isPAInit = false;
-        }
+        if (!_isPAInit) return;
+        PortAudioLifetimeManager.Terminate(_log);
+        _isPAInit = false;
     }
 
     ~PortAudioSoundIn()

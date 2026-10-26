@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace SilverCraft.CSCore.SoundIn
+﻿namespace SilverCraft.CSCore.SoundIn
 {
     /// <summary>
     /// Defines a interface for capturing audio. 

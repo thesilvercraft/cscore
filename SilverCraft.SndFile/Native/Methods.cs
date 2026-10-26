@@ -22,7 +22,7 @@ public static unsafe partial class Methods
 {
     public const string dllName = "libsndfile.so.1";
 
-    public static  void sfe_copy_data_int(ref sf_private_tag* outfile, ref sf_private_tag* infile, int channels)
+    public static void sfe_copy_data_int(ref sf_private_tag* outfile, ref sf_private_tag* infile, int channels)
     {
         int[]	data =new int[4096] ;
         int		frames, readcount ;

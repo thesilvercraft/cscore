@@ -4,59 +4,44 @@ using System.Runtime.InteropServices;
 using System.Runtime.Intrinsics;
 using System.Runtime.Intrinsics.X86;
 using Microsoft.Extensions.Logging;
+using SilverCraft.CSCore.PortAudio;
 using SilverCraft.CSCore.PortAudio.Native;
 using SilverCraft.CSCore.SoundOut;
 
-namespace SilverCraft.CSCore.PortAudio;
+namespace SilverCraft.CSCore.SoundOut;
 
-[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
-public unsafe delegate int StreamCallBack(void* input, void* output, ulong frameCount,
-    PaStreamCallbackTimeInfo* timeInfo, PaStreamCallbackFlags statusFlags, nint userData);
 
-[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
-public unsafe delegate void PaStreamFinishedCallback(void* userData);
 
 //https://www.portaudio.com/docs/v19-doxydocs/writing_a_callback.html
 public class PortAudioSoundOut : ISoundOut
 {
-    private readonly object streamLock = new();
+    private readonly Lock _streamLock = new();
     private StreamCallBack? _callback;
     private PaStreamFinishedCallback? _finishedCallback;
     private readonly ILogger? _log;
-    private float[]? buffer = new float[2];
-    private int channels;
-    private bool isDisposed;
-    private bool isPAInit;
-    private unsafe PaStream* stream;
+    private float[]? _buffer = new float[2];
+    private int _channels;
+    private bool _isDisposed;
+    private bool _isPaInit;
+    private unsafe PaStream* _stream;
     private int _currentStreamId;
 
-    static PortAudioSoundOut()
-    {
-        try
-        {
-            NativeLibrary.SetDllImportResolver(typeof(NativeMethods).Assembly, NativeMethods.DllImportResolver);
-        }
-        catch (InvalidOperationException)
-        {
-        }
-    }
 
     public PortAudioSoundOut()
     {
-        _log = LogLocation.GetLogger(typeof(PortAudioSoundOut));
+        _log = LogLocation.GetLogger<PortAudioSoundOut>();
     }
 
     private ISampleSource? SampleSource { get; set; }
-    private float _volume = 1.0f;
 
     public float Volume
     {
-        get => Volatile.Read(ref _volume);
-        set => Volatile.Write(ref _volume, value);
-    }
+        get => Volatile.Read(ref field);
+        set => Volatile.Write(ref field, value);
+    } = 1.0f;
 
-    public IWaveSource? WaveSource { get; set; }
-    public PlaybackState PlaybackState { get; set; } = PlaybackState.Stopped;
+    public IWaveSource? WaveSource { get; private set; }
+    public PlaybackState PlaybackState { get; private set; } = PlaybackState.Stopped;
 
     public event EventHandler<PlaybackStoppedEventArgs>? Stopped;
 
@@ -70,10 +55,10 @@ public class PortAudioSoundOut : ISoundOut
     {
         DebugTrace();
 
-        if (!isPAInit)
+        if (!_isPaInit)
         {
             PortAudioLifetimeManager.Initialize();
-            isPAInit = true;
+            _isPaInit = true;
         }
 
         CloseActiveStreamInternal();
@@ -83,15 +68,15 @@ public class PortAudioSoundOut : ISoundOut
 
         WaveSource = source;
         SampleSource = source.ToSampleSource();
-        channels = SampleSource.WaveFormat.Channels;
+        _channels = SampleSource.WaveFormat.Channels;
 
-        var initialBufferLength = Math.Max(4096 * channels, 8192);
-        buffer = new float[initialBufferLength];
+        var initialBufferLength = Math.Max(4096 * _channels, 8192);
+        _buffer = new float[initialBufferLength];
 
         _callback = CallBackMethod;
         _finishedCallback = OnStreamFinished;
 
-        int newStreamId = Interlocked.Increment(ref _currentStreamId);
+        var newStreamId = Interlocked.Increment(ref _currentStreamId);
 
         PaStream* paStream;
         ThrowIfError(NativeMethods.Pa_OpenDefaultStream(
@@ -103,9 +88,9 @@ public class PortAudioSoundOut : ISoundOut
 
         ThrowIfError(NativeMethods.Pa_SetStreamFinishedCallback(paStream, _finishedCallback));
 
-        lock (streamLock)
+        lock (_streamLock)
         {
-            stream = paStream;
+            _stream = paStream;
             PlaybackState = PlaybackState.Stopped;
         }
     }
@@ -116,11 +101,11 @@ public class PortAudioSoundOut : ISoundOut
         if (PlaybackState == PlaybackState.Playing) return;
 
         PaStream* s;
-        lock (streamLock)
+        lock (_streamLock)
         {
-            ObjectDisposedException.ThrowIf(stream == null, nameof(stream));
+            ObjectDisposedException.ThrowIf(_stream == null, nameof(_stream));
             PlaybackState = PlaybackState.Playing;
-            s = stream;
+            s = _stream;
         }
 
         ThrowIfError(NativeMethods.Pa_StartStream(s));
@@ -138,11 +123,11 @@ public class PortAudioSoundOut : ISoundOut
         if (PlaybackState != PlaybackState.Playing) return;
 
         PaStream* s;
-        lock (streamLock)
+        lock (_streamLock)
         {
-            ObjectDisposedException.ThrowIf(stream == null, nameof(stream));
+            ObjectDisposedException.ThrowIf(_stream == null, nameof(_stream));
             PlaybackState = PlaybackState.Paused;
-            s = stream;
+            s = _stream;
         }
 
         ThrowIfError(NativeMethods.Pa_StopStream(s));
@@ -157,9 +142,9 @@ public class PortAudioSoundOut : ISoundOut
         Stopped?.Invoke(this, new PlaybackStoppedEventArgs());
     }
 
-    public unsafe void OnStreamFinished(void* userData)
+    private unsafe void OnStreamFinished(void* userData)
     {
-        int callbackStreamId = (int)(nint)userData;
+        var callbackStreamId = (int)(nint)userData;
 
         if (callbackStreamId != Volatile.Read(ref _currentStreamId))
         {
@@ -173,7 +158,6 @@ public class PortAudioSoundOut : ISoundOut
             return;
         }
 
-        if (PlaybackState == PlaybackState.Stopped) return;
         Task.Run(OnStop);
     }
 
@@ -192,16 +176,16 @@ public class PortAudioSoundOut : ISoundOut
     private unsafe void CloseActiveStreamInternal()
     {
         PaStream* s;
-        lock (streamLock)
+        lock (_streamLock)
         {
-            if (stream == null)
+            if (_stream == null)
             {
                 PlaybackState = PlaybackState.Stopped;
                 return;
             }
 
-            s = stream;
-            stream = null;
+            s = _stream;
+            _stream = null;
             PlaybackState = PlaybackState.Stopped;
         }
 
@@ -216,8 +200,8 @@ public class PortAudioSoundOut : ISoundOut
 
     protected virtual void Dispose(bool disposing)
     {
-        if (isDisposed) return;
-        isDisposed = true;
+        if (_isDisposed) return;
+        _isDisposed = true;
 
         DebugTrace();
         CloseActiveStreamInternal();
@@ -226,17 +210,15 @@ public class PortAudioSoundOut : ISoundOut
         {
             SampleSource?.Dispose();
             WaveSource?.Dispose();
-            buffer = null;
+            _buffer = null;
         }
 
         _callback = null;
         _finishedCallback = null;
 
-        if (isPAInit)
-        {
-            PortAudioLifetimeManager.Terminate(_log);
-            isPAInit = false;
-        }
+        if (!_isPaInit) return;
+        PortAudioLifetimeManager.Terminate(_log);
+        _isPaInit = false;
     }
 
     ~PortAudioSoundOut()
@@ -289,21 +271,21 @@ public class PortAudioSoundOut : ISoundOut
             }
 
             var outputBuffer = (float*)output;
-            if (frameCount > (ulong)(int.MaxValue / channels))
+            if (frameCount > (ulong)(int.MaxValue / _channels))
             {
                 _log?.LogError("Unusually large frameCount in callback method {frameCount}", frameCount);
                 return (int)PaStreamCallbackResult.paAbort;
             }
-            var bufferLength = (int)frameCount * channels;
+            var bufferLength = (int)frameCount * _channels;
 
-            if (buffer == null || buffer.Length < bufferLength)
+            if (_buffer == null || _buffer.Length < bufferLength)
             {
                 new Span<float>(outputBuffer, bufferLength).Clear();
-                Array.Resize(ref buffer, bufferLength);
+                Array.Resize(ref _buffer, bufferLength);
                 return (int)PaStreamCallbackResult.paContinue;
             }
 
-            var read = localSampleSource.Read(buffer, 0, bufferLength);
+            var read = localSampleSource.Read(_buffer, 0, bufferLength);
             if (read > bufferLength)
             {
                 read=bufferLength;
@@ -313,7 +295,7 @@ public class PortAudioSoundOut : ISoundOut
                 read = 0;
             }
 
-            fixed (float* bufferStart = buffer)
+            fixed (float* bufferStart = _buffer)
             {
                 var bufferI = bufferStart;
                 var bufferEnd = bufferStart + read;

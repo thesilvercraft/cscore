@@ -64,6 +64,7 @@ namespace SilverCraft.CSCore.SoundOut
 		{
 		}
 
+		
         /// <summary>
         ///     Initializes a new instance of the <see cref="ALSoundOut" /> class based on a initial latency,
         ///     the <see cref="ThreadPriority" /> of the playback thread and the <see cref="SynchronizationContext" /> used to
@@ -84,21 +85,14 @@ namespace SilverCraft.CSCore.SoundOut
             _latency = latency;
 			_playbackPriority = playbackThreadPriority;
 			_syncContext = eventSyncContext;
-			if(!ResolverIsSet)
-			{
-				ResolverIsSet = true;
-                NativeLibrary.SetDllImportResolver(typeof(ALSoundOut).Assembly, ALInteropsNativeMethods.DllImportResolver);
-            }
+			
 
             if (!ALInteropsNativeMethods.IsSupported())
             {
                 throw new PlatformNotSupportedException("openAL is not supported by the current platform. Consider installing openAL on the current platform.");
             }
 		}
-        /// <summary>
-        /// Has ALSoundOut been called previously, if so skip setting the DLL import resolver
-        /// </summary>
-        private static bool ResolverIsSet = false;
+
         /// <summary>
         ///     Gets or sets the <see cref="Device" /> which should be used for playback.
         ///     The <see cref="Device" /> property has to be set before initializing.

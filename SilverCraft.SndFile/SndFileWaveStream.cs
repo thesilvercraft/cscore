@@ -14,17 +14,6 @@ public class SndFileWaveStream : ISampleSource
     private readonly SF_INFO _info;
     private bool _isDisposed;
 
-    static SndFileWaveStream()
-    {
-        try
-        {
-            NativeLibrary.SetDllImportResolver(typeof(Methods).Assembly, Methods.DllImportResolver);
-        }
-        catch (InvalidOperationException)
-        {
-        }
-    }
-
     public unsafe SndFileWaveStream(Stream s)
     {
         ArgumentNullException.ThrowIfNull(s);

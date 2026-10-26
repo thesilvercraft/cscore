@@ -84,7 +84,7 @@ namespace SilverCraft.CSCore.Streams
             var read = base.Read(buffer, offset, count);
 
             var channels = WaveFormat.Channels;
-            for (var i = offset; i < read; i++)
+            for (var i = offset; i < offset + read; i++)
             {
                 var channel = i % channels;
                 ChannelPeakValues[channel] = Math.Max(ChannelPeakValues[channel], Math.Abs(buffer[i]));

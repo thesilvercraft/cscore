@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace SilverCraft.CSCore.SoundIn
+﻿namespace SilverCraft.CSCore.SoundIn
 {
     /// <summary>
     /// Provides data for the <see cref="ISoundIn.DataAvailable"/> event.

@@ -1,6 +1,3 @@
-using System;
-using System.Collections.Generic;
-using System.Reflection;
 using System.Runtime.InteropServices;
 // ReSharper disable InconsistentNaming
 
@@ -12,7 +9,7 @@ namespace SilverCraft.CSCore.SoundOut.AL
         LinuxInstructions= "Please install OpenAL via your package manager:\nUbuntu/Debian: sudo apt install libopenal1 \nArch Linux: sudo pacman -Sy openal",
         GenericInstructionsLinuxEnd = "Install openAL via your package manager",
         GenericInstructionsWindowsEnd = "winget install --id CreativeTechnology.OpenAL --exact --version 1.1 or https://github.com/kcat/openal-soft") ]
-    internal  static partial class ALInteropsNativeMethods 
+    internal static partial class ALInteropsNativeMethods 
     {
         private const string libLocation = "libopenal.so.1";
 
@@ -150,7 +147,7 @@ namespace SilverCraft.CSCore.SoundOut.AL
 
         internal static string[] GetALDeviceNames()
         {
-            var strings = new string[0];
+            var strings = Array.Empty<string>();
             if (IsExtensionPresent("ALC_ENUMERATE_ALL_EXT"))
             {
                 strings =
@@ -192,7 +189,7 @@ namespace SilverCraft.CSCore.SoundOut.AL
 
         internal static bool IsExtensionPresent(string extension)
         {
-            var result = extension.StartsWith("ALC")
+            var result = extension.StartsWith("ALC", StringComparison.Ordinal)
                 ? alcIsExtensionPresent(IntPtr.Zero, extension)
                 : alIsExtensionPresent(extension);
 

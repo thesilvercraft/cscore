@@ -4,6 +4,7 @@ using System.Collections.ObjectModel;
 using System.Diagnostics;
 using System.IO;
 using System.Linq;
+using System.Text;
 
 namespace SilverCraft.CSCore.Codecs.WAV
 {
@@ -14,11 +15,10 @@ namespace SilverCraft.CSCore.Codecs.WAV
     {
         private readonly List<WaveFileChunk> _chunks;
 
-        private readonly object _lockObj = new object();
+        private readonly Lock _lockObj = new();
 
         private bool _disposed;
-        private Stream _stream;
-        private WaveFormat _waveFormat;
+        private Stream? _stream;
         private readonly DataChunk _dataChunk;
         private readonly bool _closeStream;
 
@@ -44,7 +44,7 @@ namespace SilverCraft.CSCore.Codecs.WAV
 
             _stream = stream;
 
-            var reader = new BinaryReader(stream);
+            using var reader = new BinaryReader(stream, Encoding.UTF8, true);
             if (new string(reader.ReadChars(4)) == "RIFF")
             {
                 reader.ReadInt32(); //FileLength
@@ -52,10 +52,7 @@ namespace SilverCraft.CSCore.Codecs.WAV
             }
 
             _chunks = ReadChunks(stream);
-            _dataChunk = (DataChunk)_chunks.FirstOrDefault(x => x is DataChunk);
-            if (_dataChunk == null)
-                throw new ArgumentException("The specified stream does not contain any data chunks.", nameof(stream));
-
+            _dataChunk = (DataChunk)(_chunks.FirstOrDefault(x => x is DataChunk) ?? throw new ArgumentException("The specified stream does not contain any data chunks.", nameof(stream)));
             Position = 0;
         }
 
@@ -87,17 +84,14 @@ namespace SilverCraft.CSCore.Codecs.WAV
 
                 count = (int) Math.Min(count, _dataChunk.DataEndPosition - _stream.Position);
                 count -= count % WaveFormat.BlockAlign;
-                if (count <= 0)
-                    return 0;
-
-                return _stream.Read(buffer, offset, count);
+                return count <= 0 ? 0 : _stream.Read(buffer, offset, count);
             }
         }
 
         /// <summary>
         ///     Gets the wave format of the wave file. This property gets specified by the <see cref="FmtChunk" />.
         /// </summary>
-        public WaveFormat WaveFormat => _waveFormat;
+        public WaveFormat WaveFormat { get; private set; }
 
         /// <summary>
         ///     Gets or sets the position of the <see cref="WaveFileReader" /> in bytes.
@@ -122,7 +116,7 @@ namespace SilverCraft.CSCore.Codecs.WAV
         /// <summary>
         ///     Gets the length of the <see cref="WaveFileReader" /> in bytes.
         /// </summary>
-        public long Length => _dataChunk != null ? _dataChunk.ChunkDataSize : 0;
+        public long Length => _dataChunk.ChunkDataSize;
 
         /// <summary>
         /// Gets a value indicating whether the <see cref="WaveFileReader"/> supports seeking.
@@ -146,10 +140,9 @@ namespace SilverCraft.CSCore.Codecs.WAV
                 var tmp = WaveFileChunk.FromStream(stream);
                 chunks.Add(tmp);
 
-                var fmtChunk = tmp as FmtChunk;
-                if (fmtChunk != null)
+                if (tmp is FmtChunk fmtChunk)
                 {
-                    _waveFormat = fmtChunk.WaveFormat;
+                    WaveFormat = fmtChunk.WaveFormat;
                 }
                 else
                 {
@@ -163,8 +156,7 @@ namespace SilverCraft.CSCore.Codecs.WAV
 
         private void CheckForDisposed()
         {
-            if (_disposed)
-                throw new ObjectDisposedException(GetType().FullName);
+            ObjectDisposedException.ThrowIf(_disposed, this);
         }
 
         /// <summary>

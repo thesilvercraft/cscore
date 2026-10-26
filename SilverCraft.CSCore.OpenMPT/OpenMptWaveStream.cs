@@ -1,5 +1,4 @@
-﻿using System.Runtime.InteropServices;
-using OpenMPT;
+﻿using OpenMPT;
 using SilverAudioPlayer.Shared;
 
 namespace SilverCraft.CSCore.OpenMPT;
@@ -7,15 +6,9 @@ public unsafe class OpenMptWaveStream : ISampleSource, ISelector, ILoop
 {
     openmpt_module* infile;
     MPTVirtualStreamHelper Helper;
-    public static bool ResolverIsSet = false;
-    public  OpenMptWaveStream(Stream s)
+    public OpenMptWaveStream(Stream s)
     {
         Helper = new(s);
-        if (!ResolverIsSet)
-        {
-            ResolverIsSet = true;
-            NativeLibrary.SetDllImportResolver(typeof(NativeMethods).Assembly, NativeMethods.DllImportResolver);
-        }
         infile = NativeMethods.openmpt_module_create2(Helper.Virtual, 0, null, null, null, null, null, null, null);
         WaveFormat = new WaveFormat(48000, 16, 2);
         Length = (long)(NativeMethods.openmpt_module_get_duration_seconds(infile) * WaveFormat.BytesPerSecond);

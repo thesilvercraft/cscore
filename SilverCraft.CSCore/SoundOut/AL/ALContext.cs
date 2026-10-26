@@ -6,7 +6,7 @@
     public class ALContext : IDisposable
     {
         private static readonly Dictionary<ALDevice, ContextRef> ContextDictionary = [];
-        private static readonly object ContextDictionaryLockObj = new();
+        private static readonly Lock ContextDictionaryLockObj = new();
 
         private readonly ALDevice _device;
 

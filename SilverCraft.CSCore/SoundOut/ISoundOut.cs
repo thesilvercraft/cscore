@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace SilverCraft.CSCore.SoundOut
+﻿namespace SilverCraft.CSCore.SoundOut
 {
     /// <summary>
     /// Defines a interface for audio playbacks.
