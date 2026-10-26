@@ -1,0 +1,23 @@
+### YamlMime:ManagedReference
+items:
+- uid: SilverCraft.NativeLibraryResolvers
+  commentId: N:SilverCraft.NativeLibraryResolvers
+  id: SilverCraft.NativeLibraryResolvers
+  children:
+  - SilverCraft.NativeLibraryResolvers.GlobalDllImportResolver
+  langs:
+  - csharp
+  - vb
+  name: SilverCraft.NativeLibraryResolvers
+  nameWithType: SilverCraft.NativeLibraryResolvers
+  fullName: SilverCraft.NativeLibraryResolvers
+  type: Namespace
+  assemblies:
+  - SilverCraft.CSCore
+references:
+- uid: SilverCraft.NativeLibraryResolvers.GlobalDllImportResolver
+  commentId: T:SilverCraft.NativeLibraryResolvers.GlobalDllImportResolver
+  href: SilverCraft.NativeLibraryResolvers.GlobalDllImportResolver.html
+  name: GlobalDllImportResolver
+  nameWithType: GlobalDllImportResolver
+  fullName: SilverCraft.NativeLibraryResolvers.GlobalDllImportResolver

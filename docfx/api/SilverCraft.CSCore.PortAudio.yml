@@ -4,12 +4,8 @@ items:
   commentId: N:SilverCraft.CSCore.PortAudio
   id: SilverCraft.CSCore.PortAudio
   children:
-  - SilverCraft.CSCore.PortAudio.PaStreamFinishedCallback
   - SilverCraft.CSCore.PortAudio.PortAudioException
   - SilverCraft.CSCore.PortAudio.PortAudioLifetimeManager
-  - SilverCraft.CSCore.PortAudio.PortAudioSoundIn
-  - SilverCraft.CSCore.PortAudio.PortAudioSoundOut
-  - SilverCraft.CSCore.PortAudio.StreamCallBack
   langs:
   - csharp
   - vb
@@ -18,7 +14,7 @@ items:
   fullName: SilverCraft.CSCore.PortAudio
   type: Namespace
   assemblies:
-  - SilverCraft.CSCore.PortAudio
+  - SilverCraft.CSCore
 references:
 - uid: SilverCraft.CSCore.PortAudio.PortAudioException
   commentId: T:SilverCraft.CSCore.PortAudio.PortAudioException
@@ -32,59 +28,3 @@ references:
   name: PortAudioLifetimeManager
   nameWithType: PortAudioLifetimeManager
   fullName: SilverCraft.CSCore.PortAudio.PortAudioLifetimeManager
-- uid: SilverCraft.CSCore.PortAudio.PortAudioSoundIn
-  commentId: T:SilverCraft.CSCore.PortAudio.PortAudioSoundIn
-  href: SilverCraft.CSCore.PortAudio.PortAudioSoundIn.html
-  name: PortAudioSoundIn
-  nameWithType: PortAudioSoundIn
-  fullName: SilverCraft.CSCore.PortAudio.PortAudioSoundIn
-- uid: SilverCraft.CSCore.PortAudio.StreamCallBack
-  commentId: T:SilverCraft.CSCore.PortAudio.StreamCallBack
-  parent: SilverCraft.CSCore.PortAudio
-  href: SilverCraft.CSCore.PortAudio.StreamCallBack.html
-  name: StreamCallBack
-  nameWithType: StreamCallBack
-  fullName: SilverCraft.CSCore.PortAudio.StreamCallBack
-- uid: SilverCraft.CSCore.PortAudio.PaStreamFinishedCallback
-  commentId: T:SilverCraft.CSCore.PortAudio.PaStreamFinishedCallback
-  parent: SilverCraft.CSCore.PortAudio
-  href: SilverCraft.CSCore.PortAudio.PaStreamFinishedCallback.html
-  name: PaStreamFinishedCallback
-  nameWithType: PaStreamFinishedCallback
-  fullName: SilverCraft.CSCore.PortAudio.PaStreamFinishedCallback
-- uid: SilverCraft.CSCore.PortAudio.PortAudioSoundOut
-  commentId: T:SilverCraft.CSCore.PortAudio.PortAudioSoundOut
-  href: SilverCraft.CSCore.PortAudio.PortAudioSoundOut.html
-  name: PortAudioSoundOut
-  nameWithType: PortAudioSoundOut
-  fullName: SilverCraft.CSCore.PortAudio.PortAudioSoundOut
-- uid: SilverCraft.CSCore.PortAudio
-  commentId: N:SilverCraft.CSCore.PortAudio
-  href: SilverCraft.html
-  name: SilverCraft.CSCore.PortAudio
-  nameWithType: SilverCraft.CSCore.PortAudio
-  fullName: SilverCraft.CSCore.PortAudio
-  spec.csharp:
-  - uid: SilverCraft
-    name: SilverCraft
-    href: SilverCraft.html
-  - name: .
-  - uid: SilverCraft.CSCore
-    name: CSCore
-    href: SilverCraft.CSCore.html
-  - name: .
-  - uid: SilverCraft.CSCore.PortAudio
-    name: PortAudio
-    href: SilverCraft.CSCore.PortAudio.html
-  spec.vb:
-  - uid: SilverCraft
-    name: SilverCraft
-    href: SilverCraft.html
-  - name: .
-  - uid: SilverCraft.CSCore
-    name: CSCore
-    href: SilverCraft.CSCore.html
-  - name: .
-  - uid: SilverCraft.CSCore.PortAudio
-    name: PortAudio
-    href: SilverCraft.CSCore.PortAudio.html

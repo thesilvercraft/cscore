@@ -44,14 +44,14 @@ items:
   type: Enum
   source:
     remote:
-      path: SilverCraft.CSCore.PortAudio/Native/PaErrorCode.cs
+      path: SilverCraft.CSCore/PortAudio/Native/PaErrorCode.cs
       branch: master
       repo: https://github.com/thesilvercraft/cscore
     id: PaErrorCode
-    path: ../SilverCraft.CSCore.PortAudio/Native/PaErrorCode.cs
+    path: ../SilverCraft.CSCore/PortAudio/Native/PaErrorCode.cs
     startLine: 2
   assemblies:
-  - SilverCraft.CSCore.PortAudio
+  - SilverCraft.CSCore
   namespace: SilverCraft.CSCore.PortAudio.Native
   syntax:
     content: public enum PaErrorCode
@@ -69,14 +69,14 @@ items:
   type: Field
   source:
     remote:
-      path: SilverCraft.CSCore.PortAudio/Native/PaErrorCode.cs
+      path: SilverCraft.CSCore/PortAudio/Native/PaErrorCode.cs
       branch: master
       repo: https://github.com/thesilvercraft/cscore
     id: paNoError
-    path: ../SilverCraft.CSCore.PortAudio/Native/PaErrorCode.cs
+    path: ../SilverCraft.CSCore/PortAudio/Native/PaErrorCode.cs
     startLine: 4
   assemblies:
-  - SilverCraft.CSCore.PortAudio
+  - SilverCraft.CSCore
   namespace: SilverCraft.CSCore.PortAudio.Native
   syntax:
     content: paNoError = 0
@@ -95,14 +95,14 @@ items:
   type: Field
   source:
     remote:
-      path: SilverCraft.CSCore.PortAudio/Native/PaErrorCode.cs
+      path: SilverCraft.CSCore/PortAudio/Native/PaErrorCode.cs
       branch: master
       repo: https://github.com/thesilvercraft/cscore
     id: paNotInitialized
-    path: ../SilverCraft.CSCore.PortAudio/Native/PaErrorCode.cs
+    path: ../SilverCraft.CSCore/PortAudio/Native/PaErrorCode.cs
     startLine: 5
   assemblies:
-  - SilverCraft.CSCore.PortAudio
+  - SilverCraft.CSCore
   namespace: SilverCraft.CSCore.PortAudio.Native
   syntax:
     content: paNotInitialized = -10000
@@ -121,14 +121,14 @@ items:
   type: Field
   source:
     remote:
-      path: SilverCraft.CSCore.PortAudio/Native/PaErrorCode.cs
+      path: SilverCraft.CSCore/PortAudio/Native/PaErrorCode.cs
       branch: master
       repo: https://github.com/thesilvercraft/cscore
     id: paUnanticipatedHostError
-    path: ../SilverCraft.CSCore.PortAudio/Native/PaErrorCode.cs
+    path: ../SilverCraft.CSCore/PortAudio/Native/PaErrorCode.cs
     startLine: 6
   assemblies:
-  - SilverCraft.CSCore.PortAudio
+  - SilverCraft.CSCore
   namespace: SilverCraft.CSCore.PortAudio.Native
   syntax:
     content: paUnanticipatedHostError = -9999
@@ -147,14 +147,14 @@ items:
   type: Field
   source:
     remote:
-      path: SilverCraft.CSCore.PortAudio/Native/PaErrorCode.cs
+      path: SilverCraft.CSCore/PortAudio/Native/PaErrorCode.cs
       branch: master
       repo: https://github.com/thesilvercraft/cscore
     id: paInvalidChannelCount
-    path: ../SilverCraft.CSCore.PortAudio/Native/PaErrorCode.cs
+    path: ../SilverCraft.CSCore/PortAudio/Native/PaErrorCode.cs
     startLine: 7
   assemblies:
-  - SilverCraft.CSCore.PortAudio
+  - SilverCraft.CSCore
   namespace: SilverCraft.CSCore.PortAudio.Native
   syntax:
     content: paInvalidChannelCount = -9998
@@ -173,14 +173,14 @@ items:
   type: Field
   source:
     remote:
-      path: SilverCraft.CSCore.PortAudio/Native/PaErrorCode.cs
+      path: SilverCraft.CSCore/PortAudio/Native/PaErrorCode.cs
       branch: master
       repo: https://github.com/thesilvercraft/cscore
     id: paInvalidSampleRate
-    path: ../SilverCraft.CSCore.PortAudio/Native/PaErrorCode.cs
+    path: ../SilverCraft.CSCore/PortAudio/Native/PaErrorCode.cs
     startLine: 8
   assemblies:
-  - SilverCraft.CSCore.PortAudio
+  - SilverCraft.CSCore
   namespace: SilverCraft.CSCore.PortAudio.Native
   syntax:
     content: paInvalidSampleRate = -9997
@@ -199,14 +199,14 @@ items:
   type: Field
   source:
     remote:
-      path: SilverCraft.CSCore.PortAudio/Native/PaErrorCode.cs
+      path: SilverCraft.CSCore/PortAudio/Native/PaErrorCode.cs
       branch: master
       repo: https://github.com/thesilvercraft/cscore
     id: paInvalidDevice
-    path: ../SilverCraft.CSCore.PortAudio/Native/PaErrorCode.cs
+    path: ../SilverCraft.CSCore/PortAudio/Native/PaErrorCode.cs
     startLine: 9
   assemblies:
-  - SilverCraft.CSCore.PortAudio
+  - SilverCraft.CSCore
   namespace: SilverCraft.CSCore.PortAudio.Native
   syntax:
     content: paInvalidDevice = -9996
@@ -225,14 +225,14 @@ items:
   type: Field
   source:
     remote:
-      path: SilverCraft.CSCore.PortAudio/Native/PaErrorCode.cs
+      path: SilverCraft.CSCore/PortAudio/Native/PaErrorCode.cs
       branch: master
       repo: https://github.com/thesilvercraft/cscore
     id: paInvalidFlag
-    path: ../SilverCraft.CSCore.PortAudio/Native/PaErrorCode.cs
+    path: ../SilverCraft.CSCore/PortAudio/Native/PaErrorCode.cs
     startLine: 10
   assemblies:
-  - SilverCraft.CSCore.PortAudio
+  - SilverCraft.CSCore
   namespace: SilverCraft.CSCore.PortAudio.Native
   syntax:
     content: paInvalidFlag = -9995
@@ -251,14 +251,14 @@ items:
   type: Field
   source:
     remote:
-      path: SilverCraft.CSCore.PortAudio/Native/PaErrorCode.cs
+      path: SilverCraft.CSCore/PortAudio/Native/PaErrorCode.cs
       branch: master
       repo: https://github.com/thesilvercraft/cscore
     id: paSampleFormatNotSupported
-    path: ../SilverCraft.CSCore.PortAudio/Native/PaErrorCode.cs
+    path: ../SilverCraft.CSCore/PortAudio/Native/PaErrorCode.cs
     startLine: 11
   assemblies:
-  - SilverCraft.CSCore.PortAudio
+  - SilverCraft.CSCore
   namespace: SilverCraft.CSCore.PortAudio.Native
   syntax:
     content: paSampleFormatNotSupported = -9994
@@ -277,14 +277,14 @@ items:
   type: Field
   source:
     remote:
-      path: SilverCraft.CSCore.PortAudio/Native/PaErrorCode.cs
+      path: SilverCraft.CSCore/PortAudio/Native/PaErrorCode.cs
       branch: master
       repo: https://github.com/thesilvercraft/cscore
     id: paBadIODeviceCombination
-    path: ../SilverCraft.CSCore.PortAudio/Native/PaErrorCode.cs
+    path: ../SilverCraft.CSCore/PortAudio/Native/PaErrorCode.cs
     startLine: 12
   assemblies:
-  - SilverCraft.CSCore.PortAudio
+  - SilverCraft.CSCore
   namespace: SilverCraft.CSCore.PortAudio.Native
   syntax:
     content: paBadIODeviceCombination = -9993
@@ -303,14 +303,14 @@ items:
   type: Field
   source:
     remote:
-      path: SilverCraft.CSCore.PortAudio/Native/PaErrorCode.cs
+      path: SilverCraft.CSCore/PortAudio/Native/PaErrorCode.cs
       branch: master
       repo: https://github.com/thesilvercraft/cscore
     id: paInsufficientMemory
-    path: ../SilverCraft.CSCore.PortAudio/Native/PaErrorCode.cs
+    path: ../SilverCraft.CSCore/PortAudio/Native/PaErrorCode.cs
     startLine: 13
   assemblies:
-  - SilverCraft.CSCore.PortAudio
+  - SilverCraft.CSCore
   namespace: SilverCraft.CSCore.PortAudio.Native
   syntax:
     content: paInsufficientMemory = -9992
@@ -329,14 +329,14 @@ items:
   type: Field
   source:
     remote:
-      path: SilverCraft.CSCore.PortAudio/Native/PaErrorCode.cs
+      path: SilverCraft.CSCore/PortAudio/Native/PaErrorCode.cs
       branch: master
       repo: https://github.com/thesilvercraft/cscore
     id: paBufferTooBig
-    path: ../SilverCraft.CSCore.PortAudio/Native/PaErrorCode.cs
+    path: ../SilverCraft.CSCore/PortAudio/Native/PaErrorCode.cs
     startLine: 14
   assemblies:
-  - SilverCraft.CSCore.PortAudio
+  - SilverCraft.CSCore
   namespace: SilverCraft.CSCore.PortAudio.Native
   syntax:
     content: paBufferTooBig = -9991
@@ -355,14 +355,14 @@ items:
   type: Field
   source:
     remote:
-      path: SilverCraft.CSCore.PortAudio/Native/PaErrorCode.cs
+      path: SilverCraft.CSCore/PortAudio/Native/PaErrorCode.cs
       branch: master
       repo: https://github.com/thesilvercraft/cscore
     id: paBufferTooSmall
-    path: ../SilverCraft.CSCore.PortAudio/Native/PaErrorCode.cs
+    path: ../SilverCraft.CSCore/PortAudio/Native/PaErrorCode.cs
     startLine: 15
   assemblies:
-  - SilverCraft.CSCore.PortAudio
+  - SilverCraft.CSCore
   namespace: SilverCraft.CSCore.PortAudio.Native
   syntax:
     content: paBufferTooSmall = -9990
@@ -381,14 +381,14 @@ items:
   type: Field
   source:
     remote:
-      path: SilverCraft.CSCore.PortAudio/Native/PaErrorCode.cs
+      path: SilverCraft.CSCore/PortAudio/Native/PaErrorCode.cs
       branch: master
       repo: https://github.com/thesilvercraft/cscore
     id: paNullCallback
-    path: ../SilverCraft.CSCore.PortAudio/Native/PaErrorCode.cs
+    path: ../SilverCraft.CSCore/PortAudio/Native/PaErrorCode.cs
     startLine: 16
   assemblies:
-  - SilverCraft.CSCore.PortAudio
+  - SilverCraft.CSCore
   namespace: SilverCraft.CSCore.PortAudio.Native
   syntax:
     content: paNullCallback = -9989
@@ -407,14 +407,14 @@ items:
   type: Field
   source:
     remote:
-      path: SilverCraft.CSCore.PortAudio/Native/PaErrorCode.cs
+      path: SilverCraft.CSCore/PortAudio/Native/PaErrorCode.cs
       branch: master
       repo: https://github.com/thesilvercraft/cscore
     id: paBadStreamPtr
-    path: ../SilverCraft.CSCore.PortAudio/Native/PaErrorCode.cs
+    path: ../SilverCraft.CSCore/PortAudio/Native/PaErrorCode.cs
     startLine: 17
   assemblies:
-  - SilverCraft.CSCore.PortAudio
+  - SilverCraft.CSCore
   namespace: SilverCraft.CSCore.PortAudio.Native
   syntax:
     content: paBadStreamPtr = -9988
@@ -433,14 +433,14 @@ items:
   type: Field
   source:
     remote:
-      path: SilverCraft.CSCore.PortAudio/Native/PaErrorCode.cs
+      path: SilverCraft.CSCore/PortAudio/Native/PaErrorCode.cs
       branch: master
       repo: https://github.com/thesilvercraft/cscore
     id: paTimedOut
-    path: ../SilverCraft.CSCore.PortAudio/Native/PaErrorCode.cs
+    path: ../SilverCraft.CSCore/PortAudio/Native/PaErrorCode.cs
     startLine: 18
   assemblies:
-  - SilverCraft.CSCore.PortAudio
+  - SilverCraft.CSCore
   namespace: SilverCraft.CSCore.PortAudio.Native
   syntax:
     content: paTimedOut = -9987
@@ -459,14 +459,14 @@ items:
   type: Field
   source:
     remote:
-      path: SilverCraft.CSCore.PortAudio/Native/PaErrorCode.cs
+      path: SilverCraft.CSCore/PortAudio/Native/PaErrorCode.cs
       branch: master
       repo: https://github.com/thesilvercraft/cscore
     id: paInternalError
-    path: ../SilverCraft.CSCore.PortAudio/Native/PaErrorCode.cs
+    path: ../SilverCraft.CSCore/PortAudio/Native/PaErrorCode.cs
     startLine: 19
   assemblies:
-  - SilverCraft.CSCore.PortAudio
+  - SilverCraft.CSCore
   namespace: SilverCraft.CSCore.PortAudio.Native
   syntax:
     content: paInternalError = -9986
@@ -485,14 +485,14 @@ items:
   type: Field
   source:
     remote:
-      path: SilverCraft.CSCore.PortAudio/Native/PaErrorCode.cs
+      path: SilverCraft.CSCore/PortAudio/Native/PaErrorCode.cs
       branch: master
       repo: https://github.com/thesilvercraft/cscore
     id: paDeviceUnavailable
-    path: ../SilverCraft.CSCore.PortAudio/Native/PaErrorCode.cs
+    path: ../SilverCraft.CSCore/PortAudio/Native/PaErrorCode.cs
     startLine: 20
   assemblies:
-  - SilverCraft.CSCore.PortAudio
+  - SilverCraft.CSCore
   namespace: SilverCraft.CSCore.PortAudio.Native
   syntax:
     content: paDeviceUnavailable = -9985
@@ -511,14 +511,14 @@ items:
   type: Field
   source:
     remote:
-      path: SilverCraft.CSCore.PortAudio/Native/PaErrorCode.cs
+      path: SilverCraft.CSCore/PortAudio/Native/PaErrorCode.cs
       branch: master
       repo: https://github.com/thesilvercraft/cscore
     id: paIncompatibleHostApiSpecificStreamInfo
-    path: ../SilverCraft.CSCore.PortAudio/Native/PaErrorCode.cs
+    path: ../SilverCraft.CSCore/PortAudio/Native/PaErrorCode.cs
     startLine: 21
   assemblies:
-  - SilverCraft.CSCore.PortAudio
+  - SilverCraft.CSCore
   namespace: SilverCraft.CSCore.PortAudio.Native
   syntax:
     content: paIncompatibleHostApiSpecificStreamInfo = -9984
@@ -537,14 +537,14 @@ items:
   type: Field
   source:
     remote:
-      path: SilverCraft.CSCore.PortAudio/Native/PaErrorCode.cs
+      path: SilverCraft.CSCore/PortAudio/Native/PaErrorCode.cs
       branch: master
       repo: https://github.com/thesilvercraft/cscore
     id: paStreamIsStopped
-    path: ../SilverCraft.CSCore.PortAudio/Native/PaErrorCode.cs
+    path: ../SilverCraft.CSCore/PortAudio/Native/PaErrorCode.cs
     startLine: 22
   assemblies:
-  - SilverCraft.CSCore.PortAudio
+  - SilverCraft.CSCore
   namespace: SilverCraft.CSCore.PortAudio.Native
   syntax:
     content: paStreamIsStopped = -9983
@@ -563,14 +563,14 @@ items:
   type: Field
   source:
     remote:
-      path: SilverCraft.CSCore.PortAudio/Native/PaErrorCode.cs
+      path: SilverCraft.CSCore/PortAudio/Native/PaErrorCode.cs
       branch: master
       repo: https://github.com/thesilvercraft/cscore
     id: paStreamIsNotStopped
-    path: ../SilverCraft.CSCore.PortAudio/Native/PaErrorCode.cs
+    path: ../SilverCraft.CSCore/PortAudio/Native/PaErrorCode.cs
     startLine: 23
   assemblies:
-  - SilverCraft.CSCore.PortAudio
+  - SilverCraft.CSCore
   namespace: SilverCraft.CSCore.PortAudio.Native
   syntax:
     content: paStreamIsNotStopped = -9982
@@ -589,14 +589,14 @@ items:
   type: Field
   source:
     remote:
-      path: SilverCraft.CSCore.PortAudio/Native/PaErrorCode.cs
+      path: SilverCraft.CSCore/PortAudio/Native/PaErrorCode.cs
       branch: master
       repo: https://github.com/thesilvercraft/cscore
     id: paInputOverflowed
-    path: ../SilverCraft.CSCore.PortAudio/Native/PaErrorCode.cs
+    path: ../SilverCraft.CSCore/PortAudio/Native/PaErrorCode.cs
     startLine: 24
   assemblies:
-  - SilverCraft.CSCore.PortAudio
+  - SilverCraft.CSCore
   namespace: SilverCraft.CSCore.PortAudio.Native
   syntax:
     content: paInputOverflowed = -9981
@@ -615,14 +615,14 @@ items:
   type: Field
   source:
     remote:
-      path: SilverCraft.CSCore.PortAudio/Native/PaErrorCode.cs
+      path: SilverCraft.CSCore/PortAudio/Native/PaErrorCode.cs
       branch: master
       repo: https://github.com/thesilvercraft/cscore
     id: paOutputUnderflowed
-    path: ../SilverCraft.CSCore.PortAudio/Native/PaErrorCode.cs
+    path: ../SilverCraft.CSCore/PortAudio/Native/PaErrorCode.cs
     startLine: 25
   assemblies:
-  - SilverCraft.CSCore.PortAudio
+  - SilverCraft.CSCore
   namespace: SilverCraft.CSCore.PortAudio.Native
   syntax:
     content: paOutputUnderflowed = -9980
@@ -641,14 +641,14 @@ items:
   type: Field
   source:
     remote:
-      path: SilverCraft.CSCore.PortAudio/Native/PaErrorCode.cs
+      path: SilverCraft.CSCore/PortAudio/Native/PaErrorCode.cs
       branch: master
       repo: https://github.com/thesilvercraft/cscore
     id: paHostApiNotFound
-    path: ../SilverCraft.CSCore.PortAudio/Native/PaErrorCode.cs
+    path: ../SilverCraft.CSCore/PortAudio/Native/PaErrorCode.cs
     startLine: 26
   assemblies:
-  - SilverCraft.CSCore.PortAudio
+  - SilverCraft.CSCore
   namespace: SilverCraft.CSCore.PortAudio.Native
   syntax:
     content: paHostApiNotFound = -9979
@@ -667,14 +667,14 @@ items:
   type: Field
   source:
     remote:
-      path: SilverCraft.CSCore.PortAudio/Native/PaErrorCode.cs
+      path: SilverCraft.CSCore/PortAudio/Native/PaErrorCode.cs
       branch: master
       repo: https://github.com/thesilvercraft/cscore
     id: paInvalidHostApi
-    path: ../SilverCraft.CSCore.PortAudio/Native/PaErrorCode.cs
+    path: ../SilverCraft.CSCore/PortAudio/Native/PaErrorCode.cs
     startLine: 27
   assemblies:
-  - SilverCraft.CSCore.PortAudio
+  - SilverCraft.CSCore
   namespace: SilverCraft.CSCore.PortAudio.Native
   syntax:
     content: paInvalidHostApi = -9978
@@ -693,14 +693,14 @@ items:
   type: Field
   source:
     remote:
-      path: SilverCraft.CSCore.PortAudio/Native/PaErrorCode.cs
+      path: SilverCraft.CSCore/PortAudio/Native/PaErrorCode.cs
       branch: master
       repo: https://github.com/thesilvercraft/cscore
     id: paCanNotReadFromACallbackStream
-    path: ../SilverCraft.CSCore.PortAudio/Native/PaErrorCode.cs
+    path: ../SilverCraft.CSCore/PortAudio/Native/PaErrorCode.cs
     startLine: 28
   assemblies:
-  - SilverCraft.CSCore.PortAudio
+  - SilverCraft.CSCore
   namespace: SilverCraft.CSCore.PortAudio.Native
   syntax:
     content: paCanNotReadFromACallbackStream = -9977
@@ -719,14 +719,14 @@ items:
   type: Field
   source:
     remote:
-      path: SilverCraft.CSCore.PortAudio/Native/PaErrorCode.cs
+      path: SilverCraft.CSCore/PortAudio/Native/PaErrorCode.cs
       branch: master
       repo: https://github.com/thesilvercraft/cscore
     id: paCanNotWriteToACallbackStream
-    path: ../SilverCraft.CSCore.PortAudio/Native/PaErrorCode.cs
+    path: ../SilverCraft.CSCore/PortAudio/Native/PaErrorCode.cs
     startLine: 29
   assemblies:
-  - SilverCraft.CSCore.PortAudio
+  - SilverCraft.CSCore
   namespace: SilverCraft.CSCore.PortAudio.Native
   syntax:
     content: paCanNotWriteToACallbackStream = -9976
@@ -745,14 +745,14 @@ items:
   type: Field
   source:
     remote:
-      path: SilverCraft.CSCore.PortAudio/Native/PaErrorCode.cs
+      path: SilverCraft.CSCore/PortAudio/Native/PaErrorCode.cs
       branch: master
       repo: https://github.com/thesilvercraft/cscore
     id: paCanNotReadFromAnOutputOnlyStream
-    path: ../SilverCraft.CSCore.PortAudio/Native/PaErrorCode.cs
+    path: ../SilverCraft.CSCore/PortAudio/Native/PaErrorCode.cs
     startLine: 30
   assemblies:
-  - SilverCraft.CSCore.PortAudio
+  - SilverCraft.CSCore
   namespace: SilverCraft.CSCore.PortAudio.Native
   syntax:
     content: paCanNotReadFromAnOutputOnlyStream = -9975
@@ -771,14 +771,14 @@ items:
   type: Field
   source:
     remote:
-      path: SilverCraft.CSCore.PortAudio/Native/PaErrorCode.cs
+      path: SilverCraft.CSCore/PortAudio/Native/PaErrorCode.cs
       branch: master
       repo: https://github.com/thesilvercraft/cscore
     id: paCanNotWriteToAnInputOnlyStream
-    path: ../SilverCraft.CSCore.PortAudio/Native/PaErrorCode.cs
+    path: ../SilverCraft.CSCore/PortAudio/Native/PaErrorCode.cs
     startLine: 31
   assemblies:
-  - SilverCraft.CSCore.PortAudio
+  - SilverCraft.CSCore
   namespace: SilverCraft.CSCore.PortAudio.Native
   syntax:
     content: paCanNotWriteToAnInputOnlyStream = -9974
@@ -797,14 +797,14 @@ items:
   type: Field
   source:
     remote:
-      path: SilverCraft.CSCore.PortAudio/Native/PaErrorCode.cs
+      path: SilverCraft.CSCore/PortAudio/Native/PaErrorCode.cs
       branch: master
       repo: https://github.com/thesilvercraft/cscore
     id: paIncompatibleStreamHostApi
-    path: ../SilverCraft.CSCore.PortAudio/Native/PaErrorCode.cs
+    path: ../SilverCraft.CSCore/PortAudio/Native/PaErrorCode.cs
     startLine: 32
   assemblies:
-  - SilverCraft.CSCore.PortAudio
+  - SilverCraft.CSCore
   namespace: SilverCraft.CSCore.PortAudio.Native
   syntax:
     content: paIncompatibleStreamHostApi = -9973
@@ -823,14 +823,14 @@ items:
   type: Field
   source:
     remote:
-      path: SilverCraft.CSCore.PortAudio/Native/PaErrorCode.cs
+      path: SilverCraft.CSCore/PortAudio/Native/PaErrorCode.cs
       branch: master
       repo: https://github.com/thesilvercraft/cscore
     id: paBadBufferPtr
-    path: ../SilverCraft.CSCore.PortAudio/Native/PaErrorCode.cs
+    path: ../SilverCraft.CSCore/PortAudio/Native/PaErrorCode.cs
     startLine: 33
   assemblies:
-  - SilverCraft.CSCore.PortAudio
+  - SilverCraft.CSCore
   namespace: SilverCraft.CSCore.PortAudio.Native
   syntax:
     content: paBadBufferPtr = -9972

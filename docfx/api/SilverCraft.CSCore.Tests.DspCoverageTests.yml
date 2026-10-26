@@ -1,0 +1,851 @@
+### YamlMime:ManagedReference
+items:
+- uid: SilverCraft.CSCore.Tests.DspCoverageTests
+  commentId: T:SilverCraft.CSCore.Tests.DspCoverageTests
+  id: DspCoverageTests
+  parent: SilverCraft.CSCore.Tests
+  children:
+  - SilverCraft.CSCore.Tests.DspCoverageTests.BiquadFilters_ProduceFiniteStableOutput(System.Double)
+  - SilverCraft.CSCore.Tests.DspCoverageTests.ChannelMatrixElement_StoresChannelMappingAndCoefficient
+  - SilverCraft.CSCore.Tests.DspCoverageTests.ChannelMatrix_MapsStereoToMonoAndFlipRestoresDimensions
+  - SilverCraft.CSCore.Tests.DspCoverageTests.ChannelMatrix_ValidatesMasksAndMatrixDimensions
+  - SilverCraft.CSCore.Tests.DspCoverageTests.CreateTenBandEqualizer_RequiresSampleRateAtLeast32000
+  - SilverCraft.CSCore.Tests.DspCoverageTests.EqualizerAndChannelFilters_CloneAndClampOutput
+  - SilverCraft.CSCore.Tests.DspCoverageTests.EqualizerFilterCollection_SortsBandsAndAppliesAverageGain
+  - SilverCraft.CSCore.Tests.DspCoverageTests.FftProvider_ConsumesNewDataOnceAndValidatesBuffers
+  - SilverCraft.CSCore.Tests.DspCoverageTests.PitchShifter_ProcessesShiftedSamplesAndKeepsOutputBounded
+  - SilverCraft.CSCore.Tests.DspCoverageTests.ShelfAndPeakFilters_RecalculateForBoostAndCut
+  langs:
+  - csharp
+  - vb
+  name: DspCoverageTests
+  nameWithType: DspCoverageTests
+  fullName: SilverCraft.CSCore.Tests.DspCoverageTests
+  type: Class
+  source:
+    remote:
+      path: SilverCraft.CSCore.Tests/DspCoverageTests.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: DspCoverageTests
+    path: ../SilverCraft.CSCore.Tests/DspCoverageTests.cs
+    startLine: 6
+  assemblies:
+  - SilverCraft.CSCore.Tests
+  namespace: SilverCraft.CSCore.Tests
+  syntax:
+    content: public sealed class DspCoverageTests
+    content.vb: Public NotInheritable Class DspCoverageTests
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  extensionMethods:
+  - SilverCraft.CSCore.Tests.DspCoverageTests.SilverCraft.CSCore.FluentExtensions.Synchronized``2
+- uid: SilverCraft.CSCore.Tests.DspCoverageTests.BiquadFilters_ProduceFiniteStableOutput(System.Double)
+  commentId: M:SilverCraft.CSCore.Tests.DspCoverageTests.BiquadFilters_ProduceFiniteStableOutput(System.Double)
+  id: BiquadFilters_ProduceFiniteStableOutput(System.Double)
+  parent: SilverCraft.CSCore.Tests.DspCoverageTests
+  langs:
+  - csharp
+  - vb
+  name: BiquadFilters_ProduceFiniteStableOutput(double)
+  nameWithType: DspCoverageTests.BiquadFilters_ProduceFiniteStableOutput(double)
+  fullName: SilverCraft.CSCore.Tests.DspCoverageTests.BiquadFilters_ProduceFiniteStableOutput(double)
+  type: Method
+  source:
+    remote:
+      path: SilverCraft.CSCore.Tests/DspCoverageTests.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: BiquadFilters_ProduceFiniteStableOutput
+    path: ../SilverCraft.CSCore.Tests/DspCoverageTests.cs
+    startLine: 8
+  assemblies:
+  - SilverCraft.CSCore.Tests
+  namespace: SilverCraft.CSCore.Tests
+  syntax:
+    content: >-
+      [Theory]
+
+      [InlineData(new object[] { 100 })]
+
+      [InlineData(new object[] { 10000 })]
+
+      public void BiquadFilters_ProduceFiniteStableOutput(double frequency)
+    parameters:
+    - id: frequency
+      type: System.Double
+    content.vb: >-
+      <Theory>
+
+      <InlineData(New Object() { 100 })>
+
+      <InlineData(New Object() { 10000 })>
+
+      Public Sub BiquadFilters_ProduceFiniteStableOutput(frequency As Double)
+  overload: SilverCraft.CSCore.Tests.DspCoverageTests.BiquadFilters_ProduceFiniteStableOutput*
+  attributes:
+  - type: Xunit.TheoryAttribute
+    ctor: Xunit.TheoryAttribute.#ctor
+    arguments: []
+  nameWithType.vb: DspCoverageTests.BiquadFilters_ProduceFiniteStableOutput(Double)
+  fullName.vb: SilverCraft.CSCore.Tests.DspCoverageTests.BiquadFilters_ProduceFiniteStableOutput(Double)
+  name.vb: BiquadFilters_ProduceFiniteStableOutput(Double)
+- uid: SilverCraft.CSCore.Tests.DspCoverageTests.ShelfAndPeakFilters_RecalculateForBoostAndCut
+  commentId: M:SilverCraft.CSCore.Tests.DspCoverageTests.ShelfAndPeakFilters_RecalculateForBoostAndCut
+  id: ShelfAndPeakFilters_RecalculateForBoostAndCut
+  parent: SilverCraft.CSCore.Tests.DspCoverageTests
+  langs:
+  - csharp
+  - vb
+  name: ShelfAndPeakFilters_RecalculateForBoostAndCut()
+  nameWithType: DspCoverageTests.ShelfAndPeakFilters_RecalculateForBoostAndCut()
+  fullName: SilverCraft.CSCore.Tests.DspCoverageTests.ShelfAndPeakFilters_RecalculateForBoostAndCut()
+  type: Method
+  source:
+    remote:
+      path: SilverCraft.CSCore.Tests/DspCoverageTests.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: ShelfAndPeakFilters_RecalculateForBoostAndCut
+    path: ../SilverCraft.CSCore.Tests/DspCoverageTests.cs
+    startLine: 31
+  assemblies:
+  - SilverCraft.CSCore.Tests
+  namespace: SilverCraft.CSCore.Tests
+  syntax:
+    content: >-
+      [Fact]
+
+      public void ShelfAndPeakFilters_RecalculateForBoostAndCut()
+    content.vb: >-
+      <Fact>
+
+      Public Sub ShelfAndPeakFilters_RecalculateForBoostAndCut()
+  overload: SilverCraft.CSCore.Tests.DspCoverageTests.ShelfAndPeakFilters_RecalculateForBoostAndCut*
+  attributes:
+  - type: Xunit.FactAttribute
+    ctor: Xunit.FactAttribute.#ctor
+    arguments: []
+- uid: SilverCraft.CSCore.Tests.DspCoverageTests.ChannelMatrix_MapsStereoToMonoAndFlipRestoresDimensions
+  commentId: M:SilverCraft.CSCore.Tests.DspCoverageTests.ChannelMatrix_MapsStereoToMonoAndFlipRestoresDimensions
+  id: ChannelMatrix_MapsStereoToMonoAndFlipRestoresDimensions
+  parent: SilverCraft.CSCore.Tests.DspCoverageTests
+  langs:
+  - csharp
+  - vb
+  name: ChannelMatrix_MapsStereoToMonoAndFlipRestoresDimensions()
+  nameWithType: DspCoverageTests.ChannelMatrix_MapsStereoToMonoAndFlipRestoresDimensions()
+  fullName: SilverCraft.CSCore.Tests.DspCoverageTests.ChannelMatrix_MapsStereoToMonoAndFlipRestoresDimensions()
+  type: Method
+  source:
+    remote:
+      path: SilverCraft.CSCore.Tests/DspCoverageTests.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: ChannelMatrix_MapsStereoToMonoAndFlipRestoresDimensions
+    path: ../SilverCraft.CSCore.Tests/DspCoverageTests.cs
+    startLine: 50
+  assemblies:
+  - SilverCraft.CSCore.Tests
+  namespace: SilverCraft.CSCore.Tests
+  syntax:
+    content: >-
+      [Fact]
+
+      public void ChannelMatrix_MapsStereoToMonoAndFlipRestoresDimensions()
+    content.vb: >-
+      <Fact>
+
+      Public Sub ChannelMatrix_MapsStereoToMonoAndFlipRestoresDimensions()
+  overload: SilverCraft.CSCore.Tests.DspCoverageTests.ChannelMatrix_MapsStereoToMonoAndFlipRestoresDimensions*
+  attributes:
+  - type: Xunit.FactAttribute
+    ctor: Xunit.FactAttribute.#ctor
+    arguments: []
+- uid: SilverCraft.CSCore.Tests.DspCoverageTests.ChannelMatrix_ValidatesMasksAndMatrixDimensions
+  commentId: M:SilverCraft.CSCore.Tests.DspCoverageTests.ChannelMatrix_ValidatesMasksAndMatrixDimensions
+  id: ChannelMatrix_ValidatesMasksAndMatrixDimensions
+  parent: SilverCraft.CSCore.Tests.DspCoverageTests
+  langs:
+  - csharp
+  - vb
+  name: ChannelMatrix_ValidatesMasksAndMatrixDimensions()
+  nameWithType: DspCoverageTests.ChannelMatrix_ValidatesMasksAndMatrixDimensions()
+  fullName: SilverCraft.CSCore.Tests.DspCoverageTests.ChannelMatrix_ValidatesMasksAndMatrixDimensions()
+  type: Method
+  source:
+    remote:
+      path: SilverCraft.CSCore.Tests/DspCoverageTests.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: ChannelMatrix_ValidatesMasksAndMatrixDimensions
+    path: ../SilverCraft.CSCore.Tests/DspCoverageTests.cs
+    startLine: 65
+  assemblies:
+  - SilverCraft.CSCore.Tests
+  namespace: SilverCraft.CSCore.Tests
+  syntax:
+    content: >-
+      [Fact]
+
+      public void ChannelMatrix_ValidatesMasksAndMatrixDimensions()
+    content.vb: >-
+      <Fact>
+
+      Public Sub ChannelMatrix_ValidatesMasksAndMatrixDimensions()
+  overload: SilverCraft.CSCore.Tests.DspCoverageTests.ChannelMatrix_ValidatesMasksAndMatrixDimensions*
+  attributes:
+  - type: Xunit.FactAttribute
+    ctor: Xunit.FactAttribute.#ctor
+    arguments: []
+- uid: SilverCraft.CSCore.Tests.DspCoverageTests.ChannelMatrixElement_StoresChannelMappingAndCoefficient
+  commentId: M:SilverCraft.CSCore.Tests.DspCoverageTests.ChannelMatrixElement_StoresChannelMappingAndCoefficient
+  id: ChannelMatrixElement_StoresChannelMappingAndCoefficient
+  parent: SilverCraft.CSCore.Tests.DspCoverageTests
+  langs:
+  - csharp
+  - vb
+  name: ChannelMatrixElement_StoresChannelMappingAndCoefficient()
+  nameWithType: DspCoverageTests.ChannelMatrixElement_StoresChannelMappingAndCoefficient()
+  fullName: SilverCraft.CSCore.Tests.DspCoverageTests.ChannelMatrixElement_StoresChannelMappingAndCoefficient()
+  type: Method
+  source:
+    remote:
+      path: SilverCraft.CSCore.Tests/DspCoverageTests.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: ChannelMatrixElement_StoresChannelMappingAndCoefficient
+    path: ../SilverCraft.CSCore.Tests/DspCoverageTests.cs
+    startLine: 75
+  assemblies:
+  - SilverCraft.CSCore.Tests
+  namespace: SilverCraft.CSCore.Tests
+  syntax:
+    content: >-
+      [Fact]
+
+      public void ChannelMatrixElement_StoresChannelMappingAndCoefficient()
+    content.vb: >-
+      <Fact>
+
+      Public Sub ChannelMatrixElement_StoresChannelMappingAndCoefficient()
+  overload: SilverCraft.CSCore.Tests.DspCoverageTests.ChannelMatrixElement_StoresChannelMappingAndCoefficient*
+  attributes:
+  - type: Xunit.FactAttribute
+    ctor: Xunit.FactAttribute.#ctor
+    arguments: []
+- uid: SilverCraft.CSCore.Tests.DspCoverageTests.FftProvider_ConsumesNewDataOnceAndValidatesBuffers
+  commentId: M:SilverCraft.CSCore.Tests.DspCoverageTests.FftProvider_ConsumesNewDataOnceAndValidatesBuffers
+  id: FftProvider_ConsumesNewDataOnceAndValidatesBuffers
+  parent: SilverCraft.CSCore.Tests.DspCoverageTests
+  langs:
+  - csharp
+  - vb
+  name: FftProvider_ConsumesNewDataOnceAndValidatesBuffers()
+  nameWithType: DspCoverageTests.FftProvider_ConsumesNewDataOnceAndValidatesBuffers()
+  fullName: SilverCraft.CSCore.Tests.DspCoverageTests.FftProvider_ConsumesNewDataOnceAndValidatesBuffers()
+  type: Method
+  source:
+    remote:
+      path: SilverCraft.CSCore.Tests/DspCoverageTests.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: FftProvider_ConsumesNewDataOnceAndValidatesBuffers
+    path: ../SilverCraft.CSCore.Tests/DspCoverageTests.cs
+    startLine: 87
+  assemblies:
+  - SilverCraft.CSCore.Tests
+  namespace: SilverCraft.CSCore.Tests
+  syntax:
+    content: >-
+      [Fact]
+
+      public void FftProvider_ConsumesNewDataOnceAndValidatesBuffers()
+    content.vb: >-
+      <Fact>
+
+      Public Sub FftProvider_ConsumesNewDataOnceAndValidatesBuffers()
+  overload: SilverCraft.CSCore.Tests.DspCoverageTests.FftProvider_ConsumesNewDataOnceAndValidatesBuffers*
+  attributes:
+  - type: Xunit.FactAttribute
+    ctor: Xunit.FactAttribute.#ctor
+    arguments: []
+- uid: SilverCraft.CSCore.Tests.DspCoverageTests.EqualizerFilterCollection_SortsBandsAndAppliesAverageGain
+  commentId: M:SilverCraft.CSCore.Tests.DspCoverageTests.EqualizerFilterCollection_SortsBandsAndAppliesAverageGain
+  id: EqualizerFilterCollection_SortsBandsAndAppliesAverageGain
+  parent: SilverCraft.CSCore.Tests.DspCoverageTests
+  langs:
+  - csharp
+  - vb
+  name: EqualizerFilterCollection_SortsBandsAndAppliesAverageGain()
+  nameWithType: DspCoverageTests.EqualizerFilterCollection_SortsBandsAndAppliesAverageGain()
+  fullName: SilverCraft.CSCore.Tests.DspCoverageTests.EqualizerFilterCollection_SortsBandsAndAppliesAverageGain()
+  type: Method
+  source:
+    remote:
+      path: SilverCraft.CSCore.Tests/DspCoverageTests.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: EqualizerFilterCollection_SortsBandsAndAppliesAverageGain
+    path: ../SilverCraft.CSCore.Tests/DspCoverageTests.cs
+    startLine: 105
+  assemblies:
+  - SilverCraft.CSCore.Tests
+  namespace: SilverCraft.CSCore.Tests
+  syntax:
+    content: >-
+      [Fact]
+
+      public void EqualizerFilterCollection_SortsBandsAndAppliesAverageGain()
+    content.vb: >-
+      <Fact>
+
+      Public Sub EqualizerFilterCollection_SortsBandsAndAppliesAverageGain()
+  overload: SilverCraft.CSCore.Tests.DspCoverageTests.EqualizerFilterCollection_SortsBandsAndAppliesAverageGain*
+  attributes:
+  - type: Xunit.FactAttribute
+    ctor: Xunit.FactAttribute.#ctor
+    arguments: []
+- uid: SilverCraft.CSCore.Tests.DspCoverageTests.EqualizerAndChannelFilters_CloneAndClampOutput
+  commentId: M:SilverCraft.CSCore.Tests.DspCoverageTests.EqualizerAndChannelFilters_CloneAndClampOutput
+  id: EqualizerAndChannelFilters_CloneAndClampOutput
+  parent: SilverCraft.CSCore.Tests.DspCoverageTests
+  langs:
+  - csharp
+  - vb
+  name: EqualizerAndChannelFilters_CloneAndClampOutput()
+  nameWithType: DspCoverageTests.EqualizerAndChannelFilters_CloneAndClampOutput()
+  fullName: SilverCraft.CSCore.Tests.DspCoverageTests.EqualizerAndChannelFilters_CloneAndClampOutput()
+  type: Method
+  source:
+    remote:
+      path: SilverCraft.CSCore.Tests/DspCoverageTests.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: EqualizerAndChannelFilters_CloneAndClampOutput
+    path: ../SilverCraft.CSCore.Tests/DspCoverageTests.cs
+    startLine: 123
+  assemblies:
+  - SilverCraft.CSCore.Tests
+  namespace: SilverCraft.CSCore.Tests
+  syntax:
+    content: >-
+      [Fact]
+
+      public void EqualizerAndChannelFilters_CloneAndClampOutput()
+    content.vb: >-
+      <Fact>
+
+      Public Sub EqualizerAndChannelFilters_CloneAndClampOutput()
+  overload: SilverCraft.CSCore.Tests.DspCoverageTests.EqualizerAndChannelFilters_CloneAndClampOutput*
+  attributes:
+  - type: Xunit.FactAttribute
+    ctor: Xunit.FactAttribute.#ctor
+    arguments: []
+- uid: SilverCraft.CSCore.Tests.DspCoverageTests.CreateTenBandEqualizer_RequiresSampleRateAtLeast32000
+  commentId: M:SilverCraft.CSCore.Tests.DspCoverageTests.CreateTenBandEqualizer_RequiresSampleRateAtLeast32000
+  id: CreateTenBandEqualizer_RequiresSampleRateAtLeast32000
+  parent: SilverCraft.CSCore.Tests.DspCoverageTests
+  langs:
+  - csharp
+  - vb
+  name: CreateTenBandEqualizer_RequiresSampleRateAtLeast32000()
+  nameWithType: DspCoverageTests.CreateTenBandEqualizer_RequiresSampleRateAtLeast32000()
+  fullName: SilverCraft.CSCore.Tests.DspCoverageTests.CreateTenBandEqualizer_RequiresSampleRateAtLeast32000()
+  type: Method
+  source:
+    remote:
+      path: SilverCraft.CSCore.Tests/DspCoverageTests.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: CreateTenBandEqualizer_RequiresSampleRateAtLeast32000
+    path: ../SilverCraft.CSCore.Tests/DspCoverageTests.cs
+    startLine: 138
+  assemblies:
+  - SilverCraft.CSCore.Tests
+  namespace: SilverCraft.CSCore.Tests
+  syntax:
+    content: >-
+      [Fact]
+
+      public void CreateTenBandEqualizer_RequiresSampleRateAtLeast32000()
+    content.vb: >-
+      <Fact>
+
+      Public Sub CreateTenBandEqualizer_RequiresSampleRateAtLeast32000()
+  overload: SilverCraft.CSCore.Tests.DspCoverageTests.CreateTenBandEqualizer_RequiresSampleRateAtLeast32000*
+  attributes:
+  - type: Xunit.FactAttribute
+    ctor: Xunit.FactAttribute.#ctor
+    arguments: []
+- uid: SilverCraft.CSCore.Tests.DspCoverageTests.PitchShifter_ProcessesShiftedSamplesAndKeepsOutputBounded
+  commentId: M:SilverCraft.CSCore.Tests.DspCoverageTests.PitchShifter_ProcessesShiftedSamplesAndKeepsOutputBounded
+  id: PitchShifter_ProcessesShiftedSamplesAndKeepsOutputBounded
+  parent: SilverCraft.CSCore.Tests.DspCoverageTests
+  langs:
+  - csharp
+  - vb
+  name: PitchShifter_ProcessesShiftedSamplesAndKeepsOutputBounded()
+  nameWithType: DspCoverageTests.PitchShifter_ProcessesShiftedSamplesAndKeepsOutputBounded()
+  fullName: SilverCraft.CSCore.Tests.DspCoverageTests.PitchShifter_ProcessesShiftedSamplesAndKeepsOutputBounded()
+  type: Method
+  source:
+    remote:
+      path: SilverCraft.CSCore.Tests/DspCoverageTests.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: PitchShifter_ProcessesShiftedSamplesAndKeepsOutputBounded
+    path: ../SilverCraft.CSCore.Tests/DspCoverageTests.cs
+    startLine: 149
+  assemblies:
+  - SilverCraft.CSCore.Tests
+  namespace: SilverCraft.CSCore.Tests
+  syntax:
+    content: >-
+      [Fact]
+
+      public void PitchShifter_ProcessesShiftedSamplesAndKeepsOutputBounded()
+    content.vb: >-
+      <Fact>
+
+      Public Sub PitchShifter_ProcessesShiftedSamplesAndKeepsOutputBounded()
+  overload: SilverCraft.CSCore.Tests.DspCoverageTests.PitchShifter_ProcessesShiftedSamplesAndKeepsOutputBounded*
+  attributes:
+  - type: Xunit.FactAttribute
+    ctor: Xunit.FactAttribute.#ctor
+    arguments: []
+references:
+- uid: SilverCraft.CSCore.Tests
+  commentId: N:SilverCraft.CSCore.Tests
+  href: SilverCraft.html
+  name: SilverCraft.CSCore.Tests
+  nameWithType: SilverCraft.CSCore.Tests
+  fullName: SilverCraft.CSCore.Tests
+  spec.csharp:
+  - uid: SilverCraft
+    name: SilverCraft
+    href: SilverCraft.html
+  - name: .
+  - uid: SilverCraft.CSCore
+    name: CSCore
+    href: SilverCraft.CSCore.html
+  - name: .
+  - uid: SilverCraft.CSCore.Tests
+    name: Tests
+    href: SilverCraft.CSCore.Tests.html
+  spec.vb:
+  - uid: SilverCraft
+    name: SilverCraft
+    href: SilverCraft.html
+  - name: .
+  - uid: SilverCraft.CSCore
+    name: CSCore
+    href: SilverCraft.CSCore.html
+  - name: .
+  - uid: SilverCraft.CSCore.Tests
+    name: Tests
+    href: SilverCraft.CSCore.Tests.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: SilverCraft.CSCore.Tests.DspCoverageTests.SilverCraft.CSCore.FluentExtensions.Synchronized``2
+  commentId: M:SilverCraft.CSCore.FluentExtensions.Synchronized``2(``0)
+  parent: SilverCraft.CSCore.FluentExtensions
+  definition: SilverCraft.CSCore.FluentExtensions.Synchronized``2(``0)
+  href: SilverCraft.CSCore.FluentExtensions.html#SilverCraft_CSCore_FluentExtensions_Synchronized__2___0_
+  name: Synchronized<DspCoverageTests, T>(DspCoverageTests)
+  nameWithType: FluentExtensions.Synchronized<DspCoverageTests, T>(DspCoverageTests)
+  fullName: SilverCraft.CSCore.FluentExtensions.Synchronized<SilverCraft.CSCore.Tests.DspCoverageTests, T>(SilverCraft.CSCore.Tests.DspCoverageTests)
+  nameWithType.vb: FluentExtensions.Synchronized(Of DspCoverageTests, T)(DspCoverageTests)
+  fullName.vb: SilverCraft.CSCore.FluentExtensions.Synchronized(Of SilverCraft.CSCore.Tests.DspCoverageTests, T)(SilverCraft.CSCore.Tests.DspCoverageTests)
+  name.vb: Synchronized(Of DspCoverageTests, T)(DspCoverageTests)
+  spec.csharp:
+  - uid: SilverCraft.CSCore.FluentExtensions.Synchronized``2(SilverCraft.CSCore.Tests.DspCoverageTests)
+    name: Synchronized
+    href: SilverCraft.CSCore.FluentExtensions.html#SilverCraft_CSCore_FluentExtensions_Synchronized__2___0_
+  - name: <
+  - uid: SilverCraft.CSCore.Tests.DspCoverageTests
+    name: DspCoverageTests
+    href: SilverCraft.CSCore.Tests.DspCoverageTests.html
+  - name: ','
+  - name: " "
+  - name: T
+  - name: '>'
+  - name: (
+  - uid: SilverCraft.CSCore.Tests.DspCoverageTests
+    name: DspCoverageTests
+    href: SilverCraft.CSCore.Tests.DspCoverageTests.html
+  - name: )
+  spec.vb:
+  - uid: SilverCraft.CSCore.FluentExtensions.Synchronized``2(SilverCraft.CSCore.Tests.DspCoverageTests)
+    name: Synchronized
+    href: SilverCraft.CSCore.FluentExtensions.html#SilverCraft_CSCore_FluentExtensions_Synchronized__2___0_
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: SilverCraft.CSCore.Tests.DspCoverageTests
+    name: DspCoverageTests
+    href: SilverCraft.CSCore.Tests.DspCoverageTests.html
+  - name: ','
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: SilverCraft.CSCore.Tests.DspCoverageTests
+    name: DspCoverageTests
+    href: SilverCraft.CSCore.Tests.DspCoverageTests.html
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: SilverCraft.CSCore.FluentExtensions.Synchronized``2(``0)
+  commentId: M:SilverCraft.CSCore.FluentExtensions.Synchronized``2(``0)
+  href: SilverCraft.CSCore.FluentExtensions.html#SilverCraft_CSCore_FluentExtensions_Synchronized__2___0_
+  name: Synchronized<TAudioSource, T>(TAudioSource)
+  nameWithType: FluentExtensions.Synchronized<TAudioSource, T>(TAudioSource)
+  fullName: SilverCraft.CSCore.FluentExtensions.Synchronized<TAudioSource, T>(TAudioSource)
+  nameWithType.vb: FluentExtensions.Synchronized(Of TAudioSource, T)(TAudioSource)
+  fullName.vb: SilverCraft.CSCore.FluentExtensions.Synchronized(Of TAudioSource, T)(TAudioSource)
+  name.vb: Synchronized(Of TAudioSource, T)(TAudioSource)
+  spec.csharp:
+  - uid: SilverCraft.CSCore.FluentExtensions.Synchronized``2(``0)
+    name: Synchronized
+    href: SilverCraft.CSCore.FluentExtensions.html#SilverCraft_CSCore_FluentExtensions_Synchronized__2___0_
+  - name: <
+  - name: TAudioSource
+  - name: ','
+  - name: " "
+  - name: T
+  - name: '>'
+  - name: (
+  - name: TAudioSource
+  - name: )
+  spec.vb:
+  - uid: SilverCraft.CSCore.FluentExtensions.Synchronized``2(``0)
+    name: Synchronized
+    href: SilverCraft.CSCore.FluentExtensions.html#SilverCraft_CSCore_FluentExtensions_Synchronized__2___0_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TAudioSource
+  - name: ','
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - name: TAudioSource
+  - name: )
+- uid: SilverCraft.CSCore.FluentExtensions
+  commentId: T:SilverCraft.CSCore.FluentExtensions
+  parent: SilverCraft.CSCore
+  href: SilverCraft.CSCore.FluentExtensions.html
+  name: FluentExtensions
+  nameWithType: FluentExtensions
+  fullName: SilverCraft.CSCore.FluentExtensions
+- uid: SilverCraft.CSCore
+  commentId: N:SilverCraft.CSCore
+  href: SilverCraft.html
+  name: SilverCraft.CSCore
+  nameWithType: SilverCraft.CSCore
+  fullName: SilverCraft.CSCore
+  spec.csharp:
+  - uid: SilverCraft
+    name: SilverCraft
+    href: SilverCraft.html
+  - name: .
+  - uid: SilverCraft.CSCore
+    name: CSCore
+    href: SilverCraft.CSCore.html
+  spec.vb:
+  - uid: SilverCraft
+    name: SilverCraft
+    href: SilverCraft.html
+  - name: .
+  - uid: SilverCraft.CSCore
+    name: CSCore
+    href: SilverCraft.CSCore.html
+- uid: SilverCraft.CSCore.Tests.DspCoverageTests.BiquadFilters_ProduceFiniteStableOutput*
+  commentId: Overload:SilverCraft.CSCore.Tests.DspCoverageTests.BiquadFilters_ProduceFiniteStableOutput
+  href: SilverCraft.CSCore.Tests.DspCoverageTests.html#SilverCraft_CSCore_Tests_DspCoverageTests_BiquadFilters_ProduceFiniteStableOutput_System_Double_
+  name: BiquadFilters_ProduceFiniteStableOutput
+  nameWithType: DspCoverageTests.BiquadFilters_ProduceFiniteStableOutput
+  fullName: SilverCraft.CSCore.Tests.DspCoverageTests.BiquadFilters_ProduceFiniteStableOutput
+- uid: System.Double
+  commentId: T:System.Double
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.double
+  name: double
+  nameWithType: double
+  fullName: double
+  nameWithType.vb: Double
+  fullName.vb: Double
+  name.vb: Double
+- uid: SilverCraft.CSCore.Tests.DspCoverageTests.ShelfAndPeakFilters_RecalculateForBoostAndCut*
+  commentId: Overload:SilverCraft.CSCore.Tests.DspCoverageTests.ShelfAndPeakFilters_RecalculateForBoostAndCut
+  href: SilverCraft.CSCore.Tests.DspCoverageTests.html#SilverCraft_CSCore_Tests_DspCoverageTests_ShelfAndPeakFilters_RecalculateForBoostAndCut
+  name: ShelfAndPeakFilters_RecalculateForBoostAndCut
+  nameWithType: DspCoverageTests.ShelfAndPeakFilters_RecalculateForBoostAndCut
+  fullName: SilverCraft.CSCore.Tests.DspCoverageTests.ShelfAndPeakFilters_RecalculateForBoostAndCut
+- uid: SilverCraft.CSCore.Tests.DspCoverageTests.ChannelMatrix_MapsStereoToMonoAndFlipRestoresDimensions*
+  commentId: Overload:SilverCraft.CSCore.Tests.DspCoverageTests.ChannelMatrix_MapsStereoToMonoAndFlipRestoresDimensions
+  href: SilverCraft.CSCore.Tests.DspCoverageTests.html#SilverCraft_CSCore_Tests_DspCoverageTests_ChannelMatrix_MapsStereoToMonoAndFlipRestoresDimensions
+  name: ChannelMatrix_MapsStereoToMonoAndFlipRestoresDimensions
+  nameWithType: DspCoverageTests.ChannelMatrix_MapsStereoToMonoAndFlipRestoresDimensions
+  fullName: SilverCraft.CSCore.Tests.DspCoverageTests.ChannelMatrix_MapsStereoToMonoAndFlipRestoresDimensions
+- uid: SilverCraft.CSCore.Tests.DspCoverageTests.ChannelMatrix_ValidatesMasksAndMatrixDimensions*
+  commentId: Overload:SilverCraft.CSCore.Tests.DspCoverageTests.ChannelMatrix_ValidatesMasksAndMatrixDimensions
+  href: SilverCraft.CSCore.Tests.DspCoverageTests.html#SilverCraft_CSCore_Tests_DspCoverageTests_ChannelMatrix_ValidatesMasksAndMatrixDimensions
+  name: ChannelMatrix_ValidatesMasksAndMatrixDimensions
+  nameWithType: DspCoverageTests.ChannelMatrix_ValidatesMasksAndMatrixDimensions
+  fullName: SilverCraft.CSCore.Tests.DspCoverageTests.ChannelMatrix_ValidatesMasksAndMatrixDimensions
+- uid: SilverCraft.CSCore.Tests.DspCoverageTests.ChannelMatrixElement_StoresChannelMappingAndCoefficient*
+  commentId: Overload:SilverCraft.CSCore.Tests.DspCoverageTests.ChannelMatrixElement_StoresChannelMappingAndCoefficient
+  href: SilverCraft.CSCore.Tests.DspCoverageTests.html#SilverCraft_CSCore_Tests_DspCoverageTests_ChannelMatrixElement_StoresChannelMappingAndCoefficient
+  name: ChannelMatrixElement_StoresChannelMappingAndCoefficient
+  nameWithType: DspCoverageTests.ChannelMatrixElement_StoresChannelMappingAndCoefficient
+  fullName: SilverCraft.CSCore.Tests.DspCoverageTests.ChannelMatrixElement_StoresChannelMappingAndCoefficient
+- uid: SilverCraft.CSCore.Tests.DspCoverageTests.FftProvider_ConsumesNewDataOnceAndValidatesBuffers*
+  commentId: Overload:SilverCraft.CSCore.Tests.DspCoverageTests.FftProvider_ConsumesNewDataOnceAndValidatesBuffers
+  href: SilverCraft.CSCore.Tests.DspCoverageTests.html#SilverCraft_CSCore_Tests_DspCoverageTests_FftProvider_ConsumesNewDataOnceAndValidatesBuffers
+  name: FftProvider_ConsumesNewDataOnceAndValidatesBuffers
+  nameWithType: DspCoverageTests.FftProvider_ConsumesNewDataOnceAndValidatesBuffers
+  fullName: SilverCraft.CSCore.Tests.DspCoverageTests.FftProvider_ConsumesNewDataOnceAndValidatesBuffers
+- uid: SilverCraft.CSCore.Tests.DspCoverageTests.EqualizerFilterCollection_SortsBandsAndAppliesAverageGain*
+  commentId: Overload:SilverCraft.CSCore.Tests.DspCoverageTests.EqualizerFilterCollection_SortsBandsAndAppliesAverageGain
+  href: SilverCraft.CSCore.Tests.DspCoverageTests.html#SilverCraft_CSCore_Tests_DspCoverageTests_EqualizerFilterCollection_SortsBandsAndAppliesAverageGain
+  name: EqualizerFilterCollection_SortsBandsAndAppliesAverageGain
+  nameWithType: DspCoverageTests.EqualizerFilterCollection_SortsBandsAndAppliesAverageGain
+  fullName: SilverCraft.CSCore.Tests.DspCoverageTests.EqualizerFilterCollection_SortsBandsAndAppliesAverageGain
+- uid: SilverCraft.CSCore.Tests.DspCoverageTests.EqualizerAndChannelFilters_CloneAndClampOutput*
+  commentId: Overload:SilverCraft.CSCore.Tests.DspCoverageTests.EqualizerAndChannelFilters_CloneAndClampOutput
+  href: SilverCraft.CSCore.Tests.DspCoverageTests.html#SilverCraft_CSCore_Tests_DspCoverageTests_EqualizerAndChannelFilters_CloneAndClampOutput
+  name: EqualizerAndChannelFilters_CloneAndClampOutput
+  nameWithType: DspCoverageTests.EqualizerAndChannelFilters_CloneAndClampOutput
+  fullName: SilverCraft.CSCore.Tests.DspCoverageTests.EqualizerAndChannelFilters_CloneAndClampOutput
+- uid: SilverCraft.CSCore.Tests.DspCoverageTests.CreateTenBandEqualizer_RequiresSampleRateAtLeast32000*
+  commentId: Overload:SilverCraft.CSCore.Tests.DspCoverageTests.CreateTenBandEqualizer_RequiresSampleRateAtLeast32000
+  href: SilverCraft.CSCore.Tests.DspCoverageTests.html#SilverCraft_CSCore_Tests_DspCoverageTests_CreateTenBandEqualizer_RequiresSampleRateAtLeast32000
+  name: CreateTenBandEqualizer_RequiresSampleRateAtLeast32000
+  nameWithType: DspCoverageTests.CreateTenBandEqualizer_RequiresSampleRateAtLeast32000
+  fullName: SilverCraft.CSCore.Tests.DspCoverageTests.CreateTenBandEqualizer_RequiresSampleRateAtLeast32000
+- uid: SilverCraft.CSCore.Tests.DspCoverageTests.PitchShifter_ProcessesShiftedSamplesAndKeepsOutputBounded*
+  commentId: Overload:SilverCraft.CSCore.Tests.DspCoverageTests.PitchShifter_ProcessesShiftedSamplesAndKeepsOutputBounded
+  href: SilverCraft.CSCore.Tests.DspCoverageTests.html#SilverCraft_CSCore_Tests_DspCoverageTests_PitchShifter_ProcessesShiftedSamplesAndKeepsOutputBounded
+  name: PitchShifter_ProcessesShiftedSamplesAndKeepsOutputBounded
+  nameWithType: DspCoverageTests.PitchShifter_ProcessesShiftedSamplesAndKeepsOutputBounded
+  fullName: SilverCraft.CSCore.Tests.DspCoverageTests.PitchShifter_ProcessesShiftedSamplesAndKeepsOutputBounded

@@ -7,7 +7,6 @@ using SilverCraft.CSCore.SoundIn;
 using SilverCraft.CSCore.SoundOut;
 using SilverCraft.CSCore.Streams;
 using SilverCraft.CSCore.Streams.SampleConverter;
-using SilverCraft.CSCore.VGMStream;
 float volume = 1f;
 /*
 PortAudioSoundOut soundOut = new();
@@ -54,8 +53,9 @@ var x = new OpenMptWaveStream(File.OpenRead(@"alphaline.mod"));
 var soundIn = new PortAudioSoundIn(2, 44100);
 var soundOut = new PortAudioSoundOut();
 soundIn.Initialize();
-soundOut.Initialize(new SoundInSource(soundIn, 44100*2));
+soundOut.Initialize(new SoundInSource(soundIn, 44100*4));
 soundIn.Start();
+Thread.Sleep(50);
 soundOut.Play();
 
 Thread.Sleep(-1);

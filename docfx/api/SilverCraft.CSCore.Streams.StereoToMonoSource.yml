@@ -130,7 +130,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: Read
     path: ../SilverCraft.CSCore/Streams/StereoToMonoSource.cs
-    startLine: 42
+    startLine: 43
   assemblies:
   - SilverCraft.CSCore
   namespace: SilverCraft.CSCore.Streams
@@ -186,7 +186,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: Position
     path: ../SilverCraft.CSCore/Streams/StereoToMonoSource.cs
-    startLine: 61
+    startLine: 63
   assemblies:
   - SilverCraft.CSCore
   namespace: SilverCraft.CSCore.Streams
@@ -218,7 +218,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: Length
     path: ../SilverCraft.CSCore/Streams/StereoToMonoSource.cs
-    startLine: 74
+    startLine: 72
   assemblies:
   - SilverCraft.CSCore
   namespace: SilverCraft.CSCore.Streams
@@ -250,7 +250,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: WaveFormat
     path: ../SilverCraft.CSCore/Streams/StereoToMonoSource.cs
-    startLine: 79
+    startLine: 77
   assemblies:
   - SilverCraft.CSCore
   namespace: SilverCraft.CSCore.Streams
@@ -282,7 +282,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: Dispose
     path: ../SilverCraft.CSCore/Streams/StereoToMonoSource.cs
-    startLine: 88
+    startLine: 86
   assemblies:
   - SilverCraft.CSCore
   namespace: SilverCraft.CSCore.Streams

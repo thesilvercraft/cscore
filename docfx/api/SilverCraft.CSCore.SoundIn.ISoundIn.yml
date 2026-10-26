@@ -26,7 +26,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: ISoundIn
     path: ../SilverCraft.CSCore/SoundIn/ISoundIn.cs
-    startLine: 7
+    startLine: 5
   assemblies:
   - SilverCraft.CSCore
   namespace: SilverCraft.CSCore.SoundIn
@@ -36,7 +36,7 @@ items:
     content: 'public interface ISoundIn : IDisposable'
     content.vb: Public Interface ISoundIn Inherits IDisposable
   derivedClasses:
-  - SilverCraft.CSCore.PortAudio.PortAudioSoundIn
+  - SilverCraft.CSCore.SoundIn.PortAudioSoundIn
   inheritedMembers:
   - System.IDisposable.Dispose
   extensionMethods:
@@ -59,7 +59,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: DataAvailable
     path: ../SilverCraft.CSCore/SoundIn/ISoundIn.cs
-    startLine: 12
+    startLine: 10
   assemblies:
   - SilverCraft.CSCore
   namespace: SilverCraft.CSCore.SoundIn
@@ -88,7 +88,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: Stopped
     path: ../SilverCraft.CSCore/SoundIn/ISoundIn.cs
-    startLine: 17
+    startLine: 15
   assemblies:
   - SilverCraft.CSCore
   namespace: SilverCraft.CSCore.SoundIn
@@ -117,7 +117,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: WaveFormat
     path: ../SilverCraft.CSCore/SoundIn/ISoundIn.cs
-    startLine: 22
+    startLine: 20
   assemblies:
   - SilverCraft.CSCore
   namespace: SilverCraft.CSCore.SoundIn
@@ -148,7 +148,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: Initialize
     path: ../SilverCraft.CSCore/SoundIn/ISoundIn.cs
-    startLine: 27
+    startLine: 25
   assemblies:
   - SilverCraft.CSCore
   namespace: SilverCraft.CSCore.SoundIn
@@ -176,7 +176,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: Start
     path: ../SilverCraft.CSCore/SoundIn/ISoundIn.cs
-    startLine: 32
+    startLine: 30
   assemblies:
   - SilverCraft.CSCore
   namespace: SilverCraft.CSCore.SoundIn
@@ -204,7 +204,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: Stop
     path: ../SilverCraft.CSCore/SoundIn/ISoundIn.cs
-    startLine: 37
+    startLine: 35
   assemblies:
   - SilverCraft.CSCore
   namespace: SilverCraft.CSCore.SoundIn
@@ -232,7 +232,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: RecordingState
     path: ../SilverCraft.CSCore/SoundIn/ISoundIn.cs
-    startLine: 42
+    startLine: 40
   assemblies:
   - SilverCraft.CSCore
   namespace: SilverCraft.CSCore.SoundIn

@@ -1,0 +1,697 @@
+### YamlMime:ManagedReference
+items:
+- uid: SilverCraft.CSCore.Tests.AdditionalCoverageTests
+  commentId: T:SilverCraft.CSCore.Tests.AdditionalCoverageTests
+  id: AdditionalCoverageTests
+  parent: SilverCraft.CSCore.Tests
+  children:
+  - SilverCraft.CSCore.Tests.AdditionalCoverageTests.AiffReader_ReadsBigEndianSamplesAndSeeksOnBlockBoundaries
+  - SilverCraft.CSCore.Tests.AdditionalCoverageTests.AiffReader_RejectsMissingRequiredChunks
+  - SilverCraft.CSCore.Tests.AdditionalCoverageTests.Id3v2_ParsesTitleFrameAndRejectsTruncatedTag
+  - SilverCraft.CSCore.Tests.AdditionalCoverageTests.LoopStream_RepeatsShortSourceToFillRead
+  - SilverCraft.CSCore.Tests.AdditionalCoverageTests.RawDataReader_ReadsFromCurrentStreamPositionAndAlignsReads
+  - SilverCraft.CSCore.Tests.AdditionalCoverageTests.RawDataReader_RejectsUnsupportedEncoding
+  - SilverCraft.CSCore.Tests.AdditionalCoverageTests.SimpleResampler_PreservesConstantSignalAndOutputChannelFormat
+  langs:
+  - csharp
+  - vb
+  name: AdditionalCoverageTests
+  nameWithType: AdditionalCoverageTests
+  fullName: SilverCraft.CSCore.Tests.AdditionalCoverageTests
+  type: Class
+  source:
+    remote:
+      path: SilverCraft.CSCore.Tests/AdditionalCoverageTests.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: AdditionalCoverageTests
+    path: ../SilverCraft.CSCore.Tests/AdditionalCoverageTests.cs
+    startLine: 11
+  assemblies:
+  - SilverCraft.CSCore.Tests
+  namespace: SilverCraft.CSCore.Tests
+  syntax:
+    content: public sealed class AdditionalCoverageTests
+    content.vb: Public NotInheritable Class AdditionalCoverageTests
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  extensionMethods:
+  - SilverCraft.CSCore.Tests.AdditionalCoverageTests.SilverCraft.CSCore.FluentExtensions.Synchronized``2
+- uid: SilverCraft.CSCore.Tests.AdditionalCoverageTests.AiffReader_ReadsBigEndianSamplesAndSeeksOnBlockBoundaries
+  commentId: M:SilverCraft.CSCore.Tests.AdditionalCoverageTests.AiffReader_ReadsBigEndianSamplesAndSeeksOnBlockBoundaries
+  id: AiffReader_ReadsBigEndianSamplesAndSeeksOnBlockBoundaries
+  parent: SilverCraft.CSCore.Tests.AdditionalCoverageTests
+  langs:
+  - csharp
+  - vb
+  name: AiffReader_ReadsBigEndianSamplesAndSeeksOnBlockBoundaries()
+  nameWithType: AdditionalCoverageTests.AiffReader_ReadsBigEndianSamplesAndSeeksOnBlockBoundaries()
+  fullName: SilverCraft.CSCore.Tests.AdditionalCoverageTests.AiffReader_ReadsBigEndianSamplesAndSeeksOnBlockBoundaries()
+  type: Method
+  source:
+    remote:
+      path: SilverCraft.CSCore.Tests/AdditionalCoverageTests.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: AiffReader_ReadsBigEndianSamplesAndSeeksOnBlockBoundaries
+    path: ../SilverCraft.CSCore.Tests/AdditionalCoverageTests.cs
+    startLine: 13
+  assemblies:
+  - SilverCraft.CSCore.Tests
+  namespace: SilverCraft.CSCore.Tests
+  syntax:
+    content: >-
+      [Fact]
+
+      public void AiffReader_ReadsBigEndianSamplesAndSeeksOnBlockBoundaries()
+    content.vb: >-
+      <Fact>
+
+      Public Sub AiffReader_ReadsBigEndianSamplesAndSeeksOnBlockBoundaries()
+  overload: SilverCraft.CSCore.Tests.AdditionalCoverageTests.AiffReader_ReadsBigEndianSamplesAndSeeksOnBlockBoundaries*
+  attributes:
+  - type: Xunit.FactAttribute
+    ctor: Xunit.FactAttribute.#ctor
+    arguments: []
+- uid: SilverCraft.CSCore.Tests.AdditionalCoverageTests.AiffReader_RejectsMissingRequiredChunks
+  commentId: M:SilverCraft.CSCore.Tests.AdditionalCoverageTests.AiffReader_RejectsMissingRequiredChunks
+  id: AiffReader_RejectsMissingRequiredChunks
+  parent: SilverCraft.CSCore.Tests.AdditionalCoverageTests
+  langs:
+  - csharp
+  - vb
+  name: AiffReader_RejectsMissingRequiredChunks()
+  nameWithType: AdditionalCoverageTests.AiffReader_RejectsMissingRequiredChunks()
+  fullName: SilverCraft.CSCore.Tests.AdditionalCoverageTests.AiffReader_RejectsMissingRequiredChunks()
+  type: Method
+  source:
+    remote:
+      path: SilverCraft.CSCore.Tests/AdditionalCoverageTests.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: AiffReader_RejectsMissingRequiredChunks
+    path: ../SilverCraft.CSCore.Tests/AdditionalCoverageTests.cs
+    startLine: 26
+  assemblies:
+  - SilverCraft.CSCore.Tests
+  namespace: SilverCraft.CSCore.Tests
+  syntax:
+    content: >-
+      [Fact]
+
+      public void AiffReader_RejectsMissingRequiredChunks()
+    content.vb: >-
+      <Fact>
+
+      Public Sub AiffReader_RejectsMissingRequiredChunks()
+  overload: SilverCraft.CSCore.Tests.AdditionalCoverageTests.AiffReader_RejectsMissingRequiredChunks*
+  attributes:
+  - type: Xunit.FactAttribute
+    ctor: Xunit.FactAttribute.#ctor
+    arguments: []
+- uid: SilverCraft.CSCore.Tests.AdditionalCoverageTests.RawDataReader_ReadsFromCurrentStreamPositionAndAlignsReads
+  commentId: M:SilverCraft.CSCore.Tests.AdditionalCoverageTests.RawDataReader_ReadsFromCurrentStreamPositionAndAlignsReads
+  id: RawDataReader_ReadsFromCurrentStreamPositionAndAlignsReads
+  parent: SilverCraft.CSCore.Tests.AdditionalCoverageTests
+  langs:
+  - csharp
+  - vb
+  name: RawDataReader_ReadsFromCurrentStreamPositionAndAlignsReads()
+  nameWithType: AdditionalCoverageTests.RawDataReader_ReadsFromCurrentStreamPositionAndAlignsReads()
+  fullName: SilverCraft.CSCore.Tests.AdditionalCoverageTests.RawDataReader_ReadsFromCurrentStreamPositionAndAlignsReads()
+  type: Method
+  source:
+    remote:
+      path: SilverCraft.CSCore.Tests/AdditionalCoverageTests.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: RawDataReader_ReadsFromCurrentStreamPositionAndAlignsReads
+    path: ../SilverCraft.CSCore.Tests/AdditionalCoverageTests.cs
+    startLine: 33
+  assemblies:
+  - SilverCraft.CSCore.Tests
+  namespace: SilverCraft.CSCore.Tests
+  syntax:
+    content: >-
+      [Fact]
+
+      public void RawDataReader_ReadsFromCurrentStreamPositionAndAlignsReads()
+    content.vb: >-
+      <Fact>
+
+      Public Sub RawDataReader_ReadsFromCurrentStreamPositionAndAlignsReads()
+  overload: SilverCraft.CSCore.Tests.AdditionalCoverageTests.RawDataReader_ReadsFromCurrentStreamPositionAndAlignsReads*
+  attributes:
+  - type: Xunit.FactAttribute
+    ctor: Xunit.FactAttribute.#ctor
+    arguments: []
+- uid: SilverCraft.CSCore.Tests.AdditionalCoverageTests.RawDataReader_RejectsUnsupportedEncoding
+  commentId: M:SilverCraft.CSCore.Tests.AdditionalCoverageTests.RawDataReader_RejectsUnsupportedEncoding
+  id: RawDataReader_RejectsUnsupportedEncoding
+  parent: SilverCraft.CSCore.Tests.AdditionalCoverageTests
+  langs:
+  - csharp
+  - vb
+  name: RawDataReader_RejectsUnsupportedEncoding()
+  nameWithType: AdditionalCoverageTests.RawDataReader_RejectsUnsupportedEncoding()
+  fullName: SilverCraft.CSCore.Tests.AdditionalCoverageTests.RawDataReader_RejectsUnsupportedEncoding()
+  type: Method
+  source:
+    remote:
+      path: SilverCraft.CSCore.Tests/AdditionalCoverageTests.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: RawDataReader_RejectsUnsupportedEncoding
+    path: ../SilverCraft.CSCore.Tests/AdditionalCoverageTests.cs
+    startLine: 48
+  assemblies:
+  - SilverCraft.CSCore.Tests
+  namespace: SilverCraft.CSCore.Tests
+  syntax:
+    content: >-
+      [Fact]
+
+      public void RawDataReader_RejectsUnsupportedEncoding()
+    content.vb: >-
+      <Fact>
+
+      Public Sub RawDataReader_RejectsUnsupportedEncoding()
+  overload: SilverCraft.CSCore.Tests.AdditionalCoverageTests.RawDataReader_RejectsUnsupportedEncoding*
+  attributes:
+  - type: Xunit.FactAttribute
+    ctor: Xunit.FactAttribute.#ctor
+    arguments: []
+- uid: SilverCraft.CSCore.Tests.AdditionalCoverageTests.Id3v2_ParsesTitleFrameAndRejectsTruncatedTag
+  commentId: M:SilverCraft.CSCore.Tests.AdditionalCoverageTests.Id3v2_ParsesTitleFrameAndRejectsTruncatedTag
+  id: Id3v2_ParsesTitleFrameAndRejectsTruncatedTag
+  parent: SilverCraft.CSCore.Tests.AdditionalCoverageTests
+  langs:
+  - csharp
+  - vb
+  name: Id3v2_ParsesTitleFrameAndRejectsTruncatedTag()
+  nameWithType: AdditionalCoverageTests.Id3v2_ParsesTitleFrameAndRejectsTruncatedTag()
+  fullName: SilverCraft.CSCore.Tests.AdditionalCoverageTests.Id3v2_ParsesTitleFrameAndRejectsTruncatedTag()
+  type: Method
+  source:
+    remote:
+      path: SilverCraft.CSCore.Tests/AdditionalCoverageTests.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: Id3v2_ParsesTitleFrameAndRejectsTruncatedTag
+    path: ../SilverCraft.CSCore.Tests/AdditionalCoverageTests.cs
+    startLine: 56
+  assemblies:
+  - SilverCraft.CSCore.Tests
+  namespace: SilverCraft.CSCore.Tests
+  syntax:
+    content: >-
+      [Fact]
+
+      public void Id3v2_ParsesTitleFrameAndRejectsTruncatedTag()
+    content.vb: >-
+      <Fact>
+
+      Public Sub Id3v2_ParsesTitleFrameAndRejectsTruncatedTag()
+  overload: SilverCraft.CSCore.Tests.AdditionalCoverageTests.Id3v2_ParsesTitleFrameAndRejectsTruncatedTag*
+  attributes:
+  - type: Xunit.FactAttribute
+    ctor: Xunit.FactAttribute.#ctor
+    arguments: []
+- uid: SilverCraft.CSCore.Tests.AdditionalCoverageTests.SimpleResampler_PreservesConstantSignalAndOutputChannelFormat
+  commentId: M:SilverCraft.CSCore.Tests.AdditionalCoverageTests.SimpleResampler_PreservesConstantSignalAndOutputChannelFormat
+  id: SimpleResampler_PreservesConstantSignalAndOutputChannelFormat
+  parent: SilverCraft.CSCore.Tests.AdditionalCoverageTests
+  langs:
+  - csharp
+  - vb
+  name: SimpleResampler_PreservesConstantSignalAndOutputChannelFormat()
+  nameWithType: AdditionalCoverageTests.SimpleResampler_PreservesConstantSignalAndOutputChannelFormat()
+  fullName: SilverCraft.CSCore.Tests.AdditionalCoverageTests.SimpleResampler_PreservesConstantSignalAndOutputChannelFormat()
+  type: Method
+  source:
+    remote:
+      path: SilverCraft.CSCore.Tests/AdditionalCoverageTests.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: SimpleResampler_PreservesConstantSignalAndOutputChannelFormat
+    path: ../SilverCraft.CSCore.Tests/AdditionalCoverageTests.cs
+    startLine: 78
+  assemblies:
+  - SilverCraft.CSCore.Tests
+  namespace: SilverCraft.CSCore.Tests
+  syntax:
+    content: >-
+      [Fact]
+
+      public void SimpleResampler_PreservesConstantSignalAndOutputChannelFormat()
+    content.vb: >-
+      <Fact>
+
+      Public Sub SimpleResampler_PreservesConstantSignalAndOutputChannelFormat()
+  overload: SilverCraft.CSCore.Tests.AdditionalCoverageTests.SimpleResampler_PreservesConstantSignalAndOutputChannelFormat*
+  attributes:
+  - type: Xunit.FactAttribute
+    ctor: Xunit.FactAttribute.#ctor
+    arguments: []
+- uid: SilverCraft.CSCore.Tests.AdditionalCoverageTests.LoopStream_RepeatsShortSourceToFillRead
+  commentId: M:SilverCraft.CSCore.Tests.AdditionalCoverageTests.LoopStream_RepeatsShortSourceToFillRead
+  id: LoopStream_RepeatsShortSourceToFillRead
+  parent: SilverCraft.CSCore.Tests.AdditionalCoverageTests
+  langs:
+  - csharp
+  - vb
+  name: LoopStream_RepeatsShortSourceToFillRead()
+  nameWithType: AdditionalCoverageTests.LoopStream_RepeatsShortSourceToFillRead()
+  fullName: SilverCraft.CSCore.Tests.AdditionalCoverageTests.LoopStream_RepeatsShortSourceToFillRead()
+  type: Method
+  source:
+    remote:
+      path: SilverCraft.CSCore.Tests/AdditionalCoverageTests.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: LoopStream_RepeatsShortSourceToFillRead
+    path: ../SilverCraft.CSCore.Tests/AdditionalCoverageTests.cs
+    startLine: 90
+  assemblies:
+  - SilverCraft.CSCore.Tests
+  namespace: SilverCraft.CSCore.Tests
+  syntax:
+    content: >-
+      [Fact]
+
+      public void LoopStream_RepeatsShortSourceToFillRead()
+    content.vb: >-
+      <Fact>
+
+      Public Sub LoopStream_RepeatsShortSourceToFillRead()
+  overload: SilverCraft.CSCore.Tests.AdditionalCoverageTests.LoopStream_RepeatsShortSourceToFillRead*
+  attributes:
+  - type: Xunit.FactAttribute
+    ctor: Xunit.FactAttribute.#ctor
+    arguments: []
+references:
+- uid: SilverCraft.CSCore.Tests
+  commentId: N:SilverCraft.CSCore.Tests
+  href: SilverCraft.html
+  name: SilverCraft.CSCore.Tests
+  nameWithType: SilverCraft.CSCore.Tests
+  fullName: SilverCraft.CSCore.Tests
+  spec.csharp:
+  - uid: SilverCraft
+    name: SilverCraft
+    href: SilverCraft.html
+  - name: .
+  - uid: SilverCraft.CSCore
+    name: CSCore
+    href: SilverCraft.CSCore.html
+  - name: .
+  - uid: SilverCraft.CSCore.Tests
+    name: Tests
+    href: SilverCraft.CSCore.Tests.html
+  spec.vb:
+  - uid: SilverCraft
+    name: SilverCraft
+    href: SilverCraft.html
+  - name: .
+  - uid: SilverCraft.CSCore
+    name: CSCore
+    href: SilverCraft.CSCore.html
+  - name: .
+  - uid: SilverCraft.CSCore.Tests
+    name: Tests
+    href: SilverCraft.CSCore.Tests.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: SilverCraft.CSCore.Tests.AdditionalCoverageTests.SilverCraft.CSCore.FluentExtensions.Synchronized``2
+  commentId: M:SilverCraft.CSCore.FluentExtensions.Synchronized``2(``0)
+  parent: SilverCraft.CSCore.FluentExtensions
+  definition: SilverCraft.CSCore.FluentExtensions.Synchronized``2(``0)
+  href: SilverCraft.CSCore.FluentExtensions.html#SilverCraft_CSCore_FluentExtensions_Synchronized__2___0_
+  name: Synchronized<AdditionalCoverageTests, T>(AdditionalCoverageTests)
+  nameWithType: FluentExtensions.Synchronized<AdditionalCoverageTests, T>(AdditionalCoverageTests)
+  fullName: SilverCraft.CSCore.FluentExtensions.Synchronized<SilverCraft.CSCore.Tests.AdditionalCoverageTests, T>(SilverCraft.CSCore.Tests.AdditionalCoverageTests)
+  nameWithType.vb: FluentExtensions.Synchronized(Of AdditionalCoverageTests, T)(AdditionalCoverageTests)
+  fullName.vb: SilverCraft.CSCore.FluentExtensions.Synchronized(Of SilverCraft.CSCore.Tests.AdditionalCoverageTests, T)(SilverCraft.CSCore.Tests.AdditionalCoverageTests)
+  name.vb: Synchronized(Of AdditionalCoverageTests, T)(AdditionalCoverageTests)
+  spec.csharp:
+  - uid: SilverCraft.CSCore.FluentExtensions.Synchronized``2(SilverCraft.CSCore.Tests.AdditionalCoverageTests)
+    name: Synchronized
+    href: SilverCraft.CSCore.FluentExtensions.html#SilverCraft_CSCore_FluentExtensions_Synchronized__2___0_
+  - name: <
+  - uid: SilverCraft.CSCore.Tests.AdditionalCoverageTests
+    name: AdditionalCoverageTests
+    href: SilverCraft.CSCore.Tests.AdditionalCoverageTests.html
+  - name: ','
+  - name: " "
+  - name: T
+  - name: '>'
+  - name: (
+  - uid: SilverCraft.CSCore.Tests.AdditionalCoverageTests
+    name: AdditionalCoverageTests
+    href: SilverCraft.CSCore.Tests.AdditionalCoverageTests.html
+  - name: )
+  spec.vb:
+  - uid: SilverCraft.CSCore.FluentExtensions.Synchronized``2(SilverCraft.CSCore.Tests.AdditionalCoverageTests)
+    name: Synchronized
+    href: SilverCraft.CSCore.FluentExtensions.html#SilverCraft_CSCore_FluentExtensions_Synchronized__2___0_
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: SilverCraft.CSCore.Tests.AdditionalCoverageTests
+    name: AdditionalCoverageTests
+    href: SilverCraft.CSCore.Tests.AdditionalCoverageTests.html
+  - name: ','
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: SilverCraft.CSCore.Tests.AdditionalCoverageTests
+    name: AdditionalCoverageTests
+    href: SilverCraft.CSCore.Tests.AdditionalCoverageTests.html
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: SilverCraft.CSCore.FluentExtensions.Synchronized``2(``0)
+  commentId: M:SilverCraft.CSCore.FluentExtensions.Synchronized``2(``0)
+  href: SilverCraft.CSCore.FluentExtensions.html#SilverCraft_CSCore_FluentExtensions_Synchronized__2___0_
+  name: Synchronized<TAudioSource, T>(TAudioSource)
+  nameWithType: FluentExtensions.Synchronized<TAudioSource, T>(TAudioSource)
+  fullName: SilverCraft.CSCore.FluentExtensions.Synchronized<TAudioSource, T>(TAudioSource)
+  nameWithType.vb: FluentExtensions.Synchronized(Of TAudioSource, T)(TAudioSource)
+  fullName.vb: SilverCraft.CSCore.FluentExtensions.Synchronized(Of TAudioSource, T)(TAudioSource)
+  name.vb: Synchronized(Of TAudioSource, T)(TAudioSource)
+  spec.csharp:
+  - uid: SilverCraft.CSCore.FluentExtensions.Synchronized``2(``0)
+    name: Synchronized
+    href: SilverCraft.CSCore.FluentExtensions.html#SilverCraft_CSCore_FluentExtensions_Synchronized__2___0_
+  - name: <
+  - name: TAudioSource
+  - name: ','
+  - name: " "
+  - name: T
+  - name: '>'
+  - name: (
+  - name: TAudioSource
+  - name: )
+  spec.vb:
+  - uid: SilverCraft.CSCore.FluentExtensions.Synchronized``2(``0)
+    name: Synchronized
+    href: SilverCraft.CSCore.FluentExtensions.html#SilverCraft_CSCore_FluentExtensions_Synchronized__2___0_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TAudioSource
+  - name: ','
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - name: TAudioSource
+  - name: )
+- uid: SilverCraft.CSCore.FluentExtensions
+  commentId: T:SilverCraft.CSCore.FluentExtensions
+  parent: SilverCraft.CSCore
+  href: SilverCraft.CSCore.FluentExtensions.html
+  name: FluentExtensions
+  nameWithType: FluentExtensions
+  fullName: SilverCraft.CSCore.FluentExtensions
+- uid: SilverCraft.CSCore
+  commentId: N:SilverCraft.CSCore
+  href: SilverCraft.html
+  name: SilverCraft.CSCore
+  nameWithType: SilverCraft.CSCore
+  fullName: SilverCraft.CSCore
+  spec.csharp:
+  - uid: SilverCraft
+    name: SilverCraft
+    href: SilverCraft.html
+  - name: .
+  - uid: SilverCraft.CSCore
+    name: CSCore
+    href: SilverCraft.CSCore.html
+  spec.vb:
+  - uid: SilverCraft
+    name: SilverCraft
+    href: SilverCraft.html
+  - name: .
+  - uid: SilverCraft.CSCore
+    name: CSCore
+    href: SilverCraft.CSCore.html
+- uid: SilverCraft.CSCore.Tests.AdditionalCoverageTests.AiffReader_ReadsBigEndianSamplesAndSeeksOnBlockBoundaries*
+  commentId: Overload:SilverCraft.CSCore.Tests.AdditionalCoverageTests.AiffReader_ReadsBigEndianSamplesAndSeeksOnBlockBoundaries
+  href: SilverCraft.CSCore.Tests.AdditionalCoverageTests.html#SilverCraft_CSCore_Tests_AdditionalCoverageTests_AiffReader_ReadsBigEndianSamplesAndSeeksOnBlockBoundaries
+  name: AiffReader_ReadsBigEndianSamplesAndSeeksOnBlockBoundaries
+  nameWithType: AdditionalCoverageTests.AiffReader_ReadsBigEndianSamplesAndSeeksOnBlockBoundaries
+  fullName: SilverCraft.CSCore.Tests.AdditionalCoverageTests.AiffReader_ReadsBigEndianSamplesAndSeeksOnBlockBoundaries
+- uid: SilverCraft.CSCore.Tests.AdditionalCoverageTests.AiffReader_RejectsMissingRequiredChunks*
+  commentId: Overload:SilverCraft.CSCore.Tests.AdditionalCoverageTests.AiffReader_RejectsMissingRequiredChunks
+  href: SilverCraft.CSCore.Tests.AdditionalCoverageTests.html#SilverCraft_CSCore_Tests_AdditionalCoverageTests_AiffReader_RejectsMissingRequiredChunks
+  name: AiffReader_RejectsMissingRequiredChunks
+  nameWithType: AdditionalCoverageTests.AiffReader_RejectsMissingRequiredChunks
+  fullName: SilverCraft.CSCore.Tests.AdditionalCoverageTests.AiffReader_RejectsMissingRequiredChunks
+- uid: SilverCraft.CSCore.Tests.AdditionalCoverageTests.RawDataReader_ReadsFromCurrentStreamPositionAndAlignsReads*
+  commentId: Overload:SilverCraft.CSCore.Tests.AdditionalCoverageTests.RawDataReader_ReadsFromCurrentStreamPositionAndAlignsReads
+  href: SilverCraft.CSCore.Tests.AdditionalCoverageTests.html#SilverCraft_CSCore_Tests_AdditionalCoverageTests_RawDataReader_ReadsFromCurrentStreamPositionAndAlignsReads
+  name: RawDataReader_ReadsFromCurrentStreamPositionAndAlignsReads
+  nameWithType: AdditionalCoverageTests.RawDataReader_ReadsFromCurrentStreamPositionAndAlignsReads
+  fullName: SilverCraft.CSCore.Tests.AdditionalCoverageTests.RawDataReader_ReadsFromCurrentStreamPositionAndAlignsReads
+- uid: SilverCraft.CSCore.Tests.AdditionalCoverageTests.RawDataReader_RejectsUnsupportedEncoding*
+  commentId: Overload:SilverCraft.CSCore.Tests.AdditionalCoverageTests.RawDataReader_RejectsUnsupportedEncoding
+  href: SilverCraft.CSCore.Tests.AdditionalCoverageTests.html#SilverCraft_CSCore_Tests_AdditionalCoverageTests_RawDataReader_RejectsUnsupportedEncoding
+  name: RawDataReader_RejectsUnsupportedEncoding
+  nameWithType: AdditionalCoverageTests.RawDataReader_RejectsUnsupportedEncoding
+  fullName: SilverCraft.CSCore.Tests.AdditionalCoverageTests.RawDataReader_RejectsUnsupportedEncoding
+- uid: SilverCraft.CSCore.Tests.AdditionalCoverageTests.Id3v2_ParsesTitleFrameAndRejectsTruncatedTag*
+  commentId: Overload:SilverCraft.CSCore.Tests.AdditionalCoverageTests.Id3v2_ParsesTitleFrameAndRejectsTruncatedTag
+  href: SilverCraft.CSCore.Tests.AdditionalCoverageTests.html#SilverCraft_CSCore_Tests_AdditionalCoverageTests_Id3v2_ParsesTitleFrameAndRejectsTruncatedTag
+  name: Id3v2_ParsesTitleFrameAndRejectsTruncatedTag
+  nameWithType: AdditionalCoverageTests.Id3v2_ParsesTitleFrameAndRejectsTruncatedTag
+  fullName: SilverCraft.CSCore.Tests.AdditionalCoverageTests.Id3v2_ParsesTitleFrameAndRejectsTruncatedTag
+- uid: SilverCraft.CSCore.Tests.AdditionalCoverageTests.SimpleResampler_PreservesConstantSignalAndOutputChannelFormat*
+  commentId: Overload:SilverCraft.CSCore.Tests.AdditionalCoverageTests.SimpleResampler_PreservesConstantSignalAndOutputChannelFormat
+  href: SilverCraft.CSCore.Tests.AdditionalCoverageTests.html#SilverCraft_CSCore_Tests_AdditionalCoverageTests_SimpleResampler_PreservesConstantSignalAndOutputChannelFormat
+  name: SimpleResampler_PreservesConstantSignalAndOutputChannelFormat
+  nameWithType: AdditionalCoverageTests.SimpleResampler_PreservesConstantSignalAndOutputChannelFormat
+  fullName: SilverCraft.CSCore.Tests.AdditionalCoverageTests.SimpleResampler_PreservesConstantSignalAndOutputChannelFormat
+- uid: SilverCraft.CSCore.Tests.AdditionalCoverageTests.LoopStream_RepeatsShortSourceToFillRead*
+  commentId: Overload:SilverCraft.CSCore.Tests.AdditionalCoverageTests.LoopStream_RepeatsShortSourceToFillRead
+  href: SilverCraft.CSCore.Tests.AdditionalCoverageTests.html#SilverCraft_CSCore_Tests_AdditionalCoverageTests_LoopStream_RepeatsShortSourceToFillRead
+  name: LoopStream_RepeatsShortSourceToFillRead
+  nameWithType: AdditionalCoverageTests.LoopStream_RepeatsShortSourceToFillRead
+  fullName: SilverCraft.CSCore.Tests.AdditionalCoverageTests.LoopStream_RepeatsShortSourceToFillRead

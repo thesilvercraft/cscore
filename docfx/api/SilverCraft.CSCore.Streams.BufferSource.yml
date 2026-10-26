@@ -25,7 +25,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: BufferSource
     path: ../SilverCraft.CSCore/Streams/BufferSource.cs
-    startLine: 9
+    startLine: 7
   assemblies:
   - SilverCraft.CSCore
   namespace: SilverCraft.CSCore.Streams
@@ -95,7 +95,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: .ctor
     path: ../SilverCraft.CSCore/Streams/BufferSource.cs
-    startLine: 24
+    startLine: 23
   assemblies:
   - SilverCraft.CSCore
   namespace: SilverCraft.CSCore.Streams
@@ -137,7 +137,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: Read
     path: ../SilverCraft.CSCore/Streams/BufferSource.cs
-    startLine: 57
+    startLine: 56
   assemblies:
   - SilverCraft.CSCore
   namespace: SilverCraft.CSCore.Streams
@@ -197,7 +197,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: ResetBuffer
     path: ../SilverCraft.CSCore/Streams/BufferSource.cs
-    startLine: 80
+    startLine: 81
   assemblies:
   - SilverCraft.CSCore
   namespace: SilverCraft.CSCore.Streams
@@ -229,7 +229,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: Position
     path: ../SilverCraft.CSCore/Streams/BufferSource.cs
-    startLine: 122
+    startLine: 136
   assemblies:
   - SilverCraft.CSCore
   namespace: SilverCraft.CSCore.Streams
@@ -265,7 +265,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: Length
     path: ../SilverCraft.CSCore/Streams/BufferSource.cs
-    startLine: 147
+    startLine: 161
   assemblies:
   - SilverCraft.CSCore
   namespace: SilverCraft.CSCore.Streams
@@ -297,7 +297,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: Dispose
     path: ../SilverCraft.CSCore/Streams/BufferSource.cs
-    startLine: 163
+    startLine: 177
   assemblies:
   - SilverCraft.CSCore
   namespace: SilverCraft.CSCore.Streams

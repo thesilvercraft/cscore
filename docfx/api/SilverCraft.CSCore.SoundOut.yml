@@ -8,6 +8,7 @@ items:
   - SilverCraft.CSCore.SoundOut.ISoundOut
   - SilverCraft.CSCore.SoundOut.PlaybackState
   - SilverCraft.CSCore.SoundOut.PlaybackStoppedEventArgs
+  - SilverCraft.CSCore.SoundOut.PortAudioSoundOut
   langs:
   - csharp
   - vb
@@ -44,6 +45,12 @@ references:
   name: PlaybackStoppedEventArgs
   nameWithType: PlaybackStoppedEventArgs
   fullName: SilverCraft.CSCore.SoundOut.PlaybackStoppedEventArgs
+- uid: SilverCraft.CSCore.SoundOut.PortAudioSoundOut
+  commentId: T:SilverCraft.CSCore.SoundOut.PortAudioSoundOut
+  href: SilverCraft.CSCore.SoundOut.PortAudioSoundOut.html
+  name: PortAudioSoundOut
+  nameWithType: PortAudioSoundOut
+  fullName: SilverCraft.CSCore.SoundOut.PortAudioSoundOut
 - uid: SilverCraft.CSCore.SoundOut
   commentId: N:SilverCraft.CSCore.SoundOut
   href: SilverCraft.html

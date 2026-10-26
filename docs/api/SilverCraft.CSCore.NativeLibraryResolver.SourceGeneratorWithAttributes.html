@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Class SourceGeneratorWithAttributes | SilverCraft.CSCore ">
       
-      <meta name="description" content="A source generator that creates partial class declarations with DllImportResolver methods for annotated classes. The generated methods automatically handle platform-specific DLL paths (Windows/Linux/macOS) and CPU architectures. Use the [DllImportResolver] attribute on a class to enable automatic native library resolution.">
+      <meta name="description" content="A source generator that creates partial class declarations with DllImportResolver methods for annotated classes, and aggregates them into a single global resolver per assembly.">
       <link rel="icon" href="../images/cscore-square-notext.svg">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -89,7 +89,7 @@
 
 
   <h1 id="SilverCraft_CSCore_NativeLibraryResolver_SourceGeneratorWithAttributes" data-uid="SilverCraft.CSCore.NativeLibraryResolver.SourceGeneratorWithAttributes" class="text-break">
-Class SourceGeneratorWithAttributes  <a class="header-action link-secondary" title="View source" href="https://github.com/thesilvercraft/cscore/blob/master/SilverCraft.CSCore.NativeLibraryResolver/SourceGeneratorWithAttributes.cs/#L19"><i class="bi bi-code-slash"></i></a>
+Class SourceGeneratorWithAttributes  <a class="header-action link-secondary" title="View source" href="https://github.com/thesilvercraft/cscore/blob/master/SilverCraft.CSCore.NativeLibraryResolver/SourceGeneratorWithAttributes.cs/#L16"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -97,9 +97,8 @@ Class SourceGeneratorWithAttributes  <a class="header-action link-secondary" tit
   <dl><dt>Assembly</dt><dd>SilverCraft.CSCore.NativeLibraryResolver.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"><p>A source generator that creates partial class declarations with DllImportResolver methods for annotated classes.
-The generated methods automatically handle platform-specific DLL paths (Windows/Linux/macOS) and CPU architectures.
-Use the [DllImportResolver] attribute on a class to enable automatic native library resolution.</p>
+  <div class="markdown summary"><p>A source generator that creates partial class declarations with DllImportResolver methods for annotated classes,
+and aggregates them into a single global resolver per assembly.</p>
 </div>
   <div class="markdown conceptual"></div>
 
@@ -173,7 +172,7 @@ public class SourceGeneratorWithAttributes : IIncrementalGenerator</code></pre>
 
   <h3 id="SilverCraft_CSCore_NativeLibraryResolver_SourceGeneratorWithAttributes_Initialize_Microsoft_CodeAnalysis_IncrementalGeneratorInitializationContext_" data-uid="SilverCraft.CSCore.NativeLibraryResolver.SourceGeneratorWithAttributes.Initialize(Microsoft.CodeAnalysis.IncrementalGeneratorInitializationContext)">
   Initialize(IncrementalGeneratorInitializationContext)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/thesilvercraft/cscore/blob/master/SilverCraft.CSCore.NativeLibraryResolver/SourceGeneratorWithAttributes.cs/#L52"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/thesilvercraft/cscore/blob/master/SilverCraft.CSCore.NativeLibraryResolver/SourceGeneratorWithAttributes.cs/#L48"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Called to initialize the generator and register generation steps via callbacks
@@ -207,7 +206,7 @@ on the <code class="paramref">context</code></p>
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/thesilvercraft/cscore/blob/master/SilverCraft.CSCore.NativeLibraryResolver/SourceGeneratorWithAttributes.cs/#L19" class="edit-link">Edit this page</a>
+          <a href="https://github.com/thesilvercraft/cscore/blob/master/SilverCraft.CSCore.NativeLibraryResolver/SourceGeneratorWithAttributes.cs/#L16" class="edit-link">Edit this page</a>
         </div>
 
 

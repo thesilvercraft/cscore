@@ -1,4 +1,6 @@
 using System;
+using System.Runtime.Intrinsics;
+using System.Runtime.Intrinsics.X86;
 
 namespace SilverCraft.CSCore.Streams
 {
@@ -53,7 +55,7 @@ namespace SilverCraft.CSCore.Streams
         /// </param>
         /// <param name="count">The maximum number of samples to read from the current source.</param>
         /// <returns>The total number of samples read into the buffer.</returns>
-        public override int Read(float[] buffer, int offset, int count)
+        public override unsafe int Read(float[] buffer, int offset, int count)
         {
             var read = base.Read(buffer, offset, count);
             var volume = Volume;
@@ -63,10 +65,33 @@ namespace SilverCraft.CSCore.Streams
             }
             else if (Math.Abs(volume - 1f) > Epsilon && volume is <= 1f - Epsilon or >= 1f + Epsilon) 
             {
-                for (var i = offset; i < read + offset; i++) 
+                var end = offset + read;
+                var index = offset;
+                if (Avx.IsSupported)
                 {
-                    buffer[i] *= volume;
+                    var gain = Vector256.Create(volume);
+                    fixed (float* start = &buffer[offset])
+                    {
+                        var current = start;
+                        var limit = start + read;
+                        for (; current + 8 <= limit; current += 8)
+                            Avx.Store(current, Avx.Multiply(Avx.LoadVector256(current), gain));
+                        index += (int)(current - start);
+                    }
                 }
+                else if (Sse.IsSupported)
+                {
+                    var gain = Vector128.Create(volume);
+                    fixed (float* start = &buffer[offset])
+                    {
+                        var current = start;
+                        var limit = start + read;
+                        for (; current + 4 <= limit; current += 4)
+                            Sse.Store(current, Sse.Multiply(Sse.LoadVector128(current), gain));
+                        index += (int)(current - start);
+                    }
+                }
+                for (; index < end; index++) buffer[index] *= volume;
             }
 
             return read;

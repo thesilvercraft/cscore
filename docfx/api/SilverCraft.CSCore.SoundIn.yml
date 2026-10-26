@@ -6,6 +6,7 @@ items:
   children:
   - SilverCraft.CSCore.SoundIn.DataAvailableEventArgs
   - SilverCraft.CSCore.SoundIn.ISoundIn
+  - SilverCraft.CSCore.SoundIn.PortAudioSoundIn
   - SilverCraft.CSCore.SoundIn.RecordingState
   - SilverCraft.CSCore.SoundIn.RecordingStoppedEventArgs
   langs:
@@ -31,6 +32,12 @@ references:
   name: ISoundIn
   nameWithType: ISoundIn
   fullName: SilverCraft.CSCore.SoundIn.ISoundIn
+- uid: SilverCraft.CSCore.SoundIn.PortAudioSoundIn
+  commentId: T:SilverCraft.CSCore.SoundIn.PortAudioSoundIn
+  href: SilverCraft.CSCore.SoundIn.PortAudioSoundIn.html
+  name: PortAudioSoundIn
+  nameWithType: PortAudioSoundIn
+  fullName: SilverCraft.CSCore.SoundIn.PortAudioSoundIn
 - uid: SilverCraft.CSCore.SoundIn.RecordingState
   commentId: T:SilverCraft.CSCore.SoundIn.RecordingState
   parent: SilverCraft.CSCore.SoundIn

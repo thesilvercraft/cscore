@@ -1,0 +1,568 @@
+### YamlMime:ManagedReference
+items:
+- uid: SilverCraft.CSCore.Tests.DspTests
+  commentId: T:SilverCraft.CSCore.Tests.DspTests
+  id: DspTests
+  parent: SilverCraft.CSCore.Tests
+  children:
+  - SilverCraft.CSCore.Tests.DspTests.FastFourierTransformation_ForwardAndBackward_ReconstructsSignal
+  - SilverCraft.CSCore.Tests.DspTests.HighpassFilter_AttenuatesLowFrequenciesMoreThanHighFrequencies
+  - SilverCraft.CSCore.Tests.DspTests.LowpassFilter_AttenuatesHighFrequenciesMoreThanLowFrequencies
+  - SilverCraft.CSCore.Tests.DspTests.WindowFunctions_HammingAndHanning_BehaveAsExpected
+  langs:
+  - csharp
+  - vb
+  name: DspTests
+  nameWithType: DspTests
+  fullName: SilverCraft.CSCore.Tests.DspTests
+  type: Class
+  source:
+    remote:
+      path: SilverCraft.CSCore.Tests/DspTests.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: DspTests
+    path: ../SilverCraft.CSCore.Tests/DspTests.cs
+    startLine: 6
+  assemblies:
+  - SilverCraft.CSCore.Tests
+  namespace: SilverCraft.CSCore.Tests
+  syntax:
+    content: public sealed class DspTests
+    content.vb: Public NotInheritable Class DspTests
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  extensionMethods:
+  - SilverCraft.CSCore.Tests.DspTests.SilverCraft.CSCore.FluentExtensions.Synchronized``2
+- uid: SilverCraft.CSCore.Tests.DspTests.WindowFunctions_HammingAndHanning_BehaveAsExpected
+  commentId: M:SilverCraft.CSCore.Tests.DspTests.WindowFunctions_HammingAndHanning_BehaveAsExpected
+  id: WindowFunctions_HammingAndHanning_BehaveAsExpected
+  parent: SilverCraft.CSCore.Tests.DspTests
+  langs:
+  - csharp
+  - vb
+  name: WindowFunctions_HammingAndHanning_BehaveAsExpected()
+  nameWithType: DspTests.WindowFunctions_HammingAndHanning_BehaveAsExpected()
+  fullName: SilverCraft.CSCore.Tests.DspTests.WindowFunctions_HammingAndHanning_BehaveAsExpected()
+  type: Method
+  source:
+    remote:
+      path: SilverCraft.CSCore.Tests/DspTests.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: WindowFunctions_HammingAndHanning_BehaveAsExpected
+    path: ../SilverCraft.CSCore.Tests/DspTests.cs
+    startLine: 8
+  assemblies:
+  - SilverCraft.CSCore.Tests
+  namespace: SilverCraft.CSCore.Tests
+  syntax:
+    content: >-
+      [Fact]
+
+      public void WindowFunctions_HammingAndHanning_BehaveAsExpected()
+    content.vb: >-
+      <Fact>
+
+      Public Sub WindowFunctions_HammingAndHanning_BehaveAsExpected()
+  overload: SilverCraft.CSCore.Tests.DspTests.WindowFunctions_HammingAndHanning_BehaveAsExpected*
+  attributes:
+  - type: Xunit.FactAttribute
+    ctor: Xunit.FactAttribute.#ctor
+    arguments: []
+- uid: SilverCraft.CSCore.Tests.DspTests.FastFourierTransformation_ForwardAndBackward_ReconstructsSignal
+  commentId: M:SilverCraft.CSCore.Tests.DspTests.FastFourierTransformation_ForwardAndBackward_ReconstructsSignal
+  id: FastFourierTransformation_ForwardAndBackward_ReconstructsSignal
+  parent: SilverCraft.CSCore.Tests.DspTests
+  langs:
+  - csharp
+  - vb
+  name: FastFourierTransformation_ForwardAndBackward_ReconstructsSignal()
+  nameWithType: DspTests.FastFourierTransformation_ForwardAndBackward_ReconstructsSignal()
+  fullName: SilverCraft.CSCore.Tests.DspTests.FastFourierTransformation_ForwardAndBackward_ReconstructsSignal()
+  type: Method
+  source:
+    remote:
+      path: SilverCraft.CSCore.Tests/DspTests.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: FastFourierTransformation_ForwardAndBackward_ReconstructsSignal
+    path: ../SilverCraft.CSCore.Tests/DspTests.cs
+    startLine: 29
+  assemblies:
+  - SilverCraft.CSCore.Tests
+  namespace: SilverCraft.CSCore.Tests
+  syntax:
+    content: >-
+      [Fact]
+
+      public void FastFourierTransformation_ForwardAndBackward_ReconstructsSignal()
+    content.vb: >-
+      <Fact>
+
+      Public Sub FastFourierTransformation_ForwardAndBackward_ReconstructsSignal()
+  overload: SilverCraft.CSCore.Tests.DspTests.FastFourierTransformation_ForwardAndBackward_ReconstructsSignal*
+  attributes:
+  - type: Xunit.FactAttribute
+    ctor: Xunit.FactAttribute.#ctor
+    arguments: []
+- uid: SilverCraft.CSCore.Tests.DspTests.LowpassFilter_AttenuatesHighFrequenciesMoreThanLowFrequencies
+  commentId: M:SilverCraft.CSCore.Tests.DspTests.LowpassFilter_AttenuatesHighFrequenciesMoreThanLowFrequencies
+  id: LowpassFilter_AttenuatesHighFrequenciesMoreThanLowFrequencies
+  parent: SilverCraft.CSCore.Tests.DspTests
+  langs:
+  - csharp
+  - vb
+  name: LowpassFilter_AttenuatesHighFrequenciesMoreThanLowFrequencies()
+  nameWithType: DspTests.LowpassFilter_AttenuatesHighFrequenciesMoreThanLowFrequencies()
+  fullName: SilverCraft.CSCore.Tests.DspTests.LowpassFilter_AttenuatesHighFrequenciesMoreThanLowFrequencies()
+  type: Method
+  source:
+    remote:
+      path: SilverCraft.CSCore.Tests/DspTests.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: LowpassFilter_AttenuatesHighFrequenciesMoreThanLowFrequencies
+    path: ../SilverCraft.CSCore.Tests/DspTests.cs
+    startLine: 59
+  assemblies:
+  - SilverCraft.CSCore.Tests
+  namespace: SilverCraft.CSCore.Tests
+  syntax:
+    content: >-
+      [Fact]
+
+      public void LowpassFilter_AttenuatesHighFrequenciesMoreThanLowFrequencies()
+    content.vb: >-
+      <Fact>
+
+      Public Sub LowpassFilter_AttenuatesHighFrequenciesMoreThanLowFrequencies()
+  overload: SilverCraft.CSCore.Tests.DspTests.LowpassFilter_AttenuatesHighFrequenciesMoreThanLowFrequencies*
+  attributes:
+  - type: Xunit.FactAttribute
+    ctor: Xunit.FactAttribute.#ctor
+    arguments: []
+- uid: SilverCraft.CSCore.Tests.DspTests.HighpassFilter_AttenuatesLowFrequenciesMoreThanHighFrequencies
+  commentId: M:SilverCraft.CSCore.Tests.DspTests.HighpassFilter_AttenuatesLowFrequenciesMoreThanHighFrequencies
+  id: HighpassFilter_AttenuatesLowFrequenciesMoreThanHighFrequencies
+  parent: SilverCraft.CSCore.Tests.DspTests
+  langs:
+  - csharp
+  - vb
+  name: HighpassFilter_AttenuatesLowFrequenciesMoreThanHighFrequencies()
+  nameWithType: DspTests.HighpassFilter_AttenuatesLowFrequenciesMoreThanHighFrequencies()
+  fullName: SilverCraft.CSCore.Tests.DspTests.HighpassFilter_AttenuatesLowFrequenciesMoreThanHighFrequencies()
+  type: Method
+  source:
+    remote:
+      path: SilverCraft.CSCore.Tests/DspTests.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: HighpassFilter_AttenuatesLowFrequenciesMoreThanHighFrequencies
+    path: ../SilverCraft.CSCore.Tests/DspTests.cs
+    startLine: 96
+  assemblies:
+  - SilverCraft.CSCore.Tests
+  namespace: SilverCraft.CSCore.Tests
+  syntax:
+    content: >-
+      [Fact]
+
+      public void HighpassFilter_AttenuatesLowFrequenciesMoreThanHighFrequencies()
+    content.vb: >-
+      <Fact>
+
+      Public Sub HighpassFilter_AttenuatesLowFrequenciesMoreThanHighFrequencies()
+  overload: SilverCraft.CSCore.Tests.DspTests.HighpassFilter_AttenuatesLowFrequenciesMoreThanHighFrequencies*
+  attributes:
+  - type: Xunit.FactAttribute
+    ctor: Xunit.FactAttribute.#ctor
+    arguments: []
+references:
+- uid: SilverCraft.CSCore.Tests
+  commentId: N:SilverCraft.CSCore.Tests
+  href: SilverCraft.html
+  name: SilverCraft.CSCore.Tests
+  nameWithType: SilverCraft.CSCore.Tests
+  fullName: SilverCraft.CSCore.Tests
+  spec.csharp:
+  - uid: SilverCraft
+    name: SilverCraft
+    href: SilverCraft.html
+  - name: .
+  - uid: SilverCraft.CSCore
+    name: CSCore
+    href: SilverCraft.CSCore.html
+  - name: .
+  - uid: SilverCraft.CSCore.Tests
+    name: Tests
+    href: SilverCraft.CSCore.Tests.html
+  spec.vb:
+  - uid: SilverCraft
+    name: SilverCraft
+    href: SilverCraft.html
+  - name: .
+  - uid: SilverCraft.CSCore
+    name: CSCore
+    href: SilverCraft.CSCore.html
+  - name: .
+  - uid: SilverCraft.CSCore.Tests
+    name: Tests
+    href: SilverCraft.CSCore.Tests.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: SilverCraft.CSCore.Tests.DspTests.SilverCraft.CSCore.FluentExtensions.Synchronized``2
+  commentId: M:SilverCraft.CSCore.FluentExtensions.Synchronized``2(``0)
+  parent: SilverCraft.CSCore.FluentExtensions
+  definition: SilverCraft.CSCore.FluentExtensions.Synchronized``2(``0)
+  href: SilverCraft.CSCore.FluentExtensions.html#SilverCraft_CSCore_FluentExtensions_Synchronized__2___0_
+  name: Synchronized<DspTests, T>(DspTests)
+  nameWithType: FluentExtensions.Synchronized<DspTests, T>(DspTests)
+  fullName: SilverCraft.CSCore.FluentExtensions.Synchronized<SilverCraft.CSCore.Tests.DspTests, T>(SilverCraft.CSCore.Tests.DspTests)
+  nameWithType.vb: FluentExtensions.Synchronized(Of DspTests, T)(DspTests)
+  fullName.vb: SilverCraft.CSCore.FluentExtensions.Synchronized(Of SilverCraft.CSCore.Tests.DspTests, T)(SilverCraft.CSCore.Tests.DspTests)
+  name.vb: Synchronized(Of DspTests, T)(DspTests)
+  spec.csharp:
+  - uid: SilverCraft.CSCore.FluentExtensions.Synchronized``2(SilverCraft.CSCore.Tests.DspTests)
+    name: Synchronized
+    href: SilverCraft.CSCore.FluentExtensions.html#SilverCraft_CSCore_FluentExtensions_Synchronized__2___0_
+  - name: <
+  - uid: SilverCraft.CSCore.Tests.DspTests
+    name: DspTests
+    href: SilverCraft.CSCore.Tests.DspTests.html
+  - name: ','
+  - name: " "
+  - name: T
+  - name: '>'
+  - name: (
+  - uid: SilverCraft.CSCore.Tests.DspTests
+    name: DspTests
+    href: SilverCraft.CSCore.Tests.DspTests.html
+  - name: )
+  spec.vb:
+  - uid: SilverCraft.CSCore.FluentExtensions.Synchronized``2(SilverCraft.CSCore.Tests.DspTests)
+    name: Synchronized
+    href: SilverCraft.CSCore.FluentExtensions.html#SilverCraft_CSCore_FluentExtensions_Synchronized__2___0_
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: SilverCraft.CSCore.Tests.DspTests
+    name: DspTests
+    href: SilverCraft.CSCore.Tests.DspTests.html
+  - name: ','
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: SilverCraft.CSCore.Tests.DspTests
+    name: DspTests
+    href: SilverCraft.CSCore.Tests.DspTests.html
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: SilverCraft.CSCore.FluentExtensions.Synchronized``2(``0)
+  commentId: M:SilverCraft.CSCore.FluentExtensions.Synchronized``2(``0)
+  href: SilverCraft.CSCore.FluentExtensions.html#SilverCraft_CSCore_FluentExtensions_Synchronized__2___0_
+  name: Synchronized<TAudioSource, T>(TAudioSource)
+  nameWithType: FluentExtensions.Synchronized<TAudioSource, T>(TAudioSource)
+  fullName: SilverCraft.CSCore.FluentExtensions.Synchronized<TAudioSource, T>(TAudioSource)
+  nameWithType.vb: FluentExtensions.Synchronized(Of TAudioSource, T)(TAudioSource)
+  fullName.vb: SilverCraft.CSCore.FluentExtensions.Synchronized(Of TAudioSource, T)(TAudioSource)
+  name.vb: Synchronized(Of TAudioSource, T)(TAudioSource)
+  spec.csharp:
+  - uid: SilverCraft.CSCore.FluentExtensions.Synchronized``2(``0)
+    name: Synchronized
+    href: SilverCraft.CSCore.FluentExtensions.html#SilverCraft_CSCore_FluentExtensions_Synchronized__2___0_
+  - name: <
+  - name: TAudioSource
+  - name: ','
+  - name: " "
+  - name: T
+  - name: '>'
+  - name: (
+  - name: TAudioSource
+  - name: )
+  spec.vb:
+  - uid: SilverCraft.CSCore.FluentExtensions.Synchronized``2(``0)
+    name: Synchronized
+    href: SilverCraft.CSCore.FluentExtensions.html#SilverCraft_CSCore_FluentExtensions_Synchronized__2___0_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TAudioSource
+  - name: ','
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - name: TAudioSource
+  - name: )
+- uid: SilverCraft.CSCore.FluentExtensions
+  commentId: T:SilverCraft.CSCore.FluentExtensions
+  parent: SilverCraft.CSCore
+  href: SilverCraft.CSCore.FluentExtensions.html
+  name: FluentExtensions
+  nameWithType: FluentExtensions
+  fullName: SilverCraft.CSCore.FluentExtensions
+- uid: SilverCraft.CSCore
+  commentId: N:SilverCraft.CSCore
+  href: SilverCraft.html
+  name: SilverCraft.CSCore
+  nameWithType: SilverCraft.CSCore
+  fullName: SilverCraft.CSCore
+  spec.csharp:
+  - uid: SilverCraft
+    name: SilverCraft
+    href: SilverCraft.html
+  - name: .
+  - uid: SilverCraft.CSCore
+    name: CSCore
+    href: SilverCraft.CSCore.html
+  spec.vb:
+  - uid: SilverCraft
+    name: SilverCraft
+    href: SilverCraft.html
+  - name: .
+  - uid: SilverCraft.CSCore
+    name: CSCore
+    href: SilverCraft.CSCore.html
+- uid: SilverCraft.CSCore.Tests.DspTests.WindowFunctions_HammingAndHanning_BehaveAsExpected*
+  commentId: Overload:SilverCraft.CSCore.Tests.DspTests.WindowFunctions_HammingAndHanning_BehaveAsExpected
+  href: SilverCraft.CSCore.Tests.DspTests.html#SilverCraft_CSCore_Tests_DspTests_WindowFunctions_HammingAndHanning_BehaveAsExpected
+  name: WindowFunctions_HammingAndHanning_BehaveAsExpected
+  nameWithType: DspTests.WindowFunctions_HammingAndHanning_BehaveAsExpected
+  fullName: SilverCraft.CSCore.Tests.DspTests.WindowFunctions_HammingAndHanning_BehaveAsExpected
+- uid: SilverCraft.CSCore.Tests.DspTests.FastFourierTransformation_ForwardAndBackward_ReconstructsSignal*
+  commentId: Overload:SilverCraft.CSCore.Tests.DspTests.FastFourierTransformation_ForwardAndBackward_ReconstructsSignal
+  href: SilverCraft.CSCore.Tests.DspTests.html#SilverCraft_CSCore_Tests_DspTests_FastFourierTransformation_ForwardAndBackward_ReconstructsSignal
+  name: FastFourierTransformation_ForwardAndBackward_ReconstructsSignal
+  nameWithType: DspTests.FastFourierTransformation_ForwardAndBackward_ReconstructsSignal
+  fullName: SilverCraft.CSCore.Tests.DspTests.FastFourierTransformation_ForwardAndBackward_ReconstructsSignal
+- uid: SilverCraft.CSCore.Tests.DspTests.LowpassFilter_AttenuatesHighFrequenciesMoreThanLowFrequencies*
+  commentId: Overload:SilverCraft.CSCore.Tests.DspTests.LowpassFilter_AttenuatesHighFrequenciesMoreThanLowFrequencies
+  href: SilverCraft.CSCore.Tests.DspTests.html#SilverCraft_CSCore_Tests_DspTests_LowpassFilter_AttenuatesHighFrequenciesMoreThanLowFrequencies
+  name: LowpassFilter_AttenuatesHighFrequenciesMoreThanLowFrequencies
+  nameWithType: DspTests.LowpassFilter_AttenuatesHighFrequenciesMoreThanLowFrequencies
+  fullName: SilverCraft.CSCore.Tests.DspTests.LowpassFilter_AttenuatesHighFrequenciesMoreThanLowFrequencies
+- uid: SilverCraft.CSCore.Tests.DspTests.HighpassFilter_AttenuatesLowFrequenciesMoreThanHighFrequencies*
+  commentId: Overload:SilverCraft.CSCore.Tests.DspTests.HighpassFilter_AttenuatesLowFrequenciesMoreThanHighFrequencies
+  href: SilverCraft.CSCore.Tests.DspTests.html#SilverCraft_CSCore_Tests_DspTests_HighpassFilter_AttenuatesLowFrequenciesMoreThanHighFrequencies
+  name: HighpassFilter_AttenuatesLowFrequenciesMoreThanHighFrequencies
+  nameWithType: DspTests.HighpassFilter_AttenuatesLowFrequenciesMoreThanHighFrequencies
+  fullName: SilverCraft.CSCore.Tests.DspTests.HighpassFilter_AttenuatesLowFrequenciesMoreThanHighFrequencies

@@ -1,0 +1,611 @@
+### YamlMime:ManagedReference
+items:
+- uid: SilverCraft.CSCore.Tests.FlacSeekTableTests
+  commentId: T:SilverCraft.CSCore.Tests.FlacSeekTableTests
+  id: FlacSeekTableTests
+  parent: SilverCraft.CSCore.Tests
+  children:
+  - SilverCraft.CSCore.Tests.FlacSeekTableTests.FileWithMalformedSeekTable_RejectsNonEntrySizedBlock
+  - SilverCraft.CSCore.Tests.FlacSeekTableTests.FileWithSeekTable_DecodesAndCanSeekWithinFirstFrame
+  - SilverCraft.CSCore.Tests.FlacSeekTableTests.FileWithoutSeekTable_CanDecodeAndBuildSeekIndex
+  - SilverCraft.CSCore.Tests.FlacSeekTableTests.SmallOffsetReads_MatchFfmpegPcmAndPreserveBufferGuards
+  - SilverCraft.CSCore.Tests.FlacSeekTableTests.TwentyFourBitFrames_MatchFfmpegPcmAcrossOffsetReads
+  langs:
+  - csharp
+  - vb
+  name: FlacSeekTableTests
+  nameWithType: FlacSeekTableTests
+  fullName: SilverCraft.CSCore.Tests.FlacSeekTableTests
+  type: Class
+  source:
+    remote:
+      path: SilverCraft.CSCore.Tests/FlacSeekTableTests.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: FlacSeekTableTests
+    path: ../SilverCraft.CSCore.Tests/FlacSeekTableTests.cs
+    startLine: 5
+  assemblies:
+  - SilverCraft.CSCore.Tests
+  namespace: SilverCraft.CSCore.Tests
+  syntax:
+    content: public sealed class FlacSeekTableTests
+    content.vb: Public NotInheritable Class FlacSeekTableTests
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  extensionMethods:
+  - SilverCraft.CSCore.Tests.FlacSeekTableTests.SilverCraft.CSCore.FluentExtensions.Synchronized``2
+- uid: SilverCraft.CSCore.Tests.FlacSeekTableTests.FileWithSeekTable_DecodesAndCanSeekWithinFirstFrame
+  commentId: M:SilverCraft.CSCore.Tests.FlacSeekTableTests.FileWithSeekTable_DecodesAndCanSeekWithinFirstFrame
+  id: FileWithSeekTable_DecodesAndCanSeekWithinFirstFrame
+  parent: SilverCraft.CSCore.Tests.FlacSeekTableTests
+  langs:
+  - csharp
+  - vb
+  name: FileWithSeekTable_DecodesAndCanSeekWithinFirstFrame()
+  nameWithType: FlacSeekTableTests.FileWithSeekTable_DecodesAndCanSeekWithinFirstFrame()
+  fullName: SilverCraft.CSCore.Tests.FlacSeekTableTests.FileWithSeekTable_DecodesAndCanSeekWithinFirstFrame()
+  type: Method
+  source:
+    remote:
+      path: SilverCraft.CSCore.Tests/FlacSeekTableTests.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: FileWithSeekTable_DecodesAndCanSeekWithinFirstFrame
+    path: ../SilverCraft.CSCore.Tests/FlacSeekTableTests.cs
+    startLine: 7
+  assemblies:
+  - SilverCraft.CSCore.Tests
+  namespace: SilverCraft.CSCore.Tests
+  syntax:
+    content: >-
+      [Fact]
+
+      public void FileWithSeekTable_DecodesAndCanSeekWithinFirstFrame()
+    content.vb: >-
+      <Fact>
+
+      Public Sub FileWithSeekTable_DecodesAndCanSeekWithinFirstFrame()
+  overload: SilverCraft.CSCore.Tests.FlacSeekTableTests.FileWithSeekTable_DecodesAndCanSeekWithinFirstFrame*
+  attributes:
+  - type: Xunit.FactAttribute
+    ctor: Xunit.FactAttribute.#ctor
+    arguments: []
+- uid: SilverCraft.CSCore.Tests.FlacSeekTableTests.FileWithoutSeekTable_CanDecodeAndBuildSeekIndex
+  commentId: M:SilverCraft.CSCore.Tests.FlacSeekTableTests.FileWithoutSeekTable_CanDecodeAndBuildSeekIndex
+  id: FileWithoutSeekTable_CanDecodeAndBuildSeekIndex
+  parent: SilverCraft.CSCore.Tests.FlacSeekTableTests
+  langs:
+  - csharp
+  - vb
+  name: FileWithoutSeekTable_CanDecodeAndBuildSeekIndex()
+  nameWithType: FlacSeekTableTests.FileWithoutSeekTable_CanDecodeAndBuildSeekIndex()
+  fullName: SilverCraft.CSCore.Tests.FlacSeekTableTests.FileWithoutSeekTable_CanDecodeAndBuildSeekIndex()
+  type: Method
+  source:
+    remote:
+      path: SilverCraft.CSCore.Tests/FlacSeekTableTests.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: FileWithoutSeekTable_CanDecodeAndBuildSeekIndex
+    path: ../SilverCraft.CSCore.Tests/FlacSeekTableTests.cs
+    startLine: 24
+  assemblies:
+  - SilverCraft.CSCore.Tests
+  namespace: SilverCraft.CSCore.Tests
+  syntax:
+    content: >-
+      [Fact]
+
+      public void FileWithoutSeekTable_CanDecodeAndBuildSeekIndex()
+    content.vb: >-
+      <Fact>
+
+      Public Sub FileWithoutSeekTable_CanDecodeAndBuildSeekIndex()
+  overload: SilverCraft.CSCore.Tests.FlacSeekTableTests.FileWithoutSeekTable_CanDecodeAndBuildSeekIndex*
+  attributes:
+  - type: Xunit.FactAttribute
+    ctor: Xunit.FactAttribute.#ctor
+    arguments: []
+- uid: SilverCraft.CSCore.Tests.FlacSeekTableTests.FileWithMalformedSeekTable_RejectsNonEntrySizedBlock
+  commentId: M:SilverCraft.CSCore.Tests.FlacSeekTableTests.FileWithMalformedSeekTable_RejectsNonEntrySizedBlock
+  id: FileWithMalformedSeekTable_RejectsNonEntrySizedBlock
+  parent: SilverCraft.CSCore.Tests.FlacSeekTableTests
+  langs:
+  - csharp
+  - vb
+  name: FileWithMalformedSeekTable_RejectsNonEntrySizedBlock()
+  nameWithType: FlacSeekTableTests.FileWithMalformedSeekTable_RejectsNonEntrySizedBlock()
+  fullName: SilverCraft.CSCore.Tests.FlacSeekTableTests.FileWithMalformedSeekTable_RejectsNonEntrySizedBlock()
+  type: Method
+  source:
+    remote:
+      path: SilverCraft.CSCore.Tests/FlacSeekTableTests.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: FileWithMalformedSeekTable_RejectsNonEntrySizedBlock
+    path: ../SilverCraft.CSCore.Tests/FlacSeekTableTests.cs
+    startLine: 41
+  assemblies:
+  - SilverCraft.CSCore.Tests
+  namespace: SilverCraft.CSCore.Tests
+  syntax:
+    content: >-
+      [Fact]
+
+      public void FileWithMalformedSeekTable_RejectsNonEntrySizedBlock()
+    content.vb: >-
+      <Fact>
+
+      Public Sub FileWithMalformedSeekTable_RejectsNonEntrySizedBlock()
+  overload: SilverCraft.CSCore.Tests.FlacSeekTableTests.FileWithMalformedSeekTable_RejectsNonEntrySizedBlock*
+  attributes:
+  - type: Xunit.FactAttribute
+    ctor: Xunit.FactAttribute.#ctor
+    arguments: []
+- uid: SilverCraft.CSCore.Tests.FlacSeekTableTests.SmallOffsetReads_MatchFfmpegPcmAndPreserveBufferGuards
+  commentId: M:SilverCraft.CSCore.Tests.FlacSeekTableTests.SmallOffsetReads_MatchFfmpegPcmAndPreserveBufferGuards
+  id: SmallOffsetReads_MatchFfmpegPcmAndPreserveBufferGuards
+  parent: SilverCraft.CSCore.Tests.FlacSeekTableTests
+  langs:
+  - csharp
+  - vb
+  name: SmallOffsetReads_MatchFfmpegPcmAndPreserveBufferGuards()
+  nameWithType: FlacSeekTableTests.SmallOffsetReads_MatchFfmpegPcmAndPreserveBufferGuards()
+  fullName: SilverCraft.CSCore.Tests.FlacSeekTableTests.SmallOffsetReads_MatchFfmpegPcmAndPreserveBufferGuards()
+  type: Method
+  source:
+    remote:
+      path: SilverCraft.CSCore.Tests/FlacSeekTableTests.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: SmallOffsetReads_MatchFfmpegPcmAndPreserveBufferGuards
+    path: ../SilverCraft.CSCore.Tests/FlacSeekTableTests.cs
+    startLine: 57
+  assemblies:
+  - SilverCraft.CSCore.Tests
+  namespace: SilverCraft.CSCore.Tests
+  syntax:
+    content: >-
+      [Fact]
+
+      public void SmallOffsetReads_MatchFfmpegPcmAndPreserveBufferGuards()
+    content.vb: >-
+      <Fact>
+
+      Public Sub SmallOffsetReads_MatchFfmpegPcmAndPreserveBufferGuards()
+  overload: SilverCraft.CSCore.Tests.FlacSeekTableTests.SmallOffsetReads_MatchFfmpegPcmAndPreserveBufferGuards*
+  attributes:
+  - type: Xunit.FactAttribute
+    ctor: Xunit.FactAttribute.#ctor
+    arguments: []
+- uid: SilverCraft.CSCore.Tests.FlacSeekTableTests.TwentyFourBitFrames_MatchFfmpegPcmAcrossOffsetReads
+  commentId: M:SilverCraft.CSCore.Tests.FlacSeekTableTests.TwentyFourBitFrames_MatchFfmpegPcmAcrossOffsetReads
+  id: TwentyFourBitFrames_MatchFfmpegPcmAcrossOffsetReads
+  parent: SilverCraft.CSCore.Tests.FlacSeekTableTests
+  langs:
+  - csharp
+  - vb
+  name: TwentyFourBitFrames_MatchFfmpegPcmAcrossOffsetReads()
+  nameWithType: FlacSeekTableTests.TwentyFourBitFrames_MatchFfmpegPcmAcrossOffsetReads()
+  fullName: SilverCraft.CSCore.Tests.FlacSeekTableTests.TwentyFourBitFrames_MatchFfmpegPcmAcrossOffsetReads()
+  type: Method
+  source:
+    remote:
+      path: SilverCraft.CSCore.Tests/FlacSeekTableTests.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: TwentyFourBitFrames_MatchFfmpegPcmAcrossOffsetReads
+    path: ../SilverCraft.CSCore.Tests/FlacSeekTableTests.cs
+    startLine: 88
+  assemblies:
+  - SilverCraft.CSCore.Tests
+  namespace: SilverCraft.CSCore.Tests
+  syntax:
+    content: >-
+      [Fact]
+
+      public void TwentyFourBitFrames_MatchFfmpegPcmAcrossOffsetReads()
+    content.vb: >-
+      <Fact>
+
+      Public Sub TwentyFourBitFrames_MatchFfmpegPcmAcrossOffsetReads()
+  overload: SilverCraft.CSCore.Tests.FlacSeekTableTests.TwentyFourBitFrames_MatchFfmpegPcmAcrossOffsetReads*
+  attributes:
+  - type: Xunit.FactAttribute
+    ctor: Xunit.FactAttribute.#ctor
+    arguments: []
+references:
+- uid: SilverCraft.CSCore.Tests
+  commentId: N:SilverCraft.CSCore.Tests
+  href: SilverCraft.html
+  name: SilverCraft.CSCore.Tests
+  nameWithType: SilverCraft.CSCore.Tests
+  fullName: SilverCraft.CSCore.Tests
+  spec.csharp:
+  - uid: SilverCraft
+    name: SilverCraft
+    href: SilverCraft.html
+  - name: .
+  - uid: SilverCraft.CSCore
+    name: CSCore
+    href: SilverCraft.CSCore.html
+  - name: .
+  - uid: SilverCraft.CSCore.Tests
+    name: Tests
+    href: SilverCraft.CSCore.Tests.html
+  spec.vb:
+  - uid: SilverCraft
+    name: SilverCraft
+    href: SilverCraft.html
+  - name: .
+  - uid: SilverCraft.CSCore
+    name: CSCore
+    href: SilverCraft.CSCore.html
+  - name: .
+  - uid: SilverCraft.CSCore.Tests
+    name: Tests
+    href: SilverCraft.CSCore.Tests.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: SilverCraft.CSCore.Tests.FlacSeekTableTests.SilverCraft.CSCore.FluentExtensions.Synchronized``2
+  commentId: M:SilverCraft.CSCore.FluentExtensions.Synchronized``2(``0)
+  parent: SilverCraft.CSCore.FluentExtensions
+  definition: SilverCraft.CSCore.FluentExtensions.Synchronized``2(``0)
+  href: SilverCraft.CSCore.FluentExtensions.html#SilverCraft_CSCore_FluentExtensions_Synchronized__2___0_
+  name: Synchronized<FlacSeekTableTests, T>(FlacSeekTableTests)
+  nameWithType: FluentExtensions.Synchronized<FlacSeekTableTests, T>(FlacSeekTableTests)
+  fullName: SilverCraft.CSCore.FluentExtensions.Synchronized<SilverCraft.CSCore.Tests.FlacSeekTableTests, T>(SilverCraft.CSCore.Tests.FlacSeekTableTests)
+  nameWithType.vb: FluentExtensions.Synchronized(Of FlacSeekTableTests, T)(FlacSeekTableTests)
+  fullName.vb: SilverCraft.CSCore.FluentExtensions.Synchronized(Of SilverCraft.CSCore.Tests.FlacSeekTableTests, T)(SilverCraft.CSCore.Tests.FlacSeekTableTests)
+  name.vb: Synchronized(Of FlacSeekTableTests, T)(FlacSeekTableTests)
+  spec.csharp:
+  - uid: SilverCraft.CSCore.FluentExtensions.Synchronized``2(SilverCraft.CSCore.Tests.FlacSeekTableTests)
+    name: Synchronized
+    href: SilverCraft.CSCore.FluentExtensions.html#SilverCraft_CSCore_FluentExtensions_Synchronized__2___0_
+  - name: <
+  - uid: SilverCraft.CSCore.Tests.FlacSeekTableTests
+    name: FlacSeekTableTests
+    href: SilverCraft.CSCore.Tests.FlacSeekTableTests.html
+  - name: ','
+  - name: " "
+  - name: T
+  - name: '>'
+  - name: (
+  - uid: SilverCraft.CSCore.Tests.FlacSeekTableTests
+    name: FlacSeekTableTests
+    href: SilverCraft.CSCore.Tests.FlacSeekTableTests.html
+  - name: )
+  spec.vb:
+  - uid: SilverCraft.CSCore.FluentExtensions.Synchronized``2(SilverCraft.CSCore.Tests.FlacSeekTableTests)
+    name: Synchronized
+    href: SilverCraft.CSCore.FluentExtensions.html#SilverCraft_CSCore_FluentExtensions_Synchronized__2___0_
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: SilverCraft.CSCore.Tests.FlacSeekTableTests
+    name: FlacSeekTableTests
+    href: SilverCraft.CSCore.Tests.FlacSeekTableTests.html
+  - name: ','
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: SilverCraft.CSCore.Tests.FlacSeekTableTests
+    name: FlacSeekTableTests
+    href: SilverCraft.CSCore.Tests.FlacSeekTableTests.html
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: SilverCraft.CSCore.FluentExtensions.Synchronized``2(``0)
+  commentId: M:SilverCraft.CSCore.FluentExtensions.Synchronized``2(``0)
+  href: SilverCraft.CSCore.FluentExtensions.html#SilverCraft_CSCore_FluentExtensions_Synchronized__2___0_
+  name: Synchronized<TAudioSource, T>(TAudioSource)
+  nameWithType: FluentExtensions.Synchronized<TAudioSource, T>(TAudioSource)
+  fullName: SilverCraft.CSCore.FluentExtensions.Synchronized<TAudioSource, T>(TAudioSource)
+  nameWithType.vb: FluentExtensions.Synchronized(Of TAudioSource, T)(TAudioSource)
+  fullName.vb: SilverCraft.CSCore.FluentExtensions.Synchronized(Of TAudioSource, T)(TAudioSource)
+  name.vb: Synchronized(Of TAudioSource, T)(TAudioSource)
+  spec.csharp:
+  - uid: SilverCraft.CSCore.FluentExtensions.Synchronized``2(``0)
+    name: Synchronized
+    href: SilverCraft.CSCore.FluentExtensions.html#SilverCraft_CSCore_FluentExtensions_Synchronized__2___0_
+  - name: <
+  - name: TAudioSource
+  - name: ','
+  - name: " "
+  - name: T
+  - name: '>'
+  - name: (
+  - name: TAudioSource
+  - name: )
+  spec.vb:
+  - uid: SilverCraft.CSCore.FluentExtensions.Synchronized``2(``0)
+    name: Synchronized
+    href: SilverCraft.CSCore.FluentExtensions.html#SilverCraft_CSCore_FluentExtensions_Synchronized__2___0_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TAudioSource
+  - name: ','
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - name: TAudioSource
+  - name: )
+- uid: SilverCraft.CSCore.FluentExtensions
+  commentId: T:SilverCraft.CSCore.FluentExtensions
+  parent: SilverCraft.CSCore
+  href: SilverCraft.CSCore.FluentExtensions.html
+  name: FluentExtensions
+  nameWithType: FluentExtensions
+  fullName: SilverCraft.CSCore.FluentExtensions
+- uid: SilverCraft.CSCore
+  commentId: N:SilverCraft.CSCore
+  href: SilverCraft.html
+  name: SilverCraft.CSCore
+  nameWithType: SilverCraft.CSCore
+  fullName: SilverCraft.CSCore
+  spec.csharp:
+  - uid: SilverCraft
+    name: SilverCraft
+    href: SilverCraft.html
+  - name: .
+  - uid: SilverCraft.CSCore
+    name: CSCore
+    href: SilverCraft.CSCore.html
+  spec.vb:
+  - uid: SilverCraft
+    name: SilverCraft
+    href: SilverCraft.html
+  - name: .
+  - uid: SilverCraft.CSCore
+    name: CSCore
+    href: SilverCraft.CSCore.html
+- uid: SilverCraft.CSCore.Tests.FlacSeekTableTests.FileWithSeekTable_DecodesAndCanSeekWithinFirstFrame*
+  commentId: Overload:SilverCraft.CSCore.Tests.FlacSeekTableTests.FileWithSeekTable_DecodesAndCanSeekWithinFirstFrame
+  href: SilverCraft.CSCore.Tests.FlacSeekTableTests.html#SilverCraft_CSCore_Tests_FlacSeekTableTests_FileWithSeekTable_DecodesAndCanSeekWithinFirstFrame
+  name: FileWithSeekTable_DecodesAndCanSeekWithinFirstFrame
+  nameWithType: FlacSeekTableTests.FileWithSeekTable_DecodesAndCanSeekWithinFirstFrame
+  fullName: SilverCraft.CSCore.Tests.FlacSeekTableTests.FileWithSeekTable_DecodesAndCanSeekWithinFirstFrame
+- uid: SilverCraft.CSCore.Tests.FlacSeekTableTests.FileWithoutSeekTable_CanDecodeAndBuildSeekIndex*
+  commentId: Overload:SilverCraft.CSCore.Tests.FlacSeekTableTests.FileWithoutSeekTable_CanDecodeAndBuildSeekIndex
+  href: SilverCraft.CSCore.Tests.FlacSeekTableTests.html#SilverCraft_CSCore_Tests_FlacSeekTableTests_FileWithoutSeekTable_CanDecodeAndBuildSeekIndex
+  name: FileWithoutSeekTable_CanDecodeAndBuildSeekIndex
+  nameWithType: FlacSeekTableTests.FileWithoutSeekTable_CanDecodeAndBuildSeekIndex
+  fullName: SilverCraft.CSCore.Tests.FlacSeekTableTests.FileWithoutSeekTable_CanDecodeAndBuildSeekIndex
+- uid: SilverCraft.CSCore.Tests.FlacSeekTableTests.FileWithMalformedSeekTable_RejectsNonEntrySizedBlock*
+  commentId: Overload:SilverCraft.CSCore.Tests.FlacSeekTableTests.FileWithMalformedSeekTable_RejectsNonEntrySizedBlock
+  href: SilverCraft.CSCore.Tests.FlacSeekTableTests.html#SilverCraft_CSCore_Tests_FlacSeekTableTests_FileWithMalformedSeekTable_RejectsNonEntrySizedBlock
+  name: FileWithMalformedSeekTable_RejectsNonEntrySizedBlock
+  nameWithType: FlacSeekTableTests.FileWithMalformedSeekTable_RejectsNonEntrySizedBlock
+  fullName: SilverCraft.CSCore.Tests.FlacSeekTableTests.FileWithMalformedSeekTable_RejectsNonEntrySizedBlock
+- uid: SilverCraft.CSCore.Tests.FlacSeekTableTests.SmallOffsetReads_MatchFfmpegPcmAndPreserveBufferGuards*
+  commentId: Overload:SilverCraft.CSCore.Tests.FlacSeekTableTests.SmallOffsetReads_MatchFfmpegPcmAndPreserveBufferGuards
+  href: SilverCraft.CSCore.Tests.FlacSeekTableTests.html#SilverCraft_CSCore_Tests_FlacSeekTableTests_SmallOffsetReads_MatchFfmpegPcmAndPreserveBufferGuards
+  name: SmallOffsetReads_MatchFfmpegPcmAndPreserveBufferGuards
+  nameWithType: FlacSeekTableTests.SmallOffsetReads_MatchFfmpegPcmAndPreserveBufferGuards
+  fullName: SilverCraft.CSCore.Tests.FlacSeekTableTests.SmallOffsetReads_MatchFfmpegPcmAndPreserveBufferGuards
+- uid: SilverCraft.CSCore.Tests.FlacSeekTableTests.TwentyFourBitFrames_MatchFfmpegPcmAcrossOffsetReads*
+  commentId: Overload:SilverCraft.CSCore.Tests.FlacSeekTableTests.TwentyFourBitFrames_MatchFfmpegPcmAcrossOffsetReads
+  href: SilverCraft.CSCore.Tests.FlacSeekTableTests.html#SilverCraft_CSCore_Tests_FlacSeekTableTests_TwentyFourBitFrames_MatchFfmpegPcmAcrossOffsetReads
+  name: TwentyFourBitFrames_MatchFfmpegPcmAcrossOffsetReads
+  nameWithType: FlacSeekTableTests.TwentyFourBitFrames_MatchFfmpegPcmAcrossOffsetReads
+  fullName: SilverCraft.CSCore.Tests.FlacSeekTableTests.TwentyFourBitFrames_MatchFfmpegPcmAcrossOffsetReads

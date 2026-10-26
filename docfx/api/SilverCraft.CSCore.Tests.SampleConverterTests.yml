@@ -1,0 +1,869 @@
+### YamlMime:ManagedReference
+items:
+- uid: SilverCraft.CSCore.Tests.SampleConverterTests
+  commentId: T:SilverCraft.CSCore.Tests.SampleConverterTests
+  id: SampleConverterTests
+  parent: SilverCraft.CSCore.Tests
+  children:
+  - SilverCraft.CSCore.Tests.SampleConverterTests.Constructor_RejectsInvalidAudioEncodings
+  - SilverCraft.CSCore.Tests.SampleConverterTests.IeeeFloat_PassesSamplesThroughLosslessly
+  - SilverCraft.CSCore.Tests.SampleConverterTests.Pcm16BitToSample_And_SampleToPcm16_RoundTripWithSimdLength
+  - SilverCraft.CSCore.Tests.SampleConverterTests.Pcm16BitToSample_ConvertsKnownPcmValuesAccurately
+  - SilverCraft.CSCore.Tests.SampleConverterTests.Pcm24BitToSample_ConvertsKnownValuesAccurately
+  - SilverCraft.CSCore.Tests.SampleConverterTests.Pcm24Bit_RoundTripTest
+  - SilverCraft.CSCore.Tests.SampleConverterTests.Pcm32BitToSample_ConvertsLittleEndianPcmAndHandlesTailSamples
+  - SilverCraft.CSCore.Tests.SampleConverterTests.Pcm8BitToSample_ConvertsKnownUnsignedValuesAccurately
+  - SilverCraft.CSCore.Tests.SampleConverterTests.Pcm8Bit_RoundTripWithSimdLength
+  - SilverCraft.CSCore.Tests.SampleConverterTests.SampleToPcm16_ClampsOverflowingValues
+  - SilverCraft.CSCore.Tests.SampleConverterTests.SampleToPcm32_ConvertsVectorAndTailSamplesToLittleEndianPcm
+  langs:
+  - csharp
+  - vb
+  name: SampleConverterTests
+  nameWithType: SampleConverterTests
+  fullName: SilverCraft.CSCore.Tests.SampleConverterTests
+  type: Class
+  source:
+    remote:
+      path: SilverCraft.CSCore.Tests/SampleConverterTests.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: SampleConverterTests
+    path: ../SilverCraft.CSCore.Tests/SampleConverterTests.cs
+    startLine: 6
+  assemblies:
+  - SilverCraft.CSCore.Tests
+  namespace: SilverCraft.CSCore.Tests
+  syntax:
+    content: public sealed class SampleConverterTests
+    content.vb: Public NotInheritable Class SampleConverterTests
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  extensionMethods:
+  - SilverCraft.CSCore.Tests.SampleConverterTests.SilverCraft.CSCore.FluentExtensions.Synchronized``2
+- uid: SilverCraft.CSCore.Tests.SampleConverterTests.Pcm16BitToSample_ConvertsKnownPcmValuesAccurately
+  commentId: M:SilverCraft.CSCore.Tests.SampleConverterTests.Pcm16BitToSample_ConvertsKnownPcmValuesAccurately
+  id: Pcm16BitToSample_ConvertsKnownPcmValuesAccurately
+  parent: SilverCraft.CSCore.Tests.SampleConverterTests
+  langs:
+  - csharp
+  - vb
+  name: Pcm16BitToSample_ConvertsKnownPcmValuesAccurately()
+  nameWithType: SampleConverterTests.Pcm16BitToSample_ConvertsKnownPcmValuesAccurately()
+  fullName: SilverCraft.CSCore.Tests.SampleConverterTests.Pcm16BitToSample_ConvertsKnownPcmValuesAccurately()
+  type: Method
+  source:
+    remote:
+      path: SilverCraft.CSCore.Tests/SampleConverterTests.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: Pcm16BitToSample_ConvertsKnownPcmValuesAccurately
+    path: ../SilverCraft.CSCore.Tests/SampleConverterTests.cs
+    startLine: 8
+  assemblies:
+  - SilverCraft.CSCore.Tests
+  namespace: SilverCraft.CSCore.Tests
+  syntax:
+    content: >-
+      [Fact]
+
+      public void Pcm16BitToSample_ConvertsKnownPcmValuesAccurately()
+    content.vb: >-
+      <Fact>
+
+      Public Sub Pcm16BitToSample_ConvertsKnownPcmValuesAccurately()
+  overload: SilverCraft.CSCore.Tests.SampleConverterTests.Pcm16BitToSample_ConvertsKnownPcmValuesAccurately*
+  attributes:
+  - type: Xunit.FactAttribute
+    ctor: Xunit.FactAttribute.#ctor
+    arguments: []
+- uid: SilverCraft.CSCore.Tests.SampleConverterTests.Pcm16BitToSample_And_SampleToPcm16_RoundTripWithSimdLength
+  commentId: M:SilverCraft.CSCore.Tests.SampleConverterTests.Pcm16BitToSample_And_SampleToPcm16_RoundTripWithSimdLength
+  id: Pcm16BitToSample_And_SampleToPcm16_RoundTripWithSimdLength
+  parent: SilverCraft.CSCore.Tests.SampleConverterTests
+  langs:
+  - csharp
+  - vb
+  name: Pcm16BitToSample_And_SampleToPcm16_RoundTripWithSimdLength()
+  nameWithType: SampleConverterTests.Pcm16BitToSample_And_SampleToPcm16_RoundTripWithSimdLength()
+  fullName: SilverCraft.CSCore.Tests.SampleConverterTests.Pcm16BitToSample_And_SampleToPcm16_RoundTripWithSimdLength()
+  type: Method
+  source:
+    remote:
+      path: SilverCraft.CSCore.Tests/SampleConverterTests.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: Pcm16BitToSample_And_SampleToPcm16_RoundTripWithSimdLength
+    path: ../SilverCraft.CSCore.Tests/SampleConverterTests.cs
+    startLine: 29
+  assemblies:
+  - SilverCraft.CSCore.Tests
+  namespace: SilverCraft.CSCore.Tests
+  syntax:
+    content: >-
+      [Fact]
+
+      public void Pcm16BitToSample_And_SampleToPcm16_RoundTripWithSimdLength()
+    content.vb: >-
+      <Fact>
+
+      Public Sub Pcm16BitToSample_And_SampleToPcm16_RoundTripWithSimdLength()
+  overload: SilverCraft.CSCore.Tests.SampleConverterTests.Pcm16BitToSample_And_SampleToPcm16_RoundTripWithSimdLength*
+  attributes:
+  - type: Xunit.FactAttribute
+    ctor: Xunit.FactAttribute.#ctor
+    arguments: []
+- uid: SilverCraft.CSCore.Tests.SampleConverterTests.SampleToPcm16_ClampsOverflowingValues
+  commentId: M:SilverCraft.CSCore.Tests.SampleConverterTests.SampleToPcm16_ClampsOverflowingValues
+  id: SampleToPcm16_ClampsOverflowingValues
+  parent: SilverCraft.CSCore.Tests.SampleConverterTests
+  langs:
+  - csharp
+  - vb
+  name: SampleToPcm16_ClampsOverflowingValues()
+  nameWithType: SampleConverterTests.SampleToPcm16_ClampsOverflowingValues()
+  fullName: SilverCraft.CSCore.Tests.SampleConverterTests.SampleToPcm16_ClampsOverflowingValues()
+  type: Method
+  source:
+    remote:
+      path: SilverCraft.CSCore.Tests/SampleConverterTests.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: SampleToPcm16_ClampsOverflowingValues
+    path: ../SilverCraft.CSCore.Tests/SampleConverterTests.cs
+    startLine: 60
+  assemblies:
+  - SilverCraft.CSCore.Tests
+  namespace: SilverCraft.CSCore.Tests
+  syntax:
+    content: >-
+      [Fact]
+
+      public void SampleToPcm16_ClampsOverflowingValues()
+    content.vb: >-
+      <Fact>
+
+      Public Sub SampleToPcm16_ClampsOverflowingValues()
+  overload: SilverCraft.CSCore.Tests.SampleConverterTests.SampleToPcm16_ClampsOverflowingValues*
+  attributes:
+  - type: Xunit.FactAttribute
+    ctor: Xunit.FactAttribute.#ctor
+    arguments: []
+- uid: SilverCraft.CSCore.Tests.SampleConverterTests.Pcm24BitToSample_ConvertsKnownValuesAccurately
+  commentId: M:SilverCraft.CSCore.Tests.SampleConverterTests.Pcm24BitToSample_ConvertsKnownValuesAccurately
+  id: Pcm24BitToSample_ConvertsKnownValuesAccurately
+  parent: SilverCraft.CSCore.Tests.SampleConverterTests
+  langs:
+  - csharp
+  - vb
+  name: Pcm24BitToSample_ConvertsKnownValuesAccurately()
+  nameWithType: SampleConverterTests.Pcm24BitToSample_ConvertsKnownValuesAccurately()
+  fullName: SilverCraft.CSCore.Tests.SampleConverterTests.Pcm24BitToSample_ConvertsKnownValuesAccurately()
+  type: Method
+  source:
+    remote:
+      path: SilverCraft.CSCore.Tests/SampleConverterTests.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: Pcm24BitToSample_ConvertsKnownValuesAccurately
+    path: ../SilverCraft.CSCore.Tests/SampleConverterTests.cs
+    startLine: 78
+  assemblies:
+  - SilverCraft.CSCore.Tests
+  namespace: SilverCraft.CSCore.Tests
+  syntax:
+    content: >-
+      [Fact]
+
+      public void Pcm24BitToSample_ConvertsKnownValuesAccurately()
+    content.vb: >-
+      <Fact>
+
+      Public Sub Pcm24BitToSample_ConvertsKnownValuesAccurately()
+  overload: SilverCraft.CSCore.Tests.SampleConverterTests.Pcm24BitToSample_ConvertsKnownValuesAccurately*
+  attributes:
+  - type: Xunit.FactAttribute
+    ctor: Xunit.FactAttribute.#ctor
+    arguments: []
+- uid: SilverCraft.CSCore.Tests.SampleConverterTests.Pcm24Bit_RoundTripTest
+  commentId: M:SilverCraft.CSCore.Tests.SampleConverterTests.Pcm24Bit_RoundTripTest
+  id: Pcm24Bit_RoundTripTest
+  parent: SilverCraft.CSCore.Tests.SampleConverterTests
+  langs:
+  - csharp
+  - vb
+  name: Pcm24Bit_RoundTripTest()
+  nameWithType: SampleConverterTests.Pcm24Bit_RoundTripTest()
+  fullName: SilverCraft.CSCore.Tests.SampleConverterTests.Pcm24Bit_RoundTripTest()
+  type: Method
+  source:
+    remote:
+      path: SilverCraft.CSCore.Tests/SampleConverterTests.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: Pcm24Bit_RoundTripTest
+    path: ../SilverCraft.CSCore.Tests/SampleConverterTests.cs
+    startLine: 104
+  assemblies:
+  - SilverCraft.CSCore.Tests
+  namespace: SilverCraft.CSCore.Tests
+  syntax:
+    content: >-
+      [Fact]
+
+      public void Pcm24Bit_RoundTripTest()
+    content.vb: >-
+      <Fact>
+
+      Public Sub Pcm24Bit_RoundTripTest()
+  overload: SilverCraft.CSCore.Tests.SampleConverterTests.Pcm24Bit_RoundTripTest*
+  attributes:
+  - type: Xunit.FactAttribute
+    ctor: Xunit.FactAttribute.#ctor
+    arguments: []
+- uid: SilverCraft.CSCore.Tests.SampleConverterTests.Pcm8BitToSample_ConvertsKnownUnsignedValuesAccurately
+  commentId: M:SilverCraft.CSCore.Tests.SampleConverterTests.Pcm8BitToSample_ConvertsKnownUnsignedValuesAccurately
+  id: Pcm8BitToSample_ConvertsKnownUnsignedValuesAccurately
+  parent: SilverCraft.CSCore.Tests.SampleConverterTests
+  langs:
+  - csharp
+  - vb
+  name: Pcm8BitToSample_ConvertsKnownUnsignedValuesAccurately()
+  nameWithType: SampleConverterTests.Pcm8BitToSample_ConvertsKnownUnsignedValuesAccurately()
+  fullName: SilverCraft.CSCore.Tests.SampleConverterTests.Pcm8BitToSample_ConvertsKnownUnsignedValuesAccurately()
+  type: Method
+  source:
+    remote:
+      path: SilverCraft.CSCore.Tests/SampleConverterTests.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: Pcm8BitToSample_ConvertsKnownUnsignedValuesAccurately
+    path: ../SilverCraft.CSCore.Tests/SampleConverterTests.cs
+    startLine: 128
+  assemblies:
+  - SilverCraft.CSCore.Tests
+  namespace: SilverCraft.CSCore.Tests
+  syntax:
+    content: >-
+      [Fact]
+
+      public void Pcm8BitToSample_ConvertsKnownUnsignedValuesAccurately()
+    content.vb: >-
+      <Fact>
+
+      Public Sub Pcm8BitToSample_ConvertsKnownUnsignedValuesAccurately()
+  overload: SilverCraft.CSCore.Tests.SampleConverterTests.Pcm8BitToSample_ConvertsKnownUnsignedValuesAccurately*
+  attributes:
+  - type: Xunit.FactAttribute
+    ctor: Xunit.FactAttribute.#ctor
+    arguments: []
+- uid: SilverCraft.CSCore.Tests.SampleConverterTests.Pcm8Bit_RoundTripWithSimdLength
+  commentId: M:SilverCraft.CSCore.Tests.SampleConverterTests.Pcm8Bit_RoundTripWithSimdLength
+  id: Pcm8Bit_RoundTripWithSimdLength
+  parent: SilverCraft.CSCore.Tests.SampleConverterTests
+  langs:
+  - csharp
+  - vb
+  name: Pcm8Bit_RoundTripWithSimdLength()
+  nameWithType: SampleConverterTests.Pcm8Bit_RoundTripWithSimdLength()
+  fullName: SilverCraft.CSCore.Tests.SampleConverterTests.Pcm8Bit_RoundTripWithSimdLength()
+  type: Method
+  source:
+    remote:
+      path: SilverCraft.CSCore.Tests/SampleConverterTests.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: Pcm8Bit_RoundTripWithSimdLength
+    path: ../SilverCraft.CSCore.Tests/SampleConverterTests.cs
+    startLine: 145
+  assemblies:
+  - SilverCraft.CSCore.Tests
+  namespace: SilverCraft.CSCore.Tests
+  syntax:
+    content: >-
+      [Fact]
+
+      public void Pcm8Bit_RoundTripWithSimdLength()
+    content.vb: >-
+      <Fact>
+
+      Public Sub Pcm8Bit_RoundTripWithSimdLength()
+  overload: SilverCraft.CSCore.Tests.SampleConverterTests.Pcm8Bit_RoundTripWithSimdLength*
+  attributes:
+  - type: Xunit.FactAttribute
+    ctor: Xunit.FactAttribute.#ctor
+    arguments: []
+- uid: SilverCraft.CSCore.Tests.SampleConverterTests.IeeeFloat_PassesSamplesThroughLosslessly
+  commentId: M:SilverCraft.CSCore.Tests.SampleConverterTests.IeeeFloat_PassesSamplesThroughLosslessly
+  id: IeeeFloat_PassesSamplesThroughLosslessly
+  parent: SilverCraft.CSCore.Tests.SampleConverterTests
+  langs:
+  - csharp
+  - vb
+  name: IeeeFloat_PassesSamplesThroughLosslessly()
+  nameWithType: SampleConverterTests.IeeeFloat_PassesSamplesThroughLosslessly()
+  fullName: SilverCraft.CSCore.Tests.SampleConverterTests.IeeeFloat_PassesSamplesThroughLosslessly()
+  type: Method
+  source:
+    remote:
+      path: SilverCraft.CSCore.Tests/SampleConverterTests.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: IeeeFloat_PassesSamplesThroughLosslessly
+    path: ../SilverCraft.CSCore.Tests/SampleConverterTests.cs
+    startLine: 176
+  assemblies:
+  - SilverCraft.CSCore.Tests
+  namespace: SilverCraft.CSCore.Tests
+  syntax:
+    content: >-
+      [Fact]
+
+      public void IeeeFloat_PassesSamplesThroughLosslessly()
+    content.vb: >-
+      <Fact>
+
+      Public Sub IeeeFloat_PassesSamplesThroughLosslessly()
+  overload: SilverCraft.CSCore.Tests.SampleConverterTests.IeeeFloat_PassesSamplesThroughLosslessly*
+  attributes:
+  - type: Xunit.FactAttribute
+    ctor: Xunit.FactAttribute.#ctor
+    arguments: []
+- uid: SilverCraft.CSCore.Tests.SampleConverterTests.Constructor_RejectsInvalidAudioEncodings
+  commentId: M:SilverCraft.CSCore.Tests.SampleConverterTests.Constructor_RejectsInvalidAudioEncodings
+  id: Constructor_RejectsInvalidAudioEncodings
+  parent: SilverCraft.CSCore.Tests.SampleConverterTests
+  langs:
+  - csharp
+  - vb
+  name: Constructor_RejectsInvalidAudioEncodings()
+  nameWithType: SampleConverterTests.Constructor_RejectsInvalidAudioEncodings()
+  fullName: SilverCraft.CSCore.Tests.SampleConverterTests.Constructor_RejectsInvalidAudioEncodings()
+  type: Method
+  source:
+    remote:
+      path: SilverCraft.CSCore.Tests/SampleConverterTests.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: Constructor_RejectsInvalidAudioEncodings
+    path: ../SilverCraft.CSCore.Tests/SampleConverterTests.cs
+    startLine: 197
+  assemblies:
+  - SilverCraft.CSCore.Tests
+  namespace: SilverCraft.CSCore.Tests
+  syntax:
+    content: >-
+      [Fact]
+
+      public void Constructor_RejectsInvalidAudioEncodings()
+    content.vb: >-
+      <Fact>
+
+      Public Sub Constructor_RejectsInvalidAudioEncodings()
+  overload: SilverCraft.CSCore.Tests.SampleConverterTests.Constructor_RejectsInvalidAudioEncodings*
+  attributes:
+  - type: Xunit.FactAttribute
+    ctor: Xunit.FactAttribute.#ctor
+    arguments: []
+- uid: SilverCraft.CSCore.Tests.SampleConverterTests.SampleToPcm32_ConvertsVectorAndTailSamplesToLittleEndianPcm
+  commentId: M:SilverCraft.CSCore.Tests.SampleConverterTests.SampleToPcm32_ConvertsVectorAndTailSamplesToLittleEndianPcm
+  id: SampleToPcm32_ConvertsVectorAndTailSamplesToLittleEndianPcm
+  parent: SilverCraft.CSCore.Tests.SampleConverterTests
+  langs:
+  - csharp
+  - vb
+  name: SampleToPcm32_ConvertsVectorAndTailSamplesToLittleEndianPcm()
+  nameWithType: SampleConverterTests.SampleToPcm32_ConvertsVectorAndTailSamplesToLittleEndianPcm()
+  fullName: SilverCraft.CSCore.Tests.SampleConverterTests.SampleToPcm32_ConvertsVectorAndTailSamplesToLittleEndianPcm()
+  type: Method
+  source:
+    remote:
+      path: SilverCraft.CSCore.Tests/SampleConverterTests.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: SampleToPcm32_ConvertsVectorAndTailSamplesToLittleEndianPcm
+    path: ../SilverCraft.CSCore.Tests/SampleConverterTests.cs
+    startLine: 206
+  assemblies:
+  - SilverCraft.CSCore.Tests
+  namespace: SilverCraft.CSCore.Tests
+  syntax:
+    content: >-
+      [Fact]
+
+      public void SampleToPcm32_ConvertsVectorAndTailSamplesToLittleEndianPcm()
+    content.vb: >-
+      <Fact>
+
+      Public Sub SampleToPcm32_ConvertsVectorAndTailSamplesToLittleEndianPcm()
+  overload: SilverCraft.CSCore.Tests.SampleConverterTests.SampleToPcm32_ConvertsVectorAndTailSamplesToLittleEndianPcm*
+  attributes:
+  - type: Xunit.FactAttribute
+    ctor: Xunit.FactAttribute.#ctor
+    arguments: []
+- uid: SilverCraft.CSCore.Tests.SampleConverterTests.Pcm32BitToSample_ConvertsLittleEndianPcmAndHandlesTailSamples
+  commentId: M:SilverCraft.CSCore.Tests.SampleConverterTests.Pcm32BitToSample_ConvertsLittleEndianPcmAndHandlesTailSamples
+  id: Pcm32BitToSample_ConvertsLittleEndianPcmAndHandlesTailSamples
+  parent: SilverCraft.CSCore.Tests.SampleConverterTests
+  langs:
+  - csharp
+  - vb
+  name: Pcm32BitToSample_ConvertsLittleEndianPcmAndHandlesTailSamples()
+  nameWithType: SampleConverterTests.Pcm32BitToSample_ConvertsLittleEndianPcmAndHandlesTailSamples()
+  fullName: SilverCraft.CSCore.Tests.SampleConverterTests.Pcm32BitToSample_ConvertsLittleEndianPcmAndHandlesTailSamples()
+  type: Method
+  source:
+    remote:
+      path: SilverCraft.CSCore.Tests/SampleConverterTests.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: Pcm32BitToSample_ConvertsLittleEndianPcmAndHandlesTailSamples
+    path: ../SilverCraft.CSCore.Tests/SampleConverterTests.cs
+    startLine: 224
+  assemblies:
+  - SilverCraft.CSCore.Tests
+  namespace: SilverCraft.CSCore.Tests
+  syntax:
+    content: >-
+      [Fact]
+
+      public void Pcm32BitToSample_ConvertsLittleEndianPcmAndHandlesTailSamples()
+    content.vb: >-
+      <Fact>
+
+      Public Sub Pcm32BitToSample_ConvertsLittleEndianPcmAndHandlesTailSamples()
+  overload: SilverCraft.CSCore.Tests.SampleConverterTests.Pcm32BitToSample_ConvertsLittleEndianPcmAndHandlesTailSamples*
+  attributes:
+  - type: Xunit.FactAttribute
+    ctor: Xunit.FactAttribute.#ctor
+    arguments: []
+references:
+- uid: SilverCraft.CSCore.Tests
+  commentId: N:SilverCraft.CSCore.Tests
+  href: SilverCraft.html
+  name: SilverCraft.CSCore.Tests
+  nameWithType: SilverCraft.CSCore.Tests
+  fullName: SilverCraft.CSCore.Tests
+  spec.csharp:
+  - uid: SilverCraft
+    name: SilverCraft
+    href: SilverCraft.html
+  - name: .
+  - uid: SilverCraft.CSCore
+    name: CSCore
+    href: SilverCraft.CSCore.html
+  - name: .
+  - uid: SilverCraft.CSCore.Tests
+    name: Tests
+    href: SilverCraft.CSCore.Tests.html
+  spec.vb:
+  - uid: SilverCraft
+    name: SilverCraft
+    href: SilverCraft.html
+  - name: .
+  - uid: SilverCraft.CSCore
+    name: CSCore
+    href: SilverCraft.CSCore.html
+  - name: .
+  - uid: SilverCraft.CSCore.Tests
+    name: Tests
+    href: SilverCraft.CSCore.Tests.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: SilverCraft.CSCore.Tests.SampleConverterTests.SilverCraft.CSCore.FluentExtensions.Synchronized``2
+  commentId: M:SilverCraft.CSCore.FluentExtensions.Synchronized``2(``0)
+  parent: SilverCraft.CSCore.FluentExtensions
+  definition: SilverCraft.CSCore.FluentExtensions.Synchronized``2(``0)
+  href: SilverCraft.CSCore.FluentExtensions.html#SilverCraft_CSCore_FluentExtensions_Synchronized__2___0_
+  name: Synchronized<SampleConverterTests, T>(SampleConverterTests)
+  nameWithType: FluentExtensions.Synchronized<SampleConverterTests, T>(SampleConverterTests)
+  fullName: SilverCraft.CSCore.FluentExtensions.Synchronized<SilverCraft.CSCore.Tests.SampleConverterTests, T>(SilverCraft.CSCore.Tests.SampleConverterTests)
+  nameWithType.vb: FluentExtensions.Synchronized(Of SampleConverterTests, T)(SampleConverterTests)
+  fullName.vb: SilverCraft.CSCore.FluentExtensions.Synchronized(Of SilverCraft.CSCore.Tests.SampleConverterTests, T)(SilverCraft.CSCore.Tests.SampleConverterTests)
+  name.vb: Synchronized(Of SampleConverterTests, T)(SampleConverterTests)
+  spec.csharp:
+  - uid: SilverCraft.CSCore.FluentExtensions.Synchronized``2(SilverCraft.CSCore.Tests.SampleConverterTests)
+    name: Synchronized
+    href: SilverCraft.CSCore.FluentExtensions.html#SilverCraft_CSCore_FluentExtensions_Synchronized__2___0_
+  - name: <
+  - uid: SilverCraft.CSCore.Tests.SampleConverterTests
+    name: SampleConverterTests
+    href: SilverCraft.CSCore.Tests.SampleConverterTests.html
+  - name: ','
+  - name: " "
+  - name: T
+  - name: '>'
+  - name: (
+  - uid: SilverCraft.CSCore.Tests.SampleConverterTests
+    name: SampleConverterTests
+    href: SilverCraft.CSCore.Tests.SampleConverterTests.html
+  - name: )
+  spec.vb:
+  - uid: SilverCraft.CSCore.FluentExtensions.Synchronized``2(SilverCraft.CSCore.Tests.SampleConverterTests)
+    name: Synchronized
+    href: SilverCraft.CSCore.FluentExtensions.html#SilverCraft_CSCore_FluentExtensions_Synchronized__2___0_
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: SilverCraft.CSCore.Tests.SampleConverterTests
+    name: SampleConverterTests
+    href: SilverCraft.CSCore.Tests.SampleConverterTests.html
+  - name: ','
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: SilverCraft.CSCore.Tests.SampleConverterTests
+    name: SampleConverterTests
+    href: SilverCraft.CSCore.Tests.SampleConverterTests.html
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: SilverCraft.CSCore.FluentExtensions.Synchronized``2(``0)
+  commentId: M:SilverCraft.CSCore.FluentExtensions.Synchronized``2(``0)
+  href: SilverCraft.CSCore.FluentExtensions.html#SilverCraft_CSCore_FluentExtensions_Synchronized__2___0_
+  name: Synchronized<TAudioSource, T>(TAudioSource)
+  nameWithType: FluentExtensions.Synchronized<TAudioSource, T>(TAudioSource)
+  fullName: SilverCraft.CSCore.FluentExtensions.Synchronized<TAudioSource, T>(TAudioSource)
+  nameWithType.vb: FluentExtensions.Synchronized(Of TAudioSource, T)(TAudioSource)
+  fullName.vb: SilverCraft.CSCore.FluentExtensions.Synchronized(Of TAudioSource, T)(TAudioSource)
+  name.vb: Synchronized(Of TAudioSource, T)(TAudioSource)
+  spec.csharp:
+  - uid: SilverCraft.CSCore.FluentExtensions.Synchronized``2(``0)
+    name: Synchronized
+    href: SilverCraft.CSCore.FluentExtensions.html#SilverCraft_CSCore_FluentExtensions_Synchronized__2___0_
+  - name: <
+  - name: TAudioSource
+  - name: ','
+  - name: " "
+  - name: T
+  - name: '>'
+  - name: (
+  - name: TAudioSource
+  - name: )
+  spec.vb:
+  - uid: SilverCraft.CSCore.FluentExtensions.Synchronized``2(``0)
+    name: Synchronized
+    href: SilverCraft.CSCore.FluentExtensions.html#SilverCraft_CSCore_FluentExtensions_Synchronized__2___0_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TAudioSource
+  - name: ','
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - name: TAudioSource
+  - name: )
+- uid: SilverCraft.CSCore.FluentExtensions
+  commentId: T:SilverCraft.CSCore.FluentExtensions
+  parent: SilverCraft.CSCore
+  href: SilverCraft.CSCore.FluentExtensions.html
+  name: FluentExtensions
+  nameWithType: FluentExtensions
+  fullName: SilverCraft.CSCore.FluentExtensions
+- uid: SilverCraft.CSCore
+  commentId: N:SilverCraft.CSCore
+  href: SilverCraft.html
+  name: SilverCraft.CSCore
+  nameWithType: SilverCraft.CSCore
+  fullName: SilverCraft.CSCore
+  spec.csharp:
+  - uid: SilverCraft
+    name: SilverCraft
+    href: SilverCraft.html
+  - name: .
+  - uid: SilverCraft.CSCore
+    name: CSCore
+    href: SilverCraft.CSCore.html
+  spec.vb:
+  - uid: SilverCraft
+    name: SilverCraft
+    href: SilverCraft.html
+  - name: .
+  - uid: SilverCraft.CSCore
+    name: CSCore
+    href: SilverCraft.CSCore.html
+- uid: SilverCraft.CSCore.Tests.SampleConverterTests.Pcm16BitToSample_ConvertsKnownPcmValuesAccurately*
+  commentId: Overload:SilverCraft.CSCore.Tests.SampleConverterTests.Pcm16BitToSample_ConvertsKnownPcmValuesAccurately
+  href: SilverCraft.CSCore.Tests.SampleConverterTests.html#SilverCraft_CSCore_Tests_SampleConverterTests_Pcm16BitToSample_ConvertsKnownPcmValuesAccurately
+  name: Pcm16BitToSample_ConvertsKnownPcmValuesAccurately
+  nameWithType: SampleConverterTests.Pcm16BitToSample_ConvertsKnownPcmValuesAccurately
+  fullName: SilverCraft.CSCore.Tests.SampleConverterTests.Pcm16BitToSample_ConvertsKnownPcmValuesAccurately
+- uid: SilverCraft.CSCore.Tests.SampleConverterTests.Pcm16BitToSample_And_SampleToPcm16_RoundTripWithSimdLength*
+  commentId: Overload:SilverCraft.CSCore.Tests.SampleConverterTests.Pcm16BitToSample_And_SampleToPcm16_RoundTripWithSimdLength
+  href: SilverCraft.CSCore.Tests.SampleConverterTests.html#SilverCraft_CSCore_Tests_SampleConverterTests_Pcm16BitToSample_And_SampleToPcm16_RoundTripWithSimdLength
+  name: Pcm16BitToSample_And_SampleToPcm16_RoundTripWithSimdLength
+  nameWithType: SampleConverterTests.Pcm16BitToSample_And_SampleToPcm16_RoundTripWithSimdLength
+  fullName: SilverCraft.CSCore.Tests.SampleConverterTests.Pcm16BitToSample_And_SampleToPcm16_RoundTripWithSimdLength
+- uid: SilverCraft.CSCore.Tests.SampleConverterTests.SampleToPcm16_ClampsOverflowingValues*
+  commentId: Overload:SilverCraft.CSCore.Tests.SampleConverterTests.SampleToPcm16_ClampsOverflowingValues
+  href: SilverCraft.CSCore.Tests.SampleConverterTests.html#SilverCraft_CSCore_Tests_SampleConverterTests_SampleToPcm16_ClampsOverflowingValues
+  name: SampleToPcm16_ClampsOverflowingValues
+  nameWithType: SampleConverterTests.SampleToPcm16_ClampsOverflowingValues
+  fullName: SilverCraft.CSCore.Tests.SampleConverterTests.SampleToPcm16_ClampsOverflowingValues
+- uid: SilverCraft.CSCore.Tests.SampleConverterTests.Pcm24BitToSample_ConvertsKnownValuesAccurately*
+  commentId: Overload:SilverCraft.CSCore.Tests.SampleConverterTests.Pcm24BitToSample_ConvertsKnownValuesAccurately
+  href: SilverCraft.CSCore.Tests.SampleConverterTests.html#SilverCraft_CSCore_Tests_SampleConverterTests_Pcm24BitToSample_ConvertsKnownValuesAccurately
+  name: Pcm24BitToSample_ConvertsKnownValuesAccurately
+  nameWithType: SampleConverterTests.Pcm24BitToSample_ConvertsKnownValuesAccurately
+  fullName: SilverCraft.CSCore.Tests.SampleConverterTests.Pcm24BitToSample_ConvertsKnownValuesAccurately
+- uid: SilverCraft.CSCore.Tests.SampleConverterTests.Pcm24Bit_RoundTripTest*
+  commentId: Overload:SilverCraft.CSCore.Tests.SampleConverterTests.Pcm24Bit_RoundTripTest
+  href: SilverCraft.CSCore.Tests.SampleConverterTests.html#SilverCraft_CSCore_Tests_SampleConverterTests_Pcm24Bit_RoundTripTest
+  name: Pcm24Bit_RoundTripTest
+  nameWithType: SampleConverterTests.Pcm24Bit_RoundTripTest
+  fullName: SilverCraft.CSCore.Tests.SampleConverterTests.Pcm24Bit_RoundTripTest
+- uid: SilverCraft.CSCore.Tests.SampleConverterTests.Pcm8BitToSample_ConvertsKnownUnsignedValuesAccurately*
+  commentId: Overload:SilverCraft.CSCore.Tests.SampleConverterTests.Pcm8BitToSample_ConvertsKnownUnsignedValuesAccurately
+  href: SilverCraft.CSCore.Tests.SampleConverterTests.html#SilverCraft_CSCore_Tests_SampleConverterTests_Pcm8BitToSample_ConvertsKnownUnsignedValuesAccurately
+  name: Pcm8BitToSample_ConvertsKnownUnsignedValuesAccurately
+  nameWithType: SampleConverterTests.Pcm8BitToSample_ConvertsKnownUnsignedValuesAccurately
+  fullName: SilverCraft.CSCore.Tests.SampleConverterTests.Pcm8BitToSample_ConvertsKnownUnsignedValuesAccurately
+- uid: SilverCraft.CSCore.Tests.SampleConverterTests.Pcm8Bit_RoundTripWithSimdLength*
+  commentId: Overload:SilverCraft.CSCore.Tests.SampleConverterTests.Pcm8Bit_RoundTripWithSimdLength
+  href: SilverCraft.CSCore.Tests.SampleConverterTests.html#SilverCraft_CSCore_Tests_SampleConverterTests_Pcm8Bit_RoundTripWithSimdLength
+  name: Pcm8Bit_RoundTripWithSimdLength
+  nameWithType: SampleConverterTests.Pcm8Bit_RoundTripWithSimdLength
+  fullName: SilverCraft.CSCore.Tests.SampleConverterTests.Pcm8Bit_RoundTripWithSimdLength
+- uid: SilverCraft.CSCore.Tests.SampleConverterTests.IeeeFloat_PassesSamplesThroughLosslessly*
+  commentId: Overload:SilverCraft.CSCore.Tests.SampleConverterTests.IeeeFloat_PassesSamplesThroughLosslessly
+  href: SilverCraft.CSCore.Tests.SampleConverterTests.html#SilverCraft_CSCore_Tests_SampleConverterTests_IeeeFloat_PassesSamplesThroughLosslessly
+  name: IeeeFloat_PassesSamplesThroughLosslessly
+  nameWithType: SampleConverterTests.IeeeFloat_PassesSamplesThroughLosslessly
+  fullName: SilverCraft.CSCore.Tests.SampleConverterTests.IeeeFloat_PassesSamplesThroughLosslessly
+- uid: SilverCraft.CSCore.Tests.SampleConverterTests.Constructor_RejectsInvalidAudioEncodings*
+  commentId: Overload:SilverCraft.CSCore.Tests.SampleConverterTests.Constructor_RejectsInvalidAudioEncodings
+  href: SilverCraft.CSCore.Tests.SampleConverterTests.html#SilverCraft_CSCore_Tests_SampleConverterTests_Constructor_RejectsInvalidAudioEncodings
+  name: Constructor_RejectsInvalidAudioEncodings
+  nameWithType: SampleConverterTests.Constructor_RejectsInvalidAudioEncodings
+  fullName: SilverCraft.CSCore.Tests.SampleConverterTests.Constructor_RejectsInvalidAudioEncodings
+- uid: SilverCraft.CSCore.Tests.SampleConverterTests.SampleToPcm32_ConvertsVectorAndTailSamplesToLittleEndianPcm*
+  commentId: Overload:SilverCraft.CSCore.Tests.SampleConverterTests.SampleToPcm32_ConvertsVectorAndTailSamplesToLittleEndianPcm
+  href: SilverCraft.CSCore.Tests.SampleConverterTests.html#SilverCraft_CSCore_Tests_SampleConverterTests_SampleToPcm32_ConvertsVectorAndTailSamplesToLittleEndianPcm
+  name: SampleToPcm32_ConvertsVectorAndTailSamplesToLittleEndianPcm
+  nameWithType: SampleConverterTests.SampleToPcm32_ConvertsVectorAndTailSamplesToLittleEndianPcm
+  fullName: SilverCraft.CSCore.Tests.SampleConverterTests.SampleToPcm32_ConvertsVectorAndTailSamplesToLittleEndianPcm
+- uid: SilverCraft.CSCore.Tests.SampleConverterTests.Pcm32BitToSample_ConvertsLittleEndianPcmAndHandlesTailSamples*
+  commentId: Overload:SilverCraft.CSCore.Tests.SampleConverterTests.Pcm32BitToSample_ConvertsLittleEndianPcmAndHandlesTailSamples
+  href: SilverCraft.CSCore.Tests.SampleConverterTests.html#SilverCraft_CSCore_Tests_SampleConverterTests_Pcm32BitToSample_ConvertsLittleEndianPcmAndHandlesTailSamples
+  name: Pcm32BitToSample_ConvertsLittleEndianPcmAndHandlesTailSamples
+  nameWithType: SampleConverterTests.Pcm32BitToSample_ConvertsLittleEndianPcmAndHandlesTailSamples
+  fullName: SilverCraft.CSCore.Tests.SampleConverterTests.Pcm32BitToSample_ConvertsLittleEndianPcmAndHandlesTailSamples

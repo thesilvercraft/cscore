@@ -20,7 +20,8 @@ namespace SilverCraft.CSCore.Streams
         {
             ArgumentNullException.ThrowIfNull(source);
             if (source.WaveFormat.Channels != 2)
-                throw new ArgumentException("The WaveFormat of the source has be a stereo format (two channels).", nameof(source));
+                throw new ArgumentException("The WaveFormat of the source has be a stereo format (two channels).",
+                    nameof(source));
 
             _waveFormat = new WaveFormat(source.WaveFormat.SampleRate, 32, 1, AudioEncoding.IeeeFloat);
         }
@@ -63,11 +64,7 @@ namespace SilverCraft.CSCore.Streams
         public override long Position
         {
             get => BaseSource.Position / 2;
-            set
-            {
-                value -= (value % WaveFormat.BlockAlign);
-                BaseSource.Position = value * 2;
-            }
+            set { BaseSource.Position = value * 2; }
         }
 
         /// <summary>

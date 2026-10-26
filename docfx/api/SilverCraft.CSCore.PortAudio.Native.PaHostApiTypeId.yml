@@ -28,14 +28,14 @@ items:
   type: Enum
   source:
     remote:
-      path: SilverCraft.CSCore.PortAudio/Native/PaHostApiTypeId.cs
+      path: SilverCraft.CSCore/PortAudio/Native/PaHostApiTypeId.cs
       branch: master
       repo: https://github.com/thesilvercraft/cscore
     id: PaHostApiTypeId
-    path: ../SilverCraft.CSCore.PortAudio/Native/PaHostApiTypeId.cs
+    path: ../SilverCraft.CSCore/PortAudio/Native/PaHostApiTypeId.cs
     startLine: 2
   assemblies:
-  - SilverCraft.CSCore.PortAudio
+  - SilverCraft.CSCore
   namespace: SilverCraft.CSCore.PortAudio.Native
   syntax:
     content: 'public enum PaHostApiTypeId : uint'
@@ -53,14 +53,14 @@ items:
   type: Field
   source:
     remote:
-      path: SilverCraft.CSCore.PortAudio/Native/PaHostApiTypeId.cs
+      path: SilverCraft.CSCore/PortAudio/Native/PaHostApiTypeId.cs
       branch: master
       repo: https://github.com/thesilvercraft/cscore
     id: paInDevelopment
-    path: ../SilverCraft.CSCore.PortAudio/Native/PaHostApiTypeId.cs
+    path: ../SilverCraft.CSCore/PortAudio/Native/PaHostApiTypeId.cs
     startLine: 5
   assemblies:
-  - SilverCraft.CSCore.PortAudio
+  - SilverCraft.CSCore
   namespace: SilverCraft.CSCore.PortAudio.Native
   syntax:
     content: paInDevelopment = 0
@@ -79,14 +79,14 @@ items:
   type: Field
   source:
     remote:
-      path: SilverCraft.CSCore.PortAudio/Native/PaHostApiTypeId.cs
+      path: SilverCraft.CSCore/PortAudio/Native/PaHostApiTypeId.cs
       branch: master
       repo: https://github.com/thesilvercraft/cscore
     id: paDirectSound
-    path: ../SilverCraft.CSCore.PortAudio/Native/PaHostApiTypeId.cs
+    path: ../SilverCraft.CSCore/PortAudio/Native/PaHostApiTypeId.cs
     startLine: 6
   assemblies:
-  - SilverCraft.CSCore.PortAudio
+  - SilverCraft.CSCore
   namespace: SilverCraft.CSCore.PortAudio.Native
   syntax:
     content: paDirectSound = 1
@@ -105,14 +105,14 @@ items:
   type: Field
   source:
     remote:
-      path: SilverCraft.CSCore.PortAudio/Native/PaHostApiTypeId.cs
+      path: SilverCraft.CSCore/PortAudio/Native/PaHostApiTypeId.cs
       branch: master
       repo: https://github.com/thesilvercraft/cscore
     id: paMME
-    path: ../SilverCraft.CSCore.PortAudio/Native/PaHostApiTypeId.cs
+    path: ../SilverCraft.CSCore/PortAudio/Native/PaHostApiTypeId.cs
     startLine: 7
   assemblies:
-  - SilverCraft.CSCore.PortAudio
+  - SilverCraft.CSCore
   namespace: SilverCraft.CSCore.PortAudio.Native
   syntax:
     content: paMME = 2
@@ -131,14 +131,14 @@ items:
   type: Field
   source:
     remote:
-      path: SilverCraft.CSCore.PortAudio/Native/PaHostApiTypeId.cs
+      path: SilverCraft.CSCore/PortAudio/Native/PaHostApiTypeId.cs
       branch: master
       repo: https://github.com/thesilvercraft/cscore
     id: paASIO
-    path: ../SilverCraft.CSCore.PortAudio/Native/PaHostApiTypeId.cs
+    path: ../SilverCraft.CSCore/PortAudio/Native/PaHostApiTypeId.cs
     startLine: 8
   assemblies:
-  - SilverCraft.CSCore.PortAudio
+  - SilverCraft.CSCore
   namespace: SilverCraft.CSCore.PortAudio.Native
   syntax:
     content: paASIO = 3
@@ -157,14 +157,14 @@ items:
   type: Field
   source:
     remote:
-      path: SilverCraft.CSCore.PortAudio/Native/PaHostApiTypeId.cs
+      path: SilverCraft.CSCore/PortAudio/Native/PaHostApiTypeId.cs
       branch: master
       repo: https://github.com/thesilvercraft/cscore
     id: paSoundManager
-    path: ../SilverCraft.CSCore.PortAudio/Native/PaHostApiTypeId.cs
+    path: ../SilverCraft.CSCore/PortAudio/Native/PaHostApiTypeId.cs
     startLine: 9
   assemblies:
-  - SilverCraft.CSCore.PortAudio
+  - SilverCraft.CSCore
   namespace: SilverCraft.CSCore.PortAudio.Native
   syntax:
     content: paSoundManager = 4
@@ -183,14 +183,14 @@ items:
   type: Field
   source:
     remote:
-      path: SilverCraft.CSCore.PortAudio/Native/PaHostApiTypeId.cs
+      path: SilverCraft.CSCore/PortAudio/Native/PaHostApiTypeId.cs
       branch: master
       repo: https://github.com/thesilvercraft/cscore
     id: paCoreAudio
-    path: ../SilverCraft.CSCore.PortAudio/Native/PaHostApiTypeId.cs
+    path: ../SilverCraft.CSCore/PortAudio/Native/PaHostApiTypeId.cs
     startLine: 10
   assemblies:
-  - SilverCraft.CSCore.PortAudio
+  - SilverCraft.CSCore
   namespace: SilverCraft.CSCore.PortAudio.Native
   syntax:
     content: paCoreAudio = 5
@@ -209,14 +209,14 @@ items:
   type: Field
   source:
     remote:
-      path: SilverCraft.CSCore.PortAudio/Native/PaHostApiTypeId.cs
+      path: SilverCraft.CSCore/PortAudio/Native/PaHostApiTypeId.cs
       branch: master
       repo: https://github.com/thesilvercraft/cscore
     id: paOSS
-    path: ../SilverCraft.CSCore.PortAudio/Native/PaHostApiTypeId.cs
+    path: ../SilverCraft.CSCore/PortAudio/Native/PaHostApiTypeId.cs
     startLine: 11
   assemblies:
-  - SilverCraft.CSCore.PortAudio
+  - SilverCraft.CSCore
   namespace: SilverCraft.CSCore.PortAudio.Native
   syntax:
     content: paOSS = 7
@@ -235,14 +235,14 @@ items:
   type: Field
   source:
     remote:
-      path: SilverCraft.CSCore.PortAudio/Native/PaHostApiTypeId.cs
+      path: SilverCraft.CSCore/PortAudio/Native/PaHostApiTypeId.cs
       branch: master
       repo: https://github.com/thesilvercraft/cscore
     id: paALSA
-    path: ../SilverCraft.CSCore.PortAudio/Native/PaHostApiTypeId.cs
+    path: ../SilverCraft.CSCore/PortAudio/Native/PaHostApiTypeId.cs
     startLine: 12
   assemblies:
-  - SilverCraft.CSCore.PortAudio
+  - SilverCraft.CSCore
   namespace: SilverCraft.CSCore.PortAudio.Native
   syntax:
     content: paALSA = 8
@@ -261,14 +261,14 @@ items:
   type: Field
   source:
     remote:
-      path: SilverCraft.CSCore.PortAudio/Native/PaHostApiTypeId.cs
+      path: SilverCraft.CSCore/PortAudio/Native/PaHostApiTypeId.cs
       branch: master
       repo: https://github.com/thesilvercraft/cscore
     id: paAL
-    path: ../SilverCraft.CSCore.PortAudio/Native/PaHostApiTypeId.cs
+    path: ../SilverCraft.CSCore/PortAudio/Native/PaHostApiTypeId.cs
     startLine: 13
   assemblies:
-  - SilverCraft.CSCore.PortAudio
+  - SilverCraft.CSCore
   namespace: SilverCraft.CSCore.PortAudio.Native
   syntax:
     content: paAL = 9
@@ -287,14 +287,14 @@ items:
   type: Field
   source:
     remote:
-      path: SilverCraft.CSCore.PortAudio/Native/PaHostApiTypeId.cs
+      path: SilverCraft.CSCore/PortAudio/Native/PaHostApiTypeId.cs
       branch: master
       repo: https://github.com/thesilvercraft/cscore
     id: paBeOS
-    path: ../SilverCraft.CSCore.PortAudio/Native/PaHostApiTypeId.cs
+    path: ../SilverCraft.CSCore/PortAudio/Native/PaHostApiTypeId.cs
     startLine: 14
   assemblies:
-  - SilverCraft.CSCore.PortAudio
+  - SilverCraft.CSCore
   namespace: SilverCraft.CSCore.PortAudio.Native
   syntax:
     content: paBeOS = 10
@@ -313,14 +313,14 @@ items:
   type: Field
   source:
     remote:
-      path: SilverCraft.CSCore.PortAudio/Native/PaHostApiTypeId.cs
+      path: SilverCraft.CSCore/PortAudio/Native/PaHostApiTypeId.cs
       branch: master
       repo: https://github.com/thesilvercraft/cscore
     id: paWDMKS
-    path: ../SilverCraft.CSCore.PortAudio/Native/PaHostApiTypeId.cs
+    path: ../SilverCraft.CSCore/PortAudio/Native/PaHostApiTypeId.cs
     startLine: 15
   assemblies:
-  - SilverCraft.CSCore.PortAudio
+  - SilverCraft.CSCore
   namespace: SilverCraft.CSCore.PortAudio.Native
   syntax:
     content: paWDMKS = 11
@@ -339,14 +339,14 @@ items:
   type: Field
   source:
     remote:
-      path: SilverCraft.CSCore.PortAudio/Native/PaHostApiTypeId.cs
+      path: SilverCraft.CSCore/PortAudio/Native/PaHostApiTypeId.cs
       branch: master
       repo: https://github.com/thesilvercraft/cscore
     id: paJACK
-    path: ../SilverCraft.CSCore.PortAudio/Native/PaHostApiTypeId.cs
+    path: ../SilverCraft.CSCore/PortAudio/Native/PaHostApiTypeId.cs
     startLine: 16
   assemblies:
-  - SilverCraft.CSCore.PortAudio
+  - SilverCraft.CSCore
   namespace: SilverCraft.CSCore.PortAudio.Native
   syntax:
     content: paJACK = 12
@@ -365,14 +365,14 @@ items:
   type: Field
   source:
     remote:
-      path: SilverCraft.CSCore.PortAudio/Native/PaHostApiTypeId.cs
+      path: SilverCraft.CSCore/PortAudio/Native/PaHostApiTypeId.cs
       branch: master
       repo: https://github.com/thesilvercraft/cscore
     id: paWASAPI
-    path: ../SilverCraft.CSCore.PortAudio/Native/PaHostApiTypeId.cs
+    path: ../SilverCraft.CSCore/PortAudio/Native/PaHostApiTypeId.cs
     startLine: 17
   assemblies:
-  - SilverCraft.CSCore.PortAudio
+  - SilverCraft.CSCore
   namespace: SilverCraft.CSCore.PortAudio.Native
   syntax:
     content: paWASAPI = 13
@@ -391,14 +391,14 @@ items:
   type: Field
   source:
     remote:
-      path: SilverCraft.CSCore.PortAudio/Native/PaHostApiTypeId.cs
+      path: SilverCraft.CSCore/PortAudio/Native/PaHostApiTypeId.cs
       branch: master
       repo: https://github.com/thesilvercraft/cscore
     id: paAudioScienceHPI
-    path: ../SilverCraft.CSCore.PortAudio/Native/PaHostApiTypeId.cs
+    path: ../SilverCraft.CSCore/PortAudio/Native/PaHostApiTypeId.cs
     startLine: 18
   assemblies:
-  - SilverCraft.CSCore.PortAudio
+  - SilverCraft.CSCore
   namespace: SilverCraft.CSCore.PortAudio.Native
   syntax:
     content: paAudioScienceHPI = 14

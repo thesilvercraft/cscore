@@ -61,7 +61,7 @@ namespace SilverCraft.CSCore.DSP
         public static void Fft(Complex[] data, int exponent, FftMode mode = FftMode.Forward)
         {
             //count; if exponent = 12 -> c = 2^12 = 4096
-            var c = (int)Math.Pow(2, exponent);
+            var c = 1 << exponent;
 
             //binary inversion
             Inverse(data, c);

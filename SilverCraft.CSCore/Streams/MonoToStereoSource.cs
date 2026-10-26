@@ -21,7 +21,8 @@ namespace SilverCraft.CSCore.Streams
         {
             ArgumentNullException.ThrowIfNull(source);
             if (source.WaveFormat.Channels != 1)
-                throw new ArgumentException("The WaveFormat of the source has be a mono format (one channel).", nameof(source));
+                throw new ArgumentException("The WaveFormat of the source has be a mono format (one channel).",
+                    nameof(source));
             _waveFormat = new WaveFormat(source.WaveFormat.SampleRate, 32, 2, AudioEncoding.IeeeFloat);
         }
 
@@ -64,8 +65,8 @@ namespace SilverCraft.CSCore.Streams
             get => base.Position * 2;
             set
             {
-                value -= (value % WaveFormat.BlockAlign);
-                base.Position = value / 2;
+                value -= value % WaveFormat.Channels;
+                BaseSource.Position = value / 2;
             }
         }
 

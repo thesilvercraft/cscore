@@ -138,7 +138,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: SkipTag
     path: ../SilverCraft.CSCore/Tags/ID3/ID3v2.cs
-    startLine: 46
+    startLine: 47
   assemblies:
   - SilverCraft.CSCore
   namespace: SilverCraft.CSCore.Tags.ID3
@@ -169,7 +169,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: Header
     path: ../SilverCraft.CSCore/Tags/ID3/ID3v2.cs
-    startLine: 72
+    startLine: 74
   assemblies:
   - SilverCraft.CSCore
   namespace: SilverCraft.CSCore.Tags.ID3
@@ -198,7 +198,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: ExtendedHeader
     path: ../SilverCraft.CSCore/Tags/ID3/ID3v2.cs
-    startLine: 74
+    startLine: 76
   assemblies:
   - SilverCraft.CSCore
   namespace: SilverCraft.CSCore.Tags.ID3
@@ -227,7 +227,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: Footer
     path: ../SilverCraft.CSCore/Tags/ID3/ID3v2.cs
-    startLine: 76
+    startLine: 78
   assemblies:
   - SilverCraft.CSCore
   namespace: SilverCraft.CSCore.Tags.ID3
@@ -256,7 +256,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: QuickInfo
     path: ../SilverCraft.CSCore/Tags/ID3/ID3v2.cs
-    startLine: 78
+    startLine: 80
   assemblies:
   - SilverCraft.CSCore
   namespace: SilverCraft.CSCore.Tags.ID3
@@ -285,7 +285,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: this[]
     path: ../SilverCraft.CSCore/Tags/ID3/ID3v2.cs
-    startLine: 80
+    startLine: 82
   assemblies:
   - SilverCraft.CSCore
   namespace: SilverCraft.CSCore.Tags.ID3
@@ -319,7 +319,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: this[]
     path: ../SilverCraft.CSCore/Tags/ID3/ID3v2.cs
-    startLine: 82
+    startLine: 84
   assemblies:
   - SilverCraft.CSCore
   namespace: SilverCraft.CSCore.Tags.ID3
@@ -353,7 +353,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: .ctor
     path: ../SilverCraft.CSCore/Tags/ID3/ID3v2.cs
-    startLine: 90
+    startLine: 89
   assemblies:
   - SilverCraft.CSCore
   namespace: SilverCraft.CSCore.Tags.ID3
@@ -385,7 +385,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: GetEnumerator
     path: ../SilverCraft.CSCore/Tags/ID3/ID3v2.cs
-    startLine: 205
+    startLine: 218
   assemblies:
   - SilverCraft.CSCore
   namespace: SilverCraft.CSCore.Tags.ID3

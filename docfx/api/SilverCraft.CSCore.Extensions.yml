@@ -677,7 +677,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: WaitForStopped
     path: ../SilverCraft.CSCore/Extensions.cs
-    startLine: 398
+    startLine: 396
   assemblies:
   - SilverCraft.CSCore
   namespace: SilverCraft.CSCore
@@ -719,7 +719,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: WaitForStopped
     path: ../SilverCraft.CSCore/Extensions.cs
-    startLine: 435
+    startLine: 433
   assemblies:
   - SilverCraft.CSCore
   namespace: SilverCraft.CSCore

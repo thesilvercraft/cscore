@@ -30,7 +30,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: WaveFileReader
     path: ../SilverCraft.CSCore/Codecs/WAV/WaveFileReader.cs
-    startLine: 12
+    startLine: 13
   assemblies:
   - SilverCraft.CSCore
   namespace: SilverCraft.CSCore.Codecs.WAV
@@ -162,7 +162,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: Chunks
     path: ../SilverCraft.CSCore/Codecs/WAV/WaveFileReader.cs
-    startLine: 64
+    startLine: 61
   assemblies:
   - SilverCraft.CSCore
   namespace: SilverCraft.CSCore.Codecs.WAV
@@ -193,7 +193,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: Read
     path: ../SilverCraft.CSCore/Codecs/WAV/WaveFileReader.cs
-    startLine: 81
+    startLine: 78
   assemblies:
   - SilverCraft.CSCore
   namespace: SilverCraft.CSCore.Codecs.WAV
@@ -250,7 +250,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: WaveFormat
     path: ../SilverCraft.CSCore/Codecs/WAV/WaveFileReader.cs
-    startLine: 99
+    startLine: 93
   assemblies:
   - SilverCraft.CSCore
   namespace: SilverCraft.CSCore.Codecs.WAV
@@ -261,7 +261,7 @@ items:
     parameters: []
     return:
       type: SilverCraft.CSCore.WaveFormat
-    content.vb: Public ReadOnly Property WaveFormat As WaveFormat
+    content.vb: Public Property WaveFormat As WaveFormat
   overload: SilverCraft.CSCore.Codecs.WAV.WaveFileReader.WaveFormat*
   implements:
   - SilverCraft.CSCore.IAudioSource.WaveFormat
@@ -283,7 +283,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: Position
     path: ../SilverCraft.CSCore/Codecs/WAV/WaveFileReader.cs
-    startLine: 104
+    startLine: 98
   assemblies:
   - SilverCraft.CSCore
   namespace: SilverCraft.CSCore.Codecs.WAV
@@ -316,7 +316,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: Length
     path: ../SilverCraft.CSCore/Codecs/WAV/WaveFileReader.cs
-    startLine: 124
+    startLine: 118
   assemblies:
   - SilverCraft.CSCore
   namespace: SilverCraft.CSCore.Codecs.WAV
@@ -349,7 +349,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: CanSeek
     path: ../SilverCraft.CSCore/Codecs/WAV/WaveFileReader.cs
-    startLine: 129
+    startLine: 123
   assemblies:
   - SilverCraft.CSCore
   namespace: SilverCraft.CSCore.Codecs.WAV
@@ -382,7 +382,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: Dispose
     path: ../SilverCraft.CSCore/Codecs/WAV/WaveFileReader.cs
-    startLine: 134
+    startLine: 128
   assemblies:
   - SilverCraft.CSCore
   namespace: SilverCraft.CSCore.Codecs.WAV
@@ -412,7 +412,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: Dispose
     path: ../SilverCraft.CSCore/Codecs/WAV/WaveFileReader.cs
-    startLine: 176
+    startLine: 168
   assemblies:
   - SilverCraft.CSCore
   namespace: SilverCraft.CSCore.Codecs.WAV
@@ -450,7 +450,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: Finalize
     path: ../SilverCraft.CSCore/Codecs/WAV/WaveFileReader.cs
-    startLine: 196
+    startLine: 188
   assemblies:
   - SilverCraft.CSCore
   namespace: SilverCraft.CSCore.Codecs.WAV

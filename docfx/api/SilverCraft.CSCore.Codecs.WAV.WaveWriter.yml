@@ -34,7 +34,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: WaveWriter
     path: ../SilverCraft.CSCore/Codecs/WAV/WaveWriter.cs
-    startLine: 10
+    startLine: 11
   assemblies:
   - SilverCraft.CSCore
   namespace: SilverCraft.CSCore.Codecs.WAV
@@ -76,7 +76,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: IsDisposed
     path: ../SilverCraft.CSCore/Codecs/WAV/WaveWriter.cs
-    startLine: 26
+    startLine: 28
   assemblies:
   - SilverCraft.CSCore
   namespace: SilverCraft.CSCore.Codecs.WAV
@@ -107,7 +107,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: IsDisposing
     path: ../SilverCraft.CSCore/Codecs/WAV/WaveWriter.cs
-    startLine: 31
+    startLine: 33
   assemblies:
   - SilverCraft.CSCore
   namespace: SilverCraft.CSCore.Codecs.WAV
@@ -138,7 +138,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: .ctor
     path: ../SilverCraft.CSCore/Codecs/WAV/WaveWriter.cs
-    startLine: 41
+    startLine: 43
   assemblies:
   - SilverCraft.CSCore
   namespace: SilverCraft.CSCore.Codecs.WAV
@@ -179,7 +179,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: .ctor
     path: ../SilverCraft.CSCore/Codecs/WAV/WaveWriter.cs
-    startLine: 55
+    startLine: 57
   assemblies:
   - SilverCraft.CSCore
   namespace: SilverCraft.CSCore.Codecs.WAV
@@ -220,7 +220,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: Dispose
     path: ../SilverCraft.CSCore/Codecs/WAV/WaveWriter.cs
-    startLine: 82
+    startLine: 84
   assemblies:
   - SilverCraft.CSCore
   namespace: SilverCraft.CSCore.Codecs.WAV
@@ -250,7 +250,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: WriteToFile
     path: ../SilverCraft.CSCore/Codecs/WAV/WaveWriter.cs
-    startLine: 98
+    startLine: 100
   assemblies:
   - SilverCraft.CSCore
   namespace: SilverCraft.CSCore.Codecs.WAV
@@ -307,7 +307,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: WriteSample
     path: ../SilverCraft.CSCore/Codecs/WAV/WaveWriter.cs
-    startLine: 124
+    startLine: 126
   assemblies:
   - SilverCraft.CSCore
   namespace: SilverCraft.CSCore.Codecs.WAV
@@ -342,7 +342,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: WriteSamples
     path: ../SilverCraft.CSCore/Codecs/WAV/WaveWriter.cs
-    startLine: 171
+    startLine: 178
   assemblies:
   - SilverCraft.CSCore
   namespace: SilverCraft.CSCore.Codecs.WAV
@@ -383,7 +383,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: Write
     path: ../SilverCraft.CSCore/Codecs/WAV/WaveWriter.cs
-    startLine: 187
+    startLine: 226
   assemblies:
   - SilverCraft.CSCore
   namespace: SilverCraft.CSCore.Codecs.WAV
@@ -426,7 +426,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: Write
     path: ../SilverCraft.CSCore/Codecs/WAV/WaveWriter.cs
-    startLine: 199
+    startLine: 238
   assemblies:
   - SilverCraft.CSCore
   namespace: SilverCraft.CSCore.Codecs.WAV
@@ -461,7 +461,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: Write
     path: ../SilverCraft.CSCore/Codecs/WAV/WaveWriter.cs
-    startLine: 211
+    startLine: 250
   assemblies:
   - SilverCraft.CSCore
   namespace: SilverCraft.CSCore.Codecs.WAV
@@ -496,7 +496,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: Write
     path: ../SilverCraft.CSCore/Codecs/WAV/WaveWriter.cs
-    startLine: 223
+    startLine: 262
   assemblies:
   - SilverCraft.CSCore
   namespace: SilverCraft.CSCore.Codecs.WAV
@@ -531,7 +531,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: Write
     path: ../SilverCraft.CSCore/Codecs/WAV/WaveWriter.cs
-    startLine: 235
+    startLine: 274
   assemblies:
   - SilverCraft.CSCore
   namespace: SilverCraft.CSCore.Codecs.WAV
@@ -566,7 +566,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: Dispose
     path: ../SilverCraft.CSCore/Codecs/WAV/WaveWriter.cs
-    startLine: 301
+    startLine: 340
   assemblies:
   - SilverCraft.CSCore
   namespace: SilverCraft.CSCore.Codecs.WAV
@@ -604,7 +604,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: Finalize
     path: ../SilverCraft.CSCore/Codecs/WAV/WaveWriter.cs
-    startLine: 343
+    startLine: 382
   assemblies:
   - SilverCraft.CSCore
   namespace: SilverCraft.CSCore.Codecs.WAV

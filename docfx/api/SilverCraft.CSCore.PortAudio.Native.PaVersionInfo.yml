@@ -19,14 +19,14 @@ items:
   type: Struct
   source:
     remote:
-      path: SilverCraft.CSCore.PortAudio/Native/PaVersionInfo.cs
+      path: SilverCraft.CSCore/PortAudio/Native/PaVersionInfo.cs
       branch: master
       repo: https://github.com/thesilvercraft/cscore
     id: PaVersionInfo
-    path: ../SilverCraft.CSCore.PortAudio/Native/PaVersionInfo.cs
+    path: ../SilverCraft.CSCore/PortAudio/Native/PaVersionInfo.cs
     startLine: 2
   assemblies:
-  - SilverCraft.CSCore.PortAudio
+  - SilverCraft.CSCore
   namespace: SilverCraft.CSCore.PortAudio.Native
   syntax:
     content: public struct PaVersionInfo
@@ -51,14 +51,14 @@ items:
   type: Field
   source:
     remote:
-      path: SilverCraft.CSCore.PortAudio/Native/PaVersionInfo.cs
+      path: SilverCraft.CSCore/PortAudio/Native/PaVersionInfo.cs
       branch: master
       repo: https://github.com/thesilvercraft/cscore
     id: versionMajor
-    path: ../SilverCraft.CSCore.PortAudio/Native/PaVersionInfo.cs
+    path: ../SilverCraft.CSCore/PortAudio/Native/PaVersionInfo.cs
     startLine: 4
   assemblies:
-  - SilverCraft.CSCore.PortAudio
+  - SilverCraft.CSCore
   namespace: SilverCraft.CSCore.PortAudio.Native
   syntax:
     content: public int versionMajor
@@ -78,14 +78,14 @@ items:
   type: Field
   source:
     remote:
-      path: SilverCraft.CSCore.PortAudio/Native/PaVersionInfo.cs
+      path: SilverCraft.CSCore/PortAudio/Native/PaVersionInfo.cs
       branch: master
       repo: https://github.com/thesilvercraft/cscore
     id: versionMinor
-    path: ../SilverCraft.CSCore.PortAudio/Native/PaVersionInfo.cs
+    path: ../SilverCraft.CSCore/PortAudio/Native/PaVersionInfo.cs
     startLine: 6
   assemblies:
-  - SilverCraft.CSCore.PortAudio
+  - SilverCraft.CSCore
   namespace: SilverCraft.CSCore.PortAudio.Native
   syntax:
     content: public int versionMinor
@@ -105,14 +105,14 @@ items:
   type: Field
   source:
     remote:
-      path: SilverCraft.CSCore.PortAudio/Native/PaVersionInfo.cs
+      path: SilverCraft.CSCore/PortAudio/Native/PaVersionInfo.cs
       branch: master
       repo: https://github.com/thesilvercraft/cscore
     id: versionSubMinor
-    path: ../SilverCraft.CSCore.PortAudio/Native/PaVersionInfo.cs
+    path: ../SilverCraft.CSCore/PortAudio/Native/PaVersionInfo.cs
     startLine: 8
   assemblies:
-  - SilverCraft.CSCore.PortAudio
+  - SilverCraft.CSCore
   namespace: SilverCraft.CSCore.PortAudio.Native
   syntax:
     content: public int versionSubMinor
@@ -132,14 +132,14 @@ items:
   type: Field
   source:
     remote:
-      path: SilverCraft.CSCore.PortAudio/Native/PaVersionInfo.cs
+      path: SilverCraft.CSCore/PortAudio/Native/PaVersionInfo.cs
       branch: master
       repo: https://github.com/thesilvercraft/cscore
     id: versionControlRevision
-    path: ../SilverCraft.CSCore.PortAudio/Native/PaVersionInfo.cs
+    path: ../SilverCraft.CSCore/PortAudio/Native/PaVersionInfo.cs
     startLine: 11
   assemblies:
-  - SilverCraft.CSCore.PortAudio
+  - SilverCraft.CSCore
   namespace: SilverCraft.CSCore.PortAudio.Native
   syntax:
     content: public sbyte* versionControlRevision
@@ -159,14 +159,14 @@ items:
   type: Field
   source:
     remote:
-      path: SilverCraft.CSCore.PortAudio/Native/PaVersionInfo.cs
+      path: SilverCraft.CSCore/PortAudio/Native/PaVersionInfo.cs
       branch: master
       repo: https://github.com/thesilvercraft/cscore
     id: versionText
-    path: ../SilverCraft.CSCore.PortAudio/Native/PaVersionInfo.cs
+    path: ../SilverCraft.CSCore/PortAudio/Native/PaVersionInfo.cs
     startLine: 14
   assemblies:
-  - SilverCraft.CSCore.PortAudio
+  - SilverCraft.CSCore
   namespace: SilverCraft.CSCore.PortAudio.Native
   syntax:
     content: public sbyte* versionText

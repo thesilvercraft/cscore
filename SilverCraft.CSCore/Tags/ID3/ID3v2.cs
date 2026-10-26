@@ -35,6 +35,7 @@ public class ID3v2 : IEnumerable<Frame>
         {
             return null;
         }
+
         return null;
     }
 
@@ -58,6 +59,7 @@ public class ID3v2 : IEnumerable<Frame>
         {
             stream.Position = streamOffset;
         }
+
         return false;
     }
 
@@ -82,10 +84,7 @@ public class ID3v2 : IEnumerable<Frame>
 
     public Frame this[string id]
     {
-        get
-        {
-            return _frames.FirstOrDefault(o => o.FrameId == id);
-        }
+        get { return _frames.FirstOrDefault(o => o.FrameId == id); }
     }
 
     protected ID3v2(Stream stream)
@@ -99,13 +98,20 @@ public class ID3v2 : IEnumerable<Frame>
         if ((_header = ID3v2Header.FromStream(stream)) != null)
         {
             var buffer = new byte[_header.DataLength];
-            if (stream.Read(buffer, 0, buffer.Length) < buffer.Length)
-                return false;
+            var bytesRead = 0;
+            while (bytesRead < buffer.Length)
+            {
+                var read = stream.Read(buffer, bytesRead, buffer.Length - bytesRead);
+                if (read == 0)
+                    return false;
+                bytesRead += read;
+            }
 
             if (_header.IsUnsync && _header.Version != ID3Version.ID3v2_4)
             {
                 buffer = UnSyncBuffer(buffer);
             }
+
             _content = buffer;
             var contentStream = new MemoryStream(buffer);
 
@@ -124,7 +130,8 @@ public class ID3v2 : IEnumerable<Frame>
                     break;
 
                 default:
-                    throw new ID3Exception("Invalid Version: [2.{0};{1}]", _header.RawVersion[0], _header.RawVersion[1]);
+                    throw new ID3Exception("Invalid Version: [2.{0};{1}]", _header.RawVersion[0],
+                        _header.RawVersion[1]);
             }
 
             if (readData)
@@ -144,7 +151,8 @@ public class ID3v2 : IEnumerable<Frame>
     private bool Parse2()
     {
         if (((int)_header.Flags & 0x3F) != 0)
-            throw new ID3Exception("Invalid headerflags: 0x{0}.", ((int)_header.Flags).ToString("x", CultureInfo.InvariantCulture));
+            throw new ID3Exception("Invalid headerflags: 0x{0}.",
+                ((int)_header.Flags).ToString("x", CultureInfo.InvariantCulture));
 
         return true;
     }
@@ -155,8 +163,10 @@ public class ID3v2 : IEnumerable<Frame>
         {
             _extendedHeader = new ID3v2ExtendedHeader(stream, ID3Version.ID3v2_3);
         }
+
         if (((int)_header.Flags & 0x1F) != 0)
-            throw new ID3Exception("Invalid headerflags: 0x{0}.", ((int)_header.Flags).ToString("x", CultureInfo.InvariantCulture));
+            throw new ID3Exception("Invalid headerflags: 0x{0}.",
+                ((int)_header.Flags).ToString("x", CultureInfo.InvariantCulture));
 
         return true;
     }
@@ -167,14 +177,17 @@ public class ID3v2 : IEnumerable<Frame>
         {
             _extendedHeader = new ID3v2ExtendedHeader(stream, ID3Version.ID3v2_4);
         }
+
         if ((_header.Flags & ID3v2HeaderFlags.FooterPresent) == ID3v2HeaderFlags.FooterPresent)
         {
             //footer vom original stream lesen - da im neuen stream kein footer vorhanden ist
             _footer = ID3v2Footer.FromStream(_stream);
             if (_footer == null) throw new ID3Exception("Invalid Id3Footer.");
         }
+
         if (((int)_header.Flags & 0x0F) != 0)
-            throw new ID3Exception("Invalid headerflags: 0x{0}.", ((int)_header.Flags).ToString("x", CultureInfo.InvariantCulture));
+            throw new ID3Exception("Invalid headerflags: 0x{0}.",
+                ((int)_header.Flags).ToString("x", CultureInfo.InvariantCulture));
 
         return true;
     }

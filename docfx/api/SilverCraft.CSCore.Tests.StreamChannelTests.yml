@@ -1,0 +1,654 @@
+### YamlMime:ManagedReference
+items:
+- uid: SilverCraft.CSCore.Tests.StreamChannelTests
+  commentId: T:SilverCraft.CSCore.Tests.StreamChannelTests
+  id: StreamChannelTests
+  parent: SilverCraft.CSCore.Tests
+  children:
+  - SilverCraft.CSCore.Tests.StreamChannelTests.GainSource_AllowsOverflowsWhenClipIsDisabled
+  - SilverCraft.CSCore.Tests.StreamChannelTests.GainSource_AmplifiesAndClipsWhenConfigured
+  - SilverCraft.CSCore.Tests.StreamChannelTests.MonoToStereo_DuplicatesChannelSamples
+  - SilverCraft.CSCore.Tests.StreamChannelTests.MonoToStereo_RejectsNonMonoSource
+  - SilverCraft.CSCore.Tests.StreamChannelTests.StereoToMono_AveragesStereoChannels
+  - SilverCraft.CSCore.Tests.StreamChannelTests.StereoToMono_RejectsNonStereoSource
+  langs:
+  - csharp
+  - vb
+  name: StreamChannelTests
+  nameWithType: StreamChannelTests
+  fullName: SilverCraft.CSCore.Tests.StreamChannelTests
+  type: Class
+  source:
+    remote:
+      path: SilverCraft.CSCore.Tests/StreamChannelTests.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: StreamChannelTests
+    path: ../SilverCraft.CSCore.Tests/StreamChannelTests.cs
+    startLine: 5
+  assemblies:
+  - SilverCraft.CSCore.Tests
+  namespace: SilverCraft.CSCore.Tests
+  syntax:
+    content: public sealed class StreamChannelTests
+    content.vb: Public NotInheritable Class StreamChannelTests
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  extensionMethods:
+  - SilverCraft.CSCore.Tests.StreamChannelTests.SilverCraft.CSCore.FluentExtensions.Synchronized``2
+- uid: SilverCraft.CSCore.Tests.StreamChannelTests.MonoToStereo_DuplicatesChannelSamples
+  commentId: M:SilverCraft.CSCore.Tests.StreamChannelTests.MonoToStereo_DuplicatesChannelSamples
+  id: MonoToStereo_DuplicatesChannelSamples
+  parent: SilverCraft.CSCore.Tests.StreamChannelTests
+  langs:
+  - csharp
+  - vb
+  name: MonoToStereo_DuplicatesChannelSamples()
+  nameWithType: StreamChannelTests.MonoToStereo_DuplicatesChannelSamples()
+  fullName: SilverCraft.CSCore.Tests.StreamChannelTests.MonoToStereo_DuplicatesChannelSamples()
+  type: Method
+  source:
+    remote:
+      path: SilverCraft.CSCore.Tests/StreamChannelTests.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: MonoToStereo_DuplicatesChannelSamples
+    path: ../SilverCraft.CSCore.Tests/StreamChannelTests.cs
+    startLine: 7
+  assemblies:
+  - SilverCraft.CSCore.Tests
+  namespace: SilverCraft.CSCore.Tests
+  syntax:
+    content: >-
+      [Fact]
+
+      public void MonoToStereo_DuplicatesChannelSamples()
+    content.vb: >-
+      <Fact>
+
+      Public Sub MonoToStereo_DuplicatesChannelSamples()
+  overload: SilverCraft.CSCore.Tests.StreamChannelTests.MonoToStereo_DuplicatesChannelSamples*
+  attributes:
+  - type: Xunit.FactAttribute
+    ctor: Xunit.FactAttribute.#ctor
+    arguments: []
+- uid: SilverCraft.CSCore.Tests.StreamChannelTests.MonoToStereo_RejectsNonMonoSource
+  commentId: M:SilverCraft.CSCore.Tests.StreamChannelTests.MonoToStereo_RejectsNonMonoSource
+  id: MonoToStereo_RejectsNonMonoSource
+  parent: SilverCraft.CSCore.Tests.StreamChannelTests
+  langs:
+  - csharp
+  - vb
+  name: MonoToStereo_RejectsNonMonoSource()
+  nameWithType: StreamChannelTests.MonoToStereo_RejectsNonMonoSource()
+  fullName: SilverCraft.CSCore.Tests.StreamChannelTests.MonoToStereo_RejectsNonMonoSource()
+  type: Method
+  source:
+    remote:
+      path: SilverCraft.CSCore.Tests/StreamChannelTests.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: MonoToStereo_RejectsNonMonoSource
+    path: ../SilverCraft.CSCore.Tests/StreamChannelTests.cs
+    startLine: 25
+  assemblies:
+  - SilverCraft.CSCore.Tests
+  namespace: SilverCraft.CSCore.Tests
+  syntax:
+    content: >-
+      [Fact]
+
+      public void MonoToStereo_RejectsNonMonoSource()
+    content.vb: >-
+      <Fact>
+
+      Public Sub MonoToStereo_RejectsNonMonoSource()
+  overload: SilverCraft.CSCore.Tests.StreamChannelTests.MonoToStereo_RejectsNonMonoSource*
+  attributes:
+  - type: Xunit.FactAttribute
+    ctor: Xunit.FactAttribute.#ctor
+    arguments: []
+- uid: SilverCraft.CSCore.Tests.StreamChannelTests.StereoToMono_AveragesStereoChannels
+  commentId: M:SilverCraft.CSCore.Tests.StreamChannelTests.StereoToMono_AveragesStereoChannels
+  id: StereoToMono_AveragesStereoChannels
+  parent: SilverCraft.CSCore.Tests.StreamChannelTests
+  langs:
+  - csharp
+  - vb
+  name: StereoToMono_AveragesStereoChannels()
+  nameWithType: StreamChannelTests.StereoToMono_AveragesStereoChannels()
+  fullName: SilverCraft.CSCore.Tests.StreamChannelTests.StereoToMono_AveragesStereoChannels()
+  type: Method
+  source:
+    remote:
+      path: SilverCraft.CSCore.Tests/StreamChannelTests.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: StereoToMono_AveragesStereoChannels
+    path: ../SilverCraft.CSCore.Tests/StreamChannelTests.cs
+    startLine: 34
+  assemblies:
+  - SilverCraft.CSCore.Tests
+  namespace: SilverCraft.CSCore.Tests
+  syntax:
+    content: >-
+      [Fact]
+
+      public void StereoToMono_AveragesStereoChannels()
+    content.vb: >-
+      <Fact>
+
+      Public Sub StereoToMono_AveragesStereoChannels()
+  overload: SilverCraft.CSCore.Tests.StreamChannelTests.StereoToMono_AveragesStereoChannels*
+  attributes:
+  - type: Xunit.FactAttribute
+    ctor: Xunit.FactAttribute.#ctor
+    arguments: []
+- uid: SilverCraft.CSCore.Tests.StreamChannelTests.StereoToMono_RejectsNonStereoSource
+  commentId: M:SilverCraft.CSCore.Tests.StreamChannelTests.StereoToMono_RejectsNonStereoSource
+  id: StereoToMono_RejectsNonStereoSource
+  parent: SilverCraft.CSCore.Tests.StreamChannelTests
+  langs:
+  - csharp
+  - vb
+  name: StereoToMono_RejectsNonStereoSource()
+  nameWithType: StreamChannelTests.StereoToMono_RejectsNonStereoSource()
+  fullName: SilverCraft.CSCore.Tests.StreamChannelTests.StereoToMono_RejectsNonStereoSource()
+  type: Method
+  source:
+    remote:
+      path: SilverCraft.CSCore.Tests/StreamChannelTests.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: StereoToMono_RejectsNonStereoSource
+    path: ../SilverCraft.CSCore.Tests/StreamChannelTests.cs
+    startLine: 53
+  assemblies:
+  - SilverCraft.CSCore.Tests
+  namespace: SilverCraft.CSCore.Tests
+  syntax:
+    content: >-
+      [Fact]
+
+      public void StereoToMono_RejectsNonStereoSource()
+    content.vb: >-
+      <Fact>
+
+      Public Sub StereoToMono_RejectsNonStereoSource()
+  overload: SilverCraft.CSCore.Tests.StreamChannelTests.StereoToMono_RejectsNonStereoSource*
+  attributes:
+  - type: Xunit.FactAttribute
+    ctor: Xunit.FactAttribute.#ctor
+    arguments: []
+- uid: SilverCraft.CSCore.Tests.StreamChannelTests.GainSource_AmplifiesAndClipsWhenConfigured
+  commentId: M:SilverCraft.CSCore.Tests.StreamChannelTests.GainSource_AmplifiesAndClipsWhenConfigured
+  id: GainSource_AmplifiesAndClipsWhenConfigured
+  parent: SilverCraft.CSCore.Tests.StreamChannelTests
+  langs:
+  - csharp
+  - vb
+  name: GainSource_AmplifiesAndClipsWhenConfigured()
+  nameWithType: StreamChannelTests.GainSource_AmplifiesAndClipsWhenConfigured()
+  fullName: SilverCraft.CSCore.Tests.StreamChannelTests.GainSource_AmplifiesAndClipsWhenConfigured()
+  type: Method
+  source:
+    remote:
+      path: SilverCraft.CSCore.Tests/StreamChannelTests.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: GainSource_AmplifiesAndClipsWhenConfigured
+    path: ../SilverCraft.CSCore.Tests/StreamChannelTests.cs
+    startLine: 62
+  assemblies:
+  - SilverCraft.CSCore.Tests
+  namespace: SilverCraft.CSCore.Tests
+  syntax:
+    content: >-
+      [Fact]
+
+      public void GainSource_AmplifiesAndClipsWhenConfigured()
+    content.vb: >-
+      <Fact>
+
+      Public Sub GainSource_AmplifiesAndClipsWhenConfigured()
+  overload: SilverCraft.CSCore.Tests.StreamChannelTests.GainSource_AmplifiesAndClipsWhenConfigured*
+  attributes:
+  - type: Xunit.FactAttribute
+    ctor: Xunit.FactAttribute.#ctor
+    arguments: []
+- uid: SilverCraft.CSCore.Tests.StreamChannelTests.GainSource_AllowsOverflowsWhenClipIsDisabled
+  commentId: M:SilverCraft.CSCore.Tests.StreamChannelTests.GainSource_AllowsOverflowsWhenClipIsDisabled
+  id: GainSource_AllowsOverflowsWhenClipIsDisabled
+  parent: SilverCraft.CSCore.Tests.StreamChannelTests
+  langs:
+  - csharp
+  - vb
+  name: GainSource_AllowsOverflowsWhenClipIsDisabled()
+  nameWithType: StreamChannelTests.GainSource_AllowsOverflowsWhenClipIsDisabled()
+  fullName: SilverCraft.CSCore.Tests.StreamChannelTests.GainSource_AllowsOverflowsWhenClipIsDisabled()
+  type: Method
+  source:
+    remote:
+      path: SilverCraft.CSCore.Tests/StreamChannelTests.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: GainSource_AllowsOverflowsWhenClipIsDisabled
+    path: ../SilverCraft.CSCore.Tests/StreamChannelTests.cs
+    startLine: 82
+  assemblies:
+  - SilverCraft.CSCore.Tests
+  namespace: SilverCraft.CSCore.Tests
+  syntax:
+    content: >-
+      [Fact]
+
+      public void GainSource_AllowsOverflowsWhenClipIsDisabled()
+    content.vb: >-
+      <Fact>
+
+      Public Sub GainSource_AllowsOverflowsWhenClipIsDisabled()
+  overload: SilverCraft.CSCore.Tests.StreamChannelTests.GainSource_AllowsOverflowsWhenClipIsDisabled*
+  attributes:
+  - type: Xunit.FactAttribute
+    ctor: Xunit.FactAttribute.#ctor
+    arguments: []
+references:
+- uid: SilverCraft.CSCore.Tests
+  commentId: N:SilverCraft.CSCore.Tests
+  href: SilverCraft.html
+  name: SilverCraft.CSCore.Tests
+  nameWithType: SilverCraft.CSCore.Tests
+  fullName: SilverCraft.CSCore.Tests
+  spec.csharp:
+  - uid: SilverCraft
+    name: SilverCraft
+    href: SilverCraft.html
+  - name: .
+  - uid: SilverCraft.CSCore
+    name: CSCore
+    href: SilverCraft.CSCore.html
+  - name: .
+  - uid: SilverCraft.CSCore.Tests
+    name: Tests
+    href: SilverCraft.CSCore.Tests.html
+  spec.vb:
+  - uid: SilverCraft
+    name: SilverCraft
+    href: SilverCraft.html
+  - name: .
+  - uid: SilverCraft.CSCore
+    name: CSCore
+    href: SilverCraft.CSCore.html
+  - name: .
+  - uid: SilverCraft.CSCore.Tests
+    name: Tests
+    href: SilverCraft.CSCore.Tests.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: SilverCraft.CSCore.Tests.StreamChannelTests.SilverCraft.CSCore.FluentExtensions.Synchronized``2
+  commentId: M:SilverCraft.CSCore.FluentExtensions.Synchronized``2(``0)
+  parent: SilverCraft.CSCore.FluentExtensions
+  definition: SilverCraft.CSCore.FluentExtensions.Synchronized``2(``0)
+  href: SilverCraft.CSCore.FluentExtensions.html#SilverCraft_CSCore_FluentExtensions_Synchronized__2___0_
+  name: Synchronized<StreamChannelTests, T>(StreamChannelTests)
+  nameWithType: FluentExtensions.Synchronized<StreamChannelTests, T>(StreamChannelTests)
+  fullName: SilverCraft.CSCore.FluentExtensions.Synchronized<SilverCraft.CSCore.Tests.StreamChannelTests, T>(SilverCraft.CSCore.Tests.StreamChannelTests)
+  nameWithType.vb: FluentExtensions.Synchronized(Of StreamChannelTests, T)(StreamChannelTests)
+  fullName.vb: SilverCraft.CSCore.FluentExtensions.Synchronized(Of SilverCraft.CSCore.Tests.StreamChannelTests, T)(SilverCraft.CSCore.Tests.StreamChannelTests)
+  name.vb: Synchronized(Of StreamChannelTests, T)(StreamChannelTests)
+  spec.csharp:
+  - uid: SilverCraft.CSCore.FluentExtensions.Synchronized``2(SilverCraft.CSCore.Tests.StreamChannelTests)
+    name: Synchronized
+    href: SilverCraft.CSCore.FluentExtensions.html#SilverCraft_CSCore_FluentExtensions_Synchronized__2___0_
+  - name: <
+  - uid: SilverCraft.CSCore.Tests.StreamChannelTests
+    name: StreamChannelTests
+    href: SilverCraft.CSCore.Tests.StreamChannelTests.html
+  - name: ','
+  - name: " "
+  - name: T
+  - name: '>'
+  - name: (
+  - uid: SilverCraft.CSCore.Tests.StreamChannelTests
+    name: StreamChannelTests
+    href: SilverCraft.CSCore.Tests.StreamChannelTests.html
+  - name: )
+  spec.vb:
+  - uid: SilverCraft.CSCore.FluentExtensions.Synchronized``2(SilverCraft.CSCore.Tests.StreamChannelTests)
+    name: Synchronized
+    href: SilverCraft.CSCore.FluentExtensions.html#SilverCraft_CSCore_FluentExtensions_Synchronized__2___0_
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: SilverCraft.CSCore.Tests.StreamChannelTests
+    name: StreamChannelTests
+    href: SilverCraft.CSCore.Tests.StreamChannelTests.html
+  - name: ','
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: SilverCraft.CSCore.Tests.StreamChannelTests
+    name: StreamChannelTests
+    href: SilverCraft.CSCore.Tests.StreamChannelTests.html
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: SilverCraft.CSCore.FluentExtensions.Synchronized``2(``0)
+  commentId: M:SilverCraft.CSCore.FluentExtensions.Synchronized``2(``0)
+  href: SilverCraft.CSCore.FluentExtensions.html#SilverCraft_CSCore_FluentExtensions_Synchronized__2___0_
+  name: Synchronized<TAudioSource, T>(TAudioSource)
+  nameWithType: FluentExtensions.Synchronized<TAudioSource, T>(TAudioSource)
+  fullName: SilverCraft.CSCore.FluentExtensions.Synchronized<TAudioSource, T>(TAudioSource)
+  nameWithType.vb: FluentExtensions.Synchronized(Of TAudioSource, T)(TAudioSource)
+  fullName.vb: SilverCraft.CSCore.FluentExtensions.Synchronized(Of TAudioSource, T)(TAudioSource)
+  name.vb: Synchronized(Of TAudioSource, T)(TAudioSource)
+  spec.csharp:
+  - uid: SilverCraft.CSCore.FluentExtensions.Synchronized``2(``0)
+    name: Synchronized
+    href: SilverCraft.CSCore.FluentExtensions.html#SilverCraft_CSCore_FluentExtensions_Synchronized__2___0_
+  - name: <
+  - name: TAudioSource
+  - name: ','
+  - name: " "
+  - name: T
+  - name: '>'
+  - name: (
+  - name: TAudioSource
+  - name: )
+  spec.vb:
+  - uid: SilverCraft.CSCore.FluentExtensions.Synchronized``2(``0)
+    name: Synchronized
+    href: SilverCraft.CSCore.FluentExtensions.html#SilverCraft_CSCore_FluentExtensions_Synchronized__2___0_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TAudioSource
+  - name: ','
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - name: TAudioSource
+  - name: )
+- uid: SilverCraft.CSCore.FluentExtensions
+  commentId: T:SilverCraft.CSCore.FluentExtensions
+  parent: SilverCraft.CSCore
+  href: SilverCraft.CSCore.FluentExtensions.html
+  name: FluentExtensions
+  nameWithType: FluentExtensions
+  fullName: SilverCraft.CSCore.FluentExtensions
+- uid: SilverCraft.CSCore
+  commentId: N:SilverCraft.CSCore
+  href: SilverCraft.html
+  name: SilverCraft.CSCore
+  nameWithType: SilverCraft.CSCore
+  fullName: SilverCraft.CSCore
+  spec.csharp:
+  - uid: SilverCraft
+    name: SilverCraft
+    href: SilverCraft.html
+  - name: .
+  - uid: SilverCraft.CSCore
+    name: CSCore
+    href: SilverCraft.CSCore.html
+  spec.vb:
+  - uid: SilverCraft
+    name: SilverCraft
+    href: SilverCraft.html
+  - name: .
+  - uid: SilverCraft.CSCore
+    name: CSCore
+    href: SilverCraft.CSCore.html
+- uid: SilverCraft.CSCore.Tests.StreamChannelTests.MonoToStereo_DuplicatesChannelSamples*
+  commentId: Overload:SilverCraft.CSCore.Tests.StreamChannelTests.MonoToStereo_DuplicatesChannelSamples
+  href: SilverCraft.CSCore.Tests.StreamChannelTests.html#SilverCraft_CSCore_Tests_StreamChannelTests_MonoToStereo_DuplicatesChannelSamples
+  name: MonoToStereo_DuplicatesChannelSamples
+  nameWithType: StreamChannelTests.MonoToStereo_DuplicatesChannelSamples
+  fullName: SilverCraft.CSCore.Tests.StreamChannelTests.MonoToStereo_DuplicatesChannelSamples
+- uid: SilverCraft.CSCore.Tests.StreamChannelTests.MonoToStereo_RejectsNonMonoSource*
+  commentId: Overload:SilverCraft.CSCore.Tests.StreamChannelTests.MonoToStereo_RejectsNonMonoSource
+  href: SilverCraft.CSCore.Tests.StreamChannelTests.html#SilverCraft_CSCore_Tests_StreamChannelTests_MonoToStereo_RejectsNonMonoSource
+  name: MonoToStereo_RejectsNonMonoSource
+  nameWithType: StreamChannelTests.MonoToStereo_RejectsNonMonoSource
+  fullName: SilverCraft.CSCore.Tests.StreamChannelTests.MonoToStereo_RejectsNonMonoSource
+- uid: SilverCraft.CSCore.Tests.StreamChannelTests.StereoToMono_AveragesStereoChannels*
+  commentId: Overload:SilverCraft.CSCore.Tests.StreamChannelTests.StereoToMono_AveragesStereoChannels
+  href: SilverCraft.CSCore.Tests.StreamChannelTests.html#SilverCraft_CSCore_Tests_StreamChannelTests_StereoToMono_AveragesStereoChannels
+  name: StereoToMono_AveragesStereoChannels
+  nameWithType: StreamChannelTests.StereoToMono_AveragesStereoChannels
+  fullName: SilverCraft.CSCore.Tests.StreamChannelTests.StereoToMono_AveragesStereoChannels
+- uid: SilverCraft.CSCore.Tests.StreamChannelTests.StereoToMono_RejectsNonStereoSource*
+  commentId: Overload:SilverCraft.CSCore.Tests.StreamChannelTests.StereoToMono_RejectsNonStereoSource
+  href: SilverCraft.CSCore.Tests.StreamChannelTests.html#SilverCraft_CSCore_Tests_StreamChannelTests_StereoToMono_RejectsNonStereoSource
+  name: StereoToMono_RejectsNonStereoSource
+  nameWithType: StreamChannelTests.StereoToMono_RejectsNonStereoSource
+  fullName: SilverCraft.CSCore.Tests.StreamChannelTests.StereoToMono_RejectsNonStereoSource
+- uid: SilverCraft.CSCore.Tests.StreamChannelTests.GainSource_AmplifiesAndClipsWhenConfigured*
+  commentId: Overload:SilverCraft.CSCore.Tests.StreamChannelTests.GainSource_AmplifiesAndClipsWhenConfigured
+  href: SilverCraft.CSCore.Tests.StreamChannelTests.html#SilverCraft_CSCore_Tests_StreamChannelTests_GainSource_AmplifiesAndClipsWhenConfigured
+  name: GainSource_AmplifiesAndClipsWhenConfigured
+  nameWithType: StreamChannelTests.GainSource_AmplifiesAndClipsWhenConfigured
+  fullName: SilverCraft.CSCore.Tests.StreamChannelTests.GainSource_AmplifiesAndClipsWhenConfigured
+- uid: SilverCraft.CSCore.Tests.StreamChannelTests.GainSource_AllowsOverflowsWhenClipIsDisabled*
+  commentId: Overload:SilverCraft.CSCore.Tests.StreamChannelTests.GainSource_AllowsOverflowsWhenClipIsDisabled
+  href: SilverCraft.CSCore.Tests.StreamChannelTests.html#SilverCraft_CSCore_Tests_StreamChannelTests_GainSource_AllowsOverflowsWhenClipIsDisabled
+  name: GainSource_AllowsOverflowsWhenClipIsDisabled
+  nameWithType: StreamChannelTests.GainSource_AllowsOverflowsWhenClipIsDisabled
+  fullName: SilverCraft.CSCore.Tests.StreamChannelTests.GainSource_AllowsOverflowsWhenClipIsDisabled

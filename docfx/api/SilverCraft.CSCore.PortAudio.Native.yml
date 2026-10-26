@@ -14,9 +14,11 @@ items:
   - SilverCraft.CSCore.PortAudio.Native.PaStreamCallbackFlags
   - SilverCraft.CSCore.PortAudio.Native.PaStreamCallbackResult
   - SilverCraft.CSCore.PortAudio.Native.PaStreamCallbackTimeInfo
+  - SilverCraft.CSCore.PortAudio.Native.PaStreamFinishedCallback
   - SilverCraft.CSCore.PortAudio.Native.PaStreamInfo
   - SilverCraft.CSCore.PortAudio.Native.PaStreamParameters
   - SilverCraft.CSCore.PortAudio.Native.PaVersionInfo
+  - SilverCraft.CSCore.PortAudio.Native.StreamCallBack
   langs:
   - csharp
   - vb
@@ -25,7 +27,7 @@ items:
   fullName: SilverCraft.CSCore.PortAudio.Native
   type: Namespace
   assemblies:
-  - SilverCraft.CSCore.PortAudio
+  - SilverCraft.CSCore
 references:
 - uid: SilverCraft.CSCore.PortAudio.Native.PaStream
   commentId: T:SilverCraft.CSCore.PortAudio.Native.PaStream
@@ -40,6 +42,20 @@ references:
   name: PaStreamCallbackFlags
   nameWithType: PaStreamCallbackFlags
   fullName: SilverCraft.CSCore.PortAudio.Native.PaStreamCallbackFlags
+- uid: SilverCraft.CSCore.PortAudio.Native.StreamCallBack
+  commentId: T:SilverCraft.CSCore.PortAudio.Native.StreamCallBack
+  parent: SilverCraft.CSCore.PortAudio.Native
+  href: SilverCraft.CSCore.PortAudio.Native.StreamCallBack.html
+  name: StreamCallBack
+  nameWithType: StreamCallBack
+  fullName: SilverCraft.CSCore.PortAudio.Native.StreamCallBack
+- uid: SilverCraft.CSCore.PortAudio.Native.PaStreamFinishedCallback
+  commentId: T:SilverCraft.CSCore.PortAudio.Native.PaStreamFinishedCallback
+  parent: SilverCraft.CSCore.PortAudio.Native
+  href: SilverCraft.CSCore.PortAudio.Native.PaStreamFinishedCallback.html
+  name: PaStreamFinishedCallback
+  nameWithType: PaStreamFinishedCallback
+  fullName: SilverCraft.CSCore.PortAudio.Native.PaStreamFinishedCallback
 - uid: SilverCraft.CSCore.PortAudio.Native.NativeMethods
   commentId: T:SilverCraft.CSCore.PortAudio.Native.NativeMethods
   href: SilverCraft.CSCore.PortAudio.Native.NativeMethods.html

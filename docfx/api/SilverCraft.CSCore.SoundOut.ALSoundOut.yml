@@ -121,7 +121,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: .ctor
     path: ../SilverCraft.CSCore/SoundOut/ALSoundOut.cs
-    startLine: 49
+    startLine: 51
   assemblies:
   - SilverCraft.CSCore
   namespace: SilverCraft.CSCore.SoundOut
@@ -152,7 +152,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: .ctor
     path: ../SilverCraft.CSCore/SoundOut/ALSoundOut.cs
-    startLine: 61
+    startLine: 63
   assemblies:
   - SilverCraft.CSCore
   namespace: SilverCraft.CSCore.SoundOut
@@ -197,7 +197,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: .ctor
     path: ../SilverCraft.CSCore/SoundOut/ALSoundOut.cs
-    startLine: 79
+    startLine: 82
   assemblies:
   - SilverCraft.CSCore
   namespace: SilverCraft.CSCore.SoundOut
@@ -252,7 +252,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: Device
     path: ../SilverCraft.CSCore/SoundOut/ALSoundOut.cs
-    startLine: 108
+    startLine: 105
   assemblies:
   - SilverCraft.CSCore
   namespace: SilverCraft.CSCore.SoundOut
@@ -294,7 +294,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: Latency
     path: ../SilverCraft.CSCore/SoundOut/ALSoundOut.cs
-    startLine: 125
+    startLine: 122
   assemblies:
   - SilverCraft.CSCore
   namespace: SilverCraft.CSCore.SoundOut
@@ -328,7 +328,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: Volume
     path: ../SilverCraft.CSCore/SoundOut/ALSoundOut.cs
-    startLine: 143
+    startLine: 140
   assemblies:
   - SilverCraft.CSCore
   namespace: SilverCraft.CSCore.SoundOut
@@ -364,7 +364,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: WaveSource
     path: ../SilverCraft.CSCore/SoundOut/ALSoundOut.cs
-    startLine: 158
+    startLine: 156
   assemblies:
   - SilverCraft.CSCore
   namespace: SilverCraft.CSCore.SoundOut
@@ -402,7 +402,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: PlaybackState
     path: ../SilverCraft.CSCore/SoundOut/ALSoundOut.cs
-    startLine: 164
+    startLine: 162
   assemblies:
   - SilverCraft.CSCore
   namespace: SilverCraft.CSCore.SoundOut
@@ -438,7 +438,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: Context
     path: ../SilverCraft.CSCore/SoundOut/ALSoundOut.cs
-    startLine: 169
+    startLine: 167
   assemblies:
   - SilverCraft.CSCore
   namespace: SilverCraft.CSCore.SoundOut
@@ -469,7 +469,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: Stopped
     path: ../SilverCraft.CSCore/SoundOut/ALSoundOut.cs
-    startLine: 174
+    startLine: 172
   assemblies:
   - SilverCraft.CSCore
   namespace: SilverCraft.CSCore.SoundOut
@@ -500,7 +500,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: Play
     path: ../SilverCraft.CSCore/SoundOut/ALSoundOut.cs
-    startLine: 183
+    startLine: 181
   assemblies:
   - SilverCraft.CSCore
   namespace: SilverCraft.CSCore.SoundOut
@@ -539,7 +539,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: Pause
     path: ../SilverCraft.CSCore/SoundOut/ALSoundOut.cs
-    startLine: 221
+    startLine: 219
   assemblies:
   - SilverCraft.CSCore
   namespace: SilverCraft.CSCore.SoundOut
@@ -569,7 +569,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: Resume
     path: ../SilverCraft.CSCore/SoundOut/ALSoundOut.cs
-    startLine: 239
+    startLine: 237
   assemblies:
   - SilverCraft.CSCore
   namespace: SilverCraft.CSCore.SoundOut
@@ -599,7 +599,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: Stop
     path: ../SilverCraft.CSCore/SoundOut/ALSoundOut.cs
-    startLine: 257
+    startLine: 255
   assemblies:
   - SilverCraft.CSCore
   namespace: SilverCraft.CSCore.SoundOut
@@ -629,7 +629,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: Initialize
     path: ../SilverCraft.CSCore/SoundOut/ALSoundOut.cs
-    startLine: 293
+    startLine: 291
   assemblies:
   - SilverCraft.CSCore
   namespace: SilverCraft.CSCore.SoundOut
@@ -673,7 +673,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: Dispose
     path: ../SilverCraft.CSCore/SoundOut/ALSoundOut.cs
-    startLine: 330
+    startLine: 328
   assemblies:
   - SilverCraft.CSCore
   namespace: SilverCraft.CSCore.SoundOut
@@ -703,7 +703,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: Dispose
     path: ../SilverCraft.CSCore/SoundOut/ALSoundOut.cs
-    startLine: 541
+    startLine: 542
   assemblies:
   - SilverCraft.CSCore
   namespace: SilverCraft.CSCore.SoundOut
@@ -741,7 +741,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: Finalize
     path: ../SilverCraft.CSCore/SoundOut/ALSoundOut.cs
-    startLine: 557
+    startLine: 559
   assemblies:
   - SilverCraft.CSCore
   namespace: SilverCraft.CSCore.SoundOut

@@ -321,7 +321,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: Position
     path: ../SilverCraft.CSCore/WaveAggregatorBase.cs
-    startLine: 83
+    startLine: 81
   assemblies:
   - SilverCraft.CSCore
   namespace: SilverCraft.CSCore
@@ -354,7 +354,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: Length
     path: ../SilverCraft.CSCore/WaveAggregatorBase.cs
-    startLine: 103
+    startLine: 101
   assemblies:
   - SilverCraft.CSCore
   namespace: SilverCraft.CSCore
@@ -387,7 +387,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: CanSeek
     path: ../SilverCraft.CSCore/WaveAggregatorBase.cs
-    startLine: 108
+    startLine: 106
   assemblies:
   - SilverCraft.CSCore
   namespace: SilverCraft.CSCore
@@ -420,7 +420,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: Dispose
     path: ../SilverCraft.CSCore/WaveAggregatorBase.cs
-    startLine: 113
+    startLine: 111
   assemblies:
   - SilverCraft.CSCore
   namespace: SilverCraft.CSCore
@@ -450,7 +450,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: Dispose
     path: ../SilverCraft.CSCore/WaveAggregatorBase.cs
-    startLine: 125
+    startLine: 123
   assemblies:
   - SilverCraft.CSCore
   namespace: SilverCraft.CSCore
@@ -485,7 +485,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: Finalize
     path: ../SilverCraft.CSCore/WaveAggregatorBase.cs
-    startLine: 135
+    startLine: 133
   assemblies:
   - SilverCraft.CSCore
   namespace: SilverCraft.CSCore

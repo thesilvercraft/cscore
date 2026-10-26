@@ -1,0 +1,740 @@
+### YamlMime:ManagedReference
+items:
+- uid: SilverCraft.CSCore.Tests.FixedSizeBufferTests
+  commentId: T:SilverCraft.CSCore.Tests.FixedSizeBufferTests
+  id: FixedSizeBufferTests
+  parent: SilverCraft.CSCore.Tests
+  children:
+  - SilverCraft.CSCore.Tests.FixedSizeBufferTests.CircularWrapAround_ReadsAcrossBufferEndCorrectly
+  - SilverCraft.CSCore.Tests.FixedSizeBufferTests.Clear_ResetsBufferState
+  - SilverCraft.CSCore.Tests.FixedSizeBufferTests.Overwrite_WhenWritingMoreThanCapacity_KeepsMostRecentElements
+  - SilverCraft.CSCore.Tests.FixedSizeBufferTests.Read_WhenEmpty_ReturnsZero
+  - SilverCraft.CSCore.Tests.FixedSizeBufferTests.ToStream_AllowsByteStreamReadAndWrite
+  - SilverCraft.CSCore.Tests.FixedSizeBufferTests.ToStream_ForNonByte_ThrowsNotSupportedException
+  - SilverCraft.CSCore.Tests.FixedSizeBufferTests.WriteAndRead_WithOffset_HonorsArrayOffsets
+  - SilverCraft.CSCore.Tests.FixedSizeBufferTests.WriteAndRead_WithinCapacity_ReturnsExpectedElements
+  langs:
+  - csharp
+  - vb
+  name: FixedSizeBufferTests
+  nameWithType: FixedSizeBufferTests
+  fullName: SilverCraft.CSCore.Tests.FixedSizeBufferTests
+  type: Class
+  source:
+    remote:
+      path: SilverCraft.CSCore.Tests/FixedSizeBufferTests.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: FixedSizeBufferTests
+    path: ../SilverCraft.CSCore.Tests/FixedSizeBufferTests.cs
+    startLine: 5
+  assemblies:
+  - SilverCraft.CSCore.Tests
+  namespace: SilverCraft.CSCore.Tests
+  syntax:
+    content: public sealed class FixedSizeBufferTests
+    content.vb: Public NotInheritable Class FixedSizeBufferTests
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  extensionMethods:
+  - SilverCraft.CSCore.Tests.FixedSizeBufferTests.SilverCraft.CSCore.FluentExtensions.Synchronized``2
+- uid: SilverCraft.CSCore.Tests.FixedSizeBufferTests.WriteAndRead_WithinCapacity_ReturnsExpectedElements
+  commentId: M:SilverCraft.CSCore.Tests.FixedSizeBufferTests.WriteAndRead_WithinCapacity_ReturnsExpectedElements
+  id: WriteAndRead_WithinCapacity_ReturnsExpectedElements
+  parent: SilverCraft.CSCore.Tests.FixedSizeBufferTests
+  langs:
+  - csharp
+  - vb
+  name: WriteAndRead_WithinCapacity_ReturnsExpectedElements()
+  nameWithType: FixedSizeBufferTests.WriteAndRead_WithinCapacity_ReturnsExpectedElements()
+  fullName: SilverCraft.CSCore.Tests.FixedSizeBufferTests.WriteAndRead_WithinCapacity_ReturnsExpectedElements()
+  type: Method
+  source:
+    remote:
+      path: SilverCraft.CSCore.Tests/FixedSizeBufferTests.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: WriteAndRead_WithinCapacity_ReturnsExpectedElements
+    path: ../SilverCraft.CSCore.Tests/FixedSizeBufferTests.cs
+    startLine: 7
+  assemblies:
+  - SilverCraft.CSCore.Tests
+  namespace: SilverCraft.CSCore.Tests
+  syntax:
+    content: >-
+      [Fact]
+
+      public void WriteAndRead_WithinCapacity_ReturnsExpectedElements()
+    content.vb: >-
+      <Fact>
+
+      Public Sub WriteAndRead_WithinCapacity_ReturnsExpectedElements()
+  overload: SilverCraft.CSCore.Tests.FixedSizeBufferTests.WriteAndRead_WithinCapacity_ReturnsExpectedElements*
+  attributes:
+  - type: Xunit.FactAttribute
+    ctor: Xunit.FactAttribute.#ctor
+    arguments: []
+- uid: SilverCraft.CSCore.Tests.FixedSizeBufferTests.Read_WhenEmpty_ReturnsZero
+  commentId: M:SilverCraft.CSCore.Tests.FixedSizeBufferTests.Read_WhenEmpty_ReturnsZero
+  id: Read_WhenEmpty_ReturnsZero
+  parent: SilverCraft.CSCore.Tests.FixedSizeBufferTests
+  langs:
+  - csharp
+  - vb
+  name: Read_WhenEmpty_ReturnsZero()
+  nameWithType: FixedSizeBufferTests.Read_WhenEmpty_ReturnsZero()
+  fullName: SilverCraft.CSCore.Tests.FixedSizeBufferTests.Read_WhenEmpty_ReturnsZero()
+  type: Method
+  source:
+    remote:
+      path: SilverCraft.CSCore.Tests/FixedSizeBufferTests.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: Read_WhenEmpty_ReturnsZero
+    path: ../SilverCraft.CSCore.Tests/FixedSizeBufferTests.cs
+    startLine: 26
+  assemblies:
+  - SilverCraft.CSCore.Tests
+  namespace: SilverCraft.CSCore.Tests
+  syntax:
+    content: >-
+      [Fact]
+
+      public void Read_WhenEmpty_ReturnsZero()
+    content.vb: >-
+      <Fact>
+
+      Public Sub Read_WhenEmpty_ReturnsZero()
+  overload: SilverCraft.CSCore.Tests.FixedSizeBufferTests.Read_WhenEmpty_ReturnsZero*
+  attributes:
+  - type: Xunit.FactAttribute
+    ctor: Xunit.FactAttribute.#ctor
+    arguments: []
+- uid: SilverCraft.CSCore.Tests.FixedSizeBufferTests.WriteAndRead_WithOffset_HonorsArrayOffsets
+  commentId: M:SilverCraft.CSCore.Tests.FixedSizeBufferTests.WriteAndRead_WithOffset_HonorsArrayOffsets
+  id: WriteAndRead_WithOffset_HonorsArrayOffsets
+  parent: SilverCraft.CSCore.Tests.FixedSizeBufferTests
+  langs:
+  - csharp
+  - vb
+  name: WriteAndRead_WithOffset_HonorsArrayOffsets()
+  nameWithType: FixedSizeBufferTests.WriteAndRead_WithOffset_HonorsArrayOffsets()
+  fullName: SilverCraft.CSCore.Tests.FixedSizeBufferTests.WriteAndRead_WithOffset_HonorsArrayOffsets()
+  type: Method
+  source:
+    remote:
+      path: SilverCraft.CSCore.Tests/FixedSizeBufferTests.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: WriteAndRead_WithOffset_HonorsArrayOffsets
+    path: ../SilverCraft.CSCore.Tests/FixedSizeBufferTests.cs
+    startLine: 36
+  assemblies:
+  - SilverCraft.CSCore.Tests
+  namespace: SilverCraft.CSCore.Tests
+  syntax:
+    content: >-
+      [Fact]
+
+      public void WriteAndRead_WithOffset_HonorsArrayOffsets()
+    content.vb: >-
+      <Fact>
+
+      Public Sub WriteAndRead_WithOffset_HonorsArrayOffsets()
+  overload: SilverCraft.CSCore.Tests.FixedSizeBufferTests.WriteAndRead_WithOffset_HonorsArrayOffsets*
+  attributes:
+  - type: Xunit.FactAttribute
+    ctor: Xunit.FactAttribute.#ctor
+    arguments: []
+- uid: SilverCraft.CSCore.Tests.FixedSizeBufferTests.CircularWrapAround_ReadsAcrossBufferEndCorrectly
+  commentId: M:SilverCraft.CSCore.Tests.FixedSizeBufferTests.CircularWrapAround_ReadsAcrossBufferEndCorrectly
+  id: CircularWrapAround_ReadsAcrossBufferEndCorrectly
+  parent: SilverCraft.CSCore.Tests.FixedSizeBufferTests
+  langs:
+  - csharp
+  - vb
+  name: CircularWrapAround_ReadsAcrossBufferEndCorrectly()
+  nameWithType: FixedSizeBufferTests.CircularWrapAround_ReadsAcrossBufferEndCorrectly()
+  fullName: SilverCraft.CSCore.Tests.FixedSizeBufferTests.CircularWrapAround_ReadsAcrossBufferEndCorrectly()
+  type: Method
+  source:
+    remote:
+      path: SilverCraft.CSCore.Tests/FixedSizeBufferTests.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: CircularWrapAround_ReadsAcrossBufferEndCorrectly
+    path: ../SilverCraft.CSCore.Tests/FixedSizeBufferTests.cs
+    startLine: 50
+  assemblies:
+  - SilverCraft.CSCore.Tests
+  namespace: SilverCraft.CSCore.Tests
+  syntax:
+    content: >-
+      [Fact]
+
+      public void CircularWrapAround_ReadsAcrossBufferEndCorrectly()
+    content.vb: >-
+      <Fact>
+
+      Public Sub CircularWrapAround_ReadsAcrossBufferEndCorrectly()
+  overload: SilverCraft.CSCore.Tests.FixedSizeBufferTests.CircularWrapAround_ReadsAcrossBufferEndCorrectly*
+  attributes:
+  - type: Xunit.FactAttribute
+    ctor: Xunit.FactAttribute.#ctor
+    arguments: []
+- uid: SilverCraft.CSCore.Tests.FixedSizeBufferTests.Overwrite_WhenWritingMoreThanCapacity_KeepsMostRecentElements
+  commentId: M:SilverCraft.CSCore.Tests.FixedSizeBufferTests.Overwrite_WhenWritingMoreThanCapacity_KeepsMostRecentElements
+  id: Overwrite_WhenWritingMoreThanCapacity_KeepsMostRecentElements
+  parent: SilverCraft.CSCore.Tests.FixedSizeBufferTests
+  langs:
+  - csharp
+  - vb
+  name: Overwrite_WhenWritingMoreThanCapacity_KeepsMostRecentElements()
+  nameWithType: FixedSizeBufferTests.Overwrite_WhenWritingMoreThanCapacity_KeepsMostRecentElements()
+  fullName: SilverCraft.CSCore.Tests.FixedSizeBufferTests.Overwrite_WhenWritingMoreThanCapacity_KeepsMostRecentElements()
+  type: Method
+  source:
+    remote:
+      path: SilverCraft.CSCore.Tests/FixedSizeBufferTests.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: Overwrite_WhenWritingMoreThanCapacity_KeepsMostRecentElements
+    path: ../SilverCraft.CSCore.Tests/FixedSizeBufferTests.cs
+    startLine: 76
+  assemblies:
+  - SilverCraft.CSCore.Tests
+  namespace: SilverCraft.CSCore.Tests
+  syntax:
+    content: >-
+      [Fact]
+
+      public void Overwrite_WhenWritingMoreThanCapacity_KeepsMostRecentElements()
+    content.vb: >-
+      <Fact>
+
+      Public Sub Overwrite_WhenWritingMoreThanCapacity_KeepsMostRecentElements()
+  overload: SilverCraft.CSCore.Tests.FixedSizeBufferTests.Overwrite_WhenWritingMoreThanCapacity_KeepsMostRecentElements*
+  attributes:
+  - type: Xunit.FactAttribute
+    ctor: Xunit.FactAttribute.#ctor
+    arguments: []
+- uid: SilverCraft.CSCore.Tests.FixedSizeBufferTests.Clear_ResetsBufferState
+  commentId: M:SilverCraft.CSCore.Tests.FixedSizeBufferTests.Clear_ResetsBufferState
+  id: Clear_ResetsBufferState
+  parent: SilverCraft.CSCore.Tests.FixedSizeBufferTests
+  langs:
+  - csharp
+  - vb
+  name: Clear_ResetsBufferState()
+  nameWithType: FixedSizeBufferTests.Clear_ResetsBufferState()
+  fullName: SilverCraft.CSCore.Tests.FixedSizeBufferTests.Clear_ResetsBufferState()
+  type: Method
+  source:
+    remote:
+      path: SilverCraft.CSCore.Tests/FixedSizeBufferTests.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: Clear_ResetsBufferState
+    path: ../SilverCraft.CSCore.Tests/FixedSizeBufferTests.cs
+    startLine: 93
+  assemblies:
+  - SilverCraft.CSCore.Tests
+  namespace: SilverCraft.CSCore.Tests
+  syntax:
+    content: >-
+      [Fact]
+
+      public void Clear_ResetsBufferState()
+    content.vb: >-
+      <Fact>
+
+      Public Sub Clear_ResetsBufferState()
+  overload: SilverCraft.CSCore.Tests.FixedSizeBufferTests.Clear_ResetsBufferState*
+  attributes:
+  - type: Xunit.FactAttribute
+    ctor: Xunit.FactAttribute.#ctor
+    arguments: []
+- uid: SilverCraft.CSCore.Tests.FixedSizeBufferTests.ToStream_AllowsByteStreamReadAndWrite
+  commentId: M:SilverCraft.CSCore.Tests.FixedSizeBufferTests.ToStream_AllowsByteStreamReadAndWrite
+  id: ToStream_AllowsByteStreamReadAndWrite
+  parent: SilverCraft.CSCore.Tests.FixedSizeBufferTests
+  langs:
+  - csharp
+  - vb
+  name: ToStream_AllowsByteStreamReadAndWrite()
+  nameWithType: FixedSizeBufferTests.ToStream_AllowsByteStreamReadAndWrite()
+  fullName: SilverCraft.CSCore.Tests.FixedSizeBufferTests.ToStream_AllowsByteStreamReadAndWrite()
+  type: Method
+  source:
+    remote:
+      path: SilverCraft.CSCore.Tests/FixedSizeBufferTests.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: ToStream_AllowsByteStreamReadAndWrite
+    path: ../SilverCraft.CSCore.Tests/FixedSizeBufferTests.cs
+    startLine: 107
+  assemblies:
+  - SilverCraft.CSCore.Tests
+  namespace: SilverCraft.CSCore.Tests
+  syntax:
+    content: >-
+      [Fact]
+
+      public void ToStream_AllowsByteStreamReadAndWrite()
+    content.vb: >-
+      <Fact>
+
+      Public Sub ToStream_AllowsByteStreamReadAndWrite()
+  overload: SilverCraft.CSCore.Tests.FixedSizeBufferTests.ToStream_AllowsByteStreamReadAndWrite*
+  attributes:
+  - type: Xunit.FactAttribute
+    ctor: Xunit.FactAttribute.#ctor
+    arguments: []
+- uid: SilverCraft.CSCore.Tests.FixedSizeBufferTests.ToStream_ForNonByte_ThrowsNotSupportedException
+  commentId: M:SilverCraft.CSCore.Tests.FixedSizeBufferTests.ToStream_ForNonByte_ThrowsNotSupportedException
+  id: ToStream_ForNonByte_ThrowsNotSupportedException
+  parent: SilverCraft.CSCore.Tests.FixedSizeBufferTests
+  langs:
+  - csharp
+  - vb
+  name: ToStream_ForNonByte_ThrowsNotSupportedException()
+  nameWithType: FixedSizeBufferTests.ToStream_ForNonByte_ThrowsNotSupportedException()
+  fullName: SilverCraft.CSCore.Tests.FixedSizeBufferTests.ToStream_ForNonByte_ThrowsNotSupportedException()
+  type: Method
+  source:
+    remote:
+      path: SilverCraft.CSCore.Tests/FixedSizeBufferTests.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: ToStream_ForNonByte_ThrowsNotSupportedException
+    path: ../SilverCraft.CSCore.Tests/FixedSizeBufferTests.cs
+    startLine: 127
+  assemblies:
+  - SilverCraft.CSCore.Tests
+  namespace: SilverCraft.CSCore.Tests
+  syntax:
+    content: >-
+      [Fact]
+
+      public void ToStream_ForNonByte_ThrowsNotSupportedException()
+    content.vb: >-
+      <Fact>
+
+      Public Sub ToStream_ForNonByte_ThrowsNotSupportedException()
+  overload: SilverCraft.CSCore.Tests.FixedSizeBufferTests.ToStream_ForNonByte_ThrowsNotSupportedException*
+  attributes:
+  - type: Xunit.FactAttribute
+    ctor: Xunit.FactAttribute.#ctor
+    arguments: []
+references:
+- uid: SilverCraft.CSCore.Tests
+  commentId: N:SilverCraft.CSCore.Tests
+  href: SilverCraft.html
+  name: SilverCraft.CSCore.Tests
+  nameWithType: SilverCraft.CSCore.Tests
+  fullName: SilverCraft.CSCore.Tests
+  spec.csharp:
+  - uid: SilverCraft
+    name: SilverCraft
+    href: SilverCraft.html
+  - name: .
+  - uid: SilverCraft.CSCore
+    name: CSCore
+    href: SilverCraft.CSCore.html
+  - name: .
+  - uid: SilverCraft.CSCore.Tests
+    name: Tests
+    href: SilverCraft.CSCore.Tests.html
+  spec.vb:
+  - uid: SilverCraft
+    name: SilverCraft
+    href: SilverCraft.html
+  - name: .
+  - uid: SilverCraft.CSCore
+    name: CSCore
+    href: SilverCraft.CSCore.html
+  - name: .
+  - uid: SilverCraft.CSCore.Tests
+    name: Tests
+    href: SilverCraft.CSCore.Tests.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: SilverCraft.CSCore.Tests.FixedSizeBufferTests.SilverCraft.CSCore.FluentExtensions.Synchronized``2
+  commentId: M:SilverCraft.CSCore.FluentExtensions.Synchronized``2(``0)
+  parent: SilverCraft.CSCore.FluentExtensions
+  definition: SilverCraft.CSCore.FluentExtensions.Synchronized``2(``0)
+  href: SilverCraft.CSCore.FluentExtensions.html#SilverCraft_CSCore_FluentExtensions_Synchronized__2___0_
+  name: Synchronized<FixedSizeBufferTests, T>(FixedSizeBufferTests)
+  nameWithType: FluentExtensions.Synchronized<FixedSizeBufferTests, T>(FixedSizeBufferTests)
+  fullName: SilverCraft.CSCore.FluentExtensions.Synchronized<SilverCraft.CSCore.Tests.FixedSizeBufferTests, T>(SilverCraft.CSCore.Tests.FixedSizeBufferTests)
+  nameWithType.vb: FluentExtensions.Synchronized(Of FixedSizeBufferTests, T)(FixedSizeBufferTests)
+  fullName.vb: SilverCraft.CSCore.FluentExtensions.Synchronized(Of SilverCraft.CSCore.Tests.FixedSizeBufferTests, T)(SilverCraft.CSCore.Tests.FixedSizeBufferTests)
+  name.vb: Synchronized(Of FixedSizeBufferTests, T)(FixedSizeBufferTests)
+  spec.csharp:
+  - uid: SilverCraft.CSCore.FluentExtensions.Synchronized``2(SilverCraft.CSCore.Tests.FixedSizeBufferTests)
+    name: Synchronized
+    href: SilverCraft.CSCore.FluentExtensions.html#SilverCraft_CSCore_FluentExtensions_Synchronized__2___0_
+  - name: <
+  - uid: SilverCraft.CSCore.Tests.FixedSizeBufferTests
+    name: FixedSizeBufferTests
+    href: SilverCraft.CSCore.Tests.FixedSizeBufferTests.html
+  - name: ','
+  - name: " "
+  - name: T
+  - name: '>'
+  - name: (
+  - uid: SilverCraft.CSCore.Tests.FixedSizeBufferTests
+    name: FixedSizeBufferTests
+    href: SilverCraft.CSCore.Tests.FixedSizeBufferTests.html
+  - name: )
+  spec.vb:
+  - uid: SilverCraft.CSCore.FluentExtensions.Synchronized``2(SilverCraft.CSCore.Tests.FixedSizeBufferTests)
+    name: Synchronized
+    href: SilverCraft.CSCore.FluentExtensions.html#SilverCraft_CSCore_FluentExtensions_Synchronized__2___0_
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: SilverCraft.CSCore.Tests.FixedSizeBufferTests
+    name: FixedSizeBufferTests
+    href: SilverCraft.CSCore.Tests.FixedSizeBufferTests.html
+  - name: ','
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: SilverCraft.CSCore.Tests.FixedSizeBufferTests
+    name: FixedSizeBufferTests
+    href: SilverCraft.CSCore.Tests.FixedSizeBufferTests.html
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: SilverCraft.CSCore.FluentExtensions.Synchronized``2(``0)
+  commentId: M:SilverCraft.CSCore.FluentExtensions.Synchronized``2(``0)
+  href: SilverCraft.CSCore.FluentExtensions.html#SilverCraft_CSCore_FluentExtensions_Synchronized__2___0_
+  name: Synchronized<TAudioSource, T>(TAudioSource)
+  nameWithType: FluentExtensions.Synchronized<TAudioSource, T>(TAudioSource)
+  fullName: SilverCraft.CSCore.FluentExtensions.Synchronized<TAudioSource, T>(TAudioSource)
+  nameWithType.vb: FluentExtensions.Synchronized(Of TAudioSource, T)(TAudioSource)
+  fullName.vb: SilverCraft.CSCore.FluentExtensions.Synchronized(Of TAudioSource, T)(TAudioSource)
+  name.vb: Synchronized(Of TAudioSource, T)(TAudioSource)
+  spec.csharp:
+  - uid: SilverCraft.CSCore.FluentExtensions.Synchronized``2(``0)
+    name: Synchronized
+    href: SilverCraft.CSCore.FluentExtensions.html#SilverCraft_CSCore_FluentExtensions_Synchronized__2___0_
+  - name: <
+  - name: TAudioSource
+  - name: ','
+  - name: " "
+  - name: T
+  - name: '>'
+  - name: (
+  - name: TAudioSource
+  - name: )
+  spec.vb:
+  - uid: SilverCraft.CSCore.FluentExtensions.Synchronized``2(``0)
+    name: Synchronized
+    href: SilverCraft.CSCore.FluentExtensions.html#SilverCraft_CSCore_FluentExtensions_Synchronized__2___0_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TAudioSource
+  - name: ','
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - name: TAudioSource
+  - name: )
+- uid: SilverCraft.CSCore.FluentExtensions
+  commentId: T:SilverCraft.CSCore.FluentExtensions
+  parent: SilverCraft.CSCore
+  href: SilverCraft.CSCore.FluentExtensions.html
+  name: FluentExtensions
+  nameWithType: FluentExtensions
+  fullName: SilverCraft.CSCore.FluentExtensions
+- uid: SilverCraft.CSCore
+  commentId: N:SilverCraft.CSCore
+  href: SilverCraft.html
+  name: SilverCraft.CSCore
+  nameWithType: SilverCraft.CSCore
+  fullName: SilverCraft.CSCore
+  spec.csharp:
+  - uid: SilverCraft
+    name: SilverCraft
+    href: SilverCraft.html
+  - name: .
+  - uid: SilverCraft.CSCore
+    name: CSCore
+    href: SilverCraft.CSCore.html
+  spec.vb:
+  - uid: SilverCraft
+    name: SilverCraft
+    href: SilverCraft.html
+  - name: .
+  - uid: SilverCraft.CSCore
+    name: CSCore
+    href: SilverCraft.CSCore.html
+- uid: SilverCraft.CSCore.Tests.FixedSizeBufferTests.WriteAndRead_WithinCapacity_ReturnsExpectedElements*
+  commentId: Overload:SilverCraft.CSCore.Tests.FixedSizeBufferTests.WriteAndRead_WithinCapacity_ReturnsExpectedElements
+  href: SilverCraft.CSCore.Tests.FixedSizeBufferTests.html#SilverCraft_CSCore_Tests_FixedSizeBufferTests_WriteAndRead_WithinCapacity_ReturnsExpectedElements
+  name: WriteAndRead_WithinCapacity_ReturnsExpectedElements
+  nameWithType: FixedSizeBufferTests.WriteAndRead_WithinCapacity_ReturnsExpectedElements
+  fullName: SilverCraft.CSCore.Tests.FixedSizeBufferTests.WriteAndRead_WithinCapacity_ReturnsExpectedElements
+- uid: SilverCraft.CSCore.Tests.FixedSizeBufferTests.Read_WhenEmpty_ReturnsZero*
+  commentId: Overload:SilverCraft.CSCore.Tests.FixedSizeBufferTests.Read_WhenEmpty_ReturnsZero
+  href: SilverCraft.CSCore.Tests.FixedSizeBufferTests.html#SilverCraft_CSCore_Tests_FixedSizeBufferTests_Read_WhenEmpty_ReturnsZero
+  name: Read_WhenEmpty_ReturnsZero
+  nameWithType: FixedSizeBufferTests.Read_WhenEmpty_ReturnsZero
+  fullName: SilverCraft.CSCore.Tests.FixedSizeBufferTests.Read_WhenEmpty_ReturnsZero
+- uid: SilverCraft.CSCore.Tests.FixedSizeBufferTests.WriteAndRead_WithOffset_HonorsArrayOffsets*
+  commentId: Overload:SilverCraft.CSCore.Tests.FixedSizeBufferTests.WriteAndRead_WithOffset_HonorsArrayOffsets
+  href: SilverCraft.CSCore.Tests.FixedSizeBufferTests.html#SilverCraft_CSCore_Tests_FixedSizeBufferTests_WriteAndRead_WithOffset_HonorsArrayOffsets
+  name: WriteAndRead_WithOffset_HonorsArrayOffsets
+  nameWithType: FixedSizeBufferTests.WriteAndRead_WithOffset_HonorsArrayOffsets
+  fullName: SilverCraft.CSCore.Tests.FixedSizeBufferTests.WriteAndRead_WithOffset_HonorsArrayOffsets
+- uid: SilverCraft.CSCore.Tests.FixedSizeBufferTests.CircularWrapAround_ReadsAcrossBufferEndCorrectly*
+  commentId: Overload:SilverCraft.CSCore.Tests.FixedSizeBufferTests.CircularWrapAround_ReadsAcrossBufferEndCorrectly
+  href: SilverCraft.CSCore.Tests.FixedSizeBufferTests.html#SilverCraft_CSCore_Tests_FixedSizeBufferTests_CircularWrapAround_ReadsAcrossBufferEndCorrectly
+  name: CircularWrapAround_ReadsAcrossBufferEndCorrectly
+  nameWithType: FixedSizeBufferTests.CircularWrapAround_ReadsAcrossBufferEndCorrectly
+  fullName: SilverCraft.CSCore.Tests.FixedSizeBufferTests.CircularWrapAround_ReadsAcrossBufferEndCorrectly
+- uid: SilverCraft.CSCore.Tests.FixedSizeBufferTests.Overwrite_WhenWritingMoreThanCapacity_KeepsMostRecentElements*
+  commentId: Overload:SilverCraft.CSCore.Tests.FixedSizeBufferTests.Overwrite_WhenWritingMoreThanCapacity_KeepsMostRecentElements
+  href: SilverCraft.CSCore.Tests.FixedSizeBufferTests.html#SilverCraft_CSCore_Tests_FixedSizeBufferTests_Overwrite_WhenWritingMoreThanCapacity_KeepsMostRecentElements
+  name: Overwrite_WhenWritingMoreThanCapacity_KeepsMostRecentElements
+  nameWithType: FixedSizeBufferTests.Overwrite_WhenWritingMoreThanCapacity_KeepsMostRecentElements
+  fullName: SilverCraft.CSCore.Tests.FixedSizeBufferTests.Overwrite_WhenWritingMoreThanCapacity_KeepsMostRecentElements
+- uid: SilverCraft.CSCore.Tests.FixedSizeBufferTests.Clear_ResetsBufferState*
+  commentId: Overload:SilverCraft.CSCore.Tests.FixedSizeBufferTests.Clear_ResetsBufferState
+  href: SilverCraft.CSCore.Tests.FixedSizeBufferTests.html#SilverCraft_CSCore_Tests_FixedSizeBufferTests_Clear_ResetsBufferState
+  name: Clear_ResetsBufferState
+  nameWithType: FixedSizeBufferTests.Clear_ResetsBufferState
+  fullName: SilverCraft.CSCore.Tests.FixedSizeBufferTests.Clear_ResetsBufferState
+- uid: SilverCraft.CSCore.Tests.FixedSizeBufferTests.ToStream_AllowsByteStreamReadAndWrite*
+  commentId: Overload:SilverCraft.CSCore.Tests.FixedSizeBufferTests.ToStream_AllowsByteStreamReadAndWrite
+  href: SilverCraft.CSCore.Tests.FixedSizeBufferTests.html#SilverCraft_CSCore_Tests_FixedSizeBufferTests_ToStream_AllowsByteStreamReadAndWrite
+  name: ToStream_AllowsByteStreamReadAndWrite
+  nameWithType: FixedSizeBufferTests.ToStream_AllowsByteStreamReadAndWrite
+  fullName: SilverCraft.CSCore.Tests.FixedSizeBufferTests.ToStream_AllowsByteStreamReadAndWrite
+- uid: SilverCraft.CSCore.Tests.FixedSizeBufferTests.ToStream_ForNonByte_ThrowsNotSupportedException*
+  commentId: Overload:SilverCraft.CSCore.Tests.FixedSizeBufferTests.ToStream_ForNonByte_ThrowsNotSupportedException
+  href: SilverCraft.CSCore.Tests.FixedSizeBufferTests.html#SilverCraft_CSCore_Tests_FixedSizeBufferTests_ToStream_ForNonByte_ThrowsNotSupportedException
+  name: ToStream_ForNonByte_ThrowsNotSupportedException
+  nameWithType: FixedSizeBufferTests.ToStream_ForNonByte_ThrowsNotSupportedException
+  fullName: SilverCraft.CSCore.Tests.FixedSizeBufferTests.ToStream_ForNonByte_ThrowsNotSupportedException

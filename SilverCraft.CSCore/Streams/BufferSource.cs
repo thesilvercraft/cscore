@@ -1,6 +1,4 @@
 ﻿using SilverCraft.CSCore.Utils.Buffer;
-using System;
-using System.Threading;
 
 namespace SilverCraft.CSCore.Streams
 {
@@ -13,7 +11,8 @@ namespace SilverCraft.CSCore.Streams
         private readonly object _lockObject;
 
         private readonly FixedSizeBuffer<byte> _buffer;
-        private bool _disposing;
+        private volatile bool _disposing;
+        private volatile Exception? _bufferException;
         private volatile int _eofCounter = 0;
 
         /// <summary>
@@ -34,7 +33,7 @@ namespace SilverCraft.CSCore.Streams
             _bufferThread = new Thread(BufferProc)
             {
                 Priority = ThreadPriority.Normal,
-                IsBackground = false
+                IsBackground = true
             };
             _bufferThread.Start();
         }
@@ -57,9 +56,9 @@ namespace SilverCraft.CSCore.Streams
         /// <exception cref="ObjectDisposedException">BufferSource</exception>
         public override int Read(byte[] buffer, int offset, int count)
         {
-            ObjectDisposedException.ThrowIf(_disposing,this);
+            ObjectDisposedException.ThrowIf(_disposing, this);
             int read0 = 0, read1;
-            Array.Clear(buffer, offset, count - offset);
+            Array.Clear(buffer, offset, count);
 
             do
             {
@@ -70,8 +69,10 @@ namespace SilverCraft.CSCore.Streams
                           _eofCounter >=
                           5)); //if the buffering thread could not read any data for 5 times, we abort here
 
-            return read0;
+            if (read0 == 0 && _bufferException != null)
+                throw new IOException("The source failed while the buffer was being filled.", _bufferException);
 
+            return read0;
         }
 
         /// <summary>
@@ -80,7 +81,7 @@ namespace SilverCraft.CSCore.Streams
         /// <exception cref="ObjectDisposedException">BufferSource</exception>
         public void ResetBuffer()
         {
-            ObjectDisposedException.ThrowIf(_disposing,this);
+            ObjectDisposedException.ThrowIf(_disposing, this);
             lock (_lockObject)
             {
                 _buffer.Clear();
@@ -90,28 +91,41 @@ namespace SilverCraft.CSCore.Streams
         private void BufferProc(object o)
         {
             var byteBuffer = new byte[WaveFormat.BytesPerSecond / 2];
-            do
+            try
             {
-                if (_buffer.Buffered >= _buffer.Length * 0.85 && !_disposing)
+                do
                 {
-                    Thread.Sleep(50);
-                    continue;
-                }
-                lock (_lockObject)
-                {
-                    var bytesToRead = Math.Min(byteBuffer.Length, _buffer.Length - _buffer.Buffered);
-                    var read = base.Read(byteBuffer, 0, bytesToRead);
-                    if (read > 0)
+                    if (_buffer.Buffered >= _buffer.Length * 0.85 && !_disposing)
                     {
-                        _buffer.Write(byteBuffer, 0, read);
-                        _eofCounter = 0;
+                        Thread.Sleep(50);
+                        continue;
                     }
-                    else
+
+                    lock (_lockObject)
                     {
-                        _eofCounter++;
+                        var bytesToRead = Math.Min(byteBuffer.Length, _buffer.Length - _buffer.Buffered);
+                        var read = base.Read(byteBuffer, 0, bytesToRead);
+                        if (read > 0)
+                        {
+                            _buffer.Write(byteBuffer, 0, read);
+                            _eofCounter = 0;
+                        }
+                        else
+                        {
+                            _eofCounter++;
+                        }
                     }
-                }
-            } while (!_disposing);
+                } while (!_disposing);
+            }
+            catch (Exception) when (_disposing)
+            {
+                // Disposing the underlying source may unblock a pending read by throwing.
+            }
+            catch (Exception ex)
+            {
+                _bufferException = ex;
+                _eofCounter = 5;
+            }
         }
 
         /// <summary>
@@ -124,7 +138,7 @@ namespace SilverCraft.CSCore.Streams
         {
             get
             {
-                ObjectDisposedException.ThrowIf(_disposing,this);
+                ObjectDisposedException.ThrowIf(_disposing, this);
                 lock (_lockObject)
                 {
                     return CanSeek ? Math.Max(0, Math.Min(base.Position - _buffer.Buffered, Length)) : 0;
@@ -132,7 +146,7 @@ namespace SilverCraft.CSCore.Streams
             }
             set
             {
-                ObjectDisposedException.ThrowIf(_disposing,this);
+                ObjectDisposedException.ThrowIf(_disposing, this);
                 lock (_lockObject)
                 {
                     value -= (value % WaveFormat.BlockAlign);
@@ -149,7 +163,7 @@ namespace SilverCraft.CSCore.Streams
         {
             get
             {
-                ObjectDisposedException.ThrowIf(_disposing,this);
+                ObjectDisposedException.ThrowIf(_disposing, this);
                 lock (_lockObject)
                 {
                     return CanSeek ? base.Length : 0;
@@ -164,11 +178,12 @@ namespace SilverCraft.CSCore.Streams
         protected override void Dispose(bool disposing)
         {
             _disposing = true;
-            if (_bufferThread.WaitForExit(400))
+            if (disposing)
             {
-                _buffer.Dispose();
+                base.Dispose(true);
+                if (_bufferThread.Join(400))
+                    _buffer.Dispose();
             }
-            base.Dispose(disposing);
         }
     }
 }

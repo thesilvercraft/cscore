@@ -1,9 +1,9 @@
-using System.Diagnostics;
 using System.Diagnostics.CodeAnalysis;
 using System.Runtime.InteropServices;
 
 namespace sndfile;
-public sealed class SfVirtualStreamHelper : IDisposable
+
+public sealed unsafe class SfVirtualStreamHelper : IDisposable
 {
     public SfVirtualStreamHelper([NotNull] Stream stream, bool disposeStream = true)
     {
@@ -16,8 +16,7 @@ public sealed class SfVirtualStreamHelper : IDisposable
 
     private bool DisposeStream { get; }
 
-    [NotNull]
-    private Stream Stream { get; }
+    [NotNull] private Stream Stream { get; }
 
     public SF_VIRTUAL_IO Virtual { get; }
 
@@ -41,7 +40,7 @@ public sealed class SfVirtualStreamHelper : IDisposable
     {
         return Stream.Seek(offset, seek switch
         {
-            Whence.Current=> SeekOrigin.Current,
+            Whence.Current => SeekOrigin.Current,
             Whence.End => SeekOrigin.End,
             Whence.Set => SeekOrigin.Begin
         });
@@ -49,19 +48,54 @@ public sealed class SfVirtualStreamHelper : IDisposable
 
     private long Read(IntPtr ptr, long count, IntPtr userData)
     {
-        var buffer = new byte[count];
-        var read = Stream.Read(buffer, 0, buffer.Length);
-        Marshal.Copy(buffer, 0, ptr, read);
-        return read;
+        if (ptr == IntPtr.Zero || count <= 0)
+            return 0;
+
+        Span<byte> buffer = stackalloc byte[8192];
+        long totalRead = 0;
+        try
+        {
+            while (totalRead < count)
+            {
+                var chunkLength = (int)Math.Min(buffer.Length, count - totalRead);
+                var read = Stream.Read(buffer[..chunkLength]);
+                if (read == 0)
+                    break;
+
+                buffer[..read].CopyTo(new Span<byte>((byte*)ptr + totalRead, read));
+                totalRead += read;
+            }
+        }
+        catch
+        {
+            // Native callbacks must report an I/O failure rather than propagate managed exceptions.
+        }
+
+        return totalRead;
     }
 
     private long Write(IntPtr ptr, long count, IntPtr userData)
     {
-        if (!Stream.CanWrite) return 0;
-        var buffer = new byte[count];
-        Marshal.Copy(ptr, buffer, 0, buffer.Length);
-        Stream.Write(buffer, 0, buffer.Length);
-        return count;
+        if (ptr == IntPtr.Zero || count <= 0 || !Stream.CanWrite)
+            return 0;
+
+        const int chunkLength = 8192;
+        long totalWritten = 0;
+        try
+        {
+            while (totalWritten < count)
+            {
+                var currentChunkLength = (int)Math.Min(chunkLength, count - totalWritten);
+                Stream.Write(new ReadOnlySpan<byte>((byte*)ptr + totalWritten, currentChunkLength));
+                totalWritten += currentChunkLength;
+            }
+        }
+        catch
+        {
+            // Native callbacks must report an I/O failure rather than propagate managed exceptions.
+        }
+
+        return totalWritten;
     }
 
     private long Tell(IntPtr userData)
@@ -69,85 +103,84 @@ public sealed class SfVirtualStreamHelper : IDisposable
         return Stream.Position;
     }
 }
-    public struct SF_VIRTUAL_IO
+
+public struct SF_VIRTUAL_IO
+{
+    [NotNull] [MarshalAs(UnmanagedType.FunctionPtr)]
+    public readonly SfVirtualLength Length;
+
+    [NotNull] [MarshalAs(UnmanagedType.FunctionPtr)]
+    public readonly SfVirtualSeek Seek;
+
+    [NotNull] [MarshalAs(UnmanagedType.FunctionPtr)]
+    public readonly SfVirtualRead Read;
+
+    [NotNull] [MarshalAs(UnmanagedType.FunctionPtr)]
+    public readonly SfVirtualWrite Write;
+
+    [NotNull] [MarshalAs(UnmanagedType.FunctionPtr)]
+    public readonly SfVirtualTell Tell;
+
+    public SF_VIRTUAL_IO(
+        [NotNull] SfVirtualLength length,
+        [NotNull] SfVirtualSeek seek,
+        [NotNull] SfVirtualRead read,
+        [NotNull] SfVirtualWrite write,
+        [NotNull] SfVirtualTell tell)
     {
-        [NotNull]
-        [MarshalAs(UnmanagedType.FunctionPtr)]
-        public readonly SfVirtualLength Length;
-
-        [NotNull]
-        [MarshalAs(UnmanagedType.FunctionPtr)]
-        public readonly SfVirtualSeek Seek;
-
-        [NotNull]
-        [MarshalAs(UnmanagedType.FunctionPtr)]
-        public readonly SfVirtualRead Read;
-
-        [NotNull]
-        [MarshalAs(UnmanagedType.FunctionPtr)]
-        public readonly SfVirtualWrite Write;
-
-        [NotNull]
-        [MarshalAs(UnmanagedType.FunctionPtr)]
-        public readonly SfVirtualTell Tell;
-
-        public SF_VIRTUAL_IO(
-            [NotNull] SfVirtualLength length,
-            [NotNull] SfVirtualSeek seek,
-            [NotNull] SfVirtualRead read,
-            [NotNull] SfVirtualWrite write,
-            [NotNull] SfVirtualTell tell)
-        {
-            Length = length ?? throw new ArgumentNullException(nameof(length));
-            Seek = seek ?? throw new ArgumentNullException(nameof(seek));
-            Read = read ?? throw new ArgumentNullException(nameof(read));
-            Write = write ?? throw new ArgumentNullException(nameof(write));
-            Tell = tell ?? throw new ArgumentNullException(nameof(tell));
-        }
-
-        private bool Equals(SF_VIRTUAL_IO other)
-        {
-            return Length.Equals(other.Length) && Seek.Equals(other.Seek) && Read.Equals(other.Read) &&
-                   Write.Equals(other.Write) && Tell.Equals(other.Tell);
-        }
-
-        public override bool Equals(object? obj)
-        {
-            return obj is SF_VIRTUAL_IO @virtual && Equals(@virtual);
-        }
-
-        public override int GetHashCode()
-        {
-            unchecked
-            {
-                var hashCode = Length.GetHashCode();
-                hashCode = (hashCode * 397) ^ Seek.GetHashCode();
-                hashCode = (hashCode * 397) ^ Read.GetHashCode();
-                hashCode = (hashCode * 397) ^ Write.GetHashCode();
-                hashCode = (hashCode * 397) ^ Tell.GetHashCode();
-                return hashCode;
-            }
-        }
-
-        public static bool operator ==(SF_VIRTUAL_IO left, SF_VIRTUAL_IO right)
-        {
-            return left.Equals(right);
-        }
-
-        public static bool operator !=(SF_VIRTUAL_IO left, SF_VIRTUAL_IO right)
-        {
-            return !left.Equals(right);
-        }
-
+        Length = length ?? throw new ArgumentNullException(nameof(length));
+        Seek = seek ?? throw new ArgumentNullException(nameof(seek));
+        Read = read ?? throw new ArgumentNullException(nameof(read));
+        Write = write ?? throw new ArgumentNullException(nameof(write));
+        Tell = tell ?? throw new ArgumentNullException(nameof(tell));
     }
+
+    private bool Equals(SF_VIRTUAL_IO other)
+    {
+        return Length.Equals(other.Length) && Seek.Equals(other.Seek) && Read.Equals(other.Read) &&
+               Write.Equals(other.Write) && Tell.Equals(other.Tell);
+    }
+
+    public override bool Equals(object? obj)
+    {
+        return obj is SF_VIRTUAL_IO @virtual && Equals(@virtual);
+    }
+
+    public override int GetHashCode()
+    {
+        unchecked
+        {
+            var hashCode = Length.GetHashCode();
+            hashCode = (hashCode * 397) ^ Seek.GetHashCode();
+            hashCode = (hashCode * 397) ^ Read.GetHashCode();
+            hashCode = (hashCode * 397) ^ Write.GetHashCode();
+            hashCode = (hashCode * 397) ^ Tell.GetHashCode();
+            return hashCode;
+        }
+    }
+
+    public static bool operator ==(SF_VIRTUAL_IO left, SF_VIRTUAL_IO right)
+    {
+        return left.Equals(right);
+    }
+
+    public static bool operator !=(SF_VIRTUAL_IO left, SF_VIRTUAL_IO right)
+    {
+        return !left.Equals(right);
+    }
+}
+
 [UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 public delegate long SfVirtualLength(IntPtr userData);
+
 [UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 public delegate long SfVirtualSeek(long offset, Whence seek, IntPtr userData);
 
 [UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 public delegate long SfVirtualRead(IntPtr ptr, long count, IntPtr userData);
+
 [UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 public delegate long SfVirtualWrite(IntPtr ptr, long count, IntPtr userData);
+
 [UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 public delegate long SfVirtualTell(IntPtr userData);

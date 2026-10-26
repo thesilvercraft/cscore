@@ -1,0 +1,611 @@
+### YamlMime:ManagedReference
+items:
+- uid: SilverCraft.CSCore.Tests.WaveFormatExtensibleTests
+  commentId: T:SilverCraft.CSCore.Tests.WaveFormatExtensibleTests
+  id: WaveFormatExtensibleTests
+  parent: SilverCraft.CSCore.Tests
+  children:
+  - SilverCraft.CSCore.Tests.WaveFormatExtensibleTests.Constructor_MismatchedChannelMask_ThrowsArgumentException
+  - SilverCraft.CSCore.Tests.WaveFormatExtensibleTests.Constructor_WithValidChannelMask_InitializesCorrectly
+  - SilverCraft.CSCore.Tests.WaveFormatExtensibleTests.SubTypeFromWaveFormat_ReturnsCorrectGuids
+  - SilverCraft.CSCore.Tests.WaveFormatExtensibleTests.ToWaveFormat_ConvertsBackToStandardWaveFormat
+  - SilverCraft.CSCore.Tests.WaveFormatExtensibleTests.ValidBitsPerSample_InitializesToBits
+  langs:
+  - csharp
+  - vb
+  name: WaveFormatExtensibleTests
+  nameWithType: WaveFormatExtensibleTests
+  fullName: SilverCraft.CSCore.Tests.WaveFormatExtensibleTests
+  type: Class
+  source:
+    remote:
+      path: SilverCraft.CSCore.Tests/WaveFormatExtensibleTests.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: WaveFormatExtensibleTests
+    path: ../SilverCraft.CSCore.Tests/WaveFormatExtensibleTests.cs
+    startLine: 4
+  assemblies:
+  - SilverCraft.CSCore.Tests
+  namespace: SilverCraft.CSCore.Tests
+  syntax:
+    content: public sealed class WaveFormatExtensibleTests
+    content.vb: Public NotInheritable Class WaveFormatExtensibleTests
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  extensionMethods:
+  - SilverCraft.CSCore.Tests.WaveFormatExtensibleTests.SilverCraft.CSCore.FluentExtensions.Synchronized``2
+- uid: SilverCraft.CSCore.Tests.WaveFormatExtensibleTests.Constructor_WithValidChannelMask_InitializesCorrectly
+  commentId: M:SilverCraft.CSCore.Tests.WaveFormatExtensibleTests.Constructor_WithValidChannelMask_InitializesCorrectly
+  id: Constructor_WithValidChannelMask_InitializesCorrectly
+  parent: SilverCraft.CSCore.Tests.WaveFormatExtensibleTests
+  langs:
+  - csharp
+  - vb
+  name: Constructor_WithValidChannelMask_InitializesCorrectly()
+  nameWithType: WaveFormatExtensibleTests.Constructor_WithValidChannelMask_InitializesCorrectly()
+  fullName: SilverCraft.CSCore.Tests.WaveFormatExtensibleTests.Constructor_WithValidChannelMask_InitializesCorrectly()
+  type: Method
+  source:
+    remote:
+      path: SilverCraft.CSCore.Tests/WaveFormatExtensibleTests.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: Constructor_WithValidChannelMask_InitializesCorrectly
+    path: ../SilverCraft.CSCore.Tests/WaveFormatExtensibleTests.cs
+    startLine: 6
+  assemblies:
+  - SilverCraft.CSCore.Tests
+  namespace: SilverCraft.CSCore.Tests
+  syntax:
+    content: >-
+      [Fact]
+
+      public void Constructor_WithValidChannelMask_InitializesCorrectly()
+    content.vb: >-
+      <Fact>
+
+      Public Sub Constructor_WithValidChannelMask_InitializesCorrectly()
+  overload: SilverCraft.CSCore.Tests.WaveFormatExtensibleTests.Constructor_WithValidChannelMask_InitializesCorrectly*
+  attributes:
+  - type: Xunit.FactAttribute
+    ctor: Xunit.FactAttribute.#ctor
+    arguments: []
+- uid: SilverCraft.CSCore.Tests.WaveFormatExtensibleTests.Constructor_MismatchedChannelMask_ThrowsArgumentException
+  commentId: M:SilverCraft.CSCore.Tests.WaveFormatExtensibleTests.Constructor_MismatchedChannelMask_ThrowsArgumentException
+  id: Constructor_MismatchedChannelMask_ThrowsArgumentException
+  parent: SilverCraft.CSCore.Tests.WaveFormatExtensibleTests
+  langs:
+  - csharp
+  - vb
+  name: Constructor_MismatchedChannelMask_ThrowsArgumentException()
+  nameWithType: WaveFormatExtensibleTests.Constructor_MismatchedChannelMask_ThrowsArgumentException()
+  fullName: SilverCraft.CSCore.Tests.WaveFormatExtensibleTests.Constructor_MismatchedChannelMask_ThrowsArgumentException()
+  type: Method
+  source:
+    remote:
+      path: SilverCraft.CSCore.Tests/WaveFormatExtensibleTests.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: Constructor_MismatchedChannelMask_ThrowsArgumentException
+    path: ../SilverCraft.CSCore.Tests/WaveFormatExtensibleTests.cs
+    startLine: 24
+  assemblies:
+  - SilverCraft.CSCore.Tests
+  namespace: SilverCraft.CSCore.Tests
+  syntax:
+    content: >-
+      [Fact]
+
+      public void Constructor_MismatchedChannelMask_ThrowsArgumentException()
+    content.vb: >-
+      <Fact>
+
+      Public Sub Constructor_MismatchedChannelMask_ThrowsArgumentException()
+  overload: SilverCraft.CSCore.Tests.WaveFormatExtensibleTests.Constructor_MismatchedChannelMask_ThrowsArgumentException*
+  attributes:
+  - type: Xunit.FactAttribute
+    ctor: Xunit.FactAttribute.#ctor
+    arguments: []
+- uid: SilverCraft.CSCore.Tests.WaveFormatExtensibleTests.SubTypeFromWaveFormat_ReturnsCorrectGuids
+  commentId: M:SilverCraft.CSCore.Tests.WaveFormatExtensibleTests.SubTypeFromWaveFormat_ReturnsCorrectGuids
+  id: SubTypeFromWaveFormat_ReturnsCorrectGuids
+  parent: SilverCraft.CSCore.Tests.WaveFormatExtensibleTests
+  langs:
+  - csharp
+  - vb
+  name: SubTypeFromWaveFormat_ReturnsCorrectGuids()
+  nameWithType: WaveFormatExtensibleTests.SubTypeFromWaveFormat_ReturnsCorrectGuids()
+  fullName: SilverCraft.CSCore.Tests.WaveFormatExtensibleTests.SubTypeFromWaveFormat_ReturnsCorrectGuids()
+  type: Method
+  source:
+    remote:
+      path: SilverCraft.CSCore.Tests/WaveFormatExtensibleTests.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: SubTypeFromWaveFormat_ReturnsCorrectGuids
+    path: ../SilverCraft.CSCore.Tests/WaveFormatExtensibleTests.cs
+    startLine: 35
+  assemblies:
+  - SilverCraft.CSCore.Tests
+  namespace: SilverCraft.CSCore.Tests
+  syntax:
+    content: >-
+      [Fact]
+
+      public void SubTypeFromWaveFormat_ReturnsCorrectGuids()
+    content.vb: >-
+      <Fact>
+
+      Public Sub SubTypeFromWaveFormat_ReturnsCorrectGuids()
+  overload: SilverCraft.CSCore.Tests.WaveFormatExtensibleTests.SubTypeFromWaveFormat_ReturnsCorrectGuids*
+  attributes:
+  - type: Xunit.FactAttribute
+    ctor: Xunit.FactAttribute.#ctor
+    arguments: []
+- uid: SilverCraft.CSCore.Tests.WaveFormatExtensibleTests.ToWaveFormat_ConvertsBackToStandardWaveFormat
+  commentId: M:SilverCraft.CSCore.Tests.WaveFormatExtensibleTests.ToWaveFormat_ConvertsBackToStandardWaveFormat
+  id: ToWaveFormat_ConvertsBackToStandardWaveFormat
+  parent: SilverCraft.CSCore.Tests.WaveFormatExtensibleTests
+  langs:
+  - csharp
+  - vb
+  name: ToWaveFormat_ConvertsBackToStandardWaveFormat()
+  nameWithType: WaveFormatExtensibleTests.ToWaveFormat_ConvertsBackToStandardWaveFormat()
+  fullName: SilverCraft.CSCore.Tests.WaveFormatExtensibleTests.ToWaveFormat_ConvertsBackToStandardWaveFormat()
+  type: Method
+  source:
+    remote:
+      path: SilverCraft.CSCore.Tests/WaveFormatExtensibleTests.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: ToWaveFormat_ConvertsBackToStandardWaveFormat
+    path: ../SilverCraft.CSCore.Tests/WaveFormatExtensibleTests.cs
+    startLine: 48
+  assemblies:
+  - SilverCraft.CSCore.Tests
+  namespace: SilverCraft.CSCore.Tests
+  syntax:
+    content: >-
+      [Fact]
+
+      public void ToWaveFormat_ConvertsBackToStandardWaveFormat()
+    content.vb: >-
+      <Fact>
+
+      Public Sub ToWaveFormat_ConvertsBackToStandardWaveFormat()
+  overload: SilverCraft.CSCore.Tests.WaveFormatExtensibleTests.ToWaveFormat_ConvertsBackToStandardWaveFormat*
+  attributes:
+  - type: Xunit.FactAttribute
+    ctor: Xunit.FactAttribute.#ctor
+    arguments: []
+- uid: SilverCraft.CSCore.Tests.WaveFormatExtensibleTests.ValidBitsPerSample_InitializesToBits
+  commentId: M:SilverCraft.CSCore.Tests.WaveFormatExtensibleTests.ValidBitsPerSample_InitializesToBits
+  id: ValidBitsPerSample_InitializesToBits
+  parent: SilverCraft.CSCore.Tests.WaveFormatExtensibleTests
+  langs:
+  - csharp
+  - vb
+  name: ValidBitsPerSample_InitializesToBits()
+  nameWithType: WaveFormatExtensibleTests.ValidBitsPerSample_InitializesToBits()
+  fullName: SilverCraft.CSCore.Tests.WaveFormatExtensibleTests.ValidBitsPerSample_InitializesToBits()
+  type: Method
+  source:
+    remote:
+      path: SilverCraft.CSCore.Tests/WaveFormatExtensibleTests.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: ValidBitsPerSample_InitializesToBits
+    path: ../SilverCraft.CSCore.Tests/WaveFormatExtensibleTests.cs
+    startLine: 60
+  assemblies:
+  - SilverCraft.CSCore.Tests
+  namespace: SilverCraft.CSCore.Tests
+  syntax:
+    content: >-
+      [Fact]
+
+      public void ValidBitsPerSample_InitializesToBits()
+    content.vb: >-
+      <Fact>
+
+      Public Sub ValidBitsPerSample_InitializesToBits()
+  overload: SilverCraft.CSCore.Tests.WaveFormatExtensibleTests.ValidBitsPerSample_InitializesToBits*
+  attributes:
+  - type: Xunit.FactAttribute
+    ctor: Xunit.FactAttribute.#ctor
+    arguments: []
+references:
+- uid: SilverCraft.CSCore.Tests
+  commentId: N:SilverCraft.CSCore.Tests
+  href: SilverCraft.html
+  name: SilverCraft.CSCore.Tests
+  nameWithType: SilverCraft.CSCore.Tests
+  fullName: SilverCraft.CSCore.Tests
+  spec.csharp:
+  - uid: SilverCraft
+    name: SilverCraft
+    href: SilverCraft.html
+  - name: .
+  - uid: SilverCraft.CSCore
+    name: CSCore
+    href: SilverCraft.CSCore.html
+  - name: .
+  - uid: SilverCraft.CSCore.Tests
+    name: Tests
+    href: SilverCraft.CSCore.Tests.html
+  spec.vb:
+  - uid: SilverCraft
+    name: SilverCraft
+    href: SilverCraft.html
+  - name: .
+  - uid: SilverCraft.CSCore
+    name: CSCore
+    href: SilverCraft.CSCore.html
+  - name: .
+  - uid: SilverCraft.CSCore.Tests
+    name: Tests
+    href: SilverCraft.CSCore.Tests.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: SilverCraft.CSCore.Tests.WaveFormatExtensibleTests.SilverCraft.CSCore.FluentExtensions.Synchronized``2
+  commentId: M:SilverCraft.CSCore.FluentExtensions.Synchronized``2(``0)
+  parent: SilverCraft.CSCore.FluentExtensions
+  definition: SilverCraft.CSCore.FluentExtensions.Synchronized``2(``0)
+  href: SilverCraft.CSCore.FluentExtensions.html#SilverCraft_CSCore_FluentExtensions_Synchronized__2___0_
+  name: Synchronized<WaveFormatExtensibleTests, T>(WaveFormatExtensibleTests)
+  nameWithType: FluentExtensions.Synchronized<WaveFormatExtensibleTests, T>(WaveFormatExtensibleTests)
+  fullName: SilverCraft.CSCore.FluentExtensions.Synchronized<SilverCraft.CSCore.Tests.WaveFormatExtensibleTests, T>(SilverCraft.CSCore.Tests.WaveFormatExtensibleTests)
+  nameWithType.vb: FluentExtensions.Synchronized(Of WaveFormatExtensibleTests, T)(WaveFormatExtensibleTests)
+  fullName.vb: SilverCraft.CSCore.FluentExtensions.Synchronized(Of SilverCraft.CSCore.Tests.WaveFormatExtensibleTests, T)(SilverCraft.CSCore.Tests.WaveFormatExtensibleTests)
+  name.vb: Synchronized(Of WaveFormatExtensibleTests, T)(WaveFormatExtensibleTests)
+  spec.csharp:
+  - uid: SilverCraft.CSCore.FluentExtensions.Synchronized``2(SilverCraft.CSCore.Tests.WaveFormatExtensibleTests)
+    name: Synchronized
+    href: SilverCraft.CSCore.FluentExtensions.html#SilverCraft_CSCore_FluentExtensions_Synchronized__2___0_
+  - name: <
+  - uid: SilverCraft.CSCore.Tests.WaveFormatExtensibleTests
+    name: WaveFormatExtensibleTests
+    href: SilverCraft.CSCore.Tests.WaveFormatExtensibleTests.html
+  - name: ','
+  - name: " "
+  - name: T
+  - name: '>'
+  - name: (
+  - uid: SilverCraft.CSCore.Tests.WaveFormatExtensibleTests
+    name: WaveFormatExtensibleTests
+    href: SilverCraft.CSCore.Tests.WaveFormatExtensibleTests.html
+  - name: )
+  spec.vb:
+  - uid: SilverCraft.CSCore.FluentExtensions.Synchronized``2(SilverCraft.CSCore.Tests.WaveFormatExtensibleTests)
+    name: Synchronized
+    href: SilverCraft.CSCore.FluentExtensions.html#SilverCraft_CSCore_FluentExtensions_Synchronized__2___0_
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: SilverCraft.CSCore.Tests.WaveFormatExtensibleTests
+    name: WaveFormatExtensibleTests
+    href: SilverCraft.CSCore.Tests.WaveFormatExtensibleTests.html
+  - name: ','
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: SilverCraft.CSCore.Tests.WaveFormatExtensibleTests
+    name: WaveFormatExtensibleTests
+    href: SilverCraft.CSCore.Tests.WaveFormatExtensibleTests.html
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: SilverCraft.CSCore.FluentExtensions.Synchronized``2(``0)
+  commentId: M:SilverCraft.CSCore.FluentExtensions.Synchronized``2(``0)
+  href: SilverCraft.CSCore.FluentExtensions.html#SilverCraft_CSCore_FluentExtensions_Synchronized__2___0_
+  name: Synchronized<TAudioSource, T>(TAudioSource)
+  nameWithType: FluentExtensions.Synchronized<TAudioSource, T>(TAudioSource)
+  fullName: SilverCraft.CSCore.FluentExtensions.Synchronized<TAudioSource, T>(TAudioSource)
+  nameWithType.vb: FluentExtensions.Synchronized(Of TAudioSource, T)(TAudioSource)
+  fullName.vb: SilverCraft.CSCore.FluentExtensions.Synchronized(Of TAudioSource, T)(TAudioSource)
+  name.vb: Synchronized(Of TAudioSource, T)(TAudioSource)
+  spec.csharp:
+  - uid: SilverCraft.CSCore.FluentExtensions.Synchronized``2(``0)
+    name: Synchronized
+    href: SilverCraft.CSCore.FluentExtensions.html#SilverCraft_CSCore_FluentExtensions_Synchronized__2___0_
+  - name: <
+  - name: TAudioSource
+  - name: ','
+  - name: " "
+  - name: T
+  - name: '>'
+  - name: (
+  - name: TAudioSource
+  - name: )
+  spec.vb:
+  - uid: SilverCraft.CSCore.FluentExtensions.Synchronized``2(``0)
+    name: Synchronized
+    href: SilverCraft.CSCore.FluentExtensions.html#SilverCraft_CSCore_FluentExtensions_Synchronized__2___0_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TAudioSource
+  - name: ','
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - name: TAudioSource
+  - name: )
+- uid: SilverCraft.CSCore.FluentExtensions
+  commentId: T:SilverCraft.CSCore.FluentExtensions
+  parent: SilverCraft.CSCore
+  href: SilverCraft.CSCore.FluentExtensions.html
+  name: FluentExtensions
+  nameWithType: FluentExtensions
+  fullName: SilverCraft.CSCore.FluentExtensions
+- uid: SilverCraft.CSCore
+  commentId: N:SilverCraft.CSCore
+  href: SilverCraft.html
+  name: SilverCraft.CSCore
+  nameWithType: SilverCraft.CSCore
+  fullName: SilverCraft.CSCore
+  spec.csharp:
+  - uid: SilverCraft
+    name: SilverCraft
+    href: SilverCraft.html
+  - name: .
+  - uid: SilverCraft.CSCore
+    name: CSCore
+    href: SilverCraft.CSCore.html
+  spec.vb:
+  - uid: SilverCraft
+    name: SilverCraft
+    href: SilverCraft.html
+  - name: .
+  - uid: SilverCraft.CSCore
+    name: CSCore
+    href: SilverCraft.CSCore.html
+- uid: SilverCraft.CSCore.Tests.WaveFormatExtensibleTests.Constructor_WithValidChannelMask_InitializesCorrectly*
+  commentId: Overload:SilverCraft.CSCore.Tests.WaveFormatExtensibleTests.Constructor_WithValidChannelMask_InitializesCorrectly
+  href: SilverCraft.CSCore.Tests.WaveFormatExtensibleTests.html#SilverCraft_CSCore_Tests_WaveFormatExtensibleTests_Constructor_WithValidChannelMask_InitializesCorrectly
+  name: Constructor_WithValidChannelMask_InitializesCorrectly
+  nameWithType: WaveFormatExtensibleTests.Constructor_WithValidChannelMask_InitializesCorrectly
+  fullName: SilverCraft.CSCore.Tests.WaveFormatExtensibleTests.Constructor_WithValidChannelMask_InitializesCorrectly
+- uid: SilverCraft.CSCore.Tests.WaveFormatExtensibleTests.Constructor_MismatchedChannelMask_ThrowsArgumentException*
+  commentId: Overload:SilverCraft.CSCore.Tests.WaveFormatExtensibleTests.Constructor_MismatchedChannelMask_ThrowsArgumentException
+  href: SilverCraft.CSCore.Tests.WaveFormatExtensibleTests.html#SilverCraft_CSCore_Tests_WaveFormatExtensibleTests_Constructor_MismatchedChannelMask_ThrowsArgumentException
+  name: Constructor_MismatchedChannelMask_ThrowsArgumentException
+  nameWithType: WaveFormatExtensibleTests.Constructor_MismatchedChannelMask_ThrowsArgumentException
+  fullName: SilverCraft.CSCore.Tests.WaveFormatExtensibleTests.Constructor_MismatchedChannelMask_ThrowsArgumentException
+- uid: SilverCraft.CSCore.Tests.WaveFormatExtensibleTests.SubTypeFromWaveFormat_ReturnsCorrectGuids*
+  commentId: Overload:SilverCraft.CSCore.Tests.WaveFormatExtensibleTests.SubTypeFromWaveFormat_ReturnsCorrectGuids
+  href: SilverCraft.CSCore.Tests.WaveFormatExtensibleTests.html#SilverCraft_CSCore_Tests_WaveFormatExtensibleTests_SubTypeFromWaveFormat_ReturnsCorrectGuids
+  name: SubTypeFromWaveFormat_ReturnsCorrectGuids
+  nameWithType: WaveFormatExtensibleTests.SubTypeFromWaveFormat_ReturnsCorrectGuids
+  fullName: SilverCraft.CSCore.Tests.WaveFormatExtensibleTests.SubTypeFromWaveFormat_ReturnsCorrectGuids
+- uid: SilverCraft.CSCore.Tests.WaveFormatExtensibleTests.ToWaveFormat_ConvertsBackToStandardWaveFormat*
+  commentId: Overload:SilverCraft.CSCore.Tests.WaveFormatExtensibleTests.ToWaveFormat_ConvertsBackToStandardWaveFormat
+  href: SilverCraft.CSCore.Tests.WaveFormatExtensibleTests.html#SilverCraft_CSCore_Tests_WaveFormatExtensibleTests_ToWaveFormat_ConvertsBackToStandardWaveFormat
+  name: ToWaveFormat_ConvertsBackToStandardWaveFormat
+  nameWithType: WaveFormatExtensibleTests.ToWaveFormat_ConvertsBackToStandardWaveFormat
+  fullName: SilverCraft.CSCore.Tests.WaveFormatExtensibleTests.ToWaveFormat_ConvertsBackToStandardWaveFormat
+- uid: SilverCraft.CSCore.Tests.WaveFormatExtensibleTests.ValidBitsPerSample_InitializesToBits*
+  commentId: Overload:SilverCraft.CSCore.Tests.WaveFormatExtensibleTests.ValidBitsPerSample_InitializesToBits
+  href: SilverCraft.CSCore.Tests.WaveFormatExtensibleTests.html#SilverCraft_CSCore_Tests_WaveFormatExtensibleTests_ValidBitsPerSample_InitializesToBits
+  name: ValidBitsPerSample_InitializesToBits
+  nameWithType: WaveFormatExtensibleTests.ValidBitsPerSample_InitializesToBits
+  fullName: SilverCraft.CSCore.Tests.WaveFormatExtensibleTests.ValidBitsPerSample_InitializesToBits

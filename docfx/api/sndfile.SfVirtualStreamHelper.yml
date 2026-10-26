@@ -98,7 +98,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: Virtual
     path: ../SilverCraft.SndFile/Native/SF_VIRTUAL_IO.cs
-    startLine: 21
+    startLine: 20
   assemblies:
   - SilverCraft.CSCore.SndFile
   namespace: sndfile
@@ -127,7 +127,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: Dispose
     path: ../SilverCraft.SndFile/Native/SF_VIRTUAL_IO.cs
-    startLine: 23
+    startLine: 22
   assemblies:
   - SilverCraft.CSCore.SndFile
   namespace: sndfile

@@ -70,10 +70,8 @@
         /// <returns>The total number of bytes read into the buffer.</returns>
         public virtual int Read(byte[] buffer, int offset, int count)
         {
-            if (offset % WaveFormat.Channels != 0)
-                offset -= offset % WaveFormat.Channels;
-            if (count % WaveFormat.Channels != 0)
-                count -= count % WaveFormat.Channels;
+            if (count % WaveFormat.BlockAlign != 0)
+                count -= count % WaveFormat.BlockAlign;
 
             return BaseSource.Read(buffer, offset, count);
         }

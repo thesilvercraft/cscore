@@ -17,14 +17,14 @@ items:
   type: Struct
   source:
     remote:
-      path: SilverCraft.CSCore.PortAudio/Native/PaStreamCallbackTimeInfo.cs
+      path: SilverCraft.CSCore/PortAudio/Native/PaStreamCallbackTimeInfo.cs
       branch: master
       repo: https://github.com/thesilvercraft/cscore
     id: PaStreamCallbackTimeInfo
-    path: ../SilverCraft.CSCore.PortAudio/Native/PaStreamCallbackTimeInfo.cs
+    path: ../SilverCraft.CSCore/PortAudio/Native/PaStreamCallbackTimeInfo.cs
     startLine: 2
   assemblies:
-  - SilverCraft.CSCore.PortAudio
+  - SilverCraft.CSCore
   namespace: SilverCraft.CSCore.PortAudio.Native
   syntax:
     content: public struct PaStreamCallbackTimeInfo
@@ -49,14 +49,14 @@ items:
   type: Field
   source:
     remote:
-      path: SilverCraft.CSCore.PortAudio/Native/PaStreamCallbackTimeInfo.cs
+      path: SilverCraft.CSCore/PortAudio/Native/PaStreamCallbackTimeInfo.cs
       branch: master
       repo: https://github.com/thesilvercraft/cscore
     id: inputBufferAdcTime
-    path: ../SilverCraft.CSCore.PortAudio/Native/PaStreamCallbackTimeInfo.cs
+    path: ../SilverCraft.CSCore/PortAudio/Native/PaStreamCallbackTimeInfo.cs
     startLine: 5
   assemblies:
-  - SilverCraft.CSCore.PortAudio
+  - SilverCraft.CSCore
   namespace: SilverCraft.CSCore.PortAudio.Native
   syntax:
     content: public double inputBufferAdcTime
@@ -76,14 +76,14 @@ items:
   type: Field
   source:
     remote:
-      path: SilverCraft.CSCore.PortAudio/Native/PaStreamCallbackTimeInfo.cs
+      path: SilverCraft.CSCore/PortAudio/Native/PaStreamCallbackTimeInfo.cs
       branch: master
       repo: https://github.com/thesilvercraft/cscore
     id: currentTime
-    path: ../SilverCraft.CSCore.PortAudio/Native/PaStreamCallbackTimeInfo.cs
+    path: ../SilverCraft.CSCore/PortAudio/Native/PaStreamCallbackTimeInfo.cs
     startLine: 8
   assemblies:
-  - SilverCraft.CSCore.PortAudio
+  - SilverCraft.CSCore
   namespace: SilverCraft.CSCore.PortAudio.Native
   syntax:
     content: public double currentTime
@@ -103,14 +103,14 @@ items:
   type: Field
   source:
     remote:
-      path: SilverCraft.CSCore.PortAudio/Native/PaStreamCallbackTimeInfo.cs
+      path: SilverCraft.CSCore/PortAudio/Native/PaStreamCallbackTimeInfo.cs
       branch: master
       repo: https://github.com/thesilvercraft/cscore
     id: outputBufferDacTime
-    path: ../SilverCraft.CSCore.PortAudio/Native/PaStreamCallbackTimeInfo.cs
+    path: ../SilverCraft.CSCore/PortAudio/Native/PaStreamCallbackTimeInfo.cs
     startLine: 11
   assemblies:
-  - SilverCraft.CSCore.PortAudio
+  - SilverCraft.CSCore
   namespace: SilverCraft.CSCore.PortAudio.Native
   syntax:
     content: public double outputBufferDacTime

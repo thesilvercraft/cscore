@@ -89,12 +89,12 @@
 
 
   <h1 id="SilverCraft_CSCore_PortAudio_PortAudioLifetimeManager" data-uid="SilverCraft.CSCore.PortAudio.PortAudioLifetimeManager" class="text-break">
-Class PortAudioLifetimeManager  <a class="header-action link-secondary" title="View source" href="https://github.com/thesilvercraft/cscore/blob/master/SilverCraft.CSCore.PortAudio/PortAudioLifetimeManager.cs/#L5"><i class="bi bi-code-slash"></i></a>
+Class PortAudioLifetimeManager  <a class="header-action link-secondary" title="View source" href="https://github.com/thesilvercraft/cscore/blob/master/SilverCraft.CSCore/PortAudio/PortAudioLifetimeManager.cs/#L6"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
     <dl><dt>Namespace</dt><dd><a class="xref" href="SilverCraft.html">SilverCraft</a>.<a class="xref" href="SilverCraft.CSCore.html">CSCore</a>.<a class="xref" href="SilverCraft.CSCore.PortAudio.html">PortAudio</a></dd></dl>
-  <dl><dt>Assembly</dt><dd>SilverCraft.CSCore.PortAudio.dll</dd></dl>
+  <dl><dt>Assembly</dt><dd>SilverCraft.CSCore.dll</dd></dl>
   </div>
 
   <div class="markdown summary"></div>
@@ -156,7 +156,7 @@ Class PortAudioLifetimeManager  <a class="header-action link-secondary" title="V
 
   <h3 id="SilverCraft_CSCore_PortAudio_PortAudioLifetimeManager_IPinkyPromiseToTerminatePortAudioMyself" data-uid="SilverCraft.CSCore.PortAudio.PortAudioLifetimeManager.IPinkyPromiseToTerminatePortAudioMyself">
   IPinkyPromiseToTerminatePortAudioMyself()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/thesilvercraft/cscore/blob/master/SilverCraft.CSCore.PortAudio/PortAudioLifetimeManager.cs/#L18"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/thesilvercraft/cscore/blob/master/SilverCraft.CSCore/PortAudio/PortAudioLifetimeManager.cs/#L19"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Prevents the <a class="xref" href="SilverCraft.CSCore.PortAudio.PortAudioLifetimeManager.html">PortAudioLifetimeManager</a> from automatically terminating PortAudio when instances are disposed.</p>
@@ -187,7 +187,7 @@ Call this if you intend to handle the global PortAudio cleanup manually.</p>
 
   <h3 id="SilverCraft_CSCore_PortAudio_PortAudioLifetimeManager_Initialize" data-uid="SilverCraft.CSCore.PortAudio.PortAudioLifetimeManager.Initialize">
   Initialize()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/thesilvercraft/cscore/blob/master/SilverCraft.CSCore.PortAudio/PortAudioLifetimeManager.cs/#L33"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/thesilvercraft/cscore/blob/master/SilverCraft.CSCore/PortAudio/PortAudioLifetimeManager.cs/#L34"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Initializes PortAudio if it has not been initialized already, and increments the internal reference count.</p>
@@ -216,9 +216,9 @@ It is safe to call multiple times, but subsequent calls only increment the refer
 
   <a id="SilverCraft_CSCore_PortAudio_PortAudioLifetimeManager_Terminate_" data-uid="SilverCraft.CSCore.PortAudio.PortAudioLifetimeManager.Terminate*"></a>
 
-  <h3 id="SilverCraft_CSCore_PortAudio_PortAudioLifetimeManager_Terminate_Serilog_ILogger_" data-uid="SilverCraft.CSCore.PortAudio.PortAudioLifetimeManager.Terminate(Serilog.ILogger)">
+  <h3 id="SilverCraft_CSCore_PortAudio_PortAudioLifetimeManager_Terminate_Microsoft_Extensions_Logging_ILogger_" data-uid="SilverCraft.CSCore.PortAudio.PortAudioLifetimeManager.Terminate(Microsoft.Extensions.Logging.ILogger)">
   Terminate(ILogger?)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/thesilvercraft/cscore/blob/master/SilverCraft.CSCore.PortAudio/PortAudioLifetimeManager.cs/#L57"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/thesilvercraft/cscore/blob/master/SilverCraft.CSCore/PortAudio/PortAudioLifetimeManager.cs/#L58"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Terminates the global PortAudio resources and cleans up associated native structures.</p>
@@ -231,7 +231,7 @@ It is safe to call multiple times, but subsequent calls only increment the refer
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
-    <dt><code>log</code> <span class="xref">ILogger</span></dt>
+    <dt><code>log</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.ilogger">ILogger</a></dt>
     <dd><p>An optional logger used to record any errors encountered during the native PortAudio shutdown process.</p>
 </dd>
   </dl>
@@ -243,7 +243,7 @@ It is safe to call multiple times, but subsequent calls only increment the refer
 
 
 
-  <h4 class="section" id="SilverCraft_CSCore_PortAudio_PortAudioLifetimeManager_Terminate_Serilog_ILogger__remarks">Remarks</h4>
+  <h4 class="section" id="SilverCraft_CSCore_PortAudio_PortAudioLifetimeManager_Terminate_Microsoft_Extensions_Logging_ILogger__remarks">Remarks</h4>
   <div class="markdown level1 remarks"><p>This method safely decrements an internal reference count. Termination only proceeds if the reference count reaches zero and the termination is not manually disabled via <a class="xref" href="SilverCraft.CSCore.PortAudio.PortAudioLifetimeManager.html#SilverCraft_CSCore_PortAudio_PortAudioLifetimeManager_IPinkyPromiseToTerminatePortAudioMyself">IPinkyPromiseToTerminatePortAudioMyself()</a>.
 If termination occurs, it calls the native PortAudio termination function (<a class="xref" href="SilverCraft.CSCore.PortAudio.Native.NativeMethods.html#SilverCraft_CSCore_PortAudio_Native_NativeMethods_Pa_Terminate">Pa_Terminate()</a>).</p>
 </div>
@@ -255,7 +255,7 @@ If termination occurs, it calls the native PortAudio termination function (<a cl
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/thesilvercraft/cscore/blob/master/SilverCraft.CSCore.PortAudio/PortAudioLifetimeManager.cs/#L5" class="edit-link">Edit this page</a>
+          <a href="https://github.com/thesilvercraft/cscore/blob/master/SilverCraft.CSCore/PortAudio/PortAudioLifetimeManager.cs/#L6" class="edit-link">Edit this page</a>
         </div>
 
 

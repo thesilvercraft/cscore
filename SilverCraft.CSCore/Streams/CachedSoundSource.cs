@@ -41,9 +41,12 @@ namespace SilverCraft.CSCore.Streams
             var count = (int)Math.Min(source.WaveFormat.BytesPerSecond * 5, source.Length);
             var buffer = new byte[count];
 
-            long position = 0;
-            if(source.CanSeek)
-                position = source.Position;
+            long originalPosition = 0;
+            if (source.CanSeek)
+            {
+                originalPosition = source.Position;
+                source.Position = 0; 
+            }
 
             while((read = source.Read(buffer, 0, count)) > 0)
             {
@@ -52,13 +55,10 @@ namespace SilverCraft.CSCore.Streams
 
             if (source.CanSeek)
             {
-                source.Position = position;
-                _cache.Position = source.Position;
+                source.Position = originalPosition;
             }
-            else
-            {
-                _cache.Position = 0;
-            }
+
+            _cache.Position = 0;
         }
 
         /// <summary>

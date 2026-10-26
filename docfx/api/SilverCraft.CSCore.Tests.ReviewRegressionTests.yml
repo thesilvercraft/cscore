@@ -1,0 +1,568 @@
+### YamlMime:ManagedReference
+items:
+- uid: SilverCraft.CSCore.Tests.ReviewRegressionTests
+  commentId: T:SilverCraft.CSCore.Tests.ReviewRegressionTests
+  id: ReviewRegressionTests
+  parent: SilverCraft.CSCore.Tests
+  children:
+  - SilverCraft.CSCore.Tests.ReviewRegressionTests.ID3v2_FromStream_HandlesPartialReadsOfTagPayload
+  - SilverCraft.CSCore.Tests.ReviewRegressionTests.MonoToStereo_Position_IsMeasuredInOutputSamples
+  - SilverCraft.CSCore.Tests.ReviewRegressionTests.StereoToMono_Position_IsMeasuredInMonoSamples
+  - SilverCraft.CSCore.Tests.ReviewRegressionTests.WaveWriter_OverwritingShorterFile_TruncatesOldTail
+  langs:
+  - csharp
+  - vb
+  name: ReviewRegressionTests
+  nameWithType: ReviewRegressionTests
+  fullName: SilverCraft.CSCore.Tests.ReviewRegressionTests
+  type: Class
+  source:
+    remote:
+      path: SilverCraft.CSCore.Tests/ReviewRegressionTests.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: ReviewRegressionTests
+    path: ../SilverCraft.CSCore.Tests/ReviewRegressionTests.cs
+    startLine: 7
+  assemblies:
+  - SilverCraft.CSCore.Tests
+  namespace: SilverCraft.CSCore.Tests
+  syntax:
+    content: public sealed class ReviewRegressionTests
+    content.vb: Public NotInheritable Class ReviewRegressionTests
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  extensionMethods:
+  - SilverCraft.CSCore.Tests.ReviewRegressionTests.SilverCraft.CSCore.FluentExtensions.Synchronized``2
+- uid: SilverCraft.CSCore.Tests.ReviewRegressionTests.WaveWriter_OverwritingShorterFile_TruncatesOldTail
+  commentId: M:SilverCraft.CSCore.Tests.ReviewRegressionTests.WaveWriter_OverwritingShorterFile_TruncatesOldTail
+  id: WaveWriter_OverwritingShorterFile_TruncatesOldTail
+  parent: SilverCraft.CSCore.Tests.ReviewRegressionTests
+  langs:
+  - csharp
+  - vb
+  name: WaveWriter_OverwritingShorterFile_TruncatesOldTail()
+  nameWithType: ReviewRegressionTests.WaveWriter_OverwritingShorterFile_TruncatesOldTail()
+  fullName: SilverCraft.CSCore.Tests.ReviewRegressionTests.WaveWriter_OverwritingShorterFile_TruncatesOldTail()
+  type: Method
+  source:
+    remote:
+      path: SilverCraft.CSCore.Tests/ReviewRegressionTests.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: WaveWriter_OverwritingShorterFile_TruncatesOldTail
+    path: ../SilverCraft.CSCore.Tests/ReviewRegressionTests.cs
+    startLine: 9
+  assemblies:
+  - SilverCraft.CSCore.Tests
+  namespace: SilverCraft.CSCore.Tests
+  syntax:
+    content: >-
+      [Fact]
+
+      public void WaveWriter_OverwritingShorterFile_TruncatesOldTail()
+    content.vb: >-
+      <Fact>
+
+      Public Sub WaveWriter_OverwritingShorterFile_TruncatesOldTail()
+  overload: SilverCraft.CSCore.Tests.ReviewRegressionTests.WaveWriter_OverwritingShorterFile_TruncatesOldTail*
+  attributes:
+  - type: Xunit.FactAttribute
+    ctor: Xunit.FactAttribute.#ctor
+    arguments: []
+- uid: SilverCraft.CSCore.Tests.ReviewRegressionTests.StereoToMono_Position_IsMeasuredInMonoSamples
+  commentId: M:SilverCraft.CSCore.Tests.ReviewRegressionTests.StereoToMono_Position_IsMeasuredInMonoSamples
+  id: StereoToMono_Position_IsMeasuredInMonoSamples
+  parent: SilverCraft.CSCore.Tests.ReviewRegressionTests
+  langs:
+  - csharp
+  - vb
+  name: StereoToMono_Position_IsMeasuredInMonoSamples()
+  nameWithType: ReviewRegressionTests.StereoToMono_Position_IsMeasuredInMonoSamples()
+  fullName: SilverCraft.CSCore.Tests.ReviewRegressionTests.StereoToMono_Position_IsMeasuredInMonoSamples()
+  type: Method
+  source:
+    remote:
+      path: SilverCraft.CSCore.Tests/ReviewRegressionTests.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: StereoToMono_Position_IsMeasuredInMonoSamples
+    path: ../SilverCraft.CSCore.Tests/ReviewRegressionTests.cs
+    startLine: 35
+  assemblies:
+  - SilverCraft.CSCore.Tests
+  namespace: SilverCraft.CSCore.Tests
+  syntax:
+    content: >-
+      [Fact]
+
+      public void StereoToMono_Position_IsMeasuredInMonoSamples()
+    content.vb: >-
+      <Fact>
+
+      Public Sub StereoToMono_Position_IsMeasuredInMonoSamples()
+  overload: SilverCraft.CSCore.Tests.ReviewRegressionTests.StereoToMono_Position_IsMeasuredInMonoSamples*
+  attributes:
+  - type: Xunit.FactAttribute
+    ctor: Xunit.FactAttribute.#ctor
+    arguments: []
+- uid: SilverCraft.CSCore.Tests.ReviewRegressionTests.MonoToStereo_Position_IsMeasuredInOutputSamples
+  commentId: M:SilverCraft.CSCore.Tests.ReviewRegressionTests.MonoToStereo_Position_IsMeasuredInOutputSamples
+  id: MonoToStereo_Position_IsMeasuredInOutputSamples
+  parent: SilverCraft.CSCore.Tests.ReviewRegressionTests
+  langs:
+  - csharp
+  - vb
+  name: MonoToStereo_Position_IsMeasuredInOutputSamples()
+  nameWithType: ReviewRegressionTests.MonoToStereo_Position_IsMeasuredInOutputSamples()
+  fullName: SilverCraft.CSCore.Tests.ReviewRegressionTests.MonoToStereo_Position_IsMeasuredInOutputSamples()
+  type: Method
+  source:
+    remote:
+      path: SilverCraft.CSCore.Tests/ReviewRegressionTests.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: MonoToStereo_Position_IsMeasuredInOutputSamples
+    path: ../SilverCraft.CSCore.Tests/ReviewRegressionTests.cs
+    startLine: 48
+  assemblies:
+  - SilverCraft.CSCore.Tests
+  namespace: SilverCraft.CSCore.Tests
+  syntax:
+    content: >-
+      [Fact]
+
+      public void MonoToStereo_Position_IsMeasuredInOutputSamples()
+    content.vb: >-
+      <Fact>
+
+      Public Sub MonoToStereo_Position_IsMeasuredInOutputSamples()
+  overload: SilverCraft.CSCore.Tests.ReviewRegressionTests.MonoToStereo_Position_IsMeasuredInOutputSamples*
+  attributes:
+  - type: Xunit.FactAttribute
+    ctor: Xunit.FactAttribute.#ctor
+    arguments: []
+- uid: SilverCraft.CSCore.Tests.ReviewRegressionTests.ID3v2_FromStream_HandlesPartialReadsOfTagPayload
+  commentId: M:SilverCraft.CSCore.Tests.ReviewRegressionTests.ID3v2_FromStream_HandlesPartialReadsOfTagPayload
+  id: ID3v2_FromStream_HandlesPartialReadsOfTagPayload
+  parent: SilverCraft.CSCore.Tests.ReviewRegressionTests
+  langs:
+  - csharp
+  - vb
+  name: ID3v2_FromStream_HandlesPartialReadsOfTagPayload()
+  nameWithType: ReviewRegressionTests.ID3v2_FromStream_HandlesPartialReadsOfTagPayload()
+  fullName: SilverCraft.CSCore.Tests.ReviewRegressionTests.ID3v2_FromStream_HandlesPartialReadsOfTagPayload()
+  type: Method
+  source:
+    remote:
+      path: SilverCraft.CSCore.Tests/ReviewRegressionTests.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: ID3v2_FromStream_HandlesPartialReadsOfTagPayload
+    path: ../SilverCraft.CSCore.Tests/ReviewRegressionTests.cs
+    startLine: 60
+  assemblies:
+  - SilverCraft.CSCore.Tests
+  namespace: SilverCraft.CSCore.Tests
+  syntax:
+    content: >-
+      [Fact]
+
+      public void ID3v2_FromStream_HandlesPartialReadsOfTagPayload()
+    content.vb: >-
+      <Fact>
+
+      Public Sub ID3v2_FromStream_HandlesPartialReadsOfTagPayload()
+  overload: SilverCraft.CSCore.Tests.ReviewRegressionTests.ID3v2_FromStream_HandlesPartialReadsOfTagPayload*
+  attributes:
+  - type: Xunit.FactAttribute
+    ctor: Xunit.FactAttribute.#ctor
+    arguments: []
+references:
+- uid: SilverCraft.CSCore.Tests
+  commentId: N:SilverCraft.CSCore.Tests
+  href: SilverCraft.html
+  name: SilverCraft.CSCore.Tests
+  nameWithType: SilverCraft.CSCore.Tests
+  fullName: SilverCraft.CSCore.Tests
+  spec.csharp:
+  - uid: SilverCraft
+    name: SilverCraft
+    href: SilverCraft.html
+  - name: .
+  - uid: SilverCraft.CSCore
+    name: CSCore
+    href: SilverCraft.CSCore.html
+  - name: .
+  - uid: SilverCraft.CSCore.Tests
+    name: Tests
+    href: SilverCraft.CSCore.Tests.html
+  spec.vb:
+  - uid: SilverCraft
+    name: SilverCraft
+    href: SilverCraft.html
+  - name: .
+  - uid: SilverCraft.CSCore
+    name: CSCore
+    href: SilverCraft.CSCore.html
+  - name: .
+  - uid: SilverCraft.CSCore.Tests
+    name: Tests
+    href: SilverCraft.CSCore.Tests.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: SilverCraft.CSCore.Tests.ReviewRegressionTests.SilverCraft.CSCore.FluentExtensions.Synchronized``2
+  commentId: M:SilverCraft.CSCore.FluentExtensions.Synchronized``2(``0)
+  parent: SilverCraft.CSCore.FluentExtensions
+  definition: SilverCraft.CSCore.FluentExtensions.Synchronized``2(``0)
+  href: SilverCraft.CSCore.FluentExtensions.html#SilverCraft_CSCore_FluentExtensions_Synchronized__2___0_
+  name: Synchronized<ReviewRegressionTests, T>(ReviewRegressionTests)
+  nameWithType: FluentExtensions.Synchronized<ReviewRegressionTests, T>(ReviewRegressionTests)
+  fullName: SilverCraft.CSCore.FluentExtensions.Synchronized<SilverCraft.CSCore.Tests.ReviewRegressionTests, T>(SilverCraft.CSCore.Tests.ReviewRegressionTests)
+  nameWithType.vb: FluentExtensions.Synchronized(Of ReviewRegressionTests, T)(ReviewRegressionTests)
+  fullName.vb: SilverCraft.CSCore.FluentExtensions.Synchronized(Of SilverCraft.CSCore.Tests.ReviewRegressionTests, T)(SilverCraft.CSCore.Tests.ReviewRegressionTests)
+  name.vb: Synchronized(Of ReviewRegressionTests, T)(ReviewRegressionTests)
+  spec.csharp:
+  - uid: SilverCraft.CSCore.FluentExtensions.Synchronized``2(SilverCraft.CSCore.Tests.ReviewRegressionTests)
+    name: Synchronized
+    href: SilverCraft.CSCore.FluentExtensions.html#SilverCraft_CSCore_FluentExtensions_Synchronized__2___0_
+  - name: <
+  - uid: SilverCraft.CSCore.Tests.ReviewRegressionTests
+    name: ReviewRegressionTests
+    href: SilverCraft.CSCore.Tests.ReviewRegressionTests.html
+  - name: ','
+  - name: " "
+  - name: T
+  - name: '>'
+  - name: (
+  - uid: SilverCraft.CSCore.Tests.ReviewRegressionTests
+    name: ReviewRegressionTests
+    href: SilverCraft.CSCore.Tests.ReviewRegressionTests.html
+  - name: )
+  spec.vb:
+  - uid: SilverCraft.CSCore.FluentExtensions.Synchronized``2(SilverCraft.CSCore.Tests.ReviewRegressionTests)
+    name: Synchronized
+    href: SilverCraft.CSCore.FluentExtensions.html#SilverCraft_CSCore_FluentExtensions_Synchronized__2___0_
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: SilverCraft.CSCore.Tests.ReviewRegressionTests
+    name: ReviewRegressionTests
+    href: SilverCraft.CSCore.Tests.ReviewRegressionTests.html
+  - name: ','
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: SilverCraft.CSCore.Tests.ReviewRegressionTests
+    name: ReviewRegressionTests
+    href: SilverCraft.CSCore.Tests.ReviewRegressionTests.html
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: SilverCraft.CSCore.FluentExtensions.Synchronized``2(``0)
+  commentId: M:SilverCraft.CSCore.FluentExtensions.Synchronized``2(``0)
+  href: SilverCraft.CSCore.FluentExtensions.html#SilverCraft_CSCore_FluentExtensions_Synchronized__2___0_
+  name: Synchronized<TAudioSource, T>(TAudioSource)
+  nameWithType: FluentExtensions.Synchronized<TAudioSource, T>(TAudioSource)
+  fullName: SilverCraft.CSCore.FluentExtensions.Synchronized<TAudioSource, T>(TAudioSource)
+  nameWithType.vb: FluentExtensions.Synchronized(Of TAudioSource, T)(TAudioSource)
+  fullName.vb: SilverCraft.CSCore.FluentExtensions.Synchronized(Of TAudioSource, T)(TAudioSource)
+  name.vb: Synchronized(Of TAudioSource, T)(TAudioSource)
+  spec.csharp:
+  - uid: SilverCraft.CSCore.FluentExtensions.Synchronized``2(``0)
+    name: Synchronized
+    href: SilverCraft.CSCore.FluentExtensions.html#SilverCraft_CSCore_FluentExtensions_Synchronized__2___0_
+  - name: <
+  - name: TAudioSource
+  - name: ','
+  - name: " "
+  - name: T
+  - name: '>'
+  - name: (
+  - name: TAudioSource
+  - name: )
+  spec.vb:
+  - uid: SilverCraft.CSCore.FluentExtensions.Synchronized``2(``0)
+    name: Synchronized
+    href: SilverCraft.CSCore.FluentExtensions.html#SilverCraft_CSCore_FluentExtensions_Synchronized__2___0_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TAudioSource
+  - name: ','
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - name: TAudioSource
+  - name: )
+- uid: SilverCraft.CSCore.FluentExtensions
+  commentId: T:SilverCraft.CSCore.FluentExtensions
+  parent: SilverCraft.CSCore
+  href: SilverCraft.CSCore.FluentExtensions.html
+  name: FluentExtensions
+  nameWithType: FluentExtensions
+  fullName: SilverCraft.CSCore.FluentExtensions
+- uid: SilverCraft.CSCore
+  commentId: N:SilverCraft.CSCore
+  href: SilverCraft.html
+  name: SilverCraft.CSCore
+  nameWithType: SilverCraft.CSCore
+  fullName: SilverCraft.CSCore
+  spec.csharp:
+  - uid: SilverCraft
+    name: SilverCraft
+    href: SilverCraft.html
+  - name: .
+  - uid: SilverCraft.CSCore
+    name: CSCore
+    href: SilverCraft.CSCore.html
+  spec.vb:
+  - uid: SilverCraft
+    name: SilverCraft
+    href: SilverCraft.html
+  - name: .
+  - uid: SilverCraft.CSCore
+    name: CSCore
+    href: SilverCraft.CSCore.html
+- uid: SilverCraft.CSCore.Tests.ReviewRegressionTests.WaveWriter_OverwritingShorterFile_TruncatesOldTail*
+  commentId: Overload:SilverCraft.CSCore.Tests.ReviewRegressionTests.WaveWriter_OverwritingShorterFile_TruncatesOldTail
+  href: SilverCraft.CSCore.Tests.ReviewRegressionTests.html#SilverCraft_CSCore_Tests_ReviewRegressionTests_WaveWriter_OverwritingShorterFile_TruncatesOldTail
+  name: WaveWriter_OverwritingShorterFile_TruncatesOldTail
+  nameWithType: ReviewRegressionTests.WaveWriter_OverwritingShorterFile_TruncatesOldTail
+  fullName: SilverCraft.CSCore.Tests.ReviewRegressionTests.WaveWriter_OverwritingShorterFile_TruncatesOldTail
+- uid: SilverCraft.CSCore.Tests.ReviewRegressionTests.StereoToMono_Position_IsMeasuredInMonoSamples*
+  commentId: Overload:SilverCraft.CSCore.Tests.ReviewRegressionTests.StereoToMono_Position_IsMeasuredInMonoSamples
+  href: SilverCraft.CSCore.Tests.ReviewRegressionTests.html#SilverCraft_CSCore_Tests_ReviewRegressionTests_StereoToMono_Position_IsMeasuredInMonoSamples
+  name: StereoToMono_Position_IsMeasuredInMonoSamples
+  nameWithType: ReviewRegressionTests.StereoToMono_Position_IsMeasuredInMonoSamples
+  fullName: SilverCraft.CSCore.Tests.ReviewRegressionTests.StereoToMono_Position_IsMeasuredInMonoSamples
+- uid: SilverCraft.CSCore.Tests.ReviewRegressionTests.MonoToStereo_Position_IsMeasuredInOutputSamples*
+  commentId: Overload:SilverCraft.CSCore.Tests.ReviewRegressionTests.MonoToStereo_Position_IsMeasuredInOutputSamples
+  href: SilverCraft.CSCore.Tests.ReviewRegressionTests.html#SilverCraft_CSCore_Tests_ReviewRegressionTests_MonoToStereo_Position_IsMeasuredInOutputSamples
+  name: MonoToStereo_Position_IsMeasuredInOutputSamples
+  nameWithType: ReviewRegressionTests.MonoToStereo_Position_IsMeasuredInOutputSamples
+  fullName: SilverCraft.CSCore.Tests.ReviewRegressionTests.MonoToStereo_Position_IsMeasuredInOutputSamples
+- uid: SilverCraft.CSCore.Tests.ReviewRegressionTests.ID3v2_FromStream_HandlesPartialReadsOfTagPayload*
+  commentId: Overload:SilverCraft.CSCore.Tests.ReviewRegressionTests.ID3v2_FromStream_HandlesPartialReadsOfTagPayload
+  href: SilverCraft.CSCore.Tests.ReviewRegressionTests.html#SilverCraft_CSCore_Tests_ReviewRegressionTests_ID3v2_FromStream_HandlesPartialReadsOfTagPayload
+  name: ID3v2_FromStream_HandlesPartialReadsOfTagPayload
+  nameWithType: ReviewRegressionTests.ID3v2_FromStream_HandlesPartialReadsOfTagPayload
+  fullName: SilverCraft.CSCore.Tests.ReviewRegressionTests.ID3v2_FromStream_HandlesPartialReadsOfTagPayload

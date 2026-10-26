@@ -19,7 +19,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: SfVirtualLength
     path: ../SilverCraft.SndFile/Native/SF_VIRTUAL_IO.cs
-    startLine: 142
+    startLine: 172
   assemblies:
   - SilverCraft.CSCore.SndFile
   namespace: sndfile

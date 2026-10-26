@@ -17,14 +17,14 @@ items:
   type: Enum
   source:
     remote:
-      path: SilverCraft.CSCore.PortAudio/Native/PaStreamCallbackResult.cs
+      path: SilverCraft.CSCore/PortAudio/Native/PaStreamCallbackResult.cs
       branch: master
       repo: https://github.com/thesilvercraft/cscore
     id: PaStreamCallbackResult
-    path: ../SilverCraft.CSCore.PortAudio/Native/PaStreamCallbackResult.cs
+    path: ../SilverCraft.CSCore/PortAudio/Native/PaStreamCallbackResult.cs
     startLine: 2
   assemblies:
-  - SilverCraft.CSCore.PortAudio
+  - SilverCraft.CSCore
   namespace: SilverCraft.CSCore.PortAudio.Native
   syntax:
     content: 'public enum PaStreamCallbackResult : uint'
@@ -42,14 +42,14 @@ items:
   type: Field
   source:
     remote:
-      path: SilverCraft.CSCore.PortAudio/Native/PaStreamCallbackResult.cs
+      path: SilverCraft.CSCore/PortAudio/Native/PaStreamCallbackResult.cs
       branch: master
       repo: https://github.com/thesilvercraft/cscore
     id: paContinue
-    path: ../SilverCraft.CSCore.PortAudio/Native/PaStreamCallbackResult.cs
+    path: ../SilverCraft.CSCore/PortAudio/Native/PaStreamCallbackResult.cs
     startLine: 5
   assemblies:
-  - SilverCraft.CSCore.PortAudio
+  - SilverCraft.CSCore
   namespace: SilverCraft.CSCore.PortAudio.Native
   syntax:
     content: paContinue = 0
@@ -68,14 +68,14 @@ items:
   type: Field
   source:
     remote:
-      path: SilverCraft.CSCore.PortAudio/Native/PaStreamCallbackResult.cs
+      path: SilverCraft.CSCore/PortAudio/Native/PaStreamCallbackResult.cs
       branch: master
       repo: https://github.com/thesilvercraft/cscore
     id: paComplete
-    path: ../SilverCraft.CSCore.PortAudio/Native/PaStreamCallbackResult.cs
+    path: ../SilverCraft.CSCore/PortAudio/Native/PaStreamCallbackResult.cs
     startLine: 6
   assemblies:
-  - SilverCraft.CSCore.PortAudio
+  - SilverCraft.CSCore
   namespace: SilverCraft.CSCore.PortAudio.Native
   syntax:
     content: paComplete = 1
@@ -94,14 +94,14 @@ items:
   type: Field
   source:
     remote:
-      path: SilverCraft.CSCore.PortAudio/Native/PaStreamCallbackResult.cs
+      path: SilverCraft.CSCore/PortAudio/Native/PaStreamCallbackResult.cs
       branch: master
       repo: https://github.com/thesilvercraft/cscore
     id: paAbort
-    path: ../SilverCraft.CSCore.PortAudio/Native/PaStreamCallbackResult.cs
+    path: ../SilverCraft.CSCore/PortAudio/Native/PaStreamCallbackResult.cs
     startLine: 7
   assemblies:
-  - SilverCraft.CSCore.PortAudio
+  - SilverCraft.CSCore
   namespace: SilverCraft.CSCore.PortAudio.Native
   syntax:
     content: paAbort = 2

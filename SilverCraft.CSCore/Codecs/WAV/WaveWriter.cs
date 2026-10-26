@@ -1,4 +1,5 @@
-﻿using System;
+using System;
+using System.Buffers.Binary;
 using System.Diagnostics;
 using System.IO;
 using System.Text;
@@ -18,6 +19,7 @@ namespace SilverCraft.CSCore.Codecs.WAV
         private Stream _stream;
         private BinaryWriter _writer;
         private bool _isDisposing;
+        private byte[] _sampleBuffer = Array.Empty<byte>();
 
         private readonly bool _closeStream;
 
@@ -40,7 +42,7 @@ namespace SilverCraft.CSCore.Codecs.WAV
         ///     data.
         /// </param>
         public WaveWriter(string fileName, WaveFormat waveFormat)
-            : this(File.OpenWrite(fileName), waveFormat)
+            : this(File.Create(fileName), waveFormat)
         {
             _closeStream = true;
         }
@@ -126,36 +128,41 @@ namespace SilverCraft.CSCore.Codecs.WAV
         {
             CheckObjectDisposed();
 
-            if (sample < -1 || sample > 1)
-                sample = Math.Max(-1, Math.Min(1, sample));
+            sample = Math.Clamp(sample, -1.0f, 1.0f);
 
             if (_waveFormat.IsPCM())
             {
                 switch (_waveFormat.BitsPerSample)
                 {
                     case 8:
-                        Write((byte)(byte.MaxValue * sample));
+                        Write((byte)(sample < 0 ? sample * 128f + 128f : sample * 127f + 128f));
                         break;
                     case 16:
-                        Write((short)(short.MaxValue * sample));
+                        Write((short)(sample < 0 ? sample * 32768f : sample * 32767f));
                         break;
                     case 24:
-                        var buffer = BitConverter.GetBytes((int)(0x7fffff * sample));
-                        Write([buffer[0], buffer[1], buffer[2]], 0, 3);
+                        var sample24 = (int)(sample < 0 ? sample * 8388608f : sample * 8388607f);
+                        // Shift bits to write little-endian bytes without allocating arrays
+                        Write((byte)(sample24 & 0xFF));
+                        Write((byte)((sample24 >> 8) & 0xFF));
+                        Write((byte)((sample24 >> 16) & 0xFF));
                         break;
                     case 32:
-                        Write((int)(int.MaxValue * sample));
+                        var sample32 = (int)(sample < 0 ? sample * 2147483648f : sample * 2147483647f);
+                        Write(sample32);
                         break;
 
                     default:
-                        throw new InvalidOperationException("Invalid Waveformat",
-                            new InvalidOperationException("Invalid BitsPerSample while using PCM encoding."));
+                        throw new InvalidOperationException(
+                            "Invalid Waveformat: Invalid BitsPerSample while using PCM encoding.");
                 }
             }
-            else if (_waveFormat.IsIeeeFloat())
+            else if (_waveFormat.IsIeeeFloat() || 
+                     _waveFormat is { WaveFormatTag: AudioEncoding.Extensible, BitsPerSample: 32 })
+            {
+                // 32-bit Extensible is almost universally IEEE Float
                 Write(sample);
-            else if (_waveFormat.WaveFormatTag == AudioEncoding.Extensible && _waveFormat.BitsPerSample == 32)
-                Write(ushort.MaxValue * (int)sample);
+            }
             else
             {
                 throw new InvalidOperationException(
@@ -172,13 +179,45 @@ namespace SilverCraft.CSCore.Codecs.WAV
         public void WriteSamples(float[] samples, int offset, int count)
         {
             CheckObjectDisposed();
+            ArgumentNullException.ThrowIfNull(samples);
+            ArgumentOutOfRangeException.ThrowIfNegative(offset);
+            ArgumentOutOfRangeException.ThrowIfNegative(count);
+            ArgumentOutOfRangeException.ThrowIfGreaterThan(offset + count, samples.Length);
 
-            for (var i = offset; i < offset + count; i++)
+            var bitsPerSample = _waveFormat.BitsPerSample;
+            var bytesPerSample = bitsPerSample / 8;
+            var isPcm = _waveFormat.IsPCM();
+            var isFloat = _waveFormat.IsIeeeFloat() || _waveFormat is { WaveFormatTag: AudioEncoding.Extensible, BitsPerSample: 32 };
+            if (!isPcm && !isFloat)
+                throw new InvalidOperationException("Invalid Waveformat: Waveformat has to be PCM[8, 16, 24, 32] or IeeeFloat[32]");
+
+            var byteCount = checked(count * bytesPerSample);
+            if (_sampleBuffer.Length < byteCount) _sampleBuffer = new byte[byteCount];
+            for (var sampleIndex = 0; sampleIndex < count; sampleIndex++)
             {
-                WriteSample(samples[i]);
+                var sample = Math.Clamp(samples[offset + sampleIndex], -1f, 1f);
+                var target = sampleIndex * bytesPerSample;
+                if (isPcm)
+                {
+                    switch (bitsPerSample)
+                    {
+                        case 8: _sampleBuffer[target] = (byte)(sample < 0 ? sample * 128f + 128f : sample * 127f + 128f); break;
+                        case 16: BinaryPrimitives.WriteInt16LittleEndian(_sampleBuffer.AsSpan(target), (short)(sample < 0 ? sample * 32768f : sample * 32767f)); break;
+                        case 24:
+                            var value24 = (int)(sample < 0 ? sample * 8388608f : sample * 8388607f);
+                            _sampleBuffer[target] = (byte)value24;
+                            _sampleBuffer[target + 1] = (byte)(value24 >> 8);
+                            _sampleBuffer[target + 2] = (byte)(value24 >> 16);
+                            break;
+                        case 32: BinaryPrimitives.WriteInt32LittleEndian(_sampleBuffer.AsSpan(target), (int)(sample < 0 ? sample * 2147483648f : sample * 2147483647f)); break;
+                        default: throw new InvalidOperationException("Invalid Waveformat: Invalid BitsPerSample while using PCM encoding.");
+                    }
+                }
+                else
+                    BinaryPrimitives.WriteInt32LittleEndian(_sampleBuffer.AsSpan(target), BitConverter.SingleToInt32Bits(sample));
             }
+            Write(_sampleBuffer, 0, byteCount);
         }
-
         /// <summary>
         ///     Encodes raw data in the form of a byte array.
         /// </summary>

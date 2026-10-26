@@ -14,14 +14,14 @@ items:
   type: Struct
   source:
     remote:
-      path: SilverCraft.CSCore.PortAudio/Native/NativeMethods.cs
+      path: SilverCraft.CSCore/PortAudio/Native/NativeMethods.cs
       branch: master
       repo: https://github.com/thesilvercraft/cscore
     id: PaStreamCallbackFlags
-    path: ../SilverCraft.CSCore.PortAudio/Native/NativeMethods.cs
-    startLine: 19
+    path: ../SilverCraft.CSCore/PortAudio/Native/NativeMethods.cs
+    startLine: 16
   assemblies:
-  - SilverCraft.CSCore.PortAudio
+  - SilverCraft.CSCore
   namespace: SilverCraft.CSCore.PortAudio.Native
   syntax:
     content: public struct PaStreamCallbackFlags

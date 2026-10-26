@@ -10,6 +10,7 @@ items:
   - SilverCraft.CSCore.Codecs.FLAC.FlacFrameHeader.BitsPerSample
   - SilverCraft.CSCore.Codecs.FLAC.FlacFrameHeader.BlockSize
   - SilverCraft.CSCore.Codecs.FLAC.FlacFrameHeader.BlockingStrategy
+  - SilverCraft.CSCore.Codecs.FLAC.FlacFrameHeader.BytesConsumed
   - SilverCraft.CSCore.Codecs.FLAC.FlacFrameHeader.ChannelAssignment
   - SilverCraft.CSCore.Codecs.FLAC.FlacFrameHeader.Channels
   - SilverCraft.CSCore.Codecs.FLAC.FlacFrameHeader.Crc8
@@ -27,13 +28,9 @@ items:
   fullName: SilverCraft.CSCore.Codecs.FLAC.FlacFrameHeader
   type: Class
   source:
-    remote:
-      path: SilverCraft.CSCore/Codecs/FLAC/FlacFrameHeader.cs
-      branch: master
-      repo: https://github.com/thesilvercraft/cscore
     id: FlacFrameHeader
-    path: ../SilverCraft.CSCore/Codecs/FLAC/FlacFrameHeader.cs
-    startLine: 10
+    path: C:\Users\Filip Velichkovski\RiderProjects\cscore\SilverCraft.CSCore\obj\Release\net10.0\Microsoft.Extensions.Logging.Generators\Microsoft.Extensions.Logging.Generators.LoggerMessageGenerator\LoggerMessage.g.cs
+    startLine: 5
   assemblies:
   - SilverCraft.CSCore
   namespace: SilverCraft.CSCore.Codecs.FLAC
@@ -71,7 +68,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: BlockSize
     path: ../SilverCraft.CSCore/Codecs/FLAC/FlacFrameHeader.cs
-    startLine: 22
+    startLine: 19
   assemblies:
   - SilverCraft.CSCore
   namespace: SilverCraft.CSCore.Codecs.FLAC
@@ -103,7 +100,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: SampleRate
     path: ../SilverCraft.CSCore/Codecs/FLAC/FlacFrameHeader.cs
-    startLine: 30
+    startLine: 27
   assemblies:
   - SilverCraft.CSCore
   namespace: SilverCraft.CSCore.Codecs.FLAC
@@ -135,7 +132,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: Channels
     path: ../SilverCraft.CSCore/Codecs/FLAC/FlacFrameHeader.cs
-    startLine: 38
+    startLine: 35
   assemblies:
   - SilverCraft.CSCore
   namespace: SilverCraft.CSCore.Codecs.FLAC
@@ -167,7 +164,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: ChannelAssignment
     path: ../SilverCraft.CSCore/Codecs/FLAC/FlacFrameHeader.cs
-    startLine: 46
+    startLine: 43
   assemblies:
   - SilverCraft.CSCore
   namespace: SilverCraft.CSCore.Codecs.FLAC
@@ -199,7 +196,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: BitsPerSample
     path: ../SilverCraft.CSCore/Codecs/FLAC/FlacFrameHeader.cs
-    startLine: 54
+    startLine: 51
   assemblies:
   - SilverCraft.CSCore
   namespace: SilverCraft.CSCore.Codecs.FLAC
@@ -231,7 +228,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: BlockingStrategy
     path: ../SilverCraft.CSCore/Codecs/FLAC/FlacFrameHeader.cs
-    startLine: 62
+    startLine: 59
   assemblies:
   - SilverCraft.CSCore
   namespace: SilverCraft.CSCore.Codecs.FLAC
@@ -263,7 +260,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: SampleNumber
     path: ../SilverCraft.CSCore/Codecs/FLAC/FlacFrameHeader.cs
-    startLine: 71
+    startLine: 68
   assemblies:
   - SilverCraft.CSCore
   namespace: SilverCraft.CSCore.Codecs.FLAC
@@ -296,7 +293,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: FrameNumber
     path: ../SilverCraft.CSCore/Codecs/FLAC/FlacFrameHeader.cs
-    startLine: 80
+    startLine: 77
   assemblies:
   - SilverCraft.CSCore
   namespace: SilverCraft.CSCore.Codecs.FLAC
@@ -329,7 +326,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: Crc8
     path: ../SilverCraft.CSCore/Codecs/FLAC/FlacFrameHeader.cs
-    startLine: 88
+    startLine: 85
   assemblies:
   - SilverCraft.CSCore
   namespace: SilverCraft.CSCore.Codecs.FLAC
@@ -361,7 +358,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: HasError
     path: ../SilverCraft.CSCore/Codecs/FLAC/FlacFrameHeader.cs
-    startLine: 98
+    startLine: 95
   assemblies:
   - SilverCraft.CSCore
   namespace: SilverCraft.CSCore.Codecs.FLAC
@@ -375,6 +372,40 @@ items:
       description: <code>true</code> if this instance has error; otherwise, <code>false</code>.
     content.vb: Public Property HasError As Boolean
   overload: SilverCraft.CSCore.Codecs.FLAC.FlacFrameHeader.HasError*
+- uid: SilverCraft.CSCore.Codecs.FLAC.FlacFrameHeader.BytesConsumed
+  commentId: P:SilverCraft.CSCore.Codecs.FLAC.FlacFrameHeader.BytesConsumed
+  id: BytesConsumed
+  parent: SilverCraft.CSCore.Codecs.FLAC.FlacFrameHeader
+  langs:
+  - csharp
+  - vb
+  name: BytesConsumed
+  nameWithType: FlacFrameHeader.BytesConsumed
+  fullName: SilverCraft.CSCore.Codecs.FLAC.FlacFrameHeader.BytesConsumed
+  type: Property
+  source:
+    remote:
+      path: SilverCraft.CSCore/Codecs/FLAC/FlacFrameHeader.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: BytesConsumed
+    path: ../SilverCraft.CSCore/Codecs/FLAC/FlacFrameHeader.cs
+    startLine: 100
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.Codecs.FLAC
+  summary: >-
+    The number of bytes parsing this header took
+
+    Only filled if constructed via byte array
+  example: []
+  syntax:
+    content: public int BytesConsumed { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property BytesConsumed As Integer
+  overload: SilverCraft.CSCore.Codecs.FLAC.FlacFrameHeader.BytesConsumed*
 - uid: SilverCraft.CSCore.Codecs.FLAC.FlacFrameHeader.StreamPosition
   commentId: P:SilverCraft.CSCore.Codecs.FLAC.FlacFrameHeader.StreamPosition
   id: StreamPosition
@@ -393,7 +424,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: StreamPosition
     path: ../SilverCraft.CSCore/Codecs/FLAC/FlacFrameHeader.cs
-    startLine: 106
+    startLine: 107
   assemblies:
   - SilverCraft.CSCore
   namespace: SilverCraft.CSCore.Codecs.FLAC
@@ -425,7 +456,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: .ctor
     path: ../SilverCraft.CSCore/Codecs/FLAC/FlacFrameHeader.cs
-    startLine: 116
+    startLine: 117
   assemblies:
   - SilverCraft.CSCore
   namespace: SilverCraft.CSCore.Codecs.FLAC
@@ -466,7 +497,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: .ctor
     path: ../SilverCraft.CSCore/Codecs/FLAC/FlacFrameHeader.cs
-    startLine: 137
+    startLine: 140
   assemblies:
   - SilverCraft.CSCore
   namespace: SilverCraft.CSCore.Codecs.FLAC
@@ -480,6 +511,7 @@ items:
       description: The raw byte-data which contains the <xref href="SilverCraft.CSCore.Codecs.FLAC.FlacFrameHeader" data-throw-if-not-resolved="false"></xref>.
     - id: offset
       type: System.Int32
+      description: The offset from which data will be read from the buffer
     - id: streamInfo
       type: SilverCraft.CSCore.Codecs.FLAC.FlacMetadataStreamInfo
       description: The stream-info-metadata-block of the flac stream which provides some basic information about the flac framestream. Can be set to null.
@@ -509,7 +541,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: IsFormatEqualTo
     path: ../SilverCraft.CSCore/Codecs/FLAC/FlacFrameHeader.cs
-    startLine: 414
+    startLine: 415
   assemblies:
   - SilverCraft.CSCore
   namespace: SilverCraft.CSCore.Codecs.FLAC
@@ -1046,6 +1078,12 @@ references:
   nameWithType.vb: Boolean
   fullName.vb: Boolean
   name.vb: Boolean
+- uid: SilverCraft.CSCore.Codecs.FLAC.FlacFrameHeader.BytesConsumed*
+  commentId: Overload:SilverCraft.CSCore.Codecs.FLAC.FlacFrameHeader.BytesConsumed
+  href: SilverCraft.CSCore.Codecs.FLAC.FlacFrameHeader.html#SilverCraft_CSCore_Codecs_FLAC_FlacFrameHeader_BytesConsumed
+  name: BytesConsumed
+  nameWithType: FlacFrameHeader.BytesConsumed
+  fullName: SilverCraft.CSCore.Codecs.FLAC.FlacFrameHeader.BytesConsumed
 - uid: SilverCraft.CSCore.Codecs.FLAC.FlacFrameHeader.StreamPosition*
   commentId: Overload:SilverCraft.CSCore.Codecs.FLAC.FlacFrameHeader.StreamPosition
   href: SilverCraft.CSCore.Codecs.FLAC.FlacFrameHeader.html#SilverCraft_CSCore_Codecs_FLAC_FlacFrameHeader_StreamPosition

@@ -249,8 +249,8 @@ items:
   type: Class
   source:
     id: Methods
-    path: C:\Users\Filip Velichkovski\RiderProjects\cscore\SilverCraft.SndFile\obj\Release\net8.0\SilverCraft.CSCore.NativeLibraryResolver\SilverCraft.CSCore.NativeLibraryResolver.SourceGeneratorWithAttributes\Methods.DllImportResolver.g.cs
-    startLine: 11
+    path: C:\Users\Filip Velichkovski\RiderProjects\cscore\SilverCraft.SndFile\obj\Release\net10.0\SilverCraft.CSCore.NativeLibraryResolver\SilverCraft.CSCore.NativeLibraryResolver.SourceGeneratorWithAttributes\Methods.DllImportResolver.g.cs
+    startLine: 10
   assemblies:
   - SilverCraft.CSCore.SndFile
   namespace: sndfile
@@ -6718,8 +6718,8 @@ items:
   type: Method
   source:
     id: DllImportResolver
-    path: C:\Users\Filip Velichkovski\RiderProjects\cscore\SilverCraft.SndFile\obj\Release\net8.0\SilverCraft.CSCore.NativeLibraryResolver\SilverCraft.CSCore.NativeLibraryResolver.SourceGeneratorWithAttributes\Methods.DllImportResolver.g.cs
-    startLine: 13
+    path: C:\Users\Filip Velichkovski\RiderProjects\cscore\SilverCraft.SndFile\obj\Release\net10.0\SilverCraft.CSCore.NativeLibraryResolver\SilverCraft.CSCore.NativeLibraryResolver.SourceGeneratorWithAttributes\Methods.DllImportResolver.g.cs
+    startLine: 12
   assemblies:
   - SilverCraft.CSCore.SndFile
   namespace: sndfile

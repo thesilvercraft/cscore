@@ -86,7 +86,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: .ctor
     path: ../SilverCraft.SndFile/SndFileWaveStream.cs
-    startLine: 27
+    startLine: 16
   assemblies:
   - SilverCraft.CSCore.SndFile
   namespace: SilverCraft.CSCore.SndFile
@@ -118,7 +118,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: .ctor
     path: ../SilverCraft.SndFile/SndFileWaveStream.cs
-    startLine: 47
+    startLine: 36
   assemblies:
   - SilverCraft.CSCore.SndFile
   namespace: SilverCraft.CSCore.SndFile
@@ -152,7 +152,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: Read
     path: ../SilverCraft.SndFile/SndFileWaveStream.cs
-    startLine: 69
+    startLine: 58
   assemblies:
   - SilverCraft.CSCore.SndFile
   namespace: SilverCraft.CSCore.SndFile
@@ -211,7 +211,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: Dispose
     path: ../SilverCraft.SndFile/SndFileWaveStream.cs
-    startLine: 82
+    startLine: 71
   assemblies:
   - SilverCraft.CSCore.SndFile
   namespace: SilverCraft.CSCore.SndFile
@@ -241,7 +241,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: Dispose
     path: ../SilverCraft.SndFile/SndFileWaveStream.cs
-    startLine: 88
+    startLine: 77
   assemblies:
   - SilverCraft.CSCore.SndFile
   namespace: SilverCraft.CSCore.SndFile
@@ -273,7 +273,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: Finalize
     path: ../SilverCraft.SndFile/SndFileWaveStream.cs
-    startLine: 106
+    startLine: 95
   assemblies:
   - SilverCraft.CSCore.SndFile
   namespace: SilverCraft.CSCore.SndFile
@@ -302,7 +302,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: CanSeek
     path: ../SilverCraft.SndFile/SndFileWaveStream.cs
-    startLine: 111
+    startLine: 100
   assemblies:
   - SilverCraft.CSCore.SndFile
   namespace: SilverCraft.CSCore.SndFile
@@ -335,7 +335,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: WaveFormat
     path: ../SilverCraft.SndFile/SndFileWaveStream.cs
-    startLine: 112
+    startLine: 101
   assemblies:
   - SilverCraft.CSCore.SndFile
   namespace: SilverCraft.CSCore.SndFile
@@ -368,7 +368,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: Length
     path: ../SilverCraft.SndFile/SndFileWaveStream.cs
-    startLine: 113
+    startLine: 102
   assemblies:
   - SilverCraft.CSCore.SndFile
   namespace: SilverCraft.CSCore.SndFile
@@ -404,7 +404,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: Position
     path: ../SilverCraft.SndFile/SndFileWaveStream.cs
-    startLine: 115
+    startLine: 104
   assemblies:
   - SilverCraft.CSCore.SndFile
   namespace: SilverCraft.CSCore.SndFile

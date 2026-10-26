@@ -1212,7 +1212,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "SilverCraft.CSCore.LogLocation",
-      "Summary": "<p sourcefile=\"api/SilverCraft.CSCore.LogLocation.yml\" sourcestartlinenumber=\"1\">Provides static methods for obtaining an <xref href=\"Serilog.ILogger\" data-throw-if-not-resolved=\"false\"></xref> instance associated with a specific type.</p>\n"
+      "Summary": "<p sourcefile=\"api/SilverCraft.CSCore.LogLocation.yml\" sourcestartlinenumber=\"1\">Provides static methods for obtaining an <xref href=\"Microsoft.Extensions.Logging.ILogger\" data-throw-if-not-resolved=\"false\"></xref> instance.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -1226,7 +1226,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "SilverCraft.CSCore.NativeLibraryResolver.SourceGeneratorWithAttributes",
-      "Summary": "<p sourcefile=\"api/SilverCraft.CSCore.NativeLibraryResolver.SourceGeneratorWithAttributes.yml\" sourcestartlinenumber=\"1\">A source generator that creates partial class declarations with DllImportResolver methods for annotated classes.\nThe generated methods automatically handle platform-specific DLL paths (Windows/Linux/macOS) and CPU architectures.\nUse the [DllImportResolver] attribute on a class to enable automatic native library resolution.</p>\n"
+      "Summary": "<p sourcefile=\"api/SilverCraft.CSCore.NativeLibraryResolver.SourceGeneratorWithAttributes.yml\" sourcestartlinenumber=\"1\">A source generator that creates partial class declarations with DllImportResolver methods for annotated classes,\nand aggregates them into a single global resolver per assembly.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -1412,6 +1412,20 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/SilverCraft.CSCore.PortAudio.Native.PaStreamFinishedCallback.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SilverCraft.CSCore.PortAudio.Native.PaStreamFinishedCallback.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SilverCraft.CSCore.PortAudio.Native.PaStreamFinishedCallback",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/SilverCraft.CSCore.PortAudio.Native.PaStreamInfo.yml",
       "output": {
         ".html": {
@@ -1450,6 +1464,20 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "SilverCraft.CSCore.PortAudio.Native.PaVersionInfo",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SilverCraft.CSCore.PortAudio.Native.StreamCallBack.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SilverCraft.CSCore.PortAudio.Native.StreamCallBack.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SilverCraft.CSCore.PortAudio.Native.StreamCallBack",
       "Summary": null
     },
     {
@@ -1661,6 +1689,20 @@
       "IsMRef": true,
       "Title": "SilverCraft.CSCore.SoundIn.ISoundIn",
       "Summary": "<p sourcefile=\"api/SilverCraft.CSCore.SoundIn.ISoundIn.yml\" sourcestartlinenumber=\"1\">Defines a interface for capturing audio.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SilverCraft.CSCore.SoundIn.PortAudioSoundIn.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SilverCraft.CSCore.SoundIn.PortAudioSoundIn.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SilverCraft.CSCore.SoundIn.PortAudioSoundIn",
+      "Summary": null
     },
     {
       "type": "ManagedReference",
@@ -1899,6 +1941,20 @@
       "IsMRef": true,
       "Title": "SilverCraft.CSCore.SoundOut.PlaybackStoppedEventArgs",
       "Summary": "<p sourcefile=\"api/SilverCraft.CSCore.SoundOut.PlaybackStoppedEventArgs.yml\" sourcestartlinenumber=\"1\">Provides data for the <xref href=\"SilverCraft.CSCore.SoundOut.ISoundOut.Stopped\" data-throw-if-not-resolved=\"false\"></xref> event.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SilverCraft.CSCore.SoundOut.PortAudioSoundOut.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SilverCraft.CSCore.SoundOut.PortAudioSoundOut.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SilverCraft.CSCore.SoundOut.PortAudioSoundOut",
+      "Summary": null
     },
     {
       "type": "ManagedReference",
@@ -3078,6 +3134,300 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/SilverCraft.CSCore.Tests.AdditionalCoverageTests.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SilverCraft.CSCore.Tests.AdditionalCoverageTests.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SilverCraft.CSCore.Tests.AdditionalCoverageTests",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SilverCraft.CSCore.Tests.AudioReadOffsetTests.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SilverCraft.CSCore.Tests.AudioReadOffsetTests.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SilverCraft.CSCore.Tests.AudioReadOffsetTests",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SilverCraft.CSCore.Tests.BugReproTests.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SilverCraft.CSCore.Tests.BugReproTests.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SilverCraft.CSCore.Tests.BugReproTests",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SilverCraft.CSCore.Tests.DspCoverageTests.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SilverCraft.CSCore.Tests.DspCoverageTests.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SilverCraft.CSCore.Tests.DspCoverageTests",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SilverCraft.CSCore.Tests.DspTests.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SilverCraft.CSCore.Tests.DspTests.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SilverCraft.CSCore.Tests.DspTests",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SilverCraft.CSCore.Tests.FixedSizeBufferTests.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SilverCraft.CSCore.Tests.FixedSizeBufferTests.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SilverCraft.CSCore.Tests.FixedSizeBufferTests",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SilverCraft.CSCore.Tests.FlacFileTests.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SilverCraft.CSCore.Tests.FlacFileTests.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SilverCraft.CSCore.Tests.FlacFileTests",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SilverCraft.CSCore.Tests.FlacSeekTableTests.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SilverCraft.CSCore.Tests.FlacSeekTableTests.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SilverCraft.CSCore.Tests.FlacSeekTableTests",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SilverCraft.CSCore.Tests.Id3Tests.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SilverCraft.CSCore.Tests.Id3Tests.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SilverCraft.CSCore.Tests.Id3Tests",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SilverCraft.CSCore.Tests.ReviewRegressionTests.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SilverCraft.CSCore.Tests.ReviewRegressionTests.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SilverCraft.CSCore.Tests.ReviewRegressionTests",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SilverCraft.CSCore.Tests.SampleConverterTests.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SilverCraft.CSCore.Tests.SampleConverterTests.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SilverCraft.CSCore.Tests.SampleConverterTests",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SilverCraft.CSCore.Tests.StreamChannelTests.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SilverCraft.CSCore.Tests.StreamChannelTests.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SilverCraft.CSCore.Tests.StreamChannelTests",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SilverCraft.CSCore.Tests.StreamCoverageTests.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SilverCraft.CSCore.Tests.StreamCoverageTests.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SilverCraft.CSCore.Tests.StreamCoverageTests",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SilverCraft.CSCore.Tests.StreamTests.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SilverCraft.CSCore.Tests.StreamTests.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SilverCraft.CSCore.Tests.StreamTests",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SilverCraft.CSCore.Tests.TestSampleSource.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SilverCraft.CSCore.Tests.TestSampleSource.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SilverCraft.CSCore.Tests.TestSampleSource",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SilverCraft.CSCore.Tests.TestWaveSource.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SilverCraft.CSCore.Tests.TestWaveSource.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SilverCraft.CSCore.Tests.TestWaveSource",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SilverCraft.CSCore.Tests.TimeConverterTests.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SilverCraft.CSCore.Tests.TimeConverterTests.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SilverCraft.CSCore.Tests.TimeConverterTests",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SilverCraft.CSCore.Tests.WaveFileTests.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SilverCraft.CSCore.Tests.WaveFileTests.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SilverCraft.CSCore.Tests.WaveFileTests",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SilverCraft.CSCore.Tests.WaveFormatExtensibleTests.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SilverCraft.CSCore.Tests.WaveFormatExtensibleTests.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SilverCraft.CSCore.Tests.WaveFormatExtensibleTests",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SilverCraft.CSCore.Tests.WaveFormatTests.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SilverCraft.CSCore.Tests.WaveFormatTests.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SilverCraft.CSCore.Tests.WaveFormatTests",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SilverCraft.CSCore.Tests.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SilverCraft.CSCore.Tests.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SilverCraft.CSCore.Tests",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/SilverCraft.CSCore.TimeConverter.yml",
       "output": {
         ".html": {
@@ -3176,34 +3526,6 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/SilverCraft.CSCore.VGMStream.VGMStreamWaveSource.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/SilverCraft.CSCore.VGMStream.VGMStreamWaveSource.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "SilverCraft.CSCore.VGMStream.VGMStreamWaveSource",
-      "Summary": "<p sourcefile=\"api/SilverCraft.CSCore.VGMStream.VGMStreamWaveSource.yml\" sourcestartlinenumber=\"1\">Represents a stream wrapper for reading VGM format audio data from a file.\nThis class implements <xref href=\"SilverCraft.CSCore.IWaveSource\" data-throw-if-not-resolved=\"false\"></xref> to provide an interface for reading streaming audio content.</p>\n"
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/SilverCraft.CSCore.VGMStream.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/SilverCraft.CSCore.VGMStream.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "SilverCraft.CSCore.VGMStream",
-      "Summary": null
-    },
-    {
-      "type": "ManagedReference",
       "source_relative_path": "api/SilverCraft.CSCore.WaveAggregatorBase.yml",
       "output": {
         ".html": {
@@ -3260,282 +3582,30 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/VgmStream.NativeMethods.yml",
+      "source_relative_path": "api/SilverCraft.NativeLibraryResolvers.GlobalDllImportResolver.yml",
       "output": {
         ".html": {
-          "relative_path": "api/VgmStream.NativeMethods.html"
+          "relative_path": "api/SilverCraft.NativeLibraryResolvers.GlobalDllImportResolver.html"
         }
       },
       "version": "",
       "Uid": null,
       "IsMRef": true,
-      "Title": "VgmStream.NativeMethods",
+      "Title": "SilverCraft.NativeLibraryResolvers.GlobalDllImportResolver",
       "Summary": null
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/VgmStream.STREAMFILE.yml",
+      "source_relative_path": "api/SilverCraft.NativeLibraryResolvers.yml",
       "output": {
         ".html": {
-          "relative_path": "api/VgmStream.STREAMFILE.html"
+          "relative_path": "api/SilverCraft.NativeLibraryResolvers.html"
         }
       },
       "version": "",
       "Uid": null,
       "IsMRef": true,
-      "Title": "VgmStream.STREAMFILE",
-      "Summary": null
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/VgmStream.VGMSTREAM._stream_name_e__FixedBuffer.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/VgmStream.VGMSTREAM._stream_name_e__FixedBuffer.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "VgmStream.VGMSTREAM._stream_name_e__FixedBuffer",
-      "Summary": null
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/VgmStream.VGMSTREAM.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/VgmStream.VGMSTREAM.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "VgmStream.VGMSTREAM",
-      "Summary": null
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/VgmStream.VGMSTREAMCHANNEL._Anonymous1_e__Union._adpcm_coef_3by32_e__FixedBuffer.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/VgmStream.VGMSTREAMCHANNEL._Anonymous1_e__Union._adpcm_coef_3by32_e__FixedBuffer.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "VgmStream.VGMSTREAMCHANNEL._Anonymous1_e__Union._adpcm_coef_3by32_e__FixedBuffer",
-      "Summary": null
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/VgmStream.VGMSTREAMCHANNEL._Anonymous1_e__Union._adpcm_coef_e__FixedBuffer.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/VgmStream.VGMSTREAMCHANNEL._Anonymous1_e__Union._adpcm_coef_e__FixedBuffer.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "VgmStream.VGMSTREAMCHANNEL._Anonymous1_e__Union._adpcm_coef_e__FixedBuffer",
-      "Summary": null
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/VgmStream.VGMSTREAMCHANNEL._Anonymous1_e__Union._vadpcm_coefs_e__FixedBuffer.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/VgmStream.VGMSTREAMCHANNEL._Anonymous1_e__Union._vadpcm_coefs_e__FixedBuffer.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "VgmStream.VGMSTREAMCHANNEL._Anonymous1_e__Union._vadpcm_coefs_e__FixedBuffer",
-      "Summary": null
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/VgmStream.VGMSTREAMCHANNEL._Anonymous1_e__Union.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/VgmStream.VGMSTREAMCHANNEL._Anonymous1_e__Union.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "VgmStream.VGMSTREAMCHANNEL._Anonymous1_e__Union",
-      "Summary": null
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/VgmStream.VGMSTREAMCHANNEL._Anonymous2_e__Union.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/VgmStream.VGMSTREAMCHANNEL._Anonymous2_e__Union.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "VgmStream.VGMSTREAMCHANNEL._Anonymous2_e__Union",
-      "Summary": null
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/VgmStream.VGMSTREAMCHANNEL._Anonymous3_e__Union.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/VgmStream.VGMSTREAMCHANNEL._Anonymous3_e__Union.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "VgmStream.VGMSTREAMCHANNEL._Anonymous3_e__Union",
-      "Summary": null
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/VgmStream.VGMSTREAMCHANNEL._Anonymous4_e__Union.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/VgmStream.VGMSTREAMCHANNEL._Anonymous4_e__Union.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "VgmStream.VGMSTREAMCHANNEL._Anonymous4_e__Union",
-      "Summary": null
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/VgmStream.VGMSTREAMCHANNEL._Anonymous5_e__Union.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/VgmStream.VGMSTREAMCHANNEL._Anonymous5_e__Union.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "VgmStream.VGMSTREAMCHANNEL._Anonymous5_e__Union",
-      "Summary": null
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/VgmStream.VGMSTREAMCHANNEL._Anonymous6_e__Union.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/VgmStream.VGMSTREAMCHANNEL._Anonymous6_e__Union.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "VgmStream.VGMSTREAMCHANNEL._Anonymous6_e__Union",
-      "Summary": null
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/VgmStream.VGMSTREAMCHANNEL.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/VgmStream.VGMSTREAMCHANNEL.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "VgmStream.VGMSTREAMCHANNEL",
-      "Summary": null
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/VgmStream.coding_t.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/VgmStream.coding_t.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "VgmStream.coding_t",
-      "Summary": null
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/VgmStream.layout_t.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/VgmStream.layout_t.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "VgmStream.layout_t",
-      "Summary": null
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/VgmStream.meta_t.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/VgmStream.meta_t.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "VgmStream.meta_t",
-      "Summary": null
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/VgmStream.play_config_t.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/VgmStream.play_config_t.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "VgmStream.play_config_t",
-      "Summary": null
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/VgmStream.play_state_t.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/VgmStream.play_state_t.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "VgmStream.play_state_t",
-      "Summary": null
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/VgmStream.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/VgmStream.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "VgmStream",
+      "Title": "SilverCraft.NativeLibraryResolvers",
       "Summary": null
     },
     {

@@ -19,14 +19,14 @@ items:
   type: Struct
   source:
     remote:
-      path: SilverCraft.CSCore.PortAudio/Native/PaStreamParameters.cs
+      path: SilverCraft.CSCore/PortAudio/Native/PaStreamParameters.cs
       branch: master
       repo: https://github.com/thesilvercraft/cscore
     id: PaStreamParameters
-    path: ../SilverCraft.CSCore.PortAudio/Native/PaStreamParameters.cs
+    path: ../SilverCraft.CSCore/PortAudio/Native/PaStreamParameters.cs
     startLine: 2
   assemblies:
-  - SilverCraft.CSCore.PortAudio
+  - SilverCraft.CSCore
   namespace: SilverCraft.CSCore.PortAudio.Native
   syntax:
     content: public struct PaStreamParameters
@@ -51,14 +51,14 @@ items:
   type: Field
   source:
     remote:
-      path: SilverCraft.CSCore.PortAudio/Native/PaStreamParameters.cs
+      path: SilverCraft.CSCore/PortAudio/Native/PaStreamParameters.cs
       branch: master
       repo: https://github.com/thesilvercraft/cscore
     id: device
-    path: ../SilverCraft.CSCore.PortAudio/Native/PaStreamParameters.cs
+    path: ../SilverCraft.CSCore/PortAudio/Native/PaStreamParameters.cs
     startLine: 5
   assemblies:
-  - SilverCraft.CSCore.PortAudio
+  - SilverCraft.CSCore
   namespace: SilverCraft.CSCore.PortAudio.Native
   syntax:
     content: public int device
@@ -78,14 +78,14 @@ items:
   type: Field
   source:
     remote:
-      path: SilverCraft.CSCore.PortAudio/Native/PaStreamParameters.cs
+      path: SilverCraft.CSCore/PortAudio/Native/PaStreamParameters.cs
       branch: master
       repo: https://github.com/thesilvercraft/cscore
     id: channelCount
-    path: ../SilverCraft.CSCore.PortAudio/Native/PaStreamParameters.cs
+    path: ../SilverCraft.CSCore/PortAudio/Native/PaStreamParameters.cs
     startLine: 7
   assemblies:
-  - SilverCraft.CSCore.PortAudio
+  - SilverCraft.CSCore
   namespace: SilverCraft.CSCore.PortAudio.Native
   syntax:
     content: public int channelCount
@@ -105,14 +105,14 @@ items:
   type: Field
   source:
     remote:
-      path: SilverCraft.CSCore.PortAudio/Native/PaStreamParameters.cs
+      path: SilverCraft.CSCore/PortAudio/Native/PaStreamParameters.cs
       branch: master
       repo: https://github.com/thesilvercraft/cscore
     id: sampleFormat
-    path: ../SilverCraft.CSCore.PortAudio/Native/PaStreamParameters.cs
+    path: ../SilverCraft.CSCore/PortAudio/Native/PaStreamParameters.cs
     startLine: 10
   assemblies:
-  - SilverCraft.CSCore.PortAudio
+  - SilverCraft.CSCore
   namespace: SilverCraft.CSCore.PortAudio.Native
   syntax:
     content: public nuint sampleFormat
@@ -132,14 +132,14 @@ items:
   type: Field
   source:
     remote:
-      path: SilverCraft.CSCore.PortAudio/Native/PaStreamParameters.cs
+      path: SilverCraft.CSCore/PortAudio/Native/PaStreamParameters.cs
       branch: master
       repo: https://github.com/thesilvercraft/cscore
     id: suggestedLatency
-    path: ../SilverCraft.CSCore.PortAudio/Native/PaStreamParameters.cs
+    path: ../SilverCraft.CSCore/PortAudio/Native/PaStreamParameters.cs
     startLine: 13
   assemblies:
-  - SilverCraft.CSCore.PortAudio
+  - SilverCraft.CSCore
   namespace: SilverCraft.CSCore.PortAudio.Native
   syntax:
     content: public double suggestedLatency
@@ -159,14 +159,14 @@ items:
   type: Field
   source:
     remote:
-      path: SilverCraft.CSCore.PortAudio/Native/PaStreamParameters.cs
+      path: SilverCraft.CSCore/PortAudio/Native/PaStreamParameters.cs
       branch: master
       repo: https://github.com/thesilvercraft/cscore
     id: hostApiSpecificStreamInfo
-    path: ../SilverCraft.CSCore.PortAudio/Native/PaStreamParameters.cs
+    path: ../SilverCraft.CSCore/PortAudio/Native/PaStreamParameters.cs
     startLine: 15
   assemblies:
-  - SilverCraft.CSCore.PortAudio
+  - SilverCraft.CSCore
   namespace: SilverCraft.CSCore.PortAudio.Native
   syntax:
     content: public void* hostApiSpecificStreamInfo

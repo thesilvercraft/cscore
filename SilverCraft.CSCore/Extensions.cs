@@ -384,10 +384,8 @@ namespace SilverCraft.CSCore
 
         internal static AudioEncoding GetWaveFormatTag(this WaveFormat waveFormat)
         {
-            if (waveFormat is WaveFormatExtensible)
-                return AudioSubTypes.EncodingFromSubType(((WaveFormatExtensible) waveFormat).SubFormat);
-
-            return waveFormat.WaveFormatTag;
+            return waveFormat is WaveFormatExtensible extensible ?
+                AudioSubTypes.EncodingFromSubType(extensible.SubFormat) : waveFormat.WaveFormatTag;
         }
 
         /// <summary>

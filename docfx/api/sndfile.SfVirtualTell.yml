@@ -19,7 +19,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: SfVirtualTell
     path: ../SilverCraft.SndFile/Native/SF_VIRTUAL_IO.cs
-    startLine: 151
+    startLine: 184
   assemblies:
   - SilverCraft.CSCore.SndFile
   namespace: sndfile

@@ -20,16 +20,14 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: SourceGeneratorWithAttributes
     path: ../SilverCraft.CSCore.NativeLibraryResolver/SourceGeneratorWithAttributes.cs
-    startLine: 18
+    startLine: 15
   assemblies:
   - SilverCraft.CSCore.NativeLibraryResolver
   namespace: SilverCraft.CSCore.NativeLibraryResolver
   summary: >-
-    A source generator that creates partial class declarations with DllImportResolver methods for annotated classes.
+    A source generator that creates partial class declarations with DllImportResolver methods for annotated classes,
 
-    The generated methods automatically handle platform-specific DLL paths (Windows/Linux/macOS) and CPU architectures.
-
-    Use the [DllImportResolver] attribute on a class to enable automatic native library resolution.
+    and aggregates them into a single global resolver per assembly.
   example: []
   syntax:
     content: >-
@@ -76,7 +74,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: Initialize
     path: ../SilverCraft.CSCore.NativeLibraryResolver/SourceGeneratorWithAttributes.cs
-    startLine: 51
+    startLine: 47
   assemblies:
   - SilverCraft.CSCore.NativeLibraryResolver
   namespace: SilverCraft.CSCore.NativeLibraryResolver

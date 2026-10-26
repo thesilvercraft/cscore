@@ -29,7 +29,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: SF_VIRTUAL_IO
     path: ../SilverCraft.SndFile/Native/SF_VIRTUAL_IO.cs
-    startLine: 71
+    startLine: 106
   assemblies:
   - SilverCraft.CSCore.SndFile
   namespace: sndfile
@@ -59,7 +59,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: Length
     path: ../SilverCraft.SndFile/Native/SF_VIRTUAL_IO.cs
-    startLine: 75
+    startLine: 109
   assemblies:
   - SilverCraft.CSCore.SndFile
   namespace: sndfile
@@ -96,7 +96,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: Seek
     path: ../SilverCraft.SndFile/Native/SF_VIRTUAL_IO.cs
-    startLine: 79
+    startLine: 112
   assemblies:
   - SilverCraft.CSCore.SndFile
   namespace: sndfile
@@ -133,7 +133,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: Read
     path: ../SilverCraft.SndFile/Native/SF_VIRTUAL_IO.cs
-    startLine: 83
+    startLine: 115
   assemblies:
   - SilverCraft.CSCore.SndFile
   namespace: sndfile
@@ -170,7 +170,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: Write
     path: ../SilverCraft.SndFile/Native/SF_VIRTUAL_IO.cs
-    startLine: 87
+    startLine: 118
   assemblies:
   - SilverCraft.CSCore.SndFile
   namespace: sndfile
@@ -207,7 +207,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: Tell
     path: ../SilverCraft.SndFile/Native/SF_VIRTUAL_IO.cs
-    startLine: 91
+    startLine: 121
   assemblies:
   - SilverCraft.CSCore.SndFile
   namespace: sndfile
@@ -244,7 +244,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: .ctor
     path: ../SilverCraft.SndFile/Native/SF_VIRTUAL_IO.cs
-    startLine: 93
+    startLine: 123
   assemblies:
   - SilverCraft.CSCore.SndFile
   namespace: sndfile
@@ -304,7 +304,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: Equals
     path: ../SilverCraft.SndFile/Native/SF_VIRTUAL_IO.cs
-    startLine: 113
+    startLine: 143
   assemblies:
   - SilverCraft.CSCore.SndFile
   namespace: sndfile
@@ -343,7 +343,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: GetHashCode
     path: ../SilverCraft.SndFile/Native/SF_VIRTUAL_IO.cs
-    startLine: 118
+    startLine: 148
   assemblies:
   - SilverCraft.CSCore.SndFile
   namespace: sndfile
@@ -375,7 +375,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: op_Equality
     path: ../SilverCraft.SndFile/Native/SF_VIRTUAL_IO.cs
-    startLine: 131
+    startLine: 161
   assemblies:
   - SilverCraft.CSCore.SndFile
   namespace: sndfile
@@ -411,7 +411,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: op_Inequality
     path: ../SilverCraft.SndFile/Native/SF_VIRTUAL_IO.cs
-    startLine: 136
+    startLine: 166
   assemblies:
   - SilverCraft.CSCore.SndFile
   namespace: sndfile

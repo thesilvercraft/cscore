@@ -32,10 +32,10 @@ items:
   - SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_IsFormatSupported(SilverCraft.CSCore.PortAudio.Native.PaStreamParameters*,SilverCraft.CSCore.PortAudio.Native.PaStreamParameters*,System.Double)
   - SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_IsStreamActive(System.Void*)
   - SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_IsStreamStopped(System.Void*)
-  - SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_OpenDefaultStream(SilverCraft.CSCore.PortAudio.Native.PaStream**,System.Int32,System.Int32,System.UIntPtr,System.Double,System.UIntPtr,SilverCraft.CSCore.PortAudio.StreamCallBack,System.IntPtr)
+  - SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_OpenDefaultStream(SilverCraft.CSCore.PortAudio.Native.PaStream**,System.Int32,System.Int32,System.UIntPtr,System.Double,System.UIntPtr,SilverCraft.CSCore.PortAudio.Native.StreamCallBack,System.IntPtr)
   - SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_OpenStream(SilverCraft.CSCore.PortAudio.Native.PaStream**,SilverCraft.CSCore.PortAudio.Native.PaStreamParameters*,SilverCraft.CSCore.PortAudio.Native.PaStreamParameters*,System.Double,System.UIntPtr,System.UIntPtr,,System.Void*)
   - SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_ReadStream(System.Void*,System.Void*,System.UIntPtr)
-  - SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_SetStreamFinishedCallback(SilverCraft.CSCore.PortAudio.Native.PaStream*,SilverCraft.CSCore.PortAudio.PaStreamFinishedCallback)
+  - SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_SetStreamFinishedCallback(SilverCraft.CSCore.PortAudio.Native.PaStream*,SilverCraft.CSCore.PortAudio.Native.PaStreamFinishedCallback)
   - SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_Sleep(System.IntPtr)
   - SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_StartStream(System.Void*)
   - SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_StopStream(System.Void*)
@@ -74,10 +74,10 @@ items:
   type: Class
   source:
     id: NativeMethods
-    path: C:\Users\Filip Velichkovski\RiderProjects\cscore\SilverCraft.CSCore.PortAudio\obj\Release\net8.0\SilverCraft.CSCore.NativeLibraryResolver\SilverCraft.CSCore.NativeLibraryResolver.SourceGeneratorWithAttributes\NativeMethods.DllImportResolver.g.cs
-    startLine: 11
+    path: C:\Users\Filip Velichkovski\RiderProjects\cscore\SilverCraft.CSCore\obj\Release\net10.0\SilverCraft.CSCore.NativeLibraryResolver\SilverCraft.CSCore.NativeLibraryResolver.SourceGeneratorWithAttributes\NativeMethods.DllImportResolver.g.cs
+    startLine: 10
   assemblies:
-  - SilverCraft.CSCore.PortAudio
+  - SilverCraft.CSCore
   namespace: SilverCraft.CSCore.PortAudio.Native
   syntax:
     content: >-
@@ -137,14 +137,14 @@ items:
   type: Field
   source:
     remote:
-      path: SilverCraft.CSCore.PortAudio/Native/NativeMethods.cs
+      path: SilverCraft.CSCore/PortAudio/Native/NativeMethods.cs
       branch: master
       repo: https://github.com/thesilvercraft/cscore
     id: dllName
-    path: ../SilverCraft.CSCore.PortAudio/Native/NativeMethods.cs
-    startLine: 31
+    path: ../SilverCraft.CSCore/PortAudio/Native/NativeMethods.cs
+    startLine: 32
   assemblies:
-  - SilverCraft.CSCore.PortAudio
+  - SilverCraft.CSCore
   namespace: SilverCraft.CSCore.PortAudio.Native
   syntax:
     content: public const string dllName = "libportaudio.so.2"
@@ -163,7 +163,7 @@ items:
   fullName: SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_GetVersion()
   type: Method
   assemblies:
-  - SilverCraft.CSCore.PortAudio
+  - SilverCraft.CSCore
   namespace: SilverCraft.CSCore.PortAudio.Native
   syntax:
     content: public static extern int Pa_GetVersion()
@@ -183,7 +183,7 @@ items:
   fullName: SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_GetVersionText()
   type: Method
   assemblies:
-  - SilverCraft.CSCore.PortAudio
+  - SilverCraft.CSCore
   namespace: SilverCraft.CSCore.PortAudio.Native
   syntax:
     content: public static extern sbyte* Pa_GetVersionText()
@@ -203,7 +203,7 @@ items:
   fullName: SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_GetVersionInfo()
   type: Method
   assemblies:
-  - SilverCraft.CSCore.PortAudio
+  - SilverCraft.CSCore
   namespace: SilverCraft.CSCore.PortAudio.Native
   syntax:
     content: public static extern PaVersionInfo* Pa_GetVersionInfo()
@@ -223,7 +223,7 @@ items:
   fullName: SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_GetErrorText(int)
   type: Method
   assemblies:
-  - SilverCraft.CSCore.PortAudio
+  - SilverCraft.CSCore
   namespace: SilverCraft.CSCore.PortAudio.Native
   syntax:
     content: public static extern char* Pa_GetErrorText(int errorCode)
@@ -249,7 +249,7 @@ items:
   fullName: SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_Initialize()
   type: Method
   assemblies:
-  - SilverCraft.CSCore.PortAudio
+  - SilverCraft.CSCore
   namespace: SilverCraft.CSCore.PortAudio.Native
   syntax:
     content: public static extern int Pa_Initialize()
@@ -269,7 +269,7 @@ items:
   fullName: SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_Terminate()
   type: Method
   assemblies:
-  - SilverCraft.CSCore.PortAudio
+  - SilverCraft.CSCore
   namespace: SilverCraft.CSCore.PortAudio.Native
   syntax:
     content: public static extern int Pa_Terminate()
@@ -289,7 +289,7 @@ items:
   fullName: SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_GetHostApiCount()
   type: Method
   assemblies:
-  - SilverCraft.CSCore.PortAudio
+  - SilverCraft.CSCore
   namespace: SilverCraft.CSCore.PortAudio.Native
   syntax:
     content: public static extern int Pa_GetHostApiCount()
@@ -309,7 +309,7 @@ items:
   fullName: SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_GetDefaultHostApi()
   type: Method
   assemblies:
-  - SilverCraft.CSCore.PortAudio
+  - SilverCraft.CSCore
   namespace: SilverCraft.CSCore.PortAudio.Native
   syntax:
     content: public static extern int Pa_GetDefaultHostApi()
@@ -329,7 +329,7 @@ items:
   fullName: SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_GetHostApiInfo(int)
   type: Method
   assemblies:
-  - SilverCraft.CSCore.PortAudio
+  - SilverCraft.CSCore
   namespace: SilverCraft.CSCore.PortAudio.Native
   syntax:
     content: public static extern PaHostApiInfo* Pa_GetHostApiInfo(int hostApi)
@@ -355,7 +355,7 @@ items:
   fullName: SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_HostApiTypeIdToHostApiIndex(SilverCraft.CSCore.PortAudio.Native.PaHostApiTypeId)
   type: Method
   assemblies:
-  - SilverCraft.CSCore.PortAudio
+  - SilverCraft.CSCore
   namespace: SilverCraft.CSCore.PortAudio.Native
   syntax:
     content: public static extern int Pa_HostApiTypeIdToHostApiIndex(PaHostApiTypeId type)
@@ -378,7 +378,7 @@ items:
   fullName: SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_HostApiDeviceIndexToDeviceIndex(int, int)
   type: Method
   assemblies:
-  - SilverCraft.CSCore.PortAudio
+  - SilverCraft.CSCore
   namespace: SilverCraft.CSCore.PortAudio.Native
   syntax:
     content: public static extern int Pa_HostApiDeviceIndexToDeviceIndex(int hostApi, int hostApiDeviceIndex)
@@ -406,7 +406,7 @@ items:
   fullName: SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_GetLastHostErrorInfo()
   type: Method
   assemblies:
-  - SilverCraft.CSCore.PortAudio
+  - SilverCraft.CSCore
   namespace: SilverCraft.CSCore.PortAudio.Native
   syntax:
     content: public static extern PaHostErrorInfo* Pa_GetLastHostErrorInfo()
@@ -426,7 +426,7 @@ items:
   fullName: SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_GetDeviceCount()
   type: Method
   assemblies:
-  - SilverCraft.CSCore.PortAudio
+  - SilverCraft.CSCore
   namespace: SilverCraft.CSCore.PortAudio.Native
   syntax:
     content: public static extern int Pa_GetDeviceCount()
@@ -446,7 +446,7 @@ items:
   fullName: SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_GetDefaultInputDevice()
   type: Method
   assemblies:
-  - SilverCraft.CSCore.PortAudio
+  - SilverCraft.CSCore
   namespace: SilverCraft.CSCore.PortAudio.Native
   syntax:
     content: public static extern int Pa_GetDefaultInputDevice()
@@ -466,7 +466,7 @@ items:
   fullName: SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_GetDefaultOutputDevice()
   type: Method
   assemblies:
-  - SilverCraft.CSCore.PortAudio
+  - SilverCraft.CSCore
   namespace: SilverCraft.CSCore.PortAudio.Native
   syntax:
     content: public static extern int Pa_GetDefaultOutputDevice()
@@ -486,7 +486,7 @@ items:
   fullName: SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_GetDeviceInfo(int)
   type: Method
   assemblies:
-  - SilverCraft.CSCore.PortAudio
+  - SilverCraft.CSCore
   namespace: SilverCraft.CSCore.PortAudio.Native
   syntax:
     content: public static extern PaDeviceInfo* Pa_GetDeviceInfo(int device)
@@ -512,7 +512,7 @@ items:
   fullName: SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_IsFormatSupported(SilverCraft.CSCore.PortAudio.Native.PaStreamParameters*, SilverCraft.CSCore.PortAudio.Native.PaStreamParameters*, double)
   type: Method
   assemblies:
-  - SilverCraft.CSCore.PortAudio
+  - SilverCraft.CSCore
   namespace: SilverCraft.CSCore.PortAudio.Native
   syntax:
     content: public static extern int Pa_IsFormatSupported(PaStreamParameters* inputParameters, PaStreamParameters* outputParameters, double sampleRate)
@@ -542,7 +542,7 @@ items:
   fullName: SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_OpenStream(SilverCraft.CSCore.PortAudio.Native.PaStream**, SilverCraft.CSCore.PortAudio.Native.PaStreamParameters*, SilverCraft.CSCore.PortAudio.Native.PaStreamParameters*, double, nuint, nuint, delegate* unmanaged[Cdecl]<void*, void*, ulong, SilverCraft.CSCore.PortAudio.Native.PaStreamCallbackTimeInfo*, nuint, void*, int>, void*)
   type: Method
   assemblies:
-  - SilverCraft.CSCore.PortAudio
+  - SilverCraft.CSCore
   namespace: SilverCraft.CSCore.PortAudio.Native
   syntax:
     content: public static extern int Pa_OpenStream(PaStream** stream, PaStreamParameters* inputParameters, PaStreamParameters* outputParameters, double sampleRate, nuint framesPerBuffer, nuint streamFlags, delegate* unmanaged[Cdecl]<void*, void*, ulong, PaStreamCallbackTimeInfo*, nuint, void*, int> streamCallback, void* userData)
@@ -570,19 +570,19 @@ items:
   nameWithType.vb: NativeMethods.Pa_OpenStream(PaStream**, PaStreamParameters*, PaStreamParameters*, Double, UIntPtr, UIntPtr, , Void*)
   fullName.vb: SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_OpenStream(SilverCraft.CSCore.PortAudio.Native.PaStream**, SilverCraft.CSCore.PortAudio.Native.PaStreamParameters*, SilverCraft.CSCore.PortAudio.Native.PaStreamParameters*, Double, System.UIntPtr, System.UIntPtr, , Void*)
   name.vb: Pa_OpenStream(PaStream**, PaStreamParameters*, PaStreamParameters*, Double, UIntPtr, UIntPtr, , Void*)
-- uid: SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_OpenDefaultStream(SilverCraft.CSCore.PortAudio.Native.PaStream**,System.Int32,System.Int32,System.UIntPtr,System.Double,System.UIntPtr,SilverCraft.CSCore.PortAudio.StreamCallBack,System.IntPtr)
-  commentId: M:SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_OpenDefaultStream(SilverCraft.CSCore.PortAudio.Native.PaStream**,System.Int32,System.Int32,System.UIntPtr,System.Double,System.UIntPtr,SilverCraft.CSCore.PortAudio.StreamCallBack,System.IntPtr)
-  id: Pa_OpenDefaultStream(SilverCraft.CSCore.PortAudio.Native.PaStream**,System.Int32,System.Int32,System.UIntPtr,System.Double,System.UIntPtr,SilverCraft.CSCore.PortAudio.StreamCallBack,System.IntPtr)
+- uid: SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_OpenDefaultStream(SilverCraft.CSCore.PortAudio.Native.PaStream**,System.Int32,System.Int32,System.UIntPtr,System.Double,System.UIntPtr,SilverCraft.CSCore.PortAudio.Native.StreamCallBack,System.IntPtr)
+  commentId: M:SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_OpenDefaultStream(SilverCraft.CSCore.PortAudio.Native.PaStream**,System.Int32,System.Int32,System.UIntPtr,System.Double,System.UIntPtr,SilverCraft.CSCore.PortAudio.Native.StreamCallBack,System.IntPtr)
+  id: Pa_OpenDefaultStream(SilverCraft.CSCore.PortAudio.Native.PaStream**,System.Int32,System.Int32,System.UIntPtr,System.Double,System.UIntPtr,SilverCraft.CSCore.PortAudio.Native.StreamCallBack,System.IntPtr)
   parent: SilverCraft.CSCore.PortAudio.Native.NativeMethods
   langs:
   - csharp
   - vb
   name: Pa_OpenDefaultStream(PaStream**, int, int, nuint, double, nuint, StreamCallBack, nint)
   nameWithType: NativeMethods.Pa_OpenDefaultStream(PaStream**, int, int, nuint, double, nuint, StreamCallBack, nint)
-  fullName: SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_OpenDefaultStream(SilverCraft.CSCore.PortAudio.Native.PaStream**, int, int, nuint, double, nuint, SilverCraft.CSCore.PortAudio.StreamCallBack, nint)
+  fullName: SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_OpenDefaultStream(SilverCraft.CSCore.PortAudio.Native.PaStream**, int, int, nuint, double, nuint, SilverCraft.CSCore.PortAudio.Native.StreamCallBack, nint)
   type: Method
   assemblies:
-  - SilverCraft.CSCore.PortAudio
+  - SilverCraft.CSCore
   namespace: SilverCraft.CSCore.PortAudio.Native
   syntax:
     content: public static extern int Pa_OpenDefaultStream(PaStream** stream, int numInputChannels, int numOutputChannels, nuint sampleFormat, double sampleRate, nuint framesPerBuffer, StreamCallBack streamCallback, nint userData)
@@ -600,7 +600,7 @@ items:
     - id: framesPerBuffer
       type: System.UIntPtr
     - id: streamCallback
-      type: SilverCraft.CSCore.PortAudio.StreamCallBack
+      type: SilverCraft.CSCore.PortAudio.Native.StreamCallBack
     - id: userData
       type: System.IntPtr
     return:
@@ -608,7 +608,7 @@ items:
     content.vb: Public Shared Function Pa_OpenDefaultStream(stream As PaStream**, numInputChannels As Integer, numOutputChannels As Integer, sampleFormat As UIntPtr, sampleRate As Double, framesPerBuffer As UIntPtr, streamCallback As StreamCallBack, userData As IntPtr) As Integer
   overload: SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_OpenDefaultStream*
   nameWithType.vb: NativeMethods.Pa_OpenDefaultStream(PaStream**, Integer, Integer, UIntPtr, Double, UIntPtr, StreamCallBack, IntPtr)
-  fullName.vb: SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_OpenDefaultStream(SilverCraft.CSCore.PortAudio.Native.PaStream**, Integer, Integer, System.UIntPtr, Double, System.UIntPtr, SilverCraft.CSCore.PortAudio.StreamCallBack, System.IntPtr)
+  fullName.vb: SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_OpenDefaultStream(SilverCraft.CSCore.PortAudio.Native.PaStream**, Integer, Integer, System.UIntPtr, Double, System.UIntPtr, SilverCraft.CSCore.PortAudio.Native.StreamCallBack, System.IntPtr)
   name.vb: Pa_OpenDefaultStream(PaStream**, Integer, Integer, UIntPtr, Double, UIntPtr, StreamCallBack, IntPtr)
 - uid: SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_CloseStream(SilverCraft.CSCore.PortAudio.Native.PaStream*)
   commentId: M:SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_CloseStream(SilverCraft.CSCore.PortAudio.Native.PaStream*)
@@ -622,7 +622,7 @@ items:
   fullName: SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_CloseStream(SilverCraft.CSCore.PortAudio.Native.PaStream*)
   type: Method
   assemblies:
-  - SilverCraft.CSCore.PortAudio
+  - SilverCraft.CSCore
   namespace: SilverCraft.CSCore.PortAudio.Native
   syntax:
     content: public static extern int Pa_CloseStream(PaStream* stream)
@@ -633,19 +633,19 @@ items:
       type: System.Int32
     content.vb: Public Shared Function Pa_CloseStream(stream As PaStream*) As Integer
   overload: SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_CloseStream*
-- uid: SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_SetStreamFinishedCallback(SilverCraft.CSCore.PortAudio.Native.PaStream*,SilverCraft.CSCore.PortAudio.PaStreamFinishedCallback)
-  commentId: M:SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_SetStreamFinishedCallback(SilverCraft.CSCore.PortAudio.Native.PaStream*,SilverCraft.CSCore.PortAudio.PaStreamFinishedCallback)
-  id: Pa_SetStreamFinishedCallback(SilverCraft.CSCore.PortAudio.Native.PaStream*,SilverCraft.CSCore.PortAudio.PaStreamFinishedCallback)
+- uid: SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_SetStreamFinishedCallback(SilverCraft.CSCore.PortAudio.Native.PaStream*,SilverCraft.CSCore.PortAudio.Native.PaStreamFinishedCallback)
+  commentId: M:SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_SetStreamFinishedCallback(SilverCraft.CSCore.PortAudio.Native.PaStream*,SilverCraft.CSCore.PortAudio.Native.PaStreamFinishedCallback)
+  id: Pa_SetStreamFinishedCallback(SilverCraft.CSCore.PortAudio.Native.PaStream*,SilverCraft.CSCore.PortAudio.Native.PaStreamFinishedCallback)
   parent: SilverCraft.CSCore.PortAudio.Native.NativeMethods
   langs:
   - csharp
   - vb
   name: Pa_SetStreamFinishedCallback(PaStream*, PaStreamFinishedCallback)
   nameWithType: NativeMethods.Pa_SetStreamFinishedCallback(PaStream*, PaStreamFinishedCallback)
-  fullName: SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_SetStreamFinishedCallback(SilverCraft.CSCore.PortAudio.Native.PaStream*, SilverCraft.CSCore.PortAudio.PaStreamFinishedCallback)
+  fullName: SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_SetStreamFinishedCallback(SilverCraft.CSCore.PortAudio.Native.PaStream*, SilverCraft.CSCore.PortAudio.Native.PaStreamFinishedCallback)
   type: Method
   assemblies:
-  - SilverCraft.CSCore.PortAudio
+  - SilverCraft.CSCore
   namespace: SilverCraft.CSCore.PortAudio.Native
   syntax:
     content: public static extern int Pa_SetStreamFinishedCallback(PaStream* stream, PaStreamFinishedCallback streamFinishedCallback)
@@ -653,7 +653,7 @@ items:
     - id: stream
       type: SilverCraft.CSCore.PortAudio.Native.PaStream*
     - id: streamFinishedCallback
-      type: SilverCraft.CSCore.PortAudio.PaStreamFinishedCallback
+      type: SilverCraft.CSCore.PortAudio.Native.PaStreamFinishedCallback
     return:
       type: System.Int32
     content.vb: Public Shared Function Pa_SetStreamFinishedCallback(stream As PaStream*, streamFinishedCallback As PaStreamFinishedCallback) As Integer
@@ -670,7 +670,7 @@ items:
   fullName: SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_StartStream(void*)
   type: Method
   assemblies:
-  - SilverCraft.CSCore.PortAudio
+  - SilverCraft.CSCore
   namespace: SilverCraft.CSCore.PortAudio.Native
   syntax:
     content: public static extern int Pa_StartStream(void* stream)
@@ -696,7 +696,7 @@ items:
   fullName: SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_StopStream(void*)
   type: Method
   assemblies:
-  - SilverCraft.CSCore.PortAudio
+  - SilverCraft.CSCore
   namespace: SilverCraft.CSCore.PortAudio.Native
   syntax:
     content: public static extern int Pa_StopStream(void* stream)
@@ -722,7 +722,7 @@ items:
   fullName: SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_AbortStream(void*)
   type: Method
   assemblies:
-  - SilverCraft.CSCore.PortAudio
+  - SilverCraft.CSCore
   namespace: SilverCraft.CSCore.PortAudio.Native
   syntax:
     content: public static extern int Pa_AbortStream(void* stream)
@@ -748,7 +748,7 @@ items:
   fullName: SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_IsStreamStopped(void*)
   type: Method
   assemblies:
-  - SilverCraft.CSCore.PortAudio
+  - SilverCraft.CSCore
   namespace: SilverCraft.CSCore.PortAudio.Native
   syntax:
     content: public static extern int Pa_IsStreamStopped(void* stream)
@@ -774,7 +774,7 @@ items:
   fullName: SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_IsStreamActive(void*)
   type: Method
   assemblies:
-  - SilverCraft.CSCore.PortAudio
+  - SilverCraft.CSCore
   namespace: SilverCraft.CSCore.PortAudio.Native
   syntax:
     content: public static extern int Pa_IsStreamActive(void* stream)
@@ -800,7 +800,7 @@ items:
   fullName: SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_GetStreamInfo(void*)
   type: Method
   assemblies:
-  - SilverCraft.CSCore.PortAudio
+  - SilverCraft.CSCore
   namespace: SilverCraft.CSCore.PortAudio.Native
   syntax:
     content: public static extern PaStreamInfo* Pa_GetStreamInfo(void* stream)
@@ -826,7 +826,7 @@ items:
   fullName: SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_GetStreamTime(void*)
   type: Method
   assemblies:
-  - SilverCraft.CSCore.PortAudio
+  - SilverCraft.CSCore
   namespace: SilverCraft.CSCore.PortAudio.Native
   syntax:
     content: public static extern double Pa_GetStreamTime(void* stream)
@@ -852,7 +852,7 @@ items:
   fullName: SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_GetStreamCpuLoad(void*)
   type: Method
   assemblies:
-  - SilverCraft.CSCore.PortAudio
+  - SilverCraft.CSCore
   namespace: SilverCraft.CSCore.PortAudio.Native
   syntax:
     content: public static extern double Pa_GetStreamCpuLoad(void* stream)
@@ -878,7 +878,7 @@ items:
   fullName: SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_ReadStream(void*, void*, nuint)
   type: Method
   assemblies:
-  - SilverCraft.CSCore.PortAudio
+  - SilverCraft.CSCore
   namespace: SilverCraft.CSCore.PortAudio.Native
   syntax:
     content: public static extern int Pa_ReadStream(void* stream, void* buffer, nuint frames)
@@ -908,7 +908,7 @@ items:
   fullName: SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_WriteStream(void*, void*, nuint)
   type: Method
   assemblies:
-  - SilverCraft.CSCore.PortAudio
+  - SilverCraft.CSCore
   namespace: SilverCraft.CSCore.PortAudio.Native
   syntax:
     content: public static extern int Pa_WriteStream(void* stream, void* buffer, nuint frames)
@@ -938,7 +938,7 @@ items:
   fullName: SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_GetStreamReadAvailable(void*)
   type: Method
   assemblies:
-  - SilverCraft.CSCore.PortAudio
+  - SilverCraft.CSCore
   namespace: SilverCraft.CSCore.PortAudio.Native
   syntax:
     content: public static extern nint Pa_GetStreamReadAvailable(void* stream)
@@ -964,7 +964,7 @@ items:
   fullName: SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_GetStreamWriteAvailable(void*)
   type: Method
   assemblies:
-  - SilverCraft.CSCore.PortAudio
+  - SilverCraft.CSCore
   namespace: SilverCraft.CSCore.PortAudio.Native
   syntax:
     content: public static extern nint Pa_GetStreamWriteAvailable(void* stream)
@@ -990,7 +990,7 @@ items:
   fullName: SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_GetSampleSize(nuint)
   type: Method
   assemblies:
-  - SilverCraft.CSCore.PortAudio
+  - SilverCraft.CSCore
   namespace: SilverCraft.CSCore.PortAudio.Native
   syntax:
     content: public static extern int Pa_GetSampleSize(nuint format)
@@ -1016,7 +1016,7 @@ items:
   fullName: SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_Sleep(nint)
   type: Method
   assemblies:
-  - SilverCraft.CSCore.PortAudio
+  - SilverCraft.CSCore
   namespace: SilverCraft.CSCore.PortAudio.Native
   syntax:
     content: public static extern void Pa_Sleep(nint msec)
@@ -1041,14 +1041,14 @@ items:
   type: Field
   source:
     remote:
-      path: SilverCraft.CSCore.PortAudio/Native/NativeMethods.cs
+      path: SilverCraft.CSCore/PortAudio/Native/NativeMethods.cs
       branch: master
       repo: https://github.com/thesilvercraft/cscore
     id: paNoDevice
-    path: ../SilverCraft.CSCore.PortAudio/Native/NativeMethods.cs
-    startLine: 188
+    path: ../SilverCraft.CSCore/PortAudio/Native/NativeMethods.cs
+    startLine: 189
   assemblies:
-  - SilverCraft.CSCore.PortAudio
+  - SilverCraft.CSCore
   namespace: SilverCraft.CSCore.PortAudio.Native
   syntax:
     content: public const int paNoDevice = -1
@@ -1068,14 +1068,14 @@ items:
   type: Field
   source:
     remote:
-      path: SilverCraft.CSCore.PortAudio/Native/NativeMethods.cs
+      path: SilverCraft.CSCore/PortAudio/Native/NativeMethods.cs
       branch: master
       repo: https://github.com/thesilvercraft/cscore
     id: paUseHostApiSpecificDeviceSpecification
-    path: ../SilverCraft.CSCore.PortAudio/Native/NativeMethods.cs
-    startLine: 191
+    path: ../SilverCraft.CSCore/PortAudio/Native/NativeMethods.cs
+    startLine: 192
   assemblies:
-  - SilverCraft.CSCore.PortAudio
+  - SilverCraft.CSCore
   namespace: SilverCraft.CSCore.PortAudio.Native
   syntax:
     content: public const int paUseHostApiSpecificDeviceSpecification = -2
@@ -1095,14 +1095,14 @@ items:
   type: Field
   source:
     remote:
-      path: SilverCraft.CSCore.PortAudio/Native/NativeMethods.cs
+      path: SilverCraft.CSCore/PortAudio/Native/NativeMethods.cs
       branch: master
       repo: https://github.com/thesilvercraft/cscore
     id: paFloat32
-    path: ../SilverCraft.CSCore.PortAudio/Native/NativeMethods.cs
-    startLine: 194
+    path: ../SilverCraft.CSCore/PortAudio/Native/NativeMethods.cs
+    startLine: 195
   assemblies:
-  - SilverCraft.CSCore.PortAudio
+  - SilverCraft.CSCore
   namespace: SilverCraft.CSCore.PortAudio.Native
   syntax:
     content: public const nuint paFloat32 = 1
@@ -1122,14 +1122,14 @@ items:
   type: Field
   source:
     remote:
-      path: SilverCraft.CSCore.PortAudio/Native/NativeMethods.cs
+      path: SilverCraft.CSCore/PortAudio/Native/NativeMethods.cs
       branch: master
       repo: https://github.com/thesilvercraft/cscore
     id: paInt32
-    path: ../SilverCraft.CSCore.PortAudio/Native/NativeMethods.cs
-    startLine: 197
+    path: ../SilverCraft.CSCore/PortAudio/Native/NativeMethods.cs
+    startLine: 198
   assemblies:
-  - SilverCraft.CSCore.PortAudio
+  - SilverCraft.CSCore
   namespace: SilverCraft.CSCore.PortAudio.Native
   syntax:
     content: public const nuint paInt32 = 2
@@ -1149,14 +1149,14 @@ items:
   type: Field
   source:
     remote:
-      path: SilverCraft.CSCore.PortAudio/Native/NativeMethods.cs
+      path: SilverCraft.CSCore/PortAudio/Native/NativeMethods.cs
       branch: master
       repo: https://github.com/thesilvercraft/cscore
     id: paInt24
-    path: ../SilverCraft.CSCore.PortAudio/Native/NativeMethods.cs
-    startLine: 200
+    path: ../SilverCraft.CSCore/PortAudio/Native/NativeMethods.cs
+    startLine: 201
   assemblies:
-  - SilverCraft.CSCore.PortAudio
+  - SilverCraft.CSCore
   namespace: SilverCraft.CSCore.PortAudio.Native
   syntax:
     content: public const nuint paInt24 = 4
@@ -1176,14 +1176,14 @@ items:
   type: Field
   source:
     remote:
-      path: SilverCraft.CSCore.PortAudio/Native/NativeMethods.cs
+      path: SilverCraft.CSCore/PortAudio/Native/NativeMethods.cs
       branch: master
       repo: https://github.com/thesilvercraft/cscore
     id: paInt16
-    path: ../SilverCraft.CSCore.PortAudio/Native/NativeMethods.cs
-    startLine: 203
+    path: ../SilverCraft.CSCore/PortAudio/Native/NativeMethods.cs
+    startLine: 204
   assemblies:
-  - SilverCraft.CSCore.PortAudio
+  - SilverCraft.CSCore
   namespace: SilverCraft.CSCore.PortAudio.Native
   syntax:
     content: public const nuint paInt16 = 8
@@ -1203,14 +1203,14 @@ items:
   type: Field
   source:
     remote:
-      path: SilverCraft.CSCore.PortAudio/Native/NativeMethods.cs
+      path: SilverCraft.CSCore/PortAudio/Native/NativeMethods.cs
       branch: master
       repo: https://github.com/thesilvercraft/cscore
     id: paInt8
-    path: ../SilverCraft.CSCore.PortAudio/Native/NativeMethods.cs
-    startLine: 206
+    path: ../SilverCraft.CSCore/PortAudio/Native/NativeMethods.cs
+    startLine: 207
   assemblies:
-  - SilverCraft.CSCore.PortAudio
+  - SilverCraft.CSCore
   namespace: SilverCraft.CSCore.PortAudio.Native
   syntax:
     content: public const nuint paInt8 = 16
@@ -1230,14 +1230,14 @@ items:
   type: Field
   source:
     remote:
-      path: SilverCraft.CSCore.PortAudio/Native/NativeMethods.cs
+      path: SilverCraft.CSCore/PortAudio/Native/NativeMethods.cs
       branch: master
       repo: https://github.com/thesilvercraft/cscore
     id: paUInt8
-    path: ../SilverCraft.CSCore.PortAudio/Native/NativeMethods.cs
-    startLine: 209
+    path: ../SilverCraft.CSCore/PortAudio/Native/NativeMethods.cs
+    startLine: 210
   assemblies:
-  - SilverCraft.CSCore.PortAudio
+  - SilverCraft.CSCore
   namespace: SilverCraft.CSCore.PortAudio.Native
   syntax:
     content: public const nuint paUInt8 = 32
@@ -1257,14 +1257,14 @@ items:
   type: Field
   source:
     remote:
-      path: SilverCraft.CSCore.PortAudio/Native/NativeMethods.cs
+      path: SilverCraft.CSCore/PortAudio/Native/NativeMethods.cs
       branch: master
       repo: https://github.com/thesilvercraft/cscore
     id: paCustomFormat
-    path: ../SilverCraft.CSCore.PortAudio/Native/NativeMethods.cs
-    startLine: 212
+    path: ../SilverCraft.CSCore/PortAudio/Native/NativeMethods.cs
+    startLine: 213
   assemblies:
-  - SilverCraft.CSCore.PortAudio
+  - SilverCraft.CSCore
   namespace: SilverCraft.CSCore.PortAudio.Native
   syntax:
     content: public const nuint paCustomFormat = 65536
@@ -1284,14 +1284,14 @@ items:
   type: Field
   source:
     remote:
-      path: SilverCraft.CSCore.PortAudio/Native/NativeMethods.cs
+      path: SilverCraft.CSCore/PortAudio/Native/NativeMethods.cs
       branch: master
       repo: https://github.com/thesilvercraft/cscore
     id: paNonInterleaved
-    path: ../SilverCraft.CSCore.PortAudio/Native/NativeMethods.cs
-    startLine: 215
+    path: ../SilverCraft.CSCore/PortAudio/Native/NativeMethods.cs
+    startLine: 216
   assemblies:
-  - SilverCraft.CSCore.PortAudio
+  - SilverCraft.CSCore
   namespace: SilverCraft.CSCore.PortAudio.Native
   syntax:
     content: public const nuint paNonInterleaved = 2147483648
@@ -1311,14 +1311,14 @@ items:
   type: Field
   source:
     remote:
-      path: SilverCraft.CSCore.PortAudio/Native/NativeMethods.cs
+      path: SilverCraft.CSCore/PortAudio/Native/NativeMethods.cs
       branch: master
       repo: https://github.com/thesilvercraft/cscore
     id: paFormatIsSupported
-    path: ../SilverCraft.CSCore.PortAudio/Native/NativeMethods.cs
-    startLine: 218
+    path: ../SilverCraft.CSCore/PortAudio/Native/NativeMethods.cs
+    startLine: 219
   assemblies:
-  - SilverCraft.CSCore.PortAudio
+  - SilverCraft.CSCore
   namespace: SilverCraft.CSCore.PortAudio.Native
   syntax:
     content: public const int paFormatIsSupported = 0
@@ -1338,14 +1338,14 @@ items:
   type: Field
   source:
     remote:
-      path: SilverCraft.CSCore.PortAudio/Native/NativeMethods.cs
+      path: SilverCraft.CSCore/PortAudio/Native/NativeMethods.cs
       branch: master
       repo: https://github.com/thesilvercraft/cscore
     id: paFramesPerBufferUnspecified
-    path: ../SilverCraft.CSCore.PortAudio/Native/NativeMethods.cs
-    startLine: 221
+    path: ../SilverCraft.CSCore/PortAudio/Native/NativeMethods.cs
+    startLine: 222
   assemblies:
-  - SilverCraft.CSCore.PortAudio
+  - SilverCraft.CSCore
   namespace: SilverCraft.CSCore.PortAudio.Native
   syntax:
     content: public const int paFramesPerBufferUnspecified = 0
@@ -1365,14 +1365,14 @@ items:
   type: Field
   source:
     remote:
-      path: SilverCraft.CSCore.PortAudio/Native/NativeMethods.cs
+      path: SilverCraft.CSCore/PortAudio/Native/NativeMethods.cs
       branch: master
       repo: https://github.com/thesilvercraft/cscore
     id: paNoFlag
-    path: ../SilverCraft.CSCore.PortAudio/Native/NativeMethods.cs
-    startLine: 224
+    path: ../SilverCraft.CSCore/PortAudio/Native/NativeMethods.cs
+    startLine: 225
   assemblies:
-  - SilverCraft.CSCore.PortAudio
+  - SilverCraft.CSCore
   namespace: SilverCraft.CSCore.PortAudio.Native
   syntax:
     content: public const nuint paNoFlag = 0
@@ -1392,14 +1392,14 @@ items:
   type: Field
   source:
     remote:
-      path: SilverCraft.CSCore.PortAudio/Native/NativeMethods.cs
+      path: SilverCraft.CSCore/PortAudio/Native/NativeMethods.cs
       branch: master
       repo: https://github.com/thesilvercraft/cscore
     id: paClipOff
-    path: ../SilverCraft.CSCore.PortAudio/Native/NativeMethods.cs
-    startLine: 227
+    path: ../SilverCraft.CSCore/PortAudio/Native/NativeMethods.cs
+    startLine: 228
   assemblies:
-  - SilverCraft.CSCore.PortAudio
+  - SilverCraft.CSCore
   namespace: SilverCraft.CSCore.PortAudio.Native
   syntax:
     content: public const nuint paClipOff = 1
@@ -1419,14 +1419,14 @@ items:
   type: Field
   source:
     remote:
-      path: SilverCraft.CSCore.PortAudio/Native/NativeMethods.cs
+      path: SilverCraft.CSCore/PortAudio/Native/NativeMethods.cs
       branch: master
       repo: https://github.com/thesilvercraft/cscore
     id: paDitherOff
-    path: ../SilverCraft.CSCore.PortAudio/Native/NativeMethods.cs
-    startLine: 230
+    path: ../SilverCraft.CSCore/PortAudio/Native/NativeMethods.cs
+    startLine: 231
   assemblies:
-  - SilverCraft.CSCore.PortAudio
+  - SilverCraft.CSCore
   namespace: SilverCraft.CSCore.PortAudio.Native
   syntax:
     content: public const nuint paDitherOff = 2
@@ -1446,14 +1446,14 @@ items:
   type: Field
   source:
     remote:
-      path: SilverCraft.CSCore.PortAudio/Native/NativeMethods.cs
+      path: SilverCraft.CSCore/PortAudio/Native/NativeMethods.cs
       branch: master
       repo: https://github.com/thesilvercraft/cscore
     id: paNeverDropInput
-    path: ../SilverCraft.CSCore.PortAudio/Native/NativeMethods.cs
-    startLine: 233
+    path: ../SilverCraft.CSCore/PortAudio/Native/NativeMethods.cs
+    startLine: 234
   assemblies:
-  - SilverCraft.CSCore.PortAudio
+  - SilverCraft.CSCore
   namespace: SilverCraft.CSCore.PortAudio.Native
   syntax:
     content: public const nuint paNeverDropInput = 4
@@ -1473,14 +1473,14 @@ items:
   type: Field
   source:
     remote:
-      path: SilverCraft.CSCore.PortAudio/Native/NativeMethods.cs
+      path: SilverCraft.CSCore/PortAudio/Native/NativeMethods.cs
       branch: master
       repo: https://github.com/thesilvercraft/cscore
     id: paPrimeOutputBuffersUsingStreamCallback
-    path: ../SilverCraft.CSCore.PortAudio/Native/NativeMethods.cs
-    startLine: 236
+    path: ../SilverCraft.CSCore/PortAudio/Native/NativeMethods.cs
+    startLine: 237
   assemblies:
-  - SilverCraft.CSCore.PortAudio
+  - SilverCraft.CSCore
   namespace: SilverCraft.CSCore.PortAudio.Native
   syntax:
     content: public const nuint paPrimeOutputBuffersUsingStreamCallback = 8
@@ -1500,14 +1500,14 @@ items:
   type: Field
   source:
     remote:
-      path: SilverCraft.CSCore.PortAudio/Native/NativeMethods.cs
+      path: SilverCraft.CSCore/PortAudio/Native/NativeMethods.cs
       branch: master
       repo: https://github.com/thesilvercraft/cscore
     id: paPlatformSpecificFlags
-    path: ../SilverCraft.CSCore.PortAudio/Native/NativeMethods.cs
-    startLine: 239
+    path: ../SilverCraft.CSCore/PortAudio/Native/NativeMethods.cs
+    startLine: 240
   assemblies:
-  - SilverCraft.CSCore.PortAudio
+  - SilverCraft.CSCore
   namespace: SilverCraft.CSCore.PortAudio.Native
   syntax:
     content: public const nuint paPlatformSpecificFlags = 4294901760
@@ -1527,14 +1527,14 @@ items:
   type: Field
   source:
     remote:
-      path: SilverCraft.CSCore.PortAudio/Native/NativeMethods.cs
+      path: SilverCraft.CSCore/PortAudio/Native/NativeMethods.cs
       branch: master
       repo: https://github.com/thesilvercraft/cscore
     id: paInputUnderflow
-    path: ../SilverCraft.CSCore.PortAudio/Native/NativeMethods.cs
-    startLine: 242
+    path: ../SilverCraft.CSCore/PortAudio/Native/NativeMethods.cs
+    startLine: 243
   assemblies:
-  - SilverCraft.CSCore.PortAudio
+  - SilverCraft.CSCore
   namespace: SilverCraft.CSCore.PortAudio.Native
   syntax:
     content: public const nuint paInputUnderflow = 1
@@ -1554,14 +1554,14 @@ items:
   type: Field
   source:
     remote:
-      path: SilverCraft.CSCore.PortAudio/Native/NativeMethods.cs
+      path: SilverCraft.CSCore/PortAudio/Native/NativeMethods.cs
       branch: master
       repo: https://github.com/thesilvercraft/cscore
     id: paInputOverflow
-    path: ../SilverCraft.CSCore.PortAudio/Native/NativeMethods.cs
-    startLine: 245
+    path: ../SilverCraft.CSCore/PortAudio/Native/NativeMethods.cs
+    startLine: 246
   assemblies:
-  - SilverCraft.CSCore.PortAudio
+  - SilverCraft.CSCore
   namespace: SilverCraft.CSCore.PortAudio.Native
   syntax:
     content: public const nuint paInputOverflow = 2
@@ -1581,14 +1581,14 @@ items:
   type: Field
   source:
     remote:
-      path: SilverCraft.CSCore.PortAudio/Native/NativeMethods.cs
+      path: SilverCraft.CSCore/PortAudio/Native/NativeMethods.cs
       branch: master
       repo: https://github.com/thesilvercraft/cscore
     id: paOutputUnderflow
-    path: ../SilverCraft.CSCore.PortAudio/Native/NativeMethods.cs
-    startLine: 248
+    path: ../SilverCraft.CSCore/PortAudio/Native/NativeMethods.cs
+    startLine: 249
   assemblies:
-  - SilverCraft.CSCore.PortAudio
+  - SilverCraft.CSCore
   namespace: SilverCraft.CSCore.PortAudio.Native
   syntax:
     content: public const nuint paOutputUnderflow = 4
@@ -1608,14 +1608,14 @@ items:
   type: Field
   source:
     remote:
-      path: SilverCraft.CSCore.PortAudio/Native/NativeMethods.cs
+      path: SilverCraft.CSCore/PortAudio/Native/NativeMethods.cs
       branch: master
       repo: https://github.com/thesilvercraft/cscore
     id: paOutputOverflow
-    path: ../SilverCraft.CSCore.PortAudio/Native/NativeMethods.cs
-    startLine: 251
+    path: ../SilverCraft.CSCore/PortAudio/Native/NativeMethods.cs
+    startLine: 252
   assemblies:
-  - SilverCraft.CSCore.PortAudio
+  - SilverCraft.CSCore
   namespace: SilverCraft.CSCore.PortAudio.Native
   syntax:
     content: public const nuint paOutputOverflow = 8
@@ -1635,14 +1635,14 @@ items:
   type: Field
   source:
     remote:
-      path: SilverCraft.CSCore.PortAudio/Native/NativeMethods.cs
+      path: SilverCraft.CSCore/PortAudio/Native/NativeMethods.cs
       branch: master
       repo: https://github.com/thesilvercraft/cscore
     id: paPrimingOutput
-    path: ../SilverCraft.CSCore.PortAudio/Native/NativeMethods.cs
-    startLine: 254
+    path: ../SilverCraft.CSCore/PortAudio/Native/NativeMethods.cs
+    startLine: 255
   assemblies:
-  - SilverCraft.CSCore.PortAudio
+  - SilverCraft.CSCore
   namespace: SilverCraft.CSCore.PortAudio.Native
   syntax:
     content: public const nuint paPrimingOutput = 16
@@ -1662,10 +1662,10 @@ items:
   type: Method
   source:
     id: DllImportResolver
-    path: C:\Users\Filip Velichkovski\RiderProjects\cscore\SilverCraft.CSCore.PortAudio\obj\Release\net8.0\SilverCraft.CSCore.NativeLibraryResolver\SilverCraft.CSCore.NativeLibraryResolver.SourceGeneratorWithAttributes\NativeMethods.DllImportResolver.g.cs
-    startLine: 13
+    path: C:\Users\Filip Velichkovski\RiderProjects\cscore\SilverCraft.CSCore\obj\Release\net10.0\SilverCraft.CSCore.NativeLibraryResolver\SilverCraft.CSCore.NativeLibraryResolver.SourceGeneratorWithAttributes\NativeMethods.DllImportResolver.g.cs
+    startLine: 12
   assemblies:
-  - SilverCraft.CSCore.PortAudio
+  - SilverCraft.CSCore
   namespace: SilverCraft.CSCore.PortAudio.Native
   syntax:
     content: public static nint DllImportResolver(string libraryName, Assembly assembly, DllImportSearchPath? searchPath)
@@ -2361,17 +2361,17 @@ references:
 - uid: SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_OpenDefaultStream*
   commentId: Overload:SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_OpenDefaultStream
   isExternal: true
-  href: SilverCraft.CSCore.PortAudio.Native.NativeMethods.html#SilverCraft_CSCore_PortAudio_Native_NativeMethods_Pa_OpenDefaultStream_SilverCraft_CSCore_PortAudio_Native_PaStream___System_Int32_System_Int32_System_UIntPtr_System_Double_System_UIntPtr_SilverCraft_CSCore_PortAudio_StreamCallBack_System_IntPtr_
+  href: SilverCraft.CSCore.PortAudio.Native.NativeMethods.html#SilverCraft_CSCore_PortAudio_Native_NativeMethods_Pa_OpenDefaultStream_SilverCraft_CSCore_PortAudio_Native_PaStream___System_Int32_System_Int32_System_UIntPtr_System_Double_System_UIntPtr_SilverCraft_CSCore_PortAudio_Native_StreamCallBack_System_IntPtr_
   name: Pa_OpenDefaultStream
   nameWithType: NativeMethods.Pa_OpenDefaultStream
   fullName: SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_OpenDefaultStream
-- uid: SilverCraft.CSCore.PortAudio.StreamCallBack
-  commentId: T:SilverCraft.CSCore.PortAudio.StreamCallBack
-  parent: SilverCraft.CSCore.PortAudio
-  href: SilverCraft.CSCore.PortAudio.StreamCallBack.html
+- uid: SilverCraft.CSCore.PortAudio.Native.StreamCallBack
+  commentId: T:SilverCraft.CSCore.PortAudio.Native.StreamCallBack
+  parent: SilverCraft.CSCore.PortAudio.Native
+  href: SilverCraft.CSCore.PortAudio.Native.StreamCallBack.html
   name: StreamCallBack
   nameWithType: StreamCallBack
-  fullName: SilverCraft.CSCore.PortAudio.StreamCallBack
+  fullName: SilverCraft.CSCore.PortAudio.Native.StreamCallBack
 - uid: System.IntPtr
   commentId: T:System.IntPtr
   parent: System
@@ -2383,36 +2383,6 @@ references:
   nameWithType.vb: IntPtr
   fullName.vb: System.IntPtr
   name.vb: IntPtr
-- uid: SilverCraft.CSCore.PortAudio
-  commentId: N:SilverCraft.CSCore.PortAudio
-  href: SilverCraft.html
-  name: SilverCraft.CSCore.PortAudio
-  nameWithType: SilverCraft.CSCore.PortAudio
-  fullName: SilverCraft.CSCore.PortAudio
-  spec.csharp:
-  - uid: SilverCraft
-    name: SilverCraft
-    href: SilverCraft.html
-  - name: .
-  - uid: SilverCraft.CSCore
-    name: CSCore
-    href: SilverCraft.CSCore.html
-  - name: .
-  - uid: SilverCraft.CSCore.PortAudio
-    name: PortAudio
-    href: SilverCraft.CSCore.PortAudio.html
-  spec.vb:
-  - uid: SilverCraft
-    name: SilverCraft
-    href: SilverCraft.html
-  - name: .
-  - uid: SilverCraft.CSCore
-    name: CSCore
-    href: SilverCraft.CSCore.html
-  - name: .
-  - uid: SilverCraft.CSCore.PortAudio
-    name: PortAudio
-    href: SilverCraft.CSCore.PortAudio.html
 - uid: SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_CloseStream*
   commentId: Overload:SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_CloseStream
   isExternal: true
@@ -2439,17 +2409,17 @@ references:
 - uid: SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_SetStreamFinishedCallback*
   commentId: Overload:SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_SetStreamFinishedCallback
   isExternal: true
-  href: SilverCraft.CSCore.PortAudio.Native.NativeMethods.html#SilverCraft_CSCore_PortAudio_Native_NativeMethods_Pa_SetStreamFinishedCallback_SilverCraft_CSCore_PortAudio_Native_PaStream__SilverCraft_CSCore_PortAudio_PaStreamFinishedCallback_
+  href: SilverCraft.CSCore.PortAudio.Native.NativeMethods.html#SilverCraft_CSCore_PortAudio_Native_NativeMethods_Pa_SetStreamFinishedCallback_SilverCraft_CSCore_PortAudio_Native_PaStream__SilverCraft_CSCore_PortAudio_Native_PaStreamFinishedCallback_
   name: Pa_SetStreamFinishedCallback
   nameWithType: NativeMethods.Pa_SetStreamFinishedCallback
   fullName: SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_SetStreamFinishedCallback
-- uid: SilverCraft.CSCore.PortAudio.PaStreamFinishedCallback
-  commentId: T:SilverCraft.CSCore.PortAudio.PaStreamFinishedCallback
-  parent: SilverCraft.CSCore.PortAudio
-  href: SilverCraft.CSCore.PortAudio.PaStreamFinishedCallback.html
+- uid: SilverCraft.CSCore.PortAudio.Native.PaStreamFinishedCallback
+  commentId: T:SilverCraft.CSCore.PortAudio.Native.PaStreamFinishedCallback
+  parent: SilverCraft.CSCore.PortAudio.Native
+  href: SilverCraft.CSCore.PortAudio.Native.PaStreamFinishedCallback.html
   name: PaStreamFinishedCallback
   nameWithType: PaStreamFinishedCallback
-  fullName: SilverCraft.CSCore.PortAudio.PaStreamFinishedCallback
+  fullName: SilverCraft.CSCore.PortAudio.Native.PaStreamFinishedCallback
 - uid: SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_StartStream*
   commentId: Overload:SilverCraft.CSCore.PortAudio.Native.NativeMethods.Pa_StartStream
   isExternal: true

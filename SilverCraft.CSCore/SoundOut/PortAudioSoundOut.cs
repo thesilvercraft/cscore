@@ -1,16 +1,12 @@
 ﻿using System.Diagnostics;
 using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
-using System.Runtime.Intrinsics;
-using System.Runtime.Intrinsics.X86;
 using Microsoft.Extensions.Logging;
 using SilverCraft.CSCore.PortAudio;
 using SilverCraft.CSCore.PortAudio.Native;
 using SilverCraft.CSCore.SoundOut;
 
 namespace SilverCraft.CSCore.SoundOut;
-
-
 
 //https://www.portaudio.com/docs/v19-doxydocs/writing_a_callback.html
 public class PortAudioSoundOut : ISoundOut
@@ -36,9 +32,13 @@ public class PortAudioSoundOut : ISoundOut
 
     public float Volume
     {
-        get => Volatile.Read(ref field);
-        set => Volatile.Write(ref field, value);
-    } = 1.0f;
+        get => SampleSource is SilverCraft.CSCore.Streams.VolumeSource volumeSource ? volumeSource.Volume : 1f;
+        set
+        {
+            if (value is < 0f or > 1f) throw new ArgumentOutOfRangeException(nameof(value));
+            if (SampleSource is SilverCraft.CSCore.Streams.VolumeSource volumeSource) volumeSource.Volume = value;
+        }
+    }
 
     public IWaveSource? WaveSource { get; private set; }
     public PlaybackState PlaybackState { get; private set; } = PlaybackState.Stopped;
@@ -67,7 +67,7 @@ public class PortAudioSoundOut : ISoundOut
         SampleSource?.Dispose();
 
         WaveSource = source;
-        SampleSource = source.ToSampleSource();
+        SampleSource = new SilverCraft.CSCore.Streams.VolumeSource(source.ToSampleSource());
         _channels = SampleSource.WaveFormat.Channels;
 
         var initialBufferLength = Math.Max(4096 * _channels, 8192);
@@ -276,19 +276,19 @@ public class PortAudioSoundOut : ISoundOut
                 _log?.LogError("Unusually large frameCount in callback method {frameCount}", frameCount);
                 return (int)PaStreamCallbackResult.paAbort;
             }
+
             var bufferLength = (int)frameCount * _channels;
 
             if (_buffer == null || _buffer.Length < bufferLength)
             {
                 new Span<float>(outputBuffer, bufferLength).Clear();
-                Array.Resize(ref _buffer, bufferLength);
                 return (int)PaStreamCallbackResult.paContinue;
             }
 
             var read = localSampleSource.Read(_buffer, 0, bufferLength);
             if (read > bufferLength)
             {
-                read=bufferLength;
+                read = bufferLength;
             }
             else if (read < 0)
             {
@@ -297,56 +297,9 @@ public class PortAudioSoundOut : ISoundOut
 
             fixed (float* bufferStart = _buffer)
             {
-                var bufferI = bufferStart;
-                var bufferEnd = bufferStart + read;
-                var outputI = outputBuffer;
-                var currentVolume = Volume;
-
-                if (currentVolume == 1.0f)
-                {
-                    Unsafe.CopyBlockUnaligned(outputI, bufferI, (uint)(read * sizeof(float)));
-                    outputI += read;
-                    bufferI += read; // Advance pointer so common zero-fill block handles any underruns
-                }
-                else if (currentVolume == 0.0f)
-                {
-                    Unsafe.InitBlockUnaligned(outputI, 0, (uint)(read * sizeof(float)));
-                    outputI += read;
-                    bufferI += read;
-                }
-                else if (Avx.IsSupported)
-                {
-                    var vol = Vector256.Create(currentVolume);
-                    while (bufferI + 8 <= bufferEnd)
-                    {
-                        var floatInput =
-                            Avx.LoadVector256(bufferI); //NOT LoadAlignedVector256, our buffer is not aligned
-                        var result = Avx.Multiply(floatInput, vol);
-                        Avx.Store(outputI, result);
-                        bufferI += 8;
-                        outputI += 8;
-                    }
-                }
-                else if (Sse.IsSupported)
-                {
-                    var vol128 = Vector128.Create(currentVolume);
-                    while (bufferI + 4 <= bufferEnd)
-                    {
-                        var floatInput =
-                            Sse.LoadVector128(bufferI); //NOT LoadAlignedVector128, our buffer is not aligned
-                        var result = Sse.Multiply(floatInput, vol128);
-                        Sse.Store(outputI, result);
-                        bufferI += 4;
-                        outputI += 4;
-                    }
-                }
-
-                // Handle remaining samples (scalar fallback)
-                while (bufferI < bufferEnd) *outputI++ = *bufferI++ * currentVolume;
-                // do not produce noise if uninitialized
-                var remainingSamples = bufferLength - (int)(outputI - outputBuffer);
-                if (remainingSamples > 0)
-                    Unsafe.InitBlockUnaligned(outputI, 0, (uint)(remainingSamples * sizeof(float)));
+                Unsafe.CopyBlockUnaligned(outputBuffer, bufferStart, (uint)(read * sizeof(float)));
+                if (read < bufferLength)
+                    new Span<float>(outputBuffer + read, bufferLength - read).Clear();
             }
 
             return read > 0

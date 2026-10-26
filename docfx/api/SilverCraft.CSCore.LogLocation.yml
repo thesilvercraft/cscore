@@ -5,8 +5,9 @@ items:
   id: LogLocation
   parent: SilverCraft.CSCore
   children:
-  - SilverCraft.CSCore.LogLocation.GetFunc
   - SilverCraft.CSCore.LogLocation.GetLogger(System.Type)
+  - SilverCraft.CSCore.LogLocation.GetLogger``1
+  - SilverCraft.CSCore.LogLocation.Initialize(Microsoft.Extensions.Logging.ILoggerFactory)
   langs:
   - csharp
   - vb
@@ -21,11 +22,11 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: LogLocation
     path: ../SilverCraft.CSCore/LogLocation.cs
-    startLine: 7
+    startLine: 8
   assemblies:
   - SilverCraft.CSCore
   namespace: SilverCraft.CSCore
-  summary: Provides static methods for obtaining an <xref href="Serilog.ILogger" data-throw-if-not-resolved="false"></xref> instance associated with a specific type.
+  summary: Provides static methods for obtaining an <xref href="Microsoft.Extensions.Logging.ILogger" data-throw-if-not-resolved="false"></xref> instance.
   example: []
   syntax:
     content: public static class LogLocation
@@ -40,6 +41,37 @@ items:
   - System.Object.MemberwiseClone
   - System.Object.ReferenceEquals(System.Object,System.Object)
   - System.Object.ToString
+- uid: SilverCraft.CSCore.LogLocation.Initialize(Microsoft.Extensions.Logging.ILoggerFactory)
+  commentId: M:SilverCraft.CSCore.LogLocation.Initialize(Microsoft.Extensions.Logging.ILoggerFactory)
+  id: Initialize(Microsoft.Extensions.Logging.ILoggerFactory)
+  parent: SilverCraft.CSCore.LogLocation
+  langs:
+  - csharp
+  - vb
+  name: Initialize(ILoggerFactory)
+  nameWithType: LogLocation.Initialize(ILoggerFactory)
+  fullName: SilverCraft.CSCore.LogLocation.Initialize(Microsoft.Extensions.Logging.ILoggerFactory)
+  type: Method
+  source:
+    remote:
+      path: SilverCraft.CSCore/LogLocation.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: Initialize
+    path: ../SilverCraft.CSCore/LogLocation.cs
+    startLine: 15
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore
+  summary: Called by the consuming application at startup to provide a real logger factory.
+  example: []
+  syntax:
+    content: public static void Initialize(ILoggerFactory factory)
+    parameters:
+    - id: factory
+      type: Microsoft.Extensions.Logging.ILoggerFactory
+    content.vb: Public Shared Sub Initialize(factory As ILoggerFactory)
+  overload: SilverCraft.CSCore.LogLocation.Initialize*
 - uid: SilverCraft.CSCore.LogLocation.GetLogger(System.Type)
   commentId: M:SilverCraft.CSCore.LogLocation.GetLogger(System.Type)
   id: GetLogger(System.Type)
@@ -58,61 +90,65 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: GetLogger
     path: ../SilverCraft.CSCore/LogLocation.cs
-    startLine: 14
+    startLine: 23
   assemblies:
   - SilverCraft.CSCore
   namespace: SilverCraft.CSCore
   summary: Gets the logger instance for a specific type.
   example: []
   syntax:
-    content: public static ILogger? GetLogger(Type type)
+    content: public static ILogger GetLogger(Type type)
     parameters:
     - id: type
       type: System.Type
-      description: The Type used to get the associated logger.
     return:
-      type: Serilog.ILogger
-      description: An ILogger instance scoped to the provided type.
+      type: Microsoft.Extensions.Logging.ILogger
     content.vb: Public Shared Function GetLogger(type As Type) As ILogger
   overload: SilverCraft.CSCore.LogLocation.GetLogger*
-- uid: SilverCraft.CSCore.LogLocation.GetFunc
-  commentId: F:SilverCraft.CSCore.LogLocation.GetFunc
-  id: GetFunc
+- uid: SilverCraft.CSCore.LogLocation.GetLogger``1
+  commentId: M:SilverCraft.CSCore.LogLocation.GetLogger``1
+  id: GetLogger``1
   parent: SilverCraft.CSCore.LogLocation
   langs:
   - csharp
   - vb
-  name: GetFunc
-  nameWithType: LogLocation.GetFunc
-  fullName: SilverCraft.CSCore.LogLocation.GetFunc
-  type: Field
+  name: GetLogger<T>()
+  nameWithType: LogLocation.GetLogger<T>()
+  fullName: SilverCraft.CSCore.LogLocation.GetLogger<T>()
+  type: Method
   source:
     remote:
       path: SilverCraft.CSCore/LogLocation.cs
       branch: master
       repo: https://github.com/thesilvercraft/cscore
-    id: GetFunc
+    id: GetLogger
     path: ../SilverCraft.CSCore/LogLocation.cs
-    startLine: 25
+    startLine: 31
   assemblies:
   - SilverCraft.CSCore
   namespace: SilverCraft.CSCore
-  summary: Gets or sets the function used to resolve and create an ILogger instance based on a given type.
-  remarks: This delegate must return a functional logger configured for use within the application's scope.
+  summary: Generic helper for easier syntax.
   example: []
   syntax:
-    content: public static Func<Type, ILogger> GetFunc
+    content: public static ILogger<T> GetLogger<T>()
+    typeParameters:
+    - id: T
     return:
-      type: System.Func{System.Type,Serilog.ILogger}
-    content.vb: Public Shared GetFunc As Func(Of Type, ILogger)
+      type: Microsoft.Extensions.Logging.ILogger{{T}}
+    content.vb: Public Shared Function GetLogger(Of T)() As ILogger(Of T)
+  overload: SilverCraft.CSCore.LogLocation.GetLogger*
+  nameWithType.vb: LogLocation.GetLogger(Of T)()
+  fullName.vb: SilverCraft.CSCore.LogLocation.GetLogger(Of T)()
+  name.vb: GetLogger(Of T)()
 references:
-- uid: Serilog.ILogger
-  commentId: T:Serilog.ILogger
-  parent: Serilog
+- uid: Microsoft.Extensions.Logging.ILogger
+  commentId: T:Microsoft.Extensions.Logging.ILogger
+  parent: Microsoft.Extensions.Logging
   isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.ilogger
   name: ILogger
   nameWithType: ILogger
-  fullName: Serilog.ILogger
+  fullName: Microsoft.Extensions.Logging.ILogger
 - uid: SilverCraft.CSCore
   commentId: N:SilverCraft.CSCore
   href: SilverCraft.html
@@ -365,12 +401,43 @@ references:
     href: https://learn.microsoft.com/dotnet/api/system.object.tostring
   - name: (
   - name: )
-- uid: Serilog
-  commentId: N:Serilog
+- uid: Microsoft.Extensions.Logging
+  commentId: N:Microsoft.Extensions.Logging
   isExternal: true
-  name: Serilog
-  nameWithType: Serilog
-  fullName: Serilog
+  href: https://learn.microsoft.com/dotnet/api/microsoft
+  name: Microsoft.Extensions.Logging
+  nameWithType: Microsoft.Extensions.Logging
+  fullName: Microsoft.Extensions.Logging
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft
+  - name: .
+  - uid: Microsoft.Extensions
+    name: Extensions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions
+  - name: .
+  - uid: Microsoft.Extensions.Logging
+    name: Logging
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft
+  - name: .
+  - uid: Microsoft.Extensions
+    name: Extensions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions
+  - name: .
+  - uid: Microsoft.Extensions.Logging
+    name: Logging
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging
 - uid: System
   commentId: N:System
   isExternal: true
@@ -378,6 +445,20 @@ references:
   name: System
   nameWithType: System
   fullName: System
+- uid: SilverCraft.CSCore.LogLocation.Initialize*
+  commentId: Overload:SilverCraft.CSCore.LogLocation.Initialize
+  href: SilverCraft.CSCore.LogLocation.html#SilverCraft_CSCore_LogLocation_Initialize_Microsoft_Extensions_Logging_ILoggerFactory_
+  name: Initialize
+  nameWithType: LogLocation.Initialize
+  fullName: SilverCraft.CSCore.LogLocation.Initialize
+- uid: Microsoft.Extensions.Logging.ILoggerFactory
+  commentId: T:Microsoft.Extensions.Logging.ILoggerFactory
+  parent: Microsoft.Extensions.Logging
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.iloggerfactory
+  name: ILoggerFactory
+  nameWithType: ILoggerFactory
+  fullName: Microsoft.Extensions.Logging.ILoggerFactory
 - uid: SilverCraft.CSCore.LogLocation.GetLogger*
   commentId: Overload:SilverCraft.CSCore.LogLocation.GetLogger
   href: SilverCraft.CSCore.LogLocation.html#SilverCraft_CSCore_LogLocation_GetLogger_System_Type_
@@ -392,82 +473,60 @@ references:
   name: Type
   nameWithType: Type
   fullName: System.Type
-- uid: System.Func{System.Type,Serilog.ILogger}
-  commentId: T:System.Func{System.Type,Serilog.ILogger}
-  parent: System
-  definition: System.Func`2
-  href: https://learn.microsoft.com/dotnet/api/system.func-2
-  name: Func<Type, ILogger>
-  nameWithType: Func<Type, ILogger>
-  fullName: System.Func<System.Type, Serilog.ILogger>
-  nameWithType.vb: Func(Of Type, ILogger)
-  fullName.vb: System.Func(Of System.Type, Serilog.ILogger)
-  name.vb: Func(Of Type, ILogger)
+- uid: Microsoft.Extensions.Logging.ILogger{{T}}
+  commentId: T:Microsoft.Extensions.Logging.ILogger{``0}
+  parent: Microsoft.Extensions.Logging
+  definition: Microsoft.Extensions.Logging.ILogger`1
+  href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.ilogger-1
+  name: ILogger<T>
+  nameWithType: ILogger<T>
+  fullName: Microsoft.Extensions.Logging.ILogger<T>
+  nameWithType.vb: ILogger(Of T)
+  fullName.vb: Microsoft.Extensions.Logging.ILogger(Of T)
+  name.vb: ILogger(Of T)
   spec.csharp:
-  - uid: System.Func`2
-    name: Func
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.func-2
-  - name: <
-  - uid: System.Type
-    name: Type
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.type
-  - name: ','
-  - name: " "
-  - uid: Serilog.ILogger
+  - uid: Microsoft.Extensions.Logging.ILogger`1
     name: ILogger
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.ilogger-1
+  - name: <
+  - name: T
   - name: '>'
   spec.vb:
-  - uid: System.Func`2
-    name: Func
+  - uid: Microsoft.Extensions.Logging.ILogger`1
+    name: ILogger
     isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.func-2
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.ilogger-1
   - name: (
   - name: Of
   - name: " "
-  - uid: System.Type
-    name: Type
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.type
-  - name: ','
-  - name: " "
-  - uid: Serilog.ILogger
-    name: ILogger
-    isExternal: true
+  - name: T
   - name: )
-- uid: System.Func`2
-  commentId: T:System.Func`2
+- uid: Microsoft.Extensions.Logging.ILogger`1
+  commentId: T:Microsoft.Extensions.Logging.ILogger`1
   isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system.func-2
-  name: Func<T, TResult>
-  nameWithType: Func<T, TResult>
-  fullName: System.Func<T, TResult>
-  nameWithType.vb: Func(Of T, TResult)
-  fullName.vb: System.Func(Of T, TResult)
-  name.vb: Func(Of T, TResult)
+  href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.ilogger-1
+  name: ILogger<TCategoryName>
+  nameWithType: ILogger<TCategoryName>
+  fullName: Microsoft.Extensions.Logging.ILogger<TCategoryName>
+  nameWithType.vb: ILogger(Of TCategoryName)
+  fullName.vb: Microsoft.Extensions.Logging.ILogger(Of TCategoryName)
+  name.vb: ILogger(Of TCategoryName)
   spec.csharp:
-  - uid: System.Func`2
-    name: Func
+  - uid: Microsoft.Extensions.Logging.ILogger`1
+    name: ILogger
     isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.func-2
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.ilogger-1
   - name: <
-  - name: T
-  - name: ','
-  - name: " "
-  - name: TResult
+  - name: TCategoryName
   - name: '>'
   spec.vb:
-  - uid: System.Func`2
-    name: Func
+  - uid: Microsoft.Extensions.Logging.ILogger`1
+    name: ILogger
     isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.func-2
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.ilogger-1
   - name: (
   - name: Of
   - name: " "
-  - name: T
-  - name: ','
-  - name: " "
-  - name: TResult
+  - name: TCategoryName
   - name: )

@@ -24,14 +24,14 @@ items:
   type: Struct
   source:
     remote:
-      path: SilverCraft.CSCore.PortAudio/Native/PaDeviceInfo.cs
+      path: SilverCraft.CSCore/PortAudio/Native/PaDeviceInfo.cs
       branch: master
       repo: https://github.com/thesilvercraft/cscore
     id: PaDeviceInfo
-    path: ../SilverCraft.CSCore.PortAudio/Native/PaDeviceInfo.cs
+    path: ../SilverCraft.CSCore/PortAudio/Native/PaDeviceInfo.cs
     startLine: 2
   assemblies:
-  - SilverCraft.CSCore.PortAudio
+  - SilverCraft.CSCore
   namespace: SilverCraft.CSCore.PortAudio.Native
   syntax:
     content: public struct PaDeviceInfo
@@ -56,14 +56,14 @@ items:
   type: Field
   source:
     remote:
-      path: SilverCraft.CSCore.PortAudio/Native/PaDeviceInfo.cs
+      path: SilverCraft.CSCore/PortAudio/Native/PaDeviceInfo.cs
       branch: master
       repo: https://github.com/thesilvercraft/cscore
     id: structVersion
-    path: ../SilverCraft.CSCore.PortAudio/Native/PaDeviceInfo.cs
+    path: ../SilverCraft.CSCore/PortAudio/Native/PaDeviceInfo.cs
     startLine: 4
   assemblies:
-  - SilverCraft.CSCore.PortAudio
+  - SilverCraft.CSCore
   namespace: SilverCraft.CSCore.PortAudio.Native
   syntax:
     content: public int structVersion
@@ -83,14 +83,14 @@ items:
   type: Field
   source:
     remote:
-      path: SilverCraft.CSCore.PortAudio/Native/PaDeviceInfo.cs
+      path: SilverCraft.CSCore/PortAudio/Native/PaDeviceInfo.cs
       branch: master
       repo: https://github.com/thesilvercraft/cscore
     id: name
-    path: ../SilverCraft.CSCore.PortAudio/Native/PaDeviceInfo.cs
+    path: ../SilverCraft.CSCore/PortAudio/Native/PaDeviceInfo.cs
     startLine: 7
   assemblies:
-  - SilverCraft.CSCore.PortAudio
+  - SilverCraft.CSCore
   namespace: SilverCraft.CSCore.PortAudio.Native
   syntax:
     content: public sbyte* name
@@ -110,14 +110,14 @@ items:
   type: Field
   source:
     remote:
-      path: SilverCraft.CSCore.PortAudio/Native/PaDeviceInfo.cs
+      path: SilverCraft.CSCore/PortAudio/Native/PaDeviceInfo.cs
       branch: master
       repo: https://github.com/thesilvercraft/cscore
     id: hostApi
-    path: ../SilverCraft.CSCore.PortAudio/Native/PaDeviceInfo.cs
+    path: ../SilverCraft.CSCore/PortAudio/Native/PaDeviceInfo.cs
     startLine: 10
   assemblies:
-  - SilverCraft.CSCore.PortAudio
+  - SilverCraft.CSCore
   namespace: SilverCraft.CSCore.PortAudio.Native
   syntax:
     content: public int hostApi
@@ -137,14 +137,14 @@ items:
   type: Field
   source:
     remote:
-      path: SilverCraft.CSCore.PortAudio/Native/PaDeviceInfo.cs
+      path: SilverCraft.CSCore/PortAudio/Native/PaDeviceInfo.cs
       branch: master
       repo: https://github.com/thesilvercraft/cscore
     id: maxInputChannels
-    path: ../SilverCraft.CSCore.PortAudio/Native/PaDeviceInfo.cs
+    path: ../SilverCraft.CSCore/PortAudio/Native/PaDeviceInfo.cs
     startLine: 12
   assemblies:
-  - SilverCraft.CSCore.PortAudio
+  - SilverCraft.CSCore
   namespace: SilverCraft.CSCore.PortAudio.Native
   syntax:
     content: public int maxInputChannels
@@ -164,14 +164,14 @@ items:
   type: Field
   source:
     remote:
-      path: SilverCraft.CSCore.PortAudio/Native/PaDeviceInfo.cs
+      path: SilverCraft.CSCore/PortAudio/Native/PaDeviceInfo.cs
       branch: master
       repo: https://github.com/thesilvercraft/cscore
     id: maxOutputChannels
-    path: ../SilverCraft.CSCore.PortAudio/Native/PaDeviceInfo.cs
+    path: ../SilverCraft.CSCore/PortAudio/Native/PaDeviceInfo.cs
     startLine: 14
   assemblies:
-  - SilverCraft.CSCore.PortAudio
+  - SilverCraft.CSCore
   namespace: SilverCraft.CSCore.PortAudio.Native
   syntax:
     content: public int maxOutputChannels
@@ -191,14 +191,14 @@ items:
   type: Field
   source:
     remote:
-      path: SilverCraft.CSCore.PortAudio/Native/PaDeviceInfo.cs
+      path: SilverCraft.CSCore/PortAudio/Native/PaDeviceInfo.cs
       branch: master
       repo: https://github.com/thesilvercraft/cscore
     id: defaultLowInputLatency
-    path: ../SilverCraft.CSCore.PortAudio/Native/PaDeviceInfo.cs
+    path: ../SilverCraft.CSCore/PortAudio/Native/PaDeviceInfo.cs
     startLine: 17
   assemblies:
-  - SilverCraft.CSCore.PortAudio
+  - SilverCraft.CSCore
   namespace: SilverCraft.CSCore.PortAudio.Native
   syntax:
     content: public double defaultLowInputLatency
@@ -218,14 +218,14 @@ items:
   type: Field
   source:
     remote:
-      path: SilverCraft.CSCore.PortAudio/Native/PaDeviceInfo.cs
+      path: SilverCraft.CSCore/PortAudio/Native/PaDeviceInfo.cs
       branch: master
       repo: https://github.com/thesilvercraft/cscore
     id: defaultLowOutputLatency
-    path: ../SilverCraft.CSCore.PortAudio/Native/PaDeviceInfo.cs
+    path: ../SilverCraft.CSCore/PortAudio/Native/PaDeviceInfo.cs
     startLine: 20
   assemblies:
-  - SilverCraft.CSCore.PortAudio
+  - SilverCraft.CSCore
   namespace: SilverCraft.CSCore.PortAudio.Native
   syntax:
     content: public double defaultLowOutputLatency
@@ -245,14 +245,14 @@ items:
   type: Field
   source:
     remote:
-      path: SilverCraft.CSCore.PortAudio/Native/PaDeviceInfo.cs
+      path: SilverCraft.CSCore/PortAudio/Native/PaDeviceInfo.cs
       branch: master
       repo: https://github.com/thesilvercraft/cscore
     id: defaultHighInputLatency
-    path: ../SilverCraft.CSCore.PortAudio/Native/PaDeviceInfo.cs
+    path: ../SilverCraft.CSCore/PortAudio/Native/PaDeviceInfo.cs
     startLine: 23
   assemblies:
-  - SilverCraft.CSCore.PortAudio
+  - SilverCraft.CSCore
   namespace: SilverCraft.CSCore.PortAudio.Native
   syntax:
     content: public double defaultHighInputLatency
@@ -272,14 +272,14 @@ items:
   type: Field
   source:
     remote:
-      path: SilverCraft.CSCore.PortAudio/Native/PaDeviceInfo.cs
+      path: SilverCraft.CSCore/PortAudio/Native/PaDeviceInfo.cs
       branch: master
       repo: https://github.com/thesilvercraft/cscore
     id: defaultHighOutputLatency
-    path: ../SilverCraft.CSCore.PortAudio/Native/PaDeviceInfo.cs
+    path: ../SilverCraft.CSCore/PortAudio/Native/PaDeviceInfo.cs
     startLine: 26
   assemblies:
-  - SilverCraft.CSCore.PortAudio
+  - SilverCraft.CSCore
   namespace: SilverCraft.CSCore.PortAudio.Native
   syntax:
     content: public double defaultHighOutputLatency
@@ -299,14 +299,14 @@ items:
   type: Field
   source:
     remote:
-      path: SilverCraft.CSCore.PortAudio/Native/PaDeviceInfo.cs
+      path: SilverCraft.CSCore/PortAudio/Native/PaDeviceInfo.cs
       branch: master
       repo: https://github.com/thesilvercraft/cscore
     id: defaultSampleRate
-    path: ../SilverCraft.CSCore.PortAudio/Native/PaDeviceInfo.cs
+    path: ../SilverCraft.CSCore/PortAudio/Native/PaDeviceInfo.cs
     startLine: 28
   assemblies:
-  - SilverCraft.CSCore.PortAudio
+  - SilverCraft.CSCore
   namespace: SilverCraft.CSCore.PortAudio.Native
   syntax:
     content: public double defaultSampleRate

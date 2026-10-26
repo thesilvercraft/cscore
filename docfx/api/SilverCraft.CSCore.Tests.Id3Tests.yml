@@ -1,0 +1,525 @@
+### YamlMime:ManagedReference
+items:
+- uid: SilverCraft.CSCore.Tests.Id3Tests
+  commentId: T:SilverCraft.CSCore.Tests.Id3Tests
+  id: Id3Tests
+  parent: SilverCraft.CSCore.Tests
+  children:
+  - SilverCraft.CSCore.Tests.Id3Tests.ID3v1_FromStream_ParsesValidTag
+  - SilverCraft.CSCore.Tests.Id3Tests.ID3v1_FromStream_ReturnsNullWhenNoTagHeader
+  - SilverCraft.CSCore.Tests.Id3Tests.ID3v1_FromStream_ThrowsWhenStreamNull
+  langs:
+  - csharp
+  - vb
+  name: Id3Tests
+  nameWithType: Id3Tests
+  fullName: SilverCraft.CSCore.Tests.Id3Tests
+  type: Class
+  source:
+    remote:
+      path: SilverCraft.CSCore.Tests/Id3Tests.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: Id3Tests
+    path: ../SilverCraft.CSCore.Tests/Id3Tests.cs
+    startLine: 6
+  assemblies:
+  - SilverCraft.CSCore.Tests
+  namespace: SilverCraft.CSCore.Tests
+  syntax:
+    content: public sealed class Id3Tests
+    content.vb: Public NotInheritable Class Id3Tests
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  extensionMethods:
+  - SilverCraft.CSCore.Tests.Id3Tests.SilverCraft.CSCore.FluentExtensions.Synchronized``2
+- uid: SilverCraft.CSCore.Tests.Id3Tests.ID3v1_FromStream_ParsesValidTag
+  commentId: M:SilverCraft.CSCore.Tests.Id3Tests.ID3v1_FromStream_ParsesValidTag
+  id: ID3v1_FromStream_ParsesValidTag
+  parent: SilverCraft.CSCore.Tests.Id3Tests
+  langs:
+  - csharp
+  - vb
+  name: ID3v1_FromStream_ParsesValidTag()
+  nameWithType: Id3Tests.ID3v1_FromStream_ParsesValidTag()
+  fullName: SilverCraft.CSCore.Tests.Id3Tests.ID3v1_FromStream_ParsesValidTag()
+  type: Method
+  source:
+    remote:
+      path: SilverCraft.CSCore.Tests/Id3Tests.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: ID3v1_FromStream_ParsesValidTag
+    path: ../SilverCraft.CSCore.Tests/Id3Tests.cs
+    startLine: 8
+  assemblies:
+  - SilverCraft.CSCore.Tests
+  namespace: SilverCraft.CSCore.Tests
+  syntax:
+    content: >-
+      [Fact]
+
+      public void ID3v1_FromStream_ParsesValidTag()
+    content.vb: >-
+      <Fact>
+
+      Public Sub ID3v1_FromStream_ParsesValidTag()
+  overload: SilverCraft.CSCore.Tests.Id3Tests.ID3v1_FromStream_ParsesValidTag*
+  attributes:
+  - type: Xunit.FactAttribute
+    ctor: Xunit.FactAttribute.#ctor
+    arguments: []
+- uid: SilverCraft.CSCore.Tests.Id3Tests.ID3v1_FromStream_ReturnsNullWhenNoTagHeader
+  commentId: M:SilverCraft.CSCore.Tests.Id3Tests.ID3v1_FromStream_ReturnsNullWhenNoTagHeader
+  id: ID3v1_FromStream_ReturnsNullWhenNoTagHeader
+  parent: SilverCraft.CSCore.Tests.Id3Tests
+  langs:
+  - csharp
+  - vb
+  name: ID3v1_FromStream_ReturnsNullWhenNoTagHeader()
+  nameWithType: Id3Tests.ID3v1_FromStream_ReturnsNullWhenNoTagHeader()
+  fullName: SilverCraft.CSCore.Tests.Id3Tests.ID3v1_FromStream_ReturnsNullWhenNoTagHeader()
+  type: Method
+  source:
+    remote:
+      path: SilverCraft.CSCore.Tests/Id3Tests.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: ID3v1_FromStream_ReturnsNullWhenNoTagHeader
+    path: ../SilverCraft.CSCore.Tests/Id3Tests.cs
+    startLine: 53
+  assemblies:
+  - SilverCraft.CSCore.Tests
+  namespace: SilverCraft.CSCore.Tests
+  syntax:
+    content: >-
+      [Fact]
+
+      public void ID3v1_FromStream_ReturnsNullWhenNoTagHeader()
+    content.vb: >-
+      <Fact>
+
+      Public Sub ID3v1_FromStream_ReturnsNullWhenNoTagHeader()
+  overload: SilverCraft.CSCore.Tests.Id3Tests.ID3v1_FromStream_ReturnsNullWhenNoTagHeader*
+  attributes:
+  - type: Xunit.FactAttribute
+    ctor: Xunit.FactAttribute.#ctor
+    arguments: []
+- uid: SilverCraft.CSCore.Tests.Id3Tests.ID3v1_FromStream_ThrowsWhenStreamNull
+  commentId: M:SilverCraft.CSCore.Tests.Id3Tests.ID3v1_FromStream_ThrowsWhenStreamNull
+  id: ID3v1_FromStream_ThrowsWhenStreamNull
+  parent: SilverCraft.CSCore.Tests.Id3Tests
+  langs:
+  - csharp
+  - vb
+  name: ID3v1_FromStream_ThrowsWhenStreamNull()
+  nameWithType: Id3Tests.ID3v1_FromStream_ThrowsWhenStreamNull()
+  fullName: SilverCraft.CSCore.Tests.Id3Tests.ID3v1_FromStream_ThrowsWhenStreamNull()
+  type: Method
+  source:
+    remote:
+      path: SilverCraft.CSCore.Tests/Id3Tests.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: ID3v1_FromStream_ThrowsWhenStreamNull
+    path: ../SilverCraft.CSCore.Tests/Id3Tests.cs
+    startLine: 63
+  assemblies:
+  - SilverCraft.CSCore.Tests
+  namespace: SilverCraft.CSCore.Tests
+  syntax:
+    content: >-
+      [Fact]
+
+      public void ID3v1_FromStream_ThrowsWhenStreamNull()
+    content.vb: >-
+      <Fact>
+
+      Public Sub ID3v1_FromStream_ThrowsWhenStreamNull()
+  overload: SilverCraft.CSCore.Tests.Id3Tests.ID3v1_FromStream_ThrowsWhenStreamNull*
+  attributes:
+  - type: Xunit.FactAttribute
+    ctor: Xunit.FactAttribute.#ctor
+    arguments: []
+references:
+- uid: SilverCraft.CSCore.Tests
+  commentId: N:SilverCraft.CSCore.Tests
+  href: SilverCraft.html
+  name: SilverCraft.CSCore.Tests
+  nameWithType: SilverCraft.CSCore.Tests
+  fullName: SilverCraft.CSCore.Tests
+  spec.csharp:
+  - uid: SilverCraft
+    name: SilverCraft
+    href: SilverCraft.html
+  - name: .
+  - uid: SilverCraft.CSCore
+    name: CSCore
+    href: SilverCraft.CSCore.html
+  - name: .
+  - uid: SilverCraft.CSCore.Tests
+    name: Tests
+    href: SilverCraft.CSCore.Tests.html
+  spec.vb:
+  - uid: SilverCraft
+    name: SilverCraft
+    href: SilverCraft.html
+  - name: .
+  - uid: SilverCraft.CSCore
+    name: CSCore
+    href: SilverCraft.CSCore.html
+  - name: .
+  - uid: SilverCraft.CSCore.Tests
+    name: Tests
+    href: SilverCraft.CSCore.Tests.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: SilverCraft.CSCore.Tests.Id3Tests.SilverCraft.CSCore.FluentExtensions.Synchronized``2
+  commentId: M:SilverCraft.CSCore.FluentExtensions.Synchronized``2(``0)
+  parent: SilverCraft.CSCore.FluentExtensions
+  definition: SilverCraft.CSCore.FluentExtensions.Synchronized``2(``0)
+  href: SilverCraft.CSCore.FluentExtensions.html#SilverCraft_CSCore_FluentExtensions_Synchronized__2___0_
+  name: Synchronized<Id3Tests, T>(Id3Tests)
+  nameWithType: FluentExtensions.Synchronized<Id3Tests, T>(Id3Tests)
+  fullName: SilverCraft.CSCore.FluentExtensions.Synchronized<SilverCraft.CSCore.Tests.Id3Tests, T>(SilverCraft.CSCore.Tests.Id3Tests)
+  nameWithType.vb: FluentExtensions.Synchronized(Of Id3Tests, T)(Id3Tests)
+  fullName.vb: SilverCraft.CSCore.FluentExtensions.Synchronized(Of SilverCraft.CSCore.Tests.Id3Tests, T)(SilverCraft.CSCore.Tests.Id3Tests)
+  name.vb: Synchronized(Of Id3Tests, T)(Id3Tests)
+  spec.csharp:
+  - uid: SilverCraft.CSCore.FluentExtensions.Synchronized``2(SilverCraft.CSCore.Tests.Id3Tests)
+    name: Synchronized
+    href: SilverCraft.CSCore.FluentExtensions.html#SilverCraft_CSCore_FluentExtensions_Synchronized__2___0_
+  - name: <
+  - uid: SilverCraft.CSCore.Tests.Id3Tests
+    name: Id3Tests
+    href: SilverCraft.CSCore.Tests.Id3Tests.html
+  - name: ','
+  - name: " "
+  - name: T
+  - name: '>'
+  - name: (
+  - uid: SilverCraft.CSCore.Tests.Id3Tests
+    name: Id3Tests
+    href: SilverCraft.CSCore.Tests.Id3Tests.html
+  - name: )
+  spec.vb:
+  - uid: SilverCraft.CSCore.FluentExtensions.Synchronized``2(SilverCraft.CSCore.Tests.Id3Tests)
+    name: Synchronized
+    href: SilverCraft.CSCore.FluentExtensions.html#SilverCraft_CSCore_FluentExtensions_Synchronized__2___0_
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: SilverCraft.CSCore.Tests.Id3Tests
+    name: Id3Tests
+    href: SilverCraft.CSCore.Tests.Id3Tests.html
+  - name: ','
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: SilverCraft.CSCore.Tests.Id3Tests
+    name: Id3Tests
+    href: SilverCraft.CSCore.Tests.Id3Tests.html
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: SilverCraft.CSCore.FluentExtensions.Synchronized``2(``0)
+  commentId: M:SilverCraft.CSCore.FluentExtensions.Synchronized``2(``0)
+  href: SilverCraft.CSCore.FluentExtensions.html#SilverCraft_CSCore_FluentExtensions_Synchronized__2___0_
+  name: Synchronized<TAudioSource, T>(TAudioSource)
+  nameWithType: FluentExtensions.Synchronized<TAudioSource, T>(TAudioSource)
+  fullName: SilverCraft.CSCore.FluentExtensions.Synchronized<TAudioSource, T>(TAudioSource)
+  nameWithType.vb: FluentExtensions.Synchronized(Of TAudioSource, T)(TAudioSource)
+  fullName.vb: SilverCraft.CSCore.FluentExtensions.Synchronized(Of TAudioSource, T)(TAudioSource)
+  name.vb: Synchronized(Of TAudioSource, T)(TAudioSource)
+  spec.csharp:
+  - uid: SilverCraft.CSCore.FluentExtensions.Synchronized``2(``0)
+    name: Synchronized
+    href: SilverCraft.CSCore.FluentExtensions.html#SilverCraft_CSCore_FluentExtensions_Synchronized__2___0_
+  - name: <
+  - name: TAudioSource
+  - name: ','
+  - name: " "
+  - name: T
+  - name: '>'
+  - name: (
+  - name: TAudioSource
+  - name: )
+  spec.vb:
+  - uid: SilverCraft.CSCore.FluentExtensions.Synchronized``2(``0)
+    name: Synchronized
+    href: SilverCraft.CSCore.FluentExtensions.html#SilverCraft_CSCore_FluentExtensions_Synchronized__2___0_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TAudioSource
+  - name: ','
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - name: TAudioSource
+  - name: )
+- uid: SilverCraft.CSCore.FluentExtensions
+  commentId: T:SilverCraft.CSCore.FluentExtensions
+  parent: SilverCraft.CSCore
+  href: SilverCraft.CSCore.FluentExtensions.html
+  name: FluentExtensions
+  nameWithType: FluentExtensions
+  fullName: SilverCraft.CSCore.FluentExtensions
+- uid: SilverCraft.CSCore
+  commentId: N:SilverCraft.CSCore
+  href: SilverCraft.html
+  name: SilverCraft.CSCore
+  nameWithType: SilverCraft.CSCore
+  fullName: SilverCraft.CSCore
+  spec.csharp:
+  - uid: SilverCraft
+    name: SilverCraft
+    href: SilverCraft.html
+  - name: .
+  - uid: SilverCraft.CSCore
+    name: CSCore
+    href: SilverCraft.CSCore.html
+  spec.vb:
+  - uid: SilverCraft
+    name: SilverCraft
+    href: SilverCraft.html
+  - name: .
+  - uid: SilverCraft.CSCore
+    name: CSCore
+    href: SilverCraft.CSCore.html
+- uid: SilverCraft.CSCore.Tests.Id3Tests.ID3v1_FromStream_ParsesValidTag*
+  commentId: Overload:SilverCraft.CSCore.Tests.Id3Tests.ID3v1_FromStream_ParsesValidTag
+  href: SilverCraft.CSCore.Tests.Id3Tests.html#SilverCraft_CSCore_Tests_Id3Tests_ID3v1_FromStream_ParsesValidTag
+  name: ID3v1_FromStream_ParsesValidTag
+  nameWithType: Id3Tests.ID3v1_FromStream_ParsesValidTag
+  fullName: SilverCraft.CSCore.Tests.Id3Tests.ID3v1_FromStream_ParsesValidTag
+- uid: SilverCraft.CSCore.Tests.Id3Tests.ID3v1_FromStream_ReturnsNullWhenNoTagHeader*
+  commentId: Overload:SilverCraft.CSCore.Tests.Id3Tests.ID3v1_FromStream_ReturnsNullWhenNoTagHeader
+  href: SilverCraft.CSCore.Tests.Id3Tests.html#SilverCraft_CSCore_Tests_Id3Tests_ID3v1_FromStream_ReturnsNullWhenNoTagHeader
+  name: ID3v1_FromStream_ReturnsNullWhenNoTagHeader
+  nameWithType: Id3Tests.ID3v1_FromStream_ReturnsNullWhenNoTagHeader
+  fullName: SilverCraft.CSCore.Tests.Id3Tests.ID3v1_FromStream_ReturnsNullWhenNoTagHeader
+- uid: SilverCraft.CSCore.Tests.Id3Tests.ID3v1_FromStream_ThrowsWhenStreamNull*
+  commentId: Overload:SilverCraft.CSCore.Tests.Id3Tests.ID3v1_FromStream_ThrowsWhenStreamNull
+  href: SilverCraft.CSCore.Tests.Id3Tests.html#SilverCraft_CSCore_Tests_Id3Tests_ID3v1_FromStream_ThrowsWhenStreamNull
+  name: ID3v1_FromStream_ThrowsWhenStreamNull
+  nameWithType: Id3Tests.ID3v1_FromStream_ThrowsWhenStreamNull
+  fullName: SilverCraft.CSCore.Tests.Id3Tests.ID3v1_FromStream_ThrowsWhenStreamNull

@@ -121,7 +121,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: Version
     path: ../SilverCraft.CSCore/Tags/ID3/ID3v2Header.cs
-    startLine: 51
+    startLine: 55
   assemblies:
   - SilverCraft.CSCore
   namespace: SilverCraft.CSCore.Tags.ID3
@@ -150,7 +150,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: RawVersion
     path: ../SilverCraft.CSCore/Tags/ID3/ID3v2Header.cs
-    startLine: 53
+    startLine: 57
   assemblies:
   - SilverCraft.CSCore
   namespace: SilverCraft.CSCore.Tags.ID3
@@ -179,7 +179,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: DataLength
     path: ../SilverCraft.CSCore/Tags/ID3/ID3v2Header.cs
-    startLine: 55
+    startLine: 59
   assemblies:
   - SilverCraft.CSCore
   namespace: SilverCraft.CSCore.Tags.ID3
@@ -208,7 +208,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: Flags
     path: ../SilverCraft.CSCore/Tags/ID3/ID3v2Header.cs
-    startLine: 57
+    startLine: 61
   assemblies:
   - SilverCraft.CSCore
   namespace: SilverCraft.CSCore.Tags.ID3
@@ -237,7 +237,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: IsUnsync
     path: ../SilverCraft.CSCore/Tags/ID3/ID3v2Header.cs
-    startLine: 59
+    startLine: 63
   assemblies:
   - SilverCraft.CSCore
   namespace: SilverCraft.CSCore.Tags.ID3

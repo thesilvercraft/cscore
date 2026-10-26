@@ -76,20 +76,23 @@ public class PortAudioSoundIn : ISoundIn
             var newStreamId = Interlocked.Increment(ref _currentStreamId);
 
             PaStream* paStream;
-            
+
             ThrowIfError(NativeMethods.Pa_OpenDefaultStream(
                 &paStream,
-                Channels,                   
-                0,                          
-                NativeMethods.paFloat32,   
+                Channels,
+                0,
+                NativeMethods.paFloat32,
                 SampleRate,
-                0,                          
+                0,
                 _callback,
                 (nint)newStreamId));
 
             ThrowIfError(NativeMethods.Pa_SetStreamFinishedCallback(paStream, _finishedCallback));
 
             WaveFormat = new WaveFormat(SampleRate, 32, Channels, AudioEncoding.IeeeFloat);
+            // PortAudio uses an unspecified callback size. Reserve one second of audio up front
+            // so ordinary callback sizes never allocate on the real-time thread.
+            _buffer = new byte[checked(SampleRate * Channels * sizeof(float))];
 
             lock (_streamLock)
             {
@@ -169,12 +172,16 @@ public class PortAudioSoundIn : ISoundIn
                 return (int)PaStreamCallbackResult.paContinue;
             }
 
+            if (frameCount > (ulong)(int.MaxValue / Channels))
+                return (int)PaStreamCallbackResult.paAbort;
             var totalSamples = (int)frameCount * Channels;
             var byteCount = totalSamples * sizeof(float);
 
             if (_buffer == null || _buffer.Length < byteCount)
             {
-                _buffer = new byte[byteCount];
+                _log?.LogError("PortAudio input callback exceeded the preallocated buffer ({ByteCount} bytes)",
+                    byteCount);
+                return (int)PaStreamCallbackResult.paAbort;
             }
 
             var inputSpan = new ReadOnlySpan<byte>(input, byteCount);

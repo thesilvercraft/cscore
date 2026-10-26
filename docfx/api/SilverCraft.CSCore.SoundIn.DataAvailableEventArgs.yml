@@ -24,7 +24,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: DataAvailableEventArgs
     path: ../SilverCraft.CSCore/SoundIn/DataAvailableEventArgs.cs
-    startLine: 7
+    startLine: 5
   assemblies:
   - SilverCraft.CSCore
   namespace: SilverCraft.CSCore.SoundIn
@@ -65,7 +65,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: Data
     path: ../SilverCraft.CSCore/SoundIn/DataAvailableEventArgs.cs
-    startLine: 12
+    startLine: 10
   assemblies:
   - SilverCraft.CSCore
   namespace: SilverCraft.CSCore.SoundIn
@@ -96,7 +96,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: ByteCount
     path: ../SilverCraft.CSCore/SoundIn/DataAvailableEventArgs.cs
-    startLine: 17
+    startLine: 15
   assemblies:
   - SilverCraft.CSCore
   namespace: SilverCraft.CSCore.SoundIn
@@ -127,7 +127,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: Offset
     path: ../SilverCraft.CSCore/SoundIn/DataAvailableEventArgs.cs
-    startLine: 22
+    startLine: 20
   assemblies:
   - SilverCraft.CSCore
   namespace: SilverCraft.CSCore.SoundIn
@@ -158,7 +158,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: Format
     path: ../SilverCraft.CSCore/SoundIn/DataAvailableEventArgs.cs
-    startLine: 27
+    startLine: 25
   assemblies:
   - SilverCraft.CSCore
   namespace: SilverCraft.CSCore.SoundIn
@@ -189,7 +189,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: .ctor
     path: ../SilverCraft.CSCore/SoundIn/DataAvailableEventArgs.cs
-    startLine: 45
+    startLine: 43
   assemblies:
   - SilverCraft.CSCore
   namespace: SilverCraft.CSCore.SoundIn

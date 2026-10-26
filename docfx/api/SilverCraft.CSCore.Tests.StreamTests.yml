@@ -1,0 +1,550 @@
+### YamlMime:ManagedReference
+items:
+- uid: SilverCraft.CSCore.Tests.StreamTests
+  commentId: T:SilverCraft.CSCore.Tests.StreamTests
+  id: StreamTests
+  parent: SilverCraft.CSCore.Tests
+  children:
+  - SilverCraft.CSCore.Tests.StreamTests.VolumeSource_AppliesVolumeWithinRequestedBufferRange
+  - SilverCraft.CSCore.Tests.StreamTests.VolumeSource_RejectsVolumeOutsideUnitRange(System.Single)
+  - SilverCraft.CSCore.Tests.StreamTests.VolumeSource_SilencesSamplesAtZeroVolume
+  langs:
+  - csharp
+  - vb
+  name: StreamTests
+  nameWithType: StreamTests
+  fullName: SilverCraft.CSCore.Tests.StreamTests
+  type: Class
+  source:
+    remote:
+      path: SilverCraft.CSCore.Tests/StreamTests.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: StreamTests
+    path: ../SilverCraft.CSCore.Tests/StreamTests.cs
+    startLine: 5
+  assemblies:
+  - SilverCraft.CSCore.Tests
+  namespace: SilverCraft.CSCore.Tests
+  syntax:
+    content: public sealed class StreamTests
+    content.vb: Public NotInheritable Class StreamTests
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  extensionMethods:
+  - SilverCraft.CSCore.Tests.StreamTests.SilverCraft.CSCore.FluentExtensions.Synchronized``2
+- uid: SilverCraft.CSCore.Tests.StreamTests.VolumeSource_AppliesVolumeWithinRequestedBufferRange
+  commentId: M:SilverCraft.CSCore.Tests.StreamTests.VolumeSource_AppliesVolumeWithinRequestedBufferRange
+  id: VolumeSource_AppliesVolumeWithinRequestedBufferRange
+  parent: SilverCraft.CSCore.Tests.StreamTests
+  langs:
+  - csharp
+  - vb
+  name: VolumeSource_AppliesVolumeWithinRequestedBufferRange()
+  nameWithType: StreamTests.VolumeSource_AppliesVolumeWithinRequestedBufferRange()
+  fullName: SilverCraft.CSCore.Tests.StreamTests.VolumeSource_AppliesVolumeWithinRequestedBufferRange()
+  type: Method
+  source:
+    remote:
+      path: SilverCraft.CSCore.Tests/StreamTests.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: VolumeSource_AppliesVolumeWithinRequestedBufferRange
+    path: ../SilverCraft.CSCore.Tests/StreamTests.cs
+    startLine: 7
+  assemblies:
+  - SilverCraft.CSCore.Tests
+  namespace: SilverCraft.CSCore.Tests
+  syntax:
+    content: >-
+      [Fact]
+
+      public void VolumeSource_AppliesVolumeWithinRequestedBufferRange()
+    content.vb: >-
+      <Fact>
+
+      Public Sub VolumeSource_AppliesVolumeWithinRequestedBufferRange()
+  overload: SilverCraft.CSCore.Tests.StreamTests.VolumeSource_AppliesVolumeWithinRequestedBufferRange*
+  attributes:
+  - type: Xunit.FactAttribute
+    ctor: Xunit.FactAttribute.#ctor
+    arguments: []
+- uid: SilverCraft.CSCore.Tests.StreamTests.VolumeSource_SilencesSamplesAtZeroVolume
+  commentId: M:SilverCraft.CSCore.Tests.StreamTests.VolumeSource_SilencesSamplesAtZeroVolume
+  id: VolumeSource_SilencesSamplesAtZeroVolume
+  parent: SilverCraft.CSCore.Tests.StreamTests
+  langs:
+  - csharp
+  - vb
+  name: VolumeSource_SilencesSamplesAtZeroVolume()
+  nameWithType: StreamTests.VolumeSource_SilencesSamplesAtZeroVolume()
+  fullName: SilverCraft.CSCore.Tests.StreamTests.VolumeSource_SilencesSamplesAtZeroVolume()
+  type: Method
+  source:
+    remote:
+      path: SilverCraft.CSCore.Tests/StreamTests.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: VolumeSource_SilencesSamplesAtZeroVolume
+    path: ../SilverCraft.CSCore.Tests/StreamTests.cs
+    startLine: 20
+  assemblies:
+  - SilverCraft.CSCore.Tests
+  namespace: SilverCraft.CSCore.Tests
+  syntax:
+    content: >-
+      [Fact]
+
+      public void VolumeSource_SilencesSamplesAtZeroVolume()
+    content.vb: >-
+      <Fact>
+
+      Public Sub VolumeSource_SilencesSamplesAtZeroVolume()
+  overload: SilverCraft.CSCore.Tests.StreamTests.VolumeSource_SilencesSamplesAtZeroVolume*
+  attributes:
+  - type: Xunit.FactAttribute
+    ctor: Xunit.FactAttribute.#ctor
+    arguments: []
+- uid: SilverCraft.CSCore.Tests.StreamTests.VolumeSource_RejectsVolumeOutsideUnitRange(System.Single)
+  commentId: M:SilverCraft.CSCore.Tests.StreamTests.VolumeSource_RejectsVolumeOutsideUnitRange(System.Single)
+  id: VolumeSource_RejectsVolumeOutsideUnitRange(System.Single)
+  parent: SilverCraft.CSCore.Tests.StreamTests
+  langs:
+  - csharp
+  - vb
+  name: VolumeSource_RejectsVolumeOutsideUnitRange(float)
+  nameWithType: StreamTests.VolumeSource_RejectsVolumeOutsideUnitRange(float)
+  fullName: SilverCraft.CSCore.Tests.StreamTests.VolumeSource_RejectsVolumeOutsideUnitRange(float)
+  type: Method
+  source:
+    remote:
+      path: SilverCraft.CSCore.Tests/StreamTests.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: VolumeSource_RejectsVolumeOutsideUnitRange
+    path: ../SilverCraft.CSCore.Tests/StreamTests.cs
+    startLine: 33
+  assemblies:
+  - SilverCraft.CSCore.Tests
+  namespace: SilverCraft.CSCore.Tests
+  syntax:
+    content: >-
+      [Theory]
+
+      [InlineData(new object[] { -0.01 })]
+
+      [InlineData(new object[] { 1.01 })]
+
+      public void VolumeSource_RejectsVolumeOutsideUnitRange(float value)
+    parameters:
+    - id: value
+      type: System.Single
+    content.vb: >-
+      <Theory>
+
+      <InlineData(New Object() { -0.01 })>
+
+      <InlineData(New Object() { 1.01 })>
+
+      Public Sub VolumeSource_RejectsVolumeOutsideUnitRange(value As Single)
+  overload: SilverCraft.CSCore.Tests.StreamTests.VolumeSource_RejectsVolumeOutsideUnitRange*
+  attributes:
+  - type: Xunit.TheoryAttribute
+    ctor: Xunit.TheoryAttribute.#ctor
+    arguments: []
+  nameWithType.vb: StreamTests.VolumeSource_RejectsVolumeOutsideUnitRange(Single)
+  fullName.vb: SilverCraft.CSCore.Tests.StreamTests.VolumeSource_RejectsVolumeOutsideUnitRange(Single)
+  name.vb: VolumeSource_RejectsVolumeOutsideUnitRange(Single)
+references:
+- uid: SilverCraft.CSCore.Tests
+  commentId: N:SilverCraft.CSCore.Tests
+  href: SilverCraft.html
+  name: SilverCraft.CSCore.Tests
+  nameWithType: SilverCraft.CSCore.Tests
+  fullName: SilverCraft.CSCore.Tests
+  spec.csharp:
+  - uid: SilverCraft
+    name: SilverCraft
+    href: SilverCraft.html
+  - name: .
+  - uid: SilverCraft.CSCore
+    name: CSCore
+    href: SilverCraft.CSCore.html
+  - name: .
+  - uid: SilverCraft.CSCore.Tests
+    name: Tests
+    href: SilverCraft.CSCore.Tests.html
+  spec.vb:
+  - uid: SilverCraft
+    name: SilverCraft
+    href: SilverCraft.html
+  - name: .
+  - uid: SilverCraft.CSCore
+    name: CSCore
+    href: SilverCraft.CSCore.html
+  - name: .
+  - uid: SilverCraft.CSCore.Tests
+    name: Tests
+    href: SilverCraft.CSCore.Tests.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: SilverCraft.CSCore.Tests.StreamTests.SilverCraft.CSCore.FluentExtensions.Synchronized``2
+  commentId: M:SilverCraft.CSCore.FluentExtensions.Synchronized``2(``0)
+  parent: SilverCraft.CSCore.FluentExtensions
+  definition: SilverCraft.CSCore.FluentExtensions.Synchronized``2(``0)
+  href: SilverCraft.CSCore.FluentExtensions.html#SilverCraft_CSCore_FluentExtensions_Synchronized__2___0_
+  name: Synchronized<StreamTests, T>(StreamTests)
+  nameWithType: FluentExtensions.Synchronized<StreamTests, T>(StreamTests)
+  fullName: SilverCraft.CSCore.FluentExtensions.Synchronized<SilverCraft.CSCore.Tests.StreamTests, T>(SilverCraft.CSCore.Tests.StreamTests)
+  nameWithType.vb: FluentExtensions.Synchronized(Of StreamTests, T)(StreamTests)
+  fullName.vb: SilverCraft.CSCore.FluentExtensions.Synchronized(Of SilverCraft.CSCore.Tests.StreamTests, T)(SilverCraft.CSCore.Tests.StreamTests)
+  name.vb: Synchronized(Of StreamTests, T)(StreamTests)
+  spec.csharp:
+  - uid: SilverCraft.CSCore.FluentExtensions.Synchronized``2(SilverCraft.CSCore.Tests.StreamTests)
+    name: Synchronized
+    href: SilverCraft.CSCore.FluentExtensions.html#SilverCraft_CSCore_FluentExtensions_Synchronized__2___0_
+  - name: <
+  - uid: SilverCraft.CSCore.Tests.StreamTests
+    name: StreamTests
+    href: SilverCraft.CSCore.Tests.StreamTests.html
+  - name: ','
+  - name: " "
+  - name: T
+  - name: '>'
+  - name: (
+  - uid: SilverCraft.CSCore.Tests.StreamTests
+    name: StreamTests
+    href: SilverCraft.CSCore.Tests.StreamTests.html
+  - name: )
+  spec.vb:
+  - uid: SilverCraft.CSCore.FluentExtensions.Synchronized``2(SilverCraft.CSCore.Tests.StreamTests)
+    name: Synchronized
+    href: SilverCraft.CSCore.FluentExtensions.html#SilverCraft_CSCore_FluentExtensions_Synchronized__2___0_
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: SilverCraft.CSCore.Tests.StreamTests
+    name: StreamTests
+    href: SilverCraft.CSCore.Tests.StreamTests.html
+  - name: ','
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: SilverCraft.CSCore.Tests.StreamTests
+    name: StreamTests
+    href: SilverCraft.CSCore.Tests.StreamTests.html
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: SilverCraft.CSCore.FluentExtensions.Synchronized``2(``0)
+  commentId: M:SilverCraft.CSCore.FluentExtensions.Synchronized``2(``0)
+  href: SilverCraft.CSCore.FluentExtensions.html#SilverCraft_CSCore_FluentExtensions_Synchronized__2___0_
+  name: Synchronized<TAudioSource, T>(TAudioSource)
+  nameWithType: FluentExtensions.Synchronized<TAudioSource, T>(TAudioSource)
+  fullName: SilverCraft.CSCore.FluentExtensions.Synchronized<TAudioSource, T>(TAudioSource)
+  nameWithType.vb: FluentExtensions.Synchronized(Of TAudioSource, T)(TAudioSource)
+  fullName.vb: SilverCraft.CSCore.FluentExtensions.Synchronized(Of TAudioSource, T)(TAudioSource)
+  name.vb: Synchronized(Of TAudioSource, T)(TAudioSource)
+  spec.csharp:
+  - uid: SilverCraft.CSCore.FluentExtensions.Synchronized``2(``0)
+    name: Synchronized
+    href: SilverCraft.CSCore.FluentExtensions.html#SilverCraft_CSCore_FluentExtensions_Synchronized__2___0_
+  - name: <
+  - name: TAudioSource
+  - name: ','
+  - name: " "
+  - name: T
+  - name: '>'
+  - name: (
+  - name: TAudioSource
+  - name: )
+  spec.vb:
+  - uid: SilverCraft.CSCore.FluentExtensions.Synchronized``2(``0)
+    name: Synchronized
+    href: SilverCraft.CSCore.FluentExtensions.html#SilverCraft_CSCore_FluentExtensions_Synchronized__2___0_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TAudioSource
+  - name: ','
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - name: TAudioSource
+  - name: )
+- uid: SilverCraft.CSCore.FluentExtensions
+  commentId: T:SilverCraft.CSCore.FluentExtensions
+  parent: SilverCraft.CSCore
+  href: SilverCraft.CSCore.FluentExtensions.html
+  name: FluentExtensions
+  nameWithType: FluentExtensions
+  fullName: SilverCraft.CSCore.FluentExtensions
+- uid: SilverCraft.CSCore
+  commentId: N:SilverCraft.CSCore
+  href: SilverCraft.html
+  name: SilverCraft.CSCore
+  nameWithType: SilverCraft.CSCore
+  fullName: SilverCraft.CSCore
+  spec.csharp:
+  - uid: SilverCraft
+    name: SilverCraft
+    href: SilverCraft.html
+  - name: .
+  - uid: SilverCraft.CSCore
+    name: CSCore
+    href: SilverCraft.CSCore.html
+  spec.vb:
+  - uid: SilverCraft
+    name: SilverCraft
+    href: SilverCraft.html
+  - name: .
+  - uid: SilverCraft.CSCore
+    name: CSCore
+    href: SilverCraft.CSCore.html
+- uid: SilverCraft.CSCore.Tests.StreamTests.VolumeSource_AppliesVolumeWithinRequestedBufferRange*
+  commentId: Overload:SilverCraft.CSCore.Tests.StreamTests.VolumeSource_AppliesVolumeWithinRequestedBufferRange
+  href: SilverCraft.CSCore.Tests.StreamTests.html#SilverCraft_CSCore_Tests_StreamTests_VolumeSource_AppliesVolumeWithinRequestedBufferRange
+  name: VolumeSource_AppliesVolumeWithinRequestedBufferRange
+  nameWithType: StreamTests.VolumeSource_AppliesVolumeWithinRequestedBufferRange
+  fullName: SilverCraft.CSCore.Tests.StreamTests.VolumeSource_AppliesVolumeWithinRequestedBufferRange
+- uid: SilverCraft.CSCore.Tests.StreamTests.VolumeSource_SilencesSamplesAtZeroVolume*
+  commentId: Overload:SilverCraft.CSCore.Tests.StreamTests.VolumeSource_SilencesSamplesAtZeroVolume
+  href: SilverCraft.CSCore.Tests.StreamTests.html#SilverCraft_CSCore_Tests_StreamTests_VolumeSource_SilencesSamplesAtZeroVolume
+  name: VolumeSource_SilencesSamplesAtZeroVolume
+  nameWithType: StreamTests.VolumeSource_SilencesSamplesAtZeroVolume
+  fullName: SilverCraft.CSCore.Tests.StreamTests.VolumeSource_SilencesSamplesAtZeroVolume
+- uid: SilverCraft.CSCore.Tests.StreamTests.VolumeSource_RejectsVolumeOutsideUnitRange*
+  commentId: Overload:SilverCraft.CSCore.Tests.StreamTests.VolumeSource_RejectsVolumeOutsideUnitRange
+  href: SilverCraft.CSCore.Tests.StreamTests.html#SilverCraft_CSCore_Tests_StreamTests_VolumeSource_RejectsVolumeOutsideUnitRange_System_Single_
+  name: VolumeSource_RejectsVolumeOutsideUnitRange
+  nameWithType: StreamTests.VolumeSource_RejectsVolumeOutsideUnitRange
+  fullName: SilverCraft.CSCore.Tests.StreamTests.VolumeSource_RejectsVolumeOutsideUnitRange
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.single
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single

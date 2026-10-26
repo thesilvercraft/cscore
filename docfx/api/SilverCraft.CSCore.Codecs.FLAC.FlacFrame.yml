@@ -226,7 +226,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: FromStream
     path: ../SilverCraft.CSCore/Codecs/FLAC/FlacFrame.cs
-    startLine: 86
+    startLine: 85
   assemblies:
   - SilverCraft.CSCore
   namespace: SilverCraft.CSCore.Codecs.FLAC
@@ -267,12 +267,12 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: NextFrame
     path: ../SilverCraft.CSCore/Codecs/FLAC/FlacFrame.cs
-    startLine: 98
+    startLine: 96
   assemblies:
   - SilverCraft.CSCore
   namespace: SilverCraft.CSCore.Codecs.FLAC
   summary: >-
-    Tries to read the next flac frame inside of the specified stream and returns a value which indicates whether the
+    Tries to read the next flac frame inside the specified stream and returns a value which indicates whether the
 
     next flac frame could be successfully read.
   example: []

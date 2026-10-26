@@ -1,0 +1,821 @@
+### YamlMime:ManagedReference
+items:
+- uid: SilverCraft.CSCore.Tests.AudioReadOffsetTests
+  commentId: T:SilverCraft.CSCore.Tests.AudioReadOffsetTests
+  id: AudioReadOffsetTests
+  parent: SilverCraft.CSCore.Tests
+  children:
+  - SilverCraft.CSCore.Tests.AudioReadOffsetTests.PeakMeter_TracksAllSamplesReadAtANonzeroOffset
+  - SilverCraft.CSCore.Tests.AudioReadOffsetTests.SampleSourceKinds
+  - SilverCraft.CSCore.Tests.AudioReadOffsetTests.SampleSources_WriteOnlyTheRequestedOffsetRange(System.String)
+  - SilverCraft.CSCore.Tests.AudioReadOffsetTests.SampleToWaveConverters_WriteOnlyTheRequestedOffsetRange(System.String)
+  - SilverCraft.CSCore.Tests.AudioReadOffsetTests.SampleToWaveKinds
+  - SilverCraft.CSCore.Tests.AudioReadOffsetTests.WaveToSampleConverters_WriteOnlyTheRequestedOffsetRange(System.String)
+  - SilverCraft.CSCore.Tests.AudioReadOffsetTests.WaveToSampleKinds
+  langs:
+  - csharp
+  - vb
+  name: AudioReadOffsetTests
+  nameWithType: AudioReadOffsetTests
+  fullName: SilverCraft.CSCore.Tests.AudioReadOffsetTests
+  type: Class
+  source:
+    remote:
+      path: SilverCraft.CSCore.Tests/AudioReadOffsetTests.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: AudioReadOffsetTests
+    path: ../SilverCraft.CSCore.Tests/AudioReadOffsetTests.cs
+    startLine: 9
+  assemblies:
+  - SilverCraft.CSCore.Tests
+  namespace: SilverCraft.CSCore.Tests
+  syntax:
+    content: public sealed class AudioReadOffsetTests
+    content.vb: Public NotInheritable Class AudioReadOffsetTests
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  extensionMethods:
+  - SilverCraft.CSCore.Tests.AudioReadOffsetTests.SilverCraft.CSCore.FluentExtensions.Synchronized``2
+- uid: SilverCraft.CSCore.Tests.AudioReadOffsetTests.SampleSourceKinds
+  commentId: P:SilverCraft.CSCore.Tests.AudioReadOffsetTests.SampleSourceKinds
+  id: SampleSourceKinds
+  parent: SilverCraft.CSCore.Tests.AudioReadOffsetTests
+  langs:
+  - csharp
+  - vb
+  name: SampleSourceKinds
+  nameWithType: AudioReadOffsetTests.SampleSourceKinds
+  fullName: SilverCraft.CSCore.Tests.AudioReadOffsetTests.SampleSourceKinds
+  type: Property
+  source:
+    remote:
+      path: SilverCraft.CSCore.Tests/AudioReadOffsetTests.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: SampleSourceKinds
+    path: ../SilverCraft.CSCore.Tests/AudioReadOffsetTests.cs
+    startLine: 11
+  assemblies:
+  - SilverCraft.CSCore.Tests
+  namespace: SilverCraft.CSCore.Tests
+  syntax:
+    content: public static IEnumerable<object[]> SampleSourceKinds { get; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.IEnumerable{System.Object[]}
+    content.vb: Public Shared ReadOnly Property SampleSourceKinds As IEnumerable(Of Object())
+  overload: SilverCraft.CSCore.Tests.AudioReadOffsetTests.SampleSourceKinds*
+- uid: SilverCraft.CSCore.Tests.AudioReadOffsetTests.WaveToSampleKinds
+  commentId: P:SilverCraft.CSCore.Tests.AudioReadOffsetTests.WaveToSampleKinds
+  id: WaveToSampleKinds
+  parent: SilverCraft.CSCore.Tests.AudioReadOffsetTests
+  langs:
+  - csharp
+  - vb
+  name: WaveToSampleKinds
+  nameWithType: AudioReadOffsetTests.WaveToSampleKinds
+  fullName: SilverCraft.CSCore.Tests.AudioReadOffsetTests.WaveToSampleKinds
+  type: Property
+  source:
+    remote:
+      path: SilverCraft.CSCore.Tests/AudioReadOffsetTests.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: WaveToSampleKinds
+    path: ../SilverCraft.CSCore.Tests/AudioReadOffsetTests.cs
+    startLine: 17
+  assemblies:
+  - SilverCraft.CSCore.Tests
+  namespace: SilverCraft.CSCore.Tests
+  syntax:
+    content: public static IEnumerable<object[]> WaveToSampleKinds { get; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.IEnumerable{System.Object[]}
+    content.vb: Public Shared ReadOnly Property WaveToSampleKinds As IEnumerable(Of Object())
+  overload: SilverCraft.CSCore.Tests.AudioReadOffsetTests.WaveToSampleKinds*
+- uid: SilverCraft.CSCore.Tests.AudioReadOffsetTests.SampleToWaveKinds
+  commentId: P:SilverCraft.CSCore.Tests.AudioReadOffsetTests.SampleToWaveKinds
+  id: SampleToWaveKinds
+  parent: SilverCraft.CSCore.Tests.AudioReadOffsetTests
+  langs:
+  - csharp
+  - vb
+  name: SampleToWaveKinds
+  nameWithType: AudioReadOffsetTests.SampleToWaveKinds
+  fullName: SilverCraft.CSCore.Tests.AudioReadOffsetTests.SampleToWaveKinds
+  type: Property
+  source:
+    remote:
+      path: SilverCraft.CSCore.Tests/AudioReadOffsetTests.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: SampleToWaveKinds
+    path: ../SilverCraft.CSCore.Tests/AudioReadOffsetTests.cs
+    startLine: 22
+  assemblies:
+  - SilverCraft.CSCore.Tests
+  namespace: SilverCraft.CSCore.Tests
+  syntax:
+    content: public static IEnumerable<object[]> SampleToWaveKinds { get; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.IEnumerable{System.Object[]}
+    content.vb: Public Shared ReadOnly Property SampleToWaveKinds As IEnumerable(Of Object())
+  overload: SilverCraft.CSCore.Tests.AudioReadOffsetTests.SampleToWaveKinds*
+- uid: SilverCraft.CSCore.Tests.AudioReadOffsetTests.SampleSources_WriteOnlyTheRequestedOffsetRange(System.String)
+  commentId: M:SilverCraft.CSCore.Tests.AudioReadOffsetTests.SampleSources_WriteOnlyTheRequestedOffsetRange(System.String)
+  id: SampleSources_WriteOnlyTheRequestedOffsetRange(System.String)
+  parent: SilverCraft.CSCore.Tests.AudioReadOffsetTests
+  langs:
+  - csharp
+  - vb
+  name: SampleSources_WriteOnlyTheRequestedOffsetRange(string)
+  nameWithType: AudioReadOffsetTests.SampleSources_WriteOnlyTheRequestedOffsetRange(string)
+  fullName: SilverCraft.CSCore.Tests.AudioReadOffsetTests.SampleSources_WriteOnlyTheRequestedOffsetRange(string)
+  type: Method
+  source:
+    remote:
+      path: SilverCraft.CSCore.Tests/AudioReadOffsetTests.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: SampleSources_WriteOnlyTheRequestedOffsetRange
+    path: ../SilverCraft.CSCore.Tests/AudioReadOffsetTests.cs
+    startLine: 27
+  assemblies:
+  - SilverCraft.CSCore.Tests
+  namespace: SilverCraft.CSCore.Tests
+  syntax:
+    content: >-
+      [Theory]
+
+      [MemberData("SampleSourceKinds", new object[] { })]
+
+      public void SampleSources_WriteOnlyTheRequestedOffsetRange(string kind)
+    parameters:
+    - id: kind
+      type: System.String
+    content.vb: >-
+      <Theory>
+
+      <MemberData("SampleSourceKinds", New Object() { })>
+
+      Public Sub SampleSources_WriteOnlyTheRequestedOffsetRange(kind As String)
+  overload: SilverCraft.CSCore.Tests.AudioReadOffsetTests.SampleSources_WriteOnlyTheRequestedOffsetRange*
+  attributes:
+  - type: Xunit.TheoryAttribute
+    ctor: Xunit.TheoryAttribute.#ctor
+    arguments: []
+  nameWithType.vb: AudioReadOffsetTests.SampleSources_WriteOnlyTheRequestedOffsetRange(String)
+  fullName.vb: SilverCraft.CSCore.Tests.AudioReadOffsetTests.SampleSources_WriteOnlyTheRequestedOffsetRange(String)
+  name.vb: SampleSources_WriteOnlyTheRequestedOffsetRange(String)
+- uid: SilverCraft.CSCore.Tests.AudioReadOffsetTests.WaveToSampleConverters_WriteOnlyTheRequestedOffsetRange(System.String)
+  commentId: M:SilverCraft.CSCore.Tests.AudioReadOffsetTests.WaveToSampleConverters_WriteOnlyTheRequestedOffsetRange(System.String)
+  id: WaveToSampleConverters_WriteOnlyTheRequestedOffsetRange(System.String)
+  parent: SilverCraft.CSCore.Tests.AudioReadOffsetTests
+  langs:
+  - csharp
+  - vb
+  name: WaveToSampleConverters_WriteOnlyTheRequestedOffsetRange(string)
+  nameWithType: AudioReadOffsetTests.WaveToSampleConverters_WriteOnlyTheRequestedOffsetRange(string)
+  fullName: SilverCraft.CSCore.Tests.AudioReadOffsetTests.WaveToSampleConverters_WriteOnlyTheRequestedOffsetRange(string)
+  type: Method
+  source:
+    remote:
+      path: SilverCraft.CSCore.Tests/AudioReadOffsetTests.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: WaveToSampleConverters_WriteOnlyTheRequestedOffsetRange
+    path: ../SilverCraft.CSCore.Tests/AudioReadOffsetTests.cs
+    startLine: 42
+  assemblies:
+  - SilverCraft.CSCore.Tests
+  namespace: SilverCraft.CSCore.Tests
+  syntax:
+    content: >-
+      [Theory]
+
+      [MemberData("WaveToSampleKinds", new object[] { })]
+
+      public void WaveToSampleConverters_WriteOnlyTheRequestedOffsetRange(string kind)
+    parameters:
+    - id: kind
+      type: System.String
+    content.vb: >-
+      <Theory>
+
+      <MemberData("WaveToSampleKinds", New Object() { })>
+
+      Public Sub WaveToSampleConverters_WriteOnlyTheRequestedOffsetRange(kind As String)
+  overload: SilverCraft.CSCore.Tests.AudioReadOffsetTests.WaveToSampleConverters_WriteOnlyTheRequestedOffsetRange*
+  attributes:
+  - type: Xunit.TheoryAttribute
+    ctor: Xunit.TheoryAttribute.#ctor
+    arguments: []
+  nameWithType.vb: AudioReadOffsetTests.WaveToSampleConverters_WriteOnlyTheRequestedOffsetRange(String)
+  fullName.vb: SilverCraft.CSCore.Tests.AudioReadOffsetTests.WaveToSampleConverters_WriteOnlyTheRequestedOffsetRange(String)
+  name.vb: WaveToSampleConverters_WriteOnlyTheRequestedOffsetRange(String)
+- uid: SilverCraft.CSCore.Tests.AudioReadOffsetTests.SampleToWaveConverters_WriteOnlyTheRequestedOffsetRange(System.String)
+  commentId: M:SilverCraft.CSCore.Tests.AudioReadOffsetTests.SampleToWaveConverters_WriteOnlyTheRequestedOffsetRange(System.String)
+  id: SampleToWaveConverters_WriteOnlyTheRequestedOffsetRange(System.String)
+  parent: SilverCraft.CSCore.Tests.AudioReadOffsetTests
+  langs:
+  - csharp
+  - vb
+  name: SampleToWaveConverters_WriteOnlyTheRequestedOffsetRange(string)
+  nameWithType: AudioReadOffsetTests.SampleToWaveConverters_WriteOnlyTheRequestedOffsetRange(string)
+  fullName: SilverCraft.CSCore.Tests.AudioReadOffsetTests.SampleToWaveConverters_WriteOnlyTheRequestedOffsetRange(string)
+  type: Method
+  source:
+    remote:
+      path: SilverCraft.CSCore.Tests/AudioReadOffsetTests.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: SampleToWaveConverters_WriteOnlyTheRequestedOffsetRange
+    path: ../SilverCraft.CSCore.Tests/AudioReadOffsetTests.cs
+    startLine: 54
+  assemblies:
+  - SilverCraft.CSCore.Tests
+  namespace: SilverCraft.CSCore.Tests
+  syntax:
+    content: >-
+      [Theory]
+
+      [MemberData("SampleToWaveKinds", new object[] { })]
+
+      public void SampleToWaveConverters_WriteOnlyTheRequestedOffsetRange(string kind)
+    parameters:
+    - id: kind
+      type: System.String
+    content.vb: >-
+      <Theory>
+
+      <MemberData("SampleToWaveKinds", New Object() { })>
+
+      Public Sub SampleToWaveConverters_WriteOnlyTheRequestedOffsetRange(kind As String)
+  overload: SilverCraft.CSCore.Tests.AudioReadOffsetTests.SampleToWaveConverters_WriteOnlyTheRequestedOffsetRange*
+  attributes:
+  - type: Xunit.TheoryAttribute
+    ctor: Xunit.TheoryAttribute.#ctor
+    arguments: []
+  nameWithType.vb: AudioReadOffsetTests.SampleToWaveConverters_WriteOnlyTheRequestedOffsetRange(String)
+  fullName.vb: SilverCraft.CSCore.Tests.AudioReadOffsetTests.SampleToWaveConverters_WriteOnlyTheRequestedOffsetRange(String)
+  name.vb: SampleToWaveConverters_WriteOnlyTheRequestedOffsetRange(String)
+- uid: SilverCraft.CSCore.Tests.AudioReadOffsetTests.PeakMeter_TracksAllSamplesReadAtANonzeroOffset
+  commentId: M:SilverCraft.CSCore.Tests.AudioReadOffsetTests.PeakMeter_TracksAllSamplesReadAtANonzeroOffset
+  id: PeakMeter_TracksAllSamplesReadAtANonzeroOffset
+  parent: SilverCraft.CSCore.Tests.AudioReadOffsetTests
+  langs:
+  - csharp
+  - vb
+  name: PeakMeter_TracksAllSamplesReadAtANonzeroOffset()
+  nameWithType: AudioReadOffsetTests.PeakMeter_TracksAllSamplesReadAtANonzeroOffset()
+  fullName: SilverCraft.CSCore.Tests.AudioReadOffsetTests.PeakMeter_TracksAllSamplesReadAtANonzeroOffset()
+  type: Method
+  source:
+    remote:
+      path: SilverCraft.CSCore.Tests/AudioReadOffsetTests.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: PeakMeter_TracksAllSamplesReadAtANonzeroOffset
+    path: ../SilverCraft.CSCore.Tests/AudioReadOffsetTests.cs
+    startLine: 69
+  assemblies:
+  - SilverCraft.CSCore.Tests
+  namespace: SilverCraft.CSCore.Tests
+  syntax:
+    content: >-
+      [Fact]
+
+      public void PeakMeter_TracksAllSamplesReadAtANonzeroOffset()
+    content.vb: >-
+      <Fact>
+
+      Public Sub PeakMeter_TracksAllSamplesReadAtANonzeroOffset()
+  overload: SilverCraft.CSCore.Tests.AudioReadOffsetTests.PeakMeter_TracksAllSamplesReadAtANonzeroOffset*
+  attributes:
+  - type: Xunit.FactAttribute
+    ctor: Xunit.FactAttribute.#ctor
+    arguments: []
+references:
+- uid: SilverCraft.CSCore.Tests
+  commentId: N:SilverCraft.CSCore.Tests
+  href: SilverCraft.html
+  name: SilverCraft.CSCore.Tests
+  nameWithType: SilverCraft.CSCore.Tests
+  fullName: SilverCraft.CSCore.Tests
+  spec.csharp:
+  - uid: SilverCraft
+    name: SilverCraft
+    href: SilverCraft.html
+  - name: .
+  - uid: SilverCraft.CSCore
+    name: CSCore
+    href: SilverCraft.CSCore.html
+  - name: .
+  - uid: SilverCraft.CSCore.Tests
+    name: Tests
+    href: SilverCraft.CSCore.Tests.html
+  spec.vb:
+  - uid: SilverCraft
+    name: SilverCraft
+    href: SilverCraft.html
+  - name: .
+  - uid: SilverCraft.CSCore
+    name: CSCore
+    href: SilverCraft.CSCore.html
+  - name: .
+  - uid: SilverCraft.CSCore.Tests
+    name: Tests
+    href: SilverCraft.CSCore.Tests.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: SilverCraft.CSCore.Tests.AudioReadOffsetTests.SilverCraft.CSCore.FluentExtensions.Synchronized``2
+  commentId: M:SilverCraft.CSCore.FluentExtensions.Synchronized``2(``0)
+  parent: SilverCraft.CSCore.FluentExtensions
+  definition: SilverCraft.CSCore.FluentExtensions.Synchronized``2(``0)
+  href: SilverCraft.CSCore.FluentExtensions.html#SilverCraft_CSCore_FluentExtensions_Synchronized__2___0_
+  name: Synchronized<AudioReadOffsetTests, T>(AudioReadOffsetTests)
+  nameWithType: FluentExtensions.Synchronized<AudioReadOffsetTests, T>(AudioReadOffsetTests)
+  fullName: SilverCraft.CSCore.FluentExtensions.Synchronized<SilverCraft.CSCore.Tests.AudioReadOffsetTests, T>(SilverCraft.CSCore.Tests.AudioReadOffsetTests)
+  nameWithType.vb: FluentExtensions.Synchronized(Of AudioReadOffsetTests, T)(AudioReadOffsetTests)
+  fullName.vb: SilverCraft.CSCore.FluentExtensions.Synchronized(Of SilverCraft.CSCore.Tests.AudioReadOffsetTests, T)(SilverCraft.CSCore.Tests.AudioReadOffsetTests)
+  name.vb: Synchronized(Of AudioReadOffsetTests, T)(AudioReadOffsetTests)
+  spec.csharp:
+  - uid: SilverCraft.CSCore.FluentExtensions.Synchronized``2(SilverCraft.CSCore.Tests.AudioReadOffsetTests)
+    name: Synchronized
+    href: SilverCraft.CSCore.FluentExtensions.html#SilverCraft_CSCore_FluentExtensions_Synchronized__2___0_
+  - name: <
+  - uid: SilverCraft.CSCore.Tests.AudioReadOffsetTests
+    name: AudioReadOffsetTests
+    href: SilverCraft.CSCore.Tests.AudioReadOffsetTests.html
+  - name: ','
+  - name: " "
+  - name: T
+  - name: '>'
+  - name: (
+  - uid: SilverCraft.CSCore.Tests.AudioReadOffsetTests
+    name: AudioReadOffsetTests
+    href: SilverCraft.CSCore.Tests.AudioReadOffsetTests.html
+  - name: )
+  spec.vb:
+  - uid: SilverCraft.CSCore.FluentExtensions.Synchronized``2(SilverCraft.CSCore.Tests.AudioReadOffsetTests)
+    name: Synchronized
+    href: SilverCraft.CSCore.FluentExtensions.html#SilverCraft_CSCore_FluentExtensions_Synchronized__2___0_
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: SilverCraft.CSCore.Tests.AudioReadOffsetTests
+    name: AudioReadOffsetTests
+    href: SilverCraft.CSCore.Tests.AudioReadOffsetTests.html
+  - name: ','
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: SilverCraft.CSCore.Tests.AudioReadOffsetTests
+    name: AudioReadOffsetTests
+    href: SilverCraft.CSCore.Tests.AudioReadOffsetTests.html
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: SilverCraft.CSCore.FluentExtensions.Synchronized``2(``0)
+  commentId: M:SilverCraft.CSCore.FluentExtensions.Synchronized``2(``0)
+  href: SilverCraft.CSCore.FluentExtensions.html#SilverCraft_CSCore_FluentExtensions_Synchronized__2___0_
+  name: Synchronized<TAudioSource, T>(TAudioSource)
+  nameWithType: FluentExtensions.Synchronized<TAudioSource, T>(TAudioSource)
+  fullName: SilverCraft.CSCore.FluentExtensions.Synchronized<TAudioSource, T>(TAudioSource)
+  nameWithType.vb: FluentExtensions.Synchronized(Of TAudioSource, T)(TAudioSource)
+  fullName.vb: SilverCraft.CSCore.FluentExtensions.Synchronized(Of TAudioSource, T)(TAudioSource)
+  name.vb: Synchronized(Of TAudioSource, T)(TAudioSource)
+  spec.csharp:
+  - uid: SilverCraft.CSCore.FluentExtensions.Synchronized``2(``0)
+    name: Synchronized
+    href: SilverCraft.CSCore.FluentExtensions.html#SilverCraft_CSCore_FluentExtensions_Synchronized__2___0_
+  - name: <
+  - name: TAudioSource
+  - name: ','
+  - name: " "
+  - name: T
+  - name: '>'
+  - name: (
+  - name: TAudioSource
+  - name: )
+  spec.vb:
+  - uid: SilverCraft.CSCore.FluentExtensions.Synchronized``2(``0)
+    name: Synchronized
+    href: SilverCraft.CSCore.FluentExtensions.html#SilverCraft_CSCore_FluentExtensions_Synchronized__2___0_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TAudioSource
+  - name: ','
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - name: TAudioSource
+  - name: )
+- uid: SilverCraft.CSCore.FluentExtensions
+  commentId: T:SilverCraft.CSCore.FluentExtensions
+  parent: SilverCraft.CSCore
+  href: SilverCraft.CSCore.FluentExtensions.html
+  name: FluentExtensions
+  nameWithType: FluentExtensions
+  fullName: SilverCraft.CSCore.FluentExtensions
+- uid: SilverCraft.CSCore
+  commentId: N:SilverCraft.CSCore
+  href: SilverCraft.html
+  name: SilverCraft.CSCore
+  nameWithType: SilverCraft.CSCore
+  fullName: SilverCraft.CSCore
+  spec.csharp:
+  - uid: SilverCraft
+    name: SilverCraft
+    href: SilverCraft.html
+  - name: .
+  - uid: SilverCraft.CSCore
+    name: CSCore
+    href: SilverCraft.CSCore.html
+  spec.vb:
+  - uid: SilverCraft
+    name: SilverCraft
+    href: SilverCraft.html
+  - name: .
+  - uid: SilverCraft.CSCore
+    name: CSCore
+    href: SilverCraft.CSCore.html
+- uid: SilverCraft.CSCore.Tests.AudioReadOffsetTests.SampleSourceKinds*
+  commentId: Overload:SilverCraft.CSCore.Tests.AudioReadOffsetTests.SampleSourceKinds
+  href: SilverCraft.CSCore.Tests.AudioReadOffsetTests.html#SilverCraft_CSCore_Tests_AudioReadOffsetTests_SampleSourceKinds
+  name: SampleSourceKinds
+  nameWithType: AudioReadOffsetTests.SampleSourceKinds
+  fullName: SilverCraft.CSCore.Tests.AudioReadOffsetTests.SampleSourceKinds
+- uid: System.Collections.Generic.IEnumerable{System.Object[]}
+  commentId: T:System.Collections.Generic.IEnumerable{System.Object[]}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<object[]>
+  nameWithType: IEnumerable<object[]>
+  fullName: System.Collections.Generic.IEnumerable<object[]>
+  nameWithType.vb: IEnumerable(Of Object())
+  fullName.vb: System.Collections.Generic.IEnumerable(Of Object())
+  name.vb: IEnumerable(Of Object())
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: '['
+  - name: ']'
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: (
+  - name: )
+  - name: )
+- uid: System.Collections.Generic.IEnumerable`1
+  commentId: T:System.Collections.Generic.IEnumerable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<T>
+  nameWithType: IEnumerable<T>
+  fullName: System.Collections.Generic.IEnumerable<T>
+  nameWithType.vb: IEnumerable(Of T)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T)
+  name.vb: IEnumerable(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: SilverCraft.CSCore.Tests.AudioReadOffsetTests.WaveToSampleKinds*
+  commentId: Overload:SilverCraft.CSCore.Tests.AudioReadOffsetTests.WaveToSampleKinds
+  href: SilverCraft.CSCore.Tests.AudioReadOffsetTests.html#SilverCraft_CSCore_Tests_AudioReadOffsetTests_WaveToSampleKinds
+  name: WaveToSampleKinds
+  nameWithType: AudioReadOffsetTests.WaveToSampleKinds
+  fullName: SilverCraft.CSCore.Tests.AudioReadOffsetTests.WaveToSampleKinds
+- uid: SilverCraft.CSCore.Tests.AudioReadOffsetTests.SampleToWaveKinds*
+  commentId: Overload:SilverCraft.CSCore.Tests.AudioReadOffsetTests.SampleToWaveKinds
+  href: SilverCraft.CSCore.Tests.AudioReadOffsetTests.html#SilverCraft_CSCore_Tests_AudioReadOffsetTests_SampleToWaveKinds
+  name: SampleToWaveKinds
+  nameWithType: AudioReadOffsetTests.SampleToWaveKinds
+  fullName: SilverCraft.CSCore.Tests.AudioReadOffsetTests.SampleToWaveKinds
+- uid: SilverCraft.CSCore.Tests.AudioReadOffsetTests.SampleSources_WriteOnlyTheRequestedOffsetRange*
+  commentId: Overload:SilverCraft.CSCore.Tests.AudioReadOffsetTests.SampleSources_WriteOnlyTheRequestedOffsetRange
+  href: SilverCraft.CSCore.Tests.AudioReadOffsetTests.html#SilverCraft_CSCore_Tests_AudioReadOffsetTests_SampleSources_WriteOnlyTheRequestedOffsetRange_System_String_
+  name: SampleSources_WriteOnlyTheRequestedOffsetRange
+  nameWithType: AudioReadOffsetTests.SampleSources_WriteOnlyTheRequestedOffsetRange
+  fullName: SilverCraft.CSCore.Tests.AudioReadOffsetTests.SampleSources_WriteOnlyTheRequestedOffsetRange
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: SilverCraft.CSCore.Tests.AudioReadOffsetTests.WaveToSampleConverters_WriteOnlyTheRequestedOffsetRange*
+  commentId: Overload:SilverCraft.CSCore.Tests.AudioReadOffsetTests.WaveToSampleConverters_WriteOnlyTheRequestedOffsetRange
+  href: SilverCraft.CSCore.Tests.AudioReadOffsetTests.html#SilverCraft_CSCore_Tests_AudioReadOffsetTests_WaveToSampleConverters_WriteOnlyTheRequestedOffsetRange_System_String_
+  name: WaveToSampleConverters_WriteOnlyTheRequestedOffsetRange
+  nameWithType: AudioReadOffsetTests.WaveToSampleConverters_WriteOnlyTheRequestedOffsetRange
+  fullName: SilverCraft.CSCore.Tests.AudioReadOffsetTests.WaveToSampleConverters_WriteOnlyTheRequestedOffsetRange
+- uid: SilverCraft.CSCore.Tests.AudioReadOffsetTests.SampleToWaveConverters_WriteOnlyTheRequestedOffsetRange*
+  commentId: Overload:SilverCraft.CSCore.Tests.AudioReadOffsetTests.SampleToWaveConverters_WriteOnlyTheRequestedOffsetRange
+  href: SilverCraft.CSCore.Tests.AudioReadOffsetTests.html#SilverCraft_CSCore_Tests_AudioReadOffsetTests_SampleToWaveConverters_WriteOnlyTheRequestedOffsetRange_System_String_
+  name: SampleToWaveConverters_WriteOnlyTheRequestedOffsetRange
+  nameWithType: AudioReadOffsetTests.SampleToWaveConverters_WriteOnlyTheRequestedOffsetRange
+  fullName: SilverCraft.CSCore.Tests.AudioReadOffsetTests.SampleToWaveConverters_WriteOnlyTheRequestedOffsetRange
+- uid: SilverCraft.CSCore.Tests.AudioReadOffsetTests.PeakMeter_TracksAllSamplesReadAtANonzeroOffset*
+  commentId: Overload:SilverCraft.CSCore.Tests.AudioReadOffsetTests.PeakMeter_TracksAllSamplesReadAtANonzeroOffset
+  href: SilverCraft.CSCore.Tests.AudioReadOffsetTests.html#SilverCraft_CSCore_Tests_AudioReadOffsetTests_PeakMeter_TracksAllSamplesReadAtANonzeroOffset
+  name: PeakMeter_TracksAllSamplesReadAtANonzeroOffset
+  nameWithType: AudioReadOffsetTests.PeakMeter_TracksAllSamplesReadAtANonzeroOffset
+  fullName: SilverCraft.CSCore.Tests.AudioReadOffsetTests.PeakMeter_TracksAllSamplesReadAtANonzeroOffset

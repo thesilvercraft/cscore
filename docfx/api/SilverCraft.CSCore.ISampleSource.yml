@@ -61,6 +61,7 @@ items:
   - SilverCraft.CSCore.Streams.SingleBlockNotificationStream
   - SilverCraft.CSCore.Streams.StereoToMonoSource
   - SilverCraft.CSCore.Streams.VolumeSource
+  - SilverCraft.CSCore.Tests.TestSampleSource
   inheritedMembers:
   - SilverCraft.CSCore.IReadableAudioSource{System.Single}.Read(System.Single[],System.Int32,System.Int32)
   - SilverCraft.CSCore.IAudioSource.CanSeek

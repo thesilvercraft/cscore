@@ -17,14 +17,14 @@ items:
   type: Class
   source:
     remote:
-      path: SilverCraft.CSCore.PortAudio/PortAudioException.cs
+      path: SilverCraft.CSCore/PortAudio/PortAudioException.cs
       branch: master
       repo: https://github.com/thesilvercraft/cscore
     id: PortAudioException
-    path: ../SilverCraft.CSCore.PortAudio/PortAudioException.cs
+    path: ../SilverCraft.CSCore/PortAudio/PortAudioException.cs
     startLine: 2
   assemblies:
-  - SilverCraft.CSCore.PortAudio
+  - SilverCraft.CSCore
   namespace: SilverCraft.CSCore.PortAudio
   syntax:
     content: 'public class PortAudioException : Exception, ISerializable'
@@ -67,14 +67,14 @@ items:
   type: Constructor
   source:
     remote:
-      path: SilverCraft.CSCore.PortAudio/PortAudioException.cs
+      path: SilverCraft.CSCore/PortAudio/PortAudioException.cs
       branch: master
       repo: https://github.com/thesilvercraft/cscore
     id: .ctor
-    path: ../SilverCraft.CSCore.PortAudio/PortAudioException.cs
+    path: ../SilverCraft.CSCore/PortAudio/PortAudioException.cs
     startLine: 4
   assemblies:
-  - SilverCraft.CSCore.PortAudio
+  - SilverCraft.CSCore
   namespace: SilverCraft.CSCore.PortAudio
   syntax:
     content: public PortAudioException(string message)
@@ -99,14 +99,14 @@ items:
   type: Constructor
   source:
     remote:
-      path: SilverCraft.CSCore.PortAudio/PortAudioException.cs
+      path: SilverCraft.CSCore/PortAudio/PortAudioException.cs
       branch: master
       repo: https://github.com/thesilvercraft/cscore
     id: .ctor
-    path: ../SilverCraft.CSCore.PortAudio/PortAudioException.cs
+    path: ../SilverCraft.CSCore/PortAudio/PortAudioException.cs
     startLine: 8
   assemblies:
-  - SilverCraft.CSCore.PortAudio
+  - SilverCraft.CSCore
   namespace: SilverCraft.CSCore.PortAudio
   syntax:
     content: public PortAudioException()
@@ -128,14 +128,14 @@ items:
   type: Constructor
   source:
     remote:
-      path: SilverCraft.CSCore.PortAudio/PortAudioException.cs
+      path: SilverCraft.CSCore/PortAudio/PortAudioException.cs
       branch: master
       repo: https://github.com/thesilvercraft/cscore
     id: .ctor
-    path: ../SilverCraft.CSCore.PortAudio/PortAudioException.cs
+    path: ../SilverCraft.CSCore/PortAudio/PortAudioException.cs
     startLine: 12
   assemblies:
-  - SilverCraft.CSCore.PortAudio
+  - SilverCraft.CSCore
   namespace: SilverCraft.CSCore.PortAudio
   syntax:
     content: public PortAudioException(string message, Exception innerException)

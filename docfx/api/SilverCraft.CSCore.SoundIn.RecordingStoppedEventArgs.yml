@@ -21,7 +21,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: RecordingStoppedEventArgs
     path: ../SilverCraft.CSCore/SoundIn/RecordingStoppedEventArgs.cs
-    startLine: 11
+    startLine: 9
   assemblies:
   - SilverCraft.CSCore
   namespace: SilverCraft.CSCore.SoundIn
@@ -66,7 +66,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: .ctor
     path: ../SilverCraft.CSCore/SoundIn/RecordingStoppedEventArgs.cs
-    startLine: 11
+    startLine: 9
   assemblies:
   - SilverCraft.CSCore
   namespace: SilverCraft.CSCore.SoundIn
@@ -102,7 +102,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: .ctor
     path: ../SilverCraft.CSCore/SoundIn/RecordingStoppedEventArgs.cs
-    startLine: 16
+    startLine: 14
   assemblies:
   - SilverCraft.CSCore
   namespace: SilverCraft.CSCore.SoundIn

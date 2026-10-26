@@ -45,6 +45,12 @@ namespace SilverCraft.CSCore.Streams
         /// <returns>Actual number of read bytes.</returns>
         public override int Read(byte[] buffer, int offset, int count)
         {
+            // Align count to BlockAlign to prevent infinite looping on partial frames
+            count -= count % WaveFormat.BlockAlign;
+
+            if (count == 0)
+                return 0;
+
             var read = base.Read(buffer, offset, count);
             while (read < count)
             {
@@ -58,16 +64,24 @@ namespace SilverCraft.CSCore.Streams
                         _raisedStreamFinishedEvent = true;
                     }
 
-                    if (EnableLoop)
-                        Position = 0;
-                    else
+                    if (!EnableLoop || !CanSeek || Length == 0)
+                    {
                         break;
+                    }
+
+                    Position = 0;
+                    r = base.Read(buffer, offset + read, count - read);
+                    if (r == 0)
+                        break;
+
+                    _raisedStreamFinishedEvent = false;
                 }
                 else
                     _raisedStreamFinishedEvent = false;
 
                 read += r;
             }
+
             return read;
         }
     }

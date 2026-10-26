@@ -24,8 +24,8 @@ items:
   type: Class
   source:
     id: DllImportResolverAttribute
-    path: C:\Users\Filip Velichkovski\RiderProjects\cscore\SilverCraft.CSCore\obj\Release\net8.0\SilverCraft.CSCore.NativeLibraryResolver\SilverCraft.CSCore.NativeLibraryResolver.SourceGeneratorWithAttributes\DllImportResolverAttribute.g.cs
-    startLine: 4
+    path: C:\Users\Filip Velichkovski\RiderProjects\cscore\SilverCraft.CSCore\obj\Release\net10.0\SilverCraft.CSCore.NativeLibraryResolver\SilverCraft.CSCore.NativeLibraryResolver.SourceGeneratorWithAttributes\DllImportResolverAttribute.g.cs
+    startLine: 3
   assemblies:
   - SilverCraft.CSCore
   namespace: Generators
@@ -112,8 +112,8 @@ items:
   type: Property
   source:
     id: LibraryName
-    path: C:\Users\Filip Velichkovski\RiderProjects\cscore\SilverCraft.CSCore\obj\Release\net8.0\SilverCraft.CSCore.NativeLibraryResolver\SilverCraft.CSCore.NativeLibraryResolver.SourceGeneratorWithAttributes\DllImportResolverAttribute.g.cs
-    startLine: 7
+    path: C:\Users\Filip Velichkovski\RiderProjects\cscore\SilverCraft.CSCore\obj\Release\net10.0\SilverCraft.CSCore.NativeLibraryResolver\SilverCraft.CSCore.NativeLibraryResolver.SourceGeneratorWithAttributes\DllImportResolverAttribute.g.cs
+    startLine: 6
   assemblies:
   - SilverCraft.CSCore
   namespace: Generators
@@ -137,8 +137,8 @@ items:
   type: Property
   source:
     id: DllName
-    path: C:\Users\Filip Velichkovski\RiderProjects\cscore\SilverCraft.CSCore\obj\Release\net8.0\SilverCraft.CSCore.NativeLibraryResolver\SilverCraft.CSCore.NativeLibraryResolver.SourceGeneratorWithAttributes\DllImportResolverAttribute.g.cs
-    startLine: 8
+    path: C:\Users\Filip Velichkovski\RiderProjects\cscore\SilverCraft.CSCore\obj\Release\net10.0\SilverCraft.CSCore.NativeLibraryResolver\SilverCraft.CSCore.NativeLibraryResolver.SourceGeneratorWithAttributes\DllImportResolverAttribute.g.cs
+    startLine: 7
   assemblies:
   - SilverCraft.CSCore
   namespace: Generators
@@ -162,8 +162,8 @@ items:
   type: Property
   source:
     id: WindowsDlls
-    path: C:\Users\Filip Velichkovski\RiderProjects\cscore\SilverCraft.CSCore\obj\Release\net8.0\SilverCraft.CSCore.NativeLibraryResolver\SilverCraft.CSCore.NativeLibraryResolver.SourceGeneratorWithAttributes\DllImportResolverAttribute.g.cs
-    startLine: 9
+    path: C:\Users\Filip Velichkovski\RiderProjects\cscore\SilverCraft.CSCore\obj\Release\net10.0\SilverCraft.CSCore.NativeLibraryResolver\SilverCraft.CSCore.NativeLibraryResolver.SourceGeneratorWithAttributes\DllImportResolverAttribute.g.cs
+    startLine: 8
   assemblies:
   - SilverCraft.CSCore
   namespace: Generators
@@ -187,8 +187,8 @@ items:
   type: Property
   source:
     id: LinuxDlls
-    path: C:\Users\Filip Velichkovski\RiderProjects\cscore\SilverCraft.CSCore\obj\Release\net8.0\SilverCraft.CSCore.NativeLibraryResolver\SilverCraft.CSCore.NativeLibraryResolver.SourceGeneratorWithAttributes\DllImportResolverAttribute.g.cs
-    startLine: 10
+    path: C:\Users\Filip Velichkovski\RiderProjects\cscore\SilverCraft.CSCore\obj\Release\net10.0\SilverCraft.CSCore.NativeLibraryResolver\SilverCraft.CSCore.NativeLibraryResolver.SourceGeneratorWithAttributes\DllImportResolverAttribute.g.cs
+    startLine: 9
   assemblies:
   - SilverCraft.CSCore
   namespace: Generators
@@ -212,8 +212,8 @@ items:
   type: Property
   source:
     id: MacOsDlls
-    path: C:\Users\Filip Velichkovski\RiderProjects\cscore\SilverCraft.CSCore\obj\Release\net8.0\SilverCraft.CSCore.NativeLibraryResolver\SilverCraft.CSCore.NativeLibraryResolver.SourceGeneratorWithAttributes\DllImportResolverAttribute.g.cs
-    startLine: 11
+    path: C:\Users\Filip Velichkovski\RiderProjects\cscore\SilverCraft.CSCore\obj\Release\net10.0\SilverCraft.CSCore.NativeLibraryResolver\SilverCraft.CSCore.NativeLibraryResolver.SourceGeneratorWithAttributes\DllImportResolverAttribute.g.cs
+    startLine: 10
   assemblies:
   - SilverCraft.CSCore
   namespace: Generators
@@ -237,8 +237,8 @@ items:
   type: Property
   source:
     id: LinuxInstructions
-    path: C:\Users\Filip Velichkovski\RiderProjects\cscore\SilverCraft.CSCore\obj\Release\net8.0\SilverCraft.CSCore.NativeLibraryResolver\SilverCraft.CSCore.NativeLibraryResolver.SourceGeneratorWithAttributes\DllImportResolverAttribute.g.cs
-    startLine: 12
+    path: C:\Users\Filip Velichkovski\RiderProjects\cscore\SilverCraft.CSCore\obj\Release\net10.0\SilverCraft.CSCore.NativeLibraryResolver\SilverCraft.CSCore.NativeLibraryResolver.SourceGeneratorWithAttributes\DllImportResolverAttribute.g.cs
+    startLine: 11
   assemblies:
   - SilverCraft.CSCore
   namespace: Generators
@@ -262,8 +262,8 @@ items:
   type: Property
   source:
     id: GenericInstructionsStart
-    path: C:\Users\Filip Velichkovski\RiderProjects\cscore\SilverCraft.CSCore\obj\Release\net8.0\SilverCraft.CSCore.NativeLibraryResolver\SilverCraft.CSCore.NativeLibraryResolver.SourceGeneratorWithAttributes\DllImportResolverAttribute.g.cs
-    startLine: 13
+    path: C:\Users\Filip Velichkovski\RiderProjects\cscore\SilverCraft.CSCore\obj\Release\net10.0\SilverCraft.CSCore.NativeLibraryResolver\SilverCraft.CSCore.NativeLibraryResolver.SourceGeneratorWithAttributes\DllImportResolverAttribute.g.cs
+    startLine: 12
   assemblies:
   - SilverCraft.CSCore
   namespace: Generators
@@ -287,8 +287,8 @@ items:
   type: Property
   source:
     id: GenericInstructionsWindowsEnd
-    path: C:\Users\Filip Velichkovski\RiderProjects\cscore\SilverCraft.CSCore\obj\Release\net8.0\SilverCraft.CSCore.NativeLibraryResolver\SilverCraft.CSCore.NativeLibraryResolver.SourceGeneratorWithAttributes\DllImportResolverAttribute.g.cs
-    startLine: 14
+    path: C:\Users\Filip Velichkovski\RiderProjects\cscore\SilverCraft.CSCore\obj\Release\net10.0\SilverCraft.CSCore.NativeLibraryResolver\SilverCraft.CSCore.NativeLibraryResolver.SourceGeneratorWithAttributes\DllImportResolverAttribute.g.cs
+    startLine: 13
   assemblies:
   - SilverCraft.CSCore
   namespace: Generators
@@ -312,8 +312,8 @@ items:
   type: Property
   source:
     id: GenericInstructionsLinuxEnd
-    path: C:\Users\Filip Velichkovski\RiderProjects\cscore\SilverCraft.CSCore\obj\Release\net8.0\SilverCraft.CSCore.NativeLibraryResolver\SilverCraft.CSCore.NativeLibraryResolver.SourceGeneratorWithAttributes\DllImportResolverAttribute.g.cs
-    startLine: 15
+    path: C:\Users\Filip Velichkovski\RiderProjects\cscore\SilverCraft.CSCore\obj\Release\net10.0\SilverCraft.CSCore.NativeLibraryResolver\SilverCraft.CSCore.NativeLibraryResolver.SourceGeneratorWithAttributes\DllImportResolverAttribute.g.cs
+    startLine: 14
   assemblies:
   - SilverCraft.CSCore
   namespace: Generators
@@ -337,8 +337,8 @@ items:
   type: Constructor
   source:
     id: .ctor
-    path: C:\Users\Filip Velichkovski\RiderProjects\cscore\SilverCraft.CSCore\obj\Release\net8.0\SilverCraft.CSCore.NativeLibraryResolver\SilverCraft.CSCore.NativeLibraryResolver.SourceGeneratorWithAttributes\DllImportResolverAttribute.g.cs
-    startLine: 17
+    path: C:\Users\Filip Velichkovski\RiderProjects\cscore\SilverCraft.CSCore\obj\Release\net10.0\SilverCraft.CSCore.NativeLibraryResolver\SilverCraft.CSCore.NativeLibraryResolver.SourceGeneratorWithAttributes\DllImportResolverAttribute.g.cs
+    startLine: 16
   assemblies:
   - SilverCraft.CSCore
   namespace: Generators

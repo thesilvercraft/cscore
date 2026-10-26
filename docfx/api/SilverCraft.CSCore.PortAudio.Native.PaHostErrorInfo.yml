@@ -17,14 +17,14 @@ items:
   type: Struct
   source:
     remote:
-      path: SilverCraft.CSCore.PortAudio/Native/PaHostErrorInfo.cs
+      path: SilverCraft.CSCore/PortAudio/Native/PaHostErrorInfo.cs
       branch: master
       repo: https://github.com/thesilvercraft/cscore
     id: PaHostErrorInfo
-    path: ../SilverCraft.CSCore.PortAudio/Native/PaHostErrorInfo.cs
+    path: ../SilverCraft.CSCore/PortAudio/Native/PaHostErrorInfo.cs
     startLine: 2
   assemblies:
-  - SilverCraft.CSCore.PortAudio
+  - SilverCraft.CSCore
   namespace: SilverCraft.CSCore.PortAudio.Native
   syntax:
     content: public struct PaHostErrorInfo
@@ -49,14 +49,14 @@ items:
   type: Field
   source:
     remote:
-      path: SilverCraft.CSCore.PortAudio/Native/PaHostErrorInfo.cs
+      path: SilverCraft.CSCore/PortAudio/Native/PaHostErrorInfo.cs
       branch: master
       repo: https://github.com/thesilvercraft/cscore
     id: hostApiType
-    path: ../SilverCraft.CSCore.PortAudio/Native/PaHostErrorInfo.cs
+    path: ../SilverCraft.CSCore/PortAudio/Native/PaHostErrorInfo.cs
     startLine: 4
   assemblies:
-  - SilverCraft.CSCore.PortAudio
+  - SilverCraft.CSCore
   namespace: SilverCraft.CSCore.PortAudio.Native
   syntax:
     content: public PaHostApiTypeId hostApiType
@@ -76,14 +76,14 @@ items:
   type: Field
   source:
     remote:
-      path: SilverCraft.CSCore.PortAudio/Native/PaHostErrorInfo.cs
+      path: SilverCraft.CSCore/PortAudio/Native/PaHostErrorInfo.cs
       branch: master
       repo: https://github.com/thesilvercraft/cscore
     id: errorCode
-    path: ../SilverCraft.CSCore.PortAudio/Native/PaHostErrorInfo.cs
+    path: ../SilverCraft.CSCore/PortAudio/Native/PaHostErrorInfo.cs
     startLine: 7
   assemblies:
-  - SilverCraft.CSCore.PortAudio
+  - SilverCraft.CSCore
   namespace: SilverCraft.CSCore.PortAudio.Native
   syntax:
     content: public nint errorCode
@@ -103,14 +103,14 @@ items:
   type: Field
   source:
     remote:
-      path: SilverCraft.CSCore.PortAudio/Native/PaHostErrorInfo.cs
+      path: SilverCraft.CSCore/PortAudio/Native/PaHostErrorInfo.cs
       branch: master
       repo: https://github.com/thesilvercraft/cscore
     id: errorText
-    path: ../SilverCraft.CSCore.PortAudio/Native/PaHostErrorInfo.cs
+    path: ../SilverCraft.CSCore/PortAudio/Native/PaHostErrorInfo.cs
     startLine: 10
   assemblies:
-  - SilverCraft.CSCore.PortAudio
+  - SilverCraft.CSCore
   namespace: SilverCraft.CSCore.PortAudio.Native
   syntax:
     content: public sbyte* errorText

@@ -22,7 +22,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: VolumeSource
     path: ../SilverCraft.CSCore/Streams/VolumeSource.cs
-    startLine: 7
+    startLine: 9
   assemblies:
   - SilverCraft.CSCore
   namespace: SilverCraft.CSCore.Streams
@@ -94,7 +94,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: Volume
     path: ../SilverCraft.CSCore/Streams/VolumeSource.cs
-    startLine: 19
+    startLine: 21
   assemblies:
   - SilverCraft.CSCore
   namespace: SilverCraft.CSCore.Streams
@@ -125,7 +125,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: .ctor
     path: ../SilverCraft.CSCore/Streams/VolumeSource.cs
-    startLine: 34
+    startLine: 36
   assemblies:
   - SilverCraft.CSCore
   namespace: SilverCraft.CSCore.Streams
@@ -160,7 +160,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: Read
     path: ../SilverCraft.CSCore/Streams/VolumeSource.cs
-    startLine: 55
+    startLine: 57
   assemblies:
   - SilverCraft.CSCore
   namespace: SilverCraft.CSCore.Streams
