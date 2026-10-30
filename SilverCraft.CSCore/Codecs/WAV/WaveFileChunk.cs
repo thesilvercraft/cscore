@@ -1,5 +1,4 @@
-﻿using System;
-using System.IO;
+﻿using System.Text;
 
 namespace SilverCraft.CSCore.Codecs.WAV
 {
@@ -14,19 +13,32 @@ namespace SilverCraft.CSCore.Codecs.WAV
         /// </summary>
         /// <param name="stream"><see cref="Stream" /> which contains the wave file chunk.</param>
         public WaveFileChunk(Stream stream)
-            : this(new BinaryReader(stream))
         {
+            using var reader = new BinaryReader(stream, Encoding.UTF8, true);
+            ChunkID = reader.ReadInt32();
+            ChunkDataSize = reader.ReadUInt32();
         }
 
         /// <summary>
         ///     Initializes a new instance of the <see cref="WaveFileChunk" /> class.
         /// </summary>
         /// <param name="reader"><see cref="BinaryReader" /> which should be used to read the wave file chunk.</param>
-        public WaveFileChunk(BinaryReader reader)
+        /// <param name="disposeReader">Whether to dispose of the reader given, defaults to true, use false for children of WaveFileChunk</param>
+        public WaveFileChunk(BinaryReader reader, bool disposeReader=true)
         {
-            ArgumentNullException.ThrowIfNull(reader);
-            ChunkID = reader.ReadInt32();
-            ChunkDataSize = reader.ReadUInt32();
+            try
+            {
+                ArgumentNullException.ThrowIfNull(reader);
+                ChunkID = reader.ReadInt32();
+                ChunkDataSize = reader.ReadUInt32();
+            }
+            finally
+            {
+                if (disposeReader)
+                {
+                    reader.Dispose();
+                }
+            }
         }
 
         /// <summary>
@@ -51,10 +63,10 @@ namespace SilverCraft.CSCore.Codecs.WAV
         public static WaveFileChunk FromStream(Stream stream)
         {
             ArgumentNullException.ThrowIfNull(stream);
-            if (stream.CanRead == false)
+            if (!stream.CanRead)
                 throw new ArgumentException("stream is not readable");
 
-            var reader = new BinaryReader(stream);
+            using var reader = new BinaryReader(stream, Encoding.UTF8, true);
             var id = reader.ReadInt32();
             stream.Position -= 4;
 

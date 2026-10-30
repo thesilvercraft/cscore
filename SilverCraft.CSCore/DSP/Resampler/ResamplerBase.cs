@@ -52,8 +52,6 @@
 		/// <returns>The total number of samples read into the buffer.</returns>
 		public override int Read(float[] buffer, int offset, int count)
 		{
-			if (offset % WaveFormat.Channels != 0)
-				offset -= offset % WaveFormat.Channels;
 			if (count % WaveFormat.Channels != 0)
 				count -= count % WaveFormat.Channels;
 			return Process(buffer, offset, count);

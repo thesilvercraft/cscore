@@ -240,7 +240,7 @@ public class PortAudioSoundOut : ISoundOut
     }
 
     [Conditional("DEBUG")]
-    private static void DebugTrace(string message = null, [CallerMemberName] string method = null)
+    private static void DebugTrace(string? message = null, [CallerMemberName] string? method = null)
     {
         Debug.WriteLine($"PORTAUDIO {method} {message}");
     }

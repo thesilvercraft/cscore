@@ -13,7 +13,7 @@
   </PropertyGroup>
   <ItemGroup>
     <ProjectReference Include="..\SilverCraft.CSCore\SilverCraft.CSCore.csproj" />
-    <PackageReference Include="SilverAudioPlayer.Shared" Version="7.4.2" />
+    <PackageReference Include="SilverAudioPlayer.Shared" Version="8.5.5" />
   </ItemGroup>
   <ItemGroup>
     <None Update="README.md">

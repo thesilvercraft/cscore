@@ -19,11 +19,11 @@ public class SndFileWaveStream : ISampleSource
         ArgumentNullException.ThrowIfNull(s);
 
         _helper = new SfVirtualStreamHelper(s);
-        _io = _helper.Virtual; 
+        _io = _helper.Virtual;
 
         _info = new SF_INFO();
         _infile = Methods.sf_open_virtual(ref _io, Mode.Read, ref _info, 0);
-        
+
         if (_infile == null)
         {
             _helper.Dispose();
@@ -37,7 +37,7 @@ public class SndFileWaveStream : ISampleSource
     public unsafe SndFileWaveStream(ref sf_private_tag* f, SF_INFO info)
     {
         if (f == null) throw new ArgumentNullException(nameof(f));
-        
+
         _infile = f;
         _info = info;
         InitializeFormat();
@@ -45,7 +45,7 @@ public class SndFileWaveStream : ISampleSource
 
     private void InitializeFormat()
     {
-        WaveFormat = new WaveFormat(_info.samplerate, 32, _info.channels);
+        WaveFormat = new WaveFormat(_info.samplerate, 32, _info.channels, AudioEncoding.IeeeFloat);
         Length = _info.frames * _info.channels;
 
         Debug.WriteLine($"Length {Length}");
@@ -104,7 +104,7 @@ public class SndFileWaveStream : ISampleSource
 
     public unsafe long Position
     {
-        get 
+        get
         {
             ObjectDisposedException.ThrowIf(_isDisposed, this);
             return Methods.sf_seek(_infile, 0, Whence.Current) * _info.channels;

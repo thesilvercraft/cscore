@@ -3,7 +3,6 @@ using System.Runtime.InteropServices;
 
 namespace OpenMPT;
 
-
 public sealed class MPTVirtualStreamHelper : IDisposable
 {
     public MPTVirtualStreamHelper([NotNull] Stream stream, bool disposeStream = true)
@@ -17,8 +16,7 @@ public sealed class MPTVirtualStreamHelper : IDisposable
 
     private bool DisposeStream { get; }
 
-    [NotNull]
-    private Stream Stream { get; }
+    [NotNull] private Stream Stream { get; }
 
     public openmpt_stream_callbacks Virtual { get; }
 
@@ -34,7 +32,6 @@ public sealed class MPTVirtualStreamHelper : IDisposable
     }
 
 
-
     private int Seek(IntPtr stream, nint offset, Whence whence)
     {
         return (int)Stream.Seek(offset, whence switch
@@ -42,17 +39,24 @@ public sealed class MPTVirtualStreamHelper : IDisposable
             Whence.Current => SeekOrigin.Current,
             Whence.End => SeekOrigin.End,
             Whence.Set => SeekOrigin.Begin,
-            _ =>throw new NotImplementedException()
+            _ => throw new NotSupportedException()
         });
     }
-    private nuint Read(IntPtr stream, IntPtr destination, nuint count)
-    {
-        var buffer = new byte[count];
-        var read = Stream.Read(buffer, 0, buffer.Length);
-        Marshal.Copy(buffer, 0, destination, read);
-        return (nuint)read;
-    }
 
+    private unsafe nuint Read(IntPtr stream, IntPtr destination, nuint count)
+    {
+        if (count == 0 || destination == IntPtr.Zero || count > int.MaxValue)
+            return 0;
+
+        try
+        {
+            return (nuint)Stream.Read(new Span<byte>((void*)destination, (int)count));
+        }
+        catch
+        {
+            return 0;
+        }
+    }
 
 
     private nint Tell(IntPtr userData)
@@ -60,7 +64,9 @@ public sealed class MPTVirtualStreamHelper : IDisposable
         return (nint)Stream.Position;
     }
 }
-public enum Whence : int{
+
+public enum Whence : int
+{
     Set = NativeMethods.OPENMPT_STREAM_SEEK_SET,
     Current = NativeMethods.OPENMPT_STREAM_SEEK_CUR,
     End = NativeMethods.OPENMPT_STREAM_SEEK_END,
@@ -70,57 +76,56 @@ public enum Whence : int{
 public delegate int VirtualSeek(IntPtr stream, nint offset, Whence whence);
 
 [UnmanagedFunctionPointer(CallingConvention.Cdecl)]
-    [NativeTypeName("openmpt_stream_read_func")]
-
+[NativeTypeName("openmpt_stream_read_func")]
 public delegate nuint VirtualRead(IntPtr stream, IntPtr destination, nuint bytes);
+
 [UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 public delegate nint VirtualTell(IntPtr userData);
-    public struct openmpt_stream_callbacks
+
+public struct openmpt_stream_callbacks
+{
+    [NotNull] [MarshalAs(UnmanagedType.FunctionPtr)]
+    public readonly VirtualRead Read;
+
+    [NotNull] [MarshalAs(UnmanagedType.FunctionPtr)]
+    public readonly VirtualSeek Seek;
+
+    [NotNull] [MarshalAs(UnmanagedType.FunctionPtr)]
+    public readonly VirtualTell Tell;
+
+    public openmpt_stream_callbacks(
+        [NotNull] VirtualSeek seek,
+        [NotNull] VirtualRead read,
+        [NotNull] VirtualTell tell)
     {
-        [NotNull]
-        [MarshalAs(UnmanagedType.FunctionPtr)]
-        public readonly VirtualRead Read;
-        [NotNull]
-        [MarshalAs(UnmanagedType.FunctionPtr)]
-        public readonly VirtualSeek Seek;
-        [NotNull]
-        [MarshalAs(UnmanagedType.FunctionPtr)]
-        public readonly VirtualTell Tell;
+        Seek = seek ?? throw new ArgumentNullException(nameof(seek));
+        Read = read ?? throw new ArgumentNullException(nameof(read));
+        Tell = tell ?? throw new ArgumentNullException(nameof(tell));
+    }
 
-        public openmpt_stream_callbacks(
-            [NotNull] VirtualSeek seek,
-            [NotNull] VirtualRead read,
-            [NotNull] VirtualTell tell)
-        {
-            Seek = seek ?? throw new ArgumentNullException(nameof(seek));
-            Read = read ?? throw new ArgumentNullException(nameof(read));
-            Tell = tell ?? throw new ArgumentNullException(nameof(tell));
-        }
+    private readonly bool Equals(openmpt_stream_callbacks other)
+    {
+        return Seek.Equals(other.Seek) && Read.Equals(other.Read) &&
+               Tell.Equals(other.Tell);
+    }
 
-        private readonly bool Equals(openmpt_stream_callbacks other)
-        {
-            return  Seek.Equals(other.Seek) && Read.Equals(other.Read) &&
-                   Tell.Equals(other.Tell);
-        }
+    public override readonly bool Equals(object? obj)
+    {
+        return obj is openmpt_stream_callbacks @virtual && Equals(@virtual);
+    }
 
-        public override readonly bool Equals(object? obj)
-        {
-            return obj is openmpt_stream_callbacks @virtual && Equals(@virtual);
-        }
-
-        public override int GetHashCode()
+    public override int GetHashCode()
     {
         return HashCode.Combine(Seek, Read, Tell);
     }
 
     public static bool operator ==(openmpt_stream_callbacks left, openmpt_stream_callbacks right)
-        {
-            return left.Equals(right);
-        }
-
-        public static bool operator !=(openmpt_stream_callbacks left, openmpt_stream_callbacks right)
-        {
-            return !left.Equals(right);
-        }
-
+    {
+        return left.Equals(right);
     }
+
+    public static bool operator !=(openmpt_stream_callbacks left, openmpt_stream_callbacks right)
+    {
+        return !left.Equals(right);
+    }
+}

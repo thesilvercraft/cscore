@@ -1,5 +1,4 @@
-﻿using System;
-using System.IO;
+﻿using System.Text;
 
 namespace SilverCraft.CSCore.Codecs.WAV
 {
@@ -20,8 +19,14 @@ namespace SilverCraft.CSCore.Codecs.WAV
         /// </summary>
         /// <param name="stream"><see cref="Stream" /> which contains the fmt chunk.</param>
         public FmtChunk(Stream stream)
-            : this(new BinaryReader(stream))
+            : base(stream) // Chain to the base stream constructor
         {
+            // The base class read the ChunkID and Size, now we safely create a scoped reader for the rest
+            using var reader = new BinaryReader(stream, Encoding.UTF8, true);
+
+            if (ChunkID != FmtChunkID) return; //"fmt "
+
+            _waveFormat = ParseWaveFormat(reader, ChunkDataSize);
         }
 
         /// <summary>
@@ -29,12 +34,18 @@ namespace SilverCraft.CSCore.Codecs.WAV
         /// </summary>
         /// <param name="reader"><see cref="BinaryReader" /> which should be used to read the fmt chunk.</param>
         public FmtChunk(BinaryReader reader)
-            : base(reader)
+            : base(reader, disposeReader: false) // Ensure the base class leaves the reader open for us
         {
             ArgumentNullException.ThrowIfNull(reader);
 
             if (ChunkID != FmtChunkID) return; //"fmt "
-            var encoding = (AudioEncoding) reader.ReadInt16();
+
+            _waveFormat = ParseWaveFormat(reader, ChunkDataSize);
+        }
+
+        private static WaveFormat ParseWaveFormat(BinaryReader reader, long chunkDataSize)
+        {
+            var encoding = (AudioEncoding)reader.ReadInt16();
             int channels = reader.ReadInt16();
             var sampleRate = reader.ReadInt32();
             var avgBps = reader.ReadInt32();
@@ -42,13 +53,13 @@ namespace SilverCraft.CSCore.Codecs.WAV
             int bitsPerSample = reader.ReadInt16();
 
             var extraSize = 0;
-            if (ChunkDataSize > 16)
+            if (chunkDataSize > 16)
             {
                 extraSize = reader.ReadInt16();
-                if (extraSize != ChunkDataSize - 18)
-                    extraSize = (int) (ChunkDataSize - 18);
+                if (extraSize != chunkDataSize - 18)
+                    extraSize = (int)(chunkDataSize - 18);
 
-                for (var i = (int) (ChunkDataSize - 16); i > 0; i--)
+                for (var i = (int)(chunkDataSize - 16); i > 0; i--)
                 {
                     reader.ReadByte();
                 }
@@ -56,7 +67,7 @@ namespace SilverCraft.CSCore.Codecs.WAV
                 reader.BaseStream.Position -= 2;
             }
 
-            _waveFormat = new WaveFormat(sampleRate, (short) bitsPerSample, (short) channels, encoding, extraSize);
+            return new WaveFormat(sampleRate, (short)bitsPerSample, (short)channels, encoding, extraSize);
         }
 
         /// <summary>

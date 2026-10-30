@@ -46,10 +46,39 @@ while (true)
     }
     f.Dispose();
 }*/
-/*
-var x = new OpenMptWaveStream(File.OpenRead(@"alphaline.mod"));
 
-*/
+var x = new OpenMptWaveStream(File.OpenRead(@"C:\Program Files (x86)\PopCap Games\Peggle Deluxe\music\PeggleBeats.mo3"));
+var soundOut = new PortAudioSoundOut();
+soundOut.Initialize(x.ToWaveSource());
+soundOut.Play();
+x.EnableLoop();
+while (soundOut.PlaybackState != PlaybackState.Stopped)
+{
+    Console.Write("\r"+x.GetPosition());
+    if (Console.KeyAvailable)
+    {
+        switch (Console.ReadKey().Key)
+        {
+            case ConsoleKey.RightArrow:
+                x.SetPattern(x.CurrentPattern+1);
+
+                break;
+            case ConsoleKey.LeftArrow:
+               x.SetPattern(x.CurrentPattern-1);
+                break;
+            case ConsoleKey.UpArrow:
+                soundOut.Volume =volume= MathF.Min(1, soundOut.Volume + 0.1f);
+                break;
+            case ConsoleKey.DownArrow:
+                soundOut.Volume =volume= MathF.Max(0, soundOut.Volume - 0.1f);
+                break;
+            default:
+                break;
+        }
+    }
+    Thread.Sleep(33);
+}
+/*
 var soundIn = new PortAudioSoundIn(2, 44100);
 var soundOut = new PortAudioSoundOut();
 soundIn.Initialize();
@@ -59,3 +88,4 @@ Thread.Sleep(50);
 soundOut.Play();
 
 Thread.Sleep(-1);
+*/

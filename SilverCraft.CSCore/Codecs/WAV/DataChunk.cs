@@ -18,8 +18,13 @@ namespace SilverCraft.CSCore.Codecs.WAV
         /// </summary>
         /// <param name="stream"><see cref="Stream" /> which contains the data chunk.</param>
         public DataChunk(Stream stream)
-            : this(new BinaryReader(stream))
+            : base(stream)
         {
+            ArgumentNullException.ThrowIfNull(stream);
+            if (ChunkID != DataChunkID)
+                throw new FormatException("Chunk is no datachunk: " + ChunkID.ToString("x") + " != \"0x61746164\"");
+
+            DataStartPosition = stream.Position;
         }
 
         /// <summary>
@@ -27,7 +32,7 @@ namespace SilverCraft.CSCore.Codecs.WAV
         /// </summary>
         /// <param name="reader"><see cref="BinaryReader" /> which should be used to read the data chunk.</param>
         public DataChunk(BinaryReader reader)
-            : base(reader)
+            : base(reader, disposeReader: false)
         {
             ArgumentNullException.ThrowIfNull(reader);
 

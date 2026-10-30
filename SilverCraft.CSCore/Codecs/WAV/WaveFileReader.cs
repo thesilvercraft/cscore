@@ -45,14 +45,16 @@ namespace SilverCraft.CSCore.Codecs.WAV
             _stream = stream;
 
             using var reader = new BinaryReader(stream, Encoding.UTF8, true);
-            if (new string(reader.ReadChars(4)) == "RIFF")
+            if (reader.ReadUInt32() == 0x46464952) // "RIFF" in little-endian byte order.
             {
                 reader.ReadInt32(); //FileLength
                 reader.ReadChars(4);
             }
 
             _chunks = ReadChunks(stream);
-            _dataChunk = (DataChunk)(_chunks.FirstOrDefault(x => x is DataChunk) ?? throw new ArgumentException("The specified stream does not contain any data chunks.", nameof(stream)));
+            _dataChunk = (DataChunk)(_chunks.FirstOrDefault(x => x is DataChunk) ??
+                                     throw new ArgumentException(
+                                         "The specified stream does not contain any data chunks.", nameof(stream)));
             Position = 0;
         }
 
@@ -82,7 +84,7 @@ namespace SilverCraft.CSCore.Codecs.WAV
             {
                 CheckForDisposed();
 
-                count = (int) Math.Min(count, _dataChunk.DataEndPosition - _stream.Position);
+                count = (int)Math.Min(count, _dataChunk.DataEndPosition - _stream.Position);
                 count -= count % WaveFormat.BlockAlign;
                 return count <= 0 ? 0 : _stream.Read(buffer, offset, count);
             }
@@ -106,7 +108,8 @@ namespace SilverCraft.CSCore.Codecs.WAV
                     CheckForDisposed();
 
                     if (value > Length || value < 0)
-                        throw new ArgumentOutOfRangeException(nameof(value), "The position must not be bigger than the length or less than zero.");
+                        throw new ArgumentOutOfRangeException(nameof(value),
+                            "The position must not be bigger than the length or less than zero.");
                     value -= (value % WaveFormat.BlockAlign);
                     _stream.Position = value + _dataChunk.DataStartPosition;
                 }
@@ -135,8 +138,9 @@ namespace SilverCraft.CSCore.Codecs.WAV
         private List<WaveFileChunk> ReadChunks(Stream stream)
         {
             var chunks = new List<WaveFileChunk>(2);
-            do
+            while (stream.Length - stream.Position >= 8)
             {
+                var chunkStart = stream.Position;
                 var tmp = WaveFileChunk.FromStream(stream);
                 chunks.Add(tmp);
 
@@ -144,14 +148,24 @@ namespace SilverCraft.CSCore.Codecs.WAV
                 {
                     WaveFormat = fmtChunk.WaveFormat;
                 }
-                else
-                {
-                    stream.Seek(tmp.ChunkDataSize, SeekOrigin.Current);
-                }
 
-            } while (stream.Length - stream.Position > 8); //8 bytes = size of chunk header
+                // RIFF chunk sizes exclude the pad byte used to maintain word alignment. Some WAV
+                // writers omit the final data-chunk pad at EOF, so accept that case while still
+                // rejecting a truncated chunk payload.
+                var chunkDataEnd = chunkStart + 8 + tmp.ChunkDataSize;
+                if (chunkDataEnd > stream.Length)
+                    throw new EndOfStreamException("The stream ends before the WAV chunk payload is complete.");
 
-            return chunks;
+                var nextChunkPosition = chunkDataEnd;
+                if ((tmp.ChunkDataSize & 1) != 0 && chunkDataEnd < stream.Length)
+                    nextChunkPosition++;
+
+                stream.Seek(nextChunkPosition, SeekOrigin.Begin);
+            }
+
+            return stream.Position != stream.Length
+                ? throw new EndOfStreamException("The stream ends with an incomplete WAV chunk header.")
+                : chunks;
         }
 
         private void CheckForDisposed()
@@ -177,9 +191,11 @@ namespace SilverCraft.CSCore.Codecs.WAV
                         _stream.Dispose();
                         _stream = null;
                     }
+
                     Debug.WriteLine("WaveFile disposed.");
                 }
             }
+
             _disposed = true;
         }
 

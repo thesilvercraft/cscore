@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-
-namespace SilverCraft.CSCore.DSP
+﻿namespace SilverCraft.CSCore.DSP
 {
     /// <summary>
     ///     Represents a channel conversion matrix. For more information, see
@@ -151,15 +147,19 @@ namespace SilverCraft.CSCore.DSP
         private static bool TryExtractChannelMask(WaveFormat waveFormat, out ChannelMask channelMask)
         {
             channelMask = 0;
-            var waveFormatExtensible = waveFormat as WaveFormatExtensible;
-            if (waveFormatExtensible != null)
+            if (waveFormat is WaveFormatExtensible waveFormatExtensible)
                 channelMask = waveFormatExtensible.ChannelMask;
-            else if (waveFormat.Channels == 1)
-                channelMask = ChannelMasks.MonoMask;
-            else if (waveFormat.Channels == 2)
-                channelMask = ChannelMasks.StereoMask;
-            else
-                return false;
+            else switch (waveFormat.Channels)
+            {
+                case 1:
+                    channelMask = ChannelMasks.MonoMask;
+                    break;
+                case 2:
+                    channelMask = ChannelMasks.StereoMask;
+                    break;
+                default:
+                    return false;
+            }
 
             return true;
         }
