@@ -25,7 +25,6 @@ jobs:
       - name: Pack
         run: |
           dotnet pack SilverCraft.CSCore/SilverCraft.CSCore.csproj -c Release --no-build --no-restore -o ./artifacts
-          dotnet pack SilverCraft.CSCore.PortAudio/SilverCraft.CSCore.PortAudio.csproj -c Release --no-build --no-restore -o ./artifacts
           dotnet pack SilverCraft.CSCore.OpenMPT/SilverCraft.CSCore.OpenMPT.csproj -c Release --no-build --no-restore -o ./artifacts
           dotnet pack SilverCraft.SndFile/SilverCraft.CSCore.SndFile.csproj -c Release --no-build --no-restore -o ./artifacts
 
