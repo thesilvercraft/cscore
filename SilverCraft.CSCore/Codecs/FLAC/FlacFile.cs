@@ -1,4 +1,4 @@
-﻿using System.Buffers;
+using System.Buffers;
 using System.Collections.ObjectModel;
 using System.Diagnostics;
 using SilverCraft.CSCore.Tags.ID3;
@@ -119,8 +119,9 @@ public class FlacFile : IWaveSource
         //prescan stream
         if (scanFlag == FlacPreScanMode.None) return;
         var scan = new FlacPreScan(stream);
-        scan.ScanFinished += (_, e) => { onscanFinished?.Invoke(e); };
-        scan.ScanStream(_streamInfo, scanFlag);
+        if (onscanFinished != null)
+            scan.ScanFinished += (_, e) => onscanFinished(e);
+        scan.ScanStream(_streamInfo, scanFlag, _firstFrameOffset);
         _scan = scan;
     }
 
@@ -174,45 +175,70 @@ public class FlacFile : IWaveSource
             {
                 var frame = Frame;
                 if (frame == null)
-                    return read;
+                    break;
+
+                var eof = false;
                 while (!frame.NextFrame())
                 {
-                    if (_scan is { Frames.Count: > 0 })
+                    if (_scan is { SeekEntries.Count: > 0 })
                     {
-                        if (++_frameIndex >= _scan.Frames.Count)
-                            return read;
-                        _stream.Position = _scan.Frames[_frameIndex].StreamOffset;
+                        if (++_frameIndex >= _scan.SeekEntries.Count)
+                        {
+                            eof = true;
+                            break;
+                        }
+
+                        _stream.Position = _scan.SeekEntries[_frameIndex].StreamOffset;
+                        frame.ResetBuffer();
                     }
-                    else if (_stream.Position >= _stream.Length)
+                    else if (frame.IsEndOfStream)
                     {
-                        return read;
+                        eof = true;
+                        break;
                     }
                 }
+
+                if (eof)
+                    break;
 
                 _frameIndex++;
-                var bufferLength = frame.GetBuffer(ref _overflowBuffer);
-                ReadOnlySpan<byte> frameSpan = _overflowBuffer.AsSpan(0, bufferLength);
-                var bytesToCopy = Math.Min(destinationSpan.Length, frameSpan.Length);
-
-                if (bytesToCopy > 0)
+                var frameBytes = frame.RequiredPcmBytes;
+                if (frameBytes <= destinationSpan.Length)
                 {
-                    frameSpan[..bytesToCopy].CopyTo(destinationSpan);
-                    read += bytesToCopy;
-                    destinationSpan = destinationSpan[bytesToCopy..];
-                }
-                if (bufferLength > bytesToCopy)
-                {
-                    _overflowCount = bufferLength - bytesToCopy;
-                    _overflowOffset = bytesToCopy;
-                }
-                else
-                {
+                    var written = frame.WriteBuffer(destinationSpan);
+                    read += written;
+                    destinationSpan = destinationSpan[written..];
                     _overflowCount = 0;
                     _overflowOffset = 0;
                 }
+                else
+                {
+                    var bufferLength = frame.GetBuffer(ref _overflowBuffer);
+                    ReadOnlySpan<byte> frameSpan = _overflowBuffer.AsSpan(0, bufferLength);
+                    var bytesToCopy = Math.Min(destinationSpan.Length, frameSpan.Length);
+
+                    if (bytesToCopy > 0)
+                    {
+                        frameSpan[..bytesToCopy].CopyTo(destinationSpan);
+                        read += bytesToCopy;
+                        destinationSpan = destinationSpan[bytesToCopy..];
+                    }
+                    if (bufferLength > bytesToCopy)
+                    {
+                        _overflowCount = bufferLength - bytesToCopy;
+                        _overflowOffset = bytesToCopy;
+                    }
+                    else
+                    {
+                        _overflowCount = 0;
+                        _overflowOffset = 0;
+                    }
+                }
             }
+
+            _position += read;
         }
-        _position += read;
+
         return read;
     }
 
@@ -261,13 +287,13 @@ public class FlacFile : IWaveSource
                     if (bestPoint != null)
                     {
                         _stream.Position = _firstFrameOffset + bestPoint.Offset;
-                        _frame = FlacFrame.FromStream(_stream, _streamInfo);
+                        _frame?.ResetBuffer();
                         _overflowCount = 0;
                         _overflowOffset = 0;
 
                         _position = bestPoint.SampleNumber * WaveFormat.BlockAlign;
 
-                        var diff = (int)(value - Position);
+                        var diff = (int)(value - _position);
                         diff -= diff % WaveFormat.BlockAlign;
                         if (diff > 0) this.ReadBytes(diff);
 
@@ -276,26 +302,40 @@ public class FlacFile : IWaveSource
                 }
 
                 if (_scan == null) return;
-                for (var i = 0; i < _scan.Frames.Count; i++)
+                var entries = _scan.SeekEntries;
+                if (entries.Count == 0) return;
+
+                var scanTargetSample = value / WaveFormat.BlockAlign;
+                var lo = 0;
+                var hi = entries.Count - 1;
+                var bestIndex = 0;
+                while (lo <= hi)
                 {
-                    if (value / WaveFormat.BlockAlign > _scan.Frames[i].SampleOffset) continue;
-                    if (i != 0)
-                        i--;
-
-                    _stream.Position = _scan.Frames[i].StreamOffset;
-                    _frameIndex = i;
-                    if (_stream.Position >= _stream.Length)
-                        throw new EndOfStreamException("Stream got EOF.");
-                    _position = _scan.Frames[i].SampleOffset * WaveFormat.BlockAlign;
-                    _overflowCount = 0;
-                    _overflowOffset = 0;
-
-                    var diff = (int)(value - Position);
-                    diff -= diff % WaveFormat.BlockAlign;
-                    if (diff > 0) this.ReadBytes(diff);
-
-                    break;
+                    var mid = lo + ((hi - lo) >> 1);
+                    if (entries[mid].SampleOffset <= scanTargetSample)
+                    {
+                        bestIndex = mid;
+                        lo = mid + 1;
+                    }
+                    else
+                    {
+                        hi = mid - 1;
+                    }
                 }
+
+                var entry = entries[bestIndex];
+                _stream.Position = entry.StreamOffset;
+                _frameIndex = bestIndex;
+                if (_stream.Position >= _stream.Length)
+                    throw new EndOfStreamException("Stream got EOF.");
+                _frame?.ResetBuffer();
+                _position = entry.SampleOffset * WaveFormat.BlockAlign;
+                _overflowCount = 0;
+                _overflowOffset = 0;
+
+                var scanDiff = (int)(value - _position);
+                scanDiff -= scanDiff % WaveFormat.BlockAlign;
+                if (scanDiff > 0) this.ReadBytes(scanDiff);
             }
         }
     }

@@ -1,4 +1,4 @@
-﻿<#@ template debug="false" hostspecific="false" language="C#" #>
+<#@ template debug="false" hostspecific="false" language="C#" #>
 <#@ assembly name="System.Core" #>
 <#@ output extension=".cs" #>
 using System;
@@ -7,73 +7,101 @@ namespace SilverCraft.CSCore.Codecs.FLAC
 {
     internal sealed partial class FlacSubFrameLPC
     {
-       private void RestoreLPCSignal32(ReadOnlySpan<int> residual, Span<int> destination, int length, int order, int[] qlpCoeff, int lpcShiftNeeded)
-       {
-          int[] q = qlpCoeff;
-          if(order <= 12)
-          {
-<#
-Generate(1, 12, false);
-#>
-          }
-          else if(order > 12)
-          {
-<#
-Generate(13, 32, false);
-#>
-          }
-       }
+        private static unsafe void RestoreLPCSignal32(ReadOnlySpan<int> residual, Span<int> destination, int length, int order, ReadOnlySpan<int> qlpCoeff, int lpcShiftNeeded)
+        {
+            if ((uint)length > (uint)residual.Length || (uint)length > (uint)destination.Length || (uint)order > (uint)qlpCoeff.Length)
+                throw new ArgumentOutOfRangeException(nameof(length));
+            if (length <= order)
+                return;
 
-       private void RestoreLPCSignal64(ReadOnlySpan<int> residual, Span<int> destination, int length, int order, int[] qlpCoeff, int lpcShiftNeeded)
-       {
-          int[] q = qlpCoeff;
-          if(order <= 12)
-          {
+            fixed (int* pRes = residual, pDest = destination, q = qlpCoeff)
+            {
+                if (order <= 12)
+                {
 <#
-Generate(1, 12, true);
+Generate(1, 12, false, true);
 #>
-          }
-          else if(order > 12)
-          {
+                }
+                else
+                {
 <#
-Generate(13, 32, true);
+Generate(13, 32, false, false);
 #>
-          }
-       }
+                }
+            }
+        }
+
+        private static unsafe void RestoreLPCSignal64(ReadOnlySpan<int> residual, Span<int> destination, int length, int order, ReadOnlySpan<int> qlpCoeff, int lpcShiftNeeded)
+        {
+            if ((uint)length > (uint)residual.Length || (uint)length > (uint)destination.Length || (uint)order > (uint)qlpCoeff.Length)
+                throw new ArgumentOutOfRangeException(nameof(length));
+            if (length <= order)
+                return;
+
+            fixed (int* pRes = residual, pDest = destination, q = qlpCoeff)
+            {
+                if (order <= 12)
+                {
+<#
+Generate(1, 12, true, true);
+#>
+                }
+                else
+                {
+<#
+Generate(13, 32, true, false);
+#>
+                }
+            }
+        }
     }
 }
 
 <#+
-    private void Generate(int minOrder, int maxOrder, bool isWide)
+    private void Generate(int minOrder, int maxOrder, bool isWide, bool hoist)
     {
 #>
-        <#= isWide ? "long" : "int" #> z;
-        switch(order)
+                    <#= isWide ? "long" : "int" #> z;
+                    switch (order)
+                    {
+<#+
+        for (var o = maxOrder; o >= minOrder; o--)
         {
-<#+
-       for (var o = maxOrder; o >= minOrder; o--)
-       {
 #>
-            case <#= o #>:
-               for(int i = order; i < length ; i++)
-               {
-                  z = 
+                        case <#= o #>:
+                        {
 <#+
-                  for (var n = o - 1; n >= 0; n--)
-                  {
+            if (hoist)
+            {
+                for (var k = o - 1; k >= 0; k--)
+                {
 #>
-                  (q[<#= n #>] * <#= isWide ? "(long)" : "" #>destination[i - <#= n + 1 #>]) <#= n > 0 ? "+" : "" #>
+                            <#= isWide ? "long" : "int" #> q<#= k #> = q[<#= k #>];
 <#+
-                  }
+                }
+            }
 #>
-                  ;
-                  destination[i] = residual[i ] + <#= isWide ? "(int)" : "" #>(z >> lpcShiftNeeded);
-               }
-               break;
+                            for (int i = order; i < length; i++)
+                            {
+                                z =
 <#+
-       }
+            for (var n = o - 1; n >= 0; n--)
+            {
+                var qExpr = hoist ? "q" + n : "q[" + n + "]";
+                var sampleExpr = (isWide && !hoist) ? "(long)pDest[i - " + (n + 1) + "]" : "pDest[i - " + (n + 1) + "]";
 #>
+                                    (<#= qExpr #> * <#= sampleExpr #>)<#= n > 0 ? " +" : ";" #>
+<#+
+            }
+#>
+                                pDest[i] = pRes[i] + <#= isWide ? "(int)" : "" #>(z >> lpcShiftNeeded);
+                            }
+                            break;
+                        }
+<#+
         }
+#>
+                    }
 <#+
     }
 #>

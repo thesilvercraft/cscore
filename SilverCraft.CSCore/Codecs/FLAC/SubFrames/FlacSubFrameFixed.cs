@@ -1,5 +1,5 @@
-﻿using System.Diagnostics;
 using SilverCraft.CSCore.Codecs.FLAC.SubFrames;
+using SilverCraft.CSCore.Utils;
 
 // ReSharper disable once CheckNamespace
 namespace SilverCraft.CSCore.Codecs.FLAC
@@ -8,26 +8,35 @@ namespace SilverCraft.CSCore.Codecs.FLAC
     {
 #if FLAC_DEBUG
         public FlacResidual Residual { get; private set; }
-#endif
-        public FlacSubFrameFixed(FlacBitReader reader, FlacFrameHeader header, FlacSubFrameData data, int bitsPerSample, int order)
+
+        public FlacSubFrameFixed(ref SpanBitReader reader, FlacFrameHeader header, FlacSubFrameData data, int bitsPerSample, int order)
             : base(header)
+        {
+            ArgumentOutOfRangeException.ThrowIfGreaterThan(order, header.BlockSize);
+            DecodeWarmup(ref reader, data, bitsPerSample, order);
+            Residual = new FlacResidual(ref reader, header, data, order);
+            RestoreSignal(data, header.BlockSize - order, order);
+        }
+#endif
+
+        public static void Decode(ref SpanBitReader reader, FlacFrameHeader header, FlacSubFrameData data, int bitsPerSample, int order)
+        {
+            ArgumentOutOfRangeException.ThrowIfGreaterThan(order, header.BlockSize);
+            DecodeWarmup(ref reader, data, bitsPerSample, order);
+            FlacResidual.Decode(ref reader, header, data, order);
+            RestoreSignal(data, header.BlockSize - order, order);
+        }
+
+        private static void DecodeWarmup(ref SpanBitReader reader, FlacSubFrameData data, int bitsPerSample, int order)
         {
             var resSpan = data.ResidualSpan;
             var destSpan = data.DestinationSpan;
 
-            for (var i = 0; i < order; i++) 
+            for (var i = 0; i < order; i++)
             {
                 var val = reader.ReadBitsSigned(bitsPerSample);
                 resSpan[i] = destSpan[i] = val;
             }
-
-            var residual = new FlacResidual(reader, header, data, order); 
-        
-            RestoreSignal(data, header.BlockSize - order, order);
-
-#if FLAC_DEBUG
-            Residual = residual;
-#endif
         }
 
         private static void RestoreSignal(FlacSubFrameData subframeData, int length, int order)

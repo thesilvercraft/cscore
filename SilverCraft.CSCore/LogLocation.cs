@@ -9,13 +9,16 @@ namespace SilverCraft.CSCore;
 public static class LogLocation
 {
     // Default to a null logger factory to prevent crashes if uninitialized
-    private static ILoggerFactory _factory = new NullLoggerFactory();
+    private static ILoggerFactory _factory = NullLoggerFactory.Instance;
+
+    internal static ILoggerFactory Factory => Volatile.Read(ref _factory);
+
     /// <summary>
     /// Called by the consuming application at startup to provide a real logger factory.
     /// </summary>
     public static void Initialize(ILoggerFactory factory)
     {
-        _factory = factory ?? throw new ArgumentNullException(nameof(factory));
+        Volatile.Write(ref _factory, factory ?? throw new ArgumentNullException(nameof(factory)));
     }
 
     /// <summary>
