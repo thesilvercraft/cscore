@@ -89,11 +89,11 @@
 
 
   <h1 id="SilverCraft_CSCore_Codecs_WAV_WaveFileChunk" data-uid="SilverCraft.CSCore.Codecs.WAV.WaveFileChunk" class="text-break">
-Class WaveFileChunk  <a class="header-action link-secondary" title="View source" href="https://github.com/thesilvercraft/cscore/blob/master/SilverCraft.CSCore/Codecs/WAV/WaveFileChunk.cs/#L10"><i class="bi bi-code-slash"></i></a>
+Class WaveFileChunk  <a class="header-action link-secondary" title="View source" href="https://github.com/thesilvercraft/cscore/blob/master/SilverCraft.CSCore/Codecs/WAV/WaveFileChunk.cs/#L9"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
-    <dl><dt>Namespace</dt><dd><a class="xref" href="SilverCraft.html">SilverCraft</a>.<a class="xref" href="SilverCraft.CSCore.html">CSCore</a>.<a class="xref" href="SilverCraft.CSCore.Codecs.html">Codecs</a>.<a class="xref" href="SilverCraft.CSCore.Codecs.WAV.html">WAV</a></dd></dl>
+    <dl><dt>Namespace</dt><dd><span class="xref">SilverCraft</span>.<a class="xref" href="SilverCraft.CSCore.html">CSCore</a>.<span class="xref">Codecs</span>.<a class="xref" href="SilverCraft.CSCore.Codecs.WAV.html">WAV</a></dd></dl>
   <dl><dt>Assembly</dt><dd>SilverCraft.CSCore.dll</dd></dl>
   </div>
 
@@ -170,9 +170,9 @@ Class WaveFileChunk  <a class="header-action link-secondary" title="View source"
 
   <a id="SilverCraft_CSCore_Codecs_WAV_WaveFileChunk__ctor_" data-uid="SilverCraft.CSCore.Codecs.WAV.WaveFileChunk.#ctor*"></a>
 
-  <h3 id="SilverCraft_CSCore_Codecs_WAV_WaveFileChunk__ctor_System_IO_BinaryReader_" data-uid="SilverCraft.CSCore.Codecs.WAV.WaveFileChunk.#ctor(System.IO.BinaryReader)">
-  WaveFileChunk(BinaryReader)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/thesilvercraft/cscore/blob/master/SilverCraft.CSCore/Codecs/WAV/WaveFileChunk.cs/#L25"><i class="bi bi-code-slash"></i></a>
+  <h3 id="SilverCraft_CSCore_Codecs_WAV_WaveFileChunk__ctor_System_IO_BinaryReader_System_Boolean_" data-uid="SilverCraft.CSCore.Codecs.WAV.WaveFileChunk.#ctor(System.IO.BinaryReader,System.Boolean)">
+  WaveFileChunk(BinaryReader, bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/thesilvercraft/cscore/blob/master/SilverCraft.CSCore/Codecs/WAV/WaveFileChunk.cs/#L27"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="SilverCraft.CSCore.Codecs.WAV.WaveFileChunk.html">WaveFileChunk</a> class.</p>
@@ -180,13 +180,16 @@ Class WaveFileChunk  <a class="header-action link-secondary" title="View source"
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public WaveFileChunk(BinaryReader reader)</code></pre>
+    <pre><code class="lang-csharp hljs">public WaveFileChunk(BinaryReader reader, bool disposeReader = true)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>reader</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.binaryreader">BinaryReader</a></dt>
     <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.binaryreader">BinaryReader</a> which should be used to read the wave file chunk.</p>
+</dd>
+    <dt><code>disposeReader</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>Whether to dispose of the reader given, defaults to true, use false for children of WaveFileChunk</p>
 </dd>
   </dl>
 
@@ -205,7 +208,7 @@ Class WaveFileChunk  <a class="header-action link-secondary" title="View source"
 
   <h3 id="SilverCraft_CSCore_Codecs_WAV_WaveFileChunk__ctor_System_IO_Stream_" data-uid="SilverCraft.CSCore.Codecs.WAV.WaveFileChunk.#ctor(System.IO.Stream)">
   WaveFileChunk(Stream)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/thesilvercraft/cscore/blob/master/SilverCraft.CSCore/Codecs/WAV/WaveFileChunk.cs/#L16"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/thesilvercraft/cscore/blob/master/SilverCraft.CSCore/Codecs/WAV/WaveFileChunk.cs/#L15"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="SilverCraft.CSCore.Codecs.WAV.WaveFileChunk.html">WaveFileChunk</a> class.</p>
@@ -242,7 +245,7 @@ Class WaveFileChunk  <a class="header-action link-secondary" title="View source"
 
   <h3 id="SilverCraft_CSCore_Codecs_WAV_WaveFileChunk_ChunkDataSize" data-uid="SilverCraft.CSCore.Codecs.WAV.WaveFileChunk.ChunkDataSize">
   ChunkDataSize
-  <a class="header-action link-secondary" title="View source" href="https://github.com/thesilvercraft/cscore/blob/master/SilverCraft.CSCore/Codecs/WAV/WaveFileChunk.cs/#L40"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/thesilvercraft/cscore/blob/master/SilverCraft.CSCore/Codecs/WAV/WaveFileChunk.cs/#L52"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Gets the data size of the chunk.</p>
@@ -274,7 +277,7 @@ Class WaveFileChunk  <a class="header-action link-secondary" title="View source"
 
   <h3 id="SilverCraft_CSCore_Codecs_WAV_WaveFileChunk_ChunkID" data-uid="SilverCraft.CSCore.Codecs.WAV.WaveFileChunk.ChunkID">
   ChunkID
-  <a class="header-action link-secondary" title="View source" href="https://github.com/thesilvercraft/cscore/blob/master/SilverCraft.CSCore/Codecs/WAV/WaveFileChunk.cs/#L35"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/thesilvercraft/cscore/blob/master/SilverCraft.CSCore/Codecs/WAV/WaveFileChunk.cs/#L47"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Gets the unique ID of the Chunk. Each type of chunk has its own id.</p>
@@ -310,7 +313,7 @@ Class WaveFileChunk  <a class="header-action link-secondary" title="View source"
 
   <h3 id="SilverCraft_CSCore_Codecs_WAV_WaveFileChunk_FromStream_System_IO_Stream_" data-uid="SilverCraft.CSCore.Codecs.WAV.WaveFileChunk.FromStream(System.IO.Stream)">
   FromStream(Stream)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/thesilvercraft/cscore/blob/master/SilverCraft.CSCore/Codecs/WAV/WaveFileChunk.cs/#L51"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/thesilvercraft/cscore/blob/master/SilverCraft.CSCore/Codecs/WAV/WaveFileChunk.cs/#L63"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Parses the <code class="paramref">stream</code> and returns a <a class="xref" href="SilverCraft.CSCore.Codecs.WAV.WaveFileChunk.html">WaveFileChunk</a>. Note that the position of the
@@ -351,7 +354,7 @@ wave file chunk the instance of the <a class="xref" href="SilverCraft.CSCore.Cod
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/thesilvercraft/cscore/blob/master/SilverCraft.CSCore/Codecs/WAV/WaveFileChunk.cs/#L10" class="edit-link">Edit this page</a>
+          <a href="https://github.com/thesilvercraft/cscore/blob/master/SilverCraft.CSCore/Codecs/WAV/WaveFileChunk.cs/#L9" class="edit-link">Edit this page</a>
         </div>
 
 

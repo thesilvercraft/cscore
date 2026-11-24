@@ -316,7 +316,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: Process
     path: ../SilverCraft.CSCore/DSP/Resampler/ResamplerBase.cs
-    startLine: 67
+    startLine: 65
   assemblies:
   - SilverCraft.CSCore
   namespace: SilverCraft.CSCore.DSP.Resampler
@@ -344,42 +344,33 @@ items:
 references:
 - uid: SilverCraft.CSCore.DSP.Resampler
   commentId: N:SilverCraft.CSCore.DSP.Resampler
-  href: SilverCraft.html
   name: SilverCraft.CSCore.DSP.Resampler
   nameWithType: SilverCraft.CSCore.DSP.Resampler
   fullName: SilverCraft.CSCore.DSP.Resampler
   spec.csharp:
   - uid: SilverCraft
     name: SilverCraft
-    href: SilverCraft.html
   - name: .
   - uid: SilverCraft.CSCore
     name: CSCore
-    href: SilverCraft.CSCore.html
   - name: .
   - uid: SilverCraft.CSCore.DSP
     name: DSP
-    href: SilverCraft.CSCore.DSP.html
   - name: .
   - uid: SilverCraft.CSCore.DSP.Resampler
     name: Resampler
-    href: SilverCraft.CSCore.DSP.Resampler.html
   spec.vb:
   - uid: SilverCraft
     name: SilverCraft
-    href: SilverCraft.html
   - name: .
   - uid: SilverCraft.CSCore
     name: CSCore
-    href: SilverCraft.CSCore.html
   - name: .
   - uid: SilverCraft.CSCore.DSP
     name: DSP
-    href: SilverCraft.CSCore.DSP.html
   - name: .
   - uid: SilverCraft.CSCore.DSP.Resampler
     name: Resampler
-    href: SilverCraft.CSCore.DSP.Resampler.html
 - uid: System.Object
   commentId: T:System.Object
   parent: System
@@ -1489,26 +1480,21 @@ references:
   fullName: System
 - uid: SilverCraft.CSCore
   commentId: N:SilverCraft.CSCore
-  href: SilverCraft.html
   name: SilverCraft.CSCore
   nameWithType: SilverCraft.CSCore
   fullName: SilverCraft.CSCore
   spec.csharp:
   - uid: SilverCraft
     name: SilverCraft
-    href: SilverCraft.html
   - name: .
   - uid: SilverCraft.CSCore
     name: CSCore
-    href: SilverCraft.CSCore.html
   spec.vb:
   - uid: SilverCraft
     name: SilverCraft
-    href: SilverCraft.html
   - name: .
   - uid: SilverCraft.CSCore
     name: CSCore
-    href: SilverCraft.CSCore.html
 - uid: SilverCraft.CSCore.IAggregator`2
   commentId: T:SilverCraft.CSCore.IAggregator`2
   href: SilverCraft.CSCore.IAggregator-2.html

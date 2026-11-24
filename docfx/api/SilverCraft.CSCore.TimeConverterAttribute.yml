@@ -243,26 +243,21 @@ references:
   fullName: SilverCraft.CSCore.TimeConverter
 - uid: SilverCraft.CSCore
   commentId: N:SilverCraft.CSCore
-  href: SilverCraft.html
   name: SilverCraft.CSCore
   nameWithType: SilverCraft.CSCore
   fullName: SilverCraft.CSCore
   spec.csharp:
   - uid: SilverCraft
     name: SilverCraft
-    href: SilverCraft.html
   - name: .
   - uid: SilverCraft.CSCore
     name: CSCore
-    href: SilverCraft.CSCore.html
   spec.vb:
   - uid: SilverCraft
     name: SilverCraft
-    href: SilverCraft.html
   - name: .
   - uid: SilverCraft.CSCore
     name: CSCore
-    href: SilverCraft.CSCore.html
 - uid: System.Object
   commentId: T:System.Object
   parent: System

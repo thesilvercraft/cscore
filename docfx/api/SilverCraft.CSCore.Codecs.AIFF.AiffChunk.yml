@@ -232,42 +232,33 @@ items:
 references:
 - uid: SilverCraft.CSCore.Codecs.AIFF
   commentId: N:SilverCraft.CSCore.Codecs.AIFF
-  href: SilverCraft.html
   name: SilverCraft.CSCore.Codecs.AIFF
   nameWithType: SilverCraft.CSCore.Codecs.AIFF
   fullName: SilverCraft.CSCore.Codecs.AIFF
   spec.csharp:
   - uid: SilverCraft
     name: SilverCraft
-    href: SilverCraft.html
   - name: .
   - uid: SilverCraft.CSCore
     name: CSCore
-    href: SilverCraft.CSCore.html
   - name: .
   - uid: SilverCraft.CSCore.Codecs
     name: Codecs
-    href: SilverCraft.CSCore.Codecs.html
   - name: .
   - uid: SilverCraft.CSCore.Codecs.AIFF
     name: AIFF
-    href: SilverCraft.CSCore.Codecs.AIFF.html
   spec.vb:
   - uid: SilverCraft
     name: SilverCraft
-    href: SilverCraft.html
   - name: .
   - uid: SilverCraft.CSCore
     name: CSCore
-    href: SilverCraft.CSCore.html
   - name: .
   - uid: SilverCraft.CSCore.Codecs
     name: Codecs
-    href: SilverCraft.CSCore.Codecs.html
   - name: .
   - uid: SilverCraft.CSCore.Codecs.AIFF
     name: AIFF
-    href: SilverCraft.CSCore.Codecs.AIFF.html
 - uid: System.Object
   commentId: T:System.Object
   parent: System
@@ -598,26 +589,21 @@ references:
   fullName: SilverCraft.CSCore.FluentExtensions
 - uid: SilverCraft.CSCore
   commentId: N:SilverCraft.CSCore
-  href: SilverCraft.html
   name: SilverCraft.CSCore
   nameWithType: SilverCraft.CSCore
   fullName: SilverCraft.CSCore
   spec.csharp:
   - uid: SilverCraft
     name: SilverCraft
-    href: SilverCraft.html
   - name: .
   - uid: SilverCraft.CSCore
     name: CSCore
-    href: SilverCraft.CSCore.html
   spec.vb:
   - uid: SilverCraft
     name: SilverCraft
-    href: SilverCraft.html
   - name: .
   - uid: SilverCraft.CSCore
     name: CSCore
-    href: SilverCraft.CSCore.html
 - uid: SilverCraft.CSCore.Codecs.AIFF.AiffChunk
   commentId: T:SilverCraft.CSCore.Codecs.AIFF.AiffChunk
   parent: SilverCraft.CSCore.Codecs.AIFF

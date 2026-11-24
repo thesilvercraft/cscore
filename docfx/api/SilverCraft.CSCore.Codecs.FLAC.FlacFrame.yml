@@ -27,7 +27,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: FlacFrame
     path: ../SilverCraft.CSCore/Codecs/FLAC/FlacFrame_GetBuffer.cs
-    startLine: 4
+    startLine: 7
   assemblies:
   - SilverCraft.CSCore
   namespace: SilverCraft.CSCore.Codecs.FLAC
@@ -67,7 +67,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: Header
     path: ../SilverCraft.CSCore/Codecs/FLAC/FlacFrame.cs
-    startLine: 37
+    startLine: 50
   assemblies:
   - SilverCraft.CSCore
   namespace: SilverCraft.CSCore.Codecs.FLAC
@@ -98,7 +98,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: Crc16
     path: ../SilverCraft.CSCore/Codecs/FLAC/FlacFrame.cs
-    startLine: 42
+    startLine: 55
   assemblies:
   - SilverCraft.CSCore
   namespace: SilverCraft.CSCore.Codecs.FLAC
@@ -129,7 +129,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: HasError
     path: ../SilverCraft.CSCore/Codecs/FLAC/FlacFrame.cs
-    startLine: 50
+    startLine: 63
   assemblies:
   - SilverCraft.CSCore
   namespace: SilverCraft.CSCore.Codecs.FLAC
@@ -161,7 +161,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: Dispose
     path: ../SilverCraft.CSCore/Codecs/FLAC/FlacFrame.cs
-    startLine: 55
+    startLine: 78
   assemblies:
   - SilverCraft.CSCore
   namespace: SilverCraft.CSCore.Codecs.FLAC
@@ -191,7 +191,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: FromStream
     path: ../SilverCraft.CSCore/Codecs/FLAC/FlacFrame.cs
-    startLine: 72
+    startLine: 101
   assemblies:
   - SilverCraft.CSCore
   namespace: SilverCraft.CSCore.Codecs.FLAC
@@ -226,7 +226,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: FromStream
     path: ../SilverCraft.CSCore/Codecs/FLAC/FlacFrame.cs
-    startLine: 85
+    startLine: 114
   assemblies:
   - SilverCraft.CSCore
   namespace: SilverCraft.CSCore.Codecs.FLAC
@@ -267,7 +267,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: NextFrame
     path: ../SilverCraft.CSCore/Codecs/FLAC/FlacFrame.cs
-    startLine: 96
+    startLine: 125
   assemblies:
   - SilverCraft.CSCore
   namespace: SilverCraft.CSCore.Codecs.FLAC
@@ -301,7 +301,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: GetBuffer
     path: ../SilverCraft.CSCore/Codecs/FLAC/FlacFrame_GetBuffer.cs
-    startLine: 11
+    startLine: 17
   assemblies:
   - SilverCraft.CSCore
   namespace: SilverCraft.CSCore.Codecs.FLAC
@@ -324,42 +324,33 @@ items:
 references:
 - uid: SilverCraft.CSCore.Codecs.FLAC
   commentId: N:SilverCraft.CSCore.Codecs.FLAC
-  href: SilverCraft.html
   name: SilverCraft.CSCore.Codecs.FLAC
   nameWithType: SilverCraft.CSCore.Codecs.FLAC
   fullName: SilverCraft.CSCore.Codecs.FLAC
   spec.csharp:
   - uid: SilverCraft
     name: SilverCraft
-    href: SilverCraft.html
   - name: .
   - uid: SilverCraft.CSCore
     name: CSCore
-    href: SilverCraft.CSCore.html
   - name: .
   - uid: SilverCraft.CSCore.Codecs
     name: Codecs
-    href: SilverCraft.CSCore.Codecs.html
   - name: .
   - uid: SilverCraft.CSCore.Codecs.FLAC
     name: FLAC
-    href: SilverCraft.CSCore.Codecs.FLAC.html
   spec.vb:
   - uid: SilverCraft
     name: SilverCraft
-    href: SilverCraft.html
   - name: .
   - uid: SilverCraft.CSCore
     name: CSCore
-    href: SilverCraft.CSCore.html
   - name: .
   - uid: SilverCraft.CSCore.Codecs
     name: Codecs
-    href: SilverCraft.CSCore.Codecs.html
   - name: .
   - uid: SilverCraft.CSCore.Codecs.FLAC
     name: FLAC
-    href: SilverCraft.CSCore.Codecs.FLAC.html
 - uid: System.Object
   commentId: T:System.Object
   parent: System
@@ -674,26 +665,21 @@ references:
   fullName: SilverCraft.CSCore.FluentExtensions
 - uid: SilverCraft.CSCore
   commentId: N:SilverCraft.CSCore
-  href: SilverCraft.html
   name: SilverCraft.CSCore
   nameWithType: SilverCraft.CSCore
   fullName: SilverCraft.CSCore
   spec.csharp:
   - uid: SilverCraft
     name: SilverCraft
-    href: SilverCraft.html
   - name: .
   - uid: SilverCraft.CSCore
     name: CSCore
-    href: SilverCraft.CSCore.html
   spec.vb:
   - uid: SilverCraft
     name: SilverCraft
-    href: SilverCraft.html
   - name: .
   - uid: SilverCraft.CSCore
     name: CSCore
-    href: SilverCraft.CSCore.html
 - uid: SilverCraft.CSCore.Codecs.FLAC.FlacFrame.Header*
   commentId: Overload:SilverCraft.CSCore.Codecs.FLAC.FlacFrame.Header
   href: SilverCraft.CSCore.Codecs.FLAC.FlacFrame.html#SilverCraft_CSCore_Codecs_FLAC_FlacFrame_Header

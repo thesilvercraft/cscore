@@ -5,14 +5,18 @@ items:
   id: PortAudioSoundIn
   parent: SilverCraft.CSCore.SoundIn
   children:
-  - SilverCraft.CSCore.SoundIn.PortAudioSoundIn.#ctor(System.Int32,System.Int32)
+  - SilverCraft.CSCore.SoundIn.PortAudioSoundIn.#ctor(System.Int32,System.Int32,System.String)
   - SilverCraft.CSCore.SoundIn.PortAudioSoundIn.Channels
   - SilverCraft.CSCore.SoundIn.PortAudioSoundIn.DataAvailable
+  - SilverCraft.CSCore.SoundIn.PortAudioSoundIn.DefaultDeviceLabel
   - SilverCraft.CSCore.SoundIn.PortAudioSoundIn.Dispose
   - SilverCraft.CSCore.SoundIn.PortAudioSoundIn.Dispose(System.Boolean)
   - SilverCraft.CSCore.SoundIn.PortAudioSoundIn.Finalize
+  - SilverCraft.CSCore.SoundIn.PortAudioSoundIn.GetInputDeviceNames
   - SilverCraft.CSCore.SoundIn.PortAudioSoundIn.Initialize
+  - SilverCraft.CSCore.SoundIn.PortAudioSoundIn.IsSupported
   - SilverCraft.CSCore.SoundIn.PortAudioSoundIn.OnStreamFinished(System.Void*)
+  - SilverCraft.CSCore.SoundIn.PortAudioSoundIn.PreferredDevice
   - SilverCraft.CSCore.SoundIn.PortAudioSoundIn.RecordingState
   - SilverCraft.CSCore.SoundIn.PortAudioSoundIn.SampleRate
   - SilverCraft.CSCore.SoundIn.PortAudioSoundIn.Start
@@ -55,16 +59,43 @@ items:
   - System.Object.ToString
   extensionMethods:
   - SilverCraft.CSCore.SoundIn.PortAudioSoundIn.SilverCraft.CSCore.FluentExtensions.Synchronized``2
-- uid: SilverCraft.CSCore.SoundIn.PortAudioSoundIn.#ctor(System.Int32,System.Int32)
-  commentId: M:SilverCraft.CSCore.SoundIn.PortAudioSoundIn.#ctor(System.Int32,System.Int32)
-  id: '#ctor(System.Int32,System.Int32)'
+- uid: SilverCraft.CSCore.SoundIn.PortAudioSoundIn.DefaultDeviceLabel
+  commentId: F:SilverCraft.CSCore.SoundIn.PortAudioSoundIn.DefaultDeviceLabel
+  id: DefaultDeviceLabel
   parent: SilverCraft.CSCore.SoundIn.PortAudioSoundIn
   langs:
   - csharp
   - vb
-  name: PortAudioSoundIn(int, int)
-  nameWithType: PortAudioSoundIn.PortAudioSoundIn(int, int)
-  fullName: SilverCraft.CSCore.SoundIn.PortAudioSoundIn.PortAudioSoundIn(int, int)
+  name: DefaultDeviceLabel
+  nameWithType: PortAudioSoundIn.DefaultDeviceLabel
+  fullName: SilverCraft.CSCore.SoundIn.PortAudioSoundIn.DefaultDeviceLabel
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/SoundIn/PortAudioSoundIn.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: DefaultDeviceLabel
+    path: ../SilverCraft.CSCore/SoundIn/PortAudioSoundIn.cs
+    startLine: 10
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.SoundIn
+  syntax:
+    content: public const string DefaultDeviceLabel = "Default"
+    return:
+      type: System.String
+    content.vb: Public Const DefaultDeviceLabel As String = "Default"
+- uid: SilverCraft.CSCore.SoundIn.PortAudioSoundIn.#ctor(System.Int32,System.Int32,System.String)
+  commentId: M:SilverCraft.CSCore.SoundIn.PortAudioSoundIn.#ctor(System.Int32,System.Int32,System.String)
+  id: '#ctor(System.Int32,System.Int32,System.String)'
+  parent: SilverCraft.CSCore.SoundIn.PortAudioSoundIn
+  langs:
+  - csharp
+  - vb
+  name: PortAudioSoundIn(int, int, string?)
+  nameWithType: PortAudioSoundIn.PortAudioSoundIn(int, int, string?)
+  fullName: SilverCraft.CSCore.SoundIn.PortAudioSoundIn.PortAudioSoundIn(int, int, string?)
   type: Constructor
   source:
     remote:
@@ -73,22 +104,109 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: .ctor
     path: ../SilverCraft.CSCore/SoundIn/PortAudioSoundIn.cs
-    startLine: 23
+    startLine: 25
   assemblies:
   - SilverCraft.CSCore
   namespace: SilverCraft.CSCore.SoundIn
   syntax:
-    content: public PortAudioSoundIn(int channels = 1, int sampleRate = 44100)
+    content: public PortAudioSoundIn(int channels = 1, int sampleRate = 44100, string? preferredDevice = null)
     parameters:
     - id: channels
       type: System.Int32
     - id: sampleRate
       type: System.Int32
-    content.vb: Public Sub New(channels As Integer = 1, sampleRate As Integer = 44100)
+    - id: preferredDevice
+      type: System.String
+    content.vb: Public Sub New(channels As Integer = 1, sampleRate As Integer = 44100, preferredDevice As String = Nothing)
   overload: SilverCraft.CSCore.SoundIn.PortAudioSoundIn.#ctor*
-  nameWithType.vb: PortAudioSoundIn.New(Integer, Integer)
-  fullName.vb: SilverCraft.CSCore.SoundIn.PortAudioSoundIn.New(Integer, Integer)
-  name.vb: New(Integer, Integer)
+  nameWithType.vb: PortAudioSoundIn.New(Integer, Integer, String)
+  fullName.vb: SilverCraft.CSCore.SoundIn.PortAudioSoundIn.New(Integer, Integer, String)
+  name.vb: New(Integer, Integer, String)
+- uid: SilverCraft.CSCore.SoundIn.PortAudioSoundIn.PreferredDevice
+  commentId: P:SilverCraft.CSCore.SoundIn.PortAudioSoundIn.PreferredDevice
+  id: PreferredDevice
+  parent: SilverCraft.CSCore.SoundIn.PortAudioSoundIn
+  langs:
+  - csharp
+  - vb
+  name: PreferredDevice
+  nameWithType: PortAudioSoundIn.PreferredDevice
+  fullName: SilverCraft.CSCore.SoundIn.PortAudioSoundIn.PreferredDevice
+  type: Property
+  source:
+    remote:
+      path: SilverCraft.CSCore/SoundIn/PortAudioSoundIn.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: PreferredDevice
+    path: ../SilverCraft.CSCore/SoundIn/PortAudioSoundIn.cs
+    startLine: 33
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.SoundIn
+  syntax:
+    content: public string? PreferredDevice { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property PreferredDevice As String
+  overload: SilverCraft.CSCore.SoundIn.PortAudioSoundIn.PreferredDevice*
+- uid: SilverCraft.CSCore.SoundIn.PortAudioSoundIn.IsSupported
+  commentId: M:SilverCraft.CSCore.SoundIn.PortAudioSoundIn.IsSupported
+  id: IsSupported
+  parent: SilverCraft.CSCore.SoundIn.PortAudioSoundIn
+  langs:
+  - csharp
+  - vb
+  name: IsSupported()
+  nameWithType: PortAudioSoundIn.IsSupported()
+  fullName: SilverCraft.CSCore.SoundIn.PortAudioSoundIn.IsSupported()
+  type: Method
+  source:
+    remote:
+      path: SilverCraft.CSCore/SoundIn/PortAudioSoundIn.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: IsSupported
+    path: ../SilverCraft.CSCore/SoundIn/PortAudioSoundIn.cs
+    startLine: 44
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.SoundIn
+  syntax:
+    content: public static bool IsSupported()
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Function IsSupported() As Boolean
+  overload: SilverCraft.CSCore.SoundIn.PortAudioSoundIn.IsSupported*
+- uid: SilverCraft.CSCore.SoundIn.PortAudioSoundIn.GetInputDeviceNames
+  commentId: M:SilverCraft.CSCore.SoundIn.PortAudioSoundIn.GetInputDeviceNames
+  id: GetInputDeviceNames
+  parent: SilverCraft.CSCore.SoundIn.PortAudioSoundIn
+  langs:
+  - csharp
+  - vb
+  name: GetInputDeviceNames()
+  nameWithType: PortAudioSoundIn.GetInputDeviceNames()
+  fullName: SilverCraft.CSCore.SoundIn.PortAudioSoundIn.GetInputDeviceNames()
+  type: Method
+  source:
+    remote:
+      path: SilverCraft.CSCore/SoundIn/PortAudioSoundIn.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: GetInputDeviceNames
+    path: ../SilverCraft.CSCore/SoundIn/PortAudioSoundIn.cs
+    startLine: 46
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.SoundIn
+  syntax:
+    content: public static string[] GetInputDeviceNames()
+    return:
+      type: System.String[]
+    content.vb: Public Shared Function GetInputDeviceNames() As String()
+  overload: SilverCraft.CSCore.SoundIn.PortAudioSoundIn.GetInputDeviceNames*
 - uid: SilverCraft.CSCore.SoundIn.PortAudioSoundIn.Channels
   commentId: P:SilverCraft.CSCore.SoundIn.PortAudioSoundIn.Channels
   id: Channels
@@ -107,7 +225,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: Channels
     path: ../SilverCraft.CSCore/SoundIn/PortAudioSoundIn.cs
-    startLine: 30
+    startLine: 49
   assemblies:
   - SilverCraft.CSCore
   namespace: SilverCraft.CSCore.SoundIn
@@ -136,7 +254,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: SampleRate
     path: ../SilverCraft.CSCore/SoundIn/PortAudioSoundIn.cs
-    startLine: 41
+    startLine: 60
   assemblies:
   - SilverCraft.CSCore
   namespace: SilverCraft.CSCore.SoundIn
@@ -165,7 +283,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: WaveFormat
     path: ../SilverCraft.CSCore/SoundIn/PortAudioSoundIn.cs
-    startLine: 52
+    startLine: 71
   assemblies:
   - SilverCraft.CSCore
   namespace: SilverCraft.CSCore.SoundIn
@@ -198,7 +316,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: RecordingState
     path: ../SilverCraft.CSCore/SoundIn/PortAudioSoundIn.cs
-    startLine: 53
+    startLine: 72
   assemblies:
   - SilverCraft.CSCore
   namespace: SilverCraft.CSCore.SoundIn
@@ -231,7 +349,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: DataAvailable
     path: ../SilverCraft.CSCore/SoundIn/PortAudioSoundIn.cs
-    startLine: 55
+    startLine: 74
   assemblies:
   - SilverCraft.CSCore
   namespace: SilverCraft.CSCore.SoundIn
@@ -262,7 +380,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: Stopped
     path: ../SilverCraft.CSCore/SoundIn/PortAudioSoundIn.cs
-    startLine: 56
+    startLine: 75
   assemblies:
   - SilverCraft.CSCore
   namespace: SilverCraft.CSCore.SoundIn
@@ -293,7 +411,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: Initialize
     path: ../SilverCraft.CSCore/SoundIn/PortAudioSoundIn.cs
-    startLine: 58
+    startLine: 77
   assemblies:
   - SilverCraft.CSCore
   namespace: SilverCraft.CSCore.SoundIn
@@ -323,7 +441,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: Start
     path: ../SilverCraft.CSCore/SoundIn/PortAudioSoundIn.cs
-    startLine: 103
+    startLine: 147
   assemblies:
   - SilverCraft.CSCore
   namespace: SilverCraft.CSCore.SoundIn
@@ -353,7 +471,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: Stop
     path: ../SilverCraft.CSCore/SoundIn/PortAudioSoundIn.cs
-    startLine: 123
+    startLine: 167
   assemblies:
   - SilverCraft.CSCore
   namespace: SilverCraft.CSCore.SoundIn
@@ -383,7 +501,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: OnStreamFinished
     path: ../SilverCraft.CSCore/SoundIn/PortAudioSoundIn.cs
-    startLine: 200
+    startLine: 238
   assemblies:
   - SilverCraft.CSCore
   namespace: SilverCraft.CSCore.SoundIn
@@ -415,7 +533,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: Dispose
     path: ../SilverCraft.CSCore/SoundIn/PortAudioSoundIn.cs
-    startLine: 224
+    startLine: 250
   assemblies:
   - SilverCraft.CSCore
   namespace: SilverCraft.CSCore.SoundIn
@@ -445,7 +563,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: Dispose
     path: ../SilverCraft.CSCore/SoundIn/PortAudioSoundIn.cs
-    startLine: 230
+    startLine: 256
   assemblies:
   - SilverCraft.CSCore
   namespace: SilverCraft.CSCore.SoundIn
@@ -477,7 +595,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: Finalize
     path: ../SilverCraft.CSCore/SoundIn/PortAudioSoundIn.cs
-    startLine: 244
+    startLine: 270
   assemblies:
   - SilverCraft.CSCore
   namespace: SilverCraft.CSCore.SoundIn
@@ -491,34 +609,27 @@ items:
 references:
 - uid: SilverCraft.CSCore.SoundIn
   commentId: N:SilverCraft.CSCore.SoundIn
-  href: SilverCraft.html
   name: SilverCraft.CSCore.SoundIn
   nameWithType: SilverCraft.CSCore.SoundIn
   fullName: SilverCraft.CSCore.SoundIn
   spec.csharp:
   - uid: SilverCraft
     name: SilverCraft
-    href: SilverCraft.html
   - name: .
   - uid: SilverCraft.CSCore
     name: CSCore
-    href: SilverCraft.CSCore.html
   - name: .
   - uid: SilverCraft.CSCore.SoundIn
     name: SoundIn
-    href: SilverCraft.CSCore.SoundIn.html
   spec.vb:
   - uid: SilverCraft
     name: SilverCraft
-    href: SilverCraft.html
   - name: .
   - uid: SilverCraft.CSCore
     name: CSCore
-    href: SilverCraft.CSCore.html
   - name: .
   - uid: SilverCraft.CSCore.SoundIn
     name: SoundIn
-    href: SilverCraft.CSCore.SoundIn.html
 - uid: System.Object
   commentId: T:System.Object
   parent: System
@@ -864,29 +975,35 @@ references:
   fullName: SilverCraft.CSCore.FluentExtensions
 - uid: SilverCraft.CSCore
   commentId: N:SilverCraft.CSCore
-  href: SilverCraft.html
   name: SilverCraft.CSCore
   nameWithType: SilverCraft.CSCore
   fullName: SilverCraft.CSCore
   spec.csharp:
   - uid: SilverCraft
     name: SilverCraft
-    href: SilverCraft.html
   - name: .
   - uid: SilverCraft.CSCore
     name: CSCore
-    href: SilverCraft.CSCore.html
   spec.vb:
   - uid: SilverCraft
     name: SilverCraft
-    href: SilverCraft.html
   - name: .
   - uid: SilverCraft.CSCore
     name: CSCore
-    href: SilverCraft.CSCore.html
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
 - uid: SilverCraft.CSCore.SoundIn.PortAudioSoundIn.#ctor*
   commentId: Overload:SilverCraft.CSCore.SoundIn.PortAudioSoundIn.#ctor
-  href: SilverCraft.CSCore.SoundIn.PortAudioSoundIn.html#SilverCraft_CSCore_SoundIn_PortAudioSoundIn__ctor_System_Int32_System_Int32_
+  href: SilverCraft.CSCore.SoundIn.PortAudioSoundIn.html#SilverCraft_CSCore_SoundIn_PortAudioSoundIn__ctor_System_Int32_System_Int32_System_String_
   name: PortAudioSoundIn
   nameWithType: PortAudioSoundIn.PortAudioSoundIn
   fullName: SilverCraft.CSCore.SoundIn.PortAudioSoundIn.PortAudioSoundIn
@@ -904,6 +1021,58 @@ references:
   nameWithType.vb: Integer
   fullName.vb: Integer
   name.vb: Integer
+- uid: SilverCraft.CSCore.SoundIn.PortAudioSoundIn.PreferredDevice*
+  commentId: Overload:SilverCraft.CSCore.SoundIn.PortAudioSoundIn.PreferredDevice
+  href: SilverCraft.CSCore.SoundIn.PortAudioSoundIn.html#SilverCraft_CSCore_SoundIn_PortAudioSoundIn_PreferredDevice
+  name: PreferredDevice
+  nameWithType: PortAudioSoundIn.PreferredDevice
+  fullName: SilverCraft.CSCore.SoundIn.PortAudioSoundIn.PreferredDevice
+- uid: SilverCraft.CSCore.SoundIn.PortAudioSoundIn.IsSupported*
+  commentId: Overload:SilverCraft.CSCore.SoundIn.PortAudioSoundIn.IsSupported
+  href: SilverCraft.CSCore.SoundIn.PortAudioSoundIn.html#SilverCraft_CSCore_SoundIn_PortAudioSoundIn_IsSupported
+  name: IsSupported
+  nameWithType: PortAudioSoundIn.IsSupported
+  fullName: SilverCraft.CSCore.SoundIn.PortAudioSoundIn.IsSupported
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: SilverCraft.CSCore.SoundIn.PortAudioSoundIn.GetInputDeviceNames*
+  commentId: Overload:SilverCraft.CSCore.SoundIn.PortAudioSoundIn.GetInputDeviceNames
+  href: SilverCraft.CSCore.SoundIn.PortAudioSoundIn.html#SilverCraft_CSCore_SoundIn_PortAudioSoundIn_GetInputDeviceNames
+  name: GetInputDeviceNames
+  nameWithType: PortAudioSoundIn.GetInputDeviceNames
+  fullName: SilverCraft.CSCore.SoundIn.PortAudioSoundIn.GetInputDeviceNames
+- uid: System.String[]
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string[]
+  nameWithType: string[]
+  fullName: string[]
+  nameWithType.vb: String()
+  fullName.vb: String()
+  name.vb: String()
+  spec.csharp:
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: (
+  - name: )
 - uid: SilverCraft.CSCore.SoundIn.PortAudioSoundIn.Channels*
   commentId: Overload:SilverCraft.CSCore.SoundIn.PortAudioSoundIn.Channels
   href: SilverCraft.CSCore.SoundIn.PortAudioSoundIn.html#SilverCraft_CSCore_SoundIn_PortAudioSoundIn_Channels
@@ -1194,17 +1363,6 @@ references:
     href: https://learn.microsoft.com/dotnet/api/system.idisposable.dispose
   - name: (
   - name: )
-- uid: System.Boolean
-  commentId: T:System.Boolean
-  parent: System
-  isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system.boolean
-  name: bool
-  nameWithType: bool
-  fullName: bool
-  nameWithType.vb: Boolean
-  fullName.vb: Boolean
-  name.vb: Boolean
 - uid: SilverCraft.CSCore.SoundIn.PortAudioSoundIn.Finalize*
   commentId: Overload:SilverCraft.CSCore.SoundIn.PortAudioSoundIn.Finalize
   href: SilverCraft.CSCore.SoundIn.PortAudioSoundIn.html#SilverCraft_CSCore_SoundIn_PortAudioSoundIn_Finalize

@@ -92,7 +92,6 @@ items:
 references:
 - uid: OpenMPT
   commentId: N:OpenMPT
-  href: OpenMPT.html
   name: OpenMPT
   nameWithType: OpenMPT
   fullName: OpenMPT

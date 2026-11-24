@@ -164,34 +164,27 @@ items:
 references:
 - uid: SilverCraft.CSCore.DSP
   commentId: N:SilverCraft.CSCore.DSP
-  href: SilverCraft.html
   name: SilverCraft.CSCore.DSP
   nameWithType: SilverCraft.CSCore.DSP
   fullName: SilverCraft.CSCore.DSP
   spec.csharp:
   - uid: SilverCraft
     name: SilverCraft
-    href: SilverCraft.html
   - name: .
   - uid: SilverCraft.CSCore
     name: CSCore
-    href: SilverCraft.CSCore.html
   - name: .
   - uid: SilverCraft.CSCore.DSP
     name: DSP
-    href: SilverCraft.CSCore.DSP.html
   spec.vb:
   - uid: SilverCraft
     name: SilverCraft
-    href: SilverCraft.html
   - name: .
   - uid: SilverCraft.CSCore
     name: CSCore
-    href: SilverCraft.CSCore.html
   - name: .
   - uid: SilverCraft.CSCore.DSP
     name: DSP
-    href: SilverCraft.CSCore.DSP.html
 - uid: System.Object
   commentId: T:System.Object
   parent: System
@@ -672,26 +665,21 @@ references:
   fullName: SilverCraft.CSCore.FluentExtensions
 - uid: SilverCraft.CSCore
   commentId: N:SilverCraft.CSCore
-  href: SilverCraft.html
   name: SilverCraft.CSCore
   nameWithType: SilverCraft.CSCore
   fullName: SilverCraft.CSCore
   spec.csharp:
   - uid: SilverCraft
     name: SilverCraft
-    href: SilverCraft.html
   - name: .
   - uid: SilverCraft.CSCore
     name: CSCore
-    href: SilverCraft.CSCore.html
   spec.vb:
   - uid: SilverCraft
     name: SilverCraft
-    href: SilverCraft.html
   - name: .
   - uid: SilverCraft.CSCore
     name: CSCore
-    href: SilverCraft.CSCore.html
 - uid: SilverCraft.CSCore.DSP.PeakFilter.BandWidth*
   commentId: Overload:SilverCraft.CSCore.DSP.PeakFilter.BandWidth
   href: SilverCraft.CSCore.DSP.PeakFilter.html#SilverCraft_CSCore_DSP_PeakFilter_BandWidth

@@ -240,42 +240,33 @@ items:
 references:
 - uid: SilverCraft.CSCore.SoundOut.AL
   commentId: N:SilverCraft.CSCore.SoundOut.AL
-  href: SilverCraft.html
   name: SilverCraft.CSCore.SoundOut.AL
   nameWithType: SilverCraft.CSCore.SoundOut.AL
   fullName: SilverCraft.CSCore.SoundOut.AL
   spec.csharp:
   - uid: SilverCraft
     name: SilverCraft
-    href: SilverCraft.html
   - name: .
   - uid: SilverCraft.CSCore
     name: CSCore
-    href: SilverCraft.CSCore.html
   - name: .
   - uid: SilverCraft.CSCore.SoundOut
     name: SoundOut
-    href: SilverCraft.CSCore.SoundOut.html
   - name: .
   - uid: SilverCraft.CSCore.SoundOut.AL
     name: AL
-    href: SilverCraft.CSCore.SoundOut.AL.html
   spec.vb:
   - uid: SilverCraft
     name: SilverCraft
-    href: SilverCraft.html
   - name: .
   - uid: SilverCraft.CSCore
     name: CSCore
-    href: SilverCraft.CSCore.html
   - name: .
   - uid: SilverCraft.CSCore.SoundOut
     name: SoundOut
-    href: SilverCraft.CSCore.SoundOut.html
   - name: .
   - uid: SilverCraft.CSCore.SoundOut.AL
     name: AL
-    href: SilverCraft.CSCore.SoundOut.AL.html
 - uid: System.Object
   commentId: T:System.Object
   parent: System
@@ -614,26 +605,21 @@ references:
   fullName: SilverCraft.CSCore.FluentExtensions
 - uid: SilverCraft.CSCore
   commentId: N:SilverCraft.CSCore
-  href: SilverCraft.html
   name: SilverCraft.CSCore
   nameWithType: SilverCraft.CSCore
   fullName: SilverCraft.CSCore
   spec.csharp:
   - uid: SilverCraft
     name: SilverCraft
-    href: SilverCraft.html
   - name: .
   - uid: SilverCraft.CSCore
     name: CSCore
-    href: SilverCraft.CSCore.html
   spec.vb:
   - uid: SilverCraft
     name: SilverCraft
-    href: SilverCraft.html
   - name: .
   - uid: SilverCraft.CSCore
     name: CSCore
-    href: SilverCraft.CSCore.html
 - uid: SilverCraft.CSCore.SoundOut.AL.ALDevice.Name*
   commentId: Overload:SilverCraft.CSCore.SoundOut.AL.ALDevice.Name
   href: SilverCraft.CSCore.SoundOut.AL.ALDevice.html#SilverCraft_CSCore_SoundOut_AL_ALDevice_Name

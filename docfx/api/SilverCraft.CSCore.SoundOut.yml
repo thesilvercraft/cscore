@@ -5,6 +5,7 @@ items:
   id: SilverCraft.CSCore.SoundOut
   children:
   - SilverCraft.CSCore.SoundOut.ALSoundOut
+  - SilverCraft.CSCore.SoundOut.BufferedPortAudioSoundOut
   - SilverCraft.CSCore.SoundOut.ISoundOut
   - SilverCraft.CSCore.SoundOut.PlaybackState
   - SilverCraft.CSCore.SoundOut.PlaybackStoppedEventArgs
@@ -25,6 +26,12 @@ references:
   name: ALSoundOut
   nameWithType: ALSoundOut
   fullName: SilverCraft.CSCore.SoundOut.ALSoundOut
+- uid: SilverCraft.CSCore.SoundOut.BufferedPortAudioSoundOut
+  commentId: T:SilverCraft.CSCore.SoundOut.BufferedPortAudioSoundOut
+  href: SilverCraft.CSCore.SoundOut.BufferedPortAudioSoundOut.html
+  name: BufferedPortAudioSoundOut
+  nameWithType: BufferedPortAudioSoundOut
+  fullName: SilverCraft.CSCore.SoundOut.BufferedPortAudioSoundOut
 - uid: SilverCraft.CSCore.SoundOut.ISoundOut
   commentId: T:SilverCraft.CSCore.SoundOut.ISoundOut
   parent: SilverCraft.CSCore.SoundOut
@@ -53,31 +60,24 @@ references:
   fullName: SilverCraft.CSCore.SoundOut.PortAudioSoundOut
 - uid: SilverCraft.CSCore.SoundOut
   commentId: N:SilverCraft.CSCore.SoundOut
-  href: SilverCraft.html
   name: SilverCraft.CSCore.SoundOut
   nameWithType: SilverCraft.CSCore.SoundOut
   fullName: SilverCraft.CSCore.SoundOut
   spec.csharp:
   - uid: SilverCraft
     name: SilverCraft
-    href: SilverCraft.html
   - name: .
   - uid: SilverCraft.CSCore
     name: CSCore
-    href: SilverCraft.CSCore.html
   - name: .
   - uid: SilverCraft.CSCore.SoundOut
     name: SoundOut
-    href: SilverCraft.CSCore.SoundOut.html
   spec.vb:
   - uid: SilverCraft
     name: SilverCraft
-    href: SilverCraft.html
   - name: .
   - uid: SilverCraft.CSCore
     name: CSCore
-    href: SilverCraft.CSCore.html
   - name: .
   - uid: SilverCraft.CSCore.SoundOut
     name: SoundOut
-    href: SilverCraft.CSCore.SoundOut.html

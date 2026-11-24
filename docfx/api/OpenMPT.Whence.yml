@@ -22,7 +22,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: Whence
     path: ../SilverCraft.CSCore.OpenMPT/Interop/openmpt_stream_callbacks.cs
-    startLine: 62
+    startLine: 67
   assemblies:
   - SilverCraft.CSCore.OpenMPT
   namespace: OpenMPT
@@ -47,7 +47,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: Set
     path: ../SilverCraft.CSCore.OpenMPT/Interop/openmpt_stream_callbacks.cs
-    startLine: 63
+    startLine: 69
   assemblies:
   - SilverCraft.CSCore.OpenMPT
   namespace: OpenMPT
@@ -73,7 +73,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: Current
     path: ../SilverCraft.CSCore.OpenMPT/Interop/openmpt_stream_callbacks.cs
-    startLine: 64
+    startLine: 70
   assemblies:
   - SilverCraft.CSCore.OpenMPT
   namespace: OpenMPT
@@ -99,7 +99,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: End
     path: ../SilverCraft.CSCore.OpenMPT/Interop/openmpt_stream_callbacks.cs
-    startLine: 65
+    startLine: 71
   assemblies:
   - SilverCraft.CSCore.OpenMPT
   namespace: OpenMPT
@@ -110,7 +110,6 @@ items:
 references:
 - uid: OpenMPT
   commentId: N:OpenMPT
-  href: OpenMPT.html
   name: OpenMPT
   nameWithType: OpenMPT
   fullName: OpenMPT

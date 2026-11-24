@@ -6499,15 +6499,15 @@ references:
   commentId: T:SilverCraft.CSCore.Codecs.WAV.WaveFileChunk
   fullName: SilverCraft.CSCore.Codecs.WAV.WaveFileChunk
   nameWithType: WaveFileChunk
-- uid: SilverCraft.CSCore.Codecs.WAV.WaveFileChunk.#ctor(System.IO.BinaryReader)
-  name: WaveFileChunk(BinaryReader)
-  href: api/SilverCraft.CSCore.Codecs.WAV.WaveFileChunk.html#SilverCraft_CSCore_Codecs_WAV_WaveFileChunk__ctor_System_IO_BinaryReader_
-  commentId: M:SilverCraft.CSCore.Codecs.WAV.WaveFileChunk.#ctor(System.IO.BinaryReader)
-  name.vb: New(BinaryReader)
-  fullName: SilverCraft.CSCore.Codecs.WAV.WaveFileChunk.WaveFileChunk(System.IO.BinaryReader)
-  fullName.vb: SilverCraft.CSCore.Codecs.WAV.WaveFileChunk.New(System.IO.BinaryReader)
-  nameWithType: WaveFileChunk.WaveFileChunk(BinaryReader)
-  nameWithType.vb: WaveFileChunk.New(BinaryReader)
+- uid: SilverCraft.CSCore.Codecs.WAV.WaveFileChunk.#ctor(System.IO.BinaryReader,System.Boolean)
+  name: WaveFileChunk(BinaryReader, bool)
+  href: api/SilverCraft.CSCore.Codecs.WAV.WaveFileChunk.html#SilverCraft_CSCore_Codecs_WAV_WaveFileChunk__ctor_System_IO_BinaryReader_System_Boolean_
+  commentId: M:SilverCraft.CSCore.Codecs.WAV.WaveFileChunk.#ctor(System.IO.BinaryReader,System.Boolean)
+  name.vb: New(BinaryReader, Boolean)
+  fullName: SilverCraft.CSCore.Codecs.WAV.WaveFileChunk.WaveFileChunk(System.IO.BinaryReader, bool)
+  fullName.vb: SilverCraft.CSCore.Codecs.WAV.WaveFileChunk.New(System.IO.BinaryReader, Boolean)
+  nameWithType: WaveFileChunk.WaveFileChunk(BinaryReader, bool)
+  nameWithType.vb: WaveFileChunk.New(BinaryReader, Boolean)
 - uid: SilverCraft.CSCore.Codecs.WAV.WaveFileChunk.#ctor(System.IO.Stream)
   name: WaveFileChunk(Stream)
   href: api/SilverCraft.CSCore.Codecs.WAV.WaveFileChunk.html#SilverCraft_CSCore_Codecs_WAV_WaveFileChunk__ctor_System_IO_Stream_
@@ -11419,15 +11419,15 @@ references:
   commentId: T:SilverCraft.CSCore.SoundIn.PortAudioSoundIn
   fullName: SilverCraft.CSCore.SoundIn.PortAudioSoundIn
   nameWithType: PortAudioSoundIn
-- uid: SilverCraft.CSCore.SoundIn.PortAudioSoundIn.#ctor(System.Int32,System.Int32)
-  name: PortAudioSoundIn(int, int)
-  href: api/SilverCraft.CSCore.SoundIn.PortAudioSoundIn.html#SilverCraft_CSCore_SoundIn_PortAudioSoundIn__ctor_System_Int32_System_Int32_
-  commentId: M:SilverCraft.CSCore.SoundIn.PortAudioSoundIn.#ctor(System.Int32,System.Int32)
-  name.vb: New(Integer, Integer)
-  fullName: SilverCraft.CSCore.SoundIn.PortAudioSoundIn.PortAudioSoundIn(int, int)
-  fullName.vb: SilverCraft.CSCore.SoundIn.PortAudioSoundIn.New(Integer, Integer)
-  nameWithType: PortAudioSoundIn.PortAudioSoundIn(int, int)
-  nameWithType.vb: PortAudioSoundIn.New(Integer, Integer)
+- uid: SilverCraft.CSCore.SoundIn.PortAudioSoundIn.#ctor(System.Int32,System.Int32,System.String)
+  name: PortAudioSoundIn(int, int, string?)
+  href: api/SilverCraft.CSCore.SoundIn.PortAudioSoundIn.html#SilverCraft_CSCore_SoundIn_PortAudioSoundIn__ctor_System_Int32_System_Int32_System_String_
+  commentId: M:SilverCraft.CSCore.SoundIn.PortAudioSoundIn.#ctor(System.Int32,System.Int32,System.String)
+  name.vb: New(Integer, Integer, String)
+  fullName: SilverCraft.CSCore.SoundIn.PortAudioSoundIn.PortAudioSoundIn(int, int, string?)
+  fullName.vb: SilverCraft.CSCore.SoundIn.PortAudioSoundIn.New(Integer, Integer, String)
+  nameWithType: PortAudioSoundIn.PortAudioSoundIn(int, int, string?)
+  nameWithType.vb: PortAudioSoundIn.New(Integer, Integer, String)
 - uid: SilverCraft.CSCore.SoundIn.PortAudioSoundIn.#ctor*
   name: PortAudioSoundIn
   href: api/SilverCraft.CSCore.SoundIn.PortAudioSoundIn.html#SilverCraft_CSCore_SoundIn_PortAudioSoundIn__ctor_
@@ -11457,6 +11457,12 @@ references:
   commentId: E:SilverCraft.CSCore.SoundIn.PortAudioSoundIn.DataAvailable
   fullName: SilverCraft.CSCore.SoundIn.PortAudioSoundIn.DataAvailable
   nameWithType: PortAudioSoundIn.DataAvailable
+- uid: SilverCraft.CSCore.SoundIn.PortAudioSoundIn.DefaultDeviceLabel
+  name: DefaultDeviceLabel
+  href: api/SilverCraft.CSCore.SoundIn.PortAudioSoundIn.html#SilverCraft_CSCore_SoundIn_PortAudioSoundIn_DefaultDeviceLabel
+  commentId: F:SilverCraft.CSCore.SoundIn.PortAudioSoundIn.DefaultDeviceLabel
+  fullName: SilverCraft.CSCore.SoundIn.PortAudioSoundIn.DefaultDeviceLabel
+  nameWithType: PortAudioSoundIn.DefaultDeviceLabel
 - uid: SilverCraft.CSCore.SoundIn.PortAudioSoundIn.Dispose
   name: Dispose()
   href: api/SilverCraft.CSCore.SoundIn.PortAudioSoundIn.html#SilverCraft_CSCore_SoundIn_PortAudioSoundIn_Dispose
@@ -11495,6 +11501,19 @@ references:
   isSpec: "True"
   fullName: SilverCraft.CSCore.SoundIn.PortAudioSoundIn.~PortAudioSoundIn
   nameWithType: PortAudioSoundIn.~PortAudioSoundIn
+- uid: SilverCraft.CSCore.SoundIn.PortAudioSoundIn.GetInputDeviceNames
+  name: GetInputDeviceNames()
+  href: api/SilverCraft.CSCore.SoundIn.PortAudioSoundIn.html#SilverCraft_CSCore_SoundIn_PortAudioSoundIn_GetInputDeviceNames
+  commentId: M:SilverCraft.CSCore.SoundIn.PortAudioSoundIn.GetInputDeviceNames
+  fullName: SilverCraft.CSCore.SoundIn.PortAudioSoundIn.GetInputDeviceNames()
+  nameWithType: PortAudioSoundIn.GetInputDeviceNames()
+- uid: SilverCraft.CSCore.SoundIn.PortAudioSoundIn.GetInputDeviceNames*
+  name: GetInputDeviceNames
+  href: api/SilverCraft.CSCore.SoundIn.PortAudioSoundIn.html#SilverCraft_CSCore_SoundIn_PortAudioSoundIn_GetInputDeviceNames_
+  commentId: Overload:SilverCraft.CSCore.SoundIn.PortAudioSoundIn.GetInputDeviceNames
+  isSpec: "True"
+  fullName: SilverCraft.CSCore.SoundIn.PortAudioSoundIn.GetInputDeviceNames
+  nameWithType: PortAudioSoundIn.GetInputDeviceNames
 - uid: SilverCraft.CSCore.SoundIn.PortAudioSoundIn.Initialize
   name: Initialize()
   href: api/SilverCraft.CSCore.SoundIn.PortAudioSoundIn.html#SilverCraft_CSCore_SoundIn_PortAudioSoundIn_Initialize
@@ -11508,6 +11527,19 @@ references:
   isSpec: "True"
   fullName: SilverCraft.CSCore.SoundIn.PortAudioSoundIn.Initialize
   nameWithType: PortAudioSoundIn.Initialize
+- uid: SilverCraft.CSCore.SoundIn.PortAudioSoundIn.IsSupported
+  name: IsSupported()
+  href: api/SilverCraft.CSCore.SoundIn.PortAudioSoundIn.html#SilverCraft_CSCore_SoundIn_PortAudioSoundIn_IsSupported
+  commentId: M:SilverCraft.CSCore.SoundIn.PortAudioSoundIn.IsSupported
+  fullName: SilverCraft.CSCore.SoundIn.PortAudioSoundIn.IsSupported()
+  nameWithType: PortAudioSoundIn.IsSupported()
+- uid: SilverCraft.CSCore.SoundIn.PortAudioSoundIn.IsSupported*
+  name: IsSupported
+  href: api/SilverCraft.CSCore.SoundIn.PortAudioSoundIn.html#SilverCraft_CSCore_SoundIn_PortAudioSoundIn_IsSupported_
+  commentId: Overload:SilverCraft.CSCore.SoundIn.PortAudioSoundIn.IsSupported
+  isSpec: "True"
+  fullName: SilverCraft.CSCore.SoundIn.PortAudioSoundIn.IsSupported
+  nameWithType: PortAudioSoundIn.IsSupported
 - uid: SilverCraft.CSCore.SoundIn.PortAudioSoundIn.OnStreamFinished(System.Void*)
   name: OnStreamFinished(void*)
   href: api/SilverCraft.CSCore.SoundIn.PortAudioSoundIn.html#SilverCraft_CSCore_SoundIn_PortAudioSoundIn_OnStreamFinished_System_Void__
@@ -11524,6 +11556,19 @@ references:
   isSpec: "True"
   fullName: SilverCraft.CSCore.SoundIn.PortAudioSoundIn.OnStreamFinished
   nameWithType: PortAudioSoundIn.OnStreamFinished
+- uid: SilverCraft.CSCore.SoundIn.PortAudioSoundIn.PreferredDevice
+  name: PreferredDevice
+  href: api/SilverCraft.CSCore.SoundIn.PortAudioSoundIn.html#SilverCraft_CSCore_SoundIn_PortAudioSoundIn_PreferredDevice
+  commentId: P:SilverCraft.CSCore.SoundIn.PortAudioSoundIn.PreferredDevice
+  fullName: SilverCraft.CSCore.SoundIn.PortAudioSoundIn.PreferredDevice
+  nameWithType: PortAudioSoundIn.PreferredDevice
+- uid: SilverCraft.CSCore.SoundIn.PortAudioSoundIn.PreferredDevice*
+  name: PreferredDevice
+  href: api/SilverCraft.CSCore.SoundIn.PortAudioSoundIn.html#SilverCraft_CSCore_SoundIn_PortAudioSoundIn_PreferredDevice_
+  commentId: Overload:SilverCraft.CSCore.SoundIn.PortAudioSoundIn.PreferredDevice
+  isSpec: "True"
+  fullName: SilverCraft.CSCore.SoundIn.PortAudioSoundIn.PreferredDevice
+  nameWithType: PortAudioSoundIn.PreferredDevice
 - uid: SilverCraft.CSCore.SoundIn.PortAudioSoundIn.RecordingState
   name: RecordingState
   href: api/SilverCraft.CSCore.SoundIn.PortAudioSoundIn.html#SilverCraft_CSCore_SoundIn_PortAudioSoundIn_RecordingState
@@ -12831,6 +12876,237 @@ references:
   isSpec: "True"
   fullName: SilverCraft.CSCore.SoundOut.ALSoundOut.WaveSource
   nameWithType: ALSoundOut.WaveSource
+- uid: SilverCraft.CSCore.SoundOut.BufferedPortAudioSoundOut
+  name: BufferedPortAudioSoundOut
+  href: api/SilverCraft.CSCore.SoundOut.BufferedPortAudioSoundOut.html
+  commentId: T:SilverCraft.CSCore.SoundOut.BufferedPortAudioSoundOut
+  fullName: SilverCraft.CSCore.SoundOut.BufferedPortAudioSoundOut
+  nameWithType: BufferedPortAudioSoundOut
+- uid: SilverCraft.CSCore.SoundOut.BufferedPortAudioSoundOut.#ctor(System.String,System.Nullable{System.TimeSpan},System.Nullable{System.TimeSpan})
+  name: BufferedPortAudioSoundOut(string?, TimeSpan?, TimeSpan?)
+  href: api/SilverCraft.CSCore.SoundOut.BufferedPortAudioSoundOut.html#SilverCraft_CSCore_SoundOut_BufferedPortAudioSoundOut__ctor_System_String_System_Nullable_System_TimeSpan__System_Nullable_System_TimeSpan__
+  commentId: M:SilverCraft.CSCore.SoundOut.BufferedPortAudioSoundOut.#ctor(System.String,System.Nullable{System.TimeSpan},System.Nullable{System.TimeSpan})
+  name.vb: New(String, TimeSpan?, TimeSpan?)
+  fullName: SilverCraft.CSCore.SoundOut.BufferedPortAudioSoundOut.BufferedPortAudioSoundOut(string?, System.TimeSpan?, System.TimeSpan?)
+  fullName.vb: SilverCraft.CSCore.SoundOut.BufferedPortAudioSoundOut.New(String, System.TimeSpan?, System.TimeSpan?)
+  nameWithType: BufferedPortAudioSoundOut.BufferedPortAudioSoundOut(string?, TimeSpan?, TimeSpan?)
+  nameWithType.vb: BufferedPortAudioSoundOut.New(String, TimeSpan?, TimeSpan?)
+- uid: SilverCraft.CSCore.SoundOut.BufferedPortAudioSoundOut.#ctor*
+  name: BufferedPortAudioSoundOut
+  href: api/SilverCraft.CSCore.SoundOut.BufferedPortAudioSoundOut.html#SilverCraft_CSCore_SoundOut_BufferedPortAudioSoundOut__ctor_
+  commentId: Overload:SilverCraft.CSCore.SoundOut.BufferedPortAudioSoundOut.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: SilverCraft.CSCore.SoundOut.BufferedPortAudioSoundOut.BufferedPortAudioSoundOut
+  fullName.vb: SilverCraft.CSCore.SoundOut.BufferedPortAudioSoundOut.New
+  nameWithType: BufferedPortAudioSoundOut.BufferedPortAudioSoundOut
+  nameWithType.vb: BufferedPortAudioSoundOut.New
+- uid: SilverCraft.CSCore.SoundOut.BufferedPortAudioSoundOut.DefaultDeviceLabel
+  name: DefaultDeviceLabel
+  href: api/SilverCraft.CSCore.SoundOut.BufferedPortAudioSoundOut.html#SilverCraft_CSCore_SoundOut_BufferedPortAudioSoundOut_DefaultDeviceLabel
+  commentId: F:SilverCraft.CSCore.SoundOut.BufferedPortAudioSoundOut.DefaultDeviceLabel
+  fullName: SilverCraft.CSCore.SoundOut.BufferedPortAudioSoundOut.DefaultDeviceLabel
+  nameWithType: BufferedPortAudioSoundOut.DefaultDeviceLabel
+- uid: SilverCraft.CSCore.SoundOut.BufferedPortAudioSoundOut.Dispose
+  name: Dispose()
+  href: api/SilverCraft.CSCore.SoundOut.BufferedPortAudioSoundOut.html#SilverCraft_CSCore_SoundOut_BufferedPortAudioSoundOut_Dispose
+  commentId: M:SilverCraft.CSCore.SoundOut.BufferedPortAudioSoundOut.Dispose
+  fullName: SilverCraft.CSCore.SoundOut.BufferedPortAudioSoundOut.Dispose()
+  nameWithType: BufferedPortAudioSoundOut.Dispose()
+- uid: SilverCraft.CSCore.SoundOut.BufferedPortAudioSoundOut.Dispose(System.Boolean)
+  name: Dispose(bool)
+  href: api/SilverCraft.CSCore.SoundOut.BufferedPortAudioSoundOut.html#SilverCraft_CSCore_SoundOut_BufferedPortAudioSoundOut_Dispose_System_Boolean_
+  commentId: M:SilverCraft.CSCore.SoundOut.BufferedPortAudioSoundOut.Dispose(System.Boolean)
+  name.vb: Dispose(Boolean)
+  fullName: SilverCraft.CSCore.SoundOut.BufferedPortAudioSoundOut.Dispose(bool)
+  fullName.vb: SilverCraft.CSCore.SoundOut.BufferedPortAudioSoundOut.Dispose(Boolean)
+  nameWithType: BufferedPortAudioSoundOut.Dispose(bool)
+  nameWithType.vb: BufferedPortAudioSoundOut.Dispose(Boolean)
+- uid: SilverCraft.CSCore.SoundOut.BufferedPortAudioSoundOut.Dispose*
+  name: Dispose
+  href: api/SilverCraft.CSCore.SoundOut.BufferedPortAudioSoundOut.html#SilverCraft_CSCore_SoundOut_BufferedPortAudioSoundOut_Dispose_
+  commentId: Overload:SilverCraft.CSCore.SoundOut.BufferedPortAudioSoundOut.Dispose
+  isSpec: "True"
+  fullName: SilverCraft.CSCore.SoundOut.BufferedPortAudioSoundOut.Dispose
+  nameWithType: BufferedPortAudioSoundOut.Dispose
+- uid: SilverCraft.CSCore.SoundOut.BufferedPortAudioSoundOut.ExecuteSeek(System.Action)
+  name: ExecuteSeek(Action)
+  href: api/SilverCraft.CSCore.SoundOut.BufferedPortAudioSoundOut.html#SilverCraft_CSCore_SoundOut_BufferedPortAudioSoundOut_ExecuteSeek_System_Action_
+  commentId: M:SilverCraft.CSCore.SoundOut.BufferedPortAudioSoundOut.ExecuteSeek(System.Action)
+  fullName: SilverCraft.CSCore.SoundOut.BufferedPortAudioSoundOut.ExecuteSeek(System.Action)
+  nameWithType: BufferedPortAudioSoundOut.ExecuteSeek(Action)
+- uid: SilverCraft.CSCore.SoundOut.BufferedPortAudioSoundOut.ExecuteSeek*
+  name: ExecuteSeek
+  href: api/SilverCraft.CSCore.SoundOut.BufferedPortAudioSoundOut.html#SilverCraft_CSCore_SoundOut_BufferedPortAudioSoundOut_ExecuteSeek_
+  commentId: Overload:SilverCraft.CSCore.SoundOut.BufferedPortAudioSoundOut.ExecuteSeek
+  isSpec: "True"
+  fullName: SilverCraft.CSCore.SoundOut.BufferedPortAudioSoundOut.ExecuteSeek
+  nameWithType: BufferedPortAudioSoundOut.ExecuteSeek
+- uid: SilverCraft.CSCore.SoundOut.BufferedPortAudioSoundOut.Finalize
+  name: ~BufferedPortAudioSoundOut()
+  href: api/SilverCraft.CSCore.SoundOut.BufferedPortAudioSoundOut.html#SilverCraft_CSCore_SoundOut_BufferedPortAudioSoundOut_Finalize
+  commentId: M:SilverCraft.CSCore.SoundOut.BufferedPortAudioSoundOut.Finalize
+  name.vb: ''
+  fullName: SilverCraft.CSCore.SoundOut.BufferedPortAudioSoundOut.~BufferedPortAudioSoundOut()
+  fullName.vb: ''
+  nameWithType: BufferedPortAudioSoundOut.~BufferedPortAudioSoundOut()
+  nameWithType.vb: ''
+- uid: SilverCraft.CSCore.SoundOut.BufferedPortAudioSoundOut.Finalize*
+  name: ~BufferedPortAudioSoundOut
+  href: api/SilverCraft.CSCore.SoundOut.BufferedPortAudioSoundOut.html#SilverCraft_CSCore_SoundOut_BufferedPortAudioSoundOut_Finalize_
+  commentId: Overload:SilverCraft.CSCore.SoundOut.BufferedPortAudioSoundOut.Finalize
+  isSpec: "True"
+  fullName: SilverCraft.CSCore.SoundOut.BufferedPortAudioSoundOut.~BufferedPortAudioSoundOut
+  nameWithType: BufferedPortAudioSoundOut.~BufferedPortAudioSoundOut
+- uid: SilverCraft.CSCore.SoundOut.BufferedPortAudioSoundOut.GetOutputDeviceNames
+  name: GetOutputDeviceNames()
+  href: api/SilverCraft.CSCore.SoundOut.BufferedPortAudioSoundOut.html#SilverCraft_CSCore_SoundOut_BufferedPortAudioSoundOut_GetOutputDeviceNames
+  commentId: M:SilverCraft.CSCore.SoundOut.BufferedPortAudioSoundOut.GetOutputDeviceNames
+  fullName: SilverCraft.CSCore.SoundOut.BufferedPortAudioSoundOut.GetOutputDeviceNames()
+  nameWithType: BufferedPortAudioSoundOut.GetOutputDeviceNames()
+- uid: SilverCraft.CSCore.SoundOut.BufferedPortAudioSoundOut.GetOutputDeviceNames*
+  name: GetOutputDeviceNames
+  href: api/SilverCraft.CSCore.SoundOut.BufferedPortAudioSoundOut.html#SilverCraft_CSCore_SoundOut_BufferedPortAudioSoundOut_GetOutputDeviceNames_
+  commentId: Overload:SilverCraft.CSCore.SoundOut.BufferedPortAudioSoundOut.GetOutputDeviceNames
+  isSpec: "True"
+  fullName: SilverCraft.CSCore.SoundOut.BufferedPortAudioSoundOut.GetOutputDeviceNames
+  nameWithType: BufferedPortAudioSoundOut.GetOutputDeviceNames
+- uid: SilverCraft.CSCore.SoundOut.BufferedPortAudioSoundOut.Initialize(SilverCraft.CSCore.IWaveSource)
+  name: Initialize(IWaveSource)
+  href: api/SilverCraft.CSCore.SoundOut.BufferedPortAudioSoundOut.html#SilverCraft_CSCore_SoundOut_BufferedPortAudioSoundOut_Initialize_SilverCraft_CSCore_IWaveSource_
+  commentId: M:SilverCraft.CSCore.SoundOut.BufferedPortAudioSoundOut.Initialize(SilverCraft.CSCore.IWaveSource)
+  fullName: SilverCraft.CSCore.SoundOut.BufferedPortAudioSoundOut.Initialize(SilverCraft.CSCore.IWaveSource)
+  nameWithType: BufferedPortAudioSoundOut.Initialize(IWaveSource)
+- uid: SilverCraft.CSCore.SoundOut.BufferedPortAudioSoundOut.Initialize*
+  name: Initialize
+  href: api/SilverCraft.CSCore.SoundOut.BufferedPortAudioSoundOut.html#SilverCraft_CSCore_SoundOut_BufferedPortAudioSoundOut_Initialize_
+  commentId: Overload:SilverCraft.CSCore.SoundOut.BufferedPortAudioSoundOut.Initialize
+  isSpec: "True"
+  fullName: SilverCraft.CSCore.SoundOut.BufferedPortAudioSoundOut.Initialize
+  nameWithType: BufferedPortAudioSoundOut.Initialize
+- uid: SilverCraft.CSCore.SoundOut.BufferedPortAudioSoundOut.IsSupported
+  name: IsSupported()
+  href: api/SilverCraft.CSCore.SoundOut.BufferedPortAudioSoundOut.html#SilverCraft_CSCore_SoundOut_BufferedPortAudioSoundOut_IsSupported
+  commentId: M:SilverCraft.CSCore.SoundOut.BufferedPortAudioSoundOut.IsSupported
+  fullName: SilverCraft.CSCore.SoundOut.BufferedPortAudioSoundOut.IsSupported()
+  nameWithType: BufferedPortAudioSoundOut.IsSupported()
+- uid: SilverCraft.CSCore.SoundOut.BufferedPortAudioSoundOut.IsSupported*
+  name: IsSupported
+  href: api/SilverCraft.CSCore.SoundOut.BufferedPortAudioSoundOut.html#SilverCraft_CSCore_SoundOut_BufferedPortAudioSoundOut_IsSupported_
+  commentId: Overload:SilverCraft.CSCore.SoundOut.BufferedPortAudioSoundOut.IsSupported
+  isSpec: "True"
+  fullName: SilverCraft.CSCore.SoundOut.BufferedPortAudioSoundOut.IsSupported
+  nameWithType: BufferedPortAudioSoundOut.IsSupported
+- uid: SilverCraft.CSCore.SoundOut.BufferedPortAudioSoundOut.OutputLatency
+  name: OutputLatency
+  href: api/SilverCraft.CSCore.SoundOut.BufferedPortAudioSoundOut.html#SilverCraft_CSCore_SoundOut_BufferedPortAudioSoundOut_OutputLatency
+  commentId: P:SilverCraft.CSCore.SoundOut.BufferedPortAudioSoundOut.OutputLatency
+  fullName: SilverCraft.CSCore.SoundOut.BufferedPortAudioSoundOut.OutputLatency
+  nameWithType: BufferedPortAudioSoundOut.OutputLatency
+- uid: SilverCraft.CSCore.SoundOut.BufferedPortAudioSoundOut.OutputLatency*
+  name: OutputLatency
+  href: api/SilverCraft.CSCore.SoundOut.BufferedPortAudioSoundOut.html#SilverCraft_CSCore_SoundOut_BufferedPortAudioSoundOut_OutputLatency_
+  commentId: Overload:SilverCraft.CSCore.SoundOut.BufferedPortAudioSoundOut.OutputLatency
+  isSpec: "True"
+  fullName: SilverCraft.CSCore.SoundOut.BufferedPortAudioSoundOut.OutputLatency
+  nameWithType: BufferedPortAudioSoundOut.OutputLatency
+- uid: SilverCraft.CSCore.SoundOut.BufferedPortAudioSoundOut.Pause
+  name: Pause()
+  href: api/SilverCraft.CSCore.SoundOut.BufferedPortAudioSoundOut.html#SilverCraft_CSCore_SoundOut_BufferedPortAudioSoundOut_Pause
+  commentId: M:SilverCraft.CSCore.SoundOut.BufferedPortAudioSoundOut.Pause
+  fullName: SilverCraft.CSCore.SoundOut.BufferedPortAudioSoundOut.Pause()
+  nameWithType: BufferedPortAudioSoundOut.Pause()
+- uid: SilverCraft.CSCore.SoundOut.BufferedPortAudioSoundOut.Pause*
+  name: Pause
+  href: api/SilverCraft.CSCore.SoundOut.BufferedPortAudioSoundOut.html#SilverCraft_CSCore_SoundOut_BufferedPortAudioSoundOut_Pause_
+  commentId: Overload:SilverCraft.CSCore.SoundOut.BufferedPortAudioSoundOut.Pause
+  isSpec: "True"
+  fullName: SilverCraft.CSCore.SoundOut.BufferedPortAudioSoundOut.Pause
+  nameWithType: BufferedPortAudioSoundOut.Pause
+- uid: SilverCraft.CSCore.SoundOut.BufferedPortAudioSoundOut.Play
+  name: Play()
+  href: api/SilverCraft.CSCore.SoundOut.BufferedPortAudioSoundOut.html#SilverCraft_CSCore_SoundOut_BufferedPortAudioSoundOut_Play
+  commentId: M:SilverCraft.CSCore.SoundOut.BufferedPortAudioSoundOut.Play
+  fullName: SilverCraft.CSCore.SoundOut.BufferedPortAudioSoundOut.Play()
+  nameWithType: BufferedPortAudioSoundOut.Play()
+- uid: SilverCraft.CSCore.SoundOut.BufferedPortAudioSoundOut.Play*
+  name: Play
+  href: api/SilverCraft.CSCore.SoundOut.BufferedPortAudioSoundOut.html#SilverCraft_CSCore_SoundOut_BufferedPortAudioSoundOut_Play_
+  commentId: Overload:SilverCraft.CSCore.SoundOut.BufferedPortAudioSoundOut.Play
+  isSpec: "True"
+  fullName: SilverCraft.CSCore.SoundOut.BufferedPortAudioSoundOut.Play
+  nameWithType: BufferedPortAudioSoundOut.Play
+- uid: SilverCraft.CSCore.SoundOut.BufferedPortAudioSoundOut.PlaybackState
+  name: PlaybackState
+  href: api/SilverCraft.CSCore.SoundOut.BufferedPortAudioSoundOut.html#SilverCraft_CSCore_SoundOut_BufferedPortAudioSoundOut_PlaybackState
+  commentId: P:SilverCraft.CSCore.SoundOut.BufferedPortAudioSoundOut.PlaybackState
+  fullName: SilverCraft.CSCore.SoundOut.BufferedPortAudioSoundOut.PlaybackState
+  nameWithType: BufferedPortAudioSoundOut.PlaybackState
+- uid: SilverCraft.CSCore.SoundOut.BufferedPortAudioSoundOut.PlaybackState*
+  name: PlaybackState
+  href: api/SilverCraft.CSCore.SoundOut.BufferedPortAudioSoundOut.html#SilverCraft_CSCore_SoundOut_BufferedPortAudioSoundOut_PlaybackState_
+  commentId: Overload:SilverCraft.CSCore.SoundOut.BufferedPortAudioSoundOut.PlaybackState
+  isSpec: "True"
+  fullName: SilverCraft.CSCore.SoundOut.BufferedPortAudioSoundOut.PlaybackState
+  nameWithType: BufferedPortAudioSoundOut.PlaybackState
+- uid: SilverCraft.CSCore.SoundOut.BufferedPortAudioSoundOut.Resume
+  name: Resume()
+  href: api/SilverCraft.CSCore.SoundOut.BufferedPortAudioSoundOut.html#SilverCraft_CSCore_SoundOut_BufferedPortAudioSoundOut_Resume
+  commentId: M:SilverCraft.CSCore.SoundOut.BufferedPortAudioSoundOut.Resume
+  fullName: SilverCraft.CSCore.SoundOut.BufferedPortAudioSoundOut.Resume()
+  nameWithType: BufferedPortAudioSoundOut.Resume()
+- uid: SilverCraft.CSCore.SoundOut.BufferedPortAudioSoundOut.Resume*
+  name: Resume
+  href: api/SilverCraft.CSCore.SoundOut.BufferedPortAudioSoundOut.html#SilverCraft_CSCore_SoundOut_BufferedPortAudioSoundOut_Resume_
+  commentId: Overload:SilverCraft.CSCore.SoundOut.BufferedPortAudioSoundOut.Resume
+  isSpec: "True"
+  fullName: SilverCraft.CSCore.SoundOut.BufferedPortAudioSoundOut.Resume
+  nameWithType: BufferedPortAudioSoundOut.Resume
+- uid: SilverCraft.CSCore.SoundOut.BufferedPortAudioSoundOut.Stop
+  name: Stop()
+  href: api/SilverCraft.CSCore.SoundOut.BufferedPortAudioSoundOut.html#SilverCraft_CSCore_SoundOut_BufferedPortAudioSoundOut_Stop
+  commentId: M:SilverCraft.CSCore.SoundOut.BufferedPortAudioSoundOut.Stop
+  fullName: SilverCraft.CSCore.SoundOut.BufferedPortAudioSoundOut.Stop()
+  nameWithType: BufferedPortAudioSoundOut.Stop()
+- uid: SilverCraft.CSCore.SoundOut.BufferedPortAudioSoundOut.Stop*
+  name: Stop
+  href: api/SilverCraft.CSCore.SoundOut.BufferedPortAudioSoundOut.html#SilverCraft_CSCore_SoundOut_BufferedPortAudioSoundOut_Stop_
+  commentId: Overload:SilverCraft.CSCore.SoundOut.BufferedPortAudioSoundOut.Stop
+  isSpec: "True"
+  fullName: SilverCraft.CSCore.SoundOut.BufferedPortAudioSoundOut.Stop
+  nameWithType: BufferedPortAudioSoundOut.Stop
+- uid: SilverCraft.CSCore.SoundOut.BufferedPortAudioSoundOut.Stopped
+  name: Stopped
+  href: api/SilverCraft.CSCore.SoundOut.BufferedPortAudioSoundOut.html#SilverCraft_CSCore_SoundOut_BufferedPortAudioSoundOut_Stopped
+  commentId: E:SilverCraft.CSCore.SoundOut.BufferedPortAudioSoundOut.Stopped
+  fullName: SilverCraft.CSCore.SoundOut.BufferedPortAudioSoundOut.Stopped
+  nameWithType: BufferedPortAudioSoundOut.Stopped
+- uid: SilverCraft.CSCore.SoundOut.BufferedPortAudioSoundOut.Volume
+  name: Volume
+  href: api/SilverCraft.CSCore.SoundOut.BufferedPortAudioSoundOut.html#SilverCraft_CSCore_SoundOut_BufferedPortAudioSoundOut_Volume
+  commentId: P:SilverCraft.CSCore.SoundOut.BufferedPortAudioSoundOut.Volume
+  fullName: SilverCraft.CSCore.SoundOut.BufferedPortAudioSoundOut.Volume
+  nameWithType: BufferedPortAudioSoundOut.Volume
+- uid: SilverCraft.CSCore.SoundOut.BufferedPortAudioSoundOut.Volume*
+  name: Volume
+  href: api/SilverCraft.CSCore.SoundOut.BufferedPortAudioSoundOut.html#SilverCraft_CSCore_SoundOut_BufferedPortAudioSoundOut_Volume_
+  commentId: Overload:SilverCraft.CSCore.SoundOut.BufferedPortAudioSoundOut.Volume
+  isSpec: "True"
+  fullName: SilverCraft.CSCore.SoundOut.BufferedPortAudioSoundOut.Volume
+  nameWithType: BufferedPortAudioSoundOut.Volume
+- uid: SilverCraft.CSCore.SoundOut.BufferedPortAudioSoundOut.WaveSource
+  name: WaveSource
+  href: api/SilverCraft.CSCore.SoundOut.BufferedPortAudioSoundOut.html#SilverCraft_CSCore_SoundOut_BufferedPortAudioSoundOut_WaveSource
+  commentId: P:SilverCraft.CSCore.SoundOut.BufferedPortAudioSoundOut.WaveSource
+  fullName: SilverCraft.CSCore.SoundOut.BufferedPortAudioSoundOut.WaveSource
+  nameWithType: BufferedPortAudioSoundOut.WaveSource
+- uid: SilverCraft.CSCore.SoundOut.BufferedPortAudioSoundOut.WaveSource*
+  name: WaveSource
+  href: api/SilverCraft.CSCore.SoundOut.BufferedPortAudioSoundOut.html#SilverCraft_CSCore_SoundOut_BufferedPortAudioSoundOut_WaveSource_
+  commentId: Overload:SilverCraft.CSCore.SoundOut.BufferedPortAudioSoundOut.WaveSource
+  isSpec: "True"
+  fullName: SilverCraft.CSCore.SoundOut.BufferedPortAudioSoundOut.WaveSource
+  nameWithType: BufferedPortAudioSoundOut.WaveSource
 - uid: SilverCraft.CSCore.SoundOut.ISoundOut
   name: ISoundOut
   href: api/SilverCraft.CSCore.SoundOut.ISoundOut.html
@@ -13020,6 +13296,15 @@ references:
   fullName.vb: SilverCraft.CSCore.SoundOut.PortAudioSoundOut.New()
   nameWithType: PortAudioSoundOut.PortAudioSoundOut()
   nameWithType.vb: PortAudioSoundOut.New()
+- uid: SilverCraft.CSCore.SoundOut.PortAudioSoundOut.#ctor(System.String)
+  name: PortAudioSoundOut(string?)
+  href: api/SilverCraft.CSCore.SoundOut.PortAudioSoundOut.html#SilverCraft_CSCore_SoundOut_PortAudioSoundOut__ctor_System_String_
+  commentId: M:SilverCraft.CSCore.SoundOut.PortAudioSoundOut.#ctor(System.String)
+  name.vb: New(String)
+  fullName: SilverCraft.CSCore.SoundOut.PortAudioSoundOut.PortAudioSoundOut(string?)
+  fullName.vb: SilverCraft.CSCore.SoundOut.PortAudioSoundOut.New(String)
+  nameWithType: PortAudioSoundOut.PortAudioSoundOut(string?)
+  nameWithType.vb: PortAudioSoundOut.New(String)
 - uid: SilverCraft.CSCore.SoundOut.PortAudioSoundOut.#ctor*
   name: PortAudioSoundOut
   href: api/SilverCraft.CSCore.SoundOut.PortAudioSoundOut.html#SilverCraft_CSCore_SoundOut_PortAudioSoundOut__ctor_
@@ -13030,6 +13315,12 @@ references:
   fullName.vb: SilverCraft.CSCore.SoundOut.PortAudioSoundOut.New
   nameWithType: PortAudioSoundOut.PortAudioSoundOut
   nameWithType.vb: PortAudioSoundOut.New
+- uid: SilverCraft.CSCore.SoundOut.PortAudioSoundOut.DefaultDeviceLabel
+  name: DefaultDeviceLabel
+  href: api/SilverCraft.CSCore.SoundOut.PortAudioSoundOut.html#SilverCraft_CSCore_SoundOut_PortAudioSoundOut_DefaultDeviceLabel
+  commentId: F:SilverCraft.CSCore.SoundOut.PortAudioSoundOut.DefaultDeviceLabel
+  fullName: SilverCraft.CSCore.SoundOut.PortAudioSoundOut.DefaultDeviceLabel
+  nameWithType: PortAudioSoundOut.DefaultDeviceLabel
 - uid: SilverCraft.CSCore.SoundOut.PortAudioSoundOut.Dispose
   name: Dispose()
   href: api/SilverCraft.CSCore.SoundOut.PortAudioSoundOut.html#SilverCraft_CSCore_SoundOut_PortAudioSoundOut_Dispose
@@ -13068,6 +13359,19 @@ references:
   isSpec: "True"
   fullName: SilverCraft.CSCore.SoundOut.PortAudioSoundOut.~PortAudioSoundOut
   nameWithType: PortAudioSoundOut.~PortAudioSoundOut
+- uid: SilverCraft.CSCore.SoundOut.PortAudioSoundOut.GetOutputDeviceNames
+  name: GetOutputDeviceNames()
+  href: api/SilverCraft.CSCore.SoundOut.PortAudioSoundOut.html#SilverCraft_CSCore_SoundOut_PortAudioSoundOut_GetOutputDeviceNames
+  commentId: M:SilverCraft.CSCore.SoundOut.PortAudioSoundOut.GetOutputDeviceNames
+  fullName: SilverCraft.CSCore.SoundOut.PortAudioSoundOut.GetOutputDeviceNames()
+  nameWithType: PortAudioSoundOut.GetOutputDeviceNames()
+- uid: SilverCraft.CSCore.SoundOut.PortAudioSoundOut.GetOutputDeviceNames*
+  name: GetOutputDeviceNames
+  href: api/SilverCraft.CSCore.SoundOut.PortAudioSoundOut.html#SilverCraft_CSCore_SoundOut_PortAudioSoundOut_GetOutputDeviceNames_
+  commentId: Overload:SilverCraft.CSCore.SoundOut.PortAudioSoundOut.GetOutputDeviceNames
+  isSpec: "True"
+  fullName: SilverCraft.CSCore.SoundOut.PortAudioSoundOut.GetOutputDeviceNames
+  nameWithType: PortAudioSoundOut.GetOutputDeviceNames
 - uid: SilverCraft.CSCore.SoundOut.PortAudioSoundOut.Initialize(SilverCraft.CSCore.IWaveSource)
   name: Initialize(IWaveSource)
   href: api/SilverCraft.CSCore.SoundOut.PortAudioSoundOut.html#SilverCraft_CSCore_SoundOut_PortAudioSoundOut_Initialize_SilverCraft_CSCore_IWaveSource_
@@ -13133,6 +13437,19 @@ references:
   isSpec: "True"
   fullName: SilverCraft.CSCore.SoundOut.PortAudioSoundOut.PlaybackState
   nameWithType: PortAudioSoundOut.PlaybackState
+- uid: SilverCraft.CSCore.SoundOut.PortAudioSoundOut.PreferredDevice
+  name: PreferredDevice
+  href: api/SilverCraft.CSCore.SoundOut.PortAudioSoundOut.html#SilverCraft_CSCore_SoundOut_PortAudioSoundOut_PreferredDevice
+  commentId: P:SilverCraft.CSCore.SoundOut.PortAudioSoundOut.PreferredDevice
+  fullName: SilverCraft.CSCore.SoundOut.PortAudioSoundOut.PreferredDevice
+  nameWithType: PortAudioSoundOut.PreferredDevice
+- uid: SilverCraft.CSCore.SoundOut.PortAudioSoundOut.PreferredDevice*
+  name: PreferredDevice
+  href: api/SilverCraft.CSCore.SoundOut.PortAudioSoundOut.html#SilverCraft_CSCore_SoundOut_PortAudioSoundOut_PreferredDevice_
+  commentId: Overload:SilverCraft.CSCore.SoundOut.PortAudioSoundOut.PreferredDevice
+  isSpec: "True"
+  fullName: SilverCraft.CSCore.SoundOut.PortAudioSoundOut.PreferredDevice
+  nameWithType: PortAudioSoundOut.PreferredDevice
 - uid: SilverCraft.CSCore.SoundOut.PortAudioSoundOut.Resume
   name: Resume()
   href: api/SilverCraft.CSCore.SoundOut.PortAudioSoundOut.html#SilverCraft_CSCore_SoundOut_PortAudioSoundOut_Resume
@@ -21145,6 +21462,252 @@ references:
   isSpec: "True"
   fullName: SilverCraft.CSCore.Tests.AudioReadOffsetTests.WaveToSampleKinds
   nameWithType: AudioReadOffsetTests.WaveToSampleKinds
+- uid: SilverCraft.CSCore.Tests.BufferedPortAudioSoundOutTests
+  name: BufferedPortAudioSoundOutTests
+  href: api/SilverCraft.CSCore.Tests.BufferedPortAudioSoundOutTests.html
+  commentId: T:SilverCraft.CSCore.Tests.BufferedPortAudioSoundOutTests
+  fullName: SilverCraft.CSCore.Tests.BufferedPortAudioSoundOutTests
+  nameWithType: BufferedPortAudioSoundOutTests
+- uid: SilverCraft.CSCore.Tests.BufferedPortAudioSoundOutTests.Callback_AppliesVolumeScaling
+  name: Callback_AppliesVolumeScaling()
+  href: api/SilverCraft.CSCore.Tests.BufferedPortAudioSoundOutTests.html#SilverCraft_CSCore_Tests_BufferedPortAudioSoundOutTests_Callback_AppliesVolumeScaling
+  commentId: M:SilverCraft.CSCore.Tests.BufferedPortAudioSoundOutTests.Callback_AppliesVolumeScaling
+  fullName: SilverCraft.CSCore.Tests.BufferedPortAudioSoundOutTests.Callback_AppliesVolumeScaling()
+  nameWithType: BufferedPortAudioSoundOutTests.Callback_AppliesVolumeScaling()
+- uid: SilverCraft.CSCore.Tests.BufferedPortAudioSoundOutTests.Callback_AppliesVolumeScaling*
+  name: Callback_AppliesVolumeScaling
+  href: api/SilverCraft.CSCore.Tests.BufferedPortAudioSoundOutTests.html#SilverCraft_CSCore_Tests_BufferedPortAudioSoundOutTests_Callback_AppliesVolumeScaling_
+  commentId: Overload:SilverCraft.CSCore.Tests.BufferedPortAudioSoundOutTests.Callback_AppliesVolumeScaling
+  isSpec: "True"
+  fullName: SilverCraft.CSCore.Tests.BufferedPortAudioSoundOutTests.Callback_AppliesVolumeScaling
+  nameWithType: BufferedPortAudioSoundOutTests.Callback_AppliesVolumeScaling
+- uid: SilverCraft.CSCore.Tests.BufferedPortAudioSoundOutTests.Callback_ClampsOutputChannels_WithoutOverflowingOutputBuffer
+  name: Callback_ClampsOutputChannels_WithoutOverflowingOutputBuffer()
+  href: api/SilverCraft.CSCore.Tests.BufferedPortAudioSoundOutTests.html#SilverCraft_CSCore_Tests_BufferedPortAudioSoundOutTests_Callback_ClampsOutputChannels_WithoutOverflowingOutputBuffer
+  commentId: M:SilverCraft.CSCore.Tests.BufferedPortAudioSoundOutTests.Callback_ClampsOutputChannels_WithoutOverflowingOutputBuffer
+  fullName: SilverCraft.CSCore.Tests.BufferedPortAudioSoundOutTests.Callback_ClampsOutputChannels_WithoutOverflowingOutputBuffer()
+  nameWithType: BufferedPortAudioSoundOutTests.Callback_ClampsOutputChannels_WithoutOverflowingOutputBuffer()
+- uid: SilverCraft.CSCore.Tests.BufferedPortAudioSoundOutTests.Callback_ClampsOutputChannels_WithoutOverflowingOutputBuffer*
+  name: Callback_ClampsOutputChannels_WithoutOverflowingOutputBuffer
+  href: api/SilverCraft.CSCore.Tests.BufferedPortAudioSoundOutTests.html#SilverCraft_CSCore_Tests_BufferedPortAudioSoundOutTests_Callback_ClampsOutputChannels_WithoutOverflowingOutputBuffer_
+  commentId: Overload:SilverCraft.CSCore.Tests.BufferedPortAudioSoundOutTests.Callback_ClampsOutputChannels_WithoutOverflowingOutputBuffer
+  isSpec: "True"
+  fullName: SilverCraft.CSCore.Tests.BufferedPortAudioSoundOutTests.Callback_ClampsOutputChannels_WithoutOverflowingOutputBuffer
+  nameWithType: BufferedPortAudioSoundOutTests.Callback_ClampsOutputChannels_WithoutOverflowingOutputBuffer
+- uid: SilverCraft.CSCore.Tests.BufferedPortAudioSoundOutTests.Callback_ExcessiveFrameCount_ReturnsAbort
+  name: Callback_ExcessiveFrameCount_ReturnsAbort()
+  href: api/SilverCraft.CSCore.Tests.BufferedPortAudioSoundOutTests.html#SilverCraft_CSCore_Tests_BufferedPortAudioSoundOutTests_Callback_ExcessiveFrameCount_ReturnsAbort
+  commentId: M:SilverCraft.CSCore.Tests.BufferedPortAudioSoundOutTests.Callback_ExcessiveFrameCount_ReturnsAbort
+  fullName: SilverCraft.CSCore.Tests.BufferedPortAudioSoundOutTests.Callback_ExcessiveFrameCount_ReturnsAbort()
+  nameWithType: BufferedPortAudioSoundOutTests.Callback_ExcessiveFrameCount_ReturnsAbort()
+- uid: SilverCraft.CSCore.Tests.BufferedPortAudioSoundOutTests.Callback_ExcessiveFrameCount_ReturnsAbort*
+  name: Callback_ExcessiveFrameCount_ReturnsAbort
+  href: api/SilverCraft.CSCore.Tests.BufferedPortAudioSoundOutTests.html#SilverCraft_CSCore_Tests_BufferedPortAudioSoundOutTests_Callback_ExcessiveFrameCount_ReturnsAbort_
+  commentId: Overload:SilverCraft.CSCore.Tests.BufferedPortAudioSoundOutTests.Callback_ExcessiveFrameCount_ReturnsAbort
+  isSpec: "True"
+  fullName: SilverCraft.CSCore.Tests.BufferedPortAudioSoundOutTests.Callback_ExcessiveFrameCount_ReturnsAbort
+  nameWithType: BufferedPortAudioSoundOutTests.Callback_ExcessiveFrameCount_ReturnsAbort
+- uid: SilverCraft.CSCore.Tests.BufferedPortAudioSoundOutTests.Callback_StaleStreamId_ReturnsAbort
+  name: Callback_StaleStreamId_ReturnsAbort()
+  href: api/SilverCraft.CSCore.Tests.BufferedPortAudioSoundOutTests.html#SilverCraft_CSCore_Tests_BufferedPortAudioSoundOutTests_Callback_StaleStreamId_ReturnsAbort
+  commentId: M:SilverCraft.CSCore.Tests.BufferedPortAudioSoundOutTests.Callback_StaleStreamId_ReturnsAbort
+  fullName: SilverCraft.CSCore.Tests.BufferedPortAudioSoundOutTests.Callback_StaleStreamId_ReturnsAbort()
+  nameWithType: BufferedPortAudioSoundOutTests.Callback_StaleStreamId_ReturnsAbort()
+- uid: SilverCraft.CSCore.Tests.BufferedPortAudioSoundOutTests.Callback_StaleStreamId_ReturnsAbort*
+  name: Callback_StaleStreamId_ReturnsAbort
+  href: api/SilverCraft.CSCore.Tests.BufferedPortAudioSoundOutTests.html#SilverCraft_CSCore_Tests_BufferedPortAudioSoundOutTests_Callback_StaleStreamId_ReturnsAbort_
+  commentId: Overload:SilverCraft.CSCore.Tests.BufferedPortAudioSoundOutTests.Callback_StaleStreamId_ReturnsAbort
+  isSpec: "True"
+  fullName: SilverCraft.CSCore.Tests.BufferedPortAudioSoundOutTests.Callback_StaleStreamId_ReturnsAbort
+  nameWithType: BufferedPortAudioSoundOutTests.Callback_StaleStreamId_ReturnsAbort
+- uid: SilverCraft.CSCore.Tests.BufferedPortAudioSoundOutTests.Defaults_AreExpectedBeforeInitialize
+  name: Defaults_AreExpectedBeforeInitialize()
+  href: api/SilverCraft.CSCore.Tests.BufferedPortAudioSoundOutTests.html#SilverCraft_CSCore_Tests_BufferedPortAudioSoundOutTests_Defaults_AreExpectedBeforeInitialize
+  commentId: M:SilverCraft.CSCore.Tests.BufferedPortAudioSoundOutTests.Defaults_AreExpectedBeforeInitialize
+  fullName: SilverCraft.CSCore.Tests.BufferedPortAudioSoundOutTests.Defaults_AreExpectedBeforeInitialize()
+  nameWithType: BufferedPortAudioSoundOutTests.Defaults_AreExpectedBeforeInitialize()
+- uid: SilverCraft.CSCore.Tests.BufferedPortAudioSoundOutTests.Defaults_AreExpectedBeforeInitialize*
+  name: Defaults_AreExpectedBeforeInitialize
+  href: api/SilverCraft.CSCore.Tests.BufferedPortAudioSoundOutTests.html#SilverCraft_CSCore_Tests_BufferedPortAudioSoundOutTests_Defaults_AreExpectedBeforeInitialize_
+  commentId: Overload:SilverCraft.CSCore.Tests.BufferedPortAudioSoundOutTests.Defaults_AreExpectedBeforeInitialize
+  isSpec: "True"
+  fullName: SilverCraft.CSCore.Tests.BufferedPortAudioSoundOutTests.Defaults_AreExpectedBeforeInitialize
+  nameWithType: BufferedPortAudioSoundOutTests.Defaults_AreExpectedBeforeInitialize
+- uid: SilverCraft.CSCore.Tests.BufferedPortAudioSoundOutTests.Dispose_IsIdempotent_AndSubsequentOperationsThrowObjectDisposedException
+  name: Dispose_IsIdempotent_AndSubsequentOperationsThrowObjectDisposedException()
+  href: api/SilverCraft.CSCore.Tests.BufferedPortAudioSoundOutTests.html#SilverCraft_CSCore_Tests_BufferedPortAudioSoundOutTests_Dispose_IsIdempotent_AndSubsequentOperationsThrowObjectDisposedException
+  commentId: M:SilverCraft.CSCore.Tests.BufferedPortAudioSoundOutTests.Dispose_IsIdempotent_AndSubsequentOperationsThrowObjectDisposedException
+  fullName: SilverCraft.CSCore.Tests.BufferedPortAudioSoundOutTests.Dispose_IsIdempotent_AndSubsequentOperationsThrowObjectDisposedException()
+  nameWithType: BufferedPortAudioSoundOutTests.Dispose_IsIdempotent_AndSubsequentOperationsThrowObjectDisposedException()
+- uid: SilverCraft.CSCore.Tests.BufferedPortAudioSoundOutTests.Dispose_IsIdempotent_AndSubsequentOperationsThrowObjectDisposedException*
+  name: Dispose_IsIdempotent_AndSubsequentOperationsThrowObjectDisposedException
+  href: api/SilverCraft.CSCore.Tests.BufferedPortAudioSoundOutTests.html#SilverCraft_CSCore_Tests_BufferedPortAudioSoundOutTests_Dispose_IsIdempotent_AndSubsequentOperationsThrowObjectDisposedException_
+  commentId: Overload:SilverCraft.CSCore.Tests.BufferedPortAudioSoundOutTests.Dispose_IsIdempotent_AndSubsequentOperationsThrowObjectDisposedException
+  isSpec: "True"
+  fullName: SilverCraft.CSCore.Tests.BufferedPortAudioSoundOutTests.Dispose_IsIdempotent_AndSubsequentOperationsThrowObjectDisposedException
+  nameWithType: BufferedPortAudioSoundOutTests.Dispose_IsIdempotent_AndSubsequentOperationsThrowObjectDisposedException
+- uid: SilverCraft.CSCore.Tests.BufferedPortAudioSoundOutTests.ExecuteSeek_FlushesRingBuffer_AndIsSafeUnderConcurrentCallbacks
+  name: ExecuteSeek_FlushesRingBuffer_AndIsSafeUnderConcurrentCallbacks()
+  href: api/SilverCraft.CSCore.Tests.BufferedPortAudioSoundOutTests.html#SilverCraft_CSCore_Tests_BufferedPortAudioSoundOutTests_ExecuteSeek_FlushesRingBuffer_AndIsSafeUnderConcurrentCallbacks
+  commentId: M:SilverCraft.CSCore.Tests.BufferedPortAudioSoundOutTests.ExecuteSeek_FlushesRingBuffer_AndIsSafeUnderConcurrentCallbacks
+  fullName: SilverCraft.CSCore.Tests.BufferedPortAudioSoundOutTests.ExecuteSeek_FlushesRingBuffer_AndIsSafeUnderConcurrentCallbacks()
+  nameWithType: BufferedPortAudioSoundOutTests.ExecuteSeek_FlushesRingBuffer_AndIsSafeUnderConcurrentCallbacks()
+- uid: SilverCraft.CSCore.Tests.BufferedPortAudioSoundOutTests.ExecuteSeek_FlushesRingBuffer_AndIsSafeUnderConcurrentCallbacks*
+  name: ExecuteSeek_FlushesRingBuffer_AndIsSafeUnderConcurrentCallbacks
+  href: api/SilverCraft.CSCore.Tests.BufferedPortAudioSoundOutTests.html#SilverCraft_CSCore_Tests_BufferedPortAudioSoundOutTests_ExecuteSeek_FlushesRingBuffer_AndIsSafeUnderConcurrentCallbacks_
+  commentId: Overload:SilverCraft.CSCore.Tests.BufferedPortAudioSoundOutTests.ExecuteSeek_FlushesRingBuffer_AndIsSafeUnderConcurrentCallbacks
+  isSpec: "True"
+  fullName: SilverCraft.CSCore.Tests.BufferedPortAudioSoundOutTests.ExecuteSeek_FlushesRingBuffer_AndIsSafeUnderConcurrentCallbacks
+  nameWithType: BufferedPortAudioSoundOutTests.ExecuteSeek_FlushesRingBuffer_AndIsSafeUnderConcurrentCallbacks
+- uid: SilverCraft.CSCore.Tests.BufferedPortAudioSoundOutTests.ExecuteSeek_NullAction_ThrowsArgumentNullException
+  name: ExecuteSeek_NullAction_ThrowsArgumentNullException()
+  href: api/SilverCraft.CSCore.Tests.BufferedPortAudioSoundOutTests.html#SilverCraft_CSCore_Tests_BufferedPortAudioSoundOutTests_ExecuteSeek_NullAction_ThrowsArgumentNullException
+  commentId: M:SilverCraft.CSCore.Tests.BufferedPortAudioSoundOutTests.ExecuteSeek_NullAction_ThrowsArgumentNullException
+  fullName: SilverCraft.CSCore.Tests.BufferedPortAudioSoundOutTests.ExecuteSeek_NullAction_ThrowsArgumentNullException()
+  nameWithType: BufferedPortAudioSoundOutTests.ExecuteSeek_NullAction_ThrowsArgumentNullException()
+- uid: SilverCraft.CSCore.Tests.BufferedPortAudioSoundOutTests.ExecuteSeek_NullAction_ThrowsArgumentNullException*
+  name: ExecuteSeek_NullAction_ThrowsArgumentNullException
+  href: api/SilverCraft.CSCore.Tests.BufferedPortAudioSoundOutTests.html#SilverCraft_CSCore_Tests_BufferedPortAudioSoundOutTests_ExecuteSeek_NullAction_ThrowsArgumentNullException_
+  commentId: Overload:SilverCraft.CSCore.Tests.BufferedPortAudioSoundOutTests.ExecuteSeek_NullAction_ThrowsArgumentNullException
+  isSpec: "True"
+  fullName: SilverCraft.CSCore.Tests.BufferedPortAudioSoundOutTests.ExecuteSeek_NullAction_ThrowsArgumentNullException
+  nameWithType: BufferedPortAudioSoundOutTests.ExecuteSeek_NullAction_ThrowsArgumentNullException
+- uid: SilverCraft.CSCore.Tests.BufferedPortAudioSoundOutTests.GetOutputDeviceNames_StartsWithDefaultDeviceLabel_AndCanBeCalledRepeatedly
+  name: GetOutputDeviceNames_StartsWithDefaultDeviceLabel_AndCanBeCalledRepeatedly()
+  href: api/SilverCraft.CSCore.Tests.BufferedPortAudioSoundOutTests.html#SilverCraft_CSCore_Tests_BufferedPortAudioSoundOutTests_GetOutputDeviceNames_StartsWithDefaultDeviceLabel_AndCanBeCalledRepeatedly
+  commentId: M:SilverCraft.CSCore.Tests.BufferedPortAudioSoundOutTests.GetOutputDeviceNames_StartsWithDefaultDeviceLabel_AndCanBeCalledRepeatedly
+  fullName: SilverCraft.CSCore.Tests.BufferedPortAudioSoundOutTests.GetOutputDeviceNames_StartsWithDefaultDeviceLabel_AndCanBeCalledRepeatedly()
+  nameWithType: BufferedPortAudioSoundOutTests.GetOutputDeviceNames_StartsWithDefaultDeviceLabel_AndCanBeCalledRepeatedly()
+- uid: SilverCraft.CSCore.Tests.BufferedPortAudioSoundOutTests.GetOutputDeviceNames_StartsWithDefaultDeviceLabel_AndCanBeCalledRepeatedly*
+  name: GetOutputDeviceNames_StartsWithDefaultDeviceLabel_AndCanBeCalledRepeatedly
+  href: api/SilverCraft.CSCore.Tests.BufferedPortAudioSoundOutTests.html#SilverCraft_CSCore_Tests_BufferedPortAudioSoundOutTests_GetOutputDeviceNames_StartsWithDefaultDeviceLabel_AndCanBeCalledRepeatedly_
+  commentId: Overload:SilverCraft.CSCore.Tests.BufferedPortAudioSoundOutTests.GetOutputDeviceNames_StartsWithDefaultDeviceLabel_AndCanBeCalledRepeatedly
+  isSpec: "True"
+  fullName: SilverCraft.CSCore.Tests.BufferedPortAudioSoundOutTests.GetOutputDeviceNames_StartsWithDefaultDeviceLabel_AndCanBeCalledRepeatedly
+  nameWithType: BufferedPortAudioSoundOutTests.GetOutputDeviceNames_StartsWithDefaultDeviceLabel_AndCanBeCalledRepeatedly
+- uid: SilverCraft.CSCore.Tests.BufferedPortAudioSoundOutTests.Initialize_NullSource_ThrowsArgumentNullException
+  name: Initialize_NullSource_ThrowsArgumentNullException()
+  href: api/SilverCraft.CSCore.Tests.BufferedPortAudioSoundOutTests.html#SilverCraft_CSCore_Tests_BufferedPortAudioSoundOutTests_Initialize_NullSource_ThrowsArgumentNullException
+  commentId: M:SilverCraft.CSCore.Tests.BufferedPortAudioSoundOutTests.Initialize_NullSource_ThrowsArgumentNullException
+  fullName: SilverCraft.CSCore.Tests.BufferedPortAudioSoundOutTests.Initialize_NullSource_ThrowsArgumentNullException()
+  nameWithType: BufferedPortAudioSoundOutTests.Initialize_NullSource_ThrowsArgumentNullException()
+- uid: SilverCraft.CSCore.Tests.BufferedPortAudioSoundOutTests.Initialize_NullSource_ThrowsArgumentNullException*
+  name: Initialize_NullSource_ThrowsArgumentNullException
+  href: api/SilverCraft.CSCore.Tests.BufferedPortAudioSoundOutTests.html#SilverCraft_CSCore_Tests_BufferedPortAudioSoundOutTests_Initialize_NullSource_ThrowsArgumentNullException_
+  commentId: Overload:SilverCraft.CSCore.Tests.BufferedPortAudioSoundOutTests.Initialize_NullSource_ThrowsArgumentNullException
+  isSpec: "True"
+  fullName: SilverCraft.CSCore.Tests.BufferedPortAudioSoundOutTests.Initialize_NullSource_ThrowsArgumentNullException
+  nameWithType: BufferedPortAudioSoundOutTests.Initialize_NullSource_ThrowsArgumentNullException
+- uid: SilverCraft.CSCore.Tests.BufferedPortAudioSoundOutTests.IsSupported_DoesNotThrow
+  name: IsSupported_DoesNotThrow()
+  href: api/SilverCraft.CSCore.Tests.BufferedPortAudioSoundOutTests.html#SilverCraft_CSCore_Tests_BufferedPortAudioSoundOutTests_IsSupported_DoesNotThrow
+  commentId: M:SilverCraft.CSCore.Tests.BufferedPortAudioSoundOutTests.IsSupported_DoesNotThrow
+  fullName: SilverCraft.CSCore.Tests.BufferedPortAudioSoundOutTests.IsSupported_DoesNotThrow()
+  nameWithType: BufferedPortAudioSoundOutTests.IsSupported_DoesNotThrow()
+- uid: SilverCraft.CSCore.Tests.BufferedPortAudioSoundOutTests.IsSupported_DoesNotThrow*
+  name: IsSupported_DoesNotThrow
+  href: api/SilverCraft.CSCore.Tests.BufferedPortAudioSoundOutTests.html#SilverCraft_CSCore_Tests_BufferedPortAudioSoundOutTests_IsSupported_DoesNotThrow_
+  commentId: Overload:SilverCraft.CSCore.Tests.BufferedPortAudioSoundOutTests.IsSupported_DoesNotThrow
+  isSpec: "True"
+  fullName: SilverCraft.CSCore.Tests.BufferedPortAudioSoundOutTests.IsSupported_DoesNotThrow
+  nameWithType: BufferedPortAudioSoundOutTests.IsSupported_DoesNotThrow
+- uid: SilverCraft.CSCore.Tests.BufferedPortAudioSoundOutTests.OutputLatency_IncludesStreamAndBufferedLatency
+  name: OutputLatency_IncludesStreamAndBufferedLatency()
+  href: api/SilverCraft.CSCore.Tests.BufferedPortAudioSoundOutTests.html#SilverCraft_CSCore_Tests_BufferedPortAudioSoundOutTests_OutputLatency_IncludesStreamAndBufferedLatency
+  commentId: M:SilverCraft.CSCore.Tests.BufferedPortAudioSoundOutTests.OutputLatency_IncludesStreamAndBufferedLatency
+  fullName: SilverCraft.CSCore.Tests.BufferedPortAudioSoundOutTests.OutputLatency_IncludesStreamAndBufferedLatency()
+  nameWithType: BufferedPortAudioSoundOutTests.OutputLatency_IncludesStreamAndBufferedLatency()
+- uid: SilverCraft.CSCore.Tests.BufferedPortAudioSoundOutTests.OutputLatency_IncludesStreamAndBufferedLatency*
+  name: OutputLatency_IncludesStreamAndBufferedLatency
+  href: api/SilverCraft.CSCore.Tests.BufferedPortAudioSoundOutTests.html#SilverCraft_CSCore_Tests_BufferedPortAudioSoundOutTests_OutputLatency_IncludesStreamAndBufferedLatency_
+  commentId: Overload:SilverCraft.CSCore.Tests.BufferedPortAudioSoundOutTests.OutputLatency_IncludesStreamAndBufferedLatency
+  isSpec: "True"
+  fullName: SilverCraft.CSCore.Tests.BufferedPortAudioSoundOutTests.OutputLatency_IncludesStreamAndBufferedLatency
+  nameWithType: BufferedPortAudioSoundOutTests.OutputLatency_IncludesStreamAndBufferedLatency
+- uid: SilverCraft.CSCore.Tests.BufferedPortAudioSoundOutTests.Play_BeforeInitialize_ThrowsObjectDisposedException
+  name: Play_BeforeInitialize_ThrowsObjectDisposedException()
+  href: api/SilverCraft.CSCore.Tests.BufferedPortAudioSoundOutTests.html#SilverCraft_CSCore_Tests_BufferedPortAudioSoundOutTests_Play_BeforeInitialize_ThrowsObjectDisposedException
+  commentId: M:SilverCraft.CSCore.Tests.BufferedPortAudioSoundOutTests.Play_BeforeInitialize_ThrowsObjectDisposedException
+  fullName: SilverCraft.CSCore.Tests.BufferedPortAudioSoundOutTests.Play_BeforeInitialize_ThrowsObjectDisposedException()
+  nameWithType: BufferedPortAudioSoundOutTests.Play_BeforeInitialize_ThrowsObjectDisposedException()
+- uid: SilverCraft.CSCore.Tests.BufferedPortAudioSoundOutTests.Play_BeforeInitialize_ThrowsObjectDisposedException*
+  name: Play_BeforeInitialize_ThrowsObjectDisposedException
+  href: api/SilverCraft.CSCore.Tests.BufferedPortAudioSoundOutTests.html#SilverCraft_CSCore_Tests_BufferedPortAudioSoundOutTests_Play_BeforeInitialize_ThrowsObjectDisposedException_
+  commentId: Overload:SilverCraft.CSCore.Tests.BufferedPortAudioSoundOutTests.Play_BeforeInitialize_ThrowsObjectDisposedException
+  isSpec: "True"
+  fullName: SilverCraft.CSCore.Tests.BufferedPortAudioSoundOutTests.Play_BeforeInitialize_ThrowsObjectDisposedException
+  nameWithType: BufferedPortAudioSoundOutTests.Play_BeforeInitialize_ThrowsObjectDisposedException
+- uid: SilverCraft.CSCore.Tests.BufferedPortAudioSoundOutTests.ProducerAndCallback_StreamSamplesAcrossRingWrapAround_UntilComplete
+  name: ProducerAndCallback_StreamSamplesAcrossRingWrapAround_UntilComplete()
+  href: api/SilverCraft.CSCore.Tests.BufferedPortAudioSoundOutTests.html#SilverCraft_CSCore_Tests_BufferedPortAudioSoundOutTests_ProducerAndCallback_StreamSamplesAcrossRingWrapAround_UntilComplete
+  commentId: M:SilverCraft.CSCore.Tests.BufferedPortAudioSoundOutTests.ProducerAndCallback_StreamSamplesAcrossRingWrapAround_UntilComplete
+  fullName: SilverCraft.CSCore.Tests.BufferedPortAudioSoundOutTests.ProducerAndCallback_StreamSamplesAcrossRingWrapAround_UntilComplete()
+  nameWithType: BufferedPortAudioSoundOutTests.ProducerAndCallback_StreamSamplesAcrossRingWrapAround_UntilComplete()
+- uid: SilverCraft.CSCore.Tests.BufferedPortAudioSoundOutTests.ProducerAndCallback_StreamSamplesAcrossRingWrapAround_UntilComplete*
+  name: ProducerAndCallback_StreamSamplesAcrossRingWrapAround_UntilComplete
+  href: api/SilverCraft.CSCore.Tests.BufferedPortAudioSoundOutTests.html#SilverCraft_CSCore_Tests_BufferedPortAudioSoundOutTests_ProducerAndCallback_StreamSamplesAcrossRingWrapAround_UntilComplete_
+  commentId: Overload:SilverCraft.CSCore.Tests.BufferedPortAudioSoundOutTests.ProducerAndCallback_StreamSamplesAcrossRingWrapAround_UntilComplete
+  isSpec: "True"
+  fullName: SilverCraft.CSCore.Tests.BufferedPortAudioSoundOutTests.ProducerAndCallback_StreamSamplesAcrossRingWrapAround_UntilComplete
+  nameWithType: BufferedPortAudioSoundOutTests.ProducerAndCallback_StreamSamplesAcrossRingWrapAround_UntilComplete
+- uid: SilverCraft.CSCore.Tests.BufferedPortAudioSoundOutTests.Producer_HandlesSourceExceptionGracefully_AndCompletesCallback
+  name: Producer_HandlesSourceExceptionGracefully_AndCompletesCallback()
+  href: api/SilverCraft.CSCore.Tests.BufferedPortAudioSoundOutTests.html#SilverCraft_CSCore_Tests_BufferedPortAudioSoundOutTests_Producer_HandlesSourceExceptionGracefully_AndCompletesCallback
+  commentId: M:SilverCraft.CSCore.Tests.BufferedPortAudioSoundOutTests.Producer_HandlesSourceExceptionGracefully_AndCompletesCallback
+  fullName: SilverCraft.CSCore.Tests.BufferedPortAudioSoundOutTests.Producer_HandlesSourceExceptionGracefully_AndCompletesCallback()
+  nameWithType: BufferedPortAudioSoundOutTests.Producer_HandlesSourceExceptionGracefully_AndCompletesCallback()
+- uid: SilverCraft.CSCore.Tests.BufferedPortAudioSoundOutTests.Producer_HandlesSourceExceptionGracefully_AndCompletesCallback*
+  name: Producer_HandlesSourceExceptionGracefully_AndCompletesCallback
+  href: api/SilverCraft.CSCore.Tests.BufferedPortAudioSoundOutTests.html#SilverCraft_CSCore_Tests_BufferedPortAudioSoundOutTests_Producer_HandlesSourceExceptionGracefully_AndCompletesCallback_
+  commentId: Overload:SilverCraft.CSCore.Tests.BufferedPortAudioSoundOutTests.Producer_HandlesSourceExceptionGracefully_AndCompletesCallback
+  isSpec: "True"
+  fullName: SilverCraft.CSCore.Tests.BufferedPortAudioSoundOutTests.Producer_HandlesSourceExceptionGracefully_AndCompletesCallback
+  nameWithType: BufferedPortAudioSoundOutTests.Producer_HandlesSourceExceptionGracefully_AndCompletesCallback
+- uid: SilverCraft.CSCore.Tests.BufferedPortAudioSoundOutTests.StopAndResume_WhenStopped_AreNoOps
+  name: StopAndResume_WhenStopped_AreNoOps()
+  href: api/SilverCraft.CSCore.Tests.BufferedPortAudioSoundOutTests.html#SilverCraft_CSCore_Tests_BufferedPortAudioSoundOutTests_StopAndResume_WhenStopped_AreNoOps
+  commentId: M:SilverCraft.CSCore.Tests.BufferedPortAudioSoundOutTests.StopAndResume_WhenStopped_AreNoOps
+  fullName: SilverCraft.CSCore.Tests.BufferedPortAudioSoundOutTests.StopAndResume_WhenStopped_AreNoOps()
+  nameWithType: BufferedPortAudioSoundOutTests.StopAndResume_WhenStopped_AreNoOps()
+- uid: SilverCraft.CSCore.Tests.BufferedPortAudioSoundOutTests.StopAndResume_WhenStopped_AreNoOps*
+  name: StopAndResume_WhenStopped_AreNoOps
+  href: api/SilverCraft.CSCore.Tests.BufferedPortAudioSoundOutTests.html#SilverCraft_CSCore_Tests_BufferedPortAudioSoundOutTests_StopAndResume_WhenStopped_AreNoOps_
+  commentId: Overload:SilverCraft.CSCore.Tests.BufferedPortAudioSoundOutTests.StopAndResume_WhenStopped_AreNoOps
+  isSpec: "True"
+  fullName: SilverCraft.CSCore.Tests.BufferedPortAudioSoundOutTests.StopAndResume_WhenStopped_AreNoOps
+  nameWithType: BufferedPortAudioSoundOutTests.StopAndResume_WhenStopped_AreNoOps
+- uid: SilverCraft.CSCore.Tests.BufferedPortAudioSoundOutTests.Volume_OutOfRange_ThrowsArgumentOutOfRangeException(System.Single)
+  name: Volume_OutOfRange_ThrowsArgumentOutOfRangeException(float)
+  href: api/SilverCraft.CSCore.Tests.BufferedPortAudioSoundOutTests.html#SilverCraft_CSCore_Tests_BufferedPortAudioSoundOutTests_Volume_OutOfRange_ThrowsArgumentOutOfRangeException_System_Single_
+  commentId: M:SilverCraft.CSCore.Tests.BufferedPortAudioSoundOutTests.Volume_OutOfRange_ThrowsArgumentOutOfRangeException(System.Single)
+  name.vb: Volume_OutOfRange_ThrowsArgumentOutOfRangeException(Single)
+  fullName: SilverCraft.CSCore.Tests.BufferedPortAudioSoundOutTests.Volume_OutOfRange_ThrowsArgumentOutOfRangeException(float)
+  fullName.vb: SilverCraft.CSCore.Tests.BufferedPortAudioSoundOutTests.Volume_OutOfRange_ThrowsArgumentOutOfRangeException(Single)
+  nameWithType: BufferedPortAudioSoundOutTests.Volume_OutOfRange_ThrowsArgumentOutOfRangeException(float)
+  nameWithType.vb: BufferedPortAudioSoundOutTests.Volume_OutOfRange_ThrowsArgumentOutOfRangeException(Single)
+- uid: SilverCraft.CSCore.Tests.BufferedPortAudioSoundOutTests.Volume_OutOfRange_ThrowsArgumentOutOfRangeException*
+  name: Volume_OutOfRange_ThrowsArgumentOutOfRangeException
+  href: api/SilverCraft.CSCore.Tests.BufferedPortAudioSoundOutTests.html#SilverCraft_CSCore_Tests_BufferedPortAudioSoundOutTests_Volume_OutOfRange_ThrowsArgumentOutOfRangeException_
+  commentId: Overload:SilverCraft.CSCore.Tests.BufferedPortAudioSoundOutTests.Volume_OutOfRange_ThrowsArgumentOutOfRangeException
+  isSpec: "True"
+  fullName: SilverCraft.CSCore.Tests.BufferedPortAudioSoundOutTests.Volume_OutOfRange_ThrowsArgumentOutOfRangeException
+  nameWithType: BufferedPortAudioSoundOutTests.Volume_OutOfRange_ThrowsArgumentOutOfRangeException
+- uid: SilverCraft.CSCore.Tests.BufferedPortAudioSoundOutTests.Volume_ValidValues_RoundTrip(System.Single)
+  name: Volume_ValidValues_RoundTrip(float)
+  href: api/SilverCraft.CSCore.Tests.BufferedPortAudioSoundOutTests.html#SilverCraft_CSCore_Tests_BufferedPortAudioSoundOutTests_Volume_ValidValues_RoundTrip_System_Single_
+  commentId: M:SilverCraft.CSCore.Tests.BufferedPortAudioSoundOutTests.Volume_ValidValues_RoundTrip(System.Single)
+  name.vb: Volume_ValidValues_RoundTrip(Single)
+  fullName: SilverCraft.CSCore.Tests.BufferedPortAudioSoundOutTests.Volume_ValidValues_RoundTrip(float)
+  fullName.vb: SilverCraft.CSCore.Tests.BufferedPortAudioSoundOutTests.Volume_ValidValues_RoundTrip(Single)
+  nameWithType: BufferedPortAudioSoundOutTests.Volume_ValidValues_RoundTrip(float)
+  nameWithType.vb: BufferedPortAudioSoundOutTests.Volume_ValidValues_RoundTrip(Single)
+- uid: SilverCraft.CSCore.Tests.BufferedPortAudioSoundOutTests.Volume_ValidValues_RoundTrip*
+  name: Volume_ValidValues_RoundTrip
+  href: api/SilverCraft.CSCore.Tests.BufferedPortAudioSoundOutTests.html#SilverCraft_CSCore_Tests_BufferedPortAudioSoundOutTests_Volume_ValidValues_RoundTrip_
+  commentId: Overload:SilverCraft.CSCore.Tests.BufferedPortAudioSoundOutTests.Volume_ValidValues_RoundTrip
+  isSpec: "True"
+  fullName: SilverCraft.CSCore.Tests.BufferedPortAudioSoundOutTests.Volume_ValidValues_RoundTrip
+  nameWithType: BufferedPortAudioSoundOutTests.Volume_ValidValues_RoundTrip
 - uid: SilverCraft.CSCore.Tests.BugReproTests
   name: BugReproTests
   href: api/SilverCraft.CSCore.Tests.BugReproTests.html
@@ -21600,6 +22163,32 @@ references:
   isSpec: "True"
   fullName: SilverCraft.CSCore.Tests.FlacSeekTableTests.FileWithSeekTable_DecodesAndCanSeekWithinFirstFrame
   nameWithType: FlacSeekTableTests.FileWithSeekTable_DecodesAndCanSeekWithinFirstFrame
+- uid: SilverCraft.CSCore.Tests.FlacSeekTableTests.FileWithSeekTable_SeekBeforeFirstRead_MatchesSequentialPcm
+  name: FileWithSeekTable_SeekBeforeFirstRead_MatchesSequentialPcm()
+  href: api/SilverCraft.CSCore.Tests.FlacSeekTableTests.html#SilverCraft_CSCore_Tests_FlacSeekTableTests_FileWithSeekTable_SeekBeforeFirstRead_MatchesSequentialPcm
+  commentId: M:SilverCraft.CSCore.Tests.FlacSeekTableTests.FileWithSeekTable_SeekBeforeFirstRead_MatchesSequentialPcm
+  fullName: SilverCraft.CSCore.Tests.FlacSeekTableTests.FileWithSeekTable_SeekBeforeFirstRead_MatchesSequentialPcm()
+  nameWithType: FlacSeekTableTests.FileWithSeekTable_SeekBeforeFirstRead_MatchesSequentialPcm()
+- uid: SilverCraft.CSCore.Tests.FlacSeekTableTests.FileWithSeekTable_SeekBeforeFirstRead_MatchesSequentialPcm*
+  name: FileWithSeekTable_SeekBeforeFirstRead_MatchesSequentialPcm
+  href: api/SilverCraft.CSCore.Tests.FlacSeekTableTests.html#SilverCraft_CSCore_Tests_FlacSeekTableTests_FileWithSeekTable_SeekBeforeFirstRead_MatchesSequentialPcm_
+  commentId: Overload:SilverCraft.CSCore.Tests.FlacSeekTableTests.FileWithSeekTable_SeekBeforeFirstRead_MatchesSequentialPcm
+  isSpec: "True"
+  fullName: SilverCraft.CSCore.Tests.FlacSeekTableTests.FileWithSeekTable_SeekBeforeFirstRead_MatchesSequentialPcm
+  nameWithType: FlacSeekTableTests.FileWithSeekTable_SeekBeforeFirstRead_MatchesSequentialPcm
+- uid: SilverCraft.CSCore.Tests.FlacSeekTableTests.FileWithUndersizedMaxFrameSize_RetriesBufferingAndDecodesBitExact
+  name: FileWithUndersizedMaxFrameSize_RetriesBufferingAndDecodesBitExact()
+  href: api/SilverCraft.CSCore.Tests.FlacSeekTableTests.html#SilverCraft_CSCore_Tests_FlacSeekTableTests_FileWithUndersizedMaxFrameSize_RetriesBufferingAndDecodesBitExact
+  commentId: M:SilverCraft.CSCore.Tests.FlacSeekTableTests.FileWithUndersizedMaxFrameSize_RetriesBufferingAndDecodesBitExact
+  fullName: SilverCraft.CSCore.Tests.FlacSeekTableTests.FileWithUndersizedMaxFrameSize_RetriesBufferingAndDecodesBitExact()
+  nameWithType: FlacSeekTableTests.FileWithUndersizedMaxFrameSize_RetriesBufferingAndDecodesBitExact()
+- uid: SilverCraft.CSCore.Tests.FlacSeekTableTests.FileWithUndersizedMaxFrameSize_RetriesBufferingAndDecodesBitExact*
+  name: FileWithUndersizedMaxFrameSize_RetriesBufferingAndDecodesBitExact
+  href: api/SilverCraft.CSCore.Tests.FlacSeekTableTests.html#SilverCraft_CSCore_Tests_FlacSeekTableTests_FileWithUndersizedMaxFrameSize_RetriesBufferingAndDecodesBitExact_
+  commentId: Overload:SilverCraft.CSCore.Tests.FlacSeekTableTests.FileWithUndersizedMaxFrameSize_RetriesBufferingAndDecodesBitExact
+  isSpec: "True"
+  fullName: SilverCraft.CSCore.Tests.FlacSeekTableTests.FileWithUndersizedMaxFrameSize_RetriesBufferingAndDecodesBitExact
+  nameWithType: FlacSeekTableTests.FileWithUndersizedMaxFrameSize_RetriesBufferingAndDecodesBitExact
 - uid: SilverCraft.CSCore.Tests.FlacSeekTableTests.FileWithoutSeekTable_CanDecodeAndBuildSeekIndex
   name: FileWithoutSeekTable_CanDecodeAndBuildSeekIndex()
   href: api/SilverCraft.CSCore.Tests.FlacSeekTableTests.html#SilverCraft_CSCore_Tests_FlacSeekTableTests_FileWithoutSeekTable_CanDecodeAndBuildSeekIndex
@@ -21613,6 +22202,19 @@ references:
   isSpec: "True"
   fullName: SilverCraft.CSCore.Tests.FlacSeekTableTests.FileWithoutSeekTable_CanDecodeAndBuildSeekIndex
   nameWithType: FlacSeekTableTests.FileWithoutSeekTable_CanDecodeAndBuildSeekIndex
+- uid: SilverCraft.CSCore.Tests.FlacSeekTableTests.FileWithoutSeekTable_SeekAcrossFramesAndLastFrame_MatchesSequentialPcmAndCleanEof
+  name: FileWithoutSeekTable_SeekAcrossFramesAndLastFrame_MatchesSequentialPcmAndCleanEof()
+  href: api/SilverCraft.CSCore.Tests.FlacSeekTableTests.html#SilverCraft_CSCore_Tests_FlacSeekTableTests_FileWithoutSeekTable_SeekAcrossFramesAndLastFrame_MatchesSequentialPcmAndCleanEof
+  commentId: M:SilverCraft.CSCore.Tests.FlacSeekTableTests.FileWithoutSeekTable_SeekAcrossFramesAndLastFrame_MatchesSequentialPcmAndCleanEof
+  fullName: SilverCraft.CSCore.Tests.FlacSeekTableTests.FileWithoutSeekTable_SeekAcrossFramesAndLastFrame_MatchesSequentialPcmAndCleanEof()
+  nameWithType: FlacSeekTableTests.FileWithoutSeekTable_SeekAcrossFramesAndLastFrame_MatchesSequentialPcmAndCleanEof()
+- uid: SilverCraft.CSCore.Tests.FlacSeekTableTests.FileWithoutSeekTable_SeekAcrossFramesAndLastFrame_MatchesSequentialPcmAndCleanEof*
+  name: FileWithoutSeekTable_SeekAcrossFramesAndLastFrame_MatchesSequentialPcmAndCleanEof
+  href: api/SilverCraft.CSCore.Tests.FlacSeekTableTests.html#SilverCraft_CSCore_Tests_FlacSeekTableTests_FileWithoutSeekTable_SeekAcrossFramesAndLastFrame_MatchesSequentialPcmAndCleanEof_
+  commentId: Overload:SilverCraft.CSCore.Tests.FlacSeekTableTests.FileWithoutSeekTable_SeekAcrossFramesAndLastFrame_MatchesSequentialPcmAndCleanEof
+  isSpec: "True"
+  fullName: SilverCraft.CSCore.Tests.FlacSeekTableTests.FileWithoutSeekTable_SeekAcrossFramesAndLastFrame_MatchesSequentialPcmAndCleanEof
+  nameWithType: FlacSeekTableTests.FileWithoutSeekTable_SeekAcrossFramesAndLastFrame_MatchesSequentialPcmAndCleanEof
 - uid: SilverCraft.CSCore.Tests.FlacSeekTableTests.SmallOffsetReads_MatchFfmpegPcmAndPreserveBufferGuards
   name: SmallOffsetReads_MatchFfmpegPcmAndPreserveBufferGuards()
   href: api/SilverCraft.CSCore.Tests.FlacSeekTableTests.html#SilverCraft_CSCore_Tests_FlacSeekTableTests_SmallOffsetReads_MatchFfmpegPcmAndPreserveBufferGuards
@@ -21684,6 +22286,64 @@ references:
   isSpec: "True"
   fullName: SilverCraft.CSCore.Tests.Id3Tests.ID3v1_FromStream_ThrowsWhenStreamNull
   nameWithType: Id3Tests.ID3v1_FromStream_ThrowsWhenStreamNull
+- uid: SilverCraft.CSCore.Tests.PortAudioDeviceTests
+  name: PortAudioDeviceTests
+  href: api/SilverCraft.CSCore.Tests.PortAudioDeviceTests.html
+  commentId: T:SilverCraft.CSCore.Tests.PortAudioDeviceTests
+  fullName: SilverCraft.CSCore.Tests.PortAudioDeviceTests
+  nameWithType: PortAudioDeviceTests
+- uid: SilverCraft.CSCore.Tests.PortAudioDeviceTests.PortAudioSoundIn_ConstructorsPreferredDeviceAndEnumeration_Work
+  name: PortAudioSoundIn_ConstructorsPreferredDeviceAndEnumeration_Work()
+  href: api/SilverCraft.CSCore.Tests.PortAudioDeviceTests.html#SilverCraft_CSCore_Tests_PortAudioDeviceTests_PortAudioSoundIn_ConstructorsPreferredDeviceAndEnumeration_Work
+  commentId: M:SilverCraft.CSCore.Tests.PortAudioDeviceTests.PortAudioSoundIn_ConstructorsPreferredDeviceAndEnumeration_Work
+  fullName: SilverCraft.CSCore.Tests.PortAudioDeviceTests.PortAudioSoundIn_ConstructorsPreferredDeviceAndEnumeration_Work()
+  nameWithType: PortAudioDeviceTests.PortAudioSoundIn_ConstructorsPreferredDeviceAndEnumeration_Work()
+- uid: SilverCraft.CSCore.Tests.PortAudioDeviceTests.PortAudioSoundIn_ConstructorsPreferredDeviceAndEnumeration_Work*
+  name: PortAudioSoundIn_ConstructorsPreferredDeviceAndEnumeration_Work
+  href: api/SilverCraft.CSCore.Tests.PortAudioDeviceTests.html#SilverCraft_CSCore_Tests_PortAudioDeviceTests_PortAudioSoundIn_ConstructorsPreferredDeviceAndEnumeration_Work_
+  commentId: Overload:SilverCraft.CSCore.Tests.PortAudioDeviceTests.PortAudioSoundIn_ConstructorsPreferredDeviceAndEnumeration_Work
+  isSpec: "True"
+  fullName: SilverCraft.CSCore.Tests.PortAudioDeviceTests.PortAudioSoundIn_ConstructorsPreferredDeviceAndEnumeration_Work
+  nameWithType: PortAudioDeviceTests.PortAudioSoundIn_ConstructorsPreferredDeviceAndEnumeration_Work
+- uid: SilverCraft.CSCore.Tests.PortAudioDeviceTests.PortAudioSoundIn_InitializeDisposed_Throws
+  name: PortAudioSoundIn_InitializeDisposed_Throws()
+  href: api/SilverCraft.CSCore.Tests.PortAudioDeviceTests.html#SilverCraft_CSCore_Tests_PortAudioDeviceTests_PortAudioSoundIn_InitializeDisposed_Throws
+  commentId: M:SilverCraft.CSCore.Tests.PortAudioDeviceTests.PortAudioSoundIn_InitializeDisposed_Throws
+  fullName: SilverCraft.CSCore.Tests.PortAudioDeviceTests.PortAudioSoundIn_InitializeDisposed_Throws()
+  nameWithType: PortAudioDeviceTests.PortAudioSoundIn_InitializeDisposed_Throws()
+- uid: SilverCraft.CSCore.Tests.PortAudioDeviceTests.PortAudioSoundIn_InitializeDisposed_Throws*
+  name: PortAudioSoundIn_InitializeDisposed_Throws
+  href: api/SilverCraft.CSCore.Tests.PortAudioDeviceTests.html#SilverCraft_CSCore_Tests_PortAudioDeviceTests_PortAudioSoundIn_InitializeDisposed_Throws_
+  commentId: Overload:SilverCraft.CSCore.Tests.PortAudioDeviceTests.PortAudioSoundIn_InitializeDisposed_Throws
+  isSpec: "True"
+  fullName: SilverCraft.CSCore.Tests.PortAudioDeviceTests.PortAudioSoundIn_InitializeDisposed_Throws
+  nameWithType: PortAudioDeviceTests.PortAudioSoundIn_InitializeDisposed_Throws
+- uid: SilverCraft.CSCore.Tests.PortAudioDeviceTests.PortAudioSoundOut_ConstructorsAndDeviceEnumeration_Work
+  name: PortAudioSoundOut_ConstructorsAndDeviceEnumeration_Work()
+  href: api/SilverCraft.CSCore.Tests.PortAudioDeviceTests.html#SilverCraft_CSCore_Tests_PortAudioDeviceTests_PortAudioSoundOut_ConstructorsAndDeviceEnumeration_Work
+  commentId: M:SilverCraft.CSCore.Tests.PortAudioDeviceTests.PortAudioSoundOut_ConstructorsAndDeviceEnumeration_Work
+  fullName: SilverCraft.CSCore.Tests.PortAudioDeviceTests.PortAudioSoundOut_ConstructorsAndDeviceEnumeration_Work()
+  nameWithType: PortAudioDeviceTests.PortAudioSoundOut_ConstructorsAndDeviceEnumeration_Work()
+- uid: SilverCraft.CSCore.Tests.PortAudioDeviceTests.PortAudioSoundOut_ConstructorsAndDeviceEnumeration_Work*
+  name: PortAudioSoundOut_ConstructorsAndDeviceEnumeration_Work
+  href: api/SilverCraft.CSCore.Tests.PortAudioDeviceTests.html#SilverCraft_CSCore_Tests_PortAudioDeviceTests_PortAudioSoundOut_ConstructorsAndDeviceEnumeration_Work_
+  commentId: Overload:SilverCraft.CSCore.Tests.PortAudioDeviceTests.PortAudioSoundOut_ConstructorsAndDeviceEnumeration_Work
+  isSpec: "True"
+  fullName: SilverCraft.CSCore.Tests.PortAudioDeviceTests.PortAudioSoundOut_ConstructorsAndDeviceEnumeration_Work
+  nameWithType: PortAudioDeviceTests.PortAudioSoundOut_ConstructorsAndDeviceEnumeration_Work
+- uid: SilverCraft.CSCore.Tests.PortAudioDeviceTests.PortAudioSoundOut_InitializeNullOrDisposed_Throws
+  name: PortAudioSoundOut_InitializeNullOrDisposed_Throws()
+  href: api/SilverCraft.CSCore.Tests.PortAudioDeviceTests.html#SilverCraft_CSCore_Tests_PortAudioDeviceTests_PortAudioSoundOut_InitializeNullOrDisposed_Throws
+  commentId: M:SilverCraft.CSCore.Tests.PortAudioDeviceTests.PortAudioSoundOut_InitializeNullOrDisposed_Throws
+  fullName: SilverCraft.CSCore.Tests.PortAudioDeviceTests.PortAudioSoundOut_InitializeNullOrDisposed_Throws()
+  nameWithType: PortAudioDeviceTests.PortAudioSoundOut_InitializeNullOrDisposed_Throws()
+- uid: SilverCraft.CSCore.Tests.PortAudioDeviceTests.PortAudioSoundOut_InitializeNullOrDisposed_Throws*
+  name: PortAudioSoundOut_InitializeNullOrDisposed_Throws
+  href: api/SilverCraft.CSCore.Tests.PortAudioDeviceTests.html#SilverCraft_CSCore_Tests_PortAudioDeviceTests_PortAudioSoundOut_InitializeNullOrDisposed_Throws_
+  commentId: Overload:SilverCraft.CSCore.Tests.PortAudioDeviceTests.PortAudioSoundOut_InitializeNullOrDisposed_Throws
+  isSpec: "True"
+  fullName: SilverCraft.CSCore.Tests.PortAudioDeviceTests.PortAudioSoundOut_InitializeNullOrDisposed_Throws
+  nameWithType: PortAudioDeviceTests.PortAudioSoundOut_InitializeNullOrDisposed_Throws
 - uid: SilverCraft.CSCore.Tests.ReviewRegressionTests
   name: ReviewRegressionTests
   href: api/SilverCraft.CSCore.Tests.ReviewRegressionTests.html
@@ -21716,6 +22376,32 @@ references:
   isSpec: "True"
   fullName: SilverCraft.CSCore.Tests.ReviewRegressionTests.MonoToStereo_Position_IsMeasuredInOutputSamples
   nameWithType: ReviewRegressionTests.MonoToStereo_Position_IsMeasuredInOutputSamples
+- uid: SilverCraft.CSCore.Tests.ReviewRegressionTests.SimpleResampler_ReadAtEndReturnsZero
+  name: SimpleResampler_ReadAtEndReturnsZero()
+  href: api/SilverCraft.CSCore.Tests.ReviewRegressionTests.html#SilverCraft_CSCore_Tests_ReviewRegressionTests_SimpleResampler_ReadAtEndReturnsZero
+  commentId: M:SilverCraft.CSCore.Tests.ReviewRegressionTests.SimpleResampler_ReadAtEndReturnsZero
+  fullName: SilverCraft.CSCore.Tests.ReviewRegressionTests.SimpleResampler_ReadAtEndReturnsZero()
+  nameWithType: ReviewRegressionTests.SimpleResampler_ReadAtEndReturnsZero()
+- uid: SilverCraft.CSCore.Tests.ReviewRegressionTests.SimpleResampler_ReadAtEndReturnsZero*
+  name: SimpleResampler_ReadAtEndReturnsZero
+  href: api/SilverCraft.CSCore.Tests.ReviewRegressionTests.html#SilverCraft_CSCore_Tests_ReviewRegressionTests_SimpleResampler_ReadAtEndReturnsZero_
+  commentId: Overload:SilverCraft.CSCore.Tests.ReviewRegressionTests.SimpleResampler_ReadAtEndReturnsZero
+  isSpec: "True"
+  fullName: SilverCraft.CSCore.Tests.ReviewRegressionTests.SimpleResampler_ReadAtEndReturnsZero
+  nameWithType: ReviewRegressionTests.SimpleResampler_ReadAtEndReturnsZero
+- uid: SilverCraft.CSCore.Tests.ReviewRegressionTests.SimpleResampler_ReadHonorsDestinationOffset
+  name: SimpleResampler_ReadHonorsDestinationOffset()
+  href: api/SilverCraft.CSCore.Tests.ReviewRegressionTests.html#SilverCraft_CSCore_Tests_ReviewRegressionTests_SimpleResampler_ReadHonorsDestinationOffset
+  commentId: M:SilverCraft.CSCore.Tests.ReviewRegressionTests.SimpleResampler_ReadHonorsDestinationOffset
+  fullName: SilverCraft.CSCore.Tests.ReviewRegressionTests.SimpleResampler_ReadHonorsDestinationOffset()
+  nameWithType: ReviewRegressionTests.SimpleResampler_ReadHonorsDestinationOffset()
+- uid: SilverCraft.CSCore.Tests.ReviewRegressionTests.SimpleResampler_ReadHonorsDestinationOffset*
+  name: SimpleResampler_ReadHonorsDestinationOffset
+  href: api/SilverCraft.CSCore.Tests.ReviewRegressionTests.html#SilverCraft_CSCore_Tests_ReviewRegressionTests_SimpleResampler_ReadHonorsDestinationOffset_
+  commentId: Overload:SilverCraft.CSCore.Tests.ReviewRegressionTests.SimpleResampler_ReadHonorsDestinationOffset
+  isSpec: "True"
+  fullName: SilverCraft.CSCore.Tests.ReviewRegressionTests.SimpleResampler_ReadHonorsDestinationOffset
+  nameWithType: ReviewRegressionTests.SimpleResampler_ReadHonorsDestinationOffset
 - uid: SilverCraft.CSCore.Tests.ReviewRegressionTests.StereoToMono_Position_IsMeasuredInMonoSamples
   name: StereoToMono_Position_IsMeasuredInMonoSamples()
   href: api/SilverCraft.CSCore.Tests.ReviewRegressionTests.html#SilverCraft_CSCore_Tests_ReviewRegressionTests_StereoToMono_Position_IsMeasuredInMonoSamples
@@ -21729,6 +22415,19 @@ references:
   isSpec: "True"
   fullName: SilverCraft.CSCore.Tests.ReviewRegressionTests.StereoToMono_Position_IsMeasuredInMonoSamples
   nameWithType: ReviewRegressionTests.StereoToMono_Position_IsMeasuredInMonoSamples
+- uid: SilverCraft.CSCore.Tests.ReviewRegressionTests.WaveFileReader_SkipsPaddingAfterOddSizedChunks
+  name: WaveFileReader_SkipsPaddingAfterOddSizedChunks()
+  href: api/SilverCraft.CSCore.Tests.ReviewRegressionTests.html#SilverCraft_CSCore_Tests_ReviewRegressionTests_WaveFileReader_SkipsPaddingAfterOddSizedChunks
+  commentId: M:SilverCraft.CSCore.Tests.ReviewRegressionTests.WaveFileReader_SkipsPaddingAfterOddSizedChunks
+  fullName: SilverCraft.CSCore.Tests.ReviewRegressionTests.WaveFileReader_SkipsPaddingAfterOddSizedChunks()
+  nameWithType: ReviewRegressionTests.WaveFileReader_SkipsPaddingAfterOddSizedChunks()
+- uid: SilverCraft.CSCore.Tests.ReviewRegressionTests.WaveFileReader_SkipsPaddingAfterOddSizedChunks*
+  name: WaveFileReader_SkipsPaddingAfterOddSizedChunks
+  href: api/SilverCraft.CSCore.Tests.ReviewRegressionTests.html#SilverCraft_CSCore_Tests_ReviewRegressionTests_WaveFileReader_SkipsPaddingAfterOddSizedChunks_
+  commentId: Overload:SilverCraft.CSCore.Tests.ReviewRegressionTests.WaveFileReader_SkipsPaddingAfterOddSizedChunks
+  isSpec: "True"
+  fullName: SilverCraft.CSCore.Tests.ReviewRegressionTests.WaveFileReader_SkipsPaddingAfterOddSizedChunks
+  nameWithType: ReviewRegressionTests.WaveFileReader_SkipsPaddingAfterOddSizedChunks
 - uid: SilverCraft.CSCore.Tests.ReviewRegressionTests.WaveWriter_OverwritingShorterFile_TruncatesOldTail
   name: WaveWriter_OverwritingShorterFile_TruncatesOldTail()
   href: api/SilverCraft.CSCore.Tests.ReviewRegressionTests.html#SilverCraft_CSCore_Tests_ReviewRegressionTests_WaveWriter_OverwritingShorterFile_TruncatesOldTail

@@ -509,34 +509,27 @@ items:
 references:
 - uid: SilverCraft.CSCore.Utils
   commentId: N:SilverCraft.CSCore.Utils
-  href: SilverCraft.html
   name: SilverCraft.CSCore.Utils
   nameWithType: SilverCraft.CSCore.Utils
   fullName: SilverCraft.CSCore.Utils
   spec.csharp:
   - uid: SilverCraft
     name: SilverCraft
-    href: SilverCraft.html
   - name: .
   - uid: SilverCraft.CSCore
     name: CSCore
-    href: SilverCraft.CSCore.html
   - name: .
   - uid: SilverCraft.CSCore.Utils
     name: Utils
-    href: SilverCraft.CSCore.Utils.html
   spec.vb:
   - uid: SilverCraft
     name: SilverCraft
-    href: SilverCraft.html
   - name: .
   - uid: SilverCraft.CSCore
     name: CSCore
-    href: SilverCraft.CSCore.html
   - name: .
   - uid: SilverCraft.CSCore.Utils
     name: Utils
-    href: SilverCraft.CSCore.Utils.html
 - uid: System.IEquatable{SilverCraft.CSCore.Utils.Complex}
   commentId: T:System.IEquatable{SilverCraft.CSCore.Utils.Complex}
   parent: System

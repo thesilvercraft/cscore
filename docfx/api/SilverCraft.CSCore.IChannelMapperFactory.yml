@@ -173,26 +173,21 @@ items:
 references:
 - uid: SilverCraft.CSCore
   commentId: N:SilverCraft.CSCore
-  href: SilverCraft.html
   name: SilverCraft.CSCore
   nameWithType: SilverCraft.CSCore
   fullName: SilverCraft.CSCore
   spec.csharp:
   - uid: SilverCraft
     name: SilverCraft
-    href: SilverCraft.html
   - name: .
   - uid: SilverCraft.CSCore
     name: CSCore
-    href: SilverCraft.CSCore.html
   spec.vb:
   - uid: SilverCraft
     name: SilverCraft
-    href: SilverCraft.html
   - name: .
   - uid: SilverCraft.CSCore
     name: CSCore
-    href: SilverCraft.CSCore.html
 - uid: SilverCraft.CSCore.IChannelMapperFactory.SilverCraft.CSCore.FluentExtensions.Synchronized``2
   commentId: M:SilverCraft.CSCore.FluentExtensions.Synchronized``2(``0)
   parent: SilverCraft.CSCore.FluentExtensions
@@ -306,34 +301,27 @@ references:
   fullName: SilverCraft.CSCore.DSP.ChannelMatrix
 - uid: SilverCraft.CSCore.DSP
   commentId: N:SilverCraft.CSCore.DSP
-  href: SilverCraft.html
   name: SilverCraft.CSCore.DSP
   nameWithType: SilverCraft.CSCore.DSP
   fullName: SilverCraft.CSCore.DSP
   spec.csharp:
   - uid: SilverCraft
     name: SilverCraft
-    href: SilverCraft.html
   - name: .
   - uid: SilverCraft.CSCore
     name: CSCore
-    href: SilverCraft.CSCore.html
   - name: .
   - uid: SilverCraft.CSCore.DSP
     name: DSP
-    href: SilverCraft.CSCore.DSP.html
   spec.vb:
   - uid: SilverCraft
     name: SilverCraft
-    href: SilverCraft.html
   - name: .
   - uid: SilverCraft.CSCore
     name: CSCore
-    href: SilverCraft.CSCore.html
   - name: .
   - uid: SilverCraft.CSCore.DSP
     name: DSP
-    href: SilverCraft.CSCore.DSP.html
 - uid: System.Int32
   commentId: T:System.Int32
   parent: System

@@ -52,7 +52,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: ChannelMatrix
     path: ../SilverCraft.CSCore/DSP/ChannelMatrix.cs
-    startLine: 10
+    startLine: 6
   assemblies:
   - SilverCraft.CSCore
   namespace: SilverCraft.CSCore.DSP
@@ -94,7 +94,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: StereoToFiveDotOneSurroundWithRear
     path: ../SilverCraft.CSCore/DSP/ChannelMatrix.cs
-    startLine: 15
+    startLine: 11
   assemblies:
   - SilverCraft.CSCore
   namespace: SilverCraft.CSCore.DSP
@@ -123,7 +123,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: FiveDotOneSurroundWithRearToStereo
     path: ../SilverCraft.CSCore/DSP/ChannelMatrix.cs
-    startLine: 20
+    startLine: 16
   assemblies:
   - SilverCraft.CSCore
   namespace: SilverCraft.CSCore.DSP
@@ -152,7 +152,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: StereoToFiveDotOneSurroundWithSide
     path: ../SilverCraft.CSCore/DSP/ChannelMatrix.cs
-    startLine: 25
+    startLine: 21
   assemblies:
   - SilverCraft.CSCore
   namespace: SilverCraft.CSCore.DSP
@@ -181,7 +181,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: FiveDotOneSurroundWithSideToStereo
     path: ../SilverCraft.CSCore/DSP/ChannelMatrix.cs
-    startLine: 30
+    startLine: 26
   assemblies:
   - SilverCraft.CSCore
   namespace: SilverCraft.CSCore.DSP
@@ -210,7 +210,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: StereoToSevenDotOneSurround
     path: ../SilverCraft.CSCore/DSP/ChannelMatrix.cs
-    startLine: 35
+    startLine: 31
   assemblies:
   - SilverCraft.CSCore
   namespace: SilverCraft.CSCore.DSP
@@ -239,7 +239,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: SevenDotOneSurroundToStereo
     path: ../SilverCraft.CSCore/DSP/ChannelMatrix.cs
-    startLine: 40
+    startLine: 36
   assemblies:
   - SilverCraft.CSCore
   namespace: SilverCraft.CSCore.DSP
@@ -268,7 +268,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: MonoToFiveDotOneSurroundWithRear
     path: ../SilverCraft.CSCore/DSP/ChannelMatrix.cs
-    startLine: 47
+    startLine: 43
   assemblies:
   - SilverCraft.CSCore
   namespace: SilverCraft.CSCore.DSP
@@ -297,7 +297,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: FiveDotOneSurroundWithRearToMono
     path: ../SilverCraft.CSCore/DSP/ChannelMatrix.cs
-    startLine: 52
+    startLine: 48
   assemblies:
   - SilverCraft.CSCore
   namespace: SilverCraft.CSCore.DSP
@@ -326,7 +326,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: MonoToFiveDotOneSurroundWithSide
     path: ../SilverCraft.CSCore/DSP/ChannelMatrix.cs
-    startLine: 58
+    startLine: 54
   assemblies:
   - SilverCraft.CSCore
   namespace: SilverCraft.CSCore.DSP
@@ -355,7 +355,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: FiveDotOneSurroundWithSideToMono
     path: ../SilverCraft.CSCore/DSP/ChannelMatrix.cs
-    startLine: 63
+    startLine: 59
   assemblies:
   - SilverCraft.CSCore
   namespace: SilverCraft.CSCore.DSP
@@ -384,7 +384,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: MonoToSevenDotOneSurround
     path: ../SilverCraft.CSCore/DSP/ChannelMatrix.cs
-    startLine: 68
+    startLine: 64
   assemblies:
   - SilverCraft.CSCore
   namespace: SilverCraft.CSCore.DSP
@@ -413,7 +413,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: SevenDotOneSurroundToMono
     path: ../SilverCraft.CSCore/DSP/ChannelMatrix.cs
-    startLine: 73
+    startLine: 69
   assemblies:
   - SilverCraft.CSCore
   namespace: SilverCraft.CSCore.DSP
@@ -442,7 +442,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: StereoToMonoMatrix
     path: ../SilverCraft.CSCore/DSP/ChannelMatrix.cs
-    startLine: 78
+    startLine: 74
   assemblies:
   - SilverCraft.CSCore
   namespace: SilverCraft.CSCore.DSP
@@ -471,7 +471,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: MonoToStereoMatrix
     path: ../SilverCraft.CSCore/DSP/ChannelMatrix.cs
-    startLine: 83
+    startLine: 79
   assemblies:
   - SilverCraft.CSCore
   namespace: SilverCraft.CSCore.DSP
@@ -500,7 +500,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: FiveDotOneSurroundWithRearToSevenDotOne
     path: ../SilverCraft.CSCore/DSP/ChannelMatrix.cs
-    startLine: 88
+    startLine: 84
   assemblies:
   - SilverCraft.CSCore
   namespace: SilverCraft.CSCore.DSP
@@ -529,7 +529,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: SevenDotOneSurroundToFiveDotOneSurroundWithRear
     path: ../SilverCraft.CSCore/DSP/ChannelMatrix.cs
-    startLine: 93
+    startLine: 89
   assemblies:
   - SilverCraft.CSCore
   namespace: SilverCraft.CSCore.DSP
@@ -558,7 +558,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: FiveDotOneSurroundWithSideToSevenDotOne
     path: ../SilverCraft.CSCore/DSP/ChannelMatrix.cs
-    startLine: 98
+    startLine: 94
   assemblies:
   - SilverCraft.CSCore
   namespace: SilverCraft.CSCore.DSP
@@ -587,7 +587,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: SevenDotOneSurroundToFiveDotOneSurroundWithSide
     path: ../SilverCraft.CSCore/DSP/ChannelMatrix.cs
-    startLine: 103
+    startLine: 99
   assemblies:
   - SilverCraft.CSCore
   namespace: SilverCraft.CSCore.DSP
@@ -616,7 +616,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: QuadraphonicToStereo
     path: ../SilverCraft.CSCore/DSP/ChannelMatrix.cs
-    startLine: 108
+    startLine: 104
   assemblies:
   - SilverCraft.CSCore
   namespace: SilverCraft.CSCore.DSP
@@ -645,7 +645,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: StereoToQuadraphonic
     path: ../SilverCraft.CSCore/DSP/ChannelMatrix.cs
-    startLine: 113
+    startLine: 109
   assemblies:
   - SilverCraft.CSCore
   namespace: SilverCraft.CSCore.DSP
@@ -674,7 +674,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: GetMatrix
     path: ../SilverCraft.CSCore/DSP/ChannelMatrix.cs
-    startLine: 123
+    startLine: 119
   assemblies:
   - SilverCraft.CSCore
   namespace: SilverCraft.CSCore.DSP
@@ -719,7 +719,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: GetMatrix
     path: ../SilverCraft.CSCore/DSP/ChannelMatrix.cs
-    startLine: 138
+    startLine: 134
   assemblies:
   - SilverCraft.CSCore
   namespace: SilverCraft.CSCore.DSP
@@ -1136,34 +1136,27 @@ items:
 references:
 - uid: SilverCraft.CSCore.DSP
   commentId: N:SilverCraft.CSCore.DSP
-  href: SilverCraft.html
   name: SilverCraft.CSCore.DSP
   nameWithType: SilverCraft.CSCore.DSP
   fullName: SilverCraft.CSCore.DSP
   spec.csharp:
   - uid: SilverCraft
     name: SilverCraft
-    href: SilverCraft.html
   - name: .
   - uid: SilverCraft.CSCore
     name: CSCore
-    href: SilverCraft.CSCore.html
   - name: .
   - uid: SilverCraft.CSCore.DSP
     name: DSP
-    href: SilverCraft.CSCore.DSP.html
   spec.vb:
   - uid: SilverCraft
     name: SilverCraft
-    href: SilverCraft.html
   - name: .
   - uid: SilverCraft.CSCore
     name: CSCore
-    href: SilverCraft.CSCore.html
   - name: .
   - uid: SilverCraft.CSCore.DSP
     name: DSP
-    href: SilverCraft.CSCore.DSP.html
 - uid: System.Object
   commentId: T:System.Object
   parent: System
@@ -1494,26 +1487,21 @@ references:
   fullName: SilverCraft.CSCore.FluentExtensions
 - uid: SilverCraft.CSCore
   commentId: N:SilverCraft.CSCore
-  href: SilverCraft.html
   name: SilverCraft.CSCore
   nameWithType: SilverCraft.CSCore
   fullName: SilverCraft.CSCore
   spec.csharp:
   - uid: SilverCraft
     name: SilverCraft
-    href: SilverCraft.html
   - name: .
   - uid: SilverCraft.CSCore
     name: CSCore
-    href: SilverCraft.CSCore.html
   spec.vb:
   - uid: SilverCraft
     name: SilverCraft
-    href: SilverCraft.html
   - name: .
   - uid: SilverCraft.CSCore
     name: CSCore
-    href: SilverCraft.CSCore.html
 - uid: SilverCraft.CSCore.DSP.ChannelMatrix
   commentId: T:SilverCraft.CSCore.DSP.ChannelMatrix
   parent: SilverCraft.CSCore.DSP

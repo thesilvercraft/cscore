@@ -21,11 +21,12 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: SimpleResampler
     path: ../SilverCraft.CSCore/DSP/Resampler/SimpleResampler.cs
-    startLine: 7
+    startLine: 10
   assemblies:
   - SilverCraft.CSCore
   namespace: SilverCraft.CSCore.DSP.Resampler
   summary: Linear interpolation method.
+  remarks: Creates a new instance of the <xref href="SilverCraft.CSCore.DSP.Resampler.SimpleResampler" data-throw-if-not-resolved="false"></xref> class.
   example: []
   syntax:
     content: 'public sealed class SimpleResampler : ResamplerBase, ISampleAggregator, ISampleSource, IAggregator<float, ISampleSource>, IReadableAudioSource<float>, IAudioSource, IDisposable'
@@ -92,22 +93,23 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: .ctor
     path: ../SilverCraft.CSCore/DSP/Resampler/SimpleResampler.cs
-    startLine: 14
+    startLine: 10
   assemblies:
   - SilverCraft.CSCore
   namespace: SilverCraft.CSCore.DSP.Resampler
-  summary: Creates a new instance of the <xref href="SilverCraft.CSCore.DSP.Resampler.SimpleResampler" data-throw-if-not-resolved="false"></xref> class.
+  summary: Linear interpolation method.
+  remarks: Creates a new instance of the <xref href="SilverCraft.CSCore.DSP.Resampler.SimpleResampler" data-throw-if-not-resolved="false"></xref> class.
   example: []
   syntax:
-    content: public SimpleResampler(ISampleSource source, int SampleRate)
+    content: public SimpleResampler(ISampleSource source, int sampleRate)
     parameters:
     - id: source
       type: SilverCraft.CSCore.ISampleSource
       description: The input sample source.
-    - id: SampleRate
+    - id: sampleRate
       type: System.Int32
       description: Output sampling rate
-    content.vb: Public Sub New(source As ISampleSource, SampleRate As Integer)
+    content.vb: Public Sub New(source As ISampleSource, sampleRate As Integer)
   overload: SilverCraft.CSCore.DSP.Resampler.SimpleResampler.#ctor*
   nameWithType.vb: SimpleResampler.New(ISampleSource, Integer)
   fullName.vb: SilverCraft.CSCore.DSP.Resampler.SimpleResampler.New(SilverCraft.CSCore.ISampleSource, Integer)
@@ -130,7 +132,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: Process
     path: ../SilverCraft.CSCore/DSP/Resampler/SimpleResampler.cs
-    startLine: 27
+    startLine: 21
   assemblies:
   - SilverCraft.CSCore
   namespace: SilverCraft.CSCore.DSP.Resampler
@@ -158,44 +160,41 @@ items:
   fullName.vb: SilverCraft.CSCore.DSP.Resampler.SimpleResampler.Process(Single(), Integer, Integer)
   name.vb: Process(Single(), Integer, Integer)
 references:
+- uid: SilverCraft.CSCore.DSP.Resampler.SimpleResampler
+  commentId: T:SilverCraft.CSCore.DSP.Resampler.SimpleResampler
+  href: SilverCraft.CSCore.DSP.Resampler.SimpleResampler.html
+  name: SimpleResampler
+  nameWithType: SimpleResampler
+  fullName: SilverCraft.CSCore.DSP.Resampler.SimpleResampler
 - uid: SilverCraft.CSCore.DSP.Resampler
   commentId: N:SilverCraft.CSCore.DSP.Resampler
-  href: SilverCraft.html
   name: SilverCraft.CSCore.DSP.Resampler
   nameWithType: SilverCraft.CSCore.DSP.Resampler
   fullName: SilverCraft.CSCore.DSP.Resampler
   spec.csharp:
   - uid: SilverCraft
     name: SilverCraft
-    href: SilverCraft.html
   - name: .
   - uid: SilverCraft.CSCore
     name: CSCore
-    href: SilverCraft.CSCore.html
   - name: .
   - uid: SilverCraft.CSCore.DSP
     name: DSP
-    href: SilverCraft.CSCore.DSP.html
   - name: .
   - uid: SilverCraft.CSCore.DSP.Resampler
     name: Resampler
-    href: SilverCraft.CSCore.DSP.Resampler.html
   spec.vb:
   - uid: SilverCraft
     name: SilverCraft
-    href: SilverCraft.html
   - name: .
   - uid: SilverCraft.CSCore
     name: CSCore
-    href: SilverCraft.CSCore.html
   - name: .
   - uid: SilverCraft.CSCore.DSP
     name: DSP
-    href: SilverCraft.CSCore.DSP.html
   - name: .
   - uid: SilverCraft.CSCore.DSP.Resampler
     name: Resampler
-    href: SilverCraft.CSCore.DSP.Resampler.html
 - uid: System.Object
   commentId: T:System.Object
   parent: System
@@ -1330,26 +1329,21 @@ references:
   fullName: System
 - uid: SilverCraft.CSCore
   commentId: N:SilverCraft.CSCore
-  href: SilverCraft.html
   name: SilverCraft.CSCore
   nameWithType: SilverCraft.CSCore
   fullName: SilverCraft.CSCore
   spec.csharp:
   - uid: SilverCraft
     name: SilverCraft
-    href: SilverCraft.html
   - name: .
   - uid: SilverCraft.CSCore
     name: CSCore
-    href: SilverCraft.CSCore.html
   spec.vb:
   - uid: SilverCraft
     name: SilverCraft
-    href: SilverCraft.html
   - name: .
   - uid: SilverCraft.CSCore
     name: CSCore
-    href: SilverCraft.CSCore.html
 - uid: SilverCraft.CSCore.IAggregator`2
   commentId: T:SilverCraft.CSCore.IAggregator`2
   href: SilverCraft.CSCore.IAggregator-2.html
@@ -2039,12 +2033,6 @@ references:
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/system.int32
   - name: )
-- uid: SilverCraft.CSCore.DSP.Resampler.SimpleResampler
-  commentId: T:SilverCraft.CSCore.DSP.Resampler.SimpleResampler
-  href: SilverCraft.CSCore.DSP.Resampler.SimpleResampler.html
-  name: SimpleResampler
-  nameWithType: SimpleResampler
-  fullName: SilverCraft.CSCore.DSP.Resampler.SimpleResampler
 - uid: SilverCraft.CSCore.DSP.Resampler.SimpleResampler.#ctor*
   commentId: Overload:SilverCraft.CSCore.DSP.Resampler.SimpleResampler.#ctor
   href: SilverCraft.CSCore.DSP.Resampler.SimpleResampler.html#SilverCraft_CSCore_DSP_Resampler_SimpleResampler__ctor_SilverCraft_CSCore_ISampleSource_System_Int32_

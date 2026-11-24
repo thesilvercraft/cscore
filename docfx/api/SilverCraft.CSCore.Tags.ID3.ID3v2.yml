@@ -431,42 +431,33 @@ references:
   - name: )
 - uid: SilverCraft.CSCore.Tags.ID3
   commentId: N:SilverCraft.CSCore.Tags.ID3
-  href: SilverCraft.html
   name: SilverCraft.CSCore.Tags.ID3
   nameWithType: SilverCraft.CSCore.Tags.ID3
   fullName: SilverCraft.CSCore.Tags.ID3
   spec.csharp:
   - uid: SilverCraft
     name: SilverCraft
-    href: SilverCraft.html
   - name: .
   - uid: SilverCraft.CSCore
     name: CSCore
-    href: SilverCraft.CSCore.html
   - name: .
   - uid: SilverCraft.CSCore.Tags
     name: Tags
-    href: SilverCraft.CSCore.Tags.html
   - name: .
   - uid: SilverCraft.CSCore.Tags.ID3
     name: ID3
-    href: SilverCraft.CSCore.Tags.ID3.html
   spec.vb:
   - uid: SilverCraft
     name: SilverCraft
-    href: SilverCraft.html
   - name: .
   - uid: SilverCraft.CSCore
     name: CSCore
-    href: SilverCraft.CSCore.html
   - name: .
   - uid: SilverCraft.CSCore.Tags
     name: Tags
-    href: SilverCraft.CSCore.Tags.html
   - name: .
   - uid: SilverCraft.CSCore.Tags.ID3
     name: ID3
-    href: SilverCraft.CSCore.Tags.ID3.html
 - uid: System.Object
   commentId: T:System.Object
   parent: System
@@ -902,26 +893,21 @@ references:
   fullName: SilverCraft.CSCore.FluentExtensions
 - uid: SilverCraft.CSCore
   commentId: N:SilverCraft.CSCore
-  href: SilverCraft.html
   name: SilverCraft.CSCore
   nameWithType: SilverCraft.CSCore
   fullName: SilverCraft.CSCore
   spec.csharp:
   - uid: SilverCraft
     name: SilverCraft
-    href: SilverCraft.html
   - name: .
   - uid: SilverCraft.CSCore
     name: CSCore
-    href: SilverCraft.CSCore.html
   spec.vb:
   - uid: SilverCraft
     name: SilverCraft
-    href: SilverCraft.html
   - name: .
   - uid: SilverCraft.CSCore
     name: CSCore
-    href: SilverCraft.CSCore.html
 - uid: SilverCraft.CSCore.Tags.ID3.ID3v2.FromFile*
   commentId: Overload:SilverCraft.CSCore.Tags.ID3.ID3v2.FromFile
   href: SilverCraft.CSCore.Tags.ID3.ID3v2.html#SilverCraft_CSCore_Tags_ID3_ID3v2_FromFile_System_String_
@@ -1081,50 +1067,39 @@ references:
   fullName: SilverCraft.CSCore.Tags.ID3.Frames.Frame
 - uid: SilverCraft.CSCore.Tags.ID3.Frames
   commentId: N:SilverCraft.CSCore.Tags.ID3.Frames
-  href: SilverCraft.html
   name: SilverCraft.CSCore.Tags.ID3.Frames
   nameWithType: SilverCraft.CSCore.Tags.ID3.Frames
   fullName: SilverCraft.CSCore.Tags.ID3.Frames
   spec.csharp:
   - uid: SilverCraft
     name: SilverCraft
-    href: SilverCraft.html
   - name: .
   - uid: SilverCraft.CSCore
     name: CSCore
-    href: SilverCraft.CSCore.html
   - name: .
   - uid: SilverCraft.CSCore.Tags
     name: Tags
-    href: SilverCraft.CSCore.Tags.html
   - name: .
   - uid: SilverCraft.CSCore.Tags.ID3
     name: ID3
-    href: SilverCraft.CSCore.Tags.ID3.html
   - name: .
   - uid: SilverCraft.CSCore.Tags.ID3.Frames
     name: Frames
-    href: SilverCraft.CSCore.Tags.ID3.Frames.html
   spec.vb:
   - uid: SilverCraft
     name: SilverCraft
-    href: SilverCraft.html
   - name: .
   - uid: SilverCraft.CSCore
     name: CSCore
-    href: SilverCraft.CSCore.html
   - name: .
   - uid: SilverCraft.CSCore.Tags
     name: Tags
-    href: SilverCraft.CSCore.Tags.html
   - name: .
   - uid: SilverCraft.CSCore.Tags.ID3
     name: ID3
-    href: SilverCraft.CSCore.Tags.ID3.html
   - name: .
   - uid: SilverCraft.CSCore.Tags.ID3.Frames
     name: Frames
-    href: SilverCraft.CSCore.Tags.ID3.Frames.html
 - uid: SilverCraft.CSCore.Tags.ID3.ID3v2.#ctor*
   commentId: Overload:SilverCraft.CSCore.Tags.ID3.ID3v2.#ctor
   href: SilverCraft.CSCore.Tags.ID3.ID3v2.html#SilverCraft_CSCore_Tags_ID3_ID3v2__ctor_System_IO_Stream_

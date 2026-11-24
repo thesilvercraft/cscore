@@ -192,50 +192,39 @@ items:
 references:
 - uid: SilverCraft.CSCore.Codecs.FLAC.Metadata
   commentId: N:SilverCraft.CSCore.Codecs.FLAC.Metadata
-  href: SilverCraft.html
   name: SilverCraft.CSCore.Codecs.FLAC.Metadata
   nameWithType: SilverCraft.CSCore.Codecs.FLAC.Metadata
   fullName: SilverCraft.CSCore.Codecs.FLAC.Metadata
   spec.csharp:
   - uid: SilverCraft
     name: SilverCraft
-    href: SilverCraft.html
   - name: .
   - uid: SilverCraft.CSCore
     name: CSCore
-    href: SilverCraft.CSCore.html
   - name: .
   - uid: SilverCraft.CSCore.Codecs
     name: Codecs
-    href: SilverCraft.CSCore.Codecs.html
   - name: .
   - uid: SilverCraft.CSCore.Codecs.FLAC
     name: FLAC
-    href: SilverCraft.CSCore.Codecs.FLAC.html
   - name: .
   - uid: SilverCraft.CSCore.Codecs.FLAC.Metadata
     name: Metadata
-    href: SilverCraft.CSCore.Codecs.FLAC.Metadata.html
   spec.vb:
   - uid: SilverCraft
     name: SilverCraft
-    href: SilverCraft.html
   - name: .
   - uid: SilverCraft.CSCore
     name: CSCore
-    href: SilverCraft.CSCore.html
   - name: .
   - uid: SilverCraft.CSCore.Codecs
     name: Codecs
-    href: SilverCraft.CSCore.Codecs.html
   - name: .
   - uid: SilverCraft.CSCore.Codecs.FLAC
     name: FLAC
-    href: SilverCraft.CSCore.Codecs.FLAC.html
   - name: .
   - uid: SilverCraft.CSCore.Codecs.FLAC.Metadata
     name: Metadata
-    href: SilverCraft.CSCore.Codecs.FLAC.Metadata.html
 - uid: System.Object
   commentId: T:System.Object
   parent: System
@@ -542,26 +531,21 @@ references:
   fullName: SilverCraft.CSCore.FluentExtensions
 - uid: SilverCraft.CSCore
   commentId: N:SilverCraft.CSCore
-  href: SilverCraft.html
   name: SilverCraft.CSCore
   nameWithType: SilverCraft.CSCore
   fullName: SilverCraft.CSCore
   spec.csharp:
   - uid: SilverCraft
     name: SilverCraft
-    href: SilverCraft.html
   - name: .
   - uid: SilverCraft.CSCore
     name: CSCore
-    href: SilverCraft.CSCore.html
   spec.vb:
   - uid: SilverCraft
     name: SilverCraft
-    href: SilverCraft.html
   - name: .
   - uid: SilverCraft.CSCore
     name: CSCore
-    href: SilverCraft.CSCore.html
 - uid: SilverCraft.CSCore.Codecs.FLAC.Metadata.FlacMetadataFactory.Instance*
   commentId: Overload:SilverCraft.CSCore.Codecs.FLAC.Metadata.FlacMetadataFactory.Instance
   href: SilverCraft.CSCore.Codecs.FLAC.Metadata.FlacMetadataFactory.html#SilverCraft_CSCore_Codecs_FLAC_Metadata_FlacMetadataFactory_Instance
@@ -597,42 +581,33 @@ references:
   fullName: SilverCraft.CSCore.Codecs.FLAC.Metadata.FlacMetadataFactory.RegistermetadataType
 - uid: SilverCraft.CSCore.Codecs.FLAC
   commentId: N:SilverCraft.CSCore.Codecs.FLAC
-  href: SilverCraft.html
   name: SilverCraft.CSCore.Codecs.FLAC
   nameWithType: SilverCraft.CSCore.Codecs.FLAC
   fullName: SilverCraft.CSCore.Codecs.FLAC
   spec.csharp:
   - uid: SilverCraft
     name: SilverCraft
-    href: SilverCraft.html
   - name: .
   - uid: SilverCraft.CSCore
     name: CSCore
-    href: SilverCraft.CSCore.html
   - name: .
   - uid: SilverCraft.CSCore.Codecs
     name: Codecs
-    href: SilverCraft.CSCore.Codecs.html
   - name: .
   - uid: SilverCraft.CSCore.Codecs.FLAC
     name: FLAC
-    href: SilverCraft.CSCore.Codecs.FLAC.html
   spec.vb:
   - uid: SilverCraft
     name: SilverCraft
-    href: SilverCraft.html
   - name: .
   - uid: SilverCraft.CSCore
     name: CSCore
-    href: SilverCraft.CSCore.html
   - name: .
   - uid: SilverCraft.CSCore.Codecs
     name: Codecs
-    href: SilverCraft.CSCore.Codecs.html
   - name: .
   - uid: SilverCraft.CSCore.Codecs.FLAC
     name: FLAC
-    href: SilverCraft.CSCore.Codecs.FLAC.html
 - uid: System.Int32
   commentId: T:System.Int32
   parent: System

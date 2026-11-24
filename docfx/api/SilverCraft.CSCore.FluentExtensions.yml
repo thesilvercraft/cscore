@@ -694,26 +694,21 @@ items:
 references:
 - uid: SilverCraft.CSCore
   commentId: N:SilverCraft.CSCore
-  href: SilverCraft.html
   name: SilverCraft.CSCore
   nameWithType: SilverCraft.CSCore
   fullName: SilverCraft.CSCore
   spec.csharp:
   - uid: SilverCraft
     name: SilverCraft
-    href: SilverCraft.html
   - name: .
   - uid: SilverCraft.CSCore
     name: CSCore
-    href: SilverCraft.CSCore.html
   spec.vb:
   - uid: SilverCraft
     name: SilverCraft
-    href: SilverCraft.html
   - name: .
   - uid: SilverCraft.CSCore
     name: CSCore
-    href: SilverCraft.CSCore.html
 - uid: System.Object
   commentId: T:System.Object
   parent: System
@@ -1300,34 +1295,27 @@ references:
   - name: )
 - uid: SilverCraft.CSCore.Streams
   commentId: N:SilverCraft.CSCore.Streams
-  href: SilverCraft.html
   name: SilverCraft.CSCore.Streams
   nameWithType: SilverCraft.CSCore.Streams
   fullName: SilverCraft.CSCore.Streams
   spec.csharp:
   - uid: SilverCraft
     name: SilverCraft
-    href: SilverCraft.html
   - name: .
   - uid: SilverCraft.CSCore
     name: CSCore
-    href: SilverCraft.CSCore.html
   - name: .
   - uid: SilverCraft.CSCore.Streams
     name: Streams
-    href: SilverCraft.CSCore.Streams.html
   spec.vb:
   - uid: SilverCraft
     name: SilverCraft
-    href: SilverCraft.html
   - name: .
   - uid: SilverCraft.CSCore
     name: CSCore
-    href: SilverCraft.CSCore.html
   - name: .
   - uid: SilverCraft.CSCore.Streams
     name: Streams
-    href: SilverCraft.CSCore.Streams.html
 - uid: SilverCraft.CSCore.FluentExtensions.OnEndOfStream*
   commentId: Overload:SilverCraft.CSCore.FluentExtensions.OnEndOfStream
   href: SilverCraft.CSCore.FluentExtensions.html#SilverCraft_CSCore_FluentExtensions_OnEndOfStream_SilverCraft_CSCore_IWaveSource_System_Action_SilverCraft_CSCore_IWaveSource__

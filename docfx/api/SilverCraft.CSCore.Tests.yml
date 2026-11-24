@@ -6,6 +6,7 @@ items:
   children:
   - SilverCraft.CSCore.Tests.AdditionalCoverageTests
   - SilverCraft.CSCore.Tests.AudioReadOffsetTests
+  - SilverCraft.CSCore.Tests.BufferedPortAudioSoundOutTests
   - SilverCraft.CSCore.Tests.BugReproTests
   - SilverCraft.CSCore.Tests.DspCoverageTests
   - SilverCraft.CSCore.Tests.DspTests
@@ -13,6 +14,7 @@ items:
   - SilverCraft.CSCore.Tests.FlacFileTests
   - SilverCraft.CSCore.Tests.FlacSeekTableTests
   - SilverCraft.CSCore.Tests.Id3Tests
+  - SilverCraft.CSCore.Tests.PortAudioDeviceTests
   - SilverCraft.CSCore.Tests.ReviewRegressionTests
   - SilverCraft.CSCore.Tests.SampleConverterTests
   - SilverCraft.CSCore.Tests.StreamChannelTests
@@ -46,6 +48,12 @@ references:
   name: AudioReadOffsetTests
   nameWithType: AudioReadOffsetTests
   fullName: SilverCraft.CSCore.Tests.AudioReadOffsetTests
+- uid: SilverCraft.CSCore.Tests.BufferedPortAudioSoundOutTests
+  commentId: T:SilverCraft.CSCore.Tests.BufferedPortAudioSoundOutTests
+  href: SilverCraft.CSCore.Tests.BufferedPortAudioSoundOutTests.html
+  name: BufferedPortAudioSoundOutTests
+  nameWithType: BufferedPortAudioSoundOutTests
+  fullName: SilverCraft.CSCore.Tests.BufferedPortAudioSoundOutTests
 - uid: SilverCraft.CSCore.Tests.BugReproTests
   commentId: T:SilverCraft.CSCore.Tests.BugReproTests
   href: SilverCraft.CSCore.Tests.BugReproTests.html
@@ -88,6 +96,12 @@ references:
   name: Id3Tests
   nameWithType: Id3Tests
   fullName: SilverCraft.CSCore.Tests.Id3Tests
+- uid: SilverCraft.CSCore.Tests.PortAudioDeviceTests
+  commentId: T:SilverCraft.CSCore.Tests.PortAudioDeviceTests
+  href: SilverCraft.CSCore.Tests.PortAudioDeviceTests.html
+  name: PortAudioDeviceTests
+  nameWithType: PortAudioDeviceTests
+  fullName: SilverCraft.CSCore.Tests.PortAudioDeviceTests
 - uid: SilverCraft.CSCore.Tests.ReviewRegressionTests
   commentId: T:SilverCraft.CSCore.Tests.ReviewRegressionTests
   href: SilverCraft.CSCore.Tests.ReviewRegressionTests.html

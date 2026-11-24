@@ -73,9 +73,13 @@ items:
   fullName: SilverCraft.CSCore.PortAudio.Native.NativeMethods
   type: Class
   source:
+    remote:
+      path: SilverCraft.CSCore/PortAudio/Native/NativeMethods.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
     id: NativeMethods
-    path: C:\Users\Filip Velichkovski\RiderProjects\cscore\SilverCraft.CSCore\obj\Release\net10.0\SilverCraft.CSCore.NativeLibraryResolver\SilverCraft.CSCore.NativeLibraryResolver.SourceGeneratorWithAttributes\NativeMethods.DllImportResolver.g.cs
-    startLine: 10
+    path: ../SilverCraft.CSCore/PortAudio/Native/NativeMethods.cs
+    startLine: 23
   assemblies:
   - SilverCraft.CSCore
   namespace: SilverCraft.CSCore.PortAudio.Native
@@ -1662,7 +1666,7 @@ items:
   type: Method
   source:
     id: DllImportResolver
-    path: C:\Users\Filip Velichkovski\RiderProjects\cscore\SilverCraft.CSCore\obj\Release\net10.0\SilverCraft.CSCore.NativeLibraryResolver\SilverCraft.CSCore.NativeLibraryResolver.SourceGeneratorWithAttributes\NativeMethods.DllImportResolver.g.cs
+    path: /var/home/silver/repos/cscore/SilverCraft.CSCore/obj/Release/net10.0/SilverCraft.CSCore.NativeLibraryResolver/SilverCraft.CSCore.NativeLibraryResolver.SourceGeneratorWithAttributes/NativeMethods.DllImportResolver.g.cs
     startLine: 12
   assemblies:
   - SilverCraft.CSCore
@@ -1686,42 +1690,33 @@ items:
 references:
 - uid: SilverCraft.CSCore.PortAudio.Native
   commentId: N:SilverCraft.CSCore.PortAudio.Native
-  href: SilverCraft.html
   name: SilverCraft.CSCore.PortAudio.Native
   nameWithType: SilverCraft.CSCore.PortAudio.Native
   fullName: SilverCraft.CSCore.PortAudio.Native
   spec.csharp:
   - uid: SilverCraft
     name: SilverCraft
-    href: SilverCraft.html
   - name: .
   - uid: SilverCraft.CSCore
     name: CSCore
-    href: SilverCraft.CSCore.html
   - name: .
   - uid: SilverCraft.CSCore.PortAudio
     name: PortAudio
-    href: SilverCraft.CSCore.PortAudio.html
   - name: .
   - uid: SilverCraft.CSCore.PortAudio.Native
     name: Native
-    href: SilverCraft.CSCore.PortAudio.Native.html
   spec.vb:
   - uid: SilverCraft
     name: SilverCraft
-    href: SilverCraft.html
   - name: .
   - uid: SilverCraft.CSCore
     name: CSCore
-    href: SilverCraft.CSCore.html
   - name: .
   - uid: SilverCraft.CSCore.PortAudio
     name: PortAudio
-    href: SilverCraft.CSCore.PortAudio.html
   - name: .
   - uid: SilverCraft.CSCore.PortAudio.Native
     name: Native
-    href: SilverCraft.CSCore.PortAudio.Native.html
 - uid: System.Object
   commentId: T:System.Object
   parent: System

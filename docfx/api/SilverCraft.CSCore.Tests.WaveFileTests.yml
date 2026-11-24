@@ -151,34 +151,27 @@ items:
 references:
 - uid: SilverCraft.CSCore.Tests
   commentId: N:SilverCraft.CSCore.Tests
-  href: SilverCraft.html
   name: SilverCraft.CSCore.Tests
   nameWithType: SilverCraft.CSCore.Tests
   fullName: SilverCraft.CSCore.Tests
   spec.csharp:
   - uid: SilverCraft
     name: SilverCraft
-    href: SilverCraft.html
   - name: .
   - uid: SilverCraft.CSCore
     name: CSCore
-    href: SilverCraft.CSCore.html
   - name: .
   - uid: SilverCraft.CSCore.Tests
     name: Tests
-    href: SilverCraft.CSCore.Tests.html
   spec.vb:
   - uid: SilverCraft
     name: SilverCraft
-    href: SilverCraft.html
   - name: .
   - uid: SilverCraft.CSCore
     name: CSCore
-    href: SilverCraft.CSCore.html
   - name: .
   - uid: SilverCraft.CSCore.Tests
     name: Tests
-    href: SilverCraft.CSCore.Tests.html
 - uid: System.Object
   commentId: T:System.Object
   parent: System
@@ -485,26 +478,21 @@ references:
   fullName: SilverCraft.CSCore.FluentExtensions
 - uid: SilverCraft.CSCore
   commentId: N:SilverCraft.CSCore
-  href: SilverCraft.html
   name: SilverCraft.CSCore
   nameWithType: SilverCraft.CSCore
   fullName: SilverCraft.CSCore
   spec.csharp:
   - uid: SilverCraft
     name: SilverCraft
-    href: SilverCraft.html
   - name: .
   - uid: SilverCraft.CSCore
     name: CSCore
-    href: SilverCraft.CSCore.html
   spec.vb:
   - uid: SilverCraft
     name: SilverCraft
-    href: SilverCraft.html
   - name: .
   - uid: SilverCraft.CSCore
     name: CSCore
-    href: SilverCraft.CSCore.html
 - uid: SilverCraft.CSCore.Tests.WaveFileTests.WaveWriterAndReader_RoundTrip_Pcm16*
   commentId: Overload:SilverCraft.CSCore.Tests.WaveFileTests.WaveWriterAndReader_RoundTrip_Pcm16
   href: SilverCraft.CSCore.Tests.WaveFileTests.html#SilverCraft_CSCore_Tests_WaveFileTests_WaveWriterAndReader_RoundTrip_Pcm16

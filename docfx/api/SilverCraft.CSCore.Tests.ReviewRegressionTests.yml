@@ -7,7 +7,10 @@ items:
   children:
   - SilverCraft.CSCore.Tests.ReviewRegressionTests.ID3v2_FromStream_HandlesPartialReadsOfTagPayload
   - SilverCraft.CSCore.Tests.ReviewRegressionTests.MonoToStereo_Position_IsMeasuredInOutputSamples
+  - SilverCraft.CSCore.Tests.ReviewRegressionTests.SimpleResampler_ReadAtEndReturnsZero
+  - SilverCraft.CSCore.Tests.ReviewRegressionTests.SimpleResampler_ReadHonorsDestinationOffset
   - SilverCraft.CSCore.Tests.ReviewRegressionTests.StereoToMono_Position_IsMeasuredInMonoSamples
+  - SilverCraft.CSCore.Tests.ReviewRegressionTests.WaveFileReader_SkipsPaddingAfterOddSizedChunks
   - SilverCraft.CSCore.Tests.ReviewRegressionTests.WaveWriter_OverwritingShorterFile_TruncatesOldTail
   langs:
   - csharp
@@ -23,7 +26,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: ReviewRegressionTests
     path: ../SilverCraft.CSCore.Tests/ReviewRegressionTests.cs
-    startLine: 7
+    startLine: 8
   assemblies:
   - SilverCraft.CSCore.Tests
   namespace: SilverCraft.CSCore.Tests
@@ -59,7 +62,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: WaveWriter_OverwritingShorterFile_TruncatesOldTail
     path: ../SilverCraft.CSCore.Tests/ReviewRegressionTests.cs
-    startLine: 9
+    startLine: 10
   assemblies:
   - SilverCraft.CSCore.Tests
   namespace: SilverCraft.CSCore.Tests
@@ -95,7 +98,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: StereoToMono_Position_IsMeasuredInMonoSamples
     path: ../SilverCraft.CSCore.Tests/ReviewRegressionTests.cs
-    startLine: 35
+    startLine: 45
   assemblies:
   - SilverCraft.CSCore.Tests
   namespace: SilverCraft.CSCore.Tests
@@ -131,7 +134,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: MonoToStereo_Position_IsMeasuredInOutputSamples
     path: ../SilverCraft.CSCore.Tests/ReviewRegressionTests.cs
-    startLine: 48
+    startLine: 58
   assemblies:
   - SilverCraft.CSCore.Tests
   namespace: SilverCraft.CSCore.Tests
@@ -167,7 +170,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: ID3v2_FromStream_HandlesPartialReadsOfTagPayload
     path: ../SilverCraft.CSCore.Tests/ReviewRegressionTests.cs
-    startLine: 60
+    startLine: 70
   assemblies:
   - SilverCraft.CSCore.Tests
   namespace: SilverCraft.CSCore.Tests
@@ -185,37 +188,138 @@ items:
   - type: Xunit.FactAttribute
     ctor: Xunit.FactAttribute.#ctor
     arguments: []
+- uid: SilverCraft.CSCore.Tests.ReviewRegressionTests.SimpleResampler_ReadHonorsDestinationOffset
+  commentId: M:SilverCraft.CSCore.Tests.ReviewRegressionTests.SimpleResampler_ReadHonorsDestinationOffset
+  id: SimpleResampler_ReadHonorsDestinationOffset
+  parent: SilverCraft.CSCore.Tests.ReviewRegressionTests
+  langs:
+  - csharp
+  - vb
+  name: SimpleResampler_ReadHonorsDestinationOffset()
+  nameWithType: ReviewRegressionTests.SimpleResampler_ReadHonorsDestinationOffset()
+  fullName: SilverCraft.CSCore.Tests.ReviewRegressionTests.SimpleResampler_ReadHonorsDestinationOffset()
+  type: Method
+  source:
+    remote:
+      path: SilverCraft.CSCore.Tests/ReviewRegressionTests.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: SimpleResampler_ReadHonorsDestinationOffset
+    path: ../SilverCraft.CSCore.Tests/ReviewRegressionTests.cs
+    startLine: 83
+  assemblies:
+  - SilverCraft.CSCore.Tests
+  namespace: SilverCraft.CSCore.Tests
+  syntax:
+    content: >-
+      [Fact]
+
+      public void SimpleResampler_ReadHonorsDestinationOffset()
+    content.vb: >-
+      <Fact>
+
+      Public Sub SimpleResampler_ReadHonorsDestinationOffset()
+  overload: SilverCraft.CSCore.Tests.ReviewRegressionTests.SimpleResampler_ReadHonorsDestinationOffset*
+  attributes:
+  - type: Xunit.FactAttribute
+    ctor: Xunit.FactAttribute.#ctor
+    arguments: []
+- uid: SilverCraft.CSCore.Tests.ReviewRegressionTests.SimpleResampler_ReadAtEndReturnsZero
+  commentId: M:SilverCraft.CSCore.Tests.ReviewRegressionTests.SimpleResampler_ReadAtEndReturnsZero
+  id: SimpleResampler_ReadAtEndReturnsZero
+  parent: SilverCraft.CSCore.Tests.ReviewRegressionTests
+  langs:
+  - csharp
+  - vb
+  name: SimpleResampler_ReadAtEndReturnsZero()
+  nameWithType: ReviewRegressionTests.SimpleResampler_ReadAtEndReturnsZero()
+  fullName: SilverCraft.CSCore.Tests.ReviewRegressionTests.SimpleResampler_ReadAtEndReturnsZero()
+  type: Method
+  source:
+    remote:
+      path: SilverCraft.CSCore.Tests/ReviewRegressionTests.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: SimpleResampler_ReadAtEndReturnsZero
+    path: ../SilverCraft.CSCore.Tests/ReviewRegressionTests.cs
+    startLine: 97
+  assemblies:
+  - SilverCraft.CSCore.Tests
+  namespace: SilverCraft.CSCore.Tests
+  syntax:
+    content: >-
+      [Fact]
+
+      public void SimpleResampler_ReadAtEndReturnsZero()
+    content.vb: >-
+      <Fact>
+
+      Public Sub SimpleResampler_ReadAtEndReturnsZero()
+  overload: SilverCraft.CSCore.Tests.ReviewRegressionTests.SimpleResampler_ReadAtEndReturnsZero*
+  attributes:
+  - type: Xunit.FactAttribute
+    ctor: Xunit.FactAttribute.#ctor
+    arguments: []
+- uid: SilverCraft.CSCore.Tests.ReviewRegressionTests.WaveFileReader_SkipsPaddingAfterOddSizedChunks
+  commentId: M:SilverCraft.CSCore.Tests.ReviewRegressionTests.WaveFileReader_SkipsPaddingAfterOddSizedChunks
+  id: WaveFileReader_SkipsPaddingAfterOddSizedChunks
+  parent: SilverCraft.CSCore.Tests.ReviewRegressionTests
+  langs:
+  - csharp
+  - vb
+  name: WaveFileReader_SkipsPaddingAfterOddSizedChunks()
+  nameWithType: ReviewRegressionTests.WaveFileReader_SkipsPaddingAfterOddSizedChunks()
+  fullName: SilverCraft.CSCore.Tests.ReviewRegressionTests.WaveFileReader_SkipsPaddingAfterOddSizedChunks()
+  type: Method
+  source:
+    remote:
+      path: SilverCraft.CSCore.Tests/ReviewRegressionTests.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: WaveFileReader_SkipsPaddingAfterOddSizedChunks
+    path: ../SilverCraft.CSCore.Tests/ReviewRegressionTests.cs
+    startLine: 108
+  assemblies:
+  - SilverCraft.CSCore.Tests
+  namespace: SilverCraft.CSCore.Tests
+  syntax:
+    content: >-
+      [Fact]
+
+      public void WaveFileReader_SkipsPaddingAfterOddSizedChunks()
+    content.vb: >-
+      <Fact>
+
+      Public Sub WaveFileReader_SkipsPaddingAfterOddSizedChunks()
+  overload: SilverCraft.CSCore.Tests.ReviewRegressionTests.WaveFileReader_SkipsPaddingAfterOddSizedChunks*
+  attributes:
+  - type: Xunit.FactAttribute
+    ctor: Xunit.FactAttribute.#ctor
+    arguments: []
 references:
 - uid: SilverCraft.CSCore.Tests
   commentId: N:SilverCraft.CSCore.Tests
-  href: SilverCraft.html
   name: SilverCraft.CSCore.Tests
   nameWithType: SilverCraft.CSCore.Tests
   fullName: SilverCraft.CSCore.Tests
   spec.csharp:
   - uid: SilverCraft
     name: SilverCraft
-    href: SilverCraft.html
   - name: .
   - uid: SilverCraft.CSCore
     name: CSCore
-    href: SilverCraft.CSCore.html
   - name: .
   - uid: SilverCraft.CSCore.Tests
     name: Tests
-    href: SilverCraft.CSCore.Tests.html
   spec.vb:
   - uid: SilverCraft
     name: SilverCraft
-    href: SilverCraft.html
   - name: .
   - uid: SilverCraft.CSCore
     name: CSCore
-    href: SilverCraft.CSCore.html
   - name: .
   - uid: SilverCraft.CSCore.Tests
     name: Tests
-    href: SilverCraft.CSCore.Tests.html
 - uid: System.Object
   commentId: T:System.Object
   parent: System
@@ -522,26 +626,21 @@ references:
   fullName: SilverCraft.CSCore.FluentExtensions
 - uid: SilverCraft.CSCore
   commentId: N:SilverCraft.CSCore
-  href: SilverCraft.html
   name: SilverCraft.CSCore
   nameWithType: SilverCraft.CSCore
   fullName: SilverCraft.CSCore
   spec.csharp:
   - uid: SilverCraft
     name: SilverCraft
-    href: SilverCraft.html
   - name: .
   - uid: SilverCraft.CSCore
     name: CSCore
-    href: SilverCraft.CSCore.html
   spec.vb:
   - uid: SilverCraft
     name: SilverCraft
-    href: SilverCraft.html
   - name: .
   - uid: SilverCraft.CSCore
     name: CSCore
-    href: SilverCraft.CSCore.html
 - uid: SilverCraft.CSCore.Tests.ReviewRegressionTests.WaveWriter_OverwritingShorterFile_TruncatesOldTail*
   commentId: Overload:SilverCraft.CSCore.Tests.ReviewRegressionTests.WaveWriter_OverwritingShorterFile_TruncatesOldTail
   href: SilverCraft.CSCore.Tests.ReviewRegressionTests.html#SilverCraft_CSCore_Tests_ReviewRegressionTests_WaveWriter_OverwritingShorterFile_TruncatesOldTail
@@ -566,3 +665,21 @@ references:
   name: ID3v2_FromStream_HandlesPartialReadsOfTagPayload
   nameWithType: ReviewRegressionTests.ID3v2_FromStream_HandlesPartialReadsOfTagPayload
   fullName: SilverCraft.CSCore.Tests.ReviewRegressionTests.ID3v2_FromStream_HandlesPartialReadsOfTagPayload
+- uid: SilverCraft.CSCore.Tests.ReviewRegressionTests.SimpleResampler_ReadHonorsDestinationOffset*
+  commentId: Overload:SilverCraft.CSCore.Tests.ReviewRegressionTests.SimpleResampler_ReadHonorsDestinationOffset
+  href: SilverCraft.CSCore.Tests.ReviewRegressionTests.html#SilverCraft_CSCore_Tests_ReviewRegressionTests_SimpleResampler_ReadHonorsDestinationOffset
+  name: SimpleResampler_ReadHonorsDestinationOffset
+  nameWithType: ReviewRegressionTests.SimpleResampler_ReadHonorsDestinationOffset
+  fullName: SilverCraft.CSCore.Tests.ReviewRegressionTests.SimpleResampler_ReadHonorsDestinationOffset
+- uid: SilverCraft.CSCore.Tests.ReviewRegressionTests.SimpleResampler_ReadAtEndReturnsZero*
+  commentId: Overload:SilverCraft.CSCore.Tests.ReviewRegressionTests.SimpleResampler_ReadAtEndReturnsZero
+  href: SilverCraft.CSCore.Tests.ReviewRegressionTests.html#SilverCraft_CSCore_Tests_ReviewRegressionTests_SimpleResampler_ReadAtEndReturnsZero
+  name: SimpleResampler_ReadAtEndReturnsZero
+  nameWithType: ReviewRegressionTests.SimpleResampler_ReadAtEndReturnsZero
+  fullName: SilverCraft.CSCore.Tests.ReviewRegressionTests.SimpleResampler_ReadAtEndReturnsZero
+- uid: SilverCraft.CSCore.Tests.ReviewRegressionTests.WaveFileReader_SkipsPaddingAfterOddSizedChunks*
+  commentId: Overload:SilverCraft.CSCore.Tests.ReviewRegressionTests.WaveFileReader_SkipsPaddingAfterOddSizedChunks
+  href: SilverCraft.CSCore.Tests.ReviewRegressionTests.html#SilverCraft_CSCore_Tests_ReviewRegressionTests_WaveFileReader_SkipsPaddingAfterOddSizedChunks
+  name: WaveFileReader_SkipsPaddingAfterOddSizedChunks
+  nameWithType: ReviewRegressionTests.WaveFileReader_SkipsPaddingAfterOddSizedChunks
+  fullName: SilverCraft.CSCore.Tests.ReviewRegressionTests.WaveFileReader_SkipsPaddingAfterOddSizedChunks

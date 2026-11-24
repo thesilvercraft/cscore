@@ -162,7 +162,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: Chunks
     path: ../SilverCraft.CSCore/Codecs/WAV/WaveFileReader.cs
-    startLine: 61
+    startLine: 63
   assemblies:
   - SilverCraft.CSCore
   namespace: SilverCraft.CSCore.Codecs.WAV
@@ -193,7 +193,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: Read
     path: ../SilverCraft.CSCore/Codecs/WAV/WaveFileReader.cs
-    startLine: 78
+    startLine: 80
   assemblies:
   - SilverCraft.CSCore
   namespace: SilverCraft.CSCore.Codecs.WAV
@@ -250,7 +250,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: WaveFormat
     path: ../SilverCraft.CSCore/Codecs/WAV/WaveFileReader.cs
-    startLine: 93
+    startLine: 95
   assemblies:
   - SilverCraft.CSCore
   namespace: SilverCraft.CSCore.Codecs.WAV
@@ -283,7 +283,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: Position
     path: ../SilverCraft.CSCore/Codecs/WAV/WaveFileReader.cs
-    startLine: 98
+    startLine: 100
   assemblies:
   - SilverCraft.CSCore
   namespace: SilverCraft.CSCore.Codecs.WAV
@@ -316,7 +316,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: Length
     path: ../SilverCraft.CSCore/Codecs/WAV/WaveFileReader.cs
-    startLine: 118
+    startLine: 121
   assemblies:
   - SilverCraft.CSCore
   namespace: SilverCraft.CSCore.Codecs.WAV
@@ -349,7 +349,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: CanSeek
     path: ../SilverCraft.CSCore/Codecs/WAV/WaveFileReader.cs
-    startLine: 123
+    startLine: 126
   assemblies:
   - SilverCraft.CSCore
   namespace: SilverCraft.CSCore.Codecs.WAV
@@ -382,7 +382,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: Dispose
     path: ../SilverCraft.CSCore/Codecs/WAV/WaveFileReader.cs
-    startLine: 128
+    startLine: 131
   assemblies:
   - SilverCraft.CSCore
   namespace: SilverCraft.CSCore.Codecs.WAV
@@ -412,7 +412,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: Dispose
     path: ../SilverCraft.CSCore/Codecs/WAV/WaveFileReader.cs
-    startLine: 168
+    startLine: 182
   assemblies:
   - SilverCraft.CSCore
   namespace: SilverCraft.CSCore.Codecs.WAV
@@ -450,7 +450,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: Finalize
     path: ../SilverCraft.CSCore/Codecs/WAV/WaveFileReader.cs
-    startLine: 188
+    startLine: 204
   assemblies:
   - SilverCraft.CSCore
   namespace: SilverCraft.CSCore.Codecs.WAV
@@ -466,42 +466,33 @@ items:
 references:
 - uid: SilverCraft.CSCore.Codecs.WAV
   commentId: N:SilverCraft.CSCore.Codecs.WAV
-  href: SilverCraft.html
   name: SilverCraft.CSCore.Codecs.WAV
   nameWithType: SilverCraft.CSCore.Codecs.WAV
   fullName: SilverCraft.CSCore.Codecs.WAV
   spec.csharp:
   - uid: SilverCraft
     name: SilverCraft
-    href: SilverCraft.html
   - name: .
   - uid: SilverCraft.CSCore
     name: CSCore
-    href: SilverCraft.CSCore.html
   - name: .
   - uid: SilverCraft.CSCore.Codecs
     name: Codecs
-    href: SilverCraft.CSCore.Codecs.html
   - name: .
   - uid: SilverCraft.CSCore.Codecs.WAV
     name: WAV
-    href: SilverCraft.CSCore.Codecs.WAV.html
   spec.vb:
   - uid: SilverCraft
     name: SilverCraft
-    href: SilverCraft.html
   - name: .
   - uid: SilverCraft.CSCore
     name: CSCore
-    href: SilverCraft.CSCore.html
   - name: .
   - uid: SilverCraft.CSCore.Codecs
     name: Codecs
-    href: SilverCraft.CSCore.Codecs.html
   - name: .
   - uid: SilverCraft.CSCore.Codecs.WAV
     name: WAV
-    href: SilverCraft.CSCore.Codecs.WAV.html
 - uid: System.Object
   commentId: T:System.Object
   parent: System
@@ -1571,26 +1562,21 @@ references:
   fullName: System
 - uid: SilverCraft.CSCore
   commentId: N:SilverCraft.CSCore
-  href: SilverCraft.html
   name: SilverCraft.CSCore
   nameWithType: SilverCraft.CSCore
   fullName: SilverCraft.CSCore
   spec.csharp:
   - uid: SilverCraft
     name: SilverCraft
-    href: SilverCraft.html
   - name: .
   - uid: SilverCraft.CSCore
     name: CSCore
-    href: SilverCraft.CSCore.html
   spec.vb:
   - uid: SilverCraft
     name: SilverCraft
-    href: SilverCraft.html
   - name: .
   - uid: SilverCraft.CSCore
     name: CSCore
-    href: SilverCraft.CSCore.html
 - uid: SilverCraft.CSCore.IReadableAudioSource`1
   commentId: T:SilverCraft.CSCore.IReadableAudioSource`1
   href: SilverCraft.CSCore.IReadableAudioSource-1.html

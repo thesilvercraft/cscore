@@ -47,39 +47,30 @@ references:
   fullName: SilverCraft.CSCore.Streams.Effects.PitchShifter
 - uid: SilverCraft.CSCore.Streams.Effects
   commentId: N:SilverCraft.CSCore.Streams.Effects
-  href: SilverCraft.html
   name: SilverCraft.CSCore.Streams.Effects
   nameWithType: SilverCraft.CSCore.Streams.Effects
   fullName: SilverCraft.CSCore.Streams.Effects
   spec.csharp:
   - uid: SilverCraft
     name: SilverCraft
-    href: SilverCraft.html
   - name: .
   - uid: SilverCraft.CSCore
     name: CSCore
-    href: SilverCraft.CSCore.html
   - name: .
   - uid: SilverCraft.CSCore.Streams
     name: Streams
-    href: SilverCraft.CSCore.Streams.html
   - name: .
   - uid: SilverCraft.CSCore.Streams.Effects
     name: Effects
-    href: SilverCraft.CSCore.Streams.Effects.html
   spec.vb:
   - uid: SilverCraft
     name: SilverCraft
-    href: SilverCraft.html
   - name: .
   - uid: SilverCraft.CSCore
     name: CSCore
-    href: SilverCraft.CSCore.html
   - name: .
   - uid: SilverCraft.CSCore.Streams
     name: Streams
-    href: SilverCraft.CSCore.Streams.html
   - name: .
   - uid: SilverCraft.CSCore.Streams.Effects
     name: Effects
-    href: SilverCraft.CSCore.Streams.Effects.html

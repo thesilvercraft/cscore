@@ -23,7 +23,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: FmtChunk
     path: ../SilverCraft.CSCore/Codecs/WAV/FMTChunk.cs
-    startLine: 8
+    startLine: 7
   assemblies:
   - SilverCraft.CSCore
   namespace: SilverCraft.CSCore.Codecs.WAV
@@ -66,7 +66,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: FmtChunkID
     path: ../SilverCraft.CSCore/Codecs/WAV/FMTChunk.cs
-    startLine: 13
+    startLine: 12
   assemblies:
   - SilverCraft.CSCore
   namespace: SilverCraft.CSCore.Codecs.WAV
@@ -95,7 +95,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: .ctor
     path: ../SilverCraft.CSCore/Codecs/WAV/FMTChunk.cs
-    startLine: 21
+    startLine: 20
   assemblies:
   - SilverCraft.CSCore
   namespace: SilverCraft.CSCore.Codecs.WAV
@@ -130,7 +130,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: .ctor
     path: ../SilverCraft.CSCore/Codecs/WAV/FMTChunk.cs
-    startLine: 30
+    startLine: 35
   assemblies:
   - SilverCraft.CSCore
   namespace: SilverCraft.CSCore.Codecs.WAV
@@ -165,7 +165,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: WaveFormat
     path: ../SilverCraft.CSCore/Codecs/WAV/FMTChunk.cs
-    startLine: 64
+    startLine: 75
   assemblies:
   - SilverCraft.CSCore
   namespace: SilverCraft.CSCore.Codecs.WAV
@@ -187,42 +187,33 @@ references:
   fullName: SilverCraft.CSCore.Codecs.WAV.FmtChunk
 - uid: SilverCraft.CSCore.Codecs.WAV
   commentId: N:SilverCraft.CSCore.Codecs.WAV
-  href: SilverCraft.html
   name: SilverCraft.CSCore.Codecs.WAV
   nameWithType: SilverCraft.CSCore.Codecs.WAV
   fullName: SilverCraft.CSCore.Codecs.WAV
   spec.csharp:
   - uid: SilverCraft
     name: SilverCraft
-    href: SilverCraft.html
   - name: .
   - uid: SilverCraft.CSCore
     name: CSCore
-    href: SilverCraft.CSCore.html
   - name: .
   - uid: SilverCraft.CSCore.Codecs
     name: Codecs
-    href: SilverCraft.CSCore.Codecs.html
   - name: .
   - uid: SilverCraft.CSCore.Codecs.WAV
     name: WAV
-    href: SilverCraft.CSCore.Codecs.WAV.html
   spec.vb:
   - uid: SilverCraft
     name: SilverCraft
-    href: SilverCraft.html
   - name: .
   - uid: SilverCraft.CSCore
     name: CSCore
-    href: SilverCraft.CSCore.html
   - name: .
   - uid: SilverCraft.CSCore.Codecs
     name: Codecs
-    href: SilverCraft.CSCore.Codecs.html
   - name: .
   - uid: SilverCraft.CSCore.Codecs.WAV
     name: WAV
-    href: SilverCraft.CSCore.Codecs.WAV.html
 - uid: System.Object
   commentId: T:System.Object
   parent: System
@@ -602,26 +593,21 @@ references:
   fullName: SilverCraft.CSCore.FluentExtensions
 - uid: SilverCraft.CSCore
   commentId: N:SilverCraft.CSCore
-  href: SilverCraft.html
   name: SilverCraft.CSCore
   nameWithType: SilverCraft.CSCore
   fullName: SilverCraft.CSCore
   spec.csharp:
   - uid: SilverCraft
     name: SilverCraft
-    href: SilverCraft.html
   - name: .
   - uid: SilverCraft.CSCore
     name: CSCore
-    href: SilverCraft.CSCore.html
   spec.vb:
   - uid: SilverCraft
     name: SilverCraft
-    href: SilverCraft.html
   - name: .
   - uid: SilverCraft.CSCore
     name: CSCore
-    href: SilverCraft.CSCore.html
 - uid: System.Int32
   commentId: T:System.Int32
   parent: System

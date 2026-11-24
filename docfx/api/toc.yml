@@ -407,6 +407,9 @@ items:
   - uid: SilverCraft.CSCore.SoundOut.ALSoundOut
     name: ALSoundOut
     type: Class
+  - uid: SilverCraft.CSCore.SoundOut.BufferedPortAudioSoundOut
+    name: BufferedPortAudioSoundOut
+    type: Class
   - uid: SilverCraft.CSCore.SoundOut.ISoundOut
     name: ISoundOut
     type: Interface
@@ -711,6 +714,9 @@ items:
   - uid: SilverCraft.CSCore.Tests.AudioReadOffsetTests
     name: AudioReadOffsetTests
     type: Class
+  - uid: SilverCraft.CSCore.Tests.BufferedPortAudioSoundOutTests
+    name: BufferedPortAudioSoundOutTests
+    type: Class
   - uid: SilverCraft.CSCore.Tests.BugReproTests
     name: BugReproTests
     type: Class
@@ -731,6 +737,9 @@ items:
     type: Class
   - uid: SilverCraft.CSCore.Tests.Id3Tests
     name: Id3Tests
+    type: Class
+  - uid: SilverCraft.CSCore.Tests.PortAudioDeviceTests
+    name: PortAudioDeviceTests
     type: Class
   - uid: SilverCraft.CSCore.Tests.ReviewRegressionTests
     name: ReviewRegressionTests

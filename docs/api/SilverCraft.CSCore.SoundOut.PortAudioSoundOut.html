@@ -93,7 +93,7 @@ Class PortAudioSoundOut  <a class="header-action link-secondary" title="View sou
   </h1>
 
   <div class="facts text-secondary">
-    <dl><dt>Namespace</dt><dd><a class="xref" href="SilverCraft.html">SilverCraft</a>.<a class="xref" href="SilverCraft.CSCore.html">CSCore</a>.<a class="xref" href="SilverCraft.CSCore.SoundOut.html">SoundOut</a></dd></dl>
+    <dl><dt>Namespace</dt><dd><span class="xref">SilverCraft</span>.<a class="xref" href="SilverCraft.CSCore.html">CSCore</a>.<a class="xref" href="SilverCraft.CSCore.SoundOut.html">SoundOut</a></dd></dl>
   <dl><dt>Assembly</dt><dd>SilverCraft.CSCore.dll</dd></dl>
   </div>
 
@@ -176,7 +176,7 @@ Class PortAudioSoundOut  <a class="header-action link-secondary" title="View sou
 
   <h3 id="SilverCraft_CSCore_SoundOut_PortAudioSoundOut__ctor" data-uid="SilverCraft.CSCore.SoundOut.PortAudioSoundOut.#ctor">
   PortAudioSoundOut()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/thesilvercraft/cscore/blob/master/SilverCraft.CSCore/SoundOut/PortAudioSoundOut.cs/#L26"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/thesilvercraft/cscore/blob/master/SilverCraft.CSCore/SoundOut/PortAudioSoundOut.cs/#L29"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -198,6 +198,71 @@ Class PortAudioSoundOut  <a class="header-action link-secondary" title="View sou
 
 
 
+  <a id="SilverCraft_CSCore_SoundOut_PortAudioSoundOut__ctor_" data-uid="SilverCraft.CSCore.SoundOut.PortAudioSoundOut.#ctor*"></a>
+
+  <h3 id="SilverCraft_CSCore_SoundOut_PortAudioSoundOut__ctor_System_String_" data-uid="SilverCraft.CSCore.SoundOut.PortAudioSoundOut.#ctor(System.String)">
+  PortAudioSoundOut(string?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/thesilvercraft/cscore/blob/master/SilverCraft.CSCore/SoundOut/PortAudioSoundOut.cs/#L33"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PortAudioSoundOut(string? preferredDevice)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>preferredDevice</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="fields">Fields
+</h2>
+
+
+
+  <h3 id="SilverCraft_CSCore_SoundOut_PortAudioSoundOut_DefaultDeviceLabel" data-uid="SilverCraft.CSCore.SoundOut.PortAudioSoundOut.DefaultDeviceLabel">
+  DefaultDeviceLabel
+  <a class="header-action link-secondary" title="View source" href="https://github.com/thesilvercraft/cscore/blob/master/SilverCraft.CSCore/SoundOut/PortAudioSoundOut.cs/#L14"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string DefaultDeviceLabel = &quot;Default&quot;</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
   <h2 class="section" id="properties">Properties
 </h2>
 
@@ -206,7 +271,7 @@ Class PortAudioSoundOut  <a class="header-action link-secondary" title="View sou
 
   <h3 id="SilverCraft_CSCore_SoundOut_PortAudioSoundOut_PlaybackState" data-uid="SilverCraft.CSCore.SoundOut.PortAudioSoundOut.PlaybackState">
   PlaybackState
-  <a class="header-action link-secondary" title="View source" href="https://github.com/thesilvercraft/cscore/blob/master/SilverCraft.CSCore/SoundOut/PortAudioSoundOut.cs/#L44"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/thesilvercraft/cscore/blob/master/SilverCraft.CSCore/SoundOut/PortAudioSoundOut.cs/#L54"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Gets the <a class="xref" href="SilverCraft.CSCore.SoundOut.PlaybackState.html">PlaybackState</a> of the <a class="xref" href="SilverCraft.CSCore.SoundOut.ISoundOut.html">ISoundOut</a>. The playback state indicates whether the playback is currently playing, paused or stopped.</p>
@@ -234,11 +299,42 @@ Class PortAudioSoundOut  <a class="header-action link-secondary" title="View sou
 
 
 
+  <a id="SilverCraft_CSCore_SoundOut_PortAudioSoundOut_PreferredDevice_" data-uid="SilverCraft.CSCore.SoundOut.PortAudioSoundOut.PreferredDevice*"></a>
+
+  <h3 id="SilverCraft_CSCore_SoundOut_PortAudioSoundOut_PreferredDevice" data-uid="SilverCraft.CSCore.SoundOut.PortAudioSoundOut.PreferredDevice">
+  PreferredDevice
+  <a class="header-action link-secondary" title="View source" href="https://github.com/thesilvercraft/cscore/blob/master/SilverCraft.CSCore/SoundOut/PortAudioSoundOut.cs/#L39"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string? PreferredDevice { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
   <a id="SilverCraft_CSCore_SoundOut_PortAudioSoundOut_Volume_" data-uid="SilverCraft.CSCore.SoundOut.PortAudioSoundOut.Volume*"></a>
 
   <h3 id="SilverCraft_CSCore_SoundOut_PortAudioSoundOut_Volume" data-uid="SilverCraft.CSCore.SoundOut.PortAudioSoundOut.Volume">
   Volume
-  <a class="header-action link-secondary" title="View source" href="https://github.com/thesilvercraft/cscore/blob/master/SilverCraft.CSCore/SoundOut/PortAudioSoundOut.cs/#L33"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/thesilvercraft/cscore/blob/master/SilverCraft.CSCore/SoundOut/PortAudioSoundOut.cs/#L43"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Gets or sets the volume of the playback. The value of this property must be within the range from 0.0 to 1.0 where 0.0 equals 0% (muted) and 1.0 equals 100%.</p>
@@ -270,7 +366,7 @@ Class PortAudioSoundOut  <a class="header-action link-secondary" title="View sou
 
   <h3 id="SilverCraft_CSCore_SoundOut_PortAudioSoundOut_WaveSource" data-uid="SilverCraft.CSCore.SoundOut.PortAudioSoundOut.WaveSource">
   WaveSource
-  <a class="header-action link-secondary" title="View source" href="https://github.com/thesilvercraft/cscore/blob/master/SilverCraft.CSCore/SoundOut/PortAudioSoundOut.cs/#L43"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/thesilvercraft/cscore/blob/master/SilverCraft.CSCore/SoundOut/PortAudioSoundOut.cs/#L53"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Gets the <a class="xref" href="SilverCraft.CSCore.IWaveSource.html">IWaveSource</a> which provides the waveform-audio data and was used to <a class="xref" href="SilverCraft.CSCore.SoundOut.ISoundOut.html#SilverCraft_CSCore_SoundOut_ISoundOut_Initialize_SilverCraft_CSCore_IWaveSource_">Initialize(IWaveSource)</a> the <a class="xref" href="SilverCraft.CSCore.SoundOut.ISoundOut.html">ISoundOut</a>.</p>
@@ -306,7 +402,7 @@ Class PortAudioSoundOut  <a class="header-action link-secondary" title="View sou
 
   <h3 id="SilverCraft_CSCore_SoundOut_PortAudioSoundOut_Dispose" data-uid="SilverCraft.CSCore.SoundOut.PortAudioSoundOut.Dispose">
   Dispose()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/thesilvercraft/cscore/blob/master/SilverCraft.CSCore/SoundOut/PortAudioSoundOut.cs/#L48"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/thesilvercraft/cscore/blob/master/SilverCraft.CSCore/SoundOut/PortAudioSoundOut.cs/#L58"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Performs application-defined tasks associated with freeing, releasing, or resetting unmanaged resources.</p>
@@ -333,7 +429,7 @@ Class PortAudioSoundOut  <a class="header-action link-secondary" title="View sou
 
   <h3 id="SilverCraft_CSCore_SoundOut_PortAudioSoundOut_Dispose_System_Boolean_" data-uid="SilverCraft.CSCore.SoundOut.PortAudioSoundOut.Dispose(System.Boolean)">
   Dispose(bool)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/thesilvercraft/cscore/blob/master/SilverCraft.CSCore/SoundOut/PortAudioSoundOut.cs/#L201"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/thesilvercraft/cscore/blob/master/SilverCraft.CSCore/SoundOut/PortAudioSoundOut.cs/#L236"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -364,7 +460,7 @@ Class PortAudioSoundOut  <a class="header-action link-secondary" title="View sou
 
   <h3 id="SilverCraft_CSCore_SoundOut_PortAudioSoundOut_Finalize" data-uid="SilverCraft.CSCore.SoundOut.PortAudioSoundOut.Finalize">
   ~PortAudioSoundOut()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/thesilvercraft/cscore/blob/master/SilverCraft.CSCore/SoundOut/PortAudioSoundOut.cs/#L224"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/thesilvercraft/cscore/blob/master/SilverCraft.CSCore/SoundOut/PortAudioSoundOut.cs/#L259"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -386,11 +482,42 @@ Class PortAudioSoundOut  <a class="header-action link-secondary" title="View sou
 
 
 
+  <a id="SilverCraft_CSCore_SoundOut_PortAudioSoundOut_GetOutputDeviceNames_" data-uid="SilverCraft.CSCore.SoundOut.PortAudioSoundOut.GetOutputDeviceNames*"></a>
+
+  <h3 id="SilverCraft_CSCore_SoundOut_PortAudioSoundOut_GetOutputDeviceNames" data-uid="SilverCraft.CSCore.SoundOut.PortAudioSoundOut.GetOutputDeviceNames">
+  GetOutputDeviceNames()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/thesilvercraft/cscore/blob/master/SilverCraft.CSCore/SoundOut/PortAudioSoundOut.cs/#L266"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string[] GetOutputDeviceNames()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
   <a id="SilverCraft_CSCore_SoundOut_PortAudioSoundOut_Initialize_" data-uid="SilverCraft.CSCore.SoundOut.PortAudioSoundOut.Initialize*"></a>
 
   <h3 id="SilverCraft_CSCore_SoundOut_PortAudioSoundOut_Initialize_SilverCraft_CSCore_IWaveSource_" data-uid="SilverCraft.CSCore.SoundOut.PortAudioSoundOut.Initialize(SilverCraft.CSCore.IWaveSource)">
   Initialize(IWaveSource)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/thesilvercraft/cscore/blob/master/SilverCraft.CSCore/SoundOut/PortAudioSoundOut.cs/#L54"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/thesilvercraft/cscore/blob/master/SilverCraft.CSCore/SoundOut/PortAudioSoundOut.cs/#L64"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Initializes the <a class="xref" href="SilverCraft.CSCore.SoundOut.ISoundOut.html">ISoundOut</a> for playing a <code class="paramref">source</code>.</p>
@@ -423,7 +550,7 @@ Class PortAudioSoundOut  <a class="header-action link-secondary" title="View sou
 
   <h3 id="SilverCraft_CSCore_SoundOut_PortAudioSoundOut_IsSupported" data-uid="SilverCraft.CSCore.SoundOut.PortAudioSoundOut.IsSupported">
   IsSupported()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/thesilvercraft/cscore/blob/master/SilverCraft.CSCore/SoundOut/PortAudioSoundOut.cs/#L229"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/thesilvercraft/cscore/blob/master/SilverCraft.CSCore/SoundOut/PortAudioSoundOut.cs/#L264"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -454,7 +581,7 @@ Class PortAudioSoundOut  <a class="header-action link-secondary" title="View sou
 
   <h3 id="SilverCraft_CSCore_SoundOut_PortAudioSoundOut_Pause" data-uid="SilverCraft.CSCore.SoundOut.PortAudioSoundOut.Pause">
   Pause()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/thesilvercraft/cscore/blob/master/SilverCraft.CSCore/SoundOut/PortAudioSoundOut.cs/#L120"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/thesilvercraft/cscore/blob/master/SilverCraft.CSCore/SoundOut/PortAudioSoundOut.cs/#L161"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Pauses the audio playback.</p>
@@ -481,7 +608,7 @@ Class PortAudioSoundOut  <a class="header-action link-secondary" title="View sou
 
   <h3 id="SilverCraft_CSCore_SoundOut_PortAudioSoundOut_Play" data-uid="SilverCraft.CSCore.SoundOut.PortAudioSoundOut.Play">
   Play()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/thesilvercraft/cscore/blob/master/SilverCraft.CSCore/SoundOut/PortAudioSoundOut.cs/#L98"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/thesilvercraft/cscore/blob/master/SilverCraft.CSCore/SoundOut/PortAudioSoundOut.cs/#L139"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Starts the audio playback.</p>
@@ -508,7 +635,7 @@ Class PortAudioSoundOut  <a class="header-action link-secondary" title="View sou
 
   <h3 id="SilverCraft_CSCore_SoundOut_PortAudioSoundOut_Resume" data-uid="SilverCraft.CSCore.SoundOut.PortAudioSoundOut.Resume">
   Resume()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/thesilvercraft/cscore/blob/master/SilverCraft.CSCore/SoundOut/PortAudioSoundOut.cs/#L114"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/thesilvercraft/cscore/blob/master/SilverCraft.CSCore/SoundOut/PortAudioSoundOut.cs/#L155"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Resumes the audio playback.</p>
@@ -535,7 +662,7 @@ Class PortAudioSoundOut  <a class="header-action link-secondary" title="View sou
 
   <h3 id="SilverCraft_CSCore_SoundOut_PortAudioSoundOut_Stop" data-uid="SilverCraft.CSCore.SoundOut.PortAudioSoundOut.Stop">
   Stop()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/thesilvercraft/cscore/blob/master/SilverCraft.CSCore/SoundOut/PortAudioSoundOut.cs/#L136"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/thesilvercraft/cscore/blob/master/SilverCraft.CSCore/SoundOut/PortAudioSoundOut.cs/#L177"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Stops the audio playback.</p>
@@ -565,7 +692,7 @@ Class PortAudioSoundOut  <a class="header-action link-secondary" title="View sou
 
   <h3 id="SilverCraft_CSCore_SoundOut_PortAudioSoundOut_Stopped" data-uid="SilverCraft.CSCore.SoundOut.PortAudioSoundOut.Stopped">
   Stopped
-  <a class="header-action link-secondary" title="View source" href="https://github.com/thesilvercraft/cscore/blob/master/SilverCraft.CSCore/SoundOut/PortAudioSoundOut.cs/#L46"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/thesilvercraft/cscore/blob/master/SilverCraft.CSCore/SoundOut/PortAudioSoundOut.cs/#L56"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Occurs when the playback stops.</p>

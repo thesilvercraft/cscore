@@ -1,0 +1,1606 @@
+### YamlMime:ManagedReference
+items:
+- uid: SilverCraft.CSCore.SoundOut.BufferedPortAudioSoundOut
+  commentId: T:SilverCraft.CSCore.SoundOut.BufferedPortAudioSoundOut
+  id: BufferedPortAudioSoundOut
+  parent: SilverCraft.CSCore.SoundOut
+  children:
+  - SilverCraft.CSCore.SoundOut.BufferedPortAudioSoundOut.#ctor(System.String,System.Nullable{System.TimeSpan},System.Nullable{System.TimeSpan})
+  - SilverCraft.CSCore.SoundOut.BufferedPortAudioSoundOut.DefaultDeviceLabel
+  - SilverCraft.CSCore.SoundOut.BufferedPortAudioSoundOut.Dispose
+  - SilverCraft.CSCore.SoundOut.BufferedPortAudioSoundOut.Dispose(System.Boolean)
+  - SilverCraft.CSCore.SoundOut.BufferedPortAudioSoundOut.ExecuteSeek(System.Action)
+  - SilverCraft.CSCore.SoundOut.BufferedPortAudioSoundOut.Finalize
+  - SilverCraft.CSCore.SoundOut.BufferedPortAudioSoundOut.GetOutputDeviceNames
+  - SilverCraft.CSCore.SoundOut.BufferedPortAudioSoundOut.Initialize(SilverCraft.CSCore.IWaveSource)
+  - SilverCraft.CSCore.SoundOut.BufferedPortAudioSoundOut.IsSupported
+  - SilverCraft.CSCore.SoundOut.BufferedPortAudioSoundOut.OutputLatency
+  - SilverCraft.CSCore.SoundOut.BufferedPortAudioSoundOut.Pause
+  - SilverCraft.CSCore.SoundOut.BufferedPortAudioSoundOut.Play
+  - SilverCraft.CSCore.SoundOut.BufferedPortAudioSoundOut.PlaybackState
+  - SilverCraft.CSCore.SoundOut.BufferedPortAudioSoundOut.Resume
+  - SilverCraft.CSCore.SoundOut.BufferedPortAudioSoundOut.Stop
+  - SilverCraft.CSCore.SoundOut.BufferedPortAudioSoundOut.Stopped
+  - SilverCraft.CSCore.SoundOut.BufferedPortAudioSoundOut.Volume
+  - SilverCraft.CSCore.SoundOut.BufferedPortAudioSoundOut.WaveSource
+  langs:
+  - csharp
+  - vb
+  name: BufferedPortAudioSoundOut
+  nameWithType: BufferedPortAudioSoundOut
+  fullName: SilverCraft.CSCore.SoundOut.BufferedPortAudioSoundOut
+  type: Class
+  source:
+    remote:
+      path: SilverCraft.CSCore/SoundOut/BufferedPortAudioSoundOut.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: BufferedPortAudioSoundOut
+    path: ../SilverCraft.CSCore/SoundOut/BufferedPortAudioSoundOut.cs
+    startLine: 16
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.SoundOut
+  summary: >-
+    PortAudio <xref href="SilverCraft.CSCore.SoundOut.ISoundOut" data-throw-if-not-resolved="false"></xref> implementation that decouples decoding from the real-time
+
+    audio callback using an SPSC ring buffer and opens PortAudio via <code>Pa_OpenStream</code>
+
+    with configurable output device and latency.
+  example: []
+  syntax:
+    content: 'public class BufferedPortAudioSoundOut : ISoundOut, IDisposable'
+    content.vb: Public Class BufferedPortAudioSoundOut Implements ISoundOut, IDisposable
+  inheritance:
+  - System.Object
+  implements:
+  - SilverCraft.CSCore.SoundOut.ISoundOut
+  - System.IDisposable
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  extensionMethods:
+  - SilverCraft.CSCore.SoundOut.BufferedPortAudioSoundOut.SilverCraft.CSCore.FluentExtensions.Synchronized``2
+  - SilverCraft.CSCore.SoundOut.ISoundOut.SilverCraft.CSCore.Extensions.WaitForStopped
+  - SilverCraft.CSCore.SoundOut.ISoundOut.SilverCraft.CSCore.Extensions.WaitForStopped(System.Int32)
+- uid: SilverCraft.CSCore.SoundOut.BufferedPortAudioSoundOut.DefaultDeviceLabel
+  commentId: F:SilverCraft.CSCore.SoundOut.BufferedPortAudioSoundOut.DefaultDeviceLabel
+  id: DefaultDeviceLabel
+  parent: SilverCraft.CSCore.SoundOut.BufferedPortAudioSoundOut
+  langs:
+  - csharp
+  - vb
+  name: DefaultDeviceLabel
+  nameWithType: BufferedPortAudioSoundOut.DefaultDeviceLabel
+  fullName: SilverCraft.CSCore.SoundOut.BufferedPortAudioSoundOut.DefaultDeviceLabel
+  type: Field
+  source:
+    remote:
+      path: SilverCraft.CSCore/SoundOut/BufferedPortAudioSoundOut.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: DefaultDeviceLabel
+    path: ../SilverCraft.CSCore/SoundOut/BufferedPortAudioSoundOut.cs
+    startLine: 18
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.SoundOut
+  syntax:
+    content: public const string DefaultDeviceLabel = "Default"
+    return:
+      type: System.String
+    content.vb: Public Const DefaultDeviceLabel As String = "Default"
+- uid: SilverCraft.CSCore.SoundOut.BufferedPortAudioSoundOut.#ctor(System.String,System.Nullable{System.TimeSpan},System.Nullable{System.TimeSpan})
+  commentId: M:SilverCraft.CSCore.SoundOut.BufferedPortAudioSoundOut.#ctor(System.String,System.Nullable{System.TimeSpan},System.Nullable{System.TimeSpan})
+  id: '#ctor(System.String,System.Nullable{System.TimeSpan},System.Nullable{System.TimeSpan})'
+  parent: SilverCraft.CSCore.SoundOut.BufferedPortAudioSoundOut
+  langs:
+  - csharp
+  - vb
+  name: BufferedPortAudioSoundOut(string?, TimeSpan?, TimeSpan?)
+  nameWithType: BufferedPortAudioSoundOut.BufferedPortAudioSoundOut(string?, TimeSpan?, TimeSpan?)
+  fullName: SilverCraft.CSCore.SoundOut.BufferedPortAudioSoundOut.BufferedPortAudioSoundOut(string?, System.TimeSpan?, System.TimeSpan?)
+  type: Constructor
+  source:
+    remote:
+      path: SilverCraft.CSCore/SoundOut/BufferedPortAudioSoundOut.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: .ctor
+    path: ../SilverCraft.CSCore/SoundOut/BufferedPortAudioSoundOut.cs
+    startLine: 54
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.SoundOut
+  syntax:
+    content: public BufferedPortAudioSoundOut(string? preferredDevice = null, TimeSpan? targetLatency = null, TimeSpan? decodeBuffer = null)
+    parameters:
+    - id: preferredDevice
+      type: System.String
+    - id: targetLatency
+      type: System.Nullable{System.TimeSpan}
+    - id: decodeBuffer
+      type: System.Nullable{System.TimeSpan}
+    content.vb: Public Sub New(preferredDevice As String = Nothing, targetLatency As TimeSpan? = Nothing, decodeBuffer As TimeSpan? = Nothing)
+  overload: SilverCraft.CSCore.SoundOut.BufferedPortAudioSoundOut.#ctor*
+  nameWithType.vb: BufferedPortAudioSoundOut.New(String, TimeSpan?, TimeSpan?)
+  fullName.vb: SilverCraft.CSCore.SoundOut.BufferedPortAudioSoundOut.New(String, System.TimeSpan?, System.TimeSpan?)
+  name.vb: New(String, TimeSpan?, TimeSpan?)
+- uid: SilverCraft.CSCore.SoundOut.BufferedPortAudioSoundOut.Volume
+  commentId: P:SilverCraft.CSCore.SoundOut.BufferedPortAudioSoundOut.Volume
+  id: Volume
+  parent: SilverCraft.CSCore.SoundOut.BufferedPortAudioSoundOut
+  langs:
+  - csharp
+  - vb
+  name: Volume
+  nameWithType: BufferedPortAudioSoundOut.Volume
+  fullName: SilverCraft.CSCore.SoundOut.BufferedPortAudioSoundOut.Volume
+  type: Property
+  source:
+    remote:
+      path: SilverCraft.CSCore/SoundOut/BufferedPortAudioSoundOut.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: Volume
+    path: ../SilverCraft.CSCore/SoundOut/BufferedPortAudioSoundOut.cs
+    startLine: 64
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.SoundOut
+  summary: Gets or sets the volume of the playback. The value of this property must be within the range from 0.0 to 1.0 where 0.0 equals 0% (muted) and 1.0 equals 100%.
+  example: []
+  syntax:
+    content: public float Volume { get; set; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public Property Volume As Single
+  overload: SilverCraft.CSCore.SoundOut.BufferedPortAudioSoundOut.Volume*
+  implements:
+  - SilverCraft.CSCore.SoundOut.ISoundOut.Volume
+- uid: SilverCraft.CSCore.SoundOut.BufferedPortAudioSoundOut.WaveSource
+  commentId: P:SilverCraft.CSCore.SoundOut.BufferedPortAudioSoundOut.WaveSource
+  id: WaveSource
+  parent: SilverCraft.CSCore.SoundOut.BufferedPortAudioSoundOut
+  langs:
+  - csharp
+  - vb
+  name: WaveSource
+  nameWithType: BufferedPortAudioSoundOut.WaveSource
+  fullName: SilverCraft.CSCore.SoundOut.BufferedPortAudioSoundOut.WaveSource
+  type: Property
+  source:
+    remote:
+      path: SilverCraft.CSCore/SoundOut/BufferedPortAudioSoundOut.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: WaveSource
+    path: ../SilverCraft.CSCore/SoundOut/BufferedPortAudioSoundOut.cs
+    startLine: 74
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.SoundOut
+  summary: Gets the <xref href="SilverCraft.CSCore.IWaveSource" data-throw-if-not-resolved="false"></xref> which provides the waveform-audio data and was used to <xref href="SilverCraft.CSCore.SoundOut.ISoundOut.Initialize(SilverCraft.CSCore.IWaveSource)" data-throw-if-not-resolved="false"></xref> the <xref href="SilverCraft.CSCore.SoundOut.ISoundOut" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public IWaveSource WaveSource { get; }
+    parameters: []
+    return:
+      type: SilverCraft.CSCore.IWaveSource
+    content.vb: Public Property WaveSource As IWaveSource
+  overload: SilverCraft.CSCore.SoundOut.BufferedPortAudioSoundOut.WaveSource*
+  implements:
+  - SilverCraft.CSCore.SoundOut.ISoundOut.WaveSource
+- uid: SilverCraft.CSCore.SoundOut.BufferedPortAudioSoundOut.PlaybackState
+  commentId: P:SilverCraft.CSCore.SoundOut.BufferedPortAudioSoundOut.PlaybackState
+  id: PlaybackState
+  parent: SilverCraft.CSCore.SoundOut.BufferedPortAudioSoundOut
+  langs:
+  - csharp
+  - vb
+  name: PlaybackState
+  nameWithType: BufferedPortAudioSoundOut.PlaybackState
+  fullName: SilverCraft.CSCore.SoundOut.BufferedPortAudioSoundOut.PlaybackState
+  type: Property
+  source:
+    remote:
+      path: SilverCraft.CSCore/SoundOut/BufferedPortAudioSoundOut.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: PlaybackState
+    path: ../SilverCraft.CSCore/SoundOut/BufferedPortAudioSoundOut.cs
+    startLine: 75
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.SoundOut
+  summary: Gets the <xref href="SilverCraft.CSCore.SoundOut.PlaybackState" data-throw-if-not-resolved="false"></xref> of the <xref href="SilverCraft.CSCore.SoundOut.ISoundOut" data-throw-if-not-resolved="false"></xref>. The playback state indicates whether the playback is currently playing, paused or stopped.
+  example: []
+  syntax:
+    content: public PlaybackState PlaybackState { get; }
+    parameters: []
+    return:
+      type: SilverCraft.CSCore.SoundOut.PlaybackState
+    content.vb: Public Property PlaybackState As PlaybackState
+  overload: SilverCraft.CSCore.SoundOut.BufferedPortAudioSoundOut.PlaybackState*
+  implements:
+  - SilverCraft.CSCore.SoundOut.ISoundOut.PlaybackState
+- uid: SilverCraft.CSCore.SoundOut.BufferedPortAudioSoundOut.Stopped
+  commentId: E:SilverCraft.CSCore.SoundOut.BufferedPortAudioSoundOut.Stopped
+  id: Stopped
+  parent: SilverCraft.CSCore.SoundOut.BufferedPortAudioSoundOut
+  langs:
+  - csharp
+  - vb
+  name: Stopped
+  nameWithType: BufferedPortAudioSoundOut.Stopped
+  fullName: SilverCraft.CSCore.SoundOut.BufferedPortAudioSoundOut.Stopped
+  type: Event
+  source:
+    remote:
+      path: SilverCraft.CSCore/SoundOut/BufferedPortAudioSoundOut.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: Stopped
+    path: ../SilverCraft.CSCore/SoundOut/BufferedPortAudioSoundOut.cs
+    startLine: 77
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.SoundOut
+  summary: Occurs when the playback stops.
+  example: []
+  syntax:
+    content: public event EventHandler<PlaybackStoppedEventArgs>? Stopped
+    return:
+      type: System.EventHandler{SilverCraft.CSCore.SoundOut.PlaybackStoppedEventArgs}
+    content.vb: Public Event Stopped As EventHandler(Of PlaybackStoppedEventArgs)
+  implements:
+  - SilverCraft.CSCore.SoundOut.ISoundOut.Stopped
+- uid: SilverCraft.CSCore.SoundOut.BufferedPortAudioSoundOut.OutputLatency
+  commentId: P:SilverCraft.CSCore.SoundOut.BufferedPortAudioSoundOut.OutputLatency
+  id: OutputLatency
+  parent: SilverCraft.CSCore.SoundOut.BufferedPortAudioSoundOut
+  langs:
+  - csharp
+  - vb
+  name: OutputLatency
+  nameWithType: BufferedPortAudioSoundOut.OutputLatency
+  fullName: SilverCraft.CSCore.SoundOut.BufferedPortAudioSoundOut.OutputLatency
+  type: Property
+  source:
+    remote:
+      path: SilverCraft.CSCore/SoundOut/BufferedPortAudioSoundOut.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: OutputLatency
+    path: ../SilverCraft.CSCore/SoundOut/BufferedPortAudioSoundOut.cs
+    startLine: 82
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.SoundOut
+  summary: Total unplayed audio latency currently buffered in the ring buffer and PortAudio stream.
+  example: []
+  syntax:
+    content: public TimeSpan OutputLatency { get; }
+    parameters: []
+    return:
+      type: System.TimeSpan
+    content.vb: Public ReadOnly Property OutputLatency As TimeSpan
+  overload: SilverCraft.CSCore.SoundOut.BufferedPortAudioSoundOut.OutputLatency*
+- uid: SilverCraft.CSCore.SoundOut.BufferedPortAudioSoundOut.IsSupported
+  commentId: M:SilverCraft.CSCore.SoundOut.BufferedPortAudioSoundOut.IsSupported
+  id: IsSupported
+  parent: SilverCraft.CSCore.SoundOut.BufferedPortAudioSoundOut
+  langs:
+  - csharp
+  - vb
+  name: IsSupported()
+  nameWithType: BufferedPortAudioSoundOut.IsSupported()
+  fullName: SilverCraft.CSCore.SoundOut.BufferedPortAudioSoundOut.IsSupported()
+  type: Method
+  source:
+    remote:
+      path: SilverCraft.CSCore/SoundOut/BufferedPortAudioSoundOut.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: IsSupported
+    path: ../SilverCraft.CSCore/SoundOut/BufferedPortAudioSoundOut.cs
+    startLine: 97
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.SoundOut
+  syntax:
+    content: public static bool IsSupported()
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Function IsSupported() As Boolean
+  overload: SilverCraft.CSCore.SoundOut.BufferedPortAudioSoundOut.IsSupported*
+- uid: SilverCraft.CSCore.SoundOut.BufferedPortAudioSoundOut.GetOutputDeviceNames
+  commentId: M:SilverCraft.CSCore.SoundOut.BufferedPortAudioSoundOut.GetOutputDeviceNames
+  id: GetOutputDeviceNames
+  parent: SilverCraft.CSCore.SoundOut.BufferedPortAudioSoundOut
+  langs:
+  - csharp
+  - vb
+  name: GetOutputDeviceNames()
+  nameWithType: BufferedPortAudioSoundOut.GetOutputDeviceNames()
+  fullName: SilverCraft.CSCore.SoundOut.BufferedPortAudioSoundOut.GetOutputDeviceNames()
+  type: Method
+  source:
+    remote:
+      path: SilverCraft.CSCore/SoundOut/BufferedPortAudioSoundOut.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: GetOutputDeviceNames
+    path: ../SilverCraft.CSCore/SoundOut/BufferedPortAudioSoundOut.cs
+    startLine: 103
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.SoundOut
+  summary: >-
+    Enumerates available PortAudio output devices formatted as <code>DeviceName (HostApiName)</code>,
+
+    prefixed with <xref href="SilverCraft.CSCore.SoundOut.BufferedPortAudioSoundOut.DefaultDeviceLabel" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public static string[] GetOutputDeviceNames()
+    return:
+      type: System.String[]
+    content.vb: Public Shared Function GetOutputDeviceNames() As String()
+  overload: SilverCraft.CSCore.SoundOut.BufferedPortAudioSoundOut.GetOutputDeviceNames*
+- uid: SilverCraft.CSCore.SoundOut.BufferedPortAudioSoundOut.Initialize(SilverCraft.CSCore.IWaveSource)
+  commentId: M:SilverCraft.CSCore.SoundOut.BufferedPortAudioSoundOut.Initialize(SilverCraft.CSCore.IWaveSource)
+  id: Initialize(SilverCraft.CSCore.IWaveSource)
+  parent: SilverCraft.CSCore.SoundOut.BufferedPortAudioSoundOut
+  langs:
+  - csharp
+  - vb
+  name: Initialize(IWaveSource)
+  nameWithType: BufferedPortAudioSoundOut.Initialize(IWaveSource)
+  fullName: SilverCraft.CSCore.SoundOut.BufferedPortAudioSoundOut.Initialize(SilverCraft.CSCore.IWaveSource)
+  type: Method
+  source:
+    remote:
+      path: SilverCraft.CSCore/SoundOut/BufferedPortAudioSoundOut.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: Initialize
+    path: ../SilverCraft.CSCore/SoundOut/BufferedPortAudioSoundOut.cs
+    startLine: 105
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.SoundOut
+  summary: Initializes the <xref href="SilverCraft.CSCore.SoundOut.ISoundOut" data-throw-if-not-resolved="false"></xref> for playing a <code class="paramref">source</code>.
+  example: []
+  syntax:
+    content: public void Initialize(IWaveSource source)
+    parameters:
+    - id: source
+      type: SilverCraft.CSCore.IWaveSource
+      description: <xref href="SilverCraft.CSCore.IWaveSource" data-throw-if-not-resolved="false"></xref> which provides waveform-audio data to play.
+    content.vb: Public Sub Initialize(source As IWaveSource)
+  overload: SilverCraft.CSCore.SoundOut.BufferedPortAudioSoundOut.Initialize*
+  implements:
+  - SilverCraft.CSCore.SoundOut.ISoundOut.Initialize(SilverCraft.CSCore.IWaveSource)
+- uid: SilverCraft.CSCore.SoundOut.BufferedPortAudioSoundOut.ExecuteSeek(System.Action)
+  commentId: M:SilverCraft.CSCore.SoundOut.BufferedPortAudioSoundOut.ExecuteSeek(System.Action)
+  id: ExecuteSeek(System.Action)
+  parent: SilverCraft.CSCore.SoundOut.BufferedPortAudioSoundOut
+  langs:
+  - csharp
+  - vb
+  name: ExecuteSeek(Action)
+  nameWithType: BufferedPortAudioSoundOut.ExecuteSeek(Action)
+  fullName: SilverCraft.CSCore.SoundOut.BufferedPortAudioSoundOut.ExecuteSeek(System.Action)
+  type: Method
+  source:
+    remote:
+      path: SilverCraft.CSCore/SoundOut/BufferedPortAudioSoundOut.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: ExecuteSeek
+    path: ../SilverCraft.CSCore/SoundOut/BufferedPortAudioSoundOut.cs
+    startLine: 242
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.SoundOut
+  summary: >-
+    Executes a seek operation serialized against the decode producer thread and flushes
+
+    stale samples from the ring buffer.
+  example: []
+  syntax:
+    content: public void ExecuteSeek(Action seekAction)
+    parameters:
+    - id: seekAction
+      type: System.Action
+    content.vb: Public Sub ExecuteSeek(seekAction As Action)
+  overload: SilverCraft.CSCore.SoundOut.BufferedPortAudioSoundOut.ExecuteSeek*
+- uid: SilverCraft.CSCore.SoundOut.BufferedPortAudioSoundOut.Play
+  commentId: M:SilverCraft.CSCore.SoundOut.BufferedPortAudioSoundOut.Play
+  id: Play
+  parent: SilverCraft.CSCore.SoundOut.BufferedPortAudioSoundOut
+  langs:
+  - csharp
+  - vb
+  name: Play()
+  nameWithType: BufferedPortAudioSoundOut.Play()
+  fullName: SilverCraft.CSCore.SoundOut.BufferedPortAudioSoundOut.Play()
+  type: Method
+  source:
+    remote:
+      path: SilverCraft.CSCore/SoundOut/BufferedPortAudioSoundOut.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: Play
+    path: ../SilverCraft.CSCore/SoundOut/BufferedPortAudioSoundOut.cs
+    startLine: 403
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.SoundOut
+  summary: Starts the audio playback.
+  example: []
+  syntax:
+    content: public void Play()
+    content.vb: Public Sub Play()
+  overload: SilverCraft.CSCore.SoundOut.BufferedPortAudioSoundOut.Play*
+  implements:
+  - SilverCraft.CSCore.SoundOut.ISoundOut.Play
+- uid: SilverCraft.CSCore.SoundOut.BufferedPortAudioSoundOut.Resume
+  commentId: M:SilverCraft.CSCore.SoundOut.BufferedPortAudioSoundOut.Resume
+  id: Resume
+  parent: SilverCraft.CSCore.SoundOut.BufferedPortAudioSoundOut
+  langs:
+  - csharp
+  - vb
+  name: Resume()
+  nameWithType: BufferedPortAudioSoundOut.Resume()
+  fullName: SilverCraft.CSCore.SoundOut.BufferedPortAudioSoundOut.Resume()
+  type: Method
+  source:
+    remote:
+      path: SilverCraft.CSCore/SoundOut/BufferedPortAudioSoundOut.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: Resume
+    path: ../SilverCraft.CSCore/SoundOut/BufferedPortAudioSoundOut.cs
+    startLine: 434
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.SoundOut
+  summary: Resumes the audio playback.
+  example: []
+  syntax:
+    content: public void Resume()
+    content.vb: Public Sub [Resume]()
+  overload: SilverCraft.CSCore.SoundOut.BufferedPortAudioSoundOut.Resume*
+  implements:
+  - SilverCraft.CSCore.SoundOut.ISoundOut.Resume
+- uid: SilverCraft.CSCore.SoundOut.BufferedPortAudioSoundOut.Pause
+  commentId: M:SilverCraft.CSCore.SoundOut.BufferedPortAudioSoundOut.Pause
+  id: Pause
+  parent: SilverCraft.CSCore.SoundOut.BufferedPortAudioSoundOut
+  langs:
+  - csharp
+  - vb
+  name: Pause()
+  nameWithType: BufferedPortAudioSoundOut.Pause()
+  fullName: SilverCraft.CSCore.SoundOut.BufferedPortAudioSoundOut.Pause()
+  type: Method
+  source:
+    remote:
+      path: SilverCraft.CSCore/SoundOut/BufferedPortAudioSoundOut.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: Pause
+    path: ../SilverCraft.CSCore/SoundOut/BufferedPortAudioSoundOut.cs
+    startLine: 440
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.SoundOut
+  summary: Pauses the audio playback.
+  example: []
+  syntax:
+    content: public void Pause()
+    content.vb: Public Sub Pause()
+  overload: SilverCraft.CSCore.SoundOut.BufferedPortAudioSoundOut.Pause*
+  implements:
+  - SilverCraft.CSCore.SoundOut.ISoundOut.Pause
+- uid: SilverCraft.CSCore.SoundOut.BufferedPortAudioSoundOut.Stop
+  commentId: M:SilverCraft.CSCore.SoundOut.BufferedPortAudioSoundOut.Stop
+  id: Stop
+  parent: SilverCraft.CSCore.SoundOut.BufferedPortAudioSoundOut
+  langs:
+  - csharp
+  - vb
+  name: Stop()
+  nameWithType: BufferedPortAudioSoundOut.Stop()
+  fullName: SilverCraft.CSCore.SoundOut.BufferedPortAudioSoundOut.Stop()
+  type: Method
+  source:
+    remote:
+      path: SilverCraft.CSCore/SoundOut/BufferedPortAudioSoundOut.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: Stop
+    path: ../SilverCraft.CSCore/SoundOut/BufferedPortAudioSoundOut.cs
+    startLine: 469
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.SoundOut
+  summary: Stops the audio playback.
+  example: []
+  syntax:
+    content: public void Stop()
+    content.vb: Public Sub [Stop]()
+  overload: SilverCraft.CSCore.SoundOut.BufferedPortAudioSoundOut.Stop*
+  implements:
+  - SilverCraft.CSCore.SoundOut.ISoundOut.Stop
+- uid: SilverCraft.CSCore.SoundOut.BufferedPortAudioSoundOut.Dispose
+  commentId: M:SilverCraft.CSCore.SoundOut.BufferedPortAudioSoundOut.Dispose
+  id: Dispose
+  parent: SilverCraft.CSCore.SoundOut.BufferedPortAudioSoundOut
+  langs:
+  - csharp
+  - vb
+  name: Dispose()
+  nameWithType: BufferedPortAudioSoundOut.Dispose()
+  fullName: SilverCraft.CSCore.SoundOut.BufferedPortAudioSoundOut.Dispose()
+  type: Method
+  source:
+    remote:
+      path: SilverCraft.CSCore/SoundOut/BufferedPortAudioSoundOut.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: Dispose
+    path: ../SilverCraft.CSCore/SoundOut/BufferedPortAudioSoundOut.cs
+    startLine: 519
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.SoundOut
+  summary: Performs application-defined tasks associated with freeing, releasing, or resetting unmanaged resources.
+  example: []
+  syntax:
+    content: public void Dispose()
+    content.vb: Public Sub Dispose()
+  overload: SilverCraft.CSCore.SoundOut.BufferedPortAudioSoundOut.Dispose*
+  implements:
+  - System.IDisposable.Dispose
+- uid: SilverCraft.CSCore.SoundOut.BufferedPortAudioSoundOut.Dispose(System.Boolean)
+  commentId: M:SilverCraft.CSCore.SoundOut.BufferedPortAudioSoundOut.Dispose(System.Boolean)
+  id: Dispose(System.Boolean)
+  parent: SilverCraft.CSCore.SoundOut.BufferedPortAudioSoundOut
+  langs:
+  - csharp
+  - vb
+  name: Dispose(bool)
+  nameWithType: BufferedPortAudioSoundOut.Dispose(bool)
+  fullName: SilverCraft.CSCore.SoundOut.BufferedPortAudioSoundOut.Dispose(bool)
+  type: Method
+  source:
+    remote:
+      path: SilverCraft.CSCore/SoundOut/BufferedPortAudioSoundOut.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: Dispose
+    path: ../SilverCraft.CSCore/SoundOut/BufferedPortAudioSoundOut.cs
+    startLine: 525
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.SoundOut
+  syntax:
+    content: protected virtual void Dispose(bool disposing)
+    parameters:
+    - id: disposing
+      type: System.Boolean
+    content.vb: Protected Overridable Sub Dispose(disposing As Boolean)
+  overload: SilverCraft.CSCore.SoundOut.BufferedPortAudioSoundOut.Dispose*
+  nameWithType.vb: BufferedPortAudioSoundOut.Dispose(Boolean)
+  fullName.vb: SilverCraft.CSCore.SoundOut.BufferedPortAudioSoundOut.Dispose(Boolean)
+  name.vb: Dispose(Boolean)
+- uid: SilverCraft.CSCore.SoundOut.BufferedPortAudioSoundOut.Finalize
+  commentId: M:SilverCraft.CSCore.SoundOut.BufferedPortAudioSoundOut.Finalize
+  id: Finalize
+  parent: SilverCraft.CSCore.SoundOut.BufferedPortAudioSoundOut
+  langs:
+  - csharp
+  - vb
+  name: ~BufferedPortAudioSoundOut()
+  nameWithType: BufferedPortAudioSoundOut.~BufferedPortAudioSoundOut()
+  fullName: SilverCraft.CSCore.SoundOut.BufferedPortAudioSoundOut.~BufferedPortAudioSoundOut()
+  type: Method
+  source:
+    remote:
+      path: SilverCraft.CSCore/SoundOut/BufferedPortAudioSoundOut.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: Finalize
+    path: ../SilverCraft.CSCore/SoundOut/BufferedPortAudioSoundOut.cs
+    startLine: 554
+  assemblies:
+  - SilverCraft.CSCore
+  namespace: SilverCraft.CSCore.SoundOut
+  syntax:
+    content: protected ~BufferedPortAudioSoundOut()
+    content.vb: 'Protected '
+  overload: SilverCraft.CSCore.SoundOut.BufferedPortAudioSoundOut.Finalize*
+  nameWithType.vb: ''
+  fullName.vb: ''
+  name.vb: ''
+references:
+- uid: SilverCraft.CSCore.SoundOut.ISoundOut
+  commentId: T:SilverCraft.CSCore.SoundOut.ISoundOut
+  parent: SilverCraft.CSCore.SoundOut
+  href: SilverCraft.CSCore.SoundOut.ISoundOut.html
+  name: ISoundOut
+  nameWithType: ISoundOut
+  fullName: SilverCraft.CSCore.SoundOut.ISoundOut
+- uid: SilverCraft.CSCore.SoundOut
+  commentId: N:SilverCraft.CSCore.SoundOut
+  name: SilverCraft.CSCore.SoundOut
+  nameWithType: SilverCraft.CSCore.SoundOut
+  fullName: SilverCraft.CSCore.SoundOut
+  spec.csharp:
+  - uid: SilverCraft
+    name: SilverCraft
+  - name: .
+  - uid: SilverCraft.CSCore
+    name: CSCore
+  - name: .
+  - uid: SilverCraft.CSCore.SoundOut
+    name: SoundOut
+  spec.vb:
+  - uid: SilverCraft
+    name: SilverCraft
+  - name: .
+  - uid: SilverCraft.CSCore
+    name: CSCore
+  - name: .
+  - uid: SilverCraft.CSCore.SoundOut
+    name: SoundOut
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.IDisposable
+  commentId: T:System.IDisposable
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.idisposable
+  name: IDisposable
+  nameWithType: IDisposable
+  fullName: System.IDisposable
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: SilverCraft.CSCore.SoundOut.BufferedPortAudioSoundOut.SilverCraft.CSCore.FluentExtensions.Synchronized``2
+  commentId: M:SilverCraft.CSCore.FluentExtensions.Synchronized``2(``0)
+  parent: SilverCraft.CSCore.FluentExtensions
+  definition: SilverCraft.CSCore.FluentExtensions.Synchronized``2(``0)
+  href: SilverCraft.CSCore.FluentExtensions.html#SilverCraft_CSCore_FluentExtensions_Synchronized__2___0_
+  name: Synchronized<BufferedPortAudioSoundOut, T>(BufferedPortAudioSoundOut)
+  nameWithType: FluentExtensions.Synchronized<BufferedPortAudioSoundOut, T>(BufferedPortAudioSoundOut)
+  fullName: SilverCraft.CSCore.FluentExtensions.Synchronized<SilverCraft.CSCore.SoundOut.BufferedPortAudioSoundOut, T>(SilverCraft.CSCore.SoundOut.BufferedPortAudioSoundOut)
+  nameWithType.vb: FluentExtensions.Synchronized(Of BufferedPortAudioSoundOut, T)(BufferedPortAudioSoundOut)
+  fullName.vb: SilverCraft.CSCore.FluentExtensions.Synchronized(Of SilverCraft.CSCore.SoundOut.BufferedPortAudioSoundOut, T)(SilverCraft.CSCore.SoundOut.BufferedPortAudioSoundOut)
+  name.vb: Synchronized(Of BufferedPortAudioSoundOut, T)(BufferedPortAudioSoundOut)
+  spec.csharp:
+  - uid: SilverCraft.CSCore.FluentExtensions.Synchronized``2(SilverCraft.CSCore.SoundOut.BufferedPortAudioSoundOut)
+    name: Synchronized
+    href: SilverCraft.CSCore.FluentExtensions.html#SilverCraft_CSCore_FluentExtensions_Synchronized__2___0_
+  - name: <
+  - uid: SilverCraft.CSCore.SoundOut.BufferedPortAudioSoundOut
+    name: BufferedPortAudioSoundOut
+    href: SilverCraft.CSCore.SoundOut.BufferedPortAudioSoundOut.html
+  - name: ','
+  - name: " "
+  - name: T
+  - name: '>'
+  - name: (
+  - uid: SilverCraft.CSCore.SoundOut.BufferedPortAudioSoundOut
+    name: BufferedPortAudioSoundOut
+    href: SilverCraft.CSCore.SoundOut.BufferedPortAudioSoundOut.html
+  - name: )
+  spec.vb:
+  - uid: SilverCraft.CSCore.FluentExtensions.Synchronized``2(SilverCraft.CSCore.SoundOut.BufferedPortAudioSoundOut)
+    name: Synchronized
+    href: SilverCraft.CSCore.FluentExtensions.html#SilverCraft_CSCore_FluentExtensions_Synchronized__2___0_
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: SilverCraft.CSCore.SoundOut.BufferedPortAudioSoundOut
+    name: BufferedPortAudioSoundOut
+    href: SilverCraft.CSCore.SoundOut.BufferedPortAudioSoundOut.html
+  - name: ','
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: SilverCraft.CSCore.SoundOut.BufferedPortAudioSoundOut
+    name: BufferedPortAudioSoundOut
+    href: SilverCraft.CSCore.SoundOut.BufferedPortAudioSoundOut.html
+  - name: )
+- uid: SilverCraft.CSCore.SoundOut.ISoundOut.SilverCraft.CSCore.Extensions.WaitForStopped
+  commentId: M:SilverCraft.CSCore.Extensions.WaitForStopped(SilverCraft.CSCore.SoundOut.ISoundOut)
+  parent: SilverCraft.CSCore.Extensions
+  definition: SilverCraft.CSCore.Extensions.WaitForStopped(SilverCraft.CSCore.SoundOut.ISoundOut)
+  href: SilverCraft.CSCore.Extensions.html#SilverCraft_CSCore_Extensions_WaitForStopped_SilverCraft_CSCore_SoundOut_ISoundOut_
+  name: WaitForStopped(ISoundOut)
+  nameWithType: Extensions.WaitForStopped(ISoundOut)
+  fullName: SilverCraft.CSCore.Extensions.WaitForStopped(SilverCraft.CSCore.SoundOut.ISoundOut)
+  spec.csharp:
+  - uid: SilverCraft.CSCore.Extensions.WaitForStopped(SilverCraft.CSCore.SoundOut.ISoundOut)
+    name: WaitForStopped
+    href: SilverCraft.CSCore.Extensions.html#SilverCraft_CSCore_Extensions_WaitForStopped_SilverCraft_CSCore_SoundOut_ISoundOut_
+  - name: (
+  - uid: SilverCraft.CSCore.SoundOut.ISoundOut
+    name: ISoundOut
+    href: SilverCraft.CSCore.SoundOut.ISoundOut.html
+  - name: )
+  spec.vb:
+  - uid: SilverCraft.CSCore.Extensions.WaitForStopped(SilverCraft.CSCore.SoundOut.ISoundOut)
+    name: WaitForStopped
+    href: SilverCraft.CSCore.Extensions.html#SilverCraft_CSCore_Extensions_WaitForStopped_SilverCraft_CSCore_SoundOut_ISoundOut_
+  - name: (
+  - uid: SilverCraft.CSCore.SoundOut.ISoundOut
+    name: ISoundOut
+    href: SilverCraft.CSCore.SoundOut.ISoundOut.html
+  - name: )
+- uid: SilverCraft.CSCore.SoundOut.ISoundOut.SilverCraft.CSCore.Extensions.WaitForStopped(System.Int32)
+  commentId: M:SilverCraft.CSCore.Extensions.WaitForStopped(SilverCraft.CSCore.SoundOut.ISoundOut,System.Int32)
+  parent: SilverCraft.CSCore.Extensions
+  definition: SilverCraft.CSCore.Extensions.WaitForStopped(SilverCraft.CSCore.SoundOut.ISoundOut,System.Int32)
+  href: SilverCraft.CSCore.Extensions.html#SilverCraft_CSCore_Extensions_WaitForStopped_SilverCraft_CSCore_SoundOut_ISoundOut_System_Int32_
+  name: WaitForStopped(ISoundOut, int)
+  nameWithType: Extensions.WaitForStopped(ISoundOut, int)
+  fullName: SilverCraft.CSCore.Extensions.WaitForStopped(SilverCraft.CSCore.SoundOut.ISoundOut, int)
+  nameWithType.vb: Extensions.WaitForStopped(ISoundOut, Integer)
+  fullName.vb: SilverCraft.CSCore.Extensions.WaitForStopped(SilverCraft.CSCore.SoundOut.ISoundOut, Integer)
+  name.vb: WaitForStopped(ISoundOut, Integer)
+  spec.csharp:
+  - uid: SilverCraft.CSCore.Extensions.WaitForStopped(SilverCraft.CSCore.SoundOut.ISoundOut,System.Int32)
+    name: WaitForStopped
+    href: SilverCraft.CSCore.Extensions.html#SilverCraft_CSCore_Extensions_WaitForStopped_SilverCraft_CSCore_SoundOut_ISoundOut_System_Int32_
+  - name: (
+  - uid: SilverCraft.CSCore.SoundOut.ISoundOut
+    name: ISoundOut
+    href: SilverCraft.CSCore.SoundOut.ISoundOut.html
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+  spec.vb:
+  - uid: SilverCraft.CSCore.Extensions.WaitForStopped(SilverCraft.CSCore.SoundOut.ISoundOut,System.Int32)
+    name: WaitForStopped
+    href: SilverCraft.CSCore.Extensions.html#SilverCraft_CSCore_Extensions_WaitForStopped_SilverCraft_CSCore_SoundOut_ISoundOut_System_Int32_
+  - name: (
+  - uid: SilverCraft.CSCore.SoundOut.ISoundOut
+    name: ISoundOut
+    href: SilverCraft.CSCore.SoundOut.ISoundOut.html
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: SilverCraft.CSCore.FluentExtensions.Synchronized``2(``0)
+  commentId: M:SilverCraft.CSCore.FluentExtensions.Synchronized``2(``0)
+  href: SilverCraft.CSCore.FluentExtensions.html#SilverCraft_CSCore_FluentExtensions_Synchronized__2___0_
+  name: Synchronized<TAudioSource, T>(TAudioSource)
+  nameWithType: FluentExtensions.Synchronized<TAudioSource, T>(TAudioSource)
+  fullName: SilverCraft.CSCore.FluentExtensions.Synchronized<TAudioSource, T>(TAudioSource)
+  nameWithType.vb: FluentExtensions.Synchronized(Of TAudioSource, T)(TAudioSource)
+  fullName.vb: SilverCraft.CSCore.FluentExtensions.Synchronized(Of TAudioSource, T)(TAudioSource)
+  name.vb: Synchronized(Of TAudioSource, T)(TAudioSource)
+  spec.csharp:
+  - uid: SilverCraft.CSCore.FluentExtensions.Synchronized``2(``0)
+    name: Synchronized
+    href: SilverCraft.CSCore.FluentExtensions.html#SilverCraft_CSCore_FluentExtensions_Synchronized__2___0_
+  - name: <
+  - name: TAudioSource
+  - name: ','
+  - name: " "
+  - name: T
+  - name: '>'
+  - name: (
+  - name: TAudioSource
+  - name: )
+  spec.vb:
+  - uid: SilverCraft.CSCore.FluentExtensions.Synchronized``2(``0)
+    name: Synchronized
+    href: SilverCraft.CSCore.FluentExtensions.html#SilverCraft_CSCore_FluentExtensions_Synchronized__2___0_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TAudioSource
+  - name: ','
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - name: TAudioSource
+  - name: )
+- uid: SilverCraft.CSCore.FluentExtensions
+  commentId: T:SilverCraft.CSCore.FluentExtensions
+  parent: SilverCraft.CSCore
+  href: SilverCraft.CSCore.FluentExtensions.html
+  name: FluentExtensions
+  nameWithType: FluentExtensions
+  fullName: SilverCraft.CSCore.FluentExtensions
+- uid: SilverCraft.CSCore.Extensions.WaitForStopped(SilverCraft.CSCore.SoundOut.ISoundOut)
+  commentId: M:SilverCraft.CSCore.Extensions.WaitForStopped(SilverCraft.CSCore.SoundOut.ISoundOut)
+  href: SilverCraft.CSCore.Extensions.html#SilverCraft_CSCore_Extensions_WaitForStopped_SilverCraft_CSCore_SoundOut_ISoundOut_
+  name: WaitForStopped(ISoundOut)
+  nameWithType: Extensions.WaitForStopped(ISoundOut)
+  fullName: SilverCraft.CSCore.Extensions.WaitForStopped(SilverCraft.CSCore.SoundOut.ISoundOut)
+  spec.csharp:
+  - uid: SilverCraft.CSCore.Extensions.WaitForStopped(SilverCraft.CSCore.SoundOut.ISoundOut)
+    name: WaitForStopped
+    href: SilverCraft.CSCore.Extensions.html#SilverCraft_CSCore_Extensions_WaitForStopped_SilverCraft_CSCore_SoundOut_ISoundOut_
+  - name: (
+  - uid: SilverCraft.CSCore.SoundOut.ISoundOut
+    name: ISoundOut
+    href: SilverCraft.CSCore.SoundOut.ISoundOut.html
+  - name: )
+  spec.vb:
+  - uid: SilverCraft.CSCore.Extensions.WaitForStopped(SilverCraft.CSCore.SoundOut.ISoundOut)
+    name: WaitForStopped
+    href: SilverCraft.CSCore.Extensions.html#SilverCraft_CSCore_Extensions_WaitForStopped_SilverCraft_CSCore_SoundOut_ISoundOut_
+  - name: (
+  - uid: SilverCraft.CSCore.SoundOut.ISoundOut
+    name: ISoundOut
+    href: SilverCraft.CSCore.SoundOut.ISoundOut.html
+  - name: )
+- uid: SilverCraft.CSCore.Extensions
+  commentId: T:SilverCraft.CSCore.Extensions
+  parent: SilverCraft.CSCore
+  href: SilverCraft.CSCore.Extensions.html
+  name: Extensions
+  nameWithType: Extensions
+  fullName: SilverCraft.CSCore.Extensions
+- uid: SilverCraft.CSCore.Extensions.WaitForStopped(SilverCraft.CSCore.SoundOut.ISoundOut,System.Int32)
+  commentId: M:SilverCraft.CSCore.Extensions.WaitForStopped(SilverCraft.CSCore.SoundOut.ISoundOut,System.Int32)
+  isExternal: true
+  href: SilverCraft.CSCore.Extensions.html#SilverCraft_CSCore_Extensions_WaitForStopped_SilverCraft_CSCore_SoundOut_ISoundOut_System_Int32_
+  name: WaitForStopped(ISoundOut, int)
+  nameWithType: Extensions.WaitForStopped(ISoundOut, int)
+  fullName: SilverCraft.CSCore.Extensions.WaitForStopped(SilverCraft.CSCore.SoundOut.ISoundOut, int)
+  nameWithType.vb: Extensions.WaitForStopped(ISoundOut, Integer)
+  fullName.vb: SilverCraft.CSCore.Extensions.WaitForStopped(SilverCraft.CSCore.SoundOut.ISoundOut, Integer)
+  name.vb: WaitForStopped(ISoundOut, Integer)
+  spec.csharp:
+  - uid: SilverCraft.CSCore.Extensions.WaitForStopped(SilverCraft.CSCore.SoundOut.ISoundOut,System.Int32)
+    name: WaitForStopped
+    href: SilverCraft.CSCore.Extensions.html#SilverCraft_CSCore_Extensions_WaitForStopped_SilverCraft_CSCore_SoundOut_ISoundOut_System_Int32_
+  - name: (
+  - uid: SilverCraft.CSCore.SoundOut.ISoundOut
+    name: ISoundOut
+    href: SilverCraft.CSCore.SoundOut.ISoundOut.html
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+  spec.vb:
+  - uid: SilverCraft.CSCore.Extensions.WaitForStopped(SilverCraft.CSCore.SoundOut.ISoundOut,System.Int32)
+    name: WaitForStopped
+    href: SilverCraft.CSCore.Extensions.html#SilverCraft_CSCore_Extensions_WaitForStopped_SilverCraft_CSCore_SoundOut_ISoundOut_System_Int32_
+  - name: (
+  - uid: SilverCraft.CSCore.SoundOut.ISoundOut
+    name: ISoundOut
+    href: SilverCraft.CSCore.SoundOut.ISoundOut.html
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: SilverCraft.CSCore
+  commentId: N:SilverCraft.CSCore
+  name: SilverCraft.CSCore
+  nameWithType: SilverCraft.CSCore
+  fullName: SilverCraft.CSCore
+  spec.csharp:
+  - uid: SilverCraft
+    name: SilverCraft
+  - name: .
+  - uid: SilverCraft.CSCore
+    name: CSCore
+  spec.vb:
+  - uid: SilverCraft
+    name: SilverCraft
+  - name: .
+  - uid: SilverCraft.CSCore
+    name: CSCore
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: SilverCraft.CSCore.SoundOut.BufferedPortAudioSoundOut.#ctor*
+  commentId: Overload:SilverCraft.CSCore.SoundOut.BufferedPortAudioSoundOut.#ctor
+  href: SilverCraft.CSCore.SoundOut.BufferedPortAudioSoundOut.html#SilverCraft_CSCore_SoundOut_BufferedPortAudioSoundOut__ctor_System_String_System_Nullable_System_TimeSpan__System_Nullable_System_TimeSpan__
+  name: BufferedPortAudioSoundOut
+  nameWithType: BufferedPortAudioSoundOut.BufferedPortAudioSoundOut
+  fullName: SilverCraft.CSCore.SoundOut.BufferedPortAudioSoundOut.BufferedPortAudioSoundOut
+  nameWithType.vb: BufferedPortAudioSoundOut.New
+  fullName.vb: SilverCraft.CSCore.SoundOut.BufferedPortAudioSoundOut.New
+  name.vb: New
+- uid: System.Nullable{System.TimeSpan}
+  commentId: T:System.Nullable{System.TimeSpan}
+  parent: System
+  definition: System.Nullable`1
+  href: https://learn.microsoft.com/dotnet/api/system.timespan
+  name: TimeSpan?
+  nameWithType: TimeSpan?
+  fullName: System.TimeSpan?
+  spec.csharp:
+  - uid: System.TimeSpan
+    name: TimeSpan
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.timespan
+  - name: '?'
+  spec.vb:
+  - uid: System.TimeSpan
+    name: TimeSpan
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.timespan
+  - name: '?'
+- uid: System.Nullable`1
+  commentId: T:System.Nullable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  name: Nullable<T>
+  nameWithType: Nullable<T>
+  fullName: System.Nullable<T>
+  nameWithType.vb: Nullable(Of T)
+  fullName.vb: System.Nullable(Of T)
+  name.vb: Nullable(Of T)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: SilverCraft.CSCore.SoundOut.BufferedPortAudioSoundOut.Volume*
+  commentId: Overload:SilverCraft.CSCore.SoundOut.BufferedPortAudioSoundOut.Volume
+  href: SilverCraft.CSCore.SoundOut.BufferedPortAudioSoundOut.html#SilverCraft_CSCore_SoundOut_BufferedPortAudioSoundOut_Volume
+  name: Volume
+  nameWithType: BufferedPortAudioSoundOut.Volume
+  fullName: SilverCraft.CSCore.SoundOut.BufferedPortAudioSoundOut.Volume
+- uid: SilverCraft.CSCore.SoundOut.ISoundOut.Volume
+  commentId: P:SilverCraft.CSCore.SoundOut.ISoundOut.Volume
+  parent: SilverCraft.CSCore.SoundOut.ISoundOut
+  href: SilverCraft.CSCore.SoundOut.ISoundOut.html#SilverCraft_CSCore_SoundOut_ISoundOut_Volume
+  name: Volume
+  nameWithType: ISoundOut.Volume
+  fullName: SilverCraft.CSCore.SoundOut.ISoundOut.Volume
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.single
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single
+- uid: SilverCraft.CSCore.IWaveSource
+  commentId: T:SilverCraft.CSCore.IWaveSource
+  parent: SilverCraft.CSCore
+  href: SilverCraft.CSCore.IWaveSource.html
+  name: IWaveSource
+  nameWithType: IWaveSource
+  fullName: SilverCraft.CSCore.IWaveSource
+- uid: SilverCraft.CSCore.SoundOut.ISoundOut.Initialize(SilverCraft.CSCore.IWaveSource)
+  commentId: M:SilverCraft.CSCore.SoundOut.ISoundOut.Initialize(SilverCraft.CSCore.IWaveSource)
+  parent: SilverCraft.CSCore.SoundOut.ISoundOut
+  href: SilverCraft.CSCore.SoundOut.ISoundOut.html#SilverCraft_CSCore_SoundOut_ISoundOut_Initialize_SilverCraft_CSCore_IWaveSource_
+  name: Initialize(IWaveSource)
+  nameWithType: ISoundOut.Initialize(IWaveSource)
+  fullName: SilverCraft.CSCore.SoundOut.ISoundOut.Initialize(SilverCraft.CSCore.IWaveSource)
+  spec.csharp:
+  - uid: SilverCraft.CSCore.SoundOut.ISoundOut.Initialize(SilverCraft.CSCore.IWaveSource)
+    name: Initialize
+    href: SilverCraft.CSCore.SoundOut.ISoundOut.html#SilverCraft_CSCore_SoundOut_ISoundOut_Initialize_SilverCraft_CSCore_IWaveSource_
+  - name: (
+  - uid: SilverCraft.CSCore.IWaveSource
+    name: IWaveSource
+    href: SilverCraft.CSCore.IWaveSource.html
+  - name: )
+  spec.vb:
+  - uid: SilverCraft.CSCore.SoundOut.ISoundOut.Initialize(SilverCraft.CSCore.IWaveSource)
+    name: Initialize
+    href: SilverCraft.CSCore.SoundOut.ISoundOut.html#SilverCraft_CSCore_SoundOut_ISoundOut_Initialize_SilverCraft_CSCore_IWaveSource_
+  - name: (
+  - uid: SilverCraft.CSCore.IWaveSource
+    name: IWaveSource
+    href: SilverCraft.CSCore.IWaveSource.html
+  - name: )
+- uid: SilverCraft.CSCore.SoundOut.BufferedPortAudioSoundOut.WaveSource*
+  commentId: Overload:SilverCraft.CSCore.SoundOut.BufferedPortAudioSoundOut.WaveSource
+  href: SilverCraft.CSCore.SoundOut.BufferedPortAudioSoundOut.html#SilverCraft_CSCore_SoundOut_BufferedPortAudioSoundOut_WaveSource
+  name: WaveSource
+  nameWithType: BufferedPortAudioSoundOut.WaveSource
+  fullName: SilverCraft.CSCore.SoundOut.BufferedPortAudioSoundOut.WaveSource
+- uid: SilverCraft.CSCore.SoundOut.ISoundOut.WaveSource
+  commentId: P:SilverCraft.CSCore.SoundOut.ISoundOut.WaveSource
+  parent: SilverCraft.CSCore.SoundOut.ISoundOut
+  href: SilverCraft.CSCore.SoundOut.ISoundOut.html#SilverCraft_CSCore_SoundOut_ISoundOut_WaveSource
+  name: WaveSource
+  nameWithType: ISoundOut.WaveSource
+  fullName: SilverCraft.CSCore.SoundOut.ISoundOut.WaveSource
+- uid: SilverCraft.CSCore.SoundOut.PlaybackState
+  commentId: T:SilverCraft.CSCore.SoundOut.PlaybackState
+  parent: SilverCraft.CSCore.SoundOut
+  href: SilverCraft.CSCore.SoundOut.PlaybackState.html
+  name: PlaybackState
+  nameWithType: PlaybackState
+  fullName: SilverCraft.CSCore.SoundOut.PlaybackState
+- uid: SilverCraft.CSCore.SoundOut.BufferedPortAudioSoundOut.PlaybackState*
+  commentId: Overload:SilverCraft.CSCore.SoundOut.BufferedPortAudioSoundOut.PlaybackState
+  href: SilverCraft.CSCore.SoundOut.BufferedPortAudioSoundOut.html#SilverCraft_CSCore_SoundOut_BufferedPortAudioSoundOut_PlaybackState
+  name: PlaybackState
+  nameWithType: BufferedPortAudioSoundOut.PlaybackState
+  fullName: SilverCraft.CSCore.SoundOut.BufferedPortAudioSoundOut.PlaybackState
+- uid: SilverCraft.CSCore.SoundOut.ISoundOut.PlaybackState
+  commentId: P:SilverCraft.CSCore.SoundOut.ISoundOut.PlaybackState
+  parent: SilverCraft.CSCore.SoundOut.ISoundOut
+  href: SilverCraft.CSCore.SoundOut.ISoundOut.html#SilverCraft_CSCore_SoundOut_ISoundOut_PlaybackState
+  name: PlaybackState
+  nameWithType: ISoundOut.PlaybackState
+  fullName: SilverCraft.CSCore.SoundOut.ISoundOut.PlaybackState
+- uid: SilverCraft.CSCore.SoundOut.ISoundOut.Stopped
+  commentId: E:SilverCraft.CSCore.SoundOut.ISoundOut.Stopped
+  parent: SilverCraft.CSCore.SoundOut.ISoundOut
+  href: SilverCraft.CSCore.SoundOut.ISoundOut.html#SilverCraft_CSCore_SoundOut_ISoundOut_Stopped
+  name: Stopped
+  nameWithType: ISoundOut.Stopped
+  fullName: SilverCraft.CSCore.SoundOut.ISoundOut.Stopped
+- uid: System.EventHandler{SilverCraft.CSCore.SoundOut.PlaybackStoppedEventArgs}
+  commentId: T:System.EventHandler{SilverCraft.CSCore.SoundOut.PlaybackStoppedEventArgs}
+  parent: System
+  definition: System.EventHandler`1
+  href: https://learn.microsoft.com/dotnet/api/system.eventhandler-1
+  name: EventHandler<PlaybackStoppedEventArgs>
+  nameWithType: EventHandler<PlaybackStoppedEventArgs>
+  fullName: System.EventHandler<SilverCraft.CSCore.SoundOut.PlaybackStoppedEventArgs>
+  nameWithType.vb: EventHandler(Of PlaybackStoppedEventArgs)
+  fullName.vb: System.EventHandler(Of SilverCraft.CSCore.SoundOut.PlaybackStoppedEventArgs)
+  name.vb: EventHandler(Of PlaybackStoppedEventArgs)
+  spec.csharp:
+  - uid: System.EventHandler`1
+    name: EventHandler
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.eventhandler-1
+  - name: <
+  - uid: SilverCraft.CSCore.SoundOut.PlaybackStoppedEventArgs
+    name: PlaybackStoppedEventArgs
+    href: SilverCraft.CSCore.SoundOut.PlaybackStoppedEventArgs.html
+  - name: '>'
+  spec.vb:
+  - uid: System.EventHandler`1
+    name: EventHandler
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.eventhandler-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: SilverCraft.CSCore.SoundOut.PlaybackStoppedEventArgs
+    name: PlaybackStoppedEventArgs
+    href: SilverCraft.CSCore.SoundOut.PlaybackStoppedEventArgs.html
+  - name: )
+- uid: System.EventHandler`1
+  commentId: T:System.EventHandler`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.eventhandler-1
+  name: EventHandler<TEventArgs>
+  nameWithType: EventHandler<TEventArgs>
+  fullName: System.EventHandler<TEventArgs>
+  nameWithType.vb: EventHandler(Of TEventArgs)
+  fullName.vb: System.EventHandler(Of TEventArgs)
+  name.vb: EventHandler(Of TEventArgs)
+  spec.csharp:
+  - uid: System.EventHandler`1
+    name: EventHandler
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.eventhandler-1
+  - name: <
+  - name: TEventArgs
+  - name: '>'
+  spec.vb:
+  - uid: System.EventHandler`1
+    name: EventHandler
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.eventhandler-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TEventArgs
+  - name: )
+- uid: SilverCraft.CSCore.SoundOut.BufferedPortAudioSoundOut.OutputLatency*
+  commentId: Overload:SilverCraft.CSCore.SoundOut.BufferedPortAudioSoundOut.OutputLatency
+  href: SilverCraft.CSCore.SoundOut.BufferedPortAudioSoundOut.html#SilverCraft_CSCore_SoundOut_BufferedPortAudioSoundOut_OutputLatency
+  name: OutputLatency
+  nameWithType: BufferedPortAudioSoundOut.OutputLatency
+  fullName: SilverCraft.CSCore.SoundOut.BufferedPortAudioSoundOut.OutputLatency
+- uid: System.TimeSpan
+  commentId: T:System.TimeSpan
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.timespan
+  name: TimeSpan
+  nameWithType: TimeSpan
+  fullName: System.TimeSpan
+- uid: SilverCraft.CSCore.SoundOut.BufferedPortAudioSoundOut.IsSupported*
+  commentId: Overload:SilverCraft.CSCore.SoundOut.BufferedPortAudioSoundOut.IsSupported
+  href: SilverCraft.CSCore.SoundOut.BufferedPortAudioSoundOut.html#SilverCraft_CSCore_SoundOut_BufferedPortAudioSoundOut_IsSupported
+  name: IsSupported
+  nameWithType: BufferedPortAudioSoundOut.IsSupported
+  fullName: SilverCraft.CSCore.SoundOut.BufferedPortAudioSoundOut.IsSupported
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: SilverCraft.CSCore.SoundOut.BufferedPortAudioSoundOut.DefaultDeviceLabel
+  commentId: F:SilverCraft.CSCore.SoundOut.BufferedPortAudioSoundOut.DefaultDeviceLabel
+  href: SilverCraft.CSCore.SoundOut.BufferedPortAudioSoundOut.html#SilverCraft_CSCore_SoundOut_BufferedPortAudioSoundOut_DefaultDeviceLabel
+  name: DefaultDeviceLabel
+  nameWithType: BufferedPortAudioSoundOut.DefaultDeviceLabel
+  fullName: SilverCraft.CSCore.SoundOut.BufferedPortAudioSoundOut.DefaultDeviceLabel
+- uid: SilverCraft.CSCore.SoundOut.BufferedPortAudioSoundOut.GetOutputDeviceNames*
+  commentId: Overload:SilverCraft.CSCore.SoundOut.BufferedPortAudioSoundOut.GetOutputDeviceNames
+  href: SilverCraft.CSCore.SoundOut.BufferedPortAudioSoundOut.html#SilverCraft_CSCore_SoundOut_BufferedPortAudioSoundOut_GetOutputDeviceNames
+  name: GetOutputDeviceNames
+  nameWithType: BufferedPortAudioSoundOut.GetOutputDeviceNames
+  fullName: SilverCraft.CSCore.SoundOut.BufferedPortAudioSoundOut.GetOutputDeviceNames
+- uid: System.String[]
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string[]
+  nameWithType: string[]
+  fullName: string[]
+  nameWithType.vb: String()
+  fullName.vb: String()
+  name.vb: String()
+  spec.csharp:
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: (
+  - name: )
+- uid: SilverCraft.CSCore.SoundOut.BufferedPortAudioSoundOut.Initialize*
+  commentId: Overload:SilverCraft.CSCore.SoundOut.BufferedPortAudioSoundOut.Initialize
+  href: SilverCraft.CSCore.SoundOut.BufferedPortAudioSoundOut.html#SilverCraft_CSCore_SoundOut_BufferedPortAudioSoundOut_Initialize_SilverCraft_CSCore_IWaveSource_
+  name: Initialize
+  nameWithType: BufferedPortAudioSoundOut.Initialize
+  fullName: SilverCraft.CSCore.SoundOut.BufferedPortAudioSoundOut.Initialize
+- uid: SilverCraft.CSCore.SoundOut.BufferedPortAudioSoundOut.ExecuteSeek*
+  commentId: Overload:SilverCraft.CSCore.SoundOut.BufferedPortAudioSoundOut.ExecuteSeek
+  href: SilverCraft.CSCore.SoundOut.BufferedPortAudioSoundOut.html#SilverCraft_CSCore_SoundOut_BufferedPortAudioSoundOut_ExecuteSeek_System_Action_
+  name: ExecuteSeek
+  nameWithType: BufferedPortAudioSoundOut.ExecuteSeek
+  fullName: SilverCraft.CSCore.SoundOut.BufferedPortAudioSoundOut.ExecuteSeek
+- uid: System.Action
+  commentId: T:System.Action
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.action
+  name: Action
+  nameWithType: Action
+  fullName: System.Action
+- uid: SilverCraft.CSCore.SoundOut.BufferedPortAudioSoundOut.Play*
+  commentId: Overload:SilverCraft.CSCore.SoundOut.BufferedPortAudioSoundOut.Play
+  href: SilverCraft.CSCore.SoundOut.BufferedPortAudioSoundOut.html#SilverCraft_CSCore_SoundOut_BufferedPortAudioSoundOut_Play
+  name: Play
+  nameWithType: BufferedPortAudioSoundOut.Play
+  fullName: SilverCraft.CSCore.SoundOut.BufferedPortAudioSoundOut.Play
+- uid: SilverCraft.CSCore.SoundOut.ISoundOut.Play
+  commentId: M:SilverCraft.CSCore.SoundOut.ISoundOut.Play
+  parent: SilverCraft.CSCore.SoundOut.ISoundOut
+  href: SilverCraft.CSCore.SoundOut.ISoundOut.html#SilverCraft_CSCore_SoundOut_ISoundOut_Play
+  name: Play()
+  nameWithType: ISoundOut.Play()
+  fullName: SilverCraft.CSCore.SoundOut.ISoundOut.Play()
+  spec.csharp:
+  - uid: SilverCraft.CSCore.SoundOut.ISoundOut.Play
+    name: Play
+    href: SilverCraft.CSCore.SoundOut.ISoundOut.html#SilverCraft_CSCore_SoundOut_ISoundOut_Play
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: SilverCraft.CSCore.SoundOut.ISoundOut.Play
+    name: Play
+    href: SilverCraft.CSCore.SoundOut.ISoundOut.html#SilverCraft_CSCore_SoundOut_ISoundOut_Play
+  - name: (
+  - name: )
+- uid: SilverCraft.CSCore.SoundOut.BufferedPortAudioSoundOut.Resume*
+  commentId: Overload:SilverCraft.CSCore.SoundOut.BufferedPortAudioSoundOut.Resume
+  href: SilverCraft.CSCore.SoundOut.BufferedPortAudioSoundOut.html#SilverCraft_CSCore_SoundOut_BufferedPortAudioSoundOut_Resume
+  name: Resume
+  nameWithType: BufferedPortAudioSoundOut.Resume
+  fullName: SilverCraft.CSCore.SoundOut.BufferedPortAudioSoundOut.Resume
+- uid: SilverCraft.CSCore.SoundOut.ISoundOut.Resume
+  commentId: M:SilverCraft.CSCore.SoundOut.ISoundOut.Resume
+  parent: SilverCraft.CSCore.SoundOut.ISoundOut
+  href: SilverCraft.CSCore.SoundOut.ISoundOut.html#SilverCraft_CSCore_SoundOut_ISoundOut_Resume
+  name: Resume()
+  nameWithType: ISoundOut.Resume()
+  fullName: SilverCraft.CSCore.SoundOut.ISoundOut.Resume()
+  spec.csharp:
+  - uid: SilverCraft.CSCore.SoundOut.ISoundOut.Resume
+    name: Resume
+    href: SilverCraft.CSCore.SoundOut.ISoundOut.html#SilverCraft_CSCore_SoundOut_ISoundOut_Resume
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: SilverCraft.CSCore.SoundOut.ISoundOut.Resume
+    name: Resume
+    href: SilverCraft.CSCore.SoundOut.ISoundOut.html#SilverCraft_CSCore_SoundOut_ISoundOut_Resume
+  - name: (
+  - name: )
+- uid: SilverCraft.CSCore.SoundOut.BufferedPortAudioSoundOut.Pause*
+  commentId: Overload:SilverCraft.CSCore.SoundOut.BufferedPortAudioSoundOut.Pause
+  href: SilverCraft.CSCore.SoundOut.BufferedPortAudioSoundOut.html#SilverCraft_CSCore_SoundOut_BufferedPortAudioSoundOut_Pause
+  name: Pause
+  nameWithType: BufferedPortAudioSoundOut.Pause
+  fullName: SilverCraft.CSCore.SoundOut.BufferedPortAudioSoundOut.Pause
+- uid: SilverCraft.CSCore.SoundOut.ISoundOut.Pause
+  commentId: M:SilverCraft.CSCore.SoundOut.ISoundOut.Pause
+  parent: SilverCraft.CSCore.SoundOut.ISoundOut
+  href: SilverCraft.CSCore.SoundOut.ISoundOut.html#SilverCraft_CSCore_SoundOut_ISoundOut_Pause
+  name: Pause()
+  nameWithType: ISoundOut.Pause()
+  fullName: SilverCraft.CSCore.SoundOut.ISoundOut.Pause()
+  spec.csharp:
+  - uid: SilverCraft.CSCore.SoundOut.ISoundOut.Pause
+    name: Pause
+    href: SilverCraft.CSCore.SoundOut.ISoundOut.html#SilverCraft_CSCore_SoundOut_ISoundOut_Pause
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: SilverCraft.CSCore.SoundOut.ISoundOut.Pause
+    name: Pause
+    href: SilverCraft.CSCore.SoundOut.ISoundOut.html#SilverCraft_CSCore_SoundOut_ISoundOut_Pause
+  - name: (
+  - name: )
+- uid: SilverCraft.CSCore.SoundOut.BufferedPortAudioSoundOut.Stop*
+  commentId: Overload:SilverCraft.CSCore.SoundOut.BufferedPortAudioSoundOut.Stop
+  href: SilverCraft.CSCore.SoundOut.BufferedPortAudioSoundOut.html#SilverCraft_CSCore_SoundOut_BufferedPortAudioSoundOut_Stop
+  name: Stop
+  nameWithType: BufferedPortAudioSoundOut.Stop
+  fullName: SilverCraft.CSCore.SoundOut.BufferedPortAudioSoundOut.Stop
+- uid: SilverCraft.CSCore.SoundOut.ISoundOut.Stop
+  commentId: M:SilverCraft.CSCore.SoundOut.ISoundOut.Stop
+  parent: SilverCraft.CSCore.SoundOut.ISoundOut
+  href: SilverCraft.CSCore.SoundOut.ISoundOut.html#SilverCraft_CSCore_SoundOut_ISoundOut_Stop
+  name: Stop()
+  nameWithType: ISoundOut.Stop()
+  fullName: SilverCraft.CSCore.SoundOut.ISoundOut.Stop()
+  spec.csharp:
+  - uid: SilverCraft.CSCore.SoundOut.ISoundOut.Stop
+    name: Stop
+    href: SilverCraft.CSCore.SoundOut.ISoundOut.html#SilverCraft_CSCore_SoundOut_ISoundOut_Stop
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: SilverCraft.CSCore.SoundOut.ISoundOut.Stop
+    name: Stop
+    href: SilverCraft.CSCore.SoundOut.ISoundOut.html#SilverCraft_CSCore_SoundOut_ISoundOut_Stop
+  - name: (
+  - name: )
+- uid: SilverCraft.CSCore.SoundOut.BufferedPortAudioSoundOut.Dispose*
+  commentId: Overload:SilverCraft.CSCore.SoundOut.BufferedPortAudioSoundOut.Dispose
+  href: SilverCraft.CSCore.SoundOut.BufferedPortAudioSoundOut.html#SilverCraft_CSCore_SoundOut_BufferedPortAudioSoundOut_Dispose
+  name: Dispose
+  nameWithType: BufferedPortAudioSoundOut.Dispose
+  fullName: SilverCraft.CSCore.SoundOut.BufferedPortAudioSoundOut.Dispose
+- uid: System.IDisposable.Dispose
+  commentId: M:System.IDisposable.Dispose
+  parent: System.IDisposable
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.idisposable.dispose
+  name: Dispose()
+  nameWithType: IDisposable.Dispose()
+  fullName: System.IDisposable.Dispose()
+  spec.csharp:
+  - uid: System.IDisposable.Dispose
+    name: Dispose
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.idisposable.dispose
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.IDisposable.Dispose
+    name: Dispose
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.idisposable.dispose
+  - name: (
+  - name: )
+- uid: SilverCraft.CSCore.SoundOut.BufferedPortAudioSoundOut.Finalize*
+  commentId: Overload:SilverCraft.CSCore.SoundOut.BufferedPortAudioSoundOut.Finalize
+  href: SilverCraft.CSCore.SoundOut.BufferedPortAudioSoundOut.html#SilverCraft_CSCore_SoundOut_BufferedPortAudioSoundOut_Finalize
+  name: ~BufferedPortAudioSoundOut
+  nameWithType: BufferedPortAudioSoundOut.~BufferedPortAudioSoundOut
+  fullName: SilverCraft.CSCore.SoundOut.BufferedPortAudioSoundOut.~BufferedPortAudioSoundOut
+  spec.csharp:
+  - name: "~"
+  - uid: SilverCraft.CSCore.SoundOut.BufferedPortAudioSoundOut.Finalize*
+    name: BufferedPortAudioSoundOut
+    href: SilverCraft.CSCore.SoundOut.BufferedPortAudioSoundOut.html#SilverCraft_CSCore_SoundOut_BufferedPortAudioSoundOut_Finalize

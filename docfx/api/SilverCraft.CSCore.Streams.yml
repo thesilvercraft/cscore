@@ -217,31 +217,24 @@ references:
   fullName: SilverCraft.CSCore.Streams.WriteableBufferingSource
 - uid: SilverCraft.CSCore.Streams
   commentId: N:SilverCraft.CSCore.Streams
-  href: SilverCraft.html
   name: SilverCraft.CSCore.Streams
   nameWithType: SilverCraft.CSCore.Streams
   fullName: SilverCraft.CSCore.Streams
   spec.csharp:
   - uid: SilverCraft
     name: SilverCraft
-    href: SilverCraft.html
   - name: .
   - uid: SilverCraft.CSCore
     name: CSCore
-    href: SilverCraft.CSCore.html
   - name: .
   - uid: SilverCraft.CSCore.Streams
     name: Streams
-    href: SilverCraft.CSCore.Streams.html
   spec.vb:
   - uid: SilverCraft
     name: SilverCraft
-    href: SilverCraft.html
   - name: .
   - uid: SilverCraft.CSCore
     name: CSCore
-    href: SilverCraft.CSCore.html
   - name: .
   - uid: SilverCraft.CSCore.Streams
     name: Streams
-    href: SilverCraft.CSCore.Streams.html

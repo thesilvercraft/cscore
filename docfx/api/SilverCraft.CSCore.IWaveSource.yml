@@ -157,26 +157,21 @@ references:
   - name: )
 - uid: SilverCraft.CSCore
   commentId: N:SilverCraft.CSCore
-  href: SilverCraft.html
   name: SilverCraft.CSCore
   nameWithType: SilverCraft.CSCore
   fullName: SilverCraft.CSCore
   spec.csharp:
   - uid: SilverCraft
     name: SilverCraft
-    href: SilverCraft.html
   - name: .
   - uid: SilverCraft.CSCore
     name: CSCore
-    href: SilverCraft.CSCore.html
   spec.vb:
   - uid: SilverCraft
     name: SilverCraft
-    href: SilverCraft.html
   - name: .
   - uid: SilverCraft.CSCore
     name: CSCore
-    href: SilverCraft.CSCore.html
 - uid: SilverCraft.CSCore.IReadableAudioSource{System.Byte}.Read(System.Byte[],System.Int32,System.Int32)
   commentId: M:SilverCraft.CSCore.IReadableAudioSource{System.Byte}.Read(System.Byte[],System.Int32,System.Int32)
   parent: SilverCraft.CSCore.IReadableAudioSource{System.Byte}

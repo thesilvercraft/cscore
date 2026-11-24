@@ -425,42 +425,33 @@ references:
   fullName: SilverCraft.CSCore.Codecs.RAW.RawDataReader.WaveFormat
 - uid: SilverCraft.CSCore.Codecs.RAW
   commentId: N:SilverCraft.CSCore.Codecs.RAW
-  href: SilverCraft.html
   name: SilverCraft.CSCore.Codecs.RAW
   nameWithType: SilverCraft.CSCore.Codecs.RAW
   fullName: SilverCraft.CSCore.Codecs.RAW
   spec.csharp:
   - uid: SilverCraft
     name: SilverCraft
-    href: SilverCraft.html
   - name: .
   - uid: SilverCraft.CSCore
     name: CSCore
-    href: SilverCraft.CSCore.html
   - name: .
   - uid: SilverCraft.CSCore.Codecs
     name: Codecs
-    href: SilverCraft.CSCore.Codecs.html
   - name: .
   - uid: SilverCraft.CSCore.Codecs.RAW
     name: RAW
-    href: SilverCraft.CSCore.Codecs.RAW.html
   spec.vb:
   - uid: SilverCraft
     name: SilverCraft
-    href: SilverCraft.html
   - name: .
   - uid: SilverCraft.CSCore
     name: CSCore
-    href: SilverCraft.CSCore.html
   - name: .
   - uid: SilverCraft.CSCore.Codecs
     name: Codecs
-    href: SilverCraft.CSCore.Codecs.html
   - name: .
   - uid: SilverCraft.CSCore.Codecs.RAW
     name: RAW
-    href: SilverCraft.CSCore.Codecs.RAW.html
 - uid: System.Object
   commentId: T:System.Object
   parent: System
@@ -1516,26 +1507,21 @@ references:
   - name: )
 - uid: SilverCraft.CSCore
   commentId: N:SilverCraft.CSCore
-  href: SilverCraft.html
   name: SilverCraft.CSCore
   nameWithType: SilverCraft.CSCore
   fullName: SilverCraft.CSCore
   spec.csharp:
   - uid: SilverCraft
     name: SilverCraft
-    href: SilverCraft.html
   - name: .
   - uid: SilverCraft.CSCore
     name: CSCore
-    href: SilverCraft.CSCore.html
   spec.vb:
   - uid: SilverCraft
     name: SilverCraft
-    href: SilverCraft.html
   - name: .
   - uid: SilverCraft.CSCore
     name: CSCore
-    href: SilverCraft.CSCore.html
 - uid: System.IO
   commentId: N:System.IO
   isExternal: true

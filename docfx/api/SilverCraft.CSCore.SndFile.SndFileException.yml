@@ -152,34 +152,27 @@ items:
 references:
 - uid: SilverCraft.CSCore.SndFile
   commentId: N:SilverCraft.CSCore.SndFile
-  href: SilverCraft.html
   name: SilverCraft.CSCore.SndFile
   nameWithType: SilverCraft.CSCore.SndFile
   fullName: SilverCraft.CSCore.SndFile
   spec.csharp:
   - uid: SilverCraft
     name: SilverCraft
-    href: SilverCraft.html
   - name: .
   - uid: SilverCraft.CSCore
     name: CSCore
-    href: SilverCraft.CSCore.html
   - name: .
   - uid: SilverCraft.CSCore.SndFile
     name: SndFile
-    href: SilverCraft.CSCore.SndFile.html
   spec.vb:
   - uid: SilverCraft
     name: SilverCraft
-    href: SilverCraft.html
   - name: .
   - uid: SilverCraft.CSCore
     name: CSCore
-    href: SilverCraft.CSCore.html
   - name: .
   - uid: SilverCraft.CSCore.SndFile
     name: SndFile
-    href: SilverCraft.CSCore.SndFile.html
 - uid: System.Object
   commentId: T:System.Object
   parent: System
@@ -653,26 +646,21 @@ references:
   fullName: SilverCraft.CSCore.FluentExtensions
 - uid: SilverCraft.CSCore
   commentId: N:SilverCraft.CSCore
-  href: SilverCraft.html
   name: SilverCraft.CSCore
   nameWithType: SilverCraft.CSCore
   fullName: SilverCraft.CSCore
   spec.csharp:
   - uid: SilverCraft
     name: SilverCraft
-    href: SilverCraft.html
   - name: .
   - uid: SilverCraft.CSCore
     name: CSCore
-    href: SilverCraft.CSCore.html
   spec.vb:
   - uid: SilverCraft
     name: SilverCraft
-    href: SilverCraft.html
   - name: .
   - uid: SilverCraft.CSCore
     name: CSCore
-    href: SilverCraft.CSCore.html
 - uid: SilverCraft.CSCore.SndFile.SndFileException.#ctor*
   commentId: Overload:SilverCraft.CSCore.SndFile.SndFileException.#ctor
   href: SilverCraft.CSCore.SndFile.SndFileException.html#SilverCraft_CSCore_SndFile_SndFileException__ctor_System_String_

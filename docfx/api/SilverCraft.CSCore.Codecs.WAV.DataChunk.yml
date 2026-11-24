@@ -131,7 +131,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: .ctor
     path: ../SilverCraft.CSCore/Codecs/WAV/DataChunk.cs
-    startLine: 28
+    startLine: 33
   assemblies:
   - SilverCraft.CSCore
   namespace: SilverCraft.CSCore.Codecs.WAV
@@ -166,7 +166,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: DataStartPosition
     path: ../SilverCraft.CSCore/Codecs/WAV/DataChunk.cs
-    startLine: 42
+    startLine: 47
   assemblies:
   - SilverCraft.CSCore
   namespace: SilverCraft.CSCore.Codecs.WAV
@@ -197,7 +197,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: DataEndPosition
     path: ../SilverCraft.CSCore/Codecs/WAV/DataChunk.cs
-    startLine: 46
+    startLine: 51
   assemblies:
   - SilverCraft.CSCore
   namespace: SilverCraft.CSCore.Codecs.WAV
@@ -219,42 +219,33 @@ references:
   fullName: SilverCraft.CSCore.Codecs.WAV.DataChunk
 - uid: SilverCraft.CSCore.Codecs.WAV
   commentId: N:SilverCraft.CSCore.Codecs.WAV
-  href: SilverCraft.html
   name: SilverCraft.CSCore.Codecs.WAV
   nameWithType: SilverCraft.CSCore.Codecs.WAV
   fullName: SilverCraft.CSCore.Codecs.WAV
   spec.csharp:
   - uid: SilverCraft
     name: SilverCraft
-    href: SilverCraft.html
   - name: .
   - uid: SilverCraft.CSCore
     name: CSCore
-    href: SilverCraft.CSCore.html
   - name: .
   - uid: SilverCraft.CSCore.Codecs
     name: Codecs
-    href: SilverCraft.CSCore.Codecs.html
   - name: .
   - uid: SilverCraft.CSCore.Codecs.WAV
     name: WAV
-    href: SilverCraft.CSCore.Codecs.WAV.html
   spec.vb:
   - uid: SilverCraft
     name: SilverCraft
-    href: SilverCraft.html
   - name: .
   - uid: SilverCraft.CSCore
     name: CSCore
-    href: SilverCraft.CSCore.html
   - name: .
   - uid: SilverCraft.CSCore.Codecs
     name: Codecs
-    href: SilverCraft.CSCore.Codecs.html
   - name: .
   - uid: SilverCraft.CSCore.Codecs.WAV
     name: WAV
-    href: SilverCraft.CSCore.Codecs.WAV.html
 - uid: System.Object
   commentId: T:System.Object
   parent: System
@@ -634,26 +625,21 @@ references:
   fullName: SilverCraft.CSCore.FluentExtensions
 - uid: SilverCraft.CSCore
   commentId: N:SilverCraft.CSCore
-  href: SilverCraft.html
   name: SilverCraft.CSCore
   nameWithType: SilverCraft.CSCore
   fullName: SilverCraft.CSCore
   spec.csharp:
   - uid: SilverCraft
     name: SilverCraft
-    href: SilverCraft.html
   - name: .
   - uid: SilverCraft.CSCore
     name: CSCore
-    href: SilverCraft.CSCore.html
   spec.vb:
   - uid: SilverCraft
     name: SilverCraft
-    href: SilverCraft.html
   - name: .
   - uid: SilverCraft.CSCore
     name: CSCore
-    href: SilverCraft.CSCore.html
 - uid: System.Int32
   commentId: T:System.Int32
   parent: System

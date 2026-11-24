@@ -134,31 +134,24 @@ references:
   fullName: SilverCraft.CSCore.DSP.WindowFunctions
 - uid: SilverCraft.CSCore.DSP
   commentId: N:SilverCraft.CSCore.DSP
-  href: SilverCraft.html
   name: SilverCraft.CSCore.DSP
   nameWithType: SilverCraft.CSCore.DSP
   fullName: SilverCraft.CSCore.DSP
   spec.csharp:
   - uid: SilverCraft
     name: SilverCraft
-    href: SilverCraft.html
   - name: .
   - uid: SilverCraft.CSCore
     name: CSCore
-    href: SilverCraft.CSCore.html
   - name: .
   - uid: SilverCraft.CSCore.DSP
     name: DSP
-    href: SilverCraft.CSCore.DSP.html
   spec.vb:
   - uid: SilverCraft
     name: SilverCraft
-    href: SilverCraft.html
   - name: .
   - uid: SilverCraft.CSCore
     name: CSCore
-    href: SilverCraft.CSCore.html
   - name: .
   - uid: SilverCraft.CSCore.DSP
     name: DSP
-    href: SilverCraft.CSCore.DSP.html

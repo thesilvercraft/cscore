@@ -34,7 +34,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: OpenMptWaveStream
     path: ../SilverCraft.CSCore.OpenMPT/OpenMptWaveStream.cs
-    startLine: 4
+    startLine: 5
   assemblies:
   - SilverCraft.CSCore.OpenMPT
   namespace: SilverCraft.CSCore.OpenMPT
@@ -93,7 +93,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: .ctor
     path: ../SilverCraft.CSCore.OpenMPT/OpenMptWaveStream.cs
-    startLine: 8
+    startLine: 12
   assemblies:
   - SilverCraft.CSCore.OpenMPT
   namespace: SilverCraft.CSCore.OpenMPT
@@ -125,7 +125,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: Read
     path: ../SilverCraft.CSCore.OpenMPT/OpenMptWaveStream.cs
-    startLine: 17
+    startLine: 22
   assemblies:
   - SilverCraft.CSCore.OpenMPT
   namespace: SilverCraft.CSCore.OpenMPT
@@ -184,7 +184,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: Dispose
     path: ../SilverCraft.CSCore.OpenMPT/OpenMptWaveStream.cs
-    startLine: 40
+    startLine: 54
   assemblies:
   - SilverCraft.CSCore.OpenMPT
   namespace: SilverCraft.CSCore.OpenMPT
@@ -214,7 +214,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: Dispose
     path: ../SilverCraft.CSCore.OpenMPT/OpenMptWaveStream.cs
-    startLine: 46
+    startLine: 60
   assemblies:
   - SilverCraft.CSCore.OpenMPT
   namespace: SilverCraft.CSCore.OpenMPT
@@ -246,7 +246,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: Finalize
     path: ../SilverCraft.CSCore.OpenMPT/OpenMptWaveStream.cs
-    startLine: 60
+    startLine: 74
   assemblies:
   - SilverCraft.CSCore.OpenMPT
   namespace: SilverCraft.CSCore.OpenMPT
@@ -275,7 +275,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: SetPattern
     path: ../SilverCraft.CSCore.OpenMPT/OpenMptWaveStream.cs
-    startLine: 65
+    startLine: 79
   assemblies:
   - SilverCraft.CSCore.OpenMPT
   namespace: SilverCraft.CSCore.OpenMPT
@@ -310,7 +310,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: EnableLoop
     path: ../SilverCraft.CSCore.OpenMPT/OpenMptWaveStream.cs
-    startLine: 71
+    startLine: 86
   assemblies:
   - SilverCraft.CSCore.OpenMPT
   namespace: SilverCraft.CSCore.OpenMPT
@@ -339,7 +339,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: DisableLoop
     path: ../SilverCraft.CSCore.OpenMPT/OpenMptWaveStream.cs
-    startLine: 76
+    startLine: 91
   assemblies:
   - SilverCraft.CSCore.OpenMPT
   namespace: SilverCraft.CSCore.OpenMPT
@@ -368,7 +368,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: CanSeek
     path: ../SilverCraft.CSCore.OpenMPT/OpenMptWaveStream.cs
-    startLine: 82
+    startLine: 96
   assemblies:
   - SilverCraft.CSCore.OpenMPT
   namespace: SilverCraft.CSCore.OpenMPT
@@ -401,7 +401,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: WaveFormat
     path: ../SilverCraft.CSCore.OpenMPT/OpenMptWaveStream.cs
-    startLine: 83
+    startLine: 97
   assemblies:
   - SilverCraft.CSCore.OpenMPT
   namespace: SilverCraft.CSCore.OpenMPT
@@ -434,7 +434,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: Position
     path: ../SilverCraft.CSCore.OpenMPT/OpenMptWaveStream.cs
-    startLine: 84
+    startLine: 99
   assemblies:
   - SilverCraft.CSCore.OpenMPT
   namespace: SilverCraft.CSCore.OpenMPT
@@ -470,7 +470,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: Length
     path: ../SilverCraft.CSCore.OpenMPT/OpenMptWaveStream.cs
-    startLine: 93
+    startLine: 108
   assemblies:
   - SilverCraft.CSCore.OpenMPT
   namespace: SilverCraft.CSCore.OpenMPT
@@ -506,7 +506,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: CurrentPattern
     path: ../SilverCraft.CSCore.OpenMPT/OpenMptWaveStream.cs
-    startLine: 95
+    startLine: 110
   assemblies:
   - SilverCraft.CSCore.OpenMPT
   namespace: SilverCraft.CSCore.OpenMPT
@@ -538,7 +538,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: NumberOfPatterns
     path: ../SilverCraft.CSCore.OpenMPT/OpenMptWaveStream.cs
-    startLine: 97
+    startLine: 112
   assemblies:
   - SilverCraft.CSCore.OpenMPT
   namespace: SilverCraft.CSCore.OpenMPT
@@ -570,7 +570,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: CanLoop
     path: ../SilverCraft.CSCore.OpenMPT/OpenMptWaveStream.cs
-    startLine: 99
+    startLine: 114
   assemblies:
   - SilverCraft.CSCore.OpenMPT
   namespace: SilverCraft.CSCore.OpenMPT
@@ -587,34 +587,27 @@ items:
 references:
 - uid: SilverCraft.CSCore.OpenMPT
   commentId: N:SilverCraft.CSCore.OpenMPT
-  href: SilverCraft.html
   name: SilverCraft.CSCore.OpenMPT
   nameWithType: SilverCraft.CSCore.OpenMPT
   fullName: SilverCraft.CSCore.OpenMPT
   spec.csharp:
   - uid: SilverCraft
     name: SilverCraft
-    href: SilverCraft.html
   - name: .
   - uid: SilverCraft.CSCore
     name: CSCore
-    href: SilverCraft.CSCore.html
   - name: .
   - uid: SilverCraft.CSCore.OpenMPT
     name: OpenMPT
-    href: SilverCraft.CSCore.OpenMPT.html
   spec.vb:
   - uid: SilverCraft
     name: SilverCraft
-    href: SilverCraft.html
   - name: .
   - uid: SilverCraft.CSCore
     name: CSCore
-    href: SilverCraft.CSCore.html
   - name: .
   - uid: SilverCraft.CSCore.OpenMPT
     name: OpenMPT
-    href: SilverCraft.CSCore.OpenMPT.html
 - uid: System.Object
   commentId: T:System.Object
   parent: System
@@ -1596,26 +1589,21 @@ references:
   fullName: System
 - uid: SilverCraft.CSCore
   commentId: N:SilverCraft.CSCore
-  href: SilverCraft.html
   name: SilverCraft.CSCore
   nameWithType: SilverCraft.CSCore
   fullName: SilverCraft.CSCore
   spec.csharp:
   - uid: SilverCraft
     name: SilverCraft
-    href: SilverCraft.html
   - name: .
   - uid: SilverCraft.CSCore
     name: CSCore
-    href: SilverCraft.CSCore.html
   spec.vb:
   - uid: SilverCraft
     name: SilverCraft
-    href: SilverCraft.html
   - name: .
   - uid: SilverCraft.CSCore
     name: CSCore
-    href: SilverCraft.CSCore.html
 - uid: SilverCraft.CSCore.IReadableAudioSource`1
   commentId: T:SilverCraft.CSCore.IReadableAudioSource`1
   href: SilverCraft.CSCore.IReadableAudioSource-1.html

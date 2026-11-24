@@ -118,34 +118,27 @@ items:
 references:
 - uid: SilverCraft.CSCore.SoundOut
   commentId: N:SilverCraft.CSCore.SoundOut
-  href: SilverCraft.html
   name: SilverCraft.CSCore.SoundOut
   nameWithType: SilverCraft.CSCore.SoundOut
   fullName: SilverCraft.CSCore.SoundOut
   spec.csharp:
   - uid: SilverCraft
     name: SilverCraft
-    href: SilverCraft.html
   - name: .
   - uid: SilverCraft.CSCore
     name: CSCore
-    href: SilverCraft.CSCore.html
   - name: .
   - uid: SilverCraft.CSCore.SoundOut
     name: SoundOut
-    href: SilverCraft.CSCore.SoundOut.html
   spec.vb:
   - uid: SilverCraft
     name: SilverCraft
-    href: SilverCraft.html
   - name: .
   - uid: SilverCraft.CSCore
     name: CSCore
-    href: SilverCraft.CSCore.html
   - name: .
   - uid: SilverCraft.CSCore.SoundOut
     name: SoundOut
-    href: SilverCraft.CSCore.SoundOut.html
 - uid: SilverCraft.CSCore.SoundOut.PlaybackState
   commentId: T:SilverCraft.CSCore.SoundOut.PlaybackState
   parent: SilverCraft.CSCore.SoundOut

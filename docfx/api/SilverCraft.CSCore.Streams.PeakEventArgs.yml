@@ -158,34 +158,27 @@ references:
   fullName: SilverCraft.CSCore.Streams.PeakMeter.PeakCalculated
 - uid: SilverCraft.CSCore.Streams
   commentId: N:SilverCraft.CSCore.Streams
-  href: SilverCraft.html
   name: SilverCraft.CSCore.Streams
   nameWithType: SilverCraft.CSCore.Streams
   fullName: SilverCraft.CSCore.Streams
   spec.csharp:
   - uid: SilverCraft
     name: SilverCraft
-    href: SilverCraft.html
   - name: .
   - uid: SilverCraft.CSCore
     name: CSCore
-    href: SilverCraft.CSCore.html
   - name: .
   - uid: SilverCraft.CSCore.Streams
     name: Streams
-    href: SilverCraft.CSCore.Streams.html
   spec.vb:
   - uid: SilverCraft
     name: SilverCraft
-    href: SilverCraft.html
   - name: .
   - uid: SilverCraft.CSCore
     name: CSCore
-    href: SilverCraft.CSCore.html
   - name: .
   - uid: SilverCraft.CSCore.Streams
     name: Streams
-    href: SilverCraft.CSCore.Streams.html
 - uid: System.Object
   commentId: T:System.Object
   parent: System
@@ -532,26 +525,21 @@ references:
   fullName: SilverCraft.CSCore.FluentExtensions
 - uid: SilverCraft.CSCore
   commentId: N:SilverCraft.CSCore
-  href: SilverCraft.html
   name: SilverCraft.CSCore
   nameWithType: SilverCraft.CSCore
   fullName: SilverCraft.CSCore
   spec.csharp:
   - uid: SilverCraft
     name: SilverCraft
-    href: SilverCraft.html
   - name: .
   - uid: SilverCraft.CSCore
     name: CSCore
-    href: SilverCraft.CSCore.html
   spec.vb:
   - uid: SilverCraft
     name: SilverCraft
-    href: SilverCraft.html
   - name: .
   - uid: SilverCraft.CSCore
     name: CSCore
-    href: SilverCraft.CSCore.html
 - uid: SilverCraft.CSCore.Streams.PeakEventArgs.ChannelPeakValues*
   commentId: Overload:SilverCraft.CSCore.Streams.PeakEventArgs.ChannelPeakValues
   href: SilverCraft.CSCore.Streams.PeakEventArgs.html#SilverCraft_CSCore_Streams_PeakEventArgs_ChannelPeakValues

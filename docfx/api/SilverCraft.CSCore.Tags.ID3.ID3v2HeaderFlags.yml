@@ -147,42 +147,33 @@ items:
 references:
 - uid: SilverCraft.CSCore.Tags.ID3
   commentId: N:SilverCraft.CSCore.Tags.ID3
-  href: SilverCraft.html
   name: SilverCraft.CSCore.Tags.ID3
   nameWithType: SilverCraft.CSCore.Tags.ID3
   fullName: SilverCraft.CSCore.Tags.ID3
   spec.csharp:
   - uid: SilverCraft
     name: SilverCraft
-    href: SilverCraft.html
   - name: .
   - uid: SilverCraft.CSCore
     name: CSCore
-    href: SilverCraft.CSCore.html
   - name: .
   - uid: SilverCraft.CSCore.Tags
     name: Tags
-    href: SilverCraft.CSCore.Tags.html
   - name: .
   - uid: SilverCraft.CSCore.Tags.ID3
     name: ID3
-    href: SilverCraft.CSCore.Tags.ID3.html
   spec.vb:
   - uid: SilverCraft
     name: SilverCraft
-    href: SilverCraft.html
   - name: .
   - uid: SilverCraft.CSCore
     name: CSCore
-    href: SilverCraft.CSCore.html
   - name: .
   - uid: SilverCraft.CSCore.Tags
     name: Tags
-    href: SilverCraft.CSCore.Tags.html
   - name: .
   - uid: SilverCraft.CSCore.Tags.ID3
     name: ID3
-    href: SilverCraft.CSCore.Tags.ID3.html
 - uid: SilverCraft.CSCore.Tags.ID3.ID3v2HeaderFlags
   commentId: T:SilverCraft.CSCore.Tags.ID3.ID3v2HeaderFlags
   parent: SilverCraft.CSCore.Tags.ID3

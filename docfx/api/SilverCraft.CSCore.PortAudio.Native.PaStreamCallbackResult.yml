@@ -110,42 +110,33 @@ items:
 references:
 - uid: SilverCraft.CSCore.PortAudio.Native
   commentId: N:SilverCraft.CSCore.PortAudio.Native
-  href: SilverCraft.html
   name: SilverCraft.CSCore.PortAudio.Native
   nameWithType: SilverCraft.CSCore.PortAudio.Native
   fullName: SilverCraft.CSCore.PortAudio.Native
   spec.csharp:
   - uid: SilverCraft
     name: SilverCraft
-    href: SilverCraft.html
   - name: .
   - uid: SilverCraft.CSCore
     name: CSCore
-    href: SilverCraft.CSCore.html
   - name: .
   - uid: SilverCraft.CSCore.PortAudio
     name: PortAudio
-    href: SilverCraft.CSCore.PortAudio.html
   - name: .
   - uid: SilverCraft.CSCore.PortAudio.Native
     name: Native
-    href: SilverCraft.CSCore.PortAudio.Native.html
   spec.vb:
   - uid: SilverCraft
     name: SilverCraft
-    href: SilverCraft.html
   - name: .
   - uid: SilverCraft.CSCore
     name: CSCore
-    href: SilverCraft.CSCore.html
   - name: .
   - uid: SilverCraft.CSCore.PortAudio
     name: PortAudio
-    href: SilverCraft.CSCore.PortAudio.html
   - name: .
   - uid: SilverCraft.CSCore.PortAudio.Native
     name: Native
-    href: SilverCraft.CSCore.PortAudio.Native.html
 - uid: SilverCraft.CSCore.PortAudio.Native.PaStreamCallbackResult
   commentId: T:SilverCraft.CSCore.PortAudio.Native.PaStreamCallbackResult
   parent: SilverCraft.CSCore.PortAudio.Native

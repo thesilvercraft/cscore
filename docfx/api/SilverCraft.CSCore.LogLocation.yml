@@ -59,7 +59,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: Initialize
     path: ../SilverCraft.CSCore/LogLocation.cs
-    startLine: 15
+    startLine: 18
   assemblies:
   - SilverCraft.CSCore
   namespace: SilverCraft.CSCore
@@ -90,7 +90,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: GetLogger
     path: ../SilverCraft.CSCore/LogLocation.cs
-    startLine: 23
+    startLine: 26
   assemblies:
   - SilverCraft.CSCore
   namespace: SilverCraft.CSCore
@@ -123,7 +123,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: GetLogger
     path: ../SilverCraft.CSCore/LogLocation.cs
-    startLine: 31
+    startLine: 34
   assemblies:
   - SilverCraft.CSCore
   namespace: SilverCraft.CSCore
@@ -151,26 +151,21 @@ references:
   fullName: Microsoft.Extensions.Logging.ILogger
 - uid: SilverCraft.CSCore
   commentId: N:SilverCraft.CSCore
-  href: SilverCraft.html
   name: SilverCraft.CSCore
   nameWithType: SilverCraft.CSCore
   fullName: SilverCraft.CSCore
   spec.csharp:
   - uid: SilverCraft
     name: SilverCraft
-    href: SilverCraft.html
   - name: .
   - uid: SilverCraft.CSCore
     name: CSCore
-    href: SilverCraft.CSCore.html
   spec.vb:
   - uid: SilverCraft
     name: SilverCraft
-    href: SilverCraft.html
   - name: .
   - uid: SilverCraft.CSCore
     name: CSCore
-    href: SilverCraft.CSCore.html
 - uid: System.Object
   commentId: T:System.Object
   parent: System

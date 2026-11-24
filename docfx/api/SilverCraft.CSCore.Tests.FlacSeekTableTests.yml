@@ -7,7 +7,10 @@ items:
   children:
   - SilverCraft.CSCore.Tests.FlacSeekTableTests.FileWithMalformedSeekTable_RejectsNonEntrySizedBlock
   - SilverCraft.CSCore.Tests.FlacSeekTableTests.FileWithSeekTable_DecodesAndCanSeekWithinFirstFrame
+  - SilverCraft.CSCore.Tests.FlacSeekTableTests.FileWithSeekTable_SeekBeforeFirstRead_MatchesSequentialPcm
+  - SilverCraft.CSCore.Tests.FlacSeekTableTests.FileWithUndersizedMaxFrameSize_RetriesBufferingAndDecodesBitExact
   - SilverCraft.CSCore.Tests.FlacSeekTableTests.FileWithoutSeekTable_CanDecodeAndBuildSeekIndex
+  - SilverCraft.CSCore.Tests.FlacSeekTableTests.FileWithoutSeekTable_SeekAcrossFramesAndLastFrame_MatchesSequentialPcmAndCleanEof
   - SilverCraft.CSCore.Tests.FlacSeekTableTests.SmallOffsetReads_MatchFfmpegPcmAndPreserveBufferGuards
   - SilverCraft.CSCore.Tests.FlacSeekTableTests.TwentyFourBitFrames_MatchFfmpegPcmAcrossOffsetReads
   langs:
@@ -222,37 +225,138 @@ items:
   - type: Xunit.FactAttribute
     ctor: Xunit.FactAttribute.#ctor
     arguments: []
+- uid: SilverCraft.CSCore.Tests.FlacSeekTableTests.FileWithoutSeekTable_SeekAcrossFramesAndLastFrame_MatchesSequentialPcmAndCleanEof
+  commentId: M:SilverCraft.CSCore.Tests.FlacSeekTableTests.FileWithoutSeekTable_SeekAcrossFramesAndLastFrame_MatchesSequentialPcmAndCleanEof
+  id: FileWithoutSeekTable_SeekAcrossFramesAndLastFrame_MatchesSequentialPcmAndCleanEof
+  parent: SilverCraft.CSCore.Tests.FlacSeekTableTests
+  langs:
+  - csharp
+  - vb
+  name: FileWithoutSeekTable_SeekAcrossFramesAndLastFrame_MatchesSequentialPcmAndCleanEof()
+  nameWithType: FlacSeekTableTests.FileWithoutSeekTable_SeekAcrossFramesAndLastFrame_MatchesSequentialPcmAndCleanEof()
+  fullName: SilverCraft.CSCore.Tests.FlacSeekTableTests.FileWithoutSeekTable_SeekAcrossFramesAndLastFrame_MatchesSequentialPcmAndCleanEof()
+  type: Method
+  source:
+    remote:
+      path: SilverCraft.CSCore.Tests/FlacSeekTableTests.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: FileWithoutSeekTable_SeekAcrossFramesAndLastFrame_MatchesSequentialPcmAndCleanEof
+    path: ../SilverCraft.CSCore.Tests/FlacSeekTableTests.cs
+    startLine: 118
+  assemblies:
+  - SilverCraft.CSCore.Tests
+  namespace: SilverCraft.CSCore.Tests
+  syntax:
+    content: >-
+      [Fact]
+
+      public void FileWithoutSeekTable_SeekAcrossFramesAndLastFrame_MatchesSequentialPcmAndCleanEof()
+    content.vb: >-
+      <Fact>
+
+      Public Sub FileWithoutSeekTable_SeekAcrossFramesAndLastFrame_MatchesSequentialPcmAndCleanEof()
+  overload: SilverCraft.CSCore.Tests.FlacSeekTableTests.FileWithoutSeekTable_SeekAcrossFramesAndLastFrame_MatchesSequentialPcmAndCleanEof*
+  attributes:
+  - type: Xunit.FactAttribute
+    ctor: Xunit.FactAttribute.#ctor
+    arguments: []
+- uid: SilverCraft.CSCore.Tests.FlacSeekTableTests.FileWithSeekTable_SeekBeforeFirstRead_MatchesSequentialPcm
+  commentId: M:SilverCraft.CSCore.Tests.FlacSeekTableTests.FileWithSeekTable_SeekBeforeFirstRead_MatchesSequentialPcm
+  id: FileWithSeekTable_SeekBeforeFirstRead_MatchesSequentialPcm
+  parent: SilverCraft.CSCore.Tests.FlacSeekTableTests
+  langs:
+  - csharp
+  - vb
+  name: FileWithSeekTable_SeekBeforeFirstRead_MatchesSequentialPcm()
+  nameWithType: FlacSeekTableTests.FileWithSeekTable_SeekBeforeFirstRead_MatchesSequentialPcm()
+  fullName: SilverCraft.CSCore.Tests.FlacSeekTableTests.FileWithSeekTable_SeekBeforeFirstRead_MatchesSequentialPcm()
+  type: Method
+  source:
+    remote:
+      path: SilverCraft.CSCore.Tests/FlacSeekTableTests.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: FileWithSeekTable_SeekBeforeFirstRead_MatchesSequentialPcm
+    path: ../SilverCraft.CSCore.Tests/FlacSeekTableTests.cs
+    startLine: 154
+  assemblies:
+  - SilverCraft.CSCore.Tests
+  namespace: SilverCraft.CSCore.Tests
+  syntax:
+    content: >-
+      [Fact]
+
+      public void FileWithSeekTable_SeekBeforeFirstRead_MatchesSequentialPcm()
+    content.vb: >-
+      <Fact>
+
+      Public Sub FileWithSeekTable_SeekBeforeFirstRead_MatchesSequentialPcm()
+  overload: SilverCraft.CSCore.Tests.FlacSeekTableTests.FileWithSeekTable_SeekBeforeFirstRead_MatchesSequentialPcm*
+  attributes:
+  - type: Xunit.FactAttribute
+    ctor: Xunit.FactAttribute.#ctor
+    arguments: []
+- uid: SilverCraft.CSCore.Tests.FlacSeekTableTests.FileWithUndersizedMaxFrameSize_RetriesBufferingAndDecodesBitExact
+  commentId: M:SilverCraft.CSCore.Tests.FlacSeekTableTests.FileWithUndersizedMaxFrameSize_RetriesBufferingAndDecodesBitExact
+  id: FileWithUndersizedMaxFrameSize_RetriesBufferingAndDecodesBitExact
+  parent: SilverCraft.CSCore.Tests.FlacSeekTableTests
+  langs:
+  - csharp
+  - vb
+  name: FileWithUndersizedMaxFrameSize_RetriesBufferingAndDecodesBitExact()
+  nameWithType: FlacSeekTableTests.FileWithUndersizedMaxFrameSize_RetriesBufferingAndDecodesBitExact()
+  fullName: SilverCraft.CSCore.Tests.FlacSeekTableTests.FileWithUndersizedMaxFrameSize_RetriesBufferingAndDecodesBitExact()
+  type: Method
+  source:
+    remote:
+      path: SilverCraft.CSCore.Tests/FlacSeekTableTests.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: FileWithUndersizedMaxFrameSize_RetriesBufferingAndDecodesBitExact
+    path: ../SilverCraft.CSCore.Tests/FlacSeekTableTests.cs
+    startLine: 170
+  assemblies:
+  - SilverCraft.CSCore.Tests
+  namespace: SilverCraft.CSCore.Tests
+  syntax:
+    content: >-
+      [Fact]
+
+      public void FileWithUndersizedMaxFrameSize_RetriesBufferingAndDecodesBitExact()
+    content.vb: >-
+      <Fact>
+
+      Public Sub FileWithUndersizedMaxFrameSize_RetriesBufferingAndDecodesBitExact()
+  overload: SilverCraft.CSCore.Tests.FlacSeekTableTests.FileWithUndersizedMaxFrameSize_RetriesBufferingAndDecodesBitExact*
+  attributes:
+  - type: Xunit.FactAttribute
+    ctor: Xunit.FactAttribute.#ctor
+    arguments: []
 references:
 - uid: SilverCraft.CSCore.Tests
   commentId: N:SilverCraft.CSCore.Tests
-  href: SilverCraft.html
   name: SilverCraft.CSCore.Tests
   nameWithType: SilverCraft.CSCore.Tests
   fullName: SilverCraft.CSCore.Tests
   spec.csharp:
   - uid: SilverCraft
     name: SilverCraft
-    href: SilverCraft.html
   - name: .
   - uid: SilverCraft.CSCore
     name: CSCore
-    href: SilverCraft.CSCore.html
   - name: .
   - uid: SilverCraft.CSCore.Tests
     name: Tests
-    href: SilverCraft.CSCore.Tests.html
   spec.vb:
   - uid: SilverCraft
     name: SilverCraft
-    href: SilverCraft.html
   - name: .
   - uid: SilverCraft.CSCore
     name: CSCore
-    href: SilverCraft.CSCore.html
   - name: .
   - uid: SilverCraft.CSCore.Tests
     name: Tests
-    href: SilverCraft.CSCore.Tests.html
 - uid: System.Object
   commentId: T:System.Object
   parent: System
@@ -559,26 +663,21 @@ references:
   fullName: SilverCraft.CSCore.FluentExtensions
 - uid: SilverCraft.CSCore
   commentId: N:SilverCraft.CSCore
-  href: SilverCraft.html
   name: SilverCraft.CSCore
   nameWithType: SilverCraft.CSCore
   fullName: SilverCraft.CSCore
   spec.csharp:
   - uid: SilverCraft
     name: SilverCraft
-    href: SilverCraft.html
   - name: .
   - uid: SilverCraft.CSCore
     name: CSCore
-    href: SilverCraft.CSCore.html
   spec.vb:
   - uid: SilverCraft
     name: SilverCraft
-    href: SilverCraft.html
   - name: .
   - uid: SilverCraft.CSCore
     name: CSCore
-    href: SilverCraft.CSCore.html
 - uid: SilverCraft.CSCore.Tests.FlacSeekTableTests.FileWithSeekTable_DecodesAndCanSeekWithinFirstFrame*
   commentId: Overload:SilverCraft.CSCore.Tests.FlacSeekTableTests.FileWithSeekTable_DecodesAndCanSeekWithinFirstFrame
   href: SilverCraft.CSCore.Tests.FlacSeekTableTests.html#SilverCraft_CSCore_Tests_FlacSeekTableTests_FileWithSeekTable_DecodesAndCanSeekWithinFirstFrame
@@ -609,3 +708,21 @@ references:
   name: TwentyFourBitFrames_MatchFfmpegPcmAcrossOffsetReads
   nameWithType: FlacSeekTableTests.TwentyFourBitFrames_MatchFfmpegPcmAcrossOffsetReads
   fullName: SilverCraft.CSCore.Tests.FlacSeekTableTests.TwentyFourBitFrames_MatchFfmpegPcmAcrossOffsetReads
+- uid: SilverCraft.CSCore.Tests.FlacSeekTableTests.FileWithoutSeekTable_SeekAcrossFramesAndLastFrame_MatchesSequentialPcmAndCleanEof*
+  commentId: Overload:SilverCraft.CSCore.Tests.FlacSeekTableTests.FileWithoutSeekTable_SeekAcrossFramesAndLastFrame_MatchesSequentialPcmAndCleanEof
+  href: SilverCraft.CSCore.Tests.FlacSeekTableTests.html#SilverCraft_CSCore_Tests_FlacSeekTableTests_FileWithoutSeekTable_SeekAcrossFramesAndLastFrame_MatchesSequentialPcmAndCleanEof
+  name: FileWithoutSeekTable_SeekAcrossFramesAndLastFrame_MatchesSequentialPcmAndCleanEof
+  nameWithType: FlacSeekTableTests.FileWithoutSeekTable_SeekAcrossFramesAndLastFrame_MatchesSequentialPcmAndCleanEof
+  fullName: SilverCraft.CSCore.Tests.FlacSeekTableTests.FileWithoutSeekTable_SeekAcrossFramesAndLastFrame_MatchesSequentialPcmAndCleanEof
+- uid: SilverCraft.CSCore.Tests.FlacSeekTableTests.FileWithSeekTable_SeekBeforeFirstRead_MatchesSequentialPcm*
+  commentId: Overload:SilverCraft.CSCore.Tests.FlacSeekTableTests.FileWithSeekTable_SeekBeforeFirstRead_MatchesSequentialPcm
+  href: SilverCraft.CSCore.Tests.FlacSeekTableTests.html#SilverCraft_CSCore_Tests_FlacSeekTableTests_FileWithSeekTable_SeekBeforeFirstRead_MatchesSequentialPcm
+  name: FileWithSeekTable_SeekBeforeFirstRead_MatchesSequentialPcm
+  nameWithType: FlacSeekTableTests.FileWithSeekTable_SeekBeforeFirstRead_MatchesSequentialPcm
+  fullName: SilverCraft.CSCore.Tests.FlacSeekTableTests.FileWithSeekTable_SeekBeforeFirstRead_MatchesSequentialPcm
+- uid: SilverCraft.CSCore.Tests.FlacSeekTableTests.FileWithUndersizedMaxFrameSize_RetriesBufferingAndDecodesBitExact*
+  commentId: Overload:SilverCraft.CSCore.Tests.FlacSeekTableTests.FileWithUndersizedMaxFrameSize_RetriesBufferingAndDecodesBitExact
+  href: SilverCraft.CSCore.Tests.FlacSeekTableTests.html#SilverCraft_CSCore_Tests_FlacSeekTableTests_FileWithUndersizedMaxFrameSize_RetriesBufferingAndDecodesBitExact
+  name: FileWithUndersizedMaxFrameSize_RetriesBufferingAndDecodesBitExact
+  nameWithType: FlacSeekTableTests.FileWithUndersizedMaxFrameSize_RetriesBufferingAndDecodesBitExact
+  fullName: SilverCraft.CSCore.Tests.FlacSeekTableTests.FileWithUndersizedMaxFrameSize_RetriesBufferingAndDecodesBitExact

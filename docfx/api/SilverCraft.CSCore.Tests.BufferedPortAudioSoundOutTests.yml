@@ -1,0 +1,1252 @@
+### YamlMime:ManagedReference
+items:
+- uid: SilverCraft.CSCore.Tests.BufferedPortAudioSoundOutTests
+  commentId: T:SilverCraft.CSCore.Tests.BufferedPortAudioSoundOutTests
+  id: BufferedPortAudioSoundOutTests
+  parent: SilverCraft.CSCore.Tests
+  children:
+  - SilverCraft.CSCore.Tests.BufferedPortAudioSoundOutTests.Callback_AppliesVolumeScaling
+  - SilverCraft.CSCore.Tests.BufferedPortAudioSoundOutTests.Callback_ClampsOutputChannels_WithoutOverflowingOutputBuffer
+  - SilverCraft.CSCore.Tests.BufferedPortAudioSoundOutTests.Callback_ExcessiveFrameCount_ReturnsAbort
+  - SilverCraft.CSCore.Tests.BufferedPortAudioSoundOutTests.Callback_StaleStreamId_ReturnsAbort
+  - SilverCraft.CSCore.Tests.BufferedPortAudioSoundOutTests.Defaults_AreExpectedBeforeInitialize
+  - SilverCraft.CSCore.Tests.BufferedPortAudioSoundOutTests.Dispose_IsIdempotent_AndSubsequentOperationsThrowObjectDisposedException
+  - SilverCraft.CSCore.Tests.BufferedPortAudioSoundOutTests.ExecuteSeek_FlushesRingBuffer_AndIsSafeUnderConcurrentCallbacks
+  - SilverCraft.CSCore.Tests.BufferedPortAudioSoundOutTests.ExecuteSeek_NullAction_ThrowsArgumentNullException
+  - SilverCraft.CSCore.Tests.BufferedPortAudioSoundOutTests.GetOutputDeviceNames_StartsWithDefaultDeviceLabel_AndCanBeCalledRepeatedly
+  - SilverCraft.CSCore.Tests.BufferedPortAudioSoundOutTests.Initialize_NullSource_ThrowsArgumentNullException
+  - SilverCraft.CSCore.Tests.BufferedPortAudioSoundOutTests.IsSupported_DoesNotThrow
+  - SilverCraft.CSCore.Tests.BufferedPortAudioSoundOutTests.OutputLatency_IncludesStreamAndBufferedLatency
+  - SilverCraft.CSCore.Tests.BufferedPortAudioSoundOutTests.Play_BeforeInitialize_ThrowsObjectDisposedException
+  - SilverCraft.CSCore.Tests.BufferedPortAudioSoundOutTests.ProducerAndCallback_StreamSamplesAcrossRingWrapAround_UntilComplete
+  - SilverCraft.CSCore.Tests.BufferedPortAudioSoundOutTests.Producer_HandlesSourceExceptionGracefully_AndCompletesCallback
+  - SilverCraft.CSCore.Tests.BufferedPortAudioSoundOutTests.StopAndResume_WhenStopped_AreNoOps
+  - SilverCraft.CSCore.Tests.BufferedPortAudioSoundOutTests.Volume_OutOfRange_ThrowsArgumentOutOfRangeException(System.Single)
+  - SilverCraft.CSCore.Tests.BufferedPortAudioSoundOutTests.Volume_ValidValues_RoundTrip(System.Single)
+  langs:
+  - csharp
+  - vb
+  name: BufferedPortAudioSoundOutTests
+  nameWithType: BufferedPortAudioSoundOutTests
+  fullName: SilverCraft.CSCore.Tests.BufferedPortAudioSoundOutTests
+  type: Class
+  source:
+    remote:
+      path: SilverCraft.CSCore.Tests/BufferedPortAudioSoundOutTests.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: BufferedPortAudioSoundOutTests
+    path: ../SilverCraft.CSCore.Tests/BufferedPortAudioSoundOutTests.cs
+    startLine: 6
+  assemblies:
+  - SilverCraft.CSCore.Tests
+  namespace: SilverCraft.CSCore.Tests
+  syntax:
+    content: public sealed class BufferedPortAudioSoundOutTests
+    content.vb: Public NotInheritable Class BufferedPortAudioSoundOutTests
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  extensionMethods:
+  - SilverCraft.CSCore.Tests.BufferedPortAudioSoundOutTests.SilverCraft.CSCore.FluentExtensions.Synchronized``2
+- uid: SilverCraft.CSCore.Tests.BufferedPortAudioSoundOutTests.Defaults_AreExpectedBeforeInitialize
+  commentId: M:SilverCraft.CSCore.Tests.BufferedPortAudioSoundOutTests.Defaults_AreExpectedBeforeInitialize
+  id: Defaults_AreExpectedBeforeInitialize
+  parent: SilverCraft.CSCore.Tests.BufferedPortAudioSoundOutTests
+  langs:
+  - csharp
+  - vb
+  name: Defaults_AreExpectedBeforeInitialize()
+  nameWithType: BufferedPortAudioSoundOutTests.Defaults_AreExpectedBeforeInitialize()
+  fullName: SilverCraft.CSCore.Tests.BufferedPortAudioSoundOutTests.Defaults_AreExpectedBeforeInitialize()
+  type: Method
+  source:
+    remote:
+      path: SilverCraft.CSCore.Tests/BufferedPortAudioSoundOutTests.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: Defaults_AreExpectedBeforeInitialize
+    path: ../SilverCraft.CSCore.Tests/BufferedPortAudioSoundOutTests.cs
+    startLine: 8
+  assemblies:
+  - SilverCraft.CSCore.Tests
+  namespace: SilverCraft.CSCore.Tests
+  syntax:
+    content: >-
+      [Fact]
+
+      public void Defaults_AreExpectedBeforeInitialize()
+    content.vb: >-
+      <Fact>
+
+      Public Sub Defaults_AreExpectedBeforeInitialize()
+  overload: SilverCraft.CSCore.Tests.BufferedPortAudioSoundOutTests.Defaults_AreExpectedBeforeInitialize*
+  attributes:
+  - type: Xunit.FactAttribute
+    ctor: Xunit.FactAttribute.#ctor
+    arguments: []
+- uid: SilverCraft.CSCore.Tests.BufferedPortAudioSoundOutTests.Volume_ValidValues_RoundTrip(System.Single)
+  commentId: M:SilverCraft.CSCore.Tests.BufferedPortAudioSoundOutTests.Volume_ValidValues_RoundTrip(System.Single)
+  id: Volume_ValidValues_RoundTrip(System.Single)
+  parent: SilverCraft.CSCore.Tests.BufferedPortAudioSoundOutTests
+  langs:
+  - csharp
+  - vb
+  name: Volume_ValidValues_RoundTrip(float)
+  nameWithType: BufferedPortAudioSoundOutTests.Volume_ValidValues_RoundTrip(float)
+  fullName: SilverCraft.CSCore.Tests.BufferedPortAudioSoundOutTests.Volume_ValidValues_RoundTrip(float)
+  type: Method
+  source:
+    remote:
+      path: SilverCraft.CSCore.Tests/BufferedPortAudioSoundOutTests.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: Volume_ValidValues_RoundTrip
+    path: ../SilverCraft.CSCore.Tests/BufferedPortAudioSoundOutTests.cs
+    startLine: 18
+  assemblies:
+  - SilverCraft.CSCore.Tests
+  namespace: SilverCraft.CSCore.Tests
+  syntax:
+    content: >-
+      [Theory]
+
+      [InlineData(new object[] { 0 })]
+
+      [InlineData(new object[] { 0.25 })]
+
+      [InlineData(new object[] { 1 })]
+
+      public void Volume_ValidValues_RoundTrip(float volume)
+    parameters:
+    - id: volume
+      type: System.Single
+    content.vb: >-
+      <Theory>
+
+      <InlineData(New Object() { 0 })>
+
+      <InlineData(New Object() { 0.25 })>
+
+      <InlineData(New Object() { 1 })>
+
+      Public Sub Volume_ValidValues_RoundTrip(volume As Single)
+  overload: SilverCraft.CSCore.Tests.BufferedPortAudioSoundOutTests.Volume_ValidValues_RoundTrip*
+  attributes:
+  - type: Xunit.TheoryAttribute
+    ctor: Xunit.TheoryAttribute.#ctor
+    arguments: []
+  nameWithType.vb: BufferedPortAudioSoundOutTests.Volume_ValidValues_RoundTrip(Single)
+  fullName.vb: SilverCraft.CSCore.Tests.BufferedPortAudioSoundOutTests.Volume_ValidValues_RoundTrip(Single)
+  name.vb: Volume_ValidValues_RoundTrip(Single)
+- uid: SilverCraft.CSCore.Tests.BufferedPortAudioSoundOutTests.Volume_OutOfRange_ThrowsArgumentOutOfRangeException(System.Single)
+  commentId: M:SilverCraft.CSCore.Tests.BufferedPortAudioSoundOutTests.Volume_OutOfRange_ThrowsArgumentOutOfRangeException(System.Single)
+  id: Volume_OutOfRange_ThrowsArgumentOutOfRangeException(System.Single)
+  parent: SilverCraft.CSCore.Tests.BufferedPortAudioSoundOutTests
+  langs:
+  - csharp
+  - vb
+  name: Volume_OutOfRange_ThrowsArgumentOutOfRangeException(float)
+  nameWithType: BufferedPortAudioSoundOutTests.Volume_OutOfRange_ThrowsArgumentOutOfRangeException(float)
+  fullName: SilverCraft.CSCore.Tests.BufferedPortAudioSoundOutTests.Volume_OutOfRange_ThrowsArgumentOutOfRangeException(float)
+  type: Method
+  source:
+    remote:
+      path: SilverCraft.CSCore.Tests/BufferedPortAudioSoundOutTests.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: Volume_OutOfRange_ThrowsArgumentOutOfRangeException
+    path: ../SilverCraft.CSCore.Tests/BufferedPortAudioSoundOutTests.cs
+    startLine: 29
+  assemblies:
+  - SilverCraft.CSCore.Tests
+  namespace: SilverCraft.CSCore.Tests
+  syntax:
+    content: >-
+      [Theory]
+
+      [InlineData(new object[] { -0.01 })]
+
+      [InlineData(new object[] { 1.01 })]
+
+      [InlineData(new object[] { NaN })]
+
+      public void Volume_OutOfRange_ThrowsArgumentOutOfRangeException(float volume)
+    parameters:
+    - id: volume
+      type: System.Single
+    content.vb: >-
+      <Theory>
+
+      <InlineData(New Object() { -0.01 })>
+
+      <InlineData(New Object() { 1.01 })>
+
+      <InlineData(New Object() { NaN })>
+
+      Public Sub Volume_OutOfRange_ThrowsArgumentOutOfRangeException(volume As Single)
+  overload: SilverCraft.CSCore.Tests.BufferedPortAudioSoundOutTests.Volume_OutOfRange_ThrowsArgumentOutOfRangeException*
+  attributes:
+  - type: Xunit.TheoryAttribute
+    ctor: Xunit.TheoryAttribute.#ctor
+    arguments: []
+  nameWithType.vb: BufferedPortAudioSoundOutTests.Volume_OutOfRange_ThrowsArgumentOutOfRangeException(Single)
+  fullName.vb: SilverCraft.CSCore.Tests.BufferedPortAudioSoundOutTests.Volume_OutOfRange_ThrowsArgumentOutOfRangeException(Single)
+  name.vb: Volume_OutOfRange_ThrowsArgumentOutOfRangeException(Single)
+- uid: SilverCraft.CSCore.Tests.BufferedPortAudioSoundOutTests.Initialize_NullSource_ThrowsArgumentNullException
+  commentId: M:SilverCraft.CSCore.Tests.BufferedPortAudioSoundOutTests.Initialize_NullSource_ThrowsArgumentNullException
+  id: Initialize_NullSource_ThrowsArgumentNullException
+  parent: SilverCraft.CSCore.Tests.BufferedPortAudioSoundOutTests
+  langs:
+  - csharp
+  - vb
+  name: Initialize_NullSource_ThrowsArgumentNullException()
+  nameWithType: BufferedPortAudioSoundOutTests.Initialize_NullSource_ThrowsArgumentNullException()
+  fullName: SilverCraft.CSCore.Tests.BufferedPortAudioSoundOutTests.Initialize_NullSource_ThrowsArgumentNullException()
+  type: Method
+  source:
+    remote:
+      path: SilverCraft.CSCore.Tests/BufferedPortAudioSoundOutTests.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: Initialize_NullSource_ThrowsArgumentNullException
+    path: ../SilverCraft.CSCore.Tests/BufferedPortAudioSoundOutTests.cs
+    startLine: 47
+  assemblies:
+  - SilverCraft.CSCore.Tests
+  namespace: SilverCraft.CSCore.Tests
+  syntax:
+    content: >-
+      [Fact]
+
+      public void Initialize_NullSource_ThrowsArgumentNullException()
+    content.vb: >-
+      <Fact>
+
+      Public Sub Initialize_NullSource_ThrowsArgumentNullException()
+  overload: SilverCraft.CSCore.Tests.BufferedPortAudioSoundOutTests.Initialize_NullSource_ThrowsArgumentNullException*
+  attributes:
+  - type: Xunit.FactAttribute
+    ctor: Xunit.FactAttribute.#ctor
+    arguments: []
+- uid: SilverCraft.CSCore.Tests.BufferedPortAudioSoundOutTests.ExecuteSeek_NullAction_ThrowsArgumentNullException
+  commentId: M:SilverCraft.CSCore.Tests.BufferedPortAudioSoundOutTests.ExecuteSeek_NullAction_ThrowsArgumentNullException
+  id: ExecuteSeek_NullAction_ThrowsArgumentNullException
+  parent: SilverCraft.CSCore.Tests.BufferedPortAudioSoundOutTests
+  langs:
+  - csharp
+  - vb
+  name: ExecuteSeek_NullAction_ThrowsArgumentNullException()
+  nameWithType: BufferedPortAudioSoundOutTests.ExecuteSeek_NullAction_ThrowsArgumentNullException()
+  fullName: SilverCraft.CSCore.Tests.BufferedPortAudioSoundOutTests.ExecuteSeek_NullAction_ThrowsArgumentNullException()
+  type: Method
+  source:
+    remote:
+      path: SilverCraft.CSCore.Tests/BufferedPortAudioSoundOutTests.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: ExecuteSeek_NullAction_ThrowsArgumentNullException
+    path: ../SilverCraft.CSCore.Tests/BufferedPortAudioSoundOutTests.cs
+    startLine: 54
+  assemblies:
+  - SilverCraft.CSCore.Tests
+  namespace: SilverCraft.CSCore.Tests
+  syntax:
+    content: >-
+      [Fact]
+
+      public void ExecuteSeek_NullAction_ThrowsArgumentNullException()
+    content.vb: >-
+      <Fact>
+
+      Public Sub ExecuteSeek_NullAction_ThrowsArgumentNullException()
+  overload: SilverCraft.CSCore.Tests.BufferedPortAudioSoundOutTests.ExecuteSeek_NullAction_ThrowsArgumentNullException*
+  attributes:
+  - type: Xunit.FactAttribute
+    ctor: Xunit.FactAttribute.#ctor
+    arguments: []
+- uid: SilverCraft.CSCore.Tests.BufferedPortAudioSoundOutTests.Play_BeforeInitialize_ThrowsObjectDisposedException
+  commentId: M:SilverCraft.CSCore.Tests.BufferedPortAudioSoundOutTests.Play_BeforeInitialize_ThrowsObjectDisposedException
+  id: Play_BeforeInitialize_ThrowsObjectDisposedException
+  parent: SilverCraft.CSCore.Tests.BufferedPortAudioSoundOutTests
+  langs:
+  - csharp
+  - vb
+  name: Play_BeforeInitialize_ThrowsObjectDisposedException()
+  nameWithType: BufferedPortAudioSoundOutTests.Play_BeforeInitialize_ThrowsObjectDisposedException()
+  fullName: SilverCraft.CSCore.Tests.BufferedPortAudioSoundOutTests.Play_BeforeInitialize_ThrowsObjectDisposedException()
+  type: Method
+  source:
+    remote:
+      path: SilverCraft.CSCore.Tests/BufferedPortAudioSoundOutTests.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: Play_BeforeInitialize_ThrowsObjectDisposedException
+    path: ../SilverCraft.CSCore.Tests/BufferedPortAudioSoundOutTests.cs
+    startLine: 61
+  assemblies:
+  - SilverCraft.CSCore.Tests
+  namespace: SilverCraft.CSCore.Tests
+  syntax:
+    content: >-
+      [Fact]
+
+      public void Play_BeforeInitialize_ThrowsObjectDisposedException()
+    content.vb: >-
+      <Fact>
+
+      Public Sub Play_BeforeInitialize_ThrowsObjectDisposedException()
+  overload: SilverCraft.CSCore.Tests.BufferedPortAudioSoundOutTests.Play_BeforeInitialize_ThrowsObjectDisposedException*
+  attributes:
+  - type: Xunit.FactAttribute
+    ctor: Xunit.FactAttribute.#ctor
+    arguments: []
+- uid: SilverCraft.CSCore.Tests.BufferedPortAudioSoundOutTests.StopAndResume_WhenStopped_AreNoOps
+  commentId: M:SilverCraft.CSCore.Tests.BufferedPortAudioSoundOutTests.StopAndResume_WhenStopped_AreNoOps
+  id: StopAndResume_WhenStopped_AreNoOps
+  parent: SilverCraft.CSCore.Tests.BufferedPortAudioSoundOutTests
+  langs:
+  - csharp
+  - vb
+  name: StopAndResume_WhenStopped_AreNoOps()
+  nameWithType: BufferedPortAudioSoundOutTests.StopAndResume_WhenStopped_AreNoOps()
+  fullName: SilverCraft.CSCore.Tests.BufferedPortAudioSoundOutTests.StopAndResume_WhenStopped_AreNoOps()
+  type: Method
+  source:
+    remote:
+      path: SilverCraft.CSCore.Tests/BufferedPortAudioSoundOutTests.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: StopAndResume_WhenStopped_AreNoOps
+    path: ../SilverCraft.CSCore.Tests/BufferedPortAudioSoundOutTests.cs
+    startLine: 68
+  assemblies:
+  - SilverCraft.CSCore.Tests
+  namespace: SilverCraft.CSCore.Tests
+  syntax:
+    content: >-
+      [Fact]
+
+      public void StopAndResume_WhenStopped_AreNoOps()
+    content.vb: >-
+      <Fact>
+
+      Public Sub StopAndResume_WhenStopped_AreNoOps()
+  overload: SilverCraft.CSCore.Tests.BufferedPortAudioSoundOutTests.StopAndResume_WhenStopped_AreNoOps*
+  attributes:
+  - type: Xunit.FactAttribute
+    ctor: Xunit.FactAttribute.#ctor
+    arguments: []
+- uid: SilverCraft.CSCore.Tests.BufferedPortAudioSoundOutTests.Dispose_IsIdempotent_AndSubsequentOperationsThrowObjectDisposedException
+  commentId: M:SilverCraft.CSCore.Tests.BufferedPortAudioSoundOutTests.Dispose_IsIdempotent_AndSubsequentOperationsThrowObjectDisposedException
+  id: Dispose_IsIdempotent_AndSubsequentOperationsThrowObjectDisposedException
+  parent: SilverCraft.CSCore.Tests.BufferedPortAudioSoundOutTests
+  langs:
+  - csharp
+  - vb
+  name: Dispose_IsIdempotent_AndSubsequentOperationsThrowObjectDisposedException()
+  nameWithType: BufferedPortAudioSoundOutTests.Dispose_IsIdempotent_AndSubsequentOperationsThrowObjectDisposedException()
+  fullName: SilverCraft.CSCore.Tests.BufferedPortAudioSoundOutTests.Dispose_IsIdempotent_AndSubsequentOperationsThrowObjectDisposedException()
+  type: Method
+  source:
+    remote:
+      path: SilverCraft.CSCore.Tests/BufferedPortAudioSoundOutTests.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: Dispose_IsIdempotent_AndSubsequentOperationsThrowObjectDisposedException
+    path: ../SilverCraft.CSCore.Tests/BufferedPortAudioSoundOutTests.cs
+    startLine: 82
+  assemblies:
+  - SilverCraft.CSCore.Tests
+  namespace: SilverCraft.CSCore.Tests
+  syntax:
+    content: >-
+      [Fact]
+
+      public void Dispose_IsIdempotent_AndSubsequentOperationsThrowObjectDisposedException()
+    content.vb: >-
+      <Fact>
+
+      Public Sub Dispose_IsIdempotent_AndSubsequentOperationsThrowObjectDisposedException()
+  overload: SilverCraft.CSCore.Tests.BufferedPortAudioSoundOutTests.Dispose_IsIdempotent_AndSubsequentOperationsThrowObjectDisposedException*
+  attributes:
+  - type: Xunit.FactAttribute
+    ctor: Xunit.FactAttribute.#ctor
+    arguments: []
+- uid: SilverCraft.CSCore.Tests.BufferedPortAudioSoundOutTests.IsSupported_DoesNotThrow
+  commentId: M:SilverCraft.CSCore.Tests.BufferedPortAudioSoundOutTests.IsSupported_DoesNotThrow
+  id: IsSupported_DoesNotThrow
+  parent: SilverCraft.CSCore.Tests.BufferedPortAudioSoundOutTests
+  langs:
+  - csharp
+  - vb
+  name: IsSupported_DoesNotThrow()
+  nameWithType: BufferedPortAudioSoundOutTests.IsSupported_DoesNotThrow()
+  fullName: SilverCraft.CSCore.Tests.BufferedPortAudioSoundOutTests.IsSupported_DoesNotThrow()
+  type: Method
+  source:
+    remote:
+      path: SilverCraft.CSCore.Tests/BufferedPortAudioSoundOutTests.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: IsSupported_DoesNotThrow
+    path: ../SilverCraft.CSCore.Tests/BufferedPortAudioSoundOutTests.cs
+    startLine: 94
+  assemblies:
+  - SilverCraft.CSCore.Tests
+  namespace: SilverCraft.CSCore.Tests
+  syntax:
+    content: >-
+      [Fact]
+
+      public void IsSupported_DoesNotThrow()
+    content.vb: >-
+      <Fact>
+
+      Public Sub IsSupported_DoesNotThrow()
+  overload: SilverCraft.CSCore.Tests.BufferedPortAudioSoundOutTests.IsSupported_DoesNotThrow*
+  attributes:
+  - type: Xunit.FactAttribute
+    ctor: Xunit.FactAttribute.#ctor
+    arguments: []
+- uid: SilverCraft.CSCore.Tests.BufferedPortAudioSoundOutTests.GetOutputDeviceNames_StartsWithDefaultDeviceLabel_AndCanBeCalledRepeatedly
+  commentId: M:SilverCraft.CSCore.Tests.BufferedPortAudioSoundOutTests.GetOutputDeviceNames_StartsWithDefaultDeviceLabel_AndCanBeCalledRepeatedly
+  id: GetOutputDeviceNames_StartsWithDefaultDeviceLabel_AndCanBeCalledRepeatedly
+  parent: SilverCraft.CSCore.Tests.BufferedPortAudioSoundOutTests
+  langs:
+  - csharp
+  - vb
+  name: GetOutputDeviceNames_StartsWithDefaultDeviceLabel_AndCanBeCalledRepeatedly()
+  nameWithType: BufferedPortAudioSoundOutTests.GetOutputDeviceNames_StartsWithDefaultDeviceLabel_AndCanBeCalledRepeatedly()
+  fullName: SilverCraft.CSCore.Tests.BufferedPortAudioSoundOutTests.GetOutputDeviceNames_StartsWithDefaultDeviceLabel_AndCanBeCalledRepeatedly()
+  type: Method
+  source:
+    remote:
+      path: SilverCraft.CSCore.Tests/BufferedPortAudioSoundOutTests.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: GetOutputDeviceNames_StartsWithDefaultDeviceLabel_AndCanBeCalledRepeatedly
+    path: ../SilverCraft.CSCore.Tests/BufferedPortAudioSoundOutTests.cs
+    startLine: 100
+  assemblies:
+  - SilverCraft.CSCore.Tests
+  namespace: SilverCraft.CSCore.Tests
+  syntax:
+    content: >-
+      [Fact]
+
+      public void GetOutputDeviceNames_StartsWithDefaultDeviceLabel_AndCanBeCalledRepeatedly()
+    content.vb: >-
+      <Fact>
+
+      Public Sub GetOutputDeviceNames_StartsWithDefaultDeviceLabel_AndCanBeCalledRepeatedly()
+  overload: SilverCraft.CSCore.Tests.BufferedPortAudioSoundOutTests.GetOutputDeviceNames_StartsWithDefaultDeviceLabel_AndCanBeCalledRepeatedly*
+  attributes:
+  - type: Xunit.FactAttribute
+    ctor: Xunit.FactAttribute.#ctor
+    arguments: []
+- uid: SilverCraft.CSCore.Tests.BufferedPortAudioSoundOutTests.ProducerAndCallback_StreamSamplesAcrossRingWrapAround_UntilComplete
+  commentId: M:SilverCraft.CSCore.Tests.BufferedPortAudioSoundOutTests.ProducerAndCallback_StreamSamplesAcrossRingWrapAround_UntilComplete
+  id: ProducerAndCallback_StreamSamplesAcrossRingWrapAround_UntilComplete
+  parent: SilverCraft.CSCore.Tests.BufferedPortAudioSoundOutTests
+  langs:
+  - csharp
+  - vb
+  name: ProducerAndCallback_StreamSamplesAcrossRingWrapAround_UntilComplete()
+  nameWithType: BufferedPortAudioSoundOutTests.ProducerAndCallback_StreamSamplesAcrossRingWrapAround_UntilComplete()
+  fullName: SilverCraft.CSCore.Tests.BufferedPortAudioSoundOutTests.ProducerAndCallback_StreamSamplesAcrossRingWrapAround_UntilComplete()
+  type: Method
+  source:
+    remote:
+      path: SilverCraft.CSCore.Tests/BufferedPortAudioSoundOutTests.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: ProducerAndCallback_StreamSamplesAcrossRingWrapAround_UntilComplete
+    path: ../SilverCraft.CSCore.Tests/BufferedPortAudioSoundOutTests.cs
+    startLine: 111
+  assemblies:
+  - SilverCraft.CSCore.Tests
+  namespace: SilverCraft.CSCore.Tests
+  syntax:
+    content: >-
+      [Fact]
+
+      public void ProducerAndCallback_StreamSamplesAcrossRingWrapAround_UntilComplete()
+    content.vb: >-
+      <Fact>
+
+      Public Sub ProducerAndCallback_StreamSamplesAcrossRingWrapAround_UntilComplete()
+  overload: SilverCraft.CSCore.Tests.BufferedPortAudioSoundOutTests.ProducerAndCallback_StreamSamplesAcrossRingWrapAround_UntilComplete*
+  attributes:
+  - type: Xunit.FactAttribute
+    ctor: Xunit.FactAttribute.#ctor
+    arguments: []
+- uid: SilverCraft.CSCore.Tests.BufferedPortAudioSoundOutTests.Callback_AppliesVolumeScaling
+  commentId: M:SilverCraft.CSCore.Tests.BufferedPortAudioSoundOutTests.Callback_AppliesVolumeScaling
+  id: Callback_AppliesVolumeScaling
+  parent: SilverCraft.CSCore.Tests.BufferedPortAudioSoundOutTests
+  langs:
+  - csharp
+  - vb
+  name: Callback_AppliesVolumeScaling()
+  nameWithType: BufferedPortAudioSoundOutTests.Callback_AppliesVolumeScaling()
+  fullName: SilverCraft.CSCore.Tests.BufferedPortAudioSoundOutTests.Callback_AppliesVolumeScaling()
+  type: Method
+  source:
+    remote:
+      path: SilverCraft.CSCore.Tests/BufferedPortAudioSoundOutTests.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: Callback_AppliesVolumeScaling
+    path: ../SilverCraft.CSCore.Tests/BufferedPortAudioSoundOutTests.cs
+    startLine: 163
+  assemblies:
+  - SilverCraft.CSCore.Tests
+  namespace: SilverCraft.CSCore.Tests
+  syntax:
+    content: >-
+      [Fact]
+
+      public void Callback_AppliesVolumeScaling()
+    content.vb: >-
+      <Fact>
+
+      Public Sub Callback_AppliesVolumeScaling()
+  overload: SilverCraft.CSCore.Tests.BufferedPortAudioSoundOutTests.Callback_AppliesVolumeScaling*
+  attributes:
+  - type: Xunit.FactAttribute
+    ctor: Xunit.FactAttribute.#ctor
+    arguments: []
+- uid: SilverCraft.CSCore.Tests.BufferedPortAudioSoundOutTests.Callback_ClampsOutputChannels_WithoutOverflowingOutputBuffer
+  commentId: M:SilverCraft.CSCore.Tests.BufferedPortAudioSoundOutTests.Callback_ClampsOutputChannels_WithoutOverflowingOutputBuffer
+  id: Callback_ClampsOutputChannels_WithoutOverflowingOutputBuffer
+  parent: SilverCraft.CSCore.Tests.BufferedPortAudioSoundOutTests
+  langs:
+  - csharp
+  - vb
+  name: Callback_ClampsOutputChannels_WithoutOverflowingOutputBuffer()
+  nameWithType: BufferedPortAudioSoundOutTests.Callback_ClampsOutputChannels_WithoutOverflowingOutputBuffer()
+  fullName: SilverCraft.CSCore.Tests.BufferedPortAudioSoundOutTests.Callback_ClampsOutputChannels_WithoutOverflowingOutputBuffer()
+  type: Method
+  source:
+    remote:
+      path: SilverCraft.CSCore.Tests/BufferedPortAudioSoundOutTests.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: Callback_ClampsOutputChannels_WithoutOverflowingOutputBuffer
+    path: ../SilverCraft.CSCore.Tests/BufferedPortAudioSoundOutTests.cs
+    startLine: 186
+  assemblies:
+  - SilverCraft.CSCore.Tests
+  namespace: SilverCraft.CSCore.Tests
+  syntax:
+    content: >-
+      [Fact]
+
+      public void Callback_ClampsOutputChannels_WithoutOverflowingOutputBuffer()
+    content.vb: >-
+      <Fact>
+
+      Public Sub Callback_ClampsOutputChannels_WithoutOverflowingOutputBuffer()
+  overload: SilverCraft.CSCore.Tests.BufferedPortAudioSoundOutTests.Callback_ClampsOutputChannels_WithoutOverflowingOutputBuffer*
+  attributes:
+  - type: Xunit.FactAttribute
+    ctor: Xunit.FactAttribute.#ctor
+    arguments: []
+- uid: SilverCraft.CSCore.Tests.BufferedPortAudioSoundOutTests.Callback_StaleStreamId_ReturnsAbort
+  commentId: M:SilverCraft.CSCore.Tests.BufferedPortAudioSoundOutTests.Callback_StaleStreamId_ReturnsAbort
+  id: Callback_StaleStreamId_ReturnsAbort
+  parent: SilverCraft.CSCore.Tests.BufferedPortAudioSoundOutTests
+  langs:
+  - csharp
+  - vb
+  name: Callback_StaleStreamId_ReturnsAbort()
+  nameWithType: BufferedPortAudioSoundOutTests.Callback_StaleStreamId_ReturnsAbort()
+  fullName: SilverCraft.CSCore.Tests.BufferedPortAudioSoundOutTests.Callback_StaleStreamId_ReturnsAbort()
+  type: Method
+  source:
+    remote:
+      path: SilverCraft.CSCore.Tests/BufferedPortAudioSoundOutTests.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: Callback_StaleStreamId_ReturnsAbort
+    path: ../SilverCraft.CSCore.Tests/BufferedPortAudioSoundOutTests.cs
+    startLine: 230
+  assemblies:
+  - SilverCraft.CSCore.Tests
+  namespace: SilverCraft.CSCore.Tests
+  syntax:
+    content: >-
+      [Fact]
+
+      public void Callback_StaleStreamId_ReturnsAbort()
+    content.vb: >-
+      <Fact>
+
+      Public Sub Callback_StaleStreamId_ReturnsAbort()
+  overload: SilverCraft.CSCore.Tests.BufferedPortAudioSoundOutTests.Callback_StaleStreamId_ReturnsAbort*
+  attributes:
+  - type: Xunit.FactAttribute
+    ctor: Xunit.FactAttribute.#ctor
+    arguments: []
+- uid: SilverCraft.CSCore.Tests.BufferedPortAudioSoundOutTests.Callback_ExcessiveFrameCount_ReturnsAbort
+  commentId: M:SilverCraft.CSCore.Tests.BufferedPortAudioSoundOutTests.Callback_ExcessiveFrameCount_ReturnsAbort
+  id: Callback_ExcessiveFrameCount_ReturnsAbort
+  parent: SilverCraft.CSCore.Tests.BufferedPortAudioSoundOutTests
+  langs:
+  - csharp
+  - vb
+  name: Callback_ExcessiveFrameCount_ReturnsAbort()
+  nameWithType: BufferedPortAudioSoundOutTests.Callback_ExcessiveFrameCount_ReturnsAbort()
+  fullName: SilverCraft.CSCore.Tests.BufferedPortAudioSoundOutTests.Callback_ExcessiveFrameCount_ReturnsAbort()
+  type: Method
+  source:
+    remote:
+      path: SilverCraft.CSCore.Tests/BufferedPortAudioSoundOutTests.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: Callback_ExcessiveFrameCount_ReturnsAbort
+    path: ../SilverCraft.CSCore.Tests/BufferedPortAudioSoundOutTests.cs
+    startLine: 242
+  assemblies:
+  - SilverCraft.CSCore.Tests
+  namespace: SilverCraft.CSCore.Tests
+  syntax:
+    content: >-
+      [Fact]
+
+      public void Callback_ExcessiveFrameCount_ReturnsAbort()
+    content.vb: >-
+      <Fact>
+
+      Public Sub Callback_ExcessiveFrameCount_ReturnsAbort()
+  overload: SilverCraft.CSCore.Tests.BufferedPortAudioSoundOutTests.Callback_ExcessiveFrameCount_ReturnsAbort*
+  attributes:
+  - type: Xunit.FactAttribute
+    ctor: Xunit.FactAttribute.#ctor
+    arguments: []
+- uid: SilverCraft.CSCore.Tests.BufferedPortAudioSoundOutTests.OutputLatency_IncludesStreamAndBufferedLatency
+  commentId: M:SilverCraft.CSCore.Tests.BufferedPortAudioSoundOutTests.OutputLatency_IncludesStreamAndBufferedLatency
+  id: OutputLatency_IncludesStreamAndBufferedLatency
+  parent: SilverCraft.CSCore.Tests.BufferedPortAudioSoundOutTests
+  langs:
+  - csharp
+  - vb
+  name: OutputLatency_IncludesStreamAndBufferedLatency()
+  nameWithType: BufferedPortAudioSoundOutTests.OutputLatency_IncludesStreamAndBufferedLatency()
+  fullName: SilverCraft.CSCore.Tests.BufferedPortAudioSoundOutTests.OutputLatency_IncludesStreamAndBufferedLatency()
+  type: Method
+  source:
+    remote:
+      path: SilverCraft.CSCore.Tests/BufferedPortAudioSoundOutTests.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: OutputLatency_IncludesStreamAndBufferedLatency
+    path: ../SilverCraft.CSCore.Tests/BufferedPortAudioSoundOutTests.cs
+    startLine: 254
+  assemblies:
+  - SilverCraft.CSCore.Tests
+  namespace: SilverCraft.CSCore.Tests
+  syntax:
+    content: >-
+      [Fact]
+
+      public void OutputLatency_IncludesStreamAndBufferedLatency()
+    content.vb: >-
+      <Fact>
+
+      Public Sub OutputLatency_IncludesStreamAndBufferedLatency()
+  overload: SilverCraft.CSCore.Tests.BufferedPortAudioSoundOutTests.OutputLatency_IncludesStreamAndBufferedLatency*
+  attributes:
+  - type: Xunit.FactAttribute
+    ctor: Xunit.FactAttribute.#ctor
+    arguments: []
+- uid: SilverCraft.CSCore.Tests.BufferedPortAudioSoundOutTests.ExecuteSeek_FlushesRingBuffer_AndIsSafeUnderConcurrentCallbacks
+  commentId: M:SilverCraft.CSCore.Tests.BufferedPortAudioSoundOutTests.ExecuteSeek_FlushesRingBuffer_AndIsSafeUnderConcurrentCallbacks
+  id: ExecuteSeek_FlushesRingBuffer_AndIsSafeUnderConcurrentCallbacks
+  parent: SilverCraft.CSCore.Tests.BufferedPortAudioSoundOutTests
+  langs:
+  - csharp
+  - vb
+  name: ExecuteSeek_FlushesRingBuffer_AndIsSafeUnderConcurrentCallbacks()
+  nameWithType: BufferedPortAudioSoundOutTests.ExecuteSeek_FlushesRingBuffer_AndIsSafeUnderConcurrentCallbacks()
+  fullName: SilverCraft.CSCore.Tests.BufferedPortAudioSoundOutTests.ExecuteSeek_FlushesRingBuffer_AndIsSafeUnderConcurrentCallbacks()
+  type: Method
+  source:
+    remote:
+      path: SilverCraft.CSCore.Tests/BufferedPortAudioSoundOutTests.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: ExecuteSeek_FlushesRingBuffer_AndIsSafeUnderConcurrentCallbacks
+    path: ../SilverCraft.CSCore.Tests/BufferedPortAudioSoundOutTests.cs
+    startLine: 272
+  assemblies:
+  - SilverCraft.CSCore.Tests
+  namespace: SilverCraft.CSCore.Tests
+  syntax:
+    content: >-
+      [Fact]
+
+      public Task ExecuteSeek_FlushesRingBuffer_AndIsSafeUnderConcurrentCallbacks()
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: >-
+      <Fact>
+
+      Public Function ExecuteSeek_FlushesRingBuffer_AndIsSafeUnderConcurrentCallbacks() As Task
+  overload: SilverCraft.CSCore.Tests.BufferedPortAudioSoundOutTests.ExecuteSeek_FlushesRingBuffer_AndIsSafeUnderConcurrentCallbacks*
+  attributes:
+  - type: Xunit.FactAttribute
+    ctor: Xunit.FactAttribute.#ctor
+    arguments: []
+- uid: SilverCraft.CSCore.Tests.BufferedPortAudioSoundOutTests.Producer_HandlesSourceExceptionGracefully_AndCompletesCallback
+  commentId: M:SilverCraft.CSCore.Tests.BufferedPortAudioSoundOutTests.Producer_HandlesSourceExceptionGracefully_AndCompletesCallback
+  id: Producer_HandlesSourceExceptionGracefully_AndCompletesCallback
+  parent: SilverCraft.CSCore.Tests.BufferedPortAudioSoundOutTests
+  langs:
+  - csharp
+  - vb
+  name: Producer_HandlesSourceExceptionGracefully_AndCompletesCallback()
+  nameWithType: BufferedPortAudioSoundOutTests.Producer_HandlesSourceExceptionGracefully_AndCompletesCallback()
+  fullName: SilverCraft.CSCore.Tests.BufferedPortAudioSoundOutTests.Producer_HandlesSourceExceptionGracefully_AndCompletesCallback()
+  type: Method
+  source:
+    remote:
+      path: SilverCraft.CSCore.Tests/BufferedPortAudioSoundOutTests.cs
+      branch: master
+      repo: https://github.com/thesilvercraft/cscore
+    id: Producer_HandlesSourceExceptionGracefully_AndCompletesCallback
+    path: ../SilverCraft.CSCore.Tests/BufferedPortAudioSoundOutTests.cs
+    startLine: 320
+  assemblies:
+  - SilverCraft.CSCore.Tests
+  namespace: SilverCraft.CSCore.Tests
+  syntax:
+    content: >-
+      [Fact]
+
+      public void Producer_HandlesSourceExceptionGracefully_AndCompletesCallback()
+    content.vb: >-
+      <Fact>
+
+      Public Sub Producer_HandlesSourceExceptionGracefully_AndCompletesCallback()
+  overload: SilverCraft.CSCore.Tests.BufferedPortAudioSoundOutTests.Producer_HandlesSourceExceptionGracefully_AndCompletesCallback*
+  attributes:
+  - type: Xunit.FactAttribute
+    ctor: Xunit.FactAttribute.#ctor
+    arguments: []
+references:
+- uid: SilverCraft.CSCore.Tests
+  commentId: N:SilverCraft.CSCore.Tests
+  name: SilverCraft.CSCore.Tests
+  nameWithType: SilverCraft.CSCore.Tests
+  fullName: SilverCraft.CSCore.Tests
+  spec.csharp:
+  - uid: SilverCraft
+    name: SilverCraft
+  - name: .
+  - uid: SilverCraft.CSCore
+    name: CSCore
+  - name: .
+  - uid: SilverCraft.CSCore.Tests
+    name: Tests
+  spec.vb:
+  - uid: SilverCraft
+    name: SilverCraft
+  - name: .
+  - uid: SilverCraft.CSCore
+    name: CSCore
+  - name: .
+  - uid: SilverCraft.CSCore.Tests
+    name: Tests
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: SilverCraft.CSCore.Tests.BufferedPortAudioSoundOutTests.SilverCraft.CSCore.FluentExtensions.Synchronized``2
+  commentId: M:SilverCraft.CSCore.FluentExtensions.Synchronized``2(``0)
+  parent: SilverCraft.CSCore.FluentExtensions
+  definition: SilverCraft.CSCore.FluentExtensions.Synchronized``2(``0)
+  href: SilverCraft.CSCore.FluentExtensions.html#SilverCraft_CSCore_FluentExtensions_Synchronized__2___0_
+  name: Synchronized<BufferedPortAudioSoundOutTests, T>(BufferedPortAudioSoundOutTests)
+  nameWithType: FluentExtensions.Synchronized<BufferedPortAudioSoundOutTests, T>(BufferedPortAudioSoundOutTests)
+  fullName: SilverCraft.CSCore.FluentExtensions.Synchronized<SilverCraft.CSCore.Tests.BufferedPortAudioSoundOutTests, T>(SilverCraft.CSCore.Tests.BufferedPortAudioSoundOutTests)
+  nameWithType.vb: FluentExtensions.Synchronized(Of BufferedPortAudioSoundOutTests, T)(BufferedPortAudioSoundOutTests)
+  fullName.vb: SilverCraft.CSCore.FluentExtensions.Synchronized(Of SilverCraft.CSCore.Tests.BufferedPortAudioSoundOutTests, T)(SilverCraft.CSCore.Tests.BufferedPortAudioSoundOutTests)
+  name.vb: Synchronized(Of BufferedPortAudioSoundOutTests, T)(BufferedPortAudioSoundOutTests)
+  spec.csharp:
+  - uid: SilverCraft.CSCore.FluentExtensions.Synchronized``2(SilverCraft.CSCore.Tests.BufferedPortAudioSoundOutTests)
+    name: Synchronized
+    href: SilverCraft.CSCore.FluentExtensions.html#SilverCraft_CSCore_FluentExtensions_Synchronized__2___0_
+  - name: <
+  - uid: SilverCraft.CSCore.Tests.BufferedPortAudioSoundOutTests
+    name: BufferedPortAudioSoundOutTests
+    href: SilverCraft.CSCore.Tests.BufferedPortAudioSoundOutTests.html
+  - name: ','
+  - name: " "
+  - name: T
+  - name: '>'
+  - name: (
+  - uid: SilverCraft.CSCore.Tests.BufferedPortAudioSoundOutTests
+    name: BufferedPortAudioSoundOutTests
+    href: SilverCraft.CSCore.Tests.BufferedPortAudioSoundOutTests.html
+  - name: )
+  spec.vb:
+  - uid: SilverCraft.CSCore.FluentExtensions.Synchronized``2(SilverCraft.CSCore.Tests.BufferedPortAudioSoundOutTests)
+    name: Synchronized
+    href: SilverCraft.CSCore.FluentExtensions.html#SilverCraft_CSCore_FluentExtensions_Synchronized__2___0_
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: SilverCraft.CSCore.Tests.BufferedPortAudioSoundOutTests
+    name: BufferedPortAudioSoundOutTests
+    href: SilverCraft.CSCore.Tests.BufferedPortAudioSoundOutTests.html
+  - name: ','
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: SilverCraft.CSCore.Tests.BufferedPortAudioSoundOutTests
+    name: BufferedPortAudioSoundOutTests
+    href: SilverCraft.CSCore.Tests.BufferedPortAudioSoundOutTests.html
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: SilverCraft.CSCore.FluentExtensions.Synchronized``2(``0)
+  commentId: M:SilverCraft.CSCore.FluentExtensions.Synchronized``2(``0)
+  href: SilverCraft.CSCore.FluentExtensions.html#SilverCraft_CSCore_FluentExtensions_Synchronized__2___0_
+  name: Synchronized<TAudioSource, T>(TAudioSource)
+  nameWithType: FluentExtensions.Synchronized<TAudioSource, T>(TAudioSource)
+  fullName: SilverCraft.CSCore.FluentExtensions.Synchronized<TAudioSource, T>(TAudioSource)
+  nameWithType.vb: FluentExtensions.Synchronized(Of TAudioSource, T)(TAudioSource)
+  fullName.vb: SilverCraft.CSCore.FluentExtensions.Synchronized(Of TAudioSource, T)(TAudioSource)
+  name.vb: Synchronized(Of TAudioSource, T)(TAudioSource)
+  spec.csharp:
+  - uid: SilverCraft.CSCore.FluentExtensions.Synchronized``2(``0)
+    name: Synchronized
+    href: SilverCraft.CSCore.FluentExtensions.html#SilverCraft_CSCore_FluentExtensions_Synchronized__2___0_
+  - name: <
+  - name: TAudioSource
+  - name: ','
+  - name: " "
+  - name: T
+  - name: '>'
+  - name: (
+  - name: TAudioSource
+  - name: )
+  spec.vb:
+  - uid: SilverCraft.CSCore.FluentExtensions.Synchronized``2(``0)
+    name: Synchronized
+    href: SilverCraft.CSCore.FluentExtensions.html#SilverCraft_CSCore_FluentExtensions_Synchronized__2___0_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TAudioSource
+  - name: ','
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - name: TAudioSource
+  - name: )
+- uid: SilverCraft.CSCore.FluentExtensions
+  commentId: T:SilverCraft.CSCore.FluentExtensions
+  parent: SilverCraft.CSCore
+  href: SilverCraft.CSCore.FluentExtensions.html
+  name: FluentExtensions
+  nameWithType: FluentExtensions
+  fullName: SilverCraft.CSCore.FluentExtensions
+- uid: SilverCraft.CSCore
+  commentId: N:SilverCraft.CSCore
+  name: SilverCraft.CSCore
+  nameWithType: SilverCraft.CSCore
+  fullName: SilverCraft.CSCore
+  spec.csharp:
+  - uid: SilverCraft
+    name: SilverCraft
+  - name: .
+  - uid: SilverCraft.CSCore
+    name: CSCore
+  spec.vb:
+  - uid: SilverCraft
+    name: SilverCraft
+  - name: .
+  - uid: SilverCraft.CSCore
+    name: CSCore
+- uid: SilverCraft.CSCore.Tests.BufferedPortAudioSoundOutTests.Defaults_AreExpectedBeforeInitialize*
+  commentId: Overload:SilverCraft.CSCore.Tests.BufferedPortAudioSoundOutTests.Defaults_AreExpectedBeforeInitialize
+  href: SilverCraft.CSCore.Tests.BufferedPortAudioSoundOutTests.html#SilverCraft_CSCore_Tests_BufferedPortAudioSoundOutTests_Defaults_AreExpectedBeforeInitialize
+  name: Defaults_AreExpectedBeforeInitialize
+  nameWithType: BufferedPortAudioSoundOutTests.Defaults_AreExpectedBeforeInitialize
+  fullName: SilverCraft.CSCore.Tests.BufferedPortAudioSoundOutTests.Defaults_AreExpectedBeforeInitialize
+- uid: SilverCraft.CSCore.Tests.BufferedPortAudioSoundOutTests.Volume_ValidValues_RoundTrip*
+  commentId: Overload:SilverCraft.CSCore.Tests.BufferedPortAudioSoundOutTests.Volume_ValidValues_RoundTrip
+  href: SilverCraft.CSCore.Tests.BufferedPortAudioSoundOutTests.html#SilverCraft_CSCore_Tests_BufferedPortAudioSoundOutTests_Volume_ValidValues_RoundTrip_System_Single_
+  name: Volume_ValidValues_RoundTrip
+  nameWithType: BufferedPortAudioSoundOutTests.Volume_ValidValues_RoundTrip
+  fullName: SilverCraft.CSCore.Tests.BufferedPortAudioSoundOutTests.Volume_ValidValues_RoundTrip
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.single
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single
+- uid: SilverCraft.CSCore.Tests.BufferedPortAudioSoundOutTests.Volume_OutOfRange_ThrowsArgumentOutOfRangeException*
+  commentId: Overload:SilverCraft.CSCore.Tests.BufferedPortAudioSoundOutTests.Volume_OutOfRange_ThrowsArgumentOutOfRangeException
+  href: SilverCraft.CSCore.Tests.BufferedPortAudioSoundOutTests.html#SilverCraft_CSCore_Tests_BufferedPortAudioSoundOutTests_Volume_OutOfRange_ThrowsArgumentOutOfRangeException_System_Single_
+  name: Volume_OutOfRange_ThrowsArgumentOutOfRangeException
+  nameWithType: BufferedPortAudioSoundOutTests.Volume_OutOfRange_ThrowsArgumentOutOfRangeException
+  fullName: SilverCraft.CSCore.Tests.BufferedPortAudioSoundOutTests.Volume_OutOfRange_ThrowsArgumentOutOfRangeException
+- uid: SilverCraft.CSCore.Tests.BufferedPortAudioSoundOutTests.Initialize_NullSource_ThrowsArgumentNullException*
+  commentId: Overload:SilverCraft.CSCore.Tests.BufferedPortAudioSoundOutTests.Initialize_NullSource_ThrowsArgumentNullException
+  href: SilverCraft.CSCore.Tests.BufferedPortAudioSoundOutTests.html#SilverCraft_CSCore_Tests_BufferedPortAudioSoundOutTests_Initialize_NullSource_ThrowsArgumentNullException
+  name: Initialize_NullSource_ThrowsArgumentNullException
+  nameWithType: BufferedPortAudioSoundOutTests.Initialize_NullSource_ThrowsArgumentNullException
+  fullName: SilverCraft.CSCore.Tests.BufferedPortAudioSoundOutTests.Initialize_NullSource_ThrowsArgumentNullException
+- uid: SilverCraft.CSCore.Tests.BufferedPortAudioSoundOutTests.ExecuteSeek_NullAction_ThrowsArgumentNullException*
+  commentId: Overload:SilverCraft.CSCore.Tests.BufferedPortAudioSoundOutTests.ExecuteSeek_NullAction_ThrowsArgumentNullException
+  href: SilverCraft.CSCore.Tests.BufferedPortAudioSoundOutTests.html#SilverCraft_CSCore_Tests_BufferedPortAudioSoundOutTests_ExecuteSeek_NullAction_ThrowsArgumentNullException
+  name: ExecuteSeek_NullAction_ThrowsArgumentNullException
+  nameWithType: BufferedPortAudioSoundOutTests.ExecuteSeek_NullAction_ThrowsArgumentNullException
+  fullName: SilverCraft.CSCore.Tests.BufferedPortAudioSoundOutTests.ExecuteSeek_NullAction_ThrowsArgumentNullException
+- uid: SilverCraft.CSCore.Tests.BufferedPortAudioSoundOutTests.Play_BeforeInitialize_ThrowsObjectDisposedException*
+  commentId: Overload:SilverCraft.CSCore.Tests.BufferedPortAudioSoundOutTests.Play_BeforeInitialize_ThrowsObjectDisposedException
+  href: SilverCraft.CSCore.Tests.BufferedPortAudioSoundOutTests.html#SilverCraft_CSCore_Tests_BufferedPortAudioSoundOutTests_Play_BeforeInitialize_ThrowsObjectDisposedException
+  name: Play_BeforeInitialize_ThrowsObjectDisposedException
+  nameWithType: BufferedPortAudioSoundOutTests.Play_BeforeInitialize_ThrowsObjectDisposedException
+  fullName: SilverCraft.CSCore.Tests.BufferedPortAudioSoundOutTests.Play_BeforeInitialize_ThrowsObjectDisposedException
+- uid: SilverCraft.CSCore.Tests.BufferedPortAudioSoundOutTests.StopAndResume_WhenStopped_AreNoOps*
+  commentId: Overload:SilverCraft.CSCore.Tests.BufferedPortAudioSoundOutTests.StopAndResume_WhenStopped_AreNoOps
+  href: SilverCraft.CSCore.Tests.BufferedPortAudioSoundOutTests.html#SilverCraft_CSCore_Tests_BufferedPortAudioSoundOutTests_StopAndResume_WhenStopped_AreNoOps
+  name: StopAndResume_WhenStopped_AreNoOps
+  nameWithType: BufferedPortAudioSoundOutTests.StopAndResume_WhenStopped_AreNoOps
+  fullName: SilverCraft.CSCore.Tests.BufferedPortAudioSoundOutTests.StopAndResume_WhenStopped_AreNoOps
+- uid: SilverCraft.CSCore.Tests.BufferedPortAudioSoundOutTests.Dispose_IsIdempotent_AndSubsequentOperationsThrowObjectDisposedException*
+  commentId: Overload:SilverCraft.CSCore.Tests.BufferedPortAudioSoundOutTests.Dispose_IsIdempotent_AndSubsequentOperationsThrowObjectDisposedException
+  href: SilverCraft.CSCore.Tests.BufferedPortAudioSoundOutTests.html#SilverCraft_CSCore_Tests_BufferedPortAudioSoundOutTests_Dispose_IsIdempotent_AndSubsequentOperationsThrowObjectDisposedException
+  name: Dispose_IsIdempotent_AndSubsequentOperationsThrowObjectDisposedException
+  nameWithType: BufferedPortAudioSoundOutTests.Dispose_IsIdempotent_AndSubsequentOperationsThrowObjectDisposedException
+  fullName: SilverCraft.CSCore.Tests.BufferedPortAudioSoundOutTests.Dispose_IsIdempotent_AndSubsequentOperationsThrowObjectDisposedException
+- uid: SilverCraft.CSCore.Tests.BufferedPortAudioSoundOutTests.IsSupported_DoesNotThrow*
+  commentId: Overload:SilverCraft.CSCore.Tests.BufferedPortAudioSoundOutTests.IsSupported_DoesNotThrow
+  href: SilverCraft.CSCore.Tests.BufferedPortAudioSoundOutTests.html#SilverCraft_CSCore_Tests_BufferedPortAudioSoundOutTests_IsSupported_DoesNotThrow
+  name: IsSupported_DoesNotThrow
+  nameWithType: BufferedPortAudioSoundOutTests.IsSupported_DoesNotThrow
+  fullName: SilverCraft.CSCore.Tests.BufferedPortAudioSoundOutTests.IsSupported_DoesNotThrow
+- uid: SilverCraft.CSCore.Tests.BufferedPortAudioSoundOutTests.GetOutputDeviceNames_StartsWithDefaultDeviceLabel_AndCanBeCalledRepeatedly*
+  commentId: Overload:SilverCraft.CSCore.Tests.BufferedPortAudioSoundOutTests.GetOutputDeviceNames_StartsWithDefaultDeviceLabel_AndCanBeCalledRepeatedly
+  href: SilverCraft.CSCore.Tests.BufferedPortAudioSoundOutTests.html#SilverCraft_CSCore_Tests_BufferedPortAudioSoundOutTests_GetOutputDeviceNames_StartsWithDefaultDeviceLabel_AndCanBeCalledRepeatedly
+  name: GetOutputDeviceNames_StartsWithDefaultDeviceLabel_AndCanBeCalledRepeatedly
+  nameWithType: BufferedPortAudioSoundOutTests.GetOutputDeviceNames_StartsWithDefaultDeviceLabel_AndCanBeCalledRepeatedly
+  fullName: SilverCraft.CSCore.Tests.BufferedPortAudioSoundOutTests.GetOutputDeviceNames_StartsWithDefaultDeviceLabel_AndCanBeCalledRepeatedly
+- uid: SilverCraft.CSCore.Tests.BufferedPortAudioSoundOutTests.ProducerAndCallback_StreamSamplesAcrossRingWrapAround_UntilComplete*
+  commentId: Overload:SilverCraft.CSCore.Tests.BufferedPortAudioSoundOutTests.ProducerAndCallback_StreamSamplesAcrossRingWrapAround_UntilComplete
+  href: SilverCraft.CSCore.Tests.BufferedPortAudioSoundOutTests.html#SilverCraft_CSCore_Tests_BufferedPortAudioSoundOutTests_ProducerAndCallback_StreamSamplesAcrossRingWrapAround_UntilComplete
+  name: ProducerAndCallback_StreamSamplesAcrossRingWrapAround_UntilComplete
+  nameWithType: BufferedPortAudioSoundOutTests.ProducerAndCallback_StreamSamplesAcrossRingWrapAround_UntilComplete
+  fullName: SilverCraft.CSCore.Tests.BufferedPortAudioSoundOutTests.ProducerAndCallback_StreamSamplesAcrossRingWrapAround_UntilComplete
+- uid: SilverCraft.CSCore.Tests.BufferedPortAudioSoundOutTests.Callback_AppliesVolumeScaling*
+  commentId: Overload:SilverCraft.CSCore.Tests.BufferedPortAudioSoundOutTests.Callback_AppliesVolumeScaling
+  href: SilverCraft.CSCore.Tests.BufferedPortAudioSoundOutTests.html#SilverCraft_CSCore_Tests_BufferedPortAudioSoundOutTests_Callback_AppliesVolumeScaling
+  name: Callback_AppliesVolumeScaling
+  nameWithType: BufferedPortAudioSoundOutTests.Callback_AppliesVolumeScaling
+  fullName: SilverCraft.CSCore.Tests.BufferedPortAudioSoundOutTests.Callback_AppliesVolumeScaling
+- uid: SilverCraft.CSCore.Tests.BufferedPortAudioSoundOutTests.Callback_ClampsOutputChannels_WithoutOverflowingOutputBuffer*
+  commentId: Overload:SilverCraft.CSCore.Tests.BufferedPortAudioSoundOutTests.Callback_ClampsOutputChannels_WithoutOverflowingOutputBuffer
+  href: SilverCraft.CSCore.Tests.BufferedPortAudioSoundOutTests.html#SilverCraft_CSCore_Tests_BufferedPortAudioSoundOutTests_Callback_ClampsOutputChannels_WithoutOverflowingOutputBuffer
+  name: Callback_ClampsOutputChannels_WithoutOverflowingOutputBuffer
+  nameWithType: BufferedPortAudioSoundOutTests.Callback_ClampsOutputChannels_WithoutOverflowingOutputBuffer
+  fullName: SilverCraft.CSCore.Tests.BufferedPortAudioSoundOutTests.Callback_ClampsOutputChannels_WithoutOverflowingOutputBuffer
+- uid: SilverCraft.CSCore.Tests.BufferedPortAudioSoundOutTests.Callback_StaleStreamId_ReturnsAbort*
+  commentId: Overload:SilverCraft.CSCore.Tests.BufferedPortAudioSoundOutTests.Callback_StaleStreamId_ReturnsAbort
+  href: SilverCraft.CSCore.Tests.BufferedPortAudioSoundOutTests.html#SilverCraft_CSCore_Tests_BufferedPortAudioSoundOutTests_Callback_StaleStreamId_ReturnsAbort
+  name: Callback_StaleStreamId_ReturnsAbort
+  nameWithType: BufferedPortAudioSoundOutTests.Callback_StaleStreamId_ReturnsAbort
+  fullName: SilverCraft.CSCore.Tests.BufferedPortAudioSoundOutTests.Callback_StaleStreamId_ReturnsAbort
+- uid: SilverCraft.CSCore.Tests.BufferedPortAudioSoundOutTests.Callback_ExcessiveFrameCount_ReturnsAbort*
+  commentId: Overload:SilverCraft.CSCore.Tests.BufferedPortAudioSoundOutTests.Callback_ExcessiveFrameCount_ReturnsAbort
+  href: SilverCraft.CSCore.Tests.BufferedPortAudioSoundOutTests.html#SilverCraft_CSCore_Tests_BufferedPortAudioSoundOutTests_Callback_ExcessiveFrameCount_ReturnsAbort
+  name: Callback_ExcessiveFrameCount_ReturnsAbort
+  nameWithType: BufferedPortAudioSoundOutTests.Callback_ExcessiveFrameCount_ReturnsAbort
+  fullName: SilverCraft.CSCore.Tests.BufferedPortAudioSoundOutTests.Callback_ExcessiveFrameCount_ReturnsAbort
+- uid: SilverCraft.CSCore.Tests.BufferedPortAudioSoundOutTests.OutputLatency_IncludesStreamAndBufferedLatency*
+  commentId: Overload:SilverCraft.CSCore.Tests.BufferedPortAudioSoundOutTests.OutputLatency_IncludesStreamAndBufferedLatency
+  href: SilverCraft.CSCore.Tests.BufferedPortAudioSoundOutTests.html#SilverCraft_CSCore_Tests_BufferedPortAudioSoundOutTests_OutputLatency_IncludesStreamAndBufferedLatency
+  name: OutputLatency_IncludesStreamAndBufferedLatency
+  nameWithType: BufferedPortAudioSoundOutTests.OutputLatency_IncludesStreamAndBufferedLatency
+  fullName: SilverCraft.CSCore.Tests.BufferedPortAudioSoundOutTests.OutputLatency_IncludesStreamAndBufferedLatency
+- uid: SilverCraft.CSCore.Tests.BufferedPortAudioSoundOutTests.ExecuteSeek_FlushesRingBuffer_AndIsSafeUnderConcurrentCallbacks*
+  commentId: Overload:SilverCraft.CSCore.Tests.BufferedPortAudioSoundOutTests.ExecuteSeek_FlushesRingBuffer_AndIsSafeUnderConcurrentCallbacks
+  href: SilverCraft.CSCore.Tests.BufferedPortAudioSoundOutTests.html#SilverCraft_CSCore_Tests_BufferedPortAudioSoundOutTests_ExecuteSeek_FlushesRingBuffer_AndIsSafeUnderConcurrentCallbacks
+  name: ExecuteSeek_FlushesRingBuffer_AndIsSafeUnderConcurrentCallbacks
+  nameWithType: BufferedPortAudioSoundOutTests.ExecuteSeek_FlushesRingBuffer_AndIsSafeUnderConcurrentCallbacks
+  fullName: SilverCraft.CSCore.Tests.BufferedPortAudioSoundOutTests.ExecuteSeek_FlushesRingBuffer_AndIsSafeUnderConcurrentCallbacks
+- uid: System.Threading.Tasks.Task
+  commentId: T:System.Threading.Tasks.Task
+  parent: System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task
+  name: Task
+  nameWithType: Task
+  fullName: System.Threading.Tasks.Task
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+- uid: SilverCraft.CSCore.Tests.BufferedPortAudioSoundOutTests.Producer_HandlesSourceExceptionGracefully_AndCompletesCallback*
+  commentId: Overload:SilverCraft.CSCore.Tests.BufferedPortAudioSoundOutTests.Producer_HandlesSourceExceptionGracefully_AndCompletesCallback
+  href: SilverCraft.CSCore.Tests.BufferedPortAudioSoundOutTests.html#SilverCraft_CSCore_Tests_BufferedPortAudioSoundOutTests_Producer_HandlesSourceExceptionGracefully_AndCompletesCallback
+  name: Producer_HandlesSourceExceptionGracefully_AndCompletesCallback
+  nameWithType: BufferedPortAudioSoundOutTests.Producer_HandlesSourceExceptionGracefully_AndCompletesCallback
+  fullName: SilverCraft.CSCore.Tests.BufferedPortAudioSoundOutTests.Producer_HandlesSourceExceptionGracefully_AndCompletesCallback

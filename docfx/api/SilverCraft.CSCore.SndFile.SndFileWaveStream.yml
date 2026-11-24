@@ -425,34 +425,27 @@ items:
 references:
 - uid: SilverCraft.CSCore.SndFile
   commentId: N:SilverCraft.CSCore.SndFile
-  href: SilverCraft.html
   name: SilverCraft.CSCore.SndFile
   nameWithType: SilverCraft.CSCore.SndFile
   fullName: SilverCraft.CSCore.SndFile
   spec.csharp:
   - uid: SilverCraft
     name: SilverCraft
-    href: SilverCraft.html
   - name: .
   - uid: SilverCraft.CSCore
     name: CSCore
-    href: SilverCraft.CSCore.html
   - name: .
   - uid: SilverCraft.CSCore.SndFile
     name: SndFile
-    href: SilverCraft.CSCore.SndFile.html
   spec.vb:
   - uid: SilverCraft
     name: SilverCraft
-    href: SilverCraft.html
   - name: .
   - uid: SilverCraft.CSCore
     name: CSCore
-    href: SilverCraft.CSCore.html
   - name: .
   - uid: SilverCraft.CSCore.SndFile
     name: SndFile
-    href: SilverCraft.CSCore.SndFile.html
 - uid: System.Object
   commentId: T:System.Object
   parent: System
@@ -1420,26 +1413,21 @@ references:
   fullName: System
 - uid: SilverCraft.CSCore
   commentId: N:SilverCraft.CSCore
-  href: SilverCraft.html
   name: SilverCraft.CSCore
   nameWithType: SilverCraft.CSCore
   fullName: SilverCraft.CSCore
   spec.csharp:
   - uid: SilverCraft
     name: SilverCraft
-    href: SilverCraft.html
   - name: .
   - uid: SilverCraft.CSCore
     name: CSCore
-    href: SilverCraft.CSCore.html
   spec.vb:
   - uid: SilverCraft
     name: SilverCraft
-    href: SilverCraft.html
   - name: .
   - uid: SilverCraft.CSCore
     name: CSCore
-    href: SilverCraft.CSCore.html
 - uid: SilverCraft.CSCore.IReadableAudioSource`1
   commentId: T:SilverCraft.CSCore.IReadableAudioSource`1
   href: SilverCraft.CSCore.IReadableAudioSource-1.html
@@ -2167,7 +2155,6 @@ references:
   fullName: sndfile.SF_INFO
 - uid: sndfile
   commentId: N:sndfile
-  href: sndfile.html
   name: sndfile
   nameWithType: sndfile
   fullName: sndfile

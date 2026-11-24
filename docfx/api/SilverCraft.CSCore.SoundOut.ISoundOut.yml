@@ -39,6 +39,7 @@ items:
     content.vb: Public Interface ISoundOut Inherits IDisposable
   derivedClasses:
   - SilverCraft.CSCore.SoundOut.ALSoundOut
+  - SilverCraft.CSCore.SoundOut.BufferedPortAudioSoundOut
   - SilverCraft.CSCore.SoundOut.PortAudioSoundOut
   inheritedMembers:
   - System.IDisposable.Dispose
@@ -315,34 +316,27 @@ items:
 references:
 - uid: SilverCraft.CSCore.SoundOut
   commentId: N:SilverCraft.CSCore.SoundOut
-  href: SilverCraft.html
   name: SilverCraft.CSCore.SoundOut
   nameWithType: SilverCraft.CSCore.SoundOut
   fullName: SilverCraft.CSCore.SoundOut
   spec.csharp:
   - uid: SilverCraft
     name: SilverCraft
-    href: SilverCraft.html
   - name: .
   - uid: SilverCraft.CSCore
     name: CSCore
-    href: SilverCraft.CSCore.html
   - name: .
   - uid: SilverCraft.CSCore.SoundOut
     name: SoundOut
-    href: SilverCraft.CSCore.SoundOut.html
   spec.vb:
   - uid: SilverCraft
     name: SilverCraft
-    href: SilverCraft.html
   - name: .
   - uid: SilverCraft.CSCore
     name: CSCore
-    href: SilverCraft.CSCore.html
   - name: .
   - uid: SilverCraft.CSCore.SoundOut
     name: SoundOut
-    href: SilverCraft.CSCore.SoundOut.html
 - uid: System.IDisposable.Dispose
   commentId: M:System.IDisposable.Dispose
   parent: System.IDisposable
@@ -611,26 +605,21 @@ references:
   fullName: System
 - uid: SilverCraft.CSCore
   commentId: N:SilverCraft.CSCore
-  href: SilverCraft.html
   name: SilverCraft.CSCore
   nameWithType: SilverCraft.CSCore
   fullName: SilverCraft.CSCore
   spec.csharp:
   - uid: SilverCraft
     name: SilverCraft
-    href: SilverCraft.html
   - name: .
   - uid: SilverCraft.CSCore
     name: CSCore
-    href: SilverCraft.CSCore.html
   spec.vb:
   - uid: SilverCraft
     name: SilverCraft
-    href: SilverCraft.html
   - name: .
   - uid: SilverCraft.CSCore
     name: CSCore
-    href: SilverCraft.CSCore.html
 - uid: SilverCraft.CSCore.SoundOut.ISoundOut.Play*
   commentId: Overload:SilverCraft.CSCore.SoundOut.ISoundOut.Play
   href: SilverCraft.CSCore.SoundOut.ISoundOut.html#SilverCraft_CSCore_SoundOut_ISoundOut_Play

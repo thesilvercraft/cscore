@@ -248,34 +248,27 @@ items:
 references:
 - uid: SilverCraft.CSCore.SoundIn
   commentId: N:SilverCraft.CSCore.SoundIn
-  href: SilverCraft.html
   name: SilverCraft.CSCore.SoundIn
   nameWithType: SilverCraft.CSCore.SoundIn
   fullName: SilverCraft.CSCore.SoundIn
   spec.csharp:
   - uid: SilverCraft
     name: SilverCraft
-    href: SilverCraft.html
   - name: .
   - uid: SilverCraft.CSCore
     name: CSCore
-    href: SilverCraft.CSCore.html
   - name: .
   - uid: SilverCraft.CSCore.SoundIn
     name: SoundIn
-    href: SilverCraft.CSCore.SoundIn.html
   spec.vb:
   - uid: SilverCraft
     name: SilverCraft
-    href: SilverCraft.html
   - name: .
   - uid: SilverCraft.CSCore
     name: CSCore
-    href: SilverCraft.CSCore.html
   - name: .
   - uid: SilverCraft.CSCore.SoundIn
     name: SoundIn
-    href: SilverCraft.CSCore.SoundIn.html
 - uid: System.IDisposable.Dispose
   commentId: M:System.IDisposable.Dispose
   parent: System.IDisposable
@@ -406,26 +399,21 @@ references:
   fullName: System
 - uid: SilverCraft.CSCore
   commentId: N:SilverCraft.CSCore
-  href: SilverCraft.html
   name: SilverCraft.CSCore
   nameWithType: SilverCraft.CSCore
   fullName: SilverCraft.CSCore
   spec.csharp:
   - uid: SilverCraft
     name: SilverCraft
-    href: SilverCraft.html
   - name: .
   - uid: SilverCraft.CSCore
     name: CSCore
-    href: SilverCraft.CSCore.html
   spec.vb:
   - uid: SilverCraft
     name: SilverCraft
-    href: SilverCraft.html
   - name: .
   - uid: SilverCraft.CSCore
     name: CSCore
-    href: SilverCraft.CSCore.html
 - uid: System.EventHandler{SilverCraft.CSCore.SoundIn.DataAvailableEventArgs}
   commentId: T:System.EventHandler{SilverCraft.CSCore.SoundIn.DataAvailableEventArgs}
   parent: System

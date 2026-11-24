@@ -13,7 +13,7 @@ items:
   fullName: SilverCraft.NativeLibraryResolvers
   type: Namespace
   assemblies:
-  - SilverCraft.CSCore
+  - SilverCraft.CSCore.OpenMPT
 references:
 - uid: SilverCraft.NativeLibraryResolvers.GlobalDllImportResolver
   commentId: T:SilverCraft.NativeLibraryResolvers.GlobalDllImportResolver

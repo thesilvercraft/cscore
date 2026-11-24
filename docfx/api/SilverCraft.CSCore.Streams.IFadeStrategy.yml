@@ -350,34 +350,27 @@ references:
   fullName: SilverCraft.CSCore.Streams.IFadeStrategy
 - uid: SilverCraft.CSCore.Streams
   commentId: N:SilverCraft.CSCore.Streams
-  href: SilverCraft.html
   name: SilverCraft.CSCore.Streams
   nameWithType: SilverCraft.CSCore.Streams
   fullName: SilverCraft.CSCore.Streams
   spec.csharp:
   - uid: SilverCraft
     name: SilverCraft
-    href: SilverCraft.html
   - name: .
   - uid: SilverCraft.CSCore
     name: CSCore
-    href: SilverCraft.CSCore.html
   - name: .
   - uid: SilverCraft.CSCore.Streams
     name: Streams
-    href: SilverCraft.CSCore.Streams.html
   spec.vb:
   - uid: SilverCraft
     name: SilverCraft
-    href: SilverCraft.html
   - name: .
   - uid: SilverCraft.CSCore
     name: CSCore
-    href: SilverCraft.CSCore.html
   - name: .
   - uid: SilverCraft.CSCore.Streams
     name: Streams
-    href: SilverCraft.CSCore.Streams.html
 - uid: SilverCraft.CSCore.Streams.IFadeStrategy.SilverCraft.CSCore.FluentExtensions.Synchronized``2
   commentId: M:SilverCraft.CSCore.FluentExtensions.Synchronized``2(``0)
   parent: SilverCraft.CSCore.FluentExtensions
@@ -471,26 +464,21 @@ references:
   fullName: SilverCraft.CSCore.FluentExtensions
 - uid: SilverCraft.CSCore
   commentId: N:SilverCraft.CSCore
-  href: SilverCraft.html
   name: SilverCraft.CSCore
   nameWithType: SilverCraft.CSCore
   fullName: SilverCraft.CSCore
   spec.csharp:
   - uid: SilverCraft
     name: SilverCraft
-    href: SilverCraft.html
   - name: .
   - uid: SilverCraft.CSCore
     name: CSCore
-    href: SilverCraft.CSCore.html
   spec.vb:
   - uid: SilverCraft
     name: SilverCraft
-    href: SilverCraft.html
   - name: .
   - uid: SilverCraft.CSCore
     name: CSCore
-    href: SilverCraft.CSCore.html
 - uid: SilverCraft.CSCore.Streams.IFadeStrategy.IsFading
   commentId: P:SilverCraft.CSCore.Streams.IFadeStrategy.IsFading
   parent: SilverCraft.CSCore.Streams.IFadeStrategy

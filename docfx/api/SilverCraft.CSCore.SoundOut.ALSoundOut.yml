@@ -755,34 +755,27 @@ items:
 references:
 - uid: SilverCraft.CSCore.SoundOut
   commentId: N:SilverCraft.CSCore.SoundOut
-  href: SilverCraft.html
   name: SilverCraft.CSCore.SoundOut
   nameWithType: SilverCraft.CSCore.SoundOut
   fullName: SilverCraft.CSCore.SoundOut
   spec.csharp:
   - uid: SilverCraft
     name: SilverCraft
-    href: SilverCraft.html
   - name: .
   - uid: SilverCraft.CSCore
     name: CSCore
-    href: SilverCraft.CSCore.html
   - name: .
   - uid: SilverCraft.CSCore.SoundOut
     name: SoundOut
-    href: SilverCraft.CSCore.SoundOut.html
   spec.vb:
   - uid: SilverCraft
     name: SilverCraft
-    href: SilverCraft.html
   - name: .
   - uid: SilverCraft.CSCore
     name: CSCore
-    href: SilverCraft.CSCore.html
   - name: .
   - uid: SilverCraft.CSCore.SoundOut
     name: SoundOut
-    href: SilverCraft.CSCore.SoundOut.html
 - uid: System.Object
   commentId: T:System.Object
   parent: System
@@ -1266,26 +1259,21 @@ references:
   - name: )
 - uid: SilverCraft.CSCore
   commentId: N:SilverCraft.CSCore
-  href: SilverCraft.html
   name: SilverCraft.CSCore
   nameWithType: SilverCraft.CSCore
   fullName: SilverCraft.CSCore
   spec.csharp:
   - uid: SilverCraft
     name: SilverCraft
-    href: SilverCraft.html
   - name: .
   - uid: SilverCraft.CSCore
     name: CSCore
-    href: SilverCraft.CSCore.html
   spec.vb:
   - uid: SilverCraft
     name: SilverCraft
-    href: SilverCraft.html
   - name: .
   - uid: SilverCraft.CSCore
     name: CSCore
-    href: SilverCraft.CSCore.html
 - uid: SilverCraft.CSCore.SoundOut.ALSoundOut.IsSupported*
   commentId: Overload:SilverCraft.CSCore.SoundOut.ALSoundOut.IsSupported
   href: SilverCraft.CSCore.SoundOut.ALSoundOut.html#SilverCraft_CSCore_SoundOut_ALSoundOut_IsSupported
@@ -1457,42 +1445,33 @@ references:
   fullName: SilverCraft.CSCore.SoundOut.AL.ALDevice
 - uid: SilverCraft.CSCore.SoundOut.AL
   commentId: N:SilverCraft.CSCore.SoundOut.AL
-  href: SilverCraft.html
   name: SilverCraft.CSCore.SoundOut.AL
   nameWithType: SilverCraft.CSCore.SoundOut.AL
   fullName: SilverCraft.CSCore.SoundOut.AL
   spec.csharp:
   - uid: SilverCraft
     name: SilverCraft
-    href: SilverCraft.html
   - name: .
   - uid: SilverCraft.CSCore
     name: CSCore
-    href: SilverCraft.CSCore.html
   - name: .
   - uid: SilverCraft.CSCore.SoundOut
     name: SoundOut
-    href: SilverCraft.CSCore.SoundOut.html
   - name: .
   - uid: SilverCraft.CSCore.SoundOut.AL
     name: AL
-    href: SilverCraft.CSCore.SoundOut.AL.html
   spec.vb:
   - uid: SilverCraft
     name: SilverCraft
-    href: SilverCraft.html
   - name: .
   - uid: SilverCraft.CSCore
     name: CSCore
-    href: SilverCraft.CSCore.html
   - name: .
   - uid: SilverCraft.CSCore.SoundOut
     name: SoundOut
-    href: SilverCraft.CSCore.SoundOut.html
   - name: .
   - uid: SilverCraft.CSCore.SoundOut.AL
     name: AL
-    href: SilverCraft.CSCore.SoundOut.AL.html
 - uid: SilverCraft.CSCore.SoundOut.ALSoundOut.Latency
   commentId: P:SilverCraft.CSCore.SoundOut.ALSoundOut.Latency
   href: SilverCraft.CSCore.SoundOut.ALSoundOut.html#SilverCraft_CSCore_SoundOut_ALSoundOut_Latency

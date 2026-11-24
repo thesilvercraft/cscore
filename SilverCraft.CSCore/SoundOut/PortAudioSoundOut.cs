@@ -11,10 +11,13 @@ namespace SilverCraft.CSCore.SoundOut;
 //https://www.portaudio.com/docs/v19-doxydocs/writing_a_callback.html
 public class PortAudioSoundOut : ISoundOut
 {
+    public const string DefaultDeviceLabel = PortAudioHelper.DefaultDeviceLabel;
+
     private readonly Lock _streamLock = new();
     private StreamCallBack? _callback;
     private PaStreamFinishedCallback? _finishedCallback;
     private readonly ILogger? _log;
+    private readonly string? _preferredDevice;
     private float[]? _buffer = new float[2];
     private int _channels;
     private bool _isDisposed;
@@ -23,10 +26,17 @@ public class PortAudioSoundOut : ISoundOut
     private int _currentStreamId;
 
 
-    public PortAudioSoundOut()
+    public PortAudioSoundOut() : this(null)
     {
+    }
+
+    public PortAudioSoundOut(string? preferredDevice)
+    {
+        _preferredDevice = preferredDevice;
         _log = LogLocation.GetLogger<PortAudioSoundOut>();
     }
+
+    public string? PreferredDevice => _preferredDevice;
 
     private ISampleSource? SampleSource { get; set; }
 
@@ -53,6 +63,8 @@ public class PortAudioSoundOut : ISoundOut
 
     public unsafe void Initialize(IWaveSource source)
     {
+        ObjectDisposedException.ThrowIf(_isDisposed, this);
+        ArgumentNullException.ThrowIfNull(source);
         DebugTrace();
 
         if (!_isPaInit)
@@ -77,16 +89,45 @@ public class PortAudioSoundOut : ISoundOut
         _finishedCallback = OnStreamFinished;
 
         var newStreamId = Interlocked.Increment(ref _currentStreamId);
+        var deviceIndex = PortAudioHelper.ResolveDeviceIndex(_preferredDevice, isOutput: true, _log);
+        var deviceInfo = NativeMethods.Pa_GetDeviceInfo(deviceIndex);
+        if (deviceInfo == null)
+        {
+            throw new PortAudioException($"PortAudio failed to get info for output device index {deviceIndex}");
+        }
+
+        var outputParams = new PaStreamParameters
+        {
+            device = deviceIndex,
+            channelCount = _channels,
+            sampleFormat = NativeMethods.paFloat32,
+            suggestedLatency = deviceInfo->defaultHighOutputLatency,
+            hostApiSpecificStreamInfo = null
+        };
+
+        var callbackPtr = (delegate* unmanaged[Cdecl]<void*, void*, ulong, PaStreamCallbackTimeInfo*, nuint, void*, int>)
+            Marshal.GetFunctionPointerForDelegate(_callback);
 
         PaStream* paStream;
-        ThrowIfError(NativeMethods.Pa_OpenDefaultStream(
-            &paStream, 0,
-            SampleSource.WaveFormat.Channels,
-            NativeMethods.paFloat32,
+        PortAudioHelper.ThrowIfError(NativeMethods.Pa_OpenStream(
+            &paStream,
+            null,
+            &outputParams,
             SampleSource.WaveFormat.SampleRate,
-            0, _callback, newStreamId));
+            0,
+            NativeMethods.paNoFlag,
+            callbackPtr,
+            (void*)(nint)newStreamId));
 
-        ThrowIfError(NativeMethods.Pa_SetStreamFinishedCallback(paStream, _finishedCallback));
+        try
+        {
+            PortAudioHelper.ThrowIfError(NativeMethods.Pa_SetStreamFinishedCallback(paStream, _finishedCallback));
+        }
+        catch
+        {
+            _ = NativeMethods.Pa_CloseStream(paStream);
+            throw;
+        }
 
         lock (_streamLock)
         {
@@ -108,7 +149,7 @@ public class PortAudioSoundOut : ISoundOut
             s = _stream;
         }
 
-        ThrowIfError(NativeMethods.Pa_StartStream(s));
+        PortAudioHelper.ThrowIfError(NativeMethods.Pa_StartStream(s));
     }
 
     public void Resume()
@@ -130,7 +171,7 @@ public class PortAudioSoundOut : ISoundOut
             s = _stream;
         }
 
-        ThrowIfError(NativeMethods.Pa_StopStream(s));
+        PortAudioHelper.ThrowIfError(NativeMethods.Pa_StopStream(s));
     }
 
     public void Stop()
@@ -189,13 +230,7 @@ public class PortAudioSoundOut : ISoundOut
             PlaybackState = PlaybackState.Stopped;
         }
 
-        NativeMethods.Pa_AbortStream(s);
-
-        var closeResult = NativeMethods.Pa_CloseStream(s);
-        if (closeResult != (int)PaErrorCode.paNoError)
-        {
-            _log?.LogError("PORTAUDIO ERROR: Pa_CloseStream failed with code {CloseResult}", closeResult);
-        }
+        PortAudioHelper.AbortAndCloseStream(s, _log);
     }
 
     protected virtual void Dispose(bool disposing)
@@ -226,31 +261,15 @@ public class PortAudioSoundOut : ISoundOut
         Dispose(false);
     }
 
-    public static bool IsSupported()
-    {
-        try
-        {
-            _ = NativeMethods.Pa_GetVersion();
-            return true;
-        }
-        catch
-        {
-            return false;
-        }
-    }
+    public static bool IsSupported() => PortAudioHelper.IsSupported();
+
+    public static string[] GetOutputDeviceNames() =>
+        PortAudioHelper.GetDeviceNames(isOutput: true, LogLocation.GetLogger<PortAudioSoundOut>());
 
     [Conditional("DEBUG")]
     private static void DebugTrace(string? message = null, [CallerMemberName] string? method = null)
     {
         Debug.WriteLine($"PORTAUDIO {method} {message}");
-    }
-
-    private static unsafe void ThrowIfError(int err, [CallerMemberName] string callerName = "",
-        [CallerFilePath] string path = "", [CallerLineNumber] int num = 0)
-    {
-        if (err != (int)PaErrorCode.paNoError)
-            throw new PortAudioException(
-                $"PortAudio failed, error code {err} ({Marshal.PtrToStringAnsi((nint)NativeMethods.Pa_GetErrorText(err))}) in method {callerName} in {path}:{num}");
     }
 
     private unsafe int CallBackMethod(void* input, void* output, ulong frameCount, PaStreamCallbackTimeInfo* timeInfo,

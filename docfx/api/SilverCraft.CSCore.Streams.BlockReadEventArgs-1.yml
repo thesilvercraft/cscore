@@ -172,34 +172,27 @@ references:
   fullName.vb: SilverCraft.CSCore.Streams.BlockReadEventArgs(Of T).Data
 - uid: SilverCraft.CSCore.Streams
   commentId: N:SilverCraft.CSCore.Streams
-  href: SilverCraft.html
   name: SilverCraft.CSCore.Streams
   nameWithType: SilverCraft.CSCore.Streams
   fullName: SilverCraft.CSCore.Streams
   spec.csharp:
   - uid: SilverCraft
     name: SilverCraft
-    href: SilverCraft.html
   - name: .
   - uid: SilverCraft.CSCore
     name: CSCore
-    href: SilverCraft.CSCore.html
   - name: .
   - uid: SilverCraft.CSCore.Streams
     name: Streams
-    href: SilverCraft.CSCore.Streams.html
   spec.vb:
   - uid: SilverCraft
     name: SilverCraft
-    href: SilverCraft.html
   - name: .
   - uid: SilverCraft.CSCore
     name: CSCore
-    href: SilverCraft.CSCore.html
   - name: .
   - uid: SilverCraft.CSCore.Streams
     name: Streams
-    href: SilverCraft.CSCore.Streams.html
 - uid: System.Object
   commentId: T:System.Object
   parent: System
@@ -562,26 +555,21 @@ references:
   fullName: SilverCraft.CSCore.FluentExtensions
 - uid: SilverCraft.CSCore
   commentId: N:SilverCraft.CSCore
-  href: SilverCraft.html
   name: SilverCraft.CSCore
   nameWithType: SilverCraft.CSCore
   fullName: SilverCraft.CSCore
   spec.csharp:
   - uid: SilverCraft
     name: SilverCraft
-    href: SilverCraft.html
   - name: .
   - uid: SilverCraft.CSCore
     name: CSCore
-    href: SilverCraft.CSCore.html
   spec.vb:
   - uid: SilverCraft
     name: SilverCraft
-    href: SilverCraft.html
   - name: .
   - uid: SilverCraft.CSCore
     name: CSCore
-    href: SilverCraft.CSCore.html
 - uid: SilverCraft.CSCore.Streams.BlockReadEventArgs`1.Length*
   commentId: Overload:SilverCraft.CSCore.Streams.BlockReadEventArgs`1.Length
   href: SilverCraft.CSCore.Streams.BlockReadEventArgs-1.html#SilverCraft_CSCore_Streams_BlockReadEventArgs_1_Length

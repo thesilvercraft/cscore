@@ -22,7 +22,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: MPTVirtualStreamHelper
     path: ../SilverCraft.CSCore.OpenMPT/Interop/openmpt_stream_callbacks.cs
-    startLine: 6
+    startLine: 5
   assemblies:
   - SilverCraft.CSCore.OpenMPT
   namespace: OpenMPT
@@ -60,7 +60,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: .ctor
     path: ../SilverCraft.CSCore.OpenMPT/Interop/openmpt_stream_callbacks.cs
-    startLine: 8
+    startLine: 7
   assemblies:
   - SilverCraft.CSCore.OpenMPT
   namespace: OpenMPT
@@ -98,7 +98,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: Virtual
     path: ../SilverCraft.CSCore.OpenMPT/Interop/openmpt_stream_callbacks.cs
-    startLine: 22
+    startLine: 20
   assemblies:
   - SilverCraft.CSCore.OpenMPT
   namespace: OpenMPT
@@ -127,7 +127,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: Dispose
     path: ../SilverCraft.CSCore.OpenMPT/Interop/openmpt_stream_callbacks.cs
-    startLine: 24
+    startLine: 22
   assemblies:
   - SilverCraft.CSCore.OpenMPT
   namespace: OpenMPT
@@ -142,7 +142,6 @@ items:
 references:
 - uid: OpenMPT
   commentId: N:OpenMPT
-  href: OpenMPT.html
   name: OpenMPT
   nameWithType: OpenMPT
   fullName: OpenMPT
@@ -460,26 +459,21 @@ references:
   fullName: SilverCraft.CSCore.FluentExtensions
 - uid: SilverCraft.CSCore
   commentId: N:SilverCraft.CSCore
-  href: SilverCraft.html
   name: SilverCraft.CSCore
   nameWithType: SilverCraft.CSCore
   fullName: SilverCraft.CSCore
   spec.csharp:
   - uid: SilverCraft
     name: SilverCraft
-    href: SilverCraft.html
   - name: .
   - uid: SilverCraft.CSCore
     name: CSCore
-    href: SilverCraft.CSCore.html
   spec.vb:
   - uid: SilverCraft
     name: SilverCraft
-    href: SilverCraft.html
   - name: .
   - uid: SilverCraft.CSCore
     name: CSCore
-    href: SilverCraft.CSCore.html
 - uid: OpenMPT.MPTVirtualStreamHelper.#ctor*
   commentId: Overload:OpenMPT.MPTVirtualStreamHelper.#ctor
   href: OpenMPT.MPTVirtualStreamHelper.html#OpenMPT_MPTVirtualStreamHelper__ctor_System_IO_Stream_System_Boolean_

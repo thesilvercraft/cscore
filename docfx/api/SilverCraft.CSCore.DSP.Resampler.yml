@@ -31,39 +31,30 @@ references:
   fullName: SilverCraft.CSCore.DSP.Resampler.SimpleResampler
 - uid: SilverCraft.CSCore.DSP.Resampler
   commentId: N:SilverCraft.CSCore.DSP.Resampler
-  href: SilverCraft.html
   name: SilverCraft.CSCore.DSP.Resampler
   nameWithType: SilverCraft.CSCore.DSP.Resampler
   fullName: SilverCraft.CSCore.DSP.Resampler
   spec.csharp:
   - uid: SilverCraft
     name: SilverCraft
-    href: SilverCraft.html
   - name: .
   - uid: SilverCraft.CSCore
     name: CSCore
-    href: SilverCraft.CSCore.html
   - name: .
   - uid: SilverCraft.CSCore.DSP
     name: DSP
-    href: SilverCraft.CSCore.DSP.html
   - name: .
   - uid: SilverCraft.CSCore.DSP.Resampler
     name: Resampler
-    href: SilverCraft.CSCore.DSP.Resampler.html
   spec.vb:
   - uid: SilverCraft
     name: SilverCraft
-    href: SilverCraft.html
   - name: .
   - uid: SilverCraft.CSCore
     name: CSCore
-    href: SilverCraft.CSCore.html
   - name: .
   - uid: SilverCraft.CSCore.DSP
     name: DSP
-    href: SilverCraft.CSCore.DSP.html
   - name: .
   - uid: SilverCraft.CSCore.DSP.Resampler
     name: Resampler
-    href: SilverCraft.CSCore.DSP.Resampler.html

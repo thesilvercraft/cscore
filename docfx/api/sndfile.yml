@@ -284,7 +284,6 @@ references:
   fullName: sndfile.Whence
 - uid: sndfile
   commentId: N:sndfile
-  href: sndfile.html
   name: sndfile
   nameWithType: sndfile
   fullName: sndfile

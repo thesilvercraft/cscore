@@ -13,7 +13,7 @@ items:
   fullName: Generators
   type: Namespace
   assemblies:
-  - SilverCraft.CSCore
+  - SilverCraft.CSCore.OpenMPT
 references:
 - uid: Generators.DllImportResolverAttribute
   commentId: T:Generators.DllImportResolverAttribute
@@ -24,7 +24,6 @@ references:
   fullName: Generators.DllImportResolverAttribute
 - uid: Generators
   commentId: N:Generators
-  href: Generators.html
   name: Generators
   nameWithType: Generators
   fullName: Generators

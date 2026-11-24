@@ -1,5 +1,6 @@
 {
-  "source_base_path": "C:/Users/Filip Velichkovski/RiderProjects/cscore/docfx",
+  "docfx_version": "2.81.0+ba844df625370a6bd7c1ecab0d0ec4d1d9128ac4",
+  "source_base_path": "/var/home/silver/repos/cscore/docfx",
   "xrefmap": "xrefmap.yml",
   "files": [
     {
@@ -1902,6 +1903,20 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/SilverCraft.CSCore.SoundOut.BufferedPortAudioSoundOut.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SilverCraft.CSCore.SoundOut.BufferedPortAudioSoundOut.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SilverCraft.CSCore.SoundOut.BufferedPortAudioSoundOut",
+      "Summary": "<p sourcefile=\"api/SilverCraft.CSCore.SoundOut.BufferedPortAudioSoundOut.yml\" sourcestartlinenumber=\"1\">PortAudio <xref href=\"SilverCraft.CSCore.SoundOut.ISoundOut\" data-throw-if-not-resolved=\"false\"></xref> implementation that decouples decoding from the real-time\naudio callback using an SPSC ring buffer and opens PortAudio via <code>Pa_OpenStream</code>\nwith configurable output device and latency.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/SilverCraft.CSCore.SoundOut.ISoundOut.yml",
       "output": {
         ".html": {
@@ -3162,6 +3177,20 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/SilverCraft.CSCore.Tests.BufferedPortAudioSoundOutTests.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SilverCraft.CSCore.Tests.BufferedPortAudioSoundOutTests.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SilverCraft.CSCore.Tests.BufferedPortAudioSoundOutTests",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/SilverCraft.CSCore.Tests.BugReproTests.yml",
       "output": {
         ".html": {
@@ -3256,6 +3285,20 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "SilverCraft.CSCore.Tests.Id3Tests",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SilverCraft.CSCore.Tests.PortAudioDeviceTests.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SilverCraft.CSCore.Tests.PortAudioDeviceTests.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SilverCraft.CSCore.Tests.PortAudioDeviceTests",
       "Summary": null
     },
     {

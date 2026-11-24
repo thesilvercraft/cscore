@@ -96,34 +96,27 @@ items:
 references:
 - uid: SilverCraft.CSCore.NativeLibraryResolver
   commentId: N:SilverCraft.CSCore.NativeLibraryResolver
-  href: SilverCraft.html
   name: SilverCraft.CSCore.NativeLibraryResolver
   nameWithType: SilverCraft.CSCore.NativeLibraryResolver
   fullName: SilverCraft.CSCore.NativeLibraryResolver
   spec.csharp:
   - uid: SilverCraft
     name: SilverCraft
-    href: SilverCraft.html
   - name: .
   - uid: SilverCraft.CSCore
     name: CSCore
-    href: SilverCraft.CSCore.html
   - name: .
   - uid: SilverCraft.CSCore.NativeLibraryResolver
     name: NativeLibraryResolver
-    href: SilverCraft.CSCore.NativeLibraryResolver.html
   spec.vb:
   - uid: SilverCraft
     name: SilverCraft
-    href: SilverCraft.html
   - name: .
   - uid: SilverCraft.CSCore
     name: CSCore
-    href: SilverCraft.CSCore.html
   - name: .
   - uid: SilverCraft.CSCore.NativeLibraryResolver
     name: NativeLibraryResolver
-    href: SilverCraft.CSCore.NativeLibraryResolver.html
 - uid: System.Object
   commentId: T:System.Object
   parent: System
@@ -489,26 +482,21 @@ references:
   fullName: SilverCraft.CSCore.FluentExtensions
 - uid: SilverCraft.CSCore
   commentId: N:SilverCraft.CSCore
-  href: SilverCraft.html
   name: SilverCraft.CSCore
   nameWithType: SilverCraft.CSCore
   fullName: SilverCraft.CSCore
   spec.csharp:
   - uid: SilverCraft
     name: SilverCraft
-    href: SilverCraft.html
   - name: .
   - uid: SilverCraft.CSCore
     name: CSCore
-    href: SilverCraft.CSCore.html
   spec.vb:
   - uid: SilverCraft
     name: SilverCraft
-    href: SilverCraft.html
   - name: .
   - uid: SilverCraft.CSCore
     name: CSCore
-    href: SilverCraft.CSCore.html
 - uid: Microsoft.CodeAnalysis.IncrementalGeneratorInitializationContext
   commentId: T:Microsoft.CodeAnalysis.IncrementalGeneratorInitializationContext
   parent: Microsoft.CodeAnalysis

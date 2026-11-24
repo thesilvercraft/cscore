@@ -5,7 +5,7 @@ items:
   id: WaveFileChunk
   parent: SilverCraft.CSCore.Codecs.WAV
   children:
-  - SilverCraft.CSCore.Codecs.WAV.WaveFileChunk.#ctor(System.IO.BinaryReader)
+  - SilverCraft.CSCore.Codecs.WAV.WaveFileChunk.#ctor(System.IO.BinaryReader,System.Boolean)
   - SilverCraft.CSCore.Codecs.WAV.WaveFileChunk.#ctor(System.IO.Stream)
   - SilverCraft.CSCore.Codecs.WAV.WaveFileChunk.ChunkDataSize
   - SilverCraft.CSCore.Codecs.WAV.WaveFileChunk.ChunkID
@@ -24,7 +24,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: WaveFileChunk
     path: ../SilverCraft.CSCore/Codecs/WAV/WaveFileChunk.cs
-    startLine: 9
+    startLine: 8
   assemblies:
   - SilverCraft.CSCore
   namespace: SilverCraft.CSCore.Codecs.WAV
@@ -69,7 +69,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: .ctor
     path: ../SilverCraft.CSCore/Codecs/WAV/WaveFileChunk.cs
-    startLine: 15
+    startLine: 14
   assemblies:
   - SilverCraft.CSCore
   namespace: SilverCraft.CSCore.Codecs.WAV
@@ -86,16 +86,16 @@ items:
   nameWithType.vb: WaveFileChunk.New(Stream)
   fullName.vb: SilverCraft.CSCore.Codecs.WAV.WaveFileChunk.New(System.IO.Stream)
   name.vb: New(Stream)
-- uid: SilverCraft.CSCore.Codecs.WAV.WaveFileChunk.#ctor(System.IO.BinaryReader)
-  commentId: M:SilverCraft.CSCore.Codecs.WAV.WaveFileChunk.#ctor(System.IO.BinaryReader)
-  id: '#ctor(System.IO.BinaryReader)'
+- uid: SilverCraft.CSCore.Codecs.WAV.WaveFileChunk.#ctor(System.IO.BinaryReader,System.Boolean)
+  commentId: M:SilverCraft.CSCore.Codecs.WAV.WaveFileChunk.#ctor(System.IO.BinaryReader,System.Boolean)
+  id: '#ctor(System.IO.BinaryReader,System.Boolean)'
   parent: SilverCraft.CSCore.Codecs.WAV.WaveFileChunk
   langs:
   - csharp
   - vb
-  name: WaveFileChunk(BinaryReader)
-  nameWithType: WaveFileChunk.WaveFileChunk(BinaryReader)
-  fullName: SilverCraft.CSCore.Codecs.WAV.WaveFileChunk.WaveFileChunk(System.IO.BinaryReader)
+  name: WaveFileChunk(BinaryReader, bool)
+  nameWithType: WaveFileChunk.WaveFileChunk(BinaryReader, bool)
+  fullName: SilverCraft.CSCore.Codecs.WAV.WaveFileChunk.WaveFileChunk(System.IO.BinaryReader, bool)
   type: Constructor
   source:
     remote:
@@ -104,23 +104,26 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: .ctor
     path: ../SilverCraft.CSCore/Codecs/WAV/WaveFileChunk.cs
-    startLine: 24
+    startLine: 26
   assemblies:
   - SilverCraft.CSCore
   namespace: SilverCraft.CSCore.Codecs.WAV
   summary: Initializes a new instance of the <xref href="SilverCraft.CSCore.Codecs.WAV.WaveFileChunk" data-throw-if-not-resolved="false"></xref> class.
   example: []
   syntax:
-    content: public WaveFileChunk(BinaryReader reader)
+    content: public WaveFileChunk(BinaryReader reader, bool disposeReader = true)
     parameters:
     - id: reader
       type: System.IO.BinaryReader
       description: <xref href="System.IO.BinaryReader" data-throw-if-not-resolved="false"></xref> which should be used to read the wave file chunk.
-    content.vb: Public Sub New(reader As BinaryReader)
+    - id: disposeReader
+      type: System.Boolean
+      description: Whether to dispose of the reader given, defaults to true, use false for children of WaveFileChunk
+    content.vb: Public Sub New(reader As BinaryReader, disposeReader As Boolean = True)
   overload: SilverCraft.CSCore.Codecs.WAV.WaveFileChunk.#ctor*
-  nameWithType.vb: WaveFileChunk.New(BinaryReader)
-  fullName.vb: SilverCraft.CSCore.Codecs.WAV.WaveFileChunk.New(System.IO.BinaryReader)
-  name.vb: New(BinaryReader)
+  nameWithType.vb: WaveFileChunk.New(BinaryReader, Boolean)
+  fullName.vb: SilverCraft.CSCore.Codecs.WAV.WaveFileChunk.New(System.IO.BinaryReader, Boolean)
+  name.vb: New(BinaryReader, Boolean)
 - uid: SilverCraft.CSCore.Codecs.WAV.WaveFileChunk.ChunkID
   commentId: P:SilverCraft.CSCore.Codecs.WAV.WaveFileChunk.ChunkID
   id: ChunkID
@@ -139,7 +142,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: ChunkID
     path: ../SilverCraft.CSCore/Codecs/WAV/WaveFileChunk.cs
-    startLine: 34
+    startLine: 46
   assemblies:
   - SilverCraft.CSCore
   namespace: SilverCraft.CSCore.Codecs.WAV
@@ -170,7 +173,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: ChunkDataSize
     path: ../SilverCraft.CSCore/Codecs/WAV/WaveFileChunk.cs
-    startLine: 39
+    startLine: 51
   assemblies:
   - SilverCraft.CSCore
   namespace: SilverCraft.CSCore.Codecs.WAV
@@ -201,7 +204,7 @@ items:
       repo: https://github.com/thesilvercraft/cscore
     id: FromStream
     path: ../SilverCraft.CSCore/Codecs/WAV/WaveFileChunk.cs
-    startLine: 50
+    startLine: 62
   assemblies:
   - SilverCraft.CSCore
   namespace: SilverCraft.CSCore.Codecs.WAV
@@ -227,42 +230,33 @@ items:
 references:
 - uid: SilverCraft.CSCore.Codecs.WAV
   commentId: N:SilverCraft.CSCore.Codecs.WAV
-  href: SilverCraft.html
   name: SilverCraft.CSCore.Codecs.WAV
   nameWithType: SilverCraft.CSCore.Codecs.WAV
   fullName: SilverCraft.CSCore.Codecs.WAV
   spec.csharp:
   - uid: SilverCraft
     name: SilverCraft
-    href: SilverCraft.html
   - name: .
   - uid: SilverCraft.CSCore
     name: CSCore
-    href: SilverCraft.CSCore.html
   - name: .
   - uid: SilverCraft.CSCore.Codecs
     name: Codecs
-    href: SilverCraft.CSCore.Codecs.html
   - name: .
   - uid: SilverCraft.CSCore.Codecs.WAV
     name: WAV
-    href: SilverCraft.CSCore.Codecs.WAV.html
   spec.vb:
   - uid: SilverCraft
     name: SilverCraft
-    href: SilverCraft.html
   - name: .
   - uid: SilverCraft.CSCore
     name: CSCore
-    href: SilverCraft.CSCore.html
   - name: .
   - uid: SilverCraft.CSCore.Codecs
     name: Codecs
-    href: SilverCraft.CSCore.Codecs.html
   - name: .
   - uid: SilverCraft.CSCore.Codecs.WAV
     name: WAV
-    href: SilverCraft.CSCore.Codecs.WAV.html
 - uid: System.Object
   commentId: T:System.Object
   parent: System
@@ -593,26 +587,21 @@ references:
   fullName: SilverCraft.CSCore.FluentExtensions
 - uid: SilverCraft.CSCore
   commentId: N:SilverCraft.CSCore
-  href: SilverCraft.html
   name: SilverCraft.CSCore
   nameWithType: SilverCraft.CSCore
   fullName: SilverCraft.CSCore
   spec.csharp:
   - uid: SilverCraft
     name: SilverCraft
-    href: SilverCraft.html
   - name: .
   - uid: SilverCraft.CSCore
     name: CSCore
-    href: SilverCraft.CSCore.html
   spec.vb:
   - uid: SilverCraft
     name: SilverCraft
-    href: SilverCraft.html
   - name: .
   - uid: SilverCraft.CSCore
     name: CSCore
-    href: SilverCraft.CSCore.html
 - uid: SilverCraft.CSCore.Codecs.WAV.WaveFileChunk
   commentId: T:SilverCraft.CSCore.Codecs.WAV.WaveFileChunk
   parent: SilverCraft.CSCore.Codecs.WAV
@@ -672,6 +661,17 @@ references:
   name: BinaryReader
   nameWithType: BinaryReader
   fullName: System.IO.BinaryReader
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
 - uid: SilverCraft.CSCore.Codecs.WAV.WaveFileChunk.ChunkID*
   commentId: Overload:SilverCraft.CSCore.Codecs.WAV.WaveFileChunk.ChunkID
   href: SilverCraft.CSCore.Codecs.WAV.WaveFileChunk.html#SilverCraft_CSCore_Codecs_WAV_WaveFileChunk_ChunkID

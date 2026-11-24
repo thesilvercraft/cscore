@@ -131,34 +131,27 @@ references:
   fullName: SilverCraft.CSCore.SoundIn.RecordingStoppedEventArgs
 - uid: SilverCraft.CSCore.SoundIn
   commentId: N:SilverCraft.CSCore.SoundIn
-  href: SilverCraft.html
   name: SilverCraft.CSCore.SoundIn
   nameWithType: SilverCraft.CSCore.SoundIn
   fullName: SilverCraft.CSCore.SoundIn
   spec.csharp:
   - uid: SilverCraft
     name: SilverCraft
-    href: SilverCraft.html
   - name: .
   - uid: SilverCraft.CSCore
     name: CSCore
-    href: SilverCraft.CSCore.html
   - name: .
   - uid: SilverCraft.CSCore.SoundIn
     name: SoundIn
-    href: SilverCraft.CSCore.SoundIn.html
   spec.vb:
   - uid: SilverCraft
     name: SilverCraft
-    href: SilverCraft.html
   - name: .
   - uid: SilverCraft.CSCore
     name: CSCore
-    href: SilverCraft.CSCore.html
   - name: .
   - uid: SilverCraft.CSCore.SoundIn
     name: SoundIn
-    href: SilverCraft.CSCore.SoundIn.html
 - uid: System.Object
   commentId: T:System.Object
   parent: System
@@ -489,26 +482,21 @@ references:
   fullName: System
 - uid: SilverCraft.CSCore
   commentId: N:SilverCraft.CSCore
-  href: SilverCraft.html
   name: SilverCraft.CSCore
   nameWithType: SilverCraft.CSCore
   fullName: SilverCraft.CSCore
   spec.csharp:
   - uid: SilverCraft
     name: SilverCraft
-    href: SilverCraft.html
   - name: .
   - uid: SilverCraft.CSCore
     name: CSCore
-    href: SilverCraft.CSCore.html
   spec.vb:
   - uid: SilverCraft
     name: SilverCraft
-    href: SilverCraft.html
   - name: .
   - uid: SilverCraft.CSCore
     name: CSCore
-    href: SilverCraft.CSCore.html
 - uid: SilverCraft.CSCore.FluentExtensions.Synchronized``2(``0)
   commentId: M:SilverCraft.CSCore.FluentExtensions.Synchronized``2(``0)
   href: SilverCraft.CSCore.FluentExtensions.html#SilverCraft_CSCore_FluentExtensions_Synchronized__2___0_

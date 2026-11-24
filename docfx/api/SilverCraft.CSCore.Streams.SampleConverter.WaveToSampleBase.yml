@@ -519,42 +519,33 @@ references:
   fullName: SilverCraft.CSCore.IWaveSource
 - uid: SilverCraft.CSCore.Streams.SampleConverter
   commentId: N:SilverCraft.CSCore.Streams.SampleConverter
-  href: SilverCraft.html
   name: SilverCraft.CSCore.Streams.SampleConverter
   nameWithType: SilverCraft.CSCore.Streams.SampleConverter
   fullName: SilverCraft.CSCore.Streams.SampleConverter
   spec.csharp:
   - uid: SilverCraft
     name: SilverCraft
-    href: SilverCraft.html
   - name: .
   - uid: SilverCraft.CSCore
     name: CSCore
-    href: SilverCraft.CSCore.html
   - name: .
   - uid: SilverCraft.CSCore.Streams
     name: Streams
-    href: SilverCraft.CSCore.Streams.html
   - name: .
   - uid: SilverCraft.CSCore.Streams.SampleConverter
     name: SampleConverter
-    href: SilverCraft.CSCore.Streams.SampleConverter.html
   spec.vb:
   - uid: SilverCraft
     name: SilverCraft
-    href: SilverCraft.html
   - name: .
   - uid: SilverCraft.CSCore
     name: CSCore
-    href: SilverCraft.CSCore.html
   - name: .
   - uid: SilverCraft.CSCore.Streams
     name: Streams
-    href: SilverCraft.CSCore.Streams.html
   - name: .
   - uid: SilverCraft.CSCore.Streams.SampleConverter
     name: SampleConverter
-    href: SilverCraft.CSCore.Streams.SampleConverter.html
 - uid: System.Object
   commentId: T:System.Object
   parent: System
@@ -1508,26 +1499,21 @@ references:
   - name: )
 - uid: SilverCraft.CSCore
   commentId: N:SilverCraft.CSCore
-  href: SilverCraft.html
   name: SilverCraft.CSCore
   nameWithType: SilverCraft.CSCore
   fullName: SilverCraft.CSCore
   spec.csharp:
   - uid: SilverCraft
     name: SilverCraft
-    href: SilverCraft.html
   - name: .
   - uid: SilverCraft.CSCore
     name: CSCore
-    href: SilverCraft.CSCore.html
   spec.vb:
   - uid: SilverCraft
     name: SilverCraft
-    href: SilverCraft.html
   - name: .
   - uid: SilverCraft.CSCore
     name: CSCore
-    href: SilverCraft.CSCore.html
 - uid: System
   commentId: N:System
   isExternal: true

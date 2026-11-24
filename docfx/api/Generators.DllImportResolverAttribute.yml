@@ -24,10 +24,10 @@ items:
   type: Class
   source:
     id: DllImportResolverAttribute
-    path: C:\Users\Filip Velichkovski\RiderProjects\cscore\SilverCraft.CSCore\obj\Release\net10.0\SilverCraft.CSCore.NativeLibraryResolver\SilverCraft.CSCore.NativeLibraryResolver.SourceGeneratorWithAttributes\DllImportResolverAttribute.g.cs
+    path: /var/home/silver/repos/cscore/SilverCraft.CSCore.OpenMPT/obj/Release/net10.0/SilverCraft.CSCore.NativeLibraryResolver/SilverCraft.CSCore.NativeLibraryResolver.SourceGeneratorWithAttributes/DllImportResolverAttribute.g.cs
     startLine: 3
   assemblies:
-  - SilverCraft.CSCore
+  - SilverCraft.CSCore.OpenMPT
   namespace: Generators
   syntax:
     content: >-
@@ -112,10 +112,10 @@ items:
   type: Property
   source:
     id: LibraryName
-    path: C:\Users\Filip Velichkovski\RiderProjects\cscore\SilverCraft.CSCore\obj\Release\net10.0\SilverCraft.CSCore.NativeLibraryResolver\SilverCraft.CSCore.NativeLibraryResolver.SourceGeneratorWithAttributes\DllImportResolverAttribute.g.cs
+    path: /var/home/silver/repos/cscore/SilverCraft.CSCore.OpenMPT/obj/Release/net10.0/SilverCraft.CSCore.NativeLibraryResolver/SilverCraft.CSCore.NativeLibraryResolver.SourceGeneratorWithAttributes/DllImportResolverAttribute.g.cs
     startLine: 6
   assemblies:
-  - SilverCraft.CSCore
+  - SilverCraft.CSCore.OpenMPT
   namespace: Generators
   syntax:
     content: public string LibraryName { get; }
@@ -137,10 +137,10 @@ items:
   type: Property
   source:
     id: DllName
-    path: C:\Users\Filip Velichkovski\RiderProjects\cscore\SilverCraft.CSCore\obj\Release\net10.0\SilverCraft.CSCore.NativeLibraryResolver\SilverCraft.CSCore.NativeLibraryResolver.SourceGeneratorWithAttributes\DllImportResolverAttribute.g.cs
+    path: /var/home/silver/repos/cscore/SilverCraft.CSCore.OpenMPT/obj/Release/net10.0/SilverCraft.CSCore.NativeLibraryResolver/SilverCraft.CSCore.NativeLibraryResolver.SourceGeneratorWithAttributes/DllImportResolverAttribute.g.cs
     startLine: 7
   assemblies:
-  - SilverCraft.CSCore
+  - SilverCraft.CSCore.OpenMPT
   namespace: Generators
   syntax:
     content: public string DllName { get; }
@@ -162,10 +162,10 @@ items:
   type: Property
   source:
     id: WindowsDlls
-    path: C:\Users\Filip Velichkovski\RiderProjects\cscore\SilverCraft.CSCore\obj\Release\net10.0\SilverCraft.CSCore.NativeLibraryResolver\SilverCraft.CSCore.NativeLibraryResolver.SourceGeneratorWithAttributes\DllImportResolverAttribute.g.cs
+    path: /var/home/silver/repos/cscore/SilverCraft.CSCore.OpenMPT/obj/Release/net10.0/SilverCraft.CSCore.NativeLibraryResolver/SilverCraft.CSCore.NativeLibraryResolver.SourceGeneratorWithAttributes/DllImportResolverAttribute.g.cs
     startLine: 8
   assemblies:
-  - SilverCraft.CSCore
+  - SilverCraft.CSCore.OpenMPT
   namespace: Generators
   syntax:
     content: public string[] WindowsDlls { get; set; }
@@ -187,10 +187,10 @@ items:
   type: Property
   source:
     id: LinuxDlls
-    path: C:\Users\Filip Velichkovski\RiderProjects\cscore\SilverCraft.CSCore\obj\Release\net10.0\SilverCraft.CSCore.NativeLibraryResolver\SilverCraft.CSCore.NativeLibraryResolver.SourceGeneratorWithAttributes\DllImportResolverAttribute.g.cs
+    path: /var/home/silver/repos/cscore/SilverCraft.CSCore.OpenMPT/obj/Release/net10.0/SilverCraft.CSCore.NativeLibraryResolver/SilverCraft.CSCore.NativeLibraryResolver.SourceGeneratorWithAttributes/DllImportResolverAttribute.g.cs
     startLine: 9
   assemblies:
-  - SilverCraft.CSCore
+  - SilverCraft.CSCore.OpenMPT
   namespace: Generators
   syntax:
     content: public string[] LinuxDlls { get; set; }
@@ -212,10 +212,10 @@ items:
   type: Property
   source:
     id: MacOsDlls
-    path: C:\Users\Filip Velichkovski\RiderProjects\cscore\SilverCraft.CSCore\obj\Release\net10.0\SilverCraft.CSCore.NativeLibraryResolver\SilverCraft.CSCore.NativeLibraryResolver.SourceGeneratorWithAttributes\DllImportResolverAttribute.g.cs
+    path: /var/home/silver/repos/cscore/SilverCraft.CSCore.OpenMPT/obj/Release/net10.0/SilverCraft.CSCore.NativeLibraryResolver/SilverCraft.CSCore.NativeLibraryResolver.SourceGeneratorWithAttributes/DllImportResolverAttribute.g.cs
     startLine: 10
   assemblies:
-  - SilverCraft.CSCore
+  - SilverCraft.CSCore.OpenMPT
   namespace: Generators
   syntax:
     content: public string[] MacOsDlls { get; set; }
@@ -237,10 +237,10 @@ items:
   type: Property
   source:
     id: LinuxInstructions
-    path: C:\Users\Filip Velichkovski\RiderProjects\cscore\SilverCraft.CSCore\obj\Release\net10.0\SilverCraft.CSCore.NativeLibraryResolver\SilverCraft.CSCore.NativeLibraryResolver.SourceGeneratorWithAttributes\DllImportResolverAttribute.g.cs
+    path: /var/home/silver/repos/cscore/SilverCraft.CSCore.OpenMPT/obj/Release/net10.0/SilverCraft.CSCore.NativeLibraryResolver/SilverCraft.CSCore.NativeLibraryResolver.SourceGeneratorWithAttributes/DllImportResolverAttribute.g.cs
     startLine: 11
   assemblies:
-  - SilverCraft.CSCore
+  - SilverCraft.CSCore.OpenMPT
   namespace: Generators
   syntax:
     content: public string LinuxInstructions { get; set; }
@@ -262,10 +262,10 @@ items:
   type: Property
   source:
     id: GenericInstructionsStart
-    path: C:\Users\Filip Velichkovski\RiderProjects\cscore\SilverCraft.CSCore\obj\Release\net10.0\SilverCraft.CSCore.NativeLibraryResolver\SilverCraft.CSCore.NativeLibraryResolver.SourceGeneratorWithAttributes\DllImportResolverAttribute.g.cs
+    path: /var/home/silver/repos/cscore/SilverCraft.CSCore.OpenMPT/obj/Release/net10.0/SilverCraft.CSCore.NativeLibraryResolver/SilverCraft.CSCore.NativeLibraryResolver.SourceGeneratorWithAttributes/DllImportResolverAttribute.g.cs
     startLine: 12
   assemblies:
-  - SilverCraft.CSCore
+  - SilverCraft.CSCore.OpenMPT
   namespace: Generators
   syntax:
     content: public string GenericInstructionsStart { get; set; }
@@ -287,10 +287,10 @@ items:
   type: Property
   source:
     id: GenericInstructionsWindowsEnd
-    path: C:\Users\Filip Velichkovski\RiderProjects\cscore\SilverCraft.CSCore\obj\Release\net10.0\SilverCraft.CSCore.NativeLibraryResolver\SilverCraft.CSCore.NativeLibraryResolver.SourceGeneratorWithAttributes\DllImportResolverAttribute.g.cs
+    path: /var/home/silver/repos/cscore/SilverCraft.CSCore.OpenMPT/obj/Release/net10.0/SilverCraft.CSCore.NativeLibraryResolver/SilverCraft.CSCore.NativeLibraryResolver.SourceGeneratorWithAttributes/DllImportResolverAttribute.g.cs
     startLine: 13
   assemblies:
-  - SilverCraft.CSCore
+  - SilverCraft.CSCore.OpenMPT
   namespace: Generators
   syntax:
     content: public string GenericInstructionsWindowsEnd { get; set; }
@@ -312,10 +312,10 @@ items:
   type: Property
   source:
     id: GenericInstructionsLinuxEnd
-    path: C:\Users\Filip Velichkovski\RiderProjects\cscore\SilverCraft.CSCore\obj\Release\net10.0\SilverCraft.CSCore.NativeLibraryResolver\SilverCraft.CSCore.NativeLibraryResolver.SourceGeneratorWithAttributes\DllImportResolverAttribute.g.cs
+    path: /var/home/silver/repos/cscore/SilverCraft.CSCore.OpenMPT/obj/Release/net10.0/SilverCraft.CSCore.NativeLibraryResolver/SilverCraft.CSCore.NativeLibraryResolver.SourceGeneratorWithAttributes/DllImportResolverAttribute.g.cs
     startLine: 14
   assemblies:
-  - SilverCraft.CSCore
+  - SilverCraft.CSCore.OpenMPT
   namespace: Generators
   syntax:
     content: public string GenericInstructionsLinuxEnd { get; set; }
@@ -337,10 +337,10 @@ items:
   type: Constructor
   source:
     id: .ctor
-    path: C:\Users\Filip Velichkovski\RiderProjects\cscore\SilverCraft.CSCore\obj\Release\net10.0\SilverCraft.CSCore.NativeLibraryResolver\SilverCraft.CSCore.NativeLibraryResolver.SourceGeneratorWithAttributes\DllImportResolverAttribute.g.cs
+    path: /var/home/silver/repos/cscore/SilverCraft.CSCore.OpenMPT/obj/Release/net10.0/SilverCraft.CSCore.NativeLibraryResolver/SilverCraft.CSCore.NativeLibraryResolver.SourceGeneratorWithAttributes/DllImportResolverAttribute.g.cs
     startLine: 16
   assemblies:
-  - SilverCraft.CSCore
+  - SilverCraft.CSCore.OpenMPT
   namespace: Generators
   syntax:
     content: public DllImportResolverAttribute(string libraryName, string dllName)
@@ -357,7 +357,6 @@ items:
 references:
 - uid: Generators
   commentId: N:Generators
-  href: Generators.html
   name: Generators
   nameWithType: Generators
   fullName: Generators
@@ -2248,26 +2247,21 @@ references:
   fullName: SilverCraft.CSCore.FluentExtensions
 - uid: SilverCraft.CSCore
   commentId: N:SilverCraft.CSCore
-  href: SilverCraft.html
   name: SilverCraft.CSCore
   nameWithType: SilverCraft.CSCore
   fullName: SilverCraft.CSCore
   spec.csharp:
   - uid: SilverCraft
     name: SilverCraft
-    href: SilverCraft.html
   - name: .
   - uid: SilverCraft.CSCore
     name: CSCore
-    href: SilverCraft.CSCore.html
   spec.vb:
   - uid: SilverCraft
     name: SilverCraft
-    href: SilverCraft.html
   - name: .
   - uid: SilverCraft.CSCore
     name: CSCore
-    href: SilverCraft.CSCore.html
 - uid: Generators.DllImportResolverAttribute.LibraryName*
   commentId: Overload:Generators.DllImportResolverAttribute.LibraryName
   href: Generators.DllImportResolverAttribute.html#Generators_DllImportResolverAttribute_LibraryName
