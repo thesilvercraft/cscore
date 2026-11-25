@@ -157,13 +157,15 @@ public class BufferedPortAudioSoundOut : ISoundOut
         var callbackPtr = (delegate* unmanaged[Cdecl]<void*, void*, ulong, PaStreamCallbackTimeInfo*, nuint, void*, int>)
             Marshal.GetFunctionPointerForDelegate(_callback);
 
+        var framesPerBuffer = (nuint)Math.Clamp((long)(_sampleRate * suggestedLatency / 2), 512, 4096);
+
         PaStream* paStream;
         PortAudioHelper.ThrowIfError(NativeMethods.Pa_OpenStream(
             &paStream,
             null,
             &outputParams,
             _sampleRate,
-            0,
+            framesPerBuffer,
             NativeMethods.paNoFlag,
             callbackPtr,
             (void*)(nint)newStreamId));
